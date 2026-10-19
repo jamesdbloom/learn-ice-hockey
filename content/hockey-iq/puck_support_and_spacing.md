@@ -149,6 +149,8 @@ So close in until a pass released now would reach you before the defender does.
 
 ### Practical distances
 
+**In short:** Start about two to three stick lengths from the carrier, closer under pressure, and judge it by whether the pass beats the defender.
+
 ```facts
 Convention: Support distance defaults to roughly two to three stick lengths, 10 to 15 feet — a starting point, not a rule of hockey
 Convention: Support from 8 to 10 feet when the carrier is pressured, stretching to 15 when they have time
@@ -405,6 +407,8 @@ The principle is constant; the shape it takes is not.
 
 ### Defensive zone — the breakout triangle
 
+**In short:** Give the retriever three short, safe options: the wall, the centre swinging low, and your partner behind the net, never through the slot.
+
 ```facts
 Targets: The strong-side winger on the wall, roughly level with the faceoff dot — the short up option
 Targets: The centre, swinging low through the middle and curling toward the same side
@@ -568,6 +572,8 @@ Most players wait to be found. Good support players make themselves findable:
 **Attacking, the second player gives the carrier an option. Defending, the second player supports the first defender — not duplicates them.** Most defensive breakdowns come from getting this wrong.
 
 ### Layering, not converging
+
+**In short:** When a teammate is already pressuring the carrier, support behind and to the side of them instead of joining them on the puck.
 
 ```facts
 Never: Skate at the carrier your teammate is already pressuring — both of you are beaten by the same pass

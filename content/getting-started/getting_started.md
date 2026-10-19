@@ -65,6 +65,8 @@ So here are four routes, each for one reader with one deadline. Each names **sec
 
 ### Route 1 — Your first game is this week
 
+**In short:** Before your first game, learn whether checking is allowed, how line changes work and where to sit on the bench.
+
 **For:** you can skate, you have never played a game, and your name is on a team sheet in a few days.
 **Roughly an hour**, in this order.
 
@@ -117,6 +119,8 @@ Whatever the position, finish with [Defensive Zone Coverage → How to Tell Whic
 
 ### Route 4 — You play in Britain
 
+**In short:** Read the UK and England Rules first, then read down the IIHF column wherever these documents compare books.
+
 **For:** anybody playing in Britain — Elite League, NIHL, university or any other British competition, including anything joined under England Ice Hockey or the SIHA before their June 2026 merger into Ice Hockey UK.
 **Roughly an hour, and it matters most**, because these documents are written to NHL rules with the differences flagged inline. A British reader who misses the amendments reads the wrong book throughout.
 
@@ -154,6 +158,8 @@ Almost everywhere, there are four layers between you and the ice:
 **In practice:** the national body's website tells you what registration *is* and what it buys. It will not tell you what your season costs or which night you skate. That comes from the bottom layer, and you get it by ringing them.
 
 ### If you are starting in Britain
+
+**In short:** Play to the IIHF book and its British amendments, ask your club how registration works since the 2026 merger, and check your rink's size.
 
 Four things about British hockey differ enough from the North American picture that a beginner needs them first.
 
@@ -212,6 +218,8 @@ If you cannot skate, learn first or alongside. You do not need to be good. The N
 Public skating is the cheapest ice you will ever buy. Going twice a week for a month before you spend anything on gear is a good plan. See [Skating](../technique/skating.md) for what to work on — almost every adult skating fault is a straight-legs fault.
 
 ### The four things adults can sign up for
+
+**In short:** An adult learn-to-play programme is the best first step, and before joining a league, ask whether it allows checking.
 
 **1. Adult learn-to-play / "hockey 101" programmes.** A fixed block of sessions mixing instruction with a supervised scrimmage. They go by many names and are the best entry point for an adult beginner, because everyone else there is new too.
 
@@ -380,6 +388,8 @@ Organised hockey almost always means an individual membership with the national 
 
 ### Registering with England Ice Hockey
 
+**In short:** Register through your club before the day of your first game; registering late in the season still costs a whole season.
+
 England Ice Hockey's *Rules & Regulations* governs this, and it is more specific than most beginners expect:
 
 **You register with EIH, but only your club can complete it.** *"All individuals must register directly with EIH and follow their EIH affiliated club's membership process. EIH registration is only confirmed upon successful completion of the registration process by the affiliated club selected and provision of the documentation required by EIH as outlined in this rule book."* Registration is *"open to everyone, however some clubs may limit their membership"* — and if a club declines you or makes an error, *"an individual may transfer to the correct club by notifying the registration secretary."* You normally register for **one club only**.
@@ -397,6 +407,8 @@ England Ice Hockey's *Rules & Regulations* governs this, and it is more specific
 **Before you retire in a huff:** *"A member who has retired is unable to reapply for EIH membership for a minimum of three months following the retirement date."*
 
 ### Why it exists: insurance and safeguarding
+
+**In short:** Registration is your insurance, and it covers only sanctioned hockey, so ask whether a league is sanctioned before you join it.
 
 Beginners assume this is bureaucracy. It is not.
 
@@ -519,6 +531,8 @@ Stick-and-puck sessions often require far less — sometimes only a helmet and g
 
 ### What you need to be allowed on the ice in England
 
+**In short:** Wear an approved neck guard on the ice every time, at every level, and if you are a junior, wear a cage.
+
 England Ice Hockey sets this out itself, and one item is the sharpest difference from North American hockey:
 
 - **A neck guard, always, everywhere, at every level.** *"The EIH consider it mandatory that all players at all levels use an approved Ice Hockey Neck Guard/Protector whilst participating in all on ice activities."* That is **all on-ice activities**, not just games, and EIH covers England **and Wales**. The In-House Rules, adopted by IHUK and the BUIHA across all four Home Countries, make it mandatory for all players in all IIHF categories with **no warning**: an immediate 10-minute misconduct, and a second one puts you out of the game. The Elite League's own Rule 9.12 warns first, then gives a minor, and covers warm-ups and practice too. North American material teaches the opposite — USA Hockey exempts adults and Hockey Canada's requirement is narrower. **It is not optional for you.** [UK and England Rules](../foundation/uk_rules.md) has the enforcement detail, including what happens if it comes off in play, and [Equipment](../off-the-ice/equipment.md) the standard it must meet.
@@ -542,6 +556,8 @@ Skates and helmet. [Equipment](../off-the-ice/equipment.md) explains why: badly 
 ---
 
 ## 9. What the first few weeks feel like
+
+**In short:** Expect tired legs and few touches; a suspected concussion means off for the day, an ambulance for any red flag, and medical clearance before contact.
 
 **Expect to be more tired than you predict.** Hockey is bursts of maximum effort, not steady exercise. [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) has the numbers: measured shifts run **30 to 80 seconds**, and 30 to 45 when well managed. Your first shifts will run longer because you do not yet know when to leave — the biggest reason new players feel destroyed after twenty minutes.
 

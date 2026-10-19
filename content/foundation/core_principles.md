@@ -48,6 +48,8 @@ Learn these as principles rather than instructions: instructions expire with a t
 
 ## 1. Most of what you are told is your team's system, not a law of hockey
 
+**In short:** Ask which system your team plays, because most instructions about where to stand are a coach's choice, not a rule of hockey.
+
 **The principle.** Almost every "always do X" in hockey really means "in our system, do X". Who takes the first forechecker's job, who covers the front of the net, whether your partner follows you to a puck, how high a winger holds in your own end: a coach decides these, and a different coach decides differently and is also right.
 
 Take "stay high" for a winger in your own end. While the other team has the puck, it means level with the opposing defenceman on your side. It expires the moment your team wins the puck, when you come down the wall to the outlet instead.
@@ -69,6 +71,8 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 ---
 
 ## 2. Which book you are under, and where you sit inside it, decides what is legal
+
+**In short:** Before your first game, find out which competition you play in and whether it allows body checking.
 
 **The principle.** Hockey has several rule books and they disagree. Your age group, your league and your country decide which one is yours, and the same act can be normal play in one book and a penalty in another.
 
@@ -104,6 +108,8 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 ## 3. You almost never have the puck
 
+**In short:** You spend almost all of your shift without the puck, so have a plan for each of the four off-puck jobs.
+
 **The principle.** Your time with the puck is a rounding error in your shift, and it comes in bursts of about a second. What you do in the rest of the time decides what those bursts are worth.
 
 **Why it matters.** Most players practise the part of hockey they spend the least time doing. The three to four percent of your shift with the puck feels like hockey; the other ninety-six percent is where games are decided.
@@ -136,6 +142,8 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 ## 4. Look before the puck reaches you
 
+**In short:** Scan while the pass is travelling, so your decision is made before the puck reaches your stick.
+
 **The principle.** A glance over your shoulder while the pass is travelling is free, because your eyes have nothing else to do. A glance after the puck arrives costs possession time, and the picture has changed while you looked.
 
 **This reverses in goal.** A goalie facing a shot has nothing to gain by looking away from a live puck. [Goaltender](../positions/goaltender.md) has them "[t]rack the puck all the way into the pad, the glove, the chest" instead, because losing sight of it is what costs the goal.
@@ -158,6 +166,8 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 ## 5. Where you are standing decides what a mistake costs
 
+**In short:** Judge every play by what losing the puck there would cost, and never pass or skate it across the front of your own goal.
+
 **The principle.** The same play is not worth the same everywhere. A cross-ice pass is brilliant in the corner of their end and catastrophic in front of your own net; nothing about the pass changed, only the ice under it.
 
 **Why it matters.** Most bad hockey decisions are good decisions made in the wrong place. Thinking about location first turns a long list of things you must not do into one question you can answer under pressure.
@@ -177,6 +187,8 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 ---
 
 ## 6. Give the player with the puck two places to put it
+
+**In short:** Move so you, the carrier and a teammate form a triangle, giving the carrier two open options at different angles.
 
 **The principle.** A player with the puck and two options beats a player with the puck and none, whatever the difference in skill. Being one of those options, on purpose, is most of what a teammate is for.
 
@@ -199,6 +211,8 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 ---
 
 ## 7. Choose how you meet the boards before you have to
+
+**In short:** When you cannot avoid the wall, arrive on an angle with your head up, and never turn your back to the checker or duck.
 
 **The principle.** Races to a loose puck along the wall end in head-on contact with the boards, and the posture you arrive in decides whether that is nothing or a spinal injury. Decide the posture on the way, because there is no time to decide on arrival.
 

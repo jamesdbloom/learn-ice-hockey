@@ -51,6 +51,8 @@ Hockey gear does two separate jobs: it keeps you out of hospital, and it decides
 
 ## The Full Kit List
 
+**In short:** Put your money into skates and never save on the helmet; for shin guards, pants and elbow pads, fit matters most.
+
 Here is everything a skater needs, roughly in the order you put it on, with what each piece does and where it sits on the price/benefit curve.
 
 **From the skin out, up to the skates:**
@@ -99,6 +101,8 @@ This is the section people skip and then get sent off the ice for. The three mai
 
 ### If you play in Britain, read this before you read anything else in this section
 
+**In short:** In Britain, wear a neck guard at every age, in training as well as games, and leave the ice if it comes off.
+
 **Your rule book is the IIHF's**, at every level, with the **IHUK In-House Rules** amending the equipment rules more heavily than any other part of the game — ⚠️ **including that adults are not exempt from neck protection.** [UK and England Rules](../foundation/uk_rules.md) has the full list and the evidence; these are the ones that change what goes in the bag.
 
 - **A neck laceration protector is mandatory for everyone, adults included**, unlike under USA Hockey and Hockey Canada. If it comes off in play, ⚠️ **leave the ice and don't retrieve it.**
@@ -116,6 +120,8 @@ This is the section people skip and then get sent off the ice for. The three mai
 
 ### Helmets
 
+**In short:** Keep the chin strap fastened, never play on bareheaded, and never grab or pull off an opponent's helmet.
+
 - **NHL (Rule 9.6):** a League-approved helmet on the ice, on the bench and in the penalty box. If yours comes off during play, leave the ice or retrieve and replace it "within a reasonable period of time" — a minor if you do neither — and do not leave the penalty box during play without a fastened helmet. ⚠️ **Removing an opponent's helmet is a separate offence here and in the PWHL**: *"A player who intentionally removes an opponent’s helmet during play shall be assessed a minor penalty for roughing"* (9.6 and 51.2 in both), and 51.6 in both bars supplementary discipline for it, so in the NHL the minor is the whole of it. ⚠️ **But PWHL Rule 51.3 makes grabbing an opponent's helmet, chin strap, facial protection or throat protector a roughing major even at minimal force, and 51.5 adds a mandatory game misconduct.** The PWHL book does not say which rule applies when the grab is what takes the helmet off, so read any grab as the major and the ejection.
 - **IIHF (Rule 9.6):** stricter. A player whose helmet comes off *"must exit the playing surface immediately"* and is *"not allowed to retrieve and put their helmet back on their head"*. ⚠️ **Losing the helmet is not the offence under any of these books; staying on the ice is**: *"If a Player does not comply with this rule, they shall be assessed a minor penalty without a warning"* (under Rule 12 – Illegal Equipment, identical in the 2025/26 and 2026/27 editions). ⚠️ **Removing an opponent's helmet is a roughing minor here too**, and leaving the penalty box during play without a fastened helmet stops play and costs a minor. Grabbing an opponent's face mask is an unsportsmanlike-conduct minor (Rule 75.2(II)), and Rule 21 can make it a major and a game misconduct if the referee judges the force serious and severe.
 - **Britain (In-House Rules, Rule 9.8) — the same duty, a tier higher.** A detached helmet in play still means leaving the ice immediately, but staying on is a **10-minute misconduct** here rather than the IIHF's two-minute minor — and a second misconduct of any kind in the same game is an automatic game misconduct, so an earlier chin-strap violation plus this one ends your night. Go to the bench and leave the helmet where it fell.
@@ -128,6 +134,8 @@ This is the section people skip and then get sent off the ice for. The three mai
   - **Helmet and cage grabs.** Grabbing an opponent's helmet, chin strap or facial protector is priced anywhere on the ice: **Rule 7.1** makes it a double minor at minimal force, a major and a game misconduct at the referee's discretion (mandatory if it injures), and a match penalty for more force or a grab used to gain an advantage, punish or injure. **CARHA Rule 48(d)** makes it a double minor, or a match penalty when the grab is used as an advantage or to punish or injure.
 
 ### Facial protection
+
+**In short:** Check what your league requires for your age and sex; in Britain, a cage meets every rule, junior or adult.
 
 - **NHL (Rule 9.7):** since 2013-14, players with fewer than 25 games of NHL experience must wear a visor.
 - **IIHF (Rule 9.7):** visor, cage or full-face visor. ⚠️ **Every player born after 31 December 1974 must wear at least a visor**, fixed along the sides so it cannot flip up, covering "the eyes and nose in its entirety"; tinted or coloured visors are banned. Women's Senior and U18 (Rule 102.1–102.2) and men's junior U18 (Rule 202.2) require **full-face protection**.
@@ -142,6 +150,8 @@ This is the section people skip and then get sent off the ice for. The three mai
 
 ### Neck protection
 
+**In short:** Wear a neck guard at training as well as in games; a book's silence about practice is not an exemption.
+
 - **IIHF (Rule 9.12):** mandatory for all players in all categories *"of IIHF Competition"*, minor penalty after a warning. ⚠️ **But in junior hockey the 2025/26 book — the one British hockey plays — routes the violation through Rules 102.7 and 202.7 to a warning to both teams through the coaches and then a TEN-MINUTE MISCONDUCT**, five times the adult tier. The 2026/27 book deletes those rules and that cross-reference.
 - **England and Wales (R&R 24.3):** the requirement covers *"all on ice activities"* — **practices included**, not only games — and *"All protective equipment must be worn without alterations and as directed by the manufacturers’ specification."* ⚠️ **R&R 24.6 supplies the tariff, it is shared, and it reaches the bench as well as the player.** A first violation of 24.3, 24.4 or 24.5 — neck guard, chin-strap gap or junior face cage — *"counts as a warning to the player and bench, for any further violation of rule either 24.3, 24.4 or 24.5 misconduct penalties will be assessed to the offending player and also potential team head coach in the event of repeat offending."* **One warning covers all three rules together**, so a chin-strap correction early in the night spends the warning your neck guard would otherwise have had.
 - **Practice — only two of these books put the guard on the *player* there, and the silence in the rest is not an exemption.** England and Wales R&R 24.3 covers *"all on ice activities"*, and the EIHL Casebook says *"[t]his requirement also applies during warm-ups and practice sessions."* ⚠️ **A third document reaches training and does something different.** IHUK's *Coaching Regulations 2026-2027* require a Level 2 coach *"for all junior and senior teams, including practices, games, camps, and hockey schools"*, and §9.3 puts a neck guard in the **coach's** own on-ice kit and in a 16–17-year-old foundation coach's — but its list of what the coach must check on **players**, *"approved helmets and face protection, sticks, and gloves"*, names no neck guard. **Read that as an asymmetry between documents, not as a permission.** The In-House Rules, the IIHF book, USA Hockey and Hockey Canada are scoped to competition and say nothing either way about practice — searched for *practice*, *practise* and *training*, the In-House Rules have nothing on the point. What is missing at training is the referee, not the reason for the guard. **So wear it at training whichever book you are under.**
@@ -155,6 +165,8 @@ This is the section people skip and then get sent off the ice for. The three mai
 
 ### Mouthguards
 
+**In short:** Wear a mouthguard whether or not your book makes it compulsory; some leagues require one even behind a cage.
+
 - **USA Hockey (Rule 304(f)):** a coloured internal mouthpiece is required from 12U through Youth/Girls' 18U-19U, on the same warning-then-misconduct ladder as the helmet and neck guard.
 - **IIHF (Rule 9.13):** recommended for all; required for men's junior U20 players not wearing full-face protection.
 - **The Elite League (EIHL Casebook, Rule 9.5) — mandatory for every skater, with no cage exemption.** *"All players participating in the EIHL must properly wear a mouth guard."* ⚠️ **The IIHF’s full-face carve-out does not survive into the Casebook:** where IIHF Rule 202.3 excuses a player in the Under 20 category who wears a cage or full visor, the Casebook excuses no skater, so an EIHL skater in a cage still needs one. **Goalies are the one exception the Casebook does write** — *"It’s recommended that goalkeepers wear proper mouth protection, but not mandatory."* Chewing it does not count as wearing it, and losing it mid-shift is not an emergency: *"he may continue to play until the 1st stoppage of play."* Refuse to put one in and you are on the ladder Rule 9.5 sets for any non-conforming equipment — a minor for delay of game, then a misconduct, then a game misconduct. **That ladder is the IIHF’s own wording rather than an Elite League invention**, so it is not a tier the League has added.
@@ -162,6 +174,8 @@ This is the section people skip and then get sent off the ice for. The three mai
 - **Hockey Canada (Rule 3.6(e), Note 6):** compulsory wherever a half visor is worn, except Senior, where it is only recommended — so in practice it bites only in Major Junior. ⚠️ **That is a reading of two Notes together, not a sentence either one writes.** And the same rule's **Interpretation 2** says something different again: the guidelines reach mouth guards *"if a Member has made mouth guards mandatory at a specific division of play. **Otherwise, mouth guards are not currently mandatory under the rules.**"* The rulebook prints no reconciliation, so ask your Member association — and wear one either way, whichever way the answer goes.
 
 ### Everything else
+
+**In short:** Keep your pads under the jersey, never cut out a glove palm, and check your stick's length and curve against your book.
 
 - **Pads go under the jersey.** Nearly universal across the books, with minor variation in what's excepted (gloves, headgear, goalie leg pads, and in USA Hockey padded pants too, which is why some North American leagues wear pants over the jersey hem). **In Britain**, the jersey must also stay completely outside the pants and cover protective equipment like elbow pads — buy one big enough to do that job.
 - **Shorts, in Britain.** Cut, torn or modified shorts are illegal equipment — a warning first, then a misconduct. Recreational hockey in England tolerates small rips, but anything a referee judges safety-relevant is not. The common habit of cutting the inner thigh out of pants for mobility makes them illegal here.
@@ -334,6 +348,8 @@ The maximum shaft length is **not one number** — NHL 10.1 and Hockey Canada 3.
 
 ### 2. Flex
 
+**In short:** Start near half your body weight in pounds, pick a flex you can load consistently, and buy lower if you cut much off.
+
 **Flex is a stiffness rating: the number of pounds of force needed to bend the shaft one inch.** A 100-flex stick takes 100 lb to bend it an inch. Higher number, stiffer stick. Retail sticks run from about 30 flex for small children to 110 for large adults.
 
 **The rule of thumb: start at roughly half your body weight in pounds.** A 180 lb player starts at 85–90; a 200 lb player at 100. Then adjust:
@@ -355,6 +371,8 @@ Positionally, and again as convention rather than rule: defencemen often prefer 
 **Kick point** is a secondary variable — where along the shaft the stick is designed to bend most. **Low kick** flexes near the blade for a quick release; **mid kick** is the traditional feel and loads more power over a longer motion; **high kick** loads the whole shaft, favouring big slap shots; **constant** and **dual kick** designs respond to where your bottom hand is. Get length and flex right first; kick point is a refinement.
 
 ### 3. Curve
+
+**In short:** A mid curve is the safest first choice; a deep, open curve helps your forehand but costs your backhand.
 
 The blade's curve is described by three things: **where** the curve is, **how open** the face is, and the **toe shape**.
 
@@ -409,6 +427,8 @@ Note the interaction: **lie and length are coupled.** Cutting a stick down effec
 
 ### When your stick breaks
 
+**In short:** Drop a broken stick where you stand, never put it over the boards, and take a replacement from your bench.
+
 **Open your hand where you stand.** A broken stick is one the referee judges *"unfit for normal play"*. You may play on without a stick, but you must drop the broken one immediately. If you move it at all, push it along the ice to the side of the rink, clear of the play. ⚠️ **Never put it over the boards** — it is the tidy instinct, and every book penalises it. Carrying a stick and disposing of one are two different rules, and one motion can satisfy the first and break the second.
 
 **Get a replacement handed to you.** It must come from your bench or from a teammate on the ice. Only the NHL, the IIHF and the PWHL also let you pick an unbroken stick up off the ice; USA Hockey, Hockey Canada and CARHA allow only one from your bench or handed to you by a teammate. A teammate may not throw or shoot one to you — the IIHF adds tossing and sliding — and you may not use an opponent's stick or a goalie's.
@@ -459,6 +479,8 @@ A fourth worth noting: **tendon guards** — the padding at the back of the ankl
 
 ### Certification
 
+**In short:** Buy the mark where you play requires, check it has not expired, and never let a valid sticker talk you into a second-hand helmet.
+
 Three separate systems, one for each of the big markets. **The mark you need is determined by where you play, not by where the helmet was made.**
 
 **United States — HECC.** The **Hockey Equipment Certification Council** is a US non-profit whose sticker American leagues reference. *(HECC's homepage says it was "created at the request of USA Hockey in 1978"; USA Hockey's own article "What the Heck is HECC?" dates it to 1976 — "The Hockey Equipment Certification Council (HECC), organized in 1976…" — and does not mention requesting it. HECC's account is used here.)* HECC does not write standards; it certifies against **ASTM** ones, which is what most "check the sticker" advice leaves out:
@@ -507,9 +529,11 @@ Keep two things apart: **a successor *standard* exists; a successor BNQ *certifi
 
 **Hockey Canada Rule 3.6(c) still requires a "BNQ-certified" throat protector** in minor and female hockey, and names no standard number. ⚠️ **Nothing published says what Hockey Canada will require once BNQ stops issuing certificates — and the closure is not permission to skip the protector.** **Buy a BNQ-certified protector now, keep the label legible, and ask your association before the 2027-28 season what it will accept after 31 July 2027.**
 
-**Check the sticker before you buy, and especially before you accept a hand-me-down.** A cheap clearance helmet is often cheap because its certification has expired, which makes it illegal in USA Hockey play at every age classification except Adults — Rule 304(c) requires a HECC-certified helmet, and the rulebook's own Note says an expired sticker "is no longer considered certified" — even though the helmet is physically fine.
+**Check the sticker before you buy a new helmet, and never take a hand-me-down one: an in-date sticker does not make it safe.** A cheap clearance helmet is often cheap because its certification has expired, which makes it illegal in USA Hockey play at every age classification except Adults — Rule 304(c) requires a HECC-certified helmet, and the rulebook's own Note says an expired sticker "is no longer considered certified" — even though the helmet is physically fine.
 
 ### Cage versus visor versus full shield
+
+**In short:** A cage is the sensible default; a half visor, where your age and league allow one, leaves your mouth open, so add a mouthguard.
 
 - **Cage.** Metal bars. Maximum protection, no fogging or scratching, full airflow; almost everyone stops noticing the bars within a few sessions. **The default unless you have a reason to wear something else** — though below adult level a certified full shield is legal too: USA Hockey Rule 304(d) asks for a **HECC-certified facemask**, and IIHF women's and U18 hockey ask for **full-face protection**, not a cage. **Junior hockey in England and Wales is the exception**: England Ice Hockey's R&R 24.5 makes **face cages mandatory for all junior games**, so a full shield is not a substitute there.
 - **Visor (half shield).** Clear polycarbonate over the eyes and nose. Best optical clarity, no chin or mouth protection — wear a mouthguard. The IIHF requires at least a visor of everyone born after 31 December 1974, fixed so it cannot flip up, and bans tinted ones so opponents and officials can make eye contact.
@@ -522,6 +546,8 @@ Keep two things apart: **a successor *standard* exists; a successor BNQ *certifi
 
 ### The fit test
 
+**In short:** Fit the helmet so it moves with your skull, the chin cup against your chin and the strap a finger's gap at most.
+
 1. **Measure** your head circumference with a soft tape about ½"–1" above your eyebrows. Your fitted hat size is a usable proxy.
 2. **Open the helmet to its largest adjustment**, put it on, and then tighten it down gradually until it is snug. Most modern helmets adjust with side tabs or a rear dial, and adjacent sizes overlap substantially — a small at maximum is close to a medium at minimum.
 3. **The front edge should sit about ½ inch above your eyebrows**, flat and level. It must not tilt forward, slide back, or wobble.
@@ -533,6 +559,8 @@ Keep two things apart: **a successor *standard* exists; a successor BNQ *certifi
    **What it costs.** Almost every rule set requires the strap fastened whenever you are on the ice (the NHL and PWHL, Rule 9.6, write it only for a player returning from the bench or penalty box). **Three books set a fit test, all one finger.** In Britain the gap must not exceed **2.5 cm — about one finger** (In-House Rule 9.8, and England Ice Hockey's R&R 24.4): the first offence sends the player to adjust and warns the **team**, and **once your team has been warned, a loose strap is a 10-minute misconduct, even if it is your first.** USA Hockey's Casebook sets **one finger width** (Rule 304, Situation 14): off the ice until corrected, a team warning, then a misconduct for the next violation. For a helmet that comes off, In-House Rule 9.8 requires you to *"immediately leave the ice"*, and failure *"will be penalised, with a misconduct penalty, under Rule 12 – Illegal Equipment."* The IIHF book has the same duty with a minor; the NHL allows a refit *"within a reasonable period of time"*.
 
 ### Replacing a helmet after an impact
+
+**In short:** Replace a helmet after a serious impact even if it looks fine, and never play as though it makes you concussion-proof.
 
 **A helmet that has taken a serious impact should be replaced.** Protective foam absorbs energy by crushing, and crushed foam does not un-crush, so a helmet that looks fine can hide a compressed liner and hairline shell damage. The same goes for one dropped hard onto concrete, left in a hot car, or worn well past its certification date.
 
@@ -549,6 +577,8 @@ Three things worth being honest about:
 ---
 
 ## Goalie Equipment — An Overview
+
+**In short:** Borrow club goalie pads to try the position, but own your mask, because a goalie mask is a helmet.
 
 Goaltending gear is a different sport's worth of kit. This section is deliberately a summary; see [Goaltender](../positions/goaltender.md) for how it is actually used.
 
@@ -573,6 +603,8 @@ One rule does run the goalie's way, and it is worth knowing because the skater v
 ## Buying Strategy
 
 ### New versus used
+
+**In short:** Buy sticks and pads used if they fit and are sound, but never a used helmet, mouthguard or anything with an expired sticker.
 
 **Safe to buy used**, provided you check fit and condition:
 
@@ -636,7 +668,9 @@ One rule does run the goalie's way, and it is worth knowing because the skater v
 
 ### Drying — the one habit that matters
 
-**Take everything out of the bag as soon as you get home. Every time.** Wet gear left zipped in a bag is a warm, dark, humid environment full of organic material, which is exactly what bacteria and fungi want. As How To Hockey puts it: "The longer you leave wet ANYTHING in your bag, the more it will stink."
+**In short:** Take everything out of the bag as soon as you get home, every time.
+
+Wet gear left zipped in a bag is a warm, dark, humid environment full of organic material, which is exactly what bacteria and fungi want. As How To Hockey puts it: "The longer you leave wet ANYTHING in your bag, the more it will stink."
 
 The smell is the visible symptom; the real reasons are more serious. Damp gear degrades faster — foam breaks down, stitching rots, steel rusts. And hockey supplies a steady stream of small cuts, blisters and abrasions, the openings skin bacteria need. The NHS notes that staph and MRSA live harmlessly on skin, spread mainly by touch, and cause infection only when they get in through a break in the skin. A *Sports Medicine* review by Tlougan and colleagues reports that the infections most often seen in ice-skating athletes are *"tinea pedis, onychomycosis, pitted keratolysis, warts and folliculitis"*, and that *"[a]wareness, prompt treatment and the use of preventative measures are particularly important in managing such dermatoses that are easily spread from person to person in training facilities."* Its prevention advice matches this page: keep gear ventilated and dry, keep your skin clean, and wear sandals in shared changing areas. *(The review establishes which infections occur and how to prevent them; there is no published infection **rate** attributable to unwashed equipment.)*
 
@@ -672,6 +706,8 @@ Tape does four things: it protects the blade from wear, it stops water and ice b
 **There is genuinely no right way to tape a stick.** Players tape differently because they want different things, and the variation is preference, not technique.
 
 ### Blade taping
+
+**In short:** Wrap smoothly with even overlaps and no wrinkles, then wax it; the pattern and colour are up to you.
 
 The mechanics that are not preference: **wrap smoothly, overlap evenly, and don't let it wrinkle or bunch.** An uneven tape job gives you an unpredictable blade surface, which shows up on receptions and on shots. Trim creases and toe flaps off with scissors.
 
@@ -848,7 +884,7 @@ document, that is named too.*
 ## Key Takeaways
 
 1. **Buy your own helmet new, and never wear a second-hand one — a goalie mask counts.** You cannot see what it has hit, so borrow the club's goalie pads but get your own mask. That is a firm caution, not a rule-book requirement. ⚠️ **Replace any helmet that has taken a serious impact, even one that looks fine.**
-2. **Do the chin strap up before every skate, a finger's width at most, and keep the helmet on.** ⚠️ **Never take your own helmet off before a fight or scrum, and never remove or grab an opponent's.** Under USA Hockey, removing one throws you out at every age, with a suspension until a hearing.
+2. **Fit the helmet so it moves with your skull, not on it, and size the cage separately. Then do the chin strap up before every skate, a finger's width at most, and keep the helmet on.** ⚠️ **Never take your own helmet off before a fight or scrum, and never remove or grab an opponent's.** Under USA Hockey, removing one throws you out at every age, with a suspension until a hearing.
 3. **Wear the helmet, but never play as though it were armour — and never go into a collision head down.** ⚠️ **No helmet is concussion-proof** — a retailer's point, not a research finding. USA Hockey's *Heads Up Hockey* guide warns that *"there isn’t any protective equipment that can keep a player from getting a serious spinal injury"* in a collision taken head down.
 4. **Before you buy protection, find out what your league requires** — facial protection, neck guard, mouthguard and certification mark all change by book. Buy a cage for any junior, Under-19 included, and a cage or full shield for anyone else. **Under Hockey Canada, buy a BNQ-certified neck protector now and ask what your association will accept after 31 July 2027.**
 5. **🇬🇧 Pack the neck guard for every session and wear it every shift — adults and training included.** It is mandatory for every player across England, Wales, Scotland and Northern Ireland. Where a British book says nothing about training, **read that as silence, not an exemption.** USA Hockey's adult exemption and Hockey Canada's minor-and-female scope are not yours.

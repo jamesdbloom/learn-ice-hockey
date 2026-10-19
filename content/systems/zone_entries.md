@@ -70,6 +70,8 @@ The ranges are across the nine rows of their Table 1 — eight team data sets (P
 
 ### The part everyone gets wrong
 
+**In short:** In the tracked NHL games a failed carry-in cost far less than it feels, so the bar for trying one is lower than instinct says.
+
 ```facts
 Key: Every figure in Tulsky's net-value table comes from the Washington games alone, not from all 330 — those were the only games in which failed attempts and dump-and-change plays were tracked
 Key: A failed carry-in cost about eight hundredths of a shot in net value in Tulsky's Washington games, and dumping the puck in and changing lines cost more than that
@@ -105,6 +107,8 @@ Their conclusion, about the NHL players they watched: *"It is likely that player
 
 ### Corroboration
 
+**In short:** Other trackers, leagues and eras found the same answer: getting in with control beats putting the puck in without it.
+
 The finding has held up across other data sets. None of these is a peer-reviewed paper, none of the underlying tracking is published, and they are not all reached first-hand — where a figure comes through a restater rather than from its own author, the bullet says so. Treat all of it as indicative:
 
 - **Corey Sznajder** — roughly **0.66 shots per carry-in** against **0.29 per dump-in**. **This is the one still reached at second hand**, and its two restaters date it differently: Hockey's Arsenal gives the tracking as 2014-16, while Chatel credits the same pair of figures to *"Corey Sznajder presentation at RITSAC 2018"*. No publication by Sznajder himself was located for this document.
@@ -138,6 +142,8 @@ Most players know offside as something whistled against them. Learn the exact wo
 
 ### The four clauses the technique rests on
 
+**In short:** Offside is judged by your skates, not your body: one skate touching the line keeps you onside until the puck is fully across.
+
 ```facts
 Rule: You are offside only when both skates are completely over the leading edge of the blue line (NHL Rule 83; IIHF Rule 83.1 word-for-word)
 Rule: One skate in contact with the line, or on your own side of it, keeps you onside at the instant the puck completely crosses (NHL Rule 83; IIHF Rule 83.1)
@@ -164,6 +170,8 @@ Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 > **The third clause is NHL, IIHF and PWHL, and both North American governing bodies reverse it.** Under **USA Hockey Rule 630(a)** you are offside without *"skate contact with any part of the Neutral Zone or the blue line when the puck crosses the determining edge of the blue line"*, and its *Casebook* rules a player whose *"trailing skate is directly above the ice in the Neutral Zone (off the ice)"* offside (Rule 630, Situation 7). **Hockey Canada Rule 6.11** counts *"[o]nly the player's skate(s) that are in physical contact with the ice surface"*, and its Interpretation 3 to Rule 6.11(a) rules one skate above the line, not touching the ice, and one over it *"OFF-SIDE."* **CARHA's Rule 72(c) borrows the phrase *"own side"* without defining it, so it settles nothing.** So an airborne trail skate is **onside under the NHL, the IIHF and the PWHL (Rule 85.1), and therefore in Britain, and offside under USA Hockey and Hockey Canada**. How much North American rec and youth hockey runs on those two books is a question about leagues, and this document has no count for it, so ⚠️ **find out which book your league plays under.**
 
 ### The trail-skate drag
+
+**In short:** Glide your trail blade on the line with body and stick already in the zone, head up, and push once the puck is across.
 
 ```facts
 Position: Far-side winger flying at the line, a stride ahead of a carrier about to put the puck over
@@ -198,6 +206,8 @@ Three details that separate people who *sort of* know this from people who use i
 - **Which rule book you are under changes step 2.** Gliding the blade along the line is legal everywhere; lifting it is not. Find out which book your league plays under — and under USA Hockey's or Hockey Canada's, keep that trail skate on the ice.
 
 ### Delayed offside and tagging up — three consequences for the entry
+
+**In short:** Once the arm goes up, leave the puck alone, get everyone back to touch the line together, and come again.
 
 ```facts
 Rule: On a delayed offside the linesperson raises a non-whistle arm and play continues (NHL Rule 83.3; IIHF Rule 83.3 in the same terms)
@@ -255,6 +265,8 @@ And name ⚠️ **the hit you are lining up.** A defenceman turned to retrieve a
 [Body Contact and Battles](../technique/body_contact_and_battles.md) covers how to arrive on a puck-retriever without becoming that. Hockey Canada's offside rule answers the player who hits anyway only with a faceoff; **the protection is Rules 7.5 and 7.6, not the offside rule.**
 
 ### The territorial asymmetry — why the safe play isn't
+
+**In short:** Under pressure, a failed carry costs you less than a failed dump, and a shot that creates a delayed offside cannot score for you.
 
 ```facts
 Rule: A botched carry-in draws only to the neutral-zone spot outside the blue line (NHL Rule 83.6; IIHF Rule 83.6(I), the same)
@@ -323,6 +335,8 @@ You are looking for the moment two defenders both think the other one has it. Th
 **On a rush you will also hear this as "isolate a defender" — the same instruction, not a rival one.** Going at the seam is *how* you isolate one: whichever defender steps to take you has left their partner alone with somebody else. (At 3-on-3, [Special Teams](special_teams.md) uses the phrase for going straight at a lone defender in space — the opposite of this.) **Entering with numbers** below sets out the patterns.
 
 ### The wide entry
+
+**In short:** Go wide to the goal line only with a teammate driving the net, stopping short of the paint, its red line and the goalie.
 
 ```facts
 Action: Take the puck down the boards outside the defenceman and get to the goal line or below it
@@ -404,6 +418,8 @@ Two attackers crossing near the line can be used so that the second one runs int
 **Be careful with this one.** Deliberately body-blocking a defender who is not the puck carrier is **interference**. What is legal is skating your own route to the net and letting the defender's chosen path be the one that gets tangled. What is not legal is stopping, standing, or stepping into them to make the pick. The distinction is whether you are playing hockey or setting a screen; officials at every level judge it on whether you were going somewhere. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 ### Entering with numbers — 2-on-2 and 3-on-2
+
+**In short:** Use the extra attacker to make one defender responsible for two of you, and keep your speed so someone has to commit.
 
 ```facts
 Goal: Arriving with an extra attacker is worth nothing unless you use it to make one defender responsible for two of you
@@ -528,6 +544,8 @@ On the power play, coaches often push this further and want **four across the li
 ---
 
 ## 5. The delay / curl-back
+
+**In short:** Arriving at the line alone, curl away in open ice, never against the wall, and come again once support catches up.
 
 Turning away from the blue line, keeping the puck, and coming back at the line once your support has caught up.
 
@@ -728,6 +746,8 @@ From one side of the ice, shoot the puck hard **diagonally** across into the far
 
 ### 5. The flip / area dump over a trap
 
+**In short:** When a trap clogs the neutral zone, flip the puck over it to land past the defence but short of the goal line.
+
 ```facts
 Read: The opposition congesting the neutral zone — a trap, most commonly a 1-3-1 — and no route along the ice
 Action: Lift the puck high off the ice so it travels over sticks and bodies and lands in open space behind the defence
@@ -760,6 +780,8 @@ Lift the puck high off the ice so it travels over sticks and bodies and lands in
 See the [Rules Primer](../foundation/rules_primer.md) for the full icing rule and [Special Teams](special_teams.md) for every book's wording.
 
 ### How the trapezoid shapes where you aim
+
+**In short:** Where a trapezoid applies, dump to the corners; where there is none, rim it hard and low, and chase the puck, never the goalie.
 
 ```facts
 Rule: Under the NHL and IIHF books a goalie may not play the puck outside the designated area behind the net — a two-minute delay-of-game minor (NHL Rules 27.8 and 63.2(viii))
@@ -816,6 +838,8 @@ So **the corners are legally out of bounds for the goalie, and the area directly
 A dump-in is only as good as the chase. Most amateur chases fail before they start because the chaser skates at the puck.
 
 ### Angle, don't chase
+
+**In short:** Take away the retriever's easy escape with your route and your stick, rather than skating straight at the puck.
 
 ```facts
 Never: Skate at the puck — your route should take away the easy escape, not shorten the distance

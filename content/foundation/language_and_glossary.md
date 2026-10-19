@@ -104,6 +104,8 @@ The names below are terminology and they do not change. **Who covers each area i
 
 ### The slot, the high slot and the goalmouth
 
+**In short:** Keep the high slot and the goalmouth apart; leaving the goalmouth to cover the slot leaves a tap-in unmarked.
+
 - **The slot** is the ice directly in front of the net, between the two faceoff circles, from the tops of the circles down toward the goalmouth. **It is where most goals are scored from** — [Shooting](../technique/shooting.md) owns the shot-location figures and their qualifications. "The most dangerous ice on the rink" is also said of **home plate**, a wider shape, and of the **inner slot** nearest the crease, a narrower one. Treat it as the shape those figures agree on, not a measured ranking.
 - **The high slot** is its upper layer, from the level of the faceoff dots up to the top of the circles. This is the shooting layer: a player unmarked here gets a clean look with time to pick a corner.
 - **The low slot** is the layer beneath it, from the dots down toward the goalmouth and outside the crease. Tips, rebounds and screen position live here, and it is the ice a net-front player fights for. [Rink Map](rink_map.md) owns the scoring evidence for it, and the limits on what has actually been counted.

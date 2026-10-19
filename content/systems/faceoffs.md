@@ -67,6 +67,8 @@ There is a bad version of this argument and a good one. The bad version says fac
 
 ### What the evidence actually shows
 
+**In short:** Faceoffs matter far less than they look: a won draw buys a brief possession head start, not a scoring chance.
+
 **Team faceoff percentage barely predicts winning.** Computed from the NHL's official team statistics for the eleven seasons 2015-16 to 2025-26 (344 team-seasons), the correlation between faceoff win percentage and **points percentage** (points earned divided by two per game played) is **r = +0.25** — about **6% of the variation**. It is unstable too: negative in 2016-17 (r = −0.24) and essentially zero in 2025-26 (r = +0.03).
 
 **And teams barely differ.** Across all 32 NHL teams in 2025-26 (all situations, from the NHL's team-summary data), team faceoff percentage ran only from about **45.9% to 54.5%**, around a league mean of **50.0%** by definition — every draw is one team's win and the other's loss.
@@ -150,6 +152,8 @@ The per-game counts are those percentages applied to the roughly **56 draws in a
 
 ### What sends the draw to which spot
 
+**In short:** Know where the next draw will be and you can start skating there before the whistle finishes.
+
 ![](diagram:faceoff-where-the-draw-goes)
 
 ```facts
@@ -165,8 +169,6 @@ Rule: A post-whistle scrum that pulls players inside the circle's outer edge mov
 Rule: A puck out of play draws at the nearest spot in the zone it was shot from (NHL 85.1); a puck shot into the players' bench draws no penalty, but the IIHF Handbook exempts only one shot straight in, not one clearing the glass into it (63.2(iii) NOTE; Situation 63.24)
 Never: Go offside by firing the puck over the blue line — carrying it over and being whistled costs you far less
 ```
-
-Know where the next draw will be and you can start skating there before the whistle finishes.
 
 **To centre ice:**
 - The start of every period, and after every goal.
@@ -243,6 +245,8 @@ Options: Some players roll both hands into a "kayak paddle" grip for maximum bac
 
 ### Faceoff technique: the techniques
 
+**In short:** Own three or four draws, not one; against a better taker, tying up his stick, stick on stick only, is the common answer.
+
 ```facts
 Key: There is no single correct draw — the good centres own three or four
 Technique: Pull the puck back on the backhand, usually with the reverse grip — pulling is a stronger and faster motion than pushing
@@ -262,6 +266,8 @@ There is no single correct draw. There are seven or eight, and the good centres 
 **What it costs.** A hand on an opponent's stick is a minor for holding the stick under NHL and IIHF 54.2, PWHL 55.2, USA Hockey 622, Hockey Canada 8.1(a) and CARHA 63(a), whose text may also allow a major. A hold that injures is a mandatory major under Hockey Canada 8.1(b) and CARHA 63(b), and either one puts you out of the game — 8.1(b) adds a game misconduct, and under CARHA 30(a) any major ejects. A stick on his hands is hooking: IIHF 55.1 names a stick *"against the opponent's hands / or near the opponent's hands"*, and Hockey Canada allows the lift only *"for the purpose of making a play on the puck"* (8.2(a) Interpretation 1). Under USA Hockey (623) and Hockey Canada (8.2) a blade that hooks his **stick** is hooking too.
 
 ### The techniques that use your body, your feet or your hands
+
+**In short:** Lean in only after the puck lands, while playing it, and where checking is allowed; skate round on a lose-it-forward; check your book on feet.
 
 ```facts
 Rule: Contact before the drop is a violation under NHL and IIHF 76.7 and can draw a minor on the taker at the referee's discretion as well, where USA Hockey 613(e), Hockey Canada 6.2(c) and CARHA 57(b) make that minor mandatory; afterwards they permit contact only "in the course of playing the puck"
@@ -370,6 +376,8 @@ Deception belongs here too: a small feint of the shoulder, a hip fake, or a deli
 
 ### Handedness and which side you're strong on
 
+**In short:** Your strong side is the circle where your natural backward pull sends the puck toward the boards, so match centres to circles.
+
 ```facts
 Convention: Coaching sources call the strong-side draw a right-shot centre on the right side, or a left-shot on the left
 Key: Your strong side is the circle where your natural backward pull sends the puck toward the boards
@@ -407,6 +415,8 @@ A centre's shot hand decides which circle he is better in, and coaching staffs b
 > **A word on "left" and "right".** Which circle is on your left depends on which net you defend and which way you face, so the alignments below use two terms that do not move: **boards-side** — the circle nearer the boards you will exit toward — and **inside**, the other; and your centre's **strong side** (see "Handedness" above). Learn those instead of left and right, and the alignment applies unchanged at either circle — it is a mirror image at the other one.
 
 ### Defensive-zone draws
+
+**In short:** In your own end, settle for a tie-up over a clean loss, never win it to the middle, and jump every loose puck.
 
 ```facts
 Priority: Do not lose this cleanly — a tie-up is acceptable, a clean loss to their strong-side point is not
@@ -555,6 +565,8 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 
 ### Defensive-zone plays
 
+**In short:** Off an own-end win, rim it hard all the way round or hit the breaking winger, never a soft rim that dies.
+
 ```facts
 Options: The quick rim, the direct exit, the reverse, or off the glass and out of your zone — every forechecker is stationary at the whistle, so a hard rim or direct exit beats them
 Rule: Under NHL and IIHF rules — the KHL reportedly too, unverified — your goalie may only play the puck behind the goal line inside the trapezoid (Rule 1.8; penalty NHL 27.8 and 63.2(viii), IIHF 27.7 and 63.2(VIII)); the sole exception is skate contact with the crease
@@ -647,6 +659,8 @@ The failure mode is universal: teams install six plays, run each badly, and the 
 
 ### The sequence, start to finish
 
+**In short:** Head straight to the dot and line up quickly; stalling to give your bench a rest is a penalty.
+
 ```facts
 Rule: The visiting team gets up to five seconds to change, then the home team up to eight (NHL and IIHF Rule 82.2) — USA Hockey 204(a) and Hockey Canada 6.1(d) give the home team five, not eight
 Rule: CARHA has no last change at all — Rule 19(g) gives both teams one shared ten-second window and names neither the home nor the visiting team, so there is no matchup to hunt off it
@@ -674,6 +688,8 @@ Key: Last change is why the away centre so often finds himself against a special
 
 ### Who puts their stick down first
 
+**In short:** When you must place first, vary the blade angle you show; when you place second, take your look.
+
 ```facts
 Rule: At centre ice the visiting player places their stick first (NHL Rule 76.4)
 Rule: At the other eight spots the defending player places first, then the attacking player (NHL Rule 76.4)
@@ -689,7 +705,7 @@ Key: Placing first shows your blade angle first, so under NHL and IIHF rules the
 Action: When you are the one who must show your hand, vary the angle you show
 ```
 
-**When you must place first, vary the blade angle you show. When you place second, take your look.** Putting your stick down first shows your blade angle first, which you would rather not give away — and who goes first differs by book.
+Putting your stick down first shows your blade angle first, which you would rather not give away — and who goes first differs by book.
 
 - **NHL and IIHF** (both editions, word for word, Rule 76.4): at centre ice the **visiting** player places first; at the other eight spots the **defending** player places first, *"followed immediately by the attacking player."* So the common shorthand "the visitor goes first" is true at one spot of nine, and **at the other eight the advantage of going second is the attacking team's.** At a neutral-zone dot "defending" means the team defending the goal at that end — the standard reading; the book does not spell it out.
 - **The IIHF 2026/27 Situation Handbook reads that order as an option** (Situation 76.53): an attacking centre who chooses to place first is allowed to, and the linesperson drops as soon as the defender's stick is down. It is an interpretation, not rule text, but nothing in 76.4 contradicts it.
@@ -704,6 +720,8 @@ Action: When you are the one who must show your hand, vary the angle you show
 **What it costs.** Declining to put your stick down is no way round any of this. Under the NHL and both IIHF editions a centre who will *"refrain from placing their stick on the ice"* is replaced (NHL 76.3(ii), IIHF 76.3(II)); USA Hockey 613(d) and CARHA 57(c) let the official replace a centre who will not take position when directed; Hockey Canada 6.2(a) and 6.2(d) eject him. A second violation by your team on that draw is a bench minor under IIHF 76.7, which IHUK does not amend.
 
 ### Positioning requirements
+
+**In short:** Take the draw square, whole blade flat in the white until the drop, and keep everyone else outside the circle and behind the hashes.
 
 ```facts
 Position: Square to your opponent's end of the rink, roughly one stick length apart (Rule 76.4)
@@ -751,6 +769,8 @@ Get this exactly right, because the consequences are asymmetric and one of them 
 > **🇬🇧 In Britain, read the NHL column for who gets removed.** Across the Home Countries you need not even settle the IIHF edition: the **IHUK In-House Rules 2026-27** write the removal in themselves, on every draw but one following an icing. ⚠️ **The Elite League does not run those rules** — they never name it, and its Casebook writes no Rule 76 — **so an EIHL draw runs IIHF 2026/27 Rule 76 unamended.** Neither 2026/27 document has been read in full; each was read for the faceoff rules and for the other rules cited here as reading the same in both editions.
 
 ### What gets your centre thrown out of the dot
+
+**In short:** Line up onside, blade in the white, wingers behind the hashes: violations can cost your centre the dot, and pre-drop contact two minutes.
 
 ```facts
 Rule: A faceoff violation normally ejects the offending team's centre from that draw, replaced "by any teammate then on the ice" (NHL Rules 76.4, 76.6)
@@ -822,6 +842,8 @@ Action: Get your chest over the puck, not your head over the dot — depth comes
 
 ### The rule everybody gets wrong
 
+**In short:** Keep skates and stick behind your hash mark and skates off the circle line; your encroachment gets your centre thrown out.
+
 ```facts
 Rule: A teammate moving into the circle ejects the centre, not the teammate (NHL Rule 76.6)
 Rule: Under the IIHF 2025/26 book a teammate's encroachment cost the team its one warning for that draw, not the centre (IIHF 2025/26 Rule 76.6)
@@ -892,6 +914,8 @@ So on an own-end draw after your icing, with a tired line that cannot change, yo
 
 ### Closing your hand on the puck is a *penalty*, not a faceoff violation — but the books differ on when it is one
 
+**In short:** In the scrum after the drop, your hands and your body stay off the puck — win it with your stick.
+
 ```facts
 Rule: Everyone on the ice may catch a puck out of the air, provided they "immediately place it or knock it down to the ice" — but not the two takers, not until a third player has touched the puck (NHL and IIHF Rules 67.2, 76.5)
 Rule: Not the two takers, though — the note to NHL and IIHF Rule 67.2, printed again at Rule 76.5, bars them from playing the puck with a hand "until such time as a third player (from either team) has at least touched the puck"
@@ -907,7 +931,7 @@ Rule: An ordinary faceoff violation cannot be challenged after a goal, but a dra
 Rule: Winning the draw with your skates is legal in the NHL but a faceoff violation under the IIHF book British hockey plays at every level — it cost a warning in the 2025/26 edition and gets the centre replaced in the 2026/27 one (IIHF Rule 76.3(VI), both editions)
 ```
 
-**In the scrum after the drop, your hands and your body stay off the puck — win it with your stick.** For the two takers that is the rule itself; for everyone else it is advice. What **is** legal is tying up his stick **with yours** — lifting or pressing it, never hooking it, holding it down or putting a hand on it. **In every book the same act keeps you clear: catch it and drop it straight down.**
+Keeping your hands and body off the puck is the rule itself for the two takers; for everyone else it is advice. What **is** legal is tying up his stick **with yours** — lifting or pressing it, never hooking it, holding it down or putting a hand on it. **In every book the same act keeps you clear: catch it and drop it straight down.**
 
 **Everyone else may catch the puck — the takers may not.** NHL and IIHF 67.2 permit a player *"to catch the puck out of the air but must immediately place it or knock it down to the ice."* ⚠️ **At a draw that is switched off for the two takers, and for nobody else**: Rule 76.5 bars them from playing the puck with a hand *"until such time as a third player (from either team) has at least touched the puck."* The bar is on playing it with the hand at all.
 
@@ -918,6 +942,8 @@ An open hand is no loophole: placing a hand over the puck to conceal it is a min
 **Under the IIHF a hand at the draw can cost you the goal itself, on review, minutes later.** Situation 38.11 — the same in both 2025/26 versions and in 2026/27 — has a centre glove the puck from a draw to a teammate who scores, undetected, and allows a challenge for a missed game stoppage. The 2026/27 Situation 38.20 adds that an ordinary faceoff violation *"cannot be challenged as a missed game stoppage event"* but a hand-won draw can be, as a hand pass — so it reaches attacking-zone draws (Rules 38.2(II), 38.9, 79.2). It sits awkwardly with Rule 76.5, which sends the takers' hand play to 67.2, and the handbook's Foreword makes the rulebook prevail, so treat it as how the review is run rather than as the rule. 🇬🇧 The In-House Rules say *"a Coach's Challenge is not permitted in EIH or SIHA competition"*, which settles neither a BUIHA fixture nor the **Elite League**, whose Casebook allows a challenge *"at any time throughout the game"* (38.5). **None of it changes the instruction: your hands stay off the puck.**
 
 ### When your centre gets tossed — and the edition that changed where
+
+**In short:** Agree in advance who takes the draw if your centre is thrown out, and default to a tie-up, not a set play.
 
 ```facts
 Rule: A teammate on the ice replaces an ejected centre, never the bench — five books bar substitution until the draw is done unless a penalty is assessed: Hockey Canada 6.2(d) and CARHA 57(c) need it to leave a team shorthanded, NHL and IIHF 76.8 and USA Hockey 204(a) only to change on-ice strength
@@ -983,6 +1009,8 @@ So on the power play: **win the draw, or make sure you do not lose it cleanly.**
 
 ### Penalty-kill draws
 
+**In short:** On the kill, use your best draw man, count a tie-up as a win, and ice a clean win where your book allows.
+
 ```facts
 Mindset: You are not trying to create — you are trying to end the possession
 Risk: A defensive-zone draw shorthanded is where the disadvantages pile up — a man down, in your own end, against a set unit with a rehearsed play
@@ -1039,6 +1067,8 @@ Rule: The five-second setup limit is not enforced in overtime (NHL and IIHF Rule
 ## Situational Faceoffs
 
 ### After an icing
+
+**In short:** When they ice it, play fast and attack their tired line; when you ice it, get it off the glass and out.
 
 ```facts
 Rule: Under the NHL, IIHF and PWHL books the team that iced cannot change lines (NHL and IIHF 81.4, 82.1; PWHL 83.4) or take a time-out (NHL and IIHF 87.1, PWHL 89.1), though an injured player can still be replaced
@@ -1113,6 +1143,8 @@ A timeout buys both teams a rest and a chance to draw up the alignment. So expec
 **What it costs.** Under NHL and IIHF Rule 87.1 (PWHL 89.1) there is **no timeout after a faceoff violation**, and **none for the defending team after an icing**, after their goalie stops a shot from beyond the centre red line, or after a defender accidentally dislodges the net — so a team cannot ice the puck and then buy a rest. A net knocked off by a defender costs the line change too (63.8). **USA Hockey 636(f)** writes neither restriction and gives sixty seconds rather than thirty, so there a team *can* ice it and then rest — but ⚠️ **it must ask *"during a stoppage of play prior to the conclusion of the line change procedure"*,** which ends when the referee lowers their arm after the home team's five seconds. Hockey Canada closes its window when the official whistles to start the faceoff procedure (6.17(e)); CARHA writes no time-out.
 
 ### With the goalie pulled
+
+**In short:** With six skaters your centre must win it back cleanly; defending, shoot at the empty net only with a clean lane.
 
 ```facts
 Position: The extra attacker goes to the net front or the high slot, with both defencemen at the points

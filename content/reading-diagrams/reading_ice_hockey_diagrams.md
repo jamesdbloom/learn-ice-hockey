@@ -55,6 +55,8 @@ a symbol is unfamiliar.
 
 ## Where each symbol comes from
 
+**In short:** Most line symbols here follow the IIHF key; do not assume another diagram's key matches this one.
+
 The notation draws on **two published symbol keys**, and one symbol is compared against a
 third source: a coaching manual with its own house key, not a governing body's. The two
 keys disagree in places, so it is worth knowing which is which.
@@ -110,6 +112,8 @@ draw which way a player is facing. The rest:
 
 ## What a tinted area or a faint dashed line means
 
+**In short:** A tint names a region, not paint on the ice or an instruction; read the caption for what to do there.
+
 **Shaded regions and faint dashed lines are this guide's own; neither published key has
 anything like them.** Many diagrams wash an area in a light tint with a thin dashed
 edge, usually named inside — *the slot*, *the house*, *home plate*, *the box*, *the
@@ -150,6 +154,8 @@ inverts outright, because a light blue prints darker than the faintest red. A gr
 picture names its regions in order in words, and the words are the part to trust.
 
 ## Shape, fill and what goes inside a glyph
+
+**In short:** Shape is the position and fill is the team: a circle is a forward, a triangle a defenceman, open yours, solid theirs.
 
 **Shape is the position.** The *International Drill Symbols* sheet gives it in two
 lines — *"● ○ Forward / Player"* and *"▲ △ Defender / Player"* — so a **circle is a

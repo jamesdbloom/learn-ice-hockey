@@ -71,6 +71,8 @@ Risk: Guessing which forecheck your own team is running is how odd-man rushes ha
 
 ## What Forechecking Is For
 
+**In short:** Every forecheck aims either to win the puck back deep in their zone or to force a bad exit you collect in neutral ice.
+
 ```facts
 Key: A forecheck has exactly two possible wins, and everything in every system serves one of them
 Goal: Win 1 — take the puck back deep in their zone; a turnover below their hash marks is a scoring chance almost immediately, because their forwards have already released above the puck
@@ -162,6 +164,8 @@ This is why forechecking is exhausting when done badly and sustainable when done
 
 ### The three jobs, in general terms
 
+**In short:** F1 makes the carrier's next play predictable, F2 goes where the puck is being forced, and F3 stays high as insurance.
+
 ```facts
 Action: F1 — arrive fast, arrive on an angle, take away one side of the ice and make the carrier's decision for them
 Convention: Whether F1 also hunts the puck is a coaching choice — steering in the 1-2-2, 1-3-1 and 1-4, hunting in a 2-1-2 or press; ask which your team wants
@@ -189,6 +193,8 @@ If you only improve one thing about your forechecking, improve this. **Angling**
 **The goal of angling is to eliminate options, not to make a hit.** A hit that separates the carrier from the puck is a bonus, and only in a game that allows body checking — and even then, in IIHF women's hockey and the PWHL, never by a step or glide into the carrier, which IIHF Rule 101.1 and PWHL Rule 52.1 both make an illegal hit. A hit that you miss, or that you get by flying past the carrier, has removed you from the play and turned a 5-on-5 into a 4-on-5.
 
 ### Approach angle
+
+**In short:** Skate a curve at the space you want to deny, and know which side your team takes away before your shift.
 
 ```facts
 Action: Skate at the space you want to deny, not at the puck
@@ -233,6 +239,8 @@ Aim the blade at the puck as you close. A USA Hockey ADM drill shared by **Roger
 
 ### Speed control — the part everybody gets wrong
 
+**In short:** Build speed on the way in, then get your feet under you so you can still stop and turn when you arrive.
+
 ```facts
 Action: Arrive under control, not at maximum speed
 Technique: Get to top speed on the way in, then get your feet under you in the last two or three strides so you can change direction
@@ -262,6 +270,8 @@ In a CARHA league, ⚠️ **strides are not what makes contact an offence**, bec
 
 ### Why "eliminate options" beats "make a hit"
 
+**In short:** Angle the carrier toward one bad pass your F2 is already standing on, rather than chasing a hit.
+
 ```facts
 Goal: Angle a player into a spot where they have one bad pass available — your F2 is already standing on it
 Risk: A hit takes two players out of the play, you and them; containment takes out only them
@@ -290,6 +300,8 @@ See [Body Contact and Battles](../technique/body_contact_and_battles.md) for the
 
 ## The Named Systems
 
+**In short:** Learn what your forecheck does against each kind of breakout, not just where the five players stand.
+
 Forechecks are named by counting players from the goal line outwards: a **2-1-2** has two deep, one in the middle, two high. The numbers always add to five, and most of them name three groups — but not all of them do: the **1-4** and the **2-3** below each name two.
 
 **Where the naming convention breaks.** That count only works while the shape actually sits inside the opponents' end. Three of the systems below — the passive 1-3-1, the 1-4, and the retreated version of the 1-2-2 — are usually played as **neutral-zone** structures, with the back layers at or near *your own* blue line. For those, the same digits are counted from the opponents' end outwards across the whole sheet, not from their goal line, and a "1-4" describes four skaters standing about 114 feet from the net they are supposedly forechecking. They appear here because coaches call them forechecks and because a team's offensive-zone forecheck collapses into them, but the shape they describe lives in the middle third. **[Neutral Zone Systems](neutral_zone_systems.md) is the authority on all of them.**
@@ -305,6 +317,8 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 ---
 
 ### 2-1-2 — the aggressive standard
+
+**In short:** Send two forwards deep and keep one high: it wins pucks near their net, but a clean breakout often becomes an odd-man rush.
 
 ```facts
 Position: Two forwards deep, one forward high at roughly the top of the circles, both defencemen at the offensive blue line
@@ -348,6 +362,8 @@ Countered by: A quick first pass before F2 arrives, a reverse into the space F1 
 ---
 
 ### 1-2-2 — the containment default
+
+**In short:** One forward steers the carrier to a wall, a second jumps the outlet, and the shape holds while the players rotate.
 
 ```facts
 Position: One forward deep, two forwards across the middle of the zone, two defencemen high
@@ -406,6 +422,8 @@ The New Jersey Devils' 1990s and 2000s teams are the standard reference for buil
 ---
 
 ### 1-3-1 — the modern trap-adjacent forecheck
+
+**In short:** One forechecker steers while a line of three shuts the passing lanes and shifts across as a unit with the puck.
 
 ```facts
 Position: One forward pressuring, three players spread in a line across the width of the ice, one player behind them as the last man
@@ -468,6 +486,8 @@ Countered by: A hard chip past the flat line and a race for it — not a stretch
 
 ### 2-3 and the left-wing lock
 
+**In short:** Two forwards forecheck hard while the left winger drops back, so three players always stay between the puck and your net.
+
 ```facts
 Position: Two forwards forechecking aggressively, three players across the ice behind them
 Convention: In the left-wing lock the centre and right winger forecheck as F1 and F2, and the left winger drops back to the half-boards
@@ -497,6 +517,8 @@ The **left-wing lock** is the famous version. The centre and right winger forech
 ---
 
 ### The full-ice press — maximum pressure
+
+**In short:** Throw everyone forward almost only when trailing late or during a delayed penalty, because one clean pass beats it.
 
 ```facts
 Position: Three forwards deep or nearly deep, both defencemen pinching at the offensive blue line, effectively no safety at all
@@ -552,6 +574,8 @@ Note the offside rule while you are up there: **both of your skates must complet
 
 ### When to pinch
 
+**In short:** Pinch only when you can arrive with the puck and F3 is high enough to cover the point you leave.
+
 ```facts
 Read: Pinch when you can arrive on contact — "if you can't arrive on contact, don't go" — so you can play the puck, sealing the wall rather than the winger's body where your book allows contact at all
 Rule: Body position is granted; a hold and a skate are not — USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor, and a skate used to "push off" an opponent is 627(a), a major plus a game misconduct
@@ -582,6 +606,8 @@ USA Hockey's *Introduction To Body Contact* says *"Never hit the boards or glass
 ![](diagram:forecheck-pinch)
 
 ### What your book allows when you get there
+
+**In short:** Find out first whether you may body check, then arrive in time, seal the wall with position, and keep arms and skates out.
 
 ```facts
 Rule: None of the checking permissions below exist where body checking is barred — USA Hockey 604(b) any time a checking team plays a non-checking one, 604(a) at 12U and below, girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below, female hockey and any Member-approved division
@@ -658,6 +684,8 @@ Never: Pinch when you have already been beaten once on the same shift — the se
 
 ### The weak-side defenceman is the safety
 
+**In short:** If your partner is already down the wall you are the safety; the common default is one defenceman pinching at a time.
+
 ```facts
 Convention: At 5-on-5 in every forecheck above, only one defenceman pinches at a time — very widely taught, but a coaching choice rather than a law
 Position: The weak-side defenceman holds the middle and does not join in — the reason a failed pinch is a 2-on-1 rather than a breakaway
@@ -691,6 +719,8 @@ When the strong-side defenceman does pinch, somebody has to fill the point they 
 These are three completely different situations and most players forecheck them identically. They should not. The first two are the common pair — you put the puck in, or you lost it. The third is the one nobody practises: the opposition already has the puck, stopped behind their own net, with everybody looking up.
 
 ### Off a dump-in — you control the clock
+
+**In short:** Start skating before the dump goes in, aim it where their defenceman must turn to fetch it, and never finish into their back.
 
 ```facts
 Key: You chose when the puck went in and you know where it is going — you arrive at full speed with a head start
@@ -759,6 +789,8 @@ What that means for you:
 
 ### Off a control setup — when they already have it
 
+**In short:** When they are set behind their net, trap, swing with them or flush them, whichever your team has chosen in advance.
+
 ```facts
 Key: Forechecking a control setup — they are stopped behind their own net with full control, off a line change or because they beat you to the puck
 Options: Deep trap — all five back off and meet them at the blue line, conceding the build-up and taking the speed away at the line
@@ -790,7 +822,9 @@ The distinction in one line: **off a dump-in you are hunting; off a turnover you
 
 ## The Trapezoid — Why Dump-and-Chase Works At All
 
-**The play: where the trapezoid applies, dump the puck into a corner rather than straight behind the net, and chase it** — [How to aim your dump-ins to exploit it](#how-to-aim-your-dump-ins-to-exploit-it) below sets out the options. The reason is a rule, one that makes the entire forechecking game viable, and most players do not know it applies to them.
+**In short:** Where the trapezoid applies, dump into a corner, not behind the net, so their defenceman usually has to fetch it; expect their goalie anyway.
+
+[How to aim your dump-ins to exploit it](#how-to-aim-your-dump-ins-to-exploit-it) below sets out the options. The reason is a rule, one that makes the entire forechecking game viable, and most players do not know it applies to them.
 
 **The rule, in two halves — and you have to cite each half from the right place.**
 
@@ -807,6 +841,8 @@ The distinction in one line: **off a dump-in you are hunting; off a turnover you
 **🇬🇧 In Britain, in any competition — the Elite League included — plan for their goalie to come out for the dump-in.** The IIHF book carries the rule, numbered **27.7** rather than the NHL's 27.8; neither the current 2026-27 In-House Rules nor the 2025-26 edition before them amend it, and the Elite League's own Casebook does not mention Rule 27 at all. But England Ice Hockey's own *Rules & Regulations* **22.3** say the Goalkeepers' Restricted Area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"* — and that edition is 2024-25, so nothing published settles whether the suspension still stands or which competitions it reaches. **So the safe assumption for a forechecking team is that their goalie may retrieve the puck**, which is the case in which dump-and-chase loses most of its value. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
 
 ### Why this matters so much to a forechecker
+
+**In short:** With a trapezoid the corners are yours; without one, take the goalie's outlet away and keep off the goalie.
 
 ```facts
 Risk: Without the trapezoid a puck-handling goalie is a third defenceman to chase, not hit — take the outlet away and keep off them; unnecessary contact with a goalie is penalised in every book here
@@ -847,6 +883,8 @@ With the trapezoid, **the corners belong to you**. Their defenceman has to go an
 
 ### How to aim your dump-ins to exploit it
 
+**In short:** Against a trapezoid, dump into the corners, not straight behind the net; with no trapezoid, carry it in or forecheck the outlet.
+
 ```facts
 Targets: Against a trapezoid, dump into the corners — the "soft" areas, where the rule bars their goalie from playing the puck
 Never: Dump straight down the middle behind the net — that is inside the trapezoid, exactly where the goalie is allowed to play it and will be waiting
@@ -877,6 +915,8 @@ Watch the goalie's stick side as well: many goalies are far better at handling a
 ---
 
 ## Choosing a Forecheck by Game State
+
+**In short:** Risk less when leading late or tired, more when trailing late, and switch at once when the bench calls it.
 
 This is the coach's decision, but you should understand the logic, because you will be expected to switch mid-game on a bench call — often just a shout of "back off" or "we're on the 1-2-2 now."
 

@@ -183,6 +183,8 @@ Risk: Low risk, moderate reliability — the puck never enters the lane the chec
 
 ### Rim vs reverse — two opposite plays, keep them straight
 
+**In short:** Rim it when the checker still has you pinned; reverse it when they have skated past you, and only to a teammate who is there.
+
 ```facts
 Options: Rim goes onward around the boards; reverse goes back the way the puck came, against the flow
 Technique: Rim hard, flat and low on the boards, following the curve of the rink
@@ -268,6 +270,8 @@ Convention: Some zone entry systems build one in deliberately — that is a coac
 Default position: if you are not sure the trailer is there, do not drop it.
 
 ### Stretch pass — the risk/reward play
+
+**In short:** Stretch it only when a teammate is genuinely behind their forwards, and hard; a miss usually starts an odd-man rush against you.
 
 ```facts
 Technique: A long, hard pass needing a full weight transfer and a long follow-through — most misses are underpowered, not misaimed
@@ -420,6 +424,8 @@ But do not let this become a rule that makes you late. **Getting your blade to t
 
 ### Angle the blade to kill a bounce
 
+**In short:** Cup the blade over any bouncing puck, budget a second touch for a hopping one, and play a high puck down at chest height.
+
 ```facts
 Technique: Cup the blade over the top of the puck — hopping, on edge or flat, the angle does not change — and keep your top hand off your hip, or a ski-jump effect sends the puck over the blade
 Read: A flat puck can be played in one touch; a hopping or on-edge puck costs you a second, so budget the extra beat
@@ -469,6 +475,8 @@ Pucks arrive rolling, on edge, or hopping — from a bad pass, a bouncing rim, o
 - **CARHA below the shoulders.** Rule 62(a) is a minor for checking or intimidating an opponent *"while carrying their stick above the waist height of their opponent"* — no contact needed. Its situation book rules a player who *"swings at puck with their stick above waist height of opponent – making contact with the player"* a **Minor penalty**, and one who strikes an opponent *"above the normal height of the player's shoulder"* a **Major penalty**: height, not whether you were checking, moves you up. Cross-checking (54(a)), hooking (64(a)) and slashing (80(a), and 80(c) for a swing that misses or a wild swing at the puck meant to intimidate) are priced too, and Rule 50 sends stick contact to the head to Rule 62.
 
 ### Receiving a pass in your feet
+
+**In short:** Kick it forward to your stick or open your hips and let it run, sending the skate at the puck, never at the man.
 
 ```facts
 Technique: Kick it forward to your stick with the inside of your skate — one deliberate, controlled kick at the puck, never at the man, and not a panicked scuff

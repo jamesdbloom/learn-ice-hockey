@@ -71,6 +71,8 @@ Three things follow.
 
 ## 2. What "time" actually means
 
+**In short:** Judge your time by how fast a defender is closing, not by how far away they are.
+
 ```facts
 Key: Your time is the distance to the nearest threatening defender divided by their closing speed — a teaching model, not a measured quantity
 Read: Closing speed, not distance — twenty feet closing hard is less time than three feet travelling away
@@ -259,6 +261,8 @@ The habit is a shoulder check while the pass is being made, not after. Two is be
 
 ### Getting open
 
+**In short:** Get open by changing direction and timing your break to the carrier's head, never by stepping into a defender's path.
+
 ```facts
 Action: Separate from your check with a change of direction, not a race. Stop when they expect you to go, or cut across their momentum
 Read: Break when their head turns to the puck, and time it to the carrier's head coming up rather than to your own eagerness
@@ -321,6 +325,8 @@ Published coaching pages put a good gap through the neutral zone at **roughly tw
 The read is the one from section 2: **watch the hips, not the puck.** See [Defending the Rush](../systems/defending_the_rush.md) for the full treatment, including odd-man rushes.
 
 ### Angling — steering with your route, not your body
+
+**In short:** Close on a curve that takes away the middle and steers the attacker to the boards, holding your line rather than hitting.
 
 ```facts
 Action: Close on a curve that removes the middle of the ice, leaving the attacker only the option you want them to have
@@ -432,6 +438,8 @@ That is what "taking away time" means: not preventing the play, but making it ar
 
 ## 5. Where time and space live — a map of the ice
 
+**In short:** Move toward space behind the net and on the weak side, and expect no time in the slot or the strong-side corner.
+
 ![](diagram:strong-side-and-weak-side)
 
 ```facts
@@ -472,6 +480,8 @@ So: **with the puck, move it toward space** — behind the net, weak side, point
 ---
 
 ## 6. How the rules create space
+
+**In short:** Keep a trail blade down at the blue line, ice only when you must, and screen without contact, skates off the crease line.
 
 ```facts
 Rule: Offside — both skates must completely cross the blue line before the puck does, and one skate on or behind keeps you onside (NHL and IIHF 83.1, PWHL 85.1)
@@ -552,6 +562,8 @@ Hockey Canada 8.5(b) says a major and a game misconduct *"will be assessed to an
 
 ## 7. How space changes with the score, the clock and the rink
 
+**In short:** Space shifts with score, clock, fatigue and rink size; against a team protecting a lead, take the point and wall, not the middle.
+
 ```facts
 Read: A team protecting a lead concedes the point and the wall and takes away the middle — take the space that is offered
 Never: Force the middle against a team protecting a lead; that is how you generate a counter-attack against yourself
@@ -587,6 +599,8 @@ On the narrow NHL sheet, the opposite: space compresses, the forecheck arrives s
 ---
 
 ## 8. How to develop this
+
+**In short:** Build it with small-area games, by watching one player off the puck, and by asking after each shift whether you had more time.
 
 ```facts
 Action: Play small-area games — less space per player means more touches, more decisions per touch and less time to make each one

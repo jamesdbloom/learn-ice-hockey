@@ -94,7 +94,9 @@ A scan is a **head turn**, not an eye flick and not a chin dip.
 
 ### What the research actually says
 
-**What to take onto the ice: look at least once before every reception, and do not chase a count.** Berg and colleagues (*Journal of Sports Sciences*, 2025) hand-coded 22 televised games from Sweden's top men's and women's leagues, the SHL and SDHL, and measured **2,545 puck receptions** by **88 professionals aged 16 to 36**. It is the primary evidence here; the football research below only corroborates it.
+**In short:** Look at least once before every reception, and do not chase a count.
+
+Berg and colleagues (*Journal of Sports Sciences*, 2025) hand-coded 22 televised games from Sweden's top men's and women's leagues, the SHL and SDHL, and measured **2,545 puck receptions** by **88 professionals aged 16 to 36**. It is the primary evidence here; the football research below only corroborates it.
 
 **What Berg measured:**
 
@@ -107,6 +109,8 @@ A scan is a **head turn**, not an eye flick and not a chin dip.
 Three details of the method matter. The window was **five seconds**, not football's ten, because hockey changes faster. A scan was a **clear head turn away from the puck held for at least 0.2 seconds** — not an eye flick. And **"success" is a criterion the authors set with the Swedish Ice Hockey Association, not a neutral metric**: a pass counts if a teammate could receive it, a shot if it went towards the net, stickhandling if control lasted three seconds, a dump-in if a teammate recovered it within five. It is a reasonable definition, but it is not a count of goals or kept possession.
 
 ### Corroboration from football, and what does not transfer
+
+**In short:** Football's scanning research supports the principle, but take your numbers from hockey, where the picture goes stale sooner.
 
 The football (soccer) research is larger, older and better controlled, and it points the same way. Treat it as support for the principle; the hockey figures above are the ones that apply to you.
 
@@ -146,6 +150,8 @@ One caveat in the benchmark's favour: Berg measured only the five seconds before
 
 ### When to scan
 
+**In short:** Look hardest while the puck travels to you, finishing with your eyes back on it, then use quiet moments, backchecks and stoppages to look again.
+
 ```facts
 Priority: The highest-value moment to scan is the one to three seconds while the puck is travelling to you
 Action: Look while the puck is on the far side of the ice — nothing is being asked of your hands
@@ -178,6 +184,8 @@ Ranked by value. **The scan counts below are coaching craft**: nobody has valida
 - The score, the time, and the penalty clock, which change what risk is acceptable. See [Game Management](../systems/game_management.md) and [Risk Management](risk_management.md).
 
 ### What to look for, in priority order
+
+**In short:** Keep the puck as your anchor and look, in order, for pressure on you, your outlets, the danger you cover and open space.
 
 ```facts
 Key: Beginners scan for the puck and stop; experienced players keep the puck as their anchor and spend every extra look on people and space
@@ -288,6 +296,8 @@ A pass is easier to predict than a carry, because it has to be aimed.
 
 ### Reading pressure: knowing where the forecheck is coming from
 
+**In short:** Read the forecheck's shape early and pre-decide your breakout; against a 2-1-2, reverse or rim rather than wheel.
+
 ```facts
 Key: F1, F2 and F3 are roles set by order of arrival, not positions and not people — your left winger can be F1 one shift and F3 the next
 Read: Against the 2-1-2 this guide assumes, two bodies arrive fast from two directions and the wall gets sealed early
@@ -324,6 +334,8 @@ Other shapes change the read:
 **USA Hockey is different** — its Rule 624 puts no substitution bar on an icing and its Rule 636(f) sets no icing condition on time-outs, so the tired line simply gets off. CARHA's icing rule has no substitution bar either. Hockey Canada bars the change only in U18 AAA and Junior, and in Senior at its Member's option — and even there lets either team take its time-out, though the team that iced it still cannot change during it (Rule 6.7(d)). [Game Management](../systems/game_management.md) carries the book-by-book comparison.
 
 ### Reading a shooter
+
+**In short:** Read the hands for the type of shot, the weight for whether it is coming, the blade for where; never the head.
 
 ```facts
 Read: Hands wide with the bottom hand down the shaft means a slap or heavy wrist shot that takes time to load; hands close means a quick release or a pass

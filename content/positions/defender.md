@@ -10,7 +10,7 @@
 
 **Work as a pair: one of you on the puck, one at the mouth of your goal.** Swap every time the puck crosses the middle, and say it out loud. That is the low zone collapse; man-on-man splits it differently, so ask which yours plays.
 
-**At the net front, get inside and lift their stick.** Beat the forward to the spot and lift his stick low as the puck comes. **Hold it by position, not by shoving** — that can be interference. **Move any body toward the corner, never across your goalmouth.**
+**At the net front, get inside and lift their stick.** Beat the forward to the spot and lift his stick low as the puck comes. **Hold it by position, not by shoving** — that can be interference. **If a battle moves a body there, take it toward the corner, never across your goalmouth.**
 
 **Never carry or pass the puck across the front of your own goal. Go behind the net.** Lost behind the net, the puck is a battle; lost in the slot, it is a chance against. Some teams exchange high above the circles instead, so ask.
 
@@ -65,6 +65,8 @@ The most important zone for a defender. Your job is to protect the area in front
 
 ### Defensive Zone: Carrying the Puck — Free Space
 
+**In short:** Look up ice first, then move the puck quickly to the first breakout option that is genuinely open, never through the slot.
+
 ```facts
 Position: Behind your own net or along the boards
 Action: Move the puck quickly and purposefully to a winger on the boards, the centre coming low or your defensive partner — don't hold it longer than you need to
@@ -113,6 +115,8 @@ Rule: Hockey Canada writes no strict over-the-glass minor for a skater — Rule 
 ---
 
 ### Defensive Zone: Carrying the Puck — Under Pressure
+
+**In short:** Shield the puck along the boards and choose rim or reverse by where the pressure is, before the puck reaches you.
 
 ```facts
 Position: Along the boards or behind your own net, protecting yourself
@@ -201,6 +205,8 @@ Convention: Without a trapezoid you can both legally reach a dead corner rim, so
 ---
 
 ### Defensive Zone: Pressuring an Opponent with the Puck
+
+**In short:** As the strong-side defender, pressure or angle the carrier and pin the puck, not the player, until help arrives.
 
 ```facts
 Position: Wherever the puck is on your side — the corner and behind the net included
@@ -568,6 +574,8 @@ You are the last line of defensive responsibility, so your role in the offensive
 
 ### Offensive Zone: Carrying the Puck — Free Space
 
+**In short:** Play just inside the blue line, find the lane before you shoot, and go below the circles only once someone has taken your spot.
+
 ```facts
 Position: Both defenders normally just inside the blue line
 Action: Look to shoot, pass to a winger in the circle, or find your partner for a one-timer — in a CARHA league, keep it to a short backswing, because past fifteen inches it is a slap shot and a penalty
@@ -639,6 +647,8 @@ Never: Cut across into or hit a winger who has chipped the puck past you — tur
 ---
 
 ### Offensive Zone: Without the Puck — Supporting the Cycle from the Line
+
+**In short:** Keep somebody above the puck: offer an outlet from the line, pinch one at a time, and activate only when a forward can cover.
 
 ```facts
 Position: Both defenders just inside the blue line, the strong-side one potentially stepped down to the top of the circle
@@ -746,6 +756,8 @@ In all of them: stay tight, hold the inside at the net front, block shots, and c
 
 ### Icing
 
+**In short:** Clear wide and high off the glass, not flat up the middle, and never over it.
+
 ```facts
 Action: Aim your clears wide and high off the glass rather than flat up the middle
 Risk: The straight-line clear up the middle is the easy one to pick off at the blue line, and a rim that carries all the way down the ice is what gets whistled
@@ -789,6 +801,8 @@ Action: Where your book grants it, use the exemption rather than trying to make 
 **On the last shift of a kill, get the clear away before the penalty expires.** A puck *"released from the stick of the player shooting the puck down the ice prior to the penalty expiring"* draws no icing however late it lands — the NHL and IIHF say so, and USA Hockey does in the classifications above. Hockey Canada takes the count *"at the instant the puck is shot"*, with the same result. [Special Teams](../systems/special_teams.md) owns these rules, and [Faceoffs](../systems/faceoffs.md) sets the books side by side.
 
 ### Blocking Shots
+
+**In short:** Block from close, square to the shooter with your head out of the shot lane, and stay on your feet until the release.
 
 ```facts
 Key: Blocking shots is a technique, not an act of courage — done badly it hurts you and doesn't stop the puck, so it wants shin guards covering shin and ankle and gloves not worn through in the palm
@@ -841,6 +855,8 @@ Two things are yours specifically. **Your pair changes on its own clock, not wit
 Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are in [Game Management](../systems/game_management.md).
 
 ### Defending the Rush — quick reference
+
+**In short:** On a 2-on-1 take away the pass; slide only if your team does, and under USA Hockey sliding an opponent down is tripping.
 
 ```facts
 Action: 1-on-1 — force them outside, stick in the passing lane, don't lunge. Steer them to a bad shooting angle rather than making a highlight hit — take the angle, not the man
@@ -965,7 +981,7 @@ document, that is named too.*
 
 1. **Stay on the defensive side of the puck, and work as a pair.** Stay goal side of your man and give that up only on purpose. One of you plays the puck, the other guards the mouth of your goal, and you swap out loud when the puck crosses the middle. Other systems split it differently, so ask.
 2. **Win the gap with your feet and take the puck, not the man.** Start backwards early, take the middle away, watch chest and hips, and pivot late. ⚠️ **Never finish it as a hit:** charging, boarding and a hit from behind can each end your game, and charging applies in non-checking leagues too.
-3. **When a forward parks at your net, get inside first, lift his stick low, then let go.** ⚠️ **Never drive him off his spot** — he has no puck, so it can be interference anywhere, and if it is reckless, plan on a match under USA Hockey. ⚠️ **Move any body toward the corner, never across your goalmouth, and never hit him from behind.**
+3. **When a forward parks at your net, get inside first, lift his stick low, then let go.** ⚠️ **Never drive him off his spot** — he has no puck, so it can be interference anywhere, and if it is reckless, plan on a match under USA Hockey. ⚠️ **If a battle moves a body there, take it toward the corner, never across your goalmouth, and never hit him from behind.**
 4. **On a 2-on-1, stay on your feet in the passing lane until the pass is released**, and leave the shot to your goalie; some teams slide instead, so ask. ⚠️ **A slide is not free:** under USA Hockey, sliding a player off his feet is tripping whoever gets the puck, and catching him low can be clipping, which can eject you.
 5. **Never carry or pass the puck across the front of your own goal. Go behind the net**, where a lost puck is a battle, not a point-blank chance. Some teams exchange above the tops of the circles instead, so find out where your coach draws the line. The middle is never a route.
 6. **Read the forecheck on the way back for a dumped puck.** A **rim** beats a forechecker sealing the boards; a **reverse** beats one who has over-skated. ⚠️ **With nothing on, go off the glass, never over it** — from your own zone that can be two minutes even by accident — and treat the players' bench as a trap.

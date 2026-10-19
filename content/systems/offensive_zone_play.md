@@ -84,6 +84,8 @@ For reference, the end-zone faceoff circles have a **15-foot radius** and the go
 
 ### Why location matters so much
 
+**In short:** At even strength, get the puck into the slot before shooting: a clean look there beats an unscreened point shot several times over.
+
 The numbers are not close:
 
 - Distance from the net is **"the single most important feature by a wide margin"** in expected-goals models — models that assign every shot a probability of becoming a goal based on where and how it was taken ([Hockey Graphs](https://hockey-graphs.com/2019/08/15/expected-goals-model-with-pre-shot-movement-part-4-variable-importance/)).
@@ -114,6 +116,8 @@ The best chances do both at once: a pass across the slot to a player already in 
 ## 2. The Royal Road — the Highest-Value Pass Type in the Passing Project's 5-on-5 Tracking
 
 ### The Royal Road: What it is
+
+**In short:** Look to pass across the middle of the ice right before a shot; in tracked five-on-five play, those shots score far more often.
 
 ```facts
 Key: The royal road is an imaginary line down the centre of the ice, lengthwise, from the middle of one net to the middle of the other
@@ -194,6 +198,8 @@ Knowing the concept is worthless without the habits that produce it. Four practi
 > **This section describes a coaching choice, not a law of hockey.** The structure below — three forwards rotating in an **attack triangle**, both defencemen holding the blue line, the strong-side defenceman free to pinch — is the common default this document assumes. Realistic alternatives are named at the end of the section. **Find out which one your team plays.**
 
 ### F1, F2, F3 are roles, not people
+
+**In short:** In the common attack triangle, keep one forward below the puck, one level with it and one above, whoever arrived first, second or third.
 
 ```facts
 Key: F1, F2 and F3 are roles defined by order of arrival — first, second and third to the puck — not by whether you are a centre or a winger
@@ -344,6 +350,8 @@ Goal: Buy time for your defencemen and late forwards to join and get set
 
 ### The mechanics
 
+**In short:** Read the checker: rim it on if they are still in front of you, reverse it if they have skated past.
+
 ```facts
 Technique: Low-to-low — pass backwards and down to a teammate arriving behind you, then rotate up into the space they just left
 Read: If the checker is still in front of you, rim it — onward around the boards, past the player sealing you to the wall
@@ -480,6 +488,8 @@ The net front is the least glamorous piece of productive real estate in hockey, 
 
 ### Screening
 
+**In short:** Get between the goalie's eyes and the puck, chest square and still at the release, both skates clear of the crease and its red line.
+
 ```facts
 Position: Inside the faceoff dots, six to eight feet out from the goal line — and both feet off the red crease line, which the arc reaches at six, so live at the far end of that range
 Technique: Stand between the goalie's eyes and the puck, not between the goalie and the net. Slide with the point man as they walk the line
@@ -508,6 +518,8 @@ The mechanics of doing it well:
 ![](diagram:oz-net-front-screen)
 
 ### Tips and deflections
+
+**In short:** Keep your blade on the ice, change the puck's angle slightly without following through, and tip it low.
 
 ```facts
 Technique: Blade on the ice, always — the overwhelming majority of tippable pucks come in low
@@ -552,6 +564,8 @@ A **tip** or **deflection** is changing the direction of an incoming shot with y
 
 ### Hunting rebounds
 
+**In short:** Decide to go before the shot, read where the rebound will squirt, and shoot it back at once.
+
 ```facts
 Read: Anticipate where it goes — a pad tends to squirt back toward the corner it came from, a blocker to the shooter's off side, a chest to drop in the paint
 Risk: Treat those as tendencies, not rules — a goalie angling their surfaces deliberately will break all three on purpose
@@ -569,6 +583,8 @@ Read: Revak's 60% summarises the whole chart rather than one zone — Novet plot
 - **Understand the odds.** The defending team recovers roughly **60% of rebounds**, which is why the net-front job is a *job*: you win that race by deciding to go before the shot, and reacting afterwards loses it. The 60% is **Greg Revak's** arithmetic ([Hockey's Arsenal](https://hockeysarsenal.substack.com/p/point-shots-suck), 20 September 2020, restated [at The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics)) on a chart by **Alex Novet**, which shows the attacking team recovering 38–42% of rebounds wherever the shot came from. No league, season or sample size is given for it, so treat it as a direction rather than a number you can check.
 
 ### Goaltender interference — the actual standard
+
+**In short:** Stay out of the paint, keep off the goalie, and give way the moment they set their position.
 
 ```facts
 Rule: NHL and IIHF Rule 69.1 — an attacker's position, inside or outside the crease, does not by itself decide the goal; goals "should be disallowed only if" you impair the goalie's ability to move freely or defend it, by positioning or contact — a ceiling, not a direction to disallow
@@ -614,6 +630,8 @@ Never: Plant your feet in the blue paint. Screen from outside it instead, where 
 
 ### Rebounds, loose pucks and being pushed into the goalie
 
+**In short:** In a scramble, play the puck rather than the goalie, and make a visible effort to avoid contact even when shoved.
+
 ```facts
 Rule: NHL and IIHF 69.7, PWHL 71.7 — on a rebound or a loose puck you both play, incidental contact in or out of the crease is permitted, goal allowed, not shoving the goalie in with the puck. USA Hockey, Hockey Canada and CARHA grant none; in the EIHL, blue-paint contact "calls for disallowing a goal"
 Rule: NHL and IIHF Rule 69.7, PWHL 71.7, disallow the goal where a goalie is pushed into the net together with the puck by an attacking player after making a stop, and appropriate penalties may follow — the rule needs all three of those conditions, not any push at all
@@ -649,6 +667,8 @@ Action: Play the puck, not the goalie, when you both arrive at a loose one — o
   **The Casebook (Rule 607, Situation 4) sets three rungs.** Forced into the goalie by a defender **and** having *"clearly made every attempt to avoid the contact"*: no penalty. Going hard to the net and making *"an honest attempt to avoid the goalkeeper once it is realized contact is unavoidable"*: a minor plus misconduct. Accelerating through, arms out or shoulder dropped: a major plus game misconduct, or a match penalty. **So an honest effort alone is not a full defence — the no-penalty rung needs the defender's foul as well.**
 
 ### The same play under the other books
+
+**In short:** Whatever book you play under, keep both skates out of the paint and off its line, and arrive under control.
 
 ```facts
 Rule: USA Hockey 625(b) flatly bars the goal with an attacker in the crease whoever scored, unless the puck got there first, the goalie is out of the crease area, or a defender put them there — none of which licenses interference: a minor under 625(a)(8), and the goal off (Casebook Situation 9)
@@ -753,6 +773,8 @@ Behind the net is not where the puck goes to die. It is one of the best attackin
 
 ### Why it is so good
 
+**In short:** Treat behind the net as a place to attack from: you can see the whole zone and the goalie has to keep turning.
+
 ```facts
 Key: From behind the goal line you look up at the whole zone with all five defenders and the goalie in front of you
 Key: Nobody can come at you from directly behind, because the net and the end boards are there — that is geometry, not immunity
@@ -781,6 +803,8 @@ Key: Passes from below the goal line finished at 6.73%, second only to royal roa
 - **CARHA 53(b)**: the same mandatory match penalty into the boards or *"goal net"*, and its Note tells referees *"not to substitute other penalties"*. 53(a) reaches a hit from behind anywhere on the ice, where a match *"could"* also be given. CARHA-affiliated adult leagues only.
 
 ### What to do from there
+
+**In short:** From behind the net, look first for the pass out to the slot; if nothing is on, reverse or rim it and keep possession.
 
 ```facts
 Action: Pass out to the slot — the primary play, not the last resort; look for the high-slot forward or the backdoor player
@@ -892,6 +916,8 @@ The other two forwards go **to the net**: one to the front for the screen and ti
 
 ### The defenceman's pinch
 
+**In short:** Pinch only when you will arrive as the puck does and a forward can rotate up to cover your line.
+
 ```facts
 Read: "If you can't arrive on contact, don't go" — and clearly first on an uncontested race. Pinch when the winger is flat-footed or facing the glass or on a loose puck or tired line
 Never: Pinch when your forwards are already below you, when the opponent has turned up ice with speed, when protecting a narrow lead late, or when your partner has not seen you go
@@ -957,6 +983,8 @@ The governing principle is **take the puck, or — where your league permits bod
 **USA Hockey's window is the narrowest:** ⚠️ **every *avoidable* check on a player who has released a shot or pass is a minor (640(b))** — they *"are not eligible to be body checked"* — and its Declaration of Player Safety calls *"finishing the check"* an *"unacceptable action"*. That minor excepts adult men, but 640 Note 2 reaches them as roughing. A reckless one is a major plus a game misconduct (640(g)) with a match possible (640(h)); whether those reach adult men the book does not say, and this document does not know — but 602(a)'s match penalty for reckless endangerment is tied to no named foul. Its *Casebook* allows a finish only if you first tried to win the puck, were within *"an arm's length plus stick length"* when it went, had the check already *"in the process of being delivered"*, and minimised the force (Standard of Play, Situation 10): *"It is not acceptable to skate one or two more strides after the puck is gone and then decide to deliver the check."* **You cannot judge a beat at speed, so arrive while they still have it — or play the puck.**
 
 ### Sealing and arriving: where the rules bite
+
+**In short:** Keep your arms and skates out of the seal, and arrive with your feet under you rather than building speed into contact.
 
 ```facts
 Rule: Seal with body position — never with an arm, never with a skate; USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor, and a skate "push off" is 627(a), a major plus a game misconduct
@@ -1061,6 +1089,8 @@ An offensive-zone faceoff is as close as the game gets to a moment where you can
 Full treatment of the draw itself — technique, stick placement, the violations that get your centre ejected — is in [Faceoffs](faceoffs.md). What matters here is what happens in the second *after* the draw.
 
 ### Set plays off a win
+
+**In short:** Make sure all five players know the set play before the whistle, so the shooter and the net-front player are already moving.
 
 ```facts
 Key: The point of a set play is that four players start moving on the drop, before anyone knows who won it

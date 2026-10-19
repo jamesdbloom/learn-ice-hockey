@@ -54,6 +54,8 @@ Everything here follows from one demand: repeated near-maximal efforts of thirty
 
 ### The shape of a shift
 
+**In short:** Aim for shifts nearer 30 to 45 seconds; the long shift you get stuck in is where the wheels come off.
+
 The best current summary of hockey physiology is a 2024 review in the *Scandinavian Journal of Medicine and Science in Sports* by Vigh-Larsen and Mohr. Its description of match play is worth taking literally:
 
 - Shifts last **roughly 30 to 80 seconds**, separated by **longer periods of largely passive recovery** on the bench. The review is reporting this rather than measuring it: its introduction reads *"Studies have documented that each shift typically lasts 30–80 s, with subsequent recovery periods of ~2–5 min"* and cites **Lignell et al. (2018)**, **Brocherie et al. (2018)** and **Bracko et al. (1998)**, who measured it. (The 2026 elite-hockey nutrition review gives the same picture: shifts of "∼30-80 s" are "interspersed with passive recovery periods (**2-5 min**)".)
@@ -166,6 +168,8 @@ A 2025 **narrative** review in *Sports* on youth hockey reports injury rates of 
 
 ### Groin and adductor strain — the classic hockey injury
 
+**In short:** Strengthen your adductors without treating it as a guarantee, and see a physiotherapist about current or recurring groin pain.
+
 **How common it is.** In a 2025 *American Journal of Sports Medicine* study of NHL goalies, **proximal adductor injuries accounted for the largest number of injuries (n = 371) and the highest total days missed (6,126)** — more than any other injury category. Goalies are an extreme case because of the butterfly position (see [Goaltender](../positions/goaltender.md)), but the pattern holds across positions.
 
 **The single best-known risk factor.** Tyler and colleagues (2001, *AJSM*) measured pre-season hip strength in professional ice hockey players and found that **a player was 17 times more likely to sustain an adductor strain if his adductor strength was less than 80% of his abductor strength.** Pre-season adduction strength was 18% lower in players who went on to be injured. In uninjured players, adduction strength averaged 95% of abduction strength; in injured players, 78%.
@@ -199,6 +203,8 @@ The **medial collateral ligament** (on the inside of the knee) is the classic ho
 
 ### Shoulder and AC joint
 
+**In short:** Take the boards on an angle with forearm and hip, never the point of the shoulder, head up and chin off your chest.
+
 Upper-extremity injuries make up a large share of hockey injuries: Dinh and colleagues' analysis of an estimated **258,302 hockey injuries in players aged 5 to 24 (2006–2023)** found **35.57% involved the upper extremity**, with the **shoulder region the most common site (40.73% of upper-extremity injuries)**. Reiad and colleagues' fracture study, set out below, points the same way — among players aged 14 to 23 in US emergency-department data, the **shoulder was the most fractured site, at 27.0%**. The **acromioclavicular joint** — where the collarbone meets the shoulder blade — is the classic hockey shoulder injury, from landing on the point of the shoulder or being driven into the boards.
 
 **What reduces risk:** correctly fitted shoulder pads (see [Equipment](equipment.md)); general upper-back, rotator-cuff and scapular strength; and learning how to take contact — which is two separate techniques, absorbing an open-ice hit and meeting the boards. Most of the risk reduction here is skill and awareness, not gym work.
@@ -216,6 +222,8 @@ The same Dinh dataset puts the **wrist at 19.55% and digits at 11.23% of upper-e
 **What reduces risk:** gloves that actually cover the wrist gap (the space between glove cuff and elbow pad is where slashes land), well-fitted elbow pads, and not putting a bare hand out to break a fall.
 
 ### Concussion risk and body checking
+
+**In short:** Ask your league whether your category allows body checking; your age group alone does not settle it.
 
 The strongest evidence in hockey injury prevention is not about training at all — it is about rules. The 2025 youth **narrative** review reports that **body checking is the most significant modifiable risk factor, associated with a roughly threefold increase in concussion incidence**, and that **policy interventions prohibiting body checking have produced 50–70% reductions in injury rates** — both figures it collects from its references rather than measures.
 
@@ -254,6 +262,8 @@ The one attributable number: a 2025 systematic review and meta-analysis of **mul
 **Loss of consciousness is not required for a concussion, and is not typical of one.** The UK Concussion Guidelines for Non-Elite (Grassroots) Sport — the guidance England Ice Hockey has adopted — say it *"occurs in less than 10% of concussions and is not required to diagnose concussion"*, and that *"[m]ost concussions occur without loss of consciousness"*. Waiting to see whether someone was "knocked out" is the misconception that does the most damage in amateur sport — a coaching observation, not a measured ranking.
 
 ### Red flags — call an ambulance
+
+**In short:** Any red flag means an ambulance now, and a symptom that is getting worse counts as a red flag.
 
 **Read this before anything else in this section.** The **Concussion Recognition Tool 6 (CRT6)**, published alongside the Amsterdam consensus for non-medical people on a bench, lists ⚠️ **red flags that mean emergency services, immediately.** Do not wait, do not drive them yourself, do not "see how they are after the game":
 
@@ -308,6 +318,8 @@ There is no version of this that involves the player deciding for themselves. Sy
 A brain that is still recovering is more vulnerable to a second injury, and repeat injury sustained during recovery is associated with worse and more prolonged outcomes. That risk is the reason for the same-day rule and the reason return is staged.
 
 ### Return to play is a medical decision
+
+**In short:** Return only when a medical professional says so, even if you feel fine; in British grassroots hockey, never compete before day 21.
 
 The consensus framework uses a **graded, stepwise return-to-sport progression**: starting with symptom-limited daily activity, progressing through light aerobic exercise, then sport-specific exercise, then non-contact training drills, then — **only after medical clearance** — full-contact practice, and finally return to game play. Each step depends on tolerating the previous one, and any return of symptoms means stepping back.
 
@@ -439,6 +451,8 @@ Easy movement the day after — a walk, an easy spin on a bike, easy skating —
 
 ### An honest audit of popular recovery methods
 
+**In short:** Sleep and fuelling come first; ice baths suit after a game rather than a strength session, and the rest probably help little.
+
 Recovery research is large, noisy and full of small studies. Here is the evidence, method by method.
 
 **Sleep — strong.** Best supported, cheapest, most neglected, and the first thing most players trade away.
@@ -553,6 +567,8 @@ Keep **Session 1 (strength)** and do your conditioning in your games. Strength a
 ---
 
 ## Youth Players
+
+**In short:** Build broad athletic skills, play other sports, and get qualified coaching before a young player lifts at all.
 
 **This section is brief on purpose: youth physical development has qualified specialists, and this document is not one of them.** If you coach or parent a young player, work with qualified coaches and, where relevant, medical professionals.
 

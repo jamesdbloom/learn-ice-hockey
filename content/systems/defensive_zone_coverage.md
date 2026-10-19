@@ -52,6 +52,8 @@ Coverage is the agreement your five skaters have about who protects what while t
 
 ## The Problem Every System Solves
 
+**In short:** Protect the house first and choose which chances to give up, while keeping someone ready for the outlet.
+
 ```facts
 Key: The most dangerous chances come from the house, or home plate — the two goalposts widening to the faceoff dots and up to the top of the circles
 Convention: The house is an analytics convention rather than an official marking — Shooting covers what a shot from inside it is worth, Rink Map covers the shape
@@ -91,6 +93,8 @@ There is one more constraint people forget. You are not only defending; you are 
 ---
 
 ## What Stays True Across Every Coverage System
+
+**In short:** Whatever the system: defend the middle first, stay goal side, and make sure somebody always has the goalmouth.
 
 ```facts
 Priority: Defend the middle before the outside — it tells you which chance to concede, not which square metre to stand in
@@ -159,6 +163,8 @@ Get there first: your inside shoulder ahead of theirs, your body between them an
 The idea: you defend **space**, not people. Each of the five of you owns an area. Whoever skates into your area becomes yours until they leave it. **Three of you — both defencemen and the centre — live below the top of the circles**, which matches their three forwards down there, while the two wingers hold the points so the opposing defencemen never get a clean seam pass into the middle. When the centre goes low to help, the weak-side winger sags into the high slot and you are briefly four down there. Only under maximum pressure — the collapsing box described later — do all five drop below the circles.
 
 ### The base shape — puck in the strong-side corner
+
+**In short:** Under low zone collapse one defenceman pressures the puck, the other owns the goalmouth, the centre adds a second body, and the wingers stay high.
 
 ```facts
 Convention: Under low zone collapse, the strong-side defenceman is on the puck in the corner or behind the net — pressure and pin the puck, or angle them away from the net. Pin the puck, not the player
@@ -339,6 +345,8 @@ Coaching material has man-on-man much less common as a pure system than it used 
 
 ## Hybrid — man-on-man below the dots, zone above
 
+**In short:** Below the dots take a body and stay with it, above them cover an area, and agree exactly where the line is.
+
 ```facts
 Convention: Man-on-man below the dots, zone above them — some teams say the hash marks or the top of the circles, so learn your team's line
 Convention: The two defencemen and the low forward, usually the centre, go man-on-man on the three attacking forwards: one on the carrier, one on the net front, one on the low support
@@ -476,6 +484,8 @@ Systems tell you where to stand. These are the recurring plays you'll actually f
 
 ### The cycle
 
+**In short:** Don't chase it round the boards: defend the next pass and the exit points, and send two to win one battle.
+
 ```facts
 Key: Attackers rotate the puck between the corner, the half-wall and behind the net, passing into the space they just left, until somebody chases out of position
 Never: Chase the puck around the boards. Let it come to you instead and defend the exit points, not the puck's current location
@@ -506,6 +516,8 @@ Rule: A USA Hockey game misconduct is not only this game — 404(b) also suspend
 **What it costs.** ⚠️ **No book here prices a hit to his back that stays off his head at two minutes.** The NHL, the PWHL and the IIHF write no minor at all (43.2). Hockey Canada's floor is a minor plus a game misconduct (7.5, which names this case for strict enforcement), with a match where he goes into the boards or goal frame unable to protect himself (7.5(c)) — as under CARHA 53(b) — and head contact up to a match once the hit reaches his head (7.6; 7.7 in Junior and Senior). USA Hockey's softer floor does not reach this play: its Casebook, at Rule 608, Situation 1, requires a major plus a game misconduct, or the match penalty, *"[i]n every instance where a player forcefully checks an opponent who is standing along the boards (back toward the middle of the ice)"* — the cycling forward exactly — and for a reckless one, plan on the match (602(a)). The full ladder is under [The base shape](#the-base-shape--puck-in-the-strong-side-corner).
 
 ### The low-to-high play
+
+**In short:** When the puck goes low, wingers close on their points early and everyone else boxes out the bodies in front.
 
 ```facts
 Key: The puck goes low to drag your coverage down, then back up to the point or the high slot for a shot with your backs turned and traffic in front — it exists to punish low zone collapse
@@ -658,6 +670,8 @@ Priority: When a fourth attacker arrives low, somebody gives up their area and i
 
 ### The net-front scramble
 
+**In short:** Take the most dangerous stick first, stay on your feet, and move the puck with your stick, never a closed hand.
+
 ```facts
 Priority: Body first, puck second — as the puck arrives, lift the most dangerous stick low on the shaft, well below the bottom hand, or press its blade down; stop at their stick, then let go
 Never: Grab their stick, or keep a pin on it after the shot — a grab is at least a holding minor in every book, in CARHA possibly an ejecting major, and a pin you keep can be called holding
@@ -696,6 +710,8 @@ Rule: NHL and IIHF 61.1 and PWHL 63.1 punish a chop "on or near the opponent's h
 
 ### Handling a loose puck in your own crease
 
+**In short:** Knock it down and play it with your stick; only your goalie may smother a puck in your crease.
+
 ```facts
 Rule: The NHL and IIHF (67.2), PWHL (69.2), Hockey Canada (10.2(a)(iii)) and CARHA (61(a)) print the permission, the last two only where you gain no advantage. USA Hockey's playing rules print none; 618(a) leaves the catch-and-drop unpenalised outside the crease, and its Casebook says so in terms
 Never: Hold a puck you have caught, carry it, turn with it or throw it — that is the act the books reach: a minor in five books, a USA Hockey stoppage outside the crease, the penalty shot in your own crease
@@ -731,6 +747,8 @@ Never: Reach higher to hold a puck above the crossbar — once you are holding i
 ---
 
 ## When the System Breaks
+
+**In short:** When structure goes, get bodies to the net front and sticks in lanes, find the dangerous unmarked man, then count.
 
 ```facts
 Priority: Bodies to the net front immediately — not to the puck
@@ -774,6 +792,8 @@ Winning the puck is only half the job. The handoff from coverage into a breakout
 
 ### Getting the puck out
 
+**In short:** Decide before the puck reaches you, and never move it across the front of your own goal.
+
 ```facts
 Action: Decide before you touch it — scan while the battle is still going, so you already know whether it's the winger, the centre or the glass
 Never: Move the puck across the front of your own goal on the way out, with a pass or with your feet. Behind your own net is the route across, where an interception costs you almost nothing
@@ -800,6 +820,8 @@ Never: Cheat up the ice — the puck should leave the zone before your third for
 **Structure first, speed second.** It is tempting to leave the zone the instant the puck turns over, and forwards cheating up the ice is how a cleared zone becomes an odd-man rush the other way. Exit as a group. The puck should leave the zone before your third forward does — **unless your team's breakout asks a forward to leave early — a centre fly, a slash or a stretch**, so find out which your team plays before you treat an early exit as an error.
 
 ### Rules that constrain the clear
+
+**In short:** Clear it off the glass, never straight over it, or short enough to die in the neutral zone.
 
 ```facts
 Rule: Off the glass and out is legal; putting the puck directly out of play from your own defending zone is a two-minute delay of game under NHL 63.2(iii), IIHF 63.2(III) and PWHL 65.2(iii) alike, with the same three narrow carve-outs — so it binds a British player too

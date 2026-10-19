@@ -96,6 +96,8 @@ The classic "big ice" is the 30 m (98.4 ft) version — **13.4 ft wider than an 
 
 ### The England Ice Hockey amendment — British rinks are outside the IIHF range
 
+**In short:** Assume your British rink is smaller than both the NHL and IIHF sheets, and go and look at what yours measures.
+
 This is the most important thing on this page for a British reader: it is why neither table above describes your rink.
 
 The IHUK In-House Rules amend IIHF Rule 1 directly. Under the heading *"Rink size and eligibility"*, the In-House Rules 2026-27 state: *"Rinks with a non-standard playing surface (below 56 m × 26 m) are authorised by the NGB for all levels of hockey"* — with two named rinks permitted only up to U16: **Sutton** in England and **Coatbridge** in Scotland. The rule's own scope line reads *"This rule applies to all fixtures"* — where the 2025-26 edition confined it to EIH and SIHA fixtures.
@@ -167,6 +169,8 @@ A **2-inch red line drawn all the way across the ice**, 11 ft from the end board
 
 ### The blue lines
 
+**In short:** Keep a skate on the blue line until the puck has completely crossed it, and drag that trail skate, never lift it.
+
 Two **12-inch-wide blue lines**, drawn 64 ft out from each goal line, dividing the ice into three zones (NHL Rule 1.5). **Under IIHF Rule 1.5 they are 30 cm wide — the same foot — and sit 18.5 m out from each goal line.** They are the widest lines on the ice, and that width does work: offside is judged against the *whole* line, so the puck must cross all of it before the zone changes hands.
 
 What the blue lines do:
@@ -190,6 +194,8 @@ A **12-inch red line** across the middle of the ice, marked with a distinctive p
 The centre red line is **no longer a passing restriction** in the NHL. The two-line pass rule was abolished by a playing-rule change for the 2005-06 season, so the centre line no longer determines an offside pass — which is why the **stretch pass** exists as a weapon at all.
 
 ### The goal crease ("the blue paint")
+
+**In short:** Screen from outside the red crease line, not on it, and stay off the goalie wherever he is.
 
 In the NHL the crease is built as follows (Rule 1.7): a 2-inch red line runs **1 ft outside each goal post**, extending **4 ft 6 in** straight out at right angles to the goal line, and the two straight sides are joined by a **6 ft radius arc** struck from the centre of the goal line. So it is **8 ft wide at the goal line and 6 ft deep at its deepest point**. The enclosed area is painted light blue and — importantly — the crease is a **volume**, not a patch of ice: it extends **4 ft vertically**, to the height of the top of the goal frame.
 
@@ -272,6 +278,8 @@ A second, smaller set of markings: an L-shaped pair of lines 1 ft outside each f
 
 ### The trapezoid (goalkeeper's restricted area)
 
+**In short:** Aim dump-ins away from the trapezoid, keep your own goalie inside it, and ask your league whether it applies.
+
 The trapezoid is the marked area behind each net inside which the goalie may play the puck. **It is why dump-and-chase works:** a puck rimmed into the corner cannot be calmly collected by the goalie, so a defenceman has to go and get it with a forechecker arriving. **Aim your dump-ins away from the trapezoid,** and ⚠️ **keep your own goalie inside it.**
 
 In the books that have one, a goalie who plays the puck behind the goal line **outside** it takes a **two-minute minor for delay of game**, and the position of the puck decides it. **The rule text's one exception is a goalie playing the puck while keeping skate contact with the goal crease** — there is no teammate exception. **The IIHF's Situation Handbook adds two more that are not in the rule text**: a puck stopped *on* the goal line is not in the restricted area at all (Situation 27.6), and a puck that merely deflects off the glass into a retreating goalie draws nothing, because *"the goalkeeper must **play** the puck to be penalized"* (Situation 27.9). Both answers misnumber it *"Rule 27.8"*; the IIHF's restricted area is 27.7. The penalty sits at **NHL** Rules 27.8 and 63.2(viii) and **IIHF** Rules 27.7 and 63.2(VIII); [Goaltender](../positions/goaltender.md) covers living inside it.
@@ -299,6 +307,8 @@ The In-House Rules put the whole domestic game on the IIHF book, recreational an
 The other limit: ⚠️ **being checked does not travel:** 63.2(VII)'s *"actually being checked by an opponent"* is written for a goalie *"in their own goal crease"*, and the Situation Handbook penalises a goalie well out of the crease who falls on the puck as an attacker bears down, because the freeze did not come directly from the save (Situation 63.1). [Goaltender](../positions/goaltender.md) owns the freezing rules.
 
 ### The boards, the glass, and the benches
+
+**In short:** Use the wall as a passing partner, and keep your clears down: off the glass and out, not over it.
 
 - **The boards** (also "**the wall**") are 40–48 inches high, ideally 42, under **NHL Rule 1.3**. They are in play: the puck off the boards is live, and a skilled player uses the wall as a passing partner. **IIHF Rule 1.3 gives one figure rather than a range** — *"The ideal height of the boards above the ice surface shall be 1.07m"*, which is the NHL's ideal 42 inches in metric, with any variation requiring IIHF authorisation.
 - **The glass** is 8 ft above the boards at the ends and at least 6 ft along the sides (**NHL Rule 1.3**). **"Off the glass and out" — caroming the puck off the glass and out of your zone — is legal; over the glass is not, so keep the clear down.** A puck shot or batted directly out of the playing surface from your own defending zone is a **two-minute minor** (**NHL** Rule 63.2(iii), **PWHL** 65.2(iii), **IIHF** Rule 63.2(III)), and the carve-outs are narrower than players assume. **Goalies under Hockey Canada and CARHA have a clause of their own:** shoot or bat it straight out of the rink with your stick, from any zone, and it is a minor (Hockey Canada 10.1(v), CARHA 55(a)); a puck that touches the glass or deflects off someone draws nothing, and neither does one put out where there is no glass. **And never put it out on purpose from anywhere:** a puck shot or batted out of play deliberately is a minor from any zone, in every book.
@@ -497,6 +507,8 @@ The **backdoor** is the weak-side net-front area. What makes it dangerous is tha
 
 ### Inside and outside
 
+**In short:** Get between your check and the net and force the carrier outside with your angle and stick, not a hit.
+
 - **Inside** = toward the middle of the ice; also, "on the inside of" an opponent means between them and your net.
 - **Outside** = toward the boards.
 
@@ -548,6 +560,8 @@ Note the asymmetry: **wide is safe for you and bad for them.** A shot from wide 
 
 ### The six positions
 
+**In short:** Five skaters and a goalie a side; the goalie may cover the puck, but the habit is save, then cover.
+
 | Code | Position | Notes |
 |---|---|---|
 | **C** | Centre | Takes faceoffs, covers the middle in all three zones |
@@ -592,6 +606,8 @@ Your **D-partner** is the other defenceman on your shift. Pairs are usually kept
 A **line** is a set of three forwards (LW, C, RW) who play together. Lines are numbered by role: the first line takes the most offensive minutes, the fourth is typically an energy and defensive-matchup line. **"Changing as a unit"** means the whole line goes off together, which is what keeps the structure intact.
 
 ### Left-shot, right-shot, and why a defenceman's handedness picks their side
+
+**In short:** Defencemen usually play their shooting side, which puts retrievals, D-to-D passes and point shots on the forehand.
 
 A **left-shot** player holds the stick with the left hand low, so the puck sits on their left; a **right-shot** is the mirror. This is about which side of your body the puck lives on — it has nothing to do with whether you write with your left or right hand.
 

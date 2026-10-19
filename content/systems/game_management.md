@@ -101,6 +101,8 @@ The fix when watching or analysing: **look at score-adjusted numbers, or at even
 
 ### What actually works
 
+**In short:** With a lead, ask whether they can get it back somewhere dangerous: manage the puck, chip it out and take away the middle.
+
 ```facts
 Priority: With a lead the question is not "can I create a chance" but "can they get it back somewhere dangerous"
 Never: Cross-ice passes through the middle, blind D-to-D across your own goalmouth, or stretch passes you are not sure about
@@ -186,11 +188,13 @@ Rule: USA Hockey's silence on whether 640(g) and 640(h) reach a late hit in adul
 
 ### The icing trap
 
+**In short:** With a tired line, chip it out rather than ice it; under the NHL and IIHF, icing means no change for the draw.
+
 ```facts
 Rule: Icing is sending the puck from your own side of the centre red line past the opposing goal line untouched (NHL Rule 81.1)
 Rule: Under hybrid icing the linesperson judges who would reach the puck first, not who reaches the dot first (NHL Rule 81.1)
-Rule: After your own icing you may make no player substitutions before the ensuing faceoff (NHL Rule 82.1)
-Rule: The post-icing substitution bar has three narrow exceptions — a goalie who had been pulled for an extra attacker, an injured player, or a penalty affecting on-ice strength (NHL Rule 82.1)
+Rule: After your own icing you may make no player substitutions before the ensuing faceoff (NHL Rules 81.4 and 82.1)
+Rule: The post-icing substitution bar has three narrow exceptions — a goalie who had been pulled for an extra attacker, an injured player, or a penalty affecting on-ice strength (NHL Rules 81.4 and 82.1)
 Rule: The IIHF's post-icing substitution bar is Rule 81.4, and its exceptions run one longer — you may also replace "a Player with a broken skate", which the NHL does not allow; but IIHF 82.1 expressly covers icing too and lists only the NHL's three, and the book does not say which governs
 Rule: A refused change sends the substitutes back to the bench and warns the team through its coach; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)) — the NHL contradicts itself, 82.2(v) warning either team, its 82.3 penalising the visitors with no warning
 Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1) — USA Hockey attaches no icing condition to its one time-out (636(f))
@@ -219,6 +223,8 @@ Action: Ask before the game — many rec and youth leagues use no-touch icing, a
 ## Playing From Behind
 
 ### Pressing without giving up odd-man rushes
+
+**In short:** Add pressure in order of safety, starting with speed and support, and always keep someone as the last man back.
 
 ```facts
 Action: Move the puck north faster and arrive in numbers through the neutral zone before you park extra players deep
@@ -288,6 +294,8 @@ Signs it's time to change something, rather than keep doing the same thing harde
 
 ### When
 
+**In short:** Expect the goalie to come out earlier than feels natural; every study cited here finds coaches pull too late.
+
 The analytics consensus sits much earlier than tradition, and it has been moving that way for years. **Every study this document cites finds the same thing: coaches pull too late** — and Beaudoin and Swartz report that every earlier analysis they review reaches the same conclusion, back to Morrison's 1976 paper, which they call *"the first paper on the subject of pulling the goaltender"*.
 
 **What teams historically did.** In 2007-08 NHL coaches typically pulled with **1:00 remaining when down one goal and 1:30 when down two** — and essentially never when shorthanded. The analyst Meghan Hall puts the average at **1:13 in 2013-14 rising to 1:37 by March 2021**, with a high of **1:46 in 2019-20** — real movement, but slow.
@@ -307,6 +315,8 @@ The analytics consensus sits much earlier than tradition, and it has been moving
 > **A coaching constraint that gets ignored.** As Seattle's Dave Hakstol put it: *"The earlier you pull, the stronger your second group has to be."* Pulling with five minutes left means three or four different units play 6-on-5. If your second group can't handle it, pulling early isn't free.
 
 ### The 6-on-5 structure
+
+**In short:** Get set up, screen the goalie from outside the crease without touching him, move the puck fast, keep one point man back and change with possession.
 
 ```facts
 Position: Two at the points, two on the half-walls, one at the net front, one below the goal line or in the middle
@@ -352,6 +362,8 @@ If you are trailing *and* on a power play, pulling the goalie creates a 6-on-4. 
 
 ### The delayed-penalty freebie
 
+**In short:** If your team has agreed it, pull your goalie the moment the arm goes up against them, and keep the puck from them.
+
 ```facts
 Action: Goalie goes to the bench immediately at the first sign of the referee's arm going up against the other team — every second is a free attacker
 Action: The extra attacker jumps from the bench as the goalie arrives
@@ -389,6 +401,8 @@ The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delay
 
 ### Defending against 6-on-5
 
+**In short:** Don't chase: hold a tight shape in the slot, treat every clear as a shot, and take no penalties.
+
 ![](diagram:five-on-six-clear-three-outcomes)
 
 ```facts
@@ -417,6 +431,8 @@ Your job as the leading team defending an empty net:
 ## Line Matching and Last Change
 
 ### The rule
+
+**In short:** Where your league runs last change, the visitors change first and the home team answers; go straight to the dot.
 
 ```facts
 Rule: After a stoppage the visiting team places its line-up on the ice first, then the home team may substitute (NHL Rule 82.1)
@@ -510,6 +526,8 @@ Which pair does which varies. Many teams use their **second** pair as the shutdo
 
 ### Left-shot / right-shot pairings
 
+**In short:** Know which side you are playing: on-hand helps exits and retrievals, and off-hand, take your first touch into the middle.
+
 ```facts
 Key: On your on-hand side the outlet up the wall and the D-to-D are on your forehand, and your body shields the puck from the middle
 Technique: Retrieving on your on-hand side lets you turn away from the forecheck; off-hand you turn into the boards or the checker
@@ -594,6 +612,8 @@ As coaches put it: **a 90-second shift is not three times as valuable as a 30-se
 
 ### When NOT to change
 
+**In short:** Change when your team has the puck heading north, never with the puck loose in your own zone.
+
 ```facts
 Never: Change when the puck is in your defensive zone and your team does not have it
 Never: Change while you are the last man back, until you are relieved. Say so out loud
@@ -639,6 +659,8 @@ The fix is discipline and communication, not fitness. **Call it**: "I'm changing
 
 ### The rules you're working inside
 
+**In short:** Leave at your bench and out of the play, touch nothing, and as the replacement join the play only once he is off.
+
 ```facts
 Rule: You may change at any time during play, provided the player leaving is within five feet of the bench and out of the play (NHL Rule 74.1)
 Rule: The five feet is the NHL's, the PWHL's (76.1) and, as 1.50 m, the IIHF's (NHL and IIHF 74.1). Hockey Canada 6.1(a) gives you 3.05 m (10 ft.), and USA Hockey 204(b) writes no distance at all — only "at the players' bench and out of the play"
@@ -646,10 +668,10 @@ Rule: If either player plays the puck, checks or makes contact while both are on
 Rule: The IIHF and USA Hockey set that trigger wider — contact or a played puck while "either" the arriving or the retiring player is on the ice, not both (IIHF 74.1; USA Hockey 204(b))
 Rule: USA Hockey alone adds a third trigger — a bench minor where the change "causes their team to gain a competitive advantage" with no puck played and nobody hit (Rule 204(b); Casebook Rule 204 Situation 8 applies it to a 2-on-1 turned into a 2-on-2)
 Rule: If the offending team scores before the whistle, the goal is disallowed and the penalty assessed (NHL Rule 74.2)
-Never: Leave the ice anywhere but at the bench — under the NHL, IIHF and PWHL any other exit is a bench minor (NHL and IIHF 74.1, PWHL 76.1); neither USA Hockey nor Hockey Canada writes that clause
+Never: Leave the ice anywhere but at the bench — a bench minor under NHL and IIHF 74.1 and PWHL 76.1, and if replaced under USA Hockey (Casebook 630, Sit. 12), Hockey Canada (6.1(a)) and CARHA (19(b))
 ```
 
-**The safe habit under every book: be at the bench and out of the play before your replacement steps on, and touch nothing until you are off.** Leave only through the bench door.
+Leave only through the bench door.
 
 **What it costs.** Under the NHL you may change at any time if the player leaving is within five feet of the bench and out of the play (74.1). If either player plays the puck or makes contact while **both** are on the ice, it is a bench minor for too many men, and a goal the offending team scores before the whistle is disallowed (74.2). The PWHL writes the same five feet, and the IIHF writes it as 1.50 m.
 
@@ -659,13 +681,15 @@ Never: Leave the ice anywhere but at the bench — under the NHL, IIHF and PWHL 
 
 USA Hockey adds a trigger no other book has. ⚠️ **A change that *"causes their team to gain a competitive advantage"* is a bench minor**, even with no puck played or contact made. Its Casebook applies it to a change that turns a 2-on-1 against into a 2-on-2. **So under the American book, the change that rescues you numerically is the one most likely to be called.** [Rules Primer](../foundation/rules_primer.md) owns the rule.
 
-Leaving through any exit but the bench is a bench minor regardless under the NHL, the IIHF and the PWHL; neither USA Hockey nor Hockey Canada writes that clause.
+Leaving through any exit but the bench is a bench minor regardless under the NHL, the IIHF and the PWHL. If you are replaced, it is one under USA Hockey's Casebook (Rule 630, Situation 12), and under Hockey Canada and CARHA too, which want the player leaving at the bench before any change (Hockey Canada 6.1(a), priced as too many players at 10.7(a); CARHA 19(b), 19(e)).
 
 ---
 
 ## Overtime
 
 ### Regular-season 3-on-3 (NHL)
+
+**In short:** Keep the puck: regroup back through the neutral zone rather than force a shot, and change only with possession.
 
 ```facts
 Rule: Five minutes maximum, sudden death, three skaters and one goalie a side, teams changing ends (NHL Rule 84.1)
@@ -718,6 +742,8 @@ Action: Manage shifts ruthlessly — teams routinely shorten to the low 30s in d
 This is a completely different game-management problem: it's regulation hockey, played tired, with an infinite-cost mistake. The universal advice is **play simple, get pucks behind their defence, don't be the one to make the play that loses it**, and manage shifts ruthlessly — teams routinely shorten shifts to the low 30s in double overtime.
 
 ### Overtime elsewhere: IIHF, Britain and rec leagues
+
+**In short:** Ask before the game: many British fixtures have no overtime, and where it is played the formats differ.
 
 ```facts
 Rule: IIHF preliminary overtime is five minutes of 3-on-3, but teams do not change ends (IIHF Rule 84.1)
@@ -800,6 +826,8 @@ See [Goaltender](../positions/goaltender.md) for the technical detail.
 
 ### The format
 
+**In short:** Find out your competition's shootout rules, because the number of shooters and who may shoot again differ between them.
+
 NHL **Rule 84.4**: if the five-minute overtime settles nothing, each team gets **three shots**, alternating, and the **home team chooses whether to shoot first or second**. If still tied it goes to **sudden death**, and **no player may shoot twice until everyone eligible has shot**. The rules for each attempt are those of a penalty shot (Rule 24). The final score is recorded as one goal better than the opponent regardless of how many shootout goals were scored, and the winning shooter is not credited with a goal in personal statistics.
 
 **The shootout you will actually take in Britain.** Your base book is the IIHF's, and **its Rule 84.4 differs from the NHL in four ways**:
@@ -854,6 +882,8 @@ Options: Some coaches send the scoring line straight back out to press; others s
 A goal for changes behaviour as surely as a goal against, only in the other direction: the bench is loud, the scoring line is still celebrating, and somebody starts cheating up the ice for the next one. **Take the centre-ice draw that follows like a defensive-zone draw** — win it back, get the puck deep, take your man — and let the second goal come from the same structure that produced the first. Coaches commonly treat the shift after you score as a dangerous one; read that as coaching lore, the same class of claim as the minute after a goal against. **Whether the scoring line goes straight back out to press or a checking line goes out to settle the game is a coaching choice** — ask your bench which yours plays, and if you are on that shift, play it simply.
 
 ### What a late hit costs in each book
+
+**In short:** Pull up on anyone who has passed, shot or turned away, keep every hit off the head, and hit only where checking is allowed.
 
 ```facts
 Never: "Finish your check" on a player who has already passed or shot; USA Hockey's Declaration of Player Safety calls the concept "an unacceptable action"
@@ -918,6 +948,8 @@ If you drive him head first into the boards or goal frame, ⚠️ **the checking
 
 ### Whether you may body check at all
 
+**In short:** Find out whether body checking is allowed in this game; where it is barred, take the ice and play the puck.
+
 ```facts
 Rule: No late-hit question arises where you may not body check at all — USA Hockey 604(a) bars it at 12 & under and below, in all Girls'/Women's and all non-check Adult classifications; Hockey Canada 7.3 at U13 and below, throughout female hockey and in any Member-approved division
 Rule: USA Hockey 604(b) bars body checking outright any time a checking team plays a non-checking one — so whether you may check can change per fixture, not just per division
@@ -948,6 +980,8 @@ Mindset: It is not a lack of ambition — being able to deliver one reliably mak
 A **simple shift** is a deliberate, low-ambition, high-execution 35 seconds: no cross-ice passes, no pinches, no one-on-one attempts, first man in on the forecheck, hard on the wall, change on the whistle or on the clear. Its purpose is to stop the bleeding and hand the game back to the bench in one piece. It is not a lack of ambition; it's the correct play in a specific situation, and being the player who can reliably deliver one makes you very hard to leave out of a line-up.
 
 ### Time-outs, icing, and what the evidence says
+
+**In short:** Call your time-out for rest and instruction before a big moment: it is no momentum spell, but it is free.
 
 ```facts
 Rule: Each team gets one thirty-second time-out per game, taken at a normal stoppage (NHL Rule 87.1)
@@ -1057,6 +1091,8 @@ After a TV time-out, an injury delay, a video review or an intermission, everybo
 
 ### When a penalty is worth taking
 
+**In short:** Take a penalty only to stop something likelier to score than their power play; keep it a minor, and never once your goalie is pulled.
+
 ```facts
 Key: The test is whether the thing you are preventing is more likely to become a goal than the power play you give up
 Options: Stopping an odd-man rush in the last minutes of a close game, or preventing a certain goal — with a foul that stays a minor
@@ -1089,6 +1125,8 @@ So: **when you have pulled your goalie, there is no foul left that buys you anyt
 Note what is *not* on the list: retaliation, sending a message, standing up for a teammate after the whistle, and anything in the first period. ⚠️ **And after-the-whistle penalties are not always priced as a power play** — under USA Hockey and Hockey Canada a puck fired out of the rink after a whistle can climb to a game misconduct. See [When it absolutely isn't](#when-it-absolutely-isnt).
 
 ### Catching a loose puck in your own crease
+
+**In short:** Never cover or hold a loose puck in your own crease; put it straight down and play it.
 
 ```facts
 Rule: Five books print the permission to catch a puck and put it straight down — NHL and IIHF 67.2, PWHL 69.2, Hockey Canada 10.2(a)(iii) and CARHA 61(a), the last two "without gaining or attempting to gain" an advantage; USA Hockey only in Casebook Situation 1 to Rule 618
@@ -1132,6 +1170,8 @@ And "put it down" means ⚠️ **down where you are, not somewhere better.** Mov
 
 ### When it absolutely isn't
 
+**In short:** Take no penalty when leading late, when already a man short or up, after the whistle, or at 6-on-5.
+
 ```facts
 Never: Take a penalty with a lead in the last five minutes. If you are beaten, be beaten, and let them have the outside shot
 Never: Take one while already killing a penalty; coaches rank a 5-on-3 against as the most dangerous game state in hockey, which is coaching emphasis and not a counted ranking
@@ -1155,6 +1195,8 @@ Never: Take one at 6-on-5 or defending 6-on-5 — both directions are catastroph
 **Hockey Canada** ⚠️ **lists *"Shooting the puck out of the playing area, after the whistle"* as Unsportsmanlike Conduct** (11.1, preamble item (v)): a minor, a misconduct for persisting (11.1(d)(i)), and a game misconduct for persisting after either (11.1(e)). The referee may start at a higher rung, but persistence is what they must see.
 
 ### Frustration penalties
+
+**In short:** Keep your feet moving, give up the last word and have a reset; frustration penalties buy you nothing.
 
 ```facts
 Action: Keep your feet moving — when your feet stop your stick starts reaching, and a stick used as a substitute for skating is what hooking and tripping calls are made of

@@ -49,6 +49,8 @@ There are six things you can do to a puck to send it at the net. Learn all six; 
 
 ### The Wrist Shot — the fundamental
 
+**In short:** Sweep the puck from behind your back foot with your weight moving forward, and set the height with your follow-through.
+
 ```facts
 Position: Puck behind your back foot, cupped on the heel-to-middle of the blade
 Technique: Pull, don't slap. Sweep the puck forward and never let it leave the blade
@@ -87,6 +89,8 @@ That leaves the follow-through cue stronger, not weaker: you can aim a finish bu
 
 ### The Snap Shot — the most useful shot in modern hockey
 
+**In short:** Inside the dots, a quick shot from beside your skate with no wind-up is probably your shot.
+
 ```facts
 Position: Puck beside or just behind your skate, chest facing the net, no wind-up
 Technique: Bottom hand at or just above the midpoint — the wind-up, not the grip, separates snap from slap
@@ -120,6 +124,8 @@ The snap shot is the compromise between the wrist shot and the slap shot, and th
 ---
 
 ### The Slap Shot — powerful, and usually the wrong choice
+
+**In short:** Slap only from the point with a lane and time, look before you wind up, and never in a CARHA league.
 
 ```facts
 Technique: Strike the ice two to five centimetres behind the puck, not the puck itself
@@ -188,6 +194,8 @@ Never: Lean on a definition to excuse the swing. Keep the blade down, look befor
 
 ### The Backhand — the most neglected shot in hockey
 
+**In short:** Take the backhand when turning to your forehand would cost the chance: in tight, on breakaways and on off-side rebounds.
+
 ```facts
 Position: Puck on the back of the blade between middle and heel, on the flat spot rather than the curve
 Technique: Hands wider than on a forehand — the extra spread buys the leverage the backhand is short of
@@ -218,6 +226,8 @@ Almost nobody practises the backhand, and almost every goalie finds it harder to
 ---
 
 ### The One-Timer — shooting a pass without stopping it
+
+**In short:** Set your feet early, keep the backswing short, and settle the pass and shoot second if it bounces or anyone is inside your swing.
 
 ```facts
 Action: Set your feet before the pass arrives — if you are still skating, you are receiving, not one-timing
@@ -259,6 +269,8 @@ A one-timer is shooting a pass directly, without receiving it first. It is the f
 ---
 
 ### Tips and Deflections — changing direction beats adding speed
+
+**In short:** Hold a soft, angled blade low in the shot's path, tip at knee to chest height and below the crossbar, and let the angle work.
 
 ```facts
 Position: Blade in the puck's path at the net front, flat on the ice or just above it
@@ -368,6 +380,8 @@ Action: Look off to a teammate in the slot to move the goalie's weight, then sho
 
 ## Accuracy and Shot Selection — where to actually aim
 
+**In short:** This guide aims where the goalie is not, rather than at the corners; with teammates at the net, shoot low and hard for a tip.
+
 ```facts
 Targets: Five-hole while the goalie is moving, reaching or mid-drop — not into a set butterfly
 Targets: The far corner low, in the instant after a cross-ice pass, while they are still moving across
@@ -392,6 +406,8 @@ Convention: "Aim for the corners" is one coaching school and this section follow
 ---
 
 ## Shooting Through Traffic
+
+**In short:** Find the lane before you shoot; if there is none, change the angle, lift it a few inches, or move the puck.
 
 ```facts
 Action: Look for the lane before you shoot — no sight of the net or of net-front sticks means no lane
@@ -422,6 +438,8 @@ A shot that hits a shin pad is worse than no shot at all. **You have given up po
 
 ## Where Shots Are Worth Taking
 
+**In short:** Get to the middle or get the puck to someone there; a slot shot is worth several times a point shot.
+
 This is the part that changes how many goals you score, and it has nothing to do with your hands.
 
 Shot value depends overwhelmingly on location. The figures vary by model, but every model agrees on the shape, and each figure below carries its own qualification.
@@ -448,6 +466,8 @@ A goalie who sees the puck the whole way, from a set position, with their angle 
 
 ### The royal road
 
+**In short:** Make the goalie move sideways or stop them seeing the puck; shots just after it crosses the middle score far more often.
+
 Former NHL goalie Steve Valiquette popularised a concept called the **royal road** — an imaginary line running down the middle of the ice, which a puck crossing forces the goalie to move laterally across. Shots taken immediately after the puck has crossed it, by a pass or by a carrier skating over it, score at a far higher rate than shots that have not, because the goalie cannot be set and square.
 
 ![](diagram:oz-royal-road)
@@ -468,6 +488,8 @@ This document still uses the **net-centre-to-net-centre** version, because it is
 Analysts have pushed back that the royal road formalises something coaches already knew rather than revealing something new — and that is fair. It is still the cleanest single way to think about shot value: **make the goalie move sideways, or make sure they cannot see it.** That instruction does not depend on the number or on the exact geometry.
 
 ### How to create those shots
+
+**In short:** Pass across the middle, attack from behind the net, screen, and hit rebounds at once, so the goalie must move or guess.
 
 ```facts
 Action: Pass across the middle before shooting — cross-slot, D-to-D, or low-to-high to the far point — or attack from behind the net and out the other side so the goalie must rotate and re-find the puck
@@ -566,6 +588,8 @@ Never: Play the puck or touch the goalie after a defender has shoved you into th
 ---
 
 ## Shooting Off the Rush
+
+**In short:** Release in stride as the defender's stick closes, not after, and weigh a pass back to a late trailer.
 
 ```facts
 Read: Release as the defender's stick is closing, not after — waiting for a "good spot" shoots into a blocked lane
@@ -720,6 +744,8 @@ The honest answer is that it depends on one read: **how deep is the goalie, and 
 
 ### The rules you must know before you take one
 
+**In short:** Keep the puck moving toward the goal the whole way, and treat your first shot as your only one.
+
 ```facts
 Rule: On a penalty shot or shootout attempt the puck must be kept moving towards the goal line — no stopping, circling back or curling away to reset (NHL Rule 24)
 Rule: On a penalty shot or shootout attempt no goal counts on a rebound of any kind, except post or crossbar, then off the goalie, then in (NHL Rule 24)
@@ -823,6 +849,8 @@ Do not chase equipment as a substitute for reps. A correctly sized stick removes
 ---
 
 ## How to Practise
+
+**In short:** Practise the release at named targets, moving first and using your backhand, in short daily sessions rather than one long one.
 
 ```facts
 Priority: Volume builds the motor pattern, deliberate practice builds the skill you will use — do both

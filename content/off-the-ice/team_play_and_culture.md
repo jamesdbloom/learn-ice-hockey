@@ -45,6 +45,8 @@ Hockey changes players during live play, out of a roster you did not pick. Almos
 
 ## Why This Matters Practically, Not Sentimentally
 
+**In short:** When a teammate leaves their spot, fill it, and get back to yours quickly so the next cover is worth making.
+
 Skip the poster slogans. There is a mechanical reason culture shows up in the score.
 
 Hockey is played five skaters at a time out of a roster of **twenty** in the NHL — eighteen skaters and two goalies — and typically twelve to twenty in rec leagues. Shifts last **roughly 30 to 80 seconds** ([Conditioning and Recovery](conditioning_and_recovery.md) covers that figure; a well-managed one is nearer 30 to 45), and players change **during live play**. That has two consequences no other major team sport shares to the same degree:
@@ -108,6 +110,8 @@ When your line is next up:
 - **Watch that player, not the puck**, in the last few seconds. You are waiting for them to break for the bench.
 
 ### The mechanics of a change on the fly
+
+**In short:** Skate straight to the bench, and step on only as your man arrives there and is out of the play.
 
 This is the part the rules govern, and an honest mistake costs a two-minute bench penalty.
 
@@ -261,6 +265,8 @@ Most teams have **assigned or habitual stalls**. Common patterns: goalies at the
 
 ### The handshake line
 
+**In short:** Go down the line with your helmet on and fastened, say "good game" and nothing else, and back off if it goes up.
+
 **What to do:** helmet on and done up properly, gloves and stick left at the bench, shake everyone's hand, say "good game", and keep moving. Say nothing else, and keep your hands to yourself. ⚠️ **If it goes up, back off and let the officials in first**, however obvious it looks that somebody should pull them apart. If you are watching from the bench, stay on it. If you lost badly or there was an incident, this is exactly when doing it well matters.
 
 **Check your chin strap before you go down the line.** USA Hockey's Casebook says that if more than one finger fits between your jaw and the strap, it is not being properly worn (Rule 615, Situation 19).
@@ -300,6 +306,8 @@ The convention, where a game is out of hand, is a set of self-imposed restraints
 
 ### The goalie's crease
 
+**In short:** Screen without contact from outside the crease, stay out of it after the whistle, and get out of a returning goalie's lane.
+
 **Convention:** during a stoppage, don't skate through, stand in, or shoot pucks at the opposing goalie's crease. Goalies treat that space as theirs, and standing in it after a whistle is the standard way to start something.
 
 **During play, screen from outside the crease and keep your skates out of the blue paint.** Screening without contact is normally legal; contact with the goalie, or stopping him moving in his crease, is what costs your team the goal. [Rules Primer](../foundation/rules_primer.md#goaltender-interference) works through how the books differ.
@@ -314,6 +322,8 @@ The convention, where a game is out of hand, is a set of self-imposed restraints
 
 ### Your own goalie, in the warm-up and in drills
 
+**In short:** Aim warm-up and drill shots at the pads and gloves, never at your own goalie's head, and stay in your own end.
+
 **Convention — and one of the few in this section where breaking it hurts somebody.** **Don't shoot at your own goalie's head in the warm-up, and don't fire pucks at them from ten feet in a drill.** Both are more common than they should be: the warm-up is where a shooter is loosest and least aimed, and in a drill queue the distance quietly shrinks each time round. Aim at the pads, the glove and the blocker, and take the shot from where the drill puts you.
 
 **No rulebook names shooting at your own goalie as an offence — which is a reason to keep the convention, not to relax it.** Only two books stop play for a hit to the mask. 🇬🇧 **The IIHF — your book in Britain — lets the referee stop play** when a goalie is *"hit on the face mask by a hard shot"* and may be dazed. It is a *may*, and **an immediate scoring chance for the attacking team cancels it.** **Hockey Canada makes it a *shall*, but only in U13 and below.** ⚠️ **The NHL, USA Hockey's stand-up rules and CARHA write no mask stoppage at all.**
@@ -326,6 +336,8 @@ The convention, where a game is out of hand, is a set of self-imposed restraints
 
 ### Helping an injured player
 
+**In short:** Stop for a player who stays down; for a head or neck injury, call an ambulance, helmet on, moving them only for the airway.
+
 Conventions: stop playing when someone is down and not getting up, and wave for the bench or the officials. If it's a head or neck injury, **call for immediate medical help** and **do not move them** beyond keeping their airway clear, unless you are trained to do more. Kneel next to them, keep them still, and leave their helmet on.
 
 **Waving at the bench is not the same as calling for help** — it only tells your own side something has happened. In a rec game there may be nobody trained at the rink, so one person stays with the player and somebody else phones for an ambulance. The full on-ice response — the ABCs, leaving the helmet on, and why you assume a spinal injury in any head injury — is in [Body Contact and Battles](../technique/body_contact_and_battles.md).
@@ -334,7 +346,7 @@ Where this connects to the rulebook (**NHL Rule 8.1**):
 
 - Play is **not** stopped for an injured player until their own team has secured control of the puck — unless the officials judge the injury obviously serious, in which case they may stop it immediately.
 - **But there is a second limb people forget, and it cuts the other way.** If the injured player's team *already has control of the puck at the moment of injury*, "play shall be stopped immediately **unless his team is in a scoring position**." So a team attacking on a two-on-one with a teammate down behind the play gets to finish the rush; a team cycling harmlessly in the corner does not.
-- An injured player must leave via the **players' bench**, not any other exit. Using another exit is a bench minor.
+- An injured player who leaves during play to be replaced must go via the **players' bench**, not any other exit. Using another exit is a bench minor under the NHL, IIHF and PWHL, and under USA Hockey, Hockey Canada and CARHA if you are replaced.
 - Once a player is attended to on the ice by the trainer or medical staff, they **must be substituted for immediately** and cannot return until play has resumed.
 
 **Tapping the pads and boards.** Tapping a goalie's pads after a good save, or a teammate's shins after a blocked shot, is the standard nonverbal "well done" — it exists because you can't hear anything through a helmet at speed. Tapping sticks on the boards from the bench is the bench's applause, for a goal, a good shift, or a teammate leaving the ice injured. **One caution:** NHL Rule 39.2(iii) makes it a minor penalty to bang the boards with sticks "in any manner show disrespect for an official's decision" — the same physical action is applause or a penalty depending on what it is aimed at, though the rule explicitly allows officials discretion when boards are banged to get their attention for a genuine reason such as a serious injury.
@@ -364,6 +376,8 @@ A lot.
 
 ### What the rulebook actually says
 
+**In short:** Leave rule questions to your captain, and never dress up a complaint about a penalty as one.
+
 **Only the captain may raise a rule interpretation, and only when invited.** NHL Rule 6.1 gives the captain alone *"the privilege of discussing with the Referee any questions relating to interpretation of rules"*, and then only *"when invited to do so by the Referee"*.
 
 **An alternate captain has that privilege only when the captain is not on the ice.** How many letters a team may carry differs by book: a captain and two alternates is the usual limit; the NHL, the PWHL and the IIHF's 2026/27 edition also allow three alternates and no captain; and Hockey Canada, CARHA and the Elite League allow a captain and three alternates. **Check which book and edition your competition runs.** **Goalies may not be captain or alternate** under the NHL, IIHF, PWHL and Hockey Canada books. **USA Hockey and CARHA bar a goalie only from *exercising* the privilege, not from wearing the letter** — see Captains and Leadership below.
@@ -377,6 +391,8 @@ A lot.
 **Other codes are close but not identical.** The IIHF restricts the privilege to the captain the same way, but doesn't require the referee to invite the conversation first — the restriction there is purely about *who* may talk, not about waiting to be asked. A team cannot change its captain or alternates mid-game; if the captain is ejected or injured, an alternate takes over. **USA Hockey is looser**: the privilege attaches to whichever one designated player the team names, not specifically the captain-when-on-the-ice, and rec leagues frequently run without any letters at all.
 
 ### What gets you a penalty
+
+**In short:** Never touch or gesture at an official, and go straight to the box when you are told.
 
 In the NHL, five things are an **unsportsmanlike minor** on their own: disputing a ruling (no rudeness needed), obscene or abusive language or gestures at an official, banging the boards in disrespect of a decision, coming off the bench to protest, and banging the glass at an off-ice official. An obscene gesture is also a game misconduct (Rule 75.5(ii)). Hockey Canada catches disputing only when it is done *"in an unsportsmanlike manner"*.
 
@@ -450,6 +466,8 @@ Throwing your head back, slapping your stick on the ice, or gesturing at where t
 
 ### The bench that empties
 
+**In short:** When it goes up on the ice, sit down and stay sat down; leaving the bench helps nobody.
+
 **A bench that empties is a culture failure before it is a penalty, and it is the version of everything above that ends games rather than shifts.** The instinct is the same one this section has been about, at team scale: a teammate is in trouble, the door is right there, and going through it feels like loyalty.
 
 **It is not loyalty, and the arithmetic is against it.** The teammate you went out for is already being separated by two linespersons and is going to the box or to the room whatever you do. What you have added is yourself, plus whoever followed you through the door, plus a team that finishes the game short. **From the bench, the only useful thing you can contribute is not being on the ice.**
@@ -521,6 +539,8 @@ A single beer-league bench routinely contains a former junior player, someone wh
 - **Either way, keep your stick down — and find out whether you may hit at all before you set about softening one.** In a non-check category a body check is a penalty however gently it lands, and under USA Hockey which category you are in is a question for your league rather than for the age list; the next section is the detail. The mismatch is exactly when injuries happen.
 
 ### Non-check league etiquette
+
+**In short:** Ask your league exactly what contact it allows, then play the puck rather than the body and never step into anyone.
 
 **Whether your league is non-check depends on its adult classification, and the age list does not answer it — so ask.** USA Hockey names four adult classifications, one of them *"Adult non-check"*. Its Rule 604(a) bars body checking in the 12-and-under youth classifications and below, all girls' and women's classifications, and all non-check adult ones. ⚠️ **That list is a floor, not an answer:** a local body may ban checking in any classification, and 604(b) bans it whenever a Competitive Contact team plays a Body Checking team — so it can change per fixture. **How much adult rec hockey is played non-check is not something a rulebook records**, so ask your league, and get the answer in writing.
 

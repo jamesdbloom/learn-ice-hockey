@@ -39,7 +39,9 @@
 
 ### If you play in Britain, the IIHF column is yours
 
-This document is written to NHL rules. **If you play anywhere in Britain, follow the IIHF flags.**
+**In short:** If you play anywhere in Britain, follow the IIHF flags; in the Elite League, its own Casebook overrides them where they differ.
+
+This document is written to NHL rules.
 
 Every level of the game here runs on the **IIHF Official Rule Book**: the Elite League, the NIHL, recreational and junior hockey, university hockey and the GB teams. The **IHUK In-House Rules** adopt it for *"England, Wales, Scotland and Northern Ireland (the Home Countries)"* and for university hockey. They never name the Elite League, which rests on its own **EIHL Casebook** instead: *“For all rules not mentioned in the EIHL Casebook, the official 2026 - 2027 IIHF Rulebook and IIHF Situation Handbook will serve as the official ruling.”* That Casebook is read here only where it is cited — equipment, the physical fouls and the Elite League cells of [section 10](#10-rule-set-differences-that-actually-matter).
 
@@ -68,6 +70,8 @@ Most of the rules below say *"a player"* and never mention the goalie. **In the 
 **How to use this.** Under the five books that answer it, read a bare *"player"* as covering your goalie unless the rule carves him out. Under USA Hockey take the cautious reading: a **prohibition** binds your goalie until someone tells you otherwise, and a **permission** does not reach him until someone tells you it does.
 
 ### Periods and the clock
+
+**In short:** Check your own league's period length and clock; under USA Hockey a shorter period can also mean a shorter penalty.
 
 A game is **three periods of twenty minutes of actual play** (NHL and IIHF Rule 77.1; USA Hockey 636(a) gives 20 minutes as the *maximum*). The clock is **stop time** — it runs only while the puck is in play — so a period takes roughly 35–40 minutes of real time.
 
@@ -121,6 +125,8 @@ If the referee judges it deliberate, it is a **minor for delay of game** (63.2(i
 Where an *attacker* displaces the net, play runs on while the defending side has the puck, with no substitution bar (63.4). **Hockey Canada writes the same no-change bar, but only in U18 AAA, Junior and, at the Member's option, Senior** (6.1(g)). **No counterpart was found in USA Hockey**, where 610(d) stops play and penalises a deliberate displacement with no substitution consequence — though its ordinary change window closes at every stoppage anyway.
 
 ### Overtime
+
+**In short:** Read your league's overtime rules before the game, because formats differ widely and many British games have none.
 
 **NHL regular season** (Rules 84.1, 84.4): **five minutes of sudden-death 3-on-3**, then a **shootout** — three shooters a side, then sudden death, nobody shooting twice until everyone eligible has. A team that loses in overtime or the shootout keeps the point it earned by being tied after 60 minutes. Three-on-three is a different sport: open ice, possession is everything, and a turnover is very often a goal against within seconds. Pulling the goalie in regular-season overtime **forfeits the guaranteed point** if you lose while he is off (84.2), and once off he **cannot return on the fly** — only at a stoppage, or it is a bench minor.
 
@@ -177,6 +183,8 @@ Because **one skate on or behind the plane keeps you onside**, and the line is a
 
 ### Delayed offside and tagging up
 
+**In short:** When the arm goes up, leave the puck and its carrier alone, touch the blue line, and wait until everyone has.
+
 If attackers have preceded the puck into the zone but the defending team is **in a position to bring the puck out without delay or contact**, the linesperson raises an arm for a **delayed offside** instead of blowing the whistle (NHL Rule 83.3, signal 29.7). It is **nullified — arm down, play carries on** — if either:
 
 1. **Every attacker clears the zone** with skate contact on the blue line. This is **tagging up**. ⚠️ **The zone has to be empty before anyone re-enters, so the last man decides**: in every book a teammate who re-enters while another is still deep keeps the delayed offside alive (IIHF Situation 83.34; Hockey Canada Interpretation 11 to 6.11(b)). **Under USA Hockey 630(d) there is no delayed offside and no tag-up below Youth 15-Only, Girls 16U, High School and Adult** — the whistle goes at once. Once the arm is down, everybody may re-enter.
@@ -190,7 +198,7 @@ If attackers have preceded the puck into the zone but the defending team is **in
 
 Hockey Canada answers the hit only afterwards, making a deliberate play *"against an opposing player"* while knowingly offside an intentional offside — a faceoff in your own end, not a penalty, and no protection for the man you hit (6.11(d)(i)). USA Hockey's Casebook does tell linespersons to stop play at once where offside players chase the puck instead of tagging up, because *"[t]he potential for unnecessary body contact should not be allowed"* (Rule 630, Situation 39) — guidance on a delayed offside already in progress, with its own exception where a defender will plainly reach the puck first. *(Hockey Canada's 6.11(b) carries two separate i./ii. lists, so "6.11(b)(ii)" names both a tag-up clause and a stop-play clause; those labels are this page's, not the book's. Its thirteen interpretations to 6.11 mention no contact at all, and no CARHA casebook is held here.)* [Zone Entries](../systems/zone_entries.md) works this through from the forechecker's side.
 
-**You can also clear by going to the bench** — *"his players' bench"*: you are cleared *"when both skates are off the ice and the Linesperson judges him to have left the playing surface"*, and *"[i]f his replacement comes onto the ice in the attacking zone, while the delayed off-side is still in effect, he too must clear the attacking zone"* (NHL and IIHF 83.3). ⚠️ **Use your own bench door: under USA Hockey, jumping off anywhere else and being replaced is a bench minor for illegal substitution** (Casebook Rule 630, Situation 12). Hockey Canada names the same door, though it attaches no penalty to the wrong one (Interpretation 11 to 6.11(b)).
+**You can also clear by going to the bench** — *"his players' bench"*: you are cleared *"when both skates are off the ice and the Linesperson judges him to have left the playing surface"*, and *"[i]f his replacement comes onto the ice in the attacking zone, while the delayed off-side is still in effect, he too must clear the attacking zone"* (NHL 83.3; IIHF 83.3 to the same effect). ⚠️ **Use your own bench door: under USA Hockey, jumping off anywhere else and being replaced is a bench minor for illegal substitution** (Casebook Rule 630, Situation 12). Hockey Canada names the same door (Interpretation 11 to 6.11(b)), and if a substitute comes on before you are at the bench, 6.1(a) makes it a too-many-players bench minor (10.7(a)).
 
 **What to do as a player on a delayed offside:**
 
@@ -203,6 +211,8 @@ Hockey Canada answers the hit only afterwards, making a deliberate play *"agains
 If the puck is **shot into the zone** creating a delayed offside and that same shot goes in the net — directly or off the goalie, a player, the boards, the glass, equipment or an official — **the goal is disallowed**, even if the attacking team had cleared the zone in the meantime (Rule 83.4). The NHL, the IIHF and the PWHL allow one exception: the **defending team puts it in its own net** with no action by the attackers (83.4; PWHL 85.4). **Hockey Canada and CARHA write no own-goal exception** (6.11(b) and its Note 1; 72(e)(2)), so it is unsettled there, and **USA Hockey's Casebook rules it out**: asked *"May a goal ever be allowed during the course of a delayed offside?"*, it answers *"No"*, *"[e]ven if the defending team shoots, passes or deflects the puck into its own goal"* (Rule 630, Situation 41; its Playing Rules alone do not settle it). Under none of the three North American amateur books count on it.
 
 ### Where the faceoff goes
+
+**In short:** Carry it over the line rather than firing in a hopeful pass: a pass offside can send the draw to your own end.
 
 ![](diagram:offside-faceoff-location)
 
@@ -222,6 +232,8 @@ An offside that leads to a goal is reviewable by **Coach's Challenge** (NHL Rule
 > In Britain, ⚠️ **the IHUK In-House Rules remove on-ice review entirely: in EIH and SIHA competition there is no review during the game.** *"On-ice video review is not available in EIH or SIHA competition and may not be used by referees, official scorers, timekeepers, or any other game official"* (against IIHF Rule 37), and *"a Coach's Challenge is not permitted in EIH or SIHA competition"* (Rule 38) — the bar repeated against double minors (18.4), high-sticking (60.3), goaltender interference (69.1), goals (78.5, 78.6) and puck out of bounds (85.7). The referee's call on the ice is the call. Supplementary discipline can still use video afterwards (In-House Rule 28), even for an incident nobody penalised. ⚠️ **The Elite League runs the other way**: its Casebook keeps video review, in the arena or from the EIHL Situation Room (37.1, 37.2), and the Coach's Challenge (38.5). So wherever this document describes a call being reviewed or challenged, that is the NHL, the international game and the Elite League — not EIH or SIHA competition. See [UK and England Rules](uk_rules.md).
 
 ### Rule-set differences
+
+**In short:** Keep your trail skate's blade on the ice at the line; an airborne skate is onside in some books, offside in others.
 
 - **IIHF Rule 83** follows the NHL, plane and all. ⚠️ **The 2026/27 book closes the last gaps in the NHL's words** — *"For the purposes of this rule, a 'skate' is to be considered the blade of the skate only"*, and the puck carrier needs possession *"with their stick prior to both skates completely crossing the leading edge of the blue line"*. **Both change what you do**: only the blade counts, and pushing the puck across with a skate no longer earns the carrier's carve-out. The 2025/26 (Version 1.1) book has neither. 🇬🇧 **Whether that has reached Britain is unresolved here**: the Elite League is on the 2026/27 book by its own Casebook, while the In-House Rules name both editions and do not amend Rule 83 — so outside the Elite League, ask which edition your competition is on. The IIHF also adds that offside *"never arises until the puck has completely crossed the leading edge of the blue line"*.
 - **USA Hockey and Hockey Canada test skate contact, not a plane, so an airborne trail skate is offside there.** USA Hockey 630(a): offside when the player *"does not have skate contact with any part of the Neutral Zone or the blue line"*, one skate on the line being enough. Hockey Canada 6.11: *"Only the player's skate(s) that are in physical contact with the ice surface will be used in determining an off-side"*, and Interpretation 3 to 6.11(a) rules a skate above the line and not touching the ice **OFF-SIDE**. Under the NHL, the IIHF and the PWHL (85.1, *"blade of the skate only"*) the same skate held back over the neutral zone is onside.
@@ -249,6 +261,8 @@ This is the detail almost nobody knows. If you are carrying the puck through the
 
 ### Hybrid, no-touch and touch icing
 
+**In short:** Ask which icing your league uses before your first game, because it decides whether you chase a dump-in at all.
+
 There are three systems:
 
 - **Touch icing** (historical): a defending skater must physically touch the puck for icing to be called. Produces high-speed races into the end boards; largely abandoned for injury reasons.
@@ -272,6 +286,8 @@ The NHL adopted hybrid icing in **2013-14** and the IIHF in **2014**. **USA Hock
 
 ### The full wave-off list
 
+**In short:** Outside NHL, IIHF and PWHL rules, do not expect a goalie skating out or a touch after the line to wave icing off.
+
 **This is the NHL's list, from NHL Rule 81 — it is not a list of what every book waves off.** ⚠️ **Each item names its own book scope, so read the item, not the list.** Where an item does not mention a book, take it as *not found* rather than *not there*: the six icing rules have not been read clause by clause against one another. Under NHL Rules 81.1, 81.3, 81.5 and 81.6, icing is **not** called if:
 
 1. The team that shot it is **shorthanded** — in all six books, though three of them ration it; section 6 sets that out.
@@ -293,6 +309,8 @@ A puck **deflecting off an official does not automatically nullify** a potential
 
 ### The consequences
 
+**In short:** An icing hands them a draw in your end; assume your tired line cannot change unless your league allows it.
+
 Under NHL rules, an icing costs the offending team three things:
 
 1. **A defensive-zone faceoff**, with the **attacking team choosing the dot** (Rule 81.2).
@@ -313,6 +331,8 @@ Under IIHF 82.2(V) the referee *"will send the Players who have attempted to cha
 
 ### What this means for how you play
 
+**In short:** Clear it off the glass and out of the zone, and carry the puck over the red line before you dump it in.
+
 **Icing is the tax on a bad clear.** The punishment for an illegal clear is a defensive-zone draw with your most tired players stuck on the ice and no way to rest (an injured player can still be replaced).
 
 - **From your own end under pressure**, the safe clear is **off the glass and out** along the boards, or **high off the glass** — out of the zone, no icing, and very hard to intercept. A rim that carries all the way down the ice is what gets iced.
@@ -328,6 +348,8 @@ Under IIHF 82.2(V) the referee *"will send the Players who have attempted to cha
 ## 4. Penalties
 
 ### The types, and what each does to your team
+
+**In short:** Learn which penalties leave your team short, and find out what a major costs in your own book.
 
 | Type | Time | What it does to your team on the ice |
 |---|---|---|
@@ -369,6 +391,8 @@ What you do not inherit is an automatic suspension: the IIHF refers the case on,
 **Coincidental penalties** (Rule 19) — equal penalties to both teams cancel for on-ice strength. **One minor each at the same stoppage, with nothing else on the clock, is played 4-on-4** under the NHL and PWHL (19.1); if a team is already short, they are served with immediate substitution and the strength stays as it was. 🇬🇧 **Under the IIHF it is 5-on-5**, equal minors being substituted at once (19.1) — though Britain still reaches 4-on-4 by other routes.
 
 ### Stick fouls
+
+**In short:** Keep your feet moving and your stick on the puck; stick fouls come from reaching instead of skating.
 
 These are the calls that come from using the stick against a player instead of the puck. As a group they are the ones to expect most in adult recreational hockey — coaching craft rather than a count, because nobody has counted recreational-league calls, and the NHL figures rank single infractions, led by tripping, which no book files as a stick foul ([Body Contact and Battles](../technique/body_contact_and_battles.md)). The reason is simple: **they are what a tired or beaten player does instead of skating.**
 
@@ -414,6 +438,8 @@ These are the calls that come from using the stick against a player instead of t
 **Practically:** the whole stick-foul family collapses into one habit. **Stick on the puck, never stick on the player.** (Not *"stick on the ice"* — that is USA Hockey's cross-checking wording and not a safe harbour: a stick on the ice can still trip, hook or slash.) If your stick is horizontal and touching an opponent, you are one referee's judgement away from a penalty. The defensive alternative is your feet and your body position, which is why gap control and angling are defensive *skills* and reaching is a defensive *failure*. See [Body Contact and Battles](../technique/body_contact_and_battles.md) and [Defending the Rush](../systems/defending_the_rush.md).
 
 ### Body fouls
+
+**In short:** First find out whether you may hit at all; where you may, never hit from behind or to the head, or anyone not ready.
 
 *These are the ones you are most likely to meet — coaching craft rather than a count, and not a complete list. **Two fouls are deliberately not covered here: head-butting and kicking.** Every book penalises both and grades them very differently, so look them up in your own book rather than inferring anything from their absence. Check any penalty range below against your own book too.*
 
@@ -508,6 +534,8 @@ Third, **the onus rule on defenceless players is real.** If a man is facing the 
 
 ### Other infractions
 
+**In short:** Keep clears inside the rink, leave the puck alone after the whistle, and put a caught puck straight down.
+
 - **Delay of game — puck over the glass** (Rule 63.2) — ⚠️ **Never shoot or bat the puck over the glass from your own zone, never put it out of play deliberately from anywhere, and after the whistle leave the puck where it is.** The rule has **two limbs**. The strict-liability one (63.2(iii)) is a minor for shooting or batting the puck with **hand or stick, directly and non-deflected, out of the playing surface from your defending zone** — meant or not. ⚠️ **The deliberate one reaches the same minor from anywhere** (63.2(ii); IIHF 63.2(II)): any player who *"deliberately shoots or bats (using his hand, leg, foot, arm, or stick, etc.) the puck outside the playing area (from anywhere on the ice surface) during the play or after a stoppage of play"*. So **outside your own end you are safe only if it was an accident.** Every book here writes the deliberate limb with no zone limit (PWHL 65.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b)).
 
   **After the whistle, the amateur books go higher.** The NHL and IIHF stop at the minor (NHL 63.9). ⚠️ **USA Hockey runs a ladder to a match penalty**: a minor for an avoidable shot after the whistle (601(a)(4)); a **misconduct** for shooting the puck out of the playing area during a stoppage (601(c)(10)); a **game misconduct** if it is done in protest (601(d)(7)) or towards an official or a spectator (601(d)(9)); and a **mandatory match** for shooting it *"directly at an official or spectator in a manner that recklessly endangers"* them (Note to 601(d)). Which of 610(c)'s minor and 601(c)(10)'s misconduct governs the plain after-whistle clear, the book does not say and no Casebook situation decides — assume the misconduct is available, and do not read it as ten minutes, because affiliates may shorten it outside adult play (404 Note).
@@ -543,6 +571,8 @@ Third, **the onus rule on defenceless players is real.** If a man is facing the 
 
 ### Broken sticks
 
+**In short:** When your stick breaks, drop it at once and play on without it until you can get a replacement.
+
 This is a penalty, it catches beginners constantly, and almost nobody is taught it.
 
 **A broken stick is one the referee judges *"unfit for normal play"*** (Rule 10.3) — a judgement, not a definition, so a stick you think is still usable may not be.
@@ -571,6 +601,8 @@ Rule 411 adds a season-long ladder over majors for butt-ending, cross-checking, 
 **The NHL counts game misconducts by category**: a second in the same category within 41 regular-season games is the trigger for an automatic one-game suspension for a physical foul (23.6) or a stick foul (23.5), while its General Category takes a third, or a second in the playoffs, with no reset clock (23.3); a third major in one game counts there, *"Third major penalty in a game"* being on that list.
 
 ### What actually gets called at rec level
+
+**In short:** In rec hockey, staying out of the box mostly means not reaching with your stick and not arriving late.
 
 **The order below is coaching craft, not a count of calls.** Nobody has counted recreational-league penalties. The nearest counted data is the NHL's — 400 games of 2024-25 and 2,967 penalties, computed from the play-by-play feed in [Body Contact and Battles](../technique/body_contact_and_battles.md) — where, of the seven infraction types counted (71.4% of all calls between them), tripping led at 16.6%, hooking was second at 12.1% and roughing, which is not a stick foul, third at 12.0%. The NHL is not your league, so that neither confirms nor refutes the order below. The calls to expect, roughly most common first:
 
@@ -667,6 +699,8 @@ Coincidental minors do not make either team shorthanded, so they do not expire o
 
 ### Shorthanded teams may ice the puck — with two exceptions
 
+**In short:** While you are actually below their strength you may usually ice the puck, but check whether your level allows it.
+
 **A team below its opponent's numerical strength may shoot the puck the length of the ice with no icing called** (Rule 81.6). That is the core of penalty killing: a clear costs you nothing but the time it takes them to bring it back. **It is not unconditional.**
 
 **The test is a head count, not a clock.** You are exempt while you are **below the opponent's on-ice numerical strength**, and every book writes it that way (NHL and IIHF 81.6 and 16.2, USA Hockey 624(b)(1), Hockey Canada 6.7(b), and CARHA 65(d), *"at the instant the puck is shot"*). **A player whose own penalty has expired counts as back on the ice even while he is still sitting in the box** (NHL and IIHF 81.6; USA Hockey 624(b)(1); Hockey Canada Note 1 to 6.7(b); CARHA Note 2 to 65(a)) — that is about him, not about a teammate still serving a live penalty. **So on a 5-on-3 the first expiry changes nothing**: you are 4-on-5, still short, still exempt. Hockey Canada says it plainest — the player is on the ice *"for the purpose of equal numbers (or not)"* (Interpretation 3 to 6.7(b)). ⚠️ **And the test runs your way at the other end: a clear released *before* the penalty expires is not icing even if the time runs out while the puck is travelling** (NHL and IIHF 81.6; USA Hockey 624(b)(1); Hockey Canada and CARHA test the instant of the shot). So get the clear away before a kill expires.
@@ -718,6 +752,8 @@ The **goal crease** is the light-blue area in front of the net — **8 feet wide
 
 ### Goaltender interference
 
+**In short:** Avoid all contact with the goalie, in or out of his crease, and never block his way back to it.
+
 **The principle (NHL Rule 69.1) is not what most players think:** an attacking player's **position, whether inside or outside the crease, should not by itself determine** whether a goal is allowed. Goals come off only if **(1)** an attacker, **by his positioning or by contact**, impairs the goalie's ability to move freely in his crease or defend his goal, or **(2)** an attacker initiates **intentional or deliberate contact** with him, inside or outside the crease. **That "only if" is a ceiling, not a direction**: it does not say a goal comes off whenever positioning impairs the goalie. The sentence in 69.1 that actually disallows a goal is keyed to the crease — an attacker who *"enters the goal crease"* and, by his actions, impairs the goalie. The IIHF writes the same rule. Every book that settles the question in its rule text or glossary puts the red crease line inside the crease, though the IIHF's own Situation 5E then allows the goal to a screen planted on it; [Rink Map](rink_map.md) sets that clash out.
 
 **Inside the crease** (Rule 69.3): if an attacker initiates contact with the goalie — **incidental or otherwise** — and a goal is scored, **the goal is disallowed.** And if the goalie, establishing his position, makes contact with an attacker in the crease that impairs him, the goal is disallowed too, **even if the attacker vacates at once** (NHL Reference Table 14, Situation 6C, and the IIHF the same; IIHF Situation Handbook 69.6). Whether a penalty goes with that one is stated nowhere. ⚠️ **None of that makes giving ground optional.** If the attacker does not **immediately give ground** after the goalie's contact, 69.3 disallows the goal and penalises him — **a minor under the NHL's text, *"the appropriate penalty"* under the IIHF's, with no cap**. Rule 69 reaches a major in both books (69.2), though no automatic game misconduct attaches to it under the IIHF.
@@ -760,6 +796,8 @@ In Britain, ⚠️ **do not plan on two minutes.** The books' own tables answer 
 
 ### Screening is legal outside the crease
 
+**In short:** Screen the goalie from outside the crease, without contact, and keep your skates off the blue paint and its red line.
+
 **Standing in the goalie's line of sight, without contact and outside the crease, is normally legal.** The part of 69.3 that reaches a screen needs three things at once — a *"significant position within the goal crease"*, obstructing his vision **and** impairing his ability to defend — and a significant position means your body, *"or a substantial portion thereof, is within the goal crease for more than an instantaneous period of time"*. ⚠️ **That is the screen paragraph, not the whole rule**: any contact with a goalie in his crease costs the goal on its own (69.3's first paragraph). So what makes a screen illegal is being in the crease and what your position does there — screening itself is not the offence.
 
 ![](diagram:screen-the-goalie-sightline)
@@ -773,6 +811,8 @@ In Britain, ⚠️ **do not plan on two minutes.** The books' own tables answer 
 This is the single most valuable rules fact for a forward. **Get in the goalie's eyes; keep your skates out of the blue paint and off the red line around it.** See [Offensive Zone Play](../systems/offensive_zone_play.md) and [Winger](../positions/winger.md).
 
 ### The trapezoid (goalkeeper's restricted area)
+
+**In short:** As a goalie, play pucks behind your net only inside the trapezoid if your league has one, and never smother them in the corners.
 
 This section is the **penalty**; the geometry — the NHL figures, the IIHF metric equivalents and where the lines run — belongs to [Rink Map](rink_map.md).
 
@@ -804,6 +844,8 @@ This section is the **penalty**; the geometry — the NHL figures, the IIHF metr
 
 ### Freezing the puck
 
+**In short:** As a goalie, freeze the puck only under real pressure; a soft freeze on a routine dump-in can cost you like an icing.
+
 The goalie may cause a stoppage, but only in defined circumstances. Holding the puck with the hands **for more than three seconds** unless actually being checked, throwing it forward, dropping it into his pads or onto the goal net, racing out of the crease to beat an attacker to a loose puck and then jumping on it, and piling snow or obstacles near the net are each a **minor** under the **NHL and IIHF** books (Rules 63.2, 67.3) — and the last becomes an **awarded goal** once he has been replaced for an extra attacker (67.5). Coming out to cut down the angle, making the save and covering straight off it is legal — **but play it and then fall back on it because an attacker is bearing down, and it is a minor** (IIHF Situation 63.1).
 
 > **One of these reads far stricter than it is enforced.** NHL 63.2(vii) penalises a goalie who deliberately falls on or gathers the puck in his own crease *"unless he is actually being checked by an opponent"*; read literally, that would outlaw the routine freezes you see in every game, and no game is officiated that way. [Goaltender](../positions/goaltender.md) sets out how it interacts with the *"unnecessary stoppage"* standard of 67.3(ii) and with the published pressure tests in Hockey Canada (Interpretation 3 to 10.1(a)) and USA Hockey (610(b)). ⚠️ **The IIHF publishes one too, and it is Britain's book**: a goalie who covers with no pressure on him, *"in an obvious attempt to get a stoppage of play"* while the other team changes, should take the delay-of-game minor (Situation 67.8). ⚠️ **Do not act on the bare literal reading** — and if your league's referees are strict about it, find out early.
@@ -812,15 +854,21 @@ The goalie may cause a stoppage, but only in defined circumstances. Holding the 
 
 ### The goalie playing the puck
 
+**In short:** Pass and rim the puck like a skater, but stay off your bench at a stoppage unless replaced; some books allow it with permission.
+
 Beyond the trapezoid and the red line, the goalie is a skater with the puck — he can pass, rim and set up a breakout. The rules that constrain him:
 
 - **Hand passes** by the goalie in the defending zone are legal, like anyone else's (Rule 79.2).
 - He **cannot take a faceoff** (Rule 76.1).
 - His **minor is served by a teammate** who was on the ice at the stoppage, designated by the coach through the captain, and that substitute may not be changed; **a penalised player may not serve it** (Rule 27.1).
-- He may **not go to his bench during a stoppage** for a stick, equipment or instructions **without the referee's permission** — otherwise he must be replaced at once or his team takes a bench minor (NHL 27.6; IIHF 27.5).
+- He may **not go to his bench during a stoppage** for a stick, equipment or instructions **without the referee's permission** — otherwise he must be replaced at once or his team takes a bench minor (NHL 27.6; IIHF 27.5; PWHL 27.6; USA Hockey 205(c)). **Under Hockey Canada and CARHA he may go only if replaced** (Hockey Canada 10.1 xiv; CARHA 47(c) Note).
 - He takes a **minor for leaving the immediate vicinity of the crease during an altercation** (NHL 27.6; IIHF 27.5) — unless the fight is *"in or near the goalkeeper's crease"*, when the referee *"should direct the goalkeeper to a neutral location and not assess a penalty"*, or he was already heading to the bench for an extra attacker. That is why goalies stay in their net during scrums.
 
 > **Rule numbers.** ⚠️ **The 27.x numbers shift between books, so following the wrong one lands you on the wrong offence**: the NHL's 27.6, 27.7 and 27.8 are the IIHF's 27.5, 27.6 and 27.7 — so in the IIHF book, Britain's, 27.7 is the trapezoid, not the red line. [Goaltender](../positions/goaltender.md) has the full numbering.
+
+### When a fight breaks out
+
+**In short:** Stay in your crease unless the referee sends you elsewhere, and never join in, to fight or to break it up.
 
 **When a fight breaks out beside the crease, stay in your net, and if you must move, get the referee's permission first** — the books part on whether you need it. The NHL, IIHF and PWHL have the referee send the goalie to a neutral location with no penalty. USA Hockey's minor is for failing to go where the referee sends you (615(e)), and its Casebook lets a goalie leave *"to remain out of the altercation"* — ⚠️ **but *"if the Referee does not give their permission and the goalkeeper gets involved in the altercation outside of the crease, the minor penalty must be assessed"*** (Rule 615, Situations 26 and 27). **Hockey Canada is strictest**: going to the bench *"on their own accord"* is a minor, and with the referee's permission it is not (7.10(a) and its Interpretation 1; 7.10(d)); CARHA puts a minor on any goalie who *"leaves the goal crease during a fight"* (37(c)).
 
@@ -837,6 +885,8 @@ Beyond the trapezoid and the red line, the goalie is a skater with the puck — 
 **Every faceoff is taken at one of nine marked spots** — one at centre ice, four in the neutral zone, four in the end zones — and **never within 15 feet of the goal or the side boards** (Rule 76.2). What is painted at each is Rule 1.9, in [Rink Map](rink_map.md).
 
 ### Why the draw is where it is
+
+**In short:** The draw goes into the zone of whoever caused the stoppage; when your team gets to pick the dot, pick deliberately.
 
 ![](diagram:faceoff-where-the-draw-goes)
 
@@ -875,6 +925,8 @@ One more location rule costs you the zone you have just earned: **if a point man
 
 ### The two things you must not leave without
 
+**In short:** Wingers: keep your skates outside the circle and hash marks until the puck drops, or your centre can be thrown out.
+
 **1. A winger encroaching gets the *centre* thrown out of the draw.** If any player other than the taker moves into the circle before the drop, *"the offending team's player taking the face-off shall be ejected from the face-off circle"* (Rule 76.6), and a **second violation by the same team on the same draw is a bench minor** (76.7). Keep both skates outside the circle and the hash marks until the puck is down — **touching the line is allowed, crossing it is not** — and your stick may be inside if it touches neither an opponent nor his stick. Losing your best faceoff man because a winger leaned in early is the most consequential rules mistake a winger makes, and it is entirely avoidable.
 
 **2.** ⚠️ **The IIHF now agrees, but one IIHF difference survives, and it deletes a technique.** The 2025/26 IIHF book only warned the team; **the 2026/27 edition ejects the centre in the NHL's words** (76.6), and replaces him where the older book warned (76.3, 76.4). **In Britain the IHUK In-House Rules 2026-27 settle it anyway**: *"With the exception of face-offs following icings, the linesperson shall immediately replace the centre for all violations"* — though they do not name the Elite League, whose Casebook writes no Rule 76, so an Elite League draw runs under IIHF Rule 76 unamended.
@@ -908,6 +960,8 @@ The NHL uses **four officials**: **two referees** (orange armbands) and **two li
 
 ### The signals you should recognise
 
+**In short:** Watch the raised arm: from a linesperson at the blue line it means tag up, from a referee a delayed penalty.
+
 From Rule 29 — the ones with immediate consequences for what you do next:
 
 | Signal | What it looks like | What it means for you |
@@ -929,6 +983,8 @@ Infraction signals worth knowing on sight: **hooking** (tugging both arms toward
 
 ### Talking to officials
 
+**In short:** Never touch an official, and speak only when invited, at a natural break, by asking rather than telling.
+
 **Never put a hand on an official.** ⚠️ **Deliberate force against one is a match penalty under USA Hockey, Hockey Canada and CARHA, and a game misconduct with a suspension under the NHL, the PWHL and the IIHF — automatic in the NHL and the PWHL, at least ten and four games respectively for force without intent to injure** (Rule 40; USA Hockey 601(e)(1); Hockey Canada 11.5(c), even *"without causing injury"*; CARHA 71(a), for any player who *"intentionally touches, holds, or pushes"* a Referee).
 
 Under **Rule 39 (Abuse of Officials)** and **Rule 75 (Unsportsmanlike Conduct)** the ladder is usually **minor, then misconduct, then game misconduct** — but the books say *"In general"* (NHL 39.4(ix), 39.5(vii), 75.4(v), 75.5(vi); IIHF 39.4(IX), 39.5(VII), 75.4(V)), ⚠️ **so do not count on a free minor first.**
@@ -948,6 +1004,8 @@ See [Team Play and Culture](../off-the-ice/team_play_and_culture.md) and [Mental
 ---
 
 ## 10. Rule Set Differences That Actually Matter
+
+**In short:** Before your first game, find out which rule book your league plays and ask whether checking is allowed in your division.
 
 The differences below are the ones that change **what you should do on the ice**. Everything else is trivia.
 
@@ -1084,7 +1142,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 3. **Do not ice the puck to buy a rest** — the NHL and IIHF books, and so Britain, bar the change after it. ⚠️ **USA Hockey allows the change only inside the window that closes at every stoppage.** **On the kill, clear it only while you are shorthanded** — and under USA Hockey, not at all below Youth 15-Only, Girls 16U, High School and Adult.
 
-4. **When they score on your major, keep killing** — a goal ends a minor you are short for, never a major. **Play as though one major ends your game, because it very often does**: always under Hockey Canada, almost always under CARHA, ⚠️ **always in British women's hockey**, and for many fouls under the IIHF and the NHL.
+4. **When they score on your major, keep killing** — a goal ends a minor you are short for, never a major. **Play as though one major ends your game, because it very often does**: always under Hockey Canada, almost always under CARHA, ⚠️ **always in British women's hockey**, and for many fouls under the IIHF and the NHL. **Never throw a punch, gloved or not:** under USA Hockey one thrown at an opponent is fighting, which may be called with the gloves still on, and ends your game.
 
 5. **Keep your hits below the shoulders.** In every book but the NHL a head hit can end your game even short of an attempt to injure, and under USA Hockey even a careless one must. ⚠️ **If a hit lands on your head, come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
 
@@ -1096,7 +1154,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 9. **Screen the goalie from outside the crease, without contact, and never stand in his road back to it.** Keep your skates off the blue paint and its red line. ⚠️ **Contact with the goalie can end your game, and a charge on him must** — always under Hockey Canada, under CARHA in his crease or if he is hurt, and under USA Hockey if it is reckless.
 
-10. **Find out which rule set you play under before your first shift, and whether your classification allows body checking at all** — where it does not, the check itself is the penalty. ⚠️ **In Britain, ask which IIHF edition too; in North American adult rec hockey, ask whether your league is CARHA-affiliated**, because there every major but one ejects you.
+10. **Find out which rule set you play under before your first shift, and whether your classification allows body checking at all** — where it does not, the check itself is the penalty. ⚠️ **In Britain, ask which IIHF edition too, and wear your neck guard every shift; in North American adult rec hockey, ask whether your league is CARHA-affiliated**, because there every major but one ejects you.
 
 ---
 

@@ -91,6 +91,8 @@ Never: Hold the puck in your own zone longer than you need to — your first loo
 
 ### Defensive Zone: Carrying the Puck — Under Pressure
 
+**In short:** Puck on your far side, feet moving, and know your out before it arrives; a rim or reverse beats forcing a pass through traffic.
+
 ```facts
 Position: Against the boards, with the puck on the far side of your body from the checker
 Technique: Side-on, backside into them, feet wide, low and moving — a stationary player on the wall gets pinned. Chest to the boards is the fallback for when you are already facing the wall, not the target
@@ -140,6 +142,8 @@ Goal: Don't lose the puck in a dangerous position. Get it to safety
 
 ### Defensive Zone: Pressuring an Opponent with the Puck
 
+**In short:** Under a low zone collapse, stay high between their point man and the slot rather than chasing into the corner; learn your team's system.
+
 ```facts
 Position: High in the defensive zone under a low zone collapse, covering the opposing defenceman at the point on your side, between them and the slot
 Convention: Staying high out of the corner is the low zone collapse job, not a law — under man-on-man you follow your check in, under a hybrid only below the man/zone line, which teams draw at the dots, the hash marks or the tops of the circles, so learn your team's version
@@ -180,6 +184,8 @@ Risk: Under a low zone collapse, chase into the corner and the opposing defencem
 ---
 
 ### Defensive Zone: Without the Puck — Ready to Break Out
+
+**In short:** In a swing breakout, stay high until your team wins the puck, then come down the wall as the first outlet, calling for it.
 
 ![](diagram:winger-high-then-down-the-wall)
 
@@ -242,6 +248,8 @@ Read: On a 3-on-2 with no lane to the net, pull up at the half-wall and let the 
 ---
 
 ### Neutral Zone: Carrying the Puck — Under Pressure
+
+**In short:** Don't stickhandle through two players: dump when your support is late, pick the right kind of dump, and chase it on an angle.
 
 ```facts
 Position: Along the boards in your lane
@@ -317,6 +325,8 @@ Goal: Prevent a clean entry — force a difficult pass, force them wide, or forc
 ---
 
 ### Neutral Zone: Without the Puck — Filling Your Lane on the Rush
+
+**In short:** Arrive at the blue line in stride and at full speed, head up, with a trail skate dragging on the line to stay onside.
 
 ```facts
 Position: In your lane, moving toward the offensive zone
@@ -408,6 +418,8 @@ Goal: Maintain possession in the offensive zone and keep the pressure going
 
 ### Offensive Zone: Pressuring an Opponent with the Puck
 
+**In short:** As F2, seal the carrier's next escape and pin the puck, not the player; as F3, stay higher and cover the middle.
+
 ```facts
 Position: As F2, in behind F1 on the strong side; as F3, higher in the zone covering the middle and the weak side in the 2-1-2 default, or puck-side in the stacked variant
 Key: F1, F2 and F3 are roles set by order of arrival — if you dumped the puck in and got there first, you are F1
@@ -447,6 +459,8 @@ Your role depends on which side of the ice the puck is on, and on who got there 
 ---
 
 ### Offensive Zone: Without the Puck — Getting Open and Crashing the Net
+
+**In short:** Get open on your side for a shot or one-timer, and crash the net on every shot toward it, around the goalie, never through him.
 
 ```facts
 Position: On the half-wall, in your side's faceoff circle, or at the side of the net and the goalmouth
@@ -553,6 +567,8 @@ A quick reference for situations outside the zone-by-zone framework above.
 
 ### Faceoffs
 
+**In short:** Read the draw and react instantly, and stay still behind your hash marks, hands to yourself, until the puck lands.
+
 ```facts
 Position: At the hash marks — one winger on the inside hash facing the slot, one on the outside hash facing the boards
 Convention: The winger whose natural side matches the faceoff location usually takes the outside hash, but assignments vary by team, so ask
@@ -603,6 +619,8 @@ The centre takes the draw; you line up at the hash marks — one winger on the *
 
 ### Power Play (your team has the man advantage)
 
+**In short:** From the half-wall, move the puck quickly to whichever option the kill leaves; at the net front, screen without touching the goalie.
+
 ```facts
 Position: Almost always the half-wall or the net front — the formations are in Special Teams
 Targets: From the half-wall you have four options: the point, the bumper, the net front, and the far half-wall through the seam
@@ -630,6 +648,8 @@ One thing worth asking rather than assuming: **the bumper is *usually* the centr
 **What it costs.** NHL and IIHF 69.2 and PWHL 71.2 give a minor or a major for deliberate contact with a goalie *"whether or not the goalkeeper is inside or outside the goal crease, and whether or not a goal is scored"*, and the same books' 42.1 and 69.4 (71.4 in the PWHL) call for a penalty for unnecessary contact *"in every case"*. ⚠️ **Under USA Hockey that contact is charging** (607(d) Note 1), which writes no bare minor — a minor plus a misconduct at the least, a mandatory major plus a game misconduct if the charge is reckless (607(b)), and a match to plan on (602(a)). ⚠️ **The red line around the crease counts as crease** under IIHF Rule 1.7, the Note to USA Hockey 625(b) and the Hockey Canada and CARHA glossaries, while the NHL's and IIHF's reference tables allow a goal to a player planted on it. Off the line holds either way.
 
 ### Penalty Kill (your team is shorthanded)
+
+**In short:** Hold your spot in the shape rather than chase the perimeter, block from close on your feet, and clear it whenever you get it.
 
 ```facts
 Position: In a box you are one of the two high players covering a point; in a diamond you take a middle spot on a half-wall; in a wedge+1 you are often the "+1"
@@ -664,6 +684,8 @@ Stay tight and force the opposing point into low-percentage shots. Block **from 
 **Two more wrinkles.** NHL 81.6 and PWHL 83.6 take the exemption from a team killing a *major* only at expiry, not during the penalty, and only where the team has left nobody on the penalty box to come out — and only until the next stoppage — so clear it freely through the five minutes. Hockey Canada takes the count *"at the instant the puck is shot"* (6.7(b)), and a team stops being shorthanded once the penalty time expires, *"irrespective of whether or not the penalized player has left the Penalty Bench."* [Special Teams](../systems/special_teams.md) covers it, and [Faceoffs](../systems/faceoffs.md) sets the books side by side, the rec-league one included.
 
 ### Icing
+
+**In short:** Dump from past the centre red line, and where your book runs an icing race, race for the puck, not the dot.
 
 ```facts
 Rule: The dot is a decision deadline, not a finish line — NHL and IIHF 81.1 and PWHL 83.1 judge who would first touch the puck, by the time a skate reaches the dots; USA Hockey 624 runs no race outside sled, CARHA 65 none, Hockey Canada 6.7(e) only in U18AAA, Junior and, at the Member's option, Senior
@@ -711,6 +733,8 @@ The one that costs wingers goals: **changing while the puck is still in your def
 Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are in [Game Management](../systems/game_management.md).
 
 ### Backchecking
+
+**In short:** Sprint back, pick up the trailing forward with your stick in the passing lane, and never finish a check on a turned back.
 
 ```facts
 Action: Sprint back the moment your team loses the puck — often faster than the opposing forwards — and once set, take your defensive-zone role: cover the point, be ready to break out

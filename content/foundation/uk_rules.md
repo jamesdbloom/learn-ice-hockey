@@ -80,6 +80,8 @@ The In-House Rules' Introduction says so in terms: *"IHUK and the British Univer
 
 ## Who governs what
 
+**In short:** Where an older document says EIH or SIH, read IHUK, and treat those older policies as still in force.
+
 > **The playing rules have caught up with the merger. The governance document
 > has not.** On **30 June 2026** England Ice Hockey, Scottish Ice Hockey and Ice
 > Hockey UK merged into a single body covering all four home nations — see
@@ -122,6 +124,8 @@ The In-House Rules' Introduction says so in terms: *"IHUK and the British Univer
 
 ## Which IIHF edition you are playing, and where the two differ
 
+**In short:** Read every IIHF rule, especially fighting and high-sticking, in the edition your competition actually plays.
+
 **Which IIHF edition these documents quote.** Every IIHF rule here is the **2025/26** book's (Version 1.1, July 2025) unless flagged otherwise. The 2026/27 edition differs in real ways — its faceoff rules, for instance, replace the offending centre where the old book warned (see [Faceoffs](../systems/faceoffs.md)). Only these rules have been checked against it: 1.7, 20.4, 20.5, 28.1, 46, 60, 63.2, 64, 69, 70, 76, 82.2, 87.1 and Appendix IV. ⚠️ **Check the current book before you rely on a detail — and in the Elite League, which plays the 2026/27 book, check it every time.**
 
 **The renumbering is the trap, and Rule 46 (fighting) is where it bites.** Every Rule 46 number here is the 2025/26 book's. The 2026/27 book reorders the whole rule, so the same number can mean something else — most sharply **third player in**, which is **46.7** in 2025/26 and **46.14** in 2026/27, where **46.7 becomes fighting off the playing surface**. The other moves: instigator 46.3→46.10, aggressor 46.4→46.2, sucker punch 46.5→46.13, altercation 46.2→46.3, clearing the area of a fight 46.8→46.4, fighting outside the periods 46.9→46.8, fighting off the playing surface 46.11→46.7, helmets 46.12→46.6, fighting prior to the drop of the puck 46.10→46.9, jerseys 46.13→46.11. ⚠️ **Look a fighting rule up by its heading, not its number.** Even the Elite League's Casebook numbers two of its Rule 46 clauses wrong against the book it adopts *(§Fighting)*.
@@ -151,6 +155,8 @@ So ⚠️ **under the new book, a stick never carried high can still be the four
 These are the ones worth knowing before you play. Everything not listed here is enforced in line with the IIHF book.
 
 ### Neck protection is mandatory, for everyone — and the In-House Rules give no warning
+
+**In short:** Wear an unaltered neck guard correctly every time you are on the ice, and assume no warning before the penalty.
 
 This is the sharpest difference between Britain and North America, and it is the one most likely to catch out a reader who has learned the game from North American material.
 
@@ -214,6 +220,8 @@ That threshold sits **outside IIHF Rule 1.2 altogether**: the book fixes the len
 This matters more than it sounds. [Time and Space](../hockey-iq/time_and_space.md) explains what rink size does to the game: on a smaller sheet the distances shrink, the angles do not, and everything arrives sooner. Check your rink before you assume the geometry in any document applies to it.
 
 ### Facial protection and helmet fit
+
+**In short:** Wear the face protection your age and competition require, strap it snug, and leave the ice if your helmet comes off.
 
 - **Women's hockey only:** In-House Rule 102 says *"Players may wear a half visor only from the start of the season following their 18th birthday"*. Read it as a relaxation of IIHF Rule 102.1, which requires *"full-face protection (full-visor, or cage facial protection)"* of every senior woman. ⚠️ **That is the natural reading, but nothing published states it**, and 102.1 closes: *"Players without the mentioned protection are not allowed to participate in a game."* **A full face satisfies both readings; nothing here advises dropping to a half visor.** In IHUK junior hockey the question does not arise: every junior from U10 to U19 wears full-face protection, the U19 National Division *"regardless of being 18+"*.
 - All players in **SIHA Recreational or SIHA University** hockey must wear at minimum a half visor, *"regardless of their date of birth"* (Rule 9.7).
@@ -288,6 +296,8 @@ The IIHF book already required a broken stick to be dropped — its Rule 10.3 le
 
 ### Fighting
 
+**In short:** Do not fight, even when someone else starts it; under every British rule book, fighting back can still be penalised.
+
 In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a **five-minute major**. In NIHL, NIHL1 and NIHL2, a fighting major in the **last five minutes of regulation or in overtime also carries an automatic game misconduct**.
 
 **New for 2026-27, the unwilling combatant** *"may be awarded (at the referee's discretion) a minor OR a major penalty (2 OR a standalone 5 without a game misconduct)"*. So a fight you did not want can still cost five minutes. **Except late in an NIHL game:** *"[a]ny fighting major"* in the last five minutes or overtime brings an automatic game misconduct, the unwilling combatant's included. **In women's hockey, the WNIHL included, plan on any major ending your game anyway** — In-House Rule 101 *(§Age categories are British, and unisex)* — since Section 6 never says whether its *"NIHL (all leagues)"* scope reaches a women's fixture.
@@ -305,6 +315,8 @@ In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a **five-minute major*
 **Keep your jersey on and tie it down.** Taking it off before an altercation is a minor plus a game misconduct. Fighting without it tied down is a minor; if it comes completely off, a minor plus a game misconduct — the game misconduct dropping where the tie-down held or an opponent or linesman took it off. Every fighting penalty carrying a game misconduct, and every instigator or aggressor penalty, goes to the EIHL Department of Player Safety for possible further suspension. ⚠️ **The Casebook's Rule 46 numbers do not match the IIHF book's, and it prints 46.2 twice** — look any of this up by heading, never by number.
 
 ### Leaving the bench or the penalty box during an altercation
+
+**In short:** When any altercation starts, stay on the bench or in the box until an official releases you, even if your penalty has expired.
 
 **This rule applies at every age and in every competition.** [Body Contact and Battles](../technique/body_contact_and_battles.md) sets the rule books side by side; this is the British half.
 
@@ -325,6 +337,8 @@ In NIHL (all leagues), SNL and BUIHA Varsity, fighting is a **five-minute major*
 **What to do is one sentence.** If an altercation starts while you are on the bench or in the penalty box, you stay where you are until an official releases you — not to help a teammate, not to change, and not because your penalty has just expired.
 
 ### Overtime is not universal
+
+**In short:** Ask before the game whether your fixture plays overtime and how its shootout works, because British competitions differ.
 
 Outside the Elite League, which writes its own rule (below), In-House **Rule 84** provides that overtime *"is only played in NIHL fixtures and in SNL fixtures where specifically provided for in competition regulations."* Many games simply end level.
 
@@ -365,6 +379,8 @@ The In-House Rules add a note worth quoting: *"Junior age categories are unisex 
 
 ### U12 is a different game, and neither British rule book says so
 
+**In short:** In IHUK's U12 leagues, clear the zone when called offside, leave the puck at the change buzzer, and stay on your line.
+
 **Neither British rule book sets a playing format for U12.** IHUK's *Junior Rules of Competition* does: U12 is *"Full ice, non-checking, running clock"*, and *"U12: Playing format, including line changes, off-side rules, and penalty administration—is set out in Appendix D."*
 
 **Appendix D is where U12 hockey actually lives**, and five things in it change what you do on the ice:
@@ -380,6 +396,8 @@ The In-House Rules add a note worth quoting: *"Junior age categories are unisex 
 **These formats are IHUK's own junior leagues and nothing beyond them.** At **U14, U16 and U19** the same table returns to *"Full ice, checking, stop clock"* and the ordinary IIHF game. Nothing here settles a Scottish competition outside that structure, a tournament somebody else runs, or the EIHL. ⚠️ **Read the current season's Appendix D, never an old copy** — these documents are revised in place.
 
 ### A first major can end your game, and adults are not exempt
+
+**In short:** Play with less margin than NHL habit gives you: under the IIHF book a single major can end your game.
 
 Junior hockey, and women's hockey at every age, are covered above *(§Age categories are British, and unisex)*. **This is about you as an adult in any competition.** It is the IIHF's own text, not a British amendment, so it binds wherever the IIHF book is played.
 
@@ -407,6 +425,8 @@ Both table numbers are the 2025/26 book's; the 2026/27 book merges them into one
 
 ### Team sheets and bench staffing
 
+**In short:** Get your team list to the referees on time, and check your bench carries the qualified coaches your competition requires.
+
 The official team list must reach the referee crew *"no later than 20 minutes before the scheduled face-off"*, and only listed players are eligible. Late submission is a bench minor for delay of game, *"to be served at the start of the game or at the first stoppage if identified later"* — so it is served even where the omission is only spotted after the game has begun.
 
 For **IHUK-sanctioned games**, benches must carry a **Level 2 or higher non-playing coach aged 18+**, plus one more coach at minimum Level 1. The rule opens by scoping itself — *"For all IHUK-sanctioned games (except where competition regs state otherwise)"*, where the 2025-26 edition said EIH-sanctioned — and there are three documented carve-outs:
@@ -420,6 +440,8 @@ A team manager may sit on the bench but does not count toward the requirement. O
 **None of that describes an Elite League game.** The *EIHL Casebook*'s **Rule 5** sets a game-day roster of twenty — at most eighteen skaters and two goalies, at least twelve and two — and at most eight team officials on the bench: *"[i]f not listed on the official score sheet, no other persons will be permitted on the players benches."* It sets no coaching-qualification ladder. Its **Rule 7** adds a bench minor for naming the wrong starting line-up, raisable only *"before the second face-off in the first period takes place."*
 
 ### What medical cover you can expect at the rink, and what to ask for
+
+**In short:** Before you need it, know the first aider, the phone and the plan, and learn every red flag that means calling 999.
 
 **What a venue must have, below, is England Ice Hockey's rule, written for England and Wales.** No document read here says whether it binds an Elite League fixture or a club in Scotland or Northern Ireland. Nothing else read sets any first-aid, ambulance or emergency-plan requirement on a venue; the WNIHL *Rules of Competition* only say clubs *"are strongly recommended to appoint a registered and qualified medical practitioner"*. Every registered coach must hold a Basic First Aid certificate, UK-wide, but that tells you nothing about the building. ⚠️ **So wherever you play, ask your club what cover your rink actually has.**
 

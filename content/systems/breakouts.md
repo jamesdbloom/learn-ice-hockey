@@ -96,6 +96,8 @@ The breakout connects to the other half of the transition chain. The reference w
 
 ### When a clear is the right play
 
+**In short:** Default to the controlled exit and clear when the read says so: a clear costs possession, a slot turnover costs a goal.
+
 ```facts
 Mindset: Clearing is a decision, not a reflex
 Read: Clear when you are outnumbered low with no outlet, when the alternative is a turnover in the slot, when you need a line change, or late in a game you are leading
@@ -138,6 +140,8 @@ Whatever play is called, five jobs exist. Knowing which one is yours *before* th
 
 ### 1. The puck-retriever D (D1)
 
+**In short:** Look over your inside shoulder coming back, arrive at an angle, and move the puck to a decision point, never through the slot.
+
 ```facts
 Position: The defenceman who goes back for the puck — your job starts before you touch it
 Action: Look over your inside shoulder on the way back, while you still have time to change your plan
@@ -157,6 +161,8 @@ The defenceman who goes back for the puck. Your job starts before you touch it:
 - **Never through the slot.** Not with a pass, not with your feet. See [Defender](../positions/defender.md). Some teams exchange high instead, above the tops of the circles and outside the slot — a different route rather than an exception, and section 3 sets it out under D-to-D. The one play that does cross the front of your net is the cross-ice "over" in section 3, a high-risk play that needs the forecheck overloaded to one side with the middle empty.
 
 ### 2. The support D (D2)
+
+**In short:** Be your partner's outlet, usually opposite the net; make the calls; screen only where your book allows, planted early and never drifting across.
 
 ```facts
 Position: Usually the opposite side of the net from your partner, level with or slightly above the goal line, so a pass behind the net reaches you cleanly
@@ -309,6 +315,8 @@ The direct pass from the puck-carrying defenceman to the strong-side winger on t
 
 ### Wheel
 
+**In short:** Wheel only with a step on the first forechecker and nobody waiting on the far side, cutting tight to the net.
+
 ```facts
 Action: The defenceman carries the puck himself, skating behind the net and up the far side
 Position: D1 retrieves in one corner and keeps skating; D2 takes the net front early where that screen is legal, and the far-side winger and the centre become outlets
@@ -341,6 +349,8 @@ The standing screen is legal under the NHL's and PWHL's books, and the IIHF's �
 ---
 
 ### Reverse
+
+**In short:** Reverse when a forechecker has overskated you: bank it firm and low off the boards to a teammate calling for it.
 
 ```facts
 Action: Send the puck back against the flow of the forecheck, usually a hard backhand off the boards behind you
@@ -393,6 +403,8 @@ The pass across to your partner, changing the side of the ice the attack comes f
 
 ### Rim
 
+**In short:** Rim when you are sealed on the boards or out of time: hard, low and aimed where a teammate can meet it.
+
 ```facts
 Action: A hard shot along the boards that follows the curve of the rink around to a teammate further along — usually the far-side winger
 Read: You are sealed against the boards in the corner or behind the net with no passing lane through the forechecker; it is also the standard release valve when you simply have no time
@@ -420,6 +432,8 @@ A hard shot along the boards that follows the curve of the rink around to a team
 ---
 
 ### Over / cross-ice
+
+**In short:** Pass cross-ice in front of your net only when one side is overloaded and the middle is empty; otherwise go behind the net.
 
 ```facts
 Never: Use "over" without agreeing which sense — Sense A is this cross-ice pass, a high-risk play; Sense B is the D-to-D behind your own net, one of the lowest-risk
@@ -472,6 +486,8 @@ The immediate transition off a turnover, before the forecheck has any chance to 
 
 ### Stretch pass
 
+**In short:** Stretch it when all three of their forwards are deep and their defence steps up; in most amateur hockey it is no default.
+
 ```facts
 Action: A long pass from your defensive zone to a forward who has left early and is waiting up ice
 Position: One forward — usually the weak-side winger — leaves the defensive zone early and stretches high; the retrieving defenceman looks up and hits them
@@ -500,6 +516,8 @@ A long pass from your defensive zone to a forward who has left early and is wait
 ---
 
 ### Off the glass and out
+
+**In short:** With pressure and no play, lift it high off the glass up the wall, not flat up the middle and not over the glass.
 
 ```facts
 Read: When the alternatives are a turnover in a dangerous area or a play you are not confident in — and when you desperately need a change
@@ -605,6 +623,8 @@ Action: Either way, keep your feet moving; the player standing still is the play
 - **Either way, feet moving.** Even a small shuffle keeps you able to react. The player standing still is the player who gets hit.
 
 ### Presenting a target, and receiving open to the ice
+
+**In short:** Show a flat blade toward the passer, check your shoulder, and take the puck a step off the wall, hips open to the ice.
 
 ```facts
 Technique: Stick on the ice, blade flat, angled toward the passer — your blade is the target, so put it where you want the puck
@@ -810,6 +830,8 @@ Rule: The post-icing no-change bar is not universal: USA Hockey's Rule 624 and C
 
 ### When they are already set — the control breakout
 
+**In short:** Against a waiting trap, run your team's control pattern: the four without the puck move with speed, and the carrier picks the open one.
+
 ```facts
 Key: A control breakout is a five-player pattern run from full possession behind your own net, against a trap that is already set and waiting
 Action: The four players without the puck all move, with speed, and the carrier picks whichever route the trap has not taken away
@@ -837,6 +859,8 @@ Three are set out in Mike Johnston and Ryan Walter's *Hockey Plays and Strategie
 ---
 
 ## 7. Breakouts from a Defensive-Zone Faceoff
+
+**In short:** Decide the play before the puck drops: win it and run the set exit, lose it and get to your coverage first.
 
 ```facts
 Key: The moment after a defensive-zone draw is the most structured situation in hockey and the best chance for a genuine set play — coaching emphasis, not a counted ranking
@@ -868,6 +892,8 @@ The moment after a defensive-zone draw is the most structured situation in hocke
 ## 8. Breaking Out a Man Up, on Delayed Calls, and at 6-on-5
 
 ### Breaking out a man up — the power-play breakout
+
+**In short:** A man up, run the same breakout and, by this guide's default, leave with control; any clear goes off the glass, never over it.
 
 ```facts
 Goal: Get the puck out of your own end with control — on a power play this comes before every entry and set play, and nothing in the offensive zone happens until it is done
@@ -909,6 +935,8 @@ Then, under the NHL and the IIHF — and the PWHL, whose Rules 83.4, 89.1 and 83
 
 ### Breaking out under a delayed penalty
 
+**In short:** With the arm up against the other team, keep the puck — do not clear it.
+
 ```facts
 Action: Take the safe possession play every time — D-to-D behind the net, back to the point, protect it in the corner, on your stick and moving — and if your goalie comes off, buy them time to reach the bench
 Never: Clear the puck — a clear surrenders control and ends the advantage for nothing, and coaches name it the commonest delayed-penalty error in amateur hockey, though no count measures it
@@ -923,7 +951,7 @@ Rule: The IIHF, USA Hockey and Hockey Canada allow the goalie back on the fly �
 Risk: The own-goal is the only way you can lose from here, so no blind passes back through your own crease with an empty net behind it
 ```
 
-**With the arm up against the other team, keep the puck — do not clear it.** A clear gives the puck away, and the moment they control it play stops and your free spell with the puck is over.
+A clear gives the puck away, and the moment they control it play stops and your free spell with the puck is over.
 
 **What that means for your breakout:** they cannot score while the arm is up, so if your goalie comes off, you have a few seconds of free 6-on-5 with almost no defensive risk — the one exception is putting it into your own empty net.
 
@@ -951,6 +979,8 @@ With the goalie off:
 
 ### The 6-on-5 breakout with your goalie pulled
 
+**In short:** With your goalie pulled, a turnover is a goal against: use the sixth skater as a short, low outlet, and clear only off the glass.
+
 ```facts
 Mindset: A completely different problem to the delayed penalty, because now a mistake ends the game
 Rule: Icing still applies — at 6-on-5 you are not shorthanded, so a clear from your own half that reaches the far goal line is iced in all six books here (NHL and IIHF 81.1; PWHL 83.1; USA Hockey 624; Hockey Canada 6.7(a); CARHA 65(a), though some CARHA leagues split the ice elsewhere — ask yours)
@@ -974,6 +1004,8 @@ Late in a game, chasing a goal, goalie on the bench. This is a completely differ
 
 ### Breaking out on a delayed offside
 
+**In short:** The raised arm is not a stoppage: keep your head up and expect to be hit, in every book here.
+
 ```facts
 Key: Keep your head up and expect to be hit — in none of the books here does the delayed-offside rule cover you once the puck has left your stick
 Key: The linesperson's raised arm is not a stoppage, and a whistle for an imminent hit stops the play rather than a body already committed at speed
@@ -985,7 +1017,7 @@ Never: Stop and wait for a whistle because the arm is up, or turn your back to t
 Technique: Forearm and hip meet the wall, not the shoulder — never the point of your shoulder, and not the whole shoulder if you can help it
 ```
 
-**Keep your head up and expect to be hit — in every book here.** An attacker has beaten the puck over your blue line, the linesperson's arm is up, and you have the puck in your own end with what feels like free time to make a clean outlet. **The raised arm is not a stoppage.** You are still playing the puck, the forecheck is still coming, and **in none of the books here does the delayed-offside rule still cover you once the puck has left your stick.**
+An attacker has beaten the puck over your blue line, the linesperson's arm is up, and you have the puck in your own end with what feels like free time to make a clean outlet. **The raised arm is not a stoppage.** You are still playing the puck, the forecheck is still coming, and **in none of the books here does the delayed-offside rule still cover you once the puck has left your stick.**
 
 **So play it as an ordinary breakout under pressure.** Under the NHL, the IIHF and the PWHL you do have a beat more than usual, because a forechecker who drives you deeper ends the play — **but that beat ends the moment the puck leaves your stick, so take the extra look with your head up.** Do not use it to stop and wait for a whistle, and never turn your back to the checker. **Get your skates parallel to the wall instead, forearm and hip to it — not the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest** ([Body Contact and Battles](../technique/body_contact_and_battles.md)). Everything in sections 3 and 9 still applies — read the pressure, pick the option, move the puck.
 
@@ -1057,6 +1089,8 @@ The standard goalie vocabulary — your team may vary it, and should agree it in
 ---
 
 ## 10. The Trapezoid and Retrieval
+
+**In short:** Rim it all the way to a winger or short for your goalie, and never plan on him leaving the crease to sit on it.
 
 ```facts
 Rule: Under the NHL and IIHF books the goalie may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute minor for delay of game, and "[t]he determining factor shall be the position of the puck" (NHL Rules 27.8 and 63.2(viii))

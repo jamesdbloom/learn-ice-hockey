@@ -53,6 +53,8 @@ Puck-following is a reflex: the eye goes to the fastest, highest-contrast object
 
 ### The four exercises
 
+**In short:** Practise one at a time: watch one player, then the defencemen, then the weak side, then the five seconds before a goal.
+
 Do these one at a time. Each is deliberately narrow: the point is to build a habit that later runs in the background while you enjoy the game.
 
 **Exercise 1 — Watch one player for a complete shift.**
@@ -177,6 +179,8 @@ The next two pictures are both a 1-2-2, separated by depth and intent. In the fi
 
 ### What is their power-play formation? Count the players at the point.
 
+**In short:** Count the players at the point to name the power play, and the killers' shape to name the penalty kill.
+
 The **point** is just inside the blue line. The **half-wall** is the boards level with the faceoff dot. The **bumper** stands in the middle between the half-walls, roughly in the high slot.
 
 Count the players standing near the blue line once the power play is set up:
@@ -251,6 +255,8 @@ See [Zone Entries](../systems/zone_entries.md).
 
 ### Faceoff alignments — read them before the drop
 
+**In short:** Before each draw, read the four players who are not taking it: their body angles tell you where the puck is meant to go.
+
 There are around **56 faceoffs in an average NHL game** (see [Faceoffs](../systems/faceoffs.md)), so look at the four non-centres on each team before the drop.
 
 - **The wingers' body angle tells you the plan.** A winger squared to the boards is expecting the puck there. A winger cheating towards the middle is expecting a tie-up and a scrum.
@@ -273,6 +279,8 @@ Both alignments are drawn in [Faceoffs](../systems/faceoffs.md) at the right-han
 See [Faceoffs](../systems/faceoffs.md).
 
 ### Line changes — where structure collapses, and nobody is watching
+
+**In short:** Watch the benches for a full stretch: changes are where structure collapses and where the home coach controls the matchups.
 
 Watch the benches, not the ice, for one full stretch of play. Line changes are where structure collapses.
 
@@ -431,6 +439,8 @@ See [Defender](../positions/defender.md).
 
 ### Watching a goalie
 
+**In short:** Watch what the goalie does before the shot: depth, tracking, being set at release, and where the rebounds go.
+
 Goaltending is the hardest position to watch, because the interesting part happens before the shot.
 
 Watch for:
@@ -463,6 +473,8 @@ Numbers let you watch hockey when you cannot be at the rink. They are also the f
 **A blunt warning first.** Public hockey analytics is a **contested, evolving field**, not settled science. Sites compute the same metric differently, models get rebuilt, the event data has real errors — arena scorekeepers record shots and hits differently — and analysts disagree. Treat every number as evidence, not a verdict, and check the definition on the site you are reading.
 
 ### Statistics literacy: the basic statistics
+
+**In short:** Read every basic number with its limits: time on ice is arguably the most honest, and plus/minus alone tells you little.
 
 **Goals.** Credited to the player who put the puck in; only one point can go to any one player on a goal (NHL Rule 78.2).
 
@@ -540,6 +552,8 @@ Typical inputs are distance, angle, shot type, rebound, rush, the previous event
 Rule of thumb: use xG over Corsi, use several games rather than one, and never quote an xG figure without knowing which model produced it.
 
 ### Context statistics — why raw numbers mislead
+
+**In short:** Before trusting a number, check zone starts, teammates and the score, and never compare zone-start figures across sites.
 
 Three contexts change what a number means.
 

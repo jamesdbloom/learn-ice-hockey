@@ -57,6 +57,8 @@ You already do this. When you rim the puck around the boards instead of trying a
 
 ### What the analytics say about the "gain" side
 
+**In short:** A completed pass into the middle of their zone is worth far more than a clean carry-out, and these numbers count only the gain.
+
 Public tracking work has put numbers on the upside of different puck decisions. Thibaud Chatel's "Hockey Decision Tree" at Hockey Graphs (March 2020), built from roughly **11,000 possession sequences** tracked manually by Chatel and his colleague Mathieu Brosseau in France's Ligue Magnus and Switzerland's NLA over three seasons, valued each type of play as *how often it leads to a shot attempt* multiplied by *the average expected goals of the sequences it appears in*.
 
 **Expected goals (xG)** is a model estimate of how likely a given shot is to become a goal, based mostly on where it was taken from and under what circumstances. An xG of 0.10 means "shots like this go in about one time in ten."
@@ -106,6 +108,8 @@ The reason location matters so much is that **shot danger is largely about where
 Flip that around: **the space in front of your own net is worth defending out of all proportion to its size**, and any decision that risks putting the puck there has an outsized cost.
 
 ### The risk map
+
+**In short:** Before a risky play, ask how many seconds and bodies stand between a turnover here and a shot on your net.
 
 ```facts
 Read: Grade every area by one question — if I lose the puck here, how many seconds and how many bodies stand between the turnover and a shot on my net?
@@ -284,6 +288,8 @@ Convention: "Never stickhandle in your own slot" is not a rule — about as clos
 
 ### 7. Never leave your feet to make a check
 
+**In short:** Close the carrier down on your feet, stick in the lane; every book here calls the leap charging, and a miss takes you out.
+
 ```facts
 Never: Leave your feet to make a check — you cannot change direction in the air — and never body check at all where your league bars it
 Risk: A carrier who reads it makes you miss with one movement, and you are out of the play for four or five seconds
@@ -343,6 +349,8 @@ Convention: No rule forbids changing on the fly because the moment is tactically
 
 ### 9. Never shoot the puck over the glass — from your own zone it is a delay-of-game minor under the NHL, IIHF and PWHL, and a deliberate one is a minor from anywhere
 
+**In short:** Keep the clear in play: off the glass, hard and low along the boards, and aim lower than feels right when panicking.
+
 ```facts
 Rule: Shooting or batting the puck directly out of the playing surface from your defending zone is a minor, except where there is no glass (NHL Rule 63.2(iii); IIHF 63.2(III); PWHL 65.2(iii))
 Rule: Wider than the NHL's strict-liability limb: a deliberate shoot-out of the playing area is a minor with no zone limit under the NHL and IIHF (63.2(ii)), USA Hockey (610(c)), Hockey Canada (10.1(ii)), CARHA (75(b)) and PWHL (65.2(ii))
@@ -393,6 +401,8 @@ Under USA Hockey ⚠️ **the temper shot after the whistle is the one that gets
 
 ## The "almost always right" list
 
+**In short:** Under pressure, take the low-risk play: with time, make the possession play; without it, get the puck out.
+
 ```facts
 Action: Off the glass and out when you are in trouble — it moves you from catastrophic to high, not to safe, so get organised once it lands
 Action: Shoot on net with traffic — the worst realistic outcome is an offensive-zone faceoff or a puck retrieved in the corner
@@ -422,6 +432,8 @@ This is the most practical section here. Each list is a **priority order**: run 
 **The prerequisite.** None of this works if you start looking when the puck arrives. You need one or two shoulder checks *before* you receive it, so that by the time it is on your blade the list is already down to two options. That is what [Scanning and Anticipation](scanning_and_anticipation.md) is for. The hierarchy is the decision; the scan is the information.
 
 ### Defensive zone — you have just retrieved the puck, forecheck arriving
+
+**In short:** With the forecheck arriving and no time to read, take the first exit genuinely open, looking for the quick-up first.
 
 ```facts
 Priority: Quick-up → Up → Wheel → D-to-D → Reverse → Rim → Glass, taking the first option genuinely available
@@ -494,6 +506,8 @@ Never: Force it through their blue line on the way out — losing the puck in th
 ---
 
 ## Risk and game state
+
+**In short:** Set your risk by the scoreboard and the clock: down when you are leading, up when you are trailing late.
 
 ```facts
 Key: The correct risk level is not a personality trait — it moves with the scoreboard and the clock
@@ -624,6 +638,8 @@ Against ~3.1 goals per team per game, that is a meaningful piece of a game, give
 
 ### When a penalty is genuinely worth taking
 
+**In short:** Take a penalty only to stop something likelier to score than the one-in-five power play, and never by hauling a breakaway down from behind.
+
 ```facts
 Read: Is the thing you are preventing more likely to become a goal than the one-in-five chance you are handing over?
 Action: Take the penalty to deny a certain goal — a 21% chance against you, the league-wide NHL power-play rate for 2025-26, beats a 100% chance every time
@@ -642,6 +658,8 @@ Rarely, and less often than players think, because the test is unforgiving: **is
 Note what is *not* on that list: retaliation, sending a message, standing up for a teammate after the whistle, and — with one exception — anything at all in the first period, when there are forty minutes left in which to pay for it. **The exception is denying a certain goal**, which is not a clock judgement at all: a 21% chance beats a 100% chance in the first minute as much as in the last. For the situations where a penalty is not merely unprofitable but catastrophic — leading late, already killing one, already on the power play, either side of a 6-on-5 — see the "when it absolutely isn't" list in [Game Management](../systems/game_management.md#when-it-absolutely-isnt).
 
 ### The critical exception nobody accounts for: fouls that are not priced as minors
+
+**In short:** Stop the breakaway four seconds earlier with your positioning, because fouling a carrier from behind probably saves you nothing.
 
 ```facts
 Rule: A penalty shot needs four cumulative conditions — the foul from behind, in the neutral or attacking zone, on a player in possession and control or who clearly would have obtained it, with no opponent between him and the goalie, denying a reasonable chance to score (NHL Rule 57.3)
@@ -688,6 +706,8 @@ And ⚠️ **do not price a reckless trip at a minor anywhere outside the NHL's 
 
 ### Covering the puck in your own crease
 
+**In short:** Catch a puck out of the air and put it straight down; holding, covering, carrying or throwing it is what costs you.
+
 ```facts
 Rule: Five of six print the permission in rule text — NHL and IIHF 67.2, PWHL 69.2, Hockey Canada 10.2(a)(iii) and CARHA 61(a), the last two adding a no-advantage test. USA Hockey alone prints none; 618(a) leaves the catch-and-drop unpenalised outside the crease, its Casebook says so. Nothing to trade
 Never: Hold a caught puck, carry it, turn with it or throw it — that is the act the books reach: a penalty in three, a USA Hockey stoppage outside the crease, the penalty shot in your own crease
@@ -720,6 +740,8 @@ Never: Reach higher to hold a puck above the crossbar — once you are holding i
 **So the trade is only on the table once you have already failed the free option**, and then only when the puck is in the blue paint below the crossbar. Against a puck that was going in anyway, it is a trade worth making. But with your goalie replaced by an extra attacker, **Rule 67.5** awards the goal outright — you have prevented nothing. ⚠️ **Five of the six books award it on the substitution alone, CARHA in one of its two clauses** — NHL and IIHF 67.5, PWHL 69.5, and Hockey Canada 10.2(a)(vi) whenever you are in the crease (4.12(a) with the puck in it). **USA Hockey conditions it**, awarding the goal only where the act *"has prevented an obvious and imminent goal"* (614(b); 618(a) says the same in other words). ⚠️ **CARHA writes it both ways, so play to the strict answer: with your net empty, any cover in your own crease is the goal.** Its 58(c) Note 1 reads *"If the goalkeeper has been removed from the ice, then a goal is awarded"*, while Rule 36(b) awards it only *"when a shot has been taken (control no longer applies)"* and the cover prevents *"an obvious and imminent goal."* Do not count on the referee reading the narrower one.
 
 ### Slew-footing: the one the carve-outs never reach
+
+**In short:** Never use your leg or foot to sweep an opponent's feet from under him, even if you reached the puck first.
 
 ```facts
 Rule: NHL 52.2 a mandatory match; USA Hockey 639 at least a major and game misconduct, and plan on a match if reckless (639(c), 602(a)); Hockey Canada 8.8 a double minor rising to a match, and 7.5, which ejects, once pushed into the boards (7.6 or 7.7 on the head: up to a match, a must if defenceless)
@@ -755,6 +777,8 @@ Under CARHA, ⚠️ **53(b) is a mandatory match too**, where a player is *"prop
 **So the practical rule:** if you are chasing from behind and the only way to stop them is a foul, you are probably not saving anything, and if your net is empty you are saving nothing at all. **The time to prevent the breakaway is four seconds earlier, with your positioning.** See [Defending the Rush](../systems/defending_the_rush.md).
 
 ### The penalties that are not trades at all
+
+**In short:** Treat your penalties as habits to fix: a hook usually means your feet stopped, and retaliation that your composure went.
 
 ```facts
 Key: Most amateur penalties look like habits rather than decisions — coaching observation, not measurement, since what has been counted is the type of infraction and not the decision behind it
@@ -810,6 +834,8 @@ The same logic applies within a game and within a season. A team with a big lead
 You will make bad decisions. Everyone does, at every level. **What separates good players is almost entirely what happens in the next four seconds.**
 
 ### The immediate response
+
+**In short:** After a giveaway, turn and get back inside, take away the middle, call it out, and finish the shift.
 
 ```facts
 Action: Turn and skate to the middle of the ice between the puck and your net — become the extra defender

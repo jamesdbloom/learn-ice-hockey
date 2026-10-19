@@ -99,6 +99,8 @@ For the first few weeks you will lose the play — the puck goes somewhere your 
 
 ## Wing → centre
 
+**In short:** Ask which coverage and breakout your team plays, learn faceoffs, and stop standing on the wall where a winger stands.
+
 ```facts
 Position: Under a low zone collapse your defensive-zone responsibility moves with the puck — low to the corner when it is low and strong-side, back to the high slot when it is not
 Convention: Zone, man-on-man and hybrid are coaching choices, not laws. Ask your coach which one your team plays before your first shift
@@ -129,6 +131,8 @@ The most common switch in hockey, and the biggest step up in responsibility shor
 
 ### Helmet-to-helmet contact before the drop
 
+**In short:** Get low with your knees and hips, not your head, and move back at once when the linesperson says so.
+
 ```facts
 Never: Push your head out over the dot to get low — helmet-to-helmet contact before the drop is a violation (IIHF 76.7(III)); its 2026/27 handbook ejects the offending centre from the draw (Situation 76.43)
 Rule: The 2026/27 IIHF edition deleted the first warning the 2025/26 edition gave that contact, and the 2026/27 Situation Handbook has the linesperson "immediately eject the center that is responsible" where the 2025/26 one said warn
@@ -151,6 +155,8 @@ Getting low is right — you react faster and you cannot be pushed off the dot �
 ---
 
 ## Centre → wing
+
+**In short:** Hold the outside lane, let go of organising everyone, and stand still on the hash marks until the puck lands.
 
 ```facts
 Position: Your lane is the outside third of the ice on your side, running the length of the rink
@@ -237,6 +243,8 @@ So the first thing a converting forward needs is not tactical. It is:
 
 ### "Force them outside" and "getting beaten wide" are not the same thing
 
+**In short:** Shut the inside lane and stay between the attacker and the net; steer with the route you skate, not your body.
+
 ```facts
 Technique: Angle your body so the inside lane is shut and the only route runs toward the boards, where the wall becomes a second defender — take the angle, not the man
 Rule: Closing an angled gap is legal competitive contact (USA Hockey 604(c) Note). Riding a carrier into the wall is a body check, barred at 12U and below, all Girls'/Women's and non-check Adult classes (604(a)), and at U13 and below, female hockey and any Member-approved division (Hockey Canada 7.3(a))
@@ -294,6 +302,8 @@ Once the hit reaches his head, ⚠️ **Hockey Canada prices it as head contact*
 
 ### What else is genuinely new
 
+**In short:** Never carry or pass D-to-D through your own slot, and work as a pair: one on the puck, one at the goalmouth.
+
 ```facts
 Mindset: As a defenceman there is one layer behind you now, not two — that changes how you weigh risk, not how hard you compete
 Never: Carry or pass D-to-D through your own slot. Go behind the net, where a lost puck is a battle rather than a shot — or high above the circles, if that is your team's route
@@ -327,6 +337,8 @@ Convention: Only one defenceman pinches at a time — a near-universal coaching 
 
 ## Defence → forward
 
+**In short:** Attack space: find open ice, arrive in it late, and stop waiting for the play to be safe.
+
 ```facts
 Mindset: Attack space instead of denying it. Find the space nobody is defending, arrive in it late, and force somebody to make a decision
 Never: Wait until the play is obviously safe before moving — by then the space has closed
@@ -354,6 +366,8 @@ The overlooked direction, and often the harder mental adjustment of the two, bec
 ---
 
 ## Anyone → goaltender
+
+**In short:** Treat goaltending as a different sport, and ask about house gear and a goalie coach before you buy anything.
 
 ```facts
 Key: Goaltending is a different sport that shares a rink — not a position you drift into for a few weeks to see how it goes
@@ -396,6 +410,8 @@ Four things make this switch different in kind from the others.
 ---
 
 ## Playing your off wing
+
+**In short:** On your off wing the puck sits on your inside; take wall passes open to the ice, a step off the boards.
 
 ```facts
 Position: Off wing means the puck sits on the inside of your body, stick toward the middle of the ice — more options for moving it and a better forehand angle from prime mid-ice

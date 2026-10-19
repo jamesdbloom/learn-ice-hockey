@@ -83,6 +83,8 @@ Each entry gives the word, who says it, what it means, and what you do when you 
 
 ### Pressure warnings
 
+**In short:** Call pressure the moment you see it, because the carrier almost never can; on "man on", protect the puck and move it.
+
 ```facts
 Action: Call the pressure the moment you see it — the carrier almost never can
 Action: On "man on", stop trying to make a play; protect the puck and get rid of it — rim, chip off the glass, or a short pass
@@ -203,6 +205,8 @@ These tell the carrier where to put the puck. Because they arrive as instruction
 
 ### Support and availability
 
+**In short:** When you are open, say so and say where, because a carrier with their head down cannot use a silent option.
+
 ```facts
 Goal: Tell the carrier you exist and where you are — without a voice you are not an option
 Action: On "here", look to the voice even if you do not pass; you now know there is an outlet on that side
@@ -237,6 +241,8 @@ These tell the carrier that you exist and where you are. The carrier's head is o
 - **"All alone"** — *Said by a teammate behind the play.* You are entering the offensive zone with **no support**. The published call list this document draws on defines it as letting the carrier "know that they do not have any support **and are out-numbered**"; some teams use it for the support half only. Agree which yours means, because they lead to different decisions: no support says wait, outnumbered says do not enter at all. **If you hear it:** don't attack the defence alone. Slow it down, protect the puck, or chip it in and wait for help.
 
 ### Danger and coverage
+
+**In short:** In your own end, call the back door, the net front and the screen, and keep calling when you are tired.
 
 ```facts
 Action: On "back door", the nearest player takes the unmarked opponent at the far post immediately
@@ -320,6 +326,8 @@ It is a judgement on the goal afterwards, not a whistle; the NHL and IIHF allow 
 
 ### Rush and transition
 
+**In short:** On the rush, call the numbers early and short, and on "backcheck" turn and sprint before you look.
+
 ```facts
 Action: On "odd man", the defenders stop thinking about the puck and start thinking about numbers
 Convention: Published call lists use the short numeric forms — "Two", "One" — and short wins at speed
@@ -344,6 +352,8 @@ The rush is where communication most often fails, because everyone is skating fl
 - **"Pick him up" / "Take the middle"** †— *Said by a defenceman to an arriving backchecker, or between backcheckers; in common use, but undocumented as a spoken call.* An attacker is unmarked and you are the closest. **If you hear it:** get on the defensive side of them — between them and your net — not behind their shoulder. **Who owns which lane on a backcheck is a coaching choice, not a law.** Most commonly the centre owns the middle and the wingers the outside lanes; some teams send the **first man back** to the middle, others pick up **man-on-man from the puck outward**. [Defending the Rush](../systems/defending_the_rush.md) sets them out, with the four named team backchecking systems. **Find out which your team plays** — under every variant somebody owns the middle and nobody assumes it is somebody else.
 
 ### Bench and line changes
+
+**In short:** Change on the fly by voice and as a group, never during a defensive-zone scramble or when you are caught deepest.
 
 ```facts
 Action: On "change", go as a group
@@ -380,6 +390,8 @@ Changing on the fly happens while the play is still running: a team briefly out 
 Rule 82.1 allows only **three** substitutions then: **to replace a goalie who had been pulled for an extra attacker**, **to replace an injured player**, or **when a penalty affects the on-ice strength of either team**. "He's gassed" is not on the list. **🇬🇧 IIHF 81.4 adds a fourth**, *"a Player with a broken skate"*, but IIHF 82.1, stating the same ban, lists only the three, in both editions. Neither edition settles which governs, and the Situation Handbook's 81.7 — a change *"only"* on a strength-changing penalty — is over-broad but adverse. So check with your officials rather than plan around it, and never put a replacement over the boards on it: **IIHF 82.2(V)** sends them back and warns your coach that further violations bring *"a bench minor penalty for 'delaying the game'"* — one warning per team per game, across the three acts 82.2(V) names. **Under the NHL it can be the bench minor with no warning:** 82.3 assesses one to the visiting team for any change after the referee's signal, which its own 82.2(v) contradicts.
 
 ### Faceoffs
+
+**In short:** Before the drop, the centre tells everyone the play and the fallback, and the wingers stay out of the circle.
 
 ```facts
 Action: The centre tells the other four skaters the play before lining up — an actual sentence, while the linesperson is still skating in
@@ -419,6 +431,8 @@ Faceoff communication happens before the puck drops, when nobody is moving and e
 
 ## Who owns which call
 
+**In short:** Whoever can see it makes the call, whatever their age or role, and where two players can see it, both call it.
+
 ```facts
 Key: The player who can see it makes the call — not the captain, not the defenceman, not the loudest
 Action: Let the goalie lead the defensive zone — they face the play, they are stationary, and nothing is behind them
@@ -451,6 +465,8 @@ On top of that principle sit a few standing responsibilities, which exist becaus
 ---
 
 ## The goalie's calls
+
+**In short:** Listen to your goalie, who sees what you cannot, and know that "shot" means they have the shooter and you take the pass.
 
 ```facts
 Key: The goalie's view is exactly the view your defencemen lack — the whole play, permanently, for free
@@ -485,6 +501,8 @@ The standard goalie vocabulary:
 - **"Shot"** — **a goalie saying "shot" is not warning you a shot is coming. They are telling you they have the shooter and you take the pass** — the same split as "I've got the pass / Take the shooter". Published goalie material documents it in exactly that sense: *"When the puck is at the point, or when the opposing team has a two-on-one, it can be difficult for your defense to know what you want them to do. If you'd prefer that they take away the pass or guard the open man, call for 'shot!'... If you want the shot, call for it!"* A warning tells a skater nothing they can act on; "I have the shooter" tells a defenceman where to put their stick. **If you hear it as a defenceman:** stay in the passing lane and do not drift toward the puck. If your team uses "shot" as a warning, pick another word for the warning — you have half a second to decode this one.
 
 ### Where your goalie may play the puck
+
+**In short:** Know where your book lets your goalie play the puck behind the net, and never call them up past the centre red line.
 
 **A constraint that shapes all of this: the trapezoid.** Under **NHL and IIHF rules** the goalie may play the puck behind the goal line only inside the marked trapezoid, unless *"maintaining skate contact with"* the crease. So "I've got it" and "leave it" are only on where the puck actually is. **USA Hockey and Hockey Canada have no trapezoid**, so under those books your goalie is a genuine third puck-handler behind the net, which changes their calls and yours completely. ⚠️ **Behind the net, and no further: never past the centre red line, in any book (below).**
 
@@ -541,6 +559,8 @@ The technique of calling matters as much as the vocabulary.
 
 ## Non-verbal communication
 
+**In short:** Back up your voice with a stick target, eye contact and agreed signals, and never pass blind on a stick tap alone.
+
 ```facts
 Technique: Put your blade flat on the ice in front of your body as a target — a stick held in the air says you are not ready
 Risk: All stick taps sound alike, so an opponent can tap and induce a blind pass — use the tap to reinforce a call, never to replace one
@@ -570,6 +590,8 @@ Rinks are loud and sometimes a voice will not carry. Non-verbal cues are the bac
 ---
 
 ## Building the habit
+
+**In short:** Talk in every drill, starting with "man on" and "time", and agree one short team vocabulary at the start of the season.
 
 ```facts
 Mindset: The obstacle is social, not tactical — the fear of being wrong, of being loud, of being the only one making noise; it fades with deliberate practice

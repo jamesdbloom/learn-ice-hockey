@@ -45,6 +45,8 @@ The **neutral zone** is the middle third of the ice, between the two blue lines 
 
 ## What the neutral zone actually is
 
+**In short:** Get the puck past the red line before shooting it deep; it is the icing line except in some CARHA leagues.
+
 ```facts
 Key: A strong skater crosses the neutral zone in about three seconds — that is the entire window for every decision in this document
 Rule: Offside needs both skates completely over the line before the puck; an airborne trail skate stays onside under NHL, IIHF and Professional Women's Hockey League rules, but not under USA Hockey 630(a) or Hockey Canada 6.11, which require contact, and CARHA never defines its "own side" either way
@@ -73,6 +75,8 @@ The folklore persists for a reason. That same CARHA book still prints a **"Red L
 ---
 
 ## Why the neutral zone decides games
+
+**In short:** A turnover in the middle is the costliest kind, and the team that wins this third chooses what kind of game it is.
 
 ```facts
 Risk: A turnover at centre ice costs more than one in either end — it catches two or three of your players moving the wrong way at speed and puts the puck in open ice with your defence flat-footed
@@ -123,6 +127,8 @@ Two traps:
 
 ### 1-2-2 — the classic containment structure
 
+**In short:** F1 takes away the middle and forces a side; a turnover is a bonus, dictating the side is the job.
+
 ```facts
 Position: F1 pressures near their goal line or hash marks, F2 and F3 sit across the middle, both defencemen hold the back layer around your own blue line
 Goal: F1 takes the middle away and forces the carrier to one side — the turnover is a bonus, dictating the side is the job
@@ -150,6 +156,8 @@ Convention: Coaching material calls it the most widely played neutral zone struc
 **How it is beaten.** A quick D-to-D behind the net to change sides before F1 re-sets the angle; a middle-lane forward supporting low under F2 and F3; and patience — the 1-2-2 rewards panic and barely punishes an extra second spent making the right play.
 
 ### The 1-2-2 trap ("the neutral zone trap")
+
+**In short:** A trap lets the carrier skate and steers them to a wall at the red line, where the turnover starts your counterattack.
 
 ```facts
 Position: A 1-2-2 with the layers dropped back — F1 high and splitting the ice, F2 and F3 at or just inside the red line, the defence on your own blue line
@@ -190,6 +198,8 @@ The Devils were not even the first NHL team to run it. **Roger Neilson used it w
 
 ### 1-3-1 — widely described as the modern standard
 
+**In short:** Three across slide as one wall and leave no lane through the middle, so nobody chases the puck out of their lane.
+
 ```facts
 Position: F1 pressures, three players stand spread in a line across the ice, one defenceman sits behind them as the last man
 Convention: Conventionally F2 and F3 on the walls with a defenceman in the middle — but never three forwards across, because F1 is already one of your three
@@ -218,6 +228,8 @@ Countered by: Getting behind the flat wall with a stretch pass, chip-and-chase p
 **How it is beaten.** Attack it wide and behind. A forward who gets **behind** the flat line is in a footrace with one defenceman — that is what the stretch pass is for. Chip-and-chase past the wall works for the same reason. Above all, quick lateral puck movement makes the wall slide, and a sliding wall has gaps.
 
 ### Pressure — the neutral zone under an aggressive forecheck
+
+**In short:** Behind a 2-1-2 forecheck, F3 holds the middle and the weak-side defenceman stays home while the strong-side one steps up.
 
 ```facts
 Position: Two forwards are gone hunting the puck in their end, leaving F3 as the only layer between the puck and your defence
@@ -333,6 +345,8 @@ You will hear both answers from different coaches, and both are defensible. [For
 
 ## Gap control as a team concept
 
+**In short:** Gap is a five-man outcome: forwards tracking back above the puck are what let your defencemen step up.
+
 ```facts
 Key: Gap is a five-man outcome, not a two-man one — the single biggest thing amateur teams get wrong about the neutral zone
 Convention: A tight gap is roughly one to one and a half stick lengths, close enough to touch their stick with yours if you reach — coaching convention rather than a measured figure, and coaching material does not agree on it
@@ -396,6 +410,8 @@ At your own blue line you have two broad options, and they are a genuine trade-o
 ![](diagram:nz-back-off-at-the-line)
 
 ### Standing up at the line
+
+**In short:** Meet the carrier at your line and refuse ground with your feet, but never build speed into a hit.
 
 ```facts
 Action: Meet the attacker at or just inside your blue line, refuse to give ground, and force a dump, a pass or a turnover
@@ -522,6 +538,8 @@ You pass D-to-D, and instead of following the puck up the ice, **sink back into 
 **Whether it is available depends on their forecheck.** If their first forechecker takes away the **D-to-D pass**, the hinge is dead — look at the quick-up or the boards. If they take away the **cross-ice pass to the far forward** instead, they have conceded the hinge. That one read tells you which regroup options exist tonight.
 
 ### The low regroup
+
+**In short:** Take it back below your own blue line and restart as a breakout; it is a possession play, not a panic play.
 
 ```facts
 Action: Take the puck all the way back below your own blue line, sometimes behind your own net, and restart as if from a breakout
@@ -706,6 +724,8 @@ Do not stop on the wall and try to beat the stepping defender one-on-one with no
 
 ## Beating a trap
 
+**In short:** Against a trap, move the puck faster than they can slide, use the boards, and be patient rather than forcing the seam.
+
 ```facts
 Action: Move the puck faster than they can slide — two quick passes, D-to-D or wall-middle-wall, beat five skaters sliding; a trap beats teams that carry the puck, not teams that pass it
 Action: Use the boards deliberately — a rim or a chip off the wall to a forward arriving behind the pressure, especially against F2 stepping up
@@ -738,6 +758,8 @@ Published analytics suggests a carry is only the better choice when you are arou
 ---
 
 ## Neutral zone faceoffs
+
+**In short:** Know before the drop whether you are winning it forward or back, and who your man is if you lose it.
 
 ```facts
 Goal: Defending — stop a clean win back to their point, take the middle away first, and get the puck out so you can change
@@ -780,6 +802,8 @@ A regulation sheet has **four neutral zone faceoff dots** — two just inside ea
 ---
 
 ## Reading the neutral zone while you carry the puck
+
+**In short:** Read F1's route, count the bodies across the middle and check your support before you commit with the puck.
 
 ```facts
 Read: F1 skating straight at you, hard → they are pressuring; the answer is one quick pass past him

@@ -278,6 +278,8 @@ Action: Turn away from pressure, rotating the puck behind your body rather than 
 
 ### Your feet and body are part of your handling
 
+**In short:** Shield the puck with your skates and body, pull it straight back to your blade, and never park on it.
+
 ```facts
 Position: Use your skates as a wall — a puck in your feet is in one of the harder places on the ice to reach
 Technique: Trap the puck against the inside of your skate and pull it back out to your blade — then play it; parking on it to force a whistle is a delay-of-game minor, and a penalty shot inside your own crease
@@ -324,7 +326,9 @@ Hockey Canada **6.10(b)** says *"Kicking the puck cannot result in a goal"*, def
 
 ### If the puck pops up, do not grab it
 
-A puck that pops up off a skate, a stick or the boards invites you to catch it, and catching it is legal. **Keeping hold of it is not** — and doing it as a skater in your own crease is one of the handful of infractions that hands the other team a penalty shot outright. **The crease is a volume, not a patch of ice**, so a puck you pluck out of the air over your own crease is a puck *in* the crease. Knock it straight down and move it with your stick at once — and in your own crease, do not trap it in your skates.
+**In short:** Knock it straight down and move it with your stick at once — and in your own crease, do not trap it in your skates.
+
+A puck that pops up off a skate, a stick or the boards invites you to catch it, and catching it is legal. **Keeping hold of it is not** — and doing it as a skater in your own crease is one of the handful of infractions that hands the other team a penalty shot outright. **The crease is a volume, not a patch of ice**, so a puck you pluck out of the air over your own crease is a puck *in* the crease.
 
 ```facts
 Never: Keep hold of a puck you have caught — NHL, IIHF, PWHL, Hockey Canada and CARHA print the permission to take it out of the air and USA Hockey's casebook supplies it, but no book lets you keep it
@@ -437,6 +441,8 @@ Low and wide is hard to move, because leverage often beats strength in a board b
 
 ### Side-on into the checker
 
+**In short:** Where checking is allowed, turn side-on, hip and backside into the pressure, puck on your far side; never turn your back or duck.
+
 ```facts
 Position: Side-on, outside of your hip and backside into the pressure, not your chest
 Key: Your hip and rear end are the strongest, widest surface you own, and cannot be stripped through the front
@@ -474,6 +480,8 @@ If you are already facing the wall and cannot turn, that is damage limitation, n
 **In USA Hockey's non-checking games — 12U and below, every girls' and women's classification, and non-check adult — hold your position with your hip, but do not drive it into them.** USA Hockey's Rule 604 defines an illegal body check as *"intentional physical contact with the opponent using overt hip, shoulder, forearm or torso action"*, prohibits it at those levels under 604(a), and makes it a minor under 604(c). If it recklessly endangers your opponent, 604(d) makes it a major plus a game misconduct, and 604(e) adds that *"[a] match penalty for reckless endangerment may also be assessed for body checking"* at those levels — so plan on a match on top: USA Hockey's general Rule 602(a) says one *"shall be assessed"* to any player who *"recklessly endangers or attempts to injure any opposing player"*. The Note to 604(c) keeps the contact that comes from *"simply maintaining established body position"* — so holding a position you already have with your hip is fine, and driving it into them is not.
 
 ### The free hand and the arm bar — what is actually legal
+
+**In short:** Brace with your free hand high on your own stick; never grab an opponent, their stick or their cage.
 
 ```facts
 Rule: The free hand may fend off an opponent or their stick but never hold either — NHL and IIHF 56.1 and PWHL 57.1; USA Hockey's Rule 622 is silent and its Casebook writes the permission instead, on conditions; Hockey Canada 8.1 permits blocking a stick but not holding it; CARHA writes no permission
@@ -543,6 +551,8 @@ Protection is a way to buy time, not a place to live. Once it has bought you tha
 Both moves are edge-work moves before they are hand moves. See [Skating](skating.md).
 
 ### Using the boards
+
+**In short:** Put hip and forearm to the wall, keep your feet moving toward an escape, and never turn your back or duck.
 
 ```facts
 Position: Hip and forearm against the wall, so the checker can only come from one direction
@@ -717,6 +727,8 @@ Key: A change of pace fakes a defender's timing rather than their direction — 
 
 ### The moves
 
+**In short:** Choose the deke that beats what the defender is doing; if you learn only one, learn the head and shoulder fake.
+
 ```facts
 Options: Fake shot — load exactly as for a real shot, then pull the puck around or pass; only works if your shot is a threat. In a CARHA league load a wrist shot — a slap-shot wind-up can be a penalty there
 Options: Toe drag — offer the puck to a reaching stick and pull it back inside the reach, best against an early poker
@@ -757,6 +769,8 @@ More moves is not better. Every extra move is another moment the puck spends exp
 ## Beating a Defender 1-on-1
 
 ### Attack a shoulder, not the chest — and know which shoulder you are choosing
+
+**In short:** Skate at a shoulder, never the chest, so they must turn, then take the lane their turn opens.
 
 ```facts
 Never: Skate straight at their chest — they stay square, keep both lanes closed and stand you up

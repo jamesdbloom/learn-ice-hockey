@@ -60,6 +60,8 @@ That last point is the one amateurs skip and the one that costs most. You cannot
 
 ### What the evidence actually supports — and what it doesn't
 
+**In short:** Hours alone do not rank players; practice still matters, but the structure of the hours is what does the work.
+
 **The "10,000 hours rule" is a popularisation, not a research finding.** It comes from Malcolm Gladwell's reading of Ericsson's 1993 study of violinists, in which the best group had averaged roughly that many hours of practice by around age 20. It was a group mean, not a threshold or a target. Ericsson himself rejected the way the number was used, because it ignored the difference between deliberate practice and merely spending time.
 
 **And the 1993 violinist study itself did not replicate.** Macnamara and Maitra (*Royal Society Open Science*, 2019) re-ran it double-blind with 39 violinists against the original's 30. *"We did not replicate Ericsson et al.'s major result"*, they report, and they found *"no statistically significant differences in accumulated practice alone to age 18 between the best and good violinists"*. (Their bracketed reference numbers and the page citation are left out of the quotations here.)
@@ -105,6 +107,8 @@ What to do with that:
 **"Learning styles" do not hold up.** Pashler, McDaniel, Rohrer and Bjork (2008) found "virtually no evidence" for the idea that you are a "visual" or "kinaesthetic" learner. That was a review of **classroom education**, not sport, and no hockey test of the idea was found. If a coach's explanation doesn't land, ask for a different one because it was unclear — not because you belong to a category.
 
 ### One popular idea that does hold up — with a precondition attached
+
+**In short:** On systems, reads and rules, answer the questions before you read on, then check; the checking does the work.
 
 **Trying to produce an answer, and failing, teaches you more than reading the right answer — provided you are then shown the right answer.** That last clause is the difference between a large effect and none, and it usually gets dropped.
 

@@ -94,6 +94,8 @@ A brain re-running a turnover has less left for what the bench is for: watching 
 
 ### The reset itself
 
+**In short:** Build it as a fixed routine: a physical trigger, one long breath out, a cue word, then name your next action.
+
 No study has tested this exact four-step sequence, so the sequence is coaching craft, but each step has support of its own and the whole thing is close to universally taught. Build it as a fixed routine so it runs without thinking.
 
 **One: a physical trigger.** One specific, repeatable movement: tap both shin pads with your stick, squeeze the shaft once, adjust your right glove. What it is does not matter; that it is always the same, and physical, does. It makes the reset something you do rather than a mood you wait for.
@@ -142,6 +144,8 @@ You have three jobs on the bench, and none of them is a post-mortem.
 
 ### The distinction
 
+**In short:** Judge yourself on what you control — route, gap, first touch, shot selection, feet — not on whether the puck goes in.
+
 An **outcome goal** is a result you do not fully control: score, win, don't get scored on. A **process goal** is an action you do control: keep your **gap** — the distance between you and the carrier skating at you — at roughly **two to three stick lengths** through the neutral zone; take your first touch away from pressure; shoot within half a second in the slot; angle every carrier off the middle. **Those distances are a guide, not a law.** They move with your backward speed and the attacker's skill, and coaching pages disagree; [Defending the Rush](../systems/defending_the_rush.md) owns the full ladder.
 
 One goal does not belong on a list of process goals: ⚠️ **"finish every check" — you may not be allowed to check at all.** Your age **and** your league's category decide it: age can bar it outright, and clearing the age line does not settle it. [Body Contact and Battles](../technique/body_contact_and_battles.md) §1 sets out which classifications allow it, including the restricted form the IIHF writes for women's hockey. **In Britain neither the IIHF book nor the In-House Rules states an age.** Your competition's Rules of Competition do: §1 quotes IHUK's, which put the junior line between U12 and U14 and make the Women's NIHL non-checking. Outside the leagues IHUK runs, ask and get it in writing.
@@ -153,6 +157,8 @@ Angling — steering a carrier with your route rather than hitting them — is a
 You cannot control whether the puck goes in — the screen, the deflection and the save are not yours. You can control your route, your gap, your first touch, your shot selection and your feet.
 
 ### Why outcome focus makes you more inconsistent
+
+**In short:** Outcomes are noisy, and worrying about them makes you watch yourself, which breaks skills that normally run on their own.
 
 Three proposed reasons. The first is plain reasoning, the second has a reasonable evidence base, and the third has recently been undermined.
 
@@ -183,6 +189,8 @@ Same instruction, two wordings. The right-hand column is the usual recommendatio
 The pattern: point the cue at the puck, the ice, the target or the opponent, not at your own limbs.
 
 ### Building your own process list
+
+**In short:** Pick three process goals for your role and score yourself on them, but keep outcome goals in the mix.
 
 Pick **three** process goals for the season, specific to your role — three, and no more.
 
@@ -430,6 +438,8 @@ There is a slower cost too. A player playing not to lose the puck stops trying t
 
 ### Working on physical fear: graded exposure
 
+**In short:** Build up contact and shot-blocking in small steps and learn the technique: head up, chin off your chest, head out of the shot lane.
+
 The general approach that works for fear — in and out of sport — is **graded exposure**: controlled, gradually harder contact with the feared thing, at a level where you stay in control. Its clinical base for anxiety is strong; **applying it to hockey contact fear is coaching craft, not cited to a study here.** It matches the checking progressions Hockey Canada and USA Hockey teach. Hockey Canada's *Checking Resource Guide* calls checking *"a 4-step progression"* — **positioning and angling, stick checks, contact confidence and body contact, then body checking** — and USA Hockey's *Introduction To Body Contact* uses the same shape as a pyramid. ⚠️ **Take the order from that USA Hockey manual, not the ages:** it introduces body checking at 12-and-Under and quotes the 2007-09 rule book. Today **USA Hockey Rule 604(a) prohibits body checking "in the 12 & under youth age classifications and below"**, in all girls'/women's classifications and in non-check adult ones, and lets a local governing body bar it anywhere. Current ages are in [Body Contact and Battles](../technique/body_contact_and_battles.md) §1. These are teaching sequences for a skill, not tested treatments for fear.
 
 **For contact.** Work up in steps: leaning and pushing against a stationary partner, then angling along the boards at half speed, then one-on-one wall battles, then game pace. Stay at each level until it bores you. The technique is in [Body Contact and Battles](../technique/body_contact_and_battles.md).
@@ -554,7 +564,9 @@ Given that, here is what actually helps.
 
 ### Frustration has a price on the scoreboard
 
-**Skate away from a bad call and run your reset.** Keep your hands off officials, keep your stick off the boards and glass, and never throw anything onto the ice from the bench — not a water bottle, not a towel, not even a stick to a teammate who has lost theirs. Your frustration, shown, hands the other team a power play, and the goal they score will be blamed on the call rather than on you. And a power-play penalty is the cheap end: plenty of these acts end your game.
+**In short:** Skate away from a bad call and run your reset.
+
+Keep your hands off officials, keep your stick off the boards and glass, and never throw anything onto the ice from the bench — not a water bottle, not a towel, not even a stick to a teammate who has lost theirs. Your frustration, shown, hands the other team a power play, and the goal they score will be blamed on the call rather than on you. And a power-play penalty is the cheap end: plenty of these acts end your game.
 
 **What it costs.**
 
@@ -623,6 +635,8 @@ Mid-season, with early mornings and cold rinks, motivation stops being about amb
 ---
 
 ## 13. When to seek real help
+
+**In short:** If anxiety or low mood persists or spreads beyond the rink, see a qualified professional; if you are thinking about harming yourself, get help now.
 
 This document is about performance. It is not a substitute for care, and some of what looks like a mental-game problem is not one.
 

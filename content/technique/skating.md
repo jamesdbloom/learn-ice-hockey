@@ -50,6 +50,8 @@ Everything starts here. Get the stance right and half the faults in the rest of 
 
 ### Knee bend — the one that matters
 
+**In short:** Bend until your knees cover your toes; standing tall costs you power, balance, reaction time and edge angle.
+
 ```facts
 Technique: Bend your knees until they cover or pass your toes — around 90 degrees at the knee
 Position: Toe first, knee out in front of it, chest somewhere between the two
@@ -333,6 +335,8 @@ Hockey is not a sport of long straight sprints. The [Hockey Institute](https://h
 
 ### Acceleration and the first three strides: the technique
 
+**In short:** Drive along the ice, not upwards: short, quick strides on the front of your inside edges, torso forward, eyes up.
+
 ```facts
 Technique: Run the first few strides on the toes — the front two to three inches of the inside edges of both blades
 Position: Feet turned out slightly, heels closer together than toes, so both blades bite
@@ -510,6 +514,8 @@ And standing tall is why defencemen get beaten wide.
 
 ### Backward crossovers
 
+**In short:** Use backward crossovers when C-cuts cannot keep up, and build the inside leg's under-pull, the half most players miss.
+
 ```facts
 Goal: C-cuts are your cruising gear; backward crossovers are your acceleration and your lateral coverage
 Technique: The outside leg lifts and steps over the top of the inside leg, landing on its inside edge
@@ -628,6 +634,8 @@ The universal part: **pivot late.** Once you turn forwards you can no longer rea
 Learn-to-skate courses teach this **before** stopping, because you will fall long before you can stop. A rehearsed fall costs a bruise; an unrehearsed one can cost a wrist or a head. It takes five minutes to learn, and almost nobody who came to hockey as an adult has been shown it.
 
 ### How to fall
+
+**In short:** Get low, go down on your side and slide; tuck your chin for the ice, keep your head up for the boards.
 
 ```facts
 Action: Get low first — bend the knees and sink as you feel yourself going

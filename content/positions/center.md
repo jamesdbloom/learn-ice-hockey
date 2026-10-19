@@ -87,6 +87,8 @@ Key: On the conventional swing breakout your low positioning is what gives the d
 
 ### Defensive Zone: Carrying the Puck — Under Pressure
 
+**In short:** Get out of the middle to the boards or behind the net, then rim or reverse it, choosing before the puck arrives.
+
 ```facts
 Position: Low in the defensive zone near the boards or behind the net
 Never: Carry through traffic in your own zone — the middle of your own end is the most expensive place to lose it, on coaching consensus reasoned from shot danger and recovery time, not measurement
@@ -123,6 +125,8 @@ They are two prohibitions against two different injuries. A turned back makes th
 ---
 
 ### Defensive Zone: Pressuring an Opponent with the Puck
+
+**In short:** In a low zone collapse, help win the corner when the puck is there; cover the high slot when it is in front.
 
 ```facts
 Position: Low in the zone, supporting the strong-side defender
@@ -267,6 +271,8 @@ Key: If you don't initiate pressure, the opponent gets a free run at your defenc
 
 ### Neutral Zone: Without the Puck — Supporting the Rush Through the Middle
 
+**In short:** Stay level with or just behind the puck through the middle, and set the line's pace by arriving at full speed, not coasting.
+
 ```facts
 Position: Through the centre of the neutral zone, level with or slightly behind the puck
 Action: Be a moving target — keep pace with the play and stay connected to both wingers
@@ -307,6 +313,8 @@ The centre operates in the most dangerous part of the offensive zone — the slo
 
 ### Offensive Zone: Carrying the Puck — Free Space
 
+**In short:** With the puck and space in the slot, shoot; the one pass worth making first is the one across the middle.
+
 ```facts
 Position: In the slot — between the two faceoff circles, from the top of the circles down to the front of the net
 Action: Look to shoot from the slot — on coaching-consensus conversion ranges a slot shot is worth roughly three to seven times a perimeter one
@@ -333,6 +341,8 @@ Action: Keep moving and keep the puck moving
 ---
 
 ### Offensive Zone: Carrying the Puck — Under Pressure
+
+**In short:** Protect it on the wall or behind the net and cycle to open the slot, but make every cycle end in an attack.
 
 ```facts
 Position: In the slot, behind the net, or along the boards near the circles
@@ -369,6 +379,8 @@ Key: Behind the net you can see the whole ice and decide without risking a direc
 ---
 
 ### Offensive Zone: Pressuring an Opponent with the Puck
+
+**In short:** As the first forechecker, take an angle on the carrier, arrive under control, and steer them to one side; steer, don't push.
 
 ```facts
 Key: F1/F2/F3 are roles, not people — if a winger beats you to the puck they are F1 and you take the support role, immediately
@@ -418,6 +430,8 @@ Driving at a carrier from distance is a charge: Hockey Canada counts *"two or mo
 ---
 
 ### Offensive Zone: Without the Puck — Getting Open in the Slot
+
+**In short:** Get open in the slot: be still as a screen at the release, blade down for tips, and decide on rebounds before the shot.
 
 ```facts
 Position: In the slot between the two faceoff circles, just outside the crease — close enough to tip shots and pounce on rebounds
@@ -512,6 +526,8 @@ The full rules are in [Rules Primer](../foundation/rules_primer.md) and [Offensi
 
 ### Faceoffs — a defining responsibility of the centre
 
+**In short:** Win the draws that matter — own end, special teams, the last minute, after an icing — and warn your wingers before each.
+
 ```facts
 Priority: Ten or fifteen draws a game matter enormously — your own end, special teams, the last minute, and after an icing; the count is a coaching estimate, not a measurement
 Read: Own end — win it back to your defenders, ideally the boards-side one for a quick rim out; their end — to a defender for a one-timer, or back to a winger in the circle
@@ -560,6 +576,8 @@ You are the primary faceoff taker, and **most draws barely matter.** An NHL game
 **The exception is on the draw you care most about — after an icing.** NHL Rule 76.4: *"When an icing infraction occurs, the first face-off violation by either team will not result in the center being removed."* The linesperson warns the team instead, any later violation by that team is a bench minor, and the warning is per team — one free attempt each. The IIHF's 2026/27 book, the PWHL and the IHUK In-House Rules carry the same carve-out. **Hockey Canada gives it in Junior divisions only**, and there it is wider, reaching *"any face-off violation, including but not limited to late arrival, encroachment, or early movement"*, with a later violation by the same team a minor. **Outside Junior, Hockey Canada gives you nothing after an icing, and USA Hockey and CARHA give you nothing at all.** Read it as one attempt, not a free draw. Full detail in [Faceoffs](../systems/faceoffs.md).
 ### Handling the puck — catching it is free, holding it is not
 
+**In short:** Knock a caught puck straight down and play it; at a draw, keep your hand off until a third player touches it.
+
 ```facts
 Rule: Catching the puck out of the air is not penalised in any of the six books — NHL, IIHF and PWHL (67.2 and 69.2) ask only that you "immediately place it or knock it down to the ice"; Hockey Canada 10.2(a)(iii) and CARHA Rule 61(a) exempt an immediate drop; USA Hockey's permission is casebook only
 Never: Hold a puck you have caught, carry it, or drop it somewhere better. Knock it straight down where you caught it instead
@@ -574,7 +592,7 @@ Rule: With your own net empty, a skater covering a puck itself in the crease con
 Rule: Hockey Canada gives a penalty shot for a puck in your crease (4.11(a)(v)), a goal with your net empty (10.2(a)(vi)); 10.2(a)(v) also names an infraction inside it, so treat a puck just outside covered while you stand in it as a possible shot or goal
 ```
 
-**Knock a puck out of the air straight down where you caught it, and play it with your stick or your skate.** Never hold it, carry it or drop it somewhere better; never cover a puck in your own crease with your hand or your body; and at a live draw keep your hand off it altogether until a third player has touched it.
+Never hold it, carry it or drop it somewhere better; never cover a puck in your own crease with your hand or your body; and at a live draw keep your hand off it altogether until a third player has touched it.
 
 **Catching it is not the offence.** NHL and IIHF **Rule 67.2**, and the PWHL's 69.2: *"A player shall be permitted to catch the puck out of the air but must immediately place it or knock it down to the ice."* Hockey Canada exempts a player who closes their hand on the puck *"to catch or stop the puck and immediately drops it to the ice without gaining or attempting to gain an advantage"*, and CARHA lets play continue in the same case. USA Hockey's permission is in its Casebook rather than its playing rules — the catch and drop must be *"one continuous motion"* — and a hand not opened at once outside the crease is a stoppage there, not a penalty. ⚠️ **But covering a loose puck on the ice with your hand is a minor under USA Hockey**, and inside the crease a closed hand is a **penalty shot or optional minor**.
 
@@ -617,6 +635,8 @@ In an **umbrella** or an **overload** you will usually be low or on the strong-s
 **Passing in is an alternative to carrying in, not an upgrade on it.** The tracked figures put pass-ins and carry-ins about level on the power play and carrying clearly ahead at even strength, so pass in because the passing lane is the one that is open, not because passing beats carrying. [Zone Entries](../systems/zone_entries.md) covers those figures, the league they were measured in and their limits.
 
 ### Penalty Kill (your team is shorthanded)
+
+**In short:** Know which shape you are running before the drop, hold your place in it, and pressure the puck rather than chase it.
 
 ```facts
 Position: In a box you are one of the two high players, each responsible for one point — there is no single "top" to drift into
@@ -665,6 +685,8 @@ Convention: How much your team blocks at all is a coaching choice, not a law —
 
 ### Icing
 
+**In short:** Carry the puck past the red line before you dump it, and if your legs are gone, put it off the glass instead.
+
 ```facts
 Risk: Your icing risk is the lazy dump from behind the red line, not the defensive-zone clear
 Technique: Carry the extra stride so the puck is past the red line on your stick before you dump it — legal however far it goes, unless your league splits the ice at the blue lines
@@ -696,6 +718,8 @@ Key: When they ice it under NHL, IIHF or PWHL rules you take an offensive-zone d
 One point on the matchup, because it is often misquoted: the bar falls only on the team that iced the puck. So the fresh-legs advantage is yours home or away when *they* ice it, and forfeited home or away when you do. See [Faceoffs](../systems/faceoffs.md).
 
 ### Backchecking — the middle lane is usually yours
+
+**In short:** In this guide's default, come back inside the middle-lane driver and leave the puck carrier to your defence.
 
 ```facts
 Convention: The centre takes the middle lane and the wingers the outside — the assignment assumed here, but a coaching choice, not a law, and no count of which is commonest was found

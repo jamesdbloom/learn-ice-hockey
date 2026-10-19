@@ -87,6 +87,8 @@ Everything else is built on this. A stance that is wrong in a small way at the s
 
 ### Depth is the fundamental decision
 
+**In short:** Pick your depth before the shot: challenge a lone shooter from distance, get back when a pass or tight angle is on.
+
 ```facts
 Key: Every save begins with a decision you made before the shot — how far out of my net am I?
 Priority: The trade is always front door against back door — shot taken away against pass still covered
@@ -228,6 +230,8 @@ Goalie skating is its own discipline. You almost never take a normal forward str
 
 ### On your feet
 
+**In short:** Shuffle for short moves to stay square, T-push when you have time, and retreat on C-cuts, eyes on the puck.
+
 ```facts
 Options: Shuffle for short lateral moves, T-push for longer ones, telescope in and out, C-cut backwards to retreat
 Technique: Shuffle without turning your skates and arrive stopped rather than drifting — you stay square the whole way
@@ -259,6 +263,8 @@ Never: Stand up away from the puck first — that is how goalies end up out of p
 - **Butterfly recovery** — getting back up. The convention taught with the modern butterfly is to keep the **puck-side leg down** and lift the far leg first, then push toward the puck. Standing up "away" from the puck first is how goalies end up out of position on the second shot.
 
 ### Post integration: VH and RVH
+
+**In short:** Seal the post on a read, never out of habit; this guide's default is on late, off early.
 
 ```facts
 Read: Seal the post when the puck is below the goal line or very tight to it — otherwise there is a gap at ice level
@@ -292,6 +298,8 @@ RVH was developed in Sweden in 2010 by goaltending coaches Linda Blomquist and D
 
 ### The load goaltending puts on your hips, and warming up for it
 
+**In short:** Get a sweat on before live shots, warm up by moving, and get groin or hip pain looked at.
+
 ```facts
 Action: Get a sweat on before you take live shots — the butterfly drops, slides and post seals of goaltending are force at the end of your hip range, and cold is where they cost you
 Risk: A goalie coaching manual says jumping straight into live shots without a sweat "drastically increases the risk of pulled groin or hip flexor muscles" — its judgement, not a measured rate
@@ -312,6 +320,8 @@ The butterfly drops, the slides and the post seals set out in this section are a
 
 ## Save Selection
 
+**In short:** Read the play first, then pick the save that fits it and controls where the rebound goes.
+
 Note the word: **selection**. You are not reacting randomly; you are choosing the save that fits the situation, and the choice is made before the shot arrives, from your read of where everyone is.
 
 - **Butterfly** — dropping to your knees with both pads extended sideways and the five-hole closed. It covers the great majority of the lower net, and it is the base save of modern goaltending for that reason. *(The supporting claim usually given — that most goals are scored low — is repeated widely in coaching material, but no measured source is offered for it here, so treat it as consensus rather than a figure.)*
@@ -324,6 +334,8 @@ Note the word: **selection**. You are not reacting randomly; you are choosing th
 - **Poke check** — sliding your hand up the shaft and thrusting the blade out at the puck. Effective against a shooter who has the puck out in front of them on a breakaway or a wrap-around, or to clear a loose puck in the crease. It is a commitment: if you miss, you are down a stick-length of reach and your weight is forward.
 
 ### The butterfly is a tool, not a religion
+
+**In short:** Stay on your feet until going down is the answer, and use the butterfly as a save you choose, not a reflex.
 
 ```facts
 Never: Drop into a butterfly on every shot as a reflex — going down first and hoping the puck hits you
@@ -397,6 +409,8 @@ When you cannot absorb, you must aim. The target is **the corners** — wide and
 
 ### Freezing the puck — and the rules that govern it
 
+**In short:** Cover a puck you had to save with an attacker on you; otherwise put it down and play it.
+
 ```facts
 Priority: Let a puck on the back of your net fall off — covering is a faceoff in NHL and IIHF 85.2, a minor in USA Hockey Casebook 610 and Hockey Canada 6.12(b); treat it as one anywhere in CARHA (58(b), 61(b))
 Rule: You may hold the puck in your hands for up to three seconds unless actually being checked; longer is a minor (NHL Rule 67.3(i))
@@ -455,6 +469,8 @@ Rule: What USA Hockey's rule bars is specifically catching the puck in the glove
 
 ### When to freeze, tactically
 
+**In short:** Freeze a contested puck in your crease; outside it, or when your defenceman arrives with time, play it or clear it.
+
 ```facts
 Read: In your crease, freeze a contested rebound you have clean with an attacker on you — outside it the NHL and IIHF protect only a cover that follows your own save
 Action: When your team is pinned, freeze a contested puck in your crease — the defensive-zone draw buys a change and a breath; the one puck it backfires on is a dump-in from their own side of the red line
@@ -488,6 +504,8 @@ Never: Freeze when your defenceman is arriving with time — it matters much les
 ---
 
 ## Tracking the Puck
+
+**In short:** Watch the puck all the way into your body with your head following it, and start moving when a pass is released.
 
 ```facts
 Key: Goalie coaches put almost every soft goal down to the same root cause — at some point you stopped seeing the puck; that is the coaching account, not a counted breakdown
@@ -582,6 +600,8 @@ A tip or deflection changes the puck's direction a few feet in front of you, and
 
 ### The trapezoid — the NHL and IIHF rule that defines where you may play the puck
 
+**In short:** Behind your net, handle the puck only inside the trapezoid wherever one applies, and in Britain play as though it does.
+
 ![](diagram:the-trapezoid)
 
 ```facts
@@ -616,6 +636,8 @@ Rule: No trapezoid applies in front of the goal line; the bar on play past the c
 - **Taking part in the play beyond the centre red line:** a minor in all six books — NHL and PWHL 27.7, IIHF 27.6, USA Hockey 407(c), Hockey Canada 4.13(c) (penalised under 8.3(a)), and CARHA 37(e). "In any manner" includes checking an opponent, not only playing the puck. ⚠️ **The test runs opposite ways, so keep your skates and the puck both on your own side.** The NHL, IIHF and PWHL judge it on the puck, so a puck over the line is a minor even with your skates behind it (IIHF Situation 27.5). USA Hockey and Hockey Canada judge it on your skates (USA Hockey *Casebook* Rule 407(c), Situation 13; Hockey Canada Rule 8.3(a)(ii) and Interpretation 2 to 4.13(c)). USA Hockey's *Casebook* answers a goalie accidentally struck by the puck over the line on the way to the bench as no penalty (Situation 12); the other books have not been searched here for a case of their own.
 
 ### No trapezoid doesn't mean no restriction — how the books without one restrict the freeze instead
+
+**In short:** Under USA Hockey, Hockey Canada and CARHA, the ice behind your net is yours to play, but a freeze out there can cost you.
 
 ```facts
 Rule: Hockey Canada writes no trapezoid at all, and that is not freedom — but read both halves: Interpretation 3 to Rule 10.1(a) clause v bars freezing once you leave the crease, a Minor penalty, no warning, while clause ii permits coming out to cut down the angle and covering after the save
@@ -653,6 +675,8 @@ Rule: Crease contact is not the test — the Casebook excuses a cover made prone
 - **PWHL Rule 65.2(i):** a deliberate freeze outside your crease is a minor, in the NHL's words, and 65.2(vi) carries the racing-out clause with its save-then-cover Note. The PWHL switches the trapezoid off but still lists the minor (65.2(viii)), so play inside the old lines; outside your crease, none of that ice is yours to sit on.
 
 ### Stopping pucks for your defence
+
+**In short:** Kill a rim dead behind the net where your book lets you, and call "leave it" early so your defenceman knows.
 
 ```facts
 Action: Kill a rimmed puck dead behind the net and leave it stationary — you have converted a race into a pickup
@@ -698,6 +722,8 @@ When you do move the puck, rank your options by risk:
 
 ### Putting the puck out of play — the minor that is yours too, and the tier above it after a whistle
 
+**In short:** Clear along the glass, never over it, and once the whistle has gone, put the puck down.
+
 ```facts
 Action: Clear along the glass rather than up it, and if the puck is not settled on your blade put it down the boards instead of lifting it
 Rule: Deliberately shooting or batting the puck out of the playing area, from anywhere on the ice, is a minor — and both books print it against goalkeepers by name (NHL Rule 63.2(ii), at Reference Table 11; IIHF Rule 63.2(II), at Table 13 in the 2025/26 book, Table 11 in the 2026/27 one)
@@ -713,7 +739,7 @@ Rule: A fifth book has no zone limit at all — CARHA Rule 55 is a minor for a g
 Rule: You do not serve a goalie's minor yourself — a teammate on the ice, designated by your coach, serves it (NHL and IIHF 27.1; USA Hockey 407(a) adds misconducts) — but a game misconduct takes your place in the net (USA Hockey 407(b))
 ```
 
-**Clear along the glass, never over it, and once the whistle has gone, put the puck down.** If the puck is not settled on your blade, put it down the boards instead of lifting it. A rim that dies in the corner is worse than a clean exit and far better than a minor. And never lift a puck out of the rink to buy a whistle: that is the deliberate offence, in front of a referee who can see exactly what you did.
+If the puck is not settled on your blade, put it down the boards instead of lifting it. A rim that dies in the corner is worse than a clean exit and far better than a minor. And never lift a puck out of the rink to buy a whistle: that is the deliberate offence, in front of a referee who can see exactly what you did.
 
 **Two things to know, so you do not start flinching at pucks you should stop.** A stick save that deflects over the glass is not a clear — the IIHF Situation Handbook says you did not "shoot" it out (Situation 63.29). ⚠️ **But do not stretch that into a deliberateness defence:** the NHL's and IIHF's defending-zone clause has no "deliberately" in it, so a rebound you bat out of the rink from your crease is still a minor there. Only USA Hockey excuses a rebound batted away before you have control of it (*Casebook* Rule 610, Situation 5).
 
@@ -729,6 +755,8 @@ Rule: You do not serve a goalie's minor yourself — a teammate on the ice, desi
 
 ### The discipline of not playing it
 
+**In short:** The best puck-handling decision a goalie makes is usually to leave the puck alone.
+
 ```facts
 Key: The best puck-handling decision a goalie makes is usually to leave the puck alone
 Never: Leave your net for a 50-50 puck — if you lose the race the net is empty with you behind the play
@@ -740,8 +768,6 @@ Risk: No source here gives a goalie a board-contact posture — the skater's ska
 Mindset: A goalie who handles the puck well is an asset; one who believes they handle it well is a liability
 ```
 
-The best puck-handling decision a goalie makes is usually to leave the puck alone.
-
 ![](diagram:goalie-fifty-fifty-puck)
 
 - **Don't leave your net for a 50-50 puck.** If you lose the race, the net is empty and you are behind the play. Racing out and jumping on a loose puck instead of playing it is also a minor (NHL and IIHF 63.2(vi)). ⚠️ **That is not a reason to hesitate over a puck you have already stopped:** coming out, making the save and *then* covering is legal under the Note to that same clause, and Hockey Canada's Interpretation 3 to Rule 10.1(a) permits it at clause ii. Its clause v bars freezing once you leave the crease, though, and the book never says which governs.
@@ -751,6 +777,8 @@ The best puck-handling decision a goalie makes is usually to leave the puck alon
 - **Watch the clock and the pressure, not your ego.** A goalie who handles the puck well is a real asset. A goalie who *believes* they handle the puck well is a liability.
 
 ### Icing — you are the one who can wave it off
+
+**In short:** Usually you want the icing whistle; decide before the puck arrives, and call "leave it" or "I've got it".
 
 ```facts
 Action: Usually you want the whistle, so do nothing, deliberately — drifting toward the corner hands them a live puck in your end
@@ -805,6 +833,8 @@ You see everything. You are stationary and facing the play, while your defencema
 ![](diagram:the-call-and-who-can-see-it)
 
 ### The core calls
+
+**In short:** Agree your calls in the room, and make "screen" your first call, because only you know you cannot see.
 
 ```facts
 Convention: Goalie calls have a standard vocabulary, but the words vary by team — agree yours in the room, not on the ice
@@ -872,6 +902,8 @@ Full treatment, including the whole team's vocabulary and who owns which call: [
 
 ### Breakaways
 
+**In short:** Meet the shooter well out, retreat with them on C-cuts, and stay on your feet: the last one to move wins.
+
 ```facts
 Key: One attacker, you, and a lot of time to think — which is the actual difficulty
 Technique: Meet them well out, then retreat on C-cuts, matching their speed so the angle stays closed the whole way
@@ -908,6 +940,8 @@ One attacker, you, and a lot of time to think — which is the actual difficulty
 - **The three amateur books give a penalty shot instead, and reach further.** USA Hockey 610(e) awards a penalty shot or optional minor for removal during a breakaway — goalies in every classification, skaters in every one except Adults — plus a separate limb for the last two minutes and overtime, no breakaway needed. ⚠️ **Hockey Canada 4.11(a)(iii) puts your blocker and trapper in the same clause as your mask:** pulling any of them off during a breakaway in the neutral or attacking zone, or in your defending zone in the last two minutes or overtime, concedes a penalty shot. CARHA 24(f) writes both limbs for the helmet. The NHL and IIHF write no last-two-minutes limb, and USA Hockey publishes no interpretation of 610(e). In USA Hockey's sled hockey the shot is re-awarded instead, which is a sled rule and not a stand-up one.
 
 ### Penalty shots
+
+**In short:** Stay in your crease until the shooter touches the puck, be patient, and play the shot once.
 
 ```facts
 Key: There is no clock on it, so be patient and let them run out of ideas
@@ -1016,6 +1050,8 @@ Quiet. You will see very few shots and then, occasionally, a rush the other way 
 
 ### Penalty kill (your team is down a man)
 
+**In short:** Know your kill's shape, fight to see the puck, and freeze only pucks you are entitled to freeze, to buy whistles.
+
 ```facts
 Read: On the penalty kill expect a lot of traffic, a lot of shots you cannot see, and lateral puck movement designed to make you move
 Action: Know whether your team runs a box, a diamond or wedge+1 — it tells you which lanes are conceded
@@ -1044,6 +1080,8 @@ The opposite: a lot of traffic, a lot of shots you cannot see, and a lot of late
 - **The head count.** In no book is the exemption unconditional. The NHL, IIHF, USA Hockey and Hockey Canada all ask whether your side is below the other's numerical strength when the puck is shot; the NHL and IIHF judge it *"at the instant the penalty expires"*, counting the released player back in, and Hockey Canada says the same (Interpretation 3 to 6.7(b)). The relief for a puck already released is in NHL and IIHF 81.6, USA Hockey 624(b)(1) and Hockey Canada's Interpretation 2 to 6.7(b).
 
 ### 6-on-5 with your net empty
+
+**In short:** Leave fast with your stick when pulled; facing an extra attacker, play a little deeper and watch the back door.
 
 ```facts
 Action: Go hard and go early when called — a slow change risks a too-many-men penalty or a goal with you halfway up the ice
@@ -1104,6 +1142,8 @@ A faceoff in your end is the one moment the play comes to you on a schedule, so 
 
 ### When a fight or a scrum breaks out
 
+**In short:** Stay in your net, never go in to fight or break it up, and move only with the referee's permission.
+
 ```facts
 Key: One instruction satisfies all six books during an altercation: stay in your net, and if you need to move, get the referee's permission first
 Never: Go in, to fight or to break it up — a fight ejects you under the IIHF, USA Hockey and Hockey Canada, and can under CARHA; Hockey Canada and CARHA eject a peacemaker, USA Hockey the first in
@@ -1137,6 +1177,8 @@ Gloves come off in front of you and the instinct is to go. Don't.
 
 ### The protection you have — and how it differs by book
 
+**In short:** Get to your spot in the paint early, play through traffic rather than appealing it, and say what happened while it is happening.
+
 ```facts
 Key: On a body in your paint when the puck goes in, the books do not give the same answer, and CARHA writes a crease rule of its own, so find out which your league runs before you rely on any of this
 Rule: In your paint, attacker-initiated contact voids the goal (NHL and IIHF 69.3), bar incidental contact in a rebound or loose-puck scramble (69.7), a carve-out USA Hockey, Hockey Canada and CARHA lack. Only IIHF 69.1 gives the referee "the possibility to stop the game" for an attacker who will not move
@@ -1154,7 +1196,7 @@ Rule: CARHA prices contact on you above the minor — 66(b) a discretionary majo
 Rule: Hockey Canada is not capped at a minor — 8.5(b) reaches a major plus game misconduct at the referee's discretion on the degree of violence of impact, and mandatorily for charging you and for any interference-with-goaltender foul that injures; 8.5(c) is a match penalty
 ```
 
-**Get to your spot in the paint early, play through traffic rather than appealing it, and say what happened while it is happening.** Then know what protection you actually have, because a lot of goalies believe they have more than they do and play accordingly.
+Know what protection you actually have, because a lot of goalies believe they have more than they do and play accordingly.
 
 - **Inside your crease the paint is yours.** An attacker who initiates contact with you there voids the goal under the NHL, IIHF and PWHL books, except for incidental contact in a rebound or loose-puck scramble.
 - **Outside your crease you are not fair game — but a screen is not a foul.** Contact out there can still cost them the goal in every book. A screen set outside your paint almost never will.
@@ -1186,6 +1228,8 @@ Rule: Hockey Canada is not capped at a minor — 8.5(b) reaches a major plus gam
 **Outside your crease, neither USA Hockey nor Hockey Canada disallows a goal for anything short of contact or blocking your way back.** USA Hockey writes no goalie-vision provision at all — its Rules and its *Casebook* were both searched — and Hockey Canada's two references to your view reach only a player in your crease. So a screen set outside your paint without contact has nothing to call it under, and your defencemen are the whole answer. **On contact, though, both protect you more than the NHL does.**
 
 ### The tier for running you — and which books price it highest
+
+**In short:** If someone runs you, get set again and tell the referee what happened, not what to call.
 
 ```facts
 Key: Everything above decides whether a goal counts; this decides whether the player who ran you is still in the game, and it is a protection you have rather than a restriction on you
@@ -1223,6 +1267,8 @@ Action: Say what happened, not what you want — "he drove through me" gets you 
 - 🇬🇧 **The IIHF ceiling:** a hit from behind stays under Rule 43 even when it reaches your head, so no minor; a head hit from the front goes to Rule 48, which keeps one. The EIHL Casebook writes nothing on Rules 43 or 48. The IIHF book writes no match penalty, so a game misconduct is the most it can do inside the game, with supplementary discipline beyond it. That Rule 43 reaches a goalie is a reading of how the book is assembled (Rule 5.1), not a sentence the IIHF prints.
 
 ### What it changes about what you do
+
+**In short:** Hold your crease early, play through a legal screen, keep your stick and blocker to yourself, and never embellish.
 
 ```facts
 Action: Establish and hold your crease position early, and shout for the net front rather than dropping to the ice
@@ -1263,6 +1309,8 @@ Rule: Your slash is not capped at two minutes — NHL 61.3 makes a major discret
 
 ### When you initiate the contact, and which rows price it against you
 
+**In short:** Claim your crease position early, by getting there first, not by moving an attacker off it.
+
 ```facts
 Key: Rows 6E to 6H penalise you for your own unnecessary contact or excessive force, whether or not the attacker gives ground; only 6F reaches them too (NHL Table 14; IIHF 2025/26 Table 16)
 Rule: Your crease position is yours to claim — the IIHF Situation Handbook's Situation 69.2 says "The attacking player must give ground to the goalkeeper to play its position within the goal crease", and NHL and IIHF Rule 69.3 void the goal if your establishing contact impairs your defence of it
@@ -1278,7 +1326,7 @@ Rule: Hockey Canada's minor for deliberate contact at 8.3(a)(i) is not your ceil
 Never: Tell an opponent who will not give ground after your contact that the rules give them a free one — under the NHL's own 69.3 they take a minor, under the IIHF's "the appropriate penalty"
 ```
 
-**Claim your crease position early, and claim it cleanly.** In the NHL, IIHF and PWHL books, what prices your own contact against you is the manner you took the position in, not the taking of it. ⚠️ **And unnecessary contact is enough — no force is needed.** Take your ground by getting there first, not by moving an opponent off it.
+In the NHL, IIHF and PWHL books, what prices your own contact against you is the manner you took the position in, not the taking of it. ⚠️ **And unnecessary contact is enough — no force is needed.** Take your ground by getting there first, not by moving an opponent off it.
 
 **Do not tell an opponent who will not give ground after your contact that the rules give him a free one.** Under both books' rule text he is penalised; what the referee judges is the tier, not whether.
 
@@ -1304,6 +1352,8 @@ Never: Tell an opponent who will not give ground after your contact that the rul
 **This section is written for the other five players.** Many net-front goals against are not goalie errors at all — they are skater habits that make the goalie's job impossible. That is a coaching judgement rather than a measured share: no goaltending source here counts goals by cause. [Game Management](../systems/game_management.md) and [Offensive Zone Play](../systems/offensive_zone_play.md) count narrower tip, deflection and rebound shares, but the play-by-play feed both use has no marker for a screen, so the cause this section leans on hardest stays uncounted.
 
 ### In front of your own net
+
+**In short:** Win the net front by position, not by moving the screener; if a battle moves a body, take it to the corner, skates down.
 
 ```facts
 Action: Win the net front by position, never by moving the screener — inside shoulder ahead of theirs, no lean, and lift their stick up, not sideways, well below the hands as the puck arrives, then let go
@@ -1342,6 +1392,8 @@ The picture shows the other net-front case, the screener with no puck: hold the 
 
 ### The puck, the calls and their stick
 
+**In short:** Take the pass on a 2-on-1, answer your goalie's calls, and put a stick in their hand when theirs breaks.
+
 ```facts
 Action: On a 2-on-1 take the pass and give your goalie the shot, and don't slide before the pass is released unless the timed slide is your team's system
 Action: Let your goalie play the puck when they call for it — "I've got it" means get to your breakout position — and tell them what you want while you are still coming back, not as you arrive
@@ -1374,6 +1426,8 @@ Brief here — full treatment in [Equipment](../off-the-ice/equipment.md).
 
 ### Protection, and the neck laceration protector
 
+**In short:** Buy your own mask even if you borrow the rest, and wear a neck laceration protector at every age.
+
 ```facts
 Action: Borrow the pads, blocker, trapper and chest protector; buy the mask — an in-date sticker is a certification clock, not a condition report, and tells you nothing about a loaned mask's impact history
 Action: Replace gear you have outgrown — gear that hurts you teaches you to flinch, and that cannot be coached out; fit and comfort beat brand and looks, and dull edges destroy lateral movement first
@@ -1402,6 +1456,8 @@ Rule: USA Hockey Rule 304(g) requires a HECC-certified neck laceration protector
 - **North America:** Hockey Canada 3.6(c) requires a BNQ-certified throat protector in minor and female hockey, still required with a mask attachment. USA Hockey 304(g) requires a HECC-certified neck laceration protector in every classification except Adults (BNQ also satisfies it through 2026-27, and adults are strongly recommended to wear one) — **an adult exemption that is not yours in Britain.** [Equipment](../off-the-ice/equipment.md) has the standards, and [UK and England Rules](../foundation/uk_rules.md) the In-House amendments.
 
 ### If you take one off the mask
+
+**In short:** If a puck hits your mask, say so at the next stoppage; do not wait for a whistle.
 
 ```facts
 Action: Say it at the next stoppage — to the nearest official, to your bench, to your captain. You are the only player on the ice whose face nobody can see
@@ -1440,6 +1496,8 @@ Key: Too long a paddle makes you stand taller, drifts your stick hand from your 
 
 ### If your stick breaks
 
+**In short:** When your stick breaks, the safe default under any book is to drop it and get a stick from a teammate's hand.
+
 ```facts
 Never: Assume the NHL and IIHF play-on allowance travels to USA Hockey play — under its rules that is a question for your league
 Rule: In stand-up hockey, playing on with a broken stick is a goalie's permission under NHL, IIHF and PWHL Rule 10.4 — you are not required to drop it there, and neither USA Hockey's stand-up rules, nor Hockey Canada, nor CARHA writes you that allowance
@@ -1453,7 +1511,7 @@ Rule: Under Hockey Canada leave a slid stick where it lies — Interpretation 1 
 Rule: Tell your skaters not to slide it either — Hockey Canada's Interpretation 1 to 3.2(c) puts a minor on them under 10.5(a) and reaches a penalty shot where the stick is slid at the puck or puck carrier in your defending zone
 ```
 
-**When your stick breaks, the safe default under any book is to drop it and get a stick from a teammate's hand.** Whether you may play on with the broken one depends on the book.
+Whether you may play on with the broken one depends on the book.
 
 - **Drop it unless you know your book lets you play on.** The NHL, IIHF and PWHL do; USA Hockey's stand-up rules, Hockey Canada and CARHA do not.
 - **Take a replacement from a teammate's hand on the ice — never off the ice, and never from the bench.** A skater's stick is legal in your hands meanwhile. Until one reaches you, you have a blocker, a glove and your body.
@@ -1664,7 +1722,7 @@ document, that is named too.*
 9. **When someone runs you, tell the referee what happened, not what to call**, and in EIH or SIHA competition say it at the time, because nobody reviews it. ⚠️ **In a USA Hockey checking game, expect contact in a corner while you hold the puck**, though a check meant to intimidate or punish you is still charging.
 10. **When a fight breaks out, stay in your crease until you are directed out.** ⚠️ **Leaving it is a minor in most books. A fight ejects you under the IIHF, USA Hockey and Hockey Canada, and can under CARHA and the PWHL; breaking one up, under Hockey Canada and CARHA, and USA Hockey if first in.**
 11. **Say what you can see, early, short and every time** — **"screen", "time", "man on", "back door"** — and agree that **"shot"** means you have the shooter. ⚠️ **After a hard shot off your mask, say something at the next stoppage:** a whistle may never come, and a concussion needs no knock-out. A medical professional decides when you play again.
-12. **Tell your skaters:** never shoot at your head in warm-ups. Stand beside a screener; never walk him out, which can be called interference. Move a net-front body toward the corner, skates on the ice, ⚠️ **and never from behind:** a hit that sends a player head first into the post ends the hitter's game in most books, and can in all six.
+12. **Tell your skaters:** never shoot at your head in warm-ups. Stand beside a screener; never walk him out, which can be called interference. If a battle moves a net-front body, send it toward the corner, skates on the ice, ⚠️ **and never from behind:** a hit that sends a player head first into the post ends the hitter's game in most books, and can in all six.
 13. **Wear gear that is yours, and warm up before a live shot.** **Buy your own mask**, even if you borrow the rest. 🇬🇧 **Wear a neck laceration protector at every age** — adults too in Britain, and a dangler does not replace it. ⚠️ **Groin or hip pain that persists or keeps coming back needs a physiotherapist or sports physician.**
 14. **When you are pulled, take your stick and get to the bench fast** — when called for an extra attacker, or on a delayed call once your team has the puck. ⚠️ **Leave nothing near the net:** it can cost an awarded goal or a penalty shot. **When they pull theirs**, play a touch deeper and expect passes.
 15. **After a bad goal goes in, run your reset ritual before the next faceoff.** Skate a circle, get a drink, tap both posts — the same way every time. Do the analysis tomorrow, and never point at a teammate.

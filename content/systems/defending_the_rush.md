@@ -47,6 +47,8 @@ A **rush** is an attack that arrives before the defence is set — the goalie is
 
 ## Why Rush Defence Matters More Than Anything You Do in the Zone
 
+**In short:** Stopping a rush before it becomes a chance is worth far more than defending one well.
+
 ```facts
 Key: On a rush your goalie is moving and cannot be set — and being set is what makes routine saves routine
 Key: Nobody has a mark, assignments are formed on the fly, and the attackers pick the play rather than you
@@ -154,6 +156,8 @@ Instead:
 
 ### Target distances
 
+**In short:** Keep the gap shrinking the whole way in; the stick-length distances are a guide, not a law.
+
 ```facts
 Position: Roughly two to three stick lengths through the neutral zone in open ice, around a stick and a half as the carrier crosses the centre red line, and roughly a stick length at your own blue line
 Key: The gap should be closing the whole way in; a gap that grows as they approach is a goal waiting to happen
@@ -216,6 +220,8 @@ Your stick is a passive weapon. Used well it removes options without committing 
 - **Hide the poke check until you use it.** Telegraphing it lets the carrier pull the puck back and go around your reach.
 
 ### Angle to take the middle and force them outside
+
+**In short:** Sit slightly inside the carrier so their only route is the wall; the route is yours everywhere, the contact is not.
 
 ```facts
 Key: The middle of the ice is the dangerous ice — shots from the slot beat goalies, shots from the wall mostly do not
@@ -283,6 +289,8 @@ At some point you must turn and skate forwards with them. Delay that moment as l
 
 ### The three lanes
 
+**In short:** In the standard assignment the centre takes the middle and the wingers the outside; under any variant, somebody owns the middle.
+
 ```facts
 Position: Three vertical lanes — two outside along the boards, one middle between the faceoff dots
 Convention: The standard assignment is the centre in the middle lane and the wingers in the outside lanes
@@ -311,6 +319,8 @@ The standard assignment, and the one assumed throughout this document:
 > **And there is a layer above this one.** The three assignments here all come from the same family — forwards taking lanes while the defence takes the puck. Two of the four named team systems set out later in this section do not work that way at all: under the **wide-lane lock** a defenceman slides to mid-ice and owns the middle, and under **hound the puck** the first forward is on the carrier and both defencemen hold inside. So "which lane is mine?" is the right question only once you know which system you are in. Read the two together.
 
 ### Come back on the defensive side of your man
+
+**In short:** Skate a route to your man's inside hip, goal side of him, and take the ice rather than his body.
 
 ```facts
 Never: Chase from behind their shoulder — that is jogging, and you cannot defend anything from behind
@@ -383,6 +393,8 @@ If a defenceman is already engaged with the carrier and playing a good gap, spri
 > What is wrong under *both* systems is **improvising**. The failure this section is really about is a forward deciding in the middle of a rush to abandon their man and double the puck, because that is the version nobody else on the ice is expecting. **Find out which your team plays, and if your team has no answer, that is the thing to raise** — teams that leave it to players to read in the moment get two players on the carrier, or none.
 
 ### The four named backchecking systems
+
+**In short:** Your team's backchecking system decides your job on every rush, so ask which one it runs and where the hand-off happens.
 
 ```facts
 Key: Backchecking is a team system with named variants, not only effort — which one you play changes your job on every rush
@@ -458,6 +470,8 @@ The number always reads **attackers on defenders** — a 2-on-1 is two attackers
 
 ### 1-on-1
 
+**In short:** Steer the carrier to a bad angle and let them run out of ice; position first, contact only where your game allows checking.
+
 ```facts
 Goal: A shot from a place your goalie is comfortable with — not a hit and not a turnover
 Action: Steer them to a bad angle, force them wide, and keep forcing
@@ -512,6 +526,8 @@ The failure mode is both defenders converging on the carrier. That opens the ice
 - **Call it.** "I've got him" from the engaging defender, so the other holds.
 
 ### 2-on-1 — the headline situation
+
+**In short:** This guide's default is to take away the pass and leave the shot to your goalie; agree it with them first.
 
 ```facts
 Convention: Take away the pass and give up the shot — your goalie can save the shot and cannot save the pass; the realistic alternative is a timed slide to take the pass away outright and force the shot, so find out which your team plays
@@ -616,6 +632,8 @@ Two attackers, two defenders. Even numbers, and it should be routine — but it 
 
 ### 3-on-2
 
+**In short:** Agree in advance which system you play, then retreat level with your partner with the middle sealed between you.
+
 ```facts
 Convention: The default assumed here is "two wide, middle to the backchecker" — a defenceman on each outside attacker; how many teams run it has never been counted
 Never: Chase the puck carrier under the two-wide default — a wide carrier belongs to the D in that lane, a middle carrier to the backchecker
@@ -666,6 +684,8 @@ Three attackers, one defender. This is a bad situation and pretending otherwise 
 
 ### Breakaways
 
+**In short:** Play the puck with your stick, or skate to catch them and angle them wide with your route; it is your goalie's save.
+
 ```facts
 Priority: This is your goalie's save and they usually make it — do the one useful legal thing, then get out of the way
 Action: Stick on the puck only — a poke at the puck itself, or a stick lift on their blade as they release
@@ -702,6 +722,8 @@ The four conditions the officials are checking:
 
 ### The carve-outs, and how far they reach in each book
 
+**In short:** Stick on the puck only: touching it first is narrow relief that differs by book, so never trip or slide counting on it.
+
 ```facts
 Action: Stick on the puck only — if your blade is not touching the puck or their blade, you are probably committing a penalty, and USA Hockey's relief needs a referee who judges you were clearly at the puck
 Rule: Contacting the puck first and tripping the opponent in so doing is a tripping minor, not the penalty shot — NHL 57.3 and IIHF 24.8, same words. USA Hockey 616(a) leaves an optional minor instead, and that its 639(a) relief reaches 616 at all is this guide's reading of two rules, not a ruling
@@ -719,7 +741,7 @@ Rule: Slew-footing — sweeping an opponent's feet away with a leg or foot, or p
 Rule: Slew-footing ejects you at the floor in three of the five books besides the NHL — PWHL 53.2 a mandatory match, IIHF 52.2 a major plus automatic game misconduct, USA Hockey 639 a minimum major plus game misconduct. Hockey Canada 8.8 ejects only by a match penalty; CARHA 86(a) can eject without one
 ```
 
-**The practical instruction: stick on the puck only.** If your blade is not touching the puck or their blade, you are probably committing a penalty. Take the save-percentage odds over a penalty shot every single time.
+If your blade is not touching the puck or their blade, you are probably committing a penalty — and your goalie usually stops a breakaway, so take those odds over a penalty shot every single time.
 
 **What it costs — the carve-outs, and where each of them stops:**
 
@@ -749,6 +771,8 @@ One more thing worth knowing:
 > **On the empty net the six books split three–three.** USA Hockey **616(b)** awards the goal only where the chance was *"prevented by the **fouled from behind** provisions"*, and Hockey Canada (4.12(a) via 4.11(a)(i)) and CARHA (36(a)(3), CARHA-affiliated adult leagues only) keep the from-behind test too. ⚠️ **The NHL, the IIHF (25.3) and the PWHL (58.4) drop it — so under those three, a foul from the front with your net empty is an awarded goal.**
 
 ### Covering the puck in your own crease
+
+**In short:** Knock a puck in the air straight down and play it with your stick; smothering it is your goalie's job.
 
 ```facts
 Rule: Five books print the permission to catch a puck in the air and drop it at once — NHL and IIHF 67.2, PWHL 69.2, Hockey Canada 10.2(a)(iii) and CARHA 61(a), the last two only "without gaining or attempting to gain" an advantage; USA Hockey's is in its Casebook (618 Situation 1, 614 Situation 3)
@@ -825,6 +849,8 @@ Two legitimate ways to defend the line, and this is a genuine trade-off rather t
 ![](diagram:nz-back-off-at-the-line)
 
 ### Standing up (stepping up)
+
+**In short:** Stand up at the line to deny the entry when the read is right, and take the ice, not the man.
 
 ```facts
 Position: Hold your ground at or just inside the blue line and challenge the carrier as they try to enter
@@ -908,6 +934,8 @@ Key: Keep "step up" and "pinch" separate — stepping up is challenging in the n
 ---
 
 ## Odd-Man Rushes: How They Are Created
+
+**In short:** By coaching consensus most odd-man rushes are your own making: missed pinches, early forwards, middle turnovers, bad changes, nobody above the puck.
 
 ```facts
 Key: Almost every odd-man rush against you was manufactured by your own team, and five causes account for nearly all of them — coaching emphasis, not a counted ranking

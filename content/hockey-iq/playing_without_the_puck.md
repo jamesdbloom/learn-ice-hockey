@@ -51,6 +51,8 @@ This is worth quantifying honestly, because the number is more extreme than most
 
 ### What the tracking data says
 
+**In short:** Players hold the puck for only a few percent of their ice time, so most of your game is played without it.
+
 The NHL installed puck and player tracking (PPT) in every arena for the 2021-22 season, and added an individual puck-possession model to its data stream in March 2023. A 2025 study from the University of Waterloo used that data across 1,194 games of the 2023-24 NHL season, covering 671 skaters, to measure how long individual players actually hold the puck at **5-on-5** — five skaters a side with both goalies in net. Note that 5-on-5 is not the same as even strength: 4-on-4 and 3-on-3 are also even strength, and the paper deliberately reports 5-on-5 only. Every figure below is 5-on-5.
 
 The headline findings, all normalised to 20 minutes of ice time so that players with different roles can be compared:
@@ -183,6 +185,8 @@ Take a defender away from where the play is going to happen, whether or not the 
 Somebody on your team has to go to the puck, and the other four have to do something else. Both halves of that are off-puck work, and both are covered here — the pressuring job first, because everyone else's job is defined relative to it, and then the four players who are not pressuring, which is where amateur teams actually leak goals.
 
 ### If you are the one pressuring
+
+**In short:** Angle the carrier toward your help and force an early decision; winning the puck is a bonus, not the job.
 
 ```facts
 Goal: Take options away and force the carrier to decide early — winning the puck is a bonus, not the job
@@ -335,6 +339,8 @@ Deciding *who* goes is the off-puck question, and it is the one this document an
 So arrive the safe way round. ⚠️ **Come to the wall on an angle, feet apart and knees bent, with your skates parallel to the boards before contact** and your **forearm and hip to the wall** — not the point of your shoulder, and not the whole shoulder if you can help it. Keep your **head up and chin off your chest**, **never turn your back to the checker, and never duck**. Squaring your chest to the boards is the fallback for when you cannot turn in time, not the target. Winning the puck never justifies arriving any other way. [Body Contact and Battles → §10, Loose Puck Races and 50-50 Pucks](../technique/body_contact_and_battles.md) covers it in full, and everything in its §6 applies at exactly this moment.
 
 ### What to prioritise when structure has broken down
+
+**In short:** In a scramble, cover the net front first, then the shooter's stick, then clear the danger area, and only then look for the outlet.
 
 ```facts
 Priority: The front of your own net first — if nobody is there, go there, because nothing else matters as much
@@ -489,6 +495,8 @@ Action: Come back toward the puck — you arrive with speed the defender cannot 
 
 ### Screens and picks — what is actually legal
 
+**In short:** Hold the ice you already have and never step sideways into a player without the puck; that is a pick, and a penalty.
+
 ```facts
 Rule: You are allowed the ice you are standing on and are not required to move in order to let an opponent proceed (NHL Rule 56.1 and IIHF Rule 56.1, Interference — the IIHF writes it in the plural, so it is the British rule too)
 Rule: You may block an opponent's path provided you are in front of him and moving in the same direction (NHL Rule 56.1 and IIHF Rule 56.1, Interference, in the same terms)
@@ -527,8 +535,10 @@ Do not read "no tier inside 625" as "two minutes or nothing".
 
 ### Running a legal route through traffic
 
+**In short:** Run close past a teammate who is doing his own job so your check must go around, never to delay whoever pressures your carrier.
+
 ```facts
-Action: Run your route close past a teammate so your check has to go around them, unless he is pressuring your puck carrier. Past them and shout, not into where they stand
+Action: Run close past a teammate so your check must go around, unless he pressures your carrier; in Hockey Canada or CARHA, never past one parked to catch him. Past them and shout, not into where they stand
 Key: What makes that route legal is who it delays — it must not be the player pressuring your own puck carrier, and "he was my check" is a rule of thumb rather than the test
 Rule: No-contact screening of a forechecker off your puck carrier is named in three books, a minor in two — USA Hockey 625(a), "Providing a protective screen and limiting the opportunity for an opposing player to apply pressure to a teammate in possession or control of the puck", and Hockey Canada 8.3(a)
 Rule: Screening a forechecker off your own puck carrier, even without contact, is not capped at a minor in a CARHA-affiliated adult league — CARHA Rule 66(a) names it in Note 2 and reads "A Minor penalty for interference or, at the discretion of the Referee, a Major penalty and a Game Misconduct penalty"
@@ -622,6 +632,8 @@ The point of the drive is that somebody else scores: you pull a defender to the 
 **Drive at the net, not at the goalie.** The books put the onus on you to avoid them — Hockey Canada's 8.5 says *"The onus is always on the attacking player"* — and being shoved into them excuses you only if you tried not to be. [Whether you touch the goaltender](#whether-you-touch-the-goaltender) has each book's price.
 
 ### Screen the goalie
+
+**In short:** Stand in the goalie's sightline with both skates off the crease line, stick on the ice, and never touch the goalie.
 
 ```facts
 Rule: A no-contact screen from outside the crease keeps the goal (NHL Table 14, Situations 5C and 5E; the IIHF and PWHL tables agree). Contact, or a position that stops the goalie moving freely in his crease, can cost it (69.1, PWHL 71.1)
@@ -895,6 +907,8 @@ That is not a licence to skate hard in random directions. Effort in the wrong pl
 ---
 
 ## Off-puck play by position
+
+**In short:** Know your off-puck job: the centre supports low, the winger holds width, the defenceman controls the gap, and the goalie talks.
 
 Brief, because the position documents cover each in full. Take the one line that applies to you.
 

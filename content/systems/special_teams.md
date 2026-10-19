@@ -342,6 +342,8 @@ The **walk-down** is the half-wall player skating the puck down toward the goal 
 
 ### Power play zone entries
 
+**In short:** Enter with control rather than speed, and when the kill has the line, regroup and come again rather than force it.
+
 ```facts
 Key: This is where most amateur power plays die — at the blue line, not in the zone
 Priority: A clean, controlled entry is worth far more than a fast one; enter with possession and you have ninety seconds of pressure
@@ -415,6 +417,8 @@ If you are the lone point player in a 1-3-1, **keeping the puck in the zone is y
 ---
 
 ### 5-on-3
+
+**In short:** Spread out, move the puck across the middle until the goalie is moving, and have someone at the net for the rebound.
 
 ```facts
 Key: A two-man advantage is a different game, not a better power play — it fails when a unit plays it like a 5-on-4
@@ -996,6 +1000,8 @@ Pulling the goalie during a power play, late in a game, to make it 6-on-4.
 
 ### Faceoffs on special teams
 
+**In short:** Agree where the draw is going before you line up, and keep your wingers still until the puck drops.
+
 ```facts
 Goal: With a man advantage, winning the draw skips the zone entry entirely; a skater short, losing it means defending a set power play from the first second
 Rule: The team awarded the power play chooses which end-zone dot the draw starts at (NHL Rule 76.2) — pick the side that suits your one-timer
@@ -1055,6 +1061,8 @@ Your goalie is a full participant in both special teams, not a bystander. **The 
 
 ### Against their goalie: where the net-front line is
 
+**In short:** Screen from outside the crease with both feet off its red line, play the puck not the goalie, and stay out of his way home.
+
 ```facts
 Rule: NHL and IIHF 69.1 (PWHL 71.1) let a goal come off only where an attacker's position or contact impairs his ability to move freely in his crease, or he deliberately contacts him in or out of the crease
 Rule: USA Hockey 625(b) is a flat position bar — no goal with an attacker in the crease unless the puck got there first, a defender put them there, or the goalie is out of the crease area; its Casebook (625, Situation 9) disallows it, with a penalty, if you stop a returning goalie making a play
@@ -1091,6 +1099,8 @@ Under the NHL, IIHF and PWHL rule, a goal can come off the board where an attack
 ---
 
 ### What contact with their goaltender costs *you* — the penalty, not the goal
+
+**In short:** Never start contact with a goalie to make room, and if contact is coming, be the player who visibly tried to avoid it.
 
 ```facts
 Key: Everything above decides whether the goal counts; this decides whether you are still in the game — and on a power play a misconduct outlasts your advantage whatever length it runs

@@ -76,6 +76,8 @@ Key: Body contact is legal everywhere but CARHA's adult book; IIHF women's hocke
 
 ### Where body checking is and is not permitted
 
+**In short:** Find out, in writing, whether your league and this particular game allow body checking; your age alone does not settle it.
+
 ```facts
 Rule: USA Hockey Rule 604(a) bans body checking at 12U and below, in all girls'/women's classifications and in all non-check adult classifications — and the same rule lets a local governing body prohibit it in any classification, so check what your own association has decided
 Rule: Hockey Canada bans body checking at U13 and below, throughout female hockey, and in "any other divisions approved by a Member of Hockey Canada" — so being above the U13 line does not settle it (Hockey Canada Rule 7.3)
@@ -122,6 +124,8 @@ Six things that catch people out:
 
 ### If you play in Britain
 
+**In short:** Take your checking format from your own competition's Rules of Competition, and until you know it, do not hit anyone.
+
 ```facts
 Rule: Your book is the IIHF Rule Book, amended by the In-House Rules — the USA Hockey and Hockey Canada rows above are not yours
 Rule: Neither the IIHF Rule Book nor the In-House Rules states an age at which body checking becomes legal — your competition's Rules of Competition carry it instead, and only four of IHUK's were read here: junior, U10, NIHL Division 1 and 2 and the WNIHL
@@ -155,6 +159,8 @@ That does not conflict with the rule books. The IIHF book never grants a right t
 
 ### Women's hockey — the nuance that is usually got wrong
 
+**In short:** Under every women's book, hold your ground and play the puck; never step or glide into an opponent.
+
 ```facts
 Key: "Women's hockey has no hitting" is too blunt — the answer depends on which book you are under
 Rule: USA Hockey and Hockey Canada prohibit body checking in all girls'/women's classifications
@@ -186,6 +192,8 @@ In practice, the women's-game standard is very close to the standard for **legal
 
 ### Before the puck drops — the warm-up is not outside the rules
 
+**In short:** Keep your hands off opponents and stay in your own half in the warm-up — no book here treats it as off the record.
+
 ```facts
 Rule: Three books penalise the pre-game warm-up — USA Hockey 502(b), "Penalties may also be assessed during the warm-up period"; Hockey Canada 2.2(j), the penalty "served at the start of the game"; CARHA 27(b), for infractions "committed during the pre-game warm-up, when observed by the Referee"
 Rule: IIHF Rule 5.6's "No penalties are to be assessed but a report of the incident must be submitted to the Proper Authorities" is the enforcement clause for that rule's own terms on warm-up equipment, roster and timing — identical in both editions, and not a general amnesty for warm-up conduct
@@ -196,7 +204,7 @@ Rule: An EIHL warm-up violation reaches the bench — suspension and/or fine for
 Never: Put a hand on an opponent, or cross the centre red line, in the warm-up — no book here treats it as off the record, and under the IIHF a warm-up fight is a fighting major and an automatic ejection
 ```
 
-**Keep your hands off opponents and stay in your own half in the warm-up — no book here treats it as off the record.** It is the one stretch of the night when you share the ice with opponents and there is usually no referee standing on it, which is exactly why a shove at the red line can become a suspension rather than two minutes. The books do not answer it the same way.
+The warm-up is the one stretch of the night when you share the ice with opponents and there is usually no referee standing on it, which is exactly why a shove at the red line can become a suspension rather than two minutes. The books do not answer it the same way.
 
 - **Three of the books simply penalise it.** **USA Hockey Rule 502(b)**: *"[p]enalties may also be assessed during the warm-up period."* **Hockey Canada Rule 2.2(j)** has the referee *"penalize any player who commits a violation of the rules during the pre-game warm-up"*, and *"[t]he penalty will be served at the start of the game"* — so your team opens shorthanded. ⚠️ **Its Note 1 lets a player finish the warm-up before serving a minor, bench minor or misconduct — not a major, match or game misconduct.** And **4.1(a)** puts the player's name *"on the Official Game Report"*. **CARHA Rule 27(b)** penalises infractions *"committed during the pre-game warm-up, when observed by the Referee"*, with the same Official Game Report consequence *(CARHA-affiliated adult leagues only)*.
 - **The IIHF looks like the exception, and it is the book most British readers are under — but its Rule 5.6 is narrower than it reads.** **Rule 5.6**, identical in the 2025/26 (Version 1.1) and 2026/27 editions, sets the terms of the on-ice warm-up — equipment properly worn, who may take part, no warm-up at the end of a period or at a stoppage — and then ends: *"No penalties are to be assessed but a report of the incident must be submitted to the Proper Authorities."* ⚠️ **That is the enforcement clause for those terms, not a general amnesty for anything done in the warm-up.**
@@ -208,6 +216,8 @@ Never: Put a hand on an opponent, or cross the centre red line, in the warm-up �
 - **Scope this to the EIHL and no further.** The In-House Rules for 2026-27, which govern NIHL, the SNL, BUIHA Varsity, junior and women's hockey, contain no warm-up conduct provision beyond a pre-warm-up equipment check — so there **the IIHF book stands unmodified, both halves of it**: Rule 5.6's report route for the warm-up terms it covers, **and a major plus an automatic game misconduct for a warm-up fight** (Rule 46.8 in the 2026/27 book, 46.9 in 2025/26). See [UK and England Rules](../foundation/uk_rules.md).
 
 ### What this means for how you read the rest of this document
+
+**In short:** Almost everything here applies in every league, and nothing in it is a licence to hit where your league forbids it.
 
 ```facts
 Key: Almost everything here applies in every league — angling, stick checks, body position, receiving a hit safely, battles, shot blocking
@@ -237,6 +247,8 @@ Almost everything here applies in **every league, including yours** — angling,
 
 ## 2. Angling — Legal in Every League, If You Hold Your Lane and Add Nothing
 
+**In short:** Pick your line early, hold it, and add nothing when you arrive; the angle is skated, not thrown.
+
 **Angling is steering an opponent to where you want them by choosing your skating route, not by hitting them.** USA Hockey's glossary defines it as "a legal defensive skill used to direct/control the puck carrier to an area that closes the gap and creates an opening that is too small for the puck carrier."
 
 **It is legal everywhere, provided you pick your line early, hold it, and add nothing when you arrive.** You may close off the boards and force a carrier to slow down or turn back inside, as long as you do not bump, push or shove them to do it. ⚠️ **Veering across into an opponent at the last instant to make the contact happen is not angling, however gentle the contact turns out to be.** The angle is skated, not thrown: what keeps it legal is the lane you chose three strides ago, and the arm, shoulder or hip you do not add once you arrive.
@@ -252,6 +264,8 @@ This is how good defenders actually take the puck. Not by hitting people.
 **That picture is borrowed from [Defending the Rush](../systems/defending_the_rush.md)**, and the distances in its caption are gap-control targets for a defender retreating on a one-on-one; this section sets no distance of its own. What carries across is the geometry: the defender's body between the carrier and the middle, the shaded ice the route takes away, and only the wall left open. What no still picture shows is that the defender was already at speed — **a gap cannot be closed from a standstill**, which is why an angle has to start before you need it.
 
 ### The four things you are managing
+
+**In short:** Skate at the ice they want, with momentum back toward your net, and arrive under control, stick in the lane.
 
 ```facts
 Action: Skate at the ice they want, not at the player. Take away their good ice and force them to bad ice
@@ -428,6 +442,8 @@ Never: Press with force, chop down repeatedly, or press on their hands — a pre
 
 ## 4. Body Position as Defence
 
+**In short:** Get in front first and hold the ice you stand on, stick down, free hand off them, and never lean.
+
 You can defend an entire shift without ever making a deliberate hit. **Get in front first, make their route to the puck longer, and hold the ice you are standing on — stick down, free hand off them.** In most books the rule is on your side, and the fullest passage is worth reading whole. NHL Rule 56.1 (Interference), under "Body Position":
 
 > "A player is allowed the ice he is standing on (body position) and is not required to move in order to let an opponent proceed. A player may 'block' the path of an opponent provided he is in front of his opponent and moving in the same direction. ... A player is always entitled to use his body position to lengthen an opponent's path to the puck, provided his stick is not utilized (to make himself 'bigger'...); his free hand is not used and he does not take advantage of his body position to deliver an otherwise illegal check."
@@ -439,6 +455,8 @@ USA Hockey codifies the same idea for non-checking play, listing as legal compet
 **In a CARHA adult league,** ⚠️ **hold a spot you already took and never lean or body to keep it.** Note 2 to **Rule 66(a)** says defending players *"are entitled to 'stand their ground' or 'shadow' the attacking players"*, but **Rule 49(a)** reaches a player who *"intentionally bodies, pushes, shoves, stands in front of an opponent for the purpose of making contact, and/or does not avert body contact with an opponent"*. That is a minor or, at the referee's discretion, a major — mandatory *"[w]hen injury results from intentional body contact"* — and **any major there rules you off for the rest of the game** (Rule 30(a)). Accidental contact draws no penalty under **49(c)**, except to the head, face or neck (still a minor, 50(a)) or from behind into the boards or net (a match penalty, 53(b)). **CARHA-affiliated adult leagues only; see §1.**
 
 ### What that gives you
+
+**In short:** Take away ice, box out and seal the wall lane without leaning or pushing, and regain lost position with your feet only.
 
 ```facts
 Action: Take away ice — standing in the place your opponent needs to be is a complete defensive act
@@ -467,6 +485,8 @@ Rule: Hockey Canada writes no body-position grant — 8.1 assumes position while
 ---
 
 ## 5. Delivering a Legal Body Check
+
+**In short:** Body check only where your game allows it; checking from behind, head contact, charging and boarding are penalties in every division.
 
 **This section applies only in games that permit body checking.** If you play 12U or below, girls' or women's hockey under USA Hockey or Hockey Canada, U13 and below in Canada, any Canadian division a Member of Hockey Canada has approved as non-check, a non-check adult league or any CARHA league, everything below is a penalty. ⚠️ **So skip to Section 6 — but read the last four sections of this one first:** *Four fouls no division is exempt from*, *Boarding, and the player who cannot see you coming*, *Checking from behind, and what the onus does and does not mean*, and *And what these fouls cost beyond tonight*. Checking from behind, head contact, charging and boarding are penalties in *every* division — Hockey Canada scopes 7.3 and USA Hockey scopes 604, and neither scopes those four — and **all four can end your game in at least one book.**
 
@@ -512,6 +532,8 @@ Two things follow. **For a player:** if you cannot yet angle a puck carrier off 
 
 ### What a legal check is, precisely
 
+**In short:** Where checking is allowed, check only the puck carrier, front or side, with hips and shoulders, to win the puck, never to punish.
+
 ```facts
 Rule: Not legal where checking is barred — USA Hockey 604(a) at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below, in female hockey, and in any other division a Member of Hockey Canada has approved
 Rule: IIHF women's play allows a check only with clear intent to play or gain the puck, never using the boards to push, pin or eliminate an opponent; a step or glide into one is at least a minor (Rule 101.1). Britain's age and the WNIHL's checking ban are in IHUK's Rules of Competition, not a rulebook
@@ -543,6 +565,8 @@ USA Hockey's **Glossary** entry for *Body Checking* is the most explicit definit
 **The check starts with your stick on the puck — that is what separates a coached player from an amateur.** If your stick is up, you are about to commit a cross-check, a high stick, or a head-contact penalty. If your stick is down on the puck, your hands are down, your elbows are down, and your shoulder arrives where it should.
 
 ### Delivering a Legal Body Check: Technique
+
+**In short:** Where checking is allowed, hit the chest square, elbows and hands down, and skate through so you finish over the puck.
 
 ```facts
 Rule: Not legal where checking is barred — USA Hockey 604(a) at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below, in female hockey, and in any other division a Member of Hockey Canada has approved
@@ -603,6 +627,8 @@ Never: Hit a player who is turned toward the boards
 
 ### The late hit — and the narrow window for finishing a check
 
+**In short:** Where checking is allowed, check the puck carrier now; once the puck has gone, pull up rather than decide to hit.
+
 ```facts
 Rule: Not legal where checking is barred — USA Hockey 604(a) at 12U and below, all girls'/women's and non-check adult; Hockey Canada 7.3 at U13 and below, in female hockey, and in any other division a Member of Hockey Canada has approved; and in any CARHA adult league, whose 49(a) penalises a body check
 Rule: IIHF women's play allows a check only with clear intent to play or gain the puck, never using the boards to push, pin or eliminate an opponent; a step or glide into one is at least a minor (Rule 101.1). Britain's age and the WNIHL's checking ban are in IHUK's Rules of Competition, not a rulebook
@@ -631,6 +657,8 @@ A separate route to legal contact: *"Contact may also be legal provided the defe
 **What it costs.** ⚠️ **A late hit is not capped at a minor.** IIHF 56.1 says a late hit *"constitutes reckless endangerment"* and **56.5 reaches a major plus a game misconduct with nobody hurt**; Hockey Canada 8.3(b) reaches the same tier on *"the degree of violence of the impact"* with nobody hurt, and makes it mandatory where it injures. Under USA Hockey, **640(g)** is a major plus a game misconduct for a player who *"recklessly endangers an opponent as a result of any actions falling under Rule 640(b, c, d, e or f)"*, and **640(h)** a match. Both reach the late hit through (b), so whether 640(g) reaches one in adult men's hockey the book does not say — but **Rule 602(a)**'s match for a player who *"recklessly endangers or attempts to injure any opposing player"* is tied to no named foul. ⚠️ **And a 640(g) major outlasts the game:** Rule 640 is on Rule 411(a)'s aggressive-infractions list, so a third major costs three further games, a fourth five, and a fifth a suspension until a hearing ([And what these fouls cost beyond tonight](#and-what-these-fouls-cost-beyond-tonight)).
 
 ### Four fouls no division is exempt from
+
+**In short:** Treat head contact, charging, boarding and checking from behind as things you never do, in every division, non-check included.
 
 ```facts
 Rule: Boarding (7.2, 603), charging (7.4, 607) and checking from behind (7.5, 608) carry no division clause, and Hockey Canada's 7.6 and 7.7 both open by banning head contact outright — all four bind your division; 7.6(a) penalises it in minor and female hockey, 7.7 in Junior and Senior
@@ -671,6 +699,8 @@ Both Hockey Canada rules make a cross-check above the shoulders a major plus a g
 
 ### Boarding, and the player who cannot see you coming
 
+**In short:** Take the puck and let the player go when they cannot protect themselves, are racing for an icing, or are already battling.
+
 ```facts
 Rule: NHL Rule 41.1 is boarding — checking or pushing a defenceless opponent so they hit the boards "violently or dangerously" — and the definition names the icing/offside case in terms
 Rule: Under USA Hockey boarding is not only a hit — its Rule 603 Note reaches a player who "pushes, trips or body checks" an opponent dangerously into the boards, and its Casebook prefers the boarding call to tripping (Rule 603, Situation 3)
@@ -702,6 +732,8 @@ Rule: Under IIHF, a check on an opponent who no longer has the puck and is eithe
 
 ### Checking from behind, and what the onus does and does not mean
 
+**In short:** If you can see their numbers, pull up and play the puck.
+
 ```facts
 Never: Check from behind — no minor in NHL, IIHF, PWHL 43.2 (majors eject, 43.3, 43.5); none bare in USA Hockey 608(a), Hockey Canada 7.5(a), whose 7.6, 7.7 on the head reach a match, a must if defenceless
 Rule: Hockey Canada from behind (7.5–7.7): head first into boards or goal frame, minor and game misconduct, major if hurt; on the head, major and game misconduct for a high cross-check, in minor/female if hurt, in Junior/Senior at high violence or head hurt off glass, ice or boards; a match if defenceless
@@ -719,7 +751,7 @@ Rule: From behind, the instrument does not lower the tier — IIHF 43.1, Britain
 Rule: IIHF 43.1 names a destination as well as an act — "from behind into the boards, the goal frame, or on open ice" — and IIHF 5.1 makes "Player" cover goalies, so a goalie driven into their own net from behind is reached there, where that book writes no minor, not by charging
 ```
 
-**If you can see their numbers, pull up and play the puck.** Never finish a check on a turned back, never let one ride up to the head, and play it as though the onus were entirely yours: you cannot know how a referee will weigh the hit, you are the one who chose to arrive, and a spinal injury is not undone by a favourable call. **And never turn your own back on purpose to draw the call** — it is the position that breaks necks.
+Never finish a check on a turned back, never let one ride up to the head, and play it as though the onus were entirely yours: you cannot know how a referee will weigh the hit, you are the one who chose to arrive, and a spinal injury is not undone by a favourable call. **And never turn your own back on purpose to draw the call** — it is the position that breaks necks.
 
 **Checking from behind.** NHL Rule 43.1 defines it as a check "delivered on a player who is not aware of the impending hit, therefore unable to protect or defend himself," with contact on the back part of the body. **The NHL has no minor for it** (43.2): it is a major, with an automatic game misconduct (43.5). **Nor does the IIHF** — 43.2 says "there is no option to award a minor penalty" — and 43.3 makes it a major plus an automatic game misconduct where the referee judges that the check recklessly endangers the player. ⚠️ **IIHF 43.1 prices the act, not the instrument:** it reaches a hit from behind *"in any manner (i.e., high-sticking, cross-checking, etc.)"*, so a stick driven high into a player's numbers from behind is checking from behind, with no minor rung, rather than a Rule 60 high stick. It also names the goal frame, and IIHF Rule 5.1 makes *"Player"* cover *"both skaters and goalkeepers"* — so a goalie driven into their own net from behind falls under Rule 43 rather than charging, on a reading of how the book is assembled rather than a sentence it prints.
 
@@ -747,6 +779,8 @@ In minor and female hockey (Rule 7.6), head contact is a minor if accidental and
 
 ### And what these fouls cost beyond tonight
 
+**In short:** Play as though being thrown out costs the next game too, because in every book read here it can.
+
 ```facts
 Rule: A game misconduct can cost you the next game — USA Hockey 404(b) suspends you for the first one, and a second major in the same game costs two: the two games are 403(b)'s and are additional to any other suspension from the incident, and 404(b) calls them a minimum
 Rule: USA Hockey 411(a) adds a three-game suspension on a third major of the season across its aggressive-infractions list — seventeen rules, boarding, charging, checking from behind and head contact among them, ending with 639 and Rule 640 Unnecessary Roughness (Roughing)
@@ -761,7 +795,7 @@ Rule: CARHA counts a double minor as two where Hockey Canada counts it as one �
 Key: A game misconduct is never only tonight — every book read here lets it reach the next game or beyond, CARHA 32(d) and PWHL 23.6 included, and your own league's supplementary discipline sits on top
 ```
 
-**Play as though being thrown out costs the next game too, because in every book read here it can.** Each book lets a game misconduct reach beyond the game it was given in, on its own trigger — USA Hockey, the NHL and Hockey Canada automatically, the IIHF at the Proper Authorities' discretion — and your own league's supplementary discipline sits on top of all of them.
+Each book lets a game misconduct reach beyond the game it was given in, on its own trigger — USA Hockey, the NHL and Hockey Canada automatically, the IIHF at the Proper Authorities' discretion — and your own league's supplementary discipline sits on top of all of them.
 
 **USA Hockey.** Under **Rule 404(b)** a player incurring a game misconduct *"shall also be suspended for the team's next game"*. **A game misconduct for a second major in the same game costs two games, and two is a floor:** **Rule 403(b)** suspends the player for the team's *"next two games"*, *"in addition to any other required suspensions incurred during the same incident"*, and 404(b) calls it *"a minimum two-game suspension."*
 
@@ -786,6 +820,8 @@ Key: A game misconduct is never only tonight — every book read here lets it re
 **Read this section whatever league you play in** — unexpected contact happens in non-check hockey too, and the boards and the goal posts are just as hard.
 
 ### Keep your head up. Always — you cannot brace for a hit you cannot see.
+
+**In short:** Head up, know where your opponents are, and when a hit is coming, see it and brace rather than duck.
 
 ```facts
 Never: Skate with your head down — not "look up sometimes", never; USA Hockey's Rule One is to keep it up "especially when it looks like you're going to take a hit"
@@ -815,6 +851,8 @@ Not "look up sometimes." Never skate with your head down. Two separate reasons, 
 Learning to carry the puck without staring at it is a stickhandling problem, and it is solved off the ice. See [Puck Handling](puck_handling.md).
 
 ### Do not turn your back to an oncoming checker near the boards
+
+**In short:** Never turn your back; arrive on an angle, and if contact is coming, skates parallel to the wall, forearm and hip to it, head up.
 
 ```facts
 Never: Turn your back to a checker near the boards. Spine exposed, head first into the wall, hit from behind. USA Hockey warns them: "Even a light hit from behind could inflict a severe head or neck injury"
@@ -934,6 +972,8 @@ If a teammate is going back for a puck with their head down and pressure coming,
 
 ### If it happens anyway — a suspected neck injury on the ice
 
+**In short:** Never help them up: call for medical help, keep them still except to clear their airway, and leave the helmet on.
+
 ```facts
 Never: Help the player up — it is the most common and most damaging mistake after a spinal impact
 Action: Call for immediate medical help first
@@ -963,6 +1003,8 @@ Everything above is prevention. This is what to do when prevention has failed, a
 **Do not wait for these symptoms to appear before applying the rule.** CRT6 is the concussion tool that belongs on your phone, and the same "Remember" box says to *"[a]ssume a possible spinal cord injury in all cases of head injury"* — neck pain or tenderness is itself a red flag that means an ambulance. CRT6's full red-flag list, and what to do in the hours afterwards, is in [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md). Head injury and neck injury are the same call at the rink: nobody moves them except to keep their airway clear, and somebody phones.
 
 ### And the case where they get up
+
+**In short:** A suspected concussion means off the ice, no return that day, and assessed by a medical professional before playing again, however fine they feel.
 
 ```facts
 Never: Assume a player is fine because they were not knocked out — loss of consciousness is not required for a concussion and is not typical of one
@@ -1059,6 +1101,8 @@ So: put the puck between your skates and the wall, put your body on the outside 
 
 ### Working the puck free with your feet
 
+**In short:** When your stick is tied up, kick a puck you can see out of the pile, to a teammate or your own stick.
+
 ```facts
 Key: In a real battle your stick is tied up and your hands are busy — your feet are free
 Rule: You may kick the puck in all zones (NHL Rule 49.2), but you cannot score with a distinct kicking motion
@@ -1090,6 +1134,8 @@ Practise this deliberately. Almost no amateur does, and it wins pucks every sing
 **The other four books get there by different routes.** **The PWHL** writes the NHL's match word for word at its **Rule 49.3**. **Hockey Canada** and **CARHA** reach it through their attempt-to-injure rules: **Hockey Canada 7.1(c)(iii)**, a match for *"Attempting to kick or deliberately kicking an opponent"*, and **CARHA Rule 48(c)** — *"[a] player who attempts to kick or deliberately kicks an opposing player shall be assessed a Match penalty"* (CARHA-affiliated adult leagues only). 🇬🇧 **The IIHF writes no match penalty anywhere**, so its **Rule 49.3** is a discretionary major plus an automatic game misconduct, with no lesser tier for kicking an opponent. **There is no book here in which kicking a player is a two-minute mistake.**
 
 ### When to just pin it
+
+**In short:** When nobody can win it, pin the puck to the boards and call for help, but never hold it for a whistle.
 
 ```facts
 Read: Pin when you are outnumbered, tangled with an equally stuck opponent, or a turnover here is a chance against
@@ -1125,6 +1171,8 @@ A won battle is only half a play: the puck has to go somewhere before the next o
 Corner battles are board battles with two differences that change everything.
 
 ### They are 2-on-1 by default
+
+**In short:** First man in ties up the puck, not the player; second man stays out of the pile and takes it.
 
 ```facts
 Key: Two players usually beat one in a corner — the first only has to tie the puck up rather than win it outright. That "usually" is the coaching account, not a counted result
@@ -1201,6 +1249,8 @@ The area on top of the crease is the **densest scoring area on the ice**. Mike C
 
 ### Attacking the net front
 
+**In short:** Get to the shot lane in front of the goalie, skates outside the crease, two hands on your stick for tips and rebounds.
+
 ```facts
 Technique: Set up in the shot lane in front of the goalie, not beside them, off the red crease line, taking away their eyes — two hands on your stick, blade on the ice, to tip, to screen and to bury a rebound
 Key: Screening stands you in the shot lane at close range and upright — know when the puck is about to be released, and go there with your head and face protection right rather than nearly right
@@ -1222,6 +1272,8 @@ Rule: In the crease or privileged area, a defender who shoves you into the goali
 - **There is one body at the net front you must not take braced — the goalie's. Give ground the moment a goalie leans into you, then re-set the screen with both skates off the crease line, not merely out of the blue.** ⚠️ **Under the NHL and the IIHF, refusing to give ground costs you the goal or a penalty, never nothing** (Rule 69.3), and under the IIHF — Britain's book — the red line counts as crease (Rule 1.7). **If a defender shoves you into the goalie, clearly try to avoid them: being shoved is not a defence, the attempt to avoid is.** [What it costs to touch the goalie](#what-it-costs-to-touch-the-goalie) prices every book, and [Offensive Zone Play](../systems/offensive_zone_play.md) has Rule 69 in full.
 
 ### Where you may stand when you screen
+
+**In short:** Screen with your body alone, outside the crease and off its red line, touching nobody.
 
 ```facts
 Never: Put a hand, a glove or your stick blade up in front of the goalie's face. Hands and blade down, and let your body do the screening — a screen is your body in their sightline, nothing else
@@ -1247,6 +1299,8 @@ Rule: Not every skate in the paint stops play — USA Hockey's Casebook at 625, 
 ![](diagram:screen-the-goalie-sightline)
 
 ### What it costs to touch the goalie
+
+**In short:** A screen never needs contact; make an obvious attempt to avoid the goalie every time.
 
 ```facts
 Never: Touch anybody to screen, or count on "I was shoved in" — where a defender puts you into the goalie, only clearly making every attempt to avoid them keeps you out of the box
@@ -1292,6 +1346,8 @@ The Casebook (Rule 607, Situation 5) lets a goalie outside it be checked only to
 **Under CARHA, contact that is not a charge costs too.** **Rule 66(b)** gives a minor for impeding the goalie *"by actual physical contact"*, and a minor or, at the referee's discretion, a major for an attacker who *"makes deliberate contact with a goalkeeper whether in or out of the goal crease"*; **Rule 66(e)** makes it a major where the interference injures. That book writes no privileged area, and 52(b)'s Note says *"[a] goalkeeper is NOT 'fair game' just because they are outside the goal crease area"*. Any major there costs you the rest of the game under **Rule 30(a)** plus at least the next one under **Rule 32(d)** (CARHA-affiliated adult leagues only).
 
 ### Defending the net front
+
+**In short:** Hold body position without leaning or pushing, lift or press their stick as the puck arrives, and never walk the screener out.
 
 ```facts
 Priority: Body position first — inside shoulder ahead of theirs, hips between them and the puck, then hold it with no lean and no push
@@ -1342,6 +1398,8 @@ In women's hockey **IIHF Rule 101.1** ⚠️ **makes the walk-out an illegal hit
 
 ### The cross-check problem
 
+**In short:** At the net front, tie up the screener's stick instead of cross-checking their body, and never put your shaft into anybody's numbers.
+
 ```facts
 Rule: Cross-checking is using the shaft of the stick between the two hands to forcefully check an opponent (NHL Rule 59.1)
 Never: Believe a blade on the ice makes a shaft shove legal — that wording is USA Hockey Rule 609 only, not NHL, IIHF or Hockey Canada
@@ -1358,7 +1416,7 @@ Action: Control the stick instead of the body — lift it up, low on the shaft, 
 Action: Establish position early and quietly; lift or press their stick when the shot comes, not before, and never move the screener with your body — that can be called interference in any game
 ```
 
-**At the net front, tie up the screener's stick instead of cross-checking their body, and never put your shaft into anybody's numbers.** The stick tie does the job the cross-check was meant to do, and no book caps a cross-check at two minutes.
+The stick tie does the job the cross-check was meant to do, and no book caps a cross-check at two minutes.
 
 **The real defence is a different action: control the stick instead of the body.** Lift or lightly press it as the puck arrives, then let go — up rather than sideways, low on the shaft, well below their bottom hand ([Stick Checks](#3-stick-checks--legal-effective-and-under-used)). A press held on a screener with no play on the puck can be called holding ([Defending the net front](#defending-the-net-front)).
 
@@ -1409,6 +1467,8 @@ Corbett's warning about timing is worth repeating: "if you get physical before t
 A **50-50 puck** is any puck that neither team possesses and both can reach — a rim around the boards, a dump-in, a rebound, a puck flipped out of the zone.
 
 ### Arrive with body position, not just with speed
+
+**In short:** Take the inside lane on an arc, hips between opponent and puck, never holding; under Hockey Canada or CARHA, only a lane you already have.
 
 ```facts
 Position: Skate the inside lane, between the opponent and the puck — half a step behind but inside usually wins it
@@ -1518,6 +1578,8 @@ Never: Lunge. Close with your feet instead, because a slide that misses is a def
 
 ### When *not* to block
 
+**In short:** Commit fully or get out of the lane, and never block the shot on a 2-on-1 or from a screening position.
+
 ```facts
 Never: Block the shot on a 2-on-1 — your job as the lone defender is the pass, and the goalie has the shooter
 Options: A timed slide at the pass, where that is your team's 2-on-1 method, is a different act from going to the ice at the shot — head up either way, and ask your coach how they want it done
@@ -1548,6 +1610,8 @@ This is the part that gets skipped, and it is where blocking costs goals.
 
 ### The discipline point
 
+**In short:** If you lose position, skate to get it back instead of reaching, and never retaliate after the whistle.
+
 ```facts
 Key: Most amateur penalties are not dirty — they are late, frustrated or lazy; the coaching account, since no published study codes why a penalty was taken
 Rule: Illegal means are acts that establish, maintain or restore body position other than by skating (NHL Rule 56.1)
@@ -1566,6 +1630,8 @@ Convention: That the retaliator is the one who gets caught is dressing-room lore
 **Skate more, reach less** — the fix is unglamorous and entirely within your control. That better conditioning cuts penalty minutes, because a tired player reaches, is reasoning rather than a measured effect. The one study found — Haugen and colleagues, testing Norway's top men's league every pre-season from 2008 to 2017 — found no link across players between endurance tests and penalty minutes per game (correlations near zero; the largest with any test, bench-press strength, a small **positive** 0.23), and it did not test whether *you* reach more at the end of a long shift. So the instruction stands without a measurement behind it. See [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) and [Mental Game](../off-the-ice/mental_game.md).
 
 ### What actually gets called
+
+**In short:** Skate to the puck, not to the player, and keep your hands and forearms out of every check.
 
 ```facts
 Rule: Stick-to-stick is exempt from hooking in the NHL, the IIHF and the PWHL only, and only while checking (NHL and IIHF 55.1; PWHL 56.1) — USA Hockey 623, Hockey Canada 8.2 and CARHA's Glossary make the opponent's stick hookable (CARHA-affiliated adult leagues only)
@@ -1674,6 +1740,8 @@ Priority: Where USA Hockey's playing rule and its Casebook disagree, take the wi
 
 ### Slew-footing — the foul that grows out of an ordinary battle position
 
+**In short:** Win the battle with body position, base and skates on the puck, and never put a leg behind an opponent.
+
 ```facts
 Rule: Slew-footing is a leg or foot used to take an opponent's feet from under them, classically while an arm or elbow pushes their upper body backward at the same time — NHL and IIHF 52.1, USA Hockey 639 Note 4, Hockey Canada 8.8
 Rule: The leg alone is slew-footing in every book read here but CARHA, whose 86(b) wants it "from behind" — USA Hockey 639 Note 4 opens "Slew Footing is the act of a player using their leg or foot to knock or kick an opponent's feet from under them", and PWHL 53.1 writes the same, 53.2 a mandatory match
@@ -1731,6 +1799,8 @@ Action: Know your league's standard — watch how the first five minutes are bei
 
 ### Fighting — and why the amateur rules are much harsher than the NHL's
 
+**In short:** Never throw a punch: keep gloves and helmet on, skate away, and leave breaking it up to the officials.
+
 ```facts
 Rule: Fighting in the NHL is a five-minute major (Rule 46.14); an instigator takes that major plus an instigating minor and a ten-minute misconduct (46.11); an aggressor a major plus a game misconduct (46.2); outside the periods, a major and game misconduct (46.9), just the major if the other instigated
 Rule: The third man into an altercation faces a game misconduct at the referee's discretion — except where a match penalty is being imposed in the original altercation (NHL Rule 46.16)
@@ -1769,6 +1839,8 @@ A team that plays hard, wins battles and takes no penalties is far more physical
 
 ### The EIHL's fighting rules — lower on the sheet, not lower in cost
 
+**In short:** The Elite League's lower on-ice fighting penalties are not a lower price, and outside that league they are not your rules.
+
 ```facts
 Rule: The EIHL Casebook supersedes IIHF Rule 46 for the Elite League alone — its 46.1 penalises willing combatants with "at least a Major Penalty", noting that "for their 2nd Major Penalty an Automatic Game misconduct will be assessed", where IIHF 46.1 attaches that ejection to the first
 Rule: The EIHL instigator is "2 minor + 5 major + 10 misconduct" under Casebook 46.10 where the IIHF's is 2+5+game misconduct — rising to "2 minor + 5 major + 20 Game misconduct" in the final five minutes of regulation, at any time in overtime, or on a second instigator penalty in the same game
@@ -1790,6 +1862,8 @@ Never: Read the EIHL's lower on-ice tier as a lower price — what the Casebook 
 - **And tie your jersey down before you leave the room.** Casebook **46.13 Jerseys** gives *"a minor penalty for Unsportsmanlike Conduct"* to *"[a] player who is involved in an altercation and does not have his sweater properly tied down (the sweater is not removed)"* — being *involved*, not fighting, is the trigger. Removing your jersey before an altercation, wearing a modified one, or fighting and losing it off your torso is that minor **plus a game misconduct**, unless the opponent or a linesman took it off or the tie-down held.
 
 ### Leaving the bench or the box during an altercation
+
+**In short:** Stay put until the officials wave you out; leaving the bench or box during an altercation is itself the offence.
 
 ```facts
 Rule: USA Hockey 629(a) is a major plus a game misconduct to any player who leaves either bench "during an altercation", "in addition to any other penalties" — and a USA Hockey major is served with "no on-ice substitute" permitted (403(a)), so the team kills it shorthanded
@@ -1823,6 +1897,8 @@ Never: Leave the bench or the penalty box while an altercation is going on — n
 
 ### Helmets in an altercation — keep yours on, and never touch theirs
 
+**In short:** Do your chin strap up properly before every shift, never take your own helmet off in a scrum, and never touch anyone else's.
+
 ```facts
 Rule: USA Hockey 615(c) is a match penalty "(for all age classifications)" for deliberately removing your own helmet/facemask "prior to an altercation", and a second one for removing an opponent's "prior to or during" one
 Rule: USA Hockey's Casebook applies that match penalty to your own helmet removed during an altercation too (Rule 615, Situation 14), and adds "Fighting penalties do not have to be assessed when applying Rule 615(c)"
@@ -1838,7 +1914,7 @@ Rule: Hockey Canada 10.6(d) reaches the gesture on its own — a Misconduct pena
 Never: Take your own helmet off, or reach for an opponent's, in an altercation. Gloves on and helmet on instead — skate away and let the officials sort it out
 ```
 
-**Do your chin strap up properly before every shift, never take your own helmet off in a scrum, and never touch anyone else's.** Most players know the televised version — helmets come off in NHL fights and nothing happens — and that is three books' rule only: the NHL's, the IIHF's and the PWHL's. Under USA Hockey the same helmet is an ejection, and it does not need a fight.
+Most players know the televised version — helmets come off in NHL fights and nothing happens — and that is three books' rule only: the NHL's, the IIHF's and the PWHL's. Under USA Hockey the same helmet is an ejection, and it does not need a fight.
 
 - **USA Hockey starts at a match penalty, for every age group.** Rule 615(c) assesses one *"(for all age classifications)"* against *"any player who deliberately removes their helmet/facemask prior to an altercation"*, and against *"any player who deliberately removes their opponent's helmet/facemask prior to or during an altercation."* It adds **a game misconduct with an express two-game suspension** for *"any player whose actions during an altercation causes the removal of an opponent's helmet and facemask"*, and a game misconduct for *"any player who doesn't wear their helmet/facemask as designed and the helmet/facemask is removed during an altercation."* A match penalty suspends you from all USA Hockey games and practices until your case has been dealt with (405(c)).
 - **Its Casebook** ⚠️ **widens it to ordinary players.** Removing your own helmet *during* an altercation is a match too — *"any time a player involved in that altercation deliberately removes their own helmet, a match penalty must be assessed"*, and *"[f]ighting penalties do not have to be assessed when applying Rule 615(c)"* (Rule 615, Situation 14) — and *"an altercation does not need to be considered a fight"*: one penalty is enough (Note to Situations 14-20; Situation 21). **A chin strap that lets the helmet come off is a game misconduct with no deliberate act by anyone** (Situations 12 and 16), and the measure is *"If the space between the player's lower jaw and the chin strap allows for more than one finger to be inserted into that space, then the chin strap is not being properly worn"* (Situation 19). Do it up.
@@ -1849,6 +1925,8 @@ Never: Take your own helmet off, or reach for an opponent's, in an altercation. 
 **None of this is about a player lying on the ice after a hit.** There the instruction is medical: ⚠️ **leave the helmet on, do not move them except to keep their airway clear, and get help** ([If it happens anyway](#if-it-happens-anyway--a-suspected-neck-injury-on-the-ice)).
 
 ### Head-butting — and the net-front push that counts as one
+
+**In short:** Keep your head out of theirs — in a scrum, at the net front, after a whistle.
 
 ```facts
 Rule: Head-butting is no scrum technicality under USA Hockey — 619(a) assesses "a major plus a game misconduct penalty" for it, and for reckless endangerment plan on a match penalty: 619(b) says one "may also be assessed for head-butting", and 602(a) that one "shall be assessed"
@@ -1862,7 +1940,7 @@ Rule: EIHL Casebook Rule 47 gives the head-butting double minor two examples of 
 Never: Put your head or helmet into an opponent’s at the net front or in a scrum — the EIHL reaches a faked head-butt, and under USA Hockey head-butting is an ejection rather than four minutes
 ```
 
-**Keep your head out of theirs — in a scrum, at the net front, after a whistle.** The act the books describe is not a fight move but **a push delivered with the head by two players chest to chest**, which is the net front in §9, the corner in §8 and the shove after a whistle. You do not have to swing anything or drop a glove to arrive at it, and in no book is it the cheap option.
+The act the books describe is not a fight move but **a push delivered with the head by two players chest to chest**, which is the net front in §9, the corner in §8 and the shove after a whistle. You do not have to swing anything or drop a glove to arrive at it, and in no book is it the cheap option.
 
 **What it costs.**
 
