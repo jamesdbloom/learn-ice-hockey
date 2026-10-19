@@ -887,7 +887,8 @@ places in the old plan.
       - The GA4 bootstrap (`analytics.js`) is inert unless a `ga-measurement-id` meta tag is present. Confirm production does not inject one, against the "no third-party requests" claim.
   - **S1 DONE (19 Oct).** The claim sweep of the 19 R1-only documents is complete: 13 edited, 6 clean. Record: project/reviews/claim_sweep_s1_2026-10-19.md. That closes rows (a), (b), (d), (e), (i)–(n), (q), (s) and (t) for the R1-only documents; R2 had already covered its own 20.
   - **S2 DONE (19 Oct, 2a17bd5).** Fights outside the periods (cc) and leftovers (bb), (dd), (ee), (ff); browser pass (o). Record: project/reviews/s2_fights_outside_periods_2026-10-19.md.
-  - **S3 DONE (19 Oct).** Rows (hh) placement in winger, body_contact and team_play; (ii) amber on citations; (jj) body_contact paragraphs (19 → 1 over 1,200); (aa) pre-existing quotation drift (~80 fixes). Record: project/reviews/s3_placement_amber_quotes_2026-10-19.md. Still open: (ll) the tool gap, and the (hh) owner design call on styling.
+  - **S3 DONE (19 Oct).** Rows (hh) placement in winger, body_contact and team_play; (ii) amber on citations; (jj) body_contact paragraphs (19 → 1 over 1,200); (aa) pre-existing quotation drift (~80 fixes). Committed 036b698. Record: project/reviews/s3_placement_amber_quotes_2026-10-19.md. Still open: (ll) the tool gap, and the (hh) owner design call on styling.
+  - **S4 IN PROGRESS (19 Oct).** Row (ll): check_marker_pairs split-half check. Row (mm): orphaned "What it costs." audio labels, corpus scan then fixes.
   - **[R1 corpus-claim leftovers] Sweep each of these claims across sibling documents, by claim and not by line.**
     - (a) "From behind ends your game in every book but USA Hockey's" is wrong at the boards: USAH Casebook 608 Situation 1 makes it mandatory there.
     - (b) Goalie injury stoppage: "every book stops play" leaves out the possession gate in five books (NHL/IIHF/PWHL 8.1, USAH 206(a), HC 2.4(b)).
