@@ -332,7 +332,7 @@ const theHouse = {
     'line, it widens out to the two end-zone faceoff dots, and its far edge runs straight ' +
     'across between the tops of the two faceoff circles. The result is the shape of a ' +
     'baseball home plate lying on its side, pointing at the net. No skaters are drawn; ' +
-    'our goaltender is in the crease, which is how you know which net this is.',
+    'our goalie is in the crease, which is how you know which net this is.',
 
   zones: [{ points: HOUSE, label: 'the house' }],
 
@@ -386,7 +386,7 @@ const collapseCorner = {
   // the pin. If this caption must reach 50 words, the safety unit has to be routed
   // into the body of §"The base shape" FIRST — it may not simply be deleted here.
   caption:
-    'Low zone collapse — the house default assumed here, one of several a team might play — ' +
+    'Low zone collapse — the standard coverage assumed here, one of several a team might play — ' +
     'at the instant the puck goes into the strong-side corner. ' +
     'Both wingers stay high on the points; the centre leaves the high slot to go down as the ' +
     'second body and make it two on one. ' +
@@ -428,7 +428,7 @@ const collapseCorner = {
     'forward at the net front on the weak side of the crease, and their two defencemen at ' +
     'the two points. Six of our own: the strong-side defenceman on the puck about eight feet ' +
     'goal-side of the carrier, the weak-side defenceman on the doorstep between the net-front ' +
-    'forward and the goal, the goaltender in the crease, both wingers high and just goal-side ' +
+    'forward and the goal, the goalie in the crease, both wingers high and just goal-side ' +
     'of the opposing defencemen at the points, and the centre in the high slot. One route: ' +
     'the centre skating from the high slot out to the corner to make it two on one, finishing ' +
     'inside the carrier and short of him rather than behind him.',
@@ -786,7 +786,7 @@ const boxPlusOne = {
     'at the corners of a shaded four-sided region drawn around the slot: two low, one either ' +
     'side of the crease near the posts, and two high and wide at the tops of the two faceoff ' +
     'circles. Our fifth player, marked plus one, is out of the box and up in the strong-side ' +
-    'corner on the puck carrier; our goaltender is in the crease. The opposition have the ' +
+    'corner on the puck carrier; our goalie is in the crease. The opposition have the ' +
     'carrier in the strong-side corner with the puck, a forward at the net front just outside ' +
     'the low box players, a forward on the weak-side half-wall, and both defencemen at the ' +
     'points with nobody near them. No routes are drawn.',
@@ -864,7 +864,7 @@ const collapsingBox = {
     'The attacking half of the rink, the defended net at the right, with the shaded house ' +
     'region drawn on the ice. All five of our players stand inside it: two defencemen low, ' +
     'one either side of the crease and about nine feet off the posts, and three forwards ' +
-    'above them, one in the high slot and one either side of the slot. Our goaltender is in ' +
+    'above them, one in the high slot and one either side of the slot. Our goalie is in ' +
     'the crease. The opposition have the puck carrier behind the net, a forward in the ' +
     'strong-side corner, a forward on the weak-side half-wall, and both defencemen at the ' +
     'points — all five of them outside the shaded region. Only the carrier behind the net is ' +

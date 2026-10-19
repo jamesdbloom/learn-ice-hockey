@@ -238,7 +238,7 @@ const outOfTheMiddle = {
     'The defending half of the rink, your own net at the right. Two opposition forwards come ' +
     'down the middle of the zone from the left. Three of your own: the centre with the puck in ' +
     'the middle of the ice between the faceoff circles; the strong-side winger high on the ' +
-    'boards; and the goaltender in the crease. Two routes. The first is the centre carrying the ' +
+    'boards; and the goalie in the crease. Two routes. The first is the centre carrying the ' +
     'puck out of the middle and round behind his own net, curving above the crease rather than ' +
     'across the goalmouth. The second starts where that one finishes and is the outlet pass out ' +
     'to the winger on the boards, ending short of him. Neither a rim nor a reverse is drawn, ' +
@@ -358,7 +358,7 @@ const neutralZoneOutside = {
     'The full sheet, your own net at the left, attacking to the right. Your centre has the ' +
     'puck just short of centre ice, in the middle lane. Two opposition forwards are ahead of ' +
     'him in the middle, closing. Two of your own forwards are wide, one in each wall lane. ' +
-    'Both goaltenders are in their creases. Two routes, both starting on the centre and both ' +
+    'Both goalies are in their creases. Two routes, both starting on the centre and both ' +
     'alternatives rather than a sequence: a pass out to the wide forward on the near side, ' +
     'ending short of him, and a chip to the near boards, finishing at the wall inside the ' +
     'neutral zone and well short of the attacking blue line. Your defencemen and theirs are ' +
@@ -480,7 +480,7 @@ const arriveBehindThePuck = {
     'puck, a stride short of the blue line; the centre in the middle lane, further from the ' +
     'line than the puck is; and the other winger wide on the far side. Two opposition ' +
     'defencemen stand just inside their blue line, one either side of the middle, and their ' +
-    'goaltender is in the crease. Two routes, drawn as one instant rather than a sequence: the ' +
+    'goalie is in the crease. Two routes, drawn as one instant rather than a sequence: the ' +
     'winger carrying the puck across the line on the near side, and the centre skating through ' +
     'the middle and across the line behind it. Neither reaches either defenceman.',
 
@@ -558,7 +558,7 @@ const slotOptions = {
     'The attacking half of the rink, the net being attacked at the right, and no opposition ' +
     'skaters drawn — this is the free-space case. Four of your own: the centre with the puck in ' +
     'the slot between the faceoff circles; a winger on the near half-wall; a winger in the far ' +
-    'faceoff circle; and a defenceman at the point near the blue line. The opposing goaltender ' +
+    'faceoff circle; and a defenceman at the point near the blue line. The opposing goalie ' +
     'is in the crease. Four routes, all starting on the centre and all alternatives — a shot at ' +
     'the net, and three passes, to the winger on the half-wall, to the winger in the far ' +
     'circle, and back to the defenceman at the point. Each pass ends short of the player it is ' +
@@ -685,7 +685,7 @@ const decidingFromTheMiddle = {
     'puck in the middle lane of the neutral zone, a little short of centre ice. Two of ' +
     'your own forwards are wide and ahead of him, one in each wall lane. Your two ' +
     'defencemen are behind him, inside your own blue line, one either side of the middle. ' +
-    'Both goaltenders are in their creases. No opposition skaters are drawn — this is the ' +
+    'Both goalies are in their creases. No opposition skaters are drawn — this is the ' +
     'free-space case. Three routes, all starting on the centre and all alternatives rather ' +
     'than a sequence: the centre carrying the puck straight up the middle, finishing well ' +
     'short of the attacking blue line, and a pass out to each wide forward, each ending ' +
@@ -806,7 +806,7 @@ const creaseThePuckDecides = {
     'The defending half of the rink, your own net at the right. The puck lies inside the goal ' +
     'crease, close to the goal line and just to one side of the middle. Your centre stands ' +
     'outside the crease, short of its front edge and off to one side; an opposition forward ' +
-    'stands at the net front on the other side, also outside the crease; and your goaltender is ' +
+    'stands at the net front on the other side, also outside the crease; and your goalie is ' +
     'in the crease behind the puck. No routes are drawn, and no other player is drawn.',
 
   players: [

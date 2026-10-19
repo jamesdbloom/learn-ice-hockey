@@ -95,7 +95,7 @@ const containment122 = {
 
   describe:
     'The full sheet. Our own net is at the left, the opponents’ net at the right, and the opponents ' +
-    'are breaking out from right to left. Three opposition players and their goaltender: the defenceman ' +
+    'are breaking out from right to left. Three opposition players and their goalie: the defenceman ' +
     'D1 behind their net with the puck, his partner D2 in the far corner as the D-to-D option, and the ' +
     'winger W1 on the strong-side wall just inside their blue line. Our five: F1 at the opponents’ ' +
     'goal line on the weak side; F2 and F3 side by side across the middle third just inside the opposing ' +
@@ -194,7 +194,7 @@ const trap122 = {
   describe:
     'The full sheet, our net at the left and the opponents’ at the right, with the opponents ' +
     'attacking right to left. One opposition defenceman carries the puck out of their zone; both ' +
-    'goaltenders are shown. Our five: F1 alone just inside the opponents’ blue line in the middle ' +
+    'goalies are shown. Our five: F1 alone just inside the opponents’ blue line in the middle ' +
     'of the ice; F2 and F3 level with each other at the centre red line, one on each wall; both ' +
     'defencemen on our own blue line, the strong-side one behind F2. Two routes: the carrier’s way ' +
     'out, curving toward the wall he is being steered to, and F2 stepping up as the carrier reaches the ' +
@@ -290,7 +290,7 @@ const wall131 = {
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right, opponents attacking right to ' +
-    'left. One opposition defenceman carries the puck out on the near-side wall; both goaltenders are ' +
+    'left. One opposition defenceman carries the puck out on the near-side wall; both goalies are ' +
     'shown. Our five in three rows: F1 alone in the middle of the ice just inside the opponents’ ' +
     'blue line; then F2 on one wall, a defenceman in the middle and F3 on the other wall, all three level ' +
     'with each other just inside the centre red line and spanning the width of the sheet; then a single ' +
@@ -389,7 +389,7 @@ const flat14 = {
   describe:
     'The full sheet, our net at the left. Four of our skaters stand in a flat line across our own blue ' +
     'line, evenly spread from wall to wall, with the two defencemen in the middle two lanes and two ' +
-    'forwards outside them; the fifth, F1, stands alone near the centre red line. Both goaltenders are ' +
+    'forwards outside them; the fifth, F1, stands alone near the centre red line. Both goalies are ' +
     'shown. Two opposition forwards have come past F1 and are approaching the flat line, one with the ' +
     'puck and one behind him. Two numbered routes: one, the chip put through the gap between two of the ' +
     'four into the space behind the line; two, the second attacker’s race through the same gap to ' +
@@ -472,7 +472,7 @@ const pressure = {
     'neutral zone. Our two defencemen are between the red line and our own blue line rather than on it, ' +
     'the strong-side one in the dot lane and the weak-side one deeper and nearer the middle. Two numbered ' +
     'routes: one, the first pass out to the winger on the wall; two, the strong-side defenceman stepping ' +
-    'up hard on it, finishing on the inside of the receiver. Both goaltenders are shown. Two of the ' +
+    'up hard on it, finishing on the inside of the receiver. Both goalies are shown. Two of the ' +
     'opposition’s five skaters are drawn — the other three, the ones who make it ' +
     'a three-on-one if that first pass gets through, are not.',
 
@@ -550,7 +550,7 @@ const leftWingLock = {
     'and RW, are deep in the opponents’ end forechecking their defenceman, who has the puck behind ' +
     'his own net. Three of our players stand in a line across the ice just inside the centre red line: ' +
     'the left wing LW in one outside third, a defenceman in the middle third, and the second defenceman ' +
-    'in the other outside third, evenly spaced so each covers about 28 feet of width. Both goaltenders ' +
+    'in the other outside third, evenly spaced so each covers about 28 feet of width. Both goalies ' +
     'are shown. No routes are drawn: the drop back into the line has already happened at the instant ' +
     'shown, and the forecheck’s own routes are not the subject here. Only the puck carrier is ' +
     'drawn of the opposition’s five skaters.',
@@ -623,7 +623,7 @@ const regroup = {
     'in the middle near the opponents’ blue line as the stretch option. Two opposition players hold ' +
     'the middle third, one of them pressuring the forward who turned the puck back; neither is in the ' +
     'lane between our defencemen. Two numbered routes, both passes: one, the forward’s pass back; ' +
-    'two, the flat D-to-D across. Both goaltenders are shown; the opponents’ end is otherwise empty ' +
+    'two, the flat D-to-D across. Both goalies are shown; the opponents’ end is otherwise empty ' +
     'because the play has not gone there, and their other three skaters are not drawn.',
 
   players: [
@@ -761,7 +761,7 @@ const hinge = {
     'the middle of the ice behind his partner. Three, the lower defenceman carrying the puck up ice ' +
     'and toward the middle, drawn as a wave. Four, a pass from there back to a point just short of ' +
     'where route two’s arrowhead finishes. No glyph is drawn at the place the upper defenceman ends ' +
-    'up. Route two’s arrowhead is the only mark for it. Both goaltenders are shown. The centre and ' +
+    'up. Route two’s arrowhead is the only mark for it. Both goalies are shown. The centre and ' +
     'the third forward are not drawn, and neither are the opponents’ other three skaters.',
 
   players: [
@@ -879,7 +879,7 @@ const standUpAtTheLine = {
     'find out which your coach wants.',
 
   describe:
-    'The full sheet. Our own net is at the left with our goaltender in it, our own blue line a ' +
+    'The full sheet. Our own net is at the left with our goalie in it, our own blue line a ' +
     'quarter of the way in from that end, and an opposition puck carrier is coming the other way ' +
     'through the neutral zone on the near side, about twenty feet short of that line. One of our ' +
     'defencemen stands just inside the blue line in front of him, in the dot lane, with no route ' +
@@ -887,7 +887,7 @@ const standUpAtTheLine = {
     'the defenceman on the boards side rather than into him — a dashed line, the puck chipped ' +
     'past his hip into the zone behind, and a curved skating route round the outside of him. No ' +
     'backchecker is drawn, no defence partner is drawn, and the opposition’s other four skaters ' +
-    'are not drawn. The opposing goaltender is shown at the far end.',
+    'are not drawn. The opposing goalie is shown at the far end.',
 
   players: [
     { id: 'G', pos: 'G', at: OUR_G },
@@ -941,7 +941,7 @@ const backOffAtTheLine = {
 
   describe:
     'The full sheet, and the same arrangement as the diagram beside it: our own net at the left ' +
-    'with our goaltender, our own blue line a quarter of the way in, and an opposition puck ' +
+    'with our goalie, our own blue line a quarter of the way in, and an opposition puck ' +
     'carrier coming the other way on the near side about twenty feet short of that line. Our ' +
     'defenceman is in exactly the same place as in that diagram, just inside the blue line, but ' +
     'here he has a backward skating route retreating into our zone and drifting toward the middle ' +
@@ -950,7 +950,7 @@ const backOffAtTheLine = {
     'of the ice, its long edges on the faceoff-dot lines, running from the blue line back to the ' +
     'level of our end-zone faceoff dots, is labelled "the middle" — ' +
     'the ice the defenceman is not conceding. No backchecker, no defence partner and none of the ' +
-    'opposition’s other four skaters are drawn. The opposing goaltender is shown at the far end.',
+    'opposition’s other four skaters are drawn. The opposing goalie is shown at the far end.',
 
   // "giving up the blue line but never giving up the middle or your body
   // position". The band runs from the blue line he has just conceded back to the

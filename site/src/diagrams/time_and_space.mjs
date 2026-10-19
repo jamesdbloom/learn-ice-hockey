@@ -119,7 +119,7 @@ const attackTheSeam = {
     'his stick and a skate-and-stickhandle route that ends inside the mouth of the shaded ' +
     'band, and two teammates wide on either side, a little ahead of him, with no routes ' +
     'drawn. ' +
-    'The opposition goaltender is in his crease.',
+    'The opposition goalie is in his crease.',
 
   zones: [
     {
@@ -244,7 +244,7 @@ const denyTheReception = {
     'job depends on the coverage your team plays; the read is the same for a defenceman.',
 
   describe:
-    'Your own end, your net at the right and your goaltender in the crease. Two opposition ' +
+    'Your own end, your net at the right and your goalie in the crease. Two opposition ' +
     'players are drawn as solid circles: one on the boards level with the faceoff dot with ' +
     'the puck, and one in the middle of the ice level with the faceoff dots, in the high ' +
     'slot. A dashed passing route runs from the first to the second, stopping just short of ' +
@@ -372,7 +372,7 @@ const showAShoulder = {
     'about eleven feet short of him. A shaded band labelled "the middle" fills the centre of ' +
     'the zone, its sides on the two faceoff-dot lines and its ends at the blue line and the ' +
     'tops of the faceoff circles. A second route runs from the defenceman inward, about ' +
-    'eleven feet, ending inside that band. The opposition goaltender is in his crease.',
+    'eleven feet, ending inside that band. The opposition goalie is in his crease.',
 
   zones: [
     {

@@ -136,7 +136,7 @@ const threeLanes = {
     'The attacking half of the rink, opposition net at the right. Three own forwards approach ' +
     'the blue line in three lanes: one wide near each side wall, level with the line, and one ' +
     'in the middle seven feet short of it with the puck. Two opposition defencemen are inside ' +
-    'the zone, backing in, roughly between the faceoff dots, with their goaltender in the ' +
+    'the zone, backing in, roughly between the faceoff dots, with their goalie in the ' +
     'crease. Three routes: each wide player continues into the zone down their own lane, and ' +
     'the carrier carries the puck across the line through the middle.',
 
@@ -247,8 +247,8 @@ const wideEntry = {
     // evidenced than it is. What is a structural reading is the absence of a positioning
     // ground outside the crease. Owner: content/systems/offensive_zone_play.md.
     '. Screening from outside the crease without contact is normally legal; what risks the ' +
-    'goal is entering the paint, or making contact with the goaltender. On contact it is where ' +
-    'the goaltender is that decides, not where you are: any contact you initiate at all while ' +
+    'goal is entering the paint, or making contact with the goalie. On contact it is where ' +
+    'the goalie is that decides, not where you are: any contact you initiate at all while ' +
     'he is in his crease, incidental or otherwise, and more than incidental contact while he ' +
     'is out of it. And he is not fair game out there — both books say the appropriate penalty ' +
     'should be assessed in every case of unnecessary contact. Those are Rules 69.3 and 69.4 ' +
@@ -264,7 +264,7 @@ const wideEntry = {
     'line. A second own forward drives from the high slot to the front of the net, stopping ' +
     'short of the crease. A third own forward waits high on the far side for the back-door or ' +
     'point option. A second opposition defenceman stands in front of his own net and the ' +
-    'goaltender is in the crease. The beaten defenceman is drawn with no route, because the ' +
+    'goalie is in the crease. The beaten defenceman is drawn with no route, because the ' +
     'route he would have to skate finishes at a player travelling along the wall and that is a ' +
     'shape that is not drawn here.',
 
@@ -431,7 +431,7 @@ const delayCurl = {
     'back toward the neutral zone in open ice, well clear of both side walls. The puck is drawn ' +
     'on the far side of him from the nearest defender, which is what protecting it with your ' +
     'body means. A second own forward arrives late from behind on the other side of the ice, ' +
-    'skating toward the line. The opposition goaltender is in the crease.',
+    'skating toward the line. The opposition goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -502,7 +502,7 @@ const hardRim = {
     'right wall into the right corner, then round behind the net and out to the far corner. A ' +
     'third numbered route is an own forward skating down the far wall into that corner to meet ' +
     'it. The opposition weak-side defenceman stands in the middle of the zone, the partner who ' +
-    'has to rotate, and the goaltender is in the crease. No route ends on a player.',
+    'has to rotate, and the goalie is in the crease. No route ends on a player.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -563,7 +563,7 @@ const softAreaDump = {
     'left corner. A second own forward, already well inside the zone along the left wall, skates ' +
     'toward that corner and his route stops short of the puck and up-wall of it. An opposition ' +
     'defenceman is turning back from in front of his own net toward the same corner, his route ' +
-    'also stopping short. The goaltender is in the crease. The two arriving routes finish apart ' +
+    'also stopping short. The goalie is in the crease. The two arriving routes finish apart ' +
     'from one another and neither finishes behind the other player.',
 
   players: [
@@ -626,7 +626,7 @@ const chipPast = {
     'heading. The two routes separate before the defenceman and rejoin behind him. The ' +
     'defenceman is drawn with no route of his own, because every route from him finishes ' +
     'pointing at the carrier, and an arrow that reads as a collision is not drawn here. ' +
-    'The opposition goaltender is in the crease.',
+    'The opposition goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -683,7 +683,7 @@ const crossCorner = {
     'side, the one the puck is being taken away from. His partner, on the left, has a long route ' +
     'across and down toward that far corner. A second own forward is driving down the left wall ' +
     'and his route finishes on the wall side, up-ice of where the puck lands and clear of the ' +
-    'retrieving defenceman. The goaltender is in the crease.',
+    'retrieving defenceman. The goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -774,7 +774,7 @@ const flipOverTrap = {
     'exempts you depends on the book you play under. USA Hockey grants that exemption only at ' +
     'Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), so ' +
     'below those levels a shorthanded team can be iced; the NHL grants it but withdraws it from ' +
-    'a team shorthanded by a major that has left nobody on the penalty bench (Rule 81.6). Find ' +
+    'a team shorthanded by a major that has left nobody on the penalty box (Rule 81.6). Find ' +
     'out which rules your league runs.',
 
   describe:
@@ -784,7 +784,7 @@ const flipOverTrap = {
     'and one in the centre, and a fifth opposition player is back near their own blue line. A ' +
     'long dashed route runs from the carrier, between the players of the three-man layer, and ' +
     'lands high in the attacking zone short of the goal line. Two own forwards skate from the ' +
-    'neutral zone toward that area, their routes stopping short of it. Both goaltenders are in ' +
+    'neutral zone toward that area, their routes stopping short of it. Both goalies are in ' +
     'their creases.',
 
   players: [
@@ -846,7 +846,7 @@ const trapezoidAim = {
   width: 900,
 
   caption:
-    'Dump to the corners, not to the goaltender: where a trapezoid applies, the marked area is ' +
+    'Dump to the corners, not to the goalie: where a trapezoid applies, the marked area is ' +
     'the only ice behind the goal line on which he may play the puck, so a puck dying straight ' +
     'behind the net is exactly the help you were trying to deny him. The NHL and the IIHF book ' +
     'mark one, with the KHL commonly said to have one too though no KHL ' +
@@ -864,7 +864,7 @@ const trapezoidAim = {
     // eihl_casebook.txt Preamble hands unmentioned rules to the 2026-2027 IIHF book.
     'rulebook was available to check that; the USA Hockey, Hockey Canada and CARHA books mark ' +
     'none, and the PWHL switches its off though one rule still writes the minor, so plan for a ' +
-    'PWHL goaltender to come out. In any British competition, plan for him to come out too: ' +
+    'PWHL goalie to come out. In any British competition, plan for him to come out too: ' +
     'England Ice Hockey calls it "not currently enforced" in its own competitions, and nothing ' +
     'published settles how far that reaches. Look behind the net, ask your league, and ' +
     'where there is none, rim it hard and low instead.',
@@ -872,12 +872,12 @@ const trapezoidAim = {
   describe:
     'The attacking half of the rink, opposition net at the right, with the goalkeeper’s ' +
     'restricted area marked behind the net by two dashed lines running from the goal line out ' +
-    'to the end boards. The opposition goaltender stands behind his net, inside those lines. An ' +
+    'to the end boards. The opposition goalie stands behind his net, inside those lines. An ' +
     'own forward with the puck is just outside the blue line on the right; a dashed route sends ' +
     'the puck into the right corner, outside the marked area and behind the goal line. A second ' +
     'own forward skates down the right wall toward it, his route stopping short. An opposition ' +
     'defenceman is between the net and the corner, the skater who now has to go and get it. The ' +
-    'goaltender is drawn with no route: the diagram is about where the puck may legally be ' +
+    'goalie is drawn with no route: the diagram is about where the puck may legally be ' +
     'played, not about where he skates.',
 
   players: [
@@ -963,7 +963,7 @@ const outsideShoulder = {
     'boards, and stops about twelve feet short of him. A short plain route runs from the ' +
     'defenceman outward toward the boards, showing his hips opening that way. A shaded band ' +
     'labelled "the inside lane" fills the ice on the middle side of him, running from the blue ' +
-    'line toward the tops of the faceoff circles. The opposition goaltender is in his crease.',
+    'line toward the tops of the faceoff circles. The opposition goalie is in his crease.',
 
   zones: [
     {
@@ -1074,10 +1074,10 @@ const middleDrive = {
     '⚠️ Your head is up: this is the one route where two defencemen can both stand you up in ' +
     'open ice, and looking down at the puck as you arrive is what turns that into an injury. ' +
     'And the drive stops well short of the goalmouth here, because what happens in the last few ' +
-    'feet of a net drive is contact in front of a goaltender, which this picture does not teach.',
+    'feet of a net drive is contact in front of a goalie, which this picture does not teach.',
 
   describe:
-    'The attacking half of the rink, the opposition net and goaltender at the right, the attack ' +
+    'The attacking half of the rink, the opposition net and goalie at the right, the attack ' +
     'moving left to right. Two opposition defencemen are drawn as solid triangles just inside ' +
     'their own blue line, level with each other and about twelve feet either side of the middle ' +
     'of the ice. Two own players are drawn as open circles. One carries the puck wide on the ' +
@@ -1257,7 +1257,7 @@ const trailSkateDrag = {
     'winger — is on the blue line, body, stick and hands already inside the attacking zone, with ' +
     'a short route continuing on into the zone at speed. A second own forward, the puck carrier, ' +
     'is a stride behind, still short of the line, with the puck. An opposition defenceman stands ' +
-    'up at the blue line, well clear of the winger, and the opposition goaltender is in the crease.',
+    'up at the blue line, well clear of the winger, and the opposition goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -1331,7 +1331,7 @@ const dropPass = {
     'past it, angling on toward the blue line and into the zone as though he still carries it. A ' +
     'second own forward is well back and to the far side, with a long route arriving from behind ' +
     'toward the loose puck, stopping just short of it. Two opposition defencemen are positioned ' +
-    'toward the side the first forward is driving into, and the goaltender is in the crease.',
+    'toward the side the first forward is driving into, and the goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -1404,7 +1404,7 @@ const highTriangle = {
     'puck drives wide on the far side, and a third trails through the middle toward the high ' +
     'slot. Two opposition defencemen are inside the zone; the nearer one has a short route ' +
     'sliding toward the side the puck carrier is driving into, and the farther one holds a ' +
-    'central position. The goaltender is in the crease.',
+    'central position. The goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -1500,7 +1500,7 @@ const vsStandingUp = {
     'route chips the puck past the near defenceman, staying wide toward the boards, and the ' +
     "forward's own route curls in front of him and back out to the boards to collect it. A " +
     'fourth own forward, well back in the neutral zone on the far side, has a long route ' +
-    'arriving unmarked near the top of the far faceoff circle. The goaltender is in the crease.',
+    'arriving unmarked near the top of the far faceoff circle. The goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -1584,7 +1584,7 @@ const squashAndSlide = {
 
   describe:
     'The attacking half of the rink from the defending team’s point of view, their own net ' +
-    'and goaltender at the right. An opposition forward carries the puck in on the near side, ' +
+    'and goalie at the right. An opposition forward carries the puck in on the near side, ' +
     'with a route continuing into the zone along that side. Two own defencemen, level with each ' +
     'other well inside their own blue line, each have a short route sliding sideways toward the ' +
     'puck side, the same distance and the same direction, so the pair moves as one unit. An own ' +

@@ -151,7 +151,7 @@ const pp131 = {
     'many teams run a 1-3-1 rather than an umbrella or an overload was found.',
 
   describe:
-    'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
+    'Attacking half of the rink, the opposition net at the right, the opposition goalie in ' +
     'the crease. Five own players: one at the point, in the middle and just inside the blue line, ' +
     'two on the ' +
     'half-walls level with the faceoff dots, one bumper in the middle of the slot between them, ' +
@@ -360,7 +360,7 @@ const ppSpread = {
     'two low on the goal line just outside each post, two high and wide at the tops of the left ' +
     'and right faceoff circles, and one in the middle of the slot. Three opposition players form ' +
     'a tight triangle: two just in front of the net either side, one high in the slot. The ' +
-    'opposition goaltender is in the crease. Two numbered passes: one, straight across from the ' +
+    'opposition goalie is in the crease. Two numbered passes: one, straight across from the ' +
     'top of the right circle to the top of the left circle, crossing the middle of the ice; two, ' +
     'from there inside to the player in the middle of the slot.',
 
@@ -521,7 +521,7 @@ const ppBackdoor = {
     'released is not. A read off any formation, not a shape of its own.',
 
   describe:
-    'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
+    'Attacking half of the rink, the opposition net at the right, the opposition goalie in ' +
     'the crease. Three own players: one up top near the right point holding the puck, one at the ' +
     'net front just outside the crease on the right, and one at the weak-side post outside the ' +
     'crease on the left, arriving late. One opposition defenceman stands low on the right, close ' +
@@ -597,11 +597,11 @@ const ppWalkDown = {
   caption:
     'The half-wall player skates the puck down toward the goal line and inside rather than ' +
     'passing, forcing a decision: if the low defender steps out, the net front is open; if he ' +
-    'holds, the shot comes from the top of the circle with a moving goaltender. Neither is ' +
+    'holds, the shot comes from the top of the circle with a moving goalie. Neither is ' +
     'drawn. Walk toward the dot, not the corner.',
 
   describe:
-    'Attacking half of the rink, the opposition net at the right, the opposition goaltender in ' +
+    'Attacking half of the rink, the opposition net at the right, the opposition goalie in ' +
     'the crease. One own player carries the puck from the right half-wall, drawn with the long ' +
     'smooth wave that means skate and stickhandle, angling down and in toward the goal line and ' +
     'stopping short of the slot. One own player stands at the net front just outside the crease. ' +
@@ -665,7 +665,7 @@ const pkBox = {
     'runs is a coaching choice, and no public count of bases exists.',
 
   describe:
-    'Defending half of the rink, our net at the right and our goaltender in the crease. Four own ' +
+    'Defending half of the rink, our net at the right and our goalie in the crease. Four own ' +
     'players in a rectangle around the slot: two forwards high, level with the tops of the ' +
     'circles and inside them, and two defencemen low, either side of the net front. Five ' +
     'opposition players in a 1-3-1: one at the point just inside the blue line, two on the ' +
@@ -708,7 +708,7 @@ const pkDiamond = {
     'and a backdoor arriver. Which shape you run is a coaching choice.',
 
   describe:
-    'Defending half of the rink, our net at the right and our goaltender in the crease. Four own ' +
+    'Defending half of the rink, our net at the right and our goalie in the crease. Four own ' +
     'players in a diamond: one high in the middle between the blue line and the tops of the ' +
     'circles, two in the middle of the zone either side of the slot, and one alone in front of ' +
     'the net. Five opposition players in a 1-3-1: one at the point with the puck, two on the ' +
@@ -799,7 +799,7 @@ const pkWedge = {
     'tight, block shots and do not chase. Blocking shots is a technique, not an act of ' +
     'courage. Be in the lane ' +
     'before the shot, not sliding into it, and never block from a screening position — ' +
-    'half-deflecting a shot your goaltender could not see is worse than letting it through ' +
+    'half-deflecting a shot your goalie could not see is worse than letting it through ' +
     'cleanly. The fourth, the +1, pressures whoever has the puck. The route drawn here — ' +
     'straight out from the goal at the ' +
     'carrier — is one of three published readings and a coaching choice rather than the ' +
@@ -815,7 +815,7 @@ const pkWedge = {
     '⚠️ And block from close and on your feet, head out of the lane and hands tucked.',
 
   describe:
-    'Defending half of the rink, our net at the right and our goaltender in the crease. Three own ' +
+    'Defending half of the rink, our net at the right and our goalie in the crease. Three own ' +
     'players form a tight triangle around the net: two defencemen just outside the crease edges ' +
     'either side, and one forward in the slot in front of them. A fourth own player, the +1, is ' +
     'out on the right side between the net and the puck, with a checking-pressure route running ' +
@@ -928,7 +928,7 @@ const pkNz13 = {
     'players: F1 ahead of the carrier, giving token checking pressure back toward him and ' +
     'finishing short of him; and behind F1 a line of three across the ice — a forward in the ' +
     'middle and a defenceman near each side — each backing up toward our blue line, drawn with ' +
-    'the row of separate overlapping arches that means backward skating. Our goaltender is in ' +
+    'the row of separate overlapping arches that means backward skating. Our goalie is in ' +
     'the crease at the right. ' +
     'The other four power-play attackers are not drawn.',
 
@@ -986,7 +986,7 @@ const pkNz112 = {
     'players: F1 ahead of the carrier on the same side of the ice with a checking-pressure route ' +
     'running back toward him and finishing short; F2 stacked behind F1 on that same side, level ' +
     'with him along the boards; and two defencemen abreast just in front of our blue line, one ' +
-    'either side of the middle. Our goaltender is in the crease at the right. The other four ' +
+    'either side of the middle. Our goalie is in the crease at the right. The other four ' +
     'power-play attackers are not drawn.',
 
   players: [

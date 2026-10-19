@@ -112,7 +112,7 @@ const lowZoneCollapse = {
   describe:
     'The defending half of the rink, your own net at the right. Three opposition players: the puck ' +
     'carrier deep in the right corner, and the two opposing defencemen at their points near the ' +
-    'blue line. Six of your own: the goaltender in the crease; the strong-side defenceman in the ' +
+    'blue line. Six of your own: the goalie in the crease; the strong-side defenceman in the ' +
     'corner between the carrier and the net; the centre low in the strong-side circle supporting ' +
     'him; the weak-side defenceman at the goalmouth on the far side of the net; the strong-side ' +
     'winger high on the right, goal-side of the opposing defenceman he is covering; and the ' +
@@ -315,7 +315,7 @@ const backcheckMiddleLane = {
     'goal-side of the middle ' +
     'driver and between him and his own net; a winger in each outside lane, goal-side of the ' +
     'attacker in that lane; the two defencemen retreating together in front of them, keeping the ' +
-    'middle of the ice sealed; and the goaltender in the crease.',
+    'middle of the ice sealed; and the goalie in the crease.',
 
   // EVERY TRAILING COORDINATE ANCHORED TO `neutral-dot` IN THIS DIAGRAM WAS A
   // FOSSIL. rink.json's neutral_dot_x was corrected from 30 to 20 — the dots are
@@ -507,7 +507,7 @@ const wingerHighThenWall = {
   describe:
     'The defending half of the rink, your own net at the right. Two opposition players: a ' +
     'defenceman at his point just inside the blue line on the right side, and a forechecking ' +
-    'forward in the right corner. Three of your own: the goaltender in the crease; a defenceman ' +
+    'forward in the right corner. Three of your own: the goalie in the crease; a defenceman ' +
     'in the corner contesting the puck; and the right winger high on the right side, goal-side of ' +
     'the opposing defenceman he is covering. One route runs from the winger down the wall, ' +
     'hugging the boards, to the outlet position on the boards between the hash marks and the goal ' +
@@ -717,7 +717,7 @@ const wingerOffensiveZone = {
 
   describe:
     'The attacking half of the rink, the opposition net at the right, with only the opposition ' +
-    'goaltender drawn. Two of your own players: the right winger on the right half-wall with the ' +
+    'goalie drawn. Two of your own players: the right winger on the right half-wall with the ' +
     'puck, and the left winger in the left faceoff circle. Two routes: a shot from the half-wall ' +
     'toward the net, stopping short of the crease, and the left winger’s skate to the side of the ' +
     'net, arriving beside it rather than in the blue paint. The high slot, between the faceoff ' +
@@ -789,12 +789,12 @@ const twoOnOne = {
     'A two-on-one: take away the pass and give up the shot. Sit in the passing lane between the two ' +
     'attackers with your stick flat on the ice on the passing side, back up under control, and do not' +
     ' slide unless the pass has already been released — a cross-ice pass to an open forward is a ' +
-    'chance your goaltender cannot save, whereas the shot is one they can see and are set for. That ' +
+    'chance your goalie cannot save, whereas the shot is one they can see and are set for. That ' +
     'is one of two legitimate systems rather than a law: the realistic alternative is a timed slide ' +
     'flat across the passing lane, which removes the pass outright at the cost of putting you out of ' +
     'the play if you go early, and it carries its own penalty exposure, which this document sets out ' +
     'in full. Ask your coach which one you are playing and how they want you down, and make sure your' +
-    ' goaltender gives the same answer. One honest caveat either way: if the second attacker has been' +
+    ' goalie gives the same answer. One honest caveat either way: if the second attacker has been' +
     ' picked up by a backchecker and the shooter is walking into the slot completely unpressured with' +
     ' no realistic pass available, it is no longer a two-on-one and you close on the puck. No ' +
     'backchecker is drawn here, because one would make this a different situation.',
@@ -804,7 +804,7 @@ const twoOnOne = {
     'from the left, one wide on each side of the ice, with the puck on the right-hand one; a ' +
     'route shows him carrying toward the top of the circle. Between and ahead of them is a single ' +
     'defenceman, sitting in the passing lane that joins the two attackers, with a backward ' +
-    'skating route showing him retreating under control rather than stepping up. The goaltender ' +
+    'skating route showing him retreating under control rather than stepping up. The goalie ' +
     'is in the crease. Nobody is backchecking.',
 
   players: [
@@ -993,7 +993,7 @@ const dToD = {
     'in the zone, one on each side, level with the faceoff dots and toward the goal line, with ' +
     'the puck on the right-hand one. A passing route runs from him around behind his own net, ' +
     'dipping below the goal line and passing behind the goal frame, to his partner on the far ' +
-    'side. The goaltender is in the crease and an opposition forward stands in front of the net in ' +
+    'side. The goalie is in the crease and an opposition forward stands in front of the net in ' +
     'the lane the pass is deliberately not taking. The slot is shaded: a narrow band down the middle ' +
     'of the ice between the inner edges of the two faceoff circles, running from the top of the ' +
     'circles to the front of the crease. It is not a marking on the ice.',
@@ -1135,7 +1135,7 @@ const wingerDzRim = {
     'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
-    'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
+    'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +
     'Your right winger is on the wall, level with the faceoff dot, ' +
     'holding the puck on the ' +
     'boards side of his body. An opposition forward is a little inside him and a little up-ice, ' +
@@ -1202,7 +1202,7 @@ const wingerDzReverse = {
     SHOULDER_TAIL,
 
   describe:
-    'The defending half of the rink, your own net at the right. Your goaltender is in the crease. ' +
+    'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +
     'Your right winger is on the wall, level with the faceoff dot, ' +
     'with the puck on the ' +
     'boards side of his body. An opposition forward has skated past him and is now up-ice of him ' +
@@ -1302,7 +1302,7 @@ const offWingOpenToTheIce = {
     ' forearm and hip, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
-    'The defending half of the rink, your own net at the right. Your goaltender is in the crease ' +
+    'The defending half of the rink, your own net at the right. Your goalie is in the crease ' +
     'and your defenceman is in the right corner with the puck already moved. Your winger stands on ' +
     'the right side a step or two off the boards rather than flush against them, level with the ' +
     'faceoff dot, with the puck on the inside of his body. An opposition forechecker is up-ice ' +

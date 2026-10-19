@@ -122,7 +122,7 @@ const playingTheAngle = {
 
   caption:
     'An opposition shooter at the top of the right-hand faceoff circle, with no pass available. ' +
-    'The shaded wedge is every straight path from that puck into the net. The goaltender is ' +
+    'The shaded wedge is every straight path from that puck into the net. The goalie is ' +
     'standing on the line from the puck to the exact centre of the goal line, at a depth every ' +
     'goalie coach will adjust — so read it as an example of the read rather than a measured ' +
     'instruction.',
@@ -132,7 +132,7 @@ const playingTheAngle = {
     'forward stands at the top of the right-hand faceoff circle with the puck just off ' +
     'the blade toward the net. A shaded triangle runs from the puck to the two goalposts, ' +
     'narrowing from the width of the net at the goal line to a point at the puck. The ' +
-    'goaltender stands inside that triangle on its centre line, six feet out from the ' +
+    'goalie stands inside that triangle on its centre line, six feet out from the ' +
     'middle of the goal line, so slightly to the shooter’s side of the middle of the ' +
     'net rather than square in the goalmouth. No other players are drawn: the read this ' +
     'illustrates is the one with no pass available, and drawing a second attacker would ' +
@@ -201,7 +201,7 @@ const frontDoorBackDoor = {
   caption:
     'A strong-side shooter, and a second attacker unmarked on the far side of the net — the back ' +
     'door. With a pass available across the slot the read is to back off rather than challenge, ' +
-    'and the goaltender has. How far is a judgement made situation by situation: the trade is the ' +
+    'and the goalie has. How far is a judgement made situation by situation: the trade is the ' +
     'front door against the back door, and there is no universally correct answer.',
 
   describe:
@@ -210,9 +210,9 @@ const frontDoorBackDoor = {
     'forward stands unmarked on the far side of the net, five feet out from the goal ' +
     'line and clear of the crease. A dashed line — the notation for a pass — shows the ' +
     'pass available across the slot, running from the puck toward that attacker and ' +
-    'stopping well short of him. The goaltender stands on the line from the puck to the ' +
+    'stopping well short of him. The goalie stands on the line from the puck to the ' +
     'centre of the goal line, four feet out, nearer the goal line than the top of the ' +
-    'crease. No defenders are drawn; the point of the picture is the goaltender’s depth ' +
+    'crease. No defenders are drawn; the point of the picture is the goalie’s depth ' +
     'decision and the space behind them.',
 
   players: [
@@ -254,7 +254,7 @@ const angleClosesWide = {
   width: 900,
 
   caption:
-    'The puck has gone wide and low, level with the goal line, and the goaltender has come back ' +
+    'The puck has gone wide and low, level with the goal line, and the goalie has come back ' +
     'to the near post. Out there the angle closes on its own, so depth buys nothing and only ' +
     'leaves you unable to get back. End the lateral movement at the post rather than a foot short ' +
     'of it — and note that closing the low short side leaves the space over your shoulder still ' +
@@ -263,10 +263,10 @@ const angleClosesWide = {
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition ' +
     'forward has the puck level with the goal line, about fourteen feet to the right of ' +
-    'the net and between the net and the boards. The goaltender is at the near post, on the ' +
+    'the net and between the net and the boards. The goalie is at the near post, on the ' +
     'goal line rather than out at the top of the crease, and tight against the post ' +
     'rather than standing a foot off it. No other players are drawn, and no movement is ' +
-    'drawn: the picture is one position on the goaltender’s arc, not the journey to it.',
+    'drawn: the picture is one position on the goalie’s arc, not the journey to it.',
 
   players: [
     { id: 'F1', team: 'opp', pos: 'F', at: SHOOTER_WIDE, label: 'the shooter' },
@@ -296,7 +296,7 @@ const failureModes = {
   width: 900,
 
   caption:
-    'The same goaltender drawn twice, against one shooter, and neither position is one to play ' +
+    'The same goalie drawn twice, against one shooter, and neither position is one to play ' +
     'from. One is hiding deep in the net, where the corners are open. The other has run at the ' +
     'shooter, out level with the hash marks and about twenty feet from the goal line, where the ' +
     'first pass or the first change of direction beats him. Both are confidence problems rather ' +
@@ -305,12 +305,12 @@ const failureModes = {
   describe:
     'The attacking half of the rink, the defended net at the right. One opposition ' +
     'forward stands at the top of the right-hand faceoff circle with the puck. Two ' +
-    'goaltender glyphs are drawn on the line from that puck to the centre of the goal ' +
-    'line, representing the same goaltender at two extremes rather than two players. ' +
+    'goalie glyphs are drawn on the line from that puck to the centre of the goal ' +
+    'line, representing the same goalie at two extremes rather than two players. ' +
     'The first is two feet out, effectively in the goalmouth, labelled too deep. The ' +
     'second is twenty feet out, level with the hash marks of the right-hand faceoff ' +
     'circle and out in the slot, labelled too far out. Nothing is drawn between them, ' +
-    'because where the goaltender should be is a situation-by-situation read rather than ' +
+    'because where the goalie should be is a situation-by-situation read rather than ' +
     'a fixed spot.',
 
   players: [
@@ -459,13 +459,13 @@ const safeOutlets = {
     'glass and out is rarely wrong when you are in trouble, but along the glass, never over it. A ' +
     'puck you shoot directly out of the rink from your own end is a two-minute minor under NHL ' +
     'and IIHF rules, where USA Hockey’s clause reaches only a deliberate clear; Hockey Canada’s ' +
-    'Rule 10.1, clause v, writes a limb aimed at goaltenders specifically and names no zone at ' +
+    'Rule 10.1, clause v, writes a limb aimed at goalies specifically and names no zone at ' +
     'all, and whether an accidental clear is caught by it is unsettled rather than free. Whether ' +
     'you play the puck at all is your team’s convention rather than a law. Ask, and then be ' +
     'consistent.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right, with the goaltender ' +
+    'The attacking half of the rink, the defended net at the right, with the goalie ' +
     'standing behind his own net and the puck on his stick. Three dashed lines — the ' +
     'notation for a pass — leave the puck. One runs up the near boards to a defenceman of ' +
     'yours standing on the wall level with the goal line, stopping short of him. One curves ' +
@@ -552,7 +552,7 @@ const rimStopOrClear = {
     // would have taken it to mean a pad in the way INSIDE the trapezoid is a minor, which is the
     // rule inverted.
     'the way and let them have it. Under the IIHF book that is not caution, it is the rule: its ' +
-    'Situation Handbook answers a goaltender who drops and blocks a pass with the leg pads out ' +
+    'Situation Handbook answers a goalie who drops and blocks a pass with the leg pads out ' +
     'beyond that shaded area with a delay-of-game minor, so a pad in the way counts as playing ' +
     'the puck. Under the NHL book, whether a deliberate body block counts as playing it is this ' +
     'document’s reading rather than a quoted interpretation. In front of the goal line, and ' +
@@ -582,7 +582,7 @@ const rimStopOrClear = {
     'line between the two red trapezoid lines is shaded. A dashed line — the notation for a ' +
     'pass — starts high on the near boards in front of the goal line and curves around the ' +
     'end boards behind the net, crossing the goal line far out near the boards and outside ' +
-    'the shaded area, then running into it and stopping short of the goaltender, who stands ' +
+    'the shaded area, then running into it and stopping short of the goalie, who stands ' +
     'behind his own net inside the shaded area. One defenceman of yours is coming back on ' +
     'the far side of the net. No opponents are drawn.',
 
@@ -655,10 +655,10 @@ const breakawayRetreat = {
   describe:
     'The attacking half of the rink, the defended net at the right. One opposition forward ' +
     'carries the puck out of the neutral zone toward the net, drawn as a long smooth wave — ' +
-    'the notation for skating with the puck — ending well short of the goaltender. The ' +
-    'goaltender is drawn out in front of his net, about eleven feet from the centre of the ' +
+    'the notation for skating with the puck — ending well short of the goalie. The ' +
+    'goalie is drawn out in front of his net, about eleven feet from the centre of the ' +
     'goal line and on the line from the puck to that centre. A run of flattened arches — the ' +
-    'notation for backward skating, the goaltender’s C-cuts — leads from him back along that ' +
+    'notation for backward skating, the goalie’s C-cuts — leads from him back along that ' +
     'same line to a point three feet out, inside the crease. No other players are drawn: a ' +
     'breakaway is one attacker and you.',
 
@@ -723,7 +723,7 @@ const readingATip = {
     'follow it. Stay tall and patient for as long as you can rather than dropping early. Two ' +
     'things the picture cannot show. The forward is drawn further out than he would really stand, ' +
     'because two glyphs will not fit in the few feet of real ice between a tipper and a ' +
-    'goaltender. And the goaltender’s depth is a consequence of what fits on the page rather than ' +
+    'goalie. And the goalie’s depth is a consequence of what fits on the page rather than ' +
     'an instruction, because how deep to play a screened shot from distance is a genuine coaching ' +
     'split — so ask which one your coach teaches.',
 
@@ -732,7 +732,7 @@ const readingATip = {
     'stands at the right-hand point with the puck. A double line — the notation for a shot — ' +
     'runs from the puck toward the net and stops part of the way there. An opposition forward ' +
     'stands on that line about thirteen feet out from the goal line, in the shooting lane and ' +
-    'clear of the crease. The goaltender is on the same line, inside the crease, a little ' +
+    'clear of the crease. The goalie is on the same line, inside the crease, a little ' +
     'under three feet out from the centre of the goal line. No defenders of yours are drawn: ' +
     'the player who would move that forward is not part of what this picture is about.',
 
@@ -797,8 +797,8 @@ const reboundCornersNotSlot = {
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition defenceman ' +
     'stands at the left-hand point with the puck, and a double line — the notation for a shot ' +
-    '— runs from it toward the net, stopping about nine feet short of the goaltender. The ' +
-    'goaltender is on the line from that puck to the centre of the goal line, six feet out. ' +
+    '— runs from it toward the net, stopping about nine feet short of the goalie. The ' +
+    'goalie is on the line from that puck to the centre of the goal line, six feet out. ' +
     'An opposition forward stands in the slot on the other side of the centre line, inside a ' +
     'shaded region labelled "the slot" and shaded as a warning rather than as a target. No ' +
     'rebound is drawn, and no corner is shaded.',
@@ -862,18 +862,18 @@ const fiftyFiftyPuck = {
     'Rule 63.2(vi). Both books attach a note to that clause saying that coming out to cut down ' +
     'the angle, making the save and then covering the puck is legal, and Hockey Canada permits it ' +
     'at clause ii of Interpretation 3 to Rule 10.1(a) — though clause v of that same ' +
-    'interpretation says a goaltender who leaves their crease will not be allowed to freeze the ' +
+    'interpretation says a goalie who leaves their crease will not be allowed to freeze the ' +
     'puck at all, and the book nowhere says which governs. The puck here is in front of the goal ' +
     'line, so nothing about the trapezoid is in play; this is only the race. And if you do ' +
     'commit, commit.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, and the net has nobody in ' +
-    'it. A loose puck sits in the near corner, in front of the goal line. The goaltender is ' +
+    'it. A loose puck sits in the near corner, in front of the goal line. The goalie is ' +
     'drawn out of his crease and part of the way to it, about six feet away. An opposition ' +
     'forward is arriving at the same puck from the other side and is slightly closer to it ' +
-    'than the goaltender is. No routes are drawn, and nothing marks who wins the race: the ' +
-    'point of the picture is the distance between the goaltender and his own empty net.',
+    'than the goalie is. No routes are drawn, and nothing marks who wins the race: the ' +
+    'point of the picture is the distance between the goalie and his own empty net.',
 
   players: [
     { id: 'G', pos: 'G', at: G_OUT_OF_NET, label: 'out of your net' },

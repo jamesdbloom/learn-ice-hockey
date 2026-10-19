@@ -213,7 +213,7 @@ const wallDepthBySystem = {
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left and the attacking end at ' +
-    'the right. Your goaltender is in his crease and one of your defencemen is behind the ' +
+    'the right. Your goalie is in his crease and one of your defencemen is behind the ' +
     'net with the puck. Three of your own forwards are drawn, all on the same right-hand ' +
     'side of the ice, and they are three alternative positions for one player rather than ' +
     'three players: the first is deep in your own end on the boards just below the faceoff ' +
@@ -330,7 +330,7 @@ const leavesThePoint = {
     'the switch, and engage the puck if a corner battle squirts it up the wall to you.',
 
   describe:
-    'The defending half of the rink, your own net at the right. Your goaltender is in the ' +
+    'The defending half of the rink, your own net at the right. Your goalie is in the ' +
     'crease and one of your defencemen is just in front of it, off the blue paint. Your ' +
     'right winger is down in the right-hand corner with an opposition forward. An ' +
     'opposition defenceman is up at his point, a few feet inside the blue line on that ' +
@@ -502,7 +502,7 @@ const arrivingAtTheLine = {
     'The attacking half of the rink, the attacking net at the right and the attacking blue ' +
     'line running across the picture near the left-hand edge. Two opposition defencemen ' +
     'stand at that line, one on the right-hand side squarely on it and one on the far side ' +
-    'of the ice from him, with their goaltender in his crease. Two of your own forwards are ' +
+    'of the ice from him, with their goalie in his crease. Two of your own forwards are ' +
     'in the neutral zone on the near side of the line: the carrier towards the middle with ' +
     'the puck beside him, and the right winger out wide toward the boards. Two routes: the ' +
     'winger’s skating route taking him across the line and on into the zone, still wide, ' +
@@ -630,7 +630,7 @@ const cornerAndTheEmptyPoint = {
     'defenceman across at the far-side point. The right-hand point, just inside the blue ' +
     'line on the winger’s own side, has nobody in it. Two dashed passing routes leave the ' +
     'winger, one to the defenceman at the top of the circle and one to the centre; neither ' +
-    'is numbered, because only one of them happens. The opposition goaltender is in his ' +
+    'is numbered, because only one of them happens. The opposition goalie is in his ' +
     'crease.',
 
   players: [

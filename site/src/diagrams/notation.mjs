@@ -20,7 +20,7 @@ export default [{
     'The drill notation these diagrams use. Shape says the position — a circle is a ' +
     'forward, a triangle a defenceman — while fill says whose team it is, open for your own ' +
     'and solid for the opposition, which is this guide’s own convention rather than either ' +
-    'published key’s. A goaltender is a bare G, and an X is a pylon and never a player.',
+    'published key’s. A goalie is a bare G, and an X is a pylon and never a player.',
 
   describe: 'A two-column key of line styles with their names, then rows showing the ' +
     'two player channels. Shape carries the position: a circle is a forward, a triangle a ' +
@@ -29,7 +29,7 @@ export default [{
     'guide\'s own, not the key\'s. A last row shows the puck, a small solid dot about a third ' +
     'the width of a player. So a winger is an ' +
     'open circle whether attacking or backchecking, because the shape follows the player ' +
-    'and not the moment. A goaltender is a bare letter G, and an X is a pylon and is never ' +
+    'and not the moment. A goalie is a bare letter G, and an X is a pylon and is never ' +
     'a player.',
 
 }];

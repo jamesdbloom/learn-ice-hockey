@@ -130,7 +130,7 @@ const offsideFaceoffLocation = {
     'the far boards, and the neutral-zone faceoff spot just outside that blue line on the same ' +
     'side is marked and labelled "if carried". Second, one of our defencemen deep in our own end ' +
     'passes it the length of the ice across the same blue line, and the end-zone faceoff spot ' +
-    'beside him is marked and labelled "if shot or passed". Both goaltenders are drawn. No puck ' +
+    'beside him is marked and labelled "if shot or passed". Both goalies are drawn. No puck ' +
     'is drawn, because two different offsides are shown side by side rather than one play, and ' +
     'no route is numbered, because neither entry comes before the other.',
 
@@ -255,7 +255,7 @@ const icingGainingTheLine = {
     'labelled as not ' +
     'having gained the line. The lower player’s dashed line begins on the red line itself, where ' +
     'a black puck is drawn, and he is labelled as having gained it. Nothing else is drawn — no ' +
-    'goaltenders, no opponents and no chase — because the picture is about one thing.',
+    'goalies, no opponents and no chase — because the picture is about one thing.',
 
   // The rule's own geography, and the reason the picture is legible at all: five
   // feet of difference between two puck positions is hard to see on a 200-foot
@@ -393,8 +393,8 @@ const icingTheRaceAndTheDot = {
     '— and then, in the rule’s own clarifying sentence, "the determining factor is which player would ' +
     'first touch the puck, not which player would first reach the end zone face-off dots." So being ' +
     'level at the box settles nothing. What settles it is being clearly on course to reach the puck ' +
-    'first, and a race too close to determine by that instant is icing. Your goaltender is drawn ' +
-    'staying put on purpose: under those two books (Rule 81.3) and the PWHL’s (Rule 83.3), a goaltender ' +
+    'first, and a race too close to determine by that instant is icing. Your goalie is drawn ' +
+    'staying put on purpose: under those two books (Rule 81.3) and the PWHL’s (Rule 83.3), a goalie ' +
     'who "feigns playing the puck, attempts to play the puck, or skates in the direction of the puck on ' +
     'an icing at any time" waves it off. ⚠️ And this is not everybody’s icing. USA Hockey plays ' +
     'automatic icing outside adult sled hockey, completed "the instant the puck has completely crossed ' +
@@ -430,7 +430,7 @@ const icingTheRaceAndTheDot = {
     SHOULDER_TAIL,
 
   describe:
-    'The defending half of the rink, your own net at the right and your goaltender in the crease. ' +
+    'The defending half of the rink, your own net at the right and your goalie in the crease. ' +
     'The puck sits in the right corner, past the goal line. Two skaters are level with each other ' +
     'along the ice, both on the line of the end-zone faceoff dots and about twenty-four feet apart ' +
     'across the ice: your defenceman is out near the boards, and an opposition forward is inside ' +
@@ -564,12 +564,12 @@ const thePrivilegedArea = {
     'not the corners. ⚠️ The two red dashed lines behind the net are not part of it. That is the ' +
     'trapezoid, a different and much smaller shape, which this sheet carries because the rink these ' +
     'diagrams draw is the NHL-dimensioned one, and which USA Hockey marks nowhere at all. Two rules ' +
-    'turn on it: 614(c) makes it a delay-of-game minor for a goalkeeper to freeze the puck when ' +
+    'turn on it: 614(c) makes it a delay-of-game minor for a goalie to freeze the puck when ' +
     '"[t]he puck is outside the boundaries of the ‘goalkeeper’s privileged’ area", and 607(c) prices ' +
     'contact on him inside it. Read the shading as a boundary rather than as a licence, in either ' +
-    'direction. Inside it a goalkeeper still may not freeze the puck where "[t]he puck is behind the ' +
+    'direction. Inside it a goalie still may not freeze the puck where "[t]he puck is behind the ' +
     'goal line and their body is entirely outside of the goal crease" (614(c)(1)). Outside it he is ' +
-    'still not "fair game" (607(d)). And a goaltender anywhere in this shading, behind his own net ' +
+    'still not "fair game" (607(d)). And a goalie anywhere in this shading, behind his own net ' +
     'included, is not somebody to finish a check on. 607(c) writes no bare minor for body checking or ' +
     'charging one there. It is "[a] minor plus a misconduct or a major plus a game misconduct ' +
     'penalty", with 607(e) adding that "[a] match penalty for reckless endangerment may also be ' +
@@ -583,7 +583,7 @@ const thePrivilegedArea = {
     'behind the net, and stopping short of both corners. Its far edge follows the curve of the end ' +
     'boards. The two red dashed trapezoid lines the rink itself carries run behind the net inside ' +
     'the shading, splaying out from beside the goal to the end boards, and are a different and ' +
-    'much smaller shape. The goaltender stands behind his own net, inside the shaded region and ' +
+    'much smaller shape. The goalie stands behind his own net, inside the shaded region and ' +
     'off to one side of it, and it is his label that names the region. No other players are drawn.',
 
   zones: [

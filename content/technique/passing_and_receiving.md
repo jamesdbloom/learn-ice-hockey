@@ -480,7 +480,7 @@ Rule: Under USA Hockey a skate does not need a kicking motion to be an offence �
 Rule: A kicked puck that deflects in off a body is no goal; off your own stick it is a good goal (NHL, IIHF and PWHL 49.2(i) and (iii)) — that good-goal limb is those three books' alone, and Hockey Canada 6.10(b) and USA Hockey's Casebook (627, Situation 4) both disallow it
 Rule: In CARHA-affiliated adult leagues a kicked puck deflecting in off your own stick is no goal: CARHA Rule 69 permits kicking the puck in all zones and adds "This action cannot result in a goal being scored", and Rule 60(c) bars a goal where a kicked puck "deflects off any player or stick"
 Rule: The kick-shot — kicking your own stick blade at the puck — costs you the goal under NHL, IIHF and PWHL 49.2 and Hockey Canada 6.10(c), and an immediate whistle under USA Hockey 627(c), the book calling it "a very dangerous shot"
-Rule: CARHA Rule 68 applies in CARHA-affiliated adult rec leagues only, and not to the goalkeeper: "A Minor penalty shall be assessed to any player, except a goalkeeper, who uses a kick shot during the game" — its glossary defines the act as propelling the puck by kicking your own stick
+Rule: CARHA Rule 68 applies in CARHA-affiliated adult rec leagues only, and not to the goalie: "A Minor penalty shall be assessed to any player, except a goalkeeper, who uses a kick shot during the game" — its glossary defines the act as propelling the puck by kicking your own stick
 Rule: A hand pass stops play everywhere except your own defending zone; under the NHL and IIHF the puck's location at either contact decides the zone (79.2, word for word in both), but CARHA Rule 61(d) locates the teammate instead, so keep your receiver inside your own blue line too
 Rule: USA Hockey 618(b) needs the pass "initiated and completed in their defending zone" and Hockey Canada 10.2(a)(i) reads as though it locates the receiver — but its Note 1 to Interpretation 1 corrects that, and those two books decide it by the puck like the NHL and the IIHF, never by your skates
 Rule: The IIHF Situation Handbook 2025/26 rules the blue-line case three ways at Situations 79.2, 79.3 and 79.5, all by the puck; USA Hockey Casebook 618 Situation 3 agrees and adds that "the blue line is considered to be part of the Defending Zone in this instance"
@@ -605,7 +605,7 @@ Technique: Set your feet, because you need a stable base to redirect a puck accu
 
 A one-touch pass — sometimes called a first-time pass, and the basis of a *tic-tac-toe* sequence of quick passes — is a pass you redirect on contact, without controlling it first.
 
-**Why it beats coverage.** Defenders and goaltenders are reacting to where the puck is. Every touch you take gives them time to re-set. A one-touch pass moves the puck faster than a defence can rotate, so the puck arrives in a space that was covered when the pass started and is not covered when it lands. This is exactly why the best power plays are built on one-touch sequences — see [Special Teams](../systems/special_teams.md).
+**Why it beats coverage.** Defenders and goalies are reacting to where the puck is. Every touch you take gives them time to re-set. A one-touch pass moves the puck faster than a defence can rotate, so the puck arrives in a space that was covered when the pass started and is not covered when it lands. This is exactly why the best power plays are built on one-touch sequences — see [Special Teams](../systems/special_teams.md).
 
 **When it is on:**
 
@@ -675,7 +675,7 @@ Never: Use a no-look as a default, or at all in your own end — every no-look b
 Key: Deception is a supplement, not a substitute — selling a look is worthless if the pass that follows is inaccurate
 ```
 
-Defenders and goaltenders read your eyes, your shoulders and your blade. Anything you can do with those that does not match where the puck is going buys you a lane.
+Defenders and goalies read your eyes, your shoulders and your blade. Anything you can do with those that does not match where the puck is going buys you a lane.
 
 **Looking off a defender.** Fix your eyes on one option, let the defender shift toward it, then pass to the other. This is the highest-value and lowest-risk deception in hockey, because your eyes cost you nothing — you have already scanned, so you already know where both options are.
 
@@ -734,7 +734,7 @@ Key: In your own zone the passing standard is certainty; in the offensive zone i
 
 These three are **risk-management defaults**, not laws of hockey: each one's failure is a high-danger chance against. Treat them as always-on unless your coach has built a system around the exception.
 
-- **Never make a blind pass up the middle in your own zone.** The middle of your own defensive zone is directly in front of your net. An interception there is a chance against with your goaltender unset. If you cannot see the receiver, the pass does not exist.
+- **Never make a blind pass up the middle in your own zone.** The middle of your own defensive zone is directly in front of your net. An interception there is a chance against with your goalie unset. If you cannot see the receiver, the pass does not exist.
 - **Never make a D-to-D pass through the slot.** Defence-to-defence passes are normal and useful — but they go *behind the net* — or *above the tops of the circles*, where your team accepts that — not across the front of your own goalmouth. A blocked or deflected slot pass is a tap-in.
 - **Never pass cross-ice in your own end.** A cross-ice pass in your defensive zone crosses in front of the danger area and, if it is picked off, leaves your whole structure on the wrong side of the puck. Some teams accept one above the tops of the circles, where an interception is not a slot chance; below them, almost nobody does.
 

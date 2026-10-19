@@ -179,14 +179,14 @@ const gapAndAngle = {
     'from a standstill.',
 
   describe:
-    'The full sheet, the defended net at the left. Two players and a goaltender. An opposition forward ' +
+    'The full sheet, the defended net at the left. Two players and a goalie. An opposition forward ' +
     'carries the puck just past the centre red line on the right-hand side of the ice; a defender is ' +
     'about nine feet away from them, both nearer the middle of the ice and nearer the defended net — ' +
     'that is, on the inside and on the defensive side. The carrier’s route curves outward toward the ' +
     'boards and finishes short of them; the defender’s route is backward skating that stays inside the ' +
     'carrier the whole way and finishes slightly tighter than it began. A shaded rectangle between the ' +
     'two faceoff dots, from the top of the circles down to the front of the crease, marks the middle of ' +
-    'the ice the angle is denying. The goaltender is in the crease. Nothing in the picture shows contact.',
+    'the ice the angle is denying. The goalie is in the crease. Nothing in the picture shows contact.',
 
   // "The middle of the ice is the dangerous ice." (§"Angle to take the middle and
   // force them outside".) Drawn faintly, because none of it is painted on a real rink.
@@ -301,7 +301,7 @@ const twoOnOne = {
     'the middle of the ice, on the defensive side of both, and retreats with them ' +
     'rather than stepping toward either: take away the pass and ' +
     'give up the shot, because the goalie can save the shot and cannot save the cross-ice pass. ' +
-    'The goaltender plays the shooter as though the second attacker did not exist. ' +
+    'The goalie plays the shooter as though the second attacker did not exist. ' +
     // ⚠️ THE TWO HEDGES ARE MOST OF WHAT IS LEFT AND NEITHER IS TRIMMABLE. The goalie
     // agreement is a two-person convention this caption must not state as a rule, and its
     // "some will ask you to pressure the puck instead" is the half that sends a reader to
@@ -321,8 +321,8 @@ const twoOnOne = {
     'and about seven feet nearer their own net than either, inside a shaded band marking the lane a pass ' +
     'between the two attackers would have to travel through; no pass is drawn. The carrier’s route ' +
     'carries the puck down to the faceoff dot and a shot goes from there toward the net, stopping short ' +
-    'of the goaltender; the defender’s route is backward skating that stays between the two attackers ' +
-    'and stops well above the goal line. The goaltender is a few feet out of the goal on the line ' +
+    'of the goalie; the defender’s route is backward skating that stays between the two attackers ' +
+    'and stops well above the goal line. The goalie is a few feet out of the goal on the line ' +
     'between the net and the puck carrier.',
 
   // The lane a pass between the two attackers has to cross, drawn from the
@@ -465,7 +465,7 @@ const twoOnTwo = {
     'of holding their position.',
 
   describe:
-    'The full sheet, the defended net at the left with the goaltender in it. Exactly two opposition ' +
+    'The full sheet, the defended net at the left with the goalie in it. Exactly two opposition ' +
     'forwards and two own defencemen, and nobody else. The two forwards are level with each other out ' +
     'in the neutral zone, one on each side of the ice, and each has a skating route running diagonally ' +
     'across to the far side; the two routes cross each other in the middle of the ice just inside the ' +
@@ -544,7 +544,7 @@ const threeOnTwoDefault = {
     'just inside the faceoff dots, each with a backward-skating route that ends level with the other and ' +
     'above the circles. One own forward, the backchecking centre, is behind the play up-ice and takes a ' +
     'route that passes inside the middle attacker and finishes slightly nearer the defended net than they ' +
-    'are — their inside hip, not their back pocket. The goaltender is in the crease.',
+    'are — their inside hip, not their back pocket. The goalie is in the crease.',
 
   players: [
     { id: 'A1', team: 'opp', pos: 'F', at: A1_3ON2, label: 'carrier, wide' },
@@ -625,7 +625,7 @@ const threeOnTwoAlternative = {
     'inside a shaded band drawn between the middle attacker and the far wide attacker, and drops off ' +
     'further down that band. The backchecking centre comes back through the middle of the ice behind the ' +
     'play, passing inside the middle attacker and finishing in open ice rather than on any one of them. ' +
-    'The goaltender is in the crease.',
+    'The goalie is in the crease.',
 
   // The lane the weak-side defenceman splits, from the two attackers back to the
   // depth they have dropped to. Deliberately unlabelled: the label is drawn at the
@@ -717,7 +717,7 @@ const backcheckLanes = {
     'up-ice: a winger behind the carrier in the right lane, the centre behind the middle driver, and a ' +
     'winger behind the left-lane attacker. All three backcheck routes curve toward the middle of the ice ' +
     'and stop short of the attacker they are chasing, arriving inside them rather than behind them. ' +
-    'The goaltender is in the crease. No defencemen are drawn.',
+    'The goalie is in the crease. No defencemen are drawn.',
 
   // "The middle lane between the faceoff dots." Held 9 ft short of each goal line
   // so the band does not sit over a net; the caption carries "the length of the rink".
@@ -795,7 +795,7 @@ const trailer = {
     'either steps up to the trailer the ' +
     'first wave gets the net. The trailer is following a few metres behind into the high slot, where the ' +
     'look is clean and unopposed, and the backchecking forward arriving from up-ice has to take them. ' +
-    'That assignment is the house default, low zone collapse behind a 2-1-2 forecheck, and it is an ' +
+    'That assignment is the standard system, low zone collapse behind a 2-1-2 forecheck, and it is an ' +
     'assignment rather than a law: some teams instead give the trailer to the weak-side defenceman and ' +
     'drop the third forward to the net front, which is tighter on the trailer and thinner in front, so ask ' +
     'which your team runs — a trailer covered by nobody and a trailer covered by two are both goals. ' +
@@ -809,7 +809,7 @@ const trailer = {
     'the middle of the ice. Two own defencemen are low and occupied, one inside the wide carrier and one ' +
     'at the net front beside the weak-side attacker, neither of them near the trailer. One own forward is ' +
     'backchecking from up-ice; its route curves below the trailer and stops short of them rather than ' +
-    'finishing at them. The goaltender is in the crease. No contact is drawn anywhere in the picture.',
+    'finishing at them. The goalie is in the crease. No contact is drawn anywhere in the picture.',
 
   players: [
     { id: 'A1', team: 'opp', pos: 'F', at: A1_TRAIL, label: 'first wave' },

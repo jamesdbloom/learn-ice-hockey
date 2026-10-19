@@ -1,6 +1,6 @@
 # Practice and Development
 
-> **Rule set:** Written to NHL rules. Almost nothing in this document changes between rule sets, with **two exceptions**. The first is equipment: England Ice Hockey's *Rules & Regulations* 24.3 make an approved neck guard mandatory *"whilst participating in all on ice activities"* — so under England Ice Hockey it is required at practice and not only in games, as it is in the Elite League (its Casebook Rule 9.12). See [Equipment](equipment.md). The second is what happens when a shot hits your goaltender's mask — see [When a shot hits the goalie's mask](#when-a-shot-hits-the-goalies-mask). **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Almost nothing in this document changes between rule sets, with **two exceptions**. The first is equipment: England Ice Hockey's *Rules & Regulations* 24.3 make an approved neck guard mandatory *"whilst participating in all on ice activities"* — so under England Ice Hockey it is required at practice and not only in games, as it is in the Elite League (its Casebook Rule 9.12). See [Equipment](equipment.md). The second is what happens when a shot hits your goalie's mask — see [When a shot hits the goalie's mask](#when-a-shot-hits-the-goalies-mask). **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Skating](../technique/skating.md) · [Puck Handling](../technique/puck_handling.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Shooting](../technique/shooting.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Risk Management](../hockey-iq/risk_management.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Time and Space](../hockey-iq/time_and_space.md) · [Conditioning and Recovery](conditioning_and_recovery.md) · [How to Watch Hockey](how_to_watch_hockey.md) · [Mental Game](mental_game.md) · [UK and England Rules](../foundation/uk_rules.md)
 
@@ -189,7 +189,7 @@ So external cues are free and a reasonable default, but **if an internal cue is 
 
 ## What to Practise, in Priority Order
 
-> **This ordering is a coaching choice, not a rule of hockey.** It suits a typical amateur skater. A realistic alternative is *fix what is actively costing you*: a good skater who cannot receive a pass does not need edge work. A goaltender's list is different again (see [Goaltender](../positions/goaltender.md)). Find out what your coach prioritises and why.
+> **This ordering is a coaching choice, not a rule of hockey.** It suits a typical amateur skater. A realistic alternative is *fix what is actively costing you*: a good skater who cannot receive a pass does not need edge work. A goalie's list is different again (see [Goaltender](../positions/goaltender.md)). Find out what your coach prioritises and why.
 
 ### 1. Skating — because it multiplies everything else
 
@@ -322,7 +322,7 @@ The volume argument is stark. USA Hockey ran a puck-possession study at the 2002
 
 If a full game gives the best players in the world a minute with the puck, a full-ice drill where you queue for ninety seconds gives you almost nothing. Shrink the space and cut the numbers, and touches per player go up several-fold — a coaching estimate; no count comparing the two was found.
 
-Below are the same six **skaters** arranged two ways — first queueing for one puck across the whole sheet, then all six in the game at once inside one zone, with a goaltender in the net they are playing on.
+Below are the same six **skaters** arranged two ways — first queueing for one puck across the whole sheet, then all six in the game at once inside one zone, with a goalie in the net they are playing on.
 
 ![](diagram:practice-the-line-and-one-rep)
 
@@ -397,11 +397,11 @@ Half of a typical team practice is standing in a line — a coaching estimate. T
 
 For a goalie, ⚠️ **the whistle is not a safety net for a shot to the mask.** Of the six books this guide works from, only two stop play for the hit itself in the stand-up game, for a mask that **stays on**, and both narrowly:
 
-- **IIHF Rule 9.6** — the British book — lets the referee stop play *"for safety reasons"* only where the goalkeeper is *"or may be, dazed by that hard shot"*, and only *"if there is no immediate scoring chance for the attacking team"*. It is a *may*.
+- **IIHF Rule 9.6** — the British book — lets the referee stop play *"for safety reasons"* only where the goalie is *"or may be, dazed by that hard shot"*, and only *"if there is no immediate scoring chance for the attacking team"*. It is a *may*.
 - **Hockey Canada Rule 6.18(a)** is a *shall*, but only *"[i]n categories of U13 and below"*, and even there the goal stands *"[if] the puck deflects directly into the goal"*.
 - **The NHL, the PWHL, USA Hockey's stand-up rules and CARHA** write no mask-specific stoppage; their rules cover a mask that comes **off**. USA Hockey's one counterpart sits in its **Sled Hockey** section, which does not govern the stand-up game.
 
-**Every book does stop play for an injured goalkeeper** — NHL, IIHF and PWHL Rule 8.1, USA Hockey Rule 206(a), Hockey Canada Rule 2.4(b), and CARHA Rule 20(d), whose Note 1 is the widest of the six: *"[w]here there is suspicion that a player has sustained an injury"*. ⚠️ **But every one waits on a referee judging the goalie hurt, and in five of them play runs on while the shooters have the puck unless the injury looks serious.** A goalie in a cage is the hardest player on the ice to judge. See [Goaltender](../positions/goaltender.md) and [Team Play and Culture](team_play_and_culture.md).
+**Every book does stop play for an injured goalie** — NHL, IIHF and PWHL Rule 8.1, USA Hockey Rule 206(a), Hockey Canada Rule 2.4(b), and CARHA Rule 20(d), whose Note 1 is the widest of the six: *"[w]here there is suspicion that a player has sustained an injury"*. ⚠️ **But every one waits on a referee judging the goalie hurt, and in five of them play runs on while the shooters have the puck unless the injury looks serious.** A goalie in a cage is the hardest player on the ice to judge. See [Goaltender](../positions/goaltender.md) and [Team Play and Culture](team_play_and_culture.md).
 
 ---
 

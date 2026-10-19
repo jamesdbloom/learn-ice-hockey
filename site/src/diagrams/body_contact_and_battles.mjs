@@ -213,7 +213,7 @@ const anglingYourRoute = {
     'and where an angle ends depends on whether your league allows checking.',
 
   describe:
-    'The attacking half of the rink, with the net being defended at the right and our goaltender in ' +
+    'The attacking half of the rink, with the net being defended at the right and our goalie in ' +
     'its crease. Two skaters and nothing else. An opposition forward carries the puck in open ice ' +
     'on the side drawn at the top of the picture, between the centre red line and the blue line and ' +
     'wide of the faceoff-dot line, with the puck a stride ahead of him and outside him. His route ' +
@@ -398,12 +398,12 @@ const netFrontWalkOut = {
     'Move nobody into or across the shaded goal frame and goalie.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right with our goaltender in ' +
+    'The defensive half of the rink, the net being defended at the right with our goalie in ' +
     'its crease. Two skaters and no puck, and nothing moves: no route is drawn. An opposition ' +
     'forward stands in front of the net, about eleven and a half feet out from the goal line and ' +
     'six feet to the side drawn at the top of the picture, clear of the blue crease paint. Our ' +
     'defenceman stands beside them at the same distance from the goal line, on the inside, ' +
-    'nearer the middle of the net. A red shaded band covers the goal and the goaltender, from ' +
+    'nearer the middle of the net. A red shaded band covers the goal and the goalie, from ' +
     'the back of the net to a foot and a half in front of the crease and a foot outside each ' +
     'post, labelled goal frame. The puck is at the point, not drawn. Nothing in the picture shows contact between the two skaters.',
 
@@ -419,7 +419,7 @@ const netFrontWalkOut = {
 
     // ⚠️ A DEFENCEMAN, AND THE SECTION DOES NOT SETTLE THAT. §9 names no position. The
     // owner of the assignment is content/systems/defensive_zone_coverage.md: under the
-    // house-default low zone collapse it is the weak-side defenceman, and under man-on-man
+    // standard low zone collapse it is the weak-side defenceman, and under man-on-man
     // it is whoever's check went there, which can be a forward. The notation has no
     // position-neutral glyph, so this is a D because that is the commonest case, and the
     // caption's "who covers it is your team's call" says so rather than letting
@@ -602,7 +602,7 @@ const cornerEscapeRoutes = {
     'into the back of a player who is facing the boards.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goaltender in its ' +
+    'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
     // "about six feet" was wrong and is now seven: the anchor (79, 34) lies 20.72 ft from the
     // corner arc's centre (72, 14.5), so it stands 6.98 ft off the boards' inner ink edge at
     // r = 27.7 and 7.28 ft off the dasher centreline at r = 28. Six matched neither, and the
@@ -616,7 +616,7 @@ const cornerEscapeRoutes = {
     'goal, finishing with an arrowhead about twenty feet up the wall. The other curves out toward ' +
     'the end boards and then round the back of the goal, passing through the gap between the back ' +
     'of the net and the end boards, and finishing with an arrowhead on the far side of the goal ' +
-    'from the corner, pointing across the ice and well clear of the goaltender. ' +
+    'from the corner, pointing across the ice and well clear of the goalie. ' +
     'No route runs toward the middle of the ice, and no shaded ' +
     'region is drawn. Nothing in the picture shows contact between the two players.',
 
@@ -896,7 +896,7 @@ const angleIntoTheCorner = {
     'all.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goaltender in its ' +
+    'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
     'crease. One of our forwards stands well up the ice in the middle of the zone, level with a ' +
     'point about fourteen feet outside the top of the faceoff circle on the side drawn at the top of ' +
     'the picture. A single curved forward-skating route leaves him and runs into the corner: it sets ' +
@@ -1161,7 +1161,7 @@ const insideLaneLongerRoute = {
     'permits blocking a stick with hands, arms or body but not holding one.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goaltender in ' +
+    'The defensive half of the rink, the net being defended at the right and our goalie in ' +
     'its crease. Two skaters. A loose puck is drawn on its own in open ice on the side at the top ' +
     'of the picture, inside the faceoff circle, about twelve feet up-ice of the goal line and well ' +
     'clear of the side boards. An opposition forward stands up-ice of it and wide, out toward the ' +
@@ -1402,7 +1402,7 @@ const shotBlockGetClose = {
   // ("Never: Block the shot on a 2-on-1"), so the "do not block" is left implicit.
   caption:
     'Where a blocked shot should be blocked from, drawn in your own end with the net you are ' +
-    'defending at the right and your own goaltender in its crease. An opposition defenceman has the ' +
+    'defending at the right and your own goalie in its crease. An opposition defenceman has the ' +
     'puck at the point; the faint dashed line is the straight path from that puck to the middle of ' +
     'your goal. It is not a marking on the ice, and the picture is about where along it you stand. Blocking from ten feet away is far safer and ' +
     'more effective than blocking from three feet in front of your own goalie, where a deflection is ' +
@@ -1415,21 +1415,21 @@ const shotBlockGetClose = {
     'technique. ⚠️ The technique is the half that hurts you. On your feet: padded surfaces square to ' +
     'the puck, shin guards front-on, head up and out of the shot lane, feet on the ice, hands ' +
     'behind your body with the backs of the gloves out. On a two-on-one your job as the lone ' +
-    'defender is the pass and your goaltender has the shooter. And from in front of your own ' +
-    'goaltender, a block adds a deflection to a shot they could not see. Either commit fully and take ' +
+    'defender is the pass and your goalie has the shooter. And from in front of your own ' +
+    'goalie, a block adds a deflection to a shot they could not see. Either commit fully and take ' +
     'the shot or get out of the lane and let them see it, and the one thing you cannot do is stand ' +
     'half in the way with your eyes closed. How much your team blocks at all is a coaching choice ' +
     'rather than a law of hockey. So find out which yours plays, and ask your goalie what they want.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goaltender in ' +
+    'The defensive half of the rink, the net being defended at the right and our goalie in ' +
     'its crease. Three players and no routes. An opposition defenceman stands at the strong-side ' +
     'point on the side drawn at the top of the picture, with the puck just off the blade toward ' +
     'the middle of the ice. A faint dashed line runs from that puck down the ice toward the ' +
     'middle of the goal, stopping about thirteen feet short of the goal line and well clear of ' +
-    'the goaltender; extended, it would reach the middle of the goal line. One of our forwards ' +
+    'the goalie; extended, it would reach the middle of the goal line. One of our forwards ' +
     'stands squarely on that line about fourteen feet from the shooter, so he is at the ' +
-    'shooter’s end of it and roughly fifty feet from his own goaltender. No shot is drawn, no ' +
+    'shooter’s end of it and roughly fifty feet from his own goalie. No shot is drawn, no ' +
     'route is drawn, and no second blocker is drawn anywhere on the line.',
 
   // THE LANE. A two-point unfilled zone, so the renderer draws a faint dashed line rather

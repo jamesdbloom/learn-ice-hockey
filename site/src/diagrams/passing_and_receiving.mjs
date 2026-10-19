@@ -176,12 +176,12 @@ const areaPass = {
     'shaded patch behind the defender who stood him up — a place, not a person, which makes ' +
     'it a race rather than a turnover, and only a good play if the winger has a real speed ' +
     'or angle advantage. The winger is drawn short of the blue line on purpose: a receiver whose ' +
-    'skates both cross the leading edge before the puck does is off-side, and under USA Hockey ' +
-    'Rule 630(a) and Hockey Canada Rule 6.11 a lifted trail skate is off-side too — so keep it down.',
+    'skates both cross the leading edge before the puck does is offside, and under USA Hockey ' +
+    'Rule 630(a) and Hockey Canada Rule 6.11 a lifted trail skate is offside too — so keep it down.',
 
   describe:
     'The attacking half of the rink, attacking to the right, with the blue line running down the picture about a ' +
-    'quarter of the way across and the opposition net at the far right, their goaltender in the crease. Three ' +
+    'quarter of the way across and the opposition net at the far right, their goalie in the crease. Three ' +
     'skaters. Your puck carrier stands in the neutral zone, eleven feet outside the blue line and on the ' +
     'right-hand side of the ice, with the puck beside him. An opposition defenceman, drawn as a solid triangle, ' +
     'stands one foot inside the blue line and about six feet closer to the middle, between the carrier and the ' +
@@ -312,7 +312,7 @@ const leadTheReceiver = {
 
   describe:
     'The attacking half of the rink, attacking to the right, the opposition net at the right with their ' +
-    'goaltender in the crease. Two of your players and no other opponents. Your passer stands just inside the ' +
+    'goalie in the crease. Two of your players and no other opponents. Your passer stands just inside the ' +
     'attacking blue line, a little above the middle of the ice, with the puck beside him. Your receiver stands ' +
     'eighteen feet away, also just inside the blue line but below the middle. A plain skating arrow runs from the ' +
     'receiver about twelve feet up-ice, angled slightly towards the middle. A dashed passing route runs from the ' +
@@ -421,7 +421,7 @@ const bankPass = {
 
   describe:
     'One end zone, drawn with your own net at the right of the picture and up-ice to the left, so the play runs ' +
-    'from right to left. Your goaltender is in the crease. You stand along the right-hand boards, out towards the ' +
+    'from right to left. Your goalie is in the crease. You stand along the right-hand boards, out towards the ' +
     'corner and about nine feet off the wall, with the puck between you and the boards. An opposition forward, ' +
     'drawn as a solid circle, stands about thirteen feet up-ice of you and towards the middle, exactly on the ' +
     'straight line between you and your teammate; his stick is not drawn. Your teammate stands further up-ice ' +

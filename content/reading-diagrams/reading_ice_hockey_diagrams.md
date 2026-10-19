@@ -20,7 +20,7 @@
 
 **Read the caption first, and believe it over the picture.** A diagram freezes one moment of one system among several. The caption says what the picture is for, which details are a coaching choice, and what a shaded region means — so ask which version your team runs.
 
-**Find yourself next.** Shape is the position — a circle is a forward, a triangle a defenceman, a bare G the goaltender — and fill is the team: open is yours, solid is theirs. The letter inside is your role: if you reach the puck first on the forecheck, you are F1. Some coaches assign F1 by position, so check.
+**Find yourself next.** Shape is the position — a circle is a forward, a triangle a defenceman, a bare G the goalie — and fill is the team: open is yours, solid is theirs. The letter inside is your role: if you reach the puck first on the forecheck, you are F1. Some coaches assign F1 by position, so check.
 
 **Follow numbered routes in order, and read how each one ends.** A numbered tag gives the order things happen, never who does them. An arrowhead means the move carries on; two short bars mean you stop there, under control.
 
@@ -131,7 +131,7 @@ alone, and nearly lost in greyscale or a photocopy — so read the caption.
 Third, **the same dashed mark between two points, with no tint, is a line rather than a
 region**, with a short name beside it. It marks something you need to see that is
 neither on the ice nor a route — the **royal road**, the imaginary line from one net to
-the other that a pass crosses to make a goaltender push hard sideways
+the other that a pass crosses to make a goalie push hard sideways
 ([Shooting](../technique/shooting.md#the-royal-road) owns it), or the shooting lane a
 defenceman had a second ago. Nobody skates it; it shows what someone else is set up for.
 
@@ -153,14 +153,14 @@ picture names its regions in order in words, and the words are the part to trust
 
 **Shape is the position.** The *International Drill Symbols* sheet gives it in two
 lines — *"● ○ Forward / Player"* and *"▲ △ Defender / Player"* — so a **circle is a
-forward and a triangle is a defenceman**, in every picture. A **goaltender is a bare G**,
+forward and a triangle is a defenceman**, in every picture. A **goalie is a bare G**,
 with no shape round it, because a circle would say forward and a triangle defenceman.
-Both keys offer that form; the IIHF key also draws a goaltender as the numeral 1 inside a
+Both keys offer that form; the IIHF key also draws a goalie as the numeral 1 inside a
 team glyph, which this guide does not use.
 
 **The IIHF key does this differently, and it will catch you out.** Its columns read
 *TEAMS — OFFENSIVE / DEFENSIVE*, with circles in one and triangles in the other, and the
-**position as a numeral inside** — 1 goaltender, 2 right defence, through 6 left wing.
+**position as a numeral inside** — 1 goalie, 2 right defence, through 6 left wing.
 ⚠️ **On that key a right wing on the defending team is a triangle.** These diagrams follow
 the Hockey Eastern Ontario sheet.
 
@@ -181,7 +181,7 @@ beside a player.
 **Two departures on top of that**, so you are not caught out:
 
 1. **The letters inside a glyph are roles, not positions.** The IIHF key's numerals — 1
-   goaltender, 2 right defence, 3 left defence, 4 right wing, 5 centre, 6 left wing — are
+   goalie, 2 right defence, 3 left defence, 4 right wing, 5 centre, 6 left wing — are
    not used, because
    [F1, F2 and F3 are roles set by order of arrival and not people](../systems/forechecking_systems.md),
    and a numeral would say "F1 is the centre". **One label collides:** a circled `C`
@@ -260,7 +260,7 @@ picture.
    then where each route ends.** An arrowhead carries on past that point, two short
    bars stop there under control, and a backward-skating route simply ends where it is
    drawn.
-2. **A circle is a forward, a triangle a defenceman, a bare G the goaltender; open is
+2. **A circle is a forward, a triangle a defenceman, a bare G the goalie; open is
    your team, solid the opposition.** A winger is a circle backchecking too. Reading fill
    as the team is this guide's own convention, and ⚠️ **the IIHF's key uses the two
    shapes for the two teams instead**, so do not carry this reading onto its diagrams.

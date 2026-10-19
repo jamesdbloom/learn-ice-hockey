@@ -417,7 +417,7 @@ const theTrapezoid = {
     // listener this caption IS the diagram — and a goaltender who hears "the one exception is
     // skate contact with the crease" and nothing more can reasonably sit on the puck with a toe
     // in the paint. One clause, and it costs the listener nothing to hear.
-    'text\u2019s one exception is a goaltender keeping skate contact with the crease, which ' +
+    'text\u2019s one exception is a goalie keeping skate contact with the crease, which ' +
     'excuses playing the puck and never freezing it; and the ' +
     'IIHF\u2019s Situation Handbook adds two more — a puck stopped on the goal line, and one ' +
     'that only deflects into you. USA Hockey, Hockey ' +
@@ -429,7 +429,7 @@ const theTrapezoid = {
     // the "play as if it binds" reading. Elite League: the EIHL Casebook says the IIHF book
     // governs every rule it does not mention, and it never mentions the restricted area;
     // EIH Rule 22.3 governs EIH competitions — uk_rules.md KT7 is the owner of that carve-out.
-    'Canada and CARHA mark no trapezoid, but all three still stop the goaltender at the centre ' +
+    'Canada and CARHA mark no trapezoid, but all three still stop the goalie at the centre ' +
     // ⚠️ W33 REVIEW, MAJOR: the British limb read as if EIH Rule 22.3's suspension were in force
     // ("says the area is not currently enforced — which frees where a goaltender may play").
     // The owners say UNSETTLED and play as though it binds: rink_map.md §3 "Whether it is live
@@ -437,7 +437,7 @@ const theTrapezoid = {
     // trapezoid as unsettled — and play as though it binds everywhere in Britain". The Elite
     // League limb is folded in: the IIHF book governs it and its Casebook is silent.
     'red line and limit where the puck may be frozen. The PWHL switches it off in Rules 1.8 ' +
-    'and 27.8, yet its 65.2(viii) still writes the minor, so a PWHL goaltender should play as ' +
+    'and 27.8, yet its 65.2(viii) still writes the minor, so a PWHL goalie should play as ' +
     // W34: owner standard is uk_rules.md KT7 / rink_map.md KT10 — 22.3 is scoped to England
     // Ice Hockey's own competitions (eih_rr.txt 22.2), not to "England and Wales".
     'if it binds. In Britain, play as if it binds too: nothing the Elite League publishes ' +
@@ -454,7 +454,7 @@ const theTrapezoid = {
     // not: IIHF 63.2(VII) and NHL 63.2(vii) are written for a goalkeeper "in their own goal
     // crease", and IIHF Situation 63.1 penalises a goalkeeper out of the crease who falls on
     // the puck as an attacker bears down. Only the save-then-cover carve-out travels.
-    'touched where a goaltender may freeze the puck. One thing stays legal either way: coming ' +
+    'touched where a goalie may freeze the puck. One thing stays legal either way: coming ' +
     'out to cut down the angle, making the save and covering the puck (IIHF 63.2(VI)). Being ' +
     'checked excuses a freeze only inside the crease (63.2(VII)); out of it, falling on a ' +
     'loose puck as an attacker bears down is still a minor. Cover the rebound.',

@@ -193,7 +193,7 @@ const wallReception = {
     'contact at all.',
 
   describe:
-    'Your own end zone, your net at the right with your goaltender in the crease. A teammate stands ' +
+    'Your own end zone, your net at the right with your goalie in the crease. A teammate stands ' +
     'behind the net, off the near post, and a dashed pass line runs from him up to the right ' +
     'half-wall, level with the faceoff dot, where you stand waiting to receive; the puck is drawn ' +
     'on that line, about forty per cent of the way across, so the pass is in flight. A second ' +
@@ -301,7 +301,7 @@ const whoScoresNow = {
     'eyes belong. Neither region is painted on a rink.',
 
   describe:
-    'Your own end zone, your net at the right with your goaltender in the crease. A loose puck sits ' +
+    'Your own end zone, your net at the right with your goalie in the crease. A loose puck sits ' +
     'in the right corner with two players contesting it, one of yours below it and an opposition ' +
     'player above it nearer the boards. Two further opposition players are drawn and no more of ' +
     'yours: one just outside the crease on the far side of the net, at the back door, and one ' +
@@ -460,7 +460,7 @@ const anticipation = {
     'your team plays.',
 
   describe:
-    'Your own end zone, your net at the right with your goaltender in the crease, and no routes ' +
+    'Your own end zone, your net at the right with your goalie in the crease, and no routes ' +
     'drawn. An opposition forward has the puck inside the right faceoff circle, above the dot. A ' +
     'second opposition forward stands far across the ice on the left half-wall, level with the far ' +
     'faceoff dot. A shaded band runs from just in front of the puck carrier down to the front edge ' +
@@ -500,7 +500,7 @@ const guess = {
     'The second of the two frames: the same moment, the same read, and the other choice. You have ' +
     'left the band, which now has nobody in it, ' +
     'and committed to the passing lane. If the pass does not come, or you miss it by ' +
-    'a foot, the carrier has a clean lane at your goaltender. ' +
+    'a foot, the carrier has a clean lane at your goalie. ' +
     'This is not an instruction never to jump: it is the ' +
     'right play when you have a real cue, when there is support behind you covering the ice you ' +
     'are vacating, and when the puck is in the neutral or the offensive zone, ' +
@@ -514,7 +514,7 @@ const guess = {
   describe:
     'The same end zone and the same instant as the previous diagram, with everything unchanged ' +
     'except where you are. The opposition carrier is still inside the right faceoff circle with the ' +
-    'puck, his teammate is still on the left half-wall, your goaltender is still in the crease, and ' +
+    'puck, his teammate is still on the left half-wall, your goalie is still in the crease, and ' +
     'the shaded band still runs from the puck down to the front of the crease — but the band is now ' +
     'empty. You are drawn out in the left faceoff circle, roughly halfway along the line between ' +
     'the two opponents and about twenty-eight feet from each of them, where in the previous frame ' +

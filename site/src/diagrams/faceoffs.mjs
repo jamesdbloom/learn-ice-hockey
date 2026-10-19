@@ -190,7 +190,7 @@ const dzoneAlignmentOtherCircle = {
 
   caption:
     'The same alignment at the other end-zone circle. Every job is unchanged, and the slot defenceman' +
-    ' and the goaltender stand in the same place at either circle; what changes is which side of the ' +
+    ' and the goalie stand in the same place at either circle; what changes is which side of the ' +
     'ice each of the others is on. The alignment is a coaching choice, not a rule — find out what ' +
     'your team runs. ' +
     // ⚠️ THE SHADED CIRCLE IS A CLAIM, AND IT NEEDED ITS CAVEAT. This diagram draws the
@@ -219,7 +219,7 @@ const dzoneAlignmentOtherCircle = {
     'wall; the inside winger level with the dot at the inner hash marks, about five feet ' +
     'off the middle of the ice; the boards-side defenceman about five feet nearer the ' +
     'goal line than his winger, close to the same wall; the second defenceman in the ' +
-    'slot in front of the goaltender, who is in the crease. One opposition player is ' +
+    'slot in front of the goalie, who is in the crease. One opposition player is ' +
     'drawn, the opposing centre, on the blue-line side of the dot. No routes: this is a ' +
     'still shape at the moment before the drop.',
 
@@ -270,7 +270,7 @@ const dzoneAlignment = {
     'is played under. Whether touching the ' +
     'line is safe is not the same in every book. The NHL, the IIHF and the PWHL permit skate ' +
     'contact with the line and make it crossing the line that is illegal (NHL and IIHF Rule 76.7, ' +
-    'PWHL Rule 78.7); Hockey Canada and CARHA both count a skate on the face-off circle as ' +
+    'PWHL Rule 78.7); Hockey Canada and CARHA both count a skate on the faceoff circle as ' +
     'encroachment; and USA Hockey’s Casebook requires all sticks and all skates completely behind ' +
     'the hash marks. ' +
     // ✅ IHUK IN-HOUSE RULE 76 CHECKED W33 AND CHANGES NOTHING HERE. The 2026-27 In-House
@@ -311,7 +311,7 @@ const dzoneAlignment = {
     // Hockey is the one book that does not name a non-taker's contact -- 613(e) reaches the
     // players facing off -- so it is left unnamed here rather than swept in.
     'Contact is priced on its own, and your centre pays for it: any physical contact with ' +
-    'an opponent before the drop is a face-off violation in its own right under the NHL, the IIHF ' +
+    'an opponent before the drop is a faceoff violation in its own right under the NHL, the IIHF ' +
     'and the PWHL (NHL and IIHF Rule 76.7, PWHL Rule 78.7), and under Hockey Canada Rule 6.2(a) and ' +
     'CARHA Rule 57(a) a player other than the taker who makes contact with an opponent gets their ' +
     'own centre ejected from the dot.',
@@ -323,7 +323,7 @@ const dzoneAlignment = {
     'side of it; the boards-side winger level with the dot at the outer hash marks, close to the ' +
     'wall; the inside winger level with the dot at the inner hash marks, about five feet off the ' +
     'middle of the ice; the boards-side defenceman about five feet nearer the goal line than his ' +
-    'winger, close to the same wall; the second defenceman in the slot in front of the goaltender, who is in ' +
+    'winger, close to the same wall; the second defenceman in the slot in front of the goalie, who is in ' +
     'the crease. One opposition player is drawn, the opposing centre, on the blue-line side of ' +
     'the dot. The rest of the opposing five are drawn in the offensive-zone diagram instead. ' +
     'No routes: this is a still shape at the moment before the drop.',
@@ -493,7 +493,7 @@ const dzoneTieUp = {
     'beginning on the drop: the inside winger comes up from the inner hash marks toward the dot, ' +
     'and the boards-side defenceman comes down from the wall toward it. Both finish short of the ' +
     'two centres rather than on them. The boards-side winger, the slot defenceman and the ' +
-    'goaltender hold their positions in the picture; the instruction is that ' +
+    'goalie hold their positions in the picture; the instruction is that ' +
     'everyone jumps on a tied-up puck, and the two drawn are the two nearest to it.',
 
   players: [
@@ -541,7 +541,7 @@ const ozoneAlignment = {
     'inside winger level with the dot at the inner hash marks; the strong-side defenceman at the ' +
     'point on the draw side, just inside the blue line; the weak-side defenceman at the far ' +
     'point. Two ' +
-    'opposition players are drawn, the opposing centre in the dot and the goaltender in the ' +
+    'opposition players are drawn, the opposing centre in the dot and the goalie in the ' +
     'crease; the rest of the defending five are drawn in the defensive-zone diagram instead. ' +
     'No routes: this is a still shape at the moment before the drop.',
 
@@ -583,7 +583,7 @@ const neutralZoneAlignment = {
     'their lanes, one either side of the middle and well outside the centre circle, level with ' +
     'or a stride behind the dot; the two ' +
     'defencemen well back, just in front of their own blue line, one either side of the middle ' +
-    'of the ice. The own goaltender is in the crease at the left. One opposition player is ' +
+    'of the ice. The own goalie is in the crease at the left. One opposition player is ' +
     'drawn, the opposing centre, on the far side of the dot. No routes: this is a still shape at ' +
     'the moment before the drop.',
 
@@ -622,22 +622,22 @@ const goaliePulled = {
   width: 980,
 
   caption:
-    'An offensive-zone draw with your own goaltender pulled for an extra attacker: your own net, at ' +
+    'An offensive-zone draw with your own goalie pulled for an extra attacker: your own net, at ' +
     'the far end of the picture, is empty. The extra attacker is drawn at the net front; the high ' +
     'slot is his other usual place, and both defencemen are at the points. The centre is under ' +
     'maximum pressure to win it back cleanly, because there is no safe outlet and no recovery from a ' +
-    'loss. A goaltender may not take part in a faceoff in any case: the NHL and IIHF books both say ' +
+    'loss. A goalie may not take part in a faceoff in any case: the NHL and IIHF books both say ' +
     'so in the same words, at Rule 76.1. The alignment is a default rather than a rule, so ask what ' +
     'your team runs with six skaters out.',
 
   describe:
     'The full sheet, attacking to the right, the draw at the right-hand end-zone circle in the ' +
-    'attacking zone. Your own net, at the left, has no goaltender in it. Six own skaters: the ' +
+    'attacking zone. Your own net, at the left, has no goalie in it. Six own skaters: the ' +
     'centre in the dot on the blue-line side; the boards-side winger at the outer hash marks; the ' +
     'inside winger at the inner hash marks; the extra attacker at the net front, just outside the ' +
     'crease and off to the draw side; and both defencemen at the points, just inside the ' +
     'attacking blue line. Two opposition players are drawn, the opposing centre in the dot and ' +
-    'their goaltender in the crease. No routes: this is a still shape at the moment before the drop.',
+    'their goalie in the crease. No routes: this is a still shape at the moment before the drop.',
 
   players: [
     { id: 'C',  pos: 'F', at: A_CENTRE },
@@ -729,7 +729,7 @@ const whereTheDrawGoes = {
     'goalie freeze, or any other stoppage between the end-zone dots and the end boards, which under ' +
     'the NHL and the IIHF draws at the spot on the side it happened — drawn here on the lower side. ' +
     'USA Hockey answers that one differently, taking the nearest spot only where its own last-play ' +
-    'face-off applies, and sending a stoppage the attacking team caused in the attacking zone out to ' +
+    'faceoff applies, and sending a stoppage the attacking team caused in the attacking zone out to ' +
     'the neutral zone instead. These four are the common ones and not the whole rule, and the boxes ' +
     'are markers rather than anything painted on the ice.',
 
@@ -859,7 +859,7 @@ const strongSideDot = {
     'starts (Rule 6.4(b)).',
 
   describe:
-    'The defending half of the rink, your own net and goaltender at the right, both end-zone ' +
+    'The defending half of the rink, your own net and goalie at the right, both end-zone ' +
     'circles visible. The same centre is drawn at both dots, each time on the goal-line side of ' +
     'the spot with an opposing centre facing him on the far side of it. From each of the two own ' +
     'centres a dashed line with an arrowhead runs back and across at the same angle, showing the ' +
@@ -941,12 +941,12 @@ const ozoneDOneTimer = {
     ' shift.',
 
   describe:
-    'The attacking half of the rink, the opposition net and goaltender at the right, the draw at ' +
+    'The attacking half of the rink, the opposition net and goalie at the right, the draw at ' +
     'the right-hand end-zone circle. Five own players: the centre in the dot on the blue-line ' +
     'side; the boards-side winger at the outer hash marks; the inside winger below the dot line ' +
     'and off to one side of the middle, clear of the shooting lane; and both defencemen at the ' +
     'points just inside the blue line. The opposing centre is on the far side of the dot, and ' +
-    'their goaltender is in the crease. Two routes. A dashed line runs from the centre in the ' +
+    'their goalie is in the crease. Two routes. A dashed line runs from the centre in the ' +
     'dot back up the ice to the strong-side defenceman at the near point, stopping short of him. ' +
     'A double line — a shot — runs from that defenceman down to the front of the net, passing ' +
     'about eleven feet clear of the inside winger. No route is drawn for any other player.',
@@ -994,11 +994,11 @@ const ozoneWingerWalkout = {
     'play is on is a call rather than an individual read — ask what your team’s are.',
 
   describe:
-    'The attacking half of the rink, the opposition net and goaltender at the right, the draw at ' +
+    'The attacking half of the rink, the opposition net and goalie at the right, the draw at ' +
     'the right-hand end-zone circle, and the same five own players as the offensive-zone ' +
     'alignment: the centre in the dot on the blue-line side, the boards-side winger at the outer ' +
     'hash marks, the inside winger at the inner hash marks, and both defencemen at the points. ' +
-    'The opposing centre is on the far side of the dot, and their goaltender is in the crease. ' +
+    'The opposing centre is on the far side of the dot, and their goalie is in the crease. ' +
     'Two numbered routes. First, a dashed line runs from the centre in the dot down to the ' +
     'inside winger, stopping about six feet short of him. Second, a plain line with an ' +
     'arrowhead takes that winger about nine feet toward the middle of the ice, finishing level ' +

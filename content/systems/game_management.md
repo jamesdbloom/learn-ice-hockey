@@ -91,7 +91,7 @@ If you look at a box score or a shot chart without knowing the score situation, 
 
 - **Overrate trailing teams.** They out-attempt everyone. Being outshot 40-22 while winning 4-1 tells you very little.
 - **Underrate leading teams and the players who protect leads.** Defencemen and checking forwards who play the last ten minutes of one-goal games will look worse than they are.
-- **Misjudge goaltenders.** A goalie facing lots of low-danger third-period shots from a team chasing the game will have a flattering save percentage; one facing fewer, better chances will not.
+- **Misjudge goalies.** A goalie facing lots of low-danger third-period shots from a team chasing the game will have a flattering save percentage; one facing fewer, better chances will not.
 
 The fix when watching or analysing: **look at score-adjusted numbers, or at even-strength numbers with the game close.** See [How To Watch Hockey](../off-the-ice/how_to_watch_hockey.md).
 
@@ -108,7 +108,7 @@ Action: Chip the puck past the forechecker and out rather than forcing a breakou
 Rule: Shooting the puck directly out of play from your own defending zone is a two-minute delay-of-game minor, with no pressure exception but three written carve-outs, under NHL Rule 63.2(iii) and IIHF Rule 63.2(III) alike — so it binds a British player too
 Rule: The NHL penalises a puck put over the glass "behind" the players' bench (Rule 63.2(iii)); the IIHF's Rule 63.2(III) reaches glass "surrounding" the bench, which appears to include the side glass — so a British player has slightly less room, not more
 Rule: USA Hockey writes no such minor for putting the puck out of play — Rule 610(c) penalises only a deliberate shoot-out, and 631(d) makes an accidental one a last-play faceoff
-Rule: Hockey Canada penalises no skater for putting the puck out of play either — 10.1(ii) reaches only a deliberate shoot-out, from any zone; its direct, non-deliberate limb at 10.1(v) names the goaltender alone
+Rule: Hockey Canada penalises no skater for putting the puck out of play either — 10.1(ii) reaches only a deliberate shoot-out, from any zone; its direct, non-deliberate limb at 10.1(v) names the goalie alone
 Rule: Never flip it out deliberately, wherever you are on the ice — that is a two-minute minor under NHL and IIHF 63.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), PWHL 65.2(ii) and CARHA 75(b)
 Action: Take away the middle — concede the outside, keep your stick in the passing lane, defend with your feet
 Action: Shorten your shifts to 30–35 seconds when protecting a lead — a coaching prescription rather than a measured figure; fresh legs defend, tired legs reach
@@ -138,7 +138,7 @@ Aim nowhere near the bench either. ⚠️ **The bench is not a target:** the IIH
 
 **A *deliberate* flip out of the rink is a minor from anywhere on the ice**, in all six books. **And never aim it out off a draw:** in the NHL, the IIHF and the PWHL the faceoff exemption sits on the defending-zone minor, while the deliberate minor (63.2(ii)) names no faceoff exemption — so never aim it out. USA Hockey, Hockey Canada and CARHA have no draw exemption at all.
 
-**USA Hockey and Hockey Canada write no defending-zone limb.** Both penalise only a deliberate shoot-out (USA Hockey 610(c), Hockey Canada 10.1(ii)). An accidental one in USA Hockey is a last-play faceoff, and Hockey Canada's direct, non-deliberate limb names the goaltender alone. Plenty of rec leagues call all this loosely, but never assume. [Risk Management](../hockey-iq/risk_management.md) carries all four books in full.
+**USA Hockey and Hockey Canada write no defending-zone limb.** Both penalise only a deliberate shoot-out (USA Hockey 610(c), Hockey Canada 10.1(ii)). An accidental one in USA Hockey is a last-play faceoff, and Hockey Canada's direct, non-deliberate limb names the goalie alone. Plenty of rec leagues call all this loosely, but never assume. [Risk Management](../hockey-iq/risk_management.md) carries all four books in full.
 
 **3. Take away the middle.**
 
@@ -190,7 +190,7 @@ Rule: USA Hockey's silence on whether 640(g) and 640(h) reach a late hit in adul
 Rule: Icing is sending the puck from your own side of the centre red line past the opposing goal line untouched (NHL Rule 81.1)
 Rule: Under hybrid icing the linesperson judges who would reach the puck first, not who reaches the dot first (NHL Rule 81.1)
 Rule: After your own icing you may make no player substitutions before the ensuing faceoff (NHL Rule 82.1)
-Rule: The post-icing substitution bar has three narrow exceptions — a goalkeeper who had been pulled for an extra attacker, an injured player, or a penalty affecting on-ice strength (NHL Rule 82.1)
+Rule: The post-icing substitution bar has three narrow exceptions — a goalie who had been pulled for an extra attacker, an injured player, or a penalty affecting on-ice strength (NHL Rule 82.1)
 Rule: The IIHF's post-icing substitution bar is Rule 81.4, and its exceptions run one longer — you may also replace "a Player with a broken skate", which the NHL does not allow; but IIHF 82.1 expressly covers icing too and lists only the NHL's three, and the book does not say which governs
 Rule: A refused change sends the substitutes back to the bench and warns the team through its coach; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)) — the NHL contradicts itself, 82.2(v) warning either team, its 82.3 penalising the visitors with no warning
 Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1) — USA Hockey attaches no icing condition to its one time-out (636(f))
@@ -206,10 +206,10 @@ Action: Ask before the game — many rec and youth leagues use no-touch icing, a
 
 **What it costs, and where:**
 
-- **The exceptions are narrow.** Under the NHL only three things let you change: putting back a goalkeeper pulled for an extra attacker, replacing an injured player, or a penalty that changes on-ice strength (82.1). Who is on the ice is fixed **the moment the puck leaves the offending player's stick**.
+- **The exceptions are narrow.** Under the NHL only three things let you change: putting back a goalie pulled for an extra attacker, replacing an injured player, or a penalty that changes on-ice strength (82.1). Who is on the ice is fixed **the moment the puck leaves the offending player's stick**.
 - **The IIHF — the British base book — writes the same bar, with one more exception: *"a Player with a broken skate"* (81.4).** ⚠️ **Do not plan a change around that fourth exception.** The IIHF's own 82.1 also covers icing and lists only the NHL's three, and neither the 2025/26 nor the 2026/27 edition says which rule governs. The NHL has no fourth exception at all.
 - **A refused change costs you.** ⚠️ **Under the IIHF the players are sent back and the team is warned through its coach** (82.2(V)). That warning is one per team per game and shared with other change offences, so a bench already warned takes a bench minor straight away. Stalling on the way to the faceoff is a bench minor with no warning. The NHL's book disagrees with itself here: 82.2(v) warns *"either team"* first, while 82.3 gives the **visiting team** a bench minor with no warning.
-- **A shorthanded team may usually ice the puck — with two exceptions.** ⚠️ **Under the NHL, a team short through a major whose penalty bench is empty when the major expires keeps playing short and may not ice the puck until the next stoppage** (81.6). That happens only when the penalised player was ejected or injured. What buys the exemption is the count, not the major: if a minor makes it 4-on-4, you are equal in strength and icing is called.
+- **A shorthanded team may usually ice the puck — with two exceptions.** ⚠️ **Under the NHL, a team short through a major whose penalty box is empty when the major expires keeps playing short and may not ice the puck until the next stoppage** (81.6). That happens only when the penalised player was ejected or injured. What buys the exemption is the count, not the major: if a minor makes it 4-on-4, you are equal in strength and icing is called.
 - **USA Hockey allows the shorthanded exemption only for Youth 15-Only and above, Girls 16U and above, High School and Adult** (624(b)(1)). Below those a shorthanded team cannot ice the puck at all, so length-of-the-ice clears just feed the power play own-end draws. [Special Teams](special_teams.md) covers this rule.
 - **The whole trap is NHL, IIHF and PWHL; Hockey Canada is a third answer.** USA Hockey attaches no substitution bar to an icing, and the PWHL writes the NHL's two rules in the same words. **Hockey Canada applies its no-change rule only in U18AAA, Junior and, at the Member's option, Senior** (6.7(d)), with the NHL's three exceptions; below those an icing costs you the faceoff and nothing else. ⚠️ **Even where it binds, Hockey Canada lets either team take its time-out after an icing (6.7(d)(iii))** — but the team that iced still may not change during it.
 - **Rec and youth leagues vary.** Many still use no-touch (automatic) icing, and plenty do not enforce the no-change rule at all. Ask before the game; it changes how hard you should work to get the puck over the red line.
@@ -311,7 +311,7 @@ The analytics consensus sits much earlier than tradition, and it has been moving
 ```facts
 Position: Two at the points, two on the half-walls, one at the net front, one below the goal line or in the middle
 Action: Get set up — a 6-on-5 that has to enter the zone repeatedly is wasting its advantage
-Action: Put the puck to the net with a screen; the extra man is a body in front, not a sixth passer, and it is on that player to stay off the goaltender
+Action: Put the puck to the net with a screen; the extra man is a body in front, not a sixth passer, and it is on that player to stay off the goalie
 Technique: One-touch it — the advantage only shows up if the puck moves faster than they can shift
 Never: Let both point men pinch — someone must be able to stop a clear, because there is no net behind you
 Action: Change with possession and change fast; changing while chasing the puck concedes an empty-netter
@@ -332,7 +332,7 @@ The most common shape takes a standard power-play look and adds a second body hi
 The principles matter more than the diagram:
 
 - **Get set up.** A 6-on-5 that has to enter the zone repeatedly is wasting its advantage. Win possession, gain the line, and get organised.
-- **Puck to the net with a screen.** The extra man is most valuable as a body in front and a second-chance collector, not a sixth passer. Stand in the goalie's eyes, not on him and not in his way. Avoiding contact is your job in every book. Under the NHL, the IIHF and the PWHL a screen from outside the crease keeps the goal, but standing where he can't move freely in his crease, or any contact, can cost it, and incidental contact is excused only when it starts outside the crease and you made *"a reasonable effort to avoid such contact"*. USA Hockey files even accidental contact with a goalkeeper under interference, Hockey Canada says *"The onus is always on the attacking player"*, and CARHA penalises deliberate contact with a goalkeeper *"whether in or out of the goal crease"*.
+- **Puck to the net with a screen.** The extra man is most valuable as a body in front and a second-chance collector, not a sixth passer. Stand in the goalie's eyes, not on him and not in his way. Avoiding contact is your job in every book. Under the NHL, the IIHF and the PWHL a screen from outside the crease keeps the goal, but standing where he can't move freely in his crease, or any contact, can cost it, and incidental contact is excused only when it starts outside the crease and you made *"a reasonable effort to avoid such contact"*. USA Hockey files even accidental contact with a goalie under interference, Hockey Canada says *"The onus is always on the attacking player"*, and CARHA penalises deliberate contact with a goalie *"whether in or out of the goal crease"*.
 - **One-touch it.** The defenders can only cover so much; the advantage only shows up if the puck moves faster than they can shift.
 - **The point men do not both pinch.** Someone must be able to stop a clear. There is no net behind you.
 - **Change with possession, and change fast.** A 6-on-5 shift is exhausting. If you change while chasing the puck you will concede an empty-netter.
@@ -404,11 +404,11 @@ Never: Take a penalty; a 6-on-4 against is close to a goal
 
 Your job as the leading team defending an empty net:
 
-- **Do not chase.** Six attackers means someone is always open if you leave your area. Hold a tight shape in the slot, block lanes, and let them have the perimeter. **⚠️ "Box" and "diamond" are borrowed penalty-kill words, and the count does not come with them.** On the kill ([Special Teams](special_teams.md)) both are four-player shapes; defending a 6-on-5 you have **five** skaters, and this document does not settle where the fifth stands. [Defensive Zone Coverage](defensive_zone_coverage.md) names one answer — the **collapsing box**, all five of you inside the house with sticks in lanes — but it is one option, not the shape, so ask your coach before their goaltender comes out. **Don't reach for Box+1 to fill the gap:** its fifth player chases the puck, which is the first thing this bullet tells you not to do.
+- **Do not chase.** Six attackers means someone is always open if you leave your area. Hold a tight shape in the slot, block lanes, and let them have the perimeter. **⚠️ "Box" and "diamond" are borrowed penalty-kill words, and the count does not come with them.** On the kill ([Special Teams](special_teams.md)) both are four-player shapes; defending a 6-on-5 you have **five** skaters, and this document does not settle where the fifth stands. [Defensive Zone Coverage](defensive_zone_coverage.md) names one answer — the **collapsing box**, all five of you inside the house with sticks in lanes — but it is one option, not the shape, so ask your coach before their goalie comes out. **Don't reach for Box+1 to fill the gap:** its fifth player chases the puck, which is the first thing this bullet tells you not to do.
 - **Sticks in lanes, feet in the house.** At the net front, hold the inside beside the screener rather than trying to move them — they do not have the puck, so walking them off the spot is interference, and a shove with the shaft is a cross-check. Stay square with no lean and no push, and lift their stick low on the shaft, well below their bottom hand, as the puck arrives, then let go. [On-Ice Communication](../foundation/on_ice_communication.md) sets out what each book lets you do there.
 - **Why the net front matters.** Coaches say most 6-on-5 goals come from tips, screens and rebounds. **The strong form does not hold up.** In the NHL's public play-by-play for the first 400 games of the 2024-25 regular season, **29.7% of goals with the extra attacker on were a tip, a deflection, or a shot within three seconds of a previous shot on goal**, against **23.4%** at 5-on-5. That points where the coaches point but is a long way from "most"; the sample is only **74 goals**, and the feed does not record screens at all. Separately sourced: the ice in front of the net converts several times better than the perimeter ([Shooting](../technique/shooting.md)).
 - **Every clear is a shot.** Do not just chip it out. Get your head up and put it toward the empty net if the lane is clean. **A puck that goes in is a goal and there is no icing; a puck that misses and crosses the goal line is icing** (see the next point), so this is a shot to take when you can actually hit the net, not a blind heave. A blind clear that goes straight to their point man is the worst outcome of the three.
-- **You *can* be iced against a pulled goalie, so get it out with a purpose or put it on net.** It is tempting to read the NHL's icing exemption for a side *"below the numerical strength of the opposing team"* as covering five skaters against six. **The rulebook does not support that:** it counts the goalkeeper inside a team's strength, so six against six is equal, and it expressly keeps an icing called while the other goalkeeper heads to the bench (NHL 81.1, 81.3, 84.1). ⚠️ **So the whistle comes.** You get a defensive-zone draw, **the attacking team picks the dot**, you **cannot change** but for the narrow exceptions above, and you **cannot take a time-out** at all (81.2, 81.4, 87.1). The shorthanded exemption is a different situation — see [Special Teams](special_teams.md).
+- **You *can* be iced against a pulled goalie, so get it out with a purpose or put it on net.** It is tempting to read the NHL's icing exemption for a side *"below the numerical strength of the opposing team"* as covering five skaters against six. **The rulebook does not support that:** it counts the goalie inside a team's strength, so six against six is equal, and it expressly keeps an icing called while the other goalie heads to the bench (NHL 81.1, 81.3, 84.1). ⚠️ **So the whistle comes.** You get a defensive-zone draw, **the attacking team picks the dot**, you **cannot change** but for the narrow exceptions above, and you **cannot take a time-out** at all (81.2, 81.4, 87.1). The shorthanded exemption is a different situation — see [Special Teams](special_teams.md).
 - **Faceoffs are everything.** Draws in your own end at 5-on-6 decide games. Have the plan agreed before you line up.
 - **Take no penalties.** A 6-on-4 against is close to a goal.
 
@@ -599,9 +599,9 @@ Never: Change when the puck is in your defensive zone and your team does not hav
 Never: Change while you are the last man back, until you are relieved. Say so out loud
 Never: Change while the opposition is on a rush; finish the defensive play first
 Rule: You cannot change after your own icing (NHL 82.1, IIHF 81.4, PWHL 84.1) — an injured player can still be replaced — so do not start drifting toward the bench — USA Hockey Rule 624 imposes no such restriction
-Rule: You may change after your own icing to put back a pulled goalkeeper, to replace an injured player, or when a penalty affects on-ice strength (NHL 82.1) — the IIHF adds a broken skate at 81.4, but not at its own 82.1, which covers icing too; do not plan a change around it
+Rule: You may change after your own icing to put back a pulled goalie, to replace an injured player, or when a penalty affects on-ice strength (NHL 82.1) — the IIHF adds a broken skate at 81.4, but not at its own 82.1, which covers icing too; do not plan a change around it
 Rule: A change attempted after your own icing and refused sends those players back with a warning; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)); the NHL's 82.3 skips the warning, and only for the visiting team
-Rule: A defender or goalkeeper who accidentally knocks their own net off loses the change as after an icing — no substitutions before the draw, which is in their own end at the dot the attacking team picks (NHL and IIHF Rule 63.8, PWHL 65.8), with three exceptions, an injured player among them
+Rule: A defender or goalie who accidentally knocks their own net off loses the change as after an icing — no substitutions before the draw, which is in their own end at the dot the attacking team picks (NHL and IIHF Rule 63.8, PWHL 65.8), with three exceptions, an injured player among them
 Never: Change in the middle of a 6-on-5 possession. Change with the puck or not at all
 Action: Change when your team has the puck heading north, has just dumped it in deep, or after a completed clear
 ```
@@ -613,7 +613,7 @@ This is the part that separates good game management from a good motor.
 - **The puck is in your defensive zone and not under your team's control.** A player leaves, a replacement arrives late, and for two seconds you are 4-on-5 in the most dangerous area of the rink. Coaches name this as one of the biggest sources of goals against in amateur hockey — an observation, not a measured ranking: public tracking does break goals down by how they were produced, but it is NHL data, and it classifies them by the offence's play rather than the defensive breakdown that let them in.
 - **You are the last man back**, until you are relieved. Say so out loud.
 - **The opposition is on a rush.** Finish the defensive play, then change.
-- **You've just iced the puck.** You can't (NHL Rule 82.1; IIHF Rule 81.4; PWHL Rule 84.1), so don't drift toward the bench. The only ways off are the exceptions under [The icing trap](#the-icing-trap): a pulled goalkeeper going back in, an injured player, or a penalty that changes on-ice strength — plus the IIHF's broken skate, which its own 82.1 leaves out, so don't plan a change around it. Try it and be refused and the players are sent back with a warning; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)).
+- **You've just iced the puck.** You can't (NHL Rule 82.1; IIHF Rule 81.4; PWHL Rule 84.1), so don't drift toward the bench. The only ways off are the exceptions under [The icing trap](#the-icing-trap): a pulled goalie going back in, an injured player, or a penalty that changes on-ice strength — plus the IIHF's broken skate, which its own 82.1 leaves out, so don't plan a change around it. Try it and be refused and the players are sent back with a warning; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)).
 - **You've just knocked your own net off.** **Icing is not the only way to lose the change.** Under **NHL and IIHF Rule 63.8** (**PWHL 65.8** in the same terms), a net *"displaced accidentally by a defending skater or goalkeeper"* means no substitutions before the faceoff, which is in your own end at whichever dot **the attacking team** chooses. Knock it off, by accident or not, while they have an imminent scoring chance and the goal is awarded (NHL 25.2); on purpose otherwise, it is a delay-of-game minor (63.2(iv)). The exceptions are the same three as after icing, and **Rule 87.1 takes away the time-out as well** (PWHL 89.1 the same). **Hockey Canada writes this only in U18 AAA, Junior and, at the Member's option, Senior (Rule 6.1(g))**, and no counterpart was found in USA Hockey, searched by rule number and by concept across its playing rules and its *Casebook*. [Rules Primer](../foundation/rules_primer.md) covers the rule in full.
 - **You're in the middle of a 6-on-5 possession.** Change with the puck or not at all.
 - **You'd be changing into an offensive-zone faceoff you're needed for**, if you're the faceoff man.
@@ -655,7 +655,7 @@ Never: Leave the ice anywhere but at the bench — under the NHL, IIHF and PWHL 
 
 🇬🇧 **The IIHF's trigger is wider, and that decides cases.** It calls too many men when the puck is played or contact made while **either** the player coming on or the player going off is on the ice. **USA Hockey sides with the IIHF.** ⚠️ **So under both of those books the player coming off can give the penalty away alone**, before the substitute steps on. *(The IIHF counts a player with one skate on the ice and one in the bench as off.)*
 
-**Hockey Canada.** ⚠️ **Do not carry that carve-out into a Hockey Canada game, which answers the same facts the other way.** It calls a bench minor for a player with *"either one or both skates still on the bench"* who plays the puck — the player leaving included, *"whether or not the team has the correct number of players on the ice."* It then applies the NHL's narrow test to the goaltender change, and never says which governs a skater change. Its distance is 3.05 m (10 ft.); USA Hockey sets none, only that the player leaving *"shall always be at the players' bench and out of the play before any change is made."*
+**Hockey Canada.** ⚠️ **Do not carry that carve-out into a Hockey Canada game, which answers the same facts the other way.** It calls a bench minor for a player with *"either one or both skates still on the bench"* who plays the puck — the player leaving included, *"whether or not the team has the correct number of players on the ice."* It then applies the NHL's narrow test to the goalie change, and never says which governs a skater change. Its distance is 3.05 m (10 ft.); USA Hockey sets none, only that the player leaving *"shall always be at the players' bench and out of the play before any change is made."*
 
 USA Hockey adds a trigger no other book has. ⚠️ **A change that *"causes their team to gain a competitive advantage"* is a bench minor**, even with no puck played or contact made. Its Casebook applies it to a change that turns a 2-on-1 against into a 2-on-2. **So under the American book, the change that rescues you numerically is the one most likely to be called.** [Rules Primer](../foundation/rules_primer.md) owns the rule.
 
@@ -668,7 +668,7 @@ Leaving through any exit but the bench is a bench minor regardless under the NHL
 ### Regular-season 3-on-3 (NHL)
 
 ```facts
-Rule: Five minutes maximum, sudden death, three skaters and one goalkeeper a side, teams changing ends (NHL Rule 84.1)
+Rule: Five minutes maximum, sudden death, three skaters and one goalie a side, teams changing ends (NHL Rule 84.1)
 Priority: Possession over shooting — if you do not have a high-quality look, you do not shoot
 Technique: With no good option, carry or pass back out through the neutral zone, reset and come again
 Never: Force a low-percentage shot — a missed net in 3-on-3 is often a goal against
@@ -690,7 +690,7 @@ Rule: Lose with your goalie pulled in regular-season overtime and you forfeit th
 
 ![](diagram:ot-3-on-3-regroup)
 
-**The format.** NHL Rule 84.1: five minutes maximum, sudden death, **three skaters and one goalkeeper** per side, teams change ends (they defend the same end as in the second period — the long change). Both points are secured before it starts: a tie after regulation guarantees each team one point.
+**The format.** NHL Rule 84.1: five minutes maximum, sudden death, **three skaters and one goalie** per side, teams change ends (they defend the same end as in the second period — the long change). Both points are secured before it starts: a tie after regulation guarantees each team one point.
 
 The format arrived in 2015-16 to reduce shootouts, and the share of **overtime games** that went to a shootout fell from **over 55% to under 40%** in its first season. (Only around a quarter of NHL games go to overtime at all.)
 
@@ -738,7 +738,7 @@ Action: Ask before the game — formats run from 4-on-4 to 3-on-3 to a straight 
 - **Preliminary/round-robin:** five minutes, sudden death, **3-on-3**, after a three-minute intermission — but **teams do not change ends.** Your bench is the near bench, so a tired player can get off, and waiting for the exhausted defender is much less reliable.
 - **Playoff, relegation, classification and bronze-medal games:** **ten minutes** of 3-on-3, no change of ends, then the shootout — not the NHL's 20-minute 5-on-5 periods.
 - **Gold-medal game:** repeating sudden-death 3-on-3 periods with a **15-minute intermission** between each; ends change from the second. No shootout.
-- **Pulling the goalie:** one sentence permitting it. **Neither NHL rider is in the IIHF book** — no lost point if you lose with the net empty, no bar on the goalkeeper returning on the fly.
+- **Pulling the goalie:** one sentence permitting it. **Neither NHL rider is in the IIHF book** — no lost point if you lose with the net empty, no bar on the goalie returning on the fly.
 - **Shootout:** **five** shooters a side and a **coin toss** for order. More under [Shootouts](#shootouts).
 - **Overtime penalties** work as in the NHL: a penalty makes it 4-on-3, coincidental minors with nothing else on the clock leave it 3-on-3, a two-man advantage is 5 against 3, and no team ever has fewer than three skaters.
 
@@ -746,7 +746,7 @@ Action: Ask before the game — formats run from 4-on-4 to 3-on-3 to a straight 
 
 Where overtime *is* played, Appendix 1 of the In-House Rules sets the format:
 
-- **NIHL National League, its group-stage playoffs, and NIHL 1 and 2:** **five minutes of 3-on-3**, no change of ends, then **game-winning shots (GWS)** with **three** shooters a side. Goalkeepers may go to the bench in the rest period; penalised players stay in the box. No group-stage playoff game may end tied.
+- **NIHL National League, its group-stage playoffs, and NIHL 1 and 2:** **five minutes of 3-on-3**, no change of ends, then **game-winning shots (GWS)** with **three** shooters a side. Goalies may go to the bench in the rest period; penalised players stay in the box. No group-stage playoff game may end tied.
 - **NIHL Playoff Final Weekend:** semi-finals go to **20 minutes of 5-on-5**, then shots. The **Final** plays successive **20-minute 5-on-5 sudden-death periods** with **no** shots, and teams change ends each period — the closest thing here to NHL playoff overtime.
 - **SNL:** five minutes of 3-on-3 sudden death, then a **best-of-three penalty shot shootout**, then sudden death.
 - **BUIHA:** fixtures marked *"VARSITY OT"* follow the NIHL procedure.
@@ -787,7 +787,7 @@ Never: Commit first. Stay square instead, stay patient, make them decide
 Technique: Track the puck, not the hands
 Read: Match your retreat to their approach — back in with a fast shooter, hold your depth and stay big against a slow one
 Rule: You cannot be replaced once the shootout starts unless you are injured, and a substitute gets no warm-up (NHL Rule 84.4)
-Rule: Under the IIHF book the goalkeepers "may be changed after each shot" (IIHF Rule 84.4(VI)), so where a British fixture does go to shots a substitution is legal — but no warm-up is permitted for a substitute goalkeeper in any game (IIHF Rule 8.2)
+Rule: Under the IIHF book the goalies "may be changed after each shot" (IIHF Rule 84.4(VI)), so where a British fixture does go to shots a substitution is legal — but no warm-up is permitted for a substitute goalie in any game (IIHF Rule 8.2)
 ```
 
 - **Control your depth.** Coming out cuts the angle and beats shooters; staying deeper gives you more time against dekes. Know which you're better at.
@@ -806,7 +806,7 @@ NHL **Rule 84.4**: if the five-minute overtime settles nothing, each team gets *
 
 - **Five different shooters a side, not three.**
 - **A coin toss between the captains, not the home team,** decides who shoots first.
-- **Goalkeepers may be changed after each shot**; in the NHL a goalkeeper cannot be replaced once the shootout begins unless injured.
+- **Goalies may be changed after each shot**; in the NHL a goalie cannot be replaced once the shootout begins unless injured.
 - **Repeat shooters in the tie-break:** after the first five, *"[t]he same Player can be used for each shot"*, where the NHL makes everyone eligible shoot before anyone shoots twice.
 
 **The In-House Rules replace the whole procedure in the leagues that use them** (Appendix 1). It is **game-winning shots (GWS)**: **three** shooters a side taking alternate shots, then one shot each until it is settled. **Eligibility changed for 2026-27**, so check which season you are reading:
@@ -955,7 +955,7 @@ Rule: No time-out is granted to the defensive team following an icing — you ca
 Rule: Under USA Hockey, Rule 636(f) gives one sixty-second time-out and attaches no icing condition to it, but “[f]or time curfew games, no time-outs shall be permitted” — and the ask must come before the line change procedure concludes, at any stoppage
 Rule: The IIHF sets that same line-change clock on the ask (87.1) where the NHL asks only for the request "prior to the drop of the puck" — so in Britain the window shuts when the referee lowers their hand
 Action: Spend it on rest and instruction at a moment you choose — before a critical defensive-zone draw, or before setting up 6-on-5
-Rule: The two other stoppages this rule names also cost the defending team the line change — NHL and IIHF Rule 63.8, whose goalkeeper-freeze limb allows only two substitutions, an injured player and a strength-changing penalty, with no pulled-goalkeeper one
+Rule: The two other stoppages this rule names also cost the defending team the line change — NHL and IIHF Rule 63.8, whose goalie-freeze limb allows only two substitutions, an injured player and a strength-changing penalty, with no pulled-goalie one
 Key: The measured effect on winning is nil in the NHL study behind this section, and across its 2014-15 to 2019-20 games most benches finished with the time-out still in the pocket
 ```
 
@@ -969,9 +969,9 @@ The same study found that **teams barely use them**: across 7,314 games from 201
 
 Crucially, **no time-out shall be granted to the defensive team following an icing** (also: following the goalie causing a stoppage from a shoot-in from beyond the centre red line, or when a defending player accidentally dislodges the net). This is the rule that closed the loophole in 2017-18 — before it, a coach could ice the puck and then buy their tired players a rest with a time-out. **You cannot rest your way out of your own icing.**
 
-**Those two other stoppages cost you the line change too, under a different rule.** Under NHL and IIHF Rule 63.8 (PWHL 65.8 in the same terms), ⚠️ **the defending team may not change before the draw** when a defender or goalkeeper accidentally displaces the net, and when *"the puck is shot into the end zone by the attacking team from their own side of the center red line, and the opposing goalkeeper freezes the puck resulting in a stoppage of play"* — with the attacking team picking the dot in both.
+**Those two other stoppages cost you the line change too, under a different rule.** Under NHL and IIHF Rule 63.8 (PWHL 65.8 in the same terms), ⚠️ **the defending team may not change before the draw** when a defender or goalie accidentally displaces the net, and when *"the puck is shot into the end zone by the attacking team from their own side of the center red line, and the opposing goalkeeper freezes the puck resulting in a stoppage of play"* — with the attacking team picking the dot in both.
 
-Note the difference: **the two limbs carry different exceptions.** The net-off limb has three: a pulled goalkeeper, an injured player, a strength-changing penalty. ⚠️ **The goalkeeper-freeze limb has only two — an injured player or a strength-changing penalty — and no pulled-goalkeeper exception at all.** So a freeze on a routine dump-in from centre is a third route to a bench that can neither change nor rest, and your goaltender decides it. **USA Hockey and Hockey Canada write no such freeze limb**: USA Hockey attaches no substitution bar to any of this, and Hockey Canada's **6.1(g)** covers only the dislodged net, and only *"[i]n categories of U18 AAA, Junior and at the option of the Member in Senior"*. [Goaltender](../positions/goaltender.md) covers the same rule from behind the net.
+Note the difference: **the two limbs carry different exceptions.** The net-off limb has three: a pulled goalie, an injured player, a strength-changing penalty. ⚠️ **The goalie-freeze limb has only two — an injured player or a strength-changing penalty — and no pulled-goalie exception at all.** So a freeze on a routine dump-in from centre is a third route to a bench that can neither change nor rest, and your goalie decides it. **USA Hockey and Hockey Canada write no such freeze limb**: USA Hockey attaches no substitution bar to any of this, and Hockey Canada's **6.1(g)** covers only the dislodged net, and only *"[i]n categories of U18 AAA, Junior and at the option of the Member in Senior"*. [Goaltender](../positions/goaltender.md) covers the same rule from behind the net.
 
 🇬🇧 **IIHF Rule 87.1 says the same three things in the same words** — one thirty-second time-out per team, none after a faceoff violation, and none to the defensive team after an icing, a goalie freeze on a shoot-in from beyond the red line, or a defender dislodging the net. **It adds one sentence a British bench needs:** the time-out *"must be requested by the team before the Referee has completed the Players change procedure, before the Referee lowers his hand and points to the respecting face-off location"*, where the NHL asks only *"(prior to the drop of the puck)"*. **So your window is the line change, not the drop.**
 
@@ -1060,7 +1060,7 @@ After a TV time-out, an injury delay, a video review or an intermission, everybo
 ```facts
 Key: The test is whether the thing you are preventing is more likely to become a goal than the power play you give up
 Options: Stopping an odd-man rush in the last minutes of a close game, or preventing a certain goal — with a foul that stays a minor
-Rule: Two fouls are not priced as minors under the NHL — fouling a breakaway from behind is a penalty shot, not a power play (57.3), and so is a skater other than the goalkeeper covering a puck that is itself in their own crease (67.4)
+Rule: Two fouls are not priced as minors under the NHL — fouling a breakaway from behind is a penalty shot, not a power play (57.3), and so is a skater other than the goalie covering a puck that is itself in their own crease (67.4)
 Rule: The trade assumes a minor — a reckless trip or hook is a mandatory major plus game misconduct in USA Hockey (639(b), 623(b)), and plan on a match (602(a)); the IIHF can make either a major plus game misconduct with nobody hurt (57.4, 55.3), CARHA any trip (86(a))
 Rule: A trip or hook that injures ejects you in Hockey Canada (8.2(b), 8.6(b)); a hook that injures does in the NHL, the PWHL and CARHA (55.4, 56.4, 64(b) with 30(a))
 Rule: USA Hockey prices covering a puck in your own crease as "a penalty shot/optional minor penalty" (614(b)), and 406(a) gives the election to the non-offending team — so it never makes the trade cheaper for you, and the minor still puts a man off
@@ -1093,7 +1093,7 @@ Note what is *not* on the list: retaliation, sending a message, standing up for 
 ```facts
 Rule: Five books print the permission to catch a puck and put it straight down — NHL and IIHF 67.2, PWHL 69.2, Hockey Canada 10.2(a)(iii) and CARHA 61(a), the last two "without gaining or attempting to gain" an advantage; USA Hockey only in Casebook Situation 1 to Rule 618
 Priority: Knock the puck straight down where you stand — that concedes nothing under any of the four books, and no version of this trade beats it
-Priority: Only where you cannot knock the puck down, and only while your own goaltender is still on the ice, is the penalty shot better than the goal it prevented
+Priority: Only where you cannot knock the puck down, and only while your own goalie is still on the ice, is the penalty shot better than the goal it prevented
 Priority: ⚠️ **Once your own net is empty there is no trade left** — covering a puck in your crease concedes the goal, not a shot (USA Hockey: where it prevented an obvious and imminent goal), so knock it down
 Rule: One thing that buys the penalty is the conduct after the catch — holding it, a stride, turning, throwing it (NHL and IIHF 67.2(I); Hockey Canada Interpretation 4 to 10.2(a)(iii)); another is a hand laid over a puck on the ice to conceal it, the penalty shot in your crease (67.2(II))
 Rule: Under USA Hockey a hand closed on a CAUGHT puck outside the crease and not opened at once is a stoppage, not a penalty; a hand covering a loose puck on the ice is a minor (614(a)), and so is picking it up; in the crease any of them is the penalty shot or optional minor (614(b), 618(a))
@@ -1116,7 +1116,7 @@ And "put it down" means ⚠️ **down where you are, not somewhere better.** Mov
 
 **A hand laid over the puck also buys the penalty, and inside your own crease it is priced at the top.** NHL and IIHF **67.2(II)** give a minor for placing a hand over a puck on the ice *"to conceal it from or prevent an opponent from playing the puck"*, and the Note beneath sends it, in your goal crease area, to the penalty shot or the awarded goal. ⚠️ **So a hand flat over a loose puck in your own paint is priced like gathering it in**, and with your net empty that is the goal. The PWHL writes the same limb (69.2(ii)); USA Hockey, Hockey Canada and CARHA never use the word *conceal*. ⚠️ **Do not read that as a permission under those books.** USA Hockey penalises *"the use of hands to make the puck unplayable"* (614(a) Note) and a hand holding the puck in the crease (614(b)); Hockey Canada permits a hand only *"to stop, knock down, or push the puck"* (10.2 preamble); and CARHA 58(c) gives the penalty shot where a defender *"holds or gathers the puck into their body in any manner, or picks up the puck with their hand"* in the crease — CARHA binds its affiliated leagues only. **Under every one of them, knocking it down is the play.**
 
-**Now the price, if you do hold it — and only while your own goaltender is in the net.** Holding a puck that is itself in your own crease is a penalty shot (**NHL Rule 67.4**), which is still better than the goal it prevented. ⚠️ **With your own net empty there is no such trade:** the same act is an **awarded goal** under the NHL, the IIHF, the PWHL, Hockey Canada and CARHA, and under USA Hockey wherever it prevented an obvious and imminent goal.
+**Now the price, if you do hold it — and only while your own goalie is in the net.** Holding a puck that is itself in your own crease is a penalty shot (**NHL Rule 67.4**), which is still better than the goal it prevented. ⚠️ **With your own net empty there is no such trade:** the same act is an **awarded goal** under the NHL, the IIHF, the PWHL, Hockey Canada and CARHA, and under USA Hockey wherever it prevented an obvious and imminent goal.
 
 **In most books the puck's position decides, not yours; Hockey Canada adds yours, so under it standing in the paint can cost you the shot.** The NHL and IIHF write the puck test in **Rule 63.6**, USA Hockey in 614(b) and 618(a), and Hockey Canada in **4.11(a)(v)** — the shot for a defender who *"closes their hand on the puck gaining an advantage, or deliberately falls on or gathers the puck into their body, while the puck is in the goal crease"*. **The NHL, the IIHF and the PWHL (65.6) also print the converse:** gather a puck lying outside the paint while you stand in it and it is a minor, not a shot.
 

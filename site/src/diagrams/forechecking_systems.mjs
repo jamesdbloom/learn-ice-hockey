@@ -112,7 +112,7 @@ const forecheckAngling = {
     'invert it, so find out which your team plays before your first shift.',
 
   describe:
-    'Attacking half of the rink, the opposition net at the right. Three players: the goaltender ' +
+    'Attacking half of the rink, the opposition net at the right. Three players: the goalie ' +
     'in the crease, their defenceman behind the net with the puck, and one forechecker below and ' +
     'to the near side of him. A single route runs from the forechecker up and across, curving to ' +
     'finish on the far side of the defenceman from the boards, well short of him, in open ice. No ' +
@@ -172,7 +172,7 @@ const forecheck212 = {
     // treatment: it is the reader-facing half of a round-27 remedy for two routes graded
     // Critical, and it opens by naming the route it is about ("Note what F2 is drawn doing").
     // So it tracked those two routes' history rather than the reader's exposure -- and the
-    // section with the MOST exposure is this one, the house default, whose F1 "goes hard at
+    // section with the MOST exposure is this one, the standard forecheck, whose F1 "goes hard at
     // the puck carrier", and whose caption carried no rule-set scope flag of any kind.
     // Pasting the 1,187-char block here would make the warning longer than the teaching on a
     // 994-char caption voiced as one unbroken block, so it is not pasted. What is carried is
@@ -195,7 +195,7 @@ const forecheck212 = {
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +
     'the defenceman D1 behind the net with the puck; the partner D2 low on the weak side, the ' +
     'reverse option; the winger W1 on the strong-side half-wall, the first passing option; the ' +
-    'winger W2 on the weak-side half-wall; and the goaltender in the crease. Five own players: ' +
+    'winger W2 on the weak-side half-wall; and the goalie in the crease. Five own players: ' +
     'F1 deep on the weak side at the goal line, F2 deep inside the strong-side circle, F3 high in ' +
     'the middle at the top of the circles, and two defencemen on the offensive blue line. ' +
     'Four numbered routes: one, F1 takes the weak side away; two, the carrier ' +
@@ -339,7 +339,7 @@ const forecheck212Stacked = {
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
     'other forecheck diagrams: the defenceman D1 behind the net with the puck, the partner D2 low on the far ' +
-    'side, the wingers W1 and W2 on the two half-walls, and the goaltender in the crease. Five own players, ' +
+    'side, the wingers W1 and W2 on the two half-walls, and the goalie in the crease. Five own players, ' +
     'all three forwards on the strong side: F1 deep at the goal line towards the strong-side corner, F2 deep ' +
     'inside the strong-side circle, F3 high but shaded across to the strong side rather than sitting in the ' +
     'middle, and both defencemen on the offensive blue line at the two points. One route: the carrier taking ' +
@@ -433,12 +433,12 @@ const forecheck122 = {
     // forecheck-pinch, and so is the ruling that this block's ", so" is NOT an inversion --
     // referred, checked on the rendered audio and ruled not a defect. Do not re-refer it.
     // Edit all four together or they drift.
-    'Note what F2 is drawn doing: arriving at the wall, not at the winger. ⚠️ Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Neither the NHL nor the IIHF writes a minor for checking from behind at all — Rule 43.2 in both — so the floor for finishing into the back of a player who is facing away is a major with a game misconduct on it: mandatory under NHL 43.3 and 43.5, and at the referee\u2019s discretion under IIHF 43.3 for a check that recklessly endangers the fouled player. And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior.',
+    'Note what F2 is drawn doing: arriving at the wall, not at the winger. ⚠️ Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Neither the NHL nor the IIHF writes a minor for checking from behind at all — Rule 43.2 in both — so the floor for finishing into the back of a player who is facing away is a major with a game misconduct on it: mandatory under NHL 43.3 and 43.5, and at the referee\u2019s discretion under IIHF 43.3 for a check that recklessly endangers the fouled player. And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. The same five opposition players as the ' +
     '2-1-2 diagram: the defenceman D1 behind the net with the puck, the partner D2 low on the far side as the ' +
-    'D-to-D reset, the wingers W1 and W2 on the two half-walls, and the goaltender in the crease. Five own ' +
+    'D-to-D reset, the wingers W1 and W2 on the two half-walls, and the goalie in the crease. Five own ' +
     'players in three bands: F1 alone deep, inside the strong-side faceoff dot; F2 up the strong-side wall ' +
     'and F3 in the high middle, level with each other around the top of the circles; and both defencemen on ' +
     'the offensive blue line, the strong-side one at the point and the weak-side one shaded into the middle. ' +
@@ -555,7 +555,7 @@ const forecheck131 = {
     // forecheck-pinch, and so is the ruling that this block's ", so" is NOT an inversion --
     // referred, checked on the rendered audio and ruled not a defect. Do not re-refer it.
     // Edit all four together or they drift.
-    'Note what F2 is drawn doing: arriving at the wall, not at the winger. ⚠️ Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Neither the NHL nor the IIHF writes a minor for checking from behind at all — Rule 43.2 in both — so the floor for finishing into the back of a player who is facing away is a major with a game misconduct on it: mandatory under NHL 43.3 and 43.5, and at the referee\u2019s discretion under IIHF 43.3 for a check that recklessly endangers the fouled player. And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior.',
+    'Note what F2 is drawn doing: arriving at the wall, not at the winger. ⚠️ Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Neither the NHL nor the IIHF writes a minor for checking from behind at all — Rule 43.2 in both — so the floor for finishing into the back of a player who is facing away is a major with a game misconduct on it: mandatory under NHL 43.3 and 43.5, and at the referee\u2019s discretion under IIHF 43.3 for a check that recklessly endangers the fouled player. And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -653,7 +653,7 @@ const forecheck131 = {
 
 // The pinch. Drawn inside a 2-1-2 because a picture of a defenceman needs forwards
 // somewhere and any arrangement of them names a system — so it names the
-// document's declared house default rather than pretending to be system-neutral,
+// document's declared standard forecheck rather than pretending to be system-neutral,
 // and the caption says so. The exchange itself the section states generally: "at
 // 5-on-5 in every forecheck described above, only one defenceman pinches at a
 // time", and every system above keeps F3 high.
@@ -812,7 +812,7 @@ const forecheckPinch = {
     // ⚠ DO NOT "REPAIR" IT BY BREAKING THE SENTENCE AT THE "so". A full stop there would separate the
     // hazard from what to do about it, which is the split _split_paragraph makes voiceable as two
     // units — the one thing the 604(a)/604(b) note above forbids for this exact block.
-    '⚠️ And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior. Where checking is barred, a pinch is a play on the puck, not a check: get there first and play it, and under USA Hockey, holding body position in a wall battle for the puck is still allowed. In IIHF women\'s hockey, beat her to the wall, because you may hold the ice between her and the puck only once you got there first, and never use the boards on her: no pushing her into them, pinning her there or leaning her out of the play, under Rule 101.1. ' +
+    '⚠️ And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior. Where checking is barred, a pinch is a play on the puck, not a check: get there first and play it, and under USA Hockey, holding body position in a wall battle for the puck is still allowed. In IIHF women\'s hockey, beat her to the wall, because you may hold the ice between her and the puck only once you got there first, and never use the boards on her: no pushing her into them, pinning her there or leaning her out of the play, under Rule 101.1. ' +
     // RECEIVING POSTURE. Added because this caption's go/no-go test sends the reader down the
     // wall at speed and everything above it was about DELIVERING contact: the section had no
     // receiving posture at all, and the picture's whole subject is a defenceman arriving at the
@@ -920,7 +920,7 @@ const forecheckPinch = {
   describe:
     'Attacking half of the rink, the opposition net at the right, with the puck in the strong-side corner. ' +
     'Three opposition players: the defenceman D1 in the corner rimming the puck up the wall, their far winger ' +
-    'W2 already high on the weak side heading for the exit, and the goaltender. Five own players in a 2-1-2: ' +
+    'W2 already high on the weak side heading for the exit, and the goalie. Five own players in a 2-1-2: ' +
     'F1 deep, sealing the strong-side corner; F2 deep inside the strong-side circle; F3 high in the middle at ' +
     'the top of the circles; the strong-side defenceman at the offensive blue line; and the weak-side ' +
     'defenceman at the line but shaded into the middle of the ice. Three numbered routes: one, the rim ' +
@@ -1036,7 +1036,7 @@ const forecheckRolesRotate = {
     'new carrier, so he is the new F1 and closes on him. The forward who was F3 comes down off ' +
     'the high middle as the new F2. Which body ends up in which role is settled by who is nearest ' +
     'the puck and by nothing else, so this is one instance and not a pattern to memorise. The ' +
-    'shape drawn around them is the 2-1-2 this guide takes as its house default; the rotation ' +
+    'shape drawn around them is the 2-1-2 this guide takes as its standard forecheck; the rotation ' +
     'itself is not a property of that system, because it is simply what F1, F2 and F3 mean. The ' +
     'two defencemen hold the offensive blue line and their jobs do not rotate. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs a forward to close on a
@@ -1068,7 +1068,7 @@ const forecheckRolesRotate = {
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
     'the forecheck diagrams: the defenceman D1 behind the net, who has just passed; his partner D2 taking ' +
-    'that pass in the far corner; the wingers W1 and W2 on the two half-walls; and the goaltender in the ' +
+    'that pass in the far corner; the wingers W1 and W2 on the two half-walls; and the goalie in the ' +
     'crease. Five own players. The three forwards are labelled twice over — the letters inside the glyphs ' +
     'are the roles they have just taken and the words beside them are the roles they held before the pass. ' +
     'Deep on the near side of the net stands the forward marked F3, labelled "was F1, beaten", with an ' +
@@ -1190,7 +1190,7 @@ const forecheck23Lock = {
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
     'the other forecheck diagrams: the defenceman D1 behind the net with the puck, the partner D2 low in ' +
-    'the far corner, the wingers W1 and W2 on the two half-walls, and the goaltender in the crease. Five ' +
+    'the far corner, the wingers W1 and W2 on the two half-walls, and the goalie in the crease. Five ' +
     'own players in two groups rather than three: F1 deep at the goal line on the puck side and F2 deep ' +
     'inside the puck-side circle, the two who forecheck; and behind them the two defencemen on the ' +
     'offensive blue line at the two points. The third forward, F3, is the odd one out — he stands on the ' +
@@ -1259,7 +1259,7 @@ const forecheckPress = {
     'forward high, no weak-side defenceman holding the middle — so a single clean pass out of the ' +
     'zone is a breakaway or an empty-net goal against. That is the trade being made rather than a ' +
     'flaw in the shape, which is why coaches reach for it almost exclusively late and trailing: ' +
-    'down a goal in the last few minutes, with the goaltender pulled, or on a delayed penalty. ' +
+    'down a goal in the last few minutes, with the goalie pulled, or on a delayed penalty. ' +
     'Both defencemen going is a called situation and not your own read; the default this document ' +
     'assumes is that only one pinches at a time and the other holds the middle, which is what ' +
     'makes a failed pinch a two-on-one instead of a breakaway. Call it a full-ice press or an ' +
@@ -1288,7 +1288,7 @@ const forecheckPress = {
     // block; its text, its provenance and why it may not be split from (a) are argued out in the
     // comment above forecheck-pinch and are not restated -- and so is the ruling that this block's
     // ", so" is NOT an inversion, checked on the rendered audio. Do not re-refer it.
-    '⚠️ Pinching on anything is about the puck, not about the man. In many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing bodychecking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior. Where checking is barred, a pinch is a play on the puck, not a check: get there first and play it, and under USA Hockey, holding body position in a wall battle for the puck is still allowed. In IIHF women\'s hockey, beat her to the wall, because you may hold the ice between her and the puck only once you got there first, and never use the boards on her: no pushing her into them, pinning her there or leaning her out of the play, under Rule 101.1. ' +
+    '⚠️ Pinching on anything is about the puck, not about the man. In many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior. Where checking is barred, a pinch is a play on the puck, not a check: get there first and play it, and under USA Hockey, holding body position in a wall battle for the puck is still allowed. In IIHF women\'s hockey, beat her to the wall, because you may hold the ice between her and the puck only once you got there first, and never use the boards on her: no pushing her into them, pinning her there or leaning her out of the play, under Rule 101.1. ' +
     // RECEIVING POSTURE. Carried here for the reason forecheck-pinch carries it and the other
     // four diagrams do not: this is the ONE picture in the set that sends BOTH defencemen down
     // BOTH walls at once, so it has the set's maximum exposure to arriving at the boards, and a
@@ -1301,7 +1301,7 @@ const forecheckPress = {
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
     'the other forecheck diagrams: the defenceman D1 behind the net with the puck, the partner D2 low in ' +
-    'the far corner, the wingers W1 and W2 on the two half-walls, and the goaltender in the crease. Five ' +
+    'the far corner, the wingers W1 and W2 on the two half-walls, and the goalie in the crease. Five ' +
     'own players, all of them below the top of the circles or heading there: F1 deep at the goal line on ' +
     'the puck side, F2 deep inside the puck-side circle, and F3 deep as well on the far side rather than ' +
     'high in the middle. Both defencemen are drawn at the offensive blue line in the act of leaving it, ' +

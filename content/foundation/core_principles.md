@@ -14,11 +14,11 @@
 
 **Play the part of the shift you spend without the puck.** NHL forwards at five-on-five hold it for about forty seconds in every twenty minutes. The rest is your game: be somewhere the carrier can pass to, and when your team loses it, get back above the puck.
 
-**Look before the puck reaches you.** A glance while the pass is travelling is free; one taken after it arrives costs you possession. Goaltenders are the exception: they track a live puck all the way in.
+**Look before the puck reaches you.** A glance while the pass is travelling is free; one taken after it arrives costs you possession. Goalies are the exception: they track a live puck all the way in.
 
-**Defending, stay goal side.** Keep your body between your attacker and your net, with your stick in the passing lane. Once they are past you, your goaltender is doing your job.
+**Defending, stay goal side.** Keep your body between your attacker and your net, with your stick in the passing lane. Once they are past you, your goalie is doing your job.
 
-**When the puck goes to the net, go with it** — unless your team has made you the safety on that shot. Stop at the front, skates and stick blade just outside the crease, stick on the ice: the rebound goes to whoever is already there. Take the ice, never the goaltender.
+**When the puck goes to the net, go with it** — unless your team has made you the safety on that shot. Stop at the front, skates and stick blade just outside the crease, stick on the ice: the rebound goes to whoever is already there. Take the ice, never the goalie.
 
 **Where you are standing decides what a mistake costs.** Play simple in your own end and creative in theirs. Take the stride that changes the ice before you choose the play.
 
@@ -112,7 +112,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **What to do.** Off the puck you have four jobs, and what is right in one is close to the opposite in another. Most players have a plan for only one of them.
 
-- **Your team has the puck:** get open where the carrier can see you. When the puck goes to the net, go with it and stop at the front for the rebound — skates and stick blade just outside the crease, never on the goaltender — unless your job on that shot is the safety at the point or the top of the circle.
+- **Your team has the puck:** get open where the carrier can see you. When the puck goes to the net, go with it and stop at the front for the rebound — skates and stick blade just outside the crease, never on the goalie — unless your job on that shot is the safety at the point or the top of the circle.
 - **They have the puck:** these pages assume the closest player pressures it, with the stick and an angle; a 1-2-2 forecheck or a trap sends fewer, so find out what your team runs. If you are not the one pressing, stay goal side of your attacker with your stick in the passing lane.
 - **The puck is loose:** one player goes hard, one supports and nobody else joins. Which of you is which is your team's call.
 - **Possession has just changed:** act before the other side does. If your team won it, go; if it lost it, get back above the puck, between it and your net.
@@ -123,12 +123,12 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **A realistic alternative.** None — this is an observation, not a coaching choice. What your team asks you to do with the time *is* a coaching choice, and that is principle 1.
 
-**What it costs at the net.** Stay out of the crease and give way to the goaltender: it is a rule as well as a habit.
+**What it costs at the net.** Stay out of the crease and give way to the goalie: it is a rule as well as a habit.
 
-- **Standing in the crease can stop play.** Under USA Hockey, standing in the crease, skating through it or holding your stick in it — its line included — while your team has the puck in the zone and the goaltender is in contact with the crease stops play for a neutral-zone faceoff, unless a defender put you there (Rule 625(b)). The IIHF lets the referee do the same if you do not leave it immediately (Rule 69).
-- **Holding your spot is a penalty.** If you are in the crease and the goaltender makes contact to establish their position, give ground at once. Holding your spot is goaltender interference, goal or no goal, under the NHL, PWHL and IIHF books — a minor in the first two (NHL 69.3, PWHL 71.3, IIHF 69.3).
-- **It can cost your team the goal.** Under USA Hockey and CARHA, a goal scored while an attacker stands in the crease does not count unless the puck got into the crease first (USA Hockey Rules 617(c)(4) and 625(b), CARHA Rule 66(b)). Hockey Canada also disallows it, but lets a teammate's goal from outside the crease stand if you did not play the puck, interfere with the play or block the goaltender's view or movement (the *Goal Crease Area* interpretation under its Rule 8.5). The NHL, PWHL and IIHF say your position alone does not decide it: the goal comes off for contact with the goaltender, or for a position that stops them moving freely in their crease, and planting yourself **in the crease** to block their view and hamper the save is enough (NHL and IIHF Rules 69.1 and 69.3, PWHL 71.1 and 71.3). In every book, a screen from just outside the crease that never touches the goaltender keeps the goal.
-- **Outside the crease the goaltender is still not fair game.** Deliberate or unnecessary contact with a goaltender anywhere on the ice is a penalty in the NHL, PWHL and IIHF books (NHL and IIHF 69.2 and 69.4, PWHL 71.2 and 71.4), under Hockey Canada (Rule 8.5), CARHA (Rule 66(b)) and USA Hockey (Rule 607(d)). USA Hockey's casebook allows a check on a goaltender outside the privileged area (the box from the end-zone faceoff dots back to the end boards) only to win a puck the goaltender has, and only where body checking is allowed (Rule 604). Take the ice in front of the net, never the goaltender.
+- **Standing in the crease can stop play.** Under USA Hockey, standing in the crease, skating through it or holding your stick in it — its line included — while your team has the puck in the zone and the goalie is in contact with the crease stops play for a neutral-zone faceoff, unless a defender put you there (Rule 625(b)). The IIHF lets the referee do the same if you do not leave it immediately (Rule 69).
+- **Holding your spot is a penalty.** If you are in the crease and the goalie makes contact to establish their position, give ground at once. Holding your spot is goaltender interference, goal or no goal, under the NHL, PWHL and IIHF books — a minor in the first two (NHL 69.3, PWHL 71.3, IIHF 69.3).
+- **It can cost your team the goal.** Under USA Hockey and CARHA, a goal scored while an attacker stands in the crease does not count unless the puck got into the crease first (USA Hockey Rules 617(c)(4) and 625(b), CARHA Rule 66(b)). Hockey Canada also disallows it, but lets a teammate's goal from outside the crease stand if you did not play the puck, interfere with the play or block the goalie's view or movement (the *Goal Crease Area* interpretation under its Rule 8.5). The NHL, PWHL and IIHF say your position alone does not decide it: the goal comes off for contact with the goalie, or for a position that stops them moving freely in their crease, and planting yourself **in the crease** to block their view and hamper the save is enough (NHL and IIHF Rules 69.1 and 69.3, PWHL 71.1 and 71.3). In every book, a screen from just outside the crease that never touches the goalie keeps the goal.
+- **Outside the crease the goalie is still not fair game.** Deliberate or unnecessary contact with a goalie anywhere on the ice is a penalty in the NHL, PWHL and IIHF books (NHL and IIHF 69.2 and 69.4, PWHL 71.2 and 71.4), under Hockey Canada (Rule 8.5), CARHA (Rule 66(b)) and USA Hockey (Rule 607(d)). USA Hockey's casebook allows a check on a goalie outside the privileged area (the box from the end-zone faceoff dots back to the end boards) only to win a puck the goalie has, and only where body checking is allowed (Rule 604). Take the ice in front of the net, never the goalie.
 
 **Where to read more.** New to this: [Getting Started](../getting-started/getting_started.md). Deeper: [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md), which has the figures and the four off-puck states.
 
@@ -138,7 +138,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** A glance over your shoulder while the pass is travelling is free, because your eyes have nothing else to do. A glance after the puck arrives costs possession time, and the picture has changed while you looked.
 
-**This reverses in goal.** A goaltender facing a shot has nothing to gain by looking away from a live puck. [Goaltender](../positions/goaltender.md) has them "[t]rack the puck all the way into the pad, the glove, the chest" instead, because losing sight of it is what costs the goal.
+**This reverses in goal.** A goalie facing a shot has nothing to gain by looking away from a live puck. [Goaltender](../positions/goaltender.md) has them "[t]rack the puck all the way into the pad, the glove, the chest" instead, because losing sight of it is what costs the goal.
 
 **Why it matters.** Players who seem to see the whole ice have almost always simply already looked. It is the cheapest improvement in hockey: it costs no fitness, no ice time and no talent.
 
@@ -225,7 +225,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 - **Watching the puck instead of the attacker you are covering.** Stay goal side, keep them in view, and take short looks at the puck. Otherwise the player you should be covering walks in behind you.
 - **Joining the chase when you are not the one pressing.** Unless your team has sent you to pressure the puck, stay goal side with your stick in the lane. Two players on one carrier leave somebody free.
 - **Skating toward a teammate who is under pressure.** Move away instead, to somewhere they can pass to at a different angle. Going to them lets one defender's stick cover you both.
-- **Stopping short of the net, or peeling away once the shot has gone.** Unless you are the safety, go all the way and stop at the front: skates and stick blade just outside the crease, stick on the ice, never on the goaltender.
+- **Stopping short of the net, or peeling away once the shot has gone.** Unless you are the safety, go all the way and stop at the front: skates and stick blade just outside the crease, stick on the ice, never on the goalie.
 - **Moving the puck through your own slot under pressure.** Go behind the net, up the wall or through a high exchange — whichever your team uses. A pass across your own goal that gets read is a shot against.
 - **Using a principle to argue with a coach.** Your bench wins on the ice; ask about it afterwards. A principle is for the situations nobody has given you an instruction for.
 - **Treating a principle as though it were a rule.** Most of this page is judgement, and the play in front of you can overrule it. The exceptions are principle 2, which is about finding out which rules are yours; the crease rule in principle 3; and principle 7 — never turn your back to the checker and never duck, in any situation.
@@ -238,9 +238,9 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 ## Key Takeaways
 
 1. **You almost never have the puck, so play the rest of the shift.** With it, get open where the carrier can see you; against it, stay goal side; when it is loose, one goes and one supports; when it changes hands, act first.
-2. **Look before the puck reaches you**, while the pass is still travelling, and receive it already turning the way you chose. Goaltenders are the exception: they track a live puck all the way in.
+2. **Look before the puck reaches you**, while the pass is still travelling, and receive it already turning the way you chose. Goalies are the exception: they track a live puck all the way in.
 3. **Defending, stay goal side of the attacker you are responsible for** — your body between them and your net, your stick in the passing lane. Unless your team sends you to pressure the puck, hold that position rather than chasing.
-4. **When the puck goes to the net, go with it** unless you are the safety, and stop at the front with skates and stick blade just outside the crease, stick on the ice. Take the ice in front of the net, never the goaltender.
+4. **When the puck goes to the net, go with it** unless you are the safety, and stop at the front with skates and stick blade just outside the crease, stick on the ice. Take the ice in front of the net, never the goalie.
 5. **Play simple in your own end and creative in theirs**, and take the stride that changes the ice before you choose the play. Leading late, reach for the safe option earlier; trailing late, take more risk.
 6. **Never pass the puck — or skate it — across the front of your own goal.** Go behind the net, up the wall, or through a high exchange, whichever your team uses.
 7. **Give the carrier two options at different angles**, because two teammates in one line are one option. When a teammate is pinned in a battle, move away to give them an outlet.

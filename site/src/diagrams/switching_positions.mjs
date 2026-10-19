@@ -385,7 +385,7 @@ const forcingThemOutside = {
 
   describe:
     'The defending half of the rink, your own net at the right, your blue line at the left. ' +
-    'Two skaters and a goaltender. An opposition forward carries the puck about fifteen feet ' +
+    'Two skaters and a goalie. An opposition forward carries the puck about fifteen feet ' +
     'inside your blue line, wide on the right-hand side, with the puck on the boards side of ' +
     'his body. Your defenceman stands about nine feet from him, both nearer the middle of ' +
     'the ice and nearer your own net — that is, on the inside and on the defensive side. One ' +
@@ -393,7 +393,7 @@ const forcingThemOutside = {
     'finishing out on the wall a few feet short of the faceoff dot line and about four feet ' +
     'short of the boards themselves, finishing just outside the painted faceoff circle and ' +
     'just short of the nearer hash mark — close to both, crossing neither. ' +
-    'The defenceman has no route drawn. Your goaltender is in the crease. Nothing in the ' +
+    'The defenceman has no route drawn. Your goalie is in the crease. Nothing in the ' +
     'picture shows contact.',
 
   players: [
@@ -435,7 +435,7 @@ const gettingBeatenWide = {
 
   describe:
     'The defending half of the rink, your own net at the right, your blue line at the left. ' +
-    'The same two skaters and goaltender as the diagram before, and the opposition carrier ' +
+    'The same two skaters and goalie as the diagram before, and the opposition carrier ' +
     'stands in exactly the same place, wide on the right-hand side about fifteen feet inside ' +
     'your blue line, with the puck on the boards side of his body. He skates the same route ' +
     'as in that diagram, and it is the only route drawn: a wave bowing gently outward toward ' +
@@ -443,7 +443,7 @@ const gettingBeatenWide = {
     'Your defenceman has moved, and he is the only player who has: he is now eighteen feet ' +
     'further up the ice, back toward your blue line, so the carrier is about eleven feet ' +
     'past him toward the net and six feet outside him, with the whole end of the rink ' +
-    'behind him empty. The defenceman has no route drawn. Your goaltender is in the crease. ' +
+    'behind him empty. The defenceman has no route drawn. Your goalie is in the crease. ' +
     'Nothing in the picture shows contact.',
 
   players: [

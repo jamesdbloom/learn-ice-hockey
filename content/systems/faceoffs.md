@@ -23,7 +23,7 @@
 > other rule cited here as reading the same in both editions. No claim is made about whether the
 > rest of this document's IIHF layer is current under them.
 >
-> **Related:** [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Rules Primer](../foundation/rules_primer.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md) · [Special Teams](special_teams.md) · [Breakouts](breakouts.md) · [Offensive Zone Play](offensive_zone_play.md) · [Game Management](game_management.md) · [Practice and Development](../off-the-ice/practice_and_development.md)
+> **Related:** [Centre](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Rules Primer](../foundation/rules_primer.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md) · [Special Teams](special_teams.md) · [Breakouts](breakouts.md) · [Offensive Zone Play](offensive_zone_play.md) · [Game Management](game_management.md) · [Practice and Development](../off-the-ice/practice_and_development.md)
 
 ## Key focus
 
@@ -179,7 +179,7 @@ Know where the next draw will be and you can start skating there before the whis
 - **A penalty.** One of the two dots in the penalised team's end, and **the team awarded the power play chooses which** (Rule 76.2).
 - **Intentional offside** — going offside on purpose to force a whistle (Rule 83.7).
 - **A goalie freeze, or any stoppage low in the zone.** The draw is at the end-zone dot **on the side where the stoppage occurred** (Rule 76.2), so the side a goalie freezes it on picks the circle. Goalies know this. The rule holds *"unless otherwise expressly provided by these rules"* (IIHF 76.2 the same), so a stoppage another rule speaks for goes where that rule sends it.
-- **A defender or goalkeeper accidentally knocking their own net off.** Rule 63.8 sends the draw to the offending team's end, **the attacking team chooses the dot**, and the offending team may not substitute. IIHF Rule 63.8 is the same rule, in both editions.
+- **A defender or goalie accidentally knocking their own net off.** Rule 63.8 sends the draw to the offending team's end, **the attacking team chooses the dot**, and the offending team may not substitute. IIHF Rule 63.8 is the same rule, in both editions.
 - **The goalie freezing the puck on the back of the net, or a defender shielding an attacker from playing it there** — Rule 85.2 sends these to the defending zone. ⚠️ **"Just a faceoff" is the NHL's, the IIHF's and the PWHL's price, not every book's** — see "What it costs" below.
 
 **To a neutral-zone dot:**
@@ -586,9 +586,9 @@ Action: Call off the glass and out of your zone when you are tired, pinned, or a
 
 **Your goalie cannot cover a dead rim out there either.** ⚠️ **None of the four books without a working trapezoid lets him sit on it** — each makes freezing it away from the net a minor:
 
-- **PWHL** 65.2(i): any player, *"including the goalkeeper"*, who freezes the puck *"in such a manner as to deliberately cause a stoppage of play"* — reaching a goalkeeper outside her crease.
+- **PWHL** 65.2(i): any player, *"including the goalkeeper"*, who freezes the puck *"in such a manner as to deliberately cause a stoppage of play"* — reaching a goalie outside her crease.
 - **USA Hockey** 614(c): a minor on any of four triggers, the first being that *"[t]he puck is behind the goal line and their body is entirely outside of the goal crease."* The others are not playing it with the stick when able before being pressured, being outside the privileged area, and holding it against the goal frame, boards or netting.
-- **CARHA** 58(b): a goalkeeper who *"deliberately falls on or gathers the puck into their body, or holds or places the puck against any part of the goal or boards"* with the puck behind the goal line and his body entirely outside the crease. *Deliberately* qualifies falling and gathering, but not plainly holding it against the goal or boards, so do not count on intent excusing those; the book does not say whether its *"when"* clause conditions both limbs. In front of the goal line, 61(b) is a minor for a goalkeeper who *"deliberately holds the puck"* *"causing an unnecessary stoppage of play"*, 74(b) a minor for *"any player who deliberately holds the puck against the boards or any part of the goal in any manner, unless they are being checked by an opponent"*, and 55(a) Note 2 puts a bench minor on *"freezing the puck"* to delay.
+- **CARHA** 58(b): a goalie who *"deliberately falls on or gathers the puck into their body, or holds or places the puck against any part of the goal or boards"* with the puck behind the goal line and his body entirely outside the crease. *Deliberately* qualifies falling and gathering, but not plainly holding it against the goal or boards, so do not count on intent excusing those; the book does not say whether its *"when"* clause conditions both limbs. In front of the goal line, 61(b) is a minor for a goalie who *"deliberately holds the puck"* *"causing an unnecessary stoppage of play"*, 74(b) a minor for *"any player who deliberately holds the puck against the boards or any part of the goal in any manner, unless they are being checked by an opponent"*, and 55(a) Note 2 puts a bench minor on *"freezing the puck"* to delay.
 - **Hockey Canada** 10.1(a) Interpretation 3, clause v: *"[w]hen a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."*
 
 Closer to the net a goalie has more latitude in every book — [Goaltender](../positions/goaltender.md) owns that test, and [Rules Primer](../foundation/rules_primer.md) the rules.
@@ -716,7 +716,7 @@ Rule: ⚠️ **Under the IHUK In-House Rules 2026-27 the toe is not enough — p
 Rule: No other player may enter the circle or come within fifteen feet of the two takers — NHL 76.6, USA Hockey 613(b), Hockey Canada 6.2(a) and CARHA 57(a); IIHF 76.6 writes it as 4.5 m
 Rule: At end-zone draws the other eight skaters keep their bodies on their own side of the hash marks — the restraining lines on the outer edge of the circle (NHL and IIHF Rule 76.6, USA Hockey 613(b))
 Rule: The attacking team's four other skaters set their positions first, then the defending team counters — NHL and IIHF 76.6 and Hockey Canada's Interpretation 1 to 6.2(a); USA Hockey 613(b) and CARHA 57(a) write no such right
-Rule: The goalkeeper may not participate in a faceoff (Rule 76.1)
+Rule: The goalie may not participate in a faceoff (Rule 76.1)
 ```
 
 **For the centre** (Rules 76.4 and 76.7):
@@ -736,7 +736,7 @@ Rule: The goalkeeper may not participate in a faceoff (Rule 76.1)
 
 Where that rule applies it is a real asset to the defending team: you see where their net-front threat is going before you decide who takes him. **Hockey Canada writes it too** (6.2(a) Interpretation 1: *"the defending team has the right to set up its defence"*). **USA Hockey and CARHA do not**, so there do not build an own-end alignment on watching their net-front man commit first.
 
-**The goalkeeper may not participate in a faceoff** (Rule 76.1). This matters when your goalie is pulled — see "Situational Faceoffs".
+**The goalie may not participate in a faceoff** (Rule 76.1). This matters when your goalie is pulled — see "Situational Faceoffs".
 
 ---
 
@@ -1103,7 +1103,7 @@ Key: There is no time for a second pass, so agree the play at the bench, not at 
 Read: Expect the opponent to have a plan too, and expect it to differ from their default
 Rule: No time-out is granted following a faceoff violation (NHL and IIHF Rule 87.1, PWHL Rule 89.1)
 Rule: No time-out for the defensive team following an icing, after their goalie stops a shot from beyond the centre red line, or after a defender accidentally dislodges the net (NHL Rule 87.1)
-Rule: A net accidentally displaced by a defending skater or goalkeeper costs the line change as well as the time-out — the offending team may not substitute before the draw (NHL and IIHF Rule 63.8)
+Rule: A net accidentally displaced by a defending skater or goalie costs the line change as well as the time-out — the offending team may not substitute before the draw (NHL and IIHF Rule 63.8)
 Rule: USA Hockey attaches no icing condition to its one 60-second time-out, but requires it be requested during the stoppage and before the line change procedure concludes (Rule 636(f))
 Rule: IIHF Rule 87.1 carries both the faceoff-violation and the post-icing time-out bans; USA Hockey Rule 636(f) writes neither, but its sixty-second time-out must be asked for before the line change procedure ends, so after a botched draw it is already too late
 ```
@@ -1118,7 +1118,7 @@ A timeout buys both teams a rest and a chance to draw up the alignment. So expec
 Position: The extra attacker goes to the net front or the high slot, with both defencemen at the points
 Priority: The centre must win it back cleanly — there is no safe outlet, and a lost draw lets the defence clear it and run down time you may not get back
 Key: Defending against a pulled goalie, win the draw, then get it out or deep under control — shoot at the empty net only with a clean lane, because a miss from your own half is icing
-Rule: The goalkeeper may not participate in a faceoff (Rule 76.1)
+Rule: The goalie may not participate in a faceoff (Rule 76.1)
 Rule: A team that pulled its goalie may still substitute after an icing to put the goalie back in (NHL and IIHF Rule 81.4)
 Rule: Besides putting a pulled goalie back, the NHL's exceptions to the post-icing no-change rule are an injured player and a penalty that changes on-ice strength (NHL Rule 81.4)
 Rule: IIHF 81.4 adds a fourth, "a Player with a broken skate", which IIHF 82.1 does not repeat and no Situation names — treat it as one an official may allow, not one to count on: a change the referee refuses costs a warning your team may already have spent, then a bench minor (IIHF 81.4, 82.1, 82.2(V))
@@ -1126,7 +1126,7 @@ Rule: IIHF 81.4 adds a fourth, "a Player with a broken skate", which IIHF 82.1 d
 
 - **Six skaters changes the alignment entirely.** The extra attacker usually goes to the net front or the high slot, with both defencemen at the points. The centre must win it back cleanly: there is no safe outlet, and a lost draw lets the defence clear it and run down time.
 - **Defending against a pulled goalie:** win the draw, then get the puck out or deep under control. Shoot at the empty net only with a clean lane — six against six is not shorthanded, so a miss from your own half is icing and brings the draw straight back to your end. It is a draw worth practising.
-- **The goalkeeper may not take a faceoff** (Rule 76.1), and a team that pulled him may still substitute after an icing to put him back (81.4) — one of **three** exceptions to the no-change rule, with an injured player and a penalty that changes on-ice strength.
+- **The goalie may not take a faceoff** (Rule 76.1), and a team that pulled him may still substitute after an icing to put him back (81.4) — one of **three** exceptions to the no-change rule, with an injured player and a penalty that changes on-ice strength.
 - **Do not send a player over the boards on a broken skate without the official's say-so.** ⚠️ **The IIHF book contradicts itself here:** its 81.4 adds a change for *"a Player with a broken skate"*, its 82.1 lists only the three, both editions read that way, and no Situation mentions a broken skate. Nothing British amends it — the In-House Rules defer substitutions to *"the Playing Rules"*.
 
 **What it costs.** ⚠️ **A refused change is not a warning you can count on having.** IIHF 82.2(V) sends the players back and warns the team through the coach — but that warning is **one per team per game**, and *"any subsequent violations during the rest of the game (including overtime), shall result in a bench minor penalty"*. If your bench has already been warned for any personnel change, the next one is the bench minor, and 82.2(VIII) does not relax that late. ⚠️ **Under the NHL a visiting team may get no warning at all:** NHL 82.3 makes *"[a]ny attempt by the visiting team to make a change after the Referee's signal"* a bench minor, while 82.2(v) warns *"either team"* first, and the book does not say which governs. The IIHF's 82.3 warns first, then a bench minor. Stalling on the way to the dot is a bench minor with no warning in both books (82.3).

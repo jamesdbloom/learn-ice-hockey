@@ -458,7 +458,7 @@ Your mind takes longer to recover than your body. It is normal to be cleared and
 
 ---
 
-## 9. Goaltender psychology
+## 9. Goalie psychology
 
 Goaltending has a strong claim to being the most psychologically demanding position in team sport, and writing on goalkeepers across sports treats it as a distinct problem.
 

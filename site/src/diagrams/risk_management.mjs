@@ -635,7 +635,7 @@ const PINCH_DESCRIBE_COMMON =
   'upper half-wall, about eleven feet up-ice of the faceoff dot, with the puck at his stick; a ' +
   'second forward on the lower, weak side of the ice, just up-ice of the lower faceoff circle, ' +
   'with a plain arrowed route heading back out toward the blue ' +
-  'line; and their goaltender in his crease. Own players are open glyphs: a defenceman at the ' +
+  'line; and their goalie in his crease. Own players are open glyphs: a defenceman at the ' +
   'upper point whose route curves down the boards and ends in two short bars across the line, ' +
   'about eight feet short of the puck carrier, and a second defenceman at the blue line on the ' +
   'lower side, shaded into the middle of the ice. ';
@@ -879,7 +879,7 @@ const crossIceOwnEnd = {
     'Your own defensive zone, your own net at the right: the cross-ice pass this section tells you ' +
     'not to make, and the traffic standing in it. A defenceman has the puck in the strong-side corner ' +
     'with a forechecker sealing him there, and the pass goes east–west below the tops of the faceoff ' +
-    'circles, across the shaded slot in front of your own goaltender. The forward drawn in the middle ' +
+    'circles, across the shaded slot in front of your own goalie. The forward drawn in the middle ' +
     'is standing beside that lane, and this notation has no stick symbol, so his reach into it is not ' +
     'drawn at all. Their third forward is already sliding across, so even when it works it usually ' +
     'arrives with the forecheck. No rule forbids the pass itself: this is a coaching convention ' +
@@ -903,7 +903,7 @@ const crossIceOwnEnd = {
     'The defending half of the rink, your own net at the right. Three own players are drawn as ' +
     'open glyphs: a defenceman in the upper corner about five feet up-ice of the goal line with ' +
     'the puck at his stick; a forward low on the opposite boards, level with the far faceoff ' +
-    'dot; and the goaltender in the crease. Three opposition players are solid glyphs: a forward ' +
+    'dot; and the goalie in the crease. Three opposition players are solid glyphs: a forward ' +
     'inside and below the puck carrier, sealing him toward the corner; a second forward in the ' +
     'middle of the zone, a few feet above the passing lane and about seven feet off it; and a ' +
     'third forward on the lower, weak side, level with the tops of the faceoff circles and just ' +
@@ -1024,7 +1024,7 @@ const bothDToThePuck = {
     'below the hash marks. All three are converged on one puck, drawn between them rather than ' +
     'at any one stick. A shaded rectangle, labelled "your slot", runs down the middle of the zone ' +
     'from the tops of the two faceoff circles to the front edge of the crease, and it is ' +
-    'completely empty — no player stands in it. The goaltender is alone in the crease. No routes ' +
+    'completely empty — no player stands in it. The goalie is alone in the crease. No routes ' +
     'are drawn: this is a frozen shape, not a play in progress.',
 
   // YOUR OWN SLOT, copied vertex for vertex from `cross-ice-in-your-own-end`'s zone

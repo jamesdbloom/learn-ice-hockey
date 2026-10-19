@@ -259,7 +259,7 @@ const whoCanSeeIt = {
     // contradicts three times. Only four players are drawn here; this sentence describes them,
     // not hockey.
     'Why the call exists: the player going to get the puck is the one who cannot see the danger, ' +
-    'and in this picture the two who can see it, his partner and his goaltender, are the two who ' +
+    'and in this picture the two who can see it, his partner and his goalie, are the two who ' +
     'cannot reach it, so all they can do is say so. Both are labelled "calls it": where two people ' +
     'can see it, both should call it, because the failure is silence, not duplication. The words ' +
     'are a team matter, so agree your own. The mirror of this picture is the same corner with ' +
@@ -293,7 +293,7 @@ const whoCanSeeIt = {
     // qualifier, or nothing.
 
   describe:
-    'Your own end, your net at the right and your goaltender in the crease. A loose puck sits in ' +
+    'Your own end, your net at the right and your goalie in the crease. A loose puck sits in ' +
     'the right corner. One of your defencemen, an open triangle, is between the right faceoff dot ' +
     'and the corner; a plain arrowed route runs from him out toward the corner and stops about six ' +
     'feet short of the puck. An opposition forward, a solid circle, stands about twenty feet ' +
@@ -301,7 +301,7 @@ const whoCanSeeIt = {
     'the ice, on the line the retriever has just skated along; his route runs after him and ends in ' +
     'two short bars across the line, about seven feet short of him, rather than in an arrowhead. ' +
     'Your second defenceman, an open triangle, stands on the ' +
-    'far side of the net level with the goal line, and neither he nor the goaltender has a route: ' +
+    'far side of the net level with the goal line, and neither he nor the goalie has a route: ' +
     'nobody else in the picture moves. Both of them are labelled "calls it", the retriever is ' +
     'labelled "cannot see him" and the forechecker "closing behind him". No contact is drawn, and ' +
     'nothing in the picture shows where anybody is looking.',

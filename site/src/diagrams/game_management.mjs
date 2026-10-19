@@ -126,7 +126,7 @@ const sixOnFive = {
   width: 900,
 
   caption:
-    'The most common 6-on-5 shape, with your goaltender pulled for a sixth attacker: two at the ' +
+    'The most common 6-on-5 shape, with your goalie pulled for a sixth attacker: two at the ' +
     'points — the area just inside the blue line, not the line itself — two on the half-walls level ' +
     'with the faceoff dots, one at the net front, and one below the goal line, who can sit in the ' +
     'middle instead. The five defenders are not drawn, and your own net is empty at the far end. ' +
@@ -135,7 +135,7 @@ const sixOnFive = {
     'practice. Who is out there, and who stands where, is a team choice too.',
 
   describe:
-    'The attacking half of the rink, the opposition net at the right and their goaltender in the ' +
+    'The attacking half of the rink, the opposition net at the right and their goalie in the ' +
     'crease. Six own players and no defenders. Two stand at the points, up at the blue-line end of ' +
     'the zone, one either side of the middle and about forty feet apart: one is drawn as a ' +
     'defenceman, the other as a forward. Two ' +
@@ -247,19 +247,19 @@ const sixOnFivePinch = {
   width: 900,
 
   caption:
-    'A 6-on-5 with your goaltender pulled, at the moment one point man steps down the wall to keep a ' +
+    'A 6-on-5 with your goalie pulled, at the moment one point man steps down the wall to keep a ' +
     'puck in and the other does not go with him. That is the rule the shape lives by: the point men ' +
     'do not both pinch, because your own net is empty at the far end, so a puck past both of them is ' +
     'not a rush against you but a clear path to an empty net. The one who stays is the whole ' +
     'insurance policy. Only the defender the pinch is aimed at is drawn. Which point man pinches, ' +
     'whether your team pinches at all with the goalie out, and who is standing at the points are ' +
-    'coaching choices and not laws of hockey, so find out what your team wants before the goaltender ' +
+    'coaching choices and not laws of hockey, so find out what your team wants before the goalie ' +
     'leaves. ⚠️ No contact is drawn: the route ends in two bars on a patch of the wall rather than on ' +
     'a player, and what an arrival like that may end in depends on whether your league allows body ' +
     'checking at all.',
 
   describe:
-    'The attacking half of the rink, the opposition net at the right and their goaltender in ' +
+    'The attacking half of the rink, the opposition net at the right and their goalie in ' +
     'the crease. The six own players stand in the same 6-on-5 shape as the previous diagram: ' +
     'two at the points, two on the half-walls level with the faceoff dots, one at the net ' +
     'front and one below the goal line. One opposition skater has the puck on the right-hand ' +
@@ -425,28 +425,28 @@ const clearAtFiveOnSix = {
   width: 900,
 
   caption:
-    'Defending a 6-on-5 from your own end: your goaltender is still in your net at one end, theirs is ' +
+    'Defending a 6-on-5 from your own end: your goalie is still in your net at one end, theirs is ' +
     'empty at the other, and a puck has just come free to you. Every clear from here is a shot, and ' +
     'three things can happen to it — so all three are drawn the same way, as one act with three ' +
     'endings. Head up and on to the empty net, and it is a goal; a puck that goes in is not icing. ' +
     'Missed, and a puck crossing their goal line untouched from your own side of the centre red line ' +
     'is icing. A blind clear to their point man hands it back at your own blue line. Only the player ' +
     'with the puck, one of their point men and the two nets are drawn. ⚠️ And you can be iced against ' +
-    'a pulled goaltender: six players against six is equal strength and not below it, and NHL Rule ' +
-    '81.3 says an icing should not be nullified merely because their goaltender was on his way to the ' +
+    'a pulled goalie: six players against six is equal strength and not below it, and NHL Rule ' +
+    '81.3 says an icing should not be nullified merely because their goalie was on his way to the ' +
     'bench for an extra attacker. Under the NHL and the IIHF that whistle brings the draw back to ' +
     'your own end, lets the attacking team pick the dot, and leaves you unable to change and unable ' +
     'to take a time-out at all. Rule 81.4 does list exceptions, but read which ones: an injured ' +
     'player, or a penalty that ' +
-    'changes the on-ice strength; the one that lets a goaltender come back in belongs to the team ' +
+    'changes the on-ice strength; the one that lets a goalie come back in belongs to the team ' +
     'that pulled its own, and that is not you. USA Hockey attaches no substitution restriction to an ' +
     'icing at all, and Hockey Canada writes one only in the categories its Rule 6.7(d) names — ' +
     'U18AAA and Junior, and in Senior at the Member’s option — so find out which rules your league runs. ' +
     'This is a shot to take when you can actually hit the net, and not a blind heave.',
 
   describe:
-    'The full sheet. Your own net is at the left with your goaltender in the crease; the ' +
-    'opposition net at the right is empty, with no goaltender drawn. One own player has the ' +
+    'The full sheet. Your own net is at the left with your goalie in the crease; the ' +
+    'opposition net at the right is empty, with no goalie drawn. One own player has the ' +
     'puck deep in his own end, inside the right-hand faceoff circle and up toward the boards. ' +
     'One opposition defenceman stands at the left-hand point, up at the blue-line end of your ' +
     'own zone. Three routes leave the puck carrier, and all three are drawn as shots in the ' +
@@ -494,7 +494,7 @@ const clearAtFiveOnSix = {
     // too — and at 360 px it reads. Only labels of EIGHT characters or fewer take the
     // tidy vertical slot directly under the glyph; anything longer is pushed to this
     // offset, so do not lengthen it expecting the placement to hold.
-    { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 }, label: 'your goaltender' },  // (-85, 0)
+    { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 }, label: 'your goalie' },  // (-85, 0)
     // ⚠️ THIS WAS `id: 'C'`, WHICH IS A CENTRE. Every one of the 39 other `id: 'C'`
     // glyphs in site/src/diagrams/ is a centre role — "the middle is his", "to the
     // centre", "middle lane" — so the letter is not generic in this corpus, it is a
@@ -693,7 +693,7 @@ const delayedPenalty = {
 
   caption:
     'A delayed penalty, drawn in your own defending end — so the net in this picture is yours, and it ' +
-    'is empty, because your goaltender has already gone to the bench for a sixth attacker. Play runs ' +
+    'is empty, because your goalie has already gone to the bench for a sixth attacker. Play runs ' +
     'on until the team to be penalised gains control of the puck under NHL Rule 15.1, and until they ' +
     'do they cannot score. There is one exception: under NHL Rule 78.5(xi) they can only score if your ' +
     'own team shoots the puck into your own net. So the one pass that can beat you is a blind ' +
@@ -706,7 +706,7 @@ const delayedPenalty = {
     'no count of it is given here.',
 
   describe:
-    'Your own defending end, your net at the right. The goal crease is empty — no goaltender is ' +
+    'Your own defending end, your net at the right. The goal crease is empty — no goalie is ' +
     'drawn in it, and the crease itself carries the words "no goalie" across it. One of your ' +
     'defencemen has the puck low in the right-hand corner; your other ' +
     'defenceman is across in the left-hand corner. A single opposition forward is in the right ' +
@@ -862,16 +862,16 @@ const overtimeRegroup = {
     'Three-on-three overtime. You are inside their blue line with no high-quality look, so rather ' +
     'than force a shot you turn and take the puck back out through the neutral zone — the long wave ' +
     'running to your own side of centre ice — to reset and come again. All six skaters are drawn, and ' +
-    'both goaltenders are in their creases. Two things this picture is not: Rule 84.1 gives each side ' +
-    'three skaters and one goalkeeper and says nothing about who they are, so the two forwards and ' +
+    'both goalies are in their creases. Two things this picture is not: Rule 84.1 gives each side ' +
+    'three skaters and one goalie and says nothing about who they are, so the two forwards and ' +
     'one defenceman a side drawn here are a team’s choice and not the format; and how the format is ' +
     'played is the account coaches and players give of it rather than a rule of hockey. This is NHL ' +
     'regular-season overtime, and the format you actually play may not be it — in many British ' +
     'fixtures there is no overtime at all.',
 
   describe:
-    'The full sheet. Your own net is at the left with your goaltender in the crease; the ' +
-    'opposition net is at the right with their goaltender in theirs. Three own skaters and three ' +
+    'The full sheet. Your own net is at the left with your goalie in the crease; the ' +
+    'opposition net is at the right with their goalie in theirs. Three own skaters and three ' +
     'opposition skaters are drawn and no more, which is the whole strength of both teams here. ' +
     'Your puck carrier, a forward, is about twelve feet inside the opposition blue line on the ' +
     'upper side of the ice, with the puck drawn just below him on the up-ice side, away from the ' +

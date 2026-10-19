@@ -197,7 +197,7 @@ In-House **Rule 37** reads: *"On-ice video review is not available in EIH or SIH
 
 Read that third answer for what it says: ⚠️ **contact in the paint is enough to wipe a goal out, not a line beyond which contact is free.** The Casebook calls its criteria an **addition**, so IIHF Rule 69 still decides the call, and 69.2 tells the referee to weigh *"the degree and nature of the relevant contact with the goalkeeper"* above *"the exact location of the goalkeeper"*. Rule 69.4 disallows a goal for non-incidental contact an attacker initiates outside the crease: *"A goalkeeper is not 'fair game' just because they are outside the goal crease."*
 
-And ⚠️ **the penalty is yours whether anything goes in or not:** deliberate contact is a minor or a major *"whether or not the goalkeeper is inside or outside the goal crease, and whether or not a goal is scored"*. You need not even touch him — stopping a goalkeeper who played the puck outside his crease from getting back to it can be goalkeeper interference on its own.
+And ⚠️ **the penalty is yours whether anything goes in or not:** deliberate contact is a minor or a major *"whether or not the goalkeeper is inside or outside the goal crease, and whether or not a goal is scored"*. You need not even touch him — stopping a goalie who played the puck outside his crease from getting back to it can be goalkeeper interference on its own.
 
 Nor is the crease only the paint: Rule 1.7 says *"[t]he marked line belongs to the Goal Crease"*, and the crease area *"extends vertically until the top of the crossbar"*. Rules 1.7, 69.3 and 69.4 say the same thing in the 2025/26 and 2026/27 books, so none of this turns on which edition your competition plays.
 
@@ -250,11 +250,11 @@ The IIHF book has a goalkeeper's restricted area (Rule 1.8 for the geometry, 27.
 
 **The Elite League has not suspended it either.** Its Casebook never mentions Rule 27, so the IIHF book governs, and nothing read here says whether its fixtures count as EIH competitions. Many British rinks have no trapezoid painted because of the suspension, but treat an unmarked sheet as a hint, not a ruling — 27.7 turns on *"the position of the puck"*, not the markings.
 
-**Play as though it binds, wherever you are.** For a goaltender that costs nothing and the alternative is two minutes. For an attacking team the safe assumption runs the other way — plan as though *their* goalie may come for a dumped puck.
+**Play as though it binds, wherever you are.** For a goalie that costs nothing and the alternative is two minutes. For an attacking team the safe assumption runs the other way — plan as though *their* goalie may come for a dumped puck.
 
-**And 22.3 does not suspend the delay-of-game rule.** A goalkeeper who *"holds, 'freezes' or plays the puck with their stick, skates or body in such a manner as to deliberately cause a stoppage of play"* still takes a minor, and that rule *"applies outside of their goal crease area"* (IIHF 63.2(I), the same in both editions) — inside the trapezoid area as well as beyond it. A goaltender who comes out to cut down the angle and covers the puck after making the save is expressly legal (63.2(VI), Note).
+**And 22.3 does not suspend the delay-of-game rule.** A goalie who *"holds, 'freezes' or plays the puck with their stick, skates or body in such a manner as to deliberately cause a stoppage of play"* still takes a minor, and that rule *"applies outside of their goal crease area"* (IIHF 63.2(I), the same in both editions) — inside the trapezoid area as well as beyond it. A goalie who comes out to cut down the angle and covers the puck after making the save is expressly legal (63.2(VI), Note).
 
-**Treat this as unsettled.** The suspension is in the 2024-25 *Rules & Regulations*, and neither edition of the In-House Rules mentions the restricted area. ⚠️ **Ask your league** — it decides where your goaltender may retrieve a rim, several times a game.
+**Treat this as unsettled.** The suspension is in the 2024-25 *Rules & Regulations*, and neither edition of the In-House Rules mentions the restricted area. ⚠️ **Ask your league** — it decides where your goalie may retrieve a rim, several times a game.
 
 ### Under the In-House Rules your centre is replaced for almost any faceoff violation — and either centre may put the stick down first
 
@@ -278,7 +278,7 @@ Under the IIHF book a dive — or embellishing, or feigning an injury — is **a
 
 **Read "2 plus 10" the way the penalty box does.** You sit for twelve minutes; your **team** is short for two, because a substitute serves the minor (IIHF Rule 22.3). But a second misconduct in the game is an automatic game misconduct (Rules 20.4 and 22.1), so a dive plus a missing neck guard, or a loose chin strap after a team warning, ends your night.
 
-**A goaltender never goes to the box, but the count still catches them.** Teammates serve both halves of a "2 plus 10" (Rules 27.1 and 27.3), yet the misconduct is recorded against the goaltender, and a second one in the game is an automatic game misconduct; a teammate or the backup then takes the net (27.4). Keep the count yourself.
+**A goalie never goes to the box, but the count still catches them.** Teammates serve both halves of a "2 plus 10" (Rules 27.1 and 27.3), yet the misconduct is recorded against the goalie, and a second one in the game is an automatic game misconduct; a teammate or the backup then takes the net (27.4). Keep the count yourself.
 
 ### A broken stick must be dropped — and the In-House Rules bar carrying it anywhere on the ice
 
@@ -417,7 +417,7 @@ For **IHUK-sanctioned games**, benches must carry a **Level 2 or higher non-play
 
 A team manager may sit on the bench but does not count toward the requirement. On medics the In-House Rules say *"While not mandatory, the presence of a qualified medic on the bench is strongly recommended"* — a recommendation worth taking on its own terms rather than reading as an exemption.
 
-**None of that describes an Elite League game.** The *EIHL Casebook*'s **Rule 5** sets a game-day roster of twenty — at most eighteen skaters and two goaltenders, at least twelve and two — and at most eight team officials on the bench: *"[i]f not listed on the official score sheet, no other persons will be permitted on the players benches."* It sets no coaching-qualification ladder. Its **Rule 7** adds a bench minor for naming the wrong starting line-up, raisable only *"before the second face-off in the first period takes place."*
+**None of that describes an Elite League game.** The *EIHL Casebook*'s **Rule 5** sets a game-day roster of twenty — at most eighteen skaters and two goalies, at least twelve and two — and at most eight team officials on the bench: *"[i]f not listed on the official score sheet, no other persons will be permitted on the players benches."* It sets no coaching-qualification ladder. Its **Rule 7** adds a bench minor for naming the wrong starting line-up, raisable only *"before the second face-off in the first period takes place."*
 
 ### What medical cover you can expect at the rink, and what to ask for
 
@@ -481,7 +481,7 @@ A team manager may sit on the bench but does not count toward the requirement. O
 - **Waiting for an icing or offside whistle at U12 in IHUK's junior leagues.** Play on, and when the official calls your team out, get everyone back over the line at once. Neither whistle comes, and ⚠️ **not clearing the zone quickly is a delay-of-game penalty.** From U14 up it is the ordinary stop-clock game.
 - **Treating U12 minors like adult ones.** **Ask your coach or the officials before the game how they count it.** It is three minutes — four in a four-line game — served on your own line's shifts, and the rules do not say whether that runs on the game clock or only while your line is out, nor whether your team plays short. Coincidental penalties do not cancel at U12, and jumping onto the wrong line is itself a minor.
 - **Thinking only the centre's own violation costs the draw.** Keep your wingers out of the circle until the puck drops, and have a second player ready. Under the In-House Rules a winger's violation gets your centre replaced on any draw except after an icing. ⚠️ **In the Elite League the same encroachment still costs your centre** on most draws, under the IIHF's own 2026/27 book — though there the defending centre's stick goes down first.
-- **Thinking a dive costs two minutes.** Stay on your feet. Under the In-House Rules a dive is a minor plus a 10-minute misconduct: twelve minutes, with your team short for two. A goaltender's teammate serves it for them, but the misconduct still counts toward the two that end the goaltender's game. The Elite League keeps the plain minor.
+- **Thinking a dive costs two minutes.** Stay on your feet. Under the In-House Rules a dive is a minor plus a 10-minute misconduct: twelve minutes, with your team short for two. A goalie's teammate serves it for them, but the misconduct still counts toward the two that end the goalie's game. The Elite League keeps the plain minor.
 - **Finding no checking age in the rule book and assuming the North American one.** Ask your league before you hit anyone. Your competition's Rules of Competition sets it, and in the four read here the junior line falls between **U12 and U14**. A junior who plays up — one age group, or into the NIHL from 16 (15 with approval) — is under the older game's line. ⚠️ **"IHUK runs my league" does not answer it** for NIHL National, the SNL or BUIHA Varsity.
 - **Hearing "cross-checking" instead of "checking to the head" and thinking it was the lesser call.** It was not: both are on the automatic-ejection table, so a major for a cross-check to the head ejects you under either name. Don't cross-check at all — into the back of an opponent who doesn't see it coming it is checking from behind, which has no minor, and a reckless one is a major and an automatic game misconduct. ⚠️ **Interference and tripping sit on the discretionary table**, where the ejection is the referee's judgement. See §Officials have been told to call the foul what it is.
 - **Playing on after your helmet comes off.** Leave the ice straight away, without waiting for a whistle. Under In-House Rule 9.8 failing to is a misconduct, and two misconducts end your game. A helmet and cage that do not match the manufacturer's sizing are Dangerous Equipment, and you are removed until it is put right.
@@ -530,9 +530,9 @@ document, that is named too.*
    for you? Say why neither British source answers it, and where the answer
    actually lives. *(§What this document does not cover)*
 
-5. Your goaltender asks whether the restricted area binds them. What do the two
+5. Your goalie asks whether the restricted area binds them. What do the two
    British documents say, which parts of Britain was the suspension written for,
-   and what should the goaltender — and the attacking team — do in the meantime?
+   and what should the goalie — and the attacking team — do in the meantime?
    *(§The trapezoid may not be enforced)*
 
 6. IIHF Rule 1.2 fixes one rink dimension and gives a range for the other. What
@@ -604,13 +604,13 @@ document, that is named too.*
 
 6. **Look at your rink before you plan around the book's size.** Under the In-House Rules, sheets below 56 m × 26 m are authorised at all levels, with two rinks limited to U16 and below — shorter, narrower or both than the IIHF's 60 m by 26–30 m.
 
-7. **Stay off the goaltender, inside the crease and out.** Deliberate or unnecessary contact is a minor or a major wherever he is, goal or no goal, and contact that impairs him can wipe out your goal. If he is trying to set, give ground. In the Elite League contact in the blue paint is enough to disallow a goal.
+7. **Stay off the goalie, inside the crease and out.** Deliberate or unnecessary contact is a minor or a major wherever he is, goal or no goal, and contact that impairs him can wipe out your goal. If he is trying to set, give ground. In the Elite League contact in the blue paint is enough to disallow a goal.
 
-8. **Goaltenders: play as though the trapezoid binds.** England Ice Hockey's suspension may not reach you or may no longer stand, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goaltender may come out for a dump-in.** Ask your league which applies.
+8. **Goalies: play as though the trapezoid binds.** England Ice Hockey's suspension may not reach you or may no longer stand, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goalie may come out for a dump-in.** Ask your league which applies.
 
 9. **Ask which IIHF edition your officials carry, and play to the stricter one — above all with your stick.** A high stick is a minor in both, an injuring one a double minor, and a reckless one can be a major and an ejection. Under 2026/27 an injuring stick counts even if never carried high. Lift a stick up, not sideways, and never at a player bent over the puck.
 
-10. **Skaters: drop a broken stick the moment it breaks.** Playing on with it is a minor, and under the In-House Rules so is skating with it anywhere on the ice. Take a replacement handed to you, or pick up your own or a teammate's unbroken stick — never one thrown to you, and never an opponent's or a goaltender's.
+10. **Skaters: drop a broken stick the moment it breaks.** Playing on with it is a minor, and under the In-House Rules so is skating with it anywhere on the ice. Take a replacement handed to you, or pick up your own or a teammate's unbroken stick — never one thrown to you, and never an opponent's or a goalie's.
 
 11. **Wear a cage as a junior skater, and size it to your helmet.** A cage satisfies every British rule on a junior, 18 or over included; a full visor does not meet England Ice Hockey's cage rule. BUIHA requires at least a half visor of every player. Leave the ice if your helmet comes off, and keep the chin strap within one finger (2.5 cm).
 

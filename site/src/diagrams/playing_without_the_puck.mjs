@@ -95,7 +95,7 @@ const stickLaneBodyNet = {
     'the defensive zone.',
 
   describe:
-    'One end zone, the net at the right, defended by your own goaltender in the crease. Two ' +
+    'One end zone, the net at the right, defended by your own goalie in the crease. Two ' +
     'opposition players: one with the puck on the right half-wall, level with the faceoff dot, ' +
     'and one in the low slot, the man you are covering. You are drawn as a defender roughly ' +
     'eight feet from him, on the goal side, between him and the net, and about eight feet clear ' +
@@ -220,7 +220,7 @@ const loosePuckWhoGoes = {
     'your chest. Never turn your back to the checker, and never duck.',
 
   describe:
-    'Your own end zone, the net at the right, your goaltender in the crease. A loose puck sits ' +
+    'Your own end zone, the net at the right, your goalie in the crease. A loose puck sits ' +
     'in the right corner with no player on it. Three of your players: one starting near the ' +
     'faceoff dot with an arrow into the corner that stops about five feet short of the puck; one ' +
     'holding the right half-wall as boards-side support; and one defender in front of the net, ' +
@@ -234,7 +234,7 @@ const loosePuckWhoGoes = {
     { id: 'F', pos: 'F', at: D2_GOER, label: 'goes hard' },
     { id: 'F', pos: 'F', at: 'half-wall:right', label: 'boards-side support' },
     // Triangle at the net front: this document's by-position table gives net-front
-    // coverage to the defenceman, and the glossary's house default puts the
+    // coverage to the defenceman, and the glossary's standard coverage puts the
     // weak-side defenceman there. Three and a half feet off the net-front node and
     // outside the crease (x=83 in the real dimensions), on the weak side — the
     // glossary is strict that the net front and the slot are two different layers
@@ -376,7 +376,7 @@ const screenSightline = {
     // technique/body_contact_and_battles.md as well as its owner — and that needs
     // rules-verifier and safety-reviewer, not a caption editor.
     'One instance of a relationship, not a place to stand. The shaded wedge is the line between ' +
-    'the puck at the right point and the goaltender, and the screen stands inside it with both ' +
+    'the puck at the right point and the goalie, and the screen stands inside it with both ' +
     'feet outside the crease. The wedge swings as the puck moves: stand where the goalie’s eyes ' +
     'are, not where the puck is going. ' +
     'Not drawn: keep your stick on the ice, because a screen ' +
@@ -412,7 +412,7 @@ const screenSightline = {
     TABLES_ALLOW_OUTSIDE +
     '. So keep both feet out of the paint, and off ' +
     CREASE_LINE_IS_THE_CREASE + '. Here ' +
-    '"screen" means the goaltender’s sightline and nothing else. ' +
+    '"screen" means the goalie’s sightline and nothing else. ' +
     // SAFETY. Owner's own wording, the "Never:" fact in
     // content/hockey-iq/playing_without_the_puck.md § "Screening the goaltender" — "Never: Meet a
     // goal post head first, and never duck. Head up, chin off your chest instead. A head-down,
@@ -431,11 +431,11 @@ const screenSightline = {
     'happen at walking speed.',
 
   describe:
-    'The attacking end zone, the opposition net at the right with its goaltender in the crease, ' +
+    'The attacking end zone, the opposition net at the right with its goalie in the crease, ' +
     'positioned on his angle. One of your players stands at the right point with the puck. A ' +
-    'narrow shaded wedge, labelled "the sightline", runs from the puck down to the goaltender, ' +
+    'narrow shaded wedge, labelled "the sightline", runs from the puck down to the goalie, ' +
     'widening as it goes. A second player of yours stands inside that wedge about eight feet in ' +
-    'front of the goaltender and clear of the crease. No routes are drawn: no shot, and no ' +
+    'front of the goalie and clear of the crease. No routes are drawn: no shot, and no ' +
     'movement.',
 
   zones: [
@@ -522,7 +522,7 @@ const widthMakesTheMiddle = {
     'a system.',
 
   describe:
-    'The attacking half of the sheet, the opposition net and goaltender at the right. Three of ' +
+    'The attacking half of the sheet, the opposition net and goalie at the right. Three of ' +
     'your forwards have just crossed the blue line: one carrying the puck up the middle with a ' +
     'route driving further into the zone, and one on each side near the boards, each behind the ' +
     'puck and each with a short route straight up the wall that keeps his width. Two opposition ' +
@@ -652,7 +652,7 @@ const driveTheNetBefore = {
     'The drive has to be genuine, so read the arrow as effort rather than as a path. It stops ' +
     'more than twenty feet short of the goalmouth and off the defender’s line on purpose: what ' +
     'happens ' +
-    'in the last few feet of a net drive is contact in front of a goaltender, which this picture ' +
+    'in the last few feet of a net drive is contact in front of a goalie, which this picture ' +
     'does not teach. No puck is drawn: the subject is the player who does not have it. ' +
     // SAFETY. The scope disclaimer above ("this picture does not teach") is not a warning when it
     // is read aloud, so the owner's own instruction follows it verbatim in substance:
@@ -663,7 +663,7 @@ const driveTheNetBefore = {
     'or the boards with an arm or a leg instead. Head up, chin off your chest, and never duck.',
 
   describe:
-    'The attacking half of the rink, the opposition net and goaltender at the right. One of your ' +
+    'The attacking half of the rink, the opposition net and goalie at the right. One of your ' +
     'forwards starts wide, at the top of the near faceoff circle, with a curved route driving in ' +
     'toward the net front that stops well short of it and to one side. One opposition defenceman ' +
     'stands in the high slot, level with the faceoff dots and just off the middle of the ice, ' +
@@ -706,13 +706,13 @@ const driveTheNetAfter = {
     'drive opens, and a teammate arriving into it late is how it gets cashed. ' +
     'Neither of the two players who matter here has the puck, so none is drawn. The drive does ' +
     'a third thing this picture cannot show — it makes a rebound and deflection threat, which ' +
-    'changes the goaltender’s depth and attention — and the shaded band names a piece of ice, ' +
+    'changes the goalie’s depth and attention — and the shaded band names a piece of ice, ' +
     'not a marking on a real rink. ' +
     'Only the defender who is pulled is drawn, because he is the only one the play fixes: read ' +
     'the arriving route as one instance and not as a place to stand.',
 
   describe:
-    'The attacking half of the rink, the opposition net and goaltender at the right, a beat after ' +
+    'The attacking half of the rink, the opposition net and goalie at the right, a beat after ' +
     'the previous diagram. The driver has arrived, standing more than twenty feet out from the ' +
     'goalmouth and to one side, where the previous frame’s route ended, and he has no route now. ' +
     'The opposition defenceman who was in the high slot has come down with him and now stands ' +
@@ -876,7 +876,7 @@ const legalRouteThroughTraffic = {
     'into the space he is standing in. That is a coaching caution, not a rulebook requirement.',
 
   describe:
-    'The attacking end zone, the opposition net and goaltender at the right. Three skaters, all ' +
+    'The attacking end zone, the opposition net and goalie at the right. Three skaters, all ' +
     'on the weak side of the ice and none of them near the net front. One of your forwards ' +
     'stands low, about ten feet off the boards and below the faceoff dot, with a curved route ' +
     'running up the ice and in toward the middle: it passes outside a second forward of yours ' +

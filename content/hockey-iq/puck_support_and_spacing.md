@@ -278,7 +278,7 @@ Two things trip people up:
 ```facts
 Convention: Somebody above the puck, in every zone — a coaching convention, and benches suspend it on a called full-ice press, a delayed penalty or a 6-on-5
 Goal: One player is not part of the attack; they are the insurance against the attack failing
-Convention: Under the house default — low zone collapse, 2-1-2 forecheck — both defencemen hold the points unless one activates
+Convention: Under this guide's standard system — low zone collapse, 2-1-2 forecheck — both defencemen hold the points unless one activates
 Options: A 1-2-2 puts two forwards above as a layered wall; a single-high structure makes the weak-side winger the safety
 Action: Before you go below the puck, know who is above it
 Key: F1, F2 and F3 are roles defined by order of arrival, not fixed people
@@ -288,7 +288,7 @@ Key: F1, F2 and F3 are roles defined by order of arrival, not fixed people
 
 Who it is depends on the system:
 
-- Under the **house default** — a low zone collapse in your own end and a 2-1-2 forecheck — both defencemen hold the points in the offensive zone unless one deliberately activates, and the third forward supports high. **F1, F2 and F3 are roles by order of arrival, not fixed people.**
+- Under the **standard system** — a low zone collapse in your own end and a 2-1-2 forecheck — both defencemen hold the points in the offensive zone unless one deliberately activates, and the third forward supports high. **F1, F2 and F3 are roles by order of arrival, not fixed people.**
 - Under a **1-2-2 forecheck**, the deepest forward is alone below the puck and two forwards sit above as a layered wall.
 - In a **single-high** structure one defenceman may walk the line and the weak-side winger becomes the safety. Other teams insist both defencemen hold.
 
@@ -392,7 +392,7 @@ Action: Ask to be filmed — spacing is the one thing you cannot self-assess in 
 ```
 
 - **Ask one question.** Every time the puck moves, ask *"who is closest?"* If it is not you, your job is the space, not the puck.
-- **Know how many of you are meant to pressure — it is not always one.** The habit to break is *everybody* converging. Under a **1-2-2** one forward pressures; under the house-default **2-1-2** two go deep on purpose and F3 reads behind them; man-to-man in your own end is different again. See [Forechecking Systems](../systems/forechecking_systems.md) and [Playing Without the Puck](playing_without_the_puck.md). The number is **decided, not improvised**, so learn your role before you move.
+- **Know how many of you are meant to pressure — it is not always one.** The habit to break is *everybody* converging. Under a **1-2-2** one forward pressures; under this guide's standard **2-1-2** two go deep on purpose and F3 reads behind them; man-to-man in your own end is different again. See [Forechecking Systems](../systems/forechecking_systems.md) and [Playing Without the Puck](playing_without_the_puck.md). The number is **decided, not improvised**, so learn your role before you move.
 - **Skate to where the puck will come out, not where it is.** From a corner battle it emerges up the wall or behind the net, so go to one of those. See [Scanning and Anticipation](scanning_and_anticipation.md).
 - **Use small-area games.** Cross-ice and half-ice games punish crowding at once, so the habit breaks itself. See [Practice and Development](../off-the-ice/practice_and_development.md).
 - **Ask to be filmed.** You cannot see your own spacing in the moment.
@@ -439,12 +439,12 @@ The weak-side winger, higher and wider than everyone, adds the width that stops 
 **What it costs.**
 
 - **Icing (NHL Rule 81):** play stops, the faceoff comes back to your end, and your line may not change before it. The only exceptions in Rule 81.4 are a substitution *"to replace a goalkeeper who had been substituted for an extra attacker, to replace an injured player, or when a penalty has been assessed which affects the on-ice strength of either team"* — so a hurt teammate can come off, a tired one cannot. Rule 87.1 bars a timeout too. The IIHF's 81.4 adds *"a Player with a broken skate"*, which its own Rule 82.1 does not carry; do not plan a change around it. CARHA bars no change after an icing, but icing it again and again on purpose to force faceoffs can be called as delaying the game there: a bench minor (Rule 55(a), Note 2).
-- **The shorthanded exemption is not unconditional.** A shorthanded team may ice the puck without a whistle, but NHL Rule 81.6 withdraws that once a *major* has **expired** with nobody on the penalty bench to come out, until the next stoppage. USA Hockey grants it only from Youth 15-Only, Girls 16U, High School and Adult upward (Rule 624(b)(1)), so below those a shorthanded team can be called for icing. [Special Teams](../systems/special_teams.md) sets out both, with the reason Rule 20.3 gives for the first.
+- **The shorthanded exemption is not unconditional.** A shorthanded team may ice the puck without a whistle, but NHL Rule 81.6 withdraws that once a *major* has **expired** with nobody on the penalty box to come out, until the next stoppage. USA Hockey grants it only from Youth 15-Only, Girls 16U, High School and Adult upward (Rule 624(b)(1)), so below those a shorthanded team can be called for icing. [Special Teams](../systems/special_teams.md) sets out both, with the reason Rule 20.3 gives for the first.
 - **Trapezoid:** under NHL and IIHF rules a goalie who plays the puck behind the goal line outside the trapezoid takes a two-minute delay-of-game minor (NHL Rules 1.8, 27.8 and 63.2(viii); IIHF Rules 1.8 and 27.7). The only exception is keeping skate contact with the crease; there is no teammate exception. The KHL is commonly said to match, but that is unverified here: no KHL rulebook was available.
 - **No trapezoid:** the *USA Hockey Playing Rules 2025-29* (Rule 610), the *Hockey Canada Playing Rules 2026-2028* (Rule 10.1) and CARHA's book mark none and do not limit where a goalie plays the puck. **In the PWHL, do not count on it:** Rules 1.8 and 27.8 switch the trapezoid off (*"The PWHL does not apply a restricted area for goalkeepers"*), but Rule 65.2(viii) still writes the minor for playing the puck *"outside of the designated area behind the net"*.
 - **Freezing is restricted everywhere.** USA Hockey Rule 614(c) makes it a minor to freeze the puck outside the *"goalkeeper's privileged"* area, which excludes the corners. Hockey Canada's Interpretation 3 to Rule 10.1(a) is stricter: once out of the crease *"they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. **No warning will be issued.**"* CARHA Rule 58(b) and PWHL Rule 65.2(i) also make a freeze behind the net, goalie out of the crease, a minor. How much rec, beer-league and youth hockey runs on the USA Hockey and Hockey Canada books is a question about leagues, and this document has no count for it.
 
-**🇬🇧 In Britain, play as though the restricted area binds.** Nothing the Elite League publishes switches it off — its Casebook adopts the 2026-27 IIHF book — and the In-House Rules leave IIHF Rule 27 unamended. England Ice Hockey's *Rules & Regulations* 22.3 call it *"not currently enforced"*, so in its own competitions it is unsettled. **Keep your goaltender inside the area and ask your league.** It costs nothing, and the alternative is two minutes. [UK and England Rules](../foundation/uk_rules.md) has the detail.
+**🇬🇧 In Britain, play as though the restricted area binds.** Nothing the Elite League publishes switches it off — its Casebook adopts the 2026-27 IIHF book — and the In-House Rules leave IIHF Rule 27 unamended. England Ice Hockey's *Rules & Regulations* 22.3 call it *"not currently enforced"*, so in its own competitions it is unsettled. **Keep your goalie inside the area and ask your league.** It costs nothing, and the alternative is two minutes. [UK and England Rules](../foundation/uk_rules.md) has the detail.
 
 ### Neutral zone — three lanes
 
@@ -484,7 +484,7 @@ Keep **someone below the puck, someone level with it and someone above it** at a
 
 **When you leave a layer, someone fills it.** That is the rotation, and amateur teams skip it. The *layer* must stay occupied, not your spot.
 
-[Offensive Zone Play §3, "Offensive Zone Structure"](../systems/offensive_zone_play.md) has the full treatment and the alternatives to the house default. Rotation rules are a coaching choice that changes who may go below the puck, so **ask which your team plays.**
+[Offensive Zone Play §3, "Offensive Zone Structure"](../systems/offensive_zone_play.md) has the full treatment and the alternatives to the standard five-man setup. Rotation rules are a coaching choice that changes who may go below the puck, so **ask which your team plays.**
 
 ---
 
@@ -599,7 +599,7 @@ To make the layer a real position:
 
 **Layering is almost always correct.** It sits inside every named defensive system: F1 pressures while F2 supports and reads the escape; in your own zone the next player covers the lane behind the pressure; a penalty-killing box (two forwards high, two defencemen low) or diamond (a single apex) covers the pass behind whoever steps up.
 
-**The exception is a deliberate double-team**, a coaching decision rather than a default. Many teams send two players at a puck on the boards *below their own goal line*, where the net and boards contain a turnover. Under the house default, the second player supports rather than doubling except there. **Ask your coach where and when you may double** — freelancing it is how backdoor goals happen.
+**The exception is a deliberate double-team**, a coaching decision rather than a default. Many teams send two players at a puck on the boards *below their own goal line*, where the net and boards contain a turnover. Under the standard coverage, the second player supports rather than doubling except there. **Ask your coach where and when you may double** — freelancing it is how backdoor goals happen.
 
 **Going in does not change how you arrive:** on an angle, feet apart, knees bent, **skates parallel to the wall**, **forearm and hip to the wall** and never the point of your shoulder, head up, chin off your chest, and **never turn your back to the checker, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet. A push from behind into the boards is checking from behind even where body checking is not allowed, and in most books it ends your game. [Body Contact and Battles §6, Receiving a Hit Safely](../technique/body_contact_and_battles.md) is the full treatment.
 

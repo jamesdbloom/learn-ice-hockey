@@ -343,7 +343,7 @@ const stepUp = {
     'the neutral zone. Pinching is the other play and it happens at the other blue line, and the ' +
     'two being confused is what this picture is drawn against. What it is really about is the ice ' +
     'behind the defenceman who has gone. There is nobody at all between him and his own ' +
-    'goaltender, and his partner is across on the far side with a second attacker already wide of ' +
+    'goalie, and his partner is across on the far side with a second attacker already wide of ' +
     'him — so a step-up that misses does not cost a stride, it leaves that partner alone in a ' +
     'two-on-one. So step up only when you are confident you can win the puck or force a turnover: ' +
     'confidence, not hope. How aggressive confident should be is a coaching choice rather than a ' +
@@ -390,7 +390,7 @@ const stepUp = {
     'in it is a licence to hit.',
 
   describe:
-    'The defending half of the rink, your own net at the right, your goaltender in his ' +
+    'The defending half of the rink, your own net at the right, your goalie in his ' +
     'crease. Your own blue line runs across the picture near the left-hand edge. One of ' +
     'your defencemen is a few feet inside that line on the near side, labelled "you", and ' +
     'his route runs forward and out across the line toward an oncoming opposition forward, ' +
@@ -400,7 +400,7 @@ const stepUp = {
     'the neutral-zone faceoff dot there, with no route. Your other defenceman, labelled ' +
     '"partner", is well back on that far side, between the blue line and the top of the ' +
     'faceoff circle. The whole of the ice between the stepping-up defenceman and his own ' +
-    'goaltender is empty: no third defender, no backchecker, nobody.',
+    'goalie is empty: no third defender, no backchecker, nobody.',
 
   players: [
     // ⚠️ LABELLED because `defender-step-up` and the borrowed `pinch-centre-high` sit TWO
@@ -524,7 +524,7 @@ const holdingTheLine = {
     'forechecker’s route ends in two bars, meaning arrive and contain.',
 
   describe:
-    'The full two-hundred-foot sheet, your own goal at the left with your goaltender in ' +
+    'The full two-hundred-foot sheet, your own goal at the left with your goalie in ' +
     'his crease, and your team attacking to the right. Two of your defencemen stand on ' +
     'your own blue line, one on each side of the middle of the ice, each about eleven feet ' +
     'off the centre of the sheet and so well inside the two neutral-zone faceoff dots. ' +
@@ -667,7 +667,7 @@ const pairOverview = {
     'which your team plays.',
 
   describe:
-    'The defending half of the rink, your own net at the right, your goaltender in his ' +
+    'The defending half of the rink, your own net at the right, your goalie in his ' +
     'crease. One opposition forward is deep in the right corner with a loose puck between them. Your ' +
     'strong-side defenceman is beside him, contesting the puck. Your weak-side ' +
     'defenceman is on the opposite side of the net from the corner, at the goalmouth, ' +

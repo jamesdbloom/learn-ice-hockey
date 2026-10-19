@@ -488,7 +488,7 @@ const defensiveZoneSupport = {
     'the same side; and the defence partner on ' +
     'the far side, reached behind the net and below the goal line, never through the slot. ' +
     'In your own end the safe outlet outranks the attacking option. ' +
-    'Your goaltender has the best view on the ice and no puck to look at, so they are part of this ' +
+    'Your goalie has the best view on the ice and no puck to look at, so they are part of this ' +
     'structure as a voice whatever your league does about the trapezoid.',
 
   describe:
@@ -498,7 +498,7 @@ const defensiveZoneSupport = {
     'dot, one to the centre low in the middle of the zone, and one back across behind the net and below ' +
     'the goal line to the defence partner. A solid route shows the centre swinging low through the middle ' +
     'and curling back toward the strong side. The weak-side winger stands high and wide on the far ' +
-    'boards, above the faceoff dots. The goaltender is in the crease. No opposition players are drawn.',
+    'boards, above the faceoff dots. The goalie is in the crease. No opposition players are drawn.',
 
   players: [
     { id: 'G',  pos: 'G', at: 'crease' },

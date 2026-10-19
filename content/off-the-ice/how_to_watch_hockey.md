@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Forechecking Systems](../systems/forechecking_systems.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Offensive Zone Play](../systems/offensive_zone_play.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [Zone Entries](../systems/zone_entries.md) · [Breakouts](../systems/breakouts.md) · [Faceoffs](../systems/faceoffs.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Practice and Development](practice_and_development.md) · [Center](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md) · [UK and England Rules](../foundation/uk_rules.md)
+> **Related:** [Forechecking Systems](../systems/forechecking_systems.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Offensive Zone Play](../systems/offensive_zone_play.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [Zone Entries](../systems/zone_entries.md) · [Breakouts](../systems/breakouts.md) · [Faceoffs](../systems/faceoffs.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Practice and Development](practice_and_development.md) · [Centre](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Key focus
 
@@ -17,7 +17,7 @@
 
 **Watch every entry at the blue line.** Carried in, dumped in or turned over, and where was the defender's gap? Games are decided there and almost nobody watches it.
 
-**After a shot, watch the net front, not the replay.** The player who stopped just outside the crease, stick down and clear of the goaltender, and moved first usually gets the rebound.
+**After a shot, watch the net front, not the replay.** The player who stopped just outside the crease, stick down and clear of the goalie, and moved first usually gets the rebound.
 
 **Watch live for structure and television for technique.** When you are there to learn, sit as high as you can.
 
@@ -37,7 +37,7 @@ The blue line deserves special attention: public tracking research found that **
 
 Live, sit high and the ice becomes a diagram; television shows hands and feet and hides four players. Then film yourself and watch what you do without the puck, and take one thing to practice.
 
-Statistics come last, because they are mostly misread. Shot-attempt counts measure territory, not quality; expected goals prices quality but has no standard definition; and for goaltenders, goals saved above expected beats save percentage, which beats goals-against average.
+Statistics come last, because they are mostly misread. Shot-attempt counts measure territory, not quality; expected goals prices quality but has no standard definition; and for goalies, goals saved above expected beats save percentage, which beats goals-against average.
 
 ---
 
@@ -123,7 +123,7 @@ Sit and count, over five or six sequences:
 | One deep, three across the neutral zone | **1-3-1**, often a trap posture |
 | Three forwards below the circles | **3-2** or a full-pressure forecheck, usually late and chasing a goal |
 
-Two of those systems are drawn in [Forechecking Systems](../systems/forechecking_systems.md), against the same puck carrier: two forwards below the top of the circles in the first, one in the second. (In [the diagram key](../reading-diagrams/reading_ice_hockey_diagrams.md), a circle is a forward, a triangle a defenceman, **G** the goaltender, and the unfilled shapes are the team the picture is drawn for — not the same team in every picture below.)
+Two of those systems are drawn in [Forechecking Systems](../systems/forechecking_systems.md), against the same puck carrier: two forwards below the top of the circles in the first, one in the second. (In [the diagram key](../reading-diagrams/reading_ice_hockey_diagrams.md), a circle is a forward, a triangle a defenceman, **G** the goalie, and the unfilled shapes are the team the picture is drawn for — not the same team in every picture below.)
 
 **The next two captions are written for the forechecker, not for you in the stands**; their body-checking law belongs to [Forechecking Systems](../systems/forechecking_systems.md). From a seat, read only the count and the depth.
 
@@ -141,7 +141,7 @@ This is the most reliable read in hockey, and it takes about ninety seconds.
 
 **The question: when the puck goes into the corner in their own end, does the defending winger follow their man down into the corner?**
 
-- **If the winger stays high, on the opposing point just inside the blue line, and never follows a body below the hash marks** — they play a **zone** system, most commonly a **low zone collapse**. ("High" means *on the point*, not down at the faceoff dot, a shade under 44 feet away on an NHL sheet; [Rink Map](../foundation/rink_map.md) has the figures. Confusing the two is how people misread the system.) In a collapse the low three — usually both defencemen and the centre — sink to defend the front of the net, while the wingers guard the points and high slot. You defend the area you are standing in. This is the **house default assumed throughout**. It is often called the most common amateur system because it is easiest to teach, **but that is coaching consensus; no survey of amateur systems was found.**
+- **If the winger stays high, on the opposing point just inside the blue line, and never follows a body below the hash marks** — they play a **zone** system, most commonly a **low zone collapse**. ("High" means *on the point*, not down at the faceoff dot, a shade under 44 feet away on an NHL sheet; [Rink Map](../foundation/rink_map.md) has the figures. Confusing the two is how people misread the system.) In a collapse the low three — usually both defencemen and the centre — sink to defend the front of the net, while the wingers guard the points and high slot. You defend the area you are standing in. This is the **standard coverage assumed throughout**. It is often called the most common amateur system because it is easiest to teach, **but that is coaching consensus; no survey of amateur systems was found.**
 - **If the winger follows their man everywhere, including into the corner and behind the net** — they play **man-to-man**.
 - **If the winger follows their man only until the man leaves the winger's area, then hands off** — they play a **hybrid**, sometimes called man-on, zone-off or **collapsing man**.
 
@@ -299,10 +299,10 @@ The half-second after a shot is the highest-value moment in the game, and the on
 - **Where is the net-front attacker?** Stopped just outside the crease with their stick on the ice, or drifting past?
 - **Does anyone follow the shot?** A point shot with no forward arriving is a free clear for the defence.
 - **Which team reacts to the rebound first?** Rebound goals go to whoever moved before the puck landed.
-- **Is the far post covered?** Under the house-default low zone collapse it is the weak-side defenceman's; under man-to-man it belongs to whoever's check went there. **The person changes with the system; the requirement does not.** Not chasing the puck is a learned skill. See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
-- **On a save, does the goaltender freeze it, direct it to the corner, or leave it in the slot?** Directing rebounds is a skill, not luck. See [Goaltender](../positions/goaltender.md).
+- **Is the far post covered?** Under the standard low zone collapse it is the weak-side defenceman's; under man-to-man it belongs to whoever's check went there. **The person changes with the system; the requirement does not.** Not chasing the puck is a learned skill. See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
+- **On a save, does the goalie freeze it, direct it to the corner, or leave it in the slot?** Directing rebounds is a skill, not luck. See [Goaltender](../positions/goaltender.md).
 
-[Goaltender](../positions/goaltender.md) draws where a rebound must not land. **That caption is written for the goaltender**; from a seat, watch where the puck ends up and who moved first.
+[Goaltender](../positions/goaltender.md) draws where a rebound must not land. **That caption is written for the goalie**; from a seat, watch where the puck ends up and who moved first.
 
 ![](diagram:goalie-rebound-corners-not-slot)
 
@@ -328,7 +328,7 @@ Best of all is high **behind the net rather than at centre ice**, which makes ga
 ### Television is far better for detail
 
 - **Replays.** The five seconds before the goal, again, from another angle — Exercise 4.
-- **Slow motion.** For hands on a shot, a goaltender's push, or when a defender's hips turn.
+- **Slow motion.** For hands on a shot, a goalie's push, or when a defender's hips turn.
 - **Pause and rewind.** Pause as a pass is released and ask what the passer could see.
 - **Camera angles.** Overhead and end-zone cameras sometimes come close to the live view.
 - **Commentary and telestration** — sometimes instructive; treat it as one opinion.
@@ -385,19 +385,19 @@ Spend a period on your own position. Then pick another, because knowing what the
 
 ### Watching a centre
 
-The centre's job spans all three zones and the full width of the rink, and connects every system — coaching craft, since no measurement of ice coverage by position was found. (Centres are also often said to *skate* furthest. No study splits centres from wingers, but the forwards-versus-defence comparison points the other way: Lignell et al. (2018), tracking 36 NHL players through one game, found defencemen skated **29% more** in total and were on the ice **47% longer**, with forwards doing **54% more** high-intensity skating per minute. [Center](../positions/center.md) carries the citation.)
+The centre's job spans all three zones and the full width of the rink, and connects every system — coaching craft, since no measurement of ice coverage by position was found. (Centres are also often said to *skate* furthest. No study splits centres from wingers, but the forwards-versus-defence comparison points the other way: Lignell et al. (2018), tracking 36 NHL players through one game, found defencemen skated **29% more** in total and were on the ice **47% longer**, with forwards doing **54% more** high-intensity skating per minute. [Centre](../positions/center.md) carries the citation.)
 
 Watch for:
 - **Low support in the defensive zone.** In a low zone collapse the centre works between the net front and the corners, never fully committing to either.
 - **The curl on the breakout.** Low swing, receive with speed — and where do they look first?
 - **The second after the draw.** The follow-up is a bigger part of faceoff value than the draw itself.
-- **The backcheck.** The centre is usually the first forward back. Watch the lane, but do not grade it: **which backchecker owns which lane is a coaching choice.** The default in this guide gives the centre the middle; other teams give it to whoever is first back, or go man-on-man. What every version needs is that somebody owns the middle, so watch whether anybody does. See [Center](../positions/center.md) and [Defending the Rush](../systems/defending_the_rush.md).
+- **The backcheck.** The centre is usually the first forward back. Watch the lane, but do not grade it: **which backchecker owns which lane is a coaching choice.** The default in this guide gives the centre the middle; other teams give it to whoever is first back, or go man-on-man. What every version needs is that somebody owns the middle, so watch whether anybody does. See [Centre](../positions/center.md) and [Defending the Rush](../systems/defending_the_rush.md).
 
 The three lanes are drawn in [Defending the Rush](../systems/defending_the_rush.md). The most dangerous attacker is not the carrier but the one driving the middle lane without the puck, who gets missed because the puck is elsewhere — the clearest case of what the camera will not show you.
 
 ![](diagram:rush-backcheck-lanes)
 
-See [Center](../positions/center.md).
+See [Centre](../positions/center.md).
 
 ### Watching a winger
 
@@ -429,7 +429,7 @@ The three depths are drawn in [Defender](../positions/defender.md), with the ban
 
 See [Defender](../positions/defender.md).
 
-### Watching a goaltender
+### Watching a goalie
 
 Goaltending is the hardest position to watch, because the interesting part happens before the shot.
 
@@ -477,7 +477,7 @@ Numbers let you watch hockey when you cannot be at the rink. They are also the f
 
 **Plus/minus.** A player's on-ice goal differential. On an even-strength or shorthanded goal, every skater on the ice for the scoring team gets a plus and every skater for the conceding team a minus. **Power-play goals count for neither side.** Empty-net goals count as even strength unless the scorers are on the power play; penalty-shot goals are excluded. The Montreal Canadiens used it internally before the league adopted it, and **the adoption date is contested** — 1959-60 in the Wikipedia article cited below, 1967-68 elsewhere, with no primary NHL source to settle it.
 
-- *Why it is criticised:* every goal weighs the same; it depends heavily on teammates, goaltender and opposition; it ignores power-play play but counts shorthanded play; it swings with shooting and save-percentage luck; and it cannot tell the player who caused a goal from one who was merely on the ice. A fourth-liner on a great team can beat a first-liner carrying a bad one.
+- *Why it is criticised:* every goal weighs the same; it depends heavily on teammates, goalie and opposition; it ignores power-play play but counts shorthanded play; it swings with shooting and save-percentage luck; and it cannot tell the player who caused a goal from one who was merely on the ice. A fourth-liner on a great team can beat a first-liner carrying a bad one.
 - *Use it for:* essentially nothing on its own. For on-ice goal differential, use a rate-based, situation-filtered version.
 
 **Penalty minutes (PIM).** Total minutes of penalties assessed.
@@ -645,7 +645,7 @@ Only half an hour? Cut the professional hockey and keep your own footage. That i
 - **Watching only players who play like you.** Spend a period on a player in your position whose choices puzzle you, then one on the position beside yours.
 - **Sitting as close to the ice as possible.** When you are there to learn, sit high, ideally behind a net. The front row is for atmosphere.
 - **Grading a player against a system you have assumed.** Work out the system first, then judge the player. A centre coming back along the boards, a winger holding high, or a defenceman who never goes below the circles may each be doing what their team asks.
-- **Looking up at the replay the moment a shot is taken.** Keep your eyes on the net front. In your own game, be that player: stop just outside the crease, stick on the ice and clear of the goaltender, first to the puck when it comes out.
+- **Looking up at the replay the moment a shot is taken.** Keep your eyes on the net front. In your own game, be that player: stop just outside the crease, stick on the ice and clear of the goalie, first to the puck when it comes out.
 - **Assuming what a professional team does is what your team wants.** Ask. Almost every "always do X" on TV is "in this team's system, in this score state, do X."
 - **Skipping to your own touches on video.** Watch each shift from step-on to sit-down. Your touches are only about 3–4% of your 5-on-5 ice time, by NHL tracking the league calls unofficial.
 - **Watching without taking anything to practice.** End every session with one sentence: the one thing you will try next.
@@ -688,7 +688,7 @@ Only half an hour? Cut the professional hockey and keep your own footage. That i
    measured — and what are the three questions to ask of each shift instead?
    *(§The protocol for reviewing your own shifts)*
 
-8. Two goaltenders post identical save percentages. Which measure would tell you
+8. Two goalies post identical save percentages. Which measure would tell you
    which of them actually played better, and what does that measure not know?
    *(§Goaltending: save percentage versus goals saved above expected)*
 
@@ -700,13 +700,13 @@ Only half an hour? Cut the professional hockey and keep your own footage. That i
 4. **Watch live for systems and TV for technique.** To learn, sit as high as you can, ideally behind a net.
 5. **Watch every blue-line entry.** Carried, dumped or turned over? Where was the defender's gap? At 5-on-5, carrying it in produced roughly twice the offence of dumping it.
 6. **On a breakout, look away from the retriever and find the other four.** Then ask of your own game: when your defenceman goes back for the puck, are you a pass they can make?
-7. **After a shot, watch the net front, not the replay.** In your own game, get there, stop just outside the crease, stick down and clear of the goaltender, and be first to the puck.
+7. **After a shot, watch the net front, not the replay.** In your own game, get there, stop just outside the crease, stick down and clear of the goalie, and be first to the puck.
 8. **Watch your whole shift, not your touches.** The two seconds after your team loses the puck are what separate good players.
 9. **Watch your own position for a period, then the one beside it.** What a team asks of each player is a coaching choice, so learn what this team wants before you judge.
 10. **Convert every total to a per-60 rate before comparing players.** Time on ice is the coach's own opinion of a player, and the denominator every other number needs.
 11. **Never judge a defender by plus/minus.** It depends on teammates and goaltending, ignores power-play goals, and cannot tell who caused a goal.
 12. **Prefer expected goals to Corsi, and check whose model it is.** Two sites will give different xG for the same game.
-13. **Judge goaltenders by GSAx, then save percentage, then goals-against average.** Before believing a hot streak, check PDO, and treat it as a flag, not a verdict.
+13. **Judge goalies by GSAx, then save percentage, then goals-against average.** Before believing a hot streak, check PDO, and treat it as a flag, not a verdict.
 14. **Give every number its context:** denominator, strength state, sample, teammates, score, model, and the eye test.
 15. **Spend a deliberate hour a week, and end it with one thing to try at practice.**
 

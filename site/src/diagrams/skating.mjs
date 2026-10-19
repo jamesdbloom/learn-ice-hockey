@@ -279,7 +279,7 @@ const pivotTowardTheBoards = {
     'not grade it the same way. Nothing in this picture shows contact.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right with our goaltender in its ' +
+    'The defensive half of the rink, the net being defended at the right with our goalie in its ' +
     'crease. Two skaters. An opposition forward, a solid circle, is in the neutral zone three feet ' +
     'outside the blue line and wide, toward the side drawn at the top of the picture, with the puck ' +
     'a small solid dot about seven and a half feet from him, ahead of him and nearer the boards. Our ' +

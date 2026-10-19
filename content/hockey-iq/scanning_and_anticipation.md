@@ -6,7 +6,7 @@
 
 ## Key focus
 
-**Take at least one look before the puck reaches you, and have your eyes back on it when it lands.** The seconds while a pass travels are free looking time. A goaltender is the reverse: once a shot is released, never look away.
+**Take at least one look before the puck reaches you, and have your eyes back on it when it lands.** The seconds while a pass travels are free looking time. A goalie is the reverse: once a shot is released, never look away.
 
 **Decide while the puck is still travelling.** Name your first option and your bail-out in a word — *"up the wall"*, *"reverse"* — and let the last look cancel a stale plan. A second-best play made now beats the perfect play made late.
 
@@ -20,7 +20,7 @@
 
 **Read a passer by the front shoulder and blade, and a shooter by the hands and weight.** Pressure a passer who received without looking. A shooter with weight still back is not shooting yet — get your feet into the lane, head out of it, rather than lunging.
 
-**Play where the puck will be next.** Arrive at the net moving, just outside the crease and off the goaltender, blade out of the paint, expecting the rebound. In a battle you will probably lose, go to where the loose puck will squirt out.
+**Play where the puck will be next.** Arrive at the net moving, just outside the crease and off the goalie, blade out of the paint, expecting the rebound. In a battle you will probably lose, go to where the loose puck will squirt out.
 
 **Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a passing lane only on a real cue, with support behind you, arriving with your feet — never as the last player back or in your own zone.
 
@@ -30,7 +30,7 @@
 
 Players who seem to see the whole ice have usually just looked already, while the puck was somewhere else.
 
-**Timing is what matters.** A look taken while a pass travels to you costs nothing, because your eyes have no other job. A look taken after the puck lands costs possession time, and the picture changes while you look. So a calm player and a rushed player usually differ in when they looked, not in their hands. **Goaltenders are the exception**: they look off the puck before a shot, then track it all the way in — see [Goaltender](../positions/goaltender.md).
+**Timing is what matters.** A look taken while a pass travels to you costs nothing, because your eyes have no other job. A look taken after the puck lands costs possession time, and the picture changes while you look. So a calm player and a rushed player usually differ in when they looked, not in their hands. **Goalies are the exception**: they look off the puck before a shot, then track it all the way in — see [Goaltender](../positions/goaltender.md).
 
 **Looking at all is what has been measured.** In 2,545 receptions by Swedish professionals, the next action succeeded 78.8% of the time after a look and 70.1% without. The study cannot say how often to look, and its authors say so. Clear the bar of one look, then work on what you see.
 
@@ -49,7 +49,7 @@ Players who seem to see the whole ice have usually just looked already, while th
 ```facts
 Key: Players who look like they see the whole ice have almost always simply already looked
 Action: Look while the puck is being retrieved, again as the passer's head comes up, and once more just before it arrives
-Priority: Looks taken while the puck is travelling are free; looks taken after it arrives are paid for in possession time — except a goaltender once a shot is released, who then never looks away
+Priority: Looks taken while the puck is travelling are free; looks taken after it arrives are paid for in possession time — except a goalie once a shot is released, who then never looks away
 Goal: Decide before the puck arrives — a decision started afterwards takes about as long as a forechecker needs to reach you
 Mindset: Scanning costs no fitness, no ice time and no talent — the whole input is remembering to turn your head
 ```
@@ -159,7 +159,7 @@ Convention: The scan counts in this section are coaching craft — nobody has va
 
 Ranked by value. **The scan counts below are coaching craft**: nobody has validated an ideal number for any of these moments, for the same reason Berg's team cannot say whether more scanning beats less. They make the ranking concrete enough to practise, and a coach's different numbers are equally well founded.
 
-1. **Before the puck comes to you.** The highest-value moment. As soon as the puck is likely to reach you — a teammate retrieving it, a teammate's head coming up, a loose puck you are closest to — you have one to three seconds when your eyes have no other job. Take two or three looks, finishing with your eyes back on the puck. ⚠️ **This is written for the player about to receive a pass.** A goaltender has the opposite job once a shot is released, and does not look away from it — see [Goaltender](../positions/goaltender.md).
+1. **Before the puck comes to you.** The highest-value moment. As soon as the puck is likely to reach you — a teammate retrieving it, a teammate's head coming up, a loose puck you are closest to — you have one to three seconds when your eyes have no other job. Take two or three looks, finishing with your eyes back on the puck. ⚠️ **This is written for the player about to receive a pass.** A goalie has the opposite job once a shot is released, and does not look away from it — see [Goaltender](../positions/goaltender.md).
 2. **While the puck is on the other side of the ice.** The most wasted time in hockey, and your hands are free. Find who is near you, the seam behind you and the net-front threat. Players who do this "always seem to be in the right place".
 3. **On the backcheck.** A **backcheck** is racing back to your own end after losing the puck; a **forecheck** is pressuring in the *opponent's* end. Watch only the puck on the way back and you arrive with no idea who came with you. Look over your inside shoulder — the one nearer the middle of the ice — at least twice, and count *opponents*, not pucks.
 4. **Before you receive on the wall.** Coaches single this one out — an emphasis, not a counted ranking: half your escape routes are boards and glass, and one blind side is behind you. Take two looks — an early one for your options, a late one to see whether they still exist. **⚠️ And looking is only half of it: the eyes do not save you if the body is wrong.** A wall reception means contact with the boards, and your posture decides the cost. **Never turn your back to the checker, and never duck.** Come in on an angle, feet apart, knees bent, **skates parallel to the wall**, forearm and hip to the wall, head up, chin off your chest — not the point of your shoulder, and not the whole shoulder if you can help it. Already facing the wall and cannot turn? That is damage limitation, not a position to aim for: stick and gloves up and spread on the glass, the impact spread as wide as you can, no head contact at all. Full treatment in [Body Contact and Battles](../technique/body_contact_and_battles.md); the same override sits on the "man on" call in [On-Ice Communication](../foundation/on_ice_communication.md).
@@ -185,7 +185,7 @@ Priority: Scan in this order — pressure on you, then your outlet options, then
 Read: Which side pressure arrives on, and how fast it is closing — their speed and angle matter more than their distance
 Options: Know your first option, your support option and your safe out before the puck arrives
 Read: In your own end, ask who scores if the puck goes to the net right now — usually the net front or the high slot
-Convention: Your eyes follow your system — the house-default low zone collapse alternates puck and nearest danger, man-to-man does not; find out which you play
+Convention: Your eyes follow your system — this guide's standard low zone collapse alternates puck and nearest danger, man-to-man does not; find out which you play
 Convention: The "anchor on the puck carrier" cue is imported from eye-tracking five footballers — a strong hint, not a hockey measurement
 ```
 
@@ -207,13 +207,13 @@ Take the information in this order, because it is the order in which it can hurt
 
 **3. The danger you are responsible for.** Everything above is about you. This is about the goal. In your own end, the question is: *if the puck goes to the net right now, who scores?* Usually that is a body at the net front — the immediate area in the goalmouth — or a player sneaking into the **high slot** (the area from the faceoff dots up to the top of the circles).
 
-Where your eyes go depends on your system. **The house default is a low zone collapse — the skaters sag toward the net and take whoever comes into their area.** Under a collapse, alternate between the puck and the most dangerous body near you. Under **strict man-to-man**, your assignment gets far more of your looks. Under a **hybrid** — man-on-man low, zone up high — it depends where you stand. **Find out which your team plays.** See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
+Where your eyes go depends on your system. **This guide's standard coverage is a low zone collapse — the skaters sag toward the net and take whoever comes into their area.** Under a collapse, alternate between the puck and the most dangerous body near you. Under **strict man-to-man**, your assignment gets far more of your looks. Under a **hybrid** — man-on-man low, zone up high — it depends where you stand. **Find out which your team plays.** See [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
 
 ![](diagram:scan-the-danger-in-your-own-end)
 
 **4. The space you could move into.** Last because it is the one you can afford to be wrong about, not because it is unimportant. Where is the empty ice now, and where will it be in two seconds? This is what makes a competent player dangerous — see [Time and Space](time_and_space.md) and [Playing Without the Puck](playing_without_the_puck.md).
 
-**What the safe out costs.** From your own zone, a puck that flies straight out over the glass is a delay-of-game minor in the NHL, the IIHF and the PWHL even when you did not mean it (Rule 63.2(iii); PWHL 65.2(iii)), and one put out on purpose is a minor in every book. Shorthanded icing is not always allowed: USA Hockey grants the exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)). Under NHL Rule 81.6 a penalty-killing team loses it the moment a *major* **expires** with nobody on the penalty bench to come out, until the next stoppage, when they may put a player in. **The trigger is the expiry, not the kill** — an empty box earlier in the major does not do it; the exemption goes because they are now a player short *without* being shorthanded by reason of a penalty (Rule 20.3). [Special Teams](../systems/special_teams.md) covers all three limits.
+**What the safe out costs.** From your own zone, a puck that flies straight out over the glass is a delay-of-game minor in the NHL, the IIHF and the PWHL even when you did not mean it (Rule 63.2(iii); PWHL 65.2(iii)), and one put out on purpose is a minor in every book. Shorthanded icing is not always allowed: USA Hockey grants the exemption only at Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)). Under NHL Rule 81.6 a penalty-killing team loses it the moment a *major* **expires** with nobody on the penalty box to come out, until the next stoppage, when they may put a player in. **The trigger is the expiry, not the kill** — an empty box earlier in the major does not do it; the exemption goes because they are now a player short *without* being shorthanded by reason of a penalty (Rule 20.3). [Special Teams](../systems/special_teams.md) covers all three limits.
 
 ### The pre-scan: deciding before the puck arrives
 
@@ -290,12 +290,12 @@ A pass is easier to predict than a carry, because it has to be aimed.
 
 ```facts
 Key: F1, F2 and F3 are roles set by order of arrival, not positions and not people — your left winger can be F1 one shift and F3 the next
-Read: Against the house-default 2-1-2, two bodies arrive fast from two directions and the wall gets sealed early
+Read: Against the 2-1-2 this guide assumes, two bodies arrive fast from two directions and the wall gets sealed early
 Action: Escape a 2-1-2 behind the net with a reverse to your partner or a hard rim — not a wheel, because the second forechecker holds the far side
 Options: Against a 1-2-2, an early up-the-wall pass or a regroup; against a 1-3-1 trap, skate it up or chip past the layer; against a full press, the safe out
 Action: Find out what your opponent is forechecking on your first shift, and tell the bench
 Rule: After your own icing you take a defensive-zone faceoff with no line change (NHL Rules 81.4, 82.1), though an injured player can still be replaced, and no timeout (87.1) — expect immediate pressure
-Rule: The line-change bar after your own icing is not absolute — NHL and IIHF 81.4 and PWHL 83.4 still allow a substitution to put back a goalkeeper pulled for an extra attacker, to replace an injured player, or on a strength-changing penalty; the IIHF's 81.4 adds a broken skate; its 82.1 does not
+Rule: The line-change bar after your own icing is not absolute — NHL and IIHF 81.4 and PWHL 83.4 still allow a substitution to put back a goalie pulled for an extra attacker, to replace an injured player, or on a strength-changing penalty; the IIHF's 81.4 adds a broken skate; its 82.1 does not
 Rule: USA Hockey blocks neither the line change nor the time-out (Rules 624, 636(f)), so there the tired line gets off
 ```
 
@@ -303,7 +303,7 @@ A **forecheck** is the other team pressuring you in your own end to force a turn
 
 The roles are **F1, F2 and F3 — set by order of arrival, not positions or people.** Your left winger can be F1 one shift and F3 the next.
 
-**The house default is a 2-1-2 forecheck** — two forwards in deep, one high, two defencemen on the offensive blue line. Against it:
+**This guide's standard forecheck is a 2-1-2** — two forwards in deep, one high, two defencemen on the offensive blue line. Against it:
 
 - **Two bodies arrive fast, from two directions.** F1 attacks the puck; F2 attacks the obvious outlet.
 - **The wall gets sealed early**, so the wall pass is the likeliest to be picked off.
@@ -331,35 +331,35 @@ Read: Weight transfer decides whether — weight still sitting back means the sh
 Read: Blade angle at release decides where — an open blade lifts it, a closed blade keeps it low
 Never: Read the head — any shooter worth worrying about is looking somewhere other than where they intend to shoot
 Action: As a defender, get your feet into the lane a line-walking shooter is creating, square to it with your head out of it, rather than lunging
-Action: As a goaltender, move your head to look around a screen rather than over it
+Action: As a goalie, move your head to look around a screen rather than over it
 Rule: A no-contact screen outside the crease is legal and the goal stands — NHL Table 14 and IIHF 2025/26 Table 16, Situations 5C and 5E — unless you stop the goalie moving in the crease (Rule 69.1); stand off the line too, as most books count it as crease
 Rule: Getting in a returning goalie's way is interference — NHL and IIHF 56.2(i), PWHL 57.2(i), Hockey Canada 8.3(i), CARHA 66(a); USA Hockey 625 Sit. 9: no goal, a minor; deliberate contact is charging (607), at least a minor plus misconduct; reckless: major and game misconduct, plan on a match
 Rule: Leave a returning goalie a lane — under Hockey Canada (8.3(b), 8.3(e), 8.5(b), 8.5(e)) and CARHA (66(e), 30(a)) every interference major ejects you, and injuring someone makes the major and ejection mandatory
 Rule: Never block a goalie's lane recklessly — IIHF 56.5 lets the referee add a major and game misconduct for reckless interference, no injury needed
-Rule: Stay off a goaltender outside the crease: they are not "fair game" there — NHL and IIHF 69.4, PWHL 71.4, Hockey Canada 8.5, CARHA 52(b) and USA Hockey 607(d) each call for a penalty for unnecessary contact, and NHL and IIHF 69.2 and PWHL 71.2 price deliberate contact at a minor or a major
-Rule: Never charge a goaltender, in or out of the crease — mandatory major and game misconduct: Hockey Canada 8.5(b), CARHA 52(b) in the crease or on any injury, USA Hockey 607(b) when reckless; CARHA 66(b) a minor or ejecting major for deliberate contact anywhere
-Rule: Never try to hurt a goaltender — an attempt to injure is a mandatory match penalty under NHL and PWHL 21.1, Hockey Canada 7.1(c) and 8.5(c), CARHA 48(a) and USA Hockey 602(a)
-Rule: Charging a goaltender in the NHL, IIHF or PWHL can cost a major and game misconduct (NHL and PWHL 42.1 in the crease, IIHF 42.4), and NHL and PWHL 42.5 mandate the game misconduct when a charging major injures the face or head; NHL and PWHL 42.4 also allow a match
+Rule: Stay off a goalie outside the crease: they are not "fair game" there — NHL and IIHF 69.4, PWHL 71.4, Hockey Canada 8.5, CARHA 52(b) and USA Hockey 607(d) each call for a penalty for unnecessary contact, and NHL and IIHF 69.2 and PWHL 71.2 price deliberate contact at a minor or a major
+Rule: Never charge a goalie, in or out of the crease — mandatory major and game misconduct: Hockey Canada 8.5(b), CARHA 52(b) in the crease or on any injury, USA Hockey 607(b) when reckless; CARHA 66(b) a minor or ejecting major for deliberate contact anywhere
+Rule: Never try to hurt a goalie — an attempt to injure is a mandatory match penalty under NHL and PWHL 21.1, Hockey Canada 7.1(c) and 8.5(c), CARHA 48(a) and USA Hockey 602(a)
+Rule: Charging a goalie in the NHL, IIHF or PWHL can cost a major and game misconduct (NHL and PWHL 42.1 in the crease, IIHF 42.4), and NHL and PWHL 42.5 mandate the game misconduct when a charging major injures the face or head; NHL and PWHL 42.4 also allow a match
 ```
 
-Goaltenders and shot-blocking defenders read the same cues.
+Goalies and shot-blocking defenders read the same cues.
 
 - **The hands are the loudest cue.** Hands wide, bottom hand well down the shaft, means a slap shot or a heavy wrist shot that takes time to load. Hands close together means a quick release, a snap shot, or a pass.
 - **Weight transfer decides *whether*.** A shot needs weight moving onto the front leg. Weight still sitting back means the shot is not coming yet — they are waiting for a lane, a screen or a pass.
 - **Blade angle at release decides *where*.** An open blade lifts the puck; a closed one keeps it low. For a goalie, it is the difference between a low save and getting beaten upstairs.
 - **Do not read the head.** Any shooter worth worrying about is looking somewhere else.
 - **For defenders: a shooter walking the line is hunting a lane, not a shot.** Walking the line means sliding along the blue line to change the angle. Get *into* the lane they are creating, feet first, square to it with your head out of it — do not lunge, because over-committing turns a point shot into a two-on-one behind you. See [Risk Management](risk_management.md).
-- **For goaltenders,** coaching resources consistently list hands, blade angle, weight shift and foot position, plus moving your head to look *around* screens rather than over them. **Precise figures circulate** for how much shoulder rotation or weight shift predicts shot direction, and how many milliseconds it buys; none has a credible source, so none is given here. See [Goaltender](../positions/goaltender.md).
+- **For goalies,** coaching resources consistently list hands, blade angle, weight shift and foot position, plus moving your head to look *around* screens rather than over them. **Precise figures circulate** for how much shoulder rotation or weight shift predicts shot direction, and how many milliseconds it buys; none has a credible source, so none is given here. See [Goaltender](../positions/goaltender.md).
 
-**Screen from in front of the crease, not in it — and as a goaltender, look around a screen rather than waiting for a whistle.** As the screener, stand in the goalie's sightline just outside the crease and off its line, without contact, and leave the goalie room to move. ⚠️ **Keep your skates and stick out of the paint.** Never step into a goalie's path back to the crease, stay off a goalie outside it altogether, and never charge one.
+**Screen from in front of the crease, not in it — and as a goalie, look around a screen rather than waiting for a whistle.** As the screener, stand in the goalie's sightline just outside the crease and off its line, without contact, and leave the goalie room to move. ⚠️ **Keep your skates and stick out of the paint.** Never step into a goalie's path back to the crease, stay off a goalie outside it altogether, and never charge one.
 
 **What it costs:**
 
 - **A screen outside the crease, without contact, is legal and the goal stands.** NHL Table 14 and IIHF 2025/26 Table 16 (Situations 5C and 5E) allow it, even planted on the crease line; only the in-crease rows disallow it. The PWHL's Rule 71 is the same screening rule as Rule 69. USA Hockey, Hockey Canada and CARHA have no rule that reaches a screen set from outside the crease. So a goalie has nothing to appeal. Rule 69.1 still takes the goal if your position stops the goalie moving freely within the crease, and contact you start can cost it in or out of the crease (NHL 69.1, Hockey Canada 8.5 Interpretation 1, CARHA 66(b)). Stand off the line anyway: the IIHF's own Rule 1.7, USA Hockey, Hockey Canada and CARHA count it as part of the crease.
 - **In the crease it changes.** USA Hockey Rule 625(b) disallows a goal scored with an attacker in the crease unless the puck got there first, the goalie was out of the crease or a defender put you there, and its Casebook voids a goal scored with even a stick or skate in the paint while the goalie is in it (Rule 625, Situation 10). CARHA Rule 66(b) and Hockey Canada Rule 8.5 bar standing in the crease unless the puck is there: CARHA disallows a goal scored while you do, and Hockey Canada allows a teammate's goal only if you stayed passive and out of the goalie's view and movements. Two books can also stop play: USA Hockey's 625(b), with your team in possession in the attacking zone and the goalie in contact with the crease, and the IIHF's 69.1 when you do not leave at once.
-- **Blocking a goalie's way back** ⚠️ **is interference.** Holding ice you already stand on is body position (NHL and IIHF Rule 56.1); moving into a goaltender's path back to the crease is interference in every book here — NHL and IIHF 56.2(i) and 69.4, PWHL 57.2(i) and 71.4, Hockey Canada 8.3(i), CARHA 66(a). Under USA Hockey, even with the crease empty, it costs the goal and an interference minor (Casebook Rule 625, Situation 9). It is usually a minor. A violent or reckless block can cost a major — under the IIHF, an ejection — and one that hurts someone can end your game; under Hockey Canada and CARHA every interference major is an ejection, and injuring someone makes one mandatory.
-- **A goaltender out of the crease is not "fair game".** Every book calls for a penalty for unnecessary contact (NHL and IIHF 69.4, PWHL 71.4, Hockey Canada 8.5, CARHA 52(b), USA Hockey 607(d)), and deliberate contact is a minor or a major (NHL and IIHF 69.2, PWHL 71.2, CARHA 66(b)). Under USA Hockey even accidental contact is interference, and any deliberate body contact is charging (607(d), Note 1).
-- **Charging a goaltender, in or out of the crease,** ⚠️ **can end your game in every book.** Hockey Canada 8.5(b): a major and a game misconduct. CARHA 52(b): the same in the crease or when it injures, and CARHA's Rule 30(a) ejects for any major. USA Hockey 607(a): a minor plus a misconduct or a major plus a game misconduct; a reckless one is a mandatory major and game misconduct (607(b)) — plan on a match penalty for it too (602(a)). NHL and PWHL 42.1 reach a major and a game misconduct for charging a goalkeeper in the crease; anywhere on the ice, their 42.5 makes the game misconduct mandatory when a charging major injures the face or head, as the EIHL Casebook's Rule 42 does, and their 42.4 allows a match penalty. The IIHF's 42.4 can give a major and a game misconduct anywhere on the ice. An attempt to injure requires a match penalty under NHL and PWHL 21.1, CARHA 48(a), Hockey Canada 8.5(c) and USA Hockey 602(a).
+- **Blocking a goalie's way back** ⚠️ **is interference.** Holding ice you already stand on is body position (NHL and IIHF Rule 56.1); moving into a goalie's path back to the crease is interference in every book here — NHL and IIHF 56.2(i) and 69.4, PWHL 57.2(i) and 71.4, Hockey Canada 8.3(i), CARHA 66(a). Under USA Hockey, even with the crease empty, it costs the goal and an interference minor (Casebook Rule 625, Situation 9). It is usually a minor. A violent or reckless block can cost a major — under the IIHF, an ejection — and one that hurts someone can end your game; under Hockey Canada and CARHA every interference major is an ejection, and injuring someone makes one mandatory.
+- **A goalie out of the crease is not "fair game".** Every book calls for a penalty for unnecessary contact (NHL and IIHF 69.4, PWHL 71.4, Hockey Canada 8.5, CARHA 52(b), USA Hockey 607(d)), and deliberate contact is a minor or a major (NHL and IIHF 69.2, PWHL 71.2, CARHA 66(b)). Under USA Hockey even accidental contact is interference, and any deliberate body contact is charging (607(d), Note 1).
+- **Charging a goalie, in or out of the crease,** ⚠️ **can end your game in every book.** Hockey Canada 8.5(b): a major and a game misconduct. CARHA 52(b): the same in the crease or when it injures, and CARHA's Rule 30(a) ejects for any major. USA Hockey 607(a): a minor plus a misconduct or a major plus a game misconduct; a reckless one is a mandatory major and game misconduct (607(b)) — plan on a match penalty for it too (602(a)). NHL and PWHL 42.1 reach a major and a game misconduct for charging a goalie in the crease; anywhere on the ice, their 42.5 makes the game misconduct mandatory when a charging major injures the face or head, as the EIHL Casebook's Rule 42 does, and their 42.4 allows a match penalty. The IIHF's 42.4 can give a major and a game misconduct anywhere on the ice. An attempt to injure requires a match penalty under NHL and PWHL 21.1, CARHA 48(a), Hockey Canada 8.5(c) and USA Hockey 602(a).
 
 ### Reading a defenceman (as an attacker on the rush)
 
@@ -393,7 +393,7 @@ See [Zone Entries](../systems/zone_entries.md) and [Defending the Rush](../syste
 Read: A hard rim follows the curve and arrives predictably; a soft one dies in the corner, and a flip off the glass lands somewhere else entirely
 Action: Learn your home rink's boards and glass deliberately, and bounce a couple off the end boards in warm-up at an away rink
 Convention: The rebound heuristic — the puck kicks off the way the pad or blocker was facing — is coaching craft, not a measured finding
-Action: Arrive at the net moving, just outside the crease and off the goaltender, stick on the ice, blade out of the paint, expecting the puck rather than watching for it
+Action: Arrive at the net moving, just outside the crease and off the goalie, stick on the ice, blade out of the paint, expecting the puck rather than watching for it
 Read: Arriving second, off-balance, on your backhand or against an established bigger player means you will probably lose that battle
 Action: Play for the next state — get where the loose puck will squirt out, or pin it to the boards with skate or stick for a moment, never the player; holding it for a whistle is a minor in every book
 ```
@@ -401,7 +401,7 @@ Action: Play for the next state — get where the loose puck will squirt out, or
 The most advanced read is not about a person. It is where the *puck* is about to be.
 
 - **Where a loose puck will go.** A hard rim follows the boards and arrives predictably; a soft one dies in the corner; a puck flipped off the glass comes down somewhere else entirely. Rinks differ — lively glass, dead spots behind the net. **Learn your home rink deliberately**, and at an away rink bounce a couple off the end boards in warm-up.
-- **Where a rebound will go.** The rule of thumb is that it kicks off the way the goalie's pad or blocker was facing — so a shot from an angle tends to go to the far side, and you should arrive at the far post. **This is coaching craft, not a measured finding**, and goalies who steer rebounds break it. The reliable part: arrive at the net moving, just outside the crease and off the goaltender, stick on the ice, expecting the puck rather than watching for it.
+- **Where a rebound will go.** The rule of thumb is that it kicks off the way the goalie's pad or blocker was facing — so a shot from an angle tends to go to the far side, and you should arrive at the far post. **This is coaching craft, not a measured finding**, and goalies who steer rebounds break it. The reliable part: arrive at the net moving, just outside the crease and off the goalie, stick on the ice, expecting the puck rather than watching for it.
 - **Which battles you will probably lose.** This read saves more goals than any other. Arriving second, off balance, on your backhand, or against a bigger player already established, **you will probably lose.** Stop trying to win it and play for the *next* state: get to where the loose puck will squirt out, or pin the puck — not the player — against the boards with your skate or stick for a moment, for a teammate to dig out. Never with your hands, and never hold it for a whistle. The player who concedes the battle and takes the second puck ends up with it. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 **What it costs.** Holding the puck to force a stoppage is a delay-of-game minor in every book (NHL and IIHF 63.2, PWHL 65.2, Hockey Canada 10.1, CARHA 74(b), USA Hockey 632(b)). Hockey Canada and CARHA excuse you only while you are being checked, and USA Hockey calls it after three seconds whether or not you were pressured.
@@ -552,7 +552,7 @@ Risk: Reaction and peripheral-vision tools train the eyes, not the hockey
 - **Chasing a scan count.** Clear the bar of one look, then work on the quality of what you see. Hockey has not tested whether more looks beat some.
 - **Guessing and calling it anticipation.** If your position is worthless when you are wrong, you guessed — even if it worked. Shade toward the likely pass while staying between the puck and your net.
 - **Trying to win a battle you will lose.** Go to where the loose puck will squirt out, or pin the puck — not the player — against the boards with your skate or stick for a moment, for a teammate to dig out. Never with your hands, and never hold it for a whistle: that is a penalty in every book, and USA Hockey calls it after three seconds even under pressure.
-- **Watching for the rebound instead of arriving for it.** Arrive at the net moving, just outside the crease and off the goaltender, blade out of the paint.
+- **Watching for the rebound instead of arriving for it.** Arrive at the net moving, just outside the crease and off the goalie, blade out of the paint.
 
 ## Check yourself
 
@@ -597,14 +597,14 @@ document, that is named too.*
 ## Key Takeaways
 
 1. **Take at least one look while every pass is travelling to you, then get your eyes back on the puck.** Looking at all is what hockey has measured; whether more looks help has not been tested, so work on what you see rather than the count.
-2. **Decide before the puck arrives.** Name your first option and your bail-out while it travels, so its arrival triggers an action. **Goaltenders reverse this**: once a shot is released, track it all the way in.
+2. **Decide before the puck arrives.** Name your first option and your bail-out while it travels, so its arrival triggers an action. **Goalies reverse this**: once a shot is released, track it all the way in.
 3. **Use the free moments** — the puck on the far side, the instant after your own pass, and every stoppage.
 4. **Turn your head, check both shoulders and keep skating**, and make your last look the one back at the puck.
 5. **Keep the puck as your anchor and spend extra looks on pressure, outlets, danger and space.** In your own end, keep asking who scores if the puck goes to the net now. The anchor evidence comes from football, not hockey.
 6. **Read a carrier's chest and hips, not the head, hands or stick**, and if one beats you, re-establish position instead of chasing. The evidence for this is from rugby.
 7. **Read a passer's front shoulder and blade, and a shooter's hands and weight.** Pressure a passer who received without looking. Against a shooter, get your feet into the lane, head out of it, rather than lunging.
 8. **Read the shape.** Against a 2-1-2 behind your net, reverse to your partner or rim it hard rather than wheeling. Against a defender closing hard, change pace. After your first shift, tell the bench what they are forechecking.
-9. **Play where the puck goes next.** Arrive at the net moving, just outside the crease and off the goaltender, blade out of the paint. In a battle you will lose, go for the loose puck instead.
+9. **Play where the puck goes next.** Arrive at the net moving, just outside the crease and off the goalie, blade out of the paint. In a battle you will lose, go for the loose puck instead.
 10. **Get your head up off the puck**, and train it with a drill that fails if you look down.
 11. **Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a lane only on a real cue with support behind you — never as the last player back or in your own zone.
 12. **On a wall reception, position protects you, not looking.** ⚠️ **Never turn your back to the checker, and never duck** — come in on an angle, knees bent, skates parallel to the wall, forearm and hip to it, never the point of your shoulder, chin off your chest. Already facing the wall? Stick and gloves up and spread on the glass, no head contact. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
@@ -618,7 +618,7 @@ document, that is named too.*
 - **The "every one to two seconds" coaching benchmark** is contradicted by Berg's measured professional rate — with the caveat that Berg measured only the window before a reception, while the benchmark describes all off-puck play.
 - **The claim that elite players anchor on the puck carrier** rests on the Aksum eye-tracking study of **five male football players aged 17 to 23, watching a ball carrier**, and is labelled as football everywhere it appears, including Key Takeaway 5. Hockey's on-ice gaze research (Martell and Vickers, 2004) measures the *timing* of gaze, not where looking time goes, so it does not settle the question.
 - **That hockey below the professional level rewards speed of decision over quality** is coaching consensus, not a measured finding.
-- **Precise figures for shooter tells** — degrees of shoulder rotation, centimetres of weight shift, milliseconds of goaltender advantage — circulate with no credible source, so the shooter section is qualitative. The rebound-direction rule is likewise coaching craft, not a measured finding.
+- **Precise figures for shooter tells** — degrees of shoulder rotation, centimetres of weight shift, milliseconds of goalie advantage — circulate with no credible source, so the shooter section is qualitative. The rebound-direction rule is likewise coaching craft, not a measured finding.
 
 ---
 

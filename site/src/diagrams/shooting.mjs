@@ -264,7 +264,7 @@ const laneAndTheStep = {
     'sixteen feet short of the goal line; it passes about eight feet clear of the opposition ' +
     'forward’s marker, and extended it would cross the goal line one foot inside the far post. ' +
     'An own forward stands at the net front, eight feet out from the goal line and six feet to the ' +
-    'strong side of its centre, outside the crease. The opposition goaltender is in the crease. No ' +
+    'strong side of its centre, outside the crease. The opposition goalie is in the crease. No ' +
     'other players are drawn.',
 
   players: [
@@ -412,7 +412,7 @@ const wideRushAndTheTrailer = {
     // one thing the prose above does not do: three of the four claims here are about the
     // limits of a plan view, and a reader who takes the drawn shape as the instruction has
     // been taught something nobody wrote.
-    'A wide rush at the moment the decision is made: the goaltender has come across to the ' +
+    'A wide rush at the moment the decision is made: the goalie has come across to the ' +
     'near post, which leaves them exposed far side and low. Two plays are on and only one ' +
     'happens. Your own ' +
     'shot is not drawn, because a plan view cannot show height and "far side and low" is ' +
@@ -428,7 +428,7 @@ const wideRushAndTheTrailer = {
     'off the side wall, with the puck off the blade toward the net. An opposition defenceman, ' +
     'drawn as a triangle, stands sixteen feet away on the straight line between that carrier and ' +
     'the middle of the goal line, just inside and below the faceoff dot; no route is drawn for ' +
-    'them. The opposition goaltender stands five feet out from the middle of the goal ' +
+    'them. The opposition goalie stands five feet out from the middle of the goal ' +
     'line, on the line from the puck to the centre of the goal, which puts the letter just outside ' +
     'the near post rather than square in the goalmouth. A second own forward — the trailer — ' +
     'stands in the ' +
@@ -529,7 +529,7 @@ const breakawayApproach = {
     'most of a zone to accelerate through. The last arrow deliberately does not say which ' +
     'move you make. That a change of pace beats raw pace, and is worth more ' +
     'than any hand skill, is coaching craft rather than a measured finding — no source this ' +
-    'document holds measures either ranking against a goaltender. And the goaltender is ' +
+    'document holds measures either ranking against a goalie. And the goalie is ' +
     'drawn out at the top of the crease because that is the well-coached one; at rec level ' +
     'they are far more likely to be deep, flat-footed and square, which is itself a ' +
     'coaching observation rather than a counted one. Nobody else is on the ice.',
@@ -542,8 +542,8 @@ const breakawayApproach = {
     'for skating with the puck. One: from the forward to the blue line. Two: from the blue line to ' +
     'a point level with the tops of the two faceoff circles, thirty-five feet out from the goal ' +
     'line. Three: from there, thirteen feet further in and three feet off the middle, finishing ' +
-    'sixteen feet short of the goaltender and pointing past him rather than at him. The opposition ' +
-    'goaltender stands at the top of the crease, six feet out from the goal line. No other players ' +
+    'sixteen feet short of the goalie and pointing past him rather than at him. The opposition ' +
+    'goalie stands at the top of the crease, six feet out from the goal line. No other players ' +
     'are on the ice, and nothing is drawn between the end of the third route and the net.',
 
   players: [

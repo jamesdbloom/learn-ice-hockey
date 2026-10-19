@@ -292,7 +292,7 @@ const puckOnTheFarSide = {
     'ducking produces can break your neck at walking speed.',
 
   describe:
-    'The attacking half of the rink, the opposition net at the right and their goaltender in the ' +
+    'The attacking half of the rink, the opposition net at the right and their goalie in the ' +
     'crease. Two skaters, both in open ice toward the top of the picture, between the blue line and ' +
     'the faceoff circle and well clear of the boards. An own-team forward, an open circle, is the ' +
     'carrier. An opposition forward, a solid circle, stands about nine and a half feet from him, ' +
@@ -431,7 +431,7 @@ const wherethePuckIs = {
 
   caption:
     'A loose puck inside the ' +
-    'shaded crease paint beside your goaltender, with you standing outside it. In five of the six ' +
+    'shaded crease paint beside your goalie, with you standing outside it. In five of the six ' +
     'books the test is not where you are — it is where the puck is. ' +
     'A skater who falls on, holds or covers the puck inside their own crease concedes a penalty ' +
     // ⚠️⚠️ THIS CAPTION CARRIES NO BOOK COUNT, AND THAT IS DELIBERATE — DO NOT PUT ONE BACK.
@@ -472,7 +472,7 @@ const wherethePuckIs = {
     'shot in every book, CARHA at its own Rule 58(c) — though USA Hockey Rule 614(b) reads ' +
     '"a penalty shot/optional minor penalty shall be assessed", so that book alone offers a lesser ' +
     'option, and its Rule 406(a) puts that election with the non-offending team rather than with ' +
-    'the referee or with you. Every book exempts the goalkeeper, whose ' +
+    'the referee or with you. Every book exempts the goalie, whose ' +
     'job that is. In those five books what decides it is the puck\'s location at the instant it is ' +
     'covered, so the two cases run opposite to the way most players guess: standing inside the ' +
     'crease and covering a puck that was outside it is a minor penalty; standing ' +
@@ -505,13 +505,13 @@ const wherethePuckIs = {
     '⚠️ The instruction is the same wherever you are standing: do not keep hold of the puck. Knock it ' +
     'straight down at your feet in one ' +
     'continuous motion and play it with your skate or your blade. ' +
-    'And your goaltender is on the ice in this picture, deliberately. With him pulled for an ' +
+    'And your goalie is on the ice in this picture, deliberately. With him pulled for an ' +
     'extra attacker the price is worse rather than the same.',
 
   describe:
     'Your own defending end, your net at the right. The goal crease is drawn as the rink itself ' +
     'draws it, a shaded blue area in front of the goal with a red outline, eight feet wide and six ' +
-    'feet deep. Your goaltender stands inside it, pushed off to one side of the goal mouth. The ' +
+    'feet deep. Your goalie stands inside it, pushed off to one side of the goal mouth. The ' +
     'puck is a small solid dot drawn inside the crease on the other side of the mouth from him, ' +
     'clear of its edges, about five feet from him. One of your own skaters, an open triangle and ' +
     'so an own-team defenceman, ' +
@@ -791,7 +791,7 @@ const youCannotBeatTwo = {
     'hip, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
-    'The attacking half of the rink, the opposition net at the right and their goaltender in the ' +
+    'The attacking half of the rink, the opposition net at the right and their goalie in the ' +
     'crease. An own-team forward, an open circle, has the puck wide toward the top of the picture, ' +
     'inside the blue line, with the puck drawn as a small solid dot on the boards side of him. An ' +
     'opposition defenceman, a solid triangle, stands about ten feet away, up-ice of him and a ' +
@@ -1018,7 +1018,7 @@ const theLastPlayerBack = {
     'the puck in the neutral zone, two of their ' +
     'forwards are up on you, and the shaded ice behind you holds none of your skaters: the ' +
     'only player ' +
-    'in it is your goaltender. Lose the puck here and the two of them go ' +
+    'in it is your goalie. Lose the puck here and the two of them go ' +
     'the other way with nobody but him in front of them. So the instruction ' +
     'is a conditional rather than a ban on carrying — if losing the puck means an odd-man rush ' +
     'against you, the move is off, always. ' +
@@ -1041,8 +1041,8 @@ const theLastPlayerBack = {
     SHOULDER_TAIL,
 
   describe:
-    'The whole sheet. Your own net is at the left with your goaltender in his crease, and the net ' +
-    'you are attacking is at the right with their goaltender in his. One of your own defencemen, an ' +
+    'The whole sheet. Your own net is at the left with your goalie in his crease, and the net ' +
+    'you are attacking is at the right with their goalie in his. One of your own defencemen, an ' +
     'open triangle, has the puck in the neutral zone a little to your own side of the centre red ' +
     'line and toward the top of the picture; the puck is a small solid dot about six feet from him, ' +
     'on the opposite side of him from the pressure. Two opposition forwards, solid circles, stand ' +
@@ -1052,7 +1052,7 @@ const theLastPlayerBack = {
     'well up the ice inside the attacking zone. Everything behind the defenceman — from a line a few ' +
     'feet behind him back to your own end boards, across most of the width of the ice — is shaded ' +
     'red with a dashed edge and carries no label; the only player standing inside it is your own ' +
-    'goaltender. The remaining skaters on both teams are not drawn, because the section does not ' +
+    'goalie. The remaining skaters on both teams are not drawn, because the section does not ' +
     'fix where they stand. No other routes are drawn, and the carrier has none of his own.',
 
   zones: [

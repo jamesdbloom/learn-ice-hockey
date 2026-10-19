@@ -123,7 +123,7 @@ const homePlate = {
     'drawn over the end zone: its up-ice edge runs across the ice at the tops of the two ' +
     'faceoff circles, its two long sides run down-ice from the top of each circle to that ' +
     "circle's faceoff dot, and from each dot an angled edge runs in to the nearer goalpost. " +
-    'The goaltender is in the crease. No skaters are drawn — this diagram is geography, not a play.',
+    'The goalie is in the crease. No skaters are drawn — this diagram is geography, not a play.',
 
   // The polygon is the section's sentence, corner for corner: "It runs from the
   // tops of the two faceoff circles, in along the tops of the circles, down to the
@@ -192,7 +192,7 @@ const royalRoad = {
     // right and the citation was wrong, which is the more dangerous combination: a later agent
     // greps global.css, finds only colours, and concludes the split is not real.
     'The royal road — an imaginary line down the centre of the ice, net to net — and a ' +
-    'pass crossing it in the offensive zone, which drags the goaltender across before the ' +
+    'pass crossing it in the offensive zone, which drags the goalie across before the ' +
     'shot arrives. Defenders are not drawn. Passes across it finished at 15.50% — ' +
     'volunteer-tracked Passing Project data, 51,308 shots at 5-on-5, counting all attempts ' +
     'rather than shots on goal, so it is not comparable with a plain shooting percentage. ' +
@@ -206,7 +206,7 @@ const royalRoad = {
     'A forward has the puck on the strong-side half-wall, level with the faceoff dot. A dashed ' +
     'pass route runs from there straight across the zone, crossing the road between the faceoff ' +
     'dots, and finishes short of a second forward standing at the weak-side faceoff dot. The ' +
-    'goaltender is in the crease. No defenders are drawn.',
+    'goalie is in the crease. No defenders are drawn.',
 
   // A two-point "region" is a line. The road is not a marking on the ice, so it is
   // drawn the way the shaded regions are — dashed, light, and clearly not a
@@ -303,14 +303,14 @@ const fiveManShape = {
     'the blue line. That below-level-above attack triangle is a default, not a law of ' +
     'hockey — overload, a five-man rotation and a 1-3-1 spread are real alternatives, so ' +
     'find out which one your team plays. At least one forward stays in or attacking the ' +
-    'home-plate area. Defenders other than the goaltender are not drawn.',
+    'home-plate area. Defenders other than the goalie are not drawn.',
 
   describe:
     'The attacking half of the rink, the net at the right. Five own players. F1 has the puck on ' +
     'the strong-side half-wall. F2 is below him in the strong-side corner, nearer the goal line. ' +
     'F3 is above him and toward the middle, at the top of the circles and inside the home-plate ' +
     'area. Two defencemen stand on the offensive blue line, one each side. The opposing ' +
-    'goaltender is in the crease; no other defenders are drawn. Two numbered routes: one, the ' +
+    'goalie is in the crease; no other defenders are drawn. Two numbered routes: one, the ' +
     'pass from the half-wall down to the corner, finishing short of F2; two, F1 rotating up off ' +
     'the wall. F3 has no route, because the high player holds.',
 
@@ -371,7 +371,7 @@ const afterRotation = {
     'moment ago. F2 is the player who was carrying on the half-wall, now eight feet up-ice of it ' +
     'and five feet inside it, nine feet off the boards. F3 is unchanged at the top of the ' +
     'circles, inside the ' +
-    'home-plate area. The two defencemen are unchanged on the blue line. The goaltender is in ' +
+    'home-plate area. The two defencemen are unchanged on the blue line. The goalie is in ' +
     'the crease. No routes are drawn.',
 
   players: [
@@ -431,7 +431,7 @@ const halfWallOptions = {
     'to a defenceman at the strong-side point. A third dashed pass runs across the zone, crossing ' +
     'the centre line of the ice, to a forward on the weak side of the high slot. And a wavy ' +
     'carrying route cuts off the wall toward the middle of the ice, inside the home-plate area. ' +
-    'A second defenceman is on the blue line on the weak side, and the goaltender is in the ' +
+    'A second defenceman is on the blue line on the weak side, and the goalie is in the ' +
     'crease. No other defenders are drawn.',
 
   players: [
@@ -546,7 +546,7 @@ const lowToHigh = {
     'weak side of a forward who is standing at the net front, eight feet out from the goal line ' +
     'and just outside the strong-side post. ' +
     'A second forward stands in the high slot on the strong side. The weak-side defenceman ' +
-    'stays on the blue line. The goaltender is in the crease; no other defenders are drawn.',
+    'stays on the blue line. The goalie is in the crease; no other defenders are drawn.',
 
   players: [
     { id: 'F1', pos: 'F', at: HALF_WALL,           label: 'passes, then supports' },
@@ -595,8 +595,8 @@ const netFrontScreen = {
   caption:
     'Where the net-front player actually stands to screen: just outside the blue paint, ' +
     'roughly six to eight feet out from the goal line and inside the faceoff dots, standing on ' +
-    "the line between the goaltender's eyes and the puck rather than the line between the " +
-    'goaltender and the net — so when the point man walks the line, the screener slides with him ' +
+    "the line between the goalie's eyes and the puck rather than the line between the " +
+    'goalie and the net — so when the point man walks the line, the screener slides with him ' +
     'or the screen stops being a screen. Take the six-to-eight feet from these words and not off ' +
     // ⚠️ FULL STOP, NOT A COLON: "and not off the picture:" sat a negation on the separator,
     // and the inverted reading denies the drawn depth this sentence exists to disclose.
@@ -686,8 +686,8 @@ const netFrontScreen = {
     'strong-side point, wide, eight feet toward the boards of the point itself. A forward stands ' +
     'at the net front, nine and a half feet out from the goal line and clear of the shaded goal ' +
     'crease, offset to the puck side of the middle of the net so that he sits on the straight ' +
-    "line between the goaltender's position and the puck rather than in front of the net. The " +
-    'goaltender is in the crease. A shot, drawn as a double line, runs from the point and ' +
+    "line between the goalie's position and the puck rather than in front of the net. The " +
+    'goalie is in the crease. A shot, drawn as a double line, runs from the point and ' +
     'finishes short of the screener; extended, it would pass through him and arrive inside the ' +
     'far post. No other players are drawn.',
 
@@ -830,7 +830,7 @@ const behindTheNet = {
     'A dashed pass runs out past the side of the net, clear of the crease, and across the centre ' +
     'line of the ice, finishing short of a forward standing on the weak side of the high slot. ' +
     'A second dashed pass runs back up to a teammate deep in the strong-side corner — the ' +
-    'reverse that restarts the cycle. The goaltender is in the crease. No defenders are drawn.',
+    'reverse that restarts the cycle. The goalie is in the crease. No defenders are drawn.',
 
   players: [
     { id: 'F1', pos: 'F', at: BEHIND,       label: 'the carrier' },
@@ -917,7 +917,7 @@ const crossTheRoadYourself = {
     // below, whose placement after a completed sentence is load-bearing (see the note on it).
     'Crossing the royal road with your feet rather than with a pass: driving off the ' +
     'strong-side half-wall into the high slot, or curling out from behind the net into the ' +
-    'slot. Both finish on the far side of the line and drag the goaltender across the way a ' +
+    'slot. Both finish on the far side of the line and drag the goalie across the way a ' +
     'pass does — though the 15.50% this document quotes measures passes, and no figure here ' +
     'measures the carry. Only one of the two happens, so no puck is drawn. ' +
     // ⚠️ Placed AFTER the caption's last complete sentence, not inside one.
@@ -945,7 +945,7 @@ const crossTheRoadYourself = {
     'crossed the dashed line. The second forward stands behind the goal line, ten feet to the ' +
     'strong side of the middle of the net; a second wavy route leaves him, swings out past the ' +
     'side of the net well clear of the crease, and finishes in the slot on the weak side of the ' +
-    'dashed line. The goaltender is in the crease. No defenders are drawn.',
+    'dashed line. The goalie is in the crease. No defenders are drawn.',
 
   zones: [
     // Drawn exactly as `oz-royal-road` draws it, and for the same reason: a
@@ -1074,7 +1074,7 @@ const cycleRim = {
     'wall battle: never turn your back to the checker and never duck. Skates parallel to the wall, ' +
     'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL +
     ' Only the checker and the ' +
-    'goaltender are drawn on the other team.',
+    'goalie are drawn on the other team.',
 
   describe:
     'The attacking half of the rink, the net at the right. Own players are drawn open, the ' +
@@ -1084,7 +1084,7 @@ const cycleRim = {
     'leaves the carrier and bows out toward the boards, running around the curve of the corner ' +
     'about five feet off the dasher, past the outside of the checker, and finishing short of a ' +
     'second own forward who stands behind the goal line to the strong side of the net. The ' +
-    'goaltender is in the crease. No other opposition players are drawn, and no route is drawn ' +
+    'goalie is in the crease. No other opposition players are drawn, and no route is drawn ' +
     'for the passer.',
 
   players: [
@@ -1148,7 +1148,7 @@ const cycleReverse = {
     'whichever one is on, this is a wall battle: never turn your back to the checker and never ' +
     'duck. Skates parallel to the wall, forearm and hip into the contact, head up and chin off ' +
     'your chest — and not on the point of your shoulder, and not the whole shoulder if you can ' +
-    'help it. Only the checker and the goaltender are ' +
+    'help it. Only the checker and the goalie are ' +
     'drawn on the other team.',
 
   describe:
@@ -1158,7 +1158,7 @@ const cycleReverse = {
     'his body from the pressure. The opposition forward is now past him, about five feet nearer ' +
     'the goal line and five feet inside, level with the goal line. A dashed pass route leaves the ' +
     'carrier and runs back up the wall, away from the checker, finishing about six feet short of ' +
-    'a second own forward standing on the strong-side half-wall. The goaltender is in the crease. ' +
+    'a second own forward standing on the strong-side half-wall. The goalie is in the crease. ' +
     'No other opposition players are drawn, and no route is drawn for the passer.',
 
   players: [
@@ -1195,8 +1195,8 @@ const cycleReverse = {
 // STATIC, ON PURPOSE. Section 10 gives F3 three jobs in order — "be the
 // safety", "cover the vacated point if a defenceman activates", "read the
 // rebound and jump" — and the SECOND of those has three named coaching-choice
-// variants for who covers the point if a defenceman pinches: the house
-// default (F3 takes the line), a five-man rotation (whichever player is
+// variants for who covers the point if a defenceman pinches: the standard
+// five-man setup (F3 takes the line), a five-man rotation (whichever player is
 // highest covers), or the weak-side defenceman sliding across instead.
 // Drawing any of that would mean either three frames or one frame hedged past
 // the point of use, and a picture is the most absolute-looking thing on a
@@ -1231,12 +1231,12 @@ const postShotShape = {
     // CAPTION LENGTH, 15 Sep 2026: 115 words before. The three named alternatives for who
     // covers a pinching defenceman's point are an `Options:` facts line in the owning
     // section. The cardinal-rule hedge and "find out which your team plays" are kept -- a
-    // caption that presented the house default flat would be the corpus's commonest failure.
+    // caption that presented the standard five-man setup flat would be the corpus's commonest failure.
     'The shape in the seconds after a shot: F3 holds high at the top of the circle as the ' +
     'safety — a rebound straight out is his, and a counter-attack has to go through him. ' +
     'The other two forwards go to the net, one to screen and tip and one hunting the ' +
-    'strong-side rebound, and both defencemen hold the blue line. That is the house ' +
-    'default, not a law: who covers a pinching defenceman’s point is a coaching choice this ' +
+    'strong-side rebound, and both defencemen hold the blue line. That is the standard ' +
+    'five-man setup, not a law: who covers a pinching defenceman’s point is a coaching choice this ' +
     'picture does not draw. Find out which your team plays.',
 
   describe:
@@ -1245,7 +1245,7 @@ const postShotShape = {
     'home-plate area, drawn as the safety. A second forward stands at the net front, just outside ' +
     'the blue paint, for the screen and tip. A third stands closer to the strong-side faceoff ' +
     'dot, also inside the home-plate area, hunting the rebound. Both defencemen remain on the ' +
-    'blue line, one each side. The opposing goaltender is in the crease. No routes are drawn: ' +
+    'blue line, one each side. The opposing goalie is in the crease. No routes are drawn: ' +
     'this is the shape at a moment, not a sequence.',
 
   players: [

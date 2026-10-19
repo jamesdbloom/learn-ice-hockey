@@ -92,11 +92,11 @@ const fiveRoles = {
 
   describe:
     'The full 200-foot sheet. The defending zone is at the left, the attacking end at the right. ' +
-    'Five own players and a goaltender, and no opposition. The defenceman D1 is deep in the right ' +
+    'Five own players and a goalie, and no opposition. The defenceman D1 is deep in the right ' +
     'corner with the puck at his stick. The defenceman D2 is on the other side of the net, just ' +
     'above the goal line. The winger W1 is on the right boards between the hash marks and the goal ' +
     'line. The centre C is inside the right faceoff circle, below the hash marks and inside the dot. ' +
-    'The winger W2 is on the weak side and higher, near the top of the left circle. The goaltender ' +
+    'The winger W2 is on the weak side and higher, near the top of the left circle. The goalie ' +
     'is in the crease. There are no routes: nothing is moving yet.',
 
   players: [
@@ -286,7 +286,7 @@ const wheel = {
     'boards below the hash marks. The defenceman D2 stands in front of the net, slightly to the ' +
     'strong side, with no route drawn. The winger W2 is on the left boards and the centre C is low ' +
     'inside the left circle; both are outlets. One opposition forechecker is up the right wall, ' +
-    'behind the play. The goaltender is in the crease.',
+    'behind the play. The goalie is in the crease.',
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
@@ -401,7 +401,7 @@ const reverse = {
     'further up ice, past him. Two numbered routes: one, the defenceman D2 skates from the far side ' +
     'of the net, around behind the goal, and up into the strong-side corner below the goal line; ' +
     'two, a dashed pass from D1 back down the right boards behind him, finishing in that same corner ' +
-    'space. The two routes finish about nine feet apart. The goaltender is in the crease.',
+    'space. The two routes finish about nine feet apart. The goalie is in the crease.',
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
@@ -537,7 +537,7 @@ const rim = {
     'boards. A single dashed route leaves D1, runs down and around the end boards about two and a ' +
     'half feet off the dasher behind the net, and comes out low on the left boards, finishing on the ' +
     'wall four and a half feet off the dasher. The winger W2 stands a few feet up-ice of where it finishes, ' +
-    'stepping in to meet it. The goaltender is in the crease.',
+    'stepping in to meet it. The goalie is in the crease.',
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
@@ -604,7 +604,7 @@ const dToD = {
     'tops of the two faceoff circles, straight down the dot lines to the two faceoff dots, then ' +
     'angling in to the two goalposts on the goal line. The single dashed pass runs from D1 down and ' +
     'around behind the goal, staying between four and six feet behind the net the whole way, and up ' +
-    'to D2. It never enters the shaded region. The goaltender is in the crease.',
+    'to D2. It never enters the shaded region. The goalie is in the crease.',
 
   // The house, or home plate, exactly as the OWNER defines it —
   // content/foundation/rink_map.md, section 'The "home plate" /
@@ -739,7 +739,7 @@ const stretch = {
     'blue line of that zone, stepped up. The winger W2 is a long way up ice at the right, just on ' +
     'his own side of the far blue line, alone. A single long dashed pass runs from D1 diagonally ' +
     'across and up the sheet to him, passing under the near forechecker, outside the faceoff dots, ' +
-    'and between the two stepped-up defencemen. The goaltender is in the crease; no other own ' +
+    'and between the two stepped-up defencemen. The goalie is in the crease; no other own ' +
     'player is drawn.',
 
   players: [
@@ -870,7 +870,7 @@ const wingerWall = {
   caption:
     'The strong-side winger’s trip, drawn in your own defensive zone at the left of the picture at ' +
     'the instant your team wins the puck. He starts high, level with the opposing point man — that is' +
-    ' his defensive-zone coverage under the house-default low zone collapse, and being there is not ' +
+    ' his defensive-zone coverage under the standard low zone collapse, and being there is not ' +
     'an error — and comes down the wall to the boards between the hash marks and the goal line, at or' +
     ' just below the dot line, never above it. The trip between those two spots, and its timing, is ' +
     'the job, and neither end of it is a place to live: time the arrival rather than camping, and ' +
@@ -913,7 +913,7 @@ const wingerWall = {
     'just below the hash-mark line, some forty-eight feet from where it began — inside the range ' +
     'those two spots are apart on an NHL sheet, a little under forty-four to sixty-four feet. ' +
     'The defenceman D1 is deep ' +
-    'in the right corner with the puck, which his team has just won. The goaltender is in the ' +
+    'in the right corner with the puck, which his team has just won. The goalie is in the ' +
     'crease. No pass is drawn: this diagram is the trip, not the exit.',
 
   players: [
@@ -970,7 +970,7 @@ const centreSwing = {
     'skating route runs from him, curving first away from the puck toward the middle of the ice and ' +
     'then back toward the boards, finishing inside the shaded box. The defenceman D1 has the puck in ' +
     'the right corner and the winger W1 is on the right boards above the box, on the ice the centre ' +
-    'must not drift into. The goaltender is in the crease.',
+    'must not drift into. The goalie is in the crease.',
 
   // The section gives two boundaries and only two: below the hash marks, and
   // inside the dots. The box is drawn as exactly those, closed toward the middle
@@ -1149,7 +1149,7 @@ const againstThe131 = {
 
   describe:
     'The full 200-foot sheet. Your defending zone is at the left, the far end at the right. Your ' +
-    'goaltender is in the crease and the defenceman D1 has the puck deep in the right corner. Five ' +
+    'goalie is in the crease and the defenceman D1 has the puck deep in the right corner. Five ' +
     'opposition players are drawn in three bands. One forward stands in the middle of the ice about ' +
     'ten feet inside your blue line. Three more are level with each other just beyond the centre red ' +
     'line, spanning the sheet: one near the top boards, a defenceman in the middle of the ice, one ' +

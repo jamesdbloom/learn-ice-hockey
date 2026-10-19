@@ -195,7 +195,7 @@ const executionDrill = {
     'rather than a rule of hockey — so if a drill’s purpose is not obvious, ask.',
 
   describe:
-    'The attacking half of the rink, the net at the right with the opposing goaltender in the ' +
+    'The attacking half of the rink, the net at the right with the opposing goalie in the ' +
     'crease. Two own ' +
     'players and no opposition skaters. One stands inside the right faceoff circle above the dot ' +
     'with the puck drawn beside him, and a dashed passing route runs from him across the ice and ' +
@@ -255,7 +255,7 @@ const decisionDrill = {
     'except that one opposition player has been added and the pass route has gone. Your own two ' +
     'players are where they were — ' +
     'one inside the right faceoff circle with the puck beside him, one in front of the net — and ' +
-    'the opposing goaltender is in the crease. The opposition forward stands squarely on the line ' +
+    'the opposing goalie is in the crease. The opposition forward stands squarely on the line ' +
     'between ' +
     'the two of them, about twenty-three feet from the puck carrier and about fourteen from the ' +
     'teammate. No routes are drawn anywhere in this frame.',
@@ -375,7 +375,7 @@ const theLine = {
   caption:
     'A full-ice drill on the whole two-hundred-foot sheet at one instant: six skaters, one ' +
     'carrying the puck up the ice and five standing in a line ' +
-    'against the boards waiting their turn. No goaltender is drawn in this one. ' +
+    'against the boards waiting their turn. No goalie is drawn in this one. ' +
     'One is on the puck, five are not moving, and no opponent is drawn, so ' +
     'nothing can surprise the player taking the rep. ' +
     'It teaches a pattern and puts a group through the same ' +
@@ -392,7 +392,7 @@ const theLine = {
     'so keep your feet moving too.',
 
   describe:
-    'The full two-hundred-foot sheet, with no opposition and no goaltender drawn. Five own skaters ' +
+    'The full two-hundred-foot sheet, with no opposition and no goalie drawn. Five own skaters ' +
     'stand in a row along the upper boards at the far end, evenly spaced about eight feet apart, ' +
     'from level with the far faceoff dot up toward the far blue line. A sixth own skater is out in ' +
     'the neutral zone above the middle with the puck beside him, and a wavy route — the mark for ' +
@@ -486,7 +486,7 @@ const smallAreaGame = {
 
   caption:
     'The same six skaters, with the game shrunk into one end zone: three ' +
-    'against three, one puck, one net, and a goaltender who was not in ' +
+    'against three, one puck, one net, and a goalie who was not in ' +
     'the queue in the last picture — a seventh person, defending the net your three ' +
     'attack. Nobody is queuing. ' +
     'Every one of the six is in the play, none of them more than about forty-five feet from the ' +
@@ -507,7 +507,7 @@ const smallAreaGame = {
     'empty here only because this is the only group drawn. Every single thing about this ' +
     'arrangement is a coaching choice ' +
     'and not a law of hockey: the number of players, the area it is played in, whether there is a ' +
-    'goaltender at all, what each team is trying to score on, and what constraint is added. This ' +
+    'goalie at all, what each team is trying to score on, and what constraint is added. This ' +
     'picture uses the one net the rink already has, ' +
     'a limit of what can be drawn rather than a recommendation. ' +
     'Ask what the rules of the game are before it starts, because the ' +
@@ -524,7 +524,7 @@ const smallAreaGame = {
   describe:
     'The full two-hundred-foot sheet again, with the whole picture in the right-hand end zone below ' +
     'the blue line and the rest of the ice empty. Three own skaters, three opposition skaters and ' +
-    'one goaltender. ' +
+    'one goalie. ' +
     'One of yours has the puck on the right half-wall, level with the faceoff dot, with the puck ' +
     'drawn just below him; one is low in the slot on the far side of the middle; one is high, just ' +
     'inside the blue line. An opposition player is about nine feet above the top of the right ' +
@@ -532,7 +532,7 @@ const smallAreaGame = {
     'route running out toward the carrier on the wall: it stops about seven feet short of him and ' +
     'ends in two short bars rather than an arrowhead. A second opposition player stands in front of ' +
     'the net, about nine feet clear of the crease, and a third stands high near the blue line ' +
-    'beside your own high player. The opposing goaltender is in the crease. That is the only route ' +
+    'beside your own high player. The opposing goalie is in the crease. That is the only route ' +
     'in the picture; nothing else is drawn.',
 
   players: [
