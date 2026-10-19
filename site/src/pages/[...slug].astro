@@ -6,6 +6,7 @@ import TableOfContents from '../components/TableOfContents.astro';
 import PrevNext from '../components/PrevNext.astro';
 import AudioPlayer from '../components/AudioPlayer.astro';
 import CiteThis from '../components/CiteThis.astro';
+import ReadingTools from '../components/ReadingTools.astro';
 import { getDoc, getNeighbours } from '../data/nav';
 import { episodesFor } from '../data/podcast';
 import { AUDIO_ENABLED } from '../consts';
@@ -19,7 +20,8 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content, headings } = await render(entry);
+const { Content, headings, remarkPluginFrontmatter } = await render(entry);
+const readingTime = remarkPluginFrontmatter?.readingTime ?? {};
 
 // The episodes for this document, one per format that exists. A document with none
 // renders no player at all — 38 pages were rendering one against 37 episodes, so the
@@ -54,6 +56,7 @@ const { prev, next } = getNeighbours(entry.id);
   hasPlayer={hasPlayer}
   playerMulti={hasPlayer && playerFormats.length > 1}
 >
+  <script is:inline slot="head" src="/essentials-view.js"></script>
   <main class="main" id="main">
     {/* ⚠️ BEFORE the article, not after it, and the reason is keyboard order.
         The player is `position: sticky; top: var(--header-h)` (global.css), so it is ON SCREEN
@@ -73,12 +76,18 @@ const { prev, next } = getNeighbours(entry.id);
         <a href={`/${doc.layerId}/`}>{doc.layerTitle}</a>
       </p>
       <h1 class="doc-title">{doc.title}</h1>
+      <ReadingTools minutes={readingTime.minutes} essentialsMinutes={readingTime.essentialsMinutes} hasInShort={readingTime.hasInShort} />
 
       <TableOfContents headings={headings} variant="inline" />
 
       <div class="prose">
         <Content />
       </div>
+
+      {/* Only visible in the Essentials view (global.css); hidden without script. */}
+      <p class="ess-end no-print" data-pagefind-ignore>
+        <button type="button" class="button button--ghost" data-view-set="full">Show the full guide</button>
+      </p>
 
       <CiteThis title={doc.title} />
     </article>

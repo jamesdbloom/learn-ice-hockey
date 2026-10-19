@@ -2958,3 +2958,208 @@ figure.diagram .diagram-source {
     display: none !important;
   }
 }
+
+/* =====================================================================
+   Readability features (owner-approved 19 October 2026)
+   Reading time, the Essentials view, "In short" summaries, "What it costs"
+   blocks and the collapsed Sources trailer. All built from existing tokens,
+   so both themes and print follow automatically.
+   ===================================================================== */
+
+/* ------------------------------------------------- reading time + toggle -- */
+
+.doc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin: 0 0 1.25rem;
+}
+
+.doc-readtime {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.view-toggle {
+  display: inline-flex;
+  max-width: 100%;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+  overflow: hidden;
+}
+
+/* `hidden` is the no-script state; the display above must not override it. */
+.view-toggle[hidden] {
+  display: none;
+}
+
+.view-toggle__option {
+  min-height: 2.25rem;
+  padding: 0 0.8rem;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.view-toggle__option + .view-toggle__option {
+  border-left: 1px solid var(--border-strong);
+}
+
+.view-toggle__option:hover {
+  color: var(--text);
+  background: var(--bg-sunken);
+}
+
+.view-toggle__option[aria-pressed='true'] {
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.view-toggle__option:focus-visible {
+  outline-offset: -2px;
+}
+
+.view-toggle__time {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* The note and the closing button exist only in the Essentials view. */
+.view-note,
+.ess-end {
+  display: none;
+}
+
+html.view-essentials .view-note {
+  display: block;
+  margin: 0 0 1.5rem;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: var(--bg-sunken);
+  border-radius: var(--radius);
+}
+
+.view-note__link {
+  padding: 0;
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.view-note__link:hover {
+  color: var(--accent-hover);
+}
+
+html.view-essentials .ess-end {
+  display: block;
+  margin: 2rem 0;
+}
+
+/* ------------------------------------------------------- essentials view --
+   `ess` is put on the blocks to keep by remark-corpus.mjs (markEssentials).
+   Everything else in the document body is hidden — still in the HTML, so search
+   indexes it and a deep link to it switches the view back (essentials-view.js). */
+/* `screen` only: printing always gives the whole document, whatever the view.
+   A reader in Essentials pressing Cmd-P must not get a silent three-page extract. */
+@media screen {
+  html.view-essentials .prose > :not(.ess) {
+    display: none;
+  }
+}
+
+/* With the doc header and the opening rules hidden, the first kept heading should
+   not carry the generous top margin meant to separate it from prose above. */
+@media screen {
+  html.view-essentials .prose > .ess:first-child,
+  html.view-essentials .prose > h2.ess:first-of-type {
+    margin-top: 0.5rem;
+  }
+}
+
+/* A contents entry whose section the Essentials view hides. Still a working link:
+   following it switches to the full guide. */
+.toc-link--elsewhere {
+  opacity: 0.6;
+}
+
+/* ------------------------------------------------------------- In short --
+   Content convention: the paragraph directly under an H2/H3 that opens with
+   `**In short:**`. One line, set slightly larger than body text, on the accent
+   tint — a summary, not a warning, so it uses neither amber nor a border box. */
+.prose .in-short {
+  margin: 0 0 1.25rem;
+  padding: 0.6rem 0.85rem;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+}
+
+.in-short__label {
+  display: inline-block;
+  margin-right: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  vertical-align: 0.1em;
+}
+
+/* --------------------------------------------------------- What it costs --
+   Only the LABEL is styled — no frame, no rule, no background. A frame claimed
+   where the price list ends and was often wrong (see markCosts in
+   remark-corpus.mjs). Calmer than the amber panel; `.warn-inline` runs after the
+   label keep their own amber treatment. */
+.costs__label {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+/* ------------------------------------------------------------- sources --
+   The trailer was already a closed <details>. Its summary is now "Sources" with
+   the retrieval line after it, unchanged but muted. */
+.sources-summary__hint {
+  margin-left: 0.4rem;
+  font-weight: 400;
+  color: var(--text-faint);
+}
+
+
+@media print {
+  .no-print,
+  .view-note,
+  .ess-end {
+    display: none !important;
+  }
+
+  /* A closed <details> keeps its content out of the rendered page in current
+     Chrome even with `details { display: block }` (that only shows the box).
+     Open the content slot itself so the sources still print. Browsers without
+     ::details-content drop this rule and behave as before. */
+  details.sources::details-content {
+    content-visibility: visible;
+    display: block;
+  }
+}
+
+/* The disclosure triangle sat in the page gutter (outside the box) and is the only
+   cue that the box opens; keep it inside, beside the label. */
+.sources-summary {
+  list-style-position: inside;
+}

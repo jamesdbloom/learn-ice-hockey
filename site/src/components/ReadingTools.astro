@@ -1,0 +1,38 @@
+---
+/*
+  Reading time, and the "Essentials" / "Full guide" view switch, under a
+  document's title.
+
+  - The reading time is computed by remark-corpus.mjs (recordReadingTime) from the
+    prose words a reader sees: facts blocks, tables, the Sources trailer and the
+    verification notes are excluded. 230 words a minute.
+  - The switch is rendered `hidden` and un-hidden by src/lib/essentials-view.js, so
+    with scripting off a reader never sees a control that does nothing — and the
+    full page shows, because the view is a class only that script adds.
+  - `no-print` and `data-pagefind-ignore`: none of this is document content, and
+    build-downloads.mjs strips `.no-print` from the EPUB/PDF articles.
+*/
+interface Props {
+  minutes?: number;
+  essentialsMinutes?: number;
+  /** True when the page has at least one "In short" line. */
+  hasInShort?: boolean;
+}
+const { minutes, essentialsMinutes, hasInShort = false } = Astro.props;
+---
+
+<div class="doc-tools no-print" data-pagefind-ignore>
+  {minutes && <p class="doc-readtime">{minutes} min read</p>}
+  <div class="view-toggle" role="group" aria-label="How much of this page to show" data-view-toggle hidden>
+    <button type="button" class="view-toggle__option" data-view="full" aria-pressed="true">Full guide</button>
+    <button type="button" class="view-toggle__option" data-view="essentials" aria-pressed="false">
+      Essentials{essentialsMinutes && <span class="view-toggle__time"> · {essentialsMinutes} min</span>}
+    </button>
+  </div>
+</div>
+<p class="view-note no-print" data-pagefind-ignore>
+  {hasInShort
+    ? 'Showing the essentials: Key focus, section summaries and Key Takeaways.'
+    : 'Showing the essentials: Key focus and Key Takeaways.'}{' '}
+  <button type="button" class="view-note__link" data-view-set="full">Show the full guide</button>
+</p>

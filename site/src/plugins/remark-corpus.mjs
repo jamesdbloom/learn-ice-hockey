@@ -897,9 +897,21 @@ export default function remarkCorpus(options = {}) {
       if (sources.length) {
         children.push(
           wrapper('details', { class: 'sources' }, [
-            inline('summary', { class: 'sources-summary' }, [
-              { type: 'text', value: headingText || 'Sources' },
-            ]),
+            // The trailer's opening line becomes the summary. "Sources" is the
+            // label; everything after the dash (the retrieval dates, and in a few
+            // documents a scope note on them) is kept WORD FOR WORD but set
+            // muted, so the closed box reads as "Sources" at a glance instead of
+            // as a four-line bold sentence on a phone.
+            inline('summary', { class: 'sources-summary' }, (() => {
+              const m = /^(Sources)\s*[—–-]\s*(.+)$/s.exec(headingText);
+              if (!m) return [{ type: 'text', value: headingText || 'Sources' }];
+              return [
+                { type: 'text', value: `${m[1]} ` },
+                inline('span', { class: 'sources-summary__hint' }, [
+                  { type: 'text', value: `— ${m[2]}` },
+                ]),
+              ];
+            })()),
             wrapper('div', { class: 'sources-body' }, sources),
           ]),
         );
@@ -916,5 +928,201 @@ export default function remarkCorpus(options = {}) {
         );
       }
     }
+
+    // These three run LAST, over the finished top-level structure, because each
+    // of them reads it: the footer split above decides where the sources start,
+    // and the warning passes have already decided which paragraphs are panels.
+    markInShort(tree, file);
+    markCosts(children);
+    markEssentials(children);
+    recordReadingTime(children, file);
+  };
+}
+
+// =========================================================================
+// Readability features (owner-approved 19 October 2026). Rendering only:
+// none of these changes a word of content, and every one degrades to the
+// plain document — no class, no styling, nothing hidden.
+// =========================================================================
+
+/** Add a class to a node's rendered element, whichever property form it already uses. */
+function addClass(node, cls) {
+  node.data = node.data || {};
+  const hp = (node.data.hProperties = node.data.hProperties || {});
+  if (typeof hp.class === 'string') hp.class = `${hp.class} ${cls}`;
+  else if (Array.isArray(hp.className)) hp.className = [...hp.className, cls];
+  else if (typeof hp.className === 'string') hp.className = [hp.className, cls];
+  else hp.className = [cls];
+}
+
+function hasClass(node, cls) {
+  const hp = node?.data?.hProperties;
+  if (!hp) return false;
+  const raw = hp.class ?? hp.className ?? '';
+  const list = Array.isArray(raw) ? raw : String(raw).split(/\s+/);
+  return list.includes(cls);
+}
+
+// ------------------------------------------------------------- "In short"
+//
+// THE CONVENTION. A section summary is a paragraph that is the VERY NEXT block
+// after an H2 or H3 heading and opens with the bold label `**In short:**`
+// (the form `**In short**:` is accepted too). It renders as a one-line summary
+// panel, and it is what the "Essentials" view shows for that section.
+//
+// Anywhere else — under an H4, or after a facts block, a diagram or another
+// paragraph — it renders as an ordinary paragraph and the build prints a
+// warning naming the file, so an author finds out at build time rather than by
+// noticing that a summary is missing from the Essentials view.
+const IN_SHORT_RE = /^In short:?$/i;
+
+function inShortLabel(node) {
+  if (node?.type !== 'paragraph' || node.data?.hName) return null;
+  const first = node.children?.[0];
+  if (first?.type !== 'strong') return null;
+  const label = toText(first).trim();
+  if (!IN_SHORT_RE.test(label)) return null;
+  if (label.endsWith(':')) return first;
+  const next = node.children[1];
+  return next?.type === 'text' && /^\s*:/.test(next.value) ? first : null;
+}
+
+function markInShort(tree, file) {
+  const kids = tree.children;
+  for (let i = 0; i < kids.length; i += 1) {
+    const label = inShortLabel(kids[i]);
+    if (!label) continue;
+    const prev = kids[i - 1];
+    if (prev?.type === 'heading' && (prev.depth === 2 || prev.depth === 3)) {
+      const p = kids[i];
+      // `**In short**:` — fold the colon into the label so the two forms render alike.
+      if (!toText(label).trim().endsWith(':')) {
+        p.children[1].value = p.children[1].value.replace(/^\s*:/, '');
+        label.children.push({ type: 'text', value: ':' });
+      }
+      addClass(p, 'in-short');
+      addClass(label, 'in-short__label');
+    } else {
+      const where = String(file?.path ?? file?.data?.astro?.frontmatter?.__id ?? 'a document');
+      console.warn(
+        `[remark-corpus] "In short:" paragraph not directly under an H2/H3 in ${where}` +
+        `${kids[i].position ? ` (line ${kids[i].position.start.line})` : ''}; ` +
+        'rendered as ordinary prose.');
+    }
+  }
+}
+
+// ----------------------------------------------------------- "What it costs"
+//
+// The corpus prices a section's fouls under a bold lead `**What it costs…**` —
+// 180-odd of them, measured in content/ on 19 October 2026, in three shapes: the
+// label alone as a paragraph; the label opening a paragraph of prose; the label
+// opening a LIST ITEM. All three get the same treatment: the LABEL (the leading
+// strong run) is set as a muted small-caps label. Nothing else is touched.
+//
+// ⚠️ ONLY THE LABEL, NEVER A FRAME AROUND THE BLOCK. The first version drew a left
+// rule round "the label plus the list it introduces". A site review (19 Oct 2026)
+// found the frame routinely ENDED PARTWAY THROUGH THE PRICE LIST — the next
+// paragraph went on pricing the same act in other books, outside the frame — so
+// the framed part read as the complete price. That undersells the cost, which is
+// the dangerous direction. A label makes no claim about where the block ends.
+//
+// If the owner wants a frame back, the two honest ways to bound it are:
+//   1. extend it to the next heading or `---` (measured: a third of labels are
+//      followed by further prose before the heading, and in some documents that
+//      prose is the next TACTICAL point, so this frames non-tariff text); or
+//   2. a content-side end marker that authors place, so the boundary is a claim
+//      someone made and a reviewer can check — not a guess by this plugin.
+// Either is the owner's call, not a rendering decision.
+//
+// ⚠️ It stays calmer than the warning panel: no background, no amber.
+// `.warn-inline` runs after the label keep their own amber treatment.
+const COSTS_RE = /^What it costs\b/;
+
+function costsLabel(node) {
+  if (node?.type !== 'paragraph' || node.data?.hName) return null;
+  const first = node.children?.[0];
+  return first?.type === 'strong' && COSTS_RE.test(toText(first).trim()) ? first : null;
+}
+
+function markCosts(children) {
+  visit({ type: 'root', children }, 'paragraph', (node) => {
+    const label = costsLabel(node);
+    if (label) addClass(label, 'costs__label');
+  });
+}
+
+// ------------------------------------------------------------ Essentials
+//
+// Marks the top-level blocks the "Essentials" view keeps, with the class `ess`:
+// the Key focus and Key Takeaways sections whole, and every "In short" line with
+// its heading (and, for an H3, the H2 above it, so the line is never orphaned
+// from its context). The view itself is CSS plus a few lines of script; with no
+// script nothing reads these classes and the whole page shows.
+const KEY_SECTION_RE = /^key (focus|takeaways)$/i;
+
+function markEssentials(children) {
+  let inKey = false;
+  let h2 = -1;
+  const keep = new Set();
+  children.forEach((node, i) => {
+    if (node.type === 'heading' && node.depth <= 2) {
+      inKey = KEY_SECTION_RE.test(toText(node).trim());
+      h2 = i;
+    } else if (node.type === 'thematicBreak' || node.data?.hName === 'details' ||
+               hasClass(node, 'verification-notes')) {
+      // A section ends at a rule, and the trailer is never part of one.
+      inKey = false;
+      return;
+    }
+    if (inKey) keep.add(i);
+    if (hasClass(node, 'in-short')) {
+      keep.add(i);
+      keep.add(i - 1);
+      if (children[i - 1]?.depth === 3 && h2 !== -1) keep.add(h2);
+    }
+  });
+  for (const i of keep) {
+    if (children[i] && children[i].type !== 'html') addClass(children[i], 'ess');
+  }
+}
+
+// ------------------------------------------------------------ reading time
+//
+// Prose words a reader sees, at 230 a minute. EXCLUDED: ```facts blocks, tables,
+// the Sources trailer and the verification notes (both forms), code, raw HTML
+// (which is where a diagram's SVG lives — its <title>/<desc> are not read on
+// screen). Diagram captions ARE counted: they are visible teaching sentences.
+const WPM = 230;
+
+function countWords(node) {
+  if (!node) return 0;
+  if (['table', 'code', 'html', 'image', 'imageReference', 'definition'].includes(node.type)) return 0;
+  if (node.data?.hName === 'dl' || node.data?.hName === 'details') return 0;
+  if (hasClass(node, 'verification-notes')) return 0;
+  if (typeof node.value === 'string') {
+    return node.value.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+  }
+  return (node.children ?? []).reduce((n, c) => n + countWords(c), 0);
+}
+
+function recordReadingTime(children, file) {
+  let words = 0;
+  let essWords = 0;
+  for (const node of children) {
+    const n = countWords(node);
+    words += n;
+    if (hasClass(node, 'ess')) essWords += n;
+  }
+  if (!file.data) return;
+  file.data.astro = file.data.astro || {};
+  file.data.astro.frontmatter = file.data.astro.frontmatter || {};
+  file.data.astro.frontmatter.readingTime = {
+    words,
+    minutes: Math.max(1, Math.round(words / WPM)),
+    essentialsWords: essWords,
+    essentialsMinutes: Math.max(1, Math.round(essWords / WPM)),
+    // The Essentials note names "section summaries" only when this page has one.
+    hasInShort: children.some((n) => hasClass(n, 'in-short')),
   };
 }
