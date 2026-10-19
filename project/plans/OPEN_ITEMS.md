@@ -853,17 +853,7 @@ places in the old plan.
   10. **(Site, owner sign-off)** A one-line "in short" summary at the top of each long section.
   11. **(Site, owner sign-off)** Reading time per page. Also trim or collapse the long Sources trailers on the site.
   - **⚠️ R1 cross-document risk (raised by the DZC agent):** several R1 cuts replace a rule ladder with a pointer to another document (rules_primer, body_contact, special_teams, goaltender, defending_the_rush) while those documents are being cut concurrently. Before committing R1, a cross-document check must confirm that every pointed-at claim still exists at its target, and that each page still voices the safety limbs its own reader needs.
-  - **R1 STATUS (19 Oct, about 09:00).** All 39 documents have been shortened. They are uncommitted in the working tree, and the originals are in the session scratchpad.
-    - **Review-clean (34):** every document that has had its safety review and fixes, EXCEPT rules_primer and the four below.
-    - **rules_primer:** four split reviews returned 11 MAJOR findings, and its author is fixing them.
-    - **In safety review:** uk_rules, how_to_watch_hockey, conditioning_and_recovery, core_principles.
-    - **Pattern found in almost every review:** a shortened summary layer said "can" where the book says "must". The cut had also dropped scope limbs: USAH 624(b)(1) classes, "boards or goal frame", 602(a) "plan on a match", the Hockey Canada head-first harsher-of-two ruling, and the In-House Rule 76 faceoff.
-    - **Before commit:**
-      1. rules-verifier on all new fix text. The first pass found 2 cheaper-than-book items (gm net-off 25.2, defender IIHF 43); both are now fixed.
-      2. Cross-document pointer check.
-      3. Gates, then build.
-      4. Review record.
-      5. commit-gate.
+  - **R1 DONE (19 Oct).** All 39 documents have been shortened and reviewed. The record is in project/reviews/readability_r1_2026-10-19.md. Prose went from 1,068,411 to 794,955 words. Next is R2: apply programme items 1–6 to the first 20 documents, which had the v1 brief only.
   - **[R1 corpus-claim leftovers] Sweep each of these claims across sibling documents, by claim and not by line.**
     - (a) "From behind ends your game in every book but USA Hockey's" is wrong at the boards: USAH Casebook 608 Situation 1 makes it mandatory there.
     - (b) Goalie injury stoppage: "every book stops play" leaves out the possession gate in five books (NHL/IIHF/PWHL 8.1, USAH 206(a), HC 2.4(b)).
@@ -872,6 +862,23 @@ places in the old plan.
     - (e) switching_positions Check-yourself Q7 says the CARHA source differs, but it teaches the same thing.
     - (f) USAH 610(d) deliberate net displacement is not covered in game_management.
     - (g) HC 8.6 versus 8.7: a puck-first slide may be priced as clipping. This is a reading and needs a ruling.
+    - (h) "A screen outside the crease keeps the goal" is false under NHL/PWHL/IIHF 69.1 "by positioning". Check ozp, winger, center and scanning.
+    - (i) The IIHF "twenty" major+GM count: 2026/27 Table 5 has 22. Check sibling documents.
+    - (j) CARHA's mandatory goalie charge applies "in the crease OR if it injures" (52(b)). Siblings may carry only one limb.
+    - (k) "Pick up a teammate's stick off the ice" is NHL 10.3 only; HC 3.2(b) and CARHA 51(b) forbid it. Check sibling documents.
+    - (l) uk_rules KT17 omits these EIHL Casebook 46 limbs: a second instigation in the same game, an instigator outside the periods, the 10-fight threshold, 46.13 jersey off, and 46.2 fighting after the original altercation.
+    - (m) uk_rules "26 m minimum width" overstates width. KT21 drops UKCG's "within 24 hours" for 111.
+    - (n) Check the corpus for the claims fixed in R1 batch 3:
+      - contact outside the crease costs the goal (HC 8.5 Interp 1, CARHA 66(b), USAH 617(c)(4))
+      - a USAH match penalty suspends until a hearing (405(c))
+      - UKCG says not left alone for 24 hours
+      - 614(c)(2)/(4)
+      - Situation 5 avoidable contact
+      - a downed player is not moved
+    - (o) Run a site-reviewer pass in a browser on the R1 pages, which were checked only by --panels and --bare.
+    - (p) special_teams :1084/:1104 render as amber panels (pre-existing).
+    - (q) conditioning :590 says "plan on a match" for a reckless USAH check. That is harsher than 604(e)'s "may" (safe direction), so align it with the owner's 602(a) ruling wording.
+    - (r) core_principles :130 ("can cost the goal wherever you stand") versus the glossary's "normally legal" screen outside the crease: reconcile the NHL/PWHL/IIHF framing across pages.
   - **Rollout:** the 20 documents in flight in R1 have the shortening brief only. The queued 19 get preamble_v2 (shortening plus items 1–6). An R2 pass then applies items 1–6 to the first 20.
 - **[OWNER, 19 Oct 2026: SHORTER IS BETTER]** Verbatim: *"make the text as short as possible, I want it to still be clear and easy to understand but shorter text is better then longer text as it is easier and faster to read"*. This is a standing rule for every edit and a readability workstream of its own. Cut words that do no work: repeated qualifiers, restated citations, book tours, throat-clearing, and a second sentence that says the first again. Prefer one short sentence to a long one. Keep every safety limb and honest disclosure (non-negotiables 3 and 4), but say each once and briefly. Rules detail belongs in the body or facts, not repeated in every layer. Measure each document's word count before and after, and review every cut for a lost limb.
 

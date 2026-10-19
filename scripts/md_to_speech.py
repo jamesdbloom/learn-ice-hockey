@@ -1722,7 +1722,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
         re.compile(
             # A dialling context is required on one side or the other. Without it
             # this rule would eat "112 effect sizes" in the same document.
-            r"(?:(?<=\bcall )|(?<=\bdial )|(?<=\bcalling )|(?<=\bring ))"
+            r"(?:(?<=\b[Cc]all )|(?<=\b[Dd]ial )|(?<=\b[Cc]alling )|(?<=\b[Rr]ing )|(?<=\brather than ))"
             r"(?P<num>999|911|112|101|111)\b"
             r"|(?P<pre>\b(?P<num2>999|911|112|111)\b)(?=[ ,]+(?:in|across|from|now|immediately)\b)"
         ),

@@ -1,52 +1,44 @@
 # Practice and Development
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. Almost none of the *content* of
-> this document changes between rule sets. **Two things do.** The first is equipment:
-> England Ice Hockey's *Rules & Regulations* 24.3 make an approved neck guard mandatory
-> *"whilst participating in all on ice activities"* — so under England Ice Hockey it is required at
-> practice and not only in games, as it is in the Elite League (its Casebook Rule 9.12). See [Equipment](equipment.md). The second is what happens
-> when a shot hits your goaltender's mask, where every book stops play for an injured goalkeeper but in stand-up hockey only two trigger on the hit itself —
-> see [During the drill](#during-the-drill). What else changes
-> is how much ice you get, and that is the constraint this document is really about. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Almost nothing in this document changes between rule sets, with **two exceptions**. The first is equipment: England Ice Hockey's *Rules & Regulations* 24.3 make an approved neck guard mandatory *"whilst participating in all on ice activities"* — so under England Ice Hockey it is required at practice and not only in games, as it is in the Elite League (its Casebook Rule 9.12). See [Equipment](equipment.md). The second is what happens when a shot hits your goaltender's mask — see [When a shot hits the goalie's mask](#when-a-shot-hits-the-goalies-mask). **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Skating](../technique/skating.md) · [Puck Handling](../technique/puck_handling.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Shooting](../technique/shooting.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Risk Management](../hockey-iq/risk_management.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Time and Space](../hockey-iq/time_and_space.md) · [Conditioning and Recovery](conditioning_and_recovery.md) · [How to Watch Hockey](how_to_watch_hockey.md) · [Mental Game](mental_game.md) · [UK and England Rules](../foundation/uk_rules.md)
 
 ## Key focus
 
-**Give every repetition a specific goal, and find out before the next one whether it worked.** Get an outside eye on it — a coach, a training partner, or a phone on a tripod — because you cannot see your own stride, and that is the part amateurs leave out and the part that costs most.
+**Give every rep a specific goal, and find out before the next one whether it worked.** Get an outside eye on it — a coach, a training partner or a phone on a tripod. You cannot see your own stride.
 
-**Do your drill reps at game pace, once you are fit to.** Half-speed reps build half-speed skills, and the gap between practice pace and game pace is where players discover their technique does not survive. If a drill is too fast to do cleanly at full speed, that is the drill working correctly — don't cheat the rep to make it look tidy.
+**Do your drill reps at game pace, once you are fit to.** Half-speed reps build half-speed skills. If a drill is too fast to do cleanly at full speed, the drill is working — don't cheat the rep to make it look tidy.
 
-**Work at the edge of what you can do, and take the hard side.** Weak-side stops, backhand receptions, your bad-hand corner. If you succeed at a rep every time, you are performing it, not practising it — the reps you need are the ones that make you look bad.
+**Work at the edge of what you can do, and take the hard side.** Weak-side stops, backhand receptions, your bad-hand corner. If you succeed every time, you are performing, not practising.
 
-**Keep your head up on every puck-handling rep, at home above all.** Thousands of head-down reps in a kitchen make head-down the habit that surfaces under pressure, and you will spend months unlearning it. Look at the television or at numbers on the wall, never at the puck, and pick a spot with room to swing.
+**Keep your head up on every puck-handling rep, at home above all.** Head-down reps in a kitchen become the habit that surfaces under pressure. Look at the television or numbers on the wall, and pick a spot with room to swing.
 
-**Put an opponent in the rep, even a passive one.** A drill with nobody defending trains the pass but not when to make it. A defender allowed to take away a single option turns it into a decision, and deciding is the half of hockey almost nobody practises.
+**Put an opponent in the rep, even a passive one.** A defender allowed to take away one option turns a drill into a decision — the half of hockey almost nobody practises.
 
-**If you get a say in how ice time is spent, ask for small-area games.** A live game in a restricted space puts the puck on your stick far more often than a lineup drill does, which is why USA Hockey builds much of its development material around them. A full game hands you very little time on the puck however good you are, so anything that raises your touches beats another rep in a queue.
+**If you get a say in how ice time is spent, ask for small-area games.** A live game in a small space puts the puck on your stick far more often than a lineup drill, which is why USA Hockey builds much of its development material around them.
 
-**Spend your practice on what limits you most, which is usually skating.** The order used here is skating, then puck handling, then passing and receiving, then shooting. That is the common coaching default rather than a law of hockey; a realistic alternative is to fix whatever is actively costing you most, and a goaltender's list is different again, so ask what your coach prioritises. Whichever order you take, give edge work the first ten minutes, before the puck comes out — left alone, you will take shots and avoid edges.
+**Spend your practice on what limits you most, which is usually skating.** The order here — skating, puck handling, passing and receiving, then shooting — is a common coaching default. The alternative is to fix whatever costs you most, and a goalie's list differs; ask your coach. Either way, edge work goes first.
 
-**Change one thing at a time, and decide it is permanent before you start.** It will feel worse before it feels better, and most players abandon the change right before it would have started to pay off. Judge it on a retention test — the skill tried cold, a week later, at the start of a session — rather than on how the session felt.
+**Change one thing at a time, and decide it is permanent before you start.** It will feel worse before it feels better. Judge it on a cold retest a week later, not on how the session felt.
 
-**Aim at your goalie's pads and glove, never the head, and shoot from where the drill puts you rather than walking in to ten feet.** Their job, unlike everyone else's in the drill, is not to move out of the way. ⚠️ **Don't count on the whistle to protect them** — in most rulebooks play stops only once a referee judges the goalie hurt, and a cage makes that hard to see.
+**Aim at your goalie's pads and glove, never the head, and shoot from where the drill puts you rather than walking in.** ⚠️ **Don't count on the whistle to protect them** — in most rulebooks play stops only once a referee judges the goalie hurt, often only once the shooters lose the puck, and a cage makes that hard to see.
 
-**Progress volume or intensity gradually, never both at once.** The most common way amateurs get hurt while developing is not contact but a sudden jump in training load — a coaching observation rather than a measured ranking, and no reason to take contact less seriously. That jump usually comes in the first week back from a layoff, when your competitiveness returns faster than your tissue does, so come back at low volume.
+**Raise volume or intensity gradually, never both at once.** A sudden jump in load — often in the first week back from a layoff — is the commonest way developing amateurs get hurt. That is a coaching observation, and no reason to take contact less seriously.
 
 ## Overview
 
-**Build every hour around one thing, and find out whether it worked.** One thing you are working on, a way of finding out this rep whether it worked, and difficulty set just past what you can already do reliably. The piece amateurs leave out is the outside eye, and it is the piece that decides whether the rest does anything at all: you cannot see your own stride, so a coach, a training partner or a phone on a tripod is not a luxury — it *is* the feedback, and without feedback you are rehearsing your errors rather than removing them. Counting the hours instead tells you nothing. The 10,000-hour rule was never a research finding, and the violinist study it was drawn from did not replicate — a null rather than a reversal, which shows that accumulated hours do not rank people, not that practice is unimportant. So *"I skate three times a week"* is not a measure of your development; what you worked on, and how you knew whether it worked, is.
+**Practice works when every rep has a goal and feedback.** Without an outside eye you rehearse your errors rather than removing them. Counting hours tells you nothing: the 10,000-hour rule was never a research finding, and the violinist study behind it did not replicate. That was a null rather than a reversal — hours do not rank people, but practice still matters.
 
-**Practise the way the game will ask you to play.** A half-speed rep builds a half-speed skill, a head-down rep builds a head-down habit, and a drill with nobody defending trains the pass but not when to make it. So do the rep at full speed even when it gets messy, keep your eyes off the puck on every handling rep — at home above all, because a drill you do badly, often enough, is worse than not doing it at all — and put an opponent in the drill, even a passive one allowed to take away a single option. That is also why small-area games are the best use of the ice you get: a full game hands even the best players about a minute on the puck, and a live game in a small space puts it on your stick far more often and puts a decision in every touch.
+**Practise the way the game will ask you to play.** Half-speed reps, head-down reps and drills with no defender each build a habit the game punishes. That is why small-area games are the best use of the ice you get: even the best players get about a minute on the puck in a full game, and a small space puts a decision in every touch.
 
-**Take the hard side, and spend what little practice you have on what limits you most.** The reps you need are the ones that make you look bad — weak-side stops, backhand receptions, your bad-hand corner. The ordering used here — skating, then puck handling with your head up, then passing and receiving, then shooting — is a common coaching default rather than a law of hockey, and one realistic alternative is simply to fix whatever is actively costing you games. Notice that it runs close to the reverse of the order in which those things are fun, which is the standing problem with self-directed practice: left alone, you will take shots and avoid edges. Put the edge work first in the session, while you still have the will to do it.
+**Spend your scarce practice on what limits you most.** The recommended order runs close to the reverse of what is fun, so left alone you will take shots and avoid edges. Do the edge work first, while you still have the will.
 
-**Change one thing at a time, and expect it to cost you before it pays you.** Improvement is a staircase rather than a line, and a rebuilt movement pattern is worse than the grooved one it replaced for a while — rebuild your stride and your shot in the same month and both get worse at once. Because how a session *felt* is a poor guide to what you learned, the decision to stick with a change has to be made before you start and reviewed on a cold retention test — not on the drive home, and not at the bottom of the dip, which is where players give up on it.
+**Expect a change to cost you before it pays.** Improvement is a staircase, and a rebuilt movement is worse for a while than the one it replaced. Most players quit at the bottom of that dip, so decide in advance and judge on a cold retest.
 
-**Most of the volume has to happen off the ice, so make it the kind that transfers.** Off-ice work earns its place by reproducing what the real task actually demands, which is why head-up stickhandling and wall passing buy so much and agility ladders so little. Build the week you will actually keep in your worst week, not your best one.
+**Most of your volume will happen off the ice, so make it the kind that transfers.** Head-up stickhandling and wall passing buy a lot; agility ladders buy little. Build the week you will keep in your worst week.
 
-**Keep your goalie and your own tissue in one piece, because development stops when someone is hurt.** In a drill, aim at the goalie's pads and glove and shoot from where the drill puts you: their job is not to get out of the way, and the whistle is not a reliable safety net. For yourself, the most common way a developing amateur gets hurt is not contact but a sudden jump in training load, most often in the first week back from a layoff — so raise volume or intensity gradually, never both at once. That ranking is a coaching observation, not a measured one, and it is no reason to worry less about contact.
+**Development stops when someone is hurt.** Protect your goalie in drills, and protect your own tissue by raising load gradually.
 
 ---
 
@@ -54,65 +46,69 @@
 
 ### Deliberate practice versus repetition: the difference
 
-**Before every rep, name the one thing you are trying to do and how you will know whether it worked.** You can do something a thousand times and improve once. **Repetition** is doing the thing again. **Deliberate practice** is doing the thing again *differently*, because you found out what was wrong with the last one.
+**Before every rep, name the one thing you are trying to do and how you will know whether it worked.** **Repetition** is doing the thing again. **Deliberate practice** is doing it again *differently*, because you found out what was wrong with the last one.
 
-The framework comes from the psychologist K. Anders Ericsson, whose work identified a specific and demanding kind of training. Its defining features are:
+The framework comes from the psychologist K. Anders Ericsson. Its defining features are:
 
-1. **A well-defined task with a specific goal.** Not "work on my shot." "Hit the far post from the top of the circle, on my forehand, off a pass, ten times in a row."
-2. **Immediate feedback.** You must find out *this rep* whether it worked and, ideally, why. Without feedback you're rehearsing your errors.
-3. **Operating at the edge of your ability.** Just beyond what you can currently do reliably. If you're succeeding every time, you're performing, not practising.
+1. **A well-defined task with a specific goal.** Not "work on my shot" but "hit the far post from the top of the circle, on my forehand, off a pass, ten times in a row."
+2. **Immediate feedback.** You must find out *this rep* whether it worked. Without feedback you're rehearsing your errors.
+3. **Operating at the edge of your ability.** If you're succeeding every time, you're performing, not practising.
 4. **Correction and repetition.** Change one thing, try again, keep what works.
-5. **Design and instruction.** Ericsson's original account assumes tasks set by a teacher who can see faults you can't.
+5. **Design and instruction.** Ericsson's original account assumes a teacher who can see faults you can't.
 
-That last point is the one amateurs skip and the one that costs most. You cannot see your own skating stride. A coach, a training partner, or a phone on a tripod can.
+That last point is the one amateurs skip and the one that costs most. You cannot see your own stride. A coach, a training partner or a phone on a tripod can.
 
 ### What the evidence actually supports — and what it doesn't
 
-**The "10,000 hours rule" is a popularisation, not a research finding.** The figure comes from Malcolm Gladwell's reading of Ericsson's 1993 study of violinists, in which the best group had accumulated roughly that many hours of practice *on average by around age 20*. It was a group mean, not a threshold, not a guarantee, and not a target. Ericsson himself publicly rejected the way the number was used, on the grounds that Gladwell did not distinguish deliberate practice from merely spending time in the activity — a distinction that is the whole point of the theory.
+**The "10,000 hours rule" is a popularisation, not a research finding.** It comes from Malcolm Gladwell's reading of Ericsson's 1993 study of violinists, in which the best group had averaged roughly that many hours of practice by around age 20. It was a group mean, not a threshold or a target. Ericsson himself rejected the way the number was used, because it ignored the difference between deliberate practice and merely spending time.
 
-**And Ericsson's 1993 violinist study itself did not replicate.** Macnamara and Maitra (*Royal Society Open Science*, 2019) ran a direct replication with 39 violinists against the original's 30, this time double-blind. They report: *"We did not replicate Ericsson et al.'s major result of 'complete correspondence between the skill level of the groups and their average accumulation of practice time alone with the violin'."* (Their bracketed reference numbers and the page citation are left out of the quotations here.) **Read their actual result carefully, because it is a null, not a reversal:** they report *"no statistically significant differences in accumulated practice alone to age 18 between the best and good violinists"*. The descriptive observation they add is narrower than it is usually retold — *"the majority of the best violinists had accumulated less practice alone than the average amount of the good violinists"* — which is a statement about a majority against an average, not a finding that the best practised less. And the effect shrank: *"Ericsson et al.'s comparison of practice alone between the best and good violinists combined as a single group and the less accomplished violinists explained 48% of the variance in performance. Our comparison of practice alone among the three groups explained 26% of the variance, which is similar to 23%, the meta-analytic average amount of performance variance explained by deliberate practice in the music domain."* Their conclusion has two limbs, and the second is the sharper one: that deliberate practice *"explains substantially less variance in performance among expert violinists than reported in the original study"*, and that *"among more accomplished, elite performers, amount of deliberate practice cannot account for why some individuals acquire higher levels of expert performance than others"*.
+**And the 1993 violinist study itself did not replicate.** Macnamara and Maitra (*Royal Society Open Science*, 2019) re-ran it double-blind with 39 violinists against the original's 30. *"We did not replicate Ericsson et al.'s major result"*, they report, and they found *"no statistically significant differences in accumulated practice alone to age 18 between the best and good violinists"*. (Their bracketed reference numbers and the page citation are left out of the quotations here.)
 
-That is worth sitting with. The founding study of the whole 10,000-hours idea, re-run more carefully, does not show what it was said to show. This does not mean practice is unimportant — 26% of variance is still a lot for one factor. It means the specific claim that accumulated hours *rank* people is the part that failed.
+That is a null, not a reversal: it does not show that the best practised less. The variance explained fell from 48% in the original to 26%. Their conclusion: among elite performers, *"amount of deliberate practice cannot account for why some individuals acquire higher levels of expert performance than others"*.
 
-**Deliberate practice explains real but limited variance.** A meta-analysis by Macnamara, Moreau and Hambrick (2016), covering 63 effect sizes across sports, found that deliberate practice accounted for **18% of the variance in sports performance** (95% confidence interval 12–25%), leaving 82% unexplained. Broken down by skill level — **an analysis the authors ran on adult athletes only**, because skill is classified differently for youth players — it explained 19% among sub-elite athletes, 29% in mixed samples, and a statistically non-significant **1% among elite athletes**, though that elite estimate rests on only six effect sizes and 228 people, so treat it as a signal, not a settled number. That adult restriction is in your favour here: it is the population this document is written for, which is not true of every figure in this section. An earlier meta-analysis by the same group across domains (2014) put the overall figure at 12%: 26% for games, 21% for music, 18% for sports, 4% for education, and under 1% for professions.
+So practice still matters — 26% is a lot for one factor. What failed is the claim that accumulated hours *rank* people.
 
-Two more findings from the 2016 paper worth knowing:
+**Deliberate practice explains real but limited variance.** A 2016 meta-analysis by Macnamara, Moreau and Hambrick, covering 63 effect sizes across sports, put it at **18% of the variance in sports performance** (95% confidence interval 12–25%). Among adult athletes it explained 19% at sub-elite level and a non-significant **1% among elite athletes** — though that elite figure rests on only six effect sizes and 228 people. The adult-only analysis matches the readers of this document. An earlier cross-domain analysis (2014) put the overall figure at 12%, with 18% for sports.
 
-- **Team sports and individual sports came out roughly the same** (17% and 19%), as did open-skill and closed-skill sports (17% and 19%). Hockey is not a special case in either direction.
-- **Higher-skilled athletes did not, on average, start their sport earlier in childhood** than lower-skilled athletes. The "you had to start at four" story is not supported by this data.
+Two more findings from the 2016 paper:
 
-**The dispute is live, and it matters which side you take practical advice from.** Ericsson published a direct reply arguing the meta-analysis had defined deliberate practice so broadly that it swept in "virtually any type of sport-specific activity, such as group activities, watching games on television, and even play and competitions" — which, if true, would drag the estimate down. The two camps do not agree on how much practice explains, and it would be too neat to say they do. What they disagree about is mostly *what counts as practice*: Macnamara's group counts broadly and gets a small number, Ericsson counts narrowly and gets a large one. Neither position, though, gives you a reason to value an unstructured hour — so for a player planning a session the practical upshot is the same either way: **the structure of the hours is what does the work.** Take that as the reading that survives the dispute, not as a settled point of agreement between the parties to it.
+- **Team and individual sports came out roughly the same** (17% and 19%). Hockey is not a special case.
+- **Higher-skilled athletes did not, on average, start their sport earlier.** The "you had to start at four" story is not supported.
+
+**The dispute is live.** Ericsson replied that the meta-analysis counted almost any sport activity as practice — "group activities, watching games on television, and even play and competitions" — which would drag the estimate down. The two camps still disagree on how much practice explains, mostly over *what counts as practice*. Neither gives you a reason to value an unstructured hour, so the practical reading that survives the dispute is: **the structure of the hours does the work.**
 
 ### What this means for you
 
 Do not conclude "practice doesn't matter." Conclude these three things instead:
 
-- **Nothing guarantees an outcome.** Some of the remaining 82% is genetics, some is coaching, some is the age you started, some is measurement error, and some is luck. Practise because it reliably moves *you* forward, not because it will make you a specific thing.
-- **The type of practice beats the amount.** An honest 20 minutes with a goal and feedback beats two hours of unfocused shooting. That is the reading both sides of the variance argument are consistent with — but neither side has tested it as a head-to-head claim about session design, so treat it as a reasonable inference rather than a measured finding or a formal consensus.
-- **Effort in the absence of feedback is close to worthless.** If you cannot tell whether a rep was good, fix that before you add reps.
+- **Nothing guarantees an outcome.** Genetics, coaching, starting age and luck all play a part. Practise because it moves *you* forward.
+- **The type of practice beats the amount.** An honest 20 minutes with a goal and feedback beats two hours of unfocused shooting. That is a reasonable inference from both sides of the argument, not a tested finding.
+- **Effort without feedback is close to worthless.** If you cannot tell whether a rep was good, fix that before you add reps.
 
 ### One popular idea that is contested, not settled
 
-You will be told to practise **randomly** rather than in **blocks** — that instead of taking fifty wrist shots then fifty snap shots, you should interleave them, because the extra difficulty produces better long-term retention even though it makes you look worse in the session. This is the **contextual interference** effect, and it is one of the most widely repeated pieces of coaching science.
+You will be told to practise **randomly** rather than in **blocks** — to interleave wrist shots and snap shots instead of taking fifty of each, because the extra difficulty supposedly improves long-term retention. This is the **contextual interference** effect.
 
-It holds up well in laboratory tasks. **It holds up much less well in real physical education and sport settings.** A 2024 critical systematic review and multilevel meta-analysis by Ammar and colleagues in *Educational Psychology Review* examined 36 studies and 183 pooled performance outcomes and found that only **20% of outcomes agreed with the predicted contextual-interference pattern**. There was no significant overall difference between blocked and random practice for improvement during the acquisition phase, and although random practice did come out ahead on the change from post-test to retention, the authors judged the difference "not large enough" to produce a greater long-term gain overall. Their conclusion was that there is "very limited evidence supporting the recommendation to employ high CI practices to gain a longer-term performance advantage" in physical education and sport. That paper has itself drawn a published commentary in the same journal — Czyż (2025) — and it is a call for refinement rather than a rebuttal: it **commends** Ammar's group for *"significant advancements"* on their earlier work, while asking for wider database coverage, for pre-registration, and for clearer rules about which studies count as contextual-interference practice at all. **Only its abstract could be obtained here, so whether the full text presses harder than that is unknown.** What is not in dispute is that the question is open: Ammar's own paper ends by calling the generalisation of the contextual-interference model to physical education and sport into question, and asking for high-quality follow-up research on alternative motor-learning models.
+It holds up well in the laboratory and **much less well in real sport.** A 2024 meta-analysis by Ammar and colleagues in *Educational Psychology Review* pooled 36 studies and 183 outcomes and found only **20% matched the predicted pattern**. Random practice came out ahead on retention, but not by enough for a greater long-term gain. Their conclusion: "very limited evidence supporting the recommendation to employ high CI practices to gain a longer-term performance advantage" in physical education and sport.
 
-What to do with that, practically:
+A published commentary, Czyż (2025), commends Ammar's group and asks for refinements — wider database coverage, pre-registration, clearer rules on which studies count. **Only its abstract could be obtained here.** Either way the question is open, and Ammar's own paper asks for better follow-up research.
 
-- **Don't treat interleaving as a law.** Anyone telling you blocked practice is useless is overstating the evidence considerably.
-- **Blocked practice has an obvious job**: getting a brand-new movement pattern roughly right, where you need consecutive attempts to feel a correction.
-- **Varied practice has an obvious job too**: making a skill usable in the messy, unpredictable conditions of a game, which is a specificity argument rather than a contextual-interference one and doesn't depend on this literature at all.
-- **A sensible default:** blocked when learning something new, varied and random once it roughly works. That is coaching craft, and it is consistent with the evidence without over-claiming from it.
+What to do with that:
+
+- **Don't treat interleaving as a law.** Anyone telling you blocked practice is useless is overstating the evidence.
+- **Blocked practice gets a new movement roughly right**, because you need consecutive attempts to feel a correction.
+- **Varied practice makes a skill usable in a messy game.** That is a specificity argument, and it doesn't depend on this literature.
+- **A sensible default:** blocked when learning something new, varied once it roughly works. That is coaching craft, consistent with the evidence.
 
 ### One popular idea to drop entirely
 
-**"Learning styles" do not hold up.** The idea that you are a "visual learner" or a "kinaesthetic learner" and should be taught accordingly was examined in a major review by Pashler, McDaniel, Rohrer and Bjork (2008) — a review of **classroom education**, not of sport or motor skill; no hockey-specific test of the idea was found for this document — which found "virtually no evidence" for the pattern the theory requires and concluded there is "no adequate evidence base to justify incorporating learning-styles assessments into general educational practice." If a coach explains something in a way you don't get, ask for a different explanation because that explanation was unclear — not because you belong to a category.
+**"Learning styles" do not hold up.** Pashler, McDaniel, Rohrer and Bjork (2008) found "virtually no evidence" for the idea that you are a "visual" or "kinaesthetic" learner. That was a review of **classroom education**, not sport, and no hockey test of the idea was found. If a coach's explanation doesn't land, ask for a different one because it was unclear — not because you belong to a category.
 
 ### One popular idea that does hold up — with a precondition attached
 
-**Trying to produce an answer, and failing, teaches you more than reading the right answer does — provided you are then shown the right answer.** That last clause is not a footnote. It is the difference between a large effect and no effect at all, and it is the half that usually gets dropped.
+**Trying to produce an answer, and failing, teaches you more than reading the right answer — provided you are then shown the right answer.** That last clause is the difference between a large effect and none, and it usually gets dropped.
 
-The finding is the **testing effect**, also called retrieval practice. Roediger and Karpicke (*Psychological Science*, 2006) had 120 Washington University undergraduates study short prose passages and then either restudy them or take free-recall tests on them — **with no feedback** — before a final test 5 minutes, 2 days or 1 week later. The result reverses with time:
+This is the **testing effect**, or retrieval practice. Roediger and Karpicke (*Psychological Science*, 2006) had 120 undergraduates study prose passages, then either restudy them or take recall tests **with no feedback**, before a final test later:
 
 | Final test | Restudied | Tested |
 |---|---|---|
@@ -120,24 +116,22 @@ The finding is the **testing effect**, also called retrieval practice. Roediger 
 | 2 days later | 54% | **68%** |
 | 1 week later | 42% | **56%** |
 
-Their second experiment is starker. Students who read a passage four times recalled **40%** of it a week later; students who read it once and were tested three times recalled **61%** — having read it 3.4 times on average against 14.2. The authors' summary: *"Testing is a powerful means of improving learning, not just assessing it."*
+In their second experiment, students who read a passage four times recalled **40%** a week later; students who read it once and were tested three times recalled **61%**. The authors: *"Testing is a powerful means of improving learning, not just assessing it."*
 
-**Notice the first row of that table, because it is the whole lesson.** At five minutes, restudying wins. Testing looks worse at exactly the moment you would be deciding whether it is working — the same trap as a technique rebuild, three sections down. This is why Robert Bjork files it under **desirable difficulties** (Bjork, 1994; Bjork and Bjork, 2011): conditions that depress performance now and raise retention later.
+**Notice the first row.** At five minutes, restudying wins — testing looks worse at exactly the moment you would judge it. Robert Bjork calls this a **desirable difficulty**: something that depresses performance now and raises retention later.
 
-**How big is it?** Rowland's meta-analysis (*Psychological Bulletin*, 2014) pooled **159 effect sizes** and found **g = 0.50 (95% confidence interval [0.42, 0.58])** for testing over restudying. That is a moderate effect and not a universal one — **18% of the effect sizes were negative**, meaning restudying won outright in nearly one comparison in five. Two of his moderators matter to you:
+**How big is it?** Rowland's meta-analysis (*Psychological Bulletin*, 2014) pooled **159 effect sizes** and found **g = 0.50 (95% confidence interval [0.42, 0.58])** for testing over restudying — moderate, and **18% of the effect sizes were negative**. Two moderators matter:
 
-- **The delay.** g = 0.41 [0.31, 0.51] when the final test came less than a day later, against **g = 0.69 [0.56, 0.81]** at a day or more. The benefit is a *retention* benefit; it barely exists in the short term.
-- **How you test.** Cued recall — you are given a prompt and have to produce the answer — **g = 0.61 [0.52, 0.69]**; recognition, picking the right answer out of a set, **g = 0.29 [0.10, 0.47]**, roughly half. **Carry the awkward third figure alongside those two:** *free* recall, which is also producing an answer, came out at **g = 0.29 [0.07, 0.52]** in the same data set — level with recognition. Rowland reads that as a confound rather than a weakness of free recall: free-recall studies used feedback far less often (11% of effect sizes against 44% of the cued-recall ones) and had lower initial test performance, and in the subset of studies that controls for both, cued recall (g = 0.72) and free recall (g = 0.81) each clearly beat recognition (g = 0.36). Producing an answer does beat recognising one — but the clean version of that claim rests on the cued-recall comparison rather than on the raw ranking.
+- **The delay.** g = 0.41 when the final test came less than a day later, **g = 0.69** at a day or more. It is a *retention* benefit.
+- **How you test.** Cued recall — producing an answer to a prompt — scored **g = 0.61**; recognition, picking from a set, **g = 0.29**. Free recall also scored 0.29, level with recognition. Rowland reads that as a confound — free-recall studies used feedback less often and had lower initial scores — and where both are controlled, cued (0.72) and free recall (0.81) each clearly beat recognition (0.36).
 
-**Now the precondition.** Rowland also breaks the no-feedback studies down by how often people actually managed to retrieve the answer, and the bottom falls out. Where fewer than half the attempts succeeded and no feedback followed, the effect was **g = 0.03, confidence interval [−0.21, 0.27]**, across 17 effect sizes — an interval straddling zero, which is to say: nothing measurable. Where feedback was given it was **g = 0.73 [0.61, 0.86]** across 52 effect sizes, the largest cell in his table.
+**Now the precondition.** Where fewer than half the attempts succeeded and no feedback followed, the effect was **g = 0.03, confidence interval [−0.21, 0.27]** — nothing measurable. Where feedback was given it was **g = 0.73**, the largest cell in his table.
 
-Kornell, Hays and Bjork (*Journal of Experimental Psychology: Learning, Memory, and Cognition*, 2009) tested the wrong-answer case head-on, using questions engineered so that almost nobody could answer them, and found that a failed retrieval attempt still beat spending the same time studying the answer. But they stated the condition in their own words: unsuccessful tests are *"helpful, not hurtful (with the stipulation that providing feedback is critical)."* They also refuse the strong version of the claim — their findings *"do not imply that unsuccessful tests and successful tests are equally effective or that they are necessarily effective for the same reasons"*.
+Kornell, Hays and Bjork (2009) found that even a failed attempt beats spending the same time studying the answer. Unsuccessful tests are *"helpful, not hurtful (with the stipulation that providing feedback is critical)."* And Huelser and Metcalfe (*Memory & Cognition*, 2012) found *"no benefit was derived from generating an error when the cue and target were unrelated."* A considered wrong answer works; a wild guess does not.
 
-One further boundary: the wrong answer has to be in the right neighbourhood. Huelser and Metcalfe (*Memory & Cognition*, 2012) had Columbia undergraduates learn word pairs — 60 of them in Experiment 1, 30 in Experiment 2 — and found that *"no benefit was derived from generating an error when the cue and target were unrelated."* The gain appeared only where cue and target were semantically related, and Experiment 2 replicated that in a within-participants design. Metcalfe's later review (*Annual Review of Psychology*, 2017) collects the finding; it did not measure it. A considered wrong answer works; a wild guess does not.
+**Where this stops — well short of the ice.** Every study above used **verbal material with university undergraduates**. None measured a motor skill or was done in a sport. Van Gog and Sweller (2015) argue the effect *"may disappear altogether"* for complex material; published rebuttals were not read here, so treat that dispute as **open**. Bjork and Bjork add that a difficulty becomes undesirable *"if the learner does not have the background knowledge or skills to respond to them successfully"*.
 
-**Where this stops — and it stops well short of the ice.** Every study above used **verbal material: prose passages, trivia questions, word pairs, with university undergraduates.** None of it measured a motor skill, none of it was done in a sport, and none of it was done in hockey. Rowland's weakest category is the one furthest from words (g = 0.27 [0.06, 0.48], seven effect sizes), and van Gog and Sweller (*Educational Psychology Review*, 2015) argue that the effect shrinks as material gets more complex and *"may disappear altogether"* for highly interactive material — a position that drew published rebuttals in the same issue, which are not read here, so treat that dispute as **open**. Bjork and Bjork attach a limit of their own: a desirable difficulty turns into an undesirable one *"if the learner does not have the background knowledge or skills to respond to them successfully"*.
-
-**So the testing effect is a finding about learning things you read, not about grooving a stride.** It applies to the material in a guide like this one — systems, reads, rules, priority lists — and there is no evidence here that it applies to your shot. Use it where it belongs: when you reach a set of questions, answer them before you read on, be willing to be wrong, and then go and check. **The checking is the part that does the work.**
+**So the testing effect is about learning things you read, not grooving a stride.** Use it on systems, reads and rules: when you reach a set of questions, answer them before you read on, then check. **The checking is the part that does the work.**
 
 ---
 
@@ -145,182 +139,172 @@ One further boundary: the wrong answer has to be in the right neighbourhood. Hue
 
 ### Improvement is not a line
 
-It is a staircase with long flat sections and the occasional step down. Most players' mental model is a smooth upward curve, and that model makes them quit at exactly the wrong moment. **Judge your progress over months, not over sessions.**
+It is a staircase with long flat sections and the occasional step down. Most players picture a smooth upward curve, and that picture makes them quit at exactly the wrong moment. **Judge your progress over months, not sessions.**
 
-The classic textbook picture — the smooth "power law of practice" — is itself partly an artefact of averaging. Heathcote, Brown and Mewhort (2000) argued in a paper pointedly titled *The power law repealed* that individual learning curves are better described by an exponential function, and that the familiar smooth shape emerges from averaging across people rather than describing any one of them. **Nobody's real learning curve looks like the diagram.** (That paper is reported here at the level of its central claim only — no figures or effect sizes are quoted from it.)
+Even the textbook smooth "power law of practice" is partly an artefact of averaging. Heathcote, Brown and Mewhort argued in *The power law repealed* (2000) that the smooth shape comes from averaging across people rather than describing any one of them. (That paper is reported here at the level of its central claim only.)
 
 ### Plateaus are normal, and some are useful
 
 A plateau usually means one of four things:
 
-- **Consolidation.** The skill is becoming automatic and stops feeling like it's changing. This one resolves on its own.
-- **You've hit the ceiling of the current technique.** You've optimised a flawed movement as far as it goes. The only way up is a rebuild, which will feel like going backwards (see below).
-- **You've stopped operating at the edge.** You're now practising what you can already do, because that's more enjoyable. This is the most common cause and the easiest to fix.
-- **A hidden limiter.** Very often it is skating. A shot that won't improve is frequently a balance problem, not a hands problem.
+- **Consolidation.** The skill is becoming automatic. This resolves on its own.
+- **You've hit the ceiling of the current technique.** The only way up is a rebuild, which will feel like going backwards.
+- **You've stopped operating at the edge.** You're practising what you can already do. This is the most common cause and the easiest to fix.
+- **A hidden limiter.** Very often skating. A shot that won't improve is frequently a balance problem, not a hands problem.
 
-Diagnose before you grind. Adding volume to a plateau caused by the second or fourth reason is wasted effort and an injury risk.
+Diagnose before you grind. Adding volume to the second or fourth kind is wasted effort and an injury risk.
 
 ### New techniques feel worse before they feel better
 
-When you change a movement pattern — a wider stride, a different hand position on the stick, receiving with your feet moving instead of stopped — **your performance drops immediately and stays down for a while.** You have thrown away a well-grooved, mediocre motor programme and replaced it with a raw one. For a period, you are worse than you were.
+When you change a movement — a wider stride, a different hand position, receiving with your feet moving — **your performance drops and stays down for a while.** You have swapped a grooved, mediocre pattern for a raw one. That is not a sign the change is wrong; it is what learning a change looks like.
 
-This is not a sign the change is wrong. It is what learning a change looks like.
-
-Research on the **learning-versus-performance distinction** underwrites this directly. Soderstrom and Bjork's 2015 review in *Perspectives on Psychological Science* set out the evidence that how well you perform *during* practice is an unreliable index of how much you have actually learned: performance can improve while learning doesn't, and learning can occur with no visible performance gain. They also note that people routinely misread their in-session performance as a good predictor of long-term retention. In plain terms: **the session that feels worst is often the one that taught you most, and the session that felt great may have taught you nothing.**
+Soderstrom and Bjork's 2015 review in *Perspectives on Psychological Science* backs this directly. How well you perform *during* practice is an unreliable guide to what you learned, and people routinely mistake one for the other. **The session that feels worst is often the one that taught you most.**
 
 ### Why players abandon changes right before they'd have worked
 
 The sequence is always the same:
 
 1. A coach changes something. Week one is awful.
-2. Week two is slightly less awful, but still worse than the old way.
-3. There's a game. Under pressure, the old pattern reappears, because it's still the faster one to retrieve.
-4. The player concludes the change "doesn't work for me" and reverts — usually somewhere between week two and week five, which is typically just before the new pattern would have started to outperform the old one.
+2. Week two is less awful, but still worse than the old way.
+3. In a game, under pressure, the old pattern reappears, because it is still faster to retrieve.
+4. The player decides the change "doesn't work for me" and reverts — usually between week two and week five, just before the new pattern would have paid off.
 
-**That two-to-five-week window is coaching observation, not measurement** — no study was found for this document that times when players give up on a technique change, or when a rebuilt movement pattern overtakes the old one, so take the shape of the curve and not the weeks marked on it.
+**That two-to-five-week window is coaching observation, not measurement** — no study was found that times it. Take the shape of the curve, not the weeks.
 
-Three defences against this:
+Three defences:
 
-- **Decide the change is permanent before you start**, and set a review date far enough out — a couple of months, not a couple of skates.
-- **Separate practice from performance.** Use the new technique in every drill and every stick-and-puck; allow yourself to fall back on the old one in games for the first few weeks. Trying to change technique mid-game is how you end up doing neither well.
-- **Judge on a retention test, not on how it felt.** Try the skill cold at the start of a session a week later. That is closer to a measure of learning than anything you feel mid-session.
+- **Decide the change is permanent before you start**, and set a review date a couple of months out, not a couple of skates.
+- **Separate practice from performance.** Use the new technique in every drill and every stick-and-puck, and allow yourself the old one in games for the first few weeks.
+- **Judge on a retention test, not on how it felt.** Try the skill cold at the start of a session a week later.
 
 ### Focus your attention outside your body
 
-**Cue yourself on what the puck or the ice should do, not on what your body parts should do:** "**drive the puck through the far post**" rather than "rotate my wrists," and "**push the ice away sideways**" rather than "extend my leg." Coaches give internal cues constantly because they are easier to say; translating them into external ones in your own head costs nothing.
+**Cue yourself on what the puck or the ice should do, not on your body parts:** "**drive the puck through the far post**" rather than "rotate my wrists", "**push the ice away sideways**" rather than "extend my leg". Coaches give internal cues because they are easier to say; translating them costs you nothing.
 
-That is the **external focus of attention** effect, a widely repeated motor-learning finding reviewed by Gabriele Wulf in *Attentional focus and motor learning: a review of 15 years* (2013). Broadly: cueing yourself about the *effect* of a movement in the environment produces better learning than cueing yourself about your own body parts.
+This is the **external focus of attention** effect, reviewed by Gabriele Wulf (2013). **But it is not settled science.** McKay and colleagues' 2024 meta-analysis in *Psychological Bulletin* found **"moderate to strong evidence of publication bias for all analyses."** Corrected for that bias, the effects were negligible — g = 0.01 for performance, 0.15 for retention, 0.09 for transfer. In their words, the effects are *"small to nil."*
 
-**But do not file this under settled science, which is how it is almost always presented.** In 2024 McKay and colleagues published a robust Bayesian meta-analysis and systematic review of the same literature in *Psychological Bulletin* and found **"moderate to strong evidence of publication bias for all analyses."** Corrected for that bias, the estimated effects were negligible — g = 0.01 for performance, 0.15 for retention, 0.09 for transfer — with Bayes factors favouring the null in every analysis. Their conclusion, in their own words, was that *"focus of attention appears to have a variety of effects that we cannot account for, and, on average, those effects are small to nil."*
-
-The practical reading: external cues are free, harmless and a reasonable default, but **if an internal cue is the only way you can feel a correction, use it.** See [Mental Game](mental_game.md), which covers the same dispute for in-game self-talk. (Wulf 2013 is cited here for its central argument only, with no effect size attached to it.)
+So external cues are free and a reasonable default, but **if an internal cue is the only way you can feel a correction, use it.** [Mental Game](mental_game.md) covers the same dispute for self-talk. (Wulf 2013 is cited here for its central argument only.)
 
 ---
 
 ## What to Practise, in Priority Order
 
-> **This ordering is a coaching choice, not a rule of hockey.** It is the order recommended here for a typical amateur skater. A realistic alternative is *fix what is actively costing you*: if you are a competent skater who cannot receive a pass, the drill you need is not edge work. A third alternative is position-led: a goaltender's priority list is different again (see [Goaltender](../positions/goaltender.md)). Find out what your own coach prioritises and why.
+> **This ordering is a coaching choice, not a rule of hockey.** It suits a typical amateur skater. A realistic alternative is *fix what is actively costing you*: a good skater who cannot receive a pass does not need edge work. A goaltender's list is different again (see [Goaltender](../positions/goaltender.md)). Find out what your coach prioritises and why.
 
 ### 1. Skating — because it multiplies everything else
 
-Skating is the only skill used on every second of every shift. Every other skill is performed *while* skating and is capped by it. A wrist shot with your feet stopped and a wrist shot in stride are different actions. Improve your skating and your passing, shooting, checking and defending all improve with it, because you're doing them from a more stable platform with more time.
+Skating is used on every second of every shift, and every other skill is performed *while* skating. Improve it and your passing, shooting, checking and defending all improve, because you do them from a more stable platform with more time.
 
-Specifically, the highest-leverage items for most amateurs are **knee bend, outside edges, stopping both ways, and backward crossovers**. Full technique is in [Skating](../technique/skating.md).
+The highest-leverage items for most amateurs are **knee bend, outside edges, stopping both ways and backward crossovers**. Full technique is in [Skating](../technique/skating.md).
 
 ### 2. Puck handling with your head up
 
-The skill is not moving the puck. The skill is **moving the puck while looking at something else.** A player who can stickhandle beautifully with their eyes down is, in a game, a player who cannot stickhandle — because they cannot see the check coming, the open teammate, or the ice ahead.
-
-Everything you do in this category should be done with your eyes off the puck. Full technique in [Puck Handling](../technique/puck_handling.md).
+The skill is not moving the puck. It is **moving the puck while looking at something else.** A player who stickhandles beautifully with their eyes down cannot see the check, the open teammate or the ice ahead. Do every rep with your eyes off the puck. Full technique in [Puck Handling](../technique/puck_handling.md).
 
 ### 3. Passing and receiving
 
-**Receiving is the more neglected half and the more valuable one.** Most turnovers at amateur level are not bad passes; they are good passes that bounced off a rigid stick blade. A pass received cleanly and moved in one touch is the single most destructive thing an amateur team can do to a defence, because it moves the puck faster than defenders can shift. **Which skill amateurs neglect most, what causes their turnovers, and what a clean one-touch reception is worth are all coaching observations rather than measured findings** — nobody has counted how players split their reps, and no tally of amateur turnovers by cause was found for this document.
+**Receiving is the more neglected half and the more valuable one.** Most amateur turnovers are not bad passes but good ones that bounced off a rigid blade. A pass received cleanly and moved in one touch shifts the puck faster than defenders can follow. **These are coaching observations** — no count of how players split their reps, or of amateur turnovers by cause, was found.
 
-Practise: soft hands (giving with the puck), receiving on your backhand, receiving with your feet moving, and one-touch redirection. Full technique in [Passing and Receiving](../technique/passing_and_receiving.md).
+Practise soft hands, receiving on your backhand, receiving with your feet moving, and one-touch redirection. Full technique in [Passing and Receiving](../technique/passing_and_receiving.md).
 
 ### 4. Shooting
 
-Shooting matters — but it is fourth, and it is fourth for most players by a wide margin. You will shoot perhaps five times a game: USA Hockey's 2002 puck-possession study — set out in the small-area games section below — recorded **4.22 to 5.44 shots per game per player** across every group it measured, Olympic men and women down to 12-and-Under, with **five of its six figures above 5**. You will skate for the whole game.
+Shooting matters, but it is fourth by a wide margin. You will shoot perhaps five times a game — USA Hockey's 2002 puck-possession study (see small-area games below) recorded **4.22 to 5.44 shots per game per player** across every group, with **five of its six figures above 5**. You skate the whole game.
 
-When you do practise it, practise the parts you actually use: shooting **off a pass**, shooting **in stride**, shooting **quickly** rather than hard, and changing the release point. Full technique in [Shooting](../technique/shooting.md).
+When you practise it, practise the shots you use: **off a pass**, **in stride**, **quickly** rather than hard, with a varied release point. Full technique in [Shooting](../technique/shooting.md).
 
 ### What to practise: the honest point
 
-**Most players practise shooting most because it is fun, and skating least because it is hard, boring and public** — a coaching observation rather than a counted one. Shooting gives instant, satisfying feedback: the puck goes in or it doesn't, and nobody watches you do it badly. Edge work is uncomfortable, makes your legs burn, and makes you look like a beginner in front of your teammates.
+**Most players practise shooting most because it is fun, and skating least because it is hard, boring and public** — a coaching observation. Shooting gives instant feedback and nobody watches you miss. Edge work burns and makes you look like a beginner.
 
-This is exactly backwards. The ranking of *enjoyment* is almost the inverse of the ranking of *value*. You do not have to fix that entirely — practice you don't do is worth nothing, so some fun is functional — but you should notice it, and you should deliberately front-load the unpleasant work into the start of a session while you still have the will to do it.
+That is backwards: the ranking of fun is almost the inverse of the ranking of value. Some fun is functional, because practice you skip is worth nothing. But put the unpleasant work at the start of the session, while you still have the will.
 
 ---
 
 ## Off-Ice Practice That Genuinely Transfers
 
-The governing principle is **specificity**: practice transfers to the extent that it reproduces the demands of the real task — not just the movement, but the *information* you use to guide it. This is the core of what Pinder, Davids, Renshaw and Araújo (2011) called **representative learning design**: a training task should preserve the informational constraints of the performance environment, or you learn to perform a task that doesn't exist.
+The principle is **specificity**: practice transfers to the extent that it reproduces the real task — the movement and the *information* you use to guide it. Pinder, Davids, Renshaw and Araújo (2011) call this **representative learning design**.
 
-Judge every off-ice tool against that. Below is an honest ranking. Note that this is reasoning from the specificity principle plus coaching consensus — **direct experimental evidence that any specific off-ice hockey drill improves on-ice performance is thin**, and where evidence exists it is noted.
+The ranking below reasons from that principle plus coaching consensus. **Direct evidence that any off-ice hockey drill improves on-ice performance is thin**, and where it exists it is noted.
 
-**A scope note, since some of what follows will suit a reader with no ice time yet:** everything below is about which off-ice training methods build skill that carries onto the ice, not about whether your practice space is safe. Clearance from people, windows and glass, footing, and supervision for a child are judgements for whoever is there to make — this document has not assessed them. And however well something transfers, none of it replaces ice time; it is what makes the ice time you already have, or the ice time you are working toward, count for more.
+**A scope note:** this section is about whether a method builds skill that carries onto the ice, not whether your practice space is safe. Clearance from people, windows and glass, footing, and supervision for a child are for whoever is there to judge — this document has not assessed them. And none of it replaces ice time.
 
 ### Stickhandling with a ball or puck — transfers well
 
-Your hands do very nearly the same thing off ice as on. This is the highest-value off-ice practice there is, it costs nothing, and it can be done in a kitchen.
+Your hands do nearly the same thing off ice as on. This is the highest-value off-ice practice there is, it costs nothing, and it fits in a kitchen.
 
 - **Use a slide board, smooth floor, tile or shooting pad**, not carpet.
-- **A ball rolls and bounces; a puck slides.** Balls are better than nothing and good for soft hands; a weighted or slick training puck on a smooth surface is closer to the real thing. Use both.
-- **Enforce the head-up rule ruthlessly.** Put the television on, or a piece of paper on the wall with numbers to call out. Fifteen minutes head-up beats an hour head-down, and the hour head-down is actively harmful (see the next section).
+- **A ball rolls and bounces; a puck slides.** Balls are good for soft hands; a slick training puck on a smooth surface is closer to the real thing. Use both.
+- **Enforce the head-up rule ruthlessly.** Put the television on, or numbers on the wall to call out. Fifteen minutes head-up beats an hour head-down, and the hour head-down is actively harmful (see the next section).
 
 ### Shooting into a net off a shooting pad — transfers reasonably well
 
-Release mechanics, weight transfer and hand path all carry over. The pad matters: shooting off concrete wrecks the blade and teaches you to chop at the puck.
+Release, weight transfer and hand path all carry over. Use a pad: shooting off concrete wrecks the blade and teaches you to chop at the puck.
 
-Its limits are real, though. **You cannot practise shooting in stride, off a live pass, under pressure, or with a goalie reading you.** A shooting pad trains the mechanics of the shot and nothing about when to take it. Treat it as a mechanics tool, and get the decision-making part on ice.
-
-Also useful: shooting-pad surfaces have more friction than ice, so the puck is slightly harder to move. That is fine — it just means your on-ice shot will feel easier, not that your pad numbers mean anything.
+But **you cannot practise shooting in stride, off a live pass, under pressure or against a goalie.** A pad trains the mechanics, not when to shoot. Pads also have more friction than ice, so your on-ice shot will feel easier — your pad numbers mean little.
 
 ### Wall passing and rebounders — transfers well, and it's underrated
 
-A wall, a kickboard or a passing rebounder gives you **hundreds of receptions in ten minutes with instant feedback**, which is exactly the shape of deliberate practice. Given that receiving is the more neglected half of passing — a coaching observation rather than a measured finding — the return is very high for the effort.
+A wall or a rebounder gives you **hundreds of receptions in ten minutes with instant feedback** — exactly the shape of deliberate practice. Since receiving is the more neglected half of passing (a coaching observation), the return is high.
 
-The limit: a wall returns a flat, predictable, on-your-forehand pass. Real passes arrive bouncing, behind you, in your feet, and on your backhand. Vary your angle and distance, and force yourself to receive on the backhand half the time.
+The limit: a wall returns a flat, predictable forehand pass. Real passes arrive bouncing, behind you and on your backhand. Vary angle and distance, and take half on the backhand.
 
 ### Slide boards — transfers moderately, for one specific thing
 
-A slide board trains the **lateral push and the recovery of the leg back underneath you**, plus the adductor and abductor loading that a hockey stride demands and running does not. That's a genuine and specific match.
-
-What it cannot give you is edges, glide, or balance on a quarter-inch of steel. It is a strength-and-pattern tool that supports skating; it is not skating practice.
+A slide board trains the **lateral push and the recovery of the leg back underneath you**, and the adductor loading that running does not. It cannot give you edges, glide or balance on a blade. It supports skating; it is not skating practice.
 
 ### Synthetic ice — transfers well for edge work, with caveats
 
-Synthetic panels are the closest off-ice surface to the real thing, and edge work, crossovers, tight turns and transitions all carry over.
+Synthetic panels are the closest off-ice surface to ice, and edge work, crossovers, tight turns and transitions carry over.
 
-Be honest about the differences: **synthetic ice has more friction than real ice**, so each push takes more effort and the glide is shorter, and it dulls steel considerably faster. That means (a) your timing on the ice will feel different — usually easier, and (b) you need to budget for sharpening or use a dedicated pair of skates. Panel quality varies enormously; a cheap surface is a different sport.
+But **synthetic ice has more friction**, so each push takes more effort and the glide is shorter. It also dulls steel much faster, so budget for sharpening or use a dedicated pair of skates. Panel quality varies enormously.
 
 ### Roller and inline hockey — good for hands and reads, contested for skating
 
-**What transfers well is not controversial:** puck control in tight space, passing, vision and small-area decision-making. Inline is typically played four-a-side on a smaller surface, which forces close-quarters handling and quick decisions — the same argument made below for small-area games. Conditioning carries over too.
+**What transfers well is not controversial:** puck control in tight space, passing, vision and quick decisions. Inline is usually four-a-side on a smaller surface, which forces close-quarters play — the same argument as for small-area games.
 
-**What transfers badly, or not at all, is the skating.** Wheels grip in a way blades don't, there is no true edge, and — the big one — **you cannot hockey stop.** Inline players stop with drags, T-stops and turns. Two coaching sources arrive at the same recommendation — play both — and disagree about what the skating costs you on the way there. One states the cost plainly: *"Stopping and turning is a whole different game, and many players who were smooth on wheels need to go back to the basics for a while to develop their ice stride and quick stops"*, adding that this is *"not a bad thing — it's just part of the process"*, that the puck skills carry over, and that experience on both surfaces is an advantage. The other says there is no cost at all — that modern inline skating builds mechanics which *"translate seamlessly to the rink"* — and names professionals who grew up doing both. **Neither is evidence.** Both are coaching opinion, and the one arguing there is no cost is a rec league's own article promoting a youth roller programme it is trying to launch, whose appeal to "studies" names none. **No study of roller-to-ice transfer is cited here.** The safe reading: play roller for the hands, the head and the fun, but do not count it as skating practice, and expect your first ice session back to feel wrong.
+**What transfers badly is the skating.** Wheels grip differently, there is no true edge, and **you cannot hockey stop** — inline players stop with drags, T-stops and turns.
+
+Two coaching sources both recommend playing both, and disagree about the cost. One says players smooth on wheels often *"need to go back to the basics for a while to develop their ice stride and quick stops"*. The other says inline mechanics *"translate seamlessly to the rink"* — but it is a rec league promoting a youth roller programme, and its appeal to "studies" names none. **Neither is evidence, and no study of roller-to-ice transfer is cited here.** Play roller for the hands, the head and the fun, but don't count it as skating practice.
 
 ### Off-ice conditioning — supports, does not substitute
 
-Strength, sprinting and single-leg work make you a better athlete on the ice, and one controlled study (Novák and colleagues, 2019, *Journal of Sports Science and Medicine*) found that **off-ice agility training did transfer to on-ice agility — but that on-ice training was probably more effective**, particularly for *reactive* agility, where you have to respond to something. The authors recommended doing both.
+Strength, sprinting and single-leg work make you a better athlete on the ice. One controlled study (Novák and colleagues, 2019) found that **off-ice agility training did transfer to on-ice agility — but on-ice training was probably more effective**, especially for *reactive* agility. The authors recommended both.
 
-**Read that study's size before you lean on it.** It is **14 players, aged 14.8 ± 0.45 years, all from the same team at a single Czech academy**, split into two groups of seven in a four-week crossover. That is the *entire* experimental evidence base for this section — and this document is written for adult amateurs, not for post-pubescent academy juniors on nine years of training history. A fourteen-player result from one youth team is a reasonable straw in the wind about the direction of transfer; it is not a finding you should treat as settled, and it is certainly not measured on people your age. The recommendation to do both stands mainly because it is the obviously sensible thing to do, not because it has been demonstrated. See [Conditioning and Recovery](conditioning_and_recovery.md).
+**Read its size before you lean on it:** **14 players, aged 14.8, from one team at a single Czech academy**, split into two groups of seven. That is the *entire* experimental evidence for this section, and it was not measured on adults. Doing both stands mainly because it is sensible, not because it has been shown. See [Conditioning and Recovery](conditioning_and_recovery.md).
 
 ---
 
 ## Off-Ice Practice That Transfers Less Than People Think
 
-**The scope note above still applies here.** Some of what follows is done at home too — an empty net in a driveway, cone weaves in a garage — and this section, like the last one, is only about whether the practice transfers to your game, not about whether the space is safe to do it in. See [the note in the previous section](#off-ice-practice-that-genuinely-transfers) for what this document has and hasn't assessed.
+**The scope note above applies here too.** This section is only about whether practice transfers, not whether your driveway or garage is safe to do it in. See [the note in the previous section](#off-ice-practice-that-genuinely-transfers).
 
 ### The correlation trap
 
-A 2024 study in *Frontiers in Sports and Active Living* (Rice and colleagues) found that a wide range of off-ice fitness tests — sprint speed, jump power, single-leg strength, VO₂max, agility — correlated significantly with on-ice performance measures in young male players, while nine of its thirty-three off-ice variables correlated with nothing at all: height, grip strength (either hand or combined), curl-ups, trunk flexibility, and **Wingate-derived absolute power — minimum, mean and peak**. Read that last one carefully, because the same test in *relative* terms did predict skating speed, acceleration and agility. What failed was raw wattage, not anaerobic power as such.
+A 2024 study (Rice and colleagues, *Frontiers in Sports and Active Living*) found that many off-ice fitness tests — sprint speed, jump power, single-leg strength, VO₂max, agility — correlated with on-ice performance in young male players. Nine of its thirty-three variables correlated with nothing: height, grip strength, curl-ups, trunk flexibility, and **Wingate-derived absolute power — minimum, mean and peak**. The same Wingate test in *relative* terms did predict skating speed, so what failed was raw wattage.
 
-That is genuinely useful for testing. It is **not** a training prescription, and it is very commonly misread as one. Fast people on land are fast on the ice; it does not follow that making yourself faster on land makes you faster on the ice, and the study cannot tell you that. It also used eleven players, mean age 10.5 years and none older than 11.2, which is a very small sample and not the population reading this. Be careful with anyone who cites off-ice testing correlations as proof that their off-ice programme works.
+That is useful for testing. It is **not** a training prescription. Fast people on land are fast on the ice; it does not follow that getting faster on land makes you faster on the ice. The study also had only eleven players, mean age 10.5. Be careful with anyone who cites testing correlations as proof that their programme works.
 
 ### Things that transfer less than advertised
 
-- **Agility ladders for "quick feet."** A ladder trains rapid, small, vertical steps on the balls of the feet. A skating stride is a long lateral push through an edge. The movements barely overlap. Ladders have some general coordination and warm-up value; they are not skating practice, and the transfer argument for them is weak on specificity grounds.
-- **Balance boards for "edge control."** They train standing balance on a stationary base. Edge control is pressure management through a moving blade under load, while accelerating. Related, not the same.
-- **Static cone weaves and dry-land dangles.** You get very good at the drill. There is no defender, no time pressure and no consequence, which are the three things that make stickhandling hard in a game.
-- **Stationary shooting from one spot at an empty net, forever.** You build a shot you can only take when nobody is there. Vary the spot, add movement, shoot off a pass, shoot on a two-count.
-- **Watching highlights.** Enjoyable, and not the same as structured video review (below). Highlights show you outcomes; review shows you decisions.
-- **Wrist rollers, stick weights and grip trainers.** Marginal at best. Shot power in hockey comes from the legs, the torso and the flex of the stick, not from forearm strength.
+- **Agility ladders for "quick feet."** A ladder trains small, vertical steps; a stride is a long lateral push through an edge. Some warm-up value, weak transfer.
+- **Balance boards for "edge control."** Standing balance on a still base is not pressure through a moving blade. Related, not the same.
+- **Static cone weaves and dry-land dangles.** No defender, no time pressure, no consequence — the three things that make stickhandling hard in a game.
+- **Stationary shooting from one spot at an empty net.** You build a shot you can only take when nobody is there. Vary the spot, add movement, shoot off a pass.
+- **Watching highlights.** Highlights show outcomes; video review (below) shows decisions.
+- **Wrist rollers, stick weights and grip trainers.** Marginal at best. Shot power comes from the legs, the torso and the stick's flex.
 
 ### The unlearning problem — the serious caution
 
 Some off-ice practice is worse than useless because **it builds a habit you will later have to remove, and removing a habit is much harder than building one.**
 
-The three that matter:
+- **Head-down stickhandling.** By far the biggest. Thousands of head-down reps make it the automatic pattern, and automatic patterns surface under pressure. Undoing it takes months, and your handling gets *worse* while you do.
+- **Practising slowly and comfortably.** Skills are speed-specific. If you only handle the puck at 60% pace, that is the pace you own. Include reps faster than you can control cleanly.
+- **Grooving a compensation.** Take 10,000 shots with a bad weight transfer and you own a durable bad weight transfer. **Get the technique checked before you add volume** — the best argument for a few coaching sessions early.
 
-- **Head-down stickhandling.** By far the biggest one. Thousands of head-down reps at home make the head-down pattern the automatic one. In a game, under pressure, automatic patterns are what surface. You will then need months to undo it — and, per the section above on relearning, your handling will get *worse* while you do.
-- **Practising slowly and comfortably.** Skills are speed-specific to a real degree. If you only ever handle the puck at 60% pace with no pressure, that is the pace at which you own the skill. Include reps that are faster than you can control cleanly.
-- **Grooving a compensation.** If your shot is powered by a bad weight transfer and you take 10,000 shots on a pad, you now have a very durable bad weight transfer. **Get the technique checked before you add volume.** This is the strongest practical argument for a few coaching sessions early rather than late.
+**The largest version of this problem is a change of position**, where habits correct in your old job work against you. [Switching Positions](../positions/switching_positions.md) catalogues them.
 
-**The largest version of this problem is a change of position**, where the habits working against you were correct in your old job and are automatic under pressure. [Switching Positions](../positions/switching_positions.md) catalogues them switch by switch.
-
-A simple filter before you adopt any off-ice drill: *if I do this five thousand times, what habit will I own?* If the answer is a habit you'd have to break, don't do it. Change the drill instead, so the answer is different.
+Before adopting any off-ice drill, ask: *if I do this five thousand times, what habit will I own?* If it is one you'd have to break, change the drill.
 
 ---
 
@@ -328,17 +312,17 @@ A simple filter before you adopt any off-ice drill: *if I do this five thousand 
 
 ### Why they are the best use of ice time
 
-A **small-area game** is a live game played in a restricted space — a zone, a corner, between the blue lines, cross-ice — usually with fewer players, often with added constraints. USA Hockey builds much of its development material around them, describing them as "an excellent option to help create competition while improving a player's skills in game-like situations."
+A **small-area game** is a live game in a restricted space — a zone, a corner, cross-ice — usually with fewer players and often with added constraints. USA Hockey builds much of its development material around them, calling them "an excellent option to help create competition while improving a player's skills in game-like situations."
 
-The volume argument is stark. USA Hockey ran a puck-possession study at the 2002 Olympic Winter Games and the 2002 Youth Tier I National Championships, and publishes it as a single page of summary figures. **It states no method, no number of players and no definition of a puck touch**, so read these as the governing body's own report rather than as a study you can go and check:
+The volume argument is stark. USA Hockey ran a puck-possession study at the 2002 Olympic Winter Games and the 2002 Youth Tier I National Championships. **It publishes one page of figures and states no method, no number of players and no definition of a puck touch**, so read them as the governing body's own report:
 
-- **2002 Olympic men's gold-medal game:** an average of 19:37 of ice time, 25.6 shifts, **1:01.4 of puck possession**, 40.3 puck touches, 19 passes attempted and 5.3 shots per player.
+- **2002 Olympic men's gold-medal game:** 19:37 of ice time, 25.6 shifts, **1:01.4 of puck possession**, 40.3 puck touches, 19 passes attempted and 5.3 shots per player.
 - **12-and-Under national championship (45-minute game):** 16:02 of ice time, 21 shifts, **38.4 seconds of puck possession**, 31.8 puck touches.
-- Across every level measured, **the maximum average possession time in a single game was 1:12** — and that figure is the **women's Olympic per-game average** (18:36.8 of ice time, 26.27 shifts, 48.86 puck touches), not a men's number. The men's per-game average was 1:07.05.
+- Across every level, **the highest average possession in a single game was 1:12** — the **women's Olympic per-game average**, not a men's number. The men's per-game average was 1:07.05.
 
-If a full game gives the best players in the world one minute with the puck, a full-ice drill where you queue for ninety seconds to take one rep gives you almost nothing. Shrink the space and cut the numbers, and puck contacts per player go up several-fold — a coaching estimate rather than a counted one; no comparison of touches per player between a small-area game and a full-ice drill was found for this document.
+If a full game gives the best players in the world a minute with the puck, a full-ice drill where you queue for ninety seconds gives you almost nothing. Shrink the space and cut the numbers, and touches per player go up several-fold — a coaching estimate; no count comparing the two was found.
 
-The mechanism is easier to see than to describe. Below are the same six **skaters** arranged two ways — first queueing for a single puck across the whole sheet, then all six of them in the game at once inside one zone, with a goaltender in the net they are playing on.
+Below are the same six **skaters** arranged two ways — first queueing for one puck across the whole sheet, then all six in the game at once inside one zone, with a goaltender in the net they are playing on.
 
 ![](diagram:practice-the-line-and-one-rep)
 
@@ -346,70 +330,78 @@ The mechanism is easier to see than to describe. Below are the same six **skater
 
 ### What they train that drills cannot
 
-A drill removes the opponent, or makes the opponent's behaviour known in advance. That is exactly the information you need to learn to read. In representative-learning-design terms, a drill without a live defender has removed the informational constraint that the skill exists to solve.
+A drill removes the opponent, or makes their behaviour known in advance — which removes exactly the information you need to learn to read. Small-area games are the only format that trains all of these together:
 
-Small-area games are the only practice format that trains all of these together:
-
-- **Reading a live, unpredictable opponent** and choosing between options under real time pressure.
-- **Timing your support** rather than just knowing where to stand — see [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
-- **Manufacturing and exploiting separation** in a space that keeps taking it away — see [Time and Space](../hockey-iq/time_and_space.md).
-- **Deception**, which only exists when there's someone to deceive.
-- **Puck protection under genuine contact** — see [Body Contact and Battles](../technique/body_contact_and_battles.md).
+- **Reading a live opponent** and choosing between options under time pressure.
+- **Timing your support**, not just knowing where to stand — see [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
+- **Making and using separation** in a space that keeps taking it away — see [Time and Space](../hockey-iq/time_and_space.md).
+- **Deception**, which needs someone to deceive.
+- **Puck protection under real contact** — see [Body Contact and Battles](../technique/body_contact_and_battles.md).
 - **Scanning**, because the picture changes constantly — see [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md).
-- **Compete level**, which is a trainable habit and only trains when there's something to win.
+- **Compete level**, which only trains when there is something to win.
 
 ### Being honest about the evidence
 
-Development bodies are enthusiastic; the research is supportive but weak, and it's mostly not about hockey.
+Development bodies are enthusiastic; the research is supportive but weak, and mostly not about hockey.
 
-- A 2021 systematic review and meta-analysis (Clemente and colleagues, *Frontiers in Psychology*) found a **significant beneficial effect of small-sided game training on technical execution** in young team-sport players (effect size 0.59) — but only six studies qualified, five of them soccer, and **none of the six measured tactical or decision-making outcomes at all.**
-- An umbrella review the same year (Clemente, Afonso and Sarmento, *PLOS ONE*) assessed twelve reviews of small-sided games and rated **seven as low quality and five as critically low quality**, with heavy soccer concentration and little work on psychological variables.
+- A 2021 meta-analysis (Clemente and colleagues, *Frontiers in Psychology*) found a **beneficial effect of small-sided games on technical execution** in young players (effect size 0.59). But only six studies qualified, five of them soccer, and **none measured decision-making.**
+- An umbrella review the same year (Clemente, Afonso and Sarmento, *PLOS ONE*) rated **seven of twelve reviews low quality and five critically low**.
 
-So: the claim that small-area games build decision-making is **highly plausible, near-universally believed by coaches, consistent with the theory, and under-tested.** Use them. Don't cite research you don't have.
+So the claim that small-area games build decision-making is **highly plausible, near-universally believed by coaches, and under-tested.** Use them. Don't cite research you don't have.
 
 ### Making them work
 
-- **Constrain deliberately.** One-touch only; no passes above the dots; must complete three passes before scoring; the puck must go below the goal line first. Each constraint forces a specific behaviour without a coach shouting it.
+- **Constrain deliberately.** One-touch only; three passes before scoring; the puck must go below the goal line first. Each constraint forces a behaviour without a coach shouting it.
 - **Keep the numbers low.** 2-on-2 and 3-on-3 give far more touches than 4-on-4.
-- **Play them at the *end* of practice as competition, or the middle as teaching** — but keep the shifts short (30–45 seconds) or the quality collapses.
-- **Rec and beer-league note:** most rec teams get one ice slot with no practice at all. If that's you, ask whether your rink runs stick-and-puck or drop-in small-area sessions; they are usually the cheapest and highest-value ice you can buy. ([Getting Started](../getting-started/getting_started.md) explains what stick-and-puck, drop-in and shinny each usually mean, what gear each requires, and what to ask at the desk.)
+- **Keep the shifts short** (30–45 seconds), whether you play them at the end as competition or in the middle as teaching, or the quality collapses.
+- **No team practice?** Most rec teams get one ice slot and no practice. Ask whether your rink runs stick-and-puck or drop-in small-area sessions — usually the cheapest, highest-value ice you can buy. [Getting Started](../getting-started/getting_started.md) explains what each session type means and what gear it needs.
 
 ---
 
 ## Making the Most of Team Practice
 
-> **The habits in this section are coaching craft, not research findings.** They are what experienced players and coaches do with a practice; no study of how much two players get out of the same session was found for this document.
+> **The habits in this section are coaching craft, not research findings.** No study of how much two players get out of the same session was found.
 
-Two players do the same 60-minute practice and one of them gets three times as much from it — an illustration of how wide that gap gets, not a measured multiple. The difference is almost entirely habits, not talent.
+Two players do the same practice and one gets far more from it — the gap is habits, not talent.
 
 ### Before it starts
 
-- **Get on the ice early.** Ten extra minutes of edge work or shooting, twice a week, is more focused skill work than the practice itself will contain.
-- **Know what you're working on today.** One thing. Written down if necessary. Without it you will default to doing whatever the drill asks and improving nothing.
+- **Get on the ice early.** Ten extra minutes of edge work, twice a week, is more focused skill work than the practice itself contains.
+- **Know your one thing for today.** Without it you will do whatever the drill asks and improve nothing.
 
 ### During the drill
 
-- **Ask what the drill is for** if it isn't obvious. If you don't know the purpose, you will practise the *shape* of the drill and miss the point. A breakout drill is not about skating the pattern; it's about the timing of the support and the quality of the first pass.
-- **Do it at game intensity.** This is the big one. Half-speed reps build half-speed skills, and the gap between practice pace and game pace is where players discover their technique doesn't survive. If a drill is too fast to do cleanly at full speed, that is the drill working correctly.
-- **Take the hard side.** Weak-side stops, backhand receptions, your bad-hand corner. Nobody is watching as closely as you think, and the strong side does not need the reps.
-- **Compete in the compete drills.** Battle drills, 1-on-1s and small-area games are the only place your compete level gets trained. A player who never battles in practice will not battle in a game; the habit isn't there to summon.
-- **Don't cheat the rep.** Curling early, leaving before the pass, coasting the last three strides, taking the shot from four feet closer than the drill intends. Every cheat is a rep of the thing you'll do in a game.
-- **Don't shoot at your goalie's head, and don't fire pucks at them from ten feet.** A warm-up and a shooting drill put a goaltender in front of pucks from distances a game rarely produces, and their job — unlike everyone else's in the drill — is not to move out of the way. **Aim at the pads, the glove and the blocker in the warm-up, and shoot from where the drill puts you rather than walking in.** ⚠️ **Do not expect the whistle to cover you if you get it wrong.** Of the six books this guide works from, only two write a stoppage triggered by the hit itself, in the stand-up game, for a goaltender hit on a mask that **stays on** — and both are narrower than they sound: **IIHF Rule 9.6** — the British book — lets the referee stop play *"for safety reasons"* only where they believe the goalkeeper is *"or may be, dazed by that hard shot"* and only *"if there is no immediate scoring chance for the attacking team"*, and it is a *may*; **Hockey Canada Rule 6.18(a)** is a *shall*, but only *"[i]n categories of U13 and below"*, and even there the goal stands *"[if] the puck deflects directly into the goal"*. **The NHL, the PWHL and USA Hockey's stand-up rules write no mask-specific version** — their rules cover a mask that comes **off**, not one that stays on and takes the shot. ⚠️ **What every book does write is a stoppage for an *injured* goalkeeper** — **NHL, IIHF and PWHL Rule 8.1**, **USA Hockey Rule 206(a)**, **Hockey Canada Rule 2.4(b)**, **CARHA Rule 20(d)** — **so the accurate warning is not "no rule covers them" but "every one of those rules waits on a referee judging them hurt, and a goalie in a cage is the hardest player on the ice to judge that on."** ⚠️ **USA Hockey does write the counterpart in one place, and it is not a stand-up rule:** in its **Disabled Hockey** section, under **Sled Hockey**, *"Should a hard shot hit the goalkeeper's facemask while play is in progress, the play may be stopped at the discretion of the Referee only if no immediate scoring chance is presented to the opposing team"* — the IIHF's test almost word for word, in a section that opens *"Sled hockey follows the USA Hockey Official Rules of Ice Hockey, except for some of the equipment"*, so it does not govern the stand-up game. **CARHA, the adult rec book, writes no mask-specific version either** — though its Rule 20(d) Note 1 carries the widest general injury discretion of the six, *"[w]here there is suspicion that a player has sustained an injury"*. See [Goaltender](../positions/goaltender.md) and [Team Play and Culture](team_play_and_culture.md), which carry the rest of it.
+- **Ask what the drill is for** if it isn't obvious. Otherwise you practise its *shape* and miss the point. A breakout drill is about the timing of the support and the first pass, not the skating pattern.
+- **Do it at game intensity.** This is the big one. Half-speed reps build half-speed skills. If a drill is too fast to do cleanly at full speed, it is working.
+- **Take the hard side.** Weak-side stops, backhand receptions, your bad-hand corner. The strong side does not need the reps.
+- **Compete in the compete drills.** Battle drills, 1-on-1s and small-area games are where compete level is trained. A player who never battles in practice will not battle in a game.
+- **Don't cheat the rep.** Curling early, leaving before the pass, coasting the last strides, shooting from closer than the drill intends — every cheat is a rep of what you'll do in a game.
+- **Don't shoot at your goalie's head, and don't fire pucks at them from ten feet.** Their job, unlike everyone else's in the drill, is not to get out of the way. **Aim at the pads, the glove and the blocker, and shoot from where the drill puts you.** ⚠️ **Don't count on the whistle to cover you** — see [When a shot hits the goalie's mask](#when-a-shot-hits-the-goalies-mask).
 
 ### While you're queuing
 
-Half of a typical team practice is standing in a line — a coaching estimate rather than a measured share. That time is not neutral — it is either wasted or used.
+Half of a typical team practice is standing in a line — a coaching estimate. That time is either wasted or used.
 
-- **Watch the rep in front of you and name what you'd do differently.** This is free mental repetition and it's the closest thing to video review you get in real time.
-- **Keep your feet moving.** Standing still for 45 minutes in cold air is how you pull something on your next hard rep, and it wastes conditioning time. See [Conditioning and Recovery](conditioning_and_recovery.md).
-- **Don't lean on your stick.** It's a habit that follows you onto the ice in games, where it means your stick isn't on the ice ready to receive.
+- **Watch the rep in front of you and name what you'd do differently.** It is free mental practice.
+- **Keep your feet moving.** Standing still in cold air is how you pull something on the next hard rep. See [Conditioning and Recovery](conditioning_and_recovery.md).
+- **Don't lean on your stick.** The habit follows you into games, where your stick needs to be on the ice.
 - **Head up.** Practices have loose pucks flying.
-- **Rehearse.** Picture your next rep, specifically — see [Mental Game](mental_game.md).
+- **Rehearse.** Picture your next rep specifically — see [Mental Game](mental_game.md).
 
 ### Afterwards
 
-- **Stay on for five minutes** and do the one thing that went badly, slowly, with no pressure.
-- **Write one line** about what you learned. Memory for practice detail is worse than you think by the next morning.
+- **Stay on for five minutes** and do the thing that went badly, slowly, with no pressure.
+- **Write one line** about what you learned. By the next morning you will have forgotten the detail.
+
+### When a shot hits the goalie's mask
+
+For a goalie, ⚠️ **the whistle is not a safety net for a shot to the mask.** Of the six books this guide works from, only two stop play for the hit itself in the stand-up game, for a mask that **stays on**, and both narrowly:
+
+- **IIHF Rule 9.6** — the British book — lets the referee stop play *"for safety reasons"* only where the goalkeeper is *"or may be, dazed by that hard shot"*, and only *"if there is no immediate scoring chance for the attacking team"*. It is a *may*.
+- **Hockey Canada Rule 6.18(a)** is a *shall*, but only *"[i]n categories of U13 and below"*, and even there the goal stands *"[if] the puck deflects directly into the goal"*.
+- **The NHL, the PWHL, USA Hockey's stand-up rules and CARHA** write no mask-specific stoppage; their rules cover a mask that comes **off**. USA Hockey's one counterpart sits in its **Sled Hockey** section, which does not govern the stand-up game.
+
+**Every book does stop play for an injured goalkeeper** — NHL, IIHF and PWHL Rule 8.1, USA Hockey Rule 206(a), Hockey Canada Rule 2.4(b), and CARHA Rule 20(d), whose Note 1 is the widest of the six: *"[w]here there is suspicion that a player has sustained an injury"*. ⚠️ **But every one waits on a referee judging the goalie hurt, and in five of them play runs on while the shooters have the puck unless the injury looks serious.** A goalie in a cage is the hardest player on the ice to judge. See [Goaltender](../positions/goaltender.md) and [Team Play and Culture](team_play_and_culture.md).
 
 ---
 
@@ -417,15 +409,15 @@ Half of a typical team practice is standing in a line — a coaching estimate ra
 
 ### The key insight
 
-**A skill executed at the wrong moment is worthless — often worse than worthless.** A perfect stretch pass into a covered lane is a turnover. A beautiful toe drag at your own blue line is a two-on-one against. The highest-skilled player on most rec teams is not the most effective one, and this is why.
+**A skill executed at the wrong moment is worthless — often worse.** A perfect stretch pass into a covered lane is a turnover. A toe drag at your own blue line is a two-on-one against. That is why the most skilled player on a rec team is often not the most effective.
 
-Skill is a *capability*. Hockey is a series of *selections* between capabilities under time pressure. Those are separate things, and almost nobody trains the second one.
+Skill is a *capability*. Hockey is a series of *choices* between capabilities under time pressure, and almost nobody trains the second.
 
 ### Why standard drills don't train it
 
-Most drills have exactly one correct answer, known in advance. You skate the pattern, you make the pass to the spot the coach is standing, you shoot. The read has been removed to make the skill practisable — which is legitimate, but it means the drill trains execution only. Practise nothing but drills and you build a player with good hands and no idea when to use them.
+Most drills have one correct answer, known in advance. The read has been removed to make the skill practisable — legitimate, but it trains execution only. Drills alone build a player with good hands and no idea when to use them.
 
-The whole difference is one player. Here is the same rep drawn twice: first with nobody defending, then with a single passive defender added — and with the pass route gone, because taking it away is what his arrival does. Nobody has moved between the two frames.
+The difference is one player. Here is the same rep twice: first with nobody defending, then with one passive defender added — and the pass route gone, because his arrival takes it away. Nobody else has moved.
 
 ![](diagram:drill-execution-no-opponent)
 
@@ -433,72 +425,72 @@ The whole difference is one player. Here is the same rep drawn twice: first with
 
 ### How to train reads
 
-- **Always have an opponent, even a token one.** A passive defender who is allowed to take away *one* option is enough to turn an execution drill into a decision drill.
-- **Add a constraint that forces a scan.** Rule: you must shoulder-check before every reception. Rule: you cannot pass to the player who passed to you. Both force your head up and your options open. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md).
-- **Shrink the space and shorten the clock.** Time pressure is the variable that separates a decision you can make from one you can make in a game.
+- **Always have an opponent, even a token one.** A passive defender allowed to take away *one* option turns an execution drill into a decision drill.
+- **Add a constraint that forces a scan.** Shoulder-check before every reception; never pass back to the player who passed to you. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md).
+- **Shrink the space and shorten the clock.** Time pressure separates a decision you can make from one you can make in a game.
 - **Play small-area games** (above). They are the decision-making gym.
-- **Practise the decision to do nothing.** Amateurs default to action — dumping it, forcing it, shooting it into shins. Rehearse holding the puck for one more beat, or making the boring lateral pass. See [Risk Management](../hockey-iq/risk_management.md).
-- **Decide in advance, off the ice.** Work out what you will do in the recurring situations *before* you're in them: puck on your backhand on the wall with a forechecker closing; receiving at the blue line with a defender stepping up. Pre-decided options are retrieved far faster than options generated live.
+- **Practise doing nothing.** Amateurs default to action — dumping it, forcing it, shooting into shins. Rehearse holding the puck one more beat, or the boring lateral pass. See [Risk Management](../hockey-iq/risk_management.md).
+- **Decide in advance, off the ice.** Work out what you will do in recurring situations — puck on your backhand on the wall with a forechecker closing; receiving at the blue line with a defender stepping up. Pre-decided options come far faster than ones invented live.
 
 ### The read-and-react rehearsal
 
-A cheap and effective off-ice drill: find a game clip, play it, and **pause at the instant a player receives the puck.** Say out loud what you would do and why. Then play on and see what happened. Do this twenty times and you're training the same perceptual skill the game demands, at a speed you can actually think at. Full method in [How to Watch Hockey](how_to_watch_hockey.md).
+Play a game clip and **pause the instant a player receives the puck.** Say out loud what you would do and why, then play on. Do this twenty times and you train the same perceptual skill the game demands, at a speed you can think at. Full method in [How to Watch Hockey](how_to_watch_hockey.md).
 
 ---
 
 ## Video and Self-Review
 
-Video is the cheapest source of the thing deliberate practice most requires and amateurs most lack: **accurate, external feedback.** You cannot see your own stride, your own head position, or the four times you had a passing option and never looked.
+Video is the cheapest source of what amateurs most lack: **accurate, outside feedback.** You cannot see your own stride, your head position, or the four passing options you never looked at.
 
-- **Film one period from a fixed high position** — a phone on a tripod in the stands beats a parent tracking the puck, because you need to see the ice, not the play.
-- **Watch it with one specific question**, and only one. "How many times did I shoulder-check before receiving?" "Where were my feet when I received the puck?" "Did I stop, or did I curl?" A general watch produces a general shrug.
-- **Count something.** A number gives you a baseline you can beat next month. Impressions don't.
-- **Watch your shifts *without* the puck.** Measured at **5-on-5**, that's about **96%** of your ice time — [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) covers that figure, states the 5-on-5 basis it is measured on, and sources it — and it's where most of your improvement is available.
-- **Expect it to be unpleasant.** Everyone looks slower on video than they feel. That gap is precisely the useful information.
+- **Film one period from a fixed high position** — a phone on a tripod in the stands, so you see the ice, not just the play.
+- **Watch with one specific question.** "How many times did I shoulder-check before receiving?" "Did I stop, or did I curl?" A general watch produces a general shrug.
+- **Count something.** A number is a baseline you can beat next month.
+- **Watch your shifts *without* the puck.** Measured at **5-on-5**, that is about **96%** of your ice time — [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) sources that figure — and it is where most improvement is available.
+- **Expect it to be unpleasant.** Everyone looks slower on video than they feel. That gap is the useful information.
 
-If you can't film yourself, watch elite players *positionally* rather than watching the puck — pick one player at your position and follow only them for a full shift. [How to Watch Hockey](how_to_watch_hockey.md) covers the method in detail.
+If you can't film yourself, watch one elite player at your position for a full shift instead of watching the puck. [How to Watch Hockey](how_to_watch_hockey.md) has the method.
 
 ---
 
 ## Building a Realistic Weekly Plan
 
-> **These plans are coaching craft — an example structure, not a prescription.** The evidence base does not support any specific weekly template. What it supports is the general principle: focused, feedback-rich, edge-of-ability work beats volume. Adapt freely.
+> **These plans are coaching craft — an example, not a prescription.** No specific weekly template is supported by evidence; the general principle is. Adapt freely.
 
 ### If you skate once or twice a week (most adult players)
 
-Be realistic. Your ice time is a game, your game gives you about a minute of puck possession, and your total structured practice for the week is therefore roughly zero unless you create it off the ice.
+Your ice time is a game, a game gives you about a minute on the puck, so your structured practice for the week is roughly zero unless you create it off the ice.
 
-A workable week, around 3–4 hours total:
+A workable week, around 3–4 hours:
 
 | When | What | Why |
 |---|---|---|
-| 3 × 15 min, weekday evenings | **Head-up stickhandling** on a pad or smooth floor | Highest transfer per minute of anything off-ice; fits in a normal evening |
-| 2 × 10 min | **Wall passing / rebounder**, half of it backhand | Receiving is the more neglected half of passing — coaching observation, not a count |
-| 1 × 20 min | **Shooting** off a pad into a net — quantity low, quality high, vary the release point | Mechanics only; the decisions come on ice |
-| 2 × 30–40 min | **Strength and mobility**, emphasis on single-leg work, hips and adductors | Supports the stride; the main injury protection ([Conditioning and Recovery](conditioning_and_recovery.md)) |
-| 10 min at the start of every practice or stick-and-puck | **Edge work** — inside and outside edges, both directions, before the puck comes out | The only way most adults ever get dedicated skating time |
-| Game day | **One process goal**, chosen in advance | Turns a game from entertainment into a rep |
-| 1 × 20 min per week | **Video or clip review** with one question | The feedback that makes everything else deliberate practice |
+| 3 × 15 min, weekday evenings | **Head-up stickhandling** on a pad or smooth floor | Highest transfer per minute off-ice |
+| 2 × 10 min | **Wall passing / rebounder**, half on the backhand | Receiving is the neglected half of passing (coaching observation) |
+| 1 × 20 min | **Shooting** off a pad — low quantity, high quality, vary the release | Mechanics only; decisions come on ice |
+| 2 × 30–40 min | **Strength and mobility** — single-leg work, hips, adductors | Supports the stride; the main injury protection ([Conditioning and Recovery](conditioning_and_recovery.md)) |
+| First 10 min of every practice or stick-and-puck | **Edge work**, both edges, both directions, before the puck comes out | The only dedicated skating time most adults get |
+| Game day | **One process goal**, chosen in advance | Turns a game into a rep |
+| 1 × 20 min per week | **Video or clip review** with one question | The feedback that makes the rest deliberate |
 
-**Three rows in that table — the stickhandling, the wall passing, and the pad shooting — happen wherever you have floor space, and this document has only judged whether they transfer, not whether the room they'd happen in is safe to do them in.** See [the scope note](#off-ice-practice-that-genuinely-transfers) for what that leaves to you.
+**The stickhandling, wall passing and pad shooting happen wherever you have floor space, and this document has judged only whether they transfer, not whether that room is safe.** See [the scope note](#off-ice-practice-that-genuinely-transfers).
 
-Add, if you can find it: one **stick-and-puck or drop-in** session a month spent entirely on skating with no puck, and one **power-skating session** a season. Both are unglamorous and both outperform everything else on the list.
+If you can, add one **stick-and-puck or drop-in** session a month spent entirely on skating, and one **power-skating session** a season. Both are unglamorous and both outperform everything else on the list.
 
 ### If you have three to five sessions a week
 
-You now have enough ice to specialise. A sane split:
+You have enough ice to specialise. A sane split:
 
-- **One skills session** — technique work, low volume, high attention, ideally with a coach or a partner who will tell you the truth.
-- **One small-area-game session** — decisions, compete, volume of touches.
-- **One team practice** — systems, and the habits in the section above.
+- **One skills session** — technique, low volume, high attention, ideally with someone who will tell you the truth.
+- **One small-area-game session** — decisions, compete, touches.
+- **One team practice** — systems, and the habits above.
 - **One or two games.**
-- **Two strength sessions**, kept away from the hardest ice days.
+- **Two strength sessions**, away from the hardest ice days.
 
-The principle: **at most one thing at a time should be a genuine technique rebuild.** Rebuilds are cognitively expensive and they temporarily degrade performance. Trying to rebuild your stride, your shot and your passing in the same month means all three get worse at once and you quit.
+**At most one thing at a time should be a real technique rebuild.** Rebuilds temporarily degrade performance; rebuild your stride, shot and passing in one month and all three get worse at once, and you quit.
 
 ### The realism check
 
-If your plan requires more than about four hours a week and you have a job and a family, it is not a plan, it is a fantasy, and abandoning it in week three will feel like a failure of character rather than of arithmetic. **Build the plan you will actually do in your worst week, not your best one.** Fifteen minutes of head-up stickhandling four times a week, sustained for a year, beats an ambitious programme sustained for a fortnight.
+If your plan needs more than about four hours a week and you have a job and a family, it is a fantasy, and abandoning it will feel like a failure of character rather than arithmetic. **Build the plan you will actually do in your worst week.** Fifteen minutes of head-up stickhandling four times a week for a year beats an ambitious programme for a fortnight.
 
 ---
 
@@ -506,121 +498,117 @@ If your plan requires more than about four hours a week and you have a job and a
 
 ### Process measures beat outcome measures
 
-The scoresheet is a terrible measure of your development. Goals, assists and plus/minus depend heavily on your linemates, your opposition, your ice time and luck, and in a short amateur season the noise swamps the signal entirely. A player can improve substantially and score less.
+The scoresheet is a poor measure of your development. Points and plus/minus depend on linemates, opposition, ice time and luck, and in a short amateur season the noise swamps the signal. You can improve a lot and score less.
 
 **Process measures** are things you control and can count:
 
-- Shoulder checks before receiving the puck, per shift (count from video).
+- Shoulder checks before receiving, per shift (from video).
 - First-pass completion out of your own zone.
 - Receptions moved on in one touch.
 - Times you got beaten wide, per game.
 - Battles won along the wall.
-- Whether you can stop both ways at full speed — a straight yes/no that most players cannot answer honestly.
-- Time to complete a fixed edge-work pattern, measured monthly.
+- Whether you can stop both ways at full speed — a yes/no most players can't answer honestly.
+- Time for a fixed edge-work pattern, measured monthly.
 
-Pick **one or two at a time**, measure monthly, and write them down. More than two and you'll measure none of them.
+Pick **one or two**, measure monthly, and write them down. More than two and you'll measure none.
 
 ### Test learning, not performance
 
-Per Soderstrom and Bjork's learning-versus-performance distinction: **how the session felt is not evidence.** A skill that goes well while you are warmed up, focused and in the groove may not be there next week.
+Per Soderstrom and Bjork: **how the session felt is not evidence.** A skill that works while you're warm and focused may not be there next week.
 
-The honest test is a **cold retention test**: at the start of a session a week or more later, with no warm-up on that specific skill, can you still do it? That is closer to a measure of what you actually learned. Applying the skill in a *different* context than you trained it — a transfer test — is better still.
+The honest test is a **cold retention test**: at the start of a session a week or more later, with no warm-up on that skill, can you still do it? Doing it in a *different* context from the one you trained in — a transfer test — is better still.
 
 ### Other signals that you're improving when the scoresheet isn't
 
-- **The game feels slower.** This is the most reliable subjective marker of improvement in hockey, and it means your reads are getting faster, not the game.
+- **The game feels slower.** The most reliable sign: your reads are getting faster.
 - **You're less tired at the same output.** Usually a skating-efficiency gain.
-- **You are getting the puck more.** Teammates pass to players who receive cleanly. A rise in passes received is a genuine signal of skill.
-- **Your mistakes are getting more advanced.** Being caught over-committing on a pinch is a better error than not knowing there was a pinch available.
+- **You get the puck more.** Teammates pass to players who receive cleanly.
+- **Your mistakes are more advanced.** Getting caught on a pinch beats not knowing the pinch was there.
 
 ---
 
 ## Adult Beginners
 
-You can learn this as an adult. Plenty of people start in their thirties, forties and fifties and end up genuinely competent. But the honest version has both columns.
+You can learn this as an adult. Plenty of people start in their thirties, forties and fifties and become genuinely competent — but the honest version has both columns.
 
-**This section assumes you have already found a session to go to.** If you have not, [Getting Started](../getting-started/getting_started.md) is the document for that — adult learn-to-skate and learn-to-play routes, what to sign up for, and what happens in your first hour at the rink.
+**This section assumes you have already found a session to go to.** If not, start with [Getting Started](../getting-started/getting_started.md).
 
-> **A note on timelines before you read any further.** You will see confident figures for how long adult beginners take — including in the "Realistic timelines" section below. **Every one of them comes from coaching providers and retailers, not from research.** There is no measured evidence for any adult-beginner timeframe. Read them as experienced guesses with enormous individual variation, and do not measure yourself against them.
+> **A note on timelines.** Every confident figure for how long adult beginners take — including those in "Realistic timelines" below — **comes from coaching providers and retailers, not research.** There is no measured evidence for any adult-beginner timeframe. Do not measure yourself against them.
 
 ### What is genuinely harder
 
-- **Skating.** This is the real one. Balance on a narrow blade is a fundamental motor pattern that children acquire easily and adults acquire slowly. Expect it to take longer than anything else and to be the thing that limits you for a couple of years.
-- **Fear of falling, and its consequences.** Adults fall from higher, weigh more, and have jobs on Monday. That fear makes you stand up straight and lock your legs — and standing tall is the root cause of most skating faults ([Skating](../technique/skating.md)). The fear is thus not just uncomfortable; it is *technically* the problem.
+- **Skating.** The real one. Balance on a narrow blade comes easily to children and slowly to adults, and it will limit you for a couple of years.
+- **Fear of falling.** Adults fall from higher, weigh more and have jobs on Monday. Fear makes you stand tall and lock your legs — the root of most skating faults ([Skating](../technique/skating.md)). So the fear is *technically* the problem.
 - **Hours.** A ten-year-old gets four sessions a week for a decade. You get one or two, with cancellations.
-- **Recovery.** You will need more of it and you'll get less. See [Conditioning and Recovery](conditioning_and_recovery.md).
-- **Ego.** Being visibly the worst player on the ice is much harder at 40 than at 10, and it makes adults avoid exactly the practice they need.
+- **Recovery.** You need more and get less. See [Conditioning and Recovery](conditioning_and_recovery.md).
+- **Ego.** Being visibly the worst on the ice is harder at 40 than at 10, and it makes adults avoid the practice they need.
 
 ### What is genuinely easier
 
-- **Understanding systems.** An adult can read [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) once and understand it. It takes a child years to absorb the same material through repetition. Positioning is a legitimate shortcut to being useful before your skills arrive — a well-positioned poor skater beats a badly-positioned good one more often than anyone admits.
-- **Self-direction.** You can choose what to work on, book your own ice, hire a coach, and read. Nobody is deciding your development for you.
-- **Patience and perspective.** You can tolerate a technique dip that lasts for weeks because you understand why it's happening. Most twelve-year-olds cannot.
-- **Money.** Power skating, a coach for three sessions, better-fitting protective gear — all of these buy real progress and are available to adults ([Equipment](equipment.md)).
-- **Watching hockey intelligently.** You can learn a great deal from television that a child watching the puck cannot.
+- **Understanding systems.** You can read [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) once and get it. Positioning makes you useful before your skills arrive — a well-positioned poor skater beats a badly-positioned good one more often than anyone admits.
+- **Self-direction.** You choose what to work on, book ice, hire a coach and read.
+- **Patience.** You can tolerate a technique dip for weeks because you know why it's happening.
+- **Money.** Power skating, a few coaching sessions and well-fitting gear all buy real progress ([Equipment](equipment.md)).
+- **Watching intelligently.** You can learn far more from television than a child watching the puck.
 
 ### Practical first steps
 
-- **Learn to fall — and learn to get up — deliberately, in full gear.** Coaching guidance is consistent on this and the reasoning is sound: removing the fear is what lets you bend your knees, and bending your knees is the whole game. **But do not practise it on the assumption that the gear makes a fall harmless.** Full kit absorbs a great deal; it does not cover a wrist you put out to catch yourself, and a fall is one of the ways a concussion happens ([Conditioning and Recovery](conditioning_and_recovery.md#concussion)). A rehearsed fall costs you a bruise and an unrehearsed one can cost you a wrist or a head — which is the reason to rehearse the **technique**, rather than simply to fall over a lot. **Get low first, go down to the side onto hip and thigh, and keep your hands in rather than out onto a locked, straight arm** — that last part is widely taught coaching craft rather than a sourced rule, and [Body Contact and Battles](../technique/body_contact_and_battles.md) sets out what it does and does not rest on. **The chin has two opposite cases and you need the right one. Falling backwards to the ice: tuck your chin in, because it keeps the back of your skull off the ice. Going forwards into the boards: do not tuck it. Head up, never duck, because a chin on your chest straightens the neck to take the load down its length. Falling flat: chin in. Hitting a wall: head up.** Then take two or three seconds to check you are not hurt before you get up, and stay down if you are. [Skating](../technique/skating.md#falling-and-getting-up) has the full version and the get-up sequence.
+- **Learn to fall — and to get up — deliberately, in full gear.** Removing the fear is what lets you bend your knees. **But don't assume the gear makes a fall harmless:** it does not protect a wrist you put out to catch yourself, and a fall is one way a concussion happens ([Conditioning and Recovery](conditioning_and_recovery.md#concussion)). That is why you rehearse the **technique**, not just falling over.
+- **How to fall.** **Get low first, go down to the side onto hip and thigh, and keep your hands in rather than out onto a locked, straight arm** — widely taught coaching craft rather than a sourced rule; [Body Contact and Battles](../technique/body_contact_and_battles.md) sets out what it rests on. **The chin reverses with direction. Falling backwards to the ice: tuck your chin in, to keep the back of your skull off the ice. Going forwards into the boards: head up, never duck, because a chin on your chest straightens the neck to take the load down its length. Falling flat: chin in. Hitting a wall: head up.** Then take two or three seconds to check you are not hurt, and stay down if you are. [Skating](../technique/skating.md#falling-and-getting-up) has the get-up sequence.
 - **Bend more than feels natural.** Almost every adult skating fault is a straight-legs fault.
-- **Get gear that fits.** Ill-fitting skates make skating harder in a way that is invisible to you and obvious to a fitter.
-- **Two shorter sessions a week beat one long one** — coaching guidance, not a measured finding. No controlled comparison of those two schedules is cited here, and the research on distributing motor practice does not all point the same way.
+- **Get gear that fits.** Ill-fitting skates make skating harder in a way a fitter can see and you can't.
+- **Two shorter sessions a week beat one long one** — coaching guidance, not a measured finding; the research on spacing motor practice does not all point one way.
 - **One skill per month.** Not five.
 
 ### Realistic timelines — with a caveat
 
-Published adult-beginner timeframes come from coaching providers and retailers rather than from research, and should be read as experienced guesses rather than measurements. One such source (Better Hockey) offers: roughly **6–10 hours of ice time** to go from clinging to the boards to confident forward skating; **3–6 months** from zero to genuinely playing in a beginner league; and **one to two seasons** to comfortable, confident hockey. Those figures are plausible and consistent with what most learn-to-play programmes claim, but **no published research measures any of them** and individual variation is enormous.
+One coaching source (Better Hockey) offers: roughly **6–10 hours of ice time** from clinging to the boards to confident forward skating; **3–6 months** from zero to playing in a beginner league; and **one to two seasons** to comfortable hockey. Those are plausible, but **no published research measures any of them**, and individual variation is enormous.
 
-The more useful framing: **months for the basics, years for the rest, and the curve is a staircase.**
+The useful framing: **months for the basics, years for the rest, and the curve is a staircase.**
 
 ---
 
 ## Avoiding Injury While Developing
 
-Development stops entirely when you're hurt, and the most common way amateurs get hurt is not contact — it's a sudden jump in load. **That contact is not the leading cause is a coaching observation rather than a measured ranking** — no study comparing the causes of amateur hockey injury by frequency was found for this document, and [Conditioning and Recovery](conditioning_and_recovery.md) holds the injury figures. **The load ranking is no reason to treat contact as the smaller risk**: in the women's collegiate meta-analysis [Conditioning and Recovery](conditioning_and_recovery.md#injury-prevention) cites, injury rates in games were more than three times those in practice, and concussion was the most common injury type — findings about setting and injury type, which neither confirm the observation nor refute it.
+Development stops when you're hurt, and the most common way amateurs get hurt while developing is not contact but a sudden jump in load. **That ranking is a coaching observation** — no study ranking amateur injury causes was found, and [Conditioning and Recovery](conditioning_and_recovery.md) holds the injury figures. **It is no reason to treat contact as the smaller risk:** in the women's collegiate meta-analysis [Conditioning and Recovery](conditioning_and_recovery.md#injury-prevention) cites, game injury rates were more than three times practice rates, and concussion was the most common injury type.
 
-- **Progress load gradually.** The classic pattern is a player who does nothing for four months, buys a plan, and does five sessions in week one. Increase volume or intensity, not both at once, and not by much in any given week.
-- **Beware the return from a layoff.** Coming back after a summer off, an injury, or a house move, your tissues are deconditioned while your skills and your competitiveness are not. You will *feel* able to play at your old intensity before you are able to tolerate it. This is where groin and hip adductor problems — the classic hockey overuse complaint — tend to appear.
-- **Warm up properly before hard skating**, especially in cold rinks and especially before a game where your first shift is at full pace. Standing in a queue for 45 minutes and then sprinting is a specific risk, which is another reason to keep your feet moving in drills.
-- **Treat technique rebuilds as load.** New movement patterns use unfamiliar tissue in unfamiliar ranges. Introduce them at low volume.
-- **The soreness-versus-pain heuristic — treat it as a rule of thumb, not a clinical test.** The version widely taught is that soreness which improves as you warm up is usually fine, while pain that worsens as you go is not. **It traces to no clinical guideline, and it is not a substitute for assessment**: plenty of genuine injuries warm up and feel better, and plenty of harmless stiffness does not. Use it only as a prompt to stop and think, and see a physiotherapist for anything sharp, swollen, unilateral, or lasting more than a couple of weeks. A week off now is cheaper than a season.
-- **Sleep and protein are not optional extras.** They are the mechanism by which practice becomes skill and load becomes fitness.
+- **Progress load gradually.** The classic pattern: four months of nothing, then five sessions in week one. Raise volume or intensity, not both, and not by much in any week.
+- **Beware the return from a layoff.** After a summer off or an injury, your tissue is deconditioned but your competitiveness is not. You will *feel* ready before you are. This is where groin and hip adductor problems — the classic hockey overuse complaint — tend to appear.
+- **Warm up before hard skating**, especially in cold rinks and before a game whose first shift is at full pace. Standing in a queue and then sprinting is a specific risk.
+- **Treat technique rebuilds as load.** New patterns use tissue in unfamiliar ranges. Start them at low volume.
+- **Treat the soreness-versus-pain heuristic as a rule of thumb, not a clinical test.** The usual version: soreness that eases as you warm up is usually fine; pain that worsens is not. **It traces to no clinical guideline and is no substitute for assessment** — real injuries can warm up and feel better. See a physiotherapist for anything sharp, swollen, one-sided, or lasting more than a couple of weeks. A week off now is cheaper than a season.
+- **Sleep and protein are not optional.** They are how practice becomes skill and load becomes fitness.
 
-Full detail, including specific hip and adductor work, is in [Conditioning and Recovery](conditioning_and_recovery.md).
+Full detail, including hip and adductor work, is in [Conditioning and Recovery](conditioning_and_recovery.md).
 
 ---
 
 ## Common Mistakes
 
-- **Counting hours instead of auditing them.** "I skate three times a week" tells you nothing about whether you improved. Ask what you worked on and how you knew whether it worked.
-- **Practising without feedback.** Reps with no correction just make your current technique more permanent, including its faults. Get an outside eye on it — a coach, a teammate who will tell you the truth, or a phone filming you — and fix what it shows before you add more reps.
-- **Only practising what you're good at**, because it's more enjoyable and because you look better doing it. The reps you need are the ones that make you look bad, so take the hard side: weak-side stops, backhand receptions, your bad-hand corner.
-- **Practising shooting most and skating least** — close to the inverse of the order this document suggests, which is a coaching choice rather than a law of hockey. Unless something else is actively costing you more, give edge work the first ten minutes of every practice or stick-and-puck session, before the puck comes out. See §What to Practise, in Priority Order.
-- **Stickhandling with your head down at home**, thousands of times, and then wondering why your head goes down in games. Keep your eyes on something across the room for every rep — the television, or numbers on the wall to call out. Fifteen minutes head-up beats an hour head-down.
-- **Abandoning a technique change a few weeks in**, before it has had time to pay, and concluding it "doesn't work for me." Decide the change is permanent before you start, set a review date a couple of months out, and judge it on a cold retest rather than on how it feels.
-- **Judging a session by how it felt.** In-session performance is a poor index of learning; the session that felt awful may be the one that stuck. Judge it instead by whether you can still do the skill cold, at the start of a session a week or more later.
-- **Doing drills at 70%** and being surprised that the skill vanishes at game pace. Do the rep at game speed; if that is too fast to do it cleanly, the drill is working.
-- **Cheating the rep to make it look tidy** — curling early, leaving before the pass, coasting the last three strides, walking in closer than the drill intends. Do the rep the way the game will ask for it, because every cheat is a rep of the thing you'll do in a game.
-- **Treating games as practice.** A game gives even the best players about a minute on the puck, so the improvement has to come from somewhere else: get your touches off the ice and from any stick-and-puck or small-area ice you can find. In USA Hockey's 2002 puck-possession study, players averaged **1:01.4 of puck possession each** in the Olympic men's gold-medal game, and no group it measured, Olympic players down to 12-and-Under, averaged more than **1:12** a game.
-- **Practising skills without decisions.** Perfect hands with no read produces a player who is dangerous mostly to their own team. Put an opponent in the drill, even a passive one allowed to take away a single option.
-- **Rebuilding three things at once**, so that everything gets worse simultaneously and you quit. Rebuild one thing at a time and leave the rest alone until it sticks.
-- **Building a plan for your best week.** It will not survive a bad one, and you'll blame yourself rather than the plan. Build the one you will actually do in your worst week.
-- **Measuring yourself on the scoresheet**, which is mostly noise over an amateur season. Count one or two process measures instead — shoulder-checks before receiving, first passes completed out of your own zone.
-- **Spiking training load after a layoff**, which is when groin strains tend to show up. Come back at low volume, and raise volume or intensity, not both at once and not by much in any one week.
-- **Practising falls in full gear on the assumption that the gear makes them harmless.** It does not cover a wrist you put out to catch yourself, and a fall is one of the ways a concussion happens. Learn the technique — hip and thigh, hands in, and the right chin for the direction you are going: **falling flat, chin in; hitting a wall, head up** ([Skating](../technique/skating.md#falling-and-getting-up)).
-- **Firing pucks at your goalie's head in the warm-up, or from ten feet in a drill.** Aim at the pads and the glove, and shoot from where the drill puts you. Both mistakes are more common than they should be, and the whistle may not come: **in stand-up hockey only two books stop play for the hit itself** — IIHF Rule 9.6's is a *"may"* that a scoring chance cancels, Hockey Canada Rule 6.18(a)'s *"shall"* reaches only *"categories of U13 and below"*, and the NHL, the PWHL, USA Hockey's **stand-up** rules and CARHA write no mask-specific stoppage (USA Hockey's only counterpart is a Sled Hockey rule). ⚠️ **Every book does stop play for an injured goalkeeper** — NHL, IIHF and PWHL 8.1, USA Hockey 206(a), Hockey Canada 2.4(b), CARHA 20(d) — **but each waits on a referee judging them hurt, which is exactly what a cage hides.**
-- **Buying the tool instead of doing the work.** A rebounder in a garage improves nothing on its own; ten minutes against it a few times a week does.
-- **Assuming this document has checked that your home, garage or driveway is a safe place to shoot or swing a stick.** It hasn't. Clearance from people, glass, footing and supervision for a child are judgements for whoever is there to make, however well the drill itself transfers (see [Off-Ice Practice That Genuinely Transfers](#off-ice-practice-that-genuinely-transfers)).
-- **Re-reading the theory instead of testing yourself on it.** Re-reading feels productive and builds a much weaker memory than trying to recall the thing and then checking. The checking is not optional: a failed recall that is never corrected is worth close to nothing. Note this is about material you *read* — systems, rules, reads — not about skills you skate.
+- **Counting hours instead of auditing them.** "I skate three times a week" says nothing. Ask what you worked on and how you knew it worked.
+- **Practising without feedback.** Uncorrected reps make your faults permanent. Get an outside eye — a coach, an honest teammate or a phone — and fix what it shows before adding reps.
+- **Only practising what you're good at.** Take the hard side: weak-side stops, backhand receptions, your bad-hand corner.
+- **Practising shooting most and skating least.** Unless something else costs you more, give edge work the first ten minutes of every session, before the puck comes out. The order is a coaching choice — see §What to Practise, in Priority Order.
+- **Stickhandling with your head down at home**, then wondering why it goes down in games. Keep your eyes on the television or numbers on the wall for every rep.
+- **Abandoning a technique change a few weeks in.** Decide it is permanent before you start, review it a couple of months out, and judge it on a cold retest.
+- **Judging a session by how it felt.** Judge it by whether you can still do the skill cold a week later.
+- **Doing drills at 70%.** Do the rep at game speed; if that's too fast to do cleanly, the drill is working.
+- **Cheating the rep to make it look tidy** — curling early, leaving before the pass, walking in closer. Every cheat is a rep of what you'll do in a game.
+- **Treating games as practice.** A game gives even the best players about a minute on the puck — **1:01.4** each in the 2002 Olympic men's gold-medal game, and no group in that USA Hockey study averaged over **1:12**. Get your touches off the ice and from stick-and-puck or small-area ice.
+- **Practising skills without decisions.** Put an opponent in the drill, even a passive one allowed to take away one option.
+- **Rebuilding three things at once.** Rebuild one thing and leave the rest alone until it sticks.
+- **Building a plan for your best week.** Build the one you will do in your worst.
+- **Measuring yourself on the scoresheet.** Count one or two process measures instead — shoulder-checks before receiving, first passes completed.
+- **Spiking training load after a layoff**, when groin strains tend to show up. Come back at low volume, and raise volume or intensity, not both.
+- **Practising falls on the assumption that the gear makes them harmless.** It does not protect a wrist put out to catch yourself, and a fall can cause a concussion. Learn the technique — hip and thigh, hands in, and the right chin: **falling flat, chin in; hitting a wall, head up** ([Skating](../technique/skating.md#falling-and-getting-up)).
+- **Firing pucks at your goalie's head in the warm-up, or from ten feet in a drill.** Aim at the pads and glove, from where the drill puts you. ⚠️ **The whistle may not save them:** only two of the six books stop play for the mask hit itself, narrowly, and **every injury stoppage waits on a referee judging the goalie hurt — which a cage hides — and in most books on the shooters losing the puck.**
+- **Buying the tool instead of doing the work.** A rebounder improves nothing on its own; ten minutes against it a few times a week does.
+- **Assuming this document has checked that your home, garage or driveway is safe to shoot in.** It hasn't. Clearance, glass, footing and supervision for a child are for whoever is there to judge.
+- **Re-reading the theory instead of testing yourself on it.** Try to recall it, then check — an uncorrected failed recall is worth close to nothing. This applies to material you *read*, not skills you skate.
 
 ## Check yourself
 
-*Answer each question before you go on — a real attempt, not a guess. Then go
-and check, because the checking is the part that does the work. Producing an
-answer and getting it wrong is worth more than recognising a right one, but only
-when the right answer follows: the section named with each question, and the Key
-Takeaways after them, are where you get it. Where the answer lives in another
-document, that is named too.*
+*Answer each question before you go on, then check the section named with it. Getting an answer wrong and then checking teaches more than recognising a right one.*
 
 1. Someone tells you 10,000 hours is what separates experts from everyone else.
    Where did the number come from, what happened when the founding study was
@@ -659,22 +647,22 @@ document, that is named too.*
 
 ## Key Takeaways
 
-1. **Audit your hours; don't count them.** The 10,000-hour rule was a group mean popularised as a threshold, and Ericsson himself rejected that use of it; a 2019 double-blind replication of the violinist study behind it found no statistically significant difference in accumulated practice alone to age 18 between the best violinists and the good ones — a null rather than a reversal, which shows that counting hours does not rank people, not that practice is unimportant. A 2016 meta-analysis of 63 sports effect sizes puts deliberate practice at **18% of the variance** in performance, and the researchers dispute how much it explains mostly because they count different things as practice. Neither side gives you a reason to value an unstructured hour, so ask of every session what you worked on and how you knew whether it worked.
-2. **A rep without feedback is not practice, and neither is a half-speed one.** Ericsson's criteria: a specific goal, immediate feedback, the edge of what you can already do reliably, correct, go again — plus an outside eye, which is the one amateurs skip and the one that costs most. If you can't tell whether a rep was good, fix that before adding reps. Then do the rep at game pace, on the hard side — weak-side stops, backhand receptions, your bad-hand corner — and don't cheat it to make it look tidy.
-3. **Improvement is a staircase, a changed technique feels worse before it feels better, and you rebuild one thing at a time.** How well you perform during a session is an unreliable index of what you learned. Players usually abandon a change somewhere between week two and week five — a coaching observation rather than a measured window — typically just before it would have started to pay. So decide the change is permanent before you start, keep using it in every drill while you let yourself fall back in games for the first few weeks, and judge it on a cold retest a week later rather than on how it feels. Rebuild your stride, your shot and your passing in the same month and all three get worse at once, which is how people quit.
-4. **Skating first, puck handling with your head up second, passing and receiving third, shooting fourth — and that ordering is a coaching choice, not a law of hockey.** A realistic alternative is to fix whatever is actively costing you most, and a goaltender's list is different again; ask what your own coach prioritises and why. Whichever order you take, it runs close to the reverse of the order in which those things are fun.
-5. **Receiving is the more neglected half of passing, and the more valuable one — a coaching observation rather than a measured finding, since nobody has counted how players split their reps.** Ten minutes against a wall buys hundreds of receptions with instant feedback — but a wall returns a flat, predictable, forehand pass, so vary your angle and distance and take half of them on your backhand.
-6. **Head up or don't bother.** Thousands of head-down stickhandling reps make the head-down pattern the automatic one, and automatic patterns are what surface under pressure. You will then need months to undo it, and your handling will get worse while you do. Neither head-up stickhandling nor wall passing has been checked against your actual space — a kitchen, a garage, a driveway: clearance from people and glass, footing, and supervision for a child are for whoever is standing in it to judge (see [Off-Ice Practice That Genuinely Transfers](#off-ice-practice-that-genuinely-transfers)).
-7. **Train decisions, not just skills, and treat small-area games as the highest-value use of ice.** A skill executed at the wrong moment is worthless, often worse than worthless, and a passive defender allowed to take away just one option is enough to turn an execution drill into a decision drill. Even in the 2002 Olympic men's gold-medal game, players averaged about a minute of puck possession each; shrinking the space puts the puck on your stick far more often. That small-area games build decision-making is highly plausible, near-universally believed by coaches, and **under-tested** — use them, but don't cite research you don't have.
-8. **Half of a team practice is time spent standing in a line — a coaching estimate rather than a measured share — and that time is either wasted or used.** Watch the rep in front of you and name what you would do differently; keep your feet moving, because standing still for long stretches in cold air is how people pull something on the next hard rep. ⚠️ **And keep your head up while you queue.** A practice has loose pucks flying, and a line standing still against the boards is exactly where they arrive.
-9. **Film yourself, measure process rather than outcome, and test cold.** A phone on a tripod high in the stands, one period, and one or two things to count — shoulder-checks before receiving, completed first passes, where your feet were when the pass arrived — not points, because in a short amateur season the noise swamps the signal. Watch your shifts without the puck too, because that is most of your ice time. Everyone looks slower on video than they feel, and that gap is the useful information. Then retest the skill a week or more later with no warm-up on it.
+1. **Audit your hours; don't count them.** The 10,000-hour rule was a group mean, and the violinist study behind it did not replicate — a null, not a reversal. Deliberate practice explains about 18% of the variance in sports performance. Ask of every session what you worked on and how you knew it worked.
+2. **A rep without feedback is not practice, and neither is a half-speed one.** Set a goal, get an outside eye, work at your edge, correct and go again. Do the rep at game pace, on the hard side, without cheating it.
+3. **Change one thing at a time, and expect it to feel worse first.** Players usually quit a change between weeks two and five — a coaching observation — just before it pays. Decide it is permanent, use it in every drill, and judge it on a cold retest a week later.
+4. **Skating first, head-up puck handling second, passing and receiving third, shooting fourth.** That is a coaching choice, not a law; you might instead fix whatever costs you most, and a goalie's list differs. It runs close to the reverse of what is fun.
+5. **Train receiving — the more neglected half of passing, by coaching observation.** Ten minutes against a wall buys hundreds of receptions. Vary angle and distance, and take half on your backhand.
+6. **Head up or don't bother.** Head-down stickhandling at home becomes the habit that surfaces under pressure, and undoing it takes months. Check that your space is safe to swing a stick in — this document hasn't.
+7. **Train decisions, not just skills.** A passive defender taking away one option turns a drill into a decision. Small-area games are the best use of ice: a full game gives even Olympians about a minute on the puck. That they build decisions is plausible but **under-tested**.
+8. **Use the time you spend queuing.** Watch the rep ahead and name what you'd change, and keep your feet moving. ⚠️ **Keep your head up in the line** — loose pucks arrive exactly where a still line stands against the boards.
+9. **Film yourself, count process, and test cold.** One period from high in the stands, one or two things to count, not points. Watch your shifts without the puck too. Retest skills a week later with no warm-up.
 10. **Build the plan you will keep in your worst week.** Fifteen minutes of head-up stickhandling four times a week, kept up for a year, beats an ambitious programme kept up for a fortnight.
-11. **Test yourself on what you read, then check the answer — when you get it wrong, the checking is what makes it work.** Across 159 effect sizes, testing yourself beat re-reading by a moderate margin, and producing an answer to a prompt beat picking one out of a set. But where most attempts failed and no correction followed, the benefit was indistinguishable from nothing. **All of it was measured on verbal material with university undergraduates; nobody has shown it applies to a motor skill**, so use it on systems, reads and rules, not on your shot.
-12. **Nobody in a drill is more exposed than your goalie, so aim at the pads and the glove and shoot from where the drill puts you.** Don't shoot at their head in the warm-up and don't fire pucks at them from ten feet. ⚠️ **And don't count on the whistle to cover you** — only two of the six books stop play for the hit itself outside sled hockey, both narrowly, and every book's injury stoppage waits on a referee judging the goalie hurt, which is exactly what a cage hides.
-13. **Learn a new movement in blocks, then vary it once it roughly works — and don't treat interleaving as a law.** You will be told to mix skills up rather than take fifty of one and then fifty of another. That contextual-interference effect holds up well in laboratory tasks and much less well in real sport: Ammar and colleagues' 2024 meta-analysis of 36 studies found only **20% of outcomes** matched the predicted pattern, and very limited evidence of a long-term advantage in physical education and sport. The blocked-then-varied default is **coaching craft rather than a finding.**
-14. **Raise volume or intensity a little at a time, never both at once, and come back from a layoff at low volume.** The most common way amateurs get hurt while developing is a sudden jump in training load rather than contact — a coaching observation rather than a measured ranking, and no reason to treat contact as the smaller risk: in the women's collegiate meta-analysis [Conditioning and Recovery](conditioning_and_recovery.md#injury-prevention) cites, injury rates in games were more than three times those in practice, and concussion was the most common injury type. Coming back from a layoff, your competitiveness returns faster than your tissue does, and that is where groin and hip adductor problems — the classic hockey overuse complaint — tend to appear. [Conditioning and Recovery](conditioning_and_recovery.md) has the hip and adductor work.
-15. **Learn to fall on purpose, and get the chin direction right, because it reverses depending on what you're falling toward.** Get low, go down onto hip and thigh, and keep your hands in rather than out onto a locked arm. Falling flat to the ice, tuck your chin in. Going into the boards, keep your head up with your chin off your chest — a tucked chin there straightens your neck to take the load. [Skating](../technique/skating.md#falling-and-getting-up) has the full method and the get-up sequence.
-16. **If you start as an adult, let positioning carry you while your skating catches up.** You can read a system once and understand it, and a well-positioned poor skater beats a badly-positioned good one more often than anyone admits. Bend your knees more than feels natural, and work on one skill a month, not five.
+11. **Test yourself on what you read, then check the answer.** Recalling beats re-reading, but a failed recall with no correction is worth nothing. All of this was measured on verbal material, not motor skills — use it on systems, reads and rules, not your shot.
+12. **Nobody in a drill is more exposed than your goalie, so aim at the pads and glove and shoot from where the drill puts you.** ⚠️ **Don't count on the whistle to cover you** — only two of the six books stop play for the mask hit itself, narrowly, and every injury stoppage waits on a referee judging the goalie hurt — which a cage hides — and in most books on the shooters losing the puck.
+13. **Learn a new movement in blocks, then vary it once it roughly works.** Mixing skills up is not a law: in real sport only 20% of outcomes in a 2024 meta-analysis matched the predicted pattern. Blocked-then-varied is **coaching craft rather than a finding.**
+14. **Raise volume or intensity a little at a time, never both, and come back from a layoff at low volume.** A load spike is the commonest way developing amateurs get hurt — a coaching observation, and no reason to take contact less seriously, since in one women's collegiate meta-analysis game injury rates ran over three times practice rates, concussion leading.
+15. **Learn to fall on purpose, and get the chin right.** Get low, go down onto hip and thigh, and keep your hands in. Falling flat to the ice, tuck your chin. Going into the boards, keep your head up — a tucked chin there straightens your neck to take the load.
+16. **If you start as an adult, let positioning carry you while your skating catches up.** A well-positioned poor skater beats a badly-positioned good one more often than anyone admits. Bend your knees more than feels natural, and work on one skill a month.
 
 ---
 
@@ -694,10 +682,10 @@ document, that is named too.*
 
 *Off-ice training and transfer: [Novák, Lipinska, Roczniok, Spieszny & Stastny (2019), "Off-Ice Agility Provide Motor Transfer to On-Ice Skating Performance and Agility in Adolescent Ice Hockey Players", Journal of Sports Science and Medicine 18, 680–694](https://www.jssm.org/jssm-18-680.xml-Fulltext) — **n = 14, age 14.8 ± 0.45 years, all from one team at a single Czech academy; four-week crossover, two groups of seven.** This is the only experimental evidence behind the off-ice conditioning section, and its participants are academy juniors, not the adult amateurs this document addresses · [Rice et al. (2024), "The relationship between off-ice testing and on-ice performance in male youth ice hockey players", Frontiers in Sports and Active Living](https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2024.1418713/full) — **full text read 2 September 2026. n = 11.** Twenty-four of 33 off-ice variables correlated with at least one on-ice measure; the nine that correlated with none were "height, grip strength (either hand or combined), curl-ups, trunk flexibility, and Wingate-derived absolute power (minimum, mean, and peak)". **The paper disagrees with itself about the players' age** — its abstract gives 9.8 ± 1.1 years, its Table 1 gives 10.5 ± 0.6 with a range of 9.1–11.2; the table's figures are the ones used here · [How To Hockey – Hockey Shooting Pad Information](https://howtohockey.com/hockey-products/hockey-shooting-pad-information/)*
 
-*Roller-to-ice transfer — two coaching opinions and no study; both pages read 2 September 2026: [Coach Chic – Transitioning from Wheels to Ice Hockey](https://coachchic.com/transitioning-from-wheels-to-ice-hockey/) — source for the quoted sentence on stopping and turning, for "not a bad thing — it's just part of the process", and for its closing view that experience on both surfaces is "actually a huge advantage" · [Madison Rec Hockey – Using Roller Hockey to Build Ice Hockey Skills: Busting Myths](https://www.madisonrechockey.com/news/using-roller-hockey-to-build-ice-hockey-skills-bus) — source for "translate seamlessly to the rink" and for the named professionals. **This is a rec league's own article promoting a youth roller programme it is seeking support to launch, so read it as an interested party**, and note that its evidence bullet cites "[s]tudies, like those from the American Development Model (ADM)" without naming one*
+*Roller-to-ice transfer — two coaching opinions and no study; both pages read 2 September 2026: [Coach Chic – Transitioning from Wheels to Ice Hockey](https://coachchic.com/transitioning-from-wheels-to-ice-hockey/) — source for the quoted sentence on going back to basics for the ice stride and quick stops, for "not a bad thing — it's just part of the process", and for its closing view that experience on both surfaces is "actually a huge advantage" · [Madison Rec Hockey – Using Roller Hockey to Build Ice Hockey Skills: Busting Myths](https://www.madisonrechockey.com/news/using-roller-hockey-to-build-ice-hockey-skills-bus) — source for "translate seamlessly to the rink" and for the named professionals. **This is a rec league's own article promoting a youth roller programme it is seeking support to launch, so read it as an interested party**, and note that its evidence bullet cites "[s]tudies, like those from the American Development Model (ADM)" without naming one*
 
 *Adult beginners (commercial coaching guidance, not measured findings): [Better Hockey – How to Start Playing Hockey as an Adult](https://www.betterhockey.com/blogs/hockey-training/how-to-start-playing-hockey-as-an-adult) · [Better Hockey – Learn to Skate as an Adult](https://www.betterhockey.com/blogs/hockey-training/learn-to-skate-as-an-adult)*
 
 *Distribution of practice (motor skill): [Lee TD & Genovese ED (1989), "Distribution of practice in motor skill acquisition: different effects for discrete and continuous tasks", Research Quarterly for Exercise and Sport 60(1), 59–65 (PMID 2489826)](https://europepmc.org/article/MED/2489826) · [Panchuk D, Spittle M, Johnston N & Spittle S (2013), "Effect of practice distribution and experience on the performance and retention of a discrete sport skill", Perceptual and Motor Skills 116(3), 750–760 (PMID 24175450)](https://europepmc.org/article/MED/24175450) — **both cited only to show that this literature is unsettled, not to support a schedule.** Abstracts read via Europe PMC on 31 August 2026; neither full text was obtained*
 
-*Limits and caveats: (1) The Ericsson, Krampe & Tesch-Römer (1993) paper is not quoted directly here, so the exact wording of its criteria is not given; its definition of deliberate practice and the origin of the 10,000-hour figure are reported from secondary summaries, from Ericsson's own 2016 commentary, and — for the original's headline result and its 48% variance figure — from **Macnamara and Maitra's 2019 direct replication, which quotes the original**. (2) Wulf (2013) and Heathcote et al. (2000) are not quoted; those claims are stated at the level of the papers' central arguments, with no effect sizes or figures. (3) The USA Hockey handbook reports a claim, attributed to George Kingston from a 1971 study, that around 180 games would be needed to equal one hour of quality puck-control practice; that study is untraced, and the figure is not repeated as fact here. (4) The adult-beginner timeframes (6–10 hours to confident forward skating, 3–6 months to league play, one to two seasons to comfortable hockey) come from a single commercial coaching source and are experienced guesses, not measurements. (5) Claims about the transfer of specific off-ice tools — shooting pads, slide boards, synthetic ice, agility ladders, balance boards — are reasoned from the specificity and representative-learning-design literature plus coaching consensus; no controlled trial of these specific tools in hockey has been published. The How To Hockey page listed above is a product page covering pad material, size, durability and price; the surface-friction and shooting-off-concrete points in that section are coaching craft and are not taken from it. (6) How much roller hockey costs a player's ice-skating mechanics is not settled. The two coaching sources cited agree on the recommendation — both say the puck skills carry over and both recommend playing on wheels — but they differ on the skating itself: one has players going back to basics for a while to rebuild the ice stride and the quick stops, the other says the mechanics translate seamlessly. Neither is evidence, one of the two is a league promoting a roller programme of its own, and no study of roller-to-ice transfer is cited here. (7) The priority ordering of skills, the weekly plans, and the team-practice habits in this document are coaching craft, not research findings, and are labelled as such in the text. (8) Groin and hip adductor problems are described as the classic hockey overuse complaint on the basis of general coaching consensus; no prevalence figure is given because none is reliably established. (9) The soreness-versus-pain triage heuristic in "Avoiding Injury While Developing" traces to no clinical guideline and is labelled inline as a rule of thumb rather than a test. (10) The external-focus-of-attention effect is treated here as **contested**: Wulf (2013) and **Chua, Jimenez-Diaz, Lewthwaite, Kim & Wulf (2021), *Psychological Bulletin* 147(6):618–645** — the meta-analysis of 73 performance studies (1,824 participants) and 40 learning studies (1,274 participants) that reported external-focus superiority at g = 0.264 for performance, 0.583 for retention and 0.584 for transfer — support it; McKay et al. (2024), also in *Psychological Bulletin* and reanalysing that same body of data, found moderate to strong publication bias across the whole literature and near-zero bias-corrected effects. (11) **The retrieval-practice section carries a limit that applies to all of it: every study cited there used verbal material — prose passages, trivia questions, word pairs — with university undergraduates. None measured a motor skill and none was conducted in a sport, so nothing in that section is evidence about on-ice practice, and it is not offered as any.** Two further gaps are worth stating. Adesope, Trevisan and Sundararajan's 2017 meta-analysis in *Review of Educational Research* is the second pooled estimate usually cited alongside Rowland's; **it is deliberately not cited here, because every route to it returned an abstract stripped of its statistics, and its figures are therefore not quoted from memory.** And Karpicke and Aue's published rebuttal to van Gog and Sweller, in the same 2015 issue of *Educational Psychology Review*, could not be obtained either — so that dispute is reported as open rather than settled in either direction. (12) **"Two shorter sessions a week beat one long one" is coaching guidance, and no study is cited here that tests it.** A search for distributed- and massed-practice research found that a motor-skill literature does exist separately from the verbal-learning work in (11), so the two are not one body of evidence — but it does not settle the advice. Almost all of it varies the rest between *repetitions*, in seconds, rather than the gap between *sessions*, in days, and its results diverge. Lee and Genovese (1989) built a discrete and a continuous version of one timing task and found that "acquisition and retention were facilitated by distributed practice on the continuous task, but by massed practice on the discrete task". Panchuk and colleagues (2013), on the Australian Football handball pass, concluded that "massed practice of a discrete sport skill may lead to better retention of learning over a two-week period". No ice hockey study was found on either side. Both papers were read as abstracts only. (13) **A group of prevalence and ranking claims in this document are coaching observation rather than measurement, and each is labelled inline where it appears**: that receiving is the more neglected half of passing and the more valuable one; that most amateur turnovers are failed receptions rather than bad passes; that a technique change is usually abandoned between weeks two and five, just before it would have paid; that puck contacts per player rise several-fold in a small-area game; that half a team practice is spent queuing, and that two players get threefold different value from the same session; and that a sudden jump in load rather than contact is the commonest way an amateur gets hurt. Crossref and OpenAlex were searched on 2 September 2026 for counts of how players divide practice repetitions between skills, for the timing of abandoned technique changes, for touches per player in small-area against full-ice practice, and for a ranking of amateur ice hockey injury causes; **nothing on point was returned by any of them.** Read that as "none found here" rather than as proof that none exists. [Shooting](../technique/shooting.md) records the same absence for how players split their repetitions between shot types, naming the databases and the date it searched.*
+*Limits and caveats: (1) The Ericsson, Krampe & Tesch-Römer (1993) paper is not quoted directly here, so the exact wording of its criteria is not given; its definition of deliberate practice and the origin of the 10,000-hour figure are reported from secondary summaries, from Ericsson's own 2016 commentary, and — for the original's headline result and its 48% variance figure — from **Macnamara and Maitra's 2019 direct replication, which quotes the original**. (2) Wulf (2013) and Heathcote et al. (2000) are not quoted; those claims are stated at the level of the papers' central arguments, with no effect sizes or figures. (3) The USA Hockey handbook reports a claim, attributed to George Kingston from a 1971 study, that around 180 games would be needed to equal one hour of quality puck-control practice; that study is untraced, and the figure is not repeated as fact here. (4) The adult-beginner timeframes (6–10 hours to confident forward skating, 3–6 months to league play, one to two seasons to comfortable hockey) come from a single commercial coaching source and are experienced guesses, not measurements. (5) Claims about the transfer of specific off-ice tools — shooting pads, slide boards, synthetic ice, agility ladders, balance boards — are reasoned from the specificity and representative-learning-design literature plus coaching consensus; no controlled trial of these specific tools in hockey has been published. The How To Hockey page listed above is a product page covering pad material, size, durability and price; the surface-friction and shooting-off-concrete points in that section are coaching craft and are not taken from it. (6) How much roller hockey costs a player's ice-skating mechanics is not settled. The two coaching sources cited agree on the recommendation — both say the puck skills carry over and both recommend playing on wheels — but they differ on the skating itself: one has players going back to basics for a while to rebuild the ice stride and the quick stops, the other says the mechanics translate seamlessly. Neither is evidence, one of the two is a league promoting a roller programme of its own, and no study of roller-to-ice transfer is cited here. (7) The priority ordering of skills, the weekly plans, and the team-practice habits in this document are coaching craft, not research findings, and are labelled as such in the text. (8) Groin and hip adductor problems are described as the classic hockey overuse complaint on the basis of general coaching consensus; no prevalence figure is given because none is reliably established. (9) The soreness-versus-pain triage heuristic in "Avoiding Injury While Developing" traces to no clinical guideline and is labelled inline as a rule of thumb rather than a test. (10) The external-focus-of-attention effect is treated here as **contested**: Wulf (2013) and **Chua, Jimenez-Diaz, Lewthwaite, Kim & Wulf (2021), *Psychological Bulletin* 147(6):618–645** — the meta-analysis of 73 performance studies (1,824 participants) and 40 learning studies (1,274 participants) that reported external-focus superiority at g = 0.264 for performance, 0.583 for retention and 0.584 for transfer — support it; McKay et al. (2024), also in *Psychological Bulletin* and reanalysing that same body of data, found moderate to strong publication bias across the whole literature and near-zero bias-corrected effects. (11) **The retrieval-practice section carries a limit that applies to all of it: every study cited there used verbal material — prose passages, trivia questions, word pairs — with university undergraduates. None measured a motor skill and none was conducted in a sport, so nothing in that section is evidence about on-ice practice, and it is not offered as any.** Two further gaps are worth stating. Adesope, Trevisan and Sundararajan's 2017 meta-analysis in *Review of Educational Research* is the second pooled estimate usually cited alongside Rowland's; **it is deliberately not cited here, because every route to it returned an abstract stripped of its statistics, and its figures are therefore not quoted from memory.** And Karpicke and Aue's published rebuttal to van Gog and Sweller, in the same 2015 issue of *Educational Psychology Review*, could not be obtained either — so that dispute is reported as open rather than settled in either direction. (12) **"Two shorter sessions a week beat one long one" is coaching guidance, and no study is cited here that tests it.** A search for distributed- and massed-practice research found that a motor-skill literature does exist separately from the verbal-learning work in (11), so the two are not one body of evidence — but it does not settle the advice. Almost all of it varies the rest between *repetitions*, in seconds, rather than the gap between *sessions*, in days, and its results diverge. Lee and Genovese (1989) built a discrete and a continuous version of one timing task and found that "acquisition and retention were facilitated by distributed practice on the continuous task, but by massed practice on the discrete task". Panchuk and colleagues (2013), on the Australian Football handball pass, concluded that "massed practice of a discrete sport skill may lead to better retention of learning over a two-week period". No ice hockey study was found on either side. Both papers were read as abstracts only. (13) **A group of prevalence and ranking claims in this document are coaching observation rather than measurement, and each is labelled inline where it appears**: that receiving is the more neglected half of passing and the more valuable one; that most amateur turnovers are failed receptions rather than bad passes; that a technique change is usually abandoned between weeks two and five, just before it would have paid; that puck contacts per player rise several-fold in a small-area game; that half a team practice is spent queuing, and that two players get very different value from the same session; and that a sudden jump in load rather than contact is the commonest way an amateur gets hurt. Crossref and OpenAlex were searched on 2 September 2026 for counts of how players divide practice repetitions between skills, for the timing of abandoned technique changes, for touches per player in small-area against full-ice practice, and for a ranking of amateur ice hockey injury causes; **nothing on point was returned by any of them.** Read that as "none found here" rather than as proof that none exists. [Shooting](../technique/shooting.md) records the same absence for how players split their repetitions between shot types, naming the databases and the date it searched.*
