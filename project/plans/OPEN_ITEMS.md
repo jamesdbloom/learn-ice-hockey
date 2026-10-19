@@ -350,6 +350,8 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ## Open rows
 
+**ORDER OF WORK (owner, 19 Oct 2026: "lets focus on readability changes first" … "the order you presented above is a good order"):** (1) P1 readability, including SHORTER IS BETTER; (2) ⭐ Priority 1, how to play; (3) tooling; (4) quotations, citations and provenance; (5) captions and diagrams; (6) British scope; (7) book counts and scope promises; (8) the remaining rule-specific groups. Method: one agent per document, about 10 at a time, with per-document review as each finishes. Readability round R1 (the 10 longest documents) started 19 Oct.
+
 ### ⭐ PRIORITY 1 — Owner, 15 Oct 2026: how to play is the strong focus
 
 The owner, verbatim: *"lets make sure the content is more focused on how to play and that is the strong focus, rules are fine to include but the focus should be on what to do not on the rules, readers of the content what to know how to play"* (sic). This restates the 22 September direction in CLAUDE.md after waves 32–37 spent almost all their effort on penalty pricing and ADDED rule short forms to summary layers. Every wave brief leads with this; a new rule sentence in a Key focus, Overview or Key Takeaway is a cost, not a fix.
