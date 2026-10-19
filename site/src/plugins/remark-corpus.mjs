@@ -471,6 +471,45 @@ export default function remarkCorpus(options = {}) {
       parent.children[index] = wrapper('figure', { className: cls }, kids);
     });
 
+    // A marker is its own markdown paragraph, so the figure above lands INSIDE a <p>.
+    // A <figure> cannot live in a <p>, and the shipped HTML carried a literal empty
+    // `<p></p>` before AND after every diagram (659 of them). Lift each figure out of
+    // its paragraph. Text either side of it (a marker written with no blank line after
+    // a list item becomes a lazy continuation of that item's paragraph) stays a
+    // paragraph of its own; the first keeps the original node and its data.
+    const isFigure = (n) => n?.type === 'blockquote' && n.data?.hName === 'figure';
+    const isBlank = (c) => (c.type === 'text' && !c.value.trim()) || c.type === 'break';
+    visit(tree, 'paragraph', (node, index, parent) => {
+      if (!parent || index === undefined || !node.children.some(isFigure)) return;
+      const kids = node.children;
+      const out = [];
+      let run = [];
+      let reused = false;
+      const flush = () => {
+        while (run.length && isBlank(run[run.length - 1])) run.pop();
+        while (run.length && isBlank(run[0])) run.shift();
+        if (run.length && !reused) {
+          node.children = run;
+          out.push(node);
+          reused = true;
+        } else if (run.length) {
+          out.push({ type: 'paragraph', children: run });
+        }
+        run = [];
+      };
+      for (const c of kids) {
+        if (isFigure(c)) {
+          flush();
+          out.push(c);
+        } else {
+          run.push(c);
+        }
+      }
+      flush();
+      parent.children.splice(index, 1, ...out);
+      return [SKIP, index + out.length];
+    });
+
     // ----------------------------------------------------------- key facts
     //
     // ```facts blocks are structure, not code. Left alone they reach Astro's

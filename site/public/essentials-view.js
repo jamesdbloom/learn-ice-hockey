@@ -23,6 +23,11 @@
  *   - Following an in-page link, or a hash change, to a hidden target switches to
  *     the full guide first, so the browser's own scroll lands on a visible element.
  *     Also not remembered: one deep link should not undo a stated preference.
+ *
+ * Two small page behaviours ride along because they need this file's hooks:
+ *   - the contents list marks the section being read (trackContents below);
+ *   - `html.audio-idle` keeps the phone audio bar out of the sticky stack until
+ *     its first play (global.css).
  */
 (function () {
   var KEY = 'doc-view';
@@ -36,6 +41,17 @@
     /* storage unavailable: default view */
   }
   if (stored === 'essentials' && !window.location.hash) root.classList.add(CLS);
+
+  /* Not Essentials, but it needs the same early hook and this is the file that has
+     it: on a phone the audio bar stays in the flow until its first play, then sticks
+     (global.css, `html.audio-idle`). Set here in <head> so there is no sticky first
+     paint; cleared on the first `playing` in the document, whichever format. `playing`
+     rather than `play`: `play` fires before a fetch that may fail. Media
+     events do not bubble, so listen in the capture phase. */
+  root.classList.add('audio-idle');
+  document.addEventListener('playing', function () {
+    root.classList.remove('audio-idle');
+  }, true);
 
   function isEssentials() {
     return root.classList.contains(CLS);
@@ -71,6 +87,7 @@
       var hidden = on && hiddenInEssentials(targetOf(links[j].getAttribute('href')));
       links[j].classList.toggle('toc-link--elsewhere', hidden);
     }
+    refreshContents();
   }
 
   /* Switch view, keeping `anchor` (the control that was used) where it was on screen. */
@@ -91,7 +108,151 @@
     }
   }
 
+  /*
+   * Contents: mark the entry for the section being read (both the desktop rail and
+   * the inline list). It lives here, not in its own file, because it has to know what
+   * the Essentials view hides: a hidden heading is never "current", and switching
+   * view re-picks the entry.
+   *
+   * The current section is the last VISIBLE heading whose top has passed the line
+   * where a contents click lands it (`scroll-padding-top`, which already counts the
+   * header and the audio bar). An IntersectionObserver whose top edge is that line
+   * says when a heading (or any top-level block) crosses it; nothing runs on scroll
+   * otherwise. The one
+   * exception is the end of the page, where the last short sections can never
+   * reach the line: while the footer is on screen a rAF-throttled scroll listener
+   * picks the last heading on screen once the page cannot scroll further.
+   *
+   * Only a class and `aria-current` change, and the CSS for them is colour and
+   * box-shadow, so marking an entry never moves anything.
+   */
+  var refreshContents = function () {};
+
+  function trackContents() {
+    if (!('IntersectionObserver' in window) || !window.requestAnimationFrame) return;
+    var links = document.querySelectorAll('.toc a[href^="#"], .toc-inline a[href^="#"]');
+    var heads = [];
+    var linksFor = {};
+    for (var i = 0; i < links.length; i += 1) {
+      var h = targetOf(links[i].getAttribute('href'));
+      if (!h || !h.id) continue;
+      if (!linksFor[h.id]) {
+        linksFor[h.id] = [];
+        heads.push(h);
+      }
+      linksFor[h.id].push(links[i]);
+    }
+    if (!heads.length) return;
+
+    var rail = document.querySelector('nav.toc');
+    var footer = document.querySelector('.site-footer');
+    var current = null;
+    var io = null;
+    var line = -1;
+    var pending = false;
+    var footerOnScreen = false;
+
+    function lineNow() {
+      var pad = parseFloat(window.getComputedStyle(root).scrollPaddingTop) || 0;
+      return Math.round(pad) + 8;
+    }
+
+    function shown(el) {
+      return el.getClientRects().length > 0;
+    }
+
+    function mark(id) {
+      if (id === current) return;
+      var old = current ? linksFor[current] : [];
+      for (var a = 0; a < old.length; a += 1) {
+        old[a].classList.remove('toc-link--current');
+        old[a].removeAttribute('aria-current');
+      }
+      current = id;
+      var now = id ? linksFor[id] : [];
+      for (var b = 0; b < now.length; b += 1) {
+        now[b].classList.add('toc-link--current');
+        now[b].setAttribute('aria-current', 'location');
+      }
+      /* Keep the entry in view inside the rail's own scroll box, never the page's. */
+      var inRail = null;
+      for (var c = 0; c < now.length; c += 1) if (rail && rail.contains(now[c])) inRail = now[c];
+      if (inRail && rail.clientHeight > 0 && rail.scrollHeight > rail.clientHeight) {
+        var top = inRail.offsetTop;
+        if (top < rail.scrollTop || top + inRail.offsetHeight > rail.scrollTop + rail.clientHeight) {
+          rail.scrollTop = Math.max(0, top - rail.clientHeight / 3);
+        }
+      }
+    }
+
+    function update() {
+      pending = false;
+      var l = lineNow();
+      if (l !== line) {
+        observe(l);
+        return;
+      }
+      var pick = null;
+      var lastOnScreen = null;
+      var vh = window.innerHeight;
+      for (var k = 0; k < heads.length; k += 1) {
+        if (!shown(heads[k])) continue;
+        var t = heads[k].getBoundingClientRect().top;
+        if (t <= l) pick = heads[k];
+        if (t < vh) lastOnScreen = heads[k];
+        else break;
+      }
+      var doc = document.documentElement;
+      if (footerOnScreen && lastOnScreen && window.scrollY + vh >= doc.scrollHeight - 2) {
+        pick = lastOnScreen;
+      }
+      mark(pick ? pick.id : null);
+    }
+
+    function schedule() {
+      if (pending) return;
+      pending = true;
+      window.requestAnimationFrame(update);
+    }
+
+    function onIntersect(entries) {
+      for (var e = 0; e < entries.length; e += 1) {
+        if (entries[e].target !== footer) continue;
+        var was = footerOnScreen;
+        footerOnScreen = entries[e].isIntersecting;
+        if (footerOnScreen && !was) window.addEventListener('scroll', schedule, { passive: true });
+        if (!footerOnScreen && was) window.removeEventListener('scroll', schedule);
+      }
+      schedule();
+    }
+
+    /* The line moves when the audio bar changes height or stops being sticky, so the
+       observer is rebuilt whenever it does. */
+    function observe(l) {
+      line = l;
+      if (io) io.disconnect();
+      io = new IntersectionObserver(onIntersect, { rootMargin: '-' + l + 'px 0px 0px 0px' });
+      /* Every top-level block, not only the headings: a long jump (a link, Home/End,
+         a scrollbar drag) can carry a heading from below the screen to above the line
+         without it ever intersecting, which fires nothing for it. Some block always
+         enters or leaves the band on such a jump, and that is enough to re-pick. */
+      for (var m = 0; m < heads.length; m += 1) io.observe(heads[m]);
+      var blocks = document.querySelectorAll('.prose > *');
+      for (var n = 0; n < blocks.length; n += 1) io.observe(blocks[n]);
+      if (footer) io.observe(footer);
+      schedule();
+    }
+
+    refreshContents = schedule;
+    observe(lineNow());
+    window.addEventListener('resize', schedule);
+    /* Media events do not bubble; capture them at the document. */
+    document.addEventListener('play', schedule, true);
+    document.addEventListener('pause', schedule, true);
+  }
+
   function init() {
+    trackContents();
     if (!document.querySelector('.prose .ess')) {
       /* Nothing to show in Essentials on this page: never strand a reader on it. */
       root.classList.remove(CLS);

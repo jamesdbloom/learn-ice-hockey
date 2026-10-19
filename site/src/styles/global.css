@@ -1834,6 +1834,54 @@ figcaption .warn-inline {
   }
 }
 
+/* ---- The bar on a phone (owner-approved, 19 October 2026) ----
+   At 400px wide the two-row bar was about 85px under a 56px header: 17% of the
+   screen gone before a word of text, for a reader who may never press play.
+   Two changes, neither of which touches the native control's WIDTH (see above):
+   (1) slimmer: tighter padding and row gap, a 2rem control, smaller labels;
+   (2) it does not STICK until the first play. Until then it sits in the flow at the
+       top of the article and scrolls away like any other block; from the first
+       `playing` event on that page it is sticky, as before, and stays so when paused.
+       Switching moves nothing else on the page, because a sticky box keeps its
+       flow slot either way.
+   ⚠️ (2) is keyed on `html.audio-idle`, which essentials-view.js ADDS in <head> and
+   removes on the first `playing` anywhere in the document (not `play`, which fires
+   before a fetch that may fail). It is not keyed on `:playing`:
+   Chrome 154 rejects that selector outright (measured), so it would have reached
+   Safari only. With the script absent the class never appears and the bar is the
+   old always-sticky one, never a playing episode with no control on screen.
+   ⚠️ `scroll-padding-top` must follow the stickiness, or every contents click lands
+   its heading a whole bar-height low. audio-player.js keeps `--player-h` equal to
+   the bar's height, so the override drops the term rather than editing the value. */
+@media (max-width: 39.99rem) {
+  .audio-player {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    row-gap: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .audio-player audio {
+    height: 2rem;
+  }
+
+  .audio-player__label,
+  .audio-player__option {
+    font-size: 0.75rem;
+  }
+
+  /* `top: auto` matters: a relative box still honours `top`, and the base rule's
+     `top: var(--header-h)` pushed the idle bar 56px down over the H1. */
+  html.audio-idle .audio-player {
+    position: relative;
+    top: auto;
+  }
+
+  html.has-player.audio-idle {
+    scroll-padding-top: calc(var(--header-h) + 1rem);
+  }
+}
+
 /* ---------------------------------------------------------------- home --- */
 
 .home-hero {
@@ -2461,7 +2509,12 @@ figure.diagram svg {
   are kept as well, so that if the renderer ever stops emitting the empty paragraph this
   spacing does not silently revert.
 
-  Measured on the current build: 608 literal `<p></p>` — exactly TWICE the 304 diagram
+  ⚠️ UPDATE, 19 October 2026: remark-corpus.mjs now lifts the figure out of its
+  paragraph, so the build emits NO empty `<p></p>` around diagrams and the bare
+  `h* + figure` rules are the ones doing the work. The `p:empty` variants are kept as a
+  fallback only; the history below describes the old output.
+
+  Measured on the old build: 608 literal `<p></p>` — exactly TWICE the 304 diagram
   markers, because each marker leaves one empty paragraph BEFORE the figure and one AFTER
   it. Every one of the 608 is figure-adjacent: zero orphans, zero whitespace-only
   `<p> </p>`, zero comment-only paragraphs, so `:empty` is unambiguous HERE. ⚠️ It is not
@@ -3094,6 +3147,15 @@ html.view-essentials .ess-end {
    following it switches to the full guide. */
 .toc-link--elsewhere {
   opacity: 0.6;
+}
+
+/* The contents entry for the section being read (essentials-view.js sets the class
+   and `aria-current` on both lists). Only the rail is styled: the inline list sits
+   above every heading, so a highlight there could never be seen while it is on screen. Colour and box-shadow only, so marking it never shifts a line.
+   On the rail the shadow paints a 2px accent bar over the list's 1px guide line. */
+.toc li a.toc-link--current {
+  color: var(--text);
+  box-shadow: -1px 0 0 var(--accent), inset 1px 0 0 var(--accent);
 }
 
 /* ------------------------------------------------------------- In short --
