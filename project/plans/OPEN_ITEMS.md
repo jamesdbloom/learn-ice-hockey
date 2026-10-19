@@ -468,7 +468,10 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - :1602 HC slide is 8.6 tripping first, 8.7 can reach;
     - "likely" consistency at puck_handling :1127, shooting :572/:925, goaltender :1640.
   - Noted, no change: "harsher of 43 and 48" in the NHL/PWHL is the owner's ruling (a reading, not rule text).
-- **qR notes (later):** "nothing the Elite League publishes" (on_ice :148, :198) is wider than the Casebook on disk; faceoffs :949 states PWHL 15.5 without the body's "plain reading" hedge.
+- **"Nothing published settles…" negatives** (wider than the documents searched): forechecking_systems :840/:1037 (22.3), faceoffs :823 (a different claim). Narrow them to what was searched, or test them.
+- **R wave done 20 Oct** (record r_consistency_2026-10-19.md).
+- **Diagram captions** voice the full board-posture mechanics in forechecking_systems (chunks 039, 044). Run check_caption_hosts on posture captions and check whether a shared constant is involved before trimming. This is a later row.
+- **Board posture in NZ and OZP** (neutral_zone_systems :732/:746/CM :857; offensive_zone_play :363/:385/:755/:764/:1145) still needs the same layer test r3 did for dzc and forechecking.
 - **P wave done 19 Oct** (record p_residuals_2026-10-19.md).
   - Residual 22.3 wording to align: rink_map :303, neutral_zone_systems :553/:569, center :394, offensive_zone_play :820, special_teams :354/:1047.
   - Glossary reason given more than once in body_contact (4), game_management (2) and rules_primer (2). This is brevity, not safety.

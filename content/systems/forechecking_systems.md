@@ -585,8 +585,7 @@ Rule: Behind them, Hockey Canada's one exception excuses only accidental contact
 Read: On a pure race for a loose puck or a dying rim with nobody to seal, you need to arrive clearly first, not "probably"
 Read: Pinch when the puck is on the wall and slowing down, not zipping past you
 Read: Pinch only when F3 is high and in position to rotate back and cover the point you are vacating
-Never: Turn your back to the checker on the wall, and never duck — in every league, checking or not
-Technique: Skates parallel to the wall, forearm and hip to it — not the point of your shoulder, not the whole shoulder if you can help it, and never turn your back to the checker. Head up, chin off your chest
+Never: Turn your back to the checker on the wall, and never duck — keep your head up and your chin off your chest, in every league, checking or not
 ```
 
 A **pinch** is stepping down from the *offensive* blue line along the wall to kill a rim or a chipped clear before it escapes. It is not the same play as **stepping up**, which is moving forward to challenge an attacker early, in the neutral zone or at your own blue line — different line, different zone, different risk.
@@ -1007,8 +1006,7 @@ Targets: Your winger should come underneath the pressure to receive, not stand s
 Action: Against containment, use D-to-D and controlled regroups to make the wall shift, then chip past the line and race for it
 Options: Bank passes off the boards to teammates who have already got behind the line
 Never: Skate into the middle of three players — the one thing that never works
-Never: Turn your back to the checker on the wall, and never duck — in every league, checking or not
-Technique: Skates parallel to the wall, forearm and hip to it — not the point of your shoulder, not the whole shoulder if you can help it, and never turn your back to the checker. Head up, chin off your chest
+Never: Turn your back to the checker on the wall, and never duck — keep your head up and your chin off your chest, in every league, checking or not
 ```
 
 - **Against an aggressive forecheck:** move the puck early — before pressure arrives, not after. Use the reverse against an over-committed F1 and the rim against a sealing one. Attack the space behind their pinching defencemen; a rim or a chip that gets past the point is worth more than a pretty pass. Your winger should be coming *underneath* the pressure to receive, not standing still on the wall.
@@ -1039,7 +1037,7 @@ Full detail on the counters lives in [Breakouts](breakouts.md) and [Neutral Zone
 - **Dumping the puck straight behind the net in a trapezoid league.** **Aim for the corners.** Behind the net is exactly where their goalie may play it. In Britain, in any competition, plan for their goalie to come out anyway — England Ice Hockey's rules say the restricted area is not currently enforced, and nothing published settles how far that reaches.
 - **Running the goalie in the corner because there is no trapezoid.** **Close them down, put your stick in the lane they want to pass into, and pull up rather than finish.** No book here makes a goalie outside the crease fair game. ⚠️ **Running one can end your game**: a charge does so automatically under Hockey Canada wherever it happens, under CARHA if the goalie is in the crease or anyone is injured, and under USA Hockey if it is reckless. Under USA Hockey any deliberate hit on one is charging, never a bare minor, unless, in a checking game, you are battling for a puck they hold outside the privileged area, and then only to win the puck; where your game bars body checking, stay off them altogether. See [Why this matters so much to a forechecker](#why-this-matters-so-much-to-a-forechecker).
 - **Not knowing which forecheck your team runs, or which one you switch to with a lead.** Ask before your first shift: which shape, which way F1 angles, and what the bench shouts to switch — and agree it with your linemates. If F1 angles to the boards while F2 seals the middle, both are doing their job and neither is doing anything useful.
-- **Turning your back to the checker at the wall, on either side of the puck.** Never turn your back to the checker, and never duck: skates parallel to the wall, forearm and hip to it, head up and chin off your chest, never the point of your shoulder. It holds in every league, forechecking and pinching alike. A turned back turns any contact into a hit from behind you can neither see nor brace for, and a head-down collision with the boards can injure your neck even at walking speed. Protecting the puck never justifies any of them.
+- **Turning your back to the checker at the wall, on either side of the puck.** Never turn your back to the checker, and never duck — head up, chin off your chest. It holds in every league, forechecking and pinching alike. A turned back turns any contact into a hit from behind you can neither see nor brace for, and a head-down collision with the boards can injure your neck even at walking speed. Protecting the puck never justifies any of them.
 - **Running an aggressive forecheck you are not fit enough to sustain.** Run the shape your legs can hold all game, keep shifts short, and save two-man pressure for when it pays — trailing late, or against a defence that panics. A 2-1-2 for ten minutes and nothing after is worse than a 1-2-2 for sixty.
 
 ## Check yourself

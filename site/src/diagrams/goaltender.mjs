@@ -561,9 +561,9 @@ const rimStopOrClear = {
     // where eih_rr.txt 22.2 scopes it to "EIH competitions", and the Elite League plays in
     // England under a Casebook that hands Rule 27 to the IIHF book. Owner: uk_rules.md KT7.
     'trapezoid applies is not universal — the NHL and IIHF books have one, and none of USA Hockey, ' +
-    'Hockey Canada or CARHA marks one at all. In Britain, nothing the Elite League publishes ' +
-    'switches it off, and England Ice Hockey’s "not currently enforced" is written for its own ' +
-    'competitions and may no longer stand. ' +
+    'Hockey Canada or CARHA marks one at all. In Britain, nothing in the Elite League’s Casebook ' +
+    'switches it off, and whether England Ice Hockey’s rule calling it not currently enforced ' +
+    'still stands, and where, is unsettled. ' +
     // ⚠️ FULL STOP, NOT A COLON, before "Assume it binds" below. "…do not settle whether the
     // suspension still stands: assume it binds, ask your league…" puts a MAIN-CLAUSE negation
     // immediately before the colon and three bare imperatives after it, so a listener can hear

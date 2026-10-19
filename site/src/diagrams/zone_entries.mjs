@@ -865,8 +865,8 @@ const trapezoidAim = {
     'rulebook was available to check that; the USA Hockey, Hockey Canada and CARHA books mark ' +
     'none, and the PWHL switches its off though one rule still writes the minor, so plan for a ' +
     'PWHL goalie to come out. In any British competition, plan for him to come out too: ' +
-    'England Ice Hockey calls it "not currently enforced" in its own competitions, and nothing ' +
-    'published settles how far that reaches. Look behind the net, ask your league, and ' +
+    'England Ice Hockey calls it "not currently enforced", but that rule’s scope ' +
+    'and standing are unsettled. Look behind the net, ask your league, and ' +
     'where there is none, rim it hard and low instead.',
 
   describe:

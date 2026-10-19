@@ -570,7 +570,7 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 ```facts
 Options: The quick rim, the direct exit, the reverse, or off the glass and out of your zone — every forechecker is stationary at the whistle, so a hard rim or direct exit beats them
 Rule: Under NHL and IIHF rules — the KHL reportedly too, unverified — your goalie may only play the puck behind the goal line inside the trapezoid (Rule 1.8; penalty NHL 27.8 and 63.2(viii), IIHF 27.7 and 63.2(VIII)); the sole exception is skate contact with the crease
-Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8. Nothing the Elite League publishes switches it off; England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", scope and standing unsettled — keep your goalie inside it
+Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8. Nothing in the Elite League's Casebook switches it off; England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", scope and standing unsettled — keep your goalie inside it
 Read: Play it as though it binds — your goalie stays inside the trapezoid, so a rim that dies in the corner is yours to fetch, not theirs
 Rule: USA Hockey, Hockey Canada and the CARHA rec book write no trapezoid, so there a rim dying in your corner is your goalie's to fetch, though none lets him sit on it; a PWHL goalie plays as if it binds — Rules 1.8 and 27.8 switch it off, but 65.2(viii) keeps the minor
 Rule: Neither the three books without a trapezoid nor the PWHL lets your goalie sit on a dead rim — USA Hockey 614(c) and CARHA 58(b) behind the goal line, body clear of the crease; CARHA 61(b) anywhere; PWHL 65.2(i) outside the crease; Hockey Canada Interpretation 3 to 10.1(a), clause v
@@ -586,7 +586,7 @@ Action: Call off the glass and out of your zone when you are tired, pinned, or a
 
 **USA Hockey, Hockey Canada and CARHA write no trapezoid**, so there a rim that dies in the corner is your goalie's to fetch — but he has to play it, not cover it. A PWHL goalie should play as if it binds (see "What it costs"). The KHL is commonly said to have one too; no KHL rulebook was available to check.
 
-**🇬🇧 In Britain, keep your goalie inside it.** Nothing the Elite League publishes switches it off — its Casebook adopts the 2026-27 IIHF book — and while England Ice Hockey's *Rules & Regulations* 22.3 (2024-25) call it *"not currently enforced"* (its scope and standing are unsettled), the In-House Rules never mention it and say *"[u]nless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*. Play it as though it binds: a rim that dies in the corner is yours to fetch.
+**🇬🇧 In Britain, keep your goalie inside it.** Nothing in the Elite League's Casebook switches it off — the Casebook adopts the 2026-27 IIHF book — and while England Ice Hockey's *Rules & Regulations* 22.3 (2024-25) call it *"not currently enforced"* (its scope and standing are unsettled), the In-House Rules never mention it and say *"[u]nless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*. Play it as though it binds: a rim that dies in the corner is yours to fetch.
 
 **The direct exit.** Win the puck to the boards-side defenceman, who hits the boards-side winger already breaking up the wall. You keep possession, and the play is done before the forecheck is organised.
 
@@ -946,7 +946,7 @@ An open hand is no loophole: placing a hand over the puck to conceal it is a min
 **In short:** Agree in advance who takes the draw if your centre is thrown out, and default to a tie-up, not a set play.
 
 ```facts
-Rule: A teammate on the ice replaces an ejected centre, never the bench — all six books bar a change until the draw is done; a penalty lifts it where it leaves a team shorthanded (HC 6.2(d), CARHA 57(c)) or changes on-ice strength (NHL, IIHF 76.8; USAH 204(a); PWHL 84.1, not for the penalized team: 15.5)
+Rule: A teammate on the ice replaces an ejected centre, never the bench — all six books bar a change before the draw; a penalty lifts it if it leaves a team shorthanded (HC 6.2(d), CARHA 57(c)) or changes on-ice strength (NHL, IIHF 76.8; USAH 204(a); PWHL 84.1, not for the penalized team: 15.5)
 Rule: The substitution exception is written two ways — Hockey Canada 6.2(d) and CARHA 57(c) allow the change only where a penalty is assessed "to make a team shorthanded", where NHL and IIHF 76.8 allow it whenever a penalty "affects the on-ice strength of either team", USA Hockey 204(a) likewise
 Rule: The replacement centre must come into position quickly or risk the puck being dropped without them set — or being ejected themselves, which counts as a second faceoff violation on the same draw and costs the team a bench minor for delay of game (NHL Rule 76.4)
 Rule: No time-out shall be granted following a faceoff violation (Rule 87.1; IIHF Rule 87.1 in the same words, unchanged across both IIHF editions)
