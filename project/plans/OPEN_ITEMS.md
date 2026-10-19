@@ -868,31 +868,26 @@ places in the old plan.
     - (x) DONE 19 Oct: check_marker_pairs.units() now uses md_to_speech.parse_blocks. It is validated on the R2 commit (4 new LOSTs, all splits or duplicate-key artefacts) and on the 29 Sept regression set (all 6 reproduce). One caveat remains: duplicate 60-char keys still collapse, so grep the key.
     - (y) **GitHub dependabot reports 10 vulnerabilities on main.** Triage site/package-lock.json and do not stage it with content.
     - (z) **Open owner question, IIHF 48.1.** It says it "supersedes all similar actions regarding hits to the head and neck", and the text leans against the "keep Rule 43" ruling. The corpus applies the ruling as the operative reading (for example winger: "treat … as a Rule 43 hit"). The owner may want to confirm.
-    - (aa) **Pre-existing quotation drift.** About 30 quotations were already flagged at HEAD by check_quote_drift in the R2 documents: lowered capitals without `[x]`, and full stops inside quote marks where the source continues. Examples: forechecking :244/:281/:818, goaltender :1676, shooting :987/:1015, puck_handling :1129, defender :276, rules_primer (19), zone_entries (8), risk_management (6). None changes meaning. Repair this in a dedicated wave, and build the baseline with `sources/` symlinked beside the HEAD copy: the tool resolves `sources/` relative to the document.
+    - (aa) DONE in S3, with remaining check_quote_drift flags that are not drift: forechecking :257 (matched to the HC Glossary; 7.4 item ii ends with its own full stop), :627, :725, :737 and :871 (matched to the wrong instance); goaltender :651 (HC clause iv versus v); rules_primer :403 and :1139 (attribution artefacts, the cited NHL text matches). Leave these alone.
     - (bb) DONE in S2.
     - (cc) DONE in S2 (project/reviews/s2_fights_outside_periods_2026-10-19.md). Open: whether In-House Section 6's NIHL/SNL fight softening reaches fights outside the periods is unsettled; the corpus takes the harsher v1.1 46.9 reading.
     - (dd) DONE in S2.
     - (ee) DONE in S2.
     - (ff) DONE in S2.
     - (gg) **IIHF table numbering.** It is Table 16 in 2025/26 and Table 14 in 2026/27, and several documents cite the 2025/26 number. Make one corpus-wide edition decision.
-    - (hh) **"What it costs" blocks are not one block at the end of each section** (site-reviewer, 19 Oct). Cases:
-      - winger: Power Play has the costs mid-section, before the main instruction; Net-front has 6 separate costs paragraphs; Backchecking.
-      - body_contact: up to 4 costs blocks per section; Slew-footing has an instruction after its costs block.
-      - team_play: a bare "What it costs:" label, with nothing marking where the block ends.
-
-      Faceoffs and goaltender are the clean model. The label wording also varies, e.g. "What it costs." / "What it costs:" / "What boarding costs.". **Owner design call:** whether the site should style a "What … costs" paragraph so the block is visible.
-    - (ii) **Amber on a citation instead of the instruction**, at 7 sites:
-      - body_contact: "IIHF Rule 43.1", "Rule 32(d)", "USA Hockey 604(d)" and "CARHA 59(b)";
-      - rules_primer: "USA Hockey 614(c)", the table cell "Elite League:" (×2), and the verification-notes "Scope:".
-
-      Split each bold run so the amber lands on the instruction.
-    - (jj) **Paragraph length.** body_contact has 10 body paragraphs of 1,202–1,347 characters. The Sources `<details>` hold very long paragraphs: goaltender has one of 36,813 characters.
+    - (hh) Placement DONE in S3 (winger, body_contact, team_play). **Still open, owner design call:** whether the site should style a "What it costs." paragraph so the block is visible. Labels are now normalised to "What it costs." in those three documents.
+    - (ii) DONE in S3.
+    - (jj) DONE in S3.
+    - (ll) **check_marker_pairs cannot see a SPLIT that leaves the new half unmarked.** It keys on a unit's first 60 characters, so when a ⚠️ paragraph is split, the half that keeps the opening keeps the key and the new half is never compared. S3 review found 5 such losses in body_contact (:592, :664, :697, :1148, :1282), one of them a counterweight. Fix the tool: also flag any tree unit whose normalised text is a substring of a marked HEAD unit and that carries no marker.
+    - (mm) **Orphaned "What it costs." labels in audio.** The bare label is its own `<p>`, and it ends a chunk in body_contact (chunks 009, 020, 039, 046, 166) and winger (009, 059). The listener hears the label, then a chunk break. Fold the label into the first item, e.g. `- **What it costs.** <first item>`, or into a lead sentence.
     - (kk) **Site findings, owner sign-off:**
       - On phones the sticky audio player takes about 85 px under the header (17% of the screen at 400 px).
       - The ToC has no active-heading tracking.
       - Empty `<p>` elements sit around figures.
       - The GA4 bootstrap (`analytics.js`) is inert unless a `ga-measurement-id` meta tag is present. Confirm production does not inject one, against the "no third-party requests" claim.
   - **S1 DONE (19 Oct).** The claim sweep of the 19 R1-only documents is complete: 13 edited, 6 clean. Record: project/reviews/claim_sweep_s1_2026-10-19.md. That closes rows (a), (b), (d), (e), (i)–(n), (q), (s) and (t) for the R1-only documents; R2 had already covered its own 20.
+  - **S2 DONE (19 Oct, 2a17bd5).** Fights outside the periods (cc) and leftovers (bb), (dd), (ee), (ff); browser pass (o). Record: project/reviews/s2_fights_outside_periods_2026-10-19.md.
+  - **S3 DONE (19 Oct).** Rows (hh) placement in winger, body_contact and team_play; (ii) amber on citations; (jj) body_contact paragraphs (19 → 1 over 1,200); (aa) pre-existing quotation drift (~80 fixes). Record: project/reviews/s3_placement_amber_quotes_2026-10-19.md. Still open: (ll) the tool gap, and the (hh) owner design call on styling.
   - **[R1 corpus-claim leftovers] Sweep each of these claims across sibling documents, by claim and not by line.**
     - (a) "From behind ends your game in every book but USA Hockey's" is wrong at the boards: USAH Casebook 608 Situation 1 makes it mandatory there.
     - (b) Goalie injury stoppage: "every book stops play" leaves out the possession gate in five books (NHL/IIHF/PWHL 8.1, USAH 206(a), HC 2.4(b)).
