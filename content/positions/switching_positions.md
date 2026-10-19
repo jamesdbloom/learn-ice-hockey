@@ -268,6 +268,7 @@ New defencemen routinely hear both instructions and conclude the position contra
 
 - **Getting beaten wide** means the attacker gets past your outside shoulder with open ice behind you. You are no longer between them and the net, and there is nothing left. ⚠️ **Chasing him from behind, your stick goes on the puck and nothing else** — a hook, trip, hold or slash that denies the chance is a **penalty shot**, and can be an **awarded goal** if your net is empty. The detail is at the end of this section.
 - **How much the wall does for you depends on the width of the sheet you are standing on.** [Rink Map](../foundation/rink_map.md) puts it this way: *"On narrow ice, the wall is your second defender. On wide ice, an attacker forced outside still has room to keep skating, so gap control and stick position matter more than steering."* **Do not read "IIHF" as "wide ice".** **IIHF Rule 1.2** allows a rink *"26m to 30m wide"*, and 26 m is 85.3 ft — fractionally wider than a full NHL sheet's 85 ft (**NHL Rule 1.2**). 🇬🇧 **In Britain, assume narrow.** The **IHUK In-House Rules 2026-27, Rule 1** authorise rinks *"with a non-standard playing surface (below 56 m × 26 m)"* *"for all levels of hockey, except"* **Sutton in England and Coatbridge in Scotland, each *"permitted up to U16 only"***, and **England Ice Hockey's Rules & Regulations 22.2** says the same. On a narrow sheet the wall does more of the work for you. Measure the building you actually play in.
+
 ![](diagram:forcing-them-outside)
 
 ![](diagram:getting-beaten-wide)

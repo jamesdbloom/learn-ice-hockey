@@ -152,7 +152,7 @@ The per-game counts are those percentages applied to the roughly **56 draws in a
 
 ### What sends the draw to which spot
 
-**In short:** Know where the next draw will be and you can start skating there before the whistle finishes.
+**In short:** Learn which stoppage sends the draw to which dot, so you are already on your way when the whistle goes.
 
 ![](diagram:faceoff-where-the-draw-goes)
 
@@ -376,7 +376,7 @@ Deception belongs here too: a small feint of the shoulder, a hip fake, or a deli
 
 ### Handedness and which side you're strong on
 
-**In short:** Your strong side is the circle where your natural backward pull sends the puck toward the boards, so match centres to circles.
+**In short:** Send each centre to the circle that suits his shot: match centres to circles, or put a left-shot and a right-shot out together.
 
 ```facts
 Convention: Coaching sources call the strong-side draw a right-shot centre on the right side, or a left-shot on the left

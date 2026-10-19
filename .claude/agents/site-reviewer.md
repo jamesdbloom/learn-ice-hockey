@@ -153,9 +153,10 @@ read_console_messages   pattern: "error|warning|failed|Uncaught"
 read_network_requests
 ```
 
-**This site sends nothing to third parties** — no analytics, no CDNs, no
-external fonts, telemetry disabled in the build wrapper. So any request to a
-host other than `localhost` is a **finding**, not a curiosity. Check the request
+**A local build sends nothing to third parties**: no CDNs, no external fonts,
+telemetry disabled in the build wrapper. Production adds only the Google Analytics
+tag (googletagmanager / google-analytics), injected when `PUBLIC_GA_ID` is set at
+build. So on a local build any request to a host other than `localhost` is a **finding**, not a curiosity. Check the request
 list on at least one document page and report every off-origin host.
 
 ### 5 · Accessibility and readability

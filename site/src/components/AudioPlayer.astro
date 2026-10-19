@@ -47,7 +47,9 @@ const optionText = (f: PlayerFormat) => `${f.label} · ${minutes(f.durationS)} m
   Self-hosted, deliberately. The owner chose this over a Spotify embed on
   9 September 2026 once the cost was measured rather than assumed: a Spotify
   embed loads 15 scripts from six off-origin hosts and its <noscript> is empty,
-  and the site currently makes ZERO off-origin requests. oEmbed does not avoid
+  and apart from the production Google Analytics tag (injected only when
+  PUBLIC_GA_ID is set at build; local builds make none) the site makes no
+  off-origin requests. oEmbed does not avoid
   it — it hands you the same iframe. This element keeps that property, and
   degrades to a plain download link with scripting off.
 

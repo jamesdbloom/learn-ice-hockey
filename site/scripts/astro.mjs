@@ -2,9 +2,9 @@
 /**
  * Runs the Astro CLI with anonymous usage telemetry switched off.
  *
- * Astro's telemetry is CLI-side and opt-out. This project sends nothing
- * anywhere — no analytics, no CDNs, no third-party requests at build time or
- * in the browser — so the opt-out is wired into the scripts rather than left
+ * Astro's telemetry is CLI-side and opt-out. The build sends nothing anywhere, and the
+ * browser's only off-origin requests are the production Google Analytics tag
+ * (injected when PUBLIC_GA_ID is set; local builds have none) — so the opt-out is wired into the scripts rather than left
  * to each developer to remember. A wrapper is used instead of an inline
  * `VAR=1 astro …` prefix so the scripts work on Windows too.
  *

@@ -127,7 +127,7 @@ Two traps:
 
 ### 1-2-2 — the classic containment structure
 
-**In short:** F1 takes away the middle and forces a side; a turnover is a bonus, dictating the side is the job.
+**In short:** F1 takes away the middle and forces a side, F2 meets the puck on that wall, and D2 stays home as the safety.
 
 ```facts
 Position: F1 pressures near their goal line or hash marks, F2 and F3 sit across the middle, both defencemen hold the back layer around your own blue line
@@ -759,7 +759,7 @@ Published analytics suggests a carry is only the better choice when you are arou
 
 ## Neutral zone faceoffs
 
-**In short:** Know before the drop whether you are winning it forward or back, and who your man is if you lose it.
+**In short:** Treat it as a set play: when defending, take away the middle; when attacking, win it clean; and never creep before the drop.
 
 ```facts
 Goal: Defending — stop a clean win back to their point, take the middle away first, and get the puck out so you can change

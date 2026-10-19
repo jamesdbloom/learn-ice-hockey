@@ -169,8 +169,8 @@ const epubs = [
       {/*
         The Spotify show, as a LINK and not an embed. The owner chose that trade on
         9 September 2026 with the cost measured rather than assumed — an embed is a
-        third-party script, and this site's zero-off-origin-requests property is
-        checked by review. A link costs nothing: nothing is fetched until a reader
+        third-party script, and this site keeps off-origin requests to the
+        production analytics tag alone (PUBLIC_GA_ID at build), and review checks that. A link costs nothing: nothing is fetched until a reader
         chooses to leave. See the same reasoning in AudioPlayer.astro.
 
         rel/target are set by hand here because the pipeline that adds them

@@ -590,7 +590,7 @@ You are not. You are **uncoverable but useless**, for three connected reasons:
 ```facts
 Position: By default, on the wall, between the hash marks and the goal line, on the strong side — low enough that the pass is short and safe, high enough that you are moving up ice when you get it
 Key: The wall spot is where you arrive, not where you have been standing
-Action: Under the standard low zone collapse you spend the defensive shift high, level with the opposing point man, and come down the wall to this spot as your team wins the puck
+Action: Under this guide's standard low zone collapse you spend the defensive shift high, level with the opposing point man, and come down the wall to this spot as your team wins the puck
 Never: Sit above the hash marks once the breakout is under way, under the conventional swing breakout — it makes the pass longer, flatter and more interceptable, and the pass comes into your back
 Key: Being high before that, while they still have possession, is not an error at all — the error is failing to make the trip, not starting from the top
 Convention: Wall position is system-dependent — a flat/spread structure asks wingers to hold higher toward the blue line, and a stretch or flying-winger structure sends one winger up ice entirely, so find out which one you are in
@@ -601,7 +601,7 @@ The default landmark is **on the wall, between the hash marks and the goal line,
 
 ![](diagram:breakout-winger-wall)
 
-**This is where you arrive, not where you have been standing.** Under the standard low zone collapse you spend the defensive shift *high*, level with the opposing point man on your side, and you come down the wall to this spot as your team wins the puck — the one time in that system a winger leaves the point voluntarily. See [Defensive Zone Coverage](defensive_zone_coverage.md) and [Winger](../positions/winger.md). Read anything below about "where the strong-side winger stands" as *where the strong-side winger stands once the breakout has started*.
+**This is where you arrive, not where you have been standing.** Under this guide's standard low zone collapse you spend the defensive shift *high*, level with the opposing point man on your side, and you come down the wall to this spot as your team wins the puck — the one time in that system a winger leaves the point voluntarily. See [Defensive Zone Coverage](defensive_zone_coverage.md) and [Winger](../positions/winger.md). Read anything below about "where the strong-side winger stands" as *where the strong-side winger stands once the breakout has started*.
 
 Being *above* the hash marks **once the breakout is under way** is the more common error: it makes the pass longer, flatter and more interceptable, and it means the pass comes into your back. Being high *before* that, while they still have possession, is not an error at all — it is your coverage. The error is failing to make the trip, not starting from the top.
 
@@ -885,7 +885,7 @@ The moment after a defensive-zone draw is the most structured situation in hocke
 
 **The one thing that makes any of them work:** the play is decided *before* the puck drops. Look at your winger, look at your partner, know what happens next.
 
-**Off a lost draw**, the opposition has possession in your zone with everyone set — the most dangerous routine situation in hockey, which is coaching emphasis and not a counted ranking. Your first job is **defensive, not offensive**: get to your coverage assignment immediately (man or zone depends on your system — see [Defensive Zone Coverage](defensive_zone_coverage.md)). **Wingers get to the points**, because a lost defensive-zone draw usually goes back for a point shot and under the standard low zone collapse closing it down is your job. **Do not chase as a group** — that is exactly how the goal gets scored. And once you win it back, treat it as a **quick-up**: they have just committed to offence and their structure is at its weakest.
+**Off a lost draw**, the opposition has possession in your zone with everyone set — the most dangerous routine situation in hockey, which is coaching emphasis and not a counted ranking. Your first job is **defensive, not offensive**: get to your coverage assignment immediately (man or zone depends on your system — see [Defensive Zone Coverage](defensive_zone_coverage.md)). **Wingers get to the points**, because a lost defensive-zone draw usually goes back for a point shot and under this guide's standard low zone collapse closing it down is your job. **Do not chase as a group** — that is exactly how the goal gets scored. And once you win it back, treat it as a **quick-up**: they have just committed to offence and their structure is at its weakest.
 
 ---
 

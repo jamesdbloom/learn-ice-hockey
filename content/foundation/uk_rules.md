@@ -93,8 +93,7 @@ The In-House Rules' Introduction says so in terms: *"IHUK and the British Univer
 > is Ice Hockey UK Limited (IHUK)… References to EIH or SIH shall, where the
 > context requires, be construed as references to IHUK."* They also widen their
 > reach from England and Scotland to *"England, Wales, Scotland and Northern
-> Ireland (the Home Countries)"*. So where an older document says EIH or SIH, read
-> IHUK.
+> Ireland (the Home Countries)"*.
 >
 > **The older EIH and SIH documents have been reassigned, not repealed.** The same
 > Introduction says those policies *"are now policies of IHUK and will continue to

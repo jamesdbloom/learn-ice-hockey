@@ -631,28 +631,32 @@ const neutralZoneLanes = {
 
 const battleSupport = {
   id: 'support-a-battle-from-outside',
+  title: 'Supporting a wall battle from open ice',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: true,
   width: 900,
 
   // ⚠️⚠️ THIS CAPTION IS THE SAFETY-CARRYING ONE IN THIS MODULE AND IS DELIBERATELY
-  // LEFT LONG. Only the first half was cut (245 words to about 215, 15 September
-  // 2026): the mechanism sentence and the description of what the support player has
-  // done were compressed. NOTHING AFTER THE ⚠️ WAS TOUCHED, and the three notes below
-  // record why each clause of it is worded as it is. The two exceptions stay whole
-  // too — they are the cardinal-rule hedge on an instruction not to go in, and the
-  // second of them ("many teams do assign a second player") is what sends a reader to
-  // ask rather than to decide. ⚠️ If this caption must reach 50 words, the arrival
-  // posture has to be routed into §"Supporting a battle" FIRST.
+  // LEFT LONG. Only the part before the ⚠️ has ever been cut (15 September and
+  // 19 October 2026); NOTHING FROM THE ⚠️ ON WAS TOUCHED, and the notes below record why
+  // each clause of it is worded as it is. Both exceptions must survive any further cut —
+  // they are the cardinal-rule hedge on an instruction not to go in, and the second
+  // ("a team that assigns a second player to the wall … find out whether that is your
+  // job") is what sends a reader to ask rather than to decide. ⚠️ If this caption must
+  // shrink further, route the arrival posture into §"The counterintuitive rule" FIRST.
+  // `title` is explicit because the caption's first sentence no longer names the lesson.
   caption:
-    'Your teammate is pinned on the boards with the puck in a two-player battle, and every instinct says ' +
-    'go and help. Usually, don\'t — at least not into the battle: another body brings your own checker ' +
-    'in with it and crowds the exits the puck has to come out of. ' +
-    'The support player here has instead moved to open ice about five metres away with their stick ' +
-    'down, so the puck has somewhere to go. ' +
-    'The exception is real, and it is two exceptions: go in to win the puck when it is a genuine ' +
-    'fifty-fifty scramble that nobody has, and many teams do assign a second player to arrive at the ' +
-    'wall — so find out whether that is your job before you decide it is not. ' +
+    // ⚠️ FIRST HALF CUT AGAIN, 19 October 2026: the paragraph above the marker already voices
+    // "every instinct says go and help … bring your checker and crowd the exits … five metres",
+    // so the caption now READS THE PICTURE instead — the checker drawn beside the support player
+    // is the "brings your checker" mechanism made visible. Both exceptions and their "find out"
+    // stay, and nothing from the ⚠️ on was touched.
+    'Your teammate is pinned on the boards with the puck. The support player has not gone in: they ' +
+    'are in open ice about five metres away, stick down, so the puck has an exit, and their own ' +
+    'checker has stayed with them instead of joining the pile. ' +
+    'Two exceptions send you in: a genuine fifty-fifty scramble that nobody has, and a team that ' +
+    'assigns a second player to the wall — so find out whether that is your job before you decide ' +
+    'it is not. ' +
     // ⚠️ THIS IS THE ONE CAPTION IN THE CORPUS THAT SENDS A READER *INTO* A WALL BATTLE, and it
     // was the one with no arrival posture on it. `winger-dz-rim`, `winger-dz-reverse` and
     // `off-wing-open-to-the-ice` all carry the warning, so the form already existed and this was

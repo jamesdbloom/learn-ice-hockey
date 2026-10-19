@@ -47,7 +47,7 @@ A **rush** is an attack that arrives before the defence is set — the goalie is
 
 ## Why Rush Defence Matters More Than Anything You Do in the Zone
 
-**In short:** Stopping a rush before it becomes a chance is worth far more than defending one well.
+**In short:** A rush catches your goalie moving and nobody marked, so your best defence is never letting one turn into a chance.
 
 ```facts
 Key: On a rush your goalie is moving and cannot be set — and being set is what makes routine saves routine

@@ -50,7 +50,7 @@ Everything starts here. Get the stance right and half the faults in the rest of 
 
 ### Knee bend — the one that matters
 
-**In short:** Bend until your knees cover your toes; standing tall costs you power, balance, reaction time and edge angle.
+**In short:** Bend until your knees cover your toes.
 
 ```facts
 Technique: Bend your knees until they cover or pass your toes — around 90 degrees at the knee

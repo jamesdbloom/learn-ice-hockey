@@ -186,7 +186,7 @@ Somebody on your team has to go to the puck, and the other four have to do somet
 
 ### If you are the one pressuring
 
-**In short:** Angle the carrier toward your help and force an early decision; winning the puck is a bonus, not the job.
+**In short:** Angle the carrier toward your help, arrive under control, and tell your support you have the carrier so nobody guesses.
 
 ```facts
 Goal: Take options away and force the carrier to decide early — winning the puck is a bonus, not the job

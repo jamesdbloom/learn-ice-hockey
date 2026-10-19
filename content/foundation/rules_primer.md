@@ -868,7 +868,7 @@ Beyond the trapezoid and the red line, the goalie is a skater with the puck — 
 
 ### When a fight breaks out
 
-**In short:** Stay in your crease unless the referee sends you elsewhere, and never join in, to fight or to break it up.
+**In short:** Stay in your crease, never join in to fight or break it up, and move only where the referee sends you.
 
 **When a fight breaks out beside the crease, stay in your net, and if you must move, get the referee's permission first** — the books part on whether you need it. The NHL, IIHF and PWHL have the referee send the goalie to a neutral location with no penalty. USA Hockey's minor is for failing to go where the referee sends you (615(e)), and its Casebook lets a goalie leave *"to remain out of the altercation"* — ⚠️ **but *"if the Referee does not give their permission and the goalkeeper gets involved in the altercation outside of the crease, the minor penalty must be assessed"*** (Rule 615, Situations 26 and 27). **Hockey Canada is strictest**: going to the bench *"on their own accord"* is a minor, and with the referee's permission it is not (7.10(a) and its Interpretation 1; 7.10(d)); CARHA puts a minor on any goalie who *"leaves the goal crease during a fight"* (37(c)).
 
@@ -890,7 +890,7 @@ Beyond the trapezoid and the red line, the goalie is a skater with the puck — 
 
 ![](diagram:faceoff-where-the-draw-goes)
 
-Faceoff location is a **penalty and reward system**: the draw goes **into the zone of whoever caused the stoppage**, and the wronged team often picks which of the two dots. **Three of those choices you can exercise**: after a penalty, **the team going on the power play picks the dot** (Rule 76.2); after an icing, **the attacking team picks** (Rule 81.2); and the same goes to the attackers when a goalie freezes a shoot-in from beyond the red line or a defender knocks his own net off. **Somebody on your team should be making that choice deliberately** — [Faceoffs](../systems/faceoffs.md) covers how. The full list:
+Faceoff location is a **penalty and reward system**: the wronged team often picks which of the two dots in the offender's end. **Three of those choices you can exercise**: after a penalty, **the team going on the power play picks the dot** (Rule 76.2); after an icing, **the attacking team picks** (Rule 81.2); and the same goes to the attackers when a goalie freezes a shoot-in from beyond the red line or a defender knocks his own net off. **Somebody on your team should be making that choice deliberately** — [Faceoffs](../systems/faceoffs.md) covers how. The full list:
 
 | Situation | Where the draw goes |
 |---|---|

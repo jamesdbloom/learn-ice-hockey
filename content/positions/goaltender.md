@@ -755,7 +755,7 @@ If the puck is not settled on your blade, put it down the boards instead of lift
 
 ### The discipline of not playing it
 
-**In short:** The best puck-handling decision a goalie makes is usually to leave the puck alone.
+**In short:** Stay in your net for a 50-50 puck, and if you do play the puck, commit and call "I've got it".
 
 ```facts
 Key: The best puck-handling decision a goalie makes is usually to leave the puck alone
@@ -767,6 +767,8 @@ Never: Head first into the boards or the post is the injury — USA Hockey's Hea
 Risk: No source here gives a goalie a board-contact posture — the skater's skates-parallel, forearm-and-hip version is written for taking a check, so ask your goalie coach before assuming it transfers
 Mindset: A goalie who handles the puck well is an asset; one who believes they handle it well is a liability
 ```
+
+The best puck-handling decision a goalie makes is usually to leave the puck alone.
 
 ![](diagram:goalie-fifty-fifty-puck)
 
