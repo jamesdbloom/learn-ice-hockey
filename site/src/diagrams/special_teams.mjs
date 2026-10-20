@@ -975,9 +975,9 @@ const pkNz112 = {
   caption:
     'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
     'attacking from the left. F1 is up on the puck, F2 layered behind him on the same side, ' +
-    'and the two defencemen abreast near the line. Coaching material commonly calls this a ' +
-    'current NHL default for neutral-zone pressure, but that prevalence claim is not ' +
-    'independently verified; the 1-3, the retreating box and tandem pressure are the ' +
+    'and the two defencemen abreast near the line. Some coaching material calls this a ' +
+    'common NHL choice for neutral-zone pressure; no count of NHL teams was found to ' +
+    'confirm it. The 1-3, the retreating box and tandem pressure are the ' +
     'alternatives. Only the power play\'s puck carrier is drawn.',
 
   describe:

@@ -988,7 +988,7 @@ document, that is named too.*
 7. **Know whose puck a dead corner rim is before it arrives.** Under the NHL and IIHF trapezoid it is yours, and play it that way in the PWHL and in Britain too. **USA Hockey, Hockey Canada and CARHA paint no trapezoid**, so agree with your goalie who calls it — and they may fetch it, not sit on it.
 8. **In the offensive zone, keep the puck in, get your shot through, and know *who* is above the puck before you go below it.** Keep your skates inside the line and shoot low with pace for a tip or a rebound. Below the circles you are a fourth forward — fine only when somebody has your blue line.
 9. **Block shots with technique, not courage.** Get close, shin pads square, head up; stay on your feet until the puck is released. **Never turn your back or side to the shot, lift a leg, lead with your stick, or block from a screen.** Wear shin guards that cover the ankle, and ask your coach and goalie how much to block.
-10. **On a retrieval with a forechecker behind you, turn side-on early — never turn your back to the checker, and never duck.** Skates parallel to the boards, contact on forearm and hip, never the point of your shoulder, head up, chin off your chest. A tucked chin straightens your neck; USA Hockey says the resulting spinal injury can happen at walking speed.
+10. **On a retrieval with a forechecker behind you, turn side-on early — never turn your back to the checker, and never duck.** Keep your head up and your chin off your chest: a tucked chin straightens your neck, and USA Hockey says the resulting spinal injury can happen at walking speed.
 
 ---
 

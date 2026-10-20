@@ -538,7 +538,7 @@ Action: Arrive at the puck on an angle rather than straight at the passer, curli
 Goal: Your next option should already be visible when the puck lands on your blade
 Key: Decide which way you are going before the puck arrives, and be pointing that way when it does
 Risk: A closed body invites the pressure to arrive on your back — worst on the offensive half-wall and on breakout receptions
-Never: Turn your back to the checker, and never duck — skates parallel to the wall, forearm and hip to the wall rather than the point of your shoulder, head up, chin off your chest
+Never: Turn your back to the checker, and never duck — keep your head up and your chin off your chest
 Technique: If you are already facing the wall and cannot turn, get your stick and gloves up on the glass and spread the impact as wide as you can, no head contact — damage limitation, not a position to aim for
 ```
 
@@ -550,7 +550,7 @@ Technique: If you are already facing the wall and cannot turn, get your stick an
 
 This is especially valuable on the half-wall in the offensive zone and on any breakout reception, where a closed body invites the pressure to arrive on your back.
 
-**On the wall, pressure on your back is a hit from behind into the boards.** Opening up lets you see the checker coming instead of feeling him arrive. Your posture at the moment of contact is not a preference: ⚠️ **never turn your back to the checker, and never duck.** Skates parallel to the wall, **forearm and hip to the wall** — not the shoulder, and never its point — head up, chin off your chest. If you are caught facing the wall and cannot turn, get your stick and gloves up on the glass and spread the impact as wide as you can, with no head contact: damage limitation, not a position to aim for. [Body Contact and Battles](body_contact_and_battles.md) owns the full rule and the evidence behind it.
+**On the wall, pressure on your back is a hit from behind into the boards.** Opening up lets you see the checker coming instead of feeling him arrive. Your posture at the moment of contact is not a preference: ⚠️ **never turn your back to the checker, and never duck** — keep your head up and your chin off your chest. Caught facing the wall and unable to turn, put your stick and gloves up on the glass to spread the impact — damage limitation, not a position to aim for. [Body Contact and Battles](body_contact_and_battles.md) covers how to take the hit, and the evidence behind it.
 
 ### Receiving while moving
 
@@ -828,14 +828,14 @@ Structuring this into an actual improvement plan is covered in [Practice and Dev
 - **No target.** **Blade flat on the ice, out in front, held still, and call for it.** A waving stick makes the passer guess.
 - **Blocking the pass.** **Loose grip, and give with it as it lands.** A blocked pass bounces a foot away — the gap a checker needs.
 - **Standing still to receive.** **Keep your feet moving and adjust your speed to the pass.** A stationary receiver loses a stride and is easy to hit.
-- **Receiving with your back to the ice.** **Open your body before the puck arrives.** On the wall, pressure on your back is a hit from behind. ⚠️ **If the contact comes anyway: skates parallel to the wall, forearm and hip to it, head up, chin off your chest — never duck.**
+- **Receiving with your back to the ice.** **Open your body before the puck arrives.** On the wall, pressure on your back is a hit from behind. ⚠️ **If the contact comes anyway: head up, chin off your chest — never duck.**
 - **Two touches when one would do.** **Pick your target while the puck travels, and move it first time when it is on.**
 - **A drop pass on hope.** **Drop it only to a trailer you know is there, leave it dead, and keep skating.** Not sure? Keep it.
 - **Saucering when a flat pass was on.** **Lift it only over a stick or a body.**
 - **A forehand-only passer.** **Practise the backhand until it exists.** Defenders take your forehand away within a shift.
 - **Looking only once the puck arrives.** **Scan while it is travelling.**
 - **Blind passes in your own zone.** **If you cannot see the receiver, the pass does not exist.** A pick-off there is a chance against with your goalie unset.
-- **Kicking at the man instead of the puck.** **Keep the kick small and aimed at the puck.** ⚠️ **Kicking or trying to kick an opponent is a match penalty in five books, and under the IIHF it can be a major with an automatic ejection.** In every book a kick means a deliberate one, and trying is enough. Under USA Hockey even pushing off an opponent with your skate is a major and an ejection.
+- **Kicking at the man instead of the puck.** **Keep the kick small and aimed at the puck.** ⚠️ **Kicking or trying to kick an opponent is a match penalty in five books, and under the IIHF it can be a major with an automatic ejection.** In every book a kick means a deliberate one — USA Hockey adds a reckless one — and trying is enough. Under USA Hockey even pushing off an opponent with your skate is a major and an ejection.
 - **Timing a stretch pass by the wrong offside rule.** **As the receiver, keep your trail skate on the ice at or behind the blue line until the puck crosses** — onside in every book. A lifted trail skate is onside in the NHL, IIHF and PWHL but offside under USA Hockey and Hockey Canada.
 - **Expecting a goal off your own kick.** **Kick it to your stick, then clearly shoot it.** A kick deflecting in off your own stick counts in the NHL, IIHF and PWHL, but not under Hockey Canada, USA Hockey or CARHA.
 - **Treating a high stick as just a stoppage.** **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent above the shoulders, every book penalises it, and every book can eject you for it.** Only the NHL, IIHF and PWHL excuse a normal shooting follow-through, never a wild swing at a bouncing puck. Under CARHA any contact up there is a major that ends your game unless it was accidental and hurt nobody, and an intentional one costs you at least your next game too.
@@ -902,7 +902,7 @@ document, that is named too.*
 11. **Never pass across the front of your own goal.** No blind pass up the middle, no D-to-D through the slot, no cross-ice pass in your own end. These are defaults, not laws — some breakouts build in a D-to-D behind the net — so follow them unless your coach has designed the exception.
 12. **Stretch and drop passes are reads, not hopes.** Stretch it only when a teammate is truly behind their forwards. Drop it only to a trailer you know is there, and keep skating hard.
 13. **Under pressure, make the pass you can complete, and decide your out before you get the puck.** Rim, bank, chip or reset; never thread a needle with a checker on you.
-14. **On the wall and on a breakout, receive open to the ice**, so the pressure is not on your back — on the wall, that is a hit from behind. If it comes anyway: skates parallel to the wall, forearm and hip to it, head up, chin off your chest — never duck.
+14. **On the wall and on a breakout, receive open to the ice**, so the pressure is not on your back — on the wall, that is a hit from behind. If it comes anyway, keep your head up and never duck.
 15. **Kick the puck out of your feet — never the man.** Kicking or trying to kick an opponent is a **match penalty** under the NHL, PWHL, USA Hockey, Hockey Canada and CARHA. Under the IIHF — Britain's book — it can be a major with an automatic ejection.
 16. **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent's head, face or neck, every book penalises it and every book has a route to an ejection.** Under CARHA it is a major that ends your game unless accidental and injury-free, plus at least a one-game suspension if intentional.
 

@@ -572,9 +572,7 @@ Action: Attack the line again with the puck on whoever has the best angle and th
 
    > **One safety override, and it outranks the play.** Curl in open ice, not against the wall. ⚠️ **Never turn your back to an oncoming checker near the wall** — it makes the contact a hit from behind, and USA Hockey's warning is flat: *"Even a light hit from behind could inflict a severe head or neck injury."* Protecting the puck never justifies it.
 
-   **If you are caught at the wall, take the contact properly.** Get your **skates parallel to the boards** and take it on your **forearm and hip**, head up and chin off your chest. ⚠️ **Never the point of your shoulder** — USA Hockey's *Introduction To Body Contact* says *"Never hit the boards or glass with the tip of your shoulder – it can cause injury"*, and asks you to *"[a]void hitting the boards with the shoulder"* where you can. So the tip never, the rest if you can help it. Your shoulder faces the *checker*; it is the *boards* it should not meet. Facing the wall square is the last resort.
-
-   **Keep your chin off your chest.** A tucked chin straightens the neck, and of a head-first hit on the boards that way USA Hockey says a player *"doesn't have to be going at full speed for this to happen — it can occur at walking speed."* What occurs at walking speed is the **injury**, not just the contact; USA Hockey credits the finding to research by Charles H. Tator and colleagues. [Body Contact and Battles](../technique/body_contact_and_battles.md) has the full treatment.
+   **If you are caught at the wall, take the contact properly:** skates parallel to the boards, the hit on your **forearm and hip**, head up and chin off your chest. ⚠️ **Never the point of your shoulder** — USA Hockey's *Introduction To Body Contact* says *"Never hit the boards or glass with the tip of your shoulder – it can cause injury"* — and keep the rest of it off the boards if you can. A tucked chin straightens the neck, and USA Hockey warns that the injury from a head-first hit taken that way *"can occur at walking speed."* [Body Contact and Battles](../technique/body_contact_and_battles.md) has the full treatment.
 3. **Look back up ice** while you curl. Your eyes go to where support is coming from, not to the defender.
 4. **Slow the play** deliberately for one or two seconds, which is how long it takes your late support to arrive at speed.
 5. **Attack the line again** with the puck now in the hands of whoever has the best angle and the most speed — often not you.
@@ -603,7 +601,7 @@ Technique: Taking it against the boards, skates parallel to the wall, forearm an
 - When you have numbers now and they will be gone in a second — take the odd-man rush.
 - When you have nobody behind you at all. A delay only works if support is genuinely coming. If your line is caught out and the bench is calling, get it in deep and change.
 - When a delay would drag you back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze them.
-- **When you are tight to the wall with a checker closing.** This limits *how* you curl, not whether: curl into open ice, and if you cannot get off the boards, take the contact with your **skates parallel** to them, on your **forearm and hip**, **head up and chin off your chest** — never turn away into the wall.
+- **When you are tight to the wall with a checker closing.** This limits *how* you curl, not whether: curl into open ice, and if you cannot get off the boards, take the contact rather than turning away into the wall.
 
 ---
 
