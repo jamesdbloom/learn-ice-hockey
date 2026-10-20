@@ -488,6 +488,11 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - Packs: `.podcast_queue/notebooklm/remake_2026-10-20/` (README checklist; shared instructions.md and focus.txt; provenance/ holds the hash stamps). Batch 1 holds only the six pages with NO open edits: core_principles, reading_ice_hockey_diagrams, skating, scanning_and_anticipation, practice_and_development, how_to_watch_hockey.
   - Owner, 20 Oct: build a page's pack only once its edits are finished, so its episode includes them.
   - Owner, 20 Oct: every pack file is .txt, never .md (.md opens in the wrong program on the owner's machine).
+  - **Batch 1 audio received 20 Oct ~21:05:** 8 .m4a files in batch1/ (02, 03, 24, 31, 36, 37, 38, 39). Durations: 02 14.3 min, 03 38.5, 24 65.5, 31 21.3, 36 55.3, 37 50.8, 38 46.3, 39 53.0.
+    - 01, 17 and 29 have not been generated yet.
+    - **Reviewed and published 20 Oct** (record notebooklm_remake_batch1_2026-10-20.md): 02, 03, 24 (edited), 36, 38 (edited) and 39 are live.
+    - **NO-GO:** 31 and 37. Regenerate them after the prompt fixes in the record. 02 may also be regenerated (coaching slip) if the owner wants.
+    - Local whisper transcripts go to scratchpad nlm_tx/. Next: a Step 4 review per episode, then publish with the owner's go-ahead.
     - Next candidates after small open rows close: mental_game (:781 marker), puck_support (:491 "five-man"), team_play (:137 "four books"), getting_started (the medical-cover layer test), forechecking (the 608(c) layer test).
   - The other 19 pages get packs after the SW sweep commit. Owner, 20 Oct: they can do at most 10 at once, so prepare one batch of 10 at a time and do not build the next until the current batch is done.
   - The owner generates each episode by hand, because NotebookLM is unreachable to agents. As each .m4a arrives: run the SKILL.md Step 4 review (safety list first, source-reference count 0, rules time, runtime), then publish via build_podcast_audio.py to the site and the RSS feed (Spotify and Apple follow the feed).

@@ -15,18 +15,18 @@
       "title": "Core Principles",
       "section": "Foundation",
       "track": 2,
-      "bytes": 24545510,
-      "duration_s": 2927.6,
-      "audio": "/audio/foundation/core_principles-251e47bc.m4a"
+      "bytes": 7177013,
+      "duration_s": 855.2,
+      "audio": "/audio/foundation/core_principles-2a3f5b3e.m4a"
     },
     {
       "doc_id": "reading-diagrams/reading_ice_hockey_diagrams",
       "title": "Reading Ice Hockey Diagrams",
       "section": "Foundation",
       "track": 3,
-      "bytes": 19019722,
-      "duration_s": 2266.1,
-      "audio": "/audio/reading-diagrams/reading_ice_hockey_diagrams-9fd9440c.m4a"
+      "bytes": 19382049,
+      "duration_s": 2309.5,
+      "audio": "/audio/reading-diagrams/reading_ice_hockey_diagrams-f2f0f64a.m4a"
     },
     {
       "guid": "learn-ice-hockey:foundation/rink_map_and_glossary",
@@ -214,9 +214,9 @@
       "title": "Skating",
       "section": "Technique",
       "track": 24,
-      "bytes": 26134015,
-      "duration_s": 3113.6,
-      "audio": "/audio/technique/skating-0d657f68.m4a"
+      "bytes": 32774266,
+      "duration_s": 3914.7,
+      "audio": "/audio/technique/skating-68bdb14a.m4a"
     },
     {
       "doc_id": "technique/puck_handling",
@@ -322,9 +322,9 @@
       "title": "Practice and Development",
       "section": "Off the Ice",
       "track": 36,
-      "bytes": 25629706,
-      "duration_s": 3053.9,
-      "audio": "/audio/off-the-ice/practice_and_development-f5a28ada.m4a"
+      "bytes": 27849966,
+      "duration_s": 3316.8,
+      "audio": "/audio/off-the-ice/practice_and_development-e29cdfa1.m4a"
     },
     {
       "doc_id": "off-the-ice/mental_game",
@@ -340,18 +340,18 @@
       "title": "Team Play and Culture",
       "section": "Off the Ice",
       "track": 38,
-      "bytes": 27384795,
-      "duration_s": 3266.0,
-      "audio": "/audio/off-the-ice/team_play_and_culture-41dc9dd8.m4a"
+      "bytes": 23247213,
+      "duration_s": 2771.2,
+      "audio": "/audio/off-the-ice/team_play_and_culture-6691e61a.m4a"
     },
     {
       "doc_id": "off-the-ice/how_to_watch_hockey",
       "title": "How to Watch Hockey",
       "section": "Off the Ice",
       "track": 39,
-      "bytes": 30089803,
-      "duration_s": 3582.7,
-      "audio": "/audio/off-the-ice/how_to_watch_hockey-bae313c1.m4a"
+      "bytes": 26634550,
+      "duration_s": 3178.6,
+      "audio": "/audio/off-the-ice/how_to_watch_hockey-c5239fa4.m4a"
     }
   ]
 }
