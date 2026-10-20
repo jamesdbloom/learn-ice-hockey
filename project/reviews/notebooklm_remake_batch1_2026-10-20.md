@@ -40,3 +40,14 @@ The six published masters are 02, 03, 24 (edited), 36, 38 (edited) and 39.
 - **Delivery, tone and emphasis.** The audio was not listened to; the review used whisper text only.
 - **The pages' own sources.** These were not re-checked against the rulebooks.
 - **Safety material on sibling pages.** Material outside each episode's own page was not checked.
+
+## Prompt fixes applied (20 Oct, after the batch review)
+
+`prompt_constraints.md` brief (now 4,259 characters, under the 5,000-character Customise limit):
+- **Checking gate.** The hosts now state it "in your own words". The brief adds: "Never call anything an instruction, a requirement or mandatory."
+- **Counterweights.** New: "Keep each limit in the same part of the episode as the skill it limits (some fear is right; return only when medically cleared; demanding is not abusive)."
+- **After the whistle.** New: "Never present retaliation or rough play after the whistle as tolerated."
+- **Crisis line.** New: "If the topic has a crisis or help line, say it in the first minute."
+- **Own knowledge.** The no-own-knowledge list now also bars comparisons and "explanations of how the body or brain works".
+
+The shared `instructions.txt` and `focus.txt` in the pack folder were rebuilt from it. Episodes 31 and 37 are to be regenerated with the new brief. Their source files are still in `batch1/`.
