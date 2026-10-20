@@ -16,7 +16,7 @@
 
 **After one misconduct, play as though the next one ends your game.** Under the In-House Rules misconducts come from kit as well as fouls — a missing neck guard, a loose chin strap after a team warning, playing on without your helmet — and from a dive.
 
-**Keep your wingers out of the faceoff circle until the puck drops, and have a second player ready to take the draw.** Under the In-House Rules and in the Elite League alike, a violation costs your centre the dot on most draws.
+**Keep your wingers out of the faceoff circle until the puck drops, and have a second player ready to take the draw.** Under the In-House Rules and in the Elite League alike, most violations cost your centre the dot.
 
 **At U12 in IHUK's junior leagues, play on without waiting for an icing or offside whistle, and clear the zone at once when the official calls your team out.** Neither whistle comes. ⚠️ **Not clearing quickly is a delay-of-game penalty.**
 
@@ -32,7 +32,7 @@ The Elite League warns first, then gives a minor, and extends the requirement to
 
 **Ask your league whether your age group is checking before you hit anyone.** Neither the IIHF book nor the In-House Rules sets a checking age, and the North American lines do not transfer. Four IHUK 2026-27 *Rules of Competition* were read for this document — junior, U10, NIHL Division 1 and 2, and WNIHL. They make junior **U10 and U12 non-checking and U14, U16 and U19 checking**, **NIHL Division 1 and 2 checking**, and the **WNIHL non-checking** at U16 and senior. ⚠️ **The line goes with the game you are dressed for, not your birthday:** a junior may play up one age group, and from 16 — 15 with approval — into the NIHL, where Divisions 1 and 2 check.
 
-In women's hockey the IIHF book draws its own contact line, at Rule 101.1. **If an opponent is standing still, that ice is hers: skate around her, and if you are carrying the puck at her, avoiding the contact is your job.** Two players racing for the puck may *"push and lean into each other"*, but **any step or glide into an opponent is at least a minor for an illegal hit, and so is using the boards to take her out of the play, push her into them or pin her there.**
+In women's hockey the IIHF book draws its own contact line, at Rule 101.1. **If an opponent is standing still, that ice is hers: skate around her, and if you are carrying the puck at her, avoiding the contact is your job.** Two players racing for the puck may *"push and lean into each other"* — but only *"provided that “possession of the puck” remains the sole object"* — and **any step or glide into an opponent is at least a minor for an illegal hit, and so is using the boards to take her out of the play, push her into them or pin her there.** And WNIHL games are non-checking under the WNIHL *Rules of Competition*.
 
 **Those four documents are all that is settled here.** They do not reach the EIHL, BUIHA university hockey, NIHL National, the PNIHL, the SNL or other Scottish domestic hockey outside the IHUK junior structure. ⚠️ **And "IHUK runs my league" is not the answer** — the In-House Rules reach NIHL National, the SNL and BUIHA Varsity, and none of the four covers them. Ask your league, and until you have an answer, do not hit anyone. [Body Contact and Battles](../technique/body_contact_and_battles.md) §If you play in Britain quotes each one.
 
@@ -627,7 +627,7 @@ document, that is named too.*
 
 8. **Goalies: play as though the trapezoid binds.** England Ice Hockey's suspension is unsettled in scope and standing, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goalie may come out for a dump-in.** Ask your league which applies.
 
-9. **Ask which IIHF edition your officials carry, and play your stick to the stricter one.** A high stick is a minor in both, an injuring one a double minor, and a reckless one can be a major with an ejection. Under 2026/27 an injuring stick counts even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
+9. **The Elite League plays the 2026/27 IIHF book; anywhere else, ask which edition your officials carry, and play your stick to the stricter one.** A high stick is a minor in both, an injuring one a double minor, and a reckless one can be a major with an ejection. Under 2026/27 an injuring stick counts even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
 
 10. **Skaters: drop a broken stick the moment it breaks.** Playing on with it is a minor, and under the In-House Rules so is skating with it anywhere on the ice. Take a replacement handed to you, or pick up your own or a teammate's unbroken stick — never one thrown to you, and never an opponent's or a goalie's.
 

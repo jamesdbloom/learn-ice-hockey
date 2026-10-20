@@ -1738,7 +1738,7 @@ so nothing about fetching it signals that it has been superseded.
 | 2nd | *no longer served at either path* | 325,259 | **1 Sep 11:29** | 27,368 chars | 
 | 3rd | `2026/09/…ROC-2026-2027-1.pdf` **(publisher links this)** | 369,646 | 11 Sep 11:09 | 27,340 chars |
 
-⚠️⚠️ **THE COPY ON DISK IS THE SECOND, AND IT IS SERVED BY NO URL.** It was fetched on 10 September, when
+⚠️⚠️ **THE COPY ON DISK WAS THE SECOND, AND IT WAS SERVED BY NO URL.** *(Superseded 20 October 2026: disk now holds the 3rd revision; see "REFRESHED" below.)* It was fetched on 10 September, when
 the `2026/08` path still carried it. **So re-running `fetch_sources.sh` against the old URL would have
 moved the source BACKWARDS to the 26 August original** — the rollback hazard above, realised.
 
@@ -1907,8 +1907,8 @@ browser UA and an `englandicehockey.com` referer, and every one returned HTTP 20
 | NIHL 1 & 2 RoC | `2026/08/NIHL-1-and-2-ROC-2026-2027.pdf` | 542,722 | 26 Aug 17:53 | `efaf0ed3…` | 1st revision, still served, no longer linked |
 | NIHL 1 & 2 RoC | `2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf` | 369,646 | 11 Sep 11:09 | `72ddb5f9…` | 3rd revision, linked by the publisher |
 
-✅ **The WNIHL copy on disk is the current publisher-linked file**, which is the opposite of NIHL, where disk holds
-the unserved 2nd revision (sha256 `80cb5151…`). The `2026/08` WNIHL file is the 26 August original that the
+✅ **The WNIHL copy on disk is the current publisher-linked file**, which is the opposite of NIHL, where disk held
+the unserved 2nd revision (sha256 `80cb5151…`) until the 20 October refresh below. The `2026/08` WNIHL file is the 26 August original that the
 16 September rollback table above recorded as *"live"*. A `-layout` diff of 08 against 09 reproduces exactly the
 differences recorded there: the 09 file adds *"without any players being dual registered with other clubs"*
 twice and carries the typo *"Eacho WNIHL team"*. Nothing else differs. ⚠️ **So the corpus's `2026/08` WNIHL
@@ -1926,8 +1926,21 @@ file's editor; this is reported, not fixed.
 15 October**, because content agents were live and grepping `sources/`. The 2nd → 3rd difference is one U18
 eligibility clause, so no corpus quotation turns on it.
 
+✅ **REFRESHED, 20 October 2026. `sources/ihuk_nihl_roc.pdf` is now the 3rd revision**, fetched that day from
+`https://englandicehockey.com/wp-content/uploads/2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf` (the URL
+`https://englandicehockey.com/rules-and-regulations/` links, re-read the same day), with a browser UA and an
+`englandicehockey.com` referer: HTTP 200, `application/pdf`, no redirect, `%PDF-1.6`, **369,646 bytes**, 20 pages,
+`CreationDate` 26 Aug 2026 17:34, `ModDate` 11 Sep 2026 11:09, sha256 `72ddb5f92cb7195ba2991b8aa22e84ab6dd575c67de919f4865a9e10443744b5`.
+`ihuk_nihl_roc.txt` is its plain `pdftotext` extraction, 34,772 bytes (ratio 9.4%). A plain, a `-layout` and a
+whitespace-flattened diff against the 2nd revision each report **one change only**: the British Trained definition
+loses *", or is currently registered as U18"*. Body checking, the period format, medical cover and every penalty
+clause are unchanged. The document contains no neck-guard or fighting clause in either revision (`neck` 0,
+`fight` 0). ⚠️ **`ihuk_nihl_roc_layout.txt` was NOT refreshed** (outside this edit's ownership). It is still the
+2nd revision's `-layout` text and differs from the new PDF's `-layout` output at that one line (`:736`).
+Regenerate it with `pdftotext -layout`.
+
 **Text-to-PDF ratios, for spotting a failed re-extraction:** `ihuk_junior_roc` **5.0%** · `ihuk_u10_roc`
-**2.8%** · `ihuk_nihl_roc` **10.7%** · `ihuk_wnihl_roc` **6.5%**. All four have a real text layer.
+**2.8%** · `ihuk_nihl_roc` **9.4%** (3rd revision; the 2nd was 10.7%) · `ihuk_wnihl_roc` **6.5%**. All four have a real text layer.
 
 ⚠️ **PRECEDENCE, ADJUDICATED — the arrow does NOT mean what it looks like.** The Junior ROC prints
 *"Order of precedence: IIHF Rules → IHUK In-House Rules → Junior Rules of Competition"*, **and the sentence
@@ -2005,8 +2018,14 @@ prints the identical line **with the asterisk**:
 head-butting, punching and injuring an unsuspecting opponent, spearing, tape on the hands. ⚠️ **Illegal
 Check to the Head (xiii) and Checking from behind (vi) carry NO asterisk in either PWHL extraction.**
 **Correction, 15 October 2026:** PDF page 164 (printed page 147), rendered with `pdftoppm` and read, prints the Table 6 NOTE line with **no asterisk at all**, so both extractions are accurate there. This entry used to say both extractions had lost the asterisk. The footnote reading, that the NOTE applies to the asterisked rows, still holds by comparison with the NHL table, but it is now a reading of the PWHL's typesetting, not an extraction repair.
-⚠️ **NOT CONFIRMED IN THE PDF — `pdftoppm` p147 and read it to close this.** The reading is near-certain
-from the NHL parallel and from the six asterisked rows, but it rests on two text extractions of one page.
+✅ **CONFIRMED, 20 October 2026: PDF page 164 (printed 147) rendered with `pdftoppm` and read again.** Table 6
+prints the NOTE line in italics with **no asterisk**. Exactly six rows carry one: butt-ending, the goalkeeper's
+blocking glove, head-butting, punching and injuring an unsuspecting opponent, spearing and tape on the hands.
+*Checking from behind* (vi) and *Illegal Check to the Head* (xiii) carry none. So the NOTE is the PWHL's own
+unkeyed footnote; read it as applying to the asterisked rows, as the NHL table's keyed copy shows.
+*(Superseded note, kept as history: "⚠️ NOT CONFIRMED IN THE PDF — `pdftoppm` p147 and read it to close this.
+The reading is near-certain from the NHL parallel and from the six asterisked rows, but it rests on two text
+extractions of one page." The 15 October correction above closed it; this line said so only on 20 October.)*
 
 ⚠️ **The same species as the `hc.txt` and `nhl_rules.txt` column faults already recorded above, with one
 difference that makes it worse: a lost column produces GARBLED text a reader distrusts, and a lost
@@ -2222,5 +2241,15 @@ Measures) was not compared.
   - **4.11(a)(v):** the crease limb now covers falling on or gathering the puck.
   - **Interpretation 6 to 4.11(b):** now carries a crossbar condition on the lacrosse-style move.
   - These are plan rows in the "Wave 34 follow-ups" section. ⚠️ **Line numbers quoted from `hc.txt` before 15 October 2026 refer to the previous print.** Re-locate them by text.
+- **Which file is which (20 October 2026).** `hc.txt` is the operative extraction: the 10 September 2026 republication, the PDF the publisher serves now. `hc_2026-08-print.txt` is the earlier August 2026 printing of the same 2026-28 edition, kept only for comparison. The file keeps its name because briefs and records cite it. A plain `diff` of the two is 150 lines in 23 hunks. Beyond the three above, the substantive ones are:
+  - **8.7 Clipping, Interpretation 1:** the low-hit line moves from *"at or below the knee area"* to *"at or below the hips"*. The corpus already teaches the hips line.
+  - **4.11 penalty-shot list:** the goaltender who removes equipment on a breakaway now includes *"blocker or trapper"*. Refusing to start play late in the game now gives a penalty shot *"in lieu of a Minor penalty"*; the August print tied it to a coach's major plus game misconduct. 10.1(b) loses its matching *"except as detailed in Rule 10.8"*.
+  - **4.7(a) Interpretation 2:** the substitute serving a minor must be *"a player who was on the ice at the time of the infraction"*.
+  - **7.1(f):** the team-official gross misconduct now applies to any official penalised under 7.1(a); the August print's head-butting wording is gone.
+  - **10.4:** players may also leave the penalty bench *"at the end of the period"*. Interpretation 5 to 10.4(d) now sets its fight cases *"before the play resumes"*, after A8 leaves the bench.
+  - **10.6(a) Interpretation 5:** a replacement goaltender's stick may not be *kicked* along the ice either, and kicking it at the puck carrier is priced like throwing it.
+  - **10.7(a):** the deliberate-illegal-substitution sentence drops *"purposefully placing too many players on the ice to gain a stoppage of play"*.
+  - The rest is typography: line wrapping, a list numeral (xiv), *"pucks"* → *"puck"*, one line moved inside 4.10(a) Note 1, and *"Kneeing"* added to an index list.
+- ⚠️ **A cross-reference slip in Hockey Canada's own book: 8.5(b) Note 1.** It reads *"See Rule 7.4 (b)(Interpretation 2) – Charging, for the definition of "charging""* (`hc.txt:7013`; identical in `hc_2026-08-print.txt` and `hc_layout.txt`). That target does not exist. Interpretation 2 is attached to **7.4(a)** and defines a *blindside hit*. The interpretation attached to 7.4(b) is **Interpretation 3**, and it is not a definition either: it says crease contact that could be called charging is a major plus game misconduct for interference, pointing back to 8.5(b). **The definition of charging is Rule 7.4's own opening list, i–v** (jumps, two or more strides, excessive distance, violent and unnecessary, blind side; `hc.txt:6058-6077`). Two earlier records each got half of this wrong: one said the pointer should read "Interpretation 3", another said "7.4(a)". Cite 7.4's list for the definition and do not repeat the book's pointer. Recorded, not repaired; the slip is the book's. Same species as the USA Hockey 610 lettering entry at the top of this file.
 - **`carha_2026.txt` / `carha_2026_layout.txt`: the CARHA Hockey 2026 rulebook** (`https://carhahockey.ca/wp-content/uploads/2026/09/RuleBk-2026e.pdf`, sha256 `c7f64d67…`). It is added **alongside** `carha.txt` (the 2020 interactive book, which corpus citations named until wave 36; since 15 October 2026 they cite the 2026 book and say they were read in the 2020 printing), not in place of it. Research reported that numbering and text are unchanged except two provisions: the face-off location after the puck leaves play, and shootout eligibility (players serving a penalty are ineligible). ✅ **Owner ruling, 15 October 2026: relabel every CARHA citation to the 2026 book.** A full diff (wave 35 research) found every rule and quotation the corpus cites unchanged. The only changes are 75(a) (face-off location) and shootout eligibility, which appears in 85(c), in Section Seven and in Case Situation 85. **Cite `carha_2026.txt`. `carha.txt` (2020) is kept for comparison.**
 
