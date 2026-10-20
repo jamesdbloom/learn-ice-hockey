@@ -447,19 +447,8 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 ### From the OR, P and R rounds (19–20 Oct; done work is in or_owner_rulings, p_residuals and r_consistency records)
 - **Diagram captions** voice the full board-posture mechanics in forechecking_systems (chunks 039, 044). Run check_caption_hosts on posture captions, and check for a shared constant first.
 - **Puck_handling crease-cover siblings:** check that summaries elsewhere (goaltender, rules_primer) state HC "both ways round" consistently.
-- **U wave dispatched 20 Oct 06:58** (scratchpad u/brief.md). T committed and pushed as 6c3a1e5.
-  - u1: HC goalie head ruling and late centre (goaltender, center, winger, glossary).
-  - u2: In-House §4, the HC ruling and late centre (uk_rules, rules_primer).
-  - u3: faceoffs late-centre framing.
-  - u4: PWHL pronouns and 42.5 (eight systems files).
-  - u5: readability page 1, body_contact_and_battles, plus the owner rulings.
-- **PWHL quotation pronouns:** joint NHL/PWHL quotations keep the NHL's "his" and "he" (forechecking :863/:865 and likely others). Say whose wording is quoted, or run check_quote_drift on the eight sweep files.
-- **forechecking :253:** the charging tariff omits PWHL/NHL 42.5's mandatory game misconduct on a head or face injury (harsh direction, plan row).
-- **faceoffs late-centre framing:** IIHF 76.7 (v1.1 and 2026/27) concerns players late to the faceoff (in an offside position). The team is warned once, and the centre is not warned/ejected for that. The corpus's "late centre" framing of 76.7 and the In-House "lateness is a violation" clash need a rules-verifier read across faceoffs, center, winger and uk_rules :270 (tfR, 20 Oct).
-- **Owner answers, 20 Oct (memory project_owner_rulings_oct15):**
-  - HC goalie charge reaching the head: plan on the harsher of 7.6 and 8.5(b). → content row.
-  - In-House §4 (a cross-check to the head is called cross-checking): add one short line for In-House readers. → content row.
-  - Readability: page by page, worst first, each page reviewed and committed.
+- **U wave done 20 Oct** (record u_wave_2026-10-20.md). Readability page 1 (body_contact) is done; next pages by check_readability ranking: rules_primer, goaltender, forechecking_systems, playing_without_the_puck, …
+- **Owner answers, 20 Oct:** both content rulings are applied (U wave). Readability: page by page, worst first.
   - Still open (no owner needed): search the IIHF Situation Handbooks for any puck-carrier vulnerability ruling.
 ### Also open from this session
 - The phone-bar `audio-idle` hook lives in essentials-view.js; consider moving it to audio-player.js.
