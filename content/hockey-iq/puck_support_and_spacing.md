@@ -488,7 +488,7 @@ Keep **someone below the puck, someone level with it and someone above it** at a
 
 **When you leave a layer, someone fills it.** That is the rotation, and amateur teams skip it. The *layer* must stay occupied, not your spot.
 
-[Offensive Zone Play §3, "Offensive Zone Structure"](../systems/offensive_zone_play.md) has the full treatment and the alternatives to the standard five-man setup. Rotation rules are a coaching choice that changes who may go below the puck, so **ask which your team plays.**
+[Offensive Zone Play §3, "Offensive Zone Structure"](../systems/offensive_zone_play.md) has the full treatment and the alternatives to the standard setup of an attack triangle with both defencemen on the blue line. Rotation rules are a coaching choice that changes who may go below the puck, so **ask which your team plays.**
 
 ---
 
