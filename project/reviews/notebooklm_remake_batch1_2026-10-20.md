@@ -61,3 +61,16 @@ The shared `instructions.txt` and `focus.txt` in the pack folder were rebuilt fr
 | 29 | Puck Support and Spacing | 46.8 min | SHIP | All safety present; rules about 3%; 0 source refs. Minor shorthanded-icing garble. |
 
 Published 01 (edited) and 29: backup 2026-10-20T234323; build encoded 2; uploaded getting_started-3d53cdf5 and puck_support_and_spacing-9f5085ee.
+
+## 31 v2 (regenerated 23:53 with its own focus file): SHIP after cuts
+
+All four v1 failures are fixed: the injury condition is gone, the injured-player icing exception is back, no ejection is invented for the glass, and the episode now runs 53.8 min. Every Group A item is present.
+
+Three brief-leak passages were cut by stream copy:
+- 0:00–0:07.9, the brief's example opener "Today, how to play wing", which names the wrong topic;
+- 21:08–21:15, "deliver this safety absolute";
+- 22:56–22:59, "It is a critical safety absolute".
+
+All joins were checked by transcription. The episode was published at backup 2026-10-20T235826; the new audio file is scanning_and_anticipation-1da9a65c.
+
+**Follow-up for the brief:** its example opener names a topic, and NotebookLM copied it verbatim. Replace it with a topic-neutral instruction.
