@@ -448,8 +448,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **Diagram captions** voice the full board-posture mechanics in forechecking_systems (chunks 039, 044). Run check_caption_hosts on posture captions, and check for a shared constant first.
 - **Puck_handling crease-cover siblings:** check that summaries elsewhere (goaltender, rules_primer) state HC "both ways round" consistently.
 - **U wave done 20 Oct** (record u_wave_2026-10-20.md; committed and pushed as 684326e).
-- **V wave done 20 Oct** (record v_readability_2026-10-20.md): readability pages 2–4. Next by ranking: equipment, playing_without_the_puck, game_management, offensive_zone_play, special_teams, faceoffs, defending_the_rush, breakouts, …
-- **scripts/check_readability.py:** SENT_RE does not split before ⚠️/🇬🇧 or after a closing quote, so the longest-sentence and mean figures are overstated on marker-heavy pages. Fix between waves.
+- **V wave done 20 Oct** (record v_readability_2026-10-20.md; committed and pushed as b06fb8e): readability pages 2–4. check_readability's sentence splitter is fixed (it now splits after closing quotes and before ⚠️/flags), so mean and longest sentence figures dropped on marker-heavy pages: body_contact's longest went from 169 to 107, rules_primer's from 132 to 69. Next by ranking: equipment, playing_without_the_puck, game_management, offensive_zone_play, special_teams, faceoffs, defending_the_rush, breakouts, …
 - **Owner answers, 20 Oct:** both content rulings are applied (U wave). Readability: page by page, worst first.
   - Still open (no owner needed): search the IIHF Situation Handbooks for any puck-carrier vulnerability ruling.
 ### Also open from this session

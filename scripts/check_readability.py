@@ -33,7 +33,15 @@ import os
 CONTENT = Path(os.environ["READABILITY_CONTENT_DIR"]) if os.environ.get("READABILITY_CONTENT_DIR") else ROOT / "content"
 
 RULE_RE = re.compile(r"\b(?:Rule\s+)?\d{1,3}\.\d{1,2}(?:\([a-zA-Z0-9]{1,4}\))*|\b\d{3}\([a-z]\)")
-SENT_RE = re.compile(r"(?<=[.!?])\s+(?=[\"'*_(]*[A-Z0-9])")
+# A sentence ends at . ! or ?, optionally followed by closing quotes, emphasis or a
+# bracket, then whitespace, then (after any opening quote, emphasis, ⚠️/❗/🚫 marker
+# or flag) a capital or digit. The old pattern did not split after a closing quote
+# or before a marker glyph, so "...opponent." ⚠️ **Never...** counted as one sentence
+# and the long-sentence figures were overstated on marker-heavy pages (20 Oct 2026).
+SENT_RE = re.compile(
+    r"(?<=[.!?])[\"'\u201d\u2019*_)\]]*\s+"
+    r"(?=[\"'\u201c\u2018*_(\[\s\u26a0\u2757\U0001F6AB\uFE0F\U0001F1E6-\U0001F1FF]*[A-Z0-9])"
+)
 VOWELS = re.compile(r"[aeiouy]+")
 
 
