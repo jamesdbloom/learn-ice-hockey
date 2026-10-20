@@ -445,18 +445,14 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **site-reviewer pass:** the diagram scene at 400 px, the 🇬🇧 wrap in conditioning's Key focus, and a special_teams bold run.
 
 ### From the OR, P and R rounds (19–20 Oct; done work is in or_owner_rulings, p_residuals and r_consistency records)
-- **team_play :290:** gives a 3–5 game figure for USAH 601(e)(3) (Level 3) but drops that Level's Note that the authorities may increase the suspension or require a hearing (rrB, 19 Oct).
-- **special_teams, the failure-to-seat-a-substitute bench minor:** NHL 20.3 has the team play a player short until the next stoppage, and the bench minor applies when a replacement enters other than from the penalty bench; 68.2 can be read either way (rrB, 19 Oct; was :685, the line has since moved).
-- **faceoffs :823 edition:** the In-House Introduction adopts IIHF v1.1 (July 2025), whose 76.7 reads "will not receive a warning". The blockquote quotes only the 2026/27 "is not ejected". Say which edition In-House play uses (sR, 20 Oct).
-- **Test the British "nothing published settles…" negatives against the IHUK RoC precedence clause** ("the IHUK wording will take precedence for domestic competition": ihuk_nihl_roc :25-27, wnihl :25-28, junior :24-28; sources/README ~:1932). s2 found it settles faceoffs :823. Candidates: uk_rules :29/:60/:105/:184/:225/:355, equipment :147/:798, language_and_glossary :311, switching_positions :394, shooting :185. Read each; many concern edition or reach, which precedence does not settle.
 - **Diagram captions** voice the full board-posture mechanics in forechecking_systems (chunks 039, 044). Run check_caption_hosts on posture captions, and check for a shared constant first.
-- **PWHL as the sixth book, residual:** about 70 "NHL and IIHF" pairs in the systems documents (and likely elsewhere) omit the PWHL. Check each against pwhl_rules.txt; add it where the PWHL has the rule.
 - **Puck_handling crease-cover siblings:** check that summaries elsewhere (goaltender, rules_primer) state HC "both ways round" consistently.
-- **Owner questions (collected 19 Oct):**
-  - HC 7.6 against 8.5(b) on a goalie charge that reaches the head: which governs?
-  - In-House Rules §4 directs that a cross-check to the head be called cross-checking, not Rule 48. Should the corpus say so for In-House readers?
-  - IIHF puck-carrier vulnerability: is there an official interpretation? Search the IIHF Situation Handbooks.
-
+- **faceoffs late-centre framing:** IIHF 76.7 (v1.1 and 2026/27) concerns players late to the faceoff (in an offside position). The team is warned once, and the centre is not warned/ejected for that. The corpus's "late centre" framing of 76.7 and the In-House "lateness is a violation" clash need a rules-verifier read across faceoffs, center, winger and uk_rules :270 (tfR, 20 Oct).
+- **Owner answers, 20 Oct (memory project_owner_rulings_oct15):**
+  - HC goalie charge reaching the head: plan on the harsher of 7.6 and 8.5(b). → content row.
+  - In-House §4 (a cross-check to the head is called cross-checking): add one short line for In-House readers. → content row.
+  - Readability: page by page, worst first, each page reviewed and committed.
+  - Still open (no owner needed): search the IIHF Situation Handbooks for any puck-carrier vulnerability ruling.
 ### Also open from this session
 - The phone-bar `audio-idle` hook lives in essentials-view.js; consider moving it to audio-player.js.
 - ReadingTools.astro header comment: it says src/lib, but the file is public/essentials-view.js.

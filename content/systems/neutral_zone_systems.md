@@ -50,7 +50,7 @@ The **neutral zone** is the middle third of the ice, between the two blue lines 
 ```facts
 Key: A strong skater crosses the neutral zone in about three seconds — that is the entire window for every decision in this document
 Rule: Offside needs both skates completely over the line before the puck; an airborne trail skate stays onside under NHL, IIHF and Professional Women's Hockey League rules, but not under USA Hockey 630(a) or Hockey Canada 6.11, which require contact, and CARHA never defines its "own side" either way
-Rule: The centre red line is still the icing line, though some CARHA leagues use the blue lines (65) — the shorthanded exemption is conditional and not universal (NHL and IIHF 81.6, USA Hockey 624(b)(1)); Special Teams has the conditions
+Rule: The centre red line is still the icing line, though some CARHA leagues use the blue lines (65) — the shorthanded exemption is conditional and not universal (NHL and IIHF 81.6, PWHL 83.6, USA Hockey 624(b)(1)); Special Teams has the conditions
 Rule: The two-line pass is gone — NHL Rule 83 (Off-side) has no two-line provision, and neither do the IIHF, USA Hockey, Hockey Canada or CARHA books (CARHA Rule 73(d))
 Never: Rebuild your attack around a local two-line pass rule unless somebody shows it to you in writing
 Read: On a shorter sheet every structure here collapses faster — passive traps work better on small ice, aggressive pressure on big ice
@@ -549,7 +549,7 @@ Never: Use it when you are panicking — off the glass and out of your zone is t
 Rule: Under NHL and IIHF rules your goalie may not play the puck behind the goal line outside the trapezoid (NHL Rule 1.8; penalty 27.8 / 63.2(viii)) — the KHL reportedly too, but unverified here — the sole exception is a goalie keeping skate contact with the crease
 Rule: USA Hockey and Hockey Canada write no trapezoid, and neither frees your goalie out there — USA Hockey 614(c) makes a goalie’s freeze a minor on four triggers, among them a puck "behind the goal line and their body is entirely outside of the goal crease" and a puck outside the privileged area
 Rule: Hockey Canada's Interpretation 3 to Rule 10.1(a), clause v: "When a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."
-Rule: Interpretation 3 to Hockey Canada's Rule 10.1(a), clause ii, lets a goalie come out to cut down the angle and, after stopping the shot, cover the puck. That clause ii is the exception to clause v is a reading here, not a Hockey Canada ruling; the NHL and IIHF 63.2(vi) Notes write it in
+Rule: Interpretation 3 to Hockey Canada 10.1(a), clause ii, lets a goalie come out to cut down the angle and, after stopping the shot, cover the puck. That clause ii is the exception to clause v is a reading here, not a Hockey Canada ruling; NHL and IIHF 63.2(vi) and PWHL 65.2(vi) Notes write it in
 Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8; nothing in the Elite League's Casebook switches it off, and England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", scope and standing unsettled — in Britain keep your goalie inside it
 Rule: In a CARHA-affiliated league keep the puck moving up ice once it is in your own zone — CARHA 74(a): a team in possession in its defending zone "shall always advance the puck towards the opposing goal" unless opponents prevent it; if you do not, play stops for a faceoff in that zone
 ```

@@ -134,7 +134,7 @@ The biggest lever you have while protecting a lead. With a lead, the value of a 
 
 **Keep the chip in play.** Lifting it straight out of the rink from your own end is a penalty, so put it along the boards or off the glass.
 
-**What it costs.** Under the NHL and the IIHF — so in Britain too — a puck shot or batted **directly out of play from your own defending zone** is a two-minute minor (NHL 63.2(iii), IIHF 63.2(III)). There is no "I was under pressure" exception. Only three things escape it: a rink with no glass, a puck shot into the players' bench, and a puck out directly off a faceoff. Over the glass behind the bench is still a penalty, and the IIHF's wording — glass *"surrounding"* the bench — leaves a British player slightly less room, not more.
+**What it costs.** Under the NHL, the IIHF and the PWHL — so in Britain too — a puck shot or batted **directly out of play from your own defending zone** is a two-minute minor (NHL 63.2(iii), IIHF 63.2(III), PWHL 65.2(iii)). There is no "I was under pressure" exception. Only three things escape it: a rink with no glass, a puck shot into the players' bench, and a puck out directly off a faceoff. Over the glass behind the bench is still a penalty, and the IIHF's wording — glass *"surrounding"* the bench — leaves a British player slightly less room, not more.
 
 Aim nowhere near the bench either. ⚠️ **The bench is not a target:** the IIHF Situation Handbook (63.24) still calls the minor when a clear goes over the glass and lands in the bench, because *"the determining factor… is where the puck leaves the playing surface"*. Only a puck shot directly into a bench with no glass escapes.
 
@@ -188,7 +188,7 @@ Rule: USA Hockey's silence on whether 640(g) and 640(h) reach a late hit in adul
 
 ### The icing trap
 
-**In short:** With a tired line, chip it out rather than ice it; under the NHL and IIHF, icing means no change for the draw.
+**In short:** With a tired line, chip it out rather than ice it; under the NHL, IIHF and PWHL, icing means no change for the draw.
 
 ```facts
 Rule: Icing is sending the puck from your own side of the centre red line past the opposing goal line untouched (NHL Rule 81.1)
@@ -198,9 +198,9 @@ Rule: The post-icing substitution bar has three narrow exceptions — a goalie w
 Rule: The IIHF's post-icing substitution bar is Rule 81.4, and its exceptions run one longer — you may also replace "a Player with a broken skate", which the NHL does not allow; but IIHF 82.1 expressly covers icing too and lists only the NHL's three, and the book does not say which governs
 Rule: A refused change sends the substitutes back to the bench and warns the team through its coach; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)) — the NHL contradicts itself, 82.2(v) warning either team, its 82.3 penalising the visitors with no warning
 Rule: No time-out is granted to the defensive team following an icing (NHL Rule 87.1) — USA Hockey attaches no icing condition to its one time-out (636(f))
-Risk: Under the NHL and the IIHF, a defensive-zone draw, your five most tired players, and no way to rest them
+Risk: Under the NHL, IIHF and PWHL, a defensive-zone draw, your five most tired players, and no way to rest them
 Rule: Hockey Canada applies its "no-change on icing" rule only "[i]n categories of U18AAA, Junior, and at the option of the Member in Senior" (6.7(d), with 6.1(f)) — below those an icing costs you the faceoff and nothing else
-Rule: And where Hockey Canada's bar does bind, 6.7(d)(iii) still permits the time-out that NHL and IIHF 87.1 refuse — either team may take it; the team that iced simply may not change during it
+Rule: And where Hockey Canada's bar does bind, 6.7(d)(iii) still permits the time-out that NHL and IIHF 87.1 and PWHL 89.1 refuse — either team may take it; the team that iced simply may not change during it
 Action: Ask before the game — many rec and youth leagues use no-touch icing, and under USA Hockey there is no no-change rule to enforce
 ```
 
@@ -439,7 +439,7 @@ Rule: After a stoppage the visiting team places its line-up on the ice first, th
 Rule: The referee allows the visitors up to five seconds and the home team up to eight, then no more changes (NHL Rule 82.2)
 Rule: Only the team that iced the puck is frozen — if the visitors ice it, the home team changes normally and keeps last change (NHL Rules 82.1, 81.4)
 Rule: The IIHF writes last change into Rule 82.3 instead, with a penalty the NHL's 82.1 does not carry — failure, tardiness or "deliberate error in complying" is a warning first, then a bench minor
-Rule: Both books also require players to "proceed directly" to the faceoff, with a bench minor and no warning first for stalling — announced as "Slow Proceeding to Face-off Location" (NHL and IIHF 82.3)
+Rule: The NHL, IIHF and PWHL also require players to "proceed directly" to the faceoff, with a bench minor and no warning first for stalling — announced as "Slow Proceeding to Face-off Location" (NHL and IIHF 82.3, PWHL 84.3)
 Key: Last change is the main mechanical component of home-ice advantage, but travel, rest and rink familiarity are in there too
 Action: In a rec league, treat matching as something you do on the fly — ask whether yours runs a formal change procedure at all; this document has no count of how many do
 ```
@@ -450,7 +450,7 @@ Under **NHL Rule 82.1**, following a stoppage the **visiting team places its lin
 
 **🇬🇧 The IIHF puts last change in a different rule, and attaches a penalty to it.** IIHF **Rule 82.3** gives the home team *"last change"*, requires the visitors to put their players out first, and refuses a change not made promptly. Failure to comply brings a warning first and then a bench minor for delay of game. **Warning first, then the penalty.** ⚠️ **The NHL's 82.3 opens with something else, so don't read one book's 82.3 as the other's:** its first paragraph gives the **visiting team** a bench minor for any change after the referee's signal, with no warning — where its own 82.2(v) warns *"either team"* first.
 
-**The second paragraph of 82.3 is the one most likely to catch an ordinary player, and it is the same in both books:** *"Players must proceed directly to the location of the face-off"*, and stalling is a bench minor for delaying the game, with no warning. **It reaches dawdling, not disagreeing** — so go straight to the dot, or straight to the bench.
+**The second paragraph of 82.3 is the one most likely to catch an ordinary player, and it is the same in the NHL, the IIHF and the PWHL (84.3):** *"Players must proceed directly to the location of the face-off"*, and stalling is a bench minor for delaying the game, with no warning. **It reaches dawdling, not disagreeing** — so go straight to the dot, or straight to the bench.
 
 This is what "**last change**" means, and it is the main mechanical part of home-ice advantage. Across 2021-22 to 2023-24, NHL home teams earned a **.585 points percentage against .524 for road teams** — a gap of **6.1 percentage points**, or about **11.6%** more points at home. (The source article calls it a 5.5% boost, which does not follow from the two numbers it prints, so the arithmetic is given instead.) The effect is real but modest, and only part of it is last change — travel, rest and rink familiarity are in there too.
 
@@ -989,7 +989,7 @@ Rule: No time-out is granted to the defensive team following an icing — you ca
 Rule: Under USA Hockey, Rule 636(f) gives one sixty-second time-out and attaches no icing condition to it, but “[f]or time curfew games, no time-outs shall be permitted” — and the ask must come before the line change procedure concludes, at any stoppage
 Rule: The IIHF sets that same line-change clock on the ask (87.1) where the NHL asks only for the request "prior to the drop of the puck" — so in Britain the window shuts when the referee lowers their hand
 Action: Spend it on rest and instruction at a moment you choose — before a critical defensive-zone draw, or before setting up 6-on-5
-Rule: The two other stoppages this rule names also cost the defending team the line change — NHL and IIHF Rule 63.8, whose goalie-freeze limb allows only two substitutions, an injured player and a strength-changing penalty, with no pulled-goalie one
+Rule: The two other stoppages this rule names also cost the defending team the line change — NHL and IIHF 63.8 and PWHL 65.8, whose goalie-freeze limb allows only two substitutions, an injured player and a strength-changing penalty, with no pulled-goalie one
 Key: The measured effect on winning is nil in the NHL study behind this section, and across its 2014-15 to 2019-20 games most benches finished with the time-out still in the pocket
 ```
 
@@ -1133,11 +1133,11 @@ Rule: Five books print the permission to catch a puck and put it straight down �
 Priority: Knock the puck straight down where you stand — that concedes nothing under any book, and no version of this trade beats it
 Priority: Only where you cannot knock the puck down, and only while your own goalie is still on the ice, is the penalty shot better than the goal it prevented
 Priority: ⚠️ **Once your own net is empty there is no trade left** — covering a puck in your crease concedes the goal, not a shot (USA Hockey: where it prevented an obvious and imminent goal), so knock it down
-Rule: One thing that buys the penalty is the conduct after the catch — holding it, a stride, turning, throwing it (NHL and IIHF 67.2(I); Hockey Canada Interpretation 4 to 10.2(a)(iii)); another is a hand laid over a puck on the ice to conceal it, the penalty shot in your crease (67.2(II))
+Rule: One thing that buys the penalty is the conduct after the catch — holding it, a stride, turning, throwing it (NHL and IIHF 67.2(I), PWHL 69.2(i); Hockey Canada Interpretation 4 to 10.2(a)(iii)); another is a hand laid over a puck on the ice to conceal it, the penalty shot in your crease (67.2(II))
 Rule: Under USA Hockey a hand closed on a CAUGHT puck outside the crease and not opened at once is a stoppage, not a penalty; a hand covering a loose puck on the ice is a minor (614(a)), and so is picking it up; in the crease any of them is the penalty shot or optional minor (614(b), 618(a))
 Rule: Every book here awards the crease penalty shot for a puck in your crease, wherever you are — NHL and IIHF 63.6, PWHL 65.6, CARHA 58(c), USA Hockey 614(b) and 618(a), Hockey Canada 4.11(a)(v), which its 10.2(a)(v) cross-refers to, for the hand and the body alike
 Rule: ⚠️ **With your OWN net empty, covering a puck in your crease is an awarded goal, not a penalty shot** — NHL and IIHF 67.5, PWHL 69.5, Hockey Canada 10.2(a)(vi); CARHA 58(c) Note 1 on its face, though 36(b) conditions it; USA Hockey 614(b) only where it prevented an obvious and imminent goal
-Rule: The converse — a minor where the puck is outside the paint and you are inside it — is rule text in the NHL and IIHF (63.6); USA Hockey's Casebook agrees (614 Situation 1); Hockey Canada's 10.2(a)(v)-(vi) also go by where you stand: price the shot, or the goal with your net empty
+Rule: The converse — a minor where the puck is outside the paint and you are inside it — is rule text in the NHL and IIHF (63.6) and PWHL (65.6); USA Hockey's Casebook agrees (614 Situation 1); Hockey Canada's 10.2(a)(v)-(vi) also go by where you stand: price the shot, or the goal with your net empty
 Rule: The crease is a volume, up to the top of the four-foot goal frame in all six books (NHL and PWHL 1.7, CARHA 5(c), USA Hockey 618(a) Note) — knee high in the paint is the penalty shot, above the crossbar a minor (IIHF Situations 63.15, 63.27): height sets which penalty you pay, not whether
 Rule: USA Hockey alone lets the NON-OFFENDING team elect that minor in place of the shot (406(a)) — their election, not yours, so it never makes the trade cheaper for you
 ```
@@ -1146,17 +1146,17 @@ Rule: USA Hockey alone lets the NON-OFFENDING team elect that minor in place of 
 
 **You may catch the puck if you put it straight back down.** NHL and IIHF **Rule 67.2** read *"A player shall be permitted to catch the puck out of the air but must immediately place it or knock it down to the ice"*, with **PWHL 69.2** the same; Hockey Canada 10.2(a)(iii) and **CARHA 61(a)** allow a player who *"immediately drops it to the ice"* without gaining or attempting to gain an advantage. ⚠️ **USA Hockey's playing rules print no such permission.** Under 618(a) a hand closed on a caught puck **outside** the crease and not opened at once is only a stoppage and a last-play faceoff — **but a hand closed on a puck *in* the crease is the penalty shot or optional minor** (614(b), 618(a)). The express permission is in the separate *Rules and Casebook*, Situation 1 to Rule 618: catch and drop in *"virtually one continuous motion"* and play continues — a casebook interpretation, not rule text.
 
-Covering a loose puck on the ice, or picking one up, is a different act. ⚠️ **Under USA Hockey it is a minor with the puck outside the crease** (614(a) and its Casebook Situation 1; 618(a)'s second paragraph, matched by NHL and IIHF 67.2(III)), **and the penalty shot or optional minor with it inside** (614(b), 618(a)).
+Covering a loose puck on the ice, or picking one up, is a different act. ⚠️ **Under USA Hockey it is a minor with the puck outside the crease** (614(a) and its Casebook Situation 1; 618(a)'s second paragraph, matched by NHL and IIHF 67.2(III) and PWHL 69.2(iii)), **and the penalty shot or optional minor with it inside** (614(b), 618(a)).
 
 And "put it down" means ⚠️ **down where you are, not somewhere better.** Moving the puck first is not *"immediately"* placing it. In IIHF **Situation 67.6** a defender with his own net empty grabs the puck at waist height and *"drops the puck outside the crease"* — and the ruling is *"an Awarded Goal to Team B"* (a Handbook application, which ranks below the Rulebook). Hockey Canada writes the same limit into the rule: *"**without gaining or attempting to gain an advantage**."*
 
-**What costs you is the conduct after the catch, not its height.** NHL and IIHF **67.2(i)** penalise catching the puck and skating with it to avoid a check or gain ground; Hockey Canada's **Interpretation 4 to 10.2(a)(iii)** lists throwing it, manoeuvring around a player while holding it, and taking a stride with it. **That is the variable you control. Knock it down and play it.**
+**What costs you is the conduct after the catch, not its height.** NHL and IIHF **67.2(i)** and PWHL **69.2(i)** penalise catching the puck and skating with it to avoid a check or gain ground; Hockey Canada's **Interpretation 4 to 10.2(a)(iii)** lists throwing it, manoeuvring around a player while holding it, and taking a stride with it. **That is the variable you control. Knock it down and play it.**
 
 **A hand laid over the puck also buys the penalty, and inside your own crease it is priced at the top.** NHL and IIHF **67.2(II)** give a minor for placing a hand over a puck on the ice *"to conceal it from or prevent an opponent from playing the puck"*, and the Note beneath sends it, in your goal crease area, to the penalty shot or the awarded goal. ⚠️ **So a hand flat over a loose puck in your own paint is priced like gathering it in**, and with your net empty that is the goal. The PWHL writes the same limb (69.2(ii)); USA Hockey, Hockey Canada and CARHA never use the word *conceal*. ⚠️ **Do not read that as a permission under those books.** USA Hockey penalises *"the use of hands to make the puck unplayable"* (614(a) Note) and a hand holding the puck in the crease (614(b)); Hockey Canada permits a hand only *"to stop, knock down, or push the puck"* (10.2 preamble); and CARHA 58(c) gives the penalty shot where a defender *"holds or gathers the puck into their body in any manner, or picks up the puck with their hand"* in the crease — CARHA binds its affiliated leagues only. **Under every one of them, knocking it down is the play.**
 
 **Now the price, if you do hold it — and only while your own goalie is in the net.** Holding a puck that is itself in your own crease is a penalty shot (**NHL Rule 67.4**), which is still better than the goal it prevented. ⚠️ **With your own net empty there is no such trade:** the same act is an **awarded goal** under the NHL, the IIHF, the PWHL, Hockey Canada and CARHA, and under USA Hockey wherever it prevented an obvious and imminent goal.
 
-**In most books the puck's position decides, not yours; Hockey Canada adds yours, so under it standing in the paint can cost you the shot.** The NHL and IIHF write the puck test in **Rule 63.6**, USA Hockey in 614(b) and 618(a), and Hockey Canada in **4.11(a)(v)** — the shot for a defender who *"closes their hand on the puck gaining an advantage, or deliberately falls on or gathers the puck into their body, while the puck is in the goal crease"*. **The NHL, the IIHF and the PWHL (65.6) also print the converse:** gather a puck lying outside the paint while you stand in it and it is a minor, not a shot.
+**In most books the puck's position decides, not yours; Hockey Canada adds yours, so under it standing in the paint can cost you the shot.** The NHL and IIHF write the puck test in **Rule 63.6**, the PWHL in 65.6, USA Hockey in 614(b) and 618(a), and Hockey Canada in **4.11(a)(v)** — the shot for a defender who *"closes their hand on the puck gaining an advantage, or deliberately falls on or gathers the puck into their body, while the puck is in the goal crease"*. **The NHL, the IIHF and the PWHL (65.6) also print the converse:** gather a puck lying outside the paint while you stand in it and it is a minor, not a shot.
 
 **Neither Hockey Canada nor USA Hockey writes that into its rule text.** Hockey Canada's 10.2(a)(v) awards the shot *"when the infraction occurs inside the offending team's goal crease"*, which locates the infraction rather than the puck; 4.11(a)(v) makes the puck reading plausible but does not rule the other out; and **Interpretation 5** (a minor, because *"The puck was not actually covered in the crease"*) has the player outside the crease too.
 
