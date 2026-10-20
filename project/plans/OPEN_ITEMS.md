@@ -375,7 +375,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - "minor/female" misheard by TTS: body_contact :739, passing :437, winger :747, center :766, zone_entries :852, defensive_zone_coverage :180.
 - Stale "four books" frames (corpus holds six): body_contact :563/:618/:1644 facts (+8 framings), game_management :143/:1133/:1141/:1169, team_play_and_culture :137, switching_positions :290, breakouts :562, defender :1003 and center :924 ("Rules Primer carries that four-book split"). faceoffs five-vs-six (:4/:656 vs :1031).
 - CARHA 32(d) flat one-game suspension, with no "at least": breakouts :214, offensive_zone_play :715, shooting :161/:191, playing_without_the_puck :740, defensive_zone_coverage :598. Tied to owner question at plan :582.
-- Slash voiced as "or": time_and_space :499, puck_support_and_spacing :587, defending_the_rush :731.
+- Slash voiced as "or": puck_support_and_spacing :587, defending_the_rush :731 (time_and_space :499 already fixed).
 - HC 8.5(b)/7.1(c)(iii) injure limb missing: winger KT :864, center :833/:903, risk_management :755 (cites CARHA 48(c) without HC 7.1(c)(iii)), passing_and_receiving :486 (facts/CM/KT15 drop "deliberately").
 - HC 6.1(g) net-off not named: goaltender, game_management :624/:637. game_management :637/:1006 also lacks USAH 610(d).
 - Missing PWHL: goaltender :795 (81.1), special_teams :685 (68.2), rules_primer :775.
@@ -400,7 +400,6 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **special_teams.md:** :674 "Every book reports a game misconduct to an authority" (USAH and PWHL limbs unverified); :626 prevalence claim flagged "not independently verified".
 - **neutral_zone_systems.md:** :437 (:361/:395/:424) HC 7.4(c) mandatory match for charging a head-down carrier; needs a rules-verifier.
 - **on_ice_communication.md:** :641 "need not move that player yourself"; :311 amber run opens on a citation.
-- **mental_game.md:** :153 "finishing a check already being delivered" with no measure of the window.
 - **switching_positions.md:** trailer :648 "only" list omits CARHA 66(a), which facts :172 cites.
 - **skating.md:** :823/:833 "stick blade".
 - **shooting.md:** :1007 trailer "IIHF runs the enforcement the other way".
@@ -475,6 +474,16 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **Y wave done 20 Oct** (record y_readability_2026-10-20.md; committed and pushed as 4c85bd0): offensive_zone_play, special_teams, faceoffs.
 - **defensive_zone_coverage :577 (rules-verifier):** says IIHF 101.1 "allows pushing and leaning only…". Both v1.1 and 2026/27 open 101.1 with "'bodychecking' is allowed when there is a clear intention of playing the puck". The page is stricter than the rule (W3, xcS).
 - **CARHA 32(d) sites deliberately left without it** (to avoid repeating it everywhere): defensive_zone_coverage 54(a)/66/49(a)/80(a) body sites, :557 facts at cap; zone_entries :405/:452/KT10/KT11/CM :1171/facts. Scope traps: 32(d) does not reach the 53(a) minor+GM, 53(b) is a 34(a) match, and 62(b)'s accidental high stick is excepted. Revisit only if the owner wants it at every site.
+- **NIHL RoC link update:** the source is refreshed (20 Oct; the only change is the British Trained definition). Update the two content links, rules_primer :1163 and conditioning_and_recovery :695, to https://englandicehockey.com/wp-content/uploads/2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf (so).
+- **HC 2026-28 republication changes** (README, 20 Oct; hc.txt is operative, and hc_2026-08-print.txt is the superseded August printing). Check whether any corpus claim depends on the old text for:
+  - 4.11 penalty-shot equipment (blocker/trapper) and crease cover;
+  - Interp 6 crossbar on the lacrosse move;
+  - refusing to start play: penalty shot "in lieu of a Minor";
+  - 8.7 clipping "at or below the hips";
+  - 4.7(a) Interp 2;
+  - 7.1(f);
+  - 10.4 leaving the bench;
+  - 10.6(a) Interp 5.
 - **Siblings of the W2 corrections:** run a layer test for each of these:
   - save-then-cover being "out in front" only, with Hockey Canada "points both ways" (goaltender.md, defender.md);
   - the medical-cover rule scoped to an EIH fixture (equipment, conditioning_and_recovery, getting_started);
@@ -483,7 +492,9 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **neutral_zone_systems KT8:** lost the options "a stretch forward behind a wall… or a dump you chase", which narrows a tactical KT. Consider restoring one option. Also :946 trailer quote drift (ADDED '.') (Z gate).
 - **Z wave done 20 Oct** (record z_readability_2026-10-20.md; committed and pushed as f7686ae).
 - **W2 wave done 20 Oct** (record w2_readability_2026-10-20.md; committed and pushed as b05098f). 18 of 39 pages done.
-- **W3 wave dispatched 20 Oct ~16:25:** readability for breakouts (xa), center (xb), defensive_zone_coverage (xc), zone_entries (xd), winger (xe) and defender (xf). Brief at scratchpad w3/brief.md. Remaining after W3: shooting, risk_management, getting_started, team_play_and_culture, switching_positions, mental_game, passing_and_receiving, time_and_space, how_to_watch_hockey, skating, scanning_and_anticipation, practice_and_development, puck_support_and_spacing, core_principles and reading_ice_hockey_diagrams.
+- **W3 wave done 20 Oct** (record w3_readability_2026-10-20.md; committed and pushed as 0bd425a). 24 of 39 pages done.
+- **W4 wave dispatched 20 Oct ~19:35:** readability for shooting, risk_management, getting_started, team_play_and_culture, switching_positions, mental_game, passing_and_receiving and time_and_space (brief w4/brief.md). W5 will take how_to_watch_hockey, skating, scanning_and_anticipation, practice_and_development, puck_support_and_spacing, core_principles and reading_ice_hockey_diagrams.
+- **Principles series pilot (pp1) dispatched 20 Oct:** a plan at project/podcast_principles_series_plan.md, plus Winger pilot scripts for Detailed and Core. Core is for a typical U12 player on full ice and assumes non-checking (owner, 20 Oct). Scripts go to the owner before any synthesis.
 - **NotebookLM pilot (owner action):** the Winger pilot files are in `.podcast_queue/notebooklm/pilot_winger/`. The shared instructions.md was rebuilt with the new text on 20 Oct. Waiting for the owner to generate the episode. Then review it for source-reference count (target 0), rules time, the checking gate, board posture and injury response.
 - **NotebookLM prompt rewrite done 20 Oct** (record notebooklm_prompt_rewrite_2026-10-20.md; committed as 8539ca2).
 - **special_teams KT10:** "Screen with both feet clear of the red crease line" dropped "outside the paint". Align it with offensive_zone_play KT4 ("clear of the crease and its red line") (Y gate).
