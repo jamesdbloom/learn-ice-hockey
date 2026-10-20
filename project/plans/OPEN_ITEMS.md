@@ -491,14 +491,17 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - Next candidates after small open rows close: mental_game (:781 marker), puck_support (:491 "five-man"), team_play (:137 "four books"), getting_started (the medical-cover layer test), forechecking (the 608(c) layer test).
   - The other 19 pages get packs after the SW sweep commit. Owner, 20 Oct: they can do at most 10 at once, so prepare one batch of 10 at a time and do not build the next until the current batch is done.
   - The owner generates each episode by hand, because NotebookLM is unreachable to agents. As each .m4a arrives: run the SKILL.md Step 4 review (safety list first, source-reference count 0, rules time, runtime), then publish via build_podcast_audio.py to the site and the RSS feed (Spotify and Apple follow the feed).
-- **FZ wave dispatched 20 Oct ~20:40** (brief scratchpad fz_brief.md): fz-a defender/center/faceoffs, fz-b breakouts/special_teams/NZS, fz-c DZC/zone_entries/OZP/time_and_space. It takes the row below and the 601(d)(9) spectator limb. goaltender, forechecking (608(c)) and puck_support (:491) are committed together (record goalie_freeze_and_608c_2026-10-20.md).
-- **Goalie freeze siblings (s1R3, 20 Oct):** these files carry the HC tension as clause v against clause ii only, without the goaltender paragraph of Rule 10.2: defender :179/:201, breakouts :1102–1123, special_teams :1048–1049, neutral_zone_systems :553–554, defensive_zone_coverage :833, zone_entries :794, center :393, offensive_zone_play :816, puck_support :449, time_and_space :538. defender :162 and faceoffs :565 name CARHA 58(b) and 61(b) without 74(b). Layer-test each; most may be fine (none read as a permission in the grep).
+- **FZ wave committed 20 Oct** (record fz_goalie_freeze_siblings_2026-10-20.md): goalie-freeze siblings aligned with goaltender.md in 9 pages; centre needed nothing. Leftovers:
+  - OZP facts :817 "Both books" antecedent;
+  - special_teams :775 omits PWHL 65.2(vi);
+  - the OZP trailer lacks USAH 614(c) and HC clause v;
+  - md_to_speech clause numerals.
 - **Readability programme complete (20 Oct):** all 39 pages passed (W4/W5 record w4_w5_readability_2026-10-20.md).
 - **SW sweep committed (20 Oct; record sw_cross_page_sweep_2026-10-20.md)** for 18 pages. goaltender is held back for its own commit (s1R5 CLEAR). Optional goaltender minors: :1098 add "with an attacker on you"; :643 double negative; :388 "soft stick … cover it" has no crease condition; :1622 omits USAH 614(c)(4).
-- **Save-then-cover siblings:** IIHF Situation 63.1 (a freeze must come "straight off" the save) and HC 10.2(a) (a goalkeeper freezing outside the crease) are missing outside goaltender. Layer-test defender, time_and_space, defensive_zone_coverage, special_teams and on_ice_communication (s1R).
-- **USAH 601(d)(9) spectator limb:** check every sibling that prices pucks fired out of play after a stoppage (s8R).
-- **"five-man" leftovers:** the offensive_zone_play.mjs:1239 caption "standard five-man setup", puck_support :491 and the OZP §3 heading (s5R).
-- **md_to_speech:** "U12 is" read in lower case at sentence start; "Jr/Sr" read as "Jr or Sr" (winger :747).
+- **Save-then-cover siblings:** IIHF Situation 63.1 (a freeze must come "straight off" the save) and HC 10.2(a) (a goalkeeper freezing outside the crease) are missing outside goaltender. Done for the 9 FZ pages; only on_ice_communication is still open (s1R).
+- **USAH 601(d)(9) spectator limb:** check every sibling that prices pucks fired out of play after a stoppage (s8R). Done in on_ice, defender and the 9 FZ files; the rest is open.
+- **"five-man" leftovers:** the offensive_zone_play.mjs captions :301 and :1239 (puck_support :491 and the OZP §3 heading are done).
+- **md_to_speech:** Hockey Canada "clause ii" / "clause v" in prose is voiced as bare letters; expand it to "clause two/five" (fz-aR, fz-bR). "U12 is" read in lower case at sentence start; "Jr/Sr" read as "Jr or Sr" (winger :747).
 - **special_teams :626 prevalence claim** ("commonly described as a current NHL default"): weak; reword to "one common option" or source it (s7).
 - **Siblings of the W2 corrections:** run a layer test for each of these:
   - save-then-cover being "out in front" only, with Hockey Canada "points both ways" (goaltender.md, defender.md);
