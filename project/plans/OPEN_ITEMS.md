@@ -484,6 +484,13 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - 7.1(f);
   - 10.4 leaving the bench;
   - 10.6(a) Interp 5.
+- **Readability programme complete (20 Oct):** all 39 pages passed (W4/W5 record w4_w5_readability_2026-10-20.md).
+- **SW sweep in progress (20 Oct):** s1–s9 across the other pages. Fixes are in the working tree and under review; commit them as each review clears.
+- **Save-then-cover siblings:** IIHF Situation 63.1 (a freeze must come "straight off" the save) and HC 10.2(a) (a goalkeeper freezing outside the crease) are missing outside goaltender. Layer-test defender, time_and_space, defensive_zone_coverage, special_teams and on_ice_communication (s1R).
+- **USAH 601(d)(9) spectator limb:** check every sibling that prices pucks fired out of play after a stoppage (s8R).
+- **"five-man" leftovers:** the offensive_zone_play.mjs:1239 caption "standard five-man setup", puck_support :491 and the OZP §3 heading (s5R).
+- **md_to_speech:** "U12 is" read in lower case at sentence start; "Jr/Sr" read as "Jr or Sr" (winger :747).
+- **special_teams :626 prevalence claim** ("commonly described as a current NHL default"): weak; reword to "one common option" or source it (s7).
 - **Siblings of the W2 corrections:** run a layer test for each of these:
   - save-then-cover being "out in front" only, with Hockey Canada "points both ways" (goaltender.md, defender.md);
   - the medical-cover rule scoped to an EIH fixture (equipment, conditioning_and_recovery, getting_started);

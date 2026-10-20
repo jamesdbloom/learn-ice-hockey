@@ -8,7 +8,7 @@
 
 ## Key focus
 
-**Go into the boards on an angle, head up and chin off your chest.** Never straight at them, never head-first, never with your back to a checker — a turned back makes any contact a hit from behind, and a head-first hit can injure your spine at walking speed. If contact is coming, skates parallel to the wall, forearm and hip into it. [Body Contact and Battles](body_contact_and_battles.md) has the rest.
+**Go into the boards on an angle, head up and chin off your chest.** Never straight at them, never head-first, never turn your back to a checker — a turned back makes any contact a hit from behind, and a head-first hit can injure your spine at walking speed. If contact is coming, skates parallel to the wall, forearm and hip into it. [Body Contact and Battles](body_contact_and_battles.md) has the rest.
 
 **Win the first three steps.** Most races to a loose puck or a rebound are settled within about three strides — a coaching observation, not a measurement. Start with short, quick steps; use a crossover start to go sideways or turn back.
 
@@ -659,7 +659,7 @@ Key: Going forwards into the boards, head up and chin off your chest — a tucke
 >
 > **The chin.** Going down *to the ice*, tuck it — most of all going over backwards — to keep your skull off the surface. Going *forwards into the boards*, do **not** tuck it: a tucked chin lines the neck up to take an axial load. Ice: chin in. Wall: head up.
 >
-> **The hands — and the stick.** Against the boards you *do* get your arms out, spread wide on the glass, so two forearms, two gloves, your side and your legs share the load. **If the wall is in front of you and there is no time to turn, the stick goes up on the glass too, both hands on it if you can** — USA Hockey cushions an impact *"[w]ith both hands on the stick if possible"* and names the common error as *"[n]ot getting your stick and gloves up and spread out on the glass"*. **That spread is damage limitation, not the posture to aim for.** The aim is skates parallel, forearm and hip: never the tip of your shoulder, and no part of the shoulder if you can help it ([Body Contact and Battles](body_contact_and_battles.md) owns the exact USA Hockey wording).
+> **The hands — and the stick.** Against the boards you *do* get your arms out, spread wide on the glass, so two forearms, two gloves, your side and your legs share the load. **If the wall is in front of you and there is no time to turn, the stick goes up on the glass too, both hands on it if you can.** USA Hockey cushions an impact *"[w]ith both hands on the stick if possible"* and names the common error as *"[n]ot getting your stick and gloves up and spread out on the glass"*. **That spread is damage limitation, not the posture to aim for.** The aim is skates parallel, forearm and hip: never the tip of your shoulder, and no part of the shoulder if you can help it ([Body Contact and Battles](body_contact_and_battles.md) owns the exact USA Hockey wording).
 >
 > On the ice you do **not** put a hand out, because there is nothing to spread it across — your whole weight arrives through one wrist. **The rule under both: spread the impact over the largest area you can.** On the ice that is hip, thigh and side; on the wall, skates parallel, forearm and hip — or stick, gloves and forearms on the glass only if you cannot turn.
 
@@ -955,7 +955,7 @@ For an adult player: **you will not become fast this month, but you can become n
 - **Practising only your strong side.** Weight circle work, stops, tight turns and pivots toward the weak side — two laps weak for every one strong is a rule of thumb, not a measured optimum.
 - **Leaking power out of the stride.** Push out to the side and slightly back, extend fully, and bring the foot back under your hips fast. Pushing straight back makes the blade slide. Whether to finish with a toe flick is contested, so ask your coach. To check, count your strides goal line to goal line, then use fewer.
 - **An arm swing that turns your shoulders.** Keep your shoulders square up the ice. Coaching schools **flatly disagree** on front-to-back versus side-to-side hands, so take your coach's version.
-- **Ducking, arriving square to the boards, or turning your back to the checker.** Go in on an angle, skates parallel to the wall, forearm and hip into it, head up and chin off your chest — never head-first, never your back. **A turned back makes the contact a hit from behind at any speed**, and USA Hockey warns that *"[e]ven a light hit from behind could inflict a severe head or neck injury."*
+- **Ducking, arriving square to the boards, or turning your back to the checker.** Go in on an angle, skates parallel to the wall, forearm and hip into it, head up and chin off your chest — never head-first, never turn your back to the checker. **A turned back makes the contact a hit from behind at any speed**, and USA Hockey warns that *"[e]ven a light hit from behind could inflict a severe head or neck injury."*
 - **Never having learned to fall — or getting the chin backwards.** Falling *to the ice*: go to the side, hands in, chin tucked. Going *into the boards*: head up, chin off your chest; spread stick, gloves and forearms on the glass only if you are already facing it with no time to turn. Sliding into the boards: skates or side first, head up.
 - **Bouncing straight back up.** Take two or three seconds first, and stay down if you are hurt. **A fall can cause a concussion without knocking you out. If one is suspected, come off, do not return that day, and do not go back on the ice until a medical professional clears you** — see [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md#concussion).
 
@@ -1002,7 +1002,7 @@ it wrong and then checking teaches more than recognising the right answer.*
 
 ## Key Takeaways
 
-1. **Heading into the boards, go in on an angle, head up and chin off your chest.** Never head-first, never your back to a checker — that makes it a hit from behind, at any speed, checking league or not. If contact is coming, skates parallel, forearm and hip into the wall. This outranks everything else here; [Body Contact and Battles](body_contact_and_battles.md) has the full rule.
+1. **Go into the boards on an angle, head up and chin off your chest.** Never head-first, and never turn your back to a checker — that makes it a hit from behind, at any speed, checking league or not. If contact is coming, skates parallel, forearm and hip into the wall. [Body Contact and Battles](body_contact_and_battles.md) has the rest.
 2. **Whatever you are doing, stay low** — knees over your toes, chest up, weight on the balls of your feet, head and hands up. A hard start's forward lean is the one exception.
 3. **Keep your eyes up and scanning, with the puck or without it** — especially out of a start and through a turn.
 4. **To cut back, slip a checker or protect the puck, you need outside edges — so train them on purpose.**

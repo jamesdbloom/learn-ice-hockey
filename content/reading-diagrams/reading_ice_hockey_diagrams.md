@@ -7,9 +7,9 @@
 >
 > **No symbol on this page tells you what your league permits.** The mark at the end of a
 > route says where it stops, never whether you may make contact there. Whether you may
-> body check at all depends on your age group, your league and your book: USA Hockey
+> body check at all depends on your age group, your league and your book. USA Hockey
 > prohibits it in 12 & under, all girls' and women's classifications and all non-check
-> adult classifications, and in any game against a team from one of those, and Hockey Canada penalises it at U13 and below, in female
+> adult classifications, and in any game against a team from one of those. Hockey Canada penalises it at U13 and below, in female
 > hockey, *"and any other divisions approved by a Member of Hockey Canada"*. Read
 > [Body Contact and Battles](../technique/body_contact_and_battles.md) before acting on any
 > route that finishes on a player.

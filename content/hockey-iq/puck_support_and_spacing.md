@@ -585,7 +585,7 @@ Action: Talk — "I've got your back", "you have time", "man on"; the layer only
 Convention: A double-team is a coaching decision, commonly allowed below your own goal line — ask where and when
 Never: Arrive at a double-team at the wall with your back to the checker, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
 Rule: A push or hit from behind is checking from behind even in non-check play. It ejects in NHL, IIHF and PWHL 43; if intentional, in Hockey Canada 7.5(a) and CARHA 53(a). USA Hockey 608(a) starts at a minor plus misconduct; a hard one at the boards or head first ejects (608(b); Casebook 608 Situation 1)
-Rule: Into the boards unable to protect themselves: a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and in USA Hockey 608(c) with excessive force on a defenceless player — plan on one for any reckless push (602(a))
+Rule: Into the boards unable to protect themselves: a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and in USA Hockey 608(c) with excessive force on a defenceless player — plan on one, and a likely multi-game suspension, for any reckless push (602(a))
 ```
 
 Your teammate is pressuring the carrier, and you are the second defender. You can:
@@ -603,7 +603,7 @@ To make the layer a real position:
 
 ![](diagram:layer-not-converge)
 
-**Layering is almost always correct.** It sits inside every named defensive system: F1 pressures while F2 supports and reads the escape; in your own zone the next player covers the lane behind the pressure; a penalty-killing box (two forwards high, two defencemen low) or diamond (a single apex) covers the pass behind whoever steps up.
+**Layering is almost always correct.** It sits inside every named defensive system. F1 pressures while F2 supports and reads the escape; in your own zone the next player covers the lane behind the pressure; a penalty-killing box (two forwards high, two defencemen low) or diamond (a single apex) covers the pass behind whoever steps up.
 
 **The exception is a deliberate double-team**, a coaching decision rather than a default. Many teams send two players at a puck on the boards *below their own goal line*, where the net and boards contain a turnover. Under the standard coverage, the second player supports rather than doubling except there. **Ask your coach where and when you may double** — freelancing it is how backdoor goals happen.
 
@@ -677,7 +677,7 @@ One question, asked constantly: **"Where are my two options?"**
 - **Passing across the slot in your own end.** An interception there is a point-blank chance for a player already facing your net. Go behind your net or up the wall.
 - **Nobody above the puck.** Everyone chases, the puck turns over, and it is a rush the other way. Before you go below the puck, know who is above it, and if nobody is, it is you.
 - **Wingers drifting into the middle.** It closes the space that made the middle valuable and puts you in your centre's lane. Stay wide unless your rotation sends you in or you are driving the net on a shot.
-- **Piling into a board battle your teammate already controls.** You block the exit. Get open a few metres away with your stick down. If it is a genuine 50-50, or you are your team's designated second player, go in, but arrive safely: skates parallel to the wall, forearm and hip to it, never the point of your shoulder, head up, chin off your chest, and **never turn your back to the checker, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet.
+- **Piling into a board battle your teammate already controls.** You block the exit. Get open a few metres away with your stick down. If it is a genuine 50-50, or you are your team's designated second player, go in, but arrive safely. Get your skates parallel to the wall, forearm and hip to it, never the point of your shoulder, head up, chin off your chest, and **never turn your back to the checker, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet.
 - **Two defenders on the same carrier when nobody called for it.** Both are beaten by one pass, and someone is unmarked. Layer behind the first defender instead. A called double-team, usually below your own goal line, is the exception. **Even then, never push or hit the opponent on the wall from behind** — go for the puck at their feet. A push from behind into the boards is checking from behind even in non-checking hockey.
 - **Stick off the ice while "open".** No blade, no pass. Keep your blade on the ice where you want the puck.
 - **Finding a good spot once and then stopping.** The puck moved, so your spot moved. Re-check your angle every time the puck moves.
