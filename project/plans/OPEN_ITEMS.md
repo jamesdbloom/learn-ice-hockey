@@ -447,7 +447,8 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 ### From the OR, P and R rounds (19–20 Oct; done work is in or_owner_rulings, p_residuals and r_consistency records)
 - **Diagram captions** voice the full board-posture mechanics in forechecking_systems (chunks 039, 044). Run check_caption_hosts on posture captions, and check for a shared constant first.
 - **Puck_handling crease-cover siblings:** check that summaries elsewhere (goaltender, rules_primer) state HC "both ways round" consistently.
-- **U wave done 20 Oct** (record u_wave_2026-10-20.md). Readability page 1 (body_contact) is done; next pages by check_readability ranking: rules_primer, goaltender, forechecking_systems, playing_without_the_puck, …
+- **U wave done 20 Oct** (record u_wave_2026-10-20.md; committed and pushed as 684326e).
+- **V wave dispatched 20 Oct 07:50:** readability pages 2–4 (rules_primer v1, goaltender v2, forechecking_systems v3). Brief at scratchpad v/brief.md. Readability page 1 (body_contact) is done; next pages by check_readability ranking: rules_primer, goaltender, forechecking_systems, playing_without_the_puck, …
 - **Owner answers, 20 Oct:** both content rulings are applied (U wave). Readability: page by page, worst first.
   - Still open (no owner needed): search the IIHF Situation Handbooks for any puck-carrier vulnerability ruling.
 ### Also open from this session
