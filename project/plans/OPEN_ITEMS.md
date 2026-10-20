@@ -444,6 +444,27 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - :951 has a stale anchor comment.
 - **site-reviewer pass:** the diagram scene at 400 px, the 🇬🇧 wrap in conditioning's Key focus, and a special_teams bold run.
 
+### 🔴 HIGH PRIORITY — Podcast improvements (owner, 20 Oct 2026, after listening to both formats)
+
+**Sequence (owner):** finish the content corrections first if that can be done fairly easily, so the podcasts are remade from fixed content. Then do this work, finish it, and move on.
+
+- **(a) NotebookLM (Deep Dive) episodes say "the document".**
+  - The owner wants the hosts to talk about the content itself, not refer to a source at all.
+  - Failing that, they should refer to the website, never "the document" or pasted content. That phrasing sounds AI-generated, which the owner wants to avoid.
+  - Work: change the NotebookLM customisation prompt in `.claude/skills/notebooklm-episode/`. Test on one or two episodes before regenerating all 39.
+  - Option to try: give NotebookLM a source framed as a web page, rather than a pasted file.
+- **(b) NotebookLM episodes: fewer rules.** Minimise rulebook talk. Mention a rule only where it is relevant, and avoid comparing the rulebooks. This mirrors what was already done for the Principles (Style B) episodes (project/podcast_style_b_script_standard.md §2, "far less rules"). Work: add this to the NotebookLM prompt, then regenerate.
+- **(c) The Principles (ElevenLabs Style B) episodes are too content-dense.** The owner leans towards doing both of these:
+  1. **A clearer "detailed principles" series.** Rework the existing episodes to introduce topics more gradually, explain each system more clearly, and say why it makes sense. They may be 25–50% longer.
+  2. **A new "core principles" series.** Simpler, covering the core concepts relevant at every age and level, including U10/U12 and newer recreational players.
+  - Work: write a script standard for each (extend podcast_style_b_script_standard.md), pilot one episode of each for the owner to hear, then roll out.
+  - **Credits:** ElevenLabs credits are short until 16 Nov (memory: project_principles_remake_approved). Plan the synthesis around that.
+  - **Site:** a third format means the site's two-format episode UI needs a third slot (memory: project_two_podcast_formats). That is a site change.
+- **Open questions for the owner before piloting (c):**
+  - Run both series, or one?
+  - Should the core series cover all 39 pages, or a smaller set of core topics?
+  - What should each be called on the site, Spotify and Apple, and as separate feeds or not?
+
 ### From the OR, P and R rounds (19–20 Oct; done work is in or_owner_rulings, p_residuals and r_consistency records)
 - **Diagram captions** voice the full board-posture mechanics in forechecking_systems (chunks 039, 044). Run check_caption_hosts on posture captions, and check for a shared constant first.
 - **Puck_handling crease-cover siblings:** check that summaries elsewhere (goaltender, rules_primer) state HC "both ways round" consistently.
@@ -451,6 +472,8 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **playing_without_the_puck ~:1124:** "…its own Situation 5 E, ⚠️ **And only one…**": a comma followed by a capitalised "And", with a mid-sentence glyph (pre-existing; X gate).
 - **equipment :173:** it quotes the WNIHL's "Full-face covering or half visor and mouth guard" for the mouthguard rule; heard alone it can sound like an age-less half-visor permission. Add the age line or rephrase (x1S, 20 Oct).
 - **Y wave dispatched 20 Oct 09:58:** readability pages 8–10 (offensive_zone_play y1, special_teams y2, faceoffs y3). Brief at scratchpad y/brief.md.
+- **faceoffs USAH 602(a):** "plan on the match" at about :615 (facts), :628 (body) and :1234 (CM) has no suspension limb. Under the OR ruling it may appear at most twice per document, so decide which two sites carry "a likely multi-game suspension" (Y wave, y3).
+- **check_readability:** counts a whole blockquote, including a long `**Related:**` nav line, as one paragraph, so page headers are inflated. Exclude Related lines, or measure blockquote paragraphs separately (Y wave, y3).
 - **Site-reviewer pass due:** the equipment checklist bullets and the playing_without_the_puck Notes list paragraphs (X wave) have not been seen in a browser. Use headless Chrome, because the extension blocks localhost.
 - **equipment :441:** the IIHF prints "opposing Player(s)" with a capital P, while the shared quotation uses NHL/PWHL casing. Note it if the quote is ever credited to the IIHF alone.
 - **X wave done 20 Oct** (record x_readability_2026-10-20.md; committed and pushed as d93a658): readability pages 5–7 (equipment, playing_without_the_puck, game_management). Next by ranking: offensive_zone_play, special_teams, faceoffs, defending_the_rush, breakouts, center, defensive_zone_coverage, zone_entries, shooting, defender, risk_management, …
