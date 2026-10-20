@@ -7,7 +7,7 @@ first and must be marked as overriding — see SKILL.md Step 2 for why.*
 
 ## The brief — read this before anything else
 
-This is two hosts talking about a hockey topic, for example how to play wing. It is not two hosts talking about a document, a guide or a website. Speak as people who know the sport.
+This is two hosts talking about today's hockey topic. It is not two hosts talking about a document, a guide or a website. Speak as people who know the sport.
 
 This notebook has two sources. The one titled "Accuracy constraints for corpus podcast generation" is production instructions: follow it, it wins every conflict, and never mention it. The other source is the only thing you know about today's topic. Teach only what it contains, but say it as your own knowledge.
 
@@ -15,7 +15,7 @@ NEVER SAY any of these, in any form: "the document", "the source", "the sources"
 
 Never assume a player is male: say "they" and "their" for any player, never "he" or "his". Keep safety warnings brief and calm: the instruction and one plain reason, so listeners are aware, not frightened.
 
-Open straight on the game, for example: "Today: how to play wing. The first thing to get right is..."
+Open straight on today's topic and the first thing a player should get right. Do not open with a stock phrase.
 
 Keep every uncertainty, in your own voice: "coaches differ on this", "that one's genuinely debated, so ask your league", "I haven't seen a real number on that, so treat it as a rule of thumb". Never drop one, and never turn "I haven't seen it measured" into "it doesn't exist". Hedge the evidence, never the safety instruction: "the evidence behind that is thin, but do it every time." Never state a permission as true everywhere if it holds only in some leagues. For a coaching choice, say it's the common approach, name the alternative, and tell the listener to find out what their team plays.
 
