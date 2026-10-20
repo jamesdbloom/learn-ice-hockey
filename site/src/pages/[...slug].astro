@@ -8,7 +8,7 @@ import AudioPlayer from '../components/AudioPlayer.astro';
 import CiteThis from '../components/CiteThis.astro';
 import ReadingTools from '../components/ReadingTools.astro';
 import { getDoc, getNeighbours } from '../data/nav';
-import { episodesFor } from '../data/podcast';
+import { episodesFor, basicsFor, basicsTitle, minutes, BASICS_PATH } from '../data/podcast';
 import { AUDIO_ENABLED } from '../consts';
 
 export async function getStaticPaths() {
@@ -34,6 +34,10 @@ const playerFormats = episodesFor(entry.id).map(({ format, episode }) => ({
   storageKey: `audio-position:${entry.id}${format.storageSuffix}`,
 }));
 const hasPlayer = AUDIO_ENABLED && playerFormats.length > 0;
+
+// The Basics episodes that draw on this document (owner, 20 October 2026). PUBLISHED ones
+// only: basicsFor() is empty until an episode exists, so no page links to nothing.
+const basicsLinks = AUDIO_ENABLED ? basicsFor(entry.id) : [];
 
 const doc = getDoc(entry.id);
 const { prev, next } = getNeighbours(entry.id);
@@ -77,6 +81,13 @@ const { prev, next } = getNeighbours(entry.id);
       </p>
       <h1 class="doc-title">{doc.title}</h1>
       <ReadingTools minutes={readingTime.minutes} essentialsMinutes={readingTime.essentialsMinutes} hasInShort={readingTime.hasInShort} />
+
+      {basicsLinks.map((ep) => (
+        <p class="basics-link no-print" data-pagefind-ignore>
+          Short episode for newer or younger players:{' '}
+          <a href={`${BASICS_PATH}#${ep.slug}`}>{basicsTitle(ep)}</a> ({minutes(ep.duration_s)} min)
+        </p>
+      ))}
 
       <TableOfContents headings={headings} variant="inline" />
 

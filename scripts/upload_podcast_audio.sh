@@ -84,6 +84,20 @@
 # (same name means same bytes), so publishing one new episode uploads one file.
 # ⚠️ ORDER: upload FIRST, then commit podcast-principles.json, then push. The page
 #    serves whatever path the deployed JSON names.
+#
+# --style basics — THE BASICS topic episodes (owner, 20 Oct 2026;
+# project/podcast_principles_series_plan.md). Reads `podcasts_principles/basics/manifest.json`
+# and `site/src/data/podcast-basics.json` (both written by
+# `build_podcast_audio.py --style basics --slug <slug>`), keyed by TOPIC SLUG, and uploads
+# ONLY to keys under `audio/principles/basics/`. Refusals (exit 3), on top of the shared
+# agreement check:
+#   - every `audio` is `/audio/principles/basics/<slug>-<sha8>.m4a` for its OWN slug, and
+#     <sha8> is the content hash of the local file;
+#   - every guid is `learn-ice-hockey:core:<slug>`, and every slug is a planned topic;
+#   - no Basics guid or audio path is also used by podcast.json or podcast-principles.json.
+# With --go: every key must sit under audio/principles/basics/ (and a principles run may
+# no longer write there), and ⚠️ AN EXISTING KEY IS NEVER OVERWRITTEN — same length is
+# skipped as already uploaded, a DIFFERENT length stops the run before anything else moves.
 
 set -euo pipefail
 
@@ -99,13 +113,13 @@ for arg in "$@"; do
     --style) EXPECT_STYLE=1 ;;
     --style=*) STYLE="${arg#--style=}" ;;
     -h|--help)
-      echo "usage: $0 [--style conversation|principles] [--dry-run | --go]"
+      echo "usage: $0 [--style conversation|principles|basics] [--dry-run | --go]"
       echo "       (default: conversation, --dry-run; a dry run makes no AWS call)"
       exit 0 ;;
     *) echo "unknown argument: $arg" >&2; exit 2 ;;
   esac
 done
-[ "$EXPECT_STYLE" = 1 ] && { echo "--style needs a value: conversation or principles" >&2; exit 2; }
+[ "$EXPECT_STYLE" = 1 ] && { echo "--style needs a value: conversation, principles or basics" >&2; exit 2; }
 
 case "$STYLE" in
   conversation)
@@ -118,7 +132,12 @@ case "$STYLE" in
     SITE_DATA="$REPO/site/src/data/podcast-principles.json"
     BUILD_HINT="scripts/build_podcast_audio.py --style principles --doc <stem>"
     ;;
-  *) echo "unknown --style: $STYLE (conversation or principles)" >&2; exit 2 ;;
+  basics)
+    SRC="$REPO/podcasts_principles/basics"
+    SITE_DATA="$REPO/site/src/data/podcast-basics.json"
+    BUILD_HINT="scripts/build_podcast_audio.py --style basics --slug <slug>"
+    ;;
+  *) echo "unknown --style: $STYLE (conversation, principles or basics)" >&2; exit 2 ;;
 esac
 MANIFEST="$SRC/manifest.json"
 COVER="$REPO/podcasts_web/cover.png"
@@ -150,8 +169,11 @@ S3_BUCKET is not set.
 It is a GitHub repository variable, the same one .github/workflows/deploy.yml uses.
 Get it and re-run in one line:
 
-    S3_BUCKET="$(gh variable get S3_BUCKET)" ./scripts/upload_podcast_audio.sh --go
-
+HELP
+  # Echo the style actually given, so the copied line re-runs the same upload.
+  # (printf, not the quoted heredoc: the $(gh ...) in it must stay literal.)
+  printf '    S3_BUCKET="$(gh variable get S3_BUCKET)" ./scripts/upload_podcast_audio.sh --style %s --go\n\n' "$STYLE" >&2
+  cat >&2 <<'HELP'
 or look it up first:
 
     gh variable list
@@ -185,14 +207,17 @@ manifest_path, site_path, src = (pathlib.Path(a) for a in sys.argv[1:4])
 style = sys.argv[4]
 site_label = site_path.name
 problems = []
+# The Basics is keyed by topic slug; the two per-document styles by doc_id.
+KEY = "slug" if style == "basics" else "doc_id"
 
 man_list = json.loads(manifest_path.read_text())
-site_list = json.loads(site_path.read_text())["episodes"]
+site_json = json.loads(site_path.read_text())
+site_list = site_json["episodes"]
 
 def index(entries, label):
     out = {}
     for e in entries:
-        d = e.get("doc_id")
+        d = e.get(KEY)
         if d in out:
             problems.append(f"{label} lists doc_id {d!r} more than once")
         out[d] = e
@@ -232,6 +257,22 @@ for d, s in site.items():
                     problems.append(f"HASH {d}: {a} names {m_.group(2)} but the local file hashes to {h}")
         if s.get("guid") != f"learn-ice-hockey:principles:{d}":
             problems.append(f"GUID {d}: {s.get('guid')!r} is not learn-ice-hockey:principles:{d}")
+    # ⚠️ The Basics: under /audio/principles/basics/, its OWN slug, the content hash of
+    # the local file, the permanent guid, and a planned topic.
+    if style == "basics" and isinstance(a, str):
+        m_ = re.fullmatch(r"/audio/principles/basics/([a-z0-9]+(?:-[a-z0-9]+)*)-([0-9a-f]{8})\.m4a", a)
+        if not m_ or m_.group(1) != d:
+            problems.append(f"{site_label} {d}: audio {a!r} is not /audio/principles/basics/{d}-<sha8>.m4a")
+        else:
+            f = src / (man.get(d, {}).get("file") or "")
+            if f.is_file():
+                h = hashlib.sha256(f.read_bytes()).hexdigest()[:8]
+                if h != m_.group(2):
+                    problems.append(f"HASH {d}: {a} names {m_.group(2)} but the local file hashes to {h}")
+        if s.get("guid") != f"learn-ice-hockey:core:{d}":
+            problems.append(f"GUID {d}: {s.get('guid')!r} is not learn-ice-hockey:core:{d}")
+        if d not in {t.get("slug") for t in site_json.get("planned", [])}:
+            problems.append(f"{site_label} {d}: not a planned topic")
     # ⚠️ Conversation (since 17 Oct 2026): the same content-hash rule, at
     # /audio/<doc_id>-<sha8>.m4a. An UNHASHED path is refused: uploading new bytes to an
     # old key is exactly what the one-year `immutable` edge cache turns into stale audio.
@@ -246,6 +287,22 @@ for d, s in site.items():
                 h = hashlib.sha256(f.read_bytes()).hexdigest()[:8]
                 if h != m_.group(2):
                     problems.append(f"HASH {d}: {a} names {m_.group(2)} but the local file hashes to {h}")
+
+# ⚠️ The Basics: no guid or path may already belong to a per-document episode.
+if style == "basics":
+    taken = {}
+    for other in ("podcast.json", "podcast-principles.json"):
+        p_ = site_path.parent / other
+        if p_.is_file():
+            for e in json.loads(p_.read_text()).get("episodes", []):
+                g = e.get("guid") or (f"learn-ice-hockey:{e['doc_id']}" if other == "podcast.json" else None)
+                for k in (g, e.get("audio")):
+                    if k:
+                        taken[k] = f"{other} {e['doc_id']}"
+    for d, s in site.items():
+        for k in (s.get("guid"), s.get("audio")):
+            if k and k in taken:
+                problems.append(f"COLLISION {d}: {k} is already used by {taken[k]}")
 
 for d in sorted(set(man) & set(site)):
     m, s = man[d], site[d]
@@ -265,7 +322,7 @@ for d in sorted(set(man) & set(site)):
 
 # The plan: the feed's order, the feed's path, the manifest's local file.
 for s in site_list:
-    d = s.get("doc_id")
+    d = s.get(KEY)
     m = man.get(d)
     if not isinstance(s.get("audio"), str):
         continue
@@ -282,12 +339,12 @@ if problems:
     for p in problems:
         print(f"      {p}", file=sys.stderr)
     print(f"    {len(problems)} problem(s). Re-run scripts/build_podcast_audio.py"
-          f"{' --style principles' if style == 'principles' else ''} (it writes "
+          f"{' --style ' + style if style != 'conversation' else ''} (it writes "
           f"`audio` into both files), then commit and deploy site/src/data/{site_label}.",
           file=sys.stderr)
     sys.exit(3)
 print(f"{src.name}/manifest.json, {site_label} and the local encodes agree: {len(site)} episodes, "
-      "paths and bytes" + (", content hashes and guids" if style == "principles" else ""),
+      "paths and bytes" + (", content hashes and guids" if style in ("principles", "basics") else ""),
       file=sys.stderr)
 PY
 CHECK=$?
@@ -318,8 +375,8 @@ fi
 # `scripts/build_podcast_cover.py` writes and `site/src/pages/feed/podcast.xml.ts`
 # reads. ⚠️ All three derive from that one file; keep it that way.
 COVER_KEY=""
-if [ "$STYLE" = principles ]; then
-  : # ⚠️ The cover belongs to the Conversation run. A principles run uploads episodes only.
+if [ "$STYLE" = principles ] || [ "$STYLE" = basics ]; then
+  : # ⚠️ The cover belongs to the Conversation run. These runs upload episodes only.
 elif [ -f "$COVER" ]; then
   COVER_NAME="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["file"])' "$COVER_DATA")"
   # ⚠️ Refuse if the tracked name is not the hash of the file about to be uploaded —
@@ -398,6 +455,9 @@ echo "authenticated as: ${CALLER}"
 while IFS=$'\t' read -r local key bytes; do
   [ "$local" = "-" ] && { echo "internal error: unplanned entry $key reached --go" >&2; exit 3; }
   case "$STYLE:$key" in
+    basics:audio/principles/basics/*) ;;
+    basics:*) echo "internal error: basics run planned $key, outside audio/principles/basics/" >&2; exit 3 ;;
+    principles:audio/principles/basics/*) echo "internal error: principles run planned $key, inside audio/principles/basics/" >&2; exit 3 ;;
     principles:audio/principles/*) ;;
     principles:*) echo "internal error: principles run planned $key, outside audio/principles/" >&2; exit 3 ;;
     conversation:audio/principles/*) echo "internal error: conversation run planned $key, inside audio/principles/" >&2; exit 3 ;;
@@ -408,6 +468,13 @@ while IFS=$'\t' read -r local key bytes; do
   if [ "$have" = "$bytes" ]; then
     echo "already in bucket, skipped: $key"
     continue
+  fi
+  # ⚠️ The Basics NEVER overwrites. A content-hashed key that exists at a different length
+  #    means something is wrong with the bucket or the hash; stop rather than replace bytes
+  #    behind an `immutable` URL. (head-object prints nothing, or "None", for a missing key.)
+  if [ "$STYLE" = basics ] && [ -n "$have" ] && [ "$have" != "None" ]; then
+    echo "⚠️  REFUSING: $key already exists in the bucket at $have bytes, not $bytes. Never overwritten; stopping." >&2
+    exit 3
   fi
   aws s3 cp "$local" "s3://${S3_BUCKET}/${key}" \
     --content-type "audio/x-m4a" \

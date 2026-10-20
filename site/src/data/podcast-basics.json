@@ -1,0 +1,19 @@
+{
+  "note": "The Basics: short TOPIC episodes (ElevenLabs, one voice), suitable for newer players or younger players (owner, 20 October 2026; project/podcast_principles_series_plan.md). Unlike podcast.json and podcast-principles.json this is NOT per document: `planned` fixes the topics, in series order, each with a slug, a working title and the one to three corpus documents (`sources`) it draws on. `episodes` holds only the published ones and is written by scripts/build_podcast_audio.py --style basics --slug <slug>. Each episode carries an explicit guid learn-ice-hockey:core:<slug>, written when it is first published and never changed. Audio lives at /audio/principles/basics/<slug>-<sha8>.m4a. Each episode is listed on /the-basics/ and linked from its source pages as soon as it exists, but the season stays OUT of the podcast feed until every planned topic is published.",
+  "planned": [
+    { "slug": "how-a-game-works", "title": "How a game works", "sources": ["getting-started/getting_started", "foundation/rink_map", "foundation/rules_primer"] },
+    { "slug": "gear-and-staying-safe", "title": "Your gear and staying safe", "sources": ["off-the-ice/equipment", "technique/body_contact_and_battles"] },
+    { "slug": "skating", "title": "Skating", "sources": ["technique/skating"] },
+    { "slug": "carrying-the-puck", "title": "Carrying the puck", "sources": ["technique/puck_handling"] },
+    { "slug": "passing-and-catching", "title": "Passing and catching the puck", "sources": ["technique/passing_and_receiving", "hockey-iq/scanning_and_anticipation"] },
+    { "slug": "shooting", "title": "Shooting, and going to the net", "sources": ["technique/shooting"] },
+    { "slug": "playing-without-the-puck", "title": "Playing without the puck", "sources": ["hockey-iq/playing_without_the_puck", "hockey-iq/puck_support_and_spacing"] },
+    { "slug": "defending", "title": "Defending", "sources": ["foundation/core_principles", "systems/defending_the_rush"] },
+    { "slug": "playing-centre", "title": "Playing centre", "sources": ["positions/center"] },
+    { "slug": "playing-wing", "title": "Playing wing", "sources": ["positions/winger"] },
+    { "slug": "playing-defence", "title": "Playing defence", "sources": ["positions/defender"] },
+    { "slug": "playing-goal", "title": "Playing goal", "sources": ["positions/goaltender"] },
+    { "slug": "teamwork", "title": "Talking, teamwork and bouncing back", "sources": ["foundation/on_ice_communication", "off-the-ice/team_play_and_culture", "off-the-ice/mental_game"] }
+  ],
+  "episodes": []
+}

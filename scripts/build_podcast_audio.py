@@ -155,6 +155,26 @@ an existing entry whose document has no publishable master is carried forward un
     ⚠️ The feed holds every Playing principles episode back until all documents have one
        (`principlesInFeed()` in site/src/lib/podcast-feed.ts, enforced again by
        site/scripts/check-podcast-guids.mjs). This script does not decide that.
+
+--style basics  — THE BASICS (project/podcast_principles_series_plan.md, owner 20 Oct 2026)
+    About thirteen short TOPIC episodes for newer or younger players. Keyed by TOPIC SLUG,
+    not by document; each draws on one to three documents (`sources`). The topics are
+    fixed in advance in the `planned` list of `site/src/data/podcast-basics.json`.
+      input    `podcast_style_b/basics/<slug>.wav`.
+      output   `podcasts_principles/basics/<slug>-<sha8>.m4a` (same 64k mono AAC settings),
+               and `podcasts_principles/basics/manifest.json`.
+      site     `site/src/data/podcast-basics.json` `episodes` — served path
+               `/audio/principles/basics/<slug>-<sha8>.m4a`, guid `learn-ice-hockey:core:<slug>`
+               written on FIRST publish and copied verbatim forever after.
+    ⚠️ OPT-IN BY NAME: `--slug` is required and must be a PLANNED slug. REFUSED (exit 2,
+       nothing written): an unplanned slug, a missing WAV, a `blocked` status in
+       `.podcast_queue/state-basics.json`, a malformed plan, or a guid or audio path that
+       is already used by ANY collection (Conversation, Playing principles or Basics).
+    ⚠️ BACKUP: a real run copies the WAV (unless a same-size, same-mtime copy is already in
+       a snapshot) and the JSON it is about to rewrite into a new folder under BACKUP_ROOT.
+    ⚠️ The feed holds The Basics back until EVERY planned topic is published
+       (`basicsInFeed()` in site/src/lib/podcast-feed.ts). This script does not decide that.
+    ⚠️ ORDER: encode -> `upload_podcast_audio.sh --style basics --go` -> commit the JSON -> push.
 """
 
 from __future__ import annotations
@@ -630,6 +650,253 @@ def cmd_principles(args) -> int:
     return 0
 
 
+# ---- --style basics ------------------------------------------------------------------
+# THE BASICS: about thirteen short TOPIC episodes for newer or younger players
+# (project/podcast_principles_series_plan.md, owner decisions 20 Oct 2026). Unlike the two
+# per-document formats, an episode here is keyed by a TOPIC SLUG and draws on one to three
+# documents (`sources`). The set of topics is fixed in advance in the `planned` list of
+# site/src/data/podcast-basics.json; this script never adds a topic, it only publishes one.
+BASICS_WAVS = STYLE_B / "basics"
+BASICS_OUT = PRINCIPLES_OUT / "basics"
+BASICS_DATA = REPO / "site" / "src" / "data" / "podcast-basics.json"
+BASICS_QUEUE_STATE = REPO / ".podcast_queue" / "state-basics.json"
+BASICS_LABEL = "The Basics"
+BASICS_GUID_PREFIX = "learn-ice-hockey:core:"
+BASICS_PAGE = "the-basics"
+SLUG_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
+
+
+def basics_audio_path(slug: str, sha8: str) -> str:
+    """The served path: /audio/principles/basics/<slug>-<sha8>.m4a. Under the Playing
+    principles prefix so the bucket keeps one ElevenLabs area, but in its own `basics/`
+    folder, which no document id can produce (no structure.json section is `basics`;
+    site/scripts/check-podcast-guids.mjs asserts it)."""
+    return f"/audio/principles/basics/{slug}-{sha8}.m4a"
+
+
+def basics_tags(slug: str, title: str, n: int, total: int) -> list[str]:
+    """ffmpeg -metadata for a Basics episode. There is no document to read a reviewed
+    description from, so the description is the series line the owner approved on
+    20 Oct 2026 ("suitable for newer players or younger players") and nothing more."""
+    url = f"{SITE}/{BASICS_PAGE}/"
+    return [
+        "-metadata", f"title={title} — {BASICS_LABEL}",
+        "-metadata", f"artist={AUTHOR}",
+        "-metadata", f"album_artist={ALBUM_ARTIST}",
+        "-metadata", f"album={BASICS_LABEL}",
+        "-metadata", f"track={n}/{total}",
+        "-metadata", f"genre={GENRE}",
+        "-metadata", f"comment={url}",
+        "-metadata", f"description={title}. From {BASICS_LABEL}, suitable for newer players "
+                     f"or younger players. More at {url}",
+        "-metadata", f"copyright={AUTHOR}",
+    ]
+
+
+def cmd_basics(args) -> int:
+    """Encode named Basics topics. Every refusal exits 2 BEFORE anything is written."""
+    if not args.slug:
+        print("⚠️  --style basics encodes ONLY the topics named with --slug.\n"
+              "    A WAV in podcast_style_b/basics/ is not an approved episode; name each one "
+              "you mean to publish.", file=sys.stderr)
+        return 2
+    if not BASICS_DATA.is_file():
+        print(f"⚠️  REFUSED — {BASICS_DATA.relative_to(REPO)} does not exist; nothing written.",
+              file=sys.stderr)
+        return 2
+
+    site = json.loads(BASICS_DATA.read_text())
+    planned = site.get("planned") or []
+    order = reading_order()
+    known_docs = {r[0] for r in order}
+    plan_index = {p.get("slug"): i for i, p in enumerate(planned)}
+    existing = {e["slug"]: e for e in site.get("episodes", [])}
+    problems: list[str] = []
+
+    # The plan itself must be sound before any one topic is trusted.
+    if len(plan_index) != len(planned):
+        problems.append("podcast-basics.json `planned` lists a slug more than once")
+    for p in planned:
+        s = p.get("slug")
+        if not isinstance(s, str) or not SLUG_RE.fullmatch(s):
+            problems.append(f"planned slug {s!r} is not lower-case ASCII words joined by '-'")
+        if not (p.get("title") or "").strip():
+            problems.append(f"planned {s!r} has no title")
+        srcs = p.get("sources") or []
+        if not 1 <= len(srcs) <= 3:
+            problems.append(f"planned {s!r}: sources must name 1 to 3 documents, has {len(srcs)}")
+        for d in srcs:
+            if d not in known_docs:
+                problems.append(f"planned {s!r}: source {d!r} is not a doc_id in structure.json")
+    for s in existing:
+        if s not in plan_index:
+            problems.append(f"published episode {s!r} is not in `planned`")
+
+    wanted: list[tuple[str, pathlib.Path]] = []
+    for slug in args.slug:
+        if slug in (w for w, _ in wanted):
+            continue
+        if slug not in plan_index:
+            problems.append(f"--slug {slug!r}: not a planned topic in {BASICS_DATA.name} "
+                            f"(planned: {', '.join(plan_index) or 'none'})")
+            continue
+        wav = BASICS_WAVS / f"{slug}.wav"
+        if not wav.is_file():
+            problems.append(f"{slug}: no master at {wav.relative_to(REPO)}")
+            continue
+        wanted.append((slug, wav))
+
+    qstate = {}
+    if BASICS_QUEUE_STATE.exists():
+        qstate = {k: v.get("status", "") for k, v in
+                  json.loads(BASICS_QUEUE_STATE.read_text()).get("items", {}).items()}
+    for slug, _wav in wanted:
+        if qstate.get(slug) == "blocked":
+            problems.append(f"{slug}: queue status is 'blocked' in "
+                            f"{BASICS_QUEUE_STATE.relative_to(REPO)} (rejected episode)")
+
+    # ⚠️ GUIDS AND PATHS MUST BE UNIQUE ACROSS EVERY COLLECTION, not only within this one.
+    #    A Basics guid that equalled a live Conversation or Playing principles guid would make
+    #    every podcast client treat two episodes as one.
+    taken: dict[str, str] = {}
+    for label, path in (("podcast.json", SITE_DATA), ("podcast-principles.json", PRINCIPLES_DATA)):
+        if path.exists():
+            for e in json.loads(path.read_text()).get("episodes", []):
+                g = e.get("guid") or (f"learn-ice-hockey:{e['doc_id']}" if label == "podcast.json" else None)
+                if g:
+                    taken[g] = f"{label} {e['doc_id']}"
+                if e.get("audio"):
+                    taken[e["audio"]] = f"{label} {e['doc_id']}"
+    for s, e in existing.items():
+        for key in (e.get("guid"), e.get("audio")):
+            if not key:
+                continue
+            if key in taken:
+                problems.append(f"COLLISION: basics {s!r} {key!r} is already used by {taken[key]}")
+            taken[key] = f"podcast-basics.json {s}"
+    for slug, _wav in wanted:
+        guid = (existing.get(slug) or {}).get("guid") or f"{BASICS_GUID_PREFIX}{slug}"
+        owner = taken.get(guid)
+        if owner and owner != f"podcast-basics.json {slug}":
+            problems.append(f"COLLISION: guid {guid!r} for {slug} is already used by {owner}")
+
+    if problems:
+        print("⚠️⚠️  REFUSED — nothing written:", file=sys.stderr)
+        for p in problems:
+            print(f"      {p}", file=sys.stderr)
+        return 2
+
+    man_path = BASICS_OUT / "manifest.json"
+    old_man = {e["slug"]: e for e in json.loads(man_path.read_text())} if man_path.exists() else {}
+    total = len(planned)
+    run_backup = BACKUP_ROOT / f"{stamp()}-before-basics"
+
+    print(f"build_podcast_audio --style basics: {len(wanted)} topic(s)"
+          f"{'  — DRY RUN, nothing will be written' if args.dry_run else ''}")
+
+    new_entries: dict[str, dict] = {}
+    new_man: dict[str, dict] = {}
+    for slug, wav in wanted:
+        n = plan_index[slug] + 1
+        topic = planned[n - 1]
+        title_tag = f"{topic['title']} — {BASICS_LABEL}"
+        prev_m = old_man.get(slug) or {}
+        prev_e = existing.get(slug)
+        st = wav.stat()
+        local = BASICS_OUT / prev_m["file"] if prev_m.get("file") else None
+        current = (
+            not args.force and prev_e is not None and local is not None and local.is_file()
+            and local.stat().st_size == prev_m.get("bytes") == prev_e.get("bytes")
+            and prev_e.get("audio") == prev_m.get("audio")
+            and prev_m.get("title_tag") == title_tag and prev_m.get("track") == f"{n}/{total}"
+            and (
+                (st.st_size == prev_m.get("master_size") and int(st.st_mtime) == prev_m.get("master_mtime"))
+                or (st.st_size == prev_m.get("master_size") and sha256_of(wav) == prev_m.get("master_sha256"))
+            )
+        )
+        rel_wav = pathlib.Path("basics") / wav.name
+        have_backup = backed_up(rel_wav, "podcast_style_b", wav)
+        print(f"  {'skip' if current else 'encode':6s} [{n:2d}/{total}] {slug:28s} <- {wav.relative_to(REPO)}")
+        print(f"         title tag: {title_tag}")
+        if current:
+            continue
+        print(f"         master backup: "
+              + (f"already in {have_backup.parent.parent.parent.name}" if have_backup
+                 else f"{'WOULD COPY' if args.dry_run else 'copying'} to "
+                      f"{run_backup}/podcast_style_b/{rel_wav}"))
+        if args.dry_run:
+            print(f"         -> podcasts_principles/basics/{slug}-<sha8>.m4a, "
+                  f"audio /audio/principles/basics/{slug}-<sha8>.m4a")
+            continue
+
+        # ⚠️ The WAV is the only lossless copy of a paid synthesis; copy it out first.
+        assert_outside_repo(BACKUP_ROOT)
+        if have_backup is None:
+            copy_verified(wav, run_backup / "podcast_style_b" / rel_wav)
+        tmp = BASICS_OUT / f"{slug}.partial.m4a"
+        tmp.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            ["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-map", "0:a:0",
+             "-c:a", "aac", "-b:a", BITRATE, "-ac", CHANNELS, "-ar", SAMPLE_RATE,
+             "-map_metadata", "-1",
+             *basics_tags(slug, topic["title"], n, total),
+             "-movflags", "+faststart", str(tmp)],
+            check=True)
+        info = probe(tmp)
+        dur = float(info.get("duration", 0) or 0)
+        if dur <= 0:
+            tmp.unlink(missing_ok=True)
+            print(f"⚠️  encode produced no playable audio for {slug}; stopping", file=sys.stderr)
+            return 2
+        sha8 = sha256_of(tmp)[:8]
+        dest = BASICS_OUT / f"{slug}-{sha8}.m4a"
+        tmp.replace(dest)
+        audio = basics_audio_path(slug, sha8)
+        if local is not None and local.is_file() and local != dest:
+            print(f"         ℹ️  supersedes podcasts_principles/basics/{prev_m['file']} (left in "
+                  f"place; anything already uploaded under its key stays in the bucket)")
+        # ⚠️ THE GUID IS WRITTEN ONCE and copied verbatim forever after.
+        guid = (prev_e or {}).get("guid") or f"{BASICS_GUID_PREFIX}{slug}"
+        new_entries[slug] = {
+            "slug": slug, "title": topic["title"], "sources": list(topic["sources"]),
+            "bytes": dest.stat().st_size, "duration_s": round(dur, 1),
+            "audio": audio, "guid": guid,
+        }
+        new_man[slug] = {
+            "slug": slug, "title": topic["title"], "title_tag": title_tag,
+            "track": f"{n}/{total}", "file": dest.name, "bytes": dest.stat().st_size,
+            "duration_s": round(dur, 1), "bitrate": int(info.get("bit_rate", 0)),
+            "audio": audio, "url": f"{SITE}/{BASICS_PAGE}/",
+            "master": str(wav.relative_to(REPO)), "master_size": st.st_size,
+            "master_mtime": int(st.st_mtime), "master_sha256": sha256_of(wav),
+        }
+        print(f"         -> {dest.relative_to(REPO)}  {dest.stat().st_size/1e6:.1f} MB, "
+              f"{dur/60:.1f} min, audio {audio}")
+
+    if args.dry_run:
+        print("\nDRY RUN: nothing written.")
+        return 0
+    if not new_entries:
+        print("\nNothing to encode; podcast-basics.json and manifest.json untouched.")
+        return 0
+
+    eps = {**existing, **new_entries}
+    site["episodes"] = sorted(eps.values(), key=lambda e: plan_index[e["slug"]])
+    man = {**old_man, **new_man}
+    BASICS_OUT.mkdir(parents=True, exist_ok=True)
+    for f in (man_path, BASICS_DATA):
+        if f.exists():
+            copy_verified(f, run_backup / "json" / f.name)
+    write_json_atomic(man_path, sorted(man.values(), key=lambda e: plan_index.get(e["slug"], 10**6)))
+    write_json_atomic(BASICS_DATA, site)   # `note` and `planned` kept verbatim
+    print(f"\nsite data: {BASICS_DATA.relative_to(REPO)} ({len(site['episodes'])}/{total} episode(s))")
+    print(f"manifest:  {man_path.relative_to(REPO)}")
+    print(f"backup:    {run_backup}")
+    print("NEXT: scripts/upload_podcast_audio.sh --style basics   (dry run), then --go,\n"
+          "      THEN commit site/src/data/podcast-basics.json. Never commit it first.")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description="Encode accepted podcast masters for the web and regenerate the feed's "
@@ -659,17 +926,35 @@ def main() -> int:
                     help=f"snapshot podcasts/ and podcasts_web/ into a new timestamped folder under "
                          f"{BACKUP_ROOT} (incremental; with --dry-run, lists only). Combine with "
                          f"nothing but --dry-run.")
-    ap.add_argument("--style", choices=("conversation", "principles"), default="conversation",
+    ap.add_argument("--style", choices=("conversation", "principles", "basics"), default="conversation",
                     help="conversation (default): NotebookLM masters in podcasts/. principles: "
                          "Playing principles WAVs in podcast_style_b/, encoded to "
                          "podcasts_principles/ and site/src/data/podcast-principles.json. "
+                         "basics: The Basics topic WAVs in podcast_style_b/basics/, encoded to "
+                         "podcasts_principles/basics/ and site/src/data/podcast-basics.json. "
                          "See the docstring.")
     ap.add_argument("--doc", action="append", default=[], metavar="STEM_OR_DOC_ID",
                     help="--style principles only, REQUIRED: a document to encode (repeatable). "
                          "Nothing is encoded that is not named.")
+    ap.add_argument("--slug", action="append", default=[], metavar="SLUG",
+                    help="--style basics only, REQUIRED: a planned topic slug to encode "
+                         "(repeatable). Nothing is encoded that is not named.")
     args = ap.parse_args()
     sys.stdout.reconfigure(line_buffering=True)  # keep stdout and the stderr refusals in order
 
+    if args.slug and args.style != "basics":
+        print("⚠️  --slug is for --style basics only", file=sys.stderr)
+        return 2
+    if args.style == "basics":
+        others = [n for n, v in (("--limit", args.limit), ("--retag", args.retag),
+                                 ("--exclude", args.exclude), ("--backup", args.backup),
+                                 ("--move-audio-path", args.move_audio_path),
+                                 ("--renumber", args.renumber), ("--doc", args.doc)) if v]
+        if others:
+            print(f"⚠️  --style basics takes only --slug, --dry-run and --force; not {others}",
+                  file=sys.stderr)
+            return 2
+        return cmd_basics(args)
     if args.style == "principles":
         others = [n for n, v in (("--limit", args.limit), ("--retag", args.retag),
                                  ("--exclude", args.exclude), ("--backup", args.backup),

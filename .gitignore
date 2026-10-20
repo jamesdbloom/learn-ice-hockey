@@ -146,3 +146,5 @@ podcasts/
 
 # synthesize_style_b.py chunk caches (the audio is *.wav, already ignored; this covers concat.txt).
 podcast_style_b/*.chunks/
+# ...and in subfolders: podcast_style_b/basics/ (The Basics) and podcast_style_b/pilots/.
+podcast_style_b/**/*.chunks/

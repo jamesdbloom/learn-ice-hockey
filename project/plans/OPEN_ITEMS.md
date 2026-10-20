@@ -503,6 +503,12 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - special_teams :775 omits PWHL 65.2(vi);
   - the OZP trailer lacks USAH 614(c) and HC clause v;
   - md_to_speech clause numerals.
+- **The Basics publishing support built 20 Oct** (bs1; code review bsR found no BLOCK, and its fixes were applied). Details:
+  - `podcast-basics.json` lists the 13 planned topics; `/the-basics/` is live but empty and unlinked.
+  - `--style basics` is supported in both build and upload.
+  - The season gate leaves the live feed byte-identical until all 13 exist. The 39 principles guids are frozen.
+  - **Still to do:** a site-reviewer pass on /the-basics/ and the source-page link; owner approval of the 13 titles; add the page to the nav and sitemap at launch; make the gate sticky at launch (freeze the Basics guids, keep planned append-only).
+  - **Deferred:** downloads and m3u; `podcast_queue --style basics`.
 - **Readability programme complete (20 Oct):** all 39 pages passed (W4/W5 record w4_w5_readability_2026-10-20.md).
 - **SW sweep committed (20 Oct; record sw_cross_page_sweep_2026-10-20.md)** for 18 pages. goaltender is held back for its own commit (s1R5 CLEAR). Optional goaltender minors: :1098 add "with an attacker on you"; :643 double negative; :388 "soft stick … cover it" has no crease condition; :1622 omits USAH 614(c)(4).
 - **Save-then-cover siblings:** IIHF Situation 63.1 (a freeze must come "straight off" the save) and HC 10.2(a) (a goalkeeper freezing outside the crease) are missing outside goaltender. Done for the 9 FZ pages; only on_ice_communication is still open (s1R).

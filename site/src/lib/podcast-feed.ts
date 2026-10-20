@@ -12,13 +12,44 @@
  *      same — `site/scripts/check-podcast-guids.mjs` fails the build otherwise.
  *   4. PLAYING PRINCIPLES GOES INTO THE FEED ONLY WHEN ALL OF THEM EXIST. See
  *      `principlesInFeed()` below.
+ *
+ * AND, 20 October 2026 (project/podcast_principles_series_plan.md):
+ *   5. THE BASICS IS ITS OWN SEASON, APPENDED after every per-document season. No live
+ *      episode is renumbered, retitled or re-dated — the per-document dates no longer
+ *      depend on how many formats exist (PER_DOC_SLOTS below). Same gate as (4): the
+ *      season enters the feed only when every planned topic is published.
  */
 
-import { FORMATS, DOCUMENT_COUNT, getFormat, guidFor, position, type Episode, type Format } from '../data/podcast';
+import {
+  FORMATS,
+  DOCUMENT_COUNT,
+  BASICS_PLANNED,
+  BASICS_EPISODES,
+  BASICS_LABEL,
+  basicsTitle,
+  getFormat,
+  guidFor,
+  position,
+  type BasicsEpisode,
+  type Episode,
+  type Format,
+} from '../data/podcast';
+import structure from '../data/structure.json';
+
+/** The bytes, duration and served path a feed item's <enclosure> declares. */
+interface Media {
+  bytes: number;
+  duration_s: number;
+  audio: string;
+}
 
 export interface FeedItem {
-  format: Format;
-  episode: Episode;
+  /** A per-document episode: its format and episode. Absent for a Basics item. */
+  format?: Format;
+  episode?: Episode;
+  /** A Basics topic episode. Absent for a per-document item. */
+  basics?: BasicsEpisode;
+  media: Media;
   guid: string;
   /** `<Section> <n> · <Document> — <Format>` */
   title: string;
@@ -47,6 +78,27 @@ export function principlesInFeed(): boolean {
 }
 
 /**
+ * ⚠️ THE BASICS GATE, the same rule for the same reason: the season enters the feed only
+ * when EVERY planned topic is published. Until then the feed is byte-identical to one
+ * with no Basics at all; each episode still plays on /the-basics/ as soon as it exists.
+ * Gated on the PLAN, so adding a planned topic closes the gate again.
+ *
+ * ⚠️ NOT YET STICKY (code review, 20 Oct 2026). Once the season is live, removing or
+ * re-slugging a planned topic, or adding one, would pull or hold back episodes
+ * subscribers already have. At launch: freeze the 13 Basics guids in
+ * site/scripts/check-podcast-guids.mjs (as LIVE_PRINCIPLES_GUIDS is) and make `planned`
+ * append-only, with appended topics joining the feed as published.
+ */
+export function basicsInFeed(): boolean {
+  if (BASICS_PLANNED.length === 0) return false;
+  const published = new Set(BASICS_EPISODES.map((e) => e.slug));
+  return BASICS_PLANNED.every((t) => published.has(t.slug));
+}
+
+/** The Basics season number: one after the last structure.json section. */
+export const BASICS_SEASON = structure.layers.length + 1;
+
+/**
  * ⚠️ pubDate IS SYNTHETIC, FIXED, AND ENCODES THE ORDER. NEVER DERIVE IT FROM THE BUILD.
  *
  * Spotify requires a pubDate (cardinality 1..1); several apps (Overcast, Pocket Casts)
@@ -73,8 +125,32 @@ const DAY_MS = 86_400_000;
 /** The constant every episode carried before the renumbering. Upper bound, exclusive. */
 const PREVIOUS_SHARED_DATE_MS = Date.UTC(2026, 8, 8, 0, 0, 0);
 
+/**
+ * ⚠️ FIXED AT 2, AND IT MUST NEVER BECOME `FORMATS.length` AGAIN. Until 20 October 2026
+ * the formula multiplied by `FORMATS.length`, so adding ANY entry to FORMATS would have
+ * re-dated all 78 live items (and pushed the last past 8 September, failing
+ * assertDates). The per-document slots are Conversation (0) and Playing principles (1);
+ * a third per-document format needs its own decision about dates, not a silent re-date.
+ */
+const PER_DOC_SLOTS = 2;
+
 function pubDateFor(globalIndex: number, formatIndex: number): Date {
-  return new Date(BASE_UTC_MS + (globalIndex * FORMATS.length + formatIndex) * DAY_MS);
+  return new Date(BASE_UTC_MS + (globalIndex * PER_DOC_SLOTS + formatIndex) * DAY_MS);
+}
+
+/**
+ * THE BASICS' DATES. Its own fixed run, after every per-document date: 18 August 2026
+ * at 12:00 UTC, then every 12 hours in series order. With 39 documents the last
+ * per-document date is 17 August, so the Basics season sorts after it in date order as
+ * well as in itunes:order, and 13 topics end on 24 August, well before the 8 September
+ * ceiling (room for 41 topics). Like every other date here it is synthetic and fixed —
+ * a function of the topic's planned position only, never of the build.
+ */
+const BASICS_BASE_UTC_MS = Date.UTC(2026, 7, 18, 12, 0, 0); // Tue 18 Aug 2026, 12:00 UTC
+const BASICS_STEP_MS = DAY_MS / 2;
+
+function basicsPubDateFor(index: number): Date {
+  return new Date(BASICS_BASE_UTC_MS + index * BASICS_STEP_MS);
 }
 
 /** RFC 822 with a numeric zone, as every existing pubDate in this feed was written. */
@@ -83,11 +159,30 @@ function rfc822(d: Date): string {
 }
 
 function assertDates(): void {
-  const latest = pubDateFor(DOCUMENT_COUNT - 1, FORMATS.length - 1).getTime();
+  if (FORMATS.length > PER_DOC_SLOTS) {
+    throw new Error(
+      `podcast-feed: ${FORMATS.length} per-document formats but PER_DOC_SLOTS is ${PER_DOC_SLOTS}. ` +
+        `Decide the new format's dates explicitly; raising PER_DOC_SLOTS re-dates every live episode.`,
+    );
+  }
+  const latest = pubDateFor(DOCUMENT_COUNT - 1, PER_DOC_SLOTS - 1).getTime();
   if (latest >= PREVIOUS_SHARED_DATE_MS) {
     throw new Error(
       `podcast-feed: the latest synthetic pubDate (${new Date(latest).toISOString()}) is not before ` +
         `8 Sep 2026. Move BASE_UTC_MS earlier — do NOT derive it from the build time.`,
+    );
+  }
+  if (latest >= BASICS_BASE_UTC_MS) {
+    throw new Error(
+      `podcast-feed: the latest per-document pubDate (${new Date(latest).toISOString()}) is not before ` +
+        `the first Basics date; the Basics season must date after every per-document episode.`,
+    );
+  }
+  const basicsLatest = basicsPubDateFor(Math.max(0, BASICS_PLANNED.length - 1)).getTime();
+  if (basicsLatest >= PREVIOUS_SHARED_DATE_MS) {
+    throw new Error(
+      `podcast-feed: the latest Basics pubDate (${new Date(basicsLatest).toISOString()}) is not before ` +
+        `8 Sep 2026. ${BASICS_PLANNED.length} planned topics do not fit 12 hours apart from 18 Aug.`,
     );
   }
 }
@@ -107,13 +202,14 @@ export function feedItems(): FeedItem[] {
   rows.sort((a, b) => a.pos.globalIndex - b.pos.globalIndex || a.formatIndex - b.formatIndex);
 
   const perSeason = new Map<number, number>();
-  return rows.map((r, i) => {
+  const docItems: FeedItem[] = rows.map((r, i) => {
     const n = (perSeason.get(r.pos.season) ?? 0) + 1;
     perSeason.set(r.pos.season, n);
     const name = `${r.episode.title} — ${r.format.label}`;
     return {
       format: r.format,
       episode: r.episode,
+      media: r.episode,
       guid: guidFor(r.format, r.episode),
       // When the section and the document share a name ("Getting Started"), the
       // prefix only repeats it, so the title is the plain name. Season and episode
@@ -126,4 +222,23 @@ export function feedItems(): FeedItem[] {
       pubDate: rfc822(pubDateFor(r.pos.globalIndex, r.formatIndex)),
     };
   });
+
+  if (!basicsInFeed()) return docItems;
+
+  // THE BASICS: one season after every per-document season, in planned order, numbered
+  // 1..N within it, continuing the global itunes:order. BASICS_EPISODES is already in
+  // planned order and, with the gate open, holds exactly one episode per planned topic.
+  const basicsItems: FeedItem[] = BASICS_EPISODES.map((ep, i) => ({
+    basics: ep,
+    media: ep,
+    guid: ep.guid,
+    // <title> "The Basics 10 · Playing wing"; <itunes:title> "Playing wing — The Basics".
+    title: `${BASICS_LABEL} ${i + 1} · ${ep.title}`,
+    itunesTitle: basicsTitle(ep),
+    season: BASICS_SEASON,
+    episodeNumber: i + 1,
+    order: docItems.length + i + 1,
+    pubDate: rfc822(basicsPubDateFor(i)),
+  }));
+  return [...docItems, ...basicsItems];
 }

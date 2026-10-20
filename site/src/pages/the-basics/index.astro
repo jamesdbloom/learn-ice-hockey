@@ -1,0 +1,81 @@
+---
+/*
+  /the-basics/ — the listing page for The Basics (owner, 20 October 2026;
+  project/podcast_principles_series_plan.md): short topic episodes, suitable for newer
+  players or younger players, in series order.
+
+  ⚠️ PUBLISHED EPISODES ONLY. The planned topics in podcast-basics.json are working
+  titles; nothing here lists a topic that has no episode, so the page never offers a
+  player that cannot play. Each episode links to the documents it draws on, which is
+  where a listener goes deeper — and those documents link back here (src/pages/[...slug].astro).
+
+  ⚠️ Who it is for is the owner's wording: "suitable for newer players or younger
+  players". Do not add parents to it; the owner removed them on 20 October 2026.
+
+  A plain <audio> per episode, not the sticky AudioPlayer: that component is one player
+  per document page with a format switch, and this page lists up to thirteen episodes.
+  `preload="none"` so opening the page downloads no audio. The <a> fallback keeps the
+  episode reachable with no <audio> support, exactly as AudioPlayer does.
+*/
+import Base from '../../layouts/Base.astro';
+import { getDoc } from '../../data/nav';
+import { BASICS_EPISODES, BASICS_LABEL, BASICS_PLANNED, basicsNumber, minutes } from '../../data/podcast';
+import { AUDIO_ENABLED } from '../../consts';
+
+const episodes = AUDIO_ENABLED ? BASICS_EPISODES : [];
+const complete = episodes.length === BASICS_PLANNED.length && episodes.length > 0;
+const description = 'Short podcast episodes on the core principles of ice hockey, suitable for newer players or younger players.';
+---
+
+<Base title={BASICS_LABEL} description={description} bare={true}>
+  <main class="main" id="main">
+    <article>
+      <p class="doc-eyebrow"><a href="/">All sections</a></p>
+      <h1 class="doc-title">{BASICS_LABEL}</h1>
+
+      <p class="hub-tagline">Short podcast episodes on the core principles of the game, suitable for newer players or younger players.</p>
+      <p class="hub-blurb">
+        Start here. Each episode covers a few things to master first, in plain words. When
+        you are ready to go deeper, every guide on this site has a longer Playing principles
+        episode and a Conversation episode.
+      </p>
+
+      <h2 class="hub-heading">
+        {episodes.length === 0
+          ? 'Episodes'
+          : complete
+            ? `All ${episodes.length} episodes, in order`
+            : `${episodes.length === 1 ? 'The first episode' : `The first ${episodes.length} episodes`}, in order`}
+      </h2>
+
+      {episodes.length === 0 ? (
+        <p class="hub-blurb">The first episodes are being made. They will appear here as each one is ready.</p>
+      ) : (
+        <ol class="basics-list">
+          {episodes.map((ep) => (
+            <li class="basics-ep" id={ep.slug} value={basicsNumber(ep.slug)}>
+              <h3 class="basics-ep__title">
+                {basicsNumber(ep.slug)}. {ep.title} <span class="basics-ep__meta">· {minutes(ep.duration_s)} min</span>
+              </h3>
+              <audio class="basics-ep__audio" controls preload="none" src={ep.audio}>
+                <a href={ep.audio}>Download {ep.title} (audio)</a>
+              </audio>
+              <p class="basics-ep__sources">
+                Go deeper:{' '}
+                {ep.sources.map((id, i) => {
+                  const d = getDoc(id);
+                  return (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={d.href}>{d.title}</a>
+                    </>
+                  );
+                })}
+              </p>
+            </li>
+          ))}
+        </ol>
+      )}
+    </article>
+  </main>
+</Base>

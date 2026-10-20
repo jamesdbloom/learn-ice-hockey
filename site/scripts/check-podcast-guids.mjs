@@ -21,6 +21,15 @@
  * (owner's decision, same date); after that it must carry exactly their explicit
  * guids. The count rule is restated here for the same reason.
  *
+ * The Basics (owner, 20 October 2026): a TOPIC collection, `podcast-basics.json`, keyed by
+ * slug. The feed must carry NONE of it until every PLANNED topic is published; after that
+ * it must carry exactly their `learn-ice-hockey:core:<slug>` guids as ONE extra season
+ * after every structure.json section, in planned order. The gate is restated here too.
+ *
+ * Across ALL THREE collections, and whatever the feed carries: every guid and every audio
+ * path is unique, and the 39 Playing principles guids frozen below are still in
+ * podcast-principles.json (a Detailed remake replaces an episode IN PLACE and keeps it).
+ *
  * Also checked, because they are what the renumbering changed: orders 1..N in
  * sequence, episode numbers sequential within each season, seasons non-decreasing,
  * pubDates strictly increasing, fixed, and before 8 September 2026 (the single date
@@ -57,6 +66,9 @@ const origin = new URL(siteMatch[1]).origin;
 const readJson = (p) => JSON.parse(readFileSync(resolve(root, p), 'utf8'));
 const conversation = readJson('src/data/podcast.json').episodes;
 const principles = readJson('src/data/podcast-principles.json').episodes ?? [];
+const basicsData = readJson('src/data/podcast-basics.json');
+const basicsPlanned = basicsData.planned ?? [];
+const basicsEpisodes = basicsData.episodes ?? [];
 const structure = readJson('src/data/structure.json');
 const docCount = structure.layers.reduce((n, l) => n + l.docs.length, 0);
 
@@ -112,6 +124,52 @@ const LIVE_CONVERSATION_GUIDS = [
   'learn-ice-hockey:foundation/language_and_glossary',
 ];
 
+// ⚠️ THE PLAYING PRINCIPLES GUIDS LIVE SUBSCRIBERS HOLD, FROZEN HERE (20 October 2026),
+// for the same reason as the list above. All 39 have been in the feed since the 16 Oct
+// gate opened. A Detailed remake replaces an episode IN PLACE (owner, 20 Oct 2026): new
+// bytes, new hashed audio path, SAME guid. Never remove one.
+const LIVE_PRINCIPLES_GUIDS = [
+  'learn-ice-hockey:principles:getting-started/getting_started',
+  'learn-ice-hockey:principles:foundation/core_principles',
+  'learn-ice-hockey:principles:reading-diagrams/reading_ice_hockey_diagrams',
+  'learn-ice-hockey:principles:foundation/rink_map',
+  'learn-ice-hockey:principles:foundation/language_and_glossary',
+  'learn-ice-hockey:principles:foundation/rules_primer',
+  'learn-ice-hockey:principles:foundation/uk_rules',
+  'learn-ice-hockey:principles:foundation/on_ice_communication',
+  'learn-ice-hockey:principles:positions/center',
+  'learn-ice-hockey:principles:positions/winger',
+  'learn-ice-hockey:principles:positions/defender',
+  'learn-ice-hockey:principles:positions/goaltender',
+  'learn-ice-hockey:principles:positions/switching_positions',
+  'learn-ice-hockey:principles:systems/breakouts',
+  'learn-ice-hockey:principles:systems/zone_entries',
+  'learn-ice-hockey:principles:systems/offensive_zone_play',
+  'learn-ice-hockey:principles:systems/forechecking_systems',
+  'learn-ice-hockey:principles:systems/neutral_zone_systems',
+  'learn-ice-hockey:principles:systems/defensive_zone_coverage',
+  'learn-ice-hockey:principles:systems/defending_the_rush',
+  'learn-ice-hockey:principles:systems/special_teams',
+  'learn-ice-hockey:principles:systems/faceoffs',
+  'learn-ice-hockey:principles:systems/game_management',
+  'learn-ice-hockey:principles:technique/skating',
+  'learn-ice-hockey:principles:technique/puck_handling',
+  'learn-ice-hockey:principles:technique/passing_and_receiving',
+  'learn-ice-hockey:principles:technique/shooting',
+  'learn-ice-hockey:principles:technique/body_contact_and_battles',
+  'learn-ice-hockey:principles:hockey-iq/puck_support_and_spacing',
+  'learn-ice-hockey:principles:hockey-iq/time_and_space',
+  'learn-ice-hockey:principles:hockey-iq/scanning_and_anticipation',
+  'learn-ice-hockey:principles:hockey-iq/risk_management',
+  'learn-ice-hockey:principles:hockey-iq/playing_without_the_puck',
+  'learn-ice-hockey:principles:off-the-ice/equipment',
+  'learn-ice-hockey:principles:off-the-ice/conditioning_and_recovery',
+  'learn-ice-hockey:principles:off-the-ice/practice_and_development',
+  'learn-ice-hockey:principles:off-the-ice/mental_game',
+  'learn-ice-hockey:principles:off-the-ice/team_play_and_culture',
+  'learn-ice-hockey:principles:off-the-ice/how_to_watch_hockey',
+];
+
 // ---- expected: the OLD logic, restated --------------------------------------
 const expected = new Map(); // guid -> enclosure url
 for (const ep of conversation) {
@@ -124,6 +182,60 @@ if (principlesExpectedInFeed) {
     else expected.set(ep.guid, `${origin}${ep.audio}`);
   }
 }
+// The Basics: in the feed only when every planned topic has an episode (restated, not
+// imported — see the header).
+const BASICS_PREFIX = 'learn-ice-hockey:core:';
+const basicsSlugs = new Set(basicsEpisodes.map((e) => e.slug));
+const basicsExpectedInFeed = basicsPlanned.length > 0 && basicsPlanned.every((t) => basicsSlugs.has(t.slug));
+const BASICS_SEASON = structure.layers.length + 1;
+const plannedIndex = new Map(basicsPlanned.map((t, i) => [t.slug, i]));
+for (const ep of basicsEpisodes) {
+  if (!plannedIndex.has(ep.slug)) fail(`basics episode ${ep.slug} is not in \`planned\``);
+  if (ep.guid !== `${BASICS_PREFIX}${ep.slug}`) fail(`basics episode ${ep.slug}: guid ${ep.guid} is not ${BASICS_PREFIX}${ep.slug}`);
+  if (!new RegExp(`^/audio/principles/basics/${ep.slug}-[0-9a-f]{8}\\.m4a$`).test(ep.audio ?? '')) {
+    fail(`basics episode ${ep.slug}: audio ${ep.audio} is not /audio/principles/basics/${ep.slug}-<sha8>.m4a`);
+  }
+}
+const expectedBasicsOrder = []; // guids, in planned order
+if (basicsExpectedInFeed) {
+  for (const t of basicsPlanned) {
+    const ep = basicsEpisodes.find((e) => e.slug === t.slug);
+    expected.set(ep.guid, `${origin}${ep.audio}`);
+    expectedBasicsOrder.push(ep.guid);
+  }
+}
+// No structure.json section may be called `basics`: a principles path
+// /audio/principles/<section>/<stem>-<sha8>.m4a would then share the Basics folder.
+if (structure.layers.some((l) => l.id === 'basics')) fail('a structure.json section is named "basics", which collides with /audio/principles/basics/');
+
+// ---- uniqueness across ALL collections, in the data (not only the feed) ------
+{
+  const guids = new Map();
+  const paths = new Map();
+  const claim = (m, key, who, what) => {
+    if (!key) return;
+    if (m.has(key)) fail(`${what} ${key} is used by both ${m.get(key)} and ${who}`);
+    else m.set(key, who);
+  };
+  for (const ep of conversation) {
+    claim(guids, ep.guid ?? `learn-ice-hockey:${ep.doc_id}`, `conversation ${ep.doc_id}`, 'guid');
+    claim(paths, ep.audio, `conversation ${ep.doc_id}`, 'audio path');
+  }
+  for (const ep of principles) {
+    claim(guids, ep.guid, `principles ${ep.doc_id}`, 'guid');
+    claim(paths, ep.audio, `principles ${ep.doc_id}`, 'audio path');
+    if ((ep.audio ?? '').startsWith('/audio/principles/basics/')) fail(`principles ${ep.doc_id}: audio ${ep.audio} is inside the Basics folder`);
+  }
+  for (const ep of basicsEpisodes) {
+    claim(guids, ep.guid, `basics ${ep.slug}`, 'guid');
+    claim(paths, ep.audio, `basics ${ep.slug}`, 'audio path');
+  }
+  const principlesGuids = new Set(principles.map((e) => e.guid));
+  for (const g of LIVE_PRINCIPLES_GUIDS) {
+    if (!principlesGuids.has(g)) fail(`LIVE principles guid ${g} is no longer in podcast-principles.json (frozen list; a Detailed remake keeps the guid)`);
+  }
+}
+
 if (!expected.has(PINNED_RINK_MAP)) {
   fail(`podcast.json no longer carries the pinned rink_map guid ${PINNED_RINK_MAP}`);
 }
@@ -167,13 +279,35 @@ for (const guid of actual.keys()) {
     fail(
       guid.startsWith('learn-ice-hockey:principles:') && !principlesExpectedInFeed
         ? `Playing principles episode ${guid} is in the feed before all ${docCount} exist (owner, 16 Oct 2026)`
-        : `UNEXPECTED guid ${guid}`,
+        : guid.startsWith(BASICS_PREFIX) && !basicsExpectedInFeed
+          ? `Basics episode ${guid} is in the feed before all ${basicsPlanned.length} planned topics exist (owner, 20 Oct 2026)`
+          : `UNEXPECTED guid ${guid}`,
     );
   }
 }
 if (!actual.has(PINNED_RINK_MAP)) fail(`pinned rink_map guid ${PINNED_RINK_MAP} is not in the feed`);
 for (const guid of LIVE_CONVERSATION_GUIDS) {
   if (!actual.has(guid)) fail(`LIVE guid ${guid} is not in the feed (frozen list; a guid may never change)`);
+}
+// Unconditional: all 39 have been live since the 16 Oct gate opened, so a missing one is
+// a dropped live episode whatever the count rule above now says.
+for (const guid of LIVE_PRINCIPLES_GUIDS) {
+  if (!actual.has(guid)) fail(`LIVE principles guid ${guid} is not in the feed (frozen list; a guid may never change)`);
+}
+// The Basics season: last, its own season number, in planned order.
+{
+  const basicsItems = items.filter((it) => it.guid?.startsWith(BASICS_PREFIX));
+  const got = basicsItems.map((it) => it.guid);
+  if (basicsExpectedInFeed && got.join('\n') !== expectedBasicsOrder.join('\n')) {
+    fail(`Basics items are not in planned order: ${got.join(', ')}`);
+  }
+  for (const it of basicsItems) {
+    if (it.season !== BASICS_SEASON) fail(`Basics item ${it.guid}: season ${it.season}, expected ${BASICS_SEASON}`);
+  }
+  const firstBasics = items.findIndex((it) => it.guid?.startsWith(BASICS_PREFIX));
+  if (firstBasics >= 0 && items.slice(firstBasics).some((it) => !it.guid?.startsWith(BASICS_PREFIX))) {
+    fail('a per-document item comes after the Basics season; the Basics must be appended last');
+  }
 }
 // Conversation enclosures must be content-hashed: new bytes under an old /audio/ key are
 // served stale from the edge for a year.
@@ -192,7 +326,8 @@ let lastDate = -Infinity;
 items.forEach((it, i) => {
   const where = `item ${i + 1} (${it.guid})`;
   if (it.order !== i + 1) fail(`${where}: itunes:order ${it.order}, expected ${i + 1}`);
-  if (!(it.season >= 1 && it.season <= structure.layers.length)) fail(`${where}: season ${it.season} out of range`);
+  const maxSeason = structure.layers.length + (basicsExpectedInFeed ? 1 : 0);
+  if (!(it.season >= 1 && it.season <= maxSeason)) fail(`${where}: season ${it.season} out of range`);
   if (it.season < lastSeason) fail(`${where}: season went backwards`);
   const expectedEpisode = it.season === lastSeason ? lastEpisode + 1 : 1;
   if (it.episode !== expectedEpisode) fail(`${where}: itunes:episode ${it.episode}, expected ${expectedEpisode}`);
@@ -212,7 +347,9 @@ const summary =
   `${items.length} items in ${seasons.size} seasons; ${expected.size} expected guids ` +
   `(${conversation.length} Conversation` +
   (principlesExpectedInFeed ? `, ${principles.length} Playing principles` : `; Playing principles held back, ${principles.length}/${docCount} exist`) +
-  `); ${LIVE_CONVERSATION_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_CONVERSATION_GUIDS.length} frozen live guids present; pinned rink_map guid ${actual.has(PINNED_RINK_MAP) ? 'present' : 'ABSENT'}`;
+  (basicsExpectedInFeed ? `, ${basicsEpisodes.length} Basics` : `; Basics held back, ${basicsEpisodes.length}/${basicsPlanned.length} planned exist`) +
+  `); ${LIVE_CONVERSATION_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_CONVERSATION_GUIDS.length} frozen live guids present; ` +
+  `${LIVE_PRINCIPLES_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_PRINCIPLES_GUIDS.length} frozen principles guids in feed; pinned rink_map guid ${actual.has(PINNED_RINK_MAP) ? 'present' : 'ABSENT'}`;
 
 if (failures.length) {
   console.error(`check-podcast-guids: FAIL — ${summary}`);

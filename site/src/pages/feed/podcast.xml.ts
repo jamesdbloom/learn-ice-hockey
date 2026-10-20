@@ -1,7 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getDoc } from '../../data/nav';
 import { SITE_TITLE, PODCAST_DESCRIPTION, SITE_AUTHOR, PODCAST_OWNER_EMAIL } from '../../consts';
-import { feedItems } from '../../lib/podcast-feed';
+import { feedItems, type FeedItem } from '../../lib/podcast-feed';
+import { BASICS_LABEL, BASICS_PATH } from '../../data/podcast';
 import coverData from '../../data/podcast-cover.json';
 
 /**
@@ -136,11 +137,42 @@ export const GET: APIRoute = ({ site }) => {
   // drift. ⚠️ DO NOT hardcode `cover.png` back into this line to "simplify" it.
   const cover = `${origin}/audio/${coverData.file}`;
 
+  /** The page an item links to, and its show notes. A per-document episode: its
+   *  document's own description and page, exactly as before. A Basics episode: the
+   *  series line the owner approved (20 Oct 2026), its source pages to go deeper, and
+   *  /the-basics/. */
+  const pageAndNotes = (it: FeedItem): { page: string; notes: string } => {
+    if (it.episode) {
+      const doc = getDoc(it.episode.doc_id);
+      const page = `${origin}${doc.href}`;
+      return {
+        page,
+        notes:
+          `<p>${html(doc.description)}</p>` +
+          `<p>Full text, diagrams and sources at ` +
+          `<a href="${html(page)}">${html(page.replace(/^https?:\/\//, ''))}</a></p>`,
+      };
+    }
+    const ep = it.basics!;
+    const page = `${origin}${BASICS_PATH}`;
+    const deeper = ep.sources
+      .map((id) => getDoc(id))
+      .map((d) => `<a href="${html(`${origin}${d.href}`)}">${html(d.title)}</a>`)
+      .join(', ');
+    return {
+      page,
+      notes:
+        `<p>${html(`${ep.title}: a short episode from ${BASICS_LABEL}, suitable for newer players or younger players.`)}</p>` +
+        `<p>To go deeper: ${deeper}</p>` +
+        `<p>Every episode of ${html(BASICS_LABEL)} at ` +
+        `<a href="${html(page)}">${html(page.replace(/^https?:\/\//, ''))}</a></p>`,
+    };
+  };
+
   const items = feedItems()
     .map((it) => {
-      const ep = it.episode;
-      const doc = getDoc(ep.doc_id);
-      const page = `${origin}${doc.href}`;
+      const ep = it.media;
+      const { page, notes } = pageAndNotes(it);
       return [
         '    <item>',
         `      <title>${xml(it.title)}</title>`,
@@ -153,11 +185,7 @@ export const GET: APIRoute = ({ site }) => {
         // site/scripts/check-podcast-guids.mjs asserts the built set never moves.
         `      <guid isPermaLink="false">${xml(it.guid)}</guid>`,
         `      <link>${xml(page)}</link>`,
-        `      <description>${cdata(
-          `<p>${html(doc.description)}</p>` +
-          `<p>Full text, diagrams and sources at ` +
-          `<a href="${html(page)}">${html(page.replace(/^https?:\/\//, ''))}</a></p>`,
-        )}</description>`,
+        `      <description>${cdata(notes)}</description>`,
         `      <itunes:title>${xml(it.itunesTitle)}</itunes:title>`,
         `      <itunes:season>${it.season}</itunes:season>`,
         `      <itunes:episode>${it.episodeNumber}</itunes:episode>`,
