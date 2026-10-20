@@ -509,6 +509,13 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - The season gate leaves the live feed byte-identical until all 13 exist. The 39 principles guids are frozen.
   - **Still to do:** a site-reviewer pass on /the-basics/ and the source-page link; owner approval of the 13 titles; add the page to the nav and sitemap at launch; make the gate sticky at launch (freeze the Basics guids, keep planned append-only).
   - **Deferred:** downloads and m3u; `podcast_queue --style basics`.
+- **GN wave committed 21 Oct** (record gn_gender_neutral_2026-10-20.md). Still open, owner's call: gendered terms of art (man-on-man, point man, "your man") are left unchanged.
+- **NotebookLM batch 1 follow-up:** 01 (edited) and 29 are published. 17 is NO-GO: regenerate it with its own focus file. The owner has it scheduled after 03:00 on 21 Oct and 37 after 04:00 (NotebookLM usage limit). 31 v2 was received 23:53 and is in review. The owner is regenerating 31 and 37 with episode-specific focus files.
+- **Principles pilots revised** to the owner's notes: The Basics explains terms and why; shorter, calmer safety; gender-neutral. In review (ppS5). The Detailed seam cap is now 9,320.
+- **Principles production (21 Oct).** The owner has 967,392 ElevenLabs credits and will buy more within reason.
+  - The final Winger pair is recording: Basics topic 10 and Detailed.
+  - The Basics scripts for the other 12 topics are being written by six agents (bw-1 to bw-6, brief at scratchpad basics_brief.md), each into podcast_style_b/basics/<slug>.md. Each script then gets a safety review before recording.
+  - Next: write the Detailed scripts for the other 38 pages, in batches.
 - **Readability programme complete (20 Oct):** all 39 pages passed (W4/W5 record w4_w5_readability_2026-10-20.md).
 - **SW sweep committed (20 Oct; record sw_cross_page_sweep_2026-10-20.md)** for 18 pages. goaltender is held back for its own commit (s1R5 CLEAR). Optional goaltender minors: :1098 add "with an attacker on you"; :643 double negative; :388 "soft stick … cover it" has no crease condition; :1622 omits USAH 614(c)(4).
 - **Save-then-cover siblings:** IIHF Situation 63.1 (a freeze must come "straight off" the save) and HC 10.2(a) (a goalkeeper freezing outside the crease) are missing outside goaltender. Done for the 9 FZ pages; only on_ice_communication is still open (s1R).

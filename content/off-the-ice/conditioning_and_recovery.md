@@ -170,7 +170,7 @@ A 2025 **narrative** review in *Sports* on youth hockey reports injury rates of 
 
 **How common it is.** In a 2025 *American Journal of Sports Medicine* study of NHL goalies, **proximal adductor injuries accounted for the largest number of injuries (n = 371) and the highest total days missed (6,126)** — more than any other injury category. Goalies are an extreme case because of the butterfly position (see [Goaltender](../positions/goaltender.md)), but the pattern holds across positions.
 
-**The single best-known risk factor.** Tyler and colleagues (2001, *AJSM*) measured pre-season hip strength in professional ice hockey players and found that **a player was 17 times more likely to sustain an adductor strain if his adductor strength was less than 80% of his abductor strength.** Pre-season adduction strength was 18% lower in players who went on to be injured. In uninjured players, adduction strength averaged 95% of abduction strength; in injured players, 78%.
+**The single best-known risk factor.** Tyler and colleagues (2001, *AJSM*) measured pre-season hip strength in professional ice hockey players and found that **a player was 17 times more likely to sustain an adductor strain if their adductor strength was less than 80% of their abductor strength.** Pre-season adduction strength was 18% lower in players who went on to be injured. In uninjured players, adduction strength averaged 95% of abduction strength; in injured players, 78%.
 
 That is a striking finding and it points somewhere useful: **your groin is probably weak relative to the muscles that oppose it, because skating trains the pushing-away muscles far harder than the pulling-together ones.**
 

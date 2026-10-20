@@ -196,11 +196,11 @@ In-House **Rule 37** reads: *"On-ice video review is not available in EIH or SIH
 
 ### The Elite League publishes its own goaltender-interference criteria
 
-**Keep out of the blue paint, and if the goalie is trying to set himself, give ground.** The *EIHL Casebook* carries an *"EIHL Addition to the IIHF Rule Book"* on Rule 69, listing the *"3 main criteria to consider/answer in making the appropriate decision"*: *"1. Is the goaltender able to play his position? If he is contacted does he have time to recover? 2. Was the contact initiated by the defensive player or the cause of a player from the opposing team? 3. Was the contact made inside (or outside) of the crease? Contact in the blue paint area calls for disallowing a goal."*
+**Keep out of the blue paint, and if the goalie is trying to set themselves, give ground.** The *EIHL Casebook* carries an *"EIHL Addition to the IIHF Rule Book"* on Rule 69, listing the *"3 main criteria to consider/answer in making the appropriate decision"*: *"1. Is the goaltender able to play his position? If he is contacted does he have time to recover? 2. Was the contact initiated by the defensive player or the cause of a player from the opposing team? 3. Was the contact made inside (or outside) of the crease? Contact in the blue paint area calls for disallowing a goal."*
 
 Read that third answer for what it says: ⚠️ **contact in the paint is enough to wipe a goal out, not a line beyond which contact is free.** The Casebook calls its criteria an **addition**, so IIHF Rule 69 still decides the call, and 69.2 tells the referee to weigh *"the degree and nature of the relevant contact with the goalkeeper"* above *"the exact location of the goalkeeper"*. Rule 69.4 disallows a goal for non-incidental contact an attacker initiates outside the crease: *"A goalkeeper is not 'fair game' just because they are outside the goal crease."*
 
-And ⚠️ **the penalty is yours whether anything goes in or not:** deliberate contact is a minor or a major *"whether or not the goalkeeper is inside or outside the goal crease, and whether or not a goal is scored"*. You need not even touch him — stopping a goalie who played the puck outside his crease from getting back to it can be goalkeeper interference on its own.
+And ⚠️ **the penalty is yours whether anything goes in or not:** deliberate contact is a minor or a major *"whether or not the goalkeeper is inside or outside the goal crease, and whether or not a goal is scored"*. You need not even touch the goalie — stopping a goalie who played the puck outside their crease from getting back to it can be goalkeeper interference on its own.
 
 Nor is the crease only the paint: Rule 1.7 says *"[t]he marked line belongs to the Goal Crease"*, and the crease area *"extends vertically until the top of the crossbar"*. Rules 1.7, 69.3 and 69.4 say the same thing in the 2025/26 and 2026/27 books, so none of this turns on which edition your competition plays.
 
@@ -623,7 +623,7 @@ document, that is named too.*
 
 6. **Look at your rink before you plan around the book's size.** Under the In-House Rules, sheets below 56 m × 26 m are authorised at all levels, with two rinks limited to U16 and below — shorter, narrower or both than the IIHF's 60 m by 26–30 m.
 
-7. **Stay off the goalie, inside the crease and out.** Deliberate or unnecessary contact is a minor or a major wherever he is, goal or no goal, and contact that impairs him can wipe out your goal. If he is trying to set, give ground. In the Elite League contact in the blue paint is enough to disallow a goal.
+7. **Stay off the goalie, inside the crease and out.** Deliberate or unnecessary contact is a minor or a major wherever they are, goal or no goal, and contact that impairs them can wipe out your goal. If they are trying to set, give ground. In the Elite League contact in the blue paint is enough to disallow a goal.
 
 8. **Goalies: play as though the trapezoid binds.** England Ice Hockey's suspension is unsettled in scope and standing, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goalie may come out for a dump-in.** Ask your league which applies.
 

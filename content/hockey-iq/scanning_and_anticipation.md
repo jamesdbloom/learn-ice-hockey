@@ -438,7 +438,7 @@ A new player sees ten people in ten places and has to work out what each means. 
 **How to speed it up:**
 
 - **Name patterns out loud after they happen.** On the bench: *"that was an overload — three on the strong side, and the weak-side point was wide open."* Unnamed experience mostly evaporates.
-- **Predict out loud, then check.** Watching a game, say what happens next — "they'll reverse it", "he's going to walk the line and shoot for the tip". A wrong prediction you notice is worth more than ten right ones you never made, and you can do it from the stands.
+- **Predict out loud, then check.** Watching a game, say what happens next — "they'll reverse it", "they're going to walk the line and shoot for the tip". A wrong prediction you notice is worth more than ten right ones you never made, and you can do it from the stands.
 - **Work on one pattern a week.** "This week I only watch what the weak-side defenceman does on the breakout." Trying to notice everything means noticing nothing.
 - **Get more decisions per minute.** A three-on-three in a third of the ice gives many times the reads of a full-ice drill. Decisions build recognition, not ice time. See [Practice and Development](../off-the-ice/practice_and_development.md).
 
@@ -555,7 +555,7 @@ Risk: Reaction and peripheral-vision tools train the eyes, not the hockey
 - **Staring at the puck carrier.** Watch the chest with your central vision and snapshot everything else. Staring gets a defender beaten by the pass and sends a teammate to where the puck *was*.
 - **Only watching your own assignment.** Every time the puck moves in your end, ask who scores if it goes to the net now. Under a collapse, alternate between the puck and the most dangerous body near you; under man-to-man, keep your check in view but still take that look. Know which your team plays.
 - **Not scanning at stoppages.** At every whistle, check who is out, who takes the draw, their defence pair, where your bench is, and the score and the clock.
-- **The "I didn't see him" goal.** **Every time the puck goes into a corner in your own end, check the net front.** The back-door tap-in is a scanning failure, not bad luck.
+- **The "I didn't see them" goal.** **Every time the puck goes into a corner in your own end, check the net front.** The back-door tap-in is a scanning failure, not bad luck.
 - **Looking, then taking the hit with your back to the checker.** **Never turn your back to the checker, and never duck.** Come to the wall on an angle, feet apart, knees bent, **skates parallel to the wall**, **forearm and hip to the wall** — not the point of your shoulder — head up, chin off your chest. Already facing the wall? Stick and gloves up and spread on the glass, no head contact. Hitting the boards or a post head-on with your chin down is how necks get broken, even at walking speed — USA Hockey's *Heads Up Hockey* guide puts almost all on-ice spinal injuries down to it — so this outranks every tactical point here. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 - **The chin dip.** Turn your head until your chin passes over your shoulder. Glancing sideways without turning shows you almost nothing.
 - **Scanning only to your strong side.** Make one look go to the side you were not planning to use — that is where the surprise is.

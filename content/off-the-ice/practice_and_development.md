@@ -421,7 +421,7 @@ Skill is a *capability*. Hockey is a series of *choices* between capabilities un
 
 Most drills have one correct answer, known in advance. The read has been removed to make the skill practisable — legitimate, but it trains execution only. Drills alone build a player with good hands and no idea when to use them.
 
-The difference is one player. Here is the same rep twice: first with nobody defending, then with one passive defender added — and the pass route gone, because his arrival takes it away. Nobody else has moved.
+The difference is one player. Here is the same rep twice: first with nobody defending, then with one passive defender added — and the pass route gone, because their arrival takes it away. Nobody else has moved.
 
 ![](diagram:drill-execution-no-opponent)
 

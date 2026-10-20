@@ -206,7 +206,7 @@ Convention: Conventionally F2 and F3 on the walls with a defenceman in the middl
 Key: A 1-3-1 does not try to take the puck from you — it offers you the puck on terms you will not like
 Action: The three across hold their lanes and slide as a unit; their job is not to attack the puck but to leave no lane through them
 Goal: Deny the middle lane and almost never concede an odd-man rush — the back defenceman stays uncommitted and retrieves every dumped puck
-Risk: One of the three leaving his lane opens a seam instantly, and the single back defenceman cannot cover two lanes
+Risk: One of the three leaving their lane opens a seam instantly, and the single back defenceman cannot cover two lanes
 Countered by: Getting behind the flat wall with a stretch pass, chip-and-chase past it, or quick lateral movement — a sliding wall has gaps
 ```
 
@@ -289,7 +289,7 @@ Never: Play it as your default — some youth teams do and should not
 Position: Two forwards forecheck aggressively in their end; the moment possession is lost the left wing drops into line with the two defencemen
 Goal: Forecheck without paying the odd-man price — three across the back, each responsible for roughly a third of the width of the ice
 Convention: Conventionally the centre and right wing forecheck, steering the puck to the opponent's right side — a coaching choice, not a law
-Risk: It takes one player out of the counterattack and asks him to do a job most wingers are not trained for — costly if he is your best attacker
+Risk: It takes one player out of the counterattack and asks them to do a job most wingers are not trained for — costly if they are your best attacker
 Read: A left wing who reads transitions early makes it work; one who reacts late gives you the worst of both systems
 Options: Many teams now lock whichever winger is highest in the zone instead, which needs a loud and immediate in-game call
 ```
@@ -304,7 +304,7 @@ The effect is a 2-3: aggressive up front, three across the back. You get real fo
 
 **Strengths.** You forecheck without being punished for it. It is simple to teach — "left wing, you're the third D" — and works at every level, which is why youth hockey still uses it.
 
-**Weaknesses.** It asks one player to do a job most wingers are not trained for, and takes him out of the counterattack. If your left wing is your best attacker, it costs more than it saves. And a left wing who reads transitions late gives you the worst of both systems.
+**Weaknesses.** It asks one player to do a job most wingers are not trained for, and takes them out of the counterattack. If your left wing is your best attacker, it costs more than it saves. And a left wing who reads transitions late gives you the worst of both systems.
 
 **Modern variant.** Many teams now **lock whichever winger is highest in the zone** instead. That removes the personnel problem but needs a clear call — loud and immediate. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
@@ -335,7 +335,7 @@ That is your coach's call, and usually the answer is "more than one". Rough guid
 You will hear both answers from different coaches, and both are defensible. [Forechecking Systems](forechecking_systems.md) sets out the same split one zone earlier.
 
 - **The case for pressuring (2-1-2).** A good passer is dangerous because of the *time* they get. Deny the time and the skill never gets used. This suits fast, fit forwards and a team chasing the game.
-- **The case for containing (1-2-2 or 1-3-1).** Pressure gives an elite puck-mover what they want: a committed forechecker and space behind him. One pass past F1 and you are worse off than if you had never gone. This suits a team that cannot be sure of arriving first, is tired, or is protecting a lead.
+- **The case for containing (1-2-2 or 1-3-1).** Pressure gives an elite puck-mover what they want: a committed forechecker and space behind them. One pass past F1 and you are worse off than if you had never gone. This suits a team that cannot be sure of arriving first, is tired, or is protecting a lead.
 
 **The tiebreaker is you, not the opponent.** Pressure only beats a skilled passer if you arrive before the pass. If you cannot, containment is not the cowardly option; it is the only one that works. Ask which your bench wants — the two produce opposite F1 routes.
 
@@ -549,7 +549,7 @@ Risk: A turnover below your own goal line is a scoring chance — the low regrou
 Never: Use it when you are panicking — off the glass and out of your zone is the correct answer instead
 Rule: Under NHL and IIHF rules your goalie may not play the puck behind the goal line outside the trapezoid (NHL Rule 1.8; penalty 27.8 / 63.2(viii)) — the KHL reportedly too, but unverified here — the sole exception is a goalie keeping skate contact with the crease
 Rule: USA Hockey and Hockey Canada write no trapezoid, and neither frees your goalie out there — USA Hockey 614(c) makes a goalie’s freeze a minor on four triggers, among them a puck "behind the goal line and their body is entirely outside of the goal crease" and a puck outside the privileged area
-Rule: CARHA (adult leagues only) writes no trapezoid either, and still makes a minor of a goalie who deliberately falls on or gathers the puck behind the goal line with his body entirely outside the crease (58(b)), or deliberately holds it, causing an unnecessary stoppage (61(b))
+Rule: CARHA (adult leagues only) writes no trapezoid either, and still makes a minor of a goalie who deliberately falls on or gathers the puck behind the goal line with their body entirely outside the crease (58(b)), or deliberately holds it, causing an unnecessary stoppage (61(b))
 Rule: Hockey Canada's Interpretation 3 to Rule 10.1(a), clause v: "When a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."
 Rule: Out of the crease under Hockey Canada, have your goalie play it — clause ii of Interpretation 3 to 10.1(a) permits a cover after a cut-the-angle save, but clause v and Rule 10.2's goalie paragraph bar a freeze outside the crease, and the book never says which governs
 Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8; nothing in the Elite League's Casebook switches it off, and England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", scope and standing unsettled — in Britain keep your goalie inside it
@@ -568,7 +568,7 @@ A deeper version: the puck goes all the way back below your own blue line, somet
 
 Out there, ⚠️ **play it, do not sit on it.** USA Hockey **Rule 614(c)** makes falling on or gathering the puck a delay-of-game minor on four triggers. Two reach a goalie who has gone to fetch: *"(1) The puck is behind the goal line and their body is entirely outside of the goal crease"* and *"(3) The puck is outside the boundaries of the ”goalkeeper’s privileged” area"*. The privileged area does not include the corners. CARHA **Rule 58(b)** makes a minor of a goalkeeper who *“deliberately falls on or gathers the puck into their body… when the puck is behind the goal line and the goalkeeper’s body is entirely outside the boundaries of the goal crease area”*. Its **Rule 61(b)** reaches anywhere: a minor for one who *“deliberately holds the puck and in the opinion of the Referee, is causing an unnecessary stoppage of play”*.
 
-Hockey Canada is blunter still. Its **Interpretation 3 to Rule 10.1(a)**, clause v: *"When a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."* It is one of five clauses. Clause **ii** says *"[t]he goaltender may come out of their crease to cut down the angle and catch the shot or, after stopping the shot, cover the puck"*. The goaltender paragraph of **Rule 10.2** sides with clause v — a minor for a goalie who falls on or gathers the puck, or holds it against the goal, *"while outside their crease"* — and **Hockey Canada publishes nothing saying which governs**; no Hockey Canada casebook was available here. On a low regroup clause v is the one that bites, because your goalie is out there to **retrieve**, not to save. A goalie out to make a *save* is a different case, and [Goaltender](../positions/goaltender.md) owns it — though under Hockey Canada, out of the crease, he should play that one too. So under these books ⚠️ **your goalie is an extra option for moving the puck, not a place to park it.**
+Hockey Canada is blunter still. Its **Interpretation 3 to Rule 10.1(a)**, clause v: *"When a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."* It is one of five clauses. Clause **ii** says *"[t]he goaltender may come out of their crease to cut down the angle and catch the shot or, after stopping the shot, cover the puck"*. The goaltender paragraph of **Rule 10.2** sides with clause v — a minor for a goalie who falls on or gathers the puck, or holds it against the goal, *"while outside their crease"* — and **Hockey Canada publishes nothing saying which governs**; no Hockey Canada casebook was available here. On a low regroup clause v is the one that bites, because your goalie is out there to **retrieve**, not to save. A goalie out to make a *save* is a different case, and [Goaltender](../positions/goaltender.md) owns it — though under Hockey Canada, out of the crease, they should play that one too. So under these books ⚠️ **your goalie is an extra option for moving the puck, not a place to park it.**
 
 **🇬🇧 In Britain, play as though it binds.** Nothing in the Elite League's Casebook switches it off — the Casebook adopts the 2026-27 IIHF book (Rule 27.7, not the NHL's 27.8). England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"*, but its scope and standing are unsettled, including whether it reaches Scotland and Northern Ireland. The In-House Rules do not mention it in the 2025-26 or 2026-27 edition, though their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. Ask your league, and look behind the net for painted lines. Treat an unmarked sheet as a hint, not a ruling: IIHF 27.7 turns on *"the position of the puck"*, not the markings.
 
@@ -768,7 +768,7 @@ Published analytics suggests a carry is only the better choice when you are arou
 ```facts
 Goal: Defending — stop a clean win back to their point, take the middle away first, and get the puck out so you can change
 Position: Defending wingers commonly line up between the opposing wingers and the middle of the ice rather than directly on their man
-Position: Your centre sets up on the defensive side of the opposing centre, so a lost draw still leaves him between the puck and his net
+Position: Your centre sets up on the defensive side of the opposing centre, so a lost draw still leaves your centre between the puck and your net
 Goal: Attacking — win it clean to a defenceman for an immediate entry or shot, or to the wall to chip it in and forecheck
 Action: Know before the drop whether you are winning it forward or back, and who your man is if you lose it
 Rule: A teammate's encroachment gets your centre ejected, and a second team violation on the same draw is a bench minor under NHL and IIHF 76.7 and PWHL 78.7 — an individual minor on the offender under USA Hockey 613(d), and discretionary under Hockey Canada 6.2(e) and CARHA 57(d)
@@ -810,7 +810,7 @@ A regulation sheet has **four neutral zone faceoff dots** — two just inside ea
 **In short:** Read F1's route, count the bodies across the middle and check your support before you commit with the puck.
 
 ```facts
-Read: F1 skating straight at you, hard → they are pressuring; the answer is one quick pass past him
+Read: F1 skating straight at you, hard → they are pressuring; the answer is one quick pass past them
 Read: F1 arcing across, showing you the boards, not really closing → containment or a trap; do not go where they are steering you
 Read: F1 standing near the red line doing nothing → 1-3-1 or 1-4; take your time, look up and start a regroup
 Read: Count the bodies across the middle — two means space to attack, three means a 1-3-1, four in a line means a 1-4 or a full trap
@@ -912,7 +912,7 @@ document, that is named too.*
 4. **At your own blue line, stand up only with help behind you; otherwise back off.** Check over your shoulder and call it. ⚠️ **Stand up with your feet, not with a hit**: finished as a hit it is charging in every division, no book caps it at a minor, and Hockey Canada makes it a mandatory match penalty on a player who cannot defend themselves.
 5. **Regroup instead of forcing a bad entry.** Forwards: curl back with the puck and turn up as it goes D-to-D — never stand still, never leave before your defenceman has it. Defencemen: after a D-to-D, sink into mid-ice for the return. Skip it when you have numbers, your change is due, or the pass back is not clean.
 6. **Three forwards, three lanes.** Support means being somewhere else, not close. Use the middle as a one-touch relay — wall to middle to far wall makes their structure slide twice. **Take the middle-lane puck with your head up**: coaching material puts the contact there — **consensus rather than a counted ranking**.
-7. **Be the late man, or take him.** Attacking, trail a full gap — 10 to 15 feet — behind a two-man rush and arrive into the high slot, and be first back if it turns over. Backchecking, the trailer is usually yours rather than your defencemen's — ask whether your team gives him to the weak-side defenceman.
+7. **Be the late man, or take the trailer.** Attacking, trail a full gap — 10 to 15 feet — behind a two-man rush and arrive into the high slot, and be first back if it turns over. Backchecking, the trailer is usually yours rather than your defencemen's — ask whether your team gives the trailer to the weak-side defenceman.
 8. **Beat a trap by moving the puck, not carrying it** — quick passes, the boards, a stretch forward behind a wall still out in the neutral zone, or a dump you chase. Try the seam last. Against a 1-4, chip past the flat line and race; if the goalie gets there first, pull up. ⚠️ **On the boards, never turn your back to the checker and never duck — head up, chin off your chest, even in a non-checking league.**
 9. **Carry it in when the line is yours; when it is not, a dump you chase beats a turnover at the line.** Get it over the red line first or it is icing, and in several books your tired line cannot change. Chase it unless you are changing.
 10. **Before a neutral-zone draw, know whether you are winning it forward or back, and who your man is if you lose it.** These draws turn straight into rushes. Hold your line until the puck drops — creeping gets your centre thrown out.

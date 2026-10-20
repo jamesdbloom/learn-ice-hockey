@@ -210,7 +210,7 @@ These two are constantly conflated. They go in **opposite directions** and they 
 
 ![](diagram:winger-dz-reverse)
 
-**The two pictures above come from [Winger](../positions/winger.md)**, so their captions speak about a winger in his own end. They draw the two halves of the choice: in the rim the checker still has you pinned, in the reverse he has skated past you up the wall. The read carries to any wall or behind-the-net battle. ⚠️ **So does the wall-contact warning both captions carry**, which [Body Contact and Battles](body_contact_and_battles.md) owns.
+**The two pictures above come from [Winger](../positions/winger.md)**, so their captions speak about a winger in their own end. They draw the two halves of the choice: in the rim the checker still has you pinned, in the reverse the checker has skated past you up the wall. The read carries to any wall or behind-the-net battle. ⚠️ **So does the wall-contact warning both captions carry**, which [Body Contact and Battles](body_contact_and_battles.md) owns.
 
 **Rim in the right posture, because the checker is sealing you against the wall.** The natural shape — square to the boards, head down, watching the puck onto your blade — is the wrong one. ⚠️ **Rim with your skates parallel to the wall**, your **forearm and hip** to it, and your **head up and chin off your chest**. Find the boards by feel. Head down on the wall, digging at a puck, is exactly the picture the checking-from-behind rules describe.
 
@@ -218,9 +218,9 @@ These two are constantly conflated. They go in **opposite directions** and they 
 
 **Risk on the reverse.** A reverse into a teammate who is not there is a turnover you cannot chase — the puck goes one way and your momentum the other — and a reverse is usually made deep in your own end, where a loose puck becomes a chance against you. Reverses are a *support-dependent* play: never reverse on hope. Cross-reference [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
 
-**What a hit from behind on the wall costs the checker.** NHL, IIHF and PWHL Rule 43.1 define checking from behind as a check on a player *"not aware of the impending hit, therefore unable to protect or defend"* themselves, where *"contact is made on the back part of the body"*. USA Hockey 608(b) is a major and a game misconduct for a check from behind that *"recklessly endangers an opponent, or causes them to go head first into the boards or goal frame"*. Its Casebook (608, Situation 1) gives a major and game misconduct or a match penalty for any forceful check on a player standing along the boards with his back to the ice, and 608(c) makes it a match penalty when a reckless check from behind catches a defenceless player.
+**What a hit from behind on the wall costs the checker.** NHL, IIHF and PWHL Rule 43.1 define checking from behind as a check on a player *"not aware of the impending hit, therefore unable to protect or defend"* themselves, where *"contact is made on the back part of the body"*. USA Hockey 608(b) is a major and a game misconduct for a check from behind that *"recklessly endangers an opponent, or causes them to go head first into the boards or goal frame"*. Its Casebook (608, Situation 1) gives a major and game misconduct or a match penalty for any forceful check on a player standing along the boards with their back to the middle of the ice, and 608(c) makes it a match penalty when a reckless check from behind catches a defenceless player.
 
-**Hockey Canada names this exact picture.** Its Rule 7.5 tells referees to *"strictly enforce"* the rule *"[w]here a player along the boards, with their head down looking for the puck or 'digging the puck out,' is hit from behind and driven head-first into the boards"*. That costs a minor and a game misconduct at least, a major and game misconduct if you are hurt, and a **match** if you could not protect yourself — or head contact (7.6; 7.7 in Junior and Senior) where it reaches your head, whichever costs more. **CARHA 53(b)** makes a hit from behind into the boards or the net, on a player who cannot protect himself, a mandatory match penalty, and a match keeps you out until the Chairman has dealt with your case (34(a)). **None of that protects you; it names a hit you are exposed to.** [Body Contact and Battles](body_contact_and_battles.md) owns the wording and the evidence.
+**Hockey Canada names this exact picture.** Its Rule 7.5 tells referees to *"strictly enforce"* the rule *"[w]here a player along the boards, with their head down looking for the puck or 'digging the puck out,' is hit from behind and driven head-first into the boards"*. That costs a minor and a game misconduct at least, a major and game misconduct if you are hurt, and a **match** if you could not protect yourself — or head contact (7.6; 7.7 in Junior and Senior) where it reaches your head, whichever costs more. **CARHA 53(b)** makes a hit from behind into the boards or the net, on a player who cannot protect themselves, a mandatory match penalty, and a match keeps you out until the Chairman has dealt with your case (34(a)). **None of that protects you; it names a hit you are exposed to.** [Body Contact and Battles](body_contact_and_battles.md) owns the wording and the evidence.
 
 ### Area pass / chip into space — passing to a place, not a person
 
@@ -285,7 +285,7 @@ Risk: High reward, high cost — a miss is usually an immediate change of posses
 Key: Ask whether a teammate is actually behind their forwards right now, or whether you are hoping
 ```
 
-**Mechanics.** A long, hard pass, usually from a defenceman in or near his own zone to a forward who has broken behind the other team's forwards. Flat if the lane is clear, saucered if it must cross a stick. It needs a full weight transfer and a long follow-through; most missed stretch passes are underpowered, not misaimed.
+**Mechanics.** A long, hard pass, usually from a defenceman in or near their own zone to a forward who has broken behind the other team's forwards. Flat if the lane is clear, saucered if it must cross a stick. It needs a full weight transfer and a long follow-through; most missed stretch passes are underpowered, not misaimed.
 
 ![](diagram:breakout-stretch-pass)
 
@@ -297,7 +297,7 @@ Key: Ask whether a teammate is actually behind their forwards right now, or whet
 
 The NHL dropped the two-line pass by a playing-rule change for 2005-06, adopted alongside the new Collective Bargaining Agreement rather than by it; the IIHF had dropped it in 1998. ⚠️ **Both dates are received history, not rulebook text.** Neither appears in the NHL, IIHF, USA Hockey or Hockey Canada books held here, which proves nothing, because a current book states the rules as they stand. Take the dates as commonly given and unchecked.
 
-**The receiver must stay onside, and the books split on one point.** Under **NHL Rule 83.1** a player is offside *"when both skates are completely over the leading edge of the blue line involved in the play"*, and onside if either skate touches the line or is on his own side of it as the puck crosses. "His own side" is a vertical **plane**, so a trail skate held in the air behind the line keeps you onside. IIHF 83.1 (both editions) and PWHL 85.1 say the same, so the British answer is the NHL's.
+**The receiver must stay onside, and the books split on one point.** Under **NHL Rule 83.1** a player is offside *"when both skates are completely over the leading edge of the blue line involved in the play"*, and onside if either skate touches the line or is on their own side of it as the puck crosses. The rule's "his own side" is a vertical **plane**, so a trail skate held in the air behind the line keeps you onside. IIHF 83.1 (both editions) and PWHL 85.1 say the same, so the British answer is the NHL's.
 
 **Two books disagree.** ⚠️ **USA Hockey and Hockey Canada rule a lifted trail skate offside.** USA Hockey 630(a) needs *"skate contact with any part of the Neutral Zone or the blue line"*, and its Casebook (630, Situation 7) rules this exact play offside. Hockey Canada 6.11 counts only skates *"in physical contact with the ice surface"*, and Interpretation 3 to 6.11(a) rules the same case OFF-SIDE. CARHA 72(c) Note 1 borrows "own side" without defining it and publishes no ruling, so it settles the point neither way. **Keep your trail blade on the ice, touching the line or behind it, and you are onside in every book.** [Zone Entries](../systems/zone_entries.md) works the rule through.
 
@@ -496,7 +496,7 @@ Rule: The IIHF Situation Handbook 2025/26 rules the blue-line case three ways at
 
 It will happen, and it is a skill, not an accident to be complained about.
 
-- **Kick it forward to your stick with the inside of your skate.** One deliberate, controlled kick to a spot in front of you, not a panicked scuff. ⚠️ **Send the skate at the puck, never at the man.** A puck in your feet usually has an opponent's feet beside it, and a kick at him can be an ejection for a reflex — the costs are below.
+- **Kick it forward to your stick with the inside of your skate.** One deliberate, controlled kick to a spot in front of you, not a panicked scuff. ⚠️ **Send the skate at the puck, never at the player.** A puck in your feet usually has an opponent's feet beside it, and a kick at them can be an ejection for a reflex — the costs are below.
 - **Or open your hips and let it run through**, then collect it behind your stride. Turning your body slightly is usually faster than reaching.
 - **Do not reach backwards with your stick while continuing to skate forwards.** That is how you end up bent over, off balance, and hit.
 
@@ -550,7 +550,7 @@ Technique: If you are already facing the wall and cannot turn, get your stick an
 
 This is especially valuable on the half-wall in the offensive zone and on any breakout reception, where a closed body invites the pressure to arrive on your back.
 
-**On the wall, pressure on your back is a hit from behind into the boards.** Opening up lets you see the checker coming instead of feeling him arrive. Your posture at the moment of contact is not a preference: ⚠️ **never turn your back to the checker, and never duck** — keep your head up and your chin off your chest. Caught facing the wall and unable to turn, put your stick and gloves up on the glass to spread the impact — damage limitation, not a position to aim for. [Body Contact and Battles](body_contact_and_battles.md) covers how to take the hit, and the evidence behind it.
+**On the wall, pressure on your back is a hit from behind into the boards.** Opening up lets you see the checker coming instead of feeling them arrive. Your posture at the moment of contact is not a preference: ⚠️ **never turn your back to the checker, and never duck** — keep your head up and your chin off your chest. Caught facing the wall and unable to turn, put your stick and gloves up on the glass to spread the impact — damage limitation, not a position to aim for. [Body Contact and Battles](body_contact_and_battles.md) covers how to take the hit, and the evidence behind it.
 
 ### Receiving while moving
 
@@ -658,7 +658,7 @@ What the receiver owes the passer:
 
 ![](diagram:support-angles)
 
-**The first of the two pictures above** draws the first bullet: the receiver has nobody within ten feet of him and is still not an option, because a stick lies flat across the only line between him and the puck. **Unmarked and available are different things**, and the passer is reading the second one.
+**The first of the two pictures above** draws the first bullet: the receiver has nobody within ten feet of them and is still not an option, because a stick lies flat across the only line between them and the puck. **Unmarked and available are different things**, and the passer is reading the second one.
 
 **The second picture** is the spatial half of the same idea — where support can stand relative to a carrier, and what each position offers. Note that none of them is simply *close*, and that the picture shows the *where* rather than the *when*: timing is the half no still frame holds.
 
@@ -894,7 +894,7 @@ document, that is named too.*
 3. **Pass to where your teammate is going, on the side away from the checker.** Read their feet and lead them so they keep their stride; away from the checker beats their forehand. ⚠️ **In traffic the lead is a safety duty:** a puck in their feet puts their head down as a checker arrives.
 4. **Look over both shoulders while the pass is travelling to you.** Look after it lands and the checker is already on you.
 5. **Cushion the puck.** Meet it out front with a loose grip and give with it. A blocked pass bounces a foot away, and that is all a checker needs.
-6. **Have a backhand pass.** A forehand-only passer gets his forehand taken away. Give the backhand a cleaner lane, because it is slower.
+6. **Have a backhand pass.** A forehand-only passer gets their forehand taken away. Give the backhand a cleaner lane, because it is slower.
 7. **Take your first touch into your next play** — away from pressure, into your shot or into your stride. Afterwards you should be able to pass or shoot at once.
 8. **Rim past a checker who has you pinned; reverse behind one who has skated past.** Read their momentum, not their position.
 9. **When your next target is already open, move it first time.** A one-touch pass beats the defence's rotation — if you chose the target before the puck arrived.

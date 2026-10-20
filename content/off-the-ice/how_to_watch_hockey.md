@@ -31,7 +31,7 @@
 
 Almost everything that decides a hockey game happens away from the puck, and the camera that follows the puck trains you to miss it. So give your eyes one narrow job at a time. Trying to watch everything is how you end up watching the puck again.
 
-The players furthest from the puck tell you what a team is doing. A defending forward who follows his man into the corner is marking players; one who stays up near the blue line is marking areas of ice. Counting bodies gives you the forecheck and the power-play shape.
+The players furthest from the puck tell you what a team is doing. A defending forward who follows their man into the corner is marking players; one who stays up near the blue line is marking areas of ice. Counting bodies gives you the forecheck and the power-play shape.
 
 The blue line deserves special attention: public tracking research found that **at 5-on-5** carrying the puck in produced roughly twice the unblocked shot attempts and goals that dumping it in did. And the half-second after a shot is when the rebound is decided, which the broadcast often cuts away from.
 
@@ -147,7 +147,7 @@ This is the most reliable read in hockey, and it takes about ninety seconds.
 - **If the winger follows their man everywhere, including into the corner and behind the net** — they play **man-to-man**.
 - **If the winger follows their man only until the man leaves the winger's area, then hands off** — they play a **hybrid**, sometimes called man-on, zone-off or **collapsing man**.
 
-The first two are drawn side by side in [Defensive Zone Coverage](../systems/defensive_zone_coverage.md). The moment drawn is the point man walking the puck down rather than a puck in the corner, but the winger is still the one to watch: does he release his man or go with him?
+The first two are drawn side by side in [Defensive Zone Coverage](../systems/defensive_zone_coverage.md). The moment drawn is the point man walking the puck down rather than a puck in the corner, but the winger is still the one to watch: do they release their man or go with that player?
 
 ![](diagram:dz-walk-down-zone)
 
@@ -186,7 +186,7 @@ The **point** is just inside the blue line. The **half-wall** is the boards leve
 Count the players standing near the blue line once the power play is set up:
 
 - **One at the point** — a **1-3-1**: one point, two half-walls, a bumper and a net-front player. It is routinely called the dominant modern formation, and first units are widely said to run four forwards. ⚠️ **The personnel has been counted; the shape has not.** Matt Cane (Hockey Graphs, 2017) measured four-forward units at *"roughly 56% of the 5-on-4 ice-time this season"* — a league-wide share of ice time from 2016-17, not a count of teams or of first units. **No count of which shape teams run was found**, so "most teams use a 1-3-1" is coaching consensus. [Special Teams](../systems/special_teams.md) sets out the figure with its qualifications.
-- **Three high** — an **umbrella**: one in the middle at the point and two on the flanks slightly *below* him, in an arc, with two low. The flanks drop further in the modern version. A true umbrella has **no bumper**. See [Special Teams](../systems/special_teams.md).
+- **Three high** — an **umbrella**: one in the middle at the point and two on the flanks slightly *below* the middle player, in an arc, with two low. The flanks drop further in the modern version. A true umbrella has **no bumper**. See [Special Teams](../systems/special_teams.md).
 - **Four players loaded onto one side of the ice** — an **overload**, working the puck along one wall.
 
 All three are drawn in [Special Teams](../systems/special_teams.md), with the penalty killers left out.
@@ -228,7 +228,7 @@ The five jobs are drawn in [Breakouts](../systems/breakouts.md), frozen at the m
 - **Is the weak-side winger heading up ice early?** That is a **stretch** — trading support for speed.
 - **Does the second defenceman offer a D-to-D pass**, or stay glued to the net?
 
-The right spot for that winger moves with the structure. [Winger](../positions/winger.md) draws the same player at three depths on the wall, one for each of three breakouts. Read it as the places a winger can legitimately be, not a target he is missing.
+The right spot for that winger moves with the structure. [Winger](../positions/winger.md) draws the same player at three depths on the wall, one for each of three breakouts. Read it as the places a winger can legitimately be, not a target they are missing.
 
 ![](diagram:winger-wall-depth-by-system)
 
@@ -709,7 +709,7 @@ Only half an hour? Cut the professional hockey and keep your own footage. That i
 ## Key Takeaways
 
 1. **Stop watching the puck, and give your eyes one job per period:** one player, the defencemen, the weak side, or the five seconds before each goal.
-2. **To read defensive-zone coverage, watch the defending winger when the puck goes into the corner.** Follows his man: man-to-man. Stays high on the point: zone. Hands off: hybrid. Read five or six sequences, because teams change it.
+2. **To read defensive-zone coverage, watch the defending winger when the puck goes into the corner.** Follows their man: man-to-man. Stays high on the point: zone. Hands off: hybrid. Read five or six sequences, because teams change it.
 3. **Count to identify the rest.** Forwards going deep give the forecheck; players near the blue line give the power-play shape. F1, F2 and F3 are order of arrival, not position.
 4. **Watch live for systems and TV for technique.** To learn, sit as high as you can, ideally behind a net.
 5. **Watch every blue-line entry.** Carried, dumped or turned over? Where was the defender's gap? At 5-on-5, carrying it in produced roughly twice the offence of dumping it.
