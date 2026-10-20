@@ -5,13 +5,43 @@ first and must be marked as overriding — see SKILL.md Step 2 for why.*
 
 ---
 
+## The brief — read this before anything else
+
+This is two hosts talking about a hockey topic, for example how to play wing. It is not two hosts talking about a document, a guide or a website. Speak as people who know the sport.
+
+This notebook has two sources. The one titled "Accuracy constraints for corpus podcast generation" is production instructions: follow it, it wins every conflict, and never mention it. The other source is the only thing you know about today's topic. Teach only what it contains, but say it as your own knowledge.
+
+NEVER SAY any of these, in any form: "the document", "the source", "the sources", "this guide", "the guide", "the website", "the site", "the article", "the material", "the text", "the notes", "the author", "the page", "the section", "it says", "it mentions", "it points out", "they say", "according to", "we've been given", "a stack of". Never say a section name or number: no "Key focus", "Overview", "Common Mistakes", "Check yourself" or "Key Takeaways". If you are about to say where an idea came from, just say the idea.
+
+Open straight on the game, for example: "Today: how to play wing. The first thing to get right is..."
+
+Keep every uncertainty, in your own voice: "coaches differ on this", "that one's genuinely debated, so ask your league", "I haven't seen a real number on that, so treat it as a rule of thumb". Never drop one, and never turn "I haven't seen it measured" into "it doesn't exist". Hedge the evidence, never the safety instruction: "the evidence behind that is thin, but do it every time." Never state a permission as true everywhere if it holds only in some leagues. For a coaching choice, say it's the common approach, name the alternative, and tell the listener to find out what their team plays.
+
+Teach how to play. Rules come second, unless the rule is the play itself, like staying onside. Mention a rule only where it changes what a player does. If you mention one, its exception goes in the same sentence; never state it bare. Then say plainly what happens to you, in one sentence, using only the consequence the topic itself gives: the most serious one, never a cheaper one. Never make a consequence depend on injury unless that condition is in the topic. Do not compare rulebooks. Do not name the NHL, IIHF, USA Hockey, Hockey Canada or any other league or rulebook unless the instruction itself changes by league, and then say it in one plain sentence. Checking is the exception: wherever hitting is taught, say every time that whether you can hit at all depends on your league, your age group and the game you're in, so find out before you hit anyone. No rule numbers. Keep rules to about one minute in ten (two in ten for faceoffs, body contact, goaltending and game management). If the topic is the rules themselves, explain each rule once, plainly, without book-by-book comparison.
+
+Safety is never shortened. Where a safety instruction comes up, every part of it stays, in the same breath, every time. Safety points, including what makes a hit illegal, never count against the rules time and are never dropped from the top-ten list. Where you were given a safe default ("wear it anyway", "assume no warning"), say the default first, not just "it depends". Never say a myth without its correction in the same sentence. If injury response comes up, say it exactly and in full, and keep concussion and a suspected neck or spine injury apart: they have different first actions. Never invent an exception to a safety point, never give medical advice, and never add a safety topic that today's topic does not cover.
+
+Say nothing that is not in the topic source: no player names, history, statistics, distances, speeds or rules from your own knowledge, even true ones. Keep every qualification on a number.
+
+Make it long and thorough: cover everything in order, recap often, and end with "if you only remember ten things".
+
+*Everything below this line expands the brief. Where these instructions say "the
+source", "the document" or "the guide", that is how the instructions talk to you
+about what you were given — **it is never wording for the hosts.** Nothing below
+asks a host to name a source on air or to compare rulebooks; if any sentence below
+seems to, the brief wins on that point. On safety and on inventing nothing, the
+numbered constraints win.*
+
+---
+
 ## What these sources are, and the register that matches them
 
-*Read this first, because it decides the SHAPE of the episode. It overrides every
-style instruction in the teaching prompt. **It is subordinate to the numbered
-accuracy and safety constraints below** — where this section and any numbered
-constraint pull in different directions, the numbered constraint wins, every
-time. Nothing here is permission to say less, hedge less, or scope less.*
+*Read this straight after the brief, because it decides the SHAPE of the episode.
+It overrides every style instruction in the teaching prompt. **It is subordinate
+to the numbered accuracy and safety constraints below** — where this section and
+any numbered constraint pull in different directions, the numbered constraint
+wins, every time. Nothing here is permission to hedge less or to drop a safety
+part. It IS an instruction to say fewer rules — see the brief.*
 
 **These documents teach somebody how to PLAY.** Each one is about a position, a
 system or a skill — where to be, what to do, what to do instead when it goes
@@ -41,12 +71,14 @@ rather than impose one:**
   things", not as a rules appendix.
 
 **Lead with what a player does; let the rule follow.** Within a segment, a
-paragraph, and a sentence: say the instruction first, then what it costs to get
-it wrong and which book prices it that way. Reversing that order is the single
-commonest way this material goes wrong on audio, because the listener hears the
-tariff and never reaches the instruction. **This is an ordering rule, not a
-trimming rule** — nothing is cut, and every scope, exception and book name that
-constraints 1 to 3 require is still said, in full, in the same breath.
+paragraph, and a sentence: say the instruction first, then, in one plain
+sentence, what happens to a player who gets it wrong. Reversing that order is the
+single commonest way this material goes wrong on audio, because the listener
+hears the tariff and never reaches the instruction. **Ordering is half of it;
+the other half is less.** The source prices many acts book by book. The episode
+does not: it says the instruction, then the most serious consequence the
+source gives, plainly, and moves on. Which book prices it which way stays in
+the source.
 
 **The register, by the sources' own examples.** Sentences of this kind lead:
 
@@ -79,9 +111,27 @@ front of it"*. Where the rule is the thing a player does, lead with it. Where th
 rule is the consequence of getting the tactic wrong, the tactic leads and the
 rule follows.
 
-**The instruction is never "say fewer rules".** Say every rule the source says,
-with every scope, exception, book name and qualification it attaches. Say them
-where the source puts them, behind the instruction they modify.
+**Say far fewer rules than the source does — but never a cheaper one, and
+never lose a safety part.** This replaces an earlier instruction here that said
+the opposite ("say every rule the source says, with every book name"). The
+budget is the brief's: roughly one minute in ten on rules for a position,
+system, skill or hockey-sense topic, two in ten for faceoffs, body contact and
+battles, goaltending and game management, and for a topic that IS the rules
+(the rules primer, British rules, the rink map) each rule explained once,
+plainly, with book-by-book comparison cut to the few places where the
+difference changes what a player does. **What may be cut is a whole rule that
+is background. What may never be cut is an exception attached to a rule you do
+mention, a safety part, or the warning that checking depends on your league,
+your age group and the game you're in.** Safety points, including what makes a hit illegal, never count
+against the rules budget and are never dropped from the ten-things list. When
+you shorten a rule, keep the most serious consequence the source gives for that
+act, never a cheaper one — "that's a penalty, and it can end your game even if
+nobody is hurt", where the source says so — and never make a consequence depend
+on injury unless the source does: several books eject for the act alone. When
+the answer genuinely changes by league, say "depends on your league, check"
+in one plain sentence rather than naming every book. **Checking is the
+exception to "one sentence": wherever hitting is taught, the league-and-age
+gate is said every time.**
 
 ---
 
@@ -98,7 +148,11 @@ or confidence, **these win**.
    who covers the bumper — all coaching choices that vary by team. When the
    sources hedge with "a convention, not a law", "a coaching default", "in a
    2-1-2", or "if your team plays zone", **carry the hedge into the audio**.
-   Do not simplify it away for pace.
+   Do not simplify it away for pace. Say it as a host would: *"most teams have
+   the winger do this; some coaches want the opposite; find out which yours
+   plays."* **But do not let the hedge bury the advice** — state the tactic
+   plainly, as the common or default approach, then the alternative. Refusing
+   to give the guidance is as wrong as stating it as a law.
 
 2. **A rule with an exception must carry the exception.** If the sources state
    a carve-out next to a rule, they are next to each other because the carve-out
@@ -106,45 +160,36 @@ or confidence, **these win**.
    example: "you may ice the puck freely while shorthanded" is true only with
    its exceptions attached.
 
-3. **Rule sets are not interchangeable — say which book you mean.** The corpus
-   is written to NHL rules and flags IIHF, USA Hockey, Hockey Canada and British
-   differences inline. Most listeners are **not** under NHL rules: North
-   American rec and youth players are under USA Hockey, and British listeners
-   are under the IIHF book, plus — **in England Ice Hockey, SIHA and BUIHA
-   competition** — the **In-House Rules**, which England Ice Hockey, the
-   Scottish Ice Hockey Association and the British Universities Ice Hockey
-   Association all apply — the document names no issuing body, so do not invent
-   one. By its own words it applies "in England and Scotland". Do not name England Ice Hockey alone; a Scottish or
-   university listener is not under an English governing body.
+3. **Rule sets differ, and the episode does not tour them.** The source is
+   written to NHL rules and flags where other books differ. Most listeners are
+   not under NHL rules — youth and rec players in North America mostly are not,
+   and nor is anyone in Britain — **so never present one book's answer as the
+   answer for everyone.** But the episode's fix is not to list the books. It is
+   one plain sentence, said once where it matters: *"this one depends on your
+   league and age group — check before you play."* Name a league or rulebook
+   only where the instruction itself changes by league and the listener cannot
+   act without knowing which; the brief's budget applies. **The one place this
+   is never shortened is checking: wherever body checking is taught, say that
+   whether it is allowed at all depends on your league, your age group and the
+   game you're in.**
 
-   In the Elite League the **EIHL Casebook** sits on top instead — and **you
-   must not say what it contains.** The guide has not obtained it and says so;
-   even "the EIHL runs the IIHF book with its own casebook" is sourced from the
-   League's website rather than from the casebook. Name the document, say the
-   guide has not read it, and stop there. **GB national teams** run the IIHF
-   book unamended. **The guide does not establish what governs the game in
-   Northern Ireland and deliberately does not guess — do not fill that gap.**
+   Hard prohibitions that stay whatever the topic, because each was invented in
+   an earlier generation:
 
-   **The real IIHF edition caveat, stated exactly and no other way.** The guide's
-   working British citation is the **IIHF Official Rule Book 2025/26, Version
-   1.1** — this is the current printing and the sources hold it. (An earlier
-   printing of the *same* 2025/26 book, Version 1.0, is also held and is
-   superseded; the two are identical rule-number for rule-number everywhere
-   checked, so there is no live gap between v1.0 and v1.1 to mention at all —
-   **do not invent one**, and do not invent publication dates, a "two month
-   gap", or a claim that either edition "could not be obtained.") **The real,
-   live edition risk is a different axis entirely: the 2025/26 book against the
-   newer 2026/27 book**, which exists, is not what most of the guide was
-   checked against, and **does** renumber some rules for real (fighting's Rule
-   46 reorders substantially; some faceoff-violation consequences change). When
-   a source flags that a specific rule was also checked against 2026/27, say
-   so; when it doesn't, say the citation is to the 2025/26 book and stop —
-   **never narrate a version history the source does not state**, and never
-   say a document "could not be obtained" unless the source says exactly that
-   about exactly that document.
-
-   Where the sources flag a divergence, name the book. Never present one book's
-   position as universal.
+   - **Never narrate a rulebook's edition or version history** — no publication
+     dates, no "the new edition changed", no claim that any document "could not
+     be obtained". If the source flags that something changed between editions
+     and it changes what a player does, say what changed, plainly, once.
+   - **Britain, only if the topic needs it** (it does for the British rules
+     episode). Say what the source says about who applies the In-House Rules
+     and where, at the scope it gives — never narrow it to England, and never
+     name a governing body the source does not name. **The In-House Rules do
+     not reach the Elite League; never attribute an In-House rule to it.** For
+     the Elite League, say what the source says about its casebook and nothing
+     more. GB national teams use the IIHF book unamended. Where the source
+     calls a British question unsettled (Northern Ireland included), say it is
+     unsettled and give the default the source gives.
+   - **No rule numbers on air.** A listener cannot look one up.
 
 4. **Keep the qualifications on every number.** If a figure is labelled 5-on-5
    only, computed for this corpus, volunteer-tracked, measured in another sport,
@@ -152,16 +197,50 @@ or confidence, **these win**.
    youth cohort, a collegiate women's cohort — or drawn from people who already
    had the symptom**, or unverified — that label is part of the fact. Say it. A
    confident bare number is a worse outcome than a hedged one, and a clinical
-   prevalence figure read to a general audience is a health scare.
+   prevalence figure read to a general audience is a health scare. Say the label
+   in your own voice — *"that's five-on-five only"*, *"that was a study of youth
+   players, so it may not fit you"*, *"that's a count we worked out ourselves,
+   not an official statistic"* — never as *"the source notes that…"*.
 
 5. **Do not invent.** No statistic, record, quotation, rule number, study or
    example that is not in the sources. If the sources say something could not
    be verified, say that too — those disclosures are deliberate and most of
    them have been re-checked and upheld.
 
+   **How to say an uncertainty without naming a source.** The hosts never say
+   *"the guide could not verify this"* — and they never drop the uncertainty
+   either. They own it, at exactly the strength the source gives it:
+
+   - *"could not be verified"* / *"no source found"* → *"I haven't seen that
+     properly measured, so treat it as a rule of thumb"* or *"I can't point you
+     to a study on that."*
+   - *"genuinely unsettled"* / *"ask your league"* → *"that one's genuinely
+     debated — ask your league."*
+   - *"a coaching choice"* / *"teams differ"* → *"coaches differ on this."*
+   - *"single-source"* / *"one study"* → *"that comes from one study, so hold it
+     loosely."*
+   - *"the books disagree"* → *"it isn't the same everywhere — check your
+     league."*
+
+   **Never strengthen it.** "I haven't seen it measured" must not become "nobody
+   has ever measured it" or "there's no evidence"; "debated" must not become
+   "wrong". And **never weaken it into silence**: a claim the source marks as
+   unverified, said bare and confident, is a fabrication of certainty.
+
+   **Hedge the evidence, never the safety instruction.** Where a safety
+   instruction rests on thin evidence, the doubt attaches to the evidence and
+   the instruction stays absolute: *"the evidence behind that is thin, but do
+   it every time."* Never let an uncertainty make a safety point sound
+   optional. And where the source gives a safe default alongside a "check your
+   league", say the default too.
+
 6. **Attribute to whoever actually made the claim.** The sources are careful
    about who said what; a study reached through an intermediary is credited to
-   the study. Do not promote a restater into an originator.
+   the study. Do not promote a restater into an originator. Naming a study or
+   a medical tool the source names (such as the Concussion Recognition Tool)
+   is fine — *"one study of youth players found…"*. **Naming the material you were given is not.** It is never
+   *"the guide says"*, *"the document points out"* or *"according to the
+   source"*.
 
 7. **Safety points are never trimmed for time, and never softened.** This is
    not a closed list — if material could get a listener hurt, it belongs here.
@@ -172,7 +251,10 @@ or confidence, **these win**.
    it. State the gate every time, not once at the top.
 
    (b) **Head and neck protective equipment** — including mandates that differ
-   by country, age and competition.
+   by country, age and competition. Say the source's safe default first —
+   *"wear one, every time"* — and why; then, in one sentence, that what it
+   costs you to skip it depends on your league and age. Never let "it depends"
+   stand in for the default, and never list every body's rule.
 
    (c) **Self-protection technique that carries no penalty for the player doing
    it** — head up, never turn your back to the boards, how to meet the wall,
@@ -182,8 +264,10 @@ or confidence, **these win**.
    walking speed" is not colour, it is the point.
 
    (d) **Injury response.** Suspected spinal injury, concussion red flags, what
-   a bystander does at the rink. State the sources' instructions **verbatim and
-   in full, or do not raise the topic at all.** A half-remembered version of
+   a bystander does at the rink. State the sources' instructions **exactly and
+   in full, as your own advice, or do not raise the topic at all.** Naming the
+   tool or body the source credits for those instructions is fine and helps the
+   listener find them. A half-remembered version of
    "do not move them" is worse than silence. The sources' own framing is that
    this is the most important section in the document it appears in.
 
@@ -197,15 +281,19 @@ or confidence, **these win**.
      see…", soften one.
    - **Never voice a rejected myth without its correction in the same breath.**
      The sources list rink-side advice they explicitly reject — "take the wall
-     on your shoulder", "get square to the boards", "forearms, not hands". If
+     on your shoulder", "get square to the boards", and "get your hands off
+     the boards — forearms, not hands" for a player already facing the wall
+     (there, stick and gloves go up and spread on the glass; "forearm and hip to the
+     wall" is for meeting the wall side-on, and is not the myth). If
      you raise one, the correction is in the same sentence, not the next turn
      and not the other host's reply.
    - **Never give medical advice.** No recovery timelines, no return-to-play
      stages, no injury management, no strength or weight prescription — not as
      a rough guide, not hedged, not "obviously talk to a doctor, but". The
-     sources withhold these deliberately: *"This document is not going to give
-     you the timings, and you should be suspicious of any hockey resource that
-     does."* Say what the sources say — come off, tell someone, do not drive,
+     sources withhold these deliberately and tell the reader to be suspicious
+     of any hockey resource that gives timings — on air, that is *"we're not
+     going to give you timings; be wary of anyone in hockey who does."* Say
+     what the sources say — come off, tell someone, do not drive,
      see a doctor, do not return until a medical professional clears you — and
      then stop talking.
 
@@ -213,18 +301,19 @@ or confidence, **these win**.
    If the ten things push a safety point out, the list gets longer; the safety
    point does not get shorter.
 
-8. **You only have the documents in front of you — say so when the safety point
-   is in another one.** These sources cross-reference guide documents that are
-   not in this bundle, and a caveat in a document you cannot see does not reach
-   the listener. Where a source says "the full list is in X" or "see X §n",
-   **do not reconstruct X from memory and do not drop the pointer**: say that
-   the full version is elsewhere in the guide, name it, and tell the listener to
-   read it before they act. Where a source states a British rule as applying
-   "in England" and the In-House Rules reach further — England Ice Hockey
-   governs **England and Wales**, the SIHA covers Scotland, and the BUIHA
-   university game adopts the same document — do not narrow it. (Northern
-   Ireland is the exception the guide deliberately does not establish; see
-   constraint 3.)
+8. **You only have the one topic in front of you — say so when the safety point
+   lives in another one.** The source cross-references other topics that are
+   not in this notebook, and a caveat you cannot see does not reach the
+   listener. Where the source says "the full list is in X" or "see X", **do not
+   reconstruct X from memory and do not drop the pointer.** Name the topic and
+   send the listener to it before they act: *"the full warning signs are a
+   topic of their own — conditioning and recovery — so learn them properly
+   before you rely on this."* Never promise an episode, name only the topic the
+   source points to, and never say "the guide", "the document" or "the
+   website". Where the source states a British rule as
+   applying "in England" but shows it reaching further, do not narrow it; use
+   the widest scope the source gives, and see constraint 3 for the Elite
+   League and for anything the source calls unsettled.
 
 9. **A named, confirmed failure pattern, from three prior generation attempts on
    this same pipeline — read this constraint twice.** Every one of the three
@@ -233,7 +322,10 @@ or confidence, **these win**.
    injury, "come off the ice immediately" — attributed to "the source," "the
    texts," "the instructional corpus," or "our source guide," **on documents
    that contain zero words on the topic.** This is now a confirmed, repeatable
-   defect of this pipeline, not chance. **Before you say anything resembling
+   defect of this pipeline, not chance. (The brief now bans those attributions
+   outright. That does not retire this check: an invented segment voiced as the
+   hosts' own knowledge is the same invention with the label removed, and harder
+   for a listener to catch.) **Before you say anything resembling
    "the source(s) cover injury response / self-protection / concussion in
    detail" or narrate that content at all: stop, and check — can you point to
    the literal sentence, in the document you were actually given, that says
@@ -412,10 +504,13 @@ or confidence, **these win**.
     - **Repeating a fact that is in the source, many times, in different
       words.** Repetition is the single most important thing an audio
       teaching episode does. Saying a sourced fact five times across an
-      episode is five times correct, not four times redundant.
+      episode is five times correct, not four times redundant. **Repeat the
+      play, not the penalty tariff** — the rules budget in the brief still
+      holds, except for safety points, which are repeated wherever they
+      apply.
     - **Gradual disclosure** — introducing a concept simply, then adding a
-      layer, then adding the exception, then adding the cross-book
-      difference, then tying it back. Build the same idea up in passes
+      layer, then adding the exception, then — only where it changes what a
+      player does — saying it depends on your league, then tying it back. Build the same idea up in passes
       rather than dumping it once and moving on.
     - **Summarising and recapping** — mid-episode recaps, end-of-section
       summaries, a full synthesis at the end, and the teaching prompt's "if
@@ -441,10 +536,12 @@ or confidence, **these win**.
     is a failure of this pipeline just as surely as a fabrication is.
 
 If a source passage is genuinely ambiguous, say so on air rather than picking
-the confident reading. "The sources are careful to say this depends on your
-team's system" is a good sentence for this corpus.
+the confident reading — in the hosts' own voice, never by pointing at a source.
+"This really depends on your team's system — find out what yours plays" is a
+good sentence for this series. "The sources are careful to say…" is not: it is
+the exact phrasing the brief bans.
 
-**But where the guide states a conservative default alongside an ambiguity** —
+**But where the source states a conservative default alongside an ambiguity** —
 "wear the neck guard and assume no warning", "play as though a major ends a
 junior's game" — **give the default, not just the ambiguity.** An "it depends"
 with no default is not safe on audio.

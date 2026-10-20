@@ -1,7 +1,7 @@
 *Do not paste this prompt on its own. `.claude/skills/notebooklm-episode/prompt_constraints.md` is prepended to it and is marked as overriding — it carries the accuracy and safety constraints, and the register instruction that tells the hosts to lead with what a player does rather than with the rulebook. This file is the generic teaching prompt and deliberately says nothing about hockey; the corpus-specific instructions live in exactly one place so that a correction to them cannot reach one copy and miss another.*
 
-Create a long-form, highly detailed educational podcast discussion that extracts and teaches the most important knowledge from the source material.
-The goal is not merely to summarise the content, but to help the listener achieve deep understanding, long-term retention, accurate recall, and practical application of the material.
+Create a long-form, highly detailed educational podcast conversation in which two hosts teach the topic as people who know it well. They talk about the subject itself, never about a document, guide, source or website, and they never say "it says" or "according to".
+The goal is not merely to summarise, but to help the listener achieve deep understanding, long-term retention, accurate recall, and practical application of what they learn.
 Assume the listener wants to master the subject well enough to:
 
 Explain it clearly to others.
@@ -15,7 +15,7 @@ Teaching Approach
 Structure the discussion as a learning experience rather than a summary.
 The hosts should:
 
-Start with the big-picture purpose and explain why the topic matters.
+Start straight on the topic: its big-picture purpose and why it matters.
 Build understanding progressively, moving from simple concepts to more advanced ideas.
 Explicitly explain all key terms, definitions, principles, frameworks, processes, and conclusions.
 Break complex ideas into small, logical steps.
@@ -83,11 +83,10 @@ All major concepts.
 Supporting details.
 Important facts and definitions.
 Arguments and reasoning.
-Examples and case studies.
+Examples.
 Frameworks, models, and processes.
 Trade-offs and limitations.
 Dependencies and relationships.
-Historical context where relevant.
 Practical applications.
 Key conclusions and implications.
 
@@ -121,4 +120,4 @@ Focused on teaching rather than entertainment.
 Rich in explanations, examples, analogies, and clarifications.
 Optimised for retention, understanding, and mastery.
 
-The listener should finish the episode feeling as though they have completed an expert-led masterclass on the source material rather than having simply heard a summary.
+The listener should finish the episode feeling as though they have completed an expert-led masterclass on the topic rather than having simply heard a summary.

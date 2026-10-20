@@ -24,8 +24,10 @@ every URL tried, including `example.com`, so this is the tool's own blanket
 block rather than anything about NotebookLM.
 
 **So Step 3 is the owner's, done by hand, and the agent's job is everything
-either side of it.** An agent runs Steps 0, 1 and 2, hands the owner a source
-file and a prompt to paste, and then runs Steps 4 and 5 on what comes back.
+either side of it.** An agent runs Steps 0, 1 and 2, hands the owner three
+files (the document to upload, the instructions to add as a second source, and
+the focus text for the Customise box), and then runs Steps 4 and 5 on what
+comes back.
 Do not spend a turn trying to get the browser through; it is a blanket block,
 not a flaky one.
 
@@ -114,14 +116,18 @@ recreate the per-layer approach §7.3 explicitly decided against.
 
 Concatenate, in this order:
 
-1. [`prompt_constraints.md`](prompt_constraints.md) — the register section, then
-   the numbered accuracy and safety constraints. **Do not quote a count of the
+1. [`prompt_constraints.md`](prompt_constraints.md) — the brief, then the
+   register section, then the numbered accuracy and safety constraints. **Do not quote a count of the
    constraints anywhere; this line used to say "eight" and the file has grown
    since. Read the file.**
 2. `project/podcast_generation_prompt_longer.md` — the long-form teaching prompt
 
 **The constraints file goes first and is marked as overriding. This is not
-optional.** Inside it the order matters too: the register section comes before
+optional.** Inside it the order matters too: the brief comes first because it
+carries the owner's two standing instructions for this format (20 October 2026:
+the hosts talk about the topic and never refer to a document, guide, source or
+website; and far fewer rules, with no rulebook comparisons), and NotebookLM
+follows short early instructions best. The register section comes before
 the numbered constraints because it decides the episode's *shape*, and it says
 in its own words that the numbered constraints outrank it. **Do not reorder it,
 and do not renumber the constraints** — constraints 10 and 11 refer to
@@ -150,13 +156,24 @@ register section sits above the numbered constraints rather than at the end.
 The corpus survives being read aloud. It does not automatically survive being
 re-narrated by an enthusiastic host.
 
-**Write the concatenation out as one file**, because Step 3 is a human paste and
-a hand-off that can be performed in the wrong order eventually is:
+**Write out two files**, because Step 3 is a human paste and a hand-off that
+can be performed in the wrong order eventually is:
 
 ```bash
+# 1. The instructions, uploaded as a SOURCE (too long for the Customise box)
 cat .claude/skills/notebooklm-episode/prompt_constraints.md \
-    project/podcast_generation_prompt_longer.md > <out_dir>/<slug>__prompt.md
+    project/podcast_generation_prompt_longer.md > <out_dir>/<slug>__instructions.md
+# 2. The focus text for the Customise box: the brief alone
+python3 -c "import sys; s=open('.claude/skills/notebooklm-episode/prompt_constraints.md').read(); h='## The brief — read this before anything else'; print(s[s.index(h)+len(h):s.index('*Everything below this line')].strip())" > <out_dir>/<slug>__focus.txt
+wc -m <out_dir>/<slug>__focus.txt   # must be under 5,000
 ```
+
+⚠️ **The Customise box has a hidden 5,000-character limit and truncates
+silently** (measured September 2026; see
+`project/reviews/podcast_automation_plan_consolidated_2026-09-20.md`). The full
+instructions are far over it, which is why they go in as a source. **The brief
+must stay under 5,000 characters, and under about 4,000 to leave margin** —
+check `wc -m` after any edit to it.
 
 `build_episode.py` does not do this and says so in its own docstring.
 
@@ -166,20 +183,18 @@ cat .claude/skills/notebooklm-episode/prompt_constraints.md \
 
 ⚠️ **This step is the owner's. No agent can do it** — see *Before you start*.
 
-**What the agent hands over.** Two things, named by absolute path, plus one
+**What the agent hands over.** Three things, named by absolute path, plus one
 sentence saying which document this episode is:
 
 1. **The source file to upload** — the original `content/<doc_id>.md`, *not*
-   the bundle. One document per episode, so there is one source, and uploading
-   the document itself gives the cleanest source boundary. The `__sources.md`
-   bundle from Step 1 stays the provenance record either way; it carries the
+   the bundle (the bundle's stamp is a header the hosts might read out). The
+   `__sources.md` bundle from Step 1 stays the provenance record; it carries the
    commit stamp and the hash even for a single-document bundle.
-2. **The prompt to paste** — `prompt_constraints.md` followed by
-   `project/podcast_generation_prompt_longer.md`, concatenated in that order,
-   written out as one file ready to copy. **Hand over the concatenated file, not
-   two files and an instruction to join them** — the order is the thing that
-   makes the constraints override, and a hand-off that can be done in the wrong
-   order eventually is.
+2. **The instructions file** — `<slug>__instructions.md` from Step 2, added as a
+   second source by *Copied text*. Its first line names it *"Accuracy
+   constraints for corpus podcast generation"*, and the brief refers to it by
+   that title.
+3. **The focus text** — `<slug>__focus.txt` from Step 2, for the Customise box.
 
 **What the owner does, in order:**
 
@@ -187,16 +202,21 @@ sentence saying which document this episode is:
 2. **Create a new notebook.** A new one per episode — do not add a second
    document to an existing notebook, because the episode's provenance record
    says one document fed it.
-3. **Add the source**: upload the `content/<doc_id>.md` file the agent named.
-4. **Wait for the source to finish processing** before touching Audio Overview.
-   Generating against a half-ingested source is a silent quality loss — nothing
-   in the UI calls it an error.
-5. **Audio Overview → Customise.** Paste the whole concatenated prompt. Check
-   before generating that the paste starts with the constraints file's title
-   line and not with *"Create a long-form…"* — if it starts with the teaching
-   prompt, the constraints did not go in, and everything they guard is off.
-6. **Generate**, and wait. Long-form overviews take several minutes.
-7. **Download the `.m4a`**, and tell the agent where it landed and how long it
+3. **Add the source**: upload the `content/<doc_id>.md` file the agent named,
+   then **rename it in NotebookLM to a plain topic title** such as *"Playing
+   wing"*. Hosts often read a source title aloud, and a filename like
+   `winger.md` invites "the document".
+4. **Add the instructions** as a second source: *Add source → Copied text*,
+   pasting the instructions file.
+5. **Wait for both sources to finish processing** before touching Audio
+   Overview. Generating against a half-ingested source is a silent quality
+   loss — nothing in the UI calls it an error.
+6. **Audio Overview → Customise.** Paste the focus text. Check before
+   generating that it starts *"This is two hosts talking about a hockey
+   topic"* and ends *"if you only remember ten things"*. If the end is missing,
+   it was truncated.
+7. **Generate**, and wait. Long-form overviews take several minutes.
+8. **Download the `.m4a`**, and tell the agent where it landed and how long it
    runs.
 
 ⚠️ **The run length is a review input, not trivia.** A short episode is a
@@ -257,16 +277,14 @@ criticals and **every one was an omission** — and a checklist that only asks
 
 - [ ] Is any coaching convention stated as a rule of hockey?
 - [ ] Does any rule appear without the exception its source attaches to it?
-- [ ] Is a rule-set difference stated as universal, or is the book named?
-      (Most listeners are under USA Hockey. British listeners are under the IIHF
-      book plus, in EIH/SIHA/BUIHA competition, the In-House Rules, **applied by
-      England Ice Hockey, the SIHA and the BUIHA alike** — never "England Ice
-      Hockey" alone, and never "issued by" anyone, because the document names no
-      issuing body. The
-      EIHL Casebook applies in the Elite League and **its contents must not be
-      described**; GB teams run the IIHF book unamended; Northern Ireland is
-      deliberately not covered.
-      [`uk_rules.md`](../../../content/foundation/uk_rules.md) owns this.)
+- [ ] Is one book's answer stated as everyone's, where the source says it
+      differs by league? (The fix is "depends on your league — check", not a
+      tour of the books. British scope:
+      [`uk_rules.md`](../../../content/foundation/uk_rules.md) owns it.)
+- [ ] Wherever hitting is taught, was it said every time that whether you can
+      hit at all depends on your league, your age group and the game you're in?
+- [ ] Was any consequence made cheaper than the source gives, or made to depend
+      on injury where the source does not?
 - [ ] Do numbers keep their qualifications — including the population they were
       measured on — or arrive bare?
 - [ ] Is anything asserted that is not in the sources?
@@ -292,6 +310,14 @@ at tactics was to produce a better episode from it.
 - [ ] Did the Key Takeaways arrive as kernels a player can act on, or as a
       rules appendix?
 - [ ] Did the episode follow the source's own order, or re-sort it?
+- [ ] **Source references — count them, target 0.** Every "the document",
+      "the source", "this guide", "the website", "it says", "according to",
+      a heading name, or a mention of the instructions source, with timestamps.
+- [ ] **Rules budget — count it.** Rule numbers (target 0); each league or book
+      name, marked as "changes what you do" or "comparison"; rough minutes on
+      rules against runtime (about 10% for positions, systems, skills and
+      hockey sense; about 20% for faceoffs, body contact, goaltending and game
+      management). Safety points do not count against it.
 
 ⚠️ **Record the answers whether they are good or bad.** The owner's hypothesis
 is that the re-aimed sources produce a more accurate episode because there is
@@ -318,8 +344,9 @@ to.** Do this before the publishing step below, not after.
 
 Write the episode to `project/reviews/` or an episode log: title, documents,
 their hashes, the corpus commit, the date, the prompt version used, the run
-length, and the review checklist result — **Groups A, B and C, each answered
-rather than left silent.** An episode nobody can trace to its sources cannot be
+length, the review checklist result — **Groups A, B and C, each answered
+rather than left silent** — and the two counts from Group C (source references
+and rules budget), so prompt changes can be compared across episodes. An episode nobody can trace to its sources cannot be
 regenerated when the sources change — and they change.
 
 ⚠️ **Record the Group C answers even on a clear run.** The corpus was re-aimed

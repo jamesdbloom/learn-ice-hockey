@@ -120,6 +120,10 @@ If the upload dialog refuses `.md`, make a `.txt` copy and upload that instead:
 cp content/positions/defender.md .podcast_queue/notebooklm/defender.txt
 ```
 
+Then **rename the source in NotebookLM to a plain topic title**, for example *"Playing
+defence"* or *"Playing wing"*. The hosts often read a source's title aloud, and a file
+name such as `defender.md` makes them talk about "the document".
+
 **7. Add the instructions as a second source.** Copy the file to the clipboard:
 
 ```bash
@@ -130,7 +134,7 @@ Then choose **Add source → Copied text** and paste. It should be titled *"Accu
 constraints for corpus podcast generation"*. The instructions cannot go in the
 Customise box, because that box has a hidden 5,000-character limit. It was measured in
 September, and it cut longer text off mid-sentence without any warning. The
-instructions file is about 33,000 characters.
+instructions file is about 40,000 characters.
 
 **8. Wait until both sources have finished processing** before you touch Audio
 Overview. Generating from a source that is only half processed loses quality silently.
@@ -143,10 +147,29 @@ Overview. Generating from a source that is only half processed loses quality sil
 | Length | **Longer** |
 | Language | **English** |
 
-In the "focus" box, paste this text exactly. It is about 1,000 characters, so it fits:
+In the "focus" box, paste this text exactly. It is about 3,900 characters, so it fits under
+the 5,000 limit. Check that the pasted text ends with *"if you only remember ten things"*;
+if it does not, it was cut off. The master copy is the brief at the top of
+`.claude/skills/notebooklm-episode/prompt_constraints.md`; if the two ever differ, that one wins.
 
 ```text
-This notebook has two sources with different jobs. The source titled "Accuracy constraints for corpus podcast generation" is PRODUCTION INSTRUCTIONS, not episode material: follow it exactly, and where it conflicts with anything else it wins — but never discuss it, quote it, or mention that it exists. The other source is the ONLY topic of this episode. Teach that document and nothing else, in its own order: open on its Key focus section, and lead each point with what a player does before the rule that prices it. Say nothing that is not in that document — no player names, no history, no statistics, distances or speeds, no comparisons between rulebooks, no injury or medical advice — unless you can point to the sentence in the document that says it. Keep every hedge, exception and rulebook name the document attaches, and never settle a question it calls unsettled. Make it long and thorough: cover every section, recap often, and finish with "if you only remember ten things".
+This is two hosts talking about a hockey topic, for example how to play wing. It is not two hosts talking about a document, a guide or a website. Speak as people who know the sport.
+
+This notebook has two sources. The one titled "Accuracy constraints for corpus podcast generation" is production instructions: follow it, it wins every conflict, and never mention it. The other source is the only thing you know about today's topic. Teach only what it contains, but say it as your own knowledge.
+
+NEVER SAY any of these, in any form: "the document", "the source", "the sources", "this guide", "the guide", "the website", "the site", "the article", "the material", "the text", "the notes", "the author", "the page", "the section", "it says", "it mentions", "it points out", "they say", "according to", "we've been given", "a stack of". Never say a section name or number: no "Key focus", "Overview", "Common Mistakes", "Check yourself" or "Key Takeaways". If you are about to say where an idea came from, just say the idea.
+
+Open straight on the game, for example: "Today: how to play wing. The first thing to get right is..."
+
+Keep every uncertainty, in your own voice: "coaches differ on this", "that one's genuinely debated, so ask your league", "I haven't seen a real number on that, so treat it as a rule of thumb". Never drop one, and never turn "I haven't seen it measured" into "it doesn't exist". Hedge the evidence, never the safety instruction: "the evidence behind that is thin, but do it every time." Never state a permission as true everywhere if it holds only in some leagues. For a coaching choice, say it's the common approach, name the alternative, and tell the listener to find out what their team plays.
+
+Teach how to play. Rules come second, unless the rule is the play itself, like staying onside. Mention a rule only where it changes what a player does. If you mention one, its exception goes in the same sentence; never state it bare. Then say plainly what happens to you, in one sentence, using only the consequence the topic itself gives: the most serious one, never a cheaper one. Never make a consequence depend on injury unless that condition is in the topic. Do not compare rulebooks. Do not name the NHL, IIHF, USA Hockey, Hockey Canada or any other league or rulebook unless the instruction itself changes by league, and then say it in one plain sentence. Checking is the exception: wherever hitting is taught, say every time that whether you can hit at all depends on your league, your age group and the game you're in, so find out before you hit anyone. No rule numbers. Keep rules to about one minute in ten (two in ten for faceoffs, body contact, goaltending and game management). If the topic is the rules themselves, explain each rule once, plainly, without book-by-book comparison.
+
+Safety is never shortened. Where a safety instruction comes up, every part of it stays, in the same breath, every time. Safety points, including what makes a hit illegal, never count against the rules time and are never dropped from the top-ten list. Where you were given a safe default ("wear it anyway", "assume no warning"), say the default first, not just "it depends". Never say a myth without its correction in the same sentence. If injury response comes up, say it exactly and in full, and keep concussion and a suspected neck or spine injury apart: they have different first actions. Never invent an exception to a safety point, never give medical advice, and never add a safety topic that today's topic does not cover.
+
+Say nothing that is not in the topic source: no player names, history, statistics, distances, speeds or rules from your own knowledge, even true ones. Keep every qualification on a number.
+
+Make it long and thorough: cover everything in order, recap often, and end with "if you only remember ten things".
 ```
 
 **10. Generate and wait.** A long episode takes several minutes or more. The
@@ -181,7 +204,7 @@ states correctly, and that sounds sourced unless you check it.
    loading"*).
 3. **A safety point softened or given an exception.** Examples: "head up", "never
    turn your back to the checker", "never duck into a check", the rule on whether checking
-   is allowed at all, and neck guards.
+   is allowed at all (softened, or never said where hitting is taught), and neck guards.
 4. **A penalty mis-transmitted.** Write down the timestamp of every penalty or rule
    you hear, then compare it with the document. These are the commonest failures:
    - the size changed (minor to major, or major to ejection, or the reverse);
@@ -195,11 +218,13 @@ automatic fail:
 
 5. **Invented specifics**: a number, speed, weight or distance, a real player (Brodeur,
    McDavid and Crosby have all appeared), or the history of a rule.
-6. **A comparison between rulebooks that the document does not make.**
+6. **A comparison between rulebooks.** The episode should not tour the rulebooks at
+   all. It should say "depends on your league, check" where that changes what you do.
 7. **A hedge resolved.** The document says "genuinely unsettled" or "ask your league",
    and the episode states an answer.
 8. **British scope changed.** "England" said where the document says England and
-   Scotland, or the reverse, or anything about what the EIHL Casebook contains.
+   Scotland, or the reverse, anything about the EIHL Casebook that the document does
+   not say, or an In-House rule described as applying in the Elite League.
 9. **Leakage from the instructions source.** Talk of "constraints", "instructions",
    IIHF rulebook editions, the In-House Rules or Northern Ireland, on a document that
    does not discuss them.
@@ -215,6 +240,11 @@ automatic fail:
     ran 43.
 13. **Opening.** Does the episode open on what a player does (the document's Key focus)
     or on rulebooks and penalties?
+14. **Source references.** Count every "the document", "the source", "this guide",
+    "the website", "it says", "according to" or section name. The target is zero.
+15. **Rules time.** Roughly how many minutes went on rules, and were any rule numbers
+    said? The aim is about one minute in ten (two in ten for faceoffs, body contact,
+    goaltending and game management). Safety points do not count against it.
 
 If an episode fails, do not regenerate it straight away. Tell the coordinator. A
 document that fails three times is stopped and goes back to you as a decision.
