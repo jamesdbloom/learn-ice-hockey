@@ -14,7 +14,7 @@ Three author agents worked on disjoint files (brief: session scratchpad `r/brief
 - **faceoffs :949:** the PWHL clause keeps "not for the penalized team: 15.5". An interim "likely" was removed on the rules-verifier's advice, because 15.5 says "in all circumstances" and the flat reading is the conservative one.
 - **body_contact:**
   - Key focus :31 and KT6 now say "a hit that **stays on the back** ends your game in every book here but USA Hockey and the IIHF". The reason: HC 7.6 "supersedes any other rules", and 7.6(a) is a minor for accidental head contact in minor/female hockey.
-  - CM :1972 now reads "The NHL and PWHL have no minor, and under the IIHF plan on the major and game misconduct".
+  - CM :1972 now reads "The NHL, PWHL and IIHF have no minor, and the IIHF's major, with an automatic game misconduct, is the referee's call — plan on it" (final wording; see "Commit gate BLOCK and fixes").
 - **Board-posture mechanics demoted where inherited** (owner ruling of 23 September): defensive_zone_coverage (facts, CM, KT10) and forechecking_systems (two facts lines merged; CM).
   - "Never turn your back to the checker, never duck, keep your head up and your chin off your chest" is kept in every layer.
   - The mechanics (skates parallel, forearm and hip, never the point of the shoulder) stay in both bodies and in body_contact §6.
