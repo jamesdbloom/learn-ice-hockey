@@ -347,7 +347,7 @@ def bare_glyph_rows(dist=DIST):
     for page in sorted(dist.rglob("index.html")):
         h = page.read_text(encoding="utf-8", errors="replace")
         h = re.sub(r'<span class="[^"]*warn-inline[^"]*".*?</span>', "", h, flags=re.S)
-        h = re.sub(r'<aside class="callout callout-warning">.*?</aside>', "", h, flags=re.S)
+        h = re.sub(r'<aside class="callout callout-warning"[^>]*>.*?</aside>', "", h, flags=re.S)
         h = _strip_nav_chrome(h)
         h = _strip_invisible(h)
         n = len(re.findall(r"[\u26a0\u2757\U0001f6ab]", h))
@@ -393,7 +393,7 @@ def bare_glyph_contexts(page_rel, dist=DIST):
         return None
     h = f.read_text(encoding="utf-8", errors="replace")
     h = re.sub(r'<span class="[^"]*warn-inline[^"]*".*?</span>', "", h, flags=re.S)
-    h = re.sub(r'<aside class="callout callout-warning">.*?</aside>', "", h, flags=re.S)
+    h = re.sub(r'<aside class="callout callout-warning"[^>]*>.*?</aside>', "", h, flags=re.S)
     h = _strip_nav_chrome(h)   # ⚠️ MUST MATCH bare_glyph_rows() -- see the docstring above
     h = _strip_invisible(h)
     out = []

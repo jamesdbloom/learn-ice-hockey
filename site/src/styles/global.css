@@ -30,7 +30,14 @@
 
   --warn: #9a4a06;
   --warn-bg: #fdf3e7;
-  --warn-border: #e8a562;
+  /*
+    The amber left bar is a non-text mark, so WCAG 1.4.11 asks 3:1 against what
+    sits beside it. Was #e8a562 (2.1:1 on --bg-raised, 1.9:1 on --warn-bg).
+    #c26f1c keeps the hue and clears 3:1 on every surface a bar can sit on:
+    --bg, --bg-raised, --warn-bg, --bg-sunken, --bg-inset, --note-bg, --verify-bg
+    (lowest 3.09:1, on --bg-inset). Dark is #98672d, was #7a5324; lowest 3.08:1.
+  */
+  --warn-border: #c26f1c;
 
   --note: #2c5b3f;
   --note-bg: #edf5ef;
@@ -76,7 +83,7 @@
 
     --warn: #f0b070;
     --warn-bg: #2e2115;
-    --warn-border: #7a5324;
+    --warn-border: #98672d;
 
     --note: #86c6a2;
     --note-bg: #16261d;
@@ -107,7 +114,7 @@
 
   --warn: #f0b070;
   --warn-bg: #2e2115;
-  --warn-border: #7a5324;
+  --warn-border: #98672d;
 
   --note: #86c6a2;
   --note-bg: #16261d;
@@ -948,7 +955,8 @@ a.chip:hover {
   Setting it in both places does not pick the larger of the two — Chrome adds
   them, and a heading targeted by a deep link landed 144px below the viewport
   top instead of 72px, measured on
-  /foundation/on_ice_communication/#moving-a-screener--what-the-four-books-allow
+  /foundation/on_ice_communication/#moving-a-screener--what-the-books-allow
+  (the heading then read "what the four books allow")
   at 1440x900. With `scroll-behavior: smooth` the arrival visibly overshot and
   the first two lines of the section sat in dead space under a 56px header.
 
@@ -2396,7 +2404,7 @@ figcaption .warn-inline {
   --accent-soft: #e4f0f8;
   --warn: #9a4a06;
   --warn-bg: #fdf3e7;
-  --warn-border: #e8a562;
+  --warn-border: #c26f1c;
   --note: #2c5b3f;
   --note-bg: #edf5ef;
   --note-border: #9dc3ac;

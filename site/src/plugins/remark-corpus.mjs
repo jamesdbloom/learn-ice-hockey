@@ -624,7 +624,13 @@ export default function remarkCorpus(options = {}) {
       node.data = {
         ...(node.data || {}),
         hName: 'aside',
-        hProperties: { class: `callout callout-${kind}` },
+        // role="note" on the warning panel only: an advisory aside, announced as
+        // such, rather than a complementary landmark. Kept AFTER `class` so the
+        // serialised tag still opens `<aside class="callout callout-warning"`.
+        hProperties:
+          kind === 'warning'
+            ? { class: `callout callout-${kind}`, role: 'note' }
+            : { class: `callout callout-${kind}` },
       };
     });
 
@@ -662,7 +668,7 @@ export default function remarkCorpus(options = {}) {
       if (!WARNING_RE.test(toText(node))) return;
       const parentClass = parent.data?.hProperties?.class ?? '';
       if (typeof parentClass === 'string' && parentClass.includes('callout')) return;
-      parent.children[index] = wrapper('aside', { class: 'callout callout-warning' }, [node]);
+      parent.children[index] = wrapper('aside', { class: 'callout callout-warning', role: 'note' }, [node]);
       return [SKIP, index + 1];
     });
 

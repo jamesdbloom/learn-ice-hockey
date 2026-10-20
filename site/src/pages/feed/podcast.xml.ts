@@ -11,7 +11,7 @@ import coverData from '../../data/podcast-cover.json';
  * ⚠️ THIS IS A SEPARATE FEED FROM `/rss.xml` AND MUST STAY ONE. `rss.xml.ts`
  * deliberately emits no `pubDate` and no `<enclosure>`, and its comment gives
  * the reasoning: the corpus "is a book, not a blog", a build-time date is a
- * claim the build cannot support, and dating it would republish all 37 to every
+ * claim the build cannot support, and dating it would republish every document to every
  * subscriber on every rebuild. That decision is made and reasoned. **Do not
  * "fix" rss.xml.ts by adding dates or enclosures to it.** Podcast clients need
  * both, so they get their own feed here.
@@ -33,7 +33,8 @@ import coverData from '../../data/podcast-cover.json';
  *     fails validation without them; Spotify makes `length` optional. So it is
  *     emitted, from real measured byte sizes in `podcast.json`. ⚠️ Never
  *     estimate it.
- *   - ORDERING WITHOUT MEANINGFUL DATES. Apple: `itunes:type` "serial" means
+ *   - ORDERING WITHOUT RELYING ON DATES (the pubDates are synthetic; see
+ *     the pubDate note below). Apple: `itunes:type` "serial" means
  *     "episodes are intended to be consumed in sequential order… Apple Podcasts
  *     will present the oldest episodes first and display the episode numbers
  *     (required)". So `itunes:episode` carries the order for Apple. Spotify

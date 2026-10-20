@@ -14,7 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from '../consts';
  * and CiteThis makes about "accessed on": the corpus carries no per-document
  * dates, and a date generated at build time is a claim the build cannot
  * support — every document would appear to have been published the moment the
- * site was last compiled, and every rebuild would republish all 37 to every
+ * site was last compiled, and every rebuild would republish every document to every
  * subscriber. `lastBuildDate` on the channel is a fact about the build and is
  * true, so that one is emitted.
  *

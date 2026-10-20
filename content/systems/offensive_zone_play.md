@@ -360,7 +360,7 @@ Risk: Picking the wrong one of those two is a leading cycle turnover — nobody 
 Technique: Bump pass — fire the puck hard at a spot on the wall, not at your teammate, and call it; a bump nobody expects is a turnover
 Technique: Pivot / cutback — cut back up the wall you came down; a defender committed toward the corner cannot turn as fast as you
 Options: Scissor / switch — carrier and support skate at each other and cross, support passing on the outside; the carrier may drop it or keep it
-Never: Turn your back to the checker, or duck. Skates parallel to the wall. Forearm and hip meet it — not the point of your shoulder, not the whole shoulder if you can help it. Head up, chin off your chest
+Never: Turn your back to the checker, or duck — keep your head up and your chin off your chest
 ```
 
 **Low-to-low (the true cycle).** The puck carrier on the half-wall or in the corner passes the puck **backwards and down** to a teammate arriving behind them, then rotates up into the space their teammate just left. Two variants matter and they are not the same play:
@@ -751,8 +751,7 @@ The failure is having only one of these in mind. A player who arrives on the hal
 Technique: Cut back — skate a few feet toward the corner and cut back up the wall; the defender's momentum has to reverse, yours does not
 Technique: Delay and curl — turn away from pressure, protect the puck and curl toward the middle into open ice, coming out facing the ice
 Technique: Receive with your body between checker and puck, then spin off — turning into pressure immediately is how you get pinned
-Never: Turn your back to an oncoming checker near the wall, or duck. Skates parallel to the wall instead, head up and chin off your chest. This outranks everything else here
-Technique: Forearm and hip meet the wall, not the shoulder — the tip never, and no part of the shoulder if you can help it
+Never: Turn your back to an oncoming checker near the wall, or duck — keep your head up and your chin off your chest. This outranks everything else here
 Options: Bump it to the level-support player and take an immediate return pass — it resets the defender's read entirely
 Action: Feet moving, always — a stationary player on the wall gets pinned; one with momentum can go three directions
 ```
@@ -1142,7 +1141,7 @@ The general principle is worth stating plainly: **having a defined assignment fo
 - **Firing the point shot into the first shin pad.** **Walk the line until the shot-blocker has to move, take something off it, or go D-to-D first — and hold it if nobody is in front.** A blocked point shot usually goes the other way with your team spread out.
 - **Scanning up the wall before scanning across the middle.** **Look across first, every time — of the two options, only the seam expires.**
 - **Passing to where a teammate is instead of where they are going.** **Put it where their stick will be, so they can shoot without settling it.** In the slot, the extra touch is the difference between a goal and a save.
-- **Standing still on the half-wall.** **Keep your feet moving — cutbacks and curls buy the two extra seconds you need.** A stationary player gets pinned and stripped. When contact arrives, skates parallel to the boards, forearm and hip to the wall, head up, chin off your chest — never turn your back to the checker, never duck.
+- **Standing still on the half-wall.** **Keep your feet moving — cutbacks and curls buy the two extra seconds you need.** A stationary player gets pinned and stripped. When contact arrives, keep your head up and your chin off your chest — never turn your back to the checker, never duck.
 - **Turning to watch the shot from the net front.** **Keep your chest to the shooter and your eyes on the puck.** Turning to follow it un-screens the goalie and takes you out of the rebound.
 - **Planting at the net front without knowing where the post is.** **Know where the post is before the shot comes, keep your head up with your chin off your chest, and never duck.** You get walked sideways by a body you feel rather than see, with the post on one side and the goalie on the other. A flexed neck is what turns a collision with a post into a spinal injury, and USA Hockey names the goal post in that mechanism. **A box-out puts you on the same path, so this is not a checking-league point.** **And if a shove is carrying you into the goalie, give way rather than hold your spot.**
 - **Standing in the blue paint to screen.** **Take the goalie's eyes, not their room: screen from outside the crease, feet off the red line too, and never initiate the contact.** Outside the crease a no-contact screen is normally legal, though under the NHL, IIHF and PWHL positioning that stops the goalie moving freely in their crease can cost the goal; their tables allow a screen outside the crease even where it impairs the goalie's ability to defend (5C, 5E). ⚠️ **Inside it, your position alone can take the goal off.** Once a goalie has played the puck outside the crease, get out of their road back — under the NHL, the IIHF and the PWHL, blocking it can draw a penalty, contact or not. [Goaltender interference — the actual standard](#goaltender-interference--the-actual-standard) sets out each book's test.
