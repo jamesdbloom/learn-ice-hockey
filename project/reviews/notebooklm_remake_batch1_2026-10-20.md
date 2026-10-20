@@ -51,3 +51,13 @@ The six published masters are 02, 03, 24 (edited), 36, 38 (edited) and 39.
 - **Own knowledge.** The no-own-knowledge list now also bars comparisons and "explanations of how the body or brain works".
 
 The shared `instructions.txt` and `focus.txt` in the pack folder were rebuilt from it. Episodes 31 and 37 are to be regenerated with the new brief. Their source files are still in `batch1/`.
+
+## Second set (20 Oct, ~23:33): 01, 17, 29
+
+| Track | Episode | Runtime | Verdict | Notes |
+|---|---|---|---|---|
+| 01 | Getting Started | 43.3 min | SHIP after edit | Every KT safety point present. Four brief-leak sentences were cut by stream copy at about 15:31, 23:59, 27:55 and 41:52: "This is an (absolute) mandatory safety instruction" (×3), and "we absolutely must end with a safety absolute as the undroppable conclusion". The joins were checked by transcription. The British extra ambulance red flags were dropped (MAJOR, not cuttable). Shipped with the CRT6 ten, removal, not leaving the player alone and medical clearance intact. The tone is not calm ("catastrophic", "stretcher"). |
+| 17 | Forechecking Systems | 51.6 min | **NO-GO** | **Critical:** "I pin them against the glass if necessary" was endorsed right after "I see the numbers". **Critical:** the checking gate omits youth (12U/U13) and female hockey and invents "the vast majority of amateur adults" play non-checking. F1 "explicitly trying to initiate contact" and the quick flush lost its counterweight. Regenerate with `batch1/17 Forechecking Systems - focus.txt` (4,890 chars). |
+| 29 | Puck Support and Spacing | 46.8 min | SHIP | All safety present; rules about 3%; 0 source refs. Minor shorthanded-icing garble. |
+
+Published 01 (edited) and 29: backup 2026-10-20T234323; build encoded 2; uploaded getting_started-3d53cdf5 and puck_support_and_spacing-9f5085ee.
