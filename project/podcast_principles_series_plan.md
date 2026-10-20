@@ -13,10 +13,29 @@
 | | Script | Spoken chars | Words | Runtime* |
 |---|---|---|---|---|
 | Published "Playing principles" | `podcast_style_b/winger.script.local.md` | 30,560 | 5,923 | 31.8 min (audio: 31.75) |
-| **A. Detailed** | [`podcast_style_b/pilots/winger_detailed.md`](../podcast_style_b/pilots/winger_detailed.md) | 43,905 (+44%) | 8,499 | **about 45.6 min** |
-| **B. Core** | [`podcast_style_b/pilots/winger_core.md`](../podcast_style_b/pilots/winger_core.md) | 8,211 | 1,618 | **about 8.5 min** |
+| **A. Detailed** | [`podcast_style_b/pilots/winger_detailed.md`](../podcast_style_b/pilots/winger_detailed.md) | 43,874 (+44%) | 8,456 | **about 45.6 min** |
+| **B. The Basics** (topic 10, "Playing wing — The Basics") | [`podcast_style_b/pilots/winger_core.md`](../podcast_style_b/pilots/winger_core.md) | 10,546 | 2,083 | **about 11.2 min** |
 
 \* At **962.5 characters a minute**, measured from the published audio. `podcast-principles.json` gives Winger 31.75 min for 30,560 chars and Shooting 27.57 min for 26,453. That is about 186 words a minute, faster than the standard's assumed 165. Each pilot carries its own measurements, cut list, omissions note and a claim-by-claim self-check against `winger.md`.
+
+The Basics runtime uses **940 chars/min**, measured on its own pilot audio: 8,211 chars in 8 min 44 s. The single voice reads this plainer script slightly slower.
+
+---
+
+## Owner listening feedback, 20 Oct 2026: standing rules for BOTH series
+
+> *"I like the more detailed principles episodes because of the extra explanation but the core versions should also have this extra explaination to make it clear why the principles make sense, the core episodes should also explain the terms used at the start like the detailed episode does. I think it is good we warn about neck injures etc but I think we discuss this for slight too long and I worry we'll freak people out, I want them aware but not freaked out. I also don't want us to assume players are male so we shouldn't use terms like "his" but should use gender neutral terms like "they"."*
+
+1. **Explain the terms first, in both series.** Open with plain definitions of every term the episode uses, before the first idea. After that, add at most one new term per idea.
+2. **Give a "why it works" for every idea, in both series.** In The Basics it is one or two plain sentences per idea or key instruction. In Detailed it is the four beats per system (A.2). The why comes from the source document, as §9 requires.
+3. **Gender-neutral, always.** Never use "he", "him", "his" or "himself" for a player, whether that is a defender, checker, carrier, trailer, centre or goalie. Use "they", or name the role. ⚠️ **A plural "they" can blur who is meant when heard.** Where two people are in play, repeat the role noun instead: "between the trailer and the puck", "if the defender steps to you". Read each "they" for its antecedent, the way §5 requires for any pronoun.
+   - "Your man" becomes "your player" or "the player you are covering".
+   - Two hockey terms are kept as the names a coach uses: "man-on-man" and "odd-man rush". That is for the owner to confirm (decision 12).
+4. **Safety: aware, not frightened.** Keep every safety instruction. Give one plain reason for each, with no graphic detail, no injury statistics and no repetition of the mechanism.
+   - "Both protect your head and neck" replaces the spine mechanism, the "almost all" statistic and the attributions.
+   - The boards short form is still repeated word for word, because that repetition is the instruction, not the explanation.
+   - ⚠️ **Shortening is only of the words around an instruction, never of a limb.** That includes "even at slow speed" where the source carries it. The Basics pilot dropped that clause and its notes flag it for the reviewer.
+   - Each shortening is listed before and after in the pilot's notes, for review.
 
 ---
 
@@ -55,34 +74,34 @@ All 39 pages, in site order (`site/src/data/structure.json`). The rules pages (R
 
 ### Script standard: the delta from `podcast_style_b_script_standard.md`
 
-1. **Register: plain enough for a younger or newer player**, which is plainer than §2's teenager.
+1. **Register: plain enough for a younger or newer player**, which is plainer than §2's teenager. **Open with the terms** (rule 1 above), then give every idea its "why it works" (rule 2).
    - Mean sentence length at or below 11 words, and at least 45% of sentences at ten words or fewer.
    - Nothing over 30 words except the fixed boards form.
    - Define every term, and introduce no more than one new term per idea.
-2. **Four to seven ideas.** Each idea is what to do, one reason, and one picture. Ideas are chosen from the source's Key focus. They are never a summary of the whole page.
+2. **Four to seven ideas.** Each idea is what to do, a short "here is why it works", and one picture. Ideas are chosen from the source's Key focus. They are never a summary of the whole page.
 3. **No checking framing, either way.**
    - Do not teach checking, and do not say whether the listener's games allow it.
    - No "in your games", no league gate, and no penalty tiers.
    - **Every absolute must be true in every league.** "Bumping or pushing another player is a penalty" is not true everywhere, so it is not said. Contact appears only as conservative how-to-play limbs: keep your spot and let him try to move you, never push or lean on him; never your stick across someone; play the puck, not the player; never into anyone's back; never into the goalie.
-   - If a core principle genuinely needs checking, include it. The owner allows that, but he doesn't expect it.
+   - If a core principle genuinely needs checking, include it. The owner allows that, but does not expect it.
    - **Opening:** say who it is for, that it is the place to start, and that the longer Playing principles and conversation episodes go deeper.
    - **Close:** point to those two episodes as the next step.
 4. **Almost no rules otherwise.** There are no rule numbers, no book names and no tariffs. Offside and icing are explained once, plainly, in episode 1. Elsewhere they appear only where the act depends on them.
 5. **The safety basics stay, at full strength, in plain words:**
    - head up, chin off your chest;
-   - never your back to the other player near the boards, whether he is after the puck or just coming at you;
+   - never your back to the other player near the boards, whether they are after the puck or just coming at you;
    - never duck;
    - never into the goalie;
-   - never your stick or body into anyone's back, and pull up on the carrier if you can see his numbers.
+   - never your stick or body into anyone's back, and pull up on the carrier if you can see their numbers.
 
-   ⚠️ **Never write a "so" or "because" that turns a limb into a permission.** The pilot's *"He doesn't have the puck, so don't hit him"* implied that a puck carrier may be hit. It is now a plain imperative: *"Don't hit him or hold him. Beat him to the ice with your skating."*
+   ⚠️ **Never write a "so" or "because" that turns a limb into a permission.** The pilot's *"He doesn't have the puck, so don't hit him"* (quoted as written then) implied that a puck carrier may be hit. It is now a plain imperative: *"Don't hit him or hold him. Beat him to the ice with your skating."*
 
    ⚠️ **Line-change mechanics vary by age format** (British U12 changes on a buzzer), so Core leaves them out unless they are scoped the way Detailed scopes them.
 
    The boards posture uses the fixed form with **"the other player"** in place of "the checker", defined once at first use, so that Core does not lean on the word "checker". The limbs are unchanged.
 6. **Whole or not at all, applied hard.** An act whose safety limbs are long is left out entirely: shot blocking, net-front strength battles, faceoff tie-ups. It is never shortened.
 7. **Hedges.** Every system-dependent instruction ends with "ask your coach". The "coaching consensus, not counted" labels are dropped from Core (decision 8).
-8. **Length: 7 to 11 minutes**, about 7,000 to 10,500 characters. That is one synthesis request, so there are no seams. Recap after the first three ideas, and again in the close.
+8. **Length: about 10 to 15 minutes** (owner: "about 12–15 is fine"), or about 9,500 to 14,000 characters at 940 chars/min. Above 10,000 characters that means two synthesis requests, so check the seam the way §7 requires. Recap after the first three ideas, and again in the close. The Winger pilot is 10,546 chars, about 11.2 minutes, in two requests (9,641 and 903), with the seam in the close.
 9. **Sources: one to three named corpus documents per episode.** Each spoken claim traces to one of them, line by line, as in §9 and §12. That rule is unchanged, only widened from one document to up to three.
 10. **Voice: the same voice and model.** Test speed 0.90 against 1.00 for a younger listener (decision 7).
 
@@ -135,18 +154,18 @@ The owner's 16 October ruling of *"one show"* covered the two per-page formats. 
 
 ## Credit cost (ElevenLabs, eleven_v4)
 
-The rate used is **about 0.49 credits per character**. It was measured once, on the 17 October Shooting ear test (15,183 credits, recorded in memory), and is not re-measured here. Treat every figure below as ±15% until the next paid run re-derives it. The current remakes total **1,197,438 spoken characters** across 39 episodes, measured today with `extract_body`. That is a mean of 30,704 and a median of 30,376.
+The rate used is **about 0.485 credits per character**, re-measured on the two pilot runs on 20 Oct: Core 3,982 credits for 8,211 chars, and Detailed 21,312 for 43,905. Both come to 0.485. Treat every figure below as ±15% until the next paid run re-derives it. The current remakes total **1,197,438 spoken characters** across 39 episodes, measured today with `extract_body`. That is a mean of 30,704 and a median of 30,376.
 
 | | Characters | Credits at 0.49 |
 |---|---|---|
-| A, one episode, Winger pilot | 43,905 | **about 21,500** |
+| A, one episode, Winger pilot | 43,874 | **about 21,300** |
 | A, all 39 at +25% / +42% / +50% | 1.50M / 1.70M / 1.80M | **about 733k / 833k / 880k** |
-| B, one episode, Winger pilot | 8,211 | **about 4,000** |
-| B, all 13 at 7k–10.5k each | 91k–137k | **about 45k–67k** |
-| Both pilots | 52,116 | **about 25,500** |
+| B, one episode, Winger pilot (revised) | 10,546 | **about 5,100** |
+| B, all 13 at 9.5k–14k each | 124k–182k | **about 60k–88k** |
+| Both pilots, revised, re-synthesised | 54,420 | **about 26,400** |
 
 **Against the 16 November reset (Pro, 600k a month):**
-- **B fits in about a tenth of one month.**
+- **B fits in about a seventh of one month.**
 - **A does not fit in one month at any length in the owner's range.** At +25% it needs about 1.2 months of credits; at +50%, about 1.5.
 
 The plan:
@@ -179,13 +198,14 @@ Until 16 November: scripts and reviews only.
 
     ⚠️ **Probably moot for Core now.** Core no longer targets U12 games specifically, so it can say "ask how your games do it" and stop there. It still matters to Detailed, and to any Core line that a U12 listener would act on. This was the question when Core targeted U12, because these rules change what a U12 listener does. They are not in `winger.md` or any position page, so the §9 one-source rule keeps them out. **May Core, and Detailed, carry them, sourced from the Junior RoC, or should they first be added to a corpus page** (getting_started or rules_primer), so the scripts can trace them? Until then the pilots voice none of them. Detailed's line-change idea is scoped to "games where your line chooses when to change", and its delayed-offside caveat now reads "not every level plays delayed offside this way, so ask". That replaced "the whistle goes straight away", which is false for British U12.
 11. **The pilot files.** `podcast_style_b/pilots/` is **not gitignored**, unlike the `*.script.local.md` scripts. Commit them as reviewable pilots, or rename them `*.local.md`?
+12. **The two "man" hockey terms**, man-on-man and odd-man rush. Keep them as the names a coach uses, or replace them, for example with "player-on-player" and "outnumbered rush"? The pilots keep them.
 
 ## Before any pilot is synthesised
 
 Each script needs, per the standard's §12:
 - a `rules-verifier` pass;
 - a `safety-reviewer` pass;
-- a seam re-check after the last edit.
+- a seam re-check after the last edit. After the gender pass, Detailed needs `--max-chunk-chars 9320`, from a safe window of 9,255 to 9,390. The old 9,695 cap now puts a seam between "Stay between the trailer…" and "Never hit the trailer".
 
 A `safety-reviewer` pass on 20 Oct found 0 critical, 4 major and 8 minor, all applied. A second pass, ppS2, found 1 major and 3 minors, all applied. The revised text has not been re-reviewed, and no `rules-verifier` pass has been run. Both were written against `winger.md` blob `faf12b9`, which is the text committed in `0bd425a`.
 
@@ -258,3 +278,15 @@ Detailed replaces `podcast_style_b/<stem>.wav` and keeps the live `learn-ice-hoc
 - downloads and m3u.
 
 The working defaults: Detailed stays the page's default player; The Basics gets its own listing page plus a link on related pages, as the plan's site section describes; the mixed rollout is accepted; downloads come later.
+
+## Winger final recordings and publish (21 Oct 2026)
+
+**Recordings** (eleven_v4, voice L0Dsvb3SLTyegXwtm47J, stability 0.30, similarity 0.50, wav_44100):
+- Detailed: 45m49s, 5 requests at a 9,320 cap, 21,268 credits.
+- Basics topic 10: 11m11s, 2 requests, 5,180 credits.
+
+**Detailed Winger is published in place.** The v1 master and scripts were archived to `podcast_style_b/v1/`. The build encoded positions/winger, uploaded it as `winger-de5e5d69`, and kept the guid `learn-ice-hockey:principles:positions/winger`.
+
+**Basics topic 10** is at `podcast_style_b/basics/playing-wing.wav` with its script `playing-wing.md`. It stays unpublished until all 13 Basics episodes exist (the feed gate).
+
+**Basics scripts 1–9 and 11–13** are written (bw-1 to bw-6) and in review.
