@@ -611,6 +611,14 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - :208's shoulder claim must not be read as covering the neck.
     - "In Britain" leaves out Northern Ireland, which the UK guidance and IHUK both cover.
     - A Canada-only scope on "bump, shove or push" would imply it is legal elsewhere. Check every page for this, because USAH 604(c) Note penalises deliberate contact too.
+  - (am) reading_ice_hockey_diagrams:
+    - The page never says that a hit in a no-check game can get you thrown out. KF :29, OV :46–48, CM :247–251 and KT10 :291–293 say "until you know, don't hit" but give no consequence. The escalation is only in the unvoiced Sources trailer :299.
+    - Fix: add one sentence to the body and to KT10, backed by USAH 604(d) (mandatory major plus game misconduct for reckless endangerment), HC 7.3(b), IIHF 101.1 and CARHA 52(a).
+    - **Evidence slip:** the major plus game misconduct is USAH 604(d), not 604(e). 604(e) is the discretionary match penalty.
+  - (an) rules_primer, from its writer:
+    - The boards posture at :33 and :510 has no facing-the-boards fallback.
+    - The U12 3–4 minute minor appears in KF :25 but not in the table at :357.
+    - :1102 says "screen is legal" more confidently than :811.
   - Each needs a layer test and a safety-reviewer.
 - **Detailed status (21 Oct ~09:30).**
   - **Published, 16 of 39:**
