@@ -401,7 +401,7 @@ A centre's shot hand decides which circle they are better in, and coaching staff
 >
 > The defaults assume the house system used throughout this guide: **low zone collapse (zone) defensive-zone coverage** and a **2-1-2 forecheck** (see [Defensive Zone Coverage](defensive_zone_coverage.md) and [Forechecking Systems](forechecking_systems.md)).
 >
-> **A word on "left" and "right".** Which circle is on your left depends on which net you defend and which way you face, so the alignments below use two terms that do not move: **boards-side** — the circle nearer the boards you will exit toward — and **inside**, the other; and your centre's **strong side** (see "Handedness" above). Learn those instead of left and right, and the alignment applies unchanged at either circle — it is a mirror image at the other one.
+> **A word on "left" and "right".** Which circle is on your left depends on which net you defend and which way you face, so the alignments below use two terms that do not move: **boards-side** — the half of the circle nearer the side boards — and **inside**, the half nearer the middle of the ice; and your centre's **strong side** (see "Handedness" above). Learn those instead of left and right, and the alignment applies unchanged at either circle — it is a mirror image at the other one.
 
 ### Defensive-zone draws
 
@@ -532,13 +532,13 @@ Set plays off draws are the closest hockey gets to American football. They also 
 ```facts
 Options: The D one-timer, the winger walk-out, the tip play, or a board-side variation
 Key: The D one-timer works because the shooter's feet are set first — in a CARHA league keep the backswing under fifteen inches, or it is a slap shot: a minor, and a major and ejection if it injures
-Risk: Every defensive alignment expects the D one-timer, so someone must clear the inside winger's shooting lane
+Risk: Every defensive alignment expects the D one-timer, and your inside winger stands in its line — on the drop they step out of it, usually to the net front to screen the goalie
 Read: Use the winger walk-out against a team that immediately pressures the point
 Options: The tip play is the safest, because a point shot into traffic rarely turns into a counterattack
 Risk: Board-side loops and swaps work precisely once per game against an attentive opponent
 ```
 
-**The D one-timer.** The centre pulls the puck straight back to the strong-side defenceman, who shoots first-time. The shooter's feet are set and the traffic is in place before the puck moves. Its weakness: every defensive alignment expects it, so someone — usually the net-front player stepping across — must clear the inside winger's shooting lane.
+**The D one-timer.** The centre pulls the puck straight back to the strong-side defenceman, who shoots first-time. The shooter's feet are set and the traffic is in place before the puck moves. Its weakness: every defensive alignment expects it. And your own inside winger stands in the shot's line, so on the drop they step out of it — usually to the net front to screen the goalie, staying off them.
 
 **The winger walk-out.** The centre pulls to the inside winger in the circle, who takes a stride toward the middle and shoots or feeds the slot. Better than the D one-timer against a team that pressures the point at once, because you attack the space they left.
 
@@ -564,12 +564,12 @@ Read: Play it as though it binds — your goalie stays inside the trapezoid, so 
 Rule: USA Hockey, Hockey Canada and the CARHA rec book write no trapezoid, so there a rim dying in your corner is your goalie's to fetch, though none lets them sit on it; a PWHL goalie plays as if it binds — Rules 1.8 and 27.8 switch it off, but 65.2(viii) keeps the minor
 Rule: No book without a trapezoid, nor the PWHL, lets your goalie sit on a dead rim out of the crease — USA Hockey 614(c) behind the goal line or outside the privileged area; CARHA 58(b) behind the goal line and 61(b) anywhere; PWHL 65.2(i); Hockey Canada clause v of Interpretation 3 to 10.1(a)
 Key: Closer in, and in front of the goal line, your goalie has considerably more latitude under every book — Goaltender owns that test, not this section
-Never: Rim it halfway. Rim it hard enough to reach your winger instead, or tight enough for the goalie to stop it behind the net
+Never: Rim it halfway. Rim it hard enough to reach your winger instead, or tight enough for the goalie to stop it behind the net; in CARHA a backswing past fifteen inches is a slap-shot penalty
 Read: Use the reverse against a team that overloads the boards side
 Action: Call off the glass and out of your zone when you are tired, pinned, or a man down — off it, not over it
 ```
 
-**The quick rim.** Win the puck to the boards-side defenceman, who rims it hard around the boards at once. No possession, no risk, and you are out — every forechecker is standing still at the whistle, so a hard rim is past them before anyone moves. **Rim it hard enough to carry all the way round to your winger, or tight enough that your goalie can legally stop it behind the net and leave it — never in between.** Full treatment in [Breakouts](breakouts.md). ⚠️ **A rim that dies in your corner sends a defenceman to fetch it against a forechecker arriving at full speed** — below.
+**The quick rim.** Win the puck to the boards-side defenceman, who rims it hard around the boards at once. No possession, no risk, and you are out — every forechecker is standing still at the whistle, so a hard rim is past them before anyone moves. **Rim it hard enough to carry all the way round to your winger, or tight enough that your goalie can legally stop it behind the net and leave it — never in between.** In a CARHA league keep the backswing under fifteen inches, or it is a slap-shot penalty. Full treatment in [Breakouts](breakouts.md). ⚠️ **A rim that dies in your corner sends a defenceman to fetch it against a forechecker arriving at full speed** — below.
 
 **Who fetches a rim that dies depends on your book, because of the trapezoid.** Under NHL and IIHF rules your goalie may play a puck behind the goal line only inside the trapezoid, so a rim that dies in your corner is a defenceman's to fetch, with the forecheck coming. ⚠️ **That retrieval is worse than an ordinary one: the forechecker was stationary at the whistle and arrives at full speed.** ⚠️ **So never turn your back to the checker, and never duck** — skates parallel to the boards, forearm and hip to the wall (not the point of the shoulder), head up and chin off the chest ([Body Contact and Battles](../technique/body_contact_and_battles.md)).
 
@@ -1227,7 +1227,7 @@ See [Practice and Development](../off-the-ice/practice_and_development.md) for h
 - **Putting a hand or your body on the puck in the scrum.** Win it with your **stick**. If you took the draw, keep your hand off the puck until a third player has touched it. Falling on it is a minor, and so, usually, is covering it — ⚠️ **inside your own crease it can be a penalty shot, and with your net empty treat it as an awarded goal**; most books decide by where the puck is, Hockey Canada by where you are as well.
 - **Not choosing your dot, where you have one.** Ask early, and take your centre's strong side or the side your one-timer shoots from. NHL and IIHF rules give the choice after an icing and at the start of a power play; USA Hockey gives none; Hockey Canada gives it only in Junior and Senior, to a team that names the dot before the line change starts.
 - **Joining a post-whistle scrum in the offensive zone.** Once the whistle goes, stay outside the circle. Cross its outer edge and the draw moves to the neutral zone — you have thrown away the zone.
-- **Going through the other centre instead of round them on a "lose it forward".** Skate *around* them — they are now between you and the puck, and going round is legal everywhere. Driving through a player without the puck is interference in any game. In **women's hockey** stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct (IIHF Rule 101.1; PWHL Rules 52.1 and 52.5).
+- **Going through the other centre instead of round them on a "lose it forward".** Skate *around* them — they are now between you and the puck, and going round is legal everywhere. Driving through them can be called interference wherever you play, and where checking is barred an illegal check as well. In **women's hockey** stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct (IIHF Rule 101.1; PWHL Rules 52.1 and 52.5).
 - **Sending your skate at the man instead of the puck.** Every book's kicking permission is for the *puck*. ⚠️ **Kicking at an opponent sits at the top of every book's scale:** a match penalty under the NHL, the PWHL, USA Hockey, Hockey Canada and CARHA, and under the IIHF a major at the referee's discretion with an automatic game misconduct. USA Hockey also gives a major and a game misconduct for using your skate to push off an opponent. Under the IIHF book British hockey plays at every level, do not win the draw with a skate at all.
 - **Practising only your strong side.** Spend the reps on your weak side and your worst technique — that is where the points are.
 

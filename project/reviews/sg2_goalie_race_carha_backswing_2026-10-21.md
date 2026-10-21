@@ -40,24 +40,25 @@ Rule basis, verified against `sources/`:
 - check_counts: no change.
 - `npm run build`: exit 0, check-links clean.
 
-## Dimensions
+## Dimensions (D1–D15 per project/reviews/TEMPLATE.md)
 
 | Dim | Status |
 |---|---|
-| D1 rules | ✓ CARHA 79/30(a) and the six books' "fair game", quoted from sources/ |
-| D2 sources | ✓ |
-| D3 cardinal | ✓ pull-up is coaching caution, not claimed as law (sgS2: no book requires pulling up) |
-| D4 propagation | ✓ claim-wide in each file; siblings swept (row (s) open for the glossary; row (r) open for other dump pages, being handled in SG3) |
-| D5 numbers | ✓ fifteen inches from the rule Note |
-| D6–D7 | Out of scope |
-| D8 qualifications | ✓ |
-| D9 facts | ✓ caps checked; facts lines read voiced alone |
-| D10 safety | ✓ sgS-nz and sgS2 |
-| D11 layer test | ✓ per-file tables in the agent reports |
-| D12 spoken | ✓ rendered, same-paragraph verified |
-| D13 site | Build passed. The caption string changed but no layout did. Browser pass deferred to the "Site-reviewer pass due" row |
-| D14 style | ✓ one short clause per site |
-| D15 consistency | ✓ the trigger and limb wording now match across NZ, FC and ZE |
+| D1 Rules accuracy | ✓ CARHA 79/30(a) and "not fair game" in NHL, IIHF, PWHL, USAH 607(d), HC 8.5 and CARHA 52(b) were quoted from sources/ by the reviewers. sg3R later re-verified CARHA 79/30(a) with grep lines |
+| D2 Rules travelling without exceptions | ✓ The CARHA backswing is scoped to CARHA |
+| D3 Rule-set divergence | ✓ CARHA-only, as scoped |
+| D4 Citation integrity | ✓ No new citation |
+| D5 Provenance | Out of scope |
+| D6 Negative existence claims | Out of scope |
+| D7 The cardinal rule | ✓ "Pull up" is coaching caution, not law (sgS2: no book requires it) |
+| D8 Numeric ownership | ✓ Fifteen inches comes from the rule Note |
+| D9 The summary layer | ✓ KT8/KT9/KT10 and CM align with the body |
+| D10 The key-facts layer | ✓ Caps checked; facts lines read voiced alone |
+| D11 Reader safety | ✓ sgS-nz, sgS2 |
+| D12 Read-aloud integrity | ✓ Rendered; each limb in the same paragraph as its act |
+| D13 Folklore | Out of scope |
+| D14 Structure, style, terminology, cross-links | ✓ |
+| D15 The rendered site | Build passed; the caption string changed. Browser pass deferred to the Site-reviewer row (sg3W later rendered the walk-out and one-timer captions only) |
 
 ## What this method could not have found
 

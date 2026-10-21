@@ -300,8 +300,9 @@ const anglingYourRoute = {
 // ---------------------------------------------------------------------------
 //
 // §9 "Defending the net front", step 3: "**Hold your position — never walk them out.** Once
-// you have the inside position, stay there — low and wide, no lean, no push". A screener has
-// no puck, so moving one can be called interference in every game, checking or not; the owner's step 3
+// you have the inside position, stay there — low and wide, no lean, no push". Moving a screener
+// can be called interference wherever you play, and where checking is barred an illegal check as
+// well; the caption states it unconditionally, with no possession reason. The owner's step 3
 // sets out the books.
 //
 // ⚠️ REDRAWN 29 September 2026, WITH THE OWNER'S APPROVAL. The id is unchanged because three
@@ -391,8 +392,9 @@ const netFrontWalkOut = {
   width: 900,
 
   caption:
-    'Your net front; who covers it is your team’s call. ⚠️ Never walk a screener out, in any ' +
-    'game: they have no puck, so it can be called interference. Hold the inside, no lean, no ' +
+    'Your net front; who covers it is your team’s call. ⚠️ Never walk a screener out: it can be ' +
+    'called interference wherever you play, and where checking is barred an illegal check as ' +
+    'well. Hold the inside, no lean, no ' +
     'push, and lift their stick low on the shaft, well below their bottom hand, as the puck ' +
     'arrives, then let go. ' +
     'Move nobody into or across the shaded goal frame and goalie.',

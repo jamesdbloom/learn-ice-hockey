@@ -676,7 +676,7 @@ Key: A rim is not a reverse — a reverse goes back against the flow, behind you
 Risk: Too soft and it dies behind the net; too hard and it comes off the far boards to the weak-side defenceman
 ```
 
-Fire the puck low and hard around the boards, following the curve of the corner, so it travels **onward around the boards** in the direction of play. In a CARHA league keep the backswing short: a wind-up more than fifteen inches behind the puck is a slap-shot minor, and a major that ends your game if it injures someone.
+Fire the puck low and hard around the boards, following the curve of the corner, so it travels **onward around the boards** in the direction of play. In a CARHA league keep the backswing short: a wind-up more than fifteen inches behind the puck is a slap-shot minor, and a major that ends your game if it injures an opponent.
 
 ![](diagram:dump-hard-rim)
 

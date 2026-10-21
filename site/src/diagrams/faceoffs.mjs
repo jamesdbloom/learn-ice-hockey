@@ -909,9 +909,10 @@ const strongSideDot = {
 // `faceoff-ozone-alignment` beside them — the winger is drawn already out of the
 // lane, and the caption says so rather than the picture pretending to.
 //
-// WHO clears it is deliberately not drawn. The section says "usually the net-front
-// player stepping across", and the default five-player alignment it describes has
-// nobody at the net front. Drawing a step-across would have authored the answer.
+// WHERE the winger goes next is deliberately not drawn. The section now says the inside
+// winger steps out of the shot's line on the drop, "usually to the net front to screen
+// the goalie, staying off them" — so the lane is cleared by the winger moving, never by
+// moving a defender. The caption says that in words; a route would have fixed one answer.
 //
 // NEITHER PLAY IS NUMBERED. Both were, and the badges are set a fixed distance
 // along each route from its start, so on the one-timer the shot's badge landed
@@ -935,8 +936,9 @@ const ozoneDOneTimer = {
     'The D one-timer off an offensive-zone draw, a beat after the puck is dropped: the centre pulls ' +
     'it straight back to the strong-side defenceman at the point, who shoots first time. The shot’s ' +
     'line to the net runs straight through the inner hash marks, where the inside winger stands for ' +
-    'the draw, and he is drawn here already out of it; who does the clearing is not drawn at all, ' +
-    'because this five-player alignment has nobody at the net front. All of it is a coaching choice ' +
+    'the draw, so on the drop they step out of it, and they are drawn here already out of it. ' +
+    'Where they go next is not drawn: usually to the net front to screen the goalie, staying off ' +
+    'them. All of it is a coaching choice ' +
     'and not a rule of hockey — find out what your team runs, and what the call is, before your first' +
     ' shift.',
 
