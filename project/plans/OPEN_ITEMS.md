@@ -587,6 +587,30 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - **:560 concussion is incomplete.** It has no aftercare ("someone stays, no driving, no alcohol, worse → help") and no neck line.
     - **The :25 vs :408 goalie-whistle row is withdrawn by dR-pd.** It is not a contradiction: IIHF 9.6 and HC 6.18(a) stop play for a mask hit.
   - Equipment Detailed review (dR-eq) found **IIHF 10.3 adds "slide" and "toss" to the stick-to-skater ban**. Check that equipment.md and its siblings don't voice the NHL-only "throw or shoot" without it.
+  - (ah) language_and_glossary:
+    - The "so" trap appears twice: Overview :39 and body :421 ("a screener has no puck, so moving one… is interference"). Align both with KF :25.
+    - No goalie-contact paragraph (:375–:403, :417–:419) gives an injury reason.
+    - The bump/shove penalty is priced only for Hockey Canada. USAH 604 Note and CARHA 49(a) reach it too.
+  - (ai) A corpus-wide claim to sweep: any "one rulebook / in a game with checking, a goalie holding the puck in the corner can be challenged" sentence. USA Hockey Casebook 607 Sit. 5 is the only book that grants it. Voiced alone, it reads as permission. The rink_map and glossary Detailed scripts both carried it, and both fixed it to "with your stick, never with your body". Check rink_map.md :317-area, language_and_glossary.md, goaltender.md and core_principles.md in every layer.
+  - (aj) team_play_and_culture, from its writer:
+    - :564 "no crosscheck in the back" narrows the ban.
+    - :186 has a backcheck with no gate.
+    - :36 puts a rulebook comparison in the Overview.
+    - :185 "get to the net" is a bench-talk example with no net-drive limbs.
+    - All four rows were confirmed by dR-tpc.
+  - (ak) how_to_watch_hockey, from its writer:
+    - CM :662 and KT7 :717 tell you to be the net-front player with no head-up, post or goalie limb.
+    - :648 is a retrieval with no boards line.
+    - :146 and rink_map :370 disagree on who covers the high slot.
+    - Icing is never defined.
+    - :648 "look over my shoulder before every retrieval" needs the chase gate as well as the boards line.
+    - The :462 rule "no trapezoid is not no restriction" never reached the watch bullet at :451. A goalie who leaves the crease and falls on the puck is a minor in USAH 614(c), HC 10.1(a) Interp. 3(v), CARHA 58(b), NHL/IIHF 63.2(vi).
+    - All rows confirmed by dR-htw.
+  - (al) conditioning_and_recovery, from dR-cr:
+    - CM :606 and KT12 :687 narrow the IIHF 101.1 women's boards limb to "pinning". The rule also bans pushing into the boards; the body at :238 has it in full.
+    - :208's shoulder claim must not be read as covering the neck.
+    - "In Britain" leaves out Northern Ireland, which the UK guidance and IHUK both cover.
+    - A Canada-only scope on "bump, shove or push" would imply it is legal elsewhere. Check every page for this, because USAH 604(c) Note penalises deliberate contact too.
   - Each needs a layer test and a safety-reviewer.
 - **Detailed status (21 Oct ~09:30).**
   - **Published, 16 of 39:**
