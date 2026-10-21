@@ -326,7 +326,7 @@ Action: Move to open ice about five metres away with your stick down, so the puc
 Read: Go in to win the puck when it is a genuine 50-50 scramble and nobody has it
 Read: Stay out and offer an exit when your teammate has the puck and is trying to survive
 Convention: Many teams assign a support player to arrive at the wall — find out if that is your job
-Never: Arrive at a wall battle with your back to the checker, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
+Never: Arrive at a wall battle with your back to anyone coming at you, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
 Never: Hit the boards with the point of your shoulder. Keep the whole shoulder off them too if you can, and let the forearm and hip take the load instead
 Never: Push or hit an opponent on the wall from behind — if their back is to you, go for the puck at their feet. It is checking from behind even in non-checking hockey, and in most books it ends your game
 ```
@@ -339,7 +339,7 @@ Your teammate is pinned on the boards in a battle. Every instinct says go and he
 
 **The exception is real.** Go in to *win the puck* when it is a genuine 50-50 scramble and nobody has it, or when your team makes you the designated second player at the wall, as many do. Stay out and offer an exit when your teammate already has it. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
-**When you do go in, how you arrive outranks winning the puck.** Come in on an angle, feet apart, knees bent. Get your **skates parallel to the wall** before contact and your **forearm and hip to the wall** — never the point of your shoulder, and not the whole shoulder if you can help it. Head up, chin off your chest, and **never turn your back to the checker, never duck.**
+**When you do go in, how you arrive outranks winning the puck.** Come in on an angle, feet apart, knees bent. Get your **skates parallel to the wall** before contact and your **forearm and hip to the wall** — never the point of your shoulder, and not the whole shoulder if you can help it. Head up, chin off your chest, and **never turn your back to anyone coming at you, never duck.**
 
 **And never push or hit the opponent on the wall from behind** — if their back is to you, go for the puck at their feet. A push from behind into the boards is checking from behind even in non-checking hockey. 50-50 pucks at the wall are where checking-from-behind and boarding injuries happen, and none of this is for fast arrivals only: USA Hockey warns that *"Even a light hit from behind could inflict a severe head or neck injury"*. Ducking puts your head into the boards first, which is how necks get broken, and USA Hockey says that injury *"can occur at walking speed."*
 
@@ -583,7 +583,7 @@ Read: Which way your teammate is angling the carrier — stand where the carrier
 Technique: Close enough to take over the coverage, far enough not to be beaten by the same move
 Action: Talk — "I've got your back", "you have time", "man on"; the layer only works if they know it is there. Say "you have time" only when sure, or they take a hit unbraced
 Convention: A double-team is a coaching decision, commonly allowed below your own goal line — ask where and when
-Never: Arrive at a double-team at the wall with your back to the checker, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
+Never: Arrive at a double-team at the wall with your back to anyone coming at you, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
 Rule: A push or hit from behind is checking from behind even in non-check play. It ejects in NHL, IIHF and PWHL 43; if intentional, in Hockey Canada 7.5(a) and CARHA 53(a). USA Hockey 608(a) starts at a minor plus misconduct; a hard one at the boards or head first ejects (608(b); Casebook 608 Situation 1)
 Rule: Into the boards unable to protect themselves: a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and in USA Hockey 608(c) with excessive force on a defenceless player — plan on one, and a likely multi-game suspension, for any reckless push (602(a))
 ```
@@ -607,7 +607,7 @@ To make the layer a real position:
 
 **The exception is a deliberate double-team**, a coaching decision rather than a default. Many teams send two players at a puck on the boards *below their own goal line*, where the net and boards contain a turnover. Under the standard coverage, the second player supports rather than doubling except there. **Ask your coach where and when you may double** — freelancing it is how backdoor goals happen.
 
-**Going in does not change how you arrive:** on an angle, feet apart, knees bent, **skates parallel to the wall**, **forearm and hip to the wall** and never the point of your shoulder, head up, chin off your chest, and **never turn your back to the checker, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet. A push from behind into the boards is checking from behind even where body checking is not allowed, and in most books it ends your game. [Body Contact and Battles §6, Receiving a Hit Safely](../technique/body_contact_and_battles.md) is the full treatment.
+**Going in does not change how you arrive:** on an angle, feet apart, knees bent, **skates parallel to the wall**, **forearm and hip to the wall** and never the point of your shoulder, head up, chin off your chest, and **never turn your back to anyone coming at you, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet. A push from behind into the boards is checking from behind even where body checking is not allowed, and in most books it ends your game. [Body Contact and Battles §6, Receiving a Hit Safely](../technique/body_contact_and_battles.md) is the full treatment.
 
 ### The same distance question, inverted
 
@@ -677,7 +677,7 @@ One question, asked constantly: **"Where are my two options?"**
 - **Passing across the slot in your own end.** An interception there is a point-blank chance for a player already facing your net. Go behind your net or up the wall.
 - **Nobody above the puck.** Everyone chases, the puck turns over, and it is a rush the other way. Before you go below the puck, know who is above it, and if nobody is, it is you.
 - **Wingers drifting into the middle.** It closes the space that made the middle valuable and puts you in your centre's lane. Stay wide unless your rotation sends you in or you are driving the net on a shot.
-- **Piling into a board battle your teammate already controls.** You block the exit. Get open a few metres away with your stick down. If it is a genuine 50-50, or you are your team's designated second player, go in, but arrive safely. Get your skates parallel to the wall, forearm and hip to it, never the point of your shoulder, head up, chin off your chest, and **never turn your back to the checker, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet.
+- **Piling into a board battle your teammate already controls.** You block the exit. Get open a few metres away with your stick down. If it is a genuine 50-50, or you are your team's designated second player, go in, but arrive safely. Get your skates parallel to the wall, forearm and hip to it, never the point of your shoulder, head up, chin off your chest, and **never turn your back to anyone coming at you, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet.
 - **Two defenders on the same carrier when nobody called for it.** Both are beaten by one pass, and someone is unmarked. Layer behind the first defender instead. A called double-team, usually below your own goal line, is the exception. **Even then, never push or hit the opponent on the wall from behind** — go for the puck at their feet. A push from behind into the boards is checking from behind even in non-checking hockey.
 - **Stick off the ice while "open".** No blade, no pass. Keep your blade on the ice where you want the puck.
 - **Finding a good spot once and then stopping.** The puck moved, so your spot moved. Re-check your angle every time the puck moves.
@@ -731,7 +731,7 @@ the right one.*
 2. **Judge support distance by time.** If a pass released now would beat the defender to you, you are in range. Start at two to three stick lengths, tighter under pressure. That is a rule of thumb — no governing body has been found to set one — so let your coach adjust it.
 3. **Take the angle that is missing — behind, level or ahead of the puck.** You need all three at once. In your own end, the lateral pass goes behind your net, never across the slot.
 4. **Before you go below the puck, know who is above it.** "Above" means goal-side of the puck, in every zone. Who stays back is a system choice; that somebody does is not, unless your bench gives it up on purpose.
-5. **To help a teammate in a battle, usually move away; defending, layer rather than converge.** A called double-team is the exception, so ask your coach when. If you do go to the wall, **never turn your back to the checker, never duck, and never push or hit the opponent from behind** — go for the puck at their feet.
+5. **To help a teammate in a battle, usually move away; defending, layer rather than converge.** A called double-team is the exception, so ask your coach when. If you do go to the wall, **never turn your back to anyone coming at you, never duck, and never push or hit the opponent from behind** — go for the puck at their feet.
 6. **Wingers stay wide.** The middle only exists while someone holds the outside, and drifting in deletes it.
 7. **Skate to the space, not to the puck.** If you are not closest and your system has not sent you in, your job is the space.
 8. **Arrive late with speed.** Puck first, feet second — except in your own zone, where the carrier needs the outlet now.

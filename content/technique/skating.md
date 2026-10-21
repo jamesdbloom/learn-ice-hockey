@@ -8,7 +8,7 @@
 
 ## Key focus
 
-**Go into the boards on an angle, head up and chin off your chest.** Never straight at them, never head-first, never turn your back to a checker — a turned back makes any contact a hit from behind, and a head-first hit can injure your spine at walking speed. If contact is coming, skates parallel to the wall, forearm and hip into it. [Body Contact and Battles](body_contact_and_battles.md) has the rest.
+**Go into the boards on an angle, head up and chin off your chest.** Never straight at them, never head-first, never turn your back to anyone coming at you — a turned back makes any contact a hit from behind, and a head-first hit can injure your spine at walking speed. If contact is coming, skates parallel to the wall, forearm and hip into it. [Body Contact and Battles](body_contact_and_battles.md) has the rest.
 
 **Win the first three steps.** Most races to a loose puck or a rebound are settled within about three strides — a coaching observation, not a measurement. Start with short, quick steps; use a crossover start to go sideways or turn back.
 
@@ -131,7 +131,7 @@ Stick on the ice, hands out in front where you can see them, elbows relaxed and 
 Action: Go into the boards on an angle, never straight at them
 Goal: Better puck control and less risk of injury — a leg, side or arm absorbs most of the impact
 Key: Arriving at the boards is the case you control completely, because it is decided several strides out in the route you pick
-Never: Turn your back to the checker — at any speed, in any league, checking or not. It makes the contact a hit from behind, puts your head first into the boards, and you can neither see it nor brace for it
+Never: Turn your back to anyone coming at you — at any speed, in any league, checking or not. Any contact becomes a hit from behind, head first into the boards, unseen and unbraced
 Never: Duck or tuck your chin going into the boards — a tucked chin straightens the cervical spine, which USA Hockey ties to almost all on-ice cervical spine injuries, citing a six-patient case series
 Risk: The spinal injury from a head-down, head-first collision with the boards or a goal post can occur at walking speed — no speed is slow enough to make one safe
 Technique: If contact is coming, skates parallel to the wall, forearm and hip into it — not the point of your shoulder, not the whole shoulder if you can help it. Head up, chin off your chest
@@ -140,7 +140,7 @@ Priority: Everything after the route is contact, not skating. Read Body Contact 
 
 There is one skating decision inside the most important safety rule in hockey. **Go into the boards on an angle, never straight at them** — *"Skating into the boards at an angle means better puck control and less risk of injury… A leg or side or an arm will absorb most of the impact"* (USA Hockey, *Introduction To Body Contact*, "Angling In"). **You control this completely, because you decide it several strides out** in the route you pick.
 
-**The angle also keeps you out of the worst posture.** Arrive square to the boards with a checker closing, and turning to face the wall feels like protection. It is the opposite: it puts your head first into the boards, you can neither see nor brace for the hit, and ⚠️ **it turns the contact into a hit from behind**. USA Hockey's warning to checkers is plain: *"Even a light hit from behind could inflict a severe head or neck injury."* It is written about the *light* hit, so a slow checker is not safe. That is why **never turn your back to the checker** holds at any speed, in any league, whether or not checking is allowed.
+**The angle also keeps you out of the worst posture.** Arrive square to the boards with a checker closing, and turning to face the wall feels like protection. It is the opposite: it puts your head first into the boards, you can neither see nor brace for the hit, and ⚠️ **it turns the contact into a hit from behind**. USA Hockey's warning to checkers is plain: *"Even a light hit from behind could inflict a severe head or neck injury."* It is written about the *light* hit, so a slow checker is not safe. That is why **never turn your back to anyone coming at you** holds at any speed, in any league, whether or not checking is allowed.
 
 **The two prohibitions** ⚠️ **guard against two different injuries.** USA Hockey's walking-speed warning is about the *head-down, head-first* collision, not the turn; the turn is dangerous because of the light-hit warning. Neither is the lesser one, and going in on an angle stops either choice arriving.
 
@@ -955,7 +955,7 @@ For an adult player: **you will not become fast this month, but you can become n
 - **Practising only your strong side.** Weight circle work, stops, tight turns and pivots toward the weak side — two laps weak for every one strong is a rule of thumb, not a measured optimum.
 - **Leaking power out of the stride.** Push out to the side and slightly back, extend fully, and bring the foot back under your hips fast. Pushing straight back makes the blade slide. Whether to finish with a toe flick is contested, so ask your coach. To check, count your strides goal line to goal line, then use fewer.
 - **An arm swing that turns your shoulders.** Keep your shoulders square up the ice. Coaching schools **flatly disagree** on front-to-back versus side-to-side hands, so take your coach's version.
-- **Ducking, arriving square to the boards, or turning your back to the checker.** Go in on an angle, skates parallel to the wall, forearm and hip into it, head up and chin off your chest — never head-first, never turn your back to the checker. **A turned back makes the contact a hit from behind at any speed**, and USA Hockey warns that *"[e]ven a light hit from behind could inflict a severe head or neck injury."*
+- **Ducking, arriving square to the boards, or turning your back to anyone coming at you.** Go in on an angle, skates parallel to the wall, forearm and hip into it, head up and chin off your chest — never head-first, never turn your back to anyone coming at you. **A turned back makes the contact a hit from behind at any speed**, and USA Hockey warns that *"[e]ven a light hit from behind could inflict a severe head or neck injury."*
 - **Never having learned to fall — or getting the chin backwards.** Falling *to the ice*: go to the side, hands in, chin tucked. Going *into the boards*: head up, chin off your chest; spread stick, gloves and forearms on the glass only if you are already facing it with no time to turn. Sliding into the boards: skates or side first, head up.
 - **Bouncing straight back up.** Take two or three seconds first, and stay down if you are hurt. **A fall can cause a concussion without knocking you out. If one is suspected, come off, do not return that day, and do not go back on the ice until a medical professional clears you** — see [Conditioning and Recovery → Concussion](../off-the-ice/conditioning_and_recovery.md#concussion).
 
@@ -1002,7 +1002,7 @@ it wrong and then checking teaches more than recognising the right answer.*
 
 ## Key Takeaways
 
-1. **Go into the boards on an angle, head up and chin off your chest.** Never head-first, and never turn your back to a checker — that makes it a hit from behind, at any speed, checking league or not. If contact is coming, skates parallel, forearm and hip into the wall. [Body Contact and Battles](body_contact_and_battles.md) has the rest.
+1. **Go into the boards on an angle, head up and chin off your chest.** Never head-first, and never turn your back to anyone coming at you — that makes it a hit from behind, at any speed, checking league or not. If contact is coming, skates parallel, forearm and hip into the wall. [Body Contact and Battles](body_contact_and_battles.md) has the rest.
 2. **Whatever you are doing, stay low** — knees over your toes, chest up, weight on the balls of your feet, head and hands up. A hard start's forward lean is the one exception.
 3. **Keep your eyes up and scanning, with the puck or without it** — especially out of a start and through a turn.
 4. **To cut back, slip a checker or protect the puck, you need outside edges — so train them on purpose.**

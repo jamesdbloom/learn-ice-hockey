@@ -345,10 +345,10 @@ You will hear both answers from different coaches, and both are defensible. [For
 
 ## Gap control as a team concept
 
-**In short:** Gap is a five-man outcome: forwards tracking back above the puck are what let your defencemen step up.
+**In short:** Gap is a five-player outcome: forwards tracking back above the puck are what let your defencemen step up.
 
 ```facts
-Key: Gap is a five-man outcome, not a two-man one — the single biggest thing amateur teams get wrong about the neutral zone
+Key: Gap is a five-player outcome, not a two-player one — the single biggest thing amateur teams get wrong about the neutral zone
 Convention: A tight gap is roughly one to one and a half stick lengths, close enough to touch their stick with yours if you reach — coaching convention rather than a measured figure, and coaching material does not agree on it
 Read: Three forwards above the puck and tracking back → your D can step up and squeeze; one forward gliding and two coasting → your D must back off
 Action: As a forward, get on the defensive side of your check immediately and track home through the middle, not along the wall
@@ -362,7 +362,7 @@ Rule: Every CARHA charging major ends your game (30(a)) and brings at least a on
 Rule: Charge a player "in such a way that they are unable to defend themselves", or charge to injure, and Hockey Canada 7.4(c) makes it a mandatory match penalty; a deliberate attempt to injure is a mandatory match under CARHA 48(a), USA Hockey 602(a) and NHL and PWHL 21.1 too
 ```
 
-Gap control is usually taught as a defenceman's skill, and [Defending the Rush](defending_the_rush.md) covers the technique. But **gap is a five-man outcome, not a two-man one** — the single biggest thing amateur teams get wrong about the neutral zone.
+Gap control is usually taught as a defenceman's skill, and [Defending the Rush](defending_the_rush.md) covers the technique. But **gap is a five-player outcome, not a two-player one** — the single biggest thing amateur teams get wrong about the neutral zone.
 
 **What gap means.** The distance between you and the attacker you are responsible for. A *tight* gap here is roughly **one to one and a half stick lengths** — close enough to touch their stick with yours if you reach. The ordinary neutral-zone gap used throughout is **two to three stick lengths**.
 
@@ -393,7 +393,7 @@ Both are coaching convention, and coaching material does not agree. Some materia
 **What it costs.** ⚠️ **Charging binds every division, checking league or not, and no book here caps it at a minor.** The charging rules carry no division clause, where the body-checking rules that restrict themselves say so (USA Hockey 604(a), Hockey Canada 7.3).
 - **Stride count runs the other way for anyone who learned the American number.** Hockey Canada 7.4(ii) makes *"two or more strides"* the offence; USA Hockey 607's Note and CARHA 52's Note (CARHA-affiliated adult leagues only) need *"more than two"*; IIHF 42.1 (2026/27) says only *"multiple strides"*; NHL 42.1 judges it *"as a result of distance traveled"*.
 - **USA Hockey:** no minor on its own — 607(a) reads *"A minor plus a misconduct or a major plus a game misconduct penalty shall be assessed"*. A reckless charge is a mandatory major plus game misconduct (607(b)), and plan on a match for it: 602(a) says one *"shall be assessed"* to any player who *"recklessly endangers or attempts to injure"*, though 607(e) says only *"may also"*.
-- **Hockey Canada and CARHA:** a charge that injures is a mandatory major plus game misconduct (7.4(b), 52(a)), and every charging major ends your game (7.4(e), 30(a)). Hockey Canada 7.4(c) makes a charge *"in such a way that they are unable to defend themselves"*, or a deliberate attempt to injure, a mandatory match penalty; CARHA 48(a) makes one mandatory for any player who *"deliberately injures or attempts to injure an opponent… in any manner"*.
+- **Hockey Canada and CARHA:** a charge that injures is a mandatory major plus game misconduct (7.4(b), 52(a)), and every charging major ends your game (7.4(e), 30(a)) — and under CARHA at least the next one too (32(d)). Hockey Canada 7.4(c) makes a charge *"in such a way that they are unable to defend themselves"*, or a deliberate attempt to injure, a mandatory match penalty; CARHA 48(a) makes one mandatory for any player who *"deliberately injures or attempts to injure an opponent… in any manner"*.
 - **NHL and PWHL:** a charging major that injures the face or head carries a mandatory game misconduct (42.5). 21.1 makes a match mandatory for any player who *"deliberately attempts to injure or who deliberately injures an opponent in any manner"*; their charging rule's own match (42.4) is the referee's call, so plan on 21.1's.
 - **EIHL:** the Casebook adds a mandatory game misconduct when a charging major injures the face or head (Rule 42); otherwise the IIHF book below applies.
 - **IIHF:** a charge to the head goes to the head-check rule, where any major carries an automatic game misconduct (48.3); 42.4 leaves a major and game misconduct for any other reckless charge to the referee.
@@ -596,7 +596,7 @@ The regroup is a defenceman's pass but a forward's tactic, and forwards get it w
 
 ```facts
 Read: You have numbers — take a developing 3-on-2 rather than throwing it away
-Read: Your change is due — a hard dump past the red line and a change is a legitimate tactic; in CARHA leagues keep the backswing short, as a wind-up past fifteen inches is a slap-shot penalty
+Read: Your change is due: dump it hard past the red line and change; in CARHA keep the backswing short — past fifteen inches is a slap-shot minor; if it injures, ejection and at least a one-game ban
 Read: The pass back is not clean — a regroup into pressure is just a turnover in a worse place
 ```
 
@@ -722,7 +722,7 @@ A defensive structure defends one side at a time — the whole thing slides stro
 - **Chip it off the boards past the defender's outside and skate around them** — the [chip-and-chase](#chip-and-chase), and only if a second forward is coming to support it.
 - **Turn it back to a defenceman and regroup** if neither of those is there.
 
-Do not stop on the wall and try to beat the stepping defender one-on-one with nobody behind you — a turnover there is a rush the other way with you on the wrong side. Which answer comes first is a coaching choice (some teams chip every wall puck, others play it to the middle), so ask your bench. Take the pass with your skates parallel to the boards and your head up, and never turn your back to the checker — a defender stepping up on you is exactly when that matters.
+Do not stop on the wall and try to beat the stepping defender one-on-one with nobody behind you — a turnover there is a rush the other way with you on the wrong side. Which answer comes first is a coaching choice (some teams chip every wall puck, others play it to the middle), so ask your bench. Take the pass with your skates parallel to the boards and your head up, and never turn your back to anyone coming at you — a defender stepping up on you is exactly when that matters.
 
 ---
 
@@ -733,7 +733,7 @@ Do not stop on the wall and try to beat the stepping defender one-on-one with no
 ```facts
 Action: Move the puck faster than they can slide — two quick passes, D-to-D or wall-middle-wall, beat five skaters sliding; a trap beats teams that carry the puck, not teams that pass it
 Action: Use the boards deliberately — rim or chip it to a forward arriving behind pressure, especially against F2 stepping up; in CARHA keep the backswing under fifteen inches or it is a slap-shot penalty
-Never: Turn your back to the checker on a rim or a chip along the wall, and never duck — keep your head up and your chin off your chest
+Never: Turn your back to anyone coming at you on a rim or a chip along the wall, and never duck — keep your head up and your chin off your chest
 Read: Stretch a forward behind a 1-3-1 or a trap, not a 1-4: chip past its flat line and race for it, and if the goalie comes out for it, pull up — never finish on a goalie
 Never: Attempt the seam unless it is obviously there — the highest-risk answer, the one amateur players attempt first, and the one to try last
 Options: Dump it past the red line on purpose and hunt it with three forwards when the entry is not on — worth more than a turnover at the blue line
@@ -747,7 +747,7 @@ A trap hands you the puck and defends the ice instead, so possession alone tells
 
 **2. Use the boards deliberately.** A hard rim or a chip off the wall goes past a defender playing the ice, not the boards. Chipping it along the wall to a forward arriving behind the pressure is unglamorous and very effective, especially against F2 stepping up on your winger. **In a CARHA league, rim it with a short backswing:** CARHA's Rule 79 makes any backswing past fifteen inches a slap shot — a minor, and a major if it injures, which ejects you and sits you out at least the next game (Rules 30(a), 32(d)).
 
-**That play sends the receiver onto a puck on the boards with a defender closing** — in most structures above the strong-side defenceman's job is to step up hard on a pass to the wall, so expect to be met. ⚠️ **Never turn your back to the checker, and never duck.** Get your **skates parallel to the boards**, forearm and hip to the wall, head up and chin off your chest — **not the point of your shoulder, and not the whole shoulder if you can help it.** **This holds in a non-checking league too:** the wall does not need an opponent to hurt you, and a legal angle-off puts you into it just as a check does. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full rule and the evidence.
+**That play sends the receiver onto a puck on the boards with a defender closing** — in most structures above the strong-side defenceman's job is to step up hard on a pass to the wall, so expect to be met. ⚠️ **Never turn your back to anyone coming at you, and never duck.** Get your **skates parallel to the boards**, forearm and hip to the wall, head up and chin off your chest — **not the point of your shoulder, and not the whole shoulder if you can help it.** **This holds in a non-checking league too:** the wall does not need an opponent to hurt you, and a legal angle-off puts you into it just as a check does. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full rule and the evidence.
 
 **3. Stretch a forward behind the wall — against a 1-3-1 or a trap, not a 1-4.** A 1-3-1 lives ahead of one defenceman, so a forward behind the three-man line taking a legal stretch pass is instantly 1-on-1 or better. Even the *threat* makes the wall drop back and opens ice in front of it. **This only works while the wall is out in the neutral zone.** Against a 1-4 on its own blue line a receiver behind it is offside, so **chip hard past the flat line and race for it** — nobody in a flat line is deeper than anybody else, and only the goalie is beyond. **If the goalie comes out for it, pull up and take away the outlet rather than finish on them** — a goalie outside the crease is not fair game in any rulebook here, and [Forechecking Systems](forechecking_systems.md#why-this-matters-so-much-to-a-forechecker) covers what contact with one costs.
 
@@ -858,7 +858,7 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 - **Standing up at the blue line with no backpressure.** **Check over your shoulder first; with nobody coming back, back off and keep the attacker in front of you and outside.** Standing up alone turns a rush into a breakaway. If the puck is chipped past you, go for the puck, never the player.
 - **Finishing a step up as a hit, or reading a head-down carrier as a licence to arrive harder.** **Close the space with your feet and keep the attacker in front of you — take their time and the puck, do not punish a carrier who has not seen you.** Miss and the rush is past you; land it and it is charging, in every division, checking league or not. ⚠️ **No book here caps charging at a minor**: Hockey Canada makes a charge on a player who cannot defend themselves a mandatory match penalty, and in several books a charge that injures ends your game. [Gap control as a team concept](#gap-control-as-a-team-concept) sets out each book.
 - **Taking a middle-lane relay with your head down over the puck.** **Scan before the puck arrives, then take it with your head up.** Coaching material puts the contact in the middle — **consensus rather than a counted ranking**. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the head-up rule.
-- **Chasing a rim or a chip along the wall with your back to the checker.** **Never turn your back to the checker, and never duck** — head up, chin off your chest. A wall hurts you without an opponent, so this holds in a non-checking league too.
+- **Chasing a rim or a chip along the wall with your back to the play.** **Never turn your back to anyone coming at you, and never duck** — head up, chin off your chest. A wall hurts you without an opponent, so this holds in a non-checking league too.
 - **Assuming everyone is playing the same structure.** **Confirm the plan on the bench, not during the shift.** Half your unit pressuring and half trapping opens a seam through your own team.
 - **Confusing the neutral zone 1-3-1 with the power-play 1-3-1.** **When a coach calls a 1-3-1, check which zone they mean.** Same digits, different shape and job.
 
@@ -913,7 +913,7 @@ document, that is named too.*
 5. **Regroup instead of forcing a bad entry.** Forwards: curl back with the puck and turn up as it goes D-to-D — never stand still, never leave before your defenceman has it. Defencemen: after a D-to-D, sink into mid-ice for the return. Skip it when you have numbers, your change is due, or the pass back is not clean.
 6. **Three forwards, three lanes.** Support means being somewhere else, not close. Use the middle as a one-touch relay — wall to middle to far wall makes their structure slide twice. **Take the middle-lane puck with your head up**: coaching material puts the contact there — **consensus rather than a counted ranking**.
 7. **Be the late man, or take the trailer.** Attacking, trail a full gap — 10 to 15 feet — behind a two-man rush and arrive into the high slot, and be first back if it turns over. Backchecking, the trailer is usually yours rather than your defencemen's — ask whether your team gives the trailer to the weak-side defenceman.
-8. **Beat a trap by moving the puck, not carrying it** — quick passes, the boards, a stretch forward behind a wall still out in the neutral zone, or a dump you chase. Try the seam last. Against a 1-4, chip past the flat line and race; if the goalie comes out for it, pull up. ⚠️ **On the boards, never turn your back to the checker and never duck — head up, chin off your chest, even in a non-checking league.**
+8. **Beat a trap by moving the puck, not carrying it** — quick passes, the boards, a stretch forward behind a wall still out in the neutral zone, or a dump you chase. Try the seam last. Against a 1-4, chip past the flat line and race; if the goalie comes out for it, pull up. ⚠️ **On the boards, never turn your back to anyone coming at you and never duck — head up, chin off your chest, even in a non-checking league.**
 9. **Carry it in when the line is yours; when it is not, a dump you chase beats a turnover at the line.** Get it over the red line first or it is icing, and in several books your tired line cannot change. Chase it unless you are changing.
 10. **Before a neutral-zone draw, know whether you are winning it forward or back, and who your man is if you lose it.** These draws turn straight into rushes. Hold your line until the puck drops — creeping gets your centre thrown out.
 
