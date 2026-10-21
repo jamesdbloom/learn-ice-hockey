@@ -225,7 +225,7 @@ Roughly a fifth of the time it is you: **F1 on the forecheck, the first defender
 
 ```facts
 Position: Four of you are off the puck on defence at any moment, and only one teammate is on it
-Risk: Those four non-pressuring players are where goals get conceded, because they either all chase the puck or all stand still
+Risk: The four players away from the puck are where goals get conceded, because they either all chase the puck or all stand still
 Key: The single organising question is "what is behind me, and who is it?"
 ```
 
@@ -544,7 +544,7 @@ Rule: No-contact screening of a forechecker off your puck carrier is named in th
 Rule: Screening a forechecker off your own puck carrier, even without contact, is not capped at a minor in a CARHA-affiliated adult league — CARHA Rule 66(a) names it in Note 2 and reads "A Minor penalty for interference or, at the discretion of the Referee, a Major penalty and a Game Misconduct penalty"
 Rule: The NHL, IIHF and PWHL do not name the no-contact screen, but their 56.2 (PWHL 57.2) reaches restraining a forechecker and impeding anyone without the puck — only the right to ice you already stand on keeps a standing screen legal, not sliding across to keep it
 Rule: Hockey Canada and CARHA give the side with the puck no right to its ice — both make impeding any opponent not in possession interference (8.3; 66(a)), and CARHA 66(a) Note 2 lets only defenders "stand their ground"
-Rule: Those two books are not one book here, and the IIHF's is the British one — its 56.1 opens with a general definition of interference the NHL has no counterpart to, and its 56.2 minor "shall be assessed" where the NHL's "can be imposed"
+Rule: The NHL and IIHF differ here, and the IIHF's is the British one — its 56.1 opens with a general definition of interference the NHL has no counterpart to, and its 56.2 minor "shall be assessed" where the NHL's "can be imposed"
 Never: Stop in a defender's path and take the contact, or drift sideways into a chaser
 Key: "Screen" here means the goalie's sightline and nothing else — NHL Rule 56's words for skater-on-skater work are body position, blocking, picks and interference, so call yours traffic, or a route
 Convention: Obstruction is called far less consistently at amateur level than in the NHL, in both directions — do not build your game on getting away with picks, and do not assume the referee will punish theirs
