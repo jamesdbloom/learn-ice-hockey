@@ -74,3 +74,14 @@ Three brief-leak passages were cut by stream copy:
 All joins were checked by transcription. The episode was published at backup 2026-10-20T235826; the new audio file is scanning_and_anticipation-1da9a65c.
 
 **Follow-up for the brief:** its example opener names a topic, and NotebookLM copied it verbatim. Replace it with a topic-neutral instruction.
+
+## 37 v2 and 17 v2 (regenerated 21 Oct ~06:41 with their own focus files)
+
+| Track | Episode | Runtime | Verdict | Notes |
+|---|---|---|---|---|
+| 37 v2 | The Mental Game | 52.2 min | **SHIP after edit** | All four v1 failures are fixed. Crisis numbers at 1:07, after a 50-second cold open. Abuse and safeguarding line at 44:33. "Some fear is right" at 41:00. Medical clearance at 41:29. All Group A items are present. Rules about 3%. 0 source references. Two brief leaks cut by stream copy: 21:15.2–21:19.0 ("ask your league or rather look at the recent literature") and 39:44.6–39:47.95 ("The plain reason for this instruction is vital for safety"). Both joins checked by transcription. Accepted MAJORs that cannot be fixed by cutting: the top-ten recap drops the abuse line (#10) and the fear limbs (#8), and "never retaliate physically" (KT11) is never voiced. MINORs: one "his" (41:17), some invented physiology, and "whatever rule book" for officials, which is the harsher direction. |
+| 17 v2 | Forechecking Systems | 16.8 min | **NO-GO (too thin, constraint 12)** | All four v1 faults are fixed, but the episode is a third of v1's length. Missing as a result: the angle into the corners as head protection, and "hold your line" (a late veer is a check). Also seven brief leaks ("checking gate", "safety absolute"). The pack .txt predates 076e9b9 and still says "arrive at full speed". **Regenerate after the page's goalie-limb edit is committed, from a rebuilt pack.** Add to the focus file: the corner angle as head protection; hold your line; "pinch on anything" means the puck; pull up if the goalie comes out; never say gate, absolute or mandatory. Trim the NEVER SAY list to stay under 5,000. |
+
+Published 37 v2: backups 2026-10-21T064940 and T065021; build encoded 1; uploaded `mental_game-c7644a05`.
+
+**Prompt fix for later batches:** every top-ten item that has a limit must state the limit.
