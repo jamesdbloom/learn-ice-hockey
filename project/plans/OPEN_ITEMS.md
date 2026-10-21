@@ -595,16 +595,15 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - CARHA 62(b) makes a follow-through above the shoulders a major even if no one is hurt. No slap-shot site except shooting :983 says so. Routing note: send agents to sources/hc.txt, not hc_2026-08-print.txt.
   - Cosmetic: the dz-walk-down-man label "goes with the carrier" crosses the blue line at 400px.
 - **Site-reviewer pass for SG7/SG8: DONE 21 Oct** (sg7rSite, recorded in sg7_remainder_2026-10-21.md). The body_contact §6 heading renders in the TOC and its anchor works. All 7 caption hosts pass at 400px and desktop, in light and dark.
-- **Facts-antecedent nits (pre-existing, found 21 Oct):** offensive_zone_play :360 is a Risk: facts line that is voiced alone, and its "those two" refers to the rim-or-reverse read on :358–359. forechecking :914 also has "those two", which has not been read yet. Run check_facts_antecedents.py.
+- **Facts-antecedent nits: OZP :360 is fixed** (it now names "rimming when you should reverse…"). FC :915 is fine, because "those two books" refers back to books named in the previous sentence. **Tool gap (scripts/, change between waves):** `check_facts_antecedents.py` does not catch a bare numeric pointer like "those two" or "both of them". Add that pattern.
 - **SG9 CLOSED 21 Oct** (record sg9_usah_next_game_once_per_page_2026-10-21.md). USA Hockey 404(b) is now stated once per page across 30 files. Still open:
   - per-book R2 candidates left by ruling (zone_entries :261/:378, DTR :460/:502/:891, defender :355/:889);
   - a check of other "in addition to any other required suspensions" sites (615(f), 403(b)).
+  - forechecking :663 and OZP :1000 list "a hit from behind" as a game misconduct example. Under USAH 608(a) it can be a minor plus misconduct; consider "a major for a hit from behind". This errs on the harsh side.
+  - The earlier "older candidates" are covered by the once-per-page lines: faceoffs :1222 by :295/:306, puck_handling KT10 and the CM cage-grab by :491/:530, and center facts :765 by :732.
 - **Site-reviewer pass DONE 21 Oct** (record site_review_pass_2026-10-21.md). Every deferred item passes, with 0 bare glyphs, 0 panels and a clean console across 39 pages × 2 widths × 2 themes. New rows:
-  - (sr1) CSS: `.table-scroll thead th{white-space:nowrap}` clips the last header of the rules_primer §10 table at 1440 (807/790 px), and the DZC comparison table scrolls 99 px with no fade at desktop width. Let headers wrap at the desktop breakpoint, or show the fade at every width.
-  - (sr2) CSS: `h4` (17.6 px/700) is hard to tell from a bold lead sentence (17 px/700). This is site-wide, with 76 h4.
+  - sr1, sr2, sr4 and sr5 are DONE 21 Oct (record cleanup_sr_nits_2026-10-21.md). Still open: the §10 and DZC tables still overflow by 15–117 px at about 960–1040 and 1280–1320 px (cell min-width 7rem × 6). The scroll shadow is faint in dark mode.
   - (sr3) The SG2 nz-1-4 caption nit is still open: "The answer drawn is the race; pull up if the goalie comes out".
-  - (sr4) rink_map: "⚠️ The PWHL's number is not the NHL's" puts amber on a citation. It needs a content-reviewer.
-  - (sr5) rink_map :458: the amber run sits on the softer "unnecessary or avoidable contact" limb, while the stricter "stick, never your body" is plain. It needs a safety-reviewer.
 
 - **equipment :441:** the IIHF prints "opposing Player(s)" with a capital P, while the shared quotation uses NHL/PWHL casing. Note it if the quote is ever credited to the IIHF alone.
 - **X wave done 20 Oct** (record x_readability_2026-10-20.md; committed and pushed as d93a658): readability pages 5–7 (equipment, playing_without_the_puck, game_management). Next by ranking: offensive_zone_play, special_teams, faceoffs, defending_the_rush, breakouts, center, defensive_zone_coverage, zone_entries, shooting, defender, risk_management, …

@@ -1003,10 +1003,28 @@ a.chip:hover {
   1.1rem keeps it clearly under h3's 1.2rem.
 */
 .prose h4 {
-  margin: 2rem 0 0.5rem;
-  font-size: 1.1rem;
+  margin: 2.25rem 0 0.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--text);
+}
+
+/*
+  21 October 2026: the three cues above were still not enough against a
+  paragraph that OPENS on a bold lead sentence — 17.6px/700 against 17px/650
+  reads as the same thing. So h4 gets a cue no paragraph can carry: a short
+  accent rule above it, the mark of a section opening. Size steps to 18px
+  (still under h3's 19.2px) and the top margin to 2.25rem. --accent is defined
+  for both themes, so the rule needs no dark-mode override.
+*/
+.prose h4::before {
+  content: '';
+  display: block;
+  width: 1.75rem;
+  height: 3px;
+  margin-bottom: 0.5rem;
+  border-radius: 2px;
+  background: var(--accent);
 }
 
 .prose p,
@@ -1367,6 +1385,33 @@ figcaption .warn-inline {
   background: var(--bg-inset);
   font-weight: 650;
   white-space: nowrap;
+}
+
+/*
+  On a wide screen a header may wrap. `nowrap` sized each column to its longest
+  header, and at 1440 that alone pushed the six-column tables past the column:
+  rules_primer §10 by 17px (its last header half-cut at the wrapper's edge) and
+  the DZC system comparison by 99px, overflows too small for the scroll cue to
+  read as one. With wrapping both fit at 1440 and most desktop widths, and overflow far less where they still scroll (about 960–1040 and 1280–1320). Phones keep `nowrap`: there a six-column
+  table scrolls whatever the header does, and a wrapped header in a 7rem column
+  becomes a three-line ribbon the sticky row label then has to clear.
+*/
+@media (min-width: 60rem) {
+  .table-scroll thead th {
+    white-space: normal;
+  }
+
+  /*
+    ⚠️ A wrapped header is taller, and the sticky row label in a `--tall` table
+    is offset by `--table-head-h` (2.75rem, a ONE-line header). Measured at
+    960-1920: the two `--tall` headers wrap to 60px and 81px, so the label would
+    tuck 16-37px under the pinned header. 5.25rem (84px) clears the tallest;
+    where a header is shorter the label sits a little below it, which is the
+    safe direction.
+  */
+  .table-scroll--tall {
+    --table-head-h: 5.25rem;
+  }
 }
 
 .table-scroll tbody tr:last-child td {
