@@ -395,7 +395,7 @@ Widely described in coaching material as the most common *base* structure in hoc
 
 **When a coach picks it:** Protecting a lead; against a fast transition team; when your forwards are tired; when your team is undisciplined and keeps getting caught deep; as the standard rec-league answer, because it is forgiving.
 
-**How it is beaten:** Patience and puck movement. D-to-D passes to shift the wall, then a quick-up to a winger who has come *underneath* the fox rather than standing on the wall in front of them. Also the simple stretch pass or chip past all four players above F1, because **the two defencemen are the deepest layer the 1-2-2 has** — the weak-side D is the safety *inside* the shape, covering the middle behind the forwards, not a fifth man stationed behind the pair. Get a puck past the D line and there is nobody at all in behind it.
+**How it is beaten:** Patience and puck movement. D-to-D passes to shift the wall, then a quick-up to a winger who has come *underneath* the fox rather than standing on the wall in front of them. Also the simple stretch pass or chip past all four players above F1, because **the two defencemen are the deepest layer the 1-2-2 has** — the weak-side D is the safety *inside* the shape, covering the middle behind the forwards, not a fifth man stationed behind the pair. Get a puck past the D line and there is nobody but the goalie in behind it.
 
 #### The 1-2-2 as a neutral-zone structure
 
@@ -466,7 +466,7 @@ Convention: The lone forechecker steers and slows the exit rather than pressurin
 Goal: Preventing odd-man rushes and high-danger chances, full stop
 Risk: It concedes any realistic chance of getting the puck back in their end, and therefore any offence
 Read: A situational tool only — a one-goal lead in the last two minutes, the end of a period, no legs left, or a far better opponent
-Countered by: A hard chip past the flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line
+Countered by: A hard chip past the flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line; if the goalie comes out for it, pull up
 ```
 
 **Shape:** One forward applying token pressure; the other four in a flat line across the ice at or near **their own** blue line.
@@ -480,7 +480,7 @@ Countered by: A hard chip past the flat line and a race for it — not a stretch
 
 ![](diagram:nz-1-4)
 
-**How it is beaten:** patience and a willingness to dump the puck in and forecheck it. A 1-4 dares you to enter the zone with control; the counter is to stop trying, put the puck behind them, and turn the game into a series of retrievals. Concretely, **a hard chip past the flat line and a race for it** — because the line is flat, nobody is deeper than anybody else, so anything put behind them is a genuine footrace with only the goalie beyond. Note that a *stretch pass* is the wrong tool here: a 1-4 sits on its own blue line, so a receiver already behind the wall would be offside. Chip it past and skate onto it. See [Zone Entries](zone_entries.md).
+**How it is beaten:** patience and a willingness to dump the puck in and forecheck it. A 1-4 dares you to enter the zone with control; the counter is to stop trying, put the puck behind them, and turn the game into a series of retrievals. Concretely, **a hard chip past the flat line and a race for it** — because the line is flat, nobody is deeper than anybody else, so anything put behind them is a genuine footrace with only the goalie beyond. Note that a *stretch pass* is the wrong tool here: a 1-4 sits on its own blue line, so a receiver already behind the wall would be offside. Chip it past and skate onto it, and if the goalie comes out for it, pull up. See [Zone Entries](zone_entries.md).
 
 ---
 
@@ -1009,14 +1009,14 @@ You will spend as much time breaking a forecheck as running one. Recognising whi
 Action: Against an aggressive forecheck, move the puck early — before pressure arrives, not after
 Options: A reverse — the puck sent back against the flow — beats an over-committed F1; a rim — sent onward around the boards — beats one who has sealed you in
 Targets: Your winger should come underneath the pressure to receive, not stand still on the wall
-Action: Against containment, use D-to-D and controlled regroups to make the wall shift, then chip past the line and race for it
+Action: Against containment, use D-to-D and controlled regroups to make the wall shift, then chip past the line and race for it; if the goalie comes out for it, pull up
 Options: Bank passes off the boards to teammates who have already got behind the line
 Never: Skate into the middle of three players — the one thing that never works
 Never: Turn your back to the checker on the wall, and never duck — keep your head up and your chin off your chest, in every league, checking or not
 ```
 
 - **Against an aggressive forecheck:** move the puck early — before pressure arrives, not after. Use the reverse against an over-committed F1 and the rim against a sealing one. Attack the space behind their pinching defencemen; a rim or a chip that gets past the point is worth more than a pretty pass. Your winger should be coming *underneath* the pressure to receive, not standing still on the wall.
-- **Against a containment forecheck or trap:** stop trying to force it. Use D-to-D and controlled regroups to make the wall shift, chip the puck past the line of players and race for it, and use bank passes off the boards to teammates who have already got behind the line. The one thing that never works is skating into the middle of three players.
+- **Against a containment forecheck or trap:** stop trying to force it. Use D-to-D and controlled regroups to make the wall shift, chip the puck past the line of players and race for it, pulling up if the goalie comes out for it, and use bank passes off the boards to teammates who have already got behind the line. The one thing that never works is skating into the middle of three players.
 
 **One safety rule outranks every tactical choice above, and it is yours whatever league you play in** — unexpected contact happens in non-check hockey too, and the boards are just as hard. ⚠️ **Never turn your back to the checker, and never duck.** Skates parallel to the wall, forearm and hip to it, head up and chin off your chest — never the point of your shoulder, and no part of it if you can help it. A turned back makes any contact a hit from behind you cannot see or brace for, and a head-down collision with the boards can injure your neck even at walking speed. Squaring your chest to the wall is the fallback when you are already facing it and cannot turn, not the orientation to aim for. [When to pinch](#when-to-pinch) sets out USA Hockey's teaching, and [Body Contact and Battles](../technique/body_contact_and_battles.md), §6, the full three-case rule and the technique.
 
@@ -1106,7 +1106,7 @@ Before any of these, ⚠️ **find out whether you may body check at all — and
 7. **Dump it into a corner, not behind the net.** Under an NHL or IIHF trapezoid their goalie may not play it there, so a skater fetches it, back turned to you — never finish into that back. USA Hockey, Hockey Canada, CARHA and the PWHL have none. ⚠️ **🇬🇧 In any British competition, plan for their goalie to come out.** Either way, keep off the goalie.
 8. **When their goalie plays the puck outside the crease, take the outlet and pull up — no book makes them *"fair game"*.** ⚠️ **A charge on one throws you out** under Hockey Canada wherever it happens, under CARHA in the crease or if anyone is injured, and under USA Hockey if reckless. CARHA can eject for any deliberate contact.
 9. **Off a dump-in, hunt; off a turnover, recover; off a control setup, choose.** Take the puck or the ice, never the back of a player facing the end boards. If the hit stays on the back, every book but USA Hockey ejects, even at its lowest tier; USA Hockey must if forceful at the boards, head first or reckless.
-10. **Read the forecheck you face in one second.** Two or more forwards below the top of the circles means aggressive: move the puck early — a reverse beats an over-committed F1, a rim beats one who has sealed you in. One means containment: shift the wall with D-to-D, then chip it past the line and skate onto it.
+10. **Read the forecheck you face in one second.** Two or more forwards below the top of the circles means aggressive: move the puck early — a reverse beats an over-committed F1, a rim beats one who has sealed you in. One means containment: shift the wall with D-to-D, then chip it past the line and skate onto it, and if the goalie comes out for it, pull up.
 
 ---
 

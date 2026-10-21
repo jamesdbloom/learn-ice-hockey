@@ -267,7 +267,7 @@ Position: One forechecker and four skaters in a flat line across your own blue l
 Read: Use it protecting a lead in the last minute or two, killing time with an exhausted stranded unit, or defending a 6-on-5 against a pulled goalie
 Goal: Let almost nothing through — controlled entries against a disciplined 1-4 are close to impossible and odd-man rushes almost never happen
 Risk: It concedes the whole neutral zone and generates no offence, so you spend the shift in your own end and clearing becomes dumping
-Countered by: A hard chip past the flat line and a race for it — nobody in a flat line is deeper than anybody else
+Countered by: A hard chip past the flat line and a race for it — nobody in a flat line is deeper than anybody else; if the goalie comes out for it, pull up
 Never: Play it as your default — some youth teams do and should not
 ```
 
@@ -281,7 +281,7 @@ Never: Play it as your default — some youth teams do and should not
 
 **Weaknesses.** It concedes the whole neutral zone. They enter with speed where they like, again and again, because a 1-4 creates no offence and so no relief. **You will spend the shift in your own end.** When you do win the puck, all five of you are at or inside your own blue line with nobody ahead to pass to — so clearing becomes dumping, and they come again.
 
-**How it is beaten.** Chip the puck hard past the flat line and hunt it — nobody in a flat line is deeper than anybody else, so it is a genuine race. Failing that, gain the line, set up, and make them defend; a 1-4 has no counterpunch.
+**How it is beaten.** Chip the puck hard past the flat line and hunt it — nobody in a flat line is deeper than anybody else, so it is a genuine race. If the goalie comes out for it, pull up rather than finish on them. Failing that, gain the line, set up, and make them defend; a 1-4 has no counterpunch.
 
 ### The left-wing lock
 
@@ -596,7 +596,7 @@ The regroup is a defenceman's pass but a forward's tactic, and forwards get it w
 
 ```facts
 Read: You have numbers — take a developing 3-on-2 rather than throwing it away
-Read: Your change is due — a hard dump past the red line and a line change is a legitimate tactic, not a failure
+Read: Your change is due — a hard dump past the red line and a change is a legitimate tactic; in CARHA leagues keep the backswing short, as a wind-up past fifteen inches is a slap-shot penalty
 Read: The pass back is not clean — a regroup into pressure is just a turnover in a worse place
 ```
 
@@ -647,7 +647,7 @@ Risk: Leaving a forward high means defending 4-on-5 while you do it — a coachi
 
 **Why it exists.** It is legal only because the two-line pass rule went (see [What the neutral zone actually is](#what-the-neutral-zone-actually-is)). It counters a flat line **still holding out in the neutral zone** — a 1-2-2 trap at the red line, or the three-man line of a 1-3-1 — because there is real ice behind such a line for a receiver to stand in legally.
 
-> **It is not the counter to a 1-4.** A 1-4 holds its line on **its own blue line**, so there is no legal ice behind it: a receiver already behind it is offside the moment the puck crosses. Against a 1-4, **chip it hard past the flat line and race for it** — see [the 1-4 section](#1-4--the-full-retreat) and [Forechecking Systems](forechecking_systems.md). The same goes for any structure that has retreated to its own blue line, whatever it is called.
+> **It is not the counter to a 1-4.** A 1-4 holds its line on **its own blue line**, so there is no legal ice behind it: a receiver already behind it is offside the moment the puck crosses. Against a 1-4, **chip it hard past the flat line and race for it**, pulling up if the goalie comes out for it — see [the 1-4 section](#1-4--the-full-retreat) and [Forechecking Systems](forechecking_systems.md). The same goes for any structure that has retreated to its own blue line, whatever it is called.
 
 **How to do it well.**
 - **Get behind the wall, not level with it.** Level is covered; behind is a footrace.
@@ -732,9 +732,9 @@ Do not stop on the wall and try to beat the stepping defender one-on-one with no
 
 ```facts
 Action: Move the puck faster than they can slide — two quick passes, D-to-D or wall-middle-wall, beat five skaters sliding; a trap beats teams that carry the puck, not teams that pass it
-Action: Use the boards deliberately — a rim or a chip off the wall to a forward arriving behind the pressure, especially against F2 stepping up
+Action: Use the boards deliberately — rim or chip it to a forward arriving behind pressure, especially against F2 stepping up; in CARHA keep the backswing under fifteen inches or it is a slap-shot penalty
 Never: Turn your back to the checker on a rim or a chip along the wall, and never duck — keep your head up and your chin off your chest
-Read: Stretch a forward behind the wall against a 1-3-1 or a trap, but not against a 1-4. Chip past a 1-4's flat line and race for it instead
+Read: Stretch a forward behind a 1-3-1 or a trap, not a 1-4: chip past its flat line and race for it, and if the goalie comes out for it, pull up — never finish on a goalie
 Never: Attempt the seam unless it is obviously there — the highest-risk answer, the one amateur players attempt first, and the one to try last
 Options: Dump it past the red line on purpose and hunt it with three forwards when the entry is not on — worth more than a turnover at the blue line
 Key: Dumping past the red line is a read on a trap, not a general preference — the one-third threshold is modelled from one team's games, and that NHL tracking found players give the puck up too readily
@@ -749,7 +749,7 @@ A trap hands you the puck and defends the ice instead, so possession alone tells
 
 **That play sends the receiver onto a puck on the boards with a defender closing** — in most structures above the strong-side defenceman's job is to step up hard on a pass to the wall, so expect to be met. ⚠️ **Never turn your back to the checker, and never duck.** Get your **skates parallel to the boards**, forearm and hip to the wall, head up and chin off your chest — **not the point of your shoulder, and not the whole shoulder if you can help it.** **This holds in a non-checking league too:** the wall does not need an opponent to hurt you, and a legal angle-off puts you into it just as a check does. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full rule and the evidence.
 
-**3. Stretch a forward behind the wall — against a 1-3-1 or a trap, not a 1-4.** A 1-3-1 lives ahead of one defenceman, so a forward behind the three-man line taking a legal stretch pass is instantly 1-on-1 or better. Even the *threat* makes the wall drop back and opens ice in front of it. **This only works while the wall is out in the neutral zone.** Against a 1-4 on its own blue line a receiver behind it is offside, so **chip hard past the flat line and race for it** — nobody in a flat line is deeper than anybody else, and only the goalie is beyond. **If the goalie comes out and gets there first, pull up and take away the outlet rather than finish on them** — a goalie outside the crease is not fair game in any rulebook here, and [Forechecking Systems](forechecking_systems.md#why-this-matters-so-much-to-a-forechecker) covers what contact with one costs.
+**3. Stretch a forward behind the wall — against a 1-3-1 or a trap, not a 1-4.** A 1-3-1 lives ahead of one defenceman, so a forward behind the three-man line taking a legal stretch pass is instantly 1-on-1 or better. Even the *threat* makes the wall drop back and opens ice in front of it. **This only works while the wall is out in the neutral zone.** Against a 1-4 on its own blue line a receiver behind it is offside, so **chip hard past the flat line and race for it** — nobody in a flat line is deeper than anybody else, and only the goalie is beyond. **If the goalie comes out for it, pull up and take away the outlet rather than finish on them** — a goalie outside the crease is not fair game in any rulebook here, and [Forechecking Systems](forechecking_systems.md#why-this-matters-so-much-to-a-forechecker) covers what contact with one costs.
 
 **4. Skate it through the seam — only when it is real.** A trap committed to one side has a seam behind the pressure, and a skilled carrier cutting back through the middle behind a stepped-up forechecker breaks it completely. It is the highest-reward, highest-risk answer — the one amateurs try first and should try last. **If the seam is not obviously there, it is not there.**
 
@@ -825,7 +825,7 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 **1. Look at F1's route, not F1's speed.** It is the biggest tell.
 - **F1 skating straight at you, hard** → pressure (2-1-2, or an aggressive 1-2-2). **Beat it with one quick pass past them** — beat the first man and you are attacking with numbers.
 - **F1 arcing across, showing you the boards, not really closing** → containment or a trap. **Do not go where they are steering you.** Change sides with a D-to-D, or accept the wall and be ready to chip past the man stepping up.
-- **F1 standing near the red line doing nothing** → 1-3-1 or 1-4. **Take your time, look up, and start a regroup.** Against a **1-3-1** the stretch pass is live, because there is ice behind the line. Against a **1-4** it is not — a receiver behind a wall on its own blue line is offside — so chip past and race instead. Skating straight into the wall is what they want.
+- **F1 standing near the red line doing nothing** → 1-3-1 or 1-4. **Take your time, look up, and start a regroup.** Against a **1-3-1** the stretch pass is live, because there is ice behind the line. Against a **1-4** it is not — a receiver behind a wall on its own blue line is offside — so chip past and race instead, pulling up if the goalie comes out for it. Skating straight into the wall is what they want.
 
 **2. Count the bodies across the middle.** Lift your head at your own blue line and count the opponents between you and their blue line.
 - **Two** → there is space. Attack it.
@@ -852,9 +852,9 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 - **Following the puck up the boards after a D-to-D pass.** **Sink back into mid-ice behind your partner instead**, so a puck given back reaches somebody facing up ice with the whole sheet in front of them.
 - **Blind D-to-D through the middle of the neutral zone.** **If the lane is not clean, hold the puck or take it back yourself.** An interception there is an odd-man rush with both defencemen wrong-sided.
 - **Chipping the puck in and not chasing it.** **Chip it to a spot you can win, and send the second and third forwards after it.** Without the chase it is a giveaway.
-- **Stretching a forward behind a 1-4.** **Chip past the flat line and race for it instead**, and if the goalie gets there first, pull up and take away the outlet. A receiver behind a line on its own blue line is offside; keep the stretch pass for a line still out in the neutral zone.
+- **Stretching a forward behind a 1-4.** **Chip past the flat line and race for it instead**, and if the goalie comes out for it, pull up and take away the outlet. A receiver behind a line on its own blue line is offside; keep the stretch pass for a line still out in the neutral zone.
 - **Trying the seam first against a trap.** **Try it last: move the puck faster than they can slide, use the boards, and if the seam is not obviously there, it is not there.**
-- **Dumping from your own side of the red line at equal strength.** **Get the puck across the red line first, or chip it soft enough to stay in.** Otherwise it is icing: you lose the zone and the draw location, and under NHL, IIHF and PWHL rules — and Hockey Canada's in U18AAA, Junior and opted-in Senior — your tired line cannot change either, though an injured player can still be replaced. USA Hockey and CARHA have no such bar.
+- **Dumping from your own side of the red line at equal strength.** **Get the puck across the red line first, or chip it soft enough to stay in.** Otherwise it is icing: you lose the zone and the draw location, and under NHL, IIHF and PWHL rules — and Hockey Canada's in U18AAA, Junior and opted-in Senior — your tired line cannot change either, though an injured player can still be replaced. USA Hockey and CARHA have no such bar. In a CARHA league keep the backswing short too: a wind-up past fifteen inches is a slap-shot penalty.
 - **Standing up at the blue line with no backpressure.** **Check over your shoulder first; with nobody coming back, back off and keep the attacker in front of you and outside.** Standing up alone turns a rush into a breakaway. If the puck is chipped past you, go for the puck, never the player.
 - **Finishing a step up as a hit, or reading a head-down carrier as a licence to arrive harder.** **Close the space with your feet and keep the attacker in front of you — take their time and the puck, do not punish a carrier who has not seen you.** Miss and the rush is past you; land it and it is charging, in every division, checking league or not. ⚠️ **No book here caps charging at a minor**: Hockey Canada makes a charge on a player who cannot defend themselves a mandatory match penalty, and in several books a charge that injures ends your game. [Gap control as a team concept](#gap-control-as-a-team-concept) sets out each book.
 - **Taking a middle-lane relay with your head down over the puck.** **Scan before the puck arrives, then take it with your head up.** Coaching material puts the contact in the middle — **consensus rather than a counted ranking**. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the head-up rule.
@@ -913,7 +913,7 @@ document, that is named too.*
 5. **Regroup instead of forcing a bad entry.** Forwards: curl back with the puck and turn up as it goes D-to-D — never stand still, never leave before your defenceman has it. Defencemen: after a D-to-D, sink into mid-ice for the return. Skip it when you have numbers, your change is due, or the pass back is not clean.
 6. **Three forwards, three lanes.** Support means being somewhere else, not close. Use the middle as a one-touch relay — wall to middle to far wall makes their structure slide twice. **Take the middle-lane puck with your head up**: coaching material puts the contact there — **consensus rather than a counted ranking**.
 7. **Be the late man, or take the trailer.** Attacking, trail a full gap — 10 to 15 feet — behind a two-man rush and arrive into the high slot, and be first back if it turns over. Backchecking, the trailer is usually yours rather than your defencemen's — ask whether your team gives the trailer to the weak-side defenceman.
-8. **Beat a trap by moving the puck, not carrying it** — quick passes, the boards, a stretch forward behind a wall still out in the neutral zone, or a dump you chase. Try the seam last. Against a 1-4, chip past the flat line and race; if the goalie gets there first, pull up. ⚠️ **On the boards, never turn your back to the checker and never duck — head up, chin off your chest, even in a non-checking league.**
+8. **Beat a trap by moving the puck, not carrying it** — quick passes, the boards, a stretch forward behind a wall still out in the neutral zone, or a dump you chase. Try the seam last. Against a 1-4, chip past the flat line and race; if the goalie comes out for it, pull up. ⚠️ **On the boards, never turn your back to the checker and never duck — head up, chin off your chest, even in a non-checking league.**
 9. **Carry it in when the line is yours; when it is not, a dump you chase beats a turnover at the line.** Get it over the red line first or it is icing, and in several books your tired line cannot change. Chase it unless you are changing.
 10. **Before a neutral-zone draw, know whether you are winning it forward or back, and who your man is if you lose it.** These draws turn straight into rushes. Hold your line until the puck drops — creeping gets your centre thrown out.
 

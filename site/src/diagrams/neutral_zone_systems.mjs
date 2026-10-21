@@ -381,7 +381,8 @@ const flat14 = {
     'A 1-4, the most conservative structure in hockey: one forechecker, and four skaters in a ' +
     'flat line across your own blue line. Almost nothing goes through it, but it concedes the ' +
     'entire neutral zone, generates no offence and will keep you in your own end. The answer ' +
-    'drawn is a hard chip past the flat line and a race for it — a stretch pass cannot beat it, ' +
+    'drawn is a hard chip past the flat line and a race for it, pulling up if the goalie comes out ' +
+    'for it — a stretch pass cannot beat it, ' +
     'because a line held on its own blue line leaves no legal ice behind it and a receiver ' +
     'already back there is offside the moment the puck crosses. Which skater takes which lane is ' +
     'one arrangement and not a rule.',
