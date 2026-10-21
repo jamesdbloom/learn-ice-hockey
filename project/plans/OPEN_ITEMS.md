@@ -368,7 +368,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ### Re-triaged dispatch list (19 Oct 2026)
 
-**LO wave committed 20 Oct** (record lo_leftover_rows_2026-10-20.md). Most rows below are now verified STALE or FIXED; still open: "10.1(i)" citation consistency; uk_rules 24 KTs (owner); rules_primer marker runs of 7–11 (readability); TTS items. Originally: **LO wave dispatched 20 Oct ~21:50** (brief: scratchpad lo_brief.md). Five agents work through the per-page and cross-file rows below: lo-a rules_primer/uk_rules; lo-b body_contact/GM/goaltender; lo-c positions/passing/risk; lo-d eight systems pages; lo-e puck_handling, shooting, glossary, rink_map, on_ice, equipment, conditioning, PWTP, time_and_space. TTS and renderer rows stay with the coordinator.
+**LO wave committed 20 Oct** (record lo_leftover_rows_2026-10-20.md). Most rows below are now verified STALE or FIXED; still open: "10.1(i)" citation consistency; rules_primer marker runs of 7–11 (readability); TTS items. Originally: **LO wave dispatched 20 Oct ~21:50** (brief: scratchpad lo_brief.md). Five agents work through the per-page and cross-file rows below: lo-a rules_primer/uk_rules; lo-b body_contact/GM/goaltender; lo-c positions/passing/risk; lo-d eight systems pages; lo-e puck_handling, shooting, glossary, rink_map, on_ice, equipment, conditioning, PWTP, time_and_space. TTS and renderer rows stay with the coordinator.
 
 Line numbers are working-tree lines at time of check. Brief each one as a CLAIM to find in every layer, not as a line.
 
@@ -415,7 +415,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 
 **Diagrams (site/src/diagrams/):** special_teams.mjs pk-nz-1-3 / pk-nz-1-1-2 / pp-umbrella captions unread; offensive_zone_play.mjs:668 is the last citation-led amber run; puck_handling.mjs :427 title unscoped and :437 stale comment; breakouts.mjs :520–522 and wall_contact_clauses.mjs :71 cite a KT6 that no longer exists; winger-arriving-at-the-line lacks CARHA lifted-skate; over-long captions (breakout-wheel 2,651 chars; forecheck-pinch 617 words; two forechecking captions over 3,300 chars; 94 of 205 captions over 800 chars); dz-collapse-corner ends on the pointer "All six books are set out earlier".
 
-**Readability, corpus-wide:** 56 paragraphs over 1,200 chars (language_and_glossary 10, playing_without_the_puck 9, defending_the_rush 4, faceoffs 4); 147 KTs over 60 words; KT counts above 10 in 14 documents (uk_rules 23 … puck_handling 13), which needs the owner to say whether 5–10 binds; item 2 "rules last" never applied to the 19 R1-only documents; IIHF Table 16/14 in 17 documents (the edition decision is open).
+**Readability, corpus-wide:** 56 paragraphs over 1,200 chars (language_and_glossary 10, playing_without_the_puck 9, defending_the_rush 4, faceoffs 4); 147 KTs over 60 words; KT counts above 10 in 14 documents (uk_rules 25 … puck_handling 13). This is CLOSED by the owner's 19 Oct ruling (no cap); the row's own wording that it needs the owner to say whether 5–10 binds; item 2 "rules last" never applied to the 19 R1-only documents; IIHF Table 16/14 in 17 documents (the edition decision is open).
 
 **Site:** ReadingTools.astro:9 stale path comment; callout `<aside>`s lack a role (remark-corpus.mjs); global.css:951 stale anchor comment; about 24 literal `*` in `<main>` on 13 pages; AudioPlayer.astro:27 unversioned resume key; podcast.xml.ts:36 stale heading.
 
