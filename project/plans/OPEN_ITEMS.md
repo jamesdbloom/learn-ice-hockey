@@ -607,7 +607,9 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **Detailed status (21 Oct ~11:00).** Every one of the 39 scripts has been written and safety-reviewed to SHIP.
   - **Published, 23:** winger, center, defender, goaltender, breakouts, switching_positions, DZC, forechecking, NZ, OZP, DTR, faceoffs, game_management, puck_handling, zone_entries, special_teams, skating, passing, PWTP, shooting, scanning, risk_management, time_and_space.
   - **Queued:** the other 16 sit in the sequential runner. scratchpad/synth_runner.sh reads synth_queue.txt and logs to synth_log.txt.
-  - ⚠️ **Credits run out before the queue does.** About 284k were left at 10:00; each episode bills about 20k. The owner has been asked to top up about 150k. A run that fails on quota is logged ERR and stays in the queue.
+  - ⚠️ **Credits ran out at 11:30 on 21 Oct** (2,687,351 of 2,692,319 used). 30 of 39 are published.
+    - 9 approved episodes wait in synth_queue.txt: practice_and_development (3 of 5 chunks cached), rink_map, language_and_glossary, team_play_and_culture, conditioning_and_recovery, how_to_watch_hockey, reading_ice_hockey_diagrams, uk_rules, rules_primer. They need about 200k credits. The owner has been asked to top up.
+    - The runner now HALTS on error and keeps the failed line. Before this fix it deleted each failed line, and the queue was rebuilt by hand. Restart it with `scratchpad/synth_runner.sh` (run in background) once credits are back.
   - ⚠️ **Don't go back to the old chained `while pgrep -f` queue.** Each waiting shell matched its neighbours' patterns, so nothing ran from 09:02 to 09:25.
   - **Known label error in published Detailed episodes (MINOR, errs strict, no re-record needed).** center, defender, goaltender, DTR, DZC and game_management say "a two-handed shove is a cross-check, whatever your blade is doing". That is false under USAH 609, but the instruction itself (never shove) is right everywhere. The queued scripts were fixed.
   - **Airway exception.** Brief item 21's "don't move them" omits CRT6's airway exception. That is stricter, so it is safe. The rules_primer script adds it.
