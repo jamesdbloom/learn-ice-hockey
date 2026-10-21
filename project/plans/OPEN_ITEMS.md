@@ -581,6 +581,12 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - **"Time" is taught with no "only when sure" limb** at :25, :68, **facts :93 (voiced alone)**, :128 and KT2 :699.
     - **The chop limbs may narrow to the hands only.** Check that the corpus doesn't say "never chop at the hands" where NHL/IIHF 61.1 and USAH 634 also cover a chop at the stick.
     - **Brief item 7, "A two-handed shove is a cross-check whatever your blade is doing", is false under USAH 609.** That rule requires no part of the stick on the ice. defender.md :333/:348 carries the exception, and the brief has been corrected.
+  - (ag) practice_and_development:
+    - **:474 overstates its owner.** It says strength work is "the main injury protection", but conditioning_and_recovery :15, :39 and :186 say no exercise is proven to prevent injury.
+    - **Battle drills carry no gate and no boards posture.** :343 and :381 teach puck protection under contact without the BC gate, the "until you know, don't hit" default, or the short form.
+    - **:560 concussion is incomplete.** It has no aftercare ("someone stays, no driving, no alcohol, worse → help") and no neck line.
+    - **The :25 vs :408 goalie-whistle row is withdrawn by dR-pd.** It is not a contradiction: IIHF 9.6 and HC 6.18(a) stop play for a mask hit.
+  - Equipment Detailed review (dR-eq) found **IIHF 10.3 adds "slide" and "toss" to the stick-to-skater ban**. Check that equipment.md and its siblings don't voice the NHL-only "throw or shoot" without it.
   - Each needs a layer test and a safety-reviewer.
 - **Detailed status (21 Oct ~09:30).**
   - **Published, 16 of 39:**
