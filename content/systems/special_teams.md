@@ -651,6 +651,7 @@ Rule: Hockey Canada from behind, off the head or head first into boards: a minor
 Rule: USA Hockey makes a check from behind a mandatory major and game misconduct if reckless or head first into the boards or goal frame (608(b)) — plan on a match if reckless (602(a), 608(c)); its Casebook requires that pair, or a match, for a forceful one on a player along the boards (608, Situation 1)
 Rule: Checking from behind can reach a match in five books, none needing the boards — mandatory for a deliberate attempt to injure: Hockey Canada 7.5(c) (7.6/7.7(c) on the head), NHL and PWHL 21.1, CARHA 48(a) and USA Hockey 602(a), which reaches a reckless hit, so plan on one; CARHA 53(a) also allows one
 Rule: From behind into boards on a defenceless player: a mandatory match in CARHA 53(b) and Hockey Canada (7.5(c) off the head, 7.6/7.7(c) on it); plan on one in USA Hockey if reckless (602(a), 608(c)); IIHF: no minor (43.2), no match in the book — plan on a major and automatic game misconduct (43.3)
+Rule: A USA Hockey ejection is not only this game — a game misconduct also suspends you for your team's next game (404(b)), and a second major in one game at least two (403(b))
 ```
 
 **The most effective place to kill a penalty is before the puck enters your zone**, and every scheme above serves that one sentence. The reason is arithmetic: a power play that never gets set up never gets to use its extra man. Once they are established in a shape you are managing damage; in the neutral zone you are 4-on-5 in a space where you can dictate.

@@ -737,6 +737,7 @@ Rule: USA Hockey does not stop at a minor for a puck put out during a stoppage �
 Rule: Hockey Canada writes a goalie limb of its own, with no zone restriction, for shooting or batting the puck directly out of the playing surface with your stick (Rule 10.1(v)) — but Interpretation 5 to Rule 10.1(a) excuses a puck that touches the glass or deflects off a player or official
 Rule: A fifth book has no zone limit at all — CARHA Rule 55 is a minor for a goalie who shoots or bats the puck out of the playing surface with their stick, from anywhere on the ice, though its Note 1 excuses a puck that touches the glass or deflects (CARHA-affiliated adult leagues only)
 Rule: You do not serve a goalie's minor yourself — a teammate on the ice, designated by your coach, serves it (NHL and IIHF 27.1; USA Hockey 407(a) adds misconducts) — but a game misconduct takes your place in the net (USA Hockey 407(b))
+Rule: A USA Hockey game misconduct is not only tonight — 404(b) also suspends you for your team's next game, and for at least two where it comes from a second major in the same game (403(b))
 ```
 
 If the puck is not settled on your blade, put it down the boards instead of lifting it. A rim that dies in the corner is worse than a clean exit and far better than a minor. And never lift a puck out of the rink to buy a whistle: that is the deliberate offence, in front of a referee who can see exactly what you did.

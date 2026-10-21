@@ -586,6 +586,7 @@ Convention: A double-team is a coaching decision, commonly allowed below your ow
 Never: Arrive at a double-team at the wall with your back to anyone coming at you, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
 Rule: A push or hit from behind is checking from behind even in non-check play. It ejects in NHL, IIHF and PWHL 43; if intentional, in Hockey Canada 7.5(a) and CARHA 53(a). USA Hockey 608(a) starts at a minor plus misconduct; a hard one at the boards or head first ejects (608(b); Casebook 608 Situation 1)
 Rule: Into the boards unable to protect themselves: a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and in USA Hockey 608(c) with excessive force on a defenceless player — plan on one, and a likely multi-game suspension, for any reckless push (602(a))
+Rule: Under USA Hockey a game misconduct also costs you your team's next game (404(b)), and at least two games when it comes from a second major in one game (403(b))
 ```
 
 Your teammate is pressuring the carrier, and you are the second defender. You can:
@@ -607,7 +608,7 @@ To make the layer a real position:
 
 **The exception is a deliberate double-team**, a coaching decision rather than a default. Many teams send two players at a puck on the boards *below their own goal line*, where the net and boards contain a turnover. Under the standard coverage, the second player supports rather than doubling except there. **Ask your coach where and when you may double** — freelancing it is how backdoor goals happen.
 
-**Going in does not change how you arrive:** on an angle, feet apart, knees bent, **skates parallel to the wall**, **forearm and hip to the wall** and never the point of your shoulder, head up, chin off your chest, and **never turn your back to anyone coming at you, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet. A push from behind into the boards is checking from behind even where body checking is not allowed, and in most books it ends your game. [Body Contact and Battles §6, Receiving a Hit Safely](../technique/body_contact_and_battles.md) is the full treatment.
+**Going in does not change how you arrive:** on an angle, feet apart, knees bent, **skates parallel to the wall**, **forearm and hip to the wall** and never the point of your shoulder, head up, chin off your chest, and **never turn your back to anyone coming at you, never duck.** **And never push or hit the opponent on the wall from behind** — go for the puck at their feet. A push from behind into the boards is checking from behind even where body checking is not allowed, and in most books it ends your game — under USA Hockey that game misconduct also costs your team's next game (404(b)). [Body Contact and Battles §6, Receiving a Hit Safely](../technique/body_contact_and_battles.md) is the full treatment.
 
 ### The same distance question, inverted
 

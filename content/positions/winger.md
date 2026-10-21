@@ -470,6 +470,7 @@ Read: If the pass is bad, don't force the one-timer. Take the extra touch, becau
 Action: Crash the net on every shot toward it, never into the goalie. Driving in from the wall or your circle, arrive with the shot, not well before; on the net-front job you are planted before the release
 Technique: At the net front a defender you feel, not watch, moves you, so know where the near post is before the shot and take the shove braced — wide base, knees and hips giving — never against the goalie
 Never: Meet a goal post head first, and never duck. Head up, chin off your chest instead. A head-down, head-first hit on a goal post is the same injury as one on the boards, and can happen at walking speed
+Rule: Under USA Hockey a game misconduct for going into the goalie, or any other, also suspends you for your team's next game (404(b)), and a second major in one game at least two (403(b))
 Goal: Be a threat in your half of the zone, particularly from the side of the net for rebounds
 ```
 

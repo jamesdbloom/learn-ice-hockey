@@ -298,6 +298,8 @@ What *is* legal is narrower:
 - **At any level**, **640(g)** gives *"a major plus a game misconduct penalty … to any player who recklessly endangers an opponent as a result of any actions falling under Rule 640(b, c, d, e or f)"*, and **640(h)** a match penalty the same way. A pick reaches it through **640(d)**: a body check *"with no effort to gain possession of the puck"* where *"the blade of the player's stick is above the knees"*. **640(b)** rarely fits: it is *"(except Adult Male Classifications)"* and covers an opponent *"no longer in control of the puck"*, not one who never had it.
 - **Rule 602(a)** makes a match penalty mandatory for a player who *"recklessly endangers or attempts to injure any opposing player"*, and ties it to no named foul, so it reaches a reckless pick directly — plan on it.
 
+Under USA Hockey, any of those game misconducts also costs you your team's next game (404(b)), and a second major in one game at least two.
+
 ---
 
 ## 4. Taking time and space away

@@ -729,6 +729,7 @@ Action: Take the middle-lane driver — the forward arriving late and unmarked i
 Position: Come back on the defensive side of your man, between them and your own net — stick in the passing lane, not on their body, and not chasing behind their shoulder
 Rule: The middle-lane driver has no puck — NHL and IIHF Rule 56.1 and PWHL Rule 57.1 grant body position on three conditions: stick not utilized, free hand not used, no otherwise illegal check off it
 Rule: USA Hockey 625(a)(4) makes changing lane or foot speed to play the body of a player without the puck an interference minor — that rule stops at two minutes, but the same hit can be called under others that reach an ejection or a match penalty
+Rule: Under USA Hockey an ejection by game misconduct costs you the next game too — any game misconduct also suspends you for your team's next game (404(b)), and a second major in one game at least two (403(b))
 Action: Skate first, then look, and don't decide mid-rush to chase the carrier — your defencemen have that player, and swinging wide abandons the ice they are protecting
 Options: Some teams coach the first forward back to pressure the carrier, with the defence holding inside — where that is your system, pressuring is your feet and your stick, never a hit from behind
 Priority: Last forward back with your defence outnumbered — take away the pass, don't go for the hit
