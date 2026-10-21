@@ -149,19 +149,19 @@ Laid over the ice, those five rows are one picture — and **the grade does not 
 
 **One more limit: the map has no sense of direction**, and a turnover's direction changes its cost as much as its location does.
 
-### Why north turnovers are so much worse than south turnovers
+### Why a turnover toward your own net is so much worse
 
 ```facts
 Key: A turnover has a direction, and the direction changes the cost more than the location does — coaching consensus rather than a measured comparison, since neither ranking has been counted
-Risk: A north turnover — losing it while it travels toward your own net — makes the turnover and the counterattack the same event
-Risk: A south turnover deep in their end separates the turnover from the counterattack by four or five seconds, which is enough to get organised
+Risk: Losing the puck while it travels toward your own net makes the turnover and the counterattack the same event
+Risk: Losing it deep in their end, moving away from your net, separates the turnover from the counterattack by four or five seconds, which is enough to get organised
 Action: Weigh the direction of a risky play as well as its location — a blind pass up your own wall is bad, the same pass in their end is a nothing play
 ```
 
 A turnover has a direction, and the direction changes the cost more than the location does — **coaching consensus rather than a measured comparison**, on the same footing as the risk map above, since neither ranking has been counted. The mechanism is what to carry:
 
-- **A "north" turnover** — you lose the puck while it is travelling toward your own net, or you lose it to an opponent already facing your net. Their momentum is toward your goal. Your momentum is away from it. Every body on the ice is instantly on the wrong side of the puck. The turnover and the counterattack are the same event.
-- **A "south" turnover** — you lose the puck deep in the offensive zone, moving away from your net. Their momentum is toward you, which means it points at up to 178 feet of ice they have to cross while your five players get back. The turnover and the counterattack are separated by four or five seconds, which is enough time to be organised.
+- **A turnover toward your own net** — you lose the puck while it is travelling that way, or you lose it to an opponent already facing your net. Their momentum is toward your goal. Your momentum is away from it. Every body on the ice is instantly on the wrong side of the puck. The turnover and the counterattack are the same event.
+- **A turnover away from your net** — you lose the puck deep in the offensive zone, moving away from your net. Their momentum is toward you, which means it points at up to 178 feet of ice they have to cross while your five players get back. The turnover and the counterattack are separated by four or five seconds, which is enough time to be organised.
 
 **Practical consequence:** the direction of a risky play matters as much as the location. A blind pass up the wall out of your own zone is a bad idea; the *same* blind pass in the offensive zone is a nothing play. This asymmetry is the reason the "never" list below is almost entirely about your own end.
 
@@ -264,7 +264,7 @@ Convention: Forcing that pass is not a rule and genuinely negotiable — a team 
 
 **Why not.** The offensive blue line is where your attack is at its most stretched — your forwards are ahead of the puck, your defencemen have often stepped up to hold the zone. A turnover there converts your five-man attack into their three-man rush in one touch. **The cost of the failure is not the loss of possession; it is the odd-man rush.**
 
-**What to do instead.** **Chip the puck past the defender into the space behind them** and race for it, or **dump it into the far corner** and forecheck. Both concede possession about 114 feet from your net, going south — the offensive blue line is 64 feet from their goal line. **Low-cost is not free:** on the Swiss-league tracking quoted under the risk map, a dump attempt carried a *larger* immediate threat against you than a carry-in — small figures, quoted there with their scope — because the dump is so often handed straight back. These are the answer when the pass is not on, not a reason to give up a puck you could have carried in. See [Zone Entries](../systems/zone_entries.md) for which to pick.
+**What to do instead.** **Chip the puck past the defender into the space behind them** and race for it, or **dump it into the far corner** and forecheck. Both concede possession about 114 feet from your net, moving away from it — the offensive blue line is 64 feet from their goal line. **Low-cost is not free:** on the Swiss-league tracking quoted under the risk map, a dump attempt carried a *larger* immediate threat against you than a carry-in — small figures, quoted there with their scope — because the dump is so often handed straight back. These are the answer when the pass is not on, not a reason to give up a puck you could have carried in. See [Zone Entries](../systems/zone_entries.md) for which to pick.
 
 **The test to run:** *if this pass is intercepted right now, how many of my teammates are behind the puck?* If the answer is fewer than two, do not make it.
 
@@ -514,7 +514,7 @@ Key: The correct risk level is not a personality trait — it moves with the sco
 Action: Leading by one in the third, take risk down and reach for the safe options earlier than usual; leading by three, down hard
 Action: Trailing late, take risk up — pinch, activate, force the entry; not raising your risk when trailing is not being safe
 Action: Shorthanded — fewer skaters because of a penalty — down and clear it hard — the one exception is a genuine 2-on-1 the other way
-Action: On the power play, up inside their zone and down at the blue line — a shorthanded rush against four attackers is the worst-value event on a power play
+Action: On the power play, up inside their zone and down at the blue line — a turnover there sends their penalty killers the other way, and a shorthanded rush is the worst-value event on a power play
 Rule: NHL regular-season overtime is five minutes of 3-on-3 sudden death (Rule 84.1); playoff overtime is full 20-minute periods at 5-on-5 (Rule 84.5)
 Convention: In 3-on-3 the convention is to be patient, to attack only with numbers, and to regroup rather than force an entry
 Action: Empty net and trailing, risk up to the maximum — the only bad decision is a slow one
@@ -531,7 +531,7 @@ The correct risk level is not a fixed personality trait. **It moves with the sco
 | **Trailing late** | **Up** | The arithmetic inverts. A goal against when you are down two costs you almost nothing; a goal for is worth everything. Pinch, activate, force the entry, take the low-percentage pass. |
 | **Tied, early** | **Neutral** | Play the hierarchies straight. |
 | **Shorthanded** | **Down, with one exception** | You have fewer skaters because of a penalty, so a turnover in your own end is worse than usual. Clear it and clear it hard. The exception is a genuine 2-on-1 the other way. |
-| **On the power play** | **Up in their zone, down at the blue line** | You can afford creativity inside their zone. You cannot afford a turnover at the offensive blue line: a shorthanded rush against four attackers is the worst-value event on a power play. |
+| **On the power play** | **Up in their zone, down at the blue line** | You can afford creativity inside their zone. You cannot afford a turnover at the offensive blue line: it sends their penalty killers the other way with your players caught up ice, and a shorthanded rush is the worst-value event on a power play. |
 | **Overtime (NHL regular season)** | **Situation-dependent, high stakes** | Five minutes of **3-on-3**, sudden death. Every turnover in that much space is an odd-man rush, and there is no next shift to fix it. |
 | **Last minute of a period** | **Down** | See the "almost always right" list. Give them nothing to walk off with. |
 | **Empty net, you are trailing** | **Up to the maximum** | There is no such thing as too risky. The only bad decision is a slow one. |
@@ -663,7 +663,7 @@ Note what is *not* on that list: retaliation, sending a message, standing up for
 
 ```facts
 Rule: A penalty shot needs four cumulative conditions — the foul from behind, in the neutral or attacking zone, on a player in possession and control or who clearly would have obtained it, with no opponent between them and the goalie, denying a reasonable chance to score (NHL Rule 57.3)
-Rule: Playing the puck first and tripping the opponent in the process is a minor, not a penalty shot (NHL 57.3, IIHF 24.8, same words)
+Rule: Playing the puck first and tripping the opponent in the process is a minor, not a penalty shot (NHL 57.3, IIHF 24.8, PWHL 58.3, same words)
 Rule: USA Hockey 639(a)'s Note is scoped "under this rule" and turns on poke- or hook-checking, but its Casebook writes the wider version — no penalty at all where you clearly played the puck "with the focus solely being on the puck" (639, Situation 2)
 Rule: Whether that relief reaches the 616 penalty shot is this guide's reading of two rules together, not a USA Hockey ruling — no situation in either volume joins 639(a)'s Note to Rule 616, and 616 Note 1's "would normally be deemed a penalty" reads either way
 Rule: Two limits sit on that USA Hockey puck-first relief — you stay responsible for your stick after the check, and it reverses where "the player loses possession of the puck as a result of being tripped – then a penalty must be called" (639, Situation 2)
@@ -688,7 +688,7 @@ Some fouls do not cost you the 21.1% league-wide power-play rate, because they d
 3. The player was in possession and control (or, in the referee's judgement, clearly would have obtained it) and was denied a reasonable chance to score. Getting a shot away does not automatically rule it out — the rule says a penalty shot still applies if the foul denied a *"more" reasonable* scoring opportunity.
 4. There was **no opposing player between them and the goalie**.
 
-Two riders sit inside the penalty-shot rule itself. **The first: if you play the puck first and trip the opponent in the process, it is a tripping minor, not a penalty shot** — **NHL 57.3 and IIHF 24.8 say so in the same words.** **Hockey Canada writes the carve-out wide:** 8.6's Interpretation 2 assesses no penalty where a falling or sliding player *"contacts the puck prior to contacting the body of their opponent"*. ⚠️ **But plan on clipping (8.7) for a low slide into the legs:** 8.6 does not reach a slide called as clipping or slew-footing — it hands those to 8.7 and 8.8, and both reach a **match penalty**.
+Two riders sit inside the penalty-shot rule itself. **The first: if you play the puck first and trip the opponent in the process, it is a tripping minor, not a penalty shot** — **NHL 57.3, IIHF 24.8 and PWHL 58.3 say so in the same words.** **Hockey Canada writes the carve-out wide:** 8.6's Interpretation 2 assesses no penalty where a falling or sliding player *"contacts the puck prior to contacting the body of their opponent"*. ⚠️ **But plan on clipping (8.7) for a low slide into the legs:** 8.6 does not reach a slide called as clipping or slew-footing — it hands those to 8.7 and 8.8, and both reach a **match penalty**.
 
 **USA Hockey writes it differently in each of its two volumes.** Its playing rule, 639(a)'s Note, says *"no penalty shall be assessed **under this rule** if, in the opinion of the Referee, the player was clearly hook-checking or poke-checking the puck for the purpose of gaining possession."* Rule 616, which awards the penalty shot, has no carve-out of its own, but its Note 1 defines *"fouled from behind"* as an infraction *"that would normally be deemed a penalty"* — so where 639 leaves no penalty, there is arguably nothing for 616 to act on. ⚠️ **That is this guide's reading of the two rules together, not a USA Hockey ruling** — no situation in either volume joins them, and Note 1 reads equally well as classing the *kind* of action — **so do not defend as though the penalty shot has been ruled out.** The referee must also judge that you were *"clearly"* checking the puck, and a hook or a hold never enters 639 at all.
 
@@ -713,6 +713,7 @@ Rule: Five of six print the permission in rule text — NHL and IIHF 67.2, PWHL 
 Never: Hold a caught puck, carry it, turn with it or throw it — that is the act the books reach: a penalty in three, a USA Hockey stoppage outside the crease, the penalty shot in your own crease
 Rule: What buys the penalty is the conduct after the catch, not the height — holding it, taking a stride, turning to avoid a check, or throwing it (NHL and IIHF 67.2(I); Hockey Canada Interpretation 4 to 10.2(a)(iii); USA Hockey Casebook 618, Situation 1)
 Rule: Under USA Hockey a CAUGHT puck held in a closed hand outside the crease is a stoppage, not a penalty — but covering a loose puck on the ice with your hand, or picking it UP, is a minor there, and in the crease the penalty shot or optional minor (618(a), 614(a) Note, 614(b))
+Rule: A skater who deliberately falls on a loose puck or gathers it into their body takes a minor anywhere on the ice in all six books (NHL and IIHF 63.2(v), PWHL 65.2(v), USA Hockey 614(a), Hockey Canada 10.2(a)(iv), CARHA 58(a)); puck in your crease, the penalty shot; net empty, it can be a goal
 Rule: Picking the puck UP off the ice outside the crease with the hand while play is in progress is a minor — a different act from a hand merely closed on the puck, and the NHL, the IIHF and USA Hockey write it alike (67.2(III); 618(a) second paragraph)
 Rule: A skater covering a puck that is itself in your crease concedes a penalty shot (NHL 67.4); five books make the puck's location the test (NHL and IIHF 63.6, PWHL 65.6, USA Hockey 618(a), CARHA 58(c)); Hockey Canada gives it there too (4.11(a)(v)) and also where you are in the crease (10.2(a)(v))
 Rule: Puck outside the paint, you inside: a minor, not the shot, under NHL and IIHF 63.6, PWHL 65.6, USA Hockey Casebook 614 Sit. 1 and CARHA 58(a), (c); Hockey Canada gives the shot for a puck in the crease (4.11(a)(v)) and for you in it (10.2(a)(v)-(vi)): price the shot, or the goal with your net empty
@@ -723,7 +724,7 @@ Never: Reach higher to hold a puck above the crossbar — once you are holding i
 
 **Start with the free option: catch it and put it straight down.** Catching a puck out of the air and immediately dropping it is free in every book here. NHL and IIHF **Rule 67.2**: *"A player shall be permitted to catch the puck out of the air but must immediately place it or knock it down to the ice."* **PWHL 69.2** prints the same sentence, and Hockey Canada **10.2(a)(iii)** and CARHA **61(a)** excuse a player who closes a hand on the puck and immediately drops it without gaining or trying to gain an advantage. **USA Hockey's playing rules print no permission sentence; its Casebook does** (Rule 618, Situation 1): *"[p]rovided the player catches the puck and drops it to their stick in one continuous motion, play should be allowed to continue."* It is the same permission in practice, but a casebook interpretation rather than rule text.
 
-**Under USA Hockey a caught puck held outside the crease is a stoppage, not a penalty — but never cover a loose puck on the ice with your hand.** **618(a)** stops play for a player who *"closes their hand on the puck and does not immediately drop the puck to the ice"*, and keeps its minor for one who *"picks the puck up from the ice with their hand(s)"*. ⚠️ **A hand closed over a loose puck on the ice is a minor too** — **614(a)**, whose Note says *"the use of hands to make the puck unplayable should be penalized promptly"*. NHL 67.2(iii) and IIHF 67.2(III) give the same minor for picking the puck up. **In the crease, a hand that closes and does not open is the penalty shot or optional minor** (618(a), 614(b)). **Knock it straight down where you stand and there is no penalty in any book here.** Everything below is the price of the other choice.
+**Under USA Hockey a caught puck held outside the crease is a stoppage, not a penalty — but never cover a loose puck on the ice with your hand.** **618(a)** stops play for a player who *"closes their hand on the puck and does not immediately drop the puck to the ice"*, and keeps its minor for one who *"picks the puck up from the ice with their hand(s)"*. ⚠️ **Falling on a loose puck, or closing a hand over it, is a minor too, anywhere on the ice** — **614(a)**, whose Note says *"the use of hands to make the puck unplayable should be penalized promptly"*. Every book here gives a skater that minor for deliberately falling on the puck or gathering it into your body (NHL and IIHF 63.2(v), PWHL 65.2(v), Hockey Canada 10.2(a)(iv), CARHA 58(a)). NHL 67.2(iii) and IIHF 67.2(III) give the same minor for picking the puck up. **In the crease, a hand that closes and does not open is the penalty shot or optional minor** (618(a), 614(b)). **Knock it straight down where you stand and there is no penalty in any book here.** Everything below is the price of the other choice.
 
 **What costs you is the conduct after the catch, not its height.** Under the NHL and IIHF it is skating with it to avoid a check or gain ground (67.2(i)). Under Hockey Canada it is throwing it, manoeuvring around a player or taking a stride while holding it (Interpretation 4 to 10.2(a)(iii)). Under USA Hockey's Casebook it is holding it *"for any length of time"*, taking *"one or two strides"*, throwing it or faking the drop (618, Situation 1). None of them names a height.
 
@@ -939,7 +940,7 @@ document, that is named too.*
 
 4. Two turnovers in the same place: one while the puck was travelling toward your
    own net, one while it was travelling away from it. Why is the first so much
-   worse? *(§Why north turnovers are so much worse than south turnovers)*
+   worse? *(§Why a turnover toward your own net is so much worse)*
 
 5. You are a defenceman about to pinch at the offensive blue line. What are the
    three questions you run in half a second, and how many of them have to come
@@ -964,7 +965,7 @@ document, that is named too.*
 1. **Every time the puck comes to you, weigh the play as a bet before you make it** — the chance it works times what you gain, against the chance it fails times what you lose. Make the calculation conscious.
 2. **Risk belongs to the location, not the play.** Change your location before you decide — one stride out improves every option. **Never pass the puck — or skate it — across the front of your own goal:** get it out of your slot first, to the wall, behind the net or off the glass.
 3. **Rank the ice by what a turnover there costs, and play to it:** your own slot catastrophic, your own zone and the middle of the neutral zone high, their blue line moderate, their corners nearly free. That ranking is coaching consensus, so trust the order more than the labels.
-4. **North turnovers are far worse than south turnovers — coaching consensus reasoned from the mechanism, not a measured comparison.** Losing the puck while it travels toward your own net makes the turnover and the counterattack one event.
+4. **Losing the puck while it travels toward your own net is far worse than losing it going the other way — coaching consensus reasoned from the mechanism, not a measured comparison.** The turnover and the counterattack become one event.
 5. **Learn why each "never" exists; seven are coaching conventions, so ask your coach.** **Two are rules everywhere:** if your league allows checking, stay on your feet to check; ⚠️ **put the puck off the glass, not over it** — a deliberate clear out of play is at least a minor anywhere, and under the NHL, IIHF and PWHL so is an accidental direct one from your own end.
 6. **With time, make the possession play; without it, get the puck out.** In tracked NHL data — one tracker, about half the games of two seasons — carry-outs and pass-outs lead to an entry nearly nine times in ten, dump-outs about one in five. The difference is *possession*, not method.
 7. **Before you jump a lane, pinch or activate, answer three questions: do I have a read, is someone behind me if I miss, what does the scoreboard allow?** Two yeses and a green light from the scoreboard, go; otherwise hold your position. Acting on a read is anticipation; acting on hope is gambling.

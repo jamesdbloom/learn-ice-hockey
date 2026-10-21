@@ -33,7 +33,7 @@ Hockey changes players during live play, out of a roster you did not pick. Almos
 
 **Trust is a prediction, not a feeling.** A defenceman who passes to a spot is betting on where the winger will be. When trust breaks, players stop leaving their own job to cover someone else's, because they no longer believe the cover will come back. Filling a teammate's spot, and returning to yours, keeps that exchange alive. Talking early keeps it informed — and a bench that mocks a wrong call is how a team goes quiet.
 
-**The bench is a working position.** Too many men on the ice is usually two players believing the same spot is theirs, which is why you name who you are replacing. Step on only once that player is at the bench **and out of the play**. And do not ice the puck to get a tired line off: under the NHL and IIHF books a team that ices it cannot change, though USA Hockey and CARHA let the tired five leave. [Rules Primer](../foundation/rules_primer.md#line-changes-at-a-stoppage) has the details.
+**The bench is a working position.** Too many men on the ice is usually two players believing the same spot is theirs, which is why you name who you are replacing. Step on only once that player is at the bench **and out of the play**. And do not ice the puck to get a tired line off: in many leagues, British league hockey included, a team that ices it cannot change. Get it out under control instead; [Rules Primer](../foundation/rules_primer.md#the-consequences) has which books bar the change.
 
 **Discipline is a team skill.** Arguing with the referee never reverses a call and is a penalty in itself in most books. Retaliating, and going over the boards for a teammate, are the same instinct at two scales: they add you to the penalty and help nobody. In every book here the first player off a bench for a fight is thrown out of the game — in four, for any altercation — and none stops at the first. Agree as a team, before the season, that nobody leaves.
 
@@ -182,8 +182,8 @@ Useful things to say in ten seconds:
 
 - "On the breakout I'm coming low, not to the wall."
 - "Their D-man is stepping up at the line every time — I'll chip it behind them."
-- "If I've got it in the corner, get to the net, I'm not passing it back out."
-- "Their number 8 is quick, I'll take them back."
+- "If I've got it in the corner, get to the net, I'm not passing it back out." Whoever goes arrives under control, head up, and pulls up short of the goalie.
+- "Their number 8 is quick, I'll take them back." On the backcheck, play the puck, not the player. Whether you may hit at all is your league's call; never hit anyone who can't see you coming, never from behind, and if you can see a player's numbers, pull up.
 
 Useless things to say: anything evaluative. "You need to be sharper" is not information.
 
@@ -529,7 +529,7 @@ Most adults reading this play here, and the culture is genuinely different from 
 A single beer-league bench routinely contains a former junior player, someone who learned to skate at thirty-five, and everything between. This is unlike almost any other sport's amateur scene, and it means:
 
 - **Adjust the pass to the receiver.** A hard, flat pass to someone who can't receive it is not a good pass. It is a turnover you caused.
-- **Cover more ice than your job description if you can.** If you are the strongest skater on your line, you are the one who backchecks.
+- **Cover more ice than your job description if you can.** If you are the strongest skater on your line, you are the one who backchecks — for the puck, not the player. Whether you may hit at all is your league's call; never hit anyone who can't see you coming, never from behind, and if you can see a player's numbers, pull up.
 - **Don't coach from the bench.** Nobody paid league fees to be taught by a teammate. If someone asks, help; otherwise don't.
 
 ### Playing against much weaker or stronger opponents
@@ -561,7 +561,7 @@ A single beer-league bench routinely contains a former junior player, someone wh
 The single most useful sentence in adult hockey. It underwrites most of the culture:
 
 - **An 11pm game is not worth an injury.** Nobody is getting a contract.
-- **No slashing back, no crosscheck in the back, no retaliation.** The retaliation is what escalates, every time.
+- **No slashing, no cross-checking, no retaliation.** The retaliation is what escalates, every time.
 - **Sticks down, blades on the ice, no follow-through above the waist.**
 - **Let the ref referee.** They are usually a teenager or a volunteer and are on their fourth game of the night.
 - **Be somebody people are pleased to see on the ice.** Rec-league rosters are filled by word of mouth; this is also, incidentally, the entire economics of getting invited back.
@@ -597,7 +597,7 @@ This is convention and coaching-experience material rather than a measured findi
 
 Concretely, what gets noticed:
 
-- **Whether you backcheck all the way**, or coast in at the top of the circles.
+- **Whether you backcheck all the way**, or coast in at the top of the circles. Backcheck for the puck, not the player, and pull up if you can see their numbers.
 - **Where you are when the puck is on the other side of the ice** — the single most revealing tell of whether a player understands the system. See [Playing Without The Puck](../hockey-iq/playing_without_the_puck.md).
 - **Shift length.** A player who consistently changes at forty seconds is easier to deploy than a more skilled player who stays out for ninety.
 - **Whether your head is up on the bench.**
@@ -719,7 +719,7 @@ document, that is named too.*
 14. **Treat the bench as a working position, and keep both skates inside the boards.** Coaches flag sitting on the boards as putting a blade near someone's face, and the NHL, IIHF and PWHL make it a minor after one warning. Lead without a letter: be first dressed, talk on the ice, welcome new players. **Reliability, not skill**, gets you accepted.
 15. **In the warm-up and in drills, shoot at your own goalie's pads, glove and blocker, never the head.** ⚠️ **No book makes it an offence, and a cage hides the injury an official would need to see — so you are the protection.** Keep to your own end in the warm-up; every book here requires it.
 16. **When a goalie who played the puck outside their crease is skating back, get out of their lane.** The NHL and IIHF penalise deliberately blocking their return, contact or not; Hockey Canada and CARHA reach it as ordinary interference; under USA Hockey it is a penalty and any goal comes off. [Rules Primer](../foundation/rules_primer.md#goaltender-interference) has the rest.
-17. **Play the system your coach asks for, the same way every shift.** Coaches commonly say they watch effort and position more than skill: backcheck all the way, and know where you are when the puck is on the far side. To earn more ice time, ask a narrow question about a specific shift, after practice — then do it.
+17. **Play the system your coach asks for, the same way every shift.** Coaches commonly say they watch effort and position more than skill: backcheck all the way — for the puck, not the player, pulling up if you can see their numbers — and know where you are when the puck is on the far side. To earn more ice time, ask a narrow question about a specific shift, after practice — then do it.
 
 ---
 

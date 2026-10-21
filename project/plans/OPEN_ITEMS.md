@@ -526,30 +526,23 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - (o) Closed by SG2 (record sg2_goalie_race_carha_backswing_2026-10-21.md).
   - (p) offensive_zone_play: CM :1156 "ends your game in most" understates the ejection for the facing-the-glass hit. Every book ejects, including USAH Casebook 608. The rim keep-in (:279) teaches a body-to-wall act with no boards short form. :292's Options facts line omits the third D variant at :909 (content-review, low priority).
   - (q) faceoffs: :404 defines "boards-side" as a circle, but every alignment uses it for one side of a circle (:426–428). :541 and the facts line above it say "clear the inside winger's shooting lane" on the D one-timer, where the shooter is the defenceman. Heard alone, "clear the lane" can also mean moving a defender, which is interference.
-  - (r) game_management :424 "Every clear is a shot… put it toward the empty net": no CARHA 79 backswing limb (low priority). Other dump and clear pages (offensive_zone_play, breakouts, defending_the_rush, the position pages, special_teams) have not been swept for the CARHA limb or for a goalie race.
-  - (s) language_and_glossary :27, "When one comes out for a loose puck, pull up and take the puck". The rest of the corpus now says: NZ "pull up and take away the outlet"; FC KT8 "take the outlet and pull up"; ZE :821/KT10 "peel off into the lane they want to pass into". Brief this as one claim covering every site. Row (o) CARHA limb: NZ rim facts and CM are done. NZ KT8/KT9 judged not to need it (sgS2); ZE KT9 carries it.
-  - (m) **Closed** on center, winger, defender, goaltender, DTR, faceoffs and OZP, and in the body_contact caption, by SG3 (record sg3_settle_for_notebooklm_2026-10-21.md). **Still open** on on_ice_communication :274/:279/:307/:643 and in the body_contact_and_battles body. Coordinator ruling, 21 Oct: reword to the unconditional DZC form wherever it appears. Was: Decision needed, low risk: the shape "they have no puck, so it can be called interference" was removed from DZC. It still stands at goaltender facts :1367 and CM :1633, defender :46, :270 and KT3 :984 (voiced alone), on_ice_communication :279, and in the body_contact diagram caption voiced in goaltender (chunk 102). It is accurate under the NHL and IIHF, but voiced alone it can imply that a shove on a puck carrier is fine. Either brief it as one claim across every site (the caption is in a diagram module), or rule it acceptable.
+  - **SG5 (21 Oct) closed these rows:** (m) remainder, (r), (s), (u), (v, refuted), (w), (x), (ab), (ad), (af), (ah), (ai), (aj), (al), (an), (ao), (ap), and the equipment IIHF 10.3 note. The record is project/reviews/sg5_settle_for_notebooklm_2026-10-21.md. Optional minors still open:
+    - OIC facts :279: "in non-checking play" has lost "anywhere". A 200-char substitution is in the record.
+    - "never turn your back to the checker" stands at risk_management :44/:444/:460, core_principles :215 and rules_primer. It is undefined in voiced-alone layers; use "anyone coming at you".
+    - team_play_and_culture :133 links to #line-changes-at-a-stoppage with "has the rest". The sentence lives under #the-consequences.
+    - uk_rules "or cage cracks" is written rule only for men's U18 (202.2). Elsewhere it is advice.
+    - The UK concussion guidance's reach to Scotland and Northern Ireland is unverified on disk.
+    - IIHF 202.3: does it reach British U19 play?
+    - game_management :243: the full-ice press "both defencemen pinching" has no gate.
+    - OIC :307 "56.5 a game misconduct above it": NHL/PWHL only impose it on injury. It errs strict.
+    - USAH 640(d) is stated without its stick-above-the-knees condition.
+    - HC 6.11(d)(i) on zone_entries: "only once made" is narrower than "attempts". It errs safe.
+    - The pages on hold for NotebookLM batch 2 keep their old rows: (n) breakouts, (p) OZP, (q) faceoffs, (t) the sg3R minors. Verify whether SG3 already closed (n)/(p)/(q).
   - (t) **sg3R MINORs.**
     - The CARHA 32(d) one-game suspension is missing from the backswing body sites (center, winger, defender, goaltender, faceoffs, zone_entries, NZ). Consider "ends your game and the next".
     - breakouts :528 omits High School from the USAH 624(b)(1) list.
     - defender :278: NHL 56.2(iii) and PWHL 57.2(iii) fit the walk-out better than (i); the USAH 625 Note and Casebook 609 Sit. 2 fit better than 625(a)(4).
     - DTR :330 voiced alone attaches the HC 7.5(a) tier to head first into the boards, where 7.5(c) is a match. The next line carries it.
-  - (u) game_management, from the Detailed writer:
-    - :411 facts and :422 still use the "so" shape ("they do not have the puck, so walking them off…"); add to row m.
-    - :412/:424 has no CARHA backswing limb (row r).
-    - :244's pinch has no posture, fallback or pressure gate.
-    - :980 "hard on the wall" has no boards limb.
-    - CM :1243 says "her".
-  - (v) puck_handling KT3: "an injuring non-checking bump does end your game under CARHA" may be broader than the body. CARHA's mandatory major needs intentional contact that injures. To be ruled by dR-ph.
-  - (w) zone_entries:
-    - :254 "pull up and play the puck" sits inside the delayed-offside section, which says to hold at the line. Change it to "pull up and get back to the line".
-    - The Key focus :14 middle drive has no head-up limb (source :457 names that hazard).
-    - :235/:245 describe the forechecker arriving on a defender facing the boards, with no gate.
-  - (x) passing_and_receiving (from the Detailed writer):
-    - :713 two-on-one "drive at the net" has no head-up or goalie limb.
-    - :42 the checker is defined as "pressuring you", which narrows the boards limbs (item 20 shape).
-    - The posture omits "never the point of your shoulder" and the slow-speed limb.
-    - The pressure-passing drill (:787/:795) has no anti-contact limb.
   - **SG4 (21 Oct) closed rows (y), (z), (aa), (ac), (ae), (ag), (ak) and (am).** The record is project/reviews/sg4_source_gaps_from_detailed_2026-10-21.md. Optional minors still open:
     - scanning facts :380 is telegraphic, and the :390 gate lacks "can't see you coming";
     - the PWTP CM :1017 and the practice_and_development :360/:382 bullets lack the facing-the-wall fallback;
@@ -557,52 +550,6 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - the "can end your game" goalie-charging line in shooting understates HC, CARHA and USAH, where it is mandatory;
     - the British U10/U12 non-check hit tariff is untraced.
     - The time_and_space "most without" premise was refuted (HC 8.3(i) and CARHA 66(a) reach it). The coordinator's brief was the defect.
-  - (ab) risk_management:
-    - North is defined both ways: :101 vs the turnover material at :152, :156 (facts), :163, :942 and KT4 :967, which is voiced alone.
-    - "Against four attackers" at :517 and :534 is hard to parse.
-    - The slide-into-legs limb at :670 and :691 cites only USAH and HC, but the NHL, IIHF and PWHL 57.3-type riders also give a minor even when the puck was touched first. This needs a rules-verifier.
-    - Check the page for "in your own crease" narrowing the ban on falling on the puck (NHL 63.9(vii), USAH 614(a)).
-  - (ad) body_contact_and_battles: "the slot" is used at :416, :1154, :1168 and :1515 but never defined on the page. Link its first use to the glossary or rink_map. The safety reviewer also noted that neck laceration protectors are absent from the corpus's shot-blocking material, although England Ice Hockey makes them mandatory. Verify against the primary source before adding anything.
-  - (af) on_ice_communication, confirmed by dR-oic:
-    - **The "no puck" so-trap, in four layers:**
-      - :274 body;
-      - **:279 facts, voiced alone**;
-      - :307 body;
-      - CM :643.
-
-      The :283 facts line supplies the same premise. Fix: state the ban unconditionally, as in the SG3 item C wording.
-    - **"The checker" is never defined.** It is used at KF :9, :25, facts :91/:141, :108, :110, :154, :202 and KT2 :699. Use the brief item 20 wording.
-    - **"Time" is taught with no "only when sure" limb** at :25, :68, **facts :93 (voiced alone)**, :128 and KT2 :699.
-    - **The chop limbs may narrow to the hands only.** Check that the corpus doesn't say "never chop at the hands" where NHL/IIHF 61.1 and USAH 634 also cover a chop at the stick.
-    - **Brief item 7, "A two-handed shove is a cross-check whatever your blade is doing", is false under USAH 609.** That rule requires no part of the stick on the ice. defender.md :333/:348 carries the exception, and the brief has been corrected.
-  - Equipment Detailed review (dR-eq) found **IIHF 10.3 adds "slide" and "toss" to the stick-to-skater ban**. Check that equipment.md and its siblings don't voice the NHL-only "throw or shoot" without it.
-  - (ah) language_and_glossary:
-    - The "so" trap appears twice: Overview :39 and body :421 ("a screener has no puck, so moving one… is interference"). Align both with KF :25.
-    - No goalie-contact paragraph (:375–:403, :417–:419) gives an injury reason.
-    - The bump/shove penalty is priced only for Hockey Canada. USAH 604 Note and CARHA 49(a) reach it too.
-  - (ai) A corpus-wide claim to sweep: any "one rulebook / in a game with checking, a goalie holding the puck in the corner can be challenged" sentence. USA Hockey Casebook 607 Sit. 5 is the only book that grants it. Voiced alone, it reads as permission. The rink_map and glossary Detailed scripts both carried it, and both fixed it to "with your stick, never with your body". Check rink_map.md :317-area, language_and_glossary.md, goaltender.md and core_principles.md in every layer.
-  - (aj) team_play_and_culture, from its writer:
-    - :564 "no crosscheck in the back" narrows the ban.
-    - :186 has a backcheck with no gate.
-    - :36 puts a rulebook comparison in the Overview.
-    - :185 "get to the net" is a bench-talk example with no net-drive limbs.
-    - All four rows were confirmed by dR-tpc.
-  - (al) conditioning_and_recovery, from dR-cr:
-    - CM :606 and KT12 :687 narrow the IIHF 101.1 women's boards limb to "pinning". The rule also bans pushing into the boards; the body at :238 has it in full.
-    - :208's shoulder claim must not be read as covering the neck.
-    - "In Britain" leaves out Northern Ireland, which the UK guidance and IHUK both cover.
-    - A Canada-only scope on "bump, shove or push" would imply it is legal elsewhere. Check every page for this, because USAH 604(c) Note penalises deliberate contact too.
-  - (an) rules_primer, from its writer:
-    - The boards posture at :33 and :510 has no facing-the-boards fallback.
-    - The U12 3–4 minute minor appears in KF :25 but not in the table at :357.
-    - :1102 says "screen is legal" more confidently than :811.
-  - (ao) uk_rules, from dR-uk:
-    - The page never mentions mouthguards, but they are mandatory in the EIHL (Casebook :340) and the WNIHL (RoC :955).
-    - IIHF 9.7 and 202.2 say a cracked visor or cage means leaving the ice. The page does not carry this.
-  - (ap) rules_primer, from dR-rp:
-    - :181-area: "a player who has just lost the puck can only be hit straight away" may be on the page too. Check it against IIHF Appendix II, under which this check is automatically reckless, and against USAH Casebook's conditions.
-    - :51: the IIHF 48.1 head-down carve-out is voiced from the checker's side.
-    - :402: the hooking-the-stick scope.
   - Each needs a layer test and a safety-reviewer.
 - **Detailed status (21 Oct ~11:00).** Every one of the 39 scripts has been written and safety-reviewed to SHIP.
   - **Published, 23:** winger, center, defender, goaltender, breakouts, switching_positions, DZC, forechecking, NZ, OZP, DTR, faceoffs, game_management, puck_handling, zone_entries, special_teams, skating, passing, PWTP, shooting, scanning, risk_management, time_and_space.
@@ -646,7 +593,8 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **check_readability:** also joins blockquote paragraphs separated by a bare `>` line (z2, z3). Fix it together with the Related-line row, between waves.
 - **faceoffs USAH 602(a):** "plan on the match" at about :615 (facts), :628 (body) and :1234 (CM) has no suspension limb. Under the OR ruling it may appear at most twice per document, so decide which two sites carry "a likely multi-game suspension" (Y wave, y3).
 - **check_readability:** counts a whole blockquote, including a long `**Related:**` nav line, as one paragraph, so page headers are inflated. Exclude Related lines, or measure blockquote paragraphs separately (Y wave, y3).
-- **Site-reviewer pass due:** (SG4, 21 Oct) eight pages need checking:
+- **Site-reviewer pass due:** (SG5, 21 Oct) prose limbs on twelve pages: game_management, zone_entries, passing_and_receiving, risk_management, on_ice_communication, language_and_glossary, body_contact_and_battles, team_play_and_culture, conditioning_and_recovery, rules_primer, uk_rules and rink_map. Check especially the new ⚠️ pinch run at game_management :244, the new uk_rules mouthguard bullet, and the rink_map :224/:458 reorder.
+(SG4, 21 Oct) eight pages need checking:
   - practice_and_development: the :360 list item and the :475 table row;
   - how_to_watch_hockey: the new :650 paragraph and the :146 coverage line;
   - time_and_space: the new :373 paragraph;

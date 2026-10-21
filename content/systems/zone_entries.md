@@ -11,7 +11,7 @@
 
 **Carry the puck in when you can.** In tracked NHL games a carry was worth about twice a dump-and-chase in shots, and a failed carry cost far less than it feels. Dumping and changing was the worst play of all.
 
-**Attack the space between two defenders, not one of them.** If you get there alone, turn away rather than force it: protect the puck, look back up the ice and come again with a teammate — curling in open ice, not against the wall.
+**Attack the space between two defenders, not one of them — head up, because both can stand you up there.** If you get there alone, turn away rather than force it: protect the puck, look back up the ice and come again with a teammate — curling in open ice, not against the wall.
 
 **Carry if you have the line or the support; chip it past a defender who is committing; delay if support is a second away.** Dump only to a place a teammate is already skating to.
 
@@ -21,9 +21,9 @@
 
 **Never forecheck during a delayed offside — hold at the line, tag up together, and wait for the arm to drop.** The defenceman retrieving has their back to you, so hitting them is checking from behind, which gets you thrown out in most books.
 
-**Chase a dump on an angle, not straight at the puck.** Take away the retriever's easiest escape — usually up the boards or a reverse behind the net — and arrive on the puck, never on their back and never on their goalie.
+**Chase a dump on an angle, not straight at the puck.** Take away the retriever's easiest escape — usually up the boards or a reverse behind the net — and arrive on the puck, not the player: never on their back, never on anyone who cannot see you coming, never on their goalie. Whether you may hit at all is your league's call, and if you can see their numbers, pull up.
 
-**Without the puck, give the carrier a threat and an option.** One forward drives the net as the puck crosses, to back the defence off, and stops at the edge of the paint; one stays level for a pass; nobody stands still at the line.
+**Without the puck, give the carrier a threat and an option.** One forward drives the net as the puck crosses, to back the defence off, and stops at the edge of the paint, head up; one stays level for a pass; nobody stands still at the line.
 
 ## Overview
 
@@ -33,7 +33,7 @@ A **zone entry** is your team bringing the puck across the opponent's blue line 
 
 **Trying is cheaper than it feels.** A failed carry costs a little going the other way, but less than dumping and changing, so the break-even sits near one in three. That is a probability, not a licence, but it is why the study's authors concluded the NHL players they tracked gave the puck up at the line too easily.
 
-**The seam and the timing are how you make carrying work.** One defender facing you has an easy job; two sharing a gap have to decide who takes you. Wingers arriving first, with the carrier a beat behind, make the defence respect three threats instead of collapsing on one — a coaching convention rather than a rule. Turning away when you are alone feels like retreating, but it turns a doomed entry into a fresh one with support.
+**The seam and the timing are how you make carrying work.** One defender facing you has an easy job; two sharing a gap have to decide who takes you — and both can stand you up, so go through it head up. Wingers arriving first, with the carrier a beat behind, make the defence respect three threats instead of collapsing on one — a coaching convention rather than a rule. Turning away when you are alone feels like retreating, but it turns a doomed entry into a fresh one with support.
 
 **The onside rule is a tool, not a trap.** It is judged on the skates at one instant, not on the body, so a forward who knows it arrives at full speed with body and stick already in the zone. The books differ on whether the trailing skate may be in the air, so find out which one your league plays.
 
@@ -232,8 +232,8 @@ A **delayed offside** is when attackers precede the puck but the defending team 
 Never: Forecheck during a delayed offside. Hold at the line instead and wait for the arm to drop, whichever book you are under
 Rule: Every book here whistles a delayed offside for touching the puck, and for going for a loose one — NHL and IIHF 83.3, PWHL 85.3, Hockey Canada 6.11(b)(ii) and CARHA 72(e)(2) ("while the puck is still in the attacking zone"). USA Hockey 630(d) is wider: any attempt on the puck, loose or not
 Rule: NHL and IIHF 83.3 add two further delayed-offside whistle triggers — forcing the defending puck carrier deeper, and being about to make contact with them. PWHL 85.3 writes both too; USA Hockey reaches the first through 630(d)'s stop-play pressure limb and Casebook Situation 38
-Rule: USA Hockey 630(d), Hockey Canada 6.11(b)(ii) and CARHA 72(e)(2) write no about-to-make-contact trigger, so nothing you can rely on stops play before you arrive. Hockey Canada 6.11(d)(i) can whistle a knowing play on the defending carrier, but only once made
-Rule: USA Hockey 630(d) does whistle an attacker who "continues to apply pressure to the defending puck carrier" — wider than the NHL's forcing-them-deeper limb, but a linesperson's judgement of pressure, not of an imminent hit, so never close on them expecting a whistle
+Rule: USA Hockey 630(d), Hockey Canada 6.11(b)(ii) and CARHA 72(e)(2) write no about-to-make-contact trigger: nothing you can rely on stops play before you arrive, so hold at the line. Hockey Canada 6.11(d)(i) can whistle a knowing play on the defending carrier, but only once made
+Rule: USA Hockey 630(d) does whistle an attacker who "continues to apply pressure to the defending puck carrier" — wider than the NHL's forcing-them-deeper limb, but a linesperson's judgement of pressure, not of an imminent hit, so hold at the line, never close on them
 Rule: Hitting a defenceman turned to retrieve is checking from behind — under USA Hockey a forceful check at the boards is a major plus game misconduct or a match (Casebook 608 Situation 1); if reckless, plan on a match (602(a)), and it is mandatory with excessive force if they are vulnerable (608(c))
 Rule: USA Hockey's Casebook names its minor plus misconduct for a push "not near the boards" or a minimal-contact "pinch"; a check from behind that "recklessly endangers the opponent", board contact or none, is a major plus a game misconduct — plan on a match (608 Situation 1; 602(a))
 Rule: Hockey Canada 7.5 is a minor and game misconduct for an intentional hit from behind "anywhere on the ice", off the head or head first into boards, and a match if they are defenceless into boards or goal frame; on their head, head contact (7.6; 7.7 Junior/Senior), up to a match, a must if defenceless
@@ -249,9 +249,9 @@ Action: Retreat to the line, tag up, come again
 
 **USA Hockey** stops play when an attacker *"touches the puck"* or *"attempts to gain possession of the puck or continues to apply pressure to the defending puck carrier"*, and its *Casebook* has the linesperson stop play once the carrier is forced deeper *"or as soon as contact, however slight, is made with the puck or puck carrier."* That is a judgement of pressure, not a promise to stop an imminent hit. **Hockey Canada and CARHA stop play only for the puck** — no pressure trigger, no contact trigger. Hockey Canada can call an intentional offside on a deliberate play against the carrier, but only once it is made, and its price is a faceoff in your own end.
 
-So under USA Hockey, Hockey Canada and CARHA, ⚠️ **never close on the defending carrier expecting the whistle first.** The arm being up is not a stoppage, the carrier is still playing the puck, and is not braced for a hit.
+So under USA Hockey, Hockey Canada and CARHA, ⚠️ **never close on the defending carrier — hold at the line, because you cannot count on the whistle coming first.** The arm being up is not a stoppage, the carrier is still playing the puck, and is not braced for a hit.
 
-And name ⚠️ **the hit you are lining up.** A defenceman turned to retrieve a puck in their own end has their back to you, so hitting them is **checking from behind**. Hockey Canada's rulebook prints your exact picture among the hits it tells referees to punish strictly, *"aware of the tragic consequences of spinal injuries"*: *"Where a player along the boards, with their head down looking for the puck or 'digging the puck out,' is hit from behind and driven head-first into the boards."* USA Hockey's *Casebook* marks a *"danger zone"* *"approximately ten feet out from the boards"*, where players checked from behind *"may be at high risk of receiving a serious and possibly life altering injury."* ⚠️ **If you can see their numbers, pull up and play the puck.**
+And name ⚠️ **the hit you are lining up.** A defenceman turned to retrieve a puck in their own end has their back to you, so hitting them is **checking from behind**. Hockey Canada's rulebook prints your exact picture among the hits it tells referees to punish strictly, *"aware of the tragic consequences of spinal injuries"*: *"Where a player along the boards, with their head down looking for the puck or 'digging the puck out,' is hit from behind and driven head-first into the boards."* USA Hockey's *Casebook* marks a *"danger zone"* *"approximately ten feet out from the boards"*, where players checked from behind *"may be at high risk of receiving a serious and possibly life altering injury."* ⚠️ **If you can see their numbers, pull up and get back to the line.**
 
 **What it costs.** ⚠️ **Expect to be thrown out of the game, and in several books it is not the referee's choice.** The three books that will not stop play before you arrive are the three that will take you off the ice after you do.
 
@@ -319,14 +319,14 @@ The principle underneath: **you are not trying to beat them, you are trying to m
 ### Attack the space between two defenders, not one of them
 
 ```facts
-Action: Skate at the seam between two defenders — the two defencemen, or a defenceman and a backchecking forward
+Action: Skate at the seam between two defenders, head up — the two defencemen, or a defenceman and a backchecking forward
 Never: Skate directly at a defender — you have handed them an easy job, because they only have to deal with you
-Action: On a 3-on-2, the middle attacker drives the space between the two defencemen, not either one
+Action: On a 3-on-2, the middle attacker drives the space between the two defencemen, not either one — head up, because both can stand you up
 Action: On a 2-on-1 wide, angle your route so the single defender is forced to choose between you and your partner
 Read: The moment two defenders both think the other one has it — a fraction of a second long, and where entries are won
 ```
 
-Skate directly at a defender and you have handed them an easy job: they only have to deal with you. Skate at the **seam between two defenders** — between the two defencemen, or between a defenceman and a backchecking forward — and you have created a problem neither of them owns. Both have to decide whether to step or hold. Whichever one steps opens the space they were covering.
+Skate directly at a defender and you have handed them an easy job: they only have to deal with you. Skate at the **seam between two defenders** — between the two defencemen, or between a defenceman and a backchecking forward — and you have created a problem neither of them owns. Both have to decide whether to step or hold. Whichever one steps opens the space they were covering. Go through it head up: it is also where both of them can stand you up.
 
 Practically: on a 3-on-2, the middle attacker should drive at the **space between the two defencemen**, not at either one. On a 2-on-1 wide, angle your route so the single defender is forced to choose between you and your partner rather than being able to face both.
 
@@ -351,7 +351,7 @@ Rule: USA Hockey 607(c) is not scoped to the crease — a check or charge on a g
 Rule: Hockey Canada 8.5(b) makes a major plus a game misconduct automatic for any charge on the goalie, reckless or not, wherever they are standing, and for injuring them by interference that would otherwise draw a minor
 Rule: CARHA 52(b) makes a major plus a game misconduct mandatory for charging a goalie in the crease or for any charge that injures, and 54(c) for cross-checking one there; NHL and PWHL 42.5 and the EIHL Casebook's Rule 42 add a mandatory game misconduct to a charging major that injures their face or head
 Rule: NHL and IIHF 69.4 (PWHL 71.4) also reaches the goalie once they have left the crease to play the puck — an attacker whose "deliberate actions" prevent the goalie's return may be penalised for interference; it turns on intent, not contact
-Never: Turn your back to the checker going down the wall; if you are tight to it and cannot get off it, take it with skates parallel, forearm and hip, head up and chin off your chest
+Never: Turn your back to anyone coming at you going down the wall; if you are tight to it and cannot get off it, take it with skates parallel, forearm and hip, head up and chin off your chest
 Risk: Going wide with nobody behind you is not an attack — it is a slow dump-in with extra steps
 ```
 
@@ -676,7 +676,7 @@ Key: A rim is not a reverse — a reverse goes back against the flow, behind you
 Risk: Too soft and it dies behind the net; too hard and it comes off the far boards to the weak-side defenceman
 ```
 
-Fire the puck low and hard around the boards, following the curve of the corner, so it travels **onward around the boards** in the direction of play. In a CARHA league keep the backswing short: a wind-up more than fifteen inches behind the puck is a slap-shot minor, and a major that ends your game if it injures an opponent.
+Fire the puck low and hard around the boards, following the curve of the corner, so it travels **onward around the boards** in the direction of play. In a CARHA league keep the backswing short: a wind-up more than fifteen inches behind the puck is a slap-shot minor, and if it injures an opponent, a major that ends your game and sits you out at least the next one.
 
 ![](diagram:dump-hard-rim)
 
@@ -845,6 +845,7 @@ Action: Skate to a point between the retriever and where they want to go, arrivi
 Action: Approach on the retriever's backhand side where you can — that is where turnovers come from
 Position: Keep your route on the inside, between the puck and the middle, so if they escape they escape to the boards, not into the slot
 Technique: Stick first — leading, on the ice, in the passing lane you are eliminating, before your body arrives
+Never: Arrive on the player instead of the puck, or hit anyone who cannot see you coming; if you can see their numbers, pull up — whether you may hit at all is your league's call
 Rule: A turned retriever has their back to you, so arriving through them is checking from behind — USA Hockey's Casebook (608 Situation 1) puts the major plus a game misconduct, or a match penalty, on a forceful check on a player standing along the boards; if reckless, plan on the match (602(a))
 Rule: Never check a turned retriever — off their head or head first into boards, Hockey Canada 7.5 starts at a minor and game misconduct; on their head, major and game misconduct a must if hurt (7.6, minor and female), highly violent (7.7, Junior and Senior) or a high cross-check; a match if defenceless
 Rule: Hockey Canada 7.5(c): a match for a hit from behind, off the head or head first, "into the boards or goal frame" leaving them "unable to protect or defend themselves"; 7.5(b) a major plus game misconduct on violence, a must on injury; on the head, head contact (7.6; 7.7 Junior/Senior), a match too
@@ -860,7 +861,7 @@ Your route should **take away the easy escape**, not shorten the distance to the
 - **Approach on the retriever's backhand side** where you can. A defenceman forced to make a backhand play under pressure, facing their own boards, is where turnovers come from.
 - **Take a route that keeps you on the inside** — between the puck and the middle of the ice — so if they escape, they escape to the boards, not into the slot.
 - **Stick first.** Your stick should be leading, on the ice, in the passing lane you are trying to eliminate, before your body arrives.
-- **Name the hit before you arrive.** A defenceman turned to retrieve has their back to you and their head over the puck, and arriving through them is ⚠️ **checking from behind**. The whole point of angling is to take the escape away rather than arrive through them; [Body Contact and Battles](../technique/body_contact_and_battles.md) covers how.
+- **Name the hit before you arrive.** A defenceman turned to retrieve has their back to you and their head over the puck, and arriving through them is ⚠️ **checking from behind**. Play the puck, not the player: whether you may hit at all is your league's call, never hit anyone who cannot see you coming, and if you can see their numbers, pull up. The whole point of angling is to take the escape away rather than arrive through them; [Body Contact and Battles](../technique/body_contact_and_battles.md) covers how.
 
 The measure of a good chase is not whether you got the puck. It is whether the retriever's only remaining option was one you had covered.
 
@@ -1164,9 +1165,9 @@ Everything in Section 2 works for you too:
 - **Overshooting a flip dump, or wasting a clear on the kill.** **Land the flip past the defence and short of the goal line; a man down, take the clear you are entitled to.** A clear released before your penalty expires is not icing however late it lands. Check your book: USA Hockey gives no shorthanded exemption outside Youth 15-Only and above, Girls 16U and above, High School and Adult, and the NHL and PWHL withdraw it while an expiring major leaves nobody to come out of the box. 🇬🇧 Under the IIHF book, **seat a substitute in the penalty box as soon as a major empties it** — otherwise it is a bench minor.
 - **Arriving at the line early and having to stop.** Be slower thirty feet out and faster at the line.
 - **The puck carrier arriving first.** Arrive first and you are one player against two defenders. As the carrier, reach the line last, with wingers already there at speed and onside.
-- **Never delaying.** Alone at the line, curl back, protect the puck and come again with a teammate. **Curl in open ice, not against the wall**, and if you are caught there, never turn your back to the checker, and never duck.
+- **Never delaying.** Alone at the line, curl back, protect the puck and come again with a teammate. **Curl in open ice, not against the wall**, and if you are caught there, never turn your back to anyone coming at you, and never duck.
 - **Blind drop passes.** If you cannot see the trailer, do not drop it. A drop into empty neutral ice is the worst turnover in the game, because your whole team is facing the wrong way.
-- **Skating straight at the puck on the forecheck.** Angle to take away the escape, and arrive on the puck, not on the back of a defenceman turned to retrieve it.
+- **Skating straight at the puck on the forecheck.** Angle to take away the escape, and arrive on the puck, not the player — never on the back of a defenceman turned to retrieve it, never on anyone who cannot see you coming. Whether you may hit at all is your league's call, and if you can see their numbers, pull up.
 - **Dumping straight behind the net where the trapezoid applies.** Use the corners. Straight behind hands the goalie a legal touch.
 - **Arriving on the goalie instead of the puck.** **Chase the puck, not the man; if the goalie comes out for it, peel off into the lane they want to pass into.** A goalie out of the crease playing a dumped puck is not *"fair game"* in any book here. If the goalie wins it and heads back, get out of their road: the NHL, IIHF and PWHL can penalise an attacker whose deliberate actions stop the goalie getting home, no contact needed. ⚠️ **Hitting the goalie is never cheap:** a charge on them is an automatic ejection under Hockey Canada, under CARHA in the crease or if it injures them, and under USA Hockey for a reckless one. An ordinary hard chase counts as a charge under Hockey Canada at two strides and under CARHA past two.
 - **Coasting over the line on a delayed offside.** **Every attacker in the zone puts a skate on the line, together, and nobody re-enters until the zone is empty.** Being in the air over the line does not clear you, and one straggler keeps the whole team frozen. Under USA Hockey there is no tag-up at all outside Youth 15-Only and above, Girls 16U and above, High School and Adult — the whistle goes immediately.
@@ -1234,7 +1235,7 @@ document, that is named too.*
 7. **Alone at the line, turn away instead of forcing it — protect the puck, look back up the ice, and come again with support.** **Curl in open ice, not against the wall**, and never turn your back to a checker there, and never duck.
 8. **Never dump without a chaser already going there, and pick the dump to the read** — rim, soft dump, chip past, cross-corner or flip. **Land a flip short of the goal line.** A man down, take the clear you are entitled to, unless your book withholds it.
 9. **Where there is a trapezoid, dump to the corners, not straight behind the net.** The NHL and the IIHF have one. Under USA Hockey, Hockey Canada and CARHA, against a PWHL goalie, and in any British competition, plan for the goalie to come out: rim it hard and low, or away from the goalie's stick hand. In CARHA leagues keep the backswing short, under fifteen inches, or it is a slap-shot penalty.
-10. **Angle your chase to cut off the easiest escape; arrive on the puck, never on a turned defenceman's back — that is checking from behind.** If their goalie comes out for it, peel off into the lane they want to pass into, never into the goalie. ⚠️ **Charging them ejects you automatically under Hockey Canada, under CARHA in the crease or if it injures them, and under USA Hockey if reckless.**
+10. **Angle your chase to cut off the easiest escape; arrive on the puck, not the player — never on a turned defenceman's back, which is checking from behind, and never on anyone who cannot see you coming.** Whether you may hit at all is your league's call, and if you can see their numbers, pull up. If their goalie comes out for it, peel off into the lane they want to pass into, never into the goalie. ⚠️ **Charging them ejects you automatically under Hockey Canada, under CARHA in the crease or if it injures them, and under USA Hockey if reckless.**
 11. **Driving the net, stop at the edge of the blue paint, head up; never meet a post head first or duck.** ⚠️ **Contact with the goalie costs more than the goal:** deliberate contact is a penalty in every book; a charge ejects you automatically under Hockey Canada, under CARHA in the crease, and under USA Hockey if reckless; and under Hockey Canada and CARHA even contact worth only a minor ejects you if it injures the goalie.
 12. **Decide in half a second — gap, then support, then score, then matchup.** Carry with the line or support, chip past a defender standing still or closing hard, delay if support is a second away, and dump only to where a teammate is skating. Late in a game, how far the score moves that line is your coach's call.
 13. **Defending the entry, keep a gap that shrinks all the way to your own line, and aim to make the entry uncontrolled rather than stop it outright.** A stick that forces a dump does the job of a hit — and in a non-checking league it is the only one you have. Which system you play is your coach's call.

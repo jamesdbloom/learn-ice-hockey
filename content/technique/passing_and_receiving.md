@@ -9,7 +9,7 @@
 
 **Move it, then move yourself.** A pass makes the defence re-read the ice; a carry lets them skate alongside you. Think *who is open* first. Carry when nobody is, when a defender's gap is poor, or to buy time for support.
 
-**Look before the puck arrives.** Check both shoulders while the pass travels, so you know your next play when it lands. Look later and the checker — here, the opponent pressuring you — is already on you.
+**Look before the puck arrives.** Check both shoulders while the pass travels, so you know your next play when it lands. Look later and the checker — here, any opponent after the puck or just coming at you — is already on you.
 
 **Pass to where your teammate is going, away from the checker.** Read their feet and lead them; a pass behind cannot be skated onto. Away from the checker beats their forehand. ⚠️ **In traffic the lead is a safety duty:** a puck in their feet puts their head down as a checker arrives, which is how players get driven head-first into the boards.
 
@@ -39,7 +39,7 @@
 
 **Two words do constant work below.** The blade's **heel** is the end nearest the shaft and its **toe** the far end. The **slot** is the dangerous ice in front of the net, between the two faceoff circles. [Language and Glossary](../foundation/language_and_glossary.md) defines the rest and [Rink Map](../foundation/rink_map.md) draws the ice.
 
-**One word runs both ways.** ⚠️ **Here, the *checker* is the opponent pressuring you**; elsewhere in this guide, and in most coaching, *"your check"* is the opponent **you** are covering. Take the direction from the sentence.
+**One word runs both ways.** ⚠️ **Here, the *checker* is any opponent after the puck or just coming at you**; elsewhere in this guide, and in most coaching, *"your check"* is the opponent **you** are covering. Take the direction from the sentence.
 
 ---
 
@@ -192,7 +192,7 @@ Technique: Reverse short and firm, usually on the backhand, into the space behin
 Read: Choose by the checker's momentum, not their position. Rim if they still have you pinned, reverse if they have skated past you
 Action: Call your intention on the rim; one a teammate is not expecting is a turnover to their opposite number
 Never: Reverse on hope — it is a support-dependent play, and a reverse into nobody is a turnover you cannot chase, usually deep in your own end
-Never: Square up to the boards and drop your head to watch the puck onto your blade. Rim with your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest
+Never: Square up to the wall, head down to watch the puck. Rim with skates parallel to the wall, forearm and hip to it, never the point of your shoulder; head up and chin off your chest, even going slowly
 ```
 
 These two are constantly conflated. They go in **opposite directions** and they beat **different kinds of pressure**.
@@ -212,7 +212,7 @@ These two are constantly conflated. They go in **opposite directions** and they 
 
 **The two pictures above come from [Winger](../positions/winger.md)**, so their captions speak about a winger in their own end. They draw the two halves of the choice: in the rim the checker still has you pinned, in the reverse the checker has skated past you up the wall. The read carries to any wall or behind-the-net battle. ⚠️ **So does the wall-contact warning both captions carry**, which [Body Contact and Battles](body_contact_and_battles.md) owns.
 
-**Rim in the right posture, because the checker is sealing you against the wall.** The natural shape — square to the boards, head down, watching the puck onto your blade — is the wrong one. ⚠️ **Rim with your skates parallel to the wall**, your **forearm and hip** to it, and your **head up and chin off your chest**. Find the boards by feel. Head down on the wall, digging at a puck, is exactly the picture the checking-from-behind rules describe.
+**Rim in the right posture, because the checker is sealing you against the wall.** The natural shape — square to the boards, head down, watching the puck onto your blade — is the wrong one. ⚠️ **Rim with your skates parallel to the wall**, your **forearm and hip** to it, never the point of your shoulder, and your **head up and chin off your chest** — even going slowly. Find the boards by feel. Head down on the wall, digging at a puck, is exactly the picture the checking-from-behind rules describe.
 
 **Risk on the rim.** A rim that a teammate is not expecting is a turnover to their opposite number, and a soft rim dies in the corner. Rims also need a called intention — see [On-Ice Communication](../foundation/on_ice_communication.md).
 
@@ -538,7 +538,7 @@ Action: Arrive at the puck on an angle rather than straight at the passer, curli
 Goal: Your next option should already be visible when the puck lands on your blade
 Key: Decide which way you are going before the puck arrives, and be pointing that way when it does
 Risk: A closed body invites the pressure to arrive on your back — worst on the offensive half-wall and on breakout receptions
-Never: Turn your back to the checker, and never duck — keep your head up and your chin off your chest
+Never: Turn your back to anyone coming at you, or duck. Keep your head up and chin off your chest even going slowly, and never take the wall on the point of your shoulder
 Technique: If you are already facing the wall and cannot turn, get your stick and gloves up on the glass and spread the impact as wide as you can, no head contact — damage limitation, not a position to aim for
 ```
 
@@ -550,7 +550,7 @@ Technique: If you are already facing the wall and cannot turn, get your stick an
 
 This is especially valuable on the half-wall in the offensive zone and on any breakout reception, where a closed body invites the pressure to arrive on your back.
 
-**On the wall, pressure on your back is a hit from behind into the boards.** Opening up lets you see the checker coming instead of feeling them arrive. Your posture at the moment of contact is not a preference: ⚠️ **never turn your back to the checker, and never duck** — keep your head up and your chin off your chest. Caught facing the wall and unable to turn, put your stick and gloves up on the glass to spread the impact — damage limitation, not a position to aim for. [Body Contact and Battles](body_contact_and_battles.md) covers how to take the hit, and the evidence behind it.
+**On the wall, pressure on your back is a hit from behind into the boards.** Opening up lets you see the checker coming instead of feeling them arrive. Your posture at the moment of contact is not a preference: ⚠️ **never turn your back to anyone coming at you, and never duck** — keep your head up and your chin off your chest, even going slowly, and never take the wall on the point of your shoulder. Caught facing the wall and unable to turn, put your stick and gloves up on the glass to spread the impact — damage limitation, not a position to aim for. [Body Contact and Battles](body_contact_and_battles.md) covers how to take the hit, and the evidence behind it.
 
 ### Receiving while moving
 
@@ -710,7 +710,7 @@ It is **not** justified as a default, and it is a bad habit in your own end. The
 The same passing decisions come round every game. These are the common approaches; where coaches differ the alternative is named, so ask your bench which one your team plays.
 
 - **Breaking out, a defenceman with the puck behind your own net.** The common first option is a firm, flat pass to the strong-side winger on the wall, to their forehand or off the boards to them. If that winger is covered, reverse it behind the net to your partner or to the centre swinging low; if everything is covered, skate it or rim it hard. Never answer pressure there with a pass through the slot. [Breakouts](../systems/breakouts.md) sets out the patterns teams run.
-- **A two-on-one, with the puck.** Make the defender choose: drive at the net as if you will shoot, and pass only when their stick leaves the lane. Pass early and flat, to your partner's stick ahead of them rather than to their skates, so they can shoot before the goalie arrives. If the defender takes the pass away, shoot.
+- **A two-on-one, with the puck.** Make the defender choose: drive at the net under control, as if you will shoot, and pass only when their stick leaves the lane. Pass early and flat, to your partner's stick ahead of them rather than to their skates, so they can shoot before the goalie arrives. If the defender takes the pass away, shoot — then pull up short of the goalie, head up and chin off your chest, because the post can hurt you the way the boards can.
 - **From behind the opponent's net.** Wait for a teammate to arrive in the slot and pass to the spot they are skating into, flat and hard. A pass out front that nobody is arriving for is a turnover in the most dangerous place to have one at the other end.
 - **From the half-wall up to the point.** Keep it hard, flat and on the defenceman's forehand. A soft pass there is the one a winger jumps for a breakaway; if the lane is not clean, cycle it down low instead.
 - **The entry is closed.** Regroup — pass it back to your defence and come again with speed rather than forcing a pass into a crowd at the blue line. A regroup is a completed play.
@@ -784,7 +784,7 @@ Action: Skate parallel down the ice passing back and forth, deliberately leading
 Action: Give-and-go — pass, burst into space, receive it back
 Action: Saucer over a stick laid flat on the ice, judged by whether it lands flat, not by whether it clears
 Action: Bad-pass practice — have your partner send you rolling, bouncing and behind-you passes deliberately
-Action: Pressure passing with a third player closing on the passer; clean passing in a quiet drill does not transfer on its own
+Action: Pressure passing with a third player closing on the passer, stick on the puck and no contact; clean passing in a quiet drill does not transfer on its own
 ```
 
 - **Stationary tape-to-tape**, gradually increasing distance. Both players give a target blade every single rep.
@@ -792,7 +792,7 @@ Action: Pressure passing with a third player closing on the passer; clean passin
 - **Give-and-go**: pass, burst into space, receive it back. This trains the two-player timing that makes a pass work.
 - **Saucer practice over an obstacle** — a stick laid flat on the ice between you. Judge success by whether it lands *flat*, not by whether it clears the stick.
 - **Bad-pass practice.** Have your partner deliberately send you rolling, bouncing and behind-you passes. Nobody does this, and it is the fastest way to improve your reception of the passes you will actually get in games.
-- **Pressure passing.** Add a third player closing on the passer. This is what turns technique into a game skill; clean passing in a quiet drill does not transfer on its own.
+- **Pressure passing.** Add a third player closing on the passer, with their stick on the puck and no body contact. This is what turns technique into a game skill; clean passing in a quiet drill does not transfer on its own.
 
 ### Weighted puck training
 
@@ -828,7 +828,7 @@ Structuring this into an actual improvement plan is covered in [Practice and Dev
 - **No target.** **Blade flat on the ice, out in front, held still, and call for it.** A waving stick makes the passer guess.
 - **Blocking the pass.** **Loose grip, and give with it as it lands.** A blocked pass bounces a foot away — the gap a checker needs.
 - **Standing still to receive.** **Keep your feet moving and adjust your speed to the pass.** A stationary receiver loses a stride and is easy to hit.
-- **Receiving with your back to the ice.** **Open your body before the puck arrives.** On the wall, pressure on your back is a hit from behind. ⚠️ **If the contact comes anyway: head up, chin off your chest — never duck.**
+- **Receiving with your back to the ice.** **Open your body before the puck arrives.** On the wall, pressure on your back is a hit from behind. ⚠️ **If the contact comes anyway: head up, chin off your chest even going slowly — never duck, and never the point of your shoulder.**
 - **Two touches when one would do.** **Pick your target while the puck travels, and move it first time when it is on.**
 - **A drop pass on hope.** **Drop it only to a trailer you know is there, leave it dead, and keep skating.** Not sure? Keep it.
 - **Saucering when a flat pass was on.** **Lift it only over a stick or a body.**
@@ -902,7 +902,7 @@ document, that is named too.*
 11. **Never pass across the front of your own goal.** No blind pass up the middle, no D-to-D through the slot, no cross-ice pass in your own end. These are defaults, not laws — some breakouts build in a D-to-D behind the net — so follow them unless your coach has designed the exception.
 12. **Stretch and drop passes are reads, not hopes.** Stretch it only when a teammate is truly behind their forwards. Drop it only to a trailer you know is there, and keep skating hard.
 13. **Under pressure, make the pass you can complete, and decide your out before you get the puck.** Rim, bank, chip or reset; never thread a needle with a checker on you.
-14. **On the wall and on a breakout, receive open to the ice**, so the pressure is not on your back — on the wall, that is a hit from behind. If it comes anyway, keep your head up and never duck.
+14. **On the wall and on a breakout, receive open to the ice**, so the pressure is not on your back — on the wall, that is a hit from behind. If it comes anyway, keep your head up and chin off your chest even going slowly, never duck, and never take the wall on the point of your shoulder.
 15. **Kick the puck out of your feet — never the man.** Kicking or trying to kick an opponent is a **match penalty** under the NHL, PWHL, USA Hockey, Hockey Canada and CARHA. Under the IIHF — Britain's book — it can be a major with an automatic ejection.
 16. **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent's head, face or neck, every book penalises it and every book has a route to an ejection.** Under CARHA it is a major that ends your game unless accidental and injury-free, plus at least a one-game suspension if intentional.
 
