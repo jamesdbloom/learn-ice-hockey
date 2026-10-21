@@ -76,6 +76,15 @@ POINTER = re.compile(
     re.IGNORECASE,
 )
 
+# A bare NUMERIC pointer anywhere in the line: "those two", "these three",
+# "both of them". Added 21 Oct 2026 after a Risk: line reading "Picking the
+# wrong one of those two…" (offensive_zone_play) passed this tool, because the
+# abstract-noun list above cannot see a number standing in for a noun. Matched
+# anywhere, not only at the start. A hit is a CANDIDATE: "those two books" is
+# fine when the line itself names both books just before it.
+NUMERIC = re.compile(r"\b(those|these)\s+(two|three|four)\b|\bboth of (them|those)\b",
+                     re.IGNORECASE)
+
 # Shown with --all: the broad pattern, for anyone who wants to see the noise the
 # narrow one filters out. Never the default.
 BROAD = re.compile(
@@ -132,7 +141,7 @@ def main(argv=None) -> int:
                 rel = path.resolve().relative_to(REPO)
             except ValueError:
                 rel = path
-            if POINTER.match(value):
+            if POINTER.match(value) or NUMERIC.search(value):
                 narrow.append((rel, n, label, value))
             elif args.all and BROAD.match(value):
                 broad.append((rel, n, label, value))
