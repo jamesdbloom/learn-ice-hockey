@@ -431,6 +431,8 @@ pre code .line {
   border-radius: var(--radius);
   cursor: pointer;
   text-decoration: none;
+  /* "The Basics" wrapped to two lines (51px tall) between 497 and 586px. */
+  white-space: nowrap;
 }
 
 .icon-button:hover {
@@ -438,8 +440,21 @@ pre code .line {
   background: var(--bg-sunken);
 }
 
+/* The header's one page link that can be the current page (The Basics). An accent
+   bar along the bottom rather than the hover ground, so "you are here" does not
+   read as "the pointer is here". */
+.icon-button[aria-current='page'] {
+  color: var(--text);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+/* Contents' glyph is shown only in the narrowest band below; see there. */
+.icon-button__glyph {
+  display: none;
+}
+
 /*
-  Narrow phones: the three header actions do not shrink, so every pixel they
+  Narrow phones: the header actions do not shrink, so every pixel they
   take comes out of the wordmark beside them. At 320px they were claiming ~209px
   of a 291px content box and leaving the site title 58px — enough for "Learn".
 
@@ -459,8 +474,23 @@ pre code .line {
   (430px, 448px), so the rule now runs to the width where the wordmark fits
   without help. The cost is the "Search" word hidden on more phones; the
   accessible name survives the clip, and a readable wordmark was the point.
+
+  ⚠️ RE-DERIVED FOR FOUR ACTIONS (21 October 2026), when "The Basics" joined the
+  header. Everything above was measured with three, and the fourth button cost the
+  wordmark ~60px at every narrow width (54px at 320px against 116px without it).
+  Measured in headless Chrome on the built site, three tiers now:
+    · 37rem (592px): the compact tier above. The full-width actions need ~593px for
+      the full 206px wordmark, so this is where they stop fitting, not 31rem.
+      "The " is clipped here too, so the visible word is "Basics".
+    · 30rem (480px): "Contents" drops to a ☰ glyph, word kept for assistive
+      technology, exactly as Search does. Without it the wordmark truncated
+      from ~470px down.
+    · 22rem (352px): tighter header padding and gaps, and the decorative puck goes.
+      This is what holds the wordmark at or above HEAD's three-action 116px down to
+      320px; without it 320px gave 93px.
+  Re-measure all three if a header action is added, removed or relabelled.
 */
-@media (max-width: 31rem) {
+@media (max-width: 37rem) {
   .site-header {
     gap: 0.5rem;
     padding: 0 0.5rem;
@@ -488,6 +518,40 @@ pre code .line {
     clip: rect(0 0 0 0);
     white-space: nowrap;
     border: 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .icon-button__glyph {
+    display: inline;
+  }
+
+  .icon-button__word {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+@media (max-width: 22rem) {
+  .site-header {
+    gap: 0.375rem;
+    padding: 0 0.375rem;
+  }
+
+  .site-header__actions {
+    gap: 0.2rem;
+  }
+
+  /* Decorative (aria-hidden); its 17px go back to the wordmark. */
+  .site-header__brand .puck {
+    display: none;
   }
 }
 
@@ -2005,6 +2069,32 @@ figcaption .warn-inline {
 .button--ghost:hover {
   background: var(--accent-soft);
   color: var(--accent);
+}
+
+/*
+  The Basics door under the hero CTA (owner, 21 October 2026). The same accent rail and
+  tinted ground as the #start-here cards, so it reads as a way in rather than as one more
+  catalogue card; text colours are --text and --text-muted, which the #start-here note
+  measured on this ground in both themes. Width capped to the hero's lede measure.
+  `.card.home-basics` and not `.home-basics`: .card is declared further down this file
+  at the same specificity, and would otherwise repaint the ground and border.
+*/
+.card.home-basics {
+  margin-top: 1.25rem;
+  max-width: 46rem;
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+}
+
+.card.home-basics:hover {
+  border-color: var(--accent);
+}
+
+.home-basics .card__title::after {
+  content: " \2192";
+  color: var(--accent);
+  font-weight: 400;
 }
 
 /* Offset from the sticky header comes from <html>'s scroll-padding-top; see

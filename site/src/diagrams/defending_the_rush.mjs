@@ -94,6 +94,7 @@ const GAP_D = { at: 'centre-ice', dx: -14, dy: 22 };        // (-14, 22)
 
 const gapAndAngle = {
   id: 'rush-gap-and-angle',
+  title: 'Gap and angle on a 1-on-1',
   owner: OWNER,
   half: false,
   width: 900,
@@ -291,6 +292,7 @@ const RELEASE_2ON1 = { at: 'faceoff-dot:right:far', dx: -1, dy: -2 };  // (-70, 
 
 const twoOnOne = {
   id: 'rush-2-on-1',
+  title: 'Defending a 2-on-1 rush',
   owner: OWNER,
   half: false,
   width: 900,
@@ -442,6 +444,7 @@ const D2_2ON2 = { at: 'blue-line::far', dx: -21, dy: -11 }; // (-46, -11)
 
 const twoOnTwo = {
   id: 'rush-2-on-2',
+  title: '2-on-2 rush with a crossing',
   owner: OWNER,
   half: false,
   width: 900,
@@ -511,6 +514,7 @@ const C_3ON2  = { at: 'blue-line::far', dx: 12, dy: -5 };   // (-13, -5) backche
 
 const threeOnTwoDefault = {
   id: 'rush-3-on-2-default',
+  title: 'Defending a 3-on-2: two wide',
   owner: OWNER,
   half: false,
   width: 900,
@@ -592,6 +596,7 @@ const C_ALT  = { at: 'blue-line::far', dx: 14, dy: -8 };    // (-11, -8)
 
 const threeOnTwoAlternative = {
   id: 'rush-3-on-2-alternative',
+  title: 'Defending a 3-on-2: strong side on the puck',
   owner: OWNER,
   half: false,
   width: 900,
@@ -687,6 +692,7 @@ const W2_LANE = { at: 'point:left:far', dx: 11, dy: -11 };   // (-14, -31)
 
 const backcheckLanes = {
   id: 'rush-backcheck-lanes',
+  title: 'Backchecking lanes on a rush',
   owner: OWNER,
   half: false,
   width: 900,
@@ -785,6 +791,7 @@ const F_TRAIL  = { at: 'blue-line::far', dx: -11, dy: -4 };        // (-36, -4)
 
 const trailer = {
   id: 'rush-trailer',
+  title: 'The trailer on a rush',
   owner: OWNER,
   half: false,
   width: 900,

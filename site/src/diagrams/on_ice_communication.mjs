@@ -243,6 +243,7 @@ const PUCK = { at: 'corner:right', dx: 2, dy: 1.5 };         // (84, 35.5)
 
 const whoCanSeeIt = {
   id: 'the-call-and-who-can-see-it',
+  title: 'Who sees the danger and calls it',
   owner: OWNER,
   half: true,
   width: 900,

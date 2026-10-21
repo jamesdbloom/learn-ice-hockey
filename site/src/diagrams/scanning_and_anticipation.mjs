@@ -153,6 +153,7 @@ const D1_PUCK = { at: 'goal-line', dx: -5, dy: 20.2 };        // (84, 20.2)
 
 const wallReception = {
   id: 'scan-before-a-wall-reception',
+  title: 'Scanning before a wall reception',
   owner: 'content/hockey-iq/scanning_and_anticipation.md',
   half: true,
   width: 900,
@@ -286,6 +287,7 @@ const D2_HIGH = { at: 'high-slot', dx: -5, dy: -2 };          // (64, -2)
 
 const whoScoresNow = {
   id: 'scan-the-danger-in-your-own-end',
+  title: 'Where the danger is during a corner battle',
   owner: 'content/hockey-iq/scanning_and_anticipation.md',
   half: true,
   width: 900,
@@ -444,6 +446,7 @@ const D34_YOU_JUMPED = { at: 'high-slot', dx: -4.5, dy: -10.25 };  // (64.5, -10
 
 const anticipation = {
   id: 'lane-jump-anticipation',
+  title: 'Lane jump: the anticipating position',
   owner: 'content/hockey-iq/scanning_and_anticipation.md',
   half: true,
   width: 900,
@@ -492,6 +495,7 @@ const anticipation = {
 
 const guess = {
   id: 'lane-jump-guess',
+  title: 'Lane jump: the guess',
   owner: 'content/hockey-iq/scanning_and_anticipation.md',
   half: true,
   width: 900,

@@ -89,6 +89,7 @@ const NET_FRONT = { at: 'goal-line', dx: -8, dy: 6 };
 
 const homePlate = {
   id: 'oz-home-plate',
+  title: 'Home plate in the offensive zone',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -157,6 +158,7 @@ const homePlate = {
 
 const royalRoad = {
   id: 'oz-royal-road',
+  title: 'The royal road',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -286,6 +288,7 @@ const DEEP_CORNER = { at: 'corner:right', dx: 2, dy: -3 };
 
 const fiveManShape = {
   id: 'oz-five-man-shape',
+  title: 'Five-player offensive-zone shape',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -351,6 +354,7 @@ const fiveManShape = {
 
 const afterRotation = {
   id: 'oz-rotation-one-pass-later',
+  title: 'Offensive-zone rotation, one pass later',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -404,6 +408,7 @@ const SEAM_TARGET = { at: 'high-slot', dx: -4, dy: -10 };
 
 const halfWallOptions = {
   id: 'oz-half-wall-options',
+  title: 'Options from the half-wall',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -505,6 +510,7 @@ const HIGH_SLOT_SUPPORT = { at: 'high-slot', dx: -6, dy: 8 };
 
 const lowToHigh = {
   id: 'oz-low-to-high',
+  title: 'The low-to-high play',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -588,6 +594,7 @@ const lowToHigh = {
 
 const netFrontScreen = {
   id: 'oz-net-front-screen',
+  title: 'Net-front screen position',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -790,6 +797,7 @@ const BEHIND = { at: 'behind-net', dy: 10 };                    // (94, 10)
 
 const behindTheNet = {
   id: 'oz-behind-the-net',
+  title: 'Attacking from behind the net',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,
@@ -1223,6 +1231,7 @@ const STRONG_SIDE_REBOUND = { at: 'faceoff-dot:right', dx: 8, dy: -9 };  // (77,
 
 const postShotShape = {
   id: 'oz-post-shot-shape',
+  title: 'Shape after a shot',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,

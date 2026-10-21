@@ -1,6 +1,9 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
-import { SITE_SHORT_TITLE } from '../consts';
+import { AUDIO_ENABLED, SITE_SHORT_TITLE } from '../consts';
+import { BASICS_PATH } from '../data/podcast';
+
+const onBasics = Astro.url.pathname === BASICS_PATH || Astro.url.pathname === BASICS_PATH.slice(0, -1);
 
 ---
 
@@ -33,11 +36,35 @@ import { SITE_SHORT_TITLE } from '../consts';
       The deeper reason is not the nudge: a reader cannot learn a button that
       behaves by breakpoint. Home is the contents.
     */}
-    <a class="icon-button" href="/">Contents</a>
+    {/*
+      The Basics (owner, 21 October 2026: make it easier to find). First, because it is
+      the starting point for newer players. Below 37rem "The " is clipped the same way
+      as the Search label, so the visible word is "Basics"; the aria-label keeps the
+      accessible name "The Basics", which contains the visible word. Gated on
+      AUDIO_ENABLED, like the footer link, so it never points at an empty listing page.
+    */}
+    {AUDIO_ENABLED && (
+      <a
+        class="icon-button"
+        href={BASICS_PATH}
+        aria-label="The Basics"
+        aria-current={onBasics ? 'page' : undefined}
+      >
+        <span><span class="icon-button__label">The </span>Basics</span>
+      </a>
+    )}
+    {/*
+      Below 30rem the word gives way to the ☰ glyph and stays for assistive
+      technology, as Search's does; see the header note in global.css.
+    */}
+    <a class="icon-button" href="/">
+      <span class="icon-button__glyph" aria-hidden="true">☰</span>
+      <span class="icon-button__word">Contents</span>
+    </a>
     <a class="icon-button" href="/search/" rel="search">
       <span aria-hidden="true">⌕</span>
       {/*
-        Below 31rem this label is hidden visually but kept for assistive
+        Below 37rem this label is hidden visually but kept for assistive
         technology, so the button still announces as "Search" while giving the
         wordmark beside it room to be read. The ⌕ glyph is aria-hidden, so
         without the label the link would announce as nothing at all.

@@ -1,10 +1,19 @@
 ---
 import Base from '../layouts/Base.astro';
 import { LAYERS, READING_ORDER, DOC_COUNT } from '../data/nav';
-import { SITE_DESCRIPTION } from '../consts';
+import { AUDIO_ENABLED, SITE_DESCRIPTION } from '../consts';
+import { BASICS_EPISODES, BASICS_LABEL, BASICS_PATH } from '../data/podcast';
 import pathwayData from '../data/pathways.json';
 
 const first = READING_ORDER[0];
+
+/*
+  The Basics door (owner, 21 October 2026: make the series easier to find). Counted from
+  the published episodes, never written as a literal, and gated on the same flag as the
+  footer link so it cannot point at an empty listing page. The owner's wording for the
+  series is "suitable for newer players or younger players" — keep to it.
+*/
+const basicsCount = AUDIO_ENABLED ? BASICS_EPISODES.length : 0;
 
 /*
   Entry points, from src/data/pathways.json. Four of them are doors onto the
@@ -107,6 +116,15 @@ const hrefFor = (p: (typeof pathwayData.pathways)[number]) =>
         <a class="button" href={first.href}>Start with {first.title}</a>
         <a class="button button--ghost" href="/search/">Search all {DOC_COUNT} documents</a>
       </div>
+      {basicsCount > 0 && (
+        <a class="card home-basics" href={BASICS_PATH}>
+          <span class="card__title">New to hockey, or coaching younger players?</span>
+          <span class="card__desc">
+            Start with {BASICS_LABEL}: {basicsCount} short episodes to listen to, suitable for
+            newer players or younger players.
+          </span>
+        </a>
+      )}
     </section>
 
     <section class="layer-section" id="start-here">

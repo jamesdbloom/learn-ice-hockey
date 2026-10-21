@@ -88,6 +88,7 @@ const LW_POINT = { at: 'point:left', dx: 5, dy: 3 };      // (30, -17) leaving h
 
 const lowZoneCollapse = {
   id: 'centre-low-zone-collapse',
+  title: 'Centre in a low zone collapse',
   owner: 'content/positions/center.md',
   half: true,
   width: 900,
@@ -194,6 +195,7 @@ const D_BEHIND = { at: 'behind-net', dx: -2, dy: 12 };      // (92, 12)
 
 const swingLow = {
   id: 'centre-swing-low',
+  title: 'Centre swinging low for the outlet',
   owner: 'content/positions/center.md',
   // ⚠️ A COMMENT HERE USED TO ANNOTATE NOTHING AND ASSERT THE SUPERSEDED AXIS. It read
   // "Inert as drawn — no opposition player is on this diagram, so the renderer draws
@@ -294,6 +296,7 @@ const DRIVER = { at: 'neutral-zone-mid', dx: 4, dy: 2 };   // (16, 2)
 
 const backcheckMiddleLane = {
   id: 'centre-backcheck-middle-lane',
+  title: 'Centre’s backcheck on a rush',
   owner: 'content/positions/center.md',
   half: true,
   width: 900,
@@ -475,6 +478,7 @@ const W_HIGH = { at: 'point:right', dx: 2, dy: -5 };          // (27, 15)
 
 const wingerHighThenWall = {
   id: 'winger-high-then-down-the-wall',
+  title: 'Winger high, then down the wall',
   owner: 'content/positions/winger.md',
   // The drawn instant is the first half of the move, not the second: "While the other
   // team has the puck you are high on your side". The wall trip is the route, and the
@@ -611,6 +615,7 @@ const W_CIRCLE = { at: 'faceoff-dot:left', dx: 4, dy: -4 };  // (73, -26)
 
 const wingerOffensiveZone = {
   id: 'winger-offensive-zone-patches',
+  title: 'Winger’s offensive-zone areas',
   owner: 'content/positions/winger.md',
   half: true,
   width: 900,
@@ -781,6 +786,7 @@ const CARRIER_6 = { at: 'neutral-dot:right', dx: 4, dy: -4 }; // (24, 18)
 
 const twoOnOne = {
   id: 'defender-two-on-one',
+  title: 'Defending a 2-on-1',
   owner: 'content/positions/defender.md',
   half: true,
   width: 900,
@@ -842,6 +848,7 @@ const twoOnOne = {
 
 const threeDepths = {
   id: 'defender-three-depths',
+  title: 'Defenceman’s three offensive-zone depths',
   owner: 'content/positions/defender.md',
   // ⚠️ Same residue as swingLow above, same origin (b9ed6b7), same correction: the
   // comment here read "Inert as drawn — 'the opposition are not drawn', so the renderer
@@ -975,6 +982,7 @@ const D_WEAK = { at: 'faceoff-dot:left', dx: 14, dy: -2 };    // (83, -24)
 
 const dToD = {
   id: 'defender-d-to-d-behind-the-net',
+  title: 'D-to-D pass behind your net',
   owner: 'content/positions/defender.md',
   half: true,
   width: 900,
@@ -1117,6 +1125,7 @@ const dToD = {
 //     section does enumerate three prohibitions and whose captions say so.
 const wingerDzRim = {
   id: 'winger-dz-rim',
+  title: 'Rimming past a sealing checker',
   owner: 'content/positions/winger.md',
   half: true,
   width: 900,
@@ -1182,6 +1191,7 @@ const wingerDzRim = {
 
 const wingerDzReverse = {
   id: 'winger-dz-reverse',
+  title: 'Reversing past an over-committed checker',
   owner: 'content/positions/winger.md',
   half: true,
   width: 900,
@@ -1282,6 +1292,7 @@ const wingerDzReverse = {
 // editor re-deriving against the wrong number was pointing them at the wrong number.
 const offWingOpenToTheIce = {
   id: 'off-wing-open-to-the-ice',
+  title: 'Receiving a pass on your off wing',
   owner: 'content/positions/switching_positions.md',
   half: true,
   width: 900,

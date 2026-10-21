@@ -72,6 +72,7 @@ const DEFENDER = onLine(0.5);                               // (75.57, 35.04)
 
 const supportInALine = {
   id: 'support-in-a-line',
+  title: 'Three teammates in a line',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: true,
   width: 900,
@@ -119,6 +120,7 @@ const supportInALine = {
 
 const supportTriangle = {
   id: 'support-triangle',
+  title: 'Three teammates in a triangle',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: true,
   width: 900,
@@ -262,6 +264,7 @@ const BAND = [
 
 const supportDistance = {
   id: 'support-distance-range',
+  title: 'Support distance range',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: true,
   width: 900,
@@ -379,6 +382,7 @@ const NZ_CARRIER = { at: 'centre-ice', dy: 20 };
 
 const supportAngles = {
   id: 'support-angles',
+  title: 'Three support angles',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: false,
   width: 1000,
@@ -470,6 +474,7 @@ const SWING = { at: 'faceoff-dot:right', dx: 8, dy: -12 };  // (77, 10)
 
 const defensiveZoneSupport = {
   id: 'defensive-zone-support',
+  title: 'Defensive-zone breakout support',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: true,
   width: 900,
@@ -554,6 +559,7 @@ const NZ_FAR = -50;   // dx from `blue-line` to the far blue line
 
 const neutralZoneLanes = {
   id: 'neutral-zone-lanes',
+  title: 'Three neutral zone lanes',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: false,
   width: 1000,
@@ -786,6 +792,7 @@ const F1_AT = { at: 'faceoff-dot:right', dx: -5, dy: 4 };   // (64, 26)
 
 const layerNotConverge = {
   id: 'layer-not-converge',
+  title: 'Layering behind the first forechecker',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: true,
   width: 900,

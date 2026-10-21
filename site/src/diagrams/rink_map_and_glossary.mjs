@@ -212,6 +212,7 @@ function creaseOutline() {
 
 const theSlot = {
   id: 'the-slot',
+  title: 'The slot',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -251,6 +252,7 @@ const theSlot = {
 
 const theHighSlot = {
   id: 'the-high-slot',
+  title: 'The high slot',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -287,6 +289,7 @@ const theHighSlot = {
 
 const theLowSlot = {
   id: 'the-low-slot',
+  title: 'The low slot',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -322,6 +325,7 @@ const theLowSlot = {
 
 const theGoalmouth = {
   id: 'the-goalmouth',
+  title: 'The goalmouth',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -359,6 +363,7 @@ const theGoalmouth = {
 
 const pointAndHalfWall = {
   id: 'the-point-and-the-half-wall',
+  title: 'The point and the half-wall',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -393,6 +398,7 @@ const pointAndHalfWall = {
 
 const theTrapezoid = {
   id: 'the-trapezoid',
+  title: 'The trapezoid',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -501,6 +507,7 @@ const theTrapezoid = {
 
 const strongAndWeakSide = {
   id: 'strong-side-and-weak-side',
+  title: 'Strong side and weak side',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -648,6 +655,7 @@ const theGoalCrease = {
 
 const homePlate = {
   id: 'home-plate-the-house',
+  title: 'Home plate, or the house',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -704,6 +712,7 @@ const homePlate = {
 
 const aboveAndBelowTheDots = {
   id: 'above-and-below-the-dots',
+  title: 'Above and below the dots',
   owner: 'content/foundation/rink_map.md',
   half: true,
   width: 900,
@@ -999,6 +1008,7 @@ const endZoneMarkings = {
 export const MAPS = [
   {
     id: 'rink-map-end-zone',
+    title: 'End zone position vocabulary',
     kind: 'rink',
     owner: 'content/foundation/rink_map.md',
     half: true,

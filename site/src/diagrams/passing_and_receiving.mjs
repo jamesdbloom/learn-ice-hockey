@@ -155,6 +155,7 @@ const CHIP_TO = { at: 'blue-line', dx: 13, dy: 21 };         // (38, 21)
 
 const areaPass = {
   id: 'area-pass-into-space',
+  title: 'Area pass into space',
   owner: 'content/technique/passing_and_receiving.md',
   half: true,
   width: 900,
@@ -291,6 +292,7 @@ const LEAD_CATCH = { at: 'high-slot', dx: -11.7, dy: -2.2 };       // (57.3, -2.
 
 const leadTheReceiver = {
   id: 'lead-the-receiver',
+  title: 'Leading the receiver',
   owner: 'content/technique/passing_and_receiving.md',
   half: true,
   width: 900,
@@ -402,6 +404,7 @@ const BANK_TO = { at: 'half-wall:right', dx: -21.6, dy: -15.5 };    // (47.4, 23
 
 const bankPass = {
   id: 'bank-pass-angle',
+  title: 'Bank pass off the boards',
   owner: 'content/technique/passing_and_receiving.md',
   half: true,
   width: 900,

@@ -593,17 +593,24 @@ function placeLabels(entries, opts = {}) {
  * tooltip was 1,280 characters and the worst was 4,471. Hovering any diagram dumped a wall
  * of text over the page. The owner reported it as a readability defect and was right.
  *
- * ⚠️ BUT THE OBVIOUS FIX IS A TRAP, AND THE COMMENT BELOW `a11y` RECORDS WHY. The site emits
- * `<figcaption aria-hidden="true">`, so <title> is the ONLY route by which a screen-reader
- * user receives the caption. Merely truncating <title> would have deleted the teaching for
- * exactly the readers the caption was lengthened for.
+ * ⚠️ UPDATED 21 October 2026. When this was written the site emitted
+ * `<figcaption aria-hidden="true">`, so <title> and <desc> were the only route by which a
+ * screen-reader user received the caption, and merely truncating <title> would have deleted
+ * the teaching for exactly the readers the caption was lengthened for. That is no longer the
+ * arrangement: since commit "Let screen readers read diagram captions as captions" the inline
+ * figcaption is EXPOSED, and remark-corpus.mjs cuts the caption out of the INLINED <desc> so
+ * it is announced once, as ordinary text in reading order. The standalone SVG in
+ * public/diagrams/ still carries describe + caption in its <desc>, because no figcaption
+ * travels with that file.
  *
- * So the caption MOVES rather than shrinks: <title> becomes a short name, and <desc> — which
- * no browser shows on hover — carries the drawn description AND the caption. A screen reader
- * announces the name, then the full description. Nothing is lost; it is in the right slot.
+ * So <title> is now purely a NAME: a screen reader announces it, then the (de-duplicated)
+ * description, then reaches the figcaption. A <title> that is the caption's first sentence is
+ * therefore heard twice — once as the name, once in the figcaption — which is why every
+ * diagram now declares an explicit `title`: 3–8 words naming what is drawn, never a claim,
+ * a rule or a hedge, so there is nothing in it to truncate or overstate.
  *
- * `title` on a spec overrides. Absent one, the caption's first sentence is used, which is the
- * author's own words rather than a generated summary: measured at 41-121 chars, median 110.
+ * `title` on a spec overrides. Absent one, the caption's first sentence is used if short, and
+ * otherwise the id (see below) — both are fallbacks, and a new diagram should set `title`.
  */
 export function shortTitle(spec) {
   if (spec && typeof spec.title === 'string' && spec.title.trim()) return spec.title.trim();
@@ -820,16 +827,22 @@ export function rinkSvg(opts = {}) {
   // exists for the same reason: `role="img"` with neither <title> nor <desc> tells a
   // screen reader to announce an image and then gives it nothing to announce.
   //
-  // ⚠️ IT IS NOT COSMETIC HERE, BECAUSE THE FIGCAPTION IS DELIBERATELY HIDDEN. The
-  // site emits `<figcaption aria-hidden="true">` on every diagram precisely because
-  // the <title> is expected to carry the same words, so a missing <title> does not
-  // degrade to the caption — it deletes it. The two bare rink maps shipped that way,
-  // and they are the corpus's *foundational vocabulary* pictures: a non-sighted
-  // reader met an unlabelled graphic and a caption hidden from them.
+  // ⚠️ HISTORY: until 21 October 2026 the site emitted `<figcaption aria-hidden="true">`,
+  // so a missing <title> here did not degrade to the caption — it deleted it. The two
+  // bare rink maps shipped that way. The figcaption is now exposed (see shortTitle()),
+  // but an image with role="img" and no name is still announced as an unlabelled
+  // graphic, so the name still matters.
   //
-  // `playSvg` injects its own pair after calling this, and never passes these, so
-  // there is no path on which a play diagram gets two titles.
-  const _t = shortTitle({ title: opts.title, id: opts.id, caption, describe });
+  // `id` falls back to `ns`, which build-diagrams.mjs sets to the diagram id: the build
+  // passes neither `id` nor `title` to this function, and without the fallback a rink
+  // map whose first caption sentence runs over 120 characters got NO <title> at all
+  // (rink-map-end-zone did). A spec's explicit `title` reaches here only if the caller
+  // passes it as `opts.title`.
+  //
+  // `playSvg` injects its own pair after calling this, and never passes a caption, so
+  // shortTitle() returns '' on that path and a play diagram never gets two titles.
+  const _t = shortTitle({ title: opts.title, id: opts.id || (opts.ns !== 'r' ? opts.ns : undefined),
+                          caption, describe });
   const _d = longDesc({ caption, describe });
   const a11y =
     (_t ? `<title>${esc(_t)}</title>` : '') +

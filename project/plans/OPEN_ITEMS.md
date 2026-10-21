@@ -604,6 +604,10 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - The earlier "older candidates" are covered by the once-per-page lines: faceoffs :1222 by :295/:306, puck_handling KT10 and the CM cage-grab by :491/:530, and center facts :765 by :732.
 - **Site-reviewer pass DONE 21 Oct** (record site_review_pass_2026-10-21.md). Every deferred item passes, with 0 bare glyphs, 0 panels and a clean console across 39 pages × 2 widths × 2 themes. New rows:
   - sr1, sr2, sr4 and sr5 are DONE 21 Oct (record cleanup_sr_nits_2026-10-21.md). Still open: the §10 and DZC tables still overflow by 15–117 px at about 960–1040 and 1280–1320 px (cell min-width 7rem × 6). The scroll shadow is faint in dark mode.
+  - **DONE 21 Oct (record basics_nav_and_diagram_titles_2026-10-21.md):**
+    - The Basics now appears in the header and on the home page (owner request).
+    - All 204 diagrams have short accessible names. The rink-map-end-zone title is fixed.
+    - Owner's call: ☰ for "Contents" below 480 px may read as a pop-out menu.
   - **Accessibility: the figcaption aria-hidden issue is FIXED (record figcaption_a11y_2026-10-21.md).** Still open:
     - Diagram `<title>`s: 85 fall back to the diagram id (`shortTitle()` in site/scripts/lib/rink.mjs), so a screen reader announces e.g. "Nz 1 4". 58 titles repeat inside their own caption.
     - rink-map-end-zone has no title, so its image has no accessible name. Fix it in its diagram module.

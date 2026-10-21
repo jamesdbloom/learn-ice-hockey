@@ -213,6 +213,7 @@ const MODERATE = 'rgba(200,16,46,0.09)';
 
 const theRiskMap = {
   id: 'the-risk-map',
+  title: 'Turnover cost by location',
   owner: OWNER,
   half: false,
   width: 1100,
@@ -642,6 +643,7 @@ const PINCH_DESCRIBE_COMMON =
 
 const pinchCentreHigh = {
   id: 'pinch-centre-high',
+  title: 'A pinch with the centre high',
   owner: OWNER,
   half: true,
   width: 900,
@@ -702,6 +704,7 @@ const pinchCentreHigh = {
 
 const pinchCentreDeep = {
   id: 'pinch-centre-below-the-goal-line',
+  title: 'A pinch with the centre below the goal line',
   owner: OWNER,
   half: true,
   width: 900,
@@ -1004,6 +1007,7 @@ const BOTH_D_PUCK = { at: 'corner:right', dx: -3, dy: -4 };      // (79, 30)
 //   is glyph-to-glyph spacing for legibility only, not a checked quantity.
 const bothDToThePuck = {
   id: 'never-both-defencemen-to-the-puck',
+  title: 'Both defencemen and one puck',
   owner: OWNER,
   half: true,
   width: 900,

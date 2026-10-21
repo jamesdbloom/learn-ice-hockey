@@ -74,6 +74,7 @@ const D1_YOU = { at: 'net-front', dx: -3, dy: -7 };      // (81, -7)
 
 const stickLaneBodyNet = {
   id: 'stick-in-lane-body-net-side',
+  title: 'Stick in the lane, body goal side',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,
@@ -177,6 +178,7 @@ const D2_GOER_TO = { at: 'corner:right', dx: -4, dy: -3 };   // (78, 31)
 
 const loosePuckWhoGoes = {
   id: 'loose-puck-who-goes',
+  title: 'Loose puck in your own corner',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,
@@ -279,6 +281,7 @@ const D3_BLOCKER = { at: 'high-slot', dx: -6, dy: 8 };   // (63, 8)
 
 const unmarkedNotAvailable = {
   id: 'unmarked-but-unavailable',
+  title: 'Unmarked but not available',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,
@@ -359,6 +362,7 @@ const D4_GOALIE = { at: 'crease', dy: 1 };             // (86, 1)
 
 const screenSightline = {
   id: 'screen-the-goalie-sightline',
+  title: 'Screening the goalie’s sightline',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,
@@ -501,6 +505,7 @@ const D5_WIDE_L_TO = { at: 'neutral-dot:left', dx: 9, dy: -12 };  // (29, -34)
 
 const widthMakesTheMiddle = {
   id: 'width-makes-the-middle-lane',
+  title: 'Width and the middle lane',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,
@@ -639,6 +644,7 @@ const HIGH_SLOT = {
 
 const driveTheNetBefore = {
   id: 'drive-the-net-before',
+  title: 'Driving the net, first frame',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,
@@ -689,6 +695,7 @@ const driveTheNetBefore = {
 
 const driveTheNetAfter = {
   id: 'drive-the-net-after',
+  title: 'Driving the net, second frame',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,
@@ -837,6 +844,7 @@ const D8_CHECK = { at: 'faceoff-dot:left', dx: 7, dy: 1 };      // (76, -21)
 
 const legalRouteThroughTraffic = {
   id: 'legal-route-through-traffic',
+  title: 'Your route past a teammate',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,

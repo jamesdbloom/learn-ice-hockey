@@ -225,6 +225,7 @@ const SHOT_ENDS = { at: 'net-front', dx: -11, dy: 1 };          // (73, 1)
 
 const laneAndTheStep = {
   id: 'shooting-lane-and-the-step',
+  title: 'Finding a point-shot lane',
   owner: 'content/technique/shooting.md',
   half: true,
   width: 900,
@@ -400,6 +401,7 @@ const PASS_ENDS = { at: 'high-slot', dx: -11.75, dy: -0.1 };    // (57.25, -0.1)
 
 const wideRushAndTheTrailer = {
   id: 'shooting-rush-wide-and-the-trailer',
+  title: 'Wide rush: shot or trailer',
   owner: 'content/technique/shooting.md',
   half: true,
   width: 900,
@@ -508,6 +510,7 @@ const G_TOP_OF_CREASE = { at: 'goal-line', dx: -6 };             // (83, 0)
 
 const breakawayApproach = {
   id: 'shooting-breakaway-approach',
+  title: 'Breakaway approach speed',
   owner: 'content/technique/shooting.md',
   half: true,
   width: 900,

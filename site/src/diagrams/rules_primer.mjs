@@ -95,6 +95,7 @@ const OFF_PASS_TO = { at: ATT_BLUE, dx: 8, dy: -10 };       // (33, -10)
 
 const offsideFaceoffLocation = {
   id: 'offside-faceoff-location',
+  title: 'Faceoff location after an offside',
   owner: 'content/foundation/rules_primer.md',
   // Both entries are ours: "a teammate in the neutral zone carries it over the blue
   // line" and "one of our defencemen deep in our own end passes it the length of the
@@ -229,6 +230,7 @@ const LEGAL_PUCK = { at: RED, dy: -28 };       // (0, -28) — touching the red 
 
 const icingGainingTheLine = {
   id: 'icing-gaining-the-line',
+  title: 'Icing and the centre red line',
   owner: 'content/foundation/rules_primer.md',
   // Inert as drawn — "no goaltenders, no opponents and no chase" — so the renderer
   // draws circles either way. Declared anyway so the frame is on record.
@@ -374,6 +376,7 @@ const RACE_PUCK = { at: 'goal-line', dx: 4, dy: 28 }; // (93, 28) — over the g
 
 const icingTheRaceAndTheDot = {
   id: 'icing-the-race-and-the-dot',
+  title: 'Hybrid icing: the faceoff dot is the deadline',
   owner: 'content/foundation/rules_primer.md',
   half: true,
   width: 900,
@@ -549,6 +552,7 @@ const PRIV_DOT_L = 'faceoff-dot:left';    // (69, -22)
 
 const thePrivilegedArea = {
   id: 'the-privileged-area',
+  title: 'The goalkeeper’s privileged area (USA Hockey)',
   owner: 'content/foundation/rules_primer.md',
   half: true,
   width: 900,

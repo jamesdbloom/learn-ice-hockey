@@ -326,11 +326,12 @@ function main() {
     const spec = { ...d, footer: FOOTER };
     const svg =
       d.kind === 'legend' ? legendSvg(width, spec)
-      // caption/describe are passed for the same reason playSvg carries them: the
-      // site hides the <figcaption> from assistive technology on the assumption the
-      // SVG's <title> repeats it. Omitting them here did not degrade the name, it
-      // removed it — the two rink maps rendered as unlabelled graphics.
-      : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER,
+      // caption/describe/title are passed for the same reason playSvg carries them:
+      // the SVG's <title> is the image's accessible name. Omitting them here did not
+      // degrade the name, it removed it — the two rink maps rendered as unlabelled
+      // graphics. (21 Oct 2026: `title` was missing too, so rink-map-end-zone's
+      // explicit title never arrived and the name fell back to its id.)
+      : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER, title: d.title,
                                       caption: d.caption, describe: d.describe, zones: d.zones })
       : playSvg(spec, { half: d.half ?? true, width });
 
@@ -384,10 +385,16 @@ function main() {
 
   // ⚠️ THE `describe`/`caption` JOIN IS A SPOKEN SEAM, AND ONE UNSTATED HABIT KEEPS IT SAFE.
   //
-  // `lib/rink.mjs` longDesc() emits `${describe} ${caption}` as the SVG's single <desc>,
-  // and remark-corpus.mjs marks the <figcaption> aria-hidden on the ground that <desc>
-  // carries the same words. So for a screen-reader user the <desc> IS the caption, and
-  // describe and caption are announced as ONE continuous utterance joined by one space.
+  // `lib/rink.mjs` longDesc() emits `${describe} ${caption}` as the SVG's single <desc>.
+  // In the STANDALONE file in public/diagrams/ (no figcaption travels with it) describe and
+  // caption are announced as ONE continuous utterance joined by one space.
+  //
+  // ⚠️ UPDATED 21 October 2026: on the SITE this seam is no longer spoken. remark-corpus.mjs
+  // used to mark the <figcaption> aria-hidden, which made the <desc> the caption's only route
+  // to a screen reader; it now cuts the caption out of the INLINED <desc> and exposes the
+  // figcaption instead (commit "Let screen readers read diagram captions as captions"). The
+  // assertion below is kept because the standalone SVG still joins the two, and because the
+  // site's cut is an exact-substring match that this invariant keeps well-formed.
   //
   // A round-70 sweep of all 198 pairs found ZERO defects at that seam — but for a reason
   // nothing enforced: every `describe` happens to end in terminal punctuation, so the join

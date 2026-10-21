@@ -178,6 +178,7 @@ const DRILL_DEFENDER = { at: 'high-slot', dx: 2.25, dy: 6 };         // (71.25, 
 
 const executionDrill = {
   id: 'drill-execution-no-opponent',
+  title: 'Drill rep with no defender',
   owner: 'content/off-the-ice/practice_and_development.md',
   half: true,
   width: 900,
@@ -232,6 +233,7 @@ const executionDrill = {
 
 const decisionDrill = {
   id: 'drill-decision-one-defender',
+  title: 'Drill rep with one defender added',
   owner: 'content/off-the-ice/practice_and_development.md',
   half: true,
   width: 900,
@@ -355,6 +357,7 @@ const REP_PUCK = { at: 'neutral-dot:right:far', dx: 1.3, dy: 2.4 };  // (-18.7, 
 // cheaper warning and not the dearer one. Head up now leads, and Key Takeaways carries it.
 const theLine = {
   id: 'practice-the-line-and-one-rep',
+  title: 'Line drill: one skater, five waiting',
   owner: 'content/off-the-ice/practice_and_development.md',
   half: false,
   width: 900,
@@ -480,6 +483,7 @@ const SAG_PUCK = { at: 'half-wall:right', dy: -4.8 };          // (69, 33.7)
 
 const smallAreaGame = {
   id: 'practice-small-area-in-one-zone',
+  title: 'Small-area 3-on-3 in one zone',
   owner: 'content/off-the-ice/practice_and_development.md',
   half: false,
   width: 900,

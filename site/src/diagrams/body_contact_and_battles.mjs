@@ -202,6 +202,7 @@ const PUCK = { at: 'neutral-dot:right', dx: -1, dy: 11 };        // (19, 33)
 
 const anglingYourRoute = {
   id: 'angling-your-route',
+  title: 'A defender’s angling route',
   owner: 'content/technique/body_contact_and_battles.md',
   half: true,
   width: 900,
@@ -387,6 +388,7 @@ const NF_BAND = [
 // run, so the instruction sits after the glyph and the hedge before it.
 const netFrontWalkOut = {
   id: 'net-front-walk-out-direction',
+  title: 'Net-front coverage in your own end',
   owner: 'content/technique/body_contact_and_battles.md',
   half: true,
   width: 900,
@@ -575,6 +577,7 @@ const C_BEHIND = { at: 'behind-net', dy: -10 };                  // (94, -10)
 
 const cornerEscapeRoutes = {
   id: 'corner-escape-routes',
+  title: 'Escape routes from a corner',
   owner: 'content/technique/body_contact_and_battles.md',
   half: true,
   width: 900,
@@ -792,6 +795,7 @@ const W_CHECKER = { at: 'top-of-circle:right', dx: 6, dy: -2 };  // (60, 20)
 // condition is therefore stated without a negation word at all.
 const angleIntoTheCorner = {
   id: 'angle-into-the-corner',
+  title: 'Skating into your corner at an angle',
   owner: 'content/technique/body_contact_and_battles.md',
   half: true,
   width: 900,

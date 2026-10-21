@@ -74,6 +74,7 @@ const LOW_SUPPORT = { at: 'faceoff-dot:right:far', dx: -7, dy: -6 };  // (-76, 1
 
 const fiveRoles = {
   id: 'breakout-five-roles',
+  title: 'Five roles on a breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -133,6 +134,7 @@ const UP_W1 = { at: 'half-wall:right:far', dx: -4 };            // (-73, 38.5)
 
 const up = {
   id: 'breakout-up',
+  title: 'The up breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -205,6 +207,7 @@ const WHEEL_EXIT = { at: 'half-wall:left:far', dx: -1, dy: 3 };      // (-70, -3
 
 const wheel = {
   id: 'breakout-wheel',
+  title: 'The wheel breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -334,6 +337,7 @@ const REV_D2_TO  = { at: 'corner:right:far', dx: -6, dy: -14 };  // (-88, 20)
 
 const reverse = {
   id: 'breakout-reverse',
+  title: 'The reverse breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -462,6 +466,7 @@ const RIM_TO = { at: 'boards:left:far', dx: -8, dy: 4.5 };      // (-77, -38)
 
 const rim = {
   id: 'breakout-rim',
+  title: 'The rim breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -581,6 +586,7 @@ const DD_D2 = { at: 'corner:left:far',  dx: -3, dy: 4 };        // (-85, -30)
 
 const dToD = {
   id: 'breakout-d-to-d',
+  title: 'The D-to-D breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -697,6 +703,7 @@ const STRETCH_W2 = { at: 'point:left', dx: -4 };                // (21, -20)
 
 const stretch = {
   id: 'breakout-stretch-pass',
+  title: 'The stretch pass breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -863,6 +870,7 @@ const WINGER_LOW  = { at: 'half-wall:right:far', dx: -5, dy: -1 }; // (-74, 37.5
 
 const wingerWall = {
   id: 'breakout-winger-wall',
+  title: 'Strong-side winger on a breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -946,6 +954,7 @@ const SWING_FROM = { at: 'top-of-circle:right:far', dx: 8, dy: -6 };  // (-46, 1
 
 const centreSwing = {
   id: 'breakout-centre-swing',
+  title: 'Centre’s low support swing',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -1119,6 +1128,7 @@ const TRAP_OUTLET = { at: 'point:right:far', dx: -2, dy: 18 };  // (-27, 38)
 
 const againstThe131 = {
   id: 'breakout-against-1-3-1',
+  title: 'Breaking out against a 1-3-1',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,

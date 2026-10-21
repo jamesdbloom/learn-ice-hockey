@@ -116,6 +116,7 @@ const ON_LINE_HASH_MARKS = { at: 'goal-line', dx: -20.01, dy: 12.32 };
 
 const playingTheAngle = {
   id: 'goalie-playing-the-angle',
+  title: 'Goalie playing the angle',
   owner: 'content/positions/goaltender.md',
   half: true,
   width: 900,
@@ -194,6 +195,7 @@ const PASS_END = { at: 'goal-line', dx: -6.92, dy: -2.27 };
 
 const frontDoorBackDoor = {
   id: 'goalie-front-door-back-door',
+  title: 'Front door and back door',
   owner: 'content/positions/goaltender.md',
   half: true,
   width: 900,
@@ -249,6 +251,7 @@ const AT_POST_R = { at: 'goal-line', dx: -1.5, dy: 2.6 };        // (87.5, 2.6)
 
 const angleClosesWide = {
   id: 'goalie-angle-closes-wide',
+  title: 'Goalie on a wide, low puck',
   owner: 'content/positions/goaltender.md',
   half: true,
   width: 900,
@@ -291,6 +294,7 @@ const angleClosesWide = {
 // says so in its first sentence, because the caption is all a listener gets.
 const failureModes = {
   id: 'goalie-depth-failure-modes',
+  title: 'Goalie too deep, goalie too far out',
   owner: 'content/positions/goaltender.md',
   half: true,
   width: 900,
@@ -639,6 +643,7 @@ const G_RETREAT_TO = { at: 'goal-line', dx: -2.99, dy: 0.22 }; // (86.01, 0.22)
 
 const breakawayRetreat = {
   id: 'goalie-breakaway-retreat',
+  title: 'Goalie facing a breakaway',
   owner: 'content/positions/goaltender.md',
   half: true,
   width: 900,
@@ -712,6 +717,7 @@ const G_TIP_DEPTH = { at: 'goal-line', dx: -2.88, dy: 0.84 }; // (86.12, 0.84)
 
 const readingATip = {
   id: 'goalie-tip-from-the-point',
+  title: 'Point shot with a tip threat',
   owner: 'content/positions/goaltender.md',
   half: true,
   width: 900,
@@ -782,6 +788,7 @@ const SLOT_ATTACKER = { at: 'slot', dx: -2, dy: 6.9 };         // (74, 6.9)
 
 const reboundCornersNotSlot = {
   id: 'goalie-rebound-corners-not-slot',
+  title: 'Steering rebounds away from the slot',
   owner: 'content/positions/goaltender.md',
   half: true,
   width: 900,

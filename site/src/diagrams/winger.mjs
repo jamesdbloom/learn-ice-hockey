@@ -194,6 +194,7 @@ const WALL_STRETCH = { at: 'neutral-dot:right', dx: -6, dy: 8 };   // (14, 30)
 
 const wallDepthBySystem = {
   id: 'winger-wall-depth-by-system',
+  title: 'Winger’s wall depth by system',
   owner: OWNER,
   half: false,
   width: 900,
@@ -299,6 +300,7 @@ const LEFT_CORNER_F = { at: 'corner:right', dx: 6, dy: -3 };       // (88, 31)
 
 const leavesThePoint = {
   id: 'winger-leaves-the-point',
+  title: 'Winger leaving the point',
   owner: OWNER,
   half: true,
   width: 900,
@@ -455,6 +457,7 @@ const LINE_CARRIER = { at: 'neutral-dot:right', dx: -8, dy: -2 };  // (12, 20)
 // grep of this directory does not return it. Count from site/src/data/diagrams.json.
 const arrivingAtTheLine = {
   id: 'winger-arriving-at-the-line',
+  title: 'Winger arriving at the attacking blue line',
   owner: OWNER,
   half: true,
   width: 900,
@@ -603,6 +606,7 @@ const CORNER_RW = { at: 'corner:right', dx: -1, dy: -1 };          // (81, 33)
 
 const cornerAndTheEmptyPoint = {
   id: 'winger-corner-and-the-empty-point',
+  title: 'Winger in the corner and the empty point',
   owner: OWNER,
   half: true,
   width: 900,

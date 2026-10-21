@@ -309,6 +309,7 @@ const WD_WINGER    = { at: 'point:right', dx: 8, dy: -6 };   // (33, 14)
 
 const theHouse = {
   id: 'dz-the-house',
+  title: 'The house in your own zone',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,
@@ -352,6 +353,7 @@ const theHouse = {
 
 const collapseCorner = {
   id: 'dz-collapse-corner',
+  title: 'Low zone collapse, puck in the corner',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,
@@ -496,6 +498,7 @@ const collapseCorner = {
 
 const collapseHighSlot = {
   id: 'dz-collapse-high-slot',
+  title: 'Low zone collapse, weak-side winger',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,
@@ -578,6 +581,7 @@ const collapseHighSlot = {
 
 const walkDownZone = {
   id: 'dz-walk-down-zone',
+  title: 'Walk-down against low zone collapse',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,
@@ -647,6 +651,7 @@ const walkDownZone = {
 
 const walkDownMan = {
   id: 'dz-walk-down-man',
+  title: 'Walk-down against man-on-man',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,
@@ -760,6 +765,7 @@ const BOX_LOW_L = { at: 'goalmouth', dx: -5, dy: -6 };       // (80, -6)
 
 const boxPlusOne = {
   id: 'dz-box-plus-one',
+  title: 'Box+1 defensive-zone coverage',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,
@@ -843,6 +849,7 @@ const boxPlusOne = {
 
 const collapsingBox = {
   id: 'dz-collapsing-box',
+  title: 'The collapsing box',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,
@@ -917,6 +924,7 @@ const collapsingBox = {
 
 const overload = {
   id: 'dz-strong-side-overload',
+  title: 'Strong-side overload coverage',
   owner: 'content/systems/defensive_zone_coverage.md',
   half: true,
   width: 900,

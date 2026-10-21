@@ -129,6 +129,7 @@ const PP_131_OPP = [
 // `diagram:<id>` to the CAPTION alone — it becomes the SVG's `<desc>`.)
 const pp131 = {
   id: 'pp-131',
+  title: '1-3-1 power play',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -245,6 +246,7 @@ const pp131 = {
 // the tops of the circles. The classic version is in the caption, not the picture.
 const ppUmbrella = {
   id: 'pp-umbrella',
+  title: 'Umbrella power play',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -294,6 +296,7 @@ const ppUmbrella = {
 // point on that side — with the fifth player weak side as a release valve."
 const ppOverload = {
   id: 'pp-overload',
+  title: 'Overload power play',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -344,6 +347,7 @@ const ppOverload = {
 // low in front of the net and one high".
 const ppSpread = {
   id: 'pp-spread-5on3',
+  title: '5-on-3 spread power play',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -403,6 +407,7 @@ const ppSpread = {
 // one in each circle or corner."
 const pp23 = {
   id: 'pp-2-3',
+  title: '2-3 power play',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -510,6 +515,7 @@ const BACKDOOR = { at: 'net-front', dx: -4, dy: -4 };        // (80, -4)
 // receiver on the same 3.16 ft clearance pp-131 uses for its own net-front pass.
 const ppBackdoor = {
   id: 'pp-backdoor',
+  title: 'The back door on a power play',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -590,6 +596,7 @@ const ppBackdoor = {
 // measured the same way `check-arrivals.mjs` measures it.
 const ppWalkDown = {
   id: 'pp-walk-down',
+  title: 'Half-wall walk-down on a power play',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -653,6 +660,7 @@ const ppWalkDown = {
 // the two low corners and the goalmouth."
 const pkBox = {
   id: 'pk-box',
+  title: 'Box penalty kill',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -696,6 +704,7 @@ const pkBox = {
 // diamond, not a rectangle: it has exactly one player at the top."
 const pkDiamond = {
   id: 'pk-diamond',
+  title: 'Diamond penalty kill',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -763,6 +772,7 @@ const pkDiamond = {
 // running", and lists three. Do not "reconcile" the drawing to the old comment.
 const pkWedge = {
   id: 'pk-wedge-plus-1',
+  title: 'Wedge+1 penalty kill',
   owner: 'content/systems/special_teams.md',
   half: true,
   width: 900,
@@ -910,6 +920,7 @@ const pkWedge = {
 // the power play commit to a side while the three behind back up in unison."
 const pkNz13 = {
   id: 'pk-nz-1-3',
+  title: '1-3 neutral zone penalty kill',
   owner: 'content/systems/special_teams.md',
   half: false,
   width: 900,
@@ -968,6 +979,7 @@ const pkNz13 = {
 // to the boards, two defencemen abreast near the line."
 const pkNz112 = {
   id: 'pk-nz-1-1-2',
+  title: '1-1-2 neutral zone penalty kill',
   owner: 'content/systems/special_teams.md',
   half: false,
   width: 900,

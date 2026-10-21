@@ -80,6 +80,7 @@ const C_W1 = { at: THEIR_BLUE, dx: 8, dy: 34 };            // (33, 34)  — "the
 
 const containment122 = {
   id: 'nz-1-2-2-containment',
+  title: '1-2-2 neutral zone containment',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -175,6 +176,7 @@ const T_ARRIVAL = { at: 'centre-ice', dx: 12, dy: 31 };    // (12, 31) — where
 
 const trap122 = {
   id: 'nz-1-2-2-trap',
+  title: '1-2-2 neutral zone trap',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -275,6 +277,7 @@ const F3_131 = { at: 'centre-ice', dx: -2, dy: -WALL };    // (-2, -33)
 
 const wall131 = {
   id: 'nz-1-3-1',
+  title: '1-3-1 neutral zone structure',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -372,6 +375,7 @@ const FOUR_CHASER = { at: 'centre-ice', dx: 10, dy: 14 };   // (10, 14) — behi
 
 const flat14 = {
   id: 'nz-1-4',
+  title: '1-4 neutral zone structure',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -449,6 +453,7 @@ const P_D1 = { at: OUR_BLUE, dx: 14, dy: 20 };             // (-11, 20) — tigh
 
 const pressure = {
   id: 'nz-pressure',
+  title: 'Neutral zone behind an aggressive forecheck',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -532,6 +537,7 @@ const LOCK_LINE_X = -6;                                    // just inside the re
 
 const leftWingLock = {
   id: 'nz-left-wing-lock',
+  title: 'Left-wing lock in the neutral zone',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -600,6 +606,7 @@ const R_F1 = { at: 'centre-ice', dx: 2, dy: 30 };          // (2, 30) — could 
 
 const regroup = {
   id: 'nz-regroup-d-to-d',
+  title: 'D-to-D neutral zone regroup',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -732,6 +739,7 @@ const H_OPP_LANE = { at: 'centre-ice', dx: 9, dy: 8 };  // (  9,   8) — in the
 
 const hinge = {
   id: 'nz-hinge',
+  title: 'The hinge regroup',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -862,6 +870,7 @@ const BL_D = { at: OUR_BLUE, dx: -1, dy: 12 };                       // (-26, 12
 
 const standUpAtTheLine = {
   id: 'nz-stand-up-at-the-line',
+  title: 'Standing up at your blue line',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,
@@ -922,6 +931,7 @@ const standUpAtTheLine = {
 
 const backOffAtTheLine = {
   id: 'nz-back-off-at-the-line',
+  title: 'Backing off at your blue line',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,

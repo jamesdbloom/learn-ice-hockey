@@ -96,6 +96,7 @@ const CARRIER_TO = { at: 'centre-point', dx: 5, dy: 1.5 };      // (30, 1.5)
 
 const attackTheSeam = {
   id: 'attack-the-seam',
+  title: 'Attacking the seam',
   owner: OWNER,
   half: true,
   width: 900,
@@ -227,6 +228,7 @@ const COVER_TO   = { at: 'slot', dx: -1, dy: 2.5 };          // (75, 2.5)
 
 const denyTheReception = {
   id: 'deny-the-reception',
+  title: 'Denying the reception',
   owner: OWNER,
   half: true,
   width: 900,
@@ -332,6 +334,7 @@ const WIDE_TO    = { at: 'centre-point', dy: 25.5 };            // (25, 25.5)
 
 const showAShoulder = {
   id: 'show-one-shoulder-open-the-other',
+  title: 'Skating at one shoulder to open the other',
   owner: OWNER,
   half: true,
   width: 900,

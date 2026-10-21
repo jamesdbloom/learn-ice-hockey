@@ -9,6 +9,7 @@
  */
 export default [{
   id: 'notation-key',
+  title: 'Drill notation key',
   kind: 'legend',
   // The document this key is embedded in and must agree with. It was
   // rink_map_and_glossary.md, which is the owner of the *coordinates* and contains
