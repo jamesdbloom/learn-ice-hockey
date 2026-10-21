@@ -534,21 +534,58 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - breakouts :528 omits High School from the USAH 624(b)(1) list.
     - defender :278: NHL 56.2(iii) and PWHL 57.2(iii) fit the walk-out better than (i); the USAH 625 Note and Casebook 609 Sit. 2 fit better than 625(a)(4).
     - DTR :330 voiced alone attaches the HC 7.5(a) tier to head first into the boards, where 7.5(c) is a match. The next line carries it.
+  - (u) game_management, from the Detailed writer:
+    - :411 facts and :422 still use the "so" shape ("they do not have the puck, so walking them off…"); add to row m.
+    - :412/:424 has no CARHA backswing limb (row r).
+    - :244's pinch has no posture, fallback or pressure gate.
+    - :980 "hard on the wall" has no boards limb.
+    - CM :1243 says "her".
+  - (v) puck_handling KT3: "an injuring non-checking bump does end your game under CARHA" may be broader than the body. CARHA's mandatory major needs intentional contact that injures. To be ruled by dR-ph.
+  - (w) zone_entries:
+    - :254 "pull up and play the puck" sits inside the delayed-offside section, which says to hold at the line. Change it to "pull up and get back to the line".
+    - The Key focus :14 middle drive has no head-up limb (source :457 names that hazard).
+    - :235/:245 describe the forechecker arriving on a defender facing the boards, with no gate.
+  - (x) passing_and_receiving (from the Detailed writer):
+    - :713 two-on-one "drive at the net" has no head-up or goalie limb.
+    - :42 the checker is defined as "pressuring you", which narrows the boards limbs (item 20 shape).
+    - The posture omits "never the point of your shoulder" and the slow-speed limb.
+    - The pressure-passing drill (:787/:795) has no anti-contact limb.
+  - (y) shooting: the breakaway section (:622–775) carries no goalie-contact, pull-up or post limb for the deke round the goalie. :209-area high-stick wording defines a high stick as contact, but USAH Casebook 621 Sit. 2 and CARHA 62(a) need no contact.
+  - (z) **MAJOR for the corpus**, playing_without_the_puck facts :334 and body :339. The facing-the-wall fallback is named but never explained. Add "then stick and gloves up, spread on the glass, head off it" (BC :866/:899).
+  - (aa) scanning_and_anticipation: :417 "This read saves more goals than any other" is an unlabelled superlative, a content-reviewer item. :390/:393, chip-and-race and chip-and-chase, carry no puck-not-player gate. :175, the D retrieval, sits under :171's posture heading but carries none itself.
+  - (ab) risk_management:
+    - North is defined both ways: :101 vs the turnover material at :152, :156 (facts), :163, :942 and KT4 :967, which is voiced alone.
+    - "Against four attackers" at :517 and :534 is hard to parse.
+    - The slide-into-legs limb at :670 and :691 cites only USAH and HC, but the NHL, IIHF and PWHL 57.3-type riders also give a minor even when the puck was touched first. This needs a rules-verifier.
+    - Check the page for "in your own crease" narrowing the ban on falling on the puck (NHL 63.9(vii), USAH 614(a)).
+  - (ac) time_and_space:
+    - **MAJOR for the corpus:** facts :361 (voiced alone) and body :371 teach "two hands … to lift a stick" with none of BC's lift limbs, which are under the shaft, below the bottom hand, up not sideways, and let go. Cut the clause or add the limb.
+    - :94 "tight gap" at twenty feet contradicts :324. Delete "with a tight gap".
+    - KT11 :720 and CM :662 understate the contact case. Reword to "every book penalises it with contact, and most without". Needs a rules-verifier.
+  - (ad) body_contact_and_battles: "the slot" is used at :416, :1154, :1168 and :1515 but never defined on the page. Link its first use to the glossary or rink_map. The safety reviewer also noted that neck laceration protectors are absent from the corpus's shot-blocking material, although England Ice Hockey makes them mandatory. Verify against the primary source before adding anything.
   - Each needs a layer test and a safety-reviewer.
-- **Detailed, ready to record (21 Oct ~06:00), waiting on AWS SSO login** (the ElevenLabs key and the S3 upload both need it):
-  - center: cap 9320, re-review clear;
-  - defender: cap 9345, re-review clear, two wording points applied by the coordinator.
-  - goaltender: cap 9300, re-review clear. The coordinator applied the reviewer's three closing fixes, including the conditional-imperative fix.
-  - breakouts: cap 9200, re-review clear.
-  - switching_positions: cap 9310 (hard ceiling 9349), re-review clear.
-  - defensive_zone_coverage: cap 9165, re-review clear (the coordinator applied the n1 reorder).
-  - forechecking_systems: cap 9320, re-review clear.
-  - neutral_zone_systems: cap 9320, re-review clear.
-  - offensive_zone_play: cap 9640, re-review clear (the coordinator applied the reviewer's "pin" gloss fix).
-  - Fixes in progress: faceoffs, defending_the_rush.
-  - SG content wave (rows a–j) dispatched to sg-center, sg-defender, sg-goaltender, sg-dzc, sg-breakouts and sg-switching.
-  - In writing: switching_positions, breakouts, forechecking_systems, defensive_zone_coverage.
-  - Publish = archive `podcast_style_b/<stem>.wav` to v1/, copy `detailed/<stem>.wav` over it, then run `build_podcast_audio.py --style principles --doc <stem>`, `upload --style principles --go`, and commit podcast-principles.json.
+- **Detailed status (21 Oct ~09:30).**
+  - **Published, 16 of 39:**
+    - winger, center, defender, goaltender
+    - breakouts, switching_positions, defensive_zone_coverage, forechecking_systems
+    - neutral_zone_systems, offensive_zone_play, defending_the_rush, faceoffs
+    - game_management, puck_handling, zone_entries, special_teams
+  - **Reviewed SHIP; queued in the sequential runner** (scratchpad synth_runner.sh reads synth_queue.txt, one "stem cap" line each, and logs to synth_log.txt). In order:
+    - skating 8545
+    - passing_and_receiving 8175
+    - playing_without_the_puck 8815
+    - shooting 9546
+    - scanning_and_anticipation 8690
+    - risk_management 9300
+    - time_and_space 9490
+    - body_contact_and_battles 9130
+  - ⚠️ **The old chained `while pgrep -f` queue deadlocked.** Each waiting shell's own command line matched the others' pgrep pattern, so nothing ran from 09:02 to 09:25. Use the runner instead.
+  - **Writing:** puck_support_and_spacing, on_ice_communication, core_principles, getting_started.
+  - **Not started:**
+    - reading_ice_hockey_diagrams, rink_map, language_and_glossary, rules_primer, uk_rules
+    - equipment, conditioning_and_recovery, practice_and_development, mental_game, team_play_and_culture, how_to_watch_hockey
+  - **Publish helper:** scratchpad pubdet.sh. It transcript-checks the recording, archives v1, installs the master and encodes it. Then run `upload --style principles --go` and commit podcast-principles.json.
+  - **Brief:** scratchpad detailed_brief.md, items 1–26.
 - **Detailed production started (21 Oct ~01:15):** brief at scratchpad detailed_brief.md, and it carries the Basics review lessons. Writers dw-center, dw-defender and dw-goaltender write to `podcast_style_b/detailed/<stem>.md`. Each then gets a safety review, synthesis at cap 9320, and publish in place (`--style principles --doc`, archive the v1 WAV first). Next batch: the systems pages.
 - **GN sweep missed diagram text (found 21 Oct):** about 449 string lines across 30 `site/src/diagrams/*.mjs` modules contain he/him/his/himself, in captions, descriptions and labels; some refer to opponents. The owner's ruling is "they" everywhere. Needs one agent per module group, then a build-diagrams run and check_absolutes. Heaviest: zone_entries 45, positions 38, breakouts 33, neutral_zone_systems 25. on_ice_communication.mjs :262 "his partner and his goalie" is still open.
 - **Readability programme complete (20 Oct):** all 39 pages passed (W4/W5 record w4_w5_readability_2026-10-20.md).
