@@ -41,7 +41,7 @@ Every time you touch the puck you place a bet, and what you stand to lose depend
 
 **Take a minor to stop a certain goal, and almost never out of frustration** — it gives up roughly a one-in-five chance of a goal. **And do not chase a carrier you cannot catch:** foul them from behind on a clear breakaway and every book here gives a penalty shot, not a minor (under USA Hockey the fouled team may take the minor instead).
 
-**When you genuinely have nothing, take the hit and accept the faceoff that follows** — feet apart, knees bent, head up, never turn your back to the checker and never duck. Then do not compound it: the next play is a new play.
+**When you genuinely have nothing, take the hit and accept the faceoff that follows** — feet apart, knees bent, head up, never turn your back to anyone coming at you and never duck. Then do not compound it: the next play is a new play.
 
 ---
 
@@ -441,7 +441,7 @@ Key: The defensive-zone breakout hierarchy is for a retriever with no time to re
 Action: Quick-up first — first look up ice, then down; the window closes before you finish checking the rest of the list
 Read: Reverse beats a forechecker who has over-run you; rim beats one who is sealing you against the wall
 Never: Take D-to-D through the slot. Go behind the goal line instead
-Action: Nothing there? Take the hit — skates parallel, feet apart, knees bent, forearm and hip to the wall, head up, chin off your chest, never turn your back to the checker. Protect the puck, eat the faceoff
+Action: No outlet? Take the hit — skates parallel, feet apart, knees bent, forearm, hip to the wall, head up, chin off your chest, never turn your back to anyone coming at you. Protect the puck, eat the draw
 Never: Take the wall on the point of your shoulder, or on the whole shoulder if you can help it — and never duck: chin off your chest
 Never: Solve a defensive-zone jam by putting the puck over the glass
 ```
@@ -457,7 +457,7 @@ This is the same order taught in [Defender](../positions/defender.md) — **Quic
 5. **Reverse.** *Has the forechecker over-committed and skated past me?* → Send it **back against the flow** into the space they just left, to a partner or centre arriving behind you. A **reverse** and a **rim** are opposite plays chosen by the same read: reverse beats a forechecker who has over-run you; rim beats one who is sealing you against the wall. Getting this read wrong is one of the most common defensive-zone turnovers there is.
 6. **Rim.** *Can I send it hard onward around the boards to my winger's side?* A **rim** goes onward around the boards, with the flow of play. A 50/50 puck on the wall is an acceptable outcome; it is a battle, not a chance.
 7. **Glass and out.** *Can I get it off the glass and out?* → Do it. No shame in this at all.
-8. **Nothing?** → Take the hit, protect the puck against the boards, and eat the faceoff. **Take the hit properly**: go into the wall on an angle if you can, skates parallel to it, feet apart and knees bent, forearm and hip to the wall — never the point of your shoulder, and not the whole shoulder if you can help it. Keep your head up and chin off your chest, **never turn your back to the checker**, and never duck. If the wall arrives with you already facing it and no time to turn, get your stick and gloves up on the glass, arms out, to spread the load; [Body Contact and Battles](../technique/body_contact_and_battles.md) covers receiving a hit safely. Or ice it — the draw comes back to **your own** zone, and under the NHL, the IIHF and the PWHL you cannot change either. USA Hockey writes no such bar, and Hockey Canada applies one only *"[i]n categories of U18AAA, Junior, and at the option of the Member in Senior"*; wherever it applies, an injured player can still be replaced. Icing here is bad, but a penalty and a power play is worse. **Never solve this by putting it over the glass.**
+8. **Nothing?** → Take the hit, protect the puck against the boards, and eat the faceoff. **Take the hit properly**: go into the wall on an angle if you can, skates parallel to it, feet apart and knees bent, forearm and hip to the wall — never the point of your shoulder, and not the whole shoulder if you can help it. Keep your head up and chin off your chest, **never turn your back to anyone coming at you**, and never duck. If the wall arrives with you already facing it and no time to turn, get your stick and gloves up on the glass, arms out, to spread the load; [Body Contact and Battles](../technique/body_contact_and_battles.md) covers receiving a hit safely. Or ice it — the draw comes back to **your own** zone, and under the NHL, the IIHF and the PWHL you cannot change either. USA Hockey writes no such bar, and Hockey Canada applies one only *"[i]n categories of U18AAA, Junior, and at the option of the Member in Senior"*; wherever it applies, an injured player can still be replaced. Icing here is bad, but a penalty and a power play is worse. **Never solve this by putting it over the glass.**
 
 ### Neutral zone — you are carrying through the middle third
 

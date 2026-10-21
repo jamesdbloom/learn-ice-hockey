@@ -129,8 +129,8 @@ const supportTriangle = {
   // Naming the change costs the same words.
   caption:
     'Three teammates with one of them pulled off the boards into the middle, so the lanes out of ' +
-    'the carrier now diverge. The defender has not moved: he is still in the lane up the boards, and ' +
-    'covering it means turning his body away from the middle option. ' +
+    'the carrier now diverge. The defender has not moved: they are still in the lane up the boards, and ' +
+    'covering it means turning their body away from the middle option. ' +
     'No single defender can be in both lanes. A triangle is the smallest shape in which all three ' +
     'corners have two teammates at different angles, and it survives the puck moving, where a line ' +
     'has to be rebuilt every time. ' +
@@ -140,7 +140,7 @@ const supportTriangle = {
     'The attacking half of the rink, the net at the right. The puck carrier is deep on the right-hand ' +
     'boards in the corner and one teammate remains high on the same boards, but the third has moved off ' +
     'the wall into the middle of the zone, level with and just below the faceoff dot, so the three form a ' +
-    'triangle. The opposition forward stands where he stood in the previous diagram, on the line between ' +
+    'triangle. The opposition forward stands where they stood in the previous diagram, on the line between ' +
     'the carrier and the high wall option. A single dashed passing route runs from the carrier into the ' +
     'middle, stopping short of the receiver — the lane the defender cannot also be in.',
 

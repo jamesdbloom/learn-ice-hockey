@@ -298,17 +298,17 @@ const fiveManShape = {
     // about to happen, and `describe` walks them; the paired diagram names its own
     // situation now rather than being pointed at. The cardinal-rule hedge and the
     // home-plate non-negotiable are kept: both qualify what this picture DRAWS.
-    'The five-man offensive-zone shape with the puck on the strong-side half-wall: one ' +
+    'The five-player offensive-zone shape with the puck on the strong-side half-wall: one ' +
     'forward below in the corner, one above at the top of the circles, both defencemen on ' +
     'the blue line. That below-level-above attack triangle is a default, not a law of ' +
-    'hockey — overload, a five-man rotation and a 1-3-1 spread are real alternatives, so ' +
+    'hockey — overload, a five-player rotation and a 1-3-1 spread are real alternatives, so ' +
     'find out which one your team plays. At least one forward stays in or attacking the ' +
     'home-plate area. Defenders other than the goalie are not drawn.',
 
   describe:
     'The attacking half of the rink, the net at the right. Five own players. F1 has the puck on ' +
-    'the strong-side half-wall. F2 is below him in the strong-side corner, nearer the goal line. ' +
-    'F3 is above him and toward the middle, at the top of the circles and inside the home-plate ' +
+    'the strong-side half-wall. F2 is below them in the strong-side corner, nearer the goal line. ' +
+    'F3 is above them and toward the middle, at the top of the circles and inside the home-plate ' +
     'area. Two defencemen stand on the offensive blue line, one each side. The opposing ' +
     'goalie is in the crease; no other defenders are drawn. Two numbered routes: one, the ' +
     'pass from the half-wall down to the corner, finishing short of F2; two, F1 rotating up off ' +
@@ -426,7 +426,7 @@ const halfWallOptions = {
 
   describe:
     'The attacking half of the rink, the net at the right. A forward has the puck on the ' +
-    'strong-side half-wall. Four routes leave him and none is numbered. A dashed pass runs down ' +
+    'strong-side half-wall. Four routes leave them and none is numbered. A dashed pass runs down ' +
     'and back to a teammate deep in the strong-side corner. A second dashed pass runs up the ice ' +
     'to a defenceman at the strong-side point. A third dashed pass runs across the zone, crossing ' +
     'the centre line of the ice, to a forward on the weak side of the high slot. And a wavy ' +
@@ -596,7 +596,7 @@ const netFrontScreen = {
     'Where the net-front player actually stands to screen: just outside the blue paint, ' +
     'roughly six to eight feet out from the goal line and inside the faceoff dots, standing on ' +
     "the line between the goalie's eyes and the puck rather than the line between the " +
-    'goalie and the net — so when the point man walks the line, the screener slides with him ' +
+    'goalie and the net — so when the point man walks the line, the screener slides with them ' +
     'or the screen stops being a screen. Take the six-to-eight feet from these words and not off ' +
     // ⚠️ FULL STOP, NOT A COLON: "and not off the picture:" sat a negation on the separator,
     // and the inverted reading denies the drawn depth this sentence exists to disclose.
@@ -685,10 +685,10 @@ const netFrontScreen = {
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +
     'strong-side point, wide, eight feet toward the boards of the point itself. A forward stands ' +
     'at the net front, nine and a half feet out from the goal line and clear of the shaded goal ' +
-    'crease, offset to the puck side of the middle of the net so that he sits on the straight ' +
+    'crease, offset to the puck side of the middle of the net so that they sit on the straight ' +
     "line between the goalie's position and the puck rather than in front of the net. The " +
     'goalie is in the crease. A shot, drawn as a double line, runs from the point and ' +
-    'finishes short of the screener; extended, it would pass through him and arrive inside the ' +
+    'finishes short of the screener; extended, it would pass through them and arrive inside the ' +
     'far post. No other players are drawn.',
 
   players: [
@@ -826,7 +826,7 @@ const behindTheNet = {
 
   describe:
     'The attacking half of the rink, the net at the right. A forward has the puck behind the ' +
-    'goal line, ten feet to one side of the middle of the net. Two unnumbered routes leave him. ' +
+    'goal line, ten feet to one side of the middle of the net. Two unnumbered routes leave them. ' +
     'A dashed pass runs out past the side of the net, clear of the crease, and across the centre ' +
     'line of the ice, finishing short of a forward standing on the weak side of the high slot. ' +
     'A second dashed pass runs back up to a teammate deep in the strong-side corner — the ' +
@@ -941,9 +941,9 @@ const crossTheRoadYourself = {
     'the ice from the centre of the goal line out through centre ice, labelled "the royal road". ' +
     'Two own forwards and no puck. One stands on the strong-side half-wall, level with the ' +
     'faceoff dot; a wavy route ending in an arrowhead — the notation for skating with the puck — ' +
-    'leaves him, bows toward the net and finishes on the weak side of the high slot, having ' +
+    'leaves them, bows toward the net and finishes on the weak side of the high slot, having ' +
     'crossed the dashed line. The second forward stands behind the goal line, ten feet to the ' +
-    'strong side of the middle of the net; a second wavy route leaves him, swings out past the ' +
+    'strong side of the middle of the net; a second wavy route leaves them, swings out past the ' +
     'side of the net well clear of the crease, and finishes in the slot on the weak side of the ' +
     'dashed line. The goalie is in the crease. No defenders are drawn.',
 
@@ -1065,7 +1065,7 @@ const cycleRim = {
     // brief's rule on those admits no exception for repetition. ⚠️ "The companion diagram is
     // the same corner with the checker in the other place" was DEIXIS -- the reverse is named.
     'The rim, in an offensive-zone cycle. The checker is inside the carrier and still in ' +
-    'front of him, sealing him to the boards — that is the read: a rim beats pressure that ' +
+    'front of them, sealing the carrier to the boards — that is the read: a rim beats pressure that ' +
     'has you pinned. The puck goes onward around the boards to a teammate arriving behind ' +
     'the net, in the direction the play was already going, which is the whole difference ' +
     'from a reverse. Ranking the wrong read as a leading cycle turnover is coaching craft ' +
@@ -1079,8 +1079,8 @@ const cycleRim = {
   describe:
     'The attacking half of the rink, the net at the right. Own players are drawn open, the ' +
     'opposition solid. An own forward has the puck deep in the strong-side corner, with the puck ' +
-    'on the boards side of his body. An opposition forward stands about eight feet inside him and ' +
-    'two feet nearer the goal line, between him and the middle of the ice. A dashed pass route ' +
+    'on the boards side of their body. An opposition forward stands about eight feet inside them and ' +
+    'two feet nearer the goal line, between them and the middle of the ice. A dashed pass route ' +
     'leaves the carrier and bows out toward the boards, running around the curve of the corner ' +
     'about five feet off the dasher, past the outside of the checker, and finishing short of a ' +
     'second own forward who stands behind the goal line to the strong side of the net. The ' +
@@ -1139,10 +1139,10 @@ const cycleReverse = {
     // previous diagram" -- DEIXIS, the exact form the style guide forbids. The situation is
     // named instead. The wall-battle limb and the turnover hedge are untouched.
     'The reverse, in the same deep corner of an offensive-zone cycle: the checker has ' +
-    'skated past the carrier, momentum carrying him on toward the end boards. The ice he ' +
+    'skated past the carrier, momentum carrying them on toward the end boards. The ice the checker ' +
     'just left is back up the wall, so the puck goes against the flow into that space, to a ' +
     'teammate arriving on the half-wall behind the play. A still picture cannot draw ' +
-    'momentum — read him as past and unable to stop, and call for it. Ranking the wrong ' +
+    'momentum — read the checker as past and unable to stop, and call for it. Ranking the wrong ' +
     'read as a leading cycle turnover is coaching craft rather than a measurement, because ' +
     'nobody has counted cycle turnovers by cause. ⚠️ And ' +
     'whichever one is on, this is a wall battle: never turn your back to the checker and never ' +
@@ -1155,7 +1155,7 @@ const cycleReverse = {
     'The attacking half of the rink, the net at the right, the same corner as the previous ' +
     'diagram. Own players are drawn open, the opposition solid. An own forward has the puck deep ' +
     'in the strong-side corner, in the same place as before and with the puck on the far side of ' +
-    'his body from the pressure. The opposition forward is now past him, about five feet nearer ' +
+    'their body from the pressure. The opposition forward is now past them, about five feet nearer ' +
     'the goal line and five feet inside, level with the goal line. A dashed pass route leaves the ' +
     'carrier and runs back up the wall, away from the checker, finishing about six feet short of ' +
     'a second own forward standing on the strong-side half-wall. The goalie is in the crease. ' +
@@ -1233,10 +1233,10 @@ const postShotShape = {
     // section. The cardinal-rule hedge and "find out which your team plays" are kept -- a
     // caption that presented the standard five-man setup flat would be the corpus's commonest failure.
     'The shape in the seconds after a shot: F3 holds high at the top of the circle as the ' +
-    'safety — a rebound straight out is his, and a counter-attack has to go through him. ' +
+    'safety — a rebound straight out is theirs, and a counter-attack has to go through them. ' +
     'The other two forwards go to the net, one to screen and tip and one hunting the ' +
     'strong-side rebound, and both defencemen hold the blue line. That is the standard ' +
-    'five-man setup, not a law: who covers a pinching defenceman’s point is a coaching choice this ' +
+    'five-player setup, not a law: who covers a pinching defenceman’s point is a coaching choice this ' +
     'picture does not draw. Find out which your team plays.',
 
   describe:

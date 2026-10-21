@@ -418,7 +418,7 @@ const wideRushAndTheTrailer = {
     'shot is not drawn, because a plan view cannot show height and "far side and low" is ' +
     'half a height instruction. The feed to the trailer is. The picture cannot say when the ' +
     'defender’s stick arrives, and it cannot draw the delay, which is a beat of time rather ' +
-    'than a movement backwards. He is a forward only because a marker has to be a forward ' +
+    'than a movement backwards. The trailer is a forward only because a marker has to be a forward ' +
     'or a defenceman — you are told a trailer is coming, not who it is.',
 
   describe:
@@ -542,7 +542,7 @@ const breakawayApproach = {
     'for skating with the puck. One: from the forward to the blue line. Two: from the blue line to ' +
     'a point level with the tops of the two faceoff circles, thirty-five feet out from the goal ' +
     'line. Three: from there, thirteen feet further in and three feet off the middle, finishing ' +
-    'sixteen feet short of the goalie and pointing past him rather than at him. The opposition ' +
+    'sixteen feet short of the goalie and pointing past them rather than at them. The opposition ' +
     'goalie stands at the top of the crease, six feet out from the goal line. No other players ' +
     'are on the ice, and nothing is drawn between the end of the third route and the net.',
 

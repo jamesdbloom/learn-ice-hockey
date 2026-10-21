@@ -98,13 +98,13 @@ Action: Make the rim-or-reverse read while the puck is still travelling to you �
 Never: Turn your back to the checker on a rim or a reverse — USA Hockey warns them: "Even a light hit from behind could inflict a severe head or neck injury". Skates parallel, head up
 Never: Duck to avoid a check — in a head-down collision with the boards or a goal post, your neck can break at walking speed; no speed is slow enough to make that safe. Head up, chin off your chest instead
 Rule: Where body checking is barred it is barred both ways — the forechecker arriving behind you on a rim or reverse may not check you either, and it is at least a minor on them (USA Hockey 604(c), Hockey Canada 7.3(a)). Incidental board contact is legal everywhere, so never turn your back to the checker
-Rule: CARHA 79(a) makes a rim with a wind-up more than fifteen inches behind the puck a slap-shot minor, and a major if it injures, which ends your game and the next — in a CARHA league keep the backswing short
+Rule: CARHA 79(a) makes a rim with a wind-up more than fifteen inches behind the puck a slap-shot minor, and a major if it injures, which ends your game and at least the next — in a CARHA league keep the backswing short
 Rule: A minor is the floor and not the ceiling on a check thrown where checking is barred — Hockey Canada 7.3(b) allows a major and game misconduct on the degree of violence and makes both mandatory if the check injures you; USA Hockey 604(d) is mandatory for reckless endangerment
 ```
 
 **Where to be:** Low in the defensive zone near the boards or behind the net.
 
-**What to do:** Don't try to carry through traffic in your own zone. Get to a safe position and quickly move the puck to a winger or rim it around the boards (a hard shot along the boards that follows the curve of the rink around to a teammate further along — typically from one corner, around behind the net, to the far corner). The priority is getting the puck out of danger, not making a great play. In a CARHA league keep the backswing short: a wind-up more than fifteen inches behind the puck is a slap-shot minor, and a major that ends your game if it injures an opponent.
+**What to do:** Don't try to carry through traffic in your own zone. Get to a safe position and quickly move the puck to a winger or rim it around the boards (a hard shot along the boards that follows the curve of the rink around to a teammate further along — typically from one corner, around behind the net, to the far corner). The priority is getting the puck out of danger, not making a great play. In a CARHA league keep the backswing short: a wind-up more than fifteen inches behind the puck is a slap-shot minor, and a major that ends your game and at least the next if it injures an opponent.
 
 A **rim** and a **reverse** are different plays and worth keeping straight: a rim sends the puck *onward* around the boards in the direction you're facing; a reverse sends it *back the way it came*, against the flow of the forecheck, usually to your defence partner or a defenceman arriving behind you. A reverse beats pressure that has over-committed; a rim beats pressure that is sealing you in.
 

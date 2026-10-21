@@ -274,7 +274,7 @@ const pivotTowardTheBoards = {
     'ways. The more universal half of the instruction is not drawn here at all: pivot late — ' +
     'once you have turned to skate forwards you have given up your ability to react to a ' +
     'change of direction. ⚠️ And being beaten toward the wall is not an invitation to ride ' +
-    'him into it: driving an opponent into the boards is a separate act, and the NHL, the ' +
+    'them into it: driving an opponent into the boards is a separate act, and the NHL, the ' +
     'IIHF, USA Hockey and Hockey Canada all have a boarding rule that reaches it — they do ' +
     'not grade it the same way. Nothing in this picture shows contact.',
 
@@ -282,8 +282,8 @@ const pivotTowardTheBoards = {
     'The defensive half of the rink, the net being defended at the right with our goalie in its ' +
     'crease. Two skaters. An opposition forward, a solid circle, is in the neutral zone three feet ' +
     'outside the blue line and wide, toward the side drawn at the top of the picture, with the puck ' +
-    'a small solid dot about seven and a half feet from him, ahead of him and nearer the boards. Our ' +
-    'defenceman, an open triangle, stands about nine and a half feet from him, inside the blue line ' +
+    'a small solid dot about seven and a half feet from the forward, ahead of them and nearer the boards. Our ' +
+    'defenceman, an open triangle, stands about nine and a half feet from the forward, inside the blue line ' +
     'and nearer both the middle of the ice and the defended net. A run of backward-skating ' +
     'arches leaves the defenceman and runs up the ice and slightly wider, ending with no arrowhead. ' +
     'A single skate-and-stickhandle wave leaves the carrier, bows outward toward the side boards, ' +

@@ -218,7 +218,7 @@ const dzoneAlignmentOtherCircle = {
     'the boards-side winger level with the dot at the outer hash marks, close to the ' +
     'wall; the inside winger level with the dot at the inner hash marks, about five feet ' +
     'off the middle of the ice; the boards-side defenceman about five feet nearer the ' +
-    'goal line than his winger, close to the same wall; the second defenceman in the ' +
+    'goal line than their winger, close to the same wall; the second defenceman in the ' +
     'slot in front of the goalie, who is in the crease. One opposition player is ' +
     'drawn, the opposing centre, on the blue-line side of the dot. No routes: this is a ' +
     'still shape at the moment before the drop.',
@@ -253,7 +253,7 @@ const dzoneAlignment = {
 
   caption:
     'A defensive-zone draw frozen before the drop, at the right-hand circle. The boards-side ' +
-    'defenceman stands nearer the boards than his winger as well as behind him; there is no room in ' +
+    'defenceman stands nearer the boards than their winger as well as behind that winger; there is no room in ' +
     'the picture to draw it. Where everyone stands is a coaching choice and not a rule — this ' +
     'alignment goes with a low zone collapse, and every team’s differs, so find out what yours runs. ' +
     'The shaded circle is the part that is a rule: every player other than the two taking the draw ' +
@@ -322,7 +322,7 @@ const dzoneAlignment = {
     'takers may put a skate inside. Five own players: the centre in the dot on the goal-line ' +
     'side of it; the boards-side winger level with the dot at the outer hash marks, close to the ' +
     'wall; the inside winger level with the dot at the inner hash marks, about five feet off the ' +
-    'middle of the ice; the boards-side defenceman about five feet nearer the goal line than his ' +
+    'middle of the ice; the boards-side defenceman about five feet nearer the goal line than their ' +
     'winger, close to the same wall; the second defenceman in the slot in front of the goalie, who is in ' +
     'the crease. One opposition player is drawn, the opposing centre, on the blue-line side of ' +
     'the dot. The rest of the opposing five are drawn in the offensive-zone diagram instead. ' +
@@ -365,10 +365,10 @@ const dzoneCleanLoss = {
     'A defensive-zone draw lost clean. Both wingers release to the opposing points on the drop rather' +
     ' than after they see where the puck went — the boards-side winger to the near point, the inside ' +
     'winger the harder job, all the way to the far one. That is the zone call: under man-to-man each ' +
-    'winger instead takes the specific opponent he was assigned before the draw and follows him, ' +
+    'winger instead takes the specific opponent they were assigned before the draw and follows that opponent, ' +
     'which may mean staying low, and a hybrid keeps the wingers releasing while the low defender ' +
     'stays glued to a body — so ask which one your team plays. Nobody else moves yet: the centre ' +
-    'picks up the man who beat him, the slot defenceman holds the net front rather than chasing the ' +
+    'picks up the player who beat them, the slot defenceman holds the net front rather than chasing the ' +
     'puck to the point, and the boards-side defenceman takes the strong-side corner or half-wall.',
 
   describe:
@@ -378,9 +378,9 @@ const dzoneCleanLoss = {
     'rather than one after the other: the boards-side winger leaves the outer hash marks and ' +
     'goes straight up the ice to the near point; the inside winger leaves the inner hash marks ' +
     'and goes diagonally across to the far point on the other side of the ice. Each route runs ' +
-    'at the defenceman it is going to and stops a few feet short of him, ending in two short bars ' +
+    'at the defenceman it is going to and stops a few feet short of them, ending in two short bars ' +
     'across the line rather than an arrowhead, because the winger is arriving to take that man ' +
-    'rather than skating past him. The centre, the slot defenceman ' +
+    'rather than skating past. The centre, the slot defenceman ' +
     'and the boards-side defenceman are drawn where the draw left them.',
 
   players: [
@@ -530,7 +530,7 @@ const ozoneAlignment = {
   caption:
     'An offensive-zone draw, frozen before the drop, at the right-hand circle. Both defencemen are up' +
     ' at the points — the area just inside the blue line, not the line itself. The draw-side one is ' +
-    'the shooter, with his feet already set and his stick already loaded; the far one holds the line ' +
+    'the shooter, with their feet already set and their stick already loaded; the far one holds the line ' +
     'as the safety against a counterattack. This is the common default and not a rule; every team’s ' +
     'alignment differs, so ask what yours runs.',
 
@@ -579,7 +579,7 @@ const neutralZoneAlignment = {
 
   describe:
     'The full sheet, your own net at the left, attacking to the right. The draw is at the centre ' +
-    'dot. Five own players: the centre in the dot on his own side of it; the two wingers wide in ' +
+    'dot. Five own players: the centre in the dot on their own side of it; the two wingers wide in ' +
     'their lanes, one either side of the middle and well outside the centre circle, level with ' +
     'or a stride behind the dot; the two ' +
     'defencemen well back, just in front of their own blue line, one either side of the middle ' +
@@ -594,8 +594,8 @@ const neutralZoneAlignment = {
     // "Both wingers wide, level with or just behind the dot, in their lanes."
     // Wide is 30 ft off the middle, which is outside the 15 ft centre circle and
     // still 12.5 ft off the boards at y ±42.5; a stride behind is 2 ft.
-    { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: 30 },  label: 'wide, in his lane' },
-    { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: -30 }, label: 'wide, in his lane' },
+    { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: 30 },  label: 'wide, in their lane' },
+    { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: -30 }, label: 'wide, in their lane' },
     // "Both defencemen back toward your own blue line, one either side of the
     // middle." point:right:far and point:left:far are the far blue line's two
     // point positions, (-25, +-20); the dy pulls them in toward the middle,
@@ -624,7 +624,7 @@ const goaliePulled = {
   caption:
     'An offensive-zone draw with your own goalie pulled for an extra attacker: your own net, at ' +
     'the far end of the picture, is empty. The extra attacker is drawn at the net front; the high ' +
-    'slot is his other usual place, and both defencemen are at the points. The centre is under ' +
+    'slot is their other usual place, and both defencemen are at the points. The centre is under ' +
     'maximum pressure to win it back cleanly, because there is no safe outlet and no recovery from a ' +
     'loss. A goalie may not take part in a faceoff in any case: the NHL and IIHF books both say ' +
     'so in the same words, at Rule 76.1. The alignment is a default rather than a rule, so ask what ' +
@@ -861,7 +861,7 @@ const strongSideDot = {
   describe:
     'The defending half of the rink, your own net and goalie at the right, both end-zone ' +
     'circles visible. The same centre is drawn at both dots, each time on the goal-line side of ' +
-    'the spot with an opposing centre facing him on the far side of it. From each of the two own ' +
+    'the spot with an opposing centre facing them on the far side of it. From each of the two own ' +
     'centres a dashed line with an arrowhead runs back and across at the same angle, showing the ' +
     'puck pulled backwards. From the upper circle it finishes out toward the side boards; from ' +
     'the lower circle the identical line finishes in open ice toward the middle, in front of the ' +
@@ -949,7 +949,7 @@ const ozoneDOneTimer = {
     'and off to one side of the middle, clear of the shooting lane; and both defencemen at the ' +
     'points just inside the blue line. The opposing centre is on the far side of the dot, and ' +
     'their goalie is in the crease. Two routes. A dashed line runs from the centre in the ' +
-    'dot back up the ice to the strong-side defenceman at the near point, stopping short of him. ' +
+    'dot back up the ice to the strong-side defenceman at the near point, stopping short of them. ' +
     'A double line — a shot — runs from that defenceman down to the front of the net, passing ' +
     'about eleven feet clear of the inside winger. No route is drawn for any other player.',
 
@@ -989,7 +989,7 @@ const ozoneWingerWalkout = {
   caption:
     'The winger walk-out off an offensive-zone draw: instead of going back to the point, the centre ' +
     'pulls the puck to the inside winger standing in the circle, who takes a stride toward the middle' +
-    ' of the ice and then either shoots or feeds the slot. Which of those two he does is not drawn, ' +
+    ' of the ice and then either shoots or feeds the slot. Which of those two they do is not drawn, ' +
     'because the section gives both and the walk-out itself is the play; the picture stops where the ' +
     'choice begins. Both defencemen stay at the points, one of them as the safety against a ' +
     'counterattack. Every part of this is a coaching choice rather than a rule of hockey, and which ' +
@@ -1002,7 +1002,7 @@ const ozoneWingerWalkout = {
     'hash marks, the inside winger at the inner hash marks, and both defencemen at the points. ' +
     'The opposing centre is on the far side of the dot, and their goalie is in the crease. ' +
     'Two numbered routes. First, a dashed line runs from the centre in the dot down to the ' +
-    'inside winger, stopping about six feet short of him. Second, a plain line with an ' +
+    'inside winger, stopping about six feet short of them. Second, a plain line with an ' +
     'arrowhead takes that winger about nine feet toward the middle of the ice, finishing level ' +
     'with the middle. Neither defenceman has a route: they hold the points, and nothing is drawn ' +
     'going to the net.',

@@ -540,7 +540,7 @@ Moving sideways without body position and then contacting a player without the p
 
 12. **At the net front, keep your stick out of the paint, and when your goalie shouts *"Screen!"*, hold the ice you already have by body position — no lean, no push.** In a CARHA league, women's hockey or a non-checking division, keep your body off the screener altogether. ⚠️ **Never shove with the shaft:** it is cross-checking in every book, and on the back it can be called checking from behind, which no book prices as a bare minor.
 
-13. **Shorthanded, count skaters rather than the clock before you ice the puck.** You may ice it while you have fewer skaters on the ice than your opponent, so on a 5-on-3 you still may after the first penalty ends. Two exceptions: USA Hockey below Youth 15-Only and Girls 16U, and the NHL and PWHL after a major expires with nobody in the box. **Find out whether your book races for icing or calls it automatically.**
+13. **Shorthanded, count skaters rather than the clock before you ice the puck.** You may ice it while you have fewer skaters on the ice than your opponent, so on a 5-on-3 you still may after the first penalty ends. Two exceptions: USA Hockey below Youth 15-Only, Girls 16U and High School, and the NHL and PWHL after a major expires with nobody in the box. **Find out whether your book races for icing or calls it automatically.**
 
 ---
 

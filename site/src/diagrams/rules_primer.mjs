@@ -115,10 +115,10 @@ const offsideFaceoffLocation = {
     'USA Hockey books put the draw is not established here, so do not assume it is the same place. ' +
     'One attacker has preceded the puck into the attacking zone at the right, and the two entries ' +
     'drawn are alternatives rather than a sequence, because what the rule turns on is how the puck ' +
-    'followed him in. Carried over the line, and the draw is the neutral-zone spot nearest that ' +
+    'followed them in. Carried over the line, and the draw is the neutral-zone spot nearest that ' +
     'attacking zone. Shot or passed in, and it goes back to the faceoff spot in the zone closest to ' +
-    'where the pass came from — a spot, not the patch of ice he shot from — drawn here as a ' +
-    'defenceman firing it in from his own end. The two draws are 89 feet apart up the ice, which is ' +
+    'where the pass came from — a spot, not the patch of ice it was shot from — drawn here as a ' +
+    'defenceman firing it in from their own end. The two draws are 89 feet apart up the ice, which is ' +
     'arithmetic on the rink dimensions, not a figure from the rulebook. That far marker is this ' +
     'pass’s answer and not a fixed destination. Move the pass and the spot moves with it.',
 
@@ -130,7 +130,7 @@ const offsideFaceoffLocation = {
     'the far boards, and the neutral-zone faceoff spot just outside that blue line on the same ' +
     'side is marked and labelled "if carried". Second, one of our defencemen deep in our own end ' +
     'passes it the length of the ice across the same blue line, and the end-zone faceoff spot ' +
-    'beside him is marked and labelled "if shot or passed". Both goalies are drawn. No puck ' +
+    'beside them is marked and labelled "if shot or passed". Both goalies are drawn. No puck ' +
     'is drawn, because two different offsides are shown side by side rather than one play, and ' +
     'no route is numbered, because neither entry comes before the other.',
 
@@ -251,10 +251,10 @@ const icingGainingTheLine = {
     'along the ice. Each has dumped the puck the length of the ice into the far corner, drawn as ' +
     'a long dashed line crossing the far goal line. The whole of their own half, from the centre ' +
     'red line back to the end boards, is lightly shaded and labelled. The upper player’s dashed ' +
-    'line begins about five feet short of the centre red line, inside the shaded half, and he is ' +
+    'line begins about five feet short of the centre red line, inside the shaded half, and they are ' +
     'labelled as not ' +
     'having gained the line. The lower player’s dashed line begins on the red line itself, where ' +
-    'a black puck is drawn, and he is labelled as having gained it. Nothing else is drawn — no ' +
+    'a black puck is drawn, and they are labelled as having gained it. Nothing else is drawn — no ' +
     'goalies, no opponents and no chase — because the picture is about one thing.',
 
   // The rule's own geography, and the reason the picture is legible at all: five
@@ -401,7 +401,7 @@ const icingTheRaceAndTheDot = {
     'the goal line" (Rule 624, Note), so there is no race to draw at all, and CARHA’s icing is ' +
     'automatic too (Rule 65). Hockey Canada runs hybrid only in U18AAA and Junior, and in Senior at ' +
     'the Member’s option (Rule 6.7(e)). Ask which your league plays. The race is not a licence to hit. ' +
-    'Unnecessary contact with a player playing the puck on an obvious icing play that results in him ' +
+    'Unnecessary contact with a player playing the puck on an obvious icing play that results in that player ' +
     'hitting or impacting the boards "is boarding and must be penalized as such" under NHL 41.1, IIHF ' +
     '41.1 and Hockey Canada 7.2, word for word, and USA Hockey penalises the same contact without ' +
     'naming boarding, at Rule 624(d). And whoever wins it, how you arrive at the wall is the part ' +
@@ -434,7 +434,7 @@ const icingTheRaceAndTheDot = {
     'The puck sits in the right corner, past the goal line. Two skaters are level with each other ' +
     'along the ice, both on the line of the end-zone faceoff dots and about twenty-four feet apart ' +
     'across the ice: your defenceman is out near the boards, and an opposition forward is inside ' +
-    'him toward the middle. Each has a plain skating route running toward the puck and stopping ' +
+    'them toward the middle. Each has a plain skating route running toward the puck and stopping ' +
     'short of it, on clearly different bearings; the wall route is the shorter of the two. A small ' +
     'unlabelled box is drawn around the near end-zone faceoff dot, between the two skaters, marking ' +
     'the dot as the cut-off for the decision rather than as a place a draw is taken. Nothing else is ' +
@@ -566,10 +566,10 @@ const thePrivilegedArea = {
     'diagrams draw is the NHL-dimensioned one, and which USA Hockey marks nowhere at all. Two rules ' +
     'turn on it: 614(c) makes it a delay-of-game minor for a goalie to freeze the puck when ' +
     '"[t]he puck is outside the boundaries of the ‘goalkeeper’s privileged’ area", and 607(c) prices ' +
-    'contact on him inside it. Read the shading as a boundary rather than as a licence, in either ' +
+    'contact on the goalie inside it. Read the shading as a boundary rather than as a licence, in either ' +
     'direction. Inside it a goalie still may not freeze the puck where "[t]he puck is behind the ' +
-    'goal line and their body is entirely outside of the goal crease" (614(c)(1)). Outside it he is ' +
-    'still not "fair game" (607(d)). And a goalie anywhere in this shading, behind his own net ' +
+    'goal line and their body is entirely outside of the goal crease" (614(c)(1)). Outside it they are ' +
+    'still not "fair game" (607(d)). And a goalie anywhere in this shading, behind their own net ' +
     'included, is not somebody to finish a check on. 607(c) writes no bare minor for body checking or ' +
     'charging one there. It is "[a] minor plus a misconduct or a major plus a game misconduct ' +
     'penalty", with 607(e) adding that "[a] match penalty for reckless endangerment may also be ' +
@@ -583,8 +583,8 @@ const thePrivilegedArea = {
     'behind the net, and stopping short of both corners. Its far edge follows the curve of the end ' +
     'boards. The two red dashed trapezoid lines the rink itself carries run behind the net inside ' +
     'the shading, splaying out from beside the goal to the end boards, and are a different and ' +
-    'much smaller shape. The goalie stands behind his own net, inside the shaded region and ' +
-    'off to one side of it, and it is his label that names the region. No other players are drawn.',
+    'much smaller shape. The goalie stands behind their own net, inside the shaded region and ' +
+    'off to one side of it, and it is their label that names the region. No other players are drawn.',
 
   zones: [
     {

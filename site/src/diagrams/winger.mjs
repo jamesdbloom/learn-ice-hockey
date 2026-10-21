@@ -199,8 +199,8 @@ const wallDepthBySystem = {
   width: 900,
 
   caption:
-    'Where a winger stands on the wall in his own end, and why there is no single answer. The whole ' +
-    'sheet, your own goal at the left, at the moment your defenceman has the puck behind his net. ' +
+    'Where a winger stands on the wall in their own end, and why there is no single answer. The whole ' +
+    'sheet, your own goal at the left, at the moment your defenceman has the puck behind your net. ' +
     'Three wingers are drawn on the same boards and only one is on the ice at a time: the same player ' +
     'under three different breakout structures. In the conventional swing breakout you come down ' +
     'between the hash marks and the goal line, roughly level with the faceoff dot, the deepest of the ' +
@@ -213,7 +213,7 @@ const wallDepthBySystem = {
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left and the attacking end at ' +
-    'the right. Your goalie is in his crease and one of your defencemen is behind the ' +
+    'the right. Your goalie is in the crease and one of your defencemen is behind the ' +
     'net with the puck. Three of your own forwards are drawn, all on the same right-hand ' +
     'side of the ice, and they are three alternative positions for one player rather than ' +
     'three players: the first is deep in your own end on the boards just below the faceoff ' +
@@ -314,8 +314,8 @@ const leavesThePoint = {
   caption:
     'What it costs a winger to leave the point, drawn in your own end with your net at the right. You ' +
     'have gone down into the corner to help with the battle; the puck has come out of it to the ' +
-    'opposing defenceman you were covering, and he is walking in off the point with nobody near him. ' +
-    'Two things have gone at once. He has the time and space to shoot or to walk into the middle, ' +
+    'opposing defenceman you were covering, and that defenceman is walking in off the point with nobody near them. ' +
+    'Two things have gone at once. They have the time and space to shoot or to walk into the middle, ' +
     // W33: the outlet spot is the conventional swing breakout's (winger.md :64/:175 facts), and the
     // scope clause below covers only the COVERAGE system, so the breakout half is scoped here.
     'which is the thing covering the point exists to deny; and there is nobody on the boards between ' +
@@ -323,19 +323,19 @@ const leavesThePoint = {
     'win it back the exit starts late. ⚠️ This ' +
     'is a mistake only under the system the picture assumes. Staying high out of the corner is the ' +
     'low zone collapse job — a coaching choice rather than a rule of hockey. Under man-on-man you ' +
-    'follow your check wherever he goes, corner included, and going down there is the job rather than ' +
-    'the error; under a hybrid you take him down only below the hash marks. Find out which one your ' +
+    'follow your check wherever they go, corner included, and going down there is the job rather than ' +
+    'the error; under a hybrid you take them down only below the hash marks. Find out which one your ' +
     'team plays before your first shift. Two real exceptions under collapse are not drawn here ' +
-    'either. Follow your man a few feet if he walks down off the point, staying connected and calling ' +
+    'either. Follow your man a few feet if they walk down off the point, staying connected and calling ' +
     'the switch, and engage the puck if a corner battle squirts it up the wall to you.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goalie is in the ' +
     'crease and one of your defencemen is just in front of it, off the blue paint. Your ' +
     'right winger is down in the right-hand corner with an opposition forward. An ' +
-    'opposition defenceman is up at his point, a few feet inside the blue line on that ' +
-    'side, with the puck beside him. Two routes are drawn: a dashed pass running from the ' +
-    'corner up the length of the zone to him, bowed away from the corner battle, and his ' +
+    'opposition defenceman is up at their point, a few feet inside the blue line on that ' +
+    'side, with the puck beside them. Two routes are drawn: a dashed pass running from the ' +
+    'corner up the length of the zone to them, bowed away from the corner battle, and the defenceman’s ' +
     'own skating route curving down off the point toward the middle of the ice and the top ' +
     'of the faceoff circle. The only players of yours in the picture are the one in the ' +
     'corner and the one at the net front. Nobody is near the opposing defenceman, and ' +
@@ -482,8 +482,8 @@ const arrivingAtTheLine = {
   // to take instead. Now matches the pairing the two sibling captions in this file use.
   caption:
     'Arriving at the attacking blue line as a winger, with the zone you are entering at the right. ' +
-    'The picture is drawn for one thing: where the defenceman meeting you is standing. He is stood up ' +
-    'on his own line, and the ice he is defending is the ice your body, your hands and your stick ' +
+    'The picture is drawn for one thing: where the defenceman meeting you is standing. They are stood up ' +
+    'on their own line, and the ice they are defending is the ice your body, your hands and your stick ' +
     'reach before your trailing skate does. The trail skate itself is not drawn, and cannot be at ' +
     'this scale. You are offside only when both skates have completely crossed the line before the ' +
     'puck has, so a trailing skate on the line keeps you onside; drag it and keep the blade in ' +
@@ -502,12 +502,12 @@ const arrivingAtTheLine = {
     'The attacking half of the rink, the attacking net at the right and the attacking blue ' +
     'line running across the picture near the left-hand edge. Two opposition defencemen ' +
     'stand at that line, one on the right-hand side squarely on it and one on the far side ' +
-    'of the ice from him, with their goalie in his crease. Two of your own forwards are ' +
+    'of the ice from the first, with their goalie in the crease. Two of your own forwards are ' +
     'in the neutral zone on the near side of the line: the carrier towards the middle with ' +
-    'the puck beside him, and the right winger out wide toward the boards. Two routes: the ' +
-    'winger’s skating route taking him across the line and on into the zone, still wide, ' +
+    'the puck beside them, and the right winger out wide toward the boards. Two routes: the ' +
+    'winger’s skating route taking them across the line and on into the zone, still wide, ' +
     'and a dashed pass from the carrier that curves over and lands just inside the line ' +
-    'ahead of him. No stick, no skate and no contact is drawn.',
+    'ahead of the winger. No stick, no skate and no contact is drawn.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },         // (85, 0)
@@ -610,11 +610,11 @@ const cornerAndTheEmptyPoint = {
   caption:
     'A winger with the puck in the offensive corner, drawn for the look that is easiest to skip. The ' +
     'opposition net is at the right and their defenceman is on you from the inside, so your body is ' +
-    'the wall between him and the puck. Two outlets are drawn: your own defenceman, and your centre. ' +
-    'What the picture is actually about is where that defenceman is. He has stepped down off the blue ' +
+    'the wall between them and the puck. Two outlets are drawn: your own defenceman, and your centre. ' +
+    'What the picture is actually about is where that defenceman is. They have stepped down off the blue ' +
     'line to the top of the faceoff circle to support the cycle, which is normal and legitimate — so ' +
-    'the point behind him, exactly where a blind pass up the wall goes, is empty. Look up before you ' +
-    'throw it there. He may equally be holding the line, and this picture shows one of the two rather ' +
+    'the point behind them, exactly where a blind pass up the wall goes, is empty. Look up before you ' +
+    'throw it there. Your defenceman may equally be holding the line, and this picture shows one of the two rather ' +
     'than the way it always is. ⚠️ Never turn your back to the checker and never duck. Those are two ' +
     'different injuries — a hit from behind you cannot brace for, and a chin tucked to the chest, ' +
     'which does not need speed to do it. Skates parallel to the boards, forearm and hip into the ' +
@@ -623,14 +623,14 @@ const cornerAndTheEmptyPoint = {
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Your right winger has ' +
-    'the puck in the right-hand corner, the puck drawn on the boards side of his body, away ' +
-    'from an opposition defenceman who is inside him and nearer the net. Three more of your ' +
+    'the puck in the right-hand corner, the puck drawn on the boards side of their body, away ' +
+    'from an opposition defenceman who is inside them and nearer the net. Three more of your ' +
     'own players are drawn: a defenceman at the top of the right faceoff circle rather than ' +
     'up at the blue line, your centre in the slot in front of the net, and your second ' +
     'defenceman across at the far-side point. The right-hand point, just inside the blue ' +
     'line on the winger’s own side, has nobody in it. Two dashed passing routes leave the ' +
     'winger, one to the defenceman at the top of the circle and one to the centre; neither ' +
-    'is numbered, because only one of them happens. The opposition goalie is in his ' +
+    'is numbered, because only one of them happens. The opposition goalie is in the ' +
     'crease.',
 
   players: [

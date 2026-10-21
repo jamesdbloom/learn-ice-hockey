@@ -208,7 +208,7 @@ const anglingYourRoute = {
 
   caption:
     'The defender’s line is aimed at the ice the carrier wants, not at the carrier. It noses at the ' +
-    'shaded middle without getting into it and leaves him the wall. That band is a lane, not a ' +
+    'shaded middle without getting into it and leaves the carrier the wall. That band is a lane, not a ' +
     'marking. The route ends in two bars on a patch of ice, not on a player — no contact is drawn, ' +
     'and where an angle ends depends on whether your league allows checking.',
 
@@ -216,14 +216,14 @@ const anglingYourRoute = {
     'The attacking half of the rink, with the net being defended at the right and our goalie in ' +
     'its crease. Two skaters and nothing else. An opposition forward carries the puck in open ice ' +
     'on the side drawn at the top of the picture, between the centre red line and the blue line and ' +
-    'wide of the faceoff-dot line, with the puck a stride ahead of him and outside him. His route ' +
-    'is the skate-and-stickhandle wave: it leaves him heading up the ice and inward toward the ' +
+    'wide of the faceoff-dot line, with the puck a stride ahead of them and outside them. Their route ' +
+    'is the skate-and-stickhandle wave: it leaves them heading up the ice and inward toward the ' +
     'middle, runs close along the edge of a shaded band without entering it, then swings up the ice ' +
     'and outward toward the side boards, finishing short of them with an arrowhead. Our defenceman ' +
-    'stands inside him and a few feet nearer the defended net. His route is a straight line ending ' +
+    'stands inside the carrier and a few feet nearer the defended net. The defenceman’s route is a straight line ending ' +
     'in two short bars rather than an arrowhead: it runs up the ice and outward on a diagonal much ' +
     'more toward the defended net than across the rink, crosses the blue line, and stops inside the ' +
-    'shaded band, ahead of where the carrier’s route finishes and well clear of him. The shaded ' +
+    'shaded band, ahead of where the carrier’s route finishes and well clear of the carrier. The shaded ' +
     'band is the middle lane, drawn between the two faceoff-dot lines from the centre red line down ' +
     'to the tops of the faceoff circles. The two routes start far apart and finish closer together. ' +
     'Nothing in the picture shows contact between the two players.',
@@ -595,7 +595,7 @@ const cornerEscapeRoutes = {
     'Why a corner is harder to defend than a piece of wall, drawn in your own end with the net you ' +
     'are defending at the right. Boards on two sides give the carrier two ways out and both are ' +
     'drawn: up the wall, or out behind the net. The third is not drawn because your defenceman is ' +
-    'standing in it, arriving on the carrier’s inside. Angle him so the escape left open is toward ' +
+    'standing in it, arriving on the carrier’s inside. Angle the carrier so the escape left open is toward ' +
     'the wall and up, away from the net. Never leave open the one back toward the slot. Whose corner ' +
     'this is in the first place is a coaching choice rather than a law of hockey, so find out which ' +
     'your team plays. ⚠️ The route ends in two bars, meaning arrive and contain, and no contact is ' +
@@ -610,10 +610,10 @@ const cornerEscapeRoutes = {
     // r = 27.7 and 7.28 ft off the dasher centreline at r = 28. Six matched neither, and the
     // module's own comment beside C_CARRIER already said 7.1.
     'crease. An opposition forward stands in the corner at the top of the picture, about seven ' +
-    'feet off the side boards, with the puck drawn between him and the wall. Our defenceman is out ' +
-    'toward the top of the faceoff circle on the same side; his route is a straight line running ' +
+    'feet off the side boards, with the puck drawn between them and the wall. Our defenceman is out ' +
+    'toward the top of the faceoff circle on the same side; the defenceman’s route is a straight line running ' +
     'down and across into the corner, ending in two short bars rather than an arrowhead, about ' +
-    'seven feet short of the carrier and on the side of him nearer the middle of the ice. Two ' +
+    'seven feet short of the carrier and on the side of the carrier nearer the middle of the ice. Two ' +
     'skate-and-stickhandle waves leave the carrier. One runs along the side boards away from the ' +
     'goal, finishing with an arrowhead about twenty feet up the wall. The other curves out toward ' +
     'the end boards and then round the back of the goal, passing through the gap between the back ' +
@@ -901,7 +901,7 @@ const angleIntoTheCorner = {
     'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
     'crease. One of our forwards stands well up the ice in the middle of the zone, level with a ' +
     'point about fourteen feet outside the top of the faceoff circle on the side drawn at the top of ' +
-    'the picture. A single curved forward-skating route leaves him and runs into the corner: it sets ' +
+    'the picture. A single curved forward-skating route leaves them and runs into the corner: it sets ' +
     'off up the ice and toward that corner, arcs gently outward as it goes, and finishes with an ' +
     'arrowhead in the corner about four feet off the side boards, pointing along them rather than ' +
     'into them. The puck is drawn hard against the boards a few feet before that arrowhead and ' +
@@ -1141,8 +1141,8 @@ const insideLaneLongerRoute = {
     'A loose puck neither team has, drawn in open ice in your own end with the net you are defending ' +
     'at the right. The faint dashed line is the straight route the opposition forward would take to ' +
     'it; it is not a marking on the ice and nothing travels along it. Your own route arcs, so you ' +
-    'arrive already turned, inside him and on that line, and the less direct way round is what is ' +
-    'left for him. On this drawing that costs you about two feet, which is the drawing’s geometry ' +
+    'arrive already turned, inside them and on that line, and the less direct way round is what is ' +
+    'left for them. On this drawing that costs you about two feet, which is the drawing’s geometry ' +
     'rather than a fact about hockey. ⚠️ Body position is what does this work, and only while you ' +
     'are going for the puck. USA Hockey lets a skater keep the ice they occupy so long as they hold ' +
     'their skating speed and their body between the opponent and the loose puck, and use that ' +
@@ -1153,12 +1153,12 @@ const insideLaneLongerRoute = {
     // impeding an opponent without the puck interference. Sole host is the owner.
     'direct route. Standing your ground is a separate entitlement in the same book, and NHL Rule ' +
     '56.1 attaches no speed condition at all, so under those books stopping does not cost you your ' +
-    'ice. Hockey Canada and CARHA write no right to lengthen his path: impeding an opponent without ' +
+    'ice. Hockey Canada and CARHA write no right to lengthen an opponent’s path: impeding an opponent without ' +
     'the puck is interference there, so hold only a lane you already have. Change your ' +
-    'skating lane or your foot speed to play his body rather than the puck and USA Hockey Rule ' +
+    'skating lane or your foot speed to play the opponent’s body rather than the puck and USA Hockey Rule ' +
     '625(a)(4) makes that a minor for interference. The other limit is the instrument: under that ' +
-    'book, a stick, an arm or the skates used to obstruct his ability to skate to the puck, and a ' +
-    'hand or arm used to hold or block him. The free hand may fend off an opponent or their stick ' +
+    'book, a stick, an arm or the skates used to obstruct the opponent’s ability to skate to the puck, and a ' +
+    'hand or arm used to hold or block them. The free hand may fend off an opponent or their stick ' +
     'under NHL and IIHF Rule 56.1 and may never hold, pull, tug or grab. Hockey Canada Rule 8.1 ' +
     'permits blocking a stick with hands, arms or body but not holding one.',
 
@@ -1167,8 +1167,8 @@ const insideLaneLongerRoute = {
     'its crease. Two skaters. A loose puck is drawn on its own in open ice on the side at the top ' +
     'of the picture, inside the faceoff circle, about twelve feet up-ice of the goal line and well ' +
     'clear of the side boards. An opposition forward stands up-ice of it and wide, out toward the ' +
-    'boards. A faint dashed line runs from him straight to the puck. One of our forwards stands ' +
-    'level with him up the ice and well inside him, nearer the middle of the rink. A single curved ' +
+    'boards. A faint dashed line runs from them straight to the puck. One of our forwards stands ' +
+    'level with the opposition forward up the ice and well inside them, nearer the middle of the rink. A single curved ' +
     'forward-skating route leaves our forward: it sets off up the ice, arcs outward as it goes, ' +
     'and finishes with an arrowhead sitting on the dashed line about seven feet short of the puck, ' +
     'pointing across the ice rather than at the puck. No route is drawn for the opposition ' +
@@ -1192,7 +1192,7 @@ const insideLaneLongerRoute = {
     // position-neutral glyph, and the commonest player in a 50-50 race is a forward. So both
     // skaters are circles and the caption says "you" and "the opposition forward" rather
     // than naming a job.
-    { id: 'F', pos: 'F', at: IL_YOU, label: 'inside him' },
+    { id: 'F', pos: 'F', at: IL_YOU, label: 'inside them' },
 
     { id: 'A1', team: 'opp', pos: 'F', at: IL_OPP, label: 'outside you' },
 
@@ -1430,8 +1430,8 @@ const shotBlockGetClose = {
     'the middle of the ice. A faint dashed line runs from that puck down the ice toward the ' +
     'middle of the goal, stopping about thirteen feet short of the goal line and well clear of ' +
     'the goalie; extended, it would reach the middle of the goal line. One of our forwards ' +
-    'stands squarely on that line about fourteen feet from the shooter, so he is at the ' +
-    'shooter’s end of it and roughly fifty feet from his own goalie. No shot is drawn, no ' +
+    'stands squarely on that line about fourteen feet from the shooter, so the forward is at the ' +
+    'shooter’s end of it and roughly fifty feet from our own goalie. No shot is drawn, no ' +
     'route is drawn, and no second blocker is drawn anywhere on the line.',
 
   // THE LANE. A two-point unfilled zone, so the renderer draws a faint dashed line rather

@@ -194,13 +194,13 @@ const wallReception = {
 
   describe:
     'Your own end zone, your net at the right with your goalie in the crease. A teammate stands ' +
-    'behind the net, off the near post, and a dashed pass line runs from him up to the right ' +
+    'behind the net, off the near post, and a dashed pass line runs from them up to the right ' +
     'half-wall, level with the faceoff dot, where you stand waiting to receive; the puck is drawn ' +
     'on that line, about forty per cent of the way across, so the pass is in flight. A second ' +
     'teammate stands inside and below you, between you and your own net, as the support option. An ' +
     'opposition forward is up ice on the same wall with a route running down the boards toward you ' +
     'that stops about seven feet short and ends in two short bars rather than an arrowhead, meaning ' +
-    'he arrives and contains rather than skating through. Nobody else is drawn, and no head turn is ' +
+    'they arrive and contain rather than skating through. Nobody else is drawn, and no head turn is ' +
     'drawn, because the notation has no symbol for one.',
 
   players: [
@@ -452,7 +452,7 @@ const anticipation = {
     'The first of two frames of the same moment: this one is the ' +
     'anticipating position, the next one is the guess. You are ' +
     'standing inside the shaded band — the ice between the puck and your own net, a name for a ' +
-    'piece of ice rather than a marking — on the side of it nearer his option. If the pass ' +
+    'piece of ice rather than a marking — on the side of it nearer the carrier’s option. If the pass ' +
     'never comes, you are still in front of your own net and still doing a job. ' +
     'The cue itself cannot be drawn: this ' +
     'notation has no facing and no stick. You are drawn as a forward because a shape had to ' +
@@ -481,7 +481,7 @@ const anticipation = {
     // back at him. He is identified by the puck drawn beside him, by `describe` and
     // by the caption. Found by rendering the picture; nothing in the source says it.
     { id: 'P', team: 'opp', pos: 'F', at: D34_CARRIER },
-    { id: 'A', team: 'opp', pos: 'F', at: D34_OPTION, label: 'his option' },
+    { id: 'A', team: 'opp', pos: 'F', at: D34_OPTION, label: 'their option' },
     // A circle. See the caption: the section names nobody, and the shape is a
     // choice the notation forces rather than a claim the prose makes.
     { id: 'F', pos: 'F', at: D34_YOU_NETSIDE, label: 'you, still net-side' },
@@ -514,7 +514,7 @@ const guess = {
   describe:
     'The same end zone and the same instant as the previous diagram, with everything unchanged ' +
     'except where you are. The opposition carrier is still inside the right faceoff circle with the ' +
-    'puck, his teammate is still on the left half-wall, your goalie is still in the crease, and ' +
+    'puck, their teammate is still on the left half-wall, your goalie is still in the crease, and ' +
     'the shaded band still runs from the puck down to the front of the crease — but the band is now ' +
     'empty. You are drawn out in the left faceoff circle, roughly halfway along the line between ' +
     'the two opponents and about twenty-eight feet from each of them, where in the previous frame ' +
@@ -526,7 +526,7 @@ const guess = {
   players: [
     { id: 'G', pos: 'G', at: D34_G },
     { id: 'P', team: 'opp', pos: 'F', at: D34_CARRIER },
-    { id: 'A', team: 'opp', pos: 'F', at: D34_OPTION, label: 'his option' },
+    { id: 'A', team: 'opp', pos: 'F', at: D34_OPTION, label: 'their option' },
     { id: 'F', pos: 'F', at: D34_YOU_JUMPED, label: 'you, gone to the lane' },
   ],
 

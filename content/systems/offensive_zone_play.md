@@ -35,7 +35,7 @@ Goal: You are not trying to take a shot — you are trying to take a shot from a
 Action: Put a body at the net front for every shot, outside the crease, and crash the net for the rebound — decide before the shot, and play the puck, never the goalie
 Priority: Somebody is always above the puck — the high forward is the safety, and a forward fills the line when a defenceman steps down
 Risk: Almost every amateur team can get the puck into the offensive zone; far fewer turn possession there into a dangerous shot
-Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-man rotation, and a 1-3-1 spread with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
+Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 spread with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
 ```
 
 Once you have the puck at the other team's end — [carried or dumped in](zone_entries.md), or [won back on the forecheck](forechecking_systems.md) — the problem changes shape. Almost every amateur team can get the puck down there; far fewer turn it into a dangerous shot. The sections below are the routes to that shot, and the same few habits make all of them work.
@@ -52,7 +52,7 @@ Once you have the puck at the other team's end — [carried or dumped in](zone_e
 
 **Defencemen keep the puck in, and pinch on a read rather than a hope.** Step down when you will arrive as the puck does, the winger is flat-footed, and a forward can cover your spot; otherwise hold, because a late pinch leaves the puck behind you and your forwards below it. On a rim, stop the puck at the line first; if you cannot control it, put it back deep. How often to pinch is your coach's call — ask.
 
-**The shape is a coaching choice.** This document assumes three forwards rotating in a triangle with both defencemen on the blue line. Real teams also play an **overload**, stacking four players on the puck side and giving up the weak-side seam; a **five-man rotation**, where defencemen take forward spots as routine; and a **1-3-1 spread**, common on the power play, with a **bumper** in the middle who is not the net-front player. Nobody has published a count of what teams actually run, so treat any "most teams play X" claim, this one included, as an impression. Find out which yours plays before deciding somebody is out of position.
+**The shape is a coaching choice.** This document assumes three forwards rotating in a triangle with both defencemen on the blue line. Real teams also play an **overload**, stacking four players on the puck side and giving up the weak-side seam; a **five-player rotation**, where defencemen take forward spots as routine; and a **1-3-1 spread**, common on the power play, with a **bumper** in the middle who is not the net-front player. Nobody has published a count of what teams actually run, so treat any "most teams play X" claim, this one included, as an impression. Find out which yours plays before deciding somebody is out of position.
 
 ---
 
@@ -290,7 +290,7 @@ How hard your defencemen fight for the line is a coaching choice. The common def
 
 ```facts
 Convention: If one defenceman leaves the blue line, the other stays — two on the line at all times is this guide's default setup, not a law
-Options: Teams running a five-man rotation, or green-lighting both defencemen, cover with whoever is highest; others leave one on the line, the weak-side defenceman sliding to the middle
+Options: Teams running a five-player rotation, or green-lighting both defencemen, cover with whoever is highest; others leave one on the line, the weak-side defenceman sliding to the middle
 Action: If a defenceman goes below the line and gets the puck, they play as a forward until the play ends — F3 fills in at the blue line
 Action: If a defenceman goes down and does not get the puck, recover defensive position first, then look to attack again
 Never: Chase after a failed activation — that is how odd-man rushes against you start
@@ -299,7 +299,7 @@ Action: Say it out loud — "I'm going", "I've got you", "hold"; silent rotation
 
 These are the rules of the standard setup, with both defencemen on the line, not laws of hockey, and they are short and worth memorising:
 
-- **If one defenceman leaves the blue line, the other stays.** You want two players on the line at all times. This is the standard setup here and the assumption to play on if nobody has told you otherwise; it is widely taught, though nobody has published a count. But teams running a **five-man rotation**, or giving both defencemen a standing green light, deliberately break it and cover the line with whichever player is highest. See the pinch note at the end of section 10 and [Forechecking Systems](forechecking_systems.md).
+- **If one defenceman leaves the blue line, the other stays.** You want two players on the line at all times. This is the standard setup here and the assumption to play on if nobody has told you otherwise; it is widely taught, though nobody has published a count. But teams running a **five-player rotation**, or giving both defencemen a standing green light, deliberately break it and cover the line with whichever player is highest. See the pinch note at the end of section 10 and [Forechecking Systems](forechecking_systems.md).
 - **If a defenceman goes below the line and gets the puck**, they play as a forward until the play ends — and **F3 must fill in at the blue line for them**.
 - **If a defenceman goes down and does *not* get the puck**, their first job is to recover defensive position, then look to attack again. Chasing after a failed activation is how odd-man rushes against you start.
 - **Say it out loud.** "I'm going," "I've got you," "hold." Silent rotations are the ones that leave the blue line empty. See [On-Ice Communication](../foundation/on_ice_communication.md).
@@ -308,14 +308,14 @@ These are the rules of the standard setup, with both defencemen on the line, not
 
 ```facts
 Options: Overload / strong-side load — four players on the puck side, one weak-side outlet; wins board battles, gives up the weak-side seam
-Options: Five-man rotation — defencemen rotate into forward spots and forwards cover the line as routine rather than emergency
+Options: Five-player rotation — defencemen rotate into forward spots and forwards cover the line as routine rather than emergency
 Options: 1-3-1 spread — one at the point, two half-walls, one bumper in the middle, one net front; common on the power play
-Risk: The five-man rotation requires everyone to be comfortable at the blue line
+Risk: The five-player rotation requires everyone to be comfortable at the blue line
 Never: Confuse the bumper with the net-front player — two different jobs at two different depths
 ```
 
 - **Overload / strong-side load.** Four players are loaded onto the puck side, with only one weak-side outlet. Wins board battles and grinds teams down; gives up the weak-side seam and the quick change of point.
-- **Five-man rotation ("position-less" or high cycle).** Defencemen rotate into forward spots and forwards cover the line as a matter of routine rather than emergency. This is how modern NHL teams with skating defencemen play. It requires everyone to be comfortable at the blue line.
+- **Five-player rotation ("position-less" or high cycle).** Defencemen rotate into forward spots and forwards cover the line as a matter of routine rather than emergency. This is how modern NHL teams with skating defencemen play. It requires everyone to be comfortable at the blue line.
 - **1-3-1 spread.** One at the point, two on the half-walls, one **bumper** in the middle of the ice between them, one net front. Common on the power play (see [Special Teams](special_teams.md)) and occasionally used at even strength. **The bumper is not the net-front player** — they are two different jobs at two different depths.
 
 ![](diagram:pp-131)
@@ -899,7 +899,7 @@ This is also the moment most amateur teams stop playing — the shot goes in, ev
 Convention: With three forwards rotating and both defencemen holding the blue line — the default shape this section describes — F3 is the high forward; a coaching choice, not a law
 Position: Be the safety — at or near the top of the circle, so a rebound straight out is yours and a counter-attack has to go through you
 Action: Cover the vacated point if a defenceman activates — F3 takes the blue line in this guide's default setup, which wants two on the line
-Options: Under a five-man rotation whichever player is highest covers; a third variant slides the weak-side defenceman across to the middle instead
+Options: Under a five-player rotation whichever player is highest covers; a third variant slides the weak-side defenceman across to the middle instead
 Read: If the rebound squirts to the high slot, jump — you are the closest player with forward momentum
 Position: The other two forwards go to the net — one to the front for the screen and tip, one hunting the strong-side rebound
 ```
@@ -907,7 +907,7 @@ Position: The other two forwards go to the net — one to the front for the scre
 In the standard setup, **F3 is the high forward** and their responsibilities on a shot are, in order:
 
 1. **Be the safety.** Sit at or near the top of the circle so a rebound that comes straight out is yours, and so a counter-attack has to go through you.
-2. **Cover the vacated point if a defenceman activates.** If the strong-side defenceman pinches or dives to the middle, **F3 takes the blue line** — in the standard setup described earlier, which wants two players on the line at all times. This is a coaching choice, and a common alternative is the **five-man rotation**, where nobody has a fixed line job and whichever player is highest at that moment covers, defenceman or forward. A third variant simply accepts one player on the line while the D is down and asks the *weak-side* defenceman to slide across to the middle instead. Find out which your team plays — the shape described in section 3 is a default, not a law.
+2. **Cover the vacated point if a defenceman activates.** If the strong-side defenceman pinches or dives to the middle, **F3 takes the blue line** — in the standard setup described earlier, which wants two players on the line at all times. This is a coaching choice, and a common alternative is the **five-player rotation**, where nobody has a fixed line job and whichever player is highest at that moment covers, defenceman or forward. A third variant simply accepts one player on the line while the D is down and asks the *weak-side* defenceman to slide across to the middle instead. Find out which your team plays — the shape described in section 3 is a default, not a law.
 3. **Read the rebound and jump.** If the puck squirts to the high slot, you are the closest player with forward momentum. That is a high-danger chance handed to you.
 
 The other two forwards go **to the net**: one to the front for the screen and tip, one hunting the strong-side rebound.
@@ -1063,7 +1063,7 @@ This is the part most players never think about. From the perimeter, **you are n
 Key: Your job is not to shoot harder, it is to shoot through — point shots are blocked more than shots from anywhere else on the ice
 Technique: Walk the line first — skate sideways along the blue line toward the middle until the shot-blocker has to move their feet, then release from the new angle
 Technique: Change the release point — a quick snap from a different spot beats a blocker who has already dropped
-Technique: Take something off it — a slower, lower shot that gets through and gets tipped beats a 95 mph slapshot into a shin pad; in a CARHA league a slapshot is a minor anyway, an ejecting major if it injures
+Technique: Take something off it — a slower, lower shot that gets through to be tipped beats a 95 mph slapshot into a shin pad; in CARHA a slapshot is a minor; if it injures, ejection and at least a one-game ban
 Options: Fake the shot — a blocker on the ice opens the lane for the real one, or the seam pass; a faked slap shot can be a CARHA minor, so sell it with your shoulders
 Options: Take the D-to-D first — it drags both the blocker and the goalie, and you shoot into a lane just vacated
 ```
@@ -1072,7 +1072,7 @@ Point shots are blocked more than shots from anywhere else on the ice. If you ar
 
 - **Walk the line first.** Skating sideways along the blue line toward the middle changes the angle and moves the shot-blocker's feet. A defenceman who receives and fires from the same spot is shooting at a stationary wall. How far is feel rather than a measurement — go until the blocker has to move, which is usually a step or two.
 - **Change the release point.** A quick snap shot from a different spot than the one they set up for beats a blocker who has already dropped.
-- **Take something off it.** A deliberately slower, lower shot that gets through and gets tipped beats a 95 mph slapshot into a shin pad, every time. **In a CARHA league, shoot with a short backswing:** that book's Rule 79 makes any backswing past fifteen inches a slap shot — a minor, and a major if it injures, which ejects you (Rule 30(a)).
+- **Take something off it.** A deliberately slower, lower shot that gets through and gets tipped beats a 95 mph slapshot into a shin pad, every time. **In a CARHA league, shoot with a short backswing:** that book's Rule 79 makes any backswing past fifteen inches a slap shot — a minor, and a major if it injures, which ejects you and sits you out at least the next game (Rules 30(a) and 32(d)).
 - **Fake the shot.** A shot fake that puts a blocker on the ice opens the lane for the real one, and often opens the seam pass instead. In a CARHA league a faked slap shot can be a minor under Rule 79(b), so sell the fake with your shoulders and eyes rather than the backswing.
 - **Take the D-to-D first.** Moving it across the top drags both the blocker and the goalie, and you shoot into a lane that has just been vacated.
 
@@ -1095,7 +1095,7 @@ Full treatment of the draw itself — technique, stick placement, the violations
 ```facts
 Key: The point of a set play is that four players start moving on the drop, before anyone knows who won it
 Options: Win back to the point and screen immediately — inside winger straight to the net front, outside winger to the strong-side rebound spot
-Options: Win back to a winger set up for a one-timer — set as a shooter before the drop, not as a defender; under CARHA a backswing past fifteen inches is a slap shot, a minor, and an ejecting major on injury
+Options: Win back to a winger set for a one-timer — a shooter before the drop, not a defender; in CARHA a backswing past fifteen inches is a slap-shot minor; if it injures, ejection and at least a one-game ban
 Options: Win it forward — attack directly; high reward, but it puts your centre below the puck and fails badly if the draw is lost
 Options: Lift or press their centre's stick with yours — the stick, never the hands — then play the puck for a winger to sweep in on; never hook their stick, hold it down or grab it. Best on a dominant centre
 Options: Delay for the screen — the defenceman skates laterally for a beat first; a shot half a second late with a screen beats one on time without
@@ -1106,7 +1106,7 @@ Never: Reach the whistle without everyone knowing the play — the common failur
 The point of a set play is that four players start moving on the drop, before anyone knows who won it. Common families:
 
 - **Win back to the point, screen immediately.** The centre draws the puck back to the strong-side defenceman; the inside winger goes straight to the net front to screen; the outside winger takes the strong-side rebound position. Simplest, most reliable, and it converts because everyone was already moving.
-- **Win back to the winger for a one-timer.** The centre draws it back to a winger set up in the shooting position (usually a left shot on the right circle, or vice versa) who shoots first-time. Requires the winger to be aligned as a shooter before the drop, not as a defender. Keep the backswing short — in a CARHA league, a backswing past fifteen inches makes it a slap shot: a minor penalty, and a major that ends your game if it injures an opponent.
+- **Win back to the winger for a one-timer.** The centre draws it back to a winger set up in the shooting position (usually a left shot on the right circle, or vice versa) who shoots first-time. Requires the winger to be aligned as a shooter before the drop, not as a defender. Keep the backswing short — in a CARHA league, a backswing past fifteen inches makes it a slap shot: a minor penalty, and a major that ends your game, and at least the next, if it injures an opponent.
 - **Win it forward / "quick strike."** The centre draws the puck forward or to the inside and attacks directly. High reward if the opposing centre is slow to react, but it puts your centre below the puck and it fails badly if the draw is lost.
 - **Lift their stick and let a winger take it.** The centre does not try to win the puck cleanly but lifts or presses the opposing centre's stick with their own — the stick, never the opposing centre's hands — then plays the puck for a winger to sweep in on — never hooking it, holding it down or grabbing it with a hand. Useful when the opposing centre is dominant on draws. Watch the **encroachment** rule — a winger creeping into the circle before the drop gets your *centre* thrown out of the draw.
 - **Delay for the screen.** The defenceman receives the win but skates laterally for a beat before shooting, giving the net-front player time to establish. A shot half a second late with a screen beats a shot on time without one.
@@ -1150,7 +1150,7 @@ The general principle is worth stating plainly: **having a defined assignment fo
 - **Holding your position when the goalie leans into you.** **Give ground the moment they make that contact, then re-set the screen outside the crease, both skates off the red line.** Under the NHL, the IIHF and the PWHL, holding your spot costs the goal if one is scored and a minor if not.
 - **Treating the rebound carve-out as a licence to move the goalie.** **In a scramble, play the puck, not the goalie, and never finish a shove that carries them into the net.** ⚠️ **The most any book forgives is incidental contact in a race for a loose puck you are both making, and several forgive none of it** — push the goalie in with the puck and expect the goal to come off. [Rebounds, loose pucks and being pushed into the goalie](#rebounds-loose-pucks-and-being-pushed-into-the-goalie) sets out each book.
 - **Tipping with a high stick, assuming the ceiling is the crossbar wherever you play.** **Keep the blade on the ice, where most tippable pucks are anyway.** The ceiling is the crossbar in some books and your shoulder in others, so find out. ⚠️ **And the moment the blade reaches a person it is a high-sticking penalty, which no book caps at a minor.** [Tips and deflections](#tips-and-deflections) sets out each book's ceiling.
-- **Two defencemen leaving the blue line at once, when nobody called for it.** **Somebody stays above the puck: if your partner has gone, you hold the line, or a forward fills in.** [Defending the Rush](defending_the_rush.md) calls this the subtlest way a team manufactures an odd-man rush against itself, because nothing looks wrong until the puck turns over. **Both going is not always the error:** a five-man rotation, a standing green light, a full-ice press, a delayed penalty or a 6-on-5 sends both on purpose. Unless one is on, look for your partner before you go.
+- **Two defencemen leaving the blue line at once, when nobody called for it.** **Somebody stays above the puck: if your partner has gone, you hold the line, or a forward fills in.** [Defending the Rush](defending_the_rush.md) calls this the subtlest way a team manufactures an odd-man rush against itself, because nothing looks wrong until the puck turns over. **Both going is not always the error:** a five-player rotation, a standing green light, a full-ice press, a delayed penalty or a 6-on-5 sends both on purpose. Unless one is on, look for your partner before you go.
 - **Pinching without arriving on contact.** **Go only when you will arrive as the puck does and a forward can cover your line; otherwise hold.** Take the puck, or — where your league permits body checking — the player. Half-hearted pinches create 3-on-2s the other way. ⚠️ **Arrive while they still have the puck:** a check after it has gone is a late hit, which no book caps at a minor, and under USA Hockey any avoidable check on a player who has released the puck is a penalty. [The defenceman's pinch](#the-defencemans-pinch) sets out each book's window.
 - **Pinching in as a check onto a battle your teammate is already in.** **Arrive beside your teammate, seal the wall rather than the opponent's body, keep your arms, stick and skates out of it, and if you end up behind them, play the puck.** ⚠️ **Under USA Hockey a player engaged in a puck battle may not be body checked at all, at any level, anywhere on the ice — a reckless one ejects you, and so does a skate used to push off them, which costs you the next game too.**
 - **Accelerating into the arrival.** **Get the speed on the way in and your feet under you for the last two or three strides.** ⚠️ **Building speed into the contact is charging, and no stride count is a safe harbour** — every book calls jumping into a check — and a charge that injures ends your game under Hockey Canada and CARHA and can in the rest, and under USA Hockey no charge is two minutes and nothing else. [Sealing and arriving](#sealing-and-arriving-where-the-rules-bite) sets out each book's count and tier.

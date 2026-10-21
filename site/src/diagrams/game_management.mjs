@@ -248,7 +248,7 @@ const sixOnFivePinch = {
 
   caption:
     'A 6-on-5 with your goalie pulled, at the moment one point man steps down the wall to keep a ' +
-    'puck in and the other does not go with him. That is the rule the shape lives by: the point men ' +
+    'puck in and the other does not go with them. That is the rule the shape lives by: the point men ' +
     'do not both pinch, because your own net is empty at the far end, so a puck past both of them is ' +
     'not a rush against you but a clear path to an empty net. The one who stays is the whole ' +
     'insurance policy. Only the defender the pinch is aimed at is drawn. Which point man pinches, ' +
@@ -266,7 +266,7 @@ const sixOnFivePinch = {
     'wall, about twenty feet up-ice of the own player on that half-wall. A single route runs ' +
     'from the right-hand point man down and out toward the wall, ending in two bars — arrive ' +
     'and contain — on a patch of boards up-ice of the opposition skater and about nine feet ' +
-    'clear of him. The left-hand point man has no route at all: he is standing still, and ' +
+    'clear of them. The left-hand point man has no route at all: they are standing still, and ' +
     'that is the point of the picture. Their other four skaters are not drawn, and your own ' +
     'net, empty, is at the far end of the ice and outside this picture.',
 
@@ -433,7 +433,7 @@ const clearAtFiveOnSix = {
     'is icing. A blind clear to their point man hands it back at your own blue line. Only the player ' +
     'with the puck, one of their point men and the two nets are drawn. ⚠️ And you can be iced against ' +
     'a pulled goalie: six players against six is equal strength and not below it, and NHL Rule ' +
-    '81.3 says an icing should not be nullified merely because their goalie was on his way to the ' +
+    '81.3 says an icing should not be nullified merely because their goalie was on the way to the ' +
     'bench for an extra attacker. Under the NHL and the IIHF that whistle brings the draw back to ' +
     'your own end, lets the attacking team pick the dot, and leaves you unable to change and unable ' +
     'to take a time-out at all. Rule 81.4 does list exceptions, but read which ones: an injured ' +
@@ -447,7 +447,7 @@ const clearAtFiveOnSix = {
   describe:
     'The full sheet. Your own net is at the left with your goalie in the crease; the ' +
     'opposition net at the right is empty, with no goalie drawn. One own player has the ' +
-    'puck deep in his own end, inside the right-hand faceoff circle and up toward the boards. ' +
+    'puck deep in your own end, inside the right-hand faceoff circle and up toward the boards. ' +
     'One opposition defenceman stands at the left-hand point, up at the blue-line end of your ' +
     'own zone. Three routes leave the puck carrier, and all three are drawn as shots in the ' +
     'double-line notation. One runs the length of the ice and finishes inside the empty net. ' +
@@ -711,7 +711,7 @@ const delayedPenalty = {
     'defencemen has the puck low in the right-hand corner; your other ' +
     'defenceman is across in the left-hand corner. A single opposition forward is in the right ' +
     'corner as well, inside the puck carrier and toward the middle of the ice. One dashed passing ' +
-    'route leaves the puck carrier and runs to his partner. It curves out and around the ' +
+    'route leaves the puck carrier and runs to the other defenceman. It curves out and around the ' +
     'back of the goal, running four to six feet past the goal line for the whole of its middle ' +
     'third and never entering the crease. No route is drawn across the front of the goal, ' +
     'deliberately: the blind pass across your own goal mouth is described in words and not drawn. The ' +
@@ -874,9 +874,9 @@ const overtimeRegroup = {
     'opposition net is at the right with their goalie in theirs. Three own skaters and three ' +
     'opposition skaters are drawn and no more, which is the whole strength of both teams here. ' +
     'Your puck carrier, a forward, is about twelve feet inside the opposition blue line on the ' +
-    'upper side of the ice, with the puck drawn just below him on the up-ice side, away from the ' +
+    'upper side of the ice, with the puck drawn just below them on the up-ice side, away from the ' +
     'checker. All ' +
-    'three opposition skaters are between him and their own net: a forward inside him and a ' +
+    'three opposition skaters are between the carrier and their own net: a forward inside the carrier and a ' +
     'little deeper, a defenceman in the middle of the ice halfway to the tops of the circles, and ' +
     'a second forward on the far side at the top of the far faceoff circle. Your two supports ' +
     'are spread rather than stacked: a forward wide and low in the neutral zone on the far side, ' +

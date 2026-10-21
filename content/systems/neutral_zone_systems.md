@@ -601,7 +601,7 @@ Read: The pass back is not clean — a regroup into pressure is just a turnover 
 ```
 
 - **When you have numbers.** Take a developing 3-on-2. A regroup that throws away an odd-man rush is not clever hockey.
-- **When your change is due.** A regroup on tired legs means entering the zone with nothing left. Sometimes the right play is a hard dump past the red line and a change — a legitimate tactic, not a failure; see [Game Management](game_management.md). In a CARHA league keep the backswing short: past fifteen inches that book's Rule 79 makes it a slap shot — a minor, and a major if it injures, which ends your game (Rule 30(a)).
+- **When your change is due.** A regroup on tired legs means entering the zone with nothing left. Sometimes the right play is a hard dump past the red line and a change — a legitimate tactic, not a failure; see [Game Management](game_management.md). In a CARHA league keep the backswing short: past fifteen inches that book's Rule 79 makes it a slap shot — a minor, and a major if it injures, which ends your game and sits you out at least the next one (Rules 30(a), 32(d)).
 - **When the pass back is not clean.** A regroup into pressure is a turnover in a worse place — [Risk Management](../hockey-iq/risk_management.md) maps where that costs most.
 
 ---
@@ -745,7 +745,7 @@ A trap hands you the puck and defends the ice instead, so possession alone tells
 
 **1. Move the puck faster than they can slide.** A wall of four defends one side at a time and cannot re-form faster than a hard pass travels. Two quick passes, D-to-D or wall-middle-wall, beat five skaters sliding. **A trap beats teams that carry the puck; it does not beat teams that pass it.**
 
-**2. Use the boards deliberately.** A hard rim or a chip off the wall goes past a defender playing the ice, not the boards. Chipping it along the wall to a forward arriving behind the pressure is unglamorous and very effective, especially against F2 stepping up on your winger. **In a CARHA league, rim it with a short backswing:** CARHA's Rule 79 makes any backswing past fifteen inches a slap shot — a minor, and a major if it injures, which ejects you (Rule 30(a)).
+**2. Use the boards deliberately.** A hard rim or a chip off the wall goes past a defender playing the ice, not the boards. Chipping it along the wall to a forward arriving behind the pressure is unglamorous and very effective, especially against F2 stepping up on your winger. **In a CARHA league, rim it with a short backswing:** CARHA's Rule 79 makes any backswing past fifteen inches a slap shot — a minor, and a major if it injures, which ejects you and sits you out at least the next game (Rules 30(a), 32(d)).
 
 **That play sends the receiver onto a puck on the boards with a defender closing** — in most structures above the strong-side defenceman's job is to step up hard on a pass to the wall, so expect to be met. ⚠️ **Never turn your back to the checker, and never duck.** Get your **skates parallel to the boards**, forearm and hip to the wall, head up and chin off your chest — **not the point of your shoulder, and not the whole shoulder if you can help it.** **This holds in a non-checking league too:** the wall does not need an opponent to hurt you, and a legal angle-off puts you into it just as a check does. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full rule and the evidence.
 

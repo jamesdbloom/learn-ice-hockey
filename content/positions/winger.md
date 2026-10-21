@@ -109,7 +109,7 @@ Goal: Don't lose the puck in a dangerous position. Get it to safety
 
 **Where to be:** Against the boards, protecting the puck with your body.
 
-**What to do:** Shield the puck from the pressuring opponent. Look for your centre swinging low or your defenceman as a safe outlet. If no pass is available, **rim** the puck (a hard shot along the boards that follows the curve of the rink onward to a teammate further around) away from danger, or **reverse** it (send it back the way it came, against the direction the pressure is flowing) to a teammate arriving behind you. In a CARHA league keep the rim's backswing under fifteen inches: past that it is a slap shot, a minor, and a major that ends your game if it injures an opponent.
+**What to do:** Shield the puck from the pressuring opponent. Look for your centre swinging low or your defenceman as a safe outlet. If no pass is available, **rim** the puck (a hard shot along the boards that follows the curve of the rink onward to a teammate further around) away from danger, or **reverse** it (send it back the way it came, against the direction the pressure is flowing) to a teammate arriving behind you. In a CARHA league keep the rim's backswing under fifteen inches: past that it is a slap shot, a minor, and if it injures an opponent a major that ends your game and sits you out at least the next one.
 
 **Rim and reverse are opposite plays and you pick by where the pressure is.** A rim beats a checker who is sealing you against the boards, because it goes *past* them. A reverse beats a checker who has over-committed and skated past you, because it goes back into the space they just left.
 

@@ -373,7 +373,7 @@ const forcingThemOutside = {
     'Forcing a carrier outside, your net at the right. Read the defenceman, not the route: ' +
     'inside the carrier and nearer your goal at the instant drawn — the whole difference ' +
     'from getting beaten wide. No gap distance and no retreat are drawn. ' +
-    '⚠️ Steering with the route you skate is legal. Riding him into the wall with your body ' +
+    '⚠️ Steering with the route you skate is legal. Riding the carrier into the wall with your body ' +
     'is a body check — barred outright in many classifications by USA Hockey 604 and Hockey ' +
     // W33: 101.1's last paragraph added — "Any move by a Player to step or glide into an opposing
     // Player will be assessed at least a minor penalty (2') for an 'illegal hit'"
@@ -387,7 +387,7 @@ const forcingThemOutside = {
     'The defending half of the rink, your own net at the right, your blue line at the left. ' +
     'Two skaters and a goalie. An opposition forward carries the puck about fifteen feet ' +
     'inside your blue line, wide on the right-hand side, with the puck on the boards side of ' +
-    'his body. Your defenceman stands about nine feet from him, both nearer the middle of ' +
+    'their body. Your defenceman stands about nine feet from the carrier, both nearer the middle of ' +
     'the ice and nearer your own net — that is, on the inside and on the defensive side. One ' +
     'route is drawn, the carrier’s: a wave bowing gently outward toward the boards and ' +
     'finishing out on the wall a few feet short of the faceoff dot line and about four feet ' +
@@ -425,10 +425,10 @@ const gettingBeatenWide = {
   // the deixis the style guide forbids outright; the situation is named instead.
   caption:
     'Getting beaten wide, your net at the right: the carrier is past the defenceman’s ' +
-    'outside shoulder with nobody between him and the net. Same square foot of ice and the ' +
-    'same lane as when he is forced outside — the defenceman, eighteen feet up, is the only ' +
+    'outside shoulder with nobody between them and the net. Same square foot of ice and the ' +
+    'same lane as when they are forced outside — the defenceman, eighteen feet up, is the only ' +
     'thing that moved. The route is not redrawn to the net on purpose: a still picture ' +
-    'cannot draw "whenever he chooses". ' +
+    'cannot draw "whenever they choose". ' +
     '⚠️ Chasing from behind, your stick goes on the puck and nothing else — a hook, trip, ' +
     'hold or slash that denies the chance is a penalty shot under the NHL and IIHF, and USA ' +
     'Hockey 616(a) and Hockey Canada 4.12(a) are narrower. All four carry conditions.',
@@ -437,13 +437,13 @@ const gettingBeatenWide = {
     'The defending half of the rink, your own net at the right, your blue line at the left. ' +
     'The same two skaters and goalie as the diagram before, and the opposition carrier ' +
     'stands in exactly the same place, wide on the right-hand side about fifteen feet inside ' +
-    'your blue line, with the puck on the boards side of his body. He skates the same route ' +
+    'your blue line, with the puck on the boards side of their body. They skate the same route ' +
     'as in that diagram, and it is the only route drawn: a wave bowing gently outward toward ' +
     'the boards and finishing out on the wall a few feet short of the faceoff dot line. ' +
-    'Your defenceman has moved, and he is the only player who has: he is now eighteen feet ' +
+    'Your defenceman has moved, and is the only player who has: the defenceman is now eighteen feet ' +
     'further up the ice, back toward your blue line, so the carrier is about eleven feet ' +
-    'past him toward the net and six feet outside him, with the whole end of the rink ' +
-    'behind him empty. The defenceman has no route drawn. Your goalie is in the crease. ' +
+    'past them toward the net and six feet outside them, with the whole end of the rink ' +
+    'behind them empty. The defenceman has no route drawn. Your goalie is in the crease. ' +
     'Nothing in the picture shows contact.',
 
   players: [

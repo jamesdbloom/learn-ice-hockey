@@ -191,14 +191,14 @@ const executionDrill = {
     'read out ' +
     'is what makes a skill practisable, and this is not a bad drill; ' +
     'what it cannot train is the choice. The next frame adds one player, and the pass route ' +
-    'goes with him. Which drills your team runs is your coach’s decision ' +
+    'goes with them. Which drills your team runs is your coach’s decision ' +
     'rather than a rule of hockey — so if a drill’s purpose is not obvious, ask.',
 
   describe:
     'The attacking half of the rink, the net at the right with the opposing goalie in the ' +
     'crease. Two own ' +
     'players and no opposition skaters. One stands inside the right faceoff circle above the dot ' +
-    'with the puck drawn beside him, and a dashed passing route runs from him across the ice and ' +
+    'with the puck drawn beside them, and a dashed passing route runs from them across the ice and ' +
     'down to the second, who stands in front of the net a little to the far side and about six feet ' +
     'clear of the crease. Nothing else is drawn: no defender, no ' +
     'other route, and no cone.',
@@ -254,7 +254,7 @@ const decisionDrill = {
     'The same attacking half and the same instant as the previous diagram, with everything unchanged ' +
     'except that one opposition player has been added and the pass route has gone. Your own two ' +
     'players are where they were — ' +
-    'one inside the right faceoff circle with the puck beside him, one in front of the net — and ' +
+    'one inside the right faceoff circle with the puck beside them, one in front of the net — and ' +
     'the opposing goalie is in the crease. The opposition forward stands squarely on the line ' +
     'between ' +
     'the two of them, about twenty-three feet from the puck carrier and about fourteen from the ' +
@@ -395,8 +395,8 @@ const theLine = {
     'The full two-hundred-foot sheet, with no opposition and no goalie drawn. Five own skaters ' +
     'stand in a row along the upper boards at the far end, evenly spaced about eight feet apart, ' +
     'from level with the far faceoff dot up toward the far blue line. A sixth own skater is out in ' +
-    'the neutral zone above the middle with the puck beside him, and a wavy route — the mark for ' +
-    'skating with the puck — runs from him about fifty feet up the ice, finishing just inside the ' +
+    'the neutral zone above the middle with the puck beside them, and a wavy route — the mark for ' +
+    'skating with the puck — runs from them about fifty feet up the ice, finishing just inside the ' +
     'attacking blue line and toward the middle. Nobody else is drawn and nothing else is moving.',
 
   players: [
@@ -491,7 +491,7 @@ const smallAreaGame = {
     'attack. Nobody is queuing. ' +
     'Every one of the six is in the play, none of them more than about forty-five feet from the ' +
     'puck, and there is a ' +
-    'live opponent who has not been told what he is going to do — which is precisely the ' +
+    'live opponent who has not been told what they are going to do — which is precisely the ' +
     // ⚠️ THE ROUTE SENTENCE AND ITS SAFETY SENTENCE MOVED TO THE END AS A PAIR, AND THEY
     // HAVE TO MOVE TOGETHER. The glyph used to sit a third of the way in, so the amber band
     // ran 1,416 characters: it opened on the contact caveat and then painted ~1,100
@@ -515,9 +515,9 @@ const smallAreaGame = {
     'decision-making is highly plausible, near-universally believed by coaches and consistent with ' +
     'the theory, but it is genuinely under-tested, so use them and do not go quoting research you ' +
     'do not have. One of the six is already ' +
-    'closing on the puck carrier on the wall, and his route ends in two short bars rather than an ' +
-    'arrowhead, meaning he arrives and contains rather than skating through. ⚠️ That is the only ' +
-    'thing the picture says about how he arrives, and it is deliberate: how hard anyone may compete ' +
+    'closing on the puck carrier on the wall, and their route ends in two short bars rather than an ' +
+    'arrowhead, meaning they arrive and contain rather than skating through. ⚠️ That is the only ' +
+    'thing the picture says about how they arrive, and it is deliberate: how hard anyone may compete ' +
     'for a puck, and whether body checking is permitted at all, depends on your age group, your ' +
     'league and the book they play under, and no diagram can tell you that.',
 
@@ -526,10 +526,10 @@ const smallAreaGame = {
     'the blue line and the rest of the ice empty. Three own skaters, three opposition skaters and ' +
     'one goalie. ' +
     'One of yours has the puck on the right half-wall, level with the faceoff dot, with the puck ' +
-    'drawn just below him; one is low in the slot on the far side of the middle; one is high, just ' +
+    'drawn just below them; one is low in the slot on the far side of the middle; one is high, just ' +
     'inside the blue line. An opposition player is about nine feet above the top of the right ' +
     'faceoff circle, on the blue-line side of it, with a ' +
-    'route running out toward the carrier on the wall: it stops about seven feet short of him and ' +
+    'route running out toward the carrier on the wall: it stops about seven feet short of them and ' +
     'ends in two short bars rather than an arrowhead. A second opposition player stands in front of ' +
     'the net, about nine feet clear of the crease, and a third stands high near the blue line ' +
     'beside your own high player. The opposing goalie is in the crease. That is the only route ' +

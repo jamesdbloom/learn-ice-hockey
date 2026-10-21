@@ -116,10 +116,10 @@ const attackTheSeam = {
     'band, labelled "the seam", runs from the gap between the two of them toward the net, ' +
     'ending level with the tops of the faceoff circles. Three own players are drawn as open ' +
     'circles: the puck carrier coming up the middle from near centre ice, with the puck on ' +
-    'his stick and a skate-and-stickhandle route that ends inside the mouth of the shaded ' +
-    'band, and two teammates wide on either side, a little ahead of him, with no routes ' +
+    'their stick and a skate-and-stickhandle route that ends inside the mouth of the shaded ' +
+    'band, and two teammates wide on either side, a little ahead of the carrier, with no routes ' +
     'drawn. ' +
-    'The opposition goalie is in his crease.',
+    'The opposition goalie is in the crease.',
 
   zones: [
     {
@@ -248,9 +248,9 @@ const denyTheReception = {
     'players are drawn as solid circles: one on the boards level with the faceoff dot with ' +
     'the puck, and one in the middle of the ice level with the faceoff dots, in the high ' +
     'slot. A dashed passing route runs from the first to the second, stopping just short of ' +
-    'him. One own player, an open circle, stands between the receiver and your net and a ' +
-    'little to the puck side; his route curves out toward the receiver and ends in two short ' +
-    'bars across the line, about six feet short of him, on the net side. It does not cross ' +
+    'the receiver. One own player, an open circle, stands between the receiver and your net and a ' +
+    'little to the puck side; their route curves out toward the receiver and ends in two short ' +
+    'bars across the line, about six feet short of the receiver, on the net side. It does not cross ' +
     'the passing lane at any point. The two routes are drawn as one instant rather than as a ' +
     'sequence, and neither is numbered.',
 
@@ -349,14 +349,14 @@ const showAShoulder = {
   caption:
     'Space created in the defender’s mind before it exists on the ice. The carrier’s line is ' +
     'aimed at the inside shoulder, the one toward the middle of the ice; ' +
-    'the defenceman closes the middle — the shaded band — and the ice between him and the ' +
+    'the defenceman closes the middle — the shaded band — and the ice between them and the ' +
     'boards is what opens. ' +
     'The mirror is not drawn here, but it works the ' +
     'same way: skate at the outside shoulder, the defenceman widens, and the middle opens ' +
-    'instead. The line stops well short of him and no contact is drawn. Two honest ' +
+    'instead. The line stops well short of the defenceman and no contact is drawn. Two honest ' +
     'limits. A defender who does not ' +
     'bite gives you nothing, so read this as a defender who moved and not as a ' +
-    'promise that he will; and deception costs you a beat, so with two forecheckers closing ' +
+    'promise that they will; and deception costs you a beat, so with two forecheckers closing ' +
     'and your back to the boards, fake nothing and make the simple play. Nothing here is ' +
     'painted on the ice: the band’s sides are the two faceoff-dot lines, and its ends are ' +
     'drawn only so the shading has an edge — the middle is a lane running the length of the ' +
@@ -365,14 +365,14 @@ const showAShoulder = {
   describe:
     'The attacking half of the rink, the opposition net at the right, the attack moving left ' +
     'to right. One own player, an open circle, carries the puck wide on the upper side of ' +
-    'the ice near centre ice. One opposition defenceman, a solid triangle, is between him ' +
+    'the ice near centre ice. One opposition defenceman, a solid triangle, is between them ' +
     'and the blue line, out toward the same side and a few feet outside the faceoff-dot ' +
     'line. The carrier’s skate-and-stickhandle route runs toward the defenceman’s ' +
     'inside shoulder — the side nearer the middle of the ice — and stops on the blue line, ' +
-    'about eleven feet short of him. A shaded band labelled "the middle" fills the centre of ' +
+    'about eleven feet short of them. A shaded band labelled "the middle" fills the centre of ' +
     'the zone, its sides on the two faceoff-dot lines and its ends at the blue line and the ' +
     'tops of the faceoff circles. A second route runs from the defenceman inward, about ' +
-    'eleven feet, ending inside that band. The opposition goalie is in his crease.',
+    'eleven feet, ending inside that band. The opposition goalie is in the crease.',
 
   zones: [
     {

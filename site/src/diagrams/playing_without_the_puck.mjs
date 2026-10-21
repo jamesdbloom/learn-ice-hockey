@@ -87,8 +87,8 @@ const stickLaneBodyNet = {
   // it — and the "relationship, not a spot" gloss, compressed to "one instant".
   caption:
     'Your own end, your net at the right: an opponent has the puck on the half-wall, and the ' +
-    'shaded band is the passing lane to the man you are covering. ' +
-    'Your body is not in it — you are on the goal side of him, between him and your net. ' +
+    'shaded band is the passing lane to the player you are covering. ' +
+    'Your body is not in it — you are on the goal side of them, between them and your net. ' +
     'Blade in the lane and body net-side are two tools, not one; this notation has no stick ' +
     'symbol, so only the body is drawn. ' +
     'Read it as one instant, not a spot on the ice. Where you cannot do both, net-side wins in ' +
@@ -97,9 +97,9 @@ const stickLaneBodyNet = {
   describe:
     'One end zone, the net at the right, defended by your own goalie in the crease. Two ' +
     'opposition players: one with the puck on the right half-wall, level with the faceoff dot, ' +
-    'and one in the low slot, the man you are covering. You are drawn as a defender roughly ' +
-    'eight feet from him, on the goal side, between him and the net, and about eight feet clear ' +
-    'of the shaded band. The shaded band runs from the puck down to the man in the low slot and ' +
+    'and one in the low slot, the player you are covering. You are drawn as a defender roughly ' +
+    'eight feet from them, on the goal side, between them and the net, and about eight feet clear ' +
+    'of the shaded band. The shaded band runs from the puck down to the player in the low slot and ' +
     'is labelled "the lane". No routes are drawn: nobody moves in this picture. Sticks are not ' +
     'drawn, because the notation has no symbol for one.',
 
@@ -287,7 +287,7 @@ const unmarkedNotAvailable = {
     'The attacking zone, a teammate carrying the puck on the half-wall and you alone in the ' +
     'high slot: the nearest defender is a good ten feet away, and you are still not available. ' +
     'The shaded band is the only line the puck can travel to your blade, and a defenceman has ' +
-    'laid his stick flat across it — the requirement your own position cannot tell you about. ' +
+    'laid their stick flat across it — the requirement your own position cannot tell you about. ' +
     'The stick is not drawn; this notation has no symbol for one. ' +
     'The fix is three or four feet sideways until the angle opens, a change too small to draw ' +
     'as a second band.',
@@ -297,7 +297,7 @@ const unmarkedNotAvailable = {
     'right half-wall. You stand in the high slot, level with the faceoff dots, with nobody ' +
     'marking you. A shaded band runs straight down the ice between the two of you: it is the ' +
     'passing lane. An opposition defenceman stands about six feet to one side of it and about ' +
-    'ten feet from you; his stick, which is not drawn, is what lies across the lane. No routes ' +
+    'ten feet from you; their stick, which is not drawn, is what lies across the lane. No routes ' +
     'are drawn.',
 
   zones: [
@@ -432,7 +432,7 @@ const screenSightline = {
 
   describe:
     'The attacking end zone, the opposition net at the right with its goalie in the crease, ' +
-    'positioned on his angle. One of your players stands at the right point with the puck. A ' +
+    'positioned on their angle. One of your players stands at the right point with the puck. A ' +
     'narrow shaded wedge, labelled "the sightline", runs from the puck down to the goalie, ' +
     'widening as it goes. A second player of yours stands inside that wedge about eight feet in ' +
     'front of the goalie and clear of the crease. No routes are drawn: no shot, and no ' +
@@ -512,7 +512,7 @@ const widthMakesTheMiddle = {
   // with BOTH of its named alternatives, is 40 of the remaining words and stays whole.
   caption:
     'A three-on-two just inside the attacking blue line, drawn for what the two players without ' +
-    'the puck are doing: each winger holds his width near the boards, which keeps a defenceman ' +
+    'the puck are doing: each winger holds their width near the boards, which keeps a defenceman ' +
     'out on each side, and the middle drive goes through the gap that opens between them. ' +
     'Neither wide forward touches the puck on this rush, and their width is what made that lane ' +
     'exist. ' +
@@ -525,7 +525,7 @@ const widthMakesTheMiddle = {
     'The attacking half of the sheet, the opposition net and goalie at the right. Three of ' +
     'your forwards have just crossed the blue line: one carrying the puck up the middle with a ' +
     'route driving further into the zone, and one on each side near the boards, each behind the ' +
-    'puck and each with a short route straight up the wall that keeps his width. Two opposition ' +
+    'puck and each with a short route straight up the wall that keeps their width. Two opposition ' +
     'defenders are drawn ahead of them, one on each side, held out toward their wingers, with a ' +
     'wide gap between them that the middle carrier is driving into. Your defencemen are not ' +
     'drawn.',
@@ -647,7 +647,7 @@ const driveTheNetBefore = {
     'The first of two frames a beat apart, in the attacking end with the opposition net at the ' +
     'right: you are skating hard at the net without the puck, and the defender you are about to ' +
     'pull is still high, standing in the high slot. ' +
-    'That ice is deliberately not shaded here, because it is not open yet: the man who has to ' +
+    'That ice is deliberately not shaded here, because it is not open yet: the defender who has to ' +
     'leave it has not left it. ' +
     'The drive has to be genuine, so read the arrow as effort rather than as a path. It stops ' +
     'more than twenty feet short of the goalmouth and off the defender’s line on purpose: what ' +
@@ -701,22 +701,22 @@ const driveTheNetAfter = {
   caption:
     'A net drive a beat later — a before and an after, not two alternatives, and this second ' +
     'frame is the reason for the first. The defender has bent low with the driver, because ' +
-    'leaving a man driving the goalmouth is unacceptable to a defenceman, and the high slot he ' +
-    'was standing in is now shaded and empty. That ice, and the point behind it, is what the ' +
+    'leaving a player driving the goalmouth is unacceptable to a defenceman, and the high slot they ' +
+    'were standing in is now shaded and empty. That ice, and the point behind it, is what the ' +
     'drive opens, and a teammate arriving into it late is how it gets cashed. ' +
     'Neither of the two players who matter here has the puck, so none is drawn. The drive does ' +
     'a third thing this picture cannot show — it makes a rebound and deflection threat, which ' +
     'changes the goalie’s depth and attention — and the shaded band names a piece of ice, ' +
     'not a marking on a real rink. ' +
-    'Only the defender who is pulled is drawn, because he is the only one the play fixes: read ' +
+    'Only the defender who is pulled is drawn, because they are the only one the play fixes: read ' +
     'the arriving route as one instance and not as a place to stand.',
 
   describe:
     'The attacking half of the rink, the opposition net and goalie at the right, a beat after ' +
     'the previous diagram. The driver has arrived, standing more than twenty feet out from the ' +
-    'goalmouth and to one side, where the previous frame’s route ended, and he has no route now. ' +
-    'The opposition defenceman who was in the high slot has come down with him and now stands ' +
-    'between him and the net and well outside the crease. The high slot — the band between the ' +
+    'goalmouth and to one side, where the previous frame’s route ended, and has no route now. ' +
+    'The opposition defenceman who was in the high slot has come down with the driver and now stands ' +
+    'between them and the net and well outside the crease. The high slot — the band between the ' +
     'two faceoff circles, from the dots up to the tops of them — is shaded, labelled, and ' +
     'contains nobody. Your second forward, ' +
     'who was at the far point, is halfway down with a route finishing inside that shaded region ' +
@@ -855,14 +855,14 @@ const legalRouteThroughTraffic = {
     // someone" in a section about interference. The caption fix costs one word.
     'Your own legal route past a teammate, in the attacking end with the opposition net at the right. ' +
     'Your route goes round the outside of your teammate, who is standing still, and finishes in ' +
-    'open ice, while the straight line your check would take to that same ice runs through him. ' +
-    'He has to go round. No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
+    'open ice, while the straight line your check would take to that same ice runs through them. ' +
+    'Your check has to go round. No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
     'the other version a penalty, is settled by the section around the picture rather than by ' +
     'the drawing. This guide calls this traffic, or a route, and not a screen. A chaser ' +
     // ⚠️ "is not drawn" — NOT "is not something this corpus draws". The sentence's
     // work is the safety statement that the arrival at a standing man's back is
     // deliberately absent from the picture; naming the corpus was never part of it.
-    'arriving at the back of a man standing still is not drawn. No puck is drawn: the subject ' +
+    'arriving at the back of a player standing still is not drawn. No puck is drawn: the subject ' +
     'is the player who does not have it, and this is one instance of an arrangement rather than ' +
     'a spot on the ice. ' +
     // SAFETY. The owner's own caution, from the paragraph below the one this picture draws:
@@ -872,8 +872,8 @@ const legalRouteThroughTraffic = {
     // than into the space they are standing in. That is a coaching caution, not a rulebook
     // requirement." LAST, for the promotion rule, and the qualifier travels with it.
     '⚠️ The collision you are engineering is a defender at chase speed into a teammate who is ' +
-    'facing away and cannot see him. Shout as you come, and run past your teammate rather than ' +
-    'into the space he is standing in. That is a coaching caution, not a rulebook requirement.',
+    'facing away and cannot see the defender. Shout as you come, and run past your teammate rather than ' +
+    'into the space they are standing in. That is a coaching caution, not a rulebook requirement.',
 
   describe:
     'The attacking end zone, the opposition net and goalie at the right. Three skaters, all ' +
@@ -882,9 +882,9 @@ const legalRouteThroughTraffic = {
     'running up the ice and in toward the middle: it passes outside a second forward of yours ' +
     'and finishes in open ice just above the top of the faceoff circle, pointing away from ' +
     'everybody. That second forward stands still a few feet inside the route, level with and ' +
-    'just above the faceoff dot, with no route of his own. An opposition skater, labelled as ' +
+    'just above the faceoff dot, with no route of their own. An opposition skater, labelled as ' +
     'your check, stands between you and the middle of the ice, ten feet from your teammate and ' +
-    'eleven from you, and he carries no route at all. No puck is drawn and nothing is shaded.',
+    'eleven from you, and they carry no route at all. No puck is drawn and nothing is shaded.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },

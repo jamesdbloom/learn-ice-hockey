@@ -96,7 +96,7 @@ const containment122 = {
   describe:
     'The full sheet. Our own net is at the left, the opponents’ net at the right, and the opponents ' +
     'are breaking out from right to left. Three opposition players and their goalie: the defenceman ' +
-    'D1 behind their net with the puck, his partner D2 in the far corner as the D-to-D option, and the ' +
+    'D1 behind their net with the puck, D1’s partner D2 in the far corner as the D-to-D option, and the ' +
     'winger W1 on the strong-side wall just inside their blue line. Our five: F1 at the opponents’ ' +
     'goal line on the weak side; F2 and F3 side by side across the middle third just inside the opposing ' +
     'blue line, F2 on the strong-side wall and F3 in the middle; and both defencemen on our own blue ' +
@@ -107,7 +107,7 @@ const containment122 = {
     // owner (neutral_zone_systems.md, F2 bullet) times the arrival to the puck: "the puck,
     // not the player". Matched here. Not voiced (describe is screen-reader text only).
     'conceded first pass out to the winger on the wall; three, F2 steps up to meet the puck as it ' +
-    'reaches that winger, arriving on his inside to play the puck rather than the player. The ' +
+    'reaches that winger, arriving on the winger’s inside to play the puck rather than the player. The ' +
     'opposition centre, who can beat this ' +
     'structure by supporting low under F2 and F3, is not drawn.',
 
@@ -188,7 +188,7 @@ const trap122 = {
     'F1 sits high in the opponents’ zone still splitting the ice in half, F2 and F3 are at the ' +
     'red line on the walls, and the defence holds your own blue line rather than contesting ' +
     'theirs. The carrier is allowed to skate and is steered to a wall, into F2 stepping up with ' +
-    'the strong-side defenceman behind him and no lane through the middle. Depth is the tell a ' +
+    'the strong-side defenceman behind F2 and no lane through the middle. Depth is the tell a ' +
     'still frame can show; whether F1 is closing or gliding is not.',
 
   describe:
@@ -197,8 +197,8 @@ const trap122 = {
     'goalies are shown. Our five: F1 alone just inside the opponents’ blue line in the middle ' +
     'of the ice; F2 and F3 level with each other at the centre red line, one on each wall; both ' +
     'defencemen on our own blue line, the strong-side one behind F2. Two routes: the carrier’s way ' +
-    'out, curving toward the wall he is being steered to, and F2 stepping up as the carrier reaches the ' +
-    'red line, finishing inside him rather than at him. F1 is drawn with no route at all, because in a ' +
+    'out, curving toward the wall they are being steered to, and F2 stepping up as the carrier reaches the ' +
+    'red line, finishing on the carrier’s inside rather than at them. F1 is drawn with no route at all, because in a ' +
     'trap F1 is not closing. Only the carrier is drawn of the opposition’s five skaters; this is not ' +
     'a five-on-one.',
 
@@ -295,8 +295,8 @@ const wall131 = {
     'blue line; then F2 on one wall, a defenceman in the middle and F3 on the other wall, all three level ' +
     'with each other just inside the centre red line and spanning the width of the sheet; then a single ' +
     'defenceman alone on our own blue line, in the middle. Three short parallel arrows show the ' +
-    'three-man line sliding as a unit toward the side the puck is on. There is deliberately open ice ' +
-    'between the three-man line and our own blue line: that is the ice a stretch pass is aimed into. ' +
+    'three-player line sliding as a unit toward the side the puck is on. There is deliberately open ice ' +
+    'between the three-player line and our own blue line: that is the ice a stretch pass is aimed into. ' +
     'Only the carrier is drawn of the opposition’s five skaters; this is not a ' +
     'five-on-one.',
 
@@ -311,9 +311,9 @@ const wall131 = {
     // Row 2 — the three across. Same x, or it is not a row. Neither defenceman is
     // numbered, because the section numbers neither: it says "one defenceman in
     // the middle" and "the single back defenceman".
-    { id: 'F2', pos: 'F', at: F2_131, label: 'his lane only' },
+    { id: 'F2', pos: 'F', at: F2_131, label: 'own lane only' },
     { id: 'D', pos: 'D', at: D131, label: 'the read-maker' },
-    { id: 'F3', pos: 'F', at: F3_131, label: 'his lane only' },
+    { id: 'F3', pos: 'F', at: F3_131, label: 'own lane only' },
     // Row 3 — "the single back defenceman is the safety... and, crucially,
     // retrieves every dumped puck and starts the breakout."
     { id: 'D', pos: 'D', at: OUR_BLUE, label: 'last man, retrieves' },
@@ -392,9 +392,9 @@ const flat14 = {
     'line, evenly spread from wall to wall, with the two defencemen in the middle two lanes and two ' +
     'forwards outside them; the fifth, F1, stands alone near the centre red line. Both goalies are ' +
     'shown. Two opposition forwards have come past F1 and are approaching the flat line, one with the ' +
-    'puck and one behind him. Two numbered routes: one, the chip put through the gap between two of the ' +
+    'puck and one behind them. Two numbered routes: one, the chip put through the gap between two of the ' +
     'four into the space behind the line; two, the second attacker’s race through the same gap to ' +
-    'get to it first, starting from behind the puck so that he is onside when it crosses. There is no ' +
+    'get to it first, starting from behind the puck so that they are onside when it crosses. There is no ' +
     'opposition receiver drawn waiting behind the line, because there cannot legally be one, and the ' +
     'other three opposition skaters are not drawn either.',
 
@@ -539,17 +539,17 @@ const leftWingLock = {
   caption:
     'The left-wing lock, frozen the moment possession has been lost: two forwards are still ' +
     'forechecking and the left wing has dropped back into line with the two defencemen, making a ' +
-    'three-man line across the back. The effect is a 2-3 — forechecking pressure without the ' +
-    'odd-man risk that normally comes with it, because the third man back is already there. ' +
+    'three-player line across the back. The effect is a 2-3 — forechecking pressure without the ' +
+    'odd-man risk that normally comes with it, because the third player back is already there. ' +
     'Conventionally the centre and the right wing are the two who forecheck, but that is a ' +
     'coaching choice rather than a law, and many teams now lock whichever winger is highest in ' +
     'the zone instead. The cost is real: it takes one player out of the counterattack and asks ' +
-    'him to do a job most wingers are not trained for.',
+    'them to do a job most wingers are not trained for.',
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right. Two of our forwards, marked C ' +
     'and RW, are deep in the opponents’ end forechecking their defenceman, who has the puck behind ' +
-    'his own net. Three of our players stand in a line across the ice just inside the centre red line: ' +
+    'their own net. Three of our players stand in a line across the ice just inside the centre red line: ' +
     'the left wing LW in one outside third, a defenceman in the middle third, and the second defenceman ' +
     'in the other outside third, evenly spaced so each covers about 28 feet of width. Both goalies ' +
     'are shown. No routes are drawn: the drop back into the line has already happened at the instant ' +
@@ -608,7 +608,7 @@ const regroup = {
   caption:
     'A D-to-D regroup, drawn at the instant the pass across is made, with our team in possession ' +
     'and attacking left to right. A forward who could not advance has turned the puck back to a ' +
-    'defenceman, who receives with his hips open up the ice and then moves it across: that pass ' +
+    'defenceman, who receives with their hips open up the ice and then moves it across: that pass ' +
     'changes the point of attack and forces the entire opposing structure to slide. The one hard ' +
     'rule is visible in the picture — the D-to-D is flat and hard and the lane is clean. Never ' +
     'make it blind across the middle with a forechecker between you, because an interception ' +
@@ -739,15 +739,15 @@ const hinge = {
 
   caption:
     'The hinge, with our team in possession attacking left to right. The numbers are the order. ' +
-    'One, the D-to-D. Two, the passer sinks back into mid-ice behind his partner instead of ' +
+    'One, the D-to-D. Two, the passer sinks back into mid-ice behind their partner instead of ' +
     'following the puck up the ice — and in the skating hinge one and two happen together, ' +
     'because dropping deeper as you make the pass is what lets you arrive into the return with ' +
-    'speed. Three, his partner carries it up and finds everything covered. Four, he gives it ' +
+    'speed. Three, the partner carries it up and finds everything covered. Four, they give it ' +
     'back, and it arrives to a player who is behind the play, in the middle, facing up ice with ' +
     // ⚠️ "because each player is drawn once" — NOT "because these diagrams draw each
     // player once". The sentence has to keep explaining why the arrival carries no
     // glyph; what it does not have to do is name the corpus to do it.
-    'nobody near him. The only mark at that spot is his own arrowhead, because each player is ' +
+    'nobody near them. The only mark at that spot is their own arrowhead, because each player is ' +
     'drawn once. Whether the hinge is available at all is a read about how they forecheck.',
 
   describe:
@@ -759,7 +759,7 @@ const hinge = {
     'from the lower defenceman to that winger. Neither is between our two defencemen, and neither is ' +
     'behind them. Four numbered routes. One, a flat pass from the upper defenceman straight across ' +
     'to the lower. Two, the upper defenceman’s own skating route, curling back and then down into ' +
-    'the middle of the ice behind his partner. Three, the lower defenceman carrying the puck up ice ' +
+    'the middle of the ice behind their partner. Three, the lower defenceman carrying the puck up ice ' +
     'and toward the middle, drawn as a wave. Four, a pass from there back to a point just short of ' +
     'where route two’s arrowhead finishes. No glyph is drawn at the place the upper defenceman ends ' +
     'up. Route two’s arrowhead is the only mark for it. Both goalies are shown. The centre and ' +
@@ -867,11 +867,11 @@ const standUpAtTheLine = {
   width: 1100,
 
   caption:
-    'Standing up at your own blue line: the defenceman meets the attacker at it with his feet ' +
+    'Standing up at your own blue line: the defenceman meets the attacker at it with their feet ' +
     'stopped, refuses to give ground and tries to turn the carry into a dump, a pass or a ' +
     'turnover — a carried entry is worth roughly twice a dumped one in shot terms, on ' +
     'hand-tracked NHL games now more than a decade old, so take the direction rather than the ' +
-    'decimals. Drawn with it is what beats it, the chip-and-chase past his hip: stopped feet ' +
+    'decimals. Drawn with it is what beats it, the chip-and-chase past the defenceman’s hip: stopped feet ' +
     'cannot win that race, because beaten standing up is beaten completely. Nothing in the ' +
     'picture finishes into the carrier, and that is deliberate — standing up at the line is ' +
     'exactly where a beginner reaches for a hit instead. It is a bet that you have help, and ' +
@@ -883,10 +883,10 @@ const standUpAtTheLine = {
     'The full sheet. Our own net is at the left with our goalie in it, our own blue line a ' +
     'quarter of the way in from that end, and an opposition puck carrier is coming the other way ' +
     'through the neutral zone on the near side, about twenty feet short of that line. One of our ' +
-    'defencemen stands just inside the blue line in front of him, in the dot lane, with no route ' +
-    'drawn at all: his feet are stopped. Two routes come from the carrier and both pass outside ' +
-    'the defenceman on the boards side rather than into him — a dashed line, the puck chipped ' +
-    'past his hip into the zone behind, and a curved skating route round the outside of him. No ' +
+    'defencemen stands just inside the blue line in front of the carrier, in the dot lane, with no route ' +
+    'drawn at all: their feet are stopped. Two routes come from the carrier and both pass outside ' +
+    'the defenceman on the boards side rather than into them — a dashed line, the puck chipped ' +
+    'past their hip into the zone behind, and a curved skating route round the outside of them. No ' +
     'backchecker is drawn, no defence partner is drawn, and the opposition’s other four skaters ' +
     'are not drawn. The opposing goalie is shown at the far end.',
 
@@ -929,9 +929,9 @@ const backOffAtTheLine = {
   caption:
     'Backing off at your own blue line, the answer standing up gives the other way: the ' +
     'defenceman gives up the line and skates backwards, matching the attacker’s speed, keeping ' +
-    'him in front and funnelling him outside where the shot is low-percentage. You cannot be ' +
+    'them in front and funnelling them outside where the shot is low-percentage. You cannot be ' +
     'beaten wide by pure speed, and it is very hard to make a catastrophic error doing this. The ' +
-    'shaded middle is the thing he is not conceding — you give up the blue line but never the ' +
+    'shaded middle is the thing the defenceman is not conceding — you give up the blue line but never the ' +
     'middle or your body position — and the cost of the choice is in the picture too: they come ' +
     'in with speed and possession and you are defending with your feet moving backwards toward ' +
     'your own net. The band’s long edges are drawn on the faceoff-dot lines so the shading has an ' +
@@ -945,9 +945,9 @@ const backOffAtTheLine = {
     'with our goalie, our own blue line a quarter of the way in, and an opposition puck ' +
     'carrier coming the other way on the near side about twenty feet short of that line. Our ' +
     'defenceman is in exactly the same place as in that diagram, just inside the blue line, but ' +
-    'here he has a backward skating route retreating into our zone and drifting toward the middle ' +
-    'of the ice as he goes. The carrier’s route curves away from him toward the near boards and ' +
-    'deeper into the zone: he has been let in and steered outside. A shaded band down the centre ' +
+    'here they have a backward skating route retreating into our zone and drifting toward the middle ' +
+    'of the ice as they go. The carrier’s route curves away from the defenceman toward the near boards and ' +
+    'deeper into the zone: the carrier has been let in and steered outside. A shaded band down the centre ' +
     'of the ice, its long edges on the faceoff-dot lines, running from the blue line back to the ' +
     'level of our end-zone faceoff dots, is labelled "the middle" — ' +
     'the ice the defenceman is not conceding. No backchecker, no defence partner and none of the ' +

@@ -30,7 +30,7 @@
 
 **Find out whether your league allows body checking before your first game.** Your age group, league and country decide it, and nothing on the ice tells you — ⚠️ **so ask your coach or your league which category you are in.**
 
-**Decide how you will meet the boards on the way in:** go in on an angle, skates parallel to the wall, head up, chin off your chest. ⚠️ **Never turn your back to the checker, and never duck.** This holds in non-checking hockey too, because a wall can hurt you without an opponent.
+**Decide how you will meet the boards on the way in:** go in on an angle, skates parallel to the wall, head up, chin off your chest. ⚠️ **Never turn your back to anyone coming at you, and never duck.** This holds in non-checking hockey too, because a wall can hurt you without an opponent.
 
 ## Overview
 
@@ -212,7 +212,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 ## 7. Choose how you meet the boards before you have to
 
-**In short:** When you cannot avoid the wall, arrive on an angle with your head up, and never turn your back to the checker or duck.
+**In short:** When you cannot avoid the wall, arrive on an angle with your head up, and never turn your back to anyone coming at you or duck.
 
 **The principle.** Races to a loose puck along the wall end in head-on contact with the boards, and the posture you arrive in decides whether that is nothing or a spinal injury. Decide the posture on the way, because there is no time to decide on arrival.
 
@@ -242,7 +242,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 - **Stopping short of the net, or peeling away once the shot has gone.** Unless you are the safety, go all the way and stop at the front: skates and stick blade just outside the crease, stick on the ice, never on the goalie.
 - **Moving the puck through your own slot under pressure.** Go behind the net, up the wall or through a high exchange — whichever your team uses. A pass across your own goal that gets read is a shot against.
 - **Using a principle to argue with a coach.** Your bench wins on the ice; ask about it afterwards. A principle is for the situations nobody has given you an instruction for.
-- **Treating a principle as though it were a rule.** Most of this page is judgement, and the play in front of you can overrule it. The exceptions are principle 2, which is about finding out which rules are yours; the crease rule in principle 3; and principle 7 — never turn your back to the checker and never duck, in any situation.
+- **Treating a principle as though it were a rule.** Most of this page is judgement, and the play in front of you can overrule it. The exceptions are principle 2, which is about finding out which rules are yours; the crease rule in principle 3; and principle 7 — never turn your back to anyone coming at you and never duck, in any situation.
 - **Assuming what is measured in professional hockey is true of your league.** Take the direction from the measurements and leave the exact numbers with the players measured: NHL tracking for puck possession, the Swedish men's and women's top leagues for scanning.
 - **Reading a note that no source was found as "this is made up".** It says how much measurement exists, not that the advice is wrong. The linked document says what was searched for.
 - **Skipping principle 2 because you already know how to play.** Your checking category cannot be learned from experience, and an adult moving between leagues is more exposed, not less. Ask again every time you change team, league or age group.
@@ -261,7 +261,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 8. **Find out which system your team plays.** Most of what you are told is your team's system, not a law of hockey.
 9. **Find out which checking category you are in before you play a shift** — ⚠️ **ask your coach or your league, because you cannot work it out on the ice.**
 10. **In adult recreational hockey,** ⚠️ **find out whether your league is CARHA-affiliated before you rely on "hold your ground."** There, failing to *"avert body contact with an opponent"* can be penalised, up to an ejection with a suspension, even though the same book lets you stand your ground.
-11. **Go in on an angle; if you cannot avoid the wall, meet it with your skates parallel, knees bent, forearm and hip to it, head up, chin off your chest.** ⚠️ **Never turn your back to the checker and never duck: a head-down collision can injure your spine at walking speed.** Facing the wall with no time to turn? Stick and gloves up, spread on the glass.
+11. **Go in on an angle; if you cannot avoid the wall, meet it with your skates parallel, knees bent, forearm and hip to it, head up, chin off your chest.** ⚠️ **Never turn your back to anyone coming at you and never duck: a head-down collision can injure your spine at walking speed.** Facing the wall with no time to turn? Stick and gloves up, spread on the glass.
 
 ---
 

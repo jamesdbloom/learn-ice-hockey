@@ -339,19 +339,19 @@ const stepUp = {
   caption:
     'A step-up at your own blue line, drawn in your own end with the net you are defending at the ' +
     'right and the attack coming from the left. Stepping up means moving forward to challenge an ' +
-    'oncoming carrier early instead of retreating in front of him, and it happens here or out in ' +
+    'oncoming carrier early instead of retreating in front of them, and it happens here or out in ' +
     'the neutral zone. Pinching is the other play and it happens at the other blue line, and the ' +
     'two being confused is what this picture is drawn against. What it is really about is the ice ' +
-    'behind the defenceman who has gone. There is nobody at all between him and his own ' +
-    'goalie, and his partner is across on the far side with a second attacker already wide of ' +
-    'him — so a step-up that misses does not cost a stride, it leaves that partner alone in a ' +
+    'behind the defenceman who has gone. There is nobody at all between that defenceman and their own ' +
+    'goalie, and their partner is across on the far side with a second attacker already wide of ' +
+    'the partner — so a step-up that misses does not cost a stride, it leaves that partner alone in a ' +
     'two-on-one. So step up only when you are confident you can win the puck or force a turnover: ' +
     'confidence, not hope. How aggressive confident should be is a coaching choice rather than a ' +
     'rule of hockey, so ask which risk your coach wants to carry. ' +
     '⚠️ And a step-up is a closing of space, not a hit. The route drawn here ends in two ' +
     'bars, meaning arrive and contain, and it is drawn that way on purpose. A step-up ' +
     'finished as a hit is the geometry the charging rules are written for, and a carrier ' +
-    'with his head down is the picture those rules name: that tells you he cannot change ' +
+    'with their head down is the picture those rules name: that tells you they cannot change ' +
     'direction, and nothing more. None of the six books caps charging at a minor, and ' +
     'USA Hockey Rule 607(a) writes no bare one at all — "a minor plus a misconduct or a ' +
     'major plus a game misconduct penalty shall be assessed for charging an opponent". ' +
@@ -390,16 +390,16 @@ const stepUp = {
     'in it is a licence to hit.',
 
   describe:
-    'The defending half of the rink, your own net at the right, your goalie in his ' +
+    'The defending half of the rink, your own net at the right, your goalie in the ' +
     'crease. Your own blue line runs across the picture near the left-hand edge. One of ' +
     'your defencemen is a few feet inside that line on the near side, labelled "you", and ' +
-    'his route runs forward and out across the line toward an oncoming opposition forward, ' +
+    'their route runs forward and out across the line toward an oncoming opposition forward, ' +
     'ending in two short bars rather than an arrowhead. That forward is out in the neutral ' +
-    'zone on the same side with the puck beside him, and his own route carries him toward ' +
+    'zone on the same side with the puck beside them, and their own route carries them toward ' +
     'the line. A second opposition forward is wide on the far side of the ice, level with ' +
     'the neutral-zone faceoff dot there, with no route. Your other defenceman, labelled ' +
     '"partner", is well back on that far side, between the blue line and the top of the ' +
-    'faceoff circle. The whole of the ice between the stepping-up defenceman and his own ' +
+    'faceoff circle. The whole of the ice between the stepping-up defenceman and their own ' +
     'goalie is empty: no third defender, no backchecker, nobody.',
 
   players: [
@@ -525,16 +525,16 @@ const holdingTheLine = {
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left with your goalie in ' +
-    'his crease, and your team attacking to the right. Two of your defencemen stand on ' +
+    'the crease, and your team attacking to the right. Two of your defencemen stand on ' +
     'your own blue line, one on each side of the middle of the ice, each about eleven feet ' +
     'off the centre of the sheet and so well inside the two neutral-zone faceoff dots. ' +
     'Neither has a route: they are holding. Three of your forwards are up ice. Two are in ' +
     'the attacking zone, one of them labelled "up ice"; the third is out in the neutral ' +
-    'zone just past the centre red line with the puck beside him, and a single opposition ' +
-    'forward is closing on him from the attacking side, that forechecker’s route ending ' +
+    'zone just past the centre red line with the puck beside them, and a single opposition ' +
+    'forward is closing on them from the attacking side, that forechecker’s route ending ' +
     'in two short bars rather than an arrowhead. One dashed passing route runs from the ' +
     'forward with the puck back down the ice toward the nearer of the two defencemen, ' +
-    'stopping short of him. No other opposition players are drawn.',
+    'stopping just short of that defenceman. No other opposition players are drawn.',
 
   players: [
     { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 } },                    // (-85, 0)
@@ -667,9 +667,9 @@ const pairOverview = {
     'which your team plays.',
 
   describe:
-    'The defending half of the rink, your own net at the right, your goalie in his ' +
+    'The defending half of the rink, your own net at the right, your goalie in the ' +
     'crease. One opposition forward is deep in the right corner with a loose puck between them. Your ' +
-    'strong-side defenceman is beside him, contesting the puck. Your weak-side ' +
+    'strong-side defenceman is beside that forward, contesting the puck. Your weak-side ' +
     'defenceman is on the opposite side of the net from the corner, at the goalmouth, ' +
     'labelled "goalmouth", between the net front and where an unmarked opponent would ' +
     'stand. No route is drawn: the picture is the shape the pair forms, not a movement.',

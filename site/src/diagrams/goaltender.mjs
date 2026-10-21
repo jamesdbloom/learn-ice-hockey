@@ -210,7 +210,7 @@ const frontDoorBackDoor = {
     'forward stands unmarked on the far side of the net, five feet out from the goal ' +
     'line and clear of the crease. A dashed line — the notation for a pass — shows the ' +
     'pass available across the slot, running from the puck toward that attacker and ' +
-    'stopping well short of him. The goalie stands on the line from the puck to the ' +
+    'stopping well short of them. The goalie stands on the line from the puck to the ' +
     'centre of the goal line, four feet out, nearer the goal line than the top of the ' +
     'crease. No defenders are drawn; the point of the picture is the goalie’s depth ' +
     'decision and the space behind them.',
@@ -299,7 +299,7 @@ const failureModes = {
     'The same goalie drawn twice, against one shooter, and neither position is one to play ' +
     'from. One is hiding deep in the net, where the corners are open. The other has run at the ' +
     'shooter, out level with the hash marks and about twenty feet from the goal line, where the ' +
-    'first pass or the first change of direction beats him. Both are confidence problems rather ' +
+    'first pass or the first change of direction beats them. Both are confidence problems rather ' +
     'than technique problems.',
 
   describe:
@@ -466,9 +466,9 @@ const safeOutlets = {
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the goalie ' +
-    'standing behind his own net and the puck on his stick. Three dashed lines — the ' +
+    'standing behind their own net and the puck on their stick. Three dashed lines — the ' +
     'notation for a pass — leave the puck. One runs up the near boards to a defenceman of ' +
-    'yours standing on the wall level with the goal line, stopping short of him. One curves ' +
+    'yours standing on the wall level with the goal line, stopping short of them. One curves ' +
     'around the back of the net and down the far boards toward one of your forwards on the ' +
     'far half-wall, again stopping short. The third arcs over the top of the net and into a ' +
     'shaded region labelled "the slot", shaded as a warning rather than as a target. No ' +
@@ -583,7 +583,7 @@ const rimStopOrClear = {
     'pass — starts high on the near boards in front of the goal line and curves around the ' +
     'end boards behind the net, crossing the goal line far out near the boards and outside ' +
     'the shaded area, then running into it and stopping short of the goalie, who stands ' +
-    'behind his own net inside the shaded area. One defenceman of yours is coming back on ' +
+    'behind their own net inside the shaded area. One defenceman of yours is coming back on ' +
     'the far side of the net. No opponents are drawn.',
 
   // Same five vertices and the same fill as `the-trapezoid` in
@@ -656,9 +656,9 @@ const breakawayRetreat = {
     'The attacking half of the rink, the defended net at the right. One opposition forward ' +
     'carries the puck out of the neutral zone toward the net, drawn as a long smooth wave — ' +
     'the notation for skating with the puck — ending well short of the goalie. The ' +
-    'goalie is drawn out in front of his net, about eleven feet from the centre of the ' +
+    'goalie is drawn out in front of their net, about eleven feet from the centre of the ' +
     'goal line and on the line from the puck to that centre. A run of flattened arches — the ' +
-    'notation for backward skating, the goalie’s C-cuts — leads from him back along that ' +
+    'notation for backward skating, the goalie’s C-cuts — leads from them back along that ' +
     'same line to a point three feet out, inside the crease. No other players are drawn: a ' +
     'breakaway is one attacker and you.',
 
@@ -721,7 +721,7 @@ const readingATip = {
     'the ice: watch the sticks, because a forward standing there makes every point shot a ' +
     'probable tip, and a tip changes direction a few feet in front of you where no reflex can ' +
     'follow it. Stay tall and patient for as long as you can rather than dropping early. Two ' +
-    'things the picture cannot show. The forward is drawn further out than he would really stand, ' +
+    'things the picture cannot show. The forward is drawn further out than they would really stand, ' +
     'because two glyphs will not fit in the few feet of real ice between a tipper and a ' +
     'goalie. And the goalie’s depth is a consequence of what fits on the page rather than ' +
     'an instruction, because how deep to play a screened shot from distance is a genuine coaching ' +
@@ -870,10 +870,10 @@ const fiftyFiftyPuck = {
   describe:
     'The attacking half of the rink, the defended net at the right, and the net has nobody in ' +
     'it. A loose puck sits in the near corner, in front of the goal line. The goalie is ' +
-    'drawn out of his crease and part of the way to it, about six feet away. An opposition ' +
+    'drawn out of their crease and part of the way to it, about six feet away. An opposition ' +
     'forward is arriving at the same puck from the other side and is slightly closer to it ' +
     'than the goalie is. No routes are drawn, and nothing marks who wins the race: the ' +
-    'point of the picture is the distance between the goalie and his own empty net.',
+    'point of the picture is the distance between the goalie and their own empty net.',
 
   players: [
     { id: 'G', pos: 'G', at: G_OUT_OF_NET, label: 'out of your net' },

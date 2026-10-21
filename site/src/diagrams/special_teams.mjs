@@ -260,7 +260,7 @@ const ppUmbrella = {
   describe:
     'Attacking half of the rink, the opposition net at the right. Five own players in an arc and ' +
     'a pair: a defenceman at the apex in the middle just inside the blue line, two forwards ' +
-    'lower than him at the tops of the left and right faceoff circles, one forward at the net ' +
+    'lower than them at the tops of the left and right faceoff circles, one forward at the net ' +
     'front outside the crease and one at the side of the net below the goal line. The middle of ' +
     'the slot is empty. Two numbered routes: one, a pass from the right flank up to the apex; ' +
     'two, a shot from the apex past the low side of the screen. No penalty killers are drawn.',
@@ -516,7 +516,7 @@ const ppBackdoor = {
 
   caption:
     'The weak-side post, away from the puck. When the kill\'s low defender commits to the ' +
-    'strong side or to the net-front player, drawn here occupying him, nobody is covering it. ' +
+    'strong side or to the net-front player, drawn here occupying that defender, nobody is covering it. ' +
     'Arrive late: a player camped at the back post is marked, one arriving as the pass is ' +
     'released is not. A read off any formation, not a shape of its own.',
 
@@ -596,8 +596,8 @@ const ppWalkDown = {
 
   caption:
     'The half-wall player skates the puck down toward the goal line and inside rather than ' +
-    'passing, forcing a decision: if the low defender steps out, the net front is open; if he ' +
-    'holds, the shot comes from the top of the circle with a moving goalie. Neither is ' +
+    'passing, forcing a decision: if the low defender steps out, the net front is open; if they ' +
+    'hold, the shot comes from the top of the circle with a moving goalie. Neither is ' +
     'drawn. Walk toward the dot, not the corner.',
 
   describe:
@@ -670,7 +670,7 @@ const pkBox = {
     'circles and inside them, and two defencemen low, either side of the net front. Five ' +
     'opposition players in a 1-3-1: one at the point just inside the blue line, two on the ' +
     'half-walls, one ' +
-    'bumper in the middle of the slot inside the rectangle with no killer near him, and one at ' +
+    'bumper in the middle of the slot inside the rectangle with no killer near them, and one at ' +
     'the net front. The puck is on the opposition’s right half-wall. No routes are drawn.',
 
   players: [
@@ -714,7 +714,7 @@ const pkDiamond = {
     'the net. Five opposition players in a 1-3-1: one at the point with the puck, two on the ' +
     'half-walls, a bumper in the middle of the slot between the two middle killers, and one at ' +
     'the net front. One route: the apex applying checking pressure out toward the point player, ' +
-    'finishing short of him and inside him, on the middle shooting lane.',
+    'finishing short of them and inside them, on the middle shooting lane.',
 
   players: [
     { id: 'G', pos: 'G', at: G_AT },
@@ -769,7 +769,7 @@ const pkWedge = {
 
   caption:
     'The wedge+1 penalty kill, also called triangle-and-one — four killers, shorthanded 4-on-5 — ' +
-    'drawn against a five-man 1-3-1 with the puck on the half-wall. Three killers hold a tight ' +
+    'drawn against a five-player 1-3-1 with the puck on the half-wall. Three killers hold a tight ' +
     // W HERE IS *WEDGE*, AND IT IS THE ONLY DIAGRAM IN THE CORPUS WHERE IT IS NOT *WINGER*.
     // Measured: `W` appears on 31 glyphs across 17 diagrams; 29 carry `pos: 'F'` and are
     // wingers, and the two that carry `pos: 'D'` are both here. The shapes are individually
@@ -804,7 +804,7 @@ const pkWedge = {
     'straight out from the goal at the ' +
     'carrier — is one of three published readings and a coaching choice rather than the ' +
     'system: others sweep the +1 laterally across the top of the zone above the circles, ' +
-    'and others let him roam out to the wall and the point, so ask which one your team ' +
+    'and others let them roam out to the wall and the point, so ask which one your team ' +
     'runs. ' +
     'Coaching material describes this as popular at NHL level, but no league-wide count is ' +
     'published, so treat the prevalence claim as unverified. ' +
@@ -819,7 +819,7 @@ const pkWedge = {
     'players form a tight triangle around the net: two defencemen just outside the crease edges ' +
     'either side, and one forward in the slot in front of them. A fourth own player, the +1, is ' +
     'out on the right side between the net and the puck, with a checking-pressure route running ' +
-    'outward toward the puck carrier on the half-wall and finishing short of him. Five opposition ' +
+    'outward toward the puck carrier on the half-wall and finishing short of them. Five opposition ' +
     'players in a 1-3-1: one at the point, two on the half-walls with the puck on the right, a ' +
     'bumper in the middle of the slot shaded to the puck side, and one at the net front.',
 
@@ -917,7 +917,7 @@ const pkNz13 = {
   caption:
     'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
     'attacking from the left, in the passive version. One forward is up on the puck; the ' +
-    'other forward and both defencemen form a line across the ice behind him, backing up in ' +
+    'other forward and both defencemen form a line across the ice behind that forward, backing up in ' +
     'unison to force a dump-in rather than to win the puck. The same-side press, the 1-1-2, ' +
     'the retreating box and tandem pressure are the alternatives — ask which is called. Only ' +
     'the power play\'s puck carrier is drawn.',
@@ -925,8 +925,8 @@ const pkNz13 = {
   describe:
     'The full sheet. We defend the net at the right; the opposition power play attacks from the ' +
     'left. One opposition player carries the puck in the neutral zone on the upper side. Four own ' +
-    'players: F1 ahead of the carrier, giving token checking pressure back toward him and ' +
-    'finishing short of him; and behind F1 a line of three across the ice — a forward in the ' +
+    'players: F1 ahead of the carrier, giving token checking pressure back toward the carrier and ' +
+    'finishing short of them; and behind F1 a line of three across the ice — a forward in the ' +
     'middle and a defenceman near each side — each backing up toward our blue line, drawn with ' +
     'the row of separate overlapping arches that means backward skating. Our goalie is in ' +
     'the crease at the right. ' +
@@ -974,7 +974,7 @@ const pkNz112 = {
 
   caption:
     'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
-    'attacking from the left. F1 is up on the puck, F2 layered behind him on the same side, ' +
+    'attacking from the left. F1 is up on the puck, F2 layered behind F1 on the same side, ' +
     'and the two defencemen abreast near the line. Some coaching material calls this a ' +
     'common NHL choice for neutral-zone pressure; no count of NHL teams was found to ' +
     'confirm it. The 1-3, the retreating box and tandem pressure are the ' +
@@ -984,8 +984,8 @@ const pkNz112 = {
     'The full sheet. We defend the net at the right; the opposition power play attacks from the ' +
     'left. One opposition player carries the puck up the upper side of the neutral zone. Four own ' +
     'players: F1 ahead of the carrier on the same side of the ice with a checking-pressure route ' +
-    'running back toward him and finishing short; F2 stacked behind F1 on that same side, level ' +
-    'with him along the boards; and two defencemen abreast just in front of our blue line, one ' +
+    'running back toward the carrier and finishing short; F2 stacked behind F1 on that same side, level ' +
+    'with F1 along the boards; and two defencemen abreast just in front of our blue line, one ' +
     'either side of the middle. Our goalie is in the crease at the right. The other four ' +
     'power-play attackers are not drawn.',
 

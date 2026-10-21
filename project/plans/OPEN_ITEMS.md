@@ -587,6 +587,20 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **check_readability:** also joins blockquote paragraphs separated by a bare `>` line (z2, z3). Fix it together with the Related-line row, between waves.
 - **faceoffs USAH 602(a):** "plan on the match" at about :615 (facts), :628 (body) and :1234 (CM) has no suspension limb. Under the OR ruling it may appear at most twice per document, so decide which two sites carry "a likely multi-game suspension" (Y wave, y3).
 - **check_readability:** counts a whole blockquote, including a long `**Related:**` nav line, as one paragraph, so page headers are inflated. Exclude Related lines, or measure blockquote paragraphs separately (Y wave, y3).
+- **SG8, CARHA 32(d) "at least a one-game suspension" (owner ruling 19 Oct) is still missing at some sites.** These sites price a CARHA major or game misconduct with no suspension limb:
+  - goaltender :1197, :1246, :1248, :1249, :1265, :1271, :1309, :1371
+  - center :485, :516, :762, :765
+  - offensive_zone_play :536, :647, :684, :784, :927
+  - and probably other pages; run a census.
+  The census must also cover the slap-shot sites that still say only "a slap-shot penalty": defender facts :124/:581, winger :102, NZ :599/:735, faceoffs :567. rules_primer :1063 says "an ejecting major" but gives no suspension.
+  sg6R (rules-verifier) found more gaps:
+  - special_teams :299 says "Rule 30(a) ejects on any major". It has no 32(d) suspension, and "any major" ignores 30(a)'s accidental-high-stick exception. Body :302 needs the same check.
+  - 32(d) triggers only on a game misconduct that comes with a MAJOR. So a CARHA 53(a) minor plus game misconduct carries no automatic suspension, which makes the owner's 19 Oct "wherever a game misconduct is priced" wording too broad. Apply the limb to majors and matches only, unless the owner says otherwise.
+  - CARHA 62(b): a follow-through above the shoulders is a major even when nobody is hurt. No slap-shot site mentions it, apart from shooting :983.
+  - Route agents to sources/hc.txt, not hc_2026-08-print.txt. The 7.5–7.7 text is identical in both.
+  Also: DTR facts :330 opens "Hitting a man's back", which falls under the pronoun ruling. And the dz-walk-down-man label "goes with the carrier" crosses the blue line at 400px; that one is cosmetic.
+  Read each site in context, because in some of them the game misconduct comes from a different rule. Rewrite each site individually; do not sweep.
+- **SG7, owner ruling 21 Oct: the back-to-wall wording.** In every voiced-alone layer (facts, Key Takeaways, Key focus, Common Mistakes, captions), "never turn your back to the checker" becomes "never turn your back to anyone coming at you". Body text may keep "the checker" where the same unit defines it. Done so far: rules_primer, risk_management, core_principles, and the SG5 pages that changed (zone_entries, passing, game_management, OIC). Still to do: about 150 sites across 23 files (run `grep -rn -c "back to the checker" content/`) and about 29 diagram strings. Rewrite site by site with a layer test; do not sweep.
 - **Site-reviewer pass DONE 21 Oct** (record site_review_pass_2026-10-21.md). Every deferred item passes, with 0 bare glyphs, 0 panels and a clean console across 39 pages × 2 widths × 2 themes. New rows:
   - (sr1) CSS: `.table-scroll thead th{white-space:nowrap}` clips the last header of the rules_primer §10 table at 1440 (807/790 px), and the DZC comparison table scrolls 99 px with no fade at desktop width. Let headers wrap at the desktop breakpoint, or show the fade at every width.
   - (sr2) CSS: `h4` (17.6 px/700) is hard to tell from a bold lead sentence (17 px/700). This is site-wide, with 76 h4.

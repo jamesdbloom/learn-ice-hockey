@@ -618,8 +618,8 @@ const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
 // and the glyph still opens the last sentence so the amber band covers the contact limb alone.
 const PINCH_CAVEATS =
   'The two wingers are not drawn, because what is being counted here is the ' +
-  'players behind the puck: the defenceman who pinches has taken himself out of that count the ' +
-  'moment he goes. ' +
+  'players behind the puck: the defenceman who pinches has taken themselves out of that count the ' +
+  'moment they go. ' +
   'Three things this cannot promise. Which forward stays high behind a pinch is a coaching ' +
   'choice and not a law of hockey: some teams give that job to the centre, some to whichever ' +
   'forward is highest when the puck arrives, and some slide the weak-side defenceman across ' +
@@ -632,10 +632,10 @@ const PINCH_CAVEATS =
 const PINCH_DESCRIBE_COMMON =
   'The attacking half of the rink, the opposition net at the right, the attack having been ' +
   'moving left to right. Three opposition players are drawn as solid glyphs: a forward on the ' +
-  'upper half-wall, about eleven feet up-ice of the faceoff dot, with the puck at his stick; a ' +
+  'upper half-wall, about eleven feet up-ice of the faceoff dot, with the puck at that forward’s stick; a ' +
   'second forward on the lower, weak side of the ice, just up-ice of the lower faceoff circle, ' +
   'with a plain arrowed route heading back out toward the blue ' +
-  'line; and their goalie in his crease. Own players are open glyphs: a defenceman at the ' +
+  'line; and their goalie in the crease. Own players are open glyphs: a defenceman at the ' +
   'upper point whose route curves down the boards and ends in two short bars across the line, ' +
   'about eight feet short of the puck carrier, and a second defenceman at the blue line on the ' +
   'lower side, shaded into the middle of the ice. ';
@@ -650,9 +650,9 @@ const pinchCentreHigh = {
     'A pinch at the offensive blue line — a defenceman stepping down from the line to keep a ' +
     'puck in their zone — with the centre high in the zone behind it, which is the arrangement ' +
     'that makes a pinch defensible. What makes it a good pinch is not whether it works. It is ' +
-    'what is behind it if it does not: his partner has held the middle at the line and his ' +
+    'what is behind it if it does not: the pinching defenceman’s partner has held the middle at the line and the ' +
     'centre is high rather than deep, so the worst the failure can produce is two of their ' +
-    'forwards against two of his teammates — a rush a team can defend. That is the question to ' +
+    'forwards against those two teammates — a rush a team can defend. That is the question to ' +
     'run before you jump a lane, pinch or activate: not only "am I right?" but "what happens if ' +
     'I am right and I still miss it?" ' +
     PINCH_CAVEATS,
@@ -661,10 +661,10 @@ const pinchCentreHigh = {
     PINCH_DESCRIBE_COMMON +
     'A centre is drawn on the upper side of the middle of the ice, about seventeen feet inside ' +
     'the blue line and higher up the zone than the point where the pinching defenceman’s route ' +
-    'ends, with a plain arrowed route running back toward the point his partner has vacated and ' +
+    'ends, with a plain arrowed route running back toward the point the pinching defenceman has vacated and ' +
     'stopping about nine feet short of that defenceman’s glyph. So the pinching defenceman has ' +
-    'committed himself to the wall, and the two own players left to defend a rush the other way ' +
-    'are his partner and his centre — against the carrier and the one forward climbing with him.',
+    'committed themselves to the wall, and the two own players left to defend a rush the other way ' +
+    'are the defenceman’s partner and the centre — against the carrier and the one forward climbing with the carrier.',
 
   players: [
     // ⚠️ LABELLED as the OPPOSITION net. This diagram is borrowed into defender.md two
@@ -709,11 +709,11 @@ const pinchCentreDeep = {
   caption:
     'A pinch at the offensive blue line with the centre below their goal line behind the net — ' +
     'the arrangement that makes a pinch a bad decision even when it works. Everything in front ' +
-    'of the pinching defenceman is the same as it would be in a good one: he has left the point ' +
-    'to kill a puck their player is trying to move up the wall, and he may well get there ' +
-    'first. What is different is behind him. His centre has gone below their goal line, at the ' +
-    'far end of the zone from anywhere a third defender can help from, so his partner is the ' +
-    'only player between two of their forwards and his own end. Beat the pinch and it is a ' +
+    'of the pinching defenceman is the same as it would be in a good one: the defenceman has left the point ' +
+    'to kill a puck their player is trying to move up the wall, and may well get there ' +
+    'first. What is different is behind the defenceman. The centre has gone below their goal line, at the ' +
+    'far end of the zone from anywhere a third defender can help from, so the defenceman’s partner is the ' +
+    'only player between two of their forwards and the partner’s own end. Beat the pinch and it is a ' +
     'two-on-one the other way — and it was a two-on-one waiting to happen whether the pinch ' +
     'came off or not, which is the whole point. So ' +
     'the question to run before you jump a lane, pinch or activate is not only "am I right?" ' +
@@ -722,10 +722,10 @@ const pinchCentreDeep = {
   describe:
     PINCH_DESCRIBE_COMMON +
     'A centre is drawn below their goal line and past the back of their net, five feet below ' +
-    'the line and eight feet out to the weak side of it, with no route: he is at the far end of ' +
-    'the picture from the play and from his own end. So the pinching defenceman has committed ' +
-    'himself to the wall and his partner is the only own player left to defend a rush the other ' +
-    'way — one man against the carrier and the one forward climbing with him.',
+    'the line and eight feet out to the weak side of it, with no route: the centre is at the far end of ' +
+    'the picture from the play and from the centre’s own end. So the pinching defenceman has committed ' +
+    'themselves to the wall and the defenceman’s partner is the only own player left to defend a rush the other ' +
+    'way — one player against the carrier and the one forward climbing with the carrier.',
 
   players: [
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: 1 } },        // (87, 0)
@@ -878,9 +878,9 @@ const crossIceOwnEnd = {
   caption:
     'Your own defensive zone, your own net at the right: the cross-ice pass this section tells you ' +
     'not to make, and the traffic standing in it. A defenceman has the puck in the strong-side corner ' +
-    'with a forechecker sealing him there, and the pass goes east–west below the tops of the faceoff ' +
+    'with a forechecker sealing them there, and the pass goes east–west below the tops of the faceoff ' +
     'circles, across the shaded slot in front of your own goalie. The forward drawn in the middle ' +
-    'is standing beside that lane, and this notation has no stick symbol, so his reach into it is not ' +
+    'is standing beside that lane, and this notation has no stick symbol, so that forward’s reach into it is not ' +
     'drawn at all. Their third forward is already sliding across, so even when it works it usually ' +
     'arrives with the forecheck. No rule forbids the pass itself: this is a coaching convention ' +
     'rather than a law of hockey, and the convention has a line in it — some teams accept a cross-ice ' +
@@ -902,9 +902,9 @@ const crossIceOwnEnd = {
   describe:
     'The defending half of the rink, your own net at the right. Three own players are drawn as ' +
     'open glyphs: a defenceman in the upper corner about five feet up-ice of the goal line with ' +
-    'the puck at his stick; a forward low on the opposite boards, level with the far faceoff ' +
+    'the puck at the defenceman’s stick; a forward low on the opposite boards, level with the far faceoff ' +
     'dot; and the goalie in the crease. Three opposition players are solid glyphs: a forward ' +
-    'inside and below the puck carrier, sealing him toward the corner; a second forward in the ' +
+    'inside and below the puck carrier, sealing them toward the corner; a second forward in the ' +
     'middle of the zone, a few feet above the passing lane and about seven feet off it; and a ' +
     'third forward on the lower, weak side, level with the tops of the faceoff circles and just ' +
     'clear of the lower one, with a route running down toward the lower boards that ends in two ' +
@@ -1018,8 +1018,8 @@ const bothDToThePuck = {
 
   describe:
     'Your own defensive zone, the net at the right. An opposition forward, a solid circle, is ' +
-    'deep in the strong-side corner with a loose puck near him. Two open triangles — both ' +
-    'defencemen — are with him in the same corner: one about level with the faceoff-dot line and ' +
+    'deep in the strong-side corner with a loose puck near them. Two open triangles — both ' +
+    'defencemen — are with that forward in the same corner: one about level with the faceoff-dot line and ' +
     'a stride up-ice of it, closer to the middle of the ice; the other higher, on the boards ' +
     'below the hash marks. All three are converged on one puck, drawn between them rather than ' +
     'at any one stick. A shaded rectangle, labelled "your slot", runs down the middle of the zone ' +

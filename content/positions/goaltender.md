@@ -705,7 +705,7 @@ Even with a trapezoid, you have real value behind the net. The most useful thing
 Priority: Rank your options by risk before you move the puck
 Options: Leave it for a defenceman with time — lowest risk, and always first when it is available
 Options: A short pass to a defenceman on the wall on your strong side, where an interception means less
-Options: A rim around the boards to the far winger — concedes possession but relieves pressure; in CARHA keep the backswing under fifteen inches or it is a slap-shot penalty
+Options: Rim it to the far winger — concedes possession but relieves pressure; in CARHA keep the backswing under fifteen inches, or it is a slap-shot minor — if it injures, ejection and at least a one-game ban
 Options: Off the glass and out — but along the glass, never over it, because under NHL and IIHF rules a puck you shoot straight out of the rink from your own end is a minor; goalies are allowed to be boring
 Never: Pass up the middle — a goalie's turnover there is a shot on an empty net, and you are standing in it
 ```
@@ -714,7 +714,7 @@ When you do move the puck, rank your options by risk:
 
 1. **Leave it for a defenceman with time.** Lowest risk, and it starts a controlled breakout. Always first when it's available.
 2. **A short pass to a defenceman on the wall on your strong side.** Simple, short, and if it's intercepted it's intercepted below the goal line where it means less.
-3. **A rim around the boards to the far winger.** Concedes possession but relieves pressure. Aim it to arrive where a teammate can meet it. In a CARHA league keep the backswing under fifteen inches, or it is a slap-shot penalty.
+3. **A rim around the boards to the far winger.** Concedes possession but relieves pressure. Aim it to arrive where a teammate can meet it. In a CARHA league keep the backswing under fifteen inches: past that it is a slap shot, a minor, and if it injures an opponent a major that ends your game and sits you out at least the next one.
 4. **Off the glass and out.** Rarely wrong when you are in trouble, and goalies are allowed to be boring — but ***along*** the glass, never over it. A clear straight out of the rink is a minor under most books, and the next section prices it book by book.
 5. **A pass up the middle.** Almost never. A goalie's turnover in the middle of the ice is a shot on an empty net, and you are the one standing in it.
 

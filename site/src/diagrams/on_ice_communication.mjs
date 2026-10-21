@@ -67,8 +67,9 @@
  * rediscovering it. THE NOTATION HAS NO FACING. Both published keys draw a player as
  * a circle or a triangle with no front and no back — see the header of
  * site/scripts/lib/rink.mjs and the same finding in scanning_and_anticipation.mjs,
- * whose subject has the identical problem. So "cannot see him" is NOT drawn here and
- * cannot be. What is drawn is the geometry it follows from: the retriever's route
+ * whose subject has the identical problem. So the blindness itself is NOT drawn here and
+ * cannot be: it is only NAMED, in D1's label "cannot see F". What is drawn is the
+ * geometry it follows from: the retriever's route
  * runs away from the forechecker, and the forechecker's runs at his back. Inventing
  * a sightline arrow, an eye glyph or a shaded "blind side" polygon would be exactly
  * the defect that header records — a symbol whose meaning came from memory rather
@@ -259,7 +260,7 @@ const whoCanSeeIt = {
     // contradicts three times. Only four players are drawn here; this sentence describes them,
     // not hockey.
     'Why the call exists: the player going to get the puck is the one who cannot see the danger, ' +
-    'and in this picture the two who can see it, his partner and his goalie, are the two who ' +
+    'and in this picture the two who can see it, their partner and their goalie, are the two who ' +
     'cannot reach it, so all they can do is say so. Both are labelled "calls it": where two people ' +
     'can see it, both should call it, because the failure is silence, not duplication. The words ' +
     'are a team matter, so agree your own. The mirror of this picture is the same corner with ' +
@@ -295,15 +296,15 @@ const whoCanSeeIt = {
   describe:
     'Your own end, your net at the right and your goalie in the crease. A loose puck sits in ' +
     'the right corner. One of your defencemen, an open triangle, is between the right faceoff dot ' +
-    'and the corner; a plain arrowed route runs from him out toward the corner and stops about six ' +
+    'and the corner; a plain arrowed route runs from them out toward the corner and stops about six ' +
     'feet short of the puck. An opposition forward, a solid circle, stands about twenty feet ' +
-    'behind him, just outside the top of the same faceoff circle and a little toward the middle of ' +
-    'the ice, on the line the retriever has just skated along; his route runs after him and ends in ' +
-    'two short bars across the line, about seven feet short of him, rather than in an arrowhead. ' +
+    'behind them, just outside the top of the same faceoff circle and a little toward the middle of ' +
+    'the ice, on the line the retriever has just skated along; their route runs after the retriever and ends in ' +
+    'two short bars across the line, about seven feet short of them, rather than in an arrowhead. ' +
     'Your second defenceman, an open triangle, stands on the ' +
-    'far side of the net level with the goal line, and neither he nor the goalie has a route: ' +
+    'far side of the net level with the goal line, and neither that defenceman nor the goalie has a route: ' +
     'nobody else in the picture moves. Both of them are labelled "calls it", the retriever is ' +
-    'labelled "cannot see him" and the forechecker "closing behind him". No contact is drawn, and ' +
+    'labelled "cannot see F" and the forechecker "closing in behind". No contact is drawn, and ' +
     'nothing in the picture shows where anybody is looking.',
 
   // NO SHADED ZONE, deliberately. A "blind side" polygon would need a facing this
@@ -312,22 +313,20 @@ const whoCanSeeIt = {
     { id: 'G', pos: 'G', at: G, label: 'calls it' },
     // Triangles, because the document says defencemen: "a defenceman retrieving a
     // puck in the corner", "their partner and the weak-side defenceman".
-    { id: 'D1', pos: 'D', at: D1, label: 'cannot see him' },
+    { id: 'D1', pos: 'D', at: D1, label: 'cannot see F' },
     { id: 'D2', pos: 'D', at: D2, label: 'calls it' },
     // A circle: a forechecker is a forward. Which of their forwards is not the
     // document's subject and the caption does not make it one.
     // ⚠️ LABEL SHORTENED AFTER RENDERING, and recorded rather than silently changed.
     // "closing from behind" is 19 characters; the placer could not fit its box
     // anywhere near the glyph and put it 25 ft away in the neutral zone on a leader
-    // line that crossed the blue line. "closing behind him" is short enough to sit
-    // beside him. The wording lost nothing: the caption and `describe` both carry
-    // the direction in full.
-    // ⚠️ AND THE CHANGE REACHED THIS COMMENT AND STOPPED. `describe` went on naming
-    // the OLD label, "closing from behind", for a screen-reader user reading a page
-    // whose glyph says "closing behind him" — a label that is not on the picture.
-    // Fixed in `describe` above. If this label is ever reworded again, the string in
-    // `describe` is the second place it has to change.
-    { id: 'F', team: 'opp', pos: 'F', at: F1, label: 'closing behind him' },
+    // line that crossed the blue line. The label is now "closing in behind". The
+    // wording lost nothing: the caption and `describe` both carry the direction in full.
+    // ⚠️ A RENAME ONCE REACHED THIS COMMENT AND STOPPED: `describe` went on naming an
+    // old label that was not on the picture. If this label, or D1's "cannot see F",
+    // is ever reworded again, the string in `describe` is the second place it has to
+    // change.
+    { id: 'F', team: 'opp', pos: 'F', at: F1, label: 'closing in behind' },
   ],
 
   // NOT `numbered`. Both routes are one instant — the forechecker is arriving while

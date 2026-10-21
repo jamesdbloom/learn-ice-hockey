@@ -222,7 +222,7 @@ export const TABLES_ALLOW_OUTSIDE =
   // string dropped the first limb. That was harmless until round 72 made the LINE the
   // whole subject — the corpus now tells a reader to keep both feet off it, so a shared
   // string reaching four captions must not imply the tables only cover being clear of it.
-  'allowing the goal where an attacker plants himself on the crease line or outside ' +
+  'allowing the goal where an attacker plants themselves on the crease line or outside ' +
   'the crease and ' +
   'obstructs the goalie’s vision (NHL Table 14, and IIHF 2025/26 Appendix IV ' +
   'Table 16, renumbered Table 14 in 2026/27, at Situation 5E)';
@@ -237,4 +237,4 @@ export const TABLES_ALLOW_OUTSIDE =
  */
 export const DISALLOWED_ROWS_SHARE_THE_CREASE =
   'what the disallowed rows have in common is the attacker being inside the ' +
-  'crease, not whether he is moving.';
+  'crease, not whether they are moving.';

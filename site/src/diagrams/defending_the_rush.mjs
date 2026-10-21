@@ -554,7 +554,7 @@ const threeOnTwoDefault = {
     // that "the middle sealed between you" is true rather than decorative.
     { id: 'D1', pos: 'D', at: { at: 'top-of-circle:right:far', dx: 6, dy: -2 }, label: 'takes the wide man' },
     { id: 'D2', pos: 'D', at: { at: 'top-of-circle:left:far', dx: 6, dy: 2 },   label: 'takes the wide man' },
-    { id: 'C',  pos: 'F', at: C_3ON2, label: 'the middle is his' },
+    { id: 'C',  pos: 'F', at: C_3ON2, label: 'takes the middle' },
     { id: 'G',  pos: 'G', at: OWN_G },
   ],
 
@@ -607,7 +607,7 @@ const threeOnTwoAlternative = {
     'attackers stand exactly where they do in the two-wide default; only the defence has ' +
     'changed. The strong-side defenceman takes the puck carrier and plays it as a ' +
     '1-on-1 with a tight gap; the weak-side defenceman drops off into the shaded lane ' +
-    'and splits the middle attacker and the far attacker exactly as he would on ' +
+    'and splits the middle attacker and the far attacker exactly as they would on ' +
     'a 2-on-1. Under this version the backchecker’s job becomes the third attacker rather than the middle ' +
     'specifically, which is why that route finishes in open ice — which attacker it will be is not ' +
     'fixed, and this picture does not fix it either. ' +

@@ -173,7 +173,7 @@ const areaPass = {
     // NAME THE BOOKS, NEVER COUNT THEM — a count goes stale when the shelf grows.
     'An area pass at the attacking blue line, and the one thing a picture can show and a ' +
     'sentence cannot: there is nobody at the target. The carrier chips the puck into the ' +
-    'shaded patch behind the defender who stood him up — a place, not a person, which makes ' +
+    'shaded patch behind the defender who stood them up — a place, not a person, which makes ' +
     'it a race rather than a turnover, and only a good play if the winger has a real speed ' +
     'or angle advantage. The winger is drawn short of the blue line on purpose: a receiver whose ' +
     'skates both cross the leading edge before the puck does is offside, and under USA Hockey ' +
@@ -183,15 +183,15 @@ const areaPass = {
     'The attacking half of the rink, attacking to the right, with the blue line running down the picture about a ' +
     'quarter of the way across and the opposition net at the far right, their goalie in the crease. Three ' +
     'skaters. Your puck carrier stands in the neutral zone, eleven feet outside the blue line and on the ' +
-    'right-hand side of the ice, with the puck beside him. An opposition defenceman, drawn as a solid triangle, ' +
+    'right-hand side of the ice, with the puck beside them. An opposition defenceman, drawn as a solid triangle, ' +
     'stands one foot inside the blue line and about six feet closer to the middle, between the carrier and the ' +
-    'ice beyond him. Your winger is wider still and further back, about ten feet from the carrier; a plain ' +
-    'skating arrow runs from him straight up the ice and stops four feet short of the blue line. A shaded ' +
+    'ice beyond. Your winger is wider still and further back, about ten feet from the carrier; a plain ' +
+    'skating arrow runs from them straight up the ice and stops four feet short of the blue line. A shaded ' +
     'rectangle of ice, fourteen feet by twelve, sits inside the attacking zone beginning eight feet beyond the ' +
     'defenceman. A dashed passing route leaves the carrier, passes about seven feet clear of the defenceman, and ' +
     'its arrowhead finishes inside that shaded patch. No player is drawn at the end of the pass. The carrier is ' +
     'drawn as a circle only because this notation has no glyph without a position in it, and the section does not ' +
-    'say who he is.',
+    'say who they are.',
 
   zones: [
     // The patch of ice the pass is aimed at: 14 ft by 12, beginning 9 ft inside the
@@ -306,21 +306,21 @@ const leadTheReceiver = {
     // alone would have manufactured the universal; the claim went with it. Both halves are
     // in passing_and_receiving.md, at the overview (:18) and at Key Takeaway 10 (:816).
     'Passing into space rather than onto the tape: the pass is aimed at the spot where the ' +
-    'receiver’s stick will be when the puck arrives, and the gap between the end of his ' +
+    'receiver’s stick will be when the puck arrives, and the gap between the end of their ' +
     'skating arrow and the end of the pass is the lead. This is not the area pass, which ' +
     'aims at ice nobody owns yet and turns the play into a race.',
 
   describe:
     'The attacking half of the rink, attacking to the right, the opposition net at the right with their ' +
     'goalie in the crease. Two of your players and no other opponents. Your passer stands just inside the ' +
-    'attacking blue line, a little above the middle of the ice, with the puck beside him. Your receiver stands ' +
+    'attacking blue line, a little above the middle of the ice, with the puck beside them. Your receiver stands ' +
     'eighteen feet away, also just inside the blue line but below the middle. A plain skating arrow runs from the ' +
     'receiver about twelve feet up-ice, angled slightly towards the middle. A dashed passing route runs from the ' +
     'passer diagonally up-ice and across, staying about fifteen feet clear of the receiver, and its arrowhead ' +
     'finishes twelve feet beyond the end of the receiver’s arrow and on the straight continuation of it, in the ' +
     'middle of the ice between the two faceoff circles. The two arrowheads point in similar directions, about ' +
     'forty degrees apart, and no player is drawn at either of them. Neither player’s facing is drawn, and the ' +
-    'notation cannot show which side of the receiver is his forehand.',
+    'notation cannot show which side of the receiver is their forehand.',
 
   players: [
     // The opposition goaltender, drawn for one reason: without him the attacking net
@@ -328,7 +328,7 @@ const leadTheReceiver = {
     // He is 29.78 ft from the catch-point and no route goes near him.
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: 1 } },   // (87, 0)
     { id: 'P', pos: 'F', at: LEAD_PASSER,   label: 'you' },
-    { id: 'R', pos: 'F', at: LEAD_RECEIVER, label: 'where he is now' },
+    { id: 'R', pos: 'F', at: LEAD_RECEIVER, label: 'where they are now' },
   ],
 
   routes: [
@@ -424,7 +424,7 @@ const bankPass = {
     'from right to left. Your goalie is in the crease. You stand along the right-hand boards, out towards the ' +
     'corner and about nine feet off the wall, with the puck between you and the boards. An opposition forward, ' +
     'drawn as a solid circle, stands about thirteen feet up-ice of you and towards the middle, exactly on the ' +
-    'straight line between you and your teammate; his stick is not drawn. Your teammate stands further up-ice ' +
+    'straight line between you and your teammate; the forward’s stick is not drawn. Your teammate stands further up-ice ' +
     'again, roughly level with the top of the faceoff circle and about twenty-two feet off the boards, ' +
     'thirty-eight feet from you. The puck’s route is two straight dashed legs meeting at a point on the boards ' +
     'up-ice of you: the first runs from you out into the wall and its arrowhead points at the wall itself, and ' +

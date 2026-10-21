@@ -391,8 +391,8 @@ const collapseCorner = {
     'Both wingers stay high on the points; the centre leaves the high slot to go down as the ' +
     'second body and make it two on one. ' +
     '⚠️ The second body is the one that arrives late and unseen, and this carrier has the puck ' +
-    'at his stick against the boards, with his back to the ice. ' +
-    'Arrive on the puck, or on the ice he wants, or angle him off it — never into his back. ' +
+    'at their stick against the boards, with their back to the ice. ' +
+    'Arrive on the puck, or on the ice the carrier wants, or angle them off it — never into their back. ' +
     // W33: PWHL added — pwhl_rules.txt 43.2 "There is no provision for a minor penalty for
     // checking from behind", 43.5 game misconduct mandatory with the major. CARHA 53(a) starts
     // at a minor plus a game misconduct, so "two minutes alone" still holds in all six books.
@@ -423,15 +423,15 @@ const collapseCorner = {
   describe:
     'The attacking half of the rink, the defended net at the right, with the puck in the ' +
     'strong-side corner at the top of the picture. Five opposition players: the puck carrier ' +
-    'deep in the strong-side corner with the puck drawn at his stick against the boards, so he ' +
-    'is facing the wall with his back to the ice, a forward supporting on the strong-side half-wall, a ' +
+    'deep in the strong-side corner with the puck drawn at their stick against the boards, so they ' +
+    'are facing the wall with their back to the ice, a forward supporting on the strong-side half-wall, a ' +
     'forward at the net front on the weak side of the crease, and their two defencemen at ' +
     'the two points. Six of our own: the strong-side defenceman on the puck about eight feet ' +
     'goal-side of the carrier, the weak-side defenceman on the doorstep between the net-front ' +
     'forward and the goal, the goalie in the crease, both wingers high and just goal-side ' +
     'of the opposing defencemen at the points, and the centre in the high slot. One route: ' +
     'the centre skating from the high slot out to the corner to make it two on one, finishing ' +
-    'inside the carrier and short of him rather than behind him.',
+    'inside the carrier and short of them rather than behind them.',
 
   players: [
     // Opposition. Three forwards low and two defencemen at the points, which is
@@ -471,7 +471,7 @@ const collapseCorner = {
     { id: 'D', pos: 'D', at: D_GOALMOUTH, label: 'the goalmouth' },
     { id: 'C', pos: 'F', at: 'high-slot', label: 'leaves the high slot' },
     { id: 'W', pos: 'F', at: W_STRONG_PT, label: 'holds the point' },
-    { id: 'W', pos: 'F', at: W_WEAK_PT,   label: 'still on his point' },
+    { id: 'W', pos: 'F', at: W_WEAK_PT,   label: 'still on their point' },
   ],
 
   // One route only, because only one thing happens in this frame. Bowed so the
@@ -519,11 +519,11 @@ const collapseHighSlot = {
     'A low zone collapse a beat after the corner battle begins — one of several systems — and ' +
     'the weak-side winger’s collapse is where it succeeds or fails. ' +
     'The centre is the second body in the corner, arriving inside the carrier and not behind ' +
-    'him, because that carrier is facing the boards and cannot see him coming. ' +
-    'The weak-side winger has dropped into the high slot; the strong-side winger holds his ' +
+    'them, because that carrier is facing the boards and cannot see the centre coming. ' +
+    'The weak-side winger has dropped into the high slot; the strong-side winger holds their ' +
     'point, because if both sag the point-to-point pass gives their defenceman a free walk-in. ' +
     'The weak-side point is briefly unmarked on purpose: this system concedes point shots. ' +
-    'The rotation is not available if that winger has already followed his own man down off ' +
+    'The rotation is not available if that winger has already followed their own man down off ' +
     'the point.',
 
   describe:
@@ -541,11 +541,11 @@ const collapseHighSlot = {
     'front, and two defencemen at the points. Our own five are drawn mid-collapse. The centre ' +
     'has arrived on the inside edge of the strong-side corner, about nine feet from the carrier ' +
     'and about the same from the strong-side defenceman, so the carrier now has one of ours ' +
-    'below him and one inside him — that is the two on one. The weak-side winger has come ' +
+    'below them and one inside them — that is the two on one. The weak-side winger has come ' +
     'down from the weak-side point ' +
-    'into the high slot in the middle of the ice. The strong-side winger is still high at his ' +
+    'into the high slot in the middle of the ice. The strong-side winger is still high at their ' +
     'own point, and the weak-side defenceman is still on the doorstep. The opposition ' +
-    'defenceman at the weak-side point now has nobody near him. No routes are drawn.',
+    'defenceman at the weak-side point now has nobody near them. No routes are drawn.',
 
   players: [
     // Unlabelled — see the note on the same glyph in the previous frame.
@@ -561,7 +561,7 @@ const collapseHighSlot = {
     // The centre finishes where frame one's route ended. If these two ever
     // disagree the pair stops being a pair.
     { id: 'C', pos: 'F', at: C_IN_CORNER, label: 'second body' },
-    { id: 'W', pos: 'F', at: W_STRONG_PT, label: 'holds his point' },
+    { id: 'W', pos: 'F', at: W_STRONG_PT, label: 'holds their point' },
     { id: 'W', pos: 'F', at: 'high-slot', label: 'collapsed into the high slot' },
   ],
 
@@ -590,7 +590,7 @@ const walkDownZone = {
   // survives intact and is 16 of the remaining words.
   caption:
     'The walk-down from the point, answered by low zone collapse: the winger follows a few ' +
-    'feet and does not chase, so his route ends in a stop, not an arrowhead. ' +
+    'feet and does not chase, so their route ends in a stop, not an arrowhead. ' +
     'The opposing defenceman reaches the top of the circle, about 35 feet from the goal line, ' +
     'untouched. ' +
     'A coaching choice — man-on-man and hybrid teams answer it differently, so find out your ' +
@@ -600,8 +600,8 @@ const walkDownZone = {
     'The attacking half of the rink, the defended net at the right. The opposition ' +
     'defenceman at the strong-side point has the puck and carries it down the ice to the top ' +
     'of the strong-side faceoff circle, about 35 feet from the goal line. Our strong-side ' +
-    'winger, who started just goal-side of him at the point, moves about a dozen feet with ' +
-    'him and stops, leaving a clear gap between himself and the defenceman he has released. ' +
+    'winger, who started just goal-side of that defenceman at the point, moves about a dozen feet with ' +
+    'them and stops, leaving a clear gap between themselves and the defenceman they have released. ' +
     'The rest of our five have climbed a level with the puck: the centre in the high slot, ' +
     'one defenceman at the net front and the other in the low slot, the weak-side winger on ' +
     'the weak-side point. The opposition have a forward in the strong-side corner, one at the ' +
@@ -660,25 +660,25 @@ const walkDownMan = {
   // marks or the top of the circles" manufactures a false universal about where a
   // team's man-and-zone line sits.
   caption:
-    'The walk-down from the point under man-on-man: the winger goes with him, wherever he ' +
+    'The walk-down from the point under man-on-man: the winger goes with the carrier, wherever the carrier ' +
     'goes, including into the corner — the sharpest practical difference from low zone ' +
     'collapse. Everybody else is on a body too. ' +
     'A hybrid produces nearly this picture, and the difference is only the trigger, usually ' +
     'the faceoff dots, though some teams draw it at the hash marks or the top of the circles, ' +
     'so learn your team’s. ' +
-    'What man coverage costs is a winger in a footrace with no help behind him.',
+    'What man coverage costs is a winger in a footrace with no help behind them.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, and the same walk-down as ' +
     'the previous diagram. The opposition defenceman carries the puck from the strong-side ' +
     'point down to the top of the strong-side faceoff circle. This time our strong-side ' +
-    'winger tracks him the whole way, his route running a few feet goal-side of the carry and ' +
-    'finishing just past it, so he ends between his man and the net. Our other four are each ' +
+    'winger tracks the carrier the whole way, on a route running a few feet goal-side of the carry and ' +
+    'finishing just past it, so the winger ends between their man and the net. Our other four are each ' +
     'within a few feet of an ' +
     'opponent rather than in an area: one defenceman on the forward in the strong-side ' +
     'corner, the other on the forward at the net front, the centre on the forward on the ' +
     'weak-side half-wall, and the weak-side winger on the opposition defenceman at the far ' +
-    'point. Two numbered routes: one, the walk-down; two, the winger going with him.',
+    'point. Two numbered routes: one, the walk-down; two, the winger going with the carrier.',
 
   players: [
     { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point' },
@@ -701,7 +701,7 @@ const walkDownMan = {
     // convention. If that opponent ever moves to the slot, this centre moves with him
     // and nothing here needs rewording.
     { id: 'C', pos: 'F', at: { at: 'half-wall:left', dy: 8 }, label: 'on the third forward' },
-    { id: 'W', pos: 'F', at: WD_WINGER,                       label: 'goes with him' },
+    { id: 'W', pos: 'F', at: WD_WINGER,                       label: 'goes with the carrier' },
     { id: 'W', pos: 'F', at: W_WEAK_PT,                       label: 'on the other D' },
   ],
 
@@ -776,7 +776,7 @@ const boxPlusOne = {
     'Box+1, one of several defensive-zone systems: coaching material calls it the standard ' +
     'introductory structure for young players and beginner adults, and nobody publishes a ' +
     'count of what teams actually run. ' +
-    'It is not a penalty-kill box — that is four players, and this is a five-man ' +
+    'It is not a penalty-kill box — that is four players, and this is a five-player ' +
     'even-strength shape. ' +
     'The box’s depth is fixed, its width is not, so read the width drawn here as one ' +
     'reasonable version, not a measurement.',
@@ -954,7 +954,7 @@ const overload = {
     'corner, and a third forward is alone at the far post on the weak side of the net. All ' +
     'five of our players are on the puck side of the ice: a defenceman squeezing the carrier ' +
     'from below, a defenceman at the strong side of the net front, the centre inside the ' +
-    'carrier, one winger above him cutting off the ice up the wall, and the other winger ' +
+    'carrier, one winger above the carrier cutting off the ice up the wall, and the other winger ' +
     'shifted across into the strong-side high slot. The entire weak side of the zone is ' +
     'empty. One route: a dashed cross-ice pass from the carrier to the attacker at the far ' +
     'post, crossing the slot in front of the crease.',

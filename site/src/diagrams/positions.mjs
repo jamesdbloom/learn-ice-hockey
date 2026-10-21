@@ -103,8 +103,8 @@ const lowZoneCollapse = {
     // absence-of-evidence class that on_ice_communication.md:569 and risk_management.md:164
     // disclose, and center.md carries no such disclosure. If the owner adds one, this
     // caption follows it.
-    'joins him, because two of you on the puck usually wins it; the weak-side winger collapses from ' +
-    'his own point to cover the high slot the centre has vacated, while the weak-side defenceman ' +
+    'joins that defenceman, because two of you on the puck usually wins it; the weak-side winger collapses from ' +
+    'their own point to cover the high slot the centre has vacated, while the weak-side defenceman ' +
     'stays at the goalmouth — two layers with two owners. This is a low zone collapse, a coaching ' +
     'choice rather than a rule of hockey: under man-on-man the wingers follow their check into the ' +
     'corner instead, so find out which one your team plays.',
@@ -114,9 +114,9 @@ const lowZoneCollapse = {
     'carrier deep in the right corner, and the two opposing defencemen at their points near the ' +
     'blue line. Six of your own: the goalie in the crease; the strong-side defenceman in the ' +
     'corner between the carrier and the net; the centre low in the strong-side circle supporting ' +
-    'him; the weak-side defenceman at the goalmouth on the far side of the net; the strong-side ' +
-    'winger high on the right, goal-side of the opposing defenceman he is covering; and the ' +
-    'weak-side winger, who has left his point on the left and is skating to the high slot. The ' +
+    'that defenceman; the weak-side defenceman at the goalmouth on the far side of the net; the strong-side ' +
+    'winger high on the right, goal-side of the opposing defenceman they are covering; and the ' +
+    'weak-side winger, who has left their point on the left and is skating to the high slot. The ' +
     'high slot is shaded. One route: the weak-side winger’s collapse. The opposition forwards ' +
     'other than the carrier are not drawn.',
 
@@ -210,19 +210,19 @@ const swingLow = {
   numbered: true,
 
   caption:
-    'Your defenceman has the puck behind his own net and the centre is swinging low to be the outlet ' +
+    'Your defenceman has the puck behind their own net and the centre is swinging low to be the outlet ' +
     '— inside the faceoff dots and below the hash marks, which in practice means inside the strong-' +
     'side faceoff circle rather than out on the boards, which are the winger’s ice. Having received ' +
-    'it, he carries out through the middle if that lane is clearly open; if it is not, the puck goes ' +
+    'it, the centre carries out through the middle if that lane is clearly open; if it is not, the puck goes ' +
     'to the winger on the boards instead. Low support like this belongs to the conventional swing ' +
     'breakout, a coaching choice and not a rule: under a centre fly the weak-side winger drops in to ' +
     'take this job instead, so find out which one your team plays.',
 
   describe:
     'The defending half of the rink, your own net at the right, and no opposition drawn — this is ' +
-    'the free-space case. Three of your own players: the defenceman behind his own net with the ' +
+    'the free-space case. Three of your own players: the defenceman behind their own net with the ' +
     'puck; the centre low in the strong-side faceoff circle, inside the dot and below the hash ' +
-    'marks; and the strong-side winger out on the boards above him. Two numbered routes: one, the ' +
+    'marks; and the strong-side winger out on the boards above the centre. Two numbered routes: one, the ' +
     'pass from the defenceman to the centre, passing above the goal frame rather than across the ' +
     'goalmouth; two, the centre carrying out through the middle of the ice toward the blue line.',
 
@@ -299,9 +299,9 @@ const backcheckMiddleLane = {
   width: 900,
 
   caption:
-    'A rush coming back at you, and the centre’s backcheck. He comes back on the defensive side of ' +
-    'the middle-lane driver — between him and his own net — rather than chasing behind his shoulder, ' +
-    'and does not swing wide to help on the carrier, because the defencemen have him and the middle ' +
+    'A rush coming back at you, and the centre’s backcheck. The centre comes back on the defensive side of ' +
+    'the middle-lane driver — between that driver and your own net — rather than chasing behind the driver’s shoulder, ' +
+    'and does not swing wide to help on the carrier, because the defencemen have the carrier and the middle ' +
     'is the ice they are protecting. They are drawn retreating together with that middle sealed. ' +
     'Which backchecker takes which lane is a coaching choice and not a law: some teams give the ' +
     'middle to the first man back, whoever that is, and others pick up man-on-man from the puck ' +
@@ -310,10 +310,10 @@ const backcheckMiddleLane = {
   describe:
     'The defending half of the rink, your own net at the right, with three opposition forwards ' +
     'attacking from the left. The puck carrier is wide on the right; a second forward comes up the ' +
-    'middle of the ice behind him, with a route showing him crossing the blue line late, behind the ' +
+    'middle of the ice behind the carrier, with a route showing that forward crossing the blue line late, behind the ' +
     'play; a third is wide on the left. Coming back: the centre in the middle lane, already ' +
     'goal-side of the middle ' +
-    'driver and between him and his own net; a winger in each outside lane, goal-side of the ' +
+    'driver and between that driver and your own net; a winger in each outside lane, goal-side of the ' +
     'attacker in that lane; the two defencemen retreating together in front of them, keeping the ' +
     'middle of the ice sealed; and the goalie in the crease.',
 
@@ -332,7 +332,7 @@ const backcheckMiddleLane = {
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:left', dy: -2 } }, // (20, -24)
 
     // "Come back on the defensive side of your man — between them and your own net."
-    { id: 'C',  pos: 'F', at: { at: 'high-slot', dx: -24, dy: -4 }, label: 'inside his man' },  // (45, -4)
+    { id: 'C',  pos: 'F', at: { at: 'high-slot', dx: -24, dy: -4 }, label: 'inside your man' },  // (45, -4)
     { id: 'RW', pos: 'F', at: { at: 'neutral-dot:right', dx: 16, dy: 8 }, label: 'outside lane' },  // (36, 30)
     { id: 'LW', pos: 'F', at: { at: 'neutral-dot:left', dx: 14, dy: -6 }, label: 'outside lane' }, // (34, -28)
     { id: 'D',  pos: 'D', at: { at: 'top-of-circle:right', dx: -2, dy: -12 } }, // (52, 10)
@@ -485,7 +485,7 @@ const wingerHighThenWall = {
   caption:
     'A winger’s defensive-zone job, drawn at both ends of the one move that defines it. While the ' +
     'other team has the puck you are high on your side, level with the opposing defenceman you are ' +
-    'covering and between him and the slot — that is what "stay high" means, not halfway to the ' +
+    'covering and between them and the slot — that is what "stay high" means, not halfway to the ' +
     'corner. ' +
     // The hedge on the DEFENSIVE half of the picture. The caption used to hedge only
     // the breakout half, which left the thing the diagram spends most of its ice on —
@@ -494,8 +494,8 @@ const wingerHighThenWall = {
     // winger.md's own Convention line and the sibling captions on
     // centre-low-zone-collapse, dz-collapse-corner and dz-walk-down-zone.
     'Staying high out of the corner rather than going down into it is the low zone collapse job, a ' +
-    'coaching choice rather than a rule of hockey: under man-on-man you follow your man wherever he ' +
-    'goes, corner included, so find out which one your team plays. It expires the moment your team ' +
+    'coaching choice rather than a rule of hockey: under man-on-man you follow your man wherever they ' +
+    'go, corner included, so find out which one your team plays. It expires the moment your team ' +
     'wins the battle below you, and you come down the wall to between the hash marks and the goal ' +
     'line, stick on the ice and feet already moving — but do not leave the point until the battle is ' +
     // W33: stretch / flying-winger limb added — both hosts carry it (winger.md :29/:64/:175
@@ -506,10 +506,10 @@ const wingerHighThenWall = {
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition players: a ' +
-    'defenceman at his point just inside the blue line on the right side, and a forechecking ' +
+    'defenceman at their point just inside the blue line on the right side, and a forechecking ' +
     'forward in the right corner. Three of your own: the goalie in the crease; a defenceman ' +
     'in the corner contesting the puck; and the right winger high on the right side, goal-side of ' +
-    'the opposing defenceman he is covering. One route runs from the winger down the wall, ' +
+    'the opposing defenceman they are covering. One route runs from the winger down the wall, ' +
     'hugging the boards, to the outlet position on the boards between the hash marks and the goal ' +
     'line, arriving above the corner battle rather than in it. The centre and the weak-side ' +
     'players are not drawn.',
@@ -616,7 +616,7 @@ const wingerOffensiveZone = {
   width: 900,
 
   caption:
-    'Where a winger works in the offensive zone, and the one layer that is not his. The half-wall ' +
+    'Where a winger works in the offensive zone, and the one layer that is not theirs. The half-wall ' +
     '— the boards roughly level with the faceoff dot — is your home base; your own faceoff circle ' +
     'is where the one-timer off a cross-ice pass arrives; the side of the net is where rebounds ' +
     'and tip-ins live, so time the drive drawn here — in from your circle or the wall — to arrive ' +
@@ -708,7 +708,7 @@ const wingerOffensiveZone = {
     'where it is by hitting it, and arrive head up with your chin off your chest: never ' +
     'meet a goal post head first, and never duck into one. Your eyes are on the puck by ' +
     'design, so a defender walking you sideways is a body you are feeling rather than ' +
-    'watching, and the path he walks you along has the steel frame at one edge. USA ' +
+    'watching, and the path they walk you along has the steel frame at one edge. USA ' +
     'Hockey names the goal post beside the boards as the same head-down, head-first ' +
     'cervical spine injury, and says that injury can occur at walking speed — so take ' +
     'either one with an arm, a leg, anything but your head first. That holds in every ' +
@@ -722,7 +722,7 @@ const wingerOffensiveZone = {
     'toward the net, stopping short of the crease, and the left winger’s skate to the side of the ' +
     'net, arriving beside it rather than in the blue paint. The high slot, between the faceoff ' +
     'dots and the top of the circles, is shaded and empty — it is the layer a winger stays ' +
-    'out of unless his team’s structure sends him there. The ' +
+    'out of unless their team’s structure sends them there. The ' +
     'opposition defence is not drawn.',
 
   zones: [{ points: HIGH_SLOT, label: 'the high slot' }],
@@ -802,9 +802,9 @@ const twoOnOne = {
   describe:
     'The defending half of the rink, your own net at the right. Two opposition forwards attack ' +
     'from the left, one wide on each side of the ice, with the puck on the right-hand one; a ' +
-    'route shows him carrying toward the top of the circle. Between and ahead of them is a single ' +
+    'route shows that forward carrying toward the top of the circle. Between and ahead of them is a single ' +
     'defenceman, sitting in the passing lane that joins the two attackers, with a backward ' +
-    'skating route showing him retreating under control rather than stepping up. The goalie ' +
+    'skating route showing the defenceman retreating under control rather than stepping up. The goalie ' +
     'is in the crease. Nobody is backchecking.',
 
   players: [
@@ -855,7 +855,7 @@ const threeDepths = {
     'The three depths a defenceman plays at in the offensive zone. Just inside the blue line is the ' +
     'default, and where both of you normally are. The top of the faceoff circle is the activated ' +
     'position: the strong-side defenceman may step down to it to support a cycle or create a shot, ' +
-    'but only when there is no immediate threat of a turnover, and from there he can still recover. ' +
+    'but only when there is no immediate threat of a turnover, and from there they can still recover. ' +
     'Below the circles you are a fourth forward and cannot recover if it turns over, which is why ' +
     'that band is drawn empty. Only one defenceman steps in at a time and the other holds the line as' +
     ' the safety — a near-universal coaching convention rather than a rule, and coaches do call ' +
@@ -991,8 +991,8 @@ const dToD = {
   describe:
     'The defending half of the rink, your own net at the right. Two of your defencemen stand low ' +
     'in the zone, one on each side, level with the faceoff dots and toward the goal line, with ' +
-    'the puck on the right-hand one. A passing route runs from him around behind his own net, ' +
-    'dipping below the goal line and passing behind the goal frame, to his partner on the far ' +
+    'the puck on the right-hand one. A passing route runs from that defenceman around behind their own net, ' +
+    'dipping below the goal line and passing behind the goal frame, to their partner on the far ' +
     'side. The goalie is in the crease and an opposition forward stands in front of the net in ' +
     'the lane the pass is deliberately not taking. The slot is shaded: a narrow band down the middle ' +
     'of the ice between the inner edges of the two faceoff circles, running from the top of the ' +
@@ -1123,11 +1123,11 @@ const wingerDzRim = {
 
   caption:
     'Beating a checker who has sealed you against the boards, in your own end. Your body is between ' +
-    'the puck and him, which is why the puck is drawn on the far side of you from the pressure — but ' +
-    'keep your feet wide and low and still moving: a stationary player on the wall gets pinned. He is' +
-    ' inside you, containing rather than chasing, so the ice he is taking away is the middle. That is' +
+    'the puck and the checker, which is why the puck is drawn on the far side of you from the pressure — but ' +
+    'keep your feet wide and low and still moving: a stationary player on the wall gets pinned. The checker is' +
+    ' inside you, containing rather than chasing, so the ice they are taking away is the middle. That is' +
     ' exactly the checker a RIM beats: a hard shot along the boards that follows the curve of the ' +
-    'rink past him to a teammate further around, because it goes where he is not. It is a valid play ' +
+    'rink past them to a teammate further around, because it goes where they are not. It is a valid play ' +
     'and not an admission of failure. Decide where the puck is going while you are still skating to ' +
     'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to the checker and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
@@ -1138,8 +1138,8 @@ const wingerDzRim = {
     'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +
     'Your right winger is on the wall, level with the faceoff dot, ' +
     'holding the puck on the ' +
-    'boards side of his body. An opposition forward is a little inside him and a little up-ice, ' +
-    'between him and the middle of the ice, sealing him to the wall. A second player of yours ' +
+    'boards side of their body. An opposition forward is a little inside the winger and a little up-ice, ' +
+    'between the winger and the middle of the ice, sealing them to the wall. A second player of yours ' +
     'waits on the same boards up at the blue line. A passing route runs from the winger along the ' +
     'boards, bowed into the wall so it hugs it, past the checker and up to that teammate.',
 
@@ -1188,12 +1188,12 @@ const wingerDzReverse = {
 
   caption:
     'Beating a checker who has over-committed, in your own end — the other half of the rim-or-reverse' +
-    ' decision. He has not sealed you: he has skated past you up the wall, carrying his momentum with' +
-    ' him. The ice he has just left is behind you, so the play that beats him is a REVERSE — the puck' +
+    ' decision. The checker has not sealed you: they have skated past you up the wall, carrying their momentum with' +
+    ' them. The ice they have just left is behind you, so the play that beats them is a REVERSE — the puck' +
     ' sent back the way it came, against the direction the pressure is flowing, to a teammate ' +
     'arriving behind you. Read which of the two you are facing before the puck arrives, because the ' +
-    'plays are opposites and the wrong one hands him the puck in your own end. Feet wide and moving, ' +
-    'side-on with your hip and backside into him, puck on the far side of your body — a stationary player on the wall gets ' +
+    'plays are opposites and the wrong one hands them the puck in your own end. Feet wide and moving, ' +
+    'side-on with your hip and backside into the checker, puck on the far side of your body — a stationary player on the wall gets ' +
     'pinned whichever mistake the checker is making. Call for it — "reverse!" — because the teammate ' +
     'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
     'back to the checker and never duck. Those are two different injuries — a hit from behind you cannot' +
@@ -1205,8 +1205,8 @@ const wingerDzReverse = {
     'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +
     'Your right winger is on the wall, level with the faceoff dot, ' +
     'with the puck on the ' +
-    'boards side of his body. An opposition forward has skated past him and is now up-ice of him ' +
-    'and slightly inside, his momentum carrying him away from the puck. Your defenceman is ' +
+    'boards side of their body. An opposition forward has skated past the winger and is now up-ice of the winger ' +
+    'and slightly inside, the forward’s momentum carrying them away from the puck. Your defenceman is ' +
     'arriving behind the winger, deeper toward the corner. A passing route runs from the winger ' +
     'back down the boards to that defenceman, in the opposite direction to the checker.',
 
@@ -1305,8 +1305,8 @@ const offWingOpenToTheIce = {
     'The defending half of the rink, your own net at the right. Your goalie is in the crease ' +
     'and your defenceman is in the right corner with the puck already moved. Your winger stands on ' +
     'the right side a step or two off the boards rather than flush against them, level with the ' +
-    'faceoff dot, with the puck on the inside of his body. An opposition forechecker is up-ice ' +
-    'of him and hard against the boards, arriving. Three routes leave the winger at once, and ' +
+    'faceoff dot, with the puck on the inside of their body. An opposition forechecker is up-ice ' +
+    'of the winger and hard against the boards, arriving. Three routes leave the winger at once, and ' +
     'they are alternatives rather than a sequence: one route carrying the puck inside and up ' +
     'the ice, one pass into the middle to the centre, and one pass back down to the defenceman ' +
     'in the corner. The section lists four options and the picture draws three routes, without '

@@ -105,8 +105,8 @@ const forecheckAngling = {
 
   caption:
     'The skill every forecheck here assumes: skate at the space you want to deny, not at the ' +
-    'puck. One forechecker curls in from the weak side on a carrier retrieving behind his own ' +
-    'net, cutting that side off and forcing him back toward the strong-side wall. No contact is ' +
+    'puck. One forechecker curls in from the weak side on a carrier retrieving behind their own ' +
+    'net, cutting that side off and forcing them back toward the strong-side wall. No contact is ' +
     'drawn, because the aim is to eliminate options rather than land a hit. Which side to take ' +
     'away is a coaching choice, not a rule — the common default takes the middle, some coaches ' +
     'invert it, so find out which your team plays before your first shift.',
@@ -114,8 +114,8 @@ const forecheckAngling = {
   describe:
     'Attacking half of the rink, the opposition net at the right. Three players: the goalie ' +
     'in the crease, their defenceman behind the net with the puck, and one forechecker below and ' +
-    'to the near side of him. A single route runs from the forechecker up and across, curving to ' +
-    'finish on the far side of the defenceman from the boards, well short of him, in open ice. No ' +
+    'to the near side of them. A single route runs from the forechecker up and across, curving to ' +
+    'finish on the far side of the defenceman from the boards, well short of them, in open ice. No ' +
     'route is drawn for the defenceman and no contact is shown.',
 
   players: [
@@ -189,7 +189,7 @@ const forecheck212 = {
     // HC 7.3 "applies only in divisions of U13 and below, in female hockey, and any other
     // divisions approved by a Member of Hockey Canada" (the rule's own sentence opens "This
     // rule applies only..."; the elided form is the one the owning section carries inline).
-    '\u26A0\uFE0F Going hard at the carrier does not mean going through him. The carrier drawn here is behind his own net and about to turn his back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle him off it, and never finish into his back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    '\u26A0\uFE0F Going hard at the carrier does not mean going through them. The carrier drawn here is behind their own net and about to turn their back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +
@@ -334,7 +334,7 @@ const forecheck212Stacked = {
     // from the same side to overload one corner", against a carrier it names as being behind
     // his own net -- so the caption is the thing making the claim, and the counterweight is
     // attached to the caption's instruction rather than to a route. Glyph last, same reason.
-    '\u26A0\uFE0F Sending two forwards into one corner is not a licence to go through the man in it. The carrier drawn here is behind his own net and about to turn his back to the forechecker, so the onus is on the arriving player: take the puck, take the ice, or angle him off it, and never finish into his back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    '\u26A0\uFE0F Sending two forwards into one corner is not a licence to go through the player in it. The carrier drawn here is behind their own net and about to turn their back to the forechecker, so the onus is on the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -1032,8 +1032,8 @@ const forecheckRolesRotate = {
     'picture is that nobody has swapped position — they have swapped job. Each glyph carries the ' +
     'role that player has just taken; the label beside it says which role they held a second ' +
     'earlier. The forward who was F1 has been beaten by the pass and is now behind the play, so ' +
-    'he climbs into the vacated support role as the new F3. The forward who was F2 is nearest the ' +
-    'new carrier, so he is the new F1 and closes on him. The forward who was F3 comes down off ' +
+    'they climb into the vacated support role as the new F3. The forward who was F2 is nearest the ' +
+    'new carrier, so they are the new F1 and close on the carrier. The forward who was F3 comes down off ' +
     'the high middle as the new F2. Which body ends up in which role is settled by who is nearest ' +
     'the puck and by nothing else, so this is one instance and not a pattern to memorise. The ' +
     'shape drawn around them is the 2-1-2 this guide takes as its standard forecheck; the rotation ' +
@@ -1063,18 +1063,18 @@ const forecheckRolesRotate = {
     // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
     // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
     // one voiced unit, and _split_paragraph breaks only at sentence ends.
-    '⚠️ Being the new F1 is not a licence to go through the man. He is picking the puck up in his own corner and is about to turn his back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle him off it, and never finish into his back. Find out first whether you may body check in this game — the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    '⚠️ Being the new F1 is not a licence to go through the carrier. They are picking the puck up in their own corner and are about to turn their back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game — the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
-    'the forecheck diagrams: the defenceman D1 behind the net, who has just passed; his partner D2 taking ' +
+    'the forecheck diagrams: the defenceman D1 behind the net, who has just passed; their partner D2 taking ' +
     'that pass in the far corner; the wingers W1 and W2 on the two half-walls; and the goalie in the ' +
     'crease. Five own players. The three forwards are labelled twice over — the letters inside the glyphs ' +
     'are the roles they have just taken and the words beside them are the roles they held before the pass. ' +
     'Deep on the near side of the net stands the forward marked F3, labelled "was F1, beaten", with an ' +
-    'arrow taking him up ice towards the high middle. Deep on the far side stands the forward marked F1, ' +
+    'arrow taking them up ice towards the high middle. Deep on the far side stands the forward marked F1, ' +
     'labelled "was F2, closest", with a short route ending in two bars towards the new carrier. In the ' +
-    'high middle stands the forward marked F2, labelled "was F3, high", with an arrow taking him down and ' +
+    'high middle stands the forward marked F2, labelled "was F3, high", with an arrow taking them down and ' +
     'across to the far side. The two defencemen are on the offensive blue line at the points, with no ' +
     'routes at all. A dashed pass runs from behind the net, round the back of the goal, to the far corner.',
 
@@ -1156,16 +1156,16 @@ const forecheck23Lock = {
   caption:
     'The 2-3, drawn against the same puck carrier as the other forecheck diagrams: two forwards ' +
     'in on the puck, and three players across the ice behind them. The third forward is the whole ' +
-    'of the difference — instead of joining the attack he sits up the wall above their winger, ' +
-    'and if the puck is not won he slides back into line with the two defencemen, which is the ' +
-    'arrow drawn from him. That buys two-man pressure with three players between the puck and ' +
+    'of the difference — instead of joining the attack they sit up the wall above the opposing winger, ' +
+    'and if the puck is not won they slide back into line with the two defencemen, which is the ' +
+    'arrow drawn from them. That buys two-player pressure with three players between the puck and ' +
     'your net; it costs the fifth attacker in the offensive zone and needs a winger with the ' +
     'positional discipline and the skating to do the job. The famous version is the left-wing ' +
     'lock, and a modern variant locks whichever winger is highest instead, so which bodies fill ' +
     'these three jobs is a bench call and not a property of the shape. The default assumed ' +
     'throughout this document is a 2-1-2, so find out which your team plays. Which lane the ' +
-    'locking winger actually fills is a coaching detail this does not settle, and his arrow stops ' +
-    'short of the line on purpose, because he goes back only if the puck is not won. ' +
+    'locking winger actually fills is a coaching detail this does not settle, and their arrow stops ' +
+    'short of the line on purpose, because they go back only if the puck is not won. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs two forwards in on a carrier
     // the picture puts behind his own net, so it carries the same exposure as forecheck-212 and
     // the same settled scope sentence -- which is also what the section itself does: '"Hard"
@@ -1185,7 +1185,7 @@ const forecheck23Lock = {
     // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
     // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
     // one voiced unit, and _split_paragraph breaks only at sentence ends.
-    '⚠️ Forechecking hard describes the speed of your arrival, not what you do when you get there. The carrier drawn here is behind his own net and about to turn his back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle him off it, and never finish into his back. Find out first whether you may body check in this game — the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    '⚠️ Forechecking hard describes the speed of your arrival, not what you do when you get there. The carrier drawn here is behind their own net and about to turn their back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game — the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
@@ -1193,8 +1193,8 @@ const forecheck23Lock = {
     'the far corner, the wingers W1 and W2 on the two half-walls, and the goalie in the crease. Five ' +
     'own players in two groups rather than three: F1 deep at the goal line on the puck side and F2 deep ' +
     'inside the puck-side circle, the two who forecheck; and behind them the two defencemen on the ' +
-    'offensive blue line at the two points. The third forward, F3, is the odd one out — he stands on the ' +
-    'far wall well above the opposing winger there, out of the attack, and a single arrow runs from him ' +
+    'offensive blue line at the two points. The third forward, F3, is the odd one out — they stand on the ' +
+    'far wall well above the opposing winger there, out of the attack, and a single arrow runs from them ' +
     'diagonally back up the ice, finishing short of the blue line between the two defencemen. Nobody else ' +
     'is drawn with a route.',
 

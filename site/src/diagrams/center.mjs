@@ -239,9 +239,9 @@ const outOfTheMiddle = {
     'down the middle of the zone from the left. Three of your own: the centre with the puck in ' +
     'the middle of the ice between the faceoff circles; the strong-side winger high on the ' +
     'boards; and the goalie in the crease. Two routes. The first is the centre carrying the ' +
-    'puck out of the middle and round behind his own net, curving above the crease rather than ' +
+    'puck out of the middle and round behind their own net, curving above the crease rather than ' +
     'across the goalmouth. The second starts where that one finishes and is the outlet pass out ' +
-    'to the winger on the boards, ending short of him. Neither a rim nor a reverse is drawn, ' +
+    'to the winger on the boards, ending short of them. Neither a rim nor a reverse is drawn, ' +
     'and your defencemen are not drawn.',
 
   players: [
@@ -349,7 +349,7 @@ const neutralZoneOutside = {
 
   caption:
     'The middle of the neutral zone, the end you are attacking at the right, the centre carrying with ' +
-    'two opponents closing the middle in front of him. Both drawn routes finish on the outside and ' +
+    'two opponents closing the middle in front of the carrier. Both drawn routes finish on the outside and ' +
     'only one of them happens: a pass to a winger on the wall, or a chip off the boards, stopping ' +
     'short of the blue line because putting the puck in is a different play. That the middle third is ' +
     'where odd-man rushes against you are made is coaching consensus rather than a tracked figure.',
@@ -357,10 +357,10 @@ const neutralZoneOutside = {
   describe:
     'The full sheet, your own net at the left, attacking to the right. Your centre has the ' +
     'puck just short of centre ice, in the middle lane. Two opposition forwards are ahead of ' +
-    'him in the middle, closing. Two of your own forwards are wide, one in each wall lane. ' +
+    'the centre in the middle, closing. Two of your own forwards are wide, one in each wall lane. ' +
     'Both goalies are in their creases. Two routes, both starting on the centre and both ' +
     'alternatives rather than a sequence: a pass out to the wide forward on the near side, ' +
-    'ending short of him, and a chip to the near boards, finishing at the wall inside the ' +
+    'ending short of that forward, and a chip to the near boards, finishing at the wall inside the ' +
     'neutral zone and well short of the attacking blue line. Your defencemen and theirs are ' +
     'not drawn.',
 
@@ -677,14 +677,14 @@ const decidingFromTheMiddle = {
     'at the right. No opponent is drawn at all, which is the case this describes rather than a claim ' +
     'about how much time you really have. The point is the ice the carrier stands on: from the middle ' +
     'lane a winger is a pass away on each side and both of your own defencemen are behind you and in ' +
-    'view. Head up — a carrier looking down through the middle cannot brace for contact he has not ' +
+    'view. Head up — a carrier looking down through the middle cannot brace for contact they have not ' +
     'seen.',
 
   describe:
     'The full sheet, your own net at the left, attacking to the right. Your centre has the ' +
     'puck in the middle lane of the neutral zone, a little short of centre ice. Two of ' +
-    'your own forwards are wide and ahead of him, one in each wall lane. Your two ' +
-    'defencemen are behind him, inside your own blue line, one either side of the middle. ' +
+    'your own forwards are wide and ahead of the centre, one in each wall lane. Your two ' +
+    'defencemen are behind the centre, inside your own blue line, one either side of the middle. ' +
     'Both goalies are in their creases. No opposition skaters are drawn — this is the ' +
     'free-space case. Three routes, all starting on the centre and all alternatives rather ' +
     'than a sequence: the centre carrying the puck straight up the middle, finishing well ' +

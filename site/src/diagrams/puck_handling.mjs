@@ -265,7 +265,7 @@ const puckOnTheFarSide = {
     'Puck protection in open ice; the geometry is the ' +
     'same anywhere on the sheet. The checker ' +
     'is nearer the middle of the ice and the puck is on the other side of ' +
-    'you, so your body is between the two: nine and a half feet from him to you, fifteen to the ' +
+    'you, so your body is between the two: nine and a half feet from the checker to you, fifteen to the ' +
     'puck. ' +
     'Which way you are turned ' +
     'is not drawn — a glyph here has no front and no back — so read this as where ' +
@@ -295,9 +295,9 @@ const puckOnTheFarSide = {
     'The attacking half of the rink, the opposition net at the right and their goalie in the ' +
     'crease. Two skaters, both in open ice toward the top of the picture, between the blue line and ' +
     'the faceoff circle and well clear of the boards. An own-team forward, an open circle, is the ' +
-    'carrier. An opposition forward, a solid circle, stands about nine and a half feet from him, ' +
-    'below and slightly ahead of him — that is, on the side nearer the middle of the ice. The puck ' +
-    'is a small solid dot drawn just under six feet from the carrier on the opposite side of him ' +
+    'carrier. An opposition forward, a solid circle, stands about nine and a half feet from the carrier, ' +
+    'below and slightly ahead of them — that is, on the side nearer the middle of the ice. The puck ' +
+    'is a small solid dot drawn just under six feet from the carrier on the opposite side of them ' +
     'from that opponent, toward the boards, so the carrier\'s glyph lies between the puck and the ' +
     'checker and the puck is about fifteen feet from the checker. No routes are drawn, no region is ' +
     'shaded, and no stick, head or body facing is drawn, because the notation has symbols for none ' +
@@ -505,18 +505,18 @@ const wherethePuckIs = {
     '⚠️ The instruction is the same wherever you are standing: do not keep hold of the puck. Knock it ' +
     'straight down at your feet in one ' +
     'continuous motion and play it with your skate or your blade. ' +
-    'And your goalie is on the ice in this picture, deliberately. With him pulled for an ' +
+    'And your goalie is on the ice in this picture, deliberately. With the goalie pulled for an ' +
     'extra attacker the price is worse rather than the same.',
 
   describe:
     'Your own defending end, your net at the right. The goal crease is drawn as the rink itself ' +
     'draws it, a shaded blue area in front of the goal with a red outline, eight feet wide and six ' +
     'feet deep. Your goalie stands inside it, pushed off to one side of the goal mouth. The ' +
-    'puck is a small solid dot drawn inside the crease on the other side of the mouth from him, ' +
-    'clear of its edges, about five feet from him. One of your own skaters, an open triangle and ' +
+    'puck is a small solid dot drawn inside the crease on the other side of the mouth from them, ' +
+    'clear of its edges, about five feet from the goalie. One of your own skaters, an open triangle and ' +
     'so an own-team defenceman, ' +
     'stands about six feet clear of the nearest corner of the crease, up and to the side of it, ' +
-    'with no part of his ' +
+    'with no part of their ' +
     'glyph touching the paint. No opposition players are drawn, no routes are drawn, and no shaded ' +
     'region has been added: the only shaded area in the picture is the crease, which is a real ' +
     'marking on a real rink.',
@@ -781,7 +781,7 @@ const youCannotBeatTwo = {
     'first defenceman. There is a third option in this section and it is not drawn. Protect the ' +
     'puck, take the contact and wait for support. Standing still has no symbol here. ' +
     'Read this as one instant and not as a promise: the teammate ' +
-    'shows what "left open" means, not that he will be there. The two opponents’ shapes were ' +
+    'shows what "left open" means, not that they will be there. The two opponents’ shapes were ' +
     'forced by the notation; the section says ' +
     'only that a second defender is arriving. ' +
     '⚠️ And protecting is a way to buy a second, not a place to live: every second you hold the ' +
@@ -793,18 +793,18 @@ const youCannotBeatTwo = {
   describe:
     'The attacking half of the rink, the opposition net at the right and their goalie in the ' +
     'crease. An own-team forward, an open circle, has the puck wide toward the top of the picture, ' +
-    'inside the blue line, with the puck drawn as a small solid dot on the boards side of him. An ' +
-    'opposition defenceman, a solid triangle, stands about ten feet away, up-ice of him and a ' +
+    'inside the blue line, with the puck drawn as a small solid dot on the boards side of them. An ' +
+    'opposition defenceman, a solid triangle, stands about ten feet away, up-ice of the carrier and a ' +
     'couple of feet nearer the middle of the ice. A second opposition player, a solid circle, ' +
     'stands out in the middle of the ice, ' +
     'with a plain route running up toward the carrier that stops about twelve ' +
-    'feet short of him and ends in two short bars rather than an arrowhead. A second own-team forward stands in ' +
+    'feet short of the carrier and ends in two short bars rather than an arrowhead. A second own-team forward stands in ' +
     'the middle of the ice, about twelve and a half feet from where that opponent is, in the ice ' +
-    'he has left. ' +
+    'the opponent has left. ' +
     'Two dashed puck routes leave the carrier and go different ways: one down and across toward ' +
-    'that teammate, ending about six feet short of him, and one curving up and out, round the ' +
+    'that teammate, ending about six feet short of them, and one curving up and out, round the ' +
     'boards side of the defenceman, finishing in ' +
-    'open ice near the wall about ten feet behind him. The carrier has no route of his own. No third route is drawn, and no ' +
+    'open ice near the wall about ten feet behind the defenceman. The carrier has no route of their own. No third route is drawn, and no ' +
     'region is shaded.',
 
   players: [
@@ -1019,7 +1019,7 @@ const theLastPlayerBack = {
     'forwards are up on you, and the shaded ice behind you holds none of your skaters: the ' +
     'only player ' +
     'in it is your goalie. Lose the puck here and the two of them go ' +
-    'the other way with nobody but him in front of them. So the instruction ' +
+    'the other way with nobody but the goalie in front of them. So the instruction ' +
     'is a conditional rather than a ban on carrying — if losing the puck means an odd-man rush ' +
     'against you, the move is off, always. ' +
     'The shading is what is behind you now, not a prediction of the rush; a plan view ' +
@@ -1041,19 +1041,19 @@ const theLastPlayerBack = {
     SHOULDER_TAIL,
 
   describe:
-    'The whole sheet. Your own net is at the left with your goalie in his crease, and the net ' +
-    'you are attacking is at the right with their goalie in his. One of your own defencemen, an ' +
+    'The whole sheet. Your own net is at the left with your goalie in the crease, and the net ' +
+    'you are attacking is at the right with their goalie in theirs. One of your own defencemen, an ' +
     'open triangle, has the puck in the neutral zone a little to your own side of the centre red ' +
-    'line and toward the top of the picture; the puck is a small solid dot about six feet from him, ' +
-    'on the opposite side of him from the pressure. Two opposition forwards, solid circles, stand ' +
-    'up-ice of him toward the middle of the sheet, about sixteen feet apart from each other. The ' +
-    'nearer of the two has a plain route running toward him that stops about eight feet short and ' +
+    'line and toward the top of the picture; the puck is a small solid dot about six feet from the defenceman, ' +
+    'on the opposite side of them from the pressure. Two opposition forwards, solid circles, stand ' +
+    'up-ice of the defenceman toward the middle of the sheet, about sixteen feet apart from each other. The ' +
+    'nearer of the two has a plain route running toward the carrier that stops about eight feet short and ' +
     'ends in two short bars rather than an arrowhead. Two of your own forwards, open circles, stand ' +
     'well up the ice inside the attacking zone. Everything behind the defenceman — from a line a few ' +
-    'feet behind him back to your own end boards, across most of the width of the ice — is shaded ' +
+    'feet behind them back to your own end boards, across most of the width of the ice — is shaded ' +
     'red with a dashed edge and carries no label; the only player standing inside it is your own ' +
     'goalie. The remaining skaters on both teams are not drawn, because the section does not ' +
-    'fix where they stand. No other routes are drawn, and the carrier has none of his own.',
+    'fix where they stand. No other routes are drawn, and the carrier has none of their own.',
 
   zones: [
     { points: LAST_BEHIND, danger: true },
