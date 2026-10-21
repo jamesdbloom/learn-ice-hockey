@@ -185,7 +185,7 @@ const wallReception = {
     // adopted verbatim through to "with no head contact at all" — so the caption and the two
     // spoken body sites cannot drift. No count in this caption names the shoulder.
     '⚠️ Looking does not protect you; position does. A reception on the wall is a reception into ' +
-    'head-on contact with the boards. Never turn your back to the checker, and ' +
+    'head-on contact with the boards. Never turn your back to anyone coming at you, and ' +
     'never duck. Get your skates parallel to the wall and take it on your forearm and hip, head up ' +
     'and chin off your chest — not on the point of your shoulder, and not the whole shoulder if ' +
     'you can help it. If you are already facing the ' +

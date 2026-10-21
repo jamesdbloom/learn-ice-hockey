@@ -393,7 +393,7 @@ Your **gap** is the distance between the defender and you. Reading a defender is
 - **Standing up versus backing off at the line.** Standing up takes the entry away: chip and chase, pass laterally to a teammate entering in another lane, or regroup rather than forcing it. If you chase, chase the puck, not the player, and pull up if you can see their numbers. Backing off gives you the line and takes the middle. (**Stepping up** is challenging forward in the neutral zone or at your own line; a **pinch** is stepping *down* from the *offensive* blue line.)
 - **Their stick.** An active stick in the middle lane protects the middle; a trailing or outside stick means the middle may be open. A stick is easy to move, so this is the weakest cue — weight it below the feet.
 
-The gap figures — one to one and a half stick lengths tight, two to three ordinary through the neutral zone — are coaching convention, not measurement, and the coaching pages that print numbers disagree. [Defending the Rush](../systems/defending_the_rush.md) sets out the scale and which published pages back or contradict each figure; [Neutral Zone Systems](../systems/neutral_zone_systems.md) covers why a tight gap is a five-man job.
+The gap figures — one to one and a half stick lengths tight, two to three ordinary through the neutral zone — are coaching convention, not measurement, and the coaching pages that print numbers disagree. [Defending the Rush](../systems/defending_the_rush.md) sets out the scale and which published pages back or contradict each figure; [Neutral Zone Systems](../systems/neutral_zone_systems.md) covers why a tight gap is a five-player job.
 
 ![](diagram:entry-outside-shoulder)
 

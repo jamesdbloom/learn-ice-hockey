@@ -207,7 +207,7 @@ const loosePuckWhoGoes = {
     // wording with the word order shuffled and no quotation marks, which is invisible to
     // check_quote_drift.py. The source's own "Even a light hit" carries the not-only-fast-hits
     // point that the old trailing "even when the hit is light" was carrying by paraphrase.
-    'contact with the boards or the goal post. A back turned to the checker is the ' +
+    'contact with the boards or the goal post. A back turned to anyone coming at you is the ' +
     'other: it makes the contact a hit from behind. USA Hockey addresses its warning about those ' +
     'to the checker delivering one: "Even a light hit from behind could inflict a severe head or ' +
     'neck injury." Neither warning depends on the ' +
@@ -217,7 +217,7 @@ const loosePuckWhoGoes = {
     // would read as qualifying them.
     'skates parallel to it, take the contact on your forearm and hip — and ' +
     SHOULDER_NOT_THE_SURFACE + ' — head up and chin off ' +
-    'your chest. Never turn your back to the checker, and never duck.',
+    'your chest. Never turn your back to anyone coming at you, and never duck.',
 
   describe:
     'Your own end zone, the net at the right, your goalie in the crease. A loose puck sits ' +

@@ -302,7 +302,7 @@ Action: Cut off the passing options and force the puck carrier wide toward the b
 Convention: Lane-blocking belongs to a containment structure — a 1-2-2, a 1-2-2 trap or a 1-3-1 — and is not a law of hockey
 Options: Under an aggressive press the lane-blocking instruction reverses: forwards hunt the puck and the weak-side winger does leave the lane
 Action: Find out which neutral-zone system your team plays and what the call is for switching — most run two or three depending on the score and the shift
-Risk: Leave your lane under containment and you open a seam the single defenceman behind their three-man line cannot cover
+Risk: Leave your lane under containment and you open a seam the single defenceman behind their three-player line cannot cover
 Goal: Prevent a clean entry — force a difficult pass, force them wide, or force a dump-in
 ```
 
@@ -320,7 +320,7 @@ Goal: Prevent a clean entry — force a difficult pass, force them wide, or forc
 
 **Goal:** Prevent a clean entry into your defensive zone. Force the opponent to make a difficult pass, go wide, or dump the puck in.
 
-**Key considerations:** Under a containment structure, blocking lanes is more effective than chasing: if you leave your lane to pressure the puck, you create a gap that the opponent will exploit, and the single defenceman behind their three-man line cannot cover two lanes. Stay disciplined. Under a press that trade is reversed deliberately — you accept the gap in exchange for winning the puck back sooner — so the discipline there is to pressure *together* rather than one player freelancing.
+**Key considerations:** Under a containment structure, blocking lanes is more effective than chasing: if you leave your lane to pressure the puck, you create a gap that the opponent will exploit, and the single defenceman behind their three-player line cannot cover two lanes. Stay disciplined. Under a press that trade is reversed deliberately — you accept the gap in exchange for winning the puck back sooner — so the discipline there is to pressure *together* rather than one player freelancing.
 
 ---
 
@@ -334,7 +334,7 @@ Action: Time your skating so you arrive at the blue line in stride, and be a mov
 Technique: Drag a trail skate along the line while your body, stick and momentum get ahead of it — and keep the blade touching
 Never: Drag the trail skate with your head down — your body, hands and stick are in the zone before your skate is, and that is where a defender standing up at the line will be
 Rule: A dragged, touching skate keeps you onside wherever you play; a lifted trail skate is onside in the NHL, IIHF and PWHL but offside under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11
-Rule: Tagging up is a five-man act — the arm stays up until every teammate has cleared, in every book here; the NHL (83.3(i)), the IIHF, USA Hockey and the PWHL (85.3(i)) word it "at the same instant", Hockey Canada and CARHA as a result
+Rule: Tagging up is a five-player act — the arm stays up until every teammate has cleared, in every book here; the NHL (83.3(i)), the IIHF, USA Hockey and the PWHL (85.3(i)) word it "at the same instant", Hockey Canada and CARHA as a result
 Rule: Hockey Canada 6.11(b)(ii) and CARHA 72(e)(2) word the tag-up requirement as skate contact from every attacker and as a result — the zone "completely clear of attacking players", CARHA's in the Note under the clause — rather than as an instant, which comes to the same thing
 Rule: ⚠️ **First check you have a tag-up at all** — USA Hockey Rule 630(d) grants the delayed offside only at Youth 15-Only and above, Girls 16U and above, High School and Adult; below those the whistle is immediate
 Action: Tag, then look before you go — as the winger usually first to the line, you are the one who re-enters too early
@@ -354,7 +354,7 @@ Read: On your off wing the lane is the same, but the puck sits on your inside ha
 
 **Keep the blade in contact with the ice or the paint.** You are offside only when **both** skates have completely crossed the blue line before the puck has, so a dragged, touching skate keeps you onside wherever you play. A *lifted* trail skate is onside under the NHL, the IIHF and the PWHL, but **offside under USA Hockey and Hockey Canada**, which count only a skate in contact with the ice — so know which book is yours.
 
-**A delayed offside is recoverable, but tagging up is a five-man act.** One foot on the line does your part; nobody re-enters until the last teammate has also cleared the zone. Tag, then **look** before you go — re-entering while a teammate is still deep gets the play whistled off, and as the winger usually first to the line, you are the one who does it. ⚠️ **And check that you have a tag-up at all:** under USA Hockey the delayed offside exists only at Youth 15-Only and above, Girls 16U and above, High School and Adult; below those the whistle is immediate. **The rule in full is in [Rules Primer](../foundation/rules_primer.md) and [Zone Entries](../systems/zone_entries.md).**
+**A delayed offside is recoverable, but tagging up is a five-player act.** One foot on the line does your part; nobody re-enters until the last teammate has also cleared the zone. Tag, then **look** before you go — re-entering while a teammate is still deep gets the play whistled off, and as the winger usually first to the line, you are the one who does it. ⚠️ **And check that you have a tag-up at all:** under USA Hockey the delayed offside exists only at Youth 15-Only and above, Girls 16U and above, High School and Adult; below those the whistle is immediate. **The rule in full is in [Rules Primer](../foundation/rules_primer.md) and [Zone Entries](../systems/zone_entries.md).**
 
 ![](diagram:winger-arriving-at-the-line)
 

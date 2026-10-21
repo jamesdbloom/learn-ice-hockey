@@ -273,7 +273,7 @@ const whoCanSeeIt = {
     // limb; the hosts carry the full "chin dropped to look for the puck" wording.
     '⚠️ At the wall, whether or not anyone calls "man on", take the contact with your skates parallel to it, on ' +
     'your forearm and hip — ' + SHOULDER_NOT_THE_SURFACE + ' — head up and chin off your chest; ' +
-    'never turn your back to the checker, not even to protect the puck, and never duck, because those ' +
+    'never turn your back to anyone coming at you, not even to protect the puck, and never duck, because those ' +
     'are the two postures that turn contact with the boards into a neck injury.',
     // ⚠️ CUT FOR LENGTH, NOT BECAUSE IT WAS WRONG, AND RECORDED SO IT IS RECOVERABLE.
     // The sentence above used to end in a colon followed by a book-by-book survey of who

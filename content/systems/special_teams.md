@@ -435,7 +435,7 @@ Rule: Under the In-House Rules a fighting major in NIHL, NIHL1 or NIHL2 in the l
 
 A two-man advantage is a different game, not a better power play. It should almost always produce a goal, and when it does not it is nearly always because the unit played it like a 5-on-4.
 
-**Why it is different:** three killers can defend a triangle. They will sit in a tight triangle around the slot — usually two low in front of the net and one high — concede everything outside it, and block shots. **Sustained pressure on the puck is not available to them**, because every killer who leaves the triangle opens a hole nobody can fill. That does not mean you will never be touched: a three-man kill will still jump a bobbled reception, close hard on anyone who walks into the slot, and throw a stick or a body at a shooter. What it means is that **nobody is coming to hunt you on the perimeter** — so you have time out there that does not exist at 5-on-4, and the only way to lose it is to hurry.
+**Why it is different:** three killers can defend a triangle. They will sit in a tight triangle around the slot — usually two low in front of the net and one high — concede everything outside it, and block shots. **Sustained pressure on the puck is not available to them**, because every killer who leaves the triangle opens a hole nobody can fill. That does not mean you will never be touched: a three-player kill will still jump a bobbled reception, close hard on anyone who walks into the slot, and throw a stick or a body at a shooter. What it means is that **nobody is coming to hunt you on the perimeter** — so you have time out there that does not exist at 5-on-4, and the only way to lose it is to hurry.
 
 **How to play it:**
 
@@ -618,7 +618,7 @@ A **forecheck** is pressure applied in the opponent's end; a neutral-zone scheme
 ```facts
 Options: The 1-3 — one forward on the puck, the other forward and both defencemen in a line across the ice behind that forward
 Read: Passive 1-3 gives token pressure to make them commit to a side; the same-side press has F1 angle the carrier and F2 close to force a dump or turnover
-Risk: With F1 beaten or the three-man line spread, the 1-3 has a lot of ice behind it
+Risk: With F1 beaten or the three-player line spread, the 1-3 has a lot of ice behind it
 Options: The 1-1-2 — F1 on the puck, F2 layered behind on the same side, two defencemen abreast near the line
 Countered by: Quick direction changes and drop passes at the red line, which slide underneath F1 and F2 at once
 Options: The retreating box (2-2) — all four backing up together; safe and easy, and vulnerable to drop passes and direction changes
@@ -839,7 +839,7 @@ Action: Talk constantly — call switches, call the bumper, call the backdoor
 Action: Clear, then change, in that order; change when you can, not when you must, because a tired killer chases
 ```
 
-**The power play wants you to chase.** Every pass around the perimeter is an invitation, and perimeter possession is not a threat — taking the bait is. **If you chase and miss, you have created the seam yourself**: four players cannot cover a five-man shape with one of them out of position.
+**The power play wants you to chase.** Every pass around the perimeter is an invitation, and perimeter possession is not a threat — taking the bait is. **If you chase and miss, you have created the seam yourself**: four players cannot cover a five-player shape with one of them out of position.
 
 Chase only when the puck can **actually be won** — a bobbled reception, a player with their back turned, a puck on the boards with no support. ⚠️ **A turned back tells you the puck is winnable and nothing else.** **Go for the puck, not through the man** — if you cannot get the puck without going through the player's back, you were never winning it. A hit from behind ends your game in most books and can be a match penalty in every book but the IIHF; the full price is under [Killing the entry](#killing-the-entry--what-all-of-this-is-for).
 

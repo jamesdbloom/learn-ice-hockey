@@ -94,7 +94,7 @@ Rule: Hockey Canada writes no strict over-the-glass minor for a skater — Rule 
 
 - **Quick-up** — the counter, before their forecheck exists. In the two or three seconds after your team wins the puck they are at their least organised, so if a teammate is open up the ice, move it on your first touch. Most defencemen never look for it because their eyes go down instead of up. **First look up ice, then down.**
 - **Up** — a direct pass to your winger on the boards; in the conventional swing breakout they stand between the hash marks and the goal line, though other breakouts set them elsewhere, so learn where yours stands. Take it when the lane is open.
-- **Wheel** — skate the puck yourself around behind the net and up the far side. Good against a slow or one-man forecheck.
+- **Wheel** — skate the puck yourself around behind the net and up the far side. Good against a slow or one-player forecheck.
 - **D-to-D** — pass across to your partner to change the angle of attack (see below).
 - **Reverse** — send it back against the flow to a teammate arriving behind you. Beats an over-committed forechecker.
 - **Rim** — hard around the boards to the far winger. Safe, but concedes possession more often than the others. In CARHA leagues keep the backswing under fifteen inches: past that it is a slap-shot minor, and if it injures an opponent a major that ends your game and sits you out at least the next one.
@@ -658,7 +658,7 @@ Never: Activate unless a forward can back-fill above the puck for you
 Convention: Activate off the weak side into the back door — the common default, not the only route; some teams activate strong side on purpose, so ask which yours does
 Read: Activate on possession, not on hope. Jump when your team has clear control below the goal line, and arrive late as the second wave rather than early
 Action: Call it, so your partner slides over to cover the middle and your forwards rotate high
-Convention: Somebody is above the puck — on a defence pair normally one of the two of you, but a five-man rotation covers the line with whichever player is highest, and some teams keep only one player high and make that the weak-side winger; ask which yours plays
+Convention: Somebody is above the puck — on a defence pair normally one of the two of you, but a five-player rotation covers the line with whichever player is highest, and some teams keep only one player high and make that the weak-side winger; ask which yours plays
 ```
 
 *Your team has the puck here. This section describes your role when a forward has it in the offensive zone and you don't — supporting the cycle from above.*
@@ -674,12 +674,12 @@ Convention: Somebody is above the puck — on a defence pair normally one of the
 **Activating — joining the attack as a fourth (or fifth) man.** The conservative positioning above is the default, not a prohibition. Modern defencemen create a lot of offence by jumping into the play, and the difference between a good activation and a bad one is entirely the read:
 
 - **Only activate when a forward can back-fill for you.** Someone has to be the safety valve above the puck. If all three forwards are below the circles and you jump, there is nobody home.
-- **Activate off the weak side — the common default, not the only route.** The undefended arriving player is the dangerous one, so coming down the weak side into the back door generally beats driving into a crowded strong-side battle. Teams that run a five-man rotation, or that use the defenceman as the strong-side wall support in a cycle, activate strong side on purpose. Ask which yours does; [Offensive Zone Play](../systems/offensive_zone_play.md) covers the choice.
+- **Activate off the weak side — the common default, not the only route.** The undefended arriving player is the dangerous one, so coming down the weak side into the back door generally beats driving into a crowded strong-side battle. Teams that run a five-player rotation, or that use the defenceman as the strong-side wall support in a cycle, activate strong side on purpose. Ask which yours does; [Offensive Zone Play](../systems/offensive_zone_play.md) covers the choice.
 - **Activate on possession, not on hope.** Jump when your team has clear control below the goal line, not while the puck is still 50-50 in a corner.
 - **Call it.** Shout so your partner knows to slide over and cover the middle, and your forwards know to rotate high.
 - **Late, not early.** Arriving as the second wave into the slot is what beats coverage. Arriving early just means you're another body to mark.
 
-The rule of thumb: **somebody is above the puck.** On a defence pair that is normally one of the two of you, and which one it is changes through a shift. **Hear it as a person rather than a position, though.** Teams running a **five-man rotation**, or giving both defencemen a standing green light, cover the line with whichever player is highest, and under a **single-high** offensive-zone structure — one player high rather than two — the safety is the weak-side **winger**. [Offensive Zone Play](../systems/offensive_zone_play.md) and [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) set out those alternatives — ask which one your team plays. The habit that survives all of them: before you go below the puck, know **who** is above it, not what.
+The rule of thumb: **somebody is above the puck.** On a defence pair that is normally one of the two of you, and which one it is changes through a shift. **Hear it as a person rather than a position, though.** Teams running a **five-player rotation**, or giving both defencemen a standing green light, cover the line with whichever player is highest, and under a **single-high** offensive-zone structure — one player high rather than two — the safety is the weak-side **winger**. [Offensive Zone Play](../systems/offensive_zone_play.md) and [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) set out those alternatives — ask which one your team plays. The habit that survives all of them: before you go below the puck, know **who** is above it, not what.
 
 ---
 

@@ -876,7 +876,7 @@ const angleIntoTheCorner = {
     'takes you out of the collision altogether. ⚠️ How you meet the wall once you are there is the ' +
     'half no picture can draw, and it is not optional. Whether the player closing on you may check ' +
     'you at all depends on your age group, your league and the book they play under, and nothing that ' +
-    'follows depends on the answer. Never turn your back to the checker, and never ' +
+    'follows depends on the answer. Never turn your back to anyone coming at you, and never ' +
     'duck. Those are two separate injuries with two separate mechanisms. A back turned makes it a hit ' +
     // ⚠️ BOTH BORROWINGS QUOTED. The addressee was already right here; what was missing was the
     // quotation marks. "Even a light hit..." is sources/ibc.txt:1570 verbatim (§5 Checking From

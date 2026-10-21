@@ -408,7 +408,7 @@ The slot is layered, and the layers have different jobs:
 
 **Where:** the rounded ends of the rink beside and behind the net, outside the faceoff circles.
 
-**Why it matters:** most loose-puck battles happen here, and corner possession is the start of nearly every offensive-zone cycle and nearly every defensive-zone breakout — coaching observation rather than a measured share. On NHL-sized ice the corners are tight and a two-man forecheck can seal them; on wide ice they are much harder to seal.
+**Why it matters:** most loose-puck battles happen here, and corner possession is the start of nearly every offensive-zone cycle and nearly every defensive-zone breakout — coaching observation rather than a measured share. On NHL-sized ice the corners are tight and a two-player forecheck can seal them; on wide ice they are much harder to seal.
 
 ### The half-wall
 
@@ -547,7 +547,7 @@ Under CARHA, ⚠️ **hold your ground to take a lane, but avert the contact rat
 
 The working rule of thumb: **somebody stays above the puck.** In the offensive zone that is usually a defenceman at the point plus the high forward; in the defensive zone it is whoever has not committed to the battle. "Everyone below the puck" is the single most reliable way to concede an odd-man rush.
 
-**It is a coaching convention rather than a law, and two things about it vary.** *Who*: under a five-man rotation it is whichever player happens to be highest, not necessarily a defenceman — see [Offensive Zone Play](../systems/offensive_zone_play.md). *Whether*: benches give it up on purpose on a full-ice press, a delayed penalty, or 6-on-5 with your own goalie pulled, because in each of those the counter-attack has stopped costing you anything ([Forechecking Systems](../systems/forechecking_systems.md) sets out why). Outside them, assume the convention — and find out what your team calls.
+**It is a coaching convention rather than a law, and two things about it vary.** *Who*: under a five-player rotation it is whichever player happens to be highest, not necessarily a defenceman — see [Offensive Zone Play](../systems/offensive_zone_play.md). *Whether*: benches give it up on purpose on a full-ice press, a delayed penalty, or 6-on-5 with your own goalie pulled, because in each of those the counter-attack has stopped costing you anything ([Forechecking Systems](../systems/forechecking_systems.md) sets out why). Outside them, assume the convention — and find out what your team calls.
 
 ### Wide and middle
 
@@ -702,7 +702,7 @@ For **forwards** the convention is looser. Many wingers deliberately play the **
 11. **Behind the net a goalie may be free to play the puck, never to sit on it.** ⚠️ **Freezing it behind the goal line from outside the crease is a minor in every book here, trapezoid or none, even after a save: play it with your stick.** Out in front, saving and *then* covering is legal under the NHL, IIHF and PWHL, and under USA Hockey when pressured; Hockey Canada's book points both ways, so ask your league.
 12. **Keep your goalie on their own side of the centre red line.** ⚠️ **USA Hockey and Hockey Canada judge the crossing on the goalie's skates**, and CARHA is safest read the same way, so in those books reaching back across the line for a puck still on your own side is a minor.
 13. **Big international ice changes the width, not the length — so adjust.** On wide ice the corners and half-wall are further away: dump-and-chase pays less, zone play is more patient, and the boards no longer finish an attacker you steer there, so gap and stick position matter more. On narrow ice, play quick and simple on the wall.
-14. **Somebody stays above the puck — a coaching convention, not a law.** Under a five-man rotation it is whichever player is highest. Benches drop it on purpose on a full-ice press, a delayed penalty, or 6-on-5 with the goalie pulled. Otherwise "everyone below the puck" is the most reliable way to concede an odd-man rush.
+14. **Somebody stays above the puck — a coaching convention, not a law.** Under a five-player rotation it is whichever player is highest. Benches drop it on purpose on a full-ice press, a delayed penalty, or 6-on-5 with the goalie pulled. Otherwise "everyone below the puck" is the most reliable way to concede an odd-man rush.
 15. **Be inside, force them outside — with your feet and your position, never as a licence to hit.** Get between your check and the net. A check is legal only on the puck carrier, and barred in many youth, women's and non-check adult formats. ⚠️ **Find out what your own league permits before you finish anything with a check.**
 16. **Play the puck, not the goalie.** A goalie out of the crease is not *"fair game"* in any book. A charge on one can get you thrown out in every book, and under Hockey Canada it always will; under CARHA the major that ejects you brings at least a one-game suspension. ⚠️ **When their goalie comes out for the puck, clear the lane back to the net.**
 17. **At the net front, live just outside the paint, with your skates off the red crease line too.** Every book that settles it in rule text or glossary counts the line as crease, so a skate on it can cost the goal. Stay off the goalie: deliberate or unnecessary contact is a penalty in every book, goal or no goal.

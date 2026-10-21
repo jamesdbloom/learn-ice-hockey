@@ -255,14 +255,14 @@ Key: Somebody must be home; what varies is who — find out what your team plays
 
 ```facts
 Never: Force a low-percentage pass at the offensive blue line with no support back
-Risk: The cost of the failure is not the loss of possession, it is the odd-man rush — one touch turns your five-man attack into their three-man rush
+Risk: The cost of the failure is not the loss of possession, it is the odd-man rush — one touch turns your five-player attack into their three-player rush
 Read: If this pass is intercepted right now, how many teammates are behind the puck? Fewer than two, do not make it
 Options: Chip the puck past the defender into the space behind them and race, or dump it into the far corner and forecheck
 Risk: Low-cost is not free — on one Swiss-league sample a dump-in carried a larger immediate threat against you than a carry-in did, so dump when the pass is not on, not instead of a carry you could make
 Convention: Forcing that pass is not a rule and genuinely negotiable — a team trailing late, or built to attack in waves, will accept the risk deliberately
 ```
 
-**Why not.** The offensive blue line is where your attack is at its most stretched — your forwards are ahead of the puck, your defencemen have often stepped up to hold the zone. A turnover there converts your five-man attack into their three-man rush in one touch. **The cost of the failure is not the loss of possession; it is the odd-man rush.**
+**Why not.** The offensive blue line is where your attack is at its most stretched — your forwards are ahead of the puck, your defencemen have often stepped up to hold the zone. A turnover there converts your five-player attack into their three-player rush in one touch. **The cost of the failure is not the loss of possession; it is the odd-man rush.**
 
 **What to do instead.** **Chip the puck past the defender into the space behind them** and race for it, or **dump it into the far corner** and forecheck. Both concede possession about 114 feet from your net, moving away from it — the offensive blue line is 64 feet from their goal line. **Low-cost is not free:** on the Swiss-league tracking quoted under the risk map, a dump attempt carried a *larger* immediate threat against you than a carry-in — small figures, quoted there with their scope — because the dump is so often handed straight back. These are the answer when the pass is not on, not a reason to give up a puck you could have carried in. See [Zone Entries](../systems/zone_entries.md) for which to pick.
 

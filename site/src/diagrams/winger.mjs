@@ -494,7 +494,7 @@ const arrivingAtTheLine = {
     'at the line to be safe: arriving late and slow costs your line more than a whistle would. ⚠️ A ' +
     'head up is the condition of the technique rather than an extra — you cannot brace for a hit you ' +
     'cannot see, and a body that is surprised does not absorb contact. And never turn your back to ' +
-    'the checker and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
+    'anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
     'for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the ' +
     'boards, forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
 
@@ -615,7 +615,7 @@ const cornerAndTheEmptyPoint = {
     'line to the top of the faceoff circle to support the cycle, which is normal and legitimate — so ' +
     'the point behind them, exactly where a blind pass up the wall goes, is empty. Look up before you ' +
     'throw it there. Your defenceman may equally be holding the line, and this picture shows one of the two rather ' +
-    'than the way it always is. ⚠️ Never turn your back to the checker and never duck. Those are two ' +
+    'than the way it always is. ⚠️ Never turn your back to anyone coming at you and never duck. Those are two ' +
     'different injuries — a hit from behind you cannot brace for, and a chin tucked to the chest, ' +
     'which does not need speed to do it. Skates parallel to the boards, forearm and hip into the ' +
     'contact, head up and chin off your chest' + SHOULDER_TAIL + ' Nothing in this ' +

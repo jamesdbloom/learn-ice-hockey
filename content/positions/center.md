@@ -282,7 +282,7 @@ Never: Drop your head through the middle to gather a pass or to count your linem
 Rule: You are offside only when both skates have completely crossed the blue line before the puck has; a trailing skate on the line keeps you onside (NHL Rule 83.1)
 Rule: A trail skate held in the air is onside under NHL, IIHF and PWHL rules but offside under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11, which require skate contact; CARHA never defines its "own side", so keep the blade down
 Rule: USA Hockey Rule 630(d) grants delayed offside and tag-up only at Youth 15-Only and above, Girls 16U and above, High School and Adult — below those the whistle is immediate
-Rule: Tag-up is a five-man act — the offside is nullified only when every player of the offending team makes skate contact with the blue line at the same instant (NHL Rule 83.3(i)), so count your linemates out
+Rule: Tag-up is a five-player act — the offside is nullified only when every player of the offending team makes skate contact with the blue line at the same instant (NHL Rule 83.3(i)), so count your linemates out
 ```
 
 **Where to be:** Moving through the centre of the neutral zone, level with or slightly behind the puck.
@@ -301,7 +301,7 @@ The centre-specific version: **you set the line's pace into the zone.** You are 
 
 **What it costs.** You are offside only when **both** skates have completely crossed the blue line before the puck. A blade on the line is onside in all six books. A skate held in the air over the neutral zone is onside under the NHL, the IIHF and the PWHL, but offside under USA Hockey and Hockey Canada, which require skate *contact*. **CARHA never defines its "own side" of the line, so in a CARHA-affiliated league drag the blade.**
 
-A delayed offside can be undone by tagging up — **in the books that have one.** **Under USA Hockey, delayed offside exists only at Youth 15-Only and above, Girls 16U and above, High School and Adult**; below those levels the whistle goes immediately and the entry has to be right first time. Where tag-up exists it is a five-man act: the offside is cancelled only when every player of the offending team has cleared the zone at the same instant. The full rule is in [Rules Primer](../foundation/rules_primer.md).
+A delayed offside can be undone by tagging up — **in the books that have one.** **Under USA Hockey, delayed offside exists only at Youth 15-Only and above, Girls 16U and above, High School and Adult**; below those levels the whistle goes immediately and the entry has to be right first time. Where tag-up exists it is a five-player act: the offside is cancelled only when every player of the offending team has cleared the zone at the same instant. The full rule is in [Rules Primer](../foundation/rules_primer.md).
 
 ---
 

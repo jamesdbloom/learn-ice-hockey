@@ -375,7 +375,7 @@ const delayCurl = {
     'body between the defender and the puck, and buy the one or two seconds their late support ' +
     'needs to arrive at speed. The re-attack that follows is not drawn. ' +
     '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
-    'curl away from the wall, and never turn your back to an oncoming checker near it. ' +
+    'curl away from the wall, and never turn your back to anyone coming at you near it. ' +
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
     // in its own <p> with a 700 ms break either side -- verified this session by rendering
     // zone_entries.md through md_to_speech.py, chunk 035. Ending it at "never turn your back to
@@ -416,7 +416,7 @@ const delayCurl = {
     // MAX_BILLED_CHARS of 2,800, so it is voiced as one unbroken chunk and neither absolute
     // can be separated from the other by a split.
     'Two separate postures injure a neck at the boards and they are not the same warning: ' +
-    'turning your back to an oncoming checker makes the contact a hit from behind, and a chin ' +
+    'turning your back to anyone coming at you makes the contact a hit from behind, and a chin ' +
     'tucked to the chest straightens the cervical spine. So if you cannot get off the boards, ' +
     // COLON, not a third em dash: the shoulder clause below needs a dash PAIR around it, and
     // this sentence already opened on one, which put three em dashes in a row.

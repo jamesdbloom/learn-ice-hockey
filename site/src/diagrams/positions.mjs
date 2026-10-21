@@ -1129,7 +1129,7 @@ const wingerDzRim = {
     ' exactly the checker a RIM beats: a hard shot along the boards that follows the curve of the ' +
     'rink past them to a teammate further around, because it goes where they are not. It is a valid play ' +
     'and not an admission of failure. Decide where the puck is going while you are still skating to ' +
-    'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to the checker and ' +
+    'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to anyone coming at you and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
     'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +
     'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
@@ -1196,7 +1196,7 @@ const wingerDzReverse = {
     'side-on with your hip and backside into the checker, puck on the far side of your body — a stationary player on the wall gets ' +
     'pinned whichever mistake the checker is making. Call for it — "reverse!" — because the teammate ' +
     'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
-    'back to the checker and never duck. Those are two different injuries — a hit from behind you cannot' +
+    'back to anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot' +
     ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +
     'to the boards, forearm and hip into the contact, head up and chin off your chest' +
     SHOULDER_TAIL,
@@ -1296,7 +1296,7 @@ const offWingOpenToTheIce = {
     'the four is ranked above the others; flush against the wall you have one. The coaching' +
     ' source this section follows teaches the same reception in other words — your back to the ' +
     'boards, facing the ice — and the step off the wall is the one thing added here. ⚠️ Two things this picture ' +
-    'cannot show, and both of them are prohibitions: never turn your back to the checker as you ' +
+    'cannot show, and both of them are prohibitions: never turn your back to anyone coming at you as you ' +
     'receive it, and never duck. Those are two different injuries — a hit from behind you cannot brace for, ' +
     'and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the wall,' +
     ' forearm and hip, head up and chin off your chest' + SHOULDER_TAIL,

@@ -897,7 +897,7 @@ const crossIceOwnEnd = {
     // your back to the checker" -- and a hedged clause appended there would read as qualifying it.
     'wall, take the contact with your skates parallel to the boards, forearm and hip into it — ' +
     SHOULDER_NOT_THE_SURFACE + ' — head up ' +
-    'and chin off your chest, and never turn your back to the checker.',
+    'and chin off your chest, and never turn your back to anyone coming at you.',
 
   describe:
     'The defending half of the rink, your own net at the right. Three own players are drawn as ' +

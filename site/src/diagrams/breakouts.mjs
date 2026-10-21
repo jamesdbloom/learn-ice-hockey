@@ -392,7 +392,7 @@ const reverse = {
     // constant -- the rim note records why the reasoning that dropped it was wrong.
     '⚠️ Both players here can be hit on the wall, and D2 is arriving onto a puck they have not seen ' +
     // W33: same second-person fix as breakout-rim — also voiced into goaltender.md.
-    'travel. If you are one of them, never turn your back to the checker, and never duck. ' +
+    'travel. If you are one of them, never turn your back to anyone coming at you, and never duck. ' +
     WALL_POSTURE_INSTEAD,
 
   describe:
@@ -527,7 +527,7 @@ const rim = {
     '⚠️ This is a wall play at both ends. D1 is sealed on the boards and the winger takes it on ' +
     // W33: "If you are the skater on the wall" — this caption is voiced into goaltender.md too,
     // where a bare "your back" addressed the goaltender reading it (OPEN_ITEMS second-person row).
-    'the far wall. If you are the skater on the wall, never turn your back to the checker, and ' +
+    'the far wall. If you are the skater on the wall, never turn your back to anyone coming at you, and ' +
     'never duck. ' +
     WALL_POSTURE_INSTEAD,
 
@@ -898,7 +898,7 @@ const wingerWall = {
     // The sibling off-wing-open-to-the-ice teaches the same reception and already carries it. LAST,
     // because the renderer ambers from the first glyph to the end of the caption with no closing
     // delimiter.
-    '⚠️ Never turn your back to the checker, and never duck. Puck protection never ' +
+    '⚠️ Never turn your back to anyone coming at you, and never duck. Puck protection never ' +
     'justifies it. Get your skates parallel to the boards instead, forearm and hip to the wall, ' +
     // SHOULDER_TAIL, not WALL_POSTURE_INSTEAD: the "Puck protection never justifies it" lead and
     // this limb's own wording were composed here and widened in an earlier round (see above), so
@@ -1144,7 +1144,7 @@ const againstThe131 = {
     // may not arrive -- so this limb is not flattened onto WALL_POSTURE_INSTEAD. Only the missing
     // shoulder clause is imported.
     '⚠️ A player waiting on the boards is the one who gets hit. Body open to the ice, head up, never ' +
-    'turn your back to the checker and never duck. Get your skates parallel to the wall instead, forearm ' +
+    'turn your back to anyone coming at you and never duck. Get your skates parallel to the wall instead, forearm ' +
     'and hip into contact if it comes, and chin off your chest' + SHOULDER_TAIL,
 
   describe:

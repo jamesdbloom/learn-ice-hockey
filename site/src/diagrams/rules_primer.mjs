@@ -424,7 +424,7 @@ const icingTheRaceAndTheDot = {
     // Contrast `support-a-battle-from-outside`, whose "neither prohibition" WAS a count: when it took
     // a never-push-from-behind limb (19 Oct 2026) the count became "none of this" in the same edit.
     'that hurts people, in every league, checking or not. Never turn your back to ' +
-    'the checker, and never duck. A turned back makes it a hit from behind, which you can neither ' +
+    'anyone coming at you, and never duck. A turned back makes it a hit from behind, which you can neither ' +
     'see nor brace for, and a tucked chin straightens the cervical spine. Get your skates parallel ' +
     'to the wall instead, take it on your forearm and hip, head up and chin off your chest' +
     SHOULDER_TAIL,

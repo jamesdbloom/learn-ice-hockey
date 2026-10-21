@@ -686,7 +686,7 @@ const battleSupport = {
     // every limb before either quote is heard. A listener must not be able to reach
     // "so a slow hit from behind is fine."
     '⚠️ And if you do go in, how you arrive outranks winning the puck. Never turn your back to ' +
-    'the checker, and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
+    'anyone coming at you, and never duck. Skates parallel to the wall, forearm and hip into the contact, ' +
     'head up and chin off your chest' + SHOULDER_TAIL +
     // ⚠️ THE THIRD LIMB IS LOCAL, NEVER IN SHOULDER_TAIL (shared with four other modules). It is
     // the owning section's own wording and scope (puck_support_and_spacing.md §"Supporting a
