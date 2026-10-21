@@ -794,7 +794,7 @@ Action: Give a target — stick on the ice, blade flat, angled to receive, somet
 Position: Give a lane — be open along a line the puck can travel, and adjust your position to create it rather than expecting the puck to bend
 Action: Give a time — arrive as the passer is ready, not before
 Technique: Arrive facing where you intend to go, and open your body up-ice before the puck arrives
-Action: Give information — "time", "man on", "reverse", "over"; one word said early is worth more than a perfect route
+Action: Give information — "time", "man on", "reverse", "over"; one word said early is worth more than a perfect route. Say "time" only when sure — a false one sends a teammate into a hit unbraced
 Options: When the carrier is pinned they need a close, safe, catchable option — being the boring five-foot outlet is a real job
 ```
 
@@ -806,7 +806,7 @@ A completed pass has two authors. If you are waiting to be found, you are only d
 - **A lane.** Not merely being open, but being open *along a line the puck can travel*. Adjust your position to create the line; do not expect the puck to bend.
 - **A time.** Arrive as the passer is ready, not before — see "Timing your break" above.
 - **A next play.** Arrive facing where you intend to go. A player who receives a pass with their back to the play has taken a good pass and turned it into a battle. Open your body up-ice before the puck arrives.
-- **Information.** "Time," "man on," "reverse," "over" — one word, said early, is worth more than a perfect route. See [On-Ice Communication](../foundation/on_ice_communication.md).
+- **Information.** "Time," "man on," "reverse," "over" — one word, said early, is worth more than a perfect route. Say "time" only when you are sure: a false one sends a teammate into a hit unbraced. See [On-Ice Communication](../foundation/on_ice_communication.md).
 - **A soft target when they are under pressure.** When the carrier is pinned, they do not need a spectacular option forty feet away; they need a close, safe, catchable one. Being the boring five-foot outlet is a real job.
 
 The general principle from [Time and Space](time_and_space.md) applies here in reverse: **you can give a teammate time by where you stand.** A support option in a good place buys the carrier the extra second they need to see the whole ice.

@@ -167,7 +167,7 @@ The defenceman who goes back for the puck. Your job starts before you touch it:
 ```facts
 Position: Usually the opposite side of the net from your partner, level with or slightly above the goal line, so a pass behind the net reaches you cleanly
 Action: Be an option, not a spectator. Be the second wave, because if the first option fails the puck comes back to you
-Key: You are usually the one who makes the call — "up", "over", "wheel", "reverse", "rim", "time", "man on" — because you can see the forecheck arriving behind your partner
+Key: You are usually the one who makes the call — "up", "over", "wheel", "reverse", "rim", "time", "man on" — because you can see the forecheck arriving behind your partner; say "time" only when sure
 Never: Slide into a forechecker's path. Get to the net front early and stand still, and only where your book allows the screen
 Rule: The NHL and PWHL allow the stationary screen; the IIHF writes the same words, but its minor for impeding the forechecker "shall be assessed". USA Hockey 625(a.1) makes the screen itself a minor; Hockey Canada and CARHA give no right to it — under CARHA give the forechecker the ice
 Rule: NHL Rule 56.1 — "[a] player is always entitled to use his body position to lengthen an opponent's path to the puck", but only "provided his stick is not utilized… his free hand is not used and he does not take advantage of his body position to deliver an otherwise illegal check"
@@ -183,7 +183,7 @@ Never: Reach out sideways across the slot with your stick as they go past — a 
 The partner. This is the least-understood job on the ice and the one that makes breakouts work.
 
 - **Be an option, not a spectator.** Position yourself so a pass behind the net reaches you cleanly — usually on the opposite side of the net, level with or slightly above the goal line.
-- **You are usually the one who makes the call.** You can see the forecheck arriving behind your partner. "Up", "over", "wheel", "reverse", "rim", "time", "man on" — those calls are mostly yours. More in section 9.
+- **You are usually the one who makes the call.** You can see the forecheck arriving behind your partner. "Up", "over", "wheel", "reverse", "rim", "time", "man on" — those calls are mostly yours. Say "time" only when you are sure: a false one sends your partner into a hit unbraced. More in section 9.
 - **If you screen the net front for the wheel, get to your spot early and stand still — never drift across into the forechecker.** ⚠️ **Set the screen only where your book allows it.** The NHL and PWHL allow it. Under the IIHF — a British player's book — do not count on it. Under USA Hockey, do not set it at all. Under Hockey Canada, do not build on it. Under CARHA, give them the ice: failing to avert contact is up to a major — mandatory *"[w]hen injury results from intentional body contact"* — and a major there is an ejection and at least a one-game suspension. The subsection below has each book.
 - **Be the second wave.** If the first option fails, the puck comes back to you. Don't be somewhere it can't.
 
@@ -1064,7 +1064,7 @@ Key: Time is a two-second window, not a state — by the time you feel pressure 
 ```facts
 Key: Your goalie is standing still, facing the play, with the clearest view of everything behind your defenceman's back — worth nothing unless the words are agreed and the calls come early
 Convention: Goalie vocabulary varies by team — agree yours in advance rather than assuming
-Key: "Time" means nobody near you, turn and make a play; "man on" means pressure arriving now, do not turn into it
+Key: "Time" means nobody near you, turn and make a play — call "time" only when sure; "man on" means pressure arriving now, do not turn into it
 Key: "Up" means the wall lane is open; "wheel" means you have a step; "leave it" or "set" means a rim stopped and left stationary for you
 Never: Use "over" without agreeing the sense — this list uses Sense B, the D-to-D behind your own net; if your team means cross-ice, your goalie must say "D" or "partner" instead
 Never: Turn your back to the checker on a "man on" call. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest
@@ -1076,7 +1076,7 @@ Your goalie is standing still, facing the play, with the clearest view on the ic
 
 The standard goalie vocabulary — your team may vary it, and should agree it in advance. **General call discipline and the full communication treatment are in [On-Ice Communication](../foundation/on_ice_communication.md); what follows is only the breakout set.**
 
-- **"Time"** — nobody near you, turn and make a play.
+- **"Time"** — nobody near you, turn and make a play. Call it only when you are sure: a false "time" sends a defenceman into a hit unbraced.
 - **"Man on"** — pressure arriving now; do not turn into it. Some teams add a side: "man on, left". **And never turn your back to the checker.** Get your skates parallel to the wall instead, forearm and hip to it — **not the point of your shoulder, and not the whole shoulder if you can help it** — head up and chin off your chest ([Body Contact and Battles](../technique/body_contact_and_battles.md)).
 - **"Reverse"** — the forechecker has over-committed past you; the space behind is open.
 - **"Up"** — the wall lane is open, hit the winger.

@@ -26,7 +26,7 @@
 
 **Freeze because an attacker is on you in your crease, not because you want a whistle.** That freeze buys a pinned team a change. Leave it when your defenceman is arriving with time. ⚠️ **Outside your crease, play it or clear it** — every book restricts the freeze out there.
 
-**Talk early, short and every time: "screen", "time", "man on", "back door".** Agree the words in the room — here **"shot"** means you have the shooter. After a hard shot off your mask, say something at the next stoppage.
+**Talk early, short and every time: "screen", "time", "man on", "back door".** Agree the words in the room — here **"shot"** means you have the shooter. Say "time" only when you are sure: a false one sends a defenceman into a hit unbraced. After a hard shot off your mask, say something at the next stoppage.
 
 ## Overview
 
@@ -840,7 +840,7 @@ You see everything. You are stationary and facing the play, while your defencema
 
 ```facts
 Convention: Goalie calls have a standard vocabulary, but the words vary by team — agree yours in the room, not on the ice
-Options: Pressure — "time" means lift your head and make the good play; "man on" means get rid of it now
+Options: Pressure — "time" means lift your head and make the good play; "man on" means get rid of it now; call "time" only when sure
 Options: Direction — "over", "reverse", "up", "wheel". Over means behind the net, never through the slot
 Options: Ownership — "leave it" means I will stop it and leave it for you; "I've got it" means go to your breakout position
 Key: "Screen" means get out of my sightline, or get beside the man in it — make it your first call, because nobody else can know you cannot see; that it is also the most ignored is observation, not a count
@@ -853,7 +853,7 @@ These are the standard vocabulary. Words vary by team — agree yours in the roo
 
 **Pressure information — the category to get right first:**
 
-- **"Time"** or **"You've got time"** — nobody is near you. Lift your head and make the good play instead of the safe one. This call is exactly as valuable as its opposite, because a defenceman who fears pressure that isn't there throws the puck away.
+- **"Time"** or **"You've got time"** — nobody is near you. Lift your head and make the good play instead of the safe one. This call is exactly as valuable as its opposite, because a defenceman who fears pressure that isn't there throws the puck away. Say it only when you are sure — a false "time" sends your defenceman into a hit unbraced.
 - **"Man on"** — someone is on you right now, get rid of it. Some goalies use **"one on"** / **"two on"** to give the count, which is more useful still: one forechecker can be beaten with a reverse, two means you are being sealed and the puck has to leave.
 
 **Direction:**
@@ -1726,7 +1726,7 @@ document, that is named too.*
 8. **Claim your ground in the paint early, and in a scramble win the puck, not the player.** ⚠️ **Never put your body or stick on an attacker:** USA Hockey and Hockey Canada penalise a goalie's body check and neither stops at the minor, CARHA bars the contact altogether, and two minutes is only the floor on a chop.
 9. **When someone runs you, tell the referee what happened, not what to call**, and in EIH or SIHA competition say it at the time, because nobody reviews it. ⚠️ **In a USA Hockey checking game, expect contact in a corner while you hold the puck**, though a check meant to intimidate or punish you is still charging.
 10. **When a fight breaks out, stay in your crease until you are directed out.** ⚠️ **Leaving it is a minor in most books. A fight ejects you under the IIHF, USA Hockey and Hockey Canada, and can under CARHA and the PWHL; breaking one up, under Hockey Canada and CARHA, and USA Hockey if first in.**
-11. **Say what you can see, early, short and every time** — **"screen", "time", "man on", "back door"** — and agree that **"shot"** means you have the shooter. ⚠️ **After a hard shot off your mask, say something at the next stoppage:** a whistle may never come, and a concussion needs no knock-out. A medical professional decides when you play again.
+11. **Say what you can see, early, short and every time** — **"screen", "time", "man on", "back door"** — and agree that **"shot"** means you have the shooter. Say "time" only when you are sure, because a false one sends a defenceman into a hit unbraced. ⚠️ **After a hard shot off your mask, say something at the next stoppage:** a whistle may never come, and a concussion needs no knock-out. A medical professional decides when you play again.
 12. **Tell teammates:** never shoot at your head in warm-ups. Stand beside a screener and never walk them out — it can be called interference. If a battle moves a net-front body, send it toward the corner, skates on the ice, ⚠️ **and never from behind:** sending someone head first into the post ends the hitter's game in most books, and can in all six.
 13. **Wear gear that is yours, and warm up before a live shot.** **Buy your own mask**, even if you borrow the rest. 🇬🇧 **Wear a neck laceration protector at every age** — adults too in Britain, and a dangler does not replace it. ⚠️ **Groin or hip pain that persists or keeps coming back needs a physiotherapist or sports physician.**
 14. **When you are pulled, take your stick and get to the bench fast** — when called for an extra attacker, or on a delayed call once your team has the puck. ⚠️ **Leave nothing near the net:** it can cost an awarded goal or a penalty shot. **When they pull theirs**, play a touch deeper and expect passes.

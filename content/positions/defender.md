@@ -104,7 +104,7 @@ Rule: Hockey Canada writes no strict over-the-glass minor for a skater — Rule 
 
 ![](diagram:defender-d-to-d-behind-the-net)
 
-**When your partner has the puck, you are the second option and usually the voice.** Stand where a pass behind the net reaches you cleanly — usually the other side of the net, level with or just above the goal line. You can see the forecheck arriving behind your partner when they cannot, so the calls — "up", "over", "wheel", "reverse", "rim", "time", "man on" — are mostly yours. Where you stand and who calls it are coaching choices; [Breakouts](../systems/breakouts.md) teaches the job in full, including where screening the net front for a wheel is and is not legal.
+**When your partner has the puck, you are the second option and usually the voice.** Stand where a pass behind the net reaches you cleanly — usually the other side of the net, level with or just above the goal line. You can see the forecheck arriving behind your partner when they cannot, so the calls — "up", "over", "wheel", "reverse", "rim", "time", "man on" — are mostly yours. Say "time" only when you are sure: a false one sends your partner into a hit unbraced. Where you stand and who calls it are coaching choices; [Breakouts](../systems/breakouts.md) teaches the job in full, including where screening the net front for a wheel is and is not legal.
 
 **Key considerations:** Don't carry through the slot either. With no pass on, skate behind the net to the other side.
 

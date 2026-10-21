@@ -581,7 +581,7 @@ Position: Behind and to the side of your teammate, covering the space and the pa
 Risk: Two players on one puck means the other three cover four of them, and it is the free man who scores
 Read: Which way your teammate is angling the carrier — stand where the carrier goes if they get beaten
 Technique: Close enough to take over the coverage, far enough not to be beaten by the same move
-Action: Talk — "I've got your back", "you have time", "man on"; the layer only works if they know it is there
+Action: Talk — "I've got your back", "you have time", "man on"; the layer only works if they know it is there. Say "you have time" only when sure, or they take a hit unbraced
 Convention: A double-team is a coaching decision, commonly allowed below your own goal line — ask where and when
 Never: Arrive at a double-team at the wall with your back to the checker, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
 Rule: A push or hit from behind is checking from behind even in non-check play. It ejects in NHL, IIHF and PWHL 43; if intentional, in Hockey Canada 7.5(a) and CARHA 53(a). USA Hockey 608(a) starts at a minor plus misconduct; a hard one at the boards or head first ejects (608(b); Casebook 608 Situation 1)
@@ -599,7 +599,7 @@ To make the layer a real position:
 
 - **Read which way your teammate is angling the carrier, and stand where the carrier goes if they get beaten.**
 - **Be close enough to take over, far enough not to be beaten by the same move.** (The distance is below.)
-- **Talk** — "I've got your back," "you have time," "man on." See [On-Ice Communication](../foundation/on_ice_communication.md).
+- **Talk** — "I've got your back," "you have time," "man on." Say "you have time" only when you are sure: a false one sends your teammate into a hit unbraced. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ![](diagram:layer-not-converge)
 

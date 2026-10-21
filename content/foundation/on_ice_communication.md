@@ -529,7 +529,7 @@ The standard goalie vocabulary:
 ## How to call well
 
 ```facts
-Priority: Early beats accurate — a slightly wrong call before the puck arrives beats a perfect one as it does
+Priority: Early beats accurate — a slightly wrong call before the puck arrives beats a perfect one as it does, except "time", which you say only when sure
 Priority: Short beats specific — one or two syllables; if your call needs a comma, it is too long
 Priority: Loud beats clever — a perfect call at conversational volume did not happen, and that is the commonest reason a call fails
 Action: Use names for teammates and numbers for opponents — "Sam, man on" gets acted on, "man on" gets four heads turning
@@ -698,8 +698,8 @@ document, that is named too.*
 1. **The puck carrier is the least informed player on the ice.** Everyone else can see their blind side, and passing that on costs nothing.
 2. **"Man on" and "time" are the two highest-value words in hockey.** One prevents a turnover, the other a panic. **At the wall, called or not, never turn your back to the checker and never duck** — head up, chin off your chest.
 3. **The player who can see it makes the call** — not the captain, not the most senior player.
-4. **Going back for a dumped puck, listen for your goalie before you touch it.** They see what is behind you: "time" or "man on" from them, then your partner's "up" or "over". Shoulder-check as you go — and goalies, give it every time.
-5. **Early beats accurate, short beats specific, loud beats clever.** A perfect call at conversational volume did not happen.
+4. **Going back for a dumped puck, listen for your goalie before you touch it.** They see what is behind you: "time" or "man on" from them, then your partner's "up" or "over". Shoulder-check as you go — and goalies, make the call every time.
+5. **Early beats accurate, short beats specific, loud beats clever.** A perfect call at conversational volume did not happen. The exception is "time": say it only when you are sure, because a false one sends a teammate into a hit unbraced.
 6. **Use names and numbers.** "Sam, man on" gets acted on. "Man on" gets four heads turning.
 7. **Agree the vocabulary as a team: one word, one meaning, all season.** A receiver who has to translate has already lost the half-second.
 8. **Answer every call.** An unacknowledged switch is two players hoping, and hoping is how the back door scores.

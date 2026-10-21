@@ -967,11 +967,11 @@ Two habits make this possible: **know what is around you before the puck arrives
 
 ```facts
 Action: Call loud, immediate and specific for a teammate going back with their head down and pressure coming
-Convention: "Time!" means they have space; "Man on!" or their name plus "behind you!" means they do not
+Convention: "Time!" means they have space; "Man on!" or their name plus "behind you!" means they do not. Say "time" only when sure, as a false one sends them into a hit unbraced
 Key: The warning is what lets a teammate prepare for contact they would otherwise take blind
 ```
 
-If a teammate is going back for a puck with their head down and pressure coming, the correct call is loud, immediate and specific. "Time!" means you have space. "Man on!" or their name plus "behind you!" means you do not. A player cannot brace for a hit they cannot see, and the call is what gives them the chance to. See [On-Ice Communication](../foundation/on_ice_communication.md).
+If a teammate is going back for a puck with their head down and pressure coming, the correct call is loud, immediate and specific. "Time!" means you have space. "Man on!" or their name plus "behind you!" means you do not. Only call "time" when you are sure: a false one sends them into a hit unbraced. A player cannot brace for a hit they cannot see, and the call is what gives them the chance to. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ### If it happens anyway — a suspected neck injury on the ice
 

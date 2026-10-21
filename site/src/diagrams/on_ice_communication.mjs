@@ -264,7 +264,7 @@ const whoCanSeeIt = {
     'can see it, both should call it, because the failure is silence, not duplication. The words ' +
     'are a team matter, so agree your own. The mirror of this picture is the same corner with ' +
     'nobody arriving, where the call is "time" — and a false "time" sends a teammate into contact ' +
-    'he was not braced for. ' +
+    'they were not braced for. ' +
     // ⚠️ ONE SENTENCE, ON PURPOSE: the posture, the shoulder clause (KT6's mid-sentence slot,
     // the shared constant, NOT edited here) and BOTH absolutes stay together so no chunk
     // boundary can ever separate them. "not even to protect the puck" folds in the old
