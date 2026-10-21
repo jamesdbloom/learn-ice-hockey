@@ -681,7 +681,7 @@ What the goalie has been told to watch is a genuine coaching split (see [Goalten
 ### The classic moves, and what each one is for
 
 ```facts
-Read: Goalie aggressive and out of their crease → forehand–backhand, you have room to go around them
+Read: Goalie aggressive and out of their crease → forehand–backhand, round them and never through them; if the room closes, pull up short of the goalie
 Read: Goalie deep in the net and squared up → backhand–forehand, the shorter move finishes before they slide
 Read: Goalie retreating and not yet square → shoot early, off the wrong foot
 Read: Goalie on their feet, big and pushing across → five-hole, because the hole opens mid-push
@@ -694,7 +694,7 @@ None of these is a trick. Each solves a specific goalie behaviour, and picking t
 
 | Move | What it is | Use it when the goalie is |
 |---|---|---|
-| **Forehand–backhand (the "deke")** | Pull the puck across your body to the backhand and lift it | Aggressive and out of their crease — you have room to go around them |
+| **Forehand–backhand (the "deke")** | Pull the puck across your body to the backhand and lift it | Aggressive and out of their crease — you have room to go around them, never through them |
 | **Backhand–forehand** | The reverse, finishing on your stronger side | Deep in their net and squared up — the shorter move gets it done before they slide |
 | **Shoot off the wrong foot / early release** | Fire it a stride before they expect it | Retreating and still setting — they are not square yet |
 | **Five-hole** | Sell high, shoot low through the legs | On their feet, big, and pushing across (the hole opens mid-push) |
@@ -726,7 +726,7 @@ The targets are not the same as on a normal shot, because the goalie is moving a
 ### Shoot or deke?
 
 ```facts
-Read: Goalie out at the top of the crease and coming at you → deke; they cannot recover laterally from there
+Read: Goalie out at the top of the crease and coming at you → deke round them, never through them; they cannot recover laterally from there
 Read: Goalie deep, square and patient → shoot; a deke just walks you into the post
 Read: Goalie retreating and not yet set → shoot early, before you reach your "spot"
 Read: Being caught from behind → shoot now, because a backchecker's stick arrives sooner than you think
@@ -735,7 +735,7 @@ Convention: At rec level, shoot more than you deke — rec goalies are usually d
 
 The honest answer is that it depends on one read: **how deep is the goalie, and are they moving?**
 
-- **Goalie out at the top of the crease or beyond, coming at you → deke.** They have given you the room and they cannot recover laterally from out there.
+- **Goalie out at the top of the crease or beyond, coming at you → deke.** They have given you the room and they cannot recover laterally from out there. **Go round them, never through them:** if the room closes, pull up short of the goalie and the post, head up. Running into a goalie is a penalty in every book, and charging one can end your game.
 - **Goalie deep in the net, square and patient → shoot.** There is no room to go around, and a deke against a deep goalie just walks you into the post.
 - **Goalie retreating and not yet set → shoot early.** The best moment on any breakaway is often the one before you get to your "spot".
 - **You are being caught from behind → shoot now.** A backchecker's stick arrives sooner than you think. See [Puck Handling](puck_handling.md) on why hands are the smallest contributor to beating a defender: if you have a step, use it rather than spending it on a move.

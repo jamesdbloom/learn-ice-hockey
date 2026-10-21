@@ -172,7 +172,7 @@ Ranked by value. **The scan counts below are coaching craft**: nobody has valida
 5. **During a stoppage.** Free information almost nobody takes. Details below.
 6. **Immediately after you pass.** Your eyes follow your pass by reflex; break it. Once the puck leaves your blade you are an off-puck player, and your next job — support position, or the net — depends on what you see now. See [Puck Support and Spacing](puck_support_and_spacing.md).
 
-**The same window opens when you go back for a dumped puck.** As a defenceman, look over both shoulders before you reach it: where the forechecker comes from decides whether you take it behind the net, reverse it to your partner or move it up the wall. A partner calling *"man on"* or *"time"* gives you the same look for free.
+**The same window opens when you go back for a dumped puck.** As a defenceman, look over both shoulders before you reach it: where the forechecker comes from decides whether you take it behind the net, reverse it to your partner or move it up the wall. A partner calling *"man on"* or *"time"* gives you the same look for free. A forechecker may arrive when you do, so angle in rather than skating square at the boards: never turn your back to the checker or duck, and keep your head up and chin off your chest, even going slowly.
 
 **Scanning during a stoppage** costs nothing but attention:
 
@@ -377,20 +377,20 @@ Goalies and shot-blocking defenders read the same cues.
 
 ```facts
 Read: A tight gap closing hard means they intend to end this at the blue line — momentum is a commitment
-Action: Against a hard closer, change pace — slow down and let them over-skate, cut underneath, or chip the puck past them and race
+Action: Against a hard closer, change pace — slow down and let them over-skate, cut underneath, or chip it past them and race for the puck, not the player; see their numbers, pull up
 Never: Skate straight into a hard closer at full speed; that is exactly the collision they set up
 Read: A soft gap concedes the line to protect the slot — beat it with the delay, the drop pass, or a shot for a rebound with a body arriving
 Read: Skates parallel and square means uncommitted; hips opened to one side means they have committed, so attack the side they opened or abandoned
-Options: Against a defender standing up at the line, chip and chase, pass laterally into another lane, or regroup rather than force it
+Options: Against a defender standing up at the line, pass laterally into another lane, regroup rather than force it, or chip and chase the puck, not the player
 Key: The stick is the weakest of the defender cues — a stick is easy to move, so weight it below the feet
 ```
 
 Your **gap** is the distance between the defender and you. Reading a defender is mostly reading their gap and their feet.
 
-- **A tight gap — about one to one and a half stick lengths, closing hard.** They mean to end this at the blue line, and their momentum is a commitment. Change pace: slow down and let them over-skate you, cut underneath, or chip the puck past them and race. Do not skate straight into a hard closer at full speed — that is the collision they set up.
+- **A tight gap — about one to one and a half stick lengths, closing hard.** They mean to end this at the blue line, and their momentum is a commitment. Change pace: slow down and let them over-skate you, cut underneath, or chip the puck past them and race for it. The race is for the puck, not the player: whether you may hit at all is your league's call, and if you can see their numbers, pull up. Do not skate straight into a hard closer at full speed — that is the collision they set up.
 - **A soft gap — backing off to protect the middle.** They concede the blue line to protect the **slot**, the dangerous scoring area in front of the net. You will get in with the puck but not to the slot. Beat it with the delay (curl back for the second wave), the drop pass, or a shot aimed for a rebound with a body arriving at the net.
 - **Their feet.** Skates parallel and square means they can still pivot either way. Skates angled or hips opened to one side means they *have* committed. Recognise the commitment, then attack the side they opened or abandoned.
-- **Standing up versus backing off at the line.** Standing up takes the entry away: chip and chase, pass laterally to a teammate entering in another lane, or regroup rather than forcing it. Backing off gives you the line and takes the middle. (**Stepping up** is challenging forward in the neutral zone or at your own line; a **pinch** is stepping *down* from the *offensive* blue line.)
+- **Standing up versus backing off at the line.** Standing up takes the entry away: chip and chase, pass laterally to a teammate entering in another lane, or regroup rather than forcing it. If you chase, chase the puck, not the player, and pull up if you can see their numbers. Backing off gives you the line and takes the middle. (**Stepping up** is challenging forward in the neutral zone or at your own line; a **pinch** is stepping *down* from the *offensive* blue line.)
 - **Their stick.** An active stick in the middle lane protects the middle; a trailing or outside stick means the middle may be open. A stick is easy to move, so this is the weakest cue — weight it below the feet.
 
 The gap figures — one to one and a half stick lengths tight, two to three ordinary through the neutral zone — are coaching convention, not measurement, and the coaching pages that print numbers disagree. [Defending the Rush](../systems/defending_the_rush.md) sets out the scale and which published pages back or contradict each figure; [Neutral Zone Systems](../systems/neutral_zone_systems.md) covers why a tight gap is a five-man job.
@@ -414,7 +414,7 @@ The most advanced read is not about a person. It is where the *puck* is about to
 
 - **Where a loose puck will go.** A hard rim follows the boards and arrives predictably; a soft one dies in the corner; a puck flipped off the glass comes down somewhere else entirely. Rinks differ — lively glass, dead spots behind the net. **Learn your home rink deliberately**, and at an away rink bounce a couple off the end boards in warm-up.
 - **Where a rebound will go.** The rule of thumb is that it kicks off the way the goalie's pad or blocker was facing — so a shot from an angle tends to go to the far side, and you should arrive at the far post. **This is coaching craft, not a measured finding**, and goalies who steer rebounds break it. The reliable part: arrive at the net moving, just outside the crease and off the goalie, stick on the ice, expecting the puck rather than watching for it.
-- **Which battles you will probably lose.** This read saves more goals than any other. Arriving second, off balance, on your backhand, or against a bigger player already established, **you will probably lose.** Stop trying to win it and play for the *next* state: get to where the loose puck will squirt out, or pin the puck — not the player — against the boards with your skate or stick for a moment, for a teammate to dig out. Never with your hands, and never hold it for a whistle. The player who concedes the battle and takes the second puck ends up with it. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
+- **Which battles you will probably lose.** This read saves goals. Arriving second, off balance, on your backhand, or against a bigger player already established, **you will probably lose.** Stop trying to win it and play for the *next* state: get to where the loose puck will squirt out, or pin the puck — not the player — against the boards with your skate or stick for a moment, for a teammate to dig out. Never with your hands, and never hold it for a whistle. The player who concedes the battle and takes the second puck ends up with it. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 **What it costs.** Holding the puck to force a stoppage is a delay-of-game minor in every book (NHL and IIHF 63.2, PWHL 65.2, Hockey Canada 10.1, CARHA 74(b), USA Hockey 632(b)). Hockey Canada and CARHA excuse you only while you are being checked, and USA Hockey calls it after three seconds whether or not you were pressured.
 

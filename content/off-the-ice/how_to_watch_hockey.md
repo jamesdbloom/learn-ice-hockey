@@ -143,7 +143,7 @@ This is the most reliable read in hockey, and it takes about ninety seconds.
 
 **The question: when the puck goes into the corner in their own end, does the defending winger follow their man down into the corner?**
 
-- **If the winger stays high, on the opposing point just inside the blue line, and never follows a body below the hash marks** — they play a **zone** system, most commonly a **low zone collapse**. ("High" means *on the point*, not down at the faceoff dot, a shade under 44 feet away on an NHL sheet; [Rink Map](../foundation/rink_map.md) has the figures. Confusing the two is how people misread the system.) In a collapse the low three — usually both defencemen and the centre — sink to defend the front of the net, while the wingers guard the points and high slot. You defend the area you are standing in. This is the **standard coverage assumed throughout**. It is often called the most common amateur system because it is easiest to teach, **but that is coaching consensus; no survey of amateur systems was found.**
+- **If the winger stays high, on the opposing point just inside the blue line, and never follows a body below the hash marks** — they play a **zone** system, most commonly a **low zone collapse**. ("High" means *on the point*, not down at the faceoff dot, a shade under 44 feet away on an NHL sheet; [Rink Map](../foundation/rink_map.md) has the figures. Confusing the two is how people misread the system.) In a collapse the low three — usually both defencemen and the centre — sink to defend the front of the net, while the wingers guard the points and the weak-side winger drops into the high slot whenever the centre goes low. You defend the area you are standing in. This is the **standard coverage assumed throughout**. It is often called the most common amateur system because it is easiest to teach, **but that is coaching consensus; no survey of amateur systems was found.**
 - **If the winger follows their man everywhere, including into the corner and behind the net** — they play **man-to-man**.
 - **If the winger follows their man only until the man leaves the winger's area, then hands off** — they play a **hybrid**, sometimes called man-on, zone-off or **collapsing man**.
 
@@ -296,7 +296,7 @@ At a stoppage, watch the home bench. Under the NHL's line-change rule (Rule 82) 
 - **The sequence.** The visitors get **up to five seconds** to change. **The referee then raises a hand**, closing their window and opening the home team's **eight seconds**. The hand drops and changes end. So the raised hand is the moment to look at the home bench.
 - **Enforcement.** A late change at a stoppage, or too many players sent out for it, is sent back to the bench and the coach is warned. For the visiting team, any change attempted after the referee's signal is a bench minor straight away. Any later violation that game, overtime included, is a *"Bench Minor Penalty for Delay of Game – Improper Line Change."* The linesperson then whistles for everyone to be in position within five seconds. Players slow to the dot, or offside for the draw, are warned once a game — the centre is *not* thrown out of the draw for it — and after that it is a bench minor.
 - **The endgame.** In the last two minutes of regulation and in overtime, the five-second whistle and the slow-player warning both switch off, and the teams get *"a reasonable amount of time"* to set up. The long, unhurried set-up you see late in a game is the rule working.
-- **After an icing, only the team that iced it is frozen.** It cannot change, except to replace an injured player, put a pulled goalie back, or after a penalty that changes either team's strength. The other team changes freely, so the home bench keeps last change after a *visitor's* icing. Watch a tired line trapped in its own end: coaches name it as a reliable way to concede, though that it is a *large* share of goals is not counted here.
+- **After an icing, only the team that iced it is frozen.** Icing is shooting the puck from your own half across the opponents' goal line untouched ([Language and Glossary](../foundation/language_and_glossary.md) has the versions). The icing team cannot change, except to replace an injured player, put a pulled goalie back, or after a penalty that changes either team's strength. The other team changes freely, so the home bench keeps last change after a *visitor's* icing. Watch a tired line trapped in its own end: coaches name it as a reliable way to concede, though that it is a *large* share of goals is not counted here.
 - **No time-out after your own icing either** (Rule 87.1). The same rule bars it after the goalie stops play on a long shoot-in, and after a defender accidentally dislodges the net. A net knocked off by a defender also freezes that team's bench, with the same exceptions, and the draw comes back to their end at the attacking team's choice of dot (Rule 63.8).
 - **Other books.** These bars are the NHL's and the IIHF's. **USA Hockey imposes none of them**, so expect its benches to behave differently. **Hockey Canada's line-change bar is mandatory in U18AAA and Junior** and optional in Senior (Rules 6.7(d) and 6.1(g)); that book lets either team take its time-out after an icing, but the icing team still may not change during it.
 
@@ -448,7 +448,7 @@ Watch for:
 - **Tracking.** Head still, eyes locked on the puck — clear on replays.
 - **Movement.** Shuffles for small moves, T-pushes for larger ones — and are they set when the shot is released? A goalie still moving at release cannot push anywhere, which is why coaches rate being set above being perfectly deep (a coaching judgement).
 - **Rebound control.** Into the slot, or to the corners, or frozen?
-- **Puck-handling behind the net.** Does the goalie come out to play the puck, and where? Whether that area is restricted depends on the book — see below.
+- **Puck-handling behind the net.** Does the goalie come out to play the puck, and where? Whether that area is restricted depends on the book — see below. Even where it is not, a goalie who leaves the crease and falls on the puck can be given a minor.
 
 The trapezoid is drawn in [Rink Map](../foundation/rink_map.md), whose caption carries the NHL dimensions.
 
@@ -647,6 +647,8 @@ One metric from Part 7. Read its definition on the site that publishes it, then 
 **5 minutes — write down one thing to try.**
 One sentence, such as "This week I look over my shoulder before every retrieval." Take it to practice. See [Practice and Development](practice_and_development.md).
 
+A retrieval puck is often on the boards, so meet them with skates parallel, forearm and hip to the wall, head up and chin off your chest; never turn your back to anyone coming at you and never duck, even going slowly. If you are already facing the boards and cannot turn, get your stick and gloves up and spread on the glass, head off it. And if someone gets there first, play the puck, not them: whether you may hit at all is your league's call, never hit a player who cannot see you coming, never from behind, and if you can see their numbers, pull up. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
+
 Only half an hour? Cut the professional hockey and keep your own footage. That is where the improvement is.
 
 ---
@@ -659,7 +661,7 @@ Only half an hour? Cut the professional hockey and keep your own footage. That i
 - **Watching only players who play like you.** Spend a period on a player in your position whose choices puzzle you, then one on the position beside yours.
 - **Sitting as close to the ice as possible.** When you are there to learn, sit high, ideally behind a net. The front row is for atmosphere.
 - **Grading a player against a system you have assumed.** Work out the system first, then judge the player. A centre coming back along the boards, a winger holding high, or a defenceman who never goes below the circles may each be doing what their team asks.
-- **Looking up at the replay the moment a shot is taken.** Keep your eyes on the net front. In your own game, be that player: stop just outside the crease, stick on the ice and clear of the goalie, first to the puck when it comes out.
+- **Looking up at the replay the moment a shot is taken.** Keep your eyes on the net front. In your own game, be that player: arrive under control, stop just outside the crease, stick on the ice and clear of the goalie, head up and knowing where the post is, first to the puck when it comes out. Never go into the goalie; contact with one can draw a penalty, or get you thrown out.
 - **Assuming what a professional team does is what your team wants.** Ask. Almost every "always do X" on TV is "in this team's system, in this score state, do X."
 - **Skipping to your own touches on video.** Watch each shift from step-on to sit-down. Your touches are only about 3–4% of your 5-on-5 ice time, by NHL tracking the league calls unofficial.
 - **Watching without taking anything to practice.** End every session with one sentence: the one thing you will try next.
@@ -714,7 +716,7 @@ Only half an hour? Cut the professional hockey and keep your own footage. That i
 4. **Watch live for systems and TV for technique.** To learn, sit as high as you can, ideally behind a net.
 5. **Watch every blue-line entry.** Carried, dumped or turned over? Where was the defender's gap? At 5-on-5, carrying it in produced roughly twice the offence of dumping it.
 6. **On a breakout, look away from the retriever and find the other four.** Then ask of your own game: when your defenceman goes back for the puck, are you a pass they can make?
-7. **After a shot, watch the net front, not the replay.** In your own game, get there, stop just outside the crease, stick down and clear of the goalie, and be first to the puck.
+7. **After a shot, watch the net front, not the replay.** In your own game, get there under control, stop just outside the crease, stick down and clear of the goalie, head up and knowing where the post is, and be first to the puck. Never go into the goalie.
 8. **Watch your whole shift, not your touches.** The two seconds after your team loses the puck are what separate good players.
 9. **Watch your own position for a period, then the one beside it.** What a team asks of each player is a coaching choice, so learn what this team wants before you judge.
 10. **Convert every total to a per-60 rate before comparing players.** Time on ice is the coach's own opinion of a player, and the denominator every other number needs.

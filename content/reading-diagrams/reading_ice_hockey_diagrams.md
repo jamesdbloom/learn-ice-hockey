@@ -97,7 +97,8 @@ draw which way a player is facing. The rest:
   end point is an opponent, read the bars as **arrive under control**, and let the
   caption carry the rest. The IIHF key does have a mark for a hit — a line ending in a
   small curled bracket, named *body check* — but that tells you what the drill's author
-  had in mind, not what your league allows.
+  had in mind, not what your league allows. Where body checking is banned, a hit is a
+  penalty, and a hard one can get you thrown out of the game.
 - **Bars across a line** are *lateral crossovers* — **the one line symbol here taken
   from the Hockey Eastern Ontario sheet**, because the IIHF key has no lateral-crossover
   symbol. (The player glyphs come from that sheet too; most line symbols are the IIHF
@@ -290,7 +291,8 @@ picture.
 10. **On anyone else's diagram, check the key first; on your own team, the coach's
    whiteboard wins.** Ask about any mark you do not know before the drill starts. No key
    settles whether you may hit — your age group, league and book do, and until you
-   know, do not hit anyone.
+   know, do not hit anyone. Where checking is banned, a hit is a penalty and a hard one
+   can get you thrown out of the game.
 
 ---
 

@@ -91,7 +91,7 @@ Two cases catch players out.
 
 **You can have time with an opponent three feet away.** A forechecker who has over-skated you and is travelling *away* has a closing speed of about zero. To reach you they must stop, turn and rebuild speed — three or four tenths of a second at least, a coaching estimate (no study was found that puts a number on it). That is the moment for a **reverse**: send the puck back against the flow into the ice they just left. (A *reverse* goes back against the direction of play; a *rim* goes on around the boards with it.) ⚠️ **You play a reverse at the wall with that forechecker still on your hip, so never turn your back to the checker, and never duck.** Get your **skates parallel to the wall** and take contact with your **forearm and hip to the wall**, not the point of your shoulder, head up, chin off your chest. [Body Contact and Battles](../technique/body_contact_and_battles.md) §6 covers it and outranks anything here.
 
-**You can have no time with an opponent twenty feet away.** A defenceman skating backwards at you with a tight gap, on balance, stick already in your lane, is closing at maybe fifteen feet per second. You have a bit over a second, and some of it is spent because the puck is on your backhand. The "twenty feet" made you feel safe. It wasn't.
+**You can have no time with an opponent twenty feet away.** A defenceman skating backwards at you on balance, stick already in your lane, is closing at maybe fifteen feet per second. You have a bit over a second, and some of it is spent because the puck is on your backhand. The "twenty feet" made you feel safe. It wasn't.
 
 ![](diagram:breakout-reverse)
 
@@ -358,7 +358,7 @@ Why it beats chasing, which is the reason it belongs in a document about time an
 Action: Point your stick at a lane or a threat, not resting on the ice between your feet
 Key: A blade placed in a lane before the pass prevents passes that are never even attempted
 Risk: A stick jabbed at the puck after the pass is a gamble that pulls you out of position when it fails
-Technique: One hand on the stick to extend reach when closing space, two hands in a battle or to lift a stick
+Technique: One hand on the stick to extend reach when closing space; two hands in a battle, or to lift a stick: under the shaft, below their bottom hand, up not sideways, as the puck arrives, then let go
 Technique: Keep the blade flat on the ice — a lane blocked at ankle height is blocked, a blade waving at hip height is not
 ```
 
@@ -368,7 +368,9 @@ Technique: Keep the blade flat on the ice — a lane blocked at ankle height is 
 
 The principle is RinkHive's: *"Your stick's primary job in the defensive zone is to read and intercept — to sit in passing lanes and deny options before the puck arrives."* Its rule of thumb: *"[y]our stick blade should always be pointing at a passing lane or a puck threat, not resting on the ice between your skates"*, because *"[a] well-placed stick takes away a pass that never even gets made."* The carrier sees a blade and looks elsewhere, which costs them time. A stick jabbed at the puck *after* the pass RinkHive calls *"a gamble"*: *"[i]f it misses, you've given the puck carrier an easy move to the net."*
 
-**The rest of this section is not RinkHive's and has no source behind it.** One hand on the stick to extend reach when closing space, two hands in a battle or to lift a stick. Keep the blade flat on the ice: a lane blocked at ankle height is blocked; a blade waving at hip height is not.
+**This paragraph is not RinkHive's and has no source behind it.** One hand on the stick to extend reach when closing space, two hands in a battle or to lift a stick. Keep the blade flat on the ice: a lane blocked at ankle height is blocked; a blade waving at hip height is not.
+
+**To lift a stick, go under the shaft, below their bottom hand,** lift up rather than sideways as the puck arrives, and let go at once. Against a player bent low over the puck, lift under the shaft or leave it alone: a miss goes up into their face. At the hands it can be hooking or slashing, and a lift with no puck coming can be hooking or holding. [Body Contact and Battles](../technique/body_contact_and_battles.md#the-stick-lift) has the detail.
 
 ### Pressure with support — why lone pressure creates holes
 
@@ -659,7 +661,7 @@ Track it for ten games and the habit takes. It is the fastest improvement availa
 - **Standing still on the half-wall or at the net front.** Keep moving. A stationary player is covered by a defender who also gets to watch the puck.
 - **Letting the stick go to sleep.** Keep the blade in a passing lane. It is the cheapest thing you do all shift, and the first thing you drop when tired.
 - **Forcing the middle against a team protecting a lead.** Take what's given: they are conceding the outside on purpose.
-- **Assuming a goalie who has left the crease to play the puck is fair game as long as you never touch them.** Stay out of the lane of a goalie scrambling back, touching or not. Most books can penalise it with no contact at all, and USA Hockey takes the goal and gives you a minor if you stop them making a play. Go around them.
+- **Assuming a goalie who has left the crease to play the puck is fair game as long as you never touch them.** Stay out of the lane of a goalie scrambling back, touching or not. Every book penalises it with contact, and most without, and USA Hockey takes the goal and gives you a minor if you stop them making a play. Go around them.
 
 ## Check yourself
 
@@ -717,7 +719,7 @@ document, that is named too.*
 8. **Deny the reception, not the pass.** Blade in the lane before the pass. When you cannot win it, arrive as the puck does and press their blade as it lands — not a chop or a pull. Pin the stick of someone still waiting and it is interference.
 9. **Never pressure without a second layer.** Find out whether your team forechecks 2-1-2, 1-2-2 or something else, and go on the same trigger as everyone. This guide assumes a 2-1-2.
 10. **Use the rules as geometry.** Keep a trail skate down at the blue line. Dump wide of an enforced trapezoid; in British competitions, keep your goalie inside it and plan as though theirs may come out. Screen from outside the crease, skates off its red line, without contact.
-11. **Stay off the goalie.** Never block one scrambling back, touching or not: most books call it interference, and USA Hockey also takes the goal. Deliberate contact or a charge can end your game.
+11. **Stay off the goalie.** Never block one scrambling back, touching or not: every book penalises it with contact, and most without, and USA Hockey also takes the goal. Deliberate contact or a charge can end your game.
 12. **After every shift, ask: "did I have more time than I thought?"** The answer is almost always yes.
 
 ---
