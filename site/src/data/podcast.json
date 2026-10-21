@@ -34,45 +34,45 @@
       "title": "Rink Map",
       "section": "Foundation",
       "track": 4,
-      "bytes": 21604819,
-      "duration_s": 2573.7,
-      "audio": "/audio/foundation/rink_map-d45799b7.m4a"
+      "bytes": 25225736,
+      "duration_s": 3011.8,
+      "audio": "/audio/foundation/rink_map-e5e10dba.m4a"
     },
     {
       "doc_id": "foundation/language_and_glossary",
       "title": "Language and Glossary",
       "section": "Foundation",
       "track": 5,
-      "bytes": 13876672,
-      "duration_s": 1654.5,
-      "audio": "/audio/foundation/language_and_glossary-f3ab32bf.m4a"
+      "bytes": 23038725,
+      "duration_s": 2743.5,
+      "audio": "/audio/foundation/language_and_glossary-f42082a8.m4a"
     },
     {
       "doc_id": "foundation/rules_primer",
       "title": "Rules Primer",
       "section": "Foundation",
       "track": 6,
-      "bytes": 22786481,
-      "duration_s": 2718.6,
-      "audio": "/audio/foundation/rules_primer-9f5785ab.m4a"
+      "bytes": 20411711,
+      "duration_s": 2433.7,
+      "audio": "/audio/foundation/rules_primer-feb502bf.m4a"
     },
     {
       "doc_id": "foundation/uk_rules",
       "title": "UK and England Rules",
       "section": "Foundation",
       "track": 7,
-      "bytes": 23992574,
-      "duration_s": 2863.3,
-      "audio": "/audio/foundation/uk_rules-5bd13435.m4a"
+      "bytes": 19888033,
+      "duration_s": 2371.5,
+      "audio": "/audio/foundation/uk_rules-9cc00804.m4a"
     },
     {
       "doc_id": "foundation/on_ice_communication",
       "title": "On-Ice Communication",
       "section": "Foundation",
       "track": 8,
-      "bytes": 30304502,
-      "duration_s": 3613.9,
-      "audio": "/audio/foundation/on_ice_communication-50668916.m4a"
+      "bytes": 20551263,
+      "duration_s": 2452.6,
+      "audio": "/audio/foundation/on_ice_communication-61f765c6.m4a"
     },
     {
       "doc_id": "positions/center",
@@ -133,9 +133,9 @@
       "title": "Zone Entries",
       "section": "Systems and Situations",
       "track": 15,
-      "bytes": 23428497,
-      "duration_s": 2790.6,
-      "audio": "/audio/systems/zone_entries-00b14c4d.m4a"
+      "bytes": 16508937,
+      "duration_s": 1971.3,
+      "audio": "/audio/systems/zone_entries-54df4bc5.m4a"
     },
     {
       "doc_id": "systems/offensive_zone_play",
@@ -160,9 +160,9 @@
       "title": "Neutral Zone Systems",
       "section": "Systems and Situations",
       "track": 18,
-      "bytes": 32509042,
-      "duration_s": 3883.6,
-      "audio": "/audio/systems/neutral_zone_systems-23fafbe8.m4a"
+      "bytes": 29882919,
+      "duration_s": 3557.8,
+      "audio": "/audio/systems/neutral_zone_systems-cfe70ca1.m4a"
     },
     {
       "doc_id": "systems/defensive_zone_coverage",
@@ -187,9 +187,9 @@
       "title": "Special Teams",
       "section": "Systems and Situations",
       "track": 21,
-      "bytes": 25023417,
-      "duration_s": 2979.1,
-      "audio": "/audio/systems/special_teams-1bb40b13.m4a"
+      "bytes": 21112637,
+      "duration_s": 2513.4,
+      "audio": "/audio/systems/special_teams-0d91bd08.m4a"
     },
     {
       "doc_id": "systems/faceoffs",
@@ -205,9 +205,9 @@
       "title": "Game Management",
       "section": "Systems and Situations",
       "track": 23,
-      "bytes": 28531283,
-      "duration_s": 3396.5,
-      "audio": "/audio/systems/game_management-b94f05d6.m4a"
+      "bytes": 18681535,
+      "duration_s": 2224.0,
+      "audio": "/audio/systems/game_management-6e7c5e63.m4a"
     },
     {
       "doc_id": "technique/skating",
