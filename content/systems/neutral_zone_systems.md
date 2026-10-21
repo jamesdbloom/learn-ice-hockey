@@ -189,7 +189,7 @@ The Devils were not even the first NHL team to run it. **Roger Neilson used it w
 
 **Why it worked so well then.** Three things, all of which have since changed:
 1. **The two-line pass rule.** You could not pass from your own end past the red line. That made the long ball illegal and forced every attack to skate through the trap's teeth. (Nothing of it survives in the current Rule 83.)
-2. **Obstruction was tolerated.** A hook, a hold or a subtle interference on a forward cutting through the middle was very often not called. The trap's four-man wall could be four-man in practice as well as on the whiteboard.
+2. **Obstruction was tolerated.** A hook, a hold or a subtle interference on a forward cutting through the middle was very often not called. The trap's four-player wall held in practice as well as on the whiteboard.
 3. **Less speed and less skill throughout the lineup.** A wall of four is much easier to hold when nobody on the other side can beat one of the four in a footrace.
 
 **What changed.** Coming out of the 2004-05 lockout the NHL dropped the two-line pass, ordered obstruction called, and added the trapezoid limiting where goalies may play the puck. **That date is the commonly given one and is in no rulebook held here**, so take it as received history. Stretch passes became legal, the wall could no longer be held with sticks and bodies, and the goalie stopped being a free third defenceman on retrievals. Add players who can really skate, and **the pure passive trap is no longer a viable full-time system at high levels.** It survives as a situational tool — protecting a lead, the last two minutes, a shift with your best defenceman off — and as DNA inside the newer structures below.
@@ -219,7 +219,7 @@ Countered by: Getting behind the flat wall with a stretch pass, chip-and-chase p
 
 ![](diagram:nz-1-3-1)
 
-**Strengths.** It denies the middle better than anything else. The three-man line spans the full 85 feet with F1 already taking the middle away, so a controlled entry has no seam to go through. It protects a slower defence pair, and with the back defenceman uncommitted it almost never gives up an odd-man rush. That is why so many teams switch to it with a one-goal lead in the third.
+**Strengths.** It denies the middle better than anything else. The three-player line spans the full 85 feet with F1 already taking the middle away, so a controlled entry has no seam to go through. It protects a slower defence pair, and with the back defenceman uncommitted it almost never gives up an odd-man rush. That is why so many teams switch to it with a one-goal lead in the third.
 
 **The famous demonstration.** In November 2011, Guy Boucher's Tampa Bay Lightning held their 1-3-1 and Peter Laviolette's Philadelphia Flyers simply refused to advance — a Flyers defenceman stood still with the puck in his own zone, daring Tampa to come and get it. Neither coach blinked, Tampa won 2-1, and the league argued about it for a week. **A 1-3-1 does not try to take the puck from you. It offers you the puck on terms you will not like.**
 
@@ -250,7 +250,7 @@ The aggressive option is not really a neutral-zone structure. It is what the mid
 ![](diagram:nz-pressure)
 
 **What the other three do** once the puck is coming out.
-- **F3 holds the middle**, level with or slightly ahead of the puck — the first protection if the two-man pressure is beaten. Do not drift to a wall; the pass that hurts you comes up the middle. *(Where F3 sits while the forecheck is still live in their end is a separate coaching split — weak-side high by default, puck-side in the stacked variant. [Forechecking Systems](forechecking_systems.md) covers it; either way, F3's job on the way back is the middle.)*
+- **F3 holds the middle**, level with or slightly ahead of the puck — the first protection if the two-player pressure is beaten. Do not drift to a wall; the pass that hurts you comes up the middle. *(Where F3 sits while the forecheck is still live in their end is a separate coaching split — weak-side high by default, puck-side in the stacked variant. [Forechecking Systems](forechecking_systems.md) covers it; either way, F3's job on the way back is the middle.)*
 - **The strong-side defenceman** steps up hard on a pass to the wall. That aggressive gap makes the system work, and it has the least cover behind it — the weak-side defenceman is the only safety left. ⚠️ **"Hard" is about the gap, not the contact.** Close the space fast; speed built into a hit is charging — see [Gap control as a team concept](#gap-control-as-a-team-concept).
 - **The weak-side defenceman stays home** — with two forwards deep, the only real safety you have.
 
@@ -645,7 +645,7 @@ Risk: Leaving a forward high means defending 4-on-5 while you do it — a coachi
 
 **What it is.** A long pass from your own end or the neutral zone to a forward who has stayed high — near or beyond the far blue line — skipping the neutral zone entirely.
 
-**Why it exists.** It is legal only because the two-line pass rule went (see [What the neutral zone actually is](#what-the-neutral-zone-actually-is)). It counters a flat line **still holding out in the neutral zone** — a 1-2-2 trap at the red line, or the three-man line of a 1-3-1 — because there is real ice behind such a line for a receiver to stand in legally.
+**Why it exists.** It is legal only because the two-line pass rule went (see [What the neutral zone actually is](#what-the-neutral-zone-actually-is)). It counters a flat line **still holding out in the neutral zone** — a 1-2-2 trap at the red line, or the three-player line of a 1-3-1 — because there is real ice behind such a line for a receiver to stand in legally.
 
 > **It is not the counter to a 1-4.** A 1-4 holds its line on **its own blue line**, so there is no legal ice behind it: a receiver already behind it is offside the moment the puck crosses. Against a 1-4, **chip it hard past the flat line and race for it**, pulling up if the goalie comes out for it — see [the 1-4 section](#1-4--the-full-retreat) and [Forechecking Systems](forechecking_systems.md). The same goes for any structure that has retreated to its own blue line, whatever it is called.
 
@@ -661,7 +661,7 @@ Risk: Leaving a forward high means defending 4-on-5 while you do it — a coachi
 
 ```facts
 Position: Delay deliberately, staying 10 to 15 feet behind the play, and arrive into the space the first two attackers have vacated
-Goal: Arrive into the high slot behind a two-man rush — defenders track the puck, so the second man in is the one nobody picked up
+Goal: Arrive into the high slot behind a two-player rush — defenders track the puck, so the second man in is the one nobody picked up
 Convention: Coaching material treats it as one of the most reliable scoring looks in hockey — consensus rather than a tracked figure
 Never: Drift five feet behind — being the late man means a full gap back, so the defence has to choose between you and the puck
 Action: Be the first man back if it turns over — that is the deal
@@ -673,7 +673,7 @@ The picture below is drawn from the defending bench, because that side has to so
 
 ![](diagram:rush-trailer)
 
-**Why it works.** Defenders track the puck and the immediate threats, so the player arriving second is the one nobody picked up. Coaching material treats the late man into the high slot behind a two-man rush as one of the most reliable scoring looks in hockey. That is **coaching consensus rather than a tracked figure**: published goal breakdowns stop at the shot and the pass before it, and **none classifies a rush goal by the coverage that broke down**.
+**Why it works.** Defenders track the puck and the immediate threats, so the player arriving second is the one nobody picked up. Coaching material treats the late man into the high slot behind a two-player rush as one of the most reliable scoring looks in hockey. That is **coaching consensus rather than a tracked figure**: published goal breakdowns stop at the shot and the pass before it, and **none classifies a rush goal by the coverage that broke down**.
 
 **The discipline.** Be genuinely late — a full gap back, not five feet, so the defence has to choose between you and the puck. And be first back if it turns over; that is the deal.
 
@@ -749,7 +749,7 @@ A trap hands you the puck and defends the ice instead, so possession alone tells
 
 **That play sends the receiver onto a puck on the boards with a defender closing** — in most structures above the strong-side defenceman's job is to step up hard on a pass to the wall, so expect to be met. ⚠️ **Never turn your back to anyone coming at you, and never duck.** Get your **skates parallel to the boards**, forearm and hip to the wall, head up and chin off your chest — **not the point of your shoulder, and not the whole shoulder if you can help it.** **This holds in a non-checking league too:** the wall does not need an opponent to hurt you, and a legal angle-off puts you into it just as a check does. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full rule and the evidence.
 
-**3. Stretch a forward behind the wall — against a 1-3-1 or a trap, not a 1-4.** A 1-3-1 lives ahead of one defenceman, so a forward behind the three-man line taking a legal stretch pass is instantly 1-on-1 or better. Even the *threat* makes the wall drop back and opens ice in front of it. **This only works while the wall is out in the neutral zone.** Against a 1-4 on its own blue line a receiver behind it is offside, so **chip hard past the flat line and race for it** — nobody in a flat line is deeper than anybody else, and only the goalie is beyond. **If the goalie comes out for it, pull up and take away the outlet rather than finish on them** — a goalie outside the crease is not fair game in any rulebook here, and [Forechecking Systems](forechecking_systems.md#why-this-matters-so-much-to-a-forechecker) covers what contact with one costs.
+**3. Stretch a forward behind the wall — against a 1-3-1 or a trap, not a 1-4.** A 1-3-1 lives ahead of one defenceman, so a forward behind the three-player line taking a legal stretch pass is instantly 1-on-1 or better. Even the *threat* makes the wall drop back and opens ice in front of it. **This only works while the wall is out in the neutral zone.** Against a 1-4 on its own blue line a receiver behind it is offside, so **chip hard past the flat line and race for it** — nobody in a flat line is deeper than anybody else, and only the goalie is beyond. **If the goalie comes out for it, pull up and take away the outlet rather than finish on them** — a goalie outside the crease is not fair game in any rulebook here, and [Forechecking Systems](forechecking_systems.md#why-this-matters-so-much-to-a-forechecker) covers what contact with one costs.
 
 **4. Skate it through the seam — only when it is real.** A trap committed to one side has a seam behind the pressure, and a skilled carrier cutting back through the middle behind a stepped-up forechecker breaks it completely. It is the highest-reward, highest-risk answer — the one amateurs try first and should try last. **If the seam is not obviously there, it is not there.**
 
@@ -912,7 +912,7 @@ document, that is named too.*
 4. **At your own blue line, stand up only with help behind you; otherwise back off.** Check over your shoulder and call it. ⚠️ **Stand up with your feet, not with a hit**: finished as a hit it is charging in every division, no book caps it at a minor, and Hockey Canada makes it a mandatory match penalty on a player who cannot defend themselves.
 5. **Regroup instead of forcing a bad entry.** Forwards: curl back with the puck and turn up as it goes D-to-D — never stand still, never leave before your defenceman has it. Defencemen: after a D-to-D, sink into mid-ice for the return. Skip it when you have numbers, your change is due, or the pass back is not clean.
 6. **Three forwards, three lanes.** Support means being somewhere else, not close. Use the middle as a one-touch relay — wall to middle to far wall makes their structure slide twice. **Take the middle-lane puck with your head up**: coaching material puts the contact there — **consensus rather than a counted ranking**.
-7. **Be the late man, or take the trailer.** Attacking, trail a full gap — 10 to 15 feet — behind a two-man rush and arrive into the high slot, and be first back if it turns over. Backchecking, the trailer is usually yours rather than your defencemen's — ask whether your team gives the trailer to the weak-side defenceman.
+7. **Be the late man, or take the trailer.** Attacking, trail a full gap — 10 to 15 feet — behind a two-player rush and arrive into the high slot, and be first back if it turns over. Backchecking, the trailer is usually yours rather than your defencemen's — ask whether your team gives the trailer to the weak-side defenceman.
 8. **Beat a trap by moving the puck, not carrying it** — quick passes, the boards, a stretch forward behind a wall still out in the neutral zone, or a dump you chase. Try the seam last. Against a 1-4, chip past the flat line and race; if the goalie comes out for it, pull up. ⚠️ **On the boards, never turn your back to anyone coming at you and never duck — head up, chin off your chest, even in a non-checking league.**
 9. **Carry it in when the line is yours; when it is not, a dump you chase beats a turnover at the line.** Get it over the red line first or it is icing, and in several books your tired line cannot change. Chase it unless you are changing.
 10. **Before a neutral-zone draw, know whether you are winning it forward or back, and who your man is if you lose it.** These draws turn straight into rushes. Hold your line until the puck drops — creeping gets your centre thrown out.

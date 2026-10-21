@@ -589,13 +589,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **check_readability:** counts a whole blockquote, including a long `**Related:**` nav line, as one paragraph, so page headers are inflated. Exclude Related lines, or measure blockquote paragraphs separately (Y wave, y3).
 - **SG7 and SG8 are CLOSED for 25 content files** (record: project/reviews/sg7_sg8_boards_line_and_carha_ban_2026-10-21.md). What is still open:
   - **SG7 remainder.** About 29 diagram caption and label strings still say "back to the checker". zone_entries says "never turn your back to an oncoming checker" at :427, :461, :564 (facts), :573, :925 and :964, and in its zone_entries.mjs captions :378/:419. special_teams :842 still says "five-man". DTR facts :330 opens "Hitting a man's back" (pronoun ruling). Fix it site by site, with a layer test.
-  - **SG7 last bits (found by sg7rS, 21 Oct).**
-    - on_ice_communication :108 still reads "Never turn your back to the checker — any opponent closing on you…". It is the last "the checker" boards line in content/, and its own caption already says "anyone coming at you".
-    - These "-man" coinages remain:
-      - NZ: "three-man line" :222/:648/:752; "four-man wall" :192; "two-man pressure" :253; "two-man rush" :664/:676/:915.
-      - FC: "three-man wall" :406/:420/:503/:515; "two-man pressure" :495/:507/:934/:1047.
-      - OIC :229: "two-man attack", "one-man".
-    - Source comments in about 10 diagram modules still quote the old line as "word for word". Readers never see them.
+  - **SG7 last bits: DONE 21 Oct** (record sg7_last_bits_2026-10-21.md). Still open: stale source comments in about 10 diagram modules quote the old line as "word for word". Readers never see them.
   - **SG8 remainder.** Some facts lines had no room for the 32(d) ban; the body text on each page carries it. They are center :485, OZP :927, FC :864, switching :250, OIC :282, pwtp :708/:713/:714, defender :124/:581, NZ :735, faceoffs :567 and winger :102. Winger KT8 omits the CARHA 66(e) injury ban.
   - **Rules to keep (sg7_fix_rules.md).** 32(d) applies only to a game misconduct that comes with a MAJOR: not to a match (34(a)), not to a 53(a) minor plus game misconduct (32(b) reports that to the Chairman), and not to an accidental high stick (a reading, not a ruling). Where a CARHA ban sits beside a USA Hockey game misconduct, name 404(b) too.
   - CARHA 62(b) makes a follow-through above the shoulders a major even if no one is hurt. No slap-shot site except shooting :983 says so. Routing note: send agents to sources/hc.txt, not hc_2026-08-print.txt.

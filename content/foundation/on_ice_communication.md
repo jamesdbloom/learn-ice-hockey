@@ -105,7 +105,7 @@ These are the highest-value calls in hockey and the ones most often missed. All 
 
 - **"Man on"** — *Said by anyone with a view of the puck carrier's blind side.* An opponent is closing and the carrier cannot see them. **If you hear it:** stop trying to make a play. Protect the puck with your body, put the net or your own body between you and the pressure, and get rid of it — a rim, a chip off the glass, or a short pass to the nearest teammate. Do not put your head down.
 
-  > **One safety override, and it outranks everything else in this entry.** "Man on" is shouted at a player near the wall who cannot see the check coming. ⚠️ **Never turn your back to the checker — any opponent closing on you, whether they are after the puck or just coming at you — and never duck.** A turned back makes the contact a hit from behind, and a tucked chin straightens the neck, so a head-first hit on the boards or a post drives straight down it. Head up, chin off your chest, and never take the boards on the point of your shoulder. [Body Contact and Battles](../technique/body_contact_and_battles.md) sets out how to brace for the hit and the research behind it.
+  > **One safety override, and it outranks everything else in this entry.** "Man on" is shouted at a player near the wall who cannot see the check coming. ⚠️ **Never turn your back to anyone coming at you, whether they are after the puck or after you, and never duck.** A turned back makes the contact a hit from behind, and a tucked chin straightens the neck, so a head-first hit on the boards or a post drives straight down it. Head up, chin off your chest, and never take the boards on the point of your shoulder. [Body Contact and Battles](../technique/body_contact_and_battles.md) sets out how to brace for the hit and the research behind it.
   >
   > If you are already facing the wall and cannot turn in time, get your stick and gloves up and spread out on the glass — damage limitation, not the position to aim for. The checker carries the legal obligation here, not you.
 
@@ -226,7 +226,7 @@ These tell the carrier that you exist and where you are. The carrier's head is o
 
 - **"Back"** — *Said by a trailing support player.* I am behind you and available for a drop pass or as the trailer. **If you hear it:** you can leave the puck rather than carrying it into trouble.
 
-- **"With you"** †— *Said by a teammate skating alongside; in common use, but undocumented as a spoken call.* I am on your hip, keep the puck alive. **If you hear it:** you have a two-man attack, not a one-man one. Slow down half a step and use them.
+- **"With you"** †— *Said by a teammate skating alongside; in common use, but undocumented as a spoken call.* I am on your hip, keep the puck alive. **If you hear it:** you have a two-player attack, not a one-player one. Slow down half a step and use them.
 
 - **"I'm high"** †— *Said by a forward or a defenceman above the puck; in common use, but undocumented as a spoken call.* I am the option closer to the blue line. **If you hear it:** this is usually your safe reset when the low options are covered.
 

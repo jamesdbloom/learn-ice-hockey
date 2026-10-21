@@ -403,7 +403,7 @@ Widely described in coaching material as the most common *base* structure in hoc
 Key: The same three numbers describe two things — all three layers inside their end, or the same layers held back across the middle third
 Never: Assume a neutral-zone 1-2-2 is "the trap" — the trap is one particular setting of it, funnelling the carrier into a kill zone at the red line
 Key: The neutral-zone shape is what the forecheck collapses into, so nobody has to sprint anywhere — the main practical argument for it as a base system
-Options: The 1-1-3 is the conservative cousin — the third forward drops in line with the defencemen to make a three-man wall
+Options: The 1-1-3 is the conservative cousin — the third forward drops in line with the defencemen to make a three-player wall
 ```
 
 The same three numbers describe two different things, which confuses almost everyone the first time.
@@ -417,7 +417,7 @@ The two versions connect because **the neutral-zone shape is what the forecheck 
 
 The New Jersey Devils' 1990s and 2000s teams are the standard reference for building a whole identity around this. See [Neutral Zone Systems](neutral_zone_systems.md) for the trap proper and how to break one.
 
-**A closely related variant is the 1-1-3**, where the third forward drops all the way in line with the defencemen to make a three-man wall. Treat it as the 1-2-2's more conservative cousin.
+**A closely related variant is the 1-1-3**, where the third forward drops all the way in line with the defencemen to make a three-player wall. Treat it as the 1-2-2's more conservative cousin.
 
 ---
 
@@ -492,7 +492,7 @@ Countered by: A hard chip past the flat line and a race for it — not a stretch
 Position: Two forwards forechecking aggressively, three players across the ice behind them
 Convention: In the left-wing lock the centre and right winger forecheck as F1 and F2, and the left winger drops back to the half-boards
 Convention: If the puck is not won, the left winger slides into line with the two defencemen — effectively a third defenceman going the other way
-Goal: Two-man pressure, nearly as good as a 2-1-2, with three players always between the puck and your net
+Goal: Two-player pressure, nearly as good as a 2-1-2, with three players always between the puck and your net
 Read: Pick it when you want pressure but cannot afford to bleed rush chances, or to nurse a lead without going fully passive
 Risk: It demands a left winger with total positional discipline and the skating to back-check, and gives up the fifth attacker so you cycle less
 Never: Read "forecheck hard" as a licence to finish into the back of a carrier who has turned to the boards — same onus as the 2-1-2, and the same prior question of whether you may body check at all
@@ -500,11 +500,11 @@ Never: Read "forecheck hard" as a licence to finish into the back of a carrier w
 
 **Shape:** Two forwards forechecking aggressively, three players across the ice behind them.
 
-The **left-wing lock** is the famous version. The centre and right winger forecheck hard as F1 and F2. ⚠️ **"Hard" carries the same two conditions as in the 2-1-2.** Their defenceman is retrieving with their back to you, so **take the puck, take the ice, or angle them off it, and never finish into their back.** And find out first whether you may body check in this game at all — that can change from one opponent to the next. Both are set out under **2-1-2** above and **Off a dump-in** below. The **left winger "locks"** — instead of joining the attack, they drop back to the half-boards and, if the puck is not won, slide into line with the two defencemen to form a three-man wall across the ice. The left winger is effectively a third defenceman whenever the puck is going the other way.
+The **left-wing lock** is the famous version. The centre and right winger forecheck hard as F1 and F2. ⚠️ **"Hard" carries the same two conditions as in the 2-1-2.** Their defenceman is retrieving with their back to you, so **take the puck, take the ice, or angle them off it, and never finish into their back.** And find out first whether you may body check in this game at all — that can change from one opponent to the next. Both are set out under **2-1-2** above and **Off a dump-in** below. The **left winger "locks"** — instead of joining the attack, they drop back to the half-boards and, if the puck is not won, slide into line with the two defencemen to form a three-player wall across the ice. The left winger is effectively a third defenceman whenever the puck is going the other way.
 
 ![](diagram:forecheck-2-3-lock)
 
-**What it's good at:** Genuinely aggressive forechecking with a genuinely solid back end. You get two-man pressure — nearly as good as a 2-1-2 — while never being outnumbered on the counter-attack, because there are always three players between the puck and your net.
+**What it's good at:** Genuinely aggressive forechecking with a genuinely solid back end. You get two-player pressure — nearly as good as a 2-1-2 — while never being outnumbered on the counter-attack, because there are always three players between the puck and your net.
 
 **What it concedes:** Less than most systems, which is why it was so successful. The real costs are structural rather than tactical: it demands a left winger with total positional discipline and the skating to back-check, and it puts less offensive weight on that player. It also gives up the fifth attacker in the offensive zone, so you cycle less.
 
@@ -512,7 +512,7 @@ The **left-wing lock** is the famous version. The centre and right winger forech
 
 **Where the left-wing lock actually came from.** The two usual origin stories are **complementary, not competing**. It was developed in **Czechoslovak hockey in the 1970s** to cope with the dominant Soviet teams, and was then **adapted for the narrower North American rink by Barry Smith**, an assistant on the Detroit Red Wings' staff, where Scotty Bowman adopted it and Detroit's teams from the mid-1990s made it famous. It is also commonly said to have passed through Swedish and Finnish hockey first — **that Nordic leg is the unsourced part**, and nothing located for this document attests it. Detroit did not invent it, and Barry Smith never claimed to. The lock is much rarer in the modern NHL than in 1997, because modern systems want wingers more involved offensively, but it remains common at junior, college and European club level.
 
-**Where the lock lives once possession changes** — the three-man wall across the neutral zone, and the modern "lock whichever winger is highest" variant — is covered in [Neutral Zone Systems](neutral_zone_systems.md).
+**Where the lock lives once possession changes** — the three-player wall across the neutral zone, and the modern "lock whichever winger is highest" variant — is covered in [Neutral Zone Systems](neutral_zone_systems.md).
 
 ---
 
@@ -931,7 +931,7 @@ This is the coach's decision, but you should understand the logic, because you w
 | **Trailing late** | 2-1-2, then full-ice press | The cost of conceding is now near zero. Maximise the chance of a turnover in their end. |
 | **Tied, early** | Your team's base system | No reason to distort. |
 | **Against a strong puck-moving defence** | **Genuine split — see below** | Coaches go both ways on this one, and the two answers solve different halves of the problem. |
-| **Against a defence that panics** | 2-1-2 | Two-man pressure produces turnovers immediately. |
+| **Against a defence that panics** | 2-1-2 | Two-player pressure produces turnovers immediately. |
 | **After their icing** | 2-1-2 or press | **Attack the tired line.** Under the NHL, IIHF and PWHL they cannot change or take a timeout. Under USA Hockey, CARHA and most Hockey Canada categories, no mismatch. |
 | **Your line is tired / long shift** | 1-2-2 or 1-4 | A passive shape is far cheaper to skate. Survive to a whistle or a change. |
 | **Immediately after a long defensive shift** | Passive, then change | Do not chase. Get the puck deep, get off the ice. |
@@ -1044,7 +1044,7 @@ Full detail on the counters lives in [Breakouts](breakouts.md) and [Neutral Zone
 - **Running the goalie in the corner because there is no trapezoid.** **Close them down, put your stick in the lane they want to pass into, and pull up rather than finish.** No book here makes a goalie outside the crease fair game. ⚠️ **Running one can end your game**: a charge does so automatically under Hockey Canada wherever it happens, under CARHA if the goalie is in the crease or anyone is injured, and under USA Hockey if it is reckless — and under CARHA and USA Hockey it costs at least the next game too. Under USA Hockey any deliberate hit on one is charging, never a bare minor, unless, in a checking game, you are battling for a puck they hold outside the privileged area, and then only to win the puck; where your game bars body checking, stay off them altogether. See [Why this matters so much to a forechecker](#why-this-matters-so-much-to-a-forechecker).
 - **Not knowing which forecheck your team runs, or which one you switch to with a lead.** Ask before your first shift: which shape, which way F1 angles, and what the bench shouts to switch — and agree it with your linemates. If F1 angles to the boards while F2 seals the middle, both are doing their job and neither is doing anything useful.
 - **Turning your back to an opponent at the wall, on either side of the puck.** Never turn your back to anyone coming at you, and never duck — head up, chin off your chest. It holds in every league, forechecking and pinching alike. A turned back turns any contact into a hit from behind you can neither see nor brace for, and a head-down collision with the boards can injure your neck even at walking speed. Protecting the puck never justifies any of them.
-- **Running an aggressive forecheck you are not fit enough to sustain.** Run the shape your legs can hold all game, keep shifts short, and save two-man pressure for when it pays — trailing late, or against a defence that panics. A 2-1-2 for ten minutes and nothing after is worse than a 1-2-2 for sixty.
+- **Running an aggressive forecheck you are not fit enough to sustain.** Run the shape your legs can hold all game, keep shifts short, and save two-player pressure for when it pays — trailing late, or against a defence that panics. A 2-1-2 for ten minutes and nothing after is worse than a 1-2-2 for sixty.
 
 ## Check yourself
 
