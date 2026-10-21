@@ -79,54 +79,54 @@
       "title": "Centre",
       "section": "Positions",
       "track": 9,
-      "bytes": 25843275,
-      "duration_s": 3085.3,
-      "audio": "/audio/positions/center-6c5953e4.m4a"
+      "bytes": 19311653,
+      "duration_s": 2299.9,
+      "audio": "/audio/positions/center-57bb4726.m4a"
     },
     {
       "doc_id": "positions/winger",
       "title": "Winger",
       "section": "Positions",
       "track": 10,
-      "bytes": 25217527,
-      "duration_s": 3010.9,
-      "audio": "/audio/positions/winger-53af762a.m4a"
+      "bytes": 18062876,
+      "duration_s": 2156.7,
+      "audio": "/audio/positions/winger-b5ce127d.m4a"
     },
     {
       "doc_id": "positions/defender",
       "title": "Defender",
       "section": "Positions",
       "track": 11,
-      "bytes": 29411356,
-      "duration_s": 3511.9,
-      "audio": "/audio/positions/defender-cbc0377b.m4a"
+      "bytes": 13034409,
+      "duration_s": 1551.2,
+      "audio": "/audio/positions/defender-d4609ca4.m4a"
     },
     {
       "doc_id": "positions/goaltender",
       "title": "Goaltender",
       "section": "Positions",
       "track": 12,
-      "bytes": 28066219,
-      "duration_s": 3345.9,
-      "audio": "/audio/positions/goaltender-734f3e44.m4a"
+      "bytes": 15850194,
+      "duration_s": 1887.5,
+      "audio": "/audio/positions/goaltender-950e9a1b.m4a"
     },
     {
       "doc_id": "positions/switching_positions",
       "title": "Switching Positions",
       "section": "Positions",
       "track": 13,
-      "bytes": 28335489,
-      "duration_s": 3375.6,
-      "audio": "/audio/positions/switching_positions-c34e95c0.m4a"
+      "bytes": 10893549,
+      "duration_s": 1296.6,
+      "audio": "/audio/positions/switching_positions-d1df8378.m4a"
     },
     {
       "doc_id": "systems/breakouts",
       "title": "Breakouts",
       "section": "Systems and Situations",
       "track": 14,
-      "bytes": 25483563,
-      "duration_s": 3037.4,
-      "audio": "/audio/systems/breakouts-1cf56dc6.m4a"
+      "bytes": 25032510,
+      "duration_s": 2979.2,
+      "audio": "/audio/systems/breakouts-3ea19288.m4a"
     },
     {
       "doc_id": "systems/zone_entries",
@@ -142,9 +142,9 @@
       "title": "Offensive Zone Play",
       "section": "Systems and Situations",
       "track": 16,
-      "bytes": 30240461,
-      "duration_s": 3611.5,
-      "audio": "/audio/systems/offensive_zone_play-d4dc2248.m4a"
+      "bytes": 19746884,
+      "duration_s": 2353.7,
+      "audio": "/audio/systems/offensive_zone_play-ae9065f9.m4a"
     },
     {
       "doc_id": "systems/forechecking_systems",
@@ -169,9 +169,9 @@
       "title": "Defensive Zone Coverage",
       "section": "Systems and Situations",
       "track": 19,
-      "bytes": 27082311,
-      "duration_s": 3229.7,
-      "audio": "/audio/systems/defensive_zone_coverage-25d172c9.m4a"
+      "bytes": 18281964,
+      "duration_s": 2181.4,
+      "audio": "/audio/systems/defensive_zone_coverage-ff08a37f.m4a"
     },
     {
       "doc_id": "systems/defending_the_rush",
@@ -196,9 +196,9 @@
       "title": "Faceoffs",
       "section": "Systems and Situations",
       "track": 22,
-      "bytes": 13351472,
-      "duration_s": 1588.7,
-      "audio": "/audio/systems/faceoffs-28cf158e.m4a"
+      "bytes": 16782709,
+      "duration_s": 2001.3,
+      "audio": "/audio/systems/faceoffs-e5f1cd3e.m4a"
     },
     {
       "doc_id": "systems/game_management",
