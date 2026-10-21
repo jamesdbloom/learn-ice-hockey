@@ -604,7 +604,10 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - The earlier "older candidates" are covered by the once-per-page lines: faceoffs :1222 by :295/:306, puck_handling KT10 and the CM cage-grab by :491/:530, and center facts :765 by :732.
 - **Site-reviewer pass DONE 21 Oct** (record site_review_pass_2026-10-21.md). Every deferred item passes, with 0 bare glyphs, 0 panels and a clean console across 39 pages × 2 widths × 2 themes. New rows:
   - sr1, sr2, sr4 and sr5 are DONE 21 Oct (record cleanup_sr_nits_2026-10-21.md). Still open: the §10 and DZC tables still overflow by 15–117 px at about 960–1040 and 1280–1320 px (cell min-width 7rem × 6). The scroll shadow is faint in dark mode.
-  - **Accessibility (found 21 Oct by nzSite): every diagram `<figcaption>` is `aria-hidden="true"`.** Screen-reader users hear only the `describe` text, never the caption. Several captions carry safety limbs, for example the nz-1-4 goalie pull-up. Decide whether to unhide the caption or make sure the describe text carries every safety limb.
+  - **Accessibility: the figcaption aria-hidden issue is FIXED (record figcaption_a11y_2026-10-21.md).** Still open:
+    - Diagram `<title>`s: 85 fall back to the diagram id (`shortTitle()` in site/scripts/lib/rink.mjs), so a screen reader announces e.g. "Nz 1 4". 58 titles repeat inside their own caption.
+    - rink-map-end-zone has no title, so its image has no accessible name. Fix it in its diagram module.
+    - Stale comments at rink.mjs :597 and build-diagrams.mjs :387–389 still describe the old arrangement.
   - The nz-1-4 drawing has lines through some labels ("chips it past", "nobody is deeper", "races onto it", "the one"). This is cosmetic.
   - sr3 is DONE (hfb_scope_and_sr3_2026-10-21.md). Still open: forechecking facts :808 says "CARHA: match (53(b))" unconditionally, when 53(b) needs the player to be defenceless. This errs on the harsh side. The fix is "always an ejection, a match into the boards if defenceless (53)", but it does not fit the cap.
 

@@ -281,6 +281,32 @@ export default function remarkCorpus(options = {}) {
       } catch {
         throw new Error(`diagram "${id}" is in the manifest but ${d.svg} is missing.`);
       }
+      // THE CAPTION REACHES ASSISTIVE TECHNOLOGY ONCE, AS THE VISIBLE <figcaption>.
+      // `lib/rink.mjs` longDesc() writes `describe + " " + caption` into the SVG's <desc>,
+      // which is right for the standalone file in public/diagrams/ (no figcaption travels
+      // with it). Inline, the figcaption is on the page, so the caption is cut out of
+      // the INLINED <desc> here and the figcaption is left exposed — see the comment
+      // above the figcaption below for why the text copy wins over the <desc> copy.
+      // Anything else in <desc> (the drawn description; the notation key's source
+      // attribution) is left exactly as built.
+      {
+        const escXml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const cap = escXml(String(d.caption).trim());
+        const m = /<desc>([\s\S]*?)<\/desc>/.exec(svg);
+        const at = m ? m[1].indexOf(cap) : -1;
+        // ⚠️ A BUILD ERROR, NOT A SKIP. If the caption cannot be found in <desc> the
+        // two copies have drifted, and exposing the figcaption anyway would read the
+        // caption twice (or a stale one once). Rebuild the diagrams before the site.
+        if (at < 0) {
+          throw new Error(
+            `diagram "${id}": its caption is not inside the built SVG's <desc>, so it cannot be ` +
+            `de-duplicated against the visible <figcaption>. Run "node scripts/build-diagrams.mjs".`);
+        }
+        const rest = (m[1].slice(0, at) + m[1].slice(at + cap.length)).replace(/\s{2,}/g, ' ').trim();
+        const start = m.index;
+        const end = m.index + m[0].length;
+        svg = svg.slice(0, start) + (rest ? `<desc>${rest}</desc>` : '') + svg.slice(end);
+      }
       // A caption is written for the document that owns the diagram, and says
       // things like "the section" and "this document" meaning that one. The first
       // time a diagram was referenced from anywhere else, those phrases silently
@@ -295,9 +321,20 @@ export default function remarkCorpus(options = {}) {
       // caption out of view — the caption is the teaching sentence, and a reader who
       // scrolls the picture must not lose it.
       //
-      // The figcaption is aria-hidden because the SVG's <desc> carries the same words:
-      // without this a screen reader announces the caption twice, once in the image's
-      // description and once as the caption.
+      // ⚠️ THE FIGCAPTION IS NO LONGER aria-hidden (21 October 2026). It was hidden
+      // because the SVG's <desc> carried the same words, and the de-duplication argument
+      // below is still right: the caption must be announced ONCE. What changed is WHICH
+      // copy is exposed. The <desc> copy was the accessible DESCRIPTION, appended after
+      // a `describe` that runs to thousands of characters: a screen-reader user could
+      // not move through it by sentence, heard it only if their reader announces
+      // descriptions at all, and got none of the `.warn-inline` escalation the visible
+      // caption carries — so a safety instruction ("pull up rather than finish on the
+      // goalie") sat at the tail of the least-reachable string on the page. A site
+      // review reported the caption as unreachable. The figcaption is ordinary text in
+      // reading order, so the caption is now cut from the INLINED <desc> (above, where
+      // the SVG is read) and the figcaption is exposed. One copy, the reachable one.
+      //
+      // The historical notes below describe the hidden era and are kept as record.
       //
       // ⚠️ UPDATED 4 September 2026, AND THE OLD WORDING WAS LEFT LIVE FOR A WHILE. This
       // said "<title> already carries the same words", which WAS true until the caption
@@ -379,7 +416,7 @@ export default function remarkCorpus(options = {}) {
         //
         // Everything before the glyph stays muted caption prose — that half is describing the
         // picture, and promoting it too would flatten the distinction this fixes.
-        wrapper('figcaption', { 'aria-hidden': 'true' }, captionNodes(d.caption)),
+        wrapper('figcaption', {}, captionNodes(d.caption)),
       ];
       // ------------------------------------------------- the route to the key
       //
