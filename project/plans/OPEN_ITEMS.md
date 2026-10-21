@@ -563,6 +563,24 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - :94 "tight gap" at twenty feet contradicts :324. Delete "with a tight gap".
     - KT11 :720 and CM :662 understate the contact case. Reword to "every book penalises it with contact, and most without". Needs a rules-verifier.
   - (ad) body_contact_and_battles: "the slot" is used at :416, :1154, :1168 and :1515 but never defined on the page. Link its first use to the glossary or rink_map. The safety reviewer also noted that neck laceration protectors are absent from the corpus's shot-blocking material, although England Ice Hockey makes them mandatory. Verify against the primary source before adding anything.
+  - (ae) getting_started:
+    - **MAJOR for the corpus.** The boards posture at :490, CM :657 and KT4 :709 has no slow-speed limb. Its fallback stops at "stick and gloves up on the glass", with no "spread wide" and no "head off the glass". BC :33/:863/:899 own both limbs. Carry them into all three layers.
+    - **MINOR.** :575 voices CRT6's "deteriorating conscious state" without its gloss "(becoming less responsive, drowsy)"; KT14 has "drowsiness".
+    - **MINOR, consistency.** :575 "unless trained to" is verbatim CRT6. KT14 is stricter, which is safe.
+    - **MINOR, needs a source-verifier.** :579 says each British flag "is an ambulance call". The UK guidance says "urgent medical assessment… ambulance transfer if necessary".
+    - **Needs a rules-verifier.** :195's USA Hockey "forceful hit on a player facing the boards ends your game" is untraced in 603/608; 608(b) is the nearest.
+  - (af) on_ice_communication, confirmed by dR-oic:
+    - **The "no puck" so-trap, in four layers:**
+      - :274 body;
+      - **:279 facts, voiced alone**;
+      - :307 body;
+      - CM :643.
+
+      The :283 facts line supplies the same premise. Fix: state the ban unconditionally, as in the SG3 item C wording.
+    - **"The checker" is never defined.** It is used at KF :9, :25, facts :91/:141, :108, :110, :154, :202 and KT2 :699. Use the brief item 20 wording.
+    - **"Time" is taught with no "only when sure" limb** at :25, :68, **facts :93 (voiced alone)**, :128 and KT2 :699.
+    - **The chop limbs may narrow to the hands only.** Check that the corpus doesn't say "never chop at the hands" where NHL/IIHF 61.1 and USAH 634 also cover a chop at the stick.
+    - **Brief item 7, "A two-handed shove is a cross-check whatever your blade is doing", is false under USAH 609.** That rule requires no part of the stick on the ice. defender.md :333/:348 carries the exception, and the brief has been corrected.
   - Each needs a layer test and a safety-reviewer.
 - **Detailed status (21 Oct ~09:30).**
   - **Published, 16 of 39:**
@@ -580,7 +598,8 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - time_and_space 9490
     - body_contact_and_battles 9130
   - ⚠️ **The old chained `while pgrep -f` queue deadlocked.** Each waiting shell's own command line matched the others' pgrep pattern, so nothing ran from 09:02 to 09:25. Use the runner instead.
-  - **Writing:** puck_support_and_spacing, on_ice_communication, core_principles, getting_started.
+  - **Writing:** equipment, rink_map, mental_game, practice_and_development. on_ice_communication is in fix and re-review.
+  - **Known label error in published Detailed episodes (MINOR, strict direction, no re-record).** "A two-handed shove … is a cross-check, whatever your blade is doing" is spoken in center, defender, goaltender, DTR, DZC and game_management. It is false under USA Hockey 609, which requires no part of the stick on the ice, but the instruction itself (never shove) is right everywhere. Queued scripts were fixed before recording to say "Keeping your blade on the ice doesn't make it legal." Re-record only if those episodes are remade for another reason.
   - **Not started:**
     - reading_ice_hockey_diagrams, rink_map, language_and_glossary, rules_primer, uk_rules
     - equipment, conditioning_and_recovery, practice_and_development, mental_game, team_play_and_culture, how_to_watch_hockey
