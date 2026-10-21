@@ -52,7 +52,7 @@ Risk: Guessing which forecheck your own team is running is how odd-man rushes ha
 
 ![](diagram:forecheck-angling)
 
-**A dump-in gives you a head start.** A corner is where their goalie may not play it under a trapezoid, so their defenceman must turn their back on the play to fetch it. That is also exactly what the checking-from-behind and boarding rules exist for, and the onus is on you: take the puck, take the ice, or steer them off it — never finish into the back of a player facing the wall.
+**A dump-in gives you a head start.** A corner is where their goalie may not play it under a trapezoid, so their defenceman must turn their back on the play to fetch it. That is also exactly what the checking-from-behind and boarding rules exist for, and the onus is on you: take the puck, take the ice, or steer them off it — never finish into the back of a player facing the wall. Trapezoid or not, keep off their goalie.
 
 **A turnover is the opposite case.** You are behind the play, so two seconds of pressure buys time for everyone else to find their layer, and the realistic aim is a bad exit you collect in the neutral zone. When they are already set up behind their net, nobody is hunting; your team is choosing.
 
@@ -726,7 +726,7 @@ These are three completely different situations and most players forecheck them 
 **In short:** Start skating before the dump goes in, aim it where their defenceman must turn to fetch it, and never finish into their back.
 
 ```facts
-Key: You chose when the puck went in and you know where it is going — you arrive at full speed with a head start
+Key: You chose when the puck went in and you know where it is going — you get there early, with a head start
 Action: Leave before the puck does — F1 should be accelerating as the dump is released, not after it
 Targets: Aim the dump at a person, not a zone. Put it where their defenceman must retrieve it facing their own end boards
 Never: Finish into the back of a player facing the wall. Take the puck, take the ice, or angle them off it instead; the onus is on you as the arriving player
@@ -742,7 +742,7 @@ Convention: F1 takes the retrieval and F2 commits early to the passing lane rath
 Options: Five kinds of dump — hard rim, soft area dump, chip past a defenceman stepping up, cross-corner, and flip over a trap; the forecheck timing differs for each, so agree it in advance
 ```
 
-When you dump the puck in, **you chose when it went in and you know where it is going**. You get to arrive at full speed with a head start, and their defenceman has to turn their back on the play to retrieve it.
+When you dump the puck in, **you chose when it went in and you know where it is going**. You get there early, with a head start, and their defenceman has to turn their back on the play to retrieve it.
 
 What that means for you:
 
@@ -847,7 +847,7 @@ The distinction in one line: **off a dump-in you are hunting; off a turnover you
 
 ### Why this matters so much to a forechecker
 
-**In short:** With a trapezoid the corners are yours; without one, take the goalie's outlet away and keep off the goalie.
+**In short:** With a trapezoid the corners are mostly yours; without one, take the goalie's outlet away. Either way, keep off the goalie.
 
 ```facts
 Risk: Without the trapezoid a puck-handling goalie is a third defenceman to chase, not hit — take the outlet away and keep off them; unnecessary contact with a goalie is penalised in every book here
@@ -863,7 +863,7 @@ Rule: The check limb of USA Hockey Casebook 607 Situation 5 is no licence, and 6
 Rule: CARHA 52(b) makes charging a goalie in the crease, or any charge that injures, a mandatory major and game misconduct; 66(b) makes deliberate contact with one, in or out of the crease, a minor or major; a major ejects, with at least a one-game ban (30(a), 32(d)) (CARHA adult leagues only)
 Rule: CARHA adult leagues have no checking division: 49(a) makes intentional contact, or not averting it, a minor or major, a major if intentional contact injures, and a major ejects (30(a)); over two strides is a charge (52(a)); a minor into the boards doubles, two of three that eject (49(b), 32(a))
 Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; the In-House Rules and the EIHL Casebook leave it standing, but England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" (standing unsettled) — so in any British competition, plan for their goalie to come out
-Key: With a trapezoid the corners are yours — their defenceman fetches the puck, back turned, as you arrive at speed, the engine of forechecking; take the puck or the ice, never finish into that back
+Key: With a trapezoid the corners are mostly yours — their defenceman fetches the puck, back turned, as you arrive; take the puck or the ice, never finish into that back, and keep off the goalie either way
 ```
 
 Without the trapezoid, a puck-handling goalie is a third defenceman. They collect the dump-in in the corner and hand it to a defenceman already facing up ice. **You may chase them down and take the outlet away — what you may not do is finish a check on them.** NHL 69.4 says a goalie *"is not 'fair game' just because he is outside the goal crease"*, and that a penalty *"should be assessed in every case where an attacking player makes unnecessary contact with the goalkeeper"*. It adds that *"incidental contact will be permitted when the goalkeeper is in the act of playing the puck outside his goal crease provided the attacking player has made a reasonable effort to avoid such unnecessary contact."* IIHF 69.4 and PWHL 71.4 say the same with "they" and "she". Hockey Canada penalises unnecessary contact with a goalie *"anywhere on the ice"*. ⚠️ **No book here makes a goalie outside the crease fair game, and if you take one thing from this section, take that.**
@@ -884,7 +884,7 @@ Without the trapezoid, a puck-handling goalie is a third defenceman. They collec
 
 So the puck battle you would have won against a defenceman either never happens or happens on much narrower terms, and dump-and-chase loses most of its value.
 
-With the trapezoid, **the corners belong to you**. Their defenceman has to go and get it, back turned to a forechecker arriving at speed — the engine of modern forechecking. ⚠️ **That arrival must never finish in contact with a back.** Take the puck, take the ice, or steer them off it. The NHL, IIHF and PWHL write no minor for checking from behind (43.2), so never plan on two minutes for that hit: the NHL makes it a major and game misconduct whenever called (43.5), and under the IIHF, plan on a major and automatic game misconduct (43.3).
+With the trapezoid, **the corners mostly belong to you**. Their defenceman has to go and get it, back turned to an arriving forechecker — the engine of modern forechecking. Their goalie may still touch a rimmed puck out there, and you still keep off them. ⚠️ **That arrival must never finish in contact with a back.** Take the puck, take the ice, or steer them off it. The NHL, IIHF and PWHL write no minor for checking from behind (43.2), so never plan on two minutes for that hit: the NHL makes it a major and game misconduct whenever called (43.5), and under the IIHF, plan on a major and automatic game misconduct (43.3).
 
 ### How to aim your dump-ins to exploit it
 
@@ -1103,7 +1103,7 @@ Before any of these, ⚠️ **find out whether you may body check at all — and
 4. **A forecheck wins two ways — the puck back deep, or a rushed exit you intercept in the neutral zone.** Passive systems choose the second. Time your pressure for the exit: one hand-tracked analysis found pressure there lifts a forecheck's success from 45.7% to 78.1% of breakout attempts.
 5. **F1 makes the play predictable; F2 takes the next play.** Whether F1 also hunts the puck — in a 2-1-2 or press — or only steers, in a 1-2-2, 1-3-1 or 1-4, is the biggest difference between systems, so ask. If F2 is chasing the puck F1 is on, the forecheck has failed.
 6. **Defencemen: pinch only when you can arrive as the puck does, and by default one at a time**, with F3 usually covering your point. Seal with your body, never an arm or a skate. ⚠️ **A skate push-off throws you out under USA Hockey, and in a CARHA league so can a hold.**
-7. **Dump it into a corner, not behind the net.** Under an NHL or IIHF trapezoid their goalie may not play it there, so a skater fetches it, back turned to you — never finish into that back. USA Hockey, Hockey Canada, CARHA and the PWHL have none. ⚠️ **🇬🇧 In any British competition, plan for their goalie to come out.**
+7. **Dump it into a corner, not behind the net.** Under an NHL or IIHF trapezoid their goalie may not play it there, so a skater fetches it, back turned to you — never finish into that back. USA Hockey, Hockey Canada, CARHA and the PWHL have none. ⚠️ **🇬🇧 In any British competition, plan for their goalie to come out.** Either way, keep off the goalie.
 8. **When their goalie plays the puck outside the crease, take the outlet and pull up — no book makes them *"fair game"*.** ⚠️ **A charge on one throws you out** under Hockey Canada wherever it happens, under CARHA in the crease or if anyone is injured, and under USA Hockey if reckless. CARHA can eject for any deliberate contact.
 9. **Off a dump-in, hunt; off a turnover, recover; off a control setup, choose.** Take the puck or the ice, never the back of a player facing the end boards. If the hit stays on the back, every book but USA Hockey ejects, even at its lowest tier; USA Hockey must if forceful at the boards, head first or reckless.
 10. **Read the forecheck you face in one second.** Two or more forwards below the top of the circles means aggressive: move the puck early — a reverse beats an over-committed F1, a rim beats one who has sealed you in. One means containment: shift the wall with D-to-D, then chip it past the line and skate onto it.

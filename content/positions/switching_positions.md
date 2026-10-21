@@ -208,7 +208,7 @@ Never: Duck. Ducking puts your head into the boards first, and USA Hockey warns 
 
 **First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger — **a coaching ranking rather than a measured one** — and a centre rarely practises it. Puck on the far side of your body from the checker, side-on with your hip and backside into them, feet wide, and know where the puck is going before you arrive.
 
-**One thing overrides all of it: never turn your back to the checker, never duck, and never take the wall on the point of your shoulder.** Those guard against three different injuries, at any speed. A turned back makes the contact a hit from behind, and USA Hockey warns that *"Even a light hit from behind could inflict a severe head or neck injury"*. A chin tucked to your chest puts your head into the boards first, and USA Hockey records that the neck injury from that can happen at walking speed: *"[a] player doesn't have to be going at full speed for this to happen"*. Skates parallel to the wall, feet apart, knees bent, contact on your forearm and hip, head up and chin off your chest — not the point of your shoulder, and not the whole shoulder if you can help it, as USA Hockey hedges it. Already facing the wall and cannot turn? Spread the load with your stick and gloves up on the glass — damage limitation, not a position to aim for. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) covers it.
+**One thing overrides all of it: never turn your back to the checker, never duck, and never take the wall on the point of your shoulder.** Those guard against three different injuries, at any speed. A turned back makes the contact a hit from behind, and USA Hockey warns that *"Even a light hit from behind could inflict a severe head or neck injury"*. A chin tucked to your chest puts your head into the boards first, and USA Hockey records that the neck injury from that can happen at walking speed: *"[a] player doesn't have to be going at full speed for this to happen"*. Skates parallel to the wall, feet apart, knees bent, forearm and hip to the wall, head up and chin off your chest — not the point of your shoulder, and not the whole shoulder if you can help it, as USA Hockey hedges it. Already facing the wall and cannot turn? Spread the load with your stick and gloves up on the glass — damage limitation, not a position to aim for. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) covers it.
 
 ---
 
@@ -420,7 +420,7 @@ Convention: The off-wing half-wall is standard on the power play because it keep
 Risk: A breakout pass up the wall now arrives on your backhand, which costs a beat and can weaken the exit — an open blade curve makes those receptions easier, and Equipment covers the trade-off
 Technique: Receive it open to the ice — hips open, a step or two off the boards, so you keep the skate, the pass to the centre, the pass back and the middle; Breakouts covers that reception
 Never: Turn your back to the checker as you receive it, or duck — two injuries: a hit from behind, and a head-first collision. Skates parallel to the wall, head up and chin off your chest
-Technique: CARHA's material has you take that puck with your back to the boards, facing the ice — the same reception; Breakouts adds a step or two off the wall to keep every option
+Technique: CARHA's back-to-the-boards reception means boards behind you, facing the ice and open to it — not your back to a checker. If contact is coming, go side-on: skates parallel, forearm and hip to the wall
 Key: On CARHA's account, citing nhlspecialteams.com not tracking of its own, most professionals play their strong side at even strength and stronger puck-handlers typically elect the off wing
 Key: A defenceman's off side puts retrievals behind your own net and D-to-D passes on your backhand — common and not a disaster, and Rink Map covers the reasoning
 ```
@@ -435,7 +435,7 @@ Your **off wing** means a left-shot playing right wing, or a right-shot playing 
 
 ![](diagram:off-wing-open-to-the-ice)
 
-**The source for this section teaches the same reception.** The CARHA material has you **put your back to the boards** to take the backhand puck — boards behind you, facing the ice. [Breakouts](../systems/breakouts.md) adds only the step off the wall, so you keep every option.
+**The source for this section teaches the same reception.** The CARHA material has you **put your back to the boards** to take the backhand puck. That means boards behind you, facing the ice and open to it — not your back to a checker. [Breakouts](../systems/breakouts.md) adds only the step off the wall, so you keep every option. If contact is coming and you have time to turn, go side-on: skates parallel, forearm and hip to the wall.
 
 Receiving on the backhand is a trainable skill and [Passing and Receiving](../technique/passing_and_receiving.md) covers it directly; it is also one of the arguments for an **open blade curve**, which makes backhand receptions easier ([Equipment](../off-the-ice/equipment.md)).
 

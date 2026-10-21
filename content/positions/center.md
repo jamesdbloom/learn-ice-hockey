@@ -14,11 +14,11 @@
 
 **In their end, play the slot and finish at the net.** Shoot from between the circles, and pass across the middle to make the goalie move. Keep moving until your defenceman winds up, then plant in front of the goalie's eyes and go for the rebound — around the goalie, never into them.
 
-**Be first in on the forecheck, and steer rather than hit.** Arrive under control, not off a long run, and drive at the carrier on an angle that pushes them toward one boards, so your winger knows where to seal. That is the 2-1-2; a 1-2-2 sends only one forward in, so ask.
+**Be first in on the forecheck, and steer rather than hit.** Arrive under control, not off a run-up — even two hard strides can be charging — and drive at the carrier on an angle that pushes them toward one boards, so your winger knows where to seal. That is the 2-1-2; a 1-2-2 sends only one forward in, so ask.
 
 **Under pressure, put the puck to the outside.** The middle of your own zone and the middle of the neutral zone are the worst places on the ice to try to beat somebody. Rim it, chip it off the boards, or give it to a winger on the wall and go and get it back.
 
-**Take the draws that matter seriously:** your own end, special teams, the last minute and after an icing. Agree with your linemates beforehand where you are winning each. If you cannot win it clean, lift or press the other centre's stick — the stick, never their hands.
+**Take the draws that matter seriously:** your own end, special teams, the last minute and after an icing. Agree with your linemates beforehand where you are winning each. If you cannot win it clean, lift or press the other centre's stick with yours for an instant, then play the puck — stick on stick only, never a hand on their stick or your stick on their hands.
 
 ## Overview
 
@@ -43,7 +43,7 @@ You are the link between the other four skaters: you play the middle of the ice 
 
 **In the offensive zone the slot is your ice — use it.** Get open between the circles, shoot when you have space there, screen the goalie when a point shot is coming, and go to the net for the rebound under control, taking the ice in front of the goalie and never the goalie. On the coaching-consensus ranges in [Shooting](../technique/shooting.md) a slot shot is worth several times a perimeter one; the source names no dataset, so trust the size of the gap, not the decimals. The limits are the crease and the goalie: screen from outside the crease, with your skates off the red crease line and not merely out of the blue paint, and never so tight that the goalie cannot move. What crossing either line costs differs by rulebook, and is set out where you meet it.
 
-**On the forecheck you are usually first in, and the job is the angle, not the hit.** Drive at the carrier on a line that pushes them toward one boards, so your strong-side winger knows where the puck is going. Steering is legal in every league; a push or a body check may not be in yours, and a long run at a carrier is how the rulebooks describe a charge. F1, F2 and F3 are taken in order of arrival, so if a winger gets there first you support. The 2-1-2 assumed here is a coaching choice — [Forechecking Systems](../systems/forechecking_systems.md) sets out the alternatives.
+**On the forecheck you are usually first in, and the job is the angle, not the hit.** Drive at the carrier on a line that pushes them toward one boards, so your strong-side winger knows where the puck is going. Steering is legal in every league; a push or a body check may not be in yours, and a run-up at a carrier, even two hard strides, can be charging. F1, F2 and F3 are taken in order of arrival, so if a winger gets there first you support. The 2-1-2 assumed here is a coaching choice — [Forechecking Systems](../systems/forechecking_systems.md) sets out the alternatives.
 
 **Getting the puck to the outside survives every system.** The middle of your own zone is the most expensive place to lose it, and the neutral zone is where odd-man rushes are made — both **coaching consensus rather than a measured ranking**. Under pressure in either, move it to the boards or behind your own net first, and distribute from there.
 
@@ -248,7 +248,7 @@ Goal: Maintain possession through the neutral zone or safely advance the puck
 
 ```facts
 Position: In the middle of the neutral zone — the closest forward initiates pressure, and that is usually you
-Action: Drive at the puck carrier to disrupt their advance, or cut off the centre lane to force them wide
+Action: Drive at the puck carrier under control, stick on the puck and not the body, or cut off the centre lane to force them wide
 Read: Step up to challenge when the opportunity is clear; otherwise deny the middle and force the play to the boards
 Goal: Deny a clean entry, or force a turnover before they reach your blue line
 Convention: How hard you press is your team's neutral-zone system, not a law — containment under a 1-2-2, 1-2-2 trap or 1-3-1; two forwards hunting the puck under an aggressive press
@@ -258,7 +258,7 @@ Key: If you don't initiate pressure, the opponent gets a free run at your defenc
 
 **Where to be:** In the middle of the neutral zone. You are the primary forechecker here — the closest forward to the puck initiates pressure, and that is usually you.
 
-**What to do:** Drive at the puck carrier to disrupt their advance, or cut off the centre lane to force them wide. The wingers support by blocking passing lanes on their sides, and the defencemen maintain their gap at the blue line. Step up to challenge when the opportunity is clear; otherwise, deny the middle and force the play to the boards.
+**What to do:** Drive at the puck carrier to disrupt their advance, or cut off the centre lane to force them wide. The wingers support by blocking passing lanes on their sides, and the defencemen maintain their gap at the blue line. Step up to challenge when the opportunity is clear; otherwise, deny the middle and force the play to the boards. When you do step up, arrive under control and go for the puck with your stick, not the carrier's body: a run-up at them, even two hard strides, can be charging, and in a non-checking division a hit is a penalty.
 
 > **How hard you press, and whether your wingers hold their lanes at all, is your team's neutral-zone system — a coaching choice, not a law of hockey.** What is described here is the **containment** job: under a **1-2-2**, a **1-2-2 trap** or a **1-3-1**, you are the lone forward taking the middle away and steering the carrier to a side, the wingers hold their lanes, and getting the turnover is a bonus rather than the objective. The realistic alternative is an **aggressive neutral-zone press** — the middle-third shape behind a 2-1-2 forecheck — where two forwards are gone hunting the puck, the wingers *do* leave their lanes to pressure, and the point is to take the puck back rather than wait for a mistake. Your job changes materially between them. **Find out which your team plays and what the call is for switching**, because most teams run more than one depending on the score and the shift. [Neutral Zone Systems](../systems/neutral_zone_systems.md) is the authority.
 
@@ -397,7 +397,7 @@ Action: Aim dump-ins away from the trapezoid so a defenceman must retrieve the p
 
 **Where to be:** Forechecking through the middle — directly at the opposing defenceman or wherever the puck has gone in the opposition's defensive zone.
 
-**What to do:** Be first on the forecheck (F1). Drive straight at the puck carrier, cutting off their options and forcing a quick decision. Take a deliberate angle — **steer** them toward one side (typically the strong-side boards) so your F2 winger knows where to support. Take the angle with your feet and arrive under control, because a long run at a carrier is how the rulebooks describe a charge. ⚠️ **Steer, don't push** — steering is legal in every league; a push is a penalty in a non-checking division, and a violent one can end your game. The price is set out at the end of this section.
+**What to do:** Be first on the forecheck (F1). Drive straight at the puck carrier, cutting off their options and forcing a quick decision. Take a deliberate angle — **steer** them toward one side (typically the strong-side boards) so your F2 winger knows where to support. Take the angle with your feet and arrive under control, because a run-up at a carrier, even two hard strides, can be charging. ⚠️ **Steer, don't push** — steering is legal in every league; a push is a penalty in a non-checking division, and a violent one can end your game. The price is set out at the end of this section.
 
 **Goal:** Force a turnover or a bad outlet pass. Keep the opposing defence under constant pressure.
 
@@ -530,7 +530,7 @@ The full rules are in [Rules Primer](../foundation/rules_primer.md) and [Offensi
 ```facts
 Priority: Ten or fifteen draws a game matter enormously — your own end, special teams, the last minute, and after an icing; the count is a coaching estimate, not a measurement
 Read: Own end — win it back to your defenders, ideally the boards-side one for a quick rim out; their end — to a defender for a one-timer, or back to a winger in the circle
-Action: If you can't win it clean, lift or press their stick with yours — stick, not hands — then play the puck so your wingers can pounce; never hook it, hold it down or grab it with your hand
+Action: If you can't win it clean, lift or press their stick for an instant, over or under the blade, then play the puck — stick on stick only; never a hand on it, never hook it or hold it down
 Action: Warn your wingers that their encroachment takes you off the draw, not them — true in all six books, and avoidable; under USA Hockey, Hockey Canada and CARHA their stick counts too
 Rule: The draw after an icing is the faceoff-violation exception in four of the six books — the first violation is a warning rather than an ejection (NHL and IIHF 2026/27 Rule 76.4, PWHL 78.4; Hockey Canada Rule 6.5(a), Junior divisions only; neither USA Hockey nor CARHA writes such a carve-out)
 Rule: Across the Home Countries the IHUK In-House Rules 2026-27 settle faceoff violations without the edition question — "the linesperson shall immediately replace the centre for all violations", faceoffs following icings excepted (Section 10, Rule 76)
@@ -544,7 +544,7 @@ Rule: In the Elite League the stick-down order still binds — the In-House Rule
 
 You are the primary faceoff taker, and **most draws barely matter.** An NHL game has **roughly 56** — 56.6 per game in 2024-25 and 56.0 in 2025-26, **computed from the NHL's official statistics** — and team faceoff win percentage explains only about **6% of the variation** in a team's points percentage across eleven NHL seasons (r = +0.25); in 2016-17 the relationship was *negative*. **Ten to fifteen draws a game matter enormously** — a coaching estimate, not a counted figure: the draws in your own end, on special teams, in the last minute, and after an icing. Prepare for those. [Faceoffs](../systems/faceoffs.md) carries all these figures with their limits. Key principles by location:
 
-- **Defensive zone:** Win the puck back to your defenders — ideally to the boards-side defender (positioned near the boards-side hash marks supporting your outer winger) for a quick rim out. If you can't win clean, lift or press your opponent's stick with your own — the stick, never their hands — then play the puck so your wingers can pounce on it — never hook it, hold it down, or grab it with your hand. A clean loss in your defensive zone puts a set opponent running a prepared play into the slot while your five are stationary and facing the wrong way. **And if you lose it, stay with their centre** — tie up their stick if you can, then go with them toward the slot rather than chasing the puck. That is the usual assignment off a defensive-zone draw, though some teams hand the centre a different man, so ask yours.
+- **Defensive zone:** Win the puck back to your defenders — ideally to the boards-side defender (positioned near the boards-side hash marks supporting your outer winger) for a quick rim out. If you can't win clean, tie up their stick with yours for an instant — stick on stick, never a hand, never hook it or hold it down — and play the puck so your wingers can pounce on it. A clean loss in your defensive zone puts a set opponent running a prepared play into the slot while your five are stationary and facing the wrong way. **And if you lose it, stay with their centre** — tie up their stick if you can, then go with them toward the slot rather than chasing the puck. That is the usual assignment off a defensive-zone draw, though some teams hand the centre a different man, so ask yours.
 - **Offensive zone:** Win to a defender for a one-timer, or back to a winger in the circle for a quick chance. Read your linemates' positioning before the puck drops.
 - **Neutral zone:** Win possession cleanly if you can; otherwise, a tie-up your wingers can chase down is fine too.
 
@@ -558,7 +558,7 @@ You are the primary faceoff taker, and **most draws barely matter.** An NHL game
 
 **Your wingers can get you thrown out and never know it.** If a linemate creeps inside the circle or over the hash marks before the drop, **you** are the one removed. The NHL, the IIHF and the PWHL let a non-taker's stick inside the hash marks *"provided there is no physical contact with his opponent or his opponent's stick"*. **USA Hockey, Hockey Canada and CARHA do not**: there every stick and skate must be behind the marks, so a winger's blade puts you out as surely as their skate. It is one of the most avoidable ways a centre loses a draw — coaching judgement, not a counted ranking.
 
-**Lift or press their stick with your own — the stick, never their hands — then play the puck; never hook it, hold it down or grab it with your hand.** ⚠️ **And keep your hand off the puck until a third player has touched it** — at a live draw the two centres lose the permission everyone else has to catch it; the section below sets out why, and what a closed hand costs.
+**When you cannot win it clean, lift or press their stick with yours for an instant, over or under the blade, then play the puck — stick on stick only: never a hand on their stick, never your stick on their hands, never hook it or hold it down.** ⚠️ **And keep your hand off the puck until a third player has touched it** — at a live draw the two centres lose the permission everyone else has to catch it; the section below sets out why, and what a closed hand costs.
 
 **When you get tossed:** a winger steps in. Agree in advance who takes it and what you are trying to do on that draw — usually a safe tie-up rather than anything clever. ⚠️ **Agree two names, because under Hockey Canada the player who caused the violation cannot be the replacement**, and under Hockey Canada and CARHA no change of players is allowed unless a penalty makes a team shorthanded. **So the replacement comes from the teammates already on the ice — not the goalie, and not the one who put you out.**
 
@@ -908,7 +908,7 @@ document, that is named too.*
 15. **On the penalty kill, know your shape before the puck drops, and never chase the puck around the perimeter.** Ice it only while you are a man short on the ice — and under USA Hockey only at Youth 15-Only and above, Girls 16U and above, High School and Adult; otherwise clear it to the neutral zone.
 16. **Carry the extra stride before you dump it.** With the puck past the red line on your stick the dump is legal however far it goes — unless your league divides the ice at the blue lines, as some CARHA leagues do. When the other team ices it and cannot change, have a set play ready.
 17. **Change on your legs, and go first.** When the line changes as a group, you call it and the wingers follow you off — the centre is generally reckoned to fade first, which is coaching craft rather than a measured finding. Don't change into an offensive-zone faceoff you are needed to take.
-18. **On the forecheck you are usually first in: drive at the carrier on an angle and steer them to one side.** Steer with your feet and stick, never a push — in a non-checking division a push is a penalty. Arrive under control: a long run at a carrier is a charge. If a winger beats you there, support.
+18. **On the forecheck you are usually first in: drive at the carrier on an angle and steer them to one side.** Steer with your feet and stick, never a push — in a non-checking division a push is a penalty. Arrive under control: a run-up, even two hard strides, can be charging. If a winger beats you there, support.
 
 ---
 
