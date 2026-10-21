@@ -619,28 +619,21 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - The boards posture at :33 and :510 has no facing-the-boards fallback.
     - The U12 3–4 minute minor appears in KF :25 but not in the table at :357.
     - :1102 says "screen is legal" more confidently than :811.
+  - (ao) uk_rules, from dR-uk:
+    - The page never mentions mouthguards, but they are mandatory in the EIHL (Casebook :340) and the WNIHL (RoC :955).
+    - IIHF 9.7 and 202.2 say a cracked visor or cage means leaving the ice. The page does not carry this.
+  - (ap) rules_primer, from dR-rp:
+    - :181-area: "a player who has just lost the puck can only be hit straight away" may be on the page too. Check it against IIHF Appendix II, under which this check is automatically reckless, and against USAH Casebook's conditions.
+    - :51: the IIHF 48.1 head-down carve-out is voiced from the checker's side.
+    - :402: the hooking-the-stick scope.
   - Each needs a layer test and a safety-reviewer.
-- **Detailed status (21 Oct ~09:30).**
-  - **Published, 16 of 39:**
-    - winger, center, defender, goaltender
-    - breakouts, switching_positions, defensive_zone_coverage, forechecking_systems
-    - neutral_zone_systems, offensive_zone_play, defending_the_rush, faceoffs
-    - game_management, puck_handling, zone_entries, special_teams
-  - **Reviewed SHIP; queued in the sequential runner** (scratchpad synth_runner.sh reads synth_queue.txt, one "stem cap" line each, and logs to synth_log.txt). In order:
-    - skating 8545
-    - passing_and_receiving 8175
-    - playing_without_the_puck 8815
-    - shooting 9546
-    - scanning_and_anticipation 8690
-    - risk_management 9300
-    - time_and_space 9490
-    - body_contact_and_battles 9130
-  - ⚠️ **The old chained `while pgrep -f` queue deadlocked.** Each waiting shell's own command line matched the others' pgrep pattern, so nothing ran from 09:02 to 09:25. Use the runner instead.
-  - **Writing:** equipment, rink_map, mental_game, practice_and_development. on_ice_communication is in fix and re-review.
-  - **Known label error in published Detailed episodes (MINOR, strict direction, no re-record).** "A two-handed shove … is a cross-check, whatever your blade is doing" is spoken in center, defender, goaltender, DTR, DZC and game_management. It is false under USA Hockey 609, which requires no part of the stick on the ice, but the instruction itself (never shove) is right everywhere. Queued scripts were fixed before recording to say "Keeping your blade on the ice doesn't make it legal." Re-record only if those episodes are remade for another reason.
-  - **Not started:**
-    - reading_ice_hockey_diagrams, rink_map, language_and_glossary, rules_primer, uk_rules
-    - equipment, conditioning_and_recovery, practice_and_development, mental_game, team_play_and_culture, how_to_watch_hockey
+- **Detailed status (21 Oct ~11:00).** Every one of the 39 scripts has been written and safety-reviewed to SHIP.
+  - **Published, 23:** winger, center, defender, goaltender, breakouts, switching_positions, DZC, forechecking, NZ, OZP, DTR, faceoffs, game_management, puck_handling, zone_entries, special_teams, skating, passing, PWTP, shooting, scanning, risk_management, time_and_space.
+  - **Queued:** the other 16 sit in the sequential runner. scratchpad/synth_runner.sh reads synth_queue.txt and logs to synth_log.txt.
+  - ⚠️ **Credits run out before the queue does.** About 284k were left at 10:00; each episode bills about 20k. The owner has been asked to top up about 150k. A run that fails on quota is logged ERR and stays in the queue.
+  - ⚠️ **Don't go back to the old chained `while pgrep -f` queue.** Each waiting shell matched its neighbours' patterns, so nothing ran from 09:02 to 09:25.
+  - **Known label error in published Detailed episodes (MINOR, errs strict, no re-record needed).** center, defender, goaltender, DTR, DZC and game_management say "a two-handed shove is a cross-check, whatever your blade is doing". That is false under USAH 609, but the instruction itself (never shove) is right everywhere. The queued scripts were fixed.
+  - **Airway exception.** Brief item 21's "don't move them" omits CRT6's airway exception. That is stricter, so it is safe. The rules_primer script adds it.
   - **Publish helper:** scratchpad pubdet.sh. It transcript-checks the recording, archives v1, installs the master and encodes it. Then run `upload --style principles --go` and commit podcast-principles.json.
   - **Brief:** scratchpad detailed_brief.md, items 1–26.
 - **Detailed production started (21 Oct ~01:15):** brief at scratchpad detailed_brief.md, and it carries the Basics review lessons. Writers dw-center, dw-defender and dw-goaltender write to `podcast_style_b/detailed/<stem>.md`. Each then gets a safety review, synthesis at cap 9320, and publish in place (`--style principles --doc`, archive the v1 WAV first). Next batch: the systems pages.
