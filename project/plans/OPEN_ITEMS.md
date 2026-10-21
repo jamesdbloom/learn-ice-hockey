@@ -551,13 +551,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - the British U10/U12 non-check hit tariff is untraced.
     - The time_and_space "most without" premise was refuted (HC 8.3(i) and CARHA 66(a) reach it). The coordinator's brief was the defect.
   - Each needs a layer test and a safety-reviewer.
-- **Detailed status (21 Oct ~11:00).** Every one of the 39 scripts has been written and safety-reviewed to SHIP.
-  - **Published, 23:** winger, center, defender, goaltender, breakouts, switching_positions, DZC, forechecking, NZ, OZP, DTR, faceoffs, game_management, puck_handling, zone_entries, special_teams, skating, passing, PWTP, shooting, scanning, risk_management, time_and_space.
-  - **Queued:** the other 16 sit in the sequential runner. scratchpad/synth_runner.sh reads synth_queue.txt and logs to synth_log.txt.
-  - ⚠️ **Credits ran out at 11:30 on 21 Oct** (2,687,351 of 2,692,319 used). 30 of 39 are published.
-    - 9 approved episodes wait in synth_queue.txt: practice_and_development (3 of 5 chunks cached), rink_map, language_and_glossary, team_play_and_culture, conditioning_and_recovery, how_to_watch_hockey, reading_ice_hockey_diagrams, uk_rules, rules_primer. They need about 200k credits. The owner has been asked to top up.
-    - The runner now HALTS on error and keeps the failed line. Before this fix it deleted each failed line, and the queue was rebuilt by hand. Restart it with `scratchpad/synth_runner.sh` (run in background) once credits are back.
-  - ⚠️ **Don't go back to the old chained `while pgrep -f` queue.** Each waiting shell matched its neighbours' patterns, so nothing ran from 09:02 to 09:25.
+- **Detailed status (21 Oct 14:10): COMPLETE.** All 39 Detailed (ElevenLabs, eleven_v4) episodes are published in place, keeping their guids. Each was safety-reviewed to SHIP and transcript-checked against its script. The last was Rules Primer (36f9970). Credits left ≈ 0.1M of the 2.995M top-up.
   - **Known label error in published Detailed episodes (MINOR, errs strict, no re-record needed).** center, defender, goaltender, DTR, DZC and game_management say "a two-handed shove is a cross-check, whatever your blade is doing". That is false under USAH 609, but the instruction itself (never shove) is right everywhere. The queued scripts were fixed.
   - **Airway exception.** Brief item 21's "don't move them" omits CRT6's airway exception. That is stricter, so it is safe. The rules_primer script adds it.
   - **Publish helper:** scratchpad pubdet.sh. It transcript-checks the recording, archives v1, installs the master and encodes it. Then run `upload --style principles --go` and commit podcast-principles.json.
