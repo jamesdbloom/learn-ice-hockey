@@ -104,27 +104,27 @@
       "doc_id": "positions/goaltender",
       "title": "Goaltender",
       "section": "Positions",
-      "bytes": 17650826,
-      "duration_s": 2115.8,
-      "audio": "/audio/principles/positions/goaltender-4678769a.m4a",
+      "bytes": 26084115,
+      "duration_s": 3127.0,
+      "audio": "/audio/principles/positions/goaltender-5ebbc73c.m4a",
       "guid": "learn-ice-hockey:principles:positions/goaltender"
     },
     {
       "doc_id": "positions/switching_positions",
       "title": "Switching Positions",
       "section": "Positions",
-      "bytes": 15343294,
-      "duration_s": 1837.9,
-      "audio": "/audio/principles/positions/switching_positions-098c9c80.m4a",
+      "bytes": 22726848,
+      "duration_s": 2724.7,
+      "audio": "/audio/principles/positions/switching_positions-4f6d696c.m4a",
       "guid": "learn-ice-hockey:principles:positions/switching_positions"
     },
     {
       "doc_id": "systems/breakouts",
       "title": "Breakouts",
       "section": "Systems and Situations",
-      "bytes": 13662335,
-      "duration_s": 1634.9,
-      "audio": "/audio/principles/systems/breakouts-20376344.m4a",
+      "bytes": 20342904,
+      "duration_s": 2438.1,
+      "audio": "/audio/principles/systems/breakouts-f0cd191e.m4a",
       "guid": "learn-ice-hockey:principles:systems/breakouts"
     },
     {
@@ -149,9 +149,9 @@
       "doc_id": "systems/forechecking_systems",
       "title": "Forechecking Systems",
       "section": "Systems and Situations",
-      "bytes": 16948576,
-      "duration_s": 2030.7,
-      "audio": "/audio/principles/systems/forechecking_systems-27afc7cf.m4a",
+      "bytes": 25735327,
+      "duration_s": 3086.4,
+      "audio": "/audio/principles/systems/forechecking_systems-6c85d17f.m4a",
       "guid": "learn-ice-hockey:principles:systems/forechecking_systems"
     },
     {
@@ -167,9 +167,9 @@
       "doc_id": "systems/defensive_zone_coverage",
       "title": "Defensive Zone Coverage",
       "section": "Systems and Situations",
-      "bytes": 15923113,
-      "duration_s": 1907.4,
-      "audio": "/audio/principles/systems/defensive_zone_coverage-95c772a1.m4a",
+      "bytes": 23720595,
+      "duration_s": 2842.2,
+      "audio": "/audio/principles/systems/defensive_zone_coverage-9101d27e.m4a",
       "guid": "learn-ice-hockey:principles:systems/defensive_zone_coverage"
     },
     {
