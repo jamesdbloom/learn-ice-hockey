@@ -13,8 +13,8 @@
 | | Script | Spoken chars | Words | Runtime* |
 |---|---|---|---|---|
 | Published "Playing principles" | `podcast_style_b/winger.script.local.md` | 30,560 | 5,923 | 31.8 min (audio: 31.75) |
-| **A. Detailed** | [`podcast_style_b/pilots/winger_detailed.md`](../podcast_style_b/pilots/winger_detailed.md) | 43,874 (+44%) | 8,456 | **about 45.6 min** |
-| **B. The Basics** (topic 10, "Playing wing — The Basics") | [`podcast_style_b/pilots/winger_core.md`](../podcast_style_b/pilots/winger_core.md) | 10,546 | 2,083 | **about 11.2 min** |
+| **A. Detailed** | `podcast_style_b/pilots/winger_detailed.md` (untracked) | 43,874 (+44%) | 8,456 | **about 45.6 min** |
+| **B. The Basics** (topic 10, "Playing wing — The Basics") | `podcast_style_b/pilots/winger_core.md` (untracked) | 10,546 | 2,083 | **about 11.2 min** |
 
 \* At **962.5 characters a minute**, measured from the published audio. `podcast-principles.json` gives Winger 31.75 min for 30,560 chars and Shooting 27.57 min for 26,453. That is about 186 words a minute, faster than the standard's assumed 165. Each pilot carries its own measurements, cut list, omissions note and a claim-by-claim self-check against `winger.md`.
 
@@ -287,6 +287,6 @@ The working defaults: Detailed stays the page's default player; The Basics gets 
 
 **Detailed Winger is published in place.** The v1 master and scripts were archived to `podcast_style_b/v1/`. The build encoded positions/winger, uploaded it as `winger-de5e5d69`, and kept the guid `learn-ice-hockey:principles:positions/winger`.
 
-**Basics topic 10** is at `podcast_style_b/basics/playing-wing.wav` with its script `playing-wing.md`. It stays unpublished until all 13 Basics episodes exist (the feed gate).
+**Basics topic 10** is at `podcast_style_b/basics/playing-wing.wav` with its script `playing-wing.md`. It was published with the other 12 on 21 October.
 
-**Basics scripts 1–9 and 11–13** are written (bw-1 to bw-6) and in review.
+**Basics scripts 1–9 and 11–13** were written (bw-1 to bw-6) and passed two safety reviews. All 13 were recorded and transcript-checked on 21 Oct, then encoded, uploaded and put in the feed as season 8, with the guids frozen (`LIVE_BASICS_SLUGS` in podcast-feed.ts, `LIVE_BASICS_GUIDS` in check-podcast-guids.mjs).
