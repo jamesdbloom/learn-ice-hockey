@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 import { LAYERS, READING_ORDER } from '../data/nav';
+import { BASICS_PATH } from '../data/podcast';
+import { AUDIO_ENABLED } from '../consts';
 
 /** Hand-rolled so the site keeps exactly one production dependency. */
 export const GET: APIRoute = ({ site }) => {
@@ -16,6 +18,8 @@ export const GET: APIRoute = ({ site }) => {
     '/',
     '/search/',
     '/downloads/',
+    // The Basics listing page; with the audio switched off it lists no episodes.
+    ...(AUDIO_ENABLED ? [BASICS_PATH] : []),
     ...LAYERS.map((l) => `/${l.id}/`),
     ...READING_ORDER.map((d) => d.href),
   ];

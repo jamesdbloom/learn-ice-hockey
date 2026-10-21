@@ -1,19 +1,257 @@
 {
-  "note": "The Basics: short TOPIC episodes (ElevenLabs, one voice), suitable for newer players or younger players (owner, 20 October 2026; project/podcast_principles_series_plan.md). Unlike podcast.json and podcast-principles.json this is NOT per document: `planned` fixes the topics, in series order, each with a slug, a working title and the one to three corpus documents (`sources`) it draws on. `episodes` holds only the published ones and is written by scripts/build_podcast_audio.py --style basics --slug <slug>. Each episode carries an explicit guid learn-ice-hockey:core:<slug>, written when it is first published and never changed. Audio lives at /audio/principles/basics/<slug>-<sha8>.m4a. Each episode is listed on /the-basics/ and linked from its source pages as soon as it exists, but the season stays OUT of the podcast feed until every planned topic is published.",
+  "note": "The Basics: short TOPIC episodes (ElevenLabs, one voice), suitable for newer players or younger players (owner, 20 October 2026; project/podcast_principles_series_plan.md). Unlike podcast.json and podcast-principles.json this is NOT per document: `planned` fixes the topics, in series order, each with a slug, a working title and the one to three corpus documents (`sources`) it draws on. `episodes` holds only the published ones and is written by scripts/build_podcast_audio.py --style basics --slug <slug>. Each episode carries an explicit guid learn-ice-hockey:core:<slug>, written when it is first published and never changed. Audio lives at /audio/principles/basics/<slug>-<sha8>.m4a. Each episode is listed on /the-basics/ and linked from its source pages as soon as it exists, and the season has been in the podcast feed since 21 October 2026, when all 13 launched. The 13 launch slugs are frozen (LIVE_BASICS_SLUGS); `planned` is append-only, and an appended topic joins the feed once it and every earlier topic are published.",
   "planned": [
-    { "slug": "how-a-game-works", "title": "How a game works", "sources": ["getting-started/getting_started", "foundation/rink_map", "foundation/rules_primer"] },
-    { "slug": "gear-and-staying-safe", "title": "Your gear and staying safe", "sources": ["off-the-ice/equipment", "technique/body_contact_and_battles"] },
-    { "slug": "skating", "title": "Skating", "sources": ["technique/skating"] },
-    { "slug": "carrying-the-puck", "title": "Carrying the puck", "sources": ["technique/puck_handling"] },
-    { "slug": "passing-and-catching", "title": "Passing and catching the puck", "sources": ["technique/passing_and_receiving", "hockey-iq/scanning_and_anticipation"] },
-    { "slug": "shooting", "title": "Shooting, and going to the net", "sources": ["technique/shooting"] },
-    { "slug": "playing-without-the-puck", "title": "Playing without the puck", "sources": ["hockey-iq/playing_without_the_puck", "hockey-iq/puck_support_and_spacing"] },
-    { "slug": "defending", "title": "Defending", "sources": ["foundation/core_principles", "systems/defending_the_rush"] },
-    { "slug": "playing-centre", "title": "Playing centre", "sources": ["positions/center"] },
-    { "slug": "playing-wing", "title": "Playing wing", "sources": ["positions/winger"] },
-    { "slug": "playing-defence", "title": "Playing defence", "sources": ["positions/defender"] },
-    { "slug": "playing-goal", "title": "Playing goal", "sources": ["positions/goaltender"] },
-    { "slug": "teamwork", "title": "Talking, teamwork and bouncing back", "sources": ["foundation/on_ice_communication", "off-the-ice/team_play_and_culture", "off-the-ice/mental_game"] }
+    {
+      "slug": "how-a-game-works",
+      "title": "How a game works",
+      "sources": [
+        "getting-started/getting_started",
+        "foundation/rink_map",
+        "foundation/rules_primer"
+      ]
+    },
+    {
+      "slug": "gear-and-staying-safe",
+      "title": "Your gear and staying safe",
+      "sources": [
+        "off-the-ice/equipment",
+        "technique/body_contact_and_battles"
+      ]
+    },
+    {
+      "slug": "skating",
+      "title": "Skating",
+      "sources": [
+        "technique/skating"
+      ]
+    },
+    {
+      "slug": "carrying-the-puck",
+      "title": "Carrying the puck",
+      "sources": [
+        "technique/puck_handling"
+      ]
+    },
+    {
+      "slug": "passing-and-catching",
+      "title": "Passing and catching the puck",
+      "sources": [
+        "technique/passing_and_receiving",
+        "hockey-iq/scanning_and_anticipation"
+      ]
+    },
+    {
+      "slug": "shooting",
+      "title": "Shooting, and going to the net",
+      "sources": [
+        "technique/shooting"
+      ]
+    },
+    {
+      "slug": "playing-without-the-puck",
+      "title": "Playing without the puck",
+      "sources": [
+        "hockey-iq/playing_without_the_puck",
+        "hockey-iq/puck_support_and_spacing"
+      ]
+    },
+    {
+      "slug": "defending",
+      "title": "Defending",
+      "sources": [
+        "foundation/core_principles",
+        "systems/defending_the_rush"
+      ]
+    },
+    {
+      "slug": "playing-centre",
+      "title": "Playing centre",
+      "sources": [
+        "positions/center"
+      ]
+    },
+    {
+      "slug": "playing-wing",
+      "title": "Playing wing",
+      "sources": [
+        "positions/winger"
+      ]
+    },
+    {
+      "slug": "playing-defence",
+      "title": "Playing defence",
+      "sources": [
+        "positions/defender"
+      ]
+    },
+    {
+      "slug": "playing-goal",
+      "title": "Playing goal",
+      "sources": [
+        "positions/goaltender"
+      ]
+    },
+    {
+      "slug": "teamwork",
+      "title": "Talking, teamwork and bouncing back",
+      "sources": [
+        "foundation/on_ice_communication",
+        "off-the-ice/team_play_and_culture",
+        "off-the-ice/mental_game"
+      ]
+    }
   ],
-  "episodes": []
+  "episodes": [
+    {
+      "slug": "how-a-game-works",
+      "title": "How a game works",
+      "sources": [
+        "getting-started/getting_started",
+        "foundation/rink_map",
+        "foundation/rules_primer"
+      ],
+      "bytes": 5659912,
+      "duration_s": 678.1,
+      "audio": "/audio/principles/basics/how-a-game-works-da49f37c.m4a",
+      "guid": "learn-ice-hockey:core:how-a-game-works"
+    },
+    {
+      "slug": "gear-and-staying-safe",
+      "title": "Your gear and staying safe",
+      "sources": [
+        "off-the-ice/equipment",
+        "technique/body_contact_and_battles"
+      ],
+      "bytes": 5988858,
+      "duration_s": 717.2,
+      "audio": "/audio/principles/basics/gear-and-staying-safe-8c1e89c3.m4a",
+      "guid": "learn-ice-hockey:core:gear-and-staying-safe"
+    },
+    {
+      "slug": "skating",
+      "title": "Skating",
+      "sources": [
+        "technique/skating"
+      ],
+      "bytes": 6812725,
+      "duration_s": 815.3,
+      "audio": "/audio/principles/basics/skating-cc5aef72.m4a",
+      "guid": "learn-ice-hockey:core:skating"
+    },
+    {
+      "slug": "carrying-the-puck",
+      "title": "Carrying the puck",
+      "sources": [
+        "technique/puck_handling"
+      ],
+      "bytes": 5852841,
+      "duration_s": 700.9,
+      "audio": "/audio/principles/basics/carrying-the-puck-a3001006.m4a",
+      "guid": "learn-ice-hockey:core:carrying-the-puck"
+    },
+    {
+      "slug": "passing-and-catching",
+      "title": "Passing and catching the puck",
+      "sources": [
+        "technique/passing_and_receiving",
+        "hockey-iq/scanning_and_anticipation"
+      ],
+      "bytes": 6126672,
+      "duration_s": 733.7,
+      "audio": "/audio/principles/basics/passing-and-catching-1f959298.m4a",
+      "guid": "learn-ice-hockey:core:passing-and-catching"
+    },
+    {
+      "slug": "shooting",
+      "title": "Shooting, and going to the net",
+      "sources": [
+        "technique/shooting"
+      ],
+      "bytes": 5391403,
+      "duration_s": 646.9,
+      "audio": "/audio/principles/basics/shooting-ed72b4be.m4a",
+      "guid": "learn-ice-hockey:core:shooting"
+    },
+    {
+      "slug": "playing-without-the-puck",
+      "title": "Playing without the puck",
+      "sources": [
+        "hockey-iq/playing_without_the_puck",
+        "hockey-iq/puck_support_and_spacing"
+      ],
+      "bytes": 6770907,
+      "duration_s": 811.2,
+      "audio": "/audio/principles/basics/playing-without-the-puck-f7d18d5b.m4a",
+      "guid": "learn-ice-hockey:core:playing-without-the-puck"
+    },
+    {
+      "slug": "defending",
+      "title": "Defending",
+      "sources": [
+        "foundation/core_principles",
+        "systems/defending_the_rush"
+      ],
+      "bytes": 5197073,
+      "duration_s": 622.9,
+      "audio": "/audio/principles/basics/defending-d8ddf8bd.m4a",
+      "guid": "learn-ice-hockey:core:defending"
+    },
+    {
+      "slug": "playing-centre",
+      "title": "Playing centre",
+      "sources": [
+        "positions/center"
+      ],
+      "bytes": 6704728,
+      "duration_s": 804.6,
+      "audio": "/audio/principles/basics/playing-centre-931b7ee1.m4a",
+      "guid": "learn-ice-hockey:core:playing-centre"
+    },
+    {
+      "slug": "playing-wing",
+      "title": "Playing wing",
+      "sources": [
+        "positions/winger"
+      ],
+      "bytes": 5601444,
+      "duration_s": 671.4,
+      "audio": "/audio/principles/basics/playing-wing-19d84c34.m4a",
+      "guid": "learn-ice-hockey:core:playing-wing"
+    },
+    {
+      "slug": "playing-defence",
+      "title": "Playing defence",
+      "sources": [
+        "positions/defender"
+      ],
+      "bytes": 6464755,
+      "duration_s": 774.6,
+      "audio": "/audio/principles/basics/playing-defence-a59150cc.m4a",
+      "guid": "learn-ice-hockey:core:playing-defence"
+    },
+    {
+      "slug": "playing-goal",
+      "title": "Playing goal",
+      "sources": [
+        "positions/goaltender"
+      ],
+      "bytes": 6076772,
+      "duration_s": 728.2,
+      "audio": "/audio/principles/basics/playing-goal-e9b74b80.m4a",
+      "guid": "learn-ice-hockey:core:playing-goal"
+    },
+    {
+      "slug": "teamwork",
+      "title": "Talking, teamwork and bouncing back",
+      "sources": [
+        "foundation/on_ice_communication",
+        "off-the-ice/team_play_and_culture",
+        "off-the-ice/mental_game"
+      ],
+      "bytes": 5703469,
+      "duration_s": 683.0,
+      "audio": "/audio/principles/basics/teamwork-2885c24a.m4a",
+      "guid": "learn-ice-hockey:core:teamwork"
+    }
+  ]
 }

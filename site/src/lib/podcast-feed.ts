@@ -17,7 +17,10 @@
  *   5. THE BASICS IS ITS OWN SEASON, APPENDED after every per-document season. No live
  *      episode is renumbered, retitled or re-dated — the per-document dates no longer
  *      depend on how many formats exist (PER_DOC_SLOTS below). Same gate as (4): the
- *      season enters the feed only when every planned topic is published.
+ *      season entered the feed only when every planned topic was published.
+ *
+ * AND, 21 October 2026: all 13 are published and the season is LIVE. The gate is now
+ *   sticky — LIVE_BASICS_SLUGS below — so a later edit to `planned` cannot pull it.
  */
 
 import {
@@ -78,21 +81,75 @@ export function principlesInFeed(): boolean {
 }
 
 /**
- * ⚠️ THE BASICS GATE, the same rule for the same reason: the season enters the feed only
- * when EVERY planned topic is published. Until then the feed is byte-identical to one
- * with no Basics at all; each episode still plays on /the-basics/ as soon as it exists.
- * Gated on the PLAN, so adding a planned topic closes the gate again.
+ * ⚠️ THE BASICS ARE LIVE, AND THE GATE IS NOW STICKY (21 October 2026).
  *
- * ⚠️ NOT YET STICKY (code review, 20 Oct 2026). Once the season is live, removing or
- * re-slugging a planned topic, or adding one, would pull or hold back episodes
- * subscribers already have. At launch: freeze the 13 Basics guids in
- * site/scripts/check-podcast-guids.mjs (as LIVE_PRINCIPLES_GUIDS is) and make `planned`
- * append-only, with appended topics joining the feed as published.
+ * The gate opened when every one of the 13 planned topics had an episode (the rule was
+ * the same as Playing principles': the season enters the feed only when the whole plan
+ * is published). Left as a pure plan check, it would have stayed REVERSIBLE: adding a
+ * 14th planned topic would have closed it again and pulled 13 episodes subscribers
+ * already hold, and removing, re-slugging or reordering a topic would have dropped or
+ * renumbered them.
+ *
+ * So these 13 slugs are FROZEN, in series order, and the season is in the feed because
+ * this list is non-empty, not because of the plan:
+ *   - `planned` is APPEND-ONLY. Its first 13 entries must be exactly these slugs in this
+ *     order, and every one must still have its episode; `assertBasicsFrozen()` fails the
+ *     build otherwise.
+ *   - A topic appended after them joins the feed AS SOON AS IT IS PUBLISHED, with no
+ *     whole-plan gate — but only in planned order: an appended topic waits until every
+ *     topic planned before it is published, so a later publish never renumbers or
+ *     re-dates an episode already in the feed.
+ * The same 13 are frozen as guids in site/scripts/check-podcast-guids.mjs, which checks
+ * the BUILT feed. Add a slug here only when its episode is live; never remove one.
  */
-export function basicsInFeed(): boolean {
-  if (BASICS_PLANNED.length === 0) return false;
+export const LIVE_BASICS_SLUGS: readonly string[] = [
+  'how-a-game-works',
+  'gear-and-staying-safe',
+  'skating',
+  'carrying-the-puck',
+  'passing-and-catching',
+  'shooting',
+  'playing-without-the-puck',
+  'defending',
+  'playing-centre',
+  'playing-wing',
+  'playing-defence',
+  'playing-goal',
+  'teamwork',
+];
+
+function assertBasicsFrozen(): void {
+  const head = BASICS_PLANNED.slice(0, LIVE_BASICS_SLUGS.length).map((t) => t.slug);
+  if (head.join('\n') !== LIVE_BASICS_SLUGS.join('\n')) {
+    throw new Error(
+      `podcast-feed: podcast-basics.json \`planned\` must begin with the ${LIVE_BASICS_SLUGS.length} live Basics ` +
+        `topics, in order (LIVE_BASICS_SLUGS). It begins: ${head.join(', ')}. A live topic may not be removed, ` +
+        `re-slugged or reordered; new topics are appended after them.`,
+    );
+  }
   const published = new Set(BASICS_EPISODES.map((e) => e.slug));
-  return BASICS_PLANNED.every((t) => published.has(t.slug));
+  const missing = LIVE_BASICS_SLUGS.filter((s) => !published.has(s));
+  if (missing.length) {
+    throw new Error(`podcast-feed: live Basics topics have no episode in podcast-basics.json: ${missing.join(', ')}`);
+  }
+}
+
+/** True once the season is live, which it has been since LIVE_BASICS_SLUGS was frozen. */
+export function basicsInFeed(): boolean {
+  return LIVE_BASICS_SLUGS.length > 0;
+}
+
+/** The Basics episodes the feed carries, in planned order: the frozen live topics, then
+ *  each appended topic up to (not past) the first one that is not yet published. */
+function basicsFeedEpisodes(): BasicsEpisode[] {
+  const bySlug = new Map(BASICS_EPISODES.map((e) => [e.slug, e]));
+  const out: BasicsEpisode[] = [];
+  for (const t of BASICS_PLANNED) {
+    const ep = bySlug.get(t.slug);
+    if (!ep) break;
+    out.push(ep);
+  }
+  return out;
 }
 
 /** The Basics season number: one after the last structure.json section. */
@@ -224,11 +281,13 @@ export function feedItems(): FeedItem[] {
   });
 
   if (!basicsInFeed()) return docItems;
+  assertBasicsFrozen();
 
   // THE BASICS: one season after every per-document season, in planned order, numbered
-  // 1..N within it, continuing the global itunes:order. BASICS_EPISODES is already in
-  // planned order and, with the gate open, holds exactly one episode per planned topic.
-  const basicsItems: FeedItem[] = BASICS_EPISODES.map((ep, i) => ({
+  // 1..N within it, continuing the global itunes:order. The episode at position i is the
+  // topic planned at position i (basicsFeedEpisodes stops at the first gap), so its
+  // number and its date are fixed by the plan and no later publish moves them.
+  const basicsItems: FeedItem[] = basicsFeedEpisodes().map((ep, i) => ({
     basics: ep,
     media: ep,
     guid: ep.guid,

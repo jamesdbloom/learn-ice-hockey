@@ -22,9 +22,12 @@
  * guids. The count rule is restated here for the same reason.
  *
  * The Basics (owner, 20 October 2026): a TOPIC collection, `podcast-basics.json`, keyed by
- * slug. The feed must carry NONE of it until every PLANNED topic is published; after that
- * it must carry exactly their `learn-ice-hockey:core:<slug>` guids as ONE extra season
- * after every structure.json section, in planned order. The gate is restated here too.
+ * slug, as ONE extra season after every structure.json section, in planned order. The
+ * feed carried none of it until every planned topic was published. Since 21 October 2026
+ * all 13 are LIVE and frozen below (LIVE_BASICS_GUIDS): the season stays in the feed
+ * whatever `planned` later says, `planned` must BEGIN with those 13 in order (append-only),
+ * and an appended topic joins the feed once it and every topic planned before it are
+ * published. That rule is restated here too, not imported.
  *
  * Across ALL THREE collections, and whatever the feed carries: every guid and every audio
  * path is unique, and the 39 Playing principles guids frozen below are still in
@@ -170,6 +173,29 @@ const LIVE_PRINCIPLES_GUIDS = [
   'learn-ice-hockey:principles:off-the-ice/how_to_watch_hockey',
 ];
 
+// ⚠️ THE BASICS GUIDS LIVE SUBSCRIBERS HOLD, FROZEN HERE (21 October 2026), IN SERIES
+// ORDER. All 13 planned topics were published that day, which opened the Basics gate.
+// From here the gate is STICKY: these must be in the feed, as the FIRST 13 items of the
+// Basics season, in this order, whatever `planned` says — so a 14th planned topic can no
+// longer close the gate, and removing, re-slugging or reordering a topic fails here
+// instead of silently pulling or renumbering episodes. A re-made episode keeps its guid.
+// Add a guid once its episode is live; never remove or reorder one.
+const LIVE_BASICS_GUIDS = [
+  'learn-ice-hockey:core:how-a-game-works',
+  'learn-ice-hockey:core:gear-and-staying-safe',
+  'learn-ice-hockey:core:skating',
+  'learn-ice-hockey:core:carrying-the-puck',
+  'learn-ice-hockey:core:passing-and-catching',
+  'learn-ice-hockey:core:shooting',
+  'learn-ice-hockey:core:playing-without-the-puck',
+  'learn-ice-hockey:core:defending',
+  'learn-ice-hockey:core:playing-centre',
+  'learn-ice-hockey:core:playing-wing',
+  'learn-ice-hockey:core:playing-defence',
+  'learn-ice-hockey:core:playing-goal',
+  'learn-ice-hockey:core:teamwork',
+];
+
 // ---- expected: the OLD logic, restated --------------------------------------
 const expected = new Map(); // guid -> enclosure url
 for (const ep of conversation) {
@@ -182,11 +208,24 @@ if (principlesExpectedInFeed) {
     else expected.set(ep.guid, `${origin}${ep.audio}`);
   }
 }
-// The Basics: in the feed only when every planned topic has an episode (restated, not
-// imported — see the header).
+// The Basics (restated, not imported — see the header). Before 21 October 2026: in the
+// feed only when every planned topic had an episode. Since then: live, because
+// LIVE_BASICS_GUIDS is non-empty, and `planned` must begin with those topics in order.
 const BASICS_PREFIX = 'learn-ice-hockey:core:';
 const basicsSlugs = new Set(basicsEpisodes.map((e) => e.slug));
-const basicsExpectedInFeed = basicsPlanned.length > 0 && basicsPlanned.every((t) => basicsSlugs.has(t.slug));
+const basicsExpectedInFeed =
+  LIVE_BASICS_GUIDS.length > 0 ||
+  (basicsPlanned.length > 0 && basicsPlanned.every((t) => basicsSlugs.has(t.slug)));
+{
+  const head = basicsPlanned.slice(0, LIVE_BASICS_GUIDS.length).map((t) => `${BASICS_PREFIX}${t.slug}`);
+  if (head.join('\n') !== LIVE_BASICS_GUIDS.join('\n')) {
+    fail(`podcast-basics.json \`planned\` no longer begins with the ${LIVE_BASICS_GUIDS.length} live Basics topics in order (frozen list; append new topics after them)`);
+  }
+  const dataGuids = new Set(basicsEpisodes.map((e) => e.guid));
+  for (const g of LIVE_BASICS_GUIDS) {
+    if (!dataGuids.has(g)) fail(`LIVE Basics guid ${g} is no longer in podcast-basics.json episodes (frozen list; a re-made episode keeps its guid)`);
+  }
+}
 const BASICS_SEASON = structure.layers.length + 1;
 const plannedIndex = new Map(basicsPlanned.map((t, i) => [t.slug, i]));
 for (const ep of basicsEpisodes) {
@@ -198,8 +237,12 @@ for (const ep of basicsEpisodes) {
 }
 const expectedBasicsOrder = []; // guids, in planned order
 if (basicsExpectedInFeed) {
+  // Planned order, stopping at the first topic with no episode: an appended topic joins
+  // only once every topic planned before it is published, so nothing in the feed is
+  // ever renumbered or re-dated by a later publish.
   for (const t of basicsPlanned) {
     const ep = basicsEpisodes.find((e) => e.slug === t.slug);
+    if (!ep) break;
     expected.set(ep.guid, `${origin}${ep.audio}`);
     expectedBasicsOrder.push(ep.guid);
   }
@@ -294,6 +337,17 @@ for (const guid of LIVE_CONVERSATION_GUIDS) {
 for (const guid of LIVE_PRINCIPLES_GUIDS) {
   if (!actual.has(guid)) fail(`LIVE principles guid ${guid} is not in the feed (frozen list; a guid may never change)`);
 }
+// Unconditional, for the same reason: the 13 Basics have been live since 21 Oct 2026, as
+// the first 13 items of their season, in this order.
+for (const guid of LIVE_BASICS_GUIDS) {
+  if (!actual.has(guid)) fail(`LIVE Basics guid ${guid} is not in the feed (frozen list; a guid may never change)`);
+}
+{
+  const head = items.filter((it) => it.guid?.startsWith(BASICS_PREFIX)).slice(0, LIVE_BASICS_GUIDS.length).map((it) => it.guid);
+  if (head.join('\n') !== LIVE_BASICS_GUIDS.join('\n')) {
+    fail(`the Basics season does not open with the ${LIVE_BASICS_GUIDS.length} live guids in frozen order: ${head.join(', ')}`);
+  }
+}
 // The Basics season: last, its own season number, in planned order.
 {
   const basicsItems = items.filter((it) => it.guid?.startsWith(BASICS_PREFIX));
@@ -349,7 +403,8 @@ const summary =
   (principlesExpectedInFeed ? `, ${principles.length} Playing principles` : `; Playing principles held back, ${principles.length}/${docCount} exist`) +
   (basicsExpectedInFeed ? `, ${basicsEpisodes.length} Basics` : `; Basics held back, ${basicsEpisodes.length}/${basicsPlanned.length} planned exist`) +
   `); ${LIVE_CONVERSATION_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_CONVERSATION_GUIDS.length} frozen live guids present; ` +
-  `${LIVE_PRINCIPLES_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_PRINCIPLES_GUIDS.length} frozen principles guids in feed; pinned rink_map guid ${actual.has(PINNED_RINK_MAP) ? 'present' : 'ABSENT'}`;
+  `${LIVE_PRINCIPLES_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_PRINCIPLES_GUIDS.length} frozen principles guids in feed; ` +
+  `${LIVE_BASICS_GUIDS.filter((g) => actual.has(g)).length}/${LIVE_BASICS_GUIDS.length} frozen Basics guids in feed; pinned rink_map guid ${actual.has(PINNED_RINK_MAP) ? 'present' : 'ABSENT'}`;
 
 if (failures.length) {
   console.error(`check-podcast-guids: FAIL — ${summary}`);

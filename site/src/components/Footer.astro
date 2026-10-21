@@ -1,6 +1,7 @@
 ---
-import { NON_AFFILIATION, SITE_AUTHOR, SITE_AUTHOR_URL } from '../consts';
+import { AUDIO_ENABLED, NON_AFFILIATION, SITE_AUTHOR, SITE_AUTHOR_URL } from '../consts';
 import { DOC_COUNT } from '../data/nav';
+import { BASICS_LABEL, BASICS_PATH } from '../data/podcast';
 
 const year = new Date().getFullYear();
 
@@ -29,6 +30,9 @@ const { bare = false } = Astro.props;
       licensed <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">CC BY-NC 4.0</a>.
     </p>
     <p class="site-footer__links">
+      {/* The Basics' listing page is the one podcast page that is not a document, so it is
+          linked here beside Downloads — gated on the same flag that makes the audio real. */}
+      {AUDIO_ENABLED && (<><a href={BASICS_PATH}>{BASICS_LABEL}</a> ·{' '}</>)}
       <a href="/downloads/">Downloads</a> · <a href="/search/">Search</a> ·{' '}
       <a href="/rss.xml">RSS</a> ·{' '}
       <a href="https://github.com/jamesdbloom/learn-ice-hockey">Source on GitHub</a>
