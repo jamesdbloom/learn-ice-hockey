@@ -337,57 +337,29 @@ const stepUp = {
   title: 'Stepping up at your own line',
 
   caption:
-    'A step-up at your own blue line, drawn in your own end with the net you are defending at the ' +
-    'right and the attack coming from the left. Stepping up means moving forward to challenge an ' +
-    'oncoming carrier early instead of retreating in front of them, and it happens here or out in ' +
-    'the neutral zone. Pinching is the other play and it happens at the other blue line, and the ' +
-    'two being confused is what this picture is drawn against. What it is really about is the ice ' +
-    'behind the defenceman who has gone. There is nobody at all between that defenceman and their own ' +
-    'goalie, and their partner is across on the far side with a second attacker already wide of ' +
-    'the partner — so a step-up that misses does not cost a stride, it leaves that partner alone in a ' +
-    'two-on-one. So step up only when you are confident you can win the puck or force a turnover: ' +
-    'confidence, not hope. How aggressive confident should be is a coaching choice rather than a ' +
-    'rule of hockey, so ask which risk your coach wants to carry. ' +
-    '⚠️ And a step-up is a closing of space, not a hit. The route drawn here ends in two ' +
-    'bars, meaning arrive and contain, and it is drawn that way on purpose. A step-up ' +
-    'finished as a hit is the geometry the charging rules are written for, and a carrier ' +
-    'with their head down is the picture those rules name: that tells you they cannot change ' +
-    'direction, and nothing more. None of the six books caps charging at a minor, and ' +
-    'USA Hockey Rule 607(a) writes no bare one at all — "a minor plus a misconduct or a ' +
-    'major plus a game misconduct penalty shall be assessed for charging an opponent". ' +
-    // ⚠️ CRITICAL, found by `safety-reviewer`. This read "the Note to USA Hockey Rule 607
-    // NEEDS 'more than two strides'" and stopped there. Voiced alone with a 300 ms break
-    // either side, that tells a defenceman two strides is a safe harbour. IT IS NOT, IN ANY
-    // BOOK -- and the caption TRUNCATED USA Hockey's own sentence at the stride clause:
-    // usah.txt:3663 continues "or travels an excessive distance to accelerate through a body
-    // check", and then "This includes skating or leaving one's feet (jumping) into the
-    // opponent". The Casebook answers "Yes" to charging with no strides at 607 Situation 3.
-    // Four layers carried the counterweight -- body, rules_primer.md:419, the facts block and
-    // Common Mistakes -- and the ONE layer voiced with no surrounding text did not. Round 10's
-    // shape exactly.
-    'The stride counts disagree, and none of them is a threshold you may skate to. ' +
-    'Hockey Canada Rule 7.4(ii) makes "two or more strides immediately prior to making ' +
-    'contact" charging, where the Note to USA Hockey Rule 607 needs "more than two ' +
-    'strides" and the Note to CARHA Rule 52(a) "more than two steps or strides". ' +
-    'IIHF Rule 42.1 writes no number, only "multiple strides", and ' +
-    'NHL Rule 42.1 and PWHL Rule 42.1 none either, judging it "as a result of distance ' +
-    'traveled". But every one of those books ' +
-    'also reaches a check with no strides in it: USA Hockey\'s own sentence continues ' +
-    '"or travels an excessive distance to accelerate through a body check for the purpose ' +
-    'of punishing the opponent", and its Casebook answers "Yes" at 607 Situation 3 to a ' +
-    'player who "delivers a check without taking the two fast strides, but instead ' +
-    'accelerates through the check". Leaving your feet is charging in all six on its own. ' +
-    'Two strides is a safe harbour in no book. ' +
-    // ⚠️ The division claim below was DESTROYED by my own repair of this caption and
-    // restored here. A line-index replacement cut its subject and left the tail
-    // "carries a division clause..." as a subject-less fragment, voiced alone between
-    // 300 ms breaks -- and the claim itself vanished from the one layer that has no
-    // surrounding text. That is verbatim the shape of the critical the repair was
-    // fixing. `commit-gate` caught it in the built page.
-    'And charging binds every division, checking league or not — neither USA Hockey 607 ' +
-    'nor Hockey Canada 7.4 carries a division clause, where the body-checking rules that ' +
-    'restrict themselves say so in terms. Nothing in this picture is contact, and nothing ' +
-    'in it is a licence to hit.',
+    // SHORTENED 22 October 2026 (owner: shorter is better), from 2,806 chars. The only host is
+    // defender.md, and its facts block (chunk before) and body (next two chunks) voice the
+    // per-book stride wording, the USA Hockey 607(a) quotation, "none of the six caps it at a
+    // minor" and the division-clause limb (body, chunk after; facts block) in full, so those are
+    // cut here. KEPT, because
+    // this is the one layer voiced with no surrounding text: the closing-space-not-a-hit limb,
+    // the head-down limb, and the stride counterweight -- a CRITICAL from `safety-reviewer`
+    // when an earlier version made "more than two strides" sound like a safe harbour. Do not
+    // cut "safe harbour in no book" or the jumping limb. Wording re-checked in sources/ this
+    // session: usah.txt Rule 607 Note ("leaving one's feet (jumping)", "accelerating through a
+    // check"); jumping is named in NHL 42.1, IIHF 42.1, PWHL 42.1, CARHA 52(a) and Hockey
+    // Canada 7.4(i).
+    'A step-up at your own blue line, your net at the right and the attack from the left: ' +
+    'you move forward to meet the carrier early instead of retreating. A pinch is the ' +
+    'other play, at the other blue line. The cost is the ice behind you: nobody is between you ' +
+    'and your goalie, and your partner is on the far side ' +
+    'with a second attacker wide of them, so a missed step-up leaves your partner alone in a ' +
+    'two-on-one. Step up only when you are confident you can win the puck or force a turnover. ' +
+    'How aggressive to be is a coaching choice, so ask what your coach wants. ' +
+    '⚠️ A step-up closes space; it is not a hit, so the route ends in two bars: arrive and ' +
+    'contain. Finished as a hit, it is what the charging rules are written for, and a carrier ' +
+    'with their head down tells you only that they cannot change direction. Two strides is a safe harbour in no book: USA Hockey calls accelerating ' +
+    'through a check charging, and leaving your feet to hit is charging in all six.',
 
   describe:
     'The defending half of the rink, your own net at the right, your goalie in the ' +

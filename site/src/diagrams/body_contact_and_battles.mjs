@@ -866,40 +866,39 @@ const angleIntoTheCorner = {
   // posture instruction with no mechanism named for it, which is why USA Hockey says only
   // that it "can cause injury". "three cases for meeting a wall" counts cases, not
   // prohibitions, and is untouched.
+  // ⚠️ SHORTENED 22 October 2026 (2,311 chars -> under 1,200; owner: shorter is better). Kept: the
+  // picture and its two angles, the USA Hockey angling-in claim, the three-case count with its
+  // provenance disclosure, the get-off-the-wall option, "in every league, checking or not", never
+  // turn your back / never duck, Case 2 with BOTH shoulder limbs and the sentence boundary before
+  // "Knees bent", and Case 3 VERBATIM with its ranking and teaching-point order. Case 3 stays in full
+  // because content/technique/skating.md, the second host, voices no Case 3 anywhere -- it only
+  // points to this document. DROPPED, each voiced within one to three spoken chunks of the marker in
+  // BOTH hosts (md_to_speech render, 22 Oct): the "Even a light hit from behind" quotation and the
+  // two-mechanisms sentence (skating chunk 006, the one before the caption; body_contact facts and
+  // body two to four chunks before); the tucked-chin mechanism and the walking-speed quotation
+  // (skating 005 and 008; body_contact 079-081); and the "whether the player closing on you may
+  // check you at all" sentence, whose job -- the posture holds whatever the answer -- is carried by
+  // "in every league, checking or not", kept, and by both hosts ("in any league, checking or not").
+  // "at any speed" is kept as the residue of the walking-speed limb.
   caption:
-    'Going back for a puck in your own corner with a checker inside the line you are skating, and the ' +
-    'only thing drawn is that line. It bends: it sets off pointed at the corner and finishes running ' +
-    'along the boards rather than at them, meeting the wall about twenty-two degrees off parallel ' +
-    'where the same journey drawn as a straight line would meet it at about fifty. Skating into the ' +
-    'corners at an angle greatly reduces the risk of hitting the boards helmet first, and a leg or a ' +
-    'side or an arm absorbs most of the impact instead. That is the first, and best, of three cases ' +
-    'for meeting a wall — the cases themselves come from USA Hockey\'s material, the ordering and the ' +
-    'ranking do not — and it is decided several strides out, which is why the route is drawn from so ' +
-    'far away. Better still is not to be there when it happens. A chip, a rim or a reverse decided ' +
-    'before you arrive ' +
-    'takes you out of the collision altogether. ⚠️ How you meet the wall once you are there is the ' +
-    'half no picture can draw, and it is not optional. Whether the player closing on you may check ' +
-    'you at all depends on your age group, your league and the book they play under, and nothing that ' +
-    'follows depends on the answer. Never turn your back to anyone coming at you, and never ' +
-    'duck. Those are two separate injuries with two separate mechanisms. A back turned makes it a hit ' +
-    // ⚠️ BOTH BORROWINGS QUOTED. The addressee was already right here; what was missing was the
-    // quotation marks. "Even a light hit..." is sources/ibc.txt:1570 verbatim (§5 Checking From
-    // Behind), and the em dash that introduced it became a colon so the source's capital "Even"
-    // is correct rather than a silent mid-sentence capital. The walking-speed clause read "can
-    // happen at walking speed"; sources/huh.txt:229 says "it can occur at walking speed", so the
-    // verb is the source's now and the string is quoted to the same standard as the first.
-    'from behind, and USA Hockey addresses its warning about those to the player delivering one: ' +
-    '"Even a light hit from behind could inflict a severe head or neck injury." A chin tucked to ' +
-    'the chest straightens the cervical spine, and the injury that follows is one USA Hockey says ' +
-    '"can occur at walking speed". So, in every league, checking or not, get your skates parallel to the ' +
-    'wall and take it on your forearm and hip, not the point of your shoulder, and not the whole ' +
-    'shoulder if you can help it. Knees bent, head up ' +
-    'and chin off your chest. That is the second case. The third is what is left when turning is ' +
-    'already impossible, and it is damage limitation rather than the position to aim for. USA ' +
-    'Hockey asks you to turn your skates parallel if at all possible before you settle for it. ' +
-    'Then get your stick and gloves up and spread out on the glass, arms out as a ' +
-    'shock absorber, and take the impact over as wide a surface as you have, with no head contact at ' +
-    'all.',
+    'Going back for a puck in your own corner with a checker inside your line, and only that line is ' +
+    'drawn. It sets off pointed at the corner and finishes running along the boards, meeting them ' +
+    'about twenty-two degrees off parallel where a straight line would meet them at about fifty. ' +
+    'Skating into the corners at an angle greatly reduces the risk of hitting the boards helmet ' +
+    'first; a leg, a side or an arm takes most of the impact instead. That is the first and best of ' +
+    'three cases for meeting a wall — the cases come from USA Hockey\'s material, the ordering and ' +
+    'the ranking do not — and it is decided several strides out. Better still, a chip, a rim or a ' +
+    'reverse decided before you arrive takes you out of the collision. ⚠️ How you meet the wall is ' +
+    'the half no picture can draw, and it is not optional. Never turn your back to anyone coming at ' +
+    'you, and never duck, in every league, checking or not, and at any speed. ' +
+    'Get your skates parallel to the wall and take it on your ' +
+    'forearm and hip, not the point of your shoulder, and not the whole shoulder if you can help ' +
+    'it. Knees bent, head up and chin off your chest. That is the second case. The third is what is ' +
+    'left when turning is already impossible, and it is damage limitation rather than the position ' +
+    'to aim for. USA Hockey asks you to turn your skates parallel if at all possible before you ' +
+    'settle for it. Then get your stick and gloves up and spread out on the glass, arms out as a ' +
+    'shock absorber, and take the impact over as wide a surface as you have, with no head contact ' +
+    'at all.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
@@ -1141,30 +1140,26 @@ const insideLaneLongerRoute = {
   //    scopes its permission to a player "in control of the puck", and this is a LOOSE-PUCK
   //    race, so it does not reach this picture. The owner document carries them with their
   //    scope; the caption cites only NHL/IIHF 56.1, which is not so scoped.
+  // ⚠️ SHORTENED 22 October 2026 (1,767 chars; owner: shorter is better). Sole host is the owner,
+  // and the ```facts block directly above the marker (spoken chunk 131, the caption is 132) carries
+  // the USA Hockey skating-speed and stand-your-ground entitlements, NHL 56.1's no-speed-condition,
+  // the instrument "Never", the free-hand fend-off line and Hockey Canada 8.1's stick-blocking
+  // permission; the body (chunk 133) repeats the NHL 56.1 and USA Hockey wording. Those are dropped
+  // here. KEPT: the picture, the "only while you are going for the puck" condition, the HC/CARHA
+  // scope (it limits the permission this caption states, so it stays beside it), the never-hold
+  // limb, and USA Hockey 625(a)(4) -- the minor for changing lane or foot speed to play the body,
+  // which the document voices only in §9, about ten chunks away (sources/usah.txt:4466-4468).
   caption:
-    'A loose puck neither team has, drawn in open ice in your own end with the net you are defending ' +
-    'at the right. The faint dashed line is the straight route the opposition forward would take to ' +
-    'it; it is not a marking on the ice and nothing travels along it. Your own route arcs, so you ' +
-    'arrive already turned, inside them and on that line, and the less direct way round is what is ' +
-    'left for them. On this drawing that costs you about two feet, which is the drawing’s geometry ' +
-    'rather than a fact about hockey. ⚠️ Body position is what does this work, and only while you ' +
-    'are going for the puck. USA Hockey lets a skater keep the ice they occupy so long as they hold ' +
-    'their skating speed and their body between the opponent and the loose puck, and use that ' +
-    'position, while maintaining their skating lane, to force an opponent onto exactly that less ' +
-    // W33: scoped. "Stopping does not cost you your ice" was flat, and the owner's facts line
-    // (body_contact_and_battles.md, "Hockey Canada and CARHA write no right to lengthen an
-    // opponent's path") says two books grant neither entitlement — HC 8.3 and CARHA 66(a) make
-    // impeding an opponent without the puck interference. Sole host is the owner.
-    'direct route. Standing your ground is a separate entitlement in the same book, and NHL Rule ' +
-    '56.1 attaches no speed condition at all, so under those books stopping does not cost you your ' +
-    'ice. Hockey Canada and CARHA write no right to lengthen an opponent’s path: impeding an opponent without ' +
-    'the puck is interference there, so hold only a lane you already have. Change your ' +
-    'skating lane or your foot speed to play the opponent’s body rather than the puck and USA Hockey Rule ' +
-    '625(a)(4) makes that a minor for interference. The other limit is the instrument: under that ' +
-    'book, a stick, an arm or the skates used to obstruct the opponent’s ability to skate to the puck, and a ' +
-    'hand or arm used to hold or block them. The free hand may fend off an opponent or their stick ' +
-    'under NHL and IIHF Rule 56.1 and may never hold, pull, tug or grab. Hockey Canada Rule 8.1 ' +
-    'permits blocking a stick with hands, arms or body but not holding one.',
+    'A loose puck neither team has, in your own end with the net you are defending at the right. ' +
+    'The faint dashed line is the opposition forward\u2019s straight route to it, not a marking on ' +
+    'the ice. Your route arcs, so you arrive already turned, inside them and on that line, and the ' +
+    'less direct way round is what is left for them. The two feet it costs you is the drawing\u2019s ' +
+    'geometry, not a fact about hockey. ⚠️ Body position is what does this work, and only while you ' +
+    'are going for the puck. Change your skating lane or your foot speed to play the opponent\u2019s ' +
+    'body rather than the puck and USA Hockey Rule 625(a)(4) makes that a minor for interference. ' +
+    'Hockey Canada and CARHA write no right to lengthen an opponent\u2019s path: impeding an opponent ' +
+    'without the puck is interference there, so hold only a lane you already have. Never hold, ' +
+    'pull, tug or grab with your free hand.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in ' +
@@ -1406,19 +1401,24 @@ const shotBlockGetClose = {
   // a later look, and is NOT repaired here because it is a rewording rather than a placement: the
   // caption states the two-on-one as an assignment where the host states it as a prohibition
   // ("Never: Block the shot on a 2-on-1"), so the "do not block" is left implicit.
+  // ⚠️ SHORTENED 22 October 2026 (1,785 chars; owner: shorter is better). ONLY THE MUTED PICTURE
+  // HALF WAS CUT: the drawing conventions are compressed and "Nothing in the picture is the
+  // technique" is folded into the glyph sentence. The amber half -- the posture list, the two-on-one,
+  // the screen case with "commit fully ... or get out of the lane", and the coaching-choice scope --
+  // is unchanged word for word. defender.md still has no "commit fully" sentence of its own (render,
+  // 22 Oct: it occurs only in the caption's chunk), so that reasoning above still holds. The
+  // "safer is coaching craft" disclosure is kept in short form; both hosts voice it in the adjacent
+  // chunk as well.
   caption:
-    'Where a blocked shot should be blocked from, drawn in your own end with the net you are ' +
-    'defending at the right and your own goalie in its crease. An opposition defenceman has the ' +
-    'puck at the point; the faint dashed line is the straight path from that puck to the middle of ' +
-    'your goal. It is not a marking on the ice, and the picture is about where along it you stand. Blocking from ten feet away is far safer and ' +
-    'more effective than blocking from three feet in front of your own goalie, where a deflection is ' +
-    'a goal. Calling that safer, as against more effective, is coaching craft rather than a ' +
-    'measured finding — nothing cited here measures injury against blocking distance. Take the ten ' +
-    'feet from those words and not off the picture. The marker is drawn about fourteen feet out, ' +
-    'because at ten the two markers would touch and read as a collision. A point shot is drawn ' +
-    'because it has room in it to show a distance, and the instruction is about any shot. Read the ' +
-    'blocker as one body in the lane and not as an assignment. Nothing in the picture is the ' +
-    'technique. ⚠️ The technique is the half that hurts you. On your feet: padded surfaces square to ' +
+    'Where to block a shot from, drawn in your own end with the net you are defending at the right ' +
+    'and your goalie in its crease. An opposition defenceman has the puck at the point; the faint ' +
+    'dashed line is its straight path to the middle of your goal, not a marking on the ice. ' +
+    'Blocking from ten feet away is far more effective than blocking from three feet in front of ' +
+    'your own goalie, where a deflection is a goal. That it is also safer is coaching craft rather ' +
+    'than a measured finding. The blocker is drawn about fourteen feet out because at ten the two ' +
+    'markers would touch, and a point shot is drawn because it has room to show a distance. The ' +
+    'instruction is about any shot, and the blocker is one body in the lane, not an assignment. ' +
+    '⚠️ The technique is the half that hurts you, and the picture leaves it out. On your feet: padded surfaces square to ' +
     'the puck, shin guards front-on, head up and out of the shot lane, feet on the ice, hands ' +
     'behind your body with the backs of the gloves out. On a two-on-one your job as the lone ' +
     'defender is the pass and your goalie has the shooter. And from in front of your own ' +

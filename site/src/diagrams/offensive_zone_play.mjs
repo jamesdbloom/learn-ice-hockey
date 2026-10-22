@@ -31,7 +31,6 @@ import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
 import {
   CREASE_LINE_IS_THE_CREASE,
   REFEREE_JUDGEMENT,
-  TABLES_ALLOW_OUTSIDE,
 } from './rule69_clauses.mjs';
 
 // ---------------------------------------------------------------------------
@@ -600,99 +599,49 @@ const netFrontScreen = {
   width: 900,
 
   caption:
-    'Where the net-front player actually stands to screen: just outside the blue paint, ' +
-    'roughly six to eight feet out from the goal line and inside the faceoff dots, standing on ' +
-    "the line between the goalie's eyes and the puck rather than the line between the " +
-    'goalie and the net — so when the point man walks the line, the screener slides with them ' +
-    'or the screen stops being a screen. Take the six-to-eight feet from these words and not off ' +
-    // ⚠️ FULL STOP, NOT A COLON: "and not off the picture:" sat a negation on the separator,
-    // and the inverted reading denies the drawn depth this sentence exists to disclose.
-    'the picture. The marker for the screener is drawn nine and a half feet out instead, because a ' +
-    'player marker on these diagrams is nearly six feet across, far wider than a player, and at ' +
-    'eight feet out on that sight line it would cover the very crease line the ' +
-    'diagram is about. Note the crease as it is drawn, because this is easy to ' +
-    'get wrong: it is eight feet wide at the goal line and six feet deep, so the six feet is the ' +
-    // ⚠️ FULL STOP AFTER "not the half-width" — the most dangerous seam in this caption.
-    // It read "…not the half-width, and 'three feet out from the goal line' is inside the
-    // paint", so the negation could carry across the comma and a listener hears that three
-    // feet out is NOT inside the paint. That is a screener planting a foot in the crease.
-    'depth and not the half-width. And "three feet out from the goal line" is inside the paint ' +
-    'rather than clear of it. A screen from outside the crease without contact is normally legal ' +
-    'under NHL and IIHF rules and you should do it constantly — and both books answer this exact ' +
-    // ⚠️ THE CLAUSE-BY-CLAUSE WORKING WAS CUT, THE CONCLUSION AND ITS DISCLOSURE KEPT.
-    // This ran through 69.1's disallowing sentence, 69.3's significant-position ground and
-    // 69.4's contact-only reach, then DISALLOWED_ROWS_SHARE_THE_CREASE. Both hosts state that
-    // working themselves, immediately beside the marker: offensive_zone_play.md's "Screening"
-    // paragraph names all three clauses, and center.md's facts block at "The crease is the one
-    // line you don't cross" carries the keying AND the table citation.
-    //
-    // ⚠️ AND ON 18 SEPTEMBER 2026 THE SURVIVING CONCLUSION WENT TOO. It read "every clause of
-    // Rule 69 that voids a goal for where you stood names the crease, and both books' own
-    // reference tables agree", hedged as a reading of the rule's structure. The hedge does not
-    // rescue it: 69.1's clause (1) reaches an attacking player who "either by his positioning
-    // or by contact, impairs the goalkeeper's ability to move freely within his crease OR
-    // DEFEND HIS GOAL" (nhl_rules_layout.txt:6035-6037), and that second limb carries no
-    // location condition at all — so "every clause" is false about the text, and a listener
-    // hears it as an absolute either way. The tables do not "agree" with a structural reading;
-    // they answer the play OUTRIGHT, which is stronger evidence and shorter to say. The same
-    // correction landed in eight content documents today, including this diagram's own hosts.
-    // TABLES_ALLOW_OUTSIDE is now the primary claim rather than corroboration of one.
-    // ⚠️ It must stay: dropping the permissive half teaches the rule as stricter than it is.
-    // Its replacement disclosure is "an appendix table rather than rule text" — the scope the
-    // tables actually need, and the wording winger.md and shooting.md use for the same row.
-    'play in their own reference tables, ' +
-    TABLES_ALLOW_OUTSIDE +
-    '. That is an appendix table rather than rule text, and ' +
+    // SHORTENED 22 October 2026 (2,617 chars; owner: shorter is better). Host trace, rendered
+    // with md_to_speech for both hosts (offensive_zone_play.md "Screening", center.md "Keep your
+    // body out of the crease"):
+    //  - KEPT: where to stand and the eyes-to-puck line; the drawn-depth disclosure (the marker
+    //    is drawn at 9.5 ft, see the comment on the screener below -- do not tidy it away); the
+    //    crease geometry (center.md does not voice it); the permissive half, "normally legal"
+    //    (dropping it teaches the rule as stricter than it is); REFEREE_JUDGEMENT (neither host
+    //    voices it); the whole amber run -- instruction, CREASE_LINE_IS_THE_CREASE, USA Hockey
+    //    625(b) / IIHF 69.1 zone cost, CARHA 66(b) and its scope (center.md never voices CARHA's
+    //    standing bar, offensive_zone_play.md only far below).
+    //  - DROPPED: TABLES_ALLOW_OUTSIDE and its "appendix table rather than rule text"
+    //    disclosure. Both hosts voice the table answer in the facts block of the same section,
+    //    immediately before the marker (offensive_zone_play.md 5C/5E; center.md Table 14, 5C/5E).
+    //    The constant itself is untouched; it is still used by screen-the-goalie-sightline.
+    //    The clause-by-clause Rule 69 working had already been cut on 18 September 2026 for
+    //    stating an absolute ("every clause ... names the crease") that 69.1's text does not
+    //    support; do not bring it back.
+    //  - Re-verified this session, flattened: carha_2026.txt:3102-3105 66(b) (the 2026 book, per the owner ruling; identical in the 2020 carha.txt) "Unless the puck is in the goal
+    //    crease area, a player of the attacking side may not stand in the goal crease. If the
+    //    puck should enter the net while such conditions prevail, the goal shall not be
+    //    allowed."; usah.txt 625(b) neutral-zone face-off for an attacking player in the crease;
+    //    iihf_rules_2026-27.txt 69.1 "the Referee has the possibility to stop the game" for a
+    //    neutral-zone face-off.
+    // ⚠️ NEGATION SEAMS kept closed: the crease geometry is stated positively (no "not the
+    // half-width" for a negation to carry from), and CARHA's scope is its own sentence.
+    'The screener stands just outside the blue paint, six to eight feet out from the goal line ' +
+    "and inside the dots, on the line from the goalie's eyes to the puck rather than from the " +
+    'goalie to the net, and slides with the point man as they walk the line. The marker sits ' +
+    'nine and a half feet out only because it is wider than a player; take the depth from these ' +
+    'words. The crease is six feet deep and eight wide, so three feet out is inside the paint. A ' +
+    'screen from outside the crease without contact is normally legal under NHL and IIHF rules, ' +
+    'so do it constantly, and ' +
     REFEREE_JUDGEMENT +
-    // ⚠️ THE GLYPH IS DELIBERATE AND IT IS PLACED HERE RATHER THAN EARLIER.
-    // `remark-corpus.mjs` splits a caption at its FIRST ⚠️ and promotes everything after
-    // it into the amber `.warn-inline` run. There is exactly ONE split available, so where
-    // it goes decides what a reader sees escalated — and until now there was no glyph at
-    // all, so a site review measured this caption in the DOM at 2,641 chars as a single
-    // text node, 453 px tall, the only long caption on either host page with no break in
-    // it. "It reads as a wall… the callout looks authored, the caption looks like
-    // something that failed to get formatted."
-    //
-    // ⚠️ THE OBVIOUS-LOOKING SEAM IS THE WRONG ONE, MEASURED. Splitting at "A screen from
-    // outside the crease" puts 1,659 chars and 304 words in amber and OPENS the panel on a
-    // PERMISSION — "normally legal … and you should do it constantly" — followed by a
-    // reference-table citation. That is amber spent on provenance, and at 304 words it is
-    // within reach of the 364-word panel the same review condemned for rendering half a
-    // viewport as one undifferentiated amber rectangle. From HERE the run is 1,074 chars /
-    // 203 words and every sentence in it is the same hazard: the books that are stricter,
-    // what a foot in the paint costs you, the scope of the strictest one, and the
-    // instruction all of it leads to. The grey lead falls 2,641 -> 1,567, which is no
-    // longer the longest on either page. The permissive half and its "appendix table
-    // rather than rule text" disclosure stay together in the grey, where the disclosure
-    // travels with the claim it qualifies.
-    //
-    // ⚠️ AND THIS ADDS A SPOKEN ESCALATION THAT WAS NOT THERE BEFORE — it is not the
-    // cost-free marker MOVE the mechanism is normally used for. The caption carried no
-    // glyph, so `_diagram_caption_is_important` (md_to_speech.py) returned False and a
-    // listener heard the crease law as flat prose. It now prefixes "Important." on both
-    // hosts. Correct here, because the run really is a hazard — but stated, because an
-    // addition and a move are easy to confuse and only one of them is free.
-    // ⚠️ 22 October 2026: THE AMBER RUN NOW OPENS ON THE INSTRUCTION, NOT ON A CITATION. It used
-    // to open "USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter still", with "So keep your
-    // feet out of the blue paint" as the caption's last sentence. Same claims, same order of
-    // hazards; the instruction moved to the front of the run and "stricter still" became a plain
-    // statement of what those two books cost you, since it no longer follows the sentence it
-    // compared against.
+    // ⚠️ THE GLYPH IS DELIBERATE: `remark-corpus.mjs` promotes everything after the first ⚠️
+    // into the amber `.warn-inline` run, and `_diagram_caption_is_important` (md_to_speech.py)
+    // voices "Important." on both hosts. The run opens on the instruction, not a citation.
     ' ⚠️ Keep your feet out of the blue paint, and off ' +
     CREASE_LINE_IS_THE_CREASE +
     '. Under USA Hockey Rule 625(b) and IIHF Rule 69.1 a foot in the paint can cost you the ' +
-    'zone and not just the goal. One rec book is ' +
-    'stricter again: the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from ' +
-    'standing in the goal crease unless the puck is in the goal crease area, disallows the goal if ' +
-    'one does, and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read ' +
-    // ⚠️ FULL STOP, NOT AN EM DASH — a pre-existing negation inversion, found while cutting.
-    // "not as the rec position — CARHA governs CARHA-affiliated leagues only" lets the negation
-    // carry across the dash, and the inverted reading says CARHA does NOT govern only its own
-    // leagues, which is the opposite of the scope the sentence exists to set.
-    'that as one rec book and not as the rec position. CARHA governs CARHA-affiliated leagues ' +
-    'only, ' +
-    'and rec and beer leagues are often said to be stricter still, which is an impression rather ' +
-    "than a count. Read your own league's rule.",
+    'zone as well as the goal. CARHA Rule 66(b) is stricter again: no standing in the crease ' +
+    'unless the puck is in the crease area, no goal if you do, and no incidental-contact ' +
+    'allowance like the NHL and IIHF give. CARHA governs CARHA-affiliated leagues only. Other ' +
+    "rec leagues may be stricter still, so read your own league's rule.",
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +

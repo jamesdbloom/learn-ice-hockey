@@ -381,55 +381,42 @@ const icingTheRaceAndTheDot = {
   half: true,
   width: 900,
 
-  // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. Any note
-  // below was written against the longer text: a clause it names may no longer be in the
-  // caption, and it is kept for its reasoning rather than as a description of the string.
-  // ⚠️ "IN THE SAME WORDS" IS NOT "THE WHOLE RULE", and a round-72 compression cut the
-  // clause that said so. Non-negotiable 4: an honest disclosure is not a length saving.
+  // ⚠️ CAPTION SHORTENED 22 October 2026 (owner: shorter is better), from 2,440 chars.
+  // Hosts: content/foundation/rules_primer.md (§3) and content/positions/goaltender.md (icing).
+  // KEPT, because goaltender.md voices none of them beside the marker: the dot-as-deadline
+  // mechanism (NHL and IIHF 81.1, paraphrased, no longer claimed as "the same words", so the
+  // round-72 "not the whole rule" disclosure has no claim left to qualify), the USA Hockey /
+  // CARHA automatic-icing limb, the boarding limb and the full receiving posture.
+  // KEPT SHORT: the goalie wave-off (both hosts voice it within two chunks) and Hockey Canada's
+  // hybrid scope (both hosts voice it within three chunks).
+  // Re-read this session: NHL 81.1/81.3/41.1 (sources/nhl_rules.txt), IIHF 81.1/81.3/41.1
+  // (iihf_rules_2026-27.txt), PWHL 83.3/41.1, USA Hockey 624 Note and 624(d) and the sled
+  // "Hybrid icing will be used in adult classification games" (usah.txt), Hockey Canada
+  // 6.7(e) and 7.2 (hc.txt), CARHA 65(a) and its Situation ("Referee shall
+  // immediately call") (carha_2026.txt).
+  // ⚠️ POSTURE ORDER IS LOAD-BEARING (49f1dc6): the explanation is its own sentence between
+  // "never duck." and the instruction, and the instruction ends on the shoulder negation.
+  // Not WALL_POSTURE_SHORT: this picture IS two players skating hard at the end boards, so the
+  // owner's 23 September ruling puts the full posture in it. No // line inside the string run.
   caption:
-    'Hybrid icing, and why the end-zone faceoff dot is a deadline rather than a finish line. Both ' +
-    'skaters reach the dot line at the same instant, and the marked box is the near dot — marked as ' +
-    'the cut-off for the decision, not as a place a draw is taken. Under NHL Rule 81.1, and IIHF Rule ' +
-    '81.1 in the same words — though not the whole rule, since the IIHF adds a paragraph for when ' +
-    'there is no race at all — the decision "will be made by no later than the instant the first ' +
-    'player reaches the end zone face-off dots with the player’s skate being the determining factor" ' +
-    '— and then, in the rule’s own clarifying sentence, "the determining factor is which player would ' +
-    'first touch the puck, not which player would first reach the end zone face-off dots." So being ' +
-    'level at the box settles nothing. What settles it is being clearly on course to reach the puck ' +
-    'first, and a race too close to determine by that instant is icing. Your goalie is drawn ' +
-    'staying put on purpose: under those two books (Rule 81.3) and the PWHL’s (Rule 83.3), a goalie ' +
-    'who "feigns playing the puck, attempts to play the puck, or skates in the direction of the puck on ' +
-    'an icing at any time" waves it off. ⚠️ And this is not everybody’s icing. USA Hockey plays ' +
-    'automatic icing outside adult sled hockey, completed "the instant the puck has completely crossed ' +
-    'the goal line" (Rule 624, Note), so there is no race to draw at all, and CARHA’s icing is ' +
-    'automatic too (Rule 65). Hockey Canada runs hybrid only in U18AAA and Junior, and in Senior at ' +
-    'the Member’s option (Rule 6.7(e)). Ask which your league plays. The race is not a licence to hit. ' +
-    'Unnecessary contact with a player playing the puck on an obvious icing play that results in that player ' +
-    'hitting or impacting the boards "is boarding and must be penalized as such" under NHL 41.1, IIHF ' +
-    '41.1 and Hockey Canada 7.2, word for word, and USA Hockey penalises the same contact without ' +
-    'naming boarding, at Rule 624(d). And whoever wins it, how you arrive at the wall is the part ' +
-    // ⚠️ SHOULDER LIMB ADDED 19 September 2026, and the EXPLANATION MOVED TO MAKE ROOM FOR IT
-    // SAFELY. The owner (`content/foundation/rules_primer.md`, Key Takeaways) already carried
-    // "your forearm and hip meeting the wall, never the point of your shoulder, not the whole
-    // shoulder if you can help it"; this caption named the surfaces and stopped, so it was a
-    // propagation lag rather than a new claim.
-    // ⚠️ WHY THE REORDER AND NOT AN APPEND. The limb could not go where the old em-dash tail was:
-    // "not the whole shoulder if you can help it — a turned back makes it a hit from behind" puts
-    // a HEDGE in front of a bare separator, which is the 49f1dc6 shape `check_caption_negations.py`
-    // exists to catch, and the tail's evidence names the BACK and the CHIN, not the shoulder. A
-    // colon after "never duck" was rejected for the same reason in the other direction: the
-    // inverted reading there is "a turned back does NOT make it a hit from behind", which is the
-    // one inversion in this block a listener could act on. So the explanation became its own
-    // sentence — both its subjects are named nouns, so it stands alone voiced — and the posture
-    // instruction now ENDS ON THE NEGATION, hedge after the absolute, beside the named substitute.
-    // ⚠️ The only count word in the safety tail is "neither see nor brace for", a correlative about
-    // seeing and bracing. It is NOT a count of prohibitions, so the added limbs do not strand it.
-    // Contrast `support-a-battle-from-outside`, whose "neither prohibition" WAS a count: when it took
-    // a never-push-from-behind limb (19 Oct 2026) the count became "none of this" in the same edit.
-    'that hurts people, in every league, checking or not. Never turn your back to ' +
-    'anyone coming at you, and never duck. A turned back makes it a hit from behind, which you can neither ' +
-    'see nor brace for, and a tucked chin straightens the cervical spine. Get your skates parallel ' +
-    'to the wall instead, take it on your forearm and hip, head up and chin off your chest' +
+    'Hybrid icing: the end-zone faceoff dot is a deadline, not a finish line. Both skaters reach ' +
+    'the dot line together, and the box marks the near dot as the cut-off for the decision, not a ' +
+    'place a draw is taken. Under NHL and IIHF Rule 81.1 the linesperson decides by the instant the ' +
+    'first skate reaches the dots, and what decides it is who would touch the puck first, not who ' +
+    'reached the dots first. So being level at the box settles nothing: be clearly on course to ' +
+    'reach the puck first, because a race too close to call by then is icing. Your goalie stays put on ' +
+    'purpose: under those books and the PWHL’s (83.3), skating toward the puck waves the icing off. ⚠️ This is not everybody’s icing. USA Hockey ' +
+    '(outside adult sled hockey) and CARHA play automatic icing, so there is no race, and Hockey ' +
+    'Canada runs hybrid only in U18AAA, Junior and, at the Member’s option, Senior. Ask which your ' +
+    'league plays. The race is not a licence to hit: unnecessary contact with a player playing ' +
+    'the puck on an obvious icing is boarding if they hit the boards (NHL, IIHF and PWHL 41.1, ' +
+    'Hockey Canada 7.2), and USA Hockey penalises any unnecessary contact on an obvious icing ' +
+    '(624(d)). And whoever wins it, how you arrive ' +
+    'at the wall is the part that hurts people, in every league, checking or not. Never turn your ' +
+    'back to anyone coming at you, and never duck. A turned back makes it a hit from behind, which ' +
+    'you can neither see nor brace for, and a tucked chin straightens the cervical spine. Get your ' +
+    'skates parallel to the wall instead, take it on your forearm and hip, head up and chin off ' +
+    'your chest' +
     SHOULDER_TAIL,
 
   describe:
@@ -557,27 +544,28 @@ const thePrivilegedArea = {
   half: true,
   width: 900,
 
+  // ⚠️ CAPTION SHORTENED 22 October 2026 (owner: shorter is better), from 1,801 chars. One host,
+  // content/foundation/rules_primer.md §7, whose paragraphs one and two chunks before the marker
+  // voice 614(c) (its puck-position triggers quoted; (c)(2) and (c)(4) are in the caption too), "not the corners", 607(c)'s no-bare-minor ladder,
+  // 607(e)'s match and 607(d)'s "fair game" in full. So the quotations go and the instructions
+  // stay. The trapezoid ⚠️ limb stays whole: no prose can say what the dashed lines on THIS
+  // picture are. "Draw nothing like it": `privileged` scores 0 flattened in every sources/*.txt
+  // but usah.txt and usah_casebook.txt (so: no such AREA; the NHL and IIHF do draw a trapezoid),
+  // and the perpendicular construction is in none of the
+  // NHL, IIHF, PWHL, Hockey Canada or CARHA books (checked 22 October 2026).
   caption:
-    'The goalkeeper’s privileged area, shaded — USA Hockey’s own term and USA Hockey’s own shape. ' +
-    'Neither the words nor the construction that draws them was found anywhere in the NHL, IIHF ' +
-    '2025/26 or 2026/27, Hockey Canada or CARHA books, so this is a region one book draws and the ' +
-    'others do not, rather than a rule the others write differently. Rule 607(d) Note 2 draws it "by ' +
-    'connecting the end zone face-off spots with an imaginary line and imaginary lines from each ' +
-    'face-off spot running perpendicular to the end boards", so it travels with whatever sheet you ' +
-    'are on. It takes in the net front, the goal line and all the ice directly behind the net — but ' +
-    'not the corners. ⚠️ The two red dashed lines behind the net are not part of it. That is the ' +
-    'trapezoid, a different and much smaller shape, which this sheet carries because the rink these ' +
-    'diagrams draw is the NHL-dimensioned one, and which USA Hockey marks nowhere at all. Two rules ' +
-    'turn on it: 614(c) makes it a delay-of-game minor for a goalie to freeze the puck when ' +
-    '"[t]he puck is outside the boundaries of the ‘goalkeeper’s privileged’ area", and 607(c) prices ' +
-    'contact on the goalie inside it. Read the shading as a boundary rather than as a licence, in either ' +
-    'direction. Inside it a goalie still may not freeze the puck where "[t]he puck is behind the ' +
-    'goal line and their body is entirely outside of the goal crease" (614(c)(1)). Outside it they are ' +
-    'still not "fair game" (607(d)). And a goalie anywhere in this shading, behind their own net ' +
-    'included, is not somebody to finish a check on. 607(c) writes no bare minor for body checking or ' +
-    'charging one there. It is "[a] minor plus a misconduct or a major plus a game misconduct ' +
-    'penalty", with 607(e) adding that "[a] match penalty for reckless endangerment may also be ' +
-    'assessed for charging."',
+    'The goalkeeper’s privileged area, shaded: USA Hockey’s term and shape, and the NHL, IIHF, ' +
+    'PWHL, Hockey Canada and CARHA books draw no such area. Rule 607(d) Note 2 builds it from ' +
+    'the end-zone face-off spots, with a line from each spot straight back to the end boards, ' +
+    'so it takes in the net front, the goal line and all the ice directly behind the net, but not ' +
+    'the corners. ⚠️ The two red dashed lines behind the net are not part of it. That is the ' +
+    'trapezoid, a much smaller shape, drawn because these diagrams use the NHL rink, and USA Hockey ' +
+    'marks it nowhere. Read the shading as a boundary, not a licence. When the puck is outside ' +
+    'it, a goalie who freezes it takes a delay-of-game minor (614(c)). Inside it, so does one who ' +
+    'freezes it behind the goal line with their body entirely outside the crease, who had time to ' +
+    'play it with the stick, or who pins it against the frame or boards. Outside it they are still ' +
+    'not fair game (607(d)). And a goalie anywhere in it, behind their own net included, is not ' +
+    'somebody to finish a check on: 607(c) writes no bare minor for it.',
 
   describe:
     'The defending half of the rink, the net at the right, and no play in progress. A large shaded ' +

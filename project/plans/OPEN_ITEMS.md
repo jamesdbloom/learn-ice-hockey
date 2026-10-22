@@ -57,6 +57,7 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 - **faceoffs taker's restraining lines:** render Hockey Canada Figure 7 ("Face-Off Restraining Lines", no text layer) to confirm "face-off restraining lines" in 6.2(a) means the L-lines, which faceoffs :733 assumes (errs safe either way). Optionally name PWHL 78.7(iv) beside the NHL/IIHF permission at :719/:733.
 - **on_ice_communication KT13 and CM** name the NHL and IIHF for the shorthanded icing exemption but not the PWHL (83.6 has it). Omission; low.
+- **breakouts.md Wheel section:** says CARHA's mandatory major on an injuring screen is "a major"; under CARHA 30(a) every major is also a game misconduct (ejection). Check body and facts there, and other pages pricing CARHA 66(e).
 - **Optional citation precision:** breakouts and defensive_zone_coverage cite "Hockey Canada 10.1" where
   10.1(i) is meant.
 
@@ -79,7 +80,7 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 ## Diagrams and site
 
-- **Captions over 800 characters:** about 88 of 204. The four longest forecheck captions were cut in SG27/SG28; run `python3 -c` over site/src/data/diagrams.json for the next longest. Check how 🇬🇧 renders on Windows (often "GB").
+- **Captions over 800 characters:** about 82 of 204 after SG27–SG29 (13 of the longest cut). Next longest are around 1,900: entry-wide, screen-the-goalie-sightline, the-puck-decides-not-you, cross-ice-in-your-own-end, forecheck-2-3-lock. Check how 🇬🇧 renders on Windows (often "GB").
 - **puck-on-the-far-side caption** still describes its own drawing ("a glyph here has no front…").
 - **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
   fix).

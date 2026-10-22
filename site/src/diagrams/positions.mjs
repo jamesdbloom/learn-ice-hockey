@@ -34,14 +34,10 @@
 // in wall_contact_clauses.mjs.
 import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
 
-// A caption clause that appears in more than one diagram is imported, never
-// retyped: a sentence that appears twice is a sentence that can drift once, and
-// this one already had. See rule69_clauses.mjs for why all four still say it.
-import {
-  CREASE_LINE_IS_THE_CREASE,
-  REFEREE_JUDGEMENT,
-  TABLES_ALLOW_OUTSIDE,
-} from './rule69_clauses.mjs';
+// The rule69_clauses.mjs import (CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT,
+// TABLES_ALLOW_OUTSIDE) was removed on 22 October 2026 when winger-offensive-zone-patches,
+// its only user here, was shortened to the instruction alone; see that caption's comment.
+// rule69_clauses.mjs's own header still lists this caption as a user and is not edited here.
 
 // ---------------------------------------------------------------------------
 // Shared anchors. Named once where more than one thing refers to them, so a
@@ -621,12 +617,27 @@ const wingerOffensiveZone = {
   width: 900,
 
   caption:
-    'Where a winger works in the offensive zone, and the one layer that is not theirs. The half-wall ' +
-    '— the boards roughly level with the faceoff dot — is your home base; your own faceoff circle ' +
-    'is where the one-timer off a cross-ice pass arrives; the side of the net is where rebounds ' +
-    'and tip-ins live, so time the drive drawn here — in from your circle or the wall — to arrive ' +
-    'as the shot is taken rather than well before it. The screen is the other job and it runs the other ' +
-    'way: if the net front is your assignment, you are planted there before the release. ' +
+    // SHORTENED 22 October 2026 (owner: shorter is better), 2,555 chars -> under 1,000. The only
+    // host is the owner, content/positions/winger.md (this caption renders as one chunk). KEPT:
+    // the picture; the two-clock timing split (the drawn route is the drive; "well" stays); the
+    // high-slot coaching-choice disclosure; the "shoot first" disclosure, now WITH the tactic it
+    // qualifies (winger.md's half-wall paragraph; it had stood here with no claim to qualify); the screen instruction
+    // (no contact, feet out of the paint AND off the crease line); the ⚠️ post instruction with
+    // its every-league scope. DROPPED, each voiced in the host nearby (rendered chunk distance):
+    //   · the high-slot definition — the paragraph directly above the marker (previous chunk);
+    //   · TABLES_ALLOW_OUTSIDE (Situation 5 E allows a no-contact screen on the line or outside)
+    //     and why the line counts as crease — the first facts line under "Net-front and the
+    //     crease", two chunks on; the IIHF's both-ways answer on the line is in that section's
+    //     "The crease line" bullet. With no claim about Rule 69 left in the caption,
+    //     REFEREE_JUDGEMENT has nothing to qualify, and it travels only with such a claim;
+    //   · the post limb's USA Hockey attribution, cervical-spine and walking-speed wording — the
+    //     body paragraphs right after the marker (next chunk). "anything but your head first"
+    //     stays as the instruction.
+    'Where a winger works in the offensive zone. The half-wall, level with the faceoff dot, is ' +
+    'your home base; your own circle is where a cross-ice one-timer arrives; the side of the net ' +
+    'is for rebounds and tips. Driving in from your circle or the wall, as drawn, arrive ' +
+    'as the shot is taken rather than well before it; if the net front is your assignment, be ' +
+    'planted there before the release. ' +
     // ⚠️ THIS SAID "time the crash to arrive as the shot is taken rather than before it" — one
     // timing instruction for two jobs that need opposite ones, and a caption is SPOKEN INTO its
     // host, so a listener got the repaired body and then this. content/positions/winger.md and
@@ -655,11 +666,10 @@ const wingerOffensiveZone = {
     // trailer (:754) all take it. It also contradicted its own host two lines above the marker:
     // content/positions/winger.md:430 reads "gives that upper layer to no position ... Which of
     // those your team asks for is a coaching choice, so find out." Non-negotiable 7.
-    'Stay out of the high slot, between the dots and the top of the circles, unless your ' +
-    'team’s structure sends you there: no position owns that layer, so find out who ' +
-    'fills it in yours. "Shoot first" is a bias rather than a rule. ' +
-    'At the net front, work just outside the blue paint and keep your body out of ' +
-    'the crease: screening from outside it without contact is legal, ' +
+    'Stay out of the shaded high slot unless your team sends you there; no position owns it, ' +
+    'so find out who fills it. From the wall, lean toward the shot: "shoot first" is a bias, not ' +
+    'a rule. At the net front, screen without contact, feet out of the blue paint and ' +
+    'off the red crease line around it. ' +
     // ⚠️ THIS SAID "every clause of Rule 69 that voids a goal for where you stood names the goal
     // crease, and 69.4, the rule for outside it, reaches contact only", hedged as a reading of
     // the rule's structure. FALSE ABOUT THE TEXT, and the hedge does not rescue an absolute a
@@ -677,10 +687,6 @@ const wingerOffensiveZone = {
     // the host carries it in full anyway. TABLES_ALLOW_OUTSIDE is imported rather than retyped —
     // it carries the IIHF's 2025/26-to-2026/27 table renumbering, which is the most stale-prone
     // string in these four captions and must have exactly one owner.
-    'and both the NHL and the IIHF answer this exact play in their own reference tables, ' +
-    TABLES_ALLOW_OUTSIDE +
-    '. That is an appendix table rather than rule text, and ' + REFEREE_JUDGEMENT +
-    ' So keep your feet out of the paint, and off ' + CREASE_LINE_IS_THE_CREASE + '. ' +
     // SAFETY, ADDED 23 September 2026, and it was absent entirely. This caption sends a
     // winger "to the side of the net ... to arrive as the shot is taken" and the drawn
     // skate route ends at (86, -10) — 7.6 ft from the near post at (89, -3), with its
@@ -709,16 +715,10 @@ const wingerOffensiveZone = {
     //
     // ⚠️ NOT PROMOTED TO A SHARED CONSTANT. wall_contact_clauses.mjs owns the boards
     // posture and is not this round's to edit; this string is local and stays local.
-    '⚠️ Know where the near post is before the shot is taken, rather than finding out ' +
-    'where it is by hitting it, and arrive head up with your chin off your chest: never ' +
-    'meet a goal post head first, and never duck into one. Your eyes are on the puck by ' +
-    'design, so a defender walking you sideways is a body you are feeling rather than ' +
-    'watching, and the path they walk you along has the steel frame at one edge. USA ' +
-    'Hockey names the goal post beside the boards as the same head-down, head-first ' +
-    'cervical spine injury, and says that injury can occur at walking speed — so take ' +
-    'either one with an arm, a leg, anything but your head first. That holds in every ' +
-    'league, checking or not: a box-out, legal or not, walks you along the same path as an ' +
-    'illegal shove.',
+    '⚠️ Know where the near post is before the shot, and arrive head up with your ' +
+    'chin off your chest: never meet a goal post head first, and never duck into one. A ' +
+    'defender can walk you sideways into the frame, so take it with an arm, a leg, ' +
+    'anything but your head first, in every league, checking or not.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, with only the opposition ' +

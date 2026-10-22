@@ -245,42 +245,33 @@ const wheel = {
   //     On injury both escalate MANDATORILY — HC 8.3(b) 2nd para "will be assessed",
   //     CARHA 66(e) "shall be imposed". State the silence; never read a permission out of it.
   // ⚠️ NAME THE BOOKS, NEVER COUNT THEM.
+  // SHORTENED 22 October 2026 (2,670 -> ~990 chars; owner: shorter is better). Only host is
+  // content/systems/breakouts.md (`### Wheel`), and the caption is voiced in chunk 022. DROPPED
+  // because that section voices them within one chunk: USA Hockey 602(a) and NHL 21.1 (facts,
+  // chunk 021), the 625(a.1) wording (facts 020, body 023), and CARHA 66(a) Note 2's reasoning
+  // (the body's "nor under Hockey Canada or CARHA", 023). KEPT: the picture, the tactical read,
+  // the stick/hands instruction, each book's answer in short, the Hockey Canada 8.3(b) / CARHA
+  // 66(e) mandatory major on injury (not voiced anywhere in the Wheel section), and "never slide
+  // across, two minutes is the floor". ⚠️ The IIHF clause CHANGED: it said the IIHF makes the
+  // screen legal with no caveat, while the host's facts line and body both say its 56.2 minor
+  // "shall be assessed" (iihf_rules_2026-27 and v1.1, flattened), so do not count on it. The
+  // caption now says what the host says. Every kept rule re-read in sources/ that day.
+  // "the major" -> "a major and a game misconduct" (rules review, same day): HC 8.3(b) 2nd para
+  // writes both (hc.txt:6844-6846); CARHA 66(e) writes a major, and CARHA 30(a) makes EVERY
+  // major "Major penalty plus Game Misconduct" (only exception: accidental high stick), so
+  // both books eject. Do not scope the game misconduct to Hockey Canada alone.
   caption:
-    'The wheel: the defenceman carries the puck themselves, cutting tight behind their own net and coming ' +
-    'up the far side. Drawn in your own defensive zone at the left of the picture, moving left to ' +
-    'right. It needs two things, speed and space — a step on the first forechecker, and no second ' +
-    'forechecker waiting on the far side — and the second of those is an absence, so it is the empty ' +
-    'far side of this picture rather than anything drawn in it. Cut tight, because the net is your ' +
-    // W33: the tactical close moved up here, ahead of the first ⚠ — `captionNodes` makes the
-    // rest of the caption one amber run, and this sentence (what to look for, what kills it)
-    // was the last clause of a ~2,100-char tariff run. "all of this" → "the wheel": it no
-    // longer follows the tariff it pointed back at.
-    'screen and cutting wide gives the forechecker a straight line to you. The far-side winger and ' +
-    'the centre are the outlets, and a second forechecker holding the far side, which is exactly ' +
-    'what F2 does in a 2-1-2, turns the wheel into a trap. ⚠️ D2 is drawn already ' +
-    'standing at the net front and with no route at all, and whether that is even legal is the first ' +
-    'thing to settle, because the books split on the act itself and not just on the penalty for it. ' +
-    'Under NHL and IIHF Rule 56.1, and PWHL Rule 57.1 in the same words, it is legal — a player is ' +
-    'allowed the ice they are standing on and is not required to move to let an opponent proceed — ' +
-    'so under those three books, stick in tight and vertical, hands to yourself, no bump as they ' +
-    'go past. ⚠️ Under USA Hockey it is a penalty: its ' +
-    '625(a.1) makes providing a protective screen that limits an opponent’s chance to pressure a ' +
-    'teammate in possession a minor, and on a wheel your partner has the puck — so standing still ' +
-    'does not save you, and if you play under that book do not build a breakout around this. And 625 ' +
-    'is not the ceiling: it writes no tier above the minor, but its Rule 602(a) reaches a match ' +
-    'penalty for a player who “recklessly endangers or attempts to injure” an opponent, tied to no ' +
-    'named foul. Hockey ' +
-    'Canada Rule 8.3 and CARHA Rule 66(a) bar the team in possession from running deliberate ' +
-    'interference for the puck carrier, and they write the bar itself flat — impeding an opponent ' +
-    'who is not in possession, with no movement element. ⚠️ Neither writes the standing-ground ' +
-    'entitlement the first three do; CARHA has one, but Rule 66(a) Note 2 addresses it to the ' +
-    'defending players, and on a wheel your team has the puck. Do not assume the stationary screen ' +
-    'is legal there, and if it is called and a forechecker is injured by it, Hockey Canada 8.3(b) ' +
-    'and CARHA 66(e) both make the major mandatory. ' +
-    'Sliding across into the forechecker\'s path is interference wherever you play. ⚠️ And do not read the NHL as the ' +
-    'lenient book: two minutes is only the floor, its Rule 21.1 match penalty needs no injury and no ' +
-    'named foul, and what differs between the books is the bar for a major or an ejection, not ' +
-    'whether one is available at all.',
+    'The wheel: the defenceman carries the puck behind their own net and up the far side, drawn ' +
+    'in your own zone at the left, moving left to right. It needs a step on the first ' +
+    'forechecker and an empty far side. Cut tight: the net is your screen, and cutting wide gives ' +
+    'the forechecker a straight line to you. The far winger and the centre are the outlets; a ' +
+    'second forechecker on the far side, as F2 in a 2-1-2, makes it a trap. ' +
+    '⚠️ D2, standing at the net front, is legal only in some books. The NHL and PWHL allow it: ' +
+    'stick in tight and vertical, hands to yourself, no bump. The IIHF allows it in the same ' +
+    'words, but its impeding minor “shall be assessed”, so do not count on it. ⚠️ Under USA Hockey even a ' +
+    'still screen is a minor when your partner has the puck. ⚠️ Hockey Canada and CARHA give your ' +
+    'side no right to it, and make a major and a game misconduct mandatory if it injures. ⚠️ Never slide across into ' +
+    'the forechecker\'s path: that is interference everywhere, and two minutes is only the floor.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
