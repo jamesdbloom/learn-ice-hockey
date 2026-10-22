@@ -352,7 +352,9 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ### Content — safety layering and readability
 
-- **Board posture ("forearm and hip") keep-or-demote calls** (owner 23 Sep: keep where the page is about the boards): conditioning (incl. KT :685, CM :613), getting_started :492 and CM :659, switching :211/:423/:438, zone_entries (5 sites), defender :144 and CM :907, passing :195/:215. Diagram captions also voice the full posture: forechecking_systems.mjs :918/:1299, wall_contact_clauses.mjs :108 (possibly a shared constant), breakouts.mjs :1157, puck_handling.mjs :278, scanning_and_anticipation.mjs :190.
+- **SG14 DONE (22 Oct)** (record sg14_posture_followups_renderer_2026-10-22.md): board-posture calls for conditioning, getting_started, switching, zone_entries, defender, passing; body_contact late-hit NHL/PWHL + 10.1(i); time_and_space goalie contact; defender :244; 7 renderer fixes. New: renderer speaks sentence-initial rule numbers lowercase; HC 2.2(i) letter-or-numeral unchecked.
+
+- **Board posture:** page calls DONE in SG14. Still open: diagram captions voicing the full posture (forechecking_systems.mjs :918/:1299, wall_contact_clauses.mjs :108 possibly shared, breakouts.mjs :1157, puck_handling.mjs :278, scanning_and_anticipation.mjs :190).
 - **Facing-the-wall fallback** is missing at practice_and_development :360/:382 (PWTP done in SG13). **scanning :380/:390:** "see their numbers, pull up" is still telegraphic.
 - **Amber on a citation:** game_management :946 ("⚠️ **640(g): …"); offensive_zone_play.mjs:675 (caption).
 - **Listener "Important." runs:** rules_primer has a run of 19; body_contact §9 (8), §12 (7), §5 (5).
@@ -370,7 +372,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ### Renderer (md_to_speech) and podcast tooling
 
-- A bare "clause iv" / "clause v" stays as Roman letters; "U10"/"U12" at a sentence start comes out as lower-case "under ten"; "Jr/Sr" becomes "Jr or Sr"; "Fourth, If" (numbered item starting with a capital); "CAN or CSA" has no entry in the standards list; "hockey 101" is read as "one hundred and one"; md_to_speech.py records `"engine": "long-form"` (a Polly setting).
+- Renderer: the 7 items are DONE in SG14. Open: sentence-initial rule numbers spoken lowercase; check HC 2.2(i) letter vs numeral.
 - downloads.astro and the m3u playlists have no Basics format; podcast_queue.py has no `--style basics`; synthesize_style_b has no `--doc-id`.
 
 ### Checkers and sources (scripts/ — change between waves, never during one)

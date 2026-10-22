@@ -352,7 +352,7 @@ Rule: USA Hockey 607(c) is not scoped to the crease — a check or charge on a g
 Rule: Hockey Canada 8.5(b) makes a major plus a game misconduct automatic for any charge on the goalie, reckless or not, wherever they are standing, and for injuring them by interference that would otherwise draw a minor
 Rule: CARHA 52(b) makes a major plus a game misconduct mandatory for charging a goalie in the crease or for any charge that injures, and 54(c) for cross-checking one there; NHL and PWHL 42.5 and the EIHL Casebook's Rule 42 add a mandatory game misconduct to a charging major that injures their face or head
 Rule: NHL and IIHF 69.4 (PWHL 71.4) also reaches the goalie once they have left the crease to play the puck — an attacker whose "deliberate actions" prevent the goalie's return may be penalised for interference; it turns on intent, not contact
-Never: Turn your back to anyone coming at you going down the wall; if you are tight to it and cannot get off it, take it with skates parallel, forearm and hip, head up and chin off your chest
+Never: Turn your back to anyone coming at you going down the wall — if contact is coming, take it on your forearm and hip, never the point of your shoulder, head up and chin off your chest
 Risk: Going wide with nobody behind you is not an attack — it is a slow dump-in with extra steps
 ```
 
@@ -461,8 +461,7 @@ Rule: Head up, and IIHF 48.1 is on your side — of a player skating head up, "w
 Rule: The head-down carve-out is the IIHF's alone — USA Hockey's Casebook answers that crossing the ice at full speed to punish a head-down opponent rather than to play the puck is charging (Rule 607, Situation 2), and Hockey Canada's nearest rule turns on the ducking player rather than the checker
 Never: Delay into the wall — a drive-and-delay is an open-ice turn, and the safety override — never turn your back to anyone coming at you near the wall — outranks the play
 Never: Step into a defender on a crisscross. Skate your own route instead, because deliberately body-blocking a player who does not have the puck is interference
-Technique: If you are already tight to the wall and cannot get off it, take the contact rather than turning away into the boards
-Technique: Skates parallel to the wall, forearm and hip into it — not the point of your shoulder, not the whole shoulder if you can help it. Head up and chin off your chest
+Technique: If you are tight to the wall and cannot get off it, take it on your forearm and hip, never the point of your shoulder, head up and chin off your chest, rather than turning away into the boards
 ```
 
 The patterns above all ask you to arrive fast into a crowded piece of ice. Three things hold whichever one you are running, and none of them is a trade you get to make.
@@ -473,7 +472,7 @@ The patterns above all ask you to arrive fast into a crowded piece of ice. Three
 
 **Do not assume your own book has the same carve-out.** None was found in USA Hockey's *Playing Rules*, and its *Casebook* leans the other way: Rule 607, Situation 2 calls it charging when a player who *"sees an unsuspecting opponent skating up the ice with their head down"* crosses the ice at full speed to hit them, for the purpose of *"punishing a vulnerable or defenseless opponent"*. Hockey Canada's nearest rule is about *ducking to avoid a check*, which can put the **ducking player** in the box — the checker's amnesty is junior and senior only, while Rule 8.7's ban on crouching applies in every division. [Rules Primer](../foundation/rules_primer.md) covers that comparison.
 
-**Delay in open ice, never against the wall.** The drive-and-delay is [§5](#5-the-delay--curl-back)'s turn, deeper and faster, and **§5's safety override applies unchanged**. If you cannot make the turn in open ice, do not make it. If you are already tight to the wall, take the contact rather than turning into the boards: skates parallel, forearm and hip into it, head up and chin off your chest. Turn your back to anyone coming at you at the wall and the contact becomes a hit from behind — and if you turned into it on purpose, the NHL and PWHL give the hitter no penalty at all (43.1), the IIHF waives only the checking-from-behind call (43.1), and Hockey Canada still penalises the hitter.
+**Delay in open ice, never against the wall.** The drive-and-delay is [§5](#5-the-delay--curl-back)'s turn, deeper and faster, and **§5's safety override applies unchanged**. If you cannot make the turn in open ice, do not make it. If you are already tight to the wall, take the contact on your forearm and hip rather than turning into the boards, head up and chin off your chest. Turn your back to anyone coming at you at the wall and the contact becomes a hit from behind — and if you turned into it on purpose, the NHL and PWHL give the hitter no penalty at all (43.1), the IIHF waives only the checking-from-behind call (43.1), and Hockey Canada still penalises the hitter.
 
 **Skate your route; do not set a pick.** The crisscross works because two attackers exchanging lanes force two defenders to decide whether to switch. It stops working, and becomes a penalty, the moment you stop, stand, or step into a defender who does not have the puck — that is interference, and [Using a teammate as a screen](#using-a-teammate-as-a-screen) above covers the distinction.
 
@@ -595,8 +594,7 @@ Read: Numbers now that will be gone in a second — take the odd-man rush instea
 Never: Delay with nobody behind you — a delay only works if support is genuinely coming
 Action: If your line is caught out and the bench is calling, get it in deep and change
 Never: Delay back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze that teammate where they stand
-Never: Curl against the wall. Curl in open ice instead, and if you cannot get off the boards take the contact rather than turning away into them
-Technique: Taking it against the boards, skates parallel to the wall, forearm and hip into it — not the point of your shoulder, not the whole shoulder if you can help it. Head up and chin off your chest
+Never: Curl against the wall — curl in open ice. Caught on the boards: forearm and hip, never the point of your shoulder, head up and chin off your chest, and never turn your back to anyone coming at you
 ```
 
 - When you have numbers now and they will be gone in a second — take the odd-man rush.

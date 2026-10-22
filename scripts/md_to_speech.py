@@ -2,7 +2,7 @@
 """Markdown -> SSML transform for the ice hockey learning corpus.
 
 Turns the markdown documents in ``content/`` into SSML suitable for Amazon
-Polly (en-GB, long-form), chunked to fit Polly's per-request limits, with a
+Polly (en-GB), chunked to fit Polly's per-request limits, with a
 manifest per document so the audio pipeline can synthesise and concatenate.
 
 Design rules (these are requirements, not preferences):
@@ -422,6 +422,9 @@ LEXICON: tuple[tuple[str, str], ...] = (
     # clause. Commas, not brackets: brackets are silent, and the marker has to be
     # audible as an aside or it reads as part of the quotation.
     ("[sic]", ", as printed in the original,"),
+    # Hockey Canada's category shorthand in two facts lines; the general slash
+    # rule voiced it "Jr or Sr", two abbreviations a voice cannot expand.
+    ("Jr/Sr", "Junior or Senior"),
     ("VO₂max", "V O two max"),
     ("VO₂", "V O two"),
     ("R²", "R squared"),
@@ -1624,6 +1627,38 @@ def _age_group_u_last(match: re.Match) -> str:
     return f"{int_to_words(int(match.group(1)))} U"
 
 
+def _age_group_u_sentence_start(match: re.Match) -> list[Token]:
+    """'. U10 is cross-ice' -> '. Under ten is cross-ice'.
+
+    `age-group-u-first` always emits lower-case "under", which is right inside
+    a sentence ("players at U13 and below") and wrong at the start of one: the
+    listener's text read ". under ten is a different format again". Any lead
+    punctuation (a ⚠️ that SYMBOLS has not yet consumed, an opening bracket) is
+    handed back RAW so the later passes still treat it.
+    """
+    out = raw(match.group("lead") or "")
+    out.extend(done(f"Under {int_to_words(int(match.group('n')))}"))
+    return out
+
+
+def _bare_noun_roman(match: re.Match) -> str:
+    """'clause v' -> 'clause five'; 'items i–vi' -> 'items one to six'.
+
+    The corpus refers to Hockey Canada's Interpretation clauses and preamble
+    items in BARE form, with no brackets -- "Interpretation 3 to Rule 10.1(a),
+    clause v" -- so no bracketed-roman rule reached them and the voice read the
+    LETTER: "clause vee", "item eye". Lowercase only, and only after the noun,
+    so the pronoun "I" and ordinary words are never touched.
+    """
+    out = f"{match.group('noun')} {int_to_words(ROMAN_TO_INT[match.group('roman')])}"
+    second = match.group("roman2")
+    if second:
+        sep = match.group("sep").strip()
+        joiner = {",": ", ", "and": " and ", "or": " or "}.get(sep, " to ")
+        out += joiner + int_to_words(ROMAN_TO_INT[second])
+    return out
+
+
 def _forward_label(match: re.Match) -> str:
     """F1 -> 'F one'. Also D1/D2."""
     return f"{match.group(1)} {_ONES[int(match.group(2))]}"
@@ -1732,6 +1767,29 @@ _DIMENSION_OPERAND = (
 
 NOTATION_RULES: tuple[Rule, ...] = (
     Rule(
+        "age-group-u-sentence-start",
+        # ⚠️ FIRST, while a paragraph is still one RAW token: only here does
+        # start-of-string mean start-of-paragraph. Later, an earlier rule may have
+        # frozen the text before it and `^` would match mid-sentence. Fires only
+        # when a lower-case word or bracket follows, so a bare table cell "U16"
+        # (already capitalised elsewhere) is left alone. `§` is excluded from the
+        # lead: "§U12 is a different game" is a section NAME mid-sentence, and
+        # capitalising it voiced "section Under twelve".
+        re.compile(
+            r"(?:^|(?<=[.!?][ ])|(?<=[.!?][\"”’)][ ]))"
+            r"(?P<lead>[^\w\s§]*[ ]?)U(?P<n>\d{1,2})\b(?=[ ]+[a-z(])"
+        ),
+        _age_group_u_sentence_start,
+        "'. U10 is' -> '. Under ten is'; the general rule gave lower-case 'under'",
+    ),
+    Rule(
+        "hockey-101",
+        # "hockey 101" is the course-number idiom, said "one oh one".
+        re.compile(r"\b(?P<w>[Hh]ockey)[ ]101\b"),
+        lambda m: f"{m.group('w')} one oh one",
+        "'Hockey 101' -> 'Hockey one oh one', not 'one hundred and one'",
+    ),
+    Rule(
         "emergency-number",
         re.compile(
             # A dialling context is required on one side or the other. Without it
@@ -1750,6 +1808,16 @@ NOTATION_RULES: tuple[Rule, ...] = (
         _standards_code,
         "CAN/BNQ 9415-370 -> 'C A N slash B N Q nine four one five dash "
         "three seven zero'",
+    ),
+    Rule(
+        "standards-body-can-csa",
+        # `CAN/CSA Z262.2` -- the code starts with a LETTER, so `standards-code`
+        # (body, then digits) cannot claim it, and the general slash read it as
+        # "CAN or CSA". Claim only the body; `alphanumeric-code` reads the Z
+        # number the same way it already reads a bare `CSA Z262.2`.
+        re.compile(r"\bCAN/CSA(?=[ ]?Z\d)"),
+        _standards_code,
+        "CAN/CSA Z262.2 -> 'C A N slash C S A Z two hundred and sixty-two point two'",
     ),
     Rule(
         "plural-rule-number",
@@ -1871,6 +1939,21 @@ NOTATION_RULES: tuple[Rule, ...] = (
         _bare_roman_marker,
         "'preamble item (v)' -> 'preamble item five'; without it a voice read "
         "the marker as the letter, 'eye' and 'eye eye'",
+    ),
+    Rule(
+        "clause-noun-bare-roman",
+        # The UNBRACKETED form, "clause v" / "item i of 10.1" / "items i–vi".
+        # Censused 22 Oct 2026: every bare lowercase roman after these nouns in
+        # `content/` is a clause or item number. `(?![.'’-]\w)` keeps "i.e." and
+        # hyphenated words out; `\b` keeps "item is" out.
+        re.compile(
+            r"\b(?P<noun>[Cc]lauses?|[Ii]tems?|[Ss]ub-clauses?)[ ]"
+            r"(?P<roman>i{1,3}|iv|vi{0,3}|ix|x)\b(?![.'’-]\w)"
+            r"(?:(?P<sep>,[ ]|[ ]and[ ]|[ ]or[ ]|[ ]to[ ]|[–-])"
+            r"(?P<roman2>i{1,3}|iv|vi{0,3}|ix|x)\b(?![.'’-]\w))?"
+        ),
+        _bare_noun_roman,
+        "'clause v' -> 'clause five'; the voice read the bare roman as the letter",
     ),
     # ⚠️ ORDER IS LOad-BEARING between these two. `enumerated-roman` is the
     # NARROWER rule -- it requires a new sentence to follow -- and it must claim
@@ -2837,6 +2920,38 @@ def _retokenise_trimmed(tokens: list[Token]) -> list[Token]:
     return [t for t in out if t.text]
 
 
+#: Words that lose their capital after a spoken ordinal: "Fourth, if you..."
+#: rather than "Fourth, If you...". CLOSED-CLASS ONLY -- articles, pronouns,
+#: determiners, prepositions, conjunctions, wh-words, auxiliaries -- so a
+#: label ("Skates", "Rules"), a name or an acronym keeps its capital.
+_LOWER_AFTER_ORDINAL = frozenset("""
+    a an the you your yours it its they their them this that these those there
+    someone somebody everyone everything nobody nothing none anything no every
+    each both all any some most many
+    if when whenever where which what whatever whose who why how while once
+    before after during under on in at to for from with without against behind
+    below through off as than then
+    is are was were am be do does did can should would could will have has had
+    never not just too less almost roughly
+""".split())
+
+
+def _lower_after_ordinal(tokens: list[Token]) -> list[Token]:
+    """Lower-case the first word of an ordered-list item when it is closed-class."""
+    for index, token in enumerate(tokens):
+        if token.kind == SSML:
+            if token.text:
+                return tokens
+            continue
+        match = re.match(r"([A-Z][a-z]*)(?=[ ,])", token.text)
+        if match and match.group(1).lower() in _LOWER_AFTER_ORDINAL:
+            out = list(tokens)
+            out[index] = Token(token.kind, match.group(1).lower() + token.text[match.end():])
+            return out
+        return tokens
+    return tokens
+
+
 def render_list(block: Block, report: DocReport) -> list[Token]:
     items = _list_items(block.lines)
     if not items:
@@ -2857,9 +2972,11 @@ def render_list(block: Block, report: DocReport) -> list[Token]:
         if important:
             report.converted["callout.important"] += 1
             out.extend(done("Important. "))
+        body = _retokenise_trimmed(tokens)
         if block.ordered:
             out.extend(done(ordinal_to_words(position).capitalize() + ", "))
-        out.extend(_retokenise_trimmed(tokens))
+            body = _lower_after_ordinal(body)
+        out.extend(body)
         out.append(Token(SSML, "</p>"))
     if out:
         report.converted["list"] += 1
@@ -3860,7 +3977,10 @@ def write_document(out_root: Path, doc_id: str, chunks: Sequence[Chunk],
             "ssml_characters": ssml_total,
         },
         "version": VERSION,
-        "voice": {"engine": "long-form", "language": "en-GB"},
+        # No "engine": this SSML is not tied to one. The field said
+        # "long-form", a Polly engine that does not exist in this stack's region
+        # (see print_report) and that no consumer read.
+        "voice": {"language": "en-GB"},
     }
     (directory / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
@@ -4293,6 +4413,21 @@ def self_test() -> int:
         # The word-boundary guard: this used to voice as "forwarD to Defence".
         ("a forward-to-defence pass", "a forward-to-defence pass"),
         ("U13", "under thirteen"),
+        # 22 Oct 2026 re-triage: sentence-initial age group, bare clause romans,
+        # Jr/Sr, CAN/CSA and the course-number idiom.
+        ("Fine. U10 is cross-ice", "Fine. Under ten is cross-ice"),
+        ("Then say. (§U12 is a different game)",
+         "Then say. (section under twelve is a different game)"),
+        ("CAN/CSA Z262.2", "CAN slash CSA Z two hundred and sixty-two point two"),
+        ("players at U13 and below", "players at under thirteen and below"),
+        ("Rule 10.1(a), clause v, is blunter",
+         "Rule ten point one, clause a, clause five, is blunter"),
+        ("Hockey Canada's item i of 10.1", "Hockey Canada's item one of ten point one"),
+        ("whose items i–vi treat", "whose items one to six treat"),
+        ("clauses iii and v", "clauses three and five"),
+        ("the item is", "the item is"),
+        ("7.7 Jr/Sr", "seven point seven Junior or Senior"),
+        ("ASHL Hockey 101 listings", "ASHL Hockey one oh one listings"),
         ("16U", "sixteen U"),
         ("85 ft", "eighty-five feet"),
         ("a 60° angle", "a sixty degrees angle"),

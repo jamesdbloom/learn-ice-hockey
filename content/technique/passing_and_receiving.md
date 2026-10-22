@@ -192,7 +192,7 @@ Technique: Reverse short and firm, usually on the backhand, into the space behin
 Read: Choose by the checker's momentum, not their position. Rim if they still have you pinned, reverse if they have skated past you
 Action: Call your intention on the rim; one a teammate is not expecting is a turnover to their opposite number
 Never: Reverse on hope — it is a support-dependent play, and a reverse into nobody is a turnover you cannot chase, usually deep in your own end
-Never: Square up to the wall, head down to watch the puck. Rim with skates parallel to the wall, forearm and hip to it, never the point of your shoulder; head up and chin off your chest, even going slowly
+Never: Rim square to the wall with your head down watching the puck. Take the wall on your forearm and hip, never the point of your shoulder; head up and chin off your chest, even going slowly
 ```
 
 These two are constantly conflated. They go in **opposite directions** and they beat **different kinds of pressure**.
