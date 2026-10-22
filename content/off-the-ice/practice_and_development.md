@@ -359,7 +359,7 @@ So the claim that small-area games build decision-making is **highly plausible, 
 - **Keep the numbers low.** 2-on-2 and 3-on-3 give far more touches than 4-on-4.
 - **Compete for the puck, not the player.** Whether you may hit at all is your league's call — and in practice, your coach's; until you know, don't hit anyone. Never hit a player who can't see you coming, never from behind, and if you can see their numbers, don't hit them — pull up and play the puck. **On the wall:** skates parallel to the boards, forearm and hip to them, head up, chin off your chest — never turn your back to anyone coming at you and never duck, even at slow speed. If you are already facing the wall with no time to turn, get your stick and gloves up and spread on the glass, head off it.
 - **Keep the shifts short** (30–45 seconds), whether you play them at the end as competition or in the middle as teaching, or the quality collapses.
-- **No team practice?** Most rec teams get one ice slot and no practice. Ask whether your rink runs stick-and-puck or drop-in small-area sessions — usually the cheapest, highest-value ice you can buy. [Getting Started](../getting-started/getting_started.md) explains what each session type means and what gear it needs.
+- **No team practice?** Most rec teams get one ice slot and no practice. Ask whether your rink runs stick-and-puck or drop-in small-area sessions — usually the cheapest, highest-value ice you can buy. [Getting Started](../getting-started/getting_started.md) explains what each session type means and what gear it needs. [Finding More Ice](finding_more_ice.md) covers how to find one.
 
 ---
 

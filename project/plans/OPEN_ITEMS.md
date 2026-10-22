@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-(none)
+- **SG32 (22 Oct):** Finding More Ice ships, the feed is frozen for 40 docs, plus the CARHA scope and goalie-contact facts. All reviews done; committing.
 
 ## New page: Getting Better on Your Own
 
@@ -60,14 +60,9 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **"Every CARHA major ejects" wording on other pages (harsher direction, minor):**
-  - Found at zone_entries.md:379, goaltender.md:1265, defending_the_rush.md:462 and :894, and rules_primer.md:392.
-  - 30(a) exempts an accidental high-stick major, so scope each to the foul it discusses, as breakouts now does.
+- **More unscoped "CARHA major" candidates (rules-verifier, 22 Oct):** defender.md:356 and body_contact_and_battles.md:1699 (and others the grep returns). Check each against 30(a)'s accidental-high-stick exception and scope it to its foul.
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
-- **zone_entries.md "contact … voids the goal, incidental or not" (harsher direction, minor):**
-  - Facts :349 and :393 cite NHL and IIHF 69.3 with no 69.7 rebound scope; chunks 030 and 032 state it with no book.
-  - It is exact for Hockey Canada and too strict for the NHL, IIHF and PWHL.
-  - Consider a book-scoped tweak rather than adding 69.7 at every site. The entry-wide caption now carries the scope.
+- **zone_entries facts citation consistency (minor):** :434's goal clause has no cite (298/300), and PWHL 71.3 is uncited on :349 and :393. Optional: add "and bans you a game or more (32(d))" to the 66(b) major at :376.
 - **Echoes found by the SG30 site review (wording):**
   - The risk_management cross-ice caption repeats the "Coaching convention…" paragraph straight after it (check_caption_echo).
   - getting_started §3: "A child who starts later can train with a club team without playing matches" paraphrases EIH's Train-Only option, which the source does not tie to starting later (commit-gate minor).
@@ -103,6 +98,9 @@ can ship once it has been reviewed.
 - **Site look owed:** the 🇬🇧 mid-paragraph in conditioning's Key focus; the special_teams bold run.
 
 ## Podcasts
+
+- **Owner sign-off before Finding More Ice gets episodes:** the feed is numbered in site order, so publishing its episodes renumbers 6 live titles ("Off the Ice N ·" for mental_game, team_play_and_culture and how_to_watch_hockey, in both formats). It also shifts the itunes:episode and itunes:order of every later item, including the 13 Basics episodes. pubDates and guids stay frozen (podcast-feed.ts DATED_DOC_IDS). Ask the owner before publishing those episodes.
+- **Feed guard gap:** adding a new structure.json *section* would renumber the Basics season (BASICS_SEASON = layers.length + 1) with no guard.
 
 - **NotebookLM remakes (owner, 22 Oct: remake all seven; owner 22 Oct: do them as a BATCH 6 folder, `.podcast_queue/notebooklm/remake_2026-10-20/batch6/`, AFTER the final content edits to those pages land):** Defenceman, Goalie, Faceoffs, Rules Primer, UK Rules, Game Management, Zone Entries. Generate from the current pages (notebooklm-episode skill / owner), then process and publish as before (build_podcast_audio, upload, podcast.json).
 

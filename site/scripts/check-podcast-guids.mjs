@@ -17,9 +17,11 @@
  * ⚠️ That logic is RE-STATED HERE ON PURPOSE, not imported from src/data/podcast.ts.
  * A check that imports the code it checks agrees with it by construction.
  *
- * Playing principles: the feed must carry NONE of them until every document has one
- * (owner's decision, same date); after that it must carry exactly their explicit
- * guids. The count rule is restated here for the same reason.
+ * Playing principles: the feed carried NONE of them until every document had one
+ * (owner's decision, same date); the gate opened that day. Since 22 October 2026 it is
+ * STICKY, like the Basics': the 39 are LIVE and frozen below (LIVE_PRINCIPLES_GUIDS), so
+ * a document added to the site later, with no episode yet, does not close it again. The
+ * feed must carry exactly the explicit guids of every Playing principles episode.
  *
  * The Basics (owner, 20 October 2026): a TOPIC collection, `podcast-basics.json`, keyed by
  * slug, as ONE extra season after every structure.json section, in planned order. The
@@ -30,13 +32,15 @@
  * published. That rule is restated here too, not imported.
  *
  * Across ALL THREE collections, and whatever the feed carries: every guid and every audio
- * path is unique, and the 39 Playing principles guids frozen below are still in
+ * path is unique, and every Playing principles guid frozen below is still in
  * podcast-principles.json (a Detailed remake replaces an episode IN PLACE and keeps it).
  *
  * Also checked, because they are what the renumbering changed: orders 1..N in
  * sequence, episode numbers sequential within each season, seasons non-decreasing,
- * pubDates strictly increasing, fixed, and before 8 September 2026 (the single date
- * every episode carried before), and the pinned rink_map guid present.
+ * pubDates strictly increasing and before 8 September 2026 (the single date every
+ * episode carried before), the pinned rink_map guid present, and — since 22 October
+ * 2026 — every LIVE episode's pubDate equal to the date it was published with
+ * (FROZEN DATES below), so adding a document to the site cannot re-date one.
  *
  * Usage: node scripts/check-podcast-guids.mjs [distDir]
  *   distDir is resolved against the current directory; with no argument it is site/dist.
@@ -130,7 +134,10 @@ const LIVE_CONVERSATION_GUIDS = [
 // ⚠️ THE PLAYING PRINCIPLES GUIDS LIVE SUBSCRIBERS HOLD, FROZEN HERE (20 October 2026),
 // for the same reason as the list above. All 39 have been in the feed since the 16 Oct
 // gate opened. A Detailed remake replaces an episode IN PLACE (owner, 20 Oct 2026): new
-// bytes, new hashed audio path, SAME guid. Never remove one.
+// bytes, new hashed audio path, SAME guid. Never remove or reorder one.
+// ⚠️ THE ORDER IS LOAD-BEARING: it is the site order of the 39 documents the live show
+// was dated from (structure.json as of 22 October 2026), and FROZEN DATES below derives
+// each live per-document episode's pubDate from a document's position in this list.
 const LIVE_PRINCIPLES_GUIDS = [
   'learn-ice-hockey:principles:getting-started/getting_started',
   'learn-ice-hockey:principles:foundation/core_principles',
@@ -201,7 +208,10 @@ const expected = new Map(); // guid -> enclosure url
 for (const ep of conversation) {
   expected.set(ep.guid ?? `learn-ice-hockey:${ep.doc_id}`, `${origin}${ep.audio}`);
 }
-const principlesExpectedInFeed = principles.length >= docCount;
+// Sticky since 22 October 2026 (restated, not imported): live because the frozen list is
+// non-empty, so a 40th document with no episode yet cannot pull the 39. Before that, the
+// rule was the count — every document had to have an episode.
+const principlesExpectedInFeed = LIVE_PRINCIPLES_GUIDS.length > 0 || principles.length >= docCount;
 if (principlesExpectedInFeed) {
   for (const ep of principles) {
     if (!ep.guid) fail(`principles episode ${ep.doc_id} has no explicit guid`);
@@ -333,7 +343,7 @@ for (const guid of LIVE_CONVERSATION_GUIDS) {
   if (!actual.has(guid)) fail(`LIVE guid ${guid} is not in the feed (frozen list; a guid may never change)`);
 }
 // Unconditional: all 39 have been live since the 16 Oct gate opened, so a missing one is
-// a dropped live episode whatever the count rule above now says.
+// a dropped live episode whatever the gate rule above says.
 for (const guid of LIVE_PRINCIPLES_GUIDS) {
   if (!actual.has(guid)) fail(`LIVE principles guid ${guid} is not in the feed (frozen list; a guid may never change)`);
 }
@@ -395,6 +405,43 @@ items.forEach((it, i) => {
     lastDate = t;
   }
 });
+
+// ---- FROZEN DATES (22 October 2026) -----------------------------------------
+// ⚠️ Restated, not imported. Every LIVE item's pubDate must be exactly the date it was
+// published with. Until 22 October 2026 a per-document date came from the document's
+// running index in structure.json, so inserting a document mid-site re-dated every live
+// episode after it; nothing here caught that, because the dates still rose with order.
+//   per-document: 1 Jun 2026 12:00 UTC + (i × 2 + f) days, i = the document's index in
+//                 LIVE_PRINCIPLES_GUIDS (the frozen site order), f = 0 Conversation,
+//                 1 Playing principles
+//   Basics:       18 Aug 2026 12:00 UTC + j × 12 hours, j = index in LIVE_BASICS_GUIDS
+// A document or topic added later is not frozen here; it is held only to the ordering
+// and ceiling checks above.
+{
+  const DAY = 86_400_000;
+  const BASE = Date.UTC(2026, 5, 1, 12, 0, 0);
+  const BASICS_BASE = Date.UTC(2026, 7, 18, 12, 0, 0);
+  const frozenDate = new Map();
+  const convGuid = new Map(conversation.map((ep) => [ep.doc_id, ep.guid ?? `learn-ice-hockey:${ep.doc_id}`]));
+  LIVE_PRINCIPLES_GUIDS.forEach((g, i) => {
+    const docId = g.slice('learn-ice-hockey:principles:'.length);
+    frozenDate.set(g, BASE + (i * 2 + 1) * DAY);
+    const cg = convGuid.get(docId);
+    if (!cg) fail(`no Conversation episode in podcast.json for frozen document ${docId}`);
+    else frozenDate.set(cg, BASE + i * 2 * DAY);
+  });
+  LIVE_BASICS_GUIDS.forEach((g, j) => frozenDate.set(g, BASICS_BASE + j * (DAY / 2)));
+  for (const g of LIVE_CONVERSATION_GUIDS) {
+    if (!frozenDate.has(g)) fail(`LIVE guid ${g} has no frozen date (its document is not in LIVE_PRINCIPLES_GUIDS order)`);
+  }
+  for (const it of items) {
+    const want = frozenDate.get(it.guid);
+    if (want === undefined) continue;
+    if (Date.parse(it.pubDate ?? '') !== want) {
+      fail(`pubDate MOVED for live ${it.guid}: feed has ${it.pubDate}, frozen ${new Date(want).toUTCString()}`);
+    }
+  }
+}
 
 const seasons = new Set(items.map((i) => i.season));
 const summary =

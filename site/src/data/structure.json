@@ -91,11 +91,12 @@
       "id": "off-the-ice",
       "title": "Off the Ice",
       "tagline": "Underneath all five layers",
-      "blurb": "Not a layer of play, but every layer above depends on it: kit, conditioning, practice, the mental side, culture, and how to watch.",
+      "blurb": "Not a layer of play, but every layer above depends on it: kit, conditioning, practice and finding more ice, the mental side, culture, and how to watch.",
       "docs": [
         "off-the-ice/equipment",
         "off-the-ice/conditioning_and_recovery",
         "off-the-ice/practice_and_development",
+        "off-the-ice/finding_more_ice",
         "off-the-ice/mental_game",
         "off-the-ice/team_play_and_culture",
         "off-the-ice/how_to_watch_hockey"

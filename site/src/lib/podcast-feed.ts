@@ -10,8 +10,8 @@
  *      Conversation comes first and then Playing principles.
  *   3. THE LIVE SHOW IS RENUMBERED NOW, AND THAT INCLUDES THE DATES. Every guid stays the
  *      same — `site/scripts/check-podcast-guids.mjs` fails the build otherwise.
- *   4. PLAYING PRINCIPLES GOES INTO THE FEED ONLY WHEN ALL OF THEM EXIST. See
- *      `principlesInFeed()` below.
+ *   4. PLAYING PRINCIPLES GOES INTO THE FEED ONLY WHEN ALL OF THEM EXIST. It did, on
+ *      16 October; since 22 October the gate is sticky — see `principlesInFeed()`.
  *
  * AND, 20 October 2026 (project/podcast_principles_series_plan.md):
  *   5. THE BASICS IS ITS OWN SEASON, APPENDED after every per-document season. No live
@@ -25,7 +25,6 @@
 
 import {
   FORMATS,
-  DOCUMENT_COUNT,
   BASICS_PLANNED,
   BASICS_EPISODES,
   BASICS_LABEL,
@@ -68,16 +67,93 @@ export interface FeedItem {
 }
 
 /**
- * ⚠️ THE PLAYING PRINCIPLES GATE. Owner, 16 October 2026: Playing principles episodes
- * "go into the feed only when all 39 exist. Until then, each one can play on its own
- * document page as soon as it is made, but the feed carries Conversation episodes
- * only." Gated on a COUNT, not a flag, so nobody has to remember to flip it — and so a
- * partial set can never leak into subscribers' apps with back-dated pubDates that make
- * the gap look permanent. `DOCUMENT_COUNT` comes from structure.json, so a 40th
- * document closes the gate again until it too has an episode.
+ * ⚠️ THE 39 DOCUMENTS THE LIVE SHOW WAS DATED FROM, FROZEN IN THEIR SITE ORDER AS OF
+ * 22 October 2026 (structure.json at that date). Two things hang off this list:
+ *
+ *   - THE DATES. A per-document episode's pubDate comes from its document's position IN
+ *     THIS LIST, never from the live structure.json. Before this list existed the date
+ *     came from structure.json's running index, so inserting a 40th document mid-site
+ *     (`off-the-ice/finding_more_ice`, after practice_and_development) would have moved
+ *     every later live episode's pubDate a day later and pushed the last per-document
+ *     date into the Basics' first date. See `pubDateFor()`.
+ *   - THE PLAYING PRINCIPLES GATE. See `principlesInFeed()`.
+ *
+ * Never reorder, remove or append to this list. A document added to the site later is
+ * NOT added here: it gets an interleaved date slot (see `pubDateFor()`). The same 39 are
+ * frozen as Playing principles guids, in this order, in site/scripts/check-podcast-guids.mjs.
+ */
+export const DATED_DOC_IDS: readonly string[] = [
+  'getting-started/getting_started',
+  'foundation/core_principles',
+  'reading-diagrams/reading_ice_hockey_diagrams',
+  'foundation/rink_map',
+  'foundation/language_and_glossary',
+  'foundation/rules_primer',
+  'foundation/uk_rules',
+  'foundation/on_ice_communication',
+  'positions/center',
+  'positions/winger',
+  'positions/defender',
+  'positions/goaltender',
+  'positions/switching_positions',
+  'systems/breakouts',
+  'systems/zone_entries',
+  'systems/offensive_zone_play',
+  'systems/forechecking_systems',
+  'systems/neutral_zone_systems',
+  'systems/defensive_zone_coverage',
+  'systems/defending_the_rush',
+  'systems/special_teams',
+  'systems/faceoffs',
+  'systems/game_management',
+  'technique/skating',
+  'technique/puck_handling',
+  'technique/passing_and_receiving',
+  'technique/shooting',
+  'technique/body_contact_and_battles',
+  'hockey-iq/puck_support_and_spacing',
+  'hockey-iq/time_and_space',
+  'hockey-iq/scanning_and_anticipation',
+  'hockey-iq/risk_management',
+  'hockey-iq/playing_without_the_puck',
+  'off-the-ice/equipment',
+  'off-the-ice/conditioning_and_recovery',
+  'off-the-ice/practice_and_development',
+  'off-the-ice/mental_game',
+  'off-the-ice/team_play_and_culture',
+  'off-the-ice/how_to_watch_hockey',
+];
+
+/**
+ * ⚠️ THE PLAYING PRINCIPLES GATE — LIVE, AND STICKY SINCE 22 October 2026.
+ *
+ * Owner, 16 October 2026: Playing principles episodes "go into the feed only when all 39
+ * exist." The gate was a COUNT against structure.json's document total, and it opened on
+ * 16 October. Left as a count it was REVERSIBLE: a 40th document with no episode yet
+ * would have closed it again and pulled 39 episodes subscribers already hold.
+ *
+ * So, like the Basics (LIVE_BASICS_SLUGS), the season is in the feed because the frozen
+ * set DATED_DOC_IDS is non-empty, not because of a count:
+ *   - every one of those 39 documents must still have its Playing principles episode;
+ *     `assertPrinciplesFrozen()` fails the build otherwise (a Detailed remake replaces an
+ *     episode in place and keeps its guid, so this never trips on a remake);
+ *   - a document added later joins the feed in Playing principles AS SOON AS its episode
+ *     is published. Its date slot is fixed by its position (see `pubDateFor()`), so that
+ *     publish re-dates nothing already in the feed.
  */
 export function principlesInFeed(): boolean {
-  return getFormat('principles').episodes.length >= DOCUMENT_COUNT;
+  return DATED_DOC_IDS.length > 0;
+}
+
+function assertPrinciplesFrozen(): void {
+  const have = new Set(getFormat('principles').episodes.map((e) => e.doc_id));
+  const missing = DATED_DOC_IDS.filter((d) => !have.has(d));
+  if (missing.length) {
+    throw new Error(
+      `podcast-feed: live Playing principles documents have no episode in podcast-principles.json: ${missing.join(', ')}. ` +
+        `They have been in the feed since 16 Oct 2026; a remake replaces an episode in place.`,
+    );
+  }
 }
 
 /**
@@ -162,25 +238,49 @@ export const BASICS_SEASON = structure.layers.length + 1;
  * sort by it. The owner chose to re-date the live show at once (16 October 2026), so the
  * dates now carry the site order rather than one shared constant.
  *
- * The date is a function of the DOCUMENT'S site position and the FORMAT only — not of
- * how many items happen to be in the feed — so when Playing principles joins, no
- * Conversation episode is re-dated a second time:
+ * The date is a function of the DOCUMENT'S FROZEN position (DATED_DOC_IDS) and the FORMAT
+ * only — not of how many items are in the feed, and not of where structure.json now
+ * puts the document — so neither a new format joining nor a new document being added
+ * re-dates a live episode:
  *
- *     BASE + (globalIndex × 2 + formatIndex) days, at 12:00 UTC
+ *     BASE + (frozenIndex × 2 + formatIndex) days, at 12:00 UTC
  *
  * Noon UTC keeps the calendar date the same for a listener anywhere from UTC−11 to
- * UTC+11. BASE is chosen so that the LATEST possible date (39 documents × 2 formats)
- * still falls BEFORE 8 September 2026, the single date every episode carried before
- * this change: no live episode moves later than a date a client has already seen, so
- * re-dating should not present an old episode as new. `assertDates()` enforces it.
+ * UTC+11. BASE is chosen so that the latest of these (39 documents × 2 formats, 17 Aug)
+ * falls BEFORE 8 September 2026, the single date every episode carried before the
+ * renumbering, and before the Basics' first date (18 Aug).
  *
- * Consequence the owner accepted: Playing principles episodes, added later, carry
- * back-dated pubDates and some apps will not flag them as new.
+ * A DOCUMENT ADDED AFTER 22 October 2026 (not in DATED_DOC_IDS) is INTERLEAVED, not
+ * appended. Rule: let P be the nearest document BEFORE it in structure.json order that IS
+ * in DATED_DOC_IDS (frozen index p; p = −1 if there is none). The documents between P
+ * and the next frozen document are numbered k = 0, 1, … in structure.json order, and
+ * each takes two consecutive 20-minute slots after P's last date:
+ *
+ *     BASE + (p × 2 + 1) days + ((k × 2 + formatIndex) + 1) × 20 minutes
+ *
+ * So `off-the-ice/finding_more_ice` (after practice_and_development, p = 35) dates
+ * 11 Aug 2026 12:20 UTC (Conversation) and 12:40 UTC (Playing principles), between
+ * practice_and_development's Playing principles (11 Aug, 12:00) and mental_game's
+ * Conversation (12 Aug, 12:00). Interleaving, not "after the last item",
+ * because the dates must rise with itunes:order (date-sorting apps would otherwise list
+ * a new document after the Basics, out of site order) and stay before 8 Sep.
+ * Consequence: like Playing principles before it, a newly added document's episode is
+ * back-dated and some apps will not flag it as new. Up to 35 added documents fit
+ * between two frozen ones; `assertDates()` fails the build past that.
+ *
+ * ⚠️ This only fixes DATES. A new document's episode still renumbers the later items
+ * of its own season (itunes:episode and the "<Section> n ·" title prefix) and shifts
+ * itunes:order for every later item, because numbering follows the site — the owner's
+ * decision (2) above. That happens when the episode is PUBLISHED, not when the page is
+ * added, and it needs the owner's sign-off then.
  */
 const BASE_UTC_MS = Date.UTC(2026, 5, 1, 12, 0, 0); // Mon 1 June 2026, 12:00 UTC
 const DAY_MS = 86_400_000;
 /** The constant every episode carried before the renumbering. Upper bound, exclusive. */
 const PREVIOUS_SHARED_DATE_MS = Date.UTC(2026, 8, 8, 0, 0, 0);
+/** Spacing of an added document's interleaved slots (see above). */
+const ADDED_STEP_MS = 20 * 60_000;
+const ADDED_MAX_SLOTS = DAY_MS / ADDED_STEP_MS - 1; // 71 slots strictly inside the day
 
 /**
  * ⚠️ FIXED AT 2, AND IT MUST NEVER BECOME `FORMATS.length` AGAIN. Until 20 October 2026
@@ -191,8 +291,40 @@ const PREVIOUS_SHARED_DATE_MS = Date.UTC(2026, 8, 8, 0, 0, 0);
  */
 const PER_DOC_SLOTS = 2;
 
-function pubDateFor(globalIndex: number, formatIndex: number): Date {
-  return new Date(BASE_UTC_MS + (globalIndex * PER_DOC_SLOTS + formatIndex) * DAY_MS);
+const FROZEN_INDEX = new Map(DATED_DOC_IDS.map((d, i) => [d, i]));
+
+/** Every structure.json document's date anchor: frozen index p and, for an added
+ *  document, its rank k among the added documents that follow the same frozen one. */
+const DATE_ANCHOR = new Map<string, { p: number; k: number | null }>();
+{
+  let p = -1;
+  let k = 0;
+  for (const layer of structure.layers) {
+    for (const docId of layer.docs) {
+      const fi = FROZEN_INDEX.get(docId);
+      if (fi !== undefined) {
+        p = fi;
+        k = 0;
+        DATE_ANCHOR.set(docId, { p: fi, k: null });
+      } else {
+        DATE_ANCHOR.set(docId, { p, k: k++ });
+      }
+    }
+  }
+}
+
+function pubDateFor(docId: string, formatIndex: number): Date {
+  const a = DATE_ANCHOR.get(docId);
+  if (!a) throw new Error(`podcast-feed: "${docId}" is not in structure.json`);
+  if (a.k === null) return new Date(BASE_UTC_MS + (a.p * PER_DOC_SLOTS + formatIndex) * DAY_MS);
+  const slot = a.k * PER_DOC_SLOTS + formatIndex + 1;
+  if (slot > ADDED_MAX_SLOTS) {
+    throw new Error(
+      `podcast-feed: too many documents added after ${DATED_DOC_IDS[a.p] ?? 'the start'} to fit between two ` +
+        `frozen date slots (${docId}). Decide their dates explicitly.`,
+    );
+  }
+  return new Date(BASE_UTC_MS + (a.p * PER_DOC_SLOTS + PER_DOC_SLOTS - 1) * DAY_MS + slot * ADDED_STEP_MS);
 }
 
 /**
@@ -222,17 +354,13 @@ function assertDates(): void {
         `Decide the new format's dates explicitly; raising PER_DOC_SLOTS re-dates every live episode.`,
     );
   }
-  const latest = pubDateFor(DOCUMENT_COUNT - 1, PER_DOC_SLOTS - 1).getTime();
-  if (latest >= PREVIOUS_SHARED_DATE_MS) {
+  // The frozen documents must still be in structure.json, in their frozen relative order,
+  // or their fixed dates would no longer rise with the site order.
+  const live = structure.layers.flatMap((l) => l.docs).filter((d) => FROZEN_INDEX.has(d));
+  if (live.join('\n') !== DATED_DOC_IDS.join('\n')) {
     throw new Error(
-      `podcast-feed: the latest synthetic pubDate (${new Date(latest).toISOString()}) is not before ` +
-        `8 Sep 2026. Move BASE_UTC_MS earlier — do NOT derive it from the build time.`,
-    );
-  }
-  if (latest >= BASICS_BASE_UTC_MS) {
-    throw new Error(
-      `podcast-feed: the latest per-document pubDate (${new Date(latest).toISOString()}) is not before ` +
-        `the first Basics date; the Basics season must date after every per-document episode.`,
+      `podcast-feed: structure.json no longer lists the ${DATED_DOC_IDS.length} dated documents (DATED_DOC_IDS) ` +
+        `in their frozen order. Removing or reordering one re-dates or drops live episodes; decide that explicitly.`,
     );
   }
   const basicsLatest = basicsPubDateFor(Math.max(0, BASICS_PLANNED.length - 1)).getTime();
@@ -244,8 +372,24 @@ function assertDates(): void {
   }
 }
 
+/** Checked on what is ACTUALLY in the feed: dates strictly rise with itunes:order, every
+ *  per-document date precedes the first Basics date, and every date precedes 8 Sep 2026. */
+function assertFeedDates(items: FeedItem[], perDocCount: number): void {
+  let last = -Infinity;
+  items.forEach((it, i) => {
+    const t = Date.parse(it.pubDate);
+    if (!(t > last)) throw new Error(`podcast-feed: pubDate of item ${i + 1} (${it.guid}) does not rise with order`);
+    if (t >= PREVIOUS_SHARED_DATE_MS) throw new Error(`podcast-feed: pubDate of ${it.guid} is not before 8 Sep 2026`);
+    if (i < perDocCount && t >= BASICS_BASE_UTC_MS) {
+      throw new Error(`podcast-feed: per-document pubDate of ${it.guid} is not before the first Basics date`);
+    }
+    last = t;
+  });
+}
+
 export function feedItems(): FeedItem[] {
   assertDates();
+  if (principlesInFeed()) assertPrinciplesFrozen();
   const formats = FORMATS.filter((f) => f.id === 'conversation' || principlesInFeed());
 
   const rows = formats.flatMap((format) =>
@@ -276,11 +420,14 @@ export function feedItems(): FeedItem[] {
       season: r.pos.season,
       episodeNumber: n,
       order: i + 1,
-      pubDate: rfc822(pubDateFor(r.pos.globalIndex, r.formatIndex)),
+      pubDate: rfc822(pubDateFor(r.episode.doc_id, r.formatIndex)),
     };
   });
 
-  if (!basicsInFeed()) return docItems;
+  if (!basicsInFeed()) {
+    assertFeedDates(docItems, docItems.length);
+    return docItems;
+  }
   assertBasicsFrozen();
 
   // THE BASICS: one season after every per-document season, in planned order, numbered
@@ -299,5 +446,7 @@ export function feedItems(): FeedItem[] {
     order: docItems.length + i + 1,
     pubDate: rfc822(basicsPubDateFor(i)),
   }));
-  return [...docItems, ...basicsItems];
+  const all = [...docItems, ...basicsItems];
+  assertFeedDates(all, docItems.length);
+  return all;
 }

@@ -5,7 +5,7 @@
 > IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Core Principles](../foundation/core_principles.md) · [UK and England Rules](../foundation/uk_rules.md) · [Rink Map](../foundation/rink_map.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Rules Primer](../foundation/rules_primer.md) · [Equipment](../off-the-ice/equipment.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
+> **Related:** [Core Principles](../foundation/core_principles.md) · [UK and England Rules](../foundation/uk_rules.md) · [Rink Map](../foundation/rink_map.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Rules Primer](../foundation/rules_primer.md) · [Equipment](../off-the-ice/equipment.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Finding More Ice](../off-the-ice/finding_more_ice.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
 ## Hockey is administered locally, but it sits on a national floor
 
@@ -318,7 +318,7 @@ These three words are **conventions, not defined categories**, and rinks use the
 2. **What is the standard?** Rinks often run separate beginner, intermediate and advanced drop-ins. Turning up to the wrong one is the most common beginner mistake and the most easily avoided.
 3. **Is there contact, and is lifting the puck allowed?** Both vary, and both are house rules rather than rulebook rules.
 
-Drop-in and stick-and-puck ice is also, as [Practice and Development](../off-the-ice/practice_and_development.md) puts it, *"usually the cheapest, highest-value ice you can buy"* — especially for a rec player whose team gets one slot a week.
+Drop-in and stick-and-puck ice is also, as [Practice and Development](../off-the-ice/practice_and_development.md) puts it, *"usually the cheapest, highest-value ice you can buy"* — especially for a rec player whose team gets one slot a week. [Finding More Ice](../off-the-ice/finding_more_ice.md#3-stick-and-puck-and-drop-in) covers how to find it.
 
 ---
 
@@ -596,18 +596,16 @@ Registration, tier names, fees, session rules and age classes vary by associatio
 
 | If you are in… | Start here |
 |---|---|
-| **United States — finding a programme** | `findhockey.usahockey.com` (postcode search for your local association), and USA Hockey's Come Play Youth Hockey page |
-| **United States — one-off taster** | `tryhockeyforfree.com` — event map, national dates, loaner-gear information |
-| **United States — learn-to-play** | `learntoplay.nhl.com` (locations listed on each NHL club's page) and `learntoskateusa.com` |
 | **United States — registering** | `membership.usahockey.com` |
 | **Canada — finding your association and registering** | `register.hockeycanada.ca/register` — Hockey Canada's own association finder |
 | **Canada — the questions parents ask** | Hockey Canada's parent FAQ, which is the source for most of section 6 above |
-| **Canada — adult** | Hockey Canada's Adult Recreational Hockey page and the ASHL |
 | **England, Scotland, Wales, Northern Ireland — who to register with** | **Ice Hockey UK**, the single governing body for all four home nations since 30 June 2026 |
 | **England and Wales — the governance document** | **England Ice Hockey** (`englandicehockey.com`), whose *Rules & Regulations* is the source for section 6's English material |
 | **The Home Countries and university hockey — the playing rules** | The **IIHF Official Rule Book**, plus the **In-House Rules** adopted by IHUK and the BUIHA |
 | **England — finding a session at all** | **Your local rink first, your club second** |
 | **Anywhere else** | The IIHF's Member National Associations directory — 84 associations, each linked to its own national body |
+
+**Looking for a programme, a taster or a team to join?** The finders — USA Hockey's programme search and taster events, learn-to-play and learn-to-skate, and adult hockey in Canada and Britain — are listed by country in [Finding More Ice → Where to look, by place](../off-the-ice/finding_more_ice.md#7-where-to-look-by-place).
 
 **Confirm eligibility with the association, not a search result.** Hockey Canada says its association finder *"is intended to provide a starting point… and is not necessarily conclusive of where a player is eligible to play"*.
 
@@ -723,7 +721,7 @@ And one more: **"I'm completely new — who should I talk to?"** Amateur hockey 
 
 *Sources — retrieved 27 July 2026:*
 
-*USA Hockey (primary): [USA Hockey Parent Handbook 2025-26 (PDF)](https://cdn4.sportngin.com/attachments/document/3b59-3498251/USAH_AmericanHockeyHandbook_2025-26.pdf) — youth/girls age classifications, 12 districts and 34 affiliates, ADM ice-session recommendations by age, budget guidance, SafeSport training and background-check requirements · [Information for New Hockey Parents](https://www.usahockey.com/newparents) · [Come Play Youth Hockey](https://www.usahockey.com/page/show/3409669-come-play-youth-hockey) — the *"more than 800 rinks nationwide"* figure for Try Hockey For Free (this page redirects to `usahockey.com/comeplayyouthhockey`) · [Find Hockey Near You](https://www.usahockey.com/findhockey) and [findhockey.usahockey.com](https://findhockey.usahockey.com/) · [Member Registration](https://membership.usahockey.com/) — membership benefits, adult First Goal equipment programme, adult skills clinics · [Adult Hockey](https://www.usahockey.com/adulthockey) · [Adult Nationals](https://www.usahockey.com/adultnationals) — 2026 men's and women's division and tier structure, non-check and membership prerequisite · [Try Hockey For Free](https://tryhockeyforfree.com/) — 2026-27 national dates, 4–9 age range, loaner equipment, waiver cover. **This page does not carry the 800-rink figure**; that is on the Come Play Youth Hockey page above*
+*USA Hockey (primary): [USA Hockey Parent Handbook 2025-26 (PDF)](https://cdn4.sportngin.com/attachments/document/3b59-3498251/USAH_AmericanHockeyHandbook_2025-26.pdf) — youth/girls age classifications, 12 districts and 34 affiliates, ADM ice-session recommendations by age, budget guidance, SafeSport training and background-check requirements · [Information for New Hockey Parents](https://www.usahockey.com/newparents) · [Come Play Youth Hockey](https://www.usahockey.com/page/show/3409669-come-play-youth-hockey) — the *"more than 800 rinks nationwide"* figure for Try Hockey For Free (this page redirects to `usahockey.com/comeplayyouthhockey`) · [Member Registration](https://membership.usahockey.com/) — membership benefits, adult First Goal equipment programme, adult skills clinics · [Adult Hockey](https://www.usahockey.com/adulthockey) · [Adult Nationals](https://www.usahockey.com/adultnationals) — 2026 men's and women's division and tier structure, non-check and membership prerequisite · [Try Hockey For Free](https://tryhockeyforfree.com/) — 2026-27 national dates, 4–9 age range, loaner equipment, waiver cover. **This page does not carry the 800-rink figure**; that is on the Come Play Youth Hockey page above*
 
 *Hockey Canada (primary): [Frequently Asked Questions by Hockey Parents](https://www.hockeycanada.ca/en-ca/hockey-programs/parents/faq) — costs and insurance, registration process and documents, registration timing, the **age-category determination sentence quoted in section 5**, the **Esso Fun Days description quoted in section 3**, House/AE/Rep definitions and time commitments, the cross-ice U7 / half-ice U9 mandate, unsanctioned leagues, Respect in Sport, financial assistance programmes, required equipment list · [Pathway to Minor Hockey](https://www.hockeycanada.ca/en-ca/hockey-programs/parents/pathway) — sanctioned vs non-sanctioned comparison, the First Shift description, Skate Canada / CanSkate route. *Note: this page names Esso Fun Days but does not carry the fuller description quoted above; that is on the FAQ* · [Age Divisions](https://www.hockeycanada.ca/en-ca/hockey-programs/players/essentials/age-divisions) — 2025-26 U7–U21 chart, the *"Age on Dec. 31"* basis and the four-year-old Timbits footnote · [Adult Recreational Hockey](https://www.hockeycanada.ca/en-ca/hockey-programs/adult-rec) — ASHL scale and adult insurance cover · [Hockey Canada Registration](https://register.hockeycanada.ca/register)*
 
