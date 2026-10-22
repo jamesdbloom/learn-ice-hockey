@@ -221,30 +221,6 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ### P1 readability and the layers
 
-- **SG10 DONE (22 Oct):** eight agents re-tested nine accuracy rows. SEVEN were already fixed by earlier commits or refuted (goaltender CARHA 53(b) c35d177; switching :229 and ask-your-league — In-House Rules DO reach the WNIHL per ihuk_wnihl_roc.txt:24-29; risk 36(a) b12a829 and :717 amber b44e9d8; breakouts trapezoid e16a586; DZC 620→621 9490fbe; USAH 640 Note 2 b12a829). Real fixes committed (record sg10_small_accuracy_rows_2026-10-22.md). ⚠️ This section of the plan is STALE — test a row against HEAD before dispatching it.
-
-- [W31 amber on citations] three W31 amber runs land on a rule number, leaving the instruction after them unhighlighted: risk_management :717 ("But CARHA's 86(b) is the clause, not the rule:"), game_management :179 ("640(g) and 640(h) reach only…"), body_contact :1124 ("…its 63(a)"; also "And the NHL, IIHF, PWHL and Hockey Canada write a permission…") — move the bold onto the instruction (P2)
-- [W31 nits] game_management/rink_map/others: long spoken chunks >2,500 chars on many W31 units; shooting facts :308/:516 IIHF ceiling unstated; glossary :377 "reckless or deliberate" vs 602(a)'s "attempts to injure", 609(c) contrast clause omitted; DZC "one of the six" before PWHL/CARHA named and stale "four-book comparison" pointer; bc :1912 trailer "immediately after 603(a)"; forechecking :1002 trailer garbled; center :474 "appears nowhere in any edition on disk" narrates the corpus (readability)
-- [USAH 608(c) layer test] corpus — every site quoting USAH Casebook 608 Situation 1's "major plus a game misconduct, or a match penalty" must carry, in the same voiced unit, that 608(c) makes the match MANDATORY for a reckless check from behind "with excessive force while the opponent is in a vulnerable or defenseless position" (usah.txt:3728-3731; usah_casebook.txt:11777-11780). W31 fixed zone_entries, risk_management, defensive_zone_coverage. Carriers of Sit. 1 still to layer-test per unit (most cite 608(c) somewhere, not necessarily beside each Sit. 1 quote): glossary, rules_primer, pwp, center, defender, winger, goaltender, switching_positions, defending_the_rush, offensive_zone_play, forechecking_systems, body_contact, passing_and_receiving, special_teams (direction: permissive)
-- [DZC long CM / glossary summary match] DZC CM :751 now ~3,450 chars; glossary Key focus :27 and KT :469 say a deliberate hit "can reach a match penalty" where HC/CARHA/USAH make it mandatory (readability; possibly permissive-soft)
-- [USAH 602(a) reading — dissent] RESOLVED BY OWNER 1 Oct 2026: "plan on the match" (see [USAH 602(a) pre-existing reckless sites]); kept for the record. W31 ruled (rules-verifier) that a reckless act a specific USAH rule covers is that rule's major+GM OR its match (Casebook 621 Sit. 3, 634 Sit. 3, 607 Sit. 4; Appendix I "Match Penalty Option"; Discipline Policy levels), with 602(a) mandatory for attempts to injure and uncovered reckless acts. A safety-reviewer (rF) dissented: Casebook 602 Sit. 1 says "the match penalty must be assessed" for reckless action, 602(a) says "shall", and no precedence clause exists, so "the book does not settle" was the conservative wording. Both readings eject; suspension ranges differ (602(a) 6–10 games vs 3–5/4–8). Owner may want to rule; if the dissent is adopted, the W31 sites need "plan on the match" wording (direction: possibly permissive)
-- [USAH 602(a) pre-existing reckless sites] corpus — OWNER RULING 1 Oct 2026 (supersedes the W31 rules-verifier reading below): for a reckless act a specific USAH rule covers, say "a mandatory major plus a game misconduct, and plan on a match penalty — 602(a) says one 'shall be assessed' for anyone who 'recklessly endangers or attempts to injure', though the rule's (c) says 'may also'"; never "instead"/"optional"/"allows"/"reaches" framing for the USAH reckless match. Pre-W31 sites to bring into line include body_contact :551 (628(c)), :609 (620(c) "reaches"), :631 facts (603(c) "allows a match penalty above it"), :1557 facts (621(c)), :1592 (639(c)), risk_management :642/:659 (639(c) "reaches"), and every corpus "may also be assessed" USAH match stated without 602(a). Earlier reading, kept for the record: apply scratchpad-recorded W31 ruling (review record round_2026-10-01_wave31): 602(a) is mandatory for an ATTEMPT to injure and for reckless acts NO specific rule prices (Casebook 602 Sits. 2–4); a reckless act a specific rule covers is that rule's major+GM OR its (c)/(e)/(h) match instead (Appendix I "Match Penalty Option"; Casebook 607 Sit. 4, 621 Sit. 3, 634 Sit. 3). HEAD sites to judge: body_contact :581/:584/:1503/:1523/:1534/:1779/:1912 ("tied to no named foul", late hit in adult men, interference outside 625); pwp :469/:481/:654/:898 and time_and_space :268/:282/:576 (reckless pick: "640(g)'s major plus GM … and 602(a)'s match" may read as stacking); game_management :171/:179/:833/:864; on_ice_communication :281; offensive_zone_play :867/:989/:1140 (late hit "reaches adult men" via 602(a) — likely CORRECT under ruling (iv) where 640 does not reach adult men; do not cut the reckless half there) and :1238 trailer; also 608(c) mandatory match for a reckless excessive-force check from behind on a defenceless opponent — check every USAH checking-from-behind price carries it (direction: mixed; 608(c) permissive)
-- [NHL/PWHL 43.5 late hit] corpus — wherever the NHL/PWHL late-hit or interference ejection is said to "need an injury" (56.5), a late hit on a turned player is a check from behind: 43.3 major on an opponent "unable to protect or defend himself" + 43.5 mandatory game misconduct, injury or not (nhl_rules.txt:5475-5482; pwhl 43.3/43.5); W31 fixed game_management; candidates: the 56.5-citing docs in [NHL 21.1 / CARHA 48(a) general match] (direction: permissive)
-- [freeze-for-whistle excused while checked] rules_primer, puck_handling, breakouts, faceoffs cite HC 10.1(i)/CARHA 74(b)'s "being checked" exception for pinning the puck but not HC 6.12(b) (deliberately making the puck unplayable to gain a stoppage → Rule 10.1) or CARHA 55(a) Note 2 (bench minor, "freezing the puck"); W31 fixed on_ice_communication — apply its ruling once read (direction: permissive)
-- [NHL 21.1 / CARHA 48(a) general match] corpus — sites pricing the NHL/PWHL late hit or interference as "game misconduct needs an injury" (56.5) miss 21.1's mandatory match for a deliberate attempt to injure (nhl_rules.txt:2635-2637; pwhl 21.1); candidates citing 56.5 without 21.1: uk_rules, rink_map, on_ice_communication, scanning_and_anticipation, time_and_space, offensive_zone_play, defensive_zone_coverage, playing_without_the_puck; and CARHA ceilings given as 49(a)/52/53 alone miss 48(a) (carha.txt:2390-2392) (direction: permissive)
-- [uk_rules IIHF tables] uk_rules :369 cites "Table 7" for the discretionary major-plus-GM list — in the 2026/27 IIHF book those entries are Table 5's "MAJOR + GMP" column (Table 7 is misconducts); :371 "the IIHF book has no match-penalty tier at all" untested against 2026/27 (accuracy)
-- [bc :661 CARHA intentionally] body_contact facts :661 "No CARHA rung leaves you on the ice" — CARHA 53(a) reaches only an intentional hit from behind; accidental falls to 49 (49(c) no penalty) — overstates in the stricter direction (accuracy)
-- [general deliberate-injury routes] sweep whether Hockey Canada and CARHA (48(h)) have general deliberate-injury match routes not voiced where the corpus names only rule-specific ones; check shooting's high-stick "full ladder" carries USAH 602(a) (direction: permissive-if-found) — W31 1 Oct: SUPERSEDED for USA Hockey by rows [USAH 602(a) pre-existing reckless sites] and [USAH 602(a) reading — dissent] (plan lines 218-219), which carry the binding W31 ruling (scratchpad w31_602a_ruling.md); general deliberate-injury routes added in W31 files: CARHA 48(a) in center :474/:684/:693/:725 (lane F), risk_management facts :788/KT :897 and zone_entries CM :1071 (lane G), game_management CARHA body paragraph (lane H); NHL/PWHL 21.1 (mandatory match for attempt/deliberate injury, nhl_rules.txt:2635-2637, pwhl_rules.txt:2383-2384) added to game_management facts :170/:829, CM :179, body :860, KT16 (lane H); body_contact :357 already cites CARHA 48(h) (lane A); shooting high-stick facts :172 now carries 602(a) for an attempt to injure (lane F); Hockey Canada: lane A reads 7.1(c) as residual ('in any manner not otherwise covered', hc.txt:5918-5921); lane G cited HC Appendix D Note 1 (hc.txt:9102-9103) then removed it on coordinator instruction; IIHF books carry no match penalty (lane H); remaining: HC 7.1(c) vs Appendix D Note 1 scope needs a rules-verifier; NHL 21.1 census (uk_rules, rink_map, on_ice_communication, scanning_and_anticipation, time_and_space, offensive_zone_play, defensive_zone_coverage cite NHL 56.5 but never 21.1 — lane H); CARHA 48(a) census outside W31 files; USA Hockey half → the two newer 602(a) rows.
-- [rules_primer amber placement] rules_primer :441 and :1001 new amber runs land on penalty statements ("USA Hockey gives you no bare-minor floor…", "Nor is it two minutes under USA Hockey…") rather than an instruction (direction: readability, P2)
-- [USAH 602(a) deliberate-injury match] corpus — sentences naming USAH 621(c)/609(c)-style "may also be assessed" match as USA Hockey's answer to a DELIBERATE injury or attempt miss 602(a)'s mandatory "shall" match (usah.txt:3496-3500); check shooting's high-stick ladder and siblings; also HC's and CARHA 48's general deliberate-injury routes (direction: permissive) — W31 1 Oct: SUPERSEDED by rows [USAH 602(a) pre-existing reckless sites] and [USAH 602(a) reading — dissent] (plan lines 218-219). W31 applied the binding ruling (w31_602a_ruling.md: (i) attempt to injure = mandatory 602(a) match; (ii) covered reckless act = that rule's major+GM OR its (c)/(e)/(h) match instead, never stacked; (iii) 608(c) mandatory) in every W31 file that carried a site: body_contact :357/:640/:642 (A), pwp :641/:890 restored to HEAD and time_and_space :288/:482/:577 now '…or the referee may make it a match penalty instead (607(e))' (B), ozp facts :603 / body :624/:655/:887 / CM :1135/:1142 and saa :370/:372 (C), forechecking facts :762, CM :933, KT8 :994, body :600, trailer :1002 (D), DZC :519/:618 and glossary :363/:441 attempt-only, glossary :363 'shorthand' line → 'at least the major plus a game misconduct… The referee may make it a match penalty instead' (E), shooting :538/:308/:516/slap-shot blockquote and center :462/:474/:666/:693/facts :680 (F), zone_entries :741 (G), game_management facts :171/:833, CM :179/:1115, body :864 (H), OIC :267/:281 and DTR :319/:644/:657/:922 (I), rink_map :210/:424/:590/:657 (J; no 602(a) left in rink_map); 608(c) mandatory match added at DZC :177/:476/:751/new facts :464 (E) and zone_entries :219/:229/:775/:1071, risk_management :793 (G); remaining: see the two newer rows — body_contact :581/:584/:1503/:1523/:1534/:1779/:1912, pwp/time_and_space reckless-pick stacking candidates, ozp :867/:989/:1140 late hit, the dissent, and 608(c) in documents outside W31 (rules_primer, body_contact, defending_the_rush likely carry Casebook 608 'or a match' — lane G).
-- [switching KT :563 length] switching_positions KT :563 ~3,110 spoken chars (readability, P1)
-- [ozp CARHA 62(c)] offensive_zone_play facts :503, body :527, CM :1133 price CARHA 62(b) (major, GM per Note) but not 62(c) match for deliberate or attempted injury (carha.txt:2994-2996); facts :503 at 299/300 (direction: permissive-low) — W30 1 Oct: done in offensive_zone_play (lane E) — facts :503 split, new Rule line :504 gives CARHA 62(b) major/GM and 62(c) match (carha.txt 62(c) "A Match penalty shall be assessed to any player who deliberately attempts to injure or deliberately injures an opponent with a high stick"); body :528 now "Injure an opponent deliberately with a high stick, or try to, and in a CARHA-affiliated adult league it is a match penalty under 62(c) — as it is under NHL 60.4, PWHL 61.4 and USA Hockey 602(a), and under Hockey Canada through its Head Contact rule, 7.6(c) or 7.7(c)" (re-repaired twice after safety reads; IIHF correctly unnamed — 60.4 tops at major+automatic GM); CM tipping bullet :1138 adds the 62(c) match; remaining: CM :1138 still attaches the match penalty to CARHA alone after "None of those is capped at a minor" for NHL/USAH/HC — possible contrast for those readers; author offered the body's tail ("as it is under NHL 60.4, PWHL 61.4 and USA Hockey 602(a)…"), coordinator call.
-- [winger CM :689 length] winger Common Mistakes cross-checking bullet (:689) is several thousand characters spoken — needs a per-limb layer test to slim it (direction: readability, P1)
-- [uk_rules :601 EIHL instigator] uk_rules :601 "every other Rule 46 fighting offence — instigating… — still carries the IIHF's automatic ejection" follows the Elite League clause; under the EIHL Casebook an early instigator takes 2+5+10, no ejection (direction: harsher, accuracy)
-- [defender :468 amber] defender :468 amber run opens on the citation "⚠️ Hockey Canada 7.4(b)" (wrapper formed; tariff after it black) — reword so the run opens on the hazard (direction: readability, P2; W27 site review)
-- [glossary length] language_and_glossary Screen/Traffic/CM "Answering 'Screen!'" units are 1,800–2,700 spoken chars each after W27; further compression needs a decision on which quotations move to the trailer (direction: readability, P1)
-- [risk_management] summary layers never checked in the HARSHER direction (overstated tariffs); negatives were lexical, so a takeaway describing the act without naming it was not found (direction: harsher) — (plan 2427–2434; added by verifier)
-
 - **The P1 doctrine:** re-order before stripping; queue by rules-bearing WORDS via `check_tactics_ratio --by-layer` (never quote a figure); middle band first; a percentage is weaker evidence than an absence; the back two layers are dispatched on layer ratio; name the UNIT in re-aiming briefs. The ratio is not a gate condition (C1–C11). (archive: snapshot lines 6781–6834, 10441–10488, 10856–10861, 11002–11058, 27106–27114)
 - **Metrics are worklists, never targets.** `check_instruction_first` measures position, not craft, and has false negatives and false positives. `check_tactics_ratio` counts form and can move the wrong way on a correct repair. A 0.0% `check_layer_echo` score is not evidence: truncating a safety list LOWERS it, a LOW score on a safety list is suspicious, and its ≤4-character filter is load-bearing. Read `check_caption_echo` and `check_layer_echo` together. Do not dispatch splitting or amber-stripping waves off a metric. (archive: snapshot lines 281, 2436–2478, 3865–3902, 4369–4407, 9628–9684, 14351–14368, 17778–17795, 17831–17859, 18617–18631, 21572–21582)
 - **The next P1 brief pattern:** "find the section with no kernel and the bullet with no instruction". Every P1 edit needs a reader. (archive: snapshot lines 745–747, 863–871)
@@ -348,279 +324,67 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 - Refuse to sweep a look-alike: "their" can correctly mean the opponent's. (archive: snapshot lines 27988–27991)
 - Line numbers in this file go stale. Name the identifier or the string. (archive: snapshot lines 11951–11959, 22337–22351)
 
-
 ## Open rows
 
-**Re-triaged 19 Oct 2026.** The previous 670-entry section and its per-row triage are archived in [project/reviews/plan_open_rows_archive_2026-10-19.md](../reviews/plan_open_rows_archive_2026-10-19.md). Of those entries, 339 were already done. **The 53 UNCLEAR rows were resolved on 19 Oct: 31 done, 16 removed, and 6 open (below). The archive records each verdict.** Line numbers below are from the triage and will drift, so brief each item as a CLAIM to find in every layer, never as a line.
+**Re-triaged 22 October 2026 at HEAD a672681.** Four agents tested every row of the previous section against the files. About 280 verdicts: roughly 115 FIXED, 50 DONE-RECORD, 4 WRONG, about 80 still OPEN. The old section and every verdict table (with evidence and current locations) are in [plan_open_rows_archive_2026-10-22.md](../reviews/plan_open_rows_archive_2026-10-22.md); read the verdict row there before dispatching. **Line numbers below are as found on 22 Oct and will drift; name the string.** Test each row against HEAD before acting on it.
 
-**Recent rounds, all committed and pushed:** T1 277ece1, S5 30209b4, T2 6641032, site 9–11 a91aeef, IS 722e036, W 4435b6e, kk 92ca6e6, gg 65b14f5. Records are in project/reviews/.
+### Owner decisions needed
 
-### Owner decisions — ANSWERED 19 Oct 2026 (memory: project_owner_rulings_oct15)
-- **Analytics:** keep GA; fix the infra/cloudfront.tf:120-121 comment (comment-only infra edit approved).
-- **Layout:** keep both In-short and facts. "What it costs" stays label-only. KT count kept as is (no cap). Keep `## Check yourself`.
-- **PWHL** is a standing sixth book wherever books are compared.
-- **Head-reaching hit from behind (IIHF, NHL, PWHL):** state the HARSHER of Rule 43 and Rule 48. This supersedes the 15 Oct "keep Rule 43" IIHF ruling. → content wave.
-- **CARHA 32(d):** "at least a one-game suspension" wherever a CARHA major, match or game misconduct is priced. → content wave.
-- **EIH R&R reach to Scotland and Northern Ireland:** say it is unsettled; play as if it applies. → content wave.
-- **USAH 602(a):** add the likely multi-game suspension where "plan on a match" is stated. → content wave.
-- **HC head-first Q1–Q5:** treated as answered by the 18 Oct "harsher of 7.5 and 7.6" ruling and the goal-frame ruling.
-- **HC goalie hit from behind:** harsher of 7.5 and 8.5. **HC slide:** note 8.6's exception but plan on 8.7 clipping. Both → content wave. **Podcast ear test:** DONE (owner, all fine).
-- **Minor items the coordinator decides, no owner needed:** tactics-ratio target (none; worklist only); PNIHL/NIHL trailer; the five D-zone families; centre low-zone-collapse exception; panels per page; "(2) minor" shorthand; `*.local.md` stays gitignored.
+- **Getting Better page:** plan decisions D1–D6 (project/getting_better_plan.md).
+- **Optional NotebookLM remakes:** Defenceman, Goalie, Faceoffs, Rules Primer, UK Rules, Game Management, Zone Entries.
+- **"Contents" below 480 px:** keep ☰, or use a text label?
+- **USAH 615(f):** does the three-game suspension stack with 404(b)'s next game? The book is silent. Keep "a three-game suspension" as worded unless the owner rules.
+- **USAH 608(c) in Casebook 608 Sit. 1 units:** about 21 units quote "major plus GM, or a match" and say "plan on a match (602(a))" without naming 608(c). Is 602(a) enough, or must 608(c) be named in each unit? (sites listed in archive r1)
+- **Wave 34 leftovers never answered:** USA Hockey Level 1 wording, caption trim policy, the centre-fly label. Also: delete the dead `creaseThePuckDecides` spec at center.mjs:777?
+- **Research scope:** does the UK concussion guidance reach Scotland and Northern Ireland? Does IIHF 202.3 reach British U19 play? What is the British U10/U12 tariff for a hit in non-checking play?
 
-### Re-triaged dispatch list (19 Oct 2026)
+### Content — rules accuracy (each needs a rules-verifier; the direction is noted)
 
-**LO wave committed 20 Oct** (record lo_leftover_rows_2026-10-20.md). Most rows below are now verified STALE or FIXED; still open: "10.1(i)" citation consistency; rules_primer marker runs of 7–11 (readability); TTS items. Originally: **LO wave dispatched 20 Oct ~21:50** (brief: scratchpad lo_brief.md). Five agents work through the per-page and cross-file rows below: lo-a rules_primer/uk_rules; lo-b body_contact/GM/goaltender; lo-c positions/passing/risk; lo-d eight systems pages; lo-e puck_handling, shooting, glossary, rink_map, on_ice, equipment, conditioning, PWTP, time_and_space. TTS and renderer rows stay with the coordinator.
+- **NHL/PWHL late hit:** forechecking :626, rules_primer :492 and body_contact :1671 price it via 56.4/56.5 "on injury" with no 43.3/43.5 for a turned player. Read each. (permissive?)
+- **NHL 21.1 / CARHA 48(a) general match:** on_ice_communication :307 and time_and_space :273/:295 (interference via 56.x, no 21.1). CARHA 48(a) is never cited in passing, puck_support, goaltender, switching, breakouts or faceoffs. (permissive)
+- **CARHA 62(b)** is absent from faceoffs, special_teams and neutral_zone_systems. **CARHA 32(d)** is absent from some backswing sites (winger :102/:112, defender, zone_entries, faceoffs, NZ). Facts lines at cap (center :485, PWTP :708) are an accepted limitation.
+- **DZC :722 (facts) and :740:** HC 10.2(a)(v) also covers an infraction "inside the offending team's goal crease" (hc.txt:7642). Omission, permissive.
+- **DZC :577:** omits IIHF 101.1's opening "bodychecking is allowed when there is a clear intention of playing the puck". Stricter.
+- **puck_handling :340:** "penalty shot in all six books". USAH 614(b) is penalty shot or optional minor, at the other team's choice.
+- **passing:** CM and KTs lack the HC test for a puck covered while lying in the crease.
+- **on_ice_communication:** :279 "illegal check in non-checking play" lacks "anywhere"; :307 "56.5 a game misconduct above it" errs strict; :309 640(d) is stated without its stick-above-the-knees condition.
+- **zone_entries :235:** "only once made" errs safe. **game_management :244:** the full-ice press "with both defencemen pinching" has no condition (tactic hedge).
+- **goaltender:** :643 double negative; :388 soft-stick "cover it" with no crease condition; :673 still "10.1(i)" where siblings say "10.1".
+- **special_teams :776:** "The 63.2(vi) Notes" with no PWHL 65.2(vi). **OZP trailer:** no USAH 614(c), no HC clause v.
+- **HC republication checks** still to do: 4.7(a) Interp 2, 7.1(f), 10.4, 10.6(a) Interp 5, the penalty-bench "end of the period" change.
+- **PWTP :355 (facts) and :373:** USA Hockey's spectator limb is missing.
+- **HC 7.1(c) vs Appendix D Note 1 scope:** never settled by a rules-verifier; 7.1(c) is now cited in 11 documents.
+- **puck_handling:** 63.2(v) Note against 67.4 needs a rules check.
+- **team_play :283 PWHL ceiling:** "can go higher … if it hurts them" is slightly broad for the PWHL (only 21.1, deliberate injury). Harsher direction.
 
-Line numbers are working-tree lines at time of check. Brief each one as a CLAIM to find in every layer, not as a line.
+### Content — safety layering and readability
 
-**Cross-file claim sweeps (one agent per claim, or fold into per-file agents):**
-- "take it on your forearm and hip" board-posture wording in inherited docs (owner's KEEP/DEMOTE ruling): on_ice_communication :108, defender :144/:906/:991, switching_positions :213, zone_entries :565/:1168/:1235, conditioning_and_recovery :212/:613/:685, getting_started :490. Body_contact :33/:51/:1973 is probably the owning doc (keep). passing_and_receiving board-posture limb in every layer (:195 … KT14 :905).
-- "minor/female" misheard by TTS: body_contact :739, passing :437, winger :747, center :766, zone_entries :852, defensive_zone_coverage :180.
-- Stale "four books" frames (corpus holds six): body_contact :563/:618/:1644 facts (+8 framings), game_management :143/:1133/:1141/:1169, team_play_and_culture :137, switching_positions :290, breakouts :562, defender :1003 and center :924 ("Rules Primer carries that four-book split"). faceoffs five-vs-six (:4/:656 vs :1031).
-- CARHA 32(d) flat one-game suspension, with no "at least": breakouts :214, offensive_zone_play :715, shooting :161/:191, playing_without_the_puck :740, defensive_zone_coverage :598. Tied to owner question at plan :582.
-- Slash voiced as "or": puck_support_and_spacing :587, defending_the_rush :731 (time_and_space :499 already fixed).
-- HC 8.5(b)/7.1(c)(iii) injure limb missing: winger KT :864, center :833/:903, risk_management :755 (cites CARHA 48(c) without HC 7.1(c)(iii)), passing_and_receiving :486 (facts/CM/KT15 drop "deliberately").
-- HC 6.1(g) net-off not named: goaltender, game_management :624/:637. game_management :637/:1006 also lacks USAH 610(d).
-- Missing PWHL: goaltender :795 (81.1), special_teams :685 (68.2), rules_primer :775.
-- "Hockey Canada 10.1(i)" citation form (cosmetic): breakouts :650/:656, defensive_zone_coverage :177/:203, body_contact :1145/:1161.
+- **Board posture ("forearm and hip") keep-or-demote calls** (owner 23 Sep: keep where the page is about the boards): conditioning (incl. KT :685, CM :613), getting_started :492 and CM :659, switching :211/:423/:438, zone_entries (5 sites), defender :144 and CM :907, passing :195/:215. Diagram captions also voice the full posture: forechecking_systems.mjs :918/:1299, wall_contact_clauses.mjs :108 (possibly a shared constant), breakouts.mjs :1157, puck_handling.mjs :278, scanning_and_anticipation.mjs :190.
+- **Facing-the-wall fallback** is missing at PWTP :1024 and practice_and_development :360/:382. **scanning :380/:390:** "see their numbers, pull up" is still telegraphic.
+- **Amber on a citation:** game_management :946 ("⚠️ **640(g): …"); offensive_zone_play.mjs:675 (caption).
+- **Listener "Important." runs:** rules_primer has a run of 19; body_contact §9 (8), §12 (7), §5 (5).
+- **Long units:** PWTP has 3 paragraphs over 1,200 chars (longest 2,378); corpus-wide 43 long paragraphs and 90 KTs over 60 words (check_readability). Spoken chunks over 2,500 chars are unmeasured (needs an md_to_speech census). 92 of 204 captions are over 800 chars.
+- **Smaller items:** playing_without_the_puck :1124 still reads "Situation 5 E, ⚠️ **And only one…**"; equipment :173 WNIHL visor quote has no age line; team_play :133 links `#line-changes-at-a-stoppage` but means rules_primer "The consequences"; "every level of UK hockey runs the IIHF book" in 34 headers (low; "amended locally" may cover it).
+- **rules_primer:** table :899 has 0 rows of headroom; the content of table :1018 (dropped from audio) has no recorded check that it is voiced inline; quote-drift flags at :430 and :1201.
+- **Basics wing script** omits the weak-side collapse to the slot that the centre list relies on (winger.md :55/:154/:182). Fix in a future Basics remake.
 
-**Per file:**
-- **rules_primer.md:** :462 HC ladder states condition before scope; :1157 KT "ask which IIHF edition" has no Elite League half; :961 heading level; :895 and :1014 tables at 0 headroom or dropped from audio (no inline-voicing check recorded); speech: a run of 19 consecutive "Important.", "Fourth, If", "under ten is" read in lower case; 2 quote-drift flags.
-- **uk_rules.md:** KT9 :632 "ask which IIHF edition" (same as rules_primer); "five (5)" at :136 is spoken "five (five)"; "U12 is" read in lower case; trailer lacks R&R 3.1/17.1; EIHL Casebook cited as "Version 1.1" (:490/:666/:672) where the disk copy says 1.0; KT17 omits three EIHL Casebook 46 limbs (may be deliberate); 34 headers say "every level of UK hockey runs the IIHF book" (:759 row).
-- **body_contact_and_battles.md:** :88/:89 near-duplicate CARHA facts; :814 "one (1)" spoken twice; :1656–1661 amber runs open on a citation; CM layer 78% rules-bearing; §5/§12 callout stacks; table at :1648 has 0 chars headroom; content-review question on 43 EIHL mentions.
-- **game_management.md:** :939 HC J/S summary missing the cross-check limb; :894 facts at 299/300; :143 promises risk_management "carries all four books" (uncensused).
-- **goaltender.md:** :1246 charging-ejection list lacks EIHL Casebook 42.
-- **defender.md:** :244 crease cover lacks HC where-you-are limb; :867 USAH 639(b) without 602(a); :462 facts "doubles, two of the three penalties that eject you" (readability).
-- **winger.md:** :98 "fallback" vs :126/:799 "last resort".
-- **faceoffs.md:** :1152/:1160 "out or deep"; :1231 cheating-back given for In-House only; "Fourth, If"; Overview 78% and CM 67% rules-bearing.
-- **breakouts.md:** :1107/:1140 "no book lets a goalie freeze a rim" against USAH Situation 11; :966 cites NHL 84.2 alone.
-- **defending_the_rush.md:** :1045 and KT9 :1111 HC blind side at the end boards.
-- **offensive_zone_play.md:** :784 no CARHA 48(a); :291 "five-man setup"; :929 "bodycheck" in a facts line.
-- **puck_handling.md:** :340 flat "falls on … all six books" (Casebook 614 Situation 2); 63.2(v) Note against 67.4 still unresolved; :347 `[you]` insertion has no ruling.
-- **passing_and_receiving.md:** no CM/KT carries the HC crease where-you-are test; :440 "7.6 itself" in a J/S line.
-- **language_and_glossary.md:** :295 HC ladder condition before scope; :415 HC 7.5 hit from behind with no 7.6 head limb.
-- **rink_map.md:** :224 calls any deliberate USAH contact with a goalie charging, with no Casebook 607 Situation 5 carve-out.
-- **special_teams.md:** :674 "Every book reports a game misconduct to an authority" (USAH and PWHL limbs unverified); :626 prevalence claim flagged "not independently verified".
-- **neutral_zone_systems.md:** :437 (:361/:395/:424) HC 7.4(c) mandatory match for charging a head-down carrier; needs a rules-verifier.
-- **on_ice_communication.md:** :641 "need not move that player yourself"; :311 amber run opens on a citation.
-- **switching_positions.md:** trailer :648 "only" list omits CARHA 66(a), which facts :172 cites.
-- **skating.md:** :823/:833 "stick blade".
-- **shooting.md:** :1007 trailer "IIHF runs the enforcement the other way".
-- **practice_and_development.md:** :560/:607 concussion is a pointer only.
-- **equipment.md:** "double minor" not defined; "CAN/CSA" spoken as "CAN or CSA" (fix in `md_to_speech.py` STANDARDS_BODIES); about 28 citations never refetched.
-- **conditioning_and_recovery.md:** :5 "not medical advice" sits in the dropped header, so a listener never hears it; :695 NIHL link on the old path.
-- **getting_started.md:** :224 "hockey 101" spoken as "one hundred and one".
-- **how_to_watch_hockey.md:** :733 trailer says "local primary text" (low).
-- **playing_without_the_puck.md:** paragraphs over 1,200 chars (9, longest 4,353); :715 "none in the IIHF" (optional).
-- **center/switching_positions/winger:** "inside the faceoff dots" and "level with the opposing defenceman" are not defined in rink_map or the glossary.
+### Diagrams and site
 
-**Diagrams (site/src/diagrams/):** special_teams.mjs pk-nz-1-3 / pk-nz-1-1-2 / pp-umbrella captions unread; offensive_zone_play.mjs:668 is the last citation-led amber run; puck_handling.mjs :427 title unscoped and :437 stale comment; breakouts.mjs :520–522 and wall_contact_clauses.mjs :71 cite a KT6 that no longer exists; winger-arriving-at-the-line lacks CARHA lifted-skate; over-long captions (breakout-wheel 2,651 chars; forecheck-pinch 617 words; two forechecking captions over 3,300 chars; 94 of 205 captions over 800 chars); dz-collapse-corner ends on the pointer "All six books are set out earlier".
+- **Captions:** pk-nz-1-3 and pp-umbrella captions not yet read; puck_handling.mjs:427 title has no scope (its comment says "no book count", but the caption says "five of the six books"); defensive_zone_coverage.mjs:423 ends "All six books are set out earlier" (pointer); the winger arriving-at-the-line caption lacks CARHA on a lifted skate; 31 titles repeat word for word in their own caption.
+- **Stale comments:** breakouts.mjs :390/:503/:525 and wall_contact_clauses.mjs :71/:84 quote a breakouts KT6 that has since been reworded.
+- **Labels:** leader lines start at token centre and cross the token's own letter (placeLabels, all diagrams); other full-sheet labels may cross painted lines (no checker); dz-walk-down-man "goes with the carrier" may cross the blue line at 400 px.
+- **Site:** 27 literal `*` on 14 built pages (broken emphasis beside quotation marks in Sources trailers); Basics "· 11 min" can wrap at 400 px (no nowrap); a site-reviewer pass is still owed for the 400 px diagram scene, the 🇬🇧 wrap in conditioning's Key focus and a special_teams bold run.
 
-**Readability, corpus-wide:** 56 paragraphs over 1,200 chars (language_and_glossary 10, playing_without_the_puck 9, defending_the_rush 4, faceoffs 4); 147 KTs over 60 words; KT counts above 10 in 14 documents (uk_rules 25 … puck_handling 13). This is CLOSED by the owner's 19 Oct ruling (no cap); the row's own wording that it needs the owner to say whether 5–10 binds; item 2 "rules last" never applied to the 19 R1-only documents; IIHF Table 16/14 in 17 documents (the edition decision is open).
+### Renderer (md_to_speech) and podcast tooling
 
-**Site:** ReadingTools.astro:9 stale path comment; callout `<aside>`s lack a role (remark-corpus.mjs); global.css:951 stale anchor comment; about 24 literal `*` in `<main>` on 13 pages; AudioPlayer.astro:27 unversioned resume key; podcast.xml.ts:36 stale heading.
+- A bare "clause iv" / "clause v" stays as Roman letters; "U10"/"U12" at a sentence start comes out as lower-case "under ten"; "Jr/Sr" becomes "Jr or Sr"; "Fourth, If" (numbered item starting with a capital); "CAN or CSA" has no entry in the standards list; "hockey 101" is read as "one hundred and one"; md_to_speech.py records `"engine": "long-form"` (a Polly setting).
+- downloads.astro and the m3u playlists have no Basics format; podcast_queue.py has no `--style basics`; synthesize_style_b has no `--doc-id`.
 
-**sources/ (coordinator):** rename `hc_2026-08-print.txt`; refresh ihuk_nihl_roc.pdf (325,259 B on disk vs 369,646 B published); README:2010 "NOT CONFIRMED" sits under the correction that confirmed it; README lacks a note on the HC 8.5(b) Note 1 slip; EIHL Roster/DOPS, EIH and IHUK policy documents not on disk.
+### Checkers and sources (scripts/ — change between waves, never during one)
 
-**scripts/ (coordinator, between waves):** `check_layer_echo` swallows the Sources trailer into KT; `check_caption_echo` compares against the whole block; `md_to_speech.py` CAN/CSA, "engine" field at :3863, U12 casing, "Fourth, If", "hockey 101"; unknown-flag handling (two exit 0, two traceback); `check_callout_flow.classify()` keys on how a line opens; `check_pointers` hardcodes the content root; `check_facts --near` misses blocks at 14; `check_quote_drift` has no unflattened pass; synthesize_style_b lacks a `--doc-id` sidecar; the podcast upload check reads local, not the deployed feed. About ten requested tools were never built (listed in parts B/E/H).
+- check_readability: joins blockquote paragraphs across a bare `>` line, and counts a blockquote's Related line in the paragraph. check_layer_echo counts the Sources trailer as part of the KTs. check_caption_echo compares against the whole block. check_pointers and check_zones exit 0 on an unknown flag; check_pointers hard-codes the content root. check_callout_flow.classify() keys on how a line opens. check_facts --near has no warning for blocks at the 14-fact cap. check_quote_drift has no unflattened pass. About ten requested tools are still unbuilt (see archive).
+- Sources: hc_2026-08-print.txt not yet renamed; the EIHL roster and discipline documents and the IHUK policy documents are not on disk; about 28 equipment citations have never been refetched. Search the IIHF Situation Handbooks for a puck-carrier vulnerability ruling.
 
-**Owner decisions (collected):** IIHF 48.1 vs the "keep Rule 43" ruling; HC goalie hit under 7.5 (shooting :536); Wave 34 questions 2–6 (In-House reach to Scotland/NI, CARHA suspensions, USAH Level 1, caption trim, centre-fly label); the "What it costs" frame; Google Analytics (cloudfront.tf:120 comment contradicts production); In-short above facts in about 300 sections; HC 8.6 vs 8.7 puck-first slide; KT count ceiling; tactics-ratio target; `## Check yourself` in 36 documents; PWHL as standing sixth book and `Rule set:` headers; PNIHL/NIHL trailer; the five D-zone families; centre-low-zone-collapse exception; dead `creaseThePuckDecides` spec; panels per page; "(2) minor" shorthand; `*.local.md` in VCS; podcast ear test.
+### UNCLEAR (needs a sharper question before dispatch)
 
-
----
-
-
-### From the UNCLEAR resolution (19 Oct)
-- **body_contact:**
-  - :1661, the Kneeing table cell: HC 7.8 says "an opponent's knee"; match facts :580.
-  - :1148 facts and :1155 body: IIHF 101.1 also bars pushing a player into the boards or eliminating her from the play. As written, the permissive direction. Run --near first.
-- **faceoffs :1051:** an empty penalty box is a bench minor under NHL and IIHF; add the PWHL.
-- **rules_primer:**
-  - :19-22: four Key focus items are a bulleted list; make them bold-lead paragraphs like the rest.
-  - :1163: the NIHL 1 & 2 RoC path is superseded; the publisher now serves 2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf.
-  - :1102: covering the puck with the net empty is not an awarded goal in every book; USAH 614(b) requires "obvious and imminent". Harsh direction.
-- **conditioning_and_recovery :695:** the same superseded NIHL path.
-- **equipment :935-936 and mental_game :781:** edition notes carry inline ⚠️ that changes nothing a player does. equipment :935 also narrates the corpus's own history (non-negotiable 6).
-- **site global.css:**
-  - the amber left bar contrast is 2.1:1 against the 3:1 expected for non-text marks; darken it or record why it is acceptable;
-  - :951 has a stale anchor comment.
-- **site-reviewer pass:** the diagram scene at 400 px, the 🇬🇧 wrap in conditioning's Key focus, and a special_teams bold run.
-
-### 🔴 HIGH PRIORITY — Podcast improvements (owner, 20 Oct 2026, after listening to both formats)
-
-**Sequence (owner):** finish the content corrections first if that can be done fairly easily, so the podcasts are remade from fixed content. Then do this work, finish it, and move on.
-
-- **(a) NotebookLM (Deep Dive) episodes say "the document".**
-  - The owner wants the hosts to talk about the content itself, not refer to a source at all.
-  - Failing that, they should refer to the website, never "the document" or pasted content. That phrasing sounds AI-generated, which the owner wants to avoid.
-  - Work: change the NotebookLM customisation prompt in `.claude/skills/notebooklm-episode/`. Test on one or two episodes before regenerating all 39.
-  - Option to try: give NotebookLM a source framed as a web page, rather than a pasted file.
-  - **Owner refinement (20 Oct):** the episode should sound like two hosts discussing the TOPIC (e.g. how to play wing), not two hosts discussing a piece of content, a document or a website. Referring to the website is no longer an acceptable fallback. The prompt should forbid any reference to a source ("this document", "the guide", "the website", "the article", "the source", "it says"). The hosts should present the material as their own knowledge of the sport. Test: listen to a pilot episode and count source references; the target is zero.
-- **(b) NotebookLM episodes: fewer rules.** Minimise rulebook talk. Mention a rule only where it is relevant, and avoid comparing the rulebooks. This mirrors what was already done for the Principles (Style B) episodes (project/podcast_style_b_script_standard.md §2, "far less rules"). Work: add this to the NotebookLM prompt, then regenerate.
-- **(c) The Principles (ElevenLabs Style B) episodes are too content-dense.** The owner leans towards doing both of these:
-  1. **A clearer "detailed principles" series.** Rework the existing episodes to introduce topics more gradually, explain each system more clearly, and say why it makes sense. They may be 25–50% longer.
-  2. **A new "core principles" series.** Simpler, covering the core concepts relevant at every age and level, including U10/U12 and newer recreational players.
-  - Work: write a script standard for each (extend podcast_style_b_script_standard.md), pilot one episode of each for the owner to hear, then roll out.
-  - **Credits:** ElevenLabs credits are short until 16 Nov (memory: project_principles_remake_approved). Plan the synthesis around that.
-  - **Site:** a third format means the site's two-format episode UI needs a third slot (memory: project_two_podcast_formats). That is a site change.
-- **Open questions for the owner before piloting (c):**
-  - Run both series, or one?
-  - Should the core series cover all 39 pages, or a smaller set of core topics?
-  - What should each be called on the site, Spotify and Apple, and as separate feeds or not?
-
-### From the OR, P and R rounds (19–20 Oct; done work is in or_owner_rulings, p_residuals and r_consistency records)
-- **Diagram captions** voice the full board-posture mechanics in forechecking_systems (chunks 039, 044). Run check_caption_hosts on posture captions, and check for a shared constant first.
-- **Puck_handling crease-cover siblings:** check that summaries elsewhere (goaltender, rules_primer) state HC "both ways round" consistently.
-- **U wave done 20 Oct** (record u_wave_2026-10-20.md; committed and pushed as 684326e).
-- **playing_without_the_puck ~:1124:** "…its own Situation 5 E, ⚠️ **And only one…**": a comma followed by a capitalised "And", with a mid-sentence glyph (pre-existing; X gate).
-- **equipment :173:** it quotes the WNIHL's "Full-face covering or half visor and mouth guard" for the mouthguard rule; heard alone it can sound like an age-less half-visor permission. Add the age line or rephrase (x1S, 20 Oct).
-- **Y wave done 20 Oct** (record y_readability_2026-10-20.md; committed and pushed as 4c85bd0): offensive_zone_play, special_teams, faceoffs.
-- **defensive_zone_coverage :577 (rules-verifier):** says IIHF 101.1 "allows pushing and leaning only…". Both v1.1 and 2026/27 open 101.1 with "'bodychecking' is allowed when there is a clear intention of playing the puck". The page is stricter than the rule (W3, xcS).
-- **CARHA 32(d) sites deliberately left without it** (to avoid repeating it everywhere): defensive_zone_coverage 54(a)/66/49(a)/80(a) body sites, :557 facts at cap; zone_entries :405/:452/KT10/KT11/CM :1171/facts. Scope traps: 32(d) does not reach the 53(a) minor+GM, 53(b) is a 34(a) match, and 62(b)'s accidental high stick is excepted. Revisit only if the owner wants it at every site.
-- **NIHL RoC link update:** the source is refreshed (20 Oct; the only change is the British Trained definition). Update the two content links, rules_primer :1163 and conditioning_and_recovery :695, to https://englandicehockey.com/wp-content/uploads/2026/09/NIHL-1-and-2-ROC-2026-2027-1.pdf (so).
-- **HC 2026-28 republication changes** (README, 20 Oct; hc.txt is operative, and hc_2026-08-print.txt is the superseded August printing). Check whether any corpus claim depends on the old text for:
-  - 4.11 penalty-shot equipment (blocker/trapper) and crease cover;
-  - Interp 6 crossbar on the lacrosse move;
-  - refusing to start play: penalty shot "in lieu of a Minor";
-  - 8.7 clipping "at or below the hips";
-  - 4.7(a) Interp 2;
-  - 7.1(f);
-  - 10.4 leaving the bench;
-  - 10.6(a) Interp 5.
-- **NotebookLM remake: owner APPROVED the Winger pilot approach (20 Oct).** All 39 episodes are being remade with the topic-not-document, fewer-rules prompt (8539ca2).
-  - Packs: `.podcast_queue/notebooklm/remake_2026-10-20/` (README checklist; shared instructions.md and focus.txt; provenance/ holds the hash stamps). Batch 1 holds only the six pages with NO open edits: core_principles, reading_ice_hockey_diagrams, skating, scanning_and_anticipation, practice_and_development, how_to_watch_hockey.
-  - Owner, 20 Oct: build a page's pack only once its edits are finished, so its episode includes them.
-  - Owner, 20 Oct: every pack file is .txt, never .md (.md opens in the wrong program on the owner's machine).
-  - **Batch 1 audio received 20 Oct ~21:05:** 8 .m4a files in batch1/ (02, 03, 24, 31, 36, 37, 38, 39). Durations: 02 14.3 min, 03 38.5, 24 65.5, 31 21.3, 36 55.3, 37 50.8, 38 46.3, 39 53.0.
-    - 01, 17 and 29 have not been generated yet.
-    - **Reviewed and published 20 Oct** (record notebooklm_remake_batch1_2026-10-20.md): 02, 03, 24 (edited), 36, 38 (edited) and 39 are live.
-    - **NO-GO:** 31 and 37. Regenerate them after the prompt fixes in the record. 02 may also be regenerated (coaching slip) if the owner wants.
-    - Local whisper transcripts go to scratchpad nlm_tx/. Next: a Step 4 review per episode, then publish with the owner's go-ahead.
-    - Next candidates after small open rows close: mental_game (:781 marker), puck_support (:491 "five-man"), team_play (:137 "four books"), getting_started (the medical-cover layer test), forechecking (the 608(c) layer test).
-  - The other 19 pages get packs after the SW sweep commit. Owner, 20 Oct: they can do at most 10 at once, so prepare one batch of 10 at a time and do not build the next until the current batch is done.
-  - The owner generates each episode by hand, because NotebookLM is unreachable to agents. As each .m4a arrives: run the SKILL.md Step 4 review (safety list first, source-reference count 0, rules time, runtime), then publish via build_podcast_audio.py to the site and the RSS feed (Spotify and Apple follow the feed).
-- **FZ wave committed 20 Oct** (record fz_goalie_freeze_siblings_2026-10-20.md): goalie-freeze siblings aligned with goaltender.md in 9 pages; centre needed nothing. Leftovers:
-  - OZP facts :817 "Both books" antecedent;
-  - special_teams :775 omits PWHL 65.2(vi);
-  - the OZP trailer lacks USAH 614(c) and HC clause v;
-  - md_to_speech clause numerals.
-- **The Basics publishing support built 20 Oct** (bs1; code review bsR found no BLOCK, and its fixes were applied). Details:
-  - `podcast-basics.json` lists the 13 planned topics; `/the-basics/` is live but empty and unlinked.
-  - `--style basics` is supported in both build and upload.
-  - The season gate leaves the live feed byte-identical until all 13 exist. The 39 principles guids are frozen.
-  - **Still to do:** a site-reviewer pass on /the-basics/ and the source-page link; owner approval of the 13 titles; add the page to the nav and sitemap at launch; make the gate sticky at launch (freeze the Basics guids, keep planned append-only).
-  - **Deferred:** downloads and m3u; `podcast_queue --style basics`.
-- **GN wave committed 21 Oct** (record gn_gender_neutral_2026-10-20.md). Still open, owner's call: gendered terms of art (man-on-man, point man, "your man") are left unchanged.
-- **NotebookLM batch 1 follow-up:** 01 (edited) and 29 are published. 17 is NO-GO: regenerate it with its own focus file. The owner has it scheduled after 03:00 on 21 Oct and 37 after 04:00 (NotebookLM usage limit). 31 v2 was received 23:53 and is in review. The owner is regenerating 31 and 37 with episode-specific focus files.
-- **Principles pilots revised** to the owner's notes: The Basics explains terms and why; shorter, calmer safety; gender-neutral. In review (ppS5). The Detailed seam cap is now 9,320.
-- **Principles production (21 Oct).** The owner has 967,392 ElevenLabs credits and will buy more within reason.
-  - The final Winger pair is recording: Basics topic 10 and Detailed.
-  - The Basics scripts for the other 12 topics are being written by six agents (bw-1 to bw-6, brief at scratchpad basics_brief.md), each into podcast_style_b/basics/<slug>.md. Each script then gets a safety review before recording.
-  - Next: write the Detailed scripts for the other 38 pages, in batches.
-- **The Basics launched (21 Oct):** 13 episodes are in the feed as season 8, with the guids frozen and links in the footer and the sitemap (record `project/reviews/basics_launch_2026-10-21.md`). Open NON-BLOCKING items from bsR2:
-  - (a) the source-page "Short episode…" line sits below the h1 and toolbar, not next to the audio player, and almost flush on the Rule set panel at 1440. Design call: move it into or under `[data-audio-player]`.
-  - (b) episode 13's "· 11 min" wraps onto its own line at 400px.
-  - (c) the owner has been sent the 13 titles.
-- **NotebookLM batch 2 (21 Oct):** the owner asked for batch 2 from pages that won't be edited. The triage (nlm-triage) found switching_positions and defensive_zone_coverage SETTLED; their packs are in `.podcast_queue/notebooklm/remake_2026-10-20/batch2/`. The SG3 wave (brief at scratchpad sg3_brief.md) settles center, winger, defender, goaltender, breakouts, offensive_zone_play, defending_the_rush and faceoffs: rows (m), (n), (p), (q), plus the (r) CARHA backswing and goalie-race limbs. Their packs follow after the SG3 commit. 17 needs regenerating from a rebuilt pack once the forechecking page edit is committed. The shared focus.txt gained: every top-ten item with a limit says its limit; never say gate, absolute or mandatory (4,559 chars).
-- **Source gaps found by the Detailed reviews (21 Oct):** rows (a)–(l) were fixed in the SG wave; the record is `project/reviews/sg_source_gaps_2026-10-21.md`. Still open:
-  - (n) Gate nit, SG 21 Oct: breakouts facts :107/:528 say "a clear shot before expiry never ices", where the body says "released". Heard alone it is unclear whether "before" refers to the shot or the landing, and "ending it at level strength, not 5-on-3" is cryptic. Defender :639 has two colons in one sentence.
-  - (o) Closed by SG2 (record sg2_goalie_race_carha_backswing_2026-10-21.md).
-  - (p) offensive_zone_play: CM :1156 "ends your game in most" understates the ejection for the facing-the-glass hit. Every book ejects, including USAH Casebook 608. The rim keep-in (:279) teaches a body-to-wall act with no boards short form. :292's Options facts line omits the third D variant at :909 (content-review, low priority).
-  - (q) faceoffs: :404 defines "boards-side" as a circle, but every alignment uses it for one side of a circle (:426–428). :541 and the facts line above it say "clear the inside winger's shooting lane" on the D one-timer, where the shooter is the defenceman. Heard alone, "clear the lane" can also mean moving a defender, which is interference.
-  - **SG5 (21 Oct) closed these rows:** (m) remainder, (r), (s), (u), (v, refuted), (w), (x), (ab), (ad), (af), (ah), (ai), (aj), (al), (an), (ao), (ap), and the equipment IIHF 10.3 note. The record is project/reviews/sg5_settle_for_notebooklm_2026-10-21.md. Optional minors still open:
-    - OIC facts :279: "in non-checking play" has lost "anywhere". A 200-char substitution is in the record.
-    - "never turn your back to the checker" stands at risk_management :44/:444/:460, core_principles :215 and rules_primer. It is undefined in voiced-alone layers; use "anyone coming at you".
-    - team_play_and_culture :133 links to #line-changes-at-a-stoppage with "has the rest". The sentence lives under #the-consequences.
-    - uk_rules "or cage cracks" is written rule only for men's U18 (202.2). Elsewhere it is advice.
-    - The UK concussion guidance's reach to Scotland and Northern Ireland is unverified on disk.
-    - IIHF 202.3: does it reach British U19 play?
-    - game_management :243: the full-ice press "both defencemen pinching" has no gate.
-    - OIC :307 "56.5 a game misconduct above it": NHL/PWHL only impose it on injury. It errs strict.
-    - USAH 640(d) is stated without its stick-above-the-knees condition.
-    - HC 6.11(d)(i) on zone_entries: "only once made" is narrower than "attempts". It errs safe.
-    - The pages on hold for NotebookLM batch 2 keep their old rows: (n) breakouts, (p) OZP, (q) faceoffs, (t) the sg3R minors. Verify whether SG3 already closed (n)/(p)/(q).
-  - (t) **sg3R MINORs.**
-    - The CARHA 32(d) one-game suspension is missing from the backswing body sites (center, winger, defender, goaltender, faceoffs, zone_entries, NZ). Consider "ends your game and the next".
-    - breakouts :528 omits High School from the USAH 624(b)(1) list.
-    - defender :278: NHL 56.2(iii) and PWHL 57.2(iii) fit the walk-out better than (i); the USAH 625 Note and Casebook 609 Sit. 2 fit better than 625(a)(4).
-    - DTR :330 voiced alone attaches the HC 7.5(a) tier to head first into the boards, where 7.5(c) is a match. The next line carries it.
-  - **SG4 (21 Oct) closed rows (y), (z), (aa), (ac), (ae), (ag), (ak) and (am).** The record is project/reviews/sg4_source_gaps_from_detailed_2026-10-21.md. Optional minors still open:
-    - scanning facts :380 is telegraphic, and the :390 gate lacks "can't see you coming";
-    - the PWTP CM :1017 and the practice_and_development :360/:382 bullets lack the facing-the-wall fallback;
-    - getting_started KT4's bare "tucked chin" sentence;
-    - the "can end your game" goalie-charging line in shooting understates HC, CARHA and USAH, where it is mandatory;
-    - the British U10/U12 non-check hit tariff is untraced.
-    - The time_and_space "most without" premise was refuted (HC 8.3(i) and CARHA 66(a) reach it). The coordinator's brief was the defect.
-  - Each needs a layer test and a safety-reviewer.
-- **Detailed status (21 Oct 14:10): COMPLETE.** All 39 Detailed (ElevenLabs, eleven_v4) episodes are published in place, keeping their guids. Each was safety-reviewed to SHIP and transcript-checked against its script. The last was Rules Primer (36f9970). Credits left ≈ 0.1M of the 2.995M top-up.
-  - **Known label error in published Detailed episodes (MINOR, errs strict, no re-record needed).** center, defender, goaltender, DTR, DZC and game_management say "a two-handed shove is a cross-check, whatever your blade is doing". That is false under USAH 609, but the instruction itself (never shove) is right everywhere. The queued scripts were fixed.
-  - **Airway exception.** Brief item 21's "don't move them" omits CRT6's airway exception. That is stricter, so it is safe. The rules_primer script adds it.
-  - **Publish helper:** scratchpad pubdet.sh. It transcript-checks the recording, archives v1, installs the master and encodes it. Then run `upload --style principles --go` and commit podcast-principles.json.
-  - **Brief:** scratchpad detailed_brief.md, items 1–26.
-- **Detailed production started (21 Oct ~01:15):** brief at scratchpad detailed_brief.md, and it carries the Basics review lessons. Writers dw-center, dw-defender and dw-goaltender write to `podcast_style_b/detailed/<stem>.md`. Each then gets a safety review, synthesis at cap 9320, and publish in place (`--style principles --doc`, archive the v1 WAV first). Next batch: the systems pages.
-- **GN sweep missed diagram text (found 21 Oct):** about 449 string lines across 30 `site/src/diagrams/*.mjs` modules contain he/him/his/himself, in captions, descriptions and labels; some refer to opponents. The owner's ruling is "they" everywhere. Needs one agent per module group, then a build-diagrams run and check_absolutes. Heaviest: zone_entries 45, positions 38, breakouts 33, neutral_zone_systems 25. on_ice_communication.mjs :262 "his partner and his goalie" is still open.
-- **Readability programme complete (20 Oct):** all 39 pages passed (W4/W5 record w4_w5_readability_2026-10-20.md).
-- **SW sweep committed (20 Oct; record sw_cross_page_sweep_2026-10-20.md)** for 18 pages. goaltender is held back for its own commit (s1R5 CLEAR). Optional goaltender minors: :1098 add "with an attacker on you"; :643 double negative; :388 "soft stick … cover it" has no crease condition; :1622 omits USAH 614(c)(4).
-- **Save-then-cover siblings:** IIHF Situation 63.1 (a freeze must come "straight off" the save) and HC 10.2(a) (a goalkeeper freezing outside the crease) are missing outside goaltender. Done for the 9 FZ pages; only on_ice_communication is still open (s1R).
-- **USAH 601(d)(9) spectator limb:** check every sibling that prices pucks fired out of play after a stoppage (s8R). Done in on_ice, defender and the 9 FZ files; the rest is open.
-- **"five-man" leftovers:** the offensive_zone_play.mjs captions :301 and :1239 (puck_support :491 and the OZP §3 heading are done).
-- **md_to_speech:** Hockey Canada "clause ii" / "clause v" in prose is voiced as bare letters; expand it to "clause two/five" (fz-aR, fz-bR). "U12 is" read in lower case at sentence start; "Jr/Sr" read as "Jr or Sr" (winger :747).
-- **special_teams :626 prevalence claim** ("commonly described as a current NHL default"): weak; reword to "one common option" or source it (s7).
-- **Siblings of the W2 corrections:** run a layer test for each of these:
-  - save-then-cover being "out in front" only, with Hockey Canada "points both ways" (goaltender.md, defender.md);
-  - the medical-cover rule scoped to an EIH fixture (equipment, conditioning_and_recovery, getting_started);
-  - the Elite League practice neck guard (equipment);
-  - CARHA 32(d) "at least a one-game suspension" across the corpus. The owner ruling of 19 Oct is only partly propagated.
-- **neutral_zone_systems KT8:** lost the options "a stretch forward behind a wall… or a dump you chase", which narrows a tactical KT. Consider restoring one option. Also :946 trailer quote drift (ADDED '.') (Z gate).
-- **Z wave done 20 Oct** (record z_readability_2026-10-20.md; committed and pushed as f7686ae).
-- **W2 wave done 20 Oct** (record w2_readability_2026-10-20.md; committed and pushed as b05098f). 18 of 39 pages done.
-- **W3 wave done 20 Oct** (record w3_readability_2026-10-20.md; committed and pushed as 0bd425a). 24 of 39 pages done.
-- **W4 wave dispatched 20 Oct ~19:35:** readability for shooting, risk_management, getting_started, team_play_and_culture, switching_positions, mental_game, passing_and_receiving and time_and_space (brief w4/brief.md). W5 will take how_to_watch_hockey, skating, scanning_and_anticipation, practice_and_development, puck_support_and_spacing, core_principles and reading_ice_hockey_diagrams.
-- **Principles series pilot (pp1) dispatched 20 Oct:** a plan at project/podcast_principles_series_plan.md, plus Winger pilot scripts for Detailed and Core. Core is for a typical U12 player on full ice and assumes non-checking (owner, 20 Oct). Scripts go to the owner before any synthesis.
-- **NotebookLM pilot (owner action):** the Winger pilot files are in `.podcast_queue/notebooklm/pilot_winger/`. The shared instructions.md was rebuilt with the new text on 20 Oct. Waiting for the owner to generate the episode. Then review it for source-reference count (target 0), rules time, the checking gate, board posture and injury response.
-- **NotebookLM prompt rewrite done 20 Oct** (record notebooklm_prompt_rewrite_2026-10-20.md; committed as 8539ca2).
-- **special_teams KT10:** "Screen with both feet clear of the red crease line" dropped "outside the paint". Align it with offensive_zone_play KT4 ("clear of the crease and its red line") (Y gate).
-- **faceoffs :874 and the header (rules-verifier):** the header's "the 2026/27 edition ejects the centre" is now flat too (Y gate). "Under the IIHF 2026/27 book the first violation now removes your centre" sits beside :361's "premature movement … only gets a re-drop". 2026/27 76.7 still re-drops for moving early. Scope :874 to encroachment, contact and positioning (Y wave, y3S3; the error is harsh-direction).
-- **faceoffs "two minutes" shorthand** at :48, :759 and :780: USA Hockey 402 pro-rates youth minors (1:00/1:30). Consider "a minor" (Y wave, y3S3; informational).
-- **Siblings of the faceoff second-violation, moving-early and replacement-taker claims:** centre.md, rules_primer.md and uk_rules.md need a layer test for the Hockey Canada 6.5(a)/6.2(d) early-movement ejection, the second-violation tiers and the "contact is never free" wording (Y wave).
-- **conditioning KT14:** the British red flags name three examples, but not blood-thinning therapy. That flag fires on a player who looks fine, and only CM :610 and the body carry it. Consider adding it (Z wave, z3S).
-- **neutral_zone_systems facts:** the trapezoid facts line names only USA Hockey and Hockey Canada. No facts line carries CARHA 58(b) or 61(b) (Z wave, z1S).
-- **check_readability:** also joins blockquote paragraphs separated by a bare `>` line (z2, z3). Fix it together with the Related-line row, between waves.
-- **faceoffs USAH 602(a):** "plan on the match" at about :615 (facts), :628 (body) and :1234 (CM) has no suspension limb. Under the OR ruling it may appear at most twice per document, so decide which two sites carry "a likely multi-game suspension" (Y wave, y3).
-- **check_readability:** counts a whole blockquote, including a long `**Related:**` nav line, as one paragraph, so page headers are inflated. Exclude Related lines, or measure blockquote paragraphs separately (Y wave, y3).
-- **SG7 and SG8 are CLOSED for 25 content files** (record: project/reviews/sg7_sg8_boards_line_and_carha_ban_2026-10-21.md). What is still open:
-  - **SG7 remainder.** About 29 diagram caption and label strings still say "back to the checker". zone_entries says "never turn your back to an oncoming checker" at :427, :461, :564 (facts), :573, :925 and :964, and in its zone_entries.mjs captions :378/:419. special_teams :842 still says "five-man". DTR facts :330 opens "Hitting a man's back" (pronoun ruling). Fix it site by site, with a layer test.
-  - **SG7 last bits: DONE 21 Oct** (record sg7_last_bits_2026-10-21.md). The stale diagram-module comments are fixed in SG12.
-  - **SG8 remainder.** Some facts lines had no room for the 32(d) ban; the body text on each page carries it. They are center :485, OZP :927, FC :864, switching :250, OIC :282, pwtp :708/:713/:714, defender :124/:581, NZ :735, faceoffs :567 and winger :102. Winger KT8 omits the CARHA 66(e) injury ban.
-  - **Rules to keep (sg7_fix_rules.md).** 32(d) applies only to a game misconduct that comes with a MAJOR: not to a match (34(a)), not to a 53(a) minor plus game misconduct (32(b) reports that to the Chairman), and not to an accidental high stick (a reading, not a ruling). Where a CARHA ban sits beside a USA Hockey game misconduct, name 404(b) too.
-  - CARHA 62(b) makes a follow-through above the shoulders a major even if no one is hurt. No slap-shot site except shooting :983 says so. Routing note: send agents to sources/hc.txt, not hc_2026-08-print.txt.
-  - Cosmetic: the dz-walk-down-man label "goes with the carrier" crosses the blue line at 400px.
-- **Site-reviewer pass for SG7/SG8: DONE 21 Oct** (sg7rSite, recorded in sg7_remainder_2026-10-21.md). The body_contact §6 heading renders in the TOC and its anchor works. All 7 caption hosts pass at 400px and desktop, in light and dark.
-- **Facts-antecedent nits: OZP :360 is fixed** (it now names "rimming when you should reverse…"). FC :915 is fine, because "those two books" refers back to books named in the previous sentence. **Tool gap (scripts/, change between waves):** `check_facts_antecedents.py` does not catch a bare numeric pointer like "those two" or "both of them". Add that pattern.
-- **NotebookLM remake COMPLETE, 22 Oct 06:45:** all 39 remade episodes are published. Track 28, Body Contact, was regenerated from a three-part batch 5 pack, reviewed SHIP-AFTER-CUT (scratchpad nlm_b5/r28.md) and published with three cuts (clipping priced only 'if it injures'; a high-stick 'waist' slip; the old 'back to the boards' line in the recap), 41:23, live at /audio/technique/body_contact_and_battles-341c4c81.m4a (HEAD 200, range 206). Optional remakes stay the owner's call (see below).
-- **SG9 CLOSED 21 Oct** (record sg9_usah_next_game_once_per_page_2026-10-21.md). USA Hockey 404(b) is now stated once per page across 30 files. Still open:
-  - per-book R2 candidates left by ruling (zone_entries :261/:378, DTR :460/:502/:891, defender :355/:889);
-  - (the stacking-suspension check is DONE in SG11, record sg11_helmet_books_and_usah_stacking_2026-10-22.md; open there: whether 615(f) stacks with 404(b), which the book does not say)
-  - forechecking :663 and OZP :1000 list "a hit from behind" as a game misconduct example. Under USAH 608(a) it can be a minor plus misconduct; consider "a major for a hit from behind". This errs on the harsh side.
-  - The earlier "older candidates" are covered by the once-per-page lines: faceoffs :1222 by :295/:306, puck_handling KT10 and the CM cage-grab by :491/:530, and center facts :765 by :732.
-- **Site-reviewer pass DONE 21 Oct** (record site_review_pass_2026-10-21.md). Every deferred item passes, with 0 bare glyphs, 0 panels and a clean console across 39 pages × 2 widths × 2 themes. New rows:
-  - sr1, sr2, sr4 and sr5 are DONE 21 Oct; the §10/DZC table overflow and the faint dark scroll shadow are DONE in SG12 (sg12_site_leftovers_2026-10-22.md).
-  - **DONE 21 Oct (record basics_nav_and_diagram_titles_2026-10-21.md):**
-    - The Basics now appears in the header and on the home page (owner request).
-    - All 204 diagrams have short accessible names. The rink-map-end-zone title is fixed.
-    - Owner's call: ☰ for "Contents" below 480 px may read as a pop-out menu.
-  - **Accessibility: the figcaption aria-hidden issue is FIXED (record figcaption_a11y_2026-10-21.md).** Still open:
-    - Diagram `<title>`s: 85 fall back to the diagram id (`shortTitle()` in site/scripts/lib/rink.mjs), so a screen reader announces e.g. "Nz 1 4". 58 titles repeat inside their own caption.
-    - rink-map-end-zone has no title, so its image has no accessible name. Fix it in its diagram module.
-    - Stale comments at rink.mjs :597 and build-diagrams.mjs :387–389 still describe the old arrangement.
-  - nz-1-4 labels DONE in SG12. Open: diagram leader lines start at each token's centre and cross its own letter (placeLabels in rink.mjs, all diagrams); other full-sheet diagrams may have labels crossing painted lines (no checker measures it).
-  - sr3 is DONE (hfb_scope_and_sr3_2026-10-21.md); the forechecking :808 CARHA leftover is DONE in SG10 (sg10_small_accuracy_rows_2026-10-22.md).
-
-- **equipment :441:** the IIHF prints "opposing Player(s)" with a capital P, while the shared quotation uses NHL/PWHL casing. Note it if the quote is ever credited to the IIHF alone.
-- **X wave done 20 Oct** (record x_readability_2026-10-20.md; committed and pushed as d93a658): readability pages 5–7 (equipment, playing_without_the_puck, game_management). Next by ranking: offensive_zone_play, special_teams, faceoffs, defending_the_rush, breakouts, center, defensive_zone_coverage, zone_entries, shooting, defender, risk_management, …
-- **V wave done 20 Oct** (record v_readability_2026-10-20.md; committed and pushed as b06fb8e): readability pages 2–4. check_readability's sentence splitter is fixed (it now splits after closing quotes and before ⚠️/flags), so mean and longest sentence figures dropped on marker-heavy pages: body_contact's longest went from 169 to 107, rules_primer's from 132 to 69. Next by ranking: equipment, playing_without_the_puck, game_management, offensive_zone_play, special_teams, faceoffs, defending_the_rush, breakouts, …
-- **Owner answers, 20 Oct:** both content rulings are applied (U wave). Readability: page by page, worst first.
-  - Still open (no owner needed): search the IIHF Situation Handbooks for any puck-carrier vulnerability ruling.
-### Also open from this session
-- **Decided 20 Oct:** the phone-bar `audio-idle` hook stays in essentials-view.js. It loads synchronously in <head>, while audio-player.js is deferred, so moving it would shift the layout on first paint (sa).
-- offensive_zone_play "five-man setup" sits next to "five-man rotation" (:285/:286).
+- rules_primer :462 (original line not identifiable); uk_rules KT17 drops three limbs (probably a deliberate summary — likely close); body_contact EIHL mentions (the review question was never written down); readability item 2 "rules last"; IIHF Table 16/14 edition question; global.css :951 and podcast.xml.ts :36 stale text; AudioPlayer.astro resume key (looks deliberate); "the podcast upload check".
