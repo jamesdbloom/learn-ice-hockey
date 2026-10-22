@@ -328,8 +328,6 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 **Re-triaged 22 October 2026 at HEAD a672681.** Four agents tested every row of the previous section against the files. About 280 verdicts: roughly 115 FIXED, 50 DONE-RECORD, 4 WRONG, about 80 still OPEN. The old section and every verdict table (with evidence and current locations) are in [plan_open_rows_archive_2026-10-22.md](../reviews/plan_open_rows_archive_2026-10-22.md); read the verdict row there before dispatching. **Line numbers below are as found on 22 Oct and will drift; name the string.** Test each row against HEAD before acting on it.
 
-- **SG18 IN FLIGHT (22 Oct ~15:35):** readability (long KTs/paragraphs) on winger, uk_rules, rules_primer (+ remaining Important runs), goaltender; HC 7.11 analogy wording (DTR :734, BC :1699) + BC :1735 run; IIHF hold act search + PWHL 21.1 check (report only). Brief: scratchpad z/brief.md + sg13_brief.md.
-
 ### Owner decisions needed
 
 - **Getting Better page:** plan decisions D1–D6 (project/getting_better_plan.md).
@@ -345,8 +343,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 - **SG13 DONE (22 Oct)** (record sg13_rules_accuracy_rows_2026-10-22.md). Closed: late hit ×3, OIC ×3, T&S 21.1, DZC ×2, puck_handling ×2, goaltender ×4, CARHA 62(b) ×3 pages, special_teams :776, PWTP ×3, passing. New from it: body_contact :1651 facts (300/300) and :637/:655 lack NHL/PWHL 21.1 / late-hit price; T&S goalie contact :556–562 no NHL 21.1; defender :244 'can be a shot too' vs HC Interp 5 (rules-verifier); CARHA follow-through limb in shooting.md?; optional 10.1→10.1(i) in breakouts :657, DZC :178, body_contact :1148.
 
 - **zone_entries :235:** "only once made" errs safe.
-- **IIHF act search:** can a hold that deliberately injures be called as roughing (51) or another major under the IIHF? (rules_primer :497 now says only the IIHF stops at the minor for holding.) PWHL 21.1 at body_contact :1699 unverified (tool limit).
-- **HC 7.11 Interp 2 as analogy:** defending_the_rush facts :734 and body_contact :1699 read as if Interp 2 to 7.11(c) applies to tripping/holding directly; only DTR :751 says "for a rule with the same bar". :734 also truncates "not otherwise covered within the playing rules". Harsher direction; wording only.
+- **SG18 follow-ups:** uk_rules KT9 "stricter IIHF edition" has no single answer; rules_primer :945 "touching the line is allowed" unscoped (NHL/IIHF wording); :855 "throwing it forward" omits "towards the opponent's net"; defending_the_rush has spoken "Important." runs of 5–6 not yet reviewed.
 - **team_play :283 PWHL ceiling:** "can go higher … if it hurts them" is slightly broad for the PWHL (only 21.1, deliberate injury). Harsher direction.
 
 ### Content — safety layering and readability

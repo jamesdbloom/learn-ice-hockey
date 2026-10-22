@@ -32,7 +32,7 @@ The Elite League warns first, then gives a minor, and extends the requirement to
 
 **Ask your league whether your age group is checking before you hit anyone.** Neither the IIHF book nor the In-House Rules sets a checking age, and the North American lines do not transfer. Four IHUK 2026-27 *Rules of Competition* were read for this document — junior, U10, NIHL Division 1 and 2, and WNIHL. They make junior **U10 and U12 non-checking and U14, U16 and U19 checking**, **NIHL Division 1 and 2 checking**, and the **WNIHL non-checking** at U16 and senior. ⚠️ **The line goes with the game you are dressed for, not your birthday:** a junior may play up one age group, and from 16 — 15 with approval — into the NIHL, where Divisions 1 and 2 check.
 
-In women's hockey the IIHF book draws its own contact line, at Rule 101.1. **If an opponent is standing still, that ice is hers: skate around her, and if you are carrying the puck at her, avoiding the contact is your job.** Two players racing for the puck may *"push and lean into each other"* — but only *"provided that “possession of the puck” remains the sole object"* — and **any step or glide into an opponent is at least a minor for an illegal hit, and so is using the boards to take her out of the play, push her into them or pin her there.** And WNIHL games are non-checking under the WNIHL *Rules of Competition*.
+In women's hockey the IIHF book draws its own contact line, at Rule 101.1. **If an opponent is standing still, that ice is hers: skate around her, and if you are carrying the puck at her, avoiding the contact is your job.** Two players racing for the puck may *"push and lean into each other"*, but only *"provided that “possession of the puck” remains the sole object"*. **Any step or glide into an opponent is at least a minor for an illegal hit, and so is using the boards to take her out of the play, push her into them or pin her there.** And WNIHL games are non-checking under the WNIHL *Rules of Competition*.
 
 **Those four documents are all that is settled here.** They do not reach the EIHL, BUIHA university hockey, NIHL National, the PNIHL, the SNL or other Scottish domestic hockey outside the IHUK junior structure. ⚠️ **And "IHUK runs my league" is not the answer** — the In-House Rules reach NIHL National, the SNL and BUIHA Varsity, and none of the four covers them. Ask your league, and until you have an answer, do not hit anyone. [Body Contact and Battles](../technique/body_contact_and_battles.md) §If you play in Britain quotes each one.
 
@@ -619,7 +619,7 @@ document, that is named too.*
 
 3. **Keep your wingers out of the faceoff circle until the puck drops, and have a backup centre ready.** Under the In-House Rules almost any violation replaces your centre, and either centre may put the stick down first. ⚠️ **Neither change reaches the Elite League**, but a winger in the circle still costs your centre there on most draws.
 
-4. **Wear a neck guard at any age every time you are on the ice, practice included, and leave the ice if it comes off.** Under the In-House Rules there is **no warning**: a 10-minute misconduct. The Elite League warns first, then its ladder climbs to a game misconduct. England Ice Hockey's practice rule may not reach Scotland or Northern Ireland; the Elite League's reaches every practice.
+4. **Wear a neck guard at any age every time you are on the ice, and leave the ice if it comes off.** The In-House Rules give **no warning**: a 10-minute misconduct. The Elite League warns first, then climbs to a game misconduct, and covers practice. England Ice Hockey's practice rule may not reach Scotland or Northern Ireland; wear it anyway.
 
 5. **Ask your league before you hit anyone.** Your competition's rules set the checking age. In IHUK's junior leagues U10 and U12 do not check and U14 up does; NIHL Divisions 1 and 2 check; the WNIHL does not. A junior who plays up takes the older game's line. Anywhere else (the EIHL, BUIHA, NIHL National, the PNIHL, the SNL), ask.
 
@@ -629,11 +629,11 @@ document, that is named too.*
 
 8. **Goalies: play as though the trapezoid binds.** England Ice Hockey's suspension is unsettled in scope and standing, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goalie may come out for a dump-in.** Ask your league which applies.
 
-9. **The Elite League plays the 2026/27 IIHF book; anywhere else, ask which edition your officials carry, and play your stick to the stricter one.** A high stick is a minor in both, an injuring one a double minor, and a reckless one can be a major with an ejection. Under 2026/27 an injuring stick counts even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
+9. **Play your stick to the stricter IIHF edition: the Elite League plays 2026/27; elsewhere, ask which applies.** A high stick is a minor, a reckless one can be a major with an ejection, an injuring one a double minor, under 2026/27 even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
 
 10. **Skaters: drop a broken stick the moment it breaks.** Playing on with it is a minor, and under the In-House Rules so is skating with it anywhere on the ice. Take a replacement handed to you, or pick up your own or a teammate's unbroken stick — never one thrown to you, and never an opponent's or a goalie's.
 
-11. **Wear a cage as a junior skater, and size it to your helmet.** It satisfies every British rule, 18 or over included; a full visor fails England Ice Hockey's cage rule. From 18, wear at least a half visor (a woman stays in full face until the season after her 18th birthday); in BUIHA and the Elite League every player must. Leave the ice if your helmet comes off or your visor or cage cracks, and keep the chin strap within one finger (2.5 cm). Wear a mouthguard too; the Elite League and the WNIHL require one.
+11. **As a junior skater, even at 18, wear a cage sized to your helmet, not a full visor.** From 18, wear at least a half visor; women, full face until the season after their 18th birthday. Leave the ice if your helmet comes off or your visor or cage cracks. Keep the chin strap to one finger; wear a mouthguard.
 
 12. **When the referee tells you to change a piece of equipment, change it.** Under IIHF Rule 9.5, everywhere in Britain, refusing is a **minor for Delay of Game**, coming back out unchanged a **misconduct**, and a third time a **game misconduct** (the In-House Rules add their own jersey and cage ladders, the cage one ending in a game misconduct).
 
@@ -645,9 +645,9 @@ document, that is named too.*
 
 16. **Count your misconducts as well as your majors: two of either end your game.** Under the In-House Rules kit earns misconducts too — a missing neck guard, a loose chin strap after a team warning, playing on bare-headed — and **a dive is a minor plus a 10-minute misconduct**. The Elite League keeps a dive to the plain minor.
 
-17. **Expect a fight to end your game.** Only the plain willing fight during play is softened: in NIHL, SNL and BUIHA Varsity, and in the Elite League a first, original fight if it is your first major (count the season, since the League does not say). ⚠️ **In women's hockey, and in the last five minutes or overtime of an NIHL game, a fighting major ejects you.**
+17. **Expect a fight to end your game.** Only a plain willing fight during play is softened: in NIHL, SNL and BUIHA Varsity, and an Elite League original fight, if it is your first major (count the season; the League does not say). ⚠️ **In women's hockey, and in an NIHL game's last five minutes or overtime, a fighting major ejects you.**
 
-18. **Never instigate, be the aggressor or sucker-punch, and in the Elite League tie your jersey down.** ⚠️ **Instigating, being the aggressor and a sucker punch (under 2026/27, one that injures) each eject you**, except a first, early Elite League instigation that is not also aggression or your second major: a minor, a major and a ten-minute misconduct, and League review. In the Elite League, taking your jersey off before a fight, or losing it untied, adds a game misconduct.
+18. **Never instigate, be the aggressor or sucker-punch, and in the Elite League tie your jersey down.** ⚠️ **Each ejects you** (a sucker punch, under 2026/27, one that injures), except a first, early Elite League instigation that is neither aggression nor your second major: a minor, a major, a ten-minute misconduct and League review. There, a jersey off before a fight, or lost untied, adds a game misconduct.
 
 19. **Treat a major as the start of a disciplinary process, not the whole bill.** The referee reports every major after the game, and supplementary discipline can follow whether or not the act was penalised. ⚠️ **What that discipline costs is not stated here**, beyond the Elite League's few written suspensions.
 
@@ -655,7 +655,7 @@ document, that is named too.*
 
 21. **Find out before the game how a tie is settled.** Under the In-House Rules only NIHL fixtures, SNL fixtures that provide for it and BUIHA **VARSITY OT** games play overtime, and shootouts use **three** shooters (the Elite League, five). Don't plan on your best shooter taking two of the three. The NIHL National Playoff Final never goes to a shootout.
 
-22. **Before you need it, find your rink's first aider and phone, and learn all fourteen red flags.** At an England Ice Hockey fixture the rink must have a first aider, a checked kit, a shared emergency plan and a phone, ⚠️ **but need not have an ambulance or a doctor.** Nothing read here says what an Elite League game or a practice session must have.
+22. **Before you need it, find your rink's first aider and phone, and learn all fourteen red flags.** At an England Ice Hockey fixture the rink needs a first aider, a checked kit, a shared emergency plan and a phone, ⚠️ **but need not have an ambulance or doctor.** Nothing read here sets this for an Elite League game or for any practice.
 
 23. **Know which number to call.** ⚠️ **Call 999 for any red flag or other serious injury. For a head knock with none, call 111 within 24 hours, and don't leave the player alone for those 24 hours.**
 
