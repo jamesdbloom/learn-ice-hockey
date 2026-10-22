@@ -453,6 +453,10 @@ def markdown_files(root: Path) -> list[Path]:
     scratch notes that never enter the record and must not be able to fail a
     gate. Excluding them here rather than in the caller keeps the rule in one
     place.
+
+    `project/getting_better_drafts/` is skipped too: its page drafts are written
+    with links relative to their future home in `content/`, so they cannot
+    resolve where they sit. They are checked when they move into `content/`.
     """
     if root.is_file():
         return [root] if root.suffix == ".md" and not root.name.endswith(".local.md") else []
@@ -460,6 +464,7 @@ def markdown_files(root: Path) -> list[Path]:
         p
         for p in root.rglob("*.md")
         if p.is_file() and not p.name.endswith(".local.md")
+        and "getting_better_drafts" not in p.parts
     )
 
 

@@ -47,14 +47,6 @@ import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
  * in its own diagrams would teach the inference the prose kills.
  * ------------------------------------------------------------------------- */
 
-// A caption clause that appears in more than one diagram is imported, never
-// retyped: a sentence that appears twice is a sentence that can drift once, and
-// this one already had. See rule69_clauses.mjs for why all four still say it.
-import {
-  CREASE_LINE_IS_THE_CREASE,
-  TABLES_ALLOW_OUTSIDE,
-} from './rule69_clauses.mjs';
-
 // The puck carrier is on the half-wall because that is the position this document
 // names when it needs one: "the puck is on the opposite half-wall (the boards area
 // roughly level with the faceoff dot)".
@@ -337,7 +329,7 @@ const unmarkedNotAvailable = {
  *
  * THE RULE. This diagram sits next to goaltender interference, and a picture is the
  * most absolute-looking thing on a page. So: the caption states the constraint in
- * the document's own terms and quotes the rule the document quotes, and it says in
+ * the document's own terms and names the rule the document cites, and it says in
  * terms that the picture does not and cannot establish that any drawn position is
  * legal. The section's own conclusion — "staying out of the blue paint is
  * necessary, not sufficient", because Rule 69.1 turns on impairment "either by his
@@ -368,68 +360,45 @@ const screenSightline = {
   width: 900,
 
   caption:
-    // ⚠️ FULL STOP AFTER "not a place to stand". As a colon, the opening negation sat directly
-    // on the separator and could carry onto the tail, whose inverted reading denies that the
-    // wedge is the puck-to-goaltender line — the one thing the picture exists to assert.
-    // ⚠️ THIS CAPTION RESISTS THE 25-50 WORD TARGET AND ONLY THE FIRST FEW SENTENCES WERE
-    // CUT (318 words to about 290, 15 September 2026). Everything after "Nothing here
-    // establishes" is a rule statement with a book scope on it, or the injury warning, and
-    // the two inline notes below record repairs that a re-cut would undo. ⚠️ THE HONEST FIX
-    // IS NOT A SHORTER CAPTION: it is to route the Rule 69 block into the bodies that own
-    // it — this diagram is borrowed into foundation/rules_primer.md and
-    // technique/body_contact_and_battles.md as well as its owner — and that needs
-    // rules-verifier and safety-reviewer, not a caption editor.
+    // SHORTENED 22 October 2026 (1,931 chars; owner: shorter is better). Host trace, rendered with
+    // md_to_speech for all three hosts (playing_without_the_puck.md "To screen properly",
+    // rules_primer.md "Screening is legal outside the crease", body_contact_and_battles.md "Where
+    // you may stand when you screen"):
+    //  - DROPPED: TABLES_ALLOW_OUTSIDE (the Table 14 / 5E citation) and CREASE_LINE_IS_THE_CREASE
+    //    (which books count the red line as crease, and the IIHF answering both ways). Every host
+    //    voices both within two or three chunks before the caption. The instruction they lead to,
+    //    "off its red line", stays. The constants are untouched and still used elsewhere.
+    //  - SHORTENED: the verbatim NHL 69.1 quotation and the "disallowing sentence names the
+    //    crease" working. Kept as one sentence carrying BOTH halves — the permissive "normally
+    //    legal" and the 69.1 positioning-or-contact limb — because the owner host voices the
+    //    positioning limb five chunks back, and dropping either half alone would teach the rule
+    //    as stricter or looser than it is. Wording matches body_contact_and_battles.md's facts
+    //    line; nhl_rules_layout.txt 69.1 re-read this session: "either by his positioning or by
+    //    contact, impairs the goalkeeper's ability to move freely within his crease or defend
+    //    his goal".
+    //  - KEPT: what the picture shows, the instruction, that the picture cannot show what is
+    //    legal, and the head-first limb (rules_primer.md does not voice it at all).
+    //  - "Not drawn: keep your stick on the ice" became "Keep your stick on the ice too": the
+    //    negation sat on the colon and could carry onto the instruction when voiced.
+    // ⚠️ FULL STOP AFTER "not a place to stand", and after "cannot show what is legal": a
+    // negation sitting on a colon or comma can carry onto the next clause when voiced.
     'One instance of a relationship, not a place to stand. The shaded wedge is the line between ' +
     'the puck at the right point and the goalie, and the screen stands inside it with both ' +
     'feet outside the crease. The wedge swings as the puck moves: stand where the goalie’s eyes ' +
     'are, not where the puck is going. ' +
-    'Not drawn: keep your stick on the ice, because a screen ' +
-    // ⚠️ TWO FULL STOPS WHERE THERE WAS A COMMA AND A COLON. "Nothing here establishes … , and
-    // staying out of the blue paint is necessary and not sufficient:" put a main-clause
-    // negation on each separator. Inverted, the first denies the necessary-not-sufficient
-    // claim and the second denies that Rule 69.1 reaches positioning at all — a false rule
-    // statement in the permissive direction, in the caption whose job is the opposite.
-    'is also a tip and rebound threat, and move late. Nothing here establishes that the ' +
-    'position drawn is legal. Staying out of the blue paint is ' +
-    'necessary and not sufficient. NHL Rule 69.1 reaches an attacking player who, ' +
-    // ⚠️ THE CLOSING QUOTE MARK USED TO SIT AFTER "contact", and everything from "impairs" to
-    // "defend his goal" is NHL 69.1 verbatim too — the rule's own words, shipped bare, reading
-    // as this corpus's gloss. Source checked this session: "an attacking player, either by his
-    // positioning or by contact, impairs the goalkeeper's ability to move freely within his
-    // crease or defend his goal". The quote now runs to the end of the borrowed clause.
-    '"either by his positioning or by contact, impairs the ' +
-    'goalkeeper’s ability to move freely within his crease or defend his goal" — no contact ' +
-    'required. The ' +
-    // ⚠️ "a goal", NOT "one". The original read "the sentence that actually disallows ONE", whose
-    // referent was in the clause cut with it (69.1's "only if" ceiling, which capped "when a goal
-    // may be disallowed"). Cutting the clause orphaned the pronoun; naming the referent is the fix.
-    // Cut with it: Rule 69.3's significant-position limb, which the owner's facts block carries and
-    // which "keep both feet out of the paint" below already instructs; and
-    // DISALLOWED_ROWS_SHARE_THE_CREASE, whose point — the disallowed rows share the crease — is the
-    // same point the sentence above it now makes. TABLES_ALLOW_OUTSIDE STAYS: it is the permissive
-    // half, and a caption that keeps "positioning alone can reach you" while dropping "the tables
-    // allow the outside-crease screen" teaches the rule as stricter than it is.
-    'IIHF’s own 69.1 carries the same positioning limb in its own words. Read whole, though, both ' +
-    'books put the crease at the centre of it: the sentence that actually disallows a goal ' +
-    'requires the attacker to have entered the goal crease, and both ' +
-    'books’ reference tables apply exactly that line, ' +
-    TABLES_ALLOW_OUTSIDE +
-    '. So keep both feet out of the paint, and off ' +
-    CREASE_LINE_IS_THE_CREASE + '. Here ' +
-    '"screen" means the goalie’s sightline and nothing else. ' +
+    'Keep your stick on the ice too, because a screen ' +
+    'is also a tip and rebound threat, and move late. The picture cannot show what is ' +
+    'legal. Outside the crease and touching nobody, a screen is normally ' +
+    'legal, but contact, or a position that stops the goalie moving freely in their crease, ' +
+    'can still cost the goal (NHL and IIHF 69.1). So keep both feet out of the blue paint and ' +
+    'off its red line, and touch nobody. Here "screen" means the goalie’s sightline and ' +
+    'nothing else. ' +
     // SAFETY. Owner's own wording, the "Never:" fact in
-    // content/hockey-iq/playing_without_the_puck.md § "Screening the goaltender" — "Never: Meet a
-    // goal post head first, and never duck. Head up, chin off your chest instead. A head-down,
-    // head-first hit on a goal post is the same injury as one on the boards, and can happen at
-    // walking speed". Key Takeaway 7 says "the screen is the one that can hurt you"; before this
-    // the caption was 1,754 characters of Rule 69 and none of the injury reached it. LAST.
-    //
+    // content/hockey-iq/playing_without_the_puck.md § "Screening the goaltender". LAST.
     // ⚠️ THE FULL STOP AFTER "never duck" IS LOAD-BEARING AND MUST NOT BECOME AN EM DASH.
-    // md_to_speech voices this caption whole, and an em dash here is prosodically identical to
-    // the one the renderer puts after a "Never" label: the negation carries across it and a
-    // listener hears "never keep your head up, never keep your chin off your chest" — the
-    // cervical-flexion mechanism taught as the instruction. The owner was repaired to the full
-    // stop and this caption was not; it stood inverted in the spoken layer for a whole round.
+    // An em dash here lets the negation carry across, and a listener hears "never keep your
+    // head up, never keep your chin off your chest" — the cervical-flexion mechanism taught as
+    // the instruction.
     '⚠️ Never meet a goal post head first, and never duck. Head up, chin off your chest instead. ' +
     'A head-down, head-first hit on a goal post is the same injury as one on the boards, and can ' +
     'happen at walking speed.',

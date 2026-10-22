@@ -86,10 +86,10 @@
  */
 
 // A caption clause that appears in more than one diagram is imported, never
-// retyped. The shoulder clause below was missing from this caption entirely; the
-// census that found it, and why it is owed wherever the posture is prescribed, are
+// retyped. The short wall posture below is shared with the breakouts, forechecking and
+// puck-handling captions; its wording, its order and why it is the short form are
 // in wall_contact_clauses.mjs.
-import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
+import { WALL_POSTURE_SHORT } from './wall_contact_clauses.mjs';
 
 const OWNER = 'content/hockey-iq/risk_management.md';
 
@@ -709,18 +709,17 @@ const pinchCentreDeep = {
   half: true,
   width: 900,
 
+  // SHORTENED 22 October 2026 (~1,752 chars). The caption's own text was narrative only and is
+  // cut to the picture, the count and the question; PINCH_CAVEATS is shared with
+  // pinch-centre-high and is untouched.
   caption:
-    'A pinch at the offensive blue line with the centre below their goal line behind the net — ' +
-    'the arrangement that makes a pinch a bad decision even when it works. Everything in front ' +
-    'of the pinching defenceman is the same as it would be in a good one: the defenceman has left the point ' +
-    'to kill a puck their player is trying to move up the wall, and may well get there ' +
-    'first. What is different is behind the defenceman. The centre has gone below their goal line, at the ' +
-    'far end of the zone from anywhere a third defender can help from, so the defenceman’s partner is the ' +
-    'only player between two of their forwards and the partner’s own end. Beat the pinch and it is a ' +
-    'two-on-one the other way — and it was a two-on-one waiting to happen whether the pinch ' +
-    'came off or not, which is the whole point. So ' +
-    'the question to run before you jump a lane, pinch or activate is not only "am I right?" ' +
-    'but "what happens if I am right and I still miss it?" ' + PINCH_CAVEATS,
+    'A pinch at the offensive blue line with the centre below their goal line — the arrangement ' +
+    'that makes a pinch a bad decision even when it works. In front of the pinching defenceman it ' +
+    'looks like a good pinch; behind them, their partner is the only player between two of the ' +
+    'opposition forwards and your own end. Beat the pinch and it is a two-on-one the other way, ' +
+    'and it was waiting to happen whether the pinch came off or not. So before you jump a lane, ' +
+    'pinch or activate, ask not only "am I right?" but "what happens if I am right and I still ' +
+    'miss it?" ' + PINCH_CAVEATS,
 
   describe:
     PINCH_DESCRIBE_COMMON +
@@ -878,29 +877,30 @@ const crossIceOwnEnd = {
   half: true,
   width: 900,
 
+  // SHORTENED 22 October 2026 (~1,876 chars; owner: shorter is better). Kept: the picture, the
+  // section's instruction (north or behind the net), the convention disclosure with its
+  // above/below-the-circles line, the designed-breakout distinction, the outlet and
+  // undrawn-defencemen notes, the ⚠️ contact limb and the wall posture. The posture is the short
+  // form (coordinator call, 22 October 2026, under the owner's 23 September document-relative
+  // ruling): this section is about passing, so the full mechanics are inherited detail; the
+  // host carries them at its own wall-contact passages. Cut otherwise: restatement only.
   caption:
-    'Your own defensive zone, your own net at the right: the cross-ice pass this section tells you ' +
-    'not to make, and the traffic standing in it. A defenceman has the puck in the strong-side corner ' +
-    'with a forechecker sealing them there, and the pass goes east–west below the tops of the faceoff ' +
-    'circles, across the shaded slot in front of your own goalie. The forward drawn in the middle ' +
-    'is standing beside that lane, and this notation has no stick symbol, so that forward’s reach into it is not ' +
-    'drawn at all. Their third forward is already sliding across, so even when it works it usually ' +
-    'arrives with the forecheck. No rule forbids the pass itself: this is a coaching convention ' +
-    'rather than a law of hockey, and the convention has a line in it — some teams accept a cross-ice ' +
-    'pass above the tops of the circles, where an interception is not a slot chance, and almost ' +
-    'nobody accepts one below them, which is where this one is drawn. It is also not the same play as ' +
-    'the designed cross-ice option in a structured breakout, which is taken only when the middle is ' +
-    'genuinely empty; the middle here is not. The far-side outlet is drawn as a forward, though a ' +
-    'structured breakout may put the weak-side defenceman there instead, and nothing here turns on ' +
-    'which. And their two defencemen are not drawn, so do not count bodies off this picture. ⚠️ And ' +
-    'no contact is drawn: the arriving forward’s route ends in two bars, meaning the route ends there ' +
-    'rather than carrying on through a player, and what an arrival like that may end in depends on ' +
-    'whether your league allows body checking at all. If you are the one collecting a puck on that ' +
-    // KT6'S MID-SENTENCE SLOT, not the tail. This sentence ends on an absolute -- "never turn
-    // your back to anyone coming at you" -- and a hedged clause appended there would read as qualifying it.
-    'wall, take the contact with your skates parallel to the boards, forearm and hip into it — ' +
-    SHOULDER_NOT_THE_SURFACE + ' — head up ' +
-    'and chin off your chest, and never turn your back to anyone coming at you.',
+    'Your own zone, your own net at the right: the cross-ice pass this section tells you not to ' +
+    'make. A defenceman sealed in the strong-side corner passes east–west below the tops of the ' +
+    'circles, across the shaded slot in front of your own goalie. Their forward in the middle ' +
+    'stands beside the lane; the reach of their stick into it is not drawn. Their third forward is already sliding across, so even a completed pass ' +
+    'usually arrives with the forecheck. Move it north or behind the net instead. No rule forbids ' +
+    'the pass: it is a coaching convention, and some teams accept it above the tops of the ' +
+    'circles, almost nobody below them, where this one is drawn. The designed cross-ice option in ' +
+    'a structured breakout is a different play, taken only when the middle is empty; here it is ' +
+    'not. The far outlet could equally be the weak-side defenceman, and their defencemen are not ' +
+    'drawn, so do not count bodies here. ⚠️ No contact is drawn: the sliding forward’s route ends ' +
+    'in two bars, meaning it stops there rather than carrying on through a player, and what an ' +
+    'arrival like that may end in depends on whether your league allows body checking at all. ' +
+    // Its wording and order are WALL_POSTURE_SHORT's -- see wall_contact_clauses.mjs.
+    'If you are the one collecting a puck on that wall, never turn your back to anyone coming ' +
+    'at you, and never duck. ' +
+    WALL_POSTURE_SHORT,
 
   describe:
     'The defending half of the rink, your own net at the right. Three own players are drawn as ' +

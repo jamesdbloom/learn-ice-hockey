@@ -49,11 +49,6 @@
 // in wall_contact_clauses.mjs.
 import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
 
-// A caption clause that appears in more than one diagram is imported, never
-// retyped: a sentence that appears twice is a sentence that can drift once, and
-// this one already had. See rule69_clauses.mjs for why all four still say it.
-import { CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT } from './rule69_clauses.mjs';
-
 // ---------------------------------------------------------------------------
 // 1. Three lanes, and the carrier last to the line — section 4.
 // ---------------------------------------------------------------------------
@@ -190,72 +185,29 @@ const wideEntry = {
   width: 900,
 
   caption:
+    // SHORTENED 22 October 2026 (owner: shorter is better), from 1,964 chars. The only host is
+    // content/systems/zone_entries.md, and the caption is voiced in chunk 026 between that
+    // section's facts block (chunk 025) and its body (chunks 027-028), which voice in full: the
+    // per-book crease-line split (facts Rule line; body "Why stay off the red line too"), the
+    // Heads Up Hockey / Introduction To Body Contact quotations, the 69.3/69.4 goal-voiding test
+    // and the per-book penalties. So CUT here: the CREASE_LINE_IS_THE_CREASE and REFEREE_JUDGEMENT
+    // imports (the structural-reading claim they hedged is gone with them), the "box-out" scope
+    // limb (body: "every level and under every book, checking or not") and the 69.4 tariff.
+    // KEPT, because this is the one layer voiced with no surrounding text: the paint and red-line
+    // instruction, the posture ⚠️ limb with its walking-speed clause, and the in-crease contact
+    // limb -- the permissive-risk case is a screener OUTSIDE the crease touching a goalie IN it,
+    // and 69.3 keys on where the GOALIE is (nhl_rules_layout.txt, 69.3: "while the goalkeeper is
+    // in his goal crease"). Walking speed re-read this session: sources/huh.txt:224-229.
     'The carrier crosses outside the defenceman for the goal line or below, so the defender ' +
-    'has to turn — every stride they take toward the boards is a stride away from the front of ' +
-    'their own net. It needs both supports drawn here, and no contact is drawn. The net drive ' +
-    'stops at the blue paint: keep your feet out of the paint, and off ' +
-    CREASE_LINE_IS_THE_CREASE +
-    // ⚠️ THE POSTURE LIMB. This is the only route in this file that finishes in front of a
-    // goaltender — tip (78, -5), 8.60 ft out, the closest in-front skater arrival in the corpus
-    // per the measurement block on that route below — and the caption stated the arrival with no
-    // posture at all. Voiced alone into content/systems/zone_entries.md, a listener got the net
-    // drive and the crease law and nothing about what to lead with when they get there.
-    //
-    // PRIMARY TEXT, read this session rather than carried in:
-    //   sources/huh.txt:220-229 (USA Hockey, Heads Up Hockey Program Guide) — "almost all on-ice
-    //     cervical spine injuries have been due to the head being slightly flexed (head down)
-    //     while making head-on contact with the boards or goal post", and "A player doesn't have
-    //     to be going at full speed for this to happen -- it can occur at walking speed."
-    //   sources/ibc.txt:1390-1391 (USA Hockey, Introduction To Body Contact) — "Hit the boards or
-    //     goal posts with an arm, a leg, or anything but your head first."
-    //
-    // ⚠️ "ANYTHING BUT YOUR HEAD FIRST" IS ABOUT WHAT YOU LEAD WITH, not about whether your head
-    // may touch a post. Written as "never your head" it becomes an instruction nobody can follow.
-    // ⚠️ AND "IT" IN THE WALKING-SPEED SENTENCE IS THE INJURY, NOT THE COLLISION — the Sources
-    // trailer of the host document makes that reading explicit, so the clause below says the
-    // injury occurs at walking speed rather than that the hit does.
-    // ⚠️ SCOPE IS EVERY BOOK AND EVERY LEVEL. This is not a checking-league point: a box-out,
-    // legal or not, moves you along the same path, and huh.txt attaches the mechanism to the head's
-    // angle, not to whether a check was thrown.
-    //
-    // NOT PROMOTED TO A SHARED CONSTANT. wall_contact_clauses.mjs owns the BOARDS posture and is
-    // held by another agent this round; a second module touching it is the clobbering this file's
-    // own header warns about. If a second caption ever needs this, promote it there, not here.
-    '. ⚠️ Arrive head up and chin off your chest: never meet a goal post head first, and never ' +
-    'duck into one. USA Hockey names the boards and the goal post together as the same ' +
-    'cervical-spine injury, and says the injury can occur at walking speed, so take either with ' +
-    'an arm, a leg, anything but your head first. That is every level and every book, not a ' +
-    'checking-league point: a box-out, legal or not, moves you along the same path' +
-    // ⚠️ THE CONTACT TEST IS KEYED TO THE GOALTENDER'S POSITION, NOT THE ATTACKER'S, AND THIS
-    // CAPTION HAD IT KEYED TO THE ATTACKER'S. It read "any contact once you are in the crease,
-    // and more than incidental contact outside it". Both books key both limbs on the goalie:
-    // NHL 69.3 "while the goalkeeper is in his goal crease" (nhl_rules_layout.txt:6085-6088),
-    // NHL 69.4 "while the goalkeeper is outside his goal crease" (:6110-6113); IIHF 69.3/69.4
-    // are the same in their own words (iihf_rules_v1.1.txt:5555-5580).
-    //
-    // The error was NOT symmetrical, and one direction GRANTED PERMISSION THE BOOKS DO NOT.
-    // The common net-front case — goalie set in his crease, attacker outside it — is 69.3, where
-    // ANY contact the attacker initiates voids the goal. Keyed to the attacker, this caption read
-    // that case as "outside", and told a listener incidental contact there was fine.
-    //
-    // The positioning limb above ("entering the paint") is correctly keyed to the ATTACKER —
-    // 69.3's significant-position ground names the crease and the player in it. Do not "fix"
-    // that one to match this one; they key differently because the rule does.
-    //
-    // ⚠️ The structural-reading hedge is scoped DELIBERATELY. The contact keying is quoted
-    // rule text, and hedging it as "the rule's structure" would make the corpus look less
-    // evidenced than it is. What is a structural reading is the absence of a positioning
-    // ground outside the crease. Owner: content/systems/offensive_zone_play.md.
-    '. Screening from outside the crease without contact is normally legal; what risks the ' +
-    'goal is entering the paint, or making contact with the goalie. On contact it is where ' +
-    'the goalie is that decides, not where you are: any contact you initiate at all while ' +
-    'they are in their crease, incidental or otherwise, and more than incidental contact while they ' +
-    'are out of it. And the goalie is not fair game out there — both books say the appropriate penalty ' +
-    'should be assessed in every case of unnecessary contact. Those are Rules 69.3 and 69.4 ' +
-    'under both the NHL and the IIHF, in the books’ own words. That no clause voids a goal for ' +
-    'where you stood outside the crease reads the rule’s structure rather than anything either ' +
-    'book states in terms; ' +
-    REFEREE_JUDGEMENT,
+    'has to turn — every stride toward the boards is a stride away from the front of their net. ' +
+    'It needs both supports drawn here, and no contact is drawn. The net drive stops at the edge of the blue paint: keep ' +
+    'your feet out of the paint and off the red crease line around it, and screen from there. ' +
+    '⚠️ Arrive head up, chin off your chest: never meet a goal post head first, and never duck. ' +
+    'A head-first hit on a post is the same neck injury as one on the boards, and can happen at ' +
+    'walking speed. That holds at every level, checking or not. The drive is not a licence to ' +
+    'hit the goalie: it is where the goalie is, not where you are, that decides. Contact you ' +
+    'start with a goalie in the crease voids the goal, incidental or not, and a goalie out of ' +
+    'it is not fair game either.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +

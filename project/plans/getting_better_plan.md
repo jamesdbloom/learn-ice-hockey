@@ -130,6 +130,29 @@ The structure is the same as every other page: Key focus → Overview → body �
 
 ## 6. Decisions for the owner
 
+**Owner's answers, 22 October 2026:**
+- **D1:** two pages, "Finding More Ice" and "Practising on Your Own".
+- **D2:** static step frames for every drill, plus pausable animated SVGs only where motion is the point. No GIFs.
+- **D3:** link to any good existing videos, vetted case by case, dated and link-checked; not only governing-body channels.
+- **D4:** a box each for England, Scotland, Wales and Northern Ireland, plus USA, Canada and a general fallback.
+- **D5:** both pages go in Off the Ice, beside Practice and Development, linked from Getting Started Route 1 and the home page.
+- **Drill diagrams (owner, 22 Oct):** the owner will review every skating-drill diagram one by one. They like the style; many are right, but many need tweaks. **Do not publish any drill diagram until the owner has approved it.** The pages' other content can be published once reviewed. **Owner feedback 1 (22 Oct):**
+- Drop "Where" from every drill: all of them can be done in most public sessions.
+- Draw inside-edge and outside-edge drills as one-foot C-cuts, shaped like a C on the ice. Show them as continuous drills, done with as much force and confidence as possible.
+- Do the outside edge three ways:
+  - small step-overs, travelling fairly straight down the ice;
+  - large lean-and-glide arcs with no step-over;
+  - large, sharp C arcs that start facing the boards and end facing the boards, with a full step-over.
+- Do the one-foot slalom four ways: left and right foot, forwards and backwards.
+- One foot jump to the other foot: touch the gliding skate each time with your head up, and jump as you stand back up.
+- One foot cross-over jump: jump from one foot to the other with a crossover, so the free foot jumps over the gliding foot.
+- "Jumping mohawk" is really stepping mohawks.
+- New drills: continuous crossovers, forwards and backwards, described as cross-unders. Do one crossover in one direction, step onto the inside edge, cross over back, step onto the inside edge, and keep going.
+
+Off-ice stick drills will also get diagrams in the same style; the owner will send that list later.
+- **D6:** NotebookLM and Detailed (ElevenLabs) episodes for each page once it ships; no Basics episode.
+
+
 | # | Question | Recommendation |
 |---|---|---|
 | D1 | One page ("Getting Better on Your Own") or two ("Finding More Ice" + "Practising on Your Own")? | **One**, with clear sections. Two if the drills section gets long once the pilot is done. |
