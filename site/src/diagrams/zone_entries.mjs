@@ -355,8 +355,8 @@ const wideEntry = {
 // ---------------------------------------------------------------------------
 
 // In OPEN ICE, deliberately. The section carries a safety override that outranks
-// the play: "Curl in open ice, not against the wall. Never turn your back to the
-// checker." A curl-back drawn against the wall would be the corpus
+// the play: "Curl in open ice, not against the wall. Never turn your back to anyone
+// coming at you near the wall." A curl-back drawn against the wall would be the corpus
 // teaching the behaviour it says is most associated with catastrophic spinal
 // injury, so this one is in the middle third of the ice and nowhere near it.
 const DELAY_AT = { at: 'blue-line', dx: -3, dy: -10 };    // (22, -10)
@@ -379,7 +379,7 @@ const delayCurl = {
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
     // in its own <p> with a 700 ms break either side -- verified this session by rendering
     // zone_entries.md through md_to_speech.py, chunk 035. Ending it at "never turn your back to
-    // an oncoming checker near it" leaves a reader tight to the wall a prohibition and no permitted
+    // anyone coming at you near it" leaves a reader tight to the wall a prohibition and no permitted
     // alternative, and the move that satisfies "curl away from the wall" plus "never turn your back"
     // is the one the section names as the error: turning away INTO the boards. The section
     // carries the counterweight in four other layers and this was the layer without it --
@@ -394,16 +394,20 @@ const delayCurl = {
     // Hockey does not say it about turning your back". The walking-speed finding belongs to the
     // head-down collision only and is deliberately NOT carried here.
     //
-    // Wording taken word for word from the owner rather than compressed:
-    //   "Turning your back to an oncoming checker makes the contact a hit from behind"
-    //     -- zone_entries.md:453, and body_contact_and_battles.md:692.
+    // Wording taken from the owners rather than compressed. Sections named, not line
+    // numbers -- the line numbers this note once carried had all moved. Re-grep before
+    // trusting any of these as verbatim:
+    //   "makes the contact a hit from behind" -- zone_entries.md §5 override blockquote
+    //     ("Never turn your back to anyone coming at you near the wall — it makes the
+    //     contact a hit from behind").
     //   "A chin tucked to the chest straightens the cervical spine"
-    //     -- body_contact_and_battles.md:682, verbatim.
+    //     -- body_contact_and_battles.md §6 facts block ("Key:" line).
     //   "if you cannot get off the boards take the contact rather than turning away into them"
-    //     -- zone_entries.md:475, verbatim.
-    //   "skates parallel to the wall, forearm and hip into it, head up and chin off your chest"
-    //     -- zone_entries.md:476, verbatim.
-    //   "never duck" -- body_contact_and_battles.md, "Never turn your back to the checker, never duck."
+    //     -- zone_entries.md §5 facts block ("Never:" line).
+    //   "skates parallel to the wall, forearm and hip into it" -- zone_entries.md facts
+    //     blocks ("Technique:" lines), which also carry the shoulder clause the caption uses.
+    //   "never duck" -- body_contact_and_battles.md, "never turn your back to anyone coming
+    //     at you, never duck" (Key Takeaway 7).
     //
     // NO BODY-CHECKING LEVEL CAVEAT HERE, on purpose. This is how to RECEIVE contact, and
     // body_contact_and_battles.md:649 is explicit that its receiving section is to be read

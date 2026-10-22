@@ -654,7 +654,9 @@ export function rinkSvg(opts = {}) {
   //
   // It is a footer rather than a caption because it must not reach the speech
   // transform: a listener being told "drill notation: see Reading the diagrams"
-  // before every diagram learns nothing and loses the thread. Speech gets <title>.
+  // before every diagram learns nothing and loses the thread. Speech gets the caption,
+  // which md_to_speech.py reads from site/src/data/diagrams.json — never the SVG itself,
+  // so neither <title>, <desc> nor this footer reaches a listener.
   const foot = opts.footer ? 5 : 0;
   const vb = half
     ? `-2 ${-S.width / 2 - 2} ${S.length / 2 + 4} ${S.width + 4 + foot}`
@@ -2120,7 +2122,12 @@ export function playSvg(spec, opts = {}) {
   // with the glyphs themselves so a label never lands on a player.
   const labelled = (spec.players ?? []).filter((pl) => pl.label);
   const players = glyphs + '\n    ' + placeLabels(
-    labelled.map((pl) => { const p = loc(pl.at); return { text: pl.label, x: p.x, y: p.y }; }),
+    // `labelHint: [dx, dy]` (rink feet from the player) is the placer's `hint`: tried first,
+    // and honoured only if it passes the same collision, on-ice and ownership tests as every
+    // other candidate. It exists for full-sheet labels the greedy offsets park on a painted
+    // line; a spec without one places exactly as before.
+    labelled.map((pl) => { const p = loc(pl.at);
+      return { text: pl.label, x: p.x, y: p.y, ...(pl.labelHint ? { hint: pl.labelHint } : {}) }; }),
     { size: 2.8 * TXT, half: opts.half ?? true,
       reserve: [
         ...(spec.players ?? []).map((pl) => { const p = loc(pl.at); return { x: p.x, y: p.y, w: 7, h: 8 }; }),

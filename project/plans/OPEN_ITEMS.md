@@ -590,7 +590,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
 - **check_readability:** counts a whole blockquote, including a long `**Related:**` nav line, as one paragraph, so page headers are inflated. Exclude Related lines, or measure blockquote paragraphs separately (Y wave, y3).
 - **SG7 and SG8 are CLOSED for 25 content files** (record: project/reviews/sg7_sg8_boards_line_and_carha_ban_2026-10-21.md). What is still open:
   - **SG7 remainder.** About 29 diagram caption and label strings still say "back to the checker". zone_entries says "never turn your back to an oncoming checker" at :427, :461, :564 (facts), :573, :925 and :964, and in its zone_entries.mjs captions :378/:419. special_teams :842 still says "five-man". DTR facts :330 opens "Hitting a man's back" (pronoun ruling). Fix it site by site, with a layer test.
-  - **SG7 last bits: DONE 21 Oct** (record sg7_last_bits_2026-10-21.md). Still open: stale source comments in about 10 diagram modules quote the old line as "word for word". Readers never see them.
+  - **SG7 last bits: DONE 21 Oct** (record sg7_last_bits_2026-10-21.md). The stale diagram-module comments are fixed in SG12.
   - **SG8 remainder.** Some facts lines had no room for the 32(d) ban; the body text on each page carries it. They are center :485, OZP :927, FC :864, switching :250, OIC :282, pwtp :708/:713/:714, defender :124/:581, NZ :735, faceoffs :567 and winger :102. Winger KT8 omits the CARHA 66(e) injury ban.
   - **Rules to keep (sg7_fix_rules.md).** 32(d) applies only to a game misconduct that comes with a MAJOR: not to a match (34(a)), not to a 53(a) minor plus game misconduct (32(b) reports that to the Chairman), and not to an accidental high stick (a reading, not a ruling). Where a CARHA ban sits beside a USA Hockey game misconduct, name 404(b) too.
   - CARHA 62(b) makes a follow-through above the shoulders a major even if no one is hurt. No slap-shot site except shooting :983 says so. Routing note: send agents to sources/hc.txt, not hc_2026-08-print.txt.
@@ -604,7 +604,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
   - forechecking :663 and OZP :1000 list "a hit from behind" as a game misconduct example. Under USAH 608(a) it can be a minor plus misconduct; consider "a major for a hit from behind". This errs on the harsh side.
   - The earlier "older candidates" are covered by the once-per-page lines: faceoffs :1222 by :295/:306, puck_handling KT10 and the CM cage-grab by :491/:530, and center facts :765 by :732.
 - **Site-reviewer pass DONE 21 Oct** (record site_review_pass_2026-10-21.md). Every deferred item passes, with 0 bare glyphs, 0 panels and a clean console across 39 pages × 2 widths × 2 themes. New rows:
-  - sr1, sr2, sr4 and sr5 are DONE 21 Oct (record cleanup_sr_nits_2026-10-21.md). Still open: the §10 and DZC tables still overflow by 15–117 px at about 960–1040 and 1280–1320 px (cell min-width 7rem × 6). The scroll shadow is faint in dark mode.
+  - sr1, sr2, sr4 and sr5 are DONE 21 Oct; the §10/DZC table overflow and the faint dark scroll shadow are DONE in SG12 (sg12_site_leftovers_2026-10-22.md).
   - **DONE 21 Oct (record basics_nav_and_diagram_titles_2026-10-21.md):**
     - The Basics now appears in the header and on the home page (owner request).
     - All 204 diagrams have short accessible names. The rink-map-end-zone title is fixed.
@@ -613,7 +613,7 @@ Line numbers are working-tree lines at time of check. Brief each one as a CLAIM 
     - Diagram `<title>`s: 85 fall back to the diagram id (`shortTitle()` in site/scripts/lib/rink.mjs), so a screen reader announces e.g. "Nz 1 4". 58 titles repeat inside their own caption.
     - rink-map-end-zone has no title, so its image has no accessible name. Fix it in its diagram module.
     - Stale comments at rink.mjs :597 and build-diagrams.mjs :387–389 still describe the old arrangement.
-  - The nz-1-4 drawing has lines through some labels ("chips it past", "nobody is deeper", "races onto it", "the one"). This is cosmetic.
+  - nz-1-4 labels DONE in SG12. Open: diagram leader lines start at each token's centre and cross its own letter (placeLabels in rink.mjs, all diagrams); other full-sheet diagrams may have labels crossing painted lines (no checker measures it).
   - sr3 is DONE (hfb_scope_and_sr3_2026-10-21.md); the forechecking :808 CARHA leftover is DONE in SG10 (sg10_small_accuracy_rows_2026-10-22.md).
 
 - **equipment :441:** the IIHF prints "opposing Player(s)" with a capital P, while the shared quotation uses NHL/PWHL casing. Note it if the quote is ever credited to the IIHF alone.

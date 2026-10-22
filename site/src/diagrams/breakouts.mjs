@@ -527,7 +527,7 @@ const rim = {
     // IF YOU CAN HELP IT -- head up and chin off your chest", so the comment was citing KT6 while
     // deleting a clause from it. The sibling scan-before-a-wall-reception had already ruled the
     // other way with the same sources read.
-    // PROHIBITION PLUS INSTRUCTION, never a prohibition alone: "never turn your back to the checker, never duck" is
+    // PROHIBITION PLUS INSTRUCTION, never a prohibition alone: "never turn your back to anyone coming at you, and never duck" is
     // followed by the posture that replaces them.
     '⚠️ This is a wall play at both ends. D1 is sealed on the boards and the winger takes it on ' +
     // W33: "If you are the skater on the wall" — this caption is voiced into goaltender.md too,

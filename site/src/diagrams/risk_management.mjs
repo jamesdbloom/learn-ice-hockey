@@ -897,7 +897,7 @@ const crossIceOwnEnd = {
     'rather than carrying on through a player, and what an arrival like that may end in depends on ' +
     'whether your league allows body checking at all. If you are the one collecting a puck on that ' +
     // KT6'S MID-SENTENCE SLOT, not the tail. This sentence ends on an absolute -- "never turn
-    // your back to the checker" -- and a hedged clause appended there would read as qualifying it.
+    // your back to anyone coming at you" -- and a hedged clause appended there would read as qualifying it.
     'wall, take the contact with your skates parallel to the boards, forearm and hip into it — ' +
     SHOULDER_NOT_THE_SURFACE + ' — head up ' +
     'and chin off your chest, and never turn your back to anyone coming at you.',

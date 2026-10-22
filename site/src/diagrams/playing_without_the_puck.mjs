@@ -215,7 +215,7 @@ const loosePuckWhoGoes = {
     'neck injury." Neither warning depends on the ' +
     'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
     // KT6's mid-sentence slot rather than the tail: the caption ends on two absolutes
-    // ("never turn your back to the checker, and never duck") and a hedged clause appended after them
+    // ("never turn your back to anyone coming at you, and never duck") and a hedged clause appended after them
     // would read as qualifying them.
     'skates parallel to it, take the contact on your forearm and hip — and ' +
     SHOULDER_NOT_THE_SURFACE + ' — head up and chin off ' +

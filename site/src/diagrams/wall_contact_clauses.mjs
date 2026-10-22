@@ -61,7 +61,7 @@
  *
  * ⚠️ PLACE IT AFTER THE POSTURE, NEVER AFTER A PROHIBITION. The clause must
  * follow "forearm and hip … chin off your chest". Appended instead to "never
- * turn your back to the checker", its "if you can help it" attaches backwards to
+ * turn your back to anyone coming at you", its "if you can help it" attaches backwards to
  * an absolute. Three captions were restructured rather than have it appended
  * there.
  */

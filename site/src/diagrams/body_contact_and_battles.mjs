@@ -837,10 +837,10 @@ const angleIntoTheCorner = {
   // "cannot turn," applies to this sentence too.
   // ⚠️ TWO SENTENCES, NOT ONE COMMA LIST — the §6 form, at "Get your skates parallel to the
   // wall and put your forearm and hip to it — not the point of your shoulder, not the whole
-  // shoulder if you can help it, and never turn your back to the checker. Head up, chin off
-  // your chest." (That
-  // quotation carried only the tip limb until 19 Sep 2026; body_contact_and_battles.md:788
-  // now carries both, and the caption below was brought to it in the same edit — see the
+  // shoulder if you can help it. Head up, chin off your chest, and never turn your back to
+  // anyone coming at you." (That
+  // quotation carried only the tip limb until 19 Sep 2026; the §6 bullet in
+  // body_contact_and_battles.md now carries both, and the caption below was brought to it in the same edit — see the
   // SHOULDER note below.) Run as one list, the "not ... your shoulder" is still
   // live when the list resumes after the comma, and a listener carries it across into the tail:
   // "never ... knees bent, head up and chin off your chest" — the cervical-flexion mechanism

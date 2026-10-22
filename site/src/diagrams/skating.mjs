@@ -92,8 +92,8 @@
  * "### Edge work in traffic" — THE CUTBACK WAS DROPPED FOR A SAFETY REASON, NOT A
  * DRAWING ONE, and the reason belongs on the record. The section puts it "with the puck
  * along the wall". `entry-delay-curl` (zone_entries.mjs) already draws the reversal, and
- * its caption states in terms why it is drawn OUT IN OPEN ICE: "Curl in open ice, not
- * against the wall. Never turn your back to the checker." A skating diagram
+ * its caption states in terms why it is drawn OUT IN OPEN ICE: "curl away from the
+ * wall, and never turn your back to anyone coming at you near it." A skating diagram
  * showing a carrier turning back against the wall would put a picture in the corpus that
  * another caption exists to warn against, and this document's own boards rule outranks
  * every stride in it. If a cutback is ever drawn, draw it where that caption draws it.

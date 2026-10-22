@@ -1374,11 +1374,13 @@ figcaption .warn-inline {
   /* The fade colour is a variable so a table nested in a callout can fade from
      the CALLOUT's tint instead of the page's. See `.callout .table-scroll`. */
   --table-fade: var(--bg-raised);
+  /* The shadow colour is a variable for the same reason; dark mode resets it below. */
+  --table-shadow: rgb(0 0 0 / 22%);
   background:
     linear-gradient(to right, var(--table-fade) 30%, transparent) left center,
     linear-gradient(to left, var(--table-fade) 30%, transparent) right center,
-    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 22%), transparent) left center,
-    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 22%), transparent) right center;
+    radial-gradient(farthest-side at 0 50%, var(--table-shadow), transparent) left center,
+    radial-gradient(farthest-side at 100% 50%, var(--table-shadow), transparent) right center;
   background-repeat: no-repeat;
   background-size: 3rem 100%, 3rem 100%, 0.9rem 100%, 0.9rem 100%;
   background-attachment: local, local, scroll, scroll;
@@ -1387,22 +1389,27 @@ figcaption .warn-inline {
   scrollbar-width: thin;
 }
 
-/* The shadow needs more punch on a dark surface to read at all. */
+/*
+  The shadow needs more punch on a dark surface to read at all — and darkening
+  does not give it. This used to be 55% black, which on the dark `--bg-raised`
+  (#1b1e23) paints about #0c0e10: a luminance contrast of roughly 1.15:1, and a
+  site review on 21 October called it faint. A dark surface reads an edge by
+  LIGHTENING, so dark mode draws the cue in `--border-strong` (#3d444d, about
+  1.7:1 against the surface), the same token every other strong edge uses.
+
+  ⚠️ These two blocks used to restate the whole `background-image` with
+  `--bg-raised` written in place of `--table-fade`, so in dark mode a table in a
+  callout faded from the PAGE's surface rather than the callout's tint — the
+  exact thing `.callout .table-scroll` below exists to prevent. Setting only the
+  variable leaves the layers, and the callout fade, to the base rule.
+*/
 :root[data-theme='dark'] .table-scroll {
-  background-image:
-    linear-gradient(to right, var(--bg-raised) 30%, transparent),
-    linear-gradient(to left, var(--bg-raised) 30%, transparent),
-    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 55%), transparent),
-    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 55%), transparent);
+  --table-shadow: var(--border-strong);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) .table-scroll {
-    background-image:
-      linear-gradient(to right, var(--bg-raised) 30%, transparent),
-      linear-gradient(to left, var(--bg-raised) 30%, transparent),
-      radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 55%), transparent),
-      radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 55%), transparent);
+    --table-shadow: var(--border-strong);
   }
 }
 
@@ -1456,7 +1463,9 @@ figcaption .warn-inline {
   header, and at 1440 that alone pushed the six-column tables past the column:
   rules_primer §10 by 17px (its last header half-cut at the wrapper's edge) and
   the DZC system comparison by 99px, overflows too small for the scroll cue to
-  read as one. With wrapping both fit at 1440 and most desktop widths, and overflow far less where they still scroll (about 960–1040 and 1280–1320). Phones keep `nowrap`: there a six-column
+  read as one. With wrapping both fit at 1440 and most desktop widths; the
+  narrow bands where they still did not are handled by the "tight" rule below
+  `.table-scroll--tall`'s cap. Phones keep `nowrap`: there a six-column
   table scrolls whatever the header does, and a wrapped header in a 7rem column
   becomes a three-line ribbon the sticky row label then has to clear.
 */
@@ -1582,6 +1591,53 @@ figcaption .warn-inline {
 @supports (max-height: 70svh) {
   .table-scroll--tall {
     max-height: var(--table-max-h, 70svh);
+  }
+}
+
+/*
+  The six-column tables, made to FIT where they nearly did.
+
+  Wrapping headers (above) left two bands where both six-column tables still
+  overflowed by too little for the scroll cue to read: the narrow end of the
+  two-column layout and the narrow end of the three-column one, where the
+  content column is `viewport − 370px` and `viewport − 650px`. Measured on the
+  built site with a headless Chrome, before this rule: rules_primer §10 over by
+  117px at 960 falling to 37 at 1040, and 109 at 1248 falling to 37 at 1320;
+  the DZC comparison 95→15 and 87→15 over the same widths; and below 60rem,
+  where the header does not wrap at all, DZC over by 20px at 900 and §10 by 38
+  at 800.
+
+  ⚠️ LOWERING THE FLOOR ALONE DOES NOT DO IT. With `min-width: 0` §10 was still
+  ~110px over: its columns are held open by single words ("Recommended",
+  "endangerment", "intermissions") plus 1.5rem of padding each. It takes all
+  three — a 5rem floor, 0.5rem side padding, and hyphenation (the page is
+  `lang="en-GB"`, so `hyphens: auto` has a dictionary) — and then both tables
+  fit at every width from 640 up, with the header at most 81px, under the
+  5.25rem `--table-head-h` the sticky row label clears.
+
+  Scoped to `--tall` (the plugin's five-or-more-column tables, which are exactly
+  these two) and to the bands that need it, so no other table and no wide
+  layout changes. Phones, under 40rem, are untouched: a six-column table cannot
+  fit there and scrolls honestly, by hundreds of pixels, which the cue does
+  carry. If the sidebar or TOC widths change, these bands go stale — the failure
+  is the old small overflow coming back, still scrollable, not a clip.
+*/
+@media (min-width: 40rem) and (max-width: 71.99rem), (min-width: 78rem) and (max-width: 87.99rem) {
+  .table-scroll--tall {
+    --table-head-h: 5.25rem;
+  }
+
+  .table-scroll--tall th,
+  .table-scroll--tall td {
+    min-width: 5rem;
+    padding-inline: 0.5rem;
+    hyphens: auto;
+    /* No break inside a word under 8 letters (site review, 22 Oct): "ma-jor" and "of-ten" read as a bug. */
+    hyphenate-limit-chars: 8 4 4;
+  }
+
+  .table-scroll--tall thead th {
+    white-space: normal;
   }
 }
 

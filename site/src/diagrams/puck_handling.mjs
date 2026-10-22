@@ -278,7 +278,7 @@ const puckOnTheFarSide = {
     'prohibition is a rule for fast checkers only. Get your skates parallel to the wall and take ' +
     'the contact on your forearm and hip, head up and chin off your chest' + SHOULDER_TAIL +
     // The clause sits after the POSTURE and before the two quoted warnings, never after them:
-    // appended to "never turn your back to the checker" its "if you can help it" would attach
+    // appended to "never turn your back to anyone coming at you" its "if you can help it" would attach
     // backwards to an absolute.
     ' USA Hockey addresses ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From

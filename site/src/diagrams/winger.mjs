@@ -556,10 +556,11 @@ const arrivingAtTheLine = {
  * point is drawn still manned for the same reason.
  *
  * THE SAFETY LINE IS SHARED WITH `winger-dz-rim` AND `winger-dz-reverse`, AND
- * THE SHARED SPAN HAS TWO ENDS. It runs word for word from "never turn your
- * back to the checker" through to "head up and chin off your chest". OUTSIDE that
- * span the three differ on purpose: the other two are prefaced with Whichever
- * you are playing, because each of them draws a pair of plays and the override
+ * THE SHARED SPAN HAS TWO ENDS. It runs word for word (bar the capital N here)
+ * from "never turn your back to anyone coming at you" through to "not the whole
+ * shoulder if you can help it." OUTSIDE that
+ * span the three differ on purpose: the other two are prefaced with "Rim or
+ * reverse", because each of them draws a pair of plays and the override
  * covers both, where this one is not; and this one alone closes with the two
  * sentences saying that nothing in the picture is contact and nothing in it is
  * a licence to hit.

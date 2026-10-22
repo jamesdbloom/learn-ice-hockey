@@ -404,20 +404,26 @@ const flat14 = {
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
-    { id: 'F', team: 'opp', pos: 'F', at: FOUR_CARRIER, label: 'chips it past' },
-    { id: 'F', team: 'opp', pos: 'F', at: FOUR_CHASER, label: 'races onto it' },
+    // LABEL HINTS, nz-1-4 only. At full-sheet text size no label here is narrower than a
+    // half of the neutral zone, so each one has to cross a painted line somewhere. The hints
+    // put that line in a WORD GAP rather than through a letter (glyph advances measured in
+    // headless Chrome: the space in each label is ~1.3 ft, the red and blue lines 1 ft), and
+    // lift "races onto it" clear of the neutral-zone dot it used to sit on. Positions of
+    // players and routes are untouched; only where the words sit moved.
+    { id: 'F', team: 'opp', pos: 'F', at: FOUR_CARRIER, label: 'chips it past', labelHint: [-1.17, 8] },
+    { id: 'F', team: 'opp', pos: 'F', at: FOUR_CHASER, label: 'races onto it', labelHint: [15.93, 10.5] },
 
     { id: 'G', pos: 'G', at: OUR_G },
     // "F1 standing near the red line doing nothing -> 1-3-1 or 1-4" — the section's
     // own reading drill, so that is where F1 is drawn.
-    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: 6, dy: 2 }, label: 'the one' },
+    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: 6, dy: 2 }, label: 'the one', labelHint: [-5.38, -7.5] },
     // The four. Evenly spread; lane assignment is a drawing choice and the caption
     // says so. Nobody is deeper than anybody else — that flatness is the weakness
     // the chip exploits, so it must be exactly true in the picture.
     { id: 'F', pos: 'F', at: { at: OUR_BLUE, dy: 30 } },
     { id: 'D', pos: 'D', at: { at: OUR_BLUE, dy: 10 } },
     { id: 'D', pos: 'D', at: { at: OUR_BLUE, dy: -10 } },
-    { id: 'F', pos: 'F', at: { at: OUR_BLUE, dy: -30 }, label: 'nobody is deeper' },
+    { id: 'F', pos: 'F', at: { at: OUR_BLUE, dy: -30 }, label: 'nobody is deeper', labelHint: [1.76, -7.5] },
   ],
 
   routes: [
