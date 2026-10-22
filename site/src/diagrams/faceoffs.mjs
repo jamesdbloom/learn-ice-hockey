@@ -265,7 +265,7 @@ const dzoneAlignment = {
     // caption whichever glyph carries it.
     'must keep both skates outside the circle and outside the hash marks. ⚠️ If you are not ' +
     'taking the draw, keep your skates ' +
-    'and your stick behind your own hash mark, and your hands and ' +
+    'and your stick behind your own hash mark, your skates off the circle line, and your hands and ' +
     'body off the opponent beside you: that position satisfies every book, whichever one your game ' +
     'is played under. Whether touching the ' +
     'line is safe is not the same in every book. The NHL, the IIHF and the PWHL permit skate ' +

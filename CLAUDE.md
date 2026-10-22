@@ -1344,6 +1344,9 @@ project/plans/      **The plan. `OPEN_ITEMS.md` is the only one.** It holds ONLY
                     ⚠️ ONE EXCEPTION, and it is the owner's: `PODCAST_MANUAL_STEPS.md` — the
                     logins, vendor signups, ear test and listening pass only a human can do.
                     It is not a dispatch queue and no agent works from it.
+                    ⚠️ A SECOND, ALSO THE OWNER'S (22 Oct 2026): `getting_better_plan.md`,
+                    the design for the new Getting Better page, lives here at the owner's
+                    request. Its open work is still rows in OPEN_ITEMS.md.
                     ⚠️ THIS RULE HAS BEEN BROKEN ONCE AND IT COST SOMETHING. It was written
                     24 August 2026 (`ec70b16`) after four plan files made "what is open" have
                     no single answer and items were "rediscovered rather than read". On

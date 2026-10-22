@@ -2253,3 +2253,25 @@ Measures) was not compared.
 - ⚠️ **A cross-reference slip in Hockey Canada's own book: 8.5(b) Note 1.** It reads *"See Rule 7.4 (b)(Interpretation 2) – Charging, for the definition of "charging""* (`hc.txt:7013`; identical in `hc_2026-08-print.txt` and `hc_layout.txt`). That target does not exist. Interpretation 2 is attached to **7.4(a)** and defines a *blindside hit*. The interpretation attached to 7.4(b) is **Interpretation 3**, and it is not a definition either: it says crease contact that could be called charging is a major plus game misconduct for interference, pointing back to 8.5(b). **The definition of charging is Rule 7.4's own opening list, i–v** (jumps, two or more strides, excessive distance, violent and unnecessary, blind side; `hc.txt:6058-6077`). Two earlier records each got half of this wrong: one said the pointer should read "Interpretation 3", another said "7.4(a)". Cite 7.4's list for the definition and do not repeat the book's pointer. Recorded, not repaired; the slip is the book's. Same species as the USA Hockey 610 lettering entry at the top of this file.
 - **`carha_2026.txt` / `carha_2026_layout.txt`: the CARHA Hockey 2026 rulebook** (`https://carhahockey.ca/wp-content/uploads/2026/09/RuleBk-2026e.pdf`, sha256 `c7f64d67…`). It is added **alongside** `carha.txt` (the 2020 interactive book, which corpus citations named until wave 36; since 15 October 2026 they cite the 2026 book and say they were read in the 2020 printing), not in place of it. Research reported that numbering and text are unchanged except two provisions: the face-off location after the puck leaves play, and shootout eligibility (players serving a penalty are ineligible). ✅ **Owner ruling, 15 October 2026: relabel every CARHA citation to the 2026 book.** A full diff (wave 35 research) found every rule and quotation the corpus cites unchanged. The only changes are 75(a) (face-off location) and shootout eligibility, which appears in 85(c), in Section Seven and in Case Situation 85. **Cite `carha_2026.txt`. `carha.txt` (2020) is kept for comparison.**
 
+- **`ihuk_sex_gender_policy.pdf` / `.txt` / `_layout.txt`: "The Sex & Gender Participation Policy for Ice Hockey in the UK"** (fetched 22 October 2026). It is public but not linked from any IHUK or EIH page; it was found through the sites' WordPress media search.
+  - Two byte-identical copies:
+    - `https://icehockeyuk.co.uk/wp-content/uploads/2025/03/IHUK_-Sex-Gender-Participation-Policy.pdf`
+    - `https://englandicehockey.com/wp-content/uploads/2025/11/IHUK_-Sex-Gender-Participation-Policy.pdf`
+  - 154,397 bytes, sha256 `1c03b772…b9f432`, 9 pages, PDF created 7 March 2025. **The body carries no version or date.**
+  - Authors: approved by IHUK, EIH, SIH and the EIHL together (§2.1). "IHUK Sex & Gender Participation Policy" is the WNIHL Rules of Competition's own label for it.
+  - Operative section §10.1:
+    - U11 and below is mixed.
+    - U12–U18 players play in the category of their birth sex, with routes for transgender and non-binary players.
+    - The female category is birth-sex female.
+  - ⚠️ **It supersedes EIH Rules & Regulations 2024-25 R&R 7.2** ("male netminders U16" in the WNIHL; `eih_rr.txt:194`), as do the WNIHL Rules of Competition 2026-27 (`ihuk_wnihl_roc.txt:702-707`).
+- **`eih_dops_2026-27.pdf` / `.txt` / `_layout.txt`: IHUK/EIH DOPS Rules and Procedures 2026-2027**, `https://englandicehockey.com/wp-content/uploads/2026/08/DOPS-Rules-and-Procedures-2026-2027.pdf` (fetched 22 October 2026, 437,792 bytes, sha256 `49e6f0dd…2dc42f`, 23 pages, in force from 1 September 2026).
+  - Jurisdiction (§5): IHUK-registered participants whose club is based in England or Wales. Scotland and Northern Ireland "will be subject their own discipline policies".
+  - It is the likely "Discipline Policy" behind the English half of In-House Rule 28.
+- **Not on disk, recorded 22 October 2026:**
+  - **EIHL Roster Regulations:**
+    - 2025/26: the article links `/document/135-…`, which returns 404 and is not in Wayback.
+    - 2026/27: none published.
+    - The last archived edition is 2024-25 (Wayback `20250317172538`, superseded).
+  - **EIHL DOPS:** HTML page only (`eliteleague.co.uk/dops`); no rules document is published. The written tariff is the Casebook's ladder.
+  - **SIHA Discipline Policy:** `scottishicehockey.co.uk` was blocked by a local corporate proxy (Zscaler) during this session, which is not a site failure. Retry from another network.
+  - **PWHL:** the on-disk 2025-26 PDF is byte-identical to what `thepwhl.com/en/rules` serves as "most up-to-date" (re-checked 22 October 2026). Expect a 2026-27 book around mid-November 2026.

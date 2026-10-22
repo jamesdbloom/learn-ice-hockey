@@ -13,20 +13,19 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG21 (22 Oct):** rules rows on files outside SG20: body_contact (interference facts 21.1, "Important." runs, lost "If"); center + winger (faceoff line/stick scope); zone_entries + glossary (6.11(d)(i), CARHA 32(d)); puck_handling.mjs captions (puck-decides, far-side). Uncommitted.
-
-- **SG22 (22 Oct):** conditioning ice-bath claim scoped (uncommitted, needs review); source-verifier passes on equipment.md citations, the PWHL edition, and EIHL/IHUK documents (report only).
+(none)
 
 ## New page: Getting Better on Your Own
 
-The design and its reasoning are in [`../getting_better_plan.md`](../getting_better_plan.md). Nothing is
-drafted yet, and nothing ships until the owner says it is ready.
+The design and its reasoning are in [`getting_better_plan.md`](getting_better_plan.md). Draft drill
+diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 1. **Owner decisions D1–D6** (section 6 of the design file): one page or two; step frames or animation;
    link existing videos or not; which locations get a "where to look" box; Off the Ice or Getting
    Started; podcast episodes.
 2. **Sources on disk:** each governing body's club and programme finder, and a few rinks' public-session
    rules, saved as dated snapshots in `sources/` with `sources/README.md` entries.
+2a. **Drill diagram drafts (22 Oct):** all 39 public-skating drills drawn as top-down SVGs with cards in `project/getting_better_drafts/` (kit `lib/draw.mjs`; `build.mjs`, `preview.mjs`); a private preview was published for the owner (link in the 22 Oct session; rebuild with `preview.mjs`). **Owner to confirm** the drill readings in the amber boxes (lemons/"crossing under", soft drag, anchor, jam/punch turns, mohawk form, cross-over jump, "toe down first", one-foot stop in front, parallel vs side-by-side stop, backward stops). Then: content and safety review of the cards; fold the kit into site/scripts diagrams if the style is approved.
 3. **Diagram groundwork:** a skate-track view (from above) and one shared stick-figure module for body
    position.
 4. **Pilot:** the public-skating rules section and three drills with diagrams (one skating, one stick, one
@@ -56,25 +55,13 @@ drafted yet, and nothing ships until the owner says it is ready.
 
 ## Content: rules accuracy (each needs a rules-verifier)
 
-- **Faceoff line contact on other pages:** Hockey Canada and CARHA count a skate on the circle as
-  encroachment, and they, plus USA Hockey, keep the stick out from between the hash marks. Check center,
-  winger, faceoffs and the rest for unscoped "touching the line is allowed" or "stick may be inside".
-- **body_contact interference facts line** ("Interference is not capped at a minor — NHL 56.4…"): no
-  NHL/PWHL 21.1 limb, and it is at the 300-character cap, so it needs a split or substitution.
-- **on_ice_communication shorthanded icing:** NHL and PWHL bar icing when a team is short-handed by a major
-  with no player in the box to come out (nhl_rules.txt:8681). Add it to the body, not the Key Takeaway.
-- **puck_handling caption `the-puck-decides-not-you`:** "Hockey Canada also counts where you are" reads HC
-  10.2(a)(v) as player location; Interpretation 5 rules on puck location.
-- **zone_entries:** "Hockey Canada 6.11(d)(i) can whistle a knowing play … but only once made" is narrower
-  than the book ("plays or attempts to make a play"). Errs safe; low.
-- **language_and_glossary CARHA high stick:** "with at least a one-game suspension (30(a), 32(d))"
-  over-reaches for an injuring accidental high-stick major, which 32(d) excludes. Harsher; low.
+- **faceoffs taker's restraining lines:** render Hockey Canada Figure 7 ("Face-Off Restraining Lines", no text layer) to confirm "face-off restraining lines" in 6.2(a) means the L-lines, which faceoffs :733 assumes (errs safe either way). Optionally name PWHL 78.7(iv) beside the NHL/IIHF permission at :719/:733.
+- **on_ice_communication KT13 and CM** name the NHL and IIHF for the shorthanded icing exemption but not the PWHL (83.6 has it). Omission; low.
 - **Optional citation precision:** breakouts and defensive_zone_coverage cite "Hockey Canada 10.1" where
   10.1(i) is meant.
 
 ## Content: safety, readability and wording
 
-- **faceoffs dzone caption** (faceoffs.mjs, `faceoff-dzone-alignment`): "keep your skates and your stick behind your own hash mark… satisfies every book" omits "and off the circle line" (HC/CARHA encroachment). Shared by center, winger, defender modules.
 - **Repetition pass:** the readability waves only split and shortened what check_readability flagged. No
   page has had a pass for repetition and throat-clearing.
 - **Spoken "Important." runs of four:** six in body_contact (two new in SG19: kneeing/clipping and
@@ -124,11 +111,8 @@ drafted yet, and nothing ships until the owner says it is ready.
 
 ## Sources
 
-- **EIHL roster/registration and discipline (DOPS) documents** are not on disk: fetch them, or record
-  them as unobtainable.
-- **IHUK policy documents** (for example the Sex & Gender Participation Policy cited by
-  team_play_and_culture) are not on disk: fetch them, or record them as unobtainable.
-- **About 28 equipment.md citations** (HECC, ASTM, CSA, BNQ, ISO) have never been refetched:
-  source-verifier pass.
-- **PWHL edition:** eleven running headers in the 2025-26 book read "2024 – 2025"; source-verifier to
-  confirm the file is the current edition.
+- **PWHL 2026-27 rulebook:** expected around mid-November 2026; re-check `thepwhl.com/en/rules` then and diff against the 2025-26 book on disk.
+- **SIHA Discipline Policy:** unreachable from this network (local proxy); retry elsewhere.
+- **uk_rules and body_contact "junior categories are unisex":** true per In-House Rule 200, but neither mentions the UK Sex & Gender Participation Policy's birth-sex categories from U12 or the WNIHL bar; decide whether to add one line of context.
+- **getting_started's other R&R 2024-25 quotations** (Safeguarding, Code of Conduct, Social Media): current versions were fetched 22 Oct (scratchpad sg22c/files/policies); compare and move the quotations to them if they changed.
+- **link_baseline.tsv:** add the 33 refetched equipment rows and the 5 new source rows (proposed rows saved in scratchpad sg22b and the sg22c report).

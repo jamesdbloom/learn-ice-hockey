@@ -267,11 +267,12 @@ const puckOnTheFarSide = {
     'is nearer the middle of the ice and the puck is on the other side of ' +
     'you, so your body is between the two: nine and a half feet from the checker to you, fifteen to the ' +
     'puck. ' +
-    'Which way you are turned ' +
-    'is not drawn — a glyph here has no front and no back — so read this as where ' +
-    'the puck is, not as how you are standing. Your stick is not drawn either, and it belongs on ' +
-    'the far side of the puck too. The checker is drawn as a forward, but it can be anyone. ' +
-    'Nothing in the picture shows contact. ' +
+    // 22 Oct 2026: the drawing notes (glyph has no front, stick not drawn, checker can be anyone,
+    // no contact shown) were the picture describing itself and were cut. The one teaching limb
+    // in them is kept, in the host's own words (puck_handling.md "Puck on the far side" Position:
+    // facts line).
+    'Keep your blade on the far side of the puck too, so a poke has to go through the puck and ' +
+    'your stick. ' +
     // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep: the full posture belongs
     // where the page is ABOUT board contact). This picture is drawn in open ice and shows no
     // contact; the full posture, the shoulder hedge, USA Hockey's light-hit warning
@@ -487,10 +488,15 @@ const wherethePuckIs = {
     // 10.2(a)(v) gives the shot "when the infraction occurs inside the offending team's goal
     // crease" (hc.txt:7642-7646) and 10.2(a)(vi) the goal, in the same words, with the
     // goaltender legally substituted (hc.txt:7648-7651). 4.11(a)(v) reads by the puck but does
-    // not settle it, and Interpretation 5 has player and puck both outside. Mirrors
-    // content/technique/puck_handling.md's committed wording.
-    'Hockey Canada also counts where you are, so under that book covering from inside your crease ' +
-    'is the penalty shot too, or the goal with your net empty. ' +
+    // not settle it. Interpretation 5 (hc.txt:7712-7720) has the puck scooped OUT of the crease by
+    // a player outside it and covered outside: "The puck was not actually covered in the crease;
+    // therefore, no penalty shot" -- it rules on where the cover happened and never meets a player
+    // standing inside with the puck outside. So the book does not SAY it counts where you are; it
+    // can be read that way. 22 Oct 2026: "Hockey Canada also counts where you are" stated the
+    // reading as the rule; now scoped as the host does ("can be read to reach you ... play to the
+    // strict answer", puck_handling.md; center.md facts "possibly with you in it").
+    'Hockey Canada\'s wording can also be read to count where you are, so under that book treat ' +
+    'covering from inside your crease as the penalty shot too, or the goal with your net empty. ' +
     'The crease is a ' +
     'volume and not a patch of ice — every book runs it from the ice up to the top of the goal ' +
     'frame — so a puck plucked out of the air over this paint, below the crossbar, is a puck in ' +

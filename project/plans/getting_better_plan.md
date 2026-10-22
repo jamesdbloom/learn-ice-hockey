@@ -50,7 +50,7 @@ The structure is the same as every other page: Key focus → Overview → body �
      These boxes are dated. No prices are written in.
 3. **Public skating: what you can and can't do.**
    - **Before any drill:** most public sessions ban sticks and pucks and don't allow fast or backwards skating in traffic. The rink's posted rules win. This section exists so nobody gets thrown out, or runs into a child, doing a hockey drill at a public skate.
-4. **Solo skating drills for a public session.** About 8 drills, each one a card:
+4. **Solo skating drills for a public session.** The owner's drill list (22 Oct), each one a card:
    - what it trains;
    - the steps (numbered);
    - **a step-by-step diagram**;
@@ -58,15 +58,14 @@ The structure is the same as every other page: Key focus → Overview → body �
    - "do it here" (public session or stick-and-puck);
    - a link to the matching section of Skating.
 
-   Candidates, all no-stick and doable in traffic at low speed:
-   - edge glides on one foot (inside and outside);
-   - C-cuts;
-   - figure-eights round the circles (if allowed);
-   - crossovers both ways;
-   - snowplough then hockey stops both sides;
-   - backward C-cuts (only where allowed);
-   - transitions forwards↔backwards;
-   - balance and knee-bend holds.
+   **The owner's list (22 October 2026).** It replaces the first candidate list. Draft diagrams and descriptions for every drill are in `project/getting_better_drafts/` (preview page published privately for the owner).
+   - **One-foot edges:** inside edge forward (strong push, touch the ice); outside edge forward (strong push); inside edge backward (strong push, touch the ice); outside edge backward, free foot in front; outside edge backward, free foot behind; one-foot slalom forward; one-foot slalom backward; one-foot jump to the other foot; one-foot jump to the same foot; one-foot crossover jump; two-foot jump; two-foot 180 turn jump; small figure of 8 on an inside edge (whole curve on one edge); small figure of 8 on an outside edge.
+   - **Mohawks:** mohawk side to side; jumping mohawk side to side.
+   - **Starts:** explosive V-start; explosive crossover start.
+   - **Two-foot edges:** forward crossovers, 2–3 steps and stop (toe down first); backward crossovers, 2–3 steps and stop; forward "lemons" under a line (feet together, then wide); backward lemons.
+   - **Turns:** step-turn forwards to backwards, both directions; stepping 360, alternate directions; three-turns forwards to backwards (on the spot); forward soft drag; forward anchor; backward soft drag; tight turns; jam turns; punch jams; punch turns; small-circle pivots forward to backward, then backward to forward stepping, both directions.
+   - **Stops:** one-foot stop in front; outside-edge T-stop; two-foot hockey stop, parallel; two-foot hockey stop, side by side; one-foot glide to one-foot stop forward; one-foot glide to one-foot stop backward.
+   - ⚠️ **Public-session fit:** jumps, backward work and fast starts and stops are only for an empty patch of a quiet session, or stick-and-puck. Every card says where it can be done.
 
    **Order: easiest first, with a "you're ready for the next one when…" line.**
 5. **Stick-and-puck sessions.** Adding the puck: about 6 drills (puck on your forehand and backhand while gliding, figure-eight stickhandling round two pucks, shooting off the pass back from the boards, etc.). Each is a card with a diagram, and each repeats the "keep your head up" point.
