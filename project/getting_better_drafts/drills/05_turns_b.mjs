@@ -14,28 +14,43 @@ const uTurn = (cx, cy, r, x0, x1) => {
 };
 
 // Two-foot tight turn around a cone (shared by tight turn and punch turn).
-function tightTurnBase(d, { exitX, arrow = true }) {
+function tightTurnBase(d, { exitX, arrow = true, scissor = false }) {
   const cx = 14.5, cy = 5.5;
   d.cone(cx, cy);
   d.track(uTurn(cx, cy, 1.9, 2.5, exitX), 'L', { arrow, edge: 'OUT', edgeAt: [cx + 0.6, cy + 1.05] });
   d.track(uTurn(cx, cy, 2.8, 2.5, exitX), 'R', { arrow, edge: 'IN', edgeAt: [cx + 3.6, cy + 1.2] });
-  // 1: approach, both feet down, left foot on the inside (up the page).
-  d.skate(6, cy + 1.9, 0, 'L');
-  d.skate(5.7, cy + 2.8, 0, 'R');
-  d.step(4, cy + 2.35, 1);
-  // 2: the turn. Inside (left) foot leads, both blades lean into the cone.
-  d.skate(cx + 1.9, cy - 0.3, -90, 'L');
-  d.skate(cx + 2.8, cy + 0.15, -90, 'R');
-  d.step(cx + 4.2, cy - 0.3, 2);
+  if (!scissor) {
+    // 1: approach, both feet down, left foot on the inside (up the page).
+    d.skate(6, cy + 1.9, 0, 'L');
+    d.skate(5.7, cy + 2.8, 0, 'R');
+    d.step(4, cy + 2.35, 1);
+    // 2: the turn. Inside (left) foot leads, both blades lean into the cone.
+    d.skate(cx + 1.9, cy - 0.3, -90, 'L');
+    d.skate(cx + 2.8, cy + 0.15, -90, 'R');
+    d.step(cx + 4.2, cy - 0.3, 2);
+  } else {
+    // Scissor stance: the inside (left) skate well AHEAD of the outside (right) skate, both on the arc.
+    d.skate(7.6, cy + 1.9, 0, 'L');
+    d.skate(5.0, cy + 2.8, 0, 'R');
+    d.step(3.4, cy + 2.35, 1);
+    // On the turn (anticlockwise; position angle t, heading t - 90): left foot at t = -45, right at t = 25.
+    const at = (r, t) => [cx + r * Math.cos(t * Math.PI / 180), cy + r * Math.sin(t * Math.PI / 180)];
+    const [lx, ly] = at(1.9, -45), [rx, ry] = at(2.8, 25);
+    d.skate(lx, ly, -135, 'L');
+    d.skate(rx, ry, -65, 'R');
+    d.step(cx + 4.3, cy - 0.3, 2);
+    d.text(cx - 0.8, cy - 0.1, 'scissor: inside foot', { size: 0.42, anchor: 'end' });
+    d.text(cx - 0.8, cy + 0.5, 'well ahead', { size: 0.42, anchor: 'end' });
+  }
   return { cx, cy };
 }
 
 const tightTurn = (() => {
   const d = diagram({
     title: 'Tight turn',
-    desc: 'Skate in on two feet, turn hard left around a cone with the inside (left) foot leading on its outside edge and the outside (right) foot on its inside edge, and come out the way you came. Repeat turning right.',
+    desc: 'Skate in on two feet in a scissor stance, the inside (left) foot well ahead of the outside foot. Turn hard left around a cone with the inside (left) foot leading on its outside edge and the outside (right) foot on its inside edge, and come out the way you came. Repeat turning right.',
   });
-  const { cy } = tightTurnBase(d, { exitX: 3 });
+  const { cy } = tightTurnBase(d, { exitX: 3, scissor: true });
   // 3: out of the turn, both feet down, travelling back to the left.
   d.skate(8, cy - 1.9, 180, 'L');
   d.skate(8.3, cy - 2.8, 180, 'R');
@@ -128,56 +143,77 @@ const punchJam = (() => {
 
 // Small circle: forward half, pivot to backward, backward half, step back to forward.
 // Drawn for an anticlockwise circle, then mirrored (x flipped, feet swapped) for clockwise.
-function circleDrill(d, cx, cy, rad, mirror, firstStep) {
+// Circular arc as cubic Beziers in FEET, from screen angle a0 to a1 (degrees, y down).
+function circ(cx, cy, r, a0, a1) {
+  const n = Math.max(1, Math.ceil(Math.abs(a1 - a0) / 90)), da = (a1 - a0) / n;
+  const k = (4 / 3) * Math.tan((da * Math.PI / 180) / 4) * r;
+  const P = (a) => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)];
+  const r2 = (v) => Math.round(v * 100) / 100;
+  let [x, y] = P(a0);
+  let d = `M ${r2(x)} ${r2(y)}`;
+  for (let i = 0; i < n; i++) {
+    const s = (a0 + i * da) * Math.PI / 180, e = (a0 + (i + 1) * da) * Math.PI / 180;
+    const [x1, y1] = P(a0 + (i + 1) * da);
+    d += ` C ${r2(x - k * Math.sin(s))} ${r2(y + k * Math.cos(s))} ${r2(x1 + k * Math.sin(e))} ${r2(y1 - k * Math.cos(e))} ${r2(x1)} ${r2(y1)}`;
+    [x, y] = [x1, y1];
+  }
+  return d;
+}
+
+// Small circle, the skater FACING UP THE PAGE the whole time (toes always point up-ish).
+// Left circle anticlockwise: forward up the right side, sideways-left over the top (pivot forward to
+// backward on the toes, small hop), backward down the left side, sideways-right along the bottom
+// (step from the outside leg going backward onto the other leg going forward).
+// The right circle is the mirror image: clockwise.
+function circleDrill(d, cx, cy, r, mirror) {
   const X = (x) => (mirror ? 2 * cx - x : x);
   const A = (a) => (mirror ? 180 - a : a);
   const F = (f) => (mirror ? (f === 'L' ? 'R' : 'L') : f);
-  const k = K * rad;
-  const p = (pts) => pts.map((v, i) => (i % 2 === 0 ? X(v) : v)).join(' ');
-  // Forward half: left point -> bottom -> right point (anticlockwise on the page).
-  d.track(`M ${p([cx - rad, cy])} C ${p([cx - rad, cy + k, cx - k, cy + rad, cx, cy + rad])} ` +
-    `C ${p([cx + k, cy + rad, cx + rad, cy + k, cx + rad, cy + 0.4])}`, 'ink', { width: 2.5 });
-  // Backward half: right point -> top -> left point.
-  d.track(`M ${p([cx + rad, cy - 0.2])} C ${p([cx + rad, cy - k, cx + k, cy - rad, cx, cy - rad])} ` +
-    `C ${p([cx - k, cy - rad, cx - rad, cy - k, cx - rad, cy - 0.4])}`, 'travel', { width: 2.5 });
-  // 1: forward on the bottom, inside foot nearer the centre.
-  d.skate(X(cx + 0.3), cy + rad - 0.4, A(0), F('L'));
-  d.skate(X(cx - 0.2), cy + rad + 0.4, A(0), F('R'));
-  d.step(X(cx), cy + rad - 1.4, firstStep);
-  // 2: pivot forward to backward, heels together: one blade still forward, the other turned round.
-  d.skate(X(cx + rad - 0.45), cy, A(-90), F('L'));
-  d.skate(X(cx + rad + 0.45), cy - 0.5, A(90), F('R'));
-  d.step(X(cx + rad - 1.5), cy, firstStep + 1);
-  // 3: backward on the top: toes point against travel.
-  d.skate(X(cx - 0.3), cy - rad - 0.4, A(0), F('L'));
-  d.skate(X(cx), cy - rad + 0.4, A(0), F('R'));
-  d.step(X(cx), cy - rad + 1.4, firstStep + 2);
-  // 4: step back to forward: one blade still backward, the other set down pointing forward.
-  d.skate(X(cx - rad + 0.45), cy, A(-90), F('R'));
-  d.skate(X(cx - rad - 0.45), cy + 0.5, A(90), F('L'));
-  d.step(X(cx - rad + 1.5), cy, firstStep + 3);
+  const arcM = (a0, a1) => (mirror ? circ(cx, cy, r, 180 - a0, 180 - a1) : circ(cx, cy, r, a0, a1));
+  d.track(arcM(78, -72), 'ink', { width: 2.5 });      // forward half, up the right side
+  d.track(arcM(-108, -252), 'travel', { width: 2.5 }); // backward half, down the left side
+  // 1: forward up the right side, toes up.
+  d.skate(X(cx + r - 0.45), cy, -90, F('L'), { len: 1.3 });
+  d.skate(X(cx + r + 0.45), cy, -90, F('R'), { len: 1.3 });
+  d.step(X(cx + r - 1.6), cy, 1);
+  // 2: pivot at the top on the front of both skates: toes swing from pointing the way you go to pointing back.
+  d.raw('<g opacity="0.35">');
+  d.skate(X(cx - 0.45), cy - r, A(-135), F('L'), { len: 1.2 });
+  d.skate(X(cx + 0.45), cy - r, A(-135), F('R'), { len: 1.2 });
+  d.raw('</g>');
+  d.skate(X(cx - 0.45), cy - r, A(-45), F('L'), { len: 1.2 });
+  d.skate(X(cx + 0.45), cy - r, A(-45), F('R'), { len: 1.2 });
+  d.text(cx, cy - r - 1.1, 'pivot: small hop on the toes', { size: 0.4 });
+  d.step(X(cx), cy - r + 1.3, 2);
+  // 3: backward down the left side, still facing up: toes up.
+  d.skate(X(cx - r - 0.45), cy, -90, F('L'), { len: 1.3 });
+  d.skate(X(cx - r + 0.45), cy, -90, F('R'), { len: 1.3 });
+  d.step(X(cx - r + 1.6), cy, 3);
+  // 4: step at the bottom: outside leg going backward, step onto the other leg going forward.
+  d.skate(X(cx - 0.7), cy + r + 0.3, A(-135), F('L'), { len: 1.2 });
+  d.skate(X(cx + 0.7), cy + r - 0.2, A(-45), F('R'), { len: 1.2 });
+  d.text(cx, cy + r + 1.35, 'step onto the other leg', { size: 0.4 });
+  d.step(X(cx), cy + r - 1.3, 4);
 }
 
 const circlePivots = (() => {
   const d = diagram({
     title: 'Small circle: forward to backward pivots, backward to forward steps',
-    desc: 'Two small circles. On each, skate forward round the bottom half, pivot to backward, skate backward round the top half, then step back to forward. The left circle goes anticlockwise, the right circle clockwise.',
+    desc: 'Two small circles, the skater facing up the page the whole time. On the left circle (anticlockwise) they skate forward up the right side, pivot to backward on the toes with a small hop at the top, skate backward down the left side, and step from backward to forward at the bottom. The right circle is the same, clockwise.',
     h: 12,
   });
-  circleDrill(d, 5.6, 5.6, 3.6, false, 1);
-  circleDrill(d, 16.4, 5.6, 3.6, true, 1);
-  d.text(5.6, 11.5, 'one way (anticlockwise)', { size: 0.45 });
-  d.text(16.4, 11.5, 'then the other way (clockwise)', { size: 0.45 });
-  d.raw('<line x1="309" y1="138" x2="351" y2="138" stroke="#22303c" stroke-width="2.5"/>');
-  d.text(11, 5.3, 'forward', { size: 0.42, color: '#22303c' });
-  d.raw('<line x1="309" y1="186" x2="351" y2="186" stroke="#9aa7b2" stroke-width="2.5"/>');
-  d.text(11, 6.9, 'backward', { size: 0.42, color: '#5b6b78' });
+  circleDrill(d, 5.6, 5.9, 3.4, false);
+  circleDrill(d, 16.4, 5.9, 3.4, true);
+  d.text(5.6, 11.6, 'one way (anticlockwise)', { size: 0.45 });
+  d.text(16.4, 11.6, 'then the other way (clockwise)', { size: 0.45 });
+  d.text(11, 9.7, 'always facing this way ↑', { size: 0.46, weight: 600, color: '#22303c' });
+  d.raw('<line x1="309" y1="168" x2="351" y2="168" stroke="#22303c" stroke-width="2.5"/>');
+  d.text(11, 6.3, 'forward', { size: 0.42, color: '#22303c' });
+  d.raw('<line x1="309" y1="216" x2="351" y2="216" stroke="#9aa7b2" stroke-width="2.5"/>');
+  d.text(11, 7.9, 'backward', { size: 0.42, color: '#5b6b78' });
   return d.svg();
 })();
 
-const PUBLIC_QUIET = 'Public session, quiet lane, low speed';
-const EMPTY_PATCH = 'Only on an empty patch of a quiet public session';
-const PRACTICE = 'Stick-and-puck or a practice, not a busy public session';
 
 export default [
   {
@@ -188,12 +224,11 @@ export default [
     card: {
       trains: 'Turning sharply without losing speed, so you can change direction to follow the puck or your check.',
       steps: [
-        'Skate in on two feet, knees bent, feet about hip-width apart.',
-        'Turn round the cone with your inside foot a little ahead: lean both blades in, inside foot on its outside edge, outside foot on its inside edge, head and stick pointing where you are going.',
+        'Skate in on two feet, knees bent, and open into a scissor stance: inside leg well forward, outside leg back.',
+        'Turn round the cone holding the scissor, inside foot well ahead: lean both blades in, inside foot on its outside edge, outside foot on its inside edge, head and stick pointing where you are going.',
         'Stay low as you come round, then stride away the way you came. Repeat turning the other way.',
       ],
       mistake: 'Standing up in the turn: the edges let go and the turn goes wide.',
-      where: PUBLIC_QUIET,
       check: '',
     },
   },
@@ -210,7 +245,6 @@ export default [
         'Push hard out of the turn and stride away the way you came. Repeat turning the other way.',
       ],
       mistake: 'Leaning back as the skates bite, so you stall or fall instead of driving out.',
-      where: EMPTY_PATCH,
       check: 'I read "jam turn" as a sharp two-foot turn where the skates dig in and skid, part turn and part stop, then you push straight back out. I am not sure this is the owner\'s meaning: some coaches use "jam" for a one-foot stop-and-go or for a sharp heel-pivot on the inside foot. Please confirm.',
     },
   },
@@ -228,7 +262,6 @@ export default [
         'Keep driving with short, quick strides. Repeat turning the other way.',
       ],
       mistake: 'Stopping dead after the jam and then starting again, instead of turning straight into the crossover.',
-      where: PRACTICE,
       check: 'I read "punch jam" as a jam turn (sharp, biting, nearly a stop) finished with a hard crossover "punch" out of it, so it differs from a jam turn only in the exit. I am unsure of this one. Alternatives I know of: a full stop on one side then an explosive crossover start back the other way; or a jam done repeatedly in a zig-zag. Please confirm which the owner means.',
     },
   },
@@ -246,7 +279,6 @@ export default [
         'Keep accelerating with short, quick strides. Repeat turning the other way.',
       ],
       mistake: 'Standing up as you leave the turn, so the crossover pushes sideways instead of driving you forward.',
-      where: PRACTICE,
       check: 'I read "punch turn" as a carved tight turn finished with one or two hard crossovers "punched" out of it. Some coaches use "punch turn" for a tight turn with a crossover in the middle of the turn, not only at the exit; I drew it at the exit. Please confirm.',
     },
   },
@@ -256,16 +288,15 @@ export default [
     title: 'Small circle forward to backward pivots, then backward to forward stepping (both directions)',
     svg: circlePivots,
     card: {
-      trains: 'Switching between forward and backward without losing speed or the line you are on, which defencemen and backcheckers do every shift.',
+      trains: 'Switching between forward and backward while always facing the play, which defencemen and backcheckers do every shift.',
       steps: [
-        'Skate forward round a small circle, knees bent.',
-        'Pivot to backward: keep one blade forward, turn the other round heel to heel, then bring the first foot round.',
-        'Skate backward round the next half of the circle, looking up.',
-        'Step back to forward: open your hips and set one foot down pointing forward, heel to heel. Do it the other way round on a second circle.',
+        'Face one way (say, one end of the rink) and keep facing it all the way round a small circle. Skate forward round the first side.',
+        'Pivot from forward to backward on the front of both skates, heels swinging round; ideally a small hop so the heels do not cut the ice.',
+        'Skate backward round the far side, still facing the same way.',
+        'Step from backward to forward: with the outside leg going backward, step straight onto the other leg going forward, without stopping. Then go round the other way.',
       ],
-      mistake: 'Stopping the circle to turn: the pivot should happen while you keep travelling round.',
-      where: EMPTY_PATCH,
-      check: 'I drew the forward half round the bottom of each circle and the backward half round the top, with one pivot and one step per lap. Coaches differ on whether the pivot opens towards the centre of the circle or away from it, and which foot stays down; the diagram shows the feet only roughly at those two moments. Please confirm how the owner teaches it.',
+      mistake: 'Turning the chest with the feet, so the skater ends up facing round the circle instead of facing one way.',
+      check: 'Drawn with the skater facing up the page throughout, forward up one side and backward down the other, pivoting at the top and stepping at the bottom.',
     },
   },
 ];

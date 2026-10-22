@@ -30,25 +30,50 @@ function spinArrow(d, cx, cy, rad) {
   d.track(arc(cx, cy, rad, 60, -200), 'ink', { width: 2 });
 }
 
+// A hand touching the ice (or the skate): a small grey palm print.
+function hand(d, x, y) {
+  d.raw(`<circle cx="${f(x * PX)}" cy="${f(y * PX)}" r="${f(0.24 * PX)}" fill="${COL.muted}" fill-opacity="0.8"/>` +
+    [-50, -20, 10, 40].map((a) => {
+      const r = (a - 90) * Math.PI / 180;
+      return `<circle cx="${f((x + Math.cos(r) * 0.38) * PX)}" cy="${f((y + Math.sin(r) * 0.38) * PX)}" r="${f(0.08 * PX)}" fill="${COL.muted}" fill-opacity="0.8"/>`;
+    }).join(''));
+}
+
 // 1 ─ One foot jump to other foot
+// Glide on one foot, crouch and touch the gliding skate with a hand (head up), and jump onto the other
+// foot as you stand back up. Two cycles: right → left → right. Facing +x, the left foot is UP the page.
 const jumpToOther = (() => {
   const d = diagram({
     title: 'One foot jump to other foot',
-    desc: 'Glide forward on the right foot with the left foot lifted, spring off the right foot, fly a short way forward and land on the left foot, then glide on with the right foot lifted. Repeat starting on the left foot.',
+    desc: 'Glide forward on the right foot, left foot lifted. Crouch and touch the right skate with a hand, head up. As you stand back up, jump onto the left foot. Glide, crouch and touch the left skate, and as you stand up jump back onto the right. Keep going.',
   });
-  d.track('M 1.5 6.4 L 8.6 6.4', 'R', { arrow: false });
-  d.skate(5, 6.4, 0, 'R');
-  d.skate(5, 5.2, 0, 'L', { lifted: true });
-  d.step(5, 3.8, 1);
-  d.skate(8.4, 6.4, 0, 'R', { label: 'spring' });
-  d.step(8.4, 8.0, 2);
-  d.track('M 9.6 6.3 L 13.2 5.3', 'ink', { air: true });
-  d.skate(14.2, 5.2, 0, 'L', { label: 'land' });
-  d.skate(14.2, 6.4, 0, 'R', { lifted: true });
-  d.step(14.2, 3.6, 3);
-  d.track('M 15.1 5.2 L 20.5 5.2', 'L');
-  d.text(17.6, 4.4, 'knee bent', { size: 0.44 });
-  d.travel(4, 9.8, 12, 9.8);
+  const yR = 6.4, yL = 4.6;
+  // Right foot glide, touch, take-off.
+  d.track(`M 1.2 ${yR} L 6.6 ${yR}`, 'R', { arrow: false });
+  d.skate(2.6, yR, 0, 'R');
+  d.skate(2.6, yL + 0.6, 0, 'L', { lifted: true });
+  d.step(1.0, yL + 0.6, 1);
+  d.skate(5.6, yR, 0, 'R');
+  hand(d, 5.6, yR - 0.45);
+  d.text(5.6, yR + 1.4, 'touch the skate, head up', { size: 0.42 });
+  d.step(5.6, yR + 2.3, 2);
+  d.track(`M 7.0 ${yR - 0.2} Q 8.6 ${yR - 2.4} 9.8 ${yL + 0.05}`, 'ink', { air: true });
+  d.text(8.2, 2.9, 'stand up and jump', { size: 0.42 });
+  d.step(8.3, 1.9, 3);
+  // Left foot landing, glide, touch, take-off.
+  d.skate(10.8, yL, 0, 'L');
+  d.skate(10.8, yR - 0.6, 0, 'R', { lifted: true });
+  d.track(`M 11.7 ${yL} L 15.6 ${yL}`, 'L', { arrow: false });
+  d.skate(14.6, yL, 0, 'L');
+  hand(d, 14.6, yL + 0.45);
+  d.text(14.6, yL - 1.0, 'touch, head up', { size: 0.42 });
+  d.step(12.6, 3.0, 4);
+  d.track(`M 16.0 ${yL + 0.2} Q 17.8 ${yL + 0.2} 18.4 ${yR - 0.05}`, 'ink', { air: true });
+  // Back onto the right foot.
+  d.skate(19.3, yR, 0, 'R');
+  d.track(`M 20.2 ${yR} L 21.3 ${yR}`, 'R');
+  d.text(19.3, yR + 1.2, 'and again', { size: 0.42 });
+  d.travel(4, 9.9, 11, 9.9);
   return d.svg();
 })();
 
@@ -56,7 +81,7 @@ const jumpToOther = (() => {
 const jumpToSame = (() => {
   const d = diagram({
     title: 'One foot jump to same foot',
-    desc: 'Glide forward on the right foot with the left foot lifted, spring off the right foot and land back on the same right foot, the left foot staying lifted the whole time. Repeat on the left foot.',
+    desc: 'Glide forward on the right foot with the left foot lifted, spring off the right foot and land back on the same right foot, the left foot staying lifted the whole time.',
   });
   d.track('M 1.5 6.2 L 8.6 6.2', 'R', { arrow: false });
   d.skate(5, 6.2, 0, 'R');
@@ -73,33 +98,42 @@ const jumpToSame = (() => {
   d.text(17.8, 7.4, 'knee bent', { size: 0.44 });
   d.text(11.3, 4.3, 'left foot stays up', { size: 0.44, color: COL.L });
   d.travel(4, 9.8, 12, 9.8);
+  d.text(21.3, 0.95, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });
   return d.svg();
 })();
 
 // 3 ─ One foot cross over jump
-// Read as: glide on the left foot, spring sideways to the LEFT, and land on the right foot,
-// which crosses over in front of the left (the outside foot crosses over the inside foot).
+// Glide on one foot; jump the FREE foot over the gliding foot, landing on the far side of it, as the old
+// gliding foot lifts. Then the same back the other way. Facing +x, the skater's left is UP the page.
 const crossOverJump = (() => {
   const d = diagram({
     title: 'One foot cross over jump',
-    desc: 'Glide forward on the left foot. Spring off it sideways towards your left, swinging the right foot across in front, and land on the right foot on the far side of the left foot\'s line. Uncross and glide on. Repeat the other way: glide on the right foot and cross the left foot over to the right.',
+    desc: 'Glide forward on the left foot, right foot lifted on its right. Jump the right foot over the left, crossing in front of it, and land on the right foot on the far (left) side as the left foot lifts. Then jump the left foot back over the right to land on the right-hand side. Keep going, both directions.',
   });
-  d.track('M 1.5 7.6 L 8.6 7.6', 'L', { arrow: false });
-  d.skate(4.6, 7.6, 0, 'L');
-  d.skate(4.6, 6.4, 0, 'R', { lifted: true });
-  d.step(4.6, 5.0, 1);
-  d.skate(8.4, 7.6, -10, 'L', { label: 'spring left' });
-  d.step(8.4, 9.2, 2);
-  d.track('M 9.4 7.3 C 10.6 6.4 11.6 4.6 12.6 3.9', 'ink', { air: true });
-  d.text(13.2, 6.6, 'right foot crosses in front', { size: 0.44, anchor: 'start', color: COL.R });
-  // Landing: right foot down on the far (left) side, left foot lifted and still crossed behind.
-  d.skate(14, 3.6, -8, 'R', { label: 'land' });
-  d.skate(13.4, 4.8, 8, 'L', { lifted: true });
-  d.step(15.8, 5.0, 3);
-  d.track('M 14.9 3.5 L 20.5 3.3', 'R');
-  // Reference: the line of the takeoff foot, to show the cross.
-  d.raw(`<line x1="${9.6 * PX}" y1="${7.6 * PX}" x2="${20.5 * PX}" y2="${7.6 * PX}" stroke="${COL.L}" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.5"/>`);
-  d.text(20.4, 8.3, 'left foot\'s line', { size: 0.4, anchor: 'end', color: COL.L });
+  const yA = 6.4, yB = 4.0, yC = 6.6;
+  // Glide on the left foot.
+  d.track(`M 1.2 ${yA} L 7.2 ${yA}`, 'L', { arrow: false });
+  d.skate(3.4, yA, 0, 'L');
+  d.skate(3.4, yA + 1.1, 0, 'R', { lifted: true });
+  d.step(1.6, yA + 1.4, 1);
+  // The left foot's line carried on (dashed) so the cross is visible.
+  d.raw(`<line x1="${7.2 * PX}" y1="${yA * PX}" x2="${12.2 * PX}" y2="${yA * PX}" stroke="${COL.L}" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.55"/>`);
+  // Right foot jumps over the left foot's line.
+  d.track(`M 6.6 ${yA + 1.1} Q 8.6 ${yA + 0.6} 9.9 ${yB + 0.1}`, 'ink', { air: true });
+  d.text(9.6, yA + 1.7, 'right foot jumps over the left', { size: 0.42, color: COL.R, anchor: 'start' });
+  d.step(7.4, yA + 2.1, 2);
+  // Land on the right foot, far side; left foot lifts.
+  d.skate(10.9, yB, 0, 'R', { label: 'land' });
+  d.skate(10.6, yA - 0.4, 0, 'L', { lifted: true });
+  d.track(`M 11.8 ${yB} L 14.6 ${yB}`, 'R', { arrow: false });
+  d.step(12.6, yB - 1.6, 3);
+  // Back the other way: left foot jumps over the right.
+  d.raw(`<line x1="${14.6 * PX}" y1="${yB * PX}" x2="${19.4 * PX}" y2="${yB * PX}" stroke="${COL.R}" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.55"/>`);
+  d.track(`M 14.2 ${yB - 0.9} Q 16.2 ${yB - 0.4} 17.4 ${yC - 0.1}`, 'ink', { air: true });
+  d.text(17.2, yB - 1.2, 'left back over the right', { size: 0.42, color: COL.L });
+  d.step(15.0, yB - 2.0, 4);
+  d.skate(18.4, yC, 0, 'L');
+  d.track(`M 19.3 ${yC} L 21.2 ${yC}`, 'L');
   d.travel(4, 10, 11, 10);
   return d.svg();
 })();
@@ -217,7 +251,6 @@ const fig8Outside = (() => {
   return d.svg();
 })();
 
-const ONE_FOOT_WHERE = 'Only on an empty patch of a quiet public session';
 
 export default [
   {
@@ -226,15 +259,15 @@ export default [
     title: 'One foot jump to other foot',
     svg: jumpToOther,
     card: {
-      trains: 'Balance and control when you leave the ice and land on the other foot ready to skate, as when hopping over a stick or a fallen player.',
+      trains: 'Balance and leg drive from a deep crouch, landing on the other foot ready to skate, with your head up the whole time.',
       steps: [
         'Glide forward on your right foot, knee bent, left foot lifted.',
-        'Bend deeper and spring up and forward off the right foot.',
-        'Land on your left foot with the knee bent, and glide on balanced. Then start on the left and land on the right.',
+        'Crouch and touch the right skate with your hand, keeping your head up.',
+        'As you stand back up, jump onto your left foot.',
+        'Glide, crouch and touch the left skate, and jump back onto the right as you stand up. Keep it going, one jump after another.',
       ],
-      mistake: 'Landing with a straight leg, so the skater wobbles or puts the other foot down to save it.',
-      where: ONE_FOOT_WHERE,
-      check: 'Read as a small forward hop: take off from one foot, land on the other, keep travelling forward. If the owner means a sideways hop (left to right across a line), the diagram needs redrawing.',
+      mistake: 'Looking down at the skate to touch it, so the head drops and the balance goes with it.',
+      check: '',
     },
   },
   {
@@ -247,10 +280,10 @@ export default [
       steps: [
         'Glide forward on your right foot, knee bent, left foot lifted.',
         'Bend deeper and spring up and forward off the right foot.',
-        'Land back on the same right foot, knee bent, without putting the left foot down. Then do it on the left.',
+        'Land back on the same right foot, knee bent, without putting the left foot down.',
+        'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Putting the free foot down on landing, which turns it into a two-foot landing.',
-      where: ONE_FOOT_WHERE,
       check: 'Read as a forward hop on and off the same foot, free foot up the whole time.',
     },
   },
@@ -260,15 +293,15 @@ export default [
     title: 'One foot cross over jump',
     svg: crossOverJump,
     card: {
-      trains: 'Crossover strength and balance: pushing sideways off one foot and landing the crossing foot cleanly, as in a quick change of direction.',
+      trains: 'Crossover strength and balance: driving off one foot and landing the crossing foot cleanly on the far side, as in a quick change of direction.',
       steps: [
         'Glide forward on your left foot, right foot lifted.',
-        'Spring sideways to your left off the left foot, swinging your right foot across in front of it.',
-        'Land on your right foot on the far side of where the left foot was, knee bent, then uncross and skate on. Repeat the other way, crossing the left foot over to the right.',
+        'Jump your right foot over the left, crossing in front of it.',
+        'Land on the right foot on the far side, knee bent, as the left foot lifts.',
+        'Jump the left foot back over the right the other way, and keep going, both directions.',
       ],
       mistake: 'Crossing the foot behind instead of in front, or landing on a straight leg.',
-      where: ONE_FOOT_WHERE,
-      check: 'This name was the least clear on the list. I read it as a crossover done in the air: take off from the inside foot and land on the crossing (outside) foot, which passes in front. Other common meanings: hopping sideways over a line or a stick on one foot, or a jump on a curve while doing crossovers. Please confirm which one you mean.',
+      check: 'Drawn travelling forward with a little sideways movement on each jump. If you want it done on the spot, or along a line (hopping back and forth over it), the picture is the same idea without the forward travel.',
     },
   },
   {
@@ -284,7 +317,6 @@ export default [
         'Land on both feet at the same time with knees bent, and glide on.',
       ],
       mistake: 'Landing stiff-legged or on the heels, which throws the weight back.',
-      where: ONE_FOOT_WHERE,
       check: 'Read as a forward jump on the spot while gliding, no obstacle. Some coaches have players jump over a stick laid on the ice.',
     },
   },
@@ -301,7 +333,6 @@ export default [
         'Land on both feet skating backwards, knees bent, still travelling the same way. Repeat turning the other way.',
       ],
       mistake: 'Turning only the shoulders, so the skates land part-way round and catch an edge.',
-      where: ONE_FOOT_WHERE,
       check: 'Read as forwards to backwards in one jump, travelling the same way. Some coaches also jump back from backwards to forwards straight after. The arrow shows one turn direction only; practise both.',
     },
   },
@@ -319,7 +350,6 @@ export default [
         'Skate the whole left-hand circle on the left inside edge, curving to your right, back to the middle.',
       ],
       mistake: 'Flattening the blade part-way round, so the circle opens up and does not come back to the middle.',
-      where: 'Public session, quiet lane, low speed',
       check: 'Read as forward skating, one foot per circle: right foot on the right-hand circle, left foot on the left-hand circle, each on its inside edge from start to finish of the curve. Size is about 8 ft across per circle; adjust if you mean smaller. A backward version would also be possible; I drew forwards only.',
     },
   },
@@ -337,7 +367,6 @@ export default [
         'Skate the whole left-hand circle on the left outside edge, curving to your left, back to the middle.',
       ],
       mistake: 'Dropping onto the inside edge or putting the free foot down when the lean feels too far.',
-      where: 'Public session, quiet lane, low speed',
       check: 'Read as forward skating, one foot per circle, each on its outside edge for the whole curve. The outside edge is harder to hold on a small circle, so the circle may need to be a bit bigger at first. A backward version is possible; I drew forwards only.',
     },
   },

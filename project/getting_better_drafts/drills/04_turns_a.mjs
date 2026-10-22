@@ -153,78 +153,113 @@ const threeTurn = (() => {
 // travelling right, round an anticlockwise half circle, out along the top travelling left.
 const CX = 12, CY = 5.5;
 
-// 4. Forwards soft drag (turning left).
-const fwdSoftDrag = (() => {
-  const d = diagram({
-    title: 'Forwards soft drag',
-    desc: 'A forward turn to the left. Weight on the inside (left) foot on its outside edge, carving the turn. The outside (right) foot trails behind and wide, its inside edge lightly dragging on the ice to steady and tighten the turn. Out of the turn, the trailing foot comes back under the body. Repeat turning right.',
-  });
-  const R = 3.3, Rd = 4.4;
-  d.track(`M 2 ${CY + R} L ${CX} ${CY + R}` + arc(CX, CY, R, 90, -90, false) + ` L 6.5 ${CY - R}`, 'L', { edge: 'OUT', edgeAt: [CX + R - 1.1, CY + 0.9] });
-  d.track(arc(CX, CY, Rd, 70, -60), 'R', { width: 1.8, arrow: false, edge: 'IN', edgeAt: [CX + Rd + 0.75, CY - 0.4] });
-  d.skate(5.5, CY + R, 0, 'L').skate(5.5, CY + R + 1.1, 0, 'R');
-  d.step(4, CY + R - 0.9, 1);
-  const [lx, ly] = pt(CX, CY, R, 30);
-  d.skate(lx, ly, -60, 'L');
-  d.step(lx - 1.3, ly + 0.2, 2);
-  const [rx, ry] = pt(CX, CY, Rd, 52);
-  d.skate(rx, ry, -10, 'R');
-  d.text(rx + 1.9, ry - 0.2, 'light drag', { size: 0.42, color: COL.R, weight: 600 });
-  d.step(rx - 0.4, ry + 1.25, 3);
-  d.skate(8.5, CY - R, 180, 'L').skate(8.5, CY - R - 1.1, 180, 'R');
-  d.step(8.5, CY - R + 1.0, 4);
-  d.travel(2.5, 10.55, 8.5, 10.55);
-  return d.svg();
-})();
-
-// 5. Forwards anchor (turning left).
-const fwdAnchor = (() => {
-  const d = diagram({
-    title: 'Forwards anchor',
-    desc: 'A tight forward turn to the left. The inside (left) foot is set down slightly ahead on its outside edge with pressure back on the heel, carving a small tight arc as the pivot. The outside (right) foot carves round it on its inside edge. Repeat turning right.',
-  });
-  const Ra = 1.6, Ro = 3.6;
-  d.track(`M 2 ${CY + Ra} L ${CX} ${CY + Ra}` + arc(CX, CY, Ra, 90, -90, false) + ` L 7 ${CY - Ra}`, 'L', { edge: 'OUT', edgeAt: [CX - 0.4, CY] });
-  d.track(`M 2 ${CY + Ro} L ${CX} ${CY + Ro}` + arc(CX, CY, Ro, 90, -90, false) + ` L 7 ${CY - Ro}`, 'R', { edge: 'IN', edgeAt: [CX + Ro + 0.8, CY + 1.4] });
-  d.skate(5.5, CY + Ra, 0, 'L').skate(5.5, CY + Ro, 0, 'R');
-  d.step(4, CY + 2.6, 1);
-  const [lx, ly] = pt(CX, CY, Ra, 5);
-  d.skate(lx, ly, -85, 'L');
-  d.text(CX + 2.3, CY + 1.55, 'anchor', { size: 0.42, color: COL.L, weight: 600 });
+// 4/5/6. Soft drag (TOE) and anchor (HEEL): the same tight U-turn, drawn the same way so the difference is
+// obvious. The inside skate keeps one point on a single spot on the ice and swings round it:
+//   anchor    = the HEEL stays put, the toe swings round;
+//   soft drag = the TOE stays put, the heel swings round.
+// Forward, turning left: inside foot = LEFT, outside = RIGHT (carving on its inside edge).
+// Backward (facing -x, path turning up the page = the skater's RIGHT): inside foot = RIGHT, outside = LEFT
+// (left foot curving to the skater's right = its inside edge). Backwards is toe only, and a sharper C.
+function pivotTurn({ title, desc, contact, backward }) {
+  const d = diagram({ title, desc });
+  const inside = backward ? 'R' : 'L', outside = backward ? 'L' : 'R';
+  const P = [CX, CY], Ro = backward ? 2.3 : 3.4, len = 1.5;
+  const flip = backward ? 180 : 0;
+  // Paths: the inside foot comes in and goes out next to the pivot; the outside foot carves round.
+  d.track(`M 2 ${CY + 0.35} L ${CX - 0.9} ${CY + 0.35}`, inside, { arrow: false });
+  d.track(`M ${CX - 0.9} ${CY - 0.35} L 6.5 ${CY - 0.35}`, inside);
+  d.track(`M 2 ${CY + Ro} L ${CX} ${CY + Ro}` + arc(CX, CY, Ro, 90, -90, false) + ` L 6.5 ${CY - Ro}`, outside, { edge: 'IN', edgeAt: [CX + Ro + 0.8, CY + 1.4] });
+  // The inside skate mid-turn, with the contact point on the dot and a dashed arc for the end that swings.
+  const sgn = contact === 'heel' ? 1 : -1; // heel fixed: blade lies towards the toe; toe fixed: towards the heel
+  const am = -90 + flip;
+  const u = [Math.cos(rad(am)), Math.sin(rad(am))];
+  d.skate(P[0] + sgn * u[0] * len / 2, P[1] + sgn * u[1] * len / 2, am, inside, { len });
+  const off = sgn > 0 ? 0 : 180;
+  const sw = arc(P[0], P[1], len + 0.35, 0 + flip + off, -180 + flip + off).replace(/-?\d*\.?\d+/g, (n) => String(Math.round(Number(n) * PX * 10) / 10));
+  d.raw(`<path d="${sw}" fill="none" stroke="${COL[inside]}" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ah-${inside})"/>`);
+  d.raw(`<circle cx="${P[0] * PX}" cy="${P[1] * PX}" r="${0.2 * PX}" fill="#fff" stroke="${COL.ink}" stroke-width="2.5"/>`);
+  const lbl = contact === 'heel' ? 'heel anchors' : 'toe drags';
+  const lp = [P[0] - sgn * u[0] * 1.0, P[1] - sgn * u[1] * 1.0];
+  const below = lp[1] > P[1];
+  d.text(below ? P[0] - 0.5 : lp[0] + 0.3, below ? P[1] + 1.25 : lp[1] + 0.2, lbl, { size: 0.5, color: COL.ink, weight: 700, anchor: below ? 'end' : 'start' });
+  d.skate(5.5, CY + 0.35, flip, inside).skate(5.5, CY + Ro, flip, outside);
+  d.step(4, CY + (backward ? 1.4 : 1.9), 1);
+  if (below) d.step(P[0] + 0.5, P[1] + 1.1, 2); else d.step(lp[0] - 0.5, lp[1], 2);
   const [rx, ry] = pt(CX, CY, Ro, 22);
-  d.skate(rx, ry, -68, 'R');
-  d.step(CX + 2.45, CY - 0.8, 2);
+  d.skate(rx, ry, -68 + flip, outside);
   d.step(CX + Ro + 1.3, CY + 2.6, 3);
-  d.skate(8.5, CY - Ra, 180, 'L').skate(8.5, CY - Ro, 180, 'R');
-  d.step(8.5, CY, 4);
+  d.skate(8.5, CY - Ro, 180 + flip, outside);
+  d.step(8.5, CY - (backward ? 1.2 : 1.4), 4);
+  if (backward) d.text(17.6, 10.0, 'skating backwards', { size: 0.44 });
   d.travel(2.5, 10.55, 8.5, 10.55);
   return d.svg();
-})();
+}
 
-// 6. Backwards soft drag (travelling backwards, path turning up the page).
-const backSoftDrag = (() => {
+const fwdSoftDrag = pivotTurn({
+  title: 'Forwards soft drag',
+  desc: 'A tight forward turn to the left, the same turn as the forwards anchor but on the toe. The inside (left) skate keeps its toe on one spot on the ice and drags round it, the heel swinging round, to help the turn. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.',
+  contact: 'toe', backward: false,
+});
+const fwdAnchor = pivotTurn({
+  title: 'Forwards anchor',
+  desc: 'A tight forward turn to the left. The inside (left) skate is planted and pivots on its heel, which stays in one spot like an anchor, the toe swinging round from pointing forward to pointing back the way you came. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.',
+  contact: 'heel', backward: false,
+});
+const backSoftDrag = pivotTurn({
+  title: 'Backwards soft drag',
+  desc: 'Skating backwards, a sharp C-shaped turn. The inside (right) skate keeps its toe on one spot on the ice and drags round it to help the turn. The outside (left) foot carves a tight arc round it on its inside edge. Repeat the other way.',
+  contact: 'toe', backward: true,
+});
+
+// 7/8. Continuous crossovers (cross-unders), forwards and backwards.
+// A snake down the ice. On each bend the outside foot crosses over in front and the INSIDE foot pushes under
+// the body on its OUTSIDE edge (the cross-under). At the change of direction the skater steps onto the
+// INSIDE edge of that same foot, which starts the bend the other way, and the next crossover goes back.
+// Forward: the skater's left is UP. Backward (facing -x): the skater's left is DOWN, and "in front" is -x.
+function contX(backward) {
   const d = diagram({
-    title: 'Backwards soft drag',
-    desc: 'Skating backwards, turning. Weight on the inside (right) foot on its outside edge, carving the turn. The other (left) foot is out in front of the body, toe turned in, its inside edge lightly dragging on the ice to steady and tighten the turn. It comes back under the body to finish. Repeat the other way.',
+    title: `Continuous crossovers ${backward ? 'backwards' : 'forwards'}`,
+    desc: `Skating ${backward ? 'backwards' : 'forwards'} down the ice in a snake. On each bend, the outside foot crosses over in front and the inside foot pushes hard under the body on its outside edge. At the change of direction, step onto the inside edge, then cross over back the other way. Continuous, no stopping.`,
   });
-  const R = 3.3, Rd = 4.4;
-  d.track(`M 2 ${CY + R} L ${CX} ${CY + R}` + arc(CX, CY, R, 90, -90, false) + ` L 6.5 ${CY - R}`, 'R', { edge: 'OUT', edgeAt: [CX + R - 1.1, CY + 0.9] });
-  d.track(arc(CX, CY, Rd, 70, -60), 'L', { width: 1.8, arrow: false, edge: 'IN', edgeAt: [CX + Rd + 0.75, CY - 0.4] });
-  d.skate(5.5, CY + R, 180, 'R').skate(5.5, CY + R + 1.1, 180, 'L');
-  d.step(4, CY + R - 0.9, 1);
-  const [rx, ry] = pt(CX, CY, R, 30);
-  d.skate(rx, ry, 120, 'R');
-  d.step(rx - 1.3, ry + 0.2, 2);
-  const [lx, ly] = pt(CX, CY, Rd, 52);
-  d.skate(lx, ly, 175, 'L');
-  d.text(lx + 1.9, ly - 0.2, 'light drag', { size: 0.42, color: COL.L, weight: 600 });
-  d.step(lx - 0.4, ly + 1.25, 3);
-  d.skate(8.5, CY - R, 0, 'R').skate(8.5, CY - R - 1.1, 0, 'L');
-  d.step(8.5, CY - R + 1.0, 4);
-  d.text(8.8, CY + R - 0.5, 'backwards');
-  d.travel(2.5, 10.55, 8.5, 10.55);
+  const cy = 5.3, A = 2.0, W = 6, x0 = 4;
+  const yAt = (x) => cy + A * Math.cos(Math.PI * (x - x0) / W);
+  const angAt = (x) => (Math.atan2(-A * Math.PI / W * Math.sin(Math.PI * (x - x0) / W), 1) * 180) / Math.PI;
+  let path = '';
+  for (let x = 1.2; x <= 20.6; x += 0.2) path += `${path ? 'L' : 'M'} ${f2(x)} ${f2(yAt(x))} `;
+  d.track(path.trim(), 'travel', { width: 2 });
+  const flip = backward ? 180 : 0, fwd = backward ? -1 : 1;
+  const leftSide = backward ? 1 : -1; // +1 = down the page
+  [4, 10, 16].forEach((ax, i) => {
+    const ay = yAt(ax);
+    const u = i % 2 === 0 ? -1 : 1; // which side the turn centre is on (-1 = up)
+    const inside = u === leftSide ? 'L' : 'R', outside = inside === 'L' ? 'R' : 'L';
+    // Inside foot pushing under, on its outside edge.
+    d.skate(ax, ay + u * 0.5, flip, inside, { len: 1.4 });
+    d.track(`M ${f2(ax - fwd * 0.3)} ${f2(ay + u * 0.45)} Q ${f2(ax - fwd * 1.0)} ${f2(ay)} ${f2(ax - fwd * 1.3)} ${f2(ay - u * 0.9)}`, inside, { width: 2 });
+    d.tag(ax - fwd * 2.0, ay - u * 1.05, 'OUT', inside);
+    // Outside foot crossing over in front, to the inside.
+    d.skate(ax + fwd * 1.5, ay + u * 1.1, flip + (u * fwd > 0 ? 12 : -12), outside, { lifted: true, len: 1.4 });
+    if (i < 2) {
+      // Step onto the inside edge of the same (old inside) foot at the change of direction.
+      const ix = ax + W / 2, iy = yAt(ix);
+      d.skate(ix, iy, angAt(ix) + flip, inside, { len: 1.4 });
+      d.tag(ix + 1.2, iy + (u < 0 ? 0.6 : -0.6) * -1 * -1, 'IN', inside);
+    }
+  });
+  const y4 = yAt(4), y10 = yAt(10), y7 = yAt(7);
+  d.step(4 + fwd * 1.5 - 1.9, y4 - 2.1, 1);
+  d.text(4 + fwd * 1.5, y4 - 1.9, 'cross over', { size: 0.4 });
+  d.step(4 - fwd * 2.0, y4 + 1.9, 2);
+  d.text(4 - fwd * 2.0, y4 + 2.85, 'push under', { size: 0.4 });
+  d.step(7 + 1.2 - 1.9, y7 + 1.45, 3);
+  d.text(7 + 1.2, y7 + 1.6, 'inside edge', { size: 0.4 });
+  const c4y = backward ? y10 - 1.0 : y10 + 2.85;
+  if (backward) d.step(10 + fwd * 1.5 - 2.2, c4y - 0.15, 4); else d.step(9.3, c4y - 0.15, 4);
+  d.text(10 + fwd * 1.5, c4y, 'cross over back', { size: 0.4 });
+  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  d.travel(4, 10.2, 11, 10.2);
   return d.svg();
-})();
+}
 
 export default [
   {
@@ -241,7 +276,6 @@ export default [
         'Put it down and glide backwards on both feet. Next time, turn the other way.',
       ],
       mistake: 'Turning the feet before the shoulders and hips, so the step is wide and wobbly instead of heel close to heel.',
-      where: 'Only on an empty patch of a quiet public session',
       check: 'Read as a stepped (open, mohawk-style) turn: turning right, the right foot steps round first; turning left, the left foot does. Some coaches teach it with both feet staying on the ice (a two-foot pivot). Say if that is what you meant.',
     },
   },
@@ -259,7 +293,6 @@ export default [
         'Do the next full circle turning to your left, leading with the left foot each time.',
       ],
       mistake: 'Stopping halfway round to reset, so it becomes two separate half turns instead of one smooth circle.',
-      where: 'Only on an empty patch of a quiet public session',
       check: 'Read as a full turn made of two stepped half turns that keep spinning the same way, travelling in a straight line, then the next one spinning the other way. "Alternate directions" read as alternating the spin, not the direction of travel.',
     },
   },
@@ -276,7 +309,6 @@ export default [
         'Come out gliding backwards on the inside edge of the same foot, still curving the same way. Repeat on the left foot.',
       ],
       mistake: 'Hopping or putting the free foot down to get round, instead of letting the blade turn on the ice.',
-      where: 'Public session, quiet lane, low speed',
       check: 'Read as a standard figure-skating three turn (forward outside edge to backward inside edge on one foot), done slowly in a small space. "On the spot" read as "with almost no travel", not a two-foot spin or jump. The drawing shows the right foot; the same turn can also start on the forward inside edge.',
     },
   },
@@ -286,16 +318,15 @@ export default [
     title: 'Forwards Soft Drag',
     svg: fwdSoftDrag,
     card: {
-      trains: 'Control in a tight turn: a light drag of the trailing foot steadies you and tightens the turn without stopping.',
+      trains: 'A tighter turn by letting the inside foot help it round, so you can change direction in a small space.',
       steps: [
-        'Skate in forwards on both feet, knees bent.',
-        'Lean into the turn, weight on the inside foot on its outside edge.',
-        'Let the outside foot trail behind and wide, its inside edge lightly dragging on the ice.',
-        'Bring the trailing foot back under you and skate out. Repeat turning the other way.',
+        'Skate in forwards, knees bent.',
+        'Put the inside foot\'s toe on the ice and let it drag on one spot while the heel swings round. This is the same turn as the anchor, but on the toe instead of the heel.',
+        'Carve the outside foot round it on its inside edge.',
+        'Come out of the turn and skate away. Repeat turning the other way.',
       ],
-      mistake: 'Pressing the drag foot too hard, so it acts as a brake and you stall in the turn.',
-      where: 'Only on an empty patch of a quiet public session',
-      check: '"Soft drag" is coaching slang and I am not sure of the owner\'s exact meaning. I read it as: weight on the inside foot, outside foot trailing behind with its inside edge lightly ("softly") touching the ice to steady and tighten the turn. A common alternative is a heel drag, where the trailing foot is turned out and dragged on its heel. Please confirm which.',
+      mistake: 'Pressing the toe down too hard, so it acts as a brake and you stall in the turn.',
+      check: '',
     },
   },
   {
@@ -304,16 +335,15 @@ export default [
     title: 'Forwards Anchor',
     svg: fwdAnchor,
     card: {
-      trains: 'A tighter turn by using the inside foot as a pivot, so you can change direction in a small space.',
+      trains: 'A much tighter turn by using the inside foot as a pivot, so you can change direction in a small space.',
       steps: [
         'Skate in forwards with a wide stance.',
-        'Set the inside foot down a little ahead, on its outside edge with weight back on the heel. This is the anchor.',
+        'Plant the inside foot and anchor it on the heel of the skate: the heel stays in one spot while the toe swings round.',
         'Carve the outside foot round the anchor on its inside edge.',
-        'Come out of the turn on both feet and skate away. Repeat turning the other way.',
+        'Come out of the turn and skate away. Repeat turning the other way.',
       ],
-      mistake: 'Standing up straight, so the anchor foot skids instead of gripping and the turn goes wide.',
-      where: 'Only on an empty patch of a quiet public session',
-      check: '"Anchor" is coaching slang and I am not sure of the owner\'s exact meaning. I read it as the inside foot set down on its outside edge, weight on the heel, as a tight pivot that the outside foot carves round. An alternative is the inside foot dragged on its edge behind you as a "brake anchor", which would be close to the soft drag. Please confirm which.',
+      mistake: 'Letting the inside heel slide, so there is no anchor and the turn goes wide.',
+      check: '',
     },
   },
   {
@@ -322,16 +352,34 @@ export default [
     title: 'Backwards Soft Drag',
     svg: backSoftDrag,
     card: {
-      trains: 'Turning under control while skating backwards, as a defenceman does when the play changes direction.',
+      trains: 'Turning sharply while skating backwards, as a defenceman does when the play changes direction.',
       steps: [
-        'Skate backwards on both feet, knees bent.',
-        'Lean into the turn, weight on the inside foot on its outside edge.',
-        'Put the other foot out in front of you, toe turned in, its inside edge lightly dragging on the ice.',
-        'Bring that foot back under you and skate out backwards. Repeat turning the other way.',
+        'Skate backwards, knees bent.',
+        'Put the inside foot\'s toe on the ice and let it drag on one spot to help the turn. Going backwards, only the toe works for this, not the heel.',
+        'Carve the outside foot round it on its inside edge, in a sharp, tight C.',
+        'Come out of the turn and skate away backwards. Repeat turning the other way.',
       ],
       mistake: 'Looking down at the feet: the shoulders drop and the turn wobbles. Keep your head up.',
-      where: 'Only on an empty patch of a quiet public session',
-      check: 'Read as the backwards version of the forwards soft drag: the dragging foot is in front of the body (which is behind you along the path, since you face backwards), lightly dragging its inside edge. Same uncertainty as the forwards soft drag: please confirm the meaning.',
+      check: '',
     },
   },
+  ...[false, true].map((backward) => ({
+    id: `continuous-crossovers-${backward ? 'backward' : 'forward'}`,
+    group: G,
+    title: `Continuous crossovers ${backward ? 'backwards' : 'forwards'} (cross-unders)`,
+    svg: contX(backward),
+    card: {
+      trains: backward
+        ? 'Backward power and changes of direction without stopping, the way a defenceman stays in front of a rush that cuts across.'
+        : 'Building speed through turns and changing direction without stopping, which is how you skate in the flow of a game.',
+      steps: [
+        `Skating ${backward ? 'backwards' : 'forwards'}, cross the outside foot over in front.`,
+        'Think cross-UNDER: the real push is the inside foot driving out under your body on its outside edge.',
+        'Step onto the inside edge of that foot, which starts the curve the other way.',
+        'Cross over back the other way and push under again. Keep going: crossover, inside edge, crossover, inside edge, without stopping.',
+      ],
+      mistake: 'Stepping the outside foot over without the under-push, so the crossover just walks round the curve and adds no speed.',
+      check: backward ? 'Backwards, "in front" means the side you face, so the crossing foot passes in front of you, away from where you are travelling.' : '',
+    },
+  })),
 ];

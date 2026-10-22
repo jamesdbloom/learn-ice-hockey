@@ -22,7 +22,6 @@ for (const d of drills) {
   g.items.push(d);
 }
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const whereClass = (w) => /not a busy|stick-and-puck|practice/i.test(w) ? 'w-practice' : /empty patch|quiet public/i.test(w) ? 'w-quiet' : 'w-public';
 
 let n = 0;
 const sections = groups.map((g) => `
@@ -37,7 +36,6 @@ const sections = groups.map((g) => `
       <p class="trains">${esc(d.card.trains)}</p>
       <ol class="steps">${(d.card.steps || []).map((s) => `<li>${esc(s)}</li>`).join('')}</ol>
       <p class="mistake"><span class="lbl">Common mistake</span> ${esc(d.card.mistake)}</p>
-      <p class="where ${whereClass(d.card.where || '')}"><span class="lbl">Where</span> ${esc(d.card.where)}</p>
       ${d.card.check ? `<div class="check"><span class="lbl">For you to confirm</span> ${esc(d.card.check)}</div>` : ''}
     </div>
   </article>`; }).join('')}

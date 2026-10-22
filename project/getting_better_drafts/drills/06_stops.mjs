@@ -39,6 +39,7 @@ const oneFootFront = (() => {
   d.step(18.6, 3.1, 4);
   d.text(11, 2.1, 'right toe in, heel out, foot slightly ahead');
   d.travel(3, 10, 10, 10);
+  d.text(21.3, 0.95, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });
   return d.svg();
 })();
 
@@ -70,19 +71,22 @@ const tStop = (() => {
   d.step(18.2, 3.9, 4);
   d.text(11, 8.6, 'left instep tucked behind the right heel');
   d.travel(3, 10, 10, 10);
+  d.text(21.3, 0.95, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });
   return d.svg();
 })();
 
 // Shared two-foot hockey stop. gap = distance between the two blades at the stop (ft).
-function hockeyStop({ title, desc, gap, note }) {
+function hockeyStop({ title, desc, gap, note, stagger = 0 }) {
   const d = diagram({ title, desc });
   const yStop = 5.4;
   const xR = 17.6, xL = xR - gap;
+  // stagger: how far the left (inside, trailing) skate sits AHEAD of the right, along the blades (up the page).
+  const yL = yStop - stagger / 2, yR = yStop + stagger / 2;
   // approach tracks, curving into the skid
-  d.track(`M 1.5 4.6 L 8.5 4.6 C 10 4.6 ${xL - 2.4} ${yStop} ${xL - 0.6} ${yStop}`, 'L', { arrow: false });
-  d.track(`M 1.5 6.4 L 8.5 6.4 C 10.5 6.4 ${xR - 2.4} ${yStop} ${xR - 0.6} ${yStop}`, 'R', { arrow: false });
-  skid(d, xL - 2.2, yStop, xL, yStop);
-  skid(d, xR - 2.2, yStop, xR, yStop);
+  d.track(`M 1.5 4.6 L 8.5 4.6 C 10 4.6 ${xL - 2.4} ${yL} ${xL - 0.6} ${yL}`, 'L', { arrow: false });
+  d.track(`M 1.5 6.4 L 8.5 6.4 C 10.5 6.4 ${xR - 2.4} ${yR} ${xR - 0.6} ${yR}`, 'R', { arrow: false });
+  skid(d, xL - 2.2, yL, xL, yL);
+  skid(d, xR - 2.2, yR, xR, yR);
   d.skate(4, 4.6, 0, 'L');
   d.skate(4, 6.4, 0, 'R');
   d.step(4, 3.3, 1);
@@ -91,11 +95,20 @@ function hockeyStop({ title, desc, gap, note }) {
   d.skate(10.8, 6.25, -45, 'R');
   d.step(9.0, 8.0, 2);
   // stopped: blades across the line of travel, toes up the page (hips turned left)
-  d.skate(xL, yStop, -90, 'L');
-  d.skate(xR, yStop, -90, 'R');
-  d.spray(xR + 0.15, yStop, 0, { n: 6, len: 1.1, spread: 70 });
-  d.tag(xL - 0.9, yStop + 1.9, 'OUT', 'L');
-  d.tag(xR - 0.3, yStop + 1.9, 'IN', 'R');
+  d.skate(xL, yL, -90, 'L');
+  d.skate(xR, yR, -90, 'R');
+  d.spray(xR + 0.15, yR, 0, { n: 6, len: 1.1, spread: 70 });
+  if (stagger) {
+    d.tag(xL - 1.2, yL - 0.2, 'OUT', 'L');
+    d.tag(xR + 0.1, yR + 1.5, 'IN', 'R');
+    // toe-level guides showing the fore-aft split
+    const gx = xR + 1.9;
+    d.raw(`<g stroke="${COL.ink}" stroke-width="1.5" stroke-dasharray="3 3"><line x1="${xL * PX}" y1="${(yL - 0.85) * PX}" x2="${(gx + 0.3) * PX}" y2="${(yL - 0.85) * PX}"/><line x1="${xR * PX}" y1="${(yR - 0.85) * PX}" x2="${(gx + 0.3) * PX}" y2="${(yR - 0.85) * PX}"/></g>`);
+    d.track(`M ${gx} ${yR - 0.95} L ${gx} ${yL - 0.75}`, 'ink', { width: 2 });
+  } else {
+    d.tag(xL - 0.9, yL + 1.9, 'OUT', 'L');
+    d.tag(xR - 0.3, yR + 1.9, 'IN', 'R');
+  }
   d.step(xL - 1.1, 3.3, 3);
   d.text((xL + xR) / 2, 2.1, note);
   d.travel(3, 10, 10, 10);
@@ -111,35 +124,46 @@ const parallelStop = hockeyStop({
 
 const sideBySideStop = hockeyStop({
   title: 'Two foot hockey stop – side by side',
-  desc: 'The same stop with a wider base: feet well apart and level with each other, each blade skidding its own track.',
-  gap: 2.8,
-  note: 'feet wide and level, two separate skids',
+  desc: 'The same stop, but with the feet in a scissor stance: the left (inside) skate well ahead of the right along the line of the blades, both blades across the line of travel, each skidding its own track.',
+  gap: 1.0,
+  stagger: 2.0,
+  note: 'scissor: left skate well ahead of the right',
 });
 
-// 5. One-foot glide to one-foot stop, forwards (right foot, turning left, inside edge).
-const oneFootForward = (() => {
+// 5. One-foot glide to one-foot stop, forwards, on the RIGHT foot.
+//   Inside edge: the right toe turns to the skater's LEFT (up the page, -90); its inside edge faces back.
+//   Outside edge: the right toe turns to the skater's RIGHT (down the page, +90), so the right HEEL swings
+//   round in front of the lifted left foot; the right foot's outside edge now faces back and bites.
+function oneFootStop(edge) {
+  const out = edge === 'OUT';
   const d = diagram({
-    title: 'One foot glide to one foot stop – forwards',
-    desc: 'Glide forward on the right foot with the left foot lifted, then turn the right blade across the line of travel and skid to a stop on its inside edge without putting the left foot down.',
+    title: `One foot glide to one foot stop – forwards, ${out ? 'outside' : 'inside'} edge`,
+    desc: out
+      ? 'Glide forward on the right foot with the left foot lifted. Turn the right toe out to the right so the right heel comes round in front of the left foot, blade across the line of travel, and skid to a stop on the right outside edge without putting the left foot down.'
+      : 'Glide forward on the right foot with the left foot lifted, then turn the right blade across the line of travel and skid to a stop on its inside edge without putting the left foot down.',
   });
   d.track('M 1.5 6.4 L 9 6.4 C 11.5 6.4 13 6.3 14.6 6.3', 'R', { arrow: false });
   skid(d, 13.2, 6.3, 16.4, 6.3);
   d.skate(4, 6.4, 0, 'R');
   d.skate(3.6, 4.9, 0, 'L', { lifted: true });
   d.step(4, 3.6, 1);
-  d.skate(11, 6.4, -45, 'R');
-  d.skate(10.6, 4.9, -20, 'L', { lifted: true });
+  d.skate(11, 6.4, out ? 45 : -45, 'R');
+  d.skate(10.6, 4.9, out ? 10 : -20, 'L', { lifted: true });
   d.step(11, 3.6, 2);
-  d.skate(16.4, 6.3, -90, 'R');
-  d.skate(15.0, 4.4, -90, 'L', { lifted: true });
+  d.skate(16.4, 6.3, out ? 90 : -90, 'R');
+  if (out) d.skate(15.2, 4.6, 0, 'L', { lifted: true });
+  else d.skate(15.0, 4.4, -90, 'L', { lifted: true });
   d.spray(16.6, 6.3, 0, { n: 6, len: 1.1, spread: 70 });
-  d.tag(15.4, 8.0, 'IN', 'R');
+  d.tag(out ? 17.9 : 15.4, out ? 7.6 : 8.0, edge, 'R');
   d.step(17.6, 4.2, 3);
+  if (out) d.text(16.4, 2.6, 'right heel in front of the left foot', { size: 0.44 });
   d.text(11, 9.1, 'left foot stays up the whole time');
   d.travel(3, 10, 10, 10);
+  d.text(21.3, 0.95, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });
   return d.svg();
-})();
-
+}
+const oneFootForward = oneFootStop('IN');
+const oneFootForwardOut = oneFootStop('OUT');
 // 6. One-foot glide to one-foot stop, backwards (right foot, toe turned out, inside edge).
 const oneFootBackward = (() => {
   const d = diagram({
@@ -161,6 +185,7 @@ const oneFootBackward = (() => {
   d.step(16.4, 2.6, 3);
   d.text(11, 8.6, 'skating backwards: toes point the other way to travel');
   d.travel(3, 10, 10, 10);
+  d.text(21.3, 0.95, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });
   return d.svg();
 })();
 
@@ -176,10 +201,10 @@ export default [
         'Glide forward on both feet, knees bent, feet about hip-width apart.',
         'Turn your right toe in and heel out, and slide that foot a little in front of you.',
         'Press down onto the inside edge so it scrapes the ice and sprays a little snow.',
-        'Keep the left foot gliding straight and sink your knees until you stop, then repeat with the left foot.',
+        'Keep the left foot gliding straight and sink your knees until you stop.',
+        'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Leaning forward over the toes, so the scraping foot catches and tips you instead of slowing you.',
-      where: 'Public session, quiet lane, low speed',
       check: 'I read this as a one-foot snowplow stop: one blade turned toe-in and pushed out in front on its inside edge while the other foot glides. If you meant a different stop with one foot placed in front of the other (for example a front-foot hockey stop), the diagram is wrong.',
     },
   },
@@ -194,10 +219,10 @@ export default [
         'Glide forward on your right foot with the left foot lifted.',
         'Bring the left foot behind your right heel at a right angle, making a T, toe pointing out.',
         'Lower it and drag it on its outside edge, pressing a little harder as you go.',
-        'Keep your shoulders and hips facing forward and your knees bent until you stop. Repeat with the other foot behind.',
+        'Keep your shoulders and hips facing forward and your knees bent until you stop.',
+        'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Twisting the hips round towards the back foot, which turns you sideways instead of stopping you.',
-      where: 'Public session, quiet lane, low speed',
       check: 'I read the back foot as dragging on its outside edge, as in the usual learn-to-skate T-stop, with the instep of the back foot just behind the front heel. Some coaches also teach an inside-edge drag behind the body; if that is what you meant, the edge tag and step 3 need changing.',
     },
   },
@@ -214,8 +239,7 @@ export default [
         'Sink your knees and lean back against the slide: front foot on its inside edge, back foot on its outside edge, until you stop. Practise turning both ways.',
       ],
       mistake: 'Turning only the shoulders or only one foot, so the blades end up at different angles and you skid round instead of stopping.',
-      where: 'Only on an empty patch of a quiet public session',
-      check: 'I could not be sure how you tell "parallel" from "side by side". I drew parallel as the standard stop with both blades turned together, parallel and about hip-width apart, hips square to the stop. I drew side by side as the same stop on a wider base, feet well apart and level, each blade making its own skid. If "side by side" means something else, such as two skaters stopping next to each other, or "parallel" means blades parallel as opposed to the back foot angled, tell me and I will redraw.',
+      check: '',
     },
   },
   {
@@ -224,32 +248,48 @@ export default [
     title: 'Two foot hockey stop – side by side',
     svg: sideBySideStop,
     card: {
-      trains: 'A balanced, stable stop with weight on both feet, which helps you stay on your feet when stopping hard near other players.',
+      trains: 'A stable, strong stop with the feet split front-to-back, which keeps you balanced when stopping hard.',
       steps: [
         'Glide forward on both feet with your knees bent.',
-        'Turn both blades across the line of travel together, with your feet wider than for the parallel stop and level with each other.',
-        'Share your weight on both blades, inside edge on the front foot and outside edge on the back foot, and sink your knees until you stop. Practise turning both ways.',
+        'Turn both blades across the line of travel together, and split the feet into a scissor stance: inside skate well ahead of the outside skate.',
+        'Sink your knees and lean back against the slide, front foot on its inside edge and back foot on its outside edge, until you stop. Practise turning both ways.',
       ],
-      mistake: 'Putting nearly all the weight on the front foot, so the back foot chatters or lifts.',
-      where: 'Only on an empty patch of a quiet public session',
-      check: 'See the note on the parallel stop: I drew "side by side" as a wider base with the feet level, which is my reading, not a term I could confirm. The two diagrams differ only in how far apart the feet are.',
+      mistake: 'Letting the feet come level, which turns it back into the parallel stop.',
+      check: 'Drawn with the inside (here the left) skate ahead in the scissor. If you keep the other foot ahead, say and it will be swapped.',
     },
   },
   {
     id: 'stops-one-foot-glide-stop-forwards',
     group: GROUP,
-    title: 'One foot glide to one foot stop – forwards',
+    title: 'One foot glide to one foot stop – forwards, inside edge',
     svg: oneFootForward,
     card: {
       trains: 'Balance and edge control to stop on one foot, so you can stop and push off again in one movement.',
       steps: [
         'Glide forward on your right foot with the left foot lifted beside it.',
-        'Turn your hips and the right blade across the line of travel.',
-        'Sink the knee and press the inside edge until you stop, keeping the left foot off the ice. Repeat on the left foot.',
+        'Turn your hips and the right blade across the line of travel, toe turning towards the lifted foot.',
+        'Sink the knee and press the inside edge until you stop, keeping the left foot off the ice.',
+        'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Putting the lifted foot down to save your balance, which turns it back into a two-foot stop.',
-      where: 'Only on an empty patch of a quiet public session',
-      check: 'I drew the stop on the inside edge of the gliding foot (turning towards the lifted foot), which is the usual first version. It can also be done on the outside edge, turning the other way; if you meant that, the turn and the edge tag change.',
+      check: '',
+    },
+  },
+  {
+    id: 'stops-one-foot-glide-stop-forwards-outside',
+    group: GROUP,
+    title: 'One foot glide to one foot stop – forwards, outside edge',
+    svg: oneFootForwardOut,
+    card: {
+      trains: 'Stopping on the outside edge of one foot, the edge you need to stop and go the other way in one movement.',
+      steps: [
+        'Glide forward on your right foot with the left foot lifted.',
+        'Turn the right toe out to the right, so the right heel comes round in front of the left foot and the blade is across the line of travel.',
+        'Sink the knee and press the outside edge until you stop, keeping the left foot off the ice.',
+        'Repeat on the other foot: work both feet equally.',
+      ],
+      mistake: 'Leaning the upper body forward over the stopping foot, so the outside edge slips out.',
+      check: 'Read as stopping on the same (gliding) foot, which turns toe-out so its heel ends up in front of the lifted foot.',
     },
   },
   {
@@ -262,10 +302,10 @@ export default [
       steps: [
         'Skate backwards and glide on your right foot with the left foot lifted.',
         'Turn the right toe out and the heel in.',
-        'Bend the knee and press the blade outwards on its inside edge so it scrapes the ice until you stop. Repeat on the left foot.',
+        'Bend the knee and press the blade outwards on its inside edge so it scrapes the ice until you stop.',
+        'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Leaning back over the heels, so the blade slides out from under you.',
-      where: 'Only on an empty patch of a quiet public session',
       check: 'I read this as a one-foot backward snowplow stop: toe turned out, heel pushed out on the inside edge. It could instead mean turning the blade fully sideways from a backward glide, which is a harder stop; I am not sure which you meant.',
     },
   },

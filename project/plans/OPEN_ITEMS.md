@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG31 (22 Oct):** all reviews CLEAR; committing.
+(none)
 
 ## New page: Getting Better on Your Own
 
