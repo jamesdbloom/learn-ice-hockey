@@ -344,8 +344,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 - **CARHA 48(a) general match:** never cited in passing, puck_support, goaltender, switching, breakouts or faceoffs (NHL 21.1 half done in SG13).
 - **CARHA 32(d)** is absent from some backswing sites (winger :102/:112, defender, zone_entries, faceoffs, NZ). Facts lines at cap (center :485, PWTP :708) are an accepted limitation. (CARHA 62(b) done in SG13.)
-- **zone_entries :235:** "only once made" errs safe. **game_management :244:** the full-ice press "with both defencemen pinching" has no condition (tactic hedge).
-- **OZP trailer:** no USAH 614(c), no HC clause v.
+- **zone_entries :235:** "only once made" errs safe.
 - **HC republication checks** still to do: 4.7(a) Interp 2, 7.1(f), 10.4, 10.6(a) Interp 5, the penalty-bench "end of the period" change.
 - **HC 7.1(c) vs Appendix D Note 1 scope:** never settled by a rules-verifier; 7.1(c) is now cited in 11 documents.
 - **team_play :283 PWHL ceiling:** "can go higher … if it hurts them" is slightly broad for the PWHL (only 21.1, deliberate injury). Harsher direction.
@@ -355,24 +354,24 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 - **SG14 DONE (22 Oct)** (record sg14_posture_followups_renderer_2026-10-22.md): board-posture calls for conditioning, getting_started, switching, zone_entries, defender, passing; body_contact late-hit NHL/PWHL + 10.1(i); time_and_space goalie contact; defender :244; 7 renderer fixes. New: renderer speaks sentence-initial rule numbers lowercase; HC 2.2(i) letter-or-numeral unchecked.
 
 - **Board posture:** page calls DONE in SG14. Still open: diagram captions voicing the full posture (forechecking_systems.mjs :918/:1299, wall_contact_clauses.mjs :108 possibly shared, breakouts.mjs :1157, puck_handling.mjs :278, scanning_and_anticipation.mjs :190).
-- **Facing-the-wall fallback** is missing at practice_and_development :360/:382 (PWTP done in SG13). **scanning :380/:390:** "see their numbers, pull up" is still telegraphic.
-- **Amber on a citation:** game_management :946 ("⚠️ **640(g): …"); offensive_zone_play.mjs:675 (caption).
+- **Facing-the-wall fallback** done (PWTP SG13, practice_and_development SG15).
 - **Listener "Important." runs:** rules_primer has a run of 19; body_contact §9 (8), §12 (7), §5 (5).
 - **Long units:** PWTP has 3 paragraphs over 1,200 chars (longest 2,378); corpus-wide 43 long paragraphs and 90 KTs over 60 words (check_readability). Spoken chunks over 2,500 chars are unmeasured (needs an md_to_speech census). 92 of 204 captions are over 800 chars.
-- **Smaller items:** equipment :173 WNIHL visor quote has no age line; team_play :133 links `#line-changes-at-a-stoppage` but means rules_primer "The consequences"; "every level of UK hockey runs the IIHF book" in 34 headers (low; "amended locally" may cover it).
+- **Smaller items:** "every level of UK hockey runs the IIHF book" in 34 headers (low; "amended locally" may cover it).
 - **rules_primer:** table :899 has 0 rows of headroom; the content of table :1018 (dropped from audio) has no recorded check that it is voiced inline; quote-drift flags at :430 and :1201.
 - **Basics wing script** omits the weak-side collapse to the slot that the centre list relies on (winger.md :55/:154/:182). Fix in a future Basics remake.
 
 ### Diagrams and site
 
-- **Captions:** pk-nz-1-3 and pp-umbrella captions not yet read; puck_handling.mjs:427 title has no scope (its comment says "no book count", but the caption says "five of the six books"); defensive_zone_coverage.mjs:423 ends "All six books are set out earlier" (pointer); the winger arriving-at-the-line caption lacks CARHA on a lifted skate; 31 titles repeat word for word in their own caption.
-- **Stale comments:** breakouts.mjs :390/:503/:525 and wall_contact_clauses.mjs :71/:84 quote a breakouts KT6 that has since been reworded.
+- **SG15 DONE (22 Oct)** (record sg15_captions_renderer_site_smalls_2026-10-22.md). New/open from it: pull-up wording consistency ("see the numbers on their back" vs "see their numbers" in ~18 files); puck-decides caption HC "also counts where you are" ambiguity (rules look); winger-arriving-at-the-line caption full posture on a blue-line stand-up; puck-on-the-far-side page-about-itself text; pinch/press captions ~2,850 chars; OZP :833 clause ii exception (optional); rules_primer :1038 "does not settle" (optional); breakouts.mjs rim comment says goaltender host (stale); renderer ~340 other lower-case sentence starts (cosmetic).
+
+- **Captions:** 31 titles repeat word for word in their own caption.
 - **Labels:** leader lines start at token centre and cross the token's own letter (placeLabels, all diagrams); other full-sheet labels may cross painted lines (no checker); dz-walk-down-man "goes with the carrier" may cross the blue line at 400 px.
-- **Site:** 27 literal `*` on 14 built pages (broken emphasis beside quotation marks in Sources trailers); Basics "· 11 min" can wrap at 400 px (no nowrap); a site-reviewer pass is still owed for the 400 px diagram scene, the 🇬🇧 wrap in conditioning's Key focus and a special_teams bold run.
+- **Site:** a site-reviewer pass is still owed for the 400 px diagram scene, the 🇬🇧 wrap in conditioning's Key focus and a special_teams bold run.
 
 ### Renderer (md_to_speech) and podcast tooling
 
-- Renderer: the 7 items are DONE in SG14. Open: sentence-initial rule numbers spoken lowercase; check HC 2.2(i) letter vs numeral.
+- Renderer: ~340 other lower-case sentence starts (list/heading numerals, formations, quantities) — cosmetic.
 - downloads.astro and the m3u playlists have no Basics format; podcast_queue.py has no `--style basics`; synthesize_style_b has no `--doc-id`.
 
 ### Checkers and sources (scripts/ — change between waves, never during one)

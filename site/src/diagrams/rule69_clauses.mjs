@@ -171,7 +171,8 @@
  * ⚠️ FOUR CAPTIONS IN FOUR MODULES SPEAK THIS. Confirmed with
  * `grep -ln CREASE_LINE_IS_THE_CREASE site/src/diagrams/*.mjs`, and each of the
  * four was read in its host caption before this was rewritten:
- * `oz-net-front-screen` (followed by " — and read your own league's rule."),
+ * `oz-net-front-screen` (followed by ". Under USA Hockey Rule 625(b) …" since
+ * 22 October 2026, when the instruction moved to the front of its amber run),
  * `screen-the-goalie-sightline` (followed by ". Here …"),
  * `winger-offensive-zone-patches` (followed by "."), `entry-wide` (followed by
  * ". Screening from …"). All four still read as one sentence chain after it.

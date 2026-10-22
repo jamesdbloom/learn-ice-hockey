@@ -672,8 +672,16 @@ const netFrontScreen = {
     // listener heard the crease law as flat prose. It now prefixes "Important." on both
     // hosts. Correct here, because the run really is a hazard — but stated, because an
     // addition and a move are easy to confuse and only one of them is free.
-    ' ⚠️ USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter ' +
-    'still — there a foot in the paint can cost you the zone and not just the goal. One rec book is ' +
+    // ⚠️ 22 October 2026: THE AMBER RUN NOW OPENS ON THE INSTRUCTION, NOT ON A CITATION. It used
+    // to open "USA Hockey Rule 625(b) and IIHF Rule 69.1 are stricter still", with "So keep your
+    // feet out of the blue paint" as the caption's last sentence. Same claims, same order of
+    // hazards; the instruction moved to the front of the run and "stricter still" became a plain
+    // statement of what those two books cost you, since it no longer follows the sentence it
+    // compared against.
+    ' ⚠️ Keep your feet out of the blue paint, and off ' +
+    CREASE_LINE_IS_THE_CREASE +
+    '. Under USA Hockey Rule 625(b) and IIHF Rule 69.1 a foot in the paint can cost you the ' +
+    'zone and not just the goal. One rec book is ' +
     'stricter again: the CARHA Hockey Official Rule Book, Rule 66(b), bars an attacking player from ' +
     'standing in the goal crease unless the puck is in the goal crease area, disallows the goal if ' +
     'one does, and gives no incidental-contact allowance of the kind the NHL and IIHF give you. Read ' +
@@ -684,9 +692,7 @@ const netFrontScreen = {
     'that as one rec book and not as the rec position. CARHA governs CARHA-affiliated leagues ' +
     'only, ' +
     'and rec and beer leagues are often said to be stricter still, which is an impression rather ' +
-    'than a count. So keep your feet out of the blue paint, and off ' +
-    CREASE_LINE_IS_THE_CREASE +
-    " — and read your own league's rule.",
+    "than a count. Read your own league's rule.",
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +

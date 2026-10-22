@@ -80,7 +80,7 @@ Read: The hips, not the stick — a player accelerates where the hips face
 Read: Feet or glide — a defender in full crossovers is committed and can be beaten by going the other way
 Read: How many are arriving — one closing opponent you solve with a move, two you solve by getting rid of the puck
 Action: Reverse the puck back against the flow into the ice an over-skated forechecker has just vacated
-Never: Turn your back to anyone coming at you on a reverse, or duck — they are on your hip. Skates parallel to the wall, forearm and hip to it, never the point of your shoulder, head up, chin off your chest
+Never: Turn your back to anyone coming at you on a reverse, or duck — they are on your hip. Skates parallel to the wall, head up, chin off your chest, forearm and hip to it — never the point of your shoulder
 ```
 
 Beginners hear "you've got time" and picture seconds on a clock. That is the wrong model, and it will get you hit.

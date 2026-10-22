@@ -130,7 +130,7 @@ What that means for you, in order:
 
 **The IIHF adds a fourth exception — *"a Player with a broken skate"* — at Rule 81.4 but not at Rule 82.1, and which one controls has not been published.** Do not plan a change around it: if your blade goes on an icing, tell the official and be ready to stay out. ⚠️ **Never put a replacement over the boards on it** — the officials send them back and warn your coach, and **that warning is one per team per game**, so a bench that has already spent it gets a bench minor for delaying the game.
 
-**The on-ice five is fixed when the puck leaves the offending player's stick.** [Game Management](../systems/game_management.md) covers it, and [Rules Primer](../foundation/rules_primer.md#line-changes-at-a-stoppage) has the rest.
+**The on-ice five is fixed when the puck leaves the offending player's stick.** [Game Management](../systems/game_management.md) covers it, and [Rules Primer](../foundation/rules_primer.md#the-consequences) has the rest.
 
 **What it costs.**
 

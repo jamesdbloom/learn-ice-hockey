@@ -29,7 +29,7 @@
 // retyped. Four captions in this file carry the wall-contact limb and all four
 // stated it differently; see wall_contact_clauses.mjs for what is shared and,
 // as importantly, what deliberately is not.
-import { SHOULDER_TAIL, WALL_POSTURE_INSTEAD } from './wall_contact_clauses.mjs';
+import { SHOULDER_TAIL, WALL_POSTURE_SHORT } from './wall_contact_clauses.mjs';
 
 // ---------------------------------------------------------------------------
 // Points named once because more than one thing refers to them.
@@ -375,29 +375,22 @@ const reverse = {
     // that sentence would amber it. The limb is its own sentence and does not re-open the
     // negation the comment above this caption exists to keep un-invertible.
     //
-    // WHY THIS CAPTION IS OWED THE LIMB. It is spoken into four documents, and two of them are
-    // thin or empty on this: content/positions/goaltender.md carries NO limb vocabulary at all,
-    // and content/hockey-iq/time_and_space.md carries little. The "WHAT SURVIVED THE CUT" note
-    // above reasoned about what the hosts carry for the READ and correctly kept only what the
-    // drawing cannot say -- but it did not ask the safety question, and the answer differs: the
-    // hosts do not carry the posture. Both players in this picture are in wall geometry. D1 is
-    // working up the wall with a forechecker who has just gone past his hip, and D2 arrives in
-    // the corner onto a puck the caption itself says D1 "cannot see" -- an arrival below the
-    // goal line onto a banked puck is the classic moment a player turns into the boards. The
-    // siblings breakout-winger-wall and breakout-against-1-3-1 in this same file carry the limb;
-    // this one did not, and it teaches the reverse in full.
-    //
-    // WORDING IS THE OWNER'S: content/systems/breakouts.md Key Takeaway 6, now IMPORTED as
-    // WALL_POSTURE_INSTEAD rather than retyped -- which is what "matched word for word to the
-    // sibling limb in this file so the two cannot drift apart" asserted and a shared constant
-    // actually delivers. The medical mechanism is still left to
-    // content/technique/body_contact_and_battles.md section 6; see the note on breakout-rim.
-    // ⚠️ THE SHOULDER CLAUSE IS NOT LEFT TO SECTION 6 ANY MORE and travels inside the
-    // constant -- the rim note records why the reasoning that dropped it was wrong.
+    // WHY THIS CAPTION CARRIES THE LIMB, AND WHY ONLY THE SHORT FORM. It is spoken into four
+    // documents. Both players are in wall geometry: D1 works up the wall with a forechecker just
+    // past their hip, and D2 arrives in the corner onto a puck they have not seen -- the classic
+    // moment a player turns into the boards. content/positions/goaltender.md carries no skater
+    // wall posture of its own, so the short line stays here.
+    // ⚠️ DEMOTED 22 October 2026 (owner ruling 23 Sep: the full posture belongs where the page is
+    // ABOUT board contact). This picture is about the reverse as a breakout play, and the
+    // mechanics now live beside the marker in every host that teaches wall play: breakouts.md's
+    // reverse ```facts Never: line ("take contact with skates parallel to the boards, forearm and
+    // hip to the wall, head up and chin off your chest"), defender.md's retrieval paragraph and
+    // time_and_space.md's reverse facts line. The caption keeps the prohibition and the short
+    // form, WALL_POSTURE_SHORT -- see wall_contact_clauses.mjs for its order and wording.
+    // Second person kept ("If you are one of them"): this caption is voiced into goaltender.md.
     '⚠️ Both players here can be hit on the wall, and D2 is arriving onto a puck they have not seen ' +
-    // W33: same second-person fix as breakout-rim — also voiced into goaltender.md.
     'travel. If you are one of them, never turn your back to anyone coming at you, and never duck. ' +
-    WALL_POSTURE_INSTEAD,
+    WALL_POSTURE_SHORT,
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 is on the right boards just ' +
@@ -490,51 +483,25 @@ const rim = {
     // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with no
     // closing delimiter, so a limb placed mid-caption ambers everything after it.
     //
-    // WHY THIS CAPTION IS OWED THE LIMB AND breakout-d-to-d IS NOT. This diagram is spoken into
-    // content/positions/goaltender.md, whose own prose carries NO limb vocabulary at all -- zero
-    // hits for "skates parallel", "forearm and hip", "never duck" or "back to the boards". A
-    // listener hearing this caption in that document gets the wall play with whatever caveat the
-    // caption itself carries and cannot follow a cross-reference, so the caption is the sole
-    // carrier there. And the play is wall geometry at BOTH ends: the caption's own words put D1
-    // "sealed against the boards" by a forechecker, and send the puck to a winger who receives it
-    // on the far wall. The siblings breakout-winger-wall and breakout-against-1-3-1 in this same
-    // file already carry the limb for exactly that situation; this one did not.
-    //
-    // WORDING IS THE OWNER'S, NOT COMPOSED HERE: content/systems/breakouts.md Key Takeaway 6.
-    // It is now IMPORTED rather than retyped -- WALL_POSTURE_INSTEAD, shared with
-    // breakout-reverse, which is what this comment used to CLAIM ("matched to the sibling
-    // breakout-against-1-3-1 ... so the two do not drift apart") while the four wall captions in
-    // this file in fact carried four different wordings.
-    //
-    // DELIBERATELY OMITTED, and the omission has a reason:
-    //   - the cervical-flexion mechanism and USA Hockey's "can occur at walking speed". That
-    //     claim belongs to the DUCKING prohibition, not to the turned back, so a caption
-    //     attaching it to the turned back would overstate the source. Its owner is
-    //     content/technique/body_contact_and_battles.md section 6, which states it "of the
-    //     head-down collision rather than of the turn" (:767); a caption cannot link.
-    //
-    // ⚠️ RESTORED 22 September 2026 -- THE SHOULDER CLAUSE, AND THE REASONING THAT DROPPED IT.
-    // This comment previously listed the shoulder clause as a second deliberate omission, on the
-    // ground that section 6 "records an unreconciled USA Hockey drill sentence ... and says
-    // plainly the manual does not settle it". That does not survive reading section 6. What it
-    // declines to resolve is WHICH SHOULDER TURNS TOWARD THE CHECKER -- "far" is undefined in the
-    // drill sentence -- and it then resolves the wall question outright at
-    // body_contact_and_battles.md:789: "the tip never, on any approach, and along your side the
-    // shoulder is not the surface you are meeting the wall with, if you can help it. Forearm and
-    // hip." The dropped clause carried the one flat "never" USA Hockey writes here
-    // (sources/ibc.txt:1453). And the cited source itself carries it: Key Takeaway 6 reads
-    // "forearm and hip to the wall -- NOT THE POINT OF YOUR SHOULDER, AND NOT THE WHOLE SHOULDER
-    // IF YOU CAN HELP IT -- head up and chin off your chest", so the comment was citing KT6 while
-    // deleting a clause from it. The sibling scan-before-a-wall-reception had already ruled the
-    // other way with the same sources read.
-    // PROHIBITION PLUS INSTRUCTION, never a prohibition alone: "never turn your back to anyone coming at you, and never duck" is
-    // followed by the posture that replaces them.
+    // WHY THIS CAPTION CARRIES THE LIMB AND breakout-d-to-d DOES NOT. The play is wall geometry at
+    // both ends -- D1 "sealed on the boards", the winger receiving on the far wall -- and the
+    // caption is also spoken into content/positions/defender.md.
+    // ⚠️ DEMOTED 22 October 2026 (owner ruling 23 Sep: keep the full posture where the page is
+    // ABOUT board contact, demote it where it was inherited). This picture is about the rim as a
+    // breakout play. The mechanics live beside the marker: breakouts.md's rim ```facts Never: line
+    // ("take contact with skates parallel to the boards, forearm and hip to the wall, head up and
+    // chin off your chest") and Key Takeaway 3 ("skates parallel to the wall, forearm and hip to
+    // it, head up"), and defender.md's retrieval paragraph. The caption keeps the prohibition and
+    // the short form, WALL_POSTURE_SHORT. This comment used to cite breakouts.md "Key Takeaway 6"
+    // as the wording's owner; KT6 is now about rims and reverses and carries no posture.
+    // The medical mechanism (cervical flexion, "can occur at walking speed") stays with its owner,
+    // content/technique/body_contact_and_battles.md section 6.
     '⚠️ This is a wall play at both ends. D1 is sealed on the boards and the winger takes it on ' +
-    // W33: "If you are the skater on the wall" — this caption is voiced into goaltender.md too,
-    // where a bare "your back" addressed the goaltender reading it (OPEN_ITEMS second-person row).
+    // W33: "If you are the skater on the wall" -- this caption is voiced into goaltender.md too,
+    // where a bare "your back" addressed the goaltender reading it.
     'the far wall. If you are the skater on the wall, never turn your back to anyone coming at you, and ' +
     'never duck. ' +
-    WALL_POSTURE_INSTEAD,
+    WALL_POSTURE_SHORT,
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck deep in the ' +
@@ -908,9 +875,11 @@ const wingerWall = {
     // delimiter.
     '⚠️ Never turn your back to anyone coming at you, and never duck. Puck protection never ' +
     'justifies it. Get your skates parallel to the boards instead, forearm and hip to the wall, ' +
-    // SHOULDER_TAIL, not WALL_POSTURE_INSTEAD: the "Puck protection never justifies it" lead and
-    // this limb's own wording were composed here and widened in an earlier round (see above), so
-    // only the clause that was MISSING is imported. The census of 22 September found this caption
+    // FULL POSTURE KEPT here, not demoted to WALL_POSTURE_SHORT like the rim, reverse and 1-3-1
+    // captions (22 October 2026): this section is about protecting the puck ON the wall, so the
+    // posture is the subject, not an inheritance (owner ruling 23 Sep). The "Puck protection never
+    // justifies it" lead and this limb's own wording were composed here and widened in an earlier
+    // round (see above), so only the clause that was MISSING is imported. The census of 22 September found this caption
     // prescribing the forearm and hip and saying nothing about the shoulder.
     'head up and chin off your chest' + SHOULDER_TAIL,
 
@@ -1149,13 +1118,15 @@ const againstThe131 = {
     // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with
     // no closing delimiter, so a warning placed mid-caption ambers everything after it. This
     // limb sat in the middle and is unchanged in wording — only its position moved.
-    // SHOULDER_TAIL only. "Body open to the ice" and "into contact if it comes" are load-bearing
-    // for THIS picture -- a winger posted up on the wall waiting for a pass, where contact may or
-    // may not arrive -- so this limb is not flattened onto WALL_POSTURE_INSTEAD. Only the missing
-    // shoulder clause is imported.
-    '⚠️ A player waiting on the boards is the one who gets hit. Body open to the ice, head up, never ' +
-    'turn your back to anyone coming at you and never duck. Get your skates parallel to the wall instead, forearm ' +
-    'and hip into contact if it comes, and chin off your chest' + SHOULDER_TAIL,
+    // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep). "Body open to the ice"
+    // stays: it is the tactical half for a winger posted up on the wall waiting for a pass. The
+    // mechanics ("Get your skates parallel to the wall instead, forearm and hip into contact if it
+    // comes") now live only beside the marker, in breakouts.md's 1-3-1 ```facts lines ("Never:
+    // Wait on the wall for a pass with your back to anyone coming at you ... forearm and hip to the
+    // wall" and the "Posted up still means body open to the ice" Technique: line). Sole host is
+    // breakouts.md.
+    '⚠️ A player waiting on the boards is the one who gets hit. Body open to the ice, never ' +
+    'turn your back to anyone coming at you and never duck. ' + WALL_POSTURE_SHORT,
 
   describe:
     'The full 200-foot sheet. Your defending zone is at the left, the far end at the right. Your ' +

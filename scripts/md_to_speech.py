@@ -587,9 +587,86 @@ class Rule:
     note: str = ""
 
 
-def apply_rule(tokens: Sequence[Token], rule: Rule, counter: Counter) -> list[Token]:
+#: Rules whose output is a RULE NUMBER, and so can open a sentence: "…clause d).
+#: 601(a)(4) adds…" or "…finish the job. 101.1 lets players…". Every number
+#: expander emits lower case, which is right mid-sentence and wrong here: the
+#: listener's text read "clause d). six hundred and one, clause a…". `bare-number`
+#: qualifies only when `_bare_number_is_rule` says so -- a sentence-initial bare
+#: integer is as likely a quantity, a formation or a list numeral as a rule, and
+#: those populations are left alone on purpose.
+SENTENCE_CAPITAL_RULES = frozenset({
+    "plural-rule-number", "rule-citation", "section-reference",
+    "bare-clause-citation", "usa-clause-citation", "bare-number",
+})
+
+#: A word ending in "." that does NOT end a sentence: "(p. 82)", "Dec. 31",
+#: "No. 4", "e.g. 56.1". Lower-cased, dots removed. A single letter is treated
+#: the same way ("U.S. 601") unless it is a clause letter ("clause d. 601…").
+_NON_TERMINAL_ABBREVIATIONS = frozenset("""
+    p pp no nos vs v cf eg ie etc approx ca fig figs ch art arts para paras sec
+    secs vol vols ed eds st mr mrs ms dr jan feb mar apr jun jul aug sep sept oct
+    nov dec ref refs pg pt
+""".split())
+
+_SENTENCE_LEAD_CHARS = " \t\n([{\"'“‘⚠❗🚫️"
+
+
+def _rule_number_opens_sentence(before: str, at_start: bool) -> bool:
+    """True when a rule number following `before` begins a sentence.
+
+    `before` is everything already emitted in this text unit. Opening brackets,
+    quotation marks and warning glyphs between the boundary and the number are
+    looked through. Start of text counts only when the CALLER says the unit
+    opens a sentence (`at_start`): a facts value after "Never —", a table cell
+    after its column head and an ordered-list item after "Second," do not.
+    """
+    core = before.rstrip(_SENTENCE_LEAD_CHARS)
+    if not core.strip():
+        return at_start
+    if len(core) == len(before):
+        return False          # no whitespace or opener between: mid-token
+    core = core.rstrip(SENTENCE_CLOSERS)
+    if not core or core[-1] not in ".!?":
+        return False
+    if core[-1] == ".":
+        word = re.search(r"(?:^|[\s(\[\"“'‘—–-])((?:[A-Za-z]\.)*[A-Za-z]+)\.$", core)
+        if word:
+            bare = word.group(1).replace(".", "").lower()
+            if bare in _NON_TERMINAL_ABBREVIATIONS:
+                return False
+            if len(bare) == 1 and not re.search(r"\b(?:sub-)?clause [a-z]\.$", core):
+                return False
+    return True
+
+
+def _bare_number_is_rule(match: re.Match) -> bool:
+    """A `bare-number` match that is a rule number: a decimal ("48.1"), or an
+    integer the text itself marks as a rule -- "640 Note 2", "616's Note 1".
+    A plain integer ("50 covers head contact") is left alone: at a sentence
+    start it is as often a quantity, a formation or a list numeral."""
+    if "." in match.group(0):
+        return True
+    return bool(re.match(r"(?:['’]s\b|[ ]Note\b)", match.string[match.end():]))
+
+
+def _capitalise_first(produced: "str | list[Token]") -> "str | list[Token]":
+    if isinstance(produced, str):
+        return produced[:1].upper() + produced[1:]
+    out = list(produced)
+    for index, token in enumerate(out):
+        if token.kind == SSML or not token.text.strip():
+            continue
+        if token.kind == TEXT:
+            out[index] = Token(TEXT, token.text[:1].upper() + token.text[1:])
+        break
+    return out
+
+
+def apply_rule(tokens: Sequence[Token], rule: Rule, counter: Counter,
+               at_start: bool = False) -> list[Token]:
     """Rewrite RAW tokens through one rule. Output of a rule is frozen."""
     out: list[Token] = []
+    capitalising = rule.name in SENTENCE_CAPITAL_RULES
     for token in tokens:
         if token.kind != RAW:
             out.append(token)
@@ -598,6 +675,15 @@ def apply_rule(tokens: Sequence[Token], rule: Rule, counter: Counter) -> list[To
         for match in rule.pattern.finditer(token.text):
             out.extend(raw(token.text[pos:match.start()]))
             produced = rule.replace(match)
+            if (
+                capitalising
+                and (rule.name != "bare-number" or _bare_number_is_rule(match))
+                and _rule_number_opens_sentence(plain(out), at_start)
+            ):
+                capitalised = _capitalise_first(produced)
+                if capitalised != produced:
+                    counter["rule-number-sentence-start"] += 1
+                    produced = capitalised
             if isinstance(produced, str):
                 out.extend(done(produced))
             else:
@@ -2604,13 +2690,18 @@ def tidy_boundaries(tokens: list[Token]) -> list[Token]:
     return out
 
 
-def to_speech(text: str, counter: Counter) -> list[Token]:
-    """Full inline pipeline: markdown -> notation -> symbols -> tokens."""
+def to_speech(text: str, counter: Counter, at_start: bool = False) -> list[Token]:
+    """Full inline pipeline: markdown -> notation -> symbols -> tokens.
+
+    `at_start`: the text opens a sentence (a paragraph, a heading, a facts value
+    after "Rule. "), so a rule number at its very start is capitalised. Internal
+    sentence boundaries are detected whatever this says.
+    """
     text = strip_inline_markdown(text, counter)
     text = apply_lexicon(text, counter)
     tokens: list[Token] = raw(text)
     for rule in NOTATION_RULES:
-        tokens = apply_rule(tokens, rule, counter)
+        tokens = apply_rule(tokens, rule, counter, at_start)
     tokens = apply_symbols(tokens, counter)
     tokens = normalise_whitespace(tokens)
     return [t for t in tokens if t.text]
@@ -2843,7 +2934,7 @@ def _diagram_caption_is_important(text: str) -> bool:
 
 
 def render_paragraph(text: str, report: DocReport) -> list[Token]:
-    tokens = to_speech(text, report.converted)
+    tokens = to_speech(text, report.converted, at_start=True)
     # ⚠️ THE FLAG IS COMPUTED FROM THE MANIFEST, NOT FROM THE TEXT IN FRONT OF YOU.
     #
     # ⚠️ AN EARLIER VERSION OF THIS HEADER SAID "computed on the SPOKEN OUTPUT, NOT on the
@@ -2962,7 +3053,7 @@ def render_list(block: Block, report: DocReport) -> list[Token]:
     out: list[Token] = []
     for position, item in enumerate(items, start=1):
         important = "⚠" in item
-        tokens = to_speech(item, report.converted)
+        tokens = to_speech(item, report.converted, at_start=not block.ordered)
         report.residue.extend(find_residue(tokens))
         if not plain(tokens).strip():
             continue
@@ -3091,7 +3182,8 @@ def render_facts(block: Block, report: DocReport) -> list[Token]:
         # the style guide calls the most load-bearing, and in the only layer
         # that is voiced entirely alone.
         important = "⚠" in value
-        tokens = to_speech(_spoken_arrow(label, value), report.converted)
+        tokens = to_speech(_spoken_arrow(label, value), report.converted,
+                           at_start=not label or _label_lead(label).endswith(". "))
         report.residue.extend(find_residue(tokens))
         if not plain(tokens).strip():
             continue
@@ -3237,7 +3329,7 @@ def render_table(block: Block, report: DocReport) -> list[Token]:
         out.append(Token(SSML, "<p>"))
         first = True
         for column, cell in enumerate(row):
-            cell_tokens = to_speech(cell, report.converted)
+            cell_tokens = to_speech(cell, report.converted, at_start=first)
             report.residue.extend(find_residue(cell_tokens))
             spoken = plain(cell_tokens).strip()
             if not spoken or spoken == "—":
@@ -3254,7 +3346,7 @@ def render_table(block: Block, report: DocReport) -> list[Token]:
 
 
 def render_heading(block: Block, report: DocReport) -> list[Token]:
-    tokens = to_speech(block.lines[0], report.converted)
+    tokens = to_speech(block.lines[0], report.converted, at_start=True)
     report.residue.extend(find_residue(tokens))
     if not plain(tokens).strip():
         return []
@@ -4641,6 +4733,41 @@ def self_test() -> int:
             failures += 1
             print(f"FAIL  {source!r}\n  expected {expected!r}\n  actual   {actual!r}")
 
+    # A rule number that OPENS a sentence is capitalised; one inside a sentence
+    # is not. Every number expander emits lower case, so the listener's text read
+    # "clause d). six hundred and one, clause a" and "finish the job. one hundred
+    # and one point one lets players". `at_start` is the caller's statement that
+    # the unit itself opens a sentence (a paragraph, not a table cell or a facts
+    # value after "Never —").
+    capital_cases = (
+        ("(32(d)). 601(a)(4) adds a minor", False,
+         "(thirty-two, clause d). Six hundred and one, clause a, sub-clause four adds a minor"),
+        ("finish the job. 101.1 lets players", False,
+         "finish the job. One hundred and one point one lets players"),
+        ("49(c) keeps accidental contact out", True,
+         "Forty-nine, clause c keeps accidental contact out"),
+        ("49(c) keeps accidental contact out", False,
+         "forty-nine, clause c keeps accidental contact out"),
+        ("⚠️ 69.1's positioning clause", True, "Sixty-nine point one's positioning clause"),
+        ("no three on three. (84.5 states none.)", False,
+         "no three on three. (Eighty-four point five states none.)"),
+        ("legal there. 640 Note 2 still directs", False,
+         "legal there. Six hundred and forty Note two still directs"),
+        # Mid-sentence, after an abbreviation, and a bare integer: all untouched.
+        ("under 601(a) and 49(c)", True, "under six hundred and one, clause a and forty-nine, clause c"),
+        ("its icing signal (p. 82) mentions", False, "its icing signal (p. eighty-two) mentions"),
+        ("e.g. 56.1 says", False, "for example fifty-six point one says"),
+        ("as printed. 50 covers head contact", False, "as printed. fifty covers head contact"),
+        ("the lines. 26 metres is the minimum", False, "the lines. twenty-six metres is the minimum"),
+        ("Rule 8.3(a). 8.3(b) is a major", False,
+         "Rule eight point three, clause a. Eight point three, clause b is a major"),
+    )
+    for source, at_start, expected in capital_cases:
+        actual = re.sub(r"\s+", " ", plain(to_speech(source, Counter(), at_start))).strip()
+        if actual != expected:
+            failures += 1
+            print(f"FAIL  {source!r} (at_start={at_start})\n  expected {expected!r}\n  actual   {actual!r}")
+
     # Number words
     for value, expected in (
         (0, "zero"), (7, "seven"), (13, "thirteen"), (21, "twenty-one"),
@@ -4830,7 +4957,7 @@ def self_test() -> int:
             failures += 1
             print(f"FAIL  apply_lexicon({source!r})\n  expected {expected!r}\n  actual   {actual!r}")
 
-    print(f"\n{len(cases) + len(closers) + 9 + 3 + len(label_cases) + len(lexicon_quote_cases) + len(ellipsis_cases) + len(tail_cases) + len(abbrev_cases)} "
+    print(f"\n{len(cases) + len(closers) + 9 + 3 + len(label_cases) + len(lexicon_quote_cases) + len(ellipsis_cases) + len(tail_cases) + len(abbrev_cases) + len(capital_cases)} "
           f"assertions, {failures} failures")
     return 1 if failures else 0
 

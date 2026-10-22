@@ -415,12 +415,14 @@ const collapseCorner = {
     // Every OTHER cardinal-rule instruction in this directory is introduced by "so" ("…so
     // find out which yours runs"), and that conjunction is what closes the negation. This was
     // the one with a bare imperative straight after the dash.
+    // ⚠️ 22 October 2026: the caption used to end "All six books are set out earlier in this
+    // document." That is a pointer a listener cannot follow, and the substance is already voiced
+    // before the marker: §"The base shape" (defensive_zone_coverage.md, the three bullets
+    // headed "The hit from behind", plus "The next game" and "Boarding") prices the check from
+    // behind book by book. Sole host is the owner document. Dropped, not replaced:
+    // pricing six books here would restate the body in the layer least able to carry it.
     'Under man-on-man or a hybrid these five would be reading bodies, not areas. Ask your ' +
-    'coach which your team plays. ' +
-    // Six, not four: §"The base shape" (defensive_zone_coverage.md, the paragraph opening
-    // "And there is a second half") prices it in the NHL, IIHF, PWHL, USA Hockey, Hockey
-    // Canada and CARHA, above this diagram's marker. Sole host is the owner document.
-    'All six books are set out earlier in this document.',
+    'coach which your team plays.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the puck in the ' +

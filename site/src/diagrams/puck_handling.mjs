@@ -188,7 +188,7 @@
 // retyped. The shoulder clause below was missing from this caption entirely; the
 // census that found it, and why it is owed wherever the posture is prescribed, are
 // in wall_contact_clauses.mjs.
-import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+import { SHOULDER_TAIL, WALL_POSTURE_SHORT } from './wall_contact_clauses.mjs';
 
 const OWNER = 'content/technique/puck_handling.md';
 
@@ -273,23 +273,18 @@ const puckOnTheFarSide = {
     'the far side of the puck too. The checker is a forward because a shape had to ' +
     'be chosen; the section says only "the checker". ' +
     'Nothing in the picture shows contact. ' +
-    '⚠️ And the moment a battle like this reaches the boards, this document\'s own override ' +
-    'outranks every word of it: never turn your back to anyone coming at you and never duck, and neither ' +
-    'prohibition is a rule for fast checkers only. Get your skates parallel to the wall and take ' +
-    'the contact on your forearm and hip, head up and chin off your chest' + SHOULDER_TAIL +
-    // The clause sits after the POSTURE and before the two quoted warnings, never after them:
-    // appended to "never turn your back to anyone coming at you" its "if you can help it" would attach
-    // backwards to an absolute.
-    ' USA Hockey addresses ' +
-    // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
-    // Behind, whose lead sentence is "Checking from behind is illegal, extremely dangerous and
-    // less than courageous" — so the warning is aimed at the CHECKER, not at the player who
-    // turns. The caption carried the twelve words verbatim with no quotation marks, which
-    // check_quote_drift.py cannot see because there are no quote marks to match against.
-    // Capital "Even" is the source's own and is kept because the quotation opens after a colon.
-    'its warning about hits from behind to the checker delivering one: "Even a light hit from ' +
-    'behind could inflict a severe head or neck injury." And the head-down collision that ' +
-    'ducking produces can break your neck at walking speed.',
+    // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep: the full posture belongs
+    // where the page is ABOUT board contact). This picture is drawn in open ice and shows no
+    // contact; the full posture, the shoulder hedge, USA Hockey's light-hit warning
+    // (sources/ibc.txt:1570) and the walking-speed finding all live in the host's own boards
+    // passage below the marker -- puck_handling.md's "Where this stops being puck protection and
+    // becomes a safety problem" paragraph and its Priority: facts line ("Never turn your back ...
+    // Skates parallel, forearm and hip to the wall, head up, chin off your chest"). The caption
+    // keeps the prohibition, "however slowly they come" (the page's own Key focus wording, which
+    // carries the not-only-at-speed point), and WALL_POSTURE_SHORT. The old lead, "this
+    // document's own override outranks every word of it", was the corpus narrating itself.
+    '⚠️ And if a battle like this reaches the boards, never turn your back to anyone coming at ' +
+    'you and never duck, however slowly they come. ' + WALL_POSTURE_SHORT,
 
   describe:
     'The attacking half of the rink, the opposition net at the right and their goalie in the ' +
@@ -424,7 +419,7 @@ const CR_YOU = { at: 'goal-line', dx: -10, dy: 7 };                // (79, 7)
 
 const wherethePuckIs = {
   id: 'the-puck-decides-not-you',
-  title: 'The puck decides, not you',
+  title: 'In most books the puck decides, not you',
   owner: OWNER,
   half: true,
   width: 900,
@@ -434,14 +429,25 @@ const wherethePuckIs = {
     'shaded crease paint beside your goalie, with you standing outside it. In five of the six ' +
     'books the test is not where you are — it is where the puck is. ' +
     'A skater who falls on, holds or covers the puck inside their own crease concedes a penalty ' +
-    // ⚠️⚠️ THIS CAPTION CARRIES NO BOOK COUNT, AND THAT IS DELIBERATE — DO NOT PUT ONE BACK.
-    // It said "all four books" until 25 September 2026, then "all five" for part of that day, and
-    // NO COUNT CAN BE TRUE IN BOTH HOSTS: `content/technique/puck_handling.md` never names the
-    // PWHL and counts five, `content/positions/center.md` names it in two facts lines, a body
-    // paragraph and its trailer and counts six. The five-count put "all six" and "all five" about
-    // fifteen seconds apart inside center.md's spoken chunk 063. "Every book" is true in both, is
-    // this corpus's own form in this layer (puck_handling.md:962 and :1034 both use it), and does
-    // not go stale when a book is added to the shelf.
+    // ⚠️⚠️ THE BOOK COUNT, AND WHY IT IS NOW SAFE IN BOTH HOSTS (re-checked 22 October 2026).
+    // This comment used to say the caption carried NO count, because puck_handling.md did not
+    // name the PWHL and counted five while center.md counted six. Both hosts now name all six
+    // books and make the same split, so "five of the six" agrees with each of them:
+    //   puck_handling.md, the crease paragraph above the marker: "In five of the six books it is
+    //     the puck that has to be in the crease, not you; Hockey Canada writes it both ways round";
+    //   center.md's ```facts line: "in five books the puck's location decides, not yours (NHL 67.4
+    //     and 63.6; IIHF 63.6; PWHL 65.6; CARHA Rule 58(c); USA Hockey 614(b))", with its Hockey
+    //     Canada line beside it.
+    // Primary text read this session: NHL/PWHL "If the puck is in the crease, penalty shot. If the
+    // puck is outside the crease and gathered into the body of a player ... who is inside the
+    // crease, minor penalty" (pwhl_rules.txt); USA Hockey 614(b) "the decision as to whether the
+    // puck is in the crease is made at the moment the infraction occurs" (usah.txt); CARHA 58(c)
+    // "while the puck is within their goal crease" (carha_2026.txt); Hockey Canada 4.11(a)(v)
+    // "while the puck is in the goal crease" (hc.txt), with 10.2(a)(v) the where-you-are test
+    // handled below. "Every book" stays the form for the claims that hold in all six (the
+    // penalty shot, the goalie exemption, the crease as a volume).
+    // ⚠️ THE TITLE CARRIES THE SAME SCOPE ("in most books"), because a title is read before the
+    // caption and "The puck decides, not you" unscoped was false under Hockey Canada.
     // ⚠️ THE LESSER OPTION WAS ALSO GIVEN TO THE REFEREE, AND IT IS NOT THE REFEREE'S. CARHA prices this act: Rule 58(c) awards the penalty shot "when a defending player (except the
     // goalkeeper) deliberately falls on the puck, holds or gathers the puck into their body in any
     // manner, or picks up the puck with their hand, while the puck is within their goal crease. No

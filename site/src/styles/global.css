@@ -3437,6 +3437,7 @@ html.view-essentials .ess-end {
   font-weight: 400;
   font-size: 0.9rem;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .basics-ep__audio {

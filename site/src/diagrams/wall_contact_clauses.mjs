@@ -67,9 +67,14 @@
  */
 
 /**
- * The clause itself, bare, for mid-sentence use — the placement
- * `content/systems/breakouts.md` Key Takeaway 6 uses, between the forearm-and-
- * hip instruction and "head up and chin off your chest".
+ * The clause itself, bare, for mid-sentence use, between the forearm-and-hip
+ * instruction and "head up and chin off your chest" — the placement
+ * `content/positions/defender.md` uses in its retrieval paragraph ("forearm and
+ * hip to the wall — never the point of your shoulder, and not the whole
+ * shoulder if you can help it — head up and chin off your chest"). This used to
+ * cite `breakouts.md` Key Takeaway 6; that takeaway is now about rims and
+ * reverses, and breakouts' posture takeaway (KT3) no longer carries the shoulder
+ * clause at all. Grep the quoted words rather than trusting a takeaway number.
  */
 export const SHOULDER_NOT_THE_SURFACE =
   'not on the point of your shoulder, and not the whole shoulder if you can help it';
@@ -81,7 +86,9 @@ export const SHOULDER_NOT_THE_SURFACE =
  *
  * ⚠️ TWO CAPTIONS DELIBERATELY DO NOT USE IT, and neither is drift to be swept:
  * `angle-into-the-corner` (`body_contact_and_battles.mjs`) places the clause
- * mid-sentence in Key Takeaway 6's own form, and `scan-before-a-wall-reception`
+ * mid-sentence, as its owner `body_contact_and_battles.md` does in its wall
+ * bullet ("forearm and hip to it — not the point of your shoulder, not the whole
+ * shoulder if you can help it"), and `scan-before-a-wall-reception`
  * (`scanning_and_anticipation.mjs`) opens with "— not on" rather than "— and
  * not on" because its preceding clause already runs on an "and". Both were
  * composed with the sources read and are left alone.
@@ -89,21 +96,31 @@ export const SHOULDER_NOT_THE_SURFACE =
 export const SHOULDER_TAIL = ' — and ' + SHOULDER_NOT_THE_SURFACE + '.';
 
 /**
- * The full posture prescription, for the two `breakouts.mjs` captions whose
- * comments already claimed to be "matched … so the two do not drift apart" and
- * were not: `breakout-rim` and `breakout-reverse`.
+ * The SHORT receiving posture, for captions that send a player to the wall in a
+ * diagram whose subject is NOT board contact: `breakout-rim`, `breakout-reverse`,
+ * `breakout-against-1-3-1` (breakouts.mjs), `forecheck-pinch` and
+ * `forecheck-press` (forechecking_systems.mjs) and `puck-on-the-far-side`
+ * (puck_handling.mjs).
  *
- * ⚠️ NOT USED BY THE OTHER TWO WALL CAPTIONS IN THAT FILE, ON PURPOSE.
- * `breakout-winger-wall` leads with "Puck protection never justifies it" and
- * `breakout-against-1-3-1` with "Body open to the ice … forearm and hip into
- * contact if it comes" — a player waiting on the wall for contact that may not
- * arrive. Both leads are load-bearing for their own picture and their wording
- * was reasoned out in earlier rounds; flattening them onto this constant would
- * be rewriting reviewed safety text to satisfy a refactor. They import
- * `SHOULDER_TAIL` only.
+ * ⚠️ WHY SHORT. Owner ruling, 23 September 2026: the full posture is a key point
+ * where the page is ABOUT board contact and too much detail where it was merely
+ * inherited. These six captions sit under sections about breaking out,
+ * forechecking and puck protection, and every host that teaches wall play
+ * carries the full mechanics in its own body or ```facts block beside the
+ * marker. This replaced `WALL_POSTURE_INSTEAD` ("Get your skates parallel to the
+ * wall instead, forearm and hip into it, head up and chin off your chest" +
+ * SHOULDER_TAIL) on 22 October 2026.
+ *
+ * ⚠️ IT IS THE SG14 SHORT FORM, NOT A NEW ONE: "forearm and hip, never the point
+ * of your shoulder", head up and chin off your chest. NEVER "side-on" — a
+ * listener can hear that as leading with the shoulder.
+ *
+ * ⚠️ ORDER IS LOAD-BEARING: head up first, the shoulder negation LAST. Put "never
+ * the point of your shoulder" before "head up" and the negation can carry across
+ * the comma onto it, which is the inversion commit 49f1dc6 repaired.
  *
  * Reached as: "… and never duck. " + this. Carries its own full stop.
  */
-export const WALL_POSTURE_INSTEAD =
-  'Get your skates parallel to the wall instead, forearm and hip into it, head up ' +
-  'and chin off your chest' + SHOULDER_TAIL;
+export const WALL_POSTURE_SHORT =
+  'Head up, chin off your chest, and take any contact on your forearm and hip, ' +
+  'never the point of your shoulder.';

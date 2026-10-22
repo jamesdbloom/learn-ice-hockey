@@ -253,11 +253,16 @@ const ppUmbrella = {
   numbered: true,
 
   caption:
-    'Five attackers on a 5-on-4, the killers not drawn. The lone defenceman takes the apex ' +
-    'just inside the blue line and two forwards drop to the tops of the circles, so the three ' +
-    'high players sit on a deep arc, with two low. There is no bumper: the middle of the slot ' +
-    'is vacated on purpose. The two numbered routes are one option among many. The classic ' +
-    'version\'s arc is far shallower, so find out which your team runs.',
+    // Read against both hosts 22 October 2026 (special_teams.md "Umbrella — three high" and
+    // how_to_watch_hockey.md's count-the-points list). Nothing was wrong; the last sentence
+    // pointed at "the classic version" without saying what it is, so a listener could not tell
+    // which of the two shapes was drawn. Both versions are now named as the section names them.
+    'Five attackers on a 5-on-4, the killers not drawn. This is the modern umbrella: the lone ' +
+    'defenceman takes the apex just inside the blue line and two forwards drop to the tops of the ' +
+    'circles, so the three high players sit on a deep arc, with two low. There is no bumper: the ' +
+    'middle of the slot is vacated on purpose. The two numbered routes are one option among many. ' +
+    'In the classic version a forward takes the apex with both defencemen on the flanks near the ' +
+    'line, a far shallower arc, so find out which your team runs.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Five own players in an arc and ' +
@@ -926,12 +931,16 @@ const pkNz13 = {
   width: 900,
 
   caption:
+    // Read against its host 22 October 2026 (special_teams.md "The four you will meet"). Two
+    // fixes, no new claims: "in the passive version" trailed the first sentence where it read as
+    // a property of the power play, and "the same-side press" was listed beside the 1-1-2 as if it
+    // were a separate scheme, when the section makes it the OTHER VERSION OF THE 1-3.
     'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
-    'attacking from the left, in the passive version. One forward is up on the puck; the ' +
-    'other forward and both defencemen form a line across the ice behind that forward, backing up in ' +
-    'unison to force a dump-in rather than to win the puck. The same-side press, the 1-1-2, ' +
-    'the retreating box and tandem pressure are the alternatives — ask which is called. Only ' +
-    'the power play\'s puck carrier is drawn.',
+    'attacking from the left. This is the passive 1-3: one forward gives token pressure on the ' +
+    'puck, and the other forward and both defencemen form a line across the ice behind, backing ' +
+    'up in unison to force a dump-in rather than to win the puck. The 1-3\'s same-side press, ' +
+    'the 1-1-2, the retreating box and tandem pressure are the alternatives, so ask which your ' +
+    'team plays. Only the power play\'s puck carrier is drawn.',
 
   describe:
     'The full sheet. We defend the net at the right; the opposition power play attacks from the ' +

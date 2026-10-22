@@ -10,6 +10,8 @@
  * below, for the design argument and why it was contested.
  */
 
+import { WALL_POSTURE_SHORT } from './wall_contact_clauses.mjs';
+
 // The carrier's exit point, named once because three things refer to it: the end
 // of the carry, the start of the pass, and the lane F2 is attacking.
 const EXIT = { at: 'faceoff-dot:right', dx: 12, dy: 4 };   // (81, 26)
@@ -813,109 +815,24 @@ const forecheckPinch = {
     // hazard from what to do about it, which is the split _split_paragraph makes voiceable as two
     // units — the one thing the 604(a)/604(b) note above forbids for this exact block.
     '⚠️ And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior. Where checking is barred, a pinch is a play on the puck, not a check: get there first and play it, and under USA Hockey, holding body position in a wall battle for the puck is still allowed. In IIHF women\'s hockey, beat her to the wall, because you may hold the ice between her and the puck only once you got there first, and never use the boards on her: no pushing her into them, pinning her there or leaning her out of the play, under Rule 101.1. ' +
-    // RECEIVING POSTURE. Added because this caption's go/no-go test sends the reader down the
-    // wall at speed and everything above it was about DELIVERING contact: the section had no
-    // receiving posture at all, and the picture's whole subject is a defenceman arriving at the
-    // boards with an opponent and a puck arriving at the same moment. It sits INSIDE the amber
-    // ⚠ "THE SECTION HAD NO RECEIVING POSTURE" IS HISTORY, NOT THE PRESENT STATE. It has one now,
-    // at content/systems/forechecking_systems.md:542, opening "And a pinch takes you to the wall,
-    // so the receiving posture is yours too", plus the ```facts Never:/Technique: pair at :530-531
-    // and the same treatment at :875. Read as present tense the sentence above would say this
-    // caption authors a claim its section does not make, which is the opposite of the truth --
-    // every sentence in this block is now the section's.
-    // band, at the end of it, so the glyph-to-end promotion still covers safety and nothing else.
-    // ⚠ SCOPE, and it is the half that gets got wrong: this is scoped as its owner scopes it,
-    // content/technique/body_contact_and_battles.md §6 -- "whatever league you play in", because
-    // unexpected contact happens in non-check hockey too. It is NOT scoped to checking leagues,
-    // even though the sentence before it is about where checking is barred.
-    // ⚠ TWO MECHANISMS, KEPT SEPARATE. A turned back makes the contact a HIT FROM BEHIND; a
-    // dropped chin STRAIGHTENS THE CERVICAL SPINE. They are different injuries with different
-    // sources, and three owner documents forbid joining the walking-speed evidence to the turned
-    // back -- USA Hockey's walking-speed sentence is about a HEAD-DOWN, head-first collision and
-    // it writes nothing of the kind about a turn. That separation is unchanged.
-    // ⚠ THREE PROHIBITIONS, NOT TWO, AND THE SHOULDER IS THE THIRD. This block used to end
-    // the posture at "chin off your chest" and then call it "two prohibitions against two
-    // different injuries", while the OWNING SECTION says "The turned back, the tucked chin and
-    // the shoulder on the boards are three separate prohibitions" -- content/systems/
-    // forechecking_systems.md:539 (the pinch section, which is this diagram's own) and :876.
-    // One document saying TWO and
-    // THREE about one subject, and captions are voiced, so both reach one listener in one track.
-    // ⚠ THE COUNT IS STILL THREE. On 19 Sep 2026 the owner broadened the THIRD MEMBER from
-    // "the shoulder tip" to "the shoulder on the boards" and this caption followed it. That is
-    // a substitution inside the list, not an insertion: nothing was added to the three, so the
-    // numeral did not move. Do not "correct" it to four -- the hedge below is the same
-    // prohibition stated to its full width, not a separate one.
-    // ⚠ AND THE LINE NUMBERS ABOVE ARE A POINTER THAT GOES STALE. They were :542 and :875 when
-    // this comment was written and are :539 and :876 today, after a wave that did not touch
-    // this file. Grep the quoted sentence rather than trusting the number.
-    // ⚠ AND IT WAS NOT ONLY A COUNT. This block TEACHES the receiving posture -- "forearm and hip
-    // to it, head up and chin off your chest" is the owner's Case 2 technique -- so the missing
-    // limb was missing from the INSTRUCTION, not merely from an enumeration. Naming the two
-    // instead of counting them (the cheap repair settled at body_contact_and_battles.md:21 and
-    // switching_positions.md:19) would have closed the count and left the posture short. Both
-    // sentences are now the owner's own, adopted as near verbatim as a caption allows, so the two
-    // layers cannot disagree and the caption asserts nothing the section does not.
-    // Source read this session: sources/ibc.txt:1453-1454, "Never hit the boards or glass with
-    // the tip of your shoulder - it can cause injury", and :692, "Avoid hitting the boards with
-    // the shoulder"; the remedy is in the same list at :1449, "Absorb the shock over the widest
-    // possible part of your body", which is what "forearm and hip to it" already is.
-    // ⚠ ibc is USA Hockey TECHNIQUE teaching built on the 2007-09 rulebook and the manual carries
-    // no publication date (see the ibc entry in sources/README.md), so the limb is stated here as
-    // technique and attributed to nobody. The only USA Hockey attribution in this block stays on
-    // the walking-speed sentence, which is huh.txt's. Do not turn the shoulder tip into a rule.
-    // ⚠ PLACEMENT IS LOAD-BEARING, TWICE OVER.
-    // (1) The shoulder limb goes AFTER "chin off your chest", never before it. Put "not the point
-    //     of your shoulder" in FRONT of the head-up instruction and "head up" sits inside a
-    //     negation's reach across a separator that is not a full stop -- which is the inversion
-    //     commit 49f1dc6 exists to repair, a facts line that told a listener never to keep their
-    //     head up. Ending the sentence on the negation leaves it nothing to carry onto. Three
-    //     content sites use this same ordering: forechecking_systems.md:542 and :875, and
-    //     switching_positions.md:19. Do not "tidy" it next to "forearm and hip".
-    // (2) The third prohibition carries NO mechanism, deliberately. USA Hockey names no injury
-    //     for it -- "it can cause injury" is the whole of it, and the section says so in terms --
-    //     so the appositive still explains the back and the chin only, and "the injury that
-    //     follows, on head-down, head-on contact" stays pinned to the tucked chin, which is what
-    //     the TWO MECHANISMS note above requires. Do not "complete" the third by inventing one.
-    // "a turned back" became "a back turned" to kill an immediate echo of "The turned back" six
-    // words earlier; body_contact_and_battles.md:21 and switching_positions.md:19 both use that
-    // variant. No character cost. Total cost of this repair: +68 characters, in both captions.
-    // ⚠ WHAT CHANGED: THE WALKING-SPEED QUALIFIER IS NOW CARRIED, AND THE ARGUMENT FOR LEAVING
-    // IT OUT WAS WRONG. This comment used to end "a caption that quoted one without its
-    // qualification is exactly how a half-rule ships", and on that argument left the caption
-    // stating the ducking prohibition AND naming its mechanism with nothing attached. Stated
-    // bare, "a chin tucked to the chest straightens the cervical spine" reads as a HIGH-SPEED
-    // hazard and hands the reader their strongest excuse -- "I was only going slowly" -- which
-    // is the one thing USA Hockey's sentence exists to defeat: "A player doesn't have to be
-    // going at full speed for this to happen -- it can occur at walking speed"
-    // (sources/huh.txt:228-229, read this session). The qualification fits in one subordinate
-    // clause, which rules_primer.mjs's icing-the-race-and-the-dot already demonstrates. The
-    // convention, stated so the next editor does not have to re-derive it: a layer that states
-    // the prohibition AND gives its mechanism carries the qualifier; a layer that states the
-    // prohibition BARE does not, and should not.
-    // ⚠ AND IT ATTACHES TO THE INJURY, NOT THE COLLISION. A collision at walking speed is
-    // definitionally possible and needs no disclaimer; only the injury does, which is why USA
-    // Hockey's sentence NEGATES A SPEED REQUIREMENT rather than asserting a speed.
-    // The light-hit quotation is still NOT carried here: it belongs to the turned back, and it
-    // is in the section and in body_contact_and_battles.md §6, where the scoping around it can
-    // be stated in full.
-    // ⚠ 19 Sep 2026 -- AND THE SOURCE WORK ABOVE WAS DONE AND THEN HALF-USED. The comment
-    // already quoted ibc.txt:692, "Avoid hitting the boards with the shoulder", and the caption
-    // still went out carrying only the TIP. Quoting the broad sentence in a comment is not the
-    // same as obeying it in the string, and nothing mechanical could see the gap: the caption
-    // was true, cited, and short of the instruction. The two sentences differ on BOTH axes --
-    // :1453 is absolute and narrow, :692 is soft and broad and is printed under the objective
-    // "checked while skating parallel to the boards", which is this diagram's own case; and
-    // ibc.txt:1537 and huh.txt:647 both print "No shoulder contact on the boards, if possible".
-    // A reader told the tip is ruled out infers the flat is available.
-    // ⚠ "not the whole shoulder", NEVER "never". USA Hockey writes exactly one "never" here and
-    // it is the tip; the broad sentences are "avoid" and "if possible". An unobeyable absolute
-    // sitting third in a run of three prohibitions discounts the two above it, and those two
-    // protect the cervical spine.
-    // ⚠ AND THE HEDGE GOES AFTER THE ABSOLUTE, inside the same sentence, so it cannot be heard
-    // attaching backwards to the tip. That is the same PLACEMENT rule as the note above, one
-    // clause further on: the sentence still ends on the negation and still carries nothing
-    // after it. Owner wording: content/systems/forechecking_systems.md:539 and :876.
-    'And whatever your book says about contact, one thing holds in every league, checking or not: never turn your back to anyone coming at you on the wall, and never duck. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest — and not on the point of your shoulder, and not the whole shoulder if you can help it. The turned back, the tucked chin and the shoulder on the boards are three separate prohibitions — a back turned makes the contact a hit from behind, which you can neither see nor brace for, and a chin tucked to the chest straightens the cervical spine — and the injury that follows, on head-down, head-on contact with the boards or a goal post, is one USA Hockey’s Heads Up Hockey guide says "can occur at walking speed".',
+    // RECEIVING POSTURE, SHORT FORM. This caption's go/no-go test sends a defenceman down the wall
+    // at speed, so it keeps the prohibition, scoped as its owner scopes it ("in every league,
+    // checking or not" -- unexpected contact happens in non-check hockey too), even though the
+    // sentence before it is about where checking is barred. It sits inside the amber band, at
+    // the end, so the glyph-to-end promotion covers safety and nothing else.
+    // ⚠️ DEMOTED 22 October 2026 (owner ruling 23 Sep: the full posture belongs where the page is
+    // ABOUT board contact; demote it where inherited). This caption used to carry the whole of
+    // it -- skates parallel, "not the whole shoulder if you can help it", "three separate
+    // prohibitions", the cervical-spine mechanism and Heads Up Hockey's "can occur at walking
+    // speed" (sources/huh.txt:228-229). The pinch section now carries all of that in its own
+    // body, beside the marker: forechecking_systems.md's paragraph opening "And a pinch takes you
+    // to the wall, so the receiving posture is yours too", and its ```facts Never: line. The
+    // other host, content/systems/game_management.md, uses the picture for the pinch decision and
+    // teaches no wall play, so the prohibition plus the short form is what a listener there needs.
+    // Its wording and order are WALL_POSTURE_SHORT's -- see wall_contact_clauses.mjs.
+    'And whatever your book says about contact, one thing holds in every league, checking or ' +
+    'not: never turn your back to anyone coming at you on the wall, and never duck. ' +
+    WALL_POSTURE_SHORT,
 
   describe:
     'Attacking half of the rink, the opposition net at the right, with the puck in the strong-side corner. ' +
@@ -1289,14 +1206,15 @@ const forecheckPress = {
     // comment above forecheck-pinch and are not restated -- and so is the ruling that this block's
     // ", so" is NOT an inversion, checked on the rendered audio. Do not re-refer it.
     '⚠️ Pinching on anything is about the puck, not about the man. In many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior. Where checking is barred, a pinch is a play on the puck, not a check: get there first and play it, and under USA Hockey, holding body position in a wall battle for the puck is still allowed. In IIHF women\'s hockey, beat her to the wall, because you may hold the ice between her and the puck only once you got there first, and never use the boards on her: no pushing her into them, pinning her there or leaning her out of the play, under Rule 101.1. ' +
-    // RECEIVING POSTURE. Carried here for the reason forecheck-pinch carries it and the other
-    // four diagrams do not: this is the ONE picture in the set that sends BOTH defencemen down
-    // BOTH walls at once, so it has the set's maximum exposure to arriving at the boards, and a
-    // caption that instructs "pinch on anything" and then says nothing about how you meet the
-    // wall is the half-treatment. VERBATIM identical to forecheck-pinch's, deliberately, so the
-    // two cannot drift; its scoping, its two-mechanism separation and its walking-speed
-    // qualifier are all argued out in the comment above that caption and are not restated here.
-    'And whatever your book says about contact, one thing holds in every league, checking or not: never turn your back to anyone coming at you on the wall, and never duck. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest — and not on the point of your shoulder, and not the whole shoulder if you can help it. The turned back, the tucked chin and the shoulder on the boards are three separate prohibitions — a back turned makes the contact a hit from behind, which you can neither see nor brace for, and a chin tucked to the chest straightens the cervical spine — and the injury that follows, on head-down, head-on contact with the boards or a goal post, is one USA Hockey’s Heads Up Hockey guide says "can occur at walking speed".',
+    // RECEIVING POSTURE, SHORT FORM, identical to forecheck-pinch's so the two cannot drift. This
+    // is the one picture in the set that sends BOTH defencemen down BOTH walls at once, so it
+    // keeps the prohibition. ⚠️ DEMOTED 22 October 2026 to the short form: the full press section
+    // (forechecking_systems.md, "The full-ice press") is about accepting risk to keep the puck in,
+    // not about board contact, and the document carries the full mechanics in its pinch section
+    // and in its "One safety rule outranks every tactical choice above" paragraph.
+    'And whatever your book says about contact, one thing holds in every league, checking or ' +
+    'not: never turn your back to anyone coming at you on the wall, and never duck. ' +
+    WALL_POSTURE_SHORT,
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
