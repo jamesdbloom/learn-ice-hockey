@@ -340,31 +340,24 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ### Content — rules accuracy (each needs a rules-verifier; the direction is noted)
 
-- **NHL/PWHL late hit:** forechecking :626, rules_primer :492 and body_contact :1671 price it via 56.4/56.5 "on injury" with no 43.3/43.5 for a turned player. Read each. (permissive?)
-- **NHL 21.1 / CARHA 48(a) general match:** on_ice_communication :307 and time_and_space :273/:295 (interference via 56.x, no 21.1). CARHA 48(a) is never cited in passing, puck_support, goaltender, switching, breakouts or faceoffs. (permissive)
-- **CARHA 62(b)** is absent from faceoffs, special_teams and neutral_zone_systems. **CARHA 32(d)** is absent from some backswing sites (winger :102/:112, defender, zone_entries, faceoffs, NZ). Facts lines at cap (center :485, PWTP :708) are an accepted limitation.
-- **DZC :722 (facts) and :740:** HC 10.2(a)(v) also covers an infraction "inside the offending team's goal crease" (hc.txt:7642). Omission, permissive.
-- **DZC :577:** omits IIHF 101.1's opening "bodychecking is allowed when there is a clear intention of playing the puck". Stricter.
-- **puck_handling :340:** "penalty shot in all six books". USAH 614(b) is penalty shot or optional minor, at the other team's choice.
-- **passing:** CM and KTs lack the HC test for a puck covered while lying in the crease.
-- **on_ice_communication:** :279 "illegal check in non-checking play" lacks "anywhere"; :307 "56.5 a game misconduct above it" errs strict; :309 640(d) is stated without its stick-above-the-knees condition.
+- **SG13 DONE (22 Oct)** (record sg13_rules_accuracy_rows_2026-10-22.md). Closed: late hit ×3, OIC ×3, T&S 21.1, DZC ×2, puck_handling ×2, goaltender ×4, CARHA 62(b) ×3 pages, special_teams :776, PWTP ×3, passing. New from it: body_contact :1651 facts (300/300) and :637/:655 lack NHL/PWHL 21.1 / late-hit price; T&S goalie contact :556–562 no NHL 21.1; defender :244 'can be a shot too' vs HC Interp 5 (rules-verifier); CARHA follow-through limb in shooting.md?; optional 10.1→10.1(i) in breakouts :657, DZC :178, body_contact :1148.
+
+- **CARHA 48(a) general match:** never cited in passing, puck_support, goaltender, switching, breakouts or faceoffs (NHL 21.1 half done in SG13).
+- **CARHA 32(d)** is absent from some backswing sites (winger :102/:112, defender, zone_entries, faceoffs, NZ). Facts lines at cap (center :485, PWTP :708) are an accepted limitation. (CARHA 62(b) done in SG13.)
 - **zone_entries :235:** "only once made" errs safe. **game_management :244:** the full-ice press "with both defencemen pinching" has no condition (tactic hedge).
-- **goaltender:** :643 double negative; :388 soft-stick "cover it" with no crease condition; :673 still "10.1(i)" where siblings say "10.1".
-- **special_teams :776:** "The 63.2(vi) Notes" with no PWHL 65.2(vi). **OZP trailer:** no USAH 614(c), no HC clause v.
+- **OZP trailer:** no USAH 614(c), no HC clause v.
 - **HC republication checks** still to do: 4.7(a) Interp 2, 7.1(f), 10.4, 10.6(a) Interp 5, the penalty-bench "end of the period" change.
-- **PWTP :355 (facts) and :373:** USA Hockey's spectator limb is missing.
 - **HC 7.1(c) vs Appendix D Note 1 scope:** never settled by a rules-verifier; 7.1(c) is now cited in 11 documents.
-- **puck_handling:** 63.2(v) Note against 67.4 needs a rules check.
 - **team_play :283 PWHL ceiling:** "can go higher … if it hurts them" is slightly broad for the PWHL (only 21.1, deliberate injury). Harsher direction.
 
 ### Content — safety layering and readability
 
 - **Board posture ("forearm and hip") keep-or-demote calls** (owner 23 Sep: keep where the page is about the boards): conditioning (incl. KT :685, CM :613), getting_started :492 and CM :659, switching :211/:423/:438, zone_entries (5 sites), defender :144 and CM :907, passing :195/:215. Diagram captions also voice the full posture: forechecking_systems.mjs :918/:1299, wall_contact_clauses.mjs :108 (possibly a shared constant), breakouts.mjs :1157, puck_handling.mjs :278, scanning_and_anticipation.mjs :190.
-- **Facing-the-wall fallback** is missing at PWTP :1024 and practice_and_development :360/:382. **scanning :380/:390:** "see their numbers, pull up" is still telegraphic.
+- **Facing-the-wall fallback** is missing at practice_and_development :360/:382 (PWTP done in SG13). **scanning :380/:390:** "see their numbers, pull up" is still telegraphic.
 - **Amber on a citation:** game_management :946 ("⚠️ **640(g): …"); offensive_zone_play.mjs:675 (caption).
 - **Listener "Important." runs:** rules_primer has a run of 19; body_contact §9 (8), §12 (7), §5 (5).
 - **Long units:** PWTP has 3 paragraphs over 1,200 chars (longest 2,378); corpus-wide 43 long paragraphs and 90 KTs over 60 words (check_readability). Spoken chunks over 2,500 chars are unmeasured (needs an md_to_speech census). 92 of 204 captions are over 800 chars.
-- **Smaller items:** playing_without_the_puck :1124 still reads "Situation 5 E, ⚠️ **And only one…**"; equipment :173 WNIHL visor quote has no age line; team_play :133 links `#line-changes-at-a-stoppage` but means rules_primer "The consequences"; "every level of UK hockey runs the IIHF book" in 34 headers (low; "amended locally" may cover it).
+- **Smaller items:** equipment :173 WNIHL visor quote has no age line; team_play :133 links `#line-changes-at-a-stoppage` but means rules_primer "The consequences"; "every level of UK hockey runs the IIHF book" in 34 headers (low; "amended locally" may cover it).
 - **rules_primer:** table :899 has 0 rows of headroom; the content of table :1018 (dropped from audio) has no recorded check that it is voiced inline; quote-drift flags at :430 and :1201.
 - **Basics wing script** omits the weak-side collapse to the slot that the centre list relies on (winger.md :55/:154/:182). Fix in a future Basics remake.
 

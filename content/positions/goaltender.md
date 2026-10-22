@@ -385,7 +385,7 @@ Options: Kill a high shot by catching it cleanly, trapping it against your other
 
 Absorbing means killing the puck's energy so it drops dead in front of you or stays in your equipment.
 
-- **A soft stick.** On a shot along the ice into your stick, let the blade give slightly on contact rather than holding it rigid. A rigid stick sends the puck straight back out; a soft stick drops it at your feet where you can cover it.
+- **A soft stick.** On a shot along the ice into your stick, let the blade give slightly on contact rather than holding it rigid. A rigid stick sends the puck straight back out; a soft stick drops it at your feet, where you can play it — or, in your crease with an attacker on you, cover it.
 - **Cushioning generally.** The same principle applies to your body and pads: relax into the shot rather than bracing against it. A tensed goalie is a trampoline.
 - **Three ways to kill a high shot:** catch it cleanly in the glove; trap it with the glove hand against your other equipment; or smother it into your chest by caving your arms in around it.
 
@@ -640,7 +640,7 @@ Rule: No trapezoid applies in front of the goal line; the bar on play past the c
 **In short:** Under USA Hockey, Hockey Canada and CARHA, the ice behind your net is yours to play, but a freeze out there can cost you.
 
 ```facts
-Rule: No trapezoid under Hockey Canada is not freedom — Rule 10.2's goalie paragraph and clause v of Interpretation 3 to Rule 10.1(a) make freezing outside your crease a Minor, clause v with no warning; clause ii permits a cover after a cut-the-angle save, but out of your crease, play it
+Rule: Hockey Canada draws no trapezoid, but Rule 10.2's goalie paragraph and clause v of Interpretation 3 to Rule 10.1(a) make freezing outside your crease a Minor, clause v with no warning; clause ii permits a cover after a cut-the-angle save, but out of your crease, play it
 Convention: Hockey Canada never says whether its no-freeze rules (Rule 10.2's goalie paragraph; clause v of Interpretation 3 to 10.1(a)) or clause ii, a cover after the save, govern a save-then-cover outside the crease; treating ii as the exception is a reading, not a ruling
 Rule: PWHL Rules 1.8 and 27.8 switch the trapezoid off but 65.2(viii) still lists the minor, so play behind the net only inside the old trapezoid until your league says otherwise; 65.2(i) also makes a deliberate freeze outside your crease a minor
 Rule: CARHA writes no trapezoid either: holding or placing the puck against the goal or boards, or deliberately falling on or gathering it, behind the goal line with your body entirely outside the crease is a minor (Rule 58(b)); it has no privileged area
