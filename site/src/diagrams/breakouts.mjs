@@ -497,8 +497,10 @@ const rim = {
     // The medical mechanism (cervical flexion, "can occur at walking speed") stays with its owner,
     // content/technique/body_contact_and_battles.md section 6.
     '⚠️ This is a wall play at both ends. D1 is sealed on the boards and the winger takes it on ' +
-    // W33: "If you are the skater on the wall" -- this caption is voiced into goaltender.md too,
-    // where a bare "your back" addressed the goaltender reading it.
+    // W33: "If you are the skater on the wall" -- this caption is voiced into defender.md and
+    // breakouts.md only; it is breakout-reverse, not this one, that goaltender.md embeds. The
+    // second person is kept because a bare "your back" would still be ambiguous about which of
+    // the two drawn skaters it addresses.
     'the far wall. If you are the skater on the wall, never turn your back to anyone coming at you, and ' +
     'never duck. ' +
     WALL_POSTURE_SHORT,
@@ -923,7 +925,7 @@ const SWING_FROM = { at: 'top-of-circle:right:far', dx: 8, dy: -6 };  // (-46, 1
 
 const centreSwing = {
   id: 'breakout-centre-swing',
-  title: 'Centre’s low support swing',
+  title: 'Where the centre swings on a breakout',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,
@@ -1097,7 +1099,7 @@ const TRAP_OUTLET = { at: 'point:right:far', dx: -2, dy: 18 };  // (-27, 38)
 
 const againstThe131 = {
   id: 'breakout-against-1-3-1',
-  title: 'Breaking out against a 1-3-1',
+  title: 'Beating a neutral-zone 1-3-1',
   owner: 'content/systems/breakouts.md',
   half: false,
   width: 900,

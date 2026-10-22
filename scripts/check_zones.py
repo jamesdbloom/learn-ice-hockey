@@ -54,6 +54,7 @@ WHAT IT CANNOT SEE
 
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 from collections import defaultdict
@@ -196,7 +197,14 @@ def centroid(poly: tuple[tuple[float, float], ...]) -> tuple[float, float]:
     return (sum(x for x, _ in poly) / len(poly), sum(y for _, y in poly) / len(poly))
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    # ⚠️ No options yet, but parse anyway: before 22 Oct 2026 an unknown flag
+    # (`--bogus`, a guessed `--file`) was ignored and the whole run exited 0, so
+    # a brief that thought it had narrowed the check got a full run and a
+    # "pass" it could not tell apart (plan row 56e). argparse exits 2 instead.
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.parse_args(argv)
+
     if not SVG_DIR.is_dir():
         print(f"check_zones: {SVG_DIR} does not exist -- run "
               f"`node site/scripts/build-diagrams.mjs` first.")

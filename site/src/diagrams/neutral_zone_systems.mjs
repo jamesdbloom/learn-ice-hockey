@@ -459,7 +459,7 @@ const P_D1 = { at: OUR_BLUE, dx: 14, dy: 20 };             // (-11, 20) — tigh
 
 const pressure = {
   id: 'nz-pressure',
-  title: 'Neutral zone behind an aggressive forecheck',
+  title: 'F3 alone in the neutral zone',
   owner: 'content/systems/neutral_zone_systems.md',
   half: false,
   width: 1100,

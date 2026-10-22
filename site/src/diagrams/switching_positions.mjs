@@ -355,7 +355,7 @@ const A1_ROUTE = { from: CARRIER, to: A1_WALL_LANE, kind: 'carry', bow: 2.5 };
 
 const forcingThemOutside = {
   id: 'forcing-them-outside',
-  title: 'Forcing a carrier outside',
+  title: 'Defenceman inside the carrier',
   owner: OWNER,
   half: true,
   width: 900,
@@ -414,7 +414,7 @@ const forcingThemOutside = {
 
 const gettingBeatenWide = {
   id: 'getting-beaten-wide',
-  title: 'Getting beaten wide',
+  title: 'Carrier past the defenceman',
   owner: OWNER,
   half: true,
   width: 900,

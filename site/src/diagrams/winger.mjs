@@ -483,6 +483,15 @@ const arrivingAtTheLine = {
   // injuries"). Voiced alone, a listener was told not to duck, not told not to turn his
   // back — which is the reflex the owner says players actually have — and given no action
   // to take instead. Now matches the pairing the two sibling captions in this file use.
+  // ⚠️ BOARD POSTURE DROPPED 22 October 2026 (owner ruling 23 Sep: the full posture belongs
+  // where the page is ABOUT board contact). This is a blue-line stand-up in open ice, and its
+  // host section (winger.md, "Filling Your Lane on the Rush") is about timing the line and the
+  // dragged skate, not the boards; "skates parallel to the boards" did not describe the picture.
+  // The hit IS in play (a defenceman standing up at the line), so the head-up condition and both
+  // prohibitions stay. The full mechanics live on the same page at the D-zone wall override
+  // paragraph, its Never: facts lines, the D-zone and O-zone pressure sections and Common
+  // Mistakes -- grep winger.md for "forearm and hip". The SHOULDER note above now applies to
+  // winger-corner-and-the-empty-point only.
   caption:
     'Arriving at the attacking blue line as a winger, with the zone you are entering at the right. ' +
     'The picture is drawn for one thing: where the defenceman meeting you is standing. They are stood up ' +
@@ -498,8 +507,7 @@ const arrivingAtTheLine = {
     'head up is the condition of the technique rather than an extra — you cannot brace for a hit you ' +
     'cannot see, and a body that is surprised does not absorb contact. And never turn your back to ' +
     'anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
-    'for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the ' +
-    'boards, forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
+    'for, and a chin tucked to the chest, which does not need speed to do it.',
 
   describe:
     'The attacking half of the rink, the attacking net at the right and the attacking blue ' +

@@ -404,7 +404,7 @@ const BANK_TO = { at: 'half-wall:right', dx: -21.6, dy: -15.5 };    // (47.4, 23
 
 const bankPass = {
   id: 'bank-pass-angle',
-  title: 'Bank pass off the boards',
+  title: 'Bank pass around a forechecker',
   owner: 'content/technique/passing_and_receiving.md',
   half: true,
   width: 900,

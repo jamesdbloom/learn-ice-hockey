@@ -270,8 +270,7 @@ const puckOnTheFarSide = {
     'Which way you are turned ' +
     'is not drawn — a glyph here has no front and no back — so read this as where ' +
     'the puck is, not as how you are standing. Your stick is not drawn either, and it belongs on ' +
-    'the far side of the puck too. The checker is a forward because a shape had to ' +
-    'be chosen; the section says only "the checker". ' +
+    'the far side of the puck too. The checker is drawn as a forward, but it can be anyone. ' +
     'Nothing in the picture shows contact. ' +
     // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep: the full posture belongs
     // where the page is ABOUT board contact). This picture is drawn in open ice and shows no
@@ -1033,18 +1032,23 @@ const theLastPlayerBack = {
     'teammates are drawn far up the ice to show what being ahead of the puck looks like, and the ' +
     'other two are not drawn at all, because what ' +
     'makes this the situation is only that none of the four is behind you. You are drawn as a ' +
-    'defenceman because a shape had to be chosen; a forward ' +
-    'can be the last player back just as easily. ' +
+    'defenceman, but it can be anyone. ' +
     '⚠️ How much individual puck carrying a team wants is a coaching choice and not a law of ' +
     'hockey, and it varies enormously: some coaches want defencemen skating the puck out of the ' +
     'zone whenever the lane is there, others want the first available pass, every time. ' +
     'What is assumed here is a possession-oriented breakout ' +
     'with a two-one-two forecheck, and this is your coach\'s call. Ask. ' +
-    '⚠️ And if the decision you take turns into a battle and that battle reaches the boards, this ' +
-    'document\'s override outranks every word of it: never turn your back to anyone coming at you and never ' +
-    'duck, and neither prohibition is a rule for fast checkers only. Get your skates parallel to ' +
-    'the wall and take the contact on your forearm and hip, head up and chin off your chest' +
-    SHOULDER_TAIL,
+    // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep: the full posture belongs
+    // where the page is ABOUT board contact). The host section, puck_handling.md "When you are
+    // the last player back", is open-ice puck carrying in the neutral zone; the full posture lives
+    // on the same page at its wall-protection override paragraph, its Priority: and Never: facts
+    // lines, the rim/reverse paragraph in "In your own defensive zone", Common Mistakes and Key
+    // Takeaway 4 -- grep puck_handling.md for "forearm and hip". "this document's override
+    // outranks every word of it" was the corpus narrating itself and is gone; "neither
+    // prohibition is a rule for fast checkers only" became "however slowly they come", the
+    // page's own wording, which keeps the not-only-at-speed point.
+    '⚠️ And if this turns into a battle on the boards, never turn your back to anyone coming at ' +
+    'you and never duck, however slowly they come. ' + WALL_POSTURE_SHORT,
 
   describe:
     'The whole sheet. Your own net is at the left with your goalie in the crease, and the net ' +

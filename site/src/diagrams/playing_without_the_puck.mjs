@@ -178,7 +178,7 @@ const D2_GOER_TO = { at: 'corner:right', dx: -4, dy: -3 };   // (78, 31)
 
 const loosePuckWhoGoes = {
   id: 'loose-puck-who-goes',
-  title: 'Loose puck in your own corner',
+  title: 'Who goes to a loose puck',
   owner: 'content/hockey-iq/playing_without_the_puck.md',
   half: true,
   width: 900,

@@ -43,14 +43,16 @@ it paraphrases**, and a listener hears the same sentence twice in a row.
   half", "is unoccupied by design") against `the-slot`, and the difference is obvious on
   reading and invisible to this tool.
 
-METHOD. For every `![](diagram:slug)` marker in `content/`, take the contiguous non-heading
-block immediately above it and compare 5-word shingles against the caption's. Captions are
+METHOD. For every `![](diagram:slug)` marker in `content/`, take the prose unit
+immediately above it -- the paragraph, the blockquote paragraph or the tight list, never
+a table, a facts block or a second blockquote paragraph (see `block_above`) -- and compare 5-word shingles against the
+caption's. Captions are
 read from the `.mjs` SOURCES via check_caption_negations.captions(), never from
 `site/src/data/diagrams.json` -- the JSON is a build product and goes stale the moment a
 caption is edited.
 
 ⚠️  A BLOCK IS NOT A PARAGRAPH. Markdown bullet lists carry no blank line between items, so
-    the block above a marker is often an entire list. `--max-ratio` drops blocks more than
+    the block above a marker is often an entire list -- deliberately, see `block_above`. `--max-ratio` drops blocks more than
     N times the caption's length, because a 25-word caption scoring against a 1,754-word
     block tells you nothing. The first version of this measurement had no such filter and
     its top four rows were all artefacts of exactly that.
@@ -80,12 +82,38 @@ def shingles(ws: list[str]) -> set[tuple[str, ...]]:
 
 
 def block_above(lines: list[str], i: int) -> str:
-    """The contiguous non-blank, non-heading block immediately above line i."""
+    """The prose unit a listener hears directly before the diagram at line i.
+
+    ⚠️ NARROWED 22 Oct 2026 (plan row 56b). This used to return the whole contiguous
+    non-blank block, so a marker under a bullet list scored its caption against EVERY
+    item in the list, and a marker under a blockquote against every paragraph of it --
+    and `--max-ratio` then threw most of those comparisons away as too long, hiding the
+    one item actually adjacent to the caption. Now:
+
+      * blank lines and further diagram markers directly above are skipped, so the
+        second of two stacked diagrams is compared with the prose above the pair;
+      * the unit stops at a heading, a code fence (a ```facts block is its own layer),
+        and a bare `>` line (which ends a blockquote paragraph);
+      * a table directly above is not prose, and returns nothing.
+
+    ⚠️ A TIGHT LIST IS KEPT WHOLE, ON PURPOSE. Keeping only its last item was tried
+    and measured the same day: it dropped exactly three hits -- `goalie-breakaway-retreat`,
+    `rush-backcheck-lanes`, `oz-cross-the-road-yourself` -- and all three were REAL
+    echoes, a caption retelling the list's earlier items ("stay on your feet as long as
+    you possibly can" is item 3 of 6). A listener hears the whole list and then the
+    caption, so the list is the unit; `--max-ratio` still drops one too long to judge.
+    """
     j = i - 1
-    while j >= 0 and not lines[j].strip():
+    while j >= 0 and (not lines[j].strip() or MARK.match(lines[j].strip())):
         j -= 1
+    if j < 0 or lines[j].lstrip().startswith('|'):
+        return ""
     out = []
-    while j >= 0 and lines[j].strip() and not lines[j].startswith('#'):
+    while j >= 0:
+        s = lines[j].strip()
+        if (not s or s.startswith('#') or s.startswith('```')
+                or re.fullmatch(r'(?:>\s*)+', s) or MARK.match(s)):
+            break
         out.append(lines[j])
         j -= 1
     return " ".join(reversed(out))

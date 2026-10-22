@@ -288,7 +288,7 @@ const DEEP_CORNER = { at: 'corner:right', dx: 2, dy: -3 };
 
 const fiveManShape = {
   id: 'oz-five-man-shape',
-  title: 'Five-player offensive-zone shape',
+  title: 'Five attackers, puck on the half-wall',
   owner: 'content/systems/offensive_zone_play.md',
   half: true,
   width: 900,

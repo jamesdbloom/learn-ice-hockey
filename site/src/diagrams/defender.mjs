@@ -508,7 +508,7 @@ const holdingTheLine = {
   owner: OWNER,
   half: false,
   width: 900,
-  title: 'Holding your own blue line',
+  title: 'Defencemen as the safety valve',
 
   caption:
     'Holding your own blue line as the safety valve, on the whole sheet with your own goal at the ' +

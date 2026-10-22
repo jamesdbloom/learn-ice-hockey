@@ -13,7 +13,9 @@ and a short one can have lost a safety limb.
 What it counts, and what it skips:
   * prose      = body text outside ```facts blocks, tables, headings and the
                  Sources trailer (everything from the last "Sources" / "## Sources"
-                 heading or bold label onward is provenance and is not counted)
+                 heading or bold label onward is provenance and is not counted).
+                 A bare ">" line ends a blockquote paragraph, and a blockquote's
+                 "**Related:**" navigation line is not prose.
   * words      = whitespace tokens in prose
   * sentences  = split on . ! ? followed by space and a capital or quote
   * long_par   = paragraphs over 1,200 characters (programme item 1)
@@ -23,6 +25,7 @@ What it counts, and what it skips:
   * markers    = ⚠ glyphs in prose (item 6)
   * hard       = share of words of 4+ syllables (a rough plain-words signal)
 """
+import argparse
 import json
 import re
 import sys
@@ -99,6 +102,17 @@ def split_layers(text):
         if not l.strip():
             flush()
             continue
+        # A bare ">" line separates two blockquote paragraphs; it was joining
+        # them, so a page header's two or three paragraphs scored as one long
+        # one (z2, z3; fixed 22 Oct 2026).
+        if re.match(r"^\s*>\s*$", l):
+            flush()
+            continue
+        # A blockquote's "**Related:**" line is site navigation, not prose, and
+        # it was counted inside the header paragraph above it (y3; 22 Oct 2026).
+        if re.match(r"^\s*>\s*\*\*Related:?\*\*", l):
+            flush()
+            continue
         if in_kt and re.match(r"^\s*(\d+[.)]|[-*])\s+", l):
             flush()
             kts.append(strip_md(re.sub(r"^\s*(\d+[.)]|[-*])\s+", "", l)))
@@ -149,10 +163,16 @@ def measure(path):
 
 
 def main(argv):
-    as_json = "--json" in argv
+    # argparse, so an unknown or mistyped flag exits 2 instead of silently running the
+    # whole corpus and exiting 0 (the plan's unknown-flag row, 22 Oct 2026).
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--file", help="one document: a path, or a path under content/")
+    ap.add_argument("--json", action="store_true", help="machine-readable output")
+    args = ap.parse_args(argv)
+    as_json = args.json
     files = []
-    if "--file" in argv:
-        f = Path(argv[argv.index("--file") + 1])
+    if args.file:
+        f = Path(args.file)
         if not f.is_absolute():
             f = (ROOT / f) if (ROOT / f).exists() else (CONTENT / f)
         if f.suffix != ".md":

@@ -129,8 +129,25 @@ def _shingles(words: list[str]) -> set[tuple[str, ...]]:
     return {tuple(words[i:i + SHINGLE]) for i in range(max(0, len(words) - SHINGLE + 1))}
 
 
+# The Sources trailer has NO heading: it is a run of italic `*Sources — retrieved …*`
+# lines after the last section, so the last layer before it (Key Takeaways, in most
+# documents) used to run on to end of file and score the trailer's provenance prose as
+# takeaway text. ⚠️ Detected the way `md_to_speech.is_sources_paragraph` detects it —
+# strip the furniture and the dash, then look for "sources retrieved" at the start — and,
+# as there, everything from that line on is trailer (fixed 22 Oct 2026).
+SOURCES_MARKER = "sources retrieved"
+
+
+def _is_sources_line(line: str) -> bool:
+    plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)
+    plain = re.sub(r"[*_`>#—–(\[]", " ", plain)
+    return re.sub(r"\s+", " ", plain).strip().lower().startswith(SOURCES_MARKER)
+
+
 def _layers(path: pathlib.Path) -> dict[str, str]:
     lines = path.read_text().split("\n")
+    cut = next((i for i, l in enumerate(lines) if _is_sources_line(l)), len(lines))
+    lines = lines[:cut]
     heads = [(i, m.group(1).strip()) for i, l in enumerate(lines) if (m := re.match(r"^## (.+)", l))]
     found: dict[str, str] = {}
     for n, (i, h) in enumerate(heads):

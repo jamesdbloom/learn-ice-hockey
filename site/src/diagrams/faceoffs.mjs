@@ -928,7 +928,7 @@ const OT_SHOOTER = 'point:right';                       // (25, 20)
 const ozoneDOneTimer = {
   id: 'faceoff-ozone-d-one-timer',
   owner: 'content/systems/faceoffs.md',
-  title: 'The D one-timer',
+  title: 'Offensive-zone draw back to the point',
   half: true,
   width: 900,
 
@@ -982,7 +982,7 @@ const ozoneDOneTimer = {
 const ozoneWingerWalkout = {
   id: 'faceoff-ozone-winger-walkout',
   owner: 'content/systems/faceoffs.md',
-  title: 'The winger walk-out',
+  title: 'Offensive-zone draw to the inside winger',
   half: true,
   width: 900,
 

@@ -343,7 +343,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 - **SG13 DONE (22 Oct)** (record sg13_rules_accuracy_rows_2026-10-22.md). Closed: late hit ×3, OIC ×3, T&S 21.1, DZC ×2, puck_handling ×2, goaltender ×4, CARHA 62(b) ×3 pages, special_teams :776, PWTP ×3, passing. New from it: body_contact :1651 facts (300/300) and :637/:655 lack NHL/PWHL 21.1 / late-hit price; T&S goalie contact :556–562 no NHL 21.1; defender :244 'can be a shot too' vs HC Interp 5 (rules-verifier); CARHA follow-through limb in shooting.md?; optional 10.1→10.1(i) in breakouts :657, DZC :178, body_contact :1148.
 
 - **zone_entries :235:** "only once made" errs safe.
-- **SG16 follow-ups:** IIHF "no match tier on the ice" lines (rules_primer :437/:451/:476/:477) — check for an IIHF general route; defending_the_rush :734/:751 could cite HC Interp 2 to 7.11(c) (optional); downloads wording fits The Basics loosely.
+- **IIHF act search:** can a hold that deliberately injures be called as roughing (51) or another major under the IIHF? (rules_primer :497 now says only the IIHF stops at the minor for holding.) PWHL 21.1 at body_contact :1699 unverified (tool limit).
 - **team_play :283 PWHL ceiling:** "can go higher … if it hurts them" is slightly broad for the PWHL (only 21.1, deliberate injury). Harsher direction.
 
 ### Content — safety layering and readability
@@ -351,7 +351,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 - **SG14 DONE (22 Oct)** (record sg14_posture_followups_renderer_2026-10-22.md): board-posture calls for conditioning, getting_started, switching, zone_entries, defender, passing; body_contact late-hit NHL/PWHL + 10.1(i); time_and_space goalie contact; defender :244; 7 renderer fixes. New: renderer speaks sentence-initial rule numbers lowercase; HC 2.2(i) letter-or-numeral unchecked.
 
 - **Facing-the-wall fallback** done (PWTP SG13, practice_and_development SG15).
-- **Listener "Important." runs:** rules_primer stick fouls and body_contact §5/§9/§12 DONE in SG16. Still: rules_primer body-fouls run of 11 and several 8s (CM, KTs); body_contact 4-runs in §1, §3, CM, KTs.
+- **Listener "Important." runs:** SG16/SG17 broke the worst. Still: rules_primer 6 (elbowing/helmets; crease contact), 5 (screening; CM faceoff/glass), 4s; body_contact 4 at :1735–1741.
 - **Long units:** PWTP DONE in SG16. Corpus-wide 43 long paragraphs and 90 KTs over 60 words (check_readability); spoken chunks over 2,500 chars unmeasured; 92 of 204 captions over 800 chars.
 - **Smaller items:** "every level of UK hockey runs the IIHF book" in 34 headers (low; "amended locally" may cover it).
 - **rules_primer:** table :899 has 0 rows of headroom; the content of table :1018 (dropped from audio) has no recorded check that it is voiced inline; quote-drift flags at :430 and :1201.
@@ -361,7 +361,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 - **SG15 DONE (22 Oct)** (record sg15_captions_renderer_site_smalls_2026-10-22.md). New/open from it: pull-up wording consistency ("see the numbers on their back" vs "see their numbers" in ~18 files); puck-decides caption HC "also counts where you are" ambiguity (rules look); winger-arriving-at-the-line caption full posture on a blue-line stand-up; puck-on-the-far-side page-about-itself text; pinch/press captions ~2,850 chars; OZP :833 clause ii exception (optional); rules_primer :1038 "does not settle" (optional); breakouts.mjs rim comment says goaltender host (stale); renderer ~340 other lower-case sentence starts (cosmetic).
 
-- **Captions:** 31 titles repeat word for word in their own caption.
+- **Captions:** 15 title echoes fixed in SG17; 16 kept on purpose.
 - **Labels:** leader lines start at token centre and cross the token's own letter (placeLabels, all diagrams); other full-sheet labels may cross painted lines (no checker); dz-walk-down-man "goes with the carrier" may cross the blue line at 400 px.
 - **Site:** a site-reviewer pass is still owed for the 400 px diagram scene, the 🇬🇧 wrap in conditioning's Key focus and a special_teams bold run.
 
@@ -372,7 +372,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 ### Checkers and sources (scripts/ — change between waves, never during one)
 
-- check_readability: joins blockquote paragraphs across a bare `>` line, and counts a blockquote's Related line in the paragraph. check_layer_echo counts the Sources trailer as part of the KTs. check_caption_echo compares against the whole block. check_pointers and check_zones exit 0 on an unknown flag; check_pointers hard-codes the content root. check_callout_flow.classify() keys on how a line opens. check_facts --near has no warning for blocks at the 14-fact cap. check_quote_drift has no unflattened pass. About ten requested tools are still unbuilt (see archive).
+- Checker tools: SG17 fixed readability, layer_echo, pointers, zones, caption_echo. Still: other scripts may exit 0 on an unknown flag; check_pointers can't see sibling-document pointers; check_callout_flow.classify() keys on how a line opens; check_facts --near has no 14-cap warning; check_quote_drift has no unflattened pass.
 - Sources: hc_2026-08-print.txt not yet renamed; the EIHL roster and discipline documents and the IHUK policy documents are not on disk; about 28 equipment citations have never been refetched. Search the IIHF Situation Handbooks for a puck-carrier vulnerability ruling.
 
 ### UNCLEAR (needs a sharper question before dispatch)

@@ -99,12 +99,12 @@ export const SHOULDER_TAIL = ' — and ' + SHOULDER_NOT_THE_SURFACE + '.';
  * The SHORT receiving posture, for captions that send a player to the wall in a
  * diagram whose subject is NOT board contact: `breakout-rim`, `breakout-reverse`,
  * `breakout-against-1-3-1` (breakouts.mjs), `forecheck-pinch` and
- * `forecheck-press` (forechecking_systems.mjs) and `puck-on-the-far-side`
- * (puck_handling.mjs).
+ * `forecheck-press` (forechecking_systems.mjs), and `puck-on-the-far-side` and
+ * `the-last-player-back` (puck_handling.mjs).
  *
  * ⚠️ WHY SHORT. Owner ruling, 23 September 2026: the full posture is a key point
  * where the page is ABOUT board contact and too much detail where it was merely
- * inherited. These six captions sit under sections about breaking out,
+ * inherited. These seven captions sit under sections about breaking out,
  * forechecking and puck protection, and every host that teaches wall play
  * carries the full mechanics in its own body or ```facts block beside the
  * marker. This replaced `WALL_POSTURE_INSTEAD` ("Get your skates parallel to the

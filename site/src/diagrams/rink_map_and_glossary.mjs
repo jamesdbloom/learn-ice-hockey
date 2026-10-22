@@ -946,7 +946,7 @@ const neutralZoneMap = {
 const endZoneMarkings = {
   id: 'rink-map-end-zone-markings',
   owner: 'content/foundation/rink_map.md',
-  title: 'One half of the sheet',
+  title: 'The end-zone markings',
   half: true,
   width: 1000,
 

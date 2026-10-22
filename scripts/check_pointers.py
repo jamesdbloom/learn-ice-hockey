@@ -41,10 +41,24 @@ Sources trailer, a `## Notes on verification` section, a footnote, or a table th
 rendered as a pointer -- with the sentence, so it can be judged without opening the
 file.
 
-Exit status is 0 unless the renderer itself fails. Findings are not failures.
+USAGE
+-----
+    python3 scripts/check_pointers.py                       # every document in content/
+    python3 scripts/check_pointers.py content/systems/faceoffs.md
+    python3 scripts/check_pointers.py podcast_style_b/      # any .md file or directory
+    python3 scripts/check_pointers.py --self-test
+
+A relative path is tried against the current directory first, then against the
+repository root, so the tool runs the same from anywhere. ⚠️ It used to hard-code
+`root / "content"` with no path argument (plan row 56g), so it could not be pointed
+at a single document or at a podcast script at all.
+
+Exit status is 0 unless the renderer itself fails or the arguments are wrong (2).
+Findings are not failures.
 """
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 from collections import Counter
@@ -99,9 +113,19 @@ def render(path: Path, root: Path):
     the same file, so a document-level search sees them and concludes the
     reference resolves.
     """
-    relative = path.relative_to(root / "content")
-    doc_id = str(relative.with_suffix("")).replace("/", "__")
-    chunks, report = tts.transform_document(path, doc_id, str(path.relative_to(root)))
+    # A file outside content/ (a podcast script, a scratch copy) has no layer
+    # directory, so its stem is its id; inside content/ the id is the one
+    # md_to_speech gives it, `<layer>__<stem>`.
+    try:
+        relative = path.resolve().relative_to((root / "content").resolve())
+        doc_id = str(relative.with_suffix("")).replace("/", "__")
+    except ValueError:
+        doc_id = path.stem
+    try:
+        label = str(path.relative_to(root))
+    except ValueError:
+        label = str(path)
+    chunks, report = tts.transform_document(path, doc_id, label)
     return " ".join(tts.plain(chunk.tokens) for chunk in chunks), report
 
 
@@ -170,9 +194,46 @@ def self_test() -> int:
     return 1 if failures else 0
 
 
-def main() -> int:
+def _resolve(arg: str, root: Path) -> Path | None:
+    """A path as given, else under the repository root, else under content/ (so
+    `systems/faceoffs` works as it does for check_callout_flow); None if none exists."""
+    tries = [Path(arg), root / arg, root / "content" / arg]
+    tries += [t.with_suffix(".md") for t in tries if t.suffix != ".md"]
+    for candidate in tries:
+        if candidate.exists():
+            return candidate.resolve()
+    return None
+
+
+def _display(path: Path, root: Path) -> str:
+    try:
+        return str(path.relative_to(root))
+    except ValueError:
+        return str(path)
+
+
+def main(argv: list[str] | None = None) -> int:
     root = Path(__file__).resolve().parent.parent
-    docs = sorted((root / "content").rglob("*.md"))
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("paths", nargs="*",
+                    help="markdown files or directories (default: content/ under the repository)")
+    ap.add_argument("--self-test", action="store_true",
+                    help="exercise the classifier and the suppression rule, then exit")
+    # ⚠️ argparse exits 2 on an unknown flag. Before 22 Oct 2026 this tool read
+    # sys.argv by hand, so `--bogus` (or a mistyped `--file`) scanned the whole
+    # corpus and exited 0 -- a silent false pass of the kind CLAUDE.md records for
+    # `md_to_speech --only` (plan row 56e).
+    args = ap.parse_args(argv)
+    if args.self_test:
+        return self_test()
+
+    docs: list[Path] = []
+    for arg in args.paths or [str(root / "content")]:
+        path = _resolve(arg, root)
+        if path is None:
+            print(f"check_pointers: no such file or directory: {arg}", file=sys.stderr)
+            return 2
+        docs.extend(sorted(path.rglob("*.md")) if path.is_dir() else [path])
     if not docs:
         print("check_pointers: no documents found", file=sys.stderr)
         return 2
@@ -220,7 +281,7 @@ def main() -> int:
                     by_target[label] += 1
                     break
         if hits:
-            print(f"\n{path.relative_to(root)}")
+            print(f"\n{_display(path, root)}")
             for label, sentence in hits:
                 print(f"  -> {label}")
                 print(f"     {sentence[:190]}")
@@ -251,6 +312,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    if "--self-test" in sys.argv:
-        raise SystemExit(self_test())
     raise SystemExit(main())

@@ -213,7 +213,7 @@ const MODERATE = 'rgba(200,16,46,0.09)';
 
 const theRiskMap = {
   id: 'the-risk-map',
-  title: 'Turnover cost by location',
+  title: 'Turnover risk map',
   owner: OWNER,
   half: false,
   width: 1100,

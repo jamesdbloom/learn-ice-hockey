@@ -1164,7 +1164,7 @@ const PRESS_F3 = { at: 'faceoff-dot:left', dx: 4, dy: 4 };     // (73, -18)
 const forecheckPress = {
   id: 'forecheck-press',
   owner: 'content/systems/forechecking_systems.md',
-  title: 'The full-ice press',
+  title: 'Forwards deep, both defencemen stepping down',
   half: true,
   width: 900,
 

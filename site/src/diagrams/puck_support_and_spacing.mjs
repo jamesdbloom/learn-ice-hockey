@@ -382,7 +382,7 @@ const NZ_CARRIER = { at: 'centre-ice', dy: 20 };
 
 const supportAngles = {
   id: 'support-angles',
-  title: 'Three support angles',
+  title: 'Behind, level and ahead',
   owner: 'content/hockey-iq/puck_support_and_spacing.md',
   half: false,
   width: 1000,
