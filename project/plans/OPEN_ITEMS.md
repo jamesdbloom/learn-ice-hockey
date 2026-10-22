@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG32 (22 Oct):** Finding More Ice ships, the feed is frozen for 40 docs, plus the CARHA scope and goalie-contact facts. All reviews done; committing.
+- **SG33 (23 Oct):** the general "CARHA major" scope fixes passed review; committing.
 
 ## New page: Getting Better on Your Own
 
@@ -22,13 +22,7 @@ Ice" and "Practising on Your Own", go in Off the Ice. Owner decisions D1–D6 we
 recorded in that file's §6. **Drill diagrams stay unpublished until the owner has approved each one.** Page text
 can ship once it has been reviewed.
 
-1. **Finding More Ice:** the draft is REVIEWED (content, source, safety+rules ×2 all CLEAR, 22 Oct) at
-   `project/getting_better_drafts/finding_more_ice.md`. Next steps:
-   - Move it to `content/off-the-ice/` and add it to `site/src/data/structure.json`.
-   - Update the corpus counts from 39 to 40 (`check_counts --update`, CLAUDE.md and other "39" figures).
-   - Build, site review, gate and ship.
-   - Point Getting Started §10's "Named starting points" table at it, since it overlaps the draft's §7.
-   - Optional: "faces suspension and fines" (R&R 14.5), changed together in getting_started KT8 and CM :654.
+1. **Finding More Ice: SHIPPED 22 Oct (0337d6a).** Optional: "faces suspension and fines" (R&R 14.5), changed together in getting_started KT8 and CM :654.
 2. **Skating-drill diagrams:** 48 drafts in `project/getting_better_drafts/`, redrawn with the owner's first
    round of feedback (recorded in getting_better_plan.md §6). The private preview is republished.
    - **Waiting on the owner:** a drill-by-drill review. Seven readings are flagged to confirm: the sharp-C
@@ -36,9 +30,16 @@ can ship once it has been reviewed.
      scissor stop foot order, which foot stops on the outside-edge one-foot stop, and "(toe down first)".
    - Once the owner approves a diagram: fold the kit into the site's diagrams.
 3. **Off-ice stick-drill diagrams:** waiting on the owner's list.
-4. **Practising on Your Own (text):** draft the page: stick-and-puck, public-skating drills as text until their
-   diagrams are approved, off-ice stick work, off-ice exercises, and any good existing videos vetted case by case.
-   Then the full review set.
+4. **Practising on Your Own (text):** first draft written 23 Oct at `project/getting_better_drafts/practising_on_your_own.md`. It runs about 6,580 words: 46 drill entries taken from the cards, etiquette, using the session, off-ice principles, and a pointer to conditioning. It holds HTML-comment placeholders for the stick list and the videos; remove both before the move, because md_to_speech may voice them.
+   - **Held for the owner's drill review,** since the text inherits the cards. Open questions:
+     - mohawk meaning;
+     - jam, punch-jam and punch turns;
+     - which stops end the backward drills;
+     - "touch the ice" or "touch the boot";
+     - the step-turn reading;
+     - drill order (the drafts' order is not easiest-first);
+     - two card edits: "an imaginary point" instead of cones, and "head pointing" instead of "head and stick".
+   - **Then:** content review (duplication with Skating and Practice and Development), safety review (jumps, hard stops, helmet advice), cut for length, and move to content/ like Finding More Ice.
 5. **Diagram groundwork:** a skate-track view (from above) and one shared stick-figure module for body position.
    Animated SVGs only where motion is the point.
 6. **Launch:** nav, home-page ways in, Getting Started Route 1. Then NotebookLM and Detailed episodes for each
@@ -60,7 +61,7 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **More unscoped "CARHA major" candidates (rules-verifier, 22 Oct):** defender.md:356 and body_contact_and_battles.md:1699 (and others the grep returns). Check each against 30(a)'s accidental-high-stick exception and scope it to its foul.
+- **defensive_zone_coverage :597 (minor, harsher direction):** "at least a one-game suspension on that (32(d))" also covers an injuring accidental high stick, which 32(d) exempts. Sketch: "…and a slashing major also brings at least a one-game suspension (32(d))".
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **zone_entries facts citation consistency (minor):** :434's goal clause has no cite (298/300), and PWHL 71.3 is uncited on :349 and :393. Optional: add "and bans you a game or more (32(d))" to the 66(b) major at :376.
 - **Echoes found by the SG30 site review (wording):**
