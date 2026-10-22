@@ -12,22 +12,43 @@
   ⚠️ Who it is for is the owner's wording: "suitable for newer players or younger
   players". Do not add parents to it; the owner removed them on 20 October 2026.
 
+  ⚠️ Laid out like a document page (owner, 22 October 2026): the left-hand contents nav,
+  the right-hand "On this page" rail, and under each episode's player its key points as a
+  list, so the page can be read as well as listened to. The key points live in
+  basics-takeaways.json, keyed by slug and NOT in podcast-basics.json, because the publish
+  script rewrites that file. They are summaries of what each episode says, reviewed against
+  the episode and the pages it draws on; an episode with none renders without the list.
+
   A plain <audio> per episode, not the sticky AudioPlayer: that component is one player
   per document page with a format switch, and this page lists up to thirteen episodes.
   `preload="none"` so opening the page downloads no audio. The <a> fallback keeps the
   episode reachable with no <audio> support, exactly as AudioPlayer does.
 */
 import Base from '../../layouts/Base.astro';
+import SidebarNav from '../../components/SidebarNav.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
 import { getDoc } from '../../data/nav';
+import takeawayData from '../../data/basics-takeaways.json';
+import signpostData from '../../data/basics-signposts.json';
 import { BASICS_EPISODES, BASICS_LABEL, BASICS_PLANNED, basicsNumber, minutes } from '../../data/podcast';
 import { AUDIO_ENABLED } from '../../consts';
 
 const episodes = AUDIO_ENABLED ? BASICS_EPISODES : [];
 const complete = episodes.length === BASICS_PLANNED.length && episodes.length > 0;
+const takeaways = takeawayData as Record<string, string[]>;
+const pointsFor = (slug: string): string[] => takeaways[slug] ?? [];
+// A support signpost an episode opens with (Teamwork's crisis line), shown above its player
+// so a reader who never presses play still meets it.
+const signposts = signpostData as Record<string, string>;
+// The right-hand rail: one entry per episode, the same shape a document's headings take.
+const headings = episodes.map((ep) => ({ depth: 2, slug: ep.slug, text: `${basicsNumber(ep.slug)}. ${ep.title}` }));
 const description = 'Short podcast episodes on the core principles of ice hockey, suitable for newer players or younger players.';
 ---
 
-<Base title={BASICS_LABEL} description={description} bare={true}>
+<Base title={BASICS_LABEL} description={description} withToc={true}>
+  {/* For the right-hand rail's "you are here" marker (trackContents). The script's
+      Essentials half switches itself off on a page with no .prose .ess, as this one is. */}
+  <script is:inline slot="head" src="/essentials-view.js"></script>
   <main class="main" id="main">
     <article>
       <p class="doc-eyebrow"><a href="/">All sections</a></p>
@@ -40,13 +61,15 @@ const description = 'Short podcast episodes on the core principles of ice hockey
         episode and a Conversation episode.
       </p>
 
-      <h2 class="hub-heading">
+      {headings.length > 0 && <TableOfContents headings={headings} variant="inline" />}
+
+      <p class="hub-heading basics-count">
         {episodes.length === 0
           ? 'Episodes'
           : complete
             ? `All ${episodes.length} episodes, in order`
             : `${episodes.length === 1 ? 'The first episode' : `The first ${episodes.length} episodes`}, in order`}
-      </h2>
+      </p>
 
       {episodes.length === 0 ? (
         <p class="hub-blurb">The first episodes are being made. They will appear here as each one is ready.</p>
@@ -54,12 +77,26 @@ const description = 'Short podcast episodes on the core principles of ice hockey
         <ol class="basics-list">
           {episodes.map((ep) => (
             <li class="basics-ep" id={ep.slug} value={basicsNumber(ep.slug)}>
-              <h3 class="basics-ep__title">
+              <h2 class="basics-ep__title">
                 {basicsNumber(ep.slug)}. {ep.title} <span class="basics-ep__meta">· {minutes(ep.duration_s)} min</span>
-              </h3>
-              <audio class="basics-ep__audio" controls preload="none" src={ep.audio}>
+              </h2>
+              {signposts[ep.slug] && (
+                <p class="basics-ep__signpost">
+                  {signposts[ep.slug]}{' '}
+                  <a href={`${getDoc('off-the-ice/mental_game').href}#13-when-to-seek-real-help`}>Crisis lines and where to get help</a>.
+                </p>
+              )}
+              <audio class="basics-ep__audio" controls preload="none" src={ep.audio} aria-label={`${ep.title}, The Basics episode ${basicsNumber(ep.slug)}`}>
                 <a href={ep.audio}>Download {ep.title} (audio)</a>
               </audio>
+              {pointsFor(ep.slug).length > 0 && (
+                <>
+                  <p class="basics-ep__points-head">Key points</p>
+                  <ul class="basics-ep__points">
+                    {pointsFor(ep.slug).map((point) => <li>{point}</li>)}
+                  </ul>
+                </>
+              )}
               <p class="basics-ep__sources">
                 Go deeper:{' '}
                 {ep.sources.map((id, i) => {
@@ -78,4 +115,7 @@ const description = 'Short podcast episodes on the core principles of ice hockey
       )}
     </article>
   </main>
+
+  <SidebarNav />
+  {headings.length > 0 && <TableOfContents headings={headings} variant="aside" />}
 </Base>

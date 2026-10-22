@@ -1,5 +1,7 @@
 ---
 import { LAYERS } from '../data/nav';
+import { BASICS_EPISODES, BASICS_LABEL, BASICS_PATH } from '../data/podcast';
+import { AUDIO_ENABLED } from '../consts';
 
 interface Props {
   /** Collection id of the page currently being viewed, if any. */
@@ -7,6 +9,9 @@ interface Props {
 }
 
 const { currentId } = Astro.props;
+// The Basics is the first item under Foundation (owner, 22 October 2026), once an episode exists.
+const showBasics = AUDIO_ENABLED && BASICS_EPISODES.length > 0;
+const onBasics = Astro.url.pathname === BASICS_PATH || Astro.url.pathname === BASICS_PATH.slice(0, -1);
 ---
 
 {/*
@@ -47,6 +52,13 @@ const { currentId } = Astro.props;
           <a href={`/${layer.id}/`}>{layer.title}</a>
         </p>
         <ul class="nav-list">
+          {layer.id === 'foundation' && showBasics && (
+            <li>
+              <a href={BASICS_PATH} aria-current={onBasics ? 'page' : undefined}>
+                {BASICS_LABEL}
+              </a>
+            </li>
+          )}
           {layer.docs.map((doc) => (
             <li>
               <a href={doc.href} aria-current={doc.id === currentId ? 'page' : undefined}>

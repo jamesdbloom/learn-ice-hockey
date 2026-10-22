@@ -211,6 +211,14 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 - **`site/dist/analytics.js` sends nothing only because the GA meta tag is absent**, not because of the code. (archive: snapshot lines 13893–13903)
 - **`site/package-lock.json` — NEVER STAGE.** A macOS `npm install` stripped its `libc` fields. (archive: snapshot lines 33323–33324)
 
+### New page: Getting Better on Your Own (owner, 22 Oct)
+
+- **PLAN AWAITING OWNER REVIEW:** project/getting_better_plan.md. Owner asked for a page on more ice (rec practices, teams, youth programmes, by location), solo skating drills at public sessions, off-ice stick drills and off-ice exercises, with step-by-step SVGs or animation, no own videos, links to good existing videos OK. Not to be published until ready. Decisions D1–D6 are open in the plan. Nothing is drafted yet.
+
+### The Basics
+
+- [basics wing slot collapse] the playing-wing Basics script omits the weak-side winger collapsing to the slot when the centre goes into the corner, which the centre list relies on (winger.md :55/:154/:182) — fix in a future Basics remake (record basics_page_redesign_2026-10-22.md).
+
 ### P1 readability and the layers
 
 - **SG10 DONE (22 Oct):** eight agents re-tested nine accuracy rows. SEVEN were already fixed by earlier commits or refuted (goaltender CARHA 53(b) c35d177; switching :229 and ask-your-league — In-House Rules DO reach the WNIHL per ihuk_wnihl_roc.txt:24-29; risk 36(a) b12a829 and :717 amber b44e9d8; breakouts trapezoid e16a586; DZC 620→621 9490fbe; USAH 640 Note 2 b12a829). Real fixes committed (record sg10_small_accuracy_rows_2026-10-22.md). ⚠️ This section of the plan is STALE — test a row against HEAD before dispatching it.

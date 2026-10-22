@@ -70,6 +70,8 @@ So here are four routes, each for one reader with one deadline. Each names **sec
 **For:** you can skate, you have never played a game, and your name is on a team sheet in a few days.
 **Roughly an hour**, in this order.
 
+> **Start with The Basics.** If you are a younger player or brand new to the game, listen to The Basics first: short episodes, in plain words, on the things to get right first. Then come back to this route, because The Basics does not tell you whether your games allow checking. Use the Basics button at the top of any page, or find them first under Foundation in the contents list.
+
 1. **[Body Contact and Battles → 1. Which Contact Rules Are You Actually Playing Under?](../technique/body_contact_and_battles.md#1-which-contact-rules-are-you-actually-playing-under)** — first, before anything tactical. It settles whether body checking is allowed where you play, and separates body contact from body checking. British readers: read [If you play in Britain](../technique/body_contact_and_battles.md#if-you-play-in-britain) inside it.
 2. **[Rink Map → 4. The three zones](../foundation/rink_map.md#4-the-three-zones--and-the-thing-that-confuses-every-beginner)** — short, and it unblocks every other document.
 3. **[Rink Map → 6. Directional and relational vocabulary](../foundation/rink_map.md#6-directional-and-relational-vocabulary)**, plus **[The six positions](../foundation/rink_map.md#the-six-positions)** and **[F1 / F2 / F3 — roles, not people](../foundation/rink_map.md#f1--f2--f3--roles-not-people)** — what the bench will be shouting at you. Keep [the glossary](../foundation/language_and_glossary.md#glossary) open on your phone as a lookup, rather than reading it through.
