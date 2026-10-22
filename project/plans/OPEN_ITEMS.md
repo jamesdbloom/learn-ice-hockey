@@ -57,6 +57,7 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 - **faceoffs taker's restraining lines:** render Hockey Canada Figure 7 ("Face-Off Restraining Lines", no text layer) to confirm "face-off restraining lines" in 6.2(a) means the L-lines, which faceoffs :733 assumes (errs safe either way). Optionally name PWHL 78.7(iv) beside the NHL/IIHF permission at :719/:733.
 - **on_ice_communication KT13 and CM** name the NHL and IIHF for the shorthanded icing exemption but not the PWHL (83.6 has it). Omission; low.
+- **special_teams CM ~:1191** says the NHL, IIHF and PWHL "never settle the point" on a draw steered out deliberately; re-read against 63.2(ii)/65.2(ii) ("deliberately… from anywhere") and the no-penalty-off-a-face-off Note. Also optional: :1013 "except for an injury" omits the other change exceptions.
 - **Optional citation precision:** breakouts and defensive_zone_coverage cite "Hockey Canada 10.1" where
   10.1(i) is meant.
 
@@ -79,18 +80,18 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 ## Diagrams and site
 
-- **Captions over 800 characters:** 92 of 204; the press and pinch captions are about 2,900.
+- **Captions over 800 characters:** about 90 of 204. Press and pinch were cut in SG27; next longest are forecheck-131 (~2,610) and forecheck-122 (~2,330, also hosted by how_to_watch_hockey), which share a long checking block.
 - **puck-on-the-far-side caption** still describes its own drawing ("a glyph here has no front…").
 - **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
   fix).
 - **No checker** for labels crossing painted lines.
 - **dz-walk-down-man "goes with the carrier"** label appears to cross the blue line at every width;
   confirm in a browser.
+- **🇬🇧 line wrap:** the flag can end one line while its sentence starts the next (7 of 79 on eight pages). Fix in site/src/plugins/remark-corpus.mjs: bind 🇬🇧 to the next word with a no-break space, as bindGlyph already does for ⚠ ❗ 🚫. Check how 🇬🇧 renders on Windows (often shows as "GB").
 - **Site look owed:** the 🇬🇧 mid-paragraph in conditioning's Key focus; the special_teams bold run.
 
 ## Renderer and podcast tooling
 
-- **🇬🇧 mid-sentence** in special_teams and body_contact ("— 🇬🇧 so…") now renders "For British readers. So…"; move the flag to sentence start in content.
 - **md_to_speech `_rule_number_opens_sentence`** treats a possessive "IIHF's." as the letter "s.", so a rule number after a possessive is not capitalised (fixed only inside the new capitals pass).
 - **on_ice_communication KT13/CM** omit the NHL/PWHL major-penalty icing exception (body carries it); optional one clause in KT13.
 - **synthesize_style_b.py has no `--doc-id`:** only matters if production is tracked by doc id. Low.
