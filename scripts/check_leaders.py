@@ -131,4 +131,11 @@ def main(paths):
     return 0
 
 if __name__ == '__main__':
+    # An unrecognised option is an error, not something to ignore: a mistyped flag
+    # used to be opened as a file and crash with a traceback.
+    _unknown = [a for a in sys.argv[1:] if a.startswith("-")]
+    if _unknown:
+        print(f"check_leaders.py: unrecognised option(s): {' '.join(_unknown)}\n"
+              "usage: check_leaders.py [diagram.svg ...]", file=sys.stderr)
+        sys.exit(2)
     sys.exit(main(sys.argv[1:] or glob.glob('site/public/diagrams/*.svg')))

@@ -168,7 +168,8 @@ an existing entry whose document has no publishable master is carried forward un
                written on FIRST publish and copied verbatim forever after.
     ⚠️ OPT-IN BY NAME: `--slug` is required and must be a PLANNED slug. REFUSED (exit 2,
        nothing written): an unplanned slug, a missing WAV, a `blocked` status in
-       `.podcast_queue/state-basics.json`, a malformed plan, or a guid or audio path that
+       `.podcast_queue/state-basics.json` (written by `podcast_queue.py --style basics`),
+       a malformed plan, or a guid or audio path that
        is already used by ANY collection (Conversation, Playing principles or Basics).
     ⚠️ BACKUP: a real run copies the WAV (unless a same-size, same-mtime copy is already in
        a snapshot) and the JSON it is about to rewrite into a new folder under BACKUP_ROOT.
@@ -659,7 +660,7 @@ def cmd_principles(args) -> int:
 BASICS_WAVS = STYLE_B / "basics"
 BASICS_OUT = PRINCIPLES_OUT / "basics"
 BASICS_DATA = REPO / "site" / "src" / "data" / "podcast-basics.json"
-BASICS_QUEUE_STATE = REPO / ".podcast_queue" / "state-basics.json"
+BASICS_QUEUE_STATE = REPO / ".podcast_queue" / "state-basics.json"  # podcast_queue.py --style basics
 BASICS_LABEL = "The Basics"
 BASICS_GUID_PREFIX = "learn-ice-hockey:core:"
 BASICS_PAGE = "the-basics"

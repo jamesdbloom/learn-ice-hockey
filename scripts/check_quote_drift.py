@@ -150,6 +150,14 @@ Usage:  check_quote_drift.py <path to a content/*.md file> [min quote length]
 """
 import re, sys, glob, os, unicodedata
 
+# An unrecognised option is an error, not something to ignore: a mistyped flag
+# used to be opened as a file and crash with a traceback.
+_unknown = [a for i, a in enumerate(sys.argv[1:]) if a.startswith("-")
+            and not (i == 0 and a in ("-h", "--help"))]
+if _unknown:
+    print(f"check_quote_drift.py: unrecognised option(s): {' '.join(_unknown)}\n"
+          "usage: check_quote_drift.py <content/*.md> [min quote length]", file=sys.stderr)
+    sys.exit(2)
 if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
     sys.exit(__doc__.strip().split("Usage:")[-1].strip()
              if "Usage:" in __doc__ else

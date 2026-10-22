@@ -35,8 +35,9 @@ Usage::
     python3 scripts/check_facts.py            # all in-scope documents
     python3 scripts/check_facts.py a.md b.md  # just these
     python3 scripts/check_facts.py --hedges   # advisory: exceptions the blocks omit
+    python3 scripts/check_facts.py --near     # headroom: line length, coaching count, HARD_MAX
 
-Exits non-zero if anything failed. Standard library only.
+Exits 1 if anything failed, 2 on an unknown option. Standard library only.
 """
 
 from __future__ import annotations
@@ -455,10 +456,55 @@ def report_near(paths, scope, margin: int = 6) -> None:
         print(f"  {left:>3} left  {doc_id}:{start}  {coaching}/{MAX_COACHING_FACTS} "
               f"coaching, {total} total{flag}")
 
+    # Blocks near HARD_MAX -- the TOTAL cap, `Rule:` facts included.
+    #
+    # Added 22 October 2026. The section above covers the cap that usually bites,
+    # but a block can sit at HARD_MAX with coaching headroom to spare, because
+    # `Rule:` facts are exempt from MAX_COACHING_FACTS and NOT from HARD_MAX. On such
+    # a block the section above prints nothing, and adding ANY line -- a mandatory
+    # `Rule:` citation included -- fails the gate with no prior warning. That is the
+    # eviction pressure this report exists to expose: the cheap way to land a new
+    # `Rule:` fact in a full block is to drop another one.
+    #
+    # WORKLIST, NOT A GATE. A block AT HARD_MAX is CONFORMING. No count is written
+    # here; run it.
+    total_rows = []
+    for path in paths:
+        doc_id = str(path.relative_to(CONTENT)).removesuffix(".md")
+        if doc_id not in scope:
+            continue
+        blocks, _, _ = parse(path)
+        for block in blocks:
+            body, start = block[2], block[3]
+            total = len([f for f in body if f.strip()])
+            left = HARD_MAX - total
+            if left <= 1:
+                total_rows.append((left, doc_id, start, total, coaching_count(body)))
+    total_rows.sort()
+    at_hard = sum(1 for r in total_rows if r[0] <= 0)
+    print()
+    print(f"check_facts --near: {len(total_rows)} block(s) within 1 fact of HARD_MAX "
+          f"({HARD_MAX} facts in total, `Rule:` INCLUDED), of which {at_hard} are AT it")
+    print("  (a block AT HARD_MAX is CONFORMING -- but ANY line added to it, a `Rule:` "
+          "fact included, will FAIL the gate)")
+    for left, doc_id, start, total, coaching in total_rows:
+        flag = "  <-- AT HARD_MAX, no room for any fact" if left <= 0 else ""
+        print(f"  {left:>3} left  {doc_id}:{start}  {total}/{HARD_MAX} total, "
+              f"{coaching} coaching{flag}")
+
 
 def main() -> int:
     scope = in_scope()
     flags = {"--hedges", "--near"}
+    # ⚠️ An unknown option used to be treated as a PATH and died in
+    # `relative_to()` with a ValueError traceback -- and piped (`| tail -1`) that
+    # read as a clean run. Reject it with exit 2, as argparse would. Valid
+    # invocations are untouched: the two flags and any number of file paths.
+    unknown = [a for a in sys.argv[1:] if a.startswith("-") and a not in flags]
+    if unknown:
+        print(f"check_facts: unknown option(s): {' '.join(unknown)}", file=sys.stderr)
+        print("usage: check_facts.py [--hedges | --near] [path.md ...]", file=sys.stderr)
+        return 2
     args = [a for a in sys.argv[1:] if a not in flags]
     if args:
         paths = [Path(a).resolve() for a in args]

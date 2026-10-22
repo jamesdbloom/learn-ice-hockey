@@ -54,6 +54,13 @@ defect that was repaired, and no checker in the list looks for it.
     "does not fire -- it inspects tails, and this is a head."
 """
 import pathlib, re, sys
+# An unrecognised option is an error, not something to ignore: a mistyped flag
+# used to run the default scan and exit 0, which reads as a clean pass.
+_unknown = [a for a in sys.argv[1:] if a.startswith("-")]
+if _unknown:
+    print(f"check_chunk_splits.py: unrecognised option(s): {' '.join(_unknown)}\n"
+          "usage: check_chunk_splits.py  (takes no options; run from the repo root)", file=sys.stderr)
+    sys.exit(2)
 sys.path.insert(0, "scripts")
 import md_to_speech as m
 

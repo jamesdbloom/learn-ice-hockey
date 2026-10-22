@@ -86,13 +86,27 @@ USAGE
 
 --style principles
 ------------------
-Every subcommand takes `--style conversation|principles` (default conversation). The
+Every subcommand takes `--style conversation|principles|basics` (default conversation). The
 Playing principles episodes (ElevenLabs Style B; project/podcast_two_formats.md) are a
 SEPARATE queue: their episodes are read from `site/src/data/podcast-principles.json`,
 their state lives in `.podcast_queue/state-principles.json`, and nothing is excluded —
 `getting_started` has a Conversation episode, not a Playing principles one. A `blocked`
 status there makes `build_podcast_audio.py --style principles` refuse that document.
   python3 scripts/podcast_queue.py status --style principles
+
+--style basics
+--------------
+The Basics topic episodes (owner, 20 Oct 2026) are keyed by TOPIC SLUG, not doc_id.
+Their order is the `planned` list in `site/src/data/podcast-basics.json` -- the same
+list the site and feed read -- their published episodes are that file's `episodes`
+(keyed by `slug`), and their state lives in `.podcast_queue/state-basics.json`. Every
+subcommand's DOC_ID argument is a slug here. A `blocked` status makes
+`build_podcast_audio.py --style basics` refuse that slug. The content hash for a topic
+covers its `sources` documents, in the order listed.
+Every planned topic already has an episode, so a plain build-queue adds nothing; to
+block a rejected topic, bring it in with --stale first:
+  python3 scripts/podcast_queue.py build-queue --style basics --stale skating --reason "..."
+  python3 scripts/podcast_queue.py set-status skating blocked --style basics --note "..."
 
 STATE FILE
 ----------
@@ -117,6 +131,9 @@ MANIFEST_CANDIDATES = [
 CONTENT_ROOT = REPO_ROOT / "content"
 QUEUE_DIR = REPO_ROOT / ".podcast_queue"
 STATE_PATH = QUEUE_DIR / "state.json"
+# The Basics plan: `planned` fixes topic order (the site reads the same list), `episodes`
+# holds the published ones. Keyed by slug, not doc_id.
+BASICS_PATH = REPO_ROOT / "site" / "src" / "data" / "podcast-basics.json"
 
 # Excluded from the queue by explicit instruction: already has an episode
 # (track 1) and needs no new one. Not excluded from the site's own page
@@ -150,10 +167,21 @@ def apply_style(style):
         MANIFEST_CANDIDATES = [REPO_ROOT / "site" / "src" / "data" / "podcast-principles.json"]
         STATE_PATH = QUEUE_DIR / "state-principles.json"
         EXCLUDED_DOC_IDS = set()
+    elif style == "basics":
+        MANIFEST_CANDIDATES = [BASICS_PATH]
+        STATE_PATH = QUEUE_DIR / "state-basics.json"
+        EXCLUDED_DOC_IDS = set()
+
+
+def _basics_planned():
+    return json.loads(BASICS_PATH.read_text()).get("planned") or []
 
 
 def load_structure_order():
-    """Return [(doc_id, track_number, section_title), ...] in canonical site order."""
+    """Return [(doc_id, track_number, section_title), ...] in canonical site order.
+    For --style basics the ids are topic slugs in `planned` order."""
+    if STYLE == "basics":
+        return [(p["slug"], i, "The Basics") for i, p in enumerate(_basics_planned(), 1)]
     data = json.loads(STRUCTURE_PATH.read_text())
     ordered = []
     track = 0
@@ -216,7 +244,8 @@ def load_manifest():
                 + ". Episode presence below may be stale.",
                 file=sys.stderr,
             )
-        return {e["doc_id"]: e for e in episodes if "doc_id" in e}, path
+        key = "slug" if STYLE == "basics" else "doc_id"
+        return {e[key]: e for e in episodes if key in e}, path
     return {}, None
 
 
@@ -225,6 +254,16 @@ def doc_path_for(doc_id):
 
 
 def content_hash(doc_id):
+    if STYLE == "basics":
+        # A topic draws on one to three documents; hash them in the order `planned` lists.
+        topic = next((p for p in _basics_planned() if p.get("slug") == doc_id), None)
+        paths = [doc_path_for(d) for d in (topic or {}).get("sources", [])]
+        if not paths or not all(p.exists() for p in paths):
+            return None
+        h = hashlib.sha256()
+        for p in paths:
+            h.update(p.read_bytes())
+        return h.hexdigest()
     p = doc_path_for(doc_id)
     if not p.exists():
         return None
@@ -250,7 +289,9 @@ def cmd_status(args):
     order = load_structure_order()
     manifest, manifest_path = load_manifest()
     state = load_state()
-    print(f"Canonical order: {STRUCTURE_PATH.relative_to(REPO_ROOT)} ({len(order)} documents)")
+    order_src = BASICS_PATH if STYLE == "basics" else STRUCTURE_PATH
+    print(f"Canonical order: {order_src.relative_to(REPO_ROOT)} ({len(order)} "
+          f"{'topics' if STYLE == 'basics' else 'documents'})")
     print(f"Manifest: {manifest_path.relative_to(REPO_ROOT) if manifest_path else '(none found)'} "
           f"({len(manifest)} episodes)")
     print(f"Format: {STYLE}")
@@ -348,7 +389,7 @@ def cmd_build_queue(args):
     if skipped_existing:
         print(f"Already tracked, left alone: {len(skipped_existing)}")
     if skipped_unknown_stale:
-        print(f"⚠️  --stale named doc_id(s) not found in structure.json, ignored: {skipped_unknown_stale}")
+        print(f"⚠️  --stale named doc_id(s) not found in structure.json (or `planned`, for basics), ignored: {skipped_unknown_stale}")
     if not added and not unblocked:
         print("Nothing new to queue. Documents with no recorded episode and no "
               "--stale flag are the only automatic additions — pass --stale "
@@ -383,7 +424,7 @@ def cmd_next_batch(args):
         print(f"  (oldest queue entry: {oldest} — if that predates content changes, "
               f"rebuild deliberately; this command does not)")
     if unknown:
-        print(f"⚠️  queued doc_id(s) not in structure.json (renamed or removed?): {unknown}")
+        print(f"⚠️  queued doc_id(s) not in structure.json (or `planned`, for basics) (renamed or removed?): {unknown}")
     if not batch:
         print("  (nothing queued — run build-queue first, or everything queued is already in progress)")
 
@@ -422,7 +463,9 @@ def cmd_record_hash(args):
         sys.exit(f"error: {args.doc_id!r} is not in the queue")
     h = content_hash(args.doc_id)
     if h is None:
-        sys.exit(f"error: no content file found for {args.doc_id!r} at {doc_path_for(args.doc_id)}")
+        where = ("a planned topic whose `sources` all exist" if STYLE == "basics"
+                 else doc_path_for(args.doc_id))
+        sys.exit(f"error: no content file found for {args.doc_id!r} at {where}")
     state["items"][args.doc_id]["content_hash_at_accept"] = h
     state["items"][args.doc_id]["hash_recorded_at"] = now_iso()
     save_state(state)
@@ -434,9 +477,12 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     common = argparse.ArgumentParser(add_help=False)
-    common.add_argument("--style", choices=("conversation", "principles"), default="conversation",
+    common.add_argument("--style", choices=("conversation", "principles", "basics"),
+                        default="conversation",
                         help="which format's queue (default conversation). principles: "
-                             "podcast-principles.json and .podcast_queue/state-principles.json")
+                             "podcast-principles.json and .podcast_queue/state-principles.json. "
+                             "basics: topic slugs from podcast-basics.json `planned`, state in "
+                             ".podcast_queue/state-basics.json")
 
     sub.add_parser("status", parents=[common], help="Show every document's episode/queue state.")
 

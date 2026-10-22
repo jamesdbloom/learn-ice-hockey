@@ -76,6 +76,13 @@ Known blind spots, stated so they are not rediscovered:
   - It only reads COMMENTS. Caption text is checked by nothing here.
 """
 import json, re, sys, unicodedata
+# An unrecognised option is an error, not something to ignore: a mistyped flag
+# used to run the default scan and exit 0, which reads as a clean pass.
+_unknown = [a for a in sys.argv[1:] if a.startswith("-")]
+if _unknown:
+    print(f"check_diagram_quotes.py: unrecognised option(s): {' '.join(_unknown)}\n"
+          "usage: check_diagram_quotes.py  (takes no options)", file=sys.stderr)
+    sys.exit(2)
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[0]

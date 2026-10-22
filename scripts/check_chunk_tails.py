@@ -295,6 +295,13 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    # An unrecognised option is an error, not something to ignore: a mistyped flag
+    # used to run the default scan and exit 0, which reads as a clean pass.
+    _unknown = [a for a in sys.argv[1:] if a.startswith("-") and a not in ('--prose', '--self-test', )]
+    if _unknown:
+        print(f"check_chunk_tails.py: unrecognised option(s): {' '.join(_unknown)}\n"
+              "usage: check_chunk_tails.py [--prose | --self-test]", file=sys.stderr)
+        sys.exit(2)
     if "--self-test" in sys.argv:
         raise SystemExit(self_test())
     raise SystemExit(main())

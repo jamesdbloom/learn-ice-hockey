@@ -62,6 +62,7 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 ## Content: safety, readability and wording
 
+- **special_teams and siblings:** check for the shorthanded icing exemption stated for "NHL and IIHF" without the PWHL (83.6 has it).
 - **Repetition pass:** the readability waves only split and shortened what check_readability flagged. No
   page has had a pass for repetition and throat-clearing.
 - **Spoken "Important." runs of four:** six in body_contact (two new in SG19: kneeing/clipping and
@@ -89,23 +90,13 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 ## Renderer and podcast tooling
 
-- **Lower-case sentence starts:** about 400 spoken sentences start lower case, nearly all list numerals
-  and headings ("two on two.", "one. A pinch…"). Capitalise them in md_to_speech. Cosmetic.
-- **Basics queue state:** build_podcast_audio.py reads `.podcast_queue/state-basics.json` to refuse blocked
-  slugs, but nothing writes it. Add `--style basics` to podcast_queue.py, or drop the dead check.
-- **upload_podcast_audio.sh comment** ("Deploy the site data first") contradicts the documented order in
-  build_podcast_audio.py. Fix the comment only.
+- **🇬🇧 mid-sentence** in special_teams and body_contact ("— 🇬🇧 so…") now renders "For British readers. So…"; move the flag to sentence start in content.
+- **md_to_speech `_rule_number_opens_sentence`** treats a possessive "IIHF's." as the letter "s.", so a rule number after a possessive is not capitalised (fixed only inside the new capitals pass).
+- **on_ice_communication KT13/CM** omit the NHL/PWHL major-penalty icing exception (body carries it); optional one clause in KT13.
 - **synthesize_style_b.py has no `--doc-id`:** only matters if production is tracked by doc id. Low.
 
 ## Checkers (scripts/ — change between waves, never during one)
 
-- **Unknown flags:** 9 scripts ignore an unknown flag and exit 0 (absolutes, caption_negations,
-  chunk_splits, chunk_tails, diagram_quotes, geometry, marker_pairs, plan_rows, secrets) and 3 crash with
-  exit 1 (facts, leaders, quote_drift). Give them argparse so they exit 2. Several are gates.
-- **check_facts --near:** no warning for blocks at HARD_MAX 14 (42 blocks today; only 4 are listed).
-- **check_readability:** joins `> - ` list items inside a blockquote into one "sentence" (a false 70-word
-  hit in breakouts).
-- **check_callout_flow.classify():** files any `**`-opening line as "own paragraph" wherever its ⚠ sits.
 - **check_quote_drift:** no pass that keeps whitespace ("website" vs "web site" scores clean).
 - **check_pointers:** cannot see a pointer at another document's unvoiced layer.
 

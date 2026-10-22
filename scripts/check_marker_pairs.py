@@ -200,6 +200,19 @@ def line_of(text, unit):
 
 def main(argv):
     base = "HEAD"
+    # An unrecognised option is an error, not something to ignore: a mistyped flag
+    # was taken as a file path and reported "0 LOST", which reads as a clean pass.
+    rest = argv[2:] if argv[:1] == ["--base"] else argv
+    usage = "usage: check_marker_pairs.py [--base REV] [content/....md ...]"
+    if argv[:1] == ["--base"] and (len(argv) < 2 or argv[1].startswith("-")):
+        print(f"check_marker_pairs.py: --base needs a revision\n{usage}", file=sys.stderr)
+        sys.exit(2)
+    unknown = [a for i, a in enumerate(rest) if a.startswith("-")
+               and not (i == 0 and a in ("-h", "--help"))]
+    if unknown:
+        print(f"check_marker_pairs.py: unrecognised option(s): {' '.join(unknown)}\n{usage}",
+              file=sys.stderr)
+        sys.exit(2)
     if argv[:1] == ["--base"]:
         base, argv = argv[1], argv[2:]
     root = subprocess.run(["git", "rev-parse", "--show-toplevel"],

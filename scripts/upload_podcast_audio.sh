@@ -43,9 +43,12 @@
 #     Apple validates <enclosure length>, so the feed must declare the file we upload;
 #   - every `audio` is a plain ASCII path under /audio/ ending .m4a, and no two
 #     episodes share one.
-# ⚠️  It compares against the LOCAL podcast.json. The feed in production serves the
-#     DEPLOYED one; if the local file has uncommitted or undeployed changes, the paths
-#     checked here are not the paths production serves. Deploy the site data first.
+# ⚠️  It compares against the LOCAL podcast.json, and that is the right file: the order is
+#     encode -> upload (this script) -> commit the JSON -> push (build_podcast_audio.py's
+#     ORDER notes), so the local JSON is the one about to be deployed. Every path is
+#     content-hashed, so uploading first only adds new keys the deployed feed does not yet
+#     reference. Do NOT deploy the site data first — a feed naming audio not yet uploaded
+#     serves broken enclosures.
 #
 # CACHING. Audio is immutable — a re-encode is a new file under a NEW KEY, and the
 # feed's guid is deliberately NOT derived from the enclosure URL, so a changed

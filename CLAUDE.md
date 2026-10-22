@@ -1623,9 +1623,14 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     ⚠️ AND IT WAS FOUND BY READING `remark-corpus.mjs`, NOT THIS TOOL: the docstring
                     claimed to mirror the plugin "exactly" and had done since it was written.
                     A COMMENT ASSERTING FIDELITY TO ANOTHER FILE IS NOT FIDELITY TO IT.
-                    ⚠⚠ THIS MATTERS BECAUSE THE DEFAULT AND `--stacks` OVER-COUNT BY CONSTRUCTION:
-                    `classify()` files ANY paragraph OPENING `**bold**` as "own paragraph" wherever its
-                    marker sits. Measured: a coordinator briefed "ELEVEN amber panels in a row" in
+                    ✅ FIXED 22 Oct 2026: `classify()` now files a `**`-opening line as "own paragraph"
+                    only when its text starts with ⚠️ once the emphasis is stripped, so a move-2 repair
+                    no longer reappears in the default or `--stacks` counts (default fell 848 → 32 with no
+                    content change). FIGURES FROM BEFORE THAT DATE COUNT A DIFFERENT POPULATION. The
+                    history below is kept as the record of why.
+                    ⚠⚠ THIS MATTERED BECAUSE THE DEFAULT AND `--stacks` OVER-COUNTED BY CONSTRUCTION:
+                    `classify()` filed ANY paragraph OPENING `**bold**` as "own paragraph" wherever its
+                    marker sat. Measured: a coordinator briefed "ELEVEN amber panels in a row" in
                     `rules_primer.md` on the strength of `--stacks`; the agent checked with `--panels` and
                     found THREE, with prose between two of them. ⚠️ THE OTHER EIGHT WERE ALREADY REPAIRED
                     — the marker had been moved mid-paragraph in an earlier round, which is exactly the

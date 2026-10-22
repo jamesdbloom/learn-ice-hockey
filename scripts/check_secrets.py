@@ -210,4 +210,11 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    # An unrecognised option is an error, not something to ignore: a mistyped flag
+    # used to run the default scan and exit 0, which reads as a clean pass.
+    _unknown = [a for a in sys.argv[1:] if a.startswith("-") and a not in ('--quiet', )]
+    if _unknown:
+        print(f"check_secrets.py: unrecognised option(s): {' '.join(_unknown)}\n"
+              "usage: check_secrets.py [--quiet]", file=sys.stderr)
+        sys.exit(2)
     sys.exit(main())

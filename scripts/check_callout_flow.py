@@ -64,8 +64,14 @@ neither is obvious:
       FURNITURE. Judge it with `--panels --file <path>`, never with the default count.
   (b) In PROSE, move 2's count benefit was produced by the `startswith(("-","*"))` bug
       fixed above -- the `**Opener.**` paragraph dropped out because it was misfiled.
-      NOW THAT THE BUG IS FIXED, EVERY MOVE-2 REPAIR REAPPEARS IN THIS CENSUS. The AUDIO
-      benefit is real and permanent; the COUNT benefit was an artefact. Do not bank it.
+      Once that bug was fixed, every move-2 repair reappeared in this census, because
+      `classify()` then filed ANY `**`-opening line as "own paragraph" wherever its
+      marker sat. ⚠️ THAT SECOND MISFILING WAS FIXED 22 October 2026: an emphasis-opening
+      line is now "own paragraph" only when the marker LEADS its flattened text, and is
+      otherwise "inline mid-paragraph". The default count fell from 848 to 32 on the
+      fix with NO corpus change, so EVERY DEFAULT/`--stacks`/`--by-section` FIGURE
+      MEASURED BEFORE THAT DATE COUNTED A DIFFERENT POPULATION -- do not compare across
+      it. `--panels` and `--markers` were byte-identical before and after.
 
 ⚠️ THE AUDIO IS THE RELIABLE MEASUREMENT, NOT THIS TOOL. `md_to_speech.py:2778` sets
 `important = "⚠" in text` PER PARAGRAPH and `:2784` prefixes a spoken "Important. "; the
@@ -108,7 +114,9 @@ PRE = "(before the first ## — Key focus / Overview)"
 #                                               says it does not. WRONG.
 #   `**Bold lead.** ⚠️ **Hazard clause.**`   -> marker is not first after
 #                                               flattening -> INLINE, no panel.
-#                                               `classify()` says "own paragraph".
+#                                               `classify()` said "own paragraph"
+#                                               until 22 Oct 2026; it now says
+#                                               "inline mid-paragraph".
 #
 # Both misreadings were made in one session, in opposite directions. An agent's
 # first census used a raw-line regex and reported the worst-shaped page of its four
@@ -223,8 +231,18 @@ def classify(stripped):
     if stripped.startswith("|"):
         return "table cell"
     # Emphasis, not a bullet: `**Bold.**` / `*Italic*` open a paragraph.
+    #
+    # ⚠️ BUT AN EMPHASIS-OPENING LINE IS AN "OWN PARAGRAPH" CALLOUT ONLY WHEN THE
+    # MARKER LEADS IT. Until 22 October 2026 this branch filed EVERY `**`-opening line
+    # as "own paragraph" wherever its ⚠️ sat, so `**Bold lead.** ... ⚠️ **Hazard.**`
+    # -- a move-2 repair, marker mid-paragraph -- was counted as a flow-breaking
+    # callout forever (limit (b) in the module docstring). The test is the marker's
+    # position after the emphasis is flattened away, the same flattening
+    # `renders_as_panel()` uses, so `**⚠️ Text.**` still counts as its own callout.
     if stripped.startswith(("**", "__")) or re.match(r"^\*[^\s*]", stripped):
-        return "own paragraph"
+        if flattened(stripped).lstrip().startswith(MARKER):
+            return "own paragraph"
+        return "inline mid-paragraph"
     if re.match(r"^[-*+]\s", stripped) or re.match(r"^\d+\.\s", stripped):
         return "list item"
     if re.match(r"^[A-Z][a-z]+:", stripped):

@@ -2699,12 +2699,129 @@ def to_speech(text: str, counter: Counter, at_start: bool = False) -> list[Token
     """
     text = strip_inline_markdown(text, counter)
     text = apply_lexicon(text, counter)
+    source_starts = frozenset(_SOURCE_SENTENCE_START_RE.findall(text))
     tokens: list[Token] = raw(text)
     for rule in NOTATION_RULES:
         tokens = apply_rule(tokens, rule, counter, at_start)
     tokens = apply_symbols(tokens, counter)
     tokens = normalise_whitespace(tokens)
+    tokens = capitalise_sentence_starts([t for t in tokens if t.text], counter, at_start,
+                                        source_starts)
     return [t for t in tokens if t.text]
+
+
+#: Words the author wrote in lower case at a sentence start (or the unit start).
+_SOURCE_SENTENCE_START_RE = re.compile(
+    r"(?:^|[.!?][\"'’”)\]]*\s+)[\s(\[{\"'“‘⚠❗🚫️*_]*([a-z][a-z'’-]*)"
+)
+#: A lower-case roman numeral before a full stop is a list or clause marker
+#: ("i. or ii. lists"), not the end of a sentence.
+_ROMAN_LOWER_RE = re.compile(r"(?:^|[\s(\[\"“'‘])[ivx]+\.$")
+#: A capitalised abbreviation, matched case-sensitively so the verb "sit." at the
+#: end of a sentence still ends it: "Casebook 613 Sit. 8" is ONE sentence.
+_CASED_NON_TERMINAL_RE = re.compile(r"(?:^|[\s(\[\"“'‘])Sit\.$")
+
+
+def _sentence_opens_at(full: str, pos: int, at_start: bool, source_ok: bool = False) -> bool:
+    """True when the lower-case letter at `full[pos]` begins a spoken sentence.
+
+    Uses `_rule_number_opens_sentence` (abbreviations, single letters, clause
+    letters) and adds what a WORD needs and a rule number did not: an ellipsis
+    inside a quotation ("any attempt... to make") does not end a sentence; nor
+    does a roman list marker or "Sit.". Two cases are AMBIGUOUS for source words
+    and are decided only for renderer-produced text (`source_ok`): a quoted
+    exclamation carried inside a running sentence ('"Outlet!" means I am your
+    exit'), and a full stop inside an open quotation ('"Rule 63.2. talks about"').
+    A numeral the renderer produced there ('"…recover? 2. Was the contact…"') is a
+    sentence start; a word the author wrote in lower case is left as written.
+    """
+    # Openers stuck to the word, then the gap. A quotation mark is both an opener
+    # and a closer, so it is taken as an opener only BEFORE the gap: in
+    # '"Outlet!" means' the mark before the space closes the quotation.
+    j = pos
+    while j > 0 and full[j - 1] in _SENTENCE_LEAD_CHARS and not full[j - 1].isspace():
+        j -= 1
+    if j and not full[j - 1].isspace() and full[j - 1] not in "⚠❗🚫️":
+        return False
+    while j > 0 and (full[j - 1].isspace() or full[j - 1] in "⚠❗🚫️"):
+        j -= 1
+    if j == 0:
+        return at_start
+    core = full[:j]
+    stripped = core.rstrip(SENTENCE_CLOSERS)
+    if not stripped or stripped[-1] not in ".!?":
+        return False
+    if stripped.endswith(".."):
+        return False
+    if not source_ok and (
+        any(c in "\"'’”" for c in core[len(stripped):])
+        or full.count('"', 0, pos) % 2
+        or full.count("“", 0, pos) > full.count("”", 0, pos)
+    ):
+        return False
+    tail = stripped[-40:]
+    if _ROMAN_LOWER_RE.search(tail) or _CASED_NON_TERMINAL_RE.search(tail):
+        return False
+    if re.search(r"(?:^|\s)(?:et )?al\.$", tail):
+        return False          # "Lignell et al. (2018)", "Delrue et al. vignette"
+    if re.search(r"\w['’]s\.$", tail):
+        return True           # a possessive ("the IIHF's."), not the letter "s."
+    return _rule_number_opens_sentence(full[max(0, j - 200):pos], at_start)
+
+
+def capitalise_sentence_starts(tokens: list[Token], counter: Counter,
+                               at_start: bool = False,
+                               source_starts: frozenset = frozenset()) -> list[Token]:
+    """Capitalise the first letter of every spoken sentence in one text unit.
+
+    Number and notation expanders emit lower case, which is right mid-sentence
+    and wrong at a sentence start: a heading "1. Rink dimensions" was voiced as
+    "one. Rink dimensions", a formation opening a sentence as "two one two, …".
+    Only the CASE of one letter changes -- never a word, a token boundary or any
+    markup -- so chunking, breaks and billed characters are untouched.
+
+    Renderer-produced text (TEXT tokens) is capitalised wherever a sentence
+    opens. Source text (RAW tokens) is capitalised only when the word was NOT
+    written in lower case at a sentence start in the source (`source_starts`):
+    "½ inch" and "🇬🇧 the IIHF" are, "after a faceoff violation;" is not.
+    """
+    full = "".join(t.text for t in tokens if t.kind != SSML)
+    if not full:
+        return tokens
+    out: list[Token] = []
+    offset = 0
+    for token in tokens:
+        if token.kind == SSML:
+            out.append(token)
+            continue
+        text = token.text
+        chars = list(text)
+        for index, char in enumerate(text):
+            if not ("a" <= char <= "z"):
+                continue
+            pos = offset + index
+            if pos and full[pos - 1] not in _SENTENCE_LEAD_CHARS:
+                continue
+            if not _sentence_opens_at(full, pos, at_start, token.kind == TEXT):
+                continue
+            # A RAW word the AUTHOR wrote in lower case at a sentence start is
+            # left as written: a bullet continuing a lead-in colon ("after a
+            # faceoff violation;"), a linked title ("…Playing Under? settles
+            # it"), a run of questions. Only words a symbol produced ("§" ->
+            # "section", "🇬🇧" -> "For British readers. ") are capitalised.
+            if token.kind == RAW:
+                word = re.match(r"[a-z][a-z'’-]*", full[pos:])
+                if word and word.group(0) in source_starts:
+                    continue
+            # A one-letter symbol ("g = 0.41", Hedges' g) keeps its case.
+            word = re.match(r"[A-Za-z]+", full[pos:])
+            if word and len(word.group(0)) == 1 and word.group(0) != "a":
+                continue
+            chars[index] = char.upper()
+            counter["sentence-start-capital"] += 1
+        out.append(Token(token.kind, "".join(chars)))
+        offset += len(text)
+    return out
 
 
 def find_residue(tokens: Sequence[Token]) -> list[str]:
@@ -4509,7 +4626,7 @@ def self_test() -> int:
         # Jr/Sr, CAN/CSA and the course-number idiom.
         ("Fine. U10 is cross-ice", "Fine. Under ten is cross-ice"),
         ("Then say. (§U12 is a different game)",
-         "Then say. (section under twelve is a different game)"),
+         "Then say. (Section under twelve is a different game)"),
         ("CAN/CSA Z262.2", "CAN slash CSA Z two hundred and sixty-two point two"),
         ("players at U13 and below", "players at under thirteen and below"),
         ("Rule 10.1(a), clause v, is blunter",
@@ -4546,9 +4663,9 @@ def self_test() -> int:
         ("\u25b2 \u25b3 Defender / Player",
          "filled triangle open triangle Defender or Player"),
         ("🇬🇧 Neck laceration protection is mandatory",
-         "For British readers, Neck laceration protection is mandatory"),
+         "For British readers. Neck laceration protection is mandatory"),
         ("⚠️ 🇬🇧 The IIHF says the opposite",
-         "For British readers, The IIHF says the opposite"),
+         "For British readers. The IIHF says the opposite"),
         ("a fixed fee of £5.00GBP", "a fixed fee of five pounds"),
         ("the £5 and £20 deductions",
          "the five pounds and twenty pounds deductions"),
@@ -4757,8 +4874,27 @@ def self_test() -> int:
         ("under 601(a) and 49(c)", True, "under six hundred and one, clause a and forty-nine, clause c"),
         ("its icing signal (p. 82) mentions", False, "its icing signal (p. eighty-two) mentions"),
         ("e.g. 56.1 says", False, "for example fifty-six point one says"),
-        ("as printed. 50 covers head contact", False, "as printed. fifty covers head contact"),
-        ("the lines. 26 metres is the minimum", False, "the lines. twenty-six metres is the minimum"),
+        # Since 22 Oct 2026 every spoken sentence start is capitalised, so a quantity
+        # opening a sentence takes a capital too (capitalise_sentence_starts).
+        ("as printed. 50 covers head contact", False, "as printed. Fifty covers head contact"),
+        ("the lines. 26 metres is the minimum", False, "the lines. Twenty-six metres is the minimum"),
+        ("1. Rink dimensions", True, "One. Rink dimensions"),
+        ("2-1-2 or 1-2-2", True, "Two one two or one two two"),
+        ("Casebook 613 Sit. 8 says", False, "Casebook six hundred and thirteen Sit. eight says"),
+        ("let a rebound sit. 4 players", False, "let a rebound sit. Four players"),
+        ('"any attempt... 2 changes"', False, '"any attempt... two changes"'),
+        ('"Outlet!" means go', True, '"Outlet!" means go'),
+        ("carries i. or ii. lists", False, "carries i. or ii. lists"),
+        ("after a faceoff violation;", True, "after a faceoff violation;"),
+        ("½ inch is the default", True, "A half inch is the default"),
+        ("from Lignell et al. (2018) and", False, "from Lignell et al. (twenty eighteen) and"),
+        ("Are You Playing Under? settles it", False, "Are You Playing Under? settles it"),
+        ("The delay. g = 0.41 here", False, "The delay. g equals nought point four one here"),
+        ("rule, and 🇬🇧 the IIHF says", False, "rule, and For British readers. The IIHF says"),
+        ('"recover? 2. Was it"', False, '"recover? Two. Was it"'),
+        ('"Rule 63.2. talks about"', False, '"Rule sixty-three point two. talks about"'),
+        ("differs from the IIHF's. (§Overtime)", False,
+         "differs from the IIHF's. (Section Overtime)"),
         ("Rule 8.3(a). 8.3(b) is a major", False,
          "Rule eight point three, clause a. Eight point three, clause b is a major"),
     )

@@ -268,9 +268,9 @@ picture.
    bars stop there under control, and a backward-skating route simply ends where it is
    drawn.
 2. **A circle is a forward, a triangle a defenceman, a bare G the goalie; open is
-   your team, solid the opposition.** A winger is a circle backchecking too. Reading fill
-   as the team is this guide's own convention, and ⚠️ **the IIHF's key uses the two
-   shapes for the two teams instead**, so do not carry this reading onto its diagrams.
+   your team, solid the opposition.** A backchecking winger is still a circle. Fill as
+   the team is this guide's convention, and ⚠️ **the IIHF's key uses the two shapes for
+   the two teams instead**, so do not carry it onto IIHF diagrams.
 3. **An X is a pylon — a practice cone — and never a player.**
 4. **Solid arrow, forward skating. Long smooth wave, skate and stickhandle. Overlapping
    flattened arches, skating backwards. Sharp zigzag, backward crossovers. Dashed arrow,
@@ -288,11 +288,11 @@ picture.
    to skate to.**
 9. **Where a caption says a detail is a coaching choice, it is** — ask which version
    your team runs.
-10. **On anyone else's diagram, check the key first; on your own team, the coach's
-   whiteboard wins.** Ask about any mark you do not know before the drill starts. No key
-   settles whether you may hit — your age group, league and book do, and until you
-   know, do not hit anyone. Where checking is banned, a hit is a penalty and a hard one
-   can get you thrown out of the game.
+10. **On anyone else's diagram, check the key; on your team, the coach's whiteboard
+   wins**, so ask about any new mark before the drill. No key says whether
+   you may hit — your age group, league and book do; until you know, hit nobody. Where
+   checking is banned, a hit is a penalty and a hard one can get you thrown out of the
+   game.
 
 ---
 

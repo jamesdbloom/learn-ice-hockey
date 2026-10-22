@@ -20,7 +20,9 @@ What it counts, and what it skips:
   * sentences  = split on . ! ? followed by space and a capital or quote
   * long_par   = paragraphs over 1,200 characters (programme item 1)
   * max_par    = the longest prose paragraph, in characters
-  * kt_long    = Key Takeaways over 60 words; kt_max = the longest one
+  * kt_long    = Key Takeaways over 60 words; kt_max = the longest one. A takeaway
+                 is an item of the FIRST list under the heading, continuation lines
+                 included; later lists (disclosure notes) are prose.
   * rule_refs  = rule-number citations in prose, e.g. 7.5(c), 602(a), Rule 43 (item 5)
   * markers    = ⚠ glyphs in prose (item 6)
   * hard       = share of words of 4+ syllables (a rough plain-words signal)
@@ -46,6 +48,9 @@ SENT_RE = re.compile(
     r"(?=[\"'\u201c\u2018*_(\[\s\u26a0\u2757\U0001F6AB\uFE0F\U0001F1E6-\U0001F1FF]*[A-Z0-9])"
 )
 VOWELS = re.compile(r"[aeiouy]+")
+ITEM_RE = re.compile(r"^\s*(\d+[.)]|[-*])\s+")       # any list item, any depth
+TOP_ITEM_RE = re.compile(r"^(\d+[.)]|[-*])\s+")       # a top-level list item
+BQ_RE = re.compile(r"^\s*(?:>\s?)+")
 
 
 def syllables(word):
@@ -75,7 +80,7 @@ def split_layers(text):
     lines = lines[:cut]
     prose, kts = [], []
     in_facts = False
-    in_kt = False
+    kt_state = None   # None, or "before" / "list" / "done" under a Key Takeaways heading
     buf = []
 
     def flush():
@@ -94,7 +99,7 @@ def split_layers(text):
             continue
         if l.startswith("#"):
             flush()
-            in_kt = bool(re.search(r"key takeaways?", l, re.I))
+            kt_state = "before" if re.search(r"key takeaways?", l, re.I) else None
             continue
         if l.strip().startswith("|"):
             flush()
@@ -113,11 +118,32 @@ def split_layers(text):
         if re.match(r"^\s*>\s*\*\*Related:?\*\*", l):
             flush()
             continue
-        if in_kt and re.match(r"^\s*(\d+[.)]|[-*])\s+", l):
+        # The Key Takeaways are the FIRST LIST after the heading, and nothing else.
+        # Until 22 Oct 2026 every list item anywhere under the heading counted as a
+        # takeaway, so the disclosure bullets under "What is measured here" in
+        # scanning_and_anticipation.md scored as eight more KTs. The list ends at
+        # the first unindented line that is not a list item (`---`, a bold lead
+        # paragraph); a line before the list starts (an italic disclosure) is prose
+        # and does not end it. An INDENTED line inside the list is the item's
+        # continuation and belongs to the takeaway, not to prose -- it was being
+        # counted as prose and the takeaway scored on its first line only.
+        if kt_state == "list":
+            if TOP_ITEM_RE.match(l):
+                kts.append(strip_md(TOP_ITEM_RE.sub("", l)))
+                continue
+            if l.startswith((" ", "\t")) and kts:
+                kts[-1] = (kts[-1] + " " + strip_md(l)).strip()
+                continue
+            kt_state = "done"
+        elif kt_state == "before" and TOP_ITEM_RE.match(l):
             flush()
-            kts.append(strip_md(re.sub(r"^\s*(\d+[.)]|[-*])\s+", "", l)))
+            kt_state = "list"
+            kts.append(strip_md(TOP_ITEM_RE.sub("", l)))
             continue
-        if re.match(r"^\s*(\d+[.)]|[-*])\s+", l):
+        # A list item opens its own unit, INSIDE A BLOCKQUOTE TOO. `> - a` / `> - b`
+        # was joined into one paragraph and one "sentence" (a false 70-word hit in
+        # systems/breakouts.md, 22 Oct 2026).
+        if ITEM_RE.match(BQ_RE.sub("", l)):
             flush()
         buf.append(l)
     flush()
