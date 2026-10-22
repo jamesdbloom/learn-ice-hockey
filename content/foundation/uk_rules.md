@@ -629,7 +629,7 @@ document, that is named too.*
 
 8. **Goalies: play as though the trapezoid binds.** England Ice Hockey's suspension is unsettled in scope and standing, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goalie may come out for a dump-in.** Ask your league which applies.
 
-9. **Play your stick to the stricter IIHF edition: the Elite League plays 2026/27; elsewhere, ask which applies.** A high stick is a minor, a reckless one can be a major with an ejection, an injuring one a double minor, under 2026/27 even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
+9. **Keep your stick below every opponent's shoulders in either IIHF edition. The Elite League plays 2026/27; elsewhere, ask which.** A high stick is a minor, a reckless one can be a major with an ejection, an injuring one a double minor, under 2026/27 even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
 
 10. **Skaters: drop a broken stick the moment it breaks.** Playing on with it is a minor, and under the In-House Rules so is skating with it anywhere on the ice. Take a replacement handed to you, or pick up your own or a teammate's unbroken stick — never one thrown to you, and never an opponent's or a goalie's.
 

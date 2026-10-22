@@ -1336,9 +1336,10 @@ content/            The corpus. 39 documents in eight DIRECTORIES. The product.
                     Foundation, so the nav and the home page show seven. check_counts.py
                     counts DIRECTORIES and will keep saying eight — do not "fix" either
                     number to match the other.
-project/plans/      **The plan. `OPEN_ITEMS.md` is the only one.** It holds remaining work
-                    plus the standing guidance for doing it — method notes, environment
-                    facts, gate conditions. **No completed items:** when work closes it
+project/plans/      **The plan. `OPEN_ITEMS.md` is the only one.** It holds ONLY the list
+                    of remaining work (owner, 22 Oct 2026). The standing guidance for doing
+                    it — method notes, book facts, environment facts — is in
+                    `project/working_guidance.md`. **No completed items:** when work closes it
                     moves out to a review record.
                     ⚠️ ONE EXCEPTION, and it is the owner's: `PODCAST_MANUAL_STEPS.md` — the
                     logins, vendor signups, ear test and listening pass only a human can do.

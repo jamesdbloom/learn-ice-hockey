@@ -732,7 +732,7 @@ the right one.*
 2. **Judge support distance by time.** If a pass released now would beat the defender to you, you are in range. Start at two to three stick lengths, tighter under pressure. That is a rule of thumb — no governing body has been found to set one — so let your coach adjust it.
 3. **Take the angle that is missing — behind, level or ahead of the puck.** You need all three at once. In your own end, the lateral pass goes behind your net, never across the slot.
 4. **Before you go below the puck, know who is above it.** "Above" means goal-side of the puck, in every zone. Who stays back is a system choice; that somebody does is not, unless your bench gives it up on purpose.
-5. **To help a teammate in a battle, usually move away; defending, layer rather than converge.** A called double-team is the exception, so ask your coach when. If you do go to the wall, **never turn your back to anyone coming at you, never duck, and never push or hit the opponent from behind** — go for the puck at their feet.
+5. **To help a teammate in a battle, usually move away; defending, layer rather than converge.** A called double-team is the exception; ask your coach when. If you do go to the wall, **never turn your back to anyone coming at you, never duck, and never push or hit the opponent from behind** — go for the puck at their feet.
 6. **Wingers stay wide.** The middle only exists while someone holds the outside, and drifting in deletes it.
 7. **Skate to the space, not to the puck.** If you are not closest and your system has not sent you in, your job is the space.
 8. **Arrive late with speed.** Puck first, feet second — except in your own zone, where the carrier needs the outlet now.

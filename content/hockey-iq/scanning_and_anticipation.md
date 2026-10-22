@@ -625,10 +625,12 @@ document, that is named too.*
 
 **What is measured here, and what is not.**
 
-- **The hockey scanning figures** come from **Berg et al. (2025)**, a peer-reviewed, open-access study of 2,545 puck receptions by 88 SHL and SDHL professionals: 1.48 scans per five seconds, at least one scan in 61% of receptions, and 78.8% against 70.1% action success on criteria formulated with the Swedish Ice Hockey Association. Three figures are arithmetic on Berg's 1.48 and 61%, not printed in the paper, and are marked where they appear: 0.30 scans a second, one scan per 3.4 seconds, and 39% of receptions with no scan. The football figures are corroboration only and labelled as football throughout.
+- **The hockey scanning figures** come from **Berg et al. (2025)**, a peer-reviewed, open-access study of 2,545 puck receptions by 88 SHL and SDHL professionals: 1.48 scans per five seconds, at least one scan in 61% of receptions, and 78.8% against 70.1% action success on criteria formulated with the Swedish Ice Hockey Association.
+- **Three figures are arithmetic** on Berg's 1.48 and 61%, not printed in the paper, and are marked where they appear: 0.30 scans a second, one scan per 3.4 seconds, and 39% of receptions with no scan. The football figures are corroboration only and labelled as football throughout.
 - **No duration is quoted for a hockey scan.** Berg reports only a 0.2-second minimum for a head turn to count, and the Aksum study's 242 milliseconds is an average *fixation*, a different thing.
 - **The "every one to two seconds" coaching benchmark** is contradicted by Berg's measured professional rate — with the caveat that Berg measured only the window before a reception, while the benchmark describes all off-puck play.
-- **The claim that elite players anchor on the puck carrier** rests on the Aksum eye-tracking study of **five male football players aged 17 to 23, watching a ball carrier**, and is labelled as football everywhere it appears, including Key Takeaway 5. Hockey's on-ice gaze research (Martell and Vickers, 2004) measures the *timing* of gaze, not where looking time goes, so it does not settle the question.
+- **The claim that elite players anchor on the puck carrier** rests on the Aksum eye-tracking study of **five male football players aged 17 to 23, watching a ball carrier**, and is labelled as football everywhere it appears.
+- **Hockey's on-ice gaze research** (Martell and Vickers, 2004) measures the *timing* of gaze, not where looking time goes, so it does not settle the anchor question.
 - **That hockey below the professional level rewards speed of decision over quality** is coaching consensus, not a measured finding.
 - **Precise figures for shooter tells** — degrees of shoulder rotation, centimetres of weight shift, milliseconds of goalie advantage — circulate with no credible source, so the shooter section is qualitative. The rebound-direction rule is likewise coaching craft, not a measured finding.
 

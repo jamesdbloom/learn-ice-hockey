@@ -261,7 +261,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 8. **Find out which system your team plays.** Most of what you are told is your team's system, not a law of hockey.
 9. **Find out which checking category you are in before you play a shift** — ⚠️ **ask your coach or your league, because you cannot work it out on the ice.**
 10. **In adult recreational hockey,** ⚠️ **find out whether your league is CARHA-affiliated before you rely on "hold your ground."** There, failing to *"avert body contact with an opponent"* can be penalised, up to an ejection with a suspension, even though the same book lets you stand your ground.
-11. **Go in on an angle; if you cannot avoid the wall, meet it with your skates parallel, knees bent, forearm and hip to it, head up, chin off your chest.** ⚠️ **Never turn your back to anyone coming at you and never duck: a head-down collision can injure your spine at walking speed.** Facing the wall with no time to turn? Stick and gloves up, spread on the glass.
+11. **Go in on an angle; if the wall is unavoidable, skates parallel, knees bent, forearm and hip to it, head up, chin off your chest.** ⚠️ **Never turn your back to anyone coming at you and never duck: a head-down collision can injure your spine at walking speed.** Facing the wall, no time to turn? Stick and gloves up, spread on the glass.
 
 ---
 
