@@ -147,6 +147,16 @@ The structure is the same as every other page: Key focus → Overview → body �
 - One foot jump to the other foot: touch the gliding skate each time with your head up, and jump as you stand back up.
 - One foot cross-over jump: jump from one foot to the other with a crossover, so the free foot jumps over the gliding foot.
 - "Jumping mohawk" is really stepping mohawks.
+- Forwards cross over 2/3 steps & stop: travel sideways, crossing over twice, then stop sideways on the inside edge of the outside foot. Then cross over twice back the opposite way and stop. It can be done very slowly to build crossover confidence. In normal crossovers you don't stop; you step onto the inside edge and glide.
+- Crossing-under lemons: roll the feet so both inside and outside edges engage, and the feet cross completely under the body.
+- Forwards anchor: make it much clearer that the inside leg anchors, using the heel of the skate.
+- Soft drag: the same as the anchor but using the toe (the anchor uses the heel). Backwards it is only possible with the toe, and the shape is a sharper C.
+- Tight turns: show a bigger fore-aft gap between the feet, a scissor shape with the inside leg forward.
+- Small-circle pivots: always face one direction. Forward to backward is a pivot on the front of the skates, ideally with a small hop so the heels don't cut the ice. Backward to forward is a step: the outside leg is travelling backwards, then, without stopping, step onto the other leg and go forwards.
+- Two-foot hockey stop: "side by side" stops in a scissor stance; "parallel" stops with the feet parallel, as drawn.
+- One-foot glide to one-foot stop, forwards: add an outside-edge version, with the heel placed in front of the other foot, as well as the inside-edge one.
+- All one-foot drills: make clear both feet should be used, in the card and on the diagram.
+- New drills: normal lemons, forwards and backwards. The boots, ideally the blades, touch in the middle each time; especially valuable backwards, which is harder.
 - New drills: continuous crossovers, forwards and backwards, described as cross-unders. Do one crossover in one direction, step onto the inside edge, cross over back, step onto the inside edge, and keep going.
 
 Off-ice stick drills will also get diagrams in the same style; the owner will send that list later.

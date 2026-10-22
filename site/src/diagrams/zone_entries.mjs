@@ -198,6 +198,11 @@ const wideEntry = {
     // limb -- the permissive-risk case is a screener OUTSIDE the crease touching a goalie IN it,
     // and 69.3 keys on where the GOALIE is (nhl_rules_layout.txt, 69.3: "while the goalkeeper is
     // in his goal crease"). Walking speed re-read this session: sources/huh.txt:224-229.
+    // 69.7 SCOPE added 22 October 2026: "incidental or not" alone told an NHL/IIHF/PWHL reader
+    // that rebound contact kills the goal; NHL and IIHF 69.7 and PWHL 71.7 allow incidental
+    // contact "in a rebound situation" (re-read in nhl_rules_layout.txt, iihf_rules_2026-27.txt,
+    // pwhl_rules.txt). Books named, no "only": Hockey Canada 8.5(a) Interpretation 1, CARHA,
+    // USA Hockey and the EIHL write no such exception, and the host's next chunk (027) says so.
     'The carrier crosses outside the defenceman for the goal line or below, so the defender ' +
     'has to turn — every stride toward the boards is a stride away from the front of their net. ' +
     'It needs both supports drawn here, and no contact is drawn. The net drive stops at the edge of the blue paint: keep ' +
@@ -206,8 +211,9 @@ const wideEntry = {
     'A head-first hit on a post is the same neck injury as one on the boards, and can happen at ' +
     'walking speed. That holds at every level, checking or not. The drive is not a licence to ' +
     'hit the goalie: it is where the goalie is, not where you are, that decides. Contact you ' +
-    'start with a goalie in the crease voids the goal, incidental or not, and a goalie out of ' +
-    'it is not fair game either.',
+    'start with a goalie in the crease voids the goal, incidental or not, though the NHL, IIHF ' +
+    'and PWHL allow incidental contact in a rebound scramble. A goalie out of the crease is not ' +
+    'fair game either.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +

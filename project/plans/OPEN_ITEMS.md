@@ -13,31 +13,36 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG30 (22 Oct):** breakouts.md CARHA injuring-screen major is an ejection (30(a)); getting_started R&R 2024-25 policy quotations vs current EIH policies; captions entry-wide, screen-the-goalie-sightline, cross-ice-in-your-own-end, pinch-below. Reviewed (source, safety+rules, site CLEAR). Committing.
-- **SG31 (22 Oct):** unisex context. uk_rules :373 adds the girls-on-junior-teams line and the UK sex and gender policy line; body_contact :154 adds "A girl on a junior team plays its format — checking from U14 — while the WNIHL's U16 is non-checking." Source review is CLEAR; needs a build, a site look and the gate. Uncommitted.
+- **SG31 (22 Oct):** all reviews CLEAR; committing.
 
 ## New page: Getting Better on Your Own
 
-The design and its reasoning are in [`getting_better_plan.md`](getting_better_plan.md). Draft drill
-diagrams exist (row 2a); nothing ships until the owner says it is ready.
+The design and its reasoning are in [`getting_better_plan.md`](getting_better_plan.md). Two pages, "Finding More
+Ice" and "Practising on Your Own", go in Off the Ice. Owner decisions D1–D6 were all made on 22 Oct and are
+recorded in that file's §6. **Drill diagrams stay unpublished until the owner has approved each one.** Page text
+can ship once it has been reviewed.
 
-1. **Owner decisions:** all decided 22 Oct: two pages ("Finding More Ice", "Practising on Your Own") in Off the Ice; frames plus some animation; any good videos, vetted; boxes for the UK nations, USA, Canada and a fallback; NotebookLM and Detailed episodes once shipped. **Drill diagrams stay unpublished until the owner reviews each one** (many need tweaks). The pages' text can ship once reviewed. Waiting on the owner: drill-by-drill review of the skating diagrams, and their list of off-ice stick drills to diagram.
-   Was: **Owner decisions D1–D6** (section 6 of the design file): one page or two; step frames or animation;
-   link existing videos or not; which locations get a "where to look" box; Off the Ice or Getting
-   Started; podcast episodes.
-2. **Sources on disk:** each governing body's club and programme finder, and a few rinks' public-session
-   rules, saved as dated snapshots in `sources/` with `sources/README.md` entries.
-2a. **Drill diagram drafts (22 Oct):** all 39 public-skating drills drawn as top-down SVGs with cards in `project/getting_better_drafts/` (kit `lib/draw.mjs`; `build.mjs`, `preview.mjs`); a private preview was published for the owner (link in the 22 Oct session; rebuild with `preview.mjs`). **Owner to confirm** the drill readings in the amber boxes (lemons/"crossing under", soft drag, anchor, jam/punch turns, mohawk form, cross-over jump, "toe down first", one-foot stop in front, parallel vs side-by-side stop, backward stops). Then: content and safety review of the cards; fold the kit into site/scripts diagrams if the style is approved.
-3. **Diagram groundwork:** a skate-track view (from above) and one shared stick-figure module for body
-   position.
-4. **Pilot:** the public-skating rules section and three drills with diagrams (one skating, one stick, one
-   exercise), one of them animated. Content, safety, diagram and site review; then the owner reviews
-   clarity and visual style.
-5. **The rest of the page**, in parallel by section (more ice, stick-and-puck, off-ice stick, off-ice
-   exercises, videos), then the full review set and the commit gate. Held back from the site behind a
-   draft flag.
-6. **Launch** when the owner says it is ready: nav, home-page ways in, Getting Started Route 1; NotebookLM
-   and Detailed episodes, and perhaps a Basics episode.
+1. **Finding More Ice:** the draft is REVIEWED (content, source, safety+rules ×2 all CLEAR, 22 Oct) at
+   `project/getting_better_drafts/finding_more_ice.md`. Next steps:
+   - Move it to `content/off-the-ice/` and add it to `site/src/data/structure.json`.
+   - Update the corpus counts from 39 to 40 (`check_counts --update`, CLAUDE.md and other "39" figures).
+   - Build, site review, gate and ship.
+   - Point Getting Started §10's "Named starting points" table at it, since it overlaps the draft's §7.
+   - Optional: "faces suspension and fines" (R&R 14.5), changed together in getting_started KT8 and CM :654.
+2. **Skating-drill diagrams:** 48 drafts in `project/getting_better_drafts/`, redrawn with the owner's first
+   round of feedback (recorded in getting_better_plan.md §6). The private preview is republished.
+   - **Waiting on the owner:** a drill-by-drill review. Seven readings are flagged to confirm: the sharp-C
+     outside edge, step-overs alternating, backward outside-edge C-cuts, the backward crossover-and-stop shape,
+     scissor stop foot order, which foot stops on the outside-edge one-foot stop, and "(toe down first)".
+   - Once the owner approves a diagram: fold the kit into the site's diagrams.
+3. **Off-ice stick-drill diagrams:** waiting on the owner's list.
+4. **Practising on Your Own (text):** draft the page: stick-and-puck, public-skating drills as text until their
+   diagrams are approved, off-ice stick work, off-ice exercises, and any good existing videos vetted case by case.
+   Then the full review set.
+5. **Diagram groundwork:** a skate-track view (from above) and one shared stick-figure module for body position.
+   Animated SVGs only where motion is the point.
+6. **Launch:** nav, home-page ways in, Getting Started Route 1. Then NotebookLM and Detailed episodes for each
+   page; no Basics episode.
 
 ## Owner decisions needed
 
@@ -50,25 +55,22 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 - **faceoffs taker's restraining lines:** render Hockey Canada Figure 7 ("Face-Off Restraining Lines", no text layer) to confirm "face-off restraining lines" in 6.2(a) means the L-lines, which faceoffs :733 assumes (errs safe either way). Optionally name PWHL 78.7(iv) beside the NHL/IIHF permission at :719/:733.
 - **on_ice_communication KT13 and CM** name the NHL and IIHF for the shorthanded icing exemption but not the PWHL (83.6 has it). Omission; low.
-- **breakouts.md Wheel section:** says CARHA's mandatory major on an injuring screen is "a major"; under CARHA 30(a) every major is also a game misconduct (ejection). Check body and facts there, and other pages pricing CARHA 66(e).
 - **Optional citation precision:** breakouts and defensive_zone_coverage cite "Hockey Canada 10.1" where
   10.1(i) is meant.
 
 ## Content: safety, readability and wording
 
-- **Rules-verifier SG30 notes (harsher direction, minor):**
-  - breakouts :213 and :215 say "every CARHA major ends your game". 30(a) exempts an accidental high-stick major, so write "an interference major ends your game" there.
-  - The entry-wide caption omits the 69.7 rebound exception, so it implies any rebound-scramble contact kills the goal. Consider "outside a rebound scramble".
-
-- **breakouts Wheel facts block :321 (major, already there before SG30, found by the facts-reviewer 22 Oct):** the block flags the standing screen for NHL/PWHL/IIHF/USAH but says nothing about Hockey Canada or CARHA beyond the injury tier. That leaves out CARHA 49(a)'s duty to avert contact, which carries an ejecting major. The block is at 13/14, so one line fits. Sketch: "Rule: Hockey Canada 8.3 and CARHA 66(a) bar the side with the puck from running interference for the carrier, and CARHA 49(a) adds a minor or a major, which ejects, for not averting contact, so under CARHA give the forechecker the ice". Needs a rules-verifier. Also sweep usah.txt for any general injury-triggered tier.
-
-- **getting_started links eiha.co.uk, which now carries gambling spam (found 22 Oct):** its find-your-local-club page links "UK casinos not on Gamstop", and the site looks abandoned (2019–20 news). England Ice Hockey's live site is englandicehockey.com. Replace the 2 eiha.co.uk Sources links and the "EIHA's club finder" mention (around :616); England has no live club finder (EIH /clubs/ finder section is a placeholder). Do this after the SG30 commit, because getting_started is staged. Needs source-verifier.
-- **Getting Started §10 "Named starting points" overlaps Finding More Ice §7's location boxes:** when the new page ships, point the table there.
-
+- **"Every CARHA major ejects" wording on other pages (harsher direction, minor):**
+  - Found at zone_entries.md:379, goaltender.md:1265, defending_the_rush.md:462 and :894, and rules_primer.md:392.
+  - 30(a) exempts an accidental high-stick major, so scope each to the foul it discusses, as breakouts now does.
+- **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
+- **zone_entries.md "contact … voids the goal, incidental or not" (harsher direction, minor):**
+  - Facts :349 and :393 cite NHL and IIHF 69.3 with no 69.7 rebound scope; chunks 030 and 032 state it with no book.
+  - It is exact for Hockey Canada and too strict for the NHL, IIHF and PWHL.
+  - Consider a book-scoped tweak rather than adding 69.7 at every site. The entry-wide caption now carries the scope.
 - **Echoes found by the SG30 site review (wording):**
   - The risk_management cross-ice caption repeats the "Coaching convention…" paragraph straight after it (check_caption_echo).
-  - In breakouts, the new 30(a) clause in the CARHA paragraph repeats the next paragraph.
-  - In getting_started's trailer, "the two credited below" means two documents but covers three quotations.
+  - getting_started §3: "A child who starts later can train with a club team without playing matches" paraphrases EIH's Train-Only option, which the source does not tie to starting later (commit-gate minor).
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
 - **body_contact EIHL repetition (owner 22 Oct: trim where it's repetition):** keep each distinct EIHL rule once and cut repeated restatements of it. Do this as part of the repetition pass, with a layer test.
 
@@ -102,7 +104,7 @@ diagrams exist (row 2a); nothing ships until the owner says it is ready.
 
 ## Podcasts
 
-- **NotebookLM remakes (owner, 22 Oct: remake all seven):** Defenceman, Goalie, Faceoffs, Rules Primer, UK Rules, Game Management, Zone Entries. Generate from the current pages (notebooklm-episode skill / owner), then process and publish as before (build_podcast_audio, upload, podcast.json).
+- **NotebookLM remakes (owner, 22 Oct: remake all seven; owner 22 Oct: do them as a BATCH 6 folder, `.podcast_queue/notebooklm/remake_2026-10-20/batch6/`, AFTER the final content edits to those pages land):** Defenceman, Goalie, Faceoffs, Rules Primer, UK Rules, Game Management, Zone Entries. Generate from the current pages (notebooklm-episode skill / owner), then process and publish as before (build_podcast_audio, upload, podcast.json).
 
 ## Renderer and podcast tooling
 
