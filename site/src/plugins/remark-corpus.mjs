@@ -1018,8 +1018,22 @@ export default function remarkCorpus(options = {}) {
     markCosts(children);
     markEssentials(children);
     recordReadingTime(children, file);
+
+    // 🇬🇧 THE FLAG MUST NOT WRAP ALONE either — the same defect as the warning
+    // glyph above, for the marker that scopes a sentence to British hockey. The
+    // whitespace straight after every 🇬🇧 (regional indicators U+1F1EC U+1F1E7)
+    // becomes ONE U+00A0, in every text node: paragraphs, list items, table
+    // cells, facts values, figcaptions. It runs last so nothing above sees a
+    // changed string (every test above uses `\s`, which matches U+00A0 anyway).
+    // Rendering only: md_to_speech reads the markdown, not this plugin.
+    visit(tree, 'text', (node) => {
+      if (node.value.includes(GB_FLAG)) node.value = node.value.replace(GB_FLAG_SPACE_RE, `${GB_FLAG} `);
+    });
   };
 }
+
+const GB_FLAG = '\u{1F1EC}\u{1F1E7}';
+const GB_FLAG_SPACE_RE = /\u{1F1EC}\u{1F1E7}\s+/gu;
 
 // =========================================================================
 // Readability features (owner-approved 19 October 2026). Rendering only:

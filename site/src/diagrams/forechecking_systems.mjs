@@ -170,7 +170,8 @@ const forecheck212 = {
     'is treated separately, and whether the first pass beats F2 or F2 beats the pass, which is ' +
     'the contest the system turns on. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. WHY IT IS HERE AND WHY IT IS SHORT.
-    // The long body-checking block on forecheck-122 and forecheck-131 is NOT the general
+    // The long body-checking block forecheck-122 and forecheck-131 carried until 22 October 2026
+    // (both now carry a short shared block) was NOT the general
     // treatment: it is the reader-facing half of a round-27 remedy for two routes graded
     // Critical, and it opens by naming the route it is about ("Note what F2 is drawn doing").
     // So it tracked those two routes' history rather than the reader's exposure -- and the
@@ -419,24 +420,39 @@ const forecheck122 = {
   width: 900,
 
   caption:
-    'A 1-2-2 forecheck against the same puck carrier as the 2-1-2, so the two can be compared: ' +
-    'one forward deep, two across the middle of the zone, two defencemen high at the offensive ' +
-    'blue line. One forward deep and not two is the whole difference — this system concedes the ' +
-    'retrieval on purpose and builds a wall the opponent has to pass through instead. F1 cuts the ' +
-    'ice in half without committing to winning the puck; F2 sits up the strong-side wall and ' +
-    'jumps an outlet F1 has made predictable; F3 holds the high middle. The dog, fox and hawk ' +
-    'labels are a memory hook some teams use rather than standard hockey vocabulary. Which side ' +
-    'F1 cuts off, the weak-side defenceman holding the middle rather than the far point, and the ' +
-    'choice of this system at all are coaching choices and not laws, so find out which your team ' +
-    'runs. ' +
-    // SAFETY SCOPE. The long body-checking block below is VERBATIM SHARED by two captions in this
-    // file -- forecheck-122 and forecheck-131 (forecheck-pinch and forecheck-press carried it too
-    // until 22 October 2026, when both were cut to a short scope sentence). 604(b)'s text, its
-    // provenance and why it may not be split from 604(a) are argued out in the comment above
-    // forecheck-pinch, and so is the ruling that this block's ", so" is NOT an inversion --
-    // referred, checked on the rendered audio and ruled not a defect. Do not re-refer it.
-    // Edit both together or they drift.
-    'Note what F2 is drawn doing: arriving at the wall, not at the winger. ⚠️ Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Neither the NHL nor the IIHF writes a minor for checking from behind at all — Rule 43.2 in both — so the floor for finishing into the back of a player who is facing away is a major with a game misconduct on it: mandatory under NHL 43.3 and 43.5, and at the referee\u2019s discretion under IIHF 43.3 for a check that recklessly endangers the fouled player. And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior.',
+    // SHORTENED 22 October 2026 (~2,330 chars). Picture, jobs, label note and coaching-choice
+    // disclosure kept; both hosts' bodies carry the rest beside the marker.
+    'The 1-2-2, drawn against the same carrier as the 2-1-2: one forward deep, two across the ' +
+    'middle, two defencemen high. It concedes the retrieval and builds a wall instead. F1 cuts the ' +
+    'ice in half without chasing; F2 sits up the wall and jumps the outlet F1 has made ' +
+    'predictable; F3 holds the high middle. Dog, fox and hawk are a memory hook, not standard ' +
+    'terms. Which side F1 cuts off, where the weak-side defenceman sits, and the system itself are ' +
+    'coaching choices, so ask which your team runs. ' +
+    // SAFETY SCOPE, SHORTENED 22 October 2026 (owner: shorter is better). This block is VERBATIM
+    // SHARED by forecheck-122 and forecheck-131; edit both together or they drift. It keeps the
+    // onus instruction, "never finish into the back", the NHL/IIHF Rule 43 floor (NHL 43.2/43.3/
+    // 43.5: no minor, major mandatory, game misconduct "must"; IIHF 43.2/43.3: no minor, major plus
+    // automatic game misconduct at the referee's discretion for reckless endangerment -- re-read in
+    // sources/nhl_rules.txt and sources/iihf_rules_v1.1.txt this session), the game-not-division
+    // prompt, and a short IIHF women's / Women's NIHL limb -- BOTH halves of 101.1, the play-the-
+    // puck condition AND the separate boards ban ("not allowed to use the boards to make contact
+    // with an opponent to eliminate her from the play, push her into the boards, or pin her along
+    // the boards", sources/iihf_rules_2026-27.txt:7601-7602), because the play-the-puck half alone
+    // sounds sufficient and F2 is drawn arriving at the wall. It DROPS the USA Hockey 604(a)/(b) and
+    // Hockey Canada 7.3 enumeration, which forecheck-212 and forecheck-212-stacked voice in full:
+    // in how_to_watch_hockey.md forecheck-212's caption is the chunk immediately before this one,
+    // and in forechecking_systems.md the 2-1-2 section voices it a few chunks before the 1-2-2.
+    // The IIHF/NIHL limb is kept because neither host voices it near either diagram. The ", so"
+    // in "not allowed at all, so find out" was ruled NOT an inversion (see the comment above
+    // forecheck-pinch); do not re-refer it.
+    'F2 is drawn arriving at the wall, not at the winger. ⚠️ If your game allows body checking, ' +
+    'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
+    'Never finish into the back of a player facing away. The NHL and IIHF have no minor for that, ' +
+    'so the floor is a major and a game misconduct, mandatory in the NHL, and in the IIHF book ' +
+    'for a hit the referee judges reckless. In many leagues body checking is not allowed at ' +
+    'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
+    'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
+    'pin an opponent, and the Women\'s NIHL is non-checking.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. The same five opposition players as the ' +
@@ -539,27 +555,39 @@ const forecheck131 = {
   width: 900,
 
   caption:
-    'The 1-3-1 pushed up into the offensive zone, against the same puck carrier as the other ' +
-    'diagrams: one forward pressuring, three players spread flat across the width of the ice, and ' +
-    'one player behind them as the last man. The line of three is conventionally F2, F3 and one ' +
-    'defenceman, the defenceman in the middle as the read-maker, and some coaches invert that, ' +
-    'putting a forward in the middle and a defenceman on a wall — ask which your team runs. ' +
-    'What does not happen is three forwards across, because F1 is already a forward and there ' +
-    'are only three on the ice. F1 does not chase but ' +
-    'steers, and as the puck commits to one side the whole line shifts with it, the puck-side ' +
-    'player becoming an immediate second attacker while the other two slide across. What ' +
-    'it concedes is drawn as plainly as what it takes: the initial puck entirely, and a great ' +
-    'deal of ice behind a flat line, so a chip past it is past all three at once. It is one ' +
-    'system among several and not a beginner one, and the far more common use of the same name is ' +
-    'a passive neutral-zone shape that is not a forecheck in any literal sense. ' +
-    // SAFETY SCOPE. The long body-checking block below is VERBATIM SHARED by two captions in this
-    // file -- forecheck-122 and forecheck-131 (forecheck-pinch and forecheck-press carried it too
-    // until 22 October 2026, when both were cut to a short scope sentence). 604(b)'s text, its
-    // provenance and why it may not be split from 604(a) are argued out in the comment above
-    // forecheck-pinch, and so is the ruling that this block's ", so" is NOT an inversion --
-    // referred, checked on the rendered audio and ruled not a defect. Do not re-refer it.
-    // Edit both together or they drift.
-    'Note what F2 is drawn doing: arriving at the wall, not at the winger. ⚠️ Where body checking is allowed at all, the arriving player carries the whole onus — take the puck, take the ice, or angle them off it. Neither the NHL nor the IIHF writes a minor for checking from behind at all — Rule 43.2 in both — so the floor for finishing into the back of a player who is facing away is a major with a game misconduct on it: mandatory under NHL 43.3 and 43.5, and at the referee\u2019s discretion under IIHF 43.3 for a check that recklessly endangers the fouled player. And in many leagues body checking is not allowed at all, so find out which book you are under, and whether you may body check in this game rather than merely in your division, before you plan on making contact: USA Hockey Rule 604(a) prohibits it at 12-and-under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body prohibit it in any classification on top of that; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 penalises it at U13 and below, throughout female hockey and in any other division a Member approves; and the IIHF book restricts by category instead of age, allowing body checking in women\'s hockey only where there is a clear intention of playing the puck or an attempt to gain possession of it, subject to the exception the rule itself then sets out — and in Britain the Women\'s NIHL is non-checking at U16 and senior.',
+    // SHORTENED 22 October 2026 (~2,610 chars). "Not three forwards across" is dropped: the
+    // host body voices it in the chunk immediately before the marker.
+    'The 1-3-1 pushed up into the offensive zone: one forward pressuring, three flat across the ' +
+    'ice, one last man behind. The line of three is conventionally F2, F3 and a defenceman in the ' +
+    'middle; some coaches put a forward there, so ask which your team runs. F1 steers rather than ' +
+    'chases, and the line shifts with the puck, its puck-side player becoming a second attacker. A ' +
+    'chip past a flat line is past all three. It is not a beginner system, and the name more ' +
+    'often means a passive neutral-zone shape. ' +
+    // SAFETY SCOPE, SHORTENED 22 October 2026 (owner: shorter is better). This block is VERBATIM
+    // SHARED by forecheck-122 and forecheck-131; edit both together or they drift. It keeps the
+    // onus instruction, "never finish into the back", the NHL/IIHF Rule 43 floor (NHL 43.2/43.3/
+    // 43.5: no minor, major mandatory, game misconduct "must"; IIHF 43.2/43.3: no minor, major plus
+    // automatic game misconduct at the referee's discretion for reckless endangerment -- re-read in
+    // sources/nhl_rules.txt and sources/iihf_rules_v1.1.txt this session), the game-not-division
+    // prompt, and a short IIHF women's / Women's NIHL limb -- BOTH halves of 101.1, the play-the-
+    // puck condition AND the separate boards ban ("not allowed to use the boards to make contact
+    // with an opponent to eliminate her from the play, push her into the boards, or pin her along
+    // the boards", sources/iihf_rules_2026-27.txt:7601-7602), because the play-the-puck half alone
+    // sounds sufficient and F2 is drawn arriving at the wall. It DROPS the USA Hockey 604(a)/(b) and
+    // Hockey Canada 7.3 enumeration, which forecheck-212 and forecheck-212-stacked voice in full:
+    // in how_to_watch_hockey.md forecheck-212's caption is the chunk immediately before this one,
+    // and in forechecking_systems.md the 2-1-2 section voices it a few chunks before the 1-2-2.
+    // The IIHF/NIHL limb is kept because neither host voices it near either diagram. The ", so"
+    // in "not allowed at all, so find out" was ruled NOT an inversion (see the comment above
+    // forecheck-pinch); do not re-refer it.
+    'F2 is drawn arriving at the wall, not at the winger. ⚠️ If your game allows body checking, ' +
+    'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
+    'Never finish into the back of a player facing away. The NHL and IIHF have no minor for that, ' +
+    'so the floor is a major and a game misconduct, mandatory in the NHL, and in the IIHF book ' +
+    'for a hit the referee judges reckless. In many leagues body checking is not allowed at ' +
+    'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
+    'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
+    'pin an opponent, and the Women\'s NIHL is non-checking.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -702,7 +730,8 @@ const forecheckPinch = {
     // ("what makes a failed pinch a two-on-one rather than a breakaway"). Do not re-add it
     // without the hedge; better, do not re-add it.
     // SAFETY SCOPE. The caption's go/no-go test is a CONTACT instruction, so it carries the same
-    // scope sentence as forecheck-122 and forecheck-131 above, verbatim and in one shared form.
+    // scope sentence as forecheck-press, verbatim (forecheck-122 and forecheck-131 carry the same
+    // sentence inside their own shared block).
     // It sits LAST, and the placement is load-bearing rather than stylistic. The renderer promotes
     // caption text from the first warning glyph to the END of the caption with no closing delimiter
     // (`captionNodes()` in remark-corpus.mjs), so a glyph on this block anywhere but last would
@@ -756,9 +785,9 @@ const forecheckPinch = {
     // allowed". Re-read in sources/iihf_rules_2026-27.txt this session.
     // ⚠ HISTORY: the comments from here down describe the LONG scope block this caption carried
     // until 22 October 2026. It now carries a short scope sentence (see the SHORTENED note at the
-    // top of the caption); the long block survives only in forecheck-122 and forecheck-131, and
-    // the provenance and the ", so" ruling below still govern those two. Nothing below is shared
-    // verbatim with forecheck-press any more.
+    // top of the caption). Since the same date no caption carries the long block: forecheck-122
+    // and forecheck-131 were cut to a shorter shared block too. The provenance and the ", so"
+    // ruling below still govern the short sentence every one of them keeps.
     // The second sentence is the consequence, without which the reader has a rule and no play.
     // ⚠ 604(b) IS CARRIED WITH 604(a) AND MUST STAY IN THE SAME SENTENCE AS IT. USAH 604(b)
     // (sources/usah.txt:3577), read this session: "Any time a team from a Competitive Contact
@@ -778,13 +807,12 @@ const forecheckPinch = {
     // can be voiced as two units, and this pair may not be.
     // (Until 22 Oct 2026) this block was VERBATIM SHARED with forecheck-122, forecheck-131 and
     // forecheck-press.
-    // ⚠ AND "VERBATIM SHARED" IS TRUE FROM "many leagues" ONWARD AND NOT BEFORE IT — measured, not
-    // assumed. All four are byte-identical from that phrase to the end of the 604/7.3/101.1
-    // enumeration; what differs is only the LEAD-IN. forecheck-122 and forecheck-131 run it on from
-    // their checking-from-behind sentence as "And in many leagues"; this caption opens the amber band
-    // with "⚠️ And in many leagues"; forecheck-press puts its own first sentence in front and so
-    // starts the shared sentence as "In many leagues". Diff the four FROM "many leagues", or the
-    // lead-ins will read as drift and somebody will "repair" three captions that are already correct.
+    // ⚠ HISTORY: until 22 October 2026 all four captions carried the full 604/7.3/101.1
+    // enumeration, byte-identical from "many leagues" onward. None does now: forecheck-pinch and
+    // forecheck-press share the short sentence "In many leagues body checking is not allowed at
+    // all, so find out whether you may body check in this game, not just in your division.", and
+    // forecheck-122 and forecheck-131 carry that same sentence inside their own shorter shared
+    // block. The lead-ins differ on purpose; diff from "In many leagues", not from the glyph.
     //
     // ⚠ THE ", so" SHAPE IN THIS SENTENCE WAS REFERRED AS A POSSIBLE INVERSION AND RULED **NOT A
     // DEFECT**, on the rendered audio, by safety-reviewer. Recorded here so the next reader of this
@@ -812,9 +840,10 @@ const forecheckPinch = {
     // sentence ends up MORE cautious, not less. Every inversion the corpus has repaired runs the
     // other way: a protective instruction coming out prohibited.
     // READ ALONE BEFORE RULING, not reasoned about. `python3 scripts/md_to_speech.py --only
-    // forechecking_systems` voices this sentence as its own <p>, and in the forecheck-122 and
-    // forecheck-131 hosts the chunk packer puts it CHUNK-INITIAL — the listener meets it with no
-    // preceding sentence at all, which is the hardest case there is and is the case it was read in.
+    // forechecking_systems` voiced this sentence as its own <p>, and in the forecheck-122 and
+    // forecheck-131 hosts the chunk packer put it CHUNK-INITIAL (before 22 October 2026, when those
+    // captions were cut) — the listener met it with no preceding sentence at all, the hardest case,
+    // and the case it was ruled in.
     // ⚠ DO NOT "REPAIR" IT BY BREAKING THE SENTENCE AT THE "so". A full stop there would separate the
     // hazard from what to do about it, which is the split _split_paragraph makes voiceable as two
     // units — the one thing the 604(a)/604(b) note above forbids for this exact block.
@@ -1203,8 +1232,8 @@ const forecheckPress = {
     // first two words. Rejoined; the 604(b) note follows it whole. A truncated quotation in a
     // provenance comment is how a half-rule reaches a listener, and this file already carries one
     // case of exactly that (see the IIHF 101.1 note above forecheck-pinch).
-    // 604(b) is carried alongside 604(a) here as it is in the other three captions sharing this
-    // block; its text, its provenance and why it may not be split from (a) are argued out in the
+    // (Until 22 October 2026) 604(b) was carried alongside 604(a) here as in the other three
+    // captions sharing this block; its text, its provenance and why it may not be split from (a) are argued out in the
     // comment above forecheck-pinch and are not restated -- and so is the ruling that this block's
     // ", so" is NOT an inversion, checked on the rendered audio. Do not re-refer it.
     '⚠️ Pinching on anything is about the puck, not about the man. In many leagues body checking ' +
