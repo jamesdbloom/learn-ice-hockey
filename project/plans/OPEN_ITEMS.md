@@ -328,6 +328,8 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 **Re-triaged 22 October 2026 at HEAD a672681.** Four agents tested every row of the previous section against the files. About 280 verdicts: roughly 115 FIXED, 50 DONE-RECORD, 4 WRONG, about 80 still OPEN. The old section and every verdict table (with evidence and current locations) are in [plan_open_rows_archive_2026-10-22.md](../reviews/plan_open_rows_archive_2026-10-22.md); read the verdict row there before dispatching. **Line numbers below are as found on 22 Oct and will drift; name the string.** Test each row against HEAD before acting on it.
 
+- **SG20 IN FLIGHT (22 Oct):** readability (z/brief.md) on every remaining page with a long paragraph or KT: forechecking+OZP; PWTP+game_management; special_teams+faceoffs; breakouts+DZC; defender+risk_management; on_ice_communication+NZ; getting_started+switching; mental_game+time_and_space+core_principles; scanning+practice_and_development+puck_support; rules_primer (:945, :855) + uk_rules KT9 follow-ups. Uncommitted until reviewed.
+
 ### Owner decisions needed
 
 - **Getting Better page:** plan decisions D1–D6 (project/getting_better_plan.md).
