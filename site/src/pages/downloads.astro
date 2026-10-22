@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { LAYERS, DOC_COUNT } from '../data/nav';
-import { getFormat, episodesFor, DOCUMENT_COUNT } from '../data/podcast';
+import { getFormat, episodesFor, DOCUMENT_COUNT, BASICS_EPISODES, BASICS_LABEL, BASICS_PATH } from '../data/podcast';
 import { principlesInFeed } from '../lib/podcast-feed';
 import { AUDIO_ENABLED } from '../consts';
 
@@ -14,7 +14,12 @@ const conversation = getFormat('conversation');
 const principles = getFormat('principles');
 const all = [...conversation.episodes, ...principles.episodes];
 const audioHours = all.reduce((n, e) => n + e.duration_s, 0) / 3600;
-const audioGb = all.reduce((n, e) => n + e.bytes, 0) / 1e9;
+// The Basics (owner, 20 October 2026) is a third collection keyed by topic, not by
+// document, so it is not in `all` (whose count is "one per document") — but its bytes
+// are part of "the lot".
+const basics = BASICS_EPISODES;
+const hasBasics = basics.length > 0;
+const audioGb = [...all, ...basics].reduce((n, e) => n + e.bytes, 0) / 1e9;
 // One decimal under ten hours, so a format with a handful of short episodes does not
 // read as "about 0 hours".
 const hours = (eps: readonly { duration_s: number }[]) => {
@@ -132,11 +137,18 @@ const epubs = [
           once caught offering. */}
       {hasPrinciples ? (
         <p>
-          Two kinds of episode, in reading order. <strong>Conversation</strong>:
+          {hasBasics ? 'Three' : 'Two'} kinds of episode, in reading order. <strong>Conversation</strong>:
           {' '}{conversation.episodes.length} of {DOCUMENT_COUNT} documents, about
           {' '}{hours(conversation.episodes)} hours. <strong>Playing principles</strong>:
-          {' '}{principles.episodes.length} of {DOCUMENT_COUNT} documents so far, about
-          {' '}{hours(principles.episodes)} hours. They are spoken editions of the
+          {' '}{principles.episodes.length} of {DOCUMENT_COUNT} documents{principles.episodes.length < DOCUMENT_COUNT ? ' so far' : ''}, about
+          {' '}{hours(principles.episodes)} hours.
+          {hasBasics && (
+            <Fragment>
+              {' '}<a href={BASICS_PATH}><strong>{BASICS_LABEL}</strong></a>: {basics.length} short
+              {' '}topic episodes, suitable for newer players or younger players, about {hours(basics)} hours.
+            </Fragment>
+          )}
+          {' '}They are spoken editions of the
           documents rather than word-for-word readings, so they are worth having
           alongside the text rather than instead of it. AAC in an <code>.m4a</code>{' '}
           container, mono, about {audioGb.toFixed(2)} GB for the lot.
@@ -201,7 +213,7 @@ const epubs = [
         An <code>.m3u</code> playlist opens in VLC, Apple Music, most car stereos
         and almost any desktop player, and needs no account or app.
       </p>
-      {hasPrinciples && <h4>Conversation</h4>}
+      {(hasPrinciples || hasBasics) && <h4>Conversation</h4>}
       <ul class="download-list">
         <li>
           <a href="/audio/all.m3u" download>The complete corpus</a>
@@ -234,6 +246,19 @@ const epubs = [
           </ul>
         </Fragment>
       )}
+      {/* The Basics is one short series, so one playlist — the same name
+          [playlist].m3u.ts emits, and only when it has an episode. */}
+      {hasBasics && (
+        <Fragment>
+          <h4>{BASICS_LABEL}</h4>
+          <ul class="download-list">
+            <li>
+              <a href="/audio/basics.m3u" download>{BASICS_LABEL}</a>
+              <span class="download-note"> — {basics.length === 1 ? "the one episode" : `all ${basics.length} episodes`}, in series order.</span>
+            </li>
+          </ul>
+        </Fragment>
+      )}
 
       <h3>One episode at a time</h3>
       <p>
@@ -260,6 +285,21 @@ const epubs = [
           </li>
         ))}
       </ul>
+      {/* The Basics is keyed by topic, not by document, so it is its own list rather
+          than a third format line under each document. */}
+      {hasBasics && (
+        <Fragment>
+          <h4>{BASICS_LABEL}</h4>
+          <ul class="download-list">
+            {basics.map((ep) => (
+              <li>
+                <a href={ep.audio} download><span class="visually-hidden">{BASICS_LABEL}, </span>{ep.title}</a>
+                <span class="download-note"> · {mins(ep.duration_s)} · {mb(ep.bytes)}</span>
+              </li>
+            ))}
+          </ul>
+        </Fragment>
+      )}
         </Fragment>
       )}
 

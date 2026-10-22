@@ -342,21 +342,17 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 
 - **SG13 DONE (22 Oct)** (record sg13_rules_accuracy_rows_2026-10-22.md). Closed: late hit ×3, OIC ×3, T&S 21.1, DZC ×2, puck_handling ×2, goaltender ×4, CARHA 62(b) ×3 pages, special_teams :776, PWTP ×3, passing. New from it: body_contact :1651 facts (300/300) and :637/:655 lack NHL/PWHL 21.1 / late-hit price; T&S goalie contact :556–562 no NHL 21.1; defender :244 'can be a shot too' vs HC Interp 5 (rules-verifier); CARHA follow-through limb in shooting.md?; optional 10.1→10.1(i) in breakouts :657, DZC :178, body_contact :1148.
 
-- **CARHA 48(a) general match:** never cited in passing, puck_support, goaltender, switching, breakouts or faceoffs (NHL 21.1 half done in SG13).
-- **CARHA 32(d)** is absent from some backswing sites (winger :102/:112, defender, zone_entries, faceoffs, NZ). Facts lines at cap (center :485, PWTP :708) are an accepted limitation. (CARHA 62(b) done in SG13.)
 - **zone_entries :235:** "only once made" errs safe.
-- **HC republication checks** still to do: 4.7(a) Interp 2, 7.1(f), 10.4, 10.6(a) Interp 5, the penalty-bench "end of the period" change.
-- **HC 7.1(c) vs Appendix D Note 1 scope:** never settled by a rules-verifier; 7.1(c) is now cited in 11 documents.
+- **SG16 follow-ups:** IIHF "no match tier on the ice" lines (rules_primer :437/:451/:476/:477) — check for an IIHF general route; defending_the_rush :734/:751 could cite HC Interp 2 to 7.11(c) (optional); downloads wording fits The Basics loosely.
 - **team_play :283 PWHL ceiling:** "can go higher … if it hurts them" is slightly broad for the PWHL (only 21.1, deliberate injury). Harsher direction.
 
 ### Content — safety layering and readability
 
 - **SG14 DONE (22 Oct)** (record sg14_posture_followups_renderer_2026-10-22.md): board-posture calls for conditioning, getting_started, switching, zone_entries, defender, passing; body_contact late-hit NHL/PWHL + 10.1(i); time_and_space goalie contact; defender :244; 7 renderer fixes. New: renderer speaks sentence-initial rule numbers lowercase; HC 2.2(i) letter-or-numeral unchecked.
 
-- **Board posture:** page calls DONE in SG14. Still open: diagram captions voicing the full posture (forechecking_systems.mjs :918/:1299, wall_contact_clauses.mjs :108 possibly shared, breakouts.mjs :1157, puck_handling.mjs :278, scanning_and_anticipation.mjs :190).
 - **Facing-the-wall fallback** done (PWTP SG13, practice_and_development SG15).
-- **Listener "Important." runs:** rules_primer has a run of 19; body_contact §9 (8), §12 (7), §5 (5).
-- **Long units:** PWTP has 3 paragraphs over 1,200 chars (longest 2,378); corpus-wide 43 long paragraphs and 90 KTs over 60 words (check_readability). Spoken chunks over 2,500 chars are unmeasured (needs an md_to_speech census). 92 of 204 captions are over 800 chars.
+- **Listener "Important." runs:** rules_primer stick fouls and body_contact §5/§9/§12 DONE in SG16. Still: rules_primer body-fouls run of 11 and several 8s (CM, KTs); body_contact 4-runs in §1, §3, CM, KTs.
+- **Long units:** PWTP DONE in SG16. Corpus-wide 43 long paragraphs and 90 KTs over 60 words (check_readability); spoken chunks over 2,500 chars unmeasured; 92 of 204 captions over 800 chars.
 - **Smaller items:** "every level of UK hockey runs the IIHF book" in 34 headers (low; "amended locally" may cover it).
 - **rules_primer:** table :899 has 0 rows of headroom; the content of table :1018 (dropped from audio) has no recorded check that it is voiced inline; quote-drift flags at :430 and :1201.
 - **Basics wing script** omits the weak-side collapse to the slot that the centre list relies on (winger.md :55/:154/:182). Fix in a future Basics remake.
@@ -372,7 +368,7 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 ### Renderer (md_to_speech) and podcast tooling
 
 - Renderer: ~340 other lower-case sentence starts (list/heading numerals, formations, quantities) — cosmetic.
-- downloads.astro and the m3u playlists have no Basics format; podcast_queue.py has no `--style basics`; synthesize_style_b has no `--doc-id`.
+- podcast_queue.py has no `--style basics`; synthesize_style_b has no `--doc-id` (only matter if Basics production is tracked through them). Basics downloads/m3u DONE in SG16.
 
 ### Checkers and sources (scripts/ — change between waves, never during one)
 

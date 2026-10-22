@@ -1,7 +1,7 @@
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { LAYERS } from '../../data/nav';
 import { SITE_TITLE } from '../../consts';
-import { getFormat, position, type Episode } from '../../data/podcast';
+import { getFormat, position, type Episode, BASICS_EPISODES, BASICS_LABEL, basicsTitle } from '../../data/podcast';
 
 const conversation = getFormat('conversation');
 const principles = getFormat('principles');
@@ -15,6 +15,13 @@ const principles = getFormat('principles');
  * The Conversation set keeps its original names and order, unchanged.
  */
 const PRINCIPLES_PREFIX = 'principles-';
+
+/**
+ * THE BASICS (owner, 20 October 2026) is a third collection keyed by topic, not by
+ * document, so it gets ONE playlist, `basics`, in series order — emitted only when it
+ * has at least one episode, the same rule as above. downloads.astro links it by name.
+ */
+const BASICS_PLAYLIST = 'basics';
 
 function principlesFor(layerId: string | null): Episode[] {
   return principles.episodes
@@ -31,7 +38,8 @@ function playlistNames(): string[] {
       if (principlesFor(l.id).length > 0) names.push(`${PRINCIPLES_PREFIX}${l.id}`);
     }
   }
-  // ⚠️ A layer whose id were `all`, or began `principles-`, would make two playlists
+  if (BASICS_EPISODES.length > 0) names.push(BASICS_PLAYLIST);
+  // ⚠️ A layer whose id were `all` or `basics`, or began `principles-`, would make two playlists
   // claim one file name and Astro would silently keep one. Fail instead.
   const dupes = names.filter((n, i) => names.indexOf(n) !== i);
   if (dupes.length) throw new Error(`m3u: playlist name collision: ${dupes.join(', ')}`);
@@ -109,6 +117,18 @@ export const GET: APIRoute = ({ params, site }) => {
   const id = params.playlist!;
 
   assertSectionsAreRealLayers();
+
+  if (id === BASICS_PLAYLIST) {
+    const lines = [
+      '#EXTM3U',
+      `#PLAYLIST:${assertSingleLine(`${SITE_TITLE} — ${BASICS_LABEL}`, 'playlist name')}`,
+      ...BASICS_EPISODES.flatMap((ep) => [
+        `#EXTINF:${Math.round(ep.duration_s)},${assertSingleLine(basicsTitle(ep), 'episode title')}`,
+        `${origin}${ep.audio}`,
+      ]),
+    ];
+    return new Response(lines.join('\n') + '\n', { headers: { 'Content-Type': 'audio/x-mpegurl; charset=utf-8' } });
+  }
 
   const isPrinciples = id.startsWith(PRINCIPLES_PREFIX);
   const layerId = isPrinciples ? id.slice(PRINCIPLES_PREFIX.length) : id;

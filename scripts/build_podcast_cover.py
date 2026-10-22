@@ -347,7 +347,7 @@ def main() -> int:
     #     behind it changed — `Age: 71651` against its own `max-age=3600` — because
     #     `.github/workflows/deploy.yml` excludes `audio/*` from both sync passes and
     #     only pass 2's log feeds the invalidation. NOTHING UNDER /audio/ IS EVER
-    #     INVALIDATED BY A DEPLOY. The nine .m3u playlists have the same problem.
+    #     INVALIDATED BY A DEPLOY. The .m3u playlists have the same problem.
     # ⚠️ AND APPLE IS THE REAL REASON. Apple caches show artwork against the URL it
     #     fetched it from. A cover replaced in place can keep showing the old image in
     #     the directory long after the origin is correct, and unpicking that after a
