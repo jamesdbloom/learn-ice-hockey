@@ -31,7 +31,7 @@ Puck handling — moving the puck on your stick, skating with it, and keeping it
 
 **Start with your eyes.** A player staring at the puck cannot use anything they know about the game, because it all arrives through the eyes. Ordering your eyes up fails: you look up, lose the puck and look back down. Build feel instead — the toe, middle and heel of the blade through the shaft, the puck all around your body — and the eyes come up on their own.
 
-**Then keep the puck you have.** Coaches rank protection above every deke. With a checker on you, put the puck on your far side, feet wider than your shoulders, hip and backside into them rather than your chest. In a non-checking game, hold your position and never bump or drive into them; in a CARHA adult league, avoid the contact altogether, because CARHA penalises not avoiding it.
+**Then keep the puck you have.** Coaches rank protection above every deke. With a checker on you, put the puck on your far side, feet wider than your shoulders, side-on with hip and backside to them rather than your chest. In a non-checking game, hold your position and never bump or drive into them; in a CARHA adult league, avoid the contact altogether, because CARHA penalises not avoiding it.
 
 On the wall, skates parallel to the boards, forearm and hip to the wall. Never turn your back to anyone coming at you and never duck. [Side-on into the checker](#side-on-into-the-checker) explains why.
 
@@ -442,7 +442,7 @@ Low and wide is hard to move, because leverage often beats strength in a board b
 
 ### Side-on into the checker
 
-**In short:** Where checking is allowed, turn side-on, hip and backside into the pressure, puck on your far side; never turn your back or duck.
+**In short:** Where checking is allowed, turn side-on, hip and backside to the pressure, puck on your far side; never turn your back or duck.
 
 ```facts
 Position: Side-on, outside of your hip and backside to the pressure, not your chest
@@ -458,7 +458,7 @@ Rule: In Hockey Canada's non-checking divisions — U13 and below, female hockey
 Rule: In USA Hockey non-checking games (12U and below, girls' and women's, non-check adult), hold position, never drive your hip in: overt hip, shoulder, forearm or torso action is a minor (604(c)); if reckless, a major and game misconduct (604(d)), so plan on a match (602(a), 604(e))
 ```
 
-Turn side-on so your **backside and the outside of your hip** are into the pressure, not your chest. Reasons:
+Turn side-on so your **backside and the outside of your hip** face the pressure, not your chest. Reasons:
 
 - Your hip and rear end are the strongest, widest surface you own.
 - Turned side-on, you cannot be stripped through the front.
@@ -536,7 +536,7 @@ The NHL, the IIHF and the PWHL put force in the definition — NHL **Rule 59.1**
 
 ```facts
 Key: Protection buys time, not a place to live — once it has bought you that time, get out
-Technique: From side-on with your weight low, spin away from the checker, pushing off the outside edge of the outside skate
+Technique: From side-on with your weight low, spin away from the checker, pushing off the outside edge of the outside skate — only off a checker already leaning on you, never one still coming at you
 Technique: The outside skate is the one further from the side you are turning toward; its outside edge is the little-toe side
 Options: Or take a tight turn across their path, so your body stays between them and the puck throughout
 Read: Spin the moment you feel them lean in — spin before they commit and they simply follow you
@@ -545,7 +545,7 @@ Key: The spin-off and the tight turn are both edge-work moves before they are ha
 
 Protection is a way to buy time, not a place to live. Once it has bought you that time, get out.
 
-- **The spin-off / pivot.** From side-on, hip toward the checker and weight low, rotate away from them and take the puck with you. The push comes off the **outside edge of the outside skate**. For **skates and edges**, "outside" is defined relative to the *turn*, not to the checker or the boards ("outside **shoulder**", later in this document, is the different, boards-relative sense). As in [Skating](skating.md#the-two-foot-hockey-stop), the **outside skate is the one further from the side you are turning toward**, and its **outside edge** is the little-toe side. Turning left, that is the little-toe side of your right blade, and driving against it throws your body left. Their momentum is going into where you were; you are already leaving.
+- **The spin-off / pivot.** From side-on, hip toward the checker and weight low, rotate away from them and take the puck with you. Spin only off a checker already leaning on you, never off one still coming at you, whatever their speed: mid-spin your back is to them. The push comes off the **outside edge of the outside skate**. For **skates and edges**, "outside" is defined relative to the *turn*, not to the checker or the boards ("outside **shoulder**", later in this document, is the different, boards-relative sense). As in [Skating](skating.md#the-two-foot-hockey-stop), the **outside skate is the one further from the side you are turning toward**, and its **outside edge** is the little-toe side. Turning left, that is the little-toe side of your right blade, and driving against it throws your body left. Their momentum is going into where you were; you are already leaving.
 - **The tight turn.** Cut across the checker's path rather than away from it, so that your body stays between them and the puck through the whole turn.
 - **Time it against their commitment.** Spin the moment you feel them lean in. If you spin before they commit, they simply follow you.
 
@@ -1081,7 +1081,7 @@ document, that is named too.*
    *(§Your feet and body are part of your handling)*
 
 3. You are racing a checker to a puck on the wall and they are arriving at speed.
-   Everything under puck protection tells you to get side-on with your hip and backside into the
+   Everything under puck protection tells you to get side-on with your hip and backside to the
    pressure. Why does none of it apply here, and what do you do instead — and
    do the turned-back and ducking prohibitions relax if the checker is coming
    slowly?
@@ -1125,7 +1125,7 @@ document, that is named too.*
 
 1. **Whenever the puck is on your stick, get your hands off your body — top hand out in front of your chest, bottom hand loose.** A hand on your hip leaves no far side for the puck, and a squeezing hand cannot feel it. Handle all around your body, front-to-back too.
 2. **Every time you have the puck, play with your head up.** A player staring at the puck cannot see the checker coming, and gets hit hard. Get there by feel — the toe, middle and heel of the blade by touch — not by forcing your eyes up.
-3. **With a checker on you: puck far side, hip and backside into them.** In a non-checking game, hold position and never bump or drive in; under CARHA, avert contact. A violent bump can eject you, an injuring one does under Hockey Canada and CARHA, and under USA Hockey and CARHA ejection costs at least the next game. Under USA Hockey, plan on a match and a likely multi-game suspension if reckless.
+3. **With a checker on you: puck far side, side-on with hip and backside to them.** In a non-checking game, hold position and never bump or drive in; under CARHA, avert contact. A violent bump can eject you, an injuring one does under Hockey Canada and CARHA, and under USA Hockey and CARHA ejection costs at least the next game. Under USA Hockey, plan on a match and a likely multi-game suspension if reckless.
 4. **On the wall, take the contact along your side — skates parallel to the boards, forearm and hip to the wall, head up.** ⚠️ **Never turn your back to anyone coming at you and never duck**: a turned back makes it a hit from behind, and a head-down collision can injure your neck at walking speed.
 5. **Before you reach a puck under pressure, know your out.** Protection buys a second, not a minute. Decide who you are passing to — or where you are rimming, reversing or chipping it — before your stick touches the puck.
 6. **Low in the offensive zone with a defender on you, keep your feet and the puck moving.** Look first for a teammate at the net front; otherwise cut back up the wall or pass back to a teammate behind you. If the defender turns or over-commits, walk out to the net. How long you stay low is your team's system.
