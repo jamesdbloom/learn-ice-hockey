@@ -83,7 +83,14 @@ can ship once it has been reviewed.
 - **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
   fix).
 - **No checker** for labels crossing painted lines.
-- **check_caption_echo only compares a caption with the block ABOVE it.** A caption that repeats the paragraph below it is invisible to it, as the risk_management cross-ice case showed. `--show` takes an integer, not a diagram id. Extend it to compare the following block too (change between waves).
+- **Caption echoes with the paragraph BELOW (check_caption_echo extended 23 Oct; 14 hits, read before cutting):**
+  - zone_entries: dump-hard-rim 30% (the rim/reverse definition is repeated), dump-cross-corner 22% (the overlap is an honest disclosure — keep), dump-flip-over-trap, dump-soft-area;
+  - breakouts: d-to-d, up, stretch-pass, rim;
+  - defender-two-on-one;
+  - nz-pressure;
+  - defending_the_rush: rush-trailer, 3-on-2-default, 2-on-2;
+  - goalie-fifty-fifty-puck.
+  Cut only narrative restatement, never definitions, disclosures or safety limbs.
 - **dz-walk-down-man "goes with the carrier"** label appears to cross the blue line at every width;
   confirm in a browser.
 - **Site look owed:** the 🇬🇧 mid-paragraph in conditioning's Key focus; the special_teams bold run.
@@ -96,7 +103,7 @@ can ship once it has been reviewed.
 
 ## Renderer and podcast tooling
 
-- **md_to_speech `_rule_number_opens_sentence`** treats a possessive "IIHF's." as the letter "s.", so a rule number after a possessive is not capitalised (fixed only inside the new capitals pass).
+- **md_to_speech "U.S." is not treated as an abbreviation**, despite the `_NON_TERMINAL_ABBREVIATIONS` comment: a rule number after "U.S." would be capitalised. Low priority; no corpus instance is known.
 - **synthesize_style_b.py has no `--doc-id`:** only matters if production is tracked by doc id. Low.
 
 ## Checkers (scripts/ — change between waves, never during one)

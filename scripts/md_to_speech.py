@@ -610,6 +610,13 @@ _NON_TERMINAL_ABBREVIATIONS = frozenset("""
 
 _SENTENCE_LEAD_CHARS = " \t\n([{\"'“‘⚠❗🚫️"
 
+#: A word ending in a possessive "'s." -- "the IIHF's.", "the NHL’s." -- ends a
+#: sentence. Without this the straight-apostrophe form read as the single letter
+#: "s." (an initial) and a rule number after it stayed lower case.
+#: Shared by both sentence-start tests; `_sentence_opens_at` reaches it through
+#: `_rule_number_opens_sentence`.
+_POSSESSIVE_END_RE = re.compile(r"\w['’]s\.$")
+
 
 def _rule_number_opens_sentence(before: str, at_start: bool) -> bool:
     """True when a rule number following `before` begins a sentence.
@@ -629,6 +636,8 @@ def _rule_number_opens_sentence(before: str, at_start: bool) -> bool:
     if not core or core[-1] not in ".!?":
         return False
     if core[-1] == ".":
+        if _POSSESSIVE_END_RE.search(core):
+            return True       # a possessive ("the IIHF's."), not the letter "s."
         word = re.search(r"(?:^|[\s(\[\"“'‘—–-])((?:[A-Za-z]\.)*[A-Za-z]+)\.$", core)
         if word:
             bare = word.group(1).replace(".", "").lower()
@@ -2726,7 +2735,7 @@ def _sentence_opens_at(full: str, pos: int, at_start: bool, source_ok: bool = Fa
     """True when the lower-case letter at `full[pos]` begins a spoken sentence.
 
     Uses `_rule_number_opens_sentence` (abbreviations, single letters, clause
-    letters) and adds what a WORD needs and a rule number did not: an ellipsis
+    letters, possessives) and adds what a WORD needs and a rule number did not: an ellipsis
     inside a quotation ("any attempt... to make") does not end a sentence; nor
     does a roman list marker or "Sit.". Two cases are AMBIGUOUS for source words
     and are decided only for renderer-produced text (`source_ok`): a quoted
@@ -2764,8 +2773,6 @@ def _sentence_opens_at(full: str, pos: int, at_start: bool, source_ok: bool = Fa
         return False
     if re.search(r"(?:^|\s)(?:et )?al\.$", tail):
         return False          # "Lignell et al. (2018)", "Delrue et al. vignette"
-    if re.search(r"\w['’]s\.$", tail):
-        return True           # a possessive ("the IIHF's."), not the letter "s."
     return _rule_number_opens_sentence(full[max(0, j - 200):pos], at_start)
 
 
@@ -4895,6 +4902,13 @@ def self_test() -> int:
         ('"Rule 63.2. talks about"', False, '"Rule sixty-three point two. talks about"'),
         ("differs from the IIHF's. (§Overtime)", False,
          "differs from the IIHF's. (Section Overtime)"),
+        # ⚠️ A possessive before a RULE NUMBER: the rule-number pass read "IIHF's." as
+        # the single letter "s." and left the number lower case. The capitals pass
+        # covered it audibly; the helper is now shared, so both passes agree.
+        ("from the IIHF's. 48.1 says", False,
+         "from the IIHF's. Forty-eight point one says"),
+        ("the NHL’s. 601(a) adds", False,
+         "the NHL’s. Six hundred and one, clause a adds"),
         ("Rule 8.3(a). 8.3(b) is a major", False,
          "Rule eight point three, clause a. Eight point three, clause b is a major"),
     )
@@ -4903,6 +4917,22 @@ def self_test() -> int:
         if actual != expected:
             failures += 1
             print(f"FAIL  {source!r} (at_start={at_start})\n  expected {expected!r}\n  actual   {actual!r}")
+
+    # ⚠️ The possessive must be decided by the SHARED helper, not only by the later
+    # capitals pass: the end-to-end strings above passed before the fix because that
+    # pass covered for it. Pin the helper and the rule-number pass's own counter.
+    for before, expected in (
+        ("from the IIHF's. ", True), ("the NHL’s. ", True),
+        ("clause d. ", True), ("see p. ", False),
+    ):
+        if _rule_number_opens_sentence(before, False) != expected:
+            failures += 1
+            print(f"FAIL  _rule_number_opens_sentence({before!r}) != {expected}")
+    counted = Counter()
+    to_speech("from the IIHF's. 48.1 says", counted, False)
+    if counted["rule-number-sentence-start"] != 1:
+        failures += 1
+        print(f"FAIL  possessive rule number not capitalised by the rule pass: {dict(counted)}")
 
     # Number words
     for value, expected in (

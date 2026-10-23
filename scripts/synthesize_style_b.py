@@ -49,19 +49,17 @@ required:
      demuxer. ⚠️ `build_podcast_audio.py`'s header is emphatic that lossy->lossy
      compounds, and it is right; nothing here decodes and re-encodes a fragment.
 
-⚠️ THE SAMPLE-EXACT ROUTE IS SHUT ON THIS ACCOUNT AND THAT IS MEASURED, NOT
-ASSUMED. Requesting `pcm_44100` — which would concatenate gaplessly as raw
-samples — returns 403 `output_format_not_allowed`: *"Output format 'pcm_44100' is
-only available on the Pro tier and above."* So mp3 is not a preference here, it is
-the only lossless-stitch option available, and each seam therefore carries the
-mp3 frame padding of one boundary (measured: ~87 ms across a single join). That
-padding lands on a paragraph break by construction, which is where the script was
-already pausing. ⚠️ If the account is ever upgraded, `--format wav_44100` is the
-better answer — the stitcher handles WAV as it handles mp3 — but raw `pcm_*` is
-HEADERLESS and the concat demuxer cannot read it without being told the sample
-rate, channels and width. `tts_sample.py`'s Gemini branch carries the same trap
-and the same warning. **Do not assume `--format pcm_44100` works here; it is
-untested and will need a branch in `stitch()`.**
+⚠️ THE SAMPLE-EXACT ROUTE. `pcm_*` (e.g. `--format pcm_44100`) returns raw,
+HEADERLESS signed 16-bit little-endian mono samples. It needs the Pro tier — on a
+lower tier the API answers 403 `output_format_not_allowed`. Raw s16le chunks join
+GAPLESSLY by plain byte concatenation, so for `pcm_*` the stitcher does exactly
+that and then wraps the joined samples as WAV with
+`ffmpeg -f s16le -ar <rate> -ac 1`, the rate taken from the format string. The
+ffmpeg concat demuxer is NOT used for `pcm_*`: it cannot read headerless audio
+without being told rate, channels and width, and it failed on the 23 October 2026
+`finding_more_ice` run. A `pcm_*` run therefore requires a `.wav` output. mp3
+formats still go through the concat demuxer with `-c copy`, and each mp3 seam
+carries one boundary's frame padding (measured: ~87 ms across a single join).
 
 CREDENTIALS — READ, NEVER WRITTEN DOWN
 --------------------------------------
@@ -158,8 +156,8 @@ API_HARD_MAX_CHARS = 10000
 # to carry a sentence or two of cadence, short enough not to be its own essay.
 CONTINUITY_CHARS = 500
 
-# mp3 at 128 kbps mono is what this account can request; see the docstring for
-# why the sample-exact PCM route is shut.
+# mp3 at 128 kbps mono works on every tier. `pcm_*` (Pro tier) is the gapless,
+# sample-exact route; see the docstring for how it is stitched.
 DEFAULT_FORMAT = "mp3_44100_128"
 
 API_ROOT = "https://api.elevenlabs.io/v1/text-to-speech"
@@ -365,46 +363,118 @@ def synthesise(text: str, key: str, args, settings: dict,
 
 # ──────────────────────────────── stitching ────────────────────────────────
 
+def run_ffmpeg_tool(cmd: list[str], what: str) -> subprocess.CompletedProcess:
+    """Run ffmpeg/ffprobe; a missing binary is a Failure with a message, not a traceback."""
+    try:
+        return subprocess.run(cmd, capture_output=True, text=True)
+    except FileNotFoundError:
+        raise Failure(f"{cmd[0]} is not installed or not on PATH (needed to {what})") from None
+
+
+def tool_error(proc: subprocess.CompletedProcess) -> str:
+    """ffmpeg's own error, or an explicit note that it gave none — never an empty string."""
+    err = (proc.stderr or "").strip()
+    return f"exit {proc.returncode}: {err[-600:]}" if err else f"exit {proc.returncode}, no stderr"
+
+
 def probe_duration(path: pathlib.Path) -> float:
-    proc = subprocess.run(
+    proc = run_ffmpeg_tool(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-         "-of", "default=nw=1:nk=1", str(path)],
-        capture_output=True, text=True,
-    )
+         "-of", "default=nw=1:nk=1", str(path)], "measure duration")
     if proc.returncode != 0 or not proc.stdout.strip():
-        raise Failure(f"ffprobe could not read {path.name}: {proc.stderr.strip()[:200]}")
-    return float(proc.stdout.strip())
+        raise Failure(f"ffprobe could not read {path.name} ({tool_error(proc)})")
+    try:
+        return float(proc.stdout.strip())
+    except ValueError:
+        raise Failure(f"ffprobe returned no usable duration for {path.name}: "
+                      f"{proc.stdout.strip()[:100]!r}") from None
 
 
-def stitch(parts: list[pathlib.Path], out: pathlib.Path, work: pathlib.Path) -> None:
-    """Concatenate without re-encoding, then prove the result is not truncated.
+PCM_FORMAT = re.compile(r"^pcm_(\d+)$")
+PCM_SAMPLE_BYTES = 2  # ElevenLabs pcm_* is signed 16-bit little-endian, mono
 
-    ⚠️ `-c copy` is the whole point: every fragment is already lossy, and
-    `build_podcast_audio.py`'s header is right that a second encode compounds the
-    artefacts. Nothing here decodes a fragment.
-    """
-    listing = work / "concat.txt"
-    listing.write_text("".join(f"file '{p.resolve()}'\n" for p in parts), encoding="utf-8")
-    proc = subprocess.run(
-        ["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0",
-         "-i", str(listing), "-c", "copy", str(out)],
-        capture_output=True, text=True,
-    )
-    if proc.returncode != 0:
-        raise Failure(f"ffmpeg concat failed: {proc.stderr.strip()[:400]}")
-    if not out.exists() or out.stat().st_size == 0:
-        raise Failure(f"ffmpeg reported success but {out} is missing or empty")
 
+def pcm_rate(fmt: str) -> int | None:
+    """The sample rate of a `pcm_<rate>` format, or None for anything else."""
+    m = PCM_FORMAT.match(fmt)
+    return int(m.group(1)) if m else None
+
+
+def check_duration(expected: float, actual: float) -> None:
     # ⚠️ THE GUARD THAT MATTERS. ffmpeg exits 0 on a truncated concat, and a short
     # episode is the failure that sounds exactly like a complete one: it plays,
     # the voice is right, and it stops. Compare against the parts.
-    expected = sum(probe_duration(p) for p in parts)
-    actual = probe_duration(out)
     if actual < expected * 0.99:
         raise Failure(
             f"stitched audio is {actual:.1f}s against {expected:.1f}s of parts — "
             f"a {expected - actual:.1f}s shortfall. This is a PARTIAL EPISODE; "
             f"the chunks are kept so nothing needs re-synthesising.")
+
+
+def stitch_pcm(parts: list[pathlib.Path], out: pathlib.Path, work: pathlib.Path,
+               rate: int) -> None:
+    """Join raw s16le mono chunks by byte concatenation, then wrap them as WAV.
+
+    ⚠️ Raw PCM is headerless, so byte concatenation IS a gapless, sample-exact
+    join — no decode, no re-encode. ffmpeg only adds the RIFF header
+    (`-c:a pcm_s16le` copies the samples unchanged).
+    """
+    if out.suffix.lower() != ".wav":
+        raise Failure(f"--format pcm_{rate} produces raw samples and is written as WAV; "
+                      f"give an --out ending in .wav, not {out.name}")
+    total = 0
+    for p in parts:
+        size = p.stat().st_size
+        if size % PCM_SAMPLE_BYTES:
+            raise Failure(f"{p.name} is {size:,} bytes — not a whole number of 16-bit "
+                          f"samples, so it is not intact s16le PCM")
+        total += size
+    joined = work / "joined.pcm"
+    with joined.open("wb") as dst:
+        for p in parts:
+            with p.open("rb") as src:
+                while block := src.read(1 << 20):
+                    dst.write(block)
+    if joined.stat().st_size != total:
+        raise Failure(f"joined PCM is {joined.stat().st_size:,} bytes against "
+                      f"{total:,} bytes of parts")
+    try:
+        proc = run_ffmpeg_tool(
+            ["ffmpeg", "-loglevel", "error", "-y", "-f", "s16le", "-ar", str(rate),
+             "-ac", "1", "-i", str(joined), "-c:a", "pcm_s16le", str(out)],
+            "wrap the joined PCM as WAV")
+    finally:
+        joined.unlink(missing_ok=True)
+    if proc.returncode != 0:
+        raise Failure(f"ffmpeg could not wrap the joined PCM as WAV ({tool_error(proc)})")
+    if not out.exists() or out.stat().st_size == 0:
+        raise Failure(f"ffmpeg reported success but {out} is missing or empty")
+    check_duration(total / (rate * PCM_SAMPLE_BYTES), probe_duration(out))
+
+
+def stitch(parts: list[pathlib.Path], out: pathlib.Path, work: pathlib.Path,
+           fmt: str) -> None:
+    """Concatenate without re-encoding, then prove the result is not truncated.
+
+    ⚠️ `-c copy` is the whole point: every fragment is already lossy, and
+    `build_podcast_audio.py`'s header is right that a second encode compounds the
+    artefacts. Nothing here decodes a fragment. Headerless `pcm_*` takes its own
+    route, `stitch_pcm()`, because the concat demuxer cannot read it.
+    """
+    rate = pcm_rate(fmt)
+    if rate is not None:
+        stitch_pcm(parts, out, work, rate)
+        return
+    listing = work / "concat.txt"
+    listing.write_text("".join(f"file '{p.resolve()}'\n" for p in parts), encoding="utf-8")
+    proc = run_ffmpeg_tool(
+        ["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0",
+         "-i", str(listing), "-c", "copy", str(out)], "concatenate the chunks")
+    if proc.returncode != 0:
+        raise Failure(f"ffmpeg concat failed ({tool_error(proc)})")
+    if not out.exists() or out.stat().st_size == 0:
+        raise Failure(f"ffmpeg reported success but {out} is missing or empty")
+    check_duration(sum(probe_duration(p) for p in parts), probe_duration(out))
 
 
 # ────────────────────────────────── main ───────────────────────────────────
@@ -456,6 +526,10 @@ def main(argv=None) -> int:
 
     if not args.dry_run and not args.out:
         ap.error("--out is required unless --dry-run")
+    # ⚠️ Checked BEFORE any request: discovering at stitch time that a pcm_* run
+    # cannot be written would be credits spent for nothing.
+    if args.out and pcm_rate(args.format) is not None and args.out.suffix.lower() != ".wav":
+        ap.error(f"--format {args.format} is written as WAV; --out must end in .wav")
 
     body = extract_body(args.script)
     chunks = split_script(body, args.max_chunk_chars)
@@ -490,7 +564,9 @@ def main(argv=None) -> int:
     cache.mkdir(parents=True, exist_ok=True)
     args.out.parent.mkdir(parents=True, exist_ok=True)
 
-    key = api_key()
+    # ⚠️ The key is fetched only when a chunk actually needs synthesising, so a
+    # run served entirely from the cache touches neither the API nor Secrets Manager.
+    key: str | None = None
     ext = "mp3" if args.format.startswith("mp3") else args.format.split("_")[0]
 
     print(f"\n  cache           {cache}")
@@ -515,6 +591,8 @@ def main(argv=None) -> int:
         nxt = None if args.no_continuity or i == len(chunks) - 1 else chunks[i + 1][:CONTINUITY_CHARS]
         ids = [] if args.no_continuity else request_ids
         try:
+            if key is None:
+                key = api_key()
             audio, rid, cost = synthesise(text, key, args, settings, prev, nxt, ids)
         except Failure as e:
             # ⚠️ Loudly, and with nothing written. The chunks already synthesised
@@ -538,7 +616,7 @@ def main(argv=None) -> int:
     if len(parts) != len(chunks):
         raise Failure(f"{len(parts)} parts for {len(chunks)} chunks — refusing to stitch")
 
-    stitch(parts, args.out, cache)
+    stitch(parts, args.out, cache, args.format)
     duration = probe_duration(args.out)
     print(f"\n  wrote           {args.out}  "
           f"({args.out.stat().st_size / 1e6:.1f} MB, {hms(duration)})")
@@ -560,3 +638,8 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\nsynthesize_style_b: interrupted; cached chunks are kept", file=sys.stderr)
         sys.exit(130)
+    except Exception as e:  # ⚠️ never exit non-zero without saying why
+        import traceback
+        traceback.print_exc()
+        print(f"synthesize_style_b: FAILED — {type(e).__name__}: {e}", file=sys.stderr)
+        sys.exit(1)

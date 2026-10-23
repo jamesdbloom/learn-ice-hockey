@@ -46,7 +46,8 @@ it paraphrases**, and a listener hears the same sentence twice in a row.
 METHOD. For every `![](diagram:slug)` marker in `content/`, take the prose unit
 immediately above it -- the paragraph, the blockquote paragraph or the tight list, never
 a table, a facts block or a second blockquote paragraph (see `block_above`) -- and compare 5-word shingles against the
-caption's. Captions are
+caption's. Then do the same for the prose unit immediately BELOW it (see `block_below`),
+and report those hits in a SEPARATE, labelled section. Captions are
 read from the `.mjs` SOURCES via check_caption_negations.captions(), never from
 `site/src/data/diagrams.json` -- the JSON is a build product and goes stale the moment a
 caption is edited.
@@ -56,6 +57,21 @@ caption is edited.
     N times the caption's length, because a 25-word caption scoring against a 1,754-word
     block tells you nothing. The first version of this measurement had no such filter and
     its top four rows were all artefacts of exactly that.
+
+⚠️  THE BLOCK BELOW IS COMPARED TOO (added 23 Oct 2026). The first version looked only
+    ABOVE the marker, so a caption repeating the paragraph that FOLLOWS the diagram was
+    invisible -- and one was found by hand in `risk_management.md` (the cross-ice case,
+    since fixed). A listener hears caption-then-paragraph just as adjacently as
+    paragraph-then-caption. Below-block hits print in their own section, tagged
+    `[below]`; the above-block section and its header lines are unchanged in format, so
+    a before/after diff of the old output still lines up. A caption can appear in both.
+
+`--show` takes EITHER an integer (shared runs printed per hit, default 3) OR a diagram
+id, which prints every marker of that diagram with its above AND below score and all
+shared runs, ignoring `--min-share` and saying when `--max-ratio` skipped a side.
+
+Positional PATHS (files or directories) replace the default `content/` -- for a
+synthetic test or a single document. Exit status is always 0.
 """
 from __future__ import annotations
 import re, sys, glob, pathlib, argparse, importlib.util
@@ -119,44 +135,139 @@ def block_above(lines: list[str], i: int) -> str:
     return " ".join(reversed(out))
 
 
+def block_below(lines: list[str], i: int) -> str:
+    """The prose unit a listener hears directly AFTER the diagram at line i.
+
+    The mirror of `block_above`, with the same boundaries: blank lines and further
+    diagram markers directly below are skipped (so the first of two stacked diagrams is
+    compared with the prose after the pair); the unit stops at a blank line, a heading, a
+    code fence, a bare `>` line or another marker; a table or a code fence (a ```facts
+    block is its own layer) directly below returns nothing. A tight list is kept whole,
+    for the reason `block_above` gives.
+    """
+    j = i + 1
+    n = len(lines)
+    while j < n and (not lines[j].strip() or MARK.match(lines[j].strip())):
+        j += 1
+    if j >= n:
+        return ""
+    first = lines[j].strip()
+    if first.startswith('|') or first.startswith('```') or first.startswith('#'):
+        return ""
+    out = []
+    while j < n:
+        s = lines[j].strip()
+        if (not s or s.startswith('#') or s.startswith('```')
+                or re.fullmatch(r'(?:>\s*)+', s) or MARK.match(s)):
+            break
+        out.append(lines[j])
+        j += 1
+    return " ".join(out)
+
+
+def compare(cap: str, para: str, max_ratio: float):
+    """(share, caption words, block words, shared runs), or None when not comparable."""
+    cws, pws = words(cap), words(para)
+    if len(pws) < 8 or len(pws) > max_ratio * len(cws):
+        return None
+    cs = shingles(cws)
+    if not cs:
+        return None
+    shared = cs & shingles(pws)
+    return len(shared) / len(cs), len(cws), len(pws), sorted(shared)
+
+
+def md_files(paths: list[str]) -> list[str]:
+    if not paths:
+        return sorted(glob.glob(str(ROOT / "content" / "**" / "*.md"), recursive=True))
+    out = []
+    for p in paths:
+        pp = pathlib.Path(p)
+        if pp.is_dir():
+            out += glob.glob(str(pp / "**" / "*.md"), recursive=True)
+        else:
+            out.append(str(pp))
+    return sorted(out)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("paths", nargs="*",
+                    help="markdown files or directories to scan (default: content/)")
     ap.add_argument("--max-ratio", type=float, default=3.0,
                     help="skip blocks longer than this multiple of the caption (default 3)")
     ap.add_argument("--min-share", type=float, default=0.10,
                     help="only report captions sharing at least this fraction of their runs")
-    ap.add_argument("--show", type=int, default=3, help="shared runs to print per hit")
+    ap.add_argument("--show", default="3",
+                    help="an integer: shared runs to print per hit (default 3); or a "
+                         "diagram id: print every marker of that diagram, both sides, "
+                         "all shared runs, ignoring --min-share")
     args = ap.parse_args()
 
-    caps = load_captions()
-    rows, markers, compared = [], 0, 0
+    show_slug = None
+    try:
+        show_n = int(args.show)
+    except ValueError:
+        show_slug, show_n = args.show, 10 ** 6
 
-    for f in sorted(glob.glob(str(ROOT / "content" / "**" / "*.md"), recursive=True)):
+    caps = load_captions()
+    if show_slug is not None and show_slug not in caps:
+        print(f"check_caption_echo: no caption found for diagram id '{show_slug}' "
+              f"(ids are read from site/src/diagrams/*.mjs)")
+        return 0
+
+    rows, below_rows, markers, compared, compared_below = [], [], 0, 0, 0
+    detail = []   # for --show <slug>
+
+    for f in md_files(args.paths):
         lines = pathlib.Path(f).read_text().splitlines()
         for i, line in enumerate(lines):
             m = MARK.match(line.strip())
             if not m:
                 continue
             markers += 1
-            cap = caps.get(m.group(1))
+            slug = m.group(1)
+            cap = caps.get(slug)
             if not cap:
                 continue
-            para = block_above(lines, i)
-            cws, pws = words(cap), words(para)
-            if len(pws) < 8 or len(pws) > args.max_ratio * len(cws):
-                continue
-            compared += 1
-            cs = shingles(cws)
-            if not cs:
-                continue
-            shared = cs & shingles(pws)
-            share = len(shared) / len(cs)
-            if share >= args.min_share:
-                rows.append((share, m.group(1), len(cws), len(pws),
-                             pathlib.Path(f).name, sorted(shared)))
+            fname = pathlib.Path(f).name
+            above = compare(cap, block_above(lines, i), args.max_ratio)
+            below = compare(cap, block_below(lines, i), args.max_ratio)
+            if above:
+                compared += 1
+                if above[0] >= args.min_share:
+                    rows.append((above[0], slug, above[1], above[2], fname, above[3]))
+            if below:
+                compared_below += 1
+                if below[0] >= args.min_share:
+                    below_rows.append((below[0], slug, below[1], below[2], fname, below[3]))
+            if slug == show_slug:
+                detail.append((f, i + 1, above, below))
+
+    if show_slug is not None:
+        print(f"check_caption_echo: diagram '{show_slug}', {len(detail)} marker(s), "
+              f"caption {len(words(caps[show_slug]))}w\n")
+        for f, ln, above, below in detail:
+            rel = pathlib.Path(f).resolve()
+            try:
+                rel = rel.relative_to(ROOT)
+            except ValueError:
+                pass
+            print(f"  {rel}:{ln}")
+            for side, res in (("above", above), ("below", below)):
+                if res is None:
+                    print(f"    [{side}]  not compared (no prose block, under 8 words, "
+                          f"or over {args.max_ratio:g}x the caption)")
+                    continue
+                share, cw, pw, shared = res
+                print(f"    [{side}]  {share*100:5.1f}%  (caption {cw}w, block {pw}w)")
+                for sh in shared:
+                    print(f"           \"{' '.join(sh)}\"")
+        return 0
 
     rows.sort(reverse=True)
+    below_rows.sort(reverse=True)
     print(f"check_caption_echo: {markers} markers, {compared} compared "
           f"(the rest had no prose block above, or one over {args.max_ratio:g}x the caption)")
     print(f"  {len(rows)} caption(s) sharing >= {args.min_share:.0%} of their "
@@ -164,8 +275,16 @@ def main() -> int:
 
     for share, slug, cw, pw, fname, shared in rows:
         print(f"  {share*100:5.1f}%  {slug}  (caption {cw}w, block {pw}w)  {fname}")
-        for sh in shared[:args.show]:
+        for sh in shared[:show_n]:
             print(f"           \"{' '.join(sh)}\"")
+
+    print(f"\n  BELOW: {compared_below} compared against the prose block AFTER the marker; "
+          f"{len(below_rows)} caption(s) sharing >= {args.min_share:.0%} of their "
+          f"{N}-word runs with it\n")
+    for share, slug, cw, pw, fname, shared in below_rows:
+        print(f"  [below]  {share*100:5.1f}%  {slug}  (caption {cw}w, block {pw}w)  {fname}")
+        for sh in shared[:show_n]:
+            print(f"                    \"{' '.join(sh)}\"")
 
     print("\n⚠️  A WORKLIST. Read every hit and ask WHAT KIND of overlap it is.")
     print("⚠️  A region definition must match its owner word for word -- do NOT reword it.")
