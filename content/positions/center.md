@@ -14,7 +14,7 @@
 
 **In their end, play the slot and finish at the net.** Shoot from between the circles, and pass across the middle to make the goalie move. Keep moving until your defenceman winds up, then plant in front of the goalie's eyes and go for the rebound — around the goalie, never into them.
 
-**Be first in on the forecheck, and steer rather than hit.** Arrive under control, not off a run-up — even two hard strides can be charging — and drive at the carrier on an angle that pushes them toward one boards, so your winger knows where to pin the puck. That is the 2-1-2; a 1-2-2 sends only one forward in, so ask.
+**Be first in on the forecheck, and steer rather than hit.** Arrive under control, not off a run-up — even two hard strides can be charging — and drive at the carrier on an angle that sends them toward one boards, so your winger knows where to pin the puck. That is the 2-1-2; a 1-2-2 sends only one forward in, so ask.
 
 **Under pressure, put the puck to the outside.** The middle of your own zone and the middle of the neutral zone are the worst places on the ice to try to beat somebody. Rim it, chip it off the boards, or give it to a winger on the wall and go and get it back.
 
@@ -43,7 +43,7 @@ You are the link between the other four skaters: you play the middle of the ice 
 
 **In the offensive zone the slot is your ice — use it.** Get open between the circles, shoot when you have space there, screen the goalie when a point shot is coming, and go to the net for the rebound under control, taking the ice in front of the goalie and never the goalie. On the coaching-consensus ranges in [Shooting](../technique/shooting.md) a slot shot is worth several times a perimeter one; the source names no dataset, so trust the size of the gap, not the decimals. The limits are the crease and the goalie: screen from outside the crease, with your skates off the red crease line and not merely out of the blue paint, and never so tight that the goalie cannot move. What crossing either line costs differs by rulebook.
 
-**On the forecheck you are usually first in, and the job is the angle, not the hit.** Drive at the carrier on a line that pushes them toward one boards, so your strong-side winger knows where the puck is going. Steering is legal in every league; a push or a body check may not be in yours, and a run-up at a carrier, even two hard strides, can be charging. F1, F2 and F3 are taken in order of arrival, so if a winger gets there first you support. The 2-1-2 assumed here is a coaching choice — [Forechecking Systems](../systems/forechecking_systems.md) sets out the alternatives.
+**On the forecheck you are usually first in, and the job is the angle, not the hit.** Drive at the carrier on a line that sends them toward one boards, so your strong-side winger knows where the puck is going. Steering is legal in every league; a push or a body check may not be in yours, and a run-up at a carrier, even two hard strides, can be charging. F1, F2 and F3 are taken in order of arrival, so if a winger gets there first you support. The 2-1-2 assumed here is a coaching choice — [Forechecking Systems](../systems/forechecking_systems.md) sets out the alternatives.
 
 **Getting the puck to the outside survives every system.** The middle of your own zone is the most expensive place to lose it, and the neutral zone is where odd-man rushes are made — both **coaching consensus rather than a measured ranking**. Under pressure in either, move it to the boards or behind your own net first, and distribute from there.
 

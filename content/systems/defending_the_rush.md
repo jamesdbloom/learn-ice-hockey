@@ -13,7 +13,7 @@
 
 **Watch the chest and hips, not the puck.** The puck, stick, head and eyes can all fake you; the torso has to go where the body goes.
 
-**Take the middle and push the carrier outside.** Sit slightly inside them with your stick flat in the passing lane, so the only route they see is toward the wall. Steer with your route, not your body, and pin the puck, not the player.
+**Take the middle and steer the carrier outside.** Sit slightly inside them with your stick flat in the passing lane, so the only route they see is toward the wall. Steer with your route, not your body, and pin the puck, not the player.
 
 **Backcheck to the inside of your man, and make sure somebody owns the middle.** Skate to their inside hip, not their back, and pick up the attacker driving the middle without the puck — the one most often missed.
 
