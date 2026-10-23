@@ -90,10 +90,10 @@ can ship once it has been reviewed.
 
 ## Podcasts
 
-- **Owner sign-off before Finding More Ice gets episodes:** the feed is numbered in site order, so publishing its episodes renumbers 6 live titles ("Off the Ice N ·" for mental_game, team_play_and_culture and how_to_watch_hockey, in both formats). It also shifts the itunes:episode and itunes:order of every later item, including the 13 Basics episodes. pubDates and guids stay frozen (podcast-feed.ts DATED_DOC_IDS). Ask the owner before publishing those episodes.
+- **Finding More Ice Detailed (ElevenLabs) episode:** the NotebookLM episode shipped 23 Oct. The Style B single-voice episode is still to make (it needs a script, the owner's listen, then synthesis).
 - **Feed guard gap:** adding a new structure.json *section* would renumber the Basics season (BASICS_SEASON = layers.length + 1) with no guard.
 
-- **NotebookLM batch 6 is READY (23 Oct, from aa73c4a):** `.podcast_queue/notebooklm/remake_2026-10-20/batch6/` holds 8 packs: tracks 06, 07, 11, 12, 15, 22 and 23 (remakes) and 37 Finding More Ice (new). Steps are in that folder's README. Waiting on the owner to generate them in NotebookLM; then process and publish as before (build_podcast_audio, upload, podcast.json). Track 37 needs the owner's OK for the renumbering before it goes in the feed.
+- **"Severe neck pain" in NotebookLM 07 (UK Rules) and 12 (Goaltender):** the page and CRT6 say to treat any neck pain as an ambulance call. The word could not be cut cleanly and the episodes shipped (batch 6, 23 Oct). Owner's call whether to regenerate.
 
 ## Renderer and podcast tooling
 

@@ -52,18 +52,18 @@
       "title": "Rules Primer",
       "section": "Foundation",
       "track": 6,
-      "bytes": 20411711,
-      "duration_s": 2433.7,
-      "audio": "/audio/foundation/rules_primer-feb502bf.m4a"
+      "bytes": 16115030,
+      "duration_s": 1918.7,
+      "audio": "/audio/foundation/rules_primer-923a6dbc.m4a"
     },
     {
       "doc_id": "foundation/uk_rules",
       "title": "UK and England Rules",
       "section": "Foundation",
       "track": 7,
-      "bytes": 19888033,
-      "duration_s": 2371.5,
-      "audio": "/audio/foundation/uk_rules-9cc00804.m4a"
+      "bytes": 18221489,
+      "duration_s": 2172.2,
+      "audio": "/audio/foundation/uk_rules-232e28e3.m4a"
     },
     {
       "doc_id": "foundation/on_ice_communication",
@@ -97,18 +97,18 @@
       "title": "Defender",
       "section": "Positions",
       "track": 11,
-      "bytes": 13034409,
-      "duration_s": 1551.2,
-      "audio": "/audio/positions/defender-d4609ca4.m4a"
+      "bytes": 19993849,
+      "duration_s": 2380.3,
+      "audio": "/audio/positions/defender-959b1810.m4a"
     },
     {
       "doc_id": "positions/goaltender",
       "title": "Goaltender",
       "section": "Positions",
       "track": 12,
-      "bytes": 15850194,
-      "duration_s": 1887.5,
-      "audio": "/audio/positions/goaltender-950e9a1b.m4a"
+      "bytes": 35538205,
+      "duration_s": 4230.5,
+      "audio": "/audio/positions/goaltender-4cc6796d.m4a"
     },
     {
       "doc_id": "positions/switching_positions",
@@ -133,9 +133,9 @@
       "title": "Zone Entries",
       "section": "Systems and Situations",
       "track": 15,
-      "bytes": 16508937,
-      "duration_s": 1971.3,
-      "audio": "/audio/systems/zone_entries-54df4bc5.m4a"
+      "bytes": 15856890,
+      "duration_s": 1888.5,
+      "audio": "/audio/systems/zone_entries-6409a2eb.m4a"
     },
     {
       "doc_id": "systems/offensive_zone_play",
@@ -196,18 +196,18 @@
       "title": "Faceoffs",
       "section": "Systems and Situations",
       "track": 22,
-      "bytes": 16782709,
-      "duration_s": 2001.3,
-      "audio": "/audio/systems/faceoffs-e5f1cd3e.m4a"
+      "bytes": 18296525,
+      "duration_s": 2180.5,
+      "audio": "/audio/systems/faceoffs-04cef1cf.m4a"
     },
     {
       "doc_id": "systems/game_management",
       "title": "Game Management",
       "section": "Systems and Situations",
       "track": 23,
-      "bytes": 18681535,
-      "duration_s": 2224.0,
-      "audio": "/audio/systems/game_management-6e7c5e63.m4a"
+      "bytes": 21500325,
+      "duration_s": 2564.9,
+      "audio": "/audio/systems/game_management-671ad633.m4a"
     },
     {
       "doc_id": "technique/skating",
@@ -327,10 +327,19 @@
       "audio": "/audio/off-the-ice/practice_and_development-e29cdfa1.m4a"
     },
     {
+      "doc_id": "off-the-ice/finding_more_ice",
+      "title": "Finding More Ice",
+      "section": "Off the Ice",
+      "track": 37,
+      "bytes": 18046007,
+      "duration_s": 2151.2,
+      "audio": "/audio/off-the-ice/finding_more_ice-9c55ef26.m4a"
+    },
+    {
       "doc_id": "off-the-ice/mental_game",
       "title": "The Mental Game",
       "section": "Off the Ice",
-      "track": 37,
+      "track": 38,
       "bytes": 26204160,
       "duration_s": 3125.5,
       "audio": "/audio/off-the-ice/mental_game-c7644a05.m4a"
@@ -339,7 +348,7 @@
       "doc_id": "off-the-ice/team_play_and_culture",
       "title": "Team Play and Culture",
       "section": "Off the Ice",
-      "track": 38,
+      "track": 39,
       "bytes": 23247213,
       "duration_s": 2771.2,
       "audio": "/audio/off-the-ice/team_play_and_culture-6691e61a.m4a"
@@ -348,7 +357,7 @@
       "doc_id": "off-the-ice/how_to_watch_hockey",
       "title": "How to Watch Hockey",
       "section": "Off the Ice",
-      "track": 39,
+      "track": 40,
       "bytes": 26634550,
       "duration_s": 3178.6,
       "audio": "/audio/off-the-ice/how_to_watch_hockey-c5239fa4.m4a"
