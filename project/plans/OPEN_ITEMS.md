@@ -13,6 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
+- **SG50c (23 Oct):** re-synthesis of the 7 corrected Style B episodes (background runner, scratchpad sg50_synth.log).
 - **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.
 
 ## Captions and small rules notes (23 Oct)
@@ -63,7 +64,7 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **Turn-back moves worded outside the swept vocabulary (from SG49):** "come back the other way", "change direction", "go back up the boards". Also check winger, defender, breakouts and forechecking for an unlimited wall cutback (OZP, center, puck_handling and skating are done).
+- **Turn-back moves (low, from SG50):** winger, defender, breakouts and forechecking were swept clean, with no ungated wall cutback, curl or spin. Still unswept wordings: "open up to the middle", "roll off", "peel off", "swing away"; also diagram captions (breakout-wheel, breakout-reverse, winger-dz-reverse).
 
 - **USAH contact-with-puck, remaining (minor):** pages not yet swept for "seal", "ride" or "pin" wordings that permit the same act under USA Hockey.
 - **Restated ladders, next candidates (from the SG47 pilot):** breakouts' over-the-glass/delay-of-game ladder (§1 :125, §3 :555-561, §8 :933 and facts); facts blocks restating the no-change ladder five times (each is now a carrier, so a per-line test is needed). The pilot saved about 230 words on one page.
@@ -96,6 +97,15 @@ can ship once it has been reviewed.
 - **Site look owed:** the 🇬🇧 mid-paragraph in conditioning's Key focus; the special_teams bold run.
 
 ## Podcasts
+
+- **Published audio vs the SG44–49 safety corrections (SG50 audit, 23 Oct):**
+  - **ElevenLabs:** 7 scripts were fixed and passed safety review (SHIP), and re-synthesis is in flight: Winger, Switching Positions, Skating, OZP, Puck Handling and Centre Detailed, plus Basics "Carrying the Puck". Each is published once it is checked.
+  - **NotebookLM (whisper transcripts):** three need the owner to regenerate them; prepare a **batch 7** pack from the corrected pages after the content commit.
+    - **REGENERATE, HIGH:** Winger 08:54 "put your back side and your hip into them" (no scope). Body Contact 02:11 "leaning… legal almost everywhere" (no HC/CARHA) and 14:21 "seal that lane with your body". Forechecking 27:26 "seal with body position… a human barricade" (no scope).
+    - **Low:** Puck Handling, OZP, Team Play and Skating (scoped nearby).
+    - **Clean:** Switching Positions and Centre.
+    - **Also heard:** Body Contact 15:21 "fend off… with your free hand… flat palm to block their body" (unscoped).
+    - Confirm each hit by ear before regenerating.
 
 - **Feed guard follow-on (low):** SG40 froze the Basics season (8) and blocks a section-count change. Still unguarded: reordering sections, or moving a document between sections, would renumber the per-document seasons and episodes, and feed titles are not frozen. Only guids and dates are. Decide whether to freeze `itunes:season`/`itunes:episode` for live items.
 
