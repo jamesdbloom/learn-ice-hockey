@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG37 (23 Oct):** goalie bench trip and penalty shot by book; body_contact EIHL trim. Reviews CLEAR; committing.
+(none)
 
 ## New page: Getting Better on Your Own
 
@@ -93,7 +93,7 @@ can ship once it has been reviewed.
 - **Owner sign-off before Finding More Ice gets episodes:** the feed is numbered in site order, so publishing its episodes renumbers 6 live titles ("Off the Ice N ·" for mental_game, team_play_and_culture and how_to_watch_hockey, in both formats). It also shifts the itunes:episode and itunes:order of every later item, including the 13 Basics episodes. pubDates and guids stay frozen (podcast-feed.ts DATED_DOC_IDS). Ask the owner before publishing those episodes.
 - **Feed guard gap:** adding a new structure.json *section* would renumber the Basics season (BASICS_SEASON = layers.length + 1) with no guard.
 
-- **NotebookLM remakes (owner, 22 Oct: remake all seven; owner 22 Oct: do them as a BATCH 6 folder, `.podcast_queue/notebooklm/remake_2026-10-20/batch6/`, AFTER the final content edits to those pages land):** Defenceman, Goalie, Faceoffs, Rules Primer, UK Rules, Game Management, Zone Entries. Generate from the current pages (notebooklm-episode skill / owner), then process and publish as before (build_podcast_audio, upload, podcast.json).
+- **NotebookLM batch 6 is READY (23 Oct, from aa73c4a):** `.podcast_queue/notebooklm/remake_2026-10-20/batch6/` holds 8 packs: tracks 06, 07, 11, 12, 15, 22 and 23 (remakes) and 37 Finding More Ice (new). Steps are in that folder's README. Waiting on the owner to generate them in NotebookLM; then process and publish as before (build_podcast_audio, upload, podcast.json). Track 37 needs the owner's OK for the renumbering before it goes in the feed.
 
 ## Renderer and podcast tooling
 
