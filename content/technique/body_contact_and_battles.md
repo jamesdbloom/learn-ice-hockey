@@ -1364,7 +1364,7 @@ Rule: Driving an opponent off an established spot is a push — a minor under US
 Rule: Hockey Canada prices pushing an opponent off an established spot at U13 and below, in female hockey and in any division a Member approves — 7.3(a) a minor, 7.3(b) a major plus a game misconduct on violence, nobody hurt, mandatory on injury, 7.3(c) a match for deliberately injuring or trying to
 Rule: In women's hockey it is an illegal hit under IIHF 101.1, where "[a]ny move by a Player to step or glide into an opposing Player" is at least a minor — and not capped there either: 101.1 provides a major (5') plus an automatic game misconduct
 Convention: Leverage over strength — the lower player usually wins, though not always and not against a large enough strength gap. Coaching consensus, not a measured law: nothing found in the ice hockey biomechanics literature quantifies it
-Read: Eyes on the puck, body on the player — you cannot beat them to a rebound you did not see leave the stick
+Read: Eyes on the puck, body beside the player — you cannot beat them to a rebound you did not see leave the stick
 Never: Walk a screener out in any game — it can be called interference — and least of all across your own goalmouth, where a moved body meets a goal post at one edge and your goalie at the other
 Never: Back into your own goalie — you screen your goalie, and you arrive backwards onto a goalie who is down, square to the shot and unable to see you coming
 ```
@@ -1381,7 +1381,7 @@ The order of operations, and the order matters:
 
 **4. Leverage over strength.** Same principle as the board battle, with the same caveats: the lower player usually wins, though not always and not against a large enough strength gap, and it is coaching consensus rather than a measured law.
 
-**5. Eyes on the puck, body on the player.** Feel them; watch the shot. You cannot beat them to a rebound you did not see leave the stick, and a defender who turns to look at the player they are boxing out has stopped defending the dangerous thing.
+**5. Eyes on the puck, body beside the player.** Know where they are without turning your head; watch the shot. You cannot beat them to a rebound you did not see leave the stick, and a defender who turns to look at the player they are boxing out has stopped defending the dangerous thing.
 
 **6. Do not back into your own goalie.** Being pushed into the crease screens your own goalie and turns saves into goals — you have done the attacker's job for them. **And the goal is not the only cost.** You arrive there backwards, on a goalie who is usually down, square to the shooter and unable to see you, with the post beside the pair of you — so fight the shove early rather than ride it into the paint. That second half is coaching caution; no source here counts injuries from it. See [Goaltender](../positions/goaltender.md) and [Receiving a Hit Safely](#6-receiving-a-hit-safely).
 

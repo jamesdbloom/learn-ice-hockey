@@ -1358,7 +1358,7 @@ In the NHL, IIHF and PWHL books, what prices your own contact against you is the
 
 ### In front of your own net
 
-**In short:** Win the net front by position, not by moving the screener; if a battle moves a body, never let it cross your goalmouth, and keep skates down.
+**In short:** Win the net front by position, not by moving the screener; if a battle moves a body, never let it cross your goalmouth, and keep their skates on the ice.
 
 ```facts
 Action: Win the net front by position, never by moving the screener — inside shoulder ahead of theirs, no lean, and lift their stick up, not sideways, well below the hands as the puck arrives, then let go
