@@ -68,10 +68,12 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
+- **breakouts :561 "Goalies are not exempt" (minor, SG51):** names only HC 10.1(v)/CARHA 55(a). Add that NHL/IIHF/PWHL 63.2(iii)/65.2(iii) say "any player", and that the IIHF defines Player to include goalkeepers. Also check special_teams and risk_management for the same skater/goalie scope on the out-of-play minor.
+
 - **Turn-back moves (low, from SG50):** winger, defender, breakouts and forechecking were swept clean, with no ungated wall cutback, curl or spin. Still unswept wordings: "open up to the middle", "roll off", "peel off", "swing away"; also diagram captions (breakout-wheel, breakout-reverse, winger-dz-reverse).
 
 - **USAH contact-with-puck, remaining (minor):** pages not yet swept for "seal", "ride" or "pin" wordings that permit the same act under USA Hockey.
-- **Restated ladders, next candidates (from the SG47 pilot):** breakouts' over-the-glass/delay-of-game ladder (§1 :125, §3 :555-561, §8 :933 and facts); facts blocks restating the no-change ladder five times (each is now a carrier, so a per-line test is needed). The pilot saved about 230 words on one page.
+- **Restated ladders: approach exhausted on breakouts (SG51).** The second pilot saved only 20 words, because §1 was already in compressed form and the nearby facts blocks don't carry the tiers. Total across both pilots: about 250 words. Not worth repeating page by page; revisit only if a page shows a full ladder restated three or more times.
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
