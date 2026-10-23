@@ -68,12 +68,14 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **Out-of-play goalie scope, follow-ons (minor, SG52 gate):**
-  - breakouts Sources lacks Rule 5.1;
-  - goaltender :1638 states HC flatly where its :752 says HC intent is unsettled;
-  - special_teams :990 "goalies included" only resolves at the "but" clause;
-  - about 15 other files cite 10.1(v)/55(a) and have not been swept for goalie scope.
-
+- **Out-of-play follow-ons (minor, SG53):**
+  - **Deliberate kick out of play.** The corpus's "a deliberate one is a minor from anywhere in every book" is written for a stick flip. Only the NHL and IIHF deliberate limbs name the foot. PWHL 65.2(ii) says "hand or her stick"; USAH 610(c) says shooting/batting; HC 10.1(ii) and CARHA 75(b) say shoot/bat/throw. Each errs harsher. Sites: rules_primer :545 (the NHL foot list sits beside PWHL 65.2(ii)) and risk_management :383 (the PWHL is reached via 65.2(i); USAH, HC and CARHA are not addressed).
+  - **switching_positions :317 (facts, voiced alone).** "its direct limb 10.1(v) names the goalie alone" omits CARHA 55(a) and the no-intent-word hedge. It is the same shape as breakouts :529.
+  - **special_teams :761.** "reaches a goalie as much as a skater" is about the deliberate limb; under HC and CARHA a goalie's stick clear reaches them more. :990 carries that.
+  - **breakouts :530.** "NHL and IIHF 63.2(ii)" should read "(II)" for the IIHF (cosmetic).
+  - **breakouts :529.** It opens "USA Hockey writes no such minor", which points back at :528 for a listener, and "naming the goalie alone" omits CARHA.
+  - **PWHL rulebook edition.** pwhl_rules.txt page footer reads "2024 – 2025" while the corpus cites 2025-2026. Needs a source-verifier.
+  - **game_management :143.** HC 6.4(a) Interpretation 1 limits the rule to a puck last touched in the end zone; the line does not carry that (harmless).
 - **Turn-back moves (low, from SG50):** winger, defender, breakouts and forechecking were swept clean, with no ungated wall cutback, curl or spin. Still unswept wordings: "open up to the middle", "roll off", "peel off", "swing away"; also diagram captions (breakout-wheel, breakout-reverse, winger-dz-reverse).
 
 - **USAH contact-with-puck, remaining (minor):** pages not yet swept for "seal", "ride" or "pin" wordings that permit the same act under USA Hockey.

@@ -74,7 +74,7 @@ Options: Quick-up, up, wheel, D-to-D, reverse, rim, off the glass — take the f
 Read: Take the quick-up in the two or three seconds after your team wins the puck, before their forecheck exists — look up ice first, then down
 Goal: Transition the puck out of danger and start your team's breakout
 Never: Carry or pass D-to-D through your own slot. Go behind the net instead. Only the alternative route varies: some teams allow the exchange above the tops of the circles, outside the slot
-Rule: Shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor whether or not you meant it (NHL Rule 63.2(iii))
+Rule: Under the NHL, IIHF and PWHL, shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor whether or not you meant it (NHL Rule 63.2(iii))
 Rule: Putting the puck deliberately outside the playing area is a two-minute delay-of-game minor from anywhere on the ice, not only from your own end (NHL and IIHF 63.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
 Rule: A deliberate clear out of play counts by leg, foot or arm too, and after a stoppage (NHL and IIHF 63.2(ii)); under USA Hockey after the whistle it is a minor (610(c)) and a misconduct (601(c)(10)), a game misconduct in protest or toward an official or spectator, a match if it endangers one (601(d))
 Rule: The NHL's out-of-play minor has three carve-outs — boards with no glass, a puck shot into the players' bench, and one out directly off a faceoff, which no book reconciles with 63.2(ii)'s deliberate limb, so never aim it; over the glass behind the bench is penalised (NHL Rule 63.2 and its NOTE)
