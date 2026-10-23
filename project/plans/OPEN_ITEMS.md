@@ -63,13 +63,14 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
+- **risk_management.md :583-591, the pinch section (safety minor, older than this round):** this is the document that owns the pinch decision (:26 "pinch, activate"), yet neither its body nor its facts say to pinch for the puck, not the player, and to pull up on anyone facing the glass. Only the caption's "on the wall rather than on a player" carries it. game_management :249 has the rule-safe wording. Add one clause there; needs a safety-reviewer.
+
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
 
 - **on_ice_communication KT13 and Common Mistakes (optional):** neither mentions the NHL 81.6 / PWHL 83.6 empty-box major case, where icing is called while still short; the body carries it. The SG34 agent left it out on purpose: KT13 is already 62 words, and neither sentence is false or permissive. Shortest form if wanted: "…and under the NHL and PWHL, an empty box when a major expires loses it too."
-- **Repetition pass:** the readability waves only split and shortened what check_readability flagged. No
-  page has had a pass for repetition and throat-clearing.
+- **Repetition pass:** the core_principles pilot (SG42) cut 137 of 6,152 prose words, about 2%, with no limb lost. Most repetition on that page is deliberate: safety limbs, disclosures, and the coaching-choice ask. Gains will be modest per page, so pick the longest pages next. Pilot side findings: the core_principles overview says "these ideas hold whatever system, position or league you play in", which sits uneasily with §1–2; §3's "ninety-six percent" approximates the cited 3.3–4.2%. Read both.
 - **Spoken "Important." runs:**
   - body_contact was measured on 23 Oct and has only one run of four or more: KT8–11. These are four distinct hazards and none is voiced next door, so the run stays unless the owner rewords it.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
@@ -111,5 +112,4 @@ can ship once it has been reviewed.
 
 - **PWHL 2026-27 rulebook:** expected around mid-November 2026; re-check `thepwhl.com/en/rules` then and diff against the 2025-26 book on disk.
 - **SIHA Discipline Policy:** unreachable from this network (local proxy); retry elsewhere.
-- **getting_started's other R&R 2024-25 quotations** (Safeguarding, Code of Conduct, Social Media): current versions were fetched 22 Oct (scratchpad sg22c/files/policies); compare and move the quotations to them if they changed.
-- **link_baseline.tsv:** add the 33 refetched equipment rows and the 5 new source rows (proposed rows saved in scratchpad sg22b and the sg22c report).
+- **link_baseline.tsv:** add the 33 refetched equipment rows and the 5 new source rows (proposed rows saved in scratchpad sg22b and the sg22c report). Also add the 6 rows from SG42's source check (R&R 2024-25, Code of Conduct, Social Media Policy, Safeguarding Children, club regs 2026-27, and the EIH rules-and-regulations page, all 200 on 23 Oct; listed in the SG42 record).

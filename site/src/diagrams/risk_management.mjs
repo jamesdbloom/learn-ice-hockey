@@ -617,18 +617,30 @@ const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
 // partner and his centre", and the scoreboard sentence lost its worked example. The coaching
 // choice, the scoreboard hedge and the ⚠️-led contact limb are intact and still in that order,
 // and the glyph still opens the last sentence so the amber band covers the contact limb alone.
+// ⚠️ SPLIT 23 October 2026 into named limbs so the two captions can carry different amounts
+// without drifting: every sentence is still written once. pinch-centre-high carries all four;
+// pinch-centre-below-the-goal-line drops only the wingers/count sentence and the "Three things"
+// header, because in BOTH of its hosts (risk_management.md, game_management.md) it is embedded
+// directly after pinch-centre-high and the listener has just heard that sentence in the chunk
+// before. It keeps the coaching choice (default, alternatives, ask), the scoreboard hedge and the
+// ⚠️-led contact limb. If pinch-centre-below-the-goal-line is ever embedded WITHOUT
+// pinch-centre-high above it, give it PINCH_CAVEATS whole again.
+const PINCH_COUNT =
+  'The two wingers are not drawn: the count here is the players behind the puck, and a ' +
+  'defenceman who pinches leaves that count the moment they go. ';
+const PINCH_COVER =
+  'Who covers the point behind a pinch is a coaching choice, not a law of hockey: some teams ' +
+  'give that job to the centre, some to whichever forward is highest, and some slide the ' +
+  'weak-side defenceman across — so find out what your team plays. ';
+const PINCH_SCOREBOARD = 'Whether to pinch at all moves with the scoreboard and the clock. ';
+const PINCH_CONTACT =
+  '⚠️ And no contact is drawn: the pinching defenceman’s route ends in two bars, meaning ' +
+  'arrive and contain, on the wall rather than on a player, and what an arrival like that may ' +
+  'end in depends on whether your league allows body checking at all.';
+
 const PINCH_CAVEATS =
-  'The two wingers are not drawn, because what is being counted here is the ' +
-  'players behind the puck: the defenceman who pinches has taken themselves out of that count the ' +
-  'moment they go. ' +
-  'Three things this cannot promise. Which forward stays high behind a pinch is a coaching ' +
-  'choice and not a law of hockey: some teams give that job to the centre, some to whichever ' +
-  'forward is highest when the puck arrives, and some slide the weak-side defenceman across ' +
-  'instead — so find out what your team plays. Whether to pinch at all moves with the ' +
-  'scoreboard and the clock. ⚠️ And no contact is drawn: the pinching defenceman’s ' +
-  'route ends in two bars, meaning arrive and contain, on a patch of the wall rather than on a ' +
-  'player, and what an arrival like that may end in depends on whether your league allows body ' +
-  'checking at all.';
+  PINCH_COUNT + 'Three things this cannot promise. ' + PINCH_COVER + PINCH_SCOREBOARD + PINCH_CONTACT;
+const PINCH_CAVEATS_AFTER_HIGH = PINCH_COVER + PINCH_SCOREBOARD + PINCH_CONTACT;
 
 const PINCH_DESCRIBE_COMMON =
   'The attacking half of the rink, the opposition net at the right, the attack having been ' +
@@ -710,8 +722,8 @@ const pinchCentreDeep = {
   width: 900,
 
   // SHORTENED 22 October 2026 (~1,752 chars). The caption's own text was narrative only and is
-  // cut to the picture, the count and the question; PINCH_CAVEATS is shared with
-  // pinch-centre-high and is untouched.
+  // cut to the picture, the count and the question. Its caveats are PINCH_CAVEATS_AFTER_HIGH —
+  // see the note above PINCH_COUNT for why, and when to restore PINCH_CAVEATS whole.
   caption:
     'A pinch at the offensive blue line with the centre below their goal line — the arrangement ' +
     'that makes a pinch a bad decision even when it works. In front of the pinching defenceman it ' +
@@ -719,7 +731,7 @@ const pinchCentreDeep = {
     'opposition forwards and your own end. Beat the pinch and it is a two-on-one the other way, ' +
     'and it was waiting to happen whether the pinch came off or not. So before you jump a lane, ' +
     'pinch or activate, ask not only "am I right?" but "what happens if I am right and I still ' +
-    'miss it?" ' + PINCH_CAVEATS,
+    'miss it?" ' + PINCH_CAVEATS_AFTER_HIGH,
 
   describe:
     PINCH_DESCRIBE_COMMON +

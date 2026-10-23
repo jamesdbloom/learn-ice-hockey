@@ -42,7 +42,7 @@ Attacking, your value is to the player with the puck. Looking early means the de
 
 Three things are settled before the play reaches you, and they cost the most if you get them wrong. Your team's system decides most of the "always do X" you will hear. Your league's checking category is the difference between a legal play and a penalty — or, for a reckless hit, being thrown out of the game. And how you meet the boards decides whether a race to the wall is nothing or an injury.
 
-Learn these as principles rather than instructions: instructions expire with a team's system, but the reasoning transfers. Each section says what its evidence is — published research, the governing documents, or coaching reasoning with no measurement behind it — and where to read more.
+Learn these as principles rather than instructions: instructions expire with a team's system, but the reasoning transfers.
 
 ---
 
@@ -54,7 +54,7 @@ Learn these as principles rather than instructions: instructions expire with a t
 
 Take "stay high" for a winger in your own end. While the other team has the puck, it means level with the opposing defenceman on your side. It expires the moment your team wins the puck, when you come down the wall to the outlet instead.
 
-**Why it matters.** Treat a coaching choice as a law and you do the wrong job when you change teams — and you stop asking, because a law does not need asking about. The same instruction can be right on one bench and a serious mistake on the next.
+**Why it matters.** Treat a coaching choice as a law and you do the wrong job when you change teams — and you stop asking, because a law does not need asking about.
 
 **What to notice.** An instruction about *where a teammate goes* is probably a system. One about *what the referee will do* is a rule. Rules are written in a book; systems are written on a whiteboard.
 
@@ -76,7 +76,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** Hockey has several rule books and they disagree. Your age group, your league and your country decide which one is yours, and the same act can be normal play in one book and a penalty in another.
 
-**Why it matters.** This is the difference between a mistake that costs you a shift and one that gets you ejected or hurts somebody. And you cannot work it out on the ice; you have to be told.
+**Why it matters.** This is the difference between a mistake that costs you a shift and one that gets you ejected or hurts somebody.
 
 **What to do.** ⚠️ **Ask your coach or your league secretary which competition you play in and whether it is a checking category, and do it before your first game rather than after your first hit.** In Britain, ask for your competition by name: the answer is in its own Rules of Competition, not in the rule book.
 
@@ -98,9 +98,9 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **What it costs under CARHA.** A Rule 49(a) penalty is a minor or a major at the referee's discretion, and a major whenever intentional body contact causes injury. Under Rule 30(a) a major for body contact also carries a game misconduct, so you are ejected, and Rule 32(d) adds at least a one-game suspension. Rule 49(c) keeps genuine accidents out: *"Where, in the opinion of the Referee, accidental contact has taken place, no penalty shall be assessed"*. Two exceptions remain. Accidental contact with the head, face or neck is still a minor (Rule 50(a)). Driving a player from behind into the boards or net in a way that leaves them unable to protect themselves is a match penalty (Rule 53(b)), which keeps you out of later games until the Chairman has dealt with your case (Rule 34(a)). **That 49(a)'s last limb amounts to a duty to get out of the way is this guide's reading of the rule's grammar, which CARHA does not gloss.**
 
-**The evidence, and its limits.** Every quotation above is the governing document's own wording, named by rule number or by document, so you can check it. No rulebook records how many leagues sit in each category, so this page can tell you categories exist but not which one you are in. That question has a person attached to it, not a document.
+**The evidence, and its limits.** Every quotation above is the governing document's own wording, named by rule number or by document, so you can check it. No rulebook records how many leagues sit in each category, so this page can tell you categories exist but not which one you are in.
 
-**A realistic alternative.** None. This is the one place where "it depends what your coach says" is the wrong answer: a coach cannot make a body check legal in a non-checking category.
+**A realistic alternative.** None: a coach cannot make a body check legal in a non-checking category.
 
 **Where to read more.** New to this: [Rules Primer](rules_primer.md) for the rules a first game actually turns on, and [UK and England Rules](uk_rules.md) if you play in Britain. Deeper: [Body Contact and Battles, section 1](../technique/body_contact_and_battles.md#1-which-contact-rules-are-you-actually-playing-under), which works through which contact rules you are actually playing under.
 
@@ -156,7 +156,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **Worked example.** You are on the half-wall in your own end and your defenceman has the puck behind the net. If your first look comes when the puck touches your stick, your decision takes about as long as a forechecker needs to reach you. If you looked twice while the puck was travelling, the decision is made and the reception and the pass are one movement.
 
-**The evidence, and its limits.** This one is measured in hockey too. Berg and colleagues, in the *Journal of Sports Sciences* in 2025, hand-coded **2,545 puck receptions by 88 professional players** in the Swedish men's and women's top leagues. The action after the reception succeeded **78.8% of the time when the player had scanned first against 70.1% when they had not** — 8.7 percentage points. **Two limits travel with that.** "Success" is a criterion the authors drew up with the Swedish Ice Hockey Association, not a count of goals. And because they recorded scanning as yes-or-no, **the authors report that their data cannot say whether scanning more often is better than scanning once.** No look to one look is the finding; two looks to four is not.
+**The evidence, and its limits.** This one is measured in hockey too. Berg and colleagues, in the *Journal of Sports Sciences* in 2025, hand-coded **2,545 puck receptions by 88 professional players** in the Swedish men's and women's top leagues. The action after the reception succeeded **78.8% of the time when the player had scanned first against 70.1% when they had not.** **Two limits travel with that.** "Success" is a criterion the authors drew up with the Swedish Ice Hockey Association, not a count of goals. And because they recorded scanning as yes-or-no, **the authors report that their data cannot say whether scanning more often is better than scanning once.**
 
 **A realistic alternative.** None. Coaching material that tells you to scan on a fixed clock — every one or two seconds — goes further than the measurement supports, and the professionals in that study averaged a good deal less than that.
 
@@ -174,7 +174,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **What to notice.** The question is: *if I lose the puck here, how many seconds and how many bodies stand between the turnover and a shot on my net?* In front of your own net the answer is none and none. Deep in their corner it is four or five seconds and the whole team.
 
-**What to do.** Change where you are standing before you decide what to do. One stride out of the most expensive ice improves every option, and it is almost always available. **And never pass the puck — or skate it — across the front of your own goal.** Go behind the net or up the wall instead. Teams differ on the route out — some exchange behind the net, some high above the circles — so ask which yours uses; your own slot is never the route.
+**What to do.** Change where you are standing before you decide what to do. One stride out of the most expensive ice improves every option, and it is almost always available. **And never pass the puck — or skate it — across the front of your own goal.** Go behind the net or up the wall instead. Teams differ on the route out — some exchange behind the net, some high above the circles — so ask which yours uses.
 
 **Worked example.** You are behind your own net with the puck and a forechecker arriving. The cross-ice pass to the far winger is on, but it is the one option whose failure is a goal: if it is read, the turnover and the shot are the same event. The rim up the wall gains less if it works and costs almost nothing if it does not. That makes it the better bet from there, and the worse bet from the other end of the ice.
 
@@ -226,9 +226,9 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **Worked example.** The puck is dumped into the corner and you and an opponent both go. You are half a stride behind, and the temptation is to put your head down and dig — exactly the head-down posture that straightens the cervical spine. Instead, take the angle wide so you arrive alongside the wall rather than into it, with your head up. It costs a fraction of a second and nothing else.
 
-**The evidence, and its limits.** This rests on USA Hockey's *Heads Up Hockey* materials. They set out the mechanism — with the head flexed forward *"this normal curve is removed, and the cervical spine becomes straight"*, so the head stops on impact while the body keeps moving — and restate research by Charles Tator and colleagues in the *Canadian Journal of Neurological Sciences*. The walking-speed finding belongs to the head-down collision, and the light-hit warning to the turned back; they are two statements about two things. The postures come from a second USA Hockey manual, *Introduction To Body Contact*: the angle, the parallel skates, the forearm and hip, the shoulder prohibition and the spread-the-load fallback are all its teaching points or its own named common errors.
+**The evidence, and its limits.** This rests on USA Hockey's *Heads Up Hockey* materials. They set out the mechanism — with the head flexed forward *"this normal curve is removed, and the cervical spine becomes straight"*, so the head stops on impact while the body keeps moving — and restate research by Charles Tator and colleagues in the *Canadian Journal of Neurological Sciences*. The walking-speed finding belongs to the head-down collision, and the light-hit warning to the turned back. The postures come from a second USA Hockey manual, *Introduction To Body Contact*: the angle, the parallel skates, the forearm and hip, the shoulder prohibition and the spread-the-load fallback are all its teaching points or its own named common errors.
 
-**A realistic alternative.** None. This is the one principle on this page where "ask your coach" is not part of the answer: it is not a tactic or a coaching preference, and no system changes it.
+**A realistic alternative.** None. How you meet the boards is not a coaching preference, and no system changes it.
 
 **Where to read more.** New to this: [Getting Started](../getting-started/getting_started.md), before a first session. Deeper: [Body Contact and Battles, section 6](../technique/body_contact_and_battles.md#6-receiving-a-hit-safely), which sets out the three cases and the sources, and [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) for loose-puck races.
 
