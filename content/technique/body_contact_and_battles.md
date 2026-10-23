@@ -293,7 +293,7 @@ The picture above draws the first two of these four: the route the defender skat
 
 ```facts
 Action: In a non-checking league, end the angle with a seal — take away the last of their space and arrive stick-on-puck
-Key: Both leaning, both playing the puck, both going the same direction is legal competitive contact
+Key: Both leaning, both playing the puck, same direction is legal under USA Hockey and the IIHF; in a Hockey Canada non-checking division or under CARHA, keep it incidental and never lean
 Action: In a checking league, the same angle ends with a rub-out or a check under the Section 5 rules
 Priority: The angle comes first, the contact is the last step
 Never: Veer across into them at the last instant, or add an arm, shoulder or hip once you arrive — either turns a legal angle into a body check

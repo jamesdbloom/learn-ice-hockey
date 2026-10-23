@@ -34,7 +34,7 @@
 
 ## Overview
 
-These ideas hold whatever system, position or league you play in. Most are about the time without the puck, because that is most of your shift.
+These ideas hold for every position and level, and where your team's system or your league changes the answer, they say so and tell you to find out. Most are about the time without the puck, because that is most of your shift.
 
 Defending, everything turns on the front of your own net. A mistake there is a shot against rather than a lost possession, which is why goal side, getting back above the puck and playing simple there matter more than anything clever.
 
@@ -112,7 +112,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** Your time with the puck is a rounding error in your shift, and it comes in bursts of about a second. What you do in the rest of the time decides what those bursts are worth.
 
-**Why it matters.** Most players practise the part of hockey they spend the least time doing. The three to four percent of your shift with the puck feels like hockey; the other ninety-six percent is where games are decided.
+**Why it matters.** Most players practise the part of hockey they spend the least time doing. The three to four percent of your ice time with the puck feels like hockey; the rest is where games are decided.
 
 **What to notice.** Watch your own shift back and count the seconds you were touching the puck. It will be fewer than you remember.
 

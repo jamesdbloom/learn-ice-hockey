@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-(none)
+- **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.
 
 ## Captions and small rules notes (23 Oct)
 
@@ -63,12 +63,7 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **offensive_zone_play SG43 gate notes (minor):**
-  - The 15.50% evidence bullet lost "51,308 shots" and the owner's "carry that qualification". The style guide owners table (:2312) lists the sample size as part of the fact, so consider restoring it.
-  - "So 'just get pucks to the net' is incomplete advice" lost its antecedent; reword or restore the slot-vs-blue-line sentence.
-- **review_process.md C4 names rules-verifier, but SG41–43 used a safety-reviewer that verified the rules against primary text.** Reconcile the process document or the practice.
-
-- **body_contact_and_battles KT8 :1223 "seal with your body alone" and Common Mistakes :1156 (candidate, from the SG43 safety review):** these lack the "never by pinning / never by extending a hip" limb that OZP :924/:954 now carry. That limb is required by IIHF women's 101.1, HC 7.3 (a hip extended after angling counts as a check) and CARHA 49(a). KT8 is voiced alone. Needs a layer test by an agent that owns BCB, plus a safety-reviewer. Also sweep forechecking_systems, defender and winger for unscoped "seal" wording.
+- **Leaning permission elsewhere (from SG44, sweep):** body_contact, forechecking and OZP now scope leaning: legal under USA Hockey, the IIHF (Appendix II competitive contact) and the PWHL (52.1(ii)); never lean in a Hockey Canada non-checking division or under CARHA. Sweep defender, winger, rules_primer and the rest of body_contact for unscoped leaning or sealing wording ("seal with your body", a leaning permission with a closed list of exceptions). body_contact :296 could add the PWHL (optional).
 
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
