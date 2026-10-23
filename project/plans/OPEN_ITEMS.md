@@ -13,10 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG37 (23 Oct):** three agents live:
-  - rules_primer, goaltender and equipment: the goalie bench scope and "possibly" a penalty shot;
-  - Astro upgrade for the two moderate advisories;
-  - body_contact: EIHL repetition trim (owner ruling).
+- **SG37 (23 Oct):** goalie bench trip and penalty shot by book; body_contact EIHL trim. Reviews CLEAR; committing.
 
 ## New page: Getting Better on Your Own
 
@@ -50,6 +47,7 @@ can ship once it has been reviewed.
 
 ## Owner decisions needed
 
+- **body_contact EIHL (owner):** after the 72→54 trim, should the Sources trailer's 14 EIHL mentions be trimmed? Should the nine-line EIHL fighting facts block be cut further (each line is a different penalty)?
 - **Wave 34 leftovers:** USA Hockey Level 1 wording; caption trim policy; the centre-fly label; delete
   the unused `creaseThePuckDecides` diagram spec in center.mjs, or keep it?
 - **Research scope:** does the UK concussion guidance reach Scotland and Northern Ireland? Does IIHF
@@ -63,7 +61,6 @@ can ship once it has been reviewed.
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
-- **body_contact EIHL repetition (owner 22 Oct: trim where it's repetition):** keep each distinct EIHL rule once and cut repeated restatements of it. Do this as part of the repetition pass, with a layer test.
 
 - **on_ice_communication KT13 and Common Mistakes (optional):** neither mentions the NHL 81.6 / PWHL 83.6 empty-box major case, where icing is called while still short; the body carries it. The SG34 agent left it out on purpose: KT13 is already 62 words, and neither sentence is false or permissive. Shortest form if wanted: "…and under the NHL and PWHL, an empty box when a major expires loses it too."
 - **Repetition pass:** the readability waves only split and shortened what check_readability flagged. No
@@ -73,10 +70,7 @@ can ship once it has been reviewed.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
 - **Spoken units over 2,500 characters:** 12 corpus-wide (3 in forechecking_systems; most others are
   captions).
-- **rules_primer :596 "with a penalty shot" (harsher, minor):** Hockey Canada says it "may be awarded", so make it "possibly a penalty shot". **goaltender :1416 and equipment :434:** "A goalie may not go to the bench for one" / "cannot simply skate to the bench for one" are unscoped (too strict for USA Hockey and CARHA mid-play).
 - **faceoffs :721 (optional):** if the PWHL is added for stick toe in the white, cite 78.7(v).
-- **Pull-up wording:** "see the numbers on their back" in practice_and_development and
-  scanning_and_anticipation, vs "see their numbers" elsewhere. Cosmetic.
 - **Style B body_contact script line 201 lost its "If"** (`podcast_style_b/` detailed .md/.txt and the script): "You are outnumbered, or tangled…" states as fact what the page gives as a condition. Fix it in the next Detailed remake: "If you are outnumbered, or tangled with someone just as stuck, or losing it here would give them a chance at your net, pin the puck…". The published audio carries it, but it is tactical wording, not a rule.
 - **Table rows lose their spoken escalation:** md_to_speech voices table rows without "Important." even when a cell has a ⚠️. Example: the body_contact :1672-1677 "What actually gets called" rows. Check whether each row's hazard is voiced with a marker in prose nearby.
 - **Basics wing script** omits the weak-side winger collapsing to the slot, which winger.md relies on. Fix
