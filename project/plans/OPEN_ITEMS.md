@@ -63,14 +63,19 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **Leaning permission elsewhere (from SG44, sweep):** body_contact, forechecking and OZP now scope leaning: legal under USA Hockey, the IIHF (Appendix II competitive contact) and the PWHL (52.1(ii)); never lean in a Hockey Canada non-checking division or under CARHA. Sweep defender, winger, rules_primer and the rest of body_contact for unscoped leaning or sealing wording ("seal with your body", a leaning permission with a closed list of exceptions). body_contact :296 could add the PWHL (optional).
-
+- **Hip and wall cues elsewhere (from SG45):** winger and switching_positions now say "hip toward the checker" with a non-checking/CARHA scope, and "forearm and hip to the wall". Sweep the other pages (defender, center, puck_handling, skating, body_contact) for "hip into", "backside into" or "into the contact" shield cues without scope. Optional: the USA Hockey "contact with the puck" limit on leaning (usah.txt ~:6045), and adding the PWHL to body_contact :296.
+- **SG45 gate notes (minor):**
+  - body_contact :73 lists "boxing someone out at the net front" as legal in every league, which sits uneasily with HC 8.3 (:451/:468 carry the 8.3 limit).
+  - winger Common Mistakes "keeps only… simply maintaining established body position" is stricter than USAH 604(c) Note, which also allows angling.
+  - winger :31 facts lacks the CARHA avoid-contact limb (other layers carry it).
+  - breakouts :964 lost the own-empty-net caveat; consider restoring it.
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
 
 - **on_ice_communication KT13 and Common Mistakes (optional):** neither mentions the NHL 81.6 / PWHL 83.6 empty-box major case, where icing is called while still short; the body carries it. The SG34 agent left it out on purpose: KT13 is already 62 words, and neither sentence is false or permissive. Shortest form if wanted: "…and under the NHL and PWHL, an empty box when a major expires loses it too."
 - **Repetition pass:** the core_principles pilot (SG42) cut 137 of 6,152 prose words, about 2%, with no limb lost. Most repetition on that page is deliberate: safety limbs, disclosures, and the coaching-choice ask. Gains will be modest per page, so pick the longest pages next. Pilot side findings: the core_principles overview says "these ideas hold whatever system, position or league you play in", which sits uneasily with §1–2; §3's "ninety-six percent" approximates the cited 3.3–4.2%. Read both.
+- **Restated rule ladders (the bigger length win, from the SG45 breakouts pass):** repetition passes cut only about 2% a page. The real length is the same rule ladder restated in several sections. Example: breakouts carries the no-change/time-out and shorthanded-icing ladder in §1, §3 and §6. Reducing all but one to a short pointer needs a per-limb layer test (check the facts blocks still carry each locally) and a rules-verifier. Do one page as a pilot first.
 - **Spoken "Important." runs:**
   - body_contact was measured on 23 Oct and has only one run of four or more: KT8–11. These are four distinct hazards and none is voiced next door, so the run stays unless the owner rewords it.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.

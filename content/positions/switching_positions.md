@@ -201,12 +201,12 @@ That point-coverage job — high on your side while they have the puck, and, in 
 
 ```facts
 Key: Winning a 50-50 puck against the boards is the defining physical skill of a winger — a coaching ranking rather than a measured one — and it is not something a centre gets much practice at
-Technique: On the wall, puck on the far side of your body from the checker, side-on, backside into them, feet wide, and know where it is going before you arrive
+Technique: On the wall, puck on your far side, side-on, backside toward the checker, feet wide, and know where it is going before you arrive. Where checking is barred, never bump; under CARHA, avert contact
 Never: Turn your back to anyone coming at you. USA Hockey warns: "Even a light hit from behind could inflict a severe head or neck injury". Skates parallel to the wall
 Never: Duck. Ducking puts your head into the boards first, and USA Hockey warns that the neck injury from that head-down collision can occur at walking speed. Head up, chin off your chest
 ```
 
-**First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger — **a coaching ranking rather than a measured one** — and a centre rarely practises it. Puck on the far side of your body from the checker, side-on with your hip and backside into them, feet wide, and know where the puck is going before you arrive.
+**First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger — **a coaching ranking rather than a measured one** — and a centre rarely practises it. Puck on the far side of your body from the checker, side-on with your hip and backside toward them, feet wide, and know where the puck is going before you arrive. Where checking is barred, hold the position you have and never bump them; in a CARHA adult league, avoid the contact altogether.
 
 **One thing overrides all of it: never turn your back to anyone coming at you, never duck, and never take the wall on the point of your shoulder.** Those guard against three different injuries, at any speed. A turned back makes the contact a hit from behind, and USA Hockey warns that *"Even a light hit from behind could inflict a severe head or neck injury"*. A chin tucked to your chest puts your head into the boards first, and USA Hockey records that the neck injury from that can happen at walking speed: *"[a] player doesn't have to be going at full speed for this to happen"*. Skates parallel to the wall, forearm and hip to it, head up and chin off your chest — not the point of your shoulder, and not the whole shoulder if you can help it. Already facing the wall and cannot turn? Spread the load with your stick and gloves up on the glass — damage limitation, not a position to aim for. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) covers it.
 
