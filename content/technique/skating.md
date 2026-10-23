@@ -804,7 +804,7 @@ Never: Train the tight turn one way only — it has a weak side too
 
 Games rarely give you a clean circle. What you need:
 
-- **The cutback / escape turn.** With the puck on the wall, tight-turn back against your momentum to shake a checker committed to your original line. Make it while they are still too far away to hit you. Once they can reach you it is too late to turn: go side-on and take it on forearm and hip, and never turn to face the wall with them behind you. It is all outside edge.
+- **The cutback / escape turn.** With the puck on the wall, tight-turn back against your momentum to shake a checker committed to your original line. Make it while they are still too far away to hit you. Once they can reach you it is too late to turn: go side-on to the wall, forearm and hip against it, and never turn to face the wall with them behind you. It is all outside edge.
 - **Lateral escapes.** One or two hard sideways pushes out of a stick-check, keeping the puck.
 - **Turning under a stick.** Drop your shoulder and your knees together so you pass under a checking stick, not into it. See [Body Contact and Battles](body_contact_and_battles.md).
 - **Turning both ways at speed.** The tight turn has a weak side too. Same fix.

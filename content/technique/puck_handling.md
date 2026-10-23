@@ -605,8 +605,8 @@ Answering those three before your stick touches the puck is what [scanning](../h
 ### Protecting it low in the offensive zone
 
 ```facts
-Action: Below the goal line with a defender on you, keep your feet moving and the puck on your far side — a carrier who stops down low gets pinned
-Options: Cut back up the wall you came down — a defender committed toward the corner cannot turn as fast as you
+Action: Below the goal line with a defender closing, keep your feet moving and the puck on your far side — a carrier who stops down low gets pinned
+Options: Cut back up the wall you came down — a defender committed toward the corner cannot turn as fast as you. Turn before they can reach you, never to face the wall with them behind you
 Options: Pass it back and down to the teammate arriving behind you (low-to-low), then move to a new spot rather than watching
 Options: Walk out — if the defender turns their back or over-commits to the wall, turn into the gap and take it to the net
 Read: Look for a teammate at the net front before any of those — a quick pass there beats all three
@@ -617,7 +617,7 @@ Convention: How long a team keeps the puck low before attacking the net is a sys
 Holding the puck down low in the other team's end is protection with a different purpose. In your own end you protect to get the puck out; here you protect to make the defence move, and every second you keep it is a second they spend chasing rather than covering.
 
 - **Keep your feet moving and the puck on your far side.** A carrier who stops behind the net or in the corner gives the defender a stationary target to pin. Moving, you can turn either way.
-- **The common approach is to cycle it.** Cut back up the wall you came down — a defender committed toward the corner cannot change direction as fast as you can — or pass it back and down to the teammate arriving behind you — low-to-low — and get away to a new spot. [Offensive Zone Play](../systems/offensive_zone_play.md#4-cycling) covers the cycle in full, including when to rim and when to reverse.
+- **The common approach is to cycle it.** Cut back up the wall you came down — a defender committed toward the corner cannot change direction as fast as you can — or pass it back and down to the teammate arriving behind you — low-to-low — and get away to a new spot. Make the cutback before the defender can reach you; once they can, it is too late to turn, so go side-on to the wall, forearm and hip against it, and never turn to face the wall with them behind you. [Offensive Zone Play](../systems/offensive_zone_play.md#4-cycling) covers the cycle in full, including when to rim and when to reverse.
 - **The alternative is to walk out.** When the defender turns their back to the play or over-commits to the wall side, turn off the wall into the space they gave up and take it to the net. That is the moment a cycle exists to create, and it does not last.
 - **Before any of that, look at the net front.** A teammate there who has beaten their check is a better option than anything you can do on the wall.
 
@@ -1128,7 +1128,7 @@ document, that is named too.*
 3. **With a checker on you: puck far side, side-on with hip and backside to them.** In a non-checking game, hold position and never bump or drive in; under CARHA, avert contact. A violent bump can eject you, an injuring one does under Hockey Canada and CARHA, and under USA Hockey and CARHA ejection costs at least the next game. Under USA Hockey, plan on a match and a likely multi-game suspension if reckless.
 4. **On the wall, take the contact along your side — skates parallel to the boards, forearm and hip to the wall, head up.** ⚠️ **Never turn your back to anyone coming at you and never duck**: a turned back makes it a hit from behind, and a head-down collision can injure your neck at walking speed.
 5. **Before you reach a puck under pressure, know your out.** Protection buys a second, not a minute. Decide who you are passing to — or where you are rimming, reversing or chipping it — before your stick touches the puck.
-6. **Low in the offensive zone with a defender on you, keep your feet and the puck moving.** Look first for a teammate at the net front; otherwise cut back up the wall or pass back to a teammate behind you. If the defender turns or over-commits, walk out to the net. How long you stay low is your team's system.
+6. **Low in the offensive zone under pressure, keep your feet and the puck moving.** Look first for a teammate at the net front; otherwise pass back to a teammate behind you, or cut back up the wall while the defender is still too far away to hit you — never turn to face the wall with them behind you. If the defender turns or over-commits, walk out to the net. How long you stay low is your team's system.
 7. **When the puck comes loose into your feet, trap it against your skate and pull it back to your blade — never park on it.** Freezing it to force a whistle is a penalty in every book, and a penalty shot in your own crease. As the checker, keep your stick out from between their legs.
 8. **Kick the puck to yourself — small, and at the puck, never at a player.** ⚠️ **Kicking or trying to kick an opponent is never a two-minute mistake**: five of the six books here throw you out and keep you out until a hearing, and under the IIHF the referee may give a major that throws you out.
 9. **If a puck pops up over your own crease, knock it straight down and move it with your stick — never close your hand on it or trap it in your skates.** Holding it there is a penalty shot, or in most books a goal if your goalie is pulled — and the crease runs up to the crossbar.

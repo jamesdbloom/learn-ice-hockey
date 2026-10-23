@@ -63,9 +63,9 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **USAH contact-with-puck, remaining (minor):** body_contact Overview :43 still implies leaning is legal under USA Hockey without the limit. Sibling pages not yet swept for "seal", "ride" or "pin" wordings that permit the same act under USA Hockey.
-- **The wall cutback, wherever it is taught (from SG48 safety review):** OZP :380/:752/:762, center :366 and puck_handling :609/:620 teach a cutback or escape turn on the wall with no timing gate. Settled limit (skating, SG48): turn before the checker can reach you, never into the wall with them behind you; once they can reach you, go side-on instead. Brief it as a claim. Spin limits are done on puck_handling, winger and skating.
-- **team_play_and_culture KT :708 (minor, from SG48):** "a team that ices cannot change, except to replace an injured player" presents injury as the only exception. 81.4 also allows the goalie return after an extra attacker, a strength-changing penalty and (IIHF) a broken skate. It errs strict; consider "except in a few cases, such as an injury". (The breakouts "(so Britain)" scope was VERIFIED in SG48: no British document amends 81.4 or 87.1.)
+- **Turn-back moves worded outside the swept vocabulary (from SG49):** "come back the other way", "change direction", "go back up the boards". Also check winger, defender, breakouts and forechecking for an unlimited wall cutback (OZP, center, puck_handling and skating are done).
+
+- **USAH contact-with-puck, remaining (minor):** pages not yet swept for "seal", "ride" or "pin" wordings that permit the same act under USA Hockey.
 - **Restated ladders, next candidates (from the SG47 pilot):** breakouts' over-the-glass/delay-of-game ladder (§1 :125, §3 :555-561, §8 :933 and facts); facts blocks restating the no-change ladder five times (each is now a carrier, so a per-line test is needed). The pilot saved about 230 words on one page.
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**

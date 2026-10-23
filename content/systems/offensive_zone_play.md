@@ -359,7 +359,7 @@ Read: If the checker is still in front of you, rim it — onward around the boar
 Read: If the checker has skated past you, reverse it — back against the flow, into the space they have just vacated
 Risk: Rimming when you should reverse, or reversing when you should rim, is a leading cycle turnover — nobody has counted cycle turnovers by cause, so the ranking is coaching craft; read the checker
 Technique: Bump pass — fire the puck hard at a spot on the wall, not at your teammate, and call it; a bump nobody expects is a turnover
-Technique: Pivot / cutback — cut back up the wall you came down; a defender committed toward the corner cannot turn as fast as you
+Technique: Pivot / cutback — cut back up the wall you came down; a defender committed toward the corner cannot turn as fast as you. Turn before they can reach you, never to face the wall with them behind you
 Options: Scissor / switch — carrier and support skate at each other and cross, support passing on the outside; the carrier may drop it or keep it
 Never: Turn your back to anyone coming at you, or duck — keep your head up and your chin off your chest
 ```
@@ -377,7 +377,7 @@ Picking the wrong one is a leading cycle turnover — **nobody has counted cycle
 
 **The bump pass off the wall.** Rather than passing to a teammate directly, you fire the puck hard into the boards so it caroms to a spot. It is unblockable by a stick in the passing lane and it does not care about a defender standing between you. Aim at a *spot on the wall*, not at your teammate, and call it — a bump nobody expects is a turnover.
 
-**The pivot / cutback.** You skate down the boards, run out of space, and cut back to skate back up the wall where you came from. This is a high-percentage individual cycle move, and widely taught as the pick of them — **a coaching judgement, not a measured one; no source here ranks cycle moves** — because a defender who has committed their momentum toward the corner cannot change direction as fast as you can. It buys you two or three seconds and it usually opens the low-to-high pass.
+**The pivot / cutback.** You skate down the boards, run out of space, and cut back to skate back up the wall where you came from. This is a high-percentage individual cycle move, and widely taught as the pick of them — **a coaching judgement, not a measured one; no source here ranks cycle moves** — because a defender who has committed their momentum toward the corner cannot change direction as fast as you can. It buys you two or three seconds and it usually opens the low-to-high pass. Make the turn while the defender is still too far away to hit you. Once they can reach you it is too late to turn: go side-on to the wall, forearm and hip against it, and never turn to face the wall with them behind you.
 
 **Low-to-high.** The puck goes up to the point or the top of the circle. Covered in full in section 5.
 
@@ -749,9 +749,9 @@ The failure is having only one of these in mind. A player who arrives on the hal
 ### Buying time
 
 ```facts
-Technique: Cut back — skate a few feet toward the corner and cut back up the wall; the defender's momentum has to reverse, yours does not
-Technique: Delay and curl — turn away from pressure, protect the puck and curl toward the middle into open ice, coming out facing the ice
-Technique: Receive with your body between checker and puck, then spin off — turning into pressure immediately is how you get pinned
+Technique: Cut back — skate a few feet toward the corner and cut back up the wall before the defender can reach you, never to face the wall with them behind you; their momentum has to reverse, yours does not
+Technique: Delay and curl — before the checker can reach you, turn away from pressure, protect the puck and curl toward the middle into open ice, coming out facing the ice
+Technique: Receive with your body between checker and puck, then spin off once they lean on you — turning into pressure immediately is how you get pinned
 Never: Turn your back to anyone coming at you near the wall, or duck — keep your head up and your chin off your chest. This outranks everything else here
 Options: Bump it to the level-support player and take an immediate return pass — it resets the defender's read entirely
 Action: Feet moving, always — a stationary player on the wall gets pinned; one with momentum can go three directions
@@ -759,9 +759,9 @@ Action: Feet moving, always — a stationary player on the wall gets pinned; one
 
 You often need two more seconds than you have. Ways to manufacture them:
 
-- **Cut back.** Skate a few feet toward the corner and cut back up the wall. The defender's momentum has to be reversed; yours does not.
-- **Delay and curl.** Turn away from the pressure, protect the puck, and curl toward the middle — into open ice, not against the wall, where turning puts your back to anyone coming at you; the safety qualifier in the next bullet governs this one too. Coming out of the curl you will be facing the ice with your options refreshed.
-- **Don't turn into pressure first.** When you receive the puck under pressure, take it with your body between checker and puck, then spin off. Turning into pressure immediately is how you get pinned. **Safety qualifier that outranks all of this:** the orientation to aim for at the wall is skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest. Never turn your back to anyone coming at you near the wall, never duck, never the point of your shoulder, and not the whole shoulder if you can help it. Chest-square to the wall is the fallback, not the target. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
+- **Cut back.** Skate a few feet toward the corner and cut back up the wall. The defender's momentum has to be reversed; yours does not. Turn while they are still too far away to hit you; once they can reach you it is too late to turn, so go side-on to the wall, forearm and hip against it, and never turn to face the wall with them behind you.
+- **Delay and curl.** Before the checker can reach you, turn away from the pressure, protect the puck, and curl toward the middle — into open ice, not against the wall, where turning puts your back to anyone coming at you; the safety qualifier in the next bullet governs this one too. Coming out of the curl you will be facing the ice with your options refreshed.
+- **Don't turn into pressure first.** When you receive the puck under pressure, take it with your body between checker and puck, then spin off once they are leaning on you, never while they are still coming at you. Turning into pressure immediately is how you get pinned. **Safety qualifier that outranks all of this:** the orientation to aim for at the wall is skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest. Never turn your back to anyone coming at you near the wall, never duck, never the point of your shoulder, and not the whole shoulder if you can help it. Chest-square to the wall is the fallback, not the target. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 - **Bump it and get it back.** A short pass to the level-support player and an immediate return pass re-sets the defender's read entirely, and often you get the puck back in more space than you gave it away in.
 - **Feet moving, always.** A stationary player on the wall gets pinned. A player with momentum can go three directions.
 
