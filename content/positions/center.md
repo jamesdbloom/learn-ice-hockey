@@ -368,7 +368,7 @@ Key: Behind the net you can see the whole ice and decide without risking a direc
 
 **And it has to end in something.** A cycle that does not finish in a shot from in front rather than the perimeter, a pass across the middle, a low-to-high with a screen, or a drive to the net has accomplished nothing — three tidy laps and no shot is the defence's result, not yours. [Offensive Zone Play](../systems/offensive_zone_play.md) owns the cycle, including when to stop cycling and attack the net instead.
 
-**The same posture applies here as in your own end: never turn your back to anyone coming at you, and never duck.** **Behind the net the second one matters twice over, because the goal post is right there** — USA Hockey names the post alongside the boards for the head-down collision that can injure your neck at walking speed. Skates parallel to the boards, forearm and hip into the contact — not the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest. [Body Contact and Battles](../technique/body_contact_and_battles.md) covers the full three-case rule.
+**The same posture applies here as in your own end: never turn your back to anyone coming at you, and never duck.** **Behind the net the second one matters twice over, because the goal post is right there** — USA Hockey names the post alongside the boards for the head-down collision that can injure your neck at walking speed. Skates parallel to the boards, forearm and hip to the wall — not the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest. [Body Contact and Battles](../technique/body_contact_and_battles.md) covers the full three-case rule.
 
 ![](diagram:oz-behind-the-net)
 

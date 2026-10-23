@@ -445,7 +445,7 @@ Low and wide is hard to move, because leverage often beats strength in a board b
 **In short:** Where checking is allowed, turn side-on, hip and backside into the pressure, puck on your far side; never turn your back or duck.
 
 ```facts
-Position: Side-on, outside of your hip and backside into the pressure, not your chest
+Position: Side-on, outside of your hip and backside to the pressure, not your chest
 Key: Your hip and rear end are the strongest, widest surface you own, and cannot be stripped through the front
 Goal: Put shoulder, arm, hip and leg on the pressure side at once — three or four barriers instead of one
 Never: Turn to face pressure the instant you receive the puck — that is how players get pinned to the boards
@@ -545,7 +545,7 @@ Key: The spin-off and the tight turn are both edge-work moves before they are ha
 
 Protection is a way to buy time, not a place to live. Once it has bought you that time, get out.
 
-- **The spin-off / pivot.** From side-on, hip into the checker and weight low, rotate away from them and take the puck with you. The push comes off the **outside edge of the outside skate**. For **skates and edges**, "outside" is defined relative to the *turn*, not to the checker or the boards ("outside **shoulder**", later in this document, is the different, boards-relative sense). As in [Skating](skating.md#the-two-foot-hockey-stop), the **outside skate is the one further from the side you are turning toward**, and its **outside edge** is the little-toe side. Turning left, that is the little-toe side of your right blade, and driving against it throws your body left. Their momentum is going into where you were; you are already leaving.
+- **The spin-off / pivot.** From side-on, hip toward the checker and weight low, rotate away from them and take the puck with you. The push comes off the **outside edge of the outside skate**. For **skates and edges**, "outside" is defined relative to the *turn*, not to the checker or the boards ("outside **shoulder**", later in this document, is the different, boards-relative sense). As in [Skating](skating.md#the-two-foot-hockey-stop), the **outside skate is the one further from the side you are turning toward**, and its **outside edge** is the little-toe side. Turning left, that is the little-toe side of your right blade, and driving against it throws your body left. Their momentum is going into where you were; you are already leaving.
 - **The tight turn.** Cut across the checker's path rather than away from it, so that your body stays between them and the puck through the whole turn.
 - **Time it against their commitment.** Spin the moment you feel them lean in. If you spin before they commit, they simply follow you.
 

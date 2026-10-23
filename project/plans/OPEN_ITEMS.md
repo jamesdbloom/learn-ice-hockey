@@ -63,12 +63,12 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **Hip and wall cues elsewhere (from SG45):** winger and switching_positions now say "hip toward the checker" with a non-checking/CARHA scope, and "forearm and hip to the wall". Sweep the other pages (defender, center, puck_handling, skating, body_contact) for "hip into", "backside into" or "into the contact" shield cues without scope. Optional: the USA Hockey "contact with the puck" limit on leaning (usah.txt ~:6045), and adding the PWHL to body_contact :296.
-- **SG45 gate notes (minor):**
-  - body_contact :73 lists "boxing someone out at the net front" as legal in every league, which sits uneasily with HC 8.3 (:451/:468 carry the 8.3 limit).
-  - winger Common Mistakes "keeps only… simply maintaining established body position" is stricter than USAH 604(c) Note, which also allows angling.
-  - winger :31 facts lacks the CARHA avoid-contact limb (other layers carry it).
-  - breakouts :964 lost the own-empty-net caveat; consider restoring it.
+- **Contact wording follow-ons (from SG46, minor):**
+  - puck_handling heading "Side-on into the checker", :34, In short :445, body :463, :1084 and KT3 :1128 still say "into". They are scoped "where checking is allowed", so this is consistency only.
+  - puck_handling :548 spin-off briefly turns the back toward a checker; is the :469 override enough there?
+  - body_contact :73 "holding the lane… you reached first" could be misread as licence to screen for a puck carrier, which is running interference in every book (USAH 625(a)(1), HC 8.3, CARHA 66(a) Note 2).
+  - The USAH "contact with the puck" limit on leaning (usah.txt ~:6045) is still not carried.
+
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
