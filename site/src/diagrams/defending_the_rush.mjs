@@ -451,21 +451,22 @@ const twoOnTwo = {
 
   caption:
     'A 2-on-2 with the two attackers crossing, the attack moving right to left toward the defended ' +
-    'net at the left. Two attackers, two defencemen, nobody spare — and even numbers make people ' +
-    'relax, which is coaching emphasis rather than ' +
-    'a counted ranking. The version drawn is man-on-man: each defenceman takes one attacker and holds ' +
-    'their gap on the inside of them. The gap drawn is wide because this is the instant the crossing ' +
+    'net at the left. ' +
+    // ⚠️ SHORTENED 23 October 2026 (caption echo). Cut: the "even numbers make people relax"
+    // sentence, which the paragraph above the marker states with its own disclosure; and the
+    // zone alternative's mechanism and trade-off, which the bullet directly below states in
+    // full. This diagram has ONE host, its owner, so nothing was lost to any listener. The
+    // alternative is still NAMED here, and the gap-shrinks-never-grows point and the safety
+    // reason for drawing no route were kept — neither is in the host prose.
+    'The version drawn is man-on-man: each defenceman takes one attacker and holds ' +
+    'their gap on the inside of them; zone is the realistic alternative, so find out which your ' +
+    'team plays. The gap drawn is wide because this is the instant the crossing ' +
     'begins; aim for a gap that shrinks the whole way in and never grows, rather than a distance ' +
     'measured off a picture. ' +
-    'The realistic alternative is zone, where the strong-side ' +
-    'defenceman takes whoever carries the puck into their half and the weak-side defenceman holds the ' +
-    'middle. Zone survives a crossing rush better and man-on-man is tighter on a straight one, so find ' +
-    'out which your team plays, because mixing the two on the same rush leaves an attacker free. ' +
-    'Neither defenceman is drawn with a route, for two reasons. Follow your man through the ' +
-    'crossing, or call a clean switch — both are real answers, and never half of each. A picture ' +
-    'would have to pick one, so it picks neither and leaves the read with you. The ' +
-    'second reason is safety: a crossing rush is exactly where a beginner reaches for a hit instead ' +
-    'of holding their position.',
+    'Neither defenceman is drawn with a route, for two reasons. Following your man through the ' +
+    'crossing and calling a clean switch are both real answers, never half of each, so the picture leaves the read ' +
+    'with you. The second reason is safety: a crossing rush is exactly where a beginner reaches for ' +
+    'a hit instead of holding their position.',
 
   describe:
     'The full sheet, the defended net at the left with the goalie in it. Exactly two opposition ' +
@@ -520,11 +521,11 @@ const threeOnTwoDefault = {
   width: 900,
 
   caption:
-    'A 3-on-2 defended the way assumed here — "two wide, middle to the backchecker" — with the ' +
+    'A 3-on-2 defended "two wide, middle to the backchecker", with the ' +
     'attack moving right to left toward the defended net at the left. Each defenceman takes an outside ' +
-    'attacker, and neither chases the puck carrier. The middle attacker ' +
-    'belongs to the backchecking centre arriving from behind, who is the third own player in the picture ' +
-    'but is not one of the two in the name. The two defencemen retreat level with each other, the ' +
+    'attacker and neither chases the puck carrier; the middle attacker ' +
+    'belongs to the backchecking centre arriving from behind, the third own player in the picture. ' +
+    'The two defencemen retreat level with each other, the ' +
     'middle sealed between them — a staggered retreat opens a ' +
     'diagonal seam straight to the slot — and stop above the circles rather than backing all ' +
     'the way to the goal line. ' +
@@ -534,12 +535,13 @@ const threeOnTwoDefault = {
     // what the style guide's deixis rule forbids, and NAMING the alternative costs the same
     // words while surviving any marker move in either host. `rush-3-on-2-alternative`'s own
     // caption names itself in these words, so the two still resolve to each other.
-    'This is the two-wide default, and it is a coaching choice rather than a law: the realistic ' +
-    'alternative is strong side takes the puck and weak side splits, the two fail in different ' +
-    'directions, and two defencemen playing ' +
-    'different ones on the same rush is worse than either, so ask your coach which you play. ' +
-    'If the backchecker is genuinely not coming, the defenceman on the puck side has to squeeze the middle ' +
-    'and concede the far wide man — but not until they have looked.',
+    // ⚠️ SHORTENED 23 October 2026 (caption echo). Both hosts — the owner and
+    // positions/goaltender.md — state in their own prose that the two systems fail in
+    // different directions and that mixing them is worse than either, so that clause was cut
+    // here. The "backchecker not coming" read was cut too: the owner's bullet below the marker
+    // and its `Read:` fact carry it, and it is a defenceman's read, not the goalie's.
+    'This is the two-wide default, a coaching choice rather than a law: the realistic ' +
+    'alternative is strong side takes the puck and weak side splits, so ask your coach which you play.',
 
   describe:
     'The full sheet, the defended net at the left. Three opposition forwards abreast just inside the ' +
@@ -798,14 +800,18 @@ const trailer = {
 
   caption:
     'The trailer, or late man — the attacker who arrives second — with the attack moving right to left ' +
-    'toward the defended net at the left. The first wave of two has pulled both defencemen low, and if ' +
-    'either steps up to the trailer the ' +
-    'first wave gets the net. The trailer is following a few metres behind into the high slot, where the ' +
-    'look is clean and unopposed, and the backchecking forward arriving from up-ice has to take them. ' +
-    'That assignment is the standard system, low zone collapse behind a 2-1-2 forecheck, and it is an ' +
-    'assignment rather than a law: some teams instead give the trailer to the weak-side defenceman and ' +
-    'drop the third forward to the net front, which is tighter on the trailer and thinner in front, so ask ' +
-    'which your team runs — a trailer covered by nobody and a trailer covered by two are both goals. ' +
+    // ⚠️ SHORTENED 23 October 2026 (caption echo). The owner's bullet below the marker states
+    // the why (a defenceman who steps up hands the first wave the net), the trade-off and the
+    // nobody-or-two consequence in full. This caption is also voiced into winger.md and
+    // neutral_zone_systems.md, which do NOT carry the assignment in prose — so the default and
+    // the named alternative stay here, with the instruction to ask. Only the elaboration went.
+    'toward the defended net at the left. The first wave of two has pulled both defencemen low. The ' +
+    'trailer follows a few metres behind into the high slot, where the look is clean and unopposed. ' +
+    'In the standard system, a low zone collapse behind a 2-1-2 forecheck, the defencemen stay with ' +
+    'the first wave, because if either steps up the first wave gets the net, and the backchecking ' +
+    'forward arriving from up-ice takes the trailer. That is an assignment rather than a law: some ' +
+    'teams give the trailer to the weak-side defenceman and drop the third forward to the net front ' +
+    'instead, so ask which your team runs. ' +
     'The trailer is drawn here as a forward; it is often a defenceman who has activated. ' +
     'The defencemen will see them before the backcheckers do, and "trailer!" or "high!" is the shout.',
 

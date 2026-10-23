@@ -15,7 +15,14 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 (none)
 
+
+## Captions and small rules notes (23 Oct)
+
+- **Optional: rush-trailer caption's middle sentence runs about 50 words aloud; it could split at "the first wave gets the net". Optional hardening for defender-two-on-one: "a slide that takes the carrier down can be called as tripping".**
+- **Icing "from behind the centre red line" with no CARHA blue-line note** (zone_entries "How" bullet; winger's flip bullet). CARHA 65 (carha.txt ~:3062) lets leagues divide the ice at the blue lines; rink_map :188 already says so. Decide per page whether the one-line note belongs there (low; found by the SG39 zone_entries agent). ALSO winger.md :275 says flatly "past the red line it is not icing however far it travels", while the same page at :707 carries the CARHA blue-line leagues (65(b)). A puck shot from past the red line is also past the shooter's own blue line, so the claim looks true under both divisions. The open question is only whether "from your own side of the centre red line" needs the blue-line variant. Check against 65(a)–(c) before acting.
+
 ## New page: Getting Better on Your Own
+
 
 The design and its reasoning are in [`getting_better_plan.md`](getting_better_plan.md). Two pages, "Finding More
 Ice" and "Practising on Your Own", go in Off the Ice. Owner decisions D1–D6 were all made on 22 Oct and are
@@ -83,14 +90,6 @@ can ship once it has been reviewed.
 - **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
   fix).
 - **No checker** for labels crossing painted lines.
-- **Caption echoes with the paragraph BELOW (check_caption_echo extended 23 Oct; 14 hits, read before cutting):**
-  - zone_entries: dump-hard-rim 30% (the rim/reverse definition is repeated), dump-cross-corner 22% (the overlap is an honest disclosure — keep), dump-flip-over-trap, dump-soft-area;
-  - breakouts: d-to-d, up, stretch-pass, rim;
-  - defender-two-on-one;
-  - nz-pressure;
-  - defending_the_rush: rush-trailer, 3-on-2-default, 2-on-2;
-  - goalie-fifty-fifty-puck.
-  Cut only narrative restatement, never definitions, disclosures or safety limbs.
 - **dz-walk-down-man "goes with the carrier"** label appears to cross the blue line at every width;
   confirm in a browser.
 - **Site look owed:** the 🇬🇧 mid-paragraph in conditioning's Key focus; the special_teams bold run.

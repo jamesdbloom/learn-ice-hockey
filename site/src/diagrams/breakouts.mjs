@@ -140,14 +140,12 @@ const up = {
   width: 900,
 
   caption:
-    'The “up” breakout — the direct pass from the puck-carrying defenceman to the strong-side winger ' +
-    'on the wall, the fastest of the nine breakout options when the lane is open, though no count ' +
-    'ranks breakout plays by speed. Drawn in your own defensive zone at the left of the picture, ' +
-    'moving left to right; the read drawn here is the first forechecker committed behind the net, ' +
-    'which leaves the wall lane open. Pass firmly and to the winger’s stick, not to the boards behind' +
-    ' them. What a still picture cannot show is the risk: that pass travels the lane a forecheck posts' +
-    ' its wall-sealer in — the second forechecker in a 2-1-2, the strong-side half-wall player in a ' +
-    '1-2-2 — so intercepted at the hash marks it becomes a scoring chance from the top of the circle.',
+    'The “up”: the defenceman with the puck passes straight up the wall to the strong-side winger. ' +
+    'Drawn in your own defensive zone at the left of the picture, moving left to right; the read ' +
+    'drawn here is the first forechecker committed behind the net, which leaves the wall lane open. ' +
+    'What a still picture cannot show is the risk: that pass travels the lane where a forecheck posts ' +
+    'a player to seal the wall, so intercepted at the hash marks it becomes a scoring chance from the ' +
+    'top of the circle.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck deep in the ' +
@@ -459,18 +457,13 @@ const rim = {
     // W33: "a hard PASS", not "a hard shot" — the route is `kind: 'pass'` (dashed) and it goes to a
     // teammate; the corpus's `kind: 'shot'` is a shot on goal, and the owner (breakouts.md :22)
     // calls the rim sending it "to a teammate further along".
-    'The rim: a hard pass along the boards that follows the curve of the rink around behind the net ' +
-    'to a teammate further along, usually the far-side winger. Drawn in your own defensive zone at ' +
-    'the left of the picture, and it travels onward in the direction the puck was already going — ' +
-    'which is the whole difference between this and a reverse. The read drawn is a forechecker who ' +
-    'has sealed D1 against the boards with no passing lane through them, and it is also the standard ' +
-    'release valve when you simply have no time. It has to be low, flat and hard, because a soft ' +
-    'rim dies in the corner and is a gift. Be ' +
-    'honest about what this is: the rim is the play ' +
-    'a forecheck most expects from a defenceman sealed on the boards, and it concedes possession more' +
-    ' often than any option except an outright clear — both coaching emphasis rather than counted ' +
-    'rankings. The trapezoid rules where you play change where a rim should be aimed, and that is its' +
-    ' own section. ' +
+    'The rim: a hard pass around the boards behind the net to a teammate further along, usually the ' +
+    'far-side winger. Drawn in your own defensive zone at the left of the picture, and it travels ' +
+    'onward in the direction the puck was already going — which is the whole difference between this ' +
+    'and a reverse. The read drawn is a forechecker who has sealed D1 against the boards. Keep it ' +
+    'low, flat and hard. It concedes possession more often than any option except an outright clear ' +
+    '— coaching judgement, not a tracked rate. The trapezoid rules where you play change where to ' +
+    'aim it. ' +
     // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with no
     // closing delimiter, so a limb placed mid-caption ambers everything after it.
     //
@@ -552,15 +545,13 @@ const dToD = {
   width: 900,
 
   caption:
-    'D-to-D: the pass across to your partner, changing which side the attack comes from and forcing ' +
-    'the whole forecheck to reset and shift. Drawn in your own defensive zone at the left of the ' +
-    'picture, with the strong side flooded and the far side free, which is the read the option needs.' +
-    ' The route is the point of the picture: go behind your own net, never through the shaded area. ' +
-    'Intercepted below the goal line the pass means nothing, because there is no shot from there; the' +
-    ' same pass in front of the net is a point-blank chance against, and among the most punished ' +
-    'mistakes in the game — coaching emphasis, not a counted ranking. Pass it quickly rather than ' +
-    'skating it across, because carrying the puck toward your partner drags the pressure with you and' +
-    ' hands them your problem.',
+    'D-to-D: the pass across to your partner, which switches sides and makes the forecheck reset. ' +
+    'Drawn in your own defensive zone at the left of the picture, with the strong side flooded and ' +
+    'the far side free, which is the read the option needs. The route drawn is the default, behind ' +
+    'your own net; some teams exchange high, above the circles, instead, so ask which yours plays. ' +
+    'Either way, never through the shaded area. Intercepted below the goal line it costs ' +
+    'little, because there is no shot from there; intercepted in front of the net it is a point-blank ' +
+    'chance against. Move it quickly; do not skate it across.',
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
@@ -684,20 +675,17 @@ const stretch = {
     // side of, the blue line" and never defines "own side"; "plane" scores 0 in that book.
     // CARHA goes in NEITHER group. The closing instruction is safe in all six: blade-down
     // contact satisfies CARHA's first disjunct expressly, so do not weaken it.
+    // ⚠️ CUT TO THE INSTRUCTION 23 October 2026 (caption-echo pass). The book split above
+    // now lives in BOTH hosts' bodies — breakouts.md's stretch Execution bullet and
+    // passing_and_receiving.md's offside paragraphs — so the caption keeps only the
+    // all-books instruction. The risk sentence went too: both hosts state it in the
+    // paragraph directly below the marker.
     'The stretch pass, which is why this picture is the whole 200-foot sheet: your defensive zone is ' +
-    'at the left, the far blue line at the right. One forward — usually the weak-side winger — has ' +
-    'left the zone early and is waiting up ice, and the defenceman leads that forward so they collect it in ' +
-    'stride. The read is the shape drawn: the ' +
-    'opposition has committed all three forwards deep and their defencemen have stepped up, which is ' +
-    'what leaves both a lane and a winger behind the coverage. The winger is drawn on their own side of' +
-    ' the far blue line because that is what keeps them onside — one skate in contact with the line or' +
-    ' behind it at the instant the puck completely crosses is enough, NHL and IIHF Rule 83.1 and ' +
-    'PWHL Rule 85.1 in materially identical words, and a trailing skate in the air still counts ' +
-    'because the plane is unbroken, though under USA Hockey Rule 630(a) and Hockey Canada Rule 6.11 ' +
-    'an airborne skate is offside — so keep the blade on the ice and you are onside under every ' +
-    'book. And the honest risk: a completed stretch is close to a ' +
-    'breakaway, an intercepted one is a full-speed rush the other way with your winger sixty to ' +
-    'eighty feet behind the puck, and in most amateur hockey it is not a good default.',
+    'at the left, the far blue line at the right. The read is the shape drawn: all three of their ' +
+    'forwards deep and their defencemen stepped up, which leaves a lane and a winger behind the ' +
+    'coverage. Lead the winger so they take it in stride. They are drawn on their own side of the far ' +
+    'blue line: a skate blade on the ice, touching the line or behind it until the puck completely ' +
+    'crosses, keeps them onside in every book.',
 
   describe:
     'The full 200-foot sheet. The defenceman D1 has the puck in the right corner of their own zone at ' +

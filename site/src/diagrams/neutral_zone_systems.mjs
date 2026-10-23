@@ -466,16 +466,11 @@ const pressure = {
   numbered: true,
 
   caption:
-    'The neutral zone behind an aggressive forecheck: two of your forwards are gone hunting the ' +
-    'puck in the opponents’ end, so F3 is the only layer between the puck and your defence, and ' +
-    'both defencemen hold a deliberately tight gap back toward your own blue line. F3 holds the ' +
-    'middle and does not drift to a wall, because the pass that hurts you comes up the middle; ' +
-    'the strong-side defenceman steps up hard on a pass to the wall, which is the decision with ' +
-    'the least cover behind it; the weak-side defenceman stays home as your only genuine safety. ' +
-    'Note the phase: this is the moment the puck comes out, and while the forecheck was live ' +
-    'those same two defencemen were up at the offensive blue line. Beat the two forecheckers with ' +
-    'one pass and F3 is alone against three — this is the right choice when you are chasing a ' +
-    'goal, not a default.',
+    'The neutral zone behind an aggressive forecheck: with two forwards gone hunting the puck in ' +
+    'the opponents’ end, F3 is the only layer in front of your defence. F3 holds the middle; the ' +
+    'strong-side defenceman closes the gap fast on a pass to the wall; the weak-side defenceman ' +
+    'stays back as the last safety. Beat the two forecheckers with one pass and F3 is alone against ' +
+    'three — a choice for when you are chasing a goal, not a default.',
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right. Deep in the opponents’ ' +

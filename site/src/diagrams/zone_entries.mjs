@@ -454,9 +454,8 @@ const hardRim = {
   numbered: true,
 
   caption:
-    'Fired low and hard around the boards so it follows the curve of the corner and travels ' +
-    'on in the direction of play, arriving on the far side before the defence can rotate. A ' +
-    'rim is not a reverse: a reverse goes back against the flow of the play, behind you.',
+    'Rimmed round behind the net and on in the direction of play, arriving on the far side ' +
+    'before the defence can rotate.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -515,10 +514,8 @@ const softAreaDump = {
   width: 900,
 
   caption:
-    'Placed gently into a corner so that it dies there rather than rebounding — which is why ' +
-    'the chaser is drawn already most of the way there. The value is entirely in the race: a ' +
-    'stationary puck, a body arriving on it, and no help for the retriever from the puck\'s ' +
-    'momentum.',
+    'Placed, not fired, so it stops in the corner — which is why the chaser is drawn already ' +
+    'most of the way there. A soft dump is only worth it if your chaser wins the race.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -631,10 +628,8 @@ const crossCorner = {
   width: 900,
 
   caption:
-    'Shot hard diagonally into the far corner, away from the defender best placed to get it, ' +
-    'leaving their weak-side defenceman a long retrieval on their backhand facing their own ' +
-    'boards — awkward by design, though which retrievals are hardest is coaching judgement ' +
-    'rather than a counted ranking. It only works if your far-side winger is already going ' +
+    'Shot hard diagonally into the far corner, leaving the weak-side defenceman the long ' +
+    'backhand retrieval drawn here. It only works if your far-side winger is already going ' +
     'there. ⚠️ A defenceman facing their own boards has their back to ' +
     'you, which is the picture the checking-from-behind rules are written about. Arrive on ' +
     'the puck, never on their back.',
@@ -717,28 +712,18 @@ const flipOverTrap = {
   half: false,
   width: 900,
 
+  // The shorthanded-icing scope (USA Hockey 624(b)(1) classifications; NHL 81.6 major
+  // clawback) used to be carried here. It was cut rather than shortened: the caption now
+  // makes no shorthanded claim at all, so there is no exemption for it to overstate, and
+  // both hosts carry the scope in their own prose — zone_entries.md directly below this
+  // marker, winger.md in its own shorthanded-icing paragraph. The icing sentence went with
+  // it: both hosts state it in the prose beside the marker (zone_entries' "How" bullet,
+  // winger's flip bullet), so the caption only says where the drawing lands the puck.
   caption:
     'The structure drawn is a 1-3-1, and skating into the three is the trap working. So the ' +
-    'puck is lifted high off the ice with the blade opened under it, to travel over sticks and ' +
-    'bodies and land in open space behind their defence. A flat diagram cannot show the ' +
-    'height, and the height is the whole play: it goes over the three-player wall rather than ' +
-    'through it, and hangs long enough for your forwards to run ' +
-    // ⚠️ THE SHORTHANDED EXEMPTION IS NOT UNIVERSAL, and this caption stated it as though it
-    // were — while `icing-gaining-the-line` in `rules_primer.mjs` carried the full scope, so
-    // one voiced layer said it two ways. USA Hockey 624(b) nullifies icing where "(1) (For all
-    // Youth 15-Only and above, Girls 16U and above, High School and Adult classifications only)
-    // The offending team is short-handed" — `sources/usah.txt`, Rule 624 — so below those
-    // classifications a shorthanded team CAN be iced. NHL 81.6 grants it generally but withdraws
-    // it from a team "'short-handed' by reason of a major penalty, and they have neglected to
-    // ensure there is a player on the penalty bench to exit upon the expiry of the penalty …
-    // Icing will be called" (`sources/nhl_rules.txt`).
-    'underneath it. Land it past the defence but before the goal line. A puck crossing the goal ' +
-    'line untouched from behind the centre red line is icing, and whether being shorthanded ' +
-    'exempts you depends on the book you play under. USA Hockey grants that exemption only at ' +
-    'Youth 15-Only and above, Girls 16U and above, High School and Adult (Rule 624(b)(1)), so ' +
-    'below those levels a shorthanded team can be iced; the NHL grants it but withdraws it from ' +
-    'a team shorthanded by a major that has left nobody on the penalty box (Rule 81.6). Find ' +
-    'out which rules your league runs.',
+    'puck is lifted high, blade opened under it, to land behind their defence and short of ' +
+    'the goal line. A flat diagram cannot show the height, and the height is the whole play: ' +
+    'it goes over the three-player wall rather than through it.',
 
   describe:
     'The full sheet, own end at the left, attacking end at the right. An own forward with the ' +

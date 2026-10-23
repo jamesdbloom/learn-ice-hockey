@@ -794,18 +794,12 @@ const twoOnOne = {
   width: 900,
 
   caption:
-    'A two-on-one: take away the pass and give up the shot. Sit in the passing lane between the two ' +
-    'attackers with your stick flat on the ice on the passing side, back up under control, and do not' +
-    ' slide unless the pass has already been released — a cross-ice pass to an open forward is a ' +
-    'chance your goalie cannot save, whereas the shot is one they can see and are set for. That ' +
-    'is one of two legitimate systems rather than a law: the realistic alternative is a timed slide ' +
-    'flat across the passing lane, which removes the pass outright at the cost of putting you out of ' +
-    'the play if you go early, and it carries its own penalty exposure, which this document sets out ' +
-    'in full. Ask your coach which one you are playing and how they want you down, and make sure your' +
-    ' goalie gives the same answer. One honest caveat either way: if the second attacker has been' +
-    ' picked up by a backchecker and the shooter is walking into the slot completely unpressured with' +
-    ' no realistic pass available, it is no longer a two-on-one and you close on the puck. No ' +
-    'backchecker is drawn here, because one would make this a different situation.',
+    'A two-on-one: take away the pass and give up the shot. Sit in the passing lane between the ' +
+    'attackers with your stick flat on the passing side and back up under control. The shot is one ' +
+    'your goalie can see and set for; the cross-ice pass is a chance they cannot save. It is a ' +
+    'common system, not a law: the alternative is a timed slide across the passing lane, ' +
+    'so ask your coach which one you play. No backchecker is drawn, because one would make this a ' +
+    'different situation.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition forwards attack ' +

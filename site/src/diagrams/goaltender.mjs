@@ -862,17 +862,9 @@ const fiftyFiftyPuck = {
 
   caption:
     'A loose puck in the corner, you out of your net for it, and the forechecker closer to it ' +
-    'than you are — so look at where your net is. The first rule is not to leave your net for a ' +
-    'fifty-fifty puck. If you lose the race the net is empty and you are behind the play. The ' +
-    'rulebook anticipates it as well: racing out of your crease to beat an attacker to a loose ' +
-    'puck and then jumping on it instead of playing it is a two-minute minor under NHL and IIHF ' +
-    'Rule 63.2(vi). Both books attach a note to that clause saying that coming out to cut down ' +
-    'the angle, making the save and then covering the puck is legal, and Hockey Canada permits it ' +
-    'at clause ii of Interpretation 3 to Rule 10.1(a) — though clause v of that same ' +
-    'interpretation says a goalie who leaves their crease will not be allowed to freeze the ' +
-    'puck at all, and the book nowhere says which governs. The puck here is in front of the goal ' +
-    'line, so nothing about the trapezoid is in play; this is only the race. And if you do ' +
-    'commit, commit.',
+    'than you are — so look at where your net is. That empty net is what losing a fifty-fifty race ' +
+    'costs. The puck is in front of the goal line, so the trapezoid is not in play; this picture is ' +
+    'only about the race.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, and the net has nobody in ' +
