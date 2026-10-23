@@ -63,3 +63,11 @@ SG44–SG49 corrected contact cues on the pages: scoped "hip into the checker", 
 - Whisper mishearings: a scope clause lost in transcription. Each NotebookLM hit needs confirming by ear.
 - Paraphrased cues outside the searched vocabulary, in both the scripts and the NotebookLM audio.
 - The ElevenLabs single-voice audio itself: the scripts were checked, not the audio. The re-synthesised episodes will be transcribed before publishing.
+
+## Re-synthesis (SG50c, same day)
+
+- **Winger Detailed: re-synthesised and republished.**
+  - Synthesis: eleven_v4, voice L0Dsvb3SLTyegXwtm47J, stability 0.3, similarity 0.5, wav_44100, 5 chunks of up to 9,000 characters, billed 21,452 credits, 45:33.
+  - Whisper check: alignment 0.985 with no skipped stretch of 8 or more words. The new SCOPE and SPIN lines are audible at 05:44–06:20 and 16:31.
+  - Published: build_podcast_audio --style principles --doc winger, uploaded as winger-a2699f91.m4a (HTTP 200), podcast-principles.json updated.
+- **The other six stopped with HTTP 401 quota_exceeded:** 2,028 credits left on the ElevenLabs account. Switching Positions has chunks 1–4 cached. Skating, OZP, Puck Handling, Centre and Basics carrying-the-puck have none. About 90k credits are needed (upper bound; actual billing has run at about 48% of characters). The owner must top up; the runner script is in the scratchpad (sg50_synth.sh) and is safe to re-run.

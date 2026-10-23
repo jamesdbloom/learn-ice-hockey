@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG50c (23 Oct):** re-synthesis of the 7 corrected Style B episodes (background runner, scratchpad sg50_synth.log).
+(none)
 - **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.
 
 ## Captions and small rules notes (23 Oct)
@@ -52,6 +52,8 @@ can ship once it has been reviewed.
    page; no Basics episode.
 
 ## Owner decisions needed
+
+- **ElevenLabs credits ran out (23 Oct 14:05):** 2,028 left. Corrected re-recordings are pending for Switching Positions (4 of 5 chunks done), Skating, OZP, Puck Handling, Centre and Basics "Carrying the Puck"; about 90k credits needed (upper bound). The published versions of those six still voice the uncorrected cues (ungated spin and cutback; Switching Positions "hip into the checker"). Top up and I'll finish and republish. Winger is already republished.
 
 - **NotebookLM batch 7 is ready for you (23 Oct):** `.podcast_queue/notebooklm/remake_2026-10-20/batch7/`, built from the corrected pages: 10 Winger, 17 Forechecking Systems, 28 Body Contact and Battles. Same instructions and focus files as batch 6. The published episodes voice cues since corrected: Winger "hip into them"; Body Contact "leaning legal almost everywhere" and "seal with your body"; Forechecking "seal with body position… a human barricade". Generate when convenient; I'll transcribe, review, cut and publish as before.
 
