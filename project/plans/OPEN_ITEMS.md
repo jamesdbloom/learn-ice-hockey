@@ -13,7 +13,10 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG36 (23 Oct):** goalie stick and bench scope, 43.4, two captions and diagram comments. Reviews CLEAR; committing.
+- **SG37 (23 Oct):** three agents live:
+  - rules_primer, goaltender and equipment: the goalie bench scope and "possibly" a penalty shot;
+  - Astro upgrade for the two moderate advisories;
+  - body_contact: EIHL repetition trim (owner ruling).
 
 ## New page: Getting Better on Your Own
 
@@ -70,7 +73,7 @@ can ship once it has been reviewed.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
 - **Spoken units over 2,500 characters:** 12 corpus-wide (3 in forechecking_systems; most others are
   captions).
-- **rules_primer :596 "with a penalty shot" (harsher, minor):** Hockey Canada says it "may be awarded", so make it "possibly a penalty shot". **goaltender :1416:** "A goalie may not go to the bench for one" is unscoped (too strict for USA Hockey and CARHA mid-play).
+- **rules_primer :596 "with a penalty shot" (harsher, minor):** Hockey Canada says it "may be awarded", so make it "possibly a penalty shot". **goaltender :1416 and equipment :434:** "A goalie may not go to the bench for one" / "cannot simply skate to the bench for one" are unscoped (too strict for USA Hockey and CARHA mid-play).
 - **faceoffs :721 (optional):** if the PWHL is added for stick toe in the white, cite 78.7(v).
 - **Pull-up wording:** "see the numbers on their back" in practice_and_development and
   scanning_and_anticipation, vs "see their numbers" elsewhere. Cosmetic.
@@ -102,10 +105,6 @@ can ship once it has been reviewed.
 
 - **md_to_speech `_rule_number_opens_sentence`** treats a possessive "IIHF's." as the letter "s.", so a rule number after a possessive is not capitalised (fixed only inside the new capitals pass).
 - **synthesize_style_b.py has no `--doc-id`:** only matters if production is tracked by doc id. Low.
-
-## Site dependencies
-
-- **Astro 7.2.8 moderate advisories** (GHSA-98hj-9722-w3j8 XSS, GHSA-mpr7-6m5w-76rw View Transitions CSS injection; fixed after 7.3.2). Upgrading Astro needs a full build and site review; the static content is author-controlled, so the risk is low.
 
 ## Checkers (scripts/ — change between waves, never during one)
 
