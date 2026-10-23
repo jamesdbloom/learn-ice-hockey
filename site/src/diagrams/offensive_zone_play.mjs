@@ -1035,7 +1035,7 @@ const cycleRim = {
     'rather than a measurement, because nobody has counted cycle turnovers by cause. ' +
     '⚠️ And whichever one is on, this is a ' +
     'wall battle: never turn your back to anyone coming at you and never duck. Skates parallel to the wall, ' +
-    'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL +
+    'forearm and hip to it, head up and chin off your chest' + SHOULDER_TAIL +
     ' Only the checker and the ' +
     'goalie are drawn on the other team.',
 
@@ -1109,7 +1109,7 @@ const cycleReverse = {
     'read as a leading cycle turnover is coaching craft rather than a measurement, because ' +
     'nobody has counted cycle turnovers by cause. ⚠️ And ' +
     'whichever one is on, this is a wall battle: never turn your back to anyone coming at you and never ' +
-    'duck. Skates parallel to the wall, forearm and hip into the contact, head up and chin off ' +
+    'duck. Skates parallel to the wall, forearm and hip to it, head up and chin off ' +
     'your chest — and not on the point of your shoulder, and not the whole shoulder if you can ' +
     'help it. Only the checker and the goalie are ' +
     'drawn on the other team.',

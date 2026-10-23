@@ -1137,7 +1137,7 @@ const wingerDzRim = {
     'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to anyone coming at you and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
     'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +
-    'forearm and hip into the contact, head up and chin off your chest' + SHOULDER_TAIL,
+    'forearm and hip to the wall, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
     'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +
@@ -1199,12 +1199,12 @@ const wingerDzReverse = {
     ' sent back the way it came, against the direction the pressure is flowing, to a teammate ' +
     'arriving behind you. Read which of the two you are facing before the puck arrives, because the ' +
     'plays are opposites and the wrong one hands them the puck in your own end. Feet wide and moving, ' +
-    'side-on with your hip and backside into the checker, puck on the far side of your body — a stationary player on the wall gets ' +
+    'side-on with your hip and backside toward the checker, puck on the far side of your body — a stationary player on the wall gets ' +
     'pinned whichever mistake the checker is making. Call for it — "reverse!" — because the teammate ' +
     'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
     'back to anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot' +
     ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +
-    'to the boards, forearm and hip into the contact, head up and chin off your chest' +
+    'to the boards, forearm and hip to the wall, head up and chin off your chest' +
     SHOULDER_TAIL,
 
   describe:

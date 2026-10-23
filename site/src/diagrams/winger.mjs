@@ -630,8 +630,8 @@ const cornerAndTheEmptyPoint = {
     'throw it there. Your defenceman may equally be holding the line, and this picture shows one of the two rather ' +
     'than the way it always is. ⚠️ Never turn your back to anyone coming at you and never duck. Those are two ' +
     'different injuries — a hit from behind you cannot brace for, and a chin tucked to the chest, ' +
-    'which does not need speed to do it. Skates parallel to the boards, forearm and hip into the ' +
-    'contact, head up and chin off your chest' + SHOULDER_TAIL + ' Nothing in this ' +
+    'which does not need speed to do it. Skates parallel to the boards, forearm and hip to the ' +
+    'wall, head up and chin off your chest' + SHOULDER_TAIL + ' Nothing in this ' +
     'picture is contact, and nothing in it is a licence to hit.',
 
   describe:

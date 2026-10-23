@@ -14,7 +14,7 @@
 
 **In their end, play the slot and finish at the net.** Shoot from between the circles, and pass across the middle to make the goalie move. Keep moving until your defenceman winds up, then plant in front of the goalie's eyes and go for the rebound — around the goalie, never into them.
 
-**Be first in on the forecheck, and steer rather than hit.** Arrive under control, not off a run-up — even two hard strides can be charging — and drive at the carrier on an angle that pushes them toward one boards, so your winger knows where to seal. That is the 2-1-2; a 1-2-2 sends only one forward in, so ask.
+**Be first in on the forecheck, and steer rather than hit.** Arrive under control, not off a run-up — even two hard strides can be charging — and drive at the carrier on an angle that pushes them toward one boards, so your winger knows where to pin the puck. That is the 2-1-2; a 1-2-2 sends only one forward in, so ask.
 
 **Under pressure, put the puck to the outside.** The middle of your own zone and the middle of the neutral zone are the worst places on the ice to try to beat somebody. Rim it, chip it off the boards, or give it to a winger on the wall and go and get it back.
 
