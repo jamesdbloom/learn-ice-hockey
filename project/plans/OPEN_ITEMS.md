@@ -69,8 +69,7 @@ can ship once it has been reviewed.
 ## Content: safety, readability and wording
 
 - **Out-of-play follow-ons (minor, SG53):**
-  - **IIHF citation case (cosmetic, SG54 gate).** "63.2(ii)" for the IIHF should read (II). Sites: on_ice_communication :143, playing_without_the_puck :372, game_management :114, defensive_zone_coverage :828, special_teams :991, defender :78-79.
-  - **breakouts :530 "expect the minor anywhere" (minor).** This is broader than CARHA 55 Note 1 and HC Interpretation 5 (no glass, glass touch and deflection escape). It errs on the strict side.
+  - **IIHF citation case, remaining (cosmetic, SG55):** the corpus mixes "NHL and IIHF 63.2(x)" with "NHL 63.2(x), IIHF 63.2(X)". Lowercase IIHF limbs remain in goaltender (~12), risk_management, puck_handling, faceoffs :930, time_and_space :542, special_teams :775/:902/:1277, playing_without_the_puck :350/:353, game_management :1184/:1194 (39.4(II)) and defender :79/:215. The defender sites stay joint on purpose, because the slash form reads aloud as "clause two or clause two". Low value; do it only alongside other edits.
   - **PWHL rulebook edition.** pwhl_rules.txt page footer reads "2024 – 2025" while the corpus cites 2025-2026. Needs a source-verifier.
   - **game_management :143.** HC 6.4(a) Interpretation 1 limits the rule to a puck last touched in the end zone; the line does not carry that (harmless).
 - **Turn-back moves (low, from SG50):** winger, defender, breakouts and forechecking were swept clean, with no ungated wall cutback, curl or spin. Still unswept wordings: "open up to the middle", "roll off", "peel off", "swing away"; also diagram captions (breakout-wheel, breakout-reverse, winger-dz-reverse).
@@ -88,8 +87,7 @@ can ship once it has been reviewed.
   - body_contact was measured on 23 Oct and has only one run of four or more: KT8–11. These are four distinct hazards and none is voiced next door, so the run stays unless the owner rewords it.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
 - **faceoffs :721 (optional):** if the PWHL is added for stick toe in the white, cite 78.7(v).
-- **Style B body_contact script line 201 lost its "If"** (`podcast_style_b/` detailed .md/.txt and the script): "You are outnumbered, or tangled…" states as fact what the page gives as a condition. Fix it in the next Detailed remake: "If you are outnumbered, or tangled with someone just as stuck, or losing it here would give them a chance at your net, pin the puck…". The published audio carries it, but it is tactical wording, not a rule.
-- **Table rows lose their spoken escalation:** md_to_speech voices table rows without "Important." even when a cell has a ⚠️. Example: the body_contact :1672-1677 "What actually gets called" rows. Check whether each row's hazard is voiced with a marker in prose nearby.
+- **Style B body_contact script line 201 "If" restored in the local script (23 Oct).** It still needs to reach the audio in the next Detailed remake: the published episode carries the unconditional wording (tactical, not a rule).
 - **Basics wing script** omits the weak-side winger collapsing to the slot, which winger.md relies on. Fix
   in the next Basics remake.
 
@@ -122,7 +120,6 @@ can ship once it has been reviewed.
 
 ## Renderer and podcast tooling
 
-- **md_to_speech "U.S." is not treated as an abbreviation**, despite the `_NON_TERMINAL_ABBREVIATIONS` comment: a rule number after "U.S." would be capitalised. Low priority; no corpus instance is known.
 - **synthesize_style_b.py has no `--doc-id`:** only matters if production is tracked by doc id. Low.
 
 ## Checkers (scripts/ — change between waves, never during one)
@@ -135,4 +132,4 @@ can ship once it has been reviewed.
 - **PWHL 2026-27 rulebook:** expected around mid-November 2026; re-check `thepwhl.com/en/rules` then and diff against the 2025-26 book on disk.
 - **SIHA Discipline Policy:** unreachable from this network (local proxy); retry elsewhere.
 - **Link baseline size measures (low, from the 23 Oct fix):** the checker now accepts a match against either the decoded or the on-wire size, so false 75–80% flags are gone. Residual gap: an untagged row can hide a real ~4x shrink or growth by coincidence. Refresh baselines with --write-baseline (rows are now tagged [bytes=decoded]) to close it.
-- **HECC attribution (minor):** the Heads Up, Don't Duck page is a reproduced brochure credited to Alan B. Ashare MD and the Massachusetts Medical Society. skating :1046 "HECC asks a player" and body_contact :2139 "all three bodies" credit HECC as author; :913 "HECC's page asks" is fine. Also body_contact :881 "begun in 1995 by Dr Alan Ashare": the 1995 date is not on that page, so find its source.
+- **HECC wording (nit, SG55):** body_contact :913 says "HECC's … page asks" while the trailer now says the reproduced brochure asks. Both are true. In :2139's trailer, "all three sources" sits near "those four".
