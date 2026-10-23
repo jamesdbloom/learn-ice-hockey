@@ -23,7 +23,7 @@
 
 **Play simple in your own end and creative in theirs.** A missed chance in their end costs you a chance; a turnover in your own end costs you a goal.
 
-**Let the scoreboard set your risk level, not your temperament.** Leading late, take the safe option earlier — hard when you lead by three. Trailing late, take it up: pinch, activate, force the entry. Shorthanded, clear it hard unless you have truly read a 2-on-1.
+**Let the scoreboard set your risk level, not your temperament.** Leading late, take the safe option earlier — hard when you lead by three. Trailing late, take it up: pinch for the puck, activate, force the entry. Shorthanded, clear it hard unless you have truly read a 2-on-1.
 
 **Before you pinch, jump a lane or activate, ask three questions: do I have information or a feeling, who is behind me if I miss, and what does the scoreboard allow?** Two yeses and a green light, go; otherwise hold your position.
 
@@ -578,6 +578,7 @@ Key: A pinch with your centre high in the zone behind you is a good pinch even i
 Risk: The same pinch with your centre below the goal line is a bad pinch even if you win the puck — you were one bounce from a 2-on-1
 Priority: Three questions in half a second — do I have information, not just a feeling? is someone behind me if I miss? what does the scoreboard allow?
 Action: Two yeses and a green light from the scoreboard question, go; otherwise hold your position, which is itself a decision
+Action: Pinch for the puck — check only where your league allows it and only while they still have the puck; if you can see their numbers, pull up
 ```
 
 Even a well-read risk is a bad risk if nobody is covering the space you left. **Before you jump a lane, pinch or activate, the question is not only "am I right?" but "what happens if I am right and I still miss it?"**
@@ -596,7 +597,7 @@ Those two pictures are the same picture twice, differing only in where the centr
 2. **If I miss, is someone behind me?**
 3. **What does the scoreboard say about how much I can afford?**
 
-Two yeses and a green light from the third: go. Otherwise, hold your position — which is itself a decision, and often the right one.
+Two yeses and a green light from the third: go. Otherwise, hold your position — which is itself a decision, and often the right one. ⚠️ **When you do pinch, pinch for the puck: check only where your league allows it and only while they still have the puck, and if you can see their numbers, pull up.**
 
 ---
 
@@ -974,7 +975,7 @@ document, that is named too.*
 9. **Beat the breakaway with positioning; once a carrier is past you, do not foul them from behind.** That earns a **penalty shot** in every book, an **awarded goal** if your net is empty. ⚠️ **Keep your feet out of theirs:** a trip can cost your game in several books; a called slew-foot ends it in most, and can in all six.
 10. **Take a penalty to deny a certain goal, and almost never out of frustration.** A minor is roughly a one-in-five chance of a goal against, so it is a cheap trade against a certainty and a terrible one against nothing.
 11. **Do not compound, and never solve the chase with your body:** turn, get inside, talk. If you see their numbers, pull up and play the puck. ⚠️ **A called hit on a player's back ends your game in most books, and can in all six;** meant to injure, a match in most; into the boards when they cannot protect themselves, a match in several.
-12. **Your risk level moves with the scoreboard and the clock.** Leading, take it down — hard once the lead reaches three. Trailing late, take it up: pinch, activate, force the entry. Shorthanded, clear the puck hard unless you have truly read a 2-on-1 the other way. See [Risk and game state](#risk-and-game-state) for the power-play, overtime and empty-net cases.
+12. **Your risk level moves with the scoreboard and the clock.** Leading, take it down — hard once the lead reaches three. Trailing late, take it up: pinch for the puck, activate, force the entry. Shorthanded, clear the puck hard unless you have truly read a 2-on-1 the other way. See [Risk and game state](#risk-and-game-state) for the power-play, overtime and empty-net cases.
 
 ---
 

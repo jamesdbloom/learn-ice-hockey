@@ -38,9 +38,9 @@ Risk: Almost every amateur team can get the puck into the offensive zone; far fe
 Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 spread with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
 ```
 
-Once you have the puck at the other team's end — [carried or dumped in](zone_entries.md), or [won back on the forecheck](forechecking_systems.md) — the problem changes shape. Almost every amateur team can get the puck down there; far fewer turn it into a dangerous shot. The sections below are the routes to that shot, and the same few habits make all of them work.
+Once you have the puck at the other team's end — [carried or dumped in](zone_entries.md), or [won back on the forecheck](forechecking_systems.md) — the problem changes shape. Almost every amateur team can get the puck down there; far fewer turn it into a dangerous shot.
 
-**Look across the middle first, because that pass moves the goalie.** A pass that crosses the centre line of the ice just before the shot forces the goalie to push across and re-set, and in volunteer-tracked NHL 5-on-5 data it is the most dangerous pass type, at roughly double the next. That gap closes fast; the pass up the wall will still be there.
+**Look across the middle first, because that pass moves the goalie.** A pass that crosses the centre line of the ice just before the shot forces the goalie to push across and re-set, and in volunteer-tracked NHL 5-on-5 data it is the most dangerous pass type, at roughly double the next.
 
 **A screen takes the goalie's eyes, and from outside the crease, without contact, it is normally legal.** Do it on every shot. Inside the blue paint, or on its red line, your skate can cost the goal, and under some books the zone as well. Your blade on the ice turns the screen into a tip.
 
@@ -93,7 +93,7 @@ The numbers are not close:
 - Point shots convert at roughly **3% with traffic in front and about 1% or less without**. **That figure is Greg Revak's**, first printed with no source at all in his newsletter on 20 September 2020 ([Hockey's Arsenal — Point Shots Suck](https://hockeysarsenal.substack.com/p/point-shots-suck)). Republishing it in 2024 he credited it jointly to the HockeyViz shot-location map and to *"other data such as Clear Sight Analytics"* ([The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics), 11 April 2024). Neither half can be checked: the map has no traffic variable, and Clear Sight is named only as an example, with no dataset. **So take the direction and nothing else: point shots score rarely, and less often still with nobody in front.** [Shooting](../technique/shooting.md) gives a 1–3% location range for point shots; that is not independent support for the traffic split.
 - Shots from the middle beat shots from sharp angles, and danger climbs steeply as you get closer. NHL.com's summary of Sportlogiq data says *"even the tiniest bit further in can make a 5% improvement in your chances to score"* ([NHL.com](https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-high-danger-chances-328378484), Alison Lukan, 27 November 2021). Its chart shows where goals came from in ten-foot bands, so read the 5% as the direction and steepness of the effect, not five points on your own shooting percentage.
 
-So a clean look from the slot is worth several times an unscreened shot from the blue line — not a bit more, several times. This is why "just get pucks to the net" is incomplete advice. Volume from the perimeter is not a plan; it is what a team does when it has no plan.
+So "just get pucks to the net" is incomplete advice. Volume from the perimeter is not a plan; it is what a team does when it has no plan.
 
 ### The two levers you actually have
 
@@ -109,7 +109,7 @@ There are only two ways to make a shot dangerous, and you should be able to name
 1. **Move the puck to a dangerous place.** Get it into the home-plate area before you shoot — by carrying it there, passing it there, or driving it there off a rebound.
 2. **Move the goalie so a shot from anywhere becomes dangerous.** Take away their eyes with a screen, make them move laterally with a pass across the middle, or make them commit with a rebound.
 
-The best chances do both at once: a pass across the slot to a player already in the home-plate area. That is the subject of the next section, and a pass across the slot is the highest-value pass type measured.
+The best chances do both at once: a pass across the slot to a player already in the home-plate area.
 
 ---
 
@@ -133,7 +133,7 @@ The **royal road** is an imaginary line running down the centre of the ice, leng
 
 **Valiquette's percentages are attributed but cannot be checked — treat them as illustrative, not as data.** Green shots are reported as **76% of NHL goals**. NHL.com's Kevin Woodley reported the figure from Valiquette in December 2014, *The Hockey News* repeated it in 2015, and Chris Boyle, writing for the OMHA, gives the sample as 100 games of the 2014/15 season.
 
-What is missing is the data. The shot-by-shot tracking, the classification rules and the counts have never been published. Woodley's own article says *"There is no database, at least not one available to the public, tracking every shot in the NHL with that kind of detail"*. The 24% for red shots is only what is left over, and Boyle's seven green categories add up to 74%, not 76%. [Shooting](../technique/shooting.md) carries the same figure with the same label.
+What is missing is the data. The shot-by-shot tracking, the classification rules and the counts have never been published. Woodley's own article says *"There is no database, at least not one available to the public, tracking every shot in the NHL with that kind of detail"*. The 24% for red shots is only what is left over, and Boyle's seven green categories add up to 74%, not 76%.
 
 **The effect itself, unlike the number, has been replicated on public data.** Alan Wells' analysis of Ryan Stimson's volunteer-tracked Passing Project — *"51,308 shots at 5v5"*, counting all attempts rather than shots on goal — puts shooting percentage after a royal road pass at **15.50%**, far above every other pass type. That is a 5-on-5 figure: it leaves out the power play, and 5-on-5 is narrower than even strength. Alex Novet's public expected-goals model, built on Corey Sznajder's tracking of about 72,000 shots, found the effect is not just shot location in disguise: *"there is a big jump in Shapley value when the pass is royal road."*
 
@@ -159,11 +159,11 @@ Now make them move sideways. Crossing the royal road forces four jobs on the goa
 - They have to **re-find the puck visually** — their sightline was set to one side of the ice and the puck is now on the other.
 - And they have to **reset their stick and pads**, which is where technical errors creep in and the five-hole opens.
 
-If the shot comes before they finish that sequence, they are not making a positioning save — they are making a desperation save. That is a completely different, and much worse, proposition for them.
+If the shot comes before they finish that sequence, they are not making a positioning save — they are making a desperation save.
 
 ### The evidence
 
-- Shots following a **royal road / cross-slot pass** finished at **15.50%** — the highest-value pass type measured, roughly double the next one (Alan Wells' analysis of **Ryan Stimson's** Passing Project data, [via NHL.com](https://www.nhl.com/kraken/news/analytics-with-alison-dangerous-passes-327627898)). The data are **volunteer-tracked, 51,308 shots at 5v5, counting all attempts rather than shots on goal**, so carry that qualification wherever you quote the figure.
+- Shots following a **royal road / cross-slot pass** finished at **15.50%** — the highest-value pass type measured, roughly double the next one (Alan Wells' analysis of **Ryan Stimson's** Passing Project data, [via NHL.com](https://www.nhl.com/kraken/news/analytics-with-alison-dangerous-passes-327627898)). The data are **volunteer-tracked, 5-on-5, and count all attempts rather than shots on goal**.
 - Royal road passes are the **most important pre-shot movement variable** in expected-goals modelling — shots are much more likely to score when preceded by a pass moving across the ice in front of the goalie ([Hockey Graphs](https://hockey-graphs.com/2019/08/15/expected-goals-model-with-pre-shot-movement-part-4-variable-importance/)).
 
 **A note on the "33% versus 3%" you will hear quoted.** It comes from Chris Boyle's OMHA report of Valiquette's study: a shot *"from above the face-off circles and no lateral movement"* scores about 3%, and crossing the Royal Road through the slot raises it to 33%. But the 3% is a distant shot, not the same shot without the crossing, so distance does much of the work — and the study is unpublished. The **20–30%** range in coaching material has no published source at all. **Quote the 15.50% instead**, and only as a 5-on-5 figure for one pass type. Nobody has published a power-play conversion rate for seam passes, so a higher number attached to the power play is unsourced.
@@ -180,7 +180,7 @@ Read: Expect the seam to be defended, and expect it to open only briefly
 Never: Drive off the half-wall or curl out from behind the net with your head down — you cannot brace for a hit you have not seen, and coming out past the post you can be driven into the goal frame
 ```
 
-Knowing the concept is worthless without the habits that produce it. Four practical ones:
+Four habits produce a royal road pass:
 
 - **Look across before you look along.** When you receive the puck on the wall, your first scan is the far side of the slot — the **backdoor** (the far post, behind the defence) and the weak-side dot. Only when that is dead do you look at the safe option up the wall. Scanning in the opposite order is what costs you the seam: it opens briefly and closes permanently, and the wall option does not.
 - **Pass to where the shooter is going, not where they are.** A seam pass into a player's feet takes an extra touch, and the extra touch is exactly the time the goalie needed.
@@ -222,7 +222,7 @@ In an established offensive-zone possession, the three forwards should always be
 - **One player level with the puck** — close support, usually a short pass away, in the inside lane rather than flat on the boards. This is the player who receives the bump and keeps the possession alive.
 - **One player above the puck** — higher in the zone, toward the top of the circles or the point. This player is the shooting option on a low-to-high pass *and* the first line of defence if you lose it.
 
-That "below / level / above" arrangement is what forms the **attack triangle**, and it is the actual content of the advice "keep the triangle." The triangle gives you **width and depth at once**, which means the puck carrier always has at least two passing options at different angles. Coaching material states the requirement plainly: the puck carrier should have **at least two options** at all times, and players without the puck should keep moving to provide them ([Creating Offense with a 5-Man Unit](https://cdn1.sportngin.com/attachments/document/dfc7-2294372/Creating_Offense_5_man_unit_Oct_20.pdf)).
+That "below / level / above" arrangement is the **attack triangle**. The triangle gives you **width and depth at once**, which means the puck carrier always has at least two passing options at different angles. Coaching material states the requirement plainly: the puck carrier should have **at least two options** at all times, and players without the puck should keep moving to provide them ([Creating Offense with a 5-Man Unit](https://cdn1.sportngin.com/attachments/document/dfc7-2294372/Creating_Offense_5_man_unit_Oct_20.pdf)).
 
 ### Rotation: the triangle moves, the shape does not
 
@@ -258,7 +258,7 @@ Risk: Below the circles is always a commitment — below the hash marks you are 
 Never: Go that deep before someone has taken your job at the blue line — before you go, not after
 ```
 
-An offensive-zone defenceman is always at one of three depths, and the difference between them is the difference between a good defenceman and a liability:
+An offensive-zone defenceman is always at one of three depths:
 
 ![](diagram:defender-three-depths)
 
@@ -297,7 +297,7 @@ Never: Chase after a failed activation — that is how odd-man rushes against yo
 Action: Say it out loud — "I'm going", "I've got you", "hold"; silent rotations are the ones that leave the blue line empty
 ```
 
-These are the rules of the standard setup, with both defencemen on the line, not laws of hockey, and they are short and worth memorising:
+These are the rules of the standard setup, with both defencemen on the line, not laws of hockey:
 
 - **If one defenceman leaves the blue line, the other stays.** You want two players on the line at all times. This is the standard setup here and the assumption to play on if nobody has told you otherwise; it is widely taught, though nobody has published a count. But teams running a **five-player rotation**, or giving both defencemen a standing green light, deliberately break it and cover the line with whichever player is highest. See the pinch note at the end of section 10 and [Forechecking Systems](forechecking_systems.md).
 - **If a defenceman goes below the line and gets the puck**, they play as a forward until the play ends — and **F3 must fill in at the blue line for them**.
@@ -369,7 +369,7 @@ Never: Turn your back to anyone coming at you, or duck — keep your head up and
 - **Rim** — the puck goes *onward* around the boards, following the curve of the rink, past the checker who is sealing you against the wall. Beats pressure that has you pinned.
 - **Reverse** — the puck goes *back against the flow*, into the space a checker has just skated out of. Beats pressure that has over-committed and gone past you.
 
-Picking the wrong one is a leading cycle turnover — **nobody has counted cycle turnovers by cause, so take that as coaching craft rather than a measurement**; what is not in doubt is that the two reads point in opposite directions and one of them is wrong every time. The rule of thumb: **if the checker is still in front of you, rim it; if they have skated past you, reverse it.**
+Picking the wrong one is a leading cycle turnover — **nobody has counted cycle turnovers by cause, so take that as coaching craft rather than a measurement**. The rule of thumb: **if the checker is still in front of you, rim it; if they have skated past you, reverse it.**
 
 ![](diagram:oz-cycle-rim)
 
@@ -446,7 +446,7 @@ Options: D-to-D across the top first — the goalie has to slide and the shot co
 The sequence, with everyone's job named:
 
 1. **The passer** feeds the point and then **supports** — skating toward the strong-side hash marks, both to be an outlet if the defenceman needs a bail-out and to be in position for a rebound.
-2. **The defenceman** receives it and **walks the puck toward the middle** before shooting. This matters enormously: walking the line changes the angle, forces the goalie to track laterally, and often opens a lane through the shot-blockers.
+2. **The defenceman** receives it and **walks the puck toward the middle** before shooting. Walking the line changes the angle, forces the goalie to track laterally, and often opens a lane through the shot-blockers.
 3. **One forward gets to the net front** to screen and tip.
 4. **One forward supports in the high slot**, giving the defenceman a second option and forming a triangle with the point — meaning the puck can be moved again quickly instead of being fired into a shin pad.
 5. **The weak-side defenceman** reads for a rebound squirting to their side and is ready to jump on it.
@@ -475,7 +475,7 @@ Priority: Low-to-high is only worth doing when the net front is occupied — a s
 Never: Fire it from the point with nobody in front — the identical shot is a giveaway with extra steps
 ```
 
-Low-to-high is a *means*, not an end. Remember the numbers from section 1, **and their scope**. At even strength a point shot is among the **lowest-percentage shots on the ice**, and it is **blocked more often** than a shot from anywhere else. But section 1's under-5% figure is an even-strength one: on the power play the same map puts the whole zone at or above it — approximate in where the line falls, not in its direction. And analysis by Alex Novet found point shots **generate fewer rebounds** than shots from lower in the zone ([via The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics)).
+Low-to-high is a *means*, not an end. At even strength a point shot is among the **lowest-percentage shots on the ice**, and it is **blocked more often** than a shot from anywhere else. But section 1's under-5% figure is an even-strength one: on the power play the same map puts the whole zone at or above it — approximate in where the line falls, not in its direction. And analysis by Alex Novet found point shots **generate fewer rebounds** than shots from lower in the zone ([via The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics)).
 
 There is a cautionary tale. The Seattle Kraken under Dave Hakstol built their 2021-22 offensive-zone scheme around low-to-high, generated the third-most point shots per sixty minutes in the league, and produced the **lowest expected value per shot of any team** ([Sound of Hockey](https://soundofhockey.com/2022/03/30/kraken-coach-dave-hakstols-scheme-and-philosophies-offensive-zone-plays-part-7/)). Neither number is Sound of Hockey's own — it credits Corey Sznajder's tracking and TopDownHockey/JFreshHockey, both private — so treat this as a reported anecdote about one team in one season, not a checkable statistic.
 
@@ -485,7 +485,7 @@ The lesson is not "don't go low-to-high." It is: **low-to-high is only worth doi
 
 ## 6. Net-Front Play
 
-The net front is the least glamorous piece of productive real estate in hockey, and section 1 has the numbers behind the second half of that: shots from the home-plate area convert several times better than shots from outside it. It is also the place where players most often do the job badly while believing they are doing it.
+The net front is the least glamorous piece of productive real estate in hockey, and the place where players most often do the job badly while believing they are doing it.
 
 ### Screening
 
@@ -513,7 +513,7 @@ The mechanics of doing it well:
 - **Tall chest, low hips — the two halves do different jobs.** Keep your **chest up and square to the shooter** so you present the biggest possible obstruction to the goalie's sightline; crouching, turning sideways or ducking away from the shot all shrink the surface you are blocking and let the goalie find the puck around you. ⚠️ **Ducking has a second cost, and it outlives the screen:** it puts your chin on your chest, which is the posture the head-first spinal-injury mechanism turns on. USA Hockey's *Heads Up Hockey* makes *"Heads Up — Don't Duck!"* its Rule One — a safety principle about collisions, not shots, so it still holds on the shift where the screen came to nothing. At the same time keep your **hips low and your feet wide, knees bent** — that is what stops a defenceman moving you. Standing tall *and* narrow, with straight legs, is why players get shoved out of the paint; folding at the waist is why goalies see the shot. You want the posture of a squat, not of a bow.
 - **Be still at the moment of release.** Plant and obstruct. Constant shuffling gives the goalie flashes of the puck through the gaps.
 - **Track the puck, not the shot.** Your chest is square to the shooter, so the puck is in front of you: keep your eyes on it at their stick, ready to tip it, and do not turn to follow it toward the net. Turning your body to follow the flight of the shot is how you both un-screen the goalie and miss the rebound.
-- **Position: inside the faceoff dots, roughly six to eight feet out from the goal line — with both feet off the red crease line.** ⚠️ **The crease arc is six feet at its deepest**, straight out from the middle of the goal line, so the *bottom* of that range is the line itself: live at the far end of it. Deep enough to obstruct the goalie's view and to reach rebounds, far enough out to stay clear of the crease. Note the geometry, because it is easy to get wrong: the crease is **8 feet wide at the goal line and 6 feet deep**, because the arc that closes it is struck with a **six-foot radius from the centre of the goal line** (Rule 1.7) — the six feet is the *depth*, not the half-width. So "three feet out from the goal line" is *inside* the paint, not clear of it. Live just beyond the arc.
+- **Position: inside the faceoff dots, roughly six to eight feet out from the goal line — with both feet off the red crease line.** ⚠️ **The crease arc is six feet at its deepest**, straight out from the middle of the goal line, so the *bottom* of that range is the line itself: live at the far end of it. Deep enough to obstruct the goalie's view and to reach rebounds, far enough out to stay clear of the crease. The crease is **8 feet wide at the goal line and 6 feet deep**, because the arc that closes it is struck with a **six-foot radius from the centre of the goal line** (Rule 1.7) — the six feet is the *depth*, not the half-width. So "three feet out from the goal line" is *inside* the paint, not clear of it.
 - **Know where the near post is before you plant, and take contact with your head up.** You are standing still with your eyes on the puck, so a defender walking you sideways moves you by a body you **feel rather than see**, along a path with a steel post at one edge and the goalie at the other. Keep your **head up and chin off your chest, and never duck**: USA Hockey's *Heads Up Hockey* says *"almost all on-ice cervical spine injuries have been due to the head being slightly flexed (head down) while making head-on contact with the boards or goal post"*, and that it *"can occur at walking speed"*. Its *Introduction To Body Contact* adds: *"Hit the boards or goal posts with an arm, a leg, or anything but your head first."* A box-out moves you along the same path, so this holds whether or not your league allows checking. ⚠️ **And never take the goalie braced.** Wide feet and bent knees are how you refuse to be moved by a *defender*; if a shove is carrying you into the goalie, give way and make the effort to avoid them visible. [Body Contact and Battles → Net-Front Battles](../technique/body_contact_and_battles.md#9-net-front-battles) sets it out in full and outranks this section.
 
 ![](diagram:oz-net-front-screen)
@@ -580,7 +580,7 @@ Read: Revak's 60% summarises the whole chart rather than one zone — Novet plot
 - **Anticipate where it goes, don't react to where it went.** The rough tendencies: a puck hitting a pad tends to squirt back toward the corner it came from, a puck hitting the blocker toward the shooter's off side, a puck hitting the chest to drop in the paint. **Treat these as tendencies, not rules** — they are coaching craft, not measured rebound distributions, and a goalie who is angling their surfaces deliberately (which is what [Goaltender](../positions/goaltender.md) teaches them to do) will break all three on purpose. Know where the shot is coming from, pre-load your feet that way, and be ready to be wrong.
 - **Shoot it back immediately.** Do not settle it, do not look for a pass. The window is one or two seconds, while the goalie is down and out of position.
 - **Go to the far post when you get tied up.** If your check has sealed you off from the near side, the far post is a rebound location nobody is covering and it opens the weak-side chance.
-- **Time your arrival by which of the two jobs you have.** If the net front is *your assignment*, you are planted there before the release — a screen you are still walking into is not a screen. If you are **driving in from the wall or your own circle**, arrive as the puck is released rather than well before it: go early and the defender has the time to establish position on you and turn you away from the puck. **Both are decisions taken before the shot; it is only the arrival that differs.** That split is coaching craft rather than a measured finding.
+- **Time your arrival by which of the two jobs you have.** If the net front is *your assignment*, you are planted there before the release — a screen you are still walking into is not a screen. If you are **driving in from the wall or your own circle**, arrive as the puck is released rather than well before it: go early and the defender has the time to establish position on you and turn you away from the puck. That split is coaching craft rather than a measured finding.
 - **Understand the odds.** The defending team recovers roughly **60% of rebounds**, which is why the net-front job is a *job*: you win that race by deciding to go before the shot, and reacting afterwards loses it. The 60% is **Greg Revak's** arithmetic ([Hockey's Arsenal](https://hockeysarsenal.substack.com/p/point-shots-suck), 20 September 2020, restated [at The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics)) on a chart by **Alex Novet**, which shows the attacking team recovering 38–42% of rebounds wherever the shot came from. No league, season or sample size is given for it, so treat it as a direction rather than a number you can check.
 
 ### Goaltender interference — the actual standard
@@ -602,7 +602,7 @@ Rule: Keep your skates off the painted crease line — USA Hockey's Note to 625(
 Never: Plant your feet in the blue paint. Screen from outside it instead, where a screen without contact is normally legal and worth doing constantly
 ```
 
-**What to do holds under every book: screen from outside the crease, never initiate contact with the goalie, and give ground when they establish their position.** The rule behind it is the most misunderstood in the offensive zone, so here is what **NHL Rule 69** actually says.
+**What to do holds under every book: screen from outside the crease, never initiate contact with the goalie, and give ground when they establish their position.** Here is what **NHL Rule 69** actually says.
 
 **The governing premise (69.1):** an attacking player's *position*, whether inside or outside the crease, **should not by itself** determine whether a goal is allowed. The rule then names two things and says a goal *"should be disallowed **only if**"* one of them is present:
 
@@ -619,9 +619,9 @@ Never: Plant your feet in the blue paint. Screen from outside it instead, where 
 
 **Outside the crease (69.4), the goal and the penalty are separate questions.** On the goal, contact that is more than incidental takes it off, and incidental contact does not. On the penalty, a goalie out of the crease is **not "fair game"**: the penalty *"should be assessed in every case where an attacking player makes unnecessary contact"*, and incidental contact is excused only while the goalie is *"in the act of playing the puck"* and you made a reasonable effort to avoid it. Rule 42.1 says the same in the NHL, IIHF and PWHL books. ⚠️ **So bumping a goalie who has come out to challenge, or who is set outside the paint with the puck elsewhere, is a penalty.** Neither book says how the two fit where contact was incidental but the goalie was not playing the puck. USA Hockey sends accidental contact to its interference rule (607(d) Note 1), and Hockey Canada and CARHA penalise unnecessary contact with a goalie out of the crease without excusing the incidental kind. [Rules Primer](../foundation/rules_primer.md) sets out each book.
 
-**Inside the crease (69.3):** this is much stricter. If you **initiate contact with a goalie who is in the crease — incidental or otherwise — and a goal is scored, the goal is disallowed.** Further, if you **establish a significant position within the crease so as to obstruct the goalie's vision and impair their ability to defend the goal**, the goal is disallowed even with no contact at all. **Both halves of that second ground are load-bearing, and the rule defines the first half rather than leaving it to the eye — drop either and it sounds a good deal stricter than it is.** The operative wording is *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision **and** impair his ability to defend his goal"* — the obstruction **and** the impairment, not the obstruction on its own. And a player does that *"when, in the Referee's judgment, his body, or a substantial portion thereof, is within the goal crease **for more than an instantaneous period of time.**"* So a body that crosses the paint and is gone has not met it, and neither has a body that is in there without impairing the goalie's ability to defend the goal.
+**Inside the crease (69.3):** this is much stricter. If you **initiate contact with a goalie who is in the crease — incidental or otherwise — and a goal is scored, the goal is disallowed.** Further, if you **establish a significant position within the crease so as to obstruct the goalie's vision and impair their ability to defend the goal**, the goal is disallowed even with no contact at all. **Both halves of that second ground are load-bearing, and the rule defines the first half rather than leaving it to the eye — drop either and it sounds a good deal stricter than it is.** The operative wording is *"establishes a significant position within the goal crease, so as to obstruct the goalkeeper's vision **and** impair his ability to defend his goal"*. And a player does that *"when, in the Referee's judgment, his body, or a substantial portion thereof, is within the goal crease **for more than an instantaneous period of time.**"* So a body that crosses the paint and is gone has not met it, and neither has a body that is in there without impairing the goalie's ability to defend the goal.
 
-**Do not read that narrowing as room to work in, because the IIHF's own Situation Handbook does not apply it.** Asked what the referee decides where a *"Team A player is in the crease screening the goalkeeper, and Team A scores"*, the Handbook answers flatly: *"The goal shall be disallowed, and no additional penalty assessed"*. It cites *"Rule 69.1 and Rule 69.3"* and asks nothing about duration, the goalie's vision or their ability to defend (Situation 69.1, in the same words in the 2025/26 and 2026/27 editions). **The Handbook ranks below the rulebook and says so itself** — its Foreword: *"in case of any contradictions, the valid IIHF Rulebook is always the basis"* — so 69.3's conjunctive test is still the rule, and this is guidance reading it loosely rather than a rule contradicting it. ⚠️ **But the official in front of you may be working from that answer, and you will not get to argue the limbs from the ice.** Take the narrowing as an account of what the rule requires, not as space to play in: screen from outside the paint, and off the red line around it.
+**Do not read that narrowing as room to work in, because the IIHF's own Situation Handbook does not apply it.** Asked what the referee decides where a *"Team A player is in the crease screening the goalkeeper, and Team A scores"*, the Handbook answers flatly: *"The goal shall be disallowed, and no additional penalty assessed"*. It cites *"Rule 69.1 and Rule 69.3"* and asks nothing about duration, the goalie's vision or their ability to defend (Situation 69.1, in the same words in the 2025/26 and 2026/27 editions). **The Handbook ranks below the rulebook and says so itself** — its Foreword: *"in case of any contradictions, the valid IIHF Rulebook is always the basis"* — so 69.3's conjunctive test is still the rule, and this is guidance reading it loosely rather than a rule contradicting it. ⚠️ **But the official in front of you may be working from that answer, and you will not get to argue the limbs from the ice.** Screen from outside the paint, and off the red line around it.
 
 **When the goalie makes contact to establish position, give ground at once.** 69.3 also disallows a goal where a goalie establishing position in the crease contacts you there and that impairs them — even if you got out immediately, as the IIHF Situation Handbook confirms (69.6). ⚠️ **And it puts the duty on you by name:** an attacker who *"does not immediately vacate his current position in the goal crease (i.e. give ground to the goalkeeper)"* loses any goal scored. The PWHL prints the same paragraph, with "her", at 71.3.
 
@@ -660,7 +660,7 @@ Action: Play the puck, not the goalie, when you both arrive at a loose one — o
 
   **A third limb covers a puck underneath somebody.** Where the puck is under a player in or around the crease, *"(deliberately or otherwise)"*, *"a goal cannot be scored by pushing this player together with the puck into the goal"*. Digging at a covered puck is fair; shovelling the pile into the net is not a goal. A defender **other than the goalie** who deliberately covers it in the crease gives you a penalty shot (Rule 63.6, through 67.4); a goalie covering it there is simply a whistle.
 
-  **The IIHF prints all four limbs at the same number.** Both books also list the play at 78.5(ix), worded more loosely, so take the conditions from 69.7.
+  **The IIHF prints all four limbs at the same number**, and both books list the pushed-goalie play again, more loosely, at 78.5(ix): take the conditions from 69.7.
 - **Pushed into the goalie (69.1):** if a **defender** pushes, shoves or fouls you into the goalie, that is **not treated as contact initiated by you** — provided you made a reasonable effort to avoid it. Conversely, if **you** push a defender into their own goalie, that **counts as contact initiated by you** and the goal is disallowed.
 - **Penalty (69.2):** deliberate contact with a goalie, inside or outside the crease, is a minor or a major **whether or not a goal is scored**, and under 42.1 and 69.4 (PWHL 71.4) a penalty *"should be assessed in every case"* of unnecessary contact. ⚠️ **Arriving into a goalie is charging, and no book caps it at a minor.** NHL 42.1, and PWHL 42.1 with "her": *"A minor, major or a major and a game misconduct shall be imposed on a player who charges a goalkeeper while the goalkeeper is within his goal crease"*. Each book's 42.4 allows a match penalty for a deliberate injury or attempt, its 21.1 makes one mandatory for a deliberate attempt to injure, and its 42.5 makes the game misconduct mandatory when a major is called for an injury to the face or head — as the EIHL Casebook does at its Rule 42. The IIHF's 42.1 says only *"A penalty"*, tiered at 42.2–42.4 up to a major plus a game misconduct at the referee's discretion, and it has no match penalty.
 - **Under USA Hockey, what you did decides the rule: accidental contact is an interference minor; deliberate contact is charging, never two minutes alone.** Accidental or unavoidable contact with a goalie is interference, a 625(a)(8) minor (607(d) Note 1); *"Any deliberate body contact or check that is delivered to the goalkeeper shall be penalized as charging."* ⚠️ **Charging is never a bare minor there:** 607(a) and 607(c) are a minor plus a misconduct or a major plus a game misconduct, **607(b) makes a reckless charge a mandatory major plus game misconduct** — *"shall be assessed"* — and 607(e) allows a match penalty. **For a reckless charge, plan on a match penalty**: Rule 602(a) says one *"shall be assessed"* for reckless endangerment. **The privileged area is not the blue paint**: it runs between the end-zone faceoff spots out to the end boards (607(d) Note 2; *Casebook* Rule 607, Situation 6), which is exactly where you work.
@@ -697,7 +697,7 @@ The *Casebook* (Rule 625, Situation 10) softens the whistle but not the goal: a 
 
 **The IIHF's Rule 69 is the NHL's, with one addition**: where an attacker is in the crease and *"does not leave immediately"*, the referee may stop play for a neutral-zone faceoff — so, as under USA Hockey, loitering in the paint can cost the zone before anyone shoots. It also says *"relevant contact"*, and weighs the degree and nature of the contact over the goalie's exact location.
 
-**Hockey Canada (Rule 8.5) bars standing in the crease unless the puck is in it — but carves the case back out.** If you are in the crease without interfering and a teammate outside it scores, the goal stands, *"provided that the player who was in the goal crease does not attempt to play the puck, interfere with the play or obstruct the Goaltender's view or movements."* **USA Hockey has no such carve-out**, so the same play — a body in the paint, a teammate scoring from outside — is a goal under Hockey Canada and no goal under USA Hockey. If you play under both, know that one cold. Hockey Canada's impairment test (Interpretation 3 to 8.5(a)) names vision but reaches only a player standing in the crease, and it keeps goal and penalty apart: a referee may disallow the goal without penalising you.
+**Hockey Canada (Rule 8.5) bars standing in the crease unless the puck is in it — but carves the case back out.** If you are in the crease without interfering and a teammate outside it scores, the goal stands, *"provided that the player who was in the goal crease does not attempt to play the puck, interfere with the play or obstruct the Goaltender's view or movements."* **USA Hockey has no such carve-out**, so the same play — a body in the paint, a teammate scoring from outside — is a goal under Hockey Canada and no goal under USA Hockey. Hockey Canada's impairment test (Interpretation 3 to 8.5(a)) names vision but reaches only a player standing in the crease, and it keeps goal and penalty apart: a referee may disallow the goal without penalising you.
 
 **Make the effort to avoid the goalie, whatever put you there** — ⚠️ **being fouled into them is not on its own a defence in any of these books.** They differ in what the effort buys:
 
@@ -706,7 +706,7 @@ The *Casebook* (Rule 625, Situation 10) softens the whistle but not the goal: a 
 - **CARHA 66(b)**: failing to try to avoid the goalie after a defender's interference is a minor and loses any goal; tripped without the puck, the same failure is a minor wherever the goalie is.
 - **USA Hockey**: its push-in relief (617(c)(4), 625(b)) saves your **position** only; contact that interferes with the goalie is at least a 625(a)(8) minor, and deliberate contact is charging, never a bare minor (607), and the effort test lives in its *Casebook*, set out above.
 
-**Outside the paint the books split.** Only NHL and IIHF 69.1 (PWHL 71.1) reach positioning outside the crease — positioning that stops the goalie moving freely in their crease can cost the goal; their tables allow a screen outside the crease even where it impairs the goalie's ability to defend (5C, 5E). USA Hockey writes nothing about screening or a goalie's vision, and Hockey Canada's two references to the goalie's view reach only a player in the crease. **Inside the paint, USA Hockey, Hockey Canada and CARHA are all stricter than the NHL. Whichever you are under, screen from outside the blue, and off the red line around it.**
+**Outside the paint the books split.** Only NHL and IIHF 69.1 (PWHL 71.1) can take a goal off for a screen outside the crease, and only one that stops the goalie moving freely in their crease. USA Hockey writes nothing about screening or a goalie's vision, and Hockey Canada's two references to the goalie's view reach only a player in the crease. **Inside the paint, USA Hockey, Hockey Canada and CARHA are all stricter than the NHL. Whichever you are under, screen from outside the blue, and off the red line around it.**
 
 **CARHA (Rule 66(b)) bars the crease flatly**: no standing in it unless the puck is there, and a goal scored meanwhile does not count — Hockey Canada's bar without its carve-out, close to USA Hockey's. Any contact that impedes the goalie is a minor, with no incidental-contact allowance. Its relief for a defender's interference putting you in the crease sits beside ⚠️ **a separate minor, and a lost goal, for failing to avoid the goalie**, and the book does not say which governs. Some rec leagues add a stricter house rule still; this document has no count of how many. CARHA governs CARHA-affiliated leagues only, so read your own league's rule.
 
@@ -889,7 +889,7 @@ Action: When a cycle produces a neutral-zone turnover, somebody must be anticipa
 
 ## 10. Regaining Possession After a Shot
 
-**Treat the seconds immediately after a shot as the most dangerous moment in a possession — and this one is measured.** The NHL's public play-by-play feed timestamps every shot and every goal, so the hazard can be read straight off it. Across games 2024020001–2024020400 of the 2024-25 regular season (`api-web.nhle.com/v1/gamecenter/{id}/play-by-play`), a team that put a shot on goal scored again within the next **three seconds 1.37%** of the time, against roughly **0.26%** for a three-second window picked at random — about **five times** the base rate. Put the other way round: **11.4% of all goals came within three seconds of a preceding shot on goal by the same team**, and 19.7% within ten. These are figures derived from the raw feed rather than published statistics, but the direction is not in doubt, and it agrees with the rebound-recovery figure quoted earlier in this document and with the shot-location values [Shooting](../technique/shooting.md) covers. The goalie has committed, is often down, and is out of position. The puck is loose in the most dangerous area on the ice. Every defender has just been pulled toward the shot.
+**Treat the seconds immediately after a shot as the most dangerous moment in a possession — and this one is measured.** The NHL's public play-by-play feed timestamps every shot and every goal, so the hazard can be read straight off it. Across games 2024020001–2024020400 of the 2024-25 regular season (`api-web.nhle.com/v1/gamecenter/{id}/play-by-play`), a team that put a shot on goal scored again within the next **three seconds 1.37%** of the time, against roughly **0.26%** for a three-second window picked at random — about **five times** the base rate. Put the other way round: **11.4% of all goals came within three seconds of a preceding shot on goal by the same team**, and 19.7% within ten. These are figures derived from the raw feed rather than published statistics, but the direction is not in doubt. The goalie has committed, is often down, and is out of position. The puck is loose in the most dangerous area on the ice. Every defender has just been pulled toward the shot.
 
 This is also the moment most amateur teams stop playing — the shot goes in, everyone watches, and the defence walks out with it.
 
@@ -921,7 +921,7 @@ The other two forwards go **to the net**: one to the front for the screen and ti
 ```facts
 Read: "If you can't arrive on contact, don't go" — and clearly first on an uncontested race. Pinch when the winger is flat-footed or facing the glass or on a loose puck or tired line
 Never: Pinch when your forwards are already below you, when the opponent has turned up ice with speed, when protecting a narrow lead late, or when your partner has not seen you go
-Technique: Stick in the passing lane before your feet commit. Angle the winger into the boards rather than the middle, close with short explosive steps; where your book allows it seal the wall — never their body
+Technique: Stick in the lane before your feet commit; angle the winger to the boards, not the middle; seal the wall with position, never by pinning; check only where your league allows, never their back
 Priority: Take the puck, or — where your league permits body checking — take the player; achieve neither and you have created an odd-man rush against your own team. A winger facing the glass is not that player
 Rule: A winger facing the glass is defenceless: a hit in the back is a major and game misconduct, no minor (NHL, IIHF, PWHL 43). USA Hockey: minor and misconduct at least; forceful, an ejection (Casebook 608 Situation 1); hit into a puck battle, a minor — reckless, plan on a match (640(e),(g),(h), 602(a))
 Rule: CARHA has no checking: charging (52(a)) is a minor or major, a major on injury; intentional body contact, or not averting it (49(a)) likewise, a major if intentional contact injures; a major ejects (30(a)); a minor into the boards doubles (49(b)), two of three that eject (32(a)) (adult leagues only)
@@ -933,13 +933,13 @@ Rule: The PWHL limits the check (52.1): hold ground you established, lean in a r
 Convention: How aggressively defencemen pinch is a coaching choice — some green-light both, some only the strong side, some forbid going below the circles; ask
 ```
 
-A **pinch** is stepping down from the offensive blue line to keep the puck in the zone or to win a puck on the wall. **Do not confuse it with a step-up**, which is challenging an attacker in the neutral zone or at your own line — different play, different zone. ⚠️ **And whatever the criteria say, arrive while the winger still has the puck** — a check you decide on after it has gone is a late hit, it is not capped at a minor in any book, and the limits are set out below the criteria.
+A **pinch** is stepping down from the offensive blue line to keep the puck in the zone or to win a puck on the wall. **Do not confuse it with a step-up**, which is challenging an attacker in the neutral zone or at your own line — different play, different zone. ⚠️ **And whatever the criteria say, arrive while the winger still has the puck** — a check you decide on after it has gone is a late hit, and it is not capped at a minor in any book.
 
 The decision criteria, which are consistent across coaching sources:
 
 **Pinch when:**
-- You can **arrive on contact** — you and the puck get there at the same time. "If you can't arrive on contact, don't go." That is the test when an opposing player is arriving too. Getting there level lets you play the puck or, where your book allows contact at all, seal the wall rather than the winger. Arriving a beat late is the failure: a check already being delivered as the puck goes may be finished, but one you decide on afterwards is a late hit (NHL 56.1 and 56.2, below). On an **uncontested race for a loose puck or a rim**, the bar is higher — you need to arrive **clearly first**, since there is nobody to seal and second place just means your back is to the play. [Forechecking Systems](forechecking_systems.md) applies the same two-part test.
-- The opposing winger is **flat-footed or facing the glass**, not already turned up ice with speed.
+- You can **arrive on contact** — you and the puck get there at the same time. "If you can't arrive on contact, don't go." That is the test when an opposing player is arriving too. Getting there level lets you play the puck or, where your book allows contact at all, seal the wall — or, where your league permits body checking, check a winger who can see you coming. Arriving a beat late is the failure: a check already being delivered as the puck goes may be finished, but one you decide on afterwards is a late hit (NHL 56.1 and 56.2, below). On an **uncontested race for a loose puck or a rim**, the bar is higher — you need to arrive **clearly first**, since there is nobody to seal and second place just means your back is to the play. [Forechecking Systems](forechecking_systems.md) applies the same two-part test.
+- The opposing winger is **flat-footed or facing the glass**, not already turned up ice with speed — a reason to go for the puck, never licence to hit a player facing the glass.
 - A forward is **able to rotate high** and cover your line.
 - It is a **loose puck, a bobble or a tired line** — the best windows.
 
@@ -951,7 +951,7 @@ The decision criteria, which are consistent across coaching sources:
 
 ![](diagram:pinch-centre-high)
 
-**Technique:** stick in the passing lane *before* your feet commit. Angle the winger into the boards rather than toward the middle, and close with short explosive steps, getting your feet under you for the last two or three strides rather than accelerating into the arrival. Where your book allows contact, seal the wall — never the winger's body. Where it does not, and in women's hockey, the limits are set out below.
+**Technique:** stick in the passing lane *before* your feet commit. Angle the winger into the boards rather than toward the middle, and close with short explosive steps, getting your feet under you for the last two or three strides rather than accelerating into the arrival. Where your book allows contact, seal the wall with your position — never by extending a hip or pinning them; check only where your league permits body checking, and never into a back turned to you. Where it does not, and in women's hockey, the limits are set out below.
 
 The governing principle is **take the puck, or — where your league permits body checking — take the player**; achieve neither and you have created an odd-man rush against your own team — and a winger facing the glass is never that player: pull up and play the puck.
 
@@ -1051,7 +1051,7 @@ Options: Shoot to be missed — a hard shot off the end boards to a spot for a t
 Never: Pick corners against a set, sighted goalie — the lowest-percentage thing you can do with a puck. Aim for a corner instead only when they cannot see it or cannot get there
 ```
 
-This is the part most players never think about. From the perimeter, **you are not trying to score. You are trying to manufacture a second chance.**
+From the perimeter, **you are not trying to score. You are trying to manufacture a second chance.**
 
 - **Shoot for a rebound.** Pucks aimed low, to the far pad, or off the pads generally produce controllable rebounds. Pucks aimed at the goalie's chest and glove do not — they get swallowed and the whistle goes.
 - **Shoot for a tip.** Low, hard, along the ice, through the screen, at the tipper's stick. Say who you are shooting at. The tipper's job is to present a blade; yours is to hit it.
@@ -1085,7 +1085,7 @@ More detail on mechanics is in [Shooting](../technique/shooting.md).
 
 ## 12. Offensive-Zone Faceoffs
 
-An offensive-zone faceoff is as close as the game gets to a moment where you can arrange all five players exactly where you want them, with the puck about to arrive at a known place — **a coaching judgement, not a measured claim; no source here catalogues every dead-puck moment in the game.** It is the closest hockey gets to a free kick, and most amateur teams waste it entirely.
+An offensive-zone faceoff is as close as the game gets to a moment where you can arrange all five players exactly where you want them, with the puck about to arrive at a known place — **a coaching judgement, not a measured claim; no source here catalogues every dead-puck moment in the game.** Most amateur teams waste it entirely.
 
 Full treatment of the draw itself — technique, stick placement, the violations that get your centre ejected — is in [Faceoffs](faceoffs.md). What matters here is what happens in the second *after* the draw.
 
@@ -1130,9 +1130,9 @@ Assume you will lose roughly half the draws. Structure for the loss is not defea
 - **One forward pressures immediately** — usually the winger nearest the puck — to deny the clean breakout pass and force a rim or a chip.
 - **The other two forwards get defensive momentum going**, turning and skating rather than watching. A forward who is stationary when the puck is lost is beaten.
 - **The defencemen hold the line and read**: is this a rim to be intercepted, or a clean exit to be retreated against? The strong-side defenceman is the one most likely to pinch on a rim; the weak-side one covers the middle.
-- **Nobody is a spectator.** Four players still processing the fact that they lost the draw hand the other team a clean breakout, and it takes no great play from them to score off it.
+- **Nobody is a spectator.** Four players still processing the fact that they lost the draw hand the other team a clean breakout.
 
-The general principle is worth stating plainly: **having a defined assignment for the loss is what lets you be aggressive on the win.** Teams play tentatively on offensive-zone draws precisely because they have no plan for losing them.
+**Having a defined assignment for the loss is what lets you be aggressive on the win.** Teams play tentatively on offensive-zone draws precisely because they have no plan for losing them.
 
 ---
 

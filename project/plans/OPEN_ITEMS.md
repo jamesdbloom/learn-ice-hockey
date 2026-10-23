@@ -63,7 +63,12 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **risk_management.md :583-591, the pinch section (safety minor, older than this round):** this is the document that owns the pinch decision (:26 "pinch, activate"), yet neither its body nor its facts say to pinch for the puck, not the player, and to pull up on anyone facing the glass. Only the caption's "on the wall rather than on a player" carries it. game_management :249 has the rule-safe wording. Add one clause there; needs a safety-reviewer.
+- **offensive_zone_play SG43 gate notes (minor):**
+  - The 15.50% evidence bullet lost "51,308 shots" and the owner's "carry that qualification". The style guide owners table (:2312) lists the sample size as part of the fact, so consider restoring it.
+  - "So 'just get pucks to the net' is incomplete advice" lost its antecedent; reword or restore the slot-vs-blue-line sentence.
+- **review_process.md C4 names rules-verifier, but SG41–43 used a safety-reviewer that verified the rules against primary text.** Reconcile the process document or the practice.
+
+- **body_contact_and_battles KT8 :1223 "seal with your body alone" and Common Mistakes :1156 (candidate, from the SG43 safety review):** these lack the "never by pinning / never by extending a hip" limb that OZP :924/:954 now carry. That limb is required by IIHF women's 101.1, HC 7.3 (a hip extended after angling counts as a check) and CARHA 49(a). KT8 is voiced alone. Needs a layer test by an agent that owns BCB, plus a safety-reviewer. Also sweep forechecking_systems, defender and winger for unscoped "seal" wording.
 
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
@@ -112,4 +117,4 @@ can ship once it has been reviewed.
 
 - **PWHL 2026-27 rulebook:** expected around mid-November 2026; re-check `thepwhl.com/en/rules` then and diff against the 2025-26 book on disk.
 - **SIHA Discipline Policy:** unreachable from this network (local proxy); retry elsewhere.
-- **link_baseline.tsv:** add the 33 refetched equipment rows and the 5 new source rows (proposed rows saved in scratchpad sg22b and the sg22c report). Also add the 6 rows from SG42's source check (R&R 2024-25, Code of Conduct, Social Media Policy, Safeguarding Children, club regs 2026-27, and the EIH rules-and-regulations page, all 200 on 23 Oct; listed in the SG42 record).
+- **check_external_links: duplicate baseline rows (low).** 62+ URLs have several rows (refetches are appended, not edited). The tool checks every row on its own, so an older row with a stale byte count can raise a false size-drift flag. Make it compare only against the last row per URL, or dedupe. (The SG43 rows were added: 33 equipment, 5 sg22c inferred, 6 SG42.)
