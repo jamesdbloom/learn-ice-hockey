@@ -129,4 +129,4 @@ can ship once it has been reviewed.
 
 - **PWHL 2026-27 rulebook:** expected around mid-November 2026; re-check `thepwhl.com/en/rules` then and diff against the 2025-26 book on disk.
 - **SIHA Discipline Policy:** unreachable from this network (local proxy); retry elsewhere.
-- **check_external_links: duplicate baseline rows (low).** 62+ URLs have several rows (refetches are appended, not edited). The tool checks every row on its own, so an older row with a stale byte count can raise a false size-drift flag. Make it compare only against the last row per URL, or dedupe. (The SG43 rows were added: 33 equipment, 5 sg22c inferred, 6 SG42.)
+- **hecc.org/headsup.html is down 77% in size against its baseline (seen in a 5-link sample, 23 Oct):** re-fetch it and check that the cited text is still there. (The duplicate-row fix shipped: the baseline now collapses to the last row per URL, 907 → 804.)

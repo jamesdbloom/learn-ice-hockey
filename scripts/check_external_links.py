@@ -36,6 +36,14 @@ Things learned the hard way on this corpus, all of which are implemented here:
     this script exists to avoid. `check_links.py`'s INLINE_LINK_RE handles balanced
     parentheses correctly and is the extractor to reuse. Repaired and refetched
     2026-08-25.
+  * **The baseline is append-only, so a URL can have several rows.** A refetch
+    is recorded by appending a new row rather than editing the old one, and
+    dozens of URLs carry two or three. Checking every row on its own compared a
+    live fetch against a superseded byte count and raised a false size-drift
+    flag — and fetched the same URL repeatedly. So rows are collapsed to the
+    LAST row per URL (file order is chronological order) before anything is
+    selected or fetched; the URL keeps the position of its first row. The
+    summary line reports how many rows were collapsed. ``--self-test`` guards it.
 
 Exit code is non-zero only for **new breakage** — something that was alive at
 baseline and is not any more. Recoveries, already-known-dead links and metadata
@@ -47,6 +55,7 @@ Usage
     python3 scripts/check_external_links.py --limit 20           # first N rows
     python3 scripts/check_external_links.py --summary "$GITHUB_STEP_SUMMARY"
     python3 scripts/check_external_links.py --json report.json --write-baseline new.tsv
+    python3 scripts/check_external_links.py --self-test          # offline; guards the row collapse
 
 Standard library only.
 """
@@ -164,6 +173,20 @@ def load_baseline(path: Path) -> list[BaselineRow]:
                 size_value = -1
             rows.append(BaselineRow(url.strip(), status.strip(), size_value, final_url.strip(), note.strip()))
     return rows
+
+
+def collapse_to_latest(rows: list[BaselineRow]) -> tuple[list[BaselineRow], int]:
+    """One row per URL: the LAST row in file order, at the FIRST row's position.
+
+    The baseline is appended to, never edited, so the last row for a URL is the
+    most recent observation and the earlier ones are history. Returns the
+    collapsed rows and the number of rows dropped.
+    """
+    latest: dict[str, BaselineRow] = {}
+    for row in rows:
+        latest[row.url] = row  # dict keeps first-insertion order; value is replaced
+    collapsed = list(latest.values())
+    return collapsed, len(rows) - len(collapsed)
 
 
 # --------------------------------------------------------------------------
@@ -574,7 +597,8 @@ def main(argv: Iterable[str] | None = None) -> int:
         print(f"check_external_links: no baseline at {baseline_path}", file=sys.stderr)
         return 2
 
-    rows = load_baseline(baseline_path)
+    raw_rows = load_baseline(baseline_path)
+    rows, collapsed = collapse_to_latest(raw_rows)
     total = len(rows)
 
     selected = rows
@@ -617,6 +641,11 @@ def main(argv: Iterable[str] | None = None) -> int:
             results[row.url] = result
             findings.append(classify(row, result, blocked_hosts))
 
+    if collapsed:
+        sampled += (
+            f"; {len(raw_rows)} baseline rows collapsed to {total} unique URL(s)"
+            f" ({collapsed} superseded row(s) ignored, last row per URL kept)"
+        )
     report = render_markdown(findings, len(selected), baseline_path, sampled)
     print(report)
 
@@ -634,7 +663,9 @@ def main(argv: Iterable[str] | None = None) -> int:
         Path(args.json_path).write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
     if args.new_baseline:
-        write_baseline(Path(args.new_baseline), rows, results)
+        # Deliberately the UNCOLLAPSED rows: a refreshed baseline keeps every
+        # earlier row (and its evidence note), exactly as before this change.
+        write_baseline(Path(args.new_baseline), raw_rows, results)
 
     fatal = {NEW_BREAKAGE} | ({BLOCKED} if args.strict else set())
     broken = [finding for finding in findings if finding.category in fatal]
@@ -644,5 +675,35 @@ def main(argv: Iterable[str] | None = None) -> int:
     return 0
 
 
+def self_test() -> int:
+    """Guard the duplicate-row collapse: last row wins, first position kept."""
+    def r(url: str, size: int, note: str = "-") -> BaselineRow:
+        return BaselineRow(url, "200", size, url, note)
+
+    rows = [r("https://a/", 100, "old"), r("https://b/", 5), r("https://a/", 300, "new"),
+            r("https://c/", 7), r("https://a/", 900, "newest")]
+    collapsed, dropped = collapse_to_latest(rows)
+    failures = []
+    if [x.url for x in collapsed] != ["https://a/", "https://b/", "https://c/"]:
+        failures.append(f"order: {[x.url for x in collapsed]}")
+    if collapsed[0].size != 900 or collapsed[0].note != "newest":
+        failures.append(f"last row did not win: {collapsed[0]}")
+    if dropped != 2:
+        failures.append(f"dropped {dropped}, expected 2")
+    # The defect itself: a live fetch matching the NEWEST row must not be
+    # flagged against a superseded size.
+    live = FetchResult(url="https://a/", status=200, size=900, final_url="https://a/")
+    if classify(collapsed[0], live).category != UNCHANGED:
+        failures.append("live fetch matching the latest row was still flagged")
+    if classify(rows[0], live).category != SIZE_CHANGE:
+        failures.append("fixture no longer exercises the stale-row size flag")
+    for failure in failures:
+        print(f"self-test FAIL: {failure}", file=sys.stderr)
+    print("self-test: " + ("FAIL" if failures else "ok"), file=sys.stderr)
+    return 1 if failures else 0
+
+
 if __name__ == "__main__":
+    if "--self-test" in sys.argv[1:]:
+        sys.exit(self_test())
     sys.exit(main())
