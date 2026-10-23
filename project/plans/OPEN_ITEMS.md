@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG34 (23 Oct):** PWHL icing and faceoff parity, citation precision, the rules_primer table check and the wording fixes. All reviews CLEAR; committing.
+(none)
 
 ## New page: Getting Better on Your Own
 
@@ -111,6 +111,10 @@ can ship once it has been reviewed.
 
 - **md_to_speech `_rule_number_opens_sentence`** treats a possessive "IIHF's." as the letter "s.", so a rule number after a possessive is not capitalised (fixed only inside the new capitals pass).
 - **synthesize_style_b.py has no `--doc-id`:** only matters if production is tracked by doc id. Low.
+
+## Site dependencies
+
+- **Astro 7.2.8 moderate advisories** (GHSA-98hj-9722-w3j8 XSS, GHSA-mpr7-6m5w-76rw View Transitions CSS injection; fixed after 7.3.2). Upgrading Astro needs a full build and site review; the static content is author-controlled, so the risk is low.
 
 ## Checkers (scripts/ — change between waves, never during one)
 
