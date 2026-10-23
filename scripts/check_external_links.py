@@ -44,6 +44,26 @@ Things learned the hard way on this corpus, all of which are implemented here:
     LAST row per URL (file order is chronological order) before anything is
     selected or fetched; the URL keeps the position of its first row. The
     summary line reports how many rows were collapsed. ``--self-test`` guards it.
+  * **The baseline's byte column holds TWO measures, unlabelled.** Rows written
+    by this script were bytes ON THE WIRE (gzip); many rows were recorded by
+    hand with plain ``curl``, which sends no Accept-Encoding and so records the
+    DECODED size — 3-5x larger. Comparing wire bytes against a decoded row
+    raised a false "shrank 77%" every run (every hecc.org row: 2026-09-22
+    recorded 75,881 decoded; the same page is 17,674 gzip on the wire). So the
+    checker now measures BOTH: the wire size and the decoded (inflated) size.
+    A row matches if it is within tolerance of EITHER, unless its note carries
+    an explicit ``[bytes=decoded]`` or ``[bytes=wire]`` tag, in which case only
+    that measure is used. A size-change finding reports the decoded size where
+    it is known. ``--write-baseline`` now writes the DECODED size and tags the
+    note ``[bytes=decoded]`` (falling back to wire bytes, tagged
+    ``[bytes=wire]``, when the body could not be inflated — truncated, or an
+    encoding the standard library cannot decode).
+    ⚠️ THE COST OF "EITHER", and why the tag exists: for an untagged row, a
+    page whose decoded size falls to roughly its old WIRE size (a ~75% shrink —
+    the soft-404 direction) matches the row on the other measure and is not
+    flagged. The body sniff for not-found markers still runs independently, but
+    a soft-404 with no recognisable marker would pass. Tagged rows do not have
+    this blind spot, so refreshed baselines close it row by row.
 
 Exit code is non-zero only for **new breakage** — something that was alive at
 baseline and is not any more. Recoveries, already-known-dead links and metadata
@@ -55,7 +75,7 @@ Usage
     python3 scripts/check_external_links.py --limit 20           # first N rows
     python3 scripts/check_external_links.py --summary "$GITHUB_STEP_SUMMARY"
     python3 scripts/check_external_links.py --json report.json --write-baseline new.tsv
-    python3 scripts/check_external_links.py --self-test          # offline; guards the row collapse
+    python3 scripts/check_external_links.py --self-test          # offline; guards the row collapse and size measures
 
 Standard library only.
 """
@@ -93,13 +113,14 @@ HEADERS = {
     "User-Agent": USER_AGENT,
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/pdf;q=0.8,*/*;q=0.7",
     "Accept-Language": "en-GB,en;q=0.9",
-    # Byte counts here mean **bytes on the wire**, and the baseline was captured
-    # with exactly this Accept-Encoding. Verified: for every URL spot-checked,
-    # `gzip, deflate` reproduces the baseline size to within a byte or two,
-    # while an uncompressed fetch is 3–5x larger and every single row would be
-    # reported as a change. Do not add `br` or `zstd` here — a smaller encoding
-    # would silently look like a shrinking page. If the baseline is ever
-    # recaptured with different headers, change both together.
+    # Script-written baseline rows before 2026-10-23 are **bytes on the wire**
+    # under exactly this Accept-Encoding, so it stays as it is: changing it
+    # would break the wire-size match for every one of those rows. The checker
+    # also inflates gzip/deflate itself to get the DECODED size, which is what
+    # hand-recorded `curl` rows hold (see the module docstring). Do not add `br`
+    # or `zstd` here — the standard library cannot inflate them, so the decoded
+    # size would be unknown and a smaller wire encoding would silently look like
+    # a shrinking page.
     "Accept-Encoding": "gzip, deflate",
     "Connection": "close",
 }
@@ -198,9 +219,10 @@ def collapse_to_latest(rows: list[BaselineRow]) -> tuple[list[BaselineRow], int]
 class FetchResult:
     url: str
     status: int
-    size: int
+    size: int  # bytes on the wire (compressed if the server compressed)
     final_url: str
     error: str = ""
+    decoded_size: int = -1  # inflated body size; -1 when it could not be known
     truncated: bool = False
     soft_404: bool = False
     reason: str = ""
@@ -252,18 +274,42 @@ def _decompress(body: bytes, encoding: str) -> bytes:
             return body
 
 
+MAX_DECODED = 64 * 1024 * 1024  # stop counting past this; guards a decompression bomb
+
+
 def _decoded_size(raw: bytes, encoding: str, truncated: bool) -> int:
-    """Uncompressed body size, or -1 if it cannot be known cheaply."""
+    """Uncompressed body size, or -1 if it cannot be known.
+
+    Inflates in bounded chunks and only COUNTS, so memory stays flat however
+    well the body compresses. gzip, x-gzip and deflate (raw or zlib-wrapped)
+    are handled; anything else (br, zstd) is -1, as is a truncated body.
+    """
     if truncated:
         return -1
-    if not encoding:
+    if not encoding or encoding == "identity":
         return len(raw)
-    if len(raw) > 1024 * 1024:  # not worth inflating a megabyte to count it
+    if encoding in ("gzip", "x-gzip"):
+        attempts = (16 + zlib.MAX_WBITS,)
+    elif encoding == "deflate":
+        attempts = (zlib.MAX_WBITS, -zlib.MAX_WBITS)  # served both ways in the wild
+    else:
         return -1
-    wbits = 16 + zlib.MAX_WBITS if encoding == "gzip" else -zlib.MAX_WBITS
-    for attempt in (wbits, zlib.MAX_WBITS):
+    for wbits in attempts:
         try:
-            return len(zlib.decompressobj(attempt).decompress(raw))
+            decompressor = zlib.decompressobj(wbits)
+            total = 0
+            chunk = decompressor.decompress(raw, 1024 * 1024)
+            while True:
+                total += len(chunk)
+                if total > MAX_DECODED:
+                    return -1
+                if not decompressor.unconsumed_tail:
+                    break
+                chunk = decompressor.decompress(decompressor.unconsumed_tail, 1024 * 1024)
+            total += len(decompressor.flush())
+            if not decompressor.eof:
+                continue  # not a complete stream in this framing
+            return total
         except (OSError, zlib.error):
             continue
     return -1
@@ -312,11 +358,14 @@ def fetch(url: str, timeout: float, context: ssl.SSLContext) -> FetchResult:
             else:
                 size = len(raw)
             body = _decompress(raw[: SNIFF_BYTES * 4], encoding)
+            decoded = _decoded_size(raw, encoding, truncated)
+            if decoded < 0 and truncated and not encoding:
+                decoded = size  # Content-Length of an unencoded body IS the decoded size
             soft, reason = _looks_soft_404(
                 url,
                 response.geturl(),
                 size,
-                _decoded_size(raw, encoding, truncated),
+                decoded,
                 body[:SNIFF_BYTES],
                 response.headers.get("Content-Type", ""),
             )
@@ -325,6 +374,7 @@ def fetch(url: str, timeout: float, context: ssl.SSLContext) -> FetchResult:
                 status=response.status,
                 size=size,
                 final_url=response.geturl(),
+                decoded_size=decoded,
                 truncated=truncated,
                 soft_404=soft,
                 reason=reason,
@@ -423,6 +473,50 @@ def destination(url: str) -> tuple[str, str]:
     return parts.netloc.lower(), parts.path.rstrip("/").lower()
 
 
+def row_measure(row: BaselineRow) -> str:
+    """Which measure a baseline row's byte count is: "decoded", "wire" or "" (unknown)."""
+    note = row.note.lower()
+    if "[bytes=decoded]" in note:
+        return "decoded"
+    if "[bytes=wire]" in note:
+        return "wire"
+    return ""
+
+
+def size_moved(row: BaselineRow, result: FetchResult) -> str:
+    """A size-change description, or "" if the row matches.
+
+    An untagged row matches if it is within SIZE_TOLERANCE of the wire size OR
+    the decoded size — the column mixes both (see the module docstring). A
+    tagged row is compared against its own measure only. With no usable
+    measure at all, nothing is reported.
+    """
+    if row.size <= 0:
+        return ""
+    measure = row_measure(row)
+    candidates: list[tuple[str, int]] = []
+    if measure in ("", "decoded") and result.decoded_size >= 0:
+        candidates.append(("decoded", result.decoded_size))
+    if measure in ("", "wire") and result.size >= 0:
+        candidates.append(("wire", result.size))
+    if not candidates:
+        return ""
+    if any(abs(value - row.size) / row.size <= SIZE_TOLERANCE for _, value in candidates):
+        return ""
+    # Report against the decoded size where known: it is the measure a human
+    # re-checking with curl will see, and the one new baselines record.
+    label, now = candidates[0]
+    delta = abs(now - row.size) / row.size
+    direction = "shrank" if now < row.size else "grew"
+    others = ", ".join(f"{name} {value:,}" for name, value in candidates[1:])
+    return (
+        f"body {direction} {delta:.0%} ({row.size:,} → {now:,} bytes {label}"
+        + (f"; {others}" if others else "")
+        + ")"
+        + (" — check for a soft-404 or a paywall" if now < row.size else "")
+    )
+
+
 def classify(row: BaselineRow, result: FetchResult, blocked_hosts: set[str] | None = None) -> Finding:
     detail_bits: list[str] = []
     category = UNCHANGED
@@ -464,16 +558,11 @@ def classify(row: BaselineRow, result: FetchResult, blocked_hosts: set[str] | No
         if destination(result.final_url) != destination(baseline_final):
             category = REDIRECT_CHANGE
             detail_bits.append(f"redirects to a different place: `{baseline_final}` → `{result.final_url}`")
-        if row.size > 0 and result.size >= 0:
-            delta = abs(result.size - row.size) / row.size
-            if delta > SIZE_TOLERANCE:
-                if category == UNCHANGED:
-                    category = SIZE_CHANGE
-                direction = "shrank" if result.size < row.size else "grew"
-                detail_bits.append(
-                    f"body {direction} {delta:.0%} ({row.size:,} → {result.size:,} bytes)"
-                    + (" — check for a soft-404 or a paywall" if result.size < row.size else "")
-                )
+        moved = size_moved(row, result)
+        if moved:
+            if category == UNCHANGED:
+                category = SIZE_CHANGE
+            detail_bits.append(moved)
         if category == UNCHANGED and result.status != row.status_code:
             category = STATUS_DRIFT
             detail_bits.append(f"status moved {row.status} → {result.status} (both fine)")
@@ -484,7 +573,7 @@ def classify(row: BaselineRow, result: FetchResult, blocked_hosts: set[str] | No
         baseline_status=row.status,
         baseline_size=row.size,
         now_status=result.status,
-        now_size=result.size,
+        now_size=result.decoded_size if result.decoded_size >= 0 else result.size,
         final_url=result.final_url,
         detail="; ".join(detail_bits),
         note=row.note if row.note != "-" else "",
@@ -564,7 +653,15 @@ def write_baseline(path: Path, rows: list[BaselineRow], results: dict[str, Fetch
             note = row.note or "-"
             if result.soft_404 and "SOFT404" not in note.upper():
                 note = "SOFT404?" if note == "-" else f"{note}; SOFT404?"
-            handle.write(f"{result.url}\t{result.status}\t{result.size}\t{result.final_url}\t{note}\n")
+            # New rows record the DECODED size and say so, so the next run
+            # compares like with like instead of accepting either measure.
+            note = re.sub(r"\s*\[bytes=(decoded|wire)\]", "", note).strip() or "-"
+            if result.decoded_size >= 0:
+                size, tag = result.decoded_size, "[bytes=decoded]"
+            else:
+                size, tag = result.size, "[bytes=wire]"
+            note = tag if note == "-" else f"{note} {tag}"
+            handle.write(f"{result.url}\t{result.status}\t{size}\t{result.final_url}\t{note}\n")
 
 
 # --------------------------------------------------------------------------
@@ -697,6 +794,44 @@ def self_test() -> int:
         failures.append("live fetch matching the latest row was still flagged")
     if classify(rows[0], live).category != SIZE_CHANGE:
         failures.append("fixture no longer exercises the stale-row size flag")
+
+    # Mixed measures. A row hand-recorded with plain curl holds the DECODED
+    # size; the live fetch arrives gzip. Build a real gzip body so the
+    # inflater is exercised, not just the comparison.
+    import gzip
+    page = (b"<!doctype html><html><head><title>Heads Up</title></head><body>"
+            + b"".join(b"<p>Paragraph %d of a real page.</p>" % i for i in range(2000))
+            + b"</body></html>")
+    wire = gzip.compress(page)
+    decoded = _decoded_size(wire, "gzip", truncated=False)
+    if decoded != len(page):
+        failures.append(f"gzip inflate counted {decoded}, expected {len(page)}")
+    if _decoded_size(zlib.compress(page), "deflate", False) != len(page):
+        failures.append("zlib-wrapped deflate not inflated")
+    raw_deflate = zlib.compressobj(wbits=-zlib.MAX_WBITS)
+    if _decoded_size(raw_deflate.compress(page) + raw_deflate.flush(), "deflate", False) != len(page):
+        failures.append("raw deflate not inflated")
+    if _decoded_size(wire, "br", False) != -1 or _decoded_size(wire, "gzip", True) != -1:
+        failures.append("unknown encoding / truncated body should be -1")
+    if len(wire) * 3 > len(page):
+        failures.append("fixture does not compress enough to exercise the mismatch")
+    gz = FetchResult(url="https://h/", status=200, size=len(wire), final_url="https://h/",
+                     decoded_size=decoded)
+    curl_row = BaselineRow("https://h/", "200", len(page), "https://h/", "hand-recorded with curl")
+    wire_row = BaselineRow("https://h/", "200", len(wire), "https://h/", "-")
+    if classify(curl_row, gz).category != UNCHANGED:
+        failures.append("uncompressed row vs gzip fetch was flagged (the hecc.org false positive)")
+    if classify(wire_row, gz).category != UNCHANGED:
+        failures.append("legacy wire-bytes row vs gzip fetch was flagged")
+    # A tagged row is held to its own measure: a decoded-tagged row the size of
+    # today's WIRE bytes is a real ~75% shrink and must still be flagged.
+    tagged = BaselineRow("https://h/", "200", len(wire), "https://h/", "x [bytes=decoded]")
+    if classify(tagged, gz).category != SIZE_CHANGE:
+        failures.append("decoded-tagged row matched on the wire measure")
+    # A genuine shrink still flags on both measures.
+    tiny = FetchResult(url="https://h/", status=200, size=300, final_url="https://h/", decoded_size=900)
+    if classify(curl_row, tiny).category != SIZE_CHANGE:
+        failures.append("a real shrink was not flagged")
     for failure in failures:
         print(f"self-test FAIL: {failure}", file=sys.stderr)
     print("self-test: " + ("FAIL" if failures else "ok"), file=sys.stderr)
