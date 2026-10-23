@@ -497,7 +497,7 @@ Technique: Stand between the goalie's eyes and the puck, not between the goalie 
 Technique: Chest up and square to the shooter, hips low, feet wide, knees bent — the posture of a squat, not of a bow
 Action: Be still at the moment of release — constant shuffling gives the goalie flashes of the puck through the gaps
 Never: Turn to follow the shot toward the net — it opens the goalie's view. Keep your chest to the shooter and your eyes on the puck, ready for the tip or the rebound
-Never: Plant at the net front without knowing where the near post is — you get moved sideways by a defender you are feeling rather than watching. Head up and chin off your chest instead
+Never: Plant at the net front without knowing where the near post is — you get moved sideways by a defender you cannot see. Head up and chin off your chest instead
 Never: Brace against the goalie the way you brace against a defender — if a shove is carrying you into the goalie, give way rather than hold your spot
 Never: Duck away from the shot. Meet a post or the boards with an arm or a leg instead, never your head first — USA Hockey's wording, and a flexed neck is what turns that collision into a spinal injury
 Rule: A no-contact screen from outside the crease is normally legal — but under NHL and IIHF 69.1, PWHL 71.1, positioning that stops the goalie moving freely in their crease can cost the goal; their tables allow a screen outside it that impairs their defending (5C, 5E)
@@ -987,7 +987,7 @@ The governing principle is **take the puck, or — where your league permits bod
 **In short:** Keep your arms and skates out of the seal, and arrive with your feet under you rather than building speed into contact.
 
 ```facts
-Rule: Seal with body position — never with an arm, never with a skate; USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor, and a skate "push off" is 627(a), a major plus a game misconduct
+Rule: Seal the wall with body position — never hold with an arm, never with a skate; USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor, and a skate "push off" is 627(a), a major plus a game misconduct
 Rule: Charging is speed built into a hit, not a stride count — jumping into a check is a charge in all six books, and so is travelling an excessive distance under IIHF 42.1, Hockey Canada 7.4 and USA Hockey 607
 Rule: Stride counts: two or more under Hockey Canada 7.4, more than two under USA Hockey 607 and CARHA 52 (adult leagues), "multiple" under IIHF 42.1; NHL and PWHL 42.1 judge distance travelled. Fewer is no licence: Hockey Canada 7.4 also names a violent and unnecessary check, or a blind-side one
 Rule: USA Hockey writes no bare charging minor — reckless is a major and game misconduct (607(b)), and plan on a match (602(a)); Hockey Canada makes an injuring charge the same (7.4(b)), a defenceless target a match (7.4(c))

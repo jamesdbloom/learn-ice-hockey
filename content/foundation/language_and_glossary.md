@@ -197,7 +197,7 @@ Seen from the other side it is the thing you are trying to break: in [Forechecki
 ### Angling, steering and sealing
 
 - **Angling** is forcing an opponent in a direction you have chosen, normally toward the boards. It is the foundation of forechecking, and where body checking is barred it is the whole toolkit, not a beginner's version of hitting. In women's play under the IIHF or the PWHL you may make contact to play the puck, but a step or glide into her is at least a minor, and pinning or pushing her into the boards (IIHF) or putting an arm, shoulder or hip into her after the angle (PWHL) is an illegal hit too. Britain's WNIHL is non-checking at U16 and senior level, so plan no body check there. [Forechecking Systems](../systems/forechecking_systems.md) owns the skill and the rules that bound it in each book.
-- **Steering** is shadowing the carrier to push them into an area where you can take away their time and space.
+- **Steering** is shadowing the carrier, with your route and stick, so they skate into an area where you can take away their time and space.
 - **Sealing** is arriving second and closing the escape route the first forechecker has forced them toward.
 
 ---
