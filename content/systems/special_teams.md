@@ -745,7 +745,7 @@ Rule: Hockey Canada 6.4(a), Junior and Senior only, where the puck was last touc
 Rule: CARHA (adult leagues only) writes the same goalie limb as Hockey Canada — Rule 55(a), a minor on "any goalkeeper who shoots or bats the puck out of the playing surface with their stick", no deliberateness word, same glass exemptions; 75(b) is the deliberate minor on a player
 Rule: Smothering the puck to force a whistle costs a kill the same two minutes — a minor on a skater other than the goalie who deliberately falls on or gathers it in (NHL 63.2(v), IIHF 63.2(V), PWHL 65.2(v), USA Hockey 614(a), Hockey Canada 10.2(a)(iv)), and a penalty shot inside your own crease
 Rule: The smothering minor excludes the goalie, but that is no permission for them — NHL 63.2(vii) makes it a minor on a goalie freezing the puck in their own crease "unless he is actually being checked by an opponent", IIHF 63.2(VII) writes "they", and USA Hockey 610(b) needs no warning first
-Action: Aim clears hard and flat, not over the glass — clearing the glass costs the minor, not the direction; a clear played hard off the glass and staying in the rink is exactly what you want
+Action: Aim clears hard and flat, not over the glass — a clear played hard off the glass and staying in is exactly what you want
 ```
 
 **Both cost you two minutes rather than a faceoff, and both are mistakes a tired kill makes trying to get the puck out.**
@@ -987,7 +987,7 @@ Position: As the power play, put two at the net front and send the extra body to
 Action: Move the puck quickly and accept that blocking lanes will be crowded
 Countered by: The empty net — a killer who wins a puck can legally clear it 180 feet into it, and it counts
 Action: As the kill, block shots from in the lane, on your feet, and never from a screening position; keep sticks in lanes and clear with your head up looking for the empty net, and clear low
-Rule: Over the glass from your own zone is still a delay-of-game minor, shorthanded or not, under NHL 63.2(iii), IIHF 63.2(III) and PWHL 65.2(iii) alike; USA Hockey 610(c), Hockey Canada 10.1(ii) and CARHA 75(b) need it deliberate, but all three reach a goalie as much as a skater
+Rule: Over the glass from your own zone is a minor, shorthanded or not, under NHL 63.2(iii), IIHF 63.2(III) and PWHL 65.2(iii); USA Hockey 610(c), Hockey Canada 10.1(ii) and CARHA 75(b) need it deliberate, goalies included, but HC 10.1(v) and CARHA 55(a) price a goalie's stick clear with no intent word
 Rule: The deliberate limb has no zone limit in any of the six books — flip the puck out on purpose anywhere on the ice and it is a minor (NHL and IIHF 63.2(ii), PWHL 65.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
 Rule: Hockey Canada 10.1(v) and CARHA 55(a) each put a minor on a goalie alone who shoots or bats the puck directly out of the playing surface with the stick, no deliberateness word; both exempt a no-glass spot, or a puck that touches glass or deflects off a player or official
 Rule: On a signalled delayed penalty the non-offending team pulls its goalie for 6-on-5, and play continues until the penalised team gains control (NHL Rule 15.1)

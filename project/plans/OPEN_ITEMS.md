@@ -68,7 +68,11 @@ can ship once it has been reviewed.
 
 ## Content: safety, readability and wording
 
-- **breakouts :561 "Goalies are not exempt" (minor, SG51):** names only HC 10.1(v)/CARHA 55(a). Add that NHL/IIHF/PWHL 63.2(iii)/65.2(iii) say "any player", and that the IIHF defines Player to include goalkeepers. Also check special_teams and risk_management for the same skater/goalie scope on the out-of-play minor.
+- **Out-of-play goalie scope, follow-ons (minor, SG52 gate):**
+  - breakouts Sources lacks Rule 5.1;
+  - goaltender :1638 states HC flatly where its :752 says HC intent is unsettled;
+  - special_teams :990 "goalies included" only resolves at the "but" clause;
+  - about 15 other files cite 10.1(v)/55(a) and have not been swept for goalie scope.
 
 - **Turn-back moves (low, from SG50):** winger, defender, breakouts and forechecking were swept clean, with no ungated wall cutback, curl or spin. Still unswept wordings: "open up to the middle", "roll off", "peel off", "swing away"; also diagram captions (breakout-wheel, breakout-reverse, winger-dz-reverse).
 
@@ -131,4 +135,5 @@ can ship once it has been reviewed.
 
 - **PWHL 2026-27 rulebook:** expected around mid-November 2026; re-check `thepwhl.com/en/rules` then and diff against the 2025-26 book on disk.
 - **SIHA Discipline Policy:** unreachable from this network (local proxy); retry elsewhere.
-- **hecc.org/headsup.html is down 77% in size against its baseline (seen in a 5-link sample, 23 Oct):** re-fetch it and check that the cited text is still there. (The duplicate-row fix shipped: the baseline now collapses to the last row per URL, 907 → 804.)
+- **Link baseline size measures (low, from the 23 Oct fix):** the checker now accepts a match against either the decoded or the on-wire size, so false 75–80% flags are gone. Residual gap: an untagged row can hide a real ~4x shrink or growth by coincidence. Refresh baselines with --write-baseline (rows are now tagged [bytes=decoded]) to close it.
+- **HECC attribution (minor):** the Heads Up, Don't Duck page is a reproduced brochure credited to Alan B. Ashare MD and the Massachusetts Medical Society. skating :1046 "HECC asks a player" and body_contact :2139 "all three bodies" credit HECC as author; :913 "HECC's page asks" is fine. Also body_contact :881 "begun in 1995 by Dr Alan Ashare": the 1995 date is not on that page, so find its source.
