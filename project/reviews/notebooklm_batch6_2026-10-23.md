@@ -63,3 +63,18 @@ Accepted, not cuttable:
 ## What this method could not have found
 
 Delivery and tone, mispronunciations hidden by whisper, any safety point carried only in a page section a reviewer sampled rather than read, and how each join sounds.
+
+## Finding More Ice: Detailed (ElevenLabs) episode, same day
+
+- **Script:** `podcast_style_b/detailed/finding_more_ice.md`, 16,307 characters, written to the Series A standard and the owner's 20 October rules.
+- **Review:** a safety-reviewer checked the script against the page and getting_started and returned SHIP. Every one of the 11 safety items is voiced. Two optional wording tweaks were applied ("a team can ring you", "the national body's insurance doesn't cover you").
+- **Synthesis:** synthesize_style_b.py (eleven_v4, voice L0Dsvb3SLTyegXwtm47J, stability 0.3, similarity 0.5, pcm_44100), 2 chunks, billed 7,905 credits.
+  - The script's concat step exits 1 on raw .pcm chunks without printing an error.
+  - The chunks were therefore joined by hand (s16le 44.1 kHz mono → WAV), which is gapless.
+  - Running length: 17:51.
+- **Audio check:** a full-length whisper pass with timestamps finds every passage, including all the safety lines. A first pass without timestamps had skipped stretches, which was a transcription artefact.
+- **Publication:**
+  1. Queued and accepted in the principles queue.
+  2. Built with `build_podcast_audio --style principles --doc finding_more_ice`.
+  3. Uploaded with `upload_podcast_audio --style principles --go`.
+  4. The site build exits 0. check-podcast-guids reports 93 items (40 Conversation, 40 Playing principles, 13 Basics), with every frozen guid present.

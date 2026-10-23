@@ -90,7 +90,6 @@ can ship once it has been reviewed.
 
 ## Podcasts
 
-- **Finding More Ice Detailed (ElevenLabs) episode:** the NotebookLM episode shipped 23 Oct. The Style B single-voice episode is still to make (it needs a script, the owner's listen, then synthesis).
 - **Feed guard gap:** adding a new structure.json *section* would renumber the Basics season (BASICS_SEASON = layers.length + 1) with no guard.
 
 - **"Severe neck pain" in NotebookLM 07 (UK Rules) and 12 (Goaltender):** the page and CRT6 say to treat any neck pain as an ambulance call. The word could not be cut cleanly and the episodes shipped (batch 6, 23 Oct). Owner's call whether to regenerate.
