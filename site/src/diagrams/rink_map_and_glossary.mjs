@@ -403,10 +403,22 @@ const theTrapezoid = {
   half: true,
   width: 900,
 
+  // SHORTENED 23 Oct 2026 (1,342 chars; four hosts). Kept every rule and safety limb, because
+  // no single limb is voiced next to the caption in all four hosts: how_to_watch_hockey.md
+  // voices no Handbook carve-out and no centre-red-line bar beside it, rules_primer.md no PWHL
+  // and no British limb, rink_map.md no save-then-cover carve-out. Cut only the PWHL and EIH
+  // rule numbers and the Elite League clause (voiced in
+  // goaltender.md's facts block and how_to_watch_hockey.md's British paragraph); PWHL and
+  // Britain now share one "play as if the trapezoid binds, and ask your league".
+  // ⚠️ KEEP "(63.2(VII))": it is the only thing scoping "being checked excuses a freeze only
+  // inside the crease" to the IIHF book. Unscoped it is false under USA Hockey, whose
+  // privileged area lets a goalie smother outside the crease with attackers coming.
+  // ⚠️ "if THE TRAPEZOID binds", never "if it binds": the sentence is followed by a
+  // suspension, and "it" read across that clause attaches to the suspension.
   caption:
     'The trapezoid: the goaltender’s restricted area behind the net — 22 ft wide at the ' +
     'goal line, widening to 28 ft at the boards, shaded here at NHL dimensions. Playing the ' +
-    'puck behind the goal line outside it is a two-minute delay-of-game minor; the rule ' +
+    'puck behind the goal line outside it is a two-minute delay-of-game minor. The rule ' +
     // ⚠️ "THE SOLE EXCEPTION" WAS FALSE, AND IT CAME FROM THE BODY, NOT FROM HERE.
     // `rules-verifier` found the IIHF Situation Handbook publishes two more, in both the
     // 2025/26 and 2026/27 editions: Situation 27.6 rules a puck stopped ON the goal line is
@@ -424,8 +436,8 @@ const theTrapezoid = {
     // skate contact with the crease" and nothing more can reasonably sit on the puck with a toe
     // in the paint. One clause, and it costs the listener nothing to hear.
     'text\u2019s one exception is a goalie keeping skate contact with the crease, which ' +
-    'excuses playing the puck and never freezing it; and the ' +
-    'IIHF\u2019s Situation Handbook adds two more — a puck stopped on the goal line, and one ' +
+    'excuses playing the puck and never freezing it. The ' +
+    'IIHF\u2019s Situation Handbook adds two more: a puck stopped on the goal line, and one ' +
     'that only deflects into you. USA Hockey, Hockey ' +
     // CARHA added W33: carha.txt has no "trapezoid", "restricted area" or "designated area";
     // Rule 37(e) is the centre-red-line minor and Rule 58(b) the behind-the-goal-line
@@ -442,14 +454,13 @@ const theTrapezoid = {
     // in England and Wales is genuinely unsettled … Ask your league", goaltender.md "treat the
     // trapezoid as unsettled — and play as though it binds everywhere in Britain". The Elite
     // League limb is folded in: the IIHF book governs it and its Casebook is silent.
-    'red line and limit where the puck may be frozen. The PWHL switches it off in Rules 1.8 ' +
-    'and 27.8, yet its 65.2(viii) still writes the minor, so a PWHL goalie should play as ' +
+    'red line and limit where the puck may be frozen. The PWHL switches the trapezoid off yet ' +
+    'still writes the minor, and in Britain the standing and reach of England Ice Hockey’s ' +
+    'suspension of the trapezoid are unsettled: in both, play as ' +
     // R (20 Oct 2026): 22.3 itself names no competition (eih_rr.txt :999); only 22.2 says
     // "EIH competitions". Scope and standing are unsettled; the Elite League claim is scoped
     // to its Casebook, the only EIHL document on disk.
-    'if it binds. In Britain, play as if it binds too: nothing in the Elite League’s Casebook ' +
-    'switches it off, and the scope and standing of England Ice Hockey’s Rule 22.3 ' +
-    'suspension are unsettled, so ask your league. That suspension never ' +
+    'if the trapezoid binds, and ask your league. That suspension never ' +
     // ⚠️⚠️ CRITICAL, CAUGHT BY `safety-reviewer`. This ended at "freeze it" — a flat NEVER,
     // read ALONE by a listener, while the body treats two carve-outs as inseparable from
     // this exact sentence: "Both carve-outs travel with that, or you produce a goaltender

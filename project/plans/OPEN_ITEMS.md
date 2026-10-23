@@ -18,7 +18,6 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 ## Captions and small rules notes (23 Oct)
 
 - **Optional: rush-trailer caption's middle sentence runs about 50 words aloud; it could split at "the first wave gets the net". Optional hardening for defender-two-on-one: "a slide that takes the carrier down can be called as tripping".**
-- **SG40 icing note done in winger :275 and zone_entries :766 (reviewed, SG40). Still to sweep:** special_teams.md, defender.md and the remaining pages for a flat red-line icing claim without the CARHA blue-line note. CARHA 65 never says WHICH team's blue line, so keep "ask your league".
 
 ## New page: Getting Better on Your Own
 
@@ -105,10 +104,6 @@ can ship once it has been reviewed.
 
 ## Checkers (scripts/ — change between waves, never during one)
 
-- **Cross-document pointers (check_pointers, SG40; read each, never sweep):** 18 hits, 12 to another page's Sources trailer and 6 to a table. Most Sources hits are the disclosure convention working as intended. Strongest candidates:
-  - getting_started → defensive_zone_coverage "Comparison Table": that page drops one table;
-  - faceoffs → rules_primer "lookup table";
-  - faceoffs → body_contact "league-by-league table".
 - **check_quote_drift header splices (low):** a quotation whose source sentence is split by a page header containing letters matches the wrong book. The HC 6.2(a) quotation in winger and switching_positions was checked by hand against hc.txt:4587-4594 and is verbatim, so only the tool was wrong. A survey for other quotations that span a header is still owed.
 
 

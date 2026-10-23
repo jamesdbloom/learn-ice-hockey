@@ -99,8 +99,14 @@ const gapAndAngle = {
   half: false,
   width: 900,
 
+  // SHORTENED AGAIN 23 Oct 2026 (1,414 chars; four hosts). Cut only how the band's edges
+  // were chosen (faceoff-dot lines, cut at the circles and crease) and wording; kept the
+  // inside definition, the not-painted disclosure, the gap figure with its "any stick the
+  // rulebooks allow" scope, the full provenance limit and the backward-speed point, because
+  // body_contact_and_battles.md voices no provenance beside it and defending_the_rush.md and
+  // how_to_watch_hockey.md voice no standstill point beside it.
   caption:
-    'A 1-on-1 at the moment the carrier crosses the centre red line, the attack moving right to left ' +
+    'A 1-on-1 as the carrier crosses the centre red line, attacking right to left ' +
     // ⚠️ "body between the carrier and the middle of the ice" WAS CUT AND PUT BACK, in this
     // agent's own end-of-task diff. It is the definition of "on the inside", and standing on
     // the BOARDS side instead is the error the GAP_CARRIER comment above records this diagram
@@ -108,7 +114,7 @@ const gapAndAngle = {
     // beginner it is written for to guess which side that is.
     'toward the defended net at the left. The defender is on the inside — body between the carrier ' +
     'and the middle of the ice, boardside shoulder to the middle of their chest — so the only route ' +
-    'the carrier can see is toward the wall, and the shaded middle is the ice being taken away. ' +
+    'the carrier can see is toward the wall. The shaded middle is the ice being taken away — part of a ' +
     // ⚠️ SHORTENED 15 SEPTEMBER 2026, and two things were cut that a re-reader may want back.
     // (1) "shots from the slot beat goalies and shots from below the faceoff dots on the wall
     // mostly do not" — the REASON the middle is the ice worth taking, stated in the owner's
@@ -116,15 +122,15 @@ const gapAndAngle = {
     // hedge intact there. (2) "the drawn gap is slightly tighter where the two routes end than
     // where they start" — the gap-shrinks-never-grows point, which `rush-2-on-2`'s caption in
     // this same module still states and which is the owner's own `Key:` fact.
-    // ⚠️ NOTHING BELOW THIS LINE WAS TOUCHED. The provenance block carries its own
-    // "Do not compress this back", and the zone disclosure is the one that stops a reader
-    // taking four drawn edges for markings on the ice.
-    'That band is drawn on the two faceoff-dot lines and cut off at the circles and the crease so ' +
-    'that the shading has an edge; the middle is a lane running the length of the ' +
-    'rink, and none of those four edges is painted on the ice. ' +
-    'The gap drawn here is about nine feet, a little wider than the stick and a half the gap ladder ' +
-    'targets at the red line: on any stick length the rulebooks allow, nine feet is nearer one and ' +
-    'three-quarter stick lengths than one and a half. ' +
+    // ⚠️ The zone disclosure below was REPAIRED 23 Oct 2026: a shortening had made it say
+    // the band runs the length of the rink, contradicting the drawn rectangle, and dropped
+    // the "cut short only so the shading has an edge" limb the zones comment depends on.
+    // It is the clause that stops a reader taking four drawn edges for markings on the ice.
+    // The provenance block carries its own "Do not compress this back".
+    'lane running the length of the rink, cut short here only so the shading has an edge; none of ' +
+    'its drawn edges is painted on the ice. ' +
+    'The gap drawn is about nine feet — on any stick the rulebooks allow, nearer one and ' +
+    'three-quarter stick lengths than the stick and a half the gap ladder targets at the red line. ' +
     // ⚠️ The PROVENANCE limit travels with the ladder, not just the applicability hedge.
     // The style guide's owner row is explicit that "a guide, not a law" is about
     // applicability and does NOT carry provenance. This caption is borrowed into
@@ -169,15 +175,11 @@ const gapAndAngle = {
     // Require" (HC 3.3(b) 1.60 m/63 in, NHL 10.1 63 in, IIHF 10.1 1.63 m, USA Hockey 301(b) 65 in),
     // re-read this session. 65 in is the longest any book allows, at which 8.944 ft is 1.65 sticks,
     // still nearer 1.75 than 1.5 -- which is what "on any stick length the rulebooks allow" asserts.
-    'The stick and a half is a guide and not a law. It varies with your own backward speed and ' +
-    'the attacker’s skill, and the published coaching pages disagree with it: the only page found ' +
-    'that anchors a distance to the centre red line prints two stick lengths there rather than a ' +
-    'stick and a half, and one coaching book prints no distance at all. Treat that figure as a ' +
-    'shape ' +
-    'to aim at rather than as a measured number. ' +
-    'What no still picture can show is that ' +
-    'the defender was already at full backward speed before this instant, because a gap cannot be closed ' +
-    'from a standstill.',
+    'That stick and a half is a guide, not a law: it varies with your backward speed and the ' +
+    'attacker’s skill, the only page found that anchors a distance to the centre red line prints ' +
+    'two stick lengths there, and one coaching book prints no distance at all. Treat the figure ' +
+    'as a shape to aim at, not a measured number. What no still picture can show is that the ' +
+    'defender was already at full backward speed, because a gap cannot be closed from a standstill.',
 
   describe:
     'The full sheet, the defended net at the left. Two players and a goalie. An opposition forward ' +
@@ -202,7 +204,8 @@ const gapAndAngle = {
   // middle at §"Wide and middle" as "the central lane" — a lane, with no depth stated
   // anywhere — and this document has the three lanes "running the length of the rink".
   // So the ends drawn here (top of the circles, front of the crease) exist only so the
-  // shading has an edge, and the caption now says so, which is the disclosure
+  // shading has an edge, and the caption says so ("cut short here only so the shading
+  // has an edge"), which is the disclosure
   // nz-back-off-at-the-line already carried for the same lane drawn 44 ft deep instead
   // of 29. check_zones.py reports those two as one label at two areas. They are not in
   // conflict; there is nothing defined for them to conflict about.

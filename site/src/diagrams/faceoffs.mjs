@@ -705,14 +705,21 @@ const whereTheDrawGoes = {
   half: false,
   width: 1100,
 
+  // SHORTENED 23 Oct 2026 (1,577 chars, the second-longest voiced caption). Every rule limb
+  // is kept because rules_primer.md also hosts this diagram and voices none of the
+  // choice-of-dot or USA Hockey divergences in the chunks either side of it; faceoffs.md
+  // voices them all in the facts block that follows. Cut: "drawn on one sheet" and
+  // wording only. The "your opponents" gloss on who chooses is load-bearing — see below.
+  // ⚠️ "One of the two spots THERE", never "one of ITS two spots": "its" lands on "a
+  // penalty you took", the noun just before it.
   caption:
-    'Four common stoppages and the faceoff spot each one sends the draw to, drawn on one sheet — four' +
-    ' separate situations, not one play. Your own end is at the left, the end you are attacking at ' +
-    'the right. Marked at centre ice: the start of every period, and every draw after a goal. Marked ' +
-    'in your own end: an icing you caused, or a penalty you took. One box is drawn round one of the ' +
-    'two spots there because the rule names the END rather than the dot — under the NHL and the IIHF ' +
-    'the attacking team chooses which of the two, while USA Hockey gives no choice of dot at all and ' +
-    'Hockey Canada ' +
+    'Four common stoppages and the faceoff spot each one sends the draw to — four separate ' +
+    'situations, not one play. Your own end is at the left, the end you are attacking at the ' +
+    'right. At centre ice: the start of every period, and every draw after a goal. In your own ' +
+    'end: an icing you caused, or a penalty you took. One of the two spots there is boxed because the ' +
+    'rule names the END, not the dot. Under the NHL and the IIHF the attacking team — your ' +
+    'opponents, in the situation drawn here — picks which dot. USA Hockey gives no choice of ' +
+    'dot at all, and Hockey ' +
     // ⚠️ THIS SAID "only if YOU tell the referee", in a caption whose own framing is
     // "an icing you caused, or a penalty you took". HC 6.4(b) gives the choice to the
     // "attacking (non-offending) team" (hc.txt:4857), so in the situation DRAWN it belongs
@@ -721,17 +728,16 @@ const whereTheDrawGoes = {
     // faceoffs.md IN THIS SAME ROUND, and left standing here. The clause immediately above
     // already said "the attacking team chooses" for the NHL and IIHF, so the caption also
     // contradicted itself.
-    'gives it in Junior and Senior divisions only, and gives it to the attacking team — your ' +
-    'opponents, in the situation drawn here — who lose it unless they tell the referee before the ' +
-    'line change procedure starts. Marked outside the blue line you were attacking: an offside where ' +
-    'the puck was carried over. A puck SHOT or PASSED over the line offside goes back to the zone the' +
-    ' puck came from instead, which can be your own end. Marked in the end you are attacking: a ' +
-    'goalie freeze, or any other stoppage between the end-zone dots and the end boards, which under ' +
-    'the NHL and the IIHF draws at the spot on the side it happened — drawn here on the lower side. ' +
-    'USA Hockey answers that one differently, taking the nearest spot only where its own last-play ' +
-    'faceoff applies, and sending a stoppage the attacking team caused in the attacking zone out to ' +
-    'the neutral zone instead. These four are the common ones and not the whole rule, and the boxes ' +
-    'are markers rather than anything painted on the ice.',
+    'Canada gives it to the attacking team in Junior and Senior only, and they lose it unless ' +
+    'they tell the referee before the line change procedure starts. Outside the blue line you ' +
+    'were attacking: an offside where the puck was carried over. A puck SHOT or PASSED over the ' +
+    'line offside goes back to the zone it came from instead, which can be your own end. In the ' +
+    'end you are attacking: a goalie freeze, or any other stoppage between the end-zone dots and ' +
+    'the end boards, which under the NHL and the IIHF draws at the spot on the side it happened — ' +
+    'drawn here on the lower side. USA Hockey answers that one differently: it takes the nearest ' +
+    'spot only on its own last-play faceoff, and sends a stoppage you, the attackers, caused in ' +
+    'that zone out to the neutral zone. ' +
+    'These four are the common ones, not the whole rule, and the boxes are markers, not paint.',
 
   describe:
     'The full sheet, your own net at the left and the net you are attacking at the right. No ' +

@@ -282,7 +282,7 @@ Learn-to-skate is not a hockey programme and need not be finished first — but 
 - Governing-body registration is included for the programme year. USA Hockey *"membership runs Sept 1-Aug 31 annually."*
 - Registration is **online only** — *"phone and/or in-person registration at individual rinks will not be accepted"* — and popular sites have waiting lists.
 
-**The First Shift** (NHL/NHLPA with Hockey Canada and Bauer) is the Canadian counterpart: Hockey Canada describes it as a *"6-week learn-to-play program for kids aged 6 to 10 that includes head-to-toe Bauer equipment."* **Reach it from Hockey Canada's pathway page, not a remembered web address** — see the note below.
+**The First Shift** (NHL/NHLPA with Hockey Canada and Bauer) is the Canadian counterpart: Hockey Canada describes it as a *"6-week learn-to-play program for kids aged 6 to 10 that includes head-to-toe Bauer equipment."* **Reach it from Hockey Canada's pathway page, not a remembered web address** — `thefirstshift.ca` does not reach the programme.
 
 > **Verification note:** the domain `thefirstshift.ca` does not reach the programme. On 27 July 2026 it redirected to an unrelated commercial site; on 1 September 2026 it served a domain registrar's parking page. `firstshift.ca` refuses automated retrieval. The description above is quoted from **Hockey Canada's** pathway page, which links to `firstshift.ca`.
 

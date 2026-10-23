@@ -535,6 +535,13 @@ const rimStopOrClear = {
   half: true,
   width: 900,
 
+  // SHORTENED 23 Oct 2026 (longest voiced caption, 1,686 chars). Cut because the one host,
+  // goaltender.md, voices them in the chunks either side of this caption: the IIHF Situation
+  // Handbook detail and the NHL "this document's reading" disclosure (the "What it costs"
+  // paragraph immediately after), the book-by-book trapezoid list (the "Get your body in the
+  // way" paragraph immediately before), and the Hockey Canada / USA Hockey 614(c) freeze
+  // detail (the freeze section two chunks before). The British limb and the freeze limb are
+  // kept in short form because neither is voiced in an adjacent chunk.
   caption:
     'A puck rimmed hard around the boards is coming behind your net, and the shaded area is the ' +
     'trapezoid — the marked area behind the goal line inside which you are allowed to play it. ' +
@@ -555,31 +562,26 @@ const rimStopOrClear = {
     // caption wrote "blocks a pass inside the restricted area" and a listener with no picture
     // would have taken it to mean a pad in the way INSIDE the trapezoid is a minor, which is the
     // rule inverted.
-    'the way and let them have it. Under the IIHF book that is not caution, it is the rule: its ' +
-    'Situation Handbook answers a goalie who drops and blocks a pass with the leg pads out ' +
-    'beyond that shaded area with a delay-of-game minor, so a pad in the way counts as playing ' +
-    'the puck. Under the NHL book, whether a deliberate body block counts as playing it is this ' +
-    'document’s reading rather than a quoted interpretation. In front of the goal line, and ' +
-    'behind it inside the shaded area, blocking a rim with your pads is completely legal. Where a ' +
+    // ⚠️ "getting out of the way" is named, not pointed at with "that": "Under the IIHF book
+    // that is the rule" heard aloud parses as "the IIHF book that is the rule".
+    'the way and let them have it. Under the IIHF book, getting out of the way is the rule, not ' +
+    'caution: a pad in the way out there counts as playing the puck and draws a delay-of-game ' +
+    'minor. In front of the goal line, and behind it inside the shaded area, blocking a rim with ' +
     // W34: the British limb scoped England Ice Hockey's 22.3 to "England and Wales" — a place,
     // where eih_rr.txt 22.2 scopes it to "EIH competitions", and the Elite League plays in
     // England under a Casebook that hands Rule 27 to the IIHF book. Owner: uk_rules.md KT7.
-    'trapezoid applies is not universal — the NHL and IIHF books have one, and none of USA Hockey, ' +
-    'Hockey Canada or CARHA marks one at all. In Britain, nothing in the Elite League’s Casebook ' +
-    'switches it off, and whether England Ice Hockey’s rule calling it not currently enforced ' +
-    'still stands, and where, is unsettled. ' +
-    // ⚠️ FULL STOP, NOT A COLON, before "Assume it binds" below. "…do not settle whether the
-    // suspension still stands: assume it binds, ask your league…" puts a MAIN-CLAUSE negation
-    // immediately before the colon and three bare imperatives after it, so a listener can hear
-    // "don't assume it binds, don't ask your league". Inverted, that tells a goaltender to assume
-    // the restriction does NOT bind and to play the puck where they may not — a delay-of-game
-    // minor. "Assume it binds" is the conservative half of an unsettled question and it must
-    // survive being read aloud.
-    'Assume it binds, ask your league, and look behind the net to see whether the ' +
-    'lines are painted. And no trapezoid still does not free you to freeze the puck out here: ' +
-    'Hockey Canada keys that to your crease and its own interpretation is in two minds about it, ' +
-    'and USA Hockey Rule 614(c) keys it to a "goaltender’s privileged" area that excludes the ' +
-    'corner this rim comes through.',
+    // The "and where" below keeps that scope question open; do not cut it.
+    'your pads is completely legal. The NHL and IIHF books have a trapezoid; USA Hockey, Hockey ' +
+    'Canada and CARHA mark none, but having none still does not free you to freeze the puck out here. ' +
+    'In Britain, whether England Ice Hockey’s rule suspending the trapezoid still stands, and ' +
+    // ⚠️ FULL STOP before "Assume it binds" below: a negation or "unsettled" clause running
+    // into three bare imperatives lets a listener hear "don't assume it binds". "Assume it
+    // binds" is the conservative half of an unsettled question and it must survive aloud.
+    // ⚠️ "the trapezoid binds", NEVER "it binds": the sentence before ends on England Ice
+    // Hockey's rule SUSPENDING the trapezoid, so "it" would attach to the suspension and
+    // tell a goaltender to assume the trapezoid is OFF.
+    'where, is unsettled. Assume the trapezoid binds, ask your league, and look behind the net to see ' +
+    'whether the lines are painted.',
 
   describe:
     'The attacking half of the rink, the defended net at the right. The area behind the goal ' +
