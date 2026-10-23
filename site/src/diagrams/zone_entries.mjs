@@ -296,9 +296,10 @@ const wideEntry = {
     // the arrowhead below, which the code correctly permits. THE CODE IS RIGHT AND THE
     // PROSE IS SHORT. Do not "fix" the drawing to match the page.
     //
-    // The remedy the corpus uses is a caption clause, and this caption takes its Rule
-    // 69 wording from rule69_clauses.mjs, shared with the three other diagrams that
-    // teach it, so a correction reaches all four. Do not "fix" this by shortening the
+    // The remedy the corpus uses is a caption clause. This caption imported its Rule
+    // 69 wording from rule69_clauses.mjs until 22 October 2026, when it was shortened
+    // and the imports dropped (see the caption's own comment); the host voices that
+    // wording in full around it. Do not "fix" this by shortening the
     // route either: a drive that stops further out is a different play, and the caption
     // is where the obligation belongs, because what happens in the last few feet is
     // movement over time.

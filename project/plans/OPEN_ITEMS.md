@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-(none)
+- **SG36 (23 Oct):** goalie stick and bench scope, 43.4, two captions and diagram comments. Reviews CLEAR; committing.
 
 ## New page: Getting Better on Your Own
 
@@ -59,7 +59,6 @@ can ship once it has been reviewed.
 
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 - **Echoes found by the SG30 site review (wording):**
-  - The risk_management cross-ice caption repeats the "Coaching convention…" paragraph straight after it (check_caption_echo).
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
 - **body_contact EIHL repetition (owner 22 Oct: trim where it's repetition):** keep each distinct EIHL rule once and cut repeated restatements of it. Do this as part of the repetition pass, with a layer test.
 
@@ -71,12 +70,8 @@ can ship once it has been reviewed.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
 - **Spoken units over 2,500 characters:** 12 corpus-wide (3 in forechecking_systems; most others are
   captions).
-- **goaltender :1083 (optional):** "All six books, where they grant it, ask…". CARHA 65(a) Note 2 and USAH 624(b)(1) "at the time the penalty expires" could join. Also faceoffs :721: if the PWHL is added for stick toe in the white, cite 78.7(v).
-- **dzc :596 (unchanged text, check):** "in every one it reaches a major plus a game misconduct with nobody injured". USA Hockey 634(b) needs reckless endangerment for that.
-- **rules_primer :465:** "and a match for an attempt to injure (43.4)" states a discretionary penalty as fixed (NHL and PWHL 43.4 "may assess"). Fix: "can bring a match".
-- **rules_primer goalie broken-stick bullet (:596, stricter direction, minor):**
-  - CARHA 51(e) and USAH 605(c) bar the bench trip only "during a stoppage of play".
-  - "Passed hand to hand" is wrong for USA Hockey: Casebook 605 Sit. 12 lets a teammate slide it.
+- **rules_primer :596 "with a penalty shot" (harsher, minor):** Hockey Canada says it "may be awarded", so make it "possibly a penalty shot". **goaltender :1416:** "A goalie may not go to the bench for one" is unscoped (too strict for USA Hockey and CARHA mid-play).
+- **faceoffs :721 (optional):** if the PWHL is added for stick toe in the white, cite 78.7(v).
 - **Pull-up wording:** "see the numbers on their back" in practice_and_development and
   scanning_and_anticipation, vs "see their numbers" elsewhere. Cosmetic.
 - **Style B body_contact script line 201 lost its "If"** (`podcast_style_b/` detailed .md/.txt and the script): "You are outnumbered, or tangled…" states as fact what the page gives as a condition. Fix it in the next Detailed remake: "If you are outnumbered, or tangled with someone just as stuck, or losing it here would give them a chance at your net, pin the puck…". The published audio carries it, but it is tactical wording, not a rule.
@@ -87,15 +82,11 @@ can ship once it has been reviewed.
 ## Diagrams and site
 
 - **Captions over 800 characters:** about 82 of 204 after SG27–SG29 (13 of the longest cut). Next longest are around 1,900: entry-wide, screen-the-goalie-sightline, the-puck-decides-not-you, cross-ice-in-your-own-end, forecheck-2-3-lock. Check how 🇬🇧 renders on Windows (often "GB").
-- **Stale diagram comments (found 23 Oct):**
-  - positions.mjs :40 and :687 (TABLES_ALLOW_OUTSIDE "imported");
-  - offensive_zone_play.mjs :614 ("still used by screen-the-goalie-sightline", now false);
-  - zone_entries.mjs :300 ("shared with the three other diagrams").
-  - Also: the skating.mjs :267 caption opens with drawing-meta ("Drawn as the two failures… this notation has no front").
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
 - **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
   fix).
 - **No checker** for labels crossing painted lines.
+- **check_caption_echo only compares a caption with the block ABOVE it.** A caption that repeats the paragraph below it is invisible to it, as the risk_management cross-ice case showed. `--show` takes an integer, not a diagram id. Extend it to compare the following block too (change between waves).
 - **dz-walk-down-man "goes with the carrier"** label appears to cross the blue line at every width;
   confirm in a browser.
 - **Site look owed:** the 🇬🇧 mid-paragraph in conditioning's Key focus; the special_teams bold run.

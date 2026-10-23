@@ -37,7 +37,8 @@ import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
 // The rule69_clauses.mjs import (CREASE_LINE_IS_THE_CREASE, REFEREE_JUDGEMENT,
 // TABLES_ALLOW_OUTSIDE) was removed on 22 October 2026 when winger-offensive-zone-patches,
 // its only user here, was shortened to the instruction alone; see that caption's comment.
-// rule69_clauses.mjs's own header still lists this caption as a user and is not edited here.
+// rule69_clauses.mjs's header now lists oz-net-front-screen (offensive_zone_play.mjs) as its
+// only importer, so the two files agree.
 
 // ---------------------------------------------------------------------------
 // Shared anchors. Named once where more than one thing refers to them, so a
@@ -684,9 +685,10 @@ const wingerOffensiveZone = {
     //
     // The replacement is not a re-hedge, it is better evidence: both books print the answer to
     // this play in their own reference tables, so the structural working is not needed here and
-    // the host carries it in full anyway. TABLES_ALLOW_OUTSIDE is imported rather than retyped —
-    // it carries the IIHF's 2025/26-to-2026/27 table renumbering, which is the most stale-prone
-    // string in these four captions and must have exactly one owner.
+    // the host carries it in full anyway. TABLES_ALLOW_OUTSIDE was imported here until
+    // 22 October 2026 and is no longer (see the note at the top of this file); the constant,
+    // with the IIHF's 2025/26-to-2026/27 table renumbering, still has exactly one owner in
+    // rule69_clauses.mjs, and it currently has no importer.
     // SAFETY, ADDED 23 September 2026, and it was absent entirely. This caption sends a
     // winger "to the side of the net ... to arrive as the shot is taken" and the drawn
     // skate route ends at (86, -10) — 7.6 ft from the near post at (89, -3), with its

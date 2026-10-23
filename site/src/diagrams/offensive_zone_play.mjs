@@ -27,7 +27,7 @@ import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
 
 // A caption clause that appears in more than one diagram is imported, never
 // retyped: a sentence that appears twice is a sentence that can drift once, and
-// this one already had. See rule69_clauses.mjs for why all four still say it.
+// this one already had. See rule69_clauses.mjs; this is now its only importer.
 import {
   CREASE_LINE_IS_THE_CREASE,
   REFEREE_JUDGEMENT,
@@ -612,7 +612,7 @@ const netFrontScreen = {
     //  - DROPPED: TABLES_ALLOW_OUTSIDE and its "appendix table rather than rule text"
     //    disclosure. Both hosts voice the table answer in the facts block of the same section,
     //    immediately before the marker (offensive_zone_play.md 5C/5E; center.md Table 14, 5C/5E).
-    //    The constant itself is untouched; it is still used by screen-the-goalie-sightline.
+    //    The constant itself is untouched in rule69_clauses.mjs; it currently has no importer.
     //    The clause-by-clause Rule 69 working had already been cut on 18 September 2026 for
     //    stating an absolute ("every clause ... names the crease") that 69.1's text does not
     //    support; do not bring it back.

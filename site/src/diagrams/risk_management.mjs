@@ -878,20 +878,21 @@ const crossIceOwnEnd = {
   width: 900,
 
   // SHORTENED 22 October 2026 (~1,876 chars; owner: shorter is better). Kept: the picture, the
-  // section's instruction (north or behind the net), the convention disclosure with its
-  // above/below-the-circles line, the designed-breakout distinction, the outlet and
+  // designed-breakout distinction, the outlet and
   // undrawn-defencemen notes, the ⚠️ contact limb and the wall posture. The posture is the short
   // form (coordinator call, 22 October 2026, under the owner's 23 September document-relative
   // ruling): this section is about passing, so the full mechanics are inherited detail; the
   // host carries them at its own wall-contact passages. Cut otherwise: restatement only.
+  // 23 October 2026: the instruction (north or behind the net) and the convention disclosure
+  // with its above/below-the-circles line were cut too. The host voices both in the paragraphs
+  // directly either side of the marker ("What to do instead" above, "*Coaching convention.*"
+  // below) and in the section's facts block, so the caption was a word-for-word echo.
   caption:
     'Your own zone, your own net at the right: the cross-ice pass this section tells you not to ' +
     'make. A defenceman sealed in the strong-side corner passes east–west below the tops of the ' +
     'circles, across the shaded slot in front of your own goalie. Their forward in the middle ' +
     'stands beside the lane; the reach of their stick into it is not drawn. Their third forward is already sliding across, so even a completed pass ' +
-    'usually arrives with the forecheck. Move it north or behind the net instead. No rule forbids ' +
-    'the pass: it is a coaching convention, and some teams accept it above the tops of the ' +
-    'circles, almost nobody below them, where this one is drawn. The designed cross-ice option in ' +
+    'usually arrives with the forecheck. The designed cross-ice option in ' +
     'a structured breakout is a different play, taken only when the middle is empty; here it is ' +
     'not. The far outlet could equally be the weak-side defenceman, and their defencemen are not ' +
     'drawn, so do not count bodies here. ⚠️ No contact is drawn: the sliding forward’s route ends ' +

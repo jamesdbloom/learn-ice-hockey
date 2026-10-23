@@ -264,8 +264,8 @@ const pivotTowardTheBoards = {
   width: 900,
 
   caption:
-    'Drawn as the two failures rather than as the turn: this notation has no front and no ' +
-    'back, so read it as where each failure leaves you. Beaten toward the wall puts you out ' +
+    'If you are beaten in the pivot, this shows where each failure leaves you; the turn ' +
+    'itself is not drawn. Beaten toward the wall puts you out ' +
     'past the faceoff dot heading for the corner, where the shooting angle is poor and the ' +
     'wall is a second defender. Beaten into the shaded ice in the middle — the slot — is a ' +
     'scoring chance, and that shading is a warning rather than a target. The distance drawn ' +
