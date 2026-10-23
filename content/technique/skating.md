@@ -795,7 +795,7 @@ Keep your eyes up through the turn — players reflexively drop them here, and i
 
 ```facts
 Read: Games rarely give you a clean circle
-Action: Cutback or escape turn — tight-turn back against your own momentum to shake a checker committed to your original direction
+Action: Cutback or escape turn — tight-turn back against your momentum to shake a checker committed to your line; turn before they can reach you, never to face the wall with them behind you
 Action: Lateral escapes — one or two hard lateral pushes sideways out of a stick-check, without giving up the puck
 Technique: Turning under a stick means dropping your shoulder and your knee bend at the same time, so you pass under a checking stick rather than into it
 Key: The cutback is entirely an outside-edge skill
@@ -804,7 +804,7 @@ Never: Train the tight turn one way only — it has a weak side too
 
 Games rarely give you a clean circle. What you need:
 
-- **The cutback / escape turn.** With the puck on the wall, tight-turn back against your momentum to shake a checker committed to your original line. It is all outside edge.
+- **The cutback / escape turn.** With the puck on the wall, tight-turn back against your momentum to shake a checker committed to your original line. Make it while they are still too far away to hit you. Once they can reach you it is too late to turn: go side-on and take it on forearm and hip, and never turn to face the wall with them behind you. It is all outside edge.
 - **Lateral escapes.** One or two hard sideways pushes out of a stick-check, keeping the puck.
 - **Turning under a stick.** Drop your shoulder and your knees together so you pass under a checking stick, not into it. See [Body Contact and Battles](body_contact_and_battles.md).
 - **Turning both ways at speed.** The tight turn has a weak side too. Same fix.

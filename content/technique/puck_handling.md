@@ -438,7 +438,7 @@ Standing tall and narrow is the reason players get knocked off pucks. Get:
 
 Low and wide is hard to move, because leverage often beats strength in a board battle — a stronger player standing upright will frequently lose to a weaker player who is properly down in their base. Not always, and a large enough strength gap wins anyway; the point is that base is the variable you actually control. **It is coaching consensus, not a measured law** — nothing found in the ice hockey biomechanics literature quantifies it, and [Body Contact and Battles](body_contact_and_battles.md) sets out the nearest evidence, from rugby scrummaging.
 
-**Keep your feet moving.** A stationary player gets pinned; a player with momentum can escape along the wall or spin out to the middle. Small choppy steps, not a planted stance.
+**Keep your feet moving.** A stationary player gets pinned; a player with momentum can escape along the wall or, off a checker already leaning on them, spin out to the middle. Small choppy steps, not a planted stance.
 
 ### Side-on into the checker
 
@@ -581,7 +581,7 @@ The boards are a free extra defender, on your side.
 Key: Protection is not a destination — every second you hold the puck, a second checker is arriving
 Never: Plan to shield it until something happens — what happens is a turnover
 Action: Decide your outlet while still skating to the puck — usually the low support player or the next man arriving
-Options: With nobody there, your out is a rim, a reverse, a spin to the middle, or a chip off the wall past the checker
+Options: With nobody there, your out is a rim, a reverse, a spin to the middle off a checker already leaning on you, or a chip off the wall past the checker
 Read: Know where the pressure is coming from, and therefore which side the puck must be on when you arrive
 Convention: How long you are expected to hold the puck on the wall is a system decision, not a law. Ask your coach
 ```
@@ -593,7 +593,7 @@ Protection is not a destination. Every second you hold the puck under pressure, 
 **Decide while you are still skating to the puck:**
 
 - Who is my outlet? (Usually the low support player or the next man arriving.)
-- If nobody is there, is my out a rim, a reverse, a spin to the middle, or a chip off the wall past the checker?
+- If nobody is there, is my out a rim, a reverse, a spin to the middle (only off a checker already leaning on me), or a chip off the wall past the checker?
 - Where is the pressure coming from, and therefore which side does the puck need to be on when I arrive?
 
 Answering those three before your stick touches the puck is what [scanning](../hockey-iq/scanning_and_anticipation.md) is for. A player who scans arrives with a plan and holds the puck for half a second. A player who does not arrives with no plan, protects beautifully for three seconds, and loses it.
