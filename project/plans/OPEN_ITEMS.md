@@ -53,7 +53,7 @@ can ship once it has been reviewed.
 
 ## Owner decisions needed
 
-- **ElevenLabs re-recordings (23 Oct, owner topped up to 305k):** Switching Positions and Basics carrying-the-puck are **published**: transcripts match the script bodies, HEAD returns 200 and range returns 206. Skating, Puck Handling and Centre are synthesising (sg62_synth.* in the scratchpad). **Offensive Zone Play (~84k) does not fit** in the remaining credits; it needs more credits or the 16 Nov reset.
+- **ElevenLabs re-recordings (owner topped up to 305k on 23 Oct):** five are published: Switching Positions, Basics carrying-the-puck, Skating, Puck Handling and Centre. Their transcripts match the script bodies, HEAD returns 200 and range returns 206. Offensive Zone Play is synthesising (sg63_synth.sh, which logs to sg62_synth.log); it fits, because the five billed about 66k in total. After it finishes: verify it, then publish.
 
 - **NotebookLM batch 7 is ready for you (23 Oct):** `.podcast_queue/notebooklm/remake_2026-10-20/batch7/`, built from the corrected pages: 10 Winger, 17 Forechecking Systems, 28 Body Contact and Battles. Same instructions and focus files as batch 6. The published episodes voice cues since corrected: Winger "hip into them"; Body Contact "leaning legal almost everywhere" and "seal with your body"; Forechecking "seal with body position… a human barricade". Generate when convenient; I'll transcribe, review, cut and publish as before.
 
