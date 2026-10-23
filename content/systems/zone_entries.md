@@ -763,7 +763,7 @@ Lift the puck high off the ice so it travels over sticks and bodies and lands in
 
 - **The read:** the opposition are congesting the neutral zone — a **trap**, most commonly a **1-3-1** neutral zone structure with one forechecker, three players across the middle and one back — and there is no route along the ice.
 - **Why:** a flip does not have to get through the three-player wall; it goes over it. It also hangs long enough for your forwards to run underneath it.
-- **How:** open the blade, get under the puck, and land it **past** the defence but **before** the goal line — a puck crossing the goal line untouched from behind the centre red line is **icing**.
+- **How:** open the blade, get under the puck, and land it **past** the defence but **before** the goal line — a puck crossing the goal line untouched from behind the centre red line is **icing** (some CARHA leagues use the blue lines instead, so ask yours).
 
 **On the penalty kill, take the clear you are entitled to.** With two seconds left on the kill, fire it — if your league grants the shorthanded exemption: a clear *"released from the stick of the player shooting the puck down the ice prior to the penalty expiring"* is not icing (NHL 81.6). 🇬🇧 **Under the IIHF book British hockey plays, both the shorthanded exemption and that relief hold** — its 81.6 has no major-penalty paragraph and no classification limit.
 

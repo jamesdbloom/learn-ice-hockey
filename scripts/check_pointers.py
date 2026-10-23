@@ -41,6 +41,47 @@ Sources trailer, a `## Notes on verification` section, a footnote, or a table th
 rendered as a pointer -- with the sentence, so it can be judged without opening the
 file.
 
+CROSS-DOCUMENT POINTERS (added 23 October 2026)
+-----------------------------------------------
+A second pass, printed in its OWN section after the original summary and NOT
+added to its count, reports spoken sentences that name ANOTHER corpus document
+and point at one of its unvoiced layers: "Conditioning and Recovery carries the
+red flags and the sources", "Zone Entries has the figures ... and sources",
+"Rules Primer carries the same material as a lookup table". A Sources trailer
+is voiced in NO episode, so that pointer reaches nothing anywhere; a table
+pointer is resolved against the TARGET's own render and labelled by whether
+that document's audio voices its tables, drops them, or is mixed.
+
+How it matches, and the false positives that shaped it (first corpus run):
+  - A document's names are its H1 title plus any link text that is a 2+-word
+    prefix of that title. ⚠️ Raw link texts were tried first and produced
+    noise: a link labelled with a SECTION heading ("the Comparison Table",
+    "If you play in Britain, the IIHF column is yours") carries the layer noun
+    inside the name.
+  - Names match CASE-SENSITIVELY on word boundaries: case-insensitively,
+    "Faceoffs" matched "differ on faceoffs" and "Defender" "beating a defender".
+  - The layer noun must sit within CROSS_AFTER characters after the name, or
+    immediately before it in the "the sources in X" shape. ⚠️ A looser
+    before-window charged "...sets out the sources, and Playing Without the
+    Puck for loose-puck races" to the second document named.
+  - Bare singular "source" is excluded ("the commonest source of confusion").
+
+What the cross-document pass cannot see:
+  - A pointer that names the other document by anything but its title or a
+    title prefix -- "the shooting page", "the glossary", "the rules document".
+  - A pointer whose layer noun is further from the name than the window, or
+    BEFORE it in any shape other than "the sources in X" -- "the two
+    goal-breakdown sources read are both NHL (Neutral Zone Systems sets them
+    out)" is a real pointer and is now missed.
+  - Which table a "table in X" sentence means, when X is MIXED; the same
+    document-level limit as the original pass, one document over.
+  - Whether the pointed-at content is ALSO voiced in this document, which is
+    what decides whether a listener loses anything. Most hits are the
+    disclosure convention working ("Time and Space carries the two coaching
+    sources") and need no change at all.
+  - A section heading spoken as a link label ("Rules Primer, If you play in
+    Britain, the IIHF column is yours") still scores as a table pointer.
+
 USAGE
 -----
     python3 scripts/check_pointers.py                       # every document in content/
@@ -52,6 +93,9 @@ A relative path is tried against the current directory first, then against the
 repository root, so the tool runs the same from anywhere. ⚠️ It used to hard-code
 `root / "content"` with no path argument (plan row 56g), so it could not be pointed
 at a single document or at a podcast script at all.
+
+⚠️ Every run now renders ALL of content/, even for one file, because the cross-
+document pass needs every target's render to classify a table pointer.
 
 Exit status is 0 unless the renderer itself fails or the arguments are wrong (2).
 Findings are not failures.
@@ -102,6 +146,118 @@ POINTERS: tuple[tuple[str, str], ...] = (
 
 _COMPILED = tuple((re.compile(p, re.I), label) for p, label in POINTERS)
 RE_SENTENCE = re.compile(r"[^.!?]*[.!?]")
+
+# ---------------------------------------------------------------------------
+# CROSS-DOCUMENT POINTERS (added 23 October 2026, plan row "cannot see a
+# pointer at another document's unvoiced layer").
+#
+# The patterns above only fire on a pointer at THIS document's layers ("the
+# table below", "at the foot of this document"). A spoken sentence such as
+# "Conditioning and Recovery carries the red flags and the sources for both"
+# sends the listener to ANOTHER document's Sources trailer -- which is voiced
+# in no episode at all -- and "Zone Entries carries the full table" sends them
+# to a table that may be dropped from that document's own audio too.
+#
+# How it finds them: a sentence is a candidate when it names another corpus
+# document -- by a markdown link text this document uses for it, or by that
+# document's H1 title -- AND a layer noun sits within a short window after
+# the name (or just before it, for "the sources in X"). The window is the
+# whole defence against noise: "sources" and "table" are common words.
+# ---------------------------------------------------------------------------
+RE_DOC_LINK = re.compile(r"\[([^\]\n]+)\]\(([^)\s]+?\.md)(?:#[^)\s]*)?\)")
+#: (pattern, kind). kind decides how the target is resolved.
+CROSS_LAYERS: tuple[tuple[re.Pattern, str], ...] = (
+    (re.compile(r"\bnotes? on verification\b|\bverification notes?\b", re.I), "notes"),
+    # Plural "sources" (noun or verb: "X sources that figure"), or a singular
+    # "the/its source" after a carrying verb. A bare singular "source" is
+    # excluded: "the commonest source of confusion", "no source behind it".
+    (re.compile(r"\bsources\b|\bsource list\b|\bfootnotes?\b"
+                r"|\b(?:carries|has|gives|cites|names|owns) (?:the|its|their) source\b", re.I),
+     "sources"),
+    (re.compile(r"\b(?:tables?|rows?|columns?|chart)\b", re.I), "table"),
+)
+#: Characters after / before the document name in which the layer noun must sit.
+CROSS_AFTER, CROSS_BEFORE = 90, 40
+
+
+def _doc_names(docs: list[Path]) -> dict[Path, set[str]]:
+    """Every name a document goes by: its H1 title, plus any link text another
+    document uses for it that is a two-word-or-longer PREFIX of that title
+    ("Risk Management" for "Risk Management and Decision-Making").
+
+    ⚠️ Link texts in general are NOT used, and the first version did use them:
+    a link labelled with a SECTION heading ("the Comparison Table", "If you play
+    in Britain, the IIHF column is yours") carries the layer noun inside the
+    name itself, and every sentence quoting the heading scored as a pointer.
+    Names are matched CASE-SENSITIVELY on word boundaries for the same reason --
+    case-insensitively, "Faceoffs" matched "the two editions differ on
+    faceoffs" and "Defender" matched "beating a defender"."""
+    names: dict[Path, set[str]] = {d: set() for d in docs}
+    titles: dict[Path, str] = {}
+    for d in docs:
+        m = re.search(r"^# (.+)$", d.read_text(encoding="utf-8"), re.M)
+        if m:
+            titles[d] = m.group(1).strip()
+            names[d].add(titles[d])
+    for d in docs:
+        for lm in RE_DOC_LINK.finditer(d.read_text(encoding="utf-8")):
+            target = (d.parent / lm.group(2)).resolve()
+            title = titles.get(target)
+            if not title:
+                continue
+            label = re.split(r"[,:→(]", re.sub(r"[*_`]", "", lm.group(1)))[0].strip()
+            if len(label.split()) >= 2 and title.startswith(label):
+                names[target].add(label)
+    return names
+
+
+def cross_hits(sentence: str, self_path: Path, names: dict[Path, set[str]],
+               reports: dict[Path, object]) -> list[tuple[str, Path]]:
+    """Labels for every other-document layer this spoken sentence points at."""
+    out: list[tuple[str, Path]] = []
+    for target, ns in names.items():
+        if target == self_path:
+            continue
+        for name in sorted(ns, key=len, reverse=True):
+            m = re.search(r"(?<![\w-])%s(?![\w-])" % re.escape(name), sentence)
+            if not m:
+                continue
+            i = m.start()
+            after = sentence[i + len(name): i + len(name) + CROSS_AFTER]
+            before = sentence[max(0, i - CROSS_BEFORE): i]
+            for pat, kind in CROSS_LAYERS:
+                # BEFORE the name only counts in the "the sources IN X" shape:
+                # the noun, then at most a short preposition phrase, then the
+                # name. Without this, "...sets out the sources, and Playing
+                # Without the Puck for loose-puck races" charged the trailer to
+                # the SECOND document named.
+                pre = pat.search(before)
+                pre_ok = bool(pre) and re.fullmatch(
+                    r"\s*(?:in|of|from|for|behind|at the foot of|at the end of)?\s*(?:the\s+)?",
+                    before[pre.end():])
+                if not (pat.search(after) or pre_ok):
+                    continue
+                tgt = target.stem
+                if kind == "notes":
+                    label = f"CROSS-DOC: {tgt}'s Notes on verification (never voiced)"
+                elif kind == "sources":
+                    label = f"CROSS-DOC: {tgt}'s Sources trailer (voiced in no episode)"
+                else:
+                    rep = reports.get(target)
+                    if rep is None or not rep.tables_as_pointer:
+                        label = (f"CROSS-DOC: a table in {tgt} -- every table there is "
+                                 f"voiced, so only a listener of THIS episode misses it")
+                    elif rep.tables_as_prose:
+                        label = (f"CROSS-DOC: a table in {tgt} -- ⚠️ MIXED: "
+                                 f"{rep.tables_as_prose} voiced, "
+                                 f"{len(rep.tables_as_pointer)} dropped in its own audio")
+                    else:
+                        label = (f"CROSS-DOC: a table in {tgt} -- DROPPED from its own "
+                                 f"audio too ({len(rep.tables_as_pointer)} table(s))")
+                out.append((label, target))
+                break
+            break                       # one name per target is enough
+    return out
 
 
 def render(path: Path, root: Path):
@@ -190,7 +346,33 @@ def self_test() -> int:
         print("FAIL: a Sources-trailer pointer is classified as a table reference and "
               "would be SUPPRESSED in any document whose tables read as prose")
 
-    print(f"\n{len(detected) + 2} assertions, {failures} failure(s)")
+    # Cross-document pass: the two shapes it exists to catch, and the three
+    # false positives its first version produced on the real corpus.
+    from types import SimpleNamespace
+    other, me = Path("/x/time_and_space.md"), Path("/x/self.md")
+    names = {other: {"Time and Space"}, me: {"Self Doc"}}
+    dropped = {other: SimpleNamespace(tables_as_pointer=["line 9"], tables_as_prose=0)}
+    cross_cases = [
+        ("Time and Space carries the two coaching sources behind it.", dropped,
+         "Sources trailer", "a pointer at another document's trailer"),
+        ("Time and Space carries the full table.", dropped,
+         "DROPPED from its own", "a table the target's own audio drops"),
+        ("Deeper: Body Contact sets out the sources, and Time and Space for races.",
+         dropped, None, "a noun BEFORE the name belonging to an earlier clause"),
+        ("The two editions differ on time and space tables.", dropped, None,
+         "a lower-case ordinary phrase is not a document name"),
+        ("Self Doc carries the sources.", dropped, None,
+         "a document pointing at its own trailer is the original pass's job"),
+    ]
+    for sentence, reps, want, why in cross_cases:
+        got = cross_hits(sentence, me, names, reps)
+        ok = (not got) if want is None else any(want in lab for lab, _ in got)
+        if not ok:
+            failures += 1
+            print(f"FAIL (cross-doc): {why}\n  sentence: {sentence!r}\n"
+                  f"  expected: {want!r}\n  got:      {got!r}")
+
+    print(f"\n{len(detected) + 2 + len(cross_cases)} assertions, {failures} failure(s)")
     return 1 if failures else 0
 
 
@@ -238,18 +420,35 @@ def main(argv: list[str] | None = None) -> int:
         print("check_pointers: no documents found", file=sys.stderr)
         return 2
 
-    total = 0
-    by_target: Counter[str] = Counter()
-    suppressed: Counter[str] = Counter()
-    for path in docs:
+    # The cross-document pass resolves a "table in X" pointer against X's own
+    # render, so every content/ document is rendered, not only the ones named.
+    corpus = sorted((root / "content").rglob("*.md"))
+    rendered: dict[Path, tuple[str, object]] = {}
+    for path in sorted(set(corpus) | set(docs)):
         try:
-            spoken, report = render(path, root)
+            rendered[path] = render(path, root)
         except Exception as exc:                      # pragma: no cover
             print(f"check_pointers: {path} failed to render: {exc}", file=sys.stderr)
             return 2
+    names = _doc_names(corpus)
+    reports = {p: rep for p, (_, rep) in rendered.items()}
+
+    total = 0
+    cross_total = 0
+    cross_by: Counter[str] = Counter()
+    cross_lines: list[str] = []
+    by_target: Counter[str] = Counter()
+    suppressed: Counter[str] = Counter()
+    for path in docs:
+        spoken, report = rendered[path]
         hits: list[tuple[str, str]] = []
+        doc_cross: list[tuple[str, str]] = []
         for sentence in RE_SENTENCE.findall(spoken):
             sentence = " ".join(sentence.split())
+            for label, _target in cross_hits(sentence, path, names, reports):
+                doc_cross.append((label, sentence))
+                cross_by[label.split(" -- ")[0].split("'s ")[-1] if "'s " in label
+                         else "a table in another document"] += 1
             for pattern, label in _COMPILED:
                 if pattern.search(sentence):
                     # A "the table above" reference only dangles if this
@@ -286,6 +485,12 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  -> {label}")
                 print(f"     {sentence[:190]}")
             total += len(hits)
+        if doc_cross:
+            cross_lines.append(f"\n{_display(path, root)}")
+            for label, sentence in doc_cross:
+                cross_lines.append(f"  => {label}")
+                cross_lines.append(f"     {sentence[:220]}")
+            cross_total += len(doc_cross)
 
     print()
     print("=" * 70)
@@ -303,6 +508,23 @@ def main(argv: list[str] | None = None) -> int:
     if suppressed:
         print(f"  ({sum(suppressed.values())} table reference(s) suppressed: their "
               "document's tables all read as prose, so the listener heard them.)")
+    # ⚠️ Printed AFTER the original summary, in its own section with its own
+    # count, so the first summary line and every figure recorded before
+    # 23 October 2026 keep their meaning.
+    print()
+    print("=" * 70)
+    print("CROSS-DOCUMENT POINTERS -- a spoken sentence naming ANOTHER document's")
+    print("unvoiced layer. Not included in the count above.")
+    for line in cross_lines:
+        print(line)
+    print()
+    print(f"{cross_total} spoken sentence-pointers at another document's layer.")
+    for label, count in cross_by.most_common():
+        print(f"  {count:4}  {label}")
+    print("  A table pointer whose target voices every table is the mildest kind; a")
+    print("  Sources pointer reaches nothing in any episode. The window is "
+          f"{CROSS_AFTER} chars after")
+    print(f"  the name and {CROSS_BEFORE} before, so 'sources' in an unrelated clause can still hit.")
     print()
     print("⚠️  WORKLIST, NOT A GATE. Most hits are wording nits -- the substance is")
     print("    usually voiced inline and only the pointer dangles. A pointer aimed at")

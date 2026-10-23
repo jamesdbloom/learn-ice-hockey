@@ -394,29 +394,32 @@ const icingTheRaceAndTheDot = {
   // "Hybrid icing will be used in adult classification games" (usah.txt), Hockey Canada
   // 6.7(e) and 7.2 (hc.txt), CARHA 65(a) and its Situation ("Referee shall
   // immediately call") (carha_2026.txt).
-  // ⚠️ POSTURE ORDER IS LOAD-BEARING (49f1dc6): the explanation is its own sentence between
-  // "never duck." and the instruction, and the instruction ends on the shoulder negation.
+  // ⚠️ POSTURE ORDER IS LOAD-BEARING (49f1dc6): the prohibitions end in their own sentence
+  // ("never duck."), and the instruction after them ends on the shoulder negation.
   // Not WALL_POSTURE_SHORT: this picture IS two players skating hard at the end boards, so the
   // owner's 23 September ruling puts the full posture in it. No // line inside the string run.
+  // ⚠️ SHORTENED AGAIN 23 October 2026 (voiced 1,811 chars). CUT: "not who reached the dots
+  // first" (rules_primer.md voices it in the chunk after the caption), the PWHL's rule number,
+  // the turned-back / tucked-chin explanation sentence, and the "how you arrive is the part that hurts"
+  // lead-in, reduced to its scope ("in any league, checking or not"). Every limb listed as KEPT
+  // above is still here. With the explanation gone, "never duck." is followed directly by the
+  // instruction, the same join WALL_POSTURE_SHORT uses; the shoulder negation still ends it.
   caption:
     'Hybrid icing: the end-zone faceoff dot is a deadline, not a finish line. Both skaters reach ' +
-    'the dot line together, and the box marks the near dot as the cut-off for the decision, not a ' +
-    'place a draw is taken. Under NHL and IIHF Rule 81.1 the linesperson decides by the instant the ' +
-    'first skate reaches the dots, and what decides it is who would touch the puck first, not who ' +
-    'reached the dots first. So being level at the box settles nothing: be clearly on course to ' +
-    'reach the puck first, because a race too close to call by then is icing. Your goalie stays put on ' +
-    'purpose: under those books and the PWHL’s (83.3), skating toward the puck waves the icing off. ⚠️ This is not everybody’s icing. USA Hockey ' +
+    'the dots level; the box marks the near dot only as the cut-off for the decision. Under NHL ' +
+    'and IIHF Rule 81.1 the linesperson decides by the time the first skate reaches the dots, on ' +
+    'who would touch the puck first, so being level settles nothing: be clearly on course to reach ' +
+    'the puck first, because a race still too close to call at the dots is icing. Your ' +
+    'goalie stays put on purpose: under those books and the PWHL’s, skating toward the puck waves ' +
+    'the icing off. ⚠️ This is not everybody’s icing. USA Hockey ' +
     '(outside adult sled hockey) and CARHA play automatic icing, so there is no race, and Hockey ' +
     'Canada runs hybrid only in U18AAA, Junior and, at the Member’s option, Senior. Ask which your ' +
     'league plays. The race is not a licence to hit: unnecessary contact with a player playing ' +
     'the puck on an obvious icing is boarding if they hit the boards (NHL, IIHF and PWHL 41.1, ' +
     'Hockey Canada 7.2), and USA Hockey penalises any unnecessary contact on an obvious icing ' +
-    '(624(d)). And whoever wins it, how you arrive ' +
-    'at the wall is the part that hurts people, in every league, checking or not. Never turn your ' +
-    'back to anyone coming at you, and never duck. A turned back makes it a hit from behind, which ' +
-    'you can neither see nor brace for, and a tucked chin straightens the cervical spine. Get your ' +
-    'skates parallel to the wall instead, take it on your forearm and hip, head up and chin off ' +
-    'your chest' +
+    '(624(d)). Whoever wins, in any league, checking or not, never turn your back to anyone coming ' +
+    'at you, and never duck. Get your skates parallel to the wall instead, take it on your ' +
+    'forearm and hip, head up and chin off your chest' +
     SHOULDER_TAIL,
 
   describe:

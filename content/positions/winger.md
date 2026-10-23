@@ -272,7 +272,7 @@ Key: NHL tracking at 5-on-5 put a carry-in at about twice the value of a dump-in
 - **Soft area dump** — a gentle chip into a specific empty area, aimed to *stop* rather than carom. Used when you'll win the race; a hard dump just gives it to their defenceman.
 - **Chip past the defenceman** — flick it off the boards past a defender who is stepping up or standing up at the line, and skate onto it yourself. This is a *possession* play, not a surrender, and it's the best option against a defenceman who is stepping up.
 - **Cross-corner / north-south dump** — into the far corner away from where their D is retreating, forcing the longest possible retrieval skate.
-- **Flip / area dump over a trap** — lift the puck high so it travels *over* a congested neutral zone and lands in open space behind their defence. This is the answer when a trap has closed every route along the ice. From your own side of the centre red line, land it past the defence but **before the goal line**, or you have iced it — past the red line it is not icing however far it travels (see *Icing* below).
+- **Flip / area dump over a trap** — lift the puck high so it travels *over* a congested neutral zone and lands in open space behind their defence. This is the answer when a trap has closed every route along the ice. From your own side of the centre red line, land it past the defence but **before the goal line**, or you have iced it — past the red line it is not icing however far it travels, unless your league splits the ice at the blue lines, as some CARHA leagues do (see *Icing* below).
 
 ![](diagram:dump-hard-rim)
 

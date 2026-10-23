@@ -41,6 +41,32 @@ THE FOUR SHAPES
    is made"* -- the timing was gone and the fragment read as the whole instruction.
 4. Interior case, e.g. `Game Misconduct penalty` -> `Game Misconduct Penalty`.
 
+5. ⚠️ **Word-boundary drift** (added 23 October 2026) -- a space, or a hyphen,
+   that the doc adds or drops inside a word: "website" for "web site",
+   "off-side" for "offside", "player safety" for "player-safety". Shapes 1-4
+   cannot see it by construction, because the match below is on alphanumerics
+   only and all of those normalise to the same string. It is reported in its
+   OWN section, "WORD-BOUNDARY DRIFT", with its own count line, and is NOT
+   included in clean/flagged/notfound -- a fragment can be "clean" and listed
+   there -- so every figure recorded before that date still means what it
+   meant, and the summary is still the last line. Labels:
+     JOINED       the doc runs together words the source separates
+     SPLIT        the doc separates what the source prints as one word
+     HYPHENATION  a hyphen in one, a space in the other
+     JOINED?      the source's separator is a hyphen-then-whitespace (a print
+                  line-wrap: "re-" at a line end then "cklessly",
+                  or "atta- cking" mid-line) or a bare line
+                  break -- almost always an EXTRACTION ARTEFACT, not drift.
+                  On the first corpus run (23 October 2026) nearly every
+                  hit was this, all in the IIHF extractions. Read the PDF
+                  before touching the doc. Run the tool for the figure.
+   Apostrophes, quote marks, `*`, soft hyphens and the brackets of a disclosed
+   insertion are never boundaries; an en dash between letters counts as a
+   hyphen (pwhl_rules.txt prints "face–off" with an en dash). A hit is reported only if NO
+   exact-letter occurrence in ANY source segments the way the doc does, so a
+   second printing of the phrase elsewhere suppresses it -- which is also how
+   it can miss one (see below).
+
 HOW IT WORKS, AND WHY IT IS BUILT THIS WAY
 ------------------------------------------
 It normalises both the quotation and every `sources/*.txt` to alphanumerics only,
@@ -131,6 +157,24 @@ WHAT IT CANNOT SEE -- and this list is the honest half
   **clean**. It does not check the quotation against the book the prose names.
 - **A one-word change that lands on a phrase occurring elsewhere** matches the
   other occurrence silently.
+- ⚠️ **A page header with LETTERS in it is NOT defeated by the alphanumeric
+  match**, despite what "HOW IT WORKS" says about splices. `hc.txt` breaks Rule
+  6.2(a) mid-sentence with "HOCKEYCANADA.CA ... HOCKEY CANADA PLAYING RULES
+  2026-2028 67 SECTION 6 -- GAME FLOW", so a verbatim Hockey Canada quotation
+  across that break cannot match hc.txt at all and falls through to the
+  closest OTHER book. Found 23 October 2026 by the word-boundary pass: the
+  quotation "moves off-side, makes physical contact with an opponent or
+  encroaches on the face-off circle..." (winger.md, switching_positions.md) is
+  Hockey Canada's wording exactly, matched only CARHA 57(a) (which prints
+  "offside" and a comma), and scored a SPLIT that is not drift. The case pass
+  scored it clean against the wrong book for the same reason. Before believing
+  any hit, check whether the book the prose names has a page break there.
+- ⚠️ **The word-boundary pass inherits that blind spot.** If any source prints
+  the phrase the way the doc does -- another book, a table of contents -- the
+  hit is suppressed, even where the book the prose names prints it differently.
+  It also compares only fragments the alphanumeric match FOUND: a NOTFOUND
+  fragment gets no boundary check, and interior punctuation other than a hyphen
+  (a dropped comma, a swapped semicolon) is still invisible to every pass here.
 - ⚠️ **It can INVENT drift, not just miss it, when two different rulebooks share
   an opening clause.** A quotation correctly attributed to one book's Casebook
   can match the CLOSEST occurrence in an entirely different book's rule text
@@ -243,7 +287,106 @@ def clean_quote(q):
 
 def letters(s): return [c for c in s if c.isalpha()]
 
+# ---------------------------------------------------------------------------
+# WORD-BOUNDARY PASS (added 23 October 2026, plan row "no pass that keeps
+# whitespace"). The match above is on alphanumerics only, so "website" and
+# "web site" normalise to the same string and the comparison above can never
+# see the difference. This pass re-walks the SAME alnum-to-original mapping on
+# both sides and classifies the gap before every alphanumeric character.
+# ---------------------------------------------------------------------------
+_HYPHENS = "-\u2010\u2011\u2013"    # hyphen-minus, hyphen, non-breaking hyphen,
+                                     # and EN DASH: pwhl_rules.txt prints "face\u2013off"
+                                     # with one, so without it every PWHL "face-off"
+                                     # quotation scored a false HYPHENATION hit
+_IGNORABLE = "'\"\u2018\u2019\u201c\u201d*\u00ad[]"  # apostrophes, quote marks,
+                                     # markdown emphasis, soft hyphen, and the
+                                     # brackets of a disclosed insertion
+                                     # ("prevent[ed]"): none is a word boundary
+
+def _gap_kind(gap):
+    """NONE (no boundary), HYPHEN (hyphen, no whitespace), HYPHEN_EOL (a hyphen
+    followed by a line break -- in an extracted PDF this is usually where the
+    print broke the line, not a hyphen the book means), or BREAK (whitespace or
+    any other separating punctuation)."""
+    g = "".join(c for c in gap if c not in _IGNORABLE)
+    if not g:
+        return "NONE"
+    has_hy = any(c in _HYPHENS for c in g)
+    # A hyphen with whitespace AFTER it and none before it is the print's
+    # line-wrap hyphen: iihf_rules.txt carries "re-\ncklessly" and also
+    # "atta- cking" mid-line, where the extraction joined two lines with a space.
+    if re.fullmatch("[%s]\\s+" % re.escape(_HYPHENS), g):
+        return "HYPHEN_EOL"
+    if has_hy and not any(c.isspace() for c in g):
+        return "HYPHEN"
+    return "BREAK"
+
+def _gaps(raw, idx):
+    """Gap kinds before each alnum position after the first, plus the raw gaps."""
+    kinds, raws = [], []
+    for a, b in zip(idx, idx[1:]):
+        gap = raw[a + 1:b] if b > a else ""
+        kinds.append(_gap_kind(gap)); raws.append(gap)
+    return kinds, raws
+
+def boundary_diffs(doc_frag, src_raw, src_idx, k, length):
+    """Compare word segmentation of a matched quotation against its source span.
+
+    Returns a list of (label, doc_context, src_context). Empty means the two
+    segment identically (hyphen-versus-space counts as a difference)."""
+    _, didx = norm_map(doc_frag)
+    if len(didx) != length:
+        return []
+    dk, _ = _gaps(doc_frag, didx)
+    sk, sraw = _gaps(src_raw, src_idx[k:k + length])
+    out = []
+    for i, (d, s) in enumerate(zip(dk, sk)):
+        if d == s:
+            continue
+        if d == "HYPHEN" and s == "HYPHEN_EOL":
+            continue                      # same hyphen; the source just wrapped there
+        if d == "NONE" and s == "HYPHEN_EOL":
+            label = "JOINED? (source hyphen then whitespace -- usually a print line-wrap, check the PDF)"
+        elif d == "NONE" and s == "BREAK" and "\n" in sraw[i] and not sraw[i].strip(" \n"):
+            label = "JOINED? (source gap is a line break -- may be an extraction split)"
+        elif d == "NONE":
+            label = "JOINED (doc runs together words the source separates)"
+        elif s == "NONE":
+            label = "SPLIT (doc separates what the source prints as one word)"
+        else:
+            label = "HYPHENATION (hyphen in one, space in the other)"
+        lo, hi = max(0, i - 24), min(length - 1, i + 25)
+        da, db = didx[lo], didx[hi]
+        sa, sb = src_idx[k + lo], src_idx[k + hi]
+        out.append((label, " ".join(doc_frag[da:db + 1].split()),
+                    " ".join(src_raw[sa:sb + 1].split())))
+    return out
+
+def best_boundary(nf, f2):
+    """Among EVERY exact-letter occurrence in every source, the one whose word
+    segmentation differs least from the doc. A hit is reported only if no
+    occurrence anywhere segments the way the doc does -- so a table-of-contents
+    line or another book printing "web site" cannot manufacture a hit against a
+    body that prints "website"."""
+    best = None
+    for name, (raw, n, ix) in sources.items():
+        start = 0
+        while True:
+            k = n.find(nf, start)
+            if k < 0: break
+            start = k + 1
+            s, e = ix[k], ix[k + len(nf) - 1]
+            if letters(f2) != letters(raw[s:e+1]):
+                continue                  # case drift belongs to the pass above
+            diffs = boundary_diffs(f2, raw, ix, k, len(nf))
+            if best is None or len(diffs) < len(best[1]):
+                best = (name, diffs)
+            if not diffs:
+                return None
+    return best
+
 flagged, missing, clean = [], [], 0
+boundary = []
 for ln, q in quotes:
     bracketed = bool(re.match(r'^\*{0,2}\[[a-zA-Z]\]', q))
     cq = clean_quote(q)
@@ -290,6 +433,9 @@ for ln, q in quotes:
             flagged.append((ln, f2, name, o2, tail, flags))
         else:
             clean += 1
+        bb = best_boundary(nf, f2)
+        if bb and bb[1]:
+            boundary.append((ln, bb[0], bb[1]))
 
 print("#" * 20, "NOT FOUND IN ANY LOCAL SOURCE", "#" * 20)
 for ln, f in missing:
@@ -301,5 +447,22 @@ for ln, f2, name, o2, tail, flags in flagged:
     print(f"   doc: {f2[:220]}")
     print(f"   src: {o2[:220]} | next {tail.replace(chr(10),' ')!r}")
     print(f"   >>> {'; '.join(flags)}")
+print()
+# ⚠️ Kept as a SEPARATE section with its own count, printed BEFORE the summary
+# line, so the summary stays the last line in its old format: callers that
+# `tail -1` this tool, and every figure recorded before 23 October 2026, still
+# mean what they meant. A fragment can be both "clean" above and listed here.
+print("#" * 20, "WORD-BOUNDARY DRIFT (worklist; not counted in clean/flagged)", "#" * 20)
+for ln, name, diffs in boundary:
+    print(f"line {ln} [{name}]")
+    for label, dctx, sctx in diffs[:4]:
+        print(f"   {label}")
+        print(f"      doc: ...{dctx}...")
+        print(f"      src: ...{sctx}...")
+    if len(diffs) > 4:
+        print(f"   (+{len(diffs) - 4} more in this fragment)")
+nb = sum(len(d) for _, _, d in boundary)
+print(f"word-boundary: fragments={len(boundary)} boundaries={nb} "
+      f"(of which marked '?' as a likely extraction artefact={sum(1 for _, _, d in boundary for l, *_ in d if '?' in l)})")
 print()
 print(f"fragments: clean={clean} flagged={len(flagged)} notfound={len(missing)}")

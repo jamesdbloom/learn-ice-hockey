@@ -643,6 +643,12 @@ def _rule_number_opens_sentence(before: str, at_start: bool) -> bool:
             bare = word.group(1).replace(".", "").lower()
             if bare in _NON_TERMINAL_ABBREVIATIONS:
                 return False
+            if "." in word.group(1):
+                # A dotted initialism -- "U.S.", "U.K." -- is an abbreviation, as the
+                # comment on _NON_TERMINAL_ABBREVIATIONS has always said. Its bare
+                # form ("us") is a real word, so it cannot go in that set: the
+                # pronoun in "told us." must still end a sentence.
+                return False
             if len(bare) == 1 and not re.search(r"\b(?:sub-)?clause [a-z]\.$", core):
                 return False
     return True
@@ -3450,7 +3456,16 @@ def render_table(block: Block, report: DocReport) -> list[Token]:
     for row in rows:
         if not any(cell.strip() for cell in row):
             continue
+        # ⚠️ A ⚠️ in a cell maps to "" in SYMBOLS, so a voiced table row lost its
+        # escalation outright -- while render_paragraph, render_list and
+        # render_facts each say "Important." for the same glyph, and the site gives
+        # the cell an amber `.warn-inline` run. One row is one <p>, so it takes one
+        # "Important." at its head, exactly as a list item does.
+        important = any("⚠" in cell for cell in row)
         out.append(Token(SSML, "<p>"))
+        if important:
+            report.converted["callout.important"] += 1
+            out.extend(done("Important. "))
         first = True
         for column, cell in enumerate(row):
             cell_tokens = to_speech(cell, report.converted, at_start=first)
@@ -4911,6 +4926,8 @@ def self_test() -> int:
          "the NHL’s. Six hundred and one, clause a adds"),
         ("Rule 8.3(a). 8.3(b) is a major", False,
          "Rule eight point three, clause a. Eight point three, clause b is a major"),
+        ("the U.S. 601 says", False, "the U.S. six hundred and one says"),
+        ("told us. 48.1 says", False, "told us. Forty-eight point one says"),
     )
     for source, at_start, expected in capital_cases:
         actual = re.sub(r"\s+", " ", plain(to_speech(source, Counter(), at_start))).strip()
@@ -4924,6 +4941,9 @@ def self_test() -> int:
     for before, expected in (
         ("from the IIHF's. ", True), ("the NHL’s. ", True),
         ("clause d. ", True), ("see p. ", False),
+        # "U.S." is an abbreviation (the _NON_TERMINAL_ABBREVIATIONS comment's own
+        # example) but its bare form is the pronoun "us", which must still end one.
+        ("the U.S. ", False), ("in the U.K. ", False), ("told us. ", True),
     ):
         if _rule_number_opens_sentence(before, False) != expected:
             failures += 1
@@ -5123,7 +5143,23 @@ def self_test() -> int:
             failures += 1
             print(f"FAIL  apply_lexicon({source!r})\n  expected {expected!r}\n  actual   {actual!r}")
 
-    print(f"\n{len(cases) + len(closers) + 9 + 3 + len(label_cases) + len(lexicon_quote_cases) + len(ellipsis_cases) + len(tail_cases) + len(abbrev_cases) + len(capital_cases)} "
+    # ⚠️ A TABLE ROW CARRYING ⚠️ WAS VOICED WITH NO "Important." -- the glyph maps to
+    # "" and render_table had no escalation, unlike every other spoken unit. One
+    # marked row must carry it at its own head; an unmarked row must not.
+    table_report = DocReport(doc_id="self-test", source="self-test")
+    table_ssml = plain(render_table(Block("table", [
+        "| Foul | What gets called |",
+        "|---|---|",
+        "| **Hooking** | Using the stick to restrain. |",
+        "| **Kneeing** | Knee contact. ⚠️ **Keep knees in.** |",
+    ], 1), table_report))
+    table_ok = (table_ssml.count("Important.") == 1
+                and re.search(r"Important\.\s*Kneeing", table_ssml) is not None)
+    if not table_ok or table_report.converted["callout.important"] != 1:
+        failures += 1
+        print(f"FAIL  table row escalation: {table_ssml!r}")
+
+    print(f"\n{len(cases) + len(closers) + 9 + 3 + 1 + len(label_cases) + len(lexicon_quote_cases) + len(ellipsis_cases) + len(tail_cases) + len(abbrev_cases) + len(capital_cases)} "
           f"assertions, {failures} failures")
     return 1 if failures else 0
 

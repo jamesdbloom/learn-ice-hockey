@@ -236,7 +236,18 @@ const basicsExpectedInFeed =
     if (!dataGuids.has(g)) fail(`LIVE Basics guid ${g} is no longer in podcast-basics.json episodes (frozen list; a re-made episode keeps its guid)`);
   }
 }
-const BASICS_SEASON = structure.layers.length + 1;
+// ⚠️ FROZEN AT ITS LIVE VALUE (23 October 2026), not derived. It was restated as
+// `structure.layers.length + 1` — the same formula as src/lib/podcast-feed.ts — so a new
+// structure.json section would have moved all 13 live Basics episodes to a new
+// itunes:season and this check would have agreed by construction. 8 = the 7 sections
+// structure.json had when the Basics went live on 21 October 2026, plus one.
+const BASICS_SEASON = 8;
+if (structure.layers.length + 1 !== BASICS_SEASON) {
+  fail(
+    `structure.json has ${structure.layers.length} sections, but the live Basics season is itunes:season ${BASICS_SEASON} ` +
+      `(frozen when there were ${BASICS_SEASON - 1}); a section added or removed renumbers or collides with live episodes — decide it with the owner`,
+  );
+}
 const plannedIndex = new Map(basicsPlanned.map((t, i) => [t.slug, i]));
 for (const ep of basicsEpisodes) {
   if (!plannedIndex.has(ep.slug)) fail(`basics episode ${ep.slug} is not in \`planned\``);
@@ -357,6 +368,17 @@ for (const guid of LIVE_BASICS_GUIDS) {
   if (head.join('\n') !== LIVE_BASICS_GUIDS.join('\n')) {
     fail(`the Basics season does not open with the ${LIVE_BASICS_GUIDS.length} live guids in frozen order: ${head.join(', ')}`);
   }
+  // FROZEN NUMBERING (23 October 2026): every live Basics item keeps the itunes:season and
+  // itunes:episode it was published with — season BASICS_SEASON, episode = its 1-based
+  // position in LIVE_BASICS_GUIDS — checked per guid, not derived from structure.json.
+  const byGuid = new Map(items.map((it) => [it.guid, it]));
+  LIVE_BASICS_GUIDS.forEach((g, j) => {
+    const it = byGuid.get(g);
+    if (!it) return; // reported above
+    if (it.season !== BASICS_SEASON || it.episode !== j + 1) {
+      fail(`LIVE Basics ${g} renumbered: feed has season ${it.season} episode ${it.episode}, frozen season ${BASICS_SEASON} episode ${j + 1}`);
+    }
+  });
 }
 // The Basics season: last, its own season number, in planned order.
 {

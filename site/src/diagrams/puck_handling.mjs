@@ -427,11 +427,6 @@ const wherethePuckIs = {
   half: true,
   width: 900,
 
-  caption:
-    'A loose puck inside the ' +
-    'shaded crease paint beside your goalie, with you standing outside it. In five of the six ' +
-    'books the test is not where you are — it is where the puck is. ' +
-    'A skater who falls on, holds or covers the puck inside their own crease concedes a penalty ' +
     // ⚠️⚠️ THE BOOK COUNT, AND WHY IT IS NOW SAFE IN BOTH HOSTS (re-checked 22 October 2026).
     // This comment used to say the caption carried NO count, because puck_handling.md did not
     // name the PWHL and counted five while center.md counted six. Both hosts now name all six
@@ -478,15 +473,6 @@ const wherethePuckIs = {
     // QUOTATION was verified and the CITATION was not, which is the same defect as
     // carrying a figure out of its owner. The owner's
     // own facts block already carried the distinction; this caption had dropped it.
-    'shot in every book, CARHA at its own Rule 58(c) — though USA Hockey Rule 614(b) reads ' +
-    '"a penalty shot/optional minor penalty shall be assessed", so that book alone offers a lesser ' +
-    'option, and its Rule 406(a) puts that election with the non-offending team rather than with ' +
-    'the referee or with you. Every book exempts the goalie, whose ' +
-    'job that is. In those five books what decides it is the puck\'s location at the instant it is ' +
-    'covered, so the two cases run opposite to the way most players guess: standing inside the ' +
-    'crease and covering a puck that was outside it is a minor penalty; standing ' +
-    'outside the crease, exactly as drawn here, and covering a puck that was inside it is ' +
-    'the penalty shot. ' +
     // ⚠️ HOCKEY CANADA ADDS A WHERE-YOU-ARE TEST (ruling 17 Oct 2026, conservative reading).
     // 10.2(a)(v) gives the shot "when the infraction occurs inside the offending team's goal
     // crease" (hc.txt:7642-7646) and 10.2(a)(vi) the goal, in the same words, with the
@@ -498,16 +484,6 @@ const wherethePuckIs = {
     // can be read that way. 22 Oct 2026: "Hockey Canada also counts where you are" stated the
     // reading as the rule; now scoped as the host does ("can be read to reach you ... play to the
     // strict answer", puck_handling.md; center.md facts "possibly with you in it").
-    'Hockey Canada\'s wording can also be read to count where you are, so under that book treat ' +
-    'covering from inside your crease as the penalty shot too, or the goal with your net empty. ' +
-    'The crease is a ' +
-    'volume and not a patch of ice — every book runs it from the ice up to the top of the goal ' +
-    'frame — so a puck plucked out of the air over this paint, below the crossbar, is a puck in ' +
-    'the crease, and a plan view has no height in it to draw that with. ' +
-    'The goal ' +
-    'crease is genuinely painted on the ice, unlike the tinted regions elsewhere in this corpus. ' +
-    'You are drawn as a defenceman, but the rule reaches ' +
-    'any skater. ' +
     // ⚠️ W33: THE GLYPH MOVED ONTO THE INSTRUCTION, AND THE TWO DRAWING NOTES MOVED ABOVE IT.
     // `captionNodes` in remark-corpus.mjs splits a caption at its FIRST ⚠ and makes the rest
     // one amber `.warn-inline` run; markdown is NOT parsed in a caption, so `**…**` would
@@ -516,11 +492,27 @@ const wherethePuckIs = {
     // instruction — sat in muted grey three-quarters of the way through. Now the instruction
     // opens the amber run and the goaltender-pulled warning stays inside it. Speech is
     // unchanged: md_to_speech marks a caption "Important." once if it holds any ⚠.
-    '⚠️ The instruction is the same wherever you are standing: do not keep hold of the puck. Knock it ' +
-    'straight down at your feet in one ' +
-    'continuous motion and play it with your skate or your blade. ' +
-    'And your goalie is on the ice in this picture, deliberately. With the goalie pulled for an ' +
-    'extra attacker the price is worse rather than the same.',
+  // ⚠️ SHORTENED 23 October 2026 (voiced 2,019 chars in center.md). The verification notes
+  // that sat inside the old string run are kept above, unchanged. CUT, and where each limb is
+  // still voiced beside the marker: CARHA 58(c) by number, USA Hockey 614(b)'s quotation and
+  // 406(a) (puck_handling.md the chunk after; center.md the chunk after, "the other team
+  // chooses a penalty shot or a minor") -- the lesser option is kept as a short parenthesis;
+  // the crease as a volume (both hosts voice it in the chunk before); the "net empty" goal
+  // (both hosts, the chunk after) -- kept as "it can be a goal awarded against you" ("can":
+  // USA Hockey 614(b) awards it only where the cover prevented a goal, puck_handling.md facts).
+  caption:
+    'A loose puck inside the shaded crease beside your goalie, with you standing outside it. In ' +
+    'five of the six books it is where the puck is that decides, not where you are, so the two ' +
+    'cases run opposite to the way most players guess: covering a puck that is inside the crease ' +
+    'from outside it, as drawn here, is a penalty shot (under USA Hockey the other team may take a ' +
+    'minor instead), and covering one just outside while you stand inside is a minor. Hockey ' +
+    'Canada\'s wording can also be read to count where you are, so under that book treat a cover ' +
+    'from inside your crease as the shot too. Every book exempts the goalie. You are drawn as a ' +
+    'defenceman, but the rule reaches any skater. ' +
+    '⚠️ Wherever you are standing, do not keep hold of the puck: knock it straight down at your ' +
+    'feet in one continuous motion and play it with your skate or your blade. Your goalie is on ' +
+    'the ice in this picture deliberately; with the goalie pulled for an extra attacker it can be ' +
+    'a goal awarded against you.',
 
   describe:
     'Your own defending end, your net at the right. The goal crease is drawn as the rink itself ' +

@@ -15,11 +15,10 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 (none)
 
-
 ## Captions and small rules notes (23 Oct)
 
 - **Optional: rush-trailer caption's middle sentence runs about 50 words aloud; it could split at "the first wave gets the net". Optional hardening for defender-two-on-one: "a slide that takes the carrier down can be called as tripping".**
-- **Icing "from behind the centre red line" with no CARHA blue-line note** (zone_entries "How" bullet; winger's flip bullet). CARHA 65 (carha.txt ~:3062) lets leagues divide the ice at the blue lines; rink_map :188 already says so. Decide per page whether the one-line note belongs there (low; found by the SG39 zone_entries agent). ALSO winger.md :275 says flatly "past the red line it is not icing however far it travels", while the same page at :707 carries the CARHA blue-line leagues (65(b)). A puck shot from past the red line is also past the shooter's own blue line, so the claim looks true under both divisions. The open question is only whether "from your own side of the centre red line" needs the blue-line variant. Check against 65(a)–(c) before acting.
+- **SG40 icing note done in winger :275 and zone_entries :766 (reviewed, SG40). Still to sweep:** special_teams.md, defender.md and the remaining pages for a flat red-line icing claim without the CARHA blue-line note. CARHA 65 never says WHICH team's blue line, so keep "ask your league".
 
 ## New page: Getting Better on Your Own
 
@@ -75,8 +74,6 @@ can ship once it has been reviewed.
 - **Spoken "Important." runs:**
   - body_contact was measured on 23 Oct and has only one run of four or more: KT8–11. These are four distinct hazards and none is voiced next door, so the run stays unless the owner rewords it.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
-- **Spoken units over 2,500 characters:** 12 corpus-wide (3 in forechecking_systems; most others are
-  captions).
 - **faceoffs :721 (optional):** if the PWHL is added for stick toe in the white, cite 78.7(v).
 - **Style B body_contact script line 201 lost its "If"** (`podcast_style_b/` detailed .md/.txt and the script): "You are outnumbered, or tangled…" states as fact what the page gives as a condition. Fix it in the next Detailed remake: "If you are outnumbered, or tangled with someone just as stuck, or losing it here would give them a chance at your net, pin the puck…". The published audio carries it, but it is tactical wording, not a rule.
 - **Table rows lose their spoken escalation:** md_to_speech voices table rows without "Important." even when a cell has a ⚠️. Example: the body_contact :1672-1677 "What actually gets called" rows. Check whether each row's hazard is voiced with a marker in prose nearby.
@@ -85,6 +82,7 @@ can ship once it has been reviewed.
 
 ## Diagrams and site
 
+- **Longest voiced captions after SG40:** the four longest were cut, to 966, ~1,220, ~1,230 and ~1,390. Each remaining limb is safety or rule content that no host voices next to the caption. Next longest: run a fresh render.
 - **Captions over 800 characters:** about 82 of 204 after SG27–SG29 (13 of the longest cut). Next longest are around 1,900: entry-wide, screen-the-goalie-sightline, the-puck-decides-not-you, cross-ice-in-your-own-end, forecheck-2-3-lock. Check how 🇬🇧 renders on Windows (often "GB").
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
 - **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
@@ -96,7 +94,7 @@ can ship once it has been reviewed.
 
 ## Podcasts
 
-- **Feed guard gap:** adding a new structure.json *section* would renumber the Basics season (BASICS_SEASON = layers.length + 1) with no guard.
+- **Feed guard follow-on (low):** SG40 froze the Basics season (8) and blocks a section-count change. Still unguarded: reordering sections, or moving a document between sections, would renumber the per-document seasons and episodes, and feed titles are not frozen. Only guids and dates are. Decide whether to freeze `itunes:season`/`itunes:episode` for live items.
 
 - **"Severe neck pain" in NotebookLM 07 (UK Rules) and 12 (Goaltender):** the page and CRT6 say to treat any neck pain as an ambulance call. The word could not be cut cleanly and the episodes shipped (batch 6, 23 Oct). Owner's call whether to regenerate.
 
@@ -107,8 +105,12 @@ can ship once it has been reviewed.
 
 ## Checkers (scripts/ — change between waves, never during one)
 
-- **check_quote_drift:** no pass that keeps whitespace ("website" vs "web site" scores clean).
-- **check_pointers:** cannot see a pointer at another document's unvoiced layer.
+- **Cross-document pointers (check_pointers, SG40; read each, never sweep):** 18 hits, 12 to another page's Sources trailer and 6 to a table. Most Sources hits are the disclosure convention working as intended. Strongest candidates:
+  - getting_started → defensive_zone_coverage "Comparison Table": that page drops one table;
+  - faceoffs → rules_primer "lookup table";
+  - faceoffs → body_contact "league-by-league table".
+- **check_quote_drift header splices (low):** a quotation whose source sentence is split by a page header containing letters matches the wrong book. The HC 6.2(a) quotation in winger and switching_positions was checked by hand against hc.txt:4587-4594 and is verbatim, so only the tool was wrong. A survey for other quotations that span a header is still owed.
+
 
 ## Sources
 

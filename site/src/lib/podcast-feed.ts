@@ -195,6 +195,14 @@ export const LIVE_BASICS_SLUGS: readonly string[] = [
 ];
 
 function assertBasicsFrozen(): void {
+  if (structure.layers.length + 1 !== BASICS_SEASON) {
+    throw new Error(
+      `podcast-feed: structure.json has ${structure.layers.length} sections, but the live Basics season is ` +
+        `itunes:season ${BASICS_SEASON} (frozen when there were ${BASICS_SEASON - 1}). Adding or removing a section ` +
+        `would renumber or collide with the 13 live Basics episodes. Decide the new section's season and the ` +
+        `Basics' explicitly with the owner; do not let the build renumber live episodes.`,
+    );
+  }
   const head = BASICS_PLANNED.slice(0, LIVE_BASICS_SLUGS.length).map((t) => t.slug);
   if (head.join('\n') !== LIVE_BASICS_SLUGS.join('\n')) {
     throw new Error(
@@ -228,8 +236,21 @@ function basicsFeedEpisodes(): BasicsEpisode[] {
   return out;
 }
 
-/** The Basics season number: one after the last structure.json section. */
-export const BASICS_SEASON = structure.layers.length + 1;
+/**
+ * ⚠️ THE BASICS SEASON NUMBER IS FROZEN AT ITS LIVE VALUE (23 October 2026).
+ *
+ * It was `structure.layers.length + 1`, so adding a section to structure.json would have
+ * silently moved all 13 live Basics episodes to a new itunes:season (and the checker
+ * restated the same formula, so it agreed by construction). Subscribers' apps group by
+ * season, so that is a visible renumbering of live episodes with no sign-off.
+ *
+ * It is 8 because structure.json had 7 sections when the Basics went live on 21 October
+ * 2026. `assertBasicsFrozen()` fails the build if structure.json no longer has exactly
+ * BASICS_SEASON − 1 sections: a new section would either collide with season 8 or sit
+ * AFTER the Basics, against decision (5). Either way it is an owner decision, not a
+ * build side effect. The same value is frozen in site/scripts/check-podcast-guids.mjs.
+ */
+export const BASICS_SEASON = 8;
 
 /**
  * ⚠️ pubDate IS SYNTHETIC, FIXED, AND ENCODES THE ORDER. NEVER DERIVE IT FROM THE BUILD.

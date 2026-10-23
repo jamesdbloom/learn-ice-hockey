@@ -979,43 +979,52 @@ const forecheckRolesRotate = {
   half: true,
   width: 900,
 
+  // ⚠️ SHORTENED 23 October 2026 (voiced 1,856 chars). CUT: the step-by-step rotation narrative,
+  // which forechecking_systems.md voices in the chunk before ("First... Second... Third") and
+  // rink_map.md in the chunk before ("Nobody swaps positions; they swap jobs"), reduced to one
+  // sentence keyed to the glyphs. KEPT IN FULL SENSE, because neither host voices it beside the
+  // marker: the onus/back limb and the body-checking scope (USA Hockey 604(a)/(b), Hockey Canada
+  // 7.3), now without rule numbers -- the sibling forecheck captions keep the cited form.
+  // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs a forward to close on a
+  // carrier picking a puck up in his own corner, which is the same exposure forecheck-212's
+  // "goes hard at the puck carrier" creates, so it carries the same short scope sentence in
+  // the same settled words. GLYPH LAST: remark-corpus.mjs captionNodes() promotes from the
+  // first warning glyph to the END with no closing delimiter, so a glyph anywhere but last
+  // ambers the tactical prose after it.
+  // Rule text checked against sources/ this session, not carried in:
+  // USAH 604(a) (sources/usah.txt:3555) "Body checking is prohibited in the 12 & under youth
+  // age classifications and below, all Girls'/Women's age classifications and all non-check
+  // Adult classifications"; HC 7.3 (sources/hc.txt:6005) "This rule applies only in divisions
+  // of U13 and below, in female hockey, and any other divisions approved by a Member of
+  // Hockey Canada".
+  // USAH 604(b) (sources/usah.txt:3577), read this session: "Any time a team from a Competitive
+  // Contact category (see sub-section (a) above) plays a team from a Body Checking category, body
+  // checking shall be prohibited under this rule." 604's Note 2 (:3546) names the two categories --
+  // Competitive Contact is where checking is prohibited, Body Checking where a legal check is
+  // permissible -- and (a) closes "These levels would be considered the Competitive Contact
+  // Category of play" (:3558). That pairing is what makes "any time a checking team plays a
+  // non-checking one" the whole of (b) rather than a narrowing of it. WHY IT IS IN THE CAPTION AT
+  // ALL: (a) alone is an enumeration of DIVISIONS, and a reader in a checking division finds
+  // himself in none of them and stops. (b) makes the permission a property of the FIXTURE, which
+  // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
+  // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
+  // one voiced unit, and _split_paragraph breaks only at sentence ends.
   caption:
-    'The instant after the opponents move the puck defenceman to defenceman, and the point of the ' +
-    'picture is that nobody has swapped position — they have swapped job. Each glyph carries the ' +
-    'role that player has just taken; the label beside it says which role they held a second ' +
-    'earlier. The forward who was F1 has been beaten by the pass and is now behind the play, so ' +
-    'they climb into the vacated support role as the new F3. The forward who was F2 is nearest the ' +
-    'new carrier, so they are the new F1 and close on the carrier. The forward who was F3 comes down off ' +
-    'the high middle as the new F2. Which body ends up in which role is settled by who is nearest ' +
-    'the puck and by nothing else, so this is one instance and not a pattern to memorise. The ' +
-    'shape drawn around them is the 2-1-2 this guide takes as its standard forecheck; the rotation ' +
-    'itself is not a property of that system, because it is simply what F1, F2 and F3 mean. The ' +
-    'two defencemen hold the offensive blue line and their jobs do not rotate. ' +
-    // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs a forward to close on a
-    // carrier picking a puck up in his own corner, which is the same exposure forecheck-212's
-    // "goes hard at the puck carrier" creates, so it carries the same short scope sentence in
-    // the same settled words. GLYPH LAST: remark-corpus.mjs captionNodes() promotes from the
-    // first warning glyph to the END with no closing delimiter, so a glyph anywhere but last
-    // ambers the tactical prose after it.
-    // Rule text checked against sources/ this session, not carried in:
-    // USAH 604(a) (sources/usah.txt:3555) "Body checking is prohibited in the 12 & under youth
-    // age classifications and below, all Girls'/Women's age classifications and all non-check
-    // Adult classifications"; HC 7.3 (sources/hc.txt:6005) "This rule applies only in divisions
-    // of U13 and below, in female hockey, and any other divisions approved by a Member of
-    // Hockey Canada".
-    // USAH 604(b) (sources/usah.txt:3577), read this session: "Any time a team from a Competitive
-    // Contact category (see sub-section (a) above) plays a team from a Body Checking category, body
-    // checking shall be prohibited under this rule." 604's Note 2 (:3546) names the two categories --
-    // Competitive Contact is where checking is prohibited, Body Checking where a legal check is
-    // permissible -- and (a) closes "These levels would be considered the Competitive Contact
-    // Category of play" (:3558). That pairing is what makes "any time a checking team plays a
-    // non-checking one" the whole of (b) rather than a narrowing of it. WHY IT IS IN THE CAPTION AT
-    // ALL: (a) alone is an enumeration of DIVISIONS, and a reader in a checking division finds
-    // himself in none of them and stops. (b) makes the permission a property of the FIXTURE, which
-    // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
-    // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
-    // one voiced unit, and _split_paragraph breaks only at sentence ends.
-    '⚠️ Being the new F1 is not a licence to go through the carrier. They are picking the puck up in their own corner and are about to turn their back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game — the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    'The instant after the opponents move the puck defenceman to defenceman: nobody has swapped ' +
+    'position, they have swapped job. The letter in each glyph is the role just taken; the label ' +
+    'beside it is the role held a second earlier. The beaten F1 climbs into support as the new ' +
+    'F3, the old F2 is nearest the new carrier and becomes F1, and the old F3 comes down off the ' +
+    'high middle as the new F2. Who is nearest the puck decides it, so this is one instance, not ' +
+    'a pattern to memorise. The shape is this guide\'s default 2-1-2; the relabelling is simply ' +
+    'what F1, F2 and F3 mean, though a lock system pins one winger to the third job instead. Here ' +
+    'the defencemen hold the offensive blue line and do not rotate. ⚠️ Being the new F1 is not' +
+    ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +
+    'so the onus is on you: take the puck, take the ice, or ' +
+    'angle them off it, and never finish into their back. Find out first whether you may body ' +
+    'check in this game at all — it can change per fixture, not just per division. USA Hockey ' +
+    'bars it at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
+    'hockey and whenever a checking team plays a non-checking one; Hockey Canada at U13 and ' +
+    'below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
@@ -1105,39 +1114,44 @@ const forecheck23Lock = {
   half: true,
   width: 900,
 
+  // ⚠️ SHORTENED 23 October 2026 (voiced 1,933 chars). CUT: the cost sentence (fifth attacker,
+  // a disciplined winger), which forechecking_systems.md voices in the chunk before (facts
+  // "Risk.") and the paragraph after ("What it concedes"). KEPT: the default-plus-ask, the
+  // highest-winger alternative, the lane disclosure, the onus/back limb and the checking scope.
+  // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs two forwards in on a carrier
+  // the picture puts behind his own net, so it carries the same exposure as forecheck-212 and
+  // the same settled scope sentence -- which is also what the section itself does: '"Hard"
+  // means the same thing here as it does in the 2-1-2, and carries the same two conditions'.
+  // GLYPH LAST, same renderer reason as every other caption in this file.
+  // Rule text checked against sources/ this session, not carried in: USAH 604(a)
+  // (sources/usah.txt:3555); HC 7.3 (sources/hc.txt:6005).
+  // USAH 604(b) (sources/usah.txt:3577), read this session: "Any time a team from a Competitive
+  // Contact category (see sub-section (a) above) plays a team from a Body Checking category, body
+  // checking shall be prohibited under this rule." 604's Note 2 (:3546) names the two categories --
+  // Competitive Contact is where checking is prohibited, Body Checking where a legal check is
+  // permissible -- and (a) closes "These levels would be considered the Competitive Contact
+  // Category of play" (:3558). That pairing is what makes "any time a checking team plays a
+  // non-checking one" the whole of (b) rather than a narrowing of it. WHY IT IS IN THE CAPTION AT
+  // ALL: (a) alone is an enumeration of DIVISIONS, and a reader in a checking division finds
+  // himself in none of them and stops. (b) makes the permission a property of the FIXTURE, which
+  // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
+  // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
+  // one voiced unit, and _split_paragraph breaks only at sentence ends.
   caption:
-    'The 2-3, drawn against the same puck carrier as the other forecheck diagrams: two forwards ' +
-    'in on the puck, and three players across the ice behind them. The third forward is the whole ' +
-    'of the difference — instead of joining the attack they sit up the wall above the opposing winger, ' +
-    'and if the puck is not won they slide back into line with the two defencemen, which is the ' +
-    'arrow drawn from them. That buys two-player pressure with three players between the puck and ' +
-    'your net; it costs the fifth attacker in the offensive zone and needs a winger with the ' +
-    'positional discipline and the skating to do the job. The famous version is the left-wing ' +
-    'lock, and a modern variant locks whichever winger is highest instead, so which bodies fill ' +
-    'these three jobs is a bench call and not a property of the shape. The default assumed ' +
-    'throughout this document is a 2-1-2, so find out which your team plays. Which lane the ' +
-    'locking winger actually fills is a coaching detail this does not settle, and their arrow stops ' +
-    'short of the line on purpose, because they go back only if the puck is not won. ' +
-    // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs two forwards in on a carrier
-    // the picture puts behind his own net, so it carries the same exposure as forecheck-212 and
-    // the same settled scope sentence -- which is also what the section itself does: '"Hard"
-    // means the same thing here as it does in the 2-1-2, and carries the same two conditions'.
-    // GLYPH LAST, same renderer reason as every other caption in this file.
-    // Rule text checked against sources/ this session, not carried in: USAH 604(a)
-    // (sources/usah.txt:3555); HC 7.3 (sources/hc.txt:6005).
-    // USAH 604(b) (sources/usah.txt:3577), read this session: "Any time a team from a Competitive
-    // Contact category (see sub-section (a) above) plays a team from a Body Checking category, body
-    // checking shall be prohibited under this rule." 604's Note 2 (:3546) names the two categories --
-    // Competitive Contact is where checking is prohibited, Body Checking where a legal check is
-    // permissible -- and (a) closes "These levels would be considered the Competitive Contact
-    // Category of play" (:3558). That pairing is what makes "any time a checking team plays a
-    // non-checking one" the whole of (b) rather than a narrowing of it. WHY IT IS IN THE CAPTION AT
-    // ALL: (a) alone is an enumeration of DIVISIONS, and a reader in a checking division finds
-    // himself in none of them and stops. (b) makes the permission a property of the FIXTURE, which
-    // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
-    // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
-    // one voiced unit, and _split_paragraph breaks only at sentence ends.
-    '⚠️ Forechecking hard describes the speed of your arrival, not what you do when you get there. The carrier drawn here is behind their own net and about to turn their back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game — the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    'The 2-3, against the same puck carrier as the other forecheck diagrams: two forwards in on ' +
+    'the puck and three players across the ice behind them. The third forward is the difference: ' +
+    'they sit up the wall above the opposing winger and, only if the puck is not won, slide back ' +
+    'into line with the two defencemen, which is why their arrow stops short of the blue line; the lane they fill is a ' +
+    'coaching detail. The ' +
+    'famous version is the left-wing lock; some teams lock whichever winger is highest instead. ' +
+    'This guide\'s default is a 2-1-2, so find out which your team plays. ⚠️ Forechecking hard ' +
+    'means how fast you arrive, not what you do when you get there. The carrier is behind their ' +
+    'own net and about to turn their back to you, so the onus is on you: take the puck, take the ' +
+    'ice, or angle them off it, and never finish into their back. Find out first whether you may ' +
+    'body check in this game at all — it can change per fixture, not just per division. USA ' +
+    'Hockey bars it at 12 & under and below, in every girls\' and women\'s classification, in non-check ' +
+    'adult hockey and whenever a checking team plays a non-checking one; Hockey Canada at U13 and' +
+    ' below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
