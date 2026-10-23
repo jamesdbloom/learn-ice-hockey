@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG33 (23 Oct):** the general "CARHA major" scope fixes passed review; committing.
+- **SG34 (23 Oct):** PWHL icing and faceoff parity, citation precision, the rules_primer table check and the wording fixes. All reviews CLEAR; committing.
 
 ## New page: Getting Better on Your Own
 
@@ -54,42 +54,44 @@ can ship once it has been reviewed.
 
 ## Content: rules accuracy (each needs a rules-verifier)
 
-- **faceoffs taker's restraining lines:** render Hockey Canada Figure 7 ("Face-Off Restraining Lines", no text layer) to confirm "face-off restraining lines" in 6.2(a) means the L-lines, which faceoffs :733 assumes (errs safe either way). Optionally name PWHL 78.7(iv) beside the NHL/IIHF permission at :719/:733.
-- **on_ice_communication KT13 and CM** name the NHL and IIHF for the shorthanded icing exemption but not the PWHL (83.6 has it). Omission; low.
-- **Optional citation precision:** breakouts and defensive_zone_coverage cite "Hockey Canada 10.1" where
-  10.1(i) is meant.
 
 ## Content: safety, readability and wording
 
-- **defensive_zone_coverage :597 (minor, harsher direction):** "at least a one-game suspension on that (32(d))" also covers an injuring accidental high stick, which 32(d) exempts. Sketch: "…and a slashing major also brings at least a one-game suspension (32(d))".
 - **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
-- **zone_entries facts citation consistency (minor):** :434's goal clause has no cite (298/300), and PWHL 71.3 is uncited on :349 and :393. Optional: add "and bans you a game or more (32(d))" to the 66(b) major at :376.
 - **Echoes found by the SG30 site review (wording):**
   - The risk_management cross-ice caption repeats the "Coaching convention…" paragraph straight after it (check_caption_echo).
-  - getting_started §3: "A child who starts later can train with a club team without playing matches" paraphrases EIH's Train-Only option, which the source does not tie to starting later (commit-gate minor).
   - Cosmetic: `"[k]` can break between the quote mark and the bracket at 400px.
 - **body_contact EIHL repetition (owner 22 Oct: trim where it's repetition):** keep each distinct EIHL rule once and cut repeated restatements of it. Do this as part of the repetition pass, with a layer test.
 
-- **special_teams and siblings:** check for the shorthanded icing exemption stated for "NHL and IIHF" without the PWHL (83.6 has it).
+- **on_ice_communication KT13 and Common Mistakes (optional):** neither mentions the NHL 81.6 / PWHL 83.6 empty-box major case, where icing is called while still short; the body carries it. The SG34 agent left it out on purpose: KT13 is already 62 words, and neither sentence is false or permissive. Shortest form if wanted: "…and under the NHL and PWHL, an empty box when a major expires loses it too."
 - **Repetition pass:** the readability waves only split and shortened what check_readability flagged. No
   page has had a pass for repetition and throat-clearing.
-- **Spoken "Important." runs of four:** six in body_contact (two new in SG19: kneeing/clipping and
-  holding/facemask) and four in rules_primer. Break them where the hazard is voiced next door.
+- **Spoken "Important." runs:**
+  - body_contact was measured on 23 Oct and has only one run of four or more: KT8–11. These are four distinct hazards and none is voiced next door, so the run stays unless the owner rewords it.
+  - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
 - **Spoken units over 2,500 characters:** 12 corpus-wide (3 in forechecking_systems; most others are
   captions).
-- **rules_primer dropped table** (6 columns, 23 rows): the page says every row is set out in words
-  earlier; nobody has checked that row by row.
-- **body_contact:** "neither can they: you are outnumbered, or tangled up…" lost its "If".
+- **goaltender :1083 (optional):** "All six books, where they grant it, ask…". CARHA 65(a) Note 2 and USAH 624(b)(1) "at the time the penalty expires" could join. Also faceoffs :721: if the PWHL is added for stick toe in the white, cite 78.7(v).
+- **dzc :596 (unchanged text, check):** "in every one it reaches a major plus a game misconduct with nobody injured". USA Hockey 634(b) needs reckless endangerment for that.
+- **rules_primer :465:** "and a match for an attempt to injure (43.4)" states a discretionary penalty as fixed (NHL and PWHL 43.4 "may assess"). Fix: "can bring a match".
+- **rules_primer goalie broken-stick bullet (:596, stricter direction, minor):**
+  - CARHA 51(e) and USAH 605(c) bar the bench trip only "during a stoppage of play".
+  - "Passed hand to hand" is wrong for USA Hockey: Casebook 605 Sit. 12 lets a teammate slide it.
 - **Pull-up wording:** "see the numbers on their back" in practice_and_development and
   scanning_and_anticipation, vs "see their numbers" elsewhere. Cosmetic.
+- **Style B body_contact script line 201 lost its "If"** (`podcast_style_b/` detailed .md/.txt and the script): "You are outnumbered, or tangled…" states as fact what the page gives as a condition. Fix it in the next Detailed remake: "If you are outnumbered, or tangled with someone just as stuck, or losing it here would give them a chance at your net, pin the puck…". The published audio carries it, but it is tactical wording, not a rule.
+- **Table rows lose their spoken escalation:** md_to_speech voices table rows without "Important." even when a cell has a ⚠️. Example: the body_contact :1672-1677 "What actually gets called" rows. Check whether each row's hazard is voiced with a marker in prose nearby.
 - **Basics wing script** omits the weak-side winger collapsing to the slot, which winger.md relies on. Fix
   in the next Basics remake.
 
 ## Diagrams and site
 
 - **Captions over 800 characters:** about 82 of 204 after SG27–SG29 (13 of the longest cut). Next longest are around 1,900: entry-wide, screen-the-goalie-sightline, the-puck-decides-not-you, cross-ice-in-your-own-end, forecheck-2-3-lock. Check how 🇬🇧 renders on Windows (often "GB").
-- **puck-on-the-far-side caption** still describes its own drawing ("a glyph here has no front…").
-- **rule69_clauses.mjs comments** still list entry-wide and winger-offensive-zone-patches as users of CREASE_LINE_IS_THE_CREASE / REFEREE_JUDGEMENT / TABLES_ALLOW_OUTSIDE; update the header comments.
+- **Stale diagram comments (found 23 Oct):**
+  - positions.mjs :40 and :687 (TABLES_ALLOW_OUTSIDE "imported");
+  - offensive_zone_play.mjs :614 ("still used by screen-the-goalie-sightline", now false);
+  - zone_entries.mjs :300 ("shared with the three other diagrams").
+  - Also: the skating.mjs :267 caption opens with drawing-meta ("Drawn as the two failures… this notation has no front").
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
 - **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
   fix).
@@ -108,7 +110,6 @@ can ship once it has been reviewed.
 ## Renderer and podcast tooling
 
 - **md_to_speech `_rule_number_opens_sentence`** treats a possessive "IIHF's." as the letter "s.", so a rule number after a possessive is not capitalised (fixed only inside the new capitals pass).
-- **on_ice_communication KT13/CM** omit the NHL/PWHL major-penalty icing exception (body carries it); optional one clause in KT13.
 - **synthesize_style_b.py has no `--doc-id`:** only matters if production is tracked by doc id. Low.
 
 ## Checkers (scripts/ — change between waves, never during one)

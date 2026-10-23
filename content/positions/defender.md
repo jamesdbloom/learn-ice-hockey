@@ -739,9 +739,9 @@ Key: Wedge+1 — you are almost always in the triangle, not the "+1" who pressur
 Action: In wedge+1 the handover can make you the +1 — when the puck moves, the nearest wedge player steps out and the previous +1 drops into the triangle
 Action: Hold the box — two of you just off the crease edges — hold the inside at the net front, block shots, and clear on every opportunity; Special Teams covers the shape and how it slides
 Convention: The route the +1 takes out — straight from the goal, sweeping across the top, or roaming to the wall and the point — is a coaching choice and published descriptions differ, so ask which yours runs
-Rule: You may ice the puck freely while below their on-ice count — not merely while a penalty runs, so a penalty to them taking you to 4-on-4 ends it mid-major — but USA Hockey grants it only from Youth 15-Only, Girls 16U, High School and Adult up (NHL and IIHF 81.6; USA Hockey 624(b)(1))
+Rule: You may ice the puck freely while below their on-ice count — not merely while a penalty runs, so a penalty to them taking you to 4-on-4 ends it mid-major — but USA Hockey grants it only from Youth 15-Only, Girls 16U, High School and Adult up (NHL and IIHF 81.6, PWHL 83.6; USA Hockey 624(b)(1))
 Rule: The NHL and PWHL take the shorthanded icing exemption away once a major expires with the penalty box empty, and only until the next stoppage (NHL 81.6, 20.3; PWHL 83.6)
-Rule: Shorthanded icing turns on the on-ice count, not the clock — expiry counts only that one player back on, so on a 5-on-3 your pair is still below strength and still exempt, and a clear released before expiry draws no icing however late it lands (NHL and IIHF Rule 81.6)
+Rule: Shorthanded icing turns on the on-ice count, not the clock — expiry counts only that one player back on, so on a 5-on-3 your pair is still below strength and still exempt, and a clear released before expiry draws no icing however late it lands (NHL and IIHF 81.6, PWHL 83.6)
 Never: Get pulled out of position chasing the puck around the perimeter — the power play wants you to chase, because that is what opens the seam
 ```
 
@@ -785,10 +785,10 @@ Key: When you are gassed, the glass is the answer — the punishment for a tired
 #### On the kill — where the exemption applies, and what ends it
 
 ```facts
-Rule: The exemption is a count, not a clock — while you are below their on-ice count your clear is not icing (NHL and IIHF 81.6, Hockey Canada 6.7(b)), so a penalty to them taking you to 4-on-4 ends it even with your own major running; USA Hockey grants it only above its classification floor
+Rule: The exemption is a count, not a clock — while you are below their on-ice count your clear is not icing (NHL and IIHF 81.6, PWHL 83.6, Hockey Canada 6.7(b)), so a penalty to them taking you to 4-on-4 ends it even with your own major running; USA Hockey grants it only above its classification floor
 Rule: A major with nobody seated to serve it is a bench minor under NHL and IIHF 68.2; the deadline differs: immediately under the IIHF, before the major expires under the NHL, and its 20.3 is tighter still, wanting a stoppage. The NHL (81.6) and PWHL (83.6) also cost you the clear until the next stoppage
-Rule: A clear released while you are still below their on-ice count is not icing however late it lands, even if your penalty expires in flight — NHL and IIHF 81.6, Hockey Canada 6.7(b), which takes the count at the shot, and USA Hockey 624(b)(1), but only in the classifications that sub-clause names
-Rule: A penalty expiring counts the player who was serving it back onto the ice from that instant, even if they are still sitting in the box — so on a 5-on-3 the first expiry leaves you below strength and still exempt, and only the second ends it (NHL and IIHF 81.6)
+Rule: A clear released while you are still below their on-ice count is not icing however late it lands, even if your penalty expires in flight — NHL and IIHF 81.6, PWHL 83.6, Hockey Canada 6.7(b), which takes the count at the shot, and USA Hockey 624(b)(1), but only in the classifications it names
+Rule: A penalty expiring counts the player who was serving it back onto the ice from that instant, even if they are still sitting in the box — so on a 5-on-3 the first expiry leaves you below strength and still exempt, and only the second ends it (NHL and IIHF 81.6, PWHL 83.6)
 Rule: USA Hockey grants the shorthanded exemption only from Youth 15-Only, Girls 16U, High School and Adult up (624(b)(1)) — below those levels a shorthanded team is called for icing like anyone else
 Action: Where your book grants it, use the exemption rather than trying to make a play you do not need to make — and on the last shift of a kill, get the clear away before the penalty expires
 ```
@@ -799,7 +799,7 @@ Action: Where your book grants it, use the exemption rather than trying to make 
 
 **The test.** ⚠️ **What counts is the number of skaters, not whether a penalty is running.** The exemption belongs to the side *"below the numerical strength of the opposing team"*, and the player whose penalty expires counts back on from that instant even if they are still sitting in the box. So killing a 5-on-3, the first expiry leaves you still short and still exempt; the second ends it. ⚠️ **And a penalty to *them* that takes you to 4-on-4 ends it too, even with your own major still running.**
 
-**On the last shift of a kill, get the clear away before the penalty expires.** A puck *"released from the stick of the player shooting the puck down the ice prior to the penalty expiring"* draws no icing however late it lands — the NHL and IIHF say so, and USA Hockey does in the classifications above. Hockey Canada takes the count *"at the instant the puck is shot"*, with the same result. [Special Teams](../systems/special_teams.md) owns these rules, and [Faceoffs](../systems/faceoffs.md) sets the books side by side.
+**On the last shift of a kill, get the clear away before the penalty expires.** A puck *"released from the stick of the player shooting the puck down the ice prior to the penalty expiring"* draws no icing however late it lands — the NHL, IIHF and PWHL say so, and USA Hockey does in the classifications above. Hockey Canada takes the count *"at the instant the puck is shot"*, with the same result. [Special Teams](../systems/special_teams.md) owns these rules, and [Faceoffs](../systems/faceoffs.md) sets the books side by side.
 
 ### Blocking Shots
 

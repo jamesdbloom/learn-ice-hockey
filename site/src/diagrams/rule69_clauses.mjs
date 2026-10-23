@@ -24,6 +24,21 @@
  * rule told wrong in twelve documents" — n hand-written copies of one rule, each
  * corrected separately or not at all.
  *
+ * ⚠️ CURRENT USERS (re-counted 23 October 2026). The list above is the four
+ * captions this file was written for; on 22 October 2026 three of them were
+ * shortened and dropped their imports, because their host pages voice the
+ * clauses within a few chunks of the caption (see each caption's own comment):
+ *
+ *   oz-net-front-screen   offensive_zone_play.mjs   CREASE_LINE_IS_THE_CREASE,
+ *                                                   REFEREE_JUDGEMENT
+ *
+ * That is the ONLY importer. `TABLES_ALLOW_OUTSIDE` and
+ * `DISALLOWED_ROWS_SHARE_THE_CREASE` currently have NO importer. Re-check with
+ * `grep -n "from './rule69_clauses" site/src/diagrams/*.mjs` and read the import
+ * list — a bare grep for a constant's name also hits the comments in
+ * playing_without_the_puck.mjs, positions.mjs and zone_entries.mjs that record
+ * dropping it.
+ *
  * ---------------------------------------------------------------------------
  * ⚠️ Why the fix is NOT to delete the copies
  * ---------------------------------------------------------------------------
@@ -34,9 +49,11 @@
  * counterweight from three listeners' ears while leaving the page unchanged, so
  * the site would look fine and the audio would be the thing that got worse.
  *
- * So all four still SAY it. What is centralised is the text, not the telling: a
- * correction here reaches four captions in one edit, and each listener still
- * hears the whole clause.
+ * So every caption that imports a clause still SAYS it. What is centralised is
+ * the text, not the telling: a correction here reaches every importing caption in
+ * one edit, and each listener still hears the whole clause. (The three captions
+ * that dropped their imports on 22 October 2026 did so only after a host trace
+ * showed the host voices the clause nearby — removal is safe only on that test.)
  *
  * ---------------------------------------------------------------------------
  * ⚠️ Settled ground. Do not reopen or re-word.
@@ -101,9 +118,10 @@
  * They were lifted by longest-common-substring over the four assembled caption
  * strings, not retyped, and the refactor was verified by dumping every caption
  * in `DIAGRAMS` before and after and diffing: zero rendered bytes changed.
- * Anyone editing a string here is changing four captions at once and owes the
- * same check. Note the typographic apostrophes (’) — this corpus uses them, and
- * a straight quote here is a silent one-byte caption change in two diagrams.
+ * Anyone editing a string here is changing every importing caption at once (see
+ * CURRENT USERS above) and owes the same check. Note the typographic apostrophes
+ * (’) — this corpus uses them, and a straight quote here is a silent one-byte
+ * caption change in every caption that imports the string.
  *
  * The joining words are NOT here on purpose. Each caption keeps its own lead-in
  * ("So keep your feet out of the blue paint, and off ", "; ", " — ") because
@@ -118,7 +136,8 @@
 
 /**
  * The crease LINE is part of the crease — so "outside the paint" means clear of
- * the line too, not standing on it. Used by all four captions.
+ * the line too, not standing on it. Used by `oz-net-front-screen` only (written
+ * for all four captions; the other three dropped it on 22 October 2026).
  *
  * Reached as: "…keep your feet out of the paint, and off " + this. Carries its
  * own terminal stop on the last sentence; the caller resumes after it.
@@ -168,9 +187,11 @@
  * imprecision in eleven content documents. An agent told to fix "the same thing in
  * rule69_clauses.mjs" will grep the CAPTIONS and find nothing.
  *
- * ⚠️ FOUR CAPTIONS IN FOUR MODULES SPEAK THIS. Confirmed with
- * `grep -ln CREASE_LINE_IS_THE_CREASE site/src/diagrams/*.mjs`, and each of the
- * four was read in its host caption before this was rewritten:
+ * ⚠️ AS OF 23 OCTOBER 2026 ONE CAPTION SPEAKS THIS: `oz-net-front-screen`. The
+ * paragraph below is the record from when four did; the other three dropped the
+ * import on 22 October 2026. And `grep -ln CREASE_LINE_IS_THE_CREASE` is NOT the
+ * census — it also matches the comments recording the drop. Read the import lists.
+ * When this was rewritten, each of the four was read in its host caption:
  * `oz-net-front-screen` (followed by ". Under USA Hockey Rule 625(b) …" since
  * 22 October 2026, when the instruction moved to the front of its amber run),
  * `screen-the-goalie-sightline` (followed by ". Here …"),
@@ -191,8 +212,9 @@ export const CREASE_LINE_IS_THE_CREASE =
  * The hedge that must travel with any structural reading of Rule 69, because the
  * structural reading is ours and the referee's discretion is the books' own.
  *
- * Used by `oz-net-front-screen`, `winger-offensive-zone-patches`, `entry-wide`.
- * Reached as: "…rather than anything either book states in terms, and " + this,
+ * Used by `oz-net-front-screen` only, as of 23 October 2026. (This line used to
+ * name `winger-offensive-zone-patches` and `entry-wide` too; both dropped the
+ * import on 22 October 2026.) Reached as: "…rather than anything either book states in terms, and " + this,
  * or "…states in terms; " + this. Ends the sentence, so it carries its own stop.
  */
 // ⚠️ QUOTED. These are the books' own words, not a gloss: both the NHL and the IIHF print
@@ -214,7 +236,10 @@ export const REFEREE_JUDGEMENT =
  * Table 14 in 2026/27). It was hand-copied into two captions. When the next
  * edition moves it again, this is the one place to change.
  *
- * Used by `oz-net-front-screen`, `screen-the-goalie-sightline`. Reached as:
+ * ⚠️ NO IMPORTER as of 23 October 2026. It was used by `oz-net-front-screen` and
+ * `screen-the-goalie-sightline`; both dropped it on 22 October 2026 because their
+ * hosts voice the table answer just before the caption. Kept as the one owner of
+ * the renumbering if a caption needs it again. Was reached as:
  * "Both books’ own reference tables agree, " + this, and "…apply exactly that
  * line, " + this. Carries no terminal stop — the caller supplies it.
  */
@@ -232,9 +257,10 @@ export const TABLES_ALLOW_OUTSIDE =
  * What the tables' disallowed rows have in common — the sentence that stops a
  * reader concluding the test is whether the screener was moving.
  *
- * Used by `oz-net-front-screen`, `screen-the-goalie-sightline`, in both cases
- * immediately after `TABLES_ALLOW_OUTSIDE` but joined differently (" — " and
- * "; "), which is why it is a separate constant.
+ * ⚠️ NO IMPORTER as of 23 October 2026. It was used by `oz-net-front-screen` and
+ * `screen-the-goalie-sightline`, in both cases immediately after
+ * `TABLES_ALLOW_OUTSIDE` but joined differently (" — " and "; "), which is why it
+ * is a separate constant; both captions dropped it on 22 October 2026.
  */
 export const DISALLOWED_ROWS_SHARE_THE_CREASE =
   'what the disallowed rows have in common is the attacker being inside the ' +

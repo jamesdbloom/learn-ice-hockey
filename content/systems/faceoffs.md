@@ -716,8 +716,8 @@ Putting your stick down first shows your blade angle first, which you would rath
 
 ```facts
 Position: Square to your opponent's end of the rink, roughly one stick length apart (Rule 76.4)
-Rule: Feet either side of the restraining lines that run parallel to the side boards — touching the lines is fine (NHL and IIHF Rule 76.7(iv), which defines this; 76.4 does not); Hockey Canada 6.2(a) says "clear of the face-off restraining lines", USA Hockey 613(a) "clear of the ice markings"
-Rule: The toe of your skate blade must not cross the restraining lines perpendicular to the side boards (NHL and IIHF Rule 76.7(iv))
+Rule: Feet either side of the restraining lines that run parallel to the side boards — touching the lines is fine (NHL and IIHF 76.7(iv) define this, as does PWHL 78.7(iv); 76.4 does not); Hockey Canada 6.2(a) says "clear of the face-off restraining lines", USA Hockey 613(a) "clear of the ice markings"
+Rule: The toe of your skate blade must not cross the restraining lines perpendicular to the side boards (NHL and IIHF Rule 76.7(iv), PWHL 78.7(iv))
 Rule: At least the toe of your stick blade must be in the white of the spot — NHL and IIHF Rule 76.7(iv) and Hockey Canada 6.2(a) — but not under the IHUK In-House Rules and not under CARHA 57(a), which asks for "the full blade of their sticks flat on the ice"
 Rule: USA Hockey 613(a) takes the toe too (Casebook 613 Situation 2) but adds a demand no other book writes — at end-zone spots both blades must be "in contact with the nearest white area of the face-off spot and clear of the center red area"; centre ice and the neutral zone get no blade standard
 Rule: Under NHL and IIHF Rule 76.7(iv), the blade must remain in the white until the puck is dropped; lifting it early is a faceoff violation
@@ -730,7 +730,7 @@ Rule: The goalie may not participate in a faceoff (Rule 76.1)
 
 **For the centre** (Rules 76.4 and 76.7):
 - Stand **squarely facing your opponent's end**, roughly **one stick length apart**.
-- Feet either side of the restraining lines that run parallel to the side boards — touching them is fine under the NHL and IIHF, but Hockey Canada and USA Hockey want you clear of them.
+- Feet either side of the restraining lines that run parallel to the side boards — touching them is fine under the NHL, IIHF and PWHL, but Hockey Canada and USA Hockey want you clear of them.
 - The **toe of your skate must not cross** the restraining lines perpendicular to the side boards.
 - **Put the whole blade flat in the white, and keep it there until the puck is dropped** — that satisfies every book. The books ask for different amounts:
   - **NHL, IIHF and Hockey Canada:** at least the toe of the blade in the white (76.7(iv); 6.2(a)).

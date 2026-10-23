@@ -262,11 +262,14 @@ const puckOnTheFarSide = {
   width: 900,
 
   caption:
-    'Puck protection in open ice; the geometry is the ' +
-    'same anywhere on the sheet. The checker ' +
-    'is nearer the middle of the ice and the puck is on the other side of ' +
-    'you, so your body is between the two: nine and a half feet from the checker to you, fifteen to the ' +
-    'puck. ' +
+    // 23 Oct 2026: the opening "Puck protection in open ice; the geometry is the same anywhere
+    // on the sheet" described the picture's setting rather than the play, so it now leads on the
+    // instruction (the host's own "Position:" facts line, puck_handling.md "Puck on the far side").
+    // "anywhere on the ice" keeps the only teaching content the old lead had.
+    'Keep the puck on the side of you away from the checker, anywhere on the ice. Here the ' +
+    'checker is nearer the middle of the ice and the puck is on the other side of ' +
+    'you, so your body is the wall between them: nine and a half feet from the checker to you, ' +
+    'fifteen to the puck. ' +
     // 22 Oct 2026: the drawing notes (glyph has no front, stick not drawn, checker can be anyone,
     // no contact shown) were the picture describing itself and were cut. The one teaching limb
     // in them is kept, in the host's own words (puck_handling.md "Puck on the far side" Position:

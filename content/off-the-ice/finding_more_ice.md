@@ -76,7 +76,7 @@ Ask:
 1. **What level is it?** Judge yourself on your skating, not your shot, and take the lower level if unsure. See [Working out which tier you belong in](../getting-started/getting_started.md#working-out-which-tier-you-belong-in).
 2. **Is it a checking league?** ⚠️ **Ask your coach or league secretary, not the rink desk — being a beginner does not put you in a non-checking league.**
 3. **Do you place individual players?** Some leagues do; others take only whole teams. Canada's Adult Safe Hockey League has a sign-up form for individuals. ⚠️ **Still on a junior team in Britain? Ask before registering with an adult team** — under Ice Hockey UK's junior rules, a player who registers for senior membership cannot play junior hockey for the rest of that season.
-4. **Is it sanctioned?** ⚠️ **In Britain, unsanctioned hockey is uninsured, and under England Ice Hockey's last published rules a registered player who joins an unrecognised league can be suspended and fined.** In Canada, Hockey Canada cannot insure players in an unsanctioned league, and a child registered in one loses all membership privileges for the rest of the season. See [Getting Started](../getting-started/getting_started.md#why-it-exists-insurance-and-safeguarding).
+4. **Is it sanctioned?** ⚠️ **In Britain, unsanctioned hockey is uninsured, and under England Ice Hockey's last published rules a registered player who joins an unrecognised league faces suspension and fines.** In Canada, Hockey Canada cannot insure players in an unsanctioned league, and a child registered in one loses all membership privileges for the rest of the season. See [Getting Started](../getting-started/getting_started.md#why-it-exists-insurance-and-safeguarding).
 5. **What does it cost, and do you need a goalie?** If you might play goal, say so — clubs often lend goal pads, though you should buy your own mask. See [A note on playing goal](../getting-started/getting_started.md#a-note-on-playing-goal).
 
 ## 5. Learn-to-skate, learn-to-play and youth programmes
@@ -150,7 +150,7 @@ Ask who coaches it, what level it suits, how many players there are per coach an
 - **Taking a stick to a public session without checking the rules.**
 - **Turning up to the wrong drop-in.** Ask the level, the gear and whether there is contact first.
 - **Joining a league without asking whether it allows checking.** Ask your coach or league secretary before your first game.
-- **Playing in an unsanctioned league or camp.** In Britain it is uninsured, and can cost a registered player a suspension.
+- **Playing in an unsanctioned league or camp.** In Britain it is uninsured, and under England Ice Hockey's last published rules a registered player in an unrecognised league faces suspension and fines.
 - **Doing a learn-to-play block and never telling the club.** The rink's programme may not lead anywhere on its own.
 - **Booking a camp on its name.** Ask who coaches it, what level it suits and how many players there are per coach.
 
