@@ -523,7 +523,7 @@ Never: Get sucked low as the strong-side winger. Stay high instead, in the lane,
 Read: When the puck goes behind the net, expect the low-to-high next — close on your point as it disappears, not when it comes out
 Action: Get out to the shot, don't sit under it — a winger at the hash marks blocks nothing; one closing hard at the top of the circle, head up and out of the shot lane, does
 Never: Lunge at the shot, lift a leg, turn sideways or turn your back on it — close with your feet, square, shin pads to the puck, and stay on your feet until it is released
-Action: As the puck goes high, the low players keep eyes on it and box out the man — hold the inside, no lean, no push, never walk them off it; that can be called interference wherever you play
+Action: As the puck goes high, the low players watch it and box out the man — hold the inside, no lean, no push, under CARHA no body contact; never walk them off it — that can be called interference anywhere
 ```
 
 **What it is:** the puck goes down to the corner or behind the net, drags your coverage low, and then gets passed back *up* to the point or the high slot for a shot with your defenders' backs turned and traffic in front. Coaching material routinely calls it one of the most common ways modern teams score, and it exists precisely to punish low zone collapse. *(Public tracking splits five-on-five offence into rush and forecheck-and-cycle, and does not break out the low-to-high on its own — [Neutral Zone Systems](neutral_zone_systems.md) covers what it counts — so "one of the most common" is coaching consensus rather than a measured figure. Shot **location** is public and plentiful; [Shooting](../technique/shooting.md) covers it.)*

@@ -75,7 +75,7 @@ can ship once it has been reviewed.
 
 - **Contact wording, remaining (SG56):** all 31 pages carrying seal, ride, pin or lean wording, and the turn-back wordings, are now swept (SG56).
   - **Attacker's "body on the player" (SG58):** body_contact :1264 (facts) and :1277 tell the screener "eyes on the puck, body on the player". The defender's cue is now "beside", and the next In short says "touching nobody". Under CARHA 49(a), "stands in front of an opponent for the purpose of making contact" reaches an attacker leaning on a defender. A reader needs to decide whether this means the attacker's own contact.
-  - **Box-out facts lines lack a CARHA limb (minor, SG58 gate):** DZC facts :526 and BCB :1360 say "no lean, no push" but not CARHA's no-contact limb. That is stricter than before; candidate only.
+  - **"A defender you are feeling rather than watching" (nit, SG59 gate):** body_contact :1267 now says "a defender you cannot see". offensive_zone_play :500 (facts) and center :457 still use "feeling"; they are descriptive, not a contact cue. Align them if touched.
   - **Late-hit follow-ons (SG57):** USA Hockey allows a check only on a player in *control* of the puck, while the corpus says "has the puck". This is left for readability.
   - **Left:** language_and_glossary :200 "Steering is shadowing the carrier to push them" (figurative; HC 7.3(a) uses "pushes").
   - **Not swept:** cues outside the vocabulary, such as "finish", "take the man after the poke", "use your size", "tie them up".
@@ -100,11 +100,8 @@ can ship once it has been reviewed.
 - **Longest voiced captions after SG40:** the four longest were cut, to 966, ~1,220, ~1,230 and ~1,390. Each remaining limb is safety or rule content that no host voices next to the caption. Next longest: run a fresh render.
 - **Captions over 800 characters:** about 82 of 204 after SG27–SG29 (13 of the longest cut). Next longest are around 1,900: entry-wide, screen-the-goalie-sightline, the-puck-decides-not-you, cross-ice-in-your-own-end, forecheck-2-3-lock. Check how 🇬🇧 renders on Windows (often "GB").
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
-- **Leader lines** are drawn after the player glyphs and cross the token's letter (rink.mjs notes the
-  fix).
-- **No checker** for labels crossing painted lines.
-- **dz-walk-down-man "goes with the carrier"** label appears to cross the blue line at every width;
-  confirm in a browser.
+- **Leader lines over the token's letter (owner decision, SG59 measurement):** the fix is a small z-order change in rink.mjs (emit leaders before glyphs), but it shortens the visible leader by the token radius. Measured over 612 leaders in 185 diagrams: 60 vanish entirely and 314 show under 2 units if drawn under the halos; drawing between halos and bodies, none vanish and 297 show under 2. That is the visible outcome the owner already rejected once, so it needs longer leaders (LEADER_MIN) or acceptance of strike-through. Owner's call.
+- **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. Systemic options: reserve blue-line strokes (moves up to 99 diagrams) or a thicker LABEL_HALO. Owner's call; per-diagram hints otherwise.
 - **Site look owed:** the 🇬🇧 mid-paragraph in conditioning's Key focus; the special_teams bold run.
 
 ## Podcasts

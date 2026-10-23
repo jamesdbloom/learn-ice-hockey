@@ -708,8 +708,8 @@ const walkDownMan = {
     // convention. If that opponent ever moves to the slot, this centre moves with him
     // and nothing here needs rewording.
     { id: 'C', pos: 'F', at: { at: 'half-wall:left', dy: 8 }, label: 'on the third forward' },
-    { id: 'W', pos: 'F', at: WD_WINGER,                       label: 'goes with the carrier' },
-    { id: 'W', pos: 'F', at: W_WEAK_PT,                       label: 'on the other D' },
+    { id: 'W', pos: 'F', at: WD_WINGER,                       label: 'goes with the carrier', labelHint: [10, -7.5] },
+    { id: 'W', pos: 'F', at: W_WEAK_PT,                       label: 'on the other D', labelHint: [4, -10.5] },
   ],
 
   numbered: true,
