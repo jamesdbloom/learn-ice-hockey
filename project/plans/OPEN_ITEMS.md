@@ -74,7 +74,7 @@ can ship once it has been reviewed.
   - **game_management :143.** HC 6.4(a) Interpretation 1 limits the rule to a puck last touched in the end zone; the line does not carry that (harmless).
 
 - **Contact wording, remaining (SG56):** all 31 pages carrying seal, ride, pin or lean wording, and the turn-back wordings, are now swept (SG56).
-  - **Fixes in flight:** playing_without_the_puck "body on the man" lacked the late-hit limit (USAH 640(b)), and goaltender :1383 and KT12 used "send it toward the corner".
+  - **Late-hit and corner follow-ons (SG57):** defensive_zone_coverage :535 box-out "body on the man" has not been layer-tested for HC 8.3 or CARHA 49(a). The "toward the corner" net-front wording may remain in body_contact_and_battles, defensive_zone_coverage, winger and center. defender :1000's trailer paraphrases the old wording; it is not voiced. USAH allows a check only on a player in *control* of the puck, while the corpus says "has the puck"; this is left for readability.
   - **Left:** language_and_glossary :200 "Steering is shadowing the carrier to push them" (figurative; HC 7.3(a) uses "pushes").
   - **Not swept:** cues outside the vocabulary, such as "finish", "take the man after the poke", "use your size", "tie them up".
 - **Restated ladders: approach exhausted on breakouts (SG51).** The second pilot saved only 20 words, because §1 was already in compressed form and the nearby facts blocks don't carry the tiers. Total across both pilots: about 250 words. Not worth repeating page by page; revisit only if a page shows a full ladder restated three or more times.

@@ -17,7 +17,7 @@
 
 **On a loose puck, one player goes hard, one supports, nobody else joins — and call it.** Arrive at the wall with your skates parallel to it and your head up. Never turn your back to anyone coming at you, and never duck.
 
-**Stick on the puck first, body second — and find out before your first shift whether you may hit at all.** Younger age groups, girls' and women's play and whole leagues can be non-checking. There, take the ice, never the man.
+**Stick on the puck first, body second, and only on the player who has the puck — and find out before your first shift whether you may hit at all.** Younger age groups, girls' and women's play and whole leagues can be non-checking. There, take the ice, never the man.
 
 **Backcheck to a man, not to a place.** Pick up the man arriving unmarked in the middle, unless your system sends the first forward at the carrier. **Never finish into anybody's back** — if you can see their numbers, let up. It causes life-altering injuries and in most books ends your game.
 
@@ -37,7 +37,7 @@ You spend almost all of your ice time without the puck. NHL tracking data — wh
 
 **A loose puck needs a short plan: one goes, one supports, nobody else joins.** Who goes depends on your system. The race to the wall is a race into the boards: USA Hockey's *Heads Up Hockey* materials tie almost all on-ice cervical spine injuries to a head-down, head-on hit into the boards or a goal post, at walking speed as well as full. Arrive on an angle, head up and chin off your chest — never turn your back to anyone coming at you, and never duck.
 
-**Defending without the puck is mostly about where you stand.** Watch your man, keep your stick in their lane and your body between them and your net, and layer behind the pressure instead of joining it. **Stick on the puck first, body second** — age group, league and even the opponent can take the hit away, so ask before your first shift. [If you are the one pressuring](#if-you-are-the-one-pressuring) sets out each book.
+**Defending without the puck is mostly about where you stand.** Watch your man, keep your stick in their lane and your body between them and your net, and layer behind the pressure instead of joining it. **Stick on the puck first, body second, and only on the player with the puck** — age group, league and even the opponent can take the hit away, so ask before your first shift. [If you are the one pressuring](#if-you-are-the-one-pressuring) sets out each book.
 
 **Effort without the puck is the cheapest thing to improve.** Backcheck to a man, drive the net as if the puck is coming, and finish every route. The one thing effort must never buy is a hit on a player's back: when you are late on somebody facing away from you, take the lane or let up.
 
@@ -193,7 +193,7 @@ Goal: Take options away and force the carrier to decide early — winning the pu
 Action: Angle, do not chase. Approach on a curve that closes one side of the ice, so the only route left is the one your support is covering
 Action: Steer them where your help is; angling a carrier into the middle while your support sits on the wall is worse than not pressuring at all
 Technique: Arrive under control — close the last few feet with short strides, stick out front, in a position to change direction
-Priority: Stick on the puck, body on the man, in that order — take the body only where your league permits checking, and only when it does not cost you the lane behind you
+Priority: Stick on the puck, body on the man while they still have it, in that order — take the body only where your league permits checking, and only when it does not cost you the lane behind you
 Rule: Check whether you may hit at all — USA Hockey 604(a) bans body checking at 12U and below, in all girls'/women's and non-check adult classifications, and wherever a local governing body has prohibited it; Hockey Canada 7.3 bans it at U13 and below, in female hockey and any Member-approved division
 Rule: USA Hockey 604(b) bars body checking any time a checking team plays a non-checking one, whatever your own division — so whether you may hit can change game by game
 Rule: In Britain no rule book states a checking age; IHUK's junior rules make U10 and U12 non-checking. Women's play runs IIHF Rule 101.1 unamended, and Britain's Women's NIHL is non-checking at U16 and senior
@@ -208,7 +208,7 @@ Roughly a fifth of the time it is you: **F1 on the forecheck, the first defender
 - **Angle, do not chase.** Approach on a curve that closes one side of the ice, so the only route left is the one your support is covering. Skating straight at somebody gives them both sides and gives you nothing.
 - **Steer them where your help is.** Your pressure and the second layer are one play, not two. Angling a carrier into the middle while your support sits on the wall is worse than not pressuring at all.
 - **Arrive under control.** Full speed with your feet stopped is how you get beaten with one movement. Close the last few feet with short strides, stick out front, in a position to change direction.
-- **Stick on the puck, body on the man — in that order.** Take the body only when it does not cost you the lane behind you; a missed hit is a five-second absence. **And check whether you may hit at all** — see below. Where you may not, this bullet is angling, stick checks and body position: take the ice, never the man. Under Hockey Canada or CARHA hold only ice you already have, and in CARHA avoid the contact rather than lean into it.
+- **Stick on the puck, body on the man — in that order.** **Only while they still have the puck:** once it has gone, let up, because a check after a pass or shot can be a [late hit](../technique/body_contact_and_battles.md#the-late-hit--and-the-narrow-window-for-finishing-a-check). Take the body only when it does not cost you the lane behind you; a missed hit is a five-second absence. **And check whether you may hit at all** — see below. Where you may not, this bullet is angling, stick checks and body position: take the ice, never the man. Under Hockey Canada or CARHA hold only ice you already have, and in CARHA avoid the contact rather than lean into it.
 - **Talk, because you are the trigger.** "I've got the carrier" tells your support where to stand. Silence makes four people guess.
 - **Who goes is a coaching choice.** Under the standard system used throughout — a **2-1-2 forecheck** in their end and a **low zone collapse** in yours — the nearest player pressures and the second supports. Under a **1-2-2** only one forward pressures at all and the others hold the middle; under a trap, almost nobody pressures deep. Find out which you play. See [Forechecking Systems](../systems/forechecking_systems.md) and [Defensive Zone Coverage](../systems/defensive_zone_coverage.md).
 
@@ -1039,7 +1039,7 @@ document, that is named too.*
 
 2. You are F1 arriving on a carrier in the corner. The order is "stick on the
    puck, body on the man" — but before you use the second half of that, what must
-   you have checked, and what does the bullet reduce to where the answer is no?
+   you have checked, on whom may you use it, and what does the bullet reduce to where the answer is no?
    *(§State 2 — If you are the one pressuring)*
 
 3. You are alone in space with your stick up, waving, and the pass never comes.
