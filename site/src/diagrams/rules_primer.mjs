@@ -404,14 +404,21 @@ const icingTheRaceAndTheDot = {
   // lead-in, reduced to its scope ("in any league, checking or not"). Every limb listed as KEPT
   // above is still here. With the explanation gone, "never duck." is followed directly by the
   // instruction, the same join WALL_POSTURE_SHORT uses; the shoulder negation still ends it.
+  // ✂️ SHORTENED AGAIN 24 October 2026 (owner: shorter is better), 1,375 → see diagrams.json.
+  // CUT: the goalie wave-off sentence ("Your goalie stays put on purpose…"). goaltender.md voices
+  // the NHL/IIHF/PWHL wave-off in the SAME chunk, just before the marker; rules_primer.md voices
+  // its scope in the NEXT chunk ("In short: Outside NHL, IIHF and PWHL rules, do not expect a
+  // goalie skating out … to wave icing off") and the full item one chunk later. The opening two
+  // sentences were merged; "deadline, not a finish line" is voiced in rules_primer's prose just
+  // before the marker. The 81.1 mechanism, the ⚠️ scope limb, the boarding limb and the full
+  // posture are unchanged word for word.
   caption:
-    'Hybrid icing: the end-zone faceoff dot is a deadline, not a finish line. Both skaters reach ' +
-    'the dots level; the box marks the near dot only as the cut-off for the decision. Under NHL ' +
+    'Hybrid icing: both skaters reach the end-zone dots level, and the box marks the near dot ' +
+    'only as the deadline for the decision, not a finish line. Under NHL ' +
     'and IIHF Rule 81.1 the linesperson decides by the time the first skate reaches the dots, on ' +
     'who would touch the puck first, so being level settles nothing: be clearly on course to reach ' +
-    'the puck first, because a race still too close to call at the dots is icing. Your ' +
-    'goalie stays put on purpose: under those books and the PWHL’s, skating toward the puck waves ' +
-    'the icing off. ⚠️ This is not everybody’s icing. USA Hockey ' +
+    'the puck first, because a race still too close to call at the dots is icing. ' +
+    '⚠️ This is not everybody’s icing. USA Hockey ' +
     '(outside adult sled hockey) and CARHA play automatic icing, so there is no race, and Hockey ' +
     'Canada runs hybrid only in U18AAA, Junior and, at the Member’s option, Senior. Ask which your ' +
     'league plays. The race is not a licence to hit: unnecessary contact with a player playing ' +

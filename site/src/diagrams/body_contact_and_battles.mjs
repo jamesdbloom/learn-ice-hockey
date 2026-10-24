@@ -1432,9 +1432,9 @@ const shotBlockGetClose = {
     'the puck, shin guards front-on, head up and out of the shot lane, feet on the ice, hands ' +
     'behind your body with the backs of the gloves out. On a two-on-one your job as the lone ' +
     'defender is the pass and your goalie has the shooter. And from in front of your own ' +
-    'goalie, a block adds a deflection to a shot they could not see. Either commit fully and take ' +
-    'the shot or get out of the lane and let them see it, and the one thing you cannot do is stand ' +
-    'half in the way with your eyes closed. How much your team blocks at all is a coaching choice, ' +
+    'goalie, do not block: a block adds a deflection to a shot they could not see, so get out of ' +
+    'the lane and let them see it. Anywhere else, commit fully or get out, and the one thing you ' +
+    'cannot do is stand half in the way with your eyes closed. How much your team blocks at all is a coaching choice, ' +
     'so find out which yours plays and ask your goalie what they want.',
 
   describe:

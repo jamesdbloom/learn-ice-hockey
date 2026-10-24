@@ -1083,19 +1083,22 @@ const againstThe131 = {
   half: false,
   width: 900,
 
+  // ✂️ SHORTENED 24 October 2026 (owner: shorter is better), 1,352 → see diagrams.json. Sole
+  // host breakouts.md, whose 1-3-1 prose is voiced in the SAME chunk straight after the caption
+  // and carries everything cut: "one token forechecker cannot stop a defenceman carrying the puck
+  // with speed", "the wall lanes are the softest part of the shape", and chip-and-chase as a real
+  // answer, "frequently the highest-value option" against a genuine trap. Also cut: the
+  // play-direction note, "their forechecker is drawn pressing", and the not-the-OZ-forecheck
+  // disambiguation (the opening already says "in the neutral zone"). The coaching-choice "ask"
+  // is KEPT: the prose does not voice it. The ⚠️ limb is unchanged.
   caption:
-    'Breaking out against a 1-3-1 in the neutral zone. Your own end is at the left and the play moves' +
-    ' left to right. Counting outwards from your end, the opposition is one, three, one: a forward ' +
-    'giving token pressure; three spread flat across the width of the ice by the centre red line, ' +
-    'conventionally two forwards on the walls with a defenceman in the middle; and one defenceman ' +
-    'behind them as the last man. The answer drawn is the defenceman carrying it out themselves: one ' +
-    'token forechecker cannot stop a carrier with speed. The winger on the boards at your blue line is the short outlet along the wall, drawn' +
-    ' with no route: the wall lanes are the soft part of this shape and the middle is not. Chipping ' +
-    'it past the line and racing for it is a legitimate answer too, and against a genuine trap it is ' +
-    'often the better one; it is not drawn here, and which of the two your team wants is a coaching ' +
-    'choice, so ask. Their forechecker is drawn pressing; the most passive versions barely leave the ' +
-    'red line. This is the neutral-zone 1-3-1, not the offensive-zone forecheck or the power play of ' +
-    'the same name. ' +
+    'Breaking out against a 1-3-1 in the neutral zone, your own end at the left. Counting out from ' +
+    'your end: a forward giving token pressure; three spread flat across the ice by the centre red ' +
+    'line, conventionally two forwards on the walls with a defenceman in the middle; and one ' +
+    'defenceman behind them as the last man. The answer drawn is the defenceman carrying it out ' +
+    'with speed, with the winger on the boards at your blue line as the short outlet along the ' +
+    'wall, drawn with no route. Chipping it past them and racing for it is the other answer, not ' +
+    'drawn; which your team wants is a coaching choice, so ask. ' +
     // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with
     // no closing delimiter, so a warning placed mid-caption ambers everything after it. This
     // limb sat in the middle and is unchanged in wording — only its position moved.

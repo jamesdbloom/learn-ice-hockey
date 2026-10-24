@@ -799,10 +799,17 @@ const pkWedge = {
     // Plain text, no emphasis marks: a caption is the SVG <title>, the visible figcaption and
     // the string `md_to_speech.py` voices, and none of the three is markdown. Asterisks here
     // would be read out. This was the only caption in the corpus that had any, briefly.
-    'triangle around the net — all three are marked W for the wedge here rather than for a ' +
-    'winger — two defencemen just off the crease edges, drawn wider apart than ' +
-    'they really stand so their glyphs clear the ' +
-    'net-front attacker they are boxing out — and one forward at the mid-to-high slot; they stay ' +
+    // ✂️ SHORTENED 24 October 2026 (owner: shorter is better), 1,347 → see diagrams.json.
+    // CUT: the reason the defencemen are drawn wide (the gap itself is still disclosed), the two
+    // alternative +1 routes (special_teams.md voices all three in the SAME chunk;
+    // how_to_watch_hockey.md says "Teams use the fourth player differently, so expect variation"
+    // in the PRECEDING chunk), and the NHL-popularity sentence WITH its "unverified" disclosure —
+    // the caption no longer makes the claim, so the disclosure has nothing to qualify.
+    // KEPT, because how_to_watch_hockey.md voices no shot-blocking technique at all: every
+    // shot-blocking limb, word for word, now gathered behind the ⚠️ so it opens the safety clause.
+    'triangle around the net, all three marked W for the wedge rather than for a winger: two ' +
+    'defencemen just off the crease edges, drawn wider apart than they really stand, and one ' +
+    'forward at the mid-to-high slot. They stay ' +
 
     // ⚠️ "BLOCK SHOTS" WAS BARE HERE, and this caption is voiced: `md_to_speech.py` resolves
     // `diagram:<id>` to the caption, so a listener got the instruction with none of the
@@ -811,23 +818,18 @@ const pkWedge = {
     // courage", "in the lane before the shot, not sliding into it", "Never block from a
     // screening position." Taken verbatim rather than paraphrased, so the caption and the
     // section cannot drift.
-    'tight, block shots and do not chase. Blocking shots is a technique, not an act of ' +
-    'courage. Be in the lane ' +
-    'before the shot, not sliding into it, and never block from a screening position — ' +
-    'half-deflecting a shot your goalie could not see is worse than letting it through ' +
-    'cleanly. The fourth, the +1, pressures whoever has the puck. The route drawn here — ' +
-    'straight out from the goal at the ' +
-    'carrier — is one of three published readings and a coaching choice rather than the ' +
-    'system: others sweep the +1 laterally across the top of the zone above the circles, ' +
-    'and others let them roam out to the wall and the point, so ask which one your team ' +
-    'runs. ' +
-    'Coaching material describes this as popular at NHL level, but no league-wide count is ' +
-    'published, so treat the prevalence claim as unverified. ' +
-    // SAFETY. The caption instructs "Be in the lane before the shot" and dropped the two elements
-    // that make the block survivable. Owner's own wording, content/systems/special_teams.md:704
-    // and again verbatim in its Key Takeaway 7 (:1103) — "Block from close and on your feet, head
-    // out of the lane and hands tucked." LAST, for the promotion rule.
-    '⚠️ And block from close and on your feet, head out of the lane and hands tucked.',
+    'tight, block shots and do not chase. The fourth, the +1, pressures whoever has the puck; ' +
+    'the route drawn, straight out from the goal at the carrier, is one of three published ' +
+    'readings and a coaching choice, so ask which one your team runs. ' +
+    // SAFETY. "Block from close and on your feet, head out of the lane" follows the host's
+    // own wording (24 Oct: "hands tucked" replaced -- tucking is the on-ice form, and standing it
+    // folds the head into the lane; special_teams.md :803/:808);
+    // the other limbs are that section's too. LAST, because the renderer ambers from the glyph to
+    // the end of the caption.
+    '⚠️ Blocking shots is a technique, not an act of courage. Be in the lane before the shot, ' +
+    'not sliding into it, and never block from a screening position — half-deflecting a shot ' +
+    'your goalie could not see is worse than letting it through cleanly. Block from close and on ' +
+    'your feet, head out of the lane, hands behind your body with the backs of the gloves out.',
 
   describe:
     'Defending half of the rink, our net at the right and our goalie in the crease. Three own ' +
