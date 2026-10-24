@@ -268,7 +268,7 @@ How players name them in conversation:
 
 The **hash marks** are the short lines outside each end-zone faceoff circle. In the NHL they are two red lines, 2 inches wide and **2 ft long, placed 5 ft 7 in apart**, at the outer edge of each side of the circle, running parallel to the goal line (Rule 1.9). Four per circle — one pair on the boards side, one pair on the middle-of-the-ice side, both roughly level with the dot.
 
-They exist to keep players apart on a draw. **Encroachment into the area between the hash marks before the puck is dropped is a faceoff violation** (Rule 76.7(ii)). And, the part that catches people out, a winger who creeps over the hash marks gets **the centre** thrown out of the dot, not themselves.
+They exist to keep players apart on a draw. **Encroachment into the area between the hash marks before the puck is dropped is a faceoff violation** (Rule 76.7(ii)). And, the part that catches people out, a winger who creeps over the hash marks usually gets **the centre** thrown out of the dot, not themselves.
 
 ![](diagram:faceoff-dzone-alignment)
 

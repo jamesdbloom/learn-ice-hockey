@@ -265,7 +265,7 @@ const dzoneAlignment = {
     // caption whichever glyph carries it.
     'keeps both skates outside the circle and the hash marks. ⚠️ If you are not taking the ' +
     'draw, keep your skates and stick behind your own hash mark, your skates off the circle ' +
-    'line, and your hands and body off the opponent beside you: that satisfies every book. ' +
+    'line, and your hands, body and stick off the opponent beside you and off their stick: that satisfies every book. ' +
     'Touching the line is not safe in every book. The NHL, the IIHF and the PWHL allow a skate on ' +
     'the line and make crossing it the violation (NHL and IIHF Rule 76.7, PWHL Rule 78.7); ' +
     'Hockey Canada and CARHA count a skate on the circle as encroachment; and USA Hockey’s ' +
@@ -307,7 +307,7 @@ const dzoneAlignment = {
     // other than the taker "makes physical contact with an opponent" before the drop. USA
     // Hockey is the one book that does not name a non-taker's contact -- 613(e) reaches the
     // players facing off -- so it is left unnamed here rather than swept in.
-    'Contact is priced separately, and your centre pays: any physical contact with an opponent ' +
+    'Contact is priced separately, and it usually costs your centre the dot: any physical contact with an opponent ' +
     'before the drop is a violation in its own right under those same NHL, IIHF and PWHL rules, ' +
     'and under Hockey Canada Rule 6.2(a) and CARHA Rule 57(a), a non-taker who makes contact with ' +
     'an opponent gets their own centre ejected from the dot.',

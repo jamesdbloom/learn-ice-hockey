@@ -269,7 +269,7 @@ Both alignments are drawn in [Faceoffs](../systems/faceoffs.md) at the right-han
 
 ![](diagram:faceoff-dzone-alignment)
 
-**What the rules change at the dot.** A centre is thrown out of the draw for moving early, bad stick placement, or **a teammate encroaching** — a winger creeping into the circle costs the *centre* the draw.
+**What the rules change at the dot.** A centre is usually thrown out of the draw for moving early, bad stick placement, or **a teammate encroaching** — a winger creeping into the circle costs the *centre* the draw.
 
 - **A second violation by the same team on the same draw** is a bench minor for delay of game in the NHL and IIHF (IIHF 76.7), and an individual minor under USA Hockey (613(d)).
 - **The IIHF first violation changed in 2026/27.** The new book ejects the offending draw-taker, as the NHL does (76.6); the 2025/26 book gave a warning instead.
