@@ -147,7 +147,11 @@ const forecheck212 = {
   width: 900,
 
   caption:
-    'A 2-1-2 forecheck at the moment the opposing defenceman retrieves the puck behind the net. ' +
+    // ⚠️ SHORTENED 24 October 2026 (1,574 chars; owner: shorter is better). Narrative only: the
+    // coaching-choice disclosure, "at the top of the circles", "is treated separately" and the whole
+    // safety block with its rule sentence are kept, because winger, centre, game_management and
+    // how_to_watch_hockey voice no 604(a)/604(b)/7.3 scope in the caption's own or adjacent chunk.
+    'A 2-1-2 forecheck as the opposing defenceman retrieves the puck behind the net. ' +
     'F1 arrives from the weak side and angles the carrier towards the strong-side wall; F2 ' +
     'attacks the first passing option rather than the puck; ' +
     // ⚠️ "at the top of the circles" IS LOAD-BEARING FOR A HOST, not decoration. It was cut
@@ -157,18 +161,17 @@ const forecheck212 = {
     // sentence. A per-host coverage table shows it as duplicated and safe to cut; it is not.
     // It survived the 2026 length cut for the same reason. Do not cut it again.
     'F3 stays high in the middle at the top of the circles; both defencemen hold the offensive ' +
-    'blue line. This is one forechecking system among several, and three of the details shown are ' +
-    'coaching choices rather than rules — which way F1 angles the carrier, which side F3 sits on, ' +
-    'and the spread arrangement rather than the stacked variant — so find out which your team ' +
-    'runs. Two things the picture does not settle: how a forechecker finishes an angle, which is ' +
-    'movement over time a still frame cannot carry and ' +
+    'blue line. It is one system among several, and three details are coaching choices rather ' +
+    'than rules: which way F1 angles the carrier, which side F3 sits on, and the spread shape ' +
+    'rather than the stacked variant. Find out which your team runs. The picture does not show ' +
+    'how a forechecker finishes an angle, which ' +
     // "is treated separately" RESTORED after a length cut removed it, and kept through the
     // 2026 length cut. It is the host-neutral repair of an earlier "and is its own section",
     // which was true in one of five hosts. A reader told the picture will not show the finish
     // of an angle has to be told something shows it, and this phrase is the only pointer that
     // is true in all five.
-    'is treated separately, and whether the first pass beats F2 or F2 beats the pass, which is ' +
-    'the contest the system turns on. ' +
+    'is treated separately, or settle whether the first pass beats F2, which is the contest the ' +
+    'system turns on. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. WHY IT IS HERE AND WHY IT IS SHORT.
     // The long body-checking block forecheck-122 and forecheck-131 carried until 22 October 2026
     // (both now carry a short shared block) was NOT the general
@@ -192,7 +195,7 @@ const forecheck212 = {
     // HC 7.3 "applies only in divisions of U13 and below, in female hockey, and any other
     // divisions approved by a Member of Hockey Canada" (the rule's own sentence opens "This
     // rule applies only..."; the elided form is the one the owning section carries inline).
-    '\u26A0\uFE0F Going hard at the carrier does not mean going through them. The carrier drawn here is behind their own net and about to turn their back to you, so the onus is on you as the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    '\u26A0\uFE0F Going hard at the carrier does not mean going through them. The carrier behind their net is about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +

@@ -880,17 +880,25 @@ const angleIntoTheCorner = {
   // check you at all" sentence, whose job -- the posture holds whatever the answer -- is carried by
   // "in every league, checking or not", kept, and by both hosts ("in any league, checking or not").
   // "at any speed" is kept as the residue of the walking-speed limb.
+  // ⚠️ SHORTENED AGAIN 24 October 2026 (1,536 chars). Cut, each voiced in the caption's own or
+  // adjacent chunk in BOTH hosts (md_to_speech render, 24 Oct): "decided several strides out"
+  // (skating 005; body_contact 081) and "How you meet the wall is the half no picture can draw,
+  // and it is not optional" (body_contact 082 "no rink diagram can show it"; skating 006 "Everything
+  // after the route is contact"). The USA Hockey angling claim is reworded, keeping "greatly
+  // reduces" and "most of the impact". Kept: the provenance disclosure, the chip/rim/reverse
+  // option, the never-turn/never-duck sentence with all three scopes, Case 2 with both shoulder
+  // limbs and the sentence boundary before "Knees bent", and Case 3 VERBATIM (skating voices none).
+  // The ⚠️ now opens the never-turn sentence itself. The two measured angles (twenty-two and
+  // fifty degrees) are cut as picture narrative; they are in no host and carried no limb.
   caption:
-    'Going back for a puck in your own corner with a checker inside your line, and only that line is ' +
-    'drawn. It sets off pointed at the corner and finishes running along the boards, meeting them ' +
-    'about twenty-two degrees off parallel where a straight line would meet them at about fifty. ' +
-    'Skating into the corners at an angle greatly reduces the risk of hitting the boards helmet ' +
-    'first; a leg, a side or an arm takes most of the impact instead. That is the first and best of ' +
-    'three cases for meeting a wall — the cases come from USA Hockey\'s material, the ordering and ' +
-    'the ranking do not — and it is decided several strides out. Better still, a chip, a rim or a ' +
-    'reverse decided before you arrive takes you out of the collision. ⚠️ How you meet the wall is ' +
-    'the half no picture can draw, and it is not optional. Never turn your back to anyone coming at ' +
-    'you, and never duck, in every league, checking or not, and at any speed. ' +
+    'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
+    'drawn. It sets off pointed at the corner and finishes running along the boards. ' +
+    'That is the first and best of three cases for meeting a wall: on an angle, the risk of hitting ' +
+    'the boards helmet first is greatly reduced, because a leg, a side or an arm takes most of the ' +
+    'impact. The cases come from USA Hockey\'s material; the ordering and the ranking do not. ' +
+    'Better still, a chip, a rim or a reverse decided before you arrive takes you out of the ' +
+    'collision. \u26A0\uFE0F Never turn your back to anyone coming at you, and never duck, in every ' +
+    'league, checking or not, and at any speed. ' +
     'Get your skates parallel to the wall and take it on your ' +
     'forearm and hip, not the point of your shoulder, and not the whole shoulder if you can help ' +
     'it. Knees bent, head up and chin off your chest. That is the second case. The third is what is ' +
