@@ -189,7 +189,7 @@ Rule: A USA Hockey game misconduct is not only this game — 404(b) also suspend
 | **Strong-side defenceman** | On the puck — corner or behind the net | Pressure and pin the *puck*, or angle them away from the net (see the note that follows) |
 | **Weak-side defenceman** | Goalmouth | Own the doorstep. Box out. Do *not* get drawn to the puck |
 | **Centre** | Low support, strong side | Second body into the corner battle — two on one wins it; the high slot is theirs whenever they are not down here |
-| **Strong-side winger** | High, on the strong-side point | Between that defenceman and the net; block the lane and the shot |
+| **Strong-side winger** | High, on the strong-side point | Between that defenceman and the net; block the shot with your head up and out of the lane |
 | **Weak-side winger** | High, on the weak-side point — collapsing into the high slot when the centre goes low | Cover the point *and* the middle, in that order of movement |
 
 **"Pin the puck, not the player."** Pinning the *puck* against the wall with your skate or stick is how you stop it going the wrong way; pinning the *opponent* is something else, and [Body Contact and Battles](../technique/body_contact_and_battles.md) covers the difference. **Hold the pin only until the second body arrives to dig it out — never for a whistle, and never by falling on it or gathering it into your body.**
