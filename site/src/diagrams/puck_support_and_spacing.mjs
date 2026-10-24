@@ -644,7 +644,8 @@ const battleSupport = {
 
   // ⚠️⚠️ THIS CAPTION IS THE SAFETY-CARRYING ONE IN THIS MODULE AND IS DELIBERATELY
   // LEFT LONG. Only the part before the ⚠️ has ever been cut (15 September and
-  // 19 October 2026); NOTHING FROM THE ⚠️ ON WAS TOUCHED, and the notes below record why
+  // 19 October 2026); nothing from the ⚠️ on was touched until SG70 (24 October 2026) cut
+  // the evidence tail, which the host voices in the same chunk. The notes below record why
   // each clause of it is worded as it is. Both exceptions must survive any further cut —
   // they are the cardinal-rule hedge on an instruction not to go in, and the second
   // ("a team that assigns a second player to the wall … find out whether that is your
@@ -657,12 +658,18 @@ const battleSupport = {
     // so the caption now READS THE PICTURE instead — the checker drawn beside the support player
     // is the "brings your checker" mechanism made visible. Both exceptions and their "find out"
     // stay, and nothing from the ⚠️ on was touched.
-    'Your teammate is pinned on the boards with the puck. The support player has not gone in: they ' +
-    'are in open ice about five metres away, stick down, so the puck has an exit, and their own ' +
-    'checker has stayed with them instead of joining the pile. ' +
+    // ⚠️ TRIMMED 24 October 2026 (SG72). Cut, each voiced in the host's same chunk (014, the
+    // body paragraph directly after the figure): "before you decide it is not"; the injury-site
+    // sentence and "none of this is a rule for fast arrivals only"; the USA Hockey light-hit
+    // quotation; the walking-speed sentence. With both evidence limbs gone there is no weaker
+    // clause left for a listener to hear as permission, so the "none of this" cover went too.
+    // The picture sentence, both exceptions, the posture, all three prohibitions and the
+    // checking-from-behind rule sentence are unchanged in meaning.
+    'Your teammate is pinned on the boards with the puck. The support player stays out, in open ' +
+    'ice about five metres away with their stick down so the puck has an exit, and their own ' +
+    'checker stays with them instead of joining the pile. ' +
     'Two exceptions send you in: a genuine fifty-fifty scramble that nobody has, and a team that ' +
-    'assigns a second player to the wall — so find out whether that is your job before you decide ' +
-    'it is not. ' +
+    'assigns a second player to the wall — so find out whether that is your job. ' +
     // ⚠️ THIS IS THE ONE CAPTION IN THE CORPUS THAT SENDS A READER *INTO* A WALL BATTLE, and it
     // was the one with no arrival posture on it. `winger-dz-rim`, `winger-dz-reverse` and
     // `off-wing-open-to-the-ice` all carry the warning, so the form already existed and this was
@@ -703,16 +710,7 @@ const battleSupport = {
     // dependency).
     ' Never push or hit the opponent on the wall from behind. Go for the puck at their feet. ' +
     'A push from behind into the boards is checking from behind even where body checking is not ' +
-    'allowed. Loose-puck races and fifty-fifty pucks at the wall are ' +
-    'where checking-from-behind and boarding injuries happen, and none of this is a rule ' +
-    // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570, §5 Checking From Behind, is
-    // addressed to the player delivering the check. The caption carried the twelve words
-    // verbatim and unquoted. The colon that used to introduce this clause became a full stop so
-    // the quotation can open after its own colon and keep the source's capital "Even".
-    'for fast arrivals only. USA Hockey addresses its warning about hits from behind to the ' +
-    'checker delivering one: "Even a light hit from behind could inflict a severe head or neck ' +
-    'injury." And the head-down collision that ducking produces can break your neck at walking ' +
-    'speed.',
+    'allowed.',
 
   describe:
     'The attacking half of the rink, the net at the right. An own-team forward is on the right-hand ' +

@@ -186,14 +186,18 @@ const loosePuckWhoGoes = {
   // is what stops the angling instruction being heard as the whole answer), and the
   // instruction itself. If this caption must reach 50 words, that unit has to be
   // routed into §"State 3 — The puck is loose" FIRST. It may not simply be deleted.
+  // ⚠️ TRIMMED 24 October 2026 (SG72), all outside the safety unit. Cut, each voiced in the
+  // host's preceding chunk (016, "Who goes" and its facts block): "who goes is a coaching
+  // choice, and the worst version is not knowing" (016: "this is a coaching choice, and the
+  // worst version is not knowing … Find out which of these your team plays"), and the
+  // letters-are-roles note (016: "roles defined by order of arrival, not by position").
+  // The arrow note was a picture note. The safety unit is unchanged except that the two
+  // hit-from-behind sentences are joined; the quotation and its addressee are kept.
   caption:
-    'A loose puck in your own corner, your net at the right, drawn under a low zone collapse, ' +
-    'the coverage assumed here: the closest player goes hard to it, one teammate supports on ' +
-    'the boards side, one covers the net front, and nobody else joins. ' +
-    'Who goes is a coaching choice, and the worst version is not knowing, so find out which ' +
-    'coverage your team plays. ' +
-    'The other two skaters are not drawn, and the letters are roles rather than positions: ' +
-    'these three jobs go to whoever is closest. The arrow stops five feet short of the puck. ' +
+    'A loose puck in your own corner, your net at the right, drawn under a low zone collapse: ' +
+    'the closest player goes hard to it, one teammate supports on the boards side, one covers ' +
+    'the net front, and nobody else joins. Find out which coverage your team plays. ' +
+    'The other two skaters are not drawn. ' +
     '⚠️ Two postures carry two different dangers. A chin dropped to the chest is ' +
     'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
@@ -201,10 +205,9 @@ const loosePuckWhoGoes = {
     // wording with the word order shuffled and no quotation marks, which is invisible to
     // check_quote_drift.py. The source's own "Even a light hit" carries the not-only-fast-hits
     // point that the old trailing "even when the hit is light" was carrying by paraphrase.
-    'contact with the boards or the goal post. A back turned to anyone coming at you is the ' +
-    'other: it makes the contact a hit from behind. USA Hockey addresses its warning about those ' +
-    'to the checker delivering one: "Even a light hit from behind could inflict a severe head or ' +
-    'neck injury." Neither warning depends on the ' +
+    'contact with the boards or the goal post. A back turned to anyone coming at you makes the ' +
+    'contact a hit from behind, and USA Hockey warns the checker delivering one: "Even a light ' +
+    'hit from behind could inflict a severe head or neck injury." Neither warning depends on the ' +
     'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
     // KT6's mid-sentence slot rather than the tail: the caption ends on two absolutes
     // ("never turn your back to anyone coming at you, and never duck") and a hedged clause appended after them

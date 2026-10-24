@@ -110,10 +110,9 @@
  * centre, 5.02 ft of room. Re-derive rather than trusting this sentence.
  *
  * WHAT NO CAPTION HERE STATES. None of these four carries a rule number, a penalty tier or
- * a book comparison that its owning SECTION does not state, and the one caption that
- * carries rule numbers at all — `winger-arriving-at-the-line`, on the trail skate — takes
- * both of them (USA Hockey 630(a), Hockey Canada 6.11) from the ```facts block and body of
- * the section it sits in. That constraint exists because no `content/` sweep can see a
+ * a book comparison that its owning SECTION does not state. `winger-arriving-at-the-line`
+ * carried USA Hockey 630(a) and Hockey Canada 6.11 until 24 October 2026; it now names the
+ * books only, as the body beside it does, and its book split comes from that section. That constraint exists because no `content/` sweep can see a
  * caption: `check_facts.py` and `check_rule_scope.py` read `content/` only, and
  * `check_absolutes.py` reads captions but tests for unscoped penalty-tier denials. A rule
  * corrected in the corpus would reach every markdown site and stop dead at a caption.
@@ -492,20 +491,22 @@ const arrivingAtTheLine = {
   // paragraph, its Never: facts lines, the D-zone and O-zone pressure sections and Common
   // Mistakes -- grep winger.md for "forearm and hip". The SHOULDER note above now applies to
   // winger-corner-and-the-empty-point only.
+  // ⚠️ TRIMMED 24 October 2026 (SG72). Cut, each voiced in the host's preceding chunk (022,
+  // the "Filling your lane" body directly above the figure): the both-skates offside
+  // definition, "do not coast … costs your line more than a whistle would", and "a body that
+  // is surprised does not absorb contact" (narrative; 022 voices "you cannot brace for a hit
+  // you cannot see"). The rule NUMBERS 630(a) and 6.11 went; the book split is word for word
+  // and names the same books 022 names. Both prohibitions and the two-injuries line are kept.
   caption:
     'Arriving at the attacking blue line as a winger, with the zone you are entering at the right. ' +
-    'The picture is drawn for one thing: where the defenceman meeting you is standing. They are stood up ' +
-    'on their own line, and the ice they are defending is the ice your body, your hands and your stick ' +
-    'reach before your trailing skate does. The trail skate itself is not drawn, and cannot be at ' +
-    'this scale. You are offside only when both skates have completely crossed the line before the ' +
-    'puck has, so a trailing skate on the line keeps you onside; drag it and keep the blade in ' +
-    'contact with the ice or the paint, because a dragged, touching skate keeps you onside wherever ' +
-    'you play, while a lifted one is onside under the NHL, the IIHF and the PWHL but offside under ' +
-    'USA Hockey Rule 630(a) and Hockey Canada Rule 6.11. Find out which book your league runs. And ' +
-    'do not coast ' +
-    'at the line to be safe: arriving late and slow costs your line more than a whistle would. ⚠️ A ' +
+    'The defenceman meeting you is stood up on their own line, defending the ice your body, your ' +
+    'hands and your stick reach before your trailing skate does. The trail skate is not drawn. ' +
+    'Drag it and keep the blade in contact with the ice or the paint: a dragged, touching skate ' +
+    'keeps you onside wherever you play, while a lifted one is onside under the NHL, the IIHF and ' +
+    'the PWHL but offside under USA Hockey and Hockey Canada. Find out which book your league ' +
+    'runs. ⚠️ A ' +
     'head up is the condition of the technique rather than an extra — you cannot brace for a hit you ' +
-    'cannot see, and a body that is surprised does not absorb contact. And never turn your back to ' +
+    'cannot see. And never turn your back to ' +
     'anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
     'for, and a chin tucked to the chest, which does not need speed to do it.',
 
