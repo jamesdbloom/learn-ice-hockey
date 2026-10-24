@@ -253,26 +253,23 @@ const dzoneAlignment = {
 
   caption:
     'A defensive-zone draw frozen before the drop, at the right-hand circle. The boards-side ' +
-    'defenceman stands nearer the boards than their winger as well as behind that winger; there is no room in ' +
-    'the picture to draw it. Where everyone stands is a coaching choice and not a rule — this ' +
-    'alignment goes with a low zone collapse, and every team’s differs, so find out what yours runs. ' +
-    'The shaded circle is the part that is a rule: every player other than the two taking the draw ' +
+    'defenceman really stands nearer the boards than their winger as well as behind; there is no ' +
+    'room to draw it. Where everyone stands is a coaching choice, not a rule: this alignment goes ' +
+    'with a low zone collapse, and teams differ, so find out what yours runs. The shaded circle ' +
+    'is the rule: everyone except the two taking the draw ' +
     // ⚠️ W33: INSTRUCTION FIRST. `captionNodes` makes everything from the first ⚠ to the end
     // one amber run, and this run was ~990 chars with the instruction ("Keep your skates…")
     // sitting under the book-by-book tariff. Re-ordered, not cut: every limb is still here, the
     // instruction now opens the amber run, and the second glyph (on "Contact is priced…"),
     // which was inert inside the same run, is gone. Speech unchanged — one "Important." per
     // caption whichever glyph carries it.
-    'must keep both skates outside the circle and outside the hash marks. ⚠️ If you are not ' +
-    'taking the draw, keep your skates ' +
-    'and your stick behind your own hash mark, your skates off the circle line, and your hands and ' +
-    'body off the opponent beside you: that position satisfies every book, whichever one your game ' +
-    'is played under. Whether touching the ' +
-    'line is safe is not the same in every book. The NHL, the IIHF and the PWHL permit skate ' +
-    'contact with the line and make it crossing the line that is illegal (NHL and IIHF Rule 76.7, ' +
-    'PWHL Rule 78.7); Hockey Canada and CARHA both count a skate on the faceoff circle as ' +
-    'encroachment; and USA Hockey’s Casebook requires all sticks and all skates completely behind ' +
-    'the hash marks. ' +
+    'keeps both skates outside the circle and the hash marks. ⚠️ If you are not taking the ' +
+    'draw, keep your skates and stick behind your own hash mark, your skates off the circle ' +
+    'line, and your hands and body off the opponent beside you: that satisfies every book. ' +
+    'Touching the line is not safe in every book. The NHL, the IIHF and the PWHL allow a skate on ' +
+    'the line and make crossing it the violation (NHL and IIHF Rule 76.7, PWHL Rule 78.7); ' +
+    'Hockey Canada and CARHA count a skate on the circle as encroachment; and USA Hockey’s ' +
+    'Casebook requires all sticks and skates completely behind the hash marks. ' +
     // ✅ IHUK IN-HOUSE RULE 76 CHECKED W33 AND CHANGES NOTHING HERE. The 2026-27 In-House
     // Rules (sources/eiha_inhouse_2026-27.txt, "Rule 76: Face-Offs") amend only the CENTRES:
     // the linesperson replaces the centre immediately for every violation except after an
@@ -310,11 +307,10 @@ const dzoneAlignment = {
     // other than the taker "makes physical contact with an opponent" before the drop. USA
     // Hockey is the one book that does not name a non-taker's contact -- 613(e) reaches the
     // players facing off -- so it is left unnamed here rather than swept in.
-    'Contact is priced on its own, and your centre pays for it: any physical contact with ' +
-    'an opponent before the drop is a faceoff violation in its own right under the NHL, the IIHF ' +
-    'and the PWHL (NHL and IIHF Rule 76.7, PWHL Rule 78.7), and under Hockey Canada Rule 6.2(a) and ' +
-    'CARHA Rule 57(a) a player other than the taker who makes contact with an opponent gets their ' +
-    'own centre ejected from the dot.',
+    'Contact is priced separately, and your centre pays: any physical contact with an opponent ' +
+    'before the drop is a violation in its own right under those same NHL, IIHF and PWHL rules, ' +
+    'and under Hockey Canada Rule 6.2(a) and CARHA Rule 57(a), a non-taker who makes contact with ' +
+    'an opponent gets their own centre ejected from the dot.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +

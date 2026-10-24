@@ -425,24 +425,24 @@ const clearAtFiveOnSix = {
   width: 900,
 
   caption:
-    'Defending a 6-on-5 from your own end: your goalie is still in your net at one end, theirs is ' +
-    'empty at the other, and a puck has just come free to you. Every clear from here is a shot, and ' +
-    'three things can happen to it — so all three are drawn the same way, as one act with three ' +
-    'endings. Head up and on to the empty net, and it is a goal; a puck that goes in is not icing. ' +
-    'Missed, and a puck crossing their goal line untouched from your own side of the centre red line ' +
-    'is icing. A blind clear to their point man hands it back at your own blue line. Only the player ' +
-    'with the puck, one of their point men and the two nets are drawn. ⚠️ And you can be iced against ' +
-    'a pulled goalie: six players against six is equal strength and not below it, and NHL Rule ' +
-    '81.3 says an icing should not be nullified merely because their goalie was on the way to the ' +
-    'bench for an extra attacker. Under the NHL and the IIHF that whistle brings the draw back to ' +
-    'your own end, lets the attacking team pick the dot, and leaves you unable to change and unable ' +
-    'to take a time-out at all. Rule 81.4 does list exceptions, but read which ones: an injured ' +
-    'player, or a penalty that ' +
-    'changes the on-ice strength; the one that lets a goalie come back in belongs to the team ' +
-    'that pulled its own, and that is not you. USA Hockey attaches no substitution restriction to an ' +
-    'icing at all, and Hockey Canada writes one only in the categories its Rule 6.7(d) names — ' +
-    'U18AAA and Junior, and in Senior at the Member’s option — so find out which rules your league runs. ' +
-    'This is a shot to take when you can actually hit the net, and not a blind heave.',
+    // ✂️ 24 Oct 2026 trim: narrative and the 81.3 wording shortened. Every rule limb is
+    // kept because the host's adjacent facts chunk voices the icing and its three costs but
+    // NOT the 81.4 exception list or Hockey Canada 6.7(d). "at all" stays on the time-out,
+    // because the 81.4 exceptions reach the change ban only.
+    'Defending a 6-on-5 in your own end: your goalie is in your net, theirs is empty, and a ' +
+    'puck has just come free to you. Every clear from here is a shot, with three endings. Head ' +
+    'up and on target, it is a goal, and a puck that goes in is not icing. A miss that ' +
+    'crosses their goal line untouched from your side of the centre red line is icing. A blind ' +
+    'clear to their point man hands it back at your own blue line. Only the puck carrier, one ' +
+    'of their point men and the two nets are drawn. ⚠️ You can be iced against a pulled goalie: ' +
+    'six against six is equal strength, and NHL Rule 81.3 does not cancel an icing just because ' +
+    'their goalie is heading to the bench. Under the NHL and the IIHF the draw then comes back to your ' +
+    'end, the attacking team picks the dot, you cannot change, and you cannot take a time-out at ' +
+    'all. Rule 81.4 lets you change only to replace an injured player (or, under the IIHF, one ' +
+    'with a broken skate) or for a penalty that changes the strength; its goalie exception belongs to the team that pulled theirs, not you. USA Hockey ' +
+    'puts no substitution limit on an icing, and Hockey Canada has one only in the categories ' +
+    'its Rule 6.7(d) names — U18AAA, Junior, and Senior at the Member’s option — so find out ' +
+    'which rules your league runs.',
 
   describe:
     'The full sheet. Your own net is at the left with your goalie in the crease; the ' +

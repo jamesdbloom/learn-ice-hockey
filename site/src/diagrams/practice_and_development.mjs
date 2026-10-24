@@ -489,13 +489,10 @@ const smallAreaGame = {
   width: 900,
 
   caption:
-    'The same six skaters, with the game shrunk into one end zone: three ' +
-    'against three, one puck, one net, and a goalie who was not in ' +
-    'the queue in the last picture — a seventh person, defending the net your three ' +
-    'attack. Nobody is queuing. ' +
-    'Every one of the six is in the play, none of them more than about forty-five feet from the ' +
-    'puck, and there is a ' +
-    'live opponent who has not been told what they are going to do — which is precisely the ' +
+    'The same six skaters, now playing three against three in one end zone, with one puck and ' +
+    'one net, which your three attack and a goalie defends — a seventh person, not in the last ' +
+    'picture. All six are in the play, none more than about forty-five feet from the puck, and ' +
+    'the opponent has not been told what they will do, which is exactly the information a drill ' +
     // ⚠️ THE ROUTE SENTENCE AND ITS SAFETY SENTENCE MOVED TO THE END AS A PAIR, AND THEY
     // HAVE TO MOVE TOGETHER. The glyph used to sit a third of the way in, so the amber band
     // ran 1,416 characters: it opened on the contact caveat and then painted ~1,100
@@ -507,23 +504,20 @@ const smallAreaGame = {
     // only wording change is "One of them" -> "One of the six", because after the move
     // "them" would have picked up "use them" (= small-area games) in the sentence now
     // immediately before it rather than the six skaters it means.
-    'information a drill takes out to make a skill practisable. Most of the rink is ' +
-    'empty here only because this is the only group drawn. Every single thing about this ' +
-    'arrangement is a coaching choice ' +
-    'and not a law of hockey: the number of players, the area it is played in, whether there is a ' +
-    'goalie at all, what each team is trying to score on, and what constraint is added. This ' +
-    'picture uses the one net the rink already has, ' +
-    'a limit of what can be drawn rather than a recommendation. ' +
-    'Ask what the rules of the game are before it starts, because the ' +
-    'constraint is the teaching. And be careful how you argue for these: that small-area games build ' +
-    'decision-making is highly plausible, near-universally believed by coaches and consistent with ' +
-    'the theory, but it is genuinely under-tested, so use them and do not go quoting research you ' +
-    'do not have. One of the six is already ' +
-    'closing on the puck carrier on the wall, and their route ends in two short bars rather than an ' +
-    'arrowhead, meaning they arrive and contain rather than skating through. ⚠️ That is the only ' +
-    'thing the picture says about how they arrive, and it is deliberate: how hard anyone may compete ' +
-    'for a puck, and whether body checking is permitted at all, depends on your age group, your ' +
-    'league and the book they play under, and no diagram can tell you that.',
+    // ✂️ 24 Oct 2026 trim (1,749 -> shorter): the research hedge and "ask what the rules
+    // are" were cut because the very next spoken chunk of the only host voices both ("highly
+    // plausible ... under-tested. Use them. Don't cite research you don't have." and
+    // "Constrain deliberately"). Kept: the coaching-choice disclosure, and the ⚠️ limb,
+    // which is the caveat for the one route here that arrives on a person.
+    'takes out. Everything about this setup is a coaching choice, not a law of hockey: the ' +
+    'numbers, the area, whether there is a goalie, what each team scores on and what constraint ' +
+    'is added. It uses the rink’s own net because that is what can be drawn, not as a ' +
+    'recommendation, and the rest of the ice is empty only because one group is drawn. One of ' +
+    'the six is closing on the puck carrier on the wall, and their route ends in two short bars, ' +
+    'not an arrowhead: they arrive and contain rather than skating through. ⚠️ That is all the ' +
+    'picture says about how they arrive, on purpose: how hard anyone may compete for a puck, and ' +
+    'whether body checking is allowed at all, depends on your age group, your league and the ' +
+    'book it plays under, and no diagram can tell you that.',
 
   describe:
     'The full two-hundred-foot sheet again, with the whole picture in the right-hand end zone below ' +
