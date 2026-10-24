@@ -899,17 +899,21 @@ const crossIceOwnEnd = {
   // with its above/below-the-circles line were cut too. The host voices both in the paragraphs
   // directly either side of the marker ("What to do instead" above, "*Coaching convention.*"
   // below) and in the section's facts block, so the caption was a word-for-word echo.
+  // 24 October 2026 (1,160 -> shorter): cut "the cross-ice pass this section tells you not to
+  // make" and "so even a completed pass usually arrives with the forecheck" -- risk_management.md
+  // is the only host and its "There is one more cost" paragraph, two above the marker, says the
+  // forecheck slid across with the puck. The ⚠️ contact limb, the posture and every picture
+  // disclosure are kept; only their wording is tightened.
   caption:
-    'Your own zone, your own net at the right: the cross-ice pass this section tells you not to ' +
-    'make. A defenceman sealed in the strong-side corner passes east–west below the tops of the ' +
-    'circles, across the shaded slot in front of your own goalie. Their forward in the middle ' +
-    'stands beside the lane; the reach of their stick into it is not drawn. Their third forward is already sliding across, so even a completed pass ' +
-    'usually arrives with the forecheck. The designed cross-ice option in ' +
-    'a structured breakout is a different play, taken only when the middle is empty; here it is ' +
-    'not. The far outlet could equally be the weak-side defenceman, and their defencemen are not ' +
-    'drawn, so do not count bodies here. ⚠️ No contact is drawn: the sliding forward’s route ends ' +
-    'in two bars, meaning it stops there rather than carrying on through a player, and what an ' +
-    'arrival like that may end in depends on whether your league allows body checking at all. ' +
+    'Your own zone, your own net at the right. A defenceman sealed in the strong-side corner ' +
+    'passes east–west below the tops of the circles, across the shaded slot in front of your own ' +
+    'goalie. Their middle forward stands beside the lane, the reach of their stick into it not ' +
+    'drawn, and their third forward is already sliding across. A designed cross-ice option in a ' +
+    'structured breakout is a different play, taken only when the middle is empty; here it is ' +
+    'not. The far outlet could equally be your weak-side defenceman, and their defencemen are not ' +
+    'drawn, so do not count bodies. ⚠️ No contact is drawn: the sliding forward’s route ends in ' +
+    'two bars, so it stops there rather than carrying through a player, and what an arrival like ' +
+    'that may end in depends on whether your league allows body checking at all. ' +
     // Its wording and order are WALL_POSTURE_SHORT's -- see wall_contact_clauses.mjs.
     'If you are the one collecting a puck on that wall, never turn your back to anyone coming ' +
     'at you, and never duck. ' +

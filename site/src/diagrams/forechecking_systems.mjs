@@ -1118,6 +1118,14 @@ const forecheck23Lock = {
   // a disciplined winger), which forechecking_systems.md voices in the chunk before (facts
   // "Risk.") and the paragraph after ("What it concedes"). KEPT: the default-plus-ask, the
   // highest-winger alternative, the lane disclosure, the onus/back limb and the checking scope.
+  // 24 October 2026 (1,218 -> shorter): CUT the onus/back limb ("take the puck, take the ice,
+  // or angle them off it, and never finish into their back") and "hard means how fast you
+  // arrive". forechecking_systems.md is the ONLY host, and the paragraph directly above the
+  // marker voices the onus limb word for word under its own ⚠️, with the facts block's
+  // "Never:" line carrying it too. KEPT, because the host's adjacent prose has only the short
+  // "find out first" form: the whole USAH 604(a)/(b) and HC 7.3 checking scope, unchanged.
+  // Also cut: "against the same puck carrier..." and "the famous version is the left-wing
+  // lock" (the paragraph above opens on exactly that).
   // SAFETY SCOPE, ruled by safety-reviewer. The caption instructs two forwards in on a carrier
   // the picture puts behind his own net, so it carries the same exposure as forecheck-212 and
   // the same settled scope sentence -- which is also what the section itself does: '"Hard"
@@ -1138,17 +1146,12 @@ const forecheck23Lock = {
   // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
   // one voiced unit, and _split_paragraph breaks only at sentence ends.
   caption:
-    'The 2-3, against the same puck carrier as the other forecheck diagrams: two forwards in on ' +
-    'the puck and three players across the ice behind them. The third forward is the difference: ' +
-    'they sit up the wall above the opposing winger and, only if the puck is not won, slide back ' +
-    'into line with the two defencemen, which is why their arrow stops short of the blue line; the lane they fill is a ' +
-    'coaching detail. The ' +
-    'famous version is the left-wing lock; some teams lock whichever winger is highest instead. ' +
-    'This guide\'s default is a 2-1-2, so find out which your team plays. ⚠️ Forechecking hard ' +
-    'means how fast you arrive, not what you do when you get there. The carrier is behind their ' +
-    'own net and about to turn their back to you, so the onus is on you: take the puck, take the ' +
-    'ice, or angle them off it, and never finish into their back. Find out first whether you may ' +
-    'body check in this game at all — it can change per fixture, not just per division. USA ' +
+    'The 2-3: two forwards in on the puck and three players across the ice behind them. The ' +
+    'third forward sits up the wall above the opposing winger and, only if the puck is not won, ' +
+    'slides back into line with the two defencemen, which is why their arrow stops short of the ' +
+    'blue line; the lane they fill is a coaching detail. Some teams lock whichever winger is ' +
+    'highest rather than always the left. This guide\'s default is a 2-1-2, so ask which your ' +
+    'team plays. ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division. USA ' +
     'Hockey bars it at 12 & under and below, in every girls\' and women\'s classification, in non-check ' +
     'adult hockey and whenever a checking team plays a non-checking one; Hockey Canada at U13 and' +
     ' below, throughout female hockey and in any other division a Member approves.',

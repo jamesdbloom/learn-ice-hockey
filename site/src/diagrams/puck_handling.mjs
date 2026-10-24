@@ -500,19 +500,23 @@ const wherethePuckIs = {
   // the crease as a volume (both hosts voice it in the chunk before); the "net empty" goal
   // (both hosts, the chunk after) -- kept as "it can be a goal awarded against you" ("can":
   // USA Hockey 614(b) awards it only where the cover prevented a goal, puck_handling.md facts).
+  // 24 October 2026 (984 -> shorter; owner: shorter is better). Wording only. Two hosts,
+  // puck_handling.md and center.md, and every rule limb here fails the adjacency test in at
+  // least one of them (center.md voices the puck-decides test and the empty-net goal only
+  // AFTER the marker; puck_handling.md voices knock-it-down only far above), so none was cut.
+  // Cut: "so the two cases run opposite to the way most players guess" and "for an extra
+  // attacker" / "in this picture" -- narrative, no limb.
   caption:
     'A loose puck inside the shaded crease beside your goalie, with you standing outside it. In ' +
-    'five of the six books it is where the puck is that decides, not where you are, so the two ' +
-    'cases run opposite to the way most players guess: covering a puck that is inside the crease ' +
-    'from outside it, as drawn here, is a penalty shot (under USA Hockey the other team may take a ' +
-    'minor instead), and covering one just outside while you stand inside is a minor. Hockey ' +
-    'Canada\'s wording can also be read to count where you are, so under that book treat a cover ' +
-    'from inside your crease as the shot too. Every book exempts the goalie. You are drawn as a ' +
-    'defenceman, but the rule reaches any skater. ' +
+    'five of the six books the puck\'s position decides, not yours: covering a puck inside the ' +
+    'crease from outside it, as drawn here, is a penalty shot (under USA Hockey the other team may ' +
+    'take a minor instead), and covering one just outside while you stand inside is a minor. ' +
+    'Hockey Canada\'s wording can also be read to count where you are, so under that book treat a ' +
+    'cover from inside your crease as the shot too. Every book exempts the goalie. You are drawn ' +
+    'as a defenceman; the rule reaches any skater. ' +
     '⚠️ Wherever you are standing, do not keep hold of the puck: knock it straight down at your ' +
     'feet in one continuous motion and play it with your skate or your blade. Your goalie is on ' +
-    'the ice in this picture deliberately; with the goalie pulled for an extra attacker it can be ' +
-    'a goal awarded against you.',
+    'the ice deliberately; with the goalie pulled it can be a goal awarded against you.',
 
   describe:
     'Your own defending end, your net at the right. The goal crease is drawn as the rink itself ' +
