@@ -172,7 +172,7 @@ Risk: Under a low zone collapse, chase into the corner and the opposing defencem
 
 **Key considerations:** It is tempting to chase the puck into the corner when you see your team battling there. In a collapse system, resist it. If you go to the corner, the opposing defenceman is free to walk in for a shot, and your team has no one positioned for the breakout. Staying high is your job, not just your option.
 
-**When their defenceman winds up, get into the lane.** Your stick and body belong between the shooter and the net, so a point shot has to go through you or wide — on your feet, blocking the way *Penalty Kill* below sets out. If you cannot get there in time, take away the pass to the weak side instead and let your goalie see the shot. Do not stand halfway, where you neither block it nor stay out of your goalie's eyes.
+**When their defenceman winds up, get into the lane.** Your stick and body belong between the shooter and the net, so a point shot has to go through you or wide — on your feet with your head out of the lane, blocking the way *Penalty Kill* below sets out. If you cannot get there in time, take away the pass to the weak side instead and let your goalie see the shot. Do not stand halfway, where you neither block it nor stay out of your goalie's eyes.
 
 ![](diagram:winger-leaves-the-point)
 

@@ -1589,7 +1589,7 @@ Never: Lunge. Close with your feet instead, because a slide that misses is a def
 
 ### When *not* to block
 
-**In short:** Commit fully or get out of the lane, and never block the shot on a 2-on-1 or from a screening position.
+**In short:** Never block the shot on a 2-on-1 or from a screening position; otherwise, commit fully or get out of the lane.
 
 ```facts
 Never: Block the shot on a 2-on-1 — your job as the lone defender is the pass, and the goalie has the shooter
@@ -1598,7 +1598,7 @@ Rule: USA Hockey Casebook 639, Situation 4 — a slide that brings an opponent d
 Rule: USA Hockey 639(b) makes "a major penalty plus a game misconduct penalty" mandatory for tripping a referee judges to recklessly endanger an opponent, plus a match to plan on (602(a)) — nobody has to be hurt for it to be called
 Rule: Under Hockey Canada a slide that trips the carrier is 8.6 tripping unless it plays the puck first — a minor, an ejection if it injures, no match; one that takes them low can be 8.7 clipping, up to a match if meant to injure
 Never: Block from a screening position — a deflection off a body the goalie could not see is one of the most common ways soft goals are conceded, on the coaching account rather than a count
-Priority: Out of your goalie's eyeline, commit fully and take the shot or get out of the lane — never stand half in the way with your eyes closed
+Priority: When you are not screening your goalie, commit fully and take the shot or get out of the lane — never stand half in the way with your eyes closed
 Never: Dive to block a low-danger point shot while an unmarked opponent stands at the goalmouth
 Read: Stay on your feet until the puck is actually released — committing early is what a shot fake is designed to draw
 Convention: How much your team blocks is a coaching choice — find out which yours plays, and ask your goalie what they want
