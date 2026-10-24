@@ -1392,13 +1392,9 @@ const shotBlockGetClose = {
   // cases, and the coaching-choice scope: 147 words of 348 against 247 before. NOT ONE WORD WAS
   // CUT OR REORDERED — the glyph moved and nothing else, so the caption reads aloud exactly as it
   // did, which matters because the band is a VISUAL device that does not exist in `md_to_speech`.
-  // ⚠️ THE PROVENANCE CAVEAT IS DELIBERATELY MUTED, and that is a judgement rather than an
-  // oversight. It qualifies "far safer", which is itself muted two sentences earlier; a hedge
-  // rendered louder than the claim it hedges is the wrong way round, and the host voices the same
-  // caveat under its own glyph at § 11 "Get close". `angle-into-the-corner` in this file does the
-  // same thing — "the cases themselves come from USA Hockey's material, the ordering and the
-  // ranking do not" sits muted there — and its glyph placement is the model for this one: what the
-  // picture teaches stays muted, and the half no picture can draw is the half that goes amber.
+  // ⚠️ The caption no longer carries "far safer" or its provenance caveat; both were cut on
+  // 24 October 2026 (below). The placement rule still holds: what the picture teaches stays
+  // muted, and the half no picture can draw is the half that goes amber.
   // ⚠️ THE TWO-ON-ONE SENTENCE WAS LEFT WHERE IT IS, having been raised as a non-sequitur between
   // the posture list and the deflection risk. It is not one: it and "And from in front of your own
   // goaltender…" are the caption's two situational don'ts, in the same parallel construction, and
@@ -1415,8 +1411,7 @@ const shotBlockGetClose = {
   // the screen case with "commit fully ... or get out of the lane", and the coaching-choice scope --
   // is unchanged word for word. defender.md still has no "commit fully" sentence of its own (render,
   // 22 Oct: it occurs only in the caption's chunk), so that reasoning above still holds. The
-  // "safer is coaching craft" disclosure is kept in short form; both hosts voice it in the adjacent
-  // chunk as well.
+  // "safer is coaching craft" disclosure was kept in short form that day and cut on 24 October.
   // ⚠️ SHORTENED 24 October 2026 (1,487 chars; owner: shorter is better). Cut: the drawing
   // conventions (fourteen feet, the point shot, "one body in the lane"), the "safer is coaching
   // craft" sentence. With "safer" gone the caption makes no safety claim for the disclosure to

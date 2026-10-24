@@ -148,7 +148,7 @@ The per-game counts are those percentages applied to the roughly **56 draws in a
 ```facts
 Action: Work out where the next draw will be and start skating there before the whistle finishes
 Rule: Centre ice takes period starts, draws after a goal, and an erroneous icing call (Rules 76.2, 81.2)
-Rule: After an icing or a penalty the draw is in the offending team's end (NHL and IIHF Rules 81.2, 76.2); the other team's free choice of dot is NHL, IIHF and PWHL only, at PWHL 83.2 — USA Hockey 612(b) and 624(a) give none, CARHA none, Hockey Canada 6.4(b) a rationed one
+Rule: After an icing or a penalty the draw is in the offending team's end (NHL and IIHF 81.2, 76.2); CARHA puts a penalty draw at the dot nearest the incident (39(a)). The dot choice is NHL, IIHF and PWHL; Hockey Canada Junior and Senior only (6.4(b)); USA Hockey and CARHA none
 Rule: Hockey Canada 6.4(b) gives the choice of end-zone dot to the attacking (non-offending) team, in Junior and Senior divisions only and only after an icing or a time penalty, and that team loses it unless it tells the referee its dot "prior to the start of the line change procedure"
 Rule: A stoppage between the end-zone dots and the end boards draws at the spot on the side it happened, "unless otherwise expressly provided by these rules" (NHL and IIHF Rule 76.2) — USA Hockey 612(b) takes the nearest spot, but only where it calls for a last play faceoff
 Rule: A stoppage the attacking team caused in its attacking zone is a different draw under USA Hockey — 612(c) sends it to the nearest neutral-zone spot, and 612(g) moves any draw back toward the goal of the team that caused the stoppage
@@ -166,11 +166,11 @@ Never: Go offside by firing the puck over the blue line — carrying it over and
 - A premature-substitution violation when play was stopped beyond the centre red line (Rule 76.2).
 
 **To an end-zone dot in the offending team's own end:**
-- **Icing.** Since 2019-20 **the attacking team chooses which of the two dots** (Rule 81.2), and it will pick its centre's strong side. See "Situational Faceoffs".
-- **A penalty.** One of the two dots in the penalised team's end, and **the team awarded the power play chooses which** (Rule 76.2).
+- **Icing.** Under the NHL, the IIHF and the PWHL **the attacking team chooses which of the two dots** (Rule 81.2; PWHL 83.2), and it will pick its centre's strong side. See "Situational Faceoffs".
+- **A penalty.** One of the two dots in the penalised team's end (CARHA differs, below), and under the NHL, IIHF and PWHL **the team awarded the power play chooses which** (Rule 76.2; PWHL 78.2).
 - **Intentional offside** — going offside on purpose to force a whistle (Rule 83.7).
 - **A goalie freeze, or any stoppage low in the zone.** The draw is at the end-zone dot **on the side where the stoppage occurred** (Rule 76.2), so the side a goalie freezes it on picks the circle. Goalies know this. The rule holds *"unless otherwise expressly provided by these rules"* (IIHF 76.2 the same), so a stoppage another rule speaks for goes where that rule sends it.
-- **A defender or goalie accidentally knocking their own net off.** Rule 63.8 sends the draw to the offending team's end, **the attacking team chooses the dot**, and the offending team may not substitute. IIHF Rule 63.8 is the same rule, in both editions.
+- **A defender or goalie accidentally knocking their own net off.** NHL Rule 63.8 sends the draw to the offending team's end, **the attacking team chooses the dot**, and the offending team may not substitute. IIHF Rule 63.8 is the same rule, in both editions, and so is PWHL 65.8.
 - **The goalie freezing the puck on the back of the net, or a defender shielding an attacker from playing it there** — Rule 85.2 sends these to the defending zone. ⚠️ **"Just a faceoff" is the NHL's, the IIHF's and the PWHL's price, not every book's** — see "What it costs" below.
 
 **To a neutral-zone dot:**
@@ -183,10 +183,11 @@ Never: Go offside by firing the puck over the blue line — carrying it over and
 
 **Puck out of play:** the nearest spot in the zone it was shot from, or from the neutral or defending zone, the spot giving the **offending team the least advantage** (Rules 85.1, 85.5). A puck merely lodged in the netting can go to *"either of the adjacent face-off spots or at the nearest face-off spot in the zone from which the puck was shot"* (85.5). If the puck leaves the rink **directly off a faceoff**, the NHL and IIHF re-drop at the same spot.
 
-**USA Hockey and Hockey Canada send some draws elsewhere.**
+**USA Hockey, Hockey Canada and CARHA send some draws elsewhere.**
 - **USA Hockey gives no choice of dot** after a penalty (612(b)) or an icing (624(a)) — the official picks the spot. A low stoppage that is nobody's fault goes to the nearest end-zone spot (612(b)); a stoppage the attacking team caused in its attacking zone goes to the nearest neutral-zone spot (612(c)); and the team that caused a stoppage *"shall not gain a territorial advantage"* from the draw (612(g)).
 - **Hockey Canada gives a choice of dot only in Junior and Senior**, after an icing or a time penalty, to the **attacking** team — and only if it names the dot *"prior to the start of the line change procedure"* (6.4(b)).
-- **Both catch any attacking player** who goes beyond the top of the circles in a post-whistle scrum (USA Hockey 612(d), Hockey Canada 6.3(d)(vi)), not just the point men and the bench.
+- **CARHA gives no choice of dot either.** A penalty draw goes to the dot nearest the incident, toward the penalised team's end, and never in the power-play team's own zone, so it can start in the neutral zone (39(a)); an icing draws at the offending team's end spot (65(a)).
+- **USA Hockey and Hockey Canada both catch any attacking player** who goes beyond the top of the circles in a post-whistle scrum (USA Hockey 612(d), Hockey Canada 6.3(d)(vi)), not just the point men and the bench.
 
 **What it costs.** ⚠️ **Never aim a puck out off the draw:** neither the NHL nor the IIHF says whether the re-drop covers a deliberate one, and 63.2(ii) makes a deliberate shot out a minor *"from anywhere on the ice surface"*. A puck shot into the players' bench draws no delay-of-game penalty (NHL 63.2(iii) Note) — but under the IIHF only a puck shot **directly** into a bench escapes it, so a clearance over the glass that drops into the bench is still two minutes. One into the **opposing** bench *"through an open bench door"* draws in the neutral zone beside it (85.1). [Risk Management](../hockey-iq/risk_management.md) carries the delay-of-game rule.
 
@@ -981,15 +982,17 @@ Special-teams draws are about 10 a game (9.6 in 2024-25, 10.1 in 2025-26, from N
 ### Power-play draws
 
 ```facts
-Rule: The team awarded the power play chooses which end-zone dot the draw starts at — NHL and IIHF Rule 76.2; USA Hockey gives no such choice (Rules 612(b), 624(a))
-Rule: USA Hockey gives no dot choice here or after an icing (Rules 612(b), 624(a)); the IIHF follows the NHL
+Rule: The team awarded the power play chooses which end-zone dot the draw starts at — NHL and IIHF Rule 76.2, PWHL 78.2, and Hockey Canada 6.4(b) in Junior and Senior only
+Rule: USA Hockey (612(b), 624(a)) and CARHA (39(a), 65(a)) give no dot choice here or after an icing, and a CARHA power-play draw can fall in the neutral zone (39(a) Note)
 Action: Where you have the choice, pick your centre's strong side or the side your one-timer threat shoots from
 Key: The entry you avoid is worth more than the draw you win
 Priority: Win the draw, or make sure you do not lose it cleanly — a tie-up that keeps the puck in the zone is fine
 Never: Fire a fancy set play that ends in a clearance
 ```
 
-**The team awarded the power play chooses which end-zone dot the draw starts at** (Rule 76.2). Use it: pick your centre's strong side, or the side your one-timer shoots from. A surprising number of teams do not think about it — a coaching observation, not a count. **The IIHF gives the same choice, so it is yours everywhere in Britain.** **USA Hockey gives no choice, here or after an icing** — the official picks the spot (612(b), 624(a)), so prepare for either side instead.
+**Where your book lets the power-play team pick the dot, pick it**: your centre's strong side, or the side your one-timer shoots from. A surprising number of teams do not think about it — a coaching observation, not a count. The NHL, IIHF and PWHL give the choice (76.2; PWHL 78.2), so it is yours everywhere in Britain; Hockey Canada only in Junior and Senior, if you name the dot before the change (6.4(b)); USA Hockey and CARHA never, so prepare for either side.
+
+**On a delayed penalty against them, keep the puck and don't hand the referee a whistle of your own.** Ice it and, under USA Hockey, Hockey Canada and CARHA, the power-play draw leaves their end for a neutral-zone dot outside your own blue line (612(b)(4); 6.3(c)(iv); 39(b)). Under USA Hockey any whistle you cause costs you their end (612(b)(4)); under CARHA so does a puck you put out of play from your own zone, or an offside pass over the red line.
 
 League-wide, power-play units win about **54% of their draws** (53.6% in 2024-25, 54.4% in 2025-26, computed from NHL official data) — better personnel, and often a winger in the dot for the kill.
 
@@ -1066,7 +1069,7 @@ Rule: The freeze falls on the team that iced, so the home team keeps last change
 Rule: After an icing the IIHF imposes both the no-change rule and the time-out ban in the NHL's words; USA Hockey imposes neither, but bounds both by the same line change procedure — five seconds a side to change, and the time-out requested before that procedure ends (Rules 624, 204(a), 636(f))
 Rule: Hockey Canada is a fourth answer — 6.7(d) applies the no-change rule in U18AAA and Junior, and in Senior at the Member's option; 6.7(d)(iii) lets either team take its time-out after an icing, though the team that iced may not substitute during it
 Rule: CARHA writes no icing change bar and no time-out, but Rule 19(d) allows each team one change per stoppage, and a late change is sent back the first time and a bench minor after that (19(e), 19(g))
-Rule: Under NHL and IIHF rules the attacking team picks the dot (Rule 81.2); USA Hockey gives no choice (Rule 624(a))
+Rule: Under NHL, IIHF and PWHL rules the attacking team picks the dot (81.2, PWHL 83.2), under Hockey Canada only in Junior and Senior (6.4(b)); USA Hockey (624(a)) and CARHA (65(a)) give no choice
 Rule: Under the NHL, the PWHL and the IIHF 2026/27 book the first faceoff violation after an icing ejects nobody's centre, on either team (NHL and IIHF 76.4, PWHL 78.4)
 Rule: The free first faceoff violation after an icing is Hockey Canada's only in Junior divisions (Rule 6.5(a)), and neither USA Hockey (613) nor CARHA (57) writes one at all
 Rule: The IIHF 2025/26 book had no post-icing carve-out and needed none, because its first violation on any draw was already a warning (IIHF 2025/26 Rules 76.6, 76.7)
@@ -1080,12 +1083,12 @@ The single most exploitable situation in the game, and it works in both directio
 **When they iced it:**
 - **Play fast.** Their disadvantage is fatigue, and it evaporates the moment the stoppage lets them breathe. Win the draw and attack immediately.
 - **You can change; they cannot.** Under the NHL, the IIHF and the PWHL the team that iced may not change lines (Rules 81.4, 82.1) or take a timeout (87.1), though an injured player can still be replaced. So you answer whoever they are stuck with — one of the largest matchup edges a coach gets, for one shift. The freeze falls only on **the team that iced**: if the visitors ice it, the home team still changes and keeps last change. The IIHF Situation Handbook says so directly — *"Team B may make a complete line change if they so choose"* (Situations 81.6 and 82.1, both editions).
-- **You choose the dot**, under NHL and IIHF rules — *"Following an 'icing', the attacking team will have the choice of which end zone dot the 'face-off' will take place"* (81.2). Pick your centre's strong side.
+- **You choose the dot**, under NHL, IIHF and PWHL rules — *"Following an 'icing', the attacking team will have the choice of which end zone dot the 'face-off' will take place"* (81.2; PWHL 83.2). Hockey Canada gives the choice only in Junior and Senior, if you name the dot before the line change (6.4(b)). Pick your centre's strong side.
 
 **Most North American books take some or all of this away.**
 - **USA Hockey** imposes neither restriction and gives no choice of dot (624(a)). Both teams change in the ordinary five-second windows (204(a)), and the time-out must be asked for before that procedure ends (636(f)) — so the team that iced may take one, but not late.
 - **Hockey Canada** applies the no-change rule only *"[i]n categories of U18AAA, Junior, and at the option of the Member in Senior"* (6.7(d)), so below those there is no freeze to exploit. Where it applies, either team may still take its time-out, but the team that iced may not substitute during it (6.7(d)(iii)). [Rules Primer](../foundation/rules_primer.md) has the full comparison.
-- **CARHA** writes no icing freeze and no time-out, but allows each team *"only one change of player(s)"* per stoppage within ten seconds (19(d), 19(g)); a late change is sent back the first time and is a bench minor after that (19(e)). **No matchup edge to chase — change once, promptly.**
+- **CARHA** writes no icing freeze and no time-out, and gives no choice of dot (65(a)), but allows each team *"only one change of player(s)"* per stoppage within ten seconds (19(d), 19(g)); a late change is sent back the first time and is a bench minor after that (19(e)). **No matchup edge to chase — change once, promptly.**
 
 **When you iced it:** you are tired, stuck in your own end, and cannot rest. Get the puck off the glass and out at the first chance; nothing clever. **The first faceoff violation after an icing does not eject the centre** (Rule 76.4) — one free warning for each team, so do not count on their centre being tossed either. In Britain the IIHF 2026/27 book and the In-House Rules give the same carve-out. ⚠️ **In a North American game, check first:** Hockey Canada gives it only in Junior (6.5(a)), and USA Hockey and CARHA not at all. See "The icing exception" above.
 

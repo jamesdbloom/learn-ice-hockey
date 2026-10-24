@@ -617,14 +617,12 @@ const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
 // partner and his centre", and the scoreboard sentence lost its worked example. The coaching
 // choice, the scoreboard hedge and the ⚠️-led contact limb are intact and still in that order,
 // and the glyph still opens the last sentence so the amber band covers the contact limb alone.
-// ⚠️ SPLIT 23 October 2026 into named limbs so the two captions can carry different amounts
-// without drifting: every sentence is still written once. pinch-centre-high carries all four;
-// pinch-centre-below-the-goal-line drops only the wingers/count sentence and the "Three things"
-// header, because in BOTH of its hosts (risk_management.md, game_management.md) it is embedded
-// directly after pinch-centre-high and the listener has just heard that sentence in the chunk
-// before. It keeps the coaching choice (default, alternatives, ask), the scoreboard hedge and the
-// ⚠️-led contact limb. If pinch-centre-below-the-goal-line is ever embedded WITHOUT
-// pinch-centre-high above it, give it PINCH_CAVEATS whole again.
+// ⚠️ SPLIT 23 October 2026 into named limbs, every sentence written once. That day
+// pinch-centre-high carried four limbs and pinch-centre-below-the-goal-line dropped the
+// wingers/count sentence and the "Three things" header. SUPERSEDED 24 October 2026 (below): both
+// were cut, so both captions now carry the same three limbs — PINCH_COVER, PINCH_SCOREBOARD and
+// the ⚠️-led PINCH_CONTACT, in that order — and the "four sentences" and "fronts three" notes
+// above describe the older text.
 const PINCH_COVER =
   'Who covers the point behind a pinch is a coaching choice, not a law of hockey: some teams ' +
   'give that job to the centre, some to whichever forward is highest, and some slide the ' +
@@ -640,8 +638,8 @@ const PINCH_CONTACT =
 // voiced only through pinch-centre-high; all four of its hosts were rendered (risk_management,
 // defender, offensive_zone_play, game_management) before the cut. PINCH_COVER, PINCH_SCOREBOARD
 // and the ⚠️-led PINCH_CONTACT are unchanged and still in that order, so "And no contact" still
-// follows the scoreboard sentence. The note above about restoring PINCH_CAVEATS whole to
-// pinch-centre-below-the-goal-line no longer applies: the two constants are now identical.
+// follows the scoreboard sentence. The two constants are now identical, so neither caption
+// has anything left to restore.
 const PINCH_CAVEATS = PINCH_COVER + PINCH_SCOREBOARD + PINCH_CONTACT;
 const PINCH_CAVEATS_AFTER_HIGH = PINCH_CAVEATS;
 

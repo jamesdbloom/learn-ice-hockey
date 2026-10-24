@@ -121,7 +121,7 @@ At a whistle the **visiting team puts its line-up on the ice first** (up to five
 
 **After an icing, the team that iced it may not change**, home or away — bar replacing a goalie pulled for an extra attacker, replacing an injured player, or a penalty that changes on-ice strength (82.1, 81.4). After the *visitors* ice it, the home team changes normally and keeps last change. That is why icing is expensive: you hand the other side fresh legs *and* the matchup. See [Faceoffs](../systems/faceoffs.md) and [Game Management](../systems/game_management.md).
 
-**Knocking your own net off costs the same.** ⚠️ **You get the whistle and, unless you are hurt, you stay on the ice.** When a defending skater or goalie accidentally displaces the net, the draw goes to your end at the dot the other team picks. As after an icing, *"The offending team shall not be permitted to make any player substitutions prior to the face-off"*, on the same three exceptions (NHL and IIHF 63.8, both editions) — with no timeout (87.1) and no commercial break either (IIHF Situation 82.6; 82.7 in 2026/27).
+**Knocking your own net off costs the same.** ⚠️ **You get the whistle and, unless you are hurt, you stay on the ice.** When a defending skater or goalie accidentally displaces the net, the draw goes to your end — under the NHL and IIHF, at the dot the other team picks. As after an icing, *"The offending team shall not be permitted to make any player substitutions prior to the face-off"*, on the same three exceptions (NHL and IIHF 63.8, both editions) — with no timeout (87.1) and no commercial break either (IIHF Situation 82.6; 82.7 in 2026/27).
 
 If the referee judges it deliberate, it is a **minor for delay of game** (63.2(iv)) — or a **penalty shot** if that minor cannot be served in full before regulation ends or at any time in overtime (63.6). If it stops a goal on an open net, the referee can award the goal, and must if your goalie had been pulled or did it themselves on a breakaway (63.7).
 
@@ -900,22 +900,22 @@ Beyond the trapezoid and the red line, the goalie is a skater with the puck — 
 
 ### Why the draw is where it is
 
-**In short:** The draw goes into the zone of whoever caused the stoppage; when your team gets to pick the dot, pick deliberately.
+**In short:** The draw usually goes into the zone of whoever caused the stoppage; when your team gets to pick the dot, pick deliberately.
 
 ![](diagram:faceoff-where-the-draw-goes)
 
-Faceoff location is a **penalty and reward system**: the wronged team often picks which of the two dots in the offender's end. **Three of those choices you can exercise**: after a penalty, **the team going on the power play picks the dot** (Rule 76.2); after an icing, **the attacking team picks** (Rule 81.2); and the same goes to the attackers when a goalie freezes a shoot-in from beyond the red line or a defender knocks their own net off. **Somebody on your team should be making that choice deliberately** — [Faceoffs](../systems/faceoffs.md) covers how. The full list:
+Faceoff location is a **penalty and reward system**. Under the NHL, IIHF and PWHL the wronged team usually picks the dot in the offender's end: the power-play team after a penalty, and the attackers after an icing, a frozen shoot-in from their own half, or a net knocked off. **Hockey Canada gives that choice only in Junior and Senior, after an icing or a time penalty, and only if you name the dot before the change** (6.4(b)); **USA Hockey and CARHA give none.** **Somebody on your team should be making that choice deliberately** — [Faceoffs](../systems/faceoffs.md) covers how. The full list:
 
 | Situation | Where the draw goes |
 |---|---|
 | Start of a period, after a goal, or a penalty assessed after a goal or at the end or start of a period | Centre ice |
-| **Penalty assessed** | One of the two end-zone spots in the **offending team's zone** — and **the team awarded the power play chooses which dot** (Rule 76.2) |
-| **Icing** | End zone of the offending team; the **attacking team chooses the dot** (Rule 81.2) |
+| **Penalty assessed** | An end-zone spot in the **offending team's zone** (CARHA: the dot nearest the incident, toward that zone); under the NHL, IIHF and PWHL **the power-play team chooses which** (Rule 76.2) |
+| **Icing** | End zone of the offending team; under the NHL, IIHF and PWHL the **attacking team chooses the dot** (Rule 81.2) |
 | **Offside — carried in** | Neutral-zone spot nearest that attacking zone |
 | **Offside — passed or shot in** | The **faceoff spot in the zone closest to** where the pass or shot came from — a spot, not the patch of ice it left |
 | **Intentional offside** | End-zone spot in the **offending team's** defending zone |
-| Goalie freezes a shoot-in from beyond the red line | Goalie's own end zone; attacking team chooses the dot |
-| Defender accidentally dislodges the net | Defender's own end zone; attacking team chooses the dot |
+| Goalie freezes a shoot-in from beyond the red line | Goalie's own end zone; attacking team chooses the dot (NHL, IIHF, PWHL) |
+| Defender accidentally dislodges the net | Defender's own end zone; attacking team chooses the dot (NHL, IIHF, PWHL) |
 | Puck out of bounds | Nearest spot in the zone **from where it was shot or deflected out** |
 | Hand pass in the attacking zone | Neutral zone, outside the defending team's blue line |
 | High-sticking the puck | The spot giving the offending team **least territorial advantage** |
