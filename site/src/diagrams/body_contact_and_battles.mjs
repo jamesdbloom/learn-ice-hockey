@@ -1417,23 +1417,30 @@ const shotBlockGetClose = {
   // 22 Oct: it occurs only in the caption's chunk), so that reasoning above still holds. The
   // "safer is coaching craft" disclosure is kept in short form; both hosts voice it in the adjacent
   // chunk as well.
+  // ⚠️ SHORTENED 24 October 2026 (1,487 chars; owner: shorter is better). Cut: the drawing
+  // conventions (fourteen feet, the point shot, "one body in the lane"), the "safer is coaching
+  // craft" sentence. With "safer" gone the caption makes no safety claim for the disclosure to
+  // qualify, and both hosts voice that disclosure next to the caption anyway (render 24 Oct).
+  // ⚠️ THE COACHING-CHOICE CLOSE WAS CUT AND THEN RESTORED in short form: cutting it re-chunked
+  // body_contact_and_battles.md so the caption fell into the chunk BEFORE the technique prose, and
+  // the host's own "Convention. How much your team blocks..." line ended up two chunks away. A cut
+  // changes the chunking that the adjacency test was measured on, so re-render after cutting.
+  // KEPT WORD FOR WORD: the ⚠️ technique sentence and posture list, the two-on-one, the screen case
+  // and "commit fully ... or get out of the lane", which defender.md still voices nowhere else.
   caption:
     'Where to block a shot from, drawn in your own end with the net you are defending at the right ' +
     'and your goalie in its crease. An opposition defenceman has the puck at the point; the faint ' +
     'dashed line is its straight path to the middle of your goal, not a marking on the ice. ' +
     'Blocking from ten feet away is far more effective than blocking from three feet in front of ' +
-    'your own goalie, where a deflection is a goal. That it is also safer is coaching craft rather ' +
-    'than a measured finding. The blocker is drawn about fourteen feet out because at ten the two ' +
-    'markers would touch, and a point shot is drawn because it has room to show a distance. The ' +
-    'instruction is about any shot, and the blocker is one body in the lane, not an assignment. ' +
+    'your own goalie, where a deflection is a goal. ' +
     '⚠️ The technique is the half that hurts you, and the picture leaves it out. On your feet: padded surfaces square to ' +
     'the puck, shin guards front-on, head up and out of the shot lane, feet on the ice, hands ' +
     'behind your body with the backs of the gloves out. On a two-on-one your job as the lone ' +
     'defender is the pass and your goalie has the shooter. And from in front of your own ' +
     'goalie, a block adds a deflection to a shot they could not see. Either commit fully and take ' +
     'the shot or get out of the lane and let them see it, and the one thing you cannot do is stand ' +
-    'half in the way with your eyes closed. How much your team blocks at all is a coaching choice ' +
-    'rather than a law of hockey. So find out which yours plays, and ask your goalie what they want.',
+    'half in the way with your eyes closed. How much your team blocks at all is a coaching choice, ' +
+    'so find out which yours plays and ask your goalie what they want.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in ' +

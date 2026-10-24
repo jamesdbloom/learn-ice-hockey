@@ -708,14 +708,19 @@ const whereTheDrawGoes = {
   // wording only. The "your opponents" gloss on who chooses is load-bearing — see below.
   // ⚠️ "One of the two spots THERE", never "one of ITS two spots": "its" lands on "a
   // penalty you took", the noun just before it.
+  // ⚠️ SHORTENED AGAIN 24 October 2026 (1,410 chars). Every rule limb is still kept, for the
+  // reason above: the rules_primer.md render (24 Oct) voices only the NHL power-play and icing
+  // choices and the two offside cases in chunks 098-099, and none of the USA Hockey or Hockey
+  // Canada divergences. Cut: the picture notes ("drawn here on the lower side", "the boxes are
+  // markers, not paint", "the end you are attacking at the right") and wording only. The HC
+  // sentence on who declares the dot is unchanged.
   caption:
     'Four common stoppages and the faceoff spot each one sends the draw to — four separate ' +
-    'situations, not one play. Your own end is at the left, the end you are attacking at the ' +
-    'right. At centre ice: the start of every period, and every draw after a goal. In your own ' +
-    'end: an icing you caused, or a penalty you took. One of the two spots there is boxed because the ' +
-    'rule names the END, not the dot. Under the NHL and the IIHF the attacking team — your ' +
-    'opponents, in the situation drawn here — picks which dot. USA Hockey gives no choice of ' +
-    'dot at all, and Hockey ' +
+    'situations, not one play. Your own end is at the left. At centre ice: the start of every ' +
+    'period, and every draw after a goal. In your own end: an icing you caused, or a penalty you ' +
+    'took. Only one of the two spots there is boxed, because the rule names the END, not the dot. ' +
+    'Under the NHL and the IIHF the attacking team — your opponents here — picks which dot. USA ' +
+    'Hockey gives no choice of dot at all, and Hockey ' +
     // ⚠️ THIS SAID "only if YOU tell the referee", in a caption whose own framing is
     // "an icing you caused, or a penalty you took". HC 6.4(b) gives the choice to the
     // "attacking (non-offending) team" (hc.txt:4857), so in the situation DRAWN it belongs
@@ -729,11 +734,10 @@ const whereTheDrawGoes = {
     'were attacking: an offside where the puck was carried over. A puck SHOT or PASSED over the ' +
     'line offside goes back to the zone it came from instead, which can be your own end. In the ' +
     'end you are attacking: a goalie freeze, or any other stoppage between the end-zone dots and ' +
-    'the end boards, which under the NHL and the IIHF draws at the spot on the side it happened — ' +
-    'drawn here on the lower side. USA Hockey answers that one differently: it takes the nearest ' +
-    'spot only on its own last-play faceoff, and sends a stoppage you, the attackers, caused in ' +
-    'that zone out to the neutral zone. ' +
-    'These four are the common ones, not the whole rule, and the boxes are markers, not paint.',
+    'the end boards, which under the NHL and the IIHF draws at the spot on the side it happened. ' +
+    'USA Hockey differs on that one: it takes the nearest spot only on its own last-play faceoff, ' +
+    'and sends a stoppage you, the attackers, caused in that zone out to the neutral zone. ' +
+    'These four are the common ones, not the whole rule.',
 
   describe:
     'The full sheet, your own net at the left and the net you are attacking at the right. No ' +

@@ -625,9 +625,6 @@ const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
 // before. It keeps the coaching choice (default, alternatives, ask), the scoreboard hedge and the
 // ⚠️-led contact limb. If pinch-centre-below-the-goal-line is ever embedded WITHOUT
 // pinch-centre-high above it, give it PINCH_CAVEATS whole again.
-const PINCH_COUNT =
-  'The two wingers are not drawn: the count here is the players behind the puck, and a ' +
-  'defenceman who pinches leaves that count the moment they go. ';
 const PINCH_COVER =
   'Who covers the point behind a pinch is a coaching choice, not a law of hockey: some teams ' +
   'give that job to the centre, some to whichever forward is highest, and some slide the ' +
@@ -638,9 +635,15 @@ const PINCH_CONTACT =
   'arrive and contain, on the wall rather than on a player, and what an arrival like that may ' +
   'end in depends on whether your league allows body checking at all.';
 
-const PINCH_CAVEATS =
-  PINCH_COUNT + 'Three things this cannot promise. ' + PINCH_COVER + PINCH_SCOREBOARD + PINCH_CONTACT;
-const PINCH_CAVEATS_AFTER_HIGH = PINCH_COVER + PINCH_SCOREBOARD + PINCH_CONTACT;
+// ⚠️ 24 October 2026: PINCH_COUNT (the wingers/count picture note) and the "Three things this
+// cannot promise." header are CUT, so the two captions now carry the same three limbs. Both were
+// voiced only through pinch-centre-high; all four of its hosts were rendered (risk_management,
+// defender, offensive_zone_play, game_management) before the cut. PINCH_COVER, PINCH_SCOREBOARD
+// and the ⚠️-led PINCH_CONTACT are unchanged and still in that order, so "And no contact" still
+// follows the scoreboard sentence. The note above about restoring PINCH_CAVEATS whole to
+// pinch-centre-below-the-goal-line no longer applies: the two constants are now identical.
+const PINCH_CAVEATS = PINCH_COVER + PINCH_SCOREBOARD + PINCH_CONTACT;
+const PINCH_CAVEATS_AFTER_HIGH = PINCH_CAVEATS;
 
 const PINCH_DESCRIBE_COMMON =
   'The attacking half of the rink, the opposition net at the right, the attack having been ' +
@@ -660,15 +663,17 @@ const pinchCentreHigh = {
   half: true,
   width: 900,
 
+  // SHORTENED 24 October 2026 (1,401 chars). Cut the gloss on "pinch": every host defines it in
+  // the chunk before (render 24 Oct: risk_management 036, defender 038, offensive_zone_play 061,
+  // game_management 016). The rest is the same lesson in fewer words.
   caption:
-    'A pinch at the offensive blue line — a defenceman stepping down from the line to keep a ' +
-    'puck in their zone — with the centre high in the zone behind it, which is the arrangement ' +
-    'that makes a pinch defensible. What makes it a good pinch is not whether it works. It is ' +
-    'what is behind it if it does not: the pinching defenceman’s partner has held the middle at the line and the ' +
-    'centre is high rather than deep, so the worst the failure can produce is two of their ' +
-    'forwards against those two teammates — a rush a team can defend. That is the question to ' +
-    'run before you jump a lane, pinch or activate: not only "am I right?" but "what happens if ' +
-    'I am right and I still miss it?" ' +
+    'A pinch at the offensive blue line with the centre high in the zone behind it, which is the ' +
+    'arrangement that makes a pinch defensible. What makes a pinch good is not whether it works ' +
+    'but what is behind it if it does not: here the pinching defenceman’s partner has held the ' +
+    'middle at the line and the centre is high rather than deep, so the worst a miss can produce ' +
+    'is two of their forwards against those two teammates — a rush a team can defend. So before ' +
+    'you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am ' +
+    'right and I still miss it?" ' +
     PINCH_CAVEATS,
 
   describe:
@@ -723,7 +728,7 @@ const pinchCentreDeep = {
 
   // SHORTENED 22 October 2026 (~1,752 chars). The caption's own text was narrative only and is
   // cut to the picture, the count and the question. Its caveats are PINCH_CAVEATS_AFTER_HIGH —
-  // see the note above PINCH_COUNT for why, and when to restore PINCH_CAVEATS whole.
+  // see the notes above PINCH_COVER and above PINCH_CAVEATS (since 24 Oct 2026 the two are identical).
   caption:
     'A pinch at the offensive blue line with the centre below their goal line — the arrangement ' +
     'that makes a pinch a bad decision even when it works. In front of the pinching defenceman it ' +
