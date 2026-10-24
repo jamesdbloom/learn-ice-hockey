@@ -599,6 +599,11 @@ const netFrontScreen = {
   width: 900,
 
   caption:
+    // TRIMMED AGAIN 24 October 2026 (1,496 chars), wording only: re-rendered both hosts and every
+    // limb below still has a host that does not voice it beside the marker (OZP voices neither the
+    // book-by-book crease line nor CARHA's no-incidental-contact point; center.md voices neither the
+    // crease geometry nor REFEREE_JUDGEMENT), so nothing could go. Do not try again without a
+    // host change.
     // SHORTENED 22 October 2026 (2,617 chars; owner: shorter is better). Host trace, rendered
     // with md_to_speech for both hosts (offensive_zone_play.md "Screening", center.md "Keep your
     // body out of the crease"):
@@ -624,11 +629,10 @@ const netFrontScreen = {
     //    neutral-zone face-off.
     // ⚠️ NEGATION SEAMS kept closed: the crease geometry is stated positively (no "not the
     // half-width" for a negation to carry from), and CARHA's scope is its own sentence.
-    'The screener stands just outside the blue paint, six to eight feet out from the goal line ' +
-    "and inside the dots, on the line from the goalie's eyes to the puck rather than from the " +
-    'goalie to the net, and slides with the point man as they walk the line. The marker sits ' +
-    'nine and a half feet out only because it is wider than a player; take the depth from these ' +
-    'words. The crease is six feet deep and eight wide, so three feet out is inside the paint. A ' +
+    'Stand just outside the blue paint, six to eight feet out from the goal line, nearer eight, and inside the ' +
+    "dots, on the line from the goalie's eyes to the puck, not from the goalie to the net, and " +
+    'slide with the point man as they walk the line. The marker is drawn nine and a half feet ' +
+    'out only because it is wider than a player; take the depth from the words. The crease is six feet deep and eight wide, so three feet out is inside the paint. A ' +
     'screen from outside the crease without contact is normally legal under NHL and IIHF rules, ' +
     'so do it constantly, and ' +
     REFEREE_JUDGEMENT +
@@ -641,7 +645,7 @@ const netFrontScreen = {
     'zone as well as the goal. CARHA Rule 66(b) is stricter again: no standing in the crease ' +
     'unless the puck is in the crease area, no goal if you do, and no incidental-contact ' +
     'allowance like the NHL and IIHF give. CARHA governs CARHA-affiliated leagues only. Other ' +
-    "rec leagues may be stricter still, so read your own league's rule.",
+    "rec leagues may be stricter still; read your league's rule.",
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +

@@ -323,15 +323,18 @@ const forecheck212Stacked = {
   width: 900,
 
   caption:
-    'The strong-side or stacked 2-1-2, drawn against the same puck carrier: F1 and F2 both come ' +
-    'from the same side to overload one corner, and F3 shades to the puck side as well instead of ' +
-    'sitting weak-side, so all three forwards are on one half of the ice. The count has not ' +
-    'changed — two forwards deep, one high, both defencemen on the offensive blue line — and only ' +
-    'the sides have moved, which is why this is the same system and not a different one. What the ' +
-    'shape gives up is drawn as well: the far-side breakout, conceded deliberately. Which of the ' +
-    'two your team runs is a bench call rather than a rule, so find out before your first shift. ' +
-    'F1 and F2 are drawn arriving nowhere, because how a forechecker finishes an angle is ' +
-    'movement over time that a still frame cannot carry. ' +
+    // TRIMMED 24 October 2026 (1,521 chars; owner: shorter is better). Both hosts
+    // (forechecking_systems.md, winger.md) embed this directly after forecheck-212, whose
+    // caption is the IMMEDIATELY PRECEDING spoken chunk in both renders and carries, word for
+    // word, the "how a forechecker finishes an angle" picture disclosure and the full
+    // USA Hockey 604(a)/(b) and Hockey Canada 7.3 enumeration. So those two are cut here; the
+    // instruction to find out first, and "per fixture", are kept. If either host ever stops
+    // embedding forecheck-212 straight before this diagram, the enumeration must come back.
+    'The strong-side or stacked 2-1-2, against the same carrier: F1 and F2 come from the same ' +
+    'side to overload one corner, and F3 shades to the puck side too, so all three forwards are ' +
+    'on one half of the ice. The count is unchanged, two deep, one high and both defencemen on ' +
+    'the blue line; only the sides move. The cost is drawn too: the far-side breakout, conceded ' +
+    'on purpose. Which version your team runs is a coaching call, so find out. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. See the note on forecheck-212 above for why this
     // is short and why it is here at all. ONE OBJECTION ANSWERED, because it is a good one: a
     // diagram reviewer argued a counterweight about finishing a check is "a claim the picture
@@ -340,7 +343,7 @@ const forecheck212Stacked = {
     // from the same side to overload one corner", against a carrier it names as being behind
     // his own net -- so the caption is the thing making the claim, and the counterweight is
     // attached to the caption's instruction rather than to a route. Glyph last, same reason.
-    '\u26A0\uFE0F Sending two forwards into one corner is not a licence to go through the player in it. The carrier drawn here is behind their own net and about to turn their back to the forechecker, so the onus is on the arriving player: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    '\u26A0\uFE0F Sending two forwards into one corner is not a licence to go through the player in it. The carrier is behind their own net and about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +

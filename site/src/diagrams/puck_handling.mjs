@@ -1024,25 +1024,21 @@ const theLastPlayerBack = {
   width: 1100,
 
   caption:
-    'You are the last player back, drawn on the whole sheet with your own net at the left. You have ' +
-    'the puck in the neutral zone, two of their ' +
-    'forwards are up on you, and the shaded ice behind you holds none of your skaters: the ' +
-    'only player ' +
-    'in it is your goalie. Lose the puck here and the two of them go ' +
-    'the other way with nobody but the goalie in front of them. So the instruction ' +
-    'is a conditional rather than a ban on carrying — if losing the puck means an odd-man rush ' +
-    'against you, the move is off, always. ' +
-    'The shading is what is behind you now, not a prediction of the rush; a plan view ' +
-    'has no time in it. Two of your ' +
-    'teammates are drawn far up the ice to show what being ahead of the puck looks like, and the ' +
-    'other two are not drawn at all, because what ' +
-    'makes this the situation is only that none of the four is behind you. You are drawn as a ' +
-    'defenceman, but it can be anyone. ' +
-    '⚠️ How much individual puck carrying a team wants is a coaching choice and not a law of ' +
-    'hockey, and it varies enormously: some coaches want defencemen skating the puck out of the ' +
-    'zone whenever the lane is there, others want the first available pass, every time. ' +
-    'What is assumed here is a possession-oriented breakout ' +
-    'with a two-one-two forecheck, and this is your coach\'s call. Ask. ' +
+    // TRIMMED 24 October 2026 (1,507 chars; owner: shorter is better). Only host:
+    // puck_handling.md "When you are the last player back". Rendered: the coaching-choice
+    // paragraph this caption used to carry with its own ⚠️ ("How much individual puck carrying
+    // ... your coach's call. Ask.") is voiced in FULL by the prose straight after the marker, in
+    // the SAME spoken chunk, and the section's facts block in the chunk before carries it as
+    // three Convention: lines. So it is cut here, and the caption's one ⚠️ now opens the wall
+    // posture. The odd-man-rush conditional is kept: it is what the picture is for.
+    'You are the last player back, with your own net at the left. You have the puck in the ' +
+    'neutral zone, two of their forwards are up on you, and the shaded ice behind you holds ' +
+    'only your goalie. Lose the puck here and the two of them go the other way with nobody but ' +
+    'the goalie in front of them. So this is a conditional, not a ban on carrying: if losing ' +
+    'the puck means an odd-man rush against you, the move is off, always. The shading is what ' +
+    'is behind you now, not a prediction of the rush. Two teammates are drawn up the ice and ' +
+    'two are not drawn; what makes this the situation is that none of the four is behind you. ' +
+    'You are drawn as a defenceman, but it can be anyone. ' +
     // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep: the full posture belongs
     // where the page is ABOUT board contact). The host section, puck_handling.md "When you are
     // the last player back", is open-ice puck carrying in the neutral zone; the full posture lives
