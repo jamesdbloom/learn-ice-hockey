@@ -413,7 +413,7 @@ Options: 3-on-2 — high triangle with two driving wide and the third trailing, 
 Technique: On a drive and delay, sell the drive first and turn away from the defender, level with them or as they pivot — the delay only buys time if the drive was believed
 Read: What tells the carrier what is open is whether a defender goes with the wide driver — that single movement is the cue
 Convention: Which of these your team runs is a coaching choice, so ask instead of assuming the pattern you know is the one being played
-Rule: Every drive here stops at the paint's edge, off its red line, and none licenses hitting the goalie: deliberate contact is penalised in every book, and a charge can end your game — automatically under Hockey Canada 8.5(b), and under CARHA 52(b) in the crease
+Rule: Every drive here stops at the paint's edge, off its red line: deliberate contact with the goalie is penalised in every book, and a charge can end your game — automatically under Hockey Canada 8.5(b), and under CARHA 52(b), with at least a one-game ban (32(d)), in the crease or if it injures
 ```
 
 This is about the three of you together: **an extra attacker is worth nothing unless you use it to make one defender responsible for two people.** **"Attack the space between two defenders" and "isolate a defender" are the same instruction seen from two ends.** Go at the seam so one of them has to take you; the moment they do, a teammate has become somebody's second man, and that is your 2-on-1 inside the larger rush.
@@ -771,7 +771,8 @@ Action: Where there is no trapezoid, rim it hard and low so the goalie cannot se
 Rule: Where there is no trapezoid the forecheck still pays — USA Hockey 614(c) bars a goalie freezing the puck outside the "goalkeeper's privileged" area, which excludes the corners, and its Casebook Situation 6 penalises beating a lone attacker to a loose puck and falling on it
 Rule: Hockey Canada's Interpretation 3 to Rule 10.1(a), clause v, makes freezing it a minor with no warning once the goalie has left the crease — and clause iv names your dump-in exactly: coming out to beat an attacking player to the puck and simply jumping on it
 Read: The retrieval is not the save — a goalie covering a save out in front is a separate question (USA Hockey's Casebook excuses it under pressure; Hockey Canada's clauses conflict); see Goaltender
-Rule: Chasing their goalie is no licence to hit them — six books say they are not "fair game" outside the crease, or USA Hockey's privileged area (NHL, IIHF, PWHL 42.1, USA Hockey 607(d), Hockey Canada 8.5, CARHA 52(b)), and a charge can end your game, automatically under Hockey Canada 8.5(b)
+Rule: Chasing their goalie is no licence to hit them — six books say they are not "fair game" outside the crease, or USA Hockey's privileged area (NHL, IIHF, PWHL 42.1, USA Hockey 607(d), Hockey Canada 8.5, CARHA 52(b))
+Rule: A charge on a goalie you are chasing can end your game — automatically under Hockey Canada 8.5(b) wherever they are, and under CARHA 52(b), with at least a one-game ban (32(d)), in the crease or if it injures
 Rule: Pull up on a goalie turned to the boards for a rimmed puck — that is a hit from behind; into the boards or net unable to protect themselves, a match is mandatory (Hockey Canada 7.5(c), CARHA 53(b)); under USA Hockey, if reckless, plan on a match and a likely multi-game suspension (602(a))
 ```
 
