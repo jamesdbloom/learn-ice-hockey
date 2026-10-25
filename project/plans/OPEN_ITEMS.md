@@ -102,7 +102,13 @@ can ship once it has been reviewed.
 
 ## Podcasts
 
-- **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM. "Here is why it works" is overused (196 + 102 across 13 scripts) and the facts are too dense. The owner floated conversational, anecdotes or analogies, or two voices. **Pilots in progress for passing-and-catching:** A, a single voice rewritten around scenes (≤5 ideas, terms defined in context, varied reasons); B, a two-voice coach and newer player. Next: check that the ElevenLabs two-voice (dialogue) feature works with the approved voice and model; synthesise both pilots (~25k chars; needs an AWS login); the owner listens and picks; then remake all 13. **Hold the playing-wing re-record** (weak-side slot passage added 25 Oct, +607 chars) until the format is chosen.
+- **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM; "here is why" is overused and the facts are too dense. **Owner's direction, 25 Oct:**
+  - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = pFZP5JQG7iQjIQuC4Bku.
+  - Keep EVERY point per episode.
+  - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.
+  - Pilot A (single voice, 5 ideas) was sent to the owner.
+  - Pilot B v2 (7 ideas) is being written, then recorded with --dialogue.
+  - After approval, remake all 13. Hold the playing-wing re-record until then.
 
 - **Published audio vs the SG44–49 safety corrections (SG50 audit, 23 Oct):**
   - **ElevenLabs:** 7 scripts were fixed and passed safety review (SHIP), and re-synthesis is in flight: Winger, Switching Positions, Skating, OZP, Puck Handling and Centre Detailed, plus Basics "Carrying the Puck". Each is published once it is checked.
@@ -135,3 +141,11 @@ can ship once it has been reviewed.
 - **"Plan on a match" without the multi-game suspension (owner 19 Oct ruling), pre-existing:** rules_primer CM :1111/:1112, goaltender :1395, special_teams facts :1122, OZP §8 :801 and facts :783. Add "and a likely multi-game suspension" where USA Hockey 602(a) is priced, or rule it once-per-page like 404(b).
 - **rules-verifier.md source inventory:** it names 48 of 60 `sources/*.txt` files. The 12 missing are eih_code_of_conduct_2026, eih_dops_2026-27 (+layout), five eih_web_* pages, ihuk_club_regs_2026-27 (+layout) and ihuk_sex_gender_policy (+layout).
 - **Cross-document ladders (from SG75):** checking from behind is restated on five pages, each pointing to body_contact_and_battles as owner. Not yet measured; this is probably the larger saving. Also sweep for other rules pricing a hit from behind (boarding, IIHF 21) before any cut.
+- **Cross-document ladder demotion (census 25 Oct, scratchpad xdoc_ladders):** about 7,700–11,000 inherited ladder words sit outside body_contact. Order of value: winger, defending_the_rush, center, playing_without_the_puck, forechecking, language_and_glossary, shooting, zone_entries, special_teams, dzc, defender, then a small tail. Keep the full ladder in rules_primer and in goaltender's goalie-charge tier. Wave 1 (SG76) is done: winger, defending_the_rush, center, playing_without_the_puck and language_and_glossary, about 6,470 words. **Next wave:** forechecking, shooting, zone_entries, special_teams, dzc, defender. Lesson from wave 1 for the briefs: never write "on the head it never gets cheaper", because HC 7.6 supersedes; scope every "no bare minor" claim to "stays off the head". Left over: glossary :287 (stick reach from behind) and :425 (a six-book cross-check ladder); winger's two facts blocks at 14/14 need a call on moving limbs between layers. Byte-identical duplicate facts lines: shooting :315=:535 and :317=:539; zone_entries :394=:435.
+- **DOPS follow-ons (SG76 landed the core):**
+  - Sweep the sibling pages for the old "no British ban / discretionary / Rule 28" premise: team_play_and_culture, mental_game, goaltender, getting_started and the position pages.
+  - Check the other C.2-priced acts (slew-foot :1786 and cross-check :1459 in bcb) for an implied "the IIHF major is the whole cost".
+  - The DOPS points ladder (App D/E: 10 points means a ban) is stated nowhere.
+  - rules-verifier.md's source table omits eih_dops.
+  - The superseded 2022 IIHF Disciplinary Code is not on disk.
+- **HC 7.5 "ejects at every tier" simplification:** Interpretation 3 (a low-speed pin from behind is permitted) and Interpretation 1 (a stationary cross-check from behind is 9.2) are unvoiced. This is not unsafe; just note it if any line claims more.
