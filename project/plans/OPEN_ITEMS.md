@@ -55,7 +55,7 @@ can ship once it has been reviewed.
 
 - **ElevenLabs re-recordings: DONE 24 Oct.** All six corrected episodes are published: Switching Positions, Basics carrying-the-puck, Skating, Puck Handling, Centre and Offensive Zone Play. Transcripts match the script bodies, HEAD returns 200 and range returns 206. The Body Contact Detailed script's missing "If" is restored locally but not re-recorded; that is a low-priority row.
 
-- **NotebookLM batch 7: DONE except UK Rules (25 Oct).** Winger, Goaltender, Forechecking and Body Contact were published after cuts (record: project/reviews/notebooklm_batch7_2026-10-25.md). **07 UK and England Rules needs ONE more regeneration (pack READY for the owner: `.podcast_queue/notebooklm/remake_2026-10-20/batch8/`, steer file included)** with a per-episode steer: any neck pain means call 999 (never "severe"); a head knock with no red flag means call 111 and don't leave the player alone for 24 h; a willing fight ends your game (not "a five-minute major"); don't voice a few defensive punches as free. The live batch 6 UK Rules stays until then. Future regeneration candidates: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
+- **NotebookLM batch 7 and 8: DONE (25 Oct).** All five regenerations are published (record: project/reviews/notebooklm_batch7_2026-10-25.md). Candidates for a future regeneration: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
 - **body_contact EIHL (owner):** after the 72→54 trim, should the Sources trailer's 14 EIHL mentions be trimmed? Should the nine-line EIHL fighting facts block be cut further (each line is a different penalty)?
 - **Wave 34 leftovers:** USA Hockey Level 1 wording; caption trim policy; the centre-fly label; delete
   the unused `creaseThePuckDecides` diagram spec in center.mjs, or keep it?
@@ -125,7 +125,11 @@ can ship once it has been reviewed.
   - **Basics v2 progress (25 Oct, 21:00):**
     - **ALL 13 LIVE (34e4739, 4ef052e, 25 Oct).** Basics v2 is done.
     - Scripts: podcast_style_b/basics/v2/. Recording: scratchpad basics_v2/make.sh <slug>.
-  - **NEXT, after all Basics v2 are published (owner, 25 Oct):** apply the same two-voice treatment to the Principles (Style B detailed) episodes. First pilot ONE episode with PLAYER = QngvLQR8bsLR5bzoa6Vv (COACH = L0Dsvb3SLTyegXwtm47J). **The owner chose Passing and Receiving (25 Oct). PILOT RECORDED AND SENT to the owner 25 Oct 21:36** (script podcast_style_b/detailed/v2/passing_and_receiving.md, safety + content reviewed with fixes, transcript 0.991, 48.1 min, 21,623 credits; master wav in the session scratchpad pilot_pr/, so re-synthesise if it is lost). Waiting on the owner's verdict before remaking the other 38. The owner hears it before the rest are remade.
+  - **PRINCIPLES TWO-VOICE REMAKE: IN PROGRESS (owner, 25 Oct late): "create all the principles episodes now using this new style".** Voices: COACH = oQV06a7Gn8pbCJh5DXcO, PLAYER = lUTamkMw7gOzZbFIwmq4, chosen after five samples. Credits: about 1.8M left on 25 Oct; each episode costs about 22k.
+    - Pipeline per episode: writer agent (scratchpad principles_v2/WRITER_BRIEF.md), then a combined safety/content review (REVIEW_BRIEF.md), then fixes, then `principles_v2/make.sh <stem>` (synth, transcript ≥0.97, encode, upload, 200/206), then commit site/src/data/podcast-principles.json.
+    - Scripts: podcast_style_b/detailed/v2/<stem>.md (untracked; never stage).
+    - Wave 1 writing: getting_started, core_principles, rink_map, skating, puck_handling, shooting, center, winger. passing_and_receiving (the pilot) is being re-recorded with the new voices.
+    - **Owner ruled 25 Oct: the Basics KEEP their pair** (COACH L0Dsvb3SLTyegXwtm47J, PLAYER b5Ggo9o15QPFEkYe1Mui). That player sounds younger, which suits the Basics. The new pair is for Principles only.
   - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
   - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.

@@ -25,3 +25,21 @@
 - Delivery, tone and stress; mishearings whisper smoothed over.
 - How each join sounds.
 - Safety points the page carries only in body prose the reviewers sampled rather than read.
+
+## Batch 8: UK and England Rules regenerated and published (25 Oct, late)
+The episode was regenerated with an episode-specific instructions source covering: any neck pain means 999, never "severe"; a head knock with no red flag means 111 and don't leave them alone for 24 h; a willing fight ends your game; a few defensive punches are not free. **All four arrived** (87.8 s, 97–106 s, 1138 s, 1154 s, and takeaways 5 and 9).
+
+The safety-reviewer verdict was SHIP after cuts. 11 cuts took 28.4 min down to 25.8 min, each placed from word timings and each join re-transcribed:
+- the jersey example on the wrong ladder (In-House :233–235 makes the second offence a 10-minute misconduct);
+- "rinks dropping down to 56 by 26" stated as a floor;
+- an invented "no penalty box in U12" plus a "coaches differ" line after a rule;
+- a "first minute of this deep dive" prompt leak;
+- four invented medical mechanisms (cranial haemorrhage, tonic posturing, metabolic state, "minimum time to heal");
+- three scary or invented-physiology passages.
+
+**Accepted:**
+- no book names, so In-House-only rules reach an Elite League listener as universal: no video review, the 12-minute dive, either centre puts the stick down first;
+- "any neck pain at all" read inside the red-flag list (the guideline's own list says "severe"; this errs safe);
+- the "may view that as self-defense" gloss.
+
+Published by the same route as batch 7: master backed up (2026-10-25T230042), encode, upload. HEAD 200 and range 206 on /audio/foundation/uk_rules-e283c8e3.m4a.
