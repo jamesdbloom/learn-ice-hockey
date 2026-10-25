@@ -159,7 +159,7 @@ can ship once it has been reviewed.
   - **The rule text:** 32(d) covers only "A Game Misconduct assessed to a player for receiving a Major penalty". A match falls under 34(a) instead: "will not be permitted to take part in any further games until their case has been dealt with by the Chairman".
   - **What the pages say now:** match sites cite 34(a). Should they also say "at least one game"?
 - **DOPS wave 2: DONE (SG79, 25 Oct).** Fixed the slur sites on mental_game and team_play, added one body sentence and one facts line per page, and added penalty points to uk_rules. Still open:
-  - **Not yet covered:** winger, risk_management and game_management may still price British checking from behind without the ban.
+  - winger, risk_management and game_management were done in SG80. Winger's two from-behind facts blocks are at 14/14, so the ban is in its body only. Follow-up: add the facts line to another winger block that has room, as game_management did.
   - **Optional:** add the Appendix J under-16 limb wherever a page addresses juniors.
   - Deliberately left low (all discretionary "up to" bands, add only if a page is edited anyway):
   - winger :555 (cross-check), :556/:746/:793
