@@ -97,7 +97,26 @@ can ship once it has been reviewed.
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
 - **Leader lines over the token's letter (owner decision, SG59 measurement):** the fix is a small z-order change in rink.mjs (emit leaders before glyphs), but it shortens the visible leader by the token radius. Measured over 612 leaders in 185 diagrams: 60 vanish entirely and 314 show under 2 units if drawn under the halos; drawing between halos and bodies, none vanish and 297 show under 2. That is the visible outcome the owner already rejected once, so it needs longer leaders (LEADER_MIN) or acceptance of strike-through. Owner's call.
 - **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. Systemic options: reserve blue-line strokes (moves up to 99 diagrams) or a thicker LABEL_HALO. Owner's call; per-diagram hints otherwise.
-- **🇬🇧 shown as "GB" mid-prose on Windows: OWNER RULED 25 Oct: option (a)**, keep the flag only where it opens a block or note, and reword mid-prose flags to "In Britain" or "In the UK" without doubling an existing "In the UK". Wave pending. Original row: 187 flags in <main>, 101 of them not at the start of a block across 19 pages, with no text fallback. On Windows they render as the letters GB glued to the next word, e.g. "…next game. GB The IIHF writes…". Options: (a) keep the flag only where it opens a block or note; (b) wrap it in <span role="img" aria-label="UK">, which fixes screen readers but not the visible GB; (c) replace mid-prose flags with "In Britain" wording. Conditioning's Key focus flag was dropped in SG73 because it repeated "In the UK".
+- **🇬🇧 flag wave: DONE (SG84, 25 Oct).** 101 mid-prose flags were removed or reworded across 19 files; 86 remain, all opening a block. The convention is now in the style guide. Follow-ons:
+  - **The "Playing in Britain? The IIHF flags are yours" header** (about 35 pages, plus game_management :44, rules_primer :45 and uk_rules KT :618) invites reading "flags" as the visible 🇬🇧. Suggested: "Wherever a page gives the IIHF rule, it is yours". This is a separate wave across all pages.
+  - **Sentences that lost their only spoken British cue** (md_to_speech voiced the flag as "For British readers"). Each still names the IIHF, so none is wrong, but a British listener is no longer told the sentence is theirs. The content-reviewer and safety-reviewer lists, merged:
+    - on_ice_communication :190, :194, :392
+    - rules_primer :378, :386, :388, :768, :774, :800
+    - playing_without_the_puck :731
+    - risk_management :422
+    - team_play_and_culture :319
+    - goaltender :700, :750, :1032 (:974, :1395 and :1425 are now repaired)
+    - defensive_zone_coverage :152
+    - game_management :1023
+    - special_teams :948, :1024
+    - shooting :888
+
+    Fix only after checking that the In-House Rules and the EIHL Casebook do not amend the rule involved. The EIHL amends 42 (charging), which is why rules_primer :800 and playing_without_the_puck :731 were left alone.
+  - **SG84 sibling tensions, found by the rules-verifier (report only):**
+    - EIHL 86.6(ii) says warm-up violations "cannot be enforced by on-ice officials". team_play :736 follows it, but goaltender :1425 states the referee authorisation without it.
+    - bcb :200/:211 say the Casebook "reverses IIHF 5.6", while goaltender says IIHF 5.6's no-penalty sentence "does not govern" the warm-up. Pick one reading.
+    - goaltender facts :1409 (297/300) still says "the NHL and IIHF report a breach" with no Elite League limb; it needs a restructure.
+    - bcb :1850 gives the 2025/26 fighting "may be ejected" wording without Table 6's automatic game misconduct. Same gap as team_play :358, which is now fixed.
 
 ## Podcasts
 

@@ -41,7 +41,7 @@
 
 **Trailing teams shoot more and leading teams shoot less.** That is well documented, and it distorts every raw statistic. Much else here is coaching lore rather than measurement, and the document says so where it matters.
 
-**Which book your league runs changes some of the costs** — what icing costs you, whether coincidental minors make it 4-on-4, and whether there is overtime at all. 🇬🇧 **In Britain the IIHF flags are yours**, and many fixtures have no overtime. Where a rule *is* the tactic, it is set out in full.
+**Which book your league runs changes some of the costs** — what icing costs you, whether coincidental minors make it 4-on-4, and whether there is overtime at all. **In Britain the IIHF flags are yours**, and many fixtures have no overtime. Where a rule *is* the tactic, it is set out in full.
 
 ---
 
@@ -1020,7 +1020,7 @@ Convention: Two forwards and two defencemen is the common personnel choice, but 
 Priority: The defensive priority is the far-side rush; losing a puck at the offensive blue line is a 2-on-1 with nobody to help
 ```
 
-Under **Rule 19.1**, when **one minor is assessed to a player on each team at the same stoppage** and no other penalties are on the clock, both are served **without substitution** and the teams play **four skaters against four**. 🇬🇧 **That trigger is the NHL's and the PWHL's (PWHL 19.1), not the IIHF's.** IIHF Rule 19.1 requires *"immediate substitution"* for equal minors, and its Situation Handbook confirms it at **Situation 84.10**: *"Since the penalties are coincidental, the penalties are not served on the clock and the teams are playing 5 – 5."* A British game still reaches 4-on-4 when one team takes a minor and the other a major at the same stoppage (IIHF Appendix IV Table 13, Table 15 in 2025/26, examples 18-20 and 32 the same in both), so the tactics below still apply. ⚠️ **Late in the game that route closes too** — in the last five minutes of regulation and in overtime, IIHF Rule 19.3 makes a minor against a major **5-on-4**; see [Coincidental penalties](#coincidental-penalties) below.
+Under **Rule 19.1**, when **one minor is assessed to a player on each team at the same stoppage** and no other penalties are on the clock, both are served **without substitution** and the teams play **four skaters against four**. **That trigger is the NHL's and the PWHL's (PWHL 19.1), not the IIHF's.** IIHF Rule 19.1 requires *"immediate substitution"* for equal minors, and its Situation Handbook confirms it at **Situation 84.10**: *"Since the penalties are coincidental, the penalties are not served on the clock and the teams are playing 5 – 5."* A British game still reaches 4-on-4 when one team takes a minor and the other a major at the same stoppage (IIHF Appendix IV Table 13, Table 15 in 2025/26, examples 18-20 and 32 the same in both), so the tactics below still apply. ⚠️ **Late in the game that route closes too** — in the last five minutes of regulation and in overtime, IIHF Rule 19.3 makes a minor against a major **5-on-4**; see [Coincidental penalties](#coincidental-penalties) below.
 
 4-on-4 is a higher-scoring game state than 5-on-5 — in 2007-08 a goal was scored every **12.1 minutes** at 4-on-4 versus **13.7 minutes** at 5-on-5. Both are **combined** rates: the time until *either* team scores, not until one particular team does. How to play it:
 

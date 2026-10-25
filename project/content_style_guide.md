@@ -233,6 +233,15 @@ know that the IIHF flag is theirs. So:
 - Where **England Ice Hockey amends** the IIHF rule, say so and cite the
   In-House Rules. [`uk_rules.md`](../content/foundation/uk_rules.md) owns the
   full amendment list; point at it rather than restating it.
+- **The 🇬🇧 glyph opens a block or nothing (owner ruling, 25 Oct 2026).** Put it
+  only at the start of a paragraph, list item, blockquote line, table cell or facts
+  value. On Windows the emoji renders as the letters "GB" glued to the next word, so
+  mid-sentence it reads "…next game. GB The IIHF writes…". Mid-prose, say it in
+  words ("In Britain", "the IIHF book British hockey plays"), or name the British
+  competition when the rule belongs to one competition. Never widen a
+  competition-scoped rule to "Britain". `md_to_speech` voices the glyph as "For
+  British readers.", so removing one also removes a spoken cue: check that the
+  sentence still tells a British listener it is theirs.
 - **Do not write "EIHA is defunct"** — England Ice Hockey is the same body,
   renamed. Both names are in live use.
 - **Do not attribute the EIHL Casebook's contents.** This corpus has not
