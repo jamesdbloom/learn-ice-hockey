@@ -110,9 +110,9 @@
         "foundation/rink_map",
         "foundation/rules_primer"
       ],
-      "bytes": 5659912,
-      "duration_s": 678.1,
-      "audio": "/audio/principles/basics/how-a-game-works-da49f37c.m4a",
+      "bytes": 6625288,
+      "duration_s": 795.0,
+      "audio": "/audio/principles/basics/how-a-game-works-a0d2e86e.m4a",
       "guid": "learn-ice-hockey:core:how-a-game-works"
     },
     {
@@ -122,9 +122,9 @@
         "off-the-ice/equipment",
         "technique/body_contact_and_battles"
       ],
-      "bytes": 5988858,
-      "duration_s": 717.2,
-      "audio": "/audio/principles/basics/gear-and-staying-safe-8c1e89c3.m4a",
+      "bytes": 6637869,
+      "duration_s": 795.1,
+      "audio": "/audio/principles/basics/gear-and-staying-safe-3c2412f2.m4a",
       "guid": "learn-ice-hockey:core:gear-and-staying-safe"
     },
     {
@@ -179,9 +179,9 @@
         "hockey-iq/playing_without_the_puck",
         "hockey-iq/puck_support_and_spacing"
       ],
-      "bytes": 6770907,
-      "duration_s": 811.2,
-      "audio": "/audio/principles/basics/playing-without-the-puck-f7d18d5b.m4a",
+      "bytes": 7787672,
+      "duration_s": 932.8,
+      "audio": "/audio/principles/basics/playing-without-the-puck-5c7cbf49.m4a",
       "guid": "learn-ice-hockey:core:playing-without-the-puck"
     },
     {
@@ -202,9 +202,9 @@
       "sources": [
         "positions/center"
       ],
-      "bytes": 6704728,
-      "duration_s": 804.6,
-      "audio": "/audio/principles/basics/playing-centre-931b7ee1.m4a",
+      "bytes": 7493989,
+      "duration_s": 898.9,
+      "audio": "/audio/principles/basics/playing-centre-19c999f7.m4a",
       "guid": "learn-ice-hockey:core:playing-centre"
     },
     {
