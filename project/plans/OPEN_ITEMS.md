@@ -103,7 +103,7 @@ can ship once it has been reviewed.
 ## Podcasts
 
 - **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM; "here is why" is overused and the facts are too dense. **Owner's direction, 25 Oct:**
-  - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = pFZP5JQG7iQjIQuC4Bku.
+  - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
   - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.
   - Pilot A (single voice, 5 ideas) was sent to the owner.
@@ -138,7 +138,10 @@ can ship once it has been reviewed.
 - **Link baseline size measures (low, from the 23 Oct fix):** the checker now accepts a match against either the decoded or the on-wire size, so false 75–80% flags are gone. Residual gap: an untagged row can hide a real ~4x shrink or growth by coincidence. Refresh baselines with --write-baseline (rows are now tagged [bytes=decoded]) to close it.
 - **HECC wording (nit, SG55):** body_contact :913 says "HECC's … page asks" while the trailer now says the reproduced brochure asks. Both are true. In :2139's trailer, "all three sources" sits near "those four".
 
-- **"Plan on a match" without the multi-game suspension (owner 19 Oct ruling), pre-existing:** rules_primer CM :1111/:1112, goaltender :1395, special_teams facts :1122, OZP §8 :801 and facts :783. Add "and a likely multi-game suspension" where USA Hockey 602(a) is priced, or rule it once-per-page like 404(b).
+- **602(a) suspension rollout (SG81, 25 Oct): about 130 sites done.** Still to do:
+  - Cap-blocked facts lines: bcb :577/:578/:675, forechecking :625/:626, OZP :646/:926/:931, winger :518–520/:748, game_management :900. Restructure each with a verifier, or rely on the page-level statement.
+  - "Plan on one/it (602(a))" sites the census missed: about 15 in the rules_primer body-fouls section, plus special_teams :1121, goaltender :1396, rules_primer :1110/:1112, center :425, bcb :670/:676/:729/:733/:1716/:1740/:1965, equipment :813, conditioning :608 and reading_diagrams :301.
+  - forechecking :862: restore "or one meant to injure" if room.
 - **rules-verifier.md source inventory:** it names 48 of 60 `sources/*.txt` files. The 12 missing are eih_code_of_conduct_2026, eih_dops_2026-27 (+layout), five eih_web_* pages, ihuk_club_regs_2026-27 (+layout) and ihuk_sex_gender_policy (+layout).
 - **Cross-document ladders (from SG75):** checking from behind is restated on five pages, each pointing to body_contact_and_battles as owner. Not yet measured; this is probably the larger saving. Also sweep for other rules pricing a hit from behind (boarding, IIHF 21) before any cut.
 - **Cross-document ladder demotion: DONE (SG76–SG78, 25 Oct), about 12,200 words.** Leftovers:

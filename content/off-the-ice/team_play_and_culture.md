@@ -288,7 +288,7 @@ The line is widely observed after almost every game in youth and much of recreat
 - **When the referee sends you somewhere, go.** USA Hockey gives a minor for not going straight to the bench when told during an altercation (615(e)), and another for dropping your stick or gloves if you were not in the original altercation (615(a)).
 - **Coming off the bench.** USA Hockey's major plus game misconduct for leaving a bench during an altercation (629(a)) has no time limit, and fighting off the playing surface is a major plus a game misconduct *"before, during or after the game"* (615(b)). **Coming over the boards costs the same after the handshake as in the first period.**
 - **Your mouth.** USA Hockey makes abusive language after the game a game misconduct (601(d)(10)) — harsher than a misconduct for the same words during it — and disputing, taunting or inciting after the game starts at a misconduct. ⚠️ **Hateful or discriminatory language is a match penalty anywhere in the rink, before, during or after the game** (601(e)(3)), with a recommended three-to-five-game suspension that the authorities may increase, or require a hearing.
-- **The shove.** Under USA Hockey avoidable contact after the whistle is a minor (640(c)), and a major plus a game misconduct if it recklessly endangers an opponent (640(g)) — and if it does, plan on a match (602(a)).
+- **The shove.** Under USA Hockey avoidable contact after the whistle is a minor (640(c)), and a major plus a game misconduct if it recklessly endangers an opponent (640(g)) — and if it does, plan on a match and a likely multi-game suspension (602(a)).
 
 ### Not running up the score
 
