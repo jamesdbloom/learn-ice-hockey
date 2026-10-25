@@ -144,9 +144,9 @@
       "sources": [
         "technique/puck_handling"
       ],
-      "bytes": 6002058,
-      "duration_s": 719.4,
-      "audio": "/audio/principles/basics/carrying-the-puck-1b28c67d.m4a",
+      "bytes": 7176611,
+      "duration_s": 860.5,
+      "audio": "/audio/principles/basics/carrying-the-puck-b910a573.m4a",
       "guid": "learn-ice-hockey:core:carrying-the-puck"
     },
     {
@@ -167,9 +167,9 @@
       "sources": [
         "technique/shooting"
       ],
-      "bytes": 5391403,
-      "duration_s": 646.9,
-      "audio": "/audio/principles/basics/shooting-ed72b4be.m4a",
+      "bytes": 5930306,
+      "duration_s": 710.9,
+      "audio": "/audio/principles/basics/shooting-c424b178.m4a",
       "guid": "learn-ice-hockey:core:shooting"
     },
     {
@@ -213,9 +213,9 @@
       "sources": [
         "positions/winger"
       ],
-      "bytes": 5601444,
-      "duration_s": 671.4,
-      "audio": "/audio/principles/basics/playing-wing-19d84c34.m4a",
+      "bytes": 6417558,
+      "duration_s": 768.9,
+      "audio": "/audio/principles/basics/playing-wing-78d7ccd3.m4a",
       "guid": "learn-ice-hockey:core:playing-wing"
     },
     {

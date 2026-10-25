@@ -104,6 +104,11 @@ can ship once it has been reviewed.
 
 - **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM; "here is why" is overused and the facts are too dense. **Owner's direction, 25 Oct:**
   - **25 Oct evening: the owner APPROVED Pilot B** (two voices; COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui). Remake all 13 Basics in this format. Add a **panic-passing** point (passing without looking): a dedicated idea in passing-and-catching, and a brief nod elsewhere where natural. Pipeline per episode: write → content-review → synthesise with --dialogue → transcript check → publish.
+  - **Basics v2 progress (25 Oct, 20:40):**
+    - **Live:** passing-and-catching, teamwork, playing-wing and carrying-the-puck (uploaded).
+    - **Encoded but NOT uploaded:** shooting. The AWS SSO login expired mid-run. ⚠️ Do NOT commit site/src/data/podcast-basics.json until shooting is uploaded.
+    - **Reviewed SHIP, still to record:** playing-without-the-puck, playing-centre, how-a-game-works, gear, skating, defending, playing-defence and playing-goal.
+    - Scripts: podcast_style_b/basics/v2/. Recording: scratchpad basics_v2/make.sh <slug>.
   - **NEXT, after all Basics v2 are published (owner, 25 Oct):** apply the same two-voice treatment to the Principles (Style B detailed) episodes. First pilot ONE episode with PLAYER = QngvLQR8bsLR5bzoa6Vv (COACH = L0Dsvb3SLTyegXwtm47J). The owner hears it before the rest are remade.
   - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
