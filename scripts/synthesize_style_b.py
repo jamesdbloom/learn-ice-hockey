@@ -19,8 +19,48 @@ ElevenLabs ran on the engine's defaults, and the winning sample was short. Every
 one of them is a constant here with a CLI override, because the first real use of
 this script is somebody A/B-ing them at length.
 
-⚠️ SINGLE VOICE BY DECISION, 18 September 2026. Do not add a second-speaker path —
-`tts_sample.py` carries the reasoning and it stands for Style B.
+⚠️ SINGLE VOICE IS THE DEFAULT, BY DECISION, 18 September 2026 — `tts_sample.py`
+carries the reasoning. ⚠️ An OPT-IN `--dialogue` mode was added 25 October 2026 for
+the two-voice Basics pilot (`podcast_style_b/basics/pilots/*_B_dialogue.md`). It
+exists so the owner CAN hear that pilot; adopting two voices for the series reopens
+the 18 September decision, and that is the owner's call, not this script's. Without
+`--dialogue` nothing below has changed: the single-voice path is byte-for-byte the
+code it was, and prints the same output.
+
+DIALOGUE MODE (`--dialogue --voice-map COACH=<id>,PLAYER=<id>`)
+--------------------------------------------------------------
+⚠️ ENDPOINT NOT YET CALLED LIVE. Everything here is from the ElevenLabs API
+reference, read 25 October 2026, not from a measured request:
+
+    POST https://api.elevenlabs.io/v1/text-to-dialogue?output_format=<fmt>
+    body {"inputs": [{"text", "voice_id"}, ...], "model_id", "settings",
+          "previous_text", "future_text", "previous_request_ids"}
+
+  * model: `eleven_v4` (the docs list v4 as available on Text to Dialogue and
+    recommend it; the endpoint's own default is `eleven_v3`, so the id is always sent).
+  * `settings` accepts ONLY `stability` and `similarity` (the docs' field name — not
+    `similarity_boost`). ⚠️ `--style`, `--speed` and speaker boost have NO dialogue
+    field and are NOT sent; the dry run says so rather than letting them look applied.
+  * continuity fields are `previous_text` and `future_text` (NOT `next_text`), each
+    capped at 100 characters by the docs. Whether they are billed is UNMEASURED.
+  * the docs ask for the combined `inputs[].text` to stay at or under 2,000
+    characters per request "for reliable generation"; that is the split target.
+
+THE INPUT. Inside the SCRIPT START/END delimiters (so the "Notes (not spoken)"
+section after SCRIPT END is never sent, exactly as in single-voice mode), every
+paragraph must open with an upper-case speaker label — `COACH:` or `PLAYER:` — and
+the label is stripped, never spoken. ⚠️ A paragraph with no label is a HARD ERROR,
+not a guess: attaching it to the previous speaker would put words in the wrong
+mouth and sound perfectly fine doing it. A speaker missing from `--voice-map` is a
+hard error before any request.
+
+THE SPLIT. One paragraph is one segment. Consecutive segments are packed greedily
+into requests of ≤ `--dialogue-max-chars` (2,000) characters of spoken text, so
+every seam falls BETWEEN two lines, never inside one. A segment is split only if it
+alone exceeds the limit, and then at sentence ends; a single sentence over the
+limit is a hard error, as in single-voice mode. Chunks are cached by a content hash
+of (segments + voice ids + model + dialogue settings + format) in the same cache
+directory and stitched by the same `stitch()` — gapless byte-join for `pcm_*`.
 
 REQUEST STITCHING IS THE HARD PART, AND IT IS A CORRECTNESS REQUIREMENT
 -----------------------------------------------------------------------
@@ -109,6 +149,10 @@ USAGE
     python3 scripts/synthesize_style_b.py podcast_defender_script.local.md --dry-run
     python3 scripts/synthesize_style_b.py SCRIPT.md --out ~/Downloads/defender.mp3
     python3 scripts/synthesize_style_b.py SCRIPT.md --out OUT.mp3 --stability 0.5
+    python3 scripts/synthesize_style_b.py PILOT_B.md --dialogue --dry-run
+    python3 scripts/synthesize_style_b.py PILOT_B.md --dialogue \\
+        --voice-map COACH=<id>,PLAYER=<id> --format pcm_44100 --out OUT.wav
+    python3 scripts/synthesize_style_b.py --self-test      # offline; parser + chunker
 
 The script file may be a Style B markdown script — the spoken body is taken from
 between `===== SCRIPT START =====` and `===== SCRIPT END =====`, so the notes
@@ -167,6 +211,15 @@ SCRIPT_START = "===== SCRIPT START ====="
 SCRIPT_END = "===== SCRIPT END ====="
 
 SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
+
+# ── Dialogue mode. ⚠️ From the API reference, 25 October 2026; NOT yet called live. ──
+# POST /v1/text-to-dialogue, output_format as a query parameter, model `eleven_v4`.
+DIALOGUE_URL = "https://api.elevenlabs.io/v1/text-to-dialogue"
+# The docs: keep combined inputs[].text "at or below 2,000 characters per request".
+DIALOGUE_MAX_CHARS = 2000
+# The docs cap `previous_text` and `future_text` at 100 characters each.
+DIALOGUE_CONTEXT_CHARS = 100
+SPEAKER_LABEL = re.compile(r"^([A-Z][A-Z0-9 _-]*?):[ \t]+(\S.*)$", re.S)
 
 
 class Failure(RuntimeError):
@@ -251,6 +304,113 @@ def split_script(body: str, max_chars: int) -> list[str]:
     if not chunks:
         raise Failure("splitting produced no chunks")
     return chunks
+
+
+# ─────────────────────────────── dialogue input ───────────────────────────────
+
+Segment = tuple[str, str]  # (speaker label, spoken text with the label stripped)
+
+
+def parse_dialogue(body: str) -> list[Segment]:
+    """One paragraph = one segment, each opening with an upper-case `LABEL:`.
+
+    ⚠️ A paragraph with no label is a hard error. Guessing the previous speaker
+    would put a line in the wrong voice, and the result would sound fine.
+    """
+    segments: list[Segment] = []
+    for para in (p.strip() for p in re.split(r"\n\s*\n", body)):
+        if not para:
+            continue
+        m = SPEAKER_LABEL.match(para)
+        if not m:
+            raise Failure("dialogue mode: a paragraph has no speaker label "
+                          f"(expected e.g. 'COACH: ...'):\n  {para[:120]}")
+        text = " ".join(m.group(2).split())
+        segments.append((m.group(1).strip(), text))
+    if not segments:
+        raise Failure("dialogue mode: no speaker-labelled lines found")
+    return segments
+
+
+def parse_voice_map(spec: str | None) -> dict[str, str]:
+    """`COACH=<id>,PLAYER=<id>` → {"COACH": id, "PLAYER": id}. Ids are not secrets."""
+    if not spec:
+        return {}
+    out: dict[str, str] = {}
+    for item in spec.split(","):
+        if not item.strip():
+            continue
+        if "=" not in item:
+            raise Failure(f"--voice-map entry {item!r} is not LABEL=<voice id>")
+        label, vid = (s.strip() for s in item.split("=", 1))
+        if not label or not vid:
+            raise Failure(f"--voice-map entry {item!r} is not LABEL=<voice id>")
+        if label in out:
+            raise Failure(f"--voice-map names {label} twice")
+        out[label] = vid
+    return out
+
+
+def split_dialogue(segments: list[Segment], max_chars: int) -> list[list[Segment]]:
+    """Pack consecutive segments into requests of ≤ max_chars spoken characters.
+
+    Seams fall only BETWEEN segments. A segment is split only when it alone is over
+    the limit, and then at sentence ends; a single over-limit sentence is an error.
+    """
+    if max_chars > API_HARD_MAX_CHARS:
+        raise Failure(f"--dialogue-max-chars {max_chars} exceeds the API's own "
+                      f"{API_HARD_MAX_CHARS}-character limit")
+    units: list[Segment] = []
+    for speaker, text in segments:
+        if len(text) <= max_chars:
+            units.append((speaker, text))
+            continue
+        buf = ""
+        for sentence in SENTENCE_END.split(text):
+            if len(sentence) > max_chars:
+                raise Failure(
+                    f"a single {speaker} sentence is {len(sentence)} characters, over "
+                    f"the {max_chars}-character dialogue request size, and splitting it "
+                    f"would put a seam mid-sentence. Split the sentence in the script."
+                    f"\n  {sentence[:120]}...")
+            if buf and len(buf) + 1 + len(sentence) > max_chars:
+                units.append((speaker, buf))
+                buf = sentence
+            else:
+                buf = f"{buf} {sentence}".strip()
+        if buf:
+            units.append((speaker, buf))
+
+    chunks: list[list[Segment]] = []
+    cur: list[Segment] = []
+    size = 0
+    for unit in units:
+        if cur and size + len(unit[1]) > max_chars:
+            chunks.append(cur)
+            cur, size = [], 0
+        cur.append(unit)
+        size += len(unit[1])
+    if cur:
+        chunks.append(cur)
+    if not chunks:
+        raise Failure("dialogue splitting produced no chunks")
+    return chunks
+
+
+def context_tail(text: str, limit: int = DIALOGUE_CONTEXT_CHARS) -> str:
+    """The last ≤limit characters, starting at a word boundary."""
+    if len(text) <= limit:
+        return text
+    cut = text[-limit:]
+    return cut.split(" ", 1)[1] if " " in cut else cut
+
+
+def context_head(text: str, limit: int = DIALOGUE_CONTEXT_CHARS) -> str:
+    """The first ≤limit characters, ending at a word boundary."""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    return cut.rsplit(" ", 1)[0] if " " in cut else cut
 
 
 # ─────────────────────────────── credentials ───────────────────────────────
@@ -349,6 +509,76 @@ def synthesise(text: str, key: str, args, settings: dict,
             # ⚠️ 4xx other than 429 will not get better by being repeated, and a
             # retry loop over a billable endpoint is a way to spend a quota on an
             # error. Only rate limits and server faults are retried.
+            if e.code != 429 and e.code < 500:
+                raise Failure(f"HTTP {e.code} — {detail}") from None
+            last = Failure(f"HTTP {e.code} — {detail}")
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            last = Failure(str(e))
+        if attempt < args.retries:
+            wait = 2 ** attempt
+            print(f"    retry {attempt}/{args.retries - 1} in {wait}s — {last}", file=sys.stderr)
+            time.sleep(wait)
+    raise Failure(f"gave up after {args.retries} attempts: {last}")
+
+
+def dialogue_settings(args) -> dict:
+    """The only two fields the dialogue `settings` object documents."""
+    return {"stability": args.stability, "similarity": args.similarity}
+
+
+def dialogue_inputs(chunk: list[Segment], voice_map: dict[str, str]) -> list[dict]:
+    return [{"text": text, "voice_id": voice_map[speaker]} for speaker, text in chunk]
+
+
+def dialogue_chunk_hash(inputs: list[dict], args, settings: dict) -> str:
+    """As `chunk_hash`, for a dialogue request. `mode` keeps the two key spaces apart.
+
+    Continuity context is not hashed, for the reason `chunk_hash` gives.
+    """
+    material = json.dumps({
+        "mode": "dialogue",
+        "inputs": inputs,
+        "model": args.model,
+        "format": args.format,
+        "settings": settings,
+    }, sort_keys=True)
+    return hashlib.sha256(material.encode()).hexdigest()[:16]
+
+
+def synthesise_dialogue(inputs: list[dict], key: str, args, settings: dict,
+                        previous_text: str | None, future_text: str | None,
+                        previous_request_ids: list[str]) -> tuple[bytes, str | None, int | None]:
+    """One Text to Dialogue request. Same retry policy as `synthesise()`.
+
+    ⚠️ NOT YET CALLED LIVE. Field names are the API reference's, 25 October 2026.
+    Whether `previous_request_ids` overrides `previous_text` here as it does on
+    text-to-speech is not documented on that page; only one is sent, as there.
+    """
+    body: dict = {"inputs": inputs, "model_id": args.model, "settings": settings}
+    if previous_request_ids:
+        body["previous_request_ids"] = previous_request_ids[-3:]  # docs: max 3
+    elif previous_text:
+        body["previous_text"] = previous_text[:DIALOGUE_CONTEXT_CHARS]
+    if future_text:
+        body["future_text"] = future_text[:DIALOGUE_CONTEXT_CHARS]
+
+    url = f"{DIALOGUE_URL}?output_format={args.format}"
+    last: Exception | None = None
+    for attempt in range(1, args.retries + 1):
+        req = urllib.request.Request(
+            url, data=json.dumps(body).encode(),
+            headers={"xi-api-key": key, "Content-Type": "application/json",
+                     "Accept": "audio/mpeg"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=args.timeout) as r:
+                audio = r.read()
+                if not audio:
+                    raise Failure("the API returned 200 with an empty body")
+                cost = r.headers.get("character-cost")
+                return audio, r.headers.get("request-id"), int(cost) if cost else None
+        except urllib.error.HTTPError as e:
+            detail = e.read()[:400].decode("utf8", "replace")
             if e.code != 429 and e.code < 500:
                 raise Failure(f"HTTP {e.code} — {detail}") from None
             last = Failure(f"HTTP {e.code} — {detail}")
@@ -488,9 +718,20 @@ def main(argv=None) -> int:
         description="Synthesise a Style B podcast script through ElevenLabs.",
         epilog="There is deliberately no --api-key: a key on the command line "
                "lands in shell history and in `ps`.")
-    ap.add_argument("script", type=pathlib.Path,
+    ap.add_argument("script", type=pathlib.Path, nargs="?",
                     help="Style B script (spoken body between the SCRIPT START/END "
                          "delimiters) or a plain text file")
+    ap.add_argument("--self-test", action="store_true",
+                    help="run the offline parser and chunker tests; no script, no API")
+    ap.add_argument("--dialogue", action="store_true",
+                    help="two-or-more-voice mode via Text to Dialogue: every paragraph "
+                         "opens with a LABEL: (e.g. COACH:, PLAYER:)")
+    ap.add_argument("--voice-map",
+                    help="dialogue mode: LABEL=<voice id>,LABEL=<voice id>; "
+                         "required unless --dry-run")
+    ap.add_argument("--dialogue-max-chars", type=int, default=DIALOGUE_MAX_CHARS,
+                    help=f"dialogue split target (default {DIALOGUE_MAX_CHARS}, the "
+                         "docs' figure for reliable generation)")
     ap.add_argument("--out", type=pathlib.Path,
                     help="output audio file; required unless --dry-run")
     ap.add_argument("--dry-run", action="store_true",
@@ -524,12 +765,24 @@ def main(argv=None) -> int:
                          "the constraint this pipeline plans against.")
     args = ap.parse_args(argv)
 
+    if args.self_test:
+        return self_test()
+    if args.script is None:
+        ap.error("the following arguments are required: script")
+    if args.voice_map and not args.dialogue:
+        ap.error("--voice-map is only used with --dialogue")
+
     if not args.dry_run and not args.out:
         ap.error("--out is required unless --dry-run")
     # ⚠️ Checked BEFORE any request: discovering at stitch time that a pcm_* run
     # cannot be written would be credits spent for nothing.
     if args.out and pcm_rate(args.format) is not None and args.out.suffix.lower() != ".wav":
         ap.error(f"--format {args.format} is written as WAV; --out must end in .wav")
+
+    if args.dialogue:
+        if not args.dry_run and not args.voice_map:
+            ap.error("--dialogue needs --voice-map LABEL=<id>,... unless --dry-run")
+        return run_dialogue(args)
 
     body = extract_body(args.script)
     chunks = split_script(body, args.max_chunk_chars)
@@ -627,6 +880,204 @@ def main(argv=None) -> int:
           "\n   Stability 0.30 is chosen and unheard; §11 of the standard asks for an "
           "\n   ear test at length before those settings are treated as settled.")
     return 0
+
+
+# ─────────────────────────────── dialogue run ────────────────────────────────
+
+def run_dialogue(args) -> int:
+    """The `--dialogue` path. Shares extract_body, the cache layout and stitch()."""
+    body = extract_body(args.script)  # strips everything outside SCRIPT START/END
+    segments = parse_dialogue(body)
+    chunks = split_dialogue(segments, args.dialogue_max_chars)
+    voice_map = parse_voice_map(args.voice_map)
+    speakers = list(dict.fromkeys(s for s, _ in segments))
+    missing = [s for s in speakers if s not in voice_map]
+    unused = [s for s in voice_map if s not in speakers]
+    settings = dialogue_settings(args)
+
+    spoken = sum(len(t) for _, t in segments)
+    words = sum(len(t.split()) for _, t in segments)
+    print(f"synthesize_style_b: {args.script}  [DIALOGUE]")
+    print(f"  body            {spoken:,} spoken characters (labels excluded), "
+          f"{words:,} words, ~{hms(words / 165 * 60)} at 165 wpm")
+    print(f"  segments        {len(segments)}: "
+          + ", ".join(f"{s} {sum(1 for x, _ in segments if x == s)} "
+                      f"({sum(len(t) for x, t in segments if x == s):,} chars)"
+                      for s in speakers))
+    print(f"  voices          "
+          + (", ".join(f"{s}={voice_map.get(s, 'UNMAPPED')}" for s in speakers)))
+    print(f"  model/format    {args.model} · {args.format} · {DIALOGUE_URL}")
+    print(f"  settings        stability {args.stability} · similarity {args.similarity}"
+          f"  (⚠️ style, speed and speaker boost have no dialogue field and are NOT sent)")
+    print(f"  split           {len(chunks)} chunks, target ≤{args.dialogue_max_chars:,} chars")
+    for i, c in enumerate(chunks, 1):
+        n = sum(len(t) for _, t in c)
+        who = ", ".join(f"{s}×{sum(1 for x, _ in c if x == s)}"
+                        for s in dict.fromkeys(x for x, _ in c))
+        print(f"    {i:>2}  {n:>6,} chars  {len(c):>2} segs  {who:<22} "
+              f"{' '.join(c[0][1].split())[:40]}...")
+    print(f"  billed          {spoken:,} characters (UPPER BOUND; dialogue billing is "
+          f"UNMEASURED on this account — the character-cost header is read per request)")
+    if args.price_per_million:
+        print(f"  at your price   {spoken / 1e6 * args.price_per_million:,.2f} "
+              f"for the upper bound")
+    if unused:
+        print(f"  ⚠️ --voice-map names speakers the script never uses: {', '.join(unused)}")
+
+    if args.dry_run:
+        if missing:
+            print(f"  ⚠️ not mapped to a voice (a real run needs them): {', '.join(missing)}")
+        print("\nsynthesize_style_b: DRY RUN — no API call was made, no credits spent.")
+        return 0
+    if missing:
+        raise Failure(f"--voice-map has no voice for: {', '.join(missing)}")
+
+    cache = args.cache_dir or args.out.with_suffix(args.out.suffix + ".chunks")
+    cache.mkdir(parents=True, exist_ok=True)
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    key: str | None = None
+    ext = "mp3" if args.format.startswith("mp3") else args.format.split("_")[0]
+
+    print(f"\n  cache           {cache}")
+    parts: list[pathlib.Path] = []
+    request_ids: list[str] = []
+    billed = fresh = reused = 0
+    for i, chunk in enumerate(chunks):
+        inputs = dialogue_inputs(chunk, voice_map)
+        digest = dialogue_chunk_hash(inputs, args, settings)
+        part = cache / f"d{i:03d}_{digest}.{ext}"
+        if part.exists() and part.stat().st_size > 0:
+            print(f"    {i + 1:>2}/{len(chunks)}  cached    {part.name}")
+            parts.append(part)
+            reused += 1
+            request_ids = []  # as in single-voice mode: never reuse a stale id
+            continue
+        prev = (None if args.no_continuity or i == 0
+                else context_tail(chunks[i - 1][-1][1]))
+        nxt = (None if args.no_continuity or i == len(chunks) - 1
+               else context_head(chunks[i + 1][0][1]))
+        ids = [] if args.no_continuity else request_ids
+        try:
+            if key is None:
+                key = api_key()
+            audio, rid, cost = synthesise_dialogue(inputs, key, args, settings, prev, nxt, ids)
+        except Failure as e:
+            n = sum(len(t) for _, t in chunk)
+            print(f"\nsynthesize_style_b: FAILED on dialogue chunk {i + 1} of {len(chunks)} "
+                  f"({n:,} chars)\n  {e}\n"
+                  f"  {len(parts)} chunk(s) are cached in {cache} and will be reused; "
+                  f"no output file was written.", file=sys.stderr)
+            return 1
+        part.write_bytes(audio)
+        parts.append(part)
+        fresh += 1
+        if rid:
+            request_ids.append(rid)
+        if cost:
+            billed += cost
+        print(f"    {i + 1:>2}/{len(chunks)}  synthesised  {len(inputs):>2} segs -> "
+              f"{len(audio):>9,} bytes" + (f", billed {cost:,}" if cost else ", billed unknown"))
+
+    if len(parts) != len(chunks):
+        raise Failure(f"{len(parts)} parts for {len(chunks)} chunks — refusing to stitch")
+    stitch(parts, args.out, cache, args.format)
+    duration = probe_duration(args.out)
+    print(f"\n  wrote           {args.out}  "
+          f"({args.out.stat().st_size / 1e6:.1f} MB, {hms(duration)})")
+    print(f"  chunks          {fresh} synthesised, {reused} reused from cache")
+    print(f"  billed          {billed:,} credits this run"
+          + ("" if fresh else " (everything came from cache)"))
+    print("\n⚠️ Dialogue mode's first live runs are UNHEARD: check speaker turns, the "
+          "\n   seams between requests, and that each line is in the right voice.")
+    return 0
+
+
+# ──────────────────────────────── self-test ──────────────────────────────────
+
+def self_test() -> int:
+    """Offline tests of the dialogue parser and chunker, plus extract_body's strip."""
+    import tempfile
+    failures: list[str] = []
+
+    def check(name: str, cond: bool) -> None:
+        print(f"  {'ok  ' if cond else 'FAIL'}  {name}")
+        if not cond:
+            failures.append(name)
+
+    def raises(fn) -> bool:
+        try:
+            fn()
+        except Failure:
+            return True
+        return False
+
+    print("synthesize_style_b: self-test (offline)")
+
+    # parse_dialogue
+    segs = parse_dialogue("COACH: Hello there.\n\nPLAYER: Hi.\nStill me.\n\nCOACH: Bye.")
+    check("labels parsed and stripped",
+          segs == [("COACH", "Hello there."), ("PLAYER", "Hi. Still me."), ("COACH", "Bye.")])
+    check("unlabelled paragraph is a hard error",
+          raises(lambda: parse_dialogue("COACH: One.\n\nNo label here.")))
+    check("lower-case label is not a label", raises(lambda: parse_dialogue("coach: hi")))
+    check("label needs text after it", raises(lambda: parse_dialogue("COACH:")))
+    check("colon later in the line is kept as text",
+          parse_dialogue("PLAYER: Three things: one.") == [("PLAYER", "Three things: one.")])
+
+    # extract_body strips the not-spoken notes
+    with tempfile.TemporaryDirectory() as d:
+        p = pathlib.Path(d) / "s.md"
+        p.write_text("# T\n\nCOACH: header, not spoken.\n\n===== SCRIPT START =====\n\n"
+                     "COACH: Spoken.\n\n===== SCRIPT END =====\n\n## Notes (not spoken)\n\n"
+                     "PLAYER: never sent.\n", encoding="utf-8")
+        check("only SCRIPT START/END body is parsed",
+              parse_dialogue(extract_body(p)) == [("COACH", "Spoken.")])
+
+    # parse_voice_map
+    check("voice map parsed", parse_voice_map("COACH=a1, PLAYER=b2") == {"COACH": "a1", "PLAYER": "b2"})
+    check("voice map rejects missing '='", raises(lambda: parse_voice_map("COACH")))
+    check("voice map rejects duplicates", raises(lambda: parse_voice_map("A=x,A=y")))
+
+    # split_dialogue
+    s = [("A", "x" * 900), ("B", "y" * 900), ("A", "z" * 300)]
+    ch = split_dialogue(s, 2000)
+    check("packs to the limit, seams between segments",
+          [len(c) for c in ch] == [2, 1] and sum(len(t) for _, t in ch[0]) == 1800)
+    check("exactly at the limit stays one chunk",
+          len(split_dialogue([("A", "x" * 1000), ("B", "y" * 1000)], 2000)) == 1)
+    check("one char over starts a new chunk",
+          len(split_dialogue([("A", "x" * 1000), ("B", "y" * 1001)], 2000)) == 2)
+    check("a segment at the limit is never split",
+          split_dialogue([("A", "x" * 2000)], 2000) == [[("A", "x" * 2000)]])
+    long_seg = " ".join(["This is one sentence of about forty chars."] * 60)
+    ch = split_dialogue([("A", long_seg)], 2000)
+    check("over-limit segment split at sentence ends only",
+          len(ch) == 2 and all(t.endswith(".") for c in ch for _, t in c)
+          and all(sum(len(t) for _, t in c) <= 2000 for c in ch)
+          and " ".join(t for c in ch for _, t in c) == long_seg
+          and all(x == "A" for c in ch for x, _ in c))
+    check("over-limit single sentence is a hard error",
+          raises(lambda: split_dialogue([("A", "x" * 2001)], 2000)))
+    check("no text lost or reordered",
+          [t for c in split_dialogue(s, 2000) for _, t in c] == [t for _, t in s])
+
+    # continuity context
+    t = "word " * 60
+    check("context tail ≤100 chars", len(context_tail(t)) <= 100 and t.endswith(context_tail(t)))
+    check("context head ≤100 chars", len(context_head(t)) <= 100 and t.startswith(context_head(t)))
+
+    # hash: dialogue and single-voice key spaces are distinct and voice-sensitive
+    class A:  # minimal args
+        model, format, voice = "eleven_v4", "pcm_44100", "v"
+    h1 = dialogue_chunk_hash([{"text": "t", "voice_id": "1"}], A, {"stability": 0.3})
+    h2 = dialogue_chunk_hash([{"text": "t", "voice_id": "2"}], A, {"stability": 0.3})
+    check("hash changes with the voice", h1 != h2)
+    check("dialogue hash differs from single-voice hash",
+          h1 != chunk_hash("t", A, {"stability": 0.3}))
+
+    print(f"\nsynthesize_style_b: self-test {'PASSED' if not failures else 'FAILED'} "
+          f"({len(failures)} failure(s))")
+    return 1 if failures else 0
 
 
 if __name__ == "__main__":

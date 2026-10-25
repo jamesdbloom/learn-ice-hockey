@@ -985,6 +985,10 @@ const forecheckRolesRotate = {
   half: true,
   width: 900,
 
+  // ⚠️ TRIMMED AGAIN 25 October 2026 (1,311 chars). CUT: "nobody has swapped position, they
+  // have swapped job" and "who is nearest the puck decides it", both voiced beside the marker in
+  // each host (forechecking_systems.md chunk 008, rink_map.md chunk 042), and the restated
+  // definition of F1/F2/F3. The safety unit from the ⚠️ to the end is unchanged.
   // ⚠️ SHORTENED 23 October 2026 (voiced 1,856 chars). CUT: the step-by-step rotation narrative,
   // which forechecking_systems.md voices in the chunk before ("First... Second... Third") and
   // rink_map.md in the chunk before ("Nobody swaps positions; they swap jobs"), reduced to one
@@ -1016,14 +1020,12 @@ const forecheckRolesRotate = {
   // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
   // one voiced unit, and _split_paragraph breaks only at sentence ends.
   caption:
-    'The instant after the opponents move the puck defenceman to defenceman: nobody has swapped ' +
-    'position, they have swapped job. The letter in each glyph is the role just taken; the label ' +
-    'beside it is the role held a second earlier. The beaten F1 climbs into support as the new ' +
-    'F3, the old F2 is nearest the new carrier and becomes F1, and the old F3 comes down off the ' +
-    'high middle as the new F2. Who is nearest the puck decides it, so this is one instance, not ' +
-    'a pattern to memorise. The shape is this guide\'s default 2-1-2; the relabelling is simply ' +
-    'what F1, F2 and F3 mean, though a lock system pins one winger to the third job instead. Here ' +
-    'the defencemen hold the offensive blue line and do not rotate. ⚠️ Being the new F1 is not' +
+    'Drawn the instant after the opponents move the puck defenceman to defenceman. The letter in ' +
+    'each glyph is the role just taken; the label beside it is the role held a second earlier. The ' +
+    'beaten F1 climbs into support as the new F3, the old F2 is nearest the new carrier and becomes ' +
+    'F1, and the old F3 comes down off the high middle as the new F2. The shape is this guide\'s ' +
+    'default 2-1-2, though a lock system pins one winger to the third job instead; the defencemen ' +
+    'hold the offensive blue line and do not rotate. ⚠️ Being the new F1 is not' +
     ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +
     'so the onus is on you: take the puck, take the ice, or ' +
     'angle them off it, and never finish into their back. Find out first whether you may body ' +

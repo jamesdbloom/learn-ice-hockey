@@ -1379,7 +1379,8 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_layer_echo.py,
                     check_quote_drift.py, check_caption_hosts.py, check_instruction_first.py,
                     check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py,
-                    check_marker_pairs.py, check_readability.py.
+                    check_marker_pairs.py, check_readability.py,
+                    check_caption_pairs.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
@@ -1397,7 +1398,7 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     credential exists for and reports the rest as SKIPPED with the reason, so the
                     ear test is one command rather than four integrations written under pressure on
                     the day someone has the keys. It reads keys from the ENVIRONMENT ONLY and never
-                    prints one. ⚠️ SINGLE-VOICE by decision — do not re-add a dialogue path; that
+                    prints one. ⚠️ SINGLE-VOICE by decision — do not re-add a dialogue path here (synthesize_style_b.py has an opt-in --dialogue mode for the owner's 25 Oct Basics two-voice pilot; adopting it reopens that decision); that
                     narrows the engine field rather than widening it, and OpenAI is only in
                     contention because the decision was made.
                     podcast_queue.py derives the episode queue from the site's own canonical page

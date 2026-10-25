@@ -169,6 +169,11 @@ WHAT IT CANNOT SEE -- and this list is the honest half
   "offside" and a comma), and scored a SPLIT that is not drift. The case pass
   scored it clean against the wrong book for the same reason. Before believing
   any hit, check whether the book the prose names has a page break there.
+  ✅ **PARTLY FIXED 25 October 2026:** sources are now passed through
+  `scrub_furniture()` first, which blanks recurring header/footer lines at
+  page EDGES (form-feed boundaries) before matching -- see the comment above
+  that function for exactly what it can and cannot reach. A splice that is not
+  at a page edge, or in a file with no form feeds, is still this blind spot.
 - ⚠️ **The word-boundary pass inherits that blind spot.** If any source prints
   the phrase the way the doc does -- another book, a table of contents -- the
   hit is suppressed, even where the book the prose names prints it differently.
@@ -191,23 +196,27 @@ WHAT IT CANNOT SEE -- and this list is the honest half
   twelve lines earlier.
 
 Usage:  check_quote_drift.py <path to a content/*.md file> [min quote length]
+        check_quote_drift.py --self-test
 """
 import re, sys, glob, os, unicodedata
 
 # An unrecognised option is an error, not something to ignore: a mistyped flag
 # used to be opened as a file and crash with a traceback.
+SELF_TEST = "--self-test" in sys.argv[1:]
+if SELF_TEST:
+    sys.argv = [sys.argv[0], "--self-test"]
 _unknown = [a for i, a in enumerate(sys.argv[1:]) if a.startswith("-")
-            and not (i == 0 and a in ("-h", "--help"))]
+            and not (i == 0 and a in ("-h", "--help", "--self-test"))]
 if _unknown:
     print(f"check_quote_drift.py: unrecognised option(s): {' '.join(_unknown)}\n"
-          "usage: check_quote_drift.py <content/*.md> [min quote length]", file=sys.stderr)
+          "usage: check_quote_drift.py <content/*.md> [min quote length] | --self-test", file=sys.stderr)
     sys.exit(2)
 if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
     sys.exit(__doc__.strip().split("Usage:")[-1].strip()
              if "Usage:" in __doc__ else
              "usage: check_quote_drift.py <content/*.md> [min quote length]")
 
-DOC = sys.argv[1]
+DOC = sys.argv[1] if not SELF_TEST else __file__
 MINLEN = int(sys.argv[2]) if len(sys.argv) > 2 else 25
 
 def norm_map(s):
@@ -222,10 +231,109 @@ def norm_map(s):
                 out.append(cc.lower()); idx.append(i)
     return "".join(out), idx
 
+# ---------------------------------------------------------------------------
+# PAGE-FURNITURE SCRUB (added 25 October 2026, plan row "header splices").
+# A running header or footer with LETTERS in it survives the alphanumeric match
+# and splits the sentence it lands in: hc.txt breaks Rule 6.2(a) with
+# "HOCKEYCANADA.CA / HOCKEY CANADA PLAYING RULES 2026-2028 67 / SECTION 6 --
+# GAME FLOW", so a verbatim Hockey Canada quotation matched CARHA instead.
+#
+# The scrub is DATA-DRIVEN, per file, and touches PAGE EDGES ONLY. pdftotext
+# ends every page with a form feed. For each page it looks at the first and
+# last FURNITURE_EDGE non-blank lines; a line is furniture if its shape (digits
+# folded to '#', whitespace collapsed) recurs at a page edge on at least
+# FURNITURE_MIN_PAGES pages of that same file. Scanning inward from each edge,
+# it blanks furniture lines and stops at the first line that is not. Blanking
+# replaces every character except newlines with a space, so every offset into
+# the raw text -- and so every reported source excerpt -- is unchanged.
+#
+# It needs no per-book header strings (sources/README.md: "each book needs its
+# own header string"), because the recurrence finds them. ⚠️ What it cannot
+# reach: furniture in a file with NO form feeds (a web capture), furniture that
+# appears on fewer than FURNITURE_MIN_PAGES pages (a one-off stale header), and
+# a splice that is not at a page edge. ⚠️ And it can blank a real line: a short
+# line whose digit-folded shape is common at page edges (a bare number, a
+# repeated heading like "ANSWER") is treated as furniture when it sits at an
+# edge. No quotation is expected to span one, but that is an assumption.
+# ---------------------------------------------------------------------------
+FURNITURE_EDGE = 6
+FURNITURE_MIN_PAGES = 5
+
+def _furniture_key(line):
+    return re.sub(r"\s+", " ", re.sub(r"\d+", "#", line)).strip()
+
+def scrub_furniture(raw):
+    if "\f" not in raw:
+        return raw
+    pages = raw.split("\f")
+    paged = [p.split("\n") for p in pages]
+    counts = {}
+    for ls in paged:
+        nb = [i for i, l in enumerate(ls) if l.strip()]
+        edge = set(nb[:FURNITURE_EDGE]) | set(nb[-FURNITURE_EDGE:])
+        for k in {_furniture_key(ls[i]) for i in edge}:
+            counts[k] = counts.get(k, 0) + 1
+    furn = {k for k, c in counts.items() if c >= FURNITURE_MIN_PAGES}
+    out = []
+    for ls in paged:
+        ls = list(ls)
+        nb = [i for i, l in enumerate(ls) if l.strip()]
+        for order in (nb[:FURNITURE_EDGE], list(reversed(nb[-FURNITURE_EDGE:]))):
+            for i in order:
+                if _furniture_key(ls[i]) not in furn:
+                    break
+                ls[i] = " " * len(ls[i])
+        out.append("\n".join(ls))
+    res = "\f".join(out)
+    assert len(res) == len(raw)
+    return res
+
+def _self_test():
+    """Offline checks of the furniture scrub. Exit 0 on pass, 1 on fail."""
+    ok = True
+    def check(name, cond):
+        nonlocal ok
+        print(("PASS " if cond else "FAIL ") + name)
+        ok = ok and cond
+    head = "SECTION 6 \u2014 GAME FLOW"
+    pages = []
+    words = ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf"]
+    for n in range(1, 8):
+        # Distinct WORDS per page: a line differing only in its digits folds to
+        # one shape and would (correctly) be treated as furniture.
+        body = f"filler sentence {words[n-1]} on this page.\nmore body text {words[n-1]}."
+        pages.append(f"{head}\n\n{body}\nHOCKEYCANADA.CA\n\nHOCKEY CANADA PLAYING RULES 2026-2028 {n}\n")
+    # Page 4 ends mid-sentence; page 5 resumes it after the furniture.
+    pages[3] = pages[3].replace("more body text delta.", "If a player moves off-side, makes physical contact")
+    pages[4] = pages[4].replace("filler sentence echo on this page.", "with an opponent or encroaches on the circle")
+    raw = "\f".join(pages)
+    sc = scrub_furniture(raw)
+    check("length preserved", len(sc) == len(raw))
+    target, _ = norm_map("makes physical contact with an opponent or encroaches")
+    check("spliced sentence matches after scrub", target in norm_map(sc)[0])
+    check("spliced sentence does NOT match before scrub", target not in norm_map(raw)[0])
+    check("body text untouched", "filler sentence bravo on this page." in sc)
+    check("running header removed", "HOCKEYCANADA.CA" not in sc)
+    one_off = "\f".join(pages[:3]) + "\fONE-OFF HEADER\nreal text\n"
+    check("a header on fewer than FURNITURE_MIN_PAGES pages is kept",
+          "ONE-OFF HEADER" in scrub_furniture(one_off))
+    pad = "\n".join(f"padding line {w}" for w in ("one", "two", "three", "four", "five", "six", "seven"))
+    mid = "\f".join(pages) + "\f" + pad + "\nHOCKEYCANADA.CA\n" + pad.replace("line", "row") + "\n"
+    sc_mid = scrub_furniture(mid)
+    check("furniture shape mid-page (not within the edge window) is kept",
+          sc_mid.rsplit("\f", 1)[1].count("HOCKEYCANADA.CA") == 1)
+    check("file without form feeds is returned unchanged",
+          scrub_furniture("HOCKEYCANADA.CA\ntext") == "HOCKEYCANADA.CA\ntext")
+    print("self-test: " + ("ALL PASS" if ok else "FAILURES"))
+    sys.exit(0 if ok else 1)
+
+if SELF_TEST:
+    _self_test()
+
 sources = {}
 for p in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(DOC)),
                                        "..", "..", "sources", "*.txt"))):
-    raw = open(p, encoding="utf-8", errors="replace").read()
+    raw = scrub_furniture(open(p, encoding="utf-8", errors="replace").read())
     n, ix = norm_map(raw)
     sources[os.path.basename(p)] = (raw, n, ix)
 

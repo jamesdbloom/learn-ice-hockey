@@ -531,7 +531,7 @@ Action: As the puck goes high, the low players watch it and box out the man — 
 **Defending it:**
 - **The strong-side winger's discipline is the whole answer.** They stay high, in the lane, between that defenceman and the net. If they got sucked low, the low-to-high is free.
 - **Recognise the trigger.** When the puck goes behind the net, expect the low-to-high next. Wingers should already be closing on their points as the puck disappears behind the goal line, not reacting when it comes out.
-- **Get out to the shot, don't sit under it.** Close the distance to the shooter. A winger standing at the hash marks isn't blocking anything; a winger closing hard at the top of the circle, head up and out of the shot lane, is. Close with your feet rather than lunging, square with your shin pads to the puck, hands behind your body and stick down beside you — never lift a leg, turn sideways or turn your back on it — and stay on your feet until it is released.
+- **Get out to the shot, don't sit under it.** Close the distance to the shooter. A winger standing at the hash marks isn't blocking anything; a winger closing hard at the top of the circle, head up and out of the shot lane, is. Close with your feet rather than lunging, square with your shin pads to the puck, hands behind your body with the backs of the gloves out, stick down beside you — never lift a leg, turn sideways or turn your back on it — and stay on your feet until it is released.
 - **Everyone else boxes out — eyes on the puck, body beside the man.** The shot is only dangerous because of the tip and the rebound, and you cannot beat anyone to a rebound you did not see leave the stick. As the puck goes high, get to the inside of the player in front of you and hold that spot — no lean, no push, and in a CARHA game hold it without putting a body on them at all. **Never walk someone off a spot they already hold** — that can be called interference wherever you play.
 
 **What it costs.** If your game bars checking, the walk-off is an illegal check as well ([Dealing with the screen](#dealing-with-the-screen) has the citations). Even in a checking game, NHL and IIHF 56.1 and PWHL 57.1 bar moving laterally into a player without established position, and USA Hockey 625(a)(4) bars changing your lane or foot speed to play the body of an opponent no longer in control of the puck. Under the IIHF's women's rule, 101.1, the inside position is yours only if you reached it first: a player already standing there is entitled to that ice, and stepping or gliding into her is at least a minor.
@@ -602,7 +602,7 @@ Rule: Hockey Canada 7.6(b) reaches a major and game misconduct three ways — de
 
 ```facts
 Never: Block a shot from a screening position — you change the direction of a puck your goalie never saw
-Technique: Block from close if you block at all — ten feet from the shooter, square, shin pads to the puck, head up and out of the shot lane, hands behind your body, stick down beside you
+Technique: Block from close if you block at all — ten feet from the shooter, square, shin pads to the puck, head up and out of the shot lane, hands behind you, backs of the gloves out, stick down beside you
 Never: Lift a leg, turn your back or go sideways, or lunge. Close with your feet instead, and stay on your feet until the puck is actually released
 Action: Talk to your goalie — "screen left", "I've got the tip"; they are trying to find the puck through legs
 ```
@@ -611,7 +611,7 @@ Action: Talk to your goalie — "screen left", "I've got the tip"; they are tryi
 
 **Defending it:**
 - **Don't block the shot from a screening position.** Half-blocking a shot your goalie cannot see is worse than not blocking it, because you've changed the direction of an already invisible puck. If you're in the sightline, get out of it or take the inside on your man without pushing them; let the puck through.
-- **Block from close if you block at all.** Ten feet from the shooter, square, shin pads to the puck, **head up and out of the shot lane**, hands behind your body, stick down beside you. Never lift a leg, never turn your back or go sideways, and never lunge — close with your feet, and stay on your feet until the puck is actually released. See [Body Contact and Battles](../technique/body_contact_and_battles.md) for the rest of what to protect, and for when not to block at all.
+- **Block from close if you block at all.** Ten feet from the shooter, square, shin pads to the puck, **head up and out of the shot lane**, hands behind your body with the backs of the gloves out, stick down beside you. Never lift a leg, never turn your back or go sideways, and never lunge — close with your feet, and stay on your feet until the puck is actually released. See [Body Contact and Battles](../technique/body_contact_and_battles.md) for the rest of what to protect, and for when not to block at all.
 - **Talk to your goalie.** "Screen left", "I've got the tip" — they are trying to find the puck through legs.
 
 ### The back door / weak-side seam

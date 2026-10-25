@@ -304,6 +304,14 @@ const leavesThePoint = {
   half: true,
   width: 900,
 
+  // ⚠️ TRIMMED 25 October 2026 (1,277 chars). Its one host, winger.md, voices in chunk 012 (just
+  // before) the whole collapse / man-on-man / hybrid choice with "find out", and the two costs (the
+  // defenceman walks in; nobody positioned for the breakout); chunk 013, the caption's own chunk,
+  // voices both collapse exceptions straight after it. CUT from the caption (the hybrid limb was later restored in short form after review): the
+  // hash-marks location and the two exceptions (so the full-stop note below no longer has a
+  // sentence to apply to). KEPT: the scene, the swing-breakout scope and the ⚠️ coaching-choice
+  // scope with man-on-man and "find out".
+
   // ⚠️ CAPTION SHORTENED 15 September 2026 to the owner's 25-50 word target. Any note
   // below was written against the longer text: a clause it names may no longer be in the
   // caption, and it is kept for its reasoning rather than as a description of the string.
@@ -314,21 +322,14 @@ const leavesThePoint = {
   // the tail is what the reader should actually do. Closing the sentence separates them.
   caption:
     'What it costs a winger to leave the point, drawn in your own end with your net at the right. You ' +
-    'have gone down into the corner to help with the battle; the puck has come out of it to the ' +
-    'opposing defenceman you were covering, and that defenceman is walking in off the point with nobody near them. ' +
-    'Two things have gone at once. They have the time and space to shoot or to walk into the middle, ' +
+    'went down into the corner to help, and the puck has come out to the opposing defenceman you were ' +
+    'covering, who is walking in with nobody near them. They have time and space to shoot or walk into ' +
     // W33: the outlet spot is the conventional swing breakout's (winger.md :64/:175 facts), and the
     // scope clause below covers only the COVERAGE system, so the breakout half is scoped here.
-    'which is the thing covering the point exists to deny; and there is nobody on the boards between ' +
-    'the hash marks and the goal line, where a swing breakout wants its outlet, so if your team does ' +
-    'win it back the exit starts late. ⚠️ This ' +
-    'is a mistake only under the system the picture assumes. Staying high out of the corner is the ' +
-    'low zone collapse job — a coaching choice rather than a rule of hockey. Under man-on-man you ' +
-    'follow your check wherever they go, corner included, and going down there is the job rather than ' +
-    'the error; under a hybrid you take them down only below the hash marks. Find out which one your ' +
-    'team plays before your first shift. Two real exceptions under collapse are not drawn here ' +
-    'either. Follow your man a few feet if they walk down off the point, staying connected and calling ' +
-    'the switch, and engage the puck if a corner battle squirts it up the wall to you.',
+    'the middle, and nobody is on the wall where a swing breakout wants its outlet, so if your team ' +
+    'wins it back the exit starts late. ⚠️ This is a mistake under low zone collapse, a coaching ' +
+    'choice rather than a rule of hockey: under man-on-man, following your check into the corner is ' +
+    'the job, and under a hybrid it is the job only below the line your team sets. Find out which one your team plays.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goalie is in the ' +

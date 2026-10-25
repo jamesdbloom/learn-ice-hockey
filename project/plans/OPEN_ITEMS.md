@@ -94,17 +94,17 @@ can ship once it has been reviewed.
 ## Diagrams and site
 
 - **Longest voiced captions after SG40:** the four longest were cut, to 966, ~1,220, ~1,230 and ~1,390. Each remaining limb is safety or rule content that no host voices next to the caption. Next longest: run a fresh render.
-- **Captions over 800 characters (24 Oct):** twenty of the longest have been trimmed (SG62–SG72). The rest run about 1,250 characters or less, so returns are diminishing. Re-measure before the next batch (forecheck-roles-rotate, off-wing-open-to-the-ice and winger-leaves-the-point were next). Check how 🇬🇧 renders on Windows, where it often shows as "GB".
-- **Dot choice under 63.8, layer test (low, SG68 gate):** how_to_watch_hockey :300 and rules_primer :1097 give the 63.8 dot choice without naming the book in-line. Both are probably fine in context.
-- **Standing-block glove wording (nit, SG71):** defensive_zone_coverage :534/:605/:614 and mental_game :690 say "hands behind your body" or "backs of the gloves out" alone, not the full settled form. These are minor gaps; nothing is wrong.
-- **Fragile caption dependency (low, SG66):** forecheck-212-stacked no longer carries the USAH 604/HC 7.3 list; it relies on forecheck-212 being embedded immediately before it in both hosts (forechecking_systems, winger). Only a source comment guards this. If either page reorders or a new host embeds the stacked diagram alone, restore the list. A checker for paired captions would close it.
-- **Faceoff/81.4 follow-ons (low, SG64):** rules_primer :1051's table cell "Centre ejected from the draw" (NHL) has no icing carve-out. Rule 82.1 in the IIHF Situation Handbook was not checked. winger, goaltender and defender broken-skate sites were not re-read in voiced context. HC, CARHA and USAH treatment of a non-taker's stick-on-stick contact is undefined in the books.
+- **Captions over 800 characters (25 Oct):** 23 of the longest have been trimmed (SG62–SG74). The rest run about 1,250 characters or less, so returns are diminishing. Re-measure diagrams.json before the next batch. Check how 🇬🇧 renders on Windows (often "GB").
+- **Fragile caption dependency (guarded, SG74):** forecheck-212-stacked, and forecheck-122 in how_to_watch_hockey, rely on forecheck-212 being embedded immediately before them. scripts/check_caption_pairs.py now reports any break (run it after reordering a host). forecheck-131's source comment copies forecheck-122's adjacency claim, but 131 is not in how_to_watch_hockey; that stale comment is a nit.
+- **Faceoff/81.4 follow-ons (low, SG64):** not yet checked: IIHF Situation Handbook rulings on 82.1, the broken-skate sites in winger, goaltender and defender in voiced context, and how HC, CARHA and USAH treat a non-taker's stick-on-stick contact (the books don't define it).
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
 - **Leader lines over the token's letter (owner decision, SG59 measurement):** the fix is a small z-order change in rink.mjs (emit leaders before glyphs), but it shortens the visible leader by the token radius. Measured over 612 leaders in 185 diagrams: 60 vanish entirely and 314 show under 2 units if drawn under the halos; drawing between halos and bodies, none vanish and 297 show under 2. That is the visible outcome the owner already rejected once, so it needs longer leaders (LEADER_MIN) or acceptance of strike-through. Owner's call.
 - **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. Systemic options: reserve blue-line strokes (moves up to 99 diagrams) or a thicker LABEL_HALO. Owner's call; per-diagram hints otherwise.
 - **🇬🇧 shown as "GB" mid-prose on Windows (owner decision, SG73 site review):** 187 flags in <main>, 101 of them not at the start of a block across 19 pages, with no text fallback. On Windows they render as the letters GB glued to the next word, e.g. "…next game. GB The IIHF writes…". Options: (a) keep the flag only where it opens a block or note; (b) wrap it in <span role="img" aria-label="UK">, which fixes screen readers but not the visible GB; (c) replace mid-prose flags with "In Britain" wording. Conditioning's Key focus flag was dropped in SG73 because it repeated "In the UK".
 
 ## Podcasts
+
+- **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM. "Here is why it works" is overused (196 + 102 across 13 scripts) and the facts are too dense. The owner floated conversational, anecdotes or analogies, or two voices. **Pilots in progress for passing-and-catching:** A, a single voice rewritten around scenes (≤5 ideas, terms defined in context, varied reasons); B, a two-voice coach and newer player. Next: check that the ElevenLabs two-voice (dialogue) feature works with the approved voice and model; synthesise both pilots (~25k chars; needs an AWS login); the owner listens and picks; then remake all 13. **Hold the playing-wing re-record** (weak-side slot passage added 25 Oct, +607 chars) until the format is chosen.
 
 - **Published audio vs the SG44–49 safety corrections (SG50 audit, 23 Oct):**
   - **ElevenLabs:** 7 scripts were fixed and passed safety review (SHIP), and re-synthesis is in flight: Winger, Switching Positions, Skating, OZP, Puck Handling and Centre Detailed, plus Basics "Carrying the Puck". Each is published once it is checked.
@@ -125,8 +125,7 @@ can ship once it has been reviewed.
 
 ## Checkers (scripts/ — change between waves, never during one)
 
-- **check_quote_drift header splices (low):** a quotation whose source sentence is split by a page header containing letters matches the wrong book. The HC 6.2(a) quotation in winger and switching_positions was checked by hand against hc.txt:4587-4594 and is verbatim, so only the tool was wrong. A survey for other quotations that span a header is still owed.
-
+- None open.
 
 ## Sources
 

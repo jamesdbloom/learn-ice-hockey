@@ -1288,25 +1288,24 @@ const wingerDzReverse = {
 // editor re-deriving against the wrong number was pointing them at the wrong number.
 const offWingOpenToTheIce = {
   id: 'off-wing-open-to-the-ice',
+  // ⚠️ TRIMMED 25 October 2026 (1,290 chars). Its one host, switching_positions.md, voices in the
+  // same chunk (039) as the caption, before or after it: the backhand cost, the four options and "flush against the
+  // wall you can do one", the two prohibitions and both injuries (hit from behind; tucked chin at
+  // walking speed). Chunk 039 (after the caption) voices the CARHA back-to-the-boards note. CUT from the caption: the
+  // off-wing definition, the fourth option and its ranking note, the CARHA note and the two-
+  // injuries line. KEPT: both prohibitions verbatim, the wall posture and SHOULDER_TAIL.
   title: 'Receiving a pass on your off wing',
   owner: 'content/positions/switching_positions.md',
   half: true,
   width: 900,
 
   caption:
-    'Receiving a breakout pass on your off wing, in your own end. Off wing means the puck sits on the' +
-    ' inside of your body rather than toward the boards, and the cost of it is exactly this pass: up ' +
-    'the wall, onto your backhand, with a forechecker arriving. The fix is drawn here — take the puck' +
-    ' OPEN TO THE ICE, hips turned out and a step or two off the boards. That separation is what ' +
-    'leaves all four answers available: skate, pass to the centre, pass back to your defenceman, or ' +
-    'attack the middle. Three of them are drawn, as alternatives rather than a sequence, and none of ' +
-    'the four is ranked above the others; flush against the wall you have one. The coaching' +
-    ' source this section follows teaches the same reception in other words — your back to the ' +
-    'boards, facing the ice — and the step off the wall is the one thing added here. ⚠️ Two things this picture ' +
-    'cannot show, and both of them are prohibitions: never turn your back to anyone coming at you as you ' +
-    'receive it, and never duck. Those are two different injuries — a hit from behind you cannot brace for, ' +
-    'and a chin tucked to the chest, which does not need speed to do it. Skates parallel to the wall,' +
-    ' forearm and hip, head up and chin off your chest' + SHOULDER_TAIL,
+    'Receiving a breakout pass up the wall on your off wing, in your own end: it arrives on your ' +
+    'backhand with a forechecker coming. Take it OPEN TO THE ICE, hips turned out and a step or two ' +
+    'off the boards, so you can still skate, pass to the centre or pass back to your defenceman. ' +
+    'Three options are drawn, as alternatives rather than a sequence. ⚠️ Never turn your back to ' +
+    'anyone coming at you as you receive it, and never duck. If contact comes, skates parallel to the wall,' +
+    ' forearm and hip to it, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
     'The defending half of the rink, your own net at the right. Your goalie is in the crease ' +
