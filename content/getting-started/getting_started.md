@@ -188,7 +188,7 @@ England Ice Hockey's own pages, quoted in this document above all in section 6, 
 
 **3. Your league plays IIHF rules, not NHL rules — and that is written down.** These documents default to the NHL book; yours is the **IIHF Official Rule Book**. England Ice Hockey: *"All EIH sanctioned games and tournaments must abide by the Rules of Ice Hockey as described by the International Ice Hockey Federation (IIHF)"*, and *"[w]here this section contradicts IIHF rules, EIH rules will take precedence."* The In-House Rules agree: **IHUK and the BUIHA** *"adopt the latest IIHF Official Rule Book (Version 1.1, published July 2025) as the foundation for the rules of the game to be applied in England, Wales, Scotland and Northern Ireland (the Home Countries)"*, and are *"not intended to serve as a standalone rule book."*
 
-So expect **three** layers: **the IIHF rulebook** for what is a penalty, **the In-House Rules** for the domestic amendments, and **your section's Rules of Competition** for how the competition runs — roster sizes, minimum bench strength, tiering, suspensions. EIH says the third layer is elsewhere and that it wins: *"League rules can be found in the Rules of Competition for each section"*, and *"[a]ny section specific requirements detailed in their rules of competition override this document"*.
+So expect **three** layers: **the IIHF rulebook** for what is a penalty, **the In-House Rules** for the domestic amendments, and **your section's Rules of Competition** for how the competition runs — roster sizes, minimum bench strength, tiering, suspensions. In England and Wales, outside the Elite League, bans for what happens on the ice come from IHUK's Department of Player Safety rules. EIH says the third layer is elsewhere and that it wins: *"League rules can be found in the Rules of Competition for each section"*, and *"[a]ny section specific requirements detailed in their rules of competition override this document"*.
 
 **[UK and England Rules](../foundation/uk_rules.md) carries the amendment list** — read it before your first game. On day one, what matters is that the **IIHF** flags in these documents are yours:
 
@@ -636,7 +636,7 @@ Ring the club, association or rink. One call covers all of these:
 9. **Is this session or league sanctioned, and am I insured in it?** In England, insurance follows sanctioning.
 10. **Which registration am I buying — Trial, Learn to Play, insurance-only or standard?** They cover different activities and cost different amounts.
 11. **Which registration year does it run on, and is any of it pro-rata?** EIH says pro-rata discounts are not available.
-12. **Which section's Rules of Competition apply to me, and where do I get them?** They hold your roster sizes, tiering and suspension rules.
+12. **Which section's Rules of Competition apply to me, and where do I get them?** They hold your roster sizes, tiering and suspension rules; in England and Wales, ask for IHUK's Department of Player Safety rules too.
 
 And one more: **"I'm completely new — who should I talk to?"** Amateur hockey runs on volunteers who are, in the USA Hockey Parent Handbook's words, *"your first point-of-contact for any questions and concerns."* Someone at most clubs has that job, and they want to hear from you.
 

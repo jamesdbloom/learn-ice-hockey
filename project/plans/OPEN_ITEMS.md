@@ -158,3 +158,14 @@ can ship once it has been reviewed.
   - **Your 19 Oct ruling:** add "at least a one-game suspension" wherever a CARHA major, match or game misconduct is priced.
   - **The rule text:** 32(d) covers only "A Game Misconduct assessed to a player for receiving a Major penalty". A match falls under 34(a) instead: "will not be permitted to take part in any further games until their case has been dealt with by the Chairman".
   - **What the pages say now:** match sites cite 34(a). Should they also say "at least one game"?
+- **DOPS wave 2: DONE (SG79, 25 Oct).** Fixed the slur sites on mental_game and team_play, added one body sentence and one facts line per page, and added penalty points to uk_rules. Still open:
+  - **Not yet covered:** winger, risk_management and game_management may still price British checking from behind without the ban.
+  - **Optional:** add the Appendix J under-16 limb wherever a page addresses juniors.
+  - Deliberately left low (all discretionary "up to" bands, add only if a page is edited anyway):
+  - winger :555 (cross-check), :556/:746/:793
+  - glossary :291
+  - puck_handling :321 (kicking)
+  - zone_entries :253/:839
+  - defending_the_rush :727/:716
+  - shooting :175/:245
+  - team_play :287 (third man in, up to 1) and :485 (leaving the bench, up to 1)
