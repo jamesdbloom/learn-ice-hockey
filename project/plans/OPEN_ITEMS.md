@@ -55,7 +55,13 @@ can ship once it has been reviewed.
 
 - **ElevenLabs re-recordings: DONE 24 Oct.** All six corrected episodes are published: Switching Positions, Basics carrying-the-puck, Skating, Puck Handling, Centre and Offensive Zone Play. Transcripts match the script bodies, HEAD returns 200 and range returns 206. The Body Contact Detailed script's missing "If" is restored locally but not re-recorded; that is a low-priority row.
 
-- **NotebookLM batch 7 is ready for you (23 Oct):** `.podcast_queue/notebooklm/remake_2026-10-20/batch7/`, built from the corrected pages: 10 Winger, 17 Forechecking Systems, 28 Body Contact and Battles. Same instructions and focus files as batch 6. The published episodes voice cues since corrected: Winger "hip into them"; Body Contact "leaning legal almost everywhere" and "seal with your body"; Forechecking "seal with body position… a human barricade". **The pack was rebuilt again at 20:22 on 25 Oct from the committed pages at 595ce4a** (it includes SG75–SG81). The UK Rules NotebookLM episode was re-transcribed on 25 Oct and makes no post-game discipline claim, so the DOPS changes do not require a regenerate. Optional extras are owner's call: 07 UK Rules and 12 Goaltender ("severe neck pain"), and the four low-priority episodes. Generate when convenient; then I'll transcribe, review, cut and publish as before.
+- **NotebookLM batch 7 is ready for you (rebuilt 25 Oct, at commit 1eb0cca):** `.podcast_queue/notebooklm/remake_2026-10-20/batch7/`, with instructions in that folder's README under "Batch 7". It holds five regenerations:
+  - 10 Winger
+  - 17 Forechecking Systems
+  - 28 Body Contact and Battles, split into three parts because the owner could not paste it as one source
+  - 07 UK and England Rules and 12 Goaltender, both for "severe neck pain" (owner added these 25 Oct)
+
+  When the episodes arrive: transcribe, review, cut, then publish.
 
 - **body_contact EIHL (owner):** after the 72→54 trim, should the Sources trailer's 14 EIHL mentions be trimmed? Should the nine-line EIHL fighting facts block be cut further (each line is a different penalty)?
 - **Wave 34 leftovers:** USA Hockey Level 1 wording; caption trim policy; the centre-fly label; delete
@@ -98,18 +104,16 @@ can ship once it has been reviewed.
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
 - **Leader lines over the token's letter (owner decision, SG59 measurement):** the fix is a small z-order change in rink.mjs (emit leaders before glyphs), but it shortens the visible leader by the token radius. Measured over 612 leaders in 185 diagrams: 60 vanish entirely and 314 show under 2 units if drawn under the halos; drawing between halos and bodies, none vanish and 297 show under 2. That is the visible outcome the owner already rejected once, so it needs longer leaders (LEADER_MIN) or acceptance of strike-through. Owner's call.
 - **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. Systemic options: reserve blue-line strokes (moves up to 99 diagrams) or a thicker LABEL_HALO. Owner's call; per-diagram hints otherwise.
-- **🇬🇧 shown as "GB" mid-prose on Windows (owner decision, SG73 site review):** 187 flags in <main>, 101 of them not at the start of a block across 19 pages, with no text fallback. On Windows they render as the letters GB glued to the next word, e.g. "…next game. GB The IIHF writes…". Options: (a) keep the flag only where it opens a block or note; (b) wrap it in <span role="img" aria-label="UK">, which fixes screen readers but not the visible GB; (c) replace mid-prose flags with "In Britain" wording. Conditioning's Key focus flag was dropped in SG73 because it repeated "In the UK".
+- **🇬🇧 shown as "GB" mid-prose on Windows: OWNER RULED 25 Oct: option (a)**, keep the flag only where it opens a block or note, and reword mid-prose flags to "In Britain" or "In the UK" without doubling an existing "In the UK". Wave pending. Original row: 187 flags in <main>, 101 of them not at the start of a block across 19 pages, with no text fallback. On Windows they render as the letters GB glued to the next word, e.g. "…next game. GB The IIHF writes…". Options: (a) keep the flag only where it opens a block or note; (b) wrap it in <span role="img" aria-label="UK">, which fixes screen readers but not the visible GB; (c) replace mid-prose flags with "In Britain" wording. Conditioning's Key focus flag was dropped in SG73 because it repeated "In the UK".
 
 ## Podcasts
 
 - **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM; "here is why" is overused and the facts are too dense. **Owner's direction, 25 Oct:**
   - **25 Oct evening: the owner APPROVED Pilot B** (two voices; COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui). Remake all 13 Basics in this format. Add a **panic-passing** point (passing without looking): a dedicated idea in passing-and-catching, and a brief nod elsewhere where natural. Pipeline per episode: write → content-review → synthesise with --dialogue → transcript check → publish.
-  - **Basics v2 progress (25 Oct, 20:40):**
-    - **Live:** passing-and-catching, teamwork, playing-wing and carrying-the-puck (uploaded).
-    - **Encoded but NOT uploaded:** shooting. The AWS SSO login expired mid-run. ⚠️ Do NOT commit site/src/data/podcast-basics.json until shooting is uploaded.
-    - **Reviewed SHIP, still to record:** playing-without-the-puck, playing-centre, how-a-game-works, gear, skating, defending, playing-defence and playing-goal.
+  - **Basics v2 progress (25 Oct, 21:00):**
+    - **ALL 13 LIVE (34e4739, 4ef052e, 25 Oct).** Basics v2 is done.
     - Scripts: podcast_style_b/basics/v2/. Recording: scratchpad basics_v2/make.sh <slug>.
-  - **NEXT, after all Basics v2 are published (owner, 25 Oct):** apply the same two-voice treatment to the Principles (Style B detailed) episodes. First pilot ONE episode with PLAYER = QngvLQR8bsLR5bzoa6Vv (COACH = L0Dsvb3SLTyegXwtm47J). The owner hears it before the rest are remade.
+  - **NEXT, after all Basics v2 are published (owner, 25 Oct):** apply the same two-voice treatment to the Principles (Style B detailed) episodes. First pilot ONE episode with PLAYER = QngvLQR8bsLR5bzoa6Vv (COACH = L0Dsvb3SLTyegXwtm47J). **The owner chose Passing and Receiving (25 Oct) and asked for the audio to be sent to them when it is ready (SendUserFile).** The owner hears it before the rest are remade.
   - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
   - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.
@@ -147,7 +151,9 @@ can ship once it has been reviewed.
 
 - **602(a) suspension rollout (SG81, 25 Oct): about 130 sites done.** Still to do:
   - Cap-blocked facts lines: bcb :577/:578/:675, forechecking :625/:626, OZP :646/:926/:931, winger :518–520/:748, game_management :900. Restructure each with a verifier, or rely on the page-level statement.
-  - "Plan on one/it (602(a))" sites the census missed: about 15 in the rules_primer body-fouls section, plus special_teams :1121, goaltender :1396, rules_primer :1110/:1112, center :425, bcb :670/:676/:729/:733/:1716/:1740/:1965, equipment :813, conditioning :608 and reading_diagrams :301.
+  - "Plan on one/it (602(a))" missed sites: **DONE in SG82 (25 Oct).** Still cap-blocked: bcb :577/:578/:675, bcb :1702 (a Never: line; it would fit as Rule:), and the bcb :1678 kneeing table cell (the clause pushes it past 200 characters, which would make the renderer drop the table).
+  - **OWNER RULED 25 Oct: extend "and a likely multi-game suspension" to EVERY USA Hockey match the SDP lists** (Levels 1–3, all at least 3 games: e.g. 615(c) helmet removal, 601(e.3) slurs, 604(e), 609(c), 611(c), 621(c), 622(c), 623(c), 628(c), 634(c), 639(c), 603(c), 606(b), 607(e), 608(c), 619(b), 620(c), 635(b)). Next wave, SG83. Start with equipment :813 (helmet removal is priced as "suspended until the case is heard" while a facemask grab in the same bullet gets the multi-game clause, so pulling a helmet off sounds cheaper). Note the SDP lists "640(e)", but the match is 640(h), so do not write a Level 3 range against 640(h). Rule 601 at officials is not on the SDP levels; check before adding.
+  - SG82 review leftovers (minor): goaltender :1243 dropped the Casebook's "or match" (attribution only; the line is at 298/300); bcb :374 is dense.
   - forechecking :862: restore "or one meant to injure" if room.
 - **rules-verifier.md source inventory:** it names 48 of 60 `sources/*.txt` files. The 12 missing are eih_code_of_conduct_2026, eih_dops_2026-27 (+layout), five eih_web_* pages, ihuk_club_regs_2026-27 (+layout) and ihuk_sex_gender_policy (+layout).
 - **Cross-document ladders (from SG75):** checking from behind is restated on five pages, each pointing to body_contact_and_battles as owner. Not yet measured; this is probably the larger saving. Also sweep for other rules pricing a hit from behind (boarding, IIHF 21) before any cut.
@@ -164,10 +170,7 @@ can ship once it has been reviewed.
   - rules-verifier.md's source table omits eih_dops.
   - The superseded 2022 IIHF Disciplinary Code is not on disk.
 - **HC 7.5 "ejects at every tier" simplification:** Interpretation 3 (a low-speed pin from behind is permitted) and Interpretation 1 (a stationary cross-check from behind is 9.2) are unvoiced. This is not unsafe; just note it if any line claims more.
-- **Owner decision: should a CARHA match carry the 32(d) next-game ban? (raised 25 Oct)**
-  - **Your 19 Oct ruling:** add "at least a one-game suspension" wherever a CARHA major, match or game misconduct is priced.
-  - **The rule text:** 32(d) covers only "A Game Misconduct assessed to a player for receiving a Major penalty". A match falls under 34(a) instead: "will not be permitted to take part in any further games until their case has been dealt with by the Chairman".
-  - **What the pages say now:** match sites cite 34(a). Should they also say "at least one game"?
+- **CARHA match vs 32(d): OWNER RULED 25 Oct: keep the 34(a) wording ("out until the case is dealt with"); do NOT add "at least one game" to match sites.** Sweep only for any match site that already says "at least one game" and correct it to 34(a).
 - **DOPS wave 2: DONE (SG79, 25 Oct).** Fixed the slur sites on mental_game and team_play, added one body sentence and one facts line per page, and added penalty points to uk_rules. Still open:
   - winger, risk_management and game_management were done in SG80. Winger's two from-behind facts blocks are at 14/14, so the ban is in its body only. Follow-up: add the facts line to another winger block that has room, as game_management did.
   - **Optional:** add the Appendix J under-16 limb wherever a page addresses juniors.

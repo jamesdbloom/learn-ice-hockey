@@ -1101,7 +1101,7 @@ Under the NHL, IIHF and PWHL rule, a goal can come off the board where an attack
 
 ```facts
 Key: Everything above decides whether the goal counts; this decides whether you are still in the game — and on a power play a misconduct outlasts your advantage whatever length it runs
-Rule: USA Hockey has no bare minor for charging a goalie — 607(c) is "[a] minor plus a misconduct or a major plus a game misconduct" in the crease or privileged area, 607(b) mandates a major plus ejection on any reckless charge anywhere — plan on a match and a likely multi-game ban (602(a))
+Rule: USA Hockey has no bare minor for checking or charging a goalie — 607(c) is "[a] minor plus a misconduct or a major plus a game misconduct" in the crease or privileged area, 607(b) mandates a major plus ejection on any reckless charge anywhere — plan on a match and a likely multi-game ban (602(a))
 Rule: The privileged area is not the crease — USA Hockey 607(d) Note 2 runs it from the end-zone faceoff spots perpendicular to the end boards, and Casebook 607 Situation 6 confirms it "extends to the closer end boards", so it takes in the net front and the ice behind the net
 Rule: USA Hockey Rule 607(d) Note 1 decides which rule you are under — accidental or unavoidable contact stays interference, a 625(a)(8) minor; deliberate body contact or a check delivered to the goalie is charging
 Rule: USA Hockey Casebook 607 Situation 4 has three rungs, and the top one is not the default — no penalty only if a defender forced you in and you "clearly made every attempt to avoid the contact"; minor plus misconduct on an honest attempt; major plus game misconduct or match if you accelerate through
