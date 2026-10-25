@@ -88,9 +88,9 @@
       "title": "Winger",
       "section": "Positions",
       "track": 10,
-      "bytes": 18062876,
-      "duration_s": 2156.7,
-      "audio": "/audio/positions/winger-b5ce127d.m4a"
+      "bytes": 21629295,
+      "duration_s": 2582.0,
+      "audio": "/audio/positions/winger-f2481839.m4a"
     },
     {
       "doc_id": "positions/defender",
@@ -106,9 +106,9 @@
       "title": "Goaltender",
       "section": "Positions",
       "track": 12,
-      "bytes": 35538205,
-      "duration_s": 4230.5,
-      "audio": "/audio/positions/goaltender-4cc6796d.m4a"
+      "bytes": 16665514,
+      "duration_s": 1983.3,
+      "audio": "/audio/positions/goaltender-d8ae4723.m4a"
     },
     {
       "doc_id": "positions/switching_positions",
@@ -151,9 +151,9 @@
       "title": "Forechecking Systems",
       "section": "Systems and Situations",
       "track": 17,
-      "bytes": 21304521,
-      "duration_s": 2538.5,
-      "audio": "/audio/systems/forechecking_systems-cc549048.m4a"
+      "bytes": 17449636,
+      "duration_s": 2078.8,
+      "audio": "/audio/systems/forechecking_systems-2f201067.m4a"
     },
     {
       "doc_id": "systems/neutral_zone_systems",
@@ -250,9 +250,9 @@
       "title": "Body Contact and Battles",
       "section": "Technique",
       "track": 28,
-      "bytes": 20864850,
-      "duration_s": 2483.3,
-      "audio": "/audio/technique/body_contact_and_battles-341c4c81.m4a"
+      "bytes": 12773306,
+      "duration_s": 1522.1,
+      "audio": "/audio/technique/body_contact_and_battles-bfc9294a.m4a"
     },
     {
       "doc_id": "hockey-iq/puck_support_and_spacing",

@@ -55,14 +55,7 @@ can ship once it has been reviewed.
 
 - **ElevenLabs re-recordings: DONE 24 Oct.** All six corrected episodes are published: Switching Positions, Basics carrying-the-puck, Skating, Puck Handling, Centre and Offensive Zone Play. Transcripts match the script bodies, HEAD returns 200 and range returns 206. The Body Contact Detailed script's missing "If" is restored locally but not re-recorded; that is a low-priority row.
 
-- **NotebookLM batch 7 is ready for you (rebuilt 25 Oct, at commit 1eb0cca):** `.podcast_queue/notebooklm/remake_2026-10-20/batch7/`, with instructions in that folder's README under "Batch 7". It holds five regenerations:
-  - 10 Winger
-  - 17 Forechecking Systems
-  - 28 Body Contact and Battles, split into three parts because the owner could not paste it as one source
-  - 07 UK and England Rules and 12 Goaltender, both for "severe neck pain" (owner added these 25 Oct)
-
-  When the episodes arrive: transcribe, review, cut, then publish.
-
+- **NotebookLM batch 7: DONE except UK Rules (25 Oct).** Winger, Goaltender, Forechecking and Body Contact were published after cuts (record: project/reviews/notebooklm_batch7_2026-10-25.md). **07 UK and England Rules needs ONE more regeneration** with a per-episode steer: any neck pain means call 999 (never "severe"); a head knock with no red flag means call 111 and don't leave the player alone for 24 h; a willing fight ends your game (not "a five-minute major"); don't voice a few defensive punches as free. The live batch 6 UK Rules stays until then. Future regeneration candidates: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
 - **body_contact EIHL (owner):** after the 72→54 trim, should the Sources trailer's 14 EIHL mentions be trimmed? Should the nine-line EIHL fighting facts block be cut further (each line is a different penalty)?
 - **Wave 34 leftovers:** USA Hockey Level 1 wording; caption trim policy; the centre-fly label; delete
   the unused `creaseThePuckDecides` diagram spec in center.mjs, or keep it?
