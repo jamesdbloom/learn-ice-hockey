@@ -133,9 +133,9 @@
       "sources": [
         "technique/skating"
       ],
-      "bytes": 6812725,
-      "duration_s": 815.3,
-      "audio": "/audio/principles/basics/skating-cc5aef72.m4a",
+      "bytes": 7571448,
+      "duration_s": 907.0,
+      "audio": "/audio/principles/basics/skating-a4537eb0.m4a",
       "guid": "learn-ice-hockey:core:skating"
     },
     {
@@ -191,9 +191,9 @@
         "foundation/core_principles",
         "systems/defending_the_rush"
       ],
-      "bytes": 5197073,
-      "duration_s": 622.9,
-      "audio": "/audio/principles/basics/defending-d8ddf8bd.m4a",
+      "bytes": 5728708,
+      "duration_s": 685.6,
+      "audio": "/audio/principles/basics/defending-baf58398.m4a",
       "guid": "learn-ice-hockey:core:defending"
     },
     {
@@ -224,9 +224,9 @@
       "sources": [
         "positions/defender"
       ],
-      "bytes": 6464755,
-      "duration_s": 774.6,
-      "audio": "/audio/principles/basics/playing-defence-a59150cc.m4a",
+      "bytes": 7221360,
+      "duration_s": 865.6,
+      "audio": "/audio/principles/basics/playing-defence-faf7bb21.m4a",
       "guid": "learn-ice-hockey:core:playing-defence"
     },
     {
@@ -235,9 +235,9 @@
       "sources": [
         "positions/goaltender"
       ],
-      "bytes": 6076772,
-      "duration_s": 728.2,
-      "audio": "/audio/principles/basics/playing-goal-e9b74b80.m4a",
+      "bytes": 6549941,
+      "duration_s": 784.3,
+      "audio": "/audio/principles/basics/playing-goal-26175a71.m4a",
       "guid": "learn-ice-hockey:core:playing-goal"
     },
     {
