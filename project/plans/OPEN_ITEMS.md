@@ -103,6 +103,8 @@ can ship once it has been reviewed.
 ## Podcasts
 
 - **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM; "here is why" is overused and the facts are too dense. **Owner's direction, 25 Oct:**
+  - **25 Oct evening: the owner APPROVED Pilot B** (two voices; COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui). Remake all 13 Basics in this format. Add a **panic-passing** point (passing without looking): a dedicated idea in passing-and-catching, and a brief nod elsewhere where natural. Pipeline per episode: write → content-review → synthesise with --dialogue → transcript check → publish.
+  - **NEXT, after all Basics v2 are published (owner, 25 Oct):** apply the same two-voice treatment to the Principles (Style B detailed) episodes. First pilot ONE episode with PLAYER = QngvLQR8bsLR5bzoa6Vv (COACH = L0Dsvb3SLTyegXwtm47J). The owner hears it before the rest are remade.
   - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
   - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.
