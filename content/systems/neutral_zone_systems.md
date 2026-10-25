@@ -360,7 +360,7 @@ Rule: Charging binds every division, checking or not, and no book caps it at a m
 Rule: Under NHL and PWHL 42.5 and EIHL Casebook Rule 42, a charging major that injures the face or head adds a mandatory game misconduct; an IIHF charge to the head goes to Rule 48, where a major always carries one (48.3); every Hockey Canada charging major ejects (7.4(e))
 Rule: Every CARHA charging major ends your game (30(a)) and brings at least a one-game suspension (32(d)) (CARHA adult leagues only)
 Rule: Any USA Hockey game misconduct also suspends the player for their team's next game (404(b)), and for at least two when it follows a second major in the same game (403(b))
-Rule: Charge a player "in such a way that they are unable to defend themselves", or charge to injure, and Hockey Canada 7.4(c) makes it a mandatory match penalty; a deliberate attempt to injure is a mandatory match under CARHA 48(a), USA Hockey 602(a) and NHL and PWHL 21.1 too
+Rule: Charge a player "in such a way that they are unable to defend themselves", or charge to injure, and Hockey Canada 7.4(c) makes it a mandatory match; a deliberate attempt to injure is a mandatory match under CARHA 48(a), USA Hockey 602(a) (with a likely multi-game ban) and NHL and PWHL 21.1 too
 ```
 
 Gap control is usually taught as a defenceman's skill, and [Defending the Rush](defending_the_rush.md) covers the technique. But **gap is a five-player outcome, not a two-player one** — the single biggest thing amateur teams get wrong about the neutral zone.
@@ -423,7 +423,7 @@ Risk: Beaten standing up is beaten completely — your feet are stopped, theirs 
 Countered by: The chip-and-chase — the attacker puts the puck past your hip and runs around you; stopped feet cannot win that race, so go for the puck, never into them
 Never: Meet the attacker by building speed into a hit — standing up is refusing ground with your feet, and a head-down carrier tells you only that they cannot change direction
 Rule: A stand-up finished as a hit meets the charging rules in every division — USA Hockey's Casebook rules the head-down case charging (607, Situation 2), and a check accelerated through without the two-stride run-up too (Situation 3) — and no rulebook here caps charging at a minor
-Rule: Charge a player "in such a way that they are unable to defend themselves" and Hockey Canada 7.4(c) makes it a mandatory match, as CARHA 48(a), NHL and PWHL 21.1 and USA Hockey 602(a) do a charge meant to injure
+Rule: Charge a player "in such a way that they are unable to defend themselves" and Hockey Canada 7.4(c) makes it a mandatory match, as CARHA 48(a), NHL and PWHL 21.1 and USA Hockey 602(a) do a charge meant to injure, USA Hockey with a likely multi-game ban
 Rule: A reckless USA Hockey charge is a major and game misconduct (607(b)) — plan on a match and a likely multi-game ban (602(a))
 ```
 

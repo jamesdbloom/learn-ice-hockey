@@ -55,7 +55,7 @@ can ship once it has been reviewed.
 
 - **ElevenLabs re-recordings: DONE 24 Oct.** All six corrected episodes are published: Switching Positions, Basics carrying-the-puck, Skating, Puck Handling, Centre and Offensive Zone Play. Transcripts match the script bodies, HEAD returns 200 and range returns 206. The Body Contact Detailed script's missing "If" is restored locally but not re-recorded; that is a low-priority row.
 
-- **NotebookLM batch 7: DONE except UK Rules (25 Oct).** Winger, Goaltender, Forechecking and Body Contact were published after cuts (record: project/reviews/notebooklm_batch7_2026-10-25.md). **07 UK and England Rules needs ONE more regeneration** with a per-episode steer: any neck pain means call 999 (never "severe"); a head knock with no red flag means call 111 and don't leave the player alone for 24 h; a willing fight ends your game (not "a five-minute major"); don't voice a few defensive punches as free. The live batch 6 UK Rules stays until then. Future regeneration candidates: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
+- **NotebookLM batch 7: DONE except UK Rules (25 Oct).** Winger, Goaltender, Forechecking and Body Contact were published after cuts (record: project/reviews/notebooklm_batch7_2026-10-25.md). **07 UK and England Rules needs ONE more regeneration (pack READY for the owner: `.podcast_queue/notebooklm/remake_2026-10-20/batch8/`, steer file included)** with a per-episode steer: any neck pain means call 999 (never "severe"); a head knock with no red flag means call 111 and don't leave the player alone for 24 h; a willing fight ends your game (not "a five-minute major"); don't voice a few defensive punches as free. The live batch 6 UK Rules stays until then. Future regeneration candidates: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
 - **body_contact EIHL (owner):** after the 72→54 trim, should the Sources trailer's 14 EIHL mentions be trimmed? Should the nine-line EIHL fighting facts block be cut further (each line is a different penalty)?
 - **Wave 34 leftovers:** USA Hockey Level 1 wording; caption trim policy; the centre-fly label; delete
   the unused `creaseThePuckDecides` diagram spec in center.mjs, or keep it?
@@ -106,7 +106,7 @@ can ship once it has been reviewed.
   - **Basics v2 progress (25 Oct, 21:00):**
     - **ALL 13 LIVE (34e4739, 4ef052e, 25 Oct).** Basics v2 is done.
     - Scripts: podcast_style_b/basics/v2/. Recording: scratchpad basics_v2/make.sh <slug>.
-  - **NEXT, after all Basics v2 are published (owner, 25 Oct):** apply the same two-voice treatment to the Principles (Style B detailed) episodes. First pilot ONE episode with PLAYER = QngvLQR8bsLR5bzoa6Vv (COACH = L0Dsvb3SLTyegXwtm47J). **The owner chose Passing and Receiving (25 Oct) and asked for the audio to be sent to them when it is ready (SendUserFile).** The owner hears it before the rest are remade.
+  - **NEXT, after all Basics v2 are published (owner, 25 Oct):** apply the same two-voice treatment to the Principles (Style B detailed) episodes. First pilot ONE episode with PLAYER = QngvLQR8bsLR5bzoa6Vv (COACH = L0Dsvb3SLTyegXwtm47J). **The owner chose Passing and Receiving (25 Oct). PILOT RECORDED AND SENT to the owner 25 Oct 21:36** (script podcast_style_b/detailed/v2/passing_and_receiving.md, safety + content reviewed with fixes, transcript 0.991, 48.1 min, 21,623 credits; master wav in the session scratchpad pilot_pr/, so re-synthesise if it is lost). Waiting on the owner's verdict before remaking the other 38. The owner hears it before the rest are remade.
   - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
   - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.
@@ -145,7 +145,14 @@ can ship once it has been reviewed.
 - **602(a) suspension rollout (SG81, 25 Oct): about 130 sites done.** Still to do:
   - Cap-blocked facts lines: bcb :577/:578/:675, forechecking :625/:626, OZP :646/:926/:931, winger :518–520/:748, game_management :900. Restructure each with a verifier, or rely on the page-level statement.
   - "Plan on one/it (602(a))" missed sites: **DONE in SG82 (25 Oct).** Still cap-blocked: bcb :577/:578/:675, bcb :1702 (a Never: line; it would fit as Rule:), and the bcb :1678 kneeing table cell (the clause pushes it past 200 characters, which would make the renderer drop the table).
-  - **OWNER RULED 25 Oct: extend "and a likely multi-game suspension" to EVERY USA Hockey match the SDP lists** (Levels 1–3, all at least 3 games: e.g. 615(c) helmet removal, 601(e.3) slurs, 604(e), 609(c), 611(c), 621(c), 622(c), 623(c), 628(c), 634(c), 639(c), 603(c), 606(b), 607(e), 608(c), 619(b), 620(c), 635(b)). Next wave, SG83. Start with equipment :813 (helmet removal is priced as "suspended until the case is heard" while a facemask grab in the same bullet gets the multi-game clause, so pulling a helmet off sounds cheaper). Note the SDP lists "640(e)", but the match is 640(h), so do not write a Level 3 range against 640(h). Rule 601 at officials is not on the SDP levels; check before adding.
+  - **SG83 DONE (25 Oct): every SDP-listed USA Hockey match now carries the clause, across 27 files.** Cap-blocked and unchanged:
+    - bcb :577/:578/:675/:1426/:1701/:1702 and the :1678 table cell;
+    - breakouts :177;
+    - OZP :646;
+    - passing :484;
+    - puck_handling :292/:294/:490;
+    - defender :465 and winger :518/:519/:520. These four were reverted to HEAD after review: compression had dropped Hockey Canada's head-first ejection, the IIHF "major", and USA Hockey's scope on "reckless". They need a restructure, not a squeeze.
+    - For an owner call: team_play :285/:290 and special_teams :1121 state the SDP ranges ("three to five", "four to eight… six to ten"). They are accurate and verified, but every other site says "likely multi-game". Keep or simplify?
   - SG82 review leftovers (minor): goaltender :1243 dropped the Casebook's "or match" (attribution only; the line is at 298/300); bcb :374 is dense.
   - forechecking :862: restore "or one meant to injure" if room.
 - **rules-verifier.md source inventory:** it names 48 of 60 `sources/*.txt` files. The 12 missing are eih_code_of_conduct_2026, eih_dops_2026-27 (+layout), five eih_web_* pages, ihuk_club_regs_2026-27 (+layout) and ihuk_sex_gender_policy (+layout).

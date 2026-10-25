@@ -350,7 +350,7 @@ Rule: Leave a returning goalie a lane — under Hockey Canada (8.3(b), 8.3(e), 8
 Rule: Never block a goalie's lane recklessly — IIHF 56.5 lets the referee add a major and game misconduct for reckless interference, no injury needed
 Rule: Stay off a goalie outside the crease: they are not "fair game" there — NHL and IIHF 69.4, PWHL 71.4, Hockey Canada 8.5, CARHA 52(b) and USA Hockey 607(d) each call for a penalty for unnecessary contact, and NHL and IIHF 69.2 and PWHL 71.2 price deliberate contact at a minor or a major
 Rule: Never charge a goalie, in or out of the crease — it can end your game in every book; a major and game misconduct is mandatory in Hockey Canada 8.5(b), CARHA 52(b) in the crease or on injury (and at least a one-game ban, 32(d)), and USA Hockey 607(b) when reckless, costing the next game too (404(b))
-Rule: Never try to hurt a goalie — an attempt to injure is a mandatory match penalty under NHL and PWHL 21.1, Hockey Canada 7.1(c) and 8.5(c), CARHA 48(a) and USA Hockey 602(a)
+Rule: Never try to hurt a goalie — an attempt to injure is a mandatory match penalty under NHL and PWHL 21.1, Hockey Canada 7.1(c) and 8.5(c), CARHA 48(a) and USA Hockey 602(a), with a likely multi-game ban
 ```
 
 Goalies and shot-blocking defenders read the same cues.
