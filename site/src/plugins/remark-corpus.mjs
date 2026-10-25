@@ -1028,6 +1028,12 @@ export default function remarkCorpus(options = {}) {
     // Rendering only: md_to_speech reads the markdown, not this plugin.
     visit(tree, 'text', (node) => {
       if (node.value.includes(GB_FLAG)) node.value = node.value.replace(GB_FLAG_SPACE_RE, `${GB_FLAG} `);
+      // A straight quote followed by a bracket (the corpus's disclosed-insertion
+      // convention, "[a]ny…) is a line-break opportunity in Chromium: measured
+      // 24 Oct 2026, 97 of 858 instances split at 400px, quote at one line end and
+      // bracket at the next. A WORD JOINER (U+2060) between them removes the break
+      // and is invisible. Rendering only, as above.
+      if (node.value.includes('"[')) node.value = node.value.replaceAll('"[', '"\u2060[');
     });
   };
 }
