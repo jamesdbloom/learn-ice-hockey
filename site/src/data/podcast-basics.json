@@ -110,9 +110,9 @@
         "foundation/rink_map",
         "foundation/rules_primer"
       ],
-      "bytes": 6625288,
-      "duration_s": 795.0,
-      "audio": "/audio/principles/basics/how-a-game-works-a0d2e86e.m4a",
+      "bytes": 6555522,
+      "duration_s": 785.1,
+      "audio": "/audio/principles/basics/how-a-game-works-0f8f8964.m4a",
       "guid": "learn-ice-hockey:core:how-a-game-works"
     },
     {
@@ -122,9 +122,9 @@
         "off-the-ice/equipment",
         "technique/body_contact_and_battles"
       ],
-      "bytes": 6637869,
-      "duration_s": 795.1,
-      "audio": "/audio/principles/basics/gear-and-staying-safe-3c2412f2.m4a",
+      "bytes": 6678235,
+      "duration_s": 800.0,
+      "audio": "/audio/principles/basics/gear-and-staying-safe-e90ff380.m4a",
       "guid": "learn-ice-hockey:core:gear-and-staying-safe"
     },
     {
@@ -133,9 +133,9 @@
       "sources": [
         "technique/skating"
       ],
-      "bytes": 7571448,
-      "duration_s": 907.0,
-      "audio": "/audio/principles/basics/skating-a4537eb0.m4a",
+      "bytes": 7494787,
+      "duration_s": 898.2,
+      "audio": "/audio/principles/basics/skating-a9de9568.m4a",
       "guid": "learn-ice-hockey:core:skating"
     },
     {
@@ -144,9 +144,9 @@
       "sources": [
         "technique/puck_handling"
       ],
-      "bytes": 7176611,
-      "duration_s": 860.5,
-      "audio": "/audio/principles/basics/carrying-the-puck-b910a573.m4a",
+      "bytes": 7131308,
+      "duration_s": 854.7,
+      "audio": "/audio/principles/basics/carrying-the-puck-1399d70f.m4a",
       "guid": "learn-ice-hockey:core:carrying-the-puck"
     },
     {
@@ -156,9 +156,9 @@
         "technique/passing_and_receiving",
         "hockey-iq/scanning_and_anticipation"
       ],
-      "bytes": 8320508,
-      "duration_s": 999.2,
-      "audio": "/audio/principles/basics/passing-and-catching-ce397af6.m4a",
+      "bytes": 8280522,
+      "duration_s": 991.6,
+      "audio": "/audio/principles/basics/passing-and-catching-1ffc4a73.m4a",
       "guid": "learn-ice-hockey:core:passing-and-catching"
     },
     {
@@ -167,9 +167,9 @@
       "sources": [
         "technique/shooting"
       ],
-      "bytes": 5930306,
-      "duration_s": 710.9,
-      "audio": "/audio/principles/basics/shooting-c424b178.m4a",
+      "bytes": 5952725,
+      "duration_s": 712.9,
+      "audio": "/audio/principles/basics/shooting-0bbf3f5b.m4a",
       "guid": "learn-ice-hockey:core:shooting"
     },
     {
@@ -179,9 +179,9 @@
         "hockey-iq/playing_without_the_puck",
         "hockey-iq/puck_support_and_spacing"
       ],
-      "bytes": 7787672,
-      "duration_s": 932.8,
-      "audio": "/audio/principles/basics/playing-without-the-puck-5c7cbf49.m4a",
+      "bytes": 7762421,
+      "duration_s": 929.0,
+      "audio": "/audio/principles/basics/playing-without-the-puck-6dadbf79.m4a",
       "guid": "learn-ice-hockey:core:playing-without-the-puck"
     },
     {
@@ -191,9 +191,9 @@
         "foundation/core_principles",
         "systems/defending_the_rush"
       ],
-      "bytes": 5728708,
-      "duration_s": 685.6,
-      "audio": "/audio/principles/basics/defending-baf58398.m4a",
+      "bytes": 5633448,
+      "duration_s": 674.7,
+      "audio": "/audio/principles/basics/defending-2d5a5ad7.m4a",
       "guid": "learn-ice-hockey:core:defending"
     },
     {
@@ -202,9 +202,9 @@
       "sources": [
         "positions/center"
       ],
-      "bytes": 7493989,
-      "duration_s": 898.9,
-      "audio": "/audio/principles/basics/playing-centre-19c999f7.m4a",
+      "bytes": 7471168,
+      "duration_s": 895.3,
+      "audio": "/audio/principles/basics/playing-centre-58bb1740.m4a",
       "guid": "learn-ice-hockey:core:playing-centre"
     },
     {
@@ -213,9 +213,9 @@
       "sources": [
         "positions/winger"
       ],
-      "bytes": 6417558,
-      "duration_s": 768.9,
-      "audio": "/audio/principles/basics/playing-wing-78d7ccd3.m4a",
+      "bytes": 6377535,
+      "duration_s": 764.7,
+      "audio": "/audio/principles/basics/playing-wing-edb1261f.m4a",
       "guid": "learn-ice-hockey:core:playing-wing"
     },
     {
@@ -224,9 +224,9 @@
       "sources": [
         "positions/defender"
       ],
-      "bytes": 7221360,
-      "duration_s": 865.6,
-      "audio": "/audio/principles/basics/playing-defence-faf7bb21.m4a",
+      "bytes": 7266127,
+      "duration_s": 870.6,
+      "audio": "/audio/principles/basics/playing-defence-2668dd8f.m4a",
       "guid": "learn-ice-hockey:core:playing-defence"
     },
     {
@@ -235,9 +235,9 @@
       "sources": [
         "positions/goaltender"
       ],
-      "bytes": 6549941,
-      "duration_s": 784.3,
-      "audio": "/audio/principles/basics/playing-goal-26175a71.m4a",
+      "bytes": 6547607,
+      "duration_s": 784.2,
+      "audio": "/audio/principles/basics/playing-goal-740e8e9e.m4a",
       "guid": "learn-ice-hockey:core:playing-goal"
     },
     {
@@ -248,9 +248,9 @@
         "off-the-ice/team_play_and_culture",
         "off-the-ice/mental_game"
       ],
-      "bytes": 6427214,
-      "duration_s": 771.3,
-      "audio": "/audio/principles/basics/teamwork-440ae870.m4a",
+      "bytes": 6362941,
+      "duration_s": 762.2,
+      "audio": "/audio/principles/basics/teamwork-d52d74c5.m4a",
       "guid": "learn-ice-hockey:core:teamwork"
     }
   ]
