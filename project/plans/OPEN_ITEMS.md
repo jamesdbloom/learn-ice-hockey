@@ -126,7 +126,7 @@ can ship once it has been reviewed.
     - Scripts: podcast_style_b/basics/v2/. Recording: scratchpad basics_v2/make.sh <slug>.
   - **PRINCIPLES TWO-VOICE REMAKE: DONE (26 Oct).** All 39 are published in the two-voice format (COACH oQV06a7Gn8pbCJh5DXcO, PLAYER lUTamkMw7gOzZbFIwmq4). Eight were re-recorded after the SG85/SG86 page fixes. The live feed /feed/podcast.xml (93 items) serves the new principles keys, so Spotify and Apple pick them up from it. Scripts are in podcast_style_b/detailed/v2/ (untracked).
     - Open follow-ups: the transcript gate's digit artefacts ("F one" → "F1") make the 0.97 threshold fail falsely, so normalise numerals in verify.sh before the next batch. Ear-test a sample of the two-voice episodes (owner).
-    - **Owner ruled 25 Oct: the Basics KEEP their pair** (COACH L0Dsvb3SLTyegXwtm47J, PLAYER b5Ggo9o15QPFEkYe1Mui). That player sounds younger, which suits the Basics. The new pair is for Principles only.
+    - **Basics player voice changed (owner, 26 Oct): DONE.** All 13 Basics episodes were re-recorded with PLAYER G7ILShrCNLfmS0A37SXS (COACH L0Dsvb3SLTyegXwtm47J unchanged) and published (commit 9db576c). The Principles keep their own pair.
   - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
   - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.
