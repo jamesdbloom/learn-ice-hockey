@@ -13,7 +13,13 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-(none)
+- **SG91 (26 Oct, uncommitted in the tree; reviews running):**
+  - **Edits made:** winger DOPS facts line; glossary ladders :287/:417; forechecking 602(a) "or meant to injure" limb at seven sites (:625/:626 left at cap); defending_the_rush "keep steering them wide"; team_play DOPS one-game ban; core_principles, pwtp and practice_and_development possession figures (3.3–4.2%, 1.27/1.32/1.29 s); faceoffs 63.2(III); breakouts :346 non-checking hold-your-lane line; defender and dzc instruction-first ladder bullets; goaltender ("or match", 63.2(III), late-fight DOPS ban); risk_management charging and slew-foot ladders demoted (about −766 words) with IIHF case splits; special_teams IIHF case; uk_rules Northern Ireland has no 111 (GP or out-of-hours), Scotland agrees, 14 vs 13 red flags; conditioning :608 U10/U12 scope (and :334 NI 111, in progress); equipment KT5 202.3 never reaches IHUK juniors; bcb Sources EIHL trim (source-verifier SHIP).
+  - **special_teams :1103 row: refuted, already fixed at HEAD** (607(c) "checking or charging").
+  - **Non-content:** rules-verifier.md +12 source rows; podcast feed freeze (LIVE_NUMBERS, SECTION_SEASONS); rink.mjs leaders under tokens and LABEL_HALO 0.16; creaseThePuckDecides deleted; diagrams rebuilt (diagram-reviewer running).
+  - **Next:** rules-verifier plus a separate safety-reviewer per group, then the record (written last), build, gate, commit and push.
+  - **Open from SG91 reports:** risk_management dropped CARHA 48(c) and HC 7.1(c)(iii) kicking limbs from the slew-foot context (needs owner-page check); goaltender KT10 "a fight ejects you under the IIHF" errs harsh for NIHL/SNL/BUIHA; goaltender has no Sources entry for IHUK DOPS; conditioning :29 "fourteen flags" unscoped.
+- **NotebookLM batch 9 (Body Contact, Winger) is ready for the owner** at `.podcast_queue/notebooklm/remake_2026-10-20/batch9/`.
 - **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.
 
 ## Captions and small rules notes (23 Oct)
@@ -30,7 +36,7 @@ can ship once it has been reviewed.
 
 1. **Finding More Ice: SHIPPED 22 Oct (0337d6a).** Optional: "faces suspension and fines" (R&R 14.5), changed together in getting_started KT8 and CM :654.
 2. **Skating-drill diagrams:** 48 drafts in `project/getting_better_drafts/`, redrawn with the owner's first
-   round of feedback (recorded in getting_better_plan.md §6). The private preview is republished.
+   round of feedback (recorded in getting_better_plan.md §6). The private preview was republished on 26 Oct as a new artifact: https://claude.ai/artifact/51YTdiV8o8byV4nAZJMUaJ (the old link was deleted).
    - **Waiting on the owner:** a drill-by-drill review. Seven readings are flagged to confirm: the sharp-C
      outside edge, step-overs alternating, backward outside-edge C-cuts, the backward crossover-and-stop shape,
      scissor stop foot order, which foot stops on the outside-edge one-foot stop, and "(toe down first)".
@@ -56,10 +62,10 @@ can ship once it has been reviewed.
 - **ElevenLabs re-recordings: DONE 24 Oct.** All six corrected episodes are published: Switching Positions, Basics carrying-the-puck, Skating, Puck Handling, Centre and Offensive Zone Play. Transcripts match the script bodies, HEAD returns 200 and range returns 206. The Body Contact Detailed script's missing "If" is restored locally but not re-recorded; that is a low-priority row.
 
 - **NotebookLM batch 7 and 8: DONE (25 Oct).** All five regenerations are published (record: project/reviews/notebooklm_batch7_2026-10-25.md). Candidates for a future regeneration: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
-- **body_contact EIHL (owner):** after the 72→54 trim, should the Sources trailer's 14 EIHL mentions be trimmed? Should the nine-line EIHL fighting facts block be cut further (each line is a different penalty)?
+- **body_contact EIHL: OWNER RULED 26 Oct.** Trim the Sources trailer's EIHL mentions to what the page relies on; keep the nine-line fighting facts block. In progress.
 - **Wave 34 leftovers:** USA Hockey Level 1 wording; caption trim policy; the centre-fly label; delete
-  the unused `creaseThePuckDecides` diagram spec in center.mjs, or keep it?
-- **Research scope:** does the UK concussion guidance reach Scotland and Northern Ireland? Does IIHF
+  the unused `creaseThePuckDecides` diagram spec in center.mjs: OWNER RULED 26 Oct, delete it (in progress).
+- **Research scope: OWNER RULED 26 Oct, research all three (in progress).** Does the UK concussion guidance reach Scotland and Northern Ireland? Does IIHF
   202.3 reach British U19 play? What is the British U10/U12 tariff for a hit in non-checking play?
 
 ## Content: rules accuracy (each needs a rules-verifier)
@@ -94,8 +100,8 @@ can ship once it has been reviewed.
 - **Fragile caption dependency (guarded, SG74):** forecheck-212-stacked, and forecheck-122 in how_to_watch_hockey, rely on forecheck-212 being embedded immediately before them. scripts/check_caption_pairs.py now reports any break (run it after reordering a host). forecheck-131's source comment copies forecheck-122's adjacency claim, but 131 is not in how_to_watch_hockey; that stale comment is a nit.
 - **Faceoff/81.4 follow-ons (low, SG64):** not yet checked: IIHF Situation Handbook rulings on 82.1, the broken-skate sites in winger, goaltender and defender in voiced context, and how HC, CARHA and USAH treat a non-taker's stick-on-stick contact (the books don't define it).
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
-- **Leader lines over the token's letter (owner decision, SG59 measurement):** the fix is a small z-order change in rink.mjs (emit leaders before glyphs), but it shortens the visible leader by the token radius. Measured over 612 leaders in 185 diagrams: 60 vanish entirely and 314 show under 2 units if drawn under the halos; drawing between halos and bodies, none vanish and 297 show under 2. That is the visible outcome the owner already rejected once, so it needs longer leaders (LEADER_MIN) or acceptance of strike-through. Owner's call.
-- **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. Systemic options: reserve blue-line strokes (moves up to 99 diagrams) or a thicker LABEL_HALO. Owner's call; per-diagram hints otherwise.
+- **Leader lines over the token's letter: OWNER APPROVED 26 Oct, fix in progress (SG59 measurement):** the fix is a small z-order change in rink.mjs (emit leaders before glyphs), but it shortens the visible leader by the token radius. Measured over 612 leaders in 185 diagrams: 60 vanish entirely and 314 show under 2 units if drawn under the halos; drawing between halos and bodies, none vanish and 297 show under 2. That is the visible outcome the owner already rejected once, so it needs longer leaders (LEADER_MIN) or acceptance of strike-through. Owner's call.
+- **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. OWNER RULED 26 Oct: a thicker LABEL_HALO (in progress, with the leader fix).
 - **🇬🇧 flag wave: DONE (SG84, 25 Oct).** 101 mid-prose flags were removed or reworded across 19 files; 86 remain, all opening a block. The convention is now in the style guide. Follow-ons:
   - **The "Playing in Britain? The IIHF flags are yours" header** (about 35 pages, plus game_management :44, rules_primer :45 and uk_rules KT :618) invites reading "flags" as the visible 🇬🇧. Suggested: "Wherever a page gives the IIHF rule, it is yours". This is a separate wave across all pages.
   - **Sentences that lost their only spoken British cue** (md_to_speech voiced the flag as "For British readers"). Each still names the IIHF, so none is wrong, but a British listener is no longer told the sentence is theirs. The content-reviewer and safety-reviewer lists, merged:
