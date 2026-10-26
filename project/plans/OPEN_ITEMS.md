@@ -126,7 +126,6 @@ can ship once it has been reviewed.
     - Scripts: podcast_style_b/basics/v2/. Recording: scratchpad basics_v2/make.sh <slug>.
   - **PRINCIPLES TWO-VOICE REMAKE: DONE (26 Oct).** All 39 are published in the two-voice format (COACH oQV06a7Gn8pbCJh5DXcO, PLAYER lUTamkMw7gOzZbFIwmq4). Eight were re-recorded after the SG85/SG86 page fixes. The live feed /feed/podcast.xml (93 items) serves the new principles keys, so Spotify and Apple pick them up from it. Scripts are in podcast_style_b/detailed/v2/ (untracked).
     - Open follow-ups: the transcript gate's digit artefacts ("F one" → "F1") make the 0.97 threshold fail falsely, so normalise numerals in verify.sh before the next batch. Ear-test a sample of the two-voice episodes (owner).
-    - **Owner to confirm (SG86):** icing was added as an out before "eat it" on on_ice_communication :149/:202, defender :128/:134 and risk_management :445/:461. Icing was the coordinator's addition, not the owner's ruling, which said pass, chip or rim. Also note CARHA 55 Note 2's caution on "a series of icings".
     - **Owner ruled 25 Oct: the Basics KEEP their pair** (COACH L0Dsvb3SLTyegXwtm47J, PLAYER b5Ggo9o15QPFEkYe1Mui). That player sounds younger, which suits the Basics. The new pair is for Principles only.
   - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
   - Keep EVERY point per episode.
@@ -155,9 +154,8 @@ can ship once it has been reviewed.
 - **HECC wording (nit, SG55):** body_contact :913 says "HECC's … page asks" while the trailer now says the reproduced brochure asks. Both are true. In :2139's trailer, "all three sources" sits near "those four".
 
 - **602(a) suspension rollout: DONE (SG81–SG83, SG88 on 26 Oct).** The cap-blocked facts lines were restructured (record: project/reviews/sg88_602a_cap_blocked_2026-10-26.md). Left by design: OZP :646, which no rewrite fits (:645 and the body carry the clause), and the bcb kneeing table cell (the clause would make the renderer drop the table). Still open:
-  - For an owner call: team_play :285/:290 and special_teams :1121 state the SDP ranges ("three to five", "four to eight… six to ten"), where every other site says "likely multi-game". Keep or simplify?
   - goaltender :1243 dropped the Casebook's "or match" (attribution only); forechecking :862 could restore "or one meant to injure"; bcb :374 is dense (SG82 leftover).
-  - Pre-existing gaps the SG88 verifier found: Casebook 628 Sit. 1 (an extended knee on knee is a major plus game misconduct without the reckless test) is not voiced on the kneeing lines. NHL 49.2's other kick-goal limbs and USAH 627(c)'s kick-shot ban are simplified away in passing :483.
+  - Pre-existing gap the SG88 verifier found: NHL 49.2's other kick-goal limbs and USAH 627(c)'s kick-shot ban are simplified away in passing :483. (Casebook 628 Sit. 1 was done in SG89.)
 - **rules-verifier.md source inventory:** it names 48 of 60 `sources/*.txt` files. The 12 missing are eih_code_of_conduct_2026, eih_dops_2026-27 (+layout), five eih_web_* pages, ihuk_club_regs_2026-27 (+layout) and ihuk_sex_gender_policy (+layout).
 - **Cross-document ladders (from SG75):** checking from behind is restated on five pages, each pointing to body_contact_and_battles as owner. Not yet measured; this is probably the larger saving. Also sweep for other rules pricing a hit from behind (boarding, IIHF 21) before any cut.
 - **Cross-document ladder demotion: DONE (SG76–SG78, 25 Oct), about 12,200 words.** Leftovers:
