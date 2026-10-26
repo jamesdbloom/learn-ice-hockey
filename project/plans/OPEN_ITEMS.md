@@ -154,19 +154,10 @@ can ship once it has been reviewed.
 - **Link baseline size measures (low, from the 23 Oct fix):** the checker now accepts a match against either the decoded or the on-wire size, so false 75–80% flags are gone. Residual gap: an untagged row can hide a real ~4x shrink or growth by coincidence. Refresh baselines with --write-baseline (rows are now tagged [bytes=decoded]) to close it.
 - **HECC wording (nit, SG55):** body_contact :913 says "HECC's … page asks" while the trailer now says the reproduced brochure asks. Both are true. In :2139's trailer, "all three sources" sits near "those four".
 
-- **602(a) suspension rollout (SG81, 25 Oct): about 130 sites done.** Still to do:
-  - Cap-blocked facts lines: bcb :577/:578/:675, forechecking :625/:626, OZP :646/:926/:931, winger :518–520/:748, game_management :900. Restructure each with a verifier, or rely on the page-level statement.
-  - "Plan on one/it (602(a))" missed sites: **DONE in SG82 (25 Oct).** Still cap-blocked: bcb :577/:578/:675, bcb :1702 (a Never: line; it would fit as Rule:), and the bcb :1678 kneeing table cell (the clause pushes it past 200 characters, which would make the renderer drop the table).
-  - **SG83 DONE (25 Oct): every SDP-listed USA Hockey match now carries the clause, across 27 files.** Cap-blocked and unchanged:
-    - bcb :577/:578/:675/:1426/:1701/:1702 and the :1678 table cell;
-    - breakouts :177;
-    - OZP :646;
-    - passing :484;
-    - puck_handling :292/:294/:490;
-    - defender :465 and winger :518/:519/:520. These four were reverted to HEAD after review: compression had dropped Hockey Canada's head-first ejection, the IIHF "major", and USA Hockey's scope on "reckless". They need a restructure, not a squeeze.
-    - For an owner call: team_play :285/:290 and special_teams :1121 state the SDP ranges ("three to five", "four to eight… six to ten"). They are accurate and verified, but every other site says "likely multi-game". Keep or simplify?
-  - SG82 review leftovers (minor): goaltender :1243 dropped the Casebook's "or match" (attribution only; the line is at 298/300); bcb :374 is dense.
-  - forechecking :862: restore "or one meant to injure" if room.
+- **602(a) suspension rollout: DONE (SG81–SG83, SG88 on 26 Oct).** The cap-blocked facts lines were restructured (record: project/reviews/sg88_602a_cap_blocked_2026-10-26.md). Left by design: OZP :646, which no rewrite fits (:645 and the body carry the clause), and the bcb kneeing table cell (the clause would make the renderer drop the table). Still open:
+  - For an owner call: team_play :285/:290 and special_teams :1121 state the SDP ranges ("three to five", "four to eight… six to ten"), where every other site says "likely multi-game". Keep or simplify?
+  - goaltender :1243 dropped the Casebook's "or match" (attribution only); forechecking :862 could restore "or one meant to injure"; bcb :374 is dense (SG82 leftover).
+  - Pre-existing gaps the SG88 verifier found: Casebook 628 Sit. 1 (an extended knee on knee is a major plus game misconduct without the reckless test) is not voiced on the kneeing lines. NHL 49.2's other kick-goal limbs and USAH 627(c)'s kick-shot ban are simplified away in passing :483.
 - **rules-verifier.md source inventory:** it names 48 of 60 `sources/*.txt` files. The 12 missing are eih_code_of_conduct_2026, eih_dops_2026-27 (+layout), five eih_web_* pages, ihuk_club_regs_2026-27 (+layout) and ihuk_sex_gender_policy (+layout).
 - **Cross-document ladders (from SG75):** checking from behind is restated on five pages, each pointing to body_contact_and_battles as owner. Not yet measured; this is probably the larger saving. Also sweep for other rules pricing a hit from behind (boarding, IIHF 21) before any cut.
 - **Cross-document ladder demotion: DONE (SG76–SG78, 25 Oct), about 12,200 words.** Leftovers:
