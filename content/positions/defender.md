@@ -116,22 +116,22 @@ Rule: Hockey Canada writes no strict over-the-glass minor for a skater — Rule 
 
 ### Defensive Zone: Carrying the Puck — Under Pressure
 
-**In short:** Shield the puck along the boards and choose rim or reverse by where the pressure is, before the puck reaches you.
+**In short:** Choose rim or reverse by where the pressure is before the puck reaches you, then move it at once — never hold it with a forechecker on you.
 
 ```facts
 Position: Along the boards or behind your own net, protecting yourself
-Technique: Shield the puck with your body — don't panic
+Technique: Keep your body between the forechecker and the puck while you pick your out — one look, one decision, move it; don't panic
 Options: Rim to your partner or far winger, reverse it, or carry it behind the net with the net between you and the forechecker; in CARHA keep the backswing under fifteen inches or it is a slap-shot penalty
 Read: Rim to beat a forechecker sealing you against the boards; reverse to beat one who has over-committed and skated past you
 Never: Carry through the slot under pressure — a turnover in the highest-danger area is a direct scoring chance against
 Never: Turn your back to anyone coming at you — USA Hockey: "Even a light hit from behind could inflict a severe head or neck injury". Skates parallel, forearm, hip to the wall, head up, chin off your chest
-Never: Duck when the check comes. Head up and chin off your chest instead
+Never: Duck when the check comes, or pin the puck on the boards or net for a whistle — a delay-of-game penalty. With no pass, chip, rim or icing, shield it and take the hit until help comes
 Risk: A tucked chin straightens the cervical spine, and the injury from that head-down, head-first collision with the boards or a goal post can occur at walking speed
 ```
 
 **Where to be:** Protect yourself along the boards or behind the net.
 
-**What to do:** Shield the puck with your body. Rim it (a hard shot along the boards that follows the curve of the rink round to a teammate) to your partner or the far-side winger, reverse it (send it back against the direction the forecheck is flowing), or carry it round behind the net with the net between you and the forechecker, and move it the moment a teammate is open or the forechecker comes round. Never pin it against the net: freezing it there to get a whistle is a delay-of-game penalty. Don't panic.
+**What to do:** One look, one decision, then move it, with your body between the forechecker and the puck while you do. Rim it (a hard shot along the boards that follows the curve of the rink round to a teammate) to your partner or the far-side winger, reverse it (send it back against the direction the forecheck is flowing), or carry it round behind the net with the net between you and the forechecker, and move it the moment a teammate is open or the forechecker comes round. With none of those on, chip it off the glass or ice it. Only as a last resort — no pass, chip, rim or icing there — shield it on your stick and take the hit until help arrives or the forechecker ties it up with you — under USA Hockey play goes on, so keep working it free. Never pin it against the boards or the net for a whistle: that is a delay-of-game penalty. Don't panic.
 
 ![](diagram:breakout-rim)
 

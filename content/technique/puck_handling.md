@@ -583,7 +583,7 @@ Never: Plan to shield it until something happens — what happens is a turnover
 Action: Decide your outlet while still skating to the puck — usually the low support player or the next man arriving
 Options: With nobody there, your out is a rim, a reverse, a spin to the middle off a checker already leaning on you, or a chip off the wall past the checker
 Read: Know where the pressure is coming from, and therefore which side the puck must be on when you arrive
-Convention: How long you are expected to hold the puck on the wall is a system decision, not a law. Ask your coach
+Convention: Which out you take off your own wall — chip, rim, reverse or pass — is your team's call. Under pressure there, never hold it. Ask your coach
 ```
 
 This is the idea that separates players who protect the puck from players who merely survive contact.
@@ -600,7 +600,7 @@ Answering those three before your stick touches the puck is what [scanning](../h
 
 ![](diagram:scan-before-a-wall-reception)
 
-> **This is a good place to name a coaching choice.** How long you are *expected* to hold the puck on the wall is a system decision, not a law. Some teams want a quick chip or rim out immediately to avoid any risk; others want you to hang on, draw two checkers, and wait for support to arrive so the exit is with possession. These are genuinely different jobs. Find out which one your coach wants.
+> **This is a good place to name a coaching choice.** Which out you take off the wall in your own end is a system decision, not a law. Some teams want a quick chip, rim or reverse out immediately to avoid any risk; others want a pass to your outlet — usually the low support player or the next man arriving — so the exit is with possession. Either way, under pressure in your own end do not hold it: one look, one decision, move it. Find out which out your coach wants.
 
 ### Protecting it low in the offensive zone
 
@@ -888,14 +888,14 @@ The habit to build: **look for the pass first, and only then consider the move.*
 Never: Try to beat two players — pretending otherwise is how a 2-on-2 becomes a rush the other way
 Options: Pass to the teammate the second defender's arrival has left open
 Options: Chip the puck into the space behind them
-Options: Protect it, take the contact, and wait for support
+Options: Outside your own end, protect the puck, take the contact, and wait a second for support
 ```
 
 You can beat one player. You cannot beat two, and pretending otherwise is how a 2-on-2 becomes a rush the other way. When a second defender is arriving:
 
 - pass to the teammate their arrival has left open,
 - chip the puck into space behind them,
-- or protect it, take the contact, and wait for support.
+- or, outside your own end, protect it, take the contact, and wait a second for support.
 
 
 ![](diagram:you-cannot-beat-two)

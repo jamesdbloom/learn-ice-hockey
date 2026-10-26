@@ -788,8 +788,8 @@ const youCannotBeatTwo = {
     // still live, so a listener can hear "not protect the puck, not take the contact". The
     // negation predicates of the DIAGRAM rather than of the reader, which is why it is the
     // milder end of the class, but the tail is the instruction and the fix is one character.
-    'first defenceman. There is a third option in this section and it is not drawn. Protect the ' +
-    'puck, take the contact and wait for support. Standing still has no symbol here. ' +
+    'first defenceman. There is a third option in this section and it is not drawn. Outside your ' +
+    'own end, protect the puck, take the contact and wait a second for support. Standing still has no symbol here. ' +
     'Read this as one instant and not as a promise: the teammate ' +
     'shows what "left open" means, not that they will be there. The two opponents’ shapes were ' +
     'forced by the notation; the section says ' +

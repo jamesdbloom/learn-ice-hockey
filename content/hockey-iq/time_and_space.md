@@ -11,7 +11,7 @@
 
 **Read closing speed, not distance.** A defender three feet away who has overrun you gives you time; one twenty feet away closing hard gives you none. Read their hips: a player accelerates where the hips face.
 
-**When the play ahead is not there, turn away from the closing defender and hold the puck a second or two for support** — a tight turn, puck on the outside. Never in your own end, where a lost puck is a goal against.
+**When the play ahead is not there, turn away from the closing defender and hold the puck a second or two for support** — a tight turn, puck on the outside, at or inside their blue line. Never in your own end, where a lost puck is a goal against.
 
 **Glide, look, explode.** Separation comes from changing speed, not from top speed: a defender can match a steady pace, and the moment they change speed is when they can least change direction. This is coaching craft, not a measured finding.
 
@@ -64,7 +64,7 @@ Take two players with identical hands, shot and top speed, on the same line. One
 Three things follow.
 
 - **Grade yourself on your room, not your hands.** After a shift, ask how much space you had when the puck came to you, and what you did to earn it.
-- **The cheapest improvements are time-and-space ones.** Looking over your shoulder before you receive costs nothing and buys more than a year of stickhandling in the garage. So does turning away from pressure — anywhere but your own end, where you take one look and move it. So does putting your stick in a passing lane.
+- **The cheapest improvements are time-and-space ones.** Looking over your shoulder before you receive costs nothing and buys more than a year of stickhandling in the garage. So does turning away from pressure — at or inside their blue line, never in your own end, where you take one look and move it. So does putting your stick in a passing lane.
 - **Hockey IQ is not a mysterious gift.** It is the habit of making room for yourself and denying it to others, and it is learnable faster than skating is.
 
 ---
@@ -137,7 +137,7 @@ The [Cutting Edge Ice Academy](https://www.edgeiceacademy.com/article/how-decept
 ### Delay and curl-back — turning away from pressure
 
 ```facts
-Action: Turn away from the pressure, curl back, and hold the puck for a second or two while your support arrives
+Action: At or inside their blue line, turn away from the pressure, curl back, and hold the puck a second or two while support arrives
 Position: The offensive zone and the offensive blue line area — including a zone entry where you are first man in with no support
 Technique: A tight turn with the puck on your outside hip, body between puck and defender, feet still moving
 Goal: Synchronise the play — a forward one stride late becomes a second attacker if you give them a second and a half
@@ -148,7 +148,7 @@ Mindset: Be willing to look, for a second, like you are going backwards
 
 **You have to practise this, because it runs against instinct: every instinct says "go forward."**
 
-The play: you carry into contested ice and the option ahead isn't there. Instead of forcing it, **turn away from the pressure** — a tight turn or curl back toward your own end, puck on the outside of the turn — and hold it for a second or two while your support arrives.
+The play: you carry into contested ice at or inside their blue line and the option ahead isn't there. Instead of forcing it, **turn away from the pressure** — a tight turn or curl back toward your own end, puck on the outside of the turn — and hold it for a second or two while your support arrives.
 
 The picture shows the hardest version: arriving at the line alone against two defenders, support still coming.
 
@@ -193,10 +193,10 @@ It works without the puck too, and is worth more there. A winger who drifts, let
 ```facts
 Position: Behind your opponents' net — attackable from only two sides, with the whole offensive zone laid out in front of you
 Key: Nothing behind the goal line is a scoring chance against you, so a mistake there is cheap
-Action: Behind your own net you are pivoting, not surveying — one look, one decision, move it
+Action: Behind your own net under pressure you are pivoting, not surveying — one look, one decision, move it
 Technique: Skates parallel, puck far side — one side to defend. Forearm and hip to the wall, never the point of your shoulder, head up, chin off your chest, never your back to anyone coming at you, never duck
 Priority: The wall posture outranks every other instruction in this section. Read Body Contact and Battles in full
-Goal: Use wall possession to survive pressure until support arrives, then move it — not to create offence by itself
+Goal: In their end, use the wall to keep the puck until support arrives, not to create offence alone; on your own wall, move it at once
 Risk: The boards remove half your options too
 ```
 
@@ -208,13 +208,13 @@ The picture shows two of the options in front of a carrier behind their net.
 
 ![](diagram:oz-behind-the-net)
 
-Behind your own net it is *not* safe: a turnover there is a wrap-around or a walk-out. There you are pivoting, not surveying — one look, one decision, move it.
+Behind your own net it is *not* safe: a turnover there is a wrap-around or a walk-out. There, under pressure, you are pivoting, not surveying — one look, one decision, move it.
 
 **The boards are a wall nobody can attack you through.** Get your skates parallel to the wall with the puck on the far side of your body, and a defender can only come from one side. That halves the angles you defend, and it is why puck protection on the wall is a real possession skill. It is also why the **half-wall** — the boards level with the faceoff dot — is a power-play position: the wall covers one side, the corner is behind, the whole zone is in front.
 
 **Take contact along your side, forearm and hip to the wall, never the point of your shoulder — head up, chin off your chest, never your back to anyone coming at you, never duck — and know who is arriving before the puck does.** Never stand square to the wall digging at the puck with your head down: that is the exact picture Hockey Canada's checking-from-behind rule describes. [Body Contact and Battles](../technique/body_contact_and_battles.md) §6 covers it and outranks anything here.
 
-The trade-off: the boards remove half your options too. Use the wall to survive pressure until support arrives, not to create offence by itself.
+The trade-off: the boards remove half your options too. In their end, use the wall to keep the puck until support arrives, not to create offence by itself; on your own wall, move it at once.
 
 ### Attacking into space, not at people
 
@@ -711,9 +711,9 @@ document, that is named too.*
 
 1. **Time and space are hockey's currency, and skill is what you spend.** Time is distance divided by closing speed — a way of thinking, not a measured quantity. Read hips, not distance.
 2. **Show the wrong option, and change speed.** Against a set defender, fake a shot, look off or dip a shoulder — and sometimes really shoot, or nobody buys it. Against one matching your pace, glide, look, explode.
-3. **Buy your time before the puck arrives.** Look over your shoulder while the pass travels. When the play ahead is not there, turn away and hold it a second for support — **never in your own end.** ⚠️ **It reverses for the goalie**, who never looks away from a live shot.
+3. **Buy your time before the puck arrives.** Look over your shoulder while the pass travels. When the play ahead is not there at or inside their blue line, turn away and hold it a second for support — **never in your own end.** ⚠️ **It reverses for the goalie**, who never looks away from a live shot.
 4. **Attack space, not people.** Drive the seam between two defenders and pass to the ice a teammate is skating into. Without the puck, get open with a change of direction, and break when the carrier's head comes up.
-5. **Use behind the net and the boards as pivots.** Behind their net, stop and survey; behind your own, one look and move it. On the wall, side-on: skates parallel, puck on the far side, head up — never your back to anyone coming at you, never duck. Move it when support arrives.
+5. **Use behind the net and the boards as pivots.** Behind their net, stop and survey; behind your own net with someone on you, one look and move it. On the wall, side-on: skates parallel, puck on the far side, head up — never your back to anyone coming at you, never duck. In their end, protect it until support arrives; on your own wall, move it at once.
 6. **Defending the rush, close your gap early and angle them to the wall; don't chase.** Hold your line, take the puck, not the player. If checking is barred or limited (younger ages, women's hockey, non-contact adult leagues), veering, stepping or gliding into them, adding a hip, shoulder or arm, or pinning them is a penalty; in CARHA, avoid contact altogether.
 7. **When beaten, concede the outside and keep the middle.** Steer them to the wall and defend the inside shoulder.
 8. **Deny the reception, not the pass.** Blade in the lane before the pass. When you cannot win it, arrive as the puck does and press their blade as it lands — not a chop or a pull. Pin the stick of someone still waiting and it is interference.
