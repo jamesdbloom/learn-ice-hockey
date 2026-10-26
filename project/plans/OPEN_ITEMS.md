@@ -84,7 +84,6 @@ can ship once it has been reviewed.
 - **Spoken "Important." runs:**
   - body_contact was measured on 23 Oct and has only one run of four or more: KT8–11. These are four distinct hazards and none is voiced next door, so the run stays unless the owner rewords it.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
-- **Style B body_contact script line 201 "If" restored in the local script (23 Oct).** It still needs to reach the audio in the next Detailed remake: the published episode carries the unconditional wording (tactical, not a rule).
 - **Basics wing script** omits the weak-side winger collapsing to the slot, which winger.md relies on. Fix
   in the next Basics remake.
 
@@ -136,18 +135,9 @@ can ship once it has been reviewed.
   - Pilot B v2 (7 ideas) was reviewed (FIX applied), recorded with --dialogue (14m14s, 6,330 credits; dialogue bills about half as much), checked by transcript at 0.992, and sent to the owner on 25 Oct. Which voice speaks each line was not machine-checked; that needs the owner's ear. Waiting on the owner's choice between A and B.
   - After approval, remake all 13. Hold the playing-wing re-record until then.
 
-- **Published audio vs the SG44–49 safety corrections (SG50 audit, 23 Oct):**
-  - **ElevenLabs:** 7 scripts were fixed and passed safety review (SHIP), and re-synthesis is in flight: Winger, Switching Positions, Skating, OZP, Puck Handling and Centre Detailed, plus Basics "Carrying the Puck". Each is published once it is checked.
-  - **NotebookLM (whisper transcripts):** three need the owner to regenerate them; prepare a **batch 7** pack from the corrected pages after the content commit.
-    - **REGENERATE, HIGH:** Winger 08:54 "put your back side and your hip into them" (no scope). Body Contact 02:11 "leaning… legal almost everywhere" (no HC/CARHA) and 14:21 "seal that lane with your body". Forechecking 27:26 "seal with body position… a human barricade" (no scope).
-    - **Low:** Puck Handling, OZP, Team Play and Skating (scoped nearby).
-    - **Clean:** Switching Positions and Centre.
-    - **Also heard:** Body Contact 15:21 "fend off… with your free hand… flat palm to block their body" (unscoped).
-    - Confirm each hit by ear before regenerating.
 
 - **Feed guard follow-on (low):** SG40 froze the Basics season (8) and blocks a section-count change. Still unguarded: reordering sections, or moving a document between sections, would renumber the per-document seasons and episodes, and feed titles are not frozen. Only guids and dates are. Decide whether to freeze `itunes:season`/`itunes:episode` for live items.
 
-- **"Severe neck pain" in NotebookLM 07 (UK Rules) and 12 (Goaltender):** the page and CRT6 say to treat any neck pain as an ambulance call. The word could not be cut cleanly and the episodes shipped (batch 6, 23 Oct). Owner's call whether to regenerate.
 
 ## Renderer and podcast tooling
 
