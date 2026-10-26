@@ -450,7 +450,7 @@ Video is the cheapest source of what amateurs most lack: **accurate, outside fee
 - **Film one period from a fixed high position** — a phone on a tripod in the stands, so you see the ice, not just the play.
 - **Watch with one specific question.** "How many times did I shoulder-check before receiving?" "Did I stop, or did I curl?" A general watch produces a general shrug.
 - **Count something.** A number is a baseline you can beat next month.
-- **Watch your shifts *without* the puck.** Measured at **5-on-5**, that is about **96%** of your ice time — [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) sources that figure — and it is where most improvement is available.
+- **Watch your shifts *without* the puck.** That is the rest of your ice time: at **5-on-5**, NHL players have the puck for only **3.3% to 4.2%** of it — [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) sources that figure — and it is where most improvement is available.
 - **Expect it to be unpleasant.** Everyone looks slower on video than they feel. That gap is the useful information.
 
 If you can't film yourself, watch one elite player at your position for a full shift instead of watching the puck. [How to Watch Hockey](how_to_watch_hockey.md) has the method.

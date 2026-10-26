@@ -29,7 +29,7 @@
 
 ## Overview
 
-You spend almost all of your ice time without the puck. NHL tracking data — which the league itself calls unofficial — puts a forward at about forty seconds of possession in every twenty minutes of five-on-five, in bursts of about 1.3 seconds. What you do without it decides what those seconds are worth.
+You spend almost all of your ice time without the puck. NHL tracking data — which the league itself calls unofficial — puts a forward at about forty seconds of possession in every twenty minutes of five-on-five, in bursts averaging 1.27 seconds. What you do without it decides what those seconds are worth.
 
 **Off-puck play is four skills, not one.** What you do while your team has the puck is close to the opposite of what you do while they have it, and both differ from a loose puck and from the moment possession changes. Most players have a plan for one of the four.
 
@@ -104,14 +104,14 @@ For a defenceman at 19:31, the equivalents are about **48 seconds** total and **
 ### What that means for how you practise
 
 ```facts
-Key: Working only on what you do with the puck trains three to four percent of your ice time — the other 96% is untrained
-Key: The three-to-four percent is 5-on-5 only and normalised per 20 minutes of ice time, and the arithmetic joining it to a real shift is this document's own — the right shape, not decimals to defend
-Risk: The untrained 96% decides whether your possessions happen in a dangerous place with your head up, or in a corner with two men on you
-Mindset: Skill work is not wasted — one and a quarter seconds is a brutally short window in which to be unskilled
+Key: Working only on what you do with the puck trains about 3.3% to 4.2% of your ice time — the rest is untrained
+Key: The 3.3% to 4.2% figure is 5-on-5 only and normalised per 20 minutes of ice time, and the arithmetic joining it to a real shift is this document's own — the right shape, not decimals to defend
+Risk: The untrained rest of your ice time decides whether your possessions happen in a dangerous place with your head up, or in a corner with two men on you
+Mindset: Skill work is not wasted — a possession of a little over a second is a brutally short window in which to be unskilled
 Action: Improve the fifteen minutes you spend on the ice without the puck — it is the most reliable way to get more out of your thirty seconds with it
 ```
 
-If you spend every practice and every stickhandling session working on what you do with the puck, you are training **three to four percent of your ice time**. That work is not wasted — those 24 possessions are where goals get created, and one and a quarter seconds is a brutally short window in which to be unskilled. But the other **96%** is currently untrained, and it is the part that decides whether those 24 possessions happen in a dangerous place with your head up, or in a corner with two men on you.
+If you spend every practice and every stickhandling session working on what you do with the puck, you are training **about 3.3% to 4.2% of your ice time**. That work is not wasted — those 24 possessions are where goals get created, and a little over a second is a brutally short window in which to be unskilled. But **the rest of your ice time** is currently untrained, and it is the part that decides whether those 24 possessions happen in a dangerous place with your head up, or in a corner with two men on you.
 
 Put it the other way round. The most reliable way to get more out of your thirty seconds with the puck is to improve the fifteen minutes you spend on the ice without it.
 
@@ -973,7 +973,7 @@ Pick one question and use it for a whole game. Six questions asked vaguely chang
 
 ## Common Mistakes
 
-- **Training only the 3-4%.** Train what you do without the puck too — small-area games, and watching your own shifts away from the puck. The 3-4% is 5-on-5 possession from NHL tracking data the league itself calls unofficial. Skill work is necessary, but it is not most of your game.
+- **Training only the time you have the puck.** Train what you do without the puck too — small-area games, and watching your own shifts away from the puck. The 3.3% to 4.2% is 5-on-5 possession from NHL tracking data the league itself calls unofficial. Skill work is necessary, but it is not most of your game.
 - **Assuming your age group settles whether you may body check.** Ask your association or league before the first shift. A league can bar checking in any division, and under USA Hockey a checking team playing a non-checking one plays the whole game non-check. In Britain your competition's regulations decide, not your age. Where checking is barred, defend with angle, stick and position: a hit there is a penalty, and under USA Hockey a reckless one is a mandatory major and gets you thrown out — plan on a match penalty and a likely multi-game suspension (602(a)).
 - **Watching the puck on defence.** Keep your man in your peripheral vision and take short looks at the puck — if you cannot see both in one glance, move until you can. Watching the puck feels attentive, but nobody is then watching the man who scores.
 - **Duplicating pressure instead of layering.** Put one player on the carrier and layer the next behind the first. Two on one carrier leaves a free attacker, and that attacker is the one who hurts you. Two planned exceptions: a **deliberate double-team below your own goal line**, where the net and boards contain a turnover, and **man-to-man coverage**. Freelancing either is the real error.
@@ -1044,7 +1044,7 @@ document, that is named too.*
 
 ## Key Takeaways
 
-1. **Train what you do without the puck — small-area games, and watching your own shifts away from it — not only stickhandling.** You have the puck for about 3-4% of your ice time, in possessions averaging 1.3 seconds, on 5-on-5 NHL tracking data the league itself calls unofficial. You never have it long enough to fix bad position.
+1. **Train what you do without the puck — small-area games, and watching your own shifts away from it — not only stickhandling.** You have the puck for about 3.3% to 4.2% of your ice time, in possessions averaging 1.29 seconds, on 5-on-5 NHL tracking data the league itself calls unofficial. You never have it long enough to fix bad position.
 2. **Know which of four states you are in, and change jobs the instant it changes:** your team has it, they have it, it is loose, it has just changed hands. Most bad off-puck play is the right job for the state before. When two apply, take the more urgent one.
 3. **Find out before your first shift whether you may hit; where you may not, defend with angle, stick and position.** Take the ice, never the man — under Hockey Canada or CARHA only ice you already have. In IIHF women's hockey, never step or glide into a player or pin her on the boards.
 4. **Make yourself available, not just unmarked.** A flat stick as a target, a straight line from the puck to your blade, and nothing in that lane — a defender's stick across it leaves you unavailable, and you cannot see that from your own position. Fix the lane, then call for it.

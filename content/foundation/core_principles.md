@@ -110,9 +110,9 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **In short:** You spend almost all of your shift without the puck, so have a plan for each of the four off-puck jobs.
 
-**The principle.** Your time with the puck is a rounding error in your shift, and it comes in bursts of about a second. What you do in the rest of the time decides what those bursts are worth.
+**The principle.** Your time with the puck is a rounding error in your shift, and it comes in bursts of just over a second. What you do in the rest of the time decides what those bursts are worth.
 
-**Why it matters.** Most players practise the part of hockey they spend the least time doing. The three to four percent of your ice time with the puck feels like hockey; the rest is where games are decided.
+**Why it matters.** Most players practise the part of hockey they spend the least time doing. The 3.3 to 4.2 percent of your ice time with the puck feels like hockey; the rest is where games are decided.
 
 **What to notice.** Watch your own shift back and count the seconds you were touching the puck. It will be fewer than you remember.
 
@@ -125,7 +125,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **Worked example.** A winger who "had a quiet game" usually touched the puck rarely. But their two most valuable plays — arriving so the defenceman had somewhere to put a breakout pass, and getting back above the puck so a turnover did not become a rush — both happened without the puck, and nobody remembers either.
 
-**The evidence, and its limits.** This one is measured. Researchers at Waterloo used the NHL's own puck-and-player tracking across **1,194 games of the 2023-24 season, covering 671 skaters**. At **five-on-five** a forward holds the puck for about **forty seconds in every twenty minutes of ice time** and a defenceman about forty-nine seconds, in possessions averaging roughly **1.3 seconds** — about 3.3% to 4.2% of ice time. **Carry the scope with the number:** the league calls this tracking data *unofficial*, the paper says it *"may differ from other datasets that track possession information"*, and it covers NHL professionals at five-on-five only, measuring possession rather than involvement.
+**The evidence, and its limits.** This one is measured. Researchers at Waterloo used the NHL's own puck-and-player tracking across **1,194 games of the 2023-24 season, covering 671 skaters**. At **five-on-five** a forward holds the puck for about **forty seconds in every twenty minutes of ice time** and a defenceman about forty-nine seconds, in possessions averaging **1.27 seconds** for a forward and **1.32** for a defenceman — about 3.3% to 4.2% of ice time. **Carry the scope with the number:** the league calls this tracking data *unofficial*, the paper says it *"may differ from other datasets that track possession information"*, and it covers NHL professionals at five-on-five only, measuring possession rather than involvement.
 
 **A realistic alternative.** None — this is an observation, not a coaching choice. What your team asks you to do with the time *is* a coaching choice, and that is principle 1.
 

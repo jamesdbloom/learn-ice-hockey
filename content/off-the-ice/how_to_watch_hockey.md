@@ -361,7 +361,7 @@ If someone films your team, ask for the widest angle, not the highlights. Highli
 
 ### The protocol for reviewing your own shifts
 
-1. **Watch the whole shift, not your touches.** They are a far smaller slice than they feel: NHL tracking, which the league calls unofficial, puts puck possession at roughly **3–4% of 5-on-5 ice time** — one to two seconds of a forty-second shift. ([Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) gives the study and its limits.)
+1. **Watch the whole shift, not your touches.** They are a far smaller slice than they feel: NHL tracking, which the league calls unofficial, puts puck possession at roughly **3.3% to 4.2% of 5-on-5 ice time** — one to two seconds of a forty-second shift. ([Playing Without the Puck](../hockey-iq/playing_without_the_puck.md) gives the study and its limits.)
 2. **Watch each shift twice** — once following yourself, once following the play. Were you where the play needed you?
 3. **Ask three questions per shift**, and write the answers down:
    - **Where was I when we lost the puck, and where did I go in the next two seconds?**
@@ -663,7 +663,7 @@ Only half an hour? Cut the professional hockey and keep your own footage. That i
 - **Grading a player against a system you have assumed.** Work out the system first, then judge the player. A centre coming back along the boards, a winger holding high, or a defenceman who never goes below the circles may each be doing what their team asks.
 - **Looking up at the replay the moment a shot is taken.** Keep your eyes on the net front. In your own game, be that player: arrive under control, stop just outside the crease, stick on the ice and clear of the goalie, head up and knowing where the post is, first to the puck when it comes out. Never go into the goalie; contact with one can draw a penalty, or get you thrown out.
 - **Assuming what a professional team does is what your team wants.** Ask. Almost every "always do X" on TV is "in this team's system, in this score state, do X."
-- **Skipping to your own touches on video.** Watch each shift from step-on to sit-down. Your touches are only about 3–4% of your 5-on-5 ice time, by NHL tracking the league calls unofficial.
+- **Skipping to your own touches on video.** Watch each shift from step-on to sit-down. Your touches are only about 3.3% to 4.2% of your 5-on-5 ice time, by NHL tracking the league calls unofficial.
 - **Watching without taking anything to practice.** End every session with one sentence: the one thing you will try next.
 - **Quoting a statistic without knowing its definition.** Look it up on the site that publishes it first. Sites compute things differently.
 - **Treating plus/minus as a defensive measure.** Watch the defender instead: the gap, the stick, and where they were before each goal against.

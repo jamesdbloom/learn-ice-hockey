@@ -454,7 +454,7 @@ The number always reads **attackers on defenders** — a 2-on-1 is two attackers
 
 ```facts
 Goal: A shot from a place your goalie is comfortable with — not a hit and not a turnover
-Action: Steer them to a bad angle, force them wide, and keep forcing
+Action: Steer them to a bad angle with your route, and keep steering them wide
 Position: Stick in the lane, on the ice, out front — passing options are arriving behind the play
 Never: Lunge — it is a single bet on their next move, and if you are wrong they have the whole net
 Action: In a checking league ride them wide along the wall until their options collapse — but a carrier who can see you coming is no less protected, because defenceless is not the whole boarding test
@@ -468,7 +468,7 @@ Priority: Position first, contact second — a body check is a bonus, not a plan
 
 You against the carrier. This is gap control applied, and it is the situation everything else is built from.
 
-- **Steer them to a bad angle.** Your target is not a hit and not a turnover — it is a shot from a place your goalie is comfortable with. Force them wide and keep forcing.
+- **Steer them to a bad angle.** Your target is not a hit and not a turnover — it is a shot from a place your goalie is comfortable with. Keep steering them wide with your route.
 - **Stick in the lane, on the ice, out front.** Even in a 1-on-1 there are passing options arriving behind the play.
 - **Do not lunge.** A lunge is a single bet on their next move. If you are wrong, you are out of the play entirely and they have the whole net. Contain, keep your feet, and let them run out of ice.
 - **Use the boards as a second defender.** **In a checking league**, ride them wide along the wall and their options collapse — no cutback, no shooting angle, no pass across — **but a carrier seeing you coming does not lift the boarding rule on that ride.** **In women's hockey and any league without body checking, the wall still does the work, but your route closes it, not your body:** get to the ice first, and never use the boards to push, pin or lean on the carrier. ⚠️ **Never finish a steer on their numbers** — steering turns a carrier round, and a hit on their back is a check from behind. **Pin the puck, not the player.**
