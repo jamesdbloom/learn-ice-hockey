@@ -108,7 +108,7 @@ const jumpToSame = (() => {
 const crossOverJump = (() => {
   const d = diagram({
     title: 'One foot cross over jump',
-    desc: 'Glide forward on the left foot, right foot lifted on its right. Jump the right foot over the left, crossing in front of it, and land on the right foot on the far (left) side as the left foot lifts. Then jump the left foot back over the right to land on the right-hand side. Keep going, both directions.',
+    desc: 'Glide forward on the left foot, right foot lifted on its right. Jump the right foot over the left, crossing in front of it, and land on the right foot on the far (left) side as the left foot lifts. Bring the lifted left foot round to the left of the right foot, then jump it back over the right, in front, to land on the right-hand side. Keep going, both directions.',
   });
   const yA = 6.4, yB = 4.0, yC = 6.6;
   // Glide on the left foot.
@@ -126,7 +126,9 @@ const crossOverJump = (() => {
   d.skate(10.9, yB, 0, 'R', { label: 'land' });
   d.skate(10.6, yA - 0.4, 0, 'L', { lifted: true });
   d.track(`M 11.8 ${yB} L 14.6 ${yB}`, 'R', { arrow: false });
-  d.step(12.6, yB - 1.6, 3);
+  d.step(12.4, yB + 1.1, 3);
+  // The lifted left foot comes round to its own (left) side of the right foot, ready to cross back.
+  d.skate(13.1, yB - 1.0, 0, 'L', { lifted: true });
   // Back the other way: left foot jumps over the right.
   d.raw(`<line x1="${14.6 * PX}" y1="${yB * PX}" x2="${19.4 * PX}" y2="${yB * PX}" stroke="${COL.R}" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.55"/>`);
   d.track(`M 14.2 ${yB - 0.9} Q 16.2 ${yB - 0.4} 17.4 ${yC - 0.1}`, 'ink', { air: true });
@@ -267,7 +269,7 @@ export default [
         'Glide, crouch and touch the left skate, and jump back onto the right as you stand up. Keep it going, one jump after another.',
       ],
       mistake: 'Looking down at the skate to touch it, so the head drops and the balance goes with it.',
-      check: '',
+      check: 'Open point: no coaching source found that describes this exact drill. The IIHF practice manuals have the parts (one-foot glides, a squat touching the heels with the hands, one-foot jumps) but not the touch-then-jump combination. Confirm the touch comes before the jump, not on landing.',
     },
   },
   {
@@ -298,10 +300,10 @@ export default [
         'Glide forward on your left foot, right foot lifted.',
         'Jump your right foot over the left, crossing in front of it.',
         'Land on the right foot on the far side, knee bent, as the left foot lifts.',
-        'Jump the left foot back over the right the other way, and keep going, both directions.',
+        'Bring the lifted left foot round to the left of the right foot, then jump it back over the right, in front, to land on the right-hand side. Keep going, both directions.',
       ],
-      mistake: 'Crossing the foot behind instead of in front, or landing on a straight leg.',
-      check: 'Drawn travelling forward with a little sideways movement on each jump. If you want it done on the spot, or along a line (hopping back and forth over it), the picture is the same idea without the forward travel.',
+      mistake: 'Landing on a straight leg, or putting the lifted foot down to catch your balance.',
+      check: 'Open point: no coaching source found that names this drill, so crossing in front is drawn because a normal crossover crosses in front (Wikipedia, Crossover (figure skating); HockeyShot, Crossovers Tips). Confirm in front or behind. Drawn travelling forward with a little sideways movement on each jump; done on the spot or back and forth over a line, it is the same idea without the forward travel.',
     },
   },
   {

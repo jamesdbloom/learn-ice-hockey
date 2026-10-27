@@ -245,7 +245,7 @@ export default [
         'Push hard out of the turn and stride away the way you came. Repeat turning the other way.',
       ],
       mistake: 'Leaning back as the skates bite, so you stall or fall instead of driving out.',
-      check: 'I read "jam turn" as a sharp two-foot turn where the skates dig in and skid, part turn and part stop, then you push straight back out. I am not sure this is the owner\'s meaning: some coaches use "jam" for a one-foot stop-and-go or for a sharp heel-pivot on the inside foot. Please confirm.',
+      check: 'Checked against Ice Hockey Systems ("Jam Turns"): "an extremely tight turn", "not quite a stop", the inside skate leading on its outside edge and the outside foot gliding round on its inside edge. That matches. One difference: their version finishes with a crossover out of the turn, where this card pushes straight out.',
     },
   },
   {
@@ -262,7 +262,7 @@ export default [
         'Keep driving with short, quick strides. Repeat turning the other way.',
       ],
       mistake: 'Stopping dead after the jam and then starting again, instead of turning straight into the crossover.',
-      check: 'I read "punch jam" as a jam turn (sharp, biting, nearly a stop) finished with a hard crossover "punch" out of it, so it differs from a jam turn only in the exit. I am unsure of this one. Alternatives I know of: a full stop on one side then an explosive crossover start back the other way; or a jam done repeatedly in a zig-zag. Please confirm which the owner means.',
+      check: 'Different from the meaning found. Ice Hockey Systems (three pages, the only source found) calls a punch jam "almost a half of a jam turn", used to fake: you point your toes one way, then snap them the other way and jam the inside skate in to cut sharply that way. It is a fake and a sharp cut, not a full turn back with a crossover out as drawn here. Please decide which you want.',
     },
   },
   {
@@ -279,7 +279,7 @@ export default [
         'Keep accelerating with short, quick strides. Repeat turning the other way.',
       ],
       mistake: 'Standing up as you leave the turn, so the crossover pushes sideways instead of driving you forward.',
-      check: 'I read "punch turn" as a carved tight turn finished with one or two hard crossovers "punched" out of it. Some coaches use "punch turn" for a tight turn with a crossover in the middle of the turn, not only at the exit; I drew it at the exit. Please confirm.',
+      check: 'Different from the one source found. CoachThem calls a punch turn a "half stop" or "hybrid turn": one foot opens onto the flat of the blade as if stopping, while the other foot tight-turns on its inside edge. This card draws a tight turn with a crossover out, which other sources call a tight turn into crossovers. Please decide which you want.',
     },
   },
   {

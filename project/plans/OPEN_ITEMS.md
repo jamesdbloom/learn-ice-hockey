@@ -13,13 +13,15 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG91 (26 Oct, uncommitted in the tree; reviews running):**
-  - **Edits made:** winger DOPS facts line; glossary ladders :287/:417; forechecking 602(a) "or meant to injure" limb at seven sites (:625/:626 left at cap); defending_the_rush "keep steering them wide"; team_play DOPS one-game ban; core_principles, pwtp and practice_and_development possession figures (3.3–4.2%, 1.27/1.32/1.29 s); faceoffs 63.2(III); breakouts :346 non-checking hold-your-lane line; defender and dzc instruction-first ladder bullets; goaltender ("or match", 63.2(III), late-fight DOPS ban); risk_management charging and slew-foot ladders demoted (about −766 words) with IIHF case splits; special_teams IIHF case; uk_rules Northern Ireland has no 111 (GP or out-of-hours), Scotland agrees, 14 vs 13 red flags; conditioning :608 U10/U12 scope (and :334 NI 111, in progress); equipment KT5 202.3 never reaches IHUK juniors; bcb Sources EIHL trim (source-verifier SHIP).
-  - **special_teams :1103 row: refuted, already fixed at HEAD** (607(c) "checking or charging").
-  - **Non-content:** rules-verifier.md +12 source rows; podcast feed freeze (LIVE_NUMBERS, SECTION_SEASONS); rink.mjs leaders under tokens and LABEL_HALO 0.16; creaseThePuckDecides deleted; diagrams rebuilt (diagram-reviewer running).
-  - **Next:** rules-verifier plus a separate safety-reviewer per group, then the record (written last), build, gate, commit and push.
-  - **Open from SG91 reports:** risk_management dropped CARHA 48(c) and HC 7.1(c)(iii) kicking limbs from the slew-foot context (needs owner-page check); goaltender KT10 "a fight ejects you under the IIHF" errs harsh for NIHL/SNL/BUIHA; goaltender has no Sources entry for IHUK DOPS; conditioning :29 "fourteen flags" unscoped.
-- **NotebookLM batch 9 (Body Contact, Winger) is ready for the owner** at `.podcast_queue/notebooklm/remake_2026-10-20/batch9/`.
+- **SG91: DONE and pushed (27 Oct): 86aec8e, 0d5b275, 97db549** (records sg91a–e). Carry-overs:
+  - the "attempts to injure" 602(a) limb is still missing at forechecking :617/:625/:626 and defending_the_rush :434/:462/:1016 (brief as one claim);
+  - goaltender: no Sources entry for IHUK DOPS; :731/:734 still "63.2(iii)"; KT10 "a fight ejects you under the IIHF" errs harsh for NIHL/SNL/BUIHA;
+  - conditioning :29 "fourteen flags" is unscoped;
+  - risk_management :318 "IIHF may give a major and game misconduct (42.4)" is mildly permissive for British women's hockey (In-House 101);
+  - DZC facts :176 "Pin the puck, not the player" opens as universal before its women's-hockey scope;
+  - the "pin for help" licence is not yet checked in bcb "when to just pin it", defender and puck_handling.
+- **Diagram labels (owner-approved leader fix): NOT YET COMMITTED.** The second diagram-reviewer pass found that the leaderless fallback creates new wrong-player readings (dump-soft-area, attack-the-seam, rush-trailer, breakout-wheel, forecheck-212, oz-low-to-high). A fixer is holding the leaderless slot to a readsAsOwn margin against every player and re-auditing with each label's own player taken from the spec. After that: a third diagram review, then a gate and commit together with the uncommitted feed freeze (podcast-feed.ts, check-podcast-guids.mjs) and the center.mjs deletion.
+- **NotebookLM batch 9: received 27 Oct, reviewed SHIP after cuts.** Winger: 15 cuts (49.4 → 48.2 min). Body Contact: 12 cuts (39.7 → 35.3 min). The steers arrived. Masters are installed and encoded (podcast.json updated, uncommitted). **Waiting on the owner's AWS SSO login to upload**, then HEAD/range check, commit podcast.json and push. The review reports are in the scratchpad (nlm9/rev_winger, rev_bcb); write the review record at publish.
 - **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.
 
 ## Captions and small rules notes (23 Oct)
@@ -38,6 +40,8 @@ can ship once it has been reviewed.
 2. **Skating-drill diagrams:** 48 drafts in `project/getting_better_drafts/`, redrawn with the owner's first
    round of feedback (recorded in getting_better_plan.md §6). The private preview was republished on 26 Oct as a new artifact: https://claude.ai/artifact/51YTdiV8o8byV4nAZJMUaJ (the old link was deleted).
    - **Owner review round 2 (27 Oct), applied and republished (version 2):** Drills 1 and 5 are now alternating inside-edge arcs; 4 and 6 are alternating sharp outside-edge Cs with a crossover; 7 is backward outside-edge stepping along a blue line; the mohawks (19, 20) are curved, with a pivot on the leading foot; 22, the crossover start, was redrawn from the IIHF, Hockey Canada and Ice Hockey Systems coaching sources; 23 and 24 zig-zag diagonally between stops. Still to confirm: hand or boot (1, 5); which side of the line each foot lands (7); inside or outside edges in the mohawk (19); whether the stepping mohawk pivots (20); the lead toe opening (22); the backward stop (24).
+   - **Owner review round 3 (27 Oct), applied:** Drill 30 is placed one foot at a time; the anchor (33) is a heel drag, toe up and ankle collapsed; the soft drags (32, 34) are toe drags, heel up. The owner said drills 35+ look correct.
+   - **Web check of all 48 (27 Oct, owner request), republished as version 3.** Fixed: Drill 7's glide curl (outside edge), Drill 14's lifted-foot side, Drill 21's V-start strides (Hockey Canada Coach 1). Differences from the owner's rulings, noted in the cards and not changed: Drill 6 (figure skating crosses behind); Drill 22 (Hockey Canada pushes off the far leg first and lands the cross at about 90°); Drill 33 (the owner's example page describes an inside-edge pivot); punch jam (a fake and cut) and punch turn (a half stop). Open: Drills 29 versus 30 (two or three placements per half turn); Drill 12 (no source); Drills 27–28 (no source names crossing-under lemons).
    - **Waiting on the owner:** the rest of the drill-by-drill review. Seven readings are flagged to confirm: the sharp-C
      outside edge, step-overs alternating, backward outside-edge C-cuts, the backward crossover-and-stop shape,
      scissor stop foot order, which foot stops on the outside-edge one-foot stop, and "(toe down first)".

@@ -173,8 +173,10 @@ const blueLineSteps = (() => {
   });
   steps.forEach(({ foot, x, y }, i) => {
     // A short glide on the outside edge after landing: toe points back against travel.
+    // Backward, the skater's right is UP the page: the right foot's outside edge curves up, back towards the
+    // line, and the left foot's curves down, back towards the line.
     const side = foot === 'R' ? 1 : -1; // R below the line, L above
-    d.track(`M ${r3(x + 0.6)} ${r3(y)} Q ${r3(x + 1.2)} ${r3(y + side * 0.05)} ${r3(x + 1.6)} ${r3(y + side * 0.2)}`, foot, { width: 2.6 });
+    d.track(`M ${r3(x + 0.6)} ${r3(y)} Q ${r3(x + 1.2)} ${r3(y - side * 0.05)} ${r3(x + 1.6)} ${r3(y - side * 0.2)}`, foot, { width: 2.6 });
     d.skate(x, y, 180, foot, { len: 1.3 });
     if (i < 4) d.tag(x, y + side * 0.8, 'OUT', foot);
     // The step: from its last spot, behind the other foot, across to its own landing.
@@ -439,7 +441,7 @@ export default [
         'Keep alternating with small steps. No C shapes: just walk backwards down the line.',
       ],
       mistake: 'Putting the foot down on your own side of the line, so it lands flat or on its inside edge.',
-      check: 'Redrawn to your description: stepping backwards down a blue line, no C shapes. My reading is that each foot crosses the line, so the right foot lands on your left of the line and the left foot on your right, each on its outside edge. If you meant each foot stays on its own side of the line, please say and it will be redrawn.',
+      check: 'Redrawn to your description: stepping backwards down a blue line, no C shapes. My reading is that each foot crosses the line, so the right foot lands on your left of the line and the left foot on your right, each on its outside edge. If you meant each foot stays on its own side of the line, please say and it will be redrawn. Each short glide now curves back towards the line, which is the way an outside edge curves; it was drawn curving away. Figure-skating "backward cross strokes" are taught the same way, as close "step behinds" on outside edges (Karen Olson, icoachskating.com).',
     },
   },
   ...[['R', false], ['L', false], ['R', true], ['L', true]].map(([foot, backward]) => ({

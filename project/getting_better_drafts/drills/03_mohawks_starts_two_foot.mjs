@@ -88,7 +88,7 @@ const mohawk = (stepping) => {
 const vStart = (() => {
   const d = diagram({
     title: 'Explosive V-start',
-    desc: 'From a standing V (heels close, toes turned out) the skater runs forward on short, quick strides with the toes turned out, each push going out to the side; the strides lengthen and the toes come round as speed builds.',
+    desc: 'From a standing V (heels in, toes turned out) the skater drives forward. The first stride with each foot is short and driving, like running, each push going out to the side; the next strides get longer and the toes come round, and by about the sixth stride the skater is in full stride.',
   });
   // Start V: left foot up the page (skater faces +x, their left is -y).
   d.skate(2.6, 4.9, -45, 'L');
@@ -97,11 +97,11 @@ const vStart = (() => {
   d.step(1.3, 5.5, 1);
   // Strides: [x, y, angle, foot] with push tracks fanning out and back.
   const strides = [
-    [4.6, 6.5, 50, 'R'],
-    [6.4, 4.4, -48, 'L'],
-    [8.8, 6.7, 40, 'R'],
-    [11.6, 4.3, -32, 'L'],
-    [15.2, 6.6, 22, 'R'],
+    [4.4, 6.5, 50, 'R'],
+    [6.2, 4.4, -48, 'L'],
+    [8.6, 6.7, 40, 'R'],
+    [11.4, 4.3, -32, 'L'],
+    [15.0, 6.6, 22, 'R'],
     [19.2, 4.8, -12, 'L'],
   ];
   strides.forEach(([x, y, a, f]) => {
@@ -110,8 +110,8 @@ const vStart = (() => {
     const side = f === 'R' ? 1 : -1;
     d.track(`M ${x - 0.3} ${y + side * 0.25} L ${x - 0.9} ${y + side * 1.25}`, f, { width: 2 });
   });
-  d.text(5.5, 9.0, 'short, quick, toes out', { size: 0.44 });
-  d.text(16.8, 9.0, 'longer strides', { size: 0.44 });
+  d.text(5.3, 9.0, 'first two: short, driving', { size: 0.44 });
+  d.text(16.8, 9.0, 'longer, toes come round', { size: 0.44 });
   d.step(4.6, 8.0, 2);
   d.step(8.4, 3.2, 3);
   d.step(17.2, 3.2, 4);
@@ -362,13 +362,13 @@ export default [
     card: {
       trains: 'Getting to speed in the first few strides, which wins races to loose pucks.',
       steps: [
-        'Stand with heels close and toes turned out in a V, knees bent and leaning forward.',
-        'Run your first strides short and quick, toes out, pushing each foot out to the side.',
-        'Keep the next few strides short and fast and stay low.',
-        'As you speed up, let the strides get longer and the toes come round to point forward.',
+        'Stand with heels in and toes turned out in a V, knees bent and leaning forward, weight on the front of the blades.',
+        'Drive off one foot, then the other. The first stride with each foot is short and driving, more like running, with the push going out to the side and the leg fully extended.',
+        'Keep the skates low to the ice so each foot comes back fast for the next push.',
+        'Make the next strides longer. The toes come round as you speed up, and by about the sixth stride you are in full stride.',
       ],
-      mistake: 'Standing up tall and taking long first strides, so you glide instead of driving.',
-      check: '',
+      mistake: 'Standing up tall and taking long, gliding first strides, so you glide instead of driving.',
+      check: 'Checked against Hockey Canada Coach 1 (front start) and Laura Stamm (Human Kinetics): the first stride with each foot is short and driving, then the strides lengthen, full stride by about the sixth. I had said to keep the next few strides short too; that is now corrected.',
     },
   },
   {
@@ -471,7 +471,7 @@ export default [
         'Push out again from the crossed position. Do small lemons first, then wide ones.',
       ],
       mistake: 'Stopping the feet at the middle on the inside edges, so they never roll over and never cross.',
-      check: '"Feet together then wide gap" still read as small lemons first, then wide ones.',
+      check: '"Feet together then wide gap" still read as small lemons first, then wide ones. Open point: I found no coaching source that uses the name "crossing under lemons". The nearest drill I found, the criss-cross in slalom skating, does have the feet cross, but one foot passes in front of the other rather than both meeting on the line as drawn. Which foot goes in front, and does it swap each time?',
     },
   },
   {
@@ -488,7 +488,7 @@ export default [
         'Push out again from the crossed position. Small lemons first, then wide ones.',
       ],
       mistake: 'Leaning forward over the toes, which stops the heels pushing out and the feet crossing.',
-      check: 'Same reading as the forward version.',
+      check: 'Same reading and the same open point as the forward version: no source found for the name, and the drawing does not yet show which foot passes in front when they cross. The start, toes together and heels apart, matches Learn to Skate USA backward swizzles.',
     },
   },
 ];

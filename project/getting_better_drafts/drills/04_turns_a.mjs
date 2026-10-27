@@ -80,39 +80,48 @@ const stepFwdBack = (() => {
 
 // ---------------------------------------------------------------------------
 // 2. Turning stepping 360, alternate directions.
+// Owner, 27 Oct 2026: each half turn is a run of SINGLE-foot placements. Turning right from forwards:
+// (a) the right foot steps out sideways, toe to the skater's right, and is the only foot down;
+// (b) the left foot goes down ON ITS OWN pointing backwards, the right lifted;
+// (c) only then does the right foot come down beside it, backwards. Backwards to forwards is the same again.
+// Two lanes, both travelling right: top turns right (clockwise), bottom turns left (the mirror image).
+// Facing +x the skater's left is up the page; facing -x (backwards) their left is down.
 const step360 = (() => {
   const d = diagram({
-    w: 24, h: 11,
+    w: 22, h: 12,
     title: 'Turning stepping 360, alternate directions',
-    desc: 'Travelling right. Starting forwards, the skater steps round to the right: right foot first to go backwards, then right foot first again to come forwards, a full circle. The next circle turns to the left, leading with the left foot each time.',
+    desc: 'Two lanes, both travelling right. Top lane, a full circle turning right: from forwards, the right foot steps out sideways on its own; the left foot goes down on its own pointing backwards; then the right comes down beside it, backwards. Then the same again to come forwards: right foot sideways, left foot down on its own pointing forwards, right foot beside it. Bottom lane, the next circle turning left, leading with the left foot.',
   });
-  const y = 6, gap = 0.6;
-  const pair = (x, fwd, leftTop) => {
-    const a = fwd ? 0 : 180;
-    d.skate(x, leftTop ? y - gap : y + gap, a, 'L');
-    d.skate(x, leftTop ? y + gap : y - gap, a, 'R');
+  const xs = [1.8, 4.9, 8.0, 11.1, 14.2, 17.3, 20.3];
+  // Placements for the right turn, relative to the lane centre: [foot, dx, dy, angle, lifted]
+  const seq = [
+    [['L', 0, -0.6, 0], ['R', 0, 0.6, 0]],                          // 1 forwards, both feet
+    [['R', 0, 0.45, 90], ['L', -0.4, -0.65, 0, true]],             // 2 right foot sideways, alone
+    [['L', 0, 0.6, 180], ['R', 0.35, -0.6, 120, true]],            // 3 left foot down alone, backwards
+    [['L', 0, 0.6, 180], ['R', 0, -0.6, 180]],                     // 4 backwards, both feet
+    [['R', 0, -0.45, -90], ['L', 0.4, 0.65, 180, true]],           // 5 right foot sideways, alone
+    [['L', 0, -0.6, 0], ['R', -0.35, 0.6, -60, true]],             // 6 left foot down alone, forwards
+    [['L', 0, -0.6, 0], ['R', 0, 0.6, 0]],                         // 7 forwards, both feet
+  ];
+  const labels = ['forwards', 'sideways', 'one foot', 'backwards', 'sideways', 'one foot', 'forwards'];
+  const lane = (yc, right) => {
+    const sw = (f) => (right ? f : f === 'L' ? 'R' : 'L');
+    seq.forEach((group, i) => {
+      group.forEach(([foot, dx, dy, ang, lifted]) => {
+        d.skate(xs[i] + dx, yc + (right ? dy : -dy), right ? ang : -ang, sw(foot), { lifted: !!lifted, len: 1.2 });
+      });
+      d.step(xs[i], yc - 1.55, i + 1);
+      d.text(xs[i], yc + 1.65, labels[i], { size: 0.42 });
+    });
   };
-  const xs = [2.4, 7.1, 11.8, 16.5, 21.2];
-  pair(xs[0], true, true);   // forwards
-  pair(xs[1], false, false); // backwards after turning right
-  pair(xs[2], true, true);   // forwards: one full circle right
-  pair(xs[3], false, false); // backwards after turning left
-  pair(xs[4], true, true);   // forwards: one full circle left
-  // The leading foot, lifted and turned out, between stations.
-  d.skate(4.75, 7.3, 90, 'R', { lifted: true });   // turning right from forwards: right toe opens to your right
-  d.skate(9.45, 4.7, -90, 'R', { lifted: true });  // turning right from backwards: right toe opens to your right (now up the page)
-  d.skate(14.15, 4.7, -90, 'L', { lifted: true }); // turning left from forwards: left toe opens to your left
-  d.skate(18.85, 7.3, 90, 'L', { lifted: true });  // turning left from backwards: left toe opens to your left (now down the page)
-  spinIcon(d, 4.75, 3.0, true);
-  spinIcon(d, 9.45, 3.0, true);
-  spinIcon(d, 14.15, 3.0, false);
-  spinIcon(d, 18.85, 3.0, false);
-  d.text(7.1, 1.4, 'full circle turning right', { color: COL.ink, weight: 600 });
-  d.text(16.5, 1.4, 'full circle turning left', { color: COL.ink, weight: 600 });
-  d.iceLine(11.8, 1.9, 11.8, 4.2, COL.rim);
-  d.step(xs[0], 8.6, 1).step(xs[1], 8.6, 2).step(xs[2], 8.6, 3).step(xs[4], 8.6, 4);
-  d.text(xs[0], 4.7, 'fwd').text(xs[1], 7.9 + 0.1, 'back').text(xs[2], 4.7, 'fwd').text(xs[3], 7.9 + 0.1, 'back').text(xs[4], 4.7, 'fwd');
-  d.travel(6, 10, 18, 10);
+  d.text(0.6, 0.9, 'Full circle turning right', { anchor: 'start', color: COL.ink, weight: 600 });
+  spinIcon(d, 8.6, 0.85, true, 0.4);
+  lane(3.5, true);
+  d.iceLine(0.4, 5.95, 21.6, 5.95, COL.rim);
+  d.text(0.6, 6.75, 'Full circle turning left', { anchor: 'start', color: COL.ink, weight: 600 });
+  spinIcon(d, 8.5, 6.7, false, 0.4);
+  lane(9.3, false);
+  d.travel(6, 11.65, 16, 11.65);
   return d.svg();
 })();
 
@@ -153,38 +162,39 @@ const threeTurn = (() => {
 // travelling right, round an anticlockwise half circle, out along the top travelling left.
 const CX = 12, CY = 5.5;
 
-// 4/5/6. Soft drag (TOE) and anchor (HEEL): the same tight U-turn, drawn the same way so the difference is
-// obvious. The inside skate keeps one point on a single spot on the ice and swings round it:
-//   anchor    = the HEEL stays put, the toe swings round;
-//   soft drag = the TOE stays put, the heel swings round.
+// 4/5/6 redrawn 27 Oct 2026 (owner): the inside foot DRAGS through the turn, it does not pivot on one spot.
+//   Forwards anchor = HEEL drag, toe up, ankle collapsed, pressure through the heel.
+//   Soft drag (forwards and backwards) = TOE drag, heel up.
+// So the inside foot is drawn leaving a short drag mark round a tight U, its dragging end on the tip of the U.
 // Forward, turning left: inside foot = LEFT, outside = RIGHT (carving on its inside edge).
 // Backward (facing -x, path turning up the page = the skater's RIGHT): inside foot = RIGHT, outside = LEFT
-// (left foot curving to the skater's right = its inside edge). Backwards is toe only, and a sharper C.
-function pivotTurn({ title, desc, contact, backward }) {
+// (left foot curving to the skater's right = its inside edge), and a sharper C.
+function dragTurn({ title, desc, contact, backward = false }) {
   const d = diagram({ title, desc });
   const inside = backward ? 'R' : 'L', outside = backward ? 'L' : 'R';
-  const P = [CX, CY], Ro = backward ? 2.3 : 3.4, len = 1.5;
+  const Ro = backward ? 2.3 : 3.4, len = 1.5, rr = 0.35, ux = CX - 0.3;
   const flip = backward ? 180 : 0;
-  // Paths: the inside foot comes in and goes out next to the pivot; the outside foot carves round.
-  d.track(`M 2 ${CY + 0.35} L ${CX - 0.9} ${CY + 0.35}`, inside, { arrow: false });
-  d.track(`M ${CX - 0.9} ${CY - 0.35} L 6.5 ${CY - 0.35}`, inside);
+  // The inside foot comes in, drags round a tight U, and goes out; the outside foot carves round it.
+  d.track(`M 2 ${CY + rr} L ${ux} ${CY + rr}` + arc(ux, CY, rr, 90, -90, false) + ` L 6.5 ${CY - rr}`, inside);
+  // The drag mark: a wide pale scrape along the U where the heel (or toe) is on the ice.
+  const scrape = (`M ${ux - 1.4} ${CY + rr} L ${ux} ${CY + rr}` + arc(ux, CY, rr, 90, -90, false) + ` L ${ux - 1.4} ${CY - rr}`)
+    .replace(/-?\d*\.?\d+/g, (n) => String(Math.round(Number(n) * PX * 10) / 10));
+  d.raw(`<path d="${scrape}" fill="none" stroke="${COL.spray}" stroke-width="11" stroke-opacity="0.45" stroke-linecap="round"/>`);
   d.track(`M 2 ${CY + Ro} L ${CX} ${CY + Ro}` + arc(CX, CY, Ro, 90, -90, false) + ` L 6.5 ${CY - Ro}`, outside, { edge: 'IN', edgeAt: [CX + Ro + 0.8, CY + 1.4] });
-  // The inside skate mid-turn, with the contact point on the dot and a dashed arc for the end that swings.
-  const sgn = contact === 'heel' ? 1 : -1; // heel fixed: blade lies towards the toe; toe fixed: towards the heel
-  const am = -90 + flip;
-  const u = [Math.cos(rad(am)), Math.sin(rad(am))];
-  d.skate(P[0] + sgn * u[0] * len / 2, P[1] + sgn * u[1] * len / 2, am, inside, { len });
-  const off = sgn > 0 ? 0 : 180;
-  const sw = arc(P[0], P[1], len + 0.35, 0 + flip + off, -180 + flip + off).replace(/-?\d*\.?\d+/g, (n) => String(Math.round(Number(n) * PX * 10) / 10));
-  d.raw(`<path d="${sw}" fill="none" stroke="${COL[inside]}" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ah-${inside})"/>`);
-  d.raw(`<circle cx="${P[0] * PX}" cy="${P[1] * PX}" r="${0.2 * PX}" fill="#fff" stroke="${COL.ink}" stroke-width="2.5"/>`);
-  const lbl = contact === 'heel' ? 'heel anchors' : 'toe drags';
-  const lp = [P[0] - sgn * u[0] * 1.0, P[1] - sgn * u[1] * 1.0];
-  const below = lp[1] > P[1];
-  d.text(below ? P[0] - 0.5 : lp[0] + 0.3, below ? P[1] + 1.25 : lp[1] + 0.2, lbl, { size: 0.5, color: COL.ink, weight: 700, anchor: below ? 'end' : 'start' });
-  d.skate(5.5, CY + 0.35, flip, inside).skate(5.5, CY + Ro, flip, outside);
+  // The inside skate mid-turn (travelling up the page), its dragging end on the tip of the U.
+  const tip = [ux + rr, CY];
+  const toeAng = -90 + flip, toeDy = Math.sin(rad(toeAng)); // -1 forwards (toe up the page), +1 backwards
+  const heel = contact === 'heel';
+  const cyS = tip[1] + (heel ? 1 : -1) * toeDy * len / 2;
+  d.skate(tip[0], cyS, toeAng, inside, { len });
+  const lines = heel ? ['heel drags, toe up,', 'ankle rolled in'] : ['toe drags,', 'heel up'];
+  const above = cyS > CY; // put the label on the side away from the skate
+  const ly = above ? CY - 1.6 : CY + 1.3;
+  d.text(ux + (heel ? 0.3 : 0), ly, lines[0], { size: 0.46, color: COL.ink, weight: 700 });
+  d.text(ux + (heel ? 0.3 : 0), ly + 0.6, lines[1], { size: 0.46, color: COL.ink, weight: 700 });
+  if (heel) d.step(ux - 2.9, CY + 1.4, 2); else d.step(tip[0] + 0.95, CY + (above ? 0.3 : -0.3), 2);
+  d.skate(5.5, CY + rr, flip, inside).skate(5.5, CY + Ro, flip, outside);
   d.step(4, CY + (backward ? 1.4 : 1.9), 1);
-  if (below) d.step(P[0] + 0.5, P[1] + 1.1, 2); else d.step(lp[0] - 0.5, lp[1], 2);
   const [rx, ry] = pt(CX, CY, Ro, 22);
   d.skate(rx, ry, -68 + flip, outside);
   d.step(CX + Ro + 1.3, CY + 2.6, 3);
@@ -195,19 +205,19 @@ function pivotTurn({ title, desc, contact, backward }) {
   return d.svg();
 }
 
-const fwdSoftDrag = pivotTurn({
+const fwdSoftDrag = dragTurn({
   title: 'Forwards soft drag',
-  desc: 'A tight forward turn to the left, the same turn as the forwards anchor but on the toe. The inside (left) skate keeps its toe on one spot on the ice and drags round it, the heel swinging round, to help the turn. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.',
-  contact: 'toe', backward: false,
+  desc: 'A tight forward turn to the left, the same turn as the forwards anchor but on the toe. The inside (left) skate drags its toe on the ice, heel up, round a tight curve to help the turn. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.',
+  contact: 'toe',
 });
-const fwdAnchor = pivotTurn({
+const fwdAnchor = dragTurn({
   title: 'Forwards anchor',
-  desc: 'A tight forward turn to the left. The inside (left) skate is planted and pivots on its heel, which stays in one spot like an anchor, the toe swinging round from pointing forward to pointing back the way you came. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.',
-  contact: 'heel', backward: false,
+  desc: 'A tight forward turn to the left. The inside (left) foot is planted with the ankle rolled in and the pressure on the heel, toe up, and the heel drags round a tight curve through the turn. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.',
+  contact: 'heel',
 });
-const backSoftDrag = pivotTurn({
+const backSoftDrag = dragTurn({
   title: 'Backwards soft drag',
-  desc: 'Skating backwards, a sharp C-shaped turn. The inside (right) skate keeps its toe on one spot on the ice and drags round it to help the turn. The outside (left) foot carves a tight arc round it on its inside edge. Repeat the other way.',
+  desc: 'Skating backwards, a sharp C-shaped turn. The inside (right) skate drags its toe on the ice, heel up, round a tight curve to help the turn. The outside (left) foot carves a tight arc round it on its inside edge. Repeat the other way.',
   contact: 'toe', backward: true,
 });
 
@@ -272,11 +282,11 @@ export default [
       steps: [
         'Glide forwards on both feet, knees bent.',
         'Turn your shoulders and hips the way you want to go, put your weight on one foot, and lift the other with its toe turned out.',
-        'Put that foot down pointing backwards, then lift the other foot and turn it round.',
+        'Put that foot down on its own, pointing backwards, heel almost to the heel of the gliding foot. Then lift the other foot and turn it round.',
         'Put it down and glide backwards on both feet. Next time, turn the other way.',
       ],
       mistake: 'Turning the feet before the shoulders and hips, so the step is wide and wobbly instead of heel close to heel.',
-      check: 'Read as a stepped (open, mohawk-style) turn: turning right, the right foot steps round first; turning left, the left foot does. Some coaches teach it with both feet staying on the ice (a two-foot pivot). Say if that is what you meant.',
+      check: 'Checked against How To Hockey (transitions) and the open mohawk (C turn) in Wikipedia: one foot at a time, the turning foot goes down first almost heel to heel, then the other foot comes round. Drill 30 differs: there the turning foot first goes down sideways, then the OTHER foot is first to point backwards, then the turning foot joins it. Say which you want, and both drills will match it. Some coaches also teach a beginner version with both feet on the ice.',
     },
   },
   {
@@ -288,12 +298,14 @@ export default [
       trains: 'Turning all the way round while still moving, so you can look behind you and keep your speed.',
       steps: [
         'Glide forwards on both feet.',
-        'Turn to your right: step your right foot round to go backwards, then bring the left round.',
-        'Keep turning right: step the right foot round again to go forwards, then the left. That is a full circle.',
-        'Do the next full circle turning to your left, leading with the left foot each time.',
+        'Turn to your right: step your right foot out sideways, toe pointing to your right. It is the only foot on the ice.',
+        'Put your left foot down on its own, pointing backwards, and lift the right.',
+        'Bring the right foot down beside it, so you glide backwards on both feet.',
+        'Keep turning right: right foot sideways, then the left foot down on its own pointing forwards, then the right beside it. That is a full circle.',
+        'Do the next circle turning to your left, leading with the left foot each time.',
       ],
       mistake: 'Stopping halfway round to reset, so it becomes two separate half turns instead of one smooth circle.',
-      check: 'Read as a full turn made of two stepped half turns that keep spinning the same way, travelling in a straight line, then the next one spinning the other way. "Alternate directions" read as alternating the spin, not the direction of travel.',
+      check: 'Redrawn to your description. Each half turn is three placements: the sideways step on its own, then the other foot down on its own pointing the new way, then the sideways foot down beside it. Turning right, I read the foot that goes down alone as the left foot; confirm that is right. "Alternate directions" read as alternating the spin, not the direction of travel.',
     },
   },
   {
@@ -309,7 +321,7 @@ export default [
         'Come out gliding backwards on the inside edge of the same foot, still curving the same way. Repeat on the left foot.',
       ],
       mistake: 'Hopping or putting the free foot down to get round, instead of letting the blade turn on the ice.',
-      check: 'Read as a standard figure-skating three turn (forward outside edge to backward inside edge on one foot), done slowly in a small space. "On the spot" read as "with almost no travel", not a two-foot spin or jump. The drawing shows the right foot; the same turn can also start on the forward inside edge.',
+      check: 'Checked against Wikipedia (Three-turn) and Skate Canada defined terms: forward outside edge in, backward inside edge out, same foot, turning in the direction of the curve with the exit on the same circle, so the point of the turn faces into the circle. Read as a standard figure-skating three turn (forward outside edge to backward inside edge on one foot), done slowly in a small space. "On the spot" read as "with almost no travel", not a two-foot spin or jump. The drawing shows the right foot; the same turn can also start on the forward inside edge.',
     },
   },
   {
@@ -321,12 +333,12 @@ export default [
       trains: 'A tighter turn by letting the inside foot help it round, so you can change direction in a small space.',
       steps: [
         'Skate in forwards, knees bent.',
-        'Put the inside foot\'s toe on the ice and let it drag on one spot while the heel swings round. This is the same turn as the anchor, but on the toe instead of the heel.',
+        'Put the inside foot\'s toe on the ice, heel up, and drag the toe round through the turn. This is the same turn as the anchor, but dragging the toe instead of the heel.',
         'Carve the outside foot round it on its inside edge.',
         'Come out of the turn and skate away. Repeat turning the other way.',
       ],
       mistake: 'Pressing the toe down too hard, so it acts as a brake and you stall in the turn.',
-      check: '',
+      check: 'Redrawn to your correction: the inside toe drags through the turn with the heel up, the mirror of the anchor\'s heel drag.',
     },
   },
   {
@@ -335,15 +347,15 @@ export default [
     title: 'Forwards Anchor',
     svg: fwdAnchor,
     card: {
-      trains: 'A much tighter turn by using the inside foot as a pivot, so you can change direction in a small space.',
+      trains: 'A much tighter turn by dragging the inside heel as an anchor, so you can change direction in a small space.',
       steps: [
         'Skate in forwards with a wide stance.',
-        'Plant the inside foot and anchor it on the heel of the skate: the heel stays in one spot while the toe swings round.',
-        'Carve the outside foot round the anchor on its inside edge.',
+        'Plant the inside foot with the ankle collapsed (rolled in), the pressure on the heel and the toe up.',
+        'Drag that heel through the turn while the outside foot carves round it on its inside edge.',
         'Come out of the turn and skate away. Repeat turning the other way.',
       ],
-      mistake: 'Letting the inside heel slide, so there is no anchor and the turn goes wide.',
-      check: '',
+      mistake: 'Putting the whole blade down, so the toe catches and you trip. Keep the toe up and the pressure on the heel.',
+      check: 'Redrawn to your correction: the inside heel drags through the turn, toe up, ankle collapsed and pressure on the heel. It is no longer a fixed pivot.',
     },
   },
   {
@@ -355,12 +367,12 @@ export default [
       trains: 'Turning sharply while skating backwards, as a defenceman does when the play changes direction.',
       steps: [
         'Skate backwards, knees bent.',
-        'Put the inside foot\'s toe on the ice and let it drag on one spot to help the turn. Going backwards, only the toe works for this, not the heel.',
+        'Put the inside foot\'s toe on the ice, heel up, and drag the toe round through the turn. Going backwards, only the toe works for this, not the heel.',
         'Carve the outside foot round it on its inside edge, in a sharp, tight C.',
         'Come out of the turn and skate away backwards. Repeat turning the other way.',
       ],
       mistake: 'Looking down at the feet: the shoulders drop and the turn wobbles. Keep your head up.',
-      check: '',
+      check: 'Redrawn to your correction: the inside toe drags through the turn with the heel up, the same as the forwards soft drag.',
     },
   },
   ...[false, true].map((backward) => ({

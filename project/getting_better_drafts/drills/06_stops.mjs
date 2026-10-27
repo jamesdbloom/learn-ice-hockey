@@ -205,7 +205,7 @@ export default [
         'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Leaning forward over the toes, so the scraping foot catches and tips you instead of slowing you.',
-      check: 'I read this as a one-foot snowplow stop: one blade turned toe-in and pushed out in front on its inside edge while the other foot glides. If you meant a different stop with one foot placed in front of the other (for example a front-foot hockey stop), the diagram is wrong.',
+      check: 'Matches the Learn to Skate USA snowplow stop on one foot: inside edge, heel angled out.',
     },
   },
   {
@@ -223,7 +223,7 @@ export default [
         'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Twisting the hips round towards the back foot, which turns you sideways instead of stopping you.',
-      check: 'I read the back foot as dragging on its outside edge, as in the usual learn-to-skate T-stop, with the instep of the back foot just behind the front heel. Some coaches also teach an inside-edge drag behind the body; if that is what you meant, the edge tag and step 3 need changing.',
+      check: 'Outside edge confirmed: Learn to Skate USA has the back foot drawn into the skating heel, pressing on its outside edge, shoulders square.',
     },
   },
   {
@@ -255,7 +255,7 @@ export default [
         'Sink your knees and lean back against the slide, front foot on its inside edge and back foot on its outside edge, until you stop. Practise turning both ways.',
       ],
       mistake: 'Letting the feet come level, which turns it back into the parallel stop.',
-      check: 'Drawn with the inside (here the left) skate ahead in the scissor. If you keep the other foot ahead, say and it will be swapped.',
+      check: 'Inside skate ahead confirmed (HockeyPlayer: inside foot ahead by almost a skate length). Step 3 says "front foot" for the foot nearer the direction of travel, which is the outside skate, the one behind in the scissor; you may want plainer words there.',
     },
   },
   {
@@ -289,7 +289,7 @@ export default [
         'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Leaning the upper body forward over the stopping foot, so the outside edge slips out.',
-      check: 'Read as stopping on the same (gliding) foot, which turns toe-out so its heel ends up in front of the lifted foot.',
+      check: 'Stopping foot turning toe-out onto its outside edge matches coaching sources. One (HockeyShot) has the lifted foot end on the travel side, ready to cross over and go back, rather than behind the stopping heel.',
     },
   },
   {
@@ -306,7 +306,7 @@ export default [
         'Repeat on the other foot: work both feet equally.',
       ],
       mistake: 'Leaning back over the heels, so the blade slides out from under you.',
-      check: 'I read this as a one-foot backward snowplow stop: toe turned out, heel pushed out on the inside edge. It could instead mean turning the blade fully sideways from a backward glide, which is a harder stop; I am not sure which you meant.',
+      check: 'Matches the Learn to Skate USA backward snowplow stop, done on one foot (R and L): toe out, heel in, inside edge.',
     },
   },
 ];
