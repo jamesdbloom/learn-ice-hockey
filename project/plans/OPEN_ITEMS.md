@@ -13,6 +13,8 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
+- **SG103 in flight (27 Oct, uncommitted):** A goaltender (:1427 "may be", :1411 citations, :789 antecedent); B defender and center (DOPS under-16 limb, "never for a whistle"); C risk_management (IIHF hooking/tripping majors eject in British women's/junior); D forechecking_systems.md (:617, :626, optional 602(a)); E dzc :177 three seconds and bcb :1150 whistle; F uk_rules DOPS C.1 boarding minor; G diagrams (forecheck-122 tag 2, labels over dots, relax warnings). CARHA "at least one game" sweep done: no match site carries it, so that row is closed.
+
 - **SG95–SG100: DONE** (a6d7ff5, e6d0749, 899148b, 586a353, 4309ba0). Open carry-overs:
   - **Closed 27 Oct** (record: project/reviews/ihuk76_lateness_and_eihl_version_2026-10-27.md): In-House Rule 76 and lateness are researched and still unsettled by any British source, so faceoffs :799/:814 stay as written. The EIHL Casebook on disk is v1.1 (sources/README :2215); its footers are stale;
   - The IHUK referee site distributes "IIHF_Rule_Book_2026-27-compressed.pdf" to officials. The proxy blocked the fetch (403). Fetch it from an unfiltered network and check whether it is the 2026/27 book; that bears on the In-House edition contradiction in sources/README;
@@ -142,7 +144,6 @@ can ship once it has been reviewed.
   - The DOPS points ladder (App D/E: 10 points means a ban) is stated nowhere.
   - The superseded 2022 IIHF Disciplinary Code is not on disk.
 - **HC 7.5 "ejects at every tier" simplification:** Interpretation 3 (a low-speed pin from behind is permitted) and Interpretation 1 (a stationary cross-check from behind is 9.2) are unvoiced. This is not unsafe; just note it if any line claims more.
-- **CARHA match vs 32(d): OWNER RULED 25 Oct: keep the 34(a) wording ("out until the case is dealt with"); do NOT add "at least one game" to match sites.** Sweep only for any match site that already says "at least one game" and correct it to 34(a).
 - **DOPS wave 2: DONE (SG79, 25 Oct).** Fixed the slur sites on mental_game and team_play, added one body sentence and one facts line per page, and added penalty points to uk_rules. Still open:
   - **Optional:** add the Appendix J under-16 limb wherever a page addresses juniors.
   - Deliberately left low (all discretionary "up to" bands, add only if a page is edited anyway):
