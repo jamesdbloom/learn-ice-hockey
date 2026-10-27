@@ -13,6 +13,11 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
+- **SG95: DONE** (header rewording, "IIHF flags are yours" → "Wherever this page gives the IIHF rule, it is yours"). Carry-overs:
+  - bcb :5–6 "more of those flags than any other" ("differences" would be clearer);
+  - getting_started :193 "the IIHF rules in these documents are yours:", whose first bullet below is an In-House amendment ("as amended locally" would be exact);
+  - Per-page sweep: IIHF rules that the In-House Rules or the EIHL Casebook amend without a local note nearby, and the edition split (In-House competitions use 2025/26, the EIHL 2026/27).
+- **Diagram label audit (27 Oct):** a script-assisted audit found 11 misreadings. 8 of the 15 hinted diagrams passed review; 7 are being reworked (deny-the-reception, forecheck-131, nz-1-2-2-containment, centre-backcheck-middle-lane, both dz-walk-down, shooting-lane-and-the-step). Uncommitted .mjs hints are in the tree.
 - **SG93 and SG94: DONE (ec6d1d6, fe91058).** Carry-overs:
   - DOPS C.1 lists "Boarding"; the corpus says "a boarding major" (uk_rules :413). Is a boarding minor also a C.1 trigger? C.1's triggers come from the owner page, not the C.1 text.
   - The DOPS carriers at defender :496, center :773 and defender :910 omit the under-16 written-warning limb that the owner page carries.
@@ -100,8 +105,7 @@ can ship once it has been reviewed.
 - **Fragile caption dependency (guarded, SG74):** forecheck-212-stacked, and forecheck-122 in how_to_watch_hockey, rely on forecheck-212 being embedded immediately before them. scripts/check_caption_pairs.py now reports any break (run it after reordering a host). forecheck-131's source comment copies forecheck-122's adjacency claim, but 131 is not in how_to_watch_hockey; that stale comment is a nit.
 - **Faceoff/81.4 follow-ons (low, SG64):** not yet checked: IIHF Situation Handbook rulings on 82.1, the broken-skate sites in winger, goaltender and defender in voiced context, and how HC, CARHA and USAH treat a non-taker's stick-on-stick contact (the books don't define it).
 - **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. OWNER RULED 26 Oct: a thicker LABEL_HALO (in progress, with the leader fix).
-- **🇬🇧 flag wave: DONE (SG84, 25 Oct).** 101 mid-prose flags were removed or reworded across 19 files; 86 remain, all opening a block. The convention is now in the style guide. Follow-ons:
-  - **The "Playing in Britain? The IIHF flags are yours" header** (about 35 pages, plus game_management :44, rules_primer :45 and uk_rules KT :618) invites reading "flags" as the visible 🇬🇧. Suggested: "Wherever a page gives the IIHF rule, it is yours". This is a separate wave across all pages.
+- **🇬🇧 flag wave: DONE (SG84, 25 Oct; follow-ons SG93, SG95).**
 
 ## Podcasts
 
