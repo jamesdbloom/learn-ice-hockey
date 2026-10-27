@@ -14,8 +14,9 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 ## In flight
 
 - **SG95–SG100: DONE** (a6d7ff5, e6d0749, 899148b, 586a353, 4309ba0). Open carry-overs:
-  - In-House Rule 76 and lateness: unclear; the IHUK Rules of Competition are not on disk;
-  - the EIHL Casebook on disk may be v1.0 (footer "VERSION 1.0 010826") while uk_rules :682 cites v1.1 (8 Sep). Check sources/README;
+  - **Closed 27 Oct** (record: project/reviews/ihuk76_lateness_and_eihl_version_2026-10-27.md): In-House Rule 76 and lateness are researched and still unsettled by any British source, so faceoffs :799/:814 stay as written. The EIHL Casebook on disk is v1.1 (sources/README :2215); its footers are stale;
+  - The IHUK referee site distributes "IIHF_Rule_Book_2026-27-compressed.pdf" to officials. The proxy blocked the fetch (403). Fetch it from an unfiltered network and check whether it is the 2026/27 book; that bears on the In-House edition contradiction in sources/README;
+  - Glossary "sealing" is defined as "arriving second", while several diagrams and glossary lines use it for a single forechecker (commit-gate note, SG102). Nit: decide whether the definition should cover both;
   - diagrams (SG101 c5df861; SG102 fixed the three majors: cross-ice-in-your-own-end F1 now "seals D1" with no leader, dz-walk-down-man tag 2 and forecheck-212 tag 1 via badge `along`, which may now pass the midpoint, and "takes the weak side" next to F1). Open:
     - forecheck-122 tag 2 touches F2's glyph by about 0.67 ft (minor). Retry with `along` past the midpoint, off the far side of the bars;
     - 16 relax warnings remain; about 29 labels sit over faceoff dots;
