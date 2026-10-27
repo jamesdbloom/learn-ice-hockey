@@ -753,7 +753,11 @@ const flipOverTrap = {
       label: 'three across the middle' },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dy: -30 } },           // (0, -30)
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 7, dy: -14 },       // (32, -14)
-      label: 'one back' },
+      // labelHint: under the D, shifted 4 ft toward their goal (SG108, 27 Oct 2026). Unhinted,
+      // the words sat over the blue line with the neutral-zone faceoff dot at (20, -22) just
+      // left of "one", where it read as a bullet. Here they clear the blue line and sit about
+      // 6 ft from the dot, close enough to the D that the placer draws no leader.
+      label: 'one back', labelHint: [4, -9] },
 
     // labelHint: off the blue line, where its leader could not be seen, and clear of the
     // neighbouring player it read as belonging to (label audit, 27 Oct 2026). Raised from
@@ -1551,7 +1555,7 @@ const squashAndSlide = {
     { id: 'D', pos: 'D', at: SLIDE_D_NEAR, label: 'forces the carrier outside' },
     { id: 'D', pos: 'D', at: SLIDE_D_FAR, label: 'slides the same distance' },
     { id: 'F', pos: 'F', at: SLIDE_F, label: 'protects the slot, not the puck' },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'F', team: 'opp', pos: 'F', at: SLIDE_CARRIER, label: 'carries in on the near side', labelHint: [4.5, 10.5] },
   ],
 

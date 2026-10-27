@@ -161,7 +161,7 @@ const sharpC = sharpCs({
 const blueLineSteps = (() => {
   const d = diagram({
     title: 'Outside edge, stepping backwards along a blue line',
-    desc: 'Skating backwards to the right, facing left, straight down a blue line. Small alternating steps, no C shapes. Each step puts the stepping foot behind you and across the line: the right foot lands on your left of the line and the left foot on your right, each on its outside edge.',
+    desc: 'Facing left, stepping backwards to the right straight down a blue line, one step at a time with no gliding. Each step lifts a foot and places it behind you and across the line: the right foot lands on your left of the line and the left foot on your right, each set down on its outside edge.',
   });
   const cy = 5.2, gap = 1.05, dx = 2.6;
   // Blue line, 1 ft wide, in the rink kit's blue.
@@ -172,15 +172,13 @@ const blueLineSteps = (() => {
     return { foot, x: 3.2 + i * dx, y: foot === 'R' ? cy + gap : cy - gap };
   });
   steps.forEach(({ foot, x, y }, i) => {
-    // A short glide on the outside edge after landing: toe points back against travel.
-    // Backward, the skater's right is UP the page: the right foot's outside edge curves up, back towards the
-    // line, and the left foot's curves down, back towards the line.
+    // No glide: each foot is placed and stays put (owner, 27 Oct: "I step backwards one step at a time,
+    // each time placing one foot behind me on the outside edge"). The skate print alone marks the placement.
     const side = foot === 'R' ? 1 : -1; // R below the line, L above
-    d.track(`M ${r3(x + 0.6)} ${r3(y)} Q ${r3(x + 1.2)} ${r3(y - side * 0.05)} ${r3(x + 1.6)} ${r3(y - side * 0.2)}`, foot, { width: 2.6 });
     d.skate(x, y, 180, foot, { len: 1.3 });
     if (i < 4) d.tag(x, y + side * 0.8, 'OUT', foot);
-    // The step: from its last spot, behind the other foot, across to its own landing.
-    if (i >= 2 && i <= 3) {
+    // The step: lifted from its last spot, carried behind the other foot, placed across the line.
+    if (i >= 2) {
       const prev = steps[i - 2];
       d.track(`M ${r3(prev.x + 0.9)} ${r3(prev.y - side * 0.15)} Q ${r3((prev.x + x) / 2 + 0.4)} ${r3(y + side * 1.4)} ${r3(x - 0.75)} ${r3(y + side * 0.15)}`, foot, { air: true, width: 2.4 });
     }
@@ -435,13 +433,13 @@ export default [
     card: {
       trains: 'Finding the backward outside edge on every step, the edge a backward crossover lands on.',
       steps: [
-        'Stand on a blue line, facing back up it, and skate backwards down the line.',
-        'Step your right foot behind you and across the line, so it lands on your left of the line, on its outside edge.',
-        'Step your left foot behind you and across to your right of the line, on its outside edge.',
-        'Keep alternating with small steps. No C shapes: just walk backwards down the line.',
+        'Stand on a blue line, facing back up it. You will step backwards down the line, one step at a time.',
+        'Lift your right foot and place it behind you, across the line, so it lands on your left of the line on its outside edge.',
+        'Lift your left foot and place it behind you, across to your right of the line, on its outside edge.',
+        'Keep alternating, one placed step at a time. No gliding and no C shapes: walk backwards down the line.',
       ],
       mistake: 'Putting the foot down on your own side of the line, so it lands flat or on its inside edge.',
-      check: 'Redrawn to your description: stepping backwards down a blue line, no C shapes. My reading is that each foot crosses the line, so the right foot lands on your left of the line and the left foot on your right, each on its outside edge. If you meant each foot stays on its own side of the line, please say and it will be redrawn. Each short glide now curves back towards the line, which is the way an outside edge curves; it was drawn curving away. Figure-skating "backward cross strokes" are taught the same way, as close "step behinds" on outside edges (Karen Olson, icoachskating.com).',
+      check: 'Redrawn again (round 4): no glide at all, each foot is placed behind you one step at a time and stays where it lands. Earlier: stepping backwards down a blue line, no C shapes. My reading is that each foot crosses the line, so the right foot lands on your left of the line and the left foot on your right, each on its outside edge. If you meant each foot stays on its own side of the line, please say and it will be redrawn. Figure-skating "backward cross strokes" are taught the same way, as close "step behinds" on outside edges (Karen Olson, icoachskating.com).',
     },
   },
   ...[['R', false], ['L', false], ['R', true], ['L', true]].map(([foot, backward]) => ({

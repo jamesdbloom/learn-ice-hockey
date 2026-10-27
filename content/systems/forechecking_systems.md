@@ -65,7 +65,7 @@ Risk: Guessing which forecheck your own team is running is how odd-man rushes ha
 - **The point** is the ice just inside the blue line where the defencemen stand — an area, not the line.
 - **A rim and a reverse** are opposites: a rim sends the puck *onward* around the boards, a reverse sends it *back*. A rim beats a forechecker who has sealed the carrier in; a reverse beats one who has over-committed.
 - **A pinch and a step-up** differ too. A **pinch** is a defenceman stepping *down* from the offensive blue line to keep a puck in; a **step-up** is moving forward to challenge an attacker early, in the neutral zone or at your own blue line. See [When to pinch](#when-to-pinch).
-- **Steering and sealing** are the two halves of a forecheck arriving. **Steering** shadows the carrier, with your route and stick, so they skate into an area where you can take their time and space; **sealing** is arriving second and closing the escape route. ⚠️ **Sealing also means contact against the boards, and whether you may do that is a question for your rulebook, not your coach** — see [What your book allows when you get there](#what-your-book-allows-when-you-get-there).
+- **Steering and sealing** are the two halves of a forecheck arriving. **Steering** shadows the carrier, with your route and stick, so they skate into an area where you can take their time and space; **sealing** is arriving second and closing the escape route. ⚠️ **Sealing holds the lane with your position; it never means pushing or pinning them into the boards.** How much contact your book allows there is a question for your rulebook, not your coach — see [What your book allows when you get there](#what-your-book-allows-when-you-get-there).
 
 ---
 

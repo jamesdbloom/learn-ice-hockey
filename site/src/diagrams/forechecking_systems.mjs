@@ -125,7 +125,7 @@ const forecheckAngling = {
     // restored and what it costs (one reviewed WARN, shared with forecheck-212 on this
     // identical route, never a build failure).
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'D', team: 'opp', pos: 'D', at: CARRIER, label: 'retrieving the puck', labelHint: [-13.5, 6] },
     // labelHint: directly below F with no leader; the placer's own slot was 21 ft away with the
     // faceoff dot inside "forechecker" (faceoff-dot census, 27 Oct 2026).
@@ -219,10 +219,10 @@ const forecheck212 = {
     // everything behind it").
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
     { id: 'D1', team: 'opp', pos: 'D', at: CARRIER,                              label: 'puck carrier' },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'D2', team: 'opp', pos: 'D', at: { at: 'corner:left', dx: -4, dy: 6 }, label: 'the reverse', labelHint: [-13.5, 3] },
     { id: 'W1', team: 'opp', pos: 'F', at: 'half-wall:right',                    label: 'first option' },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'W2', team: 'opp', pos: 'F', at: 'half-wall:left',                     label: 'cross-ice option', labelHint: [-16.5, 0] },
 
     // Own team. Two deep, one high, two on the line — the shape the facts block states.
@@ -1082,7 +1082,7 @@ const forecheckRolesRotate = {
 
   players: [
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
     { id: 'D1', team: 'opp', pos: 'D', at: CARRIER,             label: 'the D-to-D', labelHint: [-16, 0] },
     { id: 'D2', team: 'opp', pos: 'D', at: ROT_D2,              label: 'the new carrier' },
     { id: 'W1', team: 'opp', pos: 'F', at: 'half-wall:right' },

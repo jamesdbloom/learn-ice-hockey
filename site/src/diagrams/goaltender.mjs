@@ -220,7 +220,12 @@ const frontDoorBackDoor = {
   players: [
     { id: 'F1', team: 'opp', pos: 'F', at: SHOOTER_R, label: 'the shooter' },
     { id: 'F2', team: 'opp', pos: 'F', at: BACK_DOOR, label: 'back door' },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
+    // Kept at [2, 12] (SG108, 27 Oct 2026): [1, 14] was tried and rejected in diagram review. It moved the
+    // leader tip from 0.42 to 1.33 ft off the goal line, but the faceoff circle still crossed the label (through
+    // the "a" instead of the "b") and the words sat nearer the shooter than the goalie. Every slot above
+    // the goalie gives a leader roughly parallel to the goal line; the only honoured crosswise slots
+    // (17-21 ft to the left) run it across the pass, which is worse. Left for a wording or route change.
     { id: 'G', pos: 'G', at: ON_LINE_STRONG_4, label: 'backed off', labelHint: [2, 12] },
   ],
 

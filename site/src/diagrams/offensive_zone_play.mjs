@@ -559,7 +559,7 @@ const lowToHigh = {
     { id: 'F1', pos: 'F', at: HALF_WALL,           label: 'passes, then supports', labelHint: [-28.5, 0.25] },
     { id: 'F2', pos: 'F', at: NET_FRONT,           label: 'screen and tip' },
     { id: 'F3', pos: 'F', at: HIGH_SLOT_SUPPORT,   label: 'high-slot option' },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'D',  pos: 'D', at: 'point:right',       label: 'walks, then shoots', labelHint: [-9, 9] },
     { id: 'D',  pos: 'D', at: 'point:left',        label: 'reads the rebound' },
     { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },

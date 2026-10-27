@@ -333,7 +333,7 @@ const dzoneAlignment = {
   players: [
     // Own five, exactly the five bullets of "The standard setup".
     { id: 'C', pos: 'F', at: D_CENTRE },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'W', pos: 'F', at: D_BOARDS_W, label: 'boards-side winger', labelHint: [-18, 0] },
     { id: 'W', pos: 'F', at: D_INSIDE_W, label: 'inside winger' },
     { id: 'D', pos: 'D', at: D_WALL_D,   label: 'boards-side D' },

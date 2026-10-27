@@ -811,6 +811,12 @@ const hinge = {
 
   players: [
     // Only as much opposition as the section describes, and no more.
+    // ⚠️ NO labelHint, AND NOT FOR WANT OF TRYING. Its words cover the neutral-zone faceoff
+    // dot at (20, -22). A sweep of every hint within 30 ft of this F, at 0.5-1 ft steps
+    // (SG108, 27 Oct 2026), found the placer honours only slots 25.5-30 ft to its right and
+    // 7-9 ft toward mid-ice, and every one of them still covers that dot: at this length the
+    // label is about 50 ft wide. Clearing it
+    // needs a shorter label or a moved player, not a hint.
     { id: 'F', team: 'opp', pos: 'F', at: H_OPP_LOW, label: 'committed to that side' },
     // ⚠️ THE LABEL NAMES THE LANE, NEVER THE PASS. "Takes the cross-ice pass" was
     // here, and in English and in hockey "takes the pass" means RECEIVES it — so the
@@ -1041,7 +1047,7 @@ const backOffAtTheLine = {
     { id: 'G', pos: 'G', at: OUR_G },
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
     { id: 'C', team: 'opp', pos: 'F', at: BL_CARRIER, label: 'steered outside' },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
+    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
     { id: 'D', pos: 'D', at: BL_D, label: 'concedes the line', labelHint: [-18, 7] },
   ],
 

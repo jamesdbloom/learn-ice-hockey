@@ -30,11 +30,12 @@ function spinArrow(d, cx, cy, rad) {
   d.track(arc(cx, cy, rad, 60, -200), 'ink', { width: 2 });
 }
 
-// A hand touching the ice (or the skate): a small grey palm print.
-function hand(d, x, y) {
+// A hand touching the ice (or the skate): a small grey palm print. Fingers point up by default; pass
+// down = true for a hand drawn below a skate, so the skate does not cover the fingers.
+function hand(d, x, y, down = false) {
   d.raw(`<circle cx="${f(x * PX)}" cy="${f(y * PX)}" r="${f(0.24 * PX)}" fill="${COL.muted}" fill-opacity="0.8"/>` +
     [-50, -20, 10, 40].map((a) => {
-      const r = (a - 90) * Math.PI / 180;
+      const r = (down ? a + 90 : a - 90) * Math.PI / 180;
       return `<circle cx="${f((x + Math.cos(r) * 0.38) * PX)}" cy="${f((y + Math.sin(r) * 0.38) * PX)}" r="${f(0.08 * PX)}" fill="${COL.muted}" fill-opacity="0.8"/>`;
     }).join(''));
 }
@@ -65,7 +66,7 @@ const jumpToOther = (() => {
   d.skate(10.8, yR - 0.6, 0, 'R', { lifted: true });
   d.track(`M 11.7 ${yL} L 15.6 ${yL}`, 'L', { arrow: false });
   d.skate(14.6, yL, 0, 'L');
-  hand(d, 14.6, yL + 0.45);
+  hand(d, 14.6, yL + 0.6, true);
   d.text(14.6, yL - 1.0, 'touch, head up', { size: 0.42 });
   d.step(12.6, 3.0, 4);
   d.track(`M 16.0 ${yL + 0.2} Q 17.8 ${yL + 0.2} 18.4 ${yR - 0.05}`, 'ink', { air: true });
