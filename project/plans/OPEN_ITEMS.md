@@ -13,6 +13,11 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
+- **SG93: DONE (ec6d1d6)**: British cues restored, the IIHF tripping major in British women's and junior hockey, EIHL warm-up and fighting agreed. Carry-overs:
+  - risk :665 states the junior ejection flatly (uk_rules :377 calls it an inference; change to "plan on it");
+  - goaltender facts :1411 lost the USAH 636(c) and HC 2.2(i) citations (300/300);
+  - goaltender facts :1024 and on_ice_communication facts :145/:370 have no British cue;
+  - goaltender :1427 says "is reviewed" where the source says "may be" (errs harsh).
 - **SG91 and SG92: DONE and pushed** (86aec8e, 0d5b275, 97db549, dd29454; records sg91a–e, sg92). SG92 carry-overs:
   - risk_management :648, :664, :692: the IIHF hooking and tripping majors eject in British women's and junior hockey (the same shape as :318);
   - forechecking :1041, :1047, KT8, KT9 speak of ejection without the 602(a) match (incomplete, not false; optional);
@@ -105,24 +110,6 @@ can ship once it has been reviewed.
 - **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. OWNER RULED 26 Oct: a thicker LABEL_HALO (in progress, with the leader fix).
 - **🇬🇧 flag wave: DONE (SG84, 25 Oct).** 101 mid-prose flags were removed or reworded across 19 files; 86 remain, all opening a block. The convention is now in the style guide. Follow-ons:
   - **The "Playing in Britain? The IIHF flags are yours" header** (about 35 pages, plus game_management :44, rules_primer :45 and uk_rules KT :618) invites reading "flags" as the visible 🇬🇧. Suggested: "Wherever a page gives the IIHF rule, it is yours". This is a separate wave across all pages.
-  - **Sentences that lost their only spoken British cue** (md_to_speech voiced the flag as "For British readers"). Each still names the IIHF, so none is wrong, but a British listener is no longer told the sentence is theirs. The content-reviewer and safety-reviewer lists, merged:
-    - on_ice_communication :190, :194, :392
-    - rules_primer :378, :386, :388, :768, :774, :800
-    - playing_without_the_puck :731
-    - risk_management :422
-    - team_play_and_culture :319
-    - goaltender :700, :750, :1032 (:974, :1395 and :1425 are now repaired)
-    - defensive_zone_coverage :152
-    - game_management :1023
-    - special_teams :948, :1024
-    - shooting :888
-
-    Fix only after checking that the In-House Rules and the EIHL Casebook do not amend the rule involved. The EIHL amends 42 (charging), which is why rules_primer :800 and playing_without_the_puck :731 were left alone.
-  - **SG84 sibling tensions, found by the rules-verifier (report only):**
-    - EIHL 86.6(ii) says warm-up violations "cannot be enforced by on-ice officials". team_play :736 follows it, but goaltender :1425 states the referee authorisation without it.
-    - bcb :200/:211 say the Casebook "reverses IIHF 5.6", while goaltender says IIHF 5.6's no-penalty sentence "does not govern" the warm-up. Pick one reading.
-    - goaltender facts :1409 (297/300) still says "the NHL and IIHF report a breach" with no Elite League limb; it needs a restructure.
-    - bcb :1850 gives the 2025/26 fighting "may be ejected" wording without Table 6's automatic game misconduct. Same gap as team_play :358, which is now fixed.
 
 ## Podcasts
 
