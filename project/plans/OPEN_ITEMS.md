@@ -13,11 +13,11 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG93: DONE (ec6d1d6)**: British cues restored, the IIHF tripping major in British women's and junior hockey, EIHL warm-up and fighting agreed. Carry-overs:
-  - risk :665 states the junior ejection flatly (uk_rules :377 calls it an inference; change to "plan on it");
-  - goaltender facts :1411 lost the USAH 636(c) and HC 2.2(i) citations (300/300);
-  - goaltender facts :1024 and on_ice_communication facts :145/:370 have no British cue;
-  - goaltender :1427 says "is reviewed" where the source says "may be" (errs harsh).
+- **SG93 and SG94: DONE (ec6d1d6, fe91058).** Carry-overs:
+  - DOPS C.1 lists "Boarding"; the corpus says "a boarding major" (uk_rules :413). Is a boarding minor also a C.1 trigger? C.1's triggers come from the owner page, not the C.1 text.
+  - The DOPS carriers at defender :496, center :773 and defender :910 omit the under-16 written-warning limb that the owner page carries.
+  - goaltender :1427 says "is reviewed" where the source says "may be" (errs harsh); goaltender facts :1411 is 300/300 and lost the USAH 636(c) and HC 2.2(i) citations.
+  - goaltender :789 "those three books' rule" is a check_facts_antecedents hit with the antecedent in the same line.
 - **SG91 and SG92: DONE and pushed** (86aec8e, 0d5b275, 97db549, dd29454; records sg91a–e, sg92). SG92 carry-overs:
   - risk_management :648, :664, :692: the IIHF hooking and tripping majors eject in British women's and junior hockey (the same shape as :318);
   - forechecking :1041, :1047, KT8, KT9 speak of ejection without the 602(a) match (incomplete, not false; optional);
@@ -99,7 +99,6 @@ can ship once it has been reviewed.
 - **Captions over 800 characters (25 Oct):** 23 of the longest have been trimmed (SG62–SG74). The rest run about 1,250 characters or less, so returns are diminishing. Re-measure diagrams.json before the next batch. Check how 🇬🇧 renders on Windows (often "GB").
 - **Fragile caption dependency (guarded, SG74):** forecheck-212-stacked, and forecheck-122 in how_to_watch_hockey, rely on forecheck-212 being embedded immediately before them. scripts/check_caption_pairs.py now reports any break (run it after reordering a host). forecheck-131's source comment copies forecheck-122's adjacency claim, but 131 is not in how_to_watch_hockey; that stale comment is a nit.
 - **Faceoff/81.4 follow-ons (low, SG64):** not yet checked: IIHF Situation Handbook rulings on 82.1, the broken-skate sites in winger, goaltender and defender in voiced context, and how HC, CARHA and USAH treat a non-taker's stick-on-stick contact (the books don't define it).
-- **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
 - **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. OWNER RULED 26 Oct: a thicker LABEL_HALO (in progress, with the leader fix).
 - **🇬🇧 flag wave: DONE (SG84, 25 Oct).** 101 mid-prose flags were removed or reworded across 19 files; 86 remain, all opening a block. The convention is now in the style guide. Follow-ons:
   - **The "Playing in Britain? The IIHF flags are yours" header** (about 35 pages, plus game_management :44, rules_primer :45 and uk_rules KT :618) invites reading "flags" as the visible 🇬🇧. Suggested: "Wherever a page gives the IIHF rule, it is yours". This is a separate wave across all pages.
@@ -127,14 +126,11 @@ can ship once it has been reviewed.
 - **HECC wording (nit, SG55):** body_contact :913 says "HECC's … page asks" while the trailer now says the reproduced brochure asks. Both are true. In :2139's trailer, "all three sources" sits near "those four".
 
 - **602(a) suspension rollout: DONE (SG81–SG83, SG88 on 26 Oct).** The cap-blocked facts lines were restructured (record: project/reviews/sg88_602a_cap_blocked_2026-10-26.md). Left by design: OZP :646, which no rewrite fits (:645 and the body carry the clause), and the bcb kneeing table cell (the clause would make the renderer drop the table). Still open:
-  - Pre-existing gap the SG88 verifier found: NHL 49.2's other kick-goal limbs and USAH 627(c)'s kick-shot ban are simplified away in passing :483. (Casebook 628 Sit. 1 was done in SG89.)
 - **Cross-document ladders (from SG75):** checking from behind is restated on five pages, each pointing to body_contact_and_battles as owner. Not yet measured; this is probably the larger saving. Also sweep for other rules pricing a hit from behind (boarding, IIHF 21) before any cut.
 - **Cross-document ladder demotion: DONE (SG76–SG78, 25 Oct), about 12,200 words.** Leftovers:
   - winger's two facts blocks at 14/14 need a ruling on moving limbs between layers;
   - untagged single-book ladder bullets remain in dzc's base shape and in defender's net-front and gap-control sections;
 - **DOPS follow-ons (SG76 landed the core):**
-  - Sweep the remaining sibling pages for the old "no British ban / discretionary / Rule 28" premise: mental_game, getting_started, and the centre and defender pages (team_play, goaltender and winger were done in SG79–SG91).
-  - Check the other C.2-priced acts (slew-foot :1786 and cross-check :1459 in bcb) for an implied "the IIHF major is the whole cost".
   - The DOPS points ladder (App D/E: 10 points means a ban) is stated nowhere.
   - The superseded 2022 IIHF Disciplinary Code is not on disk.
 - **HC 7.5 "ejects at every tier" simplification:** Interpretation 3 (a low-speed pin from behind is permitted) and Interpretation 1 (a stationary cross-check from behind is 9.2) are unvoiced. This is not unsafe; just note it if any line claims more.
