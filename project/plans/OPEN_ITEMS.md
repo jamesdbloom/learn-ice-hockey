@@ -13,6 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
+- **SG104 in flight (27 Oct, uncommitted): readability — long paragraphs (34 corpus-wide over 1,200 chars) and long Key Takeaways (62 over 60 words).** A rules_primer; B body_contact_and_battles; C risk_management + winger; D uk_rules + team_play_and_culture; E getting_started + puck_handling; F on_ice_communication + breakouts; G center + goaltender + forechecking_systems. Brief: scratchpad SG104_BRIEF.md. Needs safety-reviewer + rules-verifier (limbs kept), then gate.
 - **SG103 content: DONE (record sg103_content_carryovers).** Closed: goaltender warm-up lines and "may be reviewed"; "never for a whistle" now names the act in defender, dzc and bcb; forechecking :626 HC mandatory-if-hurt; DOPS under-16 limb (left: errs harsh, unsettled source); risk_management (already done); DOPS boarding minor (refuted). **SG103 diagrams: DONE (record sg103_diagram_labels_off_dots):** 15 diagrams; dot-in-label 25→11; relax warnings 16→13. Renderer: Hockey Canada 2.2(i) and 5.2(i) are now always voiced "clause i" (lettered); a whole-corpus SSML diff against HEAD changed exactly one citation (goaltender :1411). HC 8.3(i) and 10.1(i) are ROMAN items before clause (a), so "clause one" is correct there; the safety reviewer's dzc 10.1(i) note was a false alarm.
 
 - **SG95–SG100: DONE** (a6d7ff5, e6d0749, 899148b, 586a353, 4309ba0). Open carry-overs:
