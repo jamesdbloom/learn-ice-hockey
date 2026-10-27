@@ -1021,7 +1021,7 @@ Key: Each shooter gets a long, slow approach — patience is the whole thing
 Never: Commit first — a shootout move is built to make you go early, so make the shooter decide
 Rule: Shootout attempts are governed by the penalty-shot rules, including staying in your crease until the shooter touches the puck (NHL and IIHF Rule 84.4)
 Rule: Once the shootout begins you cannot be replaced unless injured, and a substitute goalie gets no warm-up shots (NHL Rule 84.4)
-Rule: The IIHF reverses that no-replacement rule — "The goalkeepers from each team may be changed after each shot" (IIHF Rule 84.4(VI))
+Rule: Unlike the NHL, the IIHF book, which British hockey plays, lets a shootout goalie be replaced — "The goalkeepers from each team may be changed after each shot" (IIHF Rule 84.4(VI))
 Rule: NHL shootouts run three shooters a side; IIHF championship shootouts run five (IIHF Rule 84.4(II))
 Rule: Under the IHUK In-House Rules the shootout count is three, not the IIHF’s five, and overtime runs only in NIHL fixtures and those SNL fixtures their competition regulations provide for; the NIHL Playoff Final has no shootout at all (In-House Rules 2026-27, Rule 84 and Appendix 1)
 Rule: In the Elite League the shootout is five shooters, not three — EIHL Casebook 84.4 — and 84.1 gives a 5-minute 3-on-3 overtime in the regular season and Challenge Cup group stage, 20-minute 5-on-5 periods in elimination games

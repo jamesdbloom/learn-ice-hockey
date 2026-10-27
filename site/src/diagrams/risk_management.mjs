@@ -622,26 +622,38 @@ const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
 // wingers/count sentence and the "Three things" header. SUPERSEDED 24 October 2026 (below): both
 // were cut, so both captions now carry the same three limbs — PINCH_COVER, PINCH_SCOREBOARD and
 // the ⚠️-led PINCH_CONTACT, in that order — and the "four sentences" and "fronts three" notes
-// above describe the older text.
+// above describe the older text. Since 27 October 2026 the second caption carries PINCH_CONTACT
+// only — see the SG94 layer test below.
 const PINCH_COVER =
-  'Who covers the point behind a pinch is a coaching choice, not a law of hockey: some teams ' +
-  'give that job to the centre, some to whichever forward is highest, and some slide the ' +
-  'weak-side defenceman across — so find out what your team plays. ';
+  'Who covers the point behind a pinch is a coaching choice — the centre, the highest forward, ' +
+  'or the weak-side defenceman sliding across — so find out what your team plays. ';
 const PINCH_SCOREBOARD = 'Whether to pinch at all moves with the scoreboard and the clock. ';
 const PINCH_CONTACT =
-  '⚠️ And no contact is drawn: the pinching defenceman’s route ends in two bars, meaning ' +
-  'arrive and contain, on the wall rather than on a player, and what an arrival like that may ' +
-  'end in depends on whether your league allows body checking at all.';
+  '⚠️ No contact is drawn: the pinching defenceman’s route ends in two bars, meaning arrive and ' +
+  'contain on the wall, not on a player, and whether that arrival may end in a hit depends on ' +
+  'whether your league allows body checking at all.';
 
 // ⚠️ 24 October 2026: PINCH_COUNT (the wingers/count picture note) and the "Three things this
-// cannot promise." header are CUT, so the two captions now carry the same three limbs. Both were
-// voiced only through pinch-centre-high; all four of its hosts were rendered (risk_management,
-// defender, offensive_zone_play, game_management) before the cut. PINCH_COVER, PINCH_SCOREBOARD
-// and the ⚠️-led PINCH_CONTACT are unchanged and still in that order, so "And no contact" still
-// follows the scoreboard sentence. The two constants are now identical, so neither caption
-// has anything left to restore.
+// cannot promise." header are CUT. Both were voiced only through pinch-centre-high; all four of
+// its hosts were rendered (risk_management, defender, offensive_zone_play, game_management)
+// before the cut.
+// ⚠️ 27 October 2026 (SG94): wording tightened, every limb kept, and the two captions SPLIT.
+// LAYER TEST, per host, of what the prose next to each marker already voices:
+//   pinch-centre-high — defender.md (embedded alone, after defender-step-up) voices NONE of the
+//     three limbs nearby: no who-covers choice, no scoreboard, and its contact prose is about a
+//     STEP-UP finished as a hit, not a pinch. So this caption keeps all three.
+//   pinch-centre-below-the-goal-line — embedded only in risk_management.md and
+//     game_management.md, and in BOTH straight after pinch-centre-high (blank line only), so the
+//     who-covers and scoreboard limbs are spoken one chunk earlier. game_management.md's
+//     "Pinching defencemen" item voices all three just above the pair; risk_management.md voices
+//     the scoreboard (third question) and the pinch-for-the-puck contact line just below it.
+//   So this caption drops PINCH_COVER and PINCH_SCOREBOARD and KEEPS the ⚠️-led PINCH_CONTACT:
+//   the safety limb does not depend on adjacency, and it also explains this picture's two bars.
+//   ⚠️ IF EITHER HOST STOPS EMBEDDING pinch-centre-high STRAIGHT BEFORE THIS DIAGRAM, THE
+//   WHO-COVERS LIMB MUST COME BACK — it is a coaching-choice disclosure the caption's own
+//   "their partner is the only player" picture leans on.
 const PINCH_CAVEATS = PINCH_COVER + PINCH_SCOREBOARD + PINCH_CONTACT;
-const PINCH_CAVEATS_AFTER_HIGH = PINCH_CAVEATS;
+const PINCH_CAVEATS_AFTER_HIGH = PINCH_CONTACT;
 
 const PINCH_DESCRIBE_COMMON =
   'The attacking half of the rink, the opposition net at the right, the attack having been ' +
@@ -726,7 +738,7 @@ const pinchCentreDeep = {
 
   // SHORTENED 22 October 2026 (~1,752 chars). The caption's own text was narrative only and is
   // cut to the picture, the count and the question. Its caveats are PINCH_CAVEATS_AFTER_HIGH —
-  // see the notes above PINCH_COVER and above PINCH_CAVEATS (since 24 Oct 2026 the two are identical).
+  // since 27 Oct 2026 the contact limb alone; see the layer test above PINCH_CAVEATS.
   caption:
     'A pinch at the offensive blue line with the centre below their goal line — the arrangement ' +
     'that makes a pinch a bad decision even when it works. In front of the pinching defenceman it ' +

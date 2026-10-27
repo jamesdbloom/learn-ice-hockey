@@ -57,6 +57,13 @@ MARKER = re.compile(r"!\[[^\]]*\]\(diagram:([A-Za-z0-9_\-]+)\)")
 #  hosts the requirement applies to -- None means EVERY host -- and why)
 DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
     (
+        "pinch-centre-below-the-goal-line",
+        "pinch-centre-high",
+        None,
+        "caption trimmed 27 Oct 2026 (SG94): the who-covers coaching-choice and "
+        "scoreboard limbs are voiced only in pinch-centre-high's caption",
+    ),
+    (
         "forecheck-212-stacked",
         "forecheck-212",
         None,
