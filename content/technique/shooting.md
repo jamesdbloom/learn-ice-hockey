@@ -856,7 +856,7 @@ Key: Tips and rebounds cannot be trained on a garage pad; do those on the ice
 Action: Fifteen to twenty minutes a day of focused work beats two hours on a Sunday
 Rule: Do not shoot at your own goalie's head in the warm-up or fire pucks from ten feet in a drill — in stand-up hockey only IIHF 9.6 and Hockey Canada 6.18(a) stop play for the hit itself, and both are narrow (a "may" on a "dazed" goalie; "U13 and below")
 Rule: For an injured player, NHL, IIHF and PWHL 8.1, USA Hockey 206(a) and Hockey Canada 2.4(b) wait on possession unless the injury looks serious; only CARHA 20(d) stops play at once — and a cage hides how hurt a goalie is
-Rule: Never shoot on the opposition's goalie in the warm-up — each team stays in its own half. USA Hockey can penalise it (636(c), 502(b)); Hockey Canada can report and penalise it (2.2(i), (j)); the NHL and IIHF report it (86.6) rather than call it on the ice; the EIHL can suspend or fine (Casebook 5.6)
+Rule: Never shoot on the opposition's goalie in the warm-up — each team stays in its own half. USA Hockey can penalise it (636(c), 502(b)); Hockey Canada can report and penalise it (2.2(i), (j)); the NHL and IIHF report it (86.6) rather than call it on the ice; the EIHL suspends or fines (Casebook 5.6)
 ```
 
 Shooting is among the most trainable skills in hockey, for a reason that is not about the skill itself: you can practise it almost entirely off the ice, alone, in a garage. (No ranking of hockey skills by trainability was found in Crossref, OpenAlex or Europe PMC, searched 2 September 2026, so read that as the practical point it is — access, not a ranking.)

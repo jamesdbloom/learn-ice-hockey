@@ -796,7 +796,7 @@ Rule: Timing your arrival is not the same as being late — a centre who "attemp
 Rule: Once your team has had its one lateness warning, being slow to the dot again is a bench minor for delay of game — "Slow Proceeding to Face-off Location" (NHL and IIHF Rule 76.7)
 Rule: USA Hockey 613(d) and CARHA 57(c) let the official order a player facing off who fails to take their proper position when directed "replaced", first time, at discretion; a USA Hockey slow line change to the dot is warned, then a bench minor (Casebook 613 Situation 13)
 Rule: Hockey Canada reaches the same place in two steps, which is a reading of two rules together and not one sentence — 6.5(a) names "late arrival" a faceoff violation and 6.2(d) ejects the taker; 6.5(a)'s warning is Junior divisions after an icing only
-Rule: Under the IHUK In-House Rules 2026-27 nobody has settled whether teammates' lateness costs your centre — IIHF 76.7 warns the team, the In-House Rules replace the centre "for all violations" bar post-icing draws — so plan on losing the dot. The Elite League keeps the IIHF warning
+Rule: Whether the IHUK In-House Rules 2026-27 cost your centre the dot for teammates' lateness is unclear, so plan on losing it — IIHF 76.7 warns the team and does not eject the centre, but In-House Rule 76 replaces the centre "for all violations" bar after icings. The Elite League keeps the IIHF warning
 Rule: The carve-out shields the centre from their teammates' lateness in both IIHF editions — 2025/26's 76.7 says the centre "will not receive a warning", 2026/27's that the centre "is not ejected from the 'face-off'"
 Action: Be at the dot on time — the safe play is the same under every book, and it is free
 ```
