@@ -615,8 +615,12 @@ const forecheck131 = {
 
     // 1 — 3 — 1, counted from the goal line outwards: F1 at x 78, the line at
     // x 54, the safety at x 25. Three unambiguous bands.
-    { id: 'F1', pos: 'F', at: F1_STEER,   label: 'steers, does not chase' },
-    { id: 'F2', pos: 'F', at: LINE3_WALL, label: 'on the wall' },
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'F1', pos: 'F', at: F1_STEER,   label: 'steers, does not chase', labelHint: [-21, 1.5] },
+    // labelHint: left of F2. Below it, the words sat over F1's "steers, does not chase" and
+    // read as F2's two-line label, with the leader on the circle (diagram review, 27 Oct 2026).
+    { id: 'F2', pos: 'F', at: LINE3_WALL, label: 'on the wall', labelHint: [-13, 0] },
     // "with the defenceman in the middle as the read-maker" — a defender triangle
     // in the middle of the line of three is what makes this a 1-3-1 rather than
     // the three-forward shape the section explicitly rules out.
@@ -624,7 +628,10 @@ const forecheck131 = {
     { id: 'F3', pos: 'F', at: LINE3_FAR,  label: 'the far wall' },
     // "The single high player is the safety, responsible for anything that gets
     // behind the line of three." One player, in the middle, behind the line.
-    { id: 'D',  pos: 'D', at: 'centre-point', label: 'the safety, last man' },
+    // labelHint: under the D, shifted toward our end, with a short diagonal leader that
+    // crosses the blue line instead of running down it; to the right it stacked over
+    // "the read-maker" (27 Oct 2026).
+    { id: 'D',  pos: 'D', at: 'centre-point', label: 'the safety, last man', labelHint: [-8.5, -7] },
   ],
 
   // Unnumbered on purpose. "As the puck commits to one side, the whole line

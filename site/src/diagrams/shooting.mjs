@@ -271,7 +271,9 @@ const laneAndTheStep = {
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: GOALIE_IN_CREASE },
     // A triangle, because he is a D — ":399 A note for defencemen at the point".
-    { id: 'D', pos: 'D', at: POINT_R, label: 'step, then shoot' },
+    // labelHint: up-left of the D, off the blue line and the faceoff dot, and off the row
+    // of "the blocker", where the two read as one phrase (diagram review, 27 Oct 2026).
+    { id: 'D', pos: 'D', at: POINT_R, label: 'step, then shoot', labelHint: [-7, 8] },
     // Drawn as a forward; see the caption's disclosure. The section names no position.
     { id: 'F', team: 'opp', pos: 'F', at: BLOCKER, label: 'the blocker' },
     // ":465 If your winger is at the net front" — the one net-front personnel claim

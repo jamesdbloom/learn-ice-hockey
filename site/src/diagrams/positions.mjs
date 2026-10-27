@@ -327,8 +327,13 @@ const backcheckMiddleLane = {
   // trusting any of them again.
   players: [
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:right', dx: 4, dy: 4 },
-      label: 'puck carrier' },                                                  // (24, 26)
-    { id: 'F', team: 'opp', pos: 'F', at: DRIVER, label: 'the middle-lane driver' },
+      label: 'puck carrier',
+      // labelHint: left of the carrier, close enough to need no leader; the unhinted leader ran
+      // down the blue line at x 24 (diagram review, 27 Oct 2026).
+      labelHint: [-13, -1] },                                                  // (24, 26)
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'F', team: 'opp', pos: 'F', at: DRIVER, label: 'the middle-lane driver', labelHint: [1.5, -6] },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:left', dy: -2 } }, // (20, -24)
 
     // "Come back on the defensive side of your man — between them and your own net."
@@ -516,7 +521,9 @@ const wingerHighThenWall = {
     'players are not drawn.',
 
   players: [
-    { id: 'D', team: 'opp', pos: 'D', at: { at: 'point:right', dy: 4 }, label: 'the man you cover' },
+    // labelHint: sideways, so the leader no longer runs down the blue line, where it
+    // cannot be seen (label audit, 27 Oct 2026).
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'point:right', dy: 4 }, label: 'the man you cover', labelHint: [10.5, 10.5] },
     // The corner battle is deliberately unlabelled. Two labels eight feet apart in
     // the corner left the placer no legal slot, and it dropped "the forecheck" forty
     // feet away at the bottom of the boards with a leader line nobody would trace.

@@ -439,8 +439,14 @@ const bankPass = {
     // Your own goaltender, for orientation: this is the one kind of picture in this
     // file where the net at the right is YOUR OWN, and the caption says so first.
     { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },              // (85, 0)
-    { id: 'P', pos: 'F', at: BANK_PASSER, label: 'you' },
-    { id: 'F', team: 'opp', pos: 'F', at: BANK_CHECKER, label: 'in the direct lane' },
+    // labelHint: right of P and a little down. Unhinted, the placer put "you" directly above
+    // "in the direct lane", and the two read as one opponent's two-line label (27 Oct 2026).
+    { id: 'P', pos: 'F', at: BANK_PASSER, label: 'you', labelHint: [6, -3] },
+    // labelHint: below and right of F, with a short leader, so the words sit clear of the
+    // faceoff dot. The unhinted label drifted onto the dot once P's "you" moved, and straight
+    // under F ([0.5, -8.5]) the dot touched the tops of the letters; lower slots there are
+    // refused because their leader crosses the dot (27 Oct 2026).
+    { id: 'F', team: 'opp', pos: 'F', at: BANK_CHECKER, label: 'in the direct lane', labelHint: [6.5, -10] },
     { id: 'R', pos: 'F', at: BANK_RECEIVER, label: 'your teammate' },
   ],
 

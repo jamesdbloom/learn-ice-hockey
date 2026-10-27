@@ -258,11 +258,22 @@ const denyTheReception = {
 
   players: [
     { id: 'G', pos: 'G', at: { at: 'crease', dx: 1 } },      // (87, 0), your own
-    { id: 'A1', team: 'opp', pos: 'F', at: PASSER,   label: 'the pass is made' },
-    { id: 'A2', team: 'opp', pos: 'F', at: RECEIVER, label: 'the receiver', labelHint: [0, -7.5] },
+    // labelHint: left of A1, so the leader no longer runs along the faceoff circle or across
+    // the puck at A1's stick (diagram review, 27 Oct 2026).
+    { id: 'A1', team: 'opp', pos: 'F', at: PASSER,   label: 'the pass is made', labelHint: [-17.5, -1] },
+    // labelHint: left of A2, so it no longer stacks over F's label and reads as one
+    // sentence with it (label audit, 27 Oct 2026).
+    { id: 'A2', team: 'opp', pos: 'F', at: RECEIVER, label: 'the receiver', labelHint: [-13.5, 0] },
     // A forward. The section says "you" and nothing else; see the caption, which
     // discloses the choice and says the read does not depend on it.
-    { id: 'F', pos: 'F', at: COVER, label: 'arrives as the puck does', labelHint: [-2.18, -24.25] },
+    // Label shortened from "arrives as the puck does" (27 Oct 2026): at 24 characters it was
+    // wider than any slot beside F, between the pass route and the boards, so the placer
+    // could only put it under A2, where it read as the receiver's. "arrives with the pass"
+    // still landed there; "arrives on time" fits beside F. Same
+    // meaning, and the caption and describe never quoted either wording.
+    // labelHint: just above F, close enough to need no leader. Unhinted, its leader ran almost
+    // tangent to the faceoff circle's right arc and read as a second arc (27 Oct 2026).
+    { id: 'F', pos: 'F', at: COVER, label: 'arrives on time', labelHint: [3.5, 6.5] },
   ],
 
   // NOT `numbered`. The section's instruction is "arrive as the puck does" — the

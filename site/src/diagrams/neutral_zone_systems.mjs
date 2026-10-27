@@ -124,12 +124,18 @@ const containment122 = {
     // Ours. 1 - 2 - 2, read from the puck outward.
     { id: 'G', pos: 'G', at: OUR_G },
     { id: 'F1', pos: 'F', at: C_F1, label: 'forces one side' },
-    { id: 'F2', pos: 'F', at: C_F2, label: 'takes the wall' },
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'F2', pos: 'F', at: C_F2, label: 'takes the wall', labelHint: [-10.5, -7.5] },
     { id: 'F3', pos: 'F', at: C_F3, label: 'middle and weak side' },
     // "D1 (strong side) steps up on the wall if the puck gets past F2" — a
     // condition, so it is a label and not an arrow. A still frame cannot say "if".
-    { id: 'D1', pos: 'D', at: { at: OUR_BLUE, dy: 18 }, label: 'steps up if beaten' },
-    { id: 'D2', pos: 'D', at: { at: OUR_BLUE, dy: -8 }, label: 'stays home' },
+    // labelHint: below-left, as in nz-1-2-2-trap, so the leader no longer runs down the blue
+    // line (diagram review, 27 Oct 2026).
+    { id: 'D1', pos: 'D', at: { at: OUR_BLUE, dy: 18 }, label: 'steps up if beaten', labelHint: [-13.5, -7.5] },
+    // labelHint: below-left, as in nz-1-2-2-trap, so the leader no longer runs down the blue
+    // line (diagram review, 27 Oct 2026).
+    { id: 'D2', pos: 'D', at: { at: OUR_BLUE, dy: -8 }, label: 'stays home', labelHint: [-15, -7.5] },
   ],
 
   routes: [
@@ -214,8 +220,14 @@ const trap122 = {
     { id: 'F1', pos: 'F', at: { at: THEIR_BLUE, dx: 6 }, label: 'high, splits the ice' },
     { id: 'F2', pos: 'F', at: T_F2, label: 'kills it at the red line' },
     { id: 'F3', pos: 'F', at: { at: 'centre-ice', dx: 2, dy: -WALL }, label: 'holds the far wall' },
-    { id: 'D1', pos: 'D', at: { at: OUR_BLUE, dy: 20 }, label: 'behind F2' },
-    { id: 'D2', pos: 'D', at: { at: OUR_BLUE, dy: -8 }, label: 'holds the line' },
+    // labelHint: below-left of D1, off the blue line (label audit, 27 Oct 2026). ⚠️ It does
+    // NOT clear "kills it at the red line": F2's label still sits just below and right of
+    // "behind F2", so the two can read as one two-line label. [-14, 0] was tried and refused,
+    // and the unhinted slot stacks them more tightly. Still open.
+    { id: 'D1', pos: 'D', at: { at: OUR_BLUE, dy: 20 }, label: 'behind F2', labelHint: [-13.5, -7.5] },
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'D2', pos: 'D', at: { at: OUR_BLUE, dy: -8 }, label: 'holds the line', labelHint: [-15, -7.5] },
   ],
 
   routes: [
@@ -498,7 +510,9 @@ const pressure = {
     // from the inside rather than along the wall: drawn on the wall he sat on top
     // of the carrier's glyph and under the outlet pass.
     { id: 'F1', pos: 'F', at: { at: 'faceoff-dot:right', dx: 9, dy: -2 }, label: 'gone hunting' },
-    { id: 'F2', pos: 'F', at: { at: 'faceoff-dot:left', dx: 10, dy: 4 }, label: 'gone hunting' },
+    // labelHint: just below F2, away from F1's identical label and clear of the faceoff dot,
+    // which [-10, -7] put inside the words (27 Oct 2026).
+    { id: 'F2', pos: 'F', at: { at: 'faceoff-dot:left', dx: 10, dy: 4 }, label: 'gone hunting', labelHint: [-2.5, -10] },
     { id: 'F3', pos: 'F', at: { at: THEIR_BLUE, dx: -8 }, label: 'the only layer' },
     { id: 'D1', pos: 'D', at: P_D1, label: 'steps up hard' },
     { id: 'D2', pos: 'D', at: { at: OUR_BLUE, dx: 8, dy: -10 }, label: 'your only safety' },

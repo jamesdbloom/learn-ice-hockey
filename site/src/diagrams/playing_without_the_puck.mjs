@@ -319,7 +319,9 @@ const unmarkedNotAvailable = {
     { id: 'R', pos: 'F', at: D3_RECEIVER, label: 'unmarked, unavailable' },
     // "a defenceman's stick lying flat across the only line" — the section's word,
     // so a triangle.
-    { id: 'D', team: 'opp', pos: 'D', at: D3_BLOCKER, label: 'stick flat in the lane' },
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'D', team: 'opp', pos: 'D', at: D3_BLOCKER, label: 'stick flat in the lane', labelHint: [-15, 6] },
   ],
 
   puck: { at: 'half-wall:right', dx: -3.5, dy: -3 },

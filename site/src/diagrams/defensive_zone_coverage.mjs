@@ -615,7 +615,10 @@ const walkDownZone = {
     'point. Two numbered routes: one, the walk-down; two, the winger following and stopping.',
 
   players: [
-    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point' },
+    // labelHint: just above the D and 2 ft out, close enough to need no leader. A leader here
+    // either ran down the blue line or crossed the puck, where a dashed line reads as a pass
+    // (diagram review, 27 Oct 2026).
+    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point', labelHint: [2, 6.5] },
     { id: 'D', team: 'opp', pos: 'D', at: 'point:left' },
     { id: 'F', team: 'opp', pos: 'F', at: 'corner:right' },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_NETFRONT },
@@ -688,7 +691,10 @@ const walkDownMan = {
     'point. Two numbered routes: one, the walk-down; two, the winger going with the carrier.',
 
   players: [
-    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point' },
+    // labelHint: just above the D and 2 ft out, close enough to need no leader. A leader here
+    // either ran down the blue line or crossed the puck, where a dashed line reads as a pass
+    // (diagram review, 27 Oct 2026).
+    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point', labelHint: [2, 6.5] },
     { id: 'D', team: 'opp', pos: 'D', at: 'point:left' },
     { id: 'F', team: 'opp', pos: 'F', at: 'corner:right' },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_NETFRONT },

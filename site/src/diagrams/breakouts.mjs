@@ -162,8 +162,13 @@ const up = {
     { id: 'G',  pos: 'G', at: GOALIE },
     { id: 'D1', pos: 'D', at: UP_D1,  label: 'has time' },
     { id: 'D2', pos: 'D', at: D2_LOW, label: 'second wave' },
-    { id: 'W1', pos: 'F', at: UP_W1,  label: 'the outlet' },
-    { id: 'C',  pos: 'F', at: LOW_SUPPORT, label: 'the bail-out' },
+    // labelHint: right of W1, with a short leader. It pins the slot the label already had:
+    // once "the bail-out" moved, the outlet dropped onto "has time" and the two stacked
+    // (label audit, 27 Oct 2026).
+    { id: 'W1', pos: 'F', at: UP_W1,  label: 'the outlet', labelHint: [20, -0.5] },
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'C',  pos: 'F', at: LOW_SUPPORT, label: 'the bail-out', labelHint: [19.5, -1.5] },
     // "Take it when the forecheck has committed *behind* the net or to the middle,
     // leaving the wall lane open." F1 is the forechecker by order of arrival, not
     // a position — the section is emphatic about that, so no name is implied.
@@ -1133,7 +1138,8 @@ const againstThe131 = {
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
-    { id: 'D1', pos: 'D', at: RETRIEVAL,   label: 'carries it' },
+    // labelHint: off the faceoff spot, which sat inside the words (diagram review, 27 Oct 2026).
+    { id: 'D1', pos: 'D', at: RETRIEVAL,   label: 'carries it', labelHint: [13.5, -7.5] },
     { id: 'W1', pos: 'F', at: TRAP_OUTLET, label: 'short outlet' },
 
     // Their five. The middle man of the three is a DEFENCEMAN — a triangle — and
@@ -1156,7 +1162,9 @@ const againstThe131 = {
     // above deliberately calls a middle reading of a depth that varies.
     { id: 'D',  pos: 'D', team: 'opp', at: TRAP_MID,          label: 'the middle' },
     { id: 'F3', pos: 'F', team: 'opp', at: TRAP_WALL_WEAK,    label: 'holds a lane' },
-    { id: 'D',  pos: 'D', team: 'opp', at: 'centre-point',    label: 'last man' },
+    // labelHint: below-right of the D, clear of the blue line, where its leader could not be
+    // seen (label audit and diagram review, 27 Oct 2026).
+    { id: 'D',  pos: 'D', team: 'opp', at: 'centre-point',    label: 'last man', labelHint: [10.5, -7.5] },
   ],
 
   routes: [

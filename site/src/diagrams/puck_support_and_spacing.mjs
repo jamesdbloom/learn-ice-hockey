@@ -109,7 +109,9 @@ const supportInALine = {
     // legend and reading_ice_hockey_diagrams.md both say in terms that an X is a
     // pylon — a practice cone — and never a player, and X-meaning-opposition is one
     // of the symbols this corpus rewrote its notation specifically to escape.
-    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes', labelHint: [0, -14.5] },
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes', labelHint: [-2, -18] },
   ],
 
   // Deliberately no routes. Drawing the two pass lanes would draw two dashed

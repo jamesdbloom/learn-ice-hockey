@@ -272,7 +272,7 @@ Both alignments are drawn in [Faceoffs](../systems/faceoffs.md) at the right-han
 **What the rules change at the dot.** A centre is usually thrown out of the draw for moving early, bad stick placement, or **a teammate encroaching** — a winger creeping into the circle costs the *centre* the draw.
 
 - **A second violation by the same team on the same draw** is a bench minor for delay of game in the NHL and IIHF (IIHF 76.7), and an individual minor under USA Hockey (613(d)).
-- **The IIHF first violation changed in 2026/27.** The new book ejects the offending draw-taker, as the NHL does (76.6); the 2025/26 book gave a warning instead.
+- **The IIHF first violation changed in 2026/27.** The new book ejects the offending draw-taker, as the NHL does (76.6); the 2025/26 book gave a warning instead. In British hockey outside the Elite League, the centre is replaced for every violation except after an icing (In-House 76).
 - **Batting the puck with a hand to win the draw** is a minor in the NHL and IIHF, until a third player has touched it. **Closing a hand on the puck** is a minor too — a **penalty shot** if the puck is in the offending team's own crease, or an awarded goal if their net is empty (Rules 67.2, 67.4, 67.5, 63.6).
 - **USA Hockey splits the act.** Catching it in the air and holding it costs no penalty: play stops for a faceoff (618(a)). **Covering it on the ice is a delay-of-game minor** (614(a)'s Note: *"should be penalized promptly"*), and **picking it up off the ice is a minor** (618(a)). In the crease, a penalty shot or optional minor, or an awarded goal if the net is empty and it stopped an obvious goal (618(a), 614(b)).
 

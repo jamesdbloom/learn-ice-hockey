@@ -755,7 +755,9 @@ const flipOverTrap = {
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 7, dy: -14 },       // (32, -14)
       label: 'one back' },
 
-    { id: 'F', pos: 'F', at: FLIP_CARRIER, label: 'no route along the ice' },
+    // labelHint: off the blue line, where its leader could not be seen, and clear of the
+    // neighbouring player it read as belonging to (label audit, 27 Oct 2026).
+    { id: 'F', pos: 'F', at: FLIP_CARRIER, label: 'no route along the ice', labelHint: [-9, 12] },
     { id: 'F', pos: 'F', at: FLIP_RUNNER, label: 'running underneath it' },
     { id: 'F', pos: 'F', at: FLIP_SUPPORT },
   ],

@@ -306,7 +306,7 @@ const clipT = (ax, ay, bx, by, X0, X1, Y0, Y1) => {
  */
 function placeLabels(entries, opts = {}) {
   const { size = 2.4, dot = 0, half = false, reserve = [], avoid = [], leaderMin,
-          noCrossLeaders = false, split = false } = opts;
+          noCrossLeaders = false, split = false, paint = null } = opts;
   // A label further than this from its point gets a leader line drawn to it. Below
   // it no leader is drawn, so nothing can be crossed and `avoid` does not apply.
   //
@@ -482,12 +482,53 @@ function placeLabels(entries, opts = {}) {
     const len = t === null ? Math.hypot(bx - ax, by - ay) : Math.hypot(bx - ax, by - ay) * t;
     return len - reachOf(e, cand.x - e.x, cand.y - e.y);
   };
+  // ⚠️ A LEADER LYING ALONG A PAINTED LINE IS A LEADER NOBODY SEES, AND ONE CROSSING A PUCK OR
+  // A DOT READS AS A PASS. `paint` (play diagrams only) names what is painted on the ice:
+  // `vlines` (x of the blue, red and goal lines), `circles` ([cx, cy, r]) and `points`
+  // ([x, y, r]: faceoff dots and pucks), rink feet. Pushing labels out so their leaders show
+  // beside the token (above) made leaders longer, and a diagram audit on 27 Oct 2026 counted
+  // leaders along a painted line going 24 -> 66 and along a circle 13 -> 28 across the
+  // corpus. So a candidate that will draw a leader is rejected when the VISIBLE part of that
+  // leader (beyond the body's reach, up to where it stops short of the words):
+  //  - runs within 1.3 ft of a painted vertical line, or within 0.9 ft of a circle, for at
+  //    least 2.5 ft and at least half its visible length; or
+  //  - passes within 1 ft of the edge of a dot or a puck.
+  // Thresholds are the audit's (`linecheck.py`). Without `paint` this test is off, so the
+  // vocabulary overlay is unchanged.
+  const leaderHazard = (cand, e) => {
+    if (!paint || !e.reach) return false;
+    if (Math.hypot(cand.x - e.x, cand.y - e.y) <= LEADER_MIN) return false;
+    const cw = e.text.length * size * CLIP_ADV;
+    const t = clipT(e.x, e.y, cand.x, cand.y,
+      cand.x - cw / 2 - LEADER_GAP, cand.x + cw / 2 + LEADER_GAP,
+      cand.y - size * DESC_H - LEADER_GAP, cand.y + size * CAP_H + LEADER_GAP);
+    const full = Math.hypot(cand.x - e.x, cand.y - e.y);
+    const end = (t === null ? 1 : t) * full;
+    const start = Math.min(reachOf(e, cand.x - e.x, cand.y - e.y), end);
+    if (end - start <= 0.25) return false;
+    const ux = (cand.x - e.x) / full, uy = (cand.y - e.y) / full;
+    const STEP = 0.25, pts = [];
+    for (let d = start; d <= end + 1e-9; d += STEP) pts.push([e.x + ux * d, e.y + uy * d]);
+    const along = (near) => { const k = pts.filter(near).length;
+      return k * STEP >= 2.5 && k >= 0.5 * pts.length; };
+    for (const x0 of paint.vlines ?? []) if (along(([x]) => Math.abs(x - x0) < 1.3)) return true;
+    for (const [cx, cy, r] of paint.circles ?? []) {
+      if (along(([x, y]) => Math.abs(Math.hypot(x - cx, y - cy) - r) < 0.9)) return true;
+    }
+    const ax = e.x + ux * start, ay = e.y + uy * start, bx = e.x + ux * end, by = e.y + uy * end;
+    for (const [px, py0, r] of paint.points ?? []) {
+      const dx = bx - ax, dy = by - ay, L = dx * dx + dy * dy;
+      const u = L ? Math.max(0, Math.min(1, ((px - ax) * dx + (py0 - ay) * dy) / L)) : 0;
+      if (Math.hypot(ax + u * dx - px, ay + u * dy - py0) < r + 1.0) return true;
+    }
+    return false;
+  };
   const showsLeader = (cand, e) => !e.reach
     || Math.hypot(cand.x - e.x, cand.y - e.y) <= LEADER_MIN
     || visibleLen(e, cand) >= LEADER_VIS_MIN;
-  const placeOne = (e, w, h, strict, needLeader = true) => {
+  const placeOne = (e, w, h, strict, needLeader = true, hazardOn = true) => {
     const ok = (cand) => inside(cand) && !collides(cand, e)
-      && (!needLeader || showsLeader(cand, e))
+      && (!needLeader || (showsLeader(cand, e) && !(hazardOn && leaderHazard(cand, e))))
       && (!strict || (leaderClear(cand, e) && leaderUncrossed(cand, e)));
     // ⚠️ A PREFERRED OFFSET, TRIED FIRST AND NOT TRUSTED. The placer is greedy and
     // order-dependent, so on a crowded picture it is the earlier entries that get the
@@ -599,7 +640,7 @@ function placeLabels(entries, opts = {}) {
         const other = Math.min(...entries.filter((o) => o !== e)
           .map((o) => Math.hypot(gx - o.x, gy - o.y)), Infinity);
         if (other > mine) {
-          if (mine < bestD) { bestD = mine; best = cand; }
+          if (mine < bestD) { bestD = mine; best = { ...cand, fromSweep: true }; }
         } else {
           if (mine < nearD) nearD = mine;
           free.push({ cand, mine, ratio: other / mine });
@@ -631,7 +672,7 @@ function placeLabels(entries, opts = {}) {
       // i.e. the left edge of the ice. It put `centre-point` 10.7 ft from a point it could
       // have sat 0.8 ft from.
       if (f.ratio > fallR || (f.ratio === fallR && f.mine < fallD)) {
-        fallR = f.ratio; fallD = f.mine; fall = f.cand;
+        fallR = f.ratio; fallD = f.mine; fall = { ...f.cand, fromSweep: true };
       }
     }
     return fall;
@@ -644,8 +685,19 @@ function placeLabels(entries, opts = {}) {
     // last resort that ignores collisions any more, because one is worse than none.
     // The third pass drops only the visible-leader floor: a label with a short leader is
     // better than a label that is not drawn.
-    const put = placeOne(e, w, h, true) ?? placeOne(e, w, h, false)
-      ?? placeOne(e, w, h, false, false);
+    // ⚠️ `leaderHazard` MAY ONLY CHOOSE BETWEEN THE HINT AND THE TABLE SLOTS, NEVER SEND A LABEL
+    // TO THE GRID SWEEP. Measured on the first build of the rule (27 Oct 2026): for a player
+    // in a corner every near slot's leader crosses a faceoff circle or the goal line, so the
+    // hazard test pushed the label into the sweep, and the sweep stacked it under a
+    // neighbour's label — "battles for it" under "goes to the puck", "low — the corner" under
+    // "the carrier", "arriving behind you" over "the carrier" — which reads as one player's
+    // two-line label. That is worse than a leader crossing a painted line. So where the
+    // hazard-aware placement would come from the sweep, the label is placed exactly as it was
+    // before the rule.
+    const attempt = (hz) => placeOne(e, w, h, true, true, hz) ?? placeOne(e, w, h, false, true, hz)
+      ?? placeOne(e, w, h, false, false, hz);
+    let put = attempt(true);
+    if (paint && e.reach && (!put || put.fromSweep)) put = attempt(false);
     if (!put) {
       throw new Error(
         `placeLabels: nowhere on the ice for "${e.text}" at (${e.x}, ${e.y}). ` +
@@ -2306,6 +2358,18 @@ export function playSvg(spec, opts = {}) {
       return { text: pl.label, x: p.x, y: p.y, reach: (dx, dy) => bodyReach(pl.pos, dx, dy),
                ...(pl.labelHint ? { hint: pl.labelHint } : {}) }; }),
     { size: 2.8 * TXT, half: opts.half ?? true, split: true,
+      // What is painted on the ice, for `leaderHazard`: lines, circles, dots and the puck.
+      paint: (() => {
+        const F = RINK.faceoff, Lx = RINK.lines;
+        const ends = [F.end_zone_dot_x, -F.end_zone_dot_x], ys = [F.dot_y, -F.dot_y];
+        return {
+          vlines: [Lx.centre_line_x, Lx.blue_line_x, -Lx.blue_line_x, Lx.goal_line_x, -Lx.goal_line_x],
+          circles: [[0, 0, F.circle_radius], ...ends.flatMap((x) => ys.map((y) => [x, y, F.circle_radius]))],
+          points: [[0, 0, 0.5],
+            ...[...ends, F.neutral_dot_x, -F.neutral_dot_x].flatMap((x) => ys.map((y) => [x, y, 1])),
+            ...(spec.puck ? [(() => { const q = loc(spec.puck); return [q.x, q.y, 1.1]; })()] : [])],
+        };
+      })(),
       reserve: [
         ...(spec.players ?? []).map((pl) => { const p = loc(pl.at); return { x: p.x, y: p.y, w: 7, h: 8 }; }),
         ...routeReserve,

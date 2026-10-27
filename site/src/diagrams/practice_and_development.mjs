@@ -268,7 +268,9 @@ const decisionDrill = {
     { id: 'F', pos: 'F', at: DRILL_TARGET, label: 'at the net front' },
     // A circle again, for the same reason: the section says only "a passive defender"
     // and names no position, so the shape is forced by the notation rather than chosen.
-    { id: 'F', team: 'opp', pos: 'F', at: DRILL_DEFENDER, label: 'takes one option' },
+    // labelHint: moves this label off a neighbour's label, where the two stacked and read
+    // as one player's two-line label (label audit, 27 Oct 2026).
+    { id: 'F', team: 'opp', pos: 'F', at: DRILL_DEFENDER, label: 'takes one option', labelHint: [-13.5, -6] },
   ],
 
   routes: [],
