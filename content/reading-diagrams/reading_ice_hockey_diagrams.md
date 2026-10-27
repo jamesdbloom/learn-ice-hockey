@@ -289,10 +289,9 @@ picture.
 9. **Where a caption says a detail is a coaching choice, it is** — ask which version
    your team runs.
 10. **On anyone else's diagram, check the key; on your team, the coach's whiteboard
-   wins**, so ask about any new mark before the drill. No key says whether
-   you may hit — your age group, league and book do; until you know, hit nobody. Where
-   checking is banned, a hit is a penalty and a hard one can get you thrown out of the
-   game.
+   wins**, so ask about any new mark. No key says whether you may hit — your age
+   group, league and book do; until you know, hit nobody. Where checking is banned, a
+   hit is a penalty and a hard one can get you thrown out.
 
 ---
 

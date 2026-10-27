@@ -527,7 +527,7 @@ Moving sideways without body position and then contacting a player without the p
 
 10. **As a shooter, read the goalie's depth and whether they are square before you choose the shot; as a goalie, choose your depth and your save on purpose.** A goalie who challenges hides more net but opens the back door.
 
-11. **Play the puck, not the goalie, even one out of the crease.** A charge can eject you — always under Hockey Canada, and under CARHA in the crease or if it injures. ⚠️ **Plan on a match for a reckless charge under USA Hockey, with a likely multi-game suspension, and for any attempt to injure in every book that writes one.**
+11. **Play the puck, not the goalie, even out of the crease.** A charge can eject you — always under Hockey Canada, and under CARHA in the crease or if it injures. ⚠️ **Plan on a match for a reckless charge under USA Hockey, with a likely multi-game suspension, and for any attempt to injure in every book that writes one.**
 
 12. **At the net front, when your goalie shouts *"Screen!"*, hold your ice — no lean, no push.** In a CARHA league, women's hockey or a non-checking division, keep your body off the screener. ⚠️ **Never shove with the shaft:** that is cross-checking, and on the back it can be called checking from behind, never a bare minor in any book.
 
