@@ -13,14 +13,13 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG91: DONE and pushed (27 Oct): 86aec8e, 0d5b275, 97db549** (records sg91a–e). Carry-overs:
-  - the "attempts to injure" 602(a) limb is still missing at forechecking :617/:625/:626 and defending_the_rush :434/:462/:1016 (brief as one claim);
-  - goaltender: no Sources entry for IHUK DOPS; :731/:734 still "63.2(iii)"; KT10 "a fight ejects you under the IIHF" errs harsh for NIHL/SNL/BUIHA;
-  - conditioning :29 "fourteen flags" is unscoped;
-  - risk_management :318 "IIHF may give a major and game misconduct (42.4)" is mildly permissive for British women's hockey (In-House 101);
-  - DZC facts :176 "Pin the puck, not the player" opens as universal before its women's-hockey scope;
-  - the "pin for help" licence is not yet checked in bcb "when to just pin it", defender and puck_handling.
-- **Diagram labels (owner-approved leader fix): NOT YET COMMITTED.** The second diagram-reviewer pass found that the leaderless fallback creates new wrong-player readings (dump-soft-area, attack-the-seam, rush-trailer, breakout-wheel, forecheck-212, oz-low-to-high). A fixer is holding the leaderless slot to a readsAsOwn margin against every player and re-auditing with each label's own player taken from the spec. After that: a third diagram review, then a gate and commit together with the uncommitted feed freeze (podcast-feed.ts, check-podcast-guids.mjs) and the center.mjs deletion.
+- **SG91 and SG92: DONE and pushed** (86aec8e, 0d5b275, 97db549, dd29454; records sg91a–e, sg92). SG92 carry-overs:
+  - risk_management :648, :664, :692: the IIHF hooking and tripping majors eject in British women's and junior hockey (the same shape as :318);
+  - forechecking :1041, :1047, KT8, KT9 speak of ejection without the 602(a) match (incomplete, not false; optional);
+  - dzc :177 says "more than three seconds", while the six SG92 sites say "a minor by three seconds" (both are Casebook wording; make them consistent if touched);
+  - forechecking :617 voices "reckless" against both tiers (errs harsh); :626 "that pair" is a short pointer;
+  - defender :214 and bcb :1150 "never for a whistle" is elliptical voiced alone.
+- **Diagram labels (owner-approved leader fix): NOT YET COMMITTED.** Diagram-reviewer passes 3 and 4 gave SHIP; a browser site-reviewer then found five label misreadings (rush-trailer, breakout-wheel, dump-flip-over-trap, offside-faceoff-location, nz-1-3-1), which the fixer is comparing with HEAD and repairing. Earlier: the second diagram-reviewer pass found that the leaderless fallback creates new wrong-player readings (dump-soft-area, attack-the-seam, rush-trailer, breakout-wheel, forecheck-212, oz-low-to-high). A fixer is holding the leaderless slot to a readsAsOwn margin against every player and re-auditing with each label's own player taken from the spec. After that: a third diagram review, then a gate and commit together with the uncommitted feed freeze (podcast-feed.ts, check-podcast-guids.mjs) and the center.mjs deletion.
 - **NotebookLM batch 9: received 27 Oct, reviewed SHIP after cuts.** Winger: 15 cuts (49.4 → 48.2 min). Body Contact: 12 cuts (39.7 → 35.3 min). The steers arrived. Masters are installed and encoded (podcast.json updated, uncommitted). **Waiting on the owner's AWS SSO login to upload**, then HEAD/range check, commit podcast.json and push. The review reports are in the scratchpad (nlm9/rev_winger, rev_bcb); write the review record at publish.
 - **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.
 
