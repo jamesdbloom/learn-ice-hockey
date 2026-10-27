@@ -99,7 +99,10 @@ const supportInALine = {
     'the point of the picture is the shape, not any movement.',
 
   players: [
-    { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier', labelHint: [0, -7.5] },
+    // labelHint: right of C, a slot whose leader clears the painted lines, dots and puck;
+    // [0, -7.5] was not honoured, and [-4.5, -9] sat under the opposing F and read as its
+    // label (diagram review, 27 Oct 2026).
+    { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier', labelHint: [3, -9] },
     { id: 'A1',  pos: 'F', at: WALL_MID,                           label: 'option one', labelHint: [-4.31, -7.34] },
     { id: 'B',  pos: 'F', at: WALL_HIGH,                          label: 'option two', labelHint: [-13, 0] },
     // SOLID CIRCLE = an opposition forward: `pos: 'F'` gives the circle (shape is the
@@ -729,7 +732,8 @@ const battleSupport = {
     // was the one player in the picture the reader could not see whole. At 38.5 the
     // circle tops out at 41.4, or 41.78 counting the 0.75 stroke — 0.72 ft of ice
     // to spare. Anything above 39.6 puts an own-team circle through the boards.
-    { id: 'T',  pos: 'F', at: 'half-wall:right',                          label: 'pinned on the wall' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'T',  pos: 'F', at: 'half-wall:right',                          label: 'pinned on the wall', labelHint: [-18, 0] },
     // The checker doing the pinning: inside him and half a body deeper, 5.85 ft
     // centre to centre, the overlap at the shoulder being what reads as a pin. He
     // moved down with the man he is pinning — the offset from T is unchanged, so

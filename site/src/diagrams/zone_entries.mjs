@@ -1549,7 +1549,8 @@ const squashAndSlide = {
     { id: 'D', pos: 'D', at: SLIDE_D_NEAR, label: 'forces the carrier outside' },
     { id: 'D', pos: 'D', at: SLIDE_D_FAR, label: 'slides the same distance' },
     { id: 'F', pos: 'F', at: SLIDE_F, label: 'protects the slot, not the puck' },
-    { id: 'F', team: 'opp', pos: 'F', at: SLIDE_CARRIER, label: 'carries in on the near side' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'F', team: 'opp', pos: 'F', at: SLIDE_CARRIER, label: 'carries in on the near side', labelHint: [4.5, 10.5] },
   ],
 
   routes: [

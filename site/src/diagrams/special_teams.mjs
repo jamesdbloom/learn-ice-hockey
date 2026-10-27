@@ -848,7 +848,8 @@ const pkWedge = {
     // boxing out is standing on the same ice: at the true distance the two shapes
     // are drawn on top of each other. The tightness is stated in the caption
     // instead, which is the honest place for a thing the picture cannot scale.
-    { id: 'W', pos: 'D', at: { at: 'goal-line', dx: -4, dy: 11 },  label: 'the wedge' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'W', pos: 'D', at: { at: 'goal-line', dx: -4, dy: 11 },  label: 'the wedge', labelHint: [4.5, 6] },
     { id: 'W', pos: 'D', at: { at: 'goal-line', dx: -4, dy: -11 } },
     // "one forward at the mid-to-high slot".
     { id: 'W', pos: 'F', at: { at: 'high-slot', dx: 3, dy: -2 } },

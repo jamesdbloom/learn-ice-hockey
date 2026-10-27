@@ -559,7 +559,8 @@ const lowToHigh = {
     { id: 'F1', pos: 'F', at: HALF_WALL,           label: 'passes, then supports', labelHint: [-28.5, 0.25] },
     { id: 'F2', pos: 'F', at: NET_FRONT,           label: 'screen and tip' },
     { id: 'F3', pos: 'F', at: HIGH_SLOT_SUPPORT,   label: 'high-slot option' },
-    { id: 'D',  pos: 'D', at: 'point:right',       label: 'walks, then shoots' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'D',  pos: 'D', at: 'point:right',       label: 'walks, then shoots', labelHint: [-9, 9] },
     { id: 'D',  pos: 'D', at: 'point:left',        label: 'reads the rebound' },
     { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
   ],
@@ -1137,7 +1138,8 @@ const cycleReverse = {
     { id: 'F',  team: 'opp', pos: 'F', at: { at: 'corner:right', dx: 7, dy: -8 }, label: 'gone past you' },
     // The teammate arriving into the vacated space, on the half-wall — the spot
     // this module names once and reuses. 16.8 ft from the carrier.
-    { id: 'F2', pos: 'F', at: HALF_WALL, label: 'arriving behind you' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'F2', pos: 'F', at: HALF_WALL, label: 'arriving behind you', labelHint: [-10.5, -7.5] },
     { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
   ],
 

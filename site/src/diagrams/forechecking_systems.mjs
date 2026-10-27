@@ -125,7 +125,8 @@ const forecheckAngling = {
     // restored and what it costs (one reviewed WARN, shared with forecheck-212 on this
     // identical route, never a build failure).
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'D', team: 'opp', pos: 'D', at: CARRIER, label: 'retrieving the puck' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'D', team: 'opp', pos: 'D', at: CARRIER, label: 'retrieving the puck', labelHint: [-13.5, 6] },
     { id: 'F', pos: 'F', at: F1_AT,                label: 'the forechecker' },
   ],
 
@@ -216,9 +217,11 @@ const forecheck212 = {
     // everything behind it").
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
     { id: 'D1', team: 'opp', pos: 'D', at: CARRIER,                              label: 'puck carrier' },
-    { id: 'D2', team: 'opp', pos: 'D', at: { at: 'corner:left', dx: -4, dy: 6 }, label: 'the reverse' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'D2', team: 'opp', pos: 'D', at: { at: 'corner:left', dx: -4, dy: 6 }, label: 'the reverse', labelHint: [-13.5, 3] },
     { id: 'W1', team: 'opp', pos: 'F', at: 'half-wall:right',                    label: 'first option' },
-    { id: 'W2', team: 'opp', pos: 'F', at: 'half-wall:left',                     label: 'cross-ice option' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'W2', team: 'opp', pos: 'F', at: 'half-wall:left',                     label: 'cross-ice option', labelHint: [-16.5, 0] },
 
     // Own team. Two deep, one high, two on the line — the shape the facts block states.
     // F3's coordinate is the section's own phrase rather than a guess: the facts

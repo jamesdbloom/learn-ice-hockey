@@ -315,6 +315,7 @@ function main() {
 
   const seen = new Set();
   const manifest = {};
+  const relaxed = [];   // labels whose leader-hazard rule was relaxed; reported at the end
   let seq = 0;
   for (const d of DIAGRAMS) {
     if (seen.has(d.id)) throw new Error(`duplicate diagram id: ${d.id}`);
@@ -333,7 +334,7 @@ function main() {
       // explicit title never arrived and the name fell back to its id.)
       : d.kind === 'rink' ? rinkSvg({ half: d.half ?? false, labels: d.labels ?? false, width, ns: d.id, footer: FOOTER, title: d.title,
                                       caption: d.caption, describe: d.describe, zones: d.zones })
-      : playSvg(spec, { half: d.half ?? true, width });
+      : playSvg(spec, { half: d.half ?? true, width, onRelax: (id, r) => relaxed.push({ id, ...r }) });
 
     const svgPath = join(OUT_DIR, `${d.id}.svg`);
     writeFileSync(svgPath, svg);
@@ -426,6 +427,13 @@ function main() {
     !chrome ? ''
     : !cacheOn ? ' [PNG cache off: all rendered]'
     : ` [PNG cache: ${reused} reused, ${rendered} rendered${noCache ? ', forced' : ''}]`;
+  // A label whose leader-hazard rule was relaxed kept a leader that runs along a painted
+  // line or across a dot or the puck. Not an error — the alternative was a worse slot — but
+  // named here so a spec `labelHint` can be tried. See `onRelax` in lib/rink.mjs.
+  for (const r of relaxed) {
+    console.warn(`build-diagrams: ${r.id}: "${r.text}" kept a leader across painted ice ` +
+      `(no hazard-free slot outside the grid sweep${r.fromSweep ? '; placed by the sweep' : ''}).`);
+  }
   console.log(`build-diagrams: ${Object.keys(manifest).length} diagram(s)` +
               `${chrome ? ' with PNG fallbacks' : ' (SVG only)'} -> public/diagrams/` + cacheNote);
   // Warn AFTER writing, not before: a partial public/diagrams/ is worse than a

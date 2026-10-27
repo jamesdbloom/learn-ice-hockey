@@ -306,7 +306,7 @@ const clipT = (ax, ay, bx, by, X0, X1, Y0, Y1) => {
  */
 function placeLabels(entries, opts = {}) {
   const { size = 2.4, dot = 0, half = false, reserve = [], avoid = [], leaderMin,
-          noCrossLeaders = false, split = false, paint = null } = opts;
+          noCrossLeaders = false, split = false, paint = null, onRelax = null } = opts;
   // A label further than this from its point gets a leader line drawn to it. Below
   // it no leader is drawn, so nothing can be crossed and `avoid` does not apply.
   //
@@ -697,7 +697,20 @@ function placeLabels(entries, opts = {}) {
     const attempt = (hz) => placeOne(e, w, h, true, true, hz) ?? placeOne(e, w, h, false, true, hz)
       ?? placeOne(e, w, h, false, false, hz);
     let put = attempt(true);
-    if (paint && e.reach && (!put || put.fromSweep)) put = attempt(false);
+    if (paint && e.reach && (!put || put.fromSweep)) {
+      put = attempt(false);
+      // ⚠️ THE RELAXATION ABOVE IS SILENT BY DESIGN AND MUST NOT BE INVISIBLE. A label placed
+      // here kept its pre-rule slot, so its leader may run along a painted line or across a
+      // dot or the puck — the very thing `leaderHazard` exists to stop — and nothing in the
+      // SVG says so. `onRelax` lets the build name each one, so a spec `labelHint` can be
+      // tried where a hazard-free slot still reads as the player's own. Reported only when the
+      // kept slot actually draws a hazardous leader; a relaxation that changed nothing a
+      // reader sees is not worth a warning.
+      if (onRelax && put && !put.noLeader && Math.hypot(put.x - e.x, put.y - e.y) > LEADER_MIN
+          && leaderHazard(put, e)) {
+        onRelax({ text: e.text, x: e.x, y: e.y, fromSweep: !!put.fromSweep });
+      }
+    }
     if (!put) {
       throw new Error(
         `placeLabels: nowhere on the ice for "${e.text}" at (${e.x}, ${e.y}). ` +
@@ -2186,7 +2199,17 @@ export function playSvg(spec, opts = {}) {
           // Far enough along the route to clear the player glyph sitting on its
           // start — at k=0.14 every badge but the pass's was drawn underneath a
           // player and invisible. ~9 ft along, or the midpoint on a short route.
-          const k = Math.min(0.5, 9 / len);
+          // ⚠️ `badge: { along, side }` ON A ROUTE MOVES ITS TAG, AND ONLY ITS TAG. `along` is
+          // feet from the route's start (default 9, capped at the midpoint as before); `side`
+          // is 'left' (the default) or 'right' of travel, at the same distance off the line.
+          // Added for `nz-1-2-2-containment`, where tag 2 sat 0.47 ft from the opposition
+          // goalie's anchor and half-covered the "G" (diagram audit, 27 Oct 2026). It is
+          // OPT-IN on purpose: an automatic rule — move any tag touching a glyph, and reserve
+          // every tag against the label placer — was built and measured the same day and
+          // changed 14 diagrams, five of them for the worse (a label pushed under a
+          // neighbour's, a tag moved onto a leader). A route without `badge` is unchanged.
+          const k = Math.min(0.5, (r.badge?.along ?? 9) / len);
+          const side = r.badge?.side === 'right' ? -1 : 1;
           const c = at(k);
           // Nudged to the left of travel rather than sitting on the line. Two routes
           // that converge on the same point — F2 arriving in the lane, and the pass
@@ -2213,8 +2236,8 @@ export function playSvg(spec, opts = {}) {
           const a = at(Math.max(0, k - 0.05)), b = at(Math.min(1, k + 0.05));
           const tl = Math.hypot(b.x - a.x, b.y - a.y) || 1;
           const nudge = 3.4 * TXT;
-          const bx = c.x - ((b.y - a.y) / tl) * nudge;
-          const by = c.y + ((b.x - a.x) / tl) * nudge;
+          const bx = c.x - side * ((b.y - a.y) / tl) * nudge;
+          const by = c.y + side * ((b.x - a.x) / tl) * nudge;
           // A rounded tag, not a ring. An open ring is what the key's opposition
           // forward looks like, and in greyscale the badges read as two more
           // opposing players standing in the slot.
@@ -2358,6 +2381,9 @@ export function playSvg(spec, opts = {}) {
       return { text: pl.label, x: p.x, y: p.y, reach: (dx, dy) => bodyReach(pl.pos, dx, dy),
                ...(pl.labelHint ? { hint: pl.labelHint } : {}) }; }),
     { size: 2.8 * TXT, half: opts.half ?? true, split: true,
+      // `opts.onRelax(spec.id, label)` is called for each label whose leader-hazard rule was
+      // relaxed (see `onRelax` in `placeLabels`). Absent, nothing is reported.
+      onRelax: opts.onRelax ? (r) => opts.onRelax(spec.id, r) : null,
       // What is painted on the ice, for `leaderHazard`: lines, circles, dots and the puck.
       paint: (() => {
         const F = RINK.faceoff, Lx = RINK.lines;

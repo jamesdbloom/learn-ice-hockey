@@ -978,7 +978,8 @@ const crossIceOwnEnd = {
     // forechecker, the puck disc and the route's own reserved space, and the puck disc
     // at his stick is the notation for having it.
     { id: 'D1', pos: 'D', at: XI_D1 },
-    { id: 'W2', pos: 'F', at: XI_W2, label: 'the far outlet' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
+    { id: 'W2', pos: 'F', at: XI_W2, label: 'the far outlet', labelHint: [-15, -1.5] },
     { id: 'F1', team: 'opp', pos: 'F', at: XI_F1, label: 'seals the wall' },
     { id: 'F2', team: 'opp', pos: 'F', at: XI_F2, label: 'in the middle' },
     { id: 'F3', team: 'opp', pos: 'F', at: XI_F3, label: 'slides across' },

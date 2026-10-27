@@ -123,7 +123,9 @@ const containment122 = {
 
     // Ours. 1 - 2 - 2, read from the puck outward.
     { id: 'G', pos: 'G', at: OUR_G },
-    { id: 'F1', pos: 'F', at: C_F1, label: 'forces one side' },
+    // labelHint: the unhinted slot ran the words into route tag 1; this one leaves a gap of
+    // about 1.5 ft and keeps the leader (diagram audit, 27 Oct 2026).
+    { id: 'F1', pos: 'F', at: C_F1, label: 'forces one side', labelHint: [-22.5, 9] },
     // labelHint: moves this label off a neighbour's label, where the two stacked and read
     // as one player's two-line label (label audit, 27 Oct 2026).
     { id: 'F2', pos: 'F', at: C_F2, label: 'takes the wall', labelHint: [-10.5, -7.5] },
@@ -152,7 +154,10 @@ const containment122 = {
     //     with time will break out cleanly against it most of the time."
     //     Stopped ~6 ft short of the receiver: an arrowhead is 3 ft long, so a
     //     pass drawn all the way to a glyph arrives inside it.
-    { from: C_CARRIER, to: { at: C_W1.at, dx: C_W1.dx - 4, dy: C_W1.dy - 4 }, kind: 'pass' },
+    //     badge: the default tag spot, 9 ft along on the left, half-covered their goalie's
+    //     "G"; 16 ft along clears it by about 2.7 ft (diagram audit, 27 Oct 2026).
+    { from: C_CARRIER, to: { at: C_W1.at, dx: C_W1.dx - 4, dy: C_W1.dy - 4 }, kind: 'pass',
+      badge: { along: 16 } },
     // 3 — "Once F1 has forced the play to a side, F2 steps up on the winger
     //     receiving on the boards." Checking pressure, per the key. It finishes
     //     inside the winger and short of him: a route that finished into the back
@@ -218,13 +223,16 @@ const trap122 = {
     // "F1 sits high in the opponent's zone or at their blue line, still splitting
     // the ice in half" — so: middle of the ice, just inside their line, no route.
     { id: 'F1', pos: 'F', at: { at: THEIR_BLUE, dx: 6 }, label: 'high, splits the ice' },
-    { id: 'F2', pos: 'F', at: T_F2, label: 'kills it at the red line' },
+    // Label: 'steps up', the section's own action for F2 ("F2 stepping up"), with
+    // labelHint: level with F2 on its left, no leader. The old label, 'kills it at the red
+    // line', was too long to sit near F2 anywhere on the sheet and was read as D1's second
+    // line; the caption still says "at the red line" (diagram review, 27 Oct 2026).
+    { id: 'F2', pos: 'F', at: T_F2, label: 'steps up', labelHint: [-15, 0] },
     { id: 'F3', pos: 'F', at: { at: 'centre-ice', dx: 2, dy: -WALL }, label: 'holds the far wall' },
-    // labelHint: below-left of D1, off the blue line (label audit, 27 Oct 2026). ⚠️ It does
-    // NOT clear "kills it at the red line": F2's label still sits just below and right of
-    // "behind F2", so the two can read as one two-line label. [-14, 0] was tried and refused,
-    // and the unhinted slot stacks them more tightly. Still open.
-    { id: 'D1', pos: 'D', at: { at: OUR_BLUE, dy: 20 }, label: 'behind F2', labelHint: [-13.5, -7.5] },
+    // labelHint: level with D1 on its left, with no leader. The earlier below-left slot
+    // [-13.5, -7.5] sat on top of F2's old, longer label and the two read as one two-line
+    // label; [-14, 0] was refused by the placer (diagram audit, 27 Oct 2026).
+    { id: 'D1', pos: 'D', at: { at: OUR_BLUE, dy: 20 }, label: 'behind F2', labelHint: [-16.5, 0] },
     // labelHint: moves this label off a neighbour's label, where the two stacked and read
     // as one player's two-line label (label audit, 27 Oct 2026).
     { id: 'D2', pos: 'D', at: { at: OUR_BLUE, dy: -8 }, label: 'holds the line', labelHint: [-15, -7.5] },
