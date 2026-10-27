@@ -13,6 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
+- **SG107: DONE (record sg107_head_contact_sweep_and_sealing).** Head-contact (43/48) claim swept corpus-wide: correct everywhere; switching KT8 scoped and its USA Hockey match limited to reckless; glossary Sealing covers both senses with CARHA/IIHF-women's limbs. Left: forechecking_systems :68 "Sealing also means contact against the boards" could read "can mean".
 - **SG106: DONE (record sg106_listener_pass_and_carha_slide).** Unmarked penalty halves marked, goal frame added, v1.1 46.3 for In-House readers, CARHA slide wording tightened (86(b) Note), rush-trailer caption split. Left: IIHF head-contact wording differs between special_teams ("plan on major and GM") and switching ("harsher of 43 and 48") — align to the owner's 19 Oct form; HC slide wording now narrower than 8.6 in rules_primer/switching (errs safe).
 - **SG105 readability: DONE (record sg105_readability_remaining_pages).** Long paragraphs 8→1 and long KTs 36→30 corpus-wide (most remaining are kept over 60 for safety limbs). Carried: switching KT8 "Even off the head" errs harsh under HC 7.6 (the rest closed in SG106).
 - **SG104 readability: DONE (record sg104_readability_long_units).** Long paragraphs 34→8 and long KTs 62→36 corpus-wide; 14 pages; two review passes. Left: 8 long paragraphs and 36 long KTs on pages outside this wave, and some kept over 60 for safety limbs (listed in the record); sweep siblings for the Hockey Canada 7.6-vs-7.7 "deliberate" cross-check shape; zone_entries KT9 at 63 words. Listener pass on unmarked penalty halves bcb :45 and :630 (gate note); getting_started KT14 "move them" antecedent.
@@ -21,7 +22,6 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 - **SG95–SG100: DONE** (a6d7ff5, e6d0749, 899148b, 586a353, 4309ba0). Open carry-overs:
   - **Closed 27 Oct** (record: project/reviews/ihuk76_lateness_and_eihl_version_2026-10-27.md): In-House Rule 76 and lateness are researched and still unsettled by any British source, so faceoffs :799/:814 stay as written. The EIHL Casebook on disk is v1.1 (sources/README :2215); its footers are stale;
   - The IHUK referee site distributes "IIHF_Rule_Book_2026-27-compressed.pdf" to officials. The proxy blocked the fetch (403). Fetch it from an unfiltered network and check whether it is the 2026/27 book; that bears on the In-House edition contradiction in sources/README;
-  - Glossary "sealing" is defined as "arriving second", while several diagrams and glossary lines use it for a single forechecker (commit-gate note, SG102). Nit: decide whether the definition should cover both;
   - diagrams (SG101 c5df861; SG102 fixed the three majors: cross-ice-in-your-own-end F1 now "seals D1" with no leader, dz-walk-down-man tag 2 and forecheck-212 tag 1 via badge `along`, which may now pass the midpoint, and "takes the weak side" next to F1). Open:
     - forecheck-122 tag 2 touches F2's glyph (minor): no tag position fixes it (SG103); it needs a route change, which the arrival invariant covers. Owner or leave;
     - 13 relax warnings remain (the 11 others have no clean hint on a 2 ft grid); 11 dot-in-label remain, the deepest in nz-hinge; dump-flip-over-trap dot reads as a bullet before "one back";
@@ -135,7 +135,6 @@ can ship once it has been reviewed.
   - winger's two facts blocks at 14/14 need a ruling on moving limbs between layers;
   - untagged single-book ladder bullets remain in dzc's base shape and in defender's net-front and gap-control sections;
 - **DOPS follow-ons (SG76 landed the core):**
-  - The DOPS points ladder (App D/E: 10 points means a ban) is stated nowhere.
   - The superseded 2022 IIHF Disciplinary Code is not on disk.
 - **HC 7.5 "ejects at every tier" simplification:** Interpretation 3 (a low-speed pin from behind is permitted) and Interpretation 1 (a stationary cross-check from behind is 9.2) are unvoiced. This is not unsafe; just note it if any line claims more.
 - **DOPS wave 2: DONE (SG79, 25 Oct).** Fixed the slur sites on mental_game and team_play, added one body sentence and one facts line per page, and added penalty points to uk_rules. Still open:
