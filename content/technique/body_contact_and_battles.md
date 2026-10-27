@@ -1143,12 +1143,12 @@ Practise this deliberately. Almost no amateur does, and it wins pucks every sing
 
 ### When to just pin it
 
-**In short:** When nobody can win it, pin the puck to the boards and call for help, but never hold it for a whistle.
+**In short:** When nobody can win it, pin the puck to the boards and call for help, but never for a whistle — under USA Hockey it is a minor by three seconds, help coming or not.
 
 ```facts
 Read: Pin when you are outnumbered, tangled with an equally stuck opponent, or a turnover here is a chance against
-Action: Pin the puck to the boards with your skate or stick for a second or two, long enough for a teammate to dig it out — never hold it for a whistle
-Key: The pin buys time for your second player, not a faceoff — call for help, and when help arrives, move the puck
+Action: Pin the puck to the boards with your skate or stick for a second or two so a teammate can dig it out — never for a whistle; under USA Hockey it is a minor by three seconds
+Key: The pin buys your second player a second or two, not a faceoff — call for help, and when help arrives, move the puck
 Rule: Under USA Hockey, holding the puck against the boards for three seconds is a minor whether or not you were pressured (Rule 632(b); Casebook Rule 632, Situation 6)
 Rule: Outside USA Hockey a deliberate freeze is a minor — NHL 63.2(i), IIHF 63.2(I), PWHL 65.2(i); Hockey Canada 10.1(i) and CARHA 74(b) exempt a hold while "being checked by an opponent", but Hockey Canada 6.12(b) still penalises a freeze for a stoppage and CARHA 55(a) makes stalling a bench minor
 Rule: A skater deliberately falling on or gathering in the puck is a minor in all six books (NHL 63.2(v), IIHF 63.2(V), PWHL 65.2(v), USA Hockey 614(a), Hockey Canada 10.2(a)(iv), CARHA 58(a)); in your crease a penalty shot, and with your net empty treat it as a goal against — most books award it outright
@@ -1156,7 +1156,7 @@ Never: Pin because a change is due or you are protecting a lead — that is the 
 Rule: IIHF women's rules bar using the boards to push, pin or eliminate an opponent — pin the puck, not the player (IIHF Rule 101.1, and so in British women's hockey)
 ```
 
-Sometimes you cannot win the battle and neither can they. If you are outnumbered, if you are tangled up with an opponent who is just as stuck as you are, or if a turnover here would be a scoring chance against, **stop the puck moving: pin it against the boards with your skate or your stick blade, call for help, and hold it only until a teammate arrives to dig it out.** A puck going nowhere is a far better outcome than a turnover in the slot, and the pin is what gives your second player time to get there. ⚠️ **Never hold it for a whistle, and never fall on it or gather it into your body.**
+Sometimes you cannot win the battle and neither can they. If you are outnumbered, if you are tangled up with an opponent who is just as stuck as you are, or if a turnover here would be a scoring chance against, **stop the puck moving: pin it against the boards with your skate or your stick blade, call for help, and hold it only until a teammate arrives to dig it out — under USA Hockey, a hold that stops play is a minor, three seconds at the latest, help coming or not.** A puck going nowhere is a far better outcome than a turnover in the slot, and the pin is what gives your second player time to get there. ⚠️ **Never hold it for a whistle, and never fall on it or gather it into your body.**
 
 **Pinning to wait for help also rules out two motives.** "A change is due" and "we are protecting a lead late" are precisely the delaying purpose the delay-of-game rules below penalise. They are reasons to get the puck out — rim it, chip it off the glass, or make the safe play up the wall — not reasons to sit on it and fish for a whistle. See **[Game Management](../systems/game_management.md)** for the legal ways to kill time and change lines.
 

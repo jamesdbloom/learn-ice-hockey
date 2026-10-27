@@ -173,7 +173,7 @@ Convention: The weak-side defenceman owns the goalmouth and boxes out — do not
 Convention: The centre is the second body into the strong-side corner battle — two on one wins it
 Convention: The strong-side winger stays high on the strong-side point, between that defenceman and the net
 Convention: The weak-side winger covers the weak-side point and collapses into the high slot when the centre goes low
-Rule: Pin the puck, not the player — IIHF women's Rule 101.1 bars using the boards to eliminate an opponent from the play, push her into the boards or pin her along them
+Rule: In IIHF women's hockey, and so British women's hockey, pin the puck, not the player — Rule 101.1 bars using the boards to eliminate an opponent from the play, push her into the boards or pin her along them
 Rule: Pin the puck only until help arrives, never for a whistle — under USA Hockey, more than three seconds held against the boards is a minor, help coming or not, pressured or not (Rule 632(b); Casebook Rule 632, Situation 6)
 Rule: Outside USA Hockey a deliberate freeze is a minor — NHL 63.2(i), IIHF 63.2(I), PWHL 65.2(i); Hockey Canada 10.1(i) and CARHA 74(b) exempt a hold while "being checked by an opponent", but Hockey Canada 6.12(b) still penalises a freeze for a stoppage and CARHA 55(a) makes stalling a bench minor
 Never: Arrive into the back of a player facing your end boards. Take the puck, take the ice, or angle them off it instead
