@@ -428,6 +428,7 @@ Read: Take the next-most-likely escape route from wherever F1 has pushed the car
 Technique: Pin the puck against the boards, not the player
 Rule: IIHF women's Rule 101.1 prohibits using the boards to eliminate an opponent from the play, push her into the boards, or pin her along the boards
 Rule: Do not hear the boards-pinning prohibition as a women's-hockey rule only — USA Hockey's holding rule reaches the same act for every player, naming "wrapping one or both arms around the opponent along the boards in a manner that pins them against the boards" (Rule 622 Note)
+Rule: At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban, in every league or age group you are registered in (IHUK DOPS C.1, s.11)
 Convention: A 2-1-2 sends two forwards deep and a 1-2-2 sends one, and F3 sits weak-side by default or puck-side in the stacked variant — find out which your team runs
 Goal: Force a turnover or a bad outlet pass by trapping the carrier with no escape route
 Key: Forechecking is about angles, not speed. Stay in your role and trust your linemates to be in theirs

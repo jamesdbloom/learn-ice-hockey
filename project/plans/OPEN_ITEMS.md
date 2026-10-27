@@ -37,7 +37,8 @@ can ship once it has been reviewed.
 1. **Finding More Ice: SHIPPED 22 Oct (0337d6a).** Optional: "faces suspension and fines" (R&R 14.5), changed together in getting_started KT8 and CM :654.
 2. **Skating-drill diagrams:** 48 drafts in `project/getting_better_drafts/`, redrawn with the owner's first
    round of feedback (recorded in getting_better_plan.md §6). The private preview was republished on 26 Oct as a new artifact: https://claude.ai/artifact/51YTdiV8o8byV4nAZJMUaJ (the old link was deleted).
-   - **Waiting on the owner:** a drill-by-drill review. Seven readings are flagged to confirm: the sharp-C
+   - **Owner review round 2 (27 Oct), applied and republished (version 2):** Drills 1 and 5 are now alternating inside-edge arcs; 4 and 6 are alternating sharp outside-edge Cs with a crossover; 7 is backward outside-edge stepping along a blue line; the mohawks (19, 20) are curved, with a pivot on the leading foot; 22, the crossover start, was redrawn from the IIHF, Hockey Canada and Ice Hockey Systems coaching sources; 23 and 24 zig-zag diagonally between stops. Still to confirm: hand or boot (1, 5); which side of the line each foot lands (7); inside or outside edges in the mohawk (19); whether the stepping mohawk pivots (20); the lead toe opening (22); the backward stop (24).
+   - **Waiting on the owner:** the rest of the drill-by-drill review. Seven readings are flagged to confirm: the sharp-C
      outside edge, step-overs alternating, backward outside-edge C-cuts, the backward crossover-and-stop shape,
      scissor stop foot order, which foot stops on the outside-edge one-foot stop, and "(toe down first)".
    - Once the owner approves a diagram: fold the kit into the site's diagrams.

@@ -155,7 +155,7 @@ Rule: A stoppage the attacking team caused in its attacking zone is a different 
 Rule: Offside on a carry-in draws at the neutral-zone dot outside that blue line (Rule 83.6)
 Rule: Offside on a pass or shot sends the draw back to the zone the puck came from (Rule 83.6)
 Rule: A post-whistle scrum that pulls players inside the circle's outer edge moves the draw to the neutral zone — the attacking team's point men and bench, and any non-offending player, under NHL and IIHF 76.2; any attacking player under USA Hockey 612(d), Hockey Canada 6.3(d)(vi)
-Rule: A puck out of play draws at the nearest spot in the zone it was shot from (NHL 85.1); a puck shot into the players' bench draws no penalty, but the IIHF Handbook exempts only one shot straight in, not one clearing the glass into it (63.2(iii) NOTE; Situation 63.24)
+Rule: A puck out of play draws at the nearest spot in the zone it was shot from (NHL 85.1); a puck shot into the players' bench draws no penalty, but the IIHF Handbook exempts only one shot straight in, not one clearing the glass into it (63.2(III) NOTE; Situation 63.24)
 Never: Go offside by firing the puck over the blue line — carrying it over and being whistled costs you far less
 ```
 

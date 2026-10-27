@@ -13,50 +13,73 @@ function heelToHeel(d, x, y, dir, lead, { gap = 1.15 } = {}) {
 }
 
 // ---------------------------------------------------------------- 1 Mohawk side to side
+// Each glide in the heel-to-heel stance is a CURVED arc (owner, 26 Oct 2026): it leaves one side of the lane
+// heading along it and curves round to cross to the other side, both blades on their outside edges.
+// Plain: at each side the skater PIVOTS on the leading foot, turning on it so the other leg leads the next arc.
+// Stepping: the switch is two quick steps instead of a pivot.
+const bezPt = (P, t) => {
+  const u = 1 - t;
+  const c = [u * u * u, 3 * u * u * t, 3 * u * t * t, t * t * t];
+  const x = c[0] * P[0][0] + c[1] * P[1][0] + c[2] * P[2][0] + c[3] * P[3][0];
+  const y = c[0] * P[0][1] + c[1] * P[1][1] + c[2] * P[2][1] + c[3] * P[3][1];
+  const dx = 3 * u * u * (P[1][0] - P[0][0]) + 6 * u * t * (P[2][0] - P[1][0]) + 3 * t * t * (P[3][0] - P[2][0]);
+  const dy = 3 * u * u * (P[1][1] - P[0][1]) + 6 * u * t * (P[2][1] - P[1][1]) + 3 * t * t * (P[3][1] - P[2][1]);
+  return { x, y, ang: (Math.atan2(dy, dx) * 180) / Math.PI };
+};
 const mohawk = (stepping) => {
   const d = diagram({
     title: stepping ? 'Stepping mohawks side to side' : 'Mohawk side to side',
     desc: stepping
-      ? 'Zig-zag down a lane in a heel-to-heel mohawk stance. At each side of the lane the skater changes the lead foot with two quick steps, one foot then the other, staying on the ice, into the mirror stance with the other foot leading.'
-      : 'Zig-zag down a lane in a heel-to-heel mohawk stance: right foot leading towards one side, then switch so the left foot leads back towards the other side.',
+      ? 'Down a lane in a heel-to-heel mohawk stance, each glide a curved arc from one side of the lane to the other. At each side the skater changes the lead foot with two quick steps, one foot then the other, staying on the ice, and curves back across with the other foot leading.'
+      : 'Down a lane in a heel-to-heel mohawk stance, each glide a curved arc from one side of the lane to the other. At each side the skater pivots on the leading foot and turns into the mohawk with the other leg leading, then curves back across.',
   });
   // lane edges
   d.iceLine(1, 1.1, 21, 1.1, '#9fb6c8');
   d.iceLine(1, 9.7, 21, 9.7, '#9fb6c8');
-  // Leg A: down-right, right foot leads.  Leg B: up-right, left foot leads.  Leg C: down-right again.
+  // Arc A: right foot leads, curves from heading right to heading down. Arc B: left leads, curves up. Arc C: as A.
+  const T = 2.3, Bt = 8.4; // top and bottom of the arcs
+  const arc = (x0, down) => {
+    const [ya, yb] = down ? [T, Bt] : [Bt, T];
+    return [[x0, ya], [x0 + 4.0, ya], [x0 + 5.6, ya + (yb - ya) * 0.35], [x0 + 5.6, yb]];
+  };
   const legs = [
-    { from: [1.8, 2.6], to: [7.4, 8.2], lead: 'R' },
-    { from: [8.6, 8.2], to: [14.2, 2.6], lead: 'L' },
-    { from: [15.4, 2.6], to: [21, 8.2], lead: 'R' },
+    { P: arc(1.4, true), lead: 'R' },
+    { P: arc(8.2, false), lead: 'L' },
+    { P: arc(15.0, true), lead: 'R' },
   ];
-  legs.forEach((g, i) => {
-    const [x1, y1] = g.from, [x2, y2] = g.to;
-    const dir = (Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI;
-    d.track(`M ${x1} ${y1} L ${x2} ${y2}`, g.lead, { width: 2.5 });
-    const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
-    heelToHeel(d, mx, my, dir, g.lead);
+  legs.forEach((g) => {
+    const P = g.P;
+    d.track(`M ${P[0][0]} ${P[0][1]} C ${P[1][0]} ${P[1][1]} ${P[2][0]} ${P[2][1]} ${P[3][0]} ${P[3][1]}`, g.lead, { width: 2.5 });
+    const m = bezPt(P, 0.5);
+    heelToHeel(d, m.x, m.y, m.ang, g.lead);
   });
-  if (!stepping) {
-    // carved switch corners
-    d.track('M 7.4 8.2 Q 8 8.9 8.6 8.2', 'ink', { width: 2, arrow: false });
-    d.track('M 14.2 2.6 Q 14.8 1.9 15.4 2.6', 'ink', { width: 2, arrow: false });
-    d.text(10.0, 8.9, 'switch', { size: 0.42 }).text(16.6, 2.3, 'switch', { size: 0.42 });
-  } else {
-    // Two quick steps at each side: the old trailing foot steps round to lead, then the other follows.
-    const corner = (x, y, up) => {
-      const dirNew = up ? -45 : 45;
-      d.skate(x - 0.35, y + (up ? 0.55 : -0.55), dirNew, up ? 'L' : 'R', { len: 1.1 });
-      d.skate(x + 0.55, y + (up ? 0.95 : -0.95), dirNew + 180, up ? 'R' : 'L', { len: 1.1 });
-    };
-    corner(8.0, 8.2, true);
-    corner(14.8, 2.6, false);
-    d.text(10.4, 9.25, 'step, step', { size: 0.42 }).text(17.2, 1.9, 'step, step', { size: 0.42 });
-  }
-  d.text(4.6, 3.6, 'heels in line', { size: 0.42 });
-  d.step(2.2, 4.4, 1);
-  d.step(6.3, 5.1, 2);
-  d.step(6.4, 8.9, 3);
-  d.step(12.6, 6.8, 4);
+  // The switch at the end of arc A (bottom) and arc B (top).
+  const ends = [{ P: legs[0].P, lead: 'R', down: true }, { P: legs[1].P, lead: 'L', down: false }];
+  ends.forEach(({ P, lead, down }) => {
+    const E = P[3], v = down ? 1 : -1; // v: the way the arc was heading (down or up the page)
+    const other = lead === 'R' ? 'L' : 'R';
+    if (!stepping) {
+      // Pivot: the leading foot turns on the spot; the other foot swings round from behind it to lead.
+      const px = E[0] + 0.2, py = E[1] + v * 0.15;
+      d.skate(px, py, v > 0 ? 45 : -45, lead, { len: 1.3 });
+      d.raw(`<circle cx="${(px * 30).toFixed(1)}" cy="${(py * 30).toFixed(1)}" r="24" fill="none" stroke="${COL.ink}" stroke-width="1.5" stroke-dasharray="4 3"/>`);
+      d.track(`M ${E[0] - 0.5} ${E[1] - v * 1.5} Q ${E[0] + 1.9} ${E[1] - v * 1.7} ${E[0] + 1.9} ${E[1] - v * 0.25}`, other, { width: 2 });
+      d.text(E[0] + 1.1, E[1] + (down ? 0.95 : -0.75), `pivot on the ${lead === 'R' ? 'right' : 'left'} foot`, { size: 0.42, color: COL[lead], weight: 600, anchor: 'start' });
+    } else {
+      // Two quick steps: the old trailing foot steps round to lead, then the other follows.
+      const dirNew = down ? -45 : 45;
+      d.skate(E[0] + 0.3, E[1] + (down ? 0.2 : -0.2), dirNew, other, { len: 1.1 });
+      d.skate(E[0] + 1.2, E[1] + (down ? -0.3 : 0.3), dirNew + 180, lead, { len: 1.1 });
+      d.text(E[0] + 1.9, E[1] + (down ? 0.95 : -0.75), 'step, step', { size: 0.42, anchor: 'start' });
+    }
+  });
+  d.text(3.2, 5.0, 'heels in line', { size: 0.42 });
+  d.text(3.2, 5.6, 'curve across', { size: 0.42 });
+  const m0 = bezPt(legs[0].P, 0.5), m1 = bezPt(legs[1].P, 0.5);
+  d.step(legs[0].P[0][0], legs[0].P[0][1] + 0.9, 1);
+  d.step(m0.x + 1.5, m0.y - 0.9, 2);
+  d.step(legs[0].P[3][0] - 1.3, legs[0].P[3][1] + 0.3, 3);
+  d.step(m1.x + 1.5, m1.y + 0.9, 4);
   d.travel(16.5, 10.3, 20.5, 10.3);
   return d.svg();
 };
@@ -98,110 +121,129 @@ const vStart = (() => {
 
 // ---------------------------------------------------------------- 4 Explosive crossover start
 const xStart = (() => {
+  // Redrawn 27 Oct 2026 after checking coaching sources (IIHF coaching page, Hockey Canada skills glossary,
+  // Ice Hockey Systems drill notes). Consensus: side-on stance, head/shoulders/hips turn first, the skater
+  // falls over the lead leg, ONE crossover (the far foot crosses in front while the lead foot pushes under on
+  // its outside edge), then a few short, quick "running" strides on the toes in a V, then full strides.
+  // The skater faces UP the page and goes right, so their right foot leads and "in front" is up the page.
   const d = diagram({
     title: 'Explosive cross-over start',
-    desc: 'Standing side-on to the way they want to go, the skater opens the right foot towards the travel direction, crosses the left foot over in front while the right foot pushes under on its outside edge, then sprints away on short strides. Repeat to the left.',
+    desc: 'Standing side-on, facing up the page, to go right. Turn the head, shoulders and hips to the right and fall over the right leg. The left foot crosses over in front while the right foot pushes under the body on its outside edge. Then a few short, quick running strides on the toes, feet turned out in a V, before longer strides.',
   });
-  // 1: side-on stance, chest facing up the page; toes up.  Left foot is to the skater's left (-x).
-  d.skate(1.6, 7.4, -90, 'L');
-  d.skate(3.2, 7.4, -90, 'R');
-  d.text(2.4, 9.3, 'side-on', { size: 0.44 });
-  d.step(0.9, 9.2, 1);
-  // 2: right foot pivots open towards travel; 3: it pushes under (outside edge) as the left crosses over in front.
-  d.skate(5.4, 7.4, 0, 'R');
-  d.track('M 4.7 7.7 L 3.6 8.7', 'R', { width: 2.5, edge: 'OUT', edgeAt: [4.9, 9.1] });
-  d.text(5.0, 10.0, 'push under', { size: 0.42, color: COL.R });
-  d.step(6.6, 8.6, 2);
-  d.track('M 1.8 6.4 Q 4.6 3.0 7.6 6.6', 'L', { air: true, width: 2.5 });
-  d.skate(8.4, 7.0, -5, 'L');
-  d.text(4.6, 3.9, 'cross over in front', { size: 0.42 });
-  d.step(9.0, 5.6, 3);
-  // 4: sprint strides
-  d.skate(12.6, 7.7, 30, 'R');
-  d.skate(15.4, 5.7, -28, 'L');
-  d.skate(18.8, 7.2, 18, 'R');
-  d.step(15.4, 4.2, 4);
-  d.travel(11, 10.2, 19, 10.2);
+  // 1: side-on stance, toes up the page. Left foot is on the skater's left (-x).
+  d.skate(1.8, 6.6, -90, 'L', { len: 1.3 });
+  d.skate(3.4, 6.6, -90, 'R', { len: 1.3 });
+  d.text(2.6, 9.6, 'side-on,', { size: 0.42 });
+  d.text(2.6, 10.2, 'knees bent', { size: 0.42 });
+  d.step(1.0, 4.9, 1);
+  // 2: the left foot lifts, crosses over in front (up the page) and lands on the far side of the right foot;
+  //    the right foot pushes under the body, sideways towards the skater's left, on its outside edge.
+  d.track('M 1.9 5.6 Q 3.0 3.3 5.0 5.6', 'L', { air: true, width: 2.5 });
+  d.skate(5.4, 6.3, -35, 'L', { len: 1.3 });
+  d.text(3.4, 3.9, 'left crosses over in front', { size: 0.42, color: COL.L, weight: 600 });
+  d.track('M 4.0 7.3 L 2.2 7.6', 'R', { width: 2.5 });
+  d.tag(3.1, 8.3, 'OUT', 'R');
+  d.text(4.0, 8.45, 'right pushes under', { size: 0.42, color: COL.R, weight: 600, anchor: 'start' });
+  d.step(6.6, 4.7, 2);
+  // 3: short, quick running strides on the toes, feet turned out in a V, then longer strides.
+  const strides = [[7.8, 7.4, 35, 'R'], [9.4, 5.8, -35, 'L'], [11.0, 7.3, 30, 'R'], [13.0, 5.9, -28, 'L'], [16.0, 7.1, 20, 'R'], [19.4, 6.0, -15, 'L']];
+  strides.forEach(([x, y, a, f]) => d.skate(x, y, a, f, { len: 1.3 }));
+  d.step(7.6, 4.5, 3);
+  d.text(11.4, 4.65, 'short, quick steps on your toes', { size: 0.42 });
+  d.text(17.7, 4.65, 'then longer strides', { size: 0.42 });
+  d.text(18.6, 1.0, 'facing this way ↑', { size: 0.42 });
+  d.travel(8, 10.2, 19, 10.2);
   return d.svg();
 })();
 
-// ---------------------------------------------------------------- 5 Forward crossovers & stop (sideways)
-// The skater FACES UP THE PAGE the whole time and travels sideways. Facing up, their right is +x.
-// Going right: the left foot crosses over in front (up) of the right, the right steps out from behind;
-// twice, then a sideways stop on the INSIDE edge of the right (leading) foot. Then the same back to the left.
+// ---------------------------------------------------------------- 5/6 Crossovers & stop, diagonal zig-zag
+// Owner, 27 Oct 2026: two crossover steps slightly DIAGONALLY forwards (or backwards) and sideways, a stop,
+// then two the other way and a stop, so the path zig-zags along the ice. Travel is always left to right.
+//   Forward: the skater faces right (+x); their left is up the page. Leg 1 goes down-right (to their right).
+//   Backward: the skater faces left (-x), toes pointing back against travel; their left is DOWN the page.
+//     Leg 1 goes up-right (to their right).
+// On each leg the crossing foot passes IN FRONT (the side the skater faces) and the lead foot steps out from
+// behind. Forward stop: one foot, the lead blade across the line of travel, inside edge biting.
+// Backward stop: two-foot V-stop, heels pushed out, toes in.
+function crossLeg(d, { x0, y0, ang, lead, backward, skipStart = false }) {
+  const cross = lead === 'R' ? 'L' : 'R';
+  const u = [Math.cos(rad(ang)), Math.sin(rad(ang))];
+  const p = [u[1], -u[0]], fx = backward ? -1 : 1;
+  const nf = p[0] * fx > 0 ? p : [-p[0], -p[1]]; // perpendicular to the line, on the side the skater faces
+  const P = (sv, n = 0) => [x0 + u[0] * sv + nf[0] * n, y0 + u[1] * sv + nf[1] * n];
+  const facing = backward ? 180 : 0;
+  const toe = facing + (ang > 0 ? 12 : -12) * fx; // body turned a little towards the way it goes
+  if (!skipStart) [[0, cross], [1.4, lead]].forEach(([sv, f]) => { const [x, y] = P(sv); d.skate(x, y, toe, f, { len: 1.2 }); });
+  else if (skipStart !== 'all') { const [x, y] = P(1.4); d.skate(x, y, toe, lead, { len: 1.2 }); }
+  const hops = [[0, 3.0], [1.4, 4.4], [3.0, 6.0], [4.4, 7.4]];
+  hops.forEach(([sa, sb], i) => {
+    const f = i % 2 === 0 ? cross : lead;
+    const bulge = i % 2 === 0 ? 1.3 : -1.1; // crossing foot passes in front, lead foot steps out from behind
+    const A = P(sa + 0.35, bulge * 0.55), M = P((sa + sb) / 2, bulge), B = P(sb - 0.35, bulge * 0.55);
+    d.track(`M ${A[0]} ${A[1]} Q ${M[0]} ${M[1]} ${B[0]} ${B[1]}`, f, { width: 2 });
+    const [x, y] = P(sb);
+    d.skate(x, y, toe, f, { len: 1.2 });
+  });
+  const [sx, sy] = P(9.4);
+  if (!backward) {
+    // One-foot stop: lead blade across the line of travel, inside edge on the side away from travel.
+    const [lx, ly] = P(8.2, -0.2);
+    d.skate(lx, ly, toe, cross, { len: 1.2, lifted: true });
+    d.skate(sx, sy, ang + (lead === 'R' ? -90 : 90), lead, { len: 1.3 });
+    d.spray(sx + u[0] * 0.2, sy + u[1] * 0.2, ang, { n: 5, len: 1.1, spread: 60 });
+  } else {
+    // Two-foot backward V-stop: toes point back against travel and turn in, heels pushed out; spray off the heels.
+    const f = ang + 180, right = [Math.cos(rad(f + 90)), Math.sin(rad(f + 90))];
+    const rp = [sx + right[0] * 0.75, sy + right[1] * 0.75], lp = [sx - right[0] * 0.75, sy - right[1] * 0.75];
+    d.skate(rp[0], rp[1], f - 35, 'R', { len: 1.3 });
+    d.skate(lp[0], lp[1], f + 35, 'L', { len: 1.3 });
+    [rp, lp].forEach(([x, y]) => d.spray(x + u[0] * 0.7, y + u[1] * 0.7, ang, { n: 4, len: 0.9, spread: 50 }));
+  }
+  return { stop: [sx, sy], P };
+}
+
 const fwdX = (() => {
   const d = diagram({
-    title: 'Forwards cross over 2 steps & stop, sideways',
-    desc: 'The skater faces up the page and moves sideways. Top row: moving right, the left foot crosses over in front of the right, the right steps out from behind, twice, then a sideways stop on the inside edge of the right foot. Bottom row: back to the left the same way, the right foot crossing over, stopping on the inside edge of the left foot.',
+    title: 'Forwards cross over 2 steps & stop, diagonal zig-zag',
+    desc: 'The skater faces right, up the ice. Two crossover steps diagonally forwards and to the right: the left foot crosses over in front of the right, toe down first, and the right steps out from behind, then a stop on the inside edge of the right foot. Then two crossover steps diagonally forwards and to the left, the right foot crossing over, and a stop on the inside edge of the left foot. The path zig-zags up the ice.',
   });
-  const row = (y, dir) => {
-    // dir +1: moving right (lead R, crossing L). dir -1: moving left (lead L, crossing R).
-    const lead = dir > 0 ? 'R' : 'L', cross = dir > 0 ? 'L' : 'R';
-    const X = (x) => (dir > 0 ? x : 22 - x);
-    d.skate(X(2.0), y, -90, cross, { len: 1.3 });
-    d.skate(X(3.4), y, -90, lead, { len: 1.3 });
-    // Crossing foot steps over in front (up the page), lead foot steps out from behind (down the page).
-    const hops = [[2.0, 5.0], [3.4, 6.4], [5.0, 8.0], [6.4, 9.4]];
-    hops.forEach(([a, b], i) => {
-      const foot = i % 2 === 0 ? cross : lead;
-      const bulge = i % 2 === 0 ? -1.3 : 1.1;
-      d.track(`M ${X(a + 0.3)} ${y + (i % 2 === 0 ? -0.8 : 0.8)} Q ${X((a + b) / 2)} ${y + bulge} ${X(b - 0.3)} ${y + (i % 2 === 0 ? -0.8 : 0.8)}`, foot, { width: 2 });
-      d.skate(X(b), y, -90, foot, { len: 1.3 });
-    });
-    // Sideways stop on the lead foot's inside edge: snow sprays ahead, in the direction of travel.
-    d.skate(X(11.4), y, -90, lead, { len: 1.3 });
-    d.skate(X(10.2), y, -90, cross, { len: 1.3, lifted: true });
-    d.spray(X(11.6), y, dir > 0 ? 0 : 180, { n: 5, len: 1.1, spread: 60 });
-    d.tag(X(11.4), y + 1.3, 'IN', lead);
-    d.text(X(13.0), y + 0.15, 'stop', { size: 0.46, weight: 600, color: COL.ink, anchor: dir > 0 ? 'start' : 'end' });
-  };
-  row(3.0, 1);
-  d.step(1.0, 1.6, 1);
-  d.step(6.0, 1.0, 2);
-  d.step(11.4, 1.2, 3);
-  d.text(5.8, 4.9, 'left crosses over in front, twice', { size: 0.42, color: COL.L });
-  row(7.6, -1);
-  d.step(16.0, 9.6, 4);
-  d.step(8.4, 8.6, 5);
-  d.text(16.2, 5.6, 'right crosses over in front, twice', { size: 0.42, color: COL.R });
-  d.text(18.6, 1.0, 'facing this way ↑', { size: 0.42 });
-  d.travel(5, 10.3, 9, 10.3);
-  d.travel(17, 10.3, 13, 10.3);
+  const g1 = crossLeg(d, { x0: 1.8, y0: 2.3, ang: 30, lead: 'R', backward: false });
+  const g2 = crossLeg(d, { x0: g1.stop[0], y0: g1.stop[1], ang: -30, lead: 'L', backward: false, skipStart: true });
+  const s1 = g1.stop, s2 = g2.stop;
+  d.tag(s1[0] + 0.2, s1[1] + 1.4, 'IN', 'R');
+  d.text(s1[0] + 1.7, s1[1] + 1.55, 'stop', { size: 0.46, weight: 600, color: COL.ink, anchor: 'start' });
+  d.tag(s2[0] + 1.2, s2[1] - 1.1, 'IN', 'L');
+  d.text(s2[0] + 1.5, s2[1] + 0.6, 'stop', { size: 0.46, weight: 600, color: COL.ink, anchor: 'start' });
+  d.text(7.6, 1.5, 'left crosses over in front,', { size: 0.42, color: COL.L, weight: 600 });
+  d.text(7.6, 2.1, 'toe down first, twice', { size: 0.42, color: COL.L, weight: 600 });
+  d.text(17.4, 6.7, 'right crosses over in front, twice', { size: 0.42, color: COL.R, weight: 600 });
+  d.step(1.0, 3.6, 1);
+  d.step(s1[0] - 2.2, s1[1] + 1.5, 2);
+  d.step(s1[0] + 3.4, s1[1] + 0.4, 3);
+  d.step(s2[0] - 1.4, s2[1] - 1.4, 4);
+  d.text(3.0, 10.4, 'facing this way →', { size: 0.42 });
+  d.travel(13, 10.2, 19, 10.2);
   return d.svg();
 })();
 
-// ---------------------------------------------------------------- 6 Backward crossovers & stop
 const bwdX = (() => {
   const d = diagram({
-    title: 'Backwards cross over 2/3 steps & stop',
-    desc: 'Skating backward (toes pointing back down the path) on a curve, the left (outside) foot crosses over in front of the right (inside) foot two or three times, which pushes under on its outside edge, then the skater stops with a two-foot backward V-stop, heels pushed out.',
+    title: 'Backwards cross over 2 steps & stop, diagonal zig-zag',
+    desc: 'Skating backwards, facing left, travelling right down the ice. Two crossover steps diagonally backwards and to the right: the left foot crosses over in front of the right, and the right steps out from behind, then a two-foot stop with the heels pushed out. Then two crossover steps diagonally backwards and to the left, the right foot crossing over, and the same stop. The path zig-zags down the ice.',
   });
-  // Travelling +x backward, curving up the page. Skater faces -x, so their RIGHT side is up (inside).
-  d.track('M 1.6 9.2 C 6 9.4 10 8.6 13 6.6', 'travel', { width: 2, arrow: false });
-  // Crossover 1: right (inside, up) on ice; left (outside, down) crosses over in front to the up side.
-  d.skate(5.4, 8.6, 180, 'R');
-  d.skate(4.6, 7.6, 182, 'L', { lifted: true });
-  d.track('M 5.3 8.9 L 4.9 9.6', 'R', { width: 2, edge: 'OUT', edgeAt: [6.2, 9.7] });
-  d.step(3.4, 7.0, 1);
-  // Crossover 2
-  d.skate(9.2, 8.3, 168, 'R');
-  d.skate(8.5, 7.2, 165, 'L', { lifted: true });
-  d.track('M 9.1 8.6 L 8.7 9.3', 'R', { width: 2 });
-  d.step(7.4, 6.3, 2);
-  // Crossover 3 (optional)
-  d.skate(12.4, 7.0, 150, 'R');
-  d.skate(11.6, 6.0, 148, 'L', { lifted: true });
-  d.text(9.2, 10.2, '2 or 3 crossovers', { size: 0.42 });
-  // Backward V-stop: travel ~ -35deg; toes in, heels out; spray off the heels (leading ends).
-  d.track('M 13.4 5.8 L 15.6 4.3', 'travel', { width: 2, arrow: false });
-  d.skate(17.5, 4.5, 170, 'L');  // skater's left is down-right of travel
-  d.skate(16.5, 3.06, 120, 'R');
-  d.spray(18.4, 4.3, -35, { n: 5, len: 1.0 });
-  d.spray(17.0, 2.3, -35, { n: 5, len: 1.0 });
-  d.text(19.0, 6.2, 'heels out, stop', { size: 0.44, weight: 600, color: COL.ink });
-  d.step(14.6, 2.6, 3);
-  d.text(5.6, 1.4, 'skating backwards', { size: 0.46 });
-  d.travel(9, 1.4, 16, 1.4);
+  const g1 = crossLeg(d, { x0: 1.8, y0: 7.6, ang: -30, lead: 'R', backward: true });
+  const g2 = crossLeg(d, { x0: g1.stop[0], y0: g1.stop[1], ang: 30, lead: 'L', backward: true, skipStart: 'all' });
+  const s1 = g1.stop, s2 = g2.stop;
+  d.text(s1[0] + 2.0, s1[1] - 1.5, 'heels out, stop', { size: 0.44, weight: 600, color: COL.ink, anchor: 'start' });
+  d.text(s2[0] - 2.4, s2[1] + 1.9, 'heels out, stop', { size: 0.44, weight: 600, color: COL.ink });
+  d.text(4.2, 2.6, 'left crosses over in front, twice', { size: 0.42, color: COL.L, weight: 600 });
+  d.text(11.2, 7.4, 'right crosses over in front, twice', { size: 0.42, color: COL.R, weight: 600 });
+  d.step(1.0, 6.3, 1);
+  d.step(s1[0] - 1.6, s1[1] - 1.4, 2);
+  d.step(s1[0] + 3.4, s1[1] - 0.4, 3);
+  d.step(s2[0] + 1.6, s2[1] - 1.6, 4);
+  d.text(3.0, 10.4, 'facing this way ←  travelling →', { size: 0.42, anchor: 'start' });
+  d.travel(13, 10.2, 19, 10.2);
   return d.svg();
 })();
 
@@ -287,12 +329,12 @@ export default [
       trains: 'Opening the hips so you can move across the ice while still facing the play, the way a defenceman turns to follow an attacker.',
       steps: [
         'Turn both feet out heel-to-heel: right toe pointing where you are going, left toe pointing back, heels in line and knees bent.',
-        'Glide across towards one side of the lane with your weight over the right foot.',
-        'At the side, turn your hips over and switch so the left foot now points the way you go.',
-        'Glide back across to the other side, and keep switching all the way down the ice.',
+        'Glide on a curve across towards one side of the lane, weight over the right foot. Let both edges carry you round.',
+        'At the side, pivot on your leading right foot: turn on it so you end in the mohawk with the left leg leading.',
+        'Curve back across to the other side, pivot on the left foot, and keep going all the way down the ice.',
       ],
       mistake: 'Stiff, straight legs: without bent knees the hips cannot open and the heels drift apart.',
-      check: 'I read "mohawk" the way hockey coaches mostly use it: the open-hip, heel-to-heel position (toes pointing opposite ways), and "side to side" as zig-zagging across a lane, switching the lead foot each time. I am not certain how the owner\'s version switches feet at each side; I drew a carved switch. A common alternative meaning is the figure-skating mohawk: a turn from forwards on one foot to backwards on the other, done alternately to the left and right as you go down the ice. If that is the drill, the diagram needs redrawing.',
+      check: 'Redrawn to your description: each glide in the mohawk is a curved arc, and at each side you pivot on the leading foot into the mohawk with the other leg leading. I drew both blades on their outside edges through the curve. Say if you meant the inside edges.',
     },
   },
   {
@@ -304,12 +346,12 @@ export default [
       trains: 'Quick, balanced hip turns with fast feet, so you can change direction while still facing the play.',
       steps: [
         'Set up heel-to-heel as in the plain mohawk, right foot leading.',
-        'Glide across towards one side of the lane.',
+        'Glide on a curve across towards one side of the lane.',
         'At the side, take two quick steps: the left foot steps round to point the new way, then the right foot steps in behind it, heel to heel.',
-        'Glide back across with the left foot leading, and step again at the other side.',
+        'Curve back across with the left foot leading, and step again at the other side.',
       ],
       mistake: 'Big, slow steps that open the feet wide apart instead of quick, small steps that keep the heels close.',
-      check: 'Drawn as two quick steps at each side, both feet staying on the ice. Same "mohawk" question as the plain drill above.',
+      check: 'Glides now drawn as curved arcs, like the plain mohawk. The switch is still two quick steps at each side, both feet staying on the ice, since that is what makes it stepping.',
     },
   },
   {
@@ -337,31 +379,32 @@ export default [
     card: {
       trains: 'Going from standing side-on to full speed sideways, as when you react to a puck that goes past you.',
       steps: [
-        'Stand side-on to where you want to go, knees bent.',
-        'Turn your lead foot (here the right) to point where you are going, and turn your shoulders with it.',
-        'Cross the back foot over in front while the lead foot pushes hard under your body on its outside edge.',
-        'Drive away with short, fast strides. Repeat starting the other way.',
+        'Stand side-on to where you want to go, knees well bent, weight on the balls of your feet.',
+        'Turn your head, shoulders and hips the way you want to go, and fall over your lead foot (here the right).',
+        'Cross your left foot over in front while the right foot pushes hard under your body on its outside edge.',
+        'Come out of it with a few short, quick running strides on your toes, feet turned out in a V. Stay low, then lengthen your strides.',
+        'Repeat starting the other way.',
       ],
-      mistake: 'Standing up as you turn, so the crossunder push goes into the air instead of the ice.',
-      check: '',
+      mistake: 'Standing up as you turn, so the push goes into the air instead of the ice.',
+      check: 'Redrawn after checking coaching sources: the IIHF coaching page, the Hockey Canada skills glossary and Ice Hockey Systems drill notes. They agree on a side-on start, head and shoulders turning first, one crossover, then a few quick running strides before full strides. One source has you open the lead toe to point the way as you go; I have not drawn that as a separate step. Say if you teach it that way.',
     },
   },
   {
     id: 'forward-crossover-steps-stop',
     group: G.two,
-    title: 'Forwards cross over 2 steps & stop, sideways (toe down first)',
+    title: 'Forwards cross over 2 steps & stop, diagonal (toe down first)',
     svg: fwdX,
     card: {
       trains: 'Crossover confidence: it can be done very slowly, so you learn to put the crossing foot down and push under before you need to do it at speed.',
       steps: [
-        'Stand facing one way, knees bent. You will move sideways, not forwards.',
-        'Moving to your right, cross the left foot over in front of the right, then step the right foot out from behind.',
-        'Do that twice, then stop sideways on the inside edge of the right (leading) foot.',
-        'Now go back to the left: cross the right foot over in front of the left, twice.',
-        'Stop on the inside edge of the left foot. Keep going back and forth, slowly at first.',
+        'Face up the ice, knees bent. You will zig-zag up the ice, slightly forwards and sideways each way.',
+        'Moving diagonally forwards and to your right, cross the left foot over in front of the right, toe down first, then step the right foot out from behind.',
+        'Do that twice, then stop on the inside edge of the right (leading) foot.',
+        'Now go diagonally forwards and to your left: cross the right foot over in front of the left, twice.',
+        'Stop on the inside edge of the left foot. Keep zig-zagging up the ice, slowly at first.',
       ],
       mistake: 'Rushing it: the drill is worth most done slowly, with each crossing foot placed deliberately.',
-      check: 'In ordinary continuous crossovers you do not stop: you step onto the inside edge and glide before going back the other way (that is the separate "continuous crossovers" drill). "Toe down first" I still read as setting the crossing foot down on the front of the blade first; tell me if it means something else.',
+      check: 'Redrawn to your description: two crossover steps slightly diagonally forwards and sideways, a stop, then two the other way, so the path zig-zags up the ice. "Toe down first" I read as setting the crossing foot down on the front of the blade first; tell me if it means something else.',
     },
   },
   {
@@ -370,14 +413,16 @@ export default [
     title: 'Backwards cross over 2/3 steps & stop',
     svg: bwdX,
     card: {
-      trains: 'Moving backward round a curve with speed and then stopping, the way a defenceman follows a rush and then holds their ground.',
+      trains: 'Moving backwards and sideways with speed and then stopping, the way a defenceman follows a rush and then holds their ground.',
       steps: [
-        'Skate backward on a gentle curve and cross the outside foot over in front of the inside foot.',
-        'Do two or three crossovers, pushing under with the inside foot each time.',
-        'Push both heels out, toes turned in, knees bent, and stop on both feet.',
+        'Skate backwards down the ice, knees bent. You will zig-zag, slightly backwards and sideways each way.',
+        'Moving diagonally backwards and to your right, cross the left foot over in front of the right, then step the right foot out from behind.',
+        'Do that two or three times, then push both heels out, toes turned in, and stop on both feet.',
+        'Now go diagonally backwards and to your left: cross the right foot over in front of the left, two or three times, and stop again.',
+        'Keep zig-zagging down the ice, slowly at first.',
       ],
       mistake: 'Looking down at your feet, which tips you forward onto your toes and kills the crossovers.',
-      check: 'The name does not say which stop. I drew a two-foot backward V-stop (heels pushed out, toes in) to match the "Two-foot edges" group. If the owner means turning into a forward hockey stop, or a one-foot backward stop, the last step changes. The diagram shows the curve to the skater\'s right; repeat the other way. I kept this one as backward crossovers on a curve rather than the sideways back-and-forth of the forward drill, because a sideways version going backwards is the same footwork as the forward one. If you want it sideways too, say so.',
+      check: 'Redrawn to match the forward drill: crossover steps slightly diagonally backwards and sideways, a stop, then the other way, so the path zig-zags down the ice. Two steps are drawn each way; the name allows three. The name does not say which stop. I drew a two-foot backward V-stop (heels pushed out, toes in). If you mean turning into a forward hockey stop, or a one-foot backward stop, the stop changes.',
     },
   },
   {

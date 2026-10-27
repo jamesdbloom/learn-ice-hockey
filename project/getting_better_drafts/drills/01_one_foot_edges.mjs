@@ -1,17 +1,11 @@
-// One-foot edges (DRAFT, 22 Oct 2026, revised after owner feedback the same day).
-// The C-cut drills are drawn on the RIGHT foot, travelling left to right.
+// One-foot edges (DRAFT, 22 Oct 2026; redrawn 26 Oct 2026 after the owner's second review).
+// Every drill travels left to right. Drills 1, 3, 4, 5 and 6 alternate feet, one arc per foot;
+// drill 7 steps backwards along a blue line; the slaloms stay on one foot.
 //
 // Geometry used throughout (screen coords, y down the page):
 //   Forward, facing +x: the skater's LEFT is up the page, RIGHT is down.
 //   Backward, travelling +x but facing -x (toe points against travel): the skater's LEFT is DOWN the page.
 //   The path always bends towards the side the blade leans to: the inside edge of the right foot = its left side.
-//
-// A one-foot C-cut: the skating foot carves out to one side and back under the body, so its track bulges
-// to one side and CURVES BACK towards the other. The side it curves back towards is the edge:
-//   right foot forward, INSIDE edge : bulges to the skater's right (down), curves back left (up).
-//   right foot forward, OUTSIDE edge: bulges to the skater's left (up), curves back right (down).
-//   right foot backward, INSIDE edge : bulges to the skater's right (UP), curves back left (down).
-//   right foot backward, OUTSIDE edge: bulges to the skater's left (DOWN), curves back right (up).
 import { diagram, COL, PX } from '../lib/draw.mjs';
 
 const f = (n) => Math.round(n * PX * 10) / 10;
@@ -38,61 +32,6 @@ function hand(d, x, y, label = 'hand touches ice', below = false) {
       return `<circle cx="${f(x + Math.cos(rad) * 0.42)}" cy="${f(y + Math.sin(rad) * 0.42)}" r="${f(0.09)}" fill="${COL.muted}" fill-opacity="0.75"/>`;
     }).join(''));
   d.text(x, below ? y + 0.95 : y - 0.7, label, { size: 0.44 });
-}
-
-// The boards, drawn along the top of the patch.
-function boards(d, y = 0.55) {
-  d.raw(`<rect x="${f(0.3)}" y="${f(y - 0.22)}" width="${f(d.w - 0.6)}" height="${f(0.44)}" rx="4" fill="#d9cdb8" stroke="#8a7a5e" stroke-width="2"/>`);
-  d.text(d.w / 2, y + 0.15, 'BOARDS', { size: 0.36, color: '#5e5038', weight: 700 });
-}
-
-// ---------------------------------------------------------------- One-foot C-cuts (continuous)
-// side: +1 = bulge DOWN the page, -1 = bulge UP. Three consecutive Cs on the right foot.
-function cCuts({ title, desc, edge, backward, free = '', touch = false }) {
-  const s = (edge === 'IN') !== backward ? 1 : -1;
-  const d = diagram({ title, desc });
-  const cy = s > 0 ? 3.0 : 7.4;      // the line the cusps sit on
-  const B = 3.6;                      // bulge depth control (actual depth ~2.7 ft)
-  const L = 5.6;
-  const xs = [2.0, 7.6, 13.2];
-  const Cs = xs.map((x0) => [[x0, cy], [x0 + 0.02 * L, cy + s * B], [x0 + 0.98 * L, cy + s * B], [x0 + L, cy]]);
-  let path = `M ${xs[0]} ${cy}`;
-  Cs.forEach((P) => { path += ` C ${r3(P[1][0])} ${r3(P[1][1])} ${r3(P[2][0])} ${r3(P[2][1])} ${r3(P[3][0])} ${r3(P[3][1])}`; });
-  path += ` C ${r3(18.8 + 0.6)} ${r3(cy + s * 0.9)} 20.4 ${r3(cy + s * 1.0)} 21.0 ${r3(cy + s * 1.0)}`;
-  d.track(path, 'R');
-  const skateAng = (a) => (backward ? a + 180 : a);
-  const facingSide = backward ? 180 : 0; // the way the skater faces, as a screen angle
-  Cs.forEach((P, i) => {
-    const k = bez(P, 0.5);
-    d.skate(k.x, k.y, skateAng(k.ang), 'R');
-    // Free foot, lifted, held off the skating foot towards the inside of the C.
-    let q = off(k, -s * 90, 1.0);
-    if (free === 'front') q = off(off(k, facingSide, 1.7), -s * 90, 0.7);
-    if (free === 'behind') q = off(off(k, facingSide + 180, 1.7), -s * 90, 0.7);
-    d.skate(q.x, q.y, skateAng(k.ang), 'L', { lifted: true });
-    const tagP = off(k, s * 90, 0.95);
-    d.tag(tagP.x, tagP.y, edge, 'R');
-    if (i === 0) d.step(k.x, k.y + s * 1.9, 2);
-  });
-  // Step 1 at the start, step 3 at the cusp where the next C starts.
-  d.step(1.1, cy - s * 0.3, 1);
-  d.step(xs[1], cy - s * 0.8, 3);
-  d.text(xs[1], cy - s * 1.65, 'straight into the next C', { size: 0.42 });
-  if (touch) {
-    const k = bez(Cs[1], 0.5);
-    const hp = off(k, -s * 90, 2.0);
-    hand(d, hp.x, hp.y, 'hand touches ice', s < 0);
-  }
-  if (free) {
-    const k = bez(Cs[2], 0.5);
-    const q = off(off(k, free === 'front' ? facingSide : facingSide + 180, 1.7), -s * 90, 0.7);
-    d.text(k.x, k.y + s * 1.85, free === 'front' ? 'free foot in front' : 'free foot behind', { size: 0.42, color: COL.L, weight: 600 });
-  }
-  d.text(11, s > 0 ? 9.0 : 2.0, 'one foot the whole way: push hard, keep going', { size: 0.42 });
-  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
-  d.travel(4, 10, 11, 10);
-  d.text(21.3, 0.95, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });
-  return d.svg();
 }
 
 // ---------------------------------------------------------------- Outside edge (a): small step-overs
@@ -162,59 +101,136 @@ const leanGlide = (() => {
   return d.svg();
 })();
 
-// ---------------------------------------------------------------- Outside edge (c): big sharp C, full step-over
-// Boards along the top. Right foot, OUTSIDE edge, so every C turns to the skater's right (clockwise on screen).
-// Each C starts heading towards the boards and turns all the way round until it is heading towards the boards
-// again; the left foot then steps right over in front and the right foot is set down for the next C.
-// Traced as a looped cycloid: x = k t + r sin t, y = yc - r cos t. Heading is up-towards-the-boards at t = 3π/2.
-const sharpC = (() => {
-  const d = diagram({
-    title: 'Outside edge, big sharp C with full step-over',
-    desc: 'Boards along the top. Start facing the boards. On the right outside edge, carve a big, sharp C that turns you away from the boards and all the way round until you face the boards again. Step the left foot right over in front, set the right foot down, and carve the next C. Repeat on the left foot going the other way.',
-    h: 12,
+// ---------------------------------------------------------------- Outside edge: sharp Cs with a full crossover
+// Like the lean-and-glide arcs, but each new foot CROSSES OVER in front of the old one before it lands. The
+// crossover lets each C turn further, so every arc is a tighter, sharper C than the lean-and-glide arcs.
+// Each C ends heading slightly back on itself; the crossing foot lands on the far side of the old track.
+//   Forward (facing +x, skater's left = up): right outside edge curves right (an arch bulging up),
+//     left outside edge curves left (a dip bulging down).
+//   Backward (facing -x, skater's left = down): right outside edge curves to the skater's right = up the page
+//     (a dip bulging down), left outside edge curves down (an arch bulging up). "In front" is the side the
+//     skater faces, i.e. back along the line of travel, so the geometry is the forward one mirrored top to bottom.
+function sharpCs({ title, desc, backward = false }) {
+  const d = diagram({ title, desc });
+  const cy = 5.5, H = 3.4, L = 5.0, over = 0.6, cross = 0.6;
+  const sR = backward ? 1 : -1; // the right foot's bulge
+  let x0 = 2.0;
+  const arcs = [0, 1, 2].map((i) => {
+    const s = i % 2 === 0 ? sR : -sR;
+    const P = [[x0, cy], [x0 - over, cy + s * H], [x0 + L + over, cy + s * H], [x0 + L, cy]];
+    x0 = x0 + L - cross; // the next foot lands across, on the far side of the old foot's end
+    return { P, foot: i % 2 === 0 ? 'R' : 'L', s };
   });
-  boards(d);
-  const k = 0.75, rr = 2.7, yc = 4.5, x0 = 1.6 + 0.75 * Math.PI / 2 + 2.7;
-  const pt = (t) => ({ x: x0 + k * t + rr * Math.sin(t), y: yc - rr * Math.cos(t) });
-  const head = (t) => (Math.atan2(rr * Math.sin(t), k + rr * Math.cos(t)) * 180) / Math.PI;
-  const trace = (t0, t1, n = 48) => {
-    let s = '';
-    for (let i = 0; i <= n; i++) {
-      const p = pt(t0 + ((t1 - t0) * i) / n);
-      s += `${i === 0 ? 'M' : 'L'} ${r3(p.x)} ${r3(p.y)} `;
-    }
-    return s.trim();
-  };
-  const TAU = 2 * Math.PI, gap = 0.45;
-  const starts = [-Math.PI / 2, 1.5 * Math.PI, 3.5 * Math.PI]; // facing the boards
-  starts.forEach((t0, i) => {
-    const a = t0 + (i === 0 ? 0 : gap), b = t0 + TAU - gap;
-    d.track(trace(a, b), 'R', { width: 3 });
-    // Skate at the start (facing the boards) and mid-turn (facing away).
-    const ps = pt(a + 0.05);
-    d.skate(ps.x, ps.y, head(a + 0.05), 'R', { len: 1.4 });
-    const pm = pt(t0 + Math.PI);
-    d.skate(pm.x, pm.y, head(t0 + Math.PI), 'R', { len: 1.4 });
-    if (i === 1) d.tag(pm.x, pm.y - 1.0, 'OUT', 'R');
-    // Step-over by the left foot between Cs.
+  const skateAng = (a) => (backward ? a + 180 : a);
+  arcs.forEach(({ P, foot, s }, i) => {
+    d.track(`M ${r3(P[0][0])} ${r3(P[0][1])} C ${r3(P[1][0])} ${r3(P[1][1])} ${r3(P[2][0])} ${r3(P[2][1])} ${r3(P[3][0])} ${r3(P[3][1])}`, foot);
+    const k = bez(P, 0.5);
+    d.skate(k.x, k.y, skateAng(k.ang), foot);
+    const other = foot === 'R' ? 'L' : 'R';
+    // The lifted foot beside the skating foot, outside the curve.
+    d.skate(k.x - 0.5, k.y + s * 0.9, skateAng(k.ang), other, { lifted: true });
+    d.tag(k.x, k.y - s * 1.3, 'OUT', foot);
+    d.step(k.x + 1.8, k.y + s * 0.1, i + 1);
+    // The crossover: the other foot, lifted, goes over in front of this foot and lands across it.
     if (i < 2) {
-      const e = pt(b), n = pt(t0 + TAU + gap);
-      d.track(`M ${r3(e.x - 0.25)} ${r3(e.y + 0.1)} L ${r3(n.x - 0.15)} ${r3(n.y + 0.35)}`, 'L', { width: 2.6 });
+      const E = P[3], nx = arcs[i + 1].P[0][0];
+      const lift = { x: E[0] + 1.45, y: cy + s * 0.9 };
+      d.skate(lift.x, lift.y, skateAng(0), other, { lifted: true, len: 1.1 });
+      d.track(`M ${r3(lift.x - 0.7)} ${r3(lift.y - s * 0.2)} Q ${r3(E[0] + 0.1)} ${r3(cy - s * 1.3)} ${r3(nx - 0.05)} ${r3(cy - s * 0.1)}`, other, { air: true, width: 2.6 });
     }
   });
-  const p1 = pt(starts[0]);
-  d.step(p1.x - 1.0, p1.y + 0.4, 1);
-  d.text(p1.x + 0.1, p1.y + 1.5, 'start facing the boards', { size: 0.4, anchor: 'start' });
-  const pm0 = pt(starts[0] + Math.PI);
-  d.step(pm0.x + 1.0, pm0.y - 0.6, 2);
-  d.text(pm0.x + 0.6, pm0.y + 1.2, 'facing away', { size: 0.4, anchor: 'start' });
-  const e0 = pt(starts[0] + TAU - gap);
-  d.step(e0.x - 1.0, e0.y - 0.9, 3);
-  d.text(e0.x - 0.6, yc + 4.1, 'facing the boards again: left foot steps right over', { size: 0.42, color: COL.L, weight: 600, anchor: 'start' });
-  d.travel(4, 11, 11, 11);
-  d.text(21.3, 11.3, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });
+  const E0 = arcs[0].P[3], sy = -sR; // label on the side away from the first arc's bulge
+  d.text(E0[0] - 1.0, cy + sy * (backward ? 3.5 : 2.9), 'left foot crosses', { size: 0.42, color: COL.L, weight: 600, anchor: 'end' });
+  d.text(E0[0] - 1.0, cy + sy * (backward ? 2.9 : 3.5), 'right over in front', { size: 0.42, color: COL.L, weight: 600, anchor: 'end' });
+  d.text(18.6, 9.0, 'every new foot crosses over', { size: 0.42 });
+  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  d.travel(4, 10, 11, 10);
+  return d.svg();
+}
+
+const sharpC = sharpCs({
+  title: 'Outside edge, sharp Cs with a full crossover',
+  desc: 'Sharp C shapes down the ice, alternating feet. Carve a sharp C on the right outside edge, curving right. At the end, lift the left foot right over in front of the right and land it on its outside edge, carving a sharp C to the left. Keep alternating, crossing over every time.',
+});
+
+// ---------------------------------------------------------------- Outside edge: stepping backwards along a blue line
+// No C shapes. Skating backwards (travelling +x, facing -x, skater's left = DOWN the page), small alternating
+// steps. Each step puts the stepping foot BEHIND (further along the line of travel) and ACROSS the blue line to
+// the far side, so the right foot always lands on the skater's left of the line (down) and the left foot on the
+// skater's right (up). Crossing the line is what forces the blade onto its outside edge.
+const blueLineSteps = (() => {
+  const d = diagram({
+    title: 'Outside edge, stepping backwards along a blue line',
+    desc: 'Skating backwards to the right, facing left, straight down a blue line. Small alternating steps, no C shapes. Each step puts the stepping foot behind you and across the line: the right foot lands on your left of the line and the left foot on your right, each on its outside edge.',
+  });
+  const cy = 5.2, gap = 1.05, dx = 2.6;
+  // Blue line, 1 ft wide, in the rink kit's blue.
+  d.raw(`<rect x="${f(0.4)}" y="${f(cy - 0.5)}" width="${f(d.w - 0.8)}" height="${f(1.0)}" fill="#0f5a8f" fill-opacity="0.35"/>`);
+  d.text(0.9, cy - 0.7, 'blue line', { size: 0.4, anchor: 'start', color: '#0f5a8f', weight: 600 });
+  const steps = [0, 1, 2, 3, 4, 5].map((i) => {
+    const foot = i % 2 === 0 ? 'R' : 'L';
+    return { foot, x: 3.2 + i * dx, y: foot === 'R' ? cy + gap : cy - gap };
+  });
+  steps.forEach(({ foot, x, y }, i) => {
+    // A short glide on the outside edge after landing: toe points back against travel.
+    const side = foot === 'R' ? 1 : -1; // R below the line, L above
+    d.track(`M ${r3(x + 0.6)} ${r3(y)} Q ${r3(x + 1.2)} ${r3(y + side * 0.05)} ${r3(x + 1.6)} ${r3(y + side * 0.2)}`, foot, { width: 2.6 });
+    d.skate(x, y, 180, foot, { len: 1.3 });
+    if (i < 4) d.tag(x, y + side * 0.8, 'OUT', foot);
+    // The step: from its last spot, behind the other foot, across to its own landing.
+    if (i >= 2 && i <= 3) {
+      const prev = steps[i - 2];
+      d.track(`M ${r3(prev.x + 0.9)} ${r3(prev.y - side * 0.15)} Q ${r3((prev.x + x) / 2 + 0.4)} ${r3(y + side * 1.4)} ${r3(x - 0.75)} ${r3(y + side * 0.15)}`, foot, { air: true, width: 2.4 });
+    }
+  });
+  d.step(steps[0].x - 0.2, cy + gap + 1.9, 1);
+  d.step(steps[1].x - 0.2, cy - gap - 1.9, 2);
+  d.step(steps[2].x - 0.2, cy + gap + 1.9, 3);
+  d.text(steps[4].x, cy + gap + 1.9, 'right foot lands on your left of the line', { size: 0.42, color: COL.R, weight: 600 });
+  d.text(steps[3].x, cy - gap - 1.9, 'left foot lands on your right of the line', { size: 0.42, color: COL.L, weight: 600 });
+  d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  d.travel(4, 10, 11, 10);
   return d.svg();
 })();
+
+// ---------------------------------------------------------------- Inside edge: big alternating arcs
+// Feet alternate, no crossing, one big arc per foot on its INSIDE edge. Same serpentine as the lean-and-glide
+// arcs, but the feet are swapped: the inside edge of a foot curves towards the OTHER foot's side.
+//   Forward (facing +x, skater's left = up): right inside edge curves left (a dip bulging down),
+//     left inside edge curves right (an arch bulging up).
+//   Backward (facing -x, skater's left = down): right inside edge curves to the skater's left = down the page
+//     (an arch bulging up), left inside edge curves up (a dip bulging down).
+// On an inside edge the lifted foot and the touching hand are both on the inside of the curve.
+function insideArcs({ title, desc, backward }) {
+  const d = diagram({ title, desc });
+  const cy = 5.5, A = 2.2, L = 6.2;
+  const sR = backward ? -1 : 1; // the right foot's bulge
+  const arcs = [0, 1, 2].map((i) => {
+    const x0 = 1.5 + i * L, s = i % 2 === 0 ? sR : -sR;
+    return { P: [[x0, cy], [x0 + 0.25 * L, cy + s * A * 1.33], [x0 + 0.75 * L, cy + s * A * 1.33], [x0 + L, cy]], foot: i % 2 === 0 ? 'R' : 'L', s };
+  });
+  const skateAng = (a) => (backward ? a + 180 : a);
+  arcs.forEach(({ P, foot, s }, i) => {
+    const gap = i === 0 ? 0 : 0.35; // a tiny gap where the new foot is set down beside the old
+    const Q = [[P[0][0] + gap, P[0][1] + s * 0.25], P[1], P[2], P[3]];
+    d.track(`M ${r3(Q[0][0])} ${r3(Q[0][1])} C ${r3(Q[1][0])} ${r3(Q[1][1])} ${r3(Q[2][0])} ${r3(Q[2][1])} ${r3(Q[3][0])} ${r3(Q[3][1])}`, foot);
+    const k = bez(P, 0.5);
+    d.skate(k.x, k.y, skateAng(k.ang), foot);
+    const other = foot === 'R' ? 'L' : 'R';
+    // Lifted foot on the inside of the curve (towards the centre), beside the skating foot.
+    d.skate(k.x - 0.5, k.y - s * 0.9, skateAng(k.ang), other, { lifted: true });
+    d.tag(k.x, k.y + s * 0.95, 'IN', foot);
+    d.step(k.x + 1.8, k.y - s * 0.1, i + 1);
+    if (i === 1) hand(d, k.x + 0.7, k.y - s * 2.0, 'hand touches ice', s < 0);
+  });
+  const sideY = (n) => cy - sR * n; // the side away from the first arc's bulge
+  d.text(arcs[0].P[3][0] - 0.4, sideY(sR > 0 ? 2.6 : 2.0), 'new foot down beside,', { size: 0.42, anchor: 'end' });
+  d.text(arcs[0].P[3][0] - 0.4, sideY(sR > 0 ? 2.0 : 2.6), 'no crossing', { size: 0.42, anchor: 'end' });
+  d.text(18.6, 1.0, 'push hard into every arc', { size: 0.42 });
+  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  d.travel(4, 10, 11, 10);
+  return d.svg();
+}
 
 // ---------------------------------------------------------------- One-foot slalom, four ways
 // Weave on ONE foot past a line of markers. Passing ABOVE a marker the path bends DOWN the page there.
@@ -273,7 +289,6 @@ function slalom(foot, backward) {
 }
 
 const G = 'One-foot edges';
-const CONT = 'Keep it continuous: one C runs straight into the next, as hard and as confidently as you can, all the way down the ice.';
 
 const slalomCard = (foot, backward) => {
   const fw = foot === 'R' ? 'right' : 'left';
@@ -304,21 +319,21 @@ export default [
     id: 'one-foot-inside-edge-forward',
     group: G,
     title: 'Inside edge forward (strong push & touch the ice)',
-    svg: cCuts({
-      title: 'Inside edge forward, one-foot C-cuts',
-      desc: 'Skating forwards to the right on the right foot only, left foot lifted. The right skate carves a series of C shapes: out to the skater\'s right on the inside edge and curving back under the body, then straight into the next C. A hand touches the ice on the inside of a C.',
-      edge: 'IN', backward: false, touch: true,
+    svg: insideArcs({
+      title: 'Inside edge forward, big alternating arcs',
+      desc: 'Big arcs down the ice, alternating feet. Push hard onto the right inside edge and carve a big arc to your left. Set the left foot down beside it (no crossing) and carve a big arc to your right on its inside edge. Bend low enough to touch the ice with a hand on the inside of the arc.',
+      backward: false,
     }),
     card: {
       trains: 'Grip and power on the inside edge, the edge every stride, crossover and tight turn pushes from.',
       steps: [
-        'Glide on your right foot, left foot lifted, knee well bent.',
-        'Push the right skate out to the side on its inside edge, hard, carving the shape of a C.',
-        'Curve it back under your body and go straight into the next C. Bend low enough to touch the ice with a hand. ' + CONT + '',
-        'Repeat on the other foot: work both feet equally.',
+        'Push hard onto your right foot and glide on its inside edge, so you carve a big arc to your left.',
+        'At the end of the arc, set your left foot down beside the right (do not cross). Carve a big arc to your right on its inside edge.',
+        'Keep switching feet. Push hard into every arc.',
+        'Bend your knees low enough to touch the ice with a hand on the inside of the arc.',
       ],
-      mistake: 'Making small, timid Cs on a flat blade, so the skate skids instead of biting and you hardly move.',
-      check: '"Touch the floor" read as: bend the skating knee so low that a hand touches the ice beside you, drawn on the inside of the C. Some coaches have the player touch the skating boot instead; confirm which you meant.',
+      mistake: 'Making small, timid arcs on a flat blade, so the skate skids instead of biting and you hardly move.',
+      check: 'Now drawn as alternating inside-edge arcs, one per foot, as you asked. "Touch the ice" is drawn as a hand on the inside of the arc. Some coaches have you touch the skating boot instead; confirm which you meant.',
     },
   },
   {
@@ -361,75 +376,70 @@ export default [
     card: {
       trains: 'A deep, sharp outside edge with a full crossover, the base of a tight, powerful turn.',
       steps: [
-        'Start facing the boards, on your right foot.',
-        'Carve a big, sharp C on the right outside edge, turning away from the boards and all the way round.',
-        'When you face the boards again, step the left foot right over in front, put the right foot back down and carve the next C. Keep it continuous and confident, then do it on the left foot going the other way.',
+        'Carve a sharp C on the outside edge of your right foot, curving to your right.',
+        'At the end of the C, step your left foot right over in front of the right. Land it on its outside edge and carve a sharp C the other way.',
+        'Keep alternating, crossing over every time. Keep it continuous and confident.',
       ],
-      mistake: 'Opening the C up into a wide, lazy curve because the skater does not lean far enough over the edge.',
-      check: 'This was the hardest of the three to draw. A C that starts and ends facing the boards has to turn all the way round, so I drew each C as a near-loop on the right foot, travelling along the boards, with the left foot crossing right over in front between Cs. If you meant the Cs to alternate feet, or each C to turn only half-way (boards to away from the boards), please say and it will be redrawn.',
+      mistake: 'Opening the C up into a wide, lazy curve because you do not lean far enough over the edge.',
+      check: 'Now drawn as alternating sharp Cs with a full crossover between them, as you asked.',
     },
   },
   {
     id: 'one-foot-inside-edge-backward',
     group: G,
     title: 'Inside edge backwards (strong push & touch the ice)',
-    svg: cCuts({
-      title: 'Inside edge backwards, one-foot C-cuts',
-      desc: 'Skating backwards to the right, facing left, on the right foot only. The right skate carves a series of C shapes on the inside edge: heel out to the skater\'s right and curving back under the body, then straight into the next C. A hand touches the ice on the inside of a C.',
-      edge: 'IN', backward: true, touch: true,
+    svg: insideArcs({
+      title: 'Inside edge backwards, big alternating arcs',
+      desc: 'Skating backwards to the right, facing left. Big arcs, alternating feet. Push hard onto the right inside edge and carve a big arc to your left. Set the left foot down beside it (no crossing) and carve a big arc to your right on its inside edge. Bend low enough to touch the ice with a hand on the inside of the arc.',
+      backward: true,
     }),
     card: {
       trains: 'Power on the backward inside edge, the push a defenceman uses to skate backwards.',
       steps: [
-        'Skating backwards on your right foot, left foot lifted, knees well bent.',
-        'Push the heel out on the inside edge, hard, carving the shape of a C.',
-        'Pull it back under your body and go straight into the next C. Bend low enough to touch the ice with a hand. ' + CONT + '',
-        'Repeat on the other foot: work both feet equally.',
+        'Skating backwards, push hard onto your right foot and glide on its inside edge, so you carve a big arc to your left.',
+        'At the end of the arc, set your left foot down beside the right (do not cross). Carve a big arc to your right on its inside edge.',
+        'Keep switching feet. Push hard into every arc.',
+        'Bend your knees low enough to touch the ice with a hand on the inside of the arc.',
       ],
-      mistake: 'Leaning forward over the toes, so the blade rocks off the edge and the skater stalls.',
-      check: '"Touch the floor" read the same way as the forward drill: bend until a hand touches the ice on the inside of the C.',
+      mistake: 'Leaning forward over the toes, so the blade rocks off the edge and you stall.',
+      check: 'Now drawn as alternating inside-edge arcs, the backward version of the forward drill, as you asked. "Touch the ice" is read the same way as the forward drill: a hand on the inside of the arc.',
     },
   },
   {
     id: 'one-foot-outside-edge-backward-free-front',
     group: G,
     title: 'Outside edge backwards, free foot in front',
-    svg: cCuts({
-      title: 'Outside edge backwards, one-foot C-cuts, free foot in front',
-      desc: 'Skating backwards to the right, facing left, on the right foot only. The right skate carves a series of C shapes on the outside edge, bulging to the skater\'s left and curving back to their right. The lifted left foot is held in front, the way the skater faces.',
-      edge: 'OUT', backward: true, free: 'front',
+    svg: sharpCs({
+      title: 'Outside edge backwards, alternating Cs with the foot put down in front',
+      desc: 'Skating backwards to the right, facing left. Alternating feet, each carving a C on its outside edge. At the end of each C, the other foot crosses over in front of it, on the side you face, and lands on its outside edge to carve the next C the other way.',
+      backward: true,
     }),
     card: {
       trains: 'Balance and power on the backward outside edge, which backward crossovers and pivots depend on.',
       steps: [
-        'Skating backwards on your right foot, left foot lifted and held in front of you.',
-        'Carve a C on the outside edge of the right skate, out to your left and curving back to your right.',
-        'Go straight into the next C. ' + CONT + '',
-        'Repeat on the other foot: work both feet equally.',
+        'Skating backwards, carve a C on the outside edge of your right foot, curving to your right.',
+        'At the end of the C, put your left foot down in front of the right, crossing over. Land it on its outside edge and carve a C the other way.',
+        'Keep alternating, crossing in front every time. Keep it continuous and confident.',
       ],
       mistake: 'Looking down at the skates, which pitches the weight forward and flattens the blade.',
-      check: 'Your feedback described the three forward outside-edge versions; I assumed the backward outside-edge drills stay as one-foot C-cuts, done continuously. "In front" read as the free foot held ahead of the body in the direction the skater FACES.',
+      check: 'Now drawn as alternating feet, each carving a C on its outside edge, with the new foot put down in front of the other, as you asked. "In front" is read as the side you face, so the feet cross in front. This makes it the backward version of the sharp-C drill.',
     },
   },
   {
     id: 'one-foot-outside-edge-backward-free-behind',
     group: G,
-    title: 'Outside edge backwards, free foot behind',
-    svg: cCuts({
-      title: 'Outside edge backwards, one-foot C-cuts, free foot behind',
-      desc: 'Skating backwards to the right, facing left, on the right foot only. The right skate carves a series of C shapes on the outside edge, bulging to the skater\'s left and curving back to their right. The lifted left foot is held behind, towards where the skater is going.',
-      edge: 'OUT', backward: true, free: 'behind',
-    }),
+    title: 'Outside edge stepping backwards (along a blue line)',
+    svg: blueLineSteps,
     card: {
-      trains: 'Balance on the backward outside edge with the weight further back, as when looking over the shoulder to skate backwards.',
+      trains: 'Finding the backward outside edge on every step, the edge a backward crossover lands on.',
       steps: [
-        'Skating backwards on your right foot, left foot lifted and held behind you, towards where you are going.',
-        'Carve a C on the outside edge of the right skate, out to your left and curving back to your right.',
-        'Go straight into the next C. ' + CONT + '',
-        'Repeat on the other foot: work both feet equally.',
+        'Stand on a blue line, facing back up it, and skate backwards down the line.',
+        'Step your right foot behind you and across the line, so it lands on your left of the line, on its outside edge.',
+        'Step your left foot behind you and across to your right of the line, on its outside edge.',
+        'Keep alternating with small steps. No C shapes: just walk backwards down the line.',
       ],
-      mistake: 'Sitting back on the heel so far that the blade slips out; keep the weight over the middle of the blade.',
-      check: 'As for the "free foot in front" version, I assumed this stays a one-foot C-cut drill. "Behind" read as the free foot held behind the body, on the side the skater is travelling towards.',
+      mistake: 'Putting the foot down on your own side of the line, so it lands flat or on its inside edge.',
+      check: 'Redrawn to your description: stepping backwards down a blue line, no C shapes. My reading is that each foot crosses the line, so the right foot lands on your left of the line and the left foot on your right, each on its outside edge. If you meant each foot stays on its own side of the line, please say and it will be redrawn.',
     },
   },
   ...[['R', false], ['L', false], ['R', true], ['L', true]].map(([foot, backward]) => ({

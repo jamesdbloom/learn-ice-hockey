@@ -68,6 +68,18 @@ extraction traps, and there are several that have manufactured false findings.
 | `huh_layout.txt` | The same book, `-layout`. Use only to check a table; **the spinal-injury passage is unrecoverable in it** |
 | `iihf_coachdev_off_tactics.txt` | IIHF coach-development offensive tactics — **coaching material, not a rulebook. Never cite it as a rule** |
 | `heo_intl_drill_symbols.txt` | International drill symbols — **notation, not a rulebook.** ⚠️ **The PDF is image-only and this extraction is 30 bytes of nothing.** Read the PDF; do not grep the text file and conclude a symbol is absent |
+| `eih_dops_2026-27.txt` | **IHUK/EIH DOPS Rules and Procedures 2026-2027**, 23pp, in force from 1 September 2026. Jurisdiction (§5): IHUK-registered participants whose club is based in **England or Wales**; Scotland and Northern Ireland *"will be subject their own discipline policies"*. The likely *"Discipline Policy"* behind the English half of In-House Rule 28. **Discipline procedure, not playing rules.** ⚠️ It is **not** the EIHL DOPS, which publishes no rules document |
+| `eih_dops_2026-27_layout.txt` | `-layout` twin of `eih_dops_2026-27.txt` |
+| `ihuk_club_regs_2026-27.txt` | **IHUK Club Committee, Team Managers, Bench Support & Off-Ice Officials Regulations 2026-2027**, 12pp. Real text layer, greps honestly. Settles DBS for team managers: **Required** for Team Manager, Assistant and Advanced Manager with **no U18 condition** (stricter than the EIH Manage web page). Lists a Designated Safeguarding Lead as a committee role but has **no** "must have a DSL if under-18s" affiliation criterion. **Club administration, not playing rules** |
+| `ihuk_club_regs_2026-27_layout.txt` | `-layout` twin of `ihuk_club_regs_2026-27.txt`, kept for the role table |
+| `ihuk_sex_gender_policy.txt` | **"The Sex & Gender Participation Policy for Ice Hockey in the UK"**, 9pp, approved by IHUK, EIH, SIH and the EIHL together. ⚠️ **The body carries no version or date** (PDF created 7 March 2025). §10.1: U11 and below mixed; U12–U18 play in the category of their birth sex, with routes for transgender and non-binary players; the female category is birth-sex female. ⚠️ **Supersedes EIH R&R 2024-25 R&R 7.2** (*"male netminders U16"* in the WNIHL). **Eligibility policy, not playing rules** |
+| `ihuk_sex_gender_policy_layout.txt` | `-layout` twin of `ihuk_sex_gender_policy.txt` |
+| `eih_code_of_conduct_2026.txt` | **England Ice Hockey Code of Conduct and Ethics**, PDF created 12 June 2026. Replaces the R&R 2024-25 conduct and safeguarding clauses. §5 (parents) gives the right to *"[k]now who your club's Designated Safeguarding Lead is and how to contact them"*. **Conduct code, not playing rules** |
+| `eih_web_play_2026-10-22.txt` | England Ice Hockey **web page** (`englandicehockey.com/<page>/`), fetched 22 October 2026, tags stripped. ⚠️ **Its age table is labelled 2023/2024, so the page may predate the 30 June 2026 merger.** A web page, never a rule source |
+| `eih_web_clubs_2026-10-22.txt` | England Ice Hockey **web page** (`englandicehockey.com/<page>/`), fetched 22 October 2026, tags stripped. Never a rule source |
+| `eih_web_gameday_2026-10-22.txt` | England Ice Hockey **web page** (`englandicehockey.com/<page>/`), fetched 22 October 2026, tags stripped. Never a rule source |
+| `eih_web_manage_2026-10-22.txt` | England Ice Hockey **web page** (`englandicehockey.com/<page>/`), fetched 22 October 2026, tags stripped. ⚠️ Its *"DBS clearance if working with U18s"* is **looser** than `ihuk_club_regs_2026-27.txt`. Never a rule source |
+| `eih_web_get-involved_2026-10-22.txt` | England Ice Hockey **web page** (`englandicehockey.com/<page>/`), fetched 22 October 2026, tags stripped. Never a rule source |
 
 ⚠️ **THIS TABLE HAS NOW BEEN WRONG AT FOUR CONSECUTIVE COUNTS: 14, then 22, then 24, then 26.**
 Each time a verifier caught it, the count was corrected, and **it was stale again by the next
@@ -202,7 +214,7 @@ mandatory for the **coach's own** on-ice PPE; the coach's duty toward **players*
 NOT extended to training by this document** — a searched negative, not a gap. `jewel|earring|piercing|bracelet` scores **0**.
 **The command that answers it honestly, and the only one to trust:**
 `for f in sources/*.txt; do grep -q "$(basename $f)" .claude/agents/rules-verifier.md || echo "$f"; done`
-**If it prints anything OTHER than those five `_layout` twins, the table really is stale.**
+**If it prints ANYTHING, the table really is stale.** ⚠️ The five `_layout` twins named above are now named in this file, so they no longer show up as hits. On 26 October 2026 the command printed twelve filenames, all real omissions.
 
 ⚠️ **So `ls sources/*.txt` returning more rows than this table is EXPECTED, and is not by itself
 evidence the table is stale.** Two agents have reported it stale this round by matching the
