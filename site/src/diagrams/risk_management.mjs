@@ -849,8 +849,8 @@ const XI_TO = { at: 'half-wall:left', dx: 1.2, dy: 7.4 };       // (70.2, -31.1)
 // Their forechecker on the strong side, inside the carrier and below him - the seal that
 // is the reason a cross-ice pass gets considered at all. 11.70 ft off D1, against 4.0 of
 // triangle ink plus 3.275 of circle, and 10.73 ft off the board arc. `seals the wall` is
-// breakouts.mjs's own label for the same job, deliberately: one label, one meaning,
-// across two documents.
+// breakouts.mjs's label for the same job; this diagram shortens it to `seals D1`
+// because the full wording does not fit beside him (see the players list).
 //
 // ⚠️ (87, 22) FIRST, AND THE PASS LEFT THROUGH HIM. The pass line passed 5.07 ft from
 // that anchor only 9 ft along its own run - 1.80 ft past his glyph ink - so the dashes
@@ -980,7 +980,15 @@ const crossIceOwnEnd = {
     { id: 'D1', pos: 'D', at: XI_D1 },
     // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'W2', pos: 'F', at: XI_W2, label: 'the far outlet', labelHint: [-15, -1.5] },
-    { id: 'F1', team: 'opp', pos: 'F', at: XI_F1, label: 'seals the wall' },
+    // labelHint and the SHORTER WORDING, "seals D1": the label sits directly under F1, between
+    // the pass and the boards, with no leader. As "seals the wall" it was too wide for that gap
+    // (no hint was honoured anywhere beside F1), so the placer put it up by the top of the circle
+    // on a long leader that ran past the puck and the start of the pass and read as a second
+    // pass (diagram review, 27 Oct 2026). "the seal" was tried first and rejected: a noun, which
+    // the glossary uses for a goalie's post seal, and it did not say who is sealed. "seals D1"
+    // is a verb, like the caption's "sealed", and names the sealed player. breakouts.mjs keeps
+    // "seals the wall".
+    { id: 'F1', team: 'opp', pos: 'F', at: XI_F1, label: 'seals D1', labelHint: [0.8, -6.5] },
     { id: 'F2', team: 'opp', pos: 'F', at: XI_F2, label: 'in the middle' },
     // labelHint: level with F3, out to the left, with no leader. Placed by the table the label
     // went up into the shaded zone and sat on its dashed left edge, where it read as the

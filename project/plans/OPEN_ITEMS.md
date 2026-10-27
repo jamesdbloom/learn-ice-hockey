@@ -16,11 +16,11 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 - **SG95–SG100: DONE** (a6d7ff5, e6d0749, 899148b, 586a353, 4309ba0). Open carry-overs:
   - In-House Rule 76 and lateness: unclear; the IHUK Rules of Competition are not on disk;
   - the EIHL Casebook on disk may be v1.0 (footer "VERSION 1.0 010826") while uk_rules :682 cites v1.1 (8 Sep). Check sources/README;
-  - diagrams (SG101 c5df861 fixed the circle-huggers, tag overlaps and nudges). Open:
-    - cross-ice-in-your-own-end: the "seals the wall" leader runs past the puck and D1's pass, so it can read as a pass, and the label sits nearer D1 (major);
-    - dz-walk-down-man: tag 2 (W's) sits on the carry line and reads as step 2 of the carry (major);
-    - forecheck-212: tag 1 is clipped by F1's halo; "takes the weak side" sits nearer F3 and nearly stacks with "high, middle" (major);
-    - forecheck-122 tag 2 touches F2; 17 relax warnings remain; about 29 labels sit over faceoff dots.
+  - diagrams (SG101 c5df861; SG102 fixed the three majors: cross-ice-in-your-own-end F1 now "seals D1" with no leader, dz-walk-down-man tag 2 and forecheck-212 tag 1 via badge `along`, which may now pass the midpoint, and "takes the weak side" next to F1). Open:
+    - forecheck-122 tag 2 touches F2's glyph by about 0.67 ft (minor). Retry with `along` past the midpoint, off the far side of the bars;
+    - 16 relax warnings remain; about 29 labels sit over faceoff dots;
+    - cosmetic: the goal line runs through "seals D1", and the circle edge through "takes the weak side" (both broken by the halo);
+    - dz-walk-down-man tag 2 sits about 1.2 ft above "goes with the carrier" (minor).
 - **SG93 and SG94: DONE (ec6d1d6, fe91058).** Carry-overs:
   - DOPS C.1 lists "Boarding"; the corpus says "a boarding major" (uk_rules :413). Is a boarding minor also a C.1 trigger? C.1's triggers come from the owner page, not the C.1 text.
   - The DOPS carriers at defender :496, center :773 and defender :910 omit the under-16 written-warning limb that the owner page carries.

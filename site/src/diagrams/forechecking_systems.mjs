@@ -227,7 +227,10 @@ const forecheck212 = {
     // F3's coordinate is the section's own phrase rather than a guess: the facts
     // block says "roughly the top of the circles", so it is top-of-circle with the
     // sided offset taken back out, i.e. (54, 0).
-    { id: 'F1', pos: 'F', at: F1_AT,                                  label: 'takes the weak side' },
+    // labelHint: level with F1 and to its left, on a short leader. Placed by the table the label
+    // sat by the lower circle's top, nearer F3 than F1 and almost stacked with "high, middle",
+    // on a long leader that followed the circle at its upper end (diagram review, 27 Oct 2026).
+    { id: 'F1', pos: 'F', at: F1_AT,                                  label: 'takes the weak side', labelHint: [-20, -2] },
     { id: 'F2', pos: 'F', at: F2_AT,                                  label: 'takes the option' },
     { id: 'F3', pos: 'F', at: { at: 'top-of-circle:right', dy: -22 }, label: 'high, middle' },
     { id: 'D',  pos: 'D', at: 'point:right',                          label: 'holds the line' },
@@ -252,7 +255,14 @@ const forecheck212 = {
     //     Angling is a long section about movement over time; a still frame cannot
     //     carry it, so this diagram stops asserting it and the caption sends the
     //     reader to the section instead.
-    { from: F1_AT, to: { at: 'behind-net', dx: -3, dy: -5 }, kind: 'skate', bow: -2 },
+    //
+    //     badge: the default tag, at the midpoint on the left of travel, sat on F1's glyph
+    //     and his white halo cut into its box. The midpoint on the right still touched the
+    //     halo and sat on the dashed trapezoid line. 6.5 ft along on the right puts it beside
+    //     the arrowhead, between the goal line and the boards, clear of F1, the net and the
+    //     trapezoid line (diagram review, 27 Oct 2026).
+    { from: F1_AT, to: { at: 'behind-net', dx: -3, dy: -5 }, kind: 'skate', bow: -2,
+      badge: { along: 6.5, side: 'right' } },
     // 2 — the carrier, with the middle taken away, carries out to the strong-side wall.
     // Bowed towards the end boards, so the carrier's route hugs the wall and F1's
     // arrives inside it. Bowed the other way the two curves overlay each other and

@@ -2208,7 +2208,13 @@ export function playSvg(spec, opts = {}) {
           // every tag against the label placer — was built and measured the same day and
           // changed 14 diagrams, five of them for the worse (a label pushed under a
           // neighbour's, a tag moved onto a leader). A route without `badge` is unchanged.
-          const k = Math.min(0.5, (r.badge?.along ?? 9) / len);
+          // ⚠️ AN EXPLICIT `along` MAY PASS THE MIDPOINT, UP TO 0.8 OF THE ROUTE; THE DEFAULT
+          // STILL STOPS AT IT. Added for `forecheck-212`'s route 1, a 9.2 ft route starting on F1:
+          // at the midpoint its tag sat inside F1's halo on either side of travel, so the only
+          // clear spot was further along (diagram review, 27 Oct 2026). `dz-walk-down-man`'s
+          // route 2 (along 14 of 25.1 ft) depends on it too. Every `along` set before this was
+          // below its route's midpoint, so no other diagram moves.
+          const k = Math.min(r.badge?.along != null ? 0.8 : 0.5, (r.badge?.along ?? 9) / len);
           const side = r.badge?.side === 'right' ? -1 : 1;
           const c = at(k);
           // Nudged to the left of travel rather than sitting on the line. Two routes

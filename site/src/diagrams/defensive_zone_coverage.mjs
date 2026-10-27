@@ -732,7 +732,13 @@ const walkDownMan = {
     // Finishes goal-side of where the carry finishes, not on it — he is between
     // his man and the net, which is universal principle 2, and the route does not
     // terminate on anybody's glyph.
-    { from: WD_WINGER, to: { at: 'top-of-circle:right', dx: 4, dy: -6 }, kind: 'skate' },
+    // badge: on the default left of travel, tag 2 sat between this route and the carry, almost
+    // on the carry's wavy line, so it read as a second step of the walk-down. On the right of
+    // travel at the default 9 ft it landed on the leader of "goes with the carrier"; 14 ft
+    // along on the right it sits under this route, clear of the leader and the label
+    // (diagram review, 27 Oct 2026).
+    { from: WD_WINGER, to: { at: 'top-of-circle:right', dx: 4, dy: -6 }, kind: 'skate',
+      badge: { along: 14, side: 'right' } },
   ],
 
   puck: WD_PUCK,
