@@ -210,9 +210,9 @@ const wallReception = {
     // commonest version of this — but the section says only "a teammate", so the
     // caption discloses that the shape was chosen rather than stated.
     { id: 'D', pos: 'D', at: D1_RETRIEVE, label: 'retrieving' },
-    { id: 'R', pos: 'F', at: D1_YOU, label: 'you, receiving' },
+    { id: 'R', pos: 'F', at: D1_YOU, label: 'you, receiving', labelHint: [-4, -14] },
     { id: 'S', pos: 'F', at: D1_SUPPORT, label: 'support, already seen' },
-    { id: 'F', team: 'opp', pos: 'F', at: D1_PRESSURE_FROM, label: 'closing' },
+    { id: 'F', team: 'opp', pos: 'F', at: D1_PRESSURE_FROM, label: 'closing', labelHint: [0, -7.5] },
   ],
 
   routes: [

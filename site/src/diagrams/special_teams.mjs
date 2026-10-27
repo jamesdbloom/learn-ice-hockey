@@ -326,11 +326,11 @@ const ppOverload = {
     { id: 'G', team: 'opp', pos: 'G', at: G_AT },
     // "a player below the goal line" — beside the net, clear of the goal frame,
     // which occupies x 89 to 92.3 and y plus or minus 3.
-    { id: 'F', pos: 'F', at: { at: 'goal-line', dx: 3, dy: 11 },  label: 'below the line' },
+    { id: 'F', pos: 'F', at: { at: 'goal-line', dx: 3, dy: 11 },  label: 'below the line', labelHint: [-15.02, -2.25] },
     // "one in the corner or low circle" — drawn as the corner. The low-circle
     // version put this player directly on the line of the cycle pass beneath him.
     { id: 'F', pos: 'F', at: 'corner:right',                      label: 'the corner' },
-    { id: 'F', pos: 'F', at: 'half-wall:right',                   label: 'half-wall' },
+    { id: 'F', pos: 'F', at: 'half-wall:right',                   label: 'half-wall', labelHint: [-13, 0] },
     { id: 'D', pos: 'D', at: 'point:right',                       label: 'the point' },
     { id: 'F', pos: 'F', at: 'top-of-circle:left',                label: 'release valve' },
   ],
@@ -956,13 +956,13 @@ const pkNz13 = {
 
   players: [
     { id: 'G', pos: 'G', at: G_AT },
-    { id: 'PP', team: 'opp', pos: 'F', at: { at: 'centre-ice', dx: -24, dy: 14 }, label: 'puck carrier' },
+    { id: 'PP', team: 'opp', pos: 'F', at: { at: 'centre-ice', dx: -24, dy: 14 }, label: 'puck carrier', labelHint: [0, 8] },
 
     // "one forward up on the puck" — ahead of the carrier, between him and the
     // three-man line, giving token pressure rather than attacking. Twenty-two feet
     // of daylight between him and the line behind him, because a 1-3 drawn with
     // the 1 and the 3 at the same depth is a 4 across.
-    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: -10, dy: 12 }, label: 'token pressure' },
+    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: -10, dy: 12 }, label: 'token pressure', labelHint: [-1.84, -8.02] },
 
     // "the other forward and both defencemen in a line across the ice behind him".
     // Which of the three takes the middle is not stated by the section; drawn with

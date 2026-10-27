@@ -99,9 +99,9 @@ const supportInALine = {
     'the point of the picture is the shape, not any movement.',
 
   players: [
-    { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier' },
-    { id: 'A1',  pos: 'F', at: WALL_MID,                           label: 'option one' },
-    { id: 'B',  pos: 'F', at: WALL_HIGH,                          label: 'option two' },
+    { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier', labelHint: [0, -7.5] },
+    { id: 'A1',  pos: 'F', at: WALL_MID,                           label: 'option one', labelHint: [-4.31, -7.34] },
+    { id: 'B',  pos: 'F', at: WALL_HIGH,                          label: 'option two', labelHint: [-13, 0] },
     // SOLID CIRCLE = an opposition forward: `pos: 'F'` gives the circle (shape is the
     // position) and `team: 'opp'` gives the solid fill (fill is the team). The id is
     // just a role letter. ⚠️ This read "Open TRIANGLE = opposition", which inverted
@@ -109,7 +109,7 @@ const supportInALine = {
     // legend and reading_ice_hockey_diagrams.md both say in terms that an X is a
     // pylon — a practice cone — and never a player, and X-meaning-opposition is one
     // of the symbols this corpus rewrote its notation specifically to escape.
-    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes' },
+    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes', labelHint: [0, -14.5] },
   ],
 
   // Deliberately no routes. Drawing the two pass lanes would draw two dashed
@@ -819,7 +819,7 @@ const layerNotConverge = {
     'the same boards. No pass is drawn.',
 
   players: [
-    { id: 'D',  pos: 'D', team: 'opp', at: { at: 'corner:right', dx: -4 },              label: 'puck carrier' },
+    { id: 'D',  pos: 'D', team: 'opp', at: { at: 'corner:right', dx: -4 },              label: 'puck carrier', labelHint: [7.41, -9.25] },
     { id: 'W',  pos: 'F', team: 'opp', at: { at: 'top-of-circle:right', dx: -10, dy: 8 }, label: 'the escape option' },
     // THE LABELS SAY THE JOB; THE IDS SAY THE ORDER. They read "first, pressures"
     // and "second, layers", and the "first"/"second" was redundant twice over —

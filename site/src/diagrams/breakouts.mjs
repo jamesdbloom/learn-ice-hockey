@@ -102,7 +102,10 @@ const fiveRoles = {
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
-    { id: 'D1', pos: 'D', at: RETRIEVAL, label: 'retrieves' },
+    // labelHint: HEAD's slot under D1. Without it the pushed placer moved the label out
+    // beside W1, where it read as W1's (27 Oct 2026). Drawn without a leader there: it
+    // clears every other player by the placer's no-leader margin.
+    { id: 'D1', pos: 'D', at: RETRIEVAL, label: 'retrieves', labelHint: [3.5, -8] },
     { id: 'D2', pos: 'D', at: D2_LOW,    label: 'support' },
     { id: 'W1', pos: 'F', at: WALL_SPOT, label: 'the wall' },
     // W2 under the swing breakout is "the second option and the outlet for a
@@ -282,12 +285,15 @@ const wheel = {
 
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
-    { id: 'D1', pos: 'D', at: RETRIEVAL, label: 'carries it' },
+    // labelHint: off the faceoff spot, which sat inside the words (site review, 27 Oct 2026).
+    { id: 'D1', pos: 'D', at: RETRIEVAL, label: 'carries it', labelHint: [13.5, -7.5] },
     // "D2 takes up position in front of the net early." Ten feet out and slightly
     // strong side: far enough off the goaltender's glyph to be separable, and on
     // the side a forechecker cutting across from the right corner has to come past.
     { id: 'D2', pos: 'D', at: { at: 'net-front::far', dx: 5, dy: 3 }, label: 'already there' },
-    { id: 'W2', pos: 'F', at: { at: 'half-wall:left:far', dx: 8 },    label: 'far-side outlet' },
+    // labelHint: up and right of W2 with a leader. The placer's slot sat under C and over a
+    // faceoff spot, so it read as C's (site review, 27 Oct 2026; HEAD had it too).
+    { id: 'W2', pos: 'F', at: { at: 'half-wall:left:far', dx: 8 },    label: 'far-side outlet', labelHint: [18, 7.5] },
     { id: 'C',  pos: 'F', at: { at: 'faceoff-dot:left:far', dx: -5, dy: 6 }, label: 'low support' },
     { id: 'F1', pos: 'F', team: 'opp', at: { at: 'corner:right:far', dx: 6, dy: 2 }, label: 'beaten' },
   ],

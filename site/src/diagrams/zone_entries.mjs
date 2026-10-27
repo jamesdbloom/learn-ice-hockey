@@ -744,7 +744,10 @@ const flipOverTrap = {
     // The 1-3-1 as the section describes it: "one forechecker, three players
     // across the middle and one back". The frozen shape has to be exactly that
     // count at exactly those depths, or it is not the structure it is labelled as.
-    { id: 'F', team: 'opp', pos: 'F', at: TRAP_FORECHECKER, label: 'one forechecker' },
+    // labelHint: under its own F, as at HEAD, nudged 4 ft toward the boards. Straight under
+    // the F the words reach as far as the open F beside it, so the placer's no-leader margin
+    // refuses that slot and the label went up into "no route along the ice" (27 Oct 2026).
+    { id: 'F', team: 'opp', pos: 'F', at: TRAP_FORECHECKER, label: 'one forechecker', labelHint: [-4, -7.5] },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dy: 30 } },            // (0, 30)
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dx: 2 },               // (2, 0)
       label: 'three across the middle' },
@@ -1356,11 +1359,11 @@ const highTriangle = {
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'D', team: 'opp', pos: 'D', at: TRI_D_NEAR, label: 'goes with the wide driver' },
+    { id: 'D', team: 'opp', pos: 'D', at: TRI_D_NEAR, label: 'goes with the wide driver', labelHint: [0, -7.5] },
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 10, dy: -8 } },  // (35, -8)
-    { id: 'F', pos: 'F', at: TRI_CARRIER, label: 'drives wide, has the puck' },
-    { id: 'F', pos: 'F', at: TRI_WIDE, label: 'drives wide, no puck' },
-    { id: 'F', pos: 'F', at: TRI_TRAILER, label: 'trails to the high slot' },
+    { id: 'F', pos: 'F', at: TRI_CARRIER, label: 'drives wide, has the puck', labelHint: [0, -7.5] },
+    { id: 'F', pos: 'F', at: TRI_WIDE, label: 'drives wide, no puck', labelHint: [0, 8] },
+    { id: 'F', pos: 'F', at: TRI_TRAILER, label: 'trails to the high slot', labelHint: [11.03, -15.25] },
   ],
 
   // Not numbered: three players arriving together, the same convention

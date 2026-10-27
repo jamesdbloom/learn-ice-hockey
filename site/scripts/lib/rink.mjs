@@ -132,8 +132,18 @@ const PALETTE = {
  * damage is not linear in the width, it accelerates once the outlines start touching —
  * and at the value this file shipped with, an 11 px hole. Nothing mechanical checks any
  * of that, and every one of those six pictures looks deliberate.
+ *
+ * ⚠️ RAISED 0.12 -> 0.16 ON THE OWNER'S RULING, 26 Oct 2026, AND NO FURTHER. 195 player
+ * labels in 99 diagrams sit across a 1 ft blue line, and at 0.12 a letter stroke lying
+ * along the band's edge — the `t` of "holds the line" in `nz-1-2-2-trap`, the `p` of
+ * "the points" in `pp-2-3` — had too thin a ring to separate it from the blue. Rendered
+ * at 0.12, 0.14, 0.16, 0.18 and 0.20: 0.14 still let the blue run into the `t`'s
+ * crossbar, 0.16 was the first value at which every crossing letter read as outlined.
+ * On a half-sheet label that is 0.45 ft of stroke, which the sweep above measured at 73 of
+ * 75 scanlines of blue surviving against 74 at the old value — inside the range where
+ * the outlines have not started to merge. The warning above stands.
  */
-const LABEL_HALO = 0.12;
+const LABEL_HALO = 0.16;
 // Glyph-box metrics as a fraction of font-size, for stopping a leader line before
 // the words rather than inside them. Approximations for the sans stack above; they
 // only have to be close enough that the line ends in white space.
@@ -256,6 +266,23 @@ function endZone(sx) {
   ].join('\n    ');
 }
 
+// Where a segment from (ax, ay) to (bx, by) first enters the box [X0, X1] x [Y0, Y1], as a
+// fraction of the segment: null if it never does. Liang–Barsky. SVG coordinates.
+const clipT = (ax, ay, bx, by, X0, X1, Y0, Y1) => {
+  const dx = bx - ax, dy = by - ay;
+  let t0 = 0, t1 = 1;
+  const P = [-dx, dx, -dy, dy], Q = [ax - X0, X1 - ax, ay - Y0, Y1 - ay];
+  for (let i = 0; i < 4; i += 1) {
+    if (P[i] === 0) { if (Q[i] < 0) return null; }
+    else {
+      const r = Q[i] / P[i];
+      if (P[i] < 0) { if (r > t1) return null; if (r > t0) t0 = r; }
+      else { if (r < t0) return null; if (r < t1) t1 = r; }
+    }
+  }
+  return t0;
+};
+
 /**
  * Place text labels near points without letting them collide.
  *
@@ -269,12 +296,17 @@ function endZone(sx) {
  * separate placement code for one afternoon, which is how the play diagrams
  * shipped with "takes the passing option" written straight through "first option".
  *
- * @param {Array<{text:string,x:number,y:number,dot?:boolean}>} entries — rink feet
- * @returns {string[]} SVG fragments, one per entry
+ * @param {Array<{text:string,x:number,y:number,dot?:boolean,
+ *   reach?:number|((dx:number,dy:number)=>number)}>} entries — rink feet. `reach` is how far
+ *   the opaque body drawn OVER the leader reaches from the anchor in the leader's direction;
+ *   see the ⚠️ at `reachOf` below. Omitted, it is 0 and placement is unchanged.
+ * @returns {string[] | Array<{under:string, over:string}>} SVG fragments, one per entry —
+ *   or, with `split: true`, each entry's marker and leader (`under`) apart from its text
+ *   (`over`), so the caller can paint the leader beneath the glyph bodies.
  */
 function placeLabels(entries, opts = {}) {
   const { size = 2.4, dot = 0, half = false, reserve = [], avoid = [], leaderMin,
-          noCrossLeaders = false } = opts;
+          noCrossLeaders = false, split = false } = opts;
   // A label further than this from its point gets a leader line drawn to it. Below
   // it no leader is drawn, so nothing can be crossed and `avoid` does not apply.
   //
@@ -287,6 +319,30 @@ function placeLabels(entries, opts = {}) {
   // belonged to which dot. `rinkSvg`'s `labels` branch lowers it; nothing else does,
   // so every play diagram is byte-identical across this change.
   const LEADER_MIN = leaderMin ?? 5.5;
+  // ⚠️ A LEADER PAINTED UNDER ITS TOKEN LOSES THE TOKEN'S REACH, SO THE LABEL MOVES OUT BY
+  // EXACTLY THAT MUCH. Play diagrams paint leaders between the glyph halos and the glyph
+  // bodies (owner, 26 Oct 2026), so a leader no longer strikes through the token's letter
+  // — but the opaque body now hides its first few feet. Measured over the 628 leaders the
+  // corpus drew before this change: drawn under the bodies with placement unchanged, 197
+  // would have shown under 2 units of line against 2 drawn over the tokens, and that short
+  // stub is the outcome the owner had already rejected once. So every candidate that WILL
+  // draw a leader (centre distance over LEADER_MIN) is pushed out along its own direction
+  // by the body's reach in that direction, and the visible line is as long as the whole
+  // line used to be. Labels close enough to draw no leader do not move.
+  // `reach` is per entry because a triangle's reach depends on direction (2.2 ft across a
+  // flat side, 4 ft to a vertex). The vocabulary overlay passes none, so it is unchanged.
+  const reachOf = (e, dx, dy) =>
+    (typeof e.reach === 'function' ? e.reach(dx, dy) : (e.reach ?? 0));
+  // The least visible leader a label may be given (see `showsLeader`). 3.6 is today's
+  // shortest play-diagram leader less a hair: the [0, ±7.5] table offsets, which every
+  // build before this change drew at 3.67 units.
+  const LEADER_VIS_MIN = 3.6;
+  const pushOut = (e, dx, dy) => {
+    const d = Math.hypot(dx, dy);
+    if (d <= LEADER_MIN) return [dx, dy];
+    const k = (d + reachOf(e, dx, dy)) / d;
+    return [dx * k, dy * k];
+  };
   const CH = size * 0.56;   // approximate character width
   const LH = size * 1.25;   // line height
   const placed = [...reserve];  // {x, y, w, h} in rink feet — `reserve` blocks out
@@ -409,8 +465,29 @@ function placeLabels(entries, opts = {}) {
   // clear every box in `avoid`; the caller retries without it rather than losing a label,
   // because a label that is not drawn is the failure mode this file has already paid for
   // once — 104 goaltenders vanished from 112 diagrams with a clean exit 0.
-  const placeOne = (e, w, h, strict) => {
+  // ⚠️ `pushOut` KEEPS A TABLE OFFSET'S VISIBLE LEADER EXACTLY AS LONG AS IT WAS, BUT THE
+  // GRID SWEEP AND A SPEC'S `hint` ARE NOT TABLE OFFSETS. Measured on the first build of
+  // this change: five sweep-placed labels showed 0.79–1.62 units of line, because a slot
+  // whose CENTRE is well clear of the token can still have its box edge — where the leader
+  // stops — inside the body's reach when the label is long and the leader arrives from the
+  // side. So a candidate that would draw a leader must show at least LEADER_VIS_MIN of it
+  // once the body has taken its reach. Only entries with a `reach` are tested, so the
+  // vocabulary overlay is unchanged.
+  const visibleLen = (e, cand) => {
+    const ax = e.x, ay = py(e.y), bx = cand.x, by = py(cand.y);
+    const cw = e.text.length * size * CLIP_ADV;
+    const t = clipT(ax, ay, bx, by,
+      cand.x - cw / 2 - LEADER_GAP, cand.x + cw / 2 + LEADER_GAP,
+      by - size * CAP_H - LEADER_GAP, by + size * DESC_H + LEADER_GAP);
+    const len = t === null ? Math.hypot(bx - ax, by - ay) : Math.hypot(bx - ax, by - ay) * t;
+    return len - reachOf(e, cand.x - e.x, cand.y - e.y);
+  };
+  const showsLeader = (cand, e) => !e.reach
+    || Math.hypot(cand.x - e.x, cand.y - e.y) <= LEADER_MIN
+    || visibleLen(e, cand) >= LEADER_VIS_MIN;
+  const placeOne = (e, w, h, strict, needLeader = true) => {
     const ok = (cand) => inside(cand) && !collides(cand, e)
+      && (!needLeader || showsLeader(cand, e))
       && (!strict || (leaderClear(cand, e) && leaderUncrossed(cand, e)));
     // ⚠️ A PREFERRED OFFSET, TRIED FIRST AND NOT TRUSTED. The placer is greedy and
     // order-dependent, so on a crowded picture it is the earlier entries that get the
@@ -419,13 +496,83 @@ function placeLabels(entries, opts = {}) {
     // exactly like every other candidate, so a hint that would collide, leave the ice,
     // or sit nearer someone else's anchor is silently ignored rather than honoured into
     // a defect. It is a preference, not an override.
+    // A hint is held to the same no-stub rule as an un-pushed table slot below: if the body
+    // would hide all but a stub of its line, it is honoured with NO leader rather than
+    // rejected, so a spec can keep a label tight beside its player.
+    const insideFree = (cand) => inside(cand) && !collides(cand, e);
+    // Distance from a player's anchor to this label's glyph box, rink feet.
+    const boxDist = (cand, x, y) => {
+      const hw = e.text.length * size * CLIP_ADV / 2;
+      const ddx = Math.max(cand.x - hw - x, 0, x - cand.x - hw);
+      const ddy = Math.max(cand.y - size * DESC_H - y, 0, y - cand.y - size * CAP_H);
+      return Math.hypot(ddx, ddy);
+    };
+    // Does the label read as this entry's to someone judging by the nearest TOKEN to the
+    // WORDS — labelled or not, goaltender included? Every player in `avoid` must be more
+    // than `margin` further from the glyph box than this entry's own anchor.
+    const readsAsOwn = (cand, margin = 0) => {
+      const mine = boxDist(cand, e.x, e.y);
+      return avoid.every((b) => (Math.abs(b.x - e.x) < 0.5 && Math.abs(b.y - e.y) < 0.5)
+        || boxDist(cand, b.x, b.y) > mine + margin);
+    };
+    // ⚠️ A LABEL WITH NO LEADER HAS ONLY PROXIMITY TO SAY WHOSE IT IS, SO IT MUST WIN BY A
+    // CLEAR MARGIN. `ownsIt` compares centres against LABELLED anchors only; an unlabelled
+    // opponent or the goaltender sitting as near the words is invisible to it, and with the
+    // leader gone nothing settles the tie. The first version of the un-pushed fallback below
+    // was held to `ownsIt` alone and put "has to turn and retrieve" under the G in
+    // `dump-soft-area` and "the trailer" beside D1 in `rush-trailer` (diagram review,
+    // 27 Oct 2026). So a leaderless slot is taken only when its own player is nearer the
+    // glyph box than EVERY other player by NO_LEADER_MARGIN; failing that the label keeps a
+    // leader, on a later slot if need be.
+    const NO_LEADER_MARGIN = 2;
+    const ownsBare = (cand) => ownsIt(cand, e) && readsAsOwn(cand, NO_LEADER_MARGIN);
     if (e.hint) {
       const cand = { x: e.x + e.hint[0], y: e.y + e.hint[1], w, h };
-      if (ok(cand) && ownsIt(cand, e)) return cand;
+      // A hinted slot WITH a leader may also pass on the glyph box rather than the centre:
+      // `ownsIt` measures label CENTRES, which for a long label beside its player can sit
+      // nearer someone else's anchor while every word is nearer its own. Held to the same
+      // NO_LEADER_MARGIN as a leaderless slot, so it is only taken where the words clearly
+      // read as this player's. Added for `oz-low-to-high`'s F1 (diagram review, 27 Oct 2026).
+      // Play diagrams only (`reach`): the vocabulary overlay is unchanged.
+      if (ok(cand) && (ownsIt(cand, e) || (e.reach && readsAsOwn(cand, NO_LEADER_MARGIN)))) return cand;
+      if (e.reach && !showsLeader(cand, e) && insideFree(cand) && ownsBare(cand)) {
+        return { ...cand, noLeader: true };
+      }
     }
-    for (const [dx, dy] of OFFSETS) {
+    // ⚠️ THE PUSHED SLOT FIRST, THEN THE SAME TABLE SLOT UN-PUSHED, BEFORE THE NEXT ENTRY.
+    // Pushing every leadered offset out by the body's reach moved the commonest slot,
+    // [0, ±7.5], to about [0, ±10.8] — and on a crowded picture that slot is taken, so the
+    // greedy placer hopped 18-34 ft down the table and about a dozen diagrams read as
+    // labelling the wrong player (diagram review, 26 Oct 2026). Proximity is the cue a
+    // reader actually uses, so where the pushed slot is blocked the label keeps the slot
+    // it had before leaders went under the bodies. There the body hides most of the line,
+    // and a stub is the outcome the owner rejected — so such a label draws NO leader
+    // (`noLeader`); sitting beside its own token, nearer it than any other, it needs none.
+    // An un-pushed slot whose visible line still clears LEADER_VIS_MIN keeps its leader.
+    //
+    // ⚠️ AND A PUSHED SLOT THAT PASSES `ownsIt` CAN STILL READ AS SOMEONE ELSE'S. `ownsIt`
+    // compares label CENTRES against LABELLED anchors only; a reader judges by the nearest
+    // TOKEN to the WORDS, labelled or not, goaltender included. The push adds 3-4 ft to the
+    // centre distance, and measured on the first build of this fix that alone left 38 more
+    // labels whose glyph box sat nearer another player than their own. So a PUSHED candidate
+    // must also pass `readsAsOwn` against every player in `avoid`; failing it, the
+    // un-pushed slot is tried exactly as above. An un-pushed slot that keeps its LEADER is not
+    // held to it, so a label that kept its old slot and line is placed exactly as it was; one
+    // that would lose its leader is held to `ownsBare` (see NO_LEADER_MARGIN above).
+    const okBare = insideFree;
+    for (const off of OFFSETS) {
+      const [dx, dy] = pushOut(e, off[0], off[1]);
+      const pushed = !(dx === off[0] && dy === off[1]);
       const cand = { x: e.x + dx, y: e.y + dy, w, h };
-      if (ok(cand) && ownsIt(cand, e)) return cand;
+      if (ok(cand) && ownsIt(cand, e) && (!pushed || readsAsOwn(cand))) return cand;
+      if (!e.reach || !pushed) continue;
+      const bare = { x: e.x + off[0], y: e.y + off[1], w, h };
+      if (showsLeader(bare, e)) {
+        if (ok(bare) && ownsIt(bare, e)) return bare;
+      } else if (okBare(bare) && ownsBare(bare)) {
+        return { ...bare, noLeader: true };
+      }
+      // Otherwise the next table slot is tried, pushed and with its leader.
     }
     // Fallback: none of the fixed offsets was free. Sweep the ice on a coarse grid and
     // take the nearest free slot that is unambiguously this entry's. The fallback before
@@ -495,7 +642,10 @@ function placeLabels(entries, opts = {}) {
     // Strict first, then again without the leader-clearance rule. The old last resort was
     // "18 ft below the point and hope", which ignored collisions entirely; there is no
     // last resort that ignores collisions any more, because one is worse than none.
-    const put = placeOne(e, w, h, true) ?? placeOne(e, w, h, false);
+    // The third pass drops only the visible-leader floor: a label with a short leader is
+    // better than a label that is not drawn.
+    const put = placeOne(e, w, h, true) ?? placeOne(e, w, h, false)
+      ?? placeOne(e, w, h, false, false);
     if (!put) {
       throw new Error(
         `placeLabels: nowhere on the ice for "${e.text}" at (${e.x}, ${e.y}). ` +
@@ -503,7 +653,7 @@ function placeLabels(entries, opts = {}) {
         'has already shipped once.');
     }
     placed.push(put);
-    const moved = Math.hypot(put.x - e.x, put.y - e.y) > LEADER_MIN;
+    const moved = Math.hypot(put.x - e.x, put.y - e.y) > LEADER_MIN && !put.noLeader;
     if (moved) drawn.push([e.x, e.y, put.x, put.y]);
     // ⚠️ A LEADER MUST STOP SHORT OF THE WORDS, NOT RUN INTO THEM.
     //
@@ -521,20 +671,6 @@ function placeLabels(entries, opts = {}) {
     //
     // A fixed vertical offset cannot be right for a leader arriving diagonally, so
     // the segment is clipped to the label's glyph box and ends where it enters.
-    const clipT = (ax, ay, bx, by, X0, X1, Y0, Y1) => {
-      const dx = bx - ax, dy = by - ay;
-      let t0 = 0, t1 = 1;
-      const P = [-dx, dx, -dy, dy], Q = [ax - X0, X1 - ax, ay - Y0, Y1 - ay];
-      for (let i = 0; i < 4; i += 1) {
-        if (P[i] === 0) { if (Q[i] < 0) return null; }
-        else {
-          const r = Q[i] / P[i];
-          if (P[i] < 0) { if (r > t1) return null; if (r > t0) t0 = r; }
-          else { if (r < t0) return null; if (r < t1) t1 = r; }
-        }
-      }
-      return t0;
-    };
     const ax = e.x, ay = py(e.y), bx = put.x, by = py(put.y);
     // ⚠️ THE LEADER STILL STARTS AT THE TOKEN'S CENTRE, AND THAT IS DELIBERATE.
     // A browser pass proposed starting it at the token EDGE, because 341 of 534 leaders
@@ -543,9 +679,9 @@ function placeLabels(entries, opts = {}) {
     // 3-8 units long. The owner's three went from 5.08 to 1.21; `takes the strong side`
     // went from 4.40 to 0.52; two leaders disappeared under the minimum-length guard.
     // ⚠️ It made the VERIFIED-GOOD case worse to fix a cosmetic fault at the other end.
-    // Reverted. The right fix is to emit leaders BEFORE the glyphs so the token occludes
-    // them, which costs no length -- but that means splitting this function's output, and
-    // it is filed rather than done here.
+    // Reverted. The right fix was to emit leaders BEFORE the glyph bodies so the token
+    // occludes them. That is now done (`split`, and `playSvg`'s paint order) — and it DID
+    // cost length, the body's reach, which `pushOut` above gives back by moving the label.
     // The label half-width uses CLIP_ADV, not CH -- see the note at CLIP_ADV above.
     const cw = e.text.length * size * CLIP_ADV;
     const tEnter = clipT(ax, ay, bx, by,
@@ -556,8 +692,11 @@ function placeLabels(entries, opts = {}) {
     // than a zero-length or backwards line.
     const ex = tEnter === null ? bx : ax + (bx - ax) * tEnter;
     const ey = tEnter === null ? by : ay + (by - ay) * tEnter;
+    // "> 0.5" is the VISIBLE length — what is left once the body painted over the leader
+    // has taken its reach — so a leader that would be a stub hidden under its own token
+    // is not emitted at all rather than emitted invisible.
     const drawLeader = moved && (tEnter === null || tEnter > 0)
-      && Math.hypot(ex - ax, ey - ay) > 0.5;
+      && Math.hypot(ex - ax, ey - ay) - reachOf(e, put.x - e.x, put.y - e.y) > 0.5;
     const leader = drawLeader
       ? `<line x1="${ax.toFixed(2)}" y1="${ay.toFixed(2)}" x2="${ex.toFixed(2)}" y2="${ey.toFixed(2)}" ` +
         `stroke="${PALETTE.label}" stroke-width="0.18" stroke-dasharray="0.8 0.8"/>`
@@ -571,12 +710,11 @@ function placeLabels(entries, opts = {}) {
     // and, on the two red dots, ink over the very thing being named.
     const marker = (e.dot !== false) && dot
       ? `<circle cx="${e.x}" cy="${py(e.y)}" r="${dot}" fill="${PALETTE.label}"/>` : '';
-    return (
-      marker + leader +
+    const text =
       `<text x="${put.x.toFixed(2)}" y="${py(put.y).toFixed(2)}" font-size="${size}" text-anchor="middle" ` +
       `fill="${PALETTE.label}" paint-order="stroke" stroke="#fff" ` +
-      `stroke-width="${(size * LABEL_HALO).toFixed(2)}">${e.text}</text>`
-    );
+      `stroke-width="${(size * LABEL_HALO).toFixed(2)}">${e.text}</text>`;
+    return split ? { under: marker + leader, over: text } : marker + leader + text;
   });
 }
 
@@ -1566,6 +1704,41 @@ function glyphCovers(g, x, y) {
   return inside || near <= GLYPH_INK.triangleHalo;
 }
 
+/**
+ * How far a player glyph's OPAQUE BODY (fill plus outline stroke, not the white halo)
+ * reaches from its anchor in direction (dx, dy), rink feet with +y up.
+ *
+ * This is the length of a leader line the body hides now that leaders are painted under
+ * the bodies. ⚠️ Read off the glyph branches in `playSvg` and must move with them, like
+ * `GLYPH_INK` above — which is the HALO's reach and is the wrong number here, because the
+ * leader is painted above the halo.
+ *  - forward: circle r 2.9, stroke 0.75 -> 3.275.
+ *  - defence: triangle, circumradius 3.6, apex toward +y, centroid on the anchor, stroke
+ *    0.8 -> ray exit + 0.4.
+ *  - goaltender: a bare letter, no body. 0: the letter is painted over the leader, so the
+ *    line shows through between its strokes, as it did before. Pylons carry no label.
+ */
+function bodyReach(pos, dx, dy) {
+  if (pos === 'G' || pos === 'pylon') return 0;
+  if (pos !== 'D') return 2.9 + 0.75 / 2;
+  const d = Math.hypot(dx, dy);
+  if (!d) return 0;
+  const ux = dx / d, uy = dy / d;
+  const R = GLYPH_INK.triangleR, hh = R * 1.5, half = R * 0.866;
+  const V = [[0, R], [half, -(hh - R)], [-half, -(hh - R)]];
+  let t = Infinity;
+  for (let i = 0; i < 3; i++) {
+    const [ax, ay] = V[i], [bx, by] = V[(i + 1) % 3];
+    const ex = bx - ax, ey = by - ay;
+    const den = ux * ey - uy * ex;
+    if (Math.abs(den) < 1e-12) continue;
+    const s = (ax * ey - ay * ex) / den;          // distance along the ray
+    const u = (ax * uy - ay * ux) / den;          // position along the edge
+    if (s > 0 && u >= -1e-9 && u <= 1 + 1e-9) t = Math.min(t, s);
+  }
+  return (Number.isFinite(t) ? t : R) + 0.8 / 2;
+}
+
 export function playSvg(spec, opts = {}) {
   const ns = uid(spec.id ?? spec.caption ?? JSON.stringify([spec.players, spec.routes]));
   // WHAT THIS DEPARTS FROM, AND WHY. The IIHF key puts a NUMERAL inside the glyph
@@ -2114,21 +2287,25 @@ export function playSvg(spec, opts = {}) {
         `player glyph branch returned ${typeof g}, not { halo, body } — see the note above`);
     }
   }
-  const glyphs = parts.map((g) => g.halo).join('\n    ') + '\n    ' +
-                 boardsOutline() + '\n    ' +
-                 parts.map((g) => g.body).join('\n    ');
-
   // Player labels go through the same placer as the vocabulary overlay, seeded
   // with the glyphs themselves so a label never lands on a player.
+  //
+  // ⚠️ PAINT ORDER: HALOS, WALL, LEADERS, BODIES, LABEL TEXT (owner, 26 Oct 2026). A leader
+  // starts at its token's centre, and painted over the token it struck through the
+  // position letter. Painted UNDER the halos it vanished into the white ring as well as the
+  // body. Between the two, the body hides it and the halo does not, so the dashed line
+  // emerges right at the token's outline. The length the body hides is handed to the
+  // placer as `reach`, which moves the label out by that much — see `pushOut`.
   const labelled = (spec.players ?? []).filter((pl) => pl.label);
-  const players = glyphs + '\n    ' + placeLabels(
+  const labelParts = placeLabels(
     // `labelHint: [dx, dy]` (rink feet from the player) is the placer's `hint`: tried first,
     // and honoured only if it passes the same collision, on-ice and ownership tests as every
     // other candidate. It exists for full-sheet labels the greedy offsets park on a painted
     // line; a spec without one places exactly as before.
     labelled.map((pl) => { const p = loc(pl.at);
-      return { text: pl.label, x: p.x, y: p.y, ...(pl.labelHint ? { hint: pl.labelHint } : {}) }; }),
-    { size: 2.8 * TXT, half: opts.half ?? true,
+      return { text: pl.label, x: p.x, y: p.y, reach: (dx, dy) => bodyReach(pl.pos, dx, dy),
+               ...(pl.labelHint ? { hint: pl.labelHint } : {}) }; }),
+    { size: 2.8 * TXT, half: opts.half ?? true, split: true,
       reserve: [
         ...(spec.players ?? []).map((pl) => { const p = loc(pl.at); return { x: p.x, y: p.y, w: 7, h: 8 }; }),
         ...routeReserve,
@@ -2138,7 +2315,14 @@ export function playSvg(spec, opts = {}) {
       // but not a player. Same 7x8 box the reserve above uses, so there is one statement
       // in this file of how much room a glyph takes, not two that can drift.
       avoid: (spec.players ?? []).map((pl) => { const p = loc(pl.at); return { x: p.x, y: p.y, w: 7, h: 8 }; }) }
-  ).join('\n    ');
+  );
+  const players = [
+    ...parts.map((g) => g.halo),
+    boardsOutline(),
+    ...labelParts.map((l) => l.under),
+    ...parts.map((g) => g.body),
+    ...labelParts.map((l) => l.over),
+  ].filter(Boolean).join('\n    ');
 
   const puck = spec.puck
     ? (() => { const p = loc(spec.puck); return `<circle cx="${p.x}" cy="${py(p.y)}" r="1.1" fill="${PALETTE.puck}"/>`; })()

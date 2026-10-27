@@ -21,6 +21,10 @@
  *
  * AND, 21 October 2026: all 13 are published and the season is LIVE. The gate is now
  *   sticky — LIVE_BASICS_SLUGS below — so a later edit to `planned` cannot pull it.
+ *
+ * AND, 26 October 2026: every live per-document item's season and episode number is
+ *   frozen (LIVE_NUMBERS below). Decision (2) now governs only where a NEW item goes; it
+ *   no longer renumbers a live one.
  */
 
 import {
@@ -59,7 +63,7 @@ export interface FeedItem {
    *  live in their own tags, not in `itunes:title`. */
   itunesTitle: string;
   season: number;
-  /** Sequential within the season, counted over the items ACTUALLY IN THE FEED. */
+  /** Frozen for a live item (LIVE_NUMBERS); the next free number in its season for a new one. */
   episodeNumber: number;
   /** Global sequence over the items in the feed, 1-based. */
   order: number;
@@ -253,6 +257,151 @@ function basicsFeedEpisodes(): BasicsEpisode[] {
 export const BASICS_SEASON = 8;
 
 /**
+ * ⚠️ EVERY LIVE PER-DOCUMENT ITEM'S itunes:season AND itunes:episode, FROZEN AT ITS LIVE
+ * VALUE (26 October 2026), snapshotted from the built and the live feed (identical numbers).
+ *
+ * Until then both were computed from structure.json: season = the section's index,
+ * episode = the item's running count within it. So reordering sections, inserting a
+ * document mid-section, or moving a document to another section would have renumbered
+ * live episodes, and Apple and Spotify would have shown subscribers changed numbers. The
+ * guids and dates were already frozen; the numbers were not.
+ *
+ * Rules (`numberItems()`):
+ *   - an item listed here keeps exactly this season and episode, wherever structure.json
+ *     now puts its document. Every one must still be in the feed (`assertNumbersFrozen()`);
+ *   - an item NOT listed here (a newly published episode) takes its section's frozen season
+ *     (SECTION_SEASONS) and the NEXT FREE episode number in that season, assigned in site
+ *     order — so it never takes a live item's number, even if it sits mid-section;
+ *   - the "<Section> n ·" title prefix uses the same number, and names the section that
+ *     OWNS the season (SECTION_SEASONS), so a moved document's title still matches its tags.
+ *
+ * ⚠️ Add an item here ONCE IT IS LIVE, with the number the feed published it with — until
+ * then a second new episode published earlier in site order would take its number. Never
+ * change or remove an entry. The same table is restated in site/scripts/check-podcast-guids.mjs,
+ * which checks the BUILT feed and lists any item not yet frozen. The Basics are not here:
+ * their numbers are frozen by BASICS_SEASON and LIVE_BASICS_SLUGS order.
+ */
+export const LIVE_NUMBERS: readonly (readonly [guid: string, season: number, episode: number])[] = [
+  ['learn-ice-hockey:getting-started/getting_started', 1, 1],
+  ['learn-ice-hockey:principles:getting-started/getting_started', 1, 2],
+  ['learn-ice-hockey:foundation/core_principles', 2, 1],
+  ['learn-ice-hockey:principles:foundation/core_principles', 2, 2],
+  ['learn-ice-hockey:reading-diagrams/reading_ice_hockey_diagrams', 2, 3],
+  ['learn-ice-hockey:principles:reading-diagrams/reading_ice_hockey_diagrams', 2, 4],
+  ['learn-ice-hockey:foundation/rink_map_and_glossary', 2, 5],
+  ['learn-ice-hockey:principles:foundation/rink_map', 2, 6],
+  ['learn-ice-hockey:foundation/language_and_glossary', 2, 7],
+  ['learn-ice-hockey:principles:foundation/language_and_glossary', 2, 8],
+  ['learn-ice-hockey:foundation/rules_primer', 2, 9],
+  ['learn-ice-hockey:principles:foundation/rules_primer', 2, 10],
+  ['learn-ice-hockey:foundation/uk_rules', 2, 11],
+  ['learn-ice-hockey:principles:foundation/uk_rules', 2, 12],
+  ['learn-ice-hockey:foundation/on_ice_communication', 2, 13],
+  ['learn-ice-hockey:principles:foundation/on_ice_communication', 2, 14],
+  ['learn-ice-hockey:positions/center', 3, 1],
+  ['learn-ice-hockey:principles:positions/center', 3, 2],
+  ['learn-ice-hockey:positions/winger', 3, 3],
+  ['learn-ice-hockey:principles:positions/winger', 3, 4],
+  ['learn-ice-hockey:positions/defender', 3, 5],
+  ['learn-ice-hockey:principles:positions/defender', 3, 6],
+  ['learn-ice-hockey:positions/goaltender', 3, 7],
+  ['learn-ice-hockey:principles:positions/goaltender', 3, 8],
+  ['learn-ice-hockey:positions/switching_positions', 3, 9],
+  ['learn-ice-hockey:principles:positions/switching_positions', 3, 10],
+  ['learn-ice-hockey:systems/breakouts', 4, 1],
+  ['learn-ice-hockey:principles:systems/breakouts', 4, 2],
+  ['learn-ice-hockey:systems/zone_entries', 4, 3],
+  ['learn-ice-hockey:principles:systems/zone_entries', 4, 4],
+  ['learn-ice-hockey:systems/offensive_zone_play', 4, 5],
+  ['learn-ice-hockey:principles:systems/offensive_zone_play', 4, 6],
+  ['learn-ice-hockey:systems/forechecking_systems', 4, 7],
+  ['learn-ice-hockey:principles:systems/forechecking_systems', 4, 8],
+  ['learn-ice-hockey:systems/neutral_zone_systems', 4, 9],
+  ['learn-ice-hockey:principles:systems/neutral_zone_systems', 4, 10],
+  ['learn-ice-hockey:systems/defensive_zone_coverage', 4, 11],
+  ['learn-ice-hockey:principles:systems/defensive_zone_coverage', 4, 12],
+  ['learn-ice-hockey:systems/defending_the_rush', 4, 13],
+  ['learn-ice-hockey:principles:systems/defending_the_rush', 4, 14],
+  ['learn-ice-hockey:systems/special_teams', 4, 15],
+  ['learn-ice-hockey:principles:systems/special_teams', 4, 16],
+  ['learn-ice-hockey:systems/faceoffs', 4, 17],
+  ['learn-ice-hockey:principles:systems/faceoffs', 4, 18],
+  ['learn-ice-hockey:systems/game_management', 4, 19],
+  ['learn-ice-hockey:principles:systems/game_management', 4, 20],
+  ['learn-ice-hockey:technique/skating', 5, 1],
+  ['learn-ice-hockey:principles:technique/skating', 5, 2],
+  ['learn-ice-hockey:technique/puck_handling', 5, 3],
+  ['learn-ice-hockey:principles:technique/puck_handling', 5, 4],
+  ['learn-ice-hockey:technique/passing_and_receiving', 5, 5],
+  ['learn-ice-hockey:principles:technique/passing_and_receiving', 5, 6],
+  ['learn-ice-hockey:technique/shooting', 5, 7],
+  ['learn-ice-hockey:principles:technique/shooting', 5, 8],
+  ['learn-ice-hockey:technique/body_contact_and_battles', 5, 9],
+  ['learn-ice-hockey:principles:technique/body_contact_and_battles', 5, 10],
+  ['learn-ice-hockey:hockey-iq/puck_support_and_spacing', 6, 1],
+  ['learn-ice-hockey:principles:hockey-iq/puck_support_and_spacing', 6, 2],
+  ['learn-ice-hockey:hockey-iq/time_and_space', 6, 3],
+  ['learn-ice-hockey:principles:hockey-iq/time_and_space', 6, 4],
+  ['learn-ice-hockey:hockey-iq/scanning_and_anticipation', 6, 5],
+  ['learn-ice-hockey:principles:hockey-iq/scanning_and_anticipation', 6, 6],
+  ['learn-ice-hockey:hockey-iq/risk_management', 6, 7],
+  ['learn-ice-hockey:principles:hockey-iq/risk_management', 6, 8],
+  ['learn-ice-hockey:hockey-iq/playing_without_the_puck', 6, 9],
+  ['learn-ice-hockey:principles:hockey-iq/playing_without_the_puck', 6, 10],
+  ['learn-ice-hockey:off-the-ice/equipment', 7, 1],
+  ['learn-ice-hockey:principles:off-the-ice/equipment', 7, 2],
+  ['learn-ice-hockey:off-the-ice/conditioning_and_recovery', 7, 3],
+  ['learn-ice-hockey:principles:off-the-ice/conditioning_and_recovery', 7, 4],
+  ['learn-ice-hockey:off-the-ice/practice_and_development', 7, 5],
+  ['learn-ice-hockey:principles:off-the-ice/practice_and_development', 7, 6],
+  ['learn-ice-hockey:off-the-ice/finding_more_ice', 7, 7],
+  ['learn-ice-hockey:principles:off-the-ice/finding_more_ice', 7, 8],
+  ['learn-ice-hockey:off-the-ice/mental_game', 7, 9],
+  ['learn-ice-hockey:principles:off-the-ice/mental_game', 7, 10],
+  ['learn-ice-hockey:off-the-ice/team_play_and_culture', 7, 11],
+  ['learn-ice-hockey:principles:off-the-ice/team_play_and_culture', 7, 12],
+  ['learn-ice-hockey:off-the-ice/how_to_watch_hockey', 7, 13],
+  ['learn-ice-hockey:principles:off-the-ice/how_to_watch_hockey', 7, 14],
+];
+
+/** Each structure.json section's season, frozen at its live value (26 October 2026). A new
+ *  episode takes its section's season from here, never from the section's current index, so
+ *  reordering sections does not move it into a season another section's live episodes hold. */
+export const SECTION_SEASONS: Readonly<Record<string, number>> = {
+  'getting-started': 1,
+  foundation: 2,
+  positions: 3,
+  systems: 4,
+  technique: 5,
+  'hockey-iq': 6,
+  'off-the-ice': 7,
+};
+
+const FROZEN_NUMBER = new Map(LIVE_NUMBERS.map(([g, season, episode]) => [g, { season, episode }]));
+
+function assertNumbersFrozen(guidsInFeed: Set<string>): void {
+  const missing = LIVE_NUMBERS.filter(([g]) => !guidsInFeed.has(g)).map(([g]) => g);
+  if (missing.length) {
+    throw new Error(`podcast-feed: live items with frozen numbers are not in the feed: ${missing.join(', ')}`);
+  }
+  const unmapped = structure.layers.filter((l) => SECTION_SEASONS[l.id] === undefined).map((l) => l.id);
+  if (unmapped.length) {
+    throw new Error(
+      `podcast-feed: structure.json section(s) ${unmapped.join(', ')} have no frozen season (SECTION_SEASONS). ` +
+        `A new section's season is an owner decision; do not let the build pick one.`,
+    );
+  }
+}
+
+/** The section that owns a season, for the title prefix. */
+function seasonLayerTitle(season: number): string {
+  const id = Object.keys(SECTION_SEASONS).find((k) => SECTION_SEASONS[k] === season);
+  const layer = structure.layers.find((l) => l.id === id);
+  if (!layer) throw new Error(`podcast-feed: no structure.json section owns season ${season}`);
+  return layer.title;
+}
+
+/**
  * ⚠️ pubDate IS SYNTHETIC, FIXED, AND ENCODES THE ORDER. NEVER DERIVE IT FROM THE BUILD.
  *
  * Spotify requires a pubDate (cardinality 1..1); several apps (Overcast, Pocket Casts)
@@ -289,11 +438,11 @@ export const BASICS_SEASON = 8;
  * back-dated and some apps will not flag it as new. Up to 35 added documents fit
  * between two frozen ones; `assertDates()` fails the build past that.
  *
- * ⚠️ This only fixes DATES. A new document's episode still renumbers the later items
- * of its own season (itunes:episode and the "<Section> n ·" title prefix) and shifts
- * itunes:order for every later item, because numbering follows the site — the owner's
- * decision (2) above. That happens when the episode is PUBLISHED, not when the page is
- * added, and it needs the owner's sign-off then.
+ * ⚠️ This only fixes DATES. Since 26 October 2026 itunes:season, itunes:episode and the
+ * "<Section> n ·" title prefix of every live item are frozen too (LIVE_NUMBERS), and a new
+ * document's episode takes the next free number in its season. A new document still
+ * shifts itunes:order for every later item, because itunes:order follows the site — the
+ * owner's decision (2) above.
  */
 const BASE_UTC_MS = Date.UTC(2026, 5, 1, 12, 0, 0); // Mon 1 June 2026, 12:00 UTC
 const DAY_MS = 86_400_000;
@@ -423,23 +572,41 @@ export function feedItems(): FeedItem[] {
   );
   rows.sort((a, b) => a.pos.globalIndex - b.pos.globalIndex || a.formatIndex - b.formatIndex);
 
-  const perSeason = new Map<number, number>();
+  const guids = rows.map((r) => guidFor(r.format, r.episode));
+  assertNumbersFrozen(new Set(guids));
+  // Next free episode per season = one past the highest frozen number in it, so a new item
+  // never takes a live item's number. New items are then numbered in site order.
+  const nextFree = new Map<number, number>();
+  for (const [, season, episode] of LIVE_NUMBERS) {
+    nextFree.set(season, Math.max(nextFree.get(season) ?? 1, episode + 1));
+  }
+  const taken = new Set<string>();
   const docItems: FeedItem[] = rows.map((r, i) => {
-    const n = (perSeason.get(r.pos.season) ?? 0) + 1;
-    perSeason.set(r.pos.season, n);
+    const guid = guids[i];
+    let num = FROZEN_NUMBER.get(guid);
+    if (!num) {
+      const season = SECTION_SEASONS[r.pos.layerId];
+      const episode = nextFree.get(season) ?? 1;
+      nextFree.set(season, episode + 1);
+      num = { season, episode };
+    }
+    const key = `${num.season}/${num.episode}`;
+    if (taken.has(key)) throw new Error(`podcast-feed: season ${num.season} episode ${num.episode} is used twice (${guid})`);
+    taken.add(key);
+    const layerTitle = seasonLayerTitle(num.season);
     const name = `${r.episode.title} — ${r.format.label}`;
     return {
       format: r.format,
       episode: r.episode,
       media: r.episode,
-      guid: guidFor(r.format, r.episode),
+      guid,
       // When the section and the document share a name ("Getting Started"), the
       // prefix only repeats it, so the title is the plain name. Season and episode
       // tags are unchanged either way.
-      title: r.pos.layerTitle === r.episode.title ? name : `${r.pos.layerTitle} ${n} · ${name}`,
+      title: layerTitle === r.episode.title ? name : `${layerTitle} ${num.episode} · ${name}`,
       itunesTitle: name,
-      season: r.pos.season,
-      episodeNumber: n,
+      season: num.season,
+      episodeNumber: num.episode,
       order: i + 1,
       pubDate: rfc822(pubDateFor(r.episode.doc_id, r.formatIndex)),
     };

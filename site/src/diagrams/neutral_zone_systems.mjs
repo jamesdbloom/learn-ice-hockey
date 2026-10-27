@@ -315,11 +315,14 @@ const wall131 = {
     // numbered, because the section numbers neither: it says "one defenceman in
     // the middle" and "the single back defenceman".
     { id: 'F2', pos: 'F', at: F2_131, label: 'own lane only' },
-    { id: 'D', pos: 'D', at: D131, label: 'the read-maker' },
-    { id: 'F3', pos: 'F', at: F3_131, label: 'own lane only' },
+    { id: 'D', pos: 'D', at: D131, label: 'the read-maker', labelHint: [0, -14.5] },
+    { id: 'F3', pos: 'F', at: F3_131, label: 'own lane only', labelHint: [21, 1] },
     // Row 3 — "the single back defenceman is the safety... and, crucially,
     // retrieves every dumped puck and starts the breakout."
-    { id: 'D', pos: 'D', at: OUR_BLUE, label: 'last man, retrieves' },
+    // labelHint: under the D, shifted 12 ft toward our end, drawn without a leader. Straight
+    // under, the words reached the middle D and the leader ran down the blue line, where it
+    // cannot be seen (site review, 27 Oct 2026). It also frees the read-maker's own slot.
+    { id: 'D', pos: 'D', at: OUR_BLUE, label: 'last man, retrieves', labelHint: [-12, -7.5] },
   ],
 
   routes: [
@@ -639,7 +642,7 @@ const regroup = {
     // The opposition, drawn only as much as the section requires: something that
     // makes "unable to advance" and "the strong side is covered" true. Neither is
     // between the two defencemen, because the section forbids that pass.
-    { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dx: 11, dy: 24 }, label: 'takes the strong side' },
+    { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dx: 11, dy: 24 }, label: 'takes the strong side', labelHint: [2.5, -8] },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dx: 8, dy: -8 }, label: 'holds the middle' },
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
 

@@ -373,7 +373,7 @@ const forecheck212Stacked = {
     // "F1 and F2 both come from the same side to overload one corner". F1 is at
     // the same depth as the spread version's F1 and on the opposite side of the
     // net, so the two pictures differ in exactly the thing being compared.
-    { id: 'F1', pos: 'F', at: STACK_F1,                       label: 'first in' },
+    { id: 'F1', pos: 'F', at: STACK_F1,                       label: 'first in', labelHint: [-0.73, 6.75] },
     { id: 'F2', pos: 'F', at: STACK_F2,                       label: 'same corner' },
     // "F3 shades to the puck side instead, so that all three forwards overload
     // one corner and the far-side breakout is conceded deliberately." Same depth
@@ -914,7 +914,7 @@ const forecheckPinch = {
     // go down, F3 comes back. If F3 is in the corner, the exchange is not
     // available."
     { id: 'F3', pos: 'F', at: F3_HIGH,                                     label: 'covers the point' },
-    { id: 'D',  pos: 'D', at: D_STRONG,                                    label: 'arrive on contact' },
+    { id: 'D',  pos: 'D', at: D_STRONG,                                    label: 'arrive on contact', labelHint: [-11, -7] },
     { id: 'D',  pos: 'D', at: { at: 'point:left', dy: 12 },                label: 'the safety' },
   ],
 
@@ -1186,12 +1186,12 @@ const forecheck23Lock = {
 
     // "Two forwards forechecking aggressively" — the stacked 2-1-2's two, on the
     // same two points, so the comparison isolates the third forward.
-    { id: 'F1', pos: 'F', at: STACK_F1,    label: 'first in' },
+    { id: 'F1', pos: 'F', at: STACK_F1,    label: 'first in', labelHint: [-0.73, 6.75] },
     { id: 'F2', pos: 'F', at: STACK_F2,    label: 'second in' },
     // 11 ft above their winger, which is what lets him lock: he is between that
     // winger and the line he has to get back to. At the bare half-wall datum the
     // two glyphs sit on the same point.
-    { id: 'F3', pos: 'F', at: LOCK_WINGER, label: 'the winger locks' },
+    { id: 'F3', pos: 'F', at: LOCK_WINGER, label: 'the winger locks', labelHint: [-21, 1] },
     { id: 'D',  pos: 'D', at: 'point:right', label: 'holds the line' },
     { id: 'D',  pos: 'D', at: 'point:left',  label: 'holds the line' },
   ],

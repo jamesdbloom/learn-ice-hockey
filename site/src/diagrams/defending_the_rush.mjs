@@ -830,7 +830,9 @@ const trailer = {
   players: [
     { id: 'A1', team: 'opp', pos: 'F', at: A1_TRAIL, label: 'first wave' },
     { id: 'A2', team: 'opp', pos: 'F', at: A2_TRAIL, label: 'first wave' },
-    { id: 'A3', team: 'opp', pos: 'F', at: A3_TRAIL, label: 'the trailer' },
+    // labelHint: up and right of A3, with a leader. The placer's slot sat under D1 and read as
+    // D1's (site review, 27 Oct 2026; HEAD had it too).
+    { id: 'A3', team: 'opp', pos: 'F', at: A3_TRAIL, label: 'the trailer', labelHint: [12, 7.5] },
     { id: 'D1', pos: 'D', at: D1_TRAIL, label: 'occupied' },
     { id: 'D2', pos: 'D', at: D2_TRAIL, label: 'occupied' },
     { id: 'F',  pos: 'F', at: F_TRAIL,  label: 'takes the trailer' },

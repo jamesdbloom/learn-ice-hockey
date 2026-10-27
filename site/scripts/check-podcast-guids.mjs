@@ -36,8 +36,9 @@
  * podcast-principles.json (a Detailed remake replaces an episode IN PLACE and keeps it).
  *
  * Also checked, because they are what the renumbering changed: orders 1..N in
- * sequence, episode numbers sequential within each season, seasons non-decreasing,
- * pubDates strictly increasing and before 8 September 2026 (the single date every
+ * sequence, every LIVE per-document item's season and episode equal to its frozen value
+ * (LIVE_NUMBERS, since 26 October 2026), each season numbered 1..N with no gap or
+ * duplicate, pubDates strictly increasing and before 8 September 2026 (the single date every
  * episode carried before), the pinned rink_map guid present, and — since 22 October
  * 2026 — every LIVE episode's pubDate equal to the date it was published with
  * (FROZEN DATES below), so adding a document to the site cannot re-date one.
@@ -201,6 +202,98 @@ const LIVE_BASICS_GUIDS = [
   'learn-ice-hockey:core:playing-defence',
   'learn-ice-hockey:core:playing-goal',
   'learn-ice-hockey:core:teamwork',
+];
+
+// ⚠️ EVERY LIVE PER-DOCUMENT ITEM'S itunes:season AND itunes:episode, FROZEN HERE
+// (26 October 2026) — restated, not imported, from the built and the live feed of that
+// date. Before then both were derived from structure.json, and this script checked them
+// only for being SEQUENTIAL IN ITEM ORDER, which a renumbering satisfies: reordering
+// sections, or inserting or moving a document, would have renumbered live episodes and
+// passed. Each of these guids must keep exactly this season and episode. An item not
+// listed (a newly published episode) must take a number no live item holds; it is
+// listed in the output so it can be added here once live. Never change or remove one.
+// The Basics are frozen separately (BASICS_SEASON, LIVE_BASICS_GUIDS order).
+const LIVE_NUMBERS = [
+  ['learn-ice-hockey:getting-started/getting_started', 1, 1],
+  ['learn-ice-hockey:principles:getting-started/getting_started', 1, 2],
+  ['learn-ice-hockey:foundation/core_principles', 2, 1],
+  ['learn-ice-hockey:principles:foundation/core_principles', 2, 2],
+  ['learn-ice-hockey:reading-diagrams/reading_ice_hockey_diagrams', 2, 3],
+  ['learn-ice-hockey:principles:reading-diagrams/reading_ice_hockey_diagrams', 2, 4],
+  ['learn-ice-hockey:foundation/rink_map_and_glossary', 2, 5],
+  ['learn-ice-hockey:principles:foundation/rink_map', 2, 6],
+  ['learn-ice-hockey:foundation/language_and_glossary', 2, 7],
+  ['learn-ice-hockey:principles:foundation/language_and_glossary', 2, 8],
+  ['learn-ice-hockey:foundation/rules_primer', 2, 9],
+  ['learn-ice-hockey:principles:foundation/rules_primer', 2, 10],
+  ['learn-ice-hockey:foundation/uk_rules', 2, 11],
+  ['learn-ice-hockey:principles:foundation/uk_rules', 2, 12],
+  ['learn-ice-hockey:foundation/on_ice_communication', 2, 13],
+  ['learn-ice-hockey:principles:foundation/on_ice_communication', 2, 14],
+  ['learn-ice-hockey:positions/center', 3, 1],
+  ['learn-ice-hockey:principles:positions/center', 3, 2],
+  ['learn-ice-hockey:positions/winger', 3, 3],
+  ['learn-ice-hockey:principles:positions/winger', 3, 4],
+  ['learn-ice-hockey:positions/defender', 3, 5],
+  ['learn-ice-hockey:principles:positions/defender', 3, 6],
+  ['learn-ice-hockey:positions/goaltender', 3, 7],
+  ['learn-ice-hockey:principles:positions/goaltender', 3, 8],
+  ['learn-ice-hockey:positions/switching_positions', 3, 9],
+  ['learn-ice-hockey:principles:positions/switching_positions', 3, 10],
+  ['learn-ice-hockey:systems/breakouts', 4, 1],
+  ['learn-ice-hockey:principles:systems/breakouts', 4, 2],
+  ['learn-ice-hockey:systems/zone_entries', 4, 3],
+  ['learn-ice-hockey:principles:systems/zone_entries', 4, 4],
+  ['learn-ice-hockey:systems/offensive_zone_play', 4, 5],
+  ['learn-ice-hockey:principles:systems/offensive_zone_play', 4, 6],
+  ['learn-ice-hockey:systems/forechecking_systems', 4, 7],
+  ['learn-ice-hockey:principles:systems/forechecking_systems', 4, 8],
+  ['learn-ice-hockey:systems/neutral_zone_systems', 4, 9],
+  ['learn-ice-hockey:principles:systems/neutral_zone_systems', 4, 10],
+  ['learn-ice-hockey:systems/defensive_zone_coverage', 4, 11],
+  ['learn-ice-hockey:principles:systems/defensive_zone_coverage', 4, 12],
+  ['learn-ice-hockey:systems/defending_the_rush', 4, 13],
+  ['learn-ice-hockey:principles:systems/defending_the_rush', 4, 14],
+  ['learn-ice-hockey:systems/special_teams', 4, 15],
+  ['learn-ice-hockey:principles:systems/special_teams', 4, 16],
+  ['learn-ice-hockey:systems/faceoffs', 4, 17],
+  ['learn-ice-hockey:principles:systems/faceoffs', 4, 18],
+  ['learn-ice-hockey:systems/game_management', 4, 19],
+  ['learn-ice-hockey:principles:systems/game_management', 4, 20],
+  ['learn-ice-hockey:technique/skating', 5, 1],
+  ['learn-ice-hockey:principles:technique/skating', 5, 2],
+  ['learn-ice-hockey:technique/puck_handling', 5, 3],
+  ['learn-ice-hockey:principles:technique/puck_handling', 5, 4],
+  ['learn-ice-hockey:technique/passing_and_receiving', 5, 5],
+  ['learn-ice-hockey:principles:technique/passing_and_receiving', 5, 6],
+  ['learn-ice-hockey:technique/shooting', 5, 7],
+  ['learn-ice-hockey:principles:technique/shooting', 5, 8],
+  ['learn-ice-hockey:technique/body_contact_and_battles', 5, 9],
+  ['learn-ice-hockey:principles:technique/body_contact_and_battles', 5, 10],
+  ['learn-ice-hockey:hockey-iq/puck_support_and_spacing', 6, 1],
+  ['learn-ice-hockey:principles:hockey-iq/puck_support_and_spacing', 6, 2],
+  ['learn-ice-hockey:hockey-iq/time_and_space', 6, 3],
+  ['learn-ice-hockey:principles:hockey-iq/time_and_space', 6, 4],
+  ['learn-ice-hockey:hockey-iq/scanning_and_anticipation', 6, 5],
+  ['learn-ice-hockey:principles:hockey-iq/scanning_and_anticipation', 6, 6],
+  ['learn-ice-hockey:hockey-iq/risk_management', 6, 7],
+  ['learn-ice-hockey:principles:hockey-iq/risk_management', 6, 8],
+  ['learn-ice-hockey:hockey-iq/playing_without_the_puck', 6, 9],
+  ['learn-ice-hockey:principles:hockey-iq/playing_without_the_puck', 6, 10],
+  ['learn-ice-hockey:off-the-ice/equipment', 7, 1],
+  ['learn-ice-hockey:principles:off-the-ice/equipment', 7, 2],
+  ['learn-ice-hockey:off-the-ice/conditioning_and_recovery', 7, 3],
+  ['learn-ice-hockey:principles:off-the-ice/conditioning_and_recovery', 7, 4],
+  ['learn-ice-hockey:off-the-ice/practice_and_development', 7, 5],
+  ['learn-ice-hockey:principles:off-the-ice/practice_and_development', 7, 6],
+  ['learn-ice-hockey:off-the-ice/finding_more_ice', 7, 7],
+  ['learn-ice-hockey:principles:off-the-ice/finding_more_ice', 7, 8],
+  ['learn-ice-hockey:off-the-ice/mental_game', 7, 9],
+  ['learn-ice-hockey:principles:off-the-ice/mental_game', 7, 10],
+  ['learn-ice-hockey:off-the-ice/team_play_and_culture', 7, 11],
+  ['learn-ice-hockey:principles:off-the-ice/team_play_and_culture', 7, 12],
+  ['learn-ice-hockey:off-the-ice/how_to_watch_hockey', 7, 13],
+  ['learn-ice-hockey:principles:off-the-ice/how_to_watch_hockey', 7, 14],
 ];
 
 // ---- expected: the OLD logic, restated --------------------------------------
@@ -406,19 +499,13 @@ for (const ep of conversation) {
 
 // ---- numbering and dates ----------------------------------------------------
 const CEILING = Date.UTC(2026, 8, 8);
-let lastSeason = 0;
-let lastEpisode = 0;
 let lastDate = -Infinity;
 items.forEach((it, i) => {
   const where = `item ${i + 1} (${it.guid})`;
   if (it.order !== i + 1) fail(`${where}: itunes:order ${it.order}, expected ${i + 1}`);
   const maxSeason = structure.layers.length + (basicsExpectedInFeed ? 1 : 0);
   if (!(it.season >= 1 && it.season <= maxSeason)) fail(`${where}: season ${it.season} out of range`);
-  if (it.season < lastSeason) fail(`${where}: season went backwards`);
-  const expectedEpisode = it.season === lastSeason ? lastEpisode + 1 : 1;
-  if (it.episode !== expectedEpisode) fail(`${where}: itunes:episode ${it.episode}, expected ${expectedEpisode}`);
-  lastSeason = it.season;
-  lastEpisode = it.episode;
+  if (!(Number.isInteger(it.episode) && it.episode >= 1)) fail(`${where}: itunes:episode ${it.episode} is not a positive integer`);
   const t = Date.parse(it.pubDate ?? '');
   if (Number.isNaN(t)) fail(`${where}: unparseable pubDate ${it.pubDate}`);
   else {
@@ -427,6 +514,43 @@ items.forEach((it, i) => {
     lastDate = t;
   }
 });
+
+// ---- FROZEN NUMBERS (26 October 2026) ---------------------------------------
+// Since numbers are frozen, a moved or inserted document can legitimately make seasons
+// non-monotonic in item order, or put a new item's number out of sequence, so those two
+// old checks are replaced by: every live item keeps its frozen season and episode; no
+// season/episode pair is used twice; each season is numbered 1..N with no gap.
+const unfrozen = [];
+{
+  const byGuid = new Map(items.map((it) => [it.guid, it]));
+  const frozenGuids = new Set();
+  for (const [g, season, episode] of LIVE_NUMBERS) {
+    if (frozenGuids.has(g)) fail(`LIVE_NUMBERS lists ${g} twice`);
+    frozenGuids.add(g);
+    const it = byGuid.get(g);
+    if (!it) fail(`LIVE item ${g} (season ${season} episode ${episode}) is not in the feed`);
+    else if (it.season !== season || it.episode !== episode) {
+      fail(`LIVE ${g} renumbered: feed has season ${it.season} episode ${it.episode}, frozen season ${season} episode ${episode}`);
+    }
+  }
+  const bySeason = new Map();
+  for (const it of items) {
+    if (!it.guid?.startsWith(BASICS_PREFIX) && !frozenGuids.has(it.guid)) unfrozen.push(`${it.guid} (season ${it.season} episode ${it.episode})`);
+    const list = bySeason.get(it.season) ?? [];
+    list.push(it);
+    bySeason.set(it.season, list);
+  }
+  for (const [season, list] of bySeason) {
+    const seen = new Map();
+    for (const it of list) {
+      if (seen.has(it.episode)) fail(`season ${season} episode ${it.episode} is used by both ${seen.get(it.episode)} and ${it.guid}`);
+      else seen.set(it.episode, it.guid);
+    }
+    for (let n = 1; n <= list.length; n++) {
+      if (!seen.has(n)) fail(`season ${season} has ${list.length} items but no episode ${n}`);
+    }
+  }
+}
 
 // ---- FROZEN DATES (22 October 2026) -----------------------------------------
 // ⚠️ Restated, not imported. Every LIVE item's pubDate must be exactly the date it was
@@ -481,3 +605,9 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`check-podcast-guids: ${summary} — every guid and enclosure URL matches the pre-renumbering set.`);
+if (unfrozen.length) {
+  console.log(
+    `check-podcast-guids: NOTE — ${unfrozen.length} per-document item(s) have no frozen number yet. Once live, add each to ` +
+      `LIVE_NUMBERS here and in src/lib/podcast-feed.ts with the number shown:\n  ${unfrozen.join('\n  ')}`,
+  );
+}

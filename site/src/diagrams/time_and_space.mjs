@@ -259,10 +259,10 @@ const denyTheReception = {
   players: [
     { id: 'G', pos: 'G', at: { at: 'crease', dx: 1 } },      // (87, 0), your own
     { id: 'A1', team: 'opp', pos: 'F', at: PASSER,   label: 'the pass is made' },
-    { id: 'A2', team: 'opp', pos: 'F', at: RECEIVER, label: 'the receiver' },
+    { id: 'A2', team: 'opp', pos: 'F', at: RECEIVER, label: 'the receiver', labelHint: [0, -7.5] },
     // A forward. The section says "you" and nothing else; see the caption, which
     // discloses the choice and says the read does not depend on it.
-    { id: 'F', pos: 'F', at: COVER, label: 'arrives as the puck does' },
+    { id: 'F', pos: 'F', at: COVER, label: 'arrives as the puck does', labelHint: [-2.18, -24.25] },
   ],
 
   // NOT `numbered`. The section's instruction is "arrive as the puck does" — the

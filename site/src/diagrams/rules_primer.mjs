@@ -172,11 +172,17 @@ const offsideFaceoffLocation = {
     // precede the puck into the attacking zone." Both skates well over the line —
     // this is the offside, and it is the same offside in both cases.
     { id: 'A1', pos: 'F', at: { at: ATT_BLUE, dx: 12, dy: 6 }, label: 'preceded the puck' },
-    { id: 'C', pos: 'F', at: OFF_CARRIER, label: 'carries it in' },
+    // labelHint: HEAD's slot under C, drawn without a leader. Unhinted, the pushed slot ran
+    // the words into the corner of the "if carried" box (27 Oct 2026).
+    { id: 'C', pos: 'F', at: OFF_CARRIER, label: 'carries it in', labelHint: [0, -7.5] },
     // Short label on purpose: the placer sizes a label by its character count, and
     // "fires it in from his own end" is wide enough to be dragged across the pass
     // route it belongs to. The caption says whose end it is.
-    { id: 'D', pos: 'D', at: OFF_D, label: 'fires it in' },
+    // labelHint: below and left of the "if shot or passed" box, with a leader. The placer's
+    // own slot put "fires it in" INSIDE that box, where it read as the place the puck is
+    // fired from — the opposite of the caption (site review, 27 Oct 2026; HEAD had it too).
+    // The corner arc and the box leave no closer slot that keeps the words out of it.
+    { id: 'D', pos: 'D', at: OFF_D, label: 'fires it in', labelHint: [20, -26] },
   ],
 
   routes: [

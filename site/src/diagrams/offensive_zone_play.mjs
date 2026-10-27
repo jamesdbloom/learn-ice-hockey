@@ -554,7 +554,9 @@ const lowToHigh = {
     'stays on the blue line. The goalie is in the crease; no other defenders are drawn.',
 
   players: [
-    { id: 'F1', pos: 'F', at: HALF_WALL,           label: 'passes, then supports' },
+    // labelHint: HEAD's slot, left of F1 along the wall. Without it the pushed placer put
+    // the label in the circle, stacked on "high-slot option" (diagram review, 27 Oct 2026).
+    { id: 'F1', pos: 'F', at: HALF_WALL,           label: 'passes, then supports', labelHint: [-28.5, 0.25] },
     { id: 'F2', pos: 'F', at: NET_FRONT,           label: 'screen and tip' },
     { id: 'F3', pos: 'F', at: HIGH_SLOT_SUPPORT,   label: 'high-slot option' },
     { id: 'D',  pos: 'D', at: 'point:right',       label: 'walks, then shoots' },

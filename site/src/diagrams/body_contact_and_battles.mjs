@@ -1455,7 +1455,10 @@ const shotBlockGetClose = {
   ],
 
   players: [
-    { id: 'D', team: 'opp', pos: 'D', at: SB_SHOOTER, label: 'the shooter' },
+    // labelHint: under the shooter, as at HEAD, nudged 3 ft off the puck side so it clears the
+    // no-leader margin. Unhinted, the label went 11 ft above the D and its leader ran down the
+    // blue line, where the dashes vanish into the band (27 Oct 2026).
+    { id: 'D', team: 'opp', pos: 'D', at: SB_SHOOTER, label: 'the shooter', labelHint: [-3, -7.5] },
 
     // OURS, so OPEN; a forward, so a CIRCLE. `shooting-lane-and-the-step` draws the mirror
     // image of this player — an opponent standing in a shooter's lane — as a forward and
