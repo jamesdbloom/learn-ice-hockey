@@ -13,7 +13,7 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG103 in flight (27 Oct, uncommitted):** A goaltender (:1427 "may be", :1411 citations, :789 antecedent); B defender and center (DOPS under-16 limb, "never for a whistle"); C risk_management (IIHF hooking/tripping majors eject in British women's/junior); D forechecking_systems.md (:617, :626, optional 602(a)); E dzc :177 three seconds and bcb :1150 whistle; F uk_rules DOPS C.1 boarding minor; G diagrams (forecheck-122 tag 2, labels over dots, relax warnings). CARHA "at least one game" sweep done: no match site carries it, so that row is closed.
+- **SG103 content: DONE (record sg103_content_carryovers).** Closed: goaltender warm-up lines and "may be reviewed"; "never for a whistle" now names the act in defender, dzc and bcb; forechecking :626 HC mandatory-if-hurt; DOPS under-16 limb (left: errs harsh, unsettled source); risk_management (already done); DOPS boarding minor (refuted). **SG103 diagrams (agent G) in review:** 15 diagrams with labels off faceoff dots (25→11 dot-in-label) and relax warnings 16→13; forecheck-122 tag 2 has no clean spot. New: the renderer voices "2.2(i)" as "clause one" (HC 2.2(i), dzc 10.1(i)); fix in md_to_speech between waves.
 
 - **SG95–SG100: DONE** (a6d7ff5, e6d0749, 899148b, 586a353, 4309ba0). Open carry-overs:
   - **Closed 27 Oct** (record: project/reviews/ihuk76_lateness_and_eihl_version_2026-10-27.md): In-House Rule 76 and lateness are researched and still unsettled by any British source, so faceoffs :799/:814 stay as written. The EIHL Casebook on disk is v1.1 (sources/README :2215); its footers are stale;
@@ -24,17 +24,8 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
     - 16 relax warnings remain; about 29 labels sit over faceoff dots;
     - cosmetic: the goal line runs through "seals D1", and the circle edge through "takes the weak side" (both broken by the halo);
     - dz-walk-down-man tag 2 sits about 1.2 ft above "goes with the carrier" (minor).
-- **SG93 and SG94: DONE (ec6d1d6, fe91058).** Carry-overs:
-  - DOPS C.1 lists "Boarding"; the corpus says "a boarding major" (uk_rules :413). Is a boarding minor also a C.1 trigger? C.1's triggers come from the owner page, not the C.1 text.
-  - The DOPS carriers at defender :496, center :773 and defender :910 omit the under-16 written-warning limb that the owner page carries.
-  - goaltender :1427 says "is reviewed" where the source says "may be" (errs harsh); goaltender facts :1411 is 300/300 and lost the USAH 636(c) and HC 2.2(i) citations.
-  - goaltender :789 "those three books' rule" is a check_facts_antecedents hit with the antecedent in the same line.
-- **SG91 and SG92: DONE and pushed** (86aec8e, 0d5b275, 97db549, dd29454; records sg91a–e, sg92). SG92 carry-overs:
-  - risk_management :648, :664, :692: the IIHF hooking and tripping majors eject in British women's and junior hockey (the same shape as :318);
-  - forechecking :1041, :1047, KT8, KT9 speak of ejection without the 602(a) match (incomplete, not false; optional);
-  - dzc :177 says "more than three seconds", while the six SG92 sites say "a minor by three seconds" (both are Casebook wording; make them consistent if touched);
-  - forechecking :617 voices "reckless" against both tiers (errs harsh); :626 "that pair" is a short pointer;
-  - defender :214 and bcb :1150 "never for a whistle" is elliptical voiced alone.
+- **SG93 and SG94: DONE (ec6d1d6, fe91058).** Carry-overs closed in SG103.
+- **SG91 and SG92: DONE and pushed** (86aec8e, 0d5b275, 97db549, dd29454; records sg91a–e, sg92). Carry-overs closed in SG103.
 - **Diagram labels, halo and feed freeze: DONE (9737b01, record sg93_diagram_leaders_and_feed_freeze).** Carry-overs: a live episode not yet in LIVE_NUMBERS is only NOTE-guarded (add each new episode to LIVE_NUMBERS in its publishing commit); no checker finds leaders hidden along painted lines or labels stacked into one block, and about 160 changed diagrams were checked by script only.
 - **NotebookLM batch 9: DONE and published (8cd3142, record notebooklm_batch9).**
 - **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.

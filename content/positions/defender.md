@@ -206,12 +206,12 @@ Convention: Without a trapezoid you can both legally reach a dead corner rim, so
 
 ### Defensive Zone: Pressuring an Opponent with the Puck
 
-**In short:** As the strong-side defender, pressure or angle the carrier and pin the puck, not the player, until help arrives — under USA Hockey it is a minor by three seconds.
+**In short:** As the strong-side defender, pressure or angle the carrier and pin the puck, not the player, until help arrives, then move it. Never hold it to get a whistle: that is a minor, and under USA Hockey three seconds is enough to make it one.
 
 ```facts
 Position: Wherever the puck is on your side — the corner and behind the net included
 Action: Pressure the puck carrier directly, or angle them away from the net and the slot
-Technique: Pin the puck, not the player, with skate or stick for a second or two until help arrives — then move it or play it off the wall; never for a whistle; under USA Hockey it is a minor by three seconds
+Technique: Pin the puck, not the player, with skate or stick for a second or two until help arrives, then move it. Never hold it to get a whistle; under USA Hockey three seconds is already a minor
 Rule: Freezing the puck on the boards for a whistle is a minor in every book — NHL and IIHF 63.2(i), PWHL 65.2(i) if deliberate; USA Hockey after three seconds (Casebook 632); HC and CARHA excuse it while you are being checked (10.1, 74(b)) but not to get the whistle (HC 6.12(b), CARHA 55(a) bench minor)
 Rule: Pinning the player, not the puck, is priced — USA Hockey's Note to Rule 622 calls arms that pin an opponent to the boards holding, and IIHF women's Rule 101.1 bars using the boards to eliminate, push or pin her
 Goal: Win the puck or force a bad play that your team can recover from
