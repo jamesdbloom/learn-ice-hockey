@@ -13,7 +13,8 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG105 readability: DONE (record sg105_readability_remaining_pages).** Long paragraphs 8→1 and long KTs 36→30 corpus-wide (most remaining are kept over 60 for safety limbs). Carried: special_teams quotes the IIHF 2026/27 instigator wording to In-House readers (cite v1.1 46.3); switching KT8 "Even off the head" errs harsh under HC 7.6. Gate notes: switching :296 unmarked match half (listener pass); defender :911 head-first sentence omits the goal frame (owner ruling covers it).
+- **SG106: DONE (record sg106_listener_pass_and_carha_slide).** Unmarked penalty halves marked, goal frame added, v1.1 46.3 for In-House readers, CARHA slide wording tightened (86(b) Note), rush-trailer caption split. Left: IIHF head-contact wording differs between special_teams ("plan on major and GM") and switching ("harsher of 43 and 48") — align to the owner's 19 Oct form; HC slide wording now narrower than 8.6 in rules_primer/switching (errs safe).
+- **SG105 readability: DONE (record sg105_readability_remaining_pages).** Long paragraphs 8→1 and long KTs 36→30 corpus-wide (most remaining are kept over 60 for safety limbs). Carried: switching KT8 "Even off the head" errs harsh under HC 7.6 (the rest closed in SG106).
 - **SG104 readability: DONE (record sg104_readability_long_units).** Long paragraphs 34→8 and long KTs 62→36 corpus-wide; 14 pages; two review passes. Left: 8 long paragraphs and 36 long KTs on pages outside this wave, and some kept over 60 for safety limbs (listed in the record); sweep siblings for the Hockey Canada 7.6-vs-7.7 "deliberate" cross-check shape; zone_entries KT9 at 63 words. Listener pass on unmarked penalty halves bcb :45 and :630 (gate note); getting_started KT14 "move them" antecedent.
 - **SG103 content: DONE (record sg103_content_carryovers).** Closed: goaltender warm-up lines and "may be reviewed"; "never for a whistle" now names the act in defender, dzc and bcb; forechecking :626 HC mandatory-if-hurt; DOPS under-16 limb (left: errs harsh, unsettled source); risk_management (already done); DOPS boarding minor (refuted). **SG103 diagrams: DONE (record sg103_diagram_labels_off_dots):** 15 diagrams; dot-in-label 25→11; relax warnings 16→13. Renderer: Hockey Canada 2.2(i) and 5.2(i) are now always voiced "clause i" (lettered); a whole-corpus SSML diff against HEAD changed exactly one citation (goaltender :1411). HC 8.3(i) and 10.1(i) are ROMAN items before clause (a), so "clause one" is correct there; the safety reviewer's dzc 10.1(i) note was a false alarm.
 
@@ -35,7 +36,6 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## Captions and small rules notes (23 Oct)
 
-- **Optional: rush-trailer caption's middle sentence runs about 50 words aloud; it could split at "the first wave gets the net". Optional hardening for defender-two-on-one: "a slide that takes the carrier down can be called as tripping".**
 
 ## New page: Getting Better on Your Own
 

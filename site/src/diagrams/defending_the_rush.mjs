@@ -811,8 +811,8 @@ const trailer = {
     'toward the defended net at the left. The first wave of two has pulled both defencemen low. The ' +
     'trailer follows a few metres behind into the high slot, where the look is clean and unopposed. ' +
     'In the standard system, a low zone collapse behind a 2-1-2 forecheck, the defencemen stay with ' +
-    'the first wave, because if either steps up the first wave gets the net, and the backchecking ' +
-    'forward arriving from up-ice takes the trailer. That is an assignment rather than a law: some ' +
+    'the first wave, because if either steps up the first wave gets the net. In that system the ' +
+    'backchecking forward arriving from up-ice takes the trailer. That is an assignment rather than a law: some ' +
     'teams give the trailer to the weak-side defenceman and drop the third forward to the net front ' +
     'instead, so ask which your team runs. ' +
     'The trailer is drawn here as a forward; it is often a defenceman who has activated. ' +
