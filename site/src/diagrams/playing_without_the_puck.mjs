@@ -518,8 +518,10 @@ const widthMakesTheMiddle = {
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: 'crease' },
     { id: 'F', pos: 'F', at: D5_CARRIER, label: 'drives the middle' },
-    { id: 'F', pos: 'F', at: D5_WIDE_R, label: 'holds width' },
-    { id: 'F', pos: 'F', at: D5_WIDE_L, label: 'holds width' },
+    // labelHints: tight to each winger on the middle side, no leader; the placer's own slots
+    // put a neutral-zone dot inside the words (faceoff-dot census, 27 Oct 2026).
+    { id: 'F', pos: 'F', at: D5_WIDE_R, label: 'holds width', labelHint: [0, -6] },
+    { id: 'F', pos: 'F', at: D5_WIDE_L, label: 'holds width', labelHint: [0, 6] },
     // Twenty-one feet inside their wingers, twenty-six feet apart. Wide enough that
     // the middle lane is visibly the widest thing on the picture, which is the
     // section's claim, and not so wide that the pair has abandoned the middle

@@ -13,15 +13,16 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG103 content: DONE (record sg103_content_carryovers).** Closed: goaltender warm-up lines and "may be reviewed"; "never for a whistle" now names the act in defender, dzc and bcb; forechecking :626 HC mandatory-if-hurt; DOPS under-16 limb (left: errs harsh, unsettled source); risk_management (already done); DOPS boarding minor (refuted). **SG103 diagrams (agent G) in review:** 15 diagrams with labels off faceoff dots (25→11 dot-in-label) and relax warnings 16→13; forecheck-122 tag 2 has no clean spot. New: the renderer voices "2.2(i)" as "clause one" (HC 2.2(i), dzc 10.1(i)); fix in md_to_speech between waves.
+- **SG103 content: DONE (record sg103_content_carryovers).** Closed: goaltender warm-up lines and "may be reviewed"; "never for a whistle" now names the act in defender, dzc and bcb; forechecking :626 HC mandatory-if-hurt; DOPS under-16 limb (left: errs harsh, unsettled source); risk_management (already done); DOPS boarding minor (refuted). **SG103 diagrams: DONE (record sg103_diagram_labels_off_dots):** 15 diagrams; dot-in-label 25→11; relax warnings 16→13. New: the renderer voices "2.2(i)" as "clause one" (HC 2.2(i), dzc 10.1(i)); fix in md_to_speech between waves.
 
 - **SG95–SG100: DONE** (a6d7ff5, e6d0749, 899148b, 586a353, 4309ba0). Open carry-overs:
   - **Closed 27 Oct** (record: project/reviews/ihuk76_lateness_and_eihl_version_2026-10-27.md): In-House Rule 76 and lateness are researched and still unsettled by any British source, so faceoffs :799/:814 stay as written. The EIHL Casebook on disk is v1.1 (sources/README :2215); its footers are stale;
   - The IHUK referee site distributes "IIHF_Rule_Book_2026-27-compressed.pdf" to officials. The proxy blocked the fetch (403). Fetch it from an unfiltered network and check whether it is the 2026/27 book; that bears on the In-House edition contradiction in sources/README;
   - Glossary "sealing" is defined as "arriving second", while several diagrams and glossary lines use it for a single forechecker (commit-gate note, SG102). Nit: decide whether the definition should cover both;
   - diagrams (SG101 c5df861; SG102 fixed the three majors: cross-ice-in-your-own-end F1 now "seals D1" with no leader, dz-walk-down-man tag 2 and forecheck-212 tag 1 via badge `along`, which may now pass the midpoint, and "takes the weak side" next to F1). Open:
-    - forecheck-122 tag 2 touches F2's glyph by about 0.67 ft (minor). Retry with `along` past the midpoint, off the far side of the bars;
-    - 16 relax warnings remain; about 29 labels sit over faceoff dots;
+    - forecheck-122 tag 2 touches F2's glyph (minor): no tag position fixes it (SG103); it needs a route change, which the arrival invariant covers. Owner or leave;
+    - 13 relax warnings remain (the 11 others have no clean hint on a 2 ft grid); 11 dot-in-label remain, the deepest in nz-hinge; dump-flip-over-trap dot reads as a bullet before "one back";
+    - the boilerplate comment "a slot whose leader clears the painted lines" overstates (leaders may cross at right angles); the goalie-front-door-back-door leader runs near-parallel to the goal line;
     - cosmetic: the goal line runs through "seals D1", and the circle edge through "takes the weak side" (both broken by the halo);
     - dz-walk-down-man tag 2 sits about 1.2 ft above "goes with the carrier" (minor).
 - **SG93 and SG94: DONE (ec6d1d6, fe91058).** Carry-overs closed in SG103.

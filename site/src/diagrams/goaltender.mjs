@@ -220,7 +220,8 @@ const frontDoorBackDoor = {
   players: [
     { id: 'F1', team: 'opp', pos: 'F', at: SHOOTER_R, label: 'the shooter' },
     { id: 'F2', team: 'opp', pos: 'F', at: BACK_DOOR, label: 'back door' },
-    { id: 'G', pos: 'G', at: ON_LINE_STRONG_4, label: 'backed off' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
+    { id: 'G', pos: 'G', at: ON_LINE_STRONG_4, label: 'backed off', labelHint: [2, 12] },
   ],
 
   // The pass the depth decision is about — "a pass available across the slot", the

@@ -515,7 +515,9 @@ const rim = {
     // one was at the far blue line on a leader line half the rink long.
     { id: 'D1', pos: 'D', at: RETRIEVAL },
     { id: 'F1', pos: 'F', team: 'opp', at: { at: 'corner:right:far', dx: 4, dy: -4 },
-      label: 'seals the wall' },
+      // labelHint: below the left-far faceoff dot, inside the circle; the placer's own slot put
+      // the dot inside "the" (faceoff-dot census, 27 Oct 2026).
+      label: 'seals the wall', labelHint: [5, -12.5] },
     // "Under a rim-heavy structure, you are the rim's target and you're staying
     // low on your own wall to collect it."
     //
@@ -526,7 +528,9 @@ const rim = {
     // the own-team circle (r 2.9) reaching -44.4, so 1.9 ft of winger was drawn
     // through the lower dasher. The own circle's ceiling is 39.6 nominal and 39.2
     // once the 0.75 stroke's 0.375 halo counts; at dy 0 the ink stops at -41.8.
-    { id: 'W2', pos: 'F', at: { at: 'half-wall:left:far', dx: -1 }, label: 'the target' },
+    // labelHint: tight above W2 with no leader; the placer's own slot put the faceoff dot
+    // inside "target" (faceoff-dot census, 27 Oct 2026).
+    { id: 'W2', pos: 'F', at: { at: 'half-wall:left:far', dx: -1 }, label: 'the target', labelHint: [3, 7] },
   ],
 
   routes: [
@@ -639,7 +643,9 @@ const dToD = {
     // for having it, and the describe says "The defenceman D1 has the puck in the
     // right corner" in words.
     { id: 'D1', pos: 'D', at: DD_D1 },
-    { id: 'D2', pos: 'D', at: DD_D2, label: 'open across' },
+    // labelHint: above the left-far faceoff dot rather than on it, where the placer's own
+    // slot put the dot inside "across" (faceoff-dot census, 27 Oct 2026).
+    { id: 'D2', pos: 'D', at: DD_D2, label: 'open across', labelHint: [13, 11.5] },
     { id: 'F1', pos: 'F', team: 'opp', at: { at: 'corner:right:far', dx: 7, dy: -6 },
       label: 'pressure' },
     { id: 'F2', pos: 'F', team: 'opp', at: { at: 'half-wall:right:far', dx: 2 } },

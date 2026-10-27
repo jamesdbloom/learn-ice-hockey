@@ -127,7 +127,9 @@ const forecheckAngling = {
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
     // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
     { id: 'D', team: 'opp', pos: 'D', at: CARRIER, label: 'retrieving the puck', labelHint: [-13.5, 6] },
-    { id: 'F', pos: 'F', at: F1_AT,                label: 'the forechecker' },
+    // labelHint: directly below F with no leader; the placer's own slot was 21 ft away with the
+    // faceoff dot inside "forechecker" (faceoff-dot census, 27 Oct 2026).
+    { id: 'F', pos: 'F', at: F1_AT,                label: 'the forechecker', labelHint: [-4, -6] },
   ],
 
   routes: [
@@ -1080,7 +1082,8 @@ const forecheckRolesRotate = {
 
   players: [
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'D1', team: 'opp', pos: 'D', at: CARRIER,             label: 'the D-to-D' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
+    { id: 'D1', team: 'opp', pos: 'D', at: CARRIER,             label: 'the D-to-D', labelHint: [-16, 0] },
     { id: 'D2', team: 'opp', pos: 'D', at: ROT_D2,              label: 'the new carrier' },
     { id: 'W1', team: 'opp', pos: 'F', at: 'half-wall:right' },
     { id: 'W2', team: 'opp', pos: 'F', at: 'half-wall:left' },

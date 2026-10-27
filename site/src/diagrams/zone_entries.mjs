@@ -756,8 +756,10 @@ const flipOverTrap = {
       label: 'one back' },
 
     // labelHint: off the blue line, where its leader could not be seen, and clear of the
-    // neighbouring player it read as belonging to (label audit, 27 Oct 2026).
-    { id: 'F', pos: 'F', at: FLIP_CARRIER, label: 'no route along the ice', labelHint: [-9, 12] },
+    // neighbouring player it read as belonging to (label audit, 27 Oct 2026). Raised from
+    // [-9, 12] to [-9, 17.5], whose words cleared the blue line but sat on the neutral-zone
+    // dot, inside "the" (faceoff-dot census, 27 Oct 2026).
+    { id: 'F', pos: 'F', at: FLIP_CARRIER, label: 'no route along the ice', labelHint: [-9, 17.5] },
     { id: 'F', pos: 'F', at: FLIP_RUNNER, label: 'running underneath it' },
     { id: 'F', pos: 'F', at: FLIP_SUPPORT },
   ],

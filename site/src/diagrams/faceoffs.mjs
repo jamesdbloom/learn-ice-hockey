@@ -591,7 +591,9 @@ const neutralZoneAlignment = {
     // "Both wingers wide, level with or just behind the dot, in their lanes."
     // Wide is 30 ft off the middle, which is outside the 15 ft centre circle and
     // still 12.5 ft off the boards at y ±42.5; a stride behind is 2 ft.
-    { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: 30 },  label: 'wide, in their lane' },
+    // labelHint: above this winger, toward the boards; below it the label spanned both
+    // neutral-zone dots on this side (faceoff-dot census, 27 Oct 2026).
+    { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: 30 },  label: 'wide, in their lane', labelHint: [0, 7] },
     { id: 'W', pos: 'F', at: { at: 'centre-ice', dx: -2, dy: -30 }, label: 'wide, in their lane' },
     // "Both defencemen back toward your own blue line, one either side of the
     // middle." point:right:far and point:left:far are the far blue line's two

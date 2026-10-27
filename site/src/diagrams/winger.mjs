@@ -229,7 +229,9 @@ const wallDepthBySystem = {
     { id: 'D1', pos: 'D', at: { at: 'goal-line::far', dx: -3, dy: 7 } },      // (-92, 7)
     { id: 'W', pos: 'F', at: WALL_SWING, label: 'swing' },
     { id: 'W', pos: 'F', at: WALL_FLAT, label: 'flat/spread' },
-    { id: 'W', pos: 'F', at: WALL_STRETCH, label: 'stretch' },
+    // labelHint: above W rather than below; below, the neutral-zone dot sat inside the word
+    // (faceoff-dot census, 27 Oct 2026).
+    { id: 'W', pos: 'F', at: WALL_STRETCH, label: 'stretch', labelHint: [0, 7] },
   ],
 
   // 7.21 ft from the defenceman's centroid, which leaves 2.11 ft of ice on the

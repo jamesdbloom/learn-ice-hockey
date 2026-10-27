@@ -228,7 +228,9 @@ const trap122 = {
     // line', was too long to sit near F2 anywhere on the sheet and was read as D1's second
     // line; the caption still says "at the red line" (diagram review, 27 Oct 2026).
     { id: 'F2', pos: 'F', at: T_F2, label: 'steps up', labelHint: [-15, 0] },
-    { id: 'F3', pos: 'F', at: { at: 'centre-ice', dx: 2, dy: -WALL }, label: 'holds the far wall' },
+    // labelHint: 1.7 ft further from F3 than the placer's own slot, which put the neutral-zone
+    // dot inside "wall" (faceoff-dot census, 27 Oct 2026).
+    { id: 'F3', pos: 'F', at: { at: 'centre-ice', dx: 2, dy: -WALL }, label: 'holds the far wall', labelHint: [1, 13] },
     // labelHint: level with D1 on its left, with no leader. The earlier below-left slot
     // [-13.5, -7.5] sat on top of F2's old, longer label and the two read as one two-line
     // label; [-14, 0] was refused by the placer (diagram audit, 27 Oct 2026).
@@ -594,7 +596,10 @@ const leftWingLock = {
 
     { id: 'G', pos: 'G', at: OUR_G },
     // The two who forecheck. Deep, on opposite sides; nothing finer is claimed.
-    { id: 'C', pos: 'F', at: { at: 'goal-line', dx: -5, dy: 14 }, label: 'forechecks' },
+    // labelHint: just above the faceoff dot rather than on it, where the placer's own slot put
+    // the dot inside the word; the slot tight above C crossed the goal line and read as a bullet
+    // beside the dot (faceoff-dot census, 27 Oct 2026).
+    { id: 'C', pos: 'F', at: { at: 'goal-line', dx: -5, dy: 14 }, label: 'forechecks', labelHint: [-7, 11.5] },
     { id: 'RW', pos: 'F', at: { at: 'faceoff-dot:left', dx: 6, dy: 2 }, label: 'forechecks' },
     // The three-man line: thirds of 85 feet, centred at +-28 and 0.
     { id: 'LW', pos: 'F', at: { at: 'centre-ice', dx: LOCK_LINE_X, dy: THIRD }, label: 'the third defender' },
@@ -677,7 +682,10 @@ const regroup = {
     // what the labels carry.
     { id: 'F', pos: 'F', at: R_F1, label: 'close — short outlet' },
     { id: 'F', pos: 'F', at: { at: 'centre-ice', dx: -4, dy: -32 }, label: 'wide — outside lane' },
-    { id: 'F', pos: 'F', at: { at: THEIR_BLUE, dx: -4, dy: 8 }, label: 'high — stretch option' },
+    // labelHint: 6 ft right of the placer's own slot, which put the centre dot inside "high";
+    // 4 ft cleared it but left the dot reading as a bullet before the word (faceoff-dot
+    // census, 27 Oct 2026).
+    { id: 'F', pos: 'F', at: { at: THEIR_BLUE, dx: -4, dy: 8 }, label: 'high — stretch option', labelHint: [6, -7] },
   ],
 
   routes: [
@@ -1033,7 +1041,8 @@ const backOffAtTheLine = {
     { id: 'G', pos: 'G', at: OUR_G },
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
     { id: 'C', team: 'opp', pos: 'F', at: BL_CARRIER, label: 'steered outside' },
-    { id: 'D', pos: 'D', at: BL_D, label: 'concedes the line' },
+    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
+    { id: 'D', pos: 'D', at: BL_D, label: 'concedes the line', labelHint: [-18, 7] },
   ],
 
   routes: [

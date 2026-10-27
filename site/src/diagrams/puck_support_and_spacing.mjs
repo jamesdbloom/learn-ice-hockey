@@ -610,8 +610,10 @@ const neutralZoneLanes = {
   // different speed". Drawn abreast, the frozen shape would say the opposite of
   // what the sentence says.
   players: [
-    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: -10, dy: 32 }, label: 'strong-side lane' },
-    { id: 'F2', pos: 'F', at: { at: 'centre-ice', dx: 2, dy: 10 },   label: 'middle lane' },
+    // labelHints: each label off the neutral-zone dot (F1) and the centre dot (F2) that the
+    // placer's own slots put inside the words (faceoff-dot census, 27 Oct 2026).
+    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: -10, dy: 32 }, label: 'strong-side lane', labelHint: [9, -8.5] },
+    { id: 'F2', pos: 'F', at: { at: 'centre-ice', dx: 2, dy: 10 },   label: 'middle lane', labelHint: [0, -7] },
     { id: 'F3', pos: 'F', at: { at: 'centre-ice', dx: -4, dy: -32 }, label: 'weak-side lane' },
   ],
 

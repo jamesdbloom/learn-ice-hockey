@@ -963,7 +963,10 @@ const pkNz13 = {
     // three-man line, giving token pressure rather than attacking. Twenty-two feet
     // of daylight between him and the line behind him, because a 1-3 drawn with
     // the 1 and the 3 at the same depth is a 4 across.
-    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: -10, dy: 12 }, label: 'token pressure', labelHint: [-1.84, -8.02] },
+    // labelHint: above F1, 2 ft higher than the grid-sweep slot the label had been taking (the
+    // old [-1.84, -8.02] hint was being rejected), which put the neutral-zone dot inside "token"
+    // (faceoff-dot census, 27 Oct 2026).
+    { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: -10, dy: 12 }, label: 'token pressure', labelHint: [-1, 12] },
 
     // "the other forward and both defencemen in a line across the ice behind him".
     // Which of the three takes the middle is not stated by the section; drawn with
