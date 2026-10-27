@@ -19,8 +19,8 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
   - dzc :177 says "more than three seconds", while the six SG92 sites say "a minor by three seconds" (both are Casebook wording; make them consistent if touched);
   - forechecking :617 voices "reckless" against both tiers (errs harsh); :626 "that pair" is a short pointer;
   - defender :214 and bcb :1150 "never for a whistle" is elliptical voiced alone.
-- **Diagram labels (owner-approved leader fix): NOT YET COMMITTED.** Diagram-reviewer passes 3 and 4 gave SHIP; a browser site-reviewer then found five label misreadings (rush-trailer, breakout-wheel, dump-flip-over-trap, offside-faceoff-location, nz-1-3-1), which the fixer is comparing with HEAD and repairing. Earlier: the second diagram-reviewer pass found that the leaderless fallback creates new wrong-player readings (dump-soft-area, attack-the-seam, rush-trailer, breakout-wheel, forecheck-212, oz-low-to-high). A fixer is holding the leaderless slot to a readsAsOwn margin against every player and re-auditing with each label's own player taken from the spec. After that: a third diagram review, then a gate and commit together with the uncommitted feed freeze (podcast-feed.ts, check-podcast-guids.mjs) and the center.mjs deletion.
-- **NotebookLM batch 9: received 27 Oct, reviewed SHIP after cuts.** Winger: 15 cuts (49.4 → 48.2 min). Body Contact: 12 cuts (39.7 → 35.3 min). The steers arrived. Masters are installed and encoded (podcast.json updated, uncommitted). **Waiting on the owner's AWS SSO login to upload**, then HEAD/range check, commit podcast.json and push. The review reports are in the scratchpad (nlm9/rev_winger, rev_bcb); write the review record at publish.
+- **Diagram labels, halo and feed freeze: DONE (9737b01, record sg93_diagram_leaders_and_feed_freeze).** Carry-overs: a live episode not yet in LIVE_NUMBERS is only NOTE-guarded (add each new episode to LIVE_NUMBERS in its publishing commit); no checker finds leaders hidden along painted lines or labels stacked into one block, and about 160 changed diagrams were checked by script only.
+- **NotebookLM batch 9: DONE and published (8cd3142, record notebooklm_batch9).**
 - **Practice from SG44:** C4 names rules-verifier, so any wave that adds or changes a rule claim dispatches a rules-verifier, not only a safety-reviewer. The process document is not loosened.
 
 ## Captions and small rules notes (23 Oct)
@@ -67,8 +67,6 @@ can ship once it has been reviewed.
 
 - **NotebookLM batch 7 and 8: DONE (25 Oct).** All five regenerations are published (record: project/reviews/notebooklm_batch7_2026-10-25.md). Candidates for a future regeneration: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
 - **body_contact EIHL: OWNER RULED 26 Oct.** Trim the Sources trailer's EIHL mentions to what the page relies on; keep the nine-line fighting facts block. In progress.
-- **Wave 34 leftovers:** USA Hockey Level 1 wording; caption trim policy; the centre-fly label; delete
-  the unused `creaseThePuckDecides` diagram spec in center.mjs: OWNER RULED 26 Oct, delete it (in progress).
 - **Research scope: OWNER RULED 26 Oct, research all three (in progress).** Does the UK concussion guidance reach Scotland and Northern Ireland? Does IIHF
   202.3 reach British U19 play? What is the British U10/U12 tariff for a hit in non-checking play?
 
@@ -104,7 +102,6 @@ can ship once it has been reviewed.
 - **Fragile caption dependency (guarded, SG74):** forecheck-212-stacked, and forecheck-122 in how_to_watch_hockey, rely on forecheck-212 being embedded immediately before them. scripts/check_caption_pairs.py now reports any break (run it after reordering a host). forecheck-131's source comment copies forecheck-122's adjacency claim, but 131 is not in how_to_watch_hockey; that stale comment is a nit.
 - **Faceoff/81.4 follow-ons (low, SG64):** not yet checked: IIHF Situation Handbook rulings on 82.1, the broken-skate sites in winger, goaltender and defender in voiced context, and how HC, CARHA and USAH treat a non-taker's stick-on-stick contact (the books don't define it).
 - **PINCH_CAVEATS** (risk_management.mjs, ~870 chars, voiced in four hosts via pinch-centre-high/below) keeps both pinch captions near 1,400; trimming it needs a four-host trace.
-- **Leader lines over the token's letter: OWNER APPROVED 26 Oct, fix in progress (SG59 measurement):** the fix is a small z-order change in rink.mjs (emit leaders before glyphs), but it shortens the visible leader by the token radius. Measured over 612 leaders in 185 diagrams: 60 vanish entirely and 314 show under 2 units if drawn under the halos; drawing between halos and bodies, none vanish and 297 show under 2. That is the visible outcome the owner already rejected once, so it needs longer leaders (LEADER_MIN) or acceptance of strike-through. Owner's call.
 - **Labels crossing the blue line (worklist, SG59):** there is no checker. A census estimated 194 player labels in 99 diagrams overlapping a blue-line stroke, many legitimately on point players standing on the line. The placer (`placeLabels`) does not reserve painted lines for play diagrams. dz-walk-down-man's two labels were fixed with `labelHint` in SG59. OWNER RULED 26 Oct: a thicker LABEL_HALO (in progress, with the leader fix).
 - **🇬🇧 flag wave: DONE (SG84, 25 Oct).** 101 mid-prose flags were removed or reworded across 19 files; 86 remain, all opening a block. The convention is now in the style guide. Follow-ons:
   - **The "Playing in Britain? The IIHF flags are yours" header** (about 35 pages, plus game_management :44, rules_primer :45 and uk_rules KT :618) invites reading "flags" as the visible 🇬🇧. Suggested: "Wherever a page gives the IIHF rule, it is yours". This is a separate wave across all pages.
@@ -145,7 +142,6 @@ can ship once it has been reviewed.
   - After approval, remake all 13. Hold the playing-wing re-record until then.
 
 
-- **Feed guard follow-on (low):** SG40 froze the Basics season (8) and blocks a section-count change. Still unguarded: reordering sections, or moving a document between sections, would renumber the per-document seasons and episodes, and feed titles are not frozen. Only guids and dates are. Decide whether to freeze `itunes:season`/`itunes:episode` for live items.
 
 
 ## Renderer and podcast tooling
