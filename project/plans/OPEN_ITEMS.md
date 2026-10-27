@@ -70,10 +70,6 @@ can ship once it has been reviewed.
 
 - **ElevenLabs re-recordings: DONE 24 Oct.** All six corrected episodes are published: Switching Positions, Basics carrying-the-puck, Skating, Puck Handling, Centre and Offensive Zone Play. Transcripts match the script bodies, HEAD returns 200 and range returns 206. The Body Contact Detailed script's missing "If" is restored locally but not re-recorded; that is a low-priority row.
 
-- **NotebookLM batch 7 and 8: DONE (25 Oct).** All five regenerations are published (record: project/reviews/notebooklm_batch7_2026-10-25.md). Candidates for a future regeneration: Body Contact (head-knock aftercare: no return that day, someone else drives, not left alone; boarding unnamed) and Winger ("never hit the trailer" unvoiced).
-- **body_contact EIHL: OWNER RULED 26 Oct.** Trim the Sources trailer's EIHL mentions to what the page relies on; keep the nine-line fighting facts block. In progress.
-- **Research scope: OWNER RULED 26 Oct, research all three (in progress).** Does the UK concussion guidance reach Scotland and Northern Ireland? Does IIHF
-  202.3 reach British U19 play? What is the British U10/U12 tariff for a hit in non-checking play?
 
 ## Content: rules accuracy (each needs a rules-verifier)
 
@@ -90,15 +86,12 @@ can ship once it has been reviewed.
   - **Late-hit follow-ons (SG57):** USA Hockey allows a check only on a player in *control* of the puck, while the corpus says "has the puck". This is left for readability.
   - **Not swept:** cues outside the vocabulary, such as "finish", "take the man after the poke", "use your size", "tie them up".
 - **Restated ladders: approach exhausted on breakouts (SG51).** The second pilot saved only 20 words, because §1 was already in compressed form and the nearby facts blocks don't carry the tiers. Total across both pilots: about 250 words. Not worth repeating page by page; revisit only if a page shows a full ladder restated three or more times.
-- **breakouts, Hockey Canada 7.3 (non-checking divisions; owner decides whether it belongs):** the partner and wheel material never mentions HC 7.3, so a reader in non-checking HC hockey is not told that leaving their skating lane to make contact (the sliding pick) is penalised: minor, discretionary major plus game misconduct, mandatory on injury, or a match (hc.txt:6002-6040). CARHA 52(a) charging also reaches the sliding pick and is uncited in the section. The Wheel block is now at HARD_MAX 14/14, so this needs a body edit.
 
 - **Repetition pass:** the core_principles pilot (SG42) cut 137 of 6,152 prose words, about 2%, with no limb lost. Most repetition on that page is deliberate: safety limbs, disclosures, and the coaching-choice ask. Gains will be modest per page, so pick the longest pages next. Pilot side findings: the core_principles overview says "these ideas hold whatever system, position or league you play in", which sits uneasily with §1–2; §3's "ninety-six percent" approximates the cited 3.3–4.2%. Read both.
 - **Restated rule ladders (the bigger length win, from the SG45 breakouts pass):** repetition passes cut only about 2% a page. The real length is the same rule ladder restated in several sections. Example: breakouts carries the no-change/time-out and shorthanded-icing ladder in §1, §3 and §6. Reducing all but one to a short pointer needs a per-limb layer test (check the facts blocks still carry each locally) and a rules-verifier. Do one page as a pilot first.
 - **Spoken "Important." runs:**
   - body_contact was measured on 23 Oct and has only one run of four or more: KT8–11. These are four distinct hazards and none is voiced next door, so the run stays unless the owner rewords it.
   - rules_primer, measured in SG34: no run of four strictly consecutive. One looser run of five in §Broken sticks became four after a merge.
-- **Basics wing script** omits the weak-side winger collapsing to the slot, which winger.md relies on. Fix
-  in the next Basics remake.
 
 ## Diagrams and site
 
@@ -113,20 +106,7 @@ can ship once it has been reviewed.
 
 ## Podcasts
 
-- **Basics listenability (owner, 25 Oct):** the Basics episodes are harder to listen to than NotebookLM; "here is why" is overused and the facts are too dense. **Owner's direction, 25 Oct:**
-  - **25 Oct evening: the owner APPROVED Pilot B** (two voices; COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui). Remake all 13 Basics in this format. Add a **panic-passing** point (passing without looking): a dedicated idea in passing-and-catching, and a brief nod elsewhere where natural. Pipeline per episode: write → content-review → synthesise with --dialogue → transcript check → publish.
-  - **Basics v2 progress (25 Oct, 21:00):**
-    - **ALL 13 LIVE (34e4739, 4ef052e, 25 Oct).** Basics v2 is done.
-    - Scripts: podcast_style_b/basics/v2/. Recording: scratchpad basics_v2/make.sh <slug>.
-  - **PRINCIPLES TWO-VOICE REMAKE: DONE (26 Oct).** All 39 are published in the two-voice format (COACH oQV06a7Gn8pbCJh5DXcO, PLAYER lUTamkMw7gOzZbFIwmq4). Eight were re-recorded after the SG85/SG86 page fixes. The live feed /feed/podcast.xml (93 items) serves the new principles keys, so Spotify and Apple pick them up from it. Scripts are in podcast_style_b/detailed/v2/ (untracked).
-    - Open follow-ups: the transcript gate's digit artefacts ("F one" → "F1") make the 0.97 threshold fail falsely, so normalise numerals in verify.sh before the next batch. Ear-test a sample of the two-voice episodes (owner).
-    - **Basics player voice changed (owner, 26 Oct): DONE.** All 13 Basics episodes were re-recorded with PLAYER G7ILShrCNLfmS0A37SXS (COACH L0Dsvb3SLTyegXwtm47J unchanged) and published (commit 9db576c). The Principles keep their own pair.
-  - Two voices: COACH = L0Dsvb3SLTyegXwtm47J, PLAYER = b5Ggo9o15QPFEkYe1Mui.
-  - Keep EVERY point per episode.
-  - Apply all the other changes: scenes, terms defined in context, a varied "why", analogies, "what would you do?" moments and a short recap.
-  - Pilot A (single voice, 5 ideas) was sent to the owner.
-  - Pilot B v2 (7 ideas) was reviewed (FIX applied), recorded with --dialogue (14m14s, 6,330 credits; dialogue bills about half as much), checked by transcript at 0.992, and sent to the owner on 25 Oct. Which voice speaks each line was not machine-checked; that needs the owner's ear. Waiting on the owner's choice between A and B.
-  - After approval, remake all 13. Hold the playing-wing re-record until then.
+- **Podcasts: all published.** Basics (13, two-voice, new PLAYER voice 26 Oct), Principles (39, two-voice), and NotebookLM (all 39; batches 7–9 regenerated). Open: an ear test of a sample of the two-voice episodes (owner); add each new episode to LIVE_NUMBERS in its publishing commit.
 
 
 
@@ -147,26 +127,19 @@ can ship once it has been reviewed.
 - **HECC wording (nit, SG55):** body_contact :913 says "HECC's … page asks" while the trailer now says the reproduced brochure asks. Both are true. In :2139's trailer, "all three sources" sits near "those four".
 
 - **602(a) suspension rollout: DONE (SG81–SG83, SG88 on 26 Oct).** The cap-blocked facts lines were restructured (record: project/reviews/sg88_602a_cap_blocked_2026-10-26.md). Left by design: OZP :646, which no rewrite fits (:645 and the body carry the clause), and the bcb kneeing table cell (the clause would make the renderer drop the table). Still open:
-  - goaltender :1243 dropped the Casebook's "or match" (attribution only); forechecking :862 could restore "or one meant to injure"; bcb :374 is dense (SG82 leftover).
   - Pre-existing gap the SG88 verifier found: NHL 49.2's other kick-goal limbs and USAH 627(c)'s kick-shot ban are simplified away in passing :483. (Casebook 628 Sit. 1 was done in SG89.)
-- **rules-verifier.md source inventory:** it names 48 of 60 `sources/*.txt` files. The 12 missing are eih_code_of_conduct_2026, eih_dops_2026-27 (+layout), five eih_web_* pages, ihuk_club_regs_2026-27 (+layout) and ihuk_sex_gender_policy (+layout).
 - **Cross-document ladders (from SG75):** checking from behind is restated on five pages, each pointing to body_contact_and_battles as owner. Not yet measured; this is probably the larger saving. Also sweep for other rules pricing a hit from behind (boarding, IIHF 21) before any cut.
 - **Cross-document ladder demotion: DONE (SG76–SG78, 25 Oct), about 12,200 words.** Leftovers:
-  - glossary :287 (stick reach from behind) and :425 (a six-book cross-check ladder);
   - winger's two facts blocks at 14/14 need a ruling on moving limbs between layers;
   - untagged single-book ladder bullets remain in dzc's base shape and in defender's net-front and gap-control sections;
-  - risk_management :298 and :325 charging lines, and :751–777 slew-foot from-behind limbs;
-  - special_teams :1103 lost "for checking or charging one" in a trim. If the line is edited again, restore the point that body-checking a goalie in the crease or privileged area is never a bare minor (USAH 607(c)).
 - **DOPS follow-ons (SG76 landed the core):**
-  - Sweep the sibling pages for the old "no British ban / discretionary / Rule 28" premise: team_play_and_culture, mental_game, goaltender, getting_started and the position pages.
+  - Sweep the remaining sibling pages for the old "no British ban / discretionary / Rule 28" premise: mental_game, getting_started, and the centre and defender pages (team_play, goaltender and winger were done in SG79–SG91).
   - Check the other C.2-priced acts (slew-foot :1786 and cross-check :1459 in bcb) for an implied "the IIHF major is the whole cost".
   - The DOPS points ladder (App D/E: 10 points means a ban) is stated nowhere.
-  - rules-verifier.md's source table omits eih_dops.
   - The superseded 2022 IIHF Disciplinary Code is not on disk.
 - **HC 7.5 "ejects at every tier" simplification:** Interpretation 3 (a low-speed pin from behind is permitted) and Interpretation 1 (a stationary cross-check from behind is 9.2) are unvoiced. This is not unsafe; just note it if any line claims more.
 - **CARHA match vs 32(d): OWNER RULED 25 Oct: keep the 34(a) wording ("out until the case is dealt with"); do NOT add "at least one game" to match sites.** Sweep only for any match site that already says "at least one game" and correct it to 34(a).
 - **DOPS wave 2: DONE (SG79, 25 Oct).** Fixed the slur sites on mental_game and team_play, added one body sentence and one facts line per page, and added penalty points to uk_rules. Still open:
-  - winger, risk_management and game_management were done in SG80. Winger's two from-behind facts blocks are at 14/14, so the ban is in its body only. Follow-up: add the facts line to another winger block that has room, as game_management did.
   - **Optional:** add the Appendix J under-16 limb wherever a page addresses juniors.
   - Deliberately left low (all discretionary "up to" bands, add only if a page is edited anyway):
   - winger :555 (cross-check), :556/:746/:793
