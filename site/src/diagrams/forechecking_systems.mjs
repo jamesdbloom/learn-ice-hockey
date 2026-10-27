@@ -261,7 +261,13 @@ const forecheck212 = {
     // 3 — F2 attacks the lane, not the puck.
     { from: F2_AT, to: { at: 'half-wall:right', dx: 9, dy: -8 }, kind: 'skate', bow: 2 },
     // 4 — the first pass. Whether it beats F2 is not settled here, and must not be.
-    { from: EXIT, to: { at: 'half-wall:right', dy: -3 }, kind: 'pass' },
+    // badge: on the default left of travel this tag (4) sat on top of tag 3 — the two routes'
+    // midpoints are a few feet apart and both default tags were nudged toward the same spot.
+    // Two feet along, it sits beside the start of the pass, inside the circle, just off
+    // the pass and close to F2's arrowhead. The right of travel was tried and
+    // rejected — the pass runs just inside the faceoff circle, so a tag on that side sat on
+    // the arc and its white box hid about 4 ft of the painted circle.
+    { from: EXIT, to: { at: 'half-wall:right', dy: -3 }, kind: 'pass', badge: { along: 2 } },
   ],
 
   puck: { at: 'behind-net', dx: -3.5, dy: 10 },
@@ -541,7 +547,12 @@ const forecheck122 = {
     //     is now expressed relative to the winger himself and capped.
     { from: F2_FOX, to: { at: 'half-wall:right', dx: -11, dy: -2 }, kind: 'pressure', bow: -2 },
     // 3 — the outlet. Whether it beats F2 is not settled here.
-    { from: EXIT_122, to: { at: 'half-wall:right', dx: 4, dy: -3 }, kind: 'pass' },
+    // badge: the default tag, at the pass's midpoint, sat on the end of "the outlet". Three
+    // feet along it sits beside the start of the pass, inside the circle and clear of the
+    // label. The right of travel was tried and rejected: it put the tag's white box over
+    // the faceoff circle, which the pass runs just inside.
+    { from: EXIT_122, to: { at: 'half-wall:right', dx: 4, dy: -3 }, kind: 'pass',
+      badge: { along: 3 } },
   ],
 
   puck: OPP_PUCK,

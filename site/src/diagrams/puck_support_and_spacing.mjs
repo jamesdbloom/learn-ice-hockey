@@ -113,8 +113,10 @@ const supportInALine = {
     // pylon — a practice cone — and never a player, and X-meaning-opposition is one
     // of the symbols this corpus rewrote its notation specifically to escape.
     // labelHint: moves this label off a neighbour's label, where the two stacked and read
-    // as one player's two-line label (label audit, 27 Oct 2026).
-    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes', labelHint: [-2, -18] },
+    // as one player's two-line label (label audit, 27 Oct 2026). Moved [-2, -18] -> [1, -18]:
+    // at -2 the leader slanted left through the final "e" of "option one"; at +1 it runs down
+    // the gap between "option one" and "puck carrier", 1.2 ft clear of the nearer word.
+    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes', labelHint: [1, -18] },
   ],
 
   // Deliberately no routes. Drawing the two pass lanes would draw two dashed

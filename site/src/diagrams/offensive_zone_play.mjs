@@ -1138,8 +1138,13 @@ const cycleReverse = {
     { id: 'F',  team: 'opp', pos: 'F', at: { at: 'corner:right', dx: 7, dy: -8 }, label: 'gone past you' },
     // The teammate arriving into the vacated space, on the half-wall — the spot
     // this module names once and reuses. 16.8 ft from the carrier.
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
-    { id: 'F2', pos: 'F', at: HALF_WALL, label: 'arriving behind you', labelHint: [-10.5, -7.5] },
+    // labelHint: level with the player, out to the left along the boards, with NO leader —
+    // the words end about 3 ft short of the glyph, far nearer it than any other player. The
+    // half-wall spot sits 1.5 ft outside the top of the faceoff circle, so every slot below
+    // or below-left drew a leader running beside the arc for its whole visible length (the
+    // earlier [-10.5, -7.5] lay within about 1.2 ft of it); a label level with the player needs no
+    // line to cross the circle at all. Measured in the built SVG, 27 Oct 2026.
+    { id: 'F2', pos: 'F', at: HALF_WALL, label: 'arriving behind you', labelHint: [-18.5, -1] },
     { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
   ],
 

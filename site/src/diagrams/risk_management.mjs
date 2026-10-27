@@ -982,7 +982,10 @@ const crossIceOwnEnd = {
     { id: 'W2', pos: 'F', at: XI_W2, label: 'the far outlet', labelHint: [-15, -1.5] },
     { id: 'F1', team: 'opp', pos: 'F', at: XI_F1, label: 'seals the wall' },
     { id: 'F2', team: 'opp', pos: 'F', at: XI_F2, label: 'in the middle' },
-    { id: 'F3', team: 'opp', pos: 'F', at: XI_F3, label: 'slides across' },
+    // labelHint: level with F3, out to the left, with no leader. Placed by the table the label
+    // went up into the shaded zone and sat on its dashed left edge, where it read as the
+    // zone's own label (diagram review, 27 Oct 2026). Same shape as "the far outlet" below it.
+    { id: 'F3', team: 'opp', pos: 'F', at: XI_F3, label: 'slides across', labelHint: [-14, -1] },
   ],
 
   // NOT `numbered`. The pass and the slide are one instant, not two steps: the whole

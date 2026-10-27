@@ -617,8 +617,12 @@ const walkDownZone = {
   players: [
     // labelHint: just above the D and 2 ft out, close enough to need no leader. A leader here
     // either ran down the blue line or crossed the puck, where a dashed line reads as a pass
-    // (diagram review, 27 Oct 2026).
-    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point', labelHint: [2, 6.5] },
+    // (diagram review, 27 Oct 2026). Raised 6.5 -> 7.2: at 6.5 the descender line of the words
+    // sat exactly on the top edge of route tag 1 (25.9 ft both). A `badge` move cannot clear
+    // it — further along the carry rises and the tag rises with it, nearer the start it lands
+    // on the puck, and on the right of travel it lands on the winger or on tag 2. At 7.2 there is 0.7 ft of
+    // air and the label is still drawn without a leader.
+    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point', labelHint: [2, 7.2] },
     { id: 'D', team: 'opp', pos: 'D', at: 'point:left' },
     { id: 'F', team: 'opp', pos: 'F', at: 'corner:right' },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_NETFRONT },
@@ -693,8 +697,12 @@ const walkDownMan = {
   players: [
     // labelHint: just above the D and 2 ft out, close enough to need no leader. A leader here
     // either ran down the blue line or crossed the puck, where a dashed line reads as a pass
-    // (diagram review, 27 Oct 2026).
-    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point', labelHint: [2, 6.5] },
+    // (diagram review, 27 Oct 2026). Raised 6.5 -> 7.2: at 6.5 the descender line of the words
+    // sat exactly on the top edge of route tag 1 (25.9 ft both). A `badge` move cannot clear
+    // it — further along the carry rises and the tag rises with it, nearer the start it lands
+    // on the puck, and on the right of travel it lands on the winger or on tag 2. At 7.2 there is 0.7 ft of
+    // air and the label is still drawn without a leader.
+    { id: 'D', team: 'opp', pos: 'D', at: WD_FROM, label: 'walks down from the point', labelHint: [2, 7.2] },
     { id: 'D', team: 'opp', pos: 'D', at: 'point:left' },
     { id: 'F', team: 'opp', pos: 'F', at: 'corner:right' },
     { id: 'F', team: 'opp', pos: 'F', at: OPP_NETFRONT },

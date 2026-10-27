@@ -229,8 +229,13 @@ const loosePuckWhoGoes = {
     // merged with the net-front defender it sits seven feet from.
     { id: 'G', pos: 'G', at: { at: 'crease', dy: 2.5 } },
     { id: 'F', pos: 'F', at: D2_GOER, label: 'goes hard' },
-    // labelHint: a slot whose leader clears the painted lines, dots and puck; without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
-    { id: 'F', pos: 'F', at: 'half-wall:right', label: 'boards-side support', labelHint: [-13.5, -9] },
+    // labelHint: level with the player, out to the left along the boards, with NO leader —
+    // the words end about 3 ft short of the glyph, far nearer it than any other player. The
+    // half-wall spot sits 1.5 ft outside the top of the faceoff circle, so every slot below
+    // or below-left drew a leader running beside the arc for its whole visible length (the
+    // earlier [-13.5, -9] lay within about 1.2 ft of it); a label level with the player needs no
+    // line to cross the circle at all. Measured in the built SVG, 27 Oct 2026.
+    { id: 'F', pos: 'F', at: 'half-wall:right', label: 'boards-side support', labelHint: [-18.5, -1] },
     // Triangle at the net front: this document's by-position table gives net-front
     // coverage to the defenceman, and the glossary's standard coverage puts the
     // weak-side defenceman there. Three and a half feet off the net-front node and

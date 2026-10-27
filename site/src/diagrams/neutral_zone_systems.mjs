@@ -682,7 +682,9 @@ const regroup = {
 
   routes: [
     // 1 — "A forward, unable to advance, turns and passes back to a defenceman."
-    { from: R_F1, to: { at: OUR_BLUE, dx: 10, dy: 23 }, kind: 'pass' },
+    // badge: the default left-of-travel tag sat on "takes the strong side"; on the right of
+    // travel it sits above the pass, toward the boards.
+    { from: R_F1, to: { at: OUR_BLUE, dx: 10, dy: 23 }, kind: 'pass', badge: { side: 'right' } },
     // 2 — the D-to-D. Flat and hard, and drawn with nobody in the lane. Both
     //     passes stop ~6 ft short of their receiver; drawn to the glyph, the
     //     3 ft arrowhead lands on top of the triangle.
