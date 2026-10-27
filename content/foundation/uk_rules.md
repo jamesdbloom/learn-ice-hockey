@@ -631,7 +631,7 @@ document, that is named too.*
 
 8. **Goalies: play as though the trapezoid binds.** England Ice Hockey's suspension is unsettled in scope and standing, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goalie may come out for a dump-in.** Ask your league which applies.
 
-9. **Keep your stick below every opponent's shoulders in either IIHF edition. The Elite League plays 2026/27; elsewhere, ask which.** A high stick is a minor, a reckless one can be a major with an ejection, an injuring one a double minor, under 2026/27 even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
+9. **Keep your stick below every opponent's shoulders.** A high stick is a minor, a reckless one can be a major with an ejection, and an injuring one a double minor — under the 2026/27 book, which the Elite League plays, even if never carried high. Lift sticks up, not sideways, never at a player bent over the puck.
 
 10. **Skaters: drop a broken stick the moment it breaks.** Playing on with it is a minor, and under the In-House Rules so is skating with it anywhere on the ice. Take a replacement handed to you, or pick up your own or a teammate's unbroken stick — never one thrown to you, and never an opponent's or a goalie's.
 
@@ -647,17 +647,17 @@ document, that is named too.*
 
 16. **Count your misconducts as well as your majors: two of either end your game.** Under the In-House Rules kit earns misconducts too — a missing neck guard, a loose chin strap after a team warning, playing on bare-headed — and **a dive is a minor plus a 10-minute misconduct**. The Elite League keeps a dive to the plain minor.
 
-17. **Expect a fight to end your game.** Only a plain willing fight during play is softened: in NIHL, SNL and BUIHA Varsity, and an Elite League original fight, if it is your first major (count the season; the League does not say). ⚠️ **In women's hockey, and in an NIHL game's last five minutes or overtime, a fighting major ejects you.**
+17. **Expect a fight to end your game.** Only a plain willing fight during play is softened: in NIHL, SNL and BUIHA Varsity, and in the Elite League an original fight that is your first major (count the season; the League does not say). ⚠️ **In women's hockey, and in an NIHL game's last five minutes or overtime, a fighting major ejects you.**
 
-18. **Never instigate, be the aggressor or sucker-punch, and in the Elite League tie your jersey down.** ⚠️ **Each ejects you** (a sucker punch, under 2026/27, one that injures), except a first, early Elite League instigation that is neither aggression nor your second major: a minor, a major, a ten-minute misconduct and League review. There, a jersey off before a fight, or lost untied, adds a game misconduct.
+18. **Never instigate, be the aggressor or sucker-punch, and in the Elite League keep your jersey on and tied down.** ⚠️ **Each ejects you** (a sucker punch, under 2026/27, one that injures), except a first, early Elite League instigation with no aggression or earlier major: a minor, major and ten-minute misconduct, then League review. There, taking it off before a fight, or losing it untied, adds a game misconduct.
 
-19. **Treat a major as the start of a disciplinary process, not the whole bill.** The referee reports every major after the game, and supplementary discipline can follow whether or not the act was penalised. ⚠️ **At a club in England or Wales, outside the Elite League, plan on at least a one-game ban for a game misconduct for checking from behind or a check to the head, a major for boarding, or any fight in the last five minutes, overtime or at the end of the game — and on missing a game in every other league or age group you are registered in.** Under 16, a first offence may draw a written warning instead; a second or serious one is still a suspension.
+19. **Expect discipline after the game, even for an act nobody penalised.** ⚠️ **At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or to the head, a boarding major, or a fight in the last five minutes, in overtime or at the end of the game means at least a one-game ban, for every team you play for.**
 
 20. **If an altercation starts, stay on the bench or in the box until an official releases you.** Leaving for any reason is barred, and one penalty makes an altercation. Skating around it is not staying out, and your penalty expiring is not a release. In the Elite League, leaving to join one also brings an automatic three-game minimum suspension.
 
 21. **Find out before the game how a tie is settled.** Under the In-House Rules only NIHL fixtures, SNL fixtures that provide for it and BUIHA **VARSITY OT** games play overtime, and shootouts use **three** shooters (the Elite League, five). Don't plan on your best shooter taking two of the three. The NIHL National Playoff Final never goes to a shootout.
 
-22. **Before you need it, find your rink's first aider and phone, and learn all fourteen red flags.** At an England Ice Hockey fixture the rink needs a first aider, a checked kit, a shared emergency plan and a phone, ⚠️ **but need not have an ambulance or doctor.** Nothing read here sets this for an Elite League game or for any practice.
+22. **Before you need it, find your rink's first aider and phone, and learn all fourteen red flags.** At an England Ice Hockey fixture the rink needs a first aider, a checked kit, an emergency plan and a phone, ⚠️ **but not an ambulance or doctor.** Nothing read here sets these for an Elite League game or any practice.
 
 23. **Know which number to call.** ⚠️ **Call 999 for any red flag or other serious injury. For a head knock with none, call 111 within 24 hours (in Northern Ireland, where you cannot call 111, your GP or GP out-of-hours), and don't leave the player alone for those 24 hours.**
 
