@@ -1,6 +1,6 @@
 # Conditioning and Recovery
 
-> **Rule set:** Written to NHL rules. Physical preparation is not governed by playing rules, but the **shift length** your league's culture permits and whether **body checking** is legal both change what your body has to survive, and those are flagged where they matter. **Playing in the UK? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Physical preparation is not governed by playing rules, but the **shift length** your league's culture permits and whether **body checking** is legal both change what your body has to survive, and those are flagged where they matter. **Playing in the UK? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **This document covers injury and health.** ⚠️ **It is a hockey document, not medical advice.** Nothing here diagnoses, treats or rehabilitates anything. Where it says "see a professional", that is the instruction, not a disclaimer.
 >

@@ -2,10 +2,10 @@
 
 > **Rule set:** Written to NHL rules; other books are flagged where they change how you play.
 > **"The six books" are the NHL, the IIHF, the PWHL, USA Hockey, Hockey Canada and CARHA**; the
-> PWHL's faceoff rules are the NHL's, renumbered. **Playing in Britain? The IIHF flags
-> are yours** — see [UK and England Rules](../foundation/uk_rules.md).
+> PWHL's faceoff rules are the NHL's, renumbered. **Playing in Britain? Wherever this page gives the IIHF rule,
+> it is yours** — see [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Before you act on an IIHF flag, find out which edition and league is yours** — ⚠️ **on faceoffs
+> **Before you act on an IIHF rule, find out which edition and league is yours** — ⚠️ **on faceoffs
 > it changes who comes off the ice.** The IIHF 2025/26 book only warned your team; the 2026/27
 > edition ejects the centre for most violations, though a centre who moves early commits a violation
 > that only re-drops the puck. The IHUK In-House Rules replace the centre for every violation except after an icing. The Elite

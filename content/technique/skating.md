@@ -2,7 +2,7 @@
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. Skating technique itself
-> is not governed by rule. The few places a rule set does reach it — rink width, contact at the boards (boarding, hits from behind) and the crease at the net — are flagged where they come up. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> is not governed by rule. The few places a rule set does reach it — rink width, contact at the boards (boarding, hits from behind) and the crease at the net — are flagged where they come up. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Rink Map](../foundation/rink_map.md) · [Puck Handling](puck_handling.md) · [Body Contact and Battles](body_contact_and_battles.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Defender](../positions/defender.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Equipment](../off-the-ice/equipment.md) · [UK and England Rules](../foundation/uk_rules.md)
 

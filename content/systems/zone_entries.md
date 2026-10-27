@@ -1,8 +1,8 @@
 # Zone Entries
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
-> IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the
+> IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Rules Primer](../foundation/rules_primer.md) · [UK and England Rules](../foundation/uk_rules.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Offensive Zone Play](offensive_zone_play.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md)
@@ -138,7 +138,7 @@ See [Risk Management](../hockey-iq/risk_management.md) for how this thinking gen
 
 Most players know offside as something whistled against them. Learn the exact wording and it becomes something you use. **[Rules Primer](../foundation/rules_primer.md) covers Rule 83** in full; this document adds one thing — the **trail-skate drag** — and the four clauses it rests on.
 
-**If you play in Britain, read the IIHF flags below as your own.** Every level here — the Elite League, the NIHL, the recreational and junior game, university hockey — runs the IIHF Rule Book. One local amendment touches this rule: because **on-ice video review is not available in EIH or SIHA competition**, a **Coach's Challenge is not permitted** there either (In-House Rules, Rules 37 and 38, amending IIHF Rule 38 and therefore Rule 83.5). In those competitions a missed offside on the ice is the end of the matter. See [UK and England Rules](../foundation/uk_rules.md).
+**If you play in Britain, read the IIHF rules below as your own.** Every level here — the Elite League, the NIHL, the recreational and junior game, university hockey — runs the IIHF Rule Book. One local amendment touches this rule: because **on-ice video review is not available in EIH or SIHA competition**, a **Coach's Challenge is not permitted** there either (In-House Rules, Rules 37 and 38, amending IIHF Rule 38 and therefore Rule 83.5). In those competitions a missed offside on the ice is the end of the matter. See [UK and England Rules](../foundation/uk_rules.md).
 
 ### The four clauses the technique rests on
 

@@ -1,8 +1,8 @@
 # Special Teams
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
-> IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the
+> IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](../foundation/uk_rules.md). The shorthanded-icing exemption and its
 > two carve-outs are set out in full below, and **neither carve-out is IIHF's** — read
 > **"You may ice the puck freely — where your rule set allows it"** below before you build a kill

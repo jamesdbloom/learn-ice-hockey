@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey, Hockey Canada or typical rec-league
 > rules differ in a way that changes how you play, it is flagged inline. This document contains more
 > of those flags than any other in this guide, because **whether body checking is legal at all
-> depends entirely on which league you are in.** **Playing in Britain? The IIHF flags are yours** —
+> depends entirely on which league you are in.** **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** —
 > every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](../foundation/uk_rules.md), and read **"If you play in Britain"** in §1
 > before you play a shift.
@@ -139,7 +139,7 @@ Rule: The age-scoped half of In-House Rule 101 is its other bullet, which applie
 Key: Read junior hockey the same way at every age, U19 to U10 — In-House Rule 201 scopes the IIHF junior rules to all junior groups without naming 201.1, so treat a major as ending the game
 ```
 
-Every age line set out above is North American — USA Hockey's and Hockey Canada's — and none of them transfers to Britain. **Your book is the IIHF Rule Book**, adopted by Ice Hockey UK and the BUIHA for *"England, Wales, Scotland and Northern Ireland (the Home Countries)"*, with the **In-House Rules** on top of it as amendments. So the IIHF rows and flags in this document — Rule 43 on checking from behind, Rule 42 on charging, Rule 48 on head contact, Rule 101.1 on women's hockey — describe your game; the USA Hockey and Hockey Canada rows do not. [UK and England Rules](../foundation/uk_rules.md) has the full amendment list.
+Every age line set out above is North American — USA Hockey's and Hockey Canada's — and none of them transfers to Britain. **Your book is the IIHF Rule Book**, adopted by Ice Hockey UK and the BUIHA for *"England, Wales, Scotland and Northern Ireland (the Home Countries)"*, with the **In-House Rules** on top of it as amendments. So the IIHF rows and rules in this document — Rule 43 on checking from behind, Rule 42 on charging, Rule 48 on head contact, Rule 101.1 on women's hockey — describe your game; the USA Hockey and Hockey Canada rows do not. [UK and England Rules](../foundation/uk_rules.md) has the full amendment list.
 
 **Neither rule book states an age at which body checking becomes legal in Britain.** The IIHF book restricts checking in one place only, Rule 101.1 on women's hockey, and its junior rules say nothing about contact; the In-House Rules add nothing either. ⚠️ **So do not borrow a North American age line: the answer lives in your competition's own *Rules of Competition*.** Four of IHUK's 2026-27 editions were read for this document — junior, U10, NIHL Division 1 and 2, and WNIHL.
 

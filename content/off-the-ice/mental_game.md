@@ -1,6 +1,6 @@
 # The Mental Game
 
-> **Rule set:** Written to NHL rules. Almost nothing here is governed by a rule. Where the rulebook does bite — arguing with officials and losing your temper on the bench — the NHL rule is quoted and the other books' prices are flagged. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Almost nothing here is governed by a rule. Where the rulebook does bite — arguing with officials and losing your temper on the bench — the NHL rule is quoted and the other books' prices are flagged. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Goaltender](../positions/goaltender.md) · [Team Play and Culture](team_play_and_culture.md) · [Practice and Development](practice_and_development.md) · [Conditioning and Recovery](conditioning_and_recovery.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Risk Management](../hockey-iq/risk_management.md) · [Shooting](../technique/shooting.md) · [UK and England Rules](../foundation/uk_rules.md)
 >

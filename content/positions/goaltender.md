@@ -1,6 +1,6 @@
 # Goaltender
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Goaltending is where the books diverge most** — the paddle limit, the penalty-shot ladder, shootout swaps, shorthanded icing and ⚠️ **whether a goaltender-interference call can be reviewed at all** all change with the rule set you actually play.
 >

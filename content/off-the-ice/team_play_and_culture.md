@@ -1,7 +1,7 @@
 # Team Play and Culture
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Getting Started](../getting-started/getting_started.md) · [Rink Map](../foundation/rink_map.md) — the dictionary for every line, zone and named area of the ice used below · [Game Management](../systems/game_management.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Mental Game](mental_game.md) · [Practice and Development](practice_and_development.md) · [Playing Without The Puck](../hockey-iq/playing_without_the_puck.md) · [Risk Management](../hockey-iq/risk_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 

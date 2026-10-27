@@ -1,6 +1,6 @@
 # Winger
 
-> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Centre](center.md) · [Defender](defender.md) · [Goaltender](goaltender.md) · [Switching Positions](switching_positions.md) · [Rink Map](../foundation/rink_map.md) · [Language and Glossary](../foundation/language_and_glossary.md) · [Rules Primer](../foundation/rules_primer.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Zone Entries](../systems/zone_entries.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) · [Defending the Rush](../systems/defending_the_rush.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [UK and England Rules](../foundation/uk_rules.md)
 

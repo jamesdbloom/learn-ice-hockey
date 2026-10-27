@@ -1,8 +1,8 @@
 # Rink Map
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
-> IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the
+> IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](uk_rules.md).
 >
 > **Related:** [Language and Glossary](language_and_glossary.md) · [UK and England Rules](uk_rules.md) · [Getting Started](../getting-started/getting_started.md) · [Rules Primer](rules_primer.md) · [On-Ice Communication](on_ice_communication.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md) · [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)

@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules, with IIHF, USA Hockey and rec-league differences
 > flagged where they change how you play. This is mostly tactics; the four rules that bite
 > are **offside** (Rule 83), **rink size** (Rule 1.2), the **goalie's trapezoid** (Rules 1.8,
-> 27.8, 63.2(viii)) and **icing** (Rule 81). **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> 27.8, 63.2(viii)) and **icing** (Rule 81). **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Playing Without the Puck](playing_without_the_puck.md) · [Time and Space](time_and_space.md) · [Breakouts](../systems/breakouts.md) · [Offensive Zone Play](../systems/offensive_zone_play.md) · [On-Ice Communication](../foundation/on_ice_communication.md) · [Scanning and Anticipation](scanning_and_anticipation.md) · [Rink Map](../foundation/rink_map.md) · [UK and England Rules](../foundation/uk_rules.md)
 

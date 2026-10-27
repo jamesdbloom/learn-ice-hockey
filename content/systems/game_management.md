@@ -1,8 +1,8 @@
 # Game Management
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF
-> flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the IIHF
+> rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](../foundation/uk_rules.md). Read **Overtime** and **Shootouts** before you
 > rely on them: under the 2026-27 In-House Rules there is no overtime at all outside NIHL and some
 > SNL fixtures. The Elite League writes its own, and plays it.
@@ -41,7 +41,7 @@
 
 **Trailing teams shoot more and leading teams shoot less.** That is well documented, and it distorts every raw statistic. Much else here is coaching lore rather than measurement, and the document says so where it matters.
 
-**Which book your league runs changes some of the costs** — what icing costs you, whether coincidental minors make it 4-on-4, and whether there is overtime at all. **In Britain the IIHF flags are yours**, and many fixtures have no overtime. Where a rule *is* the tactic, it is set out in full.
+**Which book your league runs changes some of the costs** — what icing costs you, whether coincidental minors make it 4-on-4, and whether there is overtime at all. **In Britain, wherever this page gives the IIHF rule, it is yours**, and many fixtures have no overtime. Where a rule *is* the tactic, it is set out in full.
 
 ---
 

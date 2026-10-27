@@ -1,6 +1,6 @@
 # Rules Primer
 
-> **Rule set:** Written to NHL rules, with IIHF, USA Hockey and rec-league differences flagged where they change how you play. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](uk_rules.md) and read **"If you play in Britain"** in the Overview first.
+> **Rule set:** Written to NHL rules, with IIHF, USA Hockey and rec-league differences flagged where they change how you play. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](uk_rules.md) and read **"If you play in Britain"** in the Overview first.
 >
 > **Related:** [UK and England Rules](uk_rules.md) · [Rink Map](rink_map.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Faceoffs](../systems/faceoffs.md) · [Special Teams](../systems/special_teams.md) · [Game Management](../systems/game_management.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
@@ -42,7 +42,7 @@
 
 ### If you play in Britain, the IIHF column is yours
 
-**In short:** If you play anywhere in Britain, follow the IIHF flags; in the Elite League, its own Casebook overrides them where they differ.
+**In short:** If you play anywhere in Britain, the IIHF rule is yours as amended locally — by the In-House Rules, or in the Elite League by its own Casebook.
 
 This document is written to NHL rules.
 
@@ -52,7 +52,7 @@ Every level of the game here runs on the **IIHF Official Rule Book**: the Elite 
 
 On top of that base sits one thin layer of local amendment — the In-House Rules, or in the Elite League the Casebook, whose equipment provisions are in [Equipment](../off-the-ice/equipment.md) and physical-foul ones in [Body Contact and Battles](../technique/body_contact_and_battles.md). The In-House Rules say they are *"not intended to serve as a standalone rule book"*, but they are the *"overriding interpretation of how the IIHF Rule Book is to be applied domestically"*, so where they amend it, they win.
 
-**So wherever the text below says *"under IIHF rules"*, it is describing your game**, and the USA Hockey and Hockey Canada flags are not yours. The [section 10](#10-rule-set-differences-that-actually-matter) table has a **Home Countries** column for everywhere in Britain except the Elite League. Where it reads *"As IIHF"*, the In-House Rules make no amendment and the IIHF cell is your rule.
+**So wherever the text below says *"under IIHF rules"*, it is describing your game**, and the USA Hockey and Hockey Canada rules are not yours. The [section 10](#10-rule-set-differences-that-actually-matter) table has a **Home Countries** column for everywhere in Britain except the Elite League. Where it reads *"As IIHF"*, the In-House Rules make no amendment and the IIHF cell is your rule.
 
 **[UK and England Rules](uk_rules.md) has the full list of amendments** — several (neck protection, facial protection, rink size, junior age categories) change things this document does not cover. ⚠️ **Read the junior age categories from the current season's In-House Rules and nowhere else.** Every band moved a year between the 2025-26 and 2026-27 editions — Under 19 went from birth years 2007–2009 to 2008–2010 — so an old table puts a player in the wrong category.
 

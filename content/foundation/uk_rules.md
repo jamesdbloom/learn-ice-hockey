@@ -1,12 +1,12 @@
 # UK and England Rules
 
-> **Rule set:** This document is *about* the rule set. The other documents here are written to NHL rules with IIHF, USA Hockey and Hockey Canada differences flagged inline; this one tells a reader in Britain which of those flags is theirs.
+> **Rule set:** This document is *about* the rule set. The other documents here are written to NHL rules with IIHF, USA Hockey and Hockey Canada differences flagged inline; this one tells a reader in Britain which of those rules are theirs.
 >
 > **Related:** [Rules Primer](rules_primer.md) · [Rink Map](rink_map.md) · [Getting Started](../getting-started/getting_started.md) · [Equipment](../off-the-ice/equipment.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Faceoffs](../systems/faceoffs.md) · [Game Management](../systems/game_management.md)
 
 ## Key focus
 
-**Play to the IIHF rule book, not the NHL's.** When a document flags an IIHF difference, that is your game. Then find out which British layer sits on top: the **In-House Rules** in most competitions, or the **EIHL Casebook** in the Elite League.
+**Play to the IIHF rule book, not the NHL's.** When a document gives the IIHF rule, that is your game. Then find out which British layer sits on top: the **In-House Rules** in most competitions, or the **EIHL Casebook** in the Elite League.
 
 **Wear a neck guard every time you go on the ice, and if it comes off in play, leave the ice without picking it up.** Adults included. ⚠️ **Under the In-House Rules there is no warning:** a missing one is a 10-minute misconduct, and a second ends your game.
 
@@ -22,7 +22,7 @@
 
 ## Overview
 
-If you play in Britain, **your rule book is the IIHF's.** Every level runs on it: the National Ice Hockey League, the recreational and junior game across England, Wales, Scotland and Northern Ireland, women's and university hockey, the GB national teams, and the Elite League. The Elite League's own **Casebook** says that for every rule it does not mention, *"the official 2026 - 2027 IIHF Rulebook and IIHF Situation Handbook will serve as the official ruling."* Most hockey writing in English is written to NHL rules. Wherever it flags an **IIHF** difference, that flag is yours; a **USA Hockey** or **Hockey Canada** flag is not.
+If you play in Britain, **your rule book is the IIHF's.** Every level runs on it: the National Ice Hockey League, the recreational and junior game across England, Wales, Scotland and Northern Ireland, women's and university hockey, the GB national teams, and the Elite League. The Elite League's own **Casebook** says that for every rule it does not mention, *"the official 2026 - 2027 IIHF Rulebook and IIHF Situation Handbook will serve as the official ruling."* Most hockey writing in English is written to NHL rules. Wherever it gives the **IIHF** rule, that rule is yours; a **USA Hockey** or **Hockey Canada** rule is not.
 
 **Seven things set British hockey apart.** Five are in the rule books. Two — the checking age and the U12 format — are answered by your competition's own regulations instead.
 
@@ -497,7 +497,7 @@ A team manager may sit on the bench but does not count toward the requirement. O
 
 ## Common Mistakes
 
-- **Reading the USA Hockey flags as yours.** Take the IIHF flag and skip the other two — in Britain the USA Hockey and Hockey Canada flags do not apply.
+- **Reading the USA Hockey rules as yours.** Take the IIHF rule and skip the other two — in Britain the USA Hockey and Hockey Canada rules do not apply.
 - **Skipping the neck guard because you are an adult.** Wear one every time you go on the ice, practice included. The adult exemption is North American, not British. Under the In-House Rules a missing one is a 10-minute misconduct with **no warning**. In the Elite League it is a warning, then a minor, and refusing to fix it climbs the equipment ladder to a misconduct and then a game misconduct.
 - **Expecting a video review or a Coach's Challenge.** Play to the whistle — the call on the ice is the call. Neither exists in EIH or SIHA competition. **The Elite League keeps both.** Video can still be used for discipline after the game.
 - **Using last season's birth-year table.** Take the bands from the current season's In-House Rule 200. ⚠️ **Every band moved a full year for 2026-27**, so an old table puts a child in the wrong age group in a contact sport.
@@ -535,9 +535,9 @@ when the right answer follows: the section named with each question, and the Key
 Takeaways after them, are where you get it. Where the answer lives in another
 document, that is named too.*
 
-1. Somebody hands you a hockey document written to NHL rules with divergences
-   flagged for the IIHF, USA Hockey and Hockey Canada. Which of those flags are
-   yours, and what sits on top of that base depending on which competition you
+1. Somebody hands you a hockey document written to NHL rules that also gives
+   the IIHF, USA Hockey and Hockey Canada rules where they differ. Which of those
+   rules are yours, and what sits on top of that base depending on which competition you
    play in? *(§Overview)*
 
 2. You are an adult, and you have read that adults are exempt from neck
@@ -615,7 +615,7 @@ document, that is named too.*
 
 ## Key Takeaways
 
-1. **Play to the IIHF book, and find out which British layer sits on top of it.** IIHF flags in any document are yours; USA Hockey and Hockey Canada flags are not. The **In-House Rules** amend it in the NIHL, the SNL, women's, recreational, junior and university hockey, and the **EIHL Casebook** in the Elite League.
+1. **Play to the IIHF book, and find out which British layer sits on top of it.** Wherever a page gives the IIHF rule, it is yours; the USA Hockey and Hockey Canada rules are not. The **In-House Rules** amend it in the NIHL, the SNL, women's, recreational, junior and university hockey, and the **EIHL Casebook** in the Elite League.
 
 2. **In EIH or SIHA competition, take the referee's call as the call.** There is no on-ice video review and no Coach's Challenge there. The Elite League keeps both.
 

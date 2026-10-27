@@ -1,7 +1,7 @@
 # Forechecking Systems
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF flags are yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Language and Glossary](../foundation/language_and_glossary.md) · [Breakouts](breakouts.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Zone Entries](zone_entries.md) · [Defensive Zone Coverage](defensive_zone_coverage.md) · [Body Contact and Battles](../technique/body_contact_and_battles.md) · [Game Management](game_management.md) · [Centre](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [UK and England Rules](../foundation/uk_rules.md)
 

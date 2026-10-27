@@ -3,7 +3,7 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. Two rules matter enormously
 > here: the **trapezoid** (which decides whether your goalie can retrieve a rim) and **icing**
-> (which decides what a failed clear costs you). **Playing in Britain? The IIHF flags are
+> (which decides what a failed clear costs you). **Playing in Britain? Wherever this page gives the IIHF rule, it is
 > yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](../foundation/uk_rules.md). In IHUK junior competition at under-12 there is no icing
 > at all, and play does not stop for offside — the officials tell the attacking team to clear the zone, and

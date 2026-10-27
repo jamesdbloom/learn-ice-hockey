@@ -1,8 +1,9 @@
 # Language and Glossary
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The
-> IIHF flags are yours** — see [UK and England Rules](uk_rules.md).
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the
+> IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally;
+> see [UK and England Rules](uk_rules.md).
 >
 > **Related:** [Rink Map](rink_map.md) · [Centre](../positions/center.md) · [Winger](../positions/winger.md) · [Defender](../positions/defender.md) · [Goaltender](../positions/goaltender.md) · [Breakouts](../systems/breakouts.md) · [Forechecking Systems](../systems/forechecking_systems.md) · [Neutral Zone Systems](../systems/neutral_zone_systems.md) · [Passing and Receiving](../technique/passing_and_receiving.md) · [Shooting](../technique/shooting.md)
 
