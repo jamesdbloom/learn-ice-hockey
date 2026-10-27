@@ -13,11 +13,13 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## In flight
 
-- **SG95: DONE** (header rewording, "IIHF flags are yours" → "Wherever this page gives the IIHF rule, it is yours"). Carry-overs:
-  - bcb :5–6 "more of those flags than any other" ("differences" would be clearer);
-  - getting_started :193 "the IIHF rules in these documents are yours:", whose first bullet below is an In-House amendment ("as amended locally" would be exact);
-  - Per-page sweep: IIHF rules that the In-House Rules or the EIHL Casebook amend without a local note nearby, and the edition split (In-House competitions use 2025/26, the EIHL 2026/27).
-- **Diagram label audit (27 Oct):** a script-assisted audit found 11 misreadings. 8 of the 15 hinted diagrams passed review; 7 are being reworked (deny-the-reception, forecheck-131, nz-1-2-2-containment, centre-backcheck-middle-lane, both dz-walk-down, shooting-lane-and-the-step). Uncommitted .mjs hints are in the tree.
+- **SG95–SG97 and the diagram label audit (SG96): DONE** (a6d7ff5, e6d0749). Carry-overs:
+  - shooting :859 "the EIHL can suspend or fine": Casebook 5.6 says "shall be subjected to";
+  - rules_primer :517 says third man in and persisting "keep their IIHF ejection", but both are discretionary (v1.1 46.7, 46.1), and :376 now says "can be";
+  - faceoffs :799 says lateness costing the centre is "unsettled; plan on losing the dot", but IIHF 76.7 says the centre is not ejected for lateness;
+  - EIHL 86.6 contradicts itself on calling warm-up offences on the night (shooting, bcb, goaltender);
+  - diagrams: the nz-1-2-2-trap stack ("behind F2" over "kills it at the red line"); nz-1-2-2-containment route badge on the goalie (HEAD-era); about 30 labels over faceoff dots; the corner-player relaxation in leaderHazard can keep a hazardous leader (flag it in the build output);
+  - bcb :1324 and the "IIHF … at the referee's call" lines: compressions not re-read by the rules-verifier.
 - **SG93 and SG94: DONE (ec6d1d6, fe91058).** Carry-overs:
   - DOPS C.1 lists "Boarding"; the corpus says "a boarding major" (uk_rules :413). Is a boarding minor also a C.1 trigger? C.1's triggers come from the owner page, not the C.1 text.
   - The DOPS carriers at defender :496, center :773 and defender :910 omit the under-16 written-warning limb that the owner page carries.
