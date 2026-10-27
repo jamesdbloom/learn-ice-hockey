@@ -925,7 +925,7 @@ def _rule_citation(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {_expand_clause_list(clause, match.string, label)}"
+        out += f", {_expand_clause_list(clause, match.string, label, _book_prefix(match) if label == 'clause' else '')}"
     # ⚠️ THE THIRD CODE PATH. `_bare_clause` and `_usa_clause_citation` gained
     # clause-tail handling first; this one -- the form WITH the word "Rule" --
     # was missed, so `Rule 8.1(c)/(d)` still dropped its second clause while
@@ -949,14 +949,29 @@ def _rule_citation(match: re.Match) -> str:
 #: `2.2(j)` two words later rendered as "clause j". Nothing else could have seen
 #: it: both readings are well-formed English and the Markdown is correct.
 ALPHABETIC_CLAUSE_NEIGHBOUR = re.compile(r"\((?:h|j)\)")
+#: ⚠️ THE NEIGHBOUR TEST MISSES A LONE CITATION. When SG103 split a goaltender facts
+#: line, Hockey Canada 2.2(i) and 2.2(j) landed in separately voiced lines and 2.2(i)
+#: went back to "clause one". A rule in this set has lettered clauses running to (i),
+#: so its (i) is the letter. It is a LIST, not "Hockey Canada letters its clauses":
+#: Hockey Canada 8.3(i) and 10.1(i) are ROMAN items before clause (a), and a
+#: book-name rule tried on 27 Oct 2026 turned fifteen correct "clause one"s into "i".
+#: `hc.txt` has exactly two lettered (i) clauses: 2.2 (i) at :1631 and 5.2 (i) at :4162.
+ALPHABETIC_I_RULE = re.compile(r"Hockey Canada(?: Rule)? (?:2\.2|5\.2)\s*$")
 
 
-def _clause_words(clause: str, context: str = "") -> str:
+def _book_prefix(match: re.Match) -> str:
+    """The citation's own text up to its bracket, with the words just before it."""
+    head = match.string[max(0, match.start() - 30):match.end()]
+    return head[:head.rfind("(")] if "(" in head else head
+
+
+def _clause_words(clause: str, context: str = "", prefix: str = "") -> str:
     lowered = clause.lower()
     if lowered in ROMAN_TO_INT:
         # ⚠️ Only `i` is ambiguous; `ii`, `iii`, `iv` and `v` have no alphabetic
         # reading in a clause list, so they never take this branch.
-        if lowered == "i" and ALPHABETIC_CLAUSE_NEIGHBOUR.search(context):
+        if lowered == "i" and (ALPHABETIC_CLAUSE_NEIGHBOUR.search(context)
+                               or ALPHABETIC_I_RULE.search(prefix)):
             return "i"
         return int_to_words(ROMAN_TO_INT[lowered])
     if clause.isdigit():
@@ -974,7 +989,7 @@ def _clause_words(clause: str, context: str = "") -> str:
 RE_CLAUSE_LIST_SEP = re.compile(r"\s*(,|\band\b|\bor\b|[-–—])\s*")
 
 
-def _expand_clause_list(raw: str, context: str, label: str) -> str:
+def _expand_clause_list(raw: str, context: str, label: str, prefix: str = "") -> str:
     """One bracket's content -- a single clause, or several packed into ONE
     bracket and joined by a comma, 'and', 'or' or a dash -- fully spoken,
     repeating `label` before every clause it names.
@@ -998,7 +1013,7 @@ def _expand_clause_list(raw: str, context: str, label: str) -> str:
     takes the same path it always did (the loop below runs zero times).
     """
     parts = RE_CLAUSE_LIST_SEP.split(raw)
-    out = f"{label} {_clause_words(parts[0], context)}"
+    out = f"{label} {_clause_words(parts[0], context, prefix)}"
     for i in range(1, len(parts), 2):
         sep, token = parts[i].lower(), parts[i + 1]
         if sep == "or":
@@ -1009,7 +1024,7 @@ def _expand_clause_list(raw: str, context: str, label: str) -> str:
             joiner = "to"
         else:
             joiner = ","
-        piece = _clause_words(token, context)
+        piece = _clause_words(token, context, prefix)
         out += f", {label} {piece}" if joiner == "," else f" {joiner} {label} {piece}"
     return out
 
@@ -1166,7 +1181,7 @@ def _bare_clause(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {_expand_clause_list(clause, match.string, label)}"
+        out += f", {_expand_clause_list(clause, match.string, label, _book_prefix(match) if label == 'clause' else '')}"
     return out + _clause_tail(match.groupdict().get("more"))
 
 
@@ -1312,7 +1327,7 @@ def _usa_clause_citation(match: re.Match) -> str:
         if not clause:
             continue
         label = "clause" if group == "c1" else "sub-clause"
-        out += f", {_expand_clause_list(clause, match.string, label)}"
+        out += f", {_expand_clause_list(clause, match.string, label, _book_prefix(match) if label == 'clause' else '')}"
     out += _clause_tail(match.groupdict().get("more"))
     return out
 
