@@ -1,4 +1,5 @@
-// Turns (part B): tight turns, jam turns, punch jams, punch turns, small-circle pivots.
+// Turns (part B): tight turns, jam turns, punch jams, the punch-turn progression (steps 1-3 and the
+// figure eight), small-circle pivots.
 // DRAFT, 22 Oct 2026. Top-down, feet; x right, y down. Travelling +x, the skater's LEFT is UP (-y).
 // All one-way drills are drawn as a LEFT (anticlockwise) turn, so the LEFT foot is the inside foot.
 import { diagram } from '../lib/draw.mjs';
@@ -141,6 +142,125 @@ const punchJam = (() => {
   return d.svg();
 })();
 
+// Punch-turn progression (owner's source, 28 Oct 2026: Hockey Tutorial, "Must have skating technique -
+// Punch Turn Tutorial", 1:50-3:50). The punch turn there is: open the INSIDE foot and dive onto its OUTSIDE
+// edge, the outside foot rides its inside edge and pulls you round, then cross over at the apex and explode out.
+// Drawn turning LEFT, so the left foot is the inside foot and opens to point across the path (up the page).
+const PUCK = (d, x, y) => d.raw(`<circle cx="${(x * 30).toFixed(1)}" cy="${(y * 30).toFixed(1)}" r="9" fill="#111"/>`);
+
+function punchApproach(d) {
+  d.track('M 2 5.0 L 9.6 5.0', 'L');
+  d.track('M 2 6.0 L 9.2 6.0', 'R');
+  d.skate(5.0, 5.0, 0, 'L');
+  d.skate(4.7, 6.0, 0, 'R');
+  d.step(3.2, 5.5, 1);
+  d.travel(2, 10.2, 8, 10.2);
+}
+
+// Step 1: T-stop shape, the left foot turned out onto its outside edge, the right foot down behind it in a T.
+const punchStep1 = (() => {
+  const d = diagram({
+    title: 'Punch turn step 1: T-stop onto the outside edge',
+    desc: 'Skate forward slowly. Turn the left foot out to point across your path and lean back onto its outside edge, curving to the left, with the right foot set down behind it in a T as a safety foot. Then the other way.',
+  });
+  punchApproach(d);
+  d.track('M 9.6 5.0 C 11.6 5.0 11.8 3.6 11.2 2.2', 'L');
+  d.skate(11.55, 4.1, -90, 'L');
+  d.tag(12.7, 3.6, 'OUT', 'L');
+  d.skate(11.55, 5.25, 0, 'R', { len: 1.3 });
+  d.spray(12.45, 5.45, 20, { n: 4, len: 0.6, spread: 40 });
+  d.step(13.6, 2.4, 2);
+  d.text(14.2, 2.6, 'lean back onto the outside edge', { size: 0.42, anchor: 'start' });
+  d.step(13.6, 6.6, 3);
+  d.text(14.2, 6.8, 'back foot down in a T: your safety', { size: 0.42, anchor: 'start' });
+  return d.svg();
+})();
+
+// Step 2: the safety foot comes away: jump onto the outside edge, back foot hovering ready.
+const punchStep2 = (() => {
+  const d = diagram({
+    title: 'Punch turn step 2: jump onto the outside edge',
+    desc: 'Skate forward slowly. Jump onto the left foot turned out across your path, landing on its outside edge with a bent knee and digging in as it curves left. The right foot stays just off the ice behind it, ready to touch down. Then the other way.',
+  });
+  punchApproach(d);
+  d.track('M 9.6 5.0 Q 10.6 5.4 11.3 4.5', 'L', { air: true, arrow: false });
+  d.track('M 11.4 4.4 C 11.8 3.6 11.6 2.8 11.0 2.1', 'L');
+  d.skate(11.55, 4.1, -90, 'L');
+  d.tag(12.7, 3.6, 'OUT', 'L');
+  d.skate(12.4, 6.1, 0, 'R', { len: 1.3, lifted: true });
+  d.step(13.6, 2.4, 2);
+  d.text(14.2, 2.6, 'jump onto it and dig in, knee bent', { size: 0.42, anchor: 'start' });
+  d.step(13.6, 6.6, 3);
+  d.text(14.2, 6.8, 'back foot off the ice,', { size: 0.42, anchor: 'start' });
+  d.text(14.2, 7.4, 'ready to touch down', { size: 0.42, anchor: 'start' });
+  return d.svg();
+})();
+
+// Step 3: going straight forward with speed, dive onto the outside edge and keep the momentum forward.
+const punchStep3 = (() => {
+  const d = diagram({
+    title: 'Punch turn step 3: dive onto the edge going forward',
+    desc: 'Skate straight forward with some speed. Without slowing, open the left foot and dive onto its outside edge so it carries you round to the left, keeping your weight moving forward rather than sliding sideways. The right foot stays just off the ice. Then the other way.',
+  });
+  punchApproach(d);
+  d.track('M 9.6 5.0 C 13.2 5.0 15.4 4.6 16.8 2.4', 'L');
+  d.skate(13.4, 4.85, -20, 'L');
+  d.tag(13.4, 3.9, 'OUT', 'L');
+  d.skate(12.0, 6.0, -10, 'R', { len: 1.3, lifted: true });
+  d.step(15.6, 5.2, 2);
+  d.text(16.2, 5.4, 'dive onto the edge,', { size: 0.42, anchor: 'start' });
+  d.text(16.2, 6.0, 'momentum still forward', { size: 0.42, anchor: 'start' });
+  return d.svg();
+})();
+
+// Step 4: figure eight round two pucks, punching and turning both ways; crossover at the apex, explode out.
+const punchFigure8 = (() => {
+  const d = diagram({
+    title: 'Punch turns: figure eight round two pucks',
+    desc: 'A figure eight round two pucks, turning left round one and right round the other. Into each turn, dive onto the outside edge of the inside foot while the outside foot rides its inside edge and pulls you round. At the far point of the turn, cross over and explode out towards the other puck. Then add a puck on your stick.',
+  });
+  const r = 2.8, cy = 5.5, c1 = 8.2, c2 = 13.8;
+  d.track(circ(c1, cy, r, 0, -330), 'ink', { width: 2.5 });
+  d.track(circ(c2, cy, r, 180, 510), 'ink', { width: 2.5 });
+  PUCK(d, c1, cy);
+  PUCK(d, c2, cy);
+  // Left loop, anticlockwise from the middle. Point at screen angle a; heading (sin a, -cos a).
+  const P = (a) => [c1 + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)];
+  const hd = (a) => Math.atan2(-Math.cos(a * Math.PI / 180), Math.sin(a * Math.PI / 180)) * 180 / Math.PI;
+  const toC = (a, k) => [-Math.cos(a * Math.PI / 180) * k, -Math.sin(a * Math.PI / 180) * k];
+  // 1 Entry (a = -45): inside (left) foot on its OUTSIDE edge nearer the puck; outside (right) foot BITES on its
+  // INSIDE edge, snow spraying outward, and pulls you round.
+  {
+    const a = -45, [x, y] = P(a), [ix, iy] = toC(a, 0.55);
+    d.skate(x + ix, y + iy, hd(a), 'L', { len: 1.2 });
+    d.skate(x - ix, y - iy, hd(a), 'R', { len: 1.2 });
+    d.spray(x - ix * 1.9, y - iy * 1.9, a, { n: 5, len: 0.7, spread: 50 });
+    d.tag(x + ix * 2.6, y + iy * 2.6, 'OUT', 'L');
+    d.tag(x - ix * 3.4, y - iy * 3.4 - 0.2, 'IN', 'R');
+    d.step(x + 1.7, y - 0.6, 1);
+  }
+  // 2 Apex (a = -180): the outside (right) foot crosses over in front of the inside foot.
+  {
+    const a = -180, [x, y] = P(a);
+    d.skate(x + 0.5, y - 0.3, 90, 'L', { len: 1.2 });
+    d.track(`M ${x - 0.6} ${y - 1.2} Q ${x - 0.9} ${y + 0.4} ${x + 0.2} ${y + 0.9}`, 'R', { air: true, width: 2.2 });
+    d.skate(x + 0.35, y + 1.2, 60, 'R', { len: 1.2 });
+    d.step(x - 1.5, y, 2);
+  }
+  // 3 Exit (a = -300): explode out towards the other puck.
+  {
+    const [x, y] = P(-300);
+    d.step(x + 1.0, y + 0.2, 3);
+  }
+  // Key, top-left, in reading order.
+  d.text(0.6, 9.2, '1 bite: outside foot digs in on its inside edge and pulls you round', { size: 0.4, anchor: 'start' });
+  d.text(0.6, 9.75, '   (inside foot on its outside edge)', { size: 0.4, anchor: 'start' });
+  d.text(0.6, 10.3, '2 cross over at the apex · 3 explode out to the other puck', { size: 0.4, anchor: 'start' });
+  d.text(c2 + 2.4, 1.2, 'same, turning the other way;', { size: 0.42 });
+  d.text(c2 + 2.4, 1.8, 'then carry a puck', { size: 0.42 });
+  return d.svg();
+})();
+
 // Small circle: forward half, pivot to backward, backward half, step back to forward.
 // Drawn for an anticlockwise circle, then mirrored (x flipped, feet swapped) for clockwise.
 // Circular arc as cubic Beziers in FEET, from screen angle a0 to a1 (degrees, y down).
@@ -266,20 +386,71 @@ export default [
     },
   },
   {
+    id: 'turns-punch-step-1',
+    group: 'Turns',
+    title: 'Punch turn step 1: T-stop onto the outside edge',
+    svg: punchStep1,
+    card: {
+      trains: 'Getting comfortable committing to the outside edge of your inside foot, the first move of a punch turn, with a safety foot behind you.',
+      steps: [
+        'Skate forward slowly, knees bent, with clear ice ahead of you.',
+        'Turn your left foot out so it points across your path, and lean back onto its outside edge.',
+        'Put your right foot down behind it in a T, as in a T-stop. It is your safety, there to catch you.',
+        'Glide to a stop, then do it with the right foot. Start slow and add speed as you trust the edge.',
+      ],
+      mistake: 'Easing onto the edge a little at a time instead of committing to it.',
+      check: 'From the video you sent (Hockey Tutorial, "Must have skating technique - Punch Turn Tutorial", 1:50-2:40): "the first step to the punch turn is basically a T-stop", "getting on that outside edge and being able to lean back, but we use our other foot as kind of a security barrier", and "start slow like anything else and work your way up to speed". I read the turned-out foot as the inside (left) foot pointing across your path; say if you see it differently.',
+    },
+  },
+  {
+    id: 'turns-punch-step-2',
+    group: 'Turns',
+    title: 'Punch turn step 2: jump onto the outside edge',
+    svg: punchStep2,
+    card: {
+      trains: 'Trusting the outside edge without the safety foot, so you can drop onto it fast in a game.',
+      steps: [
+        'Skate forward slowly, knees bent, with clear ice ahead of you.',
+        'Jump onto your left foot turned out across your path. Land on its outside edge with a bent knee and dig in.',
+        'Keep your right foot just off the ice behind you, ready to touch down if you need it.',
+        'Do it both ways, and add speed only when it feels solid.',
+      ],
+      mistake: 'Putting the back foot straight down out of habit, so you never learn to trust the edge.',
+      check: 'From the same video (2:40-2:58): "take away that security bar of the pointed foot of the T-stop", "we\'re still going to be able to fall back onto it but start to get comfortable on jumping onto that edge and really digging in on that outside edge".',
+    },
+  },
+  {
+    id: 'turns-punch-step-3',
+    group: 'Turns',
+    title: 'Punch turn step 3: dive onto the edge going forward',
+    svg: punchStep3,
+    card: {
+      trains: 'Turning out of straight-line speed without losing it, which is what makes a punch turn quick.',
+      steps: [
+        'Skate straight forward with some speed. Look along your path first.',
+        'Without slowing, open your left foot and dive onto its outside edge, letting it carry you round to the left.',
+        'Keep your weight moving forward through the turn, not sliding off to the side. Your right foot stays just off the ice.',
+        'Do it both ways.',
+      ],
+      mistake: 'Killing your forward speed to make the turn, so you end up sliding sideways.',
+      check: 'From the same video (2:58-3:12): "we\'re going to go forward more vertically and then we\'re just going to be able to trust that our foot is going to open up and dive onto that outside edge while still keeping more of a forward momentum rather than the side".',
+    },
+  },
+  {
     id: 'turns-punch-turn',
     group: 'Turns',
-    title: 'Punch turns',
-    svg: punchTurn,
+    title: 'Punch turns: figure eight round two pucks',
+    svg: punchFigure8,
     card: {
-      trains: 'Coming out of a turn faster than you went in, which wins races to loose pucks.',
+      trains: 'The full punch turn: getting away from pressure with a quick, efficient change of direction, then exploding out.',
       steps: [
-        'Skate in on two feet, knees bent.',
-        'Make a tight turn round the cone, inside foot leading, both blades leaning in. No skid: the blades carve.',
-        'As you come out, punch: the outside foot crosses over in front and the inside foot pushes hard underneath.',
-        'Keep accelerating with short, quick strides. Repeat turning the other way.',
+        'Put two pucks a few metres apart on clear ice and skate a figure eight round them: one way round the first puck, the other way round the second.',
+        'As you enter each turn, dive onto the outside edge of your inside foot, and bite the ice with the inside edge of your outside foot: dig it in and pull yourself round the puck.',
+        'At the far point of the turn (the apex), cross the outside foot over in front of the inside foot, then explode out towards the other puck.',
+        'When that flows both ways, do it carrying a puck.',
       ],
-      mistake: 'Standing up as you leave the turn, so the crossover pushes sideways instead of driving you forward.',
-      check: 'Different from the one source found. CoachThem calls a punch turn a "half stop" or "hybrid turn": one foot opens onto the flat of the blade as if stopping, while the other foot tight-turns on its inside edge. This card draws a tight turn with a crossover out, which other sources call a tight turn into crossovers. Please decide which you want.',
+      mistake: 'Gliding round the turn and only starting to push once you are out of it.',
+      check: 'From the same video (3:12-3:50): "a simple figure eight working on punching and turning both ways", "the outside edge of our inside foot and our outside foot is going to be on the inside edge pulling ourselves around, and at the apex of the turn we\'re going to work on getting a crossover and exploding out", then "the last part is putting a puck in". This replaces the earlier punch-turn card, which drew a tight turn with a crossover out; the video\'s punch turn opens the inside foot onto its outside edge instead.',
     },
   },
   {
