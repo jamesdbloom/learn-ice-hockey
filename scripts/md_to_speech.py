@@ -70,6 +70,15 @@ DOC_INTRO = (
     "From the ice hockey learning resource. Written to NHL rules, with "
     "differences under other rule sets flagged where they matter."
 )
+# A page whose Rule set banner does not open "Written to NHL rules" (an off-ice
+# page where nothing changes between rule sets, the UK rules page, the diagram
+# key) gets the source line alone: the NHL sentence would be false there.
+DOC_INTRO_PLAIN = "From the ice hockey learning resource."
+_NHL_BANNER_RE = re.compile(r"^>\s*\*\*Rule set:\*\*\s*Written to NHL rules", re.M)
+
+
+def doc_intro_for(text: str) -> str:
+    return DOC_INTRO if _NHL_BANNER_RE.search(text) else DOC_INTRO_PLAIN
 
 
 # ==========================================================================
@@ -791,6 +800,21 @@ def _diagram_manifest() -> dict:
     return _DIAGRAMS
 
 
+_DRILLS: dict | None = None
+
+
+def _drill_manifest() -> dict:
+    """Skating-drill ids for `drill:<id>` references, written by build-drills.mjs."""
+    global _DRILLS
+    if _DRILLS is None:
+        path = Path(__file__).resolve().parent.parent / "site" / "src" / "data" / "drills.json"
+        try:
+            _DRILLS = json.loads(path.read_text(encoding="utf-8"))
+        except FileNotFoundError:
+            _DRILLS = {}
+    return _DRILLS
+
+
 def strip_inline_markdown(text: str, counter: Counter) -> str:
     """Markdown -> plain prose. Emphasis markers go, the words stay."""
     text = RE_FOOTNOTE_REF.sub("", text)
@@ -822,6 +846,20 @@ def strip_inline_markdown(text: str, counter: Counter) -> str:
                 return (f"Diagram, from {_diagram_owner_phrase(entry)}. "
                         + entry["caption"])
             return "Diagram. " + entry["caption"]
+        if url.startswith("drill:"):
+            # A skating-drill diagram is voiced as NOTHING, unlike a diagram. It has
+            # no caption: the page prose around it describes the drill step by step,
+            # and that prose is what the listener hears. Reading the SVG's drawn
+            # description as well would say the drill twice. The id is still
+            # resolved, and an unknown one is fatal, so a typo cannot pass here
+            # just because nothing would have been spoken for it.
+            if _drill_manifest().get(url[len("drill:"):]) is None:
+                raise SystemExit(
+                    f"md_to_speech: unknown drill id {url[len('drill:'):]!r}. "
+                    "Run: node site/scripts/build-drills.mjs"
+                )
+            counter["md.drill"] += 1
+            return ""
         return alt
 
     def _link(match: re.Match) -> str:
@@ -3521,7 +3559,9 @@ def transform_document(path: Path, doc_id: str, source_label: str) -> tuple[list
     global _CURRENT_DOC
     _CURRENT_DOC = doc_id
     report = DocReport(doc_id=doc_id, source=source_label)
-    blocks = parse_blocks(path.read_text(encoding="utf-8"))
+    text = path.read_text(encoding="utf-8")
+    intro = doc_intro_for(text)
+    blocks = parse_blocks(text)
 
     chunks: list[Chunk] = []
     current = Chunk("(introduction)")
@@ -3552,7 +3592,7 @@ def transform_document(path: Path, doc_id: str, source_label: str) -> tuple[list
                     + [Token(SSML, "</p>"),
                        Token(SSML, f'<break time="{BREAK_DOC_TITLE}"/>'),
                        Token(SSML, "<p>")]
-                    + done(DOC_INTRO)
+                    + done(intro)
                     + [Token(SSML, "</p>")]
                 )
                 continue
@@ -4968,6 +5008,26 @@ def self_test() -> int:
     if counted["rule-number-sentence-start"] != 1:
         failures += 1
         print(f"FAIL  possessive rule number not capitalised by the rule pass: {dict(counted)}")
+
+    # A `drill:` image is voiced as nothing (the page prose describes the drill), but its
+    # id is still resolved, and an unknown one must stop the run rather than vanish.
+    known_drill = next(iter(_drill_manifest()), None)
+    if known_drill is None:
+        failures += 1
+        print("FAIL  site/src/data/drills.json is missing or empty; run node site/scripts/build-drills.mjs")
+    else:
+        drilled = Counter()
+        actual = re.sub(r"\s+", " ", plain(to_speech(
+            f"Before. ![](drill:{known_drill}) After.", drilled))).strip()
+        if actual != "Before. After." or drilled["md.drill"] != 1:
+            failures += 1
+            print(f"FAIL  drill image not voiced as nothing: {actual!r} {dict(drilled)}")
+    try:
+        to_speech("![](drill:no-such-drill-id)", Counter())
+        failures += 1
+        print("FAIL  an unknown drill id did not stop the run")
+    except SystemExit:
+        pass
 
     # Number words
     for value, expected in (

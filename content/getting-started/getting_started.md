@@ -5,7 +5,7 @@
 > IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see
 > [UK and England Rules](../foundation/uk_rules.md).
 >
-> **Related:** [Core Principles](../foundation/core_principles.md) · [UK and England Rules](../foundation/uk_rules.md) · [Rink Map](../foundation/rink_map.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Rules Primer](../foundation/rules_primer.md) · [Equipment](../off-the-ice/equipment.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Finding More Ice](../off-the-ice/finding_more_ice.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
+> **Related:** [Core Principles](../foundation/core_principles.md) · [UK and England Rules](../foundation/uk_rules.md) · [Rink Map](../foundation/rink_map.md) · [Reading Ice Hockey Diagrams](../reading-diagrams/reading_ice_hockey_diagrams.md) · [Rules Primer](../foundation/rules_primer.md) · [Equipment](../off-the-ice/equipment.md) · [Skating](../technique/skating.md) · [Practice and Development](../off-the-ice/practice_and_development.md) · [Finding More Ice](../off-the-ice/finding_more_ice.md) · [Practising on Your Own](../off-the-ice/practising_on_your_own.md) · [Team Play and Culture](../off-the-ice/team_play_and_culture.md) · [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) · [How to Watch Hockey](../off-the-ice/how_to_watch_hockey.md)
 
 ## Hockey is administered locally, but it sits on a national floor
 
@@ -87,6 +87,8 @@ So here are four routes, each for one reader with one deadline. Each names **sec
 **If you get to only three, make them 1, 4 and 9.**
 
 **If you have longer**, in this order: [On-Ice Communication → Who owns which call](../foundation/on_ice_communication.md#who-owns-which-call), then [Pressure warnings](../foundation/on_ice_communication.md#pressure-warnings) — after [A note on variation](../foundation/on_ice_communication.md#a-note-on-variation--read-this-before-you-learn-the-list), because your team's words will differ; then [Equipment → Bag and Pre-Game Routine](../off-the-ice/equipment.md#bag-and-pre-game-routine); then sections [7](#7-your-first-practice-first-drop-in-first-anything) and [8](#8-the-minimum-equipment-to-start) of this document.
+
+**After your first game:** [Finding More Ice](../off-the-ice/finding_more_ice.md) shows where to get extra ice, and [Practising on Your Own](../off-the-ice/practising_on_your_own.md) what to do with it.
 
 ### Route 2 — You have been put on a position you have never played
 

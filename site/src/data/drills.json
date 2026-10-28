@@ -1,0 +1,410 @@
+{
+  "backward-crossover-steps-stop": {
+    "id": "backward-crossover-steps-stop",
+    "title": "Backwards cross over 2/3 steps & stop",
+    "group": "Two-foot edges",
+    "alt": "Skating backwards, facing left, travelling right down the ice. Two or three crossover steps (two drawn) diagonally backwards and to the right: the left foot crosses over in front of the right, and the right steps out from behind, then a two-foot stop with the heels pushed out. Then two or three crossover steps diagonally backwards and to the left, the right foot crossing over, and the same stop. The path zig-zags down the ice.",
+    "svg": "/drills/backward-crossover-steps-stop.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "continuous-crossovers-backward": {
+    "id": "continuous-crossovers-backward",
+    "title": "Continuous crossovers backwards (cross-unders)",
+    "group": "Turns",
+    "alt": "Skating backwards down the ice in a snake. On each bend, the outside foot crosses over in front and the inside foot pushes hard under the body on its outside edge. At the change of direction, step onto the inside edge, then cross over back the other way. Continuous, no stopping.",
+    "svg": "/drills/continuous-crossovers-backward.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "continuous-crossovers-forward": {
+    "id": "continuous-crossovers-forward",
+    "title": "Continuous crossovers forwards (cross-unders)",
+    "group": "Turns",
+    "alt": "Skating forwards down the ice in a snake. On each bend, the outside foot crosses over in front and the inside foot pushes hard under the body on its outside edge. At the change of direction, step onto the inside edge, then cross over back the other way. Continuous, no stopping.",
+    "svg": "/drills/continuous-crossovers-forward.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "crossing-under-lemons-backwards": {
+    "id": "crossing-under-lemons-backwards",
+    "title": "Crossing under lemons backwards (feet together then wide gap)",
+    "group": "Two-foot edges",
+    "alt": "Backward lemons along a line. Both feet push out on the inside edges, then roll onto the outside edges as they come back in, and the feet cross completely under the body, each track passing to the other side of the line, before pushing out again. Small lemons first, then wide ones.",
+    "svg": "/drills/crossing-under-lemons-backwards.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "crossing-under-lemons-forwards": {
+    "id": "crossing-under-lemons-forwards",
+    "title": "Crossing under lemons forwards (feet together then wide gap)",
+    "group": "Two-foot edges",
+    "alt": "Forward lemons along a line. Both feet push out on the inside edges, then roll onto the outside edges as they come back in, and the feet cross completely under the body, each track passing to the other side of the line, before pushing out again. Small lemons first, then wide ones.",
+    "svg": "/drills/crossing-under-lemons-forwards.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "explosive-crossover-start": {
+    "id": "explosive-crossover-start",
+    "title": "Explosive cross-over start",
+    "group": "Starts",
+    "alt": "Standing side-on, facing up the page, to go right. Turn the head, shoulders and hips to the right and fall over the right leg. The left foot crosses over in front while the right foot pushes under the body on its outside edge. Then a few short, quick running strides on the toes, feet turned out in a V, before longer strides.",
+    "svg": "/drills/explosive-crossover-start.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "explosive-v-start": {
+    "id": "explosive-v-start",
+    "title": "Explosive V-start",
+    "group": "Starts",
+    "alt": "From a standing V (heels in, toes turned out) the skater drives forward. The first stride with each foot is short and driving, like running, each push going out to the side; the next strides get longer and the toes come round, and after a few strides the skater is in full stride.",
+    "svg": "/drills/explosive-v-start.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "forward-crossover-steps-stop": {
+    "id": "forward-crossover-steps-stop",
+    "title": "Forwards cross over 2 steps & stop, diagonal (toe down first)",
+    "group": "Two-foot edges",
+    "alt": "The skater faces right, up the ice. Two crossover steps diagonally forwards and to the right: the left foot crosses over in front of the right, toe down first, and the right steps out from behind, then a stop on the inside edge of the right foot. Then two crossover steps diagonally forwards and to the left, the right foot crossing over, and a stop on the inside edge of the left foot. The path zig-zags up the ice.",
+    "svg": "/drills/forward-crossover-steps-stop.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "lemons-backwards": {
+    "id": "lemons-backwards",
+    "title": "Lemons backwards",
+    "group": "Two-foot edges",
+    "alt": "Backward lemons along a line. Both feet push out on the inside edges and come back in until the boots, ideally the blades, touch in the middle each time.",
+    "svg": "/drills/lemons-backwards.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "lemons-forwards": {
+    "id": "lemons-forwards",
+    "title": "Lemons forwards",
+    "group": "Two-foot edges",
+    "alt": "Forward lemons along a line. Both feet push out on the inside edges and come back in until the boots, ideally the blades, touch in the middle each time.",
+    "svg": "/drills/lemons-forwards.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "mohawk-side-to-side": {
+    "id": "mohawk-side-to-side",
+    "title": "Mohawk side to side",
+    "group": "Mohawks",
+    "alt": "Down a lane in a heel-to-heel mohawk stance, each glide a curved arc from one side of the lane to the other. At each side the skater pivots on the leading foot and turns into the mohawk with the other leg leading, then curves back across.",
+    "svg": "/drills/mohawk-side-to-side.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "one-foot-cross-over-jump": {
+    "id": "one-foot-cross-over-jump",
+    "title": "One foot cross over jump",
+    "group": "Jumps",
+    "alt": "Glide forward on the left foot, right foot lifted on its right. Jump the right foot over the left, crossing in front of it, and land on the right foot on the far (left) side as the left foot lifts. Bring the lifted left foot round to the left of the right foot, then jump it back over the right, in front, to land on the right-hand side. Keep going, both directions.",
+    "svg": "/drills/one-foot-cross-over-jump.svg",
+    "file": "02_one_foot_jumps.mjs"
+  },
+  "one-foot-inside-edge-backward": {
+    "id": "one-foot-inside-edge-backward",
+    "title": "Inside edge backwards (strong push & touch the ice)",
+    "group": "One-foot edges",
+    "alt": "Skating backwards to the right, facing left. Big arcs, alternating feet. Push hard onto the right inside edge and carve a big arc to your left. Set the left foot down beside it (no crossing) and carve a big arc to your right on its inside edge. Bend low enough to touch the ice with a hand on the inside of the arc.",
+    "svg": "/drills/one-foot-inside-edge-backward.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-inside-edge-forward": {
+    "id": "one-foot-inside-edge-forward",
+    "title": "Inside edge forward (strong push & touch the ice)",
+    "group": "One-foot edges",
+    "alt": "Big arcs down the ice, alternating feet. Push hard onto the right inside edge and carve a big arc to your left. Set the left foot down beside it (no crossing) and carve a big arc to your right on its inside edge. Bend low enough to touch the ice with a hand on the inside of the arc.",
+    "svg": "/drills/one-foot-inside-edge-forward.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-jump-to-other-foot": {
+    "id": "one-foot-jump-to-other-foot",
+    "title": "One foot jump to other foot",
+    "group": "Jumps",
+    "alt": "Glide forward on the right foot, left foot lifted. Crouch and touch the right skate with a hand, head up. As you stand back up, jump onto the left foot. Glide, crouch and touch the left skate, and as you stand up jump back onto the right. Keep going.",
+    "svg": "/drills/one-foot-jump-to-other-foot.svg",
+    "file": "02_one_foot_jumps.mjs"
+  },
+  "one-foot-jump-to-same-foot": {
+    "id": "one-foot-jump-to-same-foot",
+    "title": "One foot jump to same foot",
+    "group": "Jumps",
+    "alt": "Glide forward on the right foot with the left foot lifted, spring off the right foot and land back on the same right foot, the left foot staying lifted the whole time.",
+    "svg": "/drills/one-foot-jump-to-same-foot.svg",
+    "file": "02_one_foot_jumps.mjs"
+  },
+  "one-foot-outside-edge-backward-free-behind": {
+    "id": "one-foot-outside-edge-backward-free-behind",
+    "title": "Outside edge stepping backwards (along a blue line)",
+    "group": "One-foot edges",
+    "alt": "Facing left, stepping backwards to the right straight down a blue line, one step at a time with no gliding. Each step lifts a foot and places it behind you and across the line: the right foot lands on your left of the line and the left foot on your right, each set down on its outside edge.",
+    "svg": "/drills/one-foot-outside-edge-backward-free-behind.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-outside-edge-backward-free-front": {
+    "id": "one-foot-outside-edge-backward-free-front",
+    "title": "Outside edge backwards, free foot in front",
+    "group": "One-foot edges",
+    "alt": "Skating backwards to the right, facing left. Alternating feet, each carving a C on its outside edge. At the end of each C, the other foot crosses over in front of it, on the side you face, and lands on its outside edge to carve the next C the other way.",
+    "svg": "/drills/one-foot-outside-edge-backward-free-front.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-outside-edge-forward-lean-glide": {
+    "id": "one-foot-outside-edge-forward-lean-glide",
+    "title": "Outside edge forward: big lean-and-glide arcs",
+    "group": "One-foot edges",
+    "alt": "Big arcs down the ice, alternating feet. Glide on the right outside edge curving right, then set the left foot down beside it (no crossing) and lean over onto its outside edge curving left. Lean and glide; do not step over.",
+    "svg": "/drills/one-foot-outside-edge-forward-lean-glide.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-outside-edge-forward-sharp-c": {
+    "id": "one-foot-outside-edge-forward-sharp-c",
+    "title": "Outside edge forward: big sharp C with full step-over",
+    "group": "One-foot edges",
+    "alt": "Sharp C shapes down the ice, alternating feet. Carve a sharp C on the right outside edge, curving right. At the end, lift the left foot right over in front of the right and land it on its outside edge, carving a sharp C to the left. Keep alternating, stepping over every time.",
+    "svg": "/drills/one-foot-outside-edge-forward-sharp-c.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-outside-edge-forward-step-overs": {
+    "id": "one-foot-outside-edge-forward-step-overs",
+    "title": "Outside edge forward: small step-overs",
+    "group": "One-foot edges",
+    "alt": "Travelling roughly straight down the ice. The feet alternate: each one steps over in front of the other and lands on its outside edge, curving a little back across the line, then the other foot steps over. Small, quick steps.",
+    "svg": "/drills/one-foot-outside-edge-forward-step-overs.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-slalom-backward-left": {
+    "id": "one-foot-slalom-backward-left",
+    "title": "One-foot slalom backwards, left foot",
+    "group": "One-foot edges",
+    "alt": "Skating backwards to the right, facing left, on the left foot only, weaving past a line of markers by rolling from one edge to the other of the same blade.",
+    "svg": "/drills/one-foot-slalom-backward-left.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-slalom-backward-right": {
+    "id": "one-foot-slalom-backward-right",
+    "title": "One-foot slalom backwards, right foot",
+    "group": "One-foot edges",
+    "alt": "Skating backwards to the right, facing left, on the right foot only, weaving past a line of markers by rolling from one edge to the other of the same blade.",
+    "svg": "/drills/one-foot-slalom-backward-right.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-slalom-forward-left": {
+    "id": "one-foot-slalom-forward-left",
+    "title": "One-foot slalom forwards, left foot",
+    "group": "One-foot edges",
+    "alt": "Skating forwards to the right, on the left foot only, weaving past a line of markers by rolling from one edge to the other of the same blade.",
+    "svg": "/drills/one-foot-slalom-forward-left.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "one-foot-slalom-forward-right": {
+    "id": "one-foot-slalom-forward-right",
+    "title": "One-foot slalom forwards, right foot",
+    "group": "One-foot edges",
+    "alt": "Skating forwards to the right, on the right foot only, weaving past a line of markers by rolling from one edge to the other of the same blade.",
+    "svg": "/drills/one-foot-slalom-forward-right.svg",
+    "file": "01_one_foot_edges.mjs"
+  },
+  "small-figure-8-inside-edge": {
+    "id": "small-figure-8-inside-edge",
+    "title": "Small figure of 8, inside edge",
+    "group": "One-foot edges",
+    "alt": "Two touching circles. From the middle, push onto the right foot and skate the whole right-hand circle anticlockwise on the right inside edge. Back at the middle, change feet and skate the whole left-hand circle clockwise on the left inside edge. The edge does not change at any point on a circle.",
+    "svg": "/drills/small-figure-8-inside-edge.svg",
+    "file": "02_one_foot_jumps.mjs"
+  },
+  "small-figure-8-outside-edge": {
+    "id": "small-figure-8-outside-edge",
+    "title": "Small figure of 8, outside edge",
+    "group": "One-foot edges",
+    "alt": "Two touching circles. From the middle, push onto the right foot and skate the whole right-hand circle clockwise on the right outside edge. Back at the middle, change feet and skate the whole left-hand circle anticlockwise on the left outside edge. The edge does not change at any point on a circle.",
+    "svg": "/drills/small-figure-8-outside-edge.svg",
+    "file": "02_one_foot_jumps.mjs"
+  },
+  "stepping-mohawk-side-to-side": {
+    "id": "stepping-mohawk-side-to-side",
+    "title": "Stepping mohawks side to side",
+    "group": "Mohawks",
+    "alt": "Down a lane in a heel-to-heel mohawk stance, each glide a curved arc from one side of the lane to the other. At each side the skater turns the shoulders into the new direction first, loads the legs, and jumps from skate to skate onto the new lead foot, then curves back across with that foot leading.",
+    "svg": "/drills/stepping-mohawk-side-to-side.svg",
+    "file": "03_mohawks_starts_two_foot.mjs"
+  },
+  "stops-hockey-stop-parallel": {
+    "id": "stops-hockey-stop-parallel",
+    "title": "Two foot hockey stop – parallel",
+    "group": "Stops",
+    "alt": "Glide on both feet, turn hips and both blades together across the line of travel, blades parallel and about hip-width apart, and skid to a stop on the right inside edge and left outside edge.",
+    "svg": "/drills/stops-hockey-stop-parallel.svg",
+    "file": "06_stops.mjs"
+  },
+  "stops-hockey-stop-side-by-side": {
+    "id": "stops-hockey-stop-side-by-side",
+    "title": "Two foot hockey stop – side by side",
+    "group": "Stops",
+    "alt": "The same stop, but with the feet in a scissor stance: the left (inside) skate well ahead of the right along the line of the blades, both blades across the line of travel, each skidding its own track.",
+    "svg": "/drills/stops-hockey-stop-side-by-side.svg",
+    "file": "06_stops.mjs"
+  },
+  "stops-one-foot-glide-stop-backwards": {
+    "id": "stops-one-foot-glide-stop-backwards",
+    "title": "One foot glide to one foot stop – backwards",
+    "group": "Stops",
+    "alt": "Skating backwards, glide on the right foot with the left foot lifted, then turn the right toe out and heel in and press the inside edge outwards to scrape to a stop.",
+    "svg": "/drills/stops-one-foot-glide-stop-backwards.svg",
+    "file": "06_stops.mjs"
+  },
+  "stops-one-foot-glide-stop-forwards": {
+    "id": "stops-one-foot-glide-stop-forwards",
+    "title": "One foot glide to one foot stop – forwards, inside edge",
+    "group": "Stops",
+    "alt": "Glide forward on the right foot with the left foot lifted, then turn the right blade across the line of travel and skid to a stop on its inside edge without putting the left foot down.",
+    "svg": "/drills/stops-one-foot-glide-stop-forwards.svg",
+    "file": "06_stops.mjs"
+  },
+  "stops-one-foot-glide-stop-forwards-outside": {
+    "id": "stops-one-foot-glide-stop-forwards-outside",
+    "title": "One foot glide to one foot stop – forwards, outside edge",
+    "group": "Stops",
+    "alt": "Glide forward on the right foot with the left foot lifted. Turn the right toe out to the right so the right heel comes round in front of the left foot, blade across the line of travel, and skid to a stop on the right outside edge without putting the left foot down.",
+    "svg": "/drills/stops-one-foot-glide-stop-forwards-outside.svg",
+    "file": "06_stops.mjs"
+  },
+  "stops-one-foot-stop-in-front": {
+    "id": "stops-one-foot-stop-in-front",
+    "title": "One foot stop in front",
+    "group": "Stops",
+    "alt": "Glide forward on both feet. Turn the right toe in and heel out, slide that foot a little in front, and scrape its inside edge to stop while the left foot glides straight.",
+    "svg": "/drills/stops-one-foot-stop-in-front.svg",
+    "file": "06_stops.mjs"
+  },
+  "stops-outside-edge-t-stop": {
+    "id": "stops-outside-edge-t-stop",
+    "title": "Outside edge T-stop",
+    "group": "Stops",
+    "alt": "Glide on the right foot. Place the left foot behind the right heel at a right angle, toe pointing out, then lower it and drag its outside edge until you stop.",
+    "svg": "/drills/stops-outside-edge-t-stop.svg",
+    "file": "06_stops.mjs"
+  },
+  "turn-backwards-soft-drag": {
+    "id": "turn-backwards-soft-drag",
+    "title": "Backwards Soft Drag",
+    "group": "Turns",
+    "alt": "Skating backwards, a sharp C-shaped turn. The inside (right) skate drags its toe on the ice, heel up, round a tight curve to help the turn. The outside (left) foot carves a tight arc round it on its inside edge. Repeat the other way.",
+    "svg": "/drills/turn-backwards-soft-drag.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "turn-forwards-anchor": {
+    "id": "turn-forwards-anchor",
+    "title": "Forwards Anchor",
+    "group": "Turns",
+    "alt": "A tight forward turn to the left. The inside (left) foot is planted with the ankle rolled in and the pressure on the heel, toe up, and the heel drags round a tight curve through the turn. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.",
+    "svg": "/drills/turn-forwards-anchor.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "turn-forwards-soft-drag": {
+    "id": "turn-forwards-soft-drag",
+    "title": "Forwards Soft Drag",
+    "group": "Turns",
+    "alt": "A tight forward turn to the left, the same turn as the forwards anchor but on the toe. The inside (left) skate drags its toe on the ice, heel up, round a tight curve to help the turn. The outside (right) foot carves a wide arc round it on its inside edge. Repeat turning right.",
+    "svg": "/drills/turn-forwards-soft-drag.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "turn-step-360": {
+    "id": "turn-step-360",
+    "title": "Turning stepping 360 – alternate directions",
+    "group": "Turns",
+    "alt": "Two lanes, both travelling right. Top lane, a full circle turning right: from forwards, the right foot steps out sideways on its own; the left foot goes down on its own pointing backwards; then the right comes down beside it, backwards. Then the same again to come forwards: right foot sideways, left foot down on its own pointing forwards, right foot beside it. Bottom lane, the next circle turning left, leading with the left foot.",
+    "svg": "/drills/turn-step-360.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "turn-step-forwards-to-backwards": {
+    "id": "turn-step-forwards-to-backwards",
+    "title": "Turning stepping forwards to backwards – both directions",
+    "group": "Turns",
+    "alt": "Two lanes, both travelling right. Top lane turns to the right: weight on the left foot, the right foot turns out and steps down backwards, then the left follows. Bottom lane turns to the left: weight on the right foot, the left foot turns out and steps down backwards, then the right follows. Both lanes finish skating backwards with the feet having swapped sides.",
+    "svg": "/drills/turn-step-forwards-to-backwards.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "turn-three-turn-forwards-to-backwards": {
+    "id": "turn-three-turn-forwards-to-backwards",
+    "title": "Three turns forwards to backwards (from a slow glide)",
+    "group": "Turns",
+    "alt": "On the right foot only. Glide forwards on the outside edge, curving to the right. Turn the shoulders and hips into the curve and rock onto the front of the blade so the skate spins half a turn, leaving a small point in the tracing. Come out backwards on the inside edge of the same foot, still curving the same way. Repeat on the left foot.",
+    "svg": "/drills/turn-three-turn-forwards-to-backwards.svg",
+    "file": "04_turns_a.mjs"
+  },
+  "turns-circle-pivots": {
+    "id": "turns-circle-pivots",
+    "title": "Small circle forward to backward pivots, then backward to forward stepping (both directions)",
+    "group": "Turns",
+    "alt": "Two small circles, the skater facing up the page the whole time. On the left circle (anticlockwise) they skate forward up the right side, pivot to backward on the toes with a small hop at the top, skate backward down the left side, and step from backward to forward at the bottom. The right circle is the same, clockwise.",
+    "svg": "/drills/turns-circle-pivots.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "turns-jam-turn": {
+    "id": "turns-jam-turn",
+    "title": "Jam turns",
+    "group": "Turns",
+    "alt": "Skate in fast, then turn very sharply left around a marker (a puck at stick-and-puck) so both skates dig in and spray snow, nearly stopping, and drive back out the way you came. Repeat turning right.",
+    "svg": "/drills/turns-jam-turn.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "turns-punch-jam": {
+    "id": "turns-punch-jam",
+    "title": "Punch jams",
+    "group": "Turns",
+    "alt": "A jam turn left around a marker (a puck at stick-and-puck), skates biting and spraying snow, followed straight away by a hard crossover punch out: the right foot crosses over in front of the left. Repeat turning right.",
+    "svg": "/drills/turns-punch-jam.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "turns-punch-step-1": {
+    "id": "turns-punch-step-1",
+    "title": "Punch turn step 1: T-stop onto the outside edge",
+    "group": "Turns",
+    "alt": "Skate forward slowly. Turn the left foot out to point across your path and lean back onto its outside edge, curving to the left, with the right foot set down behind it in a T as a safety foot. Then the other way.",
+    "svg": "/drills/turns-punch-step-1.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "turns-punch-step-2": {
+    "id": "turns-punch-step-2",
+    "title": "Punch turn step 2: jump onto the outside edge",
+    "group": "Turns",
+    "alt": "Skate forward slowly. Jump onto the left foot turned out across your path, landing on its outside edge with a bent knee and digging in as it curves left. The right foot stays just off the ice behind it, ready to touch down. Then the other way.",
+    "svg": "/drills/turns-punch-step-2.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "turns-punch-step-3": {
+    "id": "turns-punch-step-3",
+    "title": "Punch turn step 3: dive onto the edge going forward",
+    "group": "Turns",
+    "alt": "Skate straight forward with some speed. Without slowing, open the left foot and dive onto its outside edge so it carries you round to the left, keeping your weight moving forward rather than sliding sideways. The right foot stays just off the ice. Then the other way.",
+    "svg": "/drills/turns-punch-step-3.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "turns-punch-turn": {
+    "id": "turns-punch-turn",
+    "title": "Punch turns: figure eight round two markers",
+    "group": "Turns",
+    "alt": "A figure eight round two markers (pucks at stick-and-puck), turning left round one and right round the other. Into each turn, dive onto the outside edge of the inside foot while the outside foot rides its inside edge and pulls you round. At the far point of the turn, cross over and explode out towards the other marker. Then add a puck on your stick at stick-and-puck.",
+    "svg": "/drills/turns-punch-turn.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "turns-tight-turn": {
+    "id": "turns-tight-turn",
+    "title": "Tight turns",
+    "group": "Turns",
+    "alt": "Skate in on two feet in a scissor stance, the inside (left) foot well ahead of the outside foot. Turn hard left around a marker (a puck at stick-and-puck) with the inside (left) foot leading on its outside edge and the outside (right) foot on its inside edge, and come out the way you came. Repeat turning right.",
+    "svg": "/drills/turns-tight-turn.svg",
+    "file": "05_turns_b.mjs"
+  },
+  "two-foot-180-turn-jump": {
+    "id": "two-foot-180-turn-jump",
+    "title": "Two foot 180 turn jump",
+    "group": "Jumps",
+    "alt": "Glide forward on both feet, jump off both, turn half a circle in the air and land on both feet skating backwards, still travelling the same way. The toes now point back the way you came, and your left foot is on the other side. Repeat turning the other way.",
+    "svg": "/drills/two-foot-180-turn-jump.svg",
+    "file": "02_one_foot_jumps.mjs"
+  },
+  "two-foot-jump": {
+    "id": "two-foot-jump",
+    "title": "Two foot jump",
+    "group": "Jumps",
+    "alt": "Glide forward on both feet, shoulder width apart. Bend deep, jump off both feet together, and land on both feet at once with knees bent, then glide on.",
+    "svg": "/drills/two-foot-jump.svg",
+    "file": "02_one_foot_jumps.mjs"
+  }
+}

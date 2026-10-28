@@ -2,7 +2,7 @@
 
 > **Rule set:** Nothing here changes between rule sets, except whether a league allows body checking. Ask before you join — see [Body Contact and Battles](../technique/body_contact_and_battles.md#1-which-contact-rules-are-you-actually-playing-under).
 >
-> **Related:** [Getting Started](../getting-started/getting_started.md) · [Practice and Development](practice_and_development.md) · [Skating](../technique/skating.md) · [Team Play and Culture](team_play_and_culture.md) · [Equipment](equipment.md)
+> **Related:** [Getting Started](../getting-started/getting_started.md) · [Practice and Development](practice_and_development.md) · [Practising on Your Own](practising_on_your_own.md) · [Skating](../technique/skating.md) · [Team Play and Culture](team_play_and_culture.md) · [Equipment](equipment.md)
 
 ## Key focus
 
@@ -48,7 +48,7 @@ Rinks list their public sessions on their websites, usually under "public skatin
 - **Check the posted rules on sticks and pucks.** Assume they are not allowed unless the rules say so.
 - **Ask the desk which sessions are quietest.** A quiet session gives you room to work.
 
-A public session is full of children and new skaters. Keep fast starts, hard stops and backward skating to a clear patch of ice, if the posted rules allow them at all.
+A public session is full of children and new skaters. Keep fast starts, hard stops and backward skating to a clear patch of ice, if the posted rules allow them at all. [Practising on Your Own](practising_on_your_own.md) has drills for the session.
 
 ## 3. Stick-and-puck and drop-in
 

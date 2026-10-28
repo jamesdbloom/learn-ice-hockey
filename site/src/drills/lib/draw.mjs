@@ -1,4 +1,7 @@
-// Shared drawing kit for the Getting Better skating-drill diagrams (DRAFT, 22 Oct 2026).
+// Shared drawing kit for the Getting Better skating-drill diagrams.
+// Drawn 22 Oct 2026, approved by the owner 28 Oct 2026, built for the site by
+// site/scripts/build-drills.mjs. This directory is the source; the drafts under
+// project/getting_better_drafts/ are the review-era copy and are not read by the site.
 //
 // Every drill diagram is a TOP-DOWN view of a small patch of ice. Units are feet;
 // the default patch is 24 ft wide by 14 ft high, drawn at 30 px per foot.
@@ -13,6 +16,14 @@
 //   - Short hatch marks beside a blade = snow spray (a stop).
 //   - Edge labels sit beside a track: "IN" = inside edge, "OUT" = outside edge.
 //
+// TEXT SIZE (28 Oct 2026). The drawings scale to the text column: on a 388 px phone a
+// 22 ft canvas renders about 359 px wide, a factor of ~0.54. Labels were first sized at
+// 0.40-0.50 ft, which is 6.5-7.5 CSS px there, too small to read. Every label size a
+// module asks for is now multiplied by TEXT_SCALE and floored at TEXT_MIN, which lands
+// all text at about 10-11.5 px on that phone. Modules keep their original relative sizes.
+// Right-foot TEXT uses COL.Rtext, a darker orange that reaches 4.5:1 on the ice colour;
+// strokes, skates and tracks keep COL.R.
+//
 // Angles are in degrees, 0 = pointing right (+x), 90 = pointing down the page (+y).
 // A skate's angle is the direction its TOE points.
 
@@ -20,6 +31,7 @@ export const PX = 30;
 export const COL = {
   L: '#1f6fd1',
   R: '#e0731b',
+  Rtext: '#b2570e', // 4.65:1 on the ice colour, 4.93:1 on white
   ice: '#f4f9fd',
   rim: '#c9dbe8',
   travel: '#9aa7b2',
@@ -27,6 +39,13 @@ export const COL = {
   muted: '#5b6b78',
   spray: '#7fa6c4',
 };
+
+export const TEXT_SCALE = 1.4;
+export const TEXT_MIN = 0.62;
+/** Rendered font size in feet for a requested label size. */
+export const fs = (size) => Math.max(size * TEXT_SCALE, TEXT_MIN);
+/** Text colour for a stroke colour: the right-foot orange is darkened for contrast. */
+const tc = (c) => (c === COL.R ? COL.Rtext : c);
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const r = (n) => Math.round(n * PX * 10) / 10;
@@ -71,20 +90,22 @@ export function diagram({ title, w = 22, h = 11, legend = true, desc = '' } = {}
     /** Small rounded tag, e.g. IN / OUT, in the foot colour. */
     tag(x, y, text, foot = 'ink') {
       const c = COL[foot] || COL.ink;
-      const tw = 0.3 * text.length + 0.4;
-      add(`<rect x="${r(x - tw / 2)}" y="${r(y - 0.33)}" width="${r(tw)}" height="${r(0.66)}" rx="6" fill="#fff" stroke="${c}" stroke-width="1.5"/>` +
-        `<text x="${r(x)}" y="${r(y + 0.16)}" text-anchor="middle" font-size="${r(0.44)}" font-weight="700" fill="${c}">${esc(text)}</text>`);
+      const size = fs(0.44), th = size * 1.42;
+      const tw = size * 0.7 * text.length + 0.42;
+      add(`<rect x="${r(x - tw / 2)}" y="${r(y - th / 2)}" width="${r(tw)}" height="${r(th)}" rx="7" fill="#fff" stroke="${c}" stroke-width="1.5"/>` +
+        `<text x="${r(x)}" y="${r(y + size * 0.36)}" text-anchor="middle" font-size="${r(size)}" font-weight="700" fill="${tc(c)}">${esc(text)}</text>`);
       return api;
     },
     /** Circled step number. */
     step(x, y, n) {
-      add(`<circle cx="${r(x)}" cy="${r(y)}" r="${r(0.4)}" fill="${COL.ink}"/>` +
-        `<text x="${r(x)}" y="${r(y + 0.13)}" text-anchor="middle" font-size="${r(0.46)}" font-weight="700" fill="#fff">${n}</text>`);
+      const size = fs(0.46);
+      add(`<circle cx="${r(x)}" cy="${r(y)}" r="${r(size * 0.78)}" fill="${COL.ink}"/>` +
+        `<text x="${r(x)}" y="${r(y + size * 0.35)}" text-anchor="middle" font-size="${r(size)}" font-weight="700" fill="#fff">${n}</text>`);
       return api;
     },
     /** Plain text in feet coordinates. */
     text(x, y, s, { size = 0.48, color = COL.muted, anchor = 'middle', weight = 400 } = {}) {
-      add(`<text x="${r(x)}" y="${r(y)}" text-anchor="${anchor}" font-size="${r(size)}" font-weight="${weight}" fill="${color}">${esc(s)}</text>`);
+      add(`<text x="${r(x)}" y="${r(y)}" text-anchor="${anchor}" font-size="${r(fs(size))}" font-weight="${weight}" fill="${tc(color)}">${esc(s)}</text>`);
       return api;
     },
     /** Snow spray: short hatch marks fanning out on one side of a point, toward angle. */
@@ -120,11 +141,24 @@ export function diagram({ title, w = 22, h = 11, legend = true, desc = '' } = {}
           const c = COL[foot];
           return `<rect x="${r(x)}" y="${r(y - 0.14)}" width="${r(0.8)}" height="${r(0.28)}" rx="4" fill="${lifted ? 'none' : c}" stroke="${c}" stroke-width="2"${lifted ? ' stroke-dasharray="3 2"' : ''}/>`;
         };
-        const t = (x, s) => `<text x="${r(x)}" y="${r(y + 0.14)}" font-size="${r(0.42)}" fill="${COL.muted}">${esc(s)}</text>`;
-        leg = `<g>${mini(0.6, 'L')}${t(1.55, 'left foot')}${mini(4.4, 'R')}${t(5.35, 'right foot')}` +
-          `${mini(8.6, 'L', true)}${t(9.55, 'lifted')}` +
-          `<line x1="${r(11.6)}" y1="${r(y)}" x2="${r(12.7)}" y2="${r(y)}" stroke="${COL.ink}" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>${t(12.9, 'in the air')}` +
-          `<line x1="${r(16)}" y1="${r(y)}" x2="${r(17.1)}" y2="${r(y)}" stroke="${COL.travel}" stroke-width="8" stroke-opacity="0.45"/>${t(17.3, 'travel')}</g>`;
+        const size = fs(0.42);
+        const t = (x, s) => `<text x="${r(x)}" y="${r(y + size * 0.34)}" font-size="${r(size)}" fill="${COL.muted}">${esc(s)}</text>`;
+        const line = (x, stroke) => `<line x1="${r(x)}" y1="${r(y)}" x2="${r(x + 1.1)}" y2="${r(y)}" ${stroke}/>`;
+        // Lay the five keys out left to right from estimated text widths, spreading the
+        // spare width evenly between them, so a larger type size cannot run off the edge.
+        const keys = [
+          [0.8, (x) => mini(x, 'L'), 'left foot'],
+          [0.8, (x) => mini(x, 'R'), 'right foot'],
+          [0.8, (x) => mini(x, 'L', true), 'lifted'],
+          [1.1, (x) => line(x, `stroke="${COL.ink}" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"`), 'in the air'],
+          [1.1, (x) => line(x, `stroke="${COL.travel}" stroke-width="8" stroke-opacity="0.45"`), 'travel'],
+        ];
+        const gap = 0.22, tw = (s) => s.length * size * 0.5;
+        const used = keys.reduce((a, [gw, , s]) => a + gw + gap + tw(s), 0);
+        const pad = 0.6, between = Math.max(0.5, (w - 2 * pad - used) / (keys.length - 1));
+        let x = pad, g = '';
+        for (const [gw, glyph, s] of keys) { g += glyph(x) + t(x + gw + gap, s); x += gw + gap + tw(s) + between; }
+        leg = `<g>${g}</g>`;
       }
       return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W * PX} ${H * PX}" width="${W * PX}" height="${H * PX}" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">` +
         `<title id="t">${esc(title || '')}</title><desc id="d">${esc(desc)}</desc>` +

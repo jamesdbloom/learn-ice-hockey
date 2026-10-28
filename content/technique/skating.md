@@ -211,6 +211,8 @@ Do these slowly and cleanly. Edge work is not conditioning — one source recomm
 5. **Slalom / edge transfers.** Glide on two feet and roll both ankles left, right, left, right down the ice. It builds ankle strength.
 6. **One-foot glides.** Glide the length of the ice on one foot, flat, then tilted in, then tilted out. Pure balance.
 
+[Practising on Your Own](../off-the-ice/practising_on_your_own.md) has step-by-step drills for a public session.
+
 ---
 
 ## The Forward Stride

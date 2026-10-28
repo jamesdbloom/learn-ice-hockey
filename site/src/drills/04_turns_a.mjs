@@ -1,5 +1,5 @@
 // Turns (part A): step turns, three turns, soft drag and anchor turns. DRAFT, 22 Oct 2026.
-import { diagram, PX, COL } from '../lib/draw.mjs';
+import { diagram, PX, COL } from './lib/draw.mjs';
 
 const G = 'Turns';
 const rad = (a) => (a * Math.PI) / 180;
@@ -57,8 +57,8 @@ const stepFwdBack = (() => {
   d.text(3, 5.0, 'forwards').text(17.2, 5.0, 'backwards');
 
   // Lane B: turn to your left (anticlockwise). Lane centre y = 8.6.
-  d.iceLine(0.4, 6.1, 21.6, 6.1, COL.rim);
-  d.text(0.6, 6.75, 'Turn to your left', { anchor: 'start', color: COL.ink, weight: 600 });
+  d.iceLine(0.4, 5.95, 21.6, 5.95, COL.rim);
+  d.text(0.6, 6.62, 'Turn to your left', { anchor: 'start', color: COL.ink, weight: 600 });
   d.skate(3, 8.0, 0, 'L').skate(3, 9.2, 0, 'R');
   d.track('M 3.9 8.0 L 6.3 8.0', 'L', { arrow: false, width: 2 });
   d.track('M 3.9 9.2 L 7.1 9.15', 'R', { arrow: false, width: 2 });
@@ -88,7 +88,7 @@ const stepFwdBack = (() => {
 // Facing +x the skater's left is up the page; facing -x (backwards) their left is down.
 const step360 = (() => {
   const d = diagram({
-    w: 22, h: 12,
+    w: 22, h: 12.6,
     title: 'Turning stepping 360, alternate directions',
     desc: 'Two lanes, both travelling right. Top lane, a full circle turning right: from forwards, the right foot steps out sideways on its own; the left foot goes down on its own pointing backwards; then the right comes down beside it, backwards. Then the same again to come forwards: right foot sideways, left foot down on its own pointing forwards, right foot beside it. Bottom lane, the next circle turning left, leading with the left foot.',
   });
@@ -110,26 +110,28 @@ const step360 = (() => {
       group.forEach(([foot, dx, dy, ang, lifted]) => {
         d.skate(xs[i] + dx, yc + (right ? dy : -dy), right ? ang : -ang, sw(foot), { lifted: !!lifted, len: 1.2 });
       });
-      d.step(xs[i], yc - 1.55, i + 1);
-      d.text(xs[i], yc + 1.65, labels[i], { size: 0.42 });
+      // A sideways skate pointing up the page needs the step number higher to clear it.
+      const upSkate = group.some(([, , dy, ang]) => Math.abs(ang) === 90 && (right ? dy : -dy) < 0);
+      d.step(xs[i], yc - (upSkate ? 1.85 : 1.55), i + 1);
+      d.text(xs[i], yc + 1.85, labels[i], { size: 0.42 });
     });
   };
   d.text(0.6, 0.9, 'Full circle turning right', { anchor: 'start', color: COL.ink, weight: 600 });
   spinIcon(d, 8.6, 0.85, true, 0.4);
   lane(3.5, true);
   d.iceLine(0.4, 5.95, 21.6, 5.95, COL.rim);
-  d.text(0.6, 6.75, 'Full circle turning left', { anchor: 'start', color: COL.ink, weight: 600 });
+  d.text(0.6, 6.62, 'Full circle turning left', { anchor: 'start', color: COL.ink, weight: 600 });
   spinIcon(d, 8.5, 6.7, false, 0.4);
   lane(9.3, false);
-  d.travel(6, 11.65, 16, 11.65);
+  d.travel(4, 12.0, 14, 12.0); // below the bottom-row labels, ending before them and inside the rim
   return d.svg();
 })();
 
 // ---------------------------------------------------------------------------
-// 3. Three turn, forwards to backwards, on the spot (right forward outside three).
+// 3. Three turn, forwards to backwards, from a slow glide (right forward outside three).
 const threeTurn = (() => {
   const d = diagram({
-    title: 'Three turn forwards to backwards, on the spot',
+    title: 'Three turn forwards to backwards, from a slow glide',
     desc: 'On the right foot only. Glide forwards on the outside edge, curving to the right. Turn the shoulders and hips into the curve and rock onto the front of the blade so the skate spins half a turn, leaving a small point in the tracing. Come out backwards on the inside edge of the same foot, still curving the same way. Repeat on the left foot.',
   });
   const cx = 11, cy = 9.6, R = 4.6;
@@ -146,13 +148,13 @@ const threeTurn = (() => {
   d.step(s1x - 1.9, s1y + 0.6, 1);
   d.skate(cx, cy - R + 1.35, 90, 'R');
   d.step(cx, cy - R - 0.95, 2);
-  d.text(cx, cy - R + 3.2, 'spin on the', { size: 0.42 });
-  d.text(cx, cy - R + 3.7, 'front of the blade', { size: 0.42 });
+  d.text(cx, cy - R + 3.1, 'spin on the', { size: 0.42 });
+  d.text(cx, cy - R + 3.8, 'front of the blade', { size: 0.42 });
   const [s3x, s3y] = pt(cx, cy, R, 318);
   d.skate(s3x, s3y, 318 + 90 + 180, 'R');
   d.skate(s3x - 0.65, s3y + 0.65, 318 + 90 + 180, 'L', { lifted: true });
   d.step(s3x + 1.9, s3y + 0.6, 3);
-  d.text(5.0, 9.6, 'forwards').text(17.0, 9.6, 'backwards');
+  d.text(5.9, 9.6, 'forwards').text(17.0, 9.6, 'backwards');
   d.travel(3.2, 10.3, 5.2, 7.9);
   return d.svg();
 })();
@@ -190,9 +192,9 @@ function dragTurn({ title, desc, contact, backward = false }) {
   const lines = heel ? ['heel drags, toe up,', 'ankle rolled in'] : ['toe drags,', 'heel up'];
   const above = cyS > CY; // put the label on the side away from the skate
   const ly = above ? CY - 1.6 : CY + 1.3;
-  d.text(ux + (heel ? 0.3 : 0), ly, lines[0], { size: 0.46, color: COL.ink, weight: 700 });
-  d.text(ux + (heel ? 0.3 : 0), ly + 0.6, lines[1], { size: 0.46, color: COL.ink, weight: 700 });
-  if (heel) d.step(ux - 2.9, CY + 1.4, 2); else d.step(tip[0] + 0.95, CY + (above ? 0.3 : -0.3), 2);
+  d.text(ux, ly, lines[0], { size: 0.46, color: COL.ink, weight: 700 });
+  d.text(ux, ly + 0.7, lines[1], { size: 0.46, color: COL.ink, weight: 700 });
+  if (heel) d.step(ux - 3.9, CY + 1.4, 2); else d.step(tip[0] + 0.95, CY + (above ? 0.3 : -0.3), 2);
   d.skate(5.5, CY + rr, flip, inside).skate(5.5, CY + Ro, flip, outside);
   d.step(4, CY + (backward ? 1.4 : 1.9), 1);
   const [rx, ry] = pt(CX, CY, Ro, 22);
@@ -200,7 +202,7 @@ function dragTurn({ title, desc, contact, backward = false }) {
   d.step(CX + Ro + 1.3, CY + 2.6, 3);
   d.skate(8.5, CY - Ro, 180 + flip, outside);
   d.step(8.5, CY - (backward ? 1.2 : 1.4), 4);
-  if (backward) d.text(17.6, 10.0, 'skating backwards', { size: 0.44 });
+  if (backward) d.text(21.3, 10.0, 'skating backwards', { size: 0.44, anchor: 'end' });
   d.travel(2.5, 10.55, 8.5, 10.55);
   return d.svg();
 }
@@ -246,7 +248,8 @@ function contX(backward) {
     // Inside foot pushing under, on its outside edge.
     d.skate(ax, ay + u * 0.5, flip, inside, { len: 1.4 });
     d.track(`M ${f2(ax - fwd * 0.3)} ${f2(ay + u * 0.45)} Q ${f2(ax - fwd * 1.0)} ${f2(ay)} ${f2(ax - fwd * 1.3)} ${f2(ay - u * 0.9)}`, inside, { width: 2 });
-    d.tag(ax - fwd * 2.0, ay - u * 1.05, 'OUT', inside);
+    // Beside the end of the push, clear of its arrowhead (the push ends at ax - 1.3 fwd, ay - 0.9 u).
+    d.tag(ax - fwd * 2.51, ay - u * 0.9, 'OUT', inside);
     // Outside foot crossing over in front, to the inside.
     d.skate(ax + fwd * 1.5, ay + u * 1.1, flip + (u * fwd > 0 ? 12 : -12), outside, { lifted: true, len: 1.4 });
     if (i < 2) {
@@ -257,16 +260,15 @@ function contX(backward) {
     }
   });
   const y4 = yAt(4), y10 = yAt(10), y7 = yAt(7);
-  d.step(4 + fwd * 1.5 - 1.9, y4 - 2.1, 1);
-  d.text(4 + fwd * 1.5, y4 - 1.9, 'cross over', { size: 0.4 });
-  d.step(4 - fwd * 2.0, y4 + 1.9, 2);
-  d.text(4 - fwd * 2.0, y4 + 2.85, 'push under', { size: 0.4 });
-  d.step(7 + 1.2 - 1.9, y7 + 1.45, 3);
-  d.text(7 + 1.2, y7 + 1.6, 'inside edge', { size: 0.4 });
-  const c4y = backward ? y10 - 1.0 : y10 + 2.85;
-  if (backward) d.step(10 + fwd * 1.5 - 2.2, c4y - 0.15, 4); else d.step(9.3, c4y - 0.15, 4);
-  d.text(10 + fwd * 1.5, c4y, 'cross over back', { size: 0.4 });
-  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  // Step numbers carry their words just to their right, baseline on the circle's centre line.
+  const stepText = (x, y, n, s) => { d.step(x, y, n); d.text(x + 0.75, y + 0.22, s, { size: 0.4, anchor: 'start' }); };
+  const s1 = [4 + fwd * 1.5 - 1.9, y4 - 2.1];
+  if (backward) stepText(s1[0], s1[1], 1, 'cross over');
+  else stepText(2.6, 4.5, 1, 'cross over');
+  stepText(4 - fwd * 2.0, y4 + 2.15, 2, 'push under');
+  stepText(7 + 1.2 - 1.9, y7 + 1.45, 3, 'inside edge');
+  if (backward) stepText(5.3, y10 - 1.15, 4, 'cross over back'); else stepText(10.6, y10 - 1.1, 4, 'cross over back');
+  if (backward) d.text(21.3, 10.0, 'facing this way ←  travelling →', { size: 0.42, anchor: 'end' });
   d.travel(4, 10.2, 11, 10.2);
   return d.svg();
 }
@@ -311,7 +313,7 @@ export default [
   {
     id: 'turn-three-turn-forwards-to-backwards',
     group: G,
-    title: 'Three turns forwards to backwards (on the spot)',
+    title: 'Three turns forwards to backwards (from a slow glide)',
     svg: threeTurn,
     card: {
       trains: 'Turning round on one foot with balance, which gives you a quick turn from forwards to backwards.',

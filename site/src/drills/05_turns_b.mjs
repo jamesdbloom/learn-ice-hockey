@@ -2,7 +2,7 @@
 // figure eight), small-circle pivots.
 // DRAFT, 22 Oct 2026. Top-down, feet; x right, y down. Travelling +x, the skater's LEFT is UP (-y).
 // All one-way drills are drawn as a LEFT (anticlockwise) turn, so the LEFT foot is the inside foot.
-import { diagram } from '../lib/draw.mjs';
+import { diagram } from './lib/draw.mjs';
 
 const K = 0.5523; // cubic-Bezier factor for a quarter circle
 
@@ -41,7 +41,7 @@ function tightTurnBase(d, { exitX, arrow = true, scissor = false }) {
     d.skate(rx, ry, -65, 'R');
     d.step(cx + 4.3, cy - 0.3, 2);
     d.text(cx - 0.8, cy - 0.1, 'scissor: inside foot', { size: 0.42, anchor: 'end' });
-    d.text(cx - 0.8, cy + 0.5, 'well ahead', { size: 0.42, anchor: 'end' });
+    d.text(cx - 0.8, cy + 0.6, 'well ahead', { size: 0.42, anchor: 'end' });
   }
   return { cx, cy };
 }
@@ -49,7 +49,7 @@ function tightTurnBase(d, { exitX, arrow = true, scissor = false }) {
 const tightTurn = (() => {
   const d = diagram({
     title: 'Tight turn',
-    desc: 'Skate in on two feet in a scissor stance, the inside (left) foot well ahead of the outside foot. Turn hard left around a cone with the inside (left) foot leading on its outside edge and the outside (right) foot on its inside edge, and come out the way you came. Repeat turning right.',
+    desc: 'Skate in on two feet in a scissor stance, the inside (left) foot well ahead of the outside foot. Turn hard left around a marker (a puck at stick-and-puck) with the inside (left) foot leading on its outside edge and the outside (right) foot on its inside edge, and come out the way you came. Repeat turning right.',
   });
   const { cy } = tightTurnBase(d, { exitX: 3, scissor: true });
   // 3: out of the turn, both feet down, travelling back to the left.
@@ -64,7 +64,7 @@ const tightTurn = (() => {
 const punchTurn = (() => {
   const d = diagram({
     title: 'Punch turn',
-    desc: 'A tight turn left around a cone, finished with a hard crossover push out of the turn: the right foot crosses over in front of the left. Repeat turning right.',
+    desc: 'A tight turn left around a marker (a puck at stick-and-puck), finished with a hard crossover push out of the turn: the right foot crosses over in front of the left. Repeat turning right.',
   });
   const { cy } = tightTurnBase(d, { exitX: 12, arrow: false });
   // 3: the punch. Right (outside) foot lifts and crosses over in front of the left (to the left foot's
@@ -107,12 +107,12 @@ function jamBase(d, { exitX, arrow = true }) {
 const jamTurn = (() => {
   const d = diagram({
     title: 'Jam turn',
-    desc: 'Skate in fast, then turn very sharply left around a cone so both skates dig in and spray snow, nearly stopping, and drive back out the way you came. Repeat turning right.',
+    desc: 'Skate in fast, then turn very sharply left around a marker (a puck at stick-and-puck) so both skates dig in and spray snow, nearly stopping, and drive back out the way you came. Repeat turning right.',
   });
   const { cy } = jamBase(d, { exitX: 4 });
   // 3: drive out of the jam, back the way you came.
   d.skate(10, cy - 1.0, 180, 'L');
-  d.skate(11, cy - 1.8, -155, 'R', { label: 'push' });
+  d.skate(11, cy - 1.8, -155, 'R', { label: 'right push' });
   d.step(8.4, cy - 1.4, 3);
   d.travel(8, 10.2, 12, 10.2);
   d.travel(9, 0.8, 5, 0.8);
@@ -122,7 +122,7 @@ const jamTurn = (() => {
 const punchJam = (() => {
   const d = diagram({
     title: 'Punch jam',
-    desc: 'A jam turn left around a cone, skates biting and spraying snow, followed straight away by a hard crossover punch out: the right foot crosses over in front of the left. Repeat turning right.',
+    desc: 'A jam turn left around a marker (a puck at stick-and-puck), skates biting and spraying snow, followed straight away by a hard crossover punch out: the right foot crosses over in front of the left. Repeat turning right.',
   });
   const { cy } = jamBase(d, { exitX: 13, arrow: false });
   // 3: the punch, straight out of the jam: right foot crosses over in front of (below) the left.
@@ -133,7 +133,7 @@ const punchJam = (() => {
   d.skate(9.8, 5.3, 180, 'R');
   d.track('M 9 5.3 L 6.2 5.3', 'R');
   d.text(7.0, 6.35, 'cross over', { color: '#e0731b', size: 0.45, weight: 600 });
-  d.step(13.2, 2.4, 3);
+  d.step(13.9, 2.3, 3);
   // 4: explode away.
   d.step(4.6, 4.3, 4);
   d.text(4.6, 3.3, 'stride away', { size: 0.45 });
@@ -170,9 +170,11 @@ const punchStep1 = (() => {
   d.skate(11.55, 5.25, 0, 'R', { len: 1.3 });
   d.spray(12.45, 5.45, 20, { n: 4, len: 0.6, spread: 40 });
   d.step(13.6, 2.4, 2);
-  d.text(14.2, 2.6, 'lean back onto the outside edge', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 2.62, 'lean back onto', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 3.32, 'the outside edge', { size: 0.42, anchor: 'start' });
   d.step(13.6, 6.6, 3);
-  d.text(14.2, 6.8, 'back foot down in a T: your safety', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 6.82, 'back foot down in a T:', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 7.52, 'your safety', { size: 0.42, anchor: 'start' });
   return d.svg();
 })();
 
@@ -189,10 +191,11 @@ const punchStep2 = (() => {
   d.tag(12.7, 3.6, 'OUT', 'L');
   d.skate(12.4, 6.1, 0, 'R', { len: 1.3, lifted: true });
   d.step(13.6, 2.4, 2);
-  d.text(14.2, 2.6, 'jump onto it and dig in, knee bent', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 2.62, 'jump onto it and', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 3.32, 'dig in, knee bent', { size: 0.42, anchor: 'start' });
   d.step(13.6, 6.6, 3);
-  d.text(14.2, 6.8, 'back foot off the ice,', { size: 0.42, anchor: 'start' });
-  d.text(14.2, 7.4, 'ready to touch down', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 6.82, 'back foot off the ice,', { size: 0.42, anchor: 'start' });
+  d.text(14.35, 7.52, 'ready to touch down', { size: 0.42, anchor: 'start' });
   return d.svg();
 })();
 
@@ -208,16 +211,17 @@ const punchStep3 = (() => {
   d.tag(13.4, 3.9, 'OUT', 'L');
   d.skate(12.0, 6.0, -10, 'R', { len: 1.3, lifted: true });
   d.step(15.6, 5.2, 2);
-  d.text(16.2, 5.4, 'dive onto the edge,', { size: 0.42, anchor: 'start' });
-  d.text(16.2, 6.0, 'momentum still forward', { size: 0.42, anchor: 'start' });
+  d.text(14.8, 6.45, 'dive onto the edge,', { size: 0.42, anchor: 'start' });
+  d.text(14.8, 7.15, 'momentum still forward', { size: 0.42, anchor: 'start' });
   return d.svg();
 })();
 
-// Step 4: figure eight round two pucks, punching and turning both ways; crossover at the apex, explode out.
+// Step 4: figure eight round two markers (pucks at stick-and-puck), punching and turning both ways; crossover at the apex, explode out.
 const punchFigure8 = (() => {
   const d = diagram({
-    title: 'Punch turns: figure eight round two pucks',
-    desc: 'A figure eight round two pucks, turning left round one and right round the other. Into each turn, dive onto the outside edge of the inside foot while the outside foot rides its inside edge and pulls you round. At the far point of the turn, cross over and explode out towards the other puck. Then add a puck on your stick.',
+    title: 'Punch turns: figure eight round two markers',
+    h: 11.5,
+    desc: 'A figure eight round two markers (pucks at stick-and-puck), turning left round one and right round the other. Into each turn, dive onto the outside edge of the inside foot while the outside foot rides its inside edge and pulls you round. At the far point of the turn, cross over and explode out towards the other marker. Then add a puck on your stick at stick-and-puck.',
   });
   const r = 2.8, cy = 5.5, c1 = 8.2, c2 = 13.8;
   d.track(circ(c1, cy, r, 0, -330), 'ink', { width: 2.5 });
@@ -235,9 +239,9 @@ const punchFigure8 = (() => {
     d.skate(x + ix, y + iy, hd(a), 'L', { len: 1.2 });
     d.skate(x - ix, y - iy, hd(a), 'R', { len: 1.2 });
     d.spray(x - ix * 1.9, y - iy * 1.9, a, { n: 5, len: 0.7, spread: 50 });
-    d.tag(x + ix * 2.6, y + iy * 2.6, 'OUT', 'L');
+    d.tag(x + ix * 3.0, y + iy * 3.0, 'OUT', 'L');
     d.tag(x - ix * 3.4, y - iy * 3.4 - 0.2, 'IN', 'R');
-    d.step(x + 1.7, y - 0.6, 1);
+    d.step(9.7, 1.95, 1);
   }
   // 2 Apex (a = -180): the outside (right) foot crosses over in front of the inside foot.
   {
@@ -253,11 +257,12 @@ const punchFigure8 = (() => {
     d.step(x + 1.0, y + 0.2, 3);
   }
   // Key, top-left, in reading order.
-  d.text(0.6, 9.2, '1 bite: outside foot digs in on its inside edge and pulls you round', { size: 0.4, anchor: 'start' });
-  d.text(0.6, 9.75, '   (inside foot on its outside edge)', { size: 0.4, anchor: 'start' });
-  d.text(0.6, 10.3, '2 cross over at the apex · 3 explode out to the other puck', { size: 0.4, anchor: 'start' });
-  d.text(c2 + 2.4, 1.2, 'same, turning the other way;', { size: 0.42 });
-  d.text(c2 + 2.4, 1.8, 'then carry a puck', { size: 0.42 });
+  d.text(0.6, 9.3, '1 bite: outside foot digs in on its inside edge and pulls you round', { size: 0.4, anchor: 'start' });
+  d.text(0.6, 10.05, '   (inside foot on its outside edge)', { size: 0.4, anchor: 'start' });
+  d.text(0.6, 10.8, '2 cross over at the apex · 3 explode out to the other marker', { size: 0.4, anchor: 'start' });
+  d.text(21.3, 1.0, 'same, turning the other way;', { size: 0.42, anchor: 'end' });
+  d.text(21.3, 1.7, 'then carry a puck', { size: 0.42, anchor: 'end' });
+  d.text(21.3, 2.4, '(stick-and-puck)', { size: 0.42, anchor: 'end' });
   return d.svg();
 })();
 
@@ -320,12 +325,12 @@ const circlePivots = (() => {
   const d = diagram({
     title: 'Small circle: forward to backward pivots, backward to forward steps',
     desc: 'Two small circles, the skater facing up the page the whole time. On the left circle (anticlockwise) they skate forward up the right side, pivot to backward on the toes with a small hop at the top, skate backward down the left side, and step from backward to forward at the bottom. The right circle is the same, clockwise.',
-    h: 12,
+    h: 12.5,
   });
   circleDrill(d, 5.6, 5.9, 3.4, false);
   circleDrill(d, 16.4, 5.9, 3.4, true);
-  d.text(5.6, 11.6, 'one way (anticlockwise)', { size: 0.45 });
-  d.text(16.4, 11.6, 'then the other way (clockwise)', { size: 0.45 });
+  d.text(5.6, 12.0, 'one way (anticlockwise)', { size: 0.45 });
+  d.text(16.4, 12.0, 'then the other way (clockwise)', { size: 0.45 });
   d.text(11, 9.7, 'always facing this way ↑', { size: 0.46, weight: 600, color: '#22303c' });
   d.raw('<line x1="309" y1="168" x2="351" y2="168" stroke="#22303c" stroke-width="2.5"/>');
   d.text(11, 6.3, 'forward', { size: 0.42, color: '#22303c' });
@@ -439,14 +444,14 @@ export default [
   {
     id: 'turns-punch-turn',
     group: 'Turns',
-    title: 'Punch turns: figure eight round two pucks',
+    title: 'Punch turns: figure eight round two markers',
     svg: punchFigure8,
     card: {
       trains: 'The full punch turn: getting away from pressure with a quick, efficient change of direction, then exploding out.',
       steps: [
-        'Put two pucks a few metres apart on clear ice and skate a figure eight round them: one way round the first puck, the other way round the second.',
-        'As you enter each turn, dive onto the outside edge of your inside foot, and bite the ice with the inside edge of your outside foot: dig it in and pull yourself round the puck.',
-        'At the far point of the turn (the apex), cross the outside foot over in front of the inside foot, then explode out towards the other puck.',
+        'Put two markers (pucks at stick-and-puck) a few metres apart on clear ice and skate a figure eight round them: one way round the first marker, the other way round the second.',
+        'As you enter each turn, dive onto the outside edge of your inside foot, and bite the ice with the inside edge of your outside foot: dig it in and pull yourself round the marker.',
+        'At the far point of the turn (the apex), cross the outside foot over in front of the inside foot, then explode out towards the other marker.',
         'When that flows both ways, do it carrying a puck.',
       ],
       mistake: 'Gliding round the turn and only starting to push once you are out of it.',

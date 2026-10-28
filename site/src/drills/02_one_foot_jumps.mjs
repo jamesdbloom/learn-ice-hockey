@@ -1,8 +1,9 @@
 // Group "One-foot edges": one-foot and two-foot jumps, and the small figure 8s (DRAFT, 22 Oct 2026).
 // Travel is left to right (+x) unless stated. Facing +x, the skater's LEFT side is UP the page.
-import { diagram, PX, COL } from '../lib/draw.mjs';
+import { diagram, PX, COL } from './lib/draw.mjs';
 
 const GROUP = 'One-foot edges';
+const JUMPS = 'Jumps'; // the page's own heading for the five jumps; the figure 8s stay with the edges
 const f = (n) => Number(n.toFixed(3));
 
 /** A circular arc as cubic Beziers in FEET (the kit scales every number, so SVG 'A' flags would break).
@@ -67,8 +68,8 @@ const jumpToOther = (() => {
   d.track(`M 11.7 ${yL} L 15.6 ${yL}`, 'L', { arrow: false });
   d.skate(14.6, yL, 0, 'L');
   hand(d, 14.6, yL + 0.6, true);
-  d.text(14.6, yL - 1.0, 'touch, head up', { size: 0.42 });
-  d.step(12.6, 3.0, 4);
+  d.text(12.75, 3.42, 'touch, head up', { size: 0.42, anchor: 'start' });
+  d.step(12.0, 3.2, 4);
   d.track(`M 16.0 ${yL + 0.2} Q 17.8 ${yL + 0.2} 18.4 ${yR - 0.05}`, 'ink', { air: true });
   // Back onto the right foot.
   d.skate(19.3, yR, 0, 'R');
@@ -133,8 +134,8 @@ const crossOverJump = (() => {
   // Back the other way: left foot jumps over the right.
   d.raw(`<line x1="${14.6 * PX}" y1="${yB * PX}" x2="${19.4 * PX}" y2="${yB * PX}" stroke="${COL.R}" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.55"/>`);
   d.track(`M 14.2 ${yB - 0.9} Q 16.2 ${yB - 0.4} 17.4 ${yC - 0.1}`, 'ink', { air: true });
-  d.text(17.2, yB - 1.2, 'left back over the right', { size: 0.42, color: COL.L });
-  d.step(15.0, yB - 2.0, 4);
+  d.text(14.3, yB - 1.35, 'left back over the right', { size: 0.42, color: COL.L, anchor: 'start' });
+  d.step(13.1, yB - 2.15, 4);
   d.skate(18.4, yC, 0, 'L');
   d.track(`M 19.3 ${yC} L 21.2 ${yC}`, 'L');
   d.travel(4, 10, 11, 10);
@@ -225,8 +226,8 @@ const fig8Inside = (() => {
   d.step(9.7, 9.7, 3);
   d.step(1.8, 5.5, 4);
   d.text(11, 0.9, 'change feet in the middle', { size: 0.44 });
-  d.text(CR[0], CR[1] + 0.9, 'right foot', { size: 0.4, color: COL.R });
-  d.text(CL[0], CL[1] + 0.9, 'left foot', { size: 0.4, color: COL.L });
+  d.text(CR[0], CR[1] + 1.15, 'right foot', { size: 0.4, color: COL.R });
+  d.text(CL[0], CL[1] + 1.15, 'left foot', { size: 0.4, color: COL.L });
   return d.svg();
 })();
 
@@ -249,8 +250,8 @@ const fig8Outside = (() => {
   d.step(9.7, 1.3, 3);
   d.step(1.8, 5.5, 4);
   d.text(11, 10.5, 'change feet in the middle', { size: 0.44 });
-  d.text(CR[0], CR[1] + 0.9, 'right foot', { size: 0.4, color: COL.R });
-  d.text(CL[0], CL[1] + 0.9, 'left foot', { size: 0.4, color: COL.L });
+  d.text(CR[0], CR[1] + 1.15, 'right foot', { size: 0.4, color: COL.R });
+  d.text(CL[0], CL[1] + 1.15, 'left foot', { size: 0.4, color: COL.L });
   return d.svg();
 })();
 
@@ -258,7 +259,7 @@ const fig8Outside = (() => {
 export default [
   {
     id: 'one-foot-jump-to-other-foot',
-    group: GROUP,
+    group: JUMPS,
     title: 'One foot jump to other foot',
     svg: jumpToOther,
     card: {
@@ -275,7 +276,7 @@ export default [
   },
   {
     id: 'one-foot-jump-to-same-foot',
-    group: GROUP,
+    group: JUMPS,
     title: 'One foot jump to same foot',
     svg: jumpToSame,
     card: {
@@ -292,7 +293,7 @@ export default [
   },
   {
     id: 'one-foot-cross-over-jump',
-    group: GROUP,
+    group: JUMPS,
     title: 'One foot cross over jump',
     svg: crossOverJump,
     card: {
@@ -309,7 +310,7 @@ export default [
   },
   {
     id: 'two-foot-jump',
-    group: GROUP,
+    group: JUMPS,
     title: 'Two foot jump',
     svg: twoFootJump,
     card: {
@@ -325,7 +326,7 @@ export default [
   },
   {
     id: 'two-foot-180-turn-jump',
-    group: GROUP,
+    group: JUMPS,
     title: 'Two foot 180 turn jump',
     svg: twoFoot180,
     card: {

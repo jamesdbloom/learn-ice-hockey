@@ -1,5 +1,5 @@
 // Mohawks, Starts and Two-foot edges (DRAFT, 22 Oct 2026).
-import { diagram, COL } from '../lib/draw.mjs';
+import { diagram, COL } from './lib/draw.mjs';
 
 const G = { mohawk: 'Mohawks', start: 'Starts', two: 'Two-foot edges' };
 const rad = (a) => (a * Math.PI) / 180;
@@ -64,7 +64,7 @@ const mohawk = (stepping) => {
       d.skate(px, py, v > 0 ? 45 : -45, lead, { len: 1.3 });
       d.raw(`<circle cx="${(px * 30).toFixed(1)}" cy="${(py * 30).toFixed(1)}" r="24" fill="none" stroke="${COL.ink}" stroke-width="1.5" stroke-dasharray="4 3"/>`);
       d.track(`M ${E[0] - 0.5} ${E[1] - v * 1.5} Q ${E[0] + 1.9} ${E[1] - v * 1.7} ${E[0] + 1.9} ${E[1] - v * 0.25}`, other, { width: 2 });
-      d.text(E[0] + 1.1, E[1] + (down ? 0.95 : -0.75), `pivot on the ${lead === 'R' ? 'right' : 'left'} foot`, { size: 0.42, color: COL[lead], weight: 600, anchor: 'start' });
+      d.text(E[0] + 1.25, E[1] + (down ? 0.95 : -0.55), `pivot on the ${lead === 'R' ? 'right' : 'left'} foot`, { size: 0.42, color: COL[lead], weight: 600, anchor: 'start' });
     } else {
       // Shoulders lead, then a jump from skate to skate (owner's source, 28 Oct 2026: Hockey Tutorial,
       // "Master The Elite Mohawk Turn", 13:30-14:01 — "add a shoulder motion jumping from skate to skate…
@@ -73,12 +73,13 @@ const mohawk = (stepping) => {
       d.track(`M ${E[0] - 1.1} ${E[1] - v * 1.4} Q ${E[0] - 1.6} ${E[1] + v * 0.7} ${E[0] - 0.2} ${E[1] + (down ? 0.25 : -0.25)}`, other, { air: true, width: 2.2 });
       d.skate(E[0] + 0.3, E[1] + (down ? 0.2 : -0.2), dirNew, other, { len: 1.1 });
       d.skate(E[0] + 1.2, E[1] + (down ? -0.3 : 0.3), dirNew + 180, lead, { len: 1.1 });
-      d.text(E[0] + 1.9, E[1] + (down ? 0.95 : -1.3), 'shoulders turn, then jump', { size: 0.42, anchor: 'start', weight: 600 });
-      d.text(E[0] + 1.9, E[1] + (down ? 1.5 : -0.75), 'skate to skate', { size: 0.42, anchor: 'start', weight: 600 });
+      // One line each, in the margin outside the lane (the larger type no longer fits two lines inside it).
+      if (down) d.text(1.0, 10.55, 'shoulders turn, then jump skate to skate', { size: 0.42, anchor: 'start', weight: 600 });
+      else d.text(21.3, 0.8, 'shoulders turn, then jump skate to skate', { size: 0.42, anchor: 'end', weight: 600 });
     }
   });
   d.text(3.2, 5.0, 'heels in line', { size: 0.42 });
-  d.text(3.2, 5.6, 'curve across', { size: 0.42 });
+  d.text(3.2, 5.7, 'curve across', { size: 0.42 });
   const m0 = bezPt(legs[0].P, 0.5), m1 = bezPt(legs[1].P, 0.5);
   d.step(legs[0].P[0][0], legs[0].P[0][1] + 0.9, 1);
   d.step(m0.x + 1.5, m0.y - 0.9, 2);
@@ -92,7 +93,7 @@ const mohawk = (stepping) => {
 const vStart = (() => {
   const d = diagram({
     title: 'Explosive V-start',
-    desc: 'From a standing V (heels in, toes turned out) the skater drives forward. The first stride with each foot is short and driving, like running, each push going out to the side; the next strides get longer and the toes come round, and by about the sixth stride the skater is in full stride.',
+    desc: 'From a standing V (heels in, toes turned out) the skater drives forward. The first stride with each foot is short and driving, like running, each push going out to the side; the next strides get longer and the toes come round, and after a few strides the skater is in full stride.',
   });
   // Start V: left foot up the page (skater faces +x, their left is -y).
   d.skate(2.6, 4.9, -45, 'L');
@@ -116,7 +117,7 @@ const vStart = (() => {
   });
   d.text(5.3, 9.0, 'first two: short, driving', { size: 0.44 });
   d.text(16.8, 9.0, 'longer, toes come round', { size: 0.44 });
-  d.step(4.6, 8.0, 2);
+  d.step(4.6, 7.85, 2);
   d.step(8.4, 3.2, 3);
   d.step(17.2, 3.2, 4);
   d.travel(4, 10.2, 12, 10.2);
@@ -137,25 +138,26 @@ const xStart = (() => {
   // 1: side-on stance, toes up the page. Left foot is on the skater's left (-x).
   d.skate(1.8, 6.6, -90, 'L', { len: 1.3 });
   d.skate(3.4, 6.6, -90, 'R', { len: 1.3 });
-  d.text(2.6, 9.6, 'side-on,', { size: 0.42 });
-  d.text(2.6, 10.2, 'knees bent', { size: 0.42 });
+  d.text(2.6, 9.55, 'side-on,', { size: 0.42 });
+  d.text(2.6, 10.25, 'knees bent', { size: 0.42 });
   d.step(1.0, 4.9, 1);
   // 2: the left foot lifts, crosses over in front (up the page) and lands on the far side of the right foot;
   //    the right foot pushes under the body, sideways towards the skater's left, on its outside edge.
   d.track('M 1.9 5.6 Q 3.0 3.3 5.0 5.6', 'L', { air: true, width: 2.5 });
   d.skate(5.4, 6.3, -35, 'L', { len: 1.3 });
-  d.text(3.4, 3.9, 'left crosses over in front', { size: 0.42, color: COL.L, weight: 600 });
+  d.text(0.6, 3.75, 'left crosses over in front', { size: 0.42, color: COL.L, weight: 600, anchor: 'start' });
   d.track('M 4.0 7.3 L 2.2 7.6', 'R', { width: 2.5 });
   d.tag(3.1, 8.3, 'OUT', 'R');
-  d.text(4.0, 8.45, 'right pushes under', { size: 0.42, color: COL.R, weight: 600, anchor: 'start' });
-  d.step(6.6, 4.7, 2);
+  d.text(4.15, 8.5, 'right pushes under', { size: 0.42, color: COL.R, weight: 600, anchor: 'start' });
+  d.step(6.45, 4.75, 2);
   // 3: short, quick running strides on the toes, feet turned out in a V, then longer strides.
   const strides = [[7.8, 7.4, 35, 'R'], [9.4, 5.8, -35, 'L'], [11.0, 7.3, 30, 'R'], [13.0, 5.9, -28, 'L'], [16.0, 7.1, 20, 'R'], [19.4, 6.0, -15, 'L']];
   strides.forEach(([x, y, a, f]) => d.skate(x, y, a, f, { len: 1.3 }));
-  d.step(7.6, 4.5, 3);
-  d.text(11.4, 4.65, 'short, quick steps on your toes', { size: 0.42 });
-  d.text(17.7, 4.65, 'then longer strides', { size: 0.42 });
-  d.text(18.6, 1.0, 'facing this way ↑', { size: 0.42 });
+  d.step(7.75, 4.45, 3);
+  d.text(11.2, 3.95, 'short, quick steps', { size: 0.42 });
+  d.text(11.2, 4.65, 'on your toes', { size: 0.42 });
+  d.text(17.9, 4.65, 'then longer strides', { size: 0.42 });
+  d.text(21.3, 1.0, 'facing this way ↑', { size: 0.42, anchor: 'end' });
   d.travel(8, 10.2, 19, 10.2);
   return d.svg();
 })();
@@ -219,8 +221,9 @@ const fwdX = (() => {
   d.tag(s2[0] + 1.2, s2[1] - 1.1, 'IN', 'L');
   d.text(s2[0] + 1.5, s2[1] + 0.6, 'stop', { size: 0.46, weight: 600, color: COL.ink, anchor: 'start' });
   d.text(7.6, 1.5, 'left crosses over in front,', { size: 0.42, color: COL.L, weight: 600 });
-  d.text(7.6, 2.1, 'toe down first, twice', { size: 0.42, color: COL.L, weight: 600 });
-  d.text(17.4, 6.7, 'right crosses over in front, twice', { size: 0.42, color: COL.R, weight: 600 });
+  d.text(7.6, 2.2, 'toe down first, twice', { size: 0.42, color: COL.L, weight: 600 });
+  d.text(21.3, 6.7, 'right crosses over', { size: 0.42, color: COL.R, weight: 600, anchor: 'end' });
+  d.text(21.3, 7.4, 'in front, twice', { size: 0.42, color: COL.R, weight: 600, anchor: 'end' });
   d.step(1.0, 3.6, 1);
   d.step(s1[0] - 2.2, s1[1] + 1.5, 2);
   d.step(s1[0] + 3.4, s1[1] + 0.4, 3);
@@ -232,16 +235,18 @@ const fwdX = (() => {
 
 const bwdX = (() => {
   const d = diagram({
-    title: 'Backwards cross over 2 steps & stop, diagonal zig-zag',
-    desc: 'Skating backwards, facing left, travelling right down the ice. Two crossover steps diagonally backwards and to the right: the left foot crosses over in front of the right, and the right steps out from behind, then a two-foot stop with the heels pushed out. Then two crossover steps diagonally backwards and to the left, the right foot crossing over, and the same stop. The path zig-zags down the ice.',
+    title: 'Backwards cross over 2 or 3 steps & stop, diagonal zig-zag',
+    desc: 'Skating backwards, facing left, travelling right down the ice. Two or three crossover steps (two drawn) diagonally backwards and to the right: the left foot crosses over in front of the right, and the right steps out from behind, then a two-foot stop with the heels pushed out. Then two or three crossover steps diagonally backwards and to the left, the right foot crossing over, and the same stop. The path zig-zags down the ice.',
   });
   const g1 = crossLeg(d, { x0: 1.8, y0: 7.6, ang: -30, lead: 'R', backward: true });
   const g2 = crossLeg(d, { x0: g1.stop[0], y0: g1.stop[1], ang: 30, lead: 'L', backward: true, skipStart: 'all' });
   const s1 = g1.stop, s2 = g2.stop;
   d.text(s1[0] + 2.0, s1[1] - 1.5, 'heels out, stop', { size: 0.44, weight: 600, color: COL.ink, anchor: 'start' });
   d.text(s2[0] - 2.4, s2[1] + 1.9, 'heels out, stop', { size: 0.44, weight: 600, color: COL.ink });
-  d.text(4.2, 2.6, 'left crosses over in front, twice', { size: 0.42, color: COL.L, weight: 600 });
-  d.text(11.2, 7.4, 'right crosses over in front, twice', { size: 0.42, color: COL.R, weight: 600 });
+  d.text(0.6, 2.6, 'left crosses over', { size: 0.42, color: COL.L, weight: 600, anchor: 'start' });
+  d.text(0.6, 3.3, 'in front, 2 or 3 times', { size: 0.42, color: COL.L, weight: 600, anchor: 'start' });
+  d.text(11.2, 7.55, 'right crosses over', { size: 0.42, color: COL.R, weight: 600 });
+  d.text(11.2, 8.25, 'in front, 2 or 3 times', { size: 0.42, color: COL.R, weight: 600 });
   d.step(1.0, 6.3, 1);
   d.step(s1[0] - 1.6, s1[1] - 1.4, 2);
   d.step(s1[0] + 3.4, s1[1] - 0.4, 3);
@@ -293,9 +298,9 @@ const lemons = (back, cross) => {
     d.tag(13.0, Y + 2.9, 'IN', bot);
     d.tag(20.0, Y - 1.25, 'OUT', top);
     d.tag(20.0, Y + 1.25, 'OUT', bot);
-    d.text(6.0, Y + 2.4, 'feet cross under', { size: 0.42 });
-    d.text(3.9, 8.9, 'small', { size: 0.44 });
-    d.text(16.2, 9.4, 'wide, roll onto the outside edges to cross', { size: 0.42 });
+    d.text(6.0, Y + 2.7, 'feet cross under', { size: 0.42 });
+    d.text(3.9, 9.1, 'small', { size: 0.44 });
+    d.text(21.3, 9.4, 'wide, roll onto the outside edges to cross', { size: 0.42, anchor: 'end' });
   } else {
     d.tag(4.05, Y - 1.85, 'IN', top);
     d.tag(4.05, Y + 1.85, 'IN', bot);
@@ -370,7 +375,7 @@ export default [
         'Stand with heels in and toes turned out in a V, knees bent and leaning forward, weight on the front of the blades.',
         'Drive off one foot, then the other. The first stride with each foot is short and driving, more like running, with the push going out to the side and the leg fully extended.',
         'Keep the skates low to the ice so each foot comes back fast for the next push.',
-        'Make the next strides longer. The toes come round as you speed up, and by about the sixth stride you are in full stride.',
+        'Make the next strides longer. The toes come round as you speed up, and after a few strides you are in full stride.',
       ],
       mistake: 'Standing up tall and taking long, gliding first strides, so you glide instead of driving.',
       check: 'Checked against Hockey Canada Coach 1 (front start) and Laura Stamm (Human Kinetics): the first stride with each foot is short and driving, then the strides lengthen, full stride by about the sixth. I had said to keep the next few strides short too; that is now corrected.',

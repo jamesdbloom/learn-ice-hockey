@@ -9,7 +9,7 @@
 //     back against travel puts it on its OUTSIDE edge.
 //   - Backwards: the skater faces -x (toes point left) while travelling +x; their right is
 //     up the page.
-import { diagram, COL, PX } from '../lib/draw.mjs';
+import { diagram, COL, PX } from './lib/draw.mjs';
 
 const GROUP = 'Stops';
 
@@ -109,8 +109,10 @@ function hockeyStop({ title, desc, gap, note, stagger = 0 }) {
     d.tag(xL - 0.9, yL + 1.9, 'OUT', 'L');
     d.tag(xR - 0.3, yR + 1.9, 'IN', 'R');
   }
-  d.step(xL - 1.1, 3.3, 3);
-  d.text((xL + xR) / 2, 2.1, note);
+  d.step(xL - 1.1, stagger ? 2.85 : 3.3, 3);
+  // A long note would run off the right edge at the larger type size, so it ends at the margin.
+  const long = (xL + xR) / 2 + note.length * 0.15 > 21.3; // ~0.3 ft per character at the default size
+  d.text(long ? 21.3 : (xL + xR) / 2, 2.1, note, long ? { anchor: 'end' } : {});
   d.travel(3, 10, 10, 10);
   return d.svg();
 }
@@ -156,7 +158,7 @@ function oneFootStop(edge) {
   d.spray(16.6, 6.3, 0, { n: 6, len: 1.1, spread: 70 });
   d.tag(out ? 17.9 : 15.4, out ? 7.6 : 8.0, edge, 'R');
   d.step(17.6, 4.2, 3);
-  if (out) d.text(16.4, 2.6, 'right heel in front of the left foot', { size: 0.44 });
+  if (out) d.text(21.3, 2.6, 'right heel in front of the left foot', { size: 0.44, anchor: 'end' });
   d.text(11, 9.1, 'left foot stays up the whole time');
   d.travel(3, 10, 10, 10);
   d.text(21.3, 0.95, 'repeat on the other foot', { size: 0.44, anchor: 'end', weight: 600, color: COL.ink });

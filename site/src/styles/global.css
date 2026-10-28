@@ -2795,6 +2795,15 @@ figure.diagram svg {
 .prose figure.diagram:has(+ hr),
 .prose figure.diagram:has(+ p:empty + hr) { margin-bottom: 2.75rem; }
 
+/* Skating-drill diagrams (`![](drill:<id>)`, scripts/build-drills.mjs). They inherit
+   figure.diagram's spacing and scale-to-column rule. Their legend is drawn BELOW the
+   ice panel on a transparent ground in a fixed grey, which on the dark theme's page
+   background would be grey on near-black — so the drawing gets its own white ground in
+   every theme rather than relying on the page colour behind it. */
+figure.drill svg {
+  background: #ffffff;
+  border-radius: 12px;
+}
 figure.diagram figcaption {
   margin-top: 0.6rem;
   font-size: 0.9rem;

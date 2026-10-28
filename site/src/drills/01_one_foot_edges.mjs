@@ -6,7 +6,7 @@
 //   Forward, facing +x: the skater's LEFT is up the page, RIGHT is down.
 //   Backward, travelling +x but facing -x (toe points against travel): the skater's LEFT is DOWN the page.
 //   The path always bends towards the side the blade leans to: the inside edge of the right foot = its left side.
-import { diagram, COL, PX } from '../lib/draw.mjs';
+import { diagram, COL, PX } from './lib/draw.mjs';
 
 const f = (n) => Math.round(n * PX * 10) / 10;
 const r3 = (n) => Number(n.toFixed(3));
@@ -61,10 +61,10 @@ const stepOvers = (() => {
   });
   // The foot being lifted to step over, on the first two.
   d.step(1.1, cy - 2.1, 1);
-  d.step(segs[1].P[0][0] + 0.4, cy + 2.6, 2);
+  d.step(segs[1].P[0][0] + 0.4, cy + 3.0, 2);
   d.step(segs[2].P[0][0] + 0.4, cy - 2.6, 3);
-  d.text(segs[1].P[0][0] + 0.4, cy + 3.6, 'left steps over', { size: 0.42, color: COL.L, weight: 600 });
-  d.text(segs[2].P[0][0] + 0.4, cy - 3.3, 'right steps over', { size: 0.42, color: COL.R, weight: 600 });
+  d.text(segs[1].P[0][0] + 0.4, cy + 4.1, 'left steps over', { size: 0.42, color: COL.L, weight: 600 });
+  d.text(segs[2].P[0][0] + 0.4, cy - 3.55, 'right steps over', { size: 0.42, color: COL.R, weight: 600 });
   d.text(16.5, 9.0, 'small steps, roughly straight line', { size: 0.42 });
   d.travel(4, 10, 11, 10);
   return d.svg();
@@ -140,17 +140,17 @@ function sharpCs({ title, desc, backward = false }) {
     }
   });
   const E0 = arcs[0].P[3], sy = -sR; // label on the side away from the first arc's bulge
-  d.text(E0[0] - 1.0, cy + sy * (backward ? 3.5 : 2.9), 'left foot crosses', { size: 0.42, color: COL.L, weight: 600, anchor: 'end' });
+  d.text(E0[0] - 1.0, cy + sy * (backward ? 3.5 : 2.9), 'left foot steps', { size: 0.42, color: COL.L, weight: 600, anchor: 'end' });
   d.text(E0[0] - 1.0, cy + sy * (backward ? 2.9 : 3.5), 'right over in front', { size: 0.42, color: COL.L, weight: 600, anchor: 'end' });
-  d.text(18.6, 9.0, 'every new foot crosses over', { size: 0.42 });
-  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  d.text(21.3, backward ? 1.0 : 9.0, 'every new foot steps over', { size: 0.42, anchor: 'end' });
+  if (backward) d.text(21.3, 10.0, 'facing this way ←  travelling →', { size: 0.42, anchor: 'end' });
   d.travel(4, 10, 11, 10);
   return d.svg();
 }
 
 const sharpC = sharpCs({
-  title: 'Outside edge, sharp Cs with a full crossover',
-  desc: 'Sharp C shapes down the ice, alternating feet. Carve a sharp C on the right outside edge, curving right. At the end, lift the left foot right over in front of the right and land it on its outside edge, carving a sharp C to the left. Keep alternating, crossing over every time.',
+  title: 'Outside edge, sharp Cs with a full step-over',
+  desc: 'Sharp C shapes down the ice, alternating feet. Carve a sharp C on the right outside edge, curving right. At the end, lift the left foot right over in front of the right and land it on its outside edge, carving a sharp C to the left. Keep alternating, stepping over every time.',
 });
 
 // ---------------------------------------------------------------- Outside edge: stepping backwards along a blue line
@@ -183,12 +183,15 @@ const blueLineSteps = (() => {
       d.track(`M ${r3(prev.x + 0.9)} ${r3(prev.y - side * 0.15)} Q ${r3((prev.x + x) / 2 + 0.4)} ${r3(y + side * 1.4)} ${r3(x - 0.75)} ${r3(y + side * 0.15)}`, foot, { air: true, width: 2.4 });
     }
   });
-  d.step(steps[0].x - 0.2, cy + gap + 1.9, 1);
-  d.step(steps[1].x - 0.2, cy - gap - 1.9, 2);
-  d.step(steps[2].x - 0.2, cy + gap + 1.9, 3);
-  d.text(steps[4].x, cy + gap + 1.9, 'right foot lands on your left of the line', { size: 0.42, color: COL.R, weight: 600 });
-  d.text(steps[3].x, cy - gap - 1.9, 'left foot lands on your right of the line', { size: 0.42, color: COL.L, weight: 600 });
-  d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  // Numbered as the page numbers them: its step 1 is the set-up, so the first placement is 2.
+  d.step(steps[0].x - 0.2, cy + gap + 1.9, 2);
+  d.step(steps[1].x - 0.2, cy - gap - 1.9, 3);
+  d.step(steps[2].x - 0.2, cy + gap + 1.9, 4);
+  // The right-foot label stays right-anchored: beside badge 2 it would run into badge 4. The left-foot
+  // label sits beside badge 3, which is the page's left-foot step.
+  d.text(21.3, cy + gap + 1.9 + 0.22, 'right foot lands on your left of the line', { size: 0.42, color: COL.R, weight: 600, anchor: 'end' });
+  d.text(steps[1].x + 0.6, cy - gap - 1.9 + 0.22, 'left foot lands on your right of the line', { size: 0.42, color: COL.L, weight: 600, anchor: 'start' });
+  d.text(21.3, 10.0, 'facing this way ←  travelling →', { size: 0.42, anchor: 'end' });
   d.travel(4, 10, 11, 10);
   return d.svg();
 })();
@@ -220,14 +223,14 @@ function insideArcs({ title, desc, backward }) {
     // Lifted foot on the inside of the curve (towards the centre), beside the skating foot.
     d.skate(k.x - 0.5, k.y - s * 0.9, skateAng(k.ang), other, { lifted: true });
     d.tag(k.x, k.y + s * 0.95, 'IN', foot);
-    d.step(k.x + 1.8, k.y - s * 0.1, i + 1);
+    d.step(k.x + 1.95, k.y + s * 0.25, i + 1);
     if (i === 1) hand(d, k.x + 0.7, k.y - s * 2.0, 'hand touches ice', s < 0);
   });
   const sideY = (n) => cy - sR * n; // the side away from the first arc's bulge
   d.text(arcs[0].P[3][0] - 0.4, sideY(sR > 0 ? 2.6 : 2.0), 'new foot down beside,', { size: 0.42, anchor: 'end' });
   d.text(arcs[0].P[3][0] - 0.4, sideY(sR > 0 ? 2.0 : 2.6), 'no crossing', { size: 0.42, anchor: 'end' });
-  d.text(18.6, 1.0, 'push hard into every arc', { size: 0.42 });
-  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  d.text(21.3, 1.0, 'push hard into every arc', { size: 0.42, anchor: 'end' });
+  if (backward) d.text(21.3, 10.0, 'facing this way ←  travelling →', { size: 0.42, anchor: 'end' });
   d.travel(4, 10, 11, 10);
   return d.svg();
 }
@@ -256,7 +259,7 @@ function slalom(foot, backward) {
     d.skate(1.5, py, pushUp ? -30 : 30, other);
     d.track(pushUp ? 'M 1.3 2.6 L 0.6 1.6' : 'M 1.3 7.8 L 0.6 8.8', other, { width: 2.5 });
   }
-  d.text(2.6, pushUp ? 1.6 : 9.4, 'push', { size: 0.5, color: COL[other], weight: 600, anchor: 'start' });
+  d.text(2.6, pushUp ? 1.6 : 9.4, `${other === 'L' ? 'left' : 'right'} push`, { size: 0.5, color: COL[other], weight: 600, anchor: 'start' });
   // Start the weave on the side away from the push foot.
   const first = pushUp ? 1 : -1; // +1: first marker passed below; -1: above
   d.step(0.8, cy, 1);
@@ -282,8 +285,8 @@ function slalom(foot, backward) {
     d.skate(m.x, m.y, backward ? m.ang + 180 : m.ang, foot, { len: 1.4 });
     if (i < 2) d.step(m.x, m.y + s * 2.15, i + 2);
   });
-  d.text(17, 9.0, `only the ${footWord} foot touches the ice`, { size: 0.42 });
-  if (backward) d.text(17.6, 10.0, 'facing this way ←  travelling →', { size: 0.42 });
+  d.text(21.3, 9.0, `only the ${footWord} foot touches the ice`, { size: 0.42, anchor: 'end' });
+  if (backward) d.text(21.3, 10.0, 'facing this way ←  travelling →', { size: 0.42, anchor: 'end' });
   d.travel(4, 10, 11, 10);
   return d.svg();
 }
@@ -378,7 +381,7 @@ export default [
       steps: [
         'Carve a sharp C on the outside edge of your right foot, curving to your right.',
         'At the end of the C, step your left foot right over in front of the right. Land it on its outside edge and carve a sharp C the other way.',
-        'Keep alternating, crossing over every time. Keep it continuous and confident.',
+        'Keep alternating, stepping over every time. Keep it continuous and confident.',
       ],
       mistake: 'Opening the C up into a wide, lazy curve because you do not lean far enough over the edge.',
       check: 'Now drawn as alternating sharp Cs with a full crossover between them, as you asked.',

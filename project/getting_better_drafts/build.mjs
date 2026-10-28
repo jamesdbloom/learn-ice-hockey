@@ -1,5 +1,7 @@
-// Build the Getting Better drill drafts: writes out/<id>.svg for each drill, out/drills.json,
-// and (with --png) out/png/<id>.png via headless Chrome so a reviewer can look at them.
+// Render the Getting Better drill diagrams for review: writes out/<id>.svg for each drill,
+// out/drills.json, and (with --png) out/png/<id>.png via headless Chrome so a reviewer can
+// look at them. The ONE source is site/src/drills/ (the modules the site builds from); the
+// review-era copies that used to live in drills/ and lib/ here were deleted on 28 Oct 2026.
 // Usage (from repo root):  node project/getting_better_drafts/build.mjs [--png] [--only <file.mjs>]
 import { readdirSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -7,6 +9,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
+const SRC = join(HERE, '..', '..', 'site', 'src', 'drills');
 const OUT = join(HERE, 'out');
 const args = process.argv.slice(2);
 const png = args.includes('--png');
@@ -14,10 +17,10 @@ const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
 const CHROME = '/Users/uk45004860/.cache/puppeteer/chrome-headless-shell/mac_arm-154.0.8037.57/chrome-headless-shell-mac-arm64/chrome-headless-shell';
 
 mkdirSync(join(OUT, 'png'), { recursive: true });
-const files = readdirSync(join(HERE, 'drills')).filter((f) => f.endsWith('.mjs') && (!only || f === only)).sort();
+const files = readdirSync(SRC).filter((f) => f.endsWith('.mjs') && (!only || f === only)).sort();
 const all = [];
 for (const f of files) {
-  const mod = await import(pathToFileURL(join(HERE, 'drills', f)).href + `?t=${Date.now()}`);
+  const mod = await import(pathToFileURL(join(SRC, f)).href + `?t=${Date.now()}`);
   for (const d of mod.default) {
     if (!d.id || !d.svg || !d.card) throw new Error(`${f}: drill missing id/svg/card`);
     writeFileSync(join(OUT, `${d.id}.svg`), d.svg);

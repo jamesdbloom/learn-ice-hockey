@@ -1,18 +1,20 @@
 // Assemble the private preview page for the owner: every drill's SVG beside its card.
+// Reads the one source, site/src/drills/ (the modules the site builds from).
 // Usage (from repo root): node project/getting_better_drafts/preview.mjs  -> out/skating-drills.html
 import { readdirSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
+const SRC = join(HERE, '..', '..', 'site', 'src', 'drills');
 const OUT = join(HERE, 'out');
 mkdirSync(OUT, { recursive: true });
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-const files = readdirSync(join(HERE, 'drills')).filter((f) => f.endsWith('.mjs') && !f.startsWith('00_')).sort();
+const files = readdirSync(SRC).filter((f) => f.endsWith('.mjs') && !f.startsWith('00_')).sort();
 const drills = [];
 for (const f of files) {
-  const mod = await import(pathToFileURL(join(HERE, 'drills', f)).href);
+  const mod = await import(pathToFileURL(join(SRC, f)).href);
   drills.push(...mod.default);
 }
 const groups = [];

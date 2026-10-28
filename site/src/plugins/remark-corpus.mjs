@@ -245,6 +245,18 @@ function diagramManifest() {
   return diagrams;
 }
 
+let drills = null;
+function drillManifest() {
+  if (drills) return drills;
+  try {
+    drills = JSON.parse(
+      readFileSync(new URL('../data/drills.json', import.meta.url), 'utf8'));
+  } catch {
+    drills = {};
+  }
+  return drills;
+}
+
 export default function remarkCorpus(options = {}) {
   const knownIds = new Set(options.knownIds ?? []);
 
@@ -506,6 +518,43 @@ export default function remarkCorpus(options = {}) {
       const cls = ['diagram'];
       if (d.half === false) cls.push('diagram--full');
       parent.children[index] = wrapper('figure', { className: cls }, kids);
+    });
+
+    // -------------------------------------------------------------- drills
+    //
+    // `![](drill:<id>)` embeds one skating-drill diagram, built by
+    // scripts/build-drills.mjs from src/drills/. It is deliberately a smaller
+    // mechanism than `diagram:` above: a drill has no caption (the page prose
+    // describes the drill), no owner document and no shapes-and-fills key (its
+    // legend is drawn inside the picture). Its text alternative is the SVG's own
+    // <title> + <desc>, which the SVG names through aria-labelledby; the build
+    // prefixes every internal id with the drill id, so fifty drills inlined on one
+    // page neither collide nor point their labels and arrowheads at the first one.
+    //
+    // It reuses `figure.diagram` for spacing and the scale-to-column rule, plus
+    // `figure.drill` for the drill-specific bits in global.css. A 22 x 12 ft canvas
+    // is a half-sheet shape, so it scales to the column and never scrolls.
+    //
+    // An unknown id throws, as a diagram's does: a missing picture must break the
+    // build, not ship a page that looks finished.
+    visit(tree, 'image', (node, index, parent) => {
+      if (!node.url?.startsWith('drill:') || !parent || index === undefined) return;
+      const id = node.url.slice('drill:'.length);
+      const d = drillManifest()[id];
+      if (!d) {
+        throw new Error(
+          `unknown drill id "${id}". Run "node scripts/build-drills.mjs" — ` +
+          `and if it is still unknown, the reference is to a drill that does not exist in src/drills/.`);
+      }
+      let svg = '';
+      try {
+        svg = readFileSync(new URL(`../../public${d.svg}`, import.meta.url), 'utf8');
+      } catch {
+        throw new Error(`drill "${id}" is in the manifest but ${d.svg} is missing. Run "node scripts/build-drills.mjs".`);
+      }
+      parent.children[index] = wrapper('figure', { className: ['diagram', 'drill'] }, [
+        wrapper('div', { className: ['diagram-scroll'] }, [{ type: 'html', value: svg.trim() }]),
+      ]);
     });
 
     // A marker is its own markdown paragraph, so the figure above lands INSIDE a <p>.

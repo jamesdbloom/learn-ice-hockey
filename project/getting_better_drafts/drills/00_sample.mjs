@@ -1,6 +1,6 @@
-// SAMPLE drill module: the shape every drills/*.mjs file follows.
+// SAMPLE drill module: the shape every site/src/drills/*.mjs file follows (template only; build.mjs and preview.mjs do not read it).
 // Export an array of drills. Each drill: { id, group, title, svg, card }.
-import { diagram } from '../lib/draw.mjs';
+import { diagram } from '../../../site/src/drills/lib/draw.mjs';
 
 const insideEdgeForward = (() => {
   const d = diagram({

@@ -563,7 +563,15 @@ def main():
     rows = list(scan(args.root))
     if args.file:
         rows = [r for r in rows if args.file in str(r[0])]
-    if not rows:
+    # ⚠️ scan() yields only MARKER-BEARING lines, so a page with no ⚠ at all gives zero
+    # rows. That used to exit 1 with "no markdown matched", naming the wrong cause for a
+    # page that exists and is simply clean -- and it ran before --bare could read dist.
+    if not rows and not args.bare:
+        existing = [p for p in pathlib.Path(args.root).rglob("*.md")
+                    if not args.file or args.file in str(p)]
+        if existing:
+            print(f"check_callout_flow: {len(existing)} document(s) matched, 0 marker lines.")
+            return 0
         print("check_callout_flow: no markdown matched — check --root and --file", file=sys.stderr)
         return 1
 
