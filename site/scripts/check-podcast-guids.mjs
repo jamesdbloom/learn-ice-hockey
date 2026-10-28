@@ -294,6 +294,7 @@ const LIVE_NUMBERS = [
   ['learn-ice-hockey:principles:off-the-ice/team_play_and_culture', 7, 12],
   ['learn-ice-hockey:off-the-ice/how_to_watch_hockey', 7, 13],
   ['learn-ice-hockey:principles:off-the-ice/how_to_watch_hockey', 7, 14],
+  ['learn-ice-hockey:principles:off-the-ice/practising_on_your_own', 7, 15],
 ];
 
 // ---- expected: the OLD logic, restated --------------------------------------

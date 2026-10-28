@@ -362,6 +362,7 @@ export const LIVE_NUMBERS: readonly (readonly [guid: string, season: number, epi
   ['learn-ice-hockey:principles:off-the-ice/team_play_and_culture', 7, 12],
   ['learn-ice-hockey:off-the-ice/how_to_watch_hockey', 7, 13],
   ['learn-ice-hockey:principles:off-the-ice/how_to_watch_hockey', 7, 14],
+  ['learn-ice-hockey:principles:off-the-ice/practising_on_your_own', 7, 15],
 ];
 
 /** Each structure.json section's season, frozen at its live value (26 October 2026). A new
