@@ -579,7 +579,7 @@ Note the offside rule while you are up there: **both of your skates must complet
 Read: Pinch when you can arrive on contact — "if you can't arrive on contact, don't go" — so you can play the puck: seal with position and pin the puck, not the player, where contact is allowed at all
 Rule: Body position is granted; a hold and a skate are not — USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor, and a skate used to "push off" an opponent is 627(a), a major plus a game misconduct
 Rule: Body position is granted subject to three provisos — the NHL's wording here, the IIHF's the same but for its pronouns: it holds only "provided his stick is not utilized… his free hand is not used and he does not take advantage of his body position to deliver an otherwise illegal check"
-Rule: An ejection can cost the next game too — USA Hockey 404(b) suspends any game misconduct for the team's next game, at least two after a second major in a game (403(b)); CARHA 32(d) adds one game, possibly more, after a major's game misconduct
+Rule: An ejection can cost the next game too — under USA Hockey 404(b) any game misconduct also suspends you for the team's next game, at least two after a second major in a game (403(b)); CARHA 32(d) adds one game, possibly more, after a major's game misconduct
 Read: On a pure race for a loose puck or a dying rim with nobody to seal, you need to arrive clearly first, not "probably"
 Read: Pinch when the puck is on the wall and slowing down, not zipping past you
 Read: Pinch only when F3 is high and in position to rotate back and cover the point you are vacating
