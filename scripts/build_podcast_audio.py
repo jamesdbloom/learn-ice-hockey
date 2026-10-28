@@ -481,27 +481,175 @@ def principles_audio_path(doc_id: str, sha8: str) -> str:
     return f"/audio/principles/{doc_id}-{sha8}.m4a"
 
 
-def principles_feed_title(doc_id: str, order: list, conversation_ids: set[str]) -> str:
-    """`<Section> <n> · <Document> — Playing principles`, numbered exactly as
-    `feedItems()` in site/src/lib/podcast-feed.ts will number it on the day Playing
-    principles joins the feed: n counts the items in the SEASON, in site order,
-    Conversation before Playing principles per document — and the feed only carries
-    Playing principles once every document has one, so every principles slot counts.
-    ⚠️ It is a SNAPSHOT of today's Conversation set: if a Conversation episode is added
-    earlier in the same section, the feed's n moves and this file tag does not (the
-    feed's <title> is computed at build time and stays right). Same rule as the feed
-    for a document named like its section ("Getting Started"): no prefix."""
-    layer_title = next(l for d, l, _t, _n in order if d == doc_id)
-    doc_title = next(t for d, _l, t, _n in order if d == doc_id)
-    n = 0
-    for d, l, _t, _n in order:
-        if l != layer_title:
+# ⚠️ THE FEED'S NUMBERING IS FROZEN IN site/src/lib/podcast-feed.ts (since 26 October 2026),
+# so the file tag must be read from THERE, never recomputed from structure.json. Until
+# 28 October 2026 this script counted items in the section in site order — the rule the
+# feed used before LIVE_NUMBERS — and the first new document after the freeze shipped as
+# "Off the Ice 9 · Practising on Your Own" while the feed called it Off the Ice 15.
+# Parsed, not restated: a third copy of the table (check-podcast-guids.mjs already holds
+# the second) is one more place for the next live item to fail to reach.
+FEED_TS = REPO / "site" / "src" / "lib" / "podcast-feed.ts"
+CONVERSATION_GUID_PREFIX = "learn-ice-hockey:"
+
+
+def load_feed_numbering(src: str | None = None) -> tuple[dict[str, tuple[int, int]], dict[str, int]]:
+    """(LIVE_NUMBERS as guid -> (season, episode), SECTION_SEASONS as layer id -> season),
+    parsed from podcast-feed.ts. Refuses (SystemExit) rather than guess if either table is
+    missing, empty, or has a line the parser did not consume — a silently short table would
+    number a live item as new."""
+    if src is None:
+        src = FEED_TS.read_text()
+    where = FEED_TS.relative_to(REPO)
+    m = re.search(r"export const LIVE_NUMBERS\b[^=]*=\s*\[(.*?)\n\];", src, re.S)
+    if not m:
+        raise SystemExit(f"cannot find LIVE_NUMBERS in {where}")
+    body = [ln.strip() for ln in m.group(1).splitlines() if ln.strip() and not ln.strip().startswith("//")]
+    entry = re.compile(r"\['([^']+)',\s*(\d+),\s*(\d+)\],?")
+    live: dict[str, tuple[int, int]] = {}
+    for ln in body:
+        e = entry.fullmatch(ln)
+        if not e:
+            raise SystemExit(f"LIVE_NUMBERS in {where}: cannot parse {ln!r}")
+        if e.group(1) in live:
+            raise SystemExit(f"LIVE_NUMBERS lists {e.group(1)} twice")
+        live[e.group(1)] = (int(e.group(2)), int(e.group(3)))
+    m = re.search(r"export const SECTION_SEASONS\b[^=]*=\s*\{(.*?)\n\};", src, re.S)
+    if not m:
+        raise SystemExit(f"cannot find SECTION_SEASONS in {where}")
+    seasons: dict[str, int] = {}
+    for ln in (x.strip() for x in m.group(1).splitlines()):
+        if not ln or ln.startswith("//"):
             continue
-        n += (1 if d in conversation_ids else 0) + 1
-        if d == doc_id:
-            break
-    name = f"{doc_title} — {PRINCIPLES_LABEL}"
-    return name if layer_title == doc_title else f"{layer_title} {n} · {name}"
+        e = re.fullmatch(r"'?([A-Za-z0-9_-]+)'?\s*:\s*(\d+),?", ln)
+        if not e:
+            raise SystemExit(f"SECTION_SEASONS in {where}: cannot parse {ln!r}")
+        seasons[e.group(1)] = int(e.group(2))
+    if not live or not seasons:
+        raise SystemExit(f"LIVE_NUMBERS or SECTION_SEASONS is empty in {where}")
+    return live, seasons
+
+
+def feed_titles(structure: dict, conversation: dict[str, dict], principles: dict[str, dict],
+                live: dict[str, tuple[int, int]], seasons: dict[str, int]) -> dict[str, str]:
+    """guid -> the feed's <title> for every per-document item, computed exactly as
+    `feedItems()` in site/src/lib/podcast-feed.ts does:
+      - items in site order, Conversation before Playing principles per document;
+      - an item in LIVE_NUMBERS keeps that season and episode;
+      - any other item takes its section's season (SECTION_SEASONS) and the next free
+        episode number in it (one past the highest frozen number), in site order;
+      - the prefix names the section that OWNS the season, and is dropped when that
+        section's title equals the episode title ("Getting Started").
+    `conversation` / `principles` map doc_id -> feed entry (needs `title`; `guid` optional
+    for Conversation, as in `guidFor()`). Playing principles is always in the feed
+    (`principlesInFeed()` has been sticky-true since 22 October 2026)."""
+    rows = []
+    for layer in structure["layers"]:
+        for doc_id in layer["docs"]:
+            if doc_id in conversation:
+                e = conversation[doc_id]
+                rows.append((layer["id"], e.get("guid") or f"{CONVERSATION_GUID_PREFIX}{doc_id}",
+                             e["title"], "Conversation"))
+            if doc_id in principles:
+                e = principles[doc_id]
+                rows.append((layer["id"], e.get("guid") or f"{PRINCIPLES_GUID_PREFIX}{doc_id}",
+                             e["title"], PRINCIPLES_LABEL))
+    next_free: dict[int, int] = {}
+    for season, episode in live.values():
+        next_free[season] = max(next_free.get(season, 1), episode + 1)
+    season_title = {}
+    for layer in structure["layers"]:
+        if layer["id"] not in seasons:
+            raise SystemExit(f"structure.json section {layer['id']!r} has no frozen season "
+                             f"(SECTION_SEASONS); a new section's season is an owner decision")
+        season_title[seasons[layer["id"]]] = layer["title"]
+    out: dict[str, str] = {}
+    taken: set[tuple[int, int]] = set()
+    for layer_id, guid, ep_title, label in rows:
+        num = live.get(guid)
+        if num is None:
+            season = seasons[layer_id]
+            num = (season, next_free.get(season, 1))
+            next_free[season] = num[1] + 1
+        if num in taken:
+            raise SystemExit(f"season {num[0]} episode {num[1]} is used twice ({guid})")
+        taken.add(num)
+        lt = season_title[num[0]]
+        name = f"{ep_title} — {label}"
+        out[guid] = name if lt == ep_title else f"{lt} {num[1]} · {name}"
+    return out
+
+
+def principles_feed_title(doc_id: str, doc_title: str, conversation: dict[str, dict],
+                          principles: dict[str, dict]) -> str:
+    """`<Section> <n> · <Document> — Playing principles`, numbered exactly as the feed numbers
+    it (`feed_titles()`): the frozen LIVE_NUMBERS entry if it is live, otherwise the next free
+    number in its season given every episode that will be in the feed once this one is
+    published. `doc_title` is the title this run writes into podcast-principles.json."""
+    entry = dict(principles.get(doc_id) or {})
+    entry["title"] = doc_title
+    entry.setdefault("guid", f"{PRINCIPLES_GUID_PREFIX}{doc_id}")
+    live, seasons = load_feed_numbering()
+    titles = feed_titles(json.loads(STRUCTURE.read_text()), conversation,
+                         {**principles, doc_id: entry}, live, seasons)
+    return titles[entry["guid"]]
+
+
+def self_test() -> int:
+    """`--self-test`: the title rule against the frozen table and a synthetic new item.
+    Reads site/src/lib/podcast-feed.ts and the site data; writes nothing."""
+    fails = []
+    live, seasons = load_feed_numbering()
+    structure = json.loads(STRUCTURE.read_text())
+    conv = load_site_data()
+    princ = {e["doc_id"]: e for e in json.loads(PRINCIPLES_DATA.read_text()).get("episodes", [])}
+    titles = feed_titles(structure, conv, princ, live, seasons)
+    # 1. Every frozen item present gets exactly its frozen number in its title.
+    season_title = {seasons[l["id"]]: l["title"] for l in structure["layers"]}
+    for guid, (season, ep) in live.items():
+        t = titles.get(guid)
+        lt = season_title[season]
+        if t is None:
+            fails.append(f"frozen item {guid} is not in the computed feed")
+        elif not (t.startswith(f"{lt} {ep} · ") or t.startswith(f"{lt} — ")):
+            fails.append(f"{guid}: {t!r} does not carry {lt} {ep}")
+    # 2. The case that broke: a principles-only document mid-section.
+    if "off-the-ice/practising_on_your_own" in princ:
+        t = principles_feed_title("off-the-ice/practising_on_your_own", "Practising on Your Own", conv, princ)
+        want = "Off the Ice 15 · Practising on Your Own — Playing principles"
+        if t != want:
+            fails.append(f"practising_on_your_own: {t!r} != {want!r}")
+    # 3. Synthetic: two NEW items mid-section take the next free numbers IN SITE ORDER, and
+    #    no live item is renumbered.
+    s2 = json.loads(json.dumps(structure))
+    for l in s2["layers"]:
+        if l["id"] == "positions":
+            l["docs"].insert(1, "positions/zz_new_a")
+            l["docs"].insert(0, "positions/zz_new_b")
+    p2 = {**princ,
+          "positions/zz_new_a": {"title": "New A"},
+          "positions/zz_new_b": {"title": "New B"}}
+    t2 = feed_titles(s2, conv, p2, live, seasons)
+    top = max(e for (s, e) in live.values() if s == seasons["positions"])
+    for doc, n in (("positions/zz_new_b", top + 1), ("positions/zz_new_a", top + 2)):
+        want = f"Positions {n} · New {doc[-1].upper()} — {PRINCIPLES_LABEL}"
+        got = t2[f"{PRINCIPLES_GUID_PREFIX}{doc}"]
+        if got != want:
+            fails.append(f"synthetic {doc}: {got!r} != {want!r}")
+    if any(t2[g] != titles[g] for g in titles):
+        fails.append("synthetic insert changed a live item's title")
+    # 4. The parser refuses a line it cannot read rather than dropping it.
+    bad = FEED_TS.read_text().replace("  ['learn-ice-hockey:positions/center', 3, 1],",
+                                      "  [CENTER_GUID, 3, 1],", 1)
+    try:
+        load_feed_numbering(bad)
+        fails.append("parser accepted an unparseable LIVE_NUMBERS line")
+    except SystemExit:
+        pass
+    print(f"self-test: {len(live)} frozen numbers, {len(titles)} feed items computed")
+    for f in fails:
+        print(f"  FAIL {f}")
+    print("self-test: " + ("FAILED" if fails else "passed"))
+    return 1 if fails else 0
 
 
 def cmd_principles(args) -> int:
@@ -553,7 +701,7 @@ def cmd_principles(args) -> int:
     existing = {e["doc_id"]: e for e in site.get("episodes", [])}
     man_path = PRINCIPLES_OUT / "manifest.json"
     old_man = {e["doc_id"]: e for e in json.loads(man_path.read_text())} if man_path.exists() else {}
-    conversation_ids = set(load_site_data())
+    conversation = load_site_data()
 
     print(f"build_podcast_audio --style principles: {len(wanted)} document(s)"
           f"{'  — DRY RUN, nothing will be written' if args.dry_run else ''}")
@@ -562,7 +710,7 @@ def cmd_principles(args) -> int:
     new_man: dict[str, dict] = {}
     for doc_id, wav in wanted:
         _d, layer_title, doc_title, track = by_id[doc_id]
-        title_tag = principles_feed_title(doc_id, order, conversation_ids)
+        title_tag = principles_feed_title(doc_id, doc_title, conversation, existing)
         prev_m = old_man.get(doc_id) or {}
         prev_e = existing.get(doc_id)
         st = wav.stat()
@@ -940,7 +1088,12 @@ def main() -> int:
     ap.add_argument("--slug", action="append", default=[], metavar="SLUG",
                     help="--style basics only, REQUIRED: a planned topic slug to encode "
                          "(repeatable). Nothing is encoded that is not named.")
+    ap.add_argument("--self-test", action="store_true",
+                    help="check the Playing principles title numbering against "
+                         "site/src/lib/podcast-feed.ts and exit; writes nothing")
     args = ap.parse_args()
+    if args.self_test:
+        return self_test()
     sys.stdout.reconfigure(line_buffering=True)  # keep stdout and the stderr refusals in order
 
     if args.slug and args.style != "basics":
