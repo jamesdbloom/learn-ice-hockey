@@ -266,7 +266,7 @@ export default [
       steps: [
         'Glide forward on your right foot, knee bent, left foot lifted.',
         'Crouch and touch the right skate with your hand, keeping your head up.',
-        'As you stand back up, jump onto your left foot.',
+        'As you stand back up, jump onto your left foot and land on a bent knee. Small jumps first.',
         'Glide, crouch and touch the left skate, and jump back onto the right as you stand up. Keep it going, one jump after another.',
       ],
       mistake: 'Looking down at the skate to touch it, so the head drops and the balance goes with it.',

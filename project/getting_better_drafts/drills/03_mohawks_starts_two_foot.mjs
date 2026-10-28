@@ -333,7 +333,7 @@ export default [
       trains: 'Opening the hips so you can move across the ice while still facing the play, the way a defenceman turns to follow an attacker.',
       steps: [
         'Turn both feet out heel-to-heel: right toe pointing where you are going, left toe pointing back, heels in line and knees bent.',
-        'Glide on a curve across towards one side of the lane, weight over the right foot. Let both edges carry you round.',
+        'Glide on a curve across towards one side of your lane (a strip of clear ice a few metres wide that you have to yourself), weight over the right foot. Let both edges carry you round.',
         'At the side, pivot on your leading right foot: turn on it so you end in the mohawk with the left leg leading.',
         'Curve back across to the other side, pivot on the left foot, and keep going all the way down the ice.',
       ],
@@ -350,9 +350,9 @@ export default [
       trains: 'Quick, balanced hip turns with fast feet, so you can change direction while still facing the play.',
       steps: [
         'Set up heel-to-heel as in the plain mohawk, right foot leading.',
-        'Glide on a curve across towards one side of the lane.',
+        'Look along your path, then glide on a curve across towards one side of your lane.',
         'At the side, turn your shoulders into the new direction first, so your legs load under you.',
-        'Then jump from skate to skate: land on the left foot pointing the new way, and bring the right in behind it, heel to heel. Push off the ice into the jump; that is where the power comes from.',
+        'Then jump from skate to skate: land on the left foot, knee bent, pointing the new way, and bring the right in behind it, heels in line. Push off the ice into the jump; that is where the power comes from. Learn the switch as two quick steps first, then add the jump.',
         'Curve back across with the left foot leading, and turn and jump again at the other side.',
       ],
       mistake: 'Switching with the feet only, shoulders still. It works, but there is no load in the legs and no power out of the ice.',

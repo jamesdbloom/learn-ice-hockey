@@ -433,7 +433,7 @@ export default [
     card: {
       trains: 'Finding the backward outside edge on every step, the edge a backward crossover lands on.',
       steps: [
-        'Stand on a blue line, facing back up it. You will step backwards down the line, one step at a time.',
+        'Stand on a blue line, facing back up it, with clear ice behind you. You will step backwards down the line, one step at a time: glance over your shoulder before you start and every few steps, and stop well short of the boards.',
         'Lift your right foot and place it behind you, across the line, so it lands on your left of the line on its outside edge.',
         'Lift your left foot and place it behind you, across to your right of the line, on its outside edge.',
         'Keep alternating, one placed step at a time. No gliding and no C shapes: walk backwards down the line.',
