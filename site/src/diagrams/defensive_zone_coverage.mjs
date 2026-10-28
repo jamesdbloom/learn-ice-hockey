@@ -398,7 +398,7 @@ const collapseCorner = {
     // W33: PWHL added — pwhl_rules.txt 43.2 "There is no provision for a minor penalty for
     // checking from behind", 43.5 game misconduct mandatory with the major. CARHA 53(a) starts
     // at a minor plus a game misconduct, so "two minutes alone" still holds in all six books.
-    'No book prices a check from behind at two minutes alone: under the NHL, the IIHF and the ' +
+    'No book prices checking from behind at two minutes alone: under the NHL, the IIHF and the ' +
     'PWHL there is no minor for it at all, so the floor is a major and an ejection. ' +
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
     'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
