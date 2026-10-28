@@ -944,7 +944,7 @@ Technique: Absorb with your legs — let your knees and hips give rather than ta
 - **Wide base, knees bent, weight low.** A stiff, upright player gets knocked over. A player in an athletic stance rides the contact.
 - **Meet it, don't wait for it — but do not go and get it.** Skating into contact with your body prepared and your feet moving costs far less than standing still and being hit. USA Hockey asks players to *"keep their legs moving and concentrate on skating right through the impact"* — on your own line, not theirs. ⚠️ **Never turn into a closing opponent**: it adds your speed to theirs, and at that combined speed neither of you controls the collision. In women's hockey the move itself is an illegal hit: *"[a]ny move by a Player to step or glide into an opposing Player"* is at least a minor under IIHF Rule 101.1, and the PWHL writes the same at Rule 52.1. In any league the charging rules reach building speed into a collision ([each book's stride test](#delivering-a-legal-body-check-technique)).
 
-  You may hold your ground instead: NHL and IIHF Rule 56.1 grant *"the ice they are standing on"*, and USA Hockey only *"as long as they are able to maintain their own foot speed and body position between opponent and puck"*. 101.1 lets women players *"'hold their ground'"* and the PWHL writes it at 57.1; CARHA grants only the standing half and only to defenders, and Hockey Canada writes no such sentence.
+  You may hold your ground instead: NHL and IIHF Rule 56.1 give a player the ice they are standing on, and USA Hockey, for non-checking play, writes that a skater *"is entitled to stand their ground and is not required to move if an opponent wishes to skate through that area of the ice"*. 101.1 lets women players *"'hold their ground'"* and the PWHL writes it at 57.1; CARHA grants only the standing half and only to defenders, and Hockey Canada writes no such sentence.
 - **Chest and shoulder first, hands in front.** Keep your hands and stick in front of your body, not out to the side. This protects you and keeps you able to play the puck the instant contact ends.
 - **Absorb with your legs.** Let your knees and hips give a little rather than taking it all through a locked frame.
 
@@ -1272,7 +1272,7 @@ The area on top of the crease is the **densest scoring area on the ice**. Mike C
 ```facts
 Technique: Set up in the shot lane in front of the goalie, not beside them, off the red crease line, taking away their eyes — two hands on your stick, blade on the ice, to tip, to screen and to bury a rebound
 Key: Screening stands you in the shot lane at close range and upright — know when the puck is about to be released, and go there with your head and face protection right rather than nearly right
-Read: Track the puck and know where the defender is without looking — eyes on the puck, hold your ice and lean on nobody
+Read: Track the puck and know where the defender is without looking — eyes on the puck, hold your ice and lean on nobody. In a CARHA adult league no rule lets an attacker hold ice, so avert contact
 Technique: Know where the near post is before you plant — a defender walks you along a path with the goal frame at one edge and the goalie at the other, and you travel it sideways or backwards
 Technique: Take the shove braced — wide base, knees bent, weight low, knees and hips giving rather than a locked frame — but never against the goalie
 Never: Meet a goal post head first, and never duck. Head up and chin off your chest at the net front instead, because you can be moved by a defender you cannot see

@@ -30,7 +30,7 @@ const mohawk = (stepping) => {
   const d = diagram({
     title: stepping ? 'Stepping mohawks side to side' : 'Mohawk side to side',
     desc: stepping
-      ? 'Down a lane in a heel-to-heel mohawk stance, each glide a curved arc from one side of the lane to the other. At each side the skater changes the lead foot with two quick steps, one foot then the other, staying on the ice, and curves back across with the other foot leading.'
+      ? 'Down a lane in a heel-to-heel mohawk stance, each glide a curved arc from one side of the lane to the other. At each side the skater turns the shoulders into the new direction first, loads the legs, and jumps from skate to skate onto the new lead foot, then curves back across with that foot leading.'
       : 'Down a lane in a heel-to-heel mohawk stance, each glide a curved arc from one side of the lane to the other. At each side the skater pivots on the leading foot and turns into the mohawk with the other leg leading, then curves back across.',
   });
   // lane edges
@@ -66,11 +66,15 @@ const mohawk = (stepping) => {
       d.track(`M ${E[0] - 0.5} ${E[1] - v * 1.5} Q ${E[0] + 1.9} ${E[1] - v * 1.7} ${E[0] + 1.9} ${E[1] - v * 0.25}`, other, { width: 2 });
       d.text(E[0] + 1.1, E[1] + (down ? 0.95 : -0.75), `pivot on the ${lead === 'R' ? 'right' : 'left'} foot`, { size: 0.42, color: COL[lead], weight: 600, anchor: 'start' });
     } else {
-      // Two quick steps: the old trailing foot steps round to lead, then the other follows.
+      // Shoulders lead, then a jump from skate to skate (owner's source, 28 Oct 2026: Hockey Tutorial,
+      // "Master The Elite Mohawk Turn", 13:30-14:01 — "add a shoulder motion jumping from skate to skate…
+      // more power output… more weight into the blade"). The new lead foot lands, then the other follows heel to heel.
       const dirNew = down ? -45 : 45;
+      d.track(`M ${E[0] - 1.1} ${E[1] - v * 1.4} Q ${E[0] - 1.6} ${E[1] + v * 0.7} ${E[0] - 0.2} ${E[1] + (down ? 0.25 : -0.25)}`, other, { air: true, width: 2.2 });
       d.skate(E[0] + 0.3, E[1] + (down ? 0.2 : -0.2), dirNew, other, { len: 1.1 });
       d.skate(E[0] + 1.2, E[1] + (down ? -0.3 : 0.3), dirNew + 180, lead, { len: 1.1 });
-      d.text(E[0] + 1.9, E[1] + (down ? 0.95 : -0.75), 'step, step', { size: 0.42, anchor: 'start' });
+      d.text(E[0] + 1.9, E[1] + (down ? 0.95 : -1.3), 'shoulders turn, then jump', { size: 0.42, anchor: 'start', weight: 600 });
+      d.text(E[0] + 1.9, E[1] + (down ? 1.5 : -0.75), 'skate to skate', { size: 0.42, anchor: 'start', weight: 600 });
     }
   });
   d.text(3.2, 5.0, 'heels in line', { size: 0.42 });
@@ -347,11 +351,12 @@ export default [
       steps: [
         'Set up heel-to-heel as in the plain mohawk, right foot leading.',
         'Glide on a curve across towards one side of the lane.',
-        'At the side, take two quick steps: the left foot steps round to point the new way, then the right foot steps in behind it, heel to heel.',
-        'Curve back across with the left foot leading, and step again at the other side.',
+        'At the side, turn your shoulders into the new direction first, so your legs load under you.',
+        'Then jump from skate to skate: land on the left foot pointing the new way, and bring the right in behind it, heel to heel. Push off the ice into the jump; that is where the power comes from.',
+        'Curve back across with the left foot leading, and turn and jump again at the other side.',
       ],
-      mistake: 'Big, slow steps that open the feet wide apart instead of quick, small steps that keep the heels close.',
-      check: 'Glides now drawn as curved arcs, like the plain mohawk. The switch is still two quick steps at each side, both feet staying on the ice, since that is what makes it stepping.',
+      mistake: 'Switching with the feet only, shoulders still. It works, but there is no load in the legs and no power out of the ice.',
+      check: 'Redrawn from the video you sent (Hockey Tutorial, "Master The Elite Mohawk Turn", 13:30-14:01): the coach adds "a shoulder motion jumping from skate to skate" so you load the legs and get "more weight into the blade". The switch is now shoulders first, then a jump onto the new lead foot, instead of two steps with both feet on the ice. The coach also says to shift your weight points "more backwards than forward"; I have not drawn that, so say if it belongs in this drill.',
     },
   },
   {
