@@ -527,7 +527,7 @@ You are the net-front player more often than anyone, so the working rule: **work
 
 **Leave a goalie their route home.** A goalie who has played the puck outside the crease must be able to get back. In the NHL, IIHF and PWHL, deliberately blocking that path can be a penalty with no contact at all; under USA Hockey, interfering with a goalie trying to get back costs the goal and an interference penalty. Take their eyes and leave them their path.
 
-**Go around the goalie, never through them** — in or out of the crease, goal or no goal. A screen is a place you stand; a charge is a speed you arrive at. Arrive at the net under control, and give ground the moment a goalie leans into you. ⚠️ **Charging a goalie ends your game outright under Hockey Canada, under CARHA in the crease or if it injures, and under USA Hockey if reckless, and can in every other book.**
+**Go around the goalie, never through them** — in or out of the crease, goal or no goal. A screen is a place you stand; a charge is a speed you arrive at. Arrive at the net under control, and give ground the moment a goalie leans into you. ⚠️ **Charging a goalie can end your game in every book, and does outright under Hockey Canada, under CARHA in the crease or if it injures, and under USA Hockey if reckless.**
 
 **Shoved into the crease, get out — around the goalie, not through them.** Being pushed in is not a licence to stay, and it does not excuse contact. ⚠️ **Make the effort to avoid the goalie, whatever put you there** — every book penalises you for failing to. Make it early: under USA Hockey, a player who tries only once contact is unavoidable is still penalised.
 

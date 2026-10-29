@@ -20,9 +20,12 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_*.md` (the tag at the end of each row names the wave). Short names: bcb = body_contact_and_battles, dzc = defensive_zone_coverage, ozp = offensive_zone_play, pwtp = playing_without_the_puck, dtr = defending_the_rush. "Harsh" means the text errs strict; "permissive" means it tells a reader an act is cheaper than it is.
 
 **Next-game suspension, once per page (owner ruling 21/28 Oct)**
-- dzc facts :184 now reads "Automatic next-game bans:", which can sound like a complete list (England and Wales DOPS and NHL/PWHL repeat bans are in body :209 only; the line is at 299/300 and the block at 14/14); Hockey Canada 4.8(c)'s "or seven days" omitted; CARHA 59(d) automatic suspension for a fighting penalty not named (owner's judgement whether in scope). (SG136)
 - Pages still to trim: rules_primer and uk_rules (rules pages); team_play done in SG134a. rink_map has no rules summary or facts block; equipment now states 404(b) once (SG131). One agent per page, per-limb layer test, never strip a different limb. (SG125–SG130)
-- The facts lines special_teams :656, goaltender :740 and forechecking_systems :582 omit 32(d)'s accidental-high-stick exception (harsh; voiced alone). (SG126)
+- special_teams facts :656 omits 32(d)'s accidental-high-stick exception (harsh; voiced alone); goaltender :740 left as harsh (body :755 carries it). (SG126, SG139)
+- **SG139–SG140 carry-overs:** goaltender :1374's "Head-first into boards or goal frame, … eject" is awkward aloud and reads as if only a head-first hit ejects in HC/CARHA/NHL/PWHL (as before; at 299/300); goaltender body :1398 has no plain "never hit a turned back"; goaltender :1377 says "hits", :1376 "contact" (length). USA Hockey goalie hit from behind: 607(d) Note 1 (charging) vs Casebook 608 Sit. 1 unresolved; zone_entries :776/:802 take 608 (harsh). The Declaration of Player Safety's "must be assessed" vs 640(e)'s minor (Casebook 640 Sit. 6 keeps the minor). ozp :917 states the IIHF 43 major flatly (harsh). forechecking :618/:326 and ozp :917 cite "608" for Casebook-only tiers. faceoffs :607 never states HC 7.5(c)/CARHA 53(b)'s mandatory boards match (pre-existing). winger facts :519 voices USA Hockey 607(c) discretion without 607(b)'s reckless ejection (:520 carries it). ozp :918 could cite 640(h) for the match (Level 3). (SG139, SG140)
+- Traceability: bcb :361 and :685 (SG114; the goaltender half closed in SG139).
+- CARHA 59(d) automatic suspension for a fighting penalty is not named on dzc (owner's judgement whether in scope; :184 now says "include", so it is no longer false). (SG136, SG139)
+- puck_handling :492 carries Hockey Canada 7.1(b)'s mandatory injury limb but not its discretionary major and game misconduct "based upon the degree of violence" (an intermediate tier; the match covers moderate violence). (SG134b, SG139)
 - bcb facts :804 no longer says 403(b)'s two games are additional (body :820 carries it); bcb :127, is "beyond tonight" or §1 the page's rules summary? If §1, :127 gets its 32(d) sentence back. (SG127a) The :834 32(d)/30(a) misattribution was fixed in SG136.
 - on_ice_communication: the next-game facts line sits in Pressure warnings because the screener block is at HARD_MAX. (SG130)
 - time_and_space states it in §3 because §6 is at HARD_MAX (note, no action unless §6 is edited). (SG128)
@@ -31,9 +34,6 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - 8.6(c) "No Match penalty may be assessed" for a trip vs Appendix D Note 1 "shall be assessed for any deliberate attempt to injure": bcb :1613/:1626 keep the harsh "plan on one"; disclose if the owner wants. (SG115)
 - hc.txt has 13 "No Match penalty may be assessed" bars (holding, hooking, high-sticking, delay, unsportsmanlike…): sweep for other "plan on a match" claims on those fouls. Appendix D's Match column omits them, so Note 1 is weak support. (SG115)
 - 7.5(c) stated with the boards ground only (true, not a regression) at shooting :535, puck_support :588, center :754, zone_entries :237/:776/:822, switching :254, forechecking :326/:815, dtr :424, game_management :897, and on defender, special_teams and uk_rules. (SG115)
-- goaltender :1374 match triggers name no intent route (NHL/PWHL 21.1, HC 7.5(c)); not added because an unscoped clause would imply an IIHF match and the line is at 298/300. (SG115, SG136)
-- 7.6's "supersedes any other rules" vs goaltender :1376's "a minor, double if intentional" for a head hit on a turned back: unresolved. (SG114)
-- Traceability: goaltender :1376/:1377 (the 7.6/7.7 ladders are taught in no goaltender body sentence), bcb :361 and :685. (SG114)
 - winger :749 "always for a high cross-check" overstates by the 7.6(b) accidental-stick sliver (harsh); winger :749 and special_teams :655 sit at 300/300. (SG112)
 - dzc :180/:496 no longer signal 7.6(a)'s bare minor on the head (harsh). (SG113)
 - dtr :709 voices 7.11(c)/7.1(c) unnamed (optional "allows 7.1(c)'s match"); rules_primer :1195 trailer still says "7.1(c)(iv)"; bcb :1871's fight floor omits the 7.10(c)/7.11 Interp. 2 matches; the "this guide's reading of Appendix D Note 1" disclosure is at risk_management :749 and bcb :1786 only. (SG116)
@@ -68,20 +68,16 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - About 35 summary sites in 17 files keep the unscoped "never two minutes" act form (worst: pwtp :806 facts and :832, forechecking :221), plus bcb's own :31 Key focus, :2001 CM and :2119 KT6; other pages may carry the "in both books" form. All err strict; revisit only if the owner wants them scoped. (SG117, SG118)
 - Other pages may still say "can end your game" where the act is a minor (sweep). (SG121)
 - ozp §8 "only a major" beside the discretionary 43.4; NHL 43.4 discretionary vs 21.1 "shall" for the intent match (harsh). (SG113, SG121)
-- puck_handling facts :492: "NHL 21.1 a match if meant to injure" omits NHL 75.2(ii)'s discretionary "specifically when injury results… may apply Rule 21" (body :533 carries it); "start above a minor" is a double minor for HC and CARHA, a major for USA Hockey and PWHL (harsh-neutral). (SG134b, SG136)
-- special_teams :653/:1114/:1140 put the IIHF in a flat "ejects in every book" where bcb :31 and defender :462 say "plan on it" (IIHF 43.3 is a discretionary call that ejects when made; same strength as before SG138). special_teams goalie lines do not state USA Hockey 607(c)/(d) (any check on a goalie in the privileged area, which reaches the near end boards, Casebook 607 Sit. 6). Hockey Canada 7.5 Interp. 1 (stationary cross-check from behind not into the boards is cross-checking) unvoiced at these sites. (SG138)
 - Intent-match book lists differ across pages (each correctly scoped). (SG113)
 - Other pages may give the IIHF the seen/unseen split in words nobody searched for ("facing you", "stationary"); bcb :1480 (front-on IIHF head cross-check, 59.2) sits four paragraphs from :780's "never plan on a minor" (low risk). (SG119)
 - IIHF wording on special_teams ("under the IIHF plan on the same") not checked against switching's "harsher of 43 and 48" (low; both err strict). (SG106)
 - Sweep other rules pricing a hit from behind (boarding with a defenceless condition, USA Hockey 620, CARHA 50); limbs naming no rule. (SG121)
 
 **Ladders, length and readability**
-- puck_handling: Hockey Canada 7.1(b) tier absent from the cage facts (pre-existing). (SG134b)
 - Summary units opening on a tariff: 32 corpus-wide after SG135 (11 on rules pages, correct; 21 false positives read and left). rink_map KT :702 and scanning KT :628 open with a scope or a disclosure; goaltender CM :1651 has no instruction to move (new text needed). (SG135)
 - winger :557 is heavy when voiced. (SG117)
-- forechecking facts :811 "angle them off" has lost its object (at 198/200); "there too when forceful at the boards" omits USA Hockey's head-first and reckless triggers at :345/:811 (no "only"; the next sentence or line carries them). (SG137)
 - risk_management :756 opens a paragraph with ⚠️ (a pre-existing panel). (SG112)
-- forechecking_systems :618 has no "head first" (at cap); the pinch block has no back-contact line of its own (:618 carries it); flush :811/:812 in consecutive chunks; ozp CM 077/078 split (pre-existing). (SG121)
+- forechecking flush :811/:812 in consecutive chunks; ozp CM 077/078 split (pre-existing). (SG121)
 - defender :903 CM is 1,316 characters (pre-existing). (SG113)
 - zone_entries KT9 at 63 words; remaining long KTs kept over 60 for safety limbs are listed in the record. (SG104, SG105)
 - Observe the essentials view in a browser. (SG121)
