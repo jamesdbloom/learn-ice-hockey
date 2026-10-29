@@ -28,7 +28,7 @@ Two of the seven ideas in [Core Principles](../foundation/core_principles.md) go
 
 **Go to the net front to score, and hold it to defend.** Attacking, screen outside the crease, stick down for tips and rebounds, and never touch the goalie. Defending, take the inside spot beside the screener and play their stick — never walk them out or cross-check them.
 
-**Never hit a player who cannot see you coming, and never finish a check once the puck has gone.** If you can see their numbers, pull up and play the puck — in every book here but USA Hockey and the IIHF the lightest call for a hit that stays on the back ends your game; under the IIHF, plan on it.
+**Never hit a player who cannot see you coming, and never finish a check once the puck has gone.** If you can see their numbers, pull up and play the puck — in every book here but USA Hockey and the IIHF the lightest call for a hit that stays on the back ends your game. Under the IIHF, plan on it; under USA Hockey, it does when the hit is forceful at the boards, head first or reckless.
 
 **When the wall is coming, meet it with your skates parallel to the boards and take it on your forearm and hip, head up and chin off your chest.** Never turn your back to anyone coming at you, and never duck — a tucked chin is how a vertebra fractures, even at walking speed.
 
