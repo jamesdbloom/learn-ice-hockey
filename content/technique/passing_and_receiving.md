@@ -839,7 +839,7 @@ Structuring this into an actual improvement plan is covered in [Practice and Dev
 - **Kicking at the man instead of the puck.** **Keep the kick small and aimed at the puck.** ⚠️ **Kicking or trying to kick an opponent is a match penalty in five books, and under the IIHF it can be a major with an automatic ejection.** In every book a kick means a deliberate one — USA Hockey adds a reckless one — and trying is enough. Under USA Hockey even pushing off an opponent with your skate is a major and an ejection.
 - **Timing a stretch pass by the wrong offside rule.** **As the receiver, keep your trail skate on the ice at or behind the blue line until the puck crosses** — onside in every book. A lifted trail skate is onside in the NHL, IIHF and PWHL but offside under USA Hockey and Hockey Canada.
 - **Expecting a goal off your own kick.** **Kick it to your stick, then clearly shoot it.** A kick deflecting in off your own stick counts in the NHL, IIHF and PWHL, but not under Hockey Canada, USA Hockey or CARHA.
-- **Treating a high stick as just a stoppage.** **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent above the shoulders, every book penalises it, and every book can eject you for it.** Only the NHL, IIHF and PWHL excuse a normal shooting follow-through, never a wild swing at a bouncing puck. Under CARHA any contact up there is a major that ends your game unless it was accidental and hurt nobody, and an intentional one costs you at least your next game too.
+- **Treating a high stick as just a stoppage.** **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent above the shoulders, every book penalises it, and every book can eject you for it.** Only the NHL, IIHF and PWHL excuse a normal shooting follow-through, never a wild swing at a bouncing puck. Under CARHA any contact up there is a major that ends your game unless it was accidental and hurt nobody.
 
 ---
 
@@ -905,7 +905,7 @@ document, that is named too.*
 13. **Under pressure, make the pass you can complete, and decide your out before you get the puck.** Rim, bank, chip or reset; never thread a needle with a checker on you.
 14. **On the wall and on a breakout, receive open to the ice**, so the pressure is not on your back — on the wall, that is a hit from behind. If it comes anyway, keep your head up and chin off your chest even going slowly, never duck, and never take the wall on the point of your shoulder.
 15. **Kick the puck out of your feet — never the man.** Kicking or trying to kick an opponent is a **match penalty** under the NHL, PWHL, USA Hockey, Hockey Canada and CARHA, and USA Hockey adds a likely multi-game suspension. Under the IIHF — Britain's book — it can be a major with an automatic ejection.
-16. **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent's head, face or neck, every book penalises it and every book has a route to an ejection.** Under CARHA it is a major that ends your game unless accidental and injury-free, plus at least a one-game suspension if intentional.
+16. **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent's head, face or neck, every book penalises it and every book has a route to an ejection.** Under CARHA it is a major that ends your game unless accidental and injury-free.
 
 ---
 
