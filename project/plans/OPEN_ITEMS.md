@@ -21,8 +21,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 **Next-game suspension, once per page (owner ruling 21/28 Oct)**
 - dzc facts :184 attaches "automatic" to Hockey Canada only, though USA Hockey 404(b) and CARHA 32(d) are mandatory too (optional rewording; line at 297/300). The line also omits CARHA 32(c)'s late-game abuse-of-officials suspension (pre-existing). (SG127a)
-- Pages still to trim: rules_primer and uk_rules (rules pages) and team_play_and_culture. rink_map has no rules summary or facts block; equipment now states 404(b) once (SG131). One agent per page, per-limb layer test, never strip a different limb. (SG125–SG130)
-- team_play_and_culture :278 is the handshake-only 404(b) statement, :485 repeats it, and the page has no CARHA 32(d) line; making :278 page-wide needs new text. (SG129)
+- Pages still to trim: rules_primer and uk_rules (rules pages); team_play done in SG134a. rink_map has no rules summary or facts block; equipment now states 404(b) once (SG131). One agent per page, per-limb layer test, never strip a different limb. (SG125–SG130)
 - The facts lines special_teams :656, goaltender :740 and forechecking_systems :582 omit 32(d)'s accidental-high-stick exception (harsh; voiced alone). (SG126)
 - bcb facts :804 no longer says 403(b)'s two games are additional (body :820 carries it); bcb :834 says 32(d) "gives a game misconduct" when 30(a) does; bcb :127, is "beyond tonight" or §1 the page's rules summary? If §1, :127 gets its 32(d) sentence back. (SG127a)
 - on_ice_communication: the next-game facts line sits in Pressure warnings because the screener block is at HARD_MAX. (SG130)
@@ -37,7 +36,6 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - 7.6's "supersedes any other rules" vs goaltender :1376's "a minor, double if intentional" for a head hit on a turned back: unresolved. (SG114)
 - Traceability: goaltender :1376/:1377 (the 7.6/7.7 ladders are taught in no goaltender body sentence), bcb :361 and :685. (SG114)
 - winger :749 "always for a high cross-check" overstates by the 7.6(b) accidental-stick sliver (harsh); winger :749 and special_teams :655 sit at 300/300. (SG112)
-- dzc :704 "via 9.5(b)" is Junior/Senior only (minor and female route through 6.9(c)). (SG111)
 - dzc :180/:496 no longer signal 7.6(a)'s bare minor on the head (harsh). (SG113)
 - dtr :709 voices 7.11(c)/7.1(c) unnamed (optional "allows 7.1(c)'s match"); rules_primer :1195 trailer still says "7.1(c)(iv)"; bcb :1871's fight floor omits the 7.10(c)/7.11 Interp. 2 matches; the "this guide's reading of Appendix D Note 1" disclosure is at risk_management :749 and bcb :1786 only. (SG116)
 - defender :326: the head-first limb sits at :324, and "no minor alone" vs "from a minor" is heard as a clash (harsh). (SG121)
