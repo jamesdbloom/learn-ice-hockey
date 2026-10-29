@@ -233,10 +233,10 @@ picture.
   system among several. Believe the caption, then ask which version your team runs.
 - **Skating to the drawn spot and staying there.** Positions are drawn at one instant.
   Keep your relationship to the puck and the other players as the play moves.
-- **Assuming a key you meet elsewhere means the same thing.** A circle is a forward here
-  and the attacking team on the IIHF's key; a single bar is pressure on one key, a screen
-  in a coaching manual and undefined on the IIHF's. Check the key first, and where none
-  is printed, ask whoever drew it.
+- **Assuming a key you meet elsewhere means the same thing.** Check the key first, and
+  where none is printed, ask whoever drew it. A circle is a forward here and the attacking
+  team on the IIHF's key; a single bar is pressure on one key, a screen in a coaching
+  manual and undefined on the IIHF's.
 - **Reading the letter inside a glyph as where you stand.** Letters are roles: when you
   are first to the puck on the forecheck, do F1's job whichever forward position you
   play. Some coaches assign it by position

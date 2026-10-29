@@ -80,6 +80,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - forechecking :765 still opens on the price ("USA Hockey and Hockey Canada do write a minor…"); :767/:771/:775 now lead with the instruction (SG134b). Key Takeaways and Common Mistakes not re-checked for price leads. (SG134b)
 - forechecking :767: "the floor in every book here is an ejection" holds for the called foul, not for every contact on the back (IIHF 43.3 needs reckless; boarding minor 41.2), and sits in tension with the same paragraph's USA Hockey minimal-pinch minor plus misconduct (harsh). (SG134b)
 - puck_handling facts :496 says IIHF Rule 21 is confined to conduct not otherwise covered, in mild tension with :492's 75.2(II) route; :492's NHL 'meant to injure' is narrower than 75.2(ii)'s 'when injury results'; Hockey Canada 7.1(b) tier absent (pre-existing). (SG134b)
+- Summary units opening on a tariff: 32 corpus-wide after SG135 (11 on rules pages, correct; 21 false positives read and left). rink_map KT :702 and scanning KT :628 open with a scope or a disclosure; goaltender CM :1651 has no instruction to move (new text needed). (SG135)
 - winger :557 is heavy when voiced; dzc :209 is 1,193 characters. (SG117)
 - risk_management :756 opens a paragraph with ⚠️ (a pre-existing panel). (SG112)
 - forechecking_systems :618 has no "head first" (at cap); the pinch block has no back-contact line of its own (:618 carries it); flush :811/:812 in consecutive chunks; ozp CM 077/078 split (pre-existing). (SG121)

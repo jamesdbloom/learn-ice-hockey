@@ -599,7 +599,7 @@ Full detail, including hip and adductor work, is in [Conditioning and Recovery](
 - **Judging a session by how it felt.** Judge it by whether you can still do the skill cold a week later.
 - **Doing drills at 70%.** Do the rep at game speed; if that's too fast to do cleanly, the drill is working.
 - **Cheating the rep to make it look tidy** — curling early, leaving before the pass, walking in closer. Every cheat is a rep of what you'll do in a game.
-- **Treating games as practice.** A game gives even the best players about a minute on the puck — **1:01.4** each in the 2002 Olympic men's gold-medal game, and no group in that USA Hockey study averaged over **1:12**. Get your touches off the ice and from stick-and-puck or small-area ice.
+- **Treating games as practice.** Get your touches off the ice and from stick-and-puck or small-area ice. A game gives even the best players about a minute on the puck — **1:01.4** each in the 2002 Olympic men's gold-medal game, and no group in that USA Hockey study averaged over **1:12**.
 - **Practising skills without decisions.** Put an opponent in the drill, even a passive one allowed to take away one option.
 - **Rebuilding three things at once.** Rebuild one thing and leave the rest alone until it sticks.
 - **Building a plan for your best week.** Build the one you will do in your worst.
