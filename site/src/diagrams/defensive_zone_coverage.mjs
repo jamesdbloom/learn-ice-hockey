@@ -374,9 +374,14 @@ const collapseCorner = {
   // from behind" with 43.3 the major and 43.5 the mandatory game misconduct; IIHF
   // 43.2 "there is no option to award a minor penalty" with 43.3 major plus an
   // automatic game misconduct. "At two minutes alone" rather than "ejects you in
-  // every book" is deliberate and load-bearing: USA Hockey 608(a) writes "a minor
-  // plus a misconduct penalty", and a USA Hockey misconduct is ten minutes (404(a)),
-  // NOT an ejection. It is still never bare in any of the six (CARHA 53(a) and PWHL 43.2 checked W33).
+  // every book" is deliberate and load-bearing: USA Hockey 608(a) writes "A minor
+  // plus a misconduct penalty, or a major plus a game misconduct penalty", and a USA
+  // Hockey misconduct is ten minutes (404(a)), NOT an ejection — that floor is only for a
+  // push or a minimal "pinch" (Casebook 608 Situation 1). ⚠️ THIS carrier is the other
+  // case: Situation 1 makes a FORCEFUL check on a player "standing along the boards (back
+  // toward the middle of the ice)" a major plus a game misconduct, or a match — never the
+  // minor. Do not price this picture at USA Hockey's minor. Read usah_casebook.txt
+  // 29 Oct 2026. It is still never bare in any of the six (CARHA 53(a) and PWHL 43.2 checked W33).
   // ⚠️ THIS CAPTION IS THE MODULE'S LONGEST AND IT IS DELIBERATELY OVER THE OWNER'S
   // 25-50 WORD TARGET. Cut from 240 words to about 170 on 15 September 2026 by
   // removing everything that was NOT a warning: the reason two on one wins the
