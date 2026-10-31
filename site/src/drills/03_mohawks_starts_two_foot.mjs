@@ -355,13 +355,13 @@ export default [
       trains: 'Quick, balanced hip turns with fast feet, so you can change direction while still facing the play.',
       steps: [
         'Set up heel-to-heel as in the plain mohawk, right foot leading.',
-        'Look along your path, then glide on a curve across towards one side of your lane.',
+        'Look along your path, then glide on a curve across towards one side of your lane. As you glide, keep your weight a little more back than forward, on the back half of the blades, chest up; lean back past your heels and you tip over.',
         'At the side, turn your shoulders into the new direction first, so your legs load under you.',
         'Then jump from skate to skate: land on the left foot, knee bent, pointing the new way, and bring the right in behind it, heels in line. Push off the ice into the jump; that is where the power comes from. Learn the switch as two quick steps first, then add the jump.',
         'Curve back across with the left foot leading, and turn and jump again at the other side.',
       ],
       mistake: 'Switching with the feet only, shoulders still. It works, but there is no load in the legs and no power out of the ice.',
-      check: 'Redrawn from the video you sent (Hockey Tutorial, "Master The Elite Mohawk Turn", 13:30-14:01): the coach adds "a shoulder motion jumping from skate to skate" so you load the legs and get "more weight into the blade". The switch is now shoulders first, then a jump onto the new lead foot, instead of two steps with both feet on the ice. The coach also says to shift your weight points "more backwards than forward"; I have not drawn that, so say if it belongs in this drill.',
+      check: 'Redrawn from the video you sent (Hockey Tutorial, "Master The Elite Mohawk Turn", 13:30-14:01): the coach adds "a shoulder motion jumping from skate to skate" so you load the legs and get "more weight into the blade". The switch is now shoulders first, then a jump onto the new lead foot, instead of two steps with both feet on the ice. Your note that the coach shifts the weight "more backwards than forward" is now in step 2, for the glide across the lane, as a controlled bias: the back half of the blades, chest up, not leaning past the heels. The drawing does not show weight, so it is unchanged.',
     },
   },
   {

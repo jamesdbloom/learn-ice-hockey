@@ -307,7 +307,7 @@ A **mohawk** here is the open-hip, heel-to-heel position: toes pointing opposite
 **Trains:** quick, balanced hip turns with fast feet, so you can change direction while still facing the play.
 
 1. Set up heel-to-heel as in the plain mohawk, right foot leading.
-2. Look along your path, then glide on a curve across towards one side of your lane.
+2. Look along your path, then glide on a curve across towards one side of your lane. As you glide, keep your weight a little more back than forward, on the back half of the blades, chest up; lean back past your heels and you tip over.
 3. At the side, turn your shoulders into the new direction first, so your legs load under you.
 4. Then jump from skate to skate: land on the left foot, knee bent, pointing the new way, and bring the right in behind it, heels in line. Push off the ice into the jump; that is where the power comes from. Learn the switch as two quick steps first, then add the jump.
 5. Curve back across with the left foot leading, and turn and jump again at the other side.

@@ -20,11 +20,10 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_*.md` (the tag at the end of each row names the wave). Short names: bcb = body_contact_and_battles, dzc = defensive_zone_coverage, ozp = offensive_zone_play, pwtp = playing_without_the_puck, dtr = defending_the_rush. "Harsh" means the text errs strict; "permissive" means it tells a reader an act is cheaper than it is.
 
 **Next-game suspension, once per page (owner ruling 21/28 Oct)**
-- Pages still to trim: rules_primer and uk_rules (rules pages); team_play done in SG134a. rink_map has no rules summary or facts block; equipment now states 404(b) once (SG131). One agent per page, per-limb layer test, never strip a different limb. (SG125–SG130)
 - special_teams facts :656 omits 32(d)'s accidental-high-stick exception (harsh; voiced alone); goaltender :740 left as harsh (body :755 carries it). (SG126, SG139)
-- **SG139–SG140 carry-overs:** goaltender :1374's "Head-first into boards or goal frame, … eject" is awkward aloud and reads as if only a head-first hit ejects in HC/CARHA/NHL/PWHL (as before; at 299/300); goaltender body :1398 has no plain "never hit a turned back"; goaltender :1377 says "hits", :1376 "contact" (length). USA Hockey goalie hit from behind: 607(d) Note 1 (charging) vs Casebook 608 Sit. 1 unresolved; zone_entries :776/:802 take 608 (harsh). The Declaration of Player Safety's "must be assessed" vs 640(e)'s minor (Casebook 640 Sit. 6 keeps the minor). ozp :917 states the IIHF 43 major flatly (harsh). forechecking :618/:326 and ozp :917 cite "608" for Casebook-only tiers. faceoffs :607 never states HC 7.5(c)/CARHA 53(b)'s mandatory boards match (pre-existing). winger facts :519 voices USA Hockey 607(c) discretion without 607(b)'s reckless ejection (:520 carries it). ozp :918 could cite 640(h) for the match (Level 3). (SG139, SG140)
+- **SG139–SG140 carry-overs:** (owner 31 Oct: the goalie head-contact lines keep the head as their lead.) goaltender :1374's "Head-first into boards or goal frame, … eject" is awkward aloud and reads as if only a head-first hit ejects in HC/CARHA/NHL/PWHL (as before; at 299/300); goaltender body :1398 has no plain "never hit a turned back"; goaltender :1377 says "hits", :1376 "contact" (length). USA Hockey goalie hit from behind: 607(d) Note 1 (charging) vs Casebook 608 Sit. 1 unresolved; zone_entries :776/:802 take 608 (harsh). The Declaration of Player Safety's "must be assessed" vs 640(e)'s minor (Casebook 640 Sit. 6 keeps the minor). ozp :917 states the IIHF 43 major flatly (harsh). forechecking :618/:326 and ozp :917 cite "608" for Casebook-only tiers. faceoffs :607 never states HC 7.5(c)/CARHA 53(b)'s mandatory boards match (pre-existing). winger facts :519 voices USA Hockey 607(c) discretion without 607(b)'s reckless ejection (:520 carries it). ozp :918 could cite 640(h) for the match (Level 3). (SG139, SG140)
+- **SG141 carry-overs (all harsh or wording; none permissive):** center CM :821 (a goalie hit from behind) names five books and is silent on USA Hockey; if a limb is added, use charging (607(d) Note 1), not checking from behind. Several lines say "sends them head first" without "into the boards or goal frame" (bcb :750/:1203, center :754; harsh). bcb :750 opening "no bare minor, none in NHL, IIHF, PWHL" can be heard as scoping "no bare minor" to three books (body and CM carry USA Hockey's floor). bcb :753 lists forceful and head first but not reckless (:754 carries it). defender :314/:462 keep a bare "head first" (no room). rules_primer :810 "costs you the game" can be heard as the team losing, and names only the injury trigger (52(b) also ejects an uninjured charge in the crease; the same sentence states both). rules_primer CARHA "a skater's" accidental high stick (:376, :1062, :1140) is narrower than 30(a)'s "a player, including a goalkeeper" (harsh). dzc never says a CARHA match (34(a)) keeps you out until the Chairman rules; 59(d) is now in body :209 only (not the next-game facts line, because it is not a fixed next-game ban). Defender's "untagged single-book ladder" row looks stale: every net-front and gap-control bullet names its books; :351–:353 lead with the tariff (re-scope before acting). (SG141)
 - Traceability: bcb :361 and :685 (SG114; the goaltender half closed in SG139).
-- CARHA 59(d) automatic suspension for a fighting penalty is not named on dzc (owner's judgement whether in scope; :184 now says "include", so it is no longer false). (SG136, SG139)
 - puck_handling :492 carries Hockey Canada 7.1(b)'s mandatory injury limb but not its discretionary major and game misconduct "based upon the degree of violence" (an intermediate tier; the match covers moderate violence). (SG134b, SG139)
 - bcb facts :804 no longer says 403(b)'s two games are additional (body :820 carries it); bcb :127, is "beyond tonight" or §1 the page's rules summary? If §1, :127 gets its 32(d) sentence back. (SG127a) The :834 32(d)/30(a) misattribution was fixed in SG136.
 - on_ice_communication: the next-game facts line sits in Pressure warnings because the screener block is at HARD_MAX. (SG130)
@@ -97,7 +96,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - DOPS under-16 limb: left, errs harsh, source unsettled (see the DOPS row under Sources). (SG103)
 
 **Podcasts**
-- The published practising_on_your_own m4a still says "Off the Ice 9" inside the file; the feed title (15) is what apps show. Re-tagging changes the hash, path and upload, so leave it unless the owner wants it. The `track` tag is still site position over total (owner's call). (Principles titles fix)
+- practising_on_your_own m4a re-tag (OWNER RULED 31 Oct): re-encoded from the WAV master on 31 Oct as `practising_on_your_own-fd6928a6.m4a` with the title "Off the Ice 15 · …"; `site/src/data/podcast-principles.json` is updated locally but NOT committed. Upload is blocked on an expired AWS login: owner signs in, then `S3_BUCKET="$(gh variable get S3_BUCKET)" scripts/upload_podcast_audio.sh --style principles --go`, check HEAD 200 / range 206, THEN commit the JSON. The `track` tag is still site position over total. (Principles titles fix)
 
 ## Captions and small rules notes (23 Oct)
 
@@ -105,14 +104,14 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 ## New page: Getting Better on Your Own
 
 Both pages are SHIPPED: Finding More Ice (0337d6a) and Practising on Your Own with all 51 skating drills (16869c2, owner approved 28 Oct). The design is in [`getting_better_plan.md`](getting_better_plan.md). Still open:
-- **Owner drill questions:** Drill 20's 'more backwards than forward' weight shift; the punch-jam name; the '2 or 3 times' label; the Drill 7 crossing-vs-own-side question; check that the page prose matches the redrawn drills 7 and 20.
+- **Drill questions, still open:** the Drill 7 crossing-vs-own-side question; check that the page prose matches the redrawn drills 7 and 20.
 - **NotebookLM episode for Practising on Your Own:** the owner pastes the batch10 files into NotebookLM, then the agent reviews and publishes it (it will be 7/16). The Principles episode is already published.
 - **Off-ice stick-drill diagrams:** deferred by the owner (28 Oct, 'later').
 - Optional: Finding More Ice 'faces suspension and fines' (R&R 14.5), changed together with getting_started KT8 and CM :654.
 
 ## Owner decisions needed
 
-- **Body Contact Detailed script (low):** the missing "If" is restored locally but not re-recorded.
+- None open (all answered 31 Oct; see the SG141 record).
 
 
 ## Content: rules accuracy (each needs a rules-verifier)
