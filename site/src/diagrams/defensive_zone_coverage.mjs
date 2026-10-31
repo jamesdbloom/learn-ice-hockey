@@ -405,6 +405,14 @@ const collapseCorner = {
     // at a minor plus a game misconduct, so "two minutes alone" still holds in all six books.
     'No book prices checking from behind at two minutes alone: under the NHL, the IIHF and the ' +
     'PWHL there is no minor for it at all, so the floor is a major and an ejection. ' +
+    // 31 Oct 2026: the two books the sentence above left unpriced for THIS picture. CARHA
+    // 53(a)'s floor is a minor plus a GAME misconduct (carha_2026.txt:2605-2612), so every
+    // tier ejects; USA Hockey Casebook 608 Situation 1 makes a forceful check on a player
+    // "standing along the boards (back toward the middle of the ice)" a major plus game
+    // misconduct or a match (usah_casebook.txt:11765-11768) — this carrier exactly.
+    // Hockey Canada 7.5(a)'s floor is likewise a minor plus a game misconduct (hc.txt:6165-6167).
+    'Hockey Canada and CARHA eject you every time, and so does USA Hockey for a forceful hit on a player ' +
+    'along the boards like this one. ' +
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
     'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
     'illegal hit. ' +
