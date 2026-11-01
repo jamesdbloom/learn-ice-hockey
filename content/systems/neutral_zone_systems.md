@@ -774,8 +774,8 @@ Position: Defending wingers commonly line up between the opposing wingers and th
 Position: Your centre sets up on the defensive side of the opposing centre, so a lost draw still leaves your centre between the puck and your net
 Goal: Attacking — win it clean to a defenceman for an immediate entry or shot, or to the wall to chip it in and forecheck
 Action: Know before the drop whether you are winning it forward or back, and who your man is if you lose it
-Rule: A teammate's encroachment gets your centre ejected, and a second team violation on the same draw is a bench minor under NHL and IIHF 76.7 and PWHL 78.7 — an individual minor on the offender under USA Hockey 613(d), and discretionary under Hockey Canada 6.2(e) and CARHA 57(d)
-Rule: The IIHF 2025/26 book warned the team and ejected nobody, but its 2026/27 book ejects as the NHL does (IIHF 76.6, both editions) — Faceoffs carries every book's split
+Rule: A teammate's encroachment gets your centre removed from the draw, and a second team violation on the same draw is a bench minor under NHL and IIHF 76.7 and PWHL 78.7 — an individual minor on the offender under USA Hockey 613(d), and discretionary under Hockey Canada 6.2(e) and CARHA 57(d)
+Rule: The IIHF 2025/26 book warned the team and ejected nobody, but its 2026/27 book removes the centre from the draw as the NHL does (IIHF 76.6, both editions) — Faceoffs carries every book's split
 Rule: Across the Home Countries the centre is replaced for every violation except on a faceoff following an icing, whichever IIHF edition your league runs (IHUK In-House Rules 2026-27, Section 10, Rule 76); an Elite League draw, which those rules never name, runs IIHF 2026/27 76.6
 Convention: The specific alignments are a coaching choice and vary hugely — ask your coach for yours
 ```
@@ -919,7 +919,7 @@ document, that is named too.*
 8. **Beat a trap by moving the puck, not carrying it** — quick passes, the boards, a stretch forward behind a neutral-zone wall, or a dump you chase. Try the seam last. Against a 1-4, chip past the flat line and race; if the goalie comes out for it, ⚠️ **pull up — never finish on a goalie.**
 9. **On the boards,** ⚠️ **never turn your back to anyone coming at you, and never duck** — head up, chin off your chest, even in a non-checking league.
 10. **Carry it in when the line is yours; when it is not, a dump you chase beats a turnover at the line.** Get it over the red line first or it is icing, and in several books your tired line cannot change. Chase it unless you are changing.
-11. **Before a neutral-zone draw, know whether you are winning it forward or back, and who your man is if you lose it.** These draws turn straight into rushes. Hold your line until the puck drops — creeping gets your centre thrown out.
+11. **Before a neutral-zone draw, know whether you are winning it forward or back, and who your man is if you lose it.** These draws turn straight into rushes. Hold your line until the puck drops — creeping gets your centre thrown out of the draw.
 
 ---
 

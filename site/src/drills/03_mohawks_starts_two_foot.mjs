@@ -69,10 +69,14 @@ const mohawk = (stepping) => {
       // Shoulders lead, then a jump from skate to skate (owner's source, 28 Oct 2026: Hockey Tutorial,
       // "Master The Elite Mohawk Turn", 13:30-14:01 — "add a shoulder motion jumping from skate to skate…
       // more power output… more weight into the blade"). The new lead foot lands, then the other follows heel to heel.
+      // The landed pair is a heel-to-heel stance (as heelToHeel, scaled to the 1.1 ft blades): the new lead foot
+      // points dirNew and the old lead foot sits BEHIND its heel pointing the other way, heels in line.
       const dirNew = down ? -45 : 45;
-      d.track(`M ${E[0] - 1.1} ${E[1] - v * 1.4} Q ${E[0] - 1.6} ${E[1] + v * 0.7} ${E[0] - 0.2} ${E[1] + (down ? 0.25 : -0.25)}`, other, { air: true, width: 2.2 });
-      d.skate(E[0] + 0.3, E[1] + (down ? 0.2 : -0.2), dirNew, other, { len: 1.1 });
-      d.skate(E[0] + 1.2, E[1] + (down ? -0.3 : 0.3), dirNew + 180, lead, { len: 1.1 });
+      const ux = Math.cos(rad(dirNew)), uy = Math.sin(rad(dirNew)), gap = 0.8, L2 = 0.55;
+      const cx = E[0] + 0.6, cy = E[1] - v * 0.3; // centre of the landed stance, between the heels
+      d.track(`M ${E[0] - 1.1} ${E[1] - v * 1.4} Q ${E[0] - 1.6} ${E[1] + v * 0.7} ${cx + ux * (gap - L2)} ${cy + uy * (gap - L2)}`, other, { air: true, width: 2.2 });
+      d.skate(cx + ux * gap, cy + uy * gap, dirNew, other, { len: 1.1 });
+      d.skate(cx - ux * gap, cy - uy * gap, dirNew + 180, lead, { len: 1.1 });
       // One line each, in the margin outside the lane (the larger type no longer fits two lines inside it).
       if (down) d.text(1.0, 10.55, 'shoulders turn, then jump skate to skate', { size: 0.42, anchor: 'start', weight: 600 });
       else d.text(21.3, 0.8, 'shoulders turn, then jump skate to skate', { size: 0.42, anchor: 'end', weight: 600 });
@@ -84,7 +88,13 @@ const mohawk = (stepping) => {
   d.step(legs[0].P[0][0], legs[0].P[0][1] + 0.9, 1);
   d.step(m0.x + 1.5, m0.y - 0.9, 2);
   d.step(legs[0].P[3][0] - 1.3, legs[0].P[3][1] + 0.3, 3);
-  d.step(m1.x + 1.5, m1.y + 0.9, 4);
+  if (stepping) {
+    // Page steps: 3 shoulders turn (end of arc A), 4 jump and land heel to heel, 5 curve back on arc B.
+    d.step(legs[0].P[3][0] + 1.1, legs[0].P[3][1] + 0.75, 4);
+    d.step(m1.x + 1.5, m1.y + 0.9, 5);
+  } else {
+    d.step(m1.x + 1.5, m1.y + 0.9, 4);
+  }
   d.travel(16.5, 10.3, 20.5, 10.3);
   return d.svg();
 };

@@ -404,12 +404,12 @@ Action: The centre tells the other four skaters the play before lining up — an
 Priority: Keep the menu tiny — two or three plays everyone knows cold beat ten nobody remembers
 Action: Name a fallback for a scramble, usually "everyone takes their man", so a lost draw does not become a lost coverage
 Rule: A winger creeping inside the circle before the drop gets the *centre* thrown out of the dot, not the winger — NHL Rule 76.6, USA Hockey 613(d) and IIHF 76.6 from its 2026/27 edition; the IIHF 2025/26 edition warned the team and ejected nobody
-Rule: After an icing the NHL and the IIHF 2026/27 book warn instead of ejecting — Rule 76.4, "the first face-off violation by either team will not result in the center being removed"; the IIHF 2025/26 book and USA Hockey write no such carve-out
+Rule: After an icing the NHL and the IIHF 2026/27 book warn instead of removing the centre from the draw — Rule 76.4, "the first face-off violation by either team will not result in the center being removed"; the IIHF 2025/26 book and USA Hockey write no such carve-out
 Rule: In Britain outside the Elite League, IHUK settles that whichever IIHF edition your league runs — "the linesperson shall immediately replace the centre for all violations", faceoffs following icings excepted (In-House Rules 2026-27, Section 10, Rule 76)
-Rule: The Elite League sits outside the In-House Rules, which never name it, and the EIHL Casebook writes no Rule 76 at all — so an Elite League draw runs IIHF 2026/27 Rule 76.6, which ejects the centre too, and IIHF 76.4, which warns instead on the first violation after an icing
+Rule: The Elite League sits outside the In-House Rules, which never name it, and the EIHL Casebook writes no Rule 76 at all — so an Elite League draw runs IIHF 2026/27 Rule 76.6, which removes the centre from the draw too, and IIHF 76.4, which warns instead on the first violation after an icing
 Rule: A second violation by the same team on the same draw is a bench minor under NHL and IIHF 76.7 and PWHL 78.7, so the replacement has to be clean — USA Hockey 613(d) makes it an individual minor on the offender, while Hockey Canada 6.2(e) and CARHA 57(d) leave it to the referee
 Rule: Hockey Canada's discretion goes if that player then contacts the linesperson before they have had "reasonable time to vacate the face-off location" — there the minor "will be assessed" (Hockey Canada 6.2(e))
-Action: Agree in advance which winger steps in when the centre is tossed, and that they are looking for a safe tie-up rather than anything clever
+Action: Agree in advance which winger steps in when the centre is sent out of the draw, and that they are looking for a safe tie-up rather than anything clever
 Convention: Use hand signals here, but only ones agreed in the dressing room and never invented in the moment — you can be seen but not heard, and the opposition can hear you
 ```
 

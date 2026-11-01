@@ -160,6 +160,31 @@ The structure is the same as every other page: Key focus → Overview → body �
 - New drills: continuous crossovers, forwards and backwards, described as cross-unders. Do one crossover in one direction, step onto the inside edge, cross over back, step onto the inside edge, and keep going.
 
 Off-ice stick drills will also get diagrams in the same style; the owner will send that list later.
+
+**The owner's off-ice stick list (1 November 2026, verbatim).** The owner approved a suggested structure built around it (stationary dangles, across the body, shapes, figure of 8, moving, plus wall passing and pad shooting from the corpus) and asked for both off-ice sections to become drill cards with diagrams like the skating drills. Off-ice exercises come from Conditioning and Recovery and Skating only, with no loads, sets or reps.
+- dangling in front head up making sure to shift weight in your legs
+- dangling in front top hand only head up making sure to shift weight in your legs
+- dangling in front eye closed making sure to shift weight in your legs
+- dangling on the right head up making sure to shift weight in your legs
+- dangling on the right top hand only head up making sure to shift weight in your legs
+- dangling on the left head up making sure to shift weight in your legs
+- dangling on the left top hand only head up making sure to shift weight in your legs
+- figure of 8 around two objects (i.e. orange weigted pucks): horizontal clockwise round right puck; horizontal anti-clockwise round right puck; vertical clockwise round top puck; vertical anti-clockwise round top puck
+- figure of 8 around four objects in the shape of a square (i.e. orange weigted pucks) - this forces the bottom hand to slide more: horizontal clockwise round right puck; horizontal anti-clockwise round right puck
+- left L shape on left hand side then across in front stopping after each straight line part of the L to change direction
+- right L shape on left hand side then across in front stopping after each straight line part of the L to change direction *(read as the right-hand side; the owner was told and has not corrected it)*
+- dangle on left pull diagonally across dangle in front and back again continuously
+- dangle on right pull diagonally across dangle in front and back again continuously
+- dangle on left pull diagonally across dangle in front, then dangle on right pull diagonally across dangle in front and back again continuously
+- dangle on the left pull across dangle on the right continuously
+- dangle on the left pull across to the right and then quickly snap back to left continuously making sure to shift weight in your legs
+- dangle on the right pull across to the left and then quickly snap back to right continuously making sure to shift weight in your legs
+- pull across wide from left to right making sure to shift weight in your legs
+- V-shape with puck making sure to slide bottom hand and bring the puck as close as possible to your feet which is the bottom of the V and as far as possible out on each side
+- push the puck forwards with the heal of the blade and pull it back with the toe in a straight line in-front of your feet, making sure to slide your bottom hand
+- slalom between a line of objects (ideally orange weighted pucks) walking forward then backwards with the objects between your legs
+- slalom between a line of objects (ideally orange weighted pucks) walking forward then backwards with the objects on the left hand side of your legs
+- slalom between a line of objects (ideally orange weighted pucks) walking forward then backwards with the objects on the right hand side of your legs
 - **D6:** NotebookLM and Detailed (ElevenLabs) episodes for each page once it ships; no Basics episode.
 
 
