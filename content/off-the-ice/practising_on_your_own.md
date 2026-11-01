@@ -741,27 +741,357 @@ Hard stops go on a clear patch. [Skating](../technique/skating.md#stops-and-star
 
 **In short:** Head up, a smooth surface, little and often.
 
-By coaching consensus, stickhandling is the off-ice skill that carries over best, alongside wall passing ([Practice and Development](practice_and_development.md#off-ice-practice-that-genuinely-transfers)).
+By coaching consensus, stickhandling is the off-ice skill that carries over best, alongside wall passing ([Practice and Development](practice_and_development.md#off-ice-practice-that-genuinely-transfers)). These drills are coaching craft, not a tested programme.
 
-- **Keep your head up on every rep.** Watch the television or call out numbers on a wall. Head-down reps at home become the habit that shows up in games.
-- **Use a smooth surface** — a shooting pad, tiles or a smooth floor, not carpet. A ball builds soft hands; a puck sliding on a smooth surface is closer to the real thing, so use both.
-- **Little and often.** Short, focused sessions most days beat a long one once a week. Leave the pad and a ball where you walk past them.
-- **Pass against a wall or a rebounder, half on the backhand.** It gives you hundreds of receptions in ten minutes.
-- **Shoot off a pad, not concrete.** Concrete wrecks the blade and teaches you to chop at the puck.
 - **Check the space yourself:** room from people, windows and glass, safe footing, and an adult watching a child.
+- **Use a puck on a smooth surface** — a shooting pad or tiles, not carpet. You can also use a biscuit (an off-ice puck) on a smooth floor, or a ball on any floor. A ball builds soft hands; a puck is closer to the real thing, so use both.
+- **Keep your head up on every rep.** Watch the television or call out numbers on a wall. Head-down reps at home become the habit that shows up in games.
+- **Shift your weight from leg to leg as the puck moves,** knees bent, in every drill.
+- **Little and often.** Short, focused sessions most days beat a long one once a week. Leave the pad and a ball where you walk past them.
+- **Start each drill slowly, then speed up.** Move on to the next group when you can do this one fast, eyes up, without losing the puck.
 
-[Puck Handling](../technique/puck_handling.md#how-to-practise) has the kit, a starter set of drills and a way to make each one harder.
+**Words used in the drills:**
+
+- **Top hand** — the hand at the end of the stick; it steers. **Bottom hand** — the hand lower down; keep it loose and let it slide along the shaft as the puck moves.
+- **Dangle** — move the puck side to side with quick, small touches, the blade tilted over the puck each way.
+- **Toe, heel** — the tip of the blade, and the end nearest the shaft.
+- **Marker** — anything you move round: a shoe, a cone, or a weighted puck (a heavy training puck), used here only as a marker.
+
+### Stationary dangles
+
+#### Dangles in front and to each side
+
+**Trains:** soft hands, and feeling the puck without looking at it.
+
+1. Stand with your knees bent, the puck in front of you, and look up at the wall or the television.
+2. Dangle in front, then with your top hand only, then with your eyes closed.
+3. Put the puck out on your right and dangle there, then with your top hand only.
+4. Do the same on your left.
+
+![](drill:office-stick-dangles)
+
+**Common mistake:** swinging the arms instead of working the wrists, which is slow and pulls you off balance.
+
+#### Toe drag in and out
+
+**Trains:** pulling the puck back to your feet past a reaching stick.
+
+1. Push the puck out on your forehand.
+2. Roll the blade over it and drag it back towards your feet with the toe.
+3. Tighten your grip and roll the blade back to catch it, then go again.
+
+![](drill:office-stick-toe-drag)
+
+**Common mistake:** rushing the catch at the end, which is the hard part. [The toe drag](../technique/puck_handling.md#the-toe-drag) has more.
+
+### Across the body
+
+#### Wide pull across
+
+**Trains:** reach, and moving the puck across a defender's stick.
+
+1. Put the puck out wide on your left.
+2. Pull it across in front of you and out as wide as you can on your right.
+3. Let the shaft slide through your bottom hand, or let go with it, to reach further.
+4. Bring it back to the left and pull across again.
+
+![](drill:office-stick-wide-pull)
+
+**Common mistake:** gripping the bottom hand tight, so it fights the top hand and shortens your reach.
+
+#### Dangle and pull across
+
+**Trains:** carrying the puck from one side of your body to the other under control.
+
+1. Dangle on your left.
+2. Pull the puck across in front of you and dangle on your right.
+3. Pull it back across and keep going.
+
+![](drill:office-stick-dangle-pull)
+
+**Common mistake:** a pull that stops in front of your feet instead of reaching the other side.
+
+#### Pull across and snap back
+
+**Trains:** a quick change of direction.
+
+1. Dangle on your left.
+2. Pull the puck across to your right, then snap it straight back to your left.
+3. Keep going, then start on your right and snap back to the right.
+
+![](drill:office-stick-snap-back)
+
+**Common mistake:** leaving your weight on one leg, so the snap back comes from the arms alone.
+
+#### Diagonal pulls
+
+**Trains:** moving the puck on a diagonal, not only side to side.
+
+1. Dangle on your left, pull the puck diagonally to in front of you, dangle there, and take it back.
+2. Do the same from your right.
+3. Then link them: left, front, right, front, and back to the left, without stopping.
+
+![](drill:office-stick-diagonal-pulls)
+
+**Common mistake:** a steady left-right rhythm, which a defender can read.
+
+### Shapes
+
+#### V-shape
+
+**Trains:** pulling the puck right in to your feet and pushing it far out, using the whole reach.
+
+1. Push the puck as far out to one side and forwards as you can reach.
+2. Pull it right in to your feet, the bottom of the V.
+3. Push it as far out to the other side and forwards.
+4. Keep going, sliding your bottom hand to reach.
+
+![](drill:office-stick-v-shape)
+
+**Common mistake:** a small V, the puck stopping short of your feet or short of full reach.
+
+#### Straight line, heel and toe
+
+**Trains:** front-to-back control, which the toe drag needs.
+
+1. Put the puck in front of your feet.
+2. Push it forwards in a straight line with the heel of the blade.
+3. Pull it back in the same line with the toe.
+4. Keep going, sliding your bottom hand as the puck goes out and back.
+
+![](drill:office-stick-heel-toe-line)
+
+**Common mistake:** letting the line curve, which means the blade is turning.
+
+#### L-shape
+
+**Trains:** stopping the puck dead and changing direction.
+
+1. Move the puck straight forwards and back along your left side, the upright of the L.
+2. Then move it straight across in front of you and back, the foot of the L.
+3. Stop the puck at the end of each straight part before you change direction.
+4. Then do the L on your right.
+
+![](drill:office-stick-l-shape)
+
+**Common mistake:** rounding the corners instead of stopping.
+
+### Figure of 8
+
+#### Figure of 8 round markers
+
+**Trains:** handling round an obstacle on the forehand and backhand, and pushing the puck away and pulling it back.
+
+1. Put two markers side by side in front of you, two to six feet apart.
+2. Take the puck side to side in a figure of 8, one loop round each marker, clockwise round the right-hand marker, then anti-clockwise round it.
+3. Move one marker so it sits in front of the other, and do the same front to back, clockwise round the far marker, then anti-clockwise.
+4. Set four markers in a square, a pair on your left and a pair on your right, one behind the other.
+5. Take the puck side to side in a figure of 8, one loop round each pair, clockwise round the right-hand pair, then anti-clockwise, letting your bottom hand slide for the longer reach.
+
+![](drill:office-stick-figure-of-8)
+
+**Common mistake:** looking down at the markers instead of keeping your head up.
+
+### Moving
+
+#### Walking slalom
+
+**Trains:** handling while you move, and planning a route with your eyes.
+
+1. Set a line of markers on a clear floor; for the between-the-legs version use flat ones you cannot turn an ankle on.
+2. Walk slowly forwards along the line, weaving the puck between the markers as they pass between your legs.
+3. Check the floor behind you is clear, then walk back along the line backwards, still weaving.
+4. Then do it with the markers on your left, then on your right, stepping clear of them.
+
+![](drill:office-stick-walking-slalom)
+
+**Common mistake:** watching the puck instead of looking ahead to the next marker.
+
+### Passing and shooting
+
+#### Wall passing
+
+**Trains:** receiving, which coaches call the neglected half of passing. A wall gives you hundreds of receptions in ten minutes.
+
+1. Face a wall or a rebounder and pass at a spot on it.
+2. Cushion every return, control it, and reset before the next pass.
+3. Take half your passes and receptions on the backhand.
+4. Vary the angle and distance, then return it first time, then shuffle sideways as you pass and receive.
+
+![](drill:office-stick-wall-passing)
+
+**Common mistake:** stopping the return dead instead of cushioning it.
+
+#### Shooting off a pad
+
+**Trains:** release, weight transfer and hand path; it cannot train when to shoot.
+
+1. Check who is near and what is behind and around the net, including windows and glass.
+2. Stand on a shooting pad, not concrete, with the net in front of you.
+3. Shoot into the net.
+
+![](drill:office-stick-pad-shooting)
+
+**Common mistake:** shooting off concrete, which wrecks the blade and teaches you to chop at the puck.
+
+**Make it harder** a step at a time — moving, on one leg, through obstacles, then against someone trying to take it — an order that is coaching craft, not a measured progression. Never train only with a weighted puck or stick: you build a stroke that only works with the weight. [Puck Handling](../technique/puck_handling.md#how-to-practise) has the kit and more drills.
 
 ## 5. Off-ice exercises
 
 **In short:** Follow [Conditioning and Recovery](conditioning_and_recovery.md) for any programme.
 
-Off-ice training doesn't teach skating, but it removes the limits that stop you doing it: single-leg strength, ankle stability and hip mobility. [Skating](../technique/skating.md#off-ice-work) names the most useful work, and [Conditioning and Recovery](conditioning_and_recovery.md#training-for-the-adult-recreational-player) sets out a realistic week.
+Off-ice training doesn't teach skating, but it removes the limits that stop you doing it: single-leg strength, ankle stability and hip mobility. [Skating](../technique/skating.md#off-ice-work) names the most useful work, and [Conditioning and Recovery](conditioning_and_recovery.md#training-for-the-adult-recreational-player) sets out a realistic week. These cards name the exercises; Conditioning and Recovery gives the sets and reps.
 
-- **Warm up first.** [Conditioning and Recovery](conditioning_and_recovery.md#the-off-ice-warm-up-most-amateurs-skip-entirely) has a ten-to-fifteen-minute warm-up.
+- **Warm up first,** with the card below.
 - **Get coached on the lifts** before you add weight.
 - **Build up gradually.** Going from nothing to a full programme in a week is, in coaches' experience, a common way for adults to get hurt.
 - **Young players:** see [Youth Players](conditioning_and_recovery.md#youth-players). Get qualified coaching before a young player lifts at all.
+- **Check the space** for the jumping and throwing: room, safe footing, nothing breakable.
+
+### Warm-up
+
+#### RAMP warm-up
+
+**Trains:** a body ready to produce force fast. It takes ten to fifteen minutes.
+
+1. **Raise:** jog on the spot, skip or walk fast until you notice you are warm.
+2. **Mobilise:** leg swings front to back and side to side, walking lunges with a twist, hip openers and arm circles.
+3. **Activate:** glute bridges, sideways band walks and a few bodyweight squats.
+4. **Potentiate:** a few short accelerations, jumps or hops, building to near-full effort.
+
+**Common mistake:** leaving out the last step, or holding long static stretches instead of moving.
+
+[Conditioning and Recovery](conditioning_and_recovery.md#the-off-ice-warm-up-most-amateurs-skip-entirely) explains each step.
+
+### Legs: strength, power and balance
+
+#### Single-leg strength
+
+**Trains:** the push of the stride. Skating is a single-leg sport, and two-legged squats don't cover it.
+
+1. Pick a split squat, a single-leg deadlift or a step-up.
+2. Work each leg in turn.
+3. Add calf work.
+4. Get coached on the lift before you add weight.
+
+![](drill:office-exercise-single-leg-strength)
+
+**Common mistake:** only training on two legs.
+
+#### Lateral bounds
+
+**Trains:** the sideways push of the stride.
+
+1. Stand on one leg.
+2. Push off sideways and land on the other leg.
+3. Stick the landing: hold still before the next bound.
+4. Bound back the other way.
+
+![](drill:office-exercise-lateral-bound)
+
+**Common mistake:** bouncing straight on without sticking the landing.
+
+#### Single-leg balance
+
+**Trains:** the ankle stability your edges run on.
+
+1. Stand on one leg and hold your balance.
+2. Then the other leg.
+3. Make it harder by stickhandling while you do it.
+
+![](drill:office-exercise-single-leg-balance)
+
+**Common mistake:** only ever balancing on your stronger leg.
+
+#### Slide board
+
+**Trains:** the sideways push and bringing the leg back under you.
+
+1. In the booties or socks the board needs, push off the stop at one end and slide across.
+2. Bring the pushing leg back under you as you reach the stop at the other end.
+3. Push back the other way.
+
+![](drill:office-exercise-slide-board)
+
+**Common mistake:** treating it as skating practice; it cannot give you edges, glide or balance on a blade.
+
+### Groin and hips
+
+No exercise guarantees against a groin strain. **If you have groin or hip pain now, or it keeps coming back, see a physiotherapist** rather than treating it yourself. [Groin and adductor strain](conditioning_and_recovery.md#groin-and-adductor-strain--the-classic-hockey-injury) has the evidence, which is thin.
+
+#### Copenhagen adduction, short-lever
+
+**Trains:** groin (adductor) strength.
+
+1. Get shown it by a coach or physio: it is a side-lying groin exercise with your top leg supported on a bench or by a partner.
+2. Start on the short-lever version, with the knee supported.
+3. Start very gently; diving in makes people extremely sore.
+4. Separately, not during the hold, add a squeeze: a ball or cushion between your knees, squeezed and held still.
+
+![](drill:office-exercise-copenhagen-short-lever)
+
+**Common mistake:** going straight to the full version and being sore for days.
+
+#### Hip mobility
+
+**Trains:** a hip strong through its whole range, for a deep, wide stride.
+
+1. Do 90/90 hip rotations.
+2. Hold deep squats.
+3. Work the hip flexors and groin through their range.
+4. Make it strength at the end of your range, not just stretching into it.
+
+![](drill:office-exercise-hip-mobility)
+
+**Common mistake:** only stretching; range you cannot control under load is no use on the ice.
+
+### Core
+
+#### Anti-rotation core
+
+**Trains:** holding your ground in a battle without folding.
+
+1. Pick a plank, a dead bug or a Pallof press.
+2. Keep your trunk from twisting or sagging throughout.
+3. Add loaded carries, walking with something heavy, which is what a battle feels like.
+
+![](drill:office-exercise-anti-rotation-core)
+
+**Common mistake:** letting the trunk twist or sag to finish the rep.
+
+#### Medicine-ball throws
+
+**Trains:** shot power, which comes up from the ground through a turning trunk.
+
+1. Stand side-on to a solid wall, away from windows.
+2. Throw a medicine ball at it by turning your hips and trunk.
+3. Then throw from the other side.
+
+![](drill:office-exercise-medicine-ball-throws)
+
+**Common mistake:** throwing with the arms.
+
+### Conditioning
+
+#### Hockey intervals
+
+**Trains:** the shift itself, and going hard again and again.
+
+1. Warm up first, and never do this the day before a game.
+2. Go hard for 30 to 45 seconds on a bike, a rower or a hill, then recover easily for 2 to 4 minutes, a starting shape rather than a tested programme.
+3. Repeat it several times.
+
+**Common mistake:** cutting the rest short, which trains something other than a shift.
+
+#### Easy aerobic
+
+**Trains:** recovering between shifts, so your third period looks like your first.
+
+1. Cycle, row, run or walk briskly uphill.
+2. Keep it easy enough to hold a conversation; it should feel too easy.
+3. Keep going for 30 to 60 minutes.
+
+**Common mistake:** going too hard, so the easy session is not easy.
 
 ---
 

@@ -87,6 +87,174 @@
     "svg": "/drills/mohawk-side-to-side.svg",
     "file": "03_mohawks_starts_two_foot.mjs"
   },
+  "office-exercise-anti-rotation-core": {
+    "id": "office-exercise-anti-rotation-core",
+    "title": "Anti-rotation core",
+    "group": "Off-ice exercises",
+    "alt": "Pick one of three. A plank, seen from the side: on the forearms and toes, trunk not sagging. A dead bug, seen from the side: lying on the back, one arm reaching up and the other overhead, one leg bent up and the other straight out. A Pallof press, seen from above: standing side-on to a band fixed to a post, hands pressed out in front, not letting the band twist you. Keep the trunk from twisting or sagging throughout. Then add loaded carries, walking with something heavy.",
+    "svg": "/drills/office-exercise-anti-rotation-core.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-exercise-copenhagen-short-lever": {
+    "id": "office-exercise-copenhagen-short-lever",
+    "title": "Copenhagen adduction, short-lever",
+    "group": "Off-ice exercises",
+    "alt": "Seen from behind, the set-up only: lying on the left side on the floor, propped on the left forearm, with the top leg, the right, supported on a bench at the knee, which is the short-lever version. The bottom leg lies along the floor under the bench. It does not show the movement itself: get shown it by a coach or physio, and start very gently. Separately, not during the hold, squeeze a ball or cushion between the knees and hold it still.",
+    "svg": "/drills/office-exercise-copenhagen-short-lever.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-exercise-hip-mobility": {
+    "id": "office-exercise-hip-mobility",
+    "title": "Hip mobility",
+    "group": "Off-ice exercises",
+    "alt": "Left: 90/90 hip rotations, seen from above. Sitting on the floor with one leg bent in front and the other bent out to the side, both knees at right angles, then rotating both knees over to the other side, and back. Right: holding a deep squat, seen from behind. Also work the hip flexors and groin through their range, and make it strength at the end of your range, not just stretching into it.",
+    "svg": "/drills/office-exercise-hip-mobility.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-exercise-lateral-bound": {
+    "id": "office-exercise-lateral-bound",
+    "title": "Lateral bounds",
+    "group": "Off-ice exercises",
+    "alt": "Seen from behind, three pictures left to right. One: standing on the left leg, right foot off the floor. Two: pushing off sideways and in the air, travelling to the right. Three: landed on the right leg only, left foot off the floor, holding still before the next bound. Then bound back the other way.",
+    "svg": "/drills/office-exercise-lateral-bound.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-exercise-medicine-ball-throws": {
+    "id": "office-exercise-medicine-ball-throws",
+    "title": "Medicine-ball throws",
+    "group": "Off-ice exercises",
+    "alt": "Seen from above, with a solid wall along the top. One: standing side-on to the wall, left shoulder towards it, holding the medicine ball on the far side. Two: throwing it at the wall by turning the hips and trunk to face the wall; the feet are not shown in this picture. Three: then from the other side, right shoulder towards the wall.",
+    "svg": "/drills/office-exercise-medicine-ball-throws.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-exercise-single-leg-balance": {
+    "id": "office-exercise-single-leg-balance",
+    "title": "Single-leg balance",
+    "group": "Off-ice exercises",
+    "alt": "Seen from behind, three pictures left to right. One: standing still on the left leg, right foot off the floor. Two: the same on the right leg. Three: harder, standing on one leg while stickhandling a ball.",
+    "svg": "/drills/office-exercise-single-leg-balance.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-exercise-single-leg-strength": {
+    "id": "office-exercise-single-leg-strength",
+    "title": "Single-leg strength",
+    "group": "Off-ice exercises",
+    "alt": "Seen from the side, facing right: three single-leg exercises, pick one. A split squat, one foot forward and one back, both knees bent. A single-leg deadlift, standing on one leg and leaning the body forward while the other leg goes out behind. A step-up, one foot up on a box. Work each leg in turn, add calf work, and get coached on the lift before you add weight.",
+    "svg": "/drills/office-exercise-single-leg-strength.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-exercise-slide-board": {
+    "id": "office-exercise-slide-board",
+    "title": "Slide board",
+    "group": "Off-ice exercises",
+    "alt": "Seen from behind, a slide board on the floor with a stop at each end, used in the booties or socks the board needs. One: the left foot pushes off the stop at the left end and you slide across to the right. Two: arriving at the stop at the right end, the pushing leg, the left, is brought back under the body. Three: push back the other way.",
+    "svg": "/drills/office-exercise-slide-board.svg",
+    "file": "08_off_ice_exercises.mjs"
+  },
+  "office-stick-dangle-pull": {
+    "id": "office-stick-dangle-pull",
+    "title": "Dangle and pull across",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: dangle on your left. Two: pull the puck across in front of you and dangle on your right. Three: pull it back across, and keep going.",
+    "svg": "/drills/office-stick-dangle-pull.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-dangles": {
+    "id": "office-stick-dangles",
+    "title": "Dangles in front and to each side",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: stand with knees bent, the puck in front of you, looking up. Two: dangle the puck side to side in front of you, then with the top hand only, then with your eyes closed. Three: put the puck out on your right and dangle there, then with the top hand only. Four: the same on your left.",
+    "svg": "/drills/office-stick-dangles.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-diagonal-pulls": {
+    "id": "office-stick-diagonal-pulls",
+    "title": "Diagonal pulls",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Three spots: out on your left, in front of you further forward, and out on your right, so the pulls between them run on diagonals. One: dangle on your left, pull the puck diagonally to the front, dangle there, and take it back. Two: the same from your right. Three: link them, left, front, right, front, and back to the left, without stopping.",
+    "svg": "/drills/office-stick-diagonal-pulls.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-figure-of-8": {
+    "id": "office-stick-figure-of-8",
+    "title": "Figure of 8 round markers",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Three pictures, each drawn in the first direction only. Top left: one, two markers side by side in front of you, two to six feet apart; two, take the puck side to side in a figure of 8, one loop round each marker, clockwise round the right-hand marker, then run the whole 8 the other way, anti-clockwise round the right-hand marker. Top right: three, one marker in front of the other, and the same 8 front to back, clockwise round the far marker, then the whole 8 the other way. Bottom: four, four markers in a square, a pair on your left and a pair on your right, one behind the other; five, the 8 side to side with one loop round each pair, clockwise round the right-hand pair, then the whole 8 the other way, letting your bottom hand slide for the longer reach.",
+    "svg": "/drills/office-stick-figure-of-8.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-heel-toe-line": {
+    "id": "office-stick-heel-toe-line",
+    "title": "Straight line, heel and toe",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck in front of your feet. Two: push it straight forwards with the heel of the blade. Three: pull it back along the same line with the toe; out and back are drawn as one line. Four: keep going, sliding your bottom hand as the puck goes out and back.",
+    "svg": "/drills/office-stick-heel-toe-line.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-l-shape": {
+    "id": "office-stick-l-shape",
+    "title": "L-shape",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, move the puck straight forwards and back along your left side, the upright of the L; two, move it straight across in front of you and back, the foot of the L; three, stop the puck at the end of each straight part, the corner included, before you change direction. Right picture: four, the same L on your right, its upright along your right side and its foot running across in front of you to the left and back.",
+    "svg": "/drills/office-stick-l-shape.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-pad-shooting": {
+    "id": "office-stick-pad-shooting",
+    "title": "Shooting off a pad",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. A net at the top, a shooting pad at the bottom. Drawn for a right-handed shot, standing side-on with the left shoulder towards the net and the puck beside the back foot; a left-handed shot mirrors it. One: check who is near, and what is behind and around the net, including windows and glass. Two: stand on the shooting pad, not concrete, with the net in front of you. Three: shoot into the net.",
+    "svg": "/drills/office-stick-pad-shooting.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-snap-back": {
+    "id": "office-stick-snap-back",
+    "title": "Pull across and snap back",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, dangle on your left; two, pull the puck across to your right, then snap it straight back to your left. Right picture: three, keep going, then start on your right and snap back to the right.",
+    "svg": "/drills/office-stick-snap-back.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-toe-drag": {
+    "id": "office-stick-toe-drag",
+    "title": "Toe drag in and out",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Drawn for a right-handed shot, whose forehand is on the right; a left-handed shot does it on the left. One: push the puck out on your forehand, forwards and to the right. Two: roll the blade over the puck so it is on the far side, and drag the puck back towards your feet with the toe. Three: tighten your grip and roll the blade back to catch it near your feet, then go again.",
+    "svg": "/drills/office-stick-toe-drag.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-v-shape": {
+    "id": "office-stick-v-shape",
+    "title": "V-shape",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. The puck traces a V with its point at your feet, drawn starting to the left; either side will do. One: push the puck as far out to one side and forwards as you can reach. Two: pull it right in to your feet, the bottom of the V. Three: push it as far out to the other side and forwards. Four: keep going, sliding your bottom hand to reach.",
+    "svg": "/drills/office-stick-v-shape.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-walking-slalom": {
+    "id": "office-stick-walking-slalom",
+    "title": "Walking slalom",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you; two, walk slowly forwards along the line with the markers passing between your feet, weaving the puck between them; three, check the floor behind you is clear, then walk back along the line backwards, still weaving. Right picture: four, the same with the markers on your left, stepping clear of them, then with them on your right.",
+    "svg": "/drills/office-stick-walking-slalom.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-wall-passing": {
+    "id": "office-stick-wall-passing",
+    "title": "Wall passing",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. A wall across the top. One: face the wall and pass at a spot on it. Two: cushion every return, control it, and reset before the next pass. Three: take half your passes and receptions on the backhand. Four: vary the angle and distance, then return it first time, then shuffle sideways as you pass and receive.",
+    "svg": "/drills/office-stick-wall-passing.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
+  "office-stick-wide-pull": {
+    "id": "office-stick-wide-pull",
+    "title": "Wide pull across",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck out wide on your left. Two: pull it across in front of you and out as wide as you can on your right. Three: let the shaft slide through your bottom hand, or let go with it, to reach further. Four: bring it back to the left and pull across again.",
+    "svg": "/drills/office-stick-wide-pull.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
   "one-foot-cross-over-jump": {
     "id": "one-foot-cross-over-jump",
     "title": "One foot cross over jump",
