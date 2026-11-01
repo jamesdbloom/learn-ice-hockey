@@ -102,7 +102,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 ## New page: Getting Better on Your Own
 
 Both pages are SHIPPED: Finding More Ice (0337d6a) and Practising on Your Own with all 51 skating drills (16869c2, owner approved 28 Oct). The design is in [`getting_better_plan.md`](getting_better_plan.md). Still open:
-- **Drill questions, still open:** the Drill 7 crossing-vs-own-side question; check that the page prose matches the redrawn drills 7 and 20.
+- **Drill prose check:** check that the page prose matches the redrawn drills 7 and 20. (Drill 7 crossing the line is correct as drawn: owner, 1 Nov.)
 - **NotebookLM episode for Practising on Your Own:** the owner pastes the batch10 files into NotebookLM, then the agent reviews and publishes it (it will be 7/16). The Principles episode is already published.
 - **Off-ice stick-drill diagrams:** deferred by the owner (28 Oct, 'later').
 - Optional: Finding More Ice 'faces suspension and fines' (R&R 14.5), changed together with getting_started KT8 and CM :654.
