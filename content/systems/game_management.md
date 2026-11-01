@@ -1175,7 +1175,7 @@ Never: Take a penalty with a lead in the last five minutes. If you are beaten, b
 Never: Take one while already killing a penalty; coaches rank a 5-on-3 against as the most dangerous game state in hockey, which is coaching emphasis and not a counted ranking
 Never: Take one while on your own power play, or after the whistle
 Rule: The after-the-whistle one can cost more than a power play — USA Hockey prices a puck put out during a stoppage at a minor (610(c)) or a misconduct (601(c)(10)) without saying which, and a game misconduct in protest of a call (601(d)(7))
-Rule: Hockey Canada writes the same act at Rule 11.1, preamble item (v), laddering to a Misconduct at 11.1(d) and a Game Misconduct at 11.1(e) — Note 1 to each lets a referee assess either without the rungs below it, but both rungs still require that the player persists in the conduct
+Rule: Hockey Canada writes a puck shot out after the whistle at Rule 11.1, preamble item (v): a minor, a Misconduct at 11.1(d) and a Game Misconduct at 11.1(e) — Note 1 to each lets the referee start at either one, so do not count on getting a minor first
 Rule: In all six books, intentionally knocking or shooting the puck out of the reach of an official who is retrieving it is a misconduct — NHL, PWHL and IIHF 39.4(ii), USA Hockey 601(c)(3), Hockey Canada 11.1(d)(iii), CARHA 46(b)(3)
 Never: Take one at 6-on-5 or defending 6-on-5 — both directions are catastrophic
 ```
@@ -1190,7 +1190,7 @@ Never: Take one at 6-on-5 or defending 6-on-5 — both directions are catastroph
 
 **Under USA Hockey** a puck put out during a stoppage is a minor (610(c)) or a **misconduct** (601(c)(10)), and the book does not say which governs. ⚠️ **Do it in protest of a call and it is a game misconduct** (601(d)(7)), which also suspends you for the team's next game (404(b)). A puck sent *"in the general direction of an on-ice official, or in the direction of a spectator"* is the same (601(d)(9)), and one shot directly at them recklessly is a **match penalty** (Note to 601(d)), with a likely multi-game suspension. A plain avoidable shot after the whistle is an unsportsmanlike minor, then a misconduct if you persist, then a game misconduct (601(a)(4)).
 
-**Hockey Canada** ⚠️ **lists *"Shooting the puck out of the playing area, after the whistle"* as Unsportsmanlike Conduct** (11.1, preamble item (v)): a minor, a misconduct for persisting (11.1(d)(i)), and a game misconduct for persisting after either (11.1(e)). The referee may start at a higher rung, but persistence is what they must see.
+**Hockey Canada** ⚠️ **lists *"Shooting the puck out of the playing area, after the whistle"* as Unsportsmanlike Conduct** (11.1, preamble item (v)): a minor (11.1(a)), with a misconduct (11.1(d)) and a game misconduct (11.1(e)) above it. The book writes those two for a player who persists, but Note 1 to each lets the referee start at either one — so do not count on a minor first.
 
 ### Frustration penalties
 
