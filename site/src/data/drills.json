@@ -151,6 +151,14 @@
     "svg": "/drills/office-exercise-slide-board.svg",
     "file": "08_off_ice_exercises.mjs"
   },
+  "office-stick-dangle-left": {
+    "id": "office-stick-dangle-left",
+    "title": "Dangles on your left",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck beside you on your left, level with your left foot, knees bent and head up. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Three: then with your top hand only.",
+    "svg": "/drills/office-stick-dangle-left.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
   "office-stick-dangle-pull": {
     "id": "office-stick-dangle-pull",
     "title": "Dangle and pull across",
@@ -159,11 +167,19 @@
     "svg": "/drills/office-stick-dangle-pull.svg",
     "file": "07_off_ice_stick.mjs"
   },
+  "office-stick-dangle-right": {
+    "id": "office-stick-dangle-right",
+    "title": "Dangles on your right",
+    "group": "Off-ice stick work",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck beside you on your right, level with your right foot, knees bent and head up. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Three: then with your top hand only.",
+    "svg": "/drills/office-stick-dangle-right.svg",
+    "file": "07_off_ice_stick.mjs"
+  },
   "office-stick-dangles": {
     "id": "office-stick-dangles",
-    "title": "Dangles in front and to each side",
+    "title": "Dangles in front",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: stand with knees bent, the puck in front of you, looking up. Two: dangle the puck side to side in front of you, then with the top hand only, then with your eyes closed. Three: put the puck out on your right and dangle there, then with the top hand only. Four: the same on your left.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: stand with knees bent, the puck in front of you, looking up. Two: dangle the puck side to side in front of you, shifting your weight in your legs as it moves. Three: then with your top hand only. Four: then with your eyes closed.",
     "svg": "/drills/office-stick-dangles.svg",
     "file": "07_off_ice_stick.mjs"
   },
@@ -179,7 +195,7 @@
     "id": "office-stick-figure-of-8",
     "title": "Figure of 8 round markers",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Three pictures, each drawn in the first direction only. Top left: one, two markers side by side in front of you, two to six feet apart; two, take the puck side to side in a figure of 8, one loop round each marker, clockwise round the right-hand marker, then run the whole 8 the other way, anti-clockwise round the right-hand marker. Top right: three, one marker in front of the other, and the same 8 front to back, clockwise round the far marker, then the whole 8 the other way. Bottom: four, four markers in a square, a pair on your left and a pair on your right, one behind the other; five, the 8 side to side with one loop round each pair, clockwise round the right-hand pair, then the whole 8 the other way, letting your bottom hand slide for the longer reach.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Six pictures in three rows; in each row the left picture is clockwise and the right picture is the whole 8 the other way, anti-clockwise. Top row: one, two markers side by side in front of you, the puck side to side in a figure of 8, one loop round each marker, clockwise round the right-hand marker, then anti-clockwise round it. Middle row: two, one marker in front of the other, the same 8 front to back, clockwise round the far marker, then anti-clockwise round it. Bottom row: three, four markers in a square, a pair on your left and a pair on your right, one behind the other, the 8 side to side with one loop round each pair, clockwise round the right-hand pair, then anti-clockwise round it, letting your bottom hand slide for the longer reach.",
     "svg": "/drills/office-stick-figure-of-8.svg",
     "file": "07_off_ice_stick.mjs"
   },
@@ -193,9 +209,9 @@
   },
   "office-stick-l-shape": {
     "id": "office-stick-l-shape",
-    "title": "L-shape",
+    "title": "L-shape and R-shape",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, move the puck straight forwards and back along your left side, the upright of the L; two, move it straight across in front of you and back, the foot of the L; three, stop the puck at the end of each straight part, the corner included, before you change direction. Right picture: four, the same L on your right, its upright along your right side and its foot running across in front of you to the left and back.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture, the L: one, the puck starts in front of your right foot; pull it across in front of your feet to the left, and stop at the corner. Two, pull it straight back along your left side, past your left foot, to just behind your heels, and stop. Three, pull it forwards to the corner, and stop. Four, pull it back across to where you started, and stop. Right picture: five, the R-shape, the mirror image: across to the right, back along your right side past your right foot, forwards to the corner, and back across.",
     "svg": "/drills/office-stick-l-shape.svg",
     "file": "07_off_ice_stick.mjs"
   },
@@ -235,7 +251,7 @@
     "id": "office-stick-walking-slalom",
     "title": "Walking slalom",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you; two, walk slowly forwards along the line with the markers passing between your feet, weaving the puck between them; three, check the floor behind you is clear, then walk back along the line backwards, still weaving. Right picture: four, the same with the markers on your left, stepping clear of them, then with them on your right.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you; two, walk slowly forwards along the line with the markers passing between your feet, pulling the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve; three, check the floor behind you is clear, then walk back along the line backwards, still zig-zagging. Right picture: four, the same with the markers on your left, stepping clear of them, then with them on your right.",
     "svg": "/drills/office-stick-walking-slalom.svg",
     "file": "07_off_ice_stick.mjs"
   },

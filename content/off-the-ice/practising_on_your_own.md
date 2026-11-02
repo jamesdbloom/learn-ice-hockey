@@ -746,31 +746,55 @@ By coaching consensus, stickhandling is the off-ice skill that carries over best
 - **Check the space yourself:** room from people, windows and glass, safe footing, and an adult watching a child.
 - **Use a puck on a smooth surface** — a shooting pad or tiles, not carpet. You can also use a biscuit (an off-ice puck) on a smooth floor, or a ball on any floor. A ball builds soft hands; a puck is closer to the real thing, so use both.
 - **Keep your head up on every rep.** Watch the television or call out numbers on a wall. Head-down reps at home become the habit that shows up in games.
-- **Shift your weight from leg to leg as the puck moves,** knees bent, in every drill.
+- **Shift your weight in your legs as the puck moves,** knees bent, in every drill.
 - **Little and often.** Short, focused sessions most days beat a long one once a week. Leave the pad and a ball where you walk past them.
 - **Start each drill slowly, then speed up.** Move on to the next group when you can do this one fast, eyes up, without losing the puck.
 
 **Words used in the drills:**
 
 - **Top hand** — the hand at the end of the stick; it steers. **Bottom hand** — the hand lower down; keep it loose and let it slide along the shaft as the puck moves.
-- **Dangle** — move the puck side to side with quick, small touches, the blade tilted over the puck each way.
+- **Dangle** — move the puck back and forth with quick, small touches, the blade tilted over the puck each way.
 - **Toe, heel** — the tip of the blade, and the end nearest the shaft.
 - **Marker** — anything you move round: a shoe, a cone, or a weighted puck (a heavy training puck), used here only as a marker.
 
 ### Stationary dangles
 
-#### Dangles in front and to each side
+#### Dangles in front
 
 **Trains:** soft hands, and feeling the puck without looking at it.
 
 1. Stand with your knees bent, the puck in front of you, and look up at the wall or the television.
-2. Dangle in front, then with your top hand only, then with your eyes closed.
-3. Put the puck out on your right and dangle there, then with your top hand only.
-4. Do the same on your left.
+2. Dangle the puck side to side in front of you, shifting your weight in your legs as it moves.
+3. Then dangle with your top hand only.
+4. Then with your eyes closed.
 
 ![](drill:office-stick-dangles)
 
 **Common mistake:** swinging the arms instead of working the wrists, which is slow and pulls you off balance.
+
+#### Dangles on your left
+
+**Trains:** handling the puck beside you, front to back.
+
+1. Put the puck beside you on your left, level with your left foot. Bend your knees and keep your head up.
+2. Dangle it forwards and backwards along your side, shifting your weight in your legs as it moves.
+3. Then dangle with your top hand only.
+
+![](drill:office-stick-dangle-left)
+
+**Common mistake:** looking down at the puck instead of keeping your head up.
+
+#### Dangles on your right
+
+**Trains:** handling the puck beside you, front to back.
+
+1. Put the puck beside you on your right, level with your right foot. Bend your knees and keep your head up.
+2. Dangle it forwards and backwards along your side, shifting your weight in your legs as it moves.
+3. Then dangle with your top hand only.
+
+![](drill:office-stick-dangle-right)
+
+**Common mistake:** looking down at the puck instead of keeping your head up.
 
 #### Toe drag in and out
 
@@ -863,14 +887,15 @@ By coaching consensus, stickhandling is the off-ice skill that carries over best
 
 **Common mistake:** letting the line curve, which means the blade is turning.
 
-#### L-shape
+#### L-shape and R-shape
 
 **Trains:** stopping the puck dead and changing direction.
 
-1. Move the puck straight forwards and back along your left side, the upright of the L.
-2. Then move it straight across in front of you and back, the foot of the L.
-3. Stop the puck at the end of each straight part before you change direction.
-4. Then do the L on your right.
+1. Start with the puck in front of your right foot. Pull it across in front of your feet to the left, and stop. That is the corner of the L.
+2. Pull it straight back along your left side, past your left foot, to just behind your heels, and stop. For a right-handed shot, this pull and the next are on your backhand.
+3. Pull it forwards to the corner, and stop.
+4. Pull it back across to where you started, and stop.
+5. Then do the R-shape, the mirror image: across to the right, back past your right foot, forwards, and back across.
 
 ![](drill:office-stick-l-shape)
 
@@ -882,11 +907,9 @@ By coaching consensus, stickhandling is the off-ice skill that carries over best
 
 **Trains:** handling round an obstacle on the forehand and backhand, and pushing the puck away and pulling it back.
 
-1. Put two markers side by side in front of you, two to six feet apart.
-2. Take the puck side to side in a figure of 8, one loop round each marker, clockwise round the right-hand marker, then anti-clockwise round it.
-3. Move one marker so it sits in front of the other, and do the same front to back, clockwise round the far marker, then anti-clockwise.
-4. Set four markers in a square, a pair on your left and a pair on your right, one behind the other.
-5. Take the puck side to side in a figure of 8, one loop round each pair, clockwise round the right-hand pair, then anti-clockwise, letting your bottom hand slide for the longer reach.
+1. Put two markers side by side in front of you, two to six feet apart. Take the puck side to side in a figure of 8, one loop round each marker: clockwise round the right-hand marker, then anti-clockwise round it (the whole 8 the other way).
+2. Move one marker so it sits in front of the other. Do the same front to back: clockwise round the far marker, then anti-clockwise round it.
+3. Set four markers in a square, a pair on your left and a pair on your right, one behind the other. Take the puck side to side, one loop round each pair: clockwise round the right-hand pair, then anti-clockwise round it, letting your bottom hand slide for the longer reach.
 
 ![](drill:office-stick-figure-of-8)
 
@@ -899,8 +922,8 @@ By coaching consensus, stickhandling is the off-ice skill that carries over best
 **Trains:** handling while you move, and planning a route with your eyes.
 
 1. Set a line of markers on a clear floor; for the between-the-legs version use flat ones you cannot turn an ankle on.
-2. Walk slowly forwards along the line, weaving the puck between the markers as they pass between your legs.
-3. Check the floor behind you is clear, then walk back along the line backwards, still weaving.
+2. Walk slowly forwards along the line as the markers pass between your legs. Pull the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve.
+3. Check the floor behind you is clear, then walk back along the line backwards, still zig-zagging.
 4. Then do it with the markers on your left, then on your right, stepping clear of them.
 
 ![](drill:office-stick-walking-slalom)
