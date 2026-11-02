@@ -336,10 +336,19 @@
       "audio": "/audio/off-the-ice/finding_more_ice-9c55ef26.m4a"
     },
     {
+      "doc_id": "off-the-ice/practising_on_your_own",
+      "title": "Practising on Your Own",
+      "section": "Off the Ice",
+      "track": 38,
+      "bytes": 14902166,
+      "duration_s": 1776.1,
+      "audio": "/audio/off-the-ice/practising_on_your_own-545cecf1.m4a"
+    },
+    {
       "doc_id": "off-the-ice/mental_game",
       "title": "The Mental Game",
       "section": "Off the Ice",
-      "track": 38,
+      "track": 39,
       "bytes": 26204160,
       "duration_s": 3125.5,
       "audio": "/audio/off-the-ice/mental_game-c7644a05.m4a"
@@ -348,7 +357,7 @@
       "doc_id": "off-the-ice/team_play_and_culture",
       "title": "Team Play and Culture",
       "section": "Off the Ice",
-      "track": 39,
+      "track": 40,
       "bytes": 23247213,
       "duration_s": 2771.2,
       "audio": "/audio/off-the-ice/team_play_and_culture-6691e61a.m4a"
@@ -357,7 +366,7 @@
       "doc_id": "off-the-ice/how_to_watch_hockey",
       "title": "How to Watch Hockey",
       "section": "Off the Ice",
-      "track": 40,
+      "track": 41,
       "bytes": 26634550,
       "duration_s": 3178.6,
       "audio": "/audio/off-the-ice/how_to_watch_hockey-c5239fa4.m4a"
