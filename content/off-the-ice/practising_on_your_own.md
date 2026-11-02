@@ -827,8 +827,8 @@ By coaching consensus, stickhandling is the off-ice skill that carries over best
 
 **Trains:** carrying the puck from one side of your body to the other under control.
 
-1. Dangle on your left.
-2. Pull the puck across in front of you and dangle on your right.
+1. Dangle out wide on your left.
+2. Pull the puck across in front of you and dangle out wide on your right.
 3. Pull it back across and keep going.
 
 ![](drill:office-stick-dangle-pull)
@@ -839,9 +839,9 @@ By coaching consensus, stickhandling is the off-ice skill that carries over best
 
 **Trains:** a quick change of direction.
 
-1. Dangle on your left.
+1. Dangle out wide on your left.
 2. Pull the puck across to your right, then snap it straight back to your left.
-3. Keep going, then start on your right and snap back to the right.
+3. Keep going, then start out wide on your right and snap back to the right.
 
 ![](drill:office-stick-snap-back)
 
@@ -851,8 +851,8 @@ By coaching consensus, stickhandling is the off-ice skill that carries over best
 
 **Trains:** moving the puck on a diagonal, not only side to side.
 
-1. Dangle on your left, pull the puck diagonally to in front of you, dangle there, and take it back.
-2. Do the same from your right.
+1. Dangle front to back beside your left foot. Pull the puck diagonally forwards to in front of you, dangle there, and take it back.
+2. Do the same from beside your right foot.
 3. Then link them: left, front, right, front, and back to the left, without stopping.
 
 ![](drill:office-stick-diagonal-pulls)

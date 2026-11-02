@@ -163,7 +163,7 @@
     "id": "office-stick-dangle-pull",
     "title": "Dangle and pull across",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: dangle on your left. Two: pull the puck across in front of you and dangle on your right. Three: pull it back across, and keep going.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: dangle out wide on your left, side to side. Two: pull the puck across in front of you and dangle out wide on your right. Three: pull it back across, and keep going.",
     "svg": "/drills/office-stick-dangle-pull.svg",
     "file": "07_off_ice_stick.mjs"
   },
@@ -187,7 +187,7 @@
     "id": "office-stick-diagonal-pulls",
     "title": "Diagonal pulls",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Three spots: out on your left, in front of you further forward, and out on your right, so the pulls between them run on diagonals. One: dangle on your left, pull the puck diagonally to the front, dangle there, and take it back. Two: the same from your right. Three: link them, left, front, right, front, and back to the left, without stopping.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Three spots: beside your left foot, in front of you further forward, and beside your right foot, so the pulls between them run on diagonals. At the side spots the dangle is front to back; in front it is side to side. One: dangle beside your left foot, pull the puck diagonally forwards to in front of you, dangle there, and take it back along the same line. Two: the same from beside your right foot. Three: link them, left, front, right, front, and back to the left, without stopping.",
     "svg": "/drills/office-stick-diagonal-pulls.svg",
     "file": "07_off_ice_stick.mjs"
   },
@@ -227,7 +227,7 @@
     "id": "office-stick-snap-back",
     "title": "Pull across and snap back",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, dangle on your left; two, pull the puck across to your right, then snap it straight back to your left. Right picture: three, keep going, then start on your right and snap back to the right.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, dangle out wide on your left, side to side; two, pull the puck across to your right, then snap it straight back to your left. Right picture: three, keep going, then start out wide on your right and snap back to the right.",
     "svg": "/drills/office-stick-snap-back.svg",
     "file": "07_off_ice_stick.mjs"
   },

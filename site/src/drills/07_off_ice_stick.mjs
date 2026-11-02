@@ -25,6 +25,8 @@ const stepLab = (d, x, y, n, lines, { end = false } = {}) => {
   lines.forEach((s, i) => lab(d, end ? x - 0.65 : x + 0.65, y + 0.2 + i * 0.68, s, { anchor: end ? 'end' : 'start', weight: i ? 400 : 600, color: i ? COL.muted : COL.ink }));
 };
 const base = [key.shoe('L'), key.shoe('R'), key.puck()];
+// Legend glyph for a front-to-back dangle (the kit's dangle key is side to side).
+const dangleFB = (label = 'dangle') => [0.6, (x, y) => `<line x1="${u(x + 0.3)}" y1="${u(y - 0.38)}" x2="${u(x + 0.3)}" y2="${u(y + 0.38)}" stroke="${COL.ink}" stroke-width="2.4" marker-start="url(#ah-ink)" marker-end="url(#ah-ink)"/>`, label];
 const u = (n) => Math.round(n * 30 * 10) / 10;
 // Wall passing: the spot you pass at (solid ring), and other spots for other angles (dashed ring).
 const spot = (d, x, y, { other = false } = {}) => d.raw(`<circle cx="${u(x)}" cy="${u(y)}" r="${u(0.35)}" fill="none" stroke="${COL.ink}" stroke-width="${other ? 2 : 2.5}"${other ? ' stroke-dasharray="4 3"' : ''}/>`);
@@ -69,7 +71,7 @@ const sideDangle = (s) => {
   stepLab(d, x, 1.3, 1, [`level with your ${side} foot,`, 'head up'], { end });
   stepLab(d, x, 3.2, 2, ['forwards and backwards,', 'shifting your weight'], { end });
   stepLab(d, x, 5.1, 3, ['top hand only'], { end });
-  return finish(d, [...base, key.dangle()]);
+  return finish(d, [...base, dangleFB()]);
 };
 const dangleLeft = sideDangle(-1);
 const dangleRight = sideDangle(1);
@@ -128,7 +130,7 @@ const danglePull = (() => {
   const d = diagram({
     title: 'Dangle and pull across',
     w: 22, h: H,
-    desc: `${SEEN} One: dangle on your left. Two: pull the puck across in front of you and dangle on your right. Three: pull it back across, and keep going.`,
+    desc: `${SEEN} One: dangle out wide on your left, side to side. Two: pull the puck across in front of you and dangle out wide on your right. Three: pull it back across, and keep going.`,
   });
   const Lp = [3.4, 6.4], Rp = [18.6, 6.4];
   // Across and back on the same straight line, drawn as two close parallel arrows.
@@ -137,8 +139,8 @@ const danglePull = (() => {
   dangle(d, ...Lp); puck(d, ...Lp);
   dangle(d, ...Rp); puck(d, ...Rp, { ghost: true });
   player(d, 11, 10.4);
-  stepLab(d, 1.2, 3.9, 1, ['dangle on your left']);
-  stepLab(d, 20.8, 3.9, 2, ['pull across,', 'dangle on your right'], { end: true });
+  stepLab(d, 1.2, 3.9, 1, ['dangle out wide on your left']);
+  stepLab(d, 20.8, 3.9, 2, ['pull across,', 'dangle out wide'], { end: true });
   stepLab(d, 8.0, 4.9, 3, ['pull it back across']);
   return finish(d, [...base, key.ghost(), key.path(), key.dangle()]);
 })();
@@ -148,7 +150,7 @@ const snapBack = (() => {
   const d = diagram({
     title: 'Pull across and snap back',
     w: 22, h: H,
-    desc: `${SEEN} Two pictures. Left picture: one, dangle on your left; two, pull the puck across to your right, then snap it straight back to your left. Right picture: three, keep going, then start on your right and snap back to the right.`,
+    desc: `${SEEN} Two pictures. Left picture: one, dangle out wide on your left, side to side; two, pull the puck across to your right, then snap it straight back to your left. Right picture: three, keep going, then start out wide on your right and snap back to the right.`,
   });
   divider(d, 11, 0.4, 11, H - 0.4);
   // s = +1 starts on the left, -1 starts on the right; ox = panel left edge.
@@ -163,33 +165,39 @@ const snapBack = (() => {
   };
   panel(0, 1);
   panel(11, -1);
-  stepLab(d, 0.9, 1.1, 1, ['dangle on your left']);
+  stepLab(d, 0.9, 1.1, 1, ['dangle out wide on your left']);
   stepLab(d, 0.9, 2.5, 2, ['pull right, snap back']);
-  stepLab(d, 11.8, 1.1, 3, ['then start on your right']);
+  stepLab(d, 11.8, 1.1, 3, ['then start out wide', 'on your right']);
   return finish(d, [...base, key.path(), key.dangle()]);
 })();
 
 // ------------------------------------------------------------------ 6. Diagonal pulls
+// The side spots are where the puck sits on "Dangles on your left / right": beside the foot, level
+// with it, dangled front to back. No blade is drawn here: its shaft would cross the diagonal pull.
 const diagonal = (() => {
   const d = diagram({
     title: 'Diagonal pulls',
     w: 22, h: H,
-    desc: `${SEEN} Three spots: out on your left, in front of you further forward, and out on your right, so the pulls between them run on diagonals. One: dangle on your left, pull the puck diagonally to the front, dangle there, and take it back. Two: the same from your right. Three: link them, left, front, right, front, and back to the left, without stopping.`,
+    desc: `${SEEN} Three spots: beside your left foot, in front of you further forward, and beside your right foot, so the pulls between them run on diagonals. At the side spots the dangle is front to back; in front it is side to side. One: dangle beside your left foot, pull the puck diagonally forwards to in front of you, dangle there, and take it back along the same line. Two: the same from beside your right foot. Three: link them, left, front, right, front, and back to the left, without stopping.`,
   });
-  const Lp = [3.8, 7.4], F = [11, 3.7], Rp = [18.2, 7.4];
+  const Py = 8.4, Lp = [7.4, Py], F = [11, 3.3], Rp = [14.6, Py];
+  // Out and back along one straight line, drawn as two close parallel arrows.
   const seg = (P, Q) => {
-    const ux = Q[0] - P[0], uy = Q[1] - P[1], n = Math.hypot(ux, uy), k = 1.5 / n;
-    path(d, `M ${P[0] + ux * k} ${P[1] + uy * k} L ${Q[0] - ux * k} ${Q[1] - uy * k}`, { both: true });
+    const ux = Q[0] - P[0], uy = Q[1] - P[1], n = Math.hypot(ux, uy), k0 = 1.55 / n, k1 = 1.35 / n;
+    const ox = (-uy / n) * 0.25, oy = (ux / n) * 0.25;
+    const A = [P[0] + ux * k0, P[1] + uy * k0], B = [Q[0] - ux * k1, Q[1] - uy * k1];
+    path(d, `M ${A[0] + ox} ${A[1] + oy} L ${B[0] + ox} ${B[1] + oy}`);
+    path(d, `M ${B[0] - ox} ${B[1] - oy} L ${A[0] - ox} ${A[1] - oy}`);
   };
   seg(Lp, F); seg(Rp, F);
-  dangle(d, ...Lp, { w: 2.2 }); puck(d, ...Lp);
+  dangle(d, ...Lp, { angle: 90 }); puck(d, ...Lp);
   dangle(d, ...F, { w: 2.2 }); puck(d, ...F, { ghost: true });
-  dangle(d, ...Rp, { w: 2.2 }); puck(d, ...Rp, { ghost: true });
-  player(d, 11, 10.4);
+  dangle(d, ...Rp, { angle: 90 }); puck(d, ...Rp, { ghost: true });
+  player(d, 11, Py);
   stepLab(d, 1.2, 9.3, 1, ['left to front,', 'and back']);
   stepLab(d, 20.8, 9.3, 2, ['right to front,', 'and back'], { end: true });
   stepLab(d, 4.4, 1.1, 3, ['then link: left, front, right, front, left']);
-  return finish(d, [...base, key.ghost(), key.path(), key.dangle()]);
+  return finish(d, [...base, key.ghost(), key.path(), dangleFB('dangle, front to back'), [...key.dangle().slice(0, 2), 'dangle, side to side']]);
 })();
 
 // ------------------------------------------------------------------ 7. V-shape
@@ -480,24 +488,24 @@ const drills = [
   {
     id: 'office-stick-dangle-pull', group: GROUP, title: 'Dangle and pull across', svg: danglePull,
     card: card('Carrying the puck from one side of your body to the other under control.', [
-      'Dangle on your left.',
-      'Pull the puck across in front of you and dangle on your right.',
+      'Dangle out wide on your left.',
+      'Pull the puck across in front of you and dangle out wide on your right.',
       'Pull it back across and keep going.',
     ], 'A pull that stops in front of your feet instead of reaching the other side.'),
   },
   {
     id: 'office-stick-snap-back', group: GROUP, title: 'Pull across and snap back', svg: snapBack,
     card: card('A quick change of direction.', [
-      'Dangle on your left.',
+      'Dangle out wide on your left.',
       'Pull the puck across to your right, then snap it straight back to your left.',
-      'Keep going, then start on your right and snap back to the right.',
+      'Keep going, then start out wide on your right and snap back to the right.',
     ], 'Leaving your weight on one leg, so the snap back comes from the arms alone.'),
   },
   {
     id: 'office-stick-diagonal-pulls', group: GROUP, title: 'Diagonal pulls', svg: diagonal,
     card: card('Moving the puck on a diagonal, not only side to side.', [
-      'Dangle on your left, pull the puck diagonally to in front of you, dangle there, and take it back.',
-      'Do the same from your right.',
+      'Dangle front to back beside your left foot. Pull the puck diagonally forwards to in front of you, dangle there, and take it back.',
+      'Do the same from beside your right foot.',
       'Then link them: left, front, right, front, and back to the left, without stopping.',
     ], 'A steady left-right rhythm, which a defender can read.'),
   },
