@@ -313,8 +313,12 @@ jobs:
             PATHS+=("/")
           fi
 
-          if [ ${#PATHS[@]} -gt 300 ]; then
-            echo "::warning::${#PATHS[@]} HTML paths changed — invalidating /* instead, which is cheaper than 300 individual paths."
+          # Any more than two paths: one "/*" instead. A wildcard bills as one path, and
+          # ~400 deploys a month must stay inside the 1,000 free paths; per-page lists
+          # (~62 a deploy) cost $113 in October 2026. "/*" also evicts /audio/, but a
+          # refetch from S3 to CloudFront carries no transfer charge.
+          if [ ${#PATHS[@]} -gt 2 ]; then
+            echo "${#PATHS[@]} paths changed — invalidating /* as a single path." >> "$GITHUB_STEP_SUMMARY"
             PATHS=("/*")
           fi
 
