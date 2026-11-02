@@ -267,9 +267,10 @@ export default [
       steps: [
         'Glide forward on your right foot, knee bent, left foot lifted.',
         'Crouch and touch the right skate with your hand, keeping your head up.',
-        'As you stand back up, jump onto your left foot and land on a bent knee. Small jumps first.',
+        'As you stand back up, jump onto your left foot and land on a bent knee.',
         'Glide, crouch and touch the left skate, and jump back onto the right as you stand up. Keep it going, one jump after another.',
       ],
+      progression: ['Small jumps.', 'Bigger jumps, once you land each one on a bent knee.'],
       mistake: 'Looking down at the skate to touch it, so the head drops and the balance goes with it.',
       check: 'Open point: no coaching source found that describes this exact drill. The IIHF practice manuals have the parts (one-foot glides, a squat touching the heels with the hands, one-foot jumps) but not the touch-then-jump combination. Confirm the touch comes before the jump, not on landing.',
     },
@@ -365,11 +366,12 @@ export default [
     card: {
       trains: 'Holding an outside edge round a curve, the edge the inside foot pushes from, under the body, in a crossover.',
       steps: [
-        'Start where the two circles meet and push onto your right foot.',
+        'Go slowly, on big circles. Start where the two circles meet and push onto your right foot.',
         'Skate the whole right-hand circle on the right outside edge, curving to your right. Do not change edge.',
         'Back in the middle, change feet and push onto your left foot.',
         'Skate the whole left-hand circle on the left outside edge, curving to your left, back to the middle.',
       ],
+      progression: ['Slowly, on big circles.', 'Tighten the circles as the edge holds.'],
       mistake: 'Dropping onto the inside edge or putting the free foot down when the lean feels too far.',
       check: 'Read as forward skating, one foot per circle, each on its outside edge for the whole curve. The outside edge is harder to hold on a small circle, so the circle may need to be a bit bigger at first. A backward version is possible; I drew forwards only.',
     },

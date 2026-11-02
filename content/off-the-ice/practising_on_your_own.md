@@ -131,11 +131,17 @@ These drills are coaching craft, not a tested programme. Within each group they 
 
 **Trains:** trusting a deep outside edge at speed, which lets you carve a wide turn without slowing.
 
-1. Glide on your right foot and lean over onto its outside edge, so you carve a big arc to your right.
+1. Start slowly, on wide arcs. Glide on your right foot and lean over onto its outside edge, so you carve a big arc to your right.
 2. At the end of the arc, set your left foot down beside the right (do not cross) and lean over onto its outside edge, carving a big arc to your left.
-3. Keep switching feet. Start slowly on wide arcs and lean further only as the edge holds. Glide, do not step. Once it holds, go as hard and as confidently as you can.
+3. Keep switching feet. Glide, do not step.
 
 ![](drill:one-foot-outside-edge-forward-lean-glide)
+
+**Progression:**
+
+1. Slowly, on wide arcs.
+2. Lean further, but only as the edge holds.
+3. Once it holds, as hard and as confidently as you can.
 
 **Common mistake:** leaning only the upper body while the blade stays flat, so you tip over instead of curving.
 
@@ -143,13 +149,17 @@ These drills are coaching craft, not a tested programme. Within each group they 
 
 **Trains:** holding an outside edge round a curve, the edge the inside foot pushes from, under the body, in a crossover.
 
-1. Start where the two circles meet and push onto your right foot.
+1. Go slowly, on big circles. Start where the two circles meet and push onto your right foot.
 2. Skate the whole right-hand circle on the right outside edge, curving to your right. Do not change edge.
 3. Back in the middle, change feet and push onto your left foot.
 4. Skate the whole left-hand circle on the left outside edge, curving to your left, back to the middle.
-5. Start slowly, with bigger circles at first, and tighten them as the edge holds.
 
 ![](drill:small-figure-8-outside-edge)
+
+**Progression:**
+
+1. Slowly, on big circles.
+2. Tighten the circles as the edge holds.
 
 **Common mistake:** dropping onto the inside edge, or putting the free foot down, when the lean feels too far.
 
@@ -265,10 +275,15 @@ Jumps go on a clear patch only. Land on a bent knee every time, and start with s
 
 1. On a clear patch, glide forward on your right foot, knee bent, left foot lifted.
 2. Crouch and touch the right skate with your hand, keeping your head up.
-3. As you stand back up, jump onto your left foot and land on a bent knee. Small jumps first.
+3. As you stand back up, jump onto your left foot and land on a bent knee.
 4. Glide, crouch and touch the left skate, and jump back onto the right as you stand up. Keep it going, one jump after another.
 
 ![](drill:one-foot-jump-to-other-foot)
+
+**Progression:**
+
+1. Small jumps.
+2. Bigger jumps, once you land each one on a bent knee.
 
 **Common mistake:** looking down at the skate to touch it, so your head drops and your balance goes with it.
 
@@ -309,10 +324,15 @@ A **mohawk** here is the open-hip, heel-to-heel position: toes pointing opposite
 1. Set up heel-to-heel as in the plain mohawk, right foot leading.
 2. Look along your path, then glide on a curve across towards one side of your lane. As you glide, keep your weight a little more back than forward, on the back half of the blades, chest up; lean back past your heels and you tip over.
 3. At the side, turn your shoulders into the new direction first, so your legs load under you.
-4. Then jump from skate to skate: land on the left foot, knee bent, pointing the new way, and bring the right in behind it, heels in line. Push off the ice into the jump; that is where the power comes from. Learn the switch as two quick steps first, then add the jump.
+4. Then jump from skate to skate, once you can do the switch as two quick steps: land on the left foot, knee bent, pointing the new way, and bring the right in behind it, heels in line. Push off the ice into the jump; that is where the power comes from.
 5. Curve back across with the left foot leading, and turn and jump again at the other side.
 
 ![](drill:stepping-mohawk-side-to-side)
+
+**Progression:**
+
+1. Switch as two quick steps.
+2. Add the jump.
 
 **Common mistake:** switching with the feet only, shoulders still. It works, but there is no load in the legs and no power out of the ice.
 
@@ -377,15 +397,20 @@ Only on a clear patch, and never in a busy session.
 
 **Trains:** crossover confidence. It can be done very slowly, so you learn to put the crossing foot down and push under before you need to do it at speed.
 
-1. Face up the ice, knees bent. You will zig-zag up the ice, slightly forwards and sideways each way.
+1. Start slowly. Face up the ice, knees bent. You will zig-zag up the ice, slightly forwards and sideways each way.
 2. Moving diagonally forwards and to your right, cross the left foot over in front of the right, toe down first, then step the right foot out from behind.
 3. Do that twice, then stop on the inside edge of the right (leading) foot.
 4. Now go diagonally forwards and to your left: cross the right foot over in front of the left, twice.
-5. Stop on the inside edge of the left foot. Keep zig-zagging up the ice, slowly at first.
+5. Stop on the inside edge of the left foot. Keep zig-zagging up the ice.
 
 ![](drill:forward-crossover-steps-stop)
 
-**Common mistake:** rushing it. The drill is worth most done slowly, with each crossing foot placed deliberately.
+**Progression:**
+
+1. Slowly, placing each crossing foot.
+2. A little faster, still placing each crossing foot.
+
+**Common mistake:** rushing it before each crossing foot lands cleanly.
 
 #### Crossing-under lemons forwards
 
@@ -394,9 +419,14 @@ Only on a clear patch, and never in a busy session.
 1. Start with heels together and toes turned out, knees bent, astride a line.
 2. Push both feet out on the inside edges.
 3. As they come back in, roll the feet onto the outside edges so both edges are used, and let the feet cross completely under your body.
-4. Push out again from the crossed position. Do small lemons first, then wide ones.
+4. Push out again from the crossed position.
 
 ![](drill:crossing-under-lemons-forwards)
+
+**Progression:**
+
+1. Small lemons.
+2. Wide lemons.
 
 **Common mistake:** stopping the feet at the middle on the inside edges, so they never roll over and never cross.
 
@@ -407,9 +437,14 @@ Only on a clear patch, and never in a busy session.
 1. Start with toes together and heels apart, knees bent, astride a line, with clear ice behind you.
 2. Push both heels out on the inside edges.
 3. As they come back in, roll onto the outside edges so both edges are used, and let the feet cross completely under your body.
-4. Push out again from the crossed position. Small lemons first, then wide ones.
+4. Push out again from the crossed position.
 
 ![](drill:crossing-under-lemons-backwards)
+
+**Progression:**
+
+1. Small lemons.
+2. Wide lemons.
 
 **Common mistake:** leaning forward over the toes, which stops the heels pushing out and the feet crossing.
 
@@ -417,13 +452,18 @@ Only on a clear patch, and never in a busy session.
 
 **Trains:** moving backwards and sideways with speed and then stopping, the way a defenceman follows a rush and then holds their ground.
 
-1. Check behind you, then skate backwards down the ice, knees bent. You will zig-zag, slightly backwards and sideways each way.
+1. Check behind you, then start slowly: skate backwards down the ice, knees bent. You will zig-zag, slightly backwards and sideways each way.
 2. Moving diagonally backwards and to your right, cross the left foot over in front of the right, then step the right foot out from behind.
 3. Do that two or three times, then push both heels out, toes turned in, and stop on both feet.
 4. Now go diagonally backwards and to your left: cross the right foot over in front of the left, two or three times, and stop again.
-5. Keep zig-zagging down the ice, slowly at first.
+5. Keep zig-zagging down the ice.
 
 ![](drill:backward-crossover-steps-stop)
+
+**Progression:**
+
+1. Slowly, placing each crossing foot.
+2. A little faster, still placing each crossing foot.
 
 **Common mistake:** looking down at your feet, which tips you forward onto your toes and kills the crossovers.
 
@@ -595,9 +635,11 @@ A punch turn drops you onto the outside edge of your inside foot and out of the 
 1. Skate forward slowly, knees bent, with clear ice ahead of you.
 2. Turn your left foot out so it points across your path, and lean back onto its outside edge.
 3. Put your right foot down behind it in a T, as in a T-stop. It is your safety, there to catch you.
-4. Glide to a stop, then do it with the right foot. Start slow and add speed as you trust the edge.
+4. Glide to a stop, then do it with the right foot.
 
 ![](drill:turns-punch-step-1)
+
+**Progression:** add speed as you trust the edge.
 
 **Common mistake:** easing onto the edge a little at a time instead of committing to it.
 
@@ -608,9 +650,11 @@ A punch turn drops you onto the outside edge of your inside foot and out of the 
 1. Skate forward slowly, knees bent, with clear ice ahead of you.
 2. Jump onto your left foot turned out across your path. Land on its outside edge with a bent knee and dig in.
 3. Keep your right foot just off the ice behind you, ready to touch down if you need it.
-4. Do it both ways, and add speed only when it feels solid.
+4. Do it both ways.
 
 ![](drill:turns-punch-step-2)
+
+**Progression:** add speed only when it feels solid.
 
 **Common mistake:** putting the back foot straight down out of habit, so you never learn to trust the edge.
 
@@ -797,6 +841,7 @@ Once you have all four, a good routine: head up with both hands, then top hand o
 1. Eyes on the puck, to learn the movement.
 2. Head up.
 3. Head up, top hand only.
+4. Eyes closed, both hands.
 
 **Common mistake:** still looking down at the puck once you know the movement.
 
@@ -814,6 +859,7 @@ Once you have all four, a good routine: head up with both hands, then top hand o
 1. Eyes on the puck, to learn the movement.
 2. Head up.
 3. Head up, top hand only.
+4. Eyes closed, both hands.
 
 **Common mistake:** still looking down at the puck once you know the movement.
 
@@ -941,7 +987,7 @@ Once you have all four, a good routine: head up with both hands, then top hand o
 
 ![](drill:office-stick-walking-slalom)
 
-**Variations:** do it with the markers on your left, then on your right, stepping clear of them.
+**Variations:** markers on your left, then on your right, stepping clear of them, forwards and then backwards. Check the floor behind you before you walk back.
 
 **Common mistake:** watching the puck instead of looking ahead to the next marker.
 

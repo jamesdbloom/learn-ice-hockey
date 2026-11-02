@@ -155,7 +155,7 @@
     "id": "office-stick-dangle-left",
     "title": "Dangles on your left",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck beside you on your left, level with your left foot, knees bent. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck beside you on your left, level with your left foot, knees bent. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only; then eyes closed, both hands.",
     "svg": "/drills/office-stick-dangle-left.svg",
     "file": "07_off_ice_stick.mjs"
   },
@@ -171,7 +171,7 @@
     "id": "office-stick-dangle-right",
     "title": "Dangles on your right",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck beside you on your right, level with your right foot, knees bent. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. One: the puck beside you on your right, level with your right foot, knees bent. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only; then eyes closed, both hands.",
     "svg": "/drills/office-stick-dangle-right.svg",
     "file": "07_off_ice_stick.mjs"
   },
@@ -243,7 +243,7 @@
     "id": "office-stick-walking-slalom",
     "title": "Walking slalom",
     "group": "Off-ice stick work",
-    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you, flat because you walk over them; two, walk slowly forwards along the line with the markers passing between your feet, pulling the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve; three, check the floor behind you is clear, then walk back along the line backwards, still zig-zagging. Right picture, a variation: the same with the markers on your left, stepping clear of them, then with them on your right.",
+    "alt": "Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above. Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you, flat because you walk over them; two, walk slowly forwards along the line with the markers passing between your feet, pulling the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve; three, check the floor behind you is clear, then walk back along the line backwards, still zig-zagging. Right picture, a variation: the same with the markers on your left, stepping clear of them, then with them on your right; drawn walking forwards; do it backwards too, checking the floor behind you first.",
     "svg": "/drills/office-stick-walking-slalom.svg",
     "file": "07_off_ice_stick.mjs"
   },

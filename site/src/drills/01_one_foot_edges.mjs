@@ -363,10 +363,11 @@ export default [
     card: {
       trains: 'Trusting a deep outside edge at speed, which is what lets a skater carve a wide turn without slowing.',
       steps: [
-        'Glide on your right foot and lean over onto its outside edge, so you carve a big arc to your right.',
+        'Start slowly, on wide arcs. Glide on your right foot and lean over onto its outside edge, so you carve a big arc to your right.',
         'At the end of the arc, set your left foot down beside the right (do not cross) and lean over onto its outside edge, carving a big arc to your left.',
-        'Keep switching feet, leaning further each time. Glide, do not step. Go as hard and as confidently as you can.',
+        'Keep switching feet. Glide, do not step.',
       ],
+      progression: ['Slowly, on wide arcs.', 'Lean further, but only as the edge holds.', 'Once it holds, as hard and as confidently as you can.'],
       mistake: 'Leaning only the upper body while the blade stays flat, so the skater tips over instead of curving.',
       check: 'Read as alternating feet, one big arc per foot, the new foot placed beside the old one rather than crossed over it.',
     },

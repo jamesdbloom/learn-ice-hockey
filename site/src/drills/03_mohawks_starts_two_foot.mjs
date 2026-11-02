@@ -309,8 +309,10 @@ const lemons = (back, cross) => {
     d.tag(20.0, Y - 1.25, 'OUT', top);
     d.tag(20.0, Y + 1.25, 'OUT', bot);
     d.text(6.0, Y + 2.7, 'feet cross under', { size: 0.42 });
-    d.text(3.9, 9.1, 'small', { size: 0.44 });
-    d.text(21.3, 9.4, 'wide, roll onto the outside edges to cross', { size: 0.42, anchor: 'end' });
+    // The card's progression: small lemons, then wide ones. Rolling and crossing is step 3 for both.
+    d.text(0.8, 9.3, 'progression:', { size: 0.44, anchor: 'start', weight: 600, color: COL.ink });
+    d.text(4.7, 9.3, 'small', { size: 0.44, anchor: 'start' });
+    d.text(13.0, 9.3, 'wide', { size: 0.44 });
   } else {
     d.tag(4.05, Y - 1.85, 'IN', top);
     d.tag(4.05, Y + 1.85, 'IN', bot);
@@ -332,7 +334,7 @@ const lemons = (back, cross) => {
   d.step(1.0, 7.4, 1);
   d.step(cross ? 4.2 : 4.05, cross ? 2.6 : 2.7, 2);
   d.step(cross ? 6.0 : 6.5, cross ? 7.0 : 7.7, 3);
-  if (cross) d.step(10.0, 2.4, 4);
+  if (cross) d.step(7.7, 2.6, 4);
   if (back) d.text(19.0, 1.0, 'backwards', { size: 0.46 });
   d.travel(15, 10.3, 20.5, 10.3);
   return d.svg();
@@ -367,9 +369,10 @@ export default [
         'Set up heel-to-heel as in the plain mohawk, right foot leading.',
         'Look along your path, then glide on a curve across towards one side of your lane. As you glide, keep your weight a little more back than forward, on the back half of the blades, chest up; lean back past your heels and you tip over.',
         'At the side, turn your shoulders into the new direction first, so your legs load under you.',
-        'Then jump from skate to skate: land on the left foot, knee bent, pointing the new way, and bring the right in behind it, heels in line. Push off the ice into the jump; that is where the power comes from. Learn the switch as two quick steps first, then add the jump.',
+        'Then jump from skate to skate, once you can do the switch as two quick steps: land on the left foot, knee bent, pointing the new way, and bring the right in behind it, heels in line. Push off the ice into the jump; that is where the power comes from.',
         'Curve back across with the left foot leading, and turn and jump again at the other side.',
       ],
+      progression: ['Switch as two quick steps.', 'Add the jump.'],
       mistake: 'Switching with the feet only, shoulders still. It works, but there is no load in the legs and no power out of the ice.',
       check: 'Redrawn from the video you sent (Hockey Tutorial, "Master The Elite Mohawk Turn", 13:30-14:01): the coach adds "a shoulder motion jumping from skate to skate" so you load the legs and get "more weight into the blade". The switch is now shoulders first, then a jump onto the new lead foot, instead of two steps with both feet on the ice. Your note that the coach shifts the weight "more backwards than forward" is now in step 2, for the glide across the lane, as a controlled bias: the back half of the blades, chest up, not leaning past the heels. The drawing does not show weight, so it is unchanged.',
     },
@@ -417,13 +420,14 @@ export default [
     card: {
       trains: 'Crossover confidence: it can be done very slowly, so you learn to put the crossing foot down and push under before you need to do it at speed.',
       steps: [
-        'Face up the ice, knees bent. You will zig-zag up the ice, slightly forwards and sideways each way.',
+        'Start slowly. Face up the ice, knees bent. You will zig-zag up the ice, slightly forwards and sideways each way.',
         'Moving diagonally forwards and to your right, cross the left foot over in front of the right, toe down first, then step the right foot out from behind.',
         'Do that twice, then stop on the inside edge of the right (leading) foot.',
         'Now go diagonally forwards and to your left: cross the right foot over in front of the left, twice.',
-        'Stop on the inside edge of the left foot. Keep zig-zagging up the ice, slowly at first.',
+        'Stop on the inside edge of the left foot. Keep zig-zagging up the ice.',
       ],
-      mistake: 'Rushing it: the drill is worth most done slowly, with each crossing foot placed deliberately.',
+      progression: ['Slowly, placing each crossing foot.', 'A little faster, still placing each crossing foot.'],
+      mistake: 'Rushing it before each crossing foot lands cleanly.',
       check: 'Redrawn to your description: two crossover steps slightly diagonally forwards and sideways, a stop, then two the other way, so the path zig-zags up the ice. "Toe down first" I read as setting the crossing foot down on the front of the blade first; tell me if it means something else.',
     },
   },
@@ -435,12 +439,13 @@ export default [
     card: {
       trains: 'Moving backwards and sideways with speed and then stopping, the way a defenceman follows a rush and then holds their ground.',
       steps: [
-        'Skate backwards down the ice, knees bent. You will zig-zag, slightly backwards and sideways each way.',
+        'Check behind you, then start slowly: skate backwards down the ice, knees bent. You will zig-zag, slightly backwards and sideways each way.',
         'Moving diagonally backwards and to your right, cross the left foot over in front of the right, then step the right foot out from behind.',
         'Do that two or three times, then push both heels out, toes turned in, and stop on both feet.',
         'Now go diagonally backwards and to your left: cross the right foot over in front of the left, two or three times, and stop again.',
-        'Keep zig-zagging down the ice, slowly at first.',
+        'Keep zig-zagging down the ice.',
       ],
+      progression: ['Slowly, placing each crossing foot.', 'A little faster, still placing each crossing foot.'],
       mistake: 'Looking down at your feet, which tips you forward onto your toes and kills the crossovers.',
       check: 'Redrawn to match the forward drill: crossover steps slightly diagonally backwards and sideways, a stop, then the other way, so the path zig-zags down the ice. Two steps are drawn each way; the name allows three. The name does not say which stop. I drew a two-foot backward V-stop (heels pushed out, toes in). If you mean turning into a forward hockey stop, or a one-foot backward stop, the stop changes.',
     },
@@ -488,8 +493,9 @@ export default [
         'Start with heels together and toes turned out, knees bent, astride a line.',
         'Push both feet out on the inside edges.',
         'As they come back in, roll the feet onto the outside edges so both edges are used, and let the feet cross completely under your body.',
-        'Push out again from the crossed position. Do small lemons first, then wide ones.',
+        'Push out again from the crossed position.',
       ],
+      progression: ['Small lemons.', 'Wide lemons.'],
       mistake: 'Stopping the feet at the middle on the inside edges, so they never roll over and never cross.',
       check: '"Feet together then wide gap" still read as small lemons first, then wide ones. Open point: I found no coaching source that uses the name "crossing under lemons". The nearest drill I found, the criss-cross in slalom skating, does have the feet cross, but one foot passes in front of the other rather than both meeting on the line as drawn. Which foot goes in front, and does it swap each time?',
     },
@@ -505,8 +511,9 @@ export default [
         'Start with toes together and heels apart, knees bent, astride a line.',
         'Push both heels out on the inside edges.',
         'As they come back in, roll onto the outside edges so both edges are used, and let the feet cross completely under your body.',
-        'Push out again from the crossed position. Small lemons first, then wide ones.',
+        'Push out again from the crossed position.',
       ],
+      progression: ['Small lemons.', 'Wide lemons.'],
       mistake: 'Leaning forward over the toes, which stops the heels pushing out and the feet crossing.',
       check: 'Same reading and the same open point as the forward version: no source found for the name, and the drawing does not yet show which foot passes in front when they cross. The start, toes together and heels apart, matches Learn to Skate USA backward swizzles.',
     },

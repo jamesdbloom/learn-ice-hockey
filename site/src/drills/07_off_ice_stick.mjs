@@ -58,7 +58,7 @@ const sideDangle = (s) => {
   const d = diagram({
     title: `Dangles on your ${side}`,
     w: 22, h: H,
-    desc: `${SEEN} One: the puck beside you on your ${side}, level with your ${side} foot, knees bent. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only.`,
+    desc: `${SEEN} One: the puck beside you on your ${side}, level with your ${side} foot, knees bent. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only; then eyes closed, both hands.`,
   });
   const P = [11 + s * 3.6, 8.4];
   dangle(d, ...P, { angle: 90 }); puck(d, ...P);
@@ -68,7 +68,8 @@ const sideDangle = (s) => {
   const x = s < 0 ? 0.9 : 21.1, end = s > 0;
   stepLab(d, x, 1.3, 1, [`level with your ${side} foot,`, 'knees bent'], { end });
   stepLab(d, x, 3.2, 2, ['forwards and backwards,', 'shifting your weight'], { end });
-  progLab(d, x, 9.4, ['progression:', 'eyes on the puck,', 'head up,', 'head up, top hand only'], { end });
+  // The progression goes in the empty top corner on the far side from the puck.
+  progLab(d, s < 0 ? 21.1 : 0.9, 1.3, ['progression:', 'eyes on the puck,', 'head up,', 'head up, top hand only,', 'eyes closed, both hands'], { end: s < 0 });
   return finish(d, [...base, dangleFB()]);
 };
 const dangleLeft = sideDangle(-1);
@@ -331,7 +332,7 @@ const slalom = (() => {
   const d = diagram({
     title: 'Walking slalom',
     w: 22, h: H,
-    desc: `${SEEN} Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you, flat because you walk over them; two, walk slowly forwards along the line with the markers passing between your feet, pulling the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve; three, check the floor behind you is clear, then walk back along the line backwards, still zig-zagging. Right picture, a variation: the same with the markers on your left, stepping clear of them, then with them on your right.`,
+    desc: `${SEEN} Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you, flat because you walk over them; two, walk slowly forwards along the line with the markers passing between your feet, pulling the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve; three, check the floor behind you is clear, then walk back along the line backwards, still zig-zagging. Right picture, a variation: the same with the markers on your left, stepping clear of them, then with them on your right; drawn walking forwards; do it backwards too, checking the floor behind you first.`,
   });
   divider(d, 11, 0.4, 11, H - 0.4);
   const ys = [3.6, 5.6, 7.6];
@@ -432,6 +433,7 @@ const drills = [
         'Eyes on the puck, to learn the movement.',
         'Head up.',
         'Head up, top hand only.',
+        'Eyes closed, both hands.',
       ],
     }),
   },
@@ -445,6 +447,7 @@ const drills = [
         'Eyes on the puck, to learn the movement.',
         'Head up.',
         'Head up, top hand only.',
+        'Eyes closed, both hands.',
       ],
     }),
   },
@@ -532,8 +535,8 @@ const drills = [
       'Walk slowly forwards along the line as the markers pass between your legs. Pull the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve.',
       'Check the floor behind you is clear, then walk back along the line backwards, still zig-zagging.',
     ], 'Watching the puck instead of looking ahead to the next marker.',
-    'The variation is drawn with the markers on your left only; the label says "then your right".', {
-      variations: 'Do it with the markers on your left, then on your right, stepping clear of them.',
+    'The variation is drawn with the markers on your left only, walking forwards only; the label says "then your right", and the card adds walking back backwards, which is not drawn.', {
+      variations: 'Markers on your left, then on your right, stepping clear of them, forwards and then backwards. Check the floor behind you before you walk back.',
     }),
   },
   {
