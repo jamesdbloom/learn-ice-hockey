@@ -4,15 +4,16 @@
 // Conventions, so a reviewer can check the geometry:
 //   - Seen from ABOVE. You stand at the bottom of each panel facing UP the page, so your left is
 //     the reader's left. Clockwise means clockwise as the reader sees it from above.
-//   - Circled numbers are the card's step numbers.
+//   - Circled numbers are the card's step numbers, always. A card's Progression or Variations is
+//     labelled in words without a circle.
 //   - A figure of 8 is drawn twice, once in each direction: clockwise round the right-hand (or far)
 //     marker, which by its shape takes the other loop anticlockwise, and then the whole 8 run the
 //     other way. Each picture is named by its direction round ONE named marker, never by the
 //     second loop on its own (the pilot labelled that loop anticlockwise, and it was wrong).
-//   - Two cards need a handedness the card does not give (Toe drag, Shooting off a pad). Both are
-//     drawn for a RIGHT-handed shot (blade on the right side, forehand on the right) and say so.
+//   - One card needs a handedness the card does not give (Rebounder passing). It is drawn on the
+//     forehand of a RIGHT-handed shot (blade on the right side) and says so.
 import { COL } from './lib/draw.mjs';
-import { diagram, player, puck, marker, blade, path, dangle, stopBar, divider, shoe, finish, key } from './lib/office_stick.mjs';
+import { diagram, player, puck, marker, blade, path, dangle, stopBar, divider, finish, key } from './lib/office_stick.mjs';
 
 const GROUP = 'Off-ice stick work';
 const SEEN = 'Seen from above, you at the bottom facing up the page: left and right are yours, and clockwise is as seen from above.';
@@ -20,6 +21,10 @@ const H = 12.6;
 const lab = (d, x, y, s, o = {}) => d.text(x, y, s, { size: 0.42, anchor: 'start', weight: 600, color: COL.ink, ...o });
 const note = (d, x, y, s, o = {}) => d.text(x, y, s, { size: 0.4, anchor: 'start', ...o });
 // A step badge with a label to its right (or left, with anchor 'end').
+// progLab: the same layout with no badge, for a card's Progression (not one of its steps).
+const progLab = (d, x, y, lines, { end = false } = {}) => {
+  lines.forEach((s, i) => lab(d, end ? x - 0.65 : x + 0.65, y + 0.2 + i * 0.68, s, { anchor: end ? 'end' : 'start', weight: i ? 400 : 600, color: i ? COL.muted : COL.ink }));
+};
 const stepLab = (d, x, y, n, lines, { end = false } = {}) => {
   d.step(x, y, n);
   lines.forEach((s, i) => lab(d, end ? x - 0.65 : x + 0.65, y + 0.2 + i * 0.68, s, { anchor: end ? 'end' : 'start', weight: i ? 400 : 600, color: i ? COL.muted : COL.ink }));
@@ -28,28 +33,21 @@ const base = [key.shoe('L'), key.shoe('R'), key.puck()];
 // Legend glyph for a front-to-back dangle (the kit's dangle key is side to side).
 const dangleFB = (label = 'dangle') => [0.6, (x, y) => `<line x1="${u(x + 0.3)}" y1="${u(y - 0.38)}" x2="${u(x + 0.3)}" y2="${u(y + 0.38)}" stroke="${COL.ink}" stroke-width="2.4" marker-start="url(#ah-ink)" marker-end="url(#ah-ink)"/>`, label];
 const u = (n) => Math.round(n * 30 * 10) / 10;
-// Wall passing: the spot you pass at (solid ring), and other spots for other angles (dashed ring).
-const spot = (d, x, y, { other = false } = {}) => d.raw(`<circle cx="${u(x)}" cy="${u(y)}" r="${u(0.35)}" fill="none" stroke="${COL.ink}" stroke-width="${other ? 2 : 2.5}"${other ? ' stroke-dasharray="4 3"' : ''}/>`);
-const spotKey = (other = false) => [0.6, (x, y) => `<circle cx="${u(x + 0.3)}" cy="${u(y)}" r="${u(0.24)}" fill="none" stroke="${COL.ink}" stroke-width="${other ? 2 : 2.5}"${other ? ' stroke-dasharray="4 3"' : ''}/>`, other ? 'other spots' : 'spot on the wall'];
-// Shooting off a pad: the area to check, and the goal line.
-const checkKey = [1.1, (x, y) => `<line x1="${u(x)}" y1="${u(y)}" x2="${u(x + 1.1)}" y2="${u(y)}" stroke="${COL.ink}" stroke-width="2" stroke-dasharray="6 5"/>`, 'check this area'];
-const goalKey = [1.1, (x, y) => `<line x1="${u(x)}" y1="${u(y)}" x2="${u(x + 1.1)}" y2="${u(y)}" stroke="#c33" stroke-width="5" stroke-opacity="0.7"/>`, 'goal line'];
-
 // ------------------------------------------------------------------ 1. Dangles in front
 const dangles = (() => {
   const d = diagram({
     title: 'Dangles in front',
     w: 22, h: H,
-    desc: `${SEEN} One: stand with knees bent, the puck in front of you, looking up. Two: dangle the puck side to side in front of you, shifting your weight in your legs as it moves. Three: then with your top hand only. Four: then with your eyes closed.`,
+    desc: `${SEEN} One: stand with knees bent, the puck in front of you. Two: dangle the puck side to side in front of you, shifting your weight in your legs as it moves. Three: roll your wrists so the blade stays closed, tilted over the top of the puck, on the forehand and the backhand, and dangle as quietly as you can. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only; then eyes closed, both hands.`,
   });
   const F = [11, 5.9];
   dangle(d, ...F); puck(d, ...F);
   blade(d, F[0] - 0.62, F[1], -90, 11.6, 8.5);
   player(d, 11, 10.4);
-  stepLab(d, 1.2, 10.3, 1, ['knees bent,', 'look up']);
+  stepLab(d, 1.2, 10.3, 1, ['knees bent,', 'puck in front']);
   stepLab(d, 4.6, 1.3, 2, ['side to side in front,', 'shifting your weight']);
-  stepLab(d, 14.6, 4.6, 3, ['top hand only']);
-  stepLab(d, 14.6, 6.0, 4, ['eyes closed']);
+  stepLab(d, 1.2, 7.4, 3, ['blade closed both ways,', 'as quiet as you can']);
+  progLab(d, 13.6, 3.9, ['progression:', 'eyes on the puck,', 'head up,', 'head up, top hand only,', 'eyes closed, both hands']);
   return finish(d, [...base, key.dangle()]);
 })();
 
@@ -60,7 +58,7 @@ const sideDangle = (s) => {
   const d = diagram({
     title: `Dangles on your ${side}`,
     w: 22, h: H,
-    desc: `${SEEN} One: the puck beside you on your ${side}, level with your ${side} foot, knees bent and head up. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Three: then with your top hand only.`,
+    desc: `${SEEN} One: the puck beside you on your ${side}, level with your ${side} foot, knees bent. Two: dangle it forwards and backwards along your side, shifting your weight in your legs as it moves. Progression: eyes on the puck, to learn the movement; then head up; then head up, top hand only.`,
   });
   const P = [11 + s * 3.6, 8.4];
   dangle(d, ...P, { angle: 90 }); puck(d, ...P);
@@ -68,39 +66,13 @@ const sideDangle = (s) => {
   blade(d, P[0] + s * 0.25, P[1] - 0.62, 0, 11 + s * 2.7, 5.4, { len: 1.7 });
   player(d, 11, 8.4);
   const x = s < 0 ? 0.9 : 21.1, end = s > 0;
-  stepLab(d, x, 1.3, 1, [`level with your ${side} foot,`, 'head up'], { end });
+  stepLab(d, x, 1.3, 1, [`level with your ${side} foot,`, 'knees bent'], { end });
   stepLab(d, x, 3.2, 2, ['forwards and backwards,', 'shifting your weight'], { end });
-  stepLab(d, x, 5.1, 3, ['top hand only'], { end });
+  progLab(d, x, 9.4, ['progression:', 'eyes on the puck,', 'head up,', 'head up, top hand only'], { end });
   return finish(d, [...base, dangleFB()]);
 };
 const dangleLeft = sideDangle(-1);
 const dangleRight = sideDangle(1);
-
-// ------------------------------------------------------------------ 2. Toe drag in and out
-const toeDrag = (() => {
-  const d = diagram({
-    title: 'Toe drag in and out',
-    w: 22, h: H,
-    desc: `${SEEN} Drawn for a right-handed shot, whose forehand is on the right; a left-handed shot does it on the left. One: push the puck out on your forehand, forwards and to the right. Two: roll the blade over the puck so it is on the far side, and drag the puck back towards your feet with the toe. Three: tighten your grip and roll the blade back to catch it near your feet, then go again.`,
-  });
-  const S = [12.8, 7.6], O = [16.2, 3.7];
-  const ux = O[0] - S[0], uy = O[1] - S[1], un = Math.hypot(ux, uy), nx = -uy / un * 0.45, ny = ux / un * 0.45;
-  path(d, `M ${S[0] - nx + 0.4} ${S[1] - ny - 0.35} L ${O[0] - nx - 0.45} ${O[1] - ny + 0.35}`);
-  path(d, `M ${O[0] + nx - 0.5} ${O[1] + ny + 0.5} Q ${(S[0] + O[0]) / 2 + nx * 3} ${(S[1] + O[1]) / 2 + ny * 3} ${S[0] + nx + 0.45} ${S[1] + ny - 0.2}`);
-  puck(d, ...S, { ghost: true });
-  puck(d, ...O);
-  // Blade rolled over to the FAR side of the puck, square to the pull back to the feet.
-  const ang = (Math.atan2(uy, ux) * 180) / Math.PI + 90;
-  const bc = [O[0] + (ux / un) * 0.8, O[1] + (uy / un) * 0.8];
-  const { toe } = blade(d, bc[0], bc[1], ang, 13.9, 8.6);
-  d.text(toe[0] + 0.25, toe[1] - 0.3, 'toe', { size: 0.42, anchor: 'start', weight: 600, color: COL.ink });
-  player(d, 11, 10.4);
-  stepLab(d, 11.4, 3.2, 1, ['push out on', 'your forehand'], { end: true });
-  stepLab(d, 17.2, 6.4, 2, ['drag it back', 'with the toe']);
-  stepLab(d, 15.4, 9.9, 3, ['catch it,', 'go again']);
-  note(d, 0.8, 1.0, 'drawn for a right-handed shot');
-  return finish(d, [...base, key.ghost(), key.path()]);
-})();
 
 // ------------------------------------------------------------------ 3. Wide pull across
 const widePull = (() => {
@@ -178,7 +150,7 @@ const diagonal = (() => {
   const d = diagram({
     title: 'Diagonal pulls',
     w: 22, h: H,
-    desc: `${SEEN} Three spots: beside your left foot, in front of you further forward, and beside your right foot, so the pulls between them run on diagonals. At the side spots the dangle is front to back; in front it is side to side. One: dangle beside your left foot, pull the puck diagonally forwards to in front of you, dangle there, and take it back along the same line. Two: the same from beside your right foot. Three: link them, left, front, right, front, and back to the left, without stopping.`,
+    desc: `${SEEN} Three spots: beside your left foot, in front of you further forward, and beside your right foot, so the pulls between them run on diagonals. At the side spots the dangle is front to back; in front it is side to side. One: dangle beside your left foot, pull the puck diagonally forwards to in front of you, dangle there, and take it back along the same line. Two: the same from beside your right foot. Progression: link them — left, front, right, front, and back to the left, without stopping.`,
   });
   const Py = 8.4, Lp = [7.4, Py], F = [11, 3.3], Rp = [14.6, Py];
   // Out and back along one straight line, drawn as two close parallel arrows.
@@ -196,7 +168,7 @@ const diagonal = (() => {
   player(d, 11, Py);
   stepLab(d, 1.2, 9.3, 1, ['left to front,', 'and back']);
   stepLab(d, 20.8, 9.3, 2, ['right to front,', 'and back'], { end: true });
-  stepLab(d, 4.4, 1.1, 3, ['then link: left, front, right, front, left']);
+  progLab(d, 4.4, 1.1, ['progression: link them — left, front, right, front, left']);
   return finish(d, [...base, key.ghost(), key.path(), dangleFB('dangle, front to back'), [...key.dangle().slice(0, 2), 'dangle, side to side']]);
 })();
 
@@ -205,7 +177,7 @@ const vShape = (() => {
   const d = diagram({
     title: 'V-shape',
     w: 22, h: H,
-    desc: `${SEEN} The puck traces a V with its point at your feet, drawn starting to the left; either side will do. One: push the puck as far out to one side and forwards as you can reach. Two: pull it right in to your feet, the bottom of the V. Three: push it as far out to the other side and forwards. Four: keep going, sliding your bottom hand to reach.`,
+    desc: `${SEEN} The puck traces a V with its point at your feet, drawn starting to the left; either side will do. Forehand only, never the backhand. One: push the puck as far out to one side and forwards as you can reach. Two: pull it right in to your feet, the bottom of the V. Three: push it as far out to the other side and forwards; on your backhand side, roll your wrists a little and lift the toe of the blade over the puck, as in a toe drag, so the forehand stays on it; that wrist roll is the key part of the drill. Four: keep going, and focus on sliding your bottom hand to reach.`,
   });
   const A = [11, 7.7], Lf = [3.6, 2.7], Rt = [18.4, 2.7];
   const arm = (P, outSide) => {
@@ -225,6 +197,9 @@ const vShape = (() => {
   stepLab(d, 4.2, 7.3, 2, ['right in to', 'your feet']);
   stepLab(d, 20.8, 1.1, 3, ['far out, the other side'], { end: true });
   stepLab(d, 14.6, 9.6, 4, ['keep going, sliding', 'your bottom hand']);
+  lab(d, 0.8, 9.9, 'forehand only:');
+  note(d, 0.8, 10.58, 'on your backhand side, roll');
+  note(d, 0.8, 11.26, 'your wrists and lift the toe');
   return finish(d, [...base, key.ghost(), key.path()]);
 })();
 
@@ -233,7 +208,7 @@ const heelToe = (() => {
   const d = diagram({
     title: 'Straight line, heel and toe',
     w: 22, h: H,
-    desc: `${SEEN} One: the puck in front of your feet. Two: push it straight forwards with the heel of the blade. Three: pull it back along the same line with the toe; out and back are drawn as one line. Four: keep going, sliding your bottom hand as the puck goes out and back.`,
+    desc: `${SEEN} One: the puck in front of your feet; the forehand of the blade does every push and pull, never turned over to the backhand. Two: push it straight forwards with the heel of the blade. Three: pull it back along the same line with the toe, rolling your wrists a little and lifting the toe over the puck; out and back are drawn as one line. Four: keep going, sliding your bottom hand as the puck goes out and back.`,
   });
   path(d, 'M 11 6.9 L 11 2.2', { both: true });
   puck(d, 11, 7.6);
@@ -242,6 +217,8 @@ const heelToe = (() => {
   stepLab(d, 9.2, 7.7, 1, ['in front of your feet'], { end: true });
   stepLab(d, 10.0, 3.6, 2, ['push forwards', 'with the heel'], { end: true });
   stepLab(d, 12.0, 3.6, 3, ['pull it back', 'with the toe,', 'same line']);
+  lab(d, 0.8, 10.4, 'forehand only,');
+  note(d, 0.8, 11.08, 'never the backhand');
   stepLab(d, 14.6, 9.6, 4, ['keep going, sliding', 'your bottom hand']);
   return finish(d, [...base, key.ghost(), key.path()]);
 })();
@@ -253,7 +230,7 @@ const lShape = (() => {
   const d = diagram({
     title: 'L-shape and R-shape',
     w: 22, h: H,
-    desc: `${SEEN} Two pictures. Left picture, the L: one, the puck starts in front of your right foot; pull it across in front of your feet to the left, and stop at the corner. Two, pull it straight back along your left side, past your left foot, to just behind your heels, and stop. Three, pull it forwards to the corner, and stop. Four, pull it back across to where you started, and stop. Right picture: five, the R-shape, the mirror image: across to the right, back along your right side past your right foot, forwards to the corner, and back across.`,
+    desc: `${SEEN} Two pictures. Left picture, the L: one, the puck starts in front of your right foot; pull it across in front of your feet to the left, and stop it dead at the corner, the blade square to the pull, as at every stop. Two, lay the blade across the far side of the puck and pull it straight back along your left side, past your left foot, to just behind your heels, and stop. Three, pull it forwards to the corner, and stop. Four, pull it back across to where you started, and stop. Right picture: five, the R-shape, the mirror image: across to the right, back along your right side past your right foot, forwards to the corner, and back across.`,
   });
   divider(d, 11, 0.4, 11, H - 0.4);
   // s = +1: the L (corner front-left); -1: the R-shape, mirrored, corner front-right.
@@ -264,7 +241,11 @@ const lShape = (() => {
     path(d, `M ${St - s * 0.75} ${Fy} L ${C + s * 0.75} ${Fy}`, { both: true });
     path(d, `M ${C} ${Fy + 0.75} L ${C} ${End - 0.75}`, { both: true });
     stopBar(d, St + s * 0.65, Fy, 0);
-    stopBar(d, C - s * 0.62, Fy - 0.62, 45 * s, { len: 0.9 });
+    // Corner (owner, 2 Nov 2026): the blade is square to each pull, never diagonal. Stopping the
+    // pull across, it stands front to back on the far side of the puck; above the puck it lies
+    // across, square to the pull down and to the stop at the end of the pull forwards.
+    stopBar(d, C - s * 0.72, Fy, 0, { len: 0.8 });
+    stopBar(d, C, Fy - 0.72, 90, { len: 0.8 });
     stopBar(d, C, End + 0.65, 90);
     puck(d, St, Fy);
     puck(d, C, Fy, { ghost: true });
@@ -310,14 +291,14 @@ const figure8s = (() => {
   const d = diagram({
     title: 'Figure of 8 round markers',
     w: 22, h,
-    desc: `${SEEN} Six pictures in three rows; in each row the left picture is clockwise and the right picture is the whole 8 the other way, anti-clockwise. Top row: one, two markers side by side in front of you, the puck side to side in a figure of 8, one loop round each marker, clockwise round the right-hand marker, then anti-clockwise round it. Middle row: two, one marker in front of the other, the same 8 front to back, clockwise round the far marker, then anti-clockwise round it. Bottom row: three, four markers in a square, a pair on your left and a pair on your right, one behind the other, the 8 side to side with one loop round each pair, clockwise round the right-hand pair, then anti-clockwise round it, letting your bottom hand slide for the longer reach.`,
+    desc: `${SEEN} Six pictures in three rows; in each row the left picture is clockwise and the right picture is the whole 8 the other way, anti-clockwise. The top row is the drill; the middle and bottom rows are its progression. Top row: two markers side by side in front of you, the puck side to side in a figure of 8, one loop round each marker, clockwise round the right-hand marker, then anti-clockwise round it. Middle row, progression one: one marker in front of the other, the same 8 front to back, clockwise round the far marker, then anti-clockwise round it. Bottom row, progression two: four markers in a square, a pair on your left and a pair on your right, one behind the other, the 8 side to side with one loop round each pair, clockwise round the right-hand pair, then anti-clockwise round it, letting your bottom hand slide for the longer reach.`,
   });
   divider(d, 11, 0.4, 11, h - 0.4);
   divider(d, 0.4, R2, 21.6, R2);
   divider(d, 0.4, R3, 21.6, R3);
   const shoes = { gap: 1.0, len: 1.8, wid: 0.72 };
-  const labels = (oy, n, what) => {
-    stepLab(d, 0.9, oy + 1.0, n, ['clockwise round', what]);
+  const labels = (oy, tag, what) => {
+    progLab(d, 0.25, oy + 1.0, [tag, `clockwise round ${what}`]);
     lab(d, 11.9 + 0.65, oy + 1.2, 'anti-clockwise round');
     lab(d, 11.9 + 0.65, oy + 1.88, what, { weight: 400, color: COL.muted });
   };
@@ -339,9 +320,9 @@ const figure8s = (() => {
     puck(d, ...p3(2.3));
     player(d, cx, R3 + 11.8, shoes);
   }
-  labels(R1, 1, 'the right marker');
-  labels(R2, 2, 'the far marker');
-  labels(R3, 3, 'the right pair');
+  labels(R1, 'start: side by side', 'the right marker');
+  labels(R2, 'progression 1: front to back', 'the far marker');
+  labels(R3, 'progression 2: square of four', 'the right pair');
   return finish(d, [...base, key.marker(), key.path()]);
 })();
 
@@ -350,15 +331,15 @@ const slalom = (() => {
   const d = diagram({
     title: 'Walking slalom',
     w: 22, h: H,
-    desc: `${SEEN} Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you; two, walk slowly forwards along the line with the markers passing between your feet, pulling the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve; three, check the floor behind you is clear, then walk back along the line backwards, still zig-zagging. Right picture: four, the same with the markers on your left, stepping clear of them, then with them on your right.`,
+    desc: `${SEEN} Two pictures. Left picture: one, a line of flat markers on a clear floor running away from you, flat because you walk over them; two, walk slowly forwards along the line with the markers passing between your feet, pulling the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve; three, check the floor behind you is clear, then walk back along the line backwards, still zig-zagging. Right picture, a variation: the same with the markers on your left, stepping clear of them, then with them on your right.`,
   });
   divider(d, 11, 0.4, 11, H - 0.4);
   const ys = [3.6, 5.6, 7.6];
-  const weave = (cx) => {
+  const weave = (cx, top = 2.1) => {
     // A zig-zag of straight pulls, across and slightly forwards, sharp at each side: the puck goes
     // out beside a marker, then through the gap to the other side of the next one.
     const w = 1.7;
-    path(d, `M ${cx} 9.2 L ${cx - w} ${ys[2]} L ${cx + w} ${ys[1]} L ${cx - w} ${ys[0]} L ${cx + 0.7} 2.1`);
+    path(d, `M ${cx} 9.2 L ${cx - w} ${ys[2]} L ${cx + w} ${ys[1]} L ${cx - w} ${ys[0]} L ${cx + 0.7} ${top}`);
   };
   // Left picture: straddling the line.
   const c1 = 5.5;
@@ -381,100 +362,91 @@ const slalom = (() => {
   puck(d, mx, 9.2);
   player(d, c2, 10.9, { gap: 1.0, len: 1.8, wid: 0.72 });
   d.travel(20.6, 9.6, 20.6, 5.6);
-  stepLab(d, 11.8, 1.0, 4, ['markers on your left,', 'then on your right']);
+  progLab(d, 17.0, 1.0, ['variations:', 'markers on', 'your left,', 'then your right']);
   return finish(d, [...base, key.marker(), key.path(), key.walk()]);
 })();
 
-// ------------------------------------------------------------------ 12. Wall passing
-const wallPass = (() => {
+// ------------------------------------------------------------------ 12. Rebounder passing
+// Drawn on the forehand of a right-handed shot (blade on the right); the card's progression then
+// takes the backhand.
+const rebounder = (() => {
   const d = diagram({
-    title: 'Wall passing',
+    title: 'Rebounder passing',
     w: 22, h: H,
-    desc: `${SEEN} A wall across the top. One: face the wall and pass at a spot on it. Two: cushion every return, control it, and reset before the next pass. Three: take half your passes and receptions on the backhand. Four: vary the angle and distance, then return it first time, then shuffle sideways as you pass and receive.`,
+    desc: `${SEEN} A rebounder at the top. One: face the rebounder and pass the puck into it. Two: catch the return with your blade out in front of you, drawn dashed, and pull the blade back as the puck hits it, to soften it; the arrow shows the blade giving back to where the puck goes dead, nearer your feet. Three: aim for the quietest catch you can, the puck dead on your blade with no clack. Progression: forehand until you get 20 clean passes in a row, then backhand until you get 20 clean passes in a row.`,
   });
-  d.raw(`<rect x="${0.5 * 30}" y="${0.5 * 30}" width="${21 * 30}" height="${0.8 * 30}" rx="4" fill="${COL.muted}" fill-opacity="0.35"/>`);
-  d.text(20.9, 1.08, 'wall', { size: 0.42, anchor: 'end', weight: 600, color: COL.ink });
-  spot(d, 11, 1.75);
-  path(d, 'M 10.55 6.8 L 10.55 2.4');
-  path(d, 'M 11.45 2.4 L 11.45 6.8');
-  puck(d, 11, 7.5);
-  // Other spots on the wall, for other angles.
-  for (const x of [4.6, 17.4]) spot(d, x, 1.75, { other: true });
+  d.raw(`<rect x="${7.0 * 30}" y="${0.7 * 30}" width="${8.0 * 30}" height="${0.9 * 30}" rx="4" fill="${COL.muted}" fill-opacity="0.35"/>`);
+  d.text(15.4, 1.35, 'rebounder', { size: 0.42, anchor: 'start', weight: 600, color: COL.ink });
+  path(d, 'M 10.55 6.6 L 10.55 2.2');
+  path(d, 'M 11.45 2.2 L 11.45 6.6');
+  puck(d, 11, 7.3);
+  // The blade out in front where the puck arrives (dashed), giving back to the catch nearer the feet.
+  d.raw(`<line x1="${u(9.85)}" y1="${u(5.3)}" x2="${u(12.15)}" y2="${u(5.3)}" stroke="${COL.ink}" stroke-width="5" stroke-dasharray="7 5" stroke-linecap="round"/>`);
+  // The give-back: from the dashed blade to the solid one, ending on it.
+  d.raw(`<line x1="${u(12.0)}" y1="${u(5.5)}" x2="${u(12.0)}" y2="${u(7.45)}" stroke="${COL.muted}" stroke-width="3"/>` +
+    `<path d="M ${u(11.78)} ${u(7.4)} L ${u(12.22)} ${u(7.4)} L ${u(12.0)} ${u(7.86)} Z" fill="${COL.muted}"/>`);
+  // Right-handed shot: the shaft runs back and to the LEFT, towards the top (left) hand, as on the
+  // module's other right-handed drawings (the old toe drag and shooting-pad drawings).
+  blade(d, 11, 8.0, 0, 8.2, 8.6);
   player(d, 11, 10.4);
-  d.travel(14.2, 11.6, 18.6, 11.6);
-  stepLab(d, 9.6, 3.6, 1, ['pass at a spot'], { end: true });
-  stepLab(d, 12.4, 5.0, 2, ['cushion it,', 'control, reset']);
-  stepLab(d, 1.2, 9.6, 3, ['half of them', 'on the backhand']);
-  stepLab(d, 14.6, 8.4, 4, ['vary the angle,', 'first time,', 'shuffle sideways']);
-  return finish(d, [...base, key.path(), spotKey(), spotKey(true), [key.walk()[0], key.walk()[1], 'you shuffle']]);
+  stepLab(d, 9.6, 3.6, 1, ['pass into it'], { end: true });
+  stepLab(d, 12.4, 4.4, 2, ['blade out in front,', 'pull it back as', 'the puck arrives']);
+  stepLab(d, 1.2, 8.6, 3, ['quietest catch:', 'no clack']);
+  progLab(d, 14.0, 8.6, ['progression:', 'forehand, 20 clean', 'in a row, then', 'backhand, 20 clean']);
+  note(d, 0.8, 10.9, 'drawn on the forehand of');
+  note(d, 0.8, 11.55, 'a right-handed shot');
+  const ghostBlade = [1.1, (x, y) => `<line x1="${u(x)}" y1="${u(y)}" x2="${u(x + 1.1)}" y2="${u(y)}" stroke="${COL.ink}" stroke-width="5" stroke-dasharray="7 5" stroke-linecap="round"/>`, 'blade, out in front'];
+  const giveKey = [1.1, (x, y) => `<line x1="${u(x)}" y1="${u(y)}" x2="${u(x + 0.8)}" y2="${u(y)}" stroke="${COL.muted}" stroke-width="3"/><path d="M ${u(x + 0.75)} ${u(y - 0.2)} L ${u(x + 0.75)} ${u(y + 0.2)} L ${u(x + 1.1)} ${u(y)} Z" fill="${COL.muted}"/>`, 'blade gives back'];
+  return finish(d, [...base, key.path(), ghostBlade, giveKey]);
 })();
 
-// ------------------------------------------------------------------ 13. Shooting off a pad
-const padShot = (() => {
-  const d = diagram({
-    title: 'Shooting off a pad',
-    w: 22, h: H,
-    desc: `${SEEN} A net at the top, a shooting pad at the bottom. Drawn for a right-handed shot, standing side-on with the left shoulder towards the net and the puck beside the back foot; a left-handed shot mirrors it. One: check who is near, and what is behind and around the net, including windows and glass. Two: stand on the shooting pad, not concrete, with the net in front of you. Three: shoot into the net.`,
-  });
-  // The net from above: the goal line between the posts, the net bulging back behind it.
-  const nl = 8.0, nr = 14.0, gl = 3.2;
-  d.raw(`<path d="M ${nl * 30} ${gl * 30} C ${nl * 30} ${1.2 * 30} ${nr * 30} ${1.2 * 30} ${nr * 30} ${gl * 30}" fill="${COL.muted}" fill-opacity="0.12" stroke="${COL.muted}" stroke-width="2.5"/>`);
-  d.raw(`<line x1="${nl * 30}" y1="${gl * 30}" x2="${nr * 30}" y2="${gl * 30}" stroke="#c33" stroke-width="5" stroke-opacity="0.7"/>`);
-  d.text(11, 2.45, 'net', { size: 0.42, weight: 600, color: COL.ink });
-  // Behind and around the net: the zone to check.
-  d.raw(`<path d="M ${6.0 * 30} ${4.0 * 30} L ${6.0 * 30} ${0.45 * 30} L ${16.0 * 30} ${0.45 * 30} L ${16.0 * 30} ${4.0 * 30}" fill="none" stroke="${COL.ink}" stroke-width="2" stroke-dasharray="6 5"/>`);
-  // The pad.
-  d.raw(`<rect x="${6.4 * 30}" y="${6.2 * 30}" width="${9.2 * 30}" height="${5.8 * 30}" rx="6" fill="#fff" stroke="${COL.muted}" stroke-width="2"/>`);
-  d.text(15.3, 11.7, 'shooting pad', { size: 0.4, anchor: 'end' });
-  // Side-on stance, right-handed shot: toes point right, left (front) foot nearer the net.
-  shoe(d, 9.6, 8.2, 0, 'L', { len: 2.6, wid: 1.0 });
-  shoe(d, 9.6, 10.4, 0, 'R', { len: 2.6, wid: 1.0 });
-  puck(d, 12.0, 9.9);
-  blade(d, 12.0, 10.65, 0, 9.9, 9.3);
-  path(d, 'M 12.0 9.3 L 11.3 3.8');
-  stepLab(d, 0.9, 1.2, 1, ['check who is', 'near, and', 'behind the net']);
-  stepLab(d, 1.2, 8.4, 2, ['on a pad,', 'not concrete']);
-  stepLab(d, 13.0, 5.4, 3, ['shoot into the net']);
-  note(d, 21.3, 11.6, 'right-handed shot', { anchor: 'end' });
-  return finish(d, [...base, key.path(), checkKey, goalKey]);
-})();
-
-const card = (trains, steps, mistake, check = '') => ({ trains, steps, mistake, check });
+// `progression` (harder stages, in order) / `variations` (alternatives): a string for one line or an
+// array for a numbered list, as the page's **Progression:** / **Variations:**; `routine`: the line
+// after it, where the card has one.
+const card = (trains, steps, mistake, check = '', { progression, variations, routine } = {}) => ({ trains, steps, progression, variations, routine, mistake, check });
 
 const drills = [
   {
     id: 'office-stick-dangles', group: GROUP, title: 'Dangles in front', svg: dangles,
     card: card('Soft hands, and feeling the puck without looking at it.', [
-      'Stand with your knees bent, the puck in front of you, and look up at the wall or the television.',
+      'Stand with your knees bent and the puck in front of you.',
       'Dangle the puck side to side in front of you, shifting your weight in your legs as it moves.',
-      'Then dangle with your top hand only.',
-      'Then with your eyes closed.',
-    ], 'Swinging the arms instead of working the wrists, which is slow and pulls you off balance.'),
+      'Roll your wrists so the blade stays closed on both the forehand and the backhand, and dangle as quietly as you can.',
+    ], 'Chopping at the puck so it clacks, or swinging the arms instead of working the wrists, which is slow and pulls you off balance.', '', {
+      progression: [
+        'Eyes on the puck, to learn the movement.',
+        'Head up: look at the wall or the television.',
+        'Head up, top hand only.',
+        'Eyes closed, both hands.',
+      ],
+      routine: 'Once you have all four, a good routine: head up with both hands, then top hand only, then eyes closed with both hands.',
+    }),
   },
   {
     id: 'office-stick-dangle-left', group: GROUP, title: 'Dangles on your left', svg: dangleLeft,
     card: card('Handling the puck beside you, front to back.', [
-      'Put the puck beside you on your left, level with your left foot. Bend your knees and keep your head up.',
+      'Put the puck beside you on your left, level with your left foot, and bend your knees.',
       'Dangle it forwards and backwards along your side, shifting your weight in your legs as it moves.',
-      'Then dangle with your top hand only.',
-    ], 'Looking down at the puck instead of keeping your head up.'),
+    ], 'Still looking down at the puck once you know the movement.', '', {
+      progression: [
+        'Eyes on the puck, to learn the movement.',
+        'Head up.',
+        'Head up, top hand only.',
+      ],
+    }),
   },
   {
     id: 'office-stick-dangle-right', group: GROUP, title: 'Dangles on your right', svg: dangleRight,
     card: card('Handling the puck beside you, front to back.', [
-      'Put the puck beside you on your right, level with your right foot. Bend your knees and keep your head up.',
+      'Put the puck beside you on your right, level with your right foot, and bend your knees.',
       'Dangle it forwards and backwards along your side, shifting your weight in your legs as it moves.',
-      'Then dangle with your top hand only.',
-    ], 'Looking down at the puck instead of keeping your head up.'),
-  },
-  {
-    id: 'office-stick-toe-drag', group: GROUP, title: 'Toe drag in and out', svg: toeDrag,
-    card: card('Pulling the puck back to your feet past a reaching stick.', [
-      'Push the puck out on your forehand.',
-      'Roll the blade over it and drag it back towards your feet with the toe.',
-      'Tighten your grip and roll the blade back to catch it, then go again.',
-    ], 'Rushing the catch at the end, which is the hard part.',
-    'Drawn for a right-handed shot (forehand on the right); the card names no side.'),
+    ], 'Still looking down at the puck once you know the movement.', '', {
+      progression: [
+        'Eyes on the puck, to learn the movement.',
+        'Head up.',
+        'Head up, top hand only.',
+      ],
+    }),
   },
   {
     id: 'office-stick-wide-pull', group: GROUP, title: 'Wide pull across', svg: widePull,
@@ -506,33 +478,34 @@ const drills = [
     card: card('Moving the puck on a diagonal, not only side to side.', [
       'Dangle front to back beside your left foot. Pull the puck diagonally forwards to in front of you, dangle there, and take it back.',
       'Do the same from beside your right foot.',
-      'Then link them: left, front, right, front, and back to the left, without stopping.',
-    ], 'A steady left-right rhythm, which a defender can read.'),
+    ], 'A steady left-right rhythm, which a defender can read.', '', {
+      progression: 'Link them — left, front, right, front, and back to the left, without stopping.',
+    }),
   },
   {
     id: 'office-stick-v-shape', group: GROUP, title: 'V-shape', svg: vShape,
     card: card('Pulling the puck right in to your feet and pushing it far out, using the whole reach.', [
-      'Push the puck as far out to one side and forwards as you can reach.',
+      'Push the puck as far out to one side and forwards as you can reach. Use the forehand of the blade the whole way, never the backhand.',
       'Pull it right in to your feet, the bottom of the V.',
-      'Push it as far out to the other side and forwards.',
-      'Keep going, sliding your bottom hand to reach.',
-    ], 'A small V, the puck stopping short of your feet or short of full reach.',
+      'Push it as far out to the other side and forwards. On your backhand side, roll your wrists a little and lift the toe of the blade over the puck, as in a toe drag, so the forehand stays on it. That wrist roll is the key part of the drill.',
+      'Keep going, and focus on sliding your bottom hand to reach.',
+    ], 'Turning the blade over to the backhand on the far side, or a small V, the puck stopping short of your feet or short of full reach.',
     'Drawn starting to the left; the card says "one side".'),
   },
   {
     id: 'office-stick-heel-toe-line', group: GROUP, title: 'Straight line, heel and toe', svg: heelToe,
     card: card('Front-to-back control, which the toe drag needs.', [
-      'Put the puck in front of your feet.',
+      'Put the puck in front of your feet. The forehand of the blade does every push and pull; never turn it over to the backhand.',
       'Push it forwards in a straight line with the heel of the blade.',
-      'Pull it back in the same line with the toe.',
+      'Pull it back in the same line with the toe, rolling your wrists a little and lifting the toe over the puck.',
       'Keep going, sliding your bottom hand as the puck goes out and back.',
     ], 'Letting the line curve, which means the blade is turning.'),
   },
   {
     id: 'office-stick-l-shape', group: GROUP, title: 'L-shape and R-shape', svg: lShape,
     card: card('Stopping the puck dead and changing direction.', [
-      'Start with the puck in front of your right foot. Pull it across in front of your feet to the left, and stop. That is the corner of the L.',
-      'Pull it straight back along your left side, past your left foot, to just behind your heels, and stop. For a right-handed shot, this pull and the next are on your backhand.',
+      'Start with the puck in front of your right foot. Pull it across in front of your feet to the left, and stop it dead, the blade square to the pull, as at every stop. That is the corner of the L.',
+      'Lay the blade across the far side of the puck and pull it straight back along your left side, past your left foot, to just behind your heels, and stop. For a right-handed shot, this pull and the next are on your backhand.',
       'Pull it forwards to the corner, and stop.',
       'Pull it back across to where you started, and stop.',
       'Then do the R-shape, the mirror image: across to the right, back past your right foot, forwards, and back across.',
@@ -542,39 +515,40 @@ const drills = [
   {
     id: 'office-stick-figure-of-8', group: GROUP, title: 'Figure of 8 round markers', svg: figure8s,
     card: card('Handling round an obstacle on the forehand and backhand, and pushing the puck away and pulling it back.', [
-      'Put two markers side by side in front of you, two to six feet apart. Take the puck side to side in a figure of 8, one loop round each marker: clockwise round the right-hand marker, then anti-clockwise round it (the whole 8 the other way).',
-      'Move one marker so it sits in front of the other. Do the same front to back: clockwise round the far marker, then anti-clockwise round it.',
-      'Set four markers in a square, a pair on your left and a pair on your right, one behind the other. Take the puck side to side, one loop round each pair: clockwise round the right-hand pair, then anti-clockwise round it, letting your bottom hand slide for the longer reach.',
+      'Put two markers side by side in front of you, two to six feet apart.',
+      'Take the puck side to side in a figure of 8, one loop round each marker: clockwise round the right-hand marker, then anti-clockwise round it (the whole 8 the other way).',
     ], 'Looking down at the markers instead of keeping your head up.',
-    'Owner, 1 Nov 2026: "clockwise / anti-clockwise round the right puck" is the whole 8 run one way, then the other. Owner, 2 Nov 2026: show every direction, so each 8 is drawn twice, clockwise (left) and anti-clockwise (right).'),
+    'Owner, 1 Nov 2026: "clockwise / anti-clockwise round the right puck" is the whole 8 run one way, then the other. Owner, 2 Nov 2026: show every direction, so each 8 is drawn twice, clockwise (left) and anti-clockwise (right). The top row is steps 1-2; the middle and bottom rows are the two progression stages, labelled in words.', {
+      progression: [
+        'Move one marker so it sits in front of the other. Do the same front to back: clockwise round the far marker, then anti-clockwise round it.',
+        'Set four markers in a square, a pair on your left and a pair on your right, one behind the other. Take the puck side to side, one loop round each pair: clockwise round the right-hand pair, then anti-clockwise round it, letting your bottom hand slide for the longer reach.',
+      ],
+    }),
   },
   {
     id: 'office-stick-walking-slalom', group: GROUP, title: 'Walking slalom', svg: slalom,
     card: card('Handling while you move, and planning a route with your eyes.', [
-      'Set a line of markers on a clear floor; for the between-the-legs version use flat ones you cannot turn an ankle on.',
+      'Set a line of markers on a clear floor. Use flat ones you cannot turn an ankle on, since you walk over them.',
       'Walk slowly forwards along the line as the markers pass between your legs. Pull the puck across and slightly forwards through each gap, so its path is a zig-zag, not a smooth curve.',
       'Check the floor behind you is clear, then walk back along the line backwards, still zig-zagging.',
-      'Then do it with the markers on your left, then on your right, stepping clear of them.',
     ], 'Watching the puck instead of looking ahead to the next marker.',
-    'Step 4 is drawn with the markers on your left only; the label says "then on your right".'),
+    'The variation is drawn with the markers on your left only; the label says "then your right".', {
+      variations: 'Do it with the markers on your left, then on your right, stepping clear of them.',
+    }),
   },
   {
-    id: 'office-stick-wall-passing', group: GROUP, title: 'Wall passing', svg: wallPass,
-    card: card('Receiving, which coaches call the neglected half of passing.', [
-      'Face a wall or a rebounder and pass at a spot on it.',
-      'Cushion every return, control it, and reset before the next pass.',
-      'Take half your passes and receptions on the backhand.',
-      'Vary the angle and distance, then return it first time, then shuffle sideways as you pass and receive.',
-    ], 'Stopping the return dead instead of cushioning it.'),
-  },
-  {
-    id: 'office-stick-pad-shooting', group: GROUP, title: 'Shooting off a pad', svg: padShot,
-    card: card('Release, weight transfer and hand path; it cannot train when to shoot.', [
-      'Check who is near and what is behind and around the net, including windows and glass.',
-      'Stand on a shooting pad, not concrete, with the net in front of you.',
-      'Shoot into the net.',
-    ], 'Shooting off concrete, which wrecks the blade and teaches you to chop at the puck.',
-    'Drawn side-on for a right-handed shot; the card names no side.'),
+    id: 'office-stick-rebounder-passing', group: GROUP, title: 'Rebounder passing', svg: rebounder,
+    card: card('Receiving, which coaches call the more neglected half of passing. A rebounder gives you hundreds of receptions in ten minutes.', [
+      'Face a rebounder and pass the puck into it.',
+      'Catch the return with your blade out in front of you, and pull the blade back as the puck hits it, to soften it.',
+      'Aim for the quietest catch you can: the puck goes dead on your blade, with no clack.',
+    ], 'Holding the blade still, so the puck clacks off it and bounces away.',
+    'Owner, 2 Nov 2026: replaces Wall passing. Drawn on the forehand of a right-handed shot; the card names no side.', {
+      progression: [
+        'Forehand, until you get 20 clean passes in a row.',
+        'Then backhand, until you get 20 clean passes in a row.',
+      ],
+    }),
   },
 ];
 

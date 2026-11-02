@@ -68,7 +68,7 @@ const balance = (() => {
   const d = diagram({
     title: 'Single-leg balance',
     w: W, h: 11.4,
-    desc: 'Seen from behind, three pictures left to right. One: standing still on the left leg, right foot off the floor. Two: the same on the right leg. Three: harder, standing on one leg while stickhandling a ball.',
+    desc: 'Seen from behind, three pictures left to right. One: standing still on the left leg, right foot off the floor. Two: the same on the right leg. Then the progression: standing on one leg while stickhandling a ball.',
   });
   const G = 8.6;
   floor(d, 0.6, 21.4, G);
@@ -87,8 +87,8 @@ const balance = (() => {
   ball(d, heel[0] + 1.55, G - 0.4, { r: 0.35 });
   figure(d, X[2], py, p3, { down: { L: true, R: false } });
   caption(d, X[0] - 2.7, G + 1.0, 1, 'stand on one leg', 'and hold your balance');
-  caption(d, X[1] - 2.7, G + 1.0, 2, 'then the other leg');
-  caption(d, X[2] - 2.9, G + 1.0, 3, 'harder: stickhandle', 'while you balance');
+  caption(d, X[1] - 2.3, G + 1.0, 2, 'then the other leg');
+  caption(d, X[2] - 2.75, G + 1.0, 0, 'progression: stickhandle', 'while you balance');
   d.text(21.3, 1.0, 'seen from behind', { size: 0.4, anchor: 'end' });
   return finish(d, [key.limb('L'), key.limb('R'), key.down(), key.up(), key.ball()]);
 })();
@@ -358,7 +358,8 @@ const drills = [
     id: 'office-exercise-single-leg-balance', group: GROUP, title: 'Single-leg balance', svg: balance,
     card: {
       trains: 'The ankle stability your edges run on.',
-      steps: ['Stand on one leg and hold your balance.', 'Then the other leg.', 'Make it harder by stickhandling while you do it.'],
+      steps: ['Stand on one leg and hold your balance.', 'Then the other leg.'],
+      progression: 'Stickhandle while you balance.',
       mistake: 'Only ever balancing on your stronger leg.',
       check: 'Implied: knee of the standing leg nearly straight; free foot lifted a little beside the standing leg; arms a little out; in frame 3 a ball is used (the card says only "stickhandling").',
     },
