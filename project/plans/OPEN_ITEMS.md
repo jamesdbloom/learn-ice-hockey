@@ -17,6 +17,9 @@ numbers drift, so find a line by its text, and re-test a row before acting on it
 
 ## Carry-overs from waves SG93–SG133 (open)
 
+- **Closed in SG153 (3 Nov):** special_teams :656 32(d) exception; puck_handling :492 HC 7.1(b) discretionary limb; faceoffs 53(a) price on on_ice_communication, HC/CARHA/IIHF prices on faceoffs :607, faceoffs :1078 "unconditional"; ozp §8 "only a major"; ozp CM split; winger :557; defender :326; defender :903 (stale); ozp CARHA adult tag and :783/:784 reckless (refuted). Left as accepted-harsh: dzc :180 (7.6(a) minor unstated), winger :749, defender :314/:462, faceoffs :605. The rows below still list some of these; they are closed.
+
+
 Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_*.md` (the tag at the end of each row names the wave). Short names: bcb = body_contact_and_battles, dzc = defensive_zone_coverage, ozp = offensive_zone_play, pwtp = playing_without_the_puck, dtr = defending_the_rush. "Harsh" means the text errs strict; "permissive" means it tells a reader an act is cheaper than it is.
 
 **Next-game suspension, once per page (owner ruling 21/28 Oct)**
@@ -26,6 +29,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - Traceability: bcb :361 and :685 (SG114; the goaltender half closed in SG139).
 - puck_handling :492 carries Hockey Canada 7.1(b)'s mandatory injury limb but not its discretionary major and game misconduct "based upon the degree of violence" (an intermediate tier; the match covers moderate violence). (SG134b, SG139)
 - bcb facts :804 no longer says 403(b)'s two games are additional (body :820 carries it); bcb :127, is "beyond tonight" or §1 the page's rules summary? If §1, :127 gets its 32(d) sentence back. (SG127a) The :834 32(d)/30(a) misattribution was fixed in SG136.
+- on_ice_communication screener section: SG153 added Hockey Canada 7.5(a) beside CARHA 53(a) for a push on the screener's back; NHL/IIHF/PWHL 43 are still not stated there and the facts block is at 14/14 (needs a merge). Also: special_teams :656 does not say a CARHA match (34(a)) or gross misconduct (33(d)) keeps you out until dealt with (optional). (SG153)
 - on_ice_communication: the next-game facts line sits in Pressure warnings because the screener block is at HARD_MAX. (SG130)
 - time_and_space states it in §3 because §6 is at HARD_MAX (note, no action unless §6 is edited). (SG128)
 
