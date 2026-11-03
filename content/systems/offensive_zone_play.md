@@ -1078,7 +1078,7 @@ More detail on mechanics is in [Shooting](../technique/shooting.md).
 
 An offensive-zone faceoff is as close as the game gets to a moment where you can arrange all five players exactly where you want them, with the puck about to arrive at a known place — **a coaching judgement, not a measured claim; no source here catalogues every dead-puck moment in the game.** Most amateur teams waste it entirely.
 
-Full treatment of the draw itself — technique, stick placement, the violations that get your centre ejected — is in [Faceoffs](faceoffs.md). What matters here is what happens in the second *after* the draw.
+Full treatment of the draw itself — technique, stick placement, the violations that get your centre thrown off the dot — is in [Faceoffs](faceoffs.md). What matters here is what happens in the second *after* the draw.
 
 ### Set plays off a win
 

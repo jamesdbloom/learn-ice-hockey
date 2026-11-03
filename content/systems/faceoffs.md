@@ -306,7 +306,7 @@ Action: Before you build an offensive-zone draw around the kick-back, find out w
 
 **What it costs.** ⚠️ **Kicking or attempting to kick an opponent is a match penalty** under NHL and PWHL 49.3, USA Hockey 627(b) (with a likely multi-game suspension), Hockey Canada 7.1(c)(iii) and CARHA 48(c), the PWHL adding a five-minute time penalty *"[w]hether or not an injury occurs"*. Under IIHF 49.3 the referee *"may assess a major penalty and an automatic game misconduct penalty"*. ⚠️ **USA Hockey does not even need a kick:** 627(a) gives a major plus a game misconduct for using your skate to *"push off"* an opponent, which its Note 2 defines as contact *"in a non-kicking motion"* — so there the opened skate is the risky half. Under USA Hockey, any game misconduct also costs your team's next game, and at least two if it comes with your second major of the game (404(b), 403(b)). In a CARHA league, a major's game misconduct costs at least your next game, possibly more, unless it was for an accidental high stick (32(d)).
 
-Hockey Canada narrows its no-goal rule twice: a puck deflecting off a skate *"without a deliberate kicking action"* is not a kick (6.10), and 6.10(b) excepts *"a defending player kick[ing] the puck into their own goal"* — so at your own-end draw, a puck you kick into your own net counts. Under the IIHF, winning the draw with a skate costs a warning (2025/26) or your centre (2026/27); "When your centre gets tossed" sets it out.
+Hockey Canada narrows its no-goal rule twice: a puck deflecting off a skate *"without a deliberate kicking action"* is not a kick (6.10), and 6.10(b) excepts *"a defending player kick[ing] the puck into their own goal"* — so at your own-end draw, a puck you kick into your own net counts. Under the IIHF, winning the draw with a skate costs a warning (2025/26) or your centre (2026/27); "When your centre is thrown off the dot" sets it out.
 
 ---
 
@@ -797,7 +797,7 @@ Rule: Timing your arrival is not the same as being late — a centre who "attemp
 Rule: Once your team has had its one lateness warning, being slow to the dot again is a bench minor for delay of game — "Slow Proceeding to Face-off Location" (NHL and IIHF Rule 76.7)
 Rule: USA Hockey 613(d) and CARHA 57(c) let the official order a player facing off who fails to take their proper position when directed "replaced", first time, at discretion; a USA Hockey slow line change to the dot is warned, then a bench minor (Casebook 613 Situation 13)
 Rule: Hockey Canada reaches the same place in two steps, which is a reading of two rules together and not one sentence — 6.5(a) names "late arrival" a faceoff violation and 6.2(d) removes the taker from that draw; 6.5(a)'s warning is Junior divisions after an icing only
-Rule: Whether the IHUK In-House Rules 2026-27 replace your centre for teammates' lateness is unclear, so plan on it — IIHF 76.7 warns the team and does not eject the centre, but In-House Rule 76 replaces the centre "for all violations" bar after icings. The Elite League keeps the IIHF warning
+Rule: Whether the IHUK In-House Rules 2026-27 replace your centre for teammates' lateness is unclear, so plan on it — IIHF 76.7 warns the team and leaves the centre on the dot, but In-House Rule 76 replaces the centre "for all violations" bar after icings. The Elite League keeps the IIHF warning
 Rule: The carve-out shields the centre from their teammates' lateness in both IIHF editions — 2025/26's 76.7 says the centre "will not receive a warning", 2026/27's that the centre "is not ejected from the 'face-off'"
 Action: Be at the dot on time — the safe play is the same under every book, and it is free
 ```
@@ -933,9 +933,9 @@ An open hand is no loophole: placing a hand over the puck to conceal it is a min
 
 **Under the IIHF a hand at the draw can cost you the goal itself, on review, minutes later.** Situation 38.11 — the same in both 2025/26 versions and in 2026/27 — has a centre glove the puck from a draw to a teammate who scores, undetected, and allows a challenge for a missed game stoppage. The 2026/27 Situation 38.20 adds that an ordinary faceoff violation *"cannot be challenged as a missed game stoppage event"* but a hand-won draw can be, as a hand pass — so it reaches attacking-zone draws (Rules 38.2(II), 38.9, 79.2). It sits awkwardly with Rule 76.5, which sends the takers' hand play to 67.2, and the handbook's Foreword makes the rulebook prevail, so treat it as how the review is run rather than as the rule. The In-House Rules say *"a Coach's Challenge is not permitted in EIH or SIHA competition"*, which settles neither a BUIHA fixture nor the **Elite League**, whose Casebook allows a challenge *"at any time throughout the game"* (38.5). **None of it changes the instruction: your hands stay off the puck.**
 
-### When your centre gets tossed — and the edition that changed where
+### When your centre is thrown off the dot — and the edition that changed where
 
-**In short:** Agree in advance who takes the draw if your centre is thrown out, and default to a tie-up, not a set play.
+**In short:** Agree in advance who takes the draw if your centre is thrown off the dot, and default to a tie-up, not a set play.
 
 ```facts
 Rule: A teammate on the ice replaces a removed centre, never the bench — all six books bar a change before the draw; a penalty lifts it if it leaves a team shorthanded (HC 6.2(d), CARHA 57(c)) or changes on-ice strength (NHL, IIHF 76.8; USAH 204(a); PWHL 84.1, not for the penalized team: 15.5)
@@ -943,7 +943,7 @@ Rule: The substitution exception is written two ways — Hockey Canada 6.2(d) an
 Rule: The replacement centre must come into position quickly or risk the puck being dropped without them set — or being removed themselves, which counts as a second faceoff violation on the same draw and costs the team a bench minor for delay of game (NHL Rule 76.4)
 Rule: No time-out shall be granted following a faceoff violation (Rule 87.1; IIHF Rule 87.1 in the same words, unchanged across both IIHF editions)
 Rule: Under the IIHF 2025/26 book a violation was a warning to the team, not a removal, and the warned centre stayed for the re-drop (IIHF 2025/26 Rules 76.4, 76.6, 76.7)
-Rule: The IIHF 2026/27 book removes the centre for a violation instead — ejected under 76.6, replaced under 76.3 and 76.4 — so a British reader should expect the centre to come off, as under NHL rules
+Rule: The IIHF 2026/27 book removes the centre for a violation instead — ejected from the circle under 76.6, replaced under 76.3 and 76.4 — so a British reader should expect the centre to come off, as under NHL rules
 Rule: And under the IHUK In-House Rules 2026-27 the IIHF edition no longer needs settling — they replace the centre for all violations bar those on post-icing draws. The Elite League still runs on the IIHF book, which its Casebook names as the 2026/27 edition
 Rule: The IHUK In-House Rules govern "in England, Wales, Scotland and Northern Ireland" and their Rule 76 amendment names no league, but the Elite League appears nowhere in them — an EIHL centre is removed under the 2026/27 IIHF book's own Rule 76 instead (EIHL Casebook 26-27)
 Rule: IIHF counts winning the draw with your skates as a violation in both editions (IIHF Rule 76.3(VI))
@@ -1071,7 +1071,7 @@ Rule: After an icing the IIHF imposes both the no-change rule and the time-out b
 Rule: Hockey Canada is a fourth answer — 6.7(d) applies the no-change rule in U18AAA and Junior, and in Senior at the Member's option; 6.7(d)(iii) lets either team take its time-out after an icing, though the team that iced may not substitute during it
 Rule: CARHA writes no icing change bar and no time-out, but Rule 19(d) allows each team one change per stoppage, and a late change is sent back the first time and a bench minor after that (19(e), 19(g))
 Rule: Under NHL, IIHF and PWHL rules the attacking team picks the dot (81.2, PWHL 83.2), under Hockey Canada only in Junior and Senior (6.4(b)); USA Hockey (624(a)) and CARHA (65(a)) give no choice
-Rule: Under the NHL, the PWHL and the IIHF 2026/27 book the first faceoff violation after an icing ejects nobody's centre, on either team (NHL and IIHF 76.4, PWHL 78.4)
+Rule: Under the NHL, the PWHL and the IIHF 2026/27 book the first faceoff violation after an icing takes nobody's centre off the dot, on either team (NHL and IIHF 76.4, PWHL 78.4) — under the IIHF, not once penalties after the icing have let players change (Situation 81.18)
 Rule: The free first faceoff violation after an icing is Hockey Canada's only in Junior divisions (Rule 6.5(a)), and neither USA Hockey (613) nor CARHA (57) writes one at all
 Rule: The IIHF 2025/26 book had no post-icing carve-out and needed none, because its first violation on any draw was already a warning (IIHF 2025/26 Rules 76.6, 76.7)
 Rule: In the Elite League a first violation usually gets the centre replaced, except after an icing unless penalties sent both teams to change first (IIHF 2026/27 Rule 76.4, Situation 81.18); the In-House Rules reach the same place on their own, their icing exception unconditional
@@ -1091,7 +1091,7 @@ The single most exploitable situation in the game, and it works in both directio
 - **Hockey Canada** applies the no-change rule only *"[i]n categories of U18AAA, Junior, and at the option of the Member in Senior"* (6.7(d)), so below those there is no freeze to exploit. Where it applies, either team may still take its time-out, but the team that iced may not substitute during it (6.7(d)(iii)). [Rules Primer](../foundation/rules_primer.md) has the full comparison.
 - **CARHA** writes no icing freeze and no time-out, and gives no choice of dot (65(a)), but allows each team *"only one change of player(s)"* per stoppage within ten seconds (19(d), 19(g)); a late change is sent back the first time and is a bench minor after that (19(e)). **No matchup edge to chase — change once, promptly.**
 
-**When you iced it:** you are tired, stuck in your own end, and cannot rest. Get the puck off the glass and out at the first chance; nothing clever. **The first faceoff violation after an icing does not eject the centre** (Rule 76.4) — one free warning for each team, so do not count on their centre being tossed either. In Britain the IIHF 2026/27 book and the In-House Rules give the same carve-out. ⚠️ **In a North American game, check first:** Hockey Canada gives it only in Junior (6.5(a)), and USA Hockey and CARHA not at all. See "The icing exception" above.
+**When you iced it:** you are tired, stuck in your own end, and cannot rest. Get the puck off the glass and out at the first chance; nothing clever. **The first faceoff violation after an icing does not take the centre off the dot** (Rule 76.4) — one free warning for each team, so do not count on their centre being replaced either. In Britain the IIHF 2026/27 book and the In-House Rules give the same carve-out, though under the IIHF it ends once penalties after the icing have let players change. ⚠️ **In a North American game, check first:** Hockey Canada gives it only in Junior (6.5(a)), and USA Hockey and CARHA not at all. See "The icing exception" above.
 
 ### In the last minute
 
@@ -1200,7 +1200,7 @@ Rule: Under the In-House Rules that lesson does not wait on the IIHF edition —
 - **End every practice with draws.** Ten minutes, both circles, both grips. It is the standard coaching advice, and it works because nobody has to plan it.
 - **Practise the technique you are worst at**, not the strong-side backhand pull you already trust. Your weak-side draws are where the points are.
 - **Rehearse alignments, not just the draw.** All five skaters on the ice: run the win, the loss and the tie-up. Most faceoff goals against come from four players not knowing what to do, not from the centre losing it.
-- **Practise as the replacement.** Every winger will take a draw in a game after their centre is tossed — and some will move to centre for good, which [Switching Positions](../positions/switching_positions.md) covers.
+- **Practise as the replacement.** Every winger will take a draw in a game after their centre is thrown off the dot — and some will move to centre for good, which [Switching Positions](../positions/switching_positions.md) covers.
 - **Off-ice: grip and hand speed.** Coaching sources recommend wrist and grip strengthening and hand-eye work (dribbling a golf ball with a stick is the classic), on the premise that a draw is a hand-speed event before a strength one — **coaching craft; there is no published measurement of faceoff reaction times, so do not quote a figure.** See [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md).
 - **Scout from the bench.** Watch the opposing centres while you rest. It is free, and almost nobody does it.
 - **Teach your wingers the encroachment rule.** Thirty seconds, and it stops a winger's early step costing your centre their place — under the NHL, under IIHF 76.6 since the 2026/27 edition, and in Britain under the In-House Rules on every draw but one after an icing. Only the superseded IIHF 2025/26 edition cost the team a warning instead, and that is the version a British coach may still be teaching.
@@ -1269,7 +1269,7 @@ document, that is named too.*
    team in the book you play under in Britain? **Then say what the same skate costs
    your centre in all six books if it finds the opponent rather than the puck.**
    *(§Using your feet — the puck, the man, and the goal, §When your
-   centre gets tossed — and the edition that changed where)*
+   centre is thrown off the dot — and the edition that changed where)*
 
 4. Which faceoff circle is your strong side? Give the self-test that does not
    depend on anybody's convention — then say why "pull it to my backhand
@@ -1310,7 +1310,7 @@ document, that is named too.*
 9. **Keep the playbook small enough that the whole line can run it.** Two or three plays per zone, called in one word and acknowledged by everyone, each with a failure branch. When the call is confused or a replacement is in the dot, tie up in your own end and take the point shot in theirs.
 10. **When they ice the puck, win the draw and attack before they breathe.** Under the NHL, IIHF and PWHL books they can neither change nor take a time-out; under other books, check. Where you pick the dot, take your centre's strong side. **When you iced it, get the puck out at the first chance.**
 11. **Late on, the score decides the draw.** Protecting a one-goal lead in your end, settle for the tie-up or send your best taker with a plan for a loss. Chasing a goal, win it straight back to a set shooter with a body at the net. Against a pulled goalie, shoot at the empty net only with a clean lane.
-12. **Before every draw, tell your linemates: skates and sticks behind your own hash mark, skates off the circle line.** In all six books a teammate stepping in early gets your **centre** thrown out of the draw, not themselves. ⚠️ **And once the whistle blows, stay outside the circle** — a scrum that crosses it moves the draw to the neutral zone.
+12. **Before every draw, tell your linemates: skates and sticks behind your own hash mark, skates off the circle line.** In all six current books a teammate stepping in early gets your **centre** thrown out of the draw, not themselves. ⚠️ **And once the whistle blows, stay outside the circle** — a scrum that crosses it moves the draw to the neutral zone.
 13. **Replacing a centre sent from the dot? Know beforehand if it is you, and take it straight.** Nobody moves early, leans or reaches; let the official clear the dot. ⚠️ **A second violation can cost a minor in any book, and in most it will. Pre-drop contact with the other centre is never free:** the referee may add a minor — must, under USA Hockey, Hockey Canada and CARHA.
 14. **Put the whole blade flat in the white and leave it there until the puck lands**; the toe alone fails under CARHA and the In-House Rules. ⚠️ **Never refuse to put your stick down to wait the other centre out:** every book can take you out of the dot for it. **When you must place first, vary the angle.**
 15. **On the power play, do not lose the draw cleanly; on the kill, a tie-up is a win.** ⚠️ **A clean shorthanded win can go straight down the ice — but USA Hockey allows that only at Youth 15-Only and above, Girls 16U and above, High School and Adult, and the NHL and PWHL withdraw it after an unfilled major.**
