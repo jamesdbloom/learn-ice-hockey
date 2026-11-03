@@ -819,7 +819,9 @@ const twoOnOne = {
   players: [
     { id: 'F', team: 'opp', pos: 'F', at: CARRIER_6, label: 'puck carrier' },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'neutral-dot:left', dx: 6, dy: 8 },
-      label: 'the pass you take away' },                                        // (26, -14)
+      // labelHint: below-right on a short leader. The unhinted slot put the words across the
+      // neutral-zone dot (label audit, 3 Nov 2026).
+      label: 'the pass you take away', labelHint: [10, -6] },                                        // (26, -14)
     { id: 'D', pos: 'D', at: D_LANE, label: 'in the passing lane' },
     { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
   ],
@@ -1044,7 +1046,9 @@ const dToD = {
     // how a re-render acquires a new collision.
     { id: 'G', pos: 'G', at: { at: 'crease', dx: 1 } },
     { id: 'D', pos: 'D', at: D_STRONG, label: 'you, with the puck' },
-    { id: 'D', pos: 'D', at: D_WEAK,   label: 'your partner' },
+    // labelHint: below and left, inside the circle like the label above. The unhinted slot
+    // put the words across the left faceoff dot (label audit, 3 Nov 2026).
+    { id: 'D', pos: 'D', at: D_WEAK,   label: 'your partner', labelHint: [-10, -6] },
     // In the low slot, inside the shaded band. At (74, 9) he stood 2 ft OUTSIDE the
     // corrected region while the describe text said he "stands in the slot"; at (78, 4)
     // his glyph overhung the band's top edge and its white halo ate the last letter of
@@ -1229,7 +1233,9 @@ const wingerDzReverse = {
     // (the winger's ink spans x 65.725 to 72.275; this centroid is at x = 60) and the
     // picture reads as a player who has gone by rather than one standing beside him.
     { id: 'F',  team: 'opp', pos: 'F', at: { at: 'half-wall:right', dx: -9, dy: -5.5 },
-      label: 'has skated past you' },
+      // labelHint: to his left, on a short level leader, clear of every line. The unhinted
+      // slot put the words across the faceoff dot (label audit, 3 Nov 2026).
+      label: 'has skated past you', labelHint: [-20, 0] },
     { id: 'RW', pos: 'F', at: { at: 'half-wall:right', dy: -3.1 } },
     // Arriving behind, from the corner side. At (80, 28) he is 12.6 ft from the winger,
     // so the two circles are 6.05 ft apart in ink, and he is deeper than the puck —

@@ -738,7 +738,9 @@ const pkDiamond = {
     // "two in the middle on either side" — each takes a half-wall, and both
     // collapse onto the bumper, so they sit between the two.
     { id: 'M', pos: 'F', at: { at: 'faceoff-dot:right', dx: -2, dy: -8 }, label: 'wall and bumper' },
-    { id: 'M', pos: 'D', at: { at: 'faceoff-dot:left', dx: -2, dy: 8 },   label: 'wall and bumper' },
+    // labelHint: below the dot, mirroring the label above. The unhinted slot put the words
+    // across the faceoff dot (label audit, 3 Nov 2026).
+    { id: 'M', pos: 'D', at: { at: 'faceoff-dot:left', dx: -2, dy: 8 },   label: 'wall and bumper', labelHint: [0, -12.5] },
     { id: 'L', pos: 'D', at: { at: 'net-front', dx: -3, dy: -4 },         label: 'alone, low' },
 
     ...PP_131_OPP,

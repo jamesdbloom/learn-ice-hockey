@@ -118,7 +118,9 @@ const containment122 = {
     // F2 steps up on. Nobody else is drawn, because the section names nobody else.
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
     { id: 'D', team: 'opp', pos: 'D', at: C_CARRIER, label: 'puck carrier' },
-    { id: 'D', team: 'opp', pos: 'D', at: { at: 'corner:left', dx: -6 }, label: 'the D-to-D' },
+    // labelHint: inside the circle, between the dot and him. The unhinted slot put the words
+    // across the faceoff dot (label audit, 3 Nov 2026).
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'corner:left', dx: -6 }, label: 'the D-to-D', labelHint: [-9, 7] },
     { id: 'W', team: 'opp', pos: 'F', at: C_W1, label: 'receives on the wall' },
 
     // Ours. 1 - 2 - 2, read from the puck outward.

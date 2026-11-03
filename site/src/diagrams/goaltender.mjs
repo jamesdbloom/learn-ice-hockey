@@ -609,7 +609,9 @@ const rimStopOrClear = {
 
   players: [
     { id: 'G', pos: 'G', at: G_KILL_RIM, label: 'kill it and leave it' },
-    { id: 'D1', pos: 'D', at: D_COMING_BACK, label: 'your defenceman' },
+    // labelHint: inside the circle, above the dot. The unhinted slot put the words across the
+    // faceoff dot at the end of a long leader (label audit, 3 Nov 2026).
+    { id: 'D1', pos: 'D', at: D_COMING_BACK, label: 'your defenceman', labelHint: [-21, -4] },
   ],
 
   routes: [{ from: RIM_START, to: RIM_KILL_END, kind: 'pass', bow: 8 }],

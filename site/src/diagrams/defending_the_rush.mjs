@@ -748,9 +748,12 @@ const backcheckLanes = {
     { id: 'A1', team: 'opp', pos: 'F', at: A1_LANE, label: 'puck carrier' },
     { id: 'A2', team: 'opp', pos: 'F', at: A2_LANE, label: 'middle driver' },
     { id: 'A3', team: 'opp', pos: 'F', at: A3_LANE },
-    { id: 'W1', pos: 'F', at: W1_LANE, label: 'outside lane' },
+    // labelHints: both "outside lane" labels sit IN the outside lane, off the shaded band's
+    // edge. Unhinted, both lay along that edge and the upper one ran into the neutral-zone dot
+    // (label audit, 3 Nov 2026).
+    { id: 'W1', pos: 'F', at: W1_LANE, label: 'outside lane', labelHint: [20, -4] },
     { id: 'C',  pos: 'F', at: C_LANE,  label: 'middle lane' },
-    { id: 'W2', pos: 'F', at: W2_LANE, label: 'outside lane' },
+    { id: 'W2', pos: 'F', at: W2_LANE, label: 'outside lane', labelHint: [22, 3] },
     { id: 'G',  pos: 'G', at: OWN_G },
   ],
 

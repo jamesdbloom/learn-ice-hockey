@@ -246,7 +246,9 @@ const wideEntry = {
     // "A third player high for the back-door or point option" — the section's own
     // words, and one player genuinely offering either, so the label says both.
     { id: 'F',  pos: 'F', at: { at: 'top-of-circle:left', dy: 8 },               // (54, -14)
-      label: 'high: back-door or point' },
+      // labelHint: about 8 ft left of where the placer put it. The unhinted slot put "point" across the faceoff
+      // dot; the label is too long to clear the circle's arc as well (label audit, 3 Nov 2026).
+      label: 'high: back-door or point', labelHint: [-8, -6] },
   ],
 
   routes: [
@@ -1052,7 +1054,9 @@ const middleDrive = {
     { id: 'D', team: 'opp', pos: 'D', at: MD_D_HIGH },
     { id: 'D', team: 'opp', pos: 'D', at: MD_D_LOW },
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'F', pos: 'F', at: MD_CARRIER, label: 'carrier, wide' },
+    // labelHint: above him, toward the boards. The unhinted slot put the words across the
+    // neutral-zone dot (label audit, 3 Nov 2026).
+    { id: 'F', pos: 'F', at: MD_CARRIER, label: 'carrier, wide', labelHint: [0, 7] },
     { id: 'F', pos: 'F', at: MD_DRIVER,  label: 'no puck, full speed' },
   ],
 
@@ -1372,7 +1376,7 @@ const highTriangle = {
     { id: 'D', team: 'opp', pos: 'D', at: TRI_D_NEAR, label: 'goes with the wide driver', labelHint: [0, -7.5] },
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 10, dy: -8 } },  // (35, -8)
     { id: 'F', pos: 'F', at: TRI_CARRIER, label: 'drives wide, has the puck', labelHint: [0, -7.5] },
-    { id: 'F', pos: 'F', at: TRI_WIDE, label: 'drives wide, no puck', labelHint: [0, 8] },
+    { id: 'F', pos: 'F', at: TRI_WIDE, label: 'drives wide, no puck', labelHint: [0, 6] },   // [0, 8] sat on the neutral-zone dot; [0, 6] mirrors the carrier's label (3 Nov 2026)
     { id: 'F', pos: 'F', at: TRI_TRAILER, label: 'trails to the high slot', labelHint: [11.03, -15.25] },
   ],
 
