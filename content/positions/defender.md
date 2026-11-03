@@ -213,7 +213,7 @@ Position: Wherever the puck is on your side — the corner and behind the net in
 Action: Pressure the puck carrier directly, or angle them away from the net and the slot
 Technique: Pin the puck, not the player, with skate or stick for a second or two until help arrives, then move it. Never hold it to get a whistle; under USA Hockey three seconds is already a minor
 Rule: Freezing the puck on the boards for a whistle is a minor in every book — NHL and IIHF 63.2(i), PWHL 65.2(i) if deliberate; USA Hockey after three seconds (Casebook 632); HC and CARHA excuse it while you are being checked (10.1, 74(b)) but not to get the whistle (HC 6.12(b), CARHA 55(a) bench minor)
-Rule: Pinning the player, not the puck, is priced — USA Hockey's Note to Rule 622 calls arms that pin an opponent to the boards holding, and IIHF women's Rule 101.1 bars using the boards to eliminate, push or pin her
+Rule: Pin the puck, never the player — arms that restrain a player are holding in every book, puck or no puck (NHL and IIHF 54, PWHL 55, HC 8.1, CARHA 63); USA Hockey's Note to 622 names the arm pin on the boards, and IIHF women's 101.1 bars using the boards to push or pin her
 Goal: Win the puck or force a bad play that your team can recover from
 Convention: Carrier behind your net — hand them over at the post rather than chasing them round; it is a common default, not the only one, so ask which your team plays
 Convention: Under low zone collapse the wingers stay high and the low battle is yours and the centre's; under man-on-man they follow their check into the corner — one of several coverage systems, and a coaching choice rather than a law of hockey
