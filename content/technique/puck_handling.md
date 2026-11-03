@@ -496,7 +496,7 @@ Rule: An ejection can cost the next game too — under USA Hockey 404(b) any gam
 Rule: You may use your arm in a strength move to block, with body position and no holding or cross-check — NHL and IIHF 54.2, PWHL 55.2, and Hockey Canada 8.1 — but 7.3 bars a push in its non-checking divisions; not USA Hockey, whose 622 makes a free arm that restrains or impedes holding, nor CARHA
 Technique: Keep the free hand high on your own shaft and use the bar of forearm and shaft as a brace, never a push — driven into an opponent it is a cross-check, and CARHA's definition needs no force
 Never: Hang onto an opponent's stick after fending it off
-Key: The infraction is holding, not interference — interference concerns a player who does not have the puck
+Key: A free hand that grabs or restrains is holding, not interference, whoever has the puck
 Rule: The IIHF's free-hand wording is substantively identical to the NHL's; USA Hockey's Rule 622 names using a free hand to clutch, grab or hold the stick as holding and writes no fend-off permission — but its Casebook does, for the opponent's body, never their stick
 ```
 
@@ -518,7 +518,7 @@ Rule: The IIHF's free-hand wording is substantively identical to the NHL's; USA 
 - **Rule 56.1, "Free Hand":** *"When a free hand is used to hold, pull, tug, grab or physically restrain an opponent from moving freely, this must be penalized as holding. The free hand may be used by a player to 'fend off' an opponent or his stick, but may not be used to hold an opponent's stick or body."*
 - **Rule 54.2, Holding:** *"A player is permitted to use his arm in a strength move, by blocking his opponent, provided he has body position and is not using his hands in a holding manner, when doing so."*
 
-The infraction here is **holding**, not interference — interference concerns a player who does *not* have the puck, which is not you when you are carrying it. Some coaches say "that's interference"; the correct word is holding.
+The infraction here is **holding**, not interference, whoever has the puck: Rule 56.1 says a free hand that restrains *"must be penalized as holding"*. Some coaches say "that's interference"; the correct word is holding.
 
 **The IIHF's definition is substantively identical to the NHL's** — same test, same permitted use: *"The 'free hand' may be used by a Player to 'fend off' an opponent or their stick but may not be used to hold an opponent's stick or body."* **The PWHL prints the same sentences at its Rule 57.1.** ⚠️ **USA Hockey reaches the same prohibition and writes its permission somewhere else.** Its **Rule 622 – Holding an Opponent** makes it a minor to use *"a free hand to clutch, grab or hold the stick, jersey or body on the opponent"*, and carries no fend-off permission. Its **Casebook** grants one, on conditions (Standard of Play, **Situations 6 and 7**). You must be in control of the puck, or reaching for it while physically engaged *"in the corner or in front of the goal"*, and you may only *"maintain body position that they legally established"*. But *"if they grab the stick, sweater or arm of the opponent, or use the free arm to push off and create space, a penalty should be assessed."* It covers fending off **the opponent, not their stick** — Rule 622 still makes a hand on their stick holding. Under USA Hockey, the brace on your own stick is the habit that needs no conditions met.
 

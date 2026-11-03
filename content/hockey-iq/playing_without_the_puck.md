@@ -11,7 +11,7 @@
 
 **Defending, watch your man rather than the puck.** Five teammates already watch the puck; nobody else watches your man. Keep them in your peripheral vision and take short looks at the puck. If you cannot see both in one glance, move.
 
-**Stick in the passing lane, body between your man and your own net.** Lay the blade flat in the lane, never across them, which is a restraining foul. If you cannot do both in your own zone, net-side wins.
+**Stick in the passing lane, body between your man and your own net.** Lay the blade flat in the lane, never across anyone, which is a restraining foul. If you cannot do both in your own zone, net-side wins.
 
 **Layer behind the pressure — never duplicate it.** One player pressures the carrier; the next sits behind them, taking away the pass the carrier wants. Two on one puck leaves an attacker free. A planned double-team or man-to-man coverage is the exception, so ask.
 
@@ -253,7 +253,7 @@ The technique is to keep your assignment in your **peripheral vision** while you
 ```facts
 Technique: Blade on the ice, flat, in the passing lane between the puck and your man — a stick held six inches up removes nothing
 Position: Put your body between your man and your own net, not between your man and the puck
-Never: Put your stick on a man who does not have the puck — the blade goes in the passing lane, and laid across them it is a restraining foul instead
+Never: Lay your stick across anyone, puck or no puck — that is hooking or holding. Off the puck the blade goes in the passing lane; on the carrier, play the puck or lift their stick well below the hands
 Technique: Face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane
 Priority: When you cannot both seal the lane and stay net-side, net-side wins in the defensive zone
 Key: A pass completed twenty feet from your net is survivable; a player alone at the goalmouth is not
@@ -270,7 +270,7 @@ Doing both at once is a body-position problem: face up-ice enough to see the pla
 
 **Your man does not have the puck, and that limits both tools.** You may use body position to make their path to the puck longer, but not with your stick, not with your free hand, and not as cover for an otherwise illegal check (NHL and IIHF 56.1, PWHL 57.1). USA Hockey's Preface says the same — a skater keeping their own lane may *"force an opponent to take a less direct route to the puck"*, without a hand or arm. So the blade goes in the lane, not on them, and you take the ice by getting to the spot first, not by stepping across into them once they are moving.
 
-**Under Hockey Canada or in a CARHA adult league, hold only the ice you already have.** Hockey Canada writes no such right, and CARHA's Note 2 gives it only to *"the defending players"*, who may *"stand their ground"* or *"shadow"* attackers. Both make it interference to impede an opponent *"not in possession of the puck"* (Hockey Canada 8.3, CARHA 66(a)). CARHA 49(a) also reaches a player who *"does not avert body contact with an opponent"* — a minor, or a major that ends your game (30(a)).
+**Under Hockey Canada or in a CARHA adult league, hold only the ice you already have.** Hockey Canada writes no such right, and CARHA's Note 2 gives it only to *"the defending players"*, who may *"stand their ground"* or *"shadow"* attackers. Both make it interference to impede an opponent *"not in possession of the puck"* (Hockey Canada 8.3, CARHA 66(a)). **In every book, once your man has the puck you still may not hold them:** holding reaches a player with or without the puck (NHL and IIHF 54.1, PWHL 55.1, Hockey Canada 8.1, CARHA Glossary and 63, USA Hockey 622). CARHA 49(a) also reaches a player who *"does not avert body contact with an opponent"* — a minor, or a major that ends your game (30(a)).
 
 ### Layer, do not duplicate
 
