@@ -307,7 +307,7 @@ const dzoneAlignment = {
     // other than the taker "makes physical contact with an opponent" before the drop. USA
     // Hockey is the one book that does not name a non-taker's contact -- 613(e) reaches the
     // players facing off -- so it is left unnamed here rather than swept in.
-    'Contact is priced separately, and it usually costs your centre the dot: any physical contact with an opponent ' +
+    'Contact is priced separately, and it usually gets your centre thrown off the dot: any physical contact with an opponent ' +
     'before the drop is a violation in its own right under those same NHL, IIHF and PWHL rules, ' +
     'and under Hockey Canada Rule 6.2(a) and CARHA Rule 57(a), a non-taker who makes contact with ' +
     'an opponent gets their own centre ejected from the dot.',

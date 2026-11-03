@@ -16,7 +16,7 @@
 
 **After one misconduct, play as though the next one ends your game.** Under the In-House Rules misconducts come from kit as well as fouls — a missing neck guard, a loose chin strap after a team warning, playing on without your helmet — and from a dive.
 
-**Keep your wingers out of the faceoff circle until the puck drops, and have a second player ready to take the draw.** Under the In-House Rules and in the Elite League alike, most violations cost your centre the dot.
+**Keep your wingers out of the faceoff circle until the puck drops, and have a second player ready to take the draw.** Under the In-House Rules and in the Elite League alike, most violations get your centre replaced for that draw.
 
 **At U12 in IHUK's junior leagues, play on without waiting for an icing or offside whistle, and clear the zone at once when the official calls your team out.** Neither whistle comes. ⚠️ **Not clearing quickly is a delay-of-game penalty.**
 
@@ -271,7 +271,7 @@ Two sentences, both new for 2026-27, both under In-House **Rule 76 – Face-Offs
 
 **Either centre may put their stick down first.** *"Linespersons must ensure both centres are squared up correctly behind their marks with the whole of their stick blades (not toe or heel) in the white portion of the face-off circle. Either centre can now put their stick down first for a face-off."* ⚠️ **That is a British departure from the IIHF book.** IIHF Rule 76.4 gives the order to the **defending** player at eight of the nine spots and to the **visiting** player at centre ice, in both editions.
 
-**The Elite League keeps the IIHF order and blade standard.** The In-House Rules never name it, and its Casebook writes no Rule 76, so an EIHL draw runs IIHF Rule 76 unamended: ⚠️ **the defending centre's stick goes down first at the eight spots outside centre ice, the visiting centre's at centre ice, and *"at least the toe of the blade"* in the white is enough.** A violation still costs an EIHL centre the dot on most draws, under the IIHF's own 2026/27 book.
+**The Elite League keeps the IIHF order and blade standard.** The In-House Rules never name it, and its Casebook writes no Rule 76, so an EIHL draw runs IIHF Rule 76 unamended: ⚠️ **the defending centre's stick goes down first at the eight spots outside centre ice, the visiting centre's at centre ice, and *"at least the toe of the blade"* in the white is enough.** A violation still gets an EIHL centre replaced on most draws, under the IIHF's own 2026/27 book.
 
 [Faceoffs](../systems/faceoffs.md) covers what both changes do at the dot.
 
@@ -503,7 +503,7 @@ A team manager may sit on the bench but does not count toward the requirement. O
 - **Using last season's birth-year table.** Take the bands from the current season's In-House Rule 200. ⚠️ **Every band moved a full year for 2026-27**, so an old table puts a child in the wrong age group in a contact sport.
 - **Waiting for an icing or offside whistle at U12 in IHUK's junior leagues.** Play on, and when the official calls your team out, get everyone back over the line at once. Neither whistle comes, and ⚠️ **not clearing the zone quickly is a delay-of-game penalty.** From U14 up it is the ordinary stop-clock game.
 - **Treating U12 minors like adult ones.** **Ask your coach or the officials before the game how they count it.** It is three minutes — four in a four-line game — served on your own line's shifts, and the rules do not say whether that runs on the game clock or only while your line is out, nor whether your team plays short. Coincidental penalties do not cancel at U12, and jumping onto the wrong line is itself a minor.
-- **Thinking only the centre's own violation costs the draw.** Keep your wingers out of the circle until the puck drops, and have a second player ready. Under the In-House Rules a winger's violation gets your centre replaced on any draw except after an icing. ⚠️ **In the Elite League the same encroachment still costs your centre** on most draws, under the IIHF's own 2026/27 book — though there the defending centre's stick goes down first.
+- **Thinking only the centre's own violation counts.** Keep your wingers out of the circle until the puck drops, and have a second player ready. Under the In-House Rules a winger's violation gets your centre replaced on any draw except after an icing. ⚠️ **In the Elite League the same encroachment still gets your centre replaced** on most draws, under the IIHF's own 2026/27 book — though there the defending centre's stick goes down first.
 - **Thinking a dive costs two minutes.** Stay on your feet. Under the In-House Rules a dive is a minor plus a 10-minute misconduct: twelve minutes, with your team short for two. A goalie's teammate serves it for them, but the misconduct still counts toward the two that end the goalie's game. The Elite League keeps the plain minor.
 - **Finding no checking age in the rule book and assuming the North American one.** Ask your league before you hit anyone. Your competition's Rules of Competition sets it, and in the four read here the junior line falls between **U12 and U14**. A junior who plays up — one age group, or into the NIHL from 16 (15 with approval) — is under the older game's line. ⚠️ **"IHUK runs my league" does not answer it** for NIHL National, the SNL or BUIHA Varsity.
 - **Hearing "cross-checking" instead of "checking to the head" and thinking it was the lesser call.** It was not: both are on the automatic-ejection table, so a major for a cross-check to the head ejects you under either name. Don't cross-check at all — treat one into an opponent's back as checking from behind, whether or not they see it coming, which has no minor — plan on a major and an automatic game misconduct. ⚠️ **Interference and tripping sit on the discretionary table**, where the ejection is the referee's judgement. See §Officials have been told to call the foul what it is.
@@ -619,7 +619,7 @@ document, that is named too.*
 
 2. **In EIH or SIHA competition, take the referee's call as the call.** There is no on-ice video review and no Coach's Challenge there. The Elite League keeps both.
 
-3. **Keep your wingers out of the faceoff circle until the puck drops, and have a backup centre ready.** Under the In-House Rules almost any violation replaces your centre, and either centre may put the stick down first. ⚠️ **Neither change reaches the Elite League**, but a winger in the circle still costs your centre there on most draws.
+3. **Keep your wingers out of the faceoff circle until the puck drops, and have a backup centre ready.** Under the In-House Rules almost any violation replaces your centre, and either centre may put the stick down first. ⚠️ **Neither change reaches the Elite League**, but a winger in the circle still gets your centre replaced there on most draws.
 
 4. **Wear a neck guard at any age every time you are on the ice, and leave the ice if it comes off.** The In-House Rules give **no warning**: a 10-minute misconduct. The Elite League warns first, then climbs to a game misconduct, and covers practice. England Ice Hockey's practice rule may not reach Scotland or Northern Ireland; wear it anyway.
 
