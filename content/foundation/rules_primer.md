@@ -1182,7 +1182,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 7. **If you can see an opponent's numbers, pull up and play the puck.** ⚠️ **A hit from behind can end your game in every book, and most eject at the first tier.** Under Hockey Canada and CARHA, driving a player who cannot protect themselves into the boards or net is a mandatory match penalty.
 
-8. **Keep your stick on the puck and your feet out of theirs.** ⚠️ **Most books eject a slew-foot at the first tier; CARHA and Hockey Canada eject any cross-check above the shoulders (in Hockey Canada minor and female hockey, a deliberate one).** Under USA Hockey a reckless hook, slash, trip, cross-check or high stick ejects you: plan on a match and a likely multi-game suspension.
+8. **Keep your stick on the puck, your feet out of theirs.** ⚠️ **Most books eject a slew-foot outright; CARHA and Hockey Canada eject any cross-check above the shoulders (in Hockey Canada minor and female hockey, a deliberate one).** Under USA Hockey a reckless hook, slash, trip, cross-check or high stick ejects you: plan on a match and a likely multi-game suspension.
 
 9. **Screen the goalie from outside the crease, without contact, and never stand in their road back.** Keep off the blue paint and its red line. ⚠️ **Contact with the goalie can end your game, and a charge on them must** — always under Hockey Canada, under CARHA in their crease or if they are hurt, under USA Hockey if reckless.
 
