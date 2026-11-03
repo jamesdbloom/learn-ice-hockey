@@ -557,7 +557,16 @@ const forecheck122 = {
     //     site/src/data/rink.json; this said 7 ft). Safety must
     //     not depend on a coordinate edited for a cosmetic reason, so the endpoint
     //     is now expressed relative to the winger himself and capped.
-    { from: F2_FOX, to: { at: 'half-wall:right', dx: -11, dy: -2 }, kind: 'pressure', bow: -2 },
+    //     badge (SG157, 3 Nov 2026): the default tag, at the midpoint of this 7.7 ft route,
+    //     sat on F2's ring. Measured with the tag's 0.4 stroke against the ring's ink
+    //     (r 3.275) and the end bars' 0.8 stroke: on the LEFT of travel no `along` clears
+    //     both (6 ft cleared the ring by 0.06 ft and covered the bars' left ends). On the
+    //     RIGHT, 4.5 ft along clears the ring by 0.65 ft, the end bars by 0.65 ft and the
+    //     route by about 0.1 ft. The cost is a short arc of the faceoff circle under the
+    //     tag's white box. A flatter bow would move the route, which the arrival history
+    //     above says not to do for looks.
+    { from: F2_FOX, to: { at: 'half-wall:right', dx: -11, dy: -2 }, kind: 'pressure', bow: -2,
+      badge: { along: 4.5, side: 'right' } },
     // 3 — the outlet. Whether it beats F2 is not settled here.
     // badge: the default tag, at the pass's midpoint, sat on the end of "the outlet". Three
     // feet along it sits beside the start of the pass, inside the circle and clear of the

@@ -713,7 +713,7 @@ const regroup = {
 // everything is covered — so rather than forcing it, they simply give it back to
 // you. **You are now the best-placed player on the ice**: behind the play, in the
 // middle of the sheet, facing up ice with everything in front of you and nobody
-// near you, because the forecheck has committed to the side the puck was just on."
+// near you, because the forecheck has committed to the other side."
 //
 // WHY A SECOND REGROUP PICTURE. `nz-regroup-d-to-d` above stops at the pass across
 // and draws the three forwards' depths; it says nothing about what the passer does
@@ -740,8 +740,8 @@ const regroup = {
 // picture has two dashed lines running side by side.
 //
 // THE TWO OPPONENTS ARE THE SECTION'S OWN, and there are only two because the
-// section says only two things about the forecheck: that it has "committed to the
-// side the puck was just on", and that a forecheck taking away "the cross-ice pass
+// section says only two things about the forecheck: that it "has committed to the
+// other side", and that a forecheck taking away "the cross-ice pass
 // to the far forward" is the one that concedes the hinge. So: one low on the puck's
 // side, one in the lane from the puck to the far winger. NEITHER is between the two
 // defencemen — the section above forbids a D-to-D made blind with a forechecker in
@@ -811,13 +811,12 @@ const hinge = {
 
   players: [
     // Only as much opposition as the section describes, and no more.
-    // ⚠️ NO labelHint, AND NOT FOR WANT OF TRYING. Its words cover the neutral-zone faceoff
-    // dot at (20, -22). A sweep of every hint within 30 ft of this F, at 0.5-1 ft steps
-    // (SG108, 27 Oct 2026), found the placer honours only slots 25.5-30 ft to its right and
-    // 7-9 ft toward mid-ice, and every one of them still covers that dot: at this length the
-    // label is about 50 ft wide. Clearing it
-    // needs a shorter label or a moved player, not a hint.
-    { id: 'F', team: 'opp', pos: 'F', at: H_OPP_LOW, label: 'committed to that side' },
+    // "committed", not "committed to that side" (SG157, 3 Nov 2026). The long label was about
+    // 50 ft wide and every slot the placer honoured for it covered the neutral-zone faceoff dot
+    // at (20, -22) (hint sweep to 30 ft, SG108). At 20 ft wide it sits beside this F with no
+    // leader, 4.6 ft clear of the dot. The word is the section's ("the forecheck has committed to
+    // the other side", neutral_zone_systems.md:535); where the glyph stands shows which side.
+    { id: 'F', team: 'opp', pos: 'F', at: H_OPP_LOW, label: 'committed', labelHint: [16, 0] },
     // ⚠️ THE LABEL NAMES THE LANE, NEVER THE PASS. "Takes the cross-ice pass" was
     // here, and in English and in hockey "takes the pass" means RECEIVES it — so the
     // label attributed the reception of a cross-ice pass to an OPPONENT, one word

@@ -750,14 +750,16 @@ const flipOverTrap = {
     { id: 'F', team: 'opp', pos: 'F', at: TRAP_FORECHECKER, label: 'one forechecker', labelHint: [-4, -7.5] },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dy: 30 } },            // (0, 30)
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dx: 2 },               // (2, 0)
-      label: 'three across the middle' },
+      label: 'three across' },
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'centre-ice', dy: -30 } },           // (0, -30)
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 7, dy: -14 },       // (32, -14)
       // labelHint: under the D, shifted 4 ft toward their goal (SG108, 27 Oct 2026). Unhinted,
       // the words sat over the blue line with the neutral-zone faceoff dot at (20, -22) just
-      // left of "one", where it read as a bullet. Here they clear the blue line and sit about
-      // 6 ft from the dot, close enough to the D that the placer draws no leader.
-      label: 'one back', labelHint: [4, -9] },
+      // left of "one", where it read as a bullet. [4, -9] cleared the blue line but left the
+      // words level with the dot, 7 ft to its right, so it still read as one (SG157, 3 Nov 2026).
+      // [4, -13] drops the words below the dot row: the dot now sits above and left of "one",
+      // and the D gets a short leader.
+      label: 'one back', labelHint: [4, -13] },
 
     // labelHint: off the blue line, where its leader could not be seen, and clear of the
     // neighbouring player it read as belonging to (label audit, 27 Oct 2026). Raised from

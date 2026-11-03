@@ -220,13 +220,15 @@ const frontDoorBackDoor = {
   players: [
     { id: 'F1', team: 'opp', pos: 'F', at: SHOOTER_R, label: 'the shooter' },
     { id: 'F2', team: 'opp', pos: 'F', at: BACK_DOOR, label: 'back door' },
-    // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
-    // Kept at [2, 12] (SG108, 27 Oct 2026): [1, 14] was tried and rejected in diagram review. It moved the
-    // leader tip from 0.42 to 1.33 ft off the goal line, but the faceoff circle still crossed the label (through
-    // the "a" instead of the "b") and the words sat nearer the shooter than the goalie. Every slot above
-    // the goalie gives a leader roughly parallel to the goal line; the only honoured crosswise slots
-    // (17-21 ft to the left) run it across the pass, which is worse. Left for a wording or route change.
-    { id: 'G', pos: 'G', at: ON_LINE_STRONG_4, label: 'backed off', labelHint: [2, 12] },
+    // "deeper", not "backed off" (SG157, 3 Nov 2026). "backed off" is 13 ft wide; the only
+    // honoured slots for it sat 12 ft above the goalie, on an 11 ft leader running 0.42 ft
+    // off the goal line, with the words as near the shooter as the goalie (SG103, SG108).
+    // The pass's reserve blocks everything left of the goalie. "deeper" says what the section
+    // means: "Pass available across the slot: back off" (goaltender.md:118), and Key Takeaways
+    // "Play deeper against passes" (:1727). It is 8 ft wide and fits directly above the G:
+    // a 5 ft leader, its tip 1.4 ft off the goal line. Slots behind the goal line were
+    // honoured too and rejected: "deeper" there reads as a place behind the net.
+    { id: 'G', pos: 'G', at: ON_LINE_STRONG_4, label: 'deeper', labelHint: [1, 6] },
   ],
 
   // The pass the depth decision is about — "a pass available across the slot", the
