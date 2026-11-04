@@ -117,7 +117,8 @@ const stickLaneBodyNet = {
   players: [
     { id: 'G', pos: 'G', at: 'crease' },
     { id: 'P', team: 'opp', pos: 'F', at: D1_PUCK, label: 'the puck carrier' },
-    { id: 'M', team: 'opp', pos: 'F', at: D1_MAN,  label: 'your man' },
+    // SG165 labelHint: under M, 2.5 ft right so the words clear the faceoff dot.
+    { id: 'M', team: 'opp', pos: 'F', at: D1_MAN,  label: 'your man', labelHint: [2.5, -10.8] },
     // A triangle, because this document's own by-position table gives the
     // defenceman "net-front coverage, stick in the lane" as his off-puck job.
     { id: 'D', pos: 'D', at: D1_YOU, label: 'you, net-side' },

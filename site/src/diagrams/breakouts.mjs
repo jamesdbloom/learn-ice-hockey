@@ -161,7 +161,8 @@ const up = {
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
     { id: 'D1', pos: 'D', at: UP_D1,  label: 'has time' },
-    { id: 'D2', pos: 'D', at: D2_LOW, label: 'second wave' },
+    // SG165 labelHint: below-right of D2, under the faceoff dot rather than on it.
+    { id: 'D2', pos: 'D', at: D2_LOW, label: 'second wave', labelHint: [12, -13] },
     // labelHint: right of W1, with a short leader. It pins the slot the label already had:
     // once "the bail-out" moved, the outlet dropped onto "has time" and the two stacked
     // (label audit, 27 Oct 2026).
@@ -403,7 +404,8 @@ const reverse = {
   players: [
     { id: 'G',  pos: 'G', at: GOALIE },
     { id: 'D1', pos: 'D', at: REV_D1, label: 'has the puck' },
-    { id: 'D2', pos: 'D', at: D2_LOW, label: 'arriving' },
+    // SG165 labelHint: below-right of D2, under the faceoff dot rather than on it.
+    { id: 'D2', pos: 'D', at: D2_LOW, label: 'arriving', labelHint: [6, -12] },
     // "a forechecker chasing your hip" who has then "over-committed and skated
     // past you" — so he is up-ice of D1 on the same wall, still going. dx 7 leaves
     // him 11 ft up-ice of D1, the "about ten feet" the description states.

@@ -531,7 +531,8 @@ const guess = {
     { id: 'G', pos: 'G', at: D34_G },
     { id: 'P', team: 'opp', pos: 'F', at: D34_CARRIER },
     { id: 'A', team: 'opp', pos: 'F', at: D34_OPTION, label: 'their option' },
-    { id: 'F', pos: 'F', at: D34_YOU_JUMPED, label: 'you, gone to the lane' },
+    // SG165 labelHint: under F, a foot and a half higher so the words sit above the faceoff dot, not on it.
+    { id: 'F', pos: 'F', at: D34_YOU_JUMPED, label: 'you, gone to the lane', labelHint: [0, -9.3] },
   ],
 
   puck: D34_PUCK,

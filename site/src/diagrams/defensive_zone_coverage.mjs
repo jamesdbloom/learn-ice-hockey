@@ -734,7 +734,8 @@ const walkDownMan = {
     // drawn on `half-wall:left`; that is ONE instance of the convention, not the
     // convention. If that opponent ever moves to the slot, this centre moves with him
     // and nothing here needs rewording.
-    { id: 'C', pos: 'F', at: { at: 'half-wall:left', dy: 8 }, label: 'on the third forward' },
+    // SG165 labelHint: up-left of C as before, 2.3 ft further left so the words end short of the faceoff dot.
+    { id: 'C', pos: 'F', at: { at: 'half-wall:left', dy: 8 }, label: 'on the third forward', labelHint: [-14.3, 6] },
     { id: 'W', pos: 'F', at: WD_WINGER,                       label: 'goes with the carrier', labelHint: [10, -7.5] },
     { id: 'W', pos: 'F', at: W_WEAK_PT,                       label: 'on the other D', labelHint: [4, -10.5] },
   ],

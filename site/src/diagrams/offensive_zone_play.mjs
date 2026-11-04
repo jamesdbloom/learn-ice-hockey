@@ -330,7 +330,8 @@ const fiveManShape = {
     // the carrier is drawn on the wall and the caption does not claim he is the
     // inside-lane support player, because he is not; that description belongs to
     // the level player on the frames where somebody else has the puck.
-    { id: 'F1', pos: 'F', at: HALF_WALL,     label: 'the carrier' },
+    // SG165 labelHint: under F1, 1.5 ft right so the leader clears route tag 2.
+    { id: 'F1', pos: 'F', at: HALF_WALL,     label: 'the carrier', labelHint: [1.5, -11] },
     { id: 'F2', pos: 'F', at: DEEP_CORNER,   label: 'below the puck' },
     { id: 'F3', pos: 'F', at: HIGH_F,        label: 'above the puck' },
     { id: 'D',  pos: 'D', at: 'point:right', label: 'holds the line' },
@@ -441,7 +442,8 @@ const halfWallOptions = {
   players: [
     { id: 'F1', pos: 'F', at: HALF_WALL,     label: 'the carrier' },
     { id: 'F2', pos: 'F', at: DEEP_CORNER,   label: 'low — the corner' },
-    { id: 'F3', pos: 'F', at: SEAM_TARGET,   label: 'the seam' },
+    // SG165 labelHint: under F3, half a foot higher so the words clear the faceoff dot.
+    { id: 'F3', pos: 'F', at: SEAM_TARGET,   label: 'the seam', labelHint: [0, -10.3] },
     { id: 'D',  pos: 'D', at: 'point:right', label: 'high — the point' },
     { id: 'D',  pos: 'D', at: 'point:left' },
     { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },

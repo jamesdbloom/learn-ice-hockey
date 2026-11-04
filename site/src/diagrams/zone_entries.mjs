@@ -406,7 +406,8 @@ const delayCurl = {
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 4, dy: -14 } },  // (29, -14)
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 5, dy: 6 } },    // (30, 6)
 
-    { id: 'F', pos: 'F', at: DELAY_AT, label: 'alone: turn away, do not stop' },
+    // SG165 labelHint: under F, below the neutral-zone dot rather than through it.
+    { id: 'F', pos: 'F', at: DELAY_AT, label: 'alone: turn away, do not stop', labelHint: [0.75, -15.8] },
     { id: 'F', pos: 'F', at: DELAY_SUPPORT, label: 'late support, arriving' },
   ],
 

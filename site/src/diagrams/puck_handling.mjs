@@ -1087,7 +1087,8 @@ const theLastPlayerBack = {
     // seen only in a render. Even 'the only one' (12 characters, 32 ft) reaches -101. So the
     // claim goes in the caption, which says it twice.
     { id: 'D', pos: 'D', at: LAST_YOU, label: 'you' },
-    { id: 'F', team: 'opp', pos: 'F', at: LAST_O1, label: 'pressure' },
+    // SG165 labelHint: under the forechecker as before, 3.5 ft right so the words clear the centre dot and the red line.
+    { id: 'F', team: 'opp', pos: 'F', at: LAST_O1, label: 'pressure', labelHint: [3.5, -7.5] },
     // No label on the second: his position carries him, and two labelled opponents in the
     // middle of an otherwise empty neutral zone read as a system rather than as two players
     // arriving. `describe` names him.

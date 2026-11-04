@@ -362,7 +362,8 @@ const supportDistance = {
     // defender covers both of you and that you are standing in the carrier's
     // escape. Not drawn closer than this only because two glyphs five feet apart
     // overlap at every width this renders at.
-    { id: 'T', pos: 'F', at: { at: 'half-wall:right', dx: 5.5, dy: -4.5 }, label: 'too close' },
+    // SG165 labelHint: under T, 0.6 ft higher so the words clear the faceoff dot.
+    { id: 'T', pos: 'F', at: { at: 'half-wall:right', dx: 5.5, dy: -4.5 }, label: 'too close', labelHint: [0, -10.4] },
   ],
 
   routes: [

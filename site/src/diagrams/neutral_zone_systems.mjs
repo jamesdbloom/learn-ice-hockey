@@ -513,7 +513,8 @@ const pressure = {
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
     { id: 'D', team: 'opp', pos: 'D', at: P_CARRIER, label: 'under pressure' },
-    { id: 'W', team: 'opp', pos: 'F', at: P_W1, label: 'the wall outlet' },
+    // SG165 labelHint: the placer's slot, 0.9 ft lower so the words clear the neutral-zone dot.
+    { id: 'W', team: 'opp', pos: 'F', at: P_W1, label: 'the wall outlet', labelHint: [12.5, -16.9] },
 
     { id: 'G', pos: 'G', at: OUR_G },
     // Two forwards deep. Placed only as "in the opponents' end hunting the puck";

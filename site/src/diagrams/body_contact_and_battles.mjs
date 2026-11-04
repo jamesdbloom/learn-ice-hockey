@@ -253,7 +253,8 @@ const anglingYourRoute = {
     // the position and fill is the team — the Hockey Eastern Ontario sheet's own
     // `● ○ Forward / Player` row, with this corpus's own assignment of open to the
     // reader's team.
-    { id: 'A1', team: 'opp', pos: 'F', at: CARRIER, label: 'wants the middle' },
+    // SG165 labelHint: under A1 as before, a foot lower so the words clear the neutral-zone dot.
+    { id: 'A1', team: 'opp', pos: 'F', at: CARRIER, label: 'wants the middle', labelHint: [0, -11.8] },
 
     // A TRIANGLE, BECAUSE HE IS A D. `pos` decides the shape.
     //

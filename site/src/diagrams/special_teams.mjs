@@ -544,7 +544,8 @@ const ppBackdoor = {
     { id: 'G', team: 'opp', pos: 'G', at: G_AT },
     // "commits to the strong side or to the net-front player" — drawn shading to
     // the net-front attacker, the same offset pk-box's own strong-side low D uses.
-    { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 }, label: 'strong side, low' },
+    // SG165 labelHint: above D, 0.7 ft right so the words clear the faceoff dot.
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 }, label: 'strong side, low', labelHint: [0.7, 12] },
     { id: 'N', pos: 'F', at: NET_FRONT,          label: 'net front' },
     { id: 'P', pos: 'F', at: 'point:right',      label: 'puck up top' },
     // `BD` for backdoor, not a bare letter. Every other id in this file is
@@ -695,7 +696,8 @@ const pkBox = {
     { id: 'F', pos: 'F', at: { at: 'top-of-circle:left', dx: 2, dy: 10 },   label: 'high, in the lane' },
     // "two players low, both defencemen, covering the two low corners and the
     // goalmouth". Strong side is the puck side.
-    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 },  label: 'strong side, low' },
+    // SG165 labelHint: above D, 0.7 ft right so the words clear the faceoff dot.
+    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 },  label: 'strong side, low', labelHint: [0.7, 12] },
     { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: -10 }, label: 'goalmouth' },
 
     ...PP_131_OPP.map((p) =>
