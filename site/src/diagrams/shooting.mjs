@@ -555,7 +555,9 @@ const breakawayApproach = {
     { id: 'G', team: 'opp', pos: 'G', at: G_TOP_OF_CREASE, label: 'top of the crease' },
     // Drawn as a forward. The section says nothing about who takes a breakaway, and
     // a marker has to be one shape or the other; the caption does not claim otherwise.
-    { id: 'F', pos: 'F', at: APPROACH_START, label: 'alone, with the puck' },
+    // labelHint: just under F, no leader, clear of the route tags; the blue line and centre-circle
+    // arc cross it, unavoidable for a 25 ft label between the centre line and the blue line (SG164).
+    { id: 'F', pos: 'F', at: APPROACH_START, label: 'alone, with the puck', labelHint: [6, -7.5] },
   ],
 
   routes: [

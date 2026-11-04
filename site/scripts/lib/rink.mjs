@@ -159,6 +159,25 @@ const LEADER_GAP = 0.4;  // clear air between the line's end and the glyph box
 // consequence of using 0.56 for both: 40 leaders stopped over a unit short, one
 // showing 0.20 units of line across a 1.79-unit gap.
 const CLIP_ADV = 0.473;  // p75 of the measured distribution, not the max
+// Advance widths in thousandths of an em for the label font as Chrome resolves the stack
+// below on macOS (Helvetica Neue metrics), measured with canvas `measureText` at 1000 px on
+// 3 Nov 2026. Used ONLY to estimate a label's INK extent against small obstacles (`inkAvoid`):
+// over all 631 built labels the measured ink half-width minus half this sum lay between
+// -0.104 em (kerning) and +0.036 em, so half the sum plus INK_PAD covers every one. Another
+// platform's sans differs by a few per cent; the white halo is the margin for that. An
+// unlisted character counts as 600, wider than any lower-case letter but `m` and `w`.
+const ADV_KEYS = {
+  lower: ['abcdefghijklmnopqrstuvwxyz', '537 593 537 593 537 296 574 556 222 222 519 222 853 556 574 593 593 333 500 315 556 500 758 518 500 480'],
+  upper: ['ABCDEFGHIJKLMNOPQRSTUVWXYZ', '648 685 722 704 611 574 759 722 259 519 667 556 871 722 760 648 760 685 648 574 722 611 926 611 648 611'],
+  digit: ['0123456789', '556 556 556 556 556 556 556 556 556 556'],
+  punct: [" ,.-/:;'’‘!?()&—–“”\"", '278 278 278 389 333 278 278 278 278 278 259 556 259 259 630 1000 500 426 426 426'],
+};
+const ADV = new Map(Object.values(ADV_KEYS).flatMap(([cs, ws]) => {
+  const w = ws.split(' ').map(Number);
+  return [...cs].map((c, i) => [c, w[i] / 1000]);
+}));
+const INK_PAD = 0.05;    // em, beyond half the advance sum
+const inkHalfWidth = (text) => [...text].reduce((a, c) => a + (ADV.get(c) ?? 0.6), 0) / 2 + INK_PAD;
 
 /** Resolve a named position, optionally mirrored. `half-wall:right`, `corner:left:far`. */
 export function resolve(name) {
@@ -306,7 +325,8 @@ const clipT = (ax, ay, bx, by, X0, X1, Y0, Y1) => {
  */
 function placeLabels(entries, opts = {}) {
   const { size = 2.4, dot = 0, half = false, reserve = [], avoid = [], leaderMin,
-          noCrossLeaders = false, split = false, paint = null, onRelax = null } = opts;
+          noCrossLeaders = false, split = false, paint = null, onRelax = null,
+          inkAvoid = [] } = opts;
   // A label further than this from its point gets a leader line drawn to it. Below
   // it no leader is drawn, so nothing can be crossed and `avoid` does not apply.
   //
@@ -526,8 +546,25 @@ function placeLabels(entries, opts = {}) {
   const showsLeader = (cand, e) => !e.reach
     || Math.hypot(cand.x - e.x, cand.y - e.y) <= LEADER_MIN
     || visibleLen(e, cand) >= LEADER_VIS_MIN;
-  const placeOne = (e, w, h, strict, needLeader = true, hazardOn = true) => {
-    const ok = (cand) => inside(cand) && !collides(cand, e)
+  // ⚠️ `inkAvoid` IS TESTED AGAINST THE LABEL'S INK, NOT ITS RESERVATION BOX. Boxes {x, y, w, h}
+  // in rink feet that no label's ink or white halo may touch (play diagrams pass the numbered
+  // route tags; a halo over a tag's outline erases it as surely as ink covers it). Ink width
+  // comes from the measured advance table (`inkHalfWidth`); ascent 0.733 em and descent
+  // 0.211 em are the maxima measured over the same 631 labels. The reservation box (`w`, `h`)
+  // is 0.56 em per character and centred on the baseline, so it overhangs a long label's ink
+  // by feet sideways and falls short of its ascenders: the wrong test for a small obstacle in
+  // both directions. Tried first and measured: it moved 10 labels in 8 diagrams to clear the
+  // ONE label in the corpus that actually touched a tag (by 0.09 ft).
+  const inkHits = (cand, e) => {
+    if (!inkAvoid.length) return false;
+    const halo = LABEL_HALO / 2;
+    const hw = (inkHalfWidth(e.text) + halo) * size;
+    const lo = cand.y - (0.211 + halo) * size, hi = cand.y + (0.733 + halo) * size;
+    return inkAvoid.some((b) => Math.abs(cand.x - b.x) < hw + b.w / 2
+      && hi > b.y - b.h / 2 && lo < b.y + b.h / 2);
+  };
+  const placeOne = (e, w, h, strict, needLeader = true, hazardOn = true, inkOn = true) => {
+    const ok = (cand) => inside(cand) && !collides(cand, e) && !(inkOn && inkHits(cand, e))
       && (!needLeader || (showsLeader(cand, e) && !(hazardOn && leaderHazard(cand, e))))
       && (!strict || (leaderClear(cand, e) && leaderUncrossed(cand, e)));
     // ⚠️ A PREFERRED OFFSET, TRIED FIRST AND NOT TRUSTED. The placer is greedy and
@@ -540,7 +577,7 @@ function placeLabels(entries, opts = {}) {
     // A hint is held to the same no-stub rule as an un-pushed table slot below: if the body
     // would hide all but a stub of its line, it is honoured with NO leader rather than
     // rejected, so a spec can keep a label tight beside its player.
-    const insideFree = (cand) => inside(cand) && !collides(cand, e);
+    const insideFree = (cand) => inside(cand) && !collides(cand, e) && !(inkOn && inkHits(cand, e));
     // Distance from a player's anchor to this label's glyph box, rink feet.
     const boxDist = (cand, x, y) => {
       const hw = e.text.length * size * CLIP_ADV / 2;
@@ -694,8 +731,23 @@ function placeLabels(entries, opts = {}) {
     // two-line label. That is worse than a leader crossing a painted line. So where the
     // hazard-aware placement would come from the sweep, the label is placed exactly as it was
     // before the rule.
-    const attempt = (hz) => placeOne(e, w, h, true, true, hz) ?? placeOne(e, w, h, false, true, hz)
-      ?? placeOne(e, w, h, false, false, hz);
+    // ⚠️ `inkAvoid` FOLLOWS THE SAME RULE AS `leaderHazard`: it may choose between the hint and
+    // the table slots, never send a label to the grid sweep or throw. And it is applied PER
+    // TIER, so it can never downgrade one: within each tier the badge-aware result is taken only
+    // if it is a hint or table slot; otherwise that tier's result without the rule stands, i.e.
+    // exactly where the label went before it (diagram review, SG164). A label left touching a
+    // tag is named below.
+    const TIERS = [[true, true], [false, true], [false, false]];
+    const attempt = (hz) => {
+      for (const [strict, lead] of TIERS) {
+        const a = placeOne(e, w, h, strict, lead, hz, true);
+        if (a && (!inkAvoid.length || !a.fromSweep)) return a;
+        if (!inkAvoid.length) continue;
+        const b = placeOne(e, w, h, strict, lead, hz, false);
+        if (b) return b;
+      }
+      return null;
+    };
     let put = attempt(true);
     if (paint && e.reach && (!put || put.fromSweep)) {
       put = attempt(false);
@@ -710,6 +762,12 @@ function placeLabels(entries, opts = {}) {
           && leaderHazard(put, e)) {
         onRelax({ text: e.text, x: e.x, y: e.y, fromSweep: !!put.fromSweep });
       }
+    }
+    // Named, never silent: only the FINAL slot is tested, because an intermediate one may be
+    // superseded by the `leaderHazard` relaxation above.
+    if (put && inkHits(put, e)) {
+      console.warn(`placeLabels: "${e.text}" at (${e.x}, ${e.y}) touches a numbered route tag ` +
+        '(no tag-free slot outside the grid sweep); try a spec labelHint.');
     }
     if (!put) {
       throw new Error(
@@ -1893,6 +1951,14 @@ export function playSvg(spec, opts = {}) {
   // off the players. Without this a label lands on an arrowhead and the reader
   // cannot tell which of two converging arrows the words belong to.
   const routeReserve = [];
+  // ⚠️ THE NUMBERED TAGS ARE OBSTACLES TO LABEL INK (SG164, 3 Nov 2026). A tag is nudged
+  // 3.4*TXT off its route and the route samples above reserve only 2.5 ft either side of the
+  // line, so most of a tag was free ground for a label. Each tag's DRAWN box (rect plus half
+  // its 0.4 stroke) is collected here as it is drawn below and handed to the placer as
+  // `inkAvoid`, which tests the label's estimated INK box, not its reservation box (see the
+  // ⚠️ on `inkHits`). The badge comment below records an earlier "reserve every tag" that
+  // moved 14 diagrams, five for the worse; reserving by box reproduced that. Measure ink.
+  const badgeBoxes = [];
 
   // Shaded regions — "the slot", "the high slot", the trapezoid, a coverage box.
   //
@@ -2247,6 +2313,7 @@ export function playSvg(spec, opts = {}) {
           // A rounded tag, not a ring. An open ring is what the key's opposition
           // forward looks like, and in greyscale the badges read as two more
           // opposing players standing in the slot.
+          badgeBoxes.push({ x: bx, y: by, w: 2 * (2.1 * TXT + 0.2), h: 2 * (1.9 * TXT + 0.2) });
           return `<rect x="${(bx - 2.1 * TXT).toFixed(2)}" y="${(py(by) - 1.9 * TXT).toFixed(2)}" ` +
             `width="${(4.2 * TXT).toFixed(2)}" height="${(3.8 * TXT).toFixed(2)}" rx="1" fill="#fff" stroke="${P.boards}" stroke-width="0.4"/>` +
             `<text x="${bx.toFixed(2)}" y="${(py(by) + 0.85 * TXT).toFixed(2)}" font-size="${(2.6 * TXT).toFixed(2)}" ` +
@@ -2407,6 +2474,7 @@ export function playSvg(spec, opts = {}) {
         ...routeReserve,
         ...zoneReserve,
       ],
+      inkAvoid: badgeBoxes,
       // The leader line may cross a route — routes are what a diagram is mostly made of —
       // but not a player. Same 7x8 box the reserve above uses, so there is one statement
       // in this file of how much room a glyph takes, not two that can drift.
