@@ -117,7 +117,9 @@ const containment122 = {
     // carrier, the D-to-D partner F1's route exists to take away, and the winger
     // F2 steps up on. Nobody else is drawn, because the section names nobody else.
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
-    { id: 'D', team: 'opp', pos: 'D', at: C_CARRIER, label: 'puck carrier' },
+    // SG168 labelHint: lifts the words about 1.5 ft off the faceoff dot below them (ink gap
+    // about 0.9 ft -> 2.5 ft), which crowded it at phone width. The leader still crosses paint.
+    { id: 'D', team: 'opp', pos: 'D', at: C_CARRIER, label: 'puck carrier', labelHint: [-16.6, 19.5] },
     // labelHint: inside the circle, between the dot and him. The unhinted slot put the words
     // across the faceoff dot (label audit, 3 Nov 2026).
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'corner:left', dx: -6 }, label: 'the D-to-D', labelHint: [-9, 7] },
