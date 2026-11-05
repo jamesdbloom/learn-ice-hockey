@@ -293,7 +293,7 @@ Rule: A kick-back that gets tipped in is no goal under USA Hockey 627(c) or Hock
 Rule: Hockey Canada scopes its own no-goal rule twice — 6.10's preamble exempts a puck that "deflects off a player's skate, without a deliberate kicking action", and 6.10(b) excepts "a defending player kick[ing] the puck into their own goal", which at your own end zone draw is your net
 Rule: Kicking or attempting to kick an opponent is a match penalty under NHL and PWHL 49.3, USA Hockey 627(b) (with a likely multi-game ban), Hockey Canada 7.1(c)(iii) and CARHA 48(c); under IIHF 49.3 the referee may assess a major, and the game misconduct is automatic once they do
 Rule: Under USA Hockey a skate does not need a kicking motion to be an offence — 627(a) is a major plus a game misconduct for using the skate to "push off" an opponent, which its Note 2 defines as skate contact with an opponent "in a non-kicking motion"
-Rule: An ejection can cost the next game too — under USA Hockey 404(b) any game misconduct also suspends you for the team's next game, at least two after a second major in a game (403(b)); CARHA 32(d) adds one game, possibly more, after a major's game misconduct, unless for an accidental high stick
+Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
 Never: Send the skate at the man. Any kicking permission at the dot is for the puck only, and under IIHF 76.3(VI) a centre may not win the draw with a skate at all
 Action: Before you build an offensive-zone draw around the kick-back, find out which book your league runs — the tip behind it is a goal in only three of the six
 ```
@@ -553,7 +553,7 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 
 **The board-side variations.** The boards-side winger loops **over the top of the circle to the inside hash mark** for a one-timer, or a winger and defenceman **swap positions** before the draw to open an unfamiliar lane. These work about once a game against an attentive opponent.
 
-**What it costs.** In a CARHA league keep the one-timer's backswing short: more than fifteen inches behind the puck makes it a slap shot there — a minor, and a major if it injures an opponent, which ends your game (Rules 79(a), 30(a)). A follow-through that catches an opponent above the shoulders is a separate foul there: a major even by accident and even if nobody is hurt, and an ejection only if it was deliberate or injures (Rule 62(b)).
+**What it costs.** In a CARHA league keep the one-timer's backswing short: more than fifteen inches behind the puck makes it a slap shot there — a minor, and a major if it injures an opponent, which ends your game (Rules 79(a), 30(a)). A follow-through that catches an opponent above the shoulders is a separate foul there: a major even by accident and even if nobody is hurt, and a game misconduct only if it was deliberate or injures (Rule 62(b)).
 
 ### Defensive-zone plays
 

@@ -566,7 +566,7 @@ Given that, here is what actually helps.
 
 **In short:** Skate away from a bad call and run your reset.
 
-Keep your hands off officials, keep your stick off the boards and glass, and never throw anything onto the ice from the bench — not a water bottle, not a towel, not even a stick to a teammate who has lost theirs. Your frustration, shown, hands the other team a power play, and the goal they score will be blamed on the call rather than on you. And a power-play penalty is the cheap end: plenty of these acts end your game, and under USA Hockey a game misconduct also costs you your team's next game (404(b)).
+Keep your hands off officials, keep your stick off the boards and glass, and never throw anything onto the ice from the bench — not a water bottle, not a towel, not even a stick to a teammate who has lost theirs. Your frustration, shown, hands the other team a power play, and the goal they score will be blamed on the call rather than on you. And a power-play penalty is the cheap end: plenty of these acts end your game, and under USA Hockey a game misconduct also costs you your team's next game (404(b)); under Hockey Canada, one in the last 10 minutes, in overtime or after the game costs at least your next game or seven days (4.8(c)). Under CARHA, an abuse-of-officials or unsportsmanlike game misconduct in the game's last 10 minutes, overtime included, also costs at least the next game (32(c)).
 
 **What it costs.**
 
