@@ -411,7 +411,9 @@ const collapseCorner = {
     // "standing along the boards (back toward the middle of the ice)" a major plus game
     // misconduct or a match (usah_casebook.txt:11765-11768) — this carrier exactly.
     // Hockey Canada 7.5(a)'s floor is likewise a minor plus a game misconduct (hc.txt:6165-6167).
-    'Hockey Canada and CARHA eject you every time, and so does USA Hockey for a forceful hit on a player ' +
+    // 5 Nov 2026 (owner: name the Hockey Canada / CARHA penalty, never "eject"): "at least" keeps
+    // the mandatory match (HC 7.5(c), CARHA 53(b), USA Hockey Casebook 608 Sit. 1) inside the floor.
+    'Hockey Canada and CARHA give at least a game misconduct every time, and so does USA Hockey for a forceful hit on a player ' +
     'along the boards like this one. ' +
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
     'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +

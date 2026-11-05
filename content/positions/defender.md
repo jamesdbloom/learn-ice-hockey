@@ -313,7 +313,7 @@ Never: Let a battle or a legal check carry a body across your own goalmouth — 
 Never: Lift a net-front opponent off their edges, even in a legal check on a forward who has the puck — a player whose skates are off the ice cannot brace or choose what meets the post first
 Rule: Never drive a back into the boards or post — it ejects in NHL and PWHL (43.3, 43.5), CARHA (53(a); match if defenceless, 53(b)) and USA Hockey head first or forceful at the boards (608(b); Casebook 608) — reckless: plan on a USA Hockey match and a likely multi-game ban (602(a)); IIHF: plan on it
 Rule: Kept off the head, or head first into boards or frame, a hit to their back is at least a minor and game misconduct under Hockey Canada 7.5(a) and (e), a mandatory match if meant to injure, or into boards or goal if defenceless (7.5(c))
-Rule: Hockey Canada head contact from behind: match if defenceless or meant to injure; major and game misconduct on violence in minor/female, a must if hurt or on a deliberate high cross-check (7.6); a must in Jr/Sr on a high cross-check, highly violent hit or head injury off glass, ice or boards (7.7)
+Rule: Hockey Canada head contact from behind: match if defenceless or meant to injure; major and game misconduct on violence in minor/female, a must if hurt or a deliberate cross-check goes high (7.6); a must in Jr/Sr on a high cross-check, highly violent hit or head injury off glass, ice or boards (7.7)
 Rule: At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban, in every league or age group you are registered in (IHUK DOPS C.1, s.11)
 ```
 
