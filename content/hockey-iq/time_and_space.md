@@ -275,7 +275,7 @@ Options: Three legal ways to occupy a defender — ice you got to first (in CARH
 Rule: A no-contact screen from outside the crease keeps the goal (NHL, IIHF and PWHL Table 14, the IIHF's 16 in 2025/26, Situation 5); contact, or a position that stops the goalie moving freely in the crease, can still cost it (69.1, PWHL 71.1)
 Rule: USA Hockey 625(b) bars the goal with an attacker in the crease whoever scored — unless the puck got there first, the goalie is out of the crease area, or a defender put them there, which answers for position only, not contact; Situation 9 voids it plus a minor if you impeded a returning goalie
 Rule: Hockey Canada 8.5 allows a teammate's goal scored from outside the crease if the player standing in it stays passive and clear of the goalie's view and movements — and its bar does not apply at all where the puck is already in the crease area
-Rule: Stay off the goalie — contact can be a penalty in every book, and a charge can end your game in each; it always does under Hockey Canada (8.5(b)); under CARHA in the crease or on injury (52(b), 30(a)) and USA Hockey if reckless (607(b)) it costs this game
+Rule: Stay off the goalie — contact can be a penalty in every book, and a charge can end your game in each; it always does under Hockey Canada (8.5(b)), under CARHA in the crease or on injury (52(b), 30(a)) and under USA Hockey if reckless (607(b))
 Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
 ```
 
