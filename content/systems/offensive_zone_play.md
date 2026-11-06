@@ -781,7 +781,7 @@ Key: Nobody can come at you from directly behind, because the net and the end bo
 Risk: You can still be driven into the goal frame behind the net. Keep your head up and know who is arriving
 Never: Hit a player whose back is turned to you — off the head or on it, it can end your game in every book, and in most it does
 Rule: Checking from behind ejects under the NHL, PWHL (43), CARHA (53) and Hockey Canada off the head (7.5); IIHF, plan on it; under USA Hockey one forceful at the boards or sending them head first ejects (608(b); Casebook 608); if reckless, plan on a match and likely multi-game ban (602(a), 608(c))
-Rule: From behind into the boards or goal frame (CARHA: net) so they cannot protect themselves, a mandatory Match under Hockey Canada 7.5(c) and CARHA 53(b); head first, at least a USA Hockey major and game misconduct (608(b)); meant to injure, a match in the NHL, PWHL, Hockey Canada, CARHA and USA Hockey
+Rule: From behind into boards or goal frame (CARHA: net) so they can't protect themselves, a mandatory Match under Hockey Canada 7.5(c), CARHA 53(b); head first or reckless, at least a USA Hockey major and game misconduct (608(b)); meant to injure, a match in NHL, PWHL, Hockey Canada, CARHA and USA Hockey
 Read: Every time the puck crosses behind the net the goalie must pick a post and rotate — every rotation is a moment they are not square
 Key: Passes from below the goal line finished at 6.73%, second only to royal road passes — volunteer-tracked Passing Project data, 51,308 shots at 5v5, all attempts
 ```
