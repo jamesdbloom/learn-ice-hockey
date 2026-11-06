@@ -1178,7 +1178,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 3. **Do not ice the puck to buy a rest** — the NHL and IIHF, so Britain too, bar the change. **USA Hockey allows it, but its change window closes at every stoppage.** **On the kill, clear it only while shorthanded** — under USA Hockey, only at Youth 15-Only and above, Girls 16U and above, High School and Adult.
 
-4. **Keep killing a major after they score** — a goal ends only a minor you are short for. ⚠️ **Play as though one major ends your game**: it always does under Hockey Canada, USA Hockey and in IHUK women's hockey, almost always under CARHA, and often elsewhere. **Never throw a punch, even gloved:** USA Hockey calls it fighting and ejects you.
+4. **Keep killing a major after they score** — a goal ends only a minor you are short for. ⚠️ **Play as though one major ends your game**: it always does under Hockey Canada, USA Hockey and in IHUK women's hockey, almost always under CARHA, and often elsewhere. **Never throw a punch, even gloved:** USA Hockey ejects you for fighting.
 
 5. **Keep your hits below the shoulders.** Outside the NHL a head hit can end your game without any intent to injure, and under USA Hockey even a careless one must. ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
 
@@ -1186,11 +1186,11 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 7. **If you can see an opponent's numbers, pull up and play the puck.** ⚠️ **A hit from behind can end your game in every book, and most eject at the first tier.** Under Hockey Canada and CARHA, driving a player who cannot protect themselves into the boards or net is a mandatory match penalty.
 
-8. **Keep your stick on the puck, your feet out of theirs.** ⚠️ **Most books eject a slew-foot outright; CARHA and Hockey Canada make any cross-check above the shoulders a major and game misconduct (in Hockey Canada minor and female hockey, any deliberate cross-check that reaches the head or neck).** Under USA Hockey a reckless hook, slash, trip, cross-check or high stick ejects you: plan on a match and a likely multi-game suspension.
+8. **Keep your stick on the puck, your feet out of theirs.** ⚠️ **Most books eject a slew-foot outright; CARHA and Hockey Canada make any cross-check above the shoulders a major and game misconduct (Hockey Canada minor and female hockey: any deliberate one reaching the head or neck).** Under USA Hockey a reckless hook, slash, trip, cross-check or high stick ejects you: plan on a match and a likely multi-game ban.
 
 9. **Screen the goalie from outside the crease, without contact, and never stand in their road back.** Keep off the blue paint and its red line. ⚠️ **Contact with the goalie can end your game, and a charge on them must** — always under Hockey Canada, under CARHA in their crease or if they are hurt, under USA Hockey if reckless.
 
-10. **Before your first shift, learn your rulebook and whether body checking is allowed** — if it is not, the check itself is the penalty. ⚠️ **In Britain, wear your neck guard every shift.** In North American adult rec, ask whether your league is CARHA-affiliated: there almost every major brings a game misconduct, which ends your game and costs at least the next one.
+10. **Before your first shift, learn your rulebook and whether body checking is allowed** — if not, the check itself is the penalty. ⚠️ **In Britain, wear your neck guard every shift.** In North American adult rec, ask if your league is CARHA-affiliated: there almost every major brings a game misconduct, ending this game and at least the next.
 
 ---
 
