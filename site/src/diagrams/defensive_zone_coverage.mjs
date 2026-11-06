@@ -415,6 +415,10 @@ const collapseCorner = {
     // the mandatory match (HC 7.5(c), CARHA 53(b), USA Hockey Casebook 608 Sit. 1) inside the floor.
     'Hockey Canada and CARHA give at least a game misconduct every time, and so does USA Hockey for a forceful hit on a player ' +
     'along the boards like this one. ' +
+    // 5 Nov 2026: HC 7.5(c) and CARHA 53(b) make a MATCH mandatory ("will be assessed" /
+    // "shall be assessed") for a hit from behind INTO THE BOARDS on a player "unable to protect
+    // or defend themselves" (hc.txt 7.5(c); carha.txt / carha_2026.txt Rule 53(b)) — this picture.
+    'Drive a player into the boards from behind when they cannot protect themselves and Hockey Canada and CARHA make it a match. ' +
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
     'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
     'illegal hit. ' +
