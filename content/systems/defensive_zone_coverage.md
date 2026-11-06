@@ -497,7 +497,7 @@ Action: Get one hard win — cycles end when somebody wins a puck battle, so sen
 Never: Send the second body into a back — the player digging along your boards cannot see you, and no book prices a hit to the back at two minutes alone as checking from behind (Hockey Canada: off the head)
 Rule: At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban (IHUK DOPS C.1)
 Rule: A hit from behind into the boards or goal frame on a player unable to protect themselves is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and one meant to injure in every book but the IIHF, which has no match penalty; CARHA 53(a): game misconduct at every tier, a major a must on injury
-Rule: USA Hockey alone lets you play on at its floor (608(a)'s minor plus misconduct; a second ejects) — but its Casebook (608 Sit. 1) requires a major and game misconduct or a match for a check from behind forceful at the boards, head first into boards or goal, or reckless; a match: likely multi-game ban
+Rule: Only USA Hockey's floor lets you play on (608(a)'s minor and misconduct; two misconducts eject) — but its Casebook (608 Sit. 1) requires a major and game misconduct or a match for a check from behind forceful at the boards, head first into boards or goal, or reckless; a match: likely multi-game ban
 Rule: USA Hockey 608(c) is a mandatory match — "shall be assessed" — for a check from behind that recklessly endangers an opponent "with excessive force while the opponent is in a vulnerable or defenseless position"; for any reckless check from behind, plan on a match and a likely multi-game ban (602(a))
 ```
 
