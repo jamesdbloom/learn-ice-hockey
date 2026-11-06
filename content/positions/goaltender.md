@@ -1281,7 +1281,8 @@ Action: Say what happened, not what you want — "they drove through me" gets yo
 
 ```facts
 Action: Establish and hold your crease position early, and shout for the net front rather than dropping to the ice
-Rule: Outside your crease you are not "fair game": NHL and IIHF 69.4 penalise unnecessary contact "in every case" and permit incidental contact as you play the puck after a "reasonable effort" to avoid it; beyond your privileged area, USA Hockey 607(d) Note 1 calls accidental contact interference
+Rule: Outside your crease you are not "fair game": NHL and IIHF 69.4 penalise unnecessary contact "in every case" and permit incidental contact as you play the puck after a "reasonable effort" to avoid it
+Rule: Outside your privileged area you are not "fair game" under USA Hockey (607(d)): accidental contact is interference and deliberate contact charging (Note 1) — but in a checking game, while you have the puck, an attacker may engage you for it (Casebook 607 Sit. 5)
 Rule: Rule 69.4 runs both ways: an attacker whose "deliberate actions" stop you returning after you played the puck out "may be penalized", no contact needed — and so may you, for deliberately interfering outside your crease with one "attempting to play the puck or an opponent" (NHL and IIHF)
 Rule: On rebounds and loose pucks incidental contact — and only incidental contact — is permitted and the goal counts under the NHL and IIHF (69.7) and the PWHL (71.7); USA Hockey, Hockey Canada and CARHA write no such carve-out, and the Hockey Canada clauses in its place bind the attacker, not you
 Rule: A screen from outside your crease without contact is normally legal; inside the crease only a significant position voids the goal — a substantial part of a body there for more than an instantaneous period, obstructing your vision and impairing your ability to defend (NHL and IIHF Rule 69.3)
