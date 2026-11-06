@@ -651,7 +651,7 @@ document, that is named too.*
 
 18. **Never instigate, be the aggressor or sucker-punch, and in the Elite League keep your jersey on and tied down.** ⚠️ **Each ejects you** (a sucker punch, under 2026/27, one that injures; the jersey, if it comes off or has been modified), except a first, early Elite League instigation with no aggression or earlier major: a minor, major and ten-minute misconduct, then League review.
 
-19. **Expect discipline after the game, even for an act nobody penalised.** ⚠️ **At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or to the head, a boarding major, or a fight in the last five minutes, in overtime or at the end of the game means at least a one-game ban, and a game in every other league or age group you are registered in.**
+19. **Expect discipline after the game, even for an act nobody penalised.** ⚠️ **At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or to the head, a boarding major, or a fight in the last five minutes, in overtime or at the end of the game means at least a one-game ban, and a game in every other league or age group you are registered in.** A discriminatory slur is at least a one-game ban too, with an immediate suspension while it is investigated.
 
 20. **If an altercation starts, stay on the bench or in the box until an official releases you.** Leaving for any reason is barred, and one penalty makes an altercation. Skating around it is not staying out, and your penalty expiring is not a release. In the Elite League, leaving to join one also brings an automatic three-game minimum suspension.
 

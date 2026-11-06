@@ -418,7 +418,8 @@ const collapseCorner = {
     // 5 Nov 2026: HC 7.5(c) and CARHA 53(b) make a MATCH mandatory ("will be assessed" /
     // "shall be assessed") for a hit from behind INTO THE BOARDS on a player "unable to protect
     // or defend themselves" (hc.txt 7.5(c); carha.txt / carha_2026.txt Rule 53(b)) — this picture.
-    'Drive a player into the boards from behind when they cannot protect themselves and Hockey Canada and CARHA make it a match. ' +
+    // 6 Nov 2026: declarative, not an imperative a listener could catch as an instruction.
+    'A hit from behind into the boards on a player who cannot protect themselves is a match under Hockey Canada and CARHA. ' +
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
     'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
     'illegal hit. ' +
