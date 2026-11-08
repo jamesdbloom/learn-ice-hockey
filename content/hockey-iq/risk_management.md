@@ -947,7 +947,7 @@ document, that is named too.*
 8. **Play simple in your own end and creative in theirs.** Hockey's mistakes are asymmetric: a missed chance in their end costs you a chance; a turnover in your own end costs you a goal.
 9. **Beat the breakaway with positioning; once a carrier is past you, do not foul them from behind** — that earns a **penalty shot** in every book, an **awarded goal** if your net is empty. ⚠️ **Keep your feet out of theirs:** a called slew-foot ends your game in most books and can in all six; a trip can in several.
 10. **Take a penalty to deny a certain goal, and almost never out of frustration.** A minor is roughly a one-in-five chance of a goal against, so it is a cheap trade against a certainty and a terrible one against nothing.
-11. **Do not compound, and never solve the chase with your body:** turn, get inside, talk. If you see their numbers, pull up and play the puck. ⚠️ **A called hit on a player's back ends your game in most books, and can in all six;** into the boards when they cannot protect themselves, it is a match in several.
+11. **Do not compound, and never solve the chase with your body:** turn, get inside, talk. If you see their numbers, pull up and play the puck. ⚠️ **A called hit on a player's back ends your game in most books, and can in all six;** into the boards or the net when they cannot protect themselves, it is a match in several.
 12. **Your risk level moves with the scoreboard and the clock.** Leading, take it down — hard once the lead reaches three. Trailing late, take it up: pinch for the puck, activate, force the entry. Shorthanded, clear the puck hard unless you have truly read a 2-on-1 the other way.
 
 ---
