@@ -126,6 +126,7 @@ Both pages are SHIPPED: Finding More Ice (0337d6a) and Practising on Your Own wi
 
 ## Owner decisions needed
 
+- **Readability method (owner, 8 Nov 2026):** structural — one "What it costs" section per page holding the penalty ladders, body sections keeping the instruction plus one scene tier and an in-page link. Design: [`../what_it_costs_design.md`](../what_it_costs_design.md). Per-page ladder trimming was measured at 0.3% (55 of 19,064 words on defensive_zone_coverage) and is retired as a method.
 - **Priority (owner, 8 Nov 2026):** readability and diagrams are the highest priority — work the "Content: safety, readability and wording" and "Diagrams and site" sections ahead of the rule-accuracy carry-overs. Rule fixes that make an act cheaper than the book still ship when found.
 - None open (all answered 31 Oct; see the SG141 record).
 
@@ -135,6 +136,7 @@ Both pages are SHIPPED: Finding More Ice (0337d6a) and Practising on Your Own wi
 
 ## Content: safety, readability and wording
 
+- **"What it costs" restructure (owner, 8 Nov):** pilot defensive_zone_coverage SHIPPED (SG205, record reviews/sg205_what_it_costs_pilot_2026-11-08.md). Next: forechecking_systems, then the census order in reviews/census_restated_ladders_2026-11-08.md. Per page: per-limb layer test, render and chunk-distance read, rules-verifier on any rewording, safety-reviewer. **Lessons from the pilot, put them in every brief:** (1) the tightening pass is where limbs are lost — SG205c dropped the NHL/IIHF trapezoid, USA Hockey 404(b), the interference escalation and the HC head-contact counterweight, each caught only by a full-page safety read; (2) search deliberately for a carve-out whose counterweight left (the "(under Hockey Canada, while it stays off the head)" shape, twice on the pilot); (3) check owner parity by READING the owner sentence, not by string presence; (4) pointers heard before the section heading need a frame ("What X costs comes later, in What it costs"); (5) the removed-units list an author produces is not complete — diff the section. **Open on the pilot:** site-reviewer visual pass (Chrome blocked localhost; built-HTML checks passed); crease-catch case law (IIHF Sit. 63.27/63.15/67.6, HC 10.2(a)(v)) could move to goaltender.md; facts :166/:466 and KT4 carry the HC off-the-head carve-out with the counterweight only at page level (safety N1, optional); KT6/KT11 over 60 words; leads without a tier (cross-check, scramble, loose puck).
 - **Out-of-play follow-ons (minor, SG53):**
   - **IIHF citation case, remaining (cosmetic, SG55):** the corpus mixes "NHL and IIHF 63.2(x)" with "NHL 63.2(x), IIHF 63.2(X)". Lowercase IIHF limbs remain in goaltender (~12), risk_management, puck_handling, faceoffs :930, time_and_space :542, special_teams :775/:902/:1277, playing_without_the_puck :350/:353, game_management :1184/:1194 (39.4(II)) and defender :79/:215. The defender sites stay joint on purpose, because the slash form reads aloud as "clause two or clause two". Low value; do it only alongside other edits.
 
