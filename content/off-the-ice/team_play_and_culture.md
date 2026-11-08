@@ -23,7 +23,7 @@
 
 **Never retaliate, never go over the boards during an altercation, and stay in the penalty box until an official releases you — even if your time is up.** Retaliation is what escalates. If you are nearest the door, say the name of whoever is halfway over it.
 
-**Say nothing to the referee; tell your captain, and win the next faceoff.** Arguing almost never reverses a call, and most books penalise the dispute itself.
+**Say nothing to the referee; tell your captain, and win the next faceoff.** Arguing almost never reverses a call, and every book can penalise the dispute itself.
 
 **When someone is down and not getting up, stop playing and wave for the officials. With a head or neck injury, phone for medical help, do not move them except to keep their airway clear, and leave their helmet on.** Assume a possible spinal injury. One person keeps them still; somebody else phones.
 
@@ -35,7 +35,7 @@ Hockey changes players during live play, out of a roster you did not pick. Almos
 
 **The bench is a working position.** Too many men on the ice is usually two players believing the same spot is theirs, which is why you name who you are replacing. Step on only once that player is at the bench **and out of the play**. And do not ice the puck to get a tired line off: in many leagues, British league hockey included, a team that ices it cannot change. Get it out under control instead; [Rules Primer](../foundation/rules_primer.md#the-consequences) has which books bar the change.
 
-**Discipline is a team skill.** Arguing with the referee never reverses a call and is a penalty in itself in most books. Retaliating, and going over the boards for a teammate, are the same instinct at two scales: they add you to the penalty and help nobody. In every book here the first player off a bench for a fight is thrown out of the game — in four, for any altercation — and none stops at the first. Agree as a team, before the season, that nobody leaves.
+**Discipline is a team skill.** Arguing with the referee never reverses a call and can be a penalty in itself in every book. Retaliating, and going over the boards for a teammate, are the same instinct at two scales: they add you to the penalty and help nobody. In every book here the first player off a bench for a fight is thrown out of the game — in four, for any altercation — and none stops at the first. Agree as a team, before the season, that nobody leaves.
 
 **The injured-player convention is the one where getting it wrong is permanent.** With a head or neck injury: **call for immediate medical help, do not move them except to keep their airway clear, and leave their helmet on.** Assume a possible spinal injury. Waving at the bench summons your teammates, not an ambulance, and in a rec game nobody trained may be at the rink — so make sure somebody has actually phoned.
 
@@ -712,7 +712,7 @@ document, that is named too.*
 3. **When your line is tired and pinned in, get the puck out under control rather than icing it.** ⚠️ **Under the NHL, IIHF and PWHL books, and so in British league hockey, a team that ices cannot change, injuries and a few other cases aside.** USA Hockey and CARHA allow the change; Hockey Canada bars it at some levels.
 4. **In a non-check league, hold your ice, never step into anyone, and lean only while you both play the puck.** ⚠️ **Where Hockey Canada bars checking, don't lean; under CARHA, don't lean, block a path or make avoidable contact; in the WNIHL, play it as no body checking; in IIHF women's hockey, never use the boards to push or pin.**
 5. **When a call looks wrong, say nothing, let your captain raise it, and win the next faceoff.** Arguing can draw a minor, and in Hockey Canada one argument can bring a game misconduct that ends your game. Swearing at anyone can be a penalty too, and is at least a misconduct on its own under USA Hockey and CARHA. ⚠️ **No warning comes first for a hand on an official, spitting at one or an obscene gesture: each can end your game.**
-6. **If you have no letter, take it to your captain — and find out before the game who holds that privilege.** ⚠️ **Complaining about a penalty is not a rule question and draws a penalty of its own in most books, and coming off the bench to argue is an automatic minor in the NHL, IIHF and PWHL.**
+6. **If you have no letter, take it to your captain — and find out before the game who holds that privilege.** ⚠️ **Complaining about a penalty is not a rule question and can draw a penalty of its own in every book, and coming off the bench to argue is an automatic minor in the NHL, IIHF and PWHL.**
 7. **Adapt to your linemates; they will not adapt to you.** Be where they expect you on every breakout, because a predictable teammate lets a defenceman pass without looking up. If you change what you do, say so on the bench first.
 8. **Talk.** Between shifts, tell a linemate one specific thing you will do — *"I'm coming low on the breakout"* — never anything evaluative. On the ice, call "man on" early, in your team's words, even when you are not sure.
 9. **When a linemate leaves their spot to go after the puck, fill it — and when somebody has filled yours, get back as soon as the play lets you.** That exchange, repeated, is what trust on the ice is. Chemistry is built by repetition, not friendship, which is why constant line juggling has a cost.
