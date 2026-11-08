@@ -1,0 +1,641 @@
+# Skating — "Detailed Principles" script (Series A)
+
+**Not synthesised. Revised 21 October for a review (3 major, 1 minor, all applied; see notes §11). The revisions are new text and have not been re-reviewed. No `rules-verifier` pass yet.**
+**Source document:** `content/technique/skating.md`, blob `4bf32f6` at HEAD `a6a3014`, 1,047 lines, read in full on 21 October 2026 and unmodified in the working tree. **Two additional sources, both linked from the source's Related line (:7):** `content/off-the-ice/conditioning_and_recovery.md` (blob `e5ff30c`) for the concussion definition, the aftercare lines and the possible-spine-injury line; and `content/technique/body_contact_and_battles.md` (blob `b98d36e`) for the checking gate, stick on the puck, the numbers limb, the goalie limb and the net-front head-up limb. Refresh this script if any of the three changes (§12 of the Style B standard).
+**Written to:** `project/podcast_principles_series_plan.md`, Series A delta and the 20 October owner rules, on top of `project/podcast_style_b_script_standard.md`, shaped on the approved template `podcast_style_b/pilots/winger_detailed.md`, and to the 21 October Detailed brief (items 1–20). The falling, chin-reversal, concussion and aftercare content matches the approved Basics script `podcast_style_b/basics/skating.md`.
+**Compared with:** `podcast_style_b/skating.script.local.md`, the published 18 October remake.
+**Spoken:** 36,667 characters, 6,986 words, about 38.1 minutes at the measured 962.5 chars/min (+48.4% on the remake's 24,704). Synthesise with `--max-chunk-chars 8545` (five requests; see notes §1). ⚠️ The brief's 9,320 is NOT safe for this script.
+
+Everything between the delimiters is spoken text.
+
+---
+
+===== SCRIPT START =====
+
+This episode is about skating, and how you use it in a game. It takes its time. We will build it up one piece at a time, and for each piece I will tell you what to do and also why it works. If you know why something works, you can still do the right thing when the play looks a little different from the picture in your head.
+
+Skating is the skill under every other skill. Passing, shooting and defending all happen while you skate, so how well you skate limits all of them. And skating is a technique. It gets better with practice, at any age.
+
+Before any instructions, a few words you will hear all the way through. I will explain them now, so they don't get in the way later.
+
+Edges. The bottom of a skate blade is not flat. It is ground with a groove down the middle, so each blade has two thin edges. The inside edge is on the big-toe side of your foot. The outside edge is on the little-toe side. Nearly everything you do on skates, you do with the blade tilted onto one of those edges.
+
+The stride. This is your normal skating step, the push and glide that moves you up the ice.
+
+A crossover. This is when you skate round a curve and your outside foot steps over in front of the other one. It is how you build speed on a turn.
+
+A tight turn. This is a sharp turn in a small space. Both skates stay on the ice, with your feet side by side.
+
+The hockey stop. This is the stop where you turn both skates sideways and let the blades scrape the ice.
+
+A pivot. This is switching between skating forwards and skating backwards without stopping.
+
+The boards. This is the wall around the rink.
+
+The checker. In this episode, that means any player from the other team who comes at you near the boards, whether they are after the puck or just coming at you.
+
+That is the vocabulary. Now the job.
+
+When a teammate watches a good skater, they don't notice a pretty stride. They notice a player who gets there first, and arrives ready to do something. Most of that comes from the first few steps, and from refusing to skate at one speed. It does not come from top speed.
+
+I will start with four big ideas, because they matter most. If you only listen to the first part of this episode, take those four with you. After that we will go back through the skills one at a time, and add the detail.
+
+First idea. Go into the boards on an angle, with your head up.
+
+It comes first because it matters more than anything else in this episode. You head into the boards all the time. You chase a puck into a corner, or a checker comes at you along the wall.
+
+Go into the boards on an angle. Never straight at them. Keep your head up and your chin off your chest. Never go in head first.
+
+Here is why the angle matters. On an angle, a leg, your side or an arm takes most of the impact, not your head. You also keep better control of the puck. And you choose your angle several strides before you get there, in the route you pick. So this is the part of a boards battle you control completely, long before anybody reaches you.
+
+Now two things you never do near the boards. Never turn your back to the checker. And never duck.
+
+Here is the reason behind both. You want to see what is coming, and take it on your side, not on your head or neck.
+
+Say you arrive square to the wall with a checker closing. Turning to face the wall feels like protection. It is the opposite. If you turn your back, you can't see the hit coming, and you can't brace for it. And even a light hit from behind can hurt your head or neck. So a slow checker is not the safe case.
+
+Ducking is the other danger. If you duck, your head meets the boards first. Even going slowly, meeting the boards head first can hurt your neck. No speed is slow enough to make it safe.
+
+So both habits hold at every speed. They also hold in every league, whether or not anyone is meant to be hitting you.
+
+If contact is coming anyway, here is the position you aim for. Skates parallel to the boards, which means pointing along them, side-on. Forearm and hip to the boards. Never the point of your shoulder, and not the whole shoulder if you can help it. Head up, chin off your chest.
+
+If you are already facing the wall and can't turn in time, that is the last resort, not a choice. Get your stick and gloves up and spread wide on the glass, with your head off it. That is only for when things have already gone wrong.
+
+From here on I will use one short version of that position, the same words every time, so you can learn it like a line. Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck. Keep it up even going slowly.
+
+Everything after the route you pick is about taking contact, not skating. That has its own episode, on body contact and battles.
+
+Second idea. Win the first three steps.
+
+Hockey isn't a sport of long, straight sprints. You are always starting, stopping, turning and starting again. A race to a loose puck or a rebound, a race for a step on a defender, or a race back when you have been turned around. Coaches find that nearly every one of those races is settled within about three strides. That is coaching know-how, not a measurement. But it is enough to act on.
+
+Here is why it matters more than top speed. Game skating comes in short bursts, a second or two at a time. You are rarely at full speed when a race is decided. So your top speed rarely decides it. Your first three steps nearly always do.
+
+Starting is a different technique from your stride, and this catches almost everybody. Your stride is long and uses the whole blade. A start is short, quick and on your toes.
+
+Run the first few strides on the front of your blades, on the inside edges. Turn your feet out a little, so both blades bite. Lean your body forward, so you drive along the ice instead of lifting yourself up. Take short steps first, getting longer with each one. They look short, but your pushing leg still straightens fully every time. In a start, quick feet beat long reach.
+
+The lean is your body only. Your eyes stay up.
+
+Don't hop from a standstill when you start straight ahead. A hop spends your push going up, when you want to go forward.
+
+To start sideways, or to turn back the other way, use a quick crossover start instead. That is the right tool at the start of a backcheck. A backcheck is racing back toward your own end after your team loses the puck.
+
+And a start that chases a puck into a corner ends at the boards. So drive your three steps, then come in knees bent, head up, on an angle, and able to stop. Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck. Keep it up even going slowly.
+
+Third idea. Change speed on purpose, and keep your feet moving when the puck arrives.
+
+A skater at one speed is easy to defend. The defender just copies your speed and holds it.
+
+So glide to read the play, then explode out of the glide. Here is why that works. When you glide, the defender has to decide. Do they close in, or ease off? Then you explode, and whatever they chose, you have opened a gap between your speed and theirs. That difference is what gets you free. Not your top speed. That a change of speed beats top speed is coaching know-how, not a measured finding.
+
+It works without the puck too. Drift, let the player marking you relax, then break.
+
+And don't skate flat out the whole shift. If you do, you have no faster gear to change to, and no moment to get your head up.
+
+The second half of this idea is about the puck. A lot of players take a pass and coast. They slow down at the very moment they needed speed. So keep your feet moving as the puck arrives. Skate first, and handle second. Push the puck into the space in front of you and skate onto it.
+
+Fourth idea. When the play turns, stop and go straight back the other way, on either side.
+
+The instant your team loses the puck, stop, and go back. Don't loop round in a big curve. A loop feels faster, but it isn't. It carries you away from the play for a second you don't get back.
+
+That means you need to stop on both sides. Many players can only stop properly one way. Nobody has counted how many, so test your own weak side rather than assume you are fine. A player who can only stop one way loops instead, and ends up further from the puck.
+
+Let me pull those four ideas together, because they are the core of skating in a game.
+
+One. Go into the boards on an angle, head up, chin off your chest. Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck. Keep it up even going slowly.
+
+Two. Win the first three steps. Short, quick steps, body forward, eyes up, driving along the ice.
+
+Three. Change speed on purpose, and keep your feet moving when the puck arrives.
+
+Four. When the play turns, stop and go straight back, and be able to do it on either side.
+
+Everything else in this episode adds detail to one of those four. So now let's go back through the skills, starting with your body.
+
+Fifth idea. Stay low.
+
+Bend your knees until they cover your toes. Looking straight down, your knees should hide your skates. Coaches mostly describe that as a knee bend of about a right angle, with your thighs heading toward flat.
+
+Bend at your knees and hips, not at your waist. Chest up, backside back, like the bottom of a squat, not like reaching for your toes. Hunching forward kills your push and blocks your view. The one time you do lean forward on purpose is the hard start from the second idea.
+
+Keep your weight on the balls of your feet, the pads just behind your toes. Not on your heels, because then you are slow to start and easy to knock backwards. And not up on your toes, because that is wobbly.
+
+Here is why low matters so much. Standing too tall costs you four things at once.
+
+Power. Your push comes from straightening a bent leg. A straight leg has nothing left to push with.
+
+Balance. A low player is harder to knock off the puck.
+
+Reaction time. From a deep bend, you can push off in any direction straight away. Standing tall, you have to bend first, and that moment can cost you the puck.
+
+And edges. You can't tilt your blade onto a steep edge unless you bend your knee and ankle.
+
+So stay low through the glide, through the turn and through the stop. Here is a simple check. If your thighs don't burn after a hard shift, you probably weren't low enough.
+
+Sixth idea. Eyes up.
+
+Not just chin up. Eyes up, scanning the ice. Keep them up as you start, as you turn, and when you have the puck.
+
+Here is why. You can't read a play you aren't looking at. And your head pulls your body with it. If you look down at the puck, your weight tips forward off the balls of your feet. So a player skating with their head down is also skating with their weight in the wrong place.
+
+There is a safety reason too. Skating head down is the habit that puts your head down just as you reach the wall. And meeting the boards or a goal post head down, head first, can hurt your neck even at walking speed.
+
+Players drop their eyes most often in a turn, without thinking. Keep them up there too.
+
+To fix it, pick something at the far end of the rink, and skate to it without looking at the puck. Keep the puck at the edge of your vision.
+
+Seventh idea. Train your outside edges.
+
+Your two edges do different jobs. Inside edges make power. Your stride, the first push of a crossover, your stops and your starts all come off them. Outside edges give you control. Turning, holding a curve, cutting back against pressure, protecting the puck and slipping a checker all come off them.
+
+Most players are far better on their inside edges. Those are what you land on when you are upright and nervous. An outside edge asks you to lean your weight out over the skate, and that feels like falling until you trust it. So your outside edges are probably your biggest skating weakness, and your biggest room to improve. That is coaching know-how, not a counted finding, so test your own.
+
+The drill is the outside-edge circle. Skate round a faceoff circle on one foot, on the outside edge of the foot nearer the middle. This is the hard one, and the one people fall on, so build up to it. Start at walking pace, on a wide curve, with your helmet on. Lean more only as the edge holds. Feeling wobbly means you are at the edge of your control, and that is where you improve. Feeling out of control means you have gone past it, so slow down.
+
+Do edge work slowly and cleanly. One coaching source says ten to fifteen focused minutes, done often, beats a long, exhausting session now and then.
+
+Let me pull your body together. Stay low, knees over your toes, chest up, weight on the balls of your feet. Keep your eyes up, not just your chin. And train your outside edges, starting slow, with your helmet on.
+
+Eighth idea. Learn to fall, and learn to get up.
+
+You will fall while you learn outside edges. Everyone does. You will fall long before you can stop, and far more often than you do anything fancy. A fall you have practised costs you a bruise. One you haven't can cost you a wrist or a head. It takes about five minutes to learn.
+
+First, falling to the ice.
+
+As you feel yourself going, get low. Bend your knees and sink, so there is less height to fall.
+
+Go down on your side, onto your hip, your thigh and the side of your backside. Those are padded. Never land on your tailbone, your knees or a straight arm.
+
+Keep your hands in. Never put a hand out to catch yourself on the ice. Here is why. A stiff arm puts all your weight through one wrist.
+
+Slide with the fall, and don't fight it. Sliding spreads the bump out. Fighting the fall turns it into a crash.
+
+Now your chin. This part changes with where you are falling, so listen to both halves.
+
+Going down onto the ice, tuck your chin toward your chest. Do it most of all if you fall backwards. That stops your head snapping back onto the ice.
+
+Sliding toward the boards, do the opposite. Head up, chin off your chest. Turn so your skates or your side meet the boards first. If you can't, get your arms out. Anything but your head first.
+
+Here is why it changes. On the ice, a tucked chin keeps your head off the ice. Going into the boards, a tucked chin puts your neck first in line.
+
+So, onto the ice, chin in. Into the boards, head up.
+
+If you end up facing the boards with no time to turn, put your stick and gloves up on the glass, spread wide. Keep your head off it. That is only for when things have already gone wrong. It is not how you aim to meet the boards.
+
+The idea behind all of it is the same. Spread the bump over as much of your body as you can.
+
+Now getting up.
+
+When you have fallen, stay down for two or three seconds first. Check that you are all right. Getting up fast off a fall you haven't checked can make an injury worse. That is coaching caution, not a medical finding, but do it every time. If you are hurt, stay down, and let play be stopped.
+
+A fall can give you a concussion. A concussion is an injury to the brain, from a knock to the head, or a jolt that snaps the head. You don't have to be knocked out to have one.
+
+If a concussion is suspected, come off straight away, and tell someone. You are off for the rest of that day. And you don't go back on the ice until a medical professional says you can, even if you feel fine. It isn't the player's call, because a concussed player will often say they are fine.
+
+Afterwards, someone stays with them. They don't drive, and they don't go home on their own. If they feel worse, get medical help straight away.
+
+After any knock to the head, treat it as a possible neck injury too. If a player is still down, don't help them up or move them, and leave their helmet on. Phone for an ambulance if anything looks serious, like being knocked out, a fit, neck pain, or numbness or tingling.
+
+If you are all right, here is how to get up. Roll onto your hands and knees. Bring one skate up and plant it flat beside your hands, with your knee bent at about a right angle. That builds a base before you rise. Push down through that skate and your hands, and bring the other skate up beside it. Come up into your low stance, not standing tall, or you will just fall again.
+
+Once you know you are not hurt, and nobody suspects a concussion, be quick. Two seconds on the ice, not six, can be the difference in a scoring chance. Check first, then hurry. Never the other way round.
+
+Let me pull falling together. Onto the ice, get low, go to your side, hands in, chin in. Into the boards, head up, skates or side first. Facing the glass with no time to turn, stick and gloves up and spread wide. Then two or three seconds to check, and if a concussion is suspected, off for the day and not back until a medical professional says so.
+
+Ninth idea. The stride, and where your power leaks out.
+
+Push out to the side and slightly back, never straight back. A blade pushed straight back just slides along the ice. It grips because it is cutting across the way it is travelling.
+
+Finish the push. Most players stop far too early. Straighten the pushing leg until it is done.
+
+Then bring that foot back in under your hips, not down in front of you. A foot that lands in front of you brakes every stride. And bring it back quickly. Here is why. One small study filmed fast and slow skaters, and the fast ones got the foot back to the ice sooner. So speed is not just a bigger push. It is a faster return.
+
+Between pushes, glide on one bent leg. If you straighten up in the glide, you have to bend again before the next push.
+
+Out of a start, the same goes. After your first few steps, get off your toes onto the whole blade and let your stride get longer. A player who stays on their toes is always speeding up and never gliding. They tire, and they end up with a low top speed.
+
+Two things here are genuine disagreements between coaches. The first is the toe flick. One coaching school says finish each push with a snap of the toe, out and back. Another calls the flick a mistake, and wants you to push through the heel and middle of the blade. The second is your arms. The most widely taught way is front to back, like a sprinter. Some coaches teach a side to side swing instead, to match the sideways push of your legs.
+
+Both camps agree on what matters. Keep it rhythmic, in time with your legs, and keep your shoulders square up the ice. So use what your coach teaches. If nobody has taught you, start with front to back, because it is more widely taught, not because it won the argument.
+
+Here is a free test of your stride. Skate from goal line to goal line at a comfortable pace, and count your strides. Then do it again, trying to use fewer. If the count drops a lot, you weren't finishing your push. Do it again every month.
+
+Tenth idea. Cross over when you have room, turn tight when you don't.
+
+These two get mixed up all the time. A crossover builds speed through a wide curve. A tight turn changes direction in the smallest space.
+
+So with room and a need for speed, cross over. With no room, turn tight. Coming off the wall, escaping a checker, or cutting back on the forecheck, there is no room for a wide curve, so a crossover is the wrong tool. The forecheck is the pressure you put on in their end to win the puck back.
+
+A crossover has two pushes, and most players only do one. The outside leg pushes hard on its inside edge, then crosses over in front. Meanwhile the inside leg pushes too. It pulls under your body and out the other side, on its outside edge. That second push is called the under-push, and it is the half most players are missing. If you just lift one foot over the other, you have switched off half your power.
+
+To feel it, skate a few laps of a circle doing only the under-push. Never cross your outside foot over. To go faster round a turn, pull that leg back under you faster. Not wider, not harder. Faster.
+
+Lean your whole body into the curve, from your ankles. Don't lean your upper body while your legs stay upright. Then your edges aren't working, and you are just falling sideways.
+
+For a tight turn, sink lower. You can't make a tight turn standing up. Here is why. How tight you turn depends on how far you lean, and how far you can lean depends on how much you bend your knees and ankles. So sink, keep your chest up and your eyes up, and let your whole body go into the turn, not just your feet.
+
+The turn that shakes off a checker is the cutback. With the puck along the wall, turn tight back against the way you were going. The checker who committed to your first direction is left behind. It is all outside edge. And because you are on the wall, the same line holds. Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck. Keep it up even going slowly.
+
+Almost everyone has a stronger crossover side and a weaker one, even professionals. Find out which is yours.
+
+Here is why it matters. You drift toward turns on your strong side without noticing, and that makes you predictable. A winger with a weak side takes a worse route on the backcheck, because turning that way costs speed. A common guide is two laps on your weak side for every one on your strong side, kept up over a season. That is a coaching guide, not a tested best. Give your tight turns the same treatment, because they have a weak side too.
+
+Eleventh idea. The stops, and starting out of them.
+
+The hockey stop first. Turn your hips so both skates go sideways across the way you are moving, and let the blades scrape. Feet about shoulder width apart. Keep your knees bent, and sink lower as you stop, so your legs soak it up. Chest up, head facing forward.
+
+Don't lean back away from the stop. That is the instinct, and it puts you on your backside.
+
+The front skate works on its inside edge, and the back skate on its outside edge. Here is why both should bite. A stop on one edge leaves you off balance for the start out of it, and the start is the point of the stop.
+
+If you can't do a hockey stop yet, use the snowplough. Point your toes in a little, press on both inside edges, and push the blades out. It is slow, and it leaves you out of position, but it always works.
+
+A stop is only worth what comes after it. A good stop leaves you loaded. That means low, on your edges and balanced, so your first step out is immediate.
+
+Now your weak side. Here is what it costs you. You take longer routes to avoid it, without noticing. You turn instead of stopping, which carries you further from the puck. You arrive at battles slowing down instead of set. And you lose the stop and go back race, one of the commonest races in the game.
+
+Then practise the stop and the start as one movement. Stop, three explosive steps the other way, stop, three steps back. That one drill holds most of what hockey asks of your legs. And when you skate on your own, stop at every blue line and goal line, half of them on your weak side.
+
+Let me pull the moving part together. Push out to the side, finish the push, and bring the foot back under you fast. Cross over with room, turn tight without it, and make your crossover use both pushes. Stop on both sides, low, and go straight out of it.
+
+Twelfth idea. Skating backwards, and why it is a defender's skill.
+
+Your gap is the space you keep between you and a puck carrier skating at you. Holding a tight gap is the core defensive skill, and it is a skating problem. Here is why. You can't hold a tight gap against a fast forward unless you can go backwards nearly as fast as they go forwards.
+
+A defenceman who can't do that does one of two things. They leave a huge gap and get walked into their own end. Or they turn early to skate forwards, and get beaten by the first change of direction. Both look like bad decisions. Really, they are skating failures. How big a gap to keep belongs to the episode on defending the rush.
+
+Your main backward push is the C-cut. One foot pushes out and curves back in, carving a C into the ice, while the other skate glides straight back under you. Push one foot at a time, all the way out, with your full weight on the pushing foot. Then bring it back under you, just like the forward stride. Pushing weakly with both feet at once is the slow way most beginners use.
+
+Sit lower than you do going forwards, as if on a stool, with your knees covering your toes and your back straight. But don't tip forward at the waist. Sink your backside down and back, and let your chest come forward to balance it.
+
+Your weight sits over the middle of the blade. Here is the check. If you feel the front of the blade digging in, you have leaned too far forward. And leaning too far forward kills your speed and control going backwards.
+
+C-cuts are your cruising gear. When an attacker speeds up or attacks a lane, C-cuts alone won't keep up. That is what backward crossovers are for. Your outside leg crosses over, and your inside leg pulls under you and pushes out, finishing off the toe. Just like going forwards, that under-pull of the inside leg is the half most players are missing. For a defenceman, it is the difference between holding a gap and getting beaten wide. Keep your shoulders level and your hips open to the play, so you can still see the puck and the attacker.
+
+Forwards need backward skating too. You use it reading the play while retreating through the middle of the ice. And you use it when you cover for a defenceman who pinches, stepping down from their blue line to keep the puck in.
+
+Thirteenth idea. Pivot late, and know which way.
+
+You are skating forwards and need to skate backwards, still facing the play. Stay square, going forwards, as long as you can. Here is why. Every moment you are going forwards is a moment you could still step up, which means moving forward to challenge the carrier.
+
+If you step up, it is your stick on the puck, not a hit. Whether you may hit at all is your league's call, so find out. And if you can see the carrier's numbers, pull up and play the puck.
+
+When you do pivot, open your hips first, not your shoulders. Your shoulders turning first spins your eyes off the carrier. Open your lead skate, put your weight on it, bring the other skate round, and start your C-cuts at once. And keep your knees bent through it. Players who stand up as they pivot are the ones who get beaten.
+
+Then the part that holds for everyone. Pivot late. Once you have turned to skate forwards, you can't react to a change of direction any more. So stay backwards as long as you can.
+
+The other way, from backwards to forwards, is for when the puck turns over and you need to go. Open your hip toward where you are going, plant, and drive out on your inside edge with a short, quick start. Most forwards lose a step here on a rush going the other way, so drill it both directions.
+
+Now which way you pivot. The usual coaching default for a defenceman is toward the boards, not toward the middle.
+
+Here is how it works, and why. The default is about what happens if you fail. If you get beaten in the pivot, you want to be beaten toward the wall. There, the boards act like a second defender and the shooting angle is poor. You don't want to be beaten into the slot, the ice in front of your net between the two faceoff circles. That is where goals come from.
+
+How much the wall helps depends on how wide your rink is. On a wide rink, an attacker forced outside still has room to keep going. But on any rink, being beaten toward the wall is the better failure.
+
+Being beaten toward the wall is not an invitation to ride the attacker into it, push them into it, or trip them into it. Driving a player into the boards is boarding. It is a penalty in every league, and it can get you thrown out of the game.
+
+Pivoting toward the boards is a default, not a law. Some coaches want a pivot to the middle in certain situations. One is when turning away would take your eyes off the puck. Another is when you have help on the inside, and the bigger danger is the attacker cutting behind you. So ask your coach which they want. And drill both ways, because the attacker decides the right direction, not which way you happen to be good at.
+
+Let me pull backwards together. Hold your gap with your feet, C-cuts for cruising and backward crossovers when they speed up. Sit low, weight over the middle of the blade. Open your hips, keep your knees bent, and pivot late. Pivot toward the boards by default, but ask your coach, and drill both ways.
+
+Fourteenth idea. Using your skating in a game.
+
+The same few situations come round every shift, and each one has a skating answer.
+
+The loose puck. The race is the first three steps, so drive them. But how you arrive matters just as much. Come in knees bent, head up, on an angle to the boards, and able to stop. Here is why. A player who wins the race at full stretch has no balance left to protect the puck.
+
+And because it ends at the boards, the same line again. Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck. Keep it up even going slowly.
+
+The turnover. When your team loses the puck, stop and go the other way. Don't loop.
+
+The backcheck. Come back hard in your lane and pick up your attacker on the inside. That means goal side, between them and your net, not level with them. Get there with your skating. It is your stick on the puck, not a hit. Whether you may hit at all is your league's call. Never hit a player who can't see you coming, and never from behind. If you can see their numbers, pull up and play the puck.
+
+Who takes which lane on the way back is a team choice. Commonly the centre takes the middle lane and the wingers take the outside. Some teams give the middle to whoever gets back first. Ask which yours plays.
+
+Driving the net. Skate a straight line, stick on the ice, and pull up a skate's width outside the red line round the crease. The crease is the blue paint in front of the net. Here is why you stop there. Rebounds go to the player who has stopped and is ready, not to the one still gliding past the post.
+
+Keep your skates off that red line as well as out of the blue, because some leagues count the line as part of the crease. And while the goalie is in the crease, keep your stick out of it too. In some leagues, a goal scored with a stick or skate in there doesn't count.
+
+Pull up short of the goalie, and never go into the goalie. A goalie watching the puck can't see you coming or brace for you, and contact can hurt them. It can also be a penalty, and in some leagues it can get you thrown out of the game. And it can cost your team the goal.
+
+At the net front, keep your head up and your chin off your chest. A goal post can hurt you the same way the boards can.
+
+Getting open. When you want the puck in their end, find open ice and stop in it. Here is why. A stopped player gives your passer a target. A player circling through the space is open for an instant, and then gone. Keep your eyes up and your feet ready, because a stopped player is also easy to hit.
+
+On a breakout, the play that gets the puck out of your own end, many teams want the opposite. They want you swinging through with speed, to take the pass on the move. Ask your bench which they want, and where.
+
+The forecheck. Skate at where the carrier is going, not where they are. Here is why. If you chase straight at them, they turn away into open ice. Come at an angle that takes away the middle, and you steer them toward the wall, where the play gets smaller.
+
+You steer with your skating and your stick, not your body. Pick your line early, hold it, and add nothing when you arrive. An arm, a shoulder, a hip or a late swerve turns the angle into a check. Stick on the puck, never on their hands or body. Whether you may hit at all is your league's call, so find out first. Never your stick across them, and never into their back. If you can see their numbers, pull up and play the puck. Even going slowly, a crash into the boards can hurt.
+
+Who goes in first, and how hard, is your team's system. Ask what yours plays.
+
+Let me pull the game together. Drive the first three steps to a loose puck, and arrive able to stop. When the puck turns over, stop and go back. Come back goal side on the backcheck, stick on the puck, never a hit on someone who can't see you.
+
+At the net, stop short of the crease, skates off the red line, stick out while the goalie is in, never into the goalie, and head up. Stop in open ice to get the puck, unless your team wants you swinging. And on the forecheck, skate at where the carrier is going, with your stick, not your body.
+
+Fifteenth idea. How to get better.
+
+You can't see yourself skate. Nearly every fault in this episode is invisible from the inside. You honestly don't know whether you are finishing your push, or bringing your foot back under you. So get a coach to watch you. That is what power skating is, coached skating on its own, away from team practice. No coach? Have someone film you from the side and from behind. The faults are obvious on video.
+
+Before you decide you have a technique problem, check you don't have an equipment problem. Boots that are too big, too soft, or not done up properly make a deep knee bend and hard edges impossible, because your foot moves inside the boot. Dull or uneven blades, or a groove you are not used to, change how every edge feels.
+
+If you get thirty minutes of open ice, here is one sensible order. It is a coach's judgement, not a tested ranking, and a coach who has watched you may change it.
+
+Edge work first. Then weak-side crossovers, forwards and backwards. Then stops and starts both ways. Then pivots, forwards to backwards and back again, down the length of the ice. Then full strides from goal line to goal line, counting them. Then all of that again with a puck. Long sprints at top speed aren't on the list. Game skating comes in short bursts, so edges, starts and pivots buy you more.
+
+Why do it with a puck half the time? Because a puck changes your skating until you train it. Your arms stop, your head drops, your feet narrow, and you coast.
+
+If your practice time is short, your position helps you choose. A centre gains most from pivots, turning both ways, and keeping good technique when tired. A winger gains most from the first three steps, straight-line speed, and switching from forechecking to backchecking. A defenceman gains most from backward skating, backward crossovers, pivots both ways, and moving sideways along the blue line. Those priorities assume a common setup, so ask your coach what your team's system asks of your feet. Goalies skate a different way altogether, and should train it with a goalie coach.
+
+How long does it take? Stopping and turning both ways takes a few months of steady practice. Elite edges and fast pivots take years. That is one coaching provider's guidance, not a measurement. You won't get fast this month. But you can get noticeably steadier, lower and better balanced this month, and that alone changes how many battles you win.
+
+Let me pull it all together.
+
+Start at the boards. Go in on an angle, head up, chin off your chest. Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the checker, never duck. Keep it up even going slowly.
+
+Win the first three steps. Change speed on purpose, and keep your feet moving when the puck arrives. When the play turns, stop and go straight back, on either side.
+
+Stay low, keep your eyes up, and train your outside edges.
+
+When you fall onto the ice, go to your side, hands in, chin in. Into the boards, head up. Check yourself before you get up. If a concussion is suspected, come off, don't go back that day, and not until a medical professional says you can.
+
+Push out to the side and bring the foot back fast. Cross over with room, turn tight without it. Stop both ways.
+
+On defence, hold your gap with your feet, and pivot late.
+
+In a game, arrive able to stop. Come back goal side. Stop short of the crease and never into the goalie. And steer with your skating and your stick, not your body.
+
+Much of this depends on how your coach teaches and what your team plays. So here are three questions for your coach. Which way do you want me to pivot? When I want the puck, do you want me stopped or swinging? And which is my weak side, for stopping and for crossovers?
+
+Go and ask. Their answers tell you how your team wants you to skate, and now you know why each answer makes sense.
+
+===== SCRIPT END =====
+
+---
+
+## Notes (not spoken)
+
+### 0. Read this first: the omission with most at stake
+
+**The full red-flag list is not voiced.** After the review (M1), the neck-injury line reads: after any knock to the head, treat it as a possible neck injury; if a player stays down, don't help them up or move them, and leave their helmet on; phone for an ambulance if anything looks serious, *like* being knocked out, a fit, neck pain, or numbness or tingling. `conditioning_and_recovery.md` :27 lists ten red flags, each an ambulance call on its own. Four are named, marked as examples by "like"; repeated vomiting, a worsening headache, double vision, growing confusion or agitation and a skull deformity are not named. The airway exception to "don't move them" (CR :27, :285, :615) is also left out, which makes the instruction stricter, not looser. **If one thing goes back in, make it the full red-flag list, voiced whole from that document.** It is about 300 characters.
+
+### 1. Measurements (spoken body via `synthesize_style_b.extract_body`, 21 Oct 2026)
+
+| | This script | Remake (`skating.script.local.md`) |
+|---|---|---|
+| Characters | **36,667** | 24,704 |
+| Words | **6,986** | 4,655 |
+| Length vs remake | **+48.4%** (inside 25–50%) | — |
+| Runtime at 962.5 chars/min | **about 38.1 min** | 25.7 min |
+| Sentences, mean / median | 639, 10.9 / 11 | 410, 11.4 / 10 |
+| 25th / 75th percentile | 6 / 15 | — |
+| Sentences of 10 words or fewer | **50%** | 52% |
+| Over 30 words / longest | **0 / 29** (the checker definition). Each boards short form is 23 words plus "Keep it up even going slowly." as its own sentence. | 3 / 36 |
+| Paragraphs over 100 words | 0 (longest 98) | 2 |
+| Rules-flavoured sentence share (`pp1/rules.py`, the broad regex the template used) | **3.1%** (2.9% before the review fixes, which added two league sentences) | 3.4% on the same measure |
+| Digits, colons, semicolons, asterisks, hashes, brackets, parentheses | none | one colon |
+| he / him / his / himself / "man" / parent | 0 | — |
+| Boards short form, word for word | 6 times (idea 1, corner start, spine recap, cutback, loose puck, close), each with "Keep it up even going slowly." | 1 |
+
+Measured with `scratchpad/pp1/measure.py` and `rules.py`. The regex counts words in any sentence containing penalty, league, rule, allowed and similar. It counts form, not substance. The share fell even though the script adds gates the remake lacked, because "rule of thumb", "matches" and similar were reworded out of the non-rules sentences.
+
+**Spine.** The four big ideas and their recap end at **24.5%, 9.3 minutes**, inside the Series A "first quarter" rule. Getting there needed four paragraphs moved out of the spine into the ideas that own them (the stop's weak-side costs and "loaded" stop to idea 11, "get off your toes" to idea 9, the slot definition to idea 13) and two short cuts (see §2). Recaps fall at 23%, 35%, 45%, 63%, 77%, 88% and 96%.
+
+**Seams.** Searched every cap from 8,000 to 9,690 in steps of 5 with `split_script`, testing eleven safety blocks that must each sit inside one request: the whole of idea 1; the corner start with its short form; the whole falling, concussion and get-up block; the step-up with its gate; the pivot-direction default with its boarding limb; the loose puck with its short form; the backcheck with its numbers limb; driving the net through the goal-post limb; the forecheck through "a crash into the boards can hurt"; the cutback with its short form; and the outside-edge drill with its helmet limb. The script is `scratchpad/dw-skating/seams.py`.
+
+- **Safe windows, re-searched after the review fixes: 8,370–8,720, 8,835–9,135 and 9,350–9,690.** (Before the fixes: 8,340–8,720, 8,810–9,135, 9,350–9,665.)
+- **Chosen cap: 8,545**, the middle of the widest window (was 8,530, which is still safe). Five requests: 8,457 / 8,461 / 8,458 / 8,310 / 2,973. The largest request has 84 characters of headroom under the cap, and the window runs to 8,720. Seams fall before "One. Go into the boards" (inside the spine recap), "Push out to the side" (just after the ninth idea's title), "Forwards need backward skating too" and "Edge work first" (inside the thirty-minute order). None separates an act from its limb. The falling block, with the revised neck-injury line, sits whole in request 2; the backcheck, goalie and forecheck units sit whole in request 4.
+- ⚠️ **The brief's `--max-chunk-chars 9320` is UNSAFE here.** It gives four requests with a seam before "Being beaten toward the wall is not an invitation to ride the attacker into it", which splits the pivot-toward-the-boards default from its boarding limb. 9,255–9,345 all do this.
+- 8,425 is still safe and puts every seam on a recap or a part boundary, if the owner prefers that to the window's middle.
+- Re-run the search after any edit.
+
+### 2. Length decision
+
+The first draft came in at 37,342 characters, +51% and over the ceiling. Cut: a forward-stance cue warning ("sitting on a stool"), the one-foot stop, a framing line before the stride, a "teammate never sees your outside edges" paragraph (writer's framing), a blade-hollow line (the equipment paragraph keeps it), the "glide buys you a look" line, and an invented "why" for keeping your feet moving (replaced by the source's own reason, already in the paragraph). That landed at +47%. It stops there because the remaining additions over the remake are reasons the owner asked for, the four safety gates the brief requires, the falling block in the Basics form, and the recaps.
+
+### 3. Ranked cut list (if the owner wants nearer +25%, about 30,900)
+
+1. **Idea 15, the position priorities and the thirty-minute order**, about 1,300 chars. Loses practice planning. No safety content.
+2. **Idea 9, the toe flick and arm-swing disagreements**, about 900 chars. Loses the two "ask your coach" hedges on mechanics.
+3. **Idea 12, backward crossovers**, about 700 chars. Loses the under-pull, which the source calls the difference between holding a gap and getting beaten wide.
+4. **Idea 10, the crossover under-push drill**, about 500 chars.
+5. **Vocabulary, cut to edges, crossover and the checker**, about 700 chars. The others are then defined at first use.
+
+⚠️ **Never cut:** idea 1, the falling block (whole or not at all), the step-up gate, the boarding limb, the net-front goalie and post limbs, the forecheck limbs, or any boards short form.
+
+### 4. What I left out, and why (most at stake first)
+
+1. **The full red-flag list and the airway exception** (CR :27, :285, :615). See §0.
+2. **"Never lift anyone off their feet" and "no shove, no lean" on the forecheck** (brief item 6). The script teaches the forecheck as an angle with no contact at all: "You steer with your skating and your stick, not your body … add nothing when you arrive. An arm, a shoulder, a hip or a late swerve turns the angle into a check" (BC :21). No body is moved, so the item-6 body-moving limbs have no act to attach to, and none of the three sources carries the lift limb. It keeps: stick on the puck, the league gate, never a stick across them, never into their back, the numbers limb and the slow-speed limb. A reviewer should confirm that is enough.
+3. **The British concussion floor** (conditioning :29, :330). No return to competition before day 21 in British grassroots hockey, and no contact training before day 15. The script says "not until a medical professional says you can", which is never cheaper than a clearance, but a British listener cleared on day ten is not told about the floor. "See a doctor" (skating :681) is also folded into the medical-professional line, as in the Basics.
+4. **The crease rule's scope.** Skating.md :823/:833 is USA Hockey only: stick and skates out of the crease, line included, while the goalie is in it, or the goal is disallowed. The script says "in some leagues, a goal scored with a stick or skate in there doesn't count", and tells everyone to keep both out. Stricter, not cheaper.
+5. **The full boards posture's fine print** (skating :662, both hands on the stick on the glass; the "contact" detail owned by BC). The script teaches the fixed full form, the fallback and the short form; everything after the route is pointed to the body-contact episode, as the source does (:149).
+
+Also left out, as in the remake: every research citation and figure (Pagé's angles and times, Bracko's 1.5 seconds and glide share, Budarick, Marino), the 90-degree and 45-degree angles, the "full speed in three strides" myth and its correction, rink widths by book, the mohawk, the one-foot stop, the T-start by name, skating drills beyond those kept, off-ice work, the goalie skating detail, the half-snowplough, and the toe flick's "one third" figure.
+
+### 5. Safety pairings (each limb in the same request as its act at cap 8,545)
+
+| Act | Limbs in the same unit |
+|---|---|
+| Into the boards (idea 1) | angle, head up, chin off chest, never head first; never your back, never duck, one shared reason; light hit from behind, slow checker not safe; head first hurts the neck even going slowly; every speed, every league; full posture; facing-the-wall fallback, last resort, head off the glass; short form with "Keep it up even going slowly" |
+| Start that chases into a corner | knees bent, head up, on an angle, able to stop; short form |
+| Eyes up | head-down habit at the wall, walking-speed neck limb |
+| Outside-edge drill | walking pace, wide curve, helmet on, lean only as it holds, out of control means slow down |
+| Falling and getting up | Basics block in full: get low; side, hip, thigh, side of backside; never tailbone, knees, straight arm; hands in, one wrist; slide; chin in onto the ice, most of all backwards; head up into the boards, skates or side first, arms out, never head first; why it reverses; restated; the glass fallback with head off it; spread the bump; two or three seconds, stay down if hurt; concussion defined, no knockout needed, come off, tell someone, off for the day, not back until a medical professional says so, not the player's call; someone stays with them, no driving, not home alone, worse means help; any head knock is a possible neck injury: if a player stays down, don't help them up or move them, helmet on; ambulance if anything looks serious, with four examples; get-up; hurry only once cleared |
+| Cutback on the wall | short form |
+| Step up (idea 13) | stick on the puck, not a hit; league's call; numbers, pull up |
+| Pivot toward the boards | not an invitation to ride, push or trip them into it; boarding, a penalty in every league, can get you thrown out |
+| Loose puck | arrive able to stop, on an angle, head up; short form |
+| Backcheck | your skating; stick on the puck, not a hit; league's call; never hit a player who can't see you coming, never from behind; numbers, pull up |
+| Driving the net | stop short of the red line; skates and stick out of the crease; never into the goalie, with the injury reason first, then a penalty, in some leagues thrown out, and the goal; head up, chin off chest, the post hurts like the boards |
+| Getting open | a stopped player is easy to hit, eyes up |
+| Forecheck | skating and stick, not body; add nothing on arrival; stick on the puck; league gate, "so find out first"; no stick across, never into a back; numbers; slow-speed crash limb |
+
+Brief items 4 (time call), 11 (faceoffs), 12 (charging), 14 (goalie outside the crease), 17's clipping and pinch, and 19 (skate push-off) are not triggered: none of those acts is taught. Item 16: every sentence opening with an act verb and ", and" was listed and read. One was rewritten ("Look down at the puck, and your weight tips forward" became "If you look down …"); the rest are instructions the script wants followed. Items 3 and 20: "the checker" is defined once as "any player from the other team who comes at you near the boards, whether they are after the puck or just coming at you", with no possession condition. Item 1: the backcheck's first draft read "You are coming from behind, so never hit them from behind", which conditions the ban; after review it is "Never hit a player who can't see you coming, and never from behind." The item-16 scan was repeated after the review fixes; no new sentence opens on an act verb followed by ", and".
+
+### 6. Source traceability
+
+`skating.md` = S (blob `4bf32f6`). `conditioning_and_recovery.md` = CR (blob `e5ff30c`). `body_contact_and_battles.md` = BC (blob `b98d36e`). KF = Key focus, KT = Key Takeaway, CM = Common Mistakes.
+
+| Spoken claim | Source |
+|---|---|
+| **Opening.** Skill under every skill; a technique; practice at any age | S :33 |
+| Teammate notices getting there first, arriving ready; first steps and speed changes, not top speed | S :35 |
+| **Vocabulary.** Edges, groove, inside big-toe, outside little-toe, nearly everything on an edge | S :160–:171 |
+| Stride | S :218. Crossover | S :397, :776. Tight turn | S :777. Hockey stop | S :705. Pivot | S :563 |
+| The boards = the wall | plain gloss; S uses "the wall" throughout (:131) |
+| The checker, "whether they are after the puck or just coming at you" | brief items 3 and 20; S :134 "at any speed, in any league, checking or not" |
+| **Idea 1.** Angle, never straight, head up, chin off chest, never head first | KF :11, :131, KT1 :1005 |
+| A leg, side or arm takes most of the impact; puck control | :141 (USA Hockey quote) |
+| Decided several strides out; the part you control | :133, :141, :41 |
+| Never your back, never duck; one shared reason, see it and take it on your side | :134–:135, :143, :145; shared reason worded as in the Basics |
+| Turning to face the wall feels like protection; can't see or brace; light hit from behind can hurt head or neck; slow checker not safe | :143, CM :958 |
+| Ducking: head meets the boards first; even slowly, neck; no speed slow enough | :136, :151 |
+| Every speed, every league, whether or not anyone is meant to be hitting you | :134, :143 |
+| Posture: skates parallel, forearm and hip, never point of shoulder, not whole shoulder | :137, :662 |
+| Fallback: facing the wall, stick and gloves up, spread on the glass, head off it, last resort | :645, :662 ("damage limitation, not the posture to aim for"); head off it: :656, as in the Basics |
+| Short form and "Keep it up even going slowly" | standard §2; brief items 5 and 17; :136 |
+| Everything after the route is contact, own episode | :138, :149 |
+| **Idea 2.** Starting, stopping, turning; races settled within about three strides; coaching, not measured | KF :13, :320–:326 |
+| Bursts of a second or two; rarely at full speed; top speed rarely decides, first three steps do | :328–:334, :332 |
+| Start is a different technique; catches almost everybody; stride long and whole-blade, start short and on toes | :315, :351 |
+| Front of the inside edges, feet turned out, lean forward to drive along the ice, short then longer, leg still extends, quick feet beat reach | :341–:356 |
+| Lean is the body, eyes stay up | :343, :354 |
+| No hop; spends energy going up | :348, :363 |
+| Crossover start sideways or turning back; at the start of a backcheck | :348, :363; backcheck gloss :779 |
+| Corner start ends at the boards; arrive knees bent, head up, angle, able to stop | :354, :830 |
+| **Idea 3.** One speed easy to defend; defender holds it; glide then explode; must decide; separation from the difference; coaching craft | KF :15, :382–:389, :386 |
+| Off the puck, drift, let your check relax, break | :385, :389 |
+| Flat out all shift, no gear, no moment to look up | :384 |
+| Feet moving when the puck arrives; coasting gives up speed when you need it; skate first; push it into space | KF :17, CM :945 |
+| **Idea 4.** Stop and go back; loop feels faster, carries you away, a second you don't get back | KF :27, :820, :831, CM :947 |
+| Many stop only one way, never counted, test yours; loops instead, further from the puck | :739, :746, KF :27 |
+| **Idea 5.** Knees cover toes; can't see skates; about a right angle, thighs toward flat | :53, :56, :65 |
+| Knees and hips not waist; chest proud, backside back, squat not toes; hunching kills push, blocks view; hard start the exception | :85–:93 |
+| Balls of the feet; heels slow and easy to knock back; toes unstable | :98–:104 |
+| Four costs and their reasons | :61, :74 |
+| Glide, turn, stop; thighs-burn check | KF :19, :80 |
+| **Idea 6.** Eyes up not chin; start, turn, with the puck; can't read what you don't see | KF :21, :111, :116 |
+| Head pulls the body forward, weight wrong | :112–:116 |
+| Head-down habit at the wall; head first can hurt the neck at walking speed | :296, CM :943 |
+| Eyes drop in a turn | :787, :792 |
+| Far-end target; puck at the edge of vision | :296, CM :943 |
+| **Idea 7.** Inside power, outside control, with the lists | :178–:186 |
+| Most far better on inside; upright and nervous; feels like falling; biggest weakness and room; coaching, not counted; test your own | :180, :188, :190, CM :950 |
+| Outside-edge circle, inner foot's outside edge, hard one, people fall; walking pace, wide arc, helmet on, lean as it holds; wobbly vs out of control | :200–:201, :209, CM :950 |
+| Ten to fifteen focused minutes, one source | :202, :205 |
+| **Idea 8.** Rehearsed fall costs a bruise, unrehearsed a wrist or head; five minutes; fall before you can stop | :634 |
+| Get low and sink | :641, :651 |
+| Side: hip, thigh, side of backside, padded; never tailbone, knees, straight arm | :642–:643, :652 |
+| Hands in; locked arm, one wrist | :645, :653 |
+| Slide; fighting turns it into a collision | :646, :654 |
+| Chin in onto the ice, most of all backwards; head snapping back | :647, :655 |
+| Sliding toward the boards: head up, skates or side first, arms out if you can't, anything but head first | :647, :656 |
+| Why it reverses: chin in keeps the skull off the ice; into the boards a tucked chin lines the neck up | :660 |
+| "Onto the ice, chin in. Into the boards, head up." | :660 ("Ice: chin in. Wall: head up.") |
+| Glass fallback, head off it, only when it has gone wrong | :645, :662, :664; as in the Basics |
+| Spread it over as much of your body as you can | :664 |
+| Two or three seconds to check; getting up fast can worsen an injury, coaching caution; hurt, stay down, play stopped | :669–:672, :679 |
+| A fall can concuss; definition; no knockout needed | :681, KT11; definition CR :258 |
+| Suspected: come off at once, tell someone, not that day, not until a medical professional, even if fine; not the player's call | :671, :681, CM :960; CR :312, :314, :328 |
+| Someone stays with them; no driving; not home alone; worse means medical help straight away | :681 ("do not drive yourself home"); CR :338, :341, :343, KT17 :692 |
+| Any head knock a possible neck injury; a player who stays down is not helped up or moved; helmet on; ambulance if anything looks serious, like knocked out, a fit, neck pain, numbness or tingling | CR :27 (spinal assumption in any head injury; red flags incl. loss of consciousness, seizure, neck pain, numbness or tingling), :285 (covers all head injuries; helmet carries no exception), :615 ("Helping a downed player up after a head knock" is a mistake). Airway exception omitted, see §0 |
+| Get-up sequence; build a base; into the stance, not tall | :673–:675, :682–:685 |
+| Once cleared, hurry; two seconds not six; assess then hurry | :676, :687 |
+| **Idea 9.** Push out and slightly back, never straight back; slides; grips by cutting across | :223–:224, :232 |
+| Finish the push; most stop early | :226, :236 |
+| Foot back under the hips, not in front; brakes; faster return | :245–:248, :251, :261 |
+| One small study, fast skaters returned the foot sooner | :257–:259 (Pagé 1975, fourteen players, correlational) |
+| Glide on a bent leg; straightening means re-bending | :266–:271 |
+| Get off the toes after the start; always accelerating, low top speed | :368–:369, :375 |
+| Toe flick contested; out and back, or heel and middle | :228–:229, :238–:240 |
+| Arms: front-to-back most widely taught; side-to-side school; both agree rhythmic and shoulders square; use your coach's; else front-to-back because more taught | :276–:281, :284–:288 |
+| Stride count test, monthly | :303–:309 |
+| **Idea 10.** Crossover speed through a wide arc, tight turn smallest space; with room cross, without turn tight; off the wall, escaping, cutting back on the forecheck | :766–:779, KF :25 |
+| Forecheck gloss | :779 |
+| Two pushes, under-push missing, half the propulsion; laps of under-push only; faster not wider | :402–:417 |
+| Whole body leans from the ankles; upper body only means falling sideways | :422, :424, :429–:430 |
+| Can't turn tight standing up; radius from lean, lean from knee and ankle; chest and eyes up, whole body | :784–:790 |
+| Cutback: tight-turn back against momentum; checker committed; all outside edge | :798, :801, :807 |
+| Stronger and weaker crossover side, even pros; drift toward strong side, predictable; winger's worse backcheck route; two laps weak for one, a season, not measured; tight turn has a weak side | :436–:452, :802, :810 |
+| **Idea 11.** Hips round about ninety degrees, blades scrape; shoulder width; knees bent and sink; chest up, head forward | :696–:699, :705–:710 |
+| Don't lean back, the instinct, puts you on your backside | :700, :711 |
+| Front skate inside edge, back skate outside edge; a one-edge stop leaves you off balance for the start | :698, :702, :708, :713 (⚠️ S labels the balance reason "this document's reasoning rather than a sourced claim"; voiced without the label) |
+| Snowplough: toes in, both inside edges, push out; slow, out of position, always works | :728–:734 |
+| Loaded stop; only worth what follows | :753–:758 |
+| Weak-side costs: longer routes, turn instead, further from the puck, arrive slowing, lose the exchange | :740–:741, :746 |
+| Stop-three-steps drill; every blue line and goal line, half weak side | :743, :748, :754, :758 |
+| **Idea 12.** Gap defined; core defensive skill; a skating problem; backwards nearly as fast | :463, :469 |
+| Huge gap or early pivot; skating failures scored as decisions | :464–:465, :471 |
+| Distances belong to Defending the Rush | :469 |
+| C-cut; one foot at a time, full extension, full weight; recover under; both feet at once is the beginner's habit | :478–:489 |
+| Stool stance, knees over toes, back straight; hip hinge, not a tip at the waist | :494–:495, :502, :508, :511 |
+| Middle of the blade; front digging means too far; leaning forward kills speed and control | :496–:499, :504, :509 |
+| Cruising gear vs crossovers when they speed up; outside leg over, inside pulls under and pushes off the toe; under-pull the missing half, gap vs beaten wide; shoulders level, hips open | :520–:538 |
+| Forwards need it; retreating; covering a pinch, defined | :466, :473 |
+| **Idea 13.** Stay square as long as you can; step up defined | :568, :577 |
+| Step-up gate: stick on the puck not a hit; league's call; numbers, pull up | BC :21, :15, :31 (brief item 13) |
+| Hips first not shoulders; eyes on the carrier; lead skate, weight, trailing skate, C-cut at once; knees bent, standing up gets you beaten | :569–:572, :578–:580, CM :953 |
+| Pivot late, can't react to a change of direction | :615, :628, KF :29 |
+| Backward to forward: open hip, plant, inside edge, short toe start; most forwards lose a step; drill both | :598–:604 |
+| Default toward the boards; about the failure; second defender, poor angle; not the slot, where goals come from; slot defined | :609–:610, :618 |
+| Width depends on the rink; wide ice still has room; better failure on any sheet | :610, :622 |
+| Not an invitation to ride; boarding, a penalty in every league, can get you thrown out | :611, :622; "push or trip" and the ejection from BC :723, :1979 (every book reaches at least a major with a game misconduct; USA Hockey's boarding covers a push or trip) |
+| Default not a law; middle on certain reads, eyes off the puck or inside help; ask; drill both; the attacker decides | :612–:614, :625–:626 |
+| **Idea 14.** Loose puck: drive three, arrive knees bent, head up, angle, able to stop; full stretch has no balance | :819, :830 |
+| Turnover: stop and go, don't loop | :820, :831 |
+| Backcheck: lane, on the inside, goal side, not level | :821, :832 |
+| Backcheck limbs: stick on the puck, not a hit; league's call; never hit a player who can't see you coming, never from behind; numbers | BC :21, :15, :31 ("Never hit a player who cannot see you coming"); brief item 13 |
+| Lanes a team choice; centre middle, wingers outside; first back takes the middle; ask | :827, :832 |
+| Net drive: straight, stick down, a skate's width outside the red line, short of the goalie; rebounds to the stopped player | :822, :833 |
+| Crease = the blue paint | plain gloss (S :833 "crease's red line") |
+| Skates off the red line, some books count it; stick out while the goalie is in; goal doesn't count | :823, :833 (USA Hockey only in S; voiced as "in some leagues") |
+| Never into the goalie; can't see or brace, can hurt them; a penalty, in some leagues thrown out; can cost the goal | BC :29, :1310 and :1325 ("a braced shove runs from a minor to leaving the game"), :1343; the injury reason as in `podcast_style_b/detailed/puck_handling.md` (BC :1365, :1380) |
+| Net front head up, chin off chest; the post hurts like the boards | BC :1263, KT10 :2098 (brief item 18) |
+| Getting open: stop in open ice, a target; circling is open an instant; eyes up, easy to hit; breakouts and regroups often want swinging; ask | :824–:825, :834, CM :948 |
+| Forecheck: skate at where they are going; angle takes the middle, steers to the wall | :826, :835 |
+| Forecheck limbs: skating and stick not body; add nothing on arrival; stick on the puck; league gate; no stick across, never into a back; numbers; slow-speed crash | BC :21, :15, :31; S :136; brief items 6 and 13 |
+| Who goes and how hard is the system; ask | :827, :835 |
+| **Idea 15.** Can't see yourself skate; coach; power skating defined; film side and behind | :892–:901 |
+| Equipment first: boots, foot moves; blades and hollow | :918–:923 |
+| Thirty-minute order, judgement not ranking; no long sprints, short bursts | :869–:886 |
+| A puck degrades the stride: arms stop, head drops, feet narrow, coast; drills half with a puck | :842, :852 |
+| Position priorities; they assume a setup, ask; goalies with a goalie coach | :844–:848, :854–:858 |
+| Months for basics, years for elite, one provider; this month, steadier and lower, more battles | :928–:936 |
+| **Close.** Restates ideas 1–15 | as above |
+| Three coach questions | pivot direction :614; stopped or swinging :825; weak side :437, :739. My framing |
+
+### 7. Departures from the source, the template and the remake
+
+- **The template's "rink one end at a time" is replaced by skills one part at a time** (body, falling, moving, backwards, in a game, getting better). Skating.md is organised by skill, not zone, and its game situations are one section (:814).
+- **Fifteen ideas**, four as the spine, against the template's eighteen.
+- **Falling has its own part, placed after outside edges** ("the one people fall on", :209), not after pivots as in the source. It follows the approved Basics placement and wording.
+- **"The checker" is defined by the brief's wording**, not the remake's "an opponent coming to hit you or take the puck off you".
+- **Two additional sources**: CR for the concussion definition, aftercare and neck-injury lines (brief item 10); BC for the four gates and limbs the brief requires and skating.md does not carry. Both are linked from S :7.
+- **The goalie-contact reason** is traced to BC passages about backing into your own goalie, as the puck_handling Detailed script did. A strict §9 reader may want an attacker-side line.
+- **The crease stick rule** is stated "in some leagues", unscoped from USA Hockey, and applied to everyone as a habit. Stricter, not cheaper.
+- **The hockey-stop balance reason** is voiced as a reason; S labels it the document's own reasoning (:702).
+- **Pagé's recovery finding** is voiced as "one small study", with no figures.
+- **Position priorities** say "a common setup" instead of naming the 2-1-2 forecheck and the low zone collapse (:856).
+- **The getting-open alternative has no "why"** because S gives none (decision 6 of the plan); it stops at how it works and "ask".
+- **The remake's "two different injuries, and neither one is the lesser"** is replaced by the Basics' one shared reason, per the owner's "aware, not freaked out".
+
+### 8. What I found unclear in the source
+
+- S :823 (facts) scopes the crease stick rule to USA Hockey; S :833 says "some books count the red line as crease" for skates. The two limbs have different scopes and are easy to blur when heard.
+- S :702 and :713 give the only reason for a two-edge stop as the document's own reasoning, while :698 states the edge assignment flatly. A listener hears the reason as fact.
+- S :41 says what to do once contact is unavoidable "belongs to Body Contact and Battles", yet :137 and :662 teach the posture in full. The script follows the standard and teaches it once.
+
+### 9. Where this script is weakest
+
+- **The forecheck unit is the densest safety paragraph** (eight limbs in about 90 words). It is the brief's required set, but it may sound like a list.
+- **The boards short form is said six times.** That is the instruction, per the standard, but it may feel heavy at 37 minutes.
+- **The spine lands at 24.5%**, just inside the quarter. Any edit to ideas 1 to 4 can push it out.
+- **The seam at 8,545 falls just after "Ninth idea. The stride, and where your power leaks out."**, so the title closes request 2 and its content opens request 3. 8,425 avoids this.
+- **The 29-word checker definition** is the longest sentence, and it carries the brief's scope wording, so it was not split.
+- **Mechanics sit in ideas 9 to 12** (push, recovery, C-cuts, stance). The source teaches them, but they are on the "coach watching your feet" side of the CLAUDE.md test. They are kept short and each carries a game reason.
+
+### 10. What I could not check
+
+- A review found 3 MAJORs (§11), all fixed. The fixes are new text and have not been re-reviewed. No `rules-verifier` has read this script. The boarding consequence ("a penalty in every league, and it can get you thrown out") was checked against BC :705–:727 and :1979, not against the rulebooks.
+- The neck-injury and aftercare lines are new to the skating episodes; the Basics script does not carry the neck-injury line.
+- Nobody has heard it. The seam positions, the six short forms and the plural "they" are untested by ear.
+- Line numbers are from blob `4bf32f6` (S), `e5ff30c` (CR) and `b98d36e` (BC) at HEAD `a6a3014`.
+
+### 11. Review fixes, 21 October (3 major, 1 minor; all applied; not re-reviewed)
+
+The coordinator's sketches were checked against CR :27, :285, :615 and BC :15, :21, :31, :1310, :1325 before use. The final wording is mine.
+
+| # | Old | New |
+|---|---|---|
+| M1, neck line (falling block) | "And treat any head knock as a possible neck injury too. If a player has neck pain, or weakness, numbness or tingling in their arms or legs, phone for help first. Don't move them, and leave their helmet on." | "After any knock to the head, treat it as a possible neck injury too. If a player stays down, don't help them up or move them, and leave their helmet on. Phone for an ambulance if anything looks serious, like being knocked out, a fit, neck pain, or numbness or tingling." The don't-move and helmet limbs no longer depend on a symptom; the list is marked as examples; a knocked-out player is named. "Stays down" keeps it apart from the fallen player's own get-up, which comes next and is gated on "If you are all right". |
+| M2, backcheck | "Get there with your skating, and keep your stick on the puck, not on them. Never hit anyone from behind. If you can see their numbers, pull up and play the puck." | "Get there with your skating. It is your stick on the puck, not a hit. Whether you may hit at all is your league's call. Never hit a player who can't see you coming, and never from behind. If you can see their numbers, pull up and play the puck." |
+| M2, game recap | "Come back goal side on the backcheck, and never into anyone's back." | "Come back goal side on the backcheck, stick on the puck, never a hit on someone who can't see you." The recap paragraph was then split before "At the net" to stay under 100 words. |
+| M3, goalie | "It can also be a penalty, and it can cost your team the goal." | "It can also be a penalty, and in some leagues it can get you thrown out of the game. And it can cost your team the goal." |
+| Minor, forecheck gate | "Whether you may hit at all is your league's call." | "Whether you may hit at all is your league's call, so find out first." |
+
+After the fixes: 36,667 characters (+48.4%), median 11, 49.8% at ten words or fewer, none over 30, rules share 3.1%, spine 24.5%. The seam search was re-run over the full window, giving the windows and the new cap of 8,545 in §1.
+

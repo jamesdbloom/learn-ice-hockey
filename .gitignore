@@ -148,3 +148,5 @@ podcasts/
 podcast_style_b/*.chunks/
 # ...and in subfolders: podcast_style_b/basics/ (The Basics) and podcast_style_b/pilots/.
 podcast_style_b/**/*.chunks/
+# ...and the same caches written beside TTS comparison samples (tts-comparison/*.mp3.chunks/).
+tts-comparison/**/*.chunks/

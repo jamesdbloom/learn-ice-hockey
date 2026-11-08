@@ -1384,7 +1384,9 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
-                    tts_sample.py, synthesize_style_b.py.
+                    tts_sample.py, synthesize_style_b.py, synthesize_studio.py (one long-form
+                    ElevenLabs Studio render of a Style B script; paid API; key from the
+                    environment only).
                     ⚠️⚠️ synthesize_style_b.py IS THE THIRD RECORDED INSTANCE OF THE FAILURE THIS BLOCK
                     ALREADY WARNS ABOUT TWICE, AND IT WAS FOUND BY AN AUDIT LOOKING FOR SOMETHING ELSE.
                     Measured 24 September 2026: it scored 0 mentions in CLAUDE.md and 0 in

@@ -1,0 +1,286 @@
+# Carrying the puck — The Basics, topic 4 (script, Series B)
+
+**Draft, not a production script. Not synthesised. Revised 21 Oct for a `safety-reviewer` pass (one round of MAJOR and MINOR fixes, below). The revision has not been re-reviewed.**
+**Series:** "The Basics" (owner, 20 Oct 2026). This is topic 4, "Carrying the puck — The Basics".
+**Audience (owner, 20 Oct 2026):** suitable for newer players or younger players. It is the place to start. Once these principles are mastered, the listener moves on to the longer Playing principles episode and the conversation episode. There is no checking framing either way.
+**Spoken:** 10,983 characters, 2,148 words, about 11.7 minutes at 940 chars/min (was 10,473 before the safety revision).
+**Source document:** `content/technique/puck_handling.md`, working-tree blob `2cbd9f0` (HEAD blob `ade6a8c`; the staged change is four gender-neutral pronoun edits in rules lines and the Sources, none of them voiced here). Line numbers below are to the working tree.
+**Written to:** `project/podcast_principles_series_plan.md`, Series B delta and the owner's 20 Oct listening feedback, on top of `project/podcast_style_b_script_standard.md`, matching `podcast_style_b/pilots/winger_core.md`.
+
+Everything between the delimiters is spoken text.
+
+---
+
+===== SCRIPT START =====
+
+This is The Basics, topic four. Carrying the puck.
+
+The Basics is a series for newer players and younger players. Each episode covers the core things to get right first, and why each one works. Once these feel natural, the longer Playing principles episode and the conversation episode on puck handling go deeper.
+
+Good puck handling buys you a little extra time. Every other choice you make with the puck needs that time.
+
+Before the ideas, a few words this episode uses. I will explain each one now, so nothing gets in the way later.
+
+Stickhandling. This is moving the puck back and forth on your stick, using your hands.
+
+The blade. This is the flat part at the bottom of your stick, the part that touches the puck. It has a toe at the end, a middle, and a heel nearest the shaft.
+
+Your top hand. This is the hand at the top of your stick. Your bottom hand holds the stick lower down.
+
+The other player. In this episode, that means a player from the other team who is near you, or coming at you to take the puck.
+
+The far side. This is the side of your body away from the other player.
+
+The boards. This is the wall around the rink.
+
+A rim. This is a hard pass along the boards, so the puck slides on round the curve of the boards.
+
+A reverse. This is when you send the puck back the other way, against the way the other team is coming.
+
+A chip. This is a short tap of the puck past the other player, often off the boards.
+
+Your own end. This is the end of the rink with your own net in it.
+
+A fake. This is when you pretend to go one way, so a defender leans that way, and then you go the other.
+
+That is all the words. Now seven big ideas, one at a time, and the reason each one works.
+
+First idea. Play with your head up.
+
+When you have the puck, keep your eyes up, looking at the ice in front of you. Not your chin pointing at the ceiling. Just your eyes up and forward. Then the puck sits at the bottom edge of what you can see.
+
+Here is why it works. A player staring at the puck can't see the open teammate. They can't see the open ice. And they can't see the other player coming at them, so they can't get ready for contact.
+
+The hard part is how you get there. Telling yourself to look up doesn't work. You look up, lose the puck, and look straight back down.
+
+So build feel first. Move the puck slowly, and notice how it feels on the toe, the middle and the heel of your blade. Peek down only when you have really lost the puck. Then make the peeks shorter. Once you can feel where the puck is, your eyes come up on their own.
+
+Two hand habits help a lot. Hold the stick loosely, firm enough that it can't escape, soft enough that you don't crush it. Here is why. A hand that squeezes can't feel the puck. And keep your top hand out in front of your chest, not stuck to your hip. Here is why. From there, your blade can reach all the way round your body.
+
+Second idea. Keep your body between the other player and the puck.
+
+When the other player comes for the puck, move the puck to your far side. If they are on your right, the puck goes on your left.
+
+Here is why it works. Your body becomes a wall between them and the puck. If the puck is on their side, their stick is closer to it than yours is. You have already lost it.
+
+Then get wide and low. Feet wider than your shoulders. Knees bent and hips down. Chest up, so you can still see.
+
+Here is why. A tall, narrow player gets knocked off the puck. A low, wide player is very hard to move.
+
+Turn side-on to the other player. Not chest on, and never your back. Keep your feet moving, with small, quick steps.
+
+Here is why. A player who stands still gets pinned. A moving player can slip away.
+
+Keep your spot, and let them try to move you. Don't push them, don't lean on them, and don't back into them.
+
+Keep both hands on your own stick, and never push your stick into them. Never grab the other player, their stick or their cage. Here is why. Two hands on your stick are ready to move the puck the moment the pressure lets go.
+
+Third idea. Know your way out before you get to the puck.
+
+Keeping the puck safe only buys you a second. It doesn't buy you a minute. While you hold it, another player from the other team is on the way.
+
+So decide while you are still skating to the puck. Who can I pass to? If nobody is open, where does it go? A rim along the boards. A reverse back the other way. Or a chip past the other player.
+
+Here is why it works. A player who decides early gets to the puck with a plan, and moves it on fast. A player who doesn't decide early keeps the puck safe for three seconds, and then loses it anyway.
+
+When the second has done its job, get out. Spin away from the other player and take the puck with you. Or turn tight across their path, so your body stays between them and the puck.
+
+How long your team wants you to hold the puck by the boards is your coach's choice. Some teams want it moved out straight away. Others want you to hold it until help arrives. Ask your coach which.
+
+Let me stop and repeat the first three ideas, because they keep the puck yours. Head up, by building feel first. Body between the other player and the puck, with the puck on your far side, low and wide. And know where the puck is going before you get there.
+
+Fourth idea. On the boards, take any contact along your side, with your head up.
+
+This is the most important safety idea in this episode.
+
+Near the boards, the other player may come right at you. Never turn your back to them. And never duck, however slowly they are coming.
+
+Here is the one reason behind both. You want to see what is coming, and take it on your side, not on your head or neck. Even slow or light contact can hurt your head or neck.
+
+So here is how you stand by the boards. Skates parallel to the boards, which means pointing along them. Your forearm and your hip are the parts nearest the boards. Never the point of your shoulder, and not the whole shoulder if you can help it. Head up, chin off your chest. Never your back to the other player. Never duck.
+
+And don't stop dead, facing straight into the boards. Here is why. That is how you get pinned, and the next player from the other team takes the puck. Angle yourself so there is always a way out along the boards, and keep your feet moving so you can take it.
+
+If you do end up facing the boards and can't turn, put your stick and gloves up on the glass, spread wide. Keep your head off it. That is only for when things have already gone wrong. It is not how you aim to stand.
+
+Fifth idea. In your own end, don't stickhandle. Move the puck.
+
+In your own end, get the puck moving. Pass it, rim it or reverse it.
+
+Here is why it works. If you lose the puck in your own end, the other team is right by your net. There is no time to get it back before they shoot. Nobody is ever told off for a plain, simple way out of their own end.
+
+A rim and a reverse are played on the boards, often with the other player arriving. So the boards habits hold here too. Never your back to the other player, and never duck.
+
+The middle of the ice is the same. Don't stickhandle through the middle of your own end, or the middle of the rink. Here is why. The middle is where most of the other team is. A puck lost there goes straight toward your net, and there are no boards to help you. If the middle is wide open, you can skate the puck through it. Just don't try to beat players there.
+
+And one more. If losing the puck would leave the other team with more attackers than you have defenders, don't try a move. Not ever. Pass it or move it on.
+
+Sixth idea. Against a defender, look for the pass first. If you take them on, make them turn.
+
+Before you try a move, look for a pass.
+
+Here is why it works. A pass moves the puck faster than any player can skate. A defender can't poke it off your stick. And it moves the defence more than a move does. Even a pass to a teammate in a worse spot usually beats a move against a defender who is in a good spot.
+
+If there is no pass, and you take the defender on, don't skate straight at their chest. Skate at one of their shoulders.
+
+Here is why. A defender you attack head on stays square, and blocks both ways past them. Make them turn their hips, and a gap opens that wasn't there before.
+
+Change your speed, too. Slow down, then burst. Here is why. A defender who has just slowed down can't speed up backwards quickly.
+
+Sell one fake, with your head and your shoulders, not just your hands. Then burst away. Here is why. A defender reads your body, not your stick. If your body doesn't fake, they aren't fooled. And the burst is what turns the fake into space.
+
+One good fake beats four fancy ones. Every extra move is another chance for a stick to reach the puck.
+
+If a stick blocks your way, push the puck past it, and skate round the other side to collect it. You and the puck don't have to go the same way.
+
+Which shoulder to attack is a choice your coach makes. Ask them which they want from you.
+
+Seventh idea. Don't slow down when the puck arrives.
+
+Lots of players get a pass while skating fast, and then slow right down to handle it. Don't. Keep striding.
+
+Here is why it works. Slowing down hands the defence two free seconds. Your speed is the most useful thing you have. Good hands should cost you none of it.
+
+When you are moving fast, carry the puck. Don't stickhandle every stride. Push the puck a little ahead of you and a little to the side. Take two or three hard strides, catch up to it, and push it ahead again. Touch it just enough that a defender can't time a poke at it.
+
+Here is why. Carrying the puck needs very little looking. So your eyes stay up, reading the play, while your legs keep their speed.
+
+Let me put it all together.
+
+Play with your head up, by building feel for the puck first.
+
+Keep your body between the other player and the puck. Puck on your far side, wide and low, side-on, feet moving. Keep your spot without pushing or leaning. Both hands on your own stick, and never grab.
+
+Know your way out before you get to the puck. A pass, a rim, a reverse, or a chip.
+
+On the boards, take it along your side. Skates parallel, forearm and hip to the boards, never the point of your shoulder, head up, chin off your chest, never your back to the other player, never duck.
+
+In your own end and through the middle, don't stickhandle. Move the puck.
+
+Against a defender, look for the pass first. If you take them on, make them turn, with a change of speed and one good fake.
+
+And when the puck arrives, keep striding.
+
+Three questions to ask your coach. How long do you want me to hold the puck on the boards? Which shoulder do you want me to attack? And when do you want me to carry the puck, and when should I pass?
+
+Ask them. Their answers tell you how your team wants you to play.
+
+Once these seven ideas feel natural, you are ready for more. The longer Playing principles episode on puck handling goes deeper into each idea, and why it works. The conversation episode talks it all through. Start there next.
+
+===== SCRIPT END =====
+
+---
+
+## Notes (not spoken)
+
+### 1. Measurements (spoken body, 21 Oct 2026)
+
+| | |
+|---|---|
+| Characters | **10,983** (was 10,473) |
+| Words | **2,148** (was 2,046) |
+| Runtime | **about 11.7 minutes** at 940 chars/min |
+| Sentences, mean / median | 231, 9.3 / 8 |
+| Sentences of 10 words or fewer | 65% |
+| Over 30 words | none; the longest is the fixed boards form, 29 |
+| Paragraphs over 100 words | none; the longest is 73 |
+| Rule numbers, book names, penalty tiers | none |
+| Masculine pronouns for a player; "parent" | **0**; **0** |
+| Markdown furniture, digits, colons, semicolons, parentheses | none |
+| Where the parts fall | Terms run to 15%. The first three ideas and their recap end at about 48%. The close begins at about 88%. |
+| Seams (`synthesize_style_b.py --dry-run --max-chunk-chars 9695`) | **Two requests**, 9,694 and 1,287. The one seam falls in the close, before "Play with your head up, by building feel for the puck first." Every idea, with its limbs, is whole in request 1, including the new free-hand lines and the glass fallback. Request 2 is the recap, questions and sign-off. No method is split from its limb. |
+
+### 2. The seven ideas, and why these seven
+
+All from the source's Key focus (:10–:26), in the order a newer player meets them.
+1. Head up, by building feel (KF :10), with the two hand habits from KT1 as its "how".
+2. Body between the other player and the puck (KF :12).
+3. Know your out before you reach the puck (KF :14).
+4. On the boards, take it along your side, head up (KF :16).
+5. In your own end and the middle, don't stickhandle (KF :20).
+6. Against a defender, pass first, then make them turn (KF :22 and :24, merged as KT12 merges them).
+7. Don't slow down when the puck arrives (KF :26).
+
+Left out of the ideas: KF :18, the free-hand brace (see §5).
+
+### 3. Safety pairings and every safety instruction kept
+
+| Instruction | Limb in the same breath |
+|---|---|
+| Head up | a puck-watcher can't see the other player coming, "so they can't get ready for contact" (:221, KF :10). Calm version of "gets hit hard". |
+| Body between, side-on, feet moving | "Not chest on, **and never your back**" (CM :1049). **"Keep your spot, and let them try to move you. Don't push them, don't lean on them, and don't back into them."** This is the brief's conservative limb and the source's non-checking line (CM :1049, :468), true in every league. The source's checking-game version ("hip and backside into them, absorb, spin off") is not voiced. Then **"Keep both hands on your own stick, and never push your stick into them. Never grab the other player, their stick or their cage"**, with the reason "two hands on your stick are ready to move the puck the moment the pressure lets go" (KF :18, :502). |
+| On the boards | never your back to the other player; never duck, **"however slowly they are coming"** (KF :16); one reason (see it, take it on your side, not head or neck); **"Even slow or light contact can hurt your head or neck"**; the full posture (skates parallel, forearm and hip, never the point of the shoulder, not the whole shoulder if you can help it, head up, chin off chest); don't stop square and planted (:573); **the fallback**: facing the boards and unable to turn, stick and gloves up on the glass, spread wide, head off it, "only for when things have already gone wrong" (:472, :456) |
+| Rim and reverse in your own end | "never your back to the other player, and never duck" repeated in the same idea (:861) |
+| Close | the boards short form, word for word as fixed, with "the other player"; "Both hands on your own stick, and never grab" |
+
+### 4. Length decision and cut list
+
+Cheapest cuts, if needed:
+1. **The two hand habits in idea 1** (grip, top hand off the hip). About 380 chars. Loses KT1, which the Key focus does not carry. This does not touch the free-hand lines in idea 2, which stay.
+2. **"One good fake beats four fancy ones…"** About 120 chars. Loses over-deking.
+3. **The push-past-the-stick paragraph in idea 6.** About 150 chars.
+
+Never cut anything in §3. Idea 2's "keep your spot, don't push, lean or back in" goes with side-on, or side-on goes too.
+
+### 5. What I left out, and why
+
+⚠️ **Read this first. The free-hand limbs are now IN** (safety revision, 21 Oct): both hands on your own stick, never push it into them, never grab the player, their stick or their cage. **What is still out:** the fend-off permission, the stiff-arm block and every penalty tier (:484–:534). Those permissions vary by book, so leaving them out is the conservative side. The script gives no permission a listener can be caught by.
+
+⚠️ **The omission a listener could now be penalised by: "off the glass, never over it"** (KF :20, :861). The script never mentions the glass, so it gives no belief about it. But a listener who lifts the puck over the glass from their own end will not be corrected. **If one thing goes back in, make it this.**
+
+The other limbs not voiced, because the acts they guard are not taught:
+- **Kicking at the puck, never at a player** (KT8), and **a puck that pops up over your own crease** (KT9). Both ejection- or penalty-shot-priced, and neither act is taught.
+- **A loose puck in your feet: never freeze it** (KT7).
+
+Also left out:
+- the checking-game protection detail: hip and backside into the pressure, absorb then spin (:462–:468). The facing-the-wall fallback is now voiced in idea 4;
+- protecting low in the offensive zone and the cycle (:606–:627);
+- stickhandling mechanics: cupping, soft hands, wide and tight dribbles, front-to-back, the toe drag, the one-handed reach;
+- the deke catalogue, beyond "one fake with head and shoulders";
+- which shoulder to attack and why, beyond "ask your coach";
+- how to practise, kit and drills;
+- every "coaching consensus, not counted" label (plan decision 8, as in the template).
+
+### 6. Self-check against `content/technique/puck_handling.md` (working tree)
+
+- **Opening.** Handling buys the time every other decision needs: :30.
+- **Terms.**
+  - Stickhandling as moving the puck on the stick: :30 ("moving the puck on your stick").
+  - Blade toe, middle, heel: :235. ⚠️ "Flat part at the bottom" and "heel nearest the shaft" are plain glosses the source does not write.
+  - Top hand at the top, bottom hand lower: :59, :61.
+  - Far side, away from the pressure: :414.
+  - Rim and reverse: :575. Chip off the wall past: :585, :666.
+  - Fake as a false signal, show one thing, do the other: :707.
+  - ⚠️ "The other player", "the boards" and "your own end" are plain definitions the source does not write, as in the template.
+- **Idea 1, head up.** Eyes up and forward, not chin to the ceiling, puck at the bottom edge of vision: :237. Can't see the pass, the open ice or the checker coming: KF :10, :221. Ordering yourself to look up fails: :226. Feel on toe, middle, heel: :235. Peek only when lost, shorter glances: :236. Eyes come up on their own: :226, KF :10. Grip firm not crushing, squeezed hand can't feel: :74. Top hand out in front of the chest, not on the hip, full arc: :81–:83, KT1.
+- **Idea 2, body between.** Far side, right then left: :414. Body as a wall, their stick closer, already lost: :414–:416. Feet wider than shoulders, knees bent, hips sunk, chest up to see: :436–:438. Tall and narrow gets knocked off: :434. Side-on, not chest: :462. Feet moving, small choppy steps, stationary gets pinned: :442. Keep your spot, no push, lean or back in: CM :1049, :468. Never your back: CM :1049 ("Side-on is not back-on"). Both hands on your own stick, two hands ready to move it when the pressure releases: :502, KF :18. Never push it into them: KF :18 ("Brace, don't drive — a driven shaft is a cross-check"), :513, :526. Never grab the player, their stick or their cage: KF :18, :504, CM :1052, KT10. ⚠️ The script says "both hands on your own stick" where the source says "free hand high on your own stick". It is the same act, and the source's own reason is "two hands are ready to move the puck" (:502).
+- **Idea 3, your out.** A second not a minute: KF :14. Second checker arriving: :592. Decide while skating to it, outlet or rim, reverse, chip: :594–:597. Plan, half a second, vs three seconds and lose it: :600. Spin away or tight turn across the path: :540–:542, :547–:550. Hold time is the coach's, quick out vs hold for support: :604.
+- **Idea 4, the boards.** Never your back, never duck, however slowly: KF :16. One reason, side not head or neck: KF :16, :474. Slow or light contact: :474 (light hit and walking speed, compressed). Posture: :470, :476. Don't get square and planted, pinned, second forechecker: :573. Angle for an escape, feet moving: :574. The fallback, facing the wall and unable to turn, stick and gloves on the glass, arms out, no head contact, damage limitation not the aim: :472, :456, CM :1049. "It is not how you aim to stand" is :472's "not a position to aim for".
+- **Idea 5, own end and middle.** Get it moving, pass, rim, reverse: :861. No recovery time, scoring chance: :861. "Nobody is ever told off for a plain, simple way out" is :861's "nobody has ever been criticised for a clean, boring defensive-zone exit". Rim and reverse on the wall, never back, never duck: :861. Middle, most defenders, lost puck to the slot, no boards: :871. Carry when genuinely open, don't stickhandle: :871. Last player back, the move is off: :913. "More attackers than you have defenders" glosses "odd-man rush".
+- **Idea 6, pass first, make them turn.** Pass faster than skating, can't be poked off, moves the defence more: :882. Worse spot beats a move against a good spot: :882. Not the chest, a shoulder, square defender closes both lanes, hips turn and a lane exists: :786. Slow then burst, can't re-accelerate backwards: :801. Head and shoulders, not hands, they read your body, accelerate out: :712–:713, CM :1055. One fake not four, every extra move exposes it: :767. Push it past a sealing stick, separate routes: :663–:666, KF :24. Shoulder is a coaching choice, ask: :788, :795.
+- **Idea 7, keep striding.** Slowing hands the defence two free seconds; speed most valuable; hands cost none: :642. Don't stickhandle every stride; ahead and to the side; two or three hard strides; catch, repeat; touch it to keep it honest: :654–:658. Carrying is cheap in attention, eyes read the defence: :688.
+- **Close.** Coach questions trace to the hold-time choice (:604), the shoulder choice (:795) and how much carrying a team wants (:917).
+
+### 7. Where this script is weakest
+
+- **The free-hand omission** (see §5). It is the most likely thing a puck carrier does that this episode will not correct.
+- **"Even slow or light contact can hurt your head or neck"** compresses the source's two separate reasons (:474) into one sentence.
+- **Idea 6 is the longest** and carries two Key focus items plus four "here is why" lines.
+- **"Turn side-on to the other player"** without the checking-game "hip and backside into them" may read, to a reviewer, as weaker than the source. That is deliberate: the conservative version is true in every league.
+- **Idea 2 now carries four instructions** (far side; wide and low; side-on with feet moving; keep your spot and both hands on your stick). Its new hands paragraph has no picture, only a reason.
+- **"A reverse… against the way the other team is coming"** is my plain gloss of "against the direction the pressure is flowing" (:575).
+
+### 8. What I could not check
+
+- A `safety-reviewer` read the first version. This revision is new text and has not been re-reviewed.
+- Nobody has heard it. The plural "they" in idea 2 ("If they are on your right") is untested by ear.
+
+### 9. Safety revision, 21 Oct 2026: old → new
+
+| # | Finding | Old | New |
+|---|---|---|---|
+| 1 | MAJOR: free hand, never grab | Not in the script. §5 flagged it as the top omission. | Idea 2, after "keep your spot": "Keep both hands on your own stick, and never push your stick into them. Never grab the other player, their stick or their cage. Here is why. Two hands on your stick are ready to move the puck the moment the pressure lets go." The close gains "Both hands on your own stick, and never grab." |
+| 2 | MAJOR: the facing-the-boards fallback | Not in the script. | Idea 4, after "Angle yourself so there is always a way out…": "If you do end up facing the boards and can't turn, put your stick and gloves up on the glass, spread wide. Keep your head off it. That is only for when things have already gone wrong. It is not how you aim to stand." |
+| 3 | MINOR: side-on is not back-on | "Turn side-on to the other player, not chest on." | "Turn side-on to the other player. Not chest on, and never your back." |
+
+Checked against the source before use. The brief's sketch for #1 said "never push it into them". I wrote "never push your stick into them" so that "it" cannot point at the puck. This is the source's "brace, don't drive", which reads true in every book: a driven shaft is a cross-check everywhere, and CARHA needs no force (:513, :526). Every book prices grabbing a player, a stick or a cage (:504, :528, :530), so "never grab" gives no permission anywhere.
