@@ -415,6 +415,14 @@ const supportAngles = {
   // about a rule that decides whether a goal counts. The defensive-zone caveat on the
   // level pass is untouched for the same kind of reason: the same pass is routine in
   // two zones and a point-blank chance against in the third.
+  // SG209, 8 November 2026: LEFT WHOLE (1,088). Layer test of both hosts (renders of 8 Nov
+  // 2026): puck_support_and_spacing.md voices every limb in chunks 009-010 around its marker,
+  // but passing_and_receiving.md:660 (chunk 035, the caption opens the chunk) voices neither
+  // the own-zone "across the middle … point-blank" limb nor the offside definition and
+  // trail-skate scope anywhere near it — its nearest offside text is chunks 011-014 and 044,
+  // and its own-zone "never through the slot" line is chunk 037, in a different section. The
+  // rest is the picture itself. Trim only after passing_and_receiving.md voices those limbs
+  // beside its marker.
   caption:
     'One instance of the three support angles, drawn around a carrier in the neutral zone attacking to ' +
     'the right: one teammate behind the puck, one level with it across the ice, one ahead of it. ' +
@@ -806,18 +814,31 @@ const layerNotConverge = {
   half: true,
   width: 900,
 
+  // SG209, 8 November 2026: trimmed 1,075 -> 782. No rule or safety limb here; every cut is
+  // tactical narrative the two hosts voice beside the marker (renders of 8 Nov 2026):
+  //   - "covers the space the carrier goes if the first player is beaten, and the passing
+  //     lane": puck_support_and_spacing.md:601 ("stand where the carrier goes if they get
+  //     beaten", chunk 027, the caption's own chunk); time_and_space.md:392 ("to cover the
+  //     ice the first player left", chunk 021, the caption's own chunk). The `describe` still
+  //     places the second player off that lane.
+  //   - "leaves the other three of you covering four of them": puck_support_and_spacing.md:597
+  //     ("the other three are covering four", chunk 026, the chunk before). NOT voiced in
+  //     time_and_space.md; cut as narrative (an arithmetic aside, no rule or hazard).
+  //   - "Whether you may hold that layer at all is system-dependent … zone, man-to-man and
+  //     hybrid": puck_support_and_spacing.md:619 (facts Convention, chunk 028, the next chunk);
+  //     time_and_space.md:396 ("This is a system question, so name your system", chunk 021,
+  //     the caption's own chunk, right after it).
+  // KEPT: the double-team coaching-choice disclosure in full (non-negotiable 7; time_and_space
+  // voices no double-team anywhere near its marker), the order-of-arrival note, the offset and
+  // distance, and "both beaten by the same pass".
   caption:
     'Two players defending one puck carrier, forechecking towards the net on the right: the first ' +
     'pressures, and the second layers behind and to the side of them instead of converging on the same ' +
     'puck. First and second here are the order they arrive in, not two particular players. ' +
     'The layer is offset diagonally rather than directly behind, at two or three stick lengths — close ' +
-    'enough to take over the coverage, far enough that a single move does not beat both of you — and it ' +
-    'covers the space the carrier goes if the first player is beaten, and the passing lane out of the ' +
-    'pressure. ' +
-    'Converging instead puts two of you on one puck, both beaten by the same pass, and ' +
-    'leaves the other three of you covering four of them. ' +
-    'Whether you may hold that layer at all is system-dependent and changes between zone, man-to-man and ' +
-    'hybrid coverage, and a deliberate double-team — commonly allowed below your own goal line, where a ' +
+    'enough to take over the coverage, far enough that a single move does not beat both of you. ' +
+    'Converging instead puts two of you on one puck, both beaten by the same pass. ' +
+    'A deliberate double-team — commonly allowed below your own goal line, where a ' +
     'turnover is contained by the net and the boards — is a coaching decision rather than something to ' +
     'freelance, so ask your coach where and when your team doubles.',
 

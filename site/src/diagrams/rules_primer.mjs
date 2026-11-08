@@ -569,6 +569,23 @@ const thePrivilegedArea = {
   // but usah.txt and usah_casebook.txt (so: no such AREA; the NHL and IIHF do draw a trapezoid),
   // and the perpendicular construction is in none of the
   // NHL, IIHF, PWHL, Hockey Canada or CARHA books (checked 22 October 2026).
+  // SG209, 8 November 2026: trimmed 1,071 -> 608. One host, rules_primer.md:858 (render of
+  // 8 Nov 2026: the caption is chunk 097, after the 607(c) paragraph in the same chunk). Cut,
+  // each voiced by the host at the same tier within one chunk:
+  //   - the four 614(c) freeze triggers ("When the puck is outside it … delay-of-game minor",
+  //     "Inside it, so does one who freezes it behind the goal line with their body entirely
+  //     outside the crease, who had time to play it with the stick, or who pins it against the
+  //     frame or boards"): rules_primer.md:850, chunk 096, the chunk before — all four as
+  //     minors, with 614(c)'s own words quoted.
+  //   - "Outside it they are still not fair game (607(d))": rules_primer.md:856, chunk 097,
+  //     the caption's own chunk ("Outside the area the goalie is still not 'fair game'").
+  //   - "a goalie anywhere in it … 607(c) writes no bare minor for it": rules_primer.md:856,
+  //     chunk 097, the caption's own chunk, ⚠️-led and fuller (minor plus misconduct or major
+  //     plus game misconduct, 607(e)'s match, 602(a)).
+  // KEPT: the book scope ("draw no such area"), the 607(d) Note 2 construction and "not the
+  // corners" (this is the picture), the ⚠️ trapezoid limb VERBATIM (no prose can say what the
+  // dashed lines on this picture are), and "a boundary, not a licence" (the reading guide
+  // tells readers the caption says what a shaded region means).
   caption:
     'The goalkeeper’s privileged area, shaded: USA Hockey’s term and shape, and the NHL, IIHF, ' +
     'PWHL, Hockey Canada and CARHA books draw no such area. Rule 607(d) Note 2 builds it from ' +
@@ -576,12 +593,7 @@ const thePrivilegedArea = {
     'so it takes in the net front, the goal line and all the ice directly behind the net, but not ' +
     'the corners. ⚠️ The two red dashed lines behind the net are not part of it. That is the ' +
     'trapezoid, a much smaller shape, drawn because these diagrams use the NHL rink, and USA Hockey ' +
-    'marks it nowhere. Read the shading as a boundary, not a licence. When the puck is outside ' +
-    'it, a goalie who freezes it takes a delay-of-game minor (614(c)). Inside it, so does one who ' +
-    'freezes it behind the goal line with their body entirely outside the crease, who had time to ' +
-    'play it with the stick, or who pins it against the frame or boards. Outside it they are still ' +
-    'not fair game (607(d)). And a goalie anywhere in it, behind their own net included, is not ' +
-    'somebody to finish a check on: 607(c) writes no bare minor for it.',
+    'marks it nowhere. Read the shading as a boundary, not a licence.',
 
   describe:
     'The defending half of the rink, the net at the right, and no play in progress. A large shaded ' +

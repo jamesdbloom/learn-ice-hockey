@@ -263,19 +263,34 @@ const pivotTowardTheBoards = {
   half: true,
   width: 900,
 
+  // SG209, 8 November 2026: trimmed 1,046 -> 708 (746 before the safety review's "every rulebook" fix). Single host, skating.md:622 (render of
+  // 8 Nov 2026: the caption sits in chunk 024, straight after the section's facts block and
+  // lead paragraph). Cut, each voiced by the host at the same tier within one chunk:
+  //   - "Pivoting toward the boards is a coaching default and not a law of hockey, so ask your
+  //     coach and drill both ways": skating.md:611 (facts Convention) and :616 (facts Action,
+  //     "Ask your coach … and drill both"), chunk 024, the caption's own chunk, and :627-:628
+  //     (the "default, not an absolute" and "Drill both" caveats, chunk 025, the next chunk).
+  //     The section's own heading says "a coaching default, not a law".
+  //   - "The more universal half … pivot late — once you have turned to skate forwards you have
+  //     given up your ability to react to a change of direction": skating.md:617 (facts Key,
+  //     same words, chunk 024) and :630 ("The universal part: pivot late", chunk 025).
+  // KEPT: what the picture shows, the slot shading as a warning rather than a target (the
+  // reading guide tells readers the caption says which a shading is), "not a gap figure", and
+  // the ⚠️ boarding limb, whose closed four-book list was then replaced by "every rulebook" at the
+  // safety review (PWHL 41.1 and CARHA 49 also write one; matches the host's :613 facts line and :624
+  // ⚠️ body) — do NOT restore the four-book list. The glyph and the spoken "Important." stay.
   caption:
     'If you are beaten in the pivot, this shows where each failure leaves you; the turn ' +
     'itself is not drawn. Beaten toward the wall puts you out ' +
     'past the faceoff dot heading for the corner, where the shooting angle is poor and the ' +
     'wall is a second defender. Beaten into the shaded ice in the middle — the slot — is a ' +
     'scoring chance, and that shading is a warning rather than a target. The distance drawn ' +
-    'between the two players is not a gap figure. Pivoting toward the ' +
-    'boards is a coaching default and not a law of hockey, so ask your coach and drill both ' +
-    'ways. The more universal half of the instruction is not drawn here at all: pivot late — ' +
-    'once you have turned to skate forwards you have given up your ability to react to a ' +
-    'change of direction. ⚠️ And being beaten toward the wall is not an invitation to ride ' +
-    'them into it: driving an opponent into the boards is a separate act, and the NHL, the ' +
-    'IIHF, USA Hockey and Hockey Canada all have a boarding rule that reaches it — they do ' +
+    'between the two players is not a gap figure. ' +
+    '⚠️ And being beaten toward the wall is not an invitation to ride ' +
+    // SG209 safety review: the four-book list was closed and incomplete — PWHL 41.1 and CARHA 49 also have a
+    // boarding rule; the host (skating.md facts :613, body :624) says "every rulebook".
+    'them into it: driving an opponent into the boards is a separate act, and every rulebook ' +
+    'has a boarding rule that reaches it — they do ' +
     'not grade it the same way. Nothing in this picture shows contact.',
 
   describe:

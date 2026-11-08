@@ -27,10 +27,10 @@
  */
 
 // A caption clause that appears in more than one diagram is imported, never
-// retyped. The shoulder clause below was missing from this caption entirely; the
-// census that found it, and why it is owed wherever the posture is prescribed, are
-// in wall_contact_clauses.mjs.
-import { SHOULDER_NOT_THE_SURFACE } from './wall_contact_clauses.mjs';
+// retyped (see wall_contact_clauses.mjs). ⚠️ SHOULDER_NOT_THE_SURFACE was imported
+// here until 8 November 2026 (SG209), when its only user in this file,
+// loose-puck-who-goes, stopped prescribing the wall posture; re-import it if a
+// caption here prescribes the posture again — it is owed wherever that is done.
 
 
 /* ------------------------------------------------------------------------- *
@@ -194,6 +194,25 @@ const loosePuckWhoGoes = {
   // letters-are-roles note (016: "roles defined by order of arrival, not by position").
   // The arrow note was a picture note. The safety unit is unchanged except that the two
   // hit-from-behind sentences are joined; the quotation and its addressee are kept.
+  // ⚠️ SG209, 8 November 2026: trimmed 1,052 -> 805, and THE ⚠️ UNIT CHANGED. Cut from inside it:
+  // the posture instruction "Go in on an angle rather than straight at the wall, get your skates
+  // parallel to it, take the contact on your forearm and hip — and SHOULDER_NOT_THE_SURFACE —
+  // head up and chin off your chest." The single host, playing_without_the_puck.md:320, voices
+  // it twice beside the marker (render of 8 Nov 2026):
+  //   - :329-:331, the facts block of "Then how you arrive", chunk 017, THE CAPTION'S OWN CHUNK,
+  //     a few lines after it: "Come to the wall on an angle, feet apart and knees bent, skates
+  //     parallel to it before contact, forearm and hip to the wall — not the point of your
+  //     shoulder, nor the whole shoulder if you can help it" / "Head up, chin off your chest" /
+  //     "Never — Turn your back to anyone coming at you, and never duck".
+  //   - :339, the ⚠️ paragraph "So arrive the safe way round", chunk 018, the next chunk, voiced
+  //     "Important." — the same tier as this caption — with the shoulder clause in full.
+  // This is the routing the note above asks for: the instruction now lives in §"State 3"'s own
+  // subsection, so the caption no longer has to carry it. KEPT VERBATIM: the two dangers with
+  // their USA Hockey attributions (the hit-from-behind quotation is voiced nowhere near the
+  // marker), "Neither warning depends on the angle you arrive at" (it now pre-empts the facts
+  // block's angling line rather than the caption's), and the closing absolutes. The glyph
+  // stays on "Two postures carry two different dangers", so the spoken "Important." is kept.
+  // SHOULDER_NOT_THE_SURFACE is no longer imported here (its only use in this file).
   caption:
     'A loose puck in your own corner, your net at the right, drawn under a low zone collapse: ' +
     'the closest player goes hard to it, one teammate supports on the boards side, one covers ' +
@@ -209,13 +228,8 @@ const loosePuckWhoGoes = {
     'contact with the boards or the goal post. A back turned to anyone coming at you makes the ' +
     'contact a hit from behind, and USA Hockey warns the checker delivering one: "Even a light ' +
     'hit from behind could inflict a severe head or neck injury." Neither warning depends on the ' +
-    'angle you arrive at. Go in on an angle rather than straight at the wall, get your ' +
-    // KT6's mid-sentence slot rather than the tail: the caption ends on two absolutes
-    // ("never turn your back to anyone coming at you, and never duck") and a hedged clause appended after them
-    // would read as qualifying them.
-    'skates parallel to it, take the contact on your forearm and hip — and ' +
-    SHOULDER_NOT_THE_SURFACE + ' — head up and chin off ' +
-    'your chest. Never turn your back to anyone coming at you, and never duck.',
+    'angle you arrive at. ' +
+    'Never turn your back to anyone coming at you, and never duck.',
 
   describe:
     'Your own end zone, the net at the right, your goalie in the crease. A loose puck sits ' +
@@ -844,18 +858,30 @@ const legalRouteThroughTraffic = {
     // would point at prose entirely below it, and a picture of a skater running past
     // another player's body would arrive AHEAD of "you may not step laterally into
     // someone" in a section about interference. The caption fix costs one word.
+    // SG209, 8 November 2026: trimmed 1,041 -> 858. Single host, playing_without_the_puck.md:558
+    // (render of 8 Nov 2026: the caption is chunk 032, after the :556 paragraph). Cut:
+    //   - "This guide calls this traffic, or a route, and not a screen.": :552, the facts Key
+    //     line ("call yours traffic, or a route"), chunk 031, the chunk before; :556 itself calls
+    //     it "a legal route through traffic" in the caption's own chunk; :572 "A word about the
+    //     word" sets the vocabulary out in full (chunk 035).
+    //   - "the subject is the player who does not have it, and this is one instance of an
+    //     arrangement rather than a spot on the ice": narrative; the document's subject is
+    //     already "playing without the puck". "No puck is drawn." stays as the picture note.
+    // KEPT: "legal" in the opening; "What makes the arrangement legal, and the other version a
+    // penalty, is settled by the section around the picture" — without it "legal" would read as
+    // unconditional, and :556 makes it conditional under Hockey Canada and CARHA; "A chaser
+    // arriving at the back of a player standing still is not drawn"; and the ⚠️ safety caution
+    // VERBATIM (the host's own fuller copy is :570, chunk 034, two chunks on).
     'Your own legal route past a teammate, in the attacking end with the opposition net at the right. ' +
     'Your route goes round the outside of your teammate, who is standing still, and finishes in ' +
     'open ice, while the straight line your check would take to that same ice runs through them. ' +
     'Your check has to go round. No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
     'the other version a penalty, is settled by the section around the picture rather than by ' +
-    'the drawing. This guide calls this traffic, or a route, and not a screen. A chaser ' +
+    'the drawing. A chaser ' +
     // ⚠️ "is not drawn" — NOT "is not something this corpus draws". The sentence's
     // work is the safety statement that the arrival at a standing man's back is
     // deliberately absent from the picture; naming the corpus was never part of it.
-    'arriving at the back of a player standing still is not drawn. No puck is drawn: the subject ' +
-    'is the player who does not have it, and this is one instance of an arrangement rather than ' +
-    'a spot on the ice. ' +
+    'arriving at the back of a player standing still is not drawn. No puck is drawn. ' +
     // SAFETY. The owner's own caution, from the paragraph below the one this picture draws:
     // content/hockey-iq/playing_without_the_puck.md — "The collision you are engineering is a
     // defender at chase speed into a teammate who is standing still and facing away, and who

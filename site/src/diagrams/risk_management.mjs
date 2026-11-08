@@ -676,6 +676,12 @@ const pinchCentreHigh = {
   // SHORTENED 24 October 2026 (1,401 chars). Cut the gloss on "pinch": every host defines it in
   // the chunk before (render 24 Oct: risk_management 036, defender 038, offensive_zone_play 061,
   // game_management 016). The rest is the same lesson in fewer words.
+  // SG209, 8 November 2026: LEFT WHOLE (1,041). Layer test of all four hosts (renders of 8 Nov
+  // 2026). defender.md:532 (chunk 040) and offensive_zone_play.md:949 (chunk 062) voice none of
+  // this caption's limbs near the marker: no "what is behind it if it does not", no "am I right
+  // / still miss it" question, no who-covers choice, no scoreboard, and defender.md's contact
+  // prose is about a step-up. PINCH_CAVEATS is bound by the SG94 test above; the lead is the
+  // lesson itself in those two hosts, not a restatement. Trim only after they voice it.
   caption:
     'A pinch at the offensive blue line with the centre high in the zone behind it, which is the ' +
     'arrangement that makes a pinch defensible. What makes a pinch good is not whether it works ' +

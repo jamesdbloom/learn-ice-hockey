@@ -723,6 +723,23 @@ const backcheckLanes = {
   half: false,
   width: 900,
 
+  // SG209, 8 November 2026: trimmed 1,039 -> 859. No rule or safety limb in this caption. Four
+  // hosts, all rendered 8 Nov 2026. CUT the list of alternative assignments ("Other teams give
+  // the middle to the first man back, and others pick up man-on-man from the puck outward, so
+  // find out which yours runs"). Every host names those alternatives, as a coaching choice, in
+  // the caption's own chunk or the one before:
+  //   - how_to_watch_hockey.md:402 ("other teams give it to whoever is first back, or go
+  //     man-on-man"), chunk 024, which after the trim is the caption's own chunk;
+  //   - playing_without_the_puck.md:420 ("first man back takes the middle; others pick up
+  //     man-on-man"), chunk 023, the chunk before;
+  //   - winger.md:762 ("first man back takes the middle … man-on-man … Find out which your
+  //     team plays"), chunk 057, the chunk before;
+  //   - defending_the_rush.md:300 (facts Options, "find out which yours uses"), chunk 016,
+  //     which after the trim is the caption's own chunk.
+  // Also cut the reason clause "because this is about the three backcheckers" (a picture note).
+  // KEPT: the coaching-choice statement itself (non-negotiable 7) and the universal "somebody
+  // owns the middle", the lane geometry, the inside-hip instruction (how_to_watch_hockey voices
+  // no inside hip near its marker) and the middle-lane driver.
   caption:
     'Backchecking lanes, with the attack moving right to left toward the defended net at the left. ' +
     'The ice is three vertical lanes running the length of the rink: two outside lanes along the boards, ' +
@@ -736,10 +753,9 @@ const backcheckLanes = {
     // table does not. Scope kept to the picture, which the picture can actually support.
     'The most dangerous player in the picture is the middle-lane driver, the attacker skating hard through ' +
     'the middle without the puck, who is missed because eyes go to the puck. ' +
-    'The lane assignment is a coaching choice and not a law. Other teams give the middle to the first ' +
-    'man back, and others pick up man-on-man from the puck outward, so find out which yours runs; ' +
-    'under every variant somebody owns the middle and nobody assumes it is somebody else. ' +
-    'The defencemen are not drawn, because this is about the three backcheckers.',
+    'The lane assignment is a coaching choice and not a law. ' +
+    'Under every variant somebody owns the middle and nobody assumes it is somebody else. ' +
+    'The defencemen are not drawn.',
 
   describe:
     'The full sheet, the defended net at the left, with a shaded band between the two faceoff dots ' +

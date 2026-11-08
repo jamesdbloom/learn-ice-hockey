@@ -198,6 +198,15 @@ const wallDepthBySystem = {
   half: false,
   width: 900,
 
+  // SG209, 8 November 2026: trimmed 1,035 -> 949. No rule or safety limb in this caption. Cut
+  // only "and standing at the hash marks in a stretch system is exactly as bad as the reverse":
+  // an emphasis on the sentence it sits in. winger.md:80 voices it in the same words ("exactly
+  // as bad as the reverse", chunk 005, the chunk before); how_to_watch_hockey.md:233 does not,
+  // and keeps "None of the three is more correct … find out which one you are in", which is
+  // the instruction. KEPT, and they bound any further trim: "only one is on the ice at a time"
+  // (the header's guard against a five-forward picture), the three depths, and the
+  // defensive-zone coaching-choice and low-zone-collapse disclosure (how_to_watch_hockey.md
+  // voices it nowhere near its marker).
   caption:
     'Where a winger stands on the wall in their own end, and why there is no single answer. The whole ' +
     'sheet, your own goal at the left, at the moment your defenceman has the puck behind your net. ' +
@@ -206,8 +215,7 @@ const wallDepthBySystem = {
     'between the hash marks and the goal line, roughly level with the faceoff dot, the deepest of the ' +
     'three. Under a flat or spread structure you hold higher up the same wall. Under a stretch or ' +
     'flying-winger structure one winger leaves the zone altogether, drawn out past the centre red ' +
-    'line. None of the three is more correct than the others, and standing at the hash marks in a ' +
-    'stretch system is exactly as bad as the reverse — so find out which one you are in. Where you ' +
+    'line. None of the three is more correct than the others, so find out which one you are in. Where you ' +
     'were standing a second earlier belongs to your team’s defensive-zone system rather than to its ' +
     'breakout, and is a separate coaching choice; this guide assumes a low zone collapse there.',
 

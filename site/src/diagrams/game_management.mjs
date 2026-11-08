@@ -699,15 +699,29 @@ const delayedPenalty = {
   half: true,
   width: 900,
 
+  // SG209, 8 November 2026: trimmed 1,061 -> 835. Renders of both hosts, 8 Nov 2026.
+  //   - CUT "Play runs on until the team to be penalised gains control of the puck under NHL
+  //     Rule 15.1, and until they do they cannot score." game_management.md:373 (facts Rule,
+  //     chunk 024) and :381 (body, chunk 025, the caption's own chunk); rules_primer.md:652
+  //     and :659 (chunk 076, the chunk before 077, which ends right before the caption at 078).
+  //     The "cannot score" half survives in the kept 78.5(xi) sentence.
+  //   - "There is one exception: under NHL Rule 78.5(xi) they can only score …" KEPT, minus
+  //     its opener: "There is one exception" pointed at the cut sentence, and "they" is
+  //     replaced by its antecedent, "the team to be penalised", from that same sentence. The
+  //     rule claim and its NHL scope are unchanged. It stays because it is what scopes "the one
+  //     pass that can beat you" to a book (game_management.md:374/:383 and rules_primer.md:674
+  //     voice it too, chunks 024-025 and 077).
+  //   - CUT "because an arrow across your own goal mouth reads as an instruction rather than as
+  //     a warning": a note on the drawing, no rule or hazard; the `describe` and the header
+  //     comment keep the reason.
+  // KEPT: the warning pass itself, the safe route, the league check and its no-count disclosure.
   caption:
     'A delayed penalty, drawn in your own defending end — so the net in this picture is yours, and it ' +
-    'is empty, because your goalie has already gone to the bench for a sixth attacker. Play runs ' +
-    'on until the team to be penalised gains control of the puck under NHL Rule 15.1, and until they ' +
-    'do they cannot score. There is one exception: under NHL Rule 78.5(xi) they can only score if your ' +
+    'is empty, because your goalie has already gone to the bench for a sixth attacker. ' +
+    'Under NHL Rule 78.5(xi) the team to be penalised can only score if your ' +
     'own team shoots the puck into your own net. So the one pass that can beat you is a blind ' +
     'defenceman-to-defenceman pass across the front of your own goal, and it is deliberately not ' +
-    'drawn, because an arrow across your own goal mouth reads as an instruction rather than as a ' +
-    'warning. The single route drawn is that same pass made the safe way, out and around behind your ' +
+    'drawn. The single route drawn is that same pass made the safe way, out and around behind your ' +
     'own net. Only the opponent nearest the puck is drawn. And check before the game rather than in ' +
     'it: not every league allows or practises pulling the goalie on a delayed call, and some ' +
     'officials stop play early. How many is a question about leagues rather than about rulebooks, and ' +
