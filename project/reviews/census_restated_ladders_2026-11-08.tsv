@@ -1,0 +1,271 @@
+foundation/core_principles.md	99	body	189	160	TARIFF	1	CARHA		What it costs under CARHA. A Rule 49(a) penalty is a minor or a major at the ref	mandMatch,intent
+foundation/language_and_glossary.md	292	body	188	166	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	What it costs. ⚠️ Plan on leaving the game: no book allows a bare minor for a hi	noMinor,mandMatch,headHC,nextGame
+foundation/language_and_glossary.md	426	body	81	61	INSTR	2	IIHF/HC		From behind, the shove can fall under a different rule entirely. ⚠️ It can be ca	noMinor,headHC
+foundation/language_and_glossary.md	503	CM	110	49	INSTR	1	HC		"- Answering ""Screen!"" with a two-handed shove on the shaft. Hold the ice you alr"	noMinor,headHC
+foundation/language_and_glossary.md	536	KT	66	52	INSTR	2	HC/CARHA		"12. When your goalie shouts ""Screen!"", hold your ice — no lean, no push. In a CA"	noMinor,headHC
+foundation/on_ice_communication.md	294	facts	56	56	TARIFF	2	HC/CARHA		Rule: CARHA lets you stand your ground against a screener but not lean on them, 	
+foundation/on_ice_communication.md	307	body	195	149	TARIFF	1	CARHA		CARHA lets you stand your ground, but reaches the lean. Its Note 2 to Rule 66(a)	mandMatch,intent,headHC
+foundation/on_ice_communication.md	313	body	183	134	TARIFF	1	USAH		Under USA Hockey the same shove can be called harder, checking league or not. As	usahForce,mandMatch,nextGame
+foundation/rink_map.md	530	body	184	158	INSTR	1	CARHA		49(c) keeps genuinely accidental contact outside it, so a scramble for a loose p	mandMatch
+foundation/rules_primer.md	19	KF	105	92	INSTR	4	NHL/PWHL/IIHF/USAH		Never finish a check into somebody's back, and never duck out of one. A hit from	noMinor
+foundation/rules_primer.md	35	OV	199	164	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Never finish a check on a turned back — if you can see their numbers, pull up an	noMinor,usahForce,mandMatch,headHC,nextGame
+foundation/rules_primer.md	380	body	114	72	TARIFF	2	NHL/IIHF		When majors and misconducts eject you. NHL: a third major in one game (20.4), an	
+foundation/rules_primer.md	394	body	146	84	TARIFF	1	USAH		USA Hockey's discipline policy recommends a suspension for each match penalty ex	headHC
+foundation/rules_primer.md	396	body	177	177	INSTR	1	IIHF		If you are IHUK-registered at a club in England or Wales, outside the Elite Leag	ihuk
+foundation/rules_primer.md	467	body	44	16	INSTR	0			- Checking from behind (Rule 43) — a check on a player who is unaware and unable	
+foundation/rules_primer.md	469	body	511	492	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		"- NHL and PWHL: no minor at all (43.2: ""There is no provision for a minor penalt"	noMinor,usahForce,mandMatch,intent,headHC,nextGame
+foundation/rules_primer.md	482	body	166	151	INSTR	4	NHL/IIHF/USAH/HC		- Elbowing (Rule 45) — use of an extended elbow, whether or not injury results. 	intent,headHC,nextGame
+foundation/rules_primer.md	527	body	136	136	TARIFF	2	USAH/HC		Put a player dangerously into the boards and it is boarding, a minor plus a misc	usahForce,intent
+foundation/rules_primer.md	618	body	113	93	TARIFF	1	USAH		USA Hockey counts everything: a fourth penalty of any kind in one game is a game	headHC,nextGame
+foundation/rules_primer.md	1050	body	1943	1943	TARIFF	5	NHL/IIHF/USAH/HC/CARHA		| | NHL | IIHF | Home Countries | USA Hockey | Typical rec / beer league | |---|	noMinor,usahForce,mandMatch,intent,headHC,ihuk,nextGame
+foundation/rules_primer.md	1090	body	194	154	INSTR	1	CARHA		- Body contact is itself the penalty (49(a)): a minor or major for any player wh	mandMatch,intent,headHC
+foundation/rules_primer.md	1099	body	147	109	INSTR	4	IIHF/USAH/HC/CARHA		So here is what to ask. In Britain the rule book is the IIHF's plus the IHUK In-	ihuk
+foundation/rules_primer.md	1132	CM	149	117	INSTR	5	NHL/PWHL/IIHF/USAH/HC		"- ""They turned at the last second, so the check from behind is on them."" If you "	usahForce,mandMatch,nextGame
+foundation/rules_primer.md	1144	CM	145	57	INSTR	4	NHL/PWHL/IIHF/USAH		"- ""We're killing, we can't ice it."" Use the clear while you are below their numb"	
+foundation/rules_primer.md	1187	KT	55	41	INSTR	2	HC/CARHA		7. If you can see an opponent's numbers, pull up and play the puck. ⚠️ A hit fro	mandMatch
+foundation/uk_rules.md	15	KF	49	49	TARIFF	1	IIHF		Play as though your first major ends your game, adult or not. The IIHF book ejec	
+foundation/uk_rules.md	47	OV	135	135	TARIFF	2	NHL/IIHF		Play as though your first major ends your game, adult or not — and after one mis	noMinor
+foundation/uk_rules.md	407	body	104	25	INSTR	1	IIHF		Reference Table 6 (2025/26; merged into Table 5 in 2026/27) carries twenty entri	
+foundation/uk_rules.md	413	body	201	120	INSTR	0			Who acts depends on your competition. In the Elite League it is the EIHL Departm	ihuk
+foundation/uk_rules.md	509	CM	103	75	INSTR	0			"- Hearing ""cross-checking"" instead of ""checking to the head"" and thinking it was"	noMinor
+foundation/uk_rules.md	654	KT	71	59	INSTR	0			19. Expect discipline after the game, even for an act nobody penalised. ⚠️ At a 	ihuk
+getting-started/getting_started.md	199	body	69	45	INSTR	1	IIHF	ptr	- Never hit anyone from behind. ⚠️ If you can see their numbers, play the puck i	noMinor,ihuk
+hockey-iq/playing_without_the_puck.md	22	KF	52	11	INSTR	0			Backcheck to a man, not to a place. Pick up the man arriving unmarked in the mid	
+hockey-iq/playing_without_the_puck.md	811	facts	55	55	INSTR	3	IIHF/USAH/HC		Rule: ⚠️ Never finish into anyone's back — no book prices it at a bare minor (Ho	noMinor,usahForce,headHC
+hockey-iq/playing_without_the_puck.md	812	facts	55	55	INSTR	1	USAH		Rule: ⚠️ Under USA Hockey a forceful check from behind on a player at the boards	usahForce,nextGame
+hockey-iq/playing_without_the_puck.md	813	facts	53	53	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: ⚠️ Every book but the IIHF can make a check from behind a match — mandator	mandMatch,intent,nextGame
+hockey-iq/playing_without_the_puck.md	814	facts	47	47	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+hockey-iq/playing_without_the_puck.md	837	body	159	156	INSTR	5	NHL/PWHL/IIHF/HC/CARHA		What it costs. ⚠️ No book prices a hit from behind at a bare two minutes (under 	noMinor,mandMatch,headHC,ihuk
+hockey-iq/playing_without_the_puck.md	839	body	102	86	TARIFF	1	USAH	ptr	USA Hockey alone keeps a minor plus misconduct for an open-ice push or a light p	usahForce,headHC,nextGame
+hockey-iq/playing_without_the_puck.md	1002	CM	151	82	INSTR	3	IIHF/USAH/HC		- Finishing a backcheck into the back of the man you could not catch. When they 	noMinor,headHC
+hockey-iq/puck_support_and_spacing.md	331	facts	42	17	INSTR	0			Never: Push or hit an opponent on the wall from behind — if their back is to you	
+hockey-iq/puck_support_and_spacing.md	587	facts	57	57	INSTR	3	IIHF/USAH/HC		Rule: Never push or hit from behind, even in non-check play — it is checking fro	usahForce,headHC
+hockey-iq/puck_support_and_spacing.md	588	facts	43	43	TARIFF	3	USAH/HC/CARHA		Rule: From behind into the boards or net on a player who cannot protect themselv	mandMatch,nextGame
+hockey-iq/puck_support_and_spacing.md	611	body	145	56	INSTR	1	USAH	ptr	Going in does not change how you arrive: on an angle, feet apart, knees bent, sk	mandMatch,nextGame
+hockey-iq/risk_management.md	730	body	142	119	INSTR	4	NHL/PWHL/IIHF/CARHA		"Now the price. A skater who ""falls on the puck, holds the puck, picks up the puc"	
+hockey-iq/risk_management.md	752	facts	48	48	TARIFF	2	HC/CARHA		Rule: If you take their feet from behind and push them into the boards, Hockey C	mandMatch,headHC
+hockey-iq/risk_management.md	760	body	78	68	INSTR	2	HC/CARHA		If you take their feet from behind and then push them into the boards, ⚠️ Hockey	mandMatch,headHC
+hockey-iq/risk_management.md	833	facts	56	56	TARIFF	4	IIHF/USAH/HC/CARHA		Rule: A check from behind ends your game in every book but USA Hockey (Hockey Ca	usahForce,mandMatch,headHC
+hockey-iq/risk_management.md	834	facts	51	51	TARIFF	1	USAH		Rule: USA Hockey ejects too for one that is forceful along the boards, sends the	usahForce,nextGame
+hockey-iq/risk_management.md	835	facts	39	39	TARIFF	5	NHL/PWHL/USAH/HC/CARHA		Rule: A hit from behind meant to injure is a mandatory match, boards or not — Ho	mandMatch,intent,headHC,nextGame
+hockey-iq/risk_management.md	836	facts	47	47	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+hockey-iq/risk_management.md	846	body	135	126	INSTR	4	IIHF/USAH/HC/CARHA		What it costs to hit a player from behind. ⚠️ A hit from behind ends your game i	usahForce,mandMatch,intent,headHC,nextGame
+hockey-iq/risk_management.md	848	body	148	132	INSTR	4	NHL/PWHL/IIHF/HC	ptr	If a hit from behind reaches the head, ⚠️ Hockey Canada prices it as head contac	noMinor,headHC,ihuk
+hockey-iq/risk_management.md	885	CM	124	35	INSTR	0			- Chasing the puck carrier from behind after a turnover, where your system did n	
+hockey-iq/risk_management.md	950	KT	63	36	INSTR	0			11. Do not compound, and never solve the chase with your body: turn, get inside,	
+off-the-ice/team_play_and_culture.md	561	body	180	172	INSTR	2	USAH/CARHA		What it costs. Under USA Hockey, a body check in a non-check category is a minor	mandMatch,intent,nextGame
+positions/center.md	123	body	156	112	INSTR	2	USAH/HC		What it costs. Whether that forechecker may body check you at all depends on you	
+positions/center.md	508	body	162	153	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Never arrive into a goalie, in or out of the crease — ⚠️ it can end your game in	noMinor,mandMatch,headHC,nextGame
+positions/center.md	742	body	181	154	INSTR	4	NHL/PWHL/IIHF/USAH		What it costs. Body position on a player without the puck is yours under the NHL	noMinor,mandMatch,intent,nextGame
+positions/center.md	757	facts	54	54	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: From behind, no book stops at two minutes: no NHL, IIHF or PWHL minor; CAR	noMinor,usahForce,headHC,nextGame
+positions/center.md	758	facts	57	57	INSTR	4	NHL/PWHL/IIHF/HC		Rule: From behind and on the head — NHL and PWHL take the harsher of 43 and 48; 	headHC
+positions/center.md	759	facts	50	50	TARIFF	3	USAH/HC/CARHA		Rule: A hit from behind into boards/net on a player unable to protect or defend 	mandMatch,headHC,nextGame
+positions/center.md	760	facts	47	47	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+positions/center.md	778	body	167	167	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		And where you may check, never finish into a player's back — a hit from behind c	noMinor,usahForce,headHC,ihuk
+positions/center.md	780	body	126	117	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	Driving a player who cannot protect themselves into the boards or goal frame ⚠️ 	mandMatch,headHC,nextGame
+positions/center.md	810	CM	168	81	INSTR	2	USAH/CARHA		- Planning the backcheck around a hit you may not be allowed to throw. Take the 	noMinor,nextGame
+positions/center.md	815	CM	128	120	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	For a hit from behind, no book lets you count on two minutes, and it can end you	noMinor,usahForce,headHC,nextGame
+positions/center.md	824	CM	118	118	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Arriving into a goalie from behind ⚠️ is checking from behind — no minor under t	noMinor,mandMatch,headHC
+positions/center.md	891	KT	107	85	INSTR	4	IIHF/USAH/HC/CARHA		6. Never finish a check on a turned back. ⚠️ If you can see their numbers, pull 	usahForce,headHC,nextGame
+positions/defender.md	314	facts	56	56	INSTR	5	NHL/PWHL/IIHF/USAH/CARHA		Rule: Never drive a back into the boards or post — it ejects in NHL and PWHL (43	usahForce,mandMatch,nextGame
+positions/defender.md	315	facts	46	46	TARIFF	1	HC		Rule: Kept off the head, or head first into boards or frame, a hit to their back	mandMatch,intent,headHC
+positions/defender.md	316	facts	53	53	TARIFF	1	HC		Rule: Hockey Canada head contact from behind: match if defenceless or meant to i	intent,headHC
+positions/defender.md	317	facts	47	47	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+positions/defender.md	324	body	203	200	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		What it costs. ⚠️ If you can see their numbers, pull up — no book prices checkin	noMinor,usahForce,mandMatch,intent,headHC,nextGame
+positions/defender.md	326	body	160	147	INSTR	4	NHL/PWHL/IIHF/HC	ptr	Keep the hit off their head. If it does reach the head, the NHL, IIHF and PWHL t	intent,headHC
+positions/defender.md	328	body	46	46	TARIFF	0			At a club in England or Wales, outside the Elite League, a game misconduct for c	ihuk
+positions/defender.md	349	body	142	107	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		- Blade on the ice does not make it legal — in five of the six books. The NHL, I	usahForce,nextGame
+positions/defender.md	464	facts	59	43	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: Never hit a turned back at the wall — pull up and play the puck. No book p	noMinor,usahForce
+positions/defender.md	465	facts	51	51	TARIFF	3	USAH/HC/CARHA		Rule: A hit from behind into the boards or goal frame on a player who cannot pro	mandMatch,nextGame
+positions/defender.md	490	body	94	75	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		What it costs — checking from behind. ⚠️ When their numbers come round, pull up 	noMinor,usahForce,nextGame
+positions/defender.md	492	body	87	48	INSTR	3	USAH/HC/CARHA	ptr	Never put them into the boards or goal frame, and never reach their head. ⚠️ Put	mandMatch
+positions/defender.md	865	facts	53	53	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: Never slide in from behind — checking from behind, not clipping: IIHF 43.2	noMinor,headHC
+positions/defender.md	866	facts	33	33	TARIFF	1	HC		Rule: A slide from behind that reaches the head is head contact under Hockey Can	intent,headHC
+positions/defender.md	887	body	132	114	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	Never slide in from behind a carrier. ⚠️ That is checking from behind, which sta	noMinor,intent,headHC
+positions/defender.md	904	CM	65	28	INSTR	0			"- Reading ""force them outside"" as a licence to ride somebody into the wall. ⚠️ T"	noMinor
+positions/defender.md	905	CM	134	96	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	- Hitting a player whose back is turned to you. ⚠️ See their numbers and pull up	noMinor,usahForce,mandMatch,nextGame
+positions/defender.md	981	KT	54	26	INSTR	0			2. Win the gap with your feet and take the puck, not the player. Start backwards	
+positions/defender.md	982	KT	69	29	INSTR	1	USAH		3. When a forward parks at your net, get inside first, lift their stick low, the	nextGame
+positions/goaltender.md	1070	facts	55	55	TARIFF	1	IIHF		"Rule: IIHF Rule 81.6 carries no major-penalty clawback, but it judges icing ""at "	
+positions/goaltender.md	1249	facts	56	56	INSTR	1	IIHF		Rule: The Elite League does amend charging — where a Rule 42 major is imposed fo	
+positions/goaltender.md	1263	body	374	251	TARIFF	1	USAH		- USA Hockey writes no bare minor anywhere in its charging rule. Body checking o	noMinor,usahForce,mandMatch,nextGame
+positions/goaltender.md	1269	body	97	97	TARIFF	1	CARHA		- CARHA's other limbs reach the net front too. A cross-check on you in your crea	mandMatch,intent,headHC
+positions/goaltender.md	1272	body	362	362	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		- A hit on your back is checking from behind, and no book prices it at a bare mi	noMinor,usahForce,mandMatch,intent,headHC,nextGame
+positions/goaltender.md	1276	body	126	116	TARIFF	1	IIHF		- 🇬🇧 The IIHF ceiling: plan on a hit from behind that reaches your head being a 	ihuk
+positions/goaltender.md	1376	facts	55	49	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: Never hit a turned back. Hockey Canada 7.5, CARHA 53, NHL and PWHL 43 ejec	usahForce,mandMatch,nextGame
+positions/goaltender.md	1377	facts	47	47	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+positions/goaltender.md	1380	facts	56	56	TARIFF	1	HC		Rule: Hockey Canada 7.5: an intentional hit from behind, anywhere, is at least a	intent,headHC
+positions/goaltender.md	1400	body	119	84	INSTR	4	IIHF/USAH/HC/CARHA		- Never send a body head first into the boards or the goal frame from behind — p	mandMatch,intent,headHC,nextGame
+positions/goaltender.md	1652	CM	294	265	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		- Assuming two minutes is the worst that happens to a player who runs you. Descr	noMinor,intent,headHC,nextGame
+positions/switching_positions.md	256	facts	53	47	INSTR	4	IIHF/USAH/HC/CARHA		Rule: Back turned? Take the puck. A hit from behind, diagonal too (USA Hockey 60	usahForce,mandMatch,headHC
+positions/switching_positions.md	257	facts	51	51	TARIFF	1	USAH		Rule: USA Hockey: a forceful check from behind on a player along the boards, one	usahForce,nextGame
+positions/switching_positions.md	296	body	159	120	INSTR	4	IIHF/USAH/HC/CARHA		A carrier you have steered to the wall is very often shielding the puck with the	noMinor,usahForce,mandMatch,headHC,nextGame
+positions/switching_positions.md	298	body	70	62	TARIFF	4	NHL/PWHL/IIHF/HC	ptr	If a check from behind reaches the head, Hockey Canada prices it as head contact	headHC
+positions/switching_positions.md	569	CM	113	85	INSTR	3	IIHF/USAH/HC		- Hitting a carrier whose numbers are toward you. ⚠️ Take the puck instead. Call	noMinor,usahForce,mandMatch,headHC,nextGame
+positions/switching_positions.md	636	KT	102	87	INSTR	4	IIHF/USAH/HC/CARHA		8. If a carrier's numbers face you, ⚠️ do not hit them: take the puck. Checking 	usahForce,headHC,nextGame
+positions/winger.md	431	facts	47	47	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+positions/winger.md	520	facts	52	52	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: All but the IIHF write a match above a goalie charge (NHL and PWHL 42.4, H	noMinor,nextGame
+positions/winger.md	553	body	144	131	INSTR	4	IIHF/USAH/HC/CARHA		- Charging a goalie. ⚠️ Arrive at the net under control — a charge on a goalie c	mandMatch,headHC,nextGame
+positions/winger.md	559	body	224	193	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	- From behind. ⚠️ Never put your stick or your body into a turned back at the ne	noMinor,mandMatch,headHC
+positions/winger.md	750	facts	62	62	INSTR	4	NHL/PWHL/IIHF/CARHA		Rule: Checking from behind is a rule of its own, and five of the six books never	noMinor
+positions/winger.md	751	facts	49	49	TARIFF	1	HC		Rule: Hockey Canada from behind: 7.5 off head/neck or head first to boards, from	
+positions/winger.md	752	facts	54	54	TARIFF	1	USAH		Rule: USA Hockey 608(a) starts at minor plus misconduct, but a hit from behind s	usahForce,nextGame
+positions/winger.md	753	facts	44	44	TARIFF	2	HC/CARHA		Rule: A check from behind that drives an opponent into the boards or goal frame 	mandMatch
+positions/winger.md	754	facts	49	49	TARIFF	1	USAH		Rule: A check from behind that recklessly endangers a vulnerable or defenseless 	mandMatch,nextGame
+positions/winger.md	755	facts	49	49	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: A hit from behind meant to injure is a mandatory match, no place named — H	mandMatch,intent,nextGame
+positions/winger.md	778	body	395	379	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	- Checking from behind. ⚠️ If you can see their numbers, pull up — a check from 	noMinor,usahForce,mandMatch,intent,headHC,ihuk,nextGame
+positions/winger.md	794	CM	115	50	INSTR	2	HC/CARHA		- Puck-watching on the backcheck, then arriving into the trailer rather than the	
+positions/winger.md	798	CM	172	103	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		- Arriving into the goalie rather than standing in front of them. Take the ice i	nextGame
+positions/winger.md	800	CM	119	105	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		- Putting a player who has their back to you into the goal frame. Never put your	mandMatch
+positions/winger.md	870	KT	61	43	INSTR	2	HC/CARHA		10. On a turnover, sprint back through your lane and pick up the late forward, n	
+systems/breakouts.md	177	facts	51	51	TARIFF	1	USAH		Rule: A USA Hockey screen for the carrier is a 625(a.1) minor; hitting an unawar	headHC,nextGame
+systems/breakouts.md	215	body	194	181	TARIFF	1	CARHA		"And CARHA Rule 49(a) gives a minor or a major to any player who ""stands in front"	mandMatch,nextGame
+systems/breakouts.md	219	body	95	95	TARIFF	1	USAH		Rule 625 writes nothing above the minor, ⚠️ but that is not the ceiling. USA Hoc	headHC,nextGame
+systems/breakouts.md	329	facts	54	54	TARIFF	1	USAH		Rule: USA Hockey's 625 stops at a minor, but a slide into a forechecker as a che	noMinor
+systems/breakouts.md	1126	body	122	122	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Five of the six books here give a no-warning minor to a goalie who races out to 	
+systems/defending_the_rush.md	330	facts	57	57	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: Never finish the chase into their back, puck or not — plan on it ending yo	noMinor,intent,nextGame
+systems/defending_the_rush.md	331	facts	50	50	TARIFF	3	IIHF/HC/CARHA		Rule: A hit from behind into the boards or goal frame on a player unable to prot	mandMatch,intent,headHC
+systems/defending_the_rush.md	334	facts	55	55	TARIFF	1	USAH		Rule: USA Hockey 625 makes impeding a puckless player — picks, lane or speed cha	usahForce,intent,nextGame
+systems/defending_the_rush.md	354	body	172	163	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	From behind, it can end your game whether they have the puck or not. Hockey Cana	noMinor,usahForce,mandMatch,intent,headHC,nextGame
+systems/defending_the_rush.md	423	facts	60	60	TARIFF	5	NHL/PWHL/IIHF/USAH/HC		Rule: A forceful hit into a player's back at the wall ejects you in five of six 	noMinor,usahForce,intent,headHC,nextGame
+systems/defending_the_rush.md	424	facts	53	53	TARIFF	2	HC/CARHA		Rule: From behind into the boards or goal frame on a player unable to protect th	mandMatch
+systems/defending_the_rush.md	434	body	147	86	INSTR	3	IIHF/HC/CARHA		What hounding never means. You are arriving at speed behind a player skating tow	usahForce,mandMatch
+systems/defending_the_rush.md	436	body	65	57	TARIFF	2	IIHF/USAH	ptr	A hit meant to injure is a match in every book but the IIHF, and ⚠️ under USA Ho	intent,nextGame
+systems/defending_the_rush.md	483	body	29	29	TARIFF	0		ptr	A check finished on a player's numbers is a check from behind, and at the wall t	
+systems/defending_the_rush.md	568	facts	53	53	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: Never finish a low hit into the back — it is checking from behind, not cli	noMinor,intent,nextGame
+systems/defending_the_rush.md	588	body	138	121	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	Never finish a low hit into someone's back. ⚠️ A hit from behind is priced as ch	noMinor,intent,nextGame
+systems/defending_the_rush.md	672	facts	46	46	INSTR	5	NHL/PWHL/IIHF/HC/CARHA		Rule: Catching a breakaway carrier puts you behind them, so play the puck, never	noMinor
+systems/defending_the_rush.md	685	body	167	129	INSTR	3	USAH/HC/CARHA	ptr	- Angle them wide if you can get alongside — a bad-angle chance is a win. ⚠️ You	usahForce,headHC
+systems/defending_the_rush.md	770	body	117	84	INSTR	5	NHL/PWHL/IIHF/HC/CARHA		The permission first, because it is what makes the act free. Five of the six boo	
+systems/defending_the_rush.md	1006	CM	105	75	INSTR	3	USAH/HC/CARHA	ptr	- Angling a breakaway carrier wide and then finishing with your body. Angle with	headHC
+systems/defending_the_rush.md	1018	CM	162	108	INSTR	4	IIHF/USAH/HC/CARHA	ptr	- Hounding a carrier into their own end boards and finishing into their back. Ta	usahForce,mandMatch,intent,headHC,nextGame
+systems/defending_the_rush.md	1088	KT	91	75	INSTR	4	IIHF/USAH/HC/CARHA		9. From behind, pressure with feet and stick — never a player's back or blind si	usahForce,headHC,nextGame
+systems/defensive_zone_coverage.md	180	facts	58	49	INSTR	1	HC		Rule: Pull up on anyone digging at the wall. Hockey Canada 7.5: minor and game m	intent,headHC
+systems/defensive_zone_coverage.md	181	facts	53	47	INSTR	1	HC		Rule: Never hit a turned back. On the head: Hockey Canada head contact, a match 	intent,headHC
+systems/defensive_zone_coverage.md	182	facts	54	47	INSTR	5	NHL/PWHL/IIHF/USAH/CARHA		Rule: Pull up on a turned back. NHL, PWHL, IIHF: no minor (43.2); plan on major 	noMinor,usahForce
+systems/defensive_zone_coverage.md	205	body	111	111	TARIFF	1	HC		- The hit from behind, under Hockey Canada. ⚠️ Pull up — Rule 7.5 is written for	mandMatch,intent
+systems/defensive_zone_coverage.md	206	body	160	138	TARIFF	1	HC		- Once it reaches the head, under Hockey Canada. ⚠️ Keep the hit off the head — 	intent,headHC
+systems/defensive_zone_coverage.md	207	body	193	176	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	- The hit from behind, elsewhere. Pull up — the NHL, the PWHL and the IIHF write	noMinor,mandMatch,intent,headHC,nextGame
+systems/defensive_zone_coverage.md	208	body	185	126	TARIFF	1	USAH		- The hit from behind, under USA Hockey. ⚠️ Pull up here too — the softer floor 	noMinor,usahForce,mandMatch,nextGame
+systems/defensive_zone_coverage.md	209	body	156	152	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		- The next game. ⚠️ A game misconduct can cost you the next game too. Under USA 	nextGame
+systems/defensive_zone_coverage.md	211	body	71	39	INSTR	0			- The next game, at a club in England or Wales. ⚠️ Outside the Elite League, a g	ihuk,nextGame
+systems/defensive_zone_coverage.md	497	facts	40	40	INSTR	1	HC		Never: Send the second body into a back — the player digging along your boards c	noMinor,headHC
+systems/defensive_zone_coverage.md	498	facts	36	36	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+systems/defensive_zone_coverage.md	499	facts	58	58	TARIFF	3	IIHF/HC/CARHA		Rule: A hit from behind into the boards or goal frame on a player unable to prot	mandMatch,intent
+systems/defensive_zone_coverage.md	500	facts	54	54	TARIFF	1	USAH		Rule: Only USA Hockey's floor lets you play on (608(a)'s minor and misconduct; t	usahForce,nextGame
+systems/defensive_zone_coverage.md	501	facts	52	52	TARIFF	1	USAH		"Rule: USA Hockey 608(c) is a mandatory match — ""shall be assessed"" — for a check"	mandMatch,nextGame
+systems/defensive_zone_coverage.md	514	body	102	99	INSTR	3	IIHF/HC/CARHA		What it costs. ⚠️ Arrive on the puck, never on a back: no book here prices a hit	noMinor,mandMatch,intent,headHC,ihuk
+systems/defensive_zone_coverage.md	516	body	102	88	TARIFF	1	USAH	ptr	USA Hockey's softer floor does not reach this play: ⚠️ its Casebook requires a m	usahForce,nextGame
+systems/defensive_zone_coverage.md	864	CM	157	105	INSTR	3	USAH/HC/CARHA	ptr	- Finishing a corner pressure into a back. Take the puck, take the ice, or angle	noMinor,usahForce,mandMatch,headHC,nextGame
+systems/defensive_zone_coverage.md	932	KT	77	43	INSTR	2	USAH/HC		4. On a player digging at your boards, play the puck or the ice, never their bac	noMinor,usahForce,headHC
+systems/faceoffs.md	283	body	147	134	INSTR	3	USAH/HC/CARHA		Where body checking is barred you cannot go through the man at all. USA Hockey b	mandMatch
+systems/faceoffs.md	605	facts	52	52	TARIFF	3	USAH/HC/CARHA		Rule: A hit on a rim retrieval is at least a minor in USA Hockey Competitive Con	headHC
+systems/faceoffs.md	607	facts	52	52	INSTR	5	NHL/PWHL/IIHF/HC/CARHA		Rule: Hitting a player turned toward the wall is checking from behind: it ejects	mandMatch,headHC
+systems/faceoffs.md	608	facts	47	47	TARIFF	1	USAH		Rule: Under USA Hockey a hit from behind on a player turned toward the wall is a	usahForce
+systems/faceoffs.md	622	body	83	80	INSTR	3	NHL/PWHL/IIHF		What it costs. ⚠️ A minor is the floor, not the price — and a hit on a player tu	noMinor
+systems/faceoffs.md	624	body	146	146	TARIFF	3	USAH/HC/CARHA		Under Hockey Canada (7.5(a)) and CARHA (53(a)) a hit from behind is at least a m	usahForce,mandMatch,headHC
+systems/faceoffs.md	626	body	117	117	TARIFF	1	USAH		Any body check that is not from behind, on a player retrieving a puck along the 	mandMatch,intent,nextGame
+systems/faceoffs.md	630	body	150	150	TARIFF	1	CARHA		Under CARHA the forechecker may not hit that player in any game. 49(a) penalises	mandMatch,intent
+systems/faceoffs.md	1040	facts	57	57	TARIFF	5	NHL/PWHL/IIHF/USAH/CARHA		Rule: Five of the six books let you ice freely below your opponent's on-ice coun	
+systems/faceoffs.md	1243	CM	125	99	INSTR	4	IIHF/USAH/HC/CARHA	ptr	- Hitting a player turned toward the wall as the forechecker. Take the puck or a	usahForce,mandMatch,headHC,nextGame
+systems/forechecking_systems.md	221	body	143	117	INSTR	1	HC		The one thing that curve must never finish in is contact with a back. The carrie	noMinor,headHC
+systems/forechecking_systems.md	326	facts	54	54	INSTR	4	IIHF/USAH/HC/CARHA		Rule: Never hit a carrier's back: every book but USA Hockey ejects at its lowest	usahForce,mandMatch,headHC
+systems/forechecking_systems.md	345	body	146	93	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Hard describes the speed of your arrival, not what you do when you get there. 	noMinor,usahForce,mandMatch,headHC
+systems/forechecking_systems.md	347	body	94	59	TARIFF	2	USAH/HC		Under USA Hockey, for a reckless hit from behind or one meant to injure, plan on	intent,nextGame
+systems/forechecking_systems.md	620	facts	49	49	INSTR	2	USAH/HC		"Rule: Behind them, play the puck — USA Hockey 608: minimal ""pinch"" a minor and m"	usahForce,mandMatch,nextGame
+systems/forechecking_systems.md	652	body	129	60	INSTR	1	HC		If you have ended up behind them, play the puck — two books answer that same arr	intent
+systems/forechecking_systems.md	654	body	115	115	TARIFF	1	USAH		USA Hockey penalises the same pinch and names it (Casebook, Rule 608, Situation 	usahForce,mandMatch,nextGame
+systems/forechecking_systems.md	656	body	76	67	TARIFF	3	NHL/PWHL/IIHF		Under the NHL, IIHF and PWHL, play the puck from behind them too: ⚠️ none writes	intent
+systems/forechecking_systems.md	662	body	216	112	INSTR	3	NHL/USAH/HC		"If you have been taught to seal ""with your hip and your skates"", ⚠️ neither surv"	nextGame
+systems/forechecking_systems.md	753	facts	41	41	TARIFF	3	NHL/PWHL/IIHF		Rule: The NHL, IIHF and PWHL write no minor for checking from behind (43.2) — a 	noMinor
+systems/forechecking_systems.md	754	facts	53	53	TARIFF	1	USAH		Rule: USA Hockey's minor for checking from behind (608(a)) carries a misconduct 	usahForce,nextGame
+systems/forechecking_systems.md	755	facts	48	48	TARIFF	1	USAH		Rule: USA Hockey 608(b) ejects a check from behind that is reckless or sends the	mandMatch,nextGame
+systems/forechecking_systems.md	756	facts	47	47	TARIFF	1	HC		Rule: Hockey Canada 7.5, from behind with no head contact, or head first into bo	mandMatch,headHC
+systems/forechecking_systems.md	757	facts	48	48	TARIFF	1	HC		Rule: Hockey Canada 7.5(c) makes a hit from behind meant to injure a mandatory m	mandMatch,intent,headHC
+systems/forechecking_systems.md	758	facts	40	40	TARIFF	1	CARHA		Rule: In CARHA adult leagues every intentional hit from behind, anywhere on the 	intent
+systems/forechecking_systems.md	759	facts	45	45	TARIFF	1	CARHA		Rule: In CARHA adult leagues, 53(b) makes a hit from behind into the boards or n	mandMatch
+systems/forechecking_systems.md	765	body	98	59	INSTR	3	NHL/PWHL/IIHF		If you can see their numbers, pull up and play the puck. Under the NHL, the IIHF	noMinor
+systems/forechecking_systems.md	767	body	128	128	TARIFF	2	USAH/HC		Pull up in a Hockey Canada or USA Hockey game too: both write a minor, and neith	mandMatch,intent
+systems/forechecking_systems.md	769	body	170	155	INSTR	3	IIHF/USAH/HC		Take the puck or the ice, never the back of a player facing the wall. Called as 	usahForce,mandMatch,headHC,nextGame
+systems/forechecking_systems.md	771	body	171	171	INSTR	1	HC		Where a hit reaches the head, ⚠️ Hockey Canada prices it as head contact, which 	intent,headHC
+systems/forechecking_systems.md	773	body	131	131	TARIFF	2	HC/CARHA		Stay off a player's back in a CARHA adult league too: CARHA prices a hit from be	mandMatch,intent
+systems/forechecking_systems.md	814	facts	55	55	TARIFF	3	USAH/HC/CARHA		Rule: On a flush, a hit from behind into the boards or net on a player unable to	usahForce,mandMatch,nextGame
+systems/forechecking_systems.md	828	body	127	80	INSTR	4	IIHF/USAH/HC/CARHA		Both of you are arriving on a player facing their own end boards, so this is ang	usahForce,headHC
+systems/forechecking_systems.md	866	facts	49	49	TARIFF	1	IIHF		Rule: The referee's discretion in the charging rule is not the IIHF's whole answ	noMinor
+systems/forechecking_systems.md	881	body	93	56	INSTR	2	IIHF/HC		A goalie turned to the boards for a rimmed puck is a check from behind waiting t	
+systems/forechecking_systems.md	891	body	94	55	INSTR	1	CARHA		A forechecker arriving at speed on a goalie whose back is turned cannot weigh al	
+systems/forechecking_systems.md	897	body	94	18	INSTR	3	NHL/PWHL/IIHF		With the trapezoid, the corners mostly belong to you. Their defenceman has to go	noMinor
+systems/game_management.md	178	facts	40	40	TARIFF	3	NHL/PWHL/IIHF		Rule: The NHL and PWHL may make a late hit a major (NHL 56.4, PWHL 57.4), which 	intent
+systems/game_management.md	182	facts	47	47	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+systems/game_management.md	189	body	185	136	INSTR	5	NHL/PWHL/USAH/HC/CARHA		- Chasing the extra body check. With a lead you can't afford a hit that takes yo	noMinor,usahForce,nextGame
+systems/game_management.md	892	facts	60	60	TARIFF	2	NHL/IIHF		Rule: The NHL has no minor cap on a late hit — 56.2(iii) is a minor for a delibe	noMinor,intent,headHC
+systems/game_management.md	897	facts	53	53	TARIFF	1	HC		Rule: Hockey Canada: a late hit from behind that misses the head, or drives a pl	mandMatch
+systems/game_management.md	898	facts	51	51	TARIFF	1	HC		Rule: Hockey Canada: a head hit from behind is head contact; head first into the	headHC
+systems/game_management.md	899	facts	50	50	TARIFF	1	HC		Rule: Hockey Canada Junior/Senior: a hit from behind to the head is a match if d	
+systems/game_management.md	900	facts	56	56	TARIFF	1	USAH		Rule: USA Hockey has no bare minor for a check from behind (608(a)); a reckless 	noMinor,usahForce,nextGame
+systems/game_management.md	901	facts	32	32	TARIFF	1	USAH		Rule: USA Hockey makes a check from behind a mandatory match, with a likely mult	mandMatch,nextGame
+systems/game_management.md	902	facts	50	50	TARIFF	1	CARHA		Rule: CARHA grants no window at all — it writes no late-hit rule, prices the bod	headHC
+systems/game_management.md	923	body	175	175	TARIFF	1	CARHA		Other CARHA rules reach the hit finished after the puck has gone. 52(a)'s Note m	mandMatch
+systems/game_management.md	927	body	128	128	TARIFF	1	CARHA		Checking from behind brings a game misconduct or a match in CARHA with nobody hu	mandMatch,intent
+systems/game_management.md	931	body	150	150	TARIFF	3	NHL/PWHL/IIHF		The NHL has no minor cap on a late hit either. There it is interference: the che	noMinor
+systems/game_management.md	933	body	115	115	TARIFF	3	NHL/PWHL/IIHF		Unlike NHL and PWHL interference, the IIHF's late-hit rule can add a game miscon	intent,headHC,ihuk
+systems/game_management.md	935	body	150	128	INSTR	2	USAH/HC		If they have turned away from you, leave them — if you can see their numbers, pu	usahForce,mandMatch,headHC,nextGame
+systems/game_management.md	937	body	153	137	INSTR	1	HC	ptr	⚠️ Keep the hit off their head. Under Hockey Canada a hit that reaches the head 	intent,headHC
+systems/game_management.md	1242	CM	115	72	INSTR	1	USAH		- Finishing your check. Let a player who has passed or shot go; if you could sti	noMinor,usahForce,nextGame
+systems/game_management.md	1307	KT	60	36	INSTR	1	USAH		14. Hit only if your game allows checking. Let a passer or shooter go: pull out 	usahForce
+systems/offensive_zone_play.md	784	facts	30	30	INSTR	0			Never: Hit a player whose back is turned to you — off the head or on it, it can 	headHC
+systems/offensive_zone_play.md	785	facts	52	52	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: Checking from behind ejects under the NHL, PWHL (43), CARHA (53) and Hocke	usahForce,mandMatch,headHC,nextGame
+systems/offensive_zone_play.md	786	facts	52	52	INSTR	5	NHL/PWHL/USAH/HC/CARHA		Rule: From behind into boards or goal frame (CARHA: net) so they can't protect t	mandMatch,intent
+systems/offensive_zone_play.md	796	body	94	77	INSTR	5	NHL/PWHL/IIHF/HC/CARHA		Behind the net, never hit a player whose back is turned to you — play the puck. 	noMinor,headHC
+systems/offensive_zone_play.md	798	body	165	141	INSTR	5	NHL/PWHL/USAH/HC/CARHA	ptr	Driving a player from behind into the boards or goal frame when they cannot prot	usahForce,mandMatch,intent,headHC,nextGame
+systems/offensive_zone_play.md	921	facts	52	52	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Rule: A hit from behind at the glass ejects (NHL, PWHL 43; IIHF, plan on it; CAR	usahForce,headHC,nextGame
+systems/offensive_zone_play.md	923	facts	36	36	TARIFF	0			Rule: At a club in England or Wales, outside the Elite League, a game misconduct	ihuk
+systems/offensive_zone_play.md	924	facts	51	51	TARIFF	1	CARHA		Rule: CARHA (adult) bars checking: a charge (52(a)) or deliberate or unaverted c	
+systems/offensive_zone_play.md	971	body	139	123	INSTR	3	USAH/HC/CARHA	ptr	- Pull up and take the puck. That hit is never two minutes in any book (under Ho	noMinor,usahForce,mandMatch,headHC,nextGame
+systems/offensive_zone_play.md	972	body	159	138	TARIFF	4	NHL/PWHL/IIHF/HC		- If the hit reaches the head, the NHL and the PWHL take the harsher of Rules 43	intent,headHC
+systems/offensive_zone_play.md	995	body	214	180	INSTR	2	USAH/CARHA		What you seal with. Body position is allowed; a hold is not. USA Hockey's Rule 6	nextGame
+systems/offensive_zone_play.md	1153	CM	161	107	INSTR	3	USAH/HC/CARHA	ptr	- Pinching to hit a winger who is facing the glass. Take the puck, not the body 	noMinor,usahForce,mandMatch,headHC,nextGame
+systems/offensive_zone_play.md	1196	body	73	30	INSTR	1	HC		6. You are pinching down the wall and the opposing winger is facing the glass wi	noMinor,headHC
+systems/offensive_zone_play.md	1217	KT	74	33	INSTR	1	HC		8. Pinching, take the puck: seal the wall with position, not arms or skates, or 	noMinor,headHC
+systems/special_teams.md	653	facts	51	51	INSTR	4	IIHF/USAH/HC/CARHA		Rule: Angle to the puck, not the back — a hit from behind ejects in every book (	usahForce,mandMatch,headHC
+systems/special_teams.md	654	facts	46	46	TARIFF	1	USAH		Rule: USA Hockey: a forceful hit from behind on a player along the boards, a hea	usahForce,nextGame
+systems/special_teams.md	655	facts	60	60	TARIFF	4	NHL/PWHL/IIHF/HC		Rule: From behind on the head, the NHL, IIHF and PWHL take the harsher of 43 and	noMinor,mandMatch,headHC
+systems/special_teams.md	662	body	76	34	INSTR	1	IIHF		"- ""Looking down"" and ""facing the boards"" are reasons the puck is winnable, not l"	
+systems/special_teams.md	670	body	46	39	INSTR	3	IIHF/USAH/HC		What it costs — checking from behind. ⚠️ Angle to the puck and let the back go: 	headHC
+systems/special_teams.md	672	body	179	165	TARIFF	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	A hit from behind into the boards or goal frame on a player who cannot protect t	noMinor,usahForce,mandMatch,intent,headHC,nextGame
+systems/special_teams.md	834	facts	35	35	INSTR	1	IIHF		Never: Finish a check on a turned back — if you can see their numbers, pull up a	
+systems/special_teams.md	842	body	96	30	INSTR	1	IIHF		Chase only when the puck can actually be won — a bobbled reception, a player wit	
+systems/special_teams.md	1116	facts	53	53	INSTR	4	IIHF/USAH/HC/CARHA		Rule: Never hit a goalie from behind: it ejects (Hockey Canada: off the head; II	usahForce,mandMatch,headHC,nextGame
+systems/special_teams.md	1117	facts	61	61	INSTR	4	NHL/PWHL/IIHF/HC		Rule: Goalie hit from behind: Hockey Canada takes the harsher of 8.5 and 7.5, or	noMinor,headHC
+systems/special_teams.md	1142	body	153	145	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Never arrive at a goalie from behind — that is checking from behind, and it ends	noMinor,usahForce,headHC,nextGame
+systems/special_teams.md	1144	body	116	111	INSTR	1	IIHF		If you play in Britain — the IIHF book prices it, and nothing local softens it. 	ihuk
+systems/special_teams.md	1172	CM	63	45	INSTR	0			- Chasing a puck that was never winnable. Go only for a bobbled reception, a tur	
+systems/special_teams.md	1203	CM	142	87	INSTR	4	IIHF/USAH/HC/CARHA		"- Reading ""back turned"" or ""facing the boards"" as a reason to arrive harder. ⚠️ "	usahForce,headHC,nextGame
+systems/special_teams.md	1263	KT	61	37	INSTR	1	USAH		8. On the kill, pressure the puck, never the back. If the carrier is between you	usahForce,nextGame
+systems/zone_entries.md	237	facts	51	51	TARIFF	2	HC/CARHA		Rule: Hitting a defenceman turned to retrieve is checking from behind, and in mo	mandMatch,headHC
+systems/zone_entries.md	238	facts	55	55	TARIFF	1	USAH		Rule: Under USA Hockey a forceful check on a player standing along the boards, o	usahForce,nextGame
+systems/zone_entries.md	253	body	175	156	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	What it costs. ⚠️ Pull up — a hit from behind on a turned defenceman ends your g	usahForce,mandMatch,headHC,nextGame
+systems/zone_entries.md	776	facts	53	53	INSTR	3	USAH/HC/CARHA		Rule: Pull up on a goalie turned to the wall for a rimmed puck: into the boards 	usahForce,mandMatch,nextGame
+systems/zone_entries.md	804	body	93	81	INSTR	3	USAH/HC/CARHA		Into the boards. ⚠️ Never drive a goalie turned to the boards into the boards or	usahForce,mandMatch,nextGame
+systems/zone_entries.md	824	facts	55	55	INSTR	2	HC/CARHA		Rule: A turned retriever's back is to you, so arriving through them is checking 	mandMatch,headHC
+systems/zone_entries.md	825	facts	55	55	TARIFF	1	USAH		Rule: Under USA Hockey a forceful check on a retriever standing along the boards	usahForce,nextGame
+systems/zone_entries.md	841	body	123	105	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	What it costs. ⚠️ Pull up — a check from behind on a turned retriever ends your 	usahForce,mandMatch,headHC,nextGame
+systems/zone_entries.md	1145	CM	176	138	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA	ptr	- Forechecking during a delayed offside, and expecting the whistle to protect yo	usahForce,headHC,nextGame
+systems/zone_entries.md	1203	KT	62	47	INSTR	0			4. On a delayed offside, tag up together; nobody re-enters until the zone is emp	
+systems/zone_entries.md	1209	KT	71	43	INSTR	2	HC/CARHA		10. Angle your chase to cut off the easiest escape; take the puck, not the playe	
+technique/passing_and_receiving.md	221	body	88	88	INSTR	1	USAH		When you are the one arriving, take the puck and leave the turned back alone — a	usahForce,nextGame
+technique/passing_and_receiving.md	223	body	124	102	TARIFF	2	HC/CARHA	ptr	"Hockey Canada's Rule 7.5 names the picture — a player ""digging the puck out"" who"	mandMatch,headHC
+technique/passing_and_receiving.md	471	body	136	136	TARIFF	1	USAH		- USA Hockey, head contact. Stick contact to the head during a check is called u	usahForce,mandMatch,intent,headHC,nextGame
+technique/puck_handling.md	302	body	111	46	INSTR	1	IIHF		- Kick it to yourself — at the puck, never at a player. Pull the puck into your 	
+technique/puck_handling.md	350	body	186	151	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		In your own crease it is far worse, and this half is in all six books. A skater 	
+technique/puck_handling.md	1063	CM	69	41	INSTR	1	IIHF		- Kicking at a player instead of at the puck. Keep the motion small and at the p	
+technique/puck_handling.md	1135	KT	59	43	INSTR	1	IIHF		8. Kick the puck to yourself — small, and at the puck, never at a player. ⚠️ Kic	
+technique/shooting.md	315	facts	55	55	INSTR	2	HC/CARHA		Rule: Pull up short of a goalie — charging one can eject in every book, mandator	noMinor,headHC
+technique/shooting.md	535	facts	57	57	INSTR	3	USAH/HC/CARHA		Rule: Pull up short of a goalie turned away — no book has a bare minor for the h	noMinor,mandMatch,headHC
+technique/shooting.md	536	facts	48	48	TARIFF	1	HC		Rule: On a goalie, Hockey Canada takes the harsher of 7.5 and 8.5 — a hit from b	headHC
+technique/shooting.md	571	body	104	104	TARIFF	1	USAH		Under USA Hockey, reckless contact has a mandatory tier, and none excepts a goal	mandMatch,intent,headHC,nextGame
+technique/shooting.md	573	body	84	71	INSTR	6	NHL/PWHL/IIHF/USAH/HC/CARHA		Pull up before you reach a goalie who is turned away from you. ⚠️ Arriving into 	noMinor,usahForce,headHC
+technique/shooting.md	575	body	102	102	TARIFF	2	HC/CARHA		On a goalie Hockey Canada takes the harsher of 7.5 and 8.5, so a hit from behind	mandMatch,headHC
+technique/shooting.md	577	body	126	126	TARIFF	5	NHL/PWHL/IIHF/USAH/HC	ptr	Under USA Hockey, ⚠️ putting them head first into the goal frame is a mandatory 	headHC,nextGame
+technique/shooting.md	918	CM	155	104	INSTR	3	USAH/HC/CARHA	ptr	- Arriving into a goalie who has turned away from you. Pull up, and take the ice	noMinor,mandMatch,headHC,nextGame
+technique/shooting.md	979	KT	61	15	INSTR	0			5. Make the goalie move sideways or take away their sight, then get the rebound.	
