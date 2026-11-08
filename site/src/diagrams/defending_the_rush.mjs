@@ -105,6 +105,18 @@ const gapAndAngle = {
   // rulebooks allow" scope, the full provenance limit and the backward-speed point, because
   // body_contact_and_battles.md voices no provenance beside it and defending_the_rush.md and
   // how_to_watch_hockey.md voice no standstill point beside it.
+  // ✂️ SHORTENED 8 November 2026 (SG208, 1,127 chars), and only by one sentence. Four hosts,
+  // all rendered 8 Nov: defending_the_rush.md :247 (chunk 12), body_contact_and_battles.md :266
+  // (chunk 24), defender.md :471 (chunk 35), how_to_watch_hockey.md :252 (chunk 16). Cut: "Treat
+  // the figure as a shape to aim at, not a measured number" -- the THIRD hedge on one figure,
+  // after "a guide, not a law" and the provenance limb, which both stay (CLAUDE.md, readable
+  // beats defendable: one qualification, not three). NOTHING ELSE COULD GO, because no other
+  // limb is voiced near the marker in all four hosts:
+  //   - the inside definition: how_to_watch_hockey.md voices none (chunks 15-17);
+  //   - the gap figure: it is the picture's own measurement;
+  //   - the provenance limb: defending_the_rush.md (chunks 11-13) and body_contact_and_battles.md
+  //     (chunks 23-24) voice none beside the marker;
+  //   - the standstill point: defending_the_rush.md and how_to_watch_hockey.md voice none beside it.
   caption:
     'A 1-on-1 as the carrier crosses the centre red line, attacking right to left ' +
     // ⚠️ "body between the carrier and the middle of the ice" WAS CUT AND PUT BACK, in this
@@ -177,8 +189,8 @@ const gapAndAngle = {
     // still nearer 1.75 than 1.5 -- which is what "on any stick length the rulebooks allow" asserts.
     'That stick and a half is a guide, not a law: it varies with your backward speed and the ' +
     'attacker’s skill, the only page found that anchors a distance to the centre red line prints ' +
-    'two stick lengths there, and one coaching book prints no distance at all. Treat the figure ' +
-    'as a shape to aim at, not a measured number. What no still picture can show is that the ' +
+    'two stick lengths there, and one coaching book prints no distance at all. What no still ' +
+    'picture can show is that the ' +
     'defender was already at full backward speed, because a gap cannot be closed from a standstill.',
 
   describe:
@@ -612,20 +624,29 @@ const threeOnTwoAlternative = {
     // borrowed into positions/goaltender.md as well as its owner. Both are replaced by
     // NAMING the other diagram — "the two-wide default", which is what that caption calls
     // itself — so the pair still cross-references and neither half depends on adjacency.
+    // ✂️ SHORTENED 8 November 2026 (SG208, 1,092 chars). Two hosts, both rendered 8 Nov:
+    // defending_the_rush.md :631 (chunk 40) and goaltender.md :1016 (chunk 67). No rule or
+    // safety limb is in this caption; every cut is tactical restatement.
+    //   - "which attacker it will be is not fixed, and this picture does not fix it either"
+    //     -> "which attacker it will be is not fixed" (the half about the picture restates it).
+    //   - "exactly as they would on a 2-on-1", "and plays it as", "specifically": wording.
+    //   - the trade sentence is compressed, not dropped: defending_the_rush.md voices it in
+    //     full at :639 (chunk 41, next); goaltender.md voices only "they fail in different
+    //     directions" (:1005, :1012, chunk 66), so both halves of the trade stay here.
+    // KEPT: the system's name and its "ask your coach" close, the two-wide cross-reference by
+    // NAME (never "the previous diagram"; see the note above), and why the backchecker's route
+    // ends in open ice.
     'A 3-on-2 defended the realistic alternative way — "strong side takes the puck, weak side ' +
     'splits" — with the attack moving right to left toward the defended net at the left. The three ' +
     'attackers stand exactly where they do in the two-wide default; only the defence has ' +
-    'changed. The strong-side defenceman takes the puck carrier and plays it as a ' +
-    '1-on-1 with a tight gap; the weak-side defenceman drops off into the shaded lane ' +
-    'and splits the middle attacker and the far attacker exactly as they would on ' +
-    'a 2-on-1. Under this version the backchecker’s job becomes the third attacker rather than the middle ' +
-    'specifically, which is why that route finishes in open ice — which attacker it will be is not ' +
-    'fixed, and this picture does not fix it either. ' +
-    'The trade runs in both directions: this version never concedes the middle, but the weak-side ' +
-    'defenceman is covering two people and the far attacker gets more room, where the two-wide default ' +
-    'keeps three ' +
-    'defenders on three attackers if the backcheck arrives and concedes the middle entirely if it does ' +
-    'not. Ask your coach which one you are playing.',
+    'changed. The strong-side defenceman takes the puck carrier as a 1-on-1 with a tight gap; the ' +
+    'weak-side defenceman drops off into the shaded lane and splits the middle and far attackers, ' +
+    'as on a 2-on-1. The backchecker’s job becomes the third attacker rather than the middle, ' +
+    'which is why that route finishes in open ice — which attacker it will be is not fixed. ' +
+    'This version never concedes the middle, but the weak-side defenceman is covering two people ' +
+    'and the far attacker gets more room; the two-wide default keeps three defenders on three ' +
+    'attackers if the backcheck arrives and concedes the middle entirely if it does not. Ask your ' +
+    'coach which one you are playing.',
 
   describe:
     'The full sheet, the defended net at the left. The same three opposition forwards as the previous ' +

@@ -550,37 +550,48 @@ const rimStopOrClear = {
   // way" paragraph immediately before), and the Hockey Canada / USA Hockey 614(c) freeze
   // detail (the freeze section two chunks before). The British limb and the freeze limb are
   // kept in short form because neither is voiced in an adjacent chunk.
+  // ✂️ SHORTENED AGAIN 8 November 2026 (SG208, 1,133 chars). One host, goaltender.md :698
+  // (render 8 Nov, caption opens chunk 44). Cut, each voiced at the same tier or higher in the
+  // two bullets directly before the marker (chunk 43) or the "What it costs" paragraph
+  // directly after it (chunk 44):
+  //   - "the most useful thing you can do is often not a pass at all ... call 'leave it'
+  //     early": :694 "Stop a rimmed puck and leave it ... kill it dead behind the net and
+  //     leave it stationary ... Call 'leave it' ... say it early". A short "kill it dead and
+  //     leave it for your defenceman" is kept so the caption still says what the drawn rim's
+  //     end is for. (An earlier note here required a FULL STOP, not an em dash, after "often
+  //     not a pass at all", because a live negation running into "kill it dead ..." could be
+  //     heard as "not kill it dead". That negation is gone, so the hazard cannot arise; do not
+  //     put it back in front of an imperative.)
+  //   - "Under the IIHF book, getting out of the way is the rule ... delay-of-game minor":
+  //     :700 "Under the IIHF book a pad in the way of a pass is playing the puck" ... "a minor
+  //     for delay of game (Situation 27.7)", the very next paragraph.
+  //   - "In front of the goal line, and behind it inside the shaded area, blocking a rim with
+  //     your pads is completely legal": :695, bold, "In front of the goal line, or behind it
+  //     but inside the trapezoid, it is completely legal."
+  //   - "The NHL and IIHF books have a trapezoid; USA Hockey, Hockey Canada and CARHA mark
+  //     none, but having none still does not free you to freeze the puck out here": :695
+  //     "Under USA Hockey, Hockey Canada and CARHA there is no trapezoid ... what those books
+  //     bar out there is freezing the puck, not blocking it", with the NHL/IIHF get-out-of-the-
+  //     way limb under ⚠️ in the same bullet.
+  // KEPT WORD FOR WORD: the trapezoid definition, the rim's path, "Out where it crossed the
+  // line, get out of the way and let them have it" (the conservative half, unscoped as it
+  // always was until the next sentence scoped it), and the whole British limb -- the host's
+  // own British paragraph is :627, in the trapezoid section seven chunks earlier.
   caption:
     'A puck rimmed hard around the boards is coming behind your net, and the shaded area is the ' +
-    'trapezoid — the marked area behind the goal line inside which you are allowed to play it. ' +
+    // SG208 safety review: scope the trapezoid to the books that mark one, so "get out of the way" below
+    // is not voiced as universal law (USA Hockey, Hockey Canada and CARHA write none).
+    'trapezoid that the NHL and IIHF books mark — the area behind the goal line inside which you are allowed to play it. ' +
     'Follow the rim: it crosses the goal line well outside that area, and only then comes into ' +
-    // ⚠️ FULL STOP, NOT AN EM DASH, in "often not a pass at all. Kill it dead" below. This
-    // ran "…is often not a pass at all — kill it dead, leave it for your defenceman, and call
-    // 'leave it' early", and the em dash opened onto three imperatives with the negation still
-    // live: a listener can hear "not kill it dead, not leave it for your defenceman", which
-    // pushes a goaltender into playing a puck the sentence exists to tell them to kill. Same
-    // shape the style guide records for a second em dash after a "Never" label. It survived the
-    // 2026 length cut deliberately; do not restore the dash.
-    'it. Inside, the most useful thing you can do is often not a pass at all. Kill it dead, leave ' +
-    'it for your defenceman, and call "leave it" early. Out where it crossed the line, get out of ' +
-    // ⚠️ DO NOT reintroduce the phrase "restricted area" into the IIHF sentence below. The
-    // Situation Handbook uses it for the ice behind the goal line you are BARRED from, and the
-    // Rule Book uses it for the trapezoid ITSELF — Rule 1.8 is headed "Goalkeeper's Restricted
-    // Area". content/positions/goaltender.md flags the clash in terms. A first draft of this
-    // caption wrote "blocks a pass inside the restricted area" and a listener with no picture
-    // would have taken it to mean a pad in the way INSIDE the trapezoid is a minor, which is the
-    // rule inverted.
-    // ⚠️ "getting out of the way" is named, not pointed at with "that": "Under the IIHF book
-    // that is the rule" heard aloud parses as "the IIHF book that is the rule".
-    'the way and let them have it. Under the IIHF book, getting out of the way is the rule, not ' +
-    'caution: a pad in the way out there counts as playing the puck and draws a delay-of-game ' +
-    'minor. In front of the goal line, and behind it inside the shaded area, blocking a rim with ' +
+    'it. Inside, kill it dead and leave it for your defenceman. Out where it crossed the line, get out of ' +
+    // ⚠️ DO NOT reintroduce the phrase "restricted area" into this caption: the IIHF Situation
+    // Handbook uses it for the ice behind the goal line you are BARRED from, and the Rule Book
+    // uses it for the trapezoid ITSELF (Rule 1.8). goaltender.md flags the clash in terms.
     // W34: the British limb scoped England Ice Hockey's 22.3 to "England and Wales" — a place,
     // where eih_rr.txt 22.2 scopes it to "EIH competitions", and the Elite League plays in
     // England under a Casebook that hands Rule 27 to the IIHF book. Owner: uk_rules.md KT7.
     // The "and where" below keeps that scope question open; do not cut it.
-    'your pads is completely legal. The NHL and IIHF books have a trapezoid; USA Hockey, Hockey ' +
-    'Canada and CARHA mark none, but having none still does not free you to freeze the puck out here. ' +
+    'the way and let them have it. ' +
     'In Britain, whether England Ice Hockey’s rule suspending the trapezoid still stands, and ' +
     // ⚠️ FULL STOP before "Assume it binds" below: a negation or "unsettled" clause running
     // into three bare imperatives lets a listener hear "don't assume it binds". "Assume it

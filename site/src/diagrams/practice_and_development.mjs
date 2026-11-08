@@ -377,19 +377,27 @@ const theLine = {
   // ⚠️ Kept OUT of the string run on purpose: a // line inside `caption:` ends the run for
   // check_caption_negations.py's CAPTION regex, which then scans only the prefix. It sat
   // mid-run until the caption was shortened, so that checker had been reading a prefix here.
+  // ✂️ SHORTENED 8 November 2026 (SG208, 1,124 chars). One host, practice_and_development.md
+  // (render 8 Nov, caption in chunk 16). Cut: "The next picture is the same six skaters using one
+  // end of the ice" (voiced at :329, chunk 15, directly before the two markers: "Below are the
+  // same six skaters arranged two ways"); "one is on the puck, five are not moving" (restates
+  // the opening clause); "puts a group through the same thing in turn". Cut TOGETHER, claim and
+  // disclosure: "roughly half of a typical team practice is spent standing in a line is a
+  // coaching estimate" -- the host states it with its own disclosure at :388 ("Half of a typical
+  // team practice is standing in a line -- a coaching estimate"), and chunk 15 voices the
+  // queueing cost ("a full-ice drill where you queue for ninety seconds gives you almost
+  // nothing"). KEPT WORD FOR WORD: the whole ⚠️ safety pair, head-up still leading and still
+  // last, because the host's only other voicing of either bullet is §"While you're queuing"
+  // (:391, :393), several chunks away, and KT8 (:662) at the end of the document.
   caption:
     'A full-ice drill on the whole two-hundred-foot sheet at one instant: six skaters, one ' +
     'carrying the puck up the ice and five standing in a line ' +
-    'against the boards waiting their turn. No goalie is drawn in this one. ' +
-    'One is on the puck, five are not moving, and no opponent is drawn, so ' +
+    'against the boards waiting their turn. No goalie and no opponent are drawn, so ' +
     'nothing can surprise the player taking the rep. ' +
-    'It teaches a pattern and puts a group through the same ' +
-    'thing in turn; this is not a badly run practice. What it is expensive in is ' +
-    'time. That ' +
-    'roughly half of a typical team practice is spent ' +
-    'standing in a line is a coaching estimate rather than anything anybody has counted. How a ' +
+    'It teaches a pattern; this is not a badly run practice, but it is expensive in ' +
+    'time. How a ' +
     'practice is built is your coach’s call; what is yours is what you do while you ' +
-    'wait. The next picture is the same six skaters using one end of the ice. ⚠️ Two ' +
+    'wait. ⚠️ Two ' +
     'things about standing in that line, and the first one is the one that hurts people: keep your ' +
     'head up, because a practice has loose pucks flying and a line against the boards is exactly ' +
     'where they arrive. The second is that standing ' +
@@ -490,11 +498,23 @@ const smallAreaGame = {
   half: false,
   width: 900,
 
+  // ✂️ SHORTENED 8 November 2026 (SG208, 1,123 chars). One host, practice_and_development.md
+  // (render 8 Nov, caption ends chunk 16). Cut: "which is exactly the information a drill takes
+  // out" (the host's next paragraph, :337, same chunk: "A drill removes the opponent ... which
+  // removes exactly the information you need to learn to read"); "a seventh person, not in the
+  // last picture" (a pointer at the previous caption; :329 already says the goalie is there);
+  // "It uses the rink's own net because that is what can be drawn, not as a recommendation, and
+  // the rest of the ice is empty only because one group is drawn" (a drawing convention; the
+  // coaching-choice sentence kept below already scopes the area and whether there is a goalie).
+  // KEPT WORD FOR WORD: the coaching-choice disclosure, the route sentence, and the whole ⚠️
+  // limb. The host's own "whether you may hit at all is your league's call" (:360) is chunk 17,
+  // but it is a different claim (yours to decide) from this one (age group, league, book), and
+  // this is the one route in the file that arrives on a person.
   caption:
     'The same six skaters, now playing three against three in one end zone, with one puck and ' +
-    'one net, which your three attack and a goalie defends — a seventh person, not in the last ' +
-    'picture. All six are in the play, none more than about forty-five feet from the puck, and ' +
-    'the opponent has not been told what they will do, which is exactly the information a drill ' +
+    'one net, which your three attack and a goalie defends. All six are in the play, none more ' +
+    'than about forty-five feet from the puck, and ' +
+    'the opponent has not been told what they will do. ' +
     // ⚠️ THE ROUTE SENTENCE AND ITS SAFETY SENTENCE MOVED TO THE END AS A PAIR, AND THEY
     // HAVE TO MOVE TOGETHER. The glyph used to sit a third of the way in, so the amber band
     // ran 1,416 characters: it opened on the contact caveat and then painted ~1,100
@@ -511,10 +531,9 @@ const smallAreaGame = {
     // plausible ... under-tested. Use them. Don't cite research you don't have." and
     // "Constrain deliberately"). Kept: the coaching-choice disclosure, and the ⚠️ limb,
     // which is the caveat for the one route here that arrives on a person.
-    'takes out. Everything about this setup is a coaching choice, not a law of hockey: the ' +
+    'Everything about this setup is a coaching choice, not a law of hockey: the ' +
     'numbers, the area, whether there is a goalie, what each team scores on and what constraint ' +
-    'is added. It uses the rink’s own net because that is what can be drawn, not as a ' +
-    'recommendation, and the rest of the ice is empty only because one group is drawn. One of ' +
+    'is added. One of ' +
     'the six is closing on the puck carrier on the wall, and their route ends in two short bars, ' +
     'not an arrowhead: they arrive and contain rather than skating through. ⚠️ That is all the ' +
     'picture says about how they arrive, on purpose: how hard anyone may compete for a puck, and ' +

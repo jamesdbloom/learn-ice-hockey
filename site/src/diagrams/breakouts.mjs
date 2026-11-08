@@ -847,17 +847,30 @@ const wingerWall = {
   half: false,
   width: 900,
 
+  // ✂️ SHORTENED 8 November 2026 (SG208, 1,162 chars). One host, breakouts.md :601 (render
+  // 8 Nov, caption in chunk 38). Cut, each voiced beside the marker at the same tier:
+  //   - "and being there is not an error": the facts block before the marker (:594, chunk 37)
+  //     and the paragraph directly after it (:603-605, chunk 38) both voice it.
+  //   - the system-dependence sentence: the facts block's Convention line (:595, chunk 37)
+  //     voices it word for word, and the blockquote after the marker (:607, chunk 38) again.
+  //   - "time the arrival rather than camping": §"When to move" facts (:612, chunk 39 head).
+  //   - "arrive with the body open to the ice rather than the nose against the glass":
+  //     §"Presenting a target, and receiving open to the ice" (chunk 39) is the owner.
+  //   - "neither end of it is a place to live" (restates "the trip is the job").
+  // Grammar: "comes" -> "come" after "They start high", a fix to the kept clause, not a reword
+  // of any claim. KEPT WORD FOR WORD: the two ends of the trip with "at or just below the dot
+  // line, never above it", and the whole ⚠️ wall limb with SHOULDER_TAIL (owner ruling: the
+  // posture is this section's subject). The host does voice the same "Never:" line one chunk
+  // later (§"Presenting a target", chunk 39) and the shoulder clause in chunk 40; it was kept
+  // anyway because both come AFTER the caption, past a whole intervening section, and the
+  // caption already fits under 700 with it.
   caption:
     'The strong-side winger’s trip, drawn in your own defensive zone at the left of the picture at ' +
     'the instant your team wins the puck. They start high, level with the opposing point man — that is' +
-    ' their defensive-zone coverage under the standard low zone collapse, and being there is not ' +
-    'an error — and comes down the wall to the boards between the hash marks and the goal line, at or' +
+    ' their defensive-zone coverage under the standard low zone collapse — and come down the wall to ' +
+    'the boards between the hash marks and the goal line, at or' +
     ' just below the dot line, never above it. The trip between those two spots, and its timing, is ' +
-    'the job, and neither end of it is a place to live: time the arrival rather than camping, and ' +
-    'arrive with the body open to the ice rather than the nose against the glass. Wall position is ' +
-    'system-dependent: a flat or spread structure asks wingers to' +
-    ' hold higher toward the blue line, and a stretch or flying-winger structure sends one winger up ' +
-    'ice entirely, so find out which one you are in. ' +
+    'the job. ' +
     // SAFETY. Not composed here: this is the owner's own wording, the "Never:" line in the facts
     // block of content/systems/breakouts.md section "Presenting a target, and receiving open to
     // the ice". Re-derive that line rather than trusting a number here; the marker pass of

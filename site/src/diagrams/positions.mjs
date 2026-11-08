@@ -1137,14 +1137,27 @@ const wingerDzRim = {
   half: true,
   width: 900,
 
+  // ✂️ SHORTENED 8 November 2026 (SG208, 1,122 chars). Two hosts, winger.md :119 (chunk 8) and
+  // passing_and_receiving.md :209 (chunk 9), both rendered 8 Nov. Cut:
+  //   - the gloss on what a rim is ("a hard shot along the boards that follows the curve of the
+  //     rink past them to a teammate further around"): winger.md "What to do" :113 (chunk 7, the
+  //     paragraph before the marker's own two) voices it word for word; passing_and_receiving.md
+  //     voices it in its rim/reverse table, "Hard, flat, low on the boards, following the curve
+  //     of the rink" (:203, chunk 8, directly before the marker).
+  //   - "It is a valid play and not an admission of failure": tactical reassurance, not a
+  //     hazard; winger.md :135 voices it ("a completely valid play"), passing_and_receiving.md
+  //     does not, so it is cut as narrative rather than as a carried limb.
+  // KEPT WORD FOR WORD: "keep your feet wide and low and still moving" (passing_and_receiving.md
+  // never voices the pinned-on-the-wall point), the timing sentence, and the WHOLE ⚠️ wall limb
+  // with SHOULDER_TAIL -- passing_and_receiving.md :213 tells its reader "the wall-contact
+  // warning both captions carry" applies, so cutting it here would make that host sentence false.
   caption:
     'Beating a checker who has sealed you against the boards, in your own end. Your body is between ' +
     'the puck and the checker, which is why the puck is drawn on the far side of you from the pressure — but ' +
     'keep your feet wide and low and still moving: a stationary player on the wall gets pinned. The checker is' +
     ' inside you, containing rather than chasing, so the ice they are taking away is the middle. That is' +
-    ' exactly the checker a RIM beats: a hard shot along the boards that follows the curve of the ' +
-    'rink past them to a teammate further around, because it goes where they are not. It is a valid play ' +
-    'and not an admission of failure. Decide where the puck is going while you are still skating to ' +
+    ' exactly the checker a RIM beats, because it goes where they are not. ' +
+    'Decide where the puck is going while you are still skating to ' +
     'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to anyone coming at you and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
     'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +

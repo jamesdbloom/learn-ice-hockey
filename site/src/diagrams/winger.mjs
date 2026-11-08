@@ -119,9 +119,9 @@
  */
 
 // A caption clause that appears in more than one diagram is imported, never
-// retyped. These captions already agreed byte for byte; the constant is what keeps
-// them agreeing. See wall_contact_clauses.mjs.
-import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
+// retyped. See wall_contact_clauses.mjs. ⚠️ SHOULDER_TAIL was imported here until
+// 8 November 2026, when its only user in this file (winger-corner-and-the-empty-point)
+// stopped prescribing the wall posture; re-import it if a caption here prescribes it again.
 
 
 const OWNER = 'content/positions/winger.md';
@@ -624,18 +624,35 @@ const cornerAndTheEmptyPoint = {
   half: true,
   width: 900,
 
+  // ✂️ SHORTENED 8 November 2026 (SG208, 1,179 chars). One host, winger.md (render 8 Nov,
+  // caption in chunk 24). Cut, each voiced beside the marker at the same tier or higher:
+  //   - the posture sentence and SHOULDER_TAIL: the host's "What to do" paragraph DIRECTLY
+  //     before the marker (:408, chunk 24) voices "never turn your back to anyone coming at
+  //     you, and never duck. Skates parallel to the boards, forearm and hip to the wall, head up
+  //     and chin off your chest", and the section's facts block (:397, chunk 23) voices
+  //     "forearm and hip to the wall, not the point of your shoulder, and not the whole
+  //     shoulder if you can help it". With no posture prescribed here, the shoulder clause is
+  //     not owed (wall_contact_clauses.mjs: it is owed WHEREVER THE POSTURE IS PRESCRIBED).
+  //   - "Those are two different injuries ...": the facts block (:397-398, chunk 23) voices
+  //     both, at a HIGHER tier ("Even a light hit from behind could inflict a severe head or
+  //     neck injury"; "your neck can break at walking speed").
+  //   - "and this picture shows one of the two rather than the way it always is" (restates
+  //     "may equally be holding the line"); "drawn for the look that is easiest to skip".
+  // KEPT: the step-down read and its "may equally be holding the line" scope (the host's Key
+  // considerations at :414 voice the read but not the alternative), and under the glyph the
+  // two prohibitions and the closing "not contact / not a licence to hit", so the caption
+  // still speaks "Important." on the override.
+  // ⚠️ THIS BREAKS THE SHARED SPAN the note above describes: winger-dz-rim and
+  // winger-dz-reverse still carry the full posture line, this caption no longer does.
   caption:
-    'A winger with the puck in the offensive corner, drawn for the look that is easiest to skip. The ' +
+    'A winger with the puck in the offensive corner. The ' +
     'opposition net is at the right and their defenceman is on you from the inside, so your body is ' +
     'the wall between them and the puck. Two outlets are drawn: your own defenceman, and your centre. ' +
     'What the picture is actually about is where that defenceman is. They have stepped down off the blue ' +
     'line to the top of the faceoff circle to support the cycle, which is normal and legitimate — so ' +
     'the point behind them, exactly where a blind pass up the wall goes, is empty. Look up before you ' +
-    'throw it there. Your defenceman may equally be holding the line, and this picture shows one of the two rather ' +
-    'than the way it always is. ⚠️ Never turn your back to anyone coming at you and never duck. Those are two ' +
-    'different injuries — a hit from behind you cannot brace for, and a chin tucked to the chest, ' +
-    'which does not need speed to do it. Skates parallel to the boards, forearm and hip to the ' +
-    'wall, head up and chin off your chest' + SHOULDER_TAIL + ' Nothing in this ' +
+    'throw it there. Your defenceman may equally be holding the line. ' +
+    '⚠️ Never turn your back to anyone coming at you and never duck. Nothing in this ' +
     'picture is contact, and nothing in it is a licence to hit.',
 
   describe:

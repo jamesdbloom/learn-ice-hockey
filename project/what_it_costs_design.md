@@ -60,6 +60,24 @@ On the pilot, the first version of the section voiced as one unbroken run of pen
 - **Render and read every moved unit de-tagged, measuring chunk distance.** The body's one tier must be heard with its instruction.
 - **Review:** a rules-verifier on anything reworded, a safety-reviewer on the whole page, and a site-reviewer on the first pilot page (the new section, in-page anchors, amber runs).
 
+## Which pages, and what to move (owner, 8 November 2026)
+
+The second page, `forechecking_systems.md`, showed that the census order is the wrong way to choose pages. Moving its scattered "What it costs" paragraphs gained little:
+
+- prose words went **up** 0.8%;
+- spoken length fell 3.9%, and only because facts lines were deleted;
+- warning markers rose from 101 to 107.
+
+That page's coaching sections already led with coaching. Its heavy rules region is a whole section of book-by-book rules ("What your book allows when you get there"). The owner chose to go further on that page: fold that rules section into What it costs, and keep only its coaching in the body.
+
+So:
+
+1. **Choose pages by measured gain, not census order.** Before restructuring a page:
+   - measure where its rule-bearing units sit: `check_tactics_ratio.py --file <stem> --by-layer`, plus a read of its section list;
+   - restructure only where tariff is spread through coaching sections, as on the pilot, or where a rules section can move whole.
+2. **A whole rules section is in scope.** Its coaching sentences stay in the body. Its book-by-book tiers move into What it costs as subsections.
+3. **Watch the alarm density.** Each subsection lead keeps its ⚠️. A book bullet beneath it needs its own ⚠️ only if that bullet holds a paragraph's last marker, or states a mandatory or ejecting tier the lead does not.
+
 ## Pilot
 
 `systems/defensive_zone_coverage.md` comes first. It has nine "What it costs" paragraphs and the census mapped its 18 checking-from-behind sites (`reviews/census_restated_ladders_2026-11-08.md`). If the pilot reads better and loses no limb, `forechecking_systems.md` is next, then pages in the census order.

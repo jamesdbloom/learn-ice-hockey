@@ -1430,16 +1430,35 @@ const shotBlockGetClose = {
   // changes the chunking that the adjacency test was measured on, so re-render after cutting.
   // KEPT WORD FOR WORD: the ⚠️ technique sentence and posture list, the two-on-one, the screen case
   // and "commit fully ... or get out of the lane", which defender.md still voices nowhere else.
+  // ✂️ SHORTENED 8 November 2026 (SG208, 1,152 chars). Two hosts, body_contact_and_battles.md
+  // :1596 and defender.md :817, both rendered 8 Nov AFTER the cut (see the re-chunk warning
+  // above). ⚠️ THE PREMISE OF THE 15 SEPTEMBER RESTORATION NO LONGER HOLDS: it says the caption
+  // is voiced BEFORE the remedy because the marker sits above the facts block. In both hosts
+  // today the section's ```facts block sits ABOVE the marker, so the posture is voiced first.
+  // Cut, as a PAIR so no naked warning is left standing (the 15 September defect):
+  //   - "⚠️ The technique is the half that hurts you, and the picture leaves it out" and the
+  //     standing posture list. body_contact_and_battles.md voices the list in its facts block
+  //     directly before the marker (:1587-1588) and again, under its own ⚠️ "Protect what is not
+  //     padded", in the prose directly after (:1600-1602). defender.md voices it in its facts
+  //     block directly before the marker (:806-807) and under ⚠️ in the prose directly after
+  //     (:820-823), with the on-your-feet / once-down hand scope.
+  //   - the two-on-one sentence: body_contact_and_battles.md "Never: Block the shot on a
+  //     2-on-1 -- your job as the lone defender is the pass, and the goalie has the shooter"
+  //     (:1613, next chunk), a HIGHER tier; defender.md's facts Read line (:810).
+  // NOT CUT, though first cut in this wave: the coaching-choice close. A patched render showed
+  // the shorter caption moves into body_contact_and_battles.md's chunk 138, and the host's own
+  // Convention line (:1622) lands in chunk 140, two chunks on -- the exact re-chunk the 24 October
+  // note above records. defender.md voices it at :812, directly before the marker.
+  // The glyph moves onto the screen case, which is now the hazard the caption carries.
+  // KEPT WORD FOR WORD: the picture half, and the screen case with "commit fully ... or get out
+  // of the lane" -- defender.md still voices no "commit fully" sentence anywhere.
   caption:
     'Where to block a shot from, drawn in your own end with the net you are defending at the right ' +
     'and your goalie in its crease. An opposition defenceman has the puck at the point; the faint ' +
     'dashed line is its straight path to the middle of your goal, not a marking on the ice. ' +
     'Blocking from ten feet away is far more effective than blocking from three feet in front of ' +
     'your own goalie, where a deflection is a goal. ' +
-    '⚠️ The technique is the half that hurts you, and the picture leaves it out. On your feet: padded surfaces square to ' +
-    'the puck, shin guards front-on, head up and out of the shot lane, feet on the ice, hands ' +
-    'behind your body with the backs of the gloves out. On a two-on-one your job as the lone ' +
-    'defender is the pass and your goalie has the shooter. And from in front of your own ' +
+    '⚠️ From in front of your own ' +
     'goalie, do not block: a block adds a deflection to a shot they could not see, so get out of ' +
     'the lane and let them see it. Anywhere else, commit fully or get out, and the one thing you ' +
     'cannot do is stand half in the way with your eyes closed. How much your team blocks at all is a coaching choice, ' +

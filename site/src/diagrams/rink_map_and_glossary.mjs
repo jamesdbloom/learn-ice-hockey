@@ -415,6 +415,20 @@ const theTrapezoid = {
   // privileged area lets a goalie smother outside the crease with attackers coming.
   // ⚠️ "if THE TRAPEZOID binds", never "if it binds": the sentence is followed by a
   // suspension, and "it" read across that clause attaches to the suspension.
+  // ⛔ LEFT UNCHANGED 8 November 2026 (SG208, 1,232 chars), after rendering all four hosts.
+  // Every limb fails the "every host voices it near the marker" test in at least one host:
+  //   - the delay-of-game minor: how_to_watch_hockey.md (chunks 26-28) names the restricted
+  //     area but never the minor;
+  //   - skate contact "excuses playing ... never freezing": rink_map.md's chunk 21 voices the
+  //     exception without "never freezing"; only goaltender.md says it;
+  //   - the IIHF Handbook's two carve-outs and the centre-red-line bar: how_to_watch_hockey.md
+  //     voices neither; rules_primer.md voices no red-line bar near it;
+  //   - PWHL / Britain: rules_primer.md's PWHL and rink_map.md's British text are two chunks
+  //     away, past other material;
+  //   - "That suspension never touched where a goalie may freeze": only goaltender.md;
+  //   - save-then-cover and the 63.2(VII) crease limit: no host voices "bears down" anywhere
+  //     near, and how_to_watch_hockey.md voices neither.
+  // There is no narrative restatement left to cut; every sentence is a rule or boundary limb.
   caption:
     'The trapezoid: the goaltender’s restricted area behind the net — 22 ft wide at the ' +
     'goal line, widening to 28 ft at the boards, shaded here at NHL dimensions. Playing the ' +
