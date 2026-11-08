@@ -715,12 +715,19 @@ const delayedPenalty = {
   //     a warning": a note on the drawing, no rule or hazard; the `describe` and the header
   //     comment keep the reason.
   // KEPT: the warning pass itself, the safe route, the league check and its no-count disclosure.
+  // SG211, 8 November 2026: made book-neutral. "Under NHL Rule 78.5(xi) … can only score if your
+  // own team shoots the puck into your own net" became "can only score off your own team's play":
+  // the deflection question splits the books (USA Hockey 409(c) and Casebook 409 Situation 2 count
+  // a pass that deflects off an opponent; NHL/IIHF 78.5(xi), PWHL 80.5 and Hockey Canada 4.15(b)
+  // Interpretation 11 do not; CARHA 39(b) Note 2 covers only the no-contact case), and a caption
+  // cannot carry that split — rules_primer.md:674 and game_management.md:383 do. "blind" dropped
+  // from the pass: under USA Hockey a pass the passer can see still beats you off an opponent's
+  // stick, so the instruction is no pass across the front of your own goal at all.
   caption:
     'A delayed penalty, drawn in your own defending end — so the net in this picture is yours, and it ' +
     'is empty, because your goalie has already gone to the bench for a sixth attacker. ' +
-    'Under NHL Rule 78.5(xi) the team to be penalised can only score if your ' +
-    'own team shoots the puck into your own net. So the one pass that can beat you is a blind ' +
-    'defenceman-to-defenceman pass across the front of your own goal, and it is deliberately not ' +
+    'The team to be penalised can only score off your own team\'s play, so the pass that can beat you ' +
+    'is a defenceman-to-defenceman pass across the front of your own goal, and it is deliberately not ' +
     'drawn. The single route drawn is that same pass made the safe way, out and around behind your ' +
     'own net. Only the opponent nearest the puck is drawn. And check before the game rather than in ' +
     'it: not every league allows or practises pulling the goalie on a delayed call, and some ' +
@@ -736,7 +743,7 @@ const delayedPenalty = {
     'route leaves the puck carrier and runs to the other defenceman. It curves out and around the ' +
     'back of the goal, running four to six feet past the goal line for the whole of its middle ' +
     'third and never entering the crease. No route is drawn across the front of the goal, ' +
-    'deliberately: the blind pass across your own goal mouth is described in words and not drawn. The ' +
+    'deliberately: the pass across your own goal mouth is described in words and not drawn. The ' +
     'route is not numbered. No other players are drawn, and no region is shaded.',
 
   // ⚠️ NOT A SHADED REGION. `fill: 'none'` and `stroke: 'none'` together draw nothing

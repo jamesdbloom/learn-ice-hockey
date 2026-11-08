@@ -1122,14 +1122,14 @@ When your coach pulls you for an extra attacker, your job changes completely.
 ```facts
 Action: When the referee's arm goes up against them and your bench wants the extra skater, go once your team has the puck — shortest route, eyes on the play
 Convention: Whether you go at all is the bench's call, and plenty of recreational goalies stay in their net — find out what your team does before the arm goes up
-Risk: While you are off, the goal to fear is your own team's pass sliding back into your empty net, so agree that nothing goes back toward it
+Risk: While you are off, the goal to fear is your own team's pass sliding into your empty net, so agree that nothing goes back toward it or across its front
 Action: When play stops, get back in fast and rebuild your references — posts, paint, depth — before the faceoff
 ```
 
-The other team cannot score from open play while the referee's arm is up, because play stops as soon as they gain control of the puck, so the usual move is for you to skate to the bench and give your team a sixth attacker. **It is the bench's call rather than yours, and it is not automatic** — plenty of recreational goalies stay in their net, because the trip is longer than it looks and the extra skater is only worth having if somebody is ready to come on. **Find out what your team does before the arm goes up.**
+The other team cannot score off its own play while the referee's arm is up, because play stops as soon as they gain control of the puck, so the usual move is for you to skate to the bench and give your team a sixth attacker. **It is the bench's call rather than yours, and it is not automatic** — plenty of recreational goalies stay in their net, because the trip is longer than it looks and the extra skater is only worth having if somebody is ready to come on. **Find out what your team does before the arm goes up.**
 
 - **Go when your team has the puck, not before.** Take the shortest route, keep your eyes on the play as you skate, and take your stick with you — leave nothing near the net, for the reasons under *6-on-5 with your net empty* above.
-- **The one goal you can concede is one your own team scores.** The NHL's rule says it in terms: on a delayed call the offending team cannot score *"unless the non-offending team shoots the puck into their own net"* (Rule 78.5(xi)). A pass back toward your end that slides past everyone is heading for an empty goal, so tell your defencemen before the game that nothing goes back toward the net while you are off.
+- **Tell your defencemen before the game that nothing goes back toward the net while you are off.** The one goal you can concede is one your own team puts in, and a pass back toward your end that slides past everyone is heading for an empty goal. Under the NHL, IIHF, PWHL and Hockey Canada a deflection off an opponent does not count; ⚠️ **under USA Hockey it does**, and CARHA does not say, so play as if it would count. The [Rules Primer](../foundation/rules_primer.md#what-happens-if-you-score) has each book's rule.
 - **Coming back is the same as after an empty-net shift:** get in fast and rebuild your references before the faceoff.
 
 [Rules Primer](../foundation/rules_primer.md#what-to-do-as-a-player-during-a-delayed-penalty) has the delayed call itself and what your skaters do with the extra man.

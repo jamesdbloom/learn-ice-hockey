@@ -656,7 +656,7 @@ Read that condition carefully: **control**, not touch. A puck deflecting off a p
 
 ### Pulling the goalie
 
-Because play cannot be stopped until the offending team gains control, the non-offending team is **guaranteed possession or a stoppage**. There is no risk of a goal against from open play. So the goalie skates to the bench and the team plays with a **sixth attacker**.
+Because play cannot be stopped until the offending team gains control, the non-offending team is **guaranteed possession or a stoppage**. The other team's only way to score is a puck your own team puts into your net. So the goalie skates to the bench and the team plays with a **sixth attacker**.
 
 This is a tactic, not a rule, and this document has no count of how often teams do it. **Where the goalie is comfortable making the trip and the bench is ready, it is the standard play.** In adult rec hockey plenty of goalies stay in their net, because the trip is longer than it looks and a sixth attacker is only worth having if somebody comes off for the goalie. **So agree in the room what your team does** — the failure is a goalie setting off while nobody on the ice expects it.
 
@@ -671,12 +671,12 @@ Two rules that constrain it:
 - **Double minor:** one half is washed out; the player serves the remaining **two minutes** (Rule 18.2).
 - **Major and match penalties are imposed regardless** of whether a goal is scored (Rule 15.2).
 
-If the non-offending team, with their net empty, **puts the puck into their own goal**, that is a goal for the offending team and the delayed penalty is still assessed. In regular-season overtime this ends the game immediately in the offending team's favour (NHL 84.2, PWHL 86.2).
+If the non-offending team, with their net empty, **puts the puck into their own goal**, that is a goal for the offending team and the delayed penalty is still assessed. In regular-season overtime this ends the game immediately in the offending team's favour (NHL 84.2, PWHL 86.2). **Whether a pass that deflects off an opponent counts depends on your book.** Under the NHL, the IIHF and the PWHL it does not: the offending team *"cannot score unless the non-offending team shoots the puck into their own net"*, and a deflection off one of its players *"shall not be considered a legal goal"* (NHL and IIHF 78.5(xi), PWHL 80.5). Hockey Canada rules the same way (4.15(b), Interpretation 11). ⚠️ **Under USA Hockey it counts** — your pass that deflects off an opponent into your own empty net is a goal (Rule 409(c); Casebook 409, Situation 2). CARHA allows the goal where it goes in *"through no contact by the offending team"* (39(b) Note 2) and says nothing about one an opponent touched — by deflection or by checking your stick — so play as if it would count.
 
 ### What to do as a player during a delayed penalty
 
 - **Look for your bench immediately.** The moment you see the referee's arm go up and you are not directly involved in the play, the extra attacker is coming and someone has to come off. If you are the closest player to the bench and not part of the immediate play, you are the one.
-- **Keep the puck.** The single rule of a delayed penalty is: **do not give the offending team control.** That means no risky cross-ice passes through the middle, no blind dumps that they will simply pick up.
+- **Keep the puck.** The single rule of a delayed penalty is: **do not give the offending team control.** That means no risky cross-ice passes through the middle, no blind dumps that they will simply pick up, and no pass across the front of your own empty net.
 - **Do not force a shot from a bad angle** just to "use" the extra man. A shot that misses and rims around is exactly how the offending team gains control and ends your six-on-five for a two-minute five-on-four instead. A missed shot that they collect has cost you the better of the two options.
 - **Regroup if the zone is not open.** Take it back to your own end if you have to. You have the puck and they cannot force a whistle without taking it from you.
 - **Six attackers changes the shape, not the principles.** Where the extra skater goes is a coaching choice, and nobody has measured which shapes teams run ([Special Teams](../systems/special_teams.md)). Keep the puck, no blind plays, no forced shots — and **find out where your team puts the sixth attacker before you are that player.** See also [Offensive Zone Play](../systems/offensive_zone_play.md).

@@ -21,7 +21,7 @@
 
 **Pull the goalie earlier than feels natural.** Down two with four or five minutes left is normal. With six on, get set up, put pucks to the net with a body in front who stays off the goalie, and never pinch both point men.
 
-**On a delayed penalty, get the extra attacker on at once.** Play stops when the other team controls the puck, so the goalie goes as the referee's arm rises. Make no blind pass across your own goal — you are the only team that can score on it. Not every league allows it, so agree it beforehand.
+**On a delayed penalty, get the extra attacker on at once.** Play stops when the other team controls the puck, so the goalie goes as the referee's arm rises. Make no pass across the front of your own empty net — you are the only team that can score on it. Not every league allows it, so agree it beforehand.
 
 **Once your goalie is pulled, take no penalty in your own end.** A foul that would have cost a penalty shot becomes an awarded goal. With a loose puck in your crease, knock it straight down — holding it is what costs you.
 
@@ -369,18 +369,18 @@ If you are trailing *and* on a power play, pulling the goalie creates a 6-on-4. 
 ```facts
 Action: Goalie goes to the bench immediately at the first sign of the referee's arm going up against the other team — every second is a free attacker
 Action: The extra attacker jumps from the bench as the goalie arrives
-Never: Blind D-to-D passes across your own crease during a delayed call
+Never: Any pass across the front of your own empty net during a delayed call
 Rule: On a delayed penalty the referee raises an arm and play continues until the team to be penalised gains control of the puck (NHL Rule 15.1)
-Rule: During a delayed penalty the offending team cannot score unless you shoot the puck into your own net (NHL Rule 78.5(xi))
+Rule: On a delayed call the penalised team scores only if you put it in your own net; a deflection off one of them counts under USA Hockey (409(c), Casebook 409 Situation 2) but not under the NHL, IIHF, PWHL or Hockey Canada (NHL 78.5(xi), HC 4.15(b)); CARHA does not say, so assume it counts
 Action: Keep the puck away from the offending team; do not force a low-percentage shot that could be smothered
 Risk: A shot that misses and rims to an opponent ends the sequence
 ```
 
 This is the one time you get an extra attacker for free, and amateur teams waste it constantly.
 
-Under **NHL Rule 15.1**, when a player on the team *not* in control of the puck commits a penalty, the referee **raises an arm and delays the call**; play continues until **the team to be penalized gains control of the puck**. So the moment the arm goes up, your goalie can skate to the bench and you play 6-on-5 with **no empty-net risk** — because the offending team cannot score.
+Under **NHL Rule 15.1**, when a player on the team *not* in control of the puck commits a penalty, the referee **raises an arm and delays the call**; play continues until **the team to be penalized gains control of the puck**. So the moment the arm goes up, your goalie can skate to the bench and you play 6-on-5 with **almost no empty-net risk** — because the offending team cannot score off its own play.
 
-The one exception is a genuine own goal: under **Rule 78.5(xi)**, during a delayed penalty the offending team cannot score **unless the non-offending team shoots the puck into their own net.** A deflection off an opponent doesn't count; your own defenceman ringing it off your own goalie does. So: no blind D-to-D passes across your own crease during a delayed call.
+**But make no pass across the front of your own empty net during a delayed call** — D-to-D or otherwise — the one goal you can concede is one your own team puts in, such as your own pass sliding into your empty net. Whether a pass that deflects off an opponent counts depends on your book: under the NHL, the IIHF, the PWHL and Hockey Canada it does not. ⚠️ **Under USA Hockey a deflection off an opponent counts** — your pass that clips an opponent on its way into your empty net is a goal (Rule 409(c); Casebook 409, Situation 2). CARHA does not say, so play as if it would count; the [Rules Primer](../foundation/rules_primer.md#what-happens-if-you-score) has each book's rule. **So under USA Hockey — and, to be safe, under CARHA — any pass near your crease with an opponent close by can beat you.**
 
 
 > **"Delayed penalty" names two different things, and only one of them means
@@ -1234,7 +1234,7 @@ Three practical habits:
 - **Letting your goalie freeze a dump-in when your line is stuck out.** Get to it first and move it. The whistle gives you an own-end draw with the same tired five. ⚠️ **Under the NHL, the IIHF and the PWHL, a freeze on a puck shot in from the attackers' own side of centre bars your change just as icing does, with no pulled-goalie exception** — though an injured player can still be replaced. See [Time-outs, icing, and what the evidence says](#time-outs-icing-and-what-the-evidence-says).
 - **Icing the puck to get a whistle.** Chip it past the forechecker instead: you lose it far from your net and still get your change. Ice it and you get an own-end draw with five tired players, ⚠️ **and under the NHL, the IIHF and the PWHL no change and no time-out** — a hurt teammate may come off; a tired one may not. Not every book prices it that way; see [The icing trap](#the-icing-trap).
 - **Waiting until 1:00 to pull the goalie.** Go earlier — down two with four or five minutes left is normal, not desperate. Beaudoin and Swartz report that every earlier analysis they review, back to the first in 1976, finds a one-minute pull too late.
-- **Not knowing the delayed-penalty freebie.** When the arm goes up against them, get the goalie off at once and send the sixth skater as the goalie arrives. They cannot score unless you put it in your own net. Not every league allows it, so agree it beforehand.
+- **Not knowing the delayed-penalty freebie.** When the arm goes up against them, get the goalie off at once and send the sixth skater as the goalie arrives. They cannot score unless you put it in your own net, so make no pass across the front of your own empty net. Not every league allows it, so agree it beforehand.
 - **Shooting from anywhere in 3-on-3 overtime.** Without a genuine look, regroup and come again. A miss is a 3-on-2 the other way.
 - **Forcing a zone entry in the last minute of a period.** Get it deep and finish the period there. A turnover at their blue line with 20 seconds left is a 2-on-1 you won't recover from, with no time to answer.
 - **Holding a loose puck in your own crease with your net empty.** Knock it straight down and keep your hand off it — a hand over the puck counts as holding it in several books, and catching it and dropping it outside the crease has still been ruled a goal under the IIHF. With a goalie in net, holding it is a penalty shot; ⚠️ **with the net empty it is an awarded goal** — on the bare fact in most books, under USA Hockey where it prevented an obvious and imminent goal, and CARHA writes it both ways, so treat any cover as the goal. See [Catching a loose puck in your own crease](#catching-a-loose-puck-in-your-own-crease).
@@ -1294,7 +1294,7 @@ document, that is named too.*
 1. **Protecting a lead, play actively.** Manage the puck, take away the middle, shorten shifts and win your own-end draws. Passive is not the same as safe. Expect to be outshot: leading teams shoot less, which is why analysts score-adjust shot counts.
 2. **Trailing, add risk in order** — neutral-zone speed and support, then a harder forecheck, a pinch, a defenceman into the rush, then the goalie — scaled to the clock and the deficit, not your emotions. Down three with ten minutes left, go hard now. Somebody is always the last player back.
 3. **Pull the goalie sooner than feels comfortable** — down two with four or five minutes left is normal. With six on, get set up, keep a body in front who stays off the goalie, move it first-touch, and never pinch both point men.
-4. **On a delayed penalty the extra attacker is free.** They cannot score unless you put it in your own net, so the goalie goes as the arm rises and the sixth skater jumps as the goalie arrives. Make no blind pass across your crease, and agree it beforehand — not every league allows it.
+4. **On a delayed penalty the extra attacker is free.** They cannot score unless you put it in your own net, so the goalie goes as the arm rises and the sixth skater jumps as the goalie arrives. Make no pass across the front of your own empty net, and agree it beforehand — not every league allows it.
 5. **Last change works only at stoppages**, so on the road, match on the fly. ⚠️ **With your line stuck out, beat your goalie to a dump-in and move it:** under the NHL, the IIHF and the PWHL your goalie's freeze of a puck shot in from the attackers' half bars your change, except to replace an injured player.
 6. **A bad change costs three things** — a man short, a hole where the departing player's job was, and a teammate joining blind. Go with the puck heading north, after a dump-in or after a clear. Never when they have it in your zone, never as the last player back, and not in a period's last minute.
 7. **Pinned with a tired line, chip it out — never ice it for a rest.** You lose the puck far from your net and still change. Ice it and you get an own-end draw with the same five, and under the NHL, the IIHF and the PWHL no change (except for an injury) and no time-out.
