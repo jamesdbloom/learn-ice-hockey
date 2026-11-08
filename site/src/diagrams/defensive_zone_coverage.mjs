@@ -400,29 +400,26 @@ const collapseCorner = {
     '⚠️ The second body is the one that arrives late and unseen, and this carrier has the puck ' +
     'at their stick against the boards, with their back to the ice. ' +
     'Arrive on the puck, or on the ice the carrier wants, or angle them off it — never into their back. ' +
-    // W33: PWHL added — pwhl_rules.txt 43.2 "There is no provision for a minor penalty for
-    // checking from behind", 43.5 game misconduct mandatory with the major. CARHA 53(a) starts
-    // at a minor plus a game misconduct, so "two minutes alone" still holds in all six books.
-    'No book prices checking from behind at two minutes alone: under the NHL, the IIHF and the ' +
-    'PWHL there is no minor for it at all, so the floor is a major and an ejection. ' +
-    // 31 Oct 2026: the two books the sentence above left unpriced for THIS picture. CARHA
-    // 53(a)'s floor is a minor plus a GAME misconduct (carha_2026.txt:2605-2612), so every
-    // tier ejects; USA Hockey Casebook 608 Situation 1 makes a forceful check on a player
-    // "standing along the boards (back toward the middle of the ice)" a major plus game
-    // misconduct or a match (usah_casebook.txt:11765-11768) — this carrier exactly.
-    // Hockey Canada 7.5(a)'s floor is likewise a minor plus a game misconduct (hc.txt:6165-6167).
-    // 5 Nov 2026 (owner: name the Hockey Canada / CARHA penalty, never "eject"): "at least" keeps
-    // the mandatory match (HC 7.5(c), CARHA 53(b), USA Hockey Casebook 608 Sit. 1) inside the floor.
-    'Hockey Canada and CARHA give at least a game misconduct every time, and so does USA Hockey for a forceful hit on a player ' +
-    'along the boards like this one. ' +
-    // 5 Nov 2026: HC 7.5(c) and CARHA 53(b) make a MATCH mandatory ("will be assessed" /
-    // "shall be assessed") for a hit from behind INTO THE BOARDS on a player "unable to protect
-    // or defend themselves" (hc.txt 7.5(c); carha.txt / carha_2026.txt Rule 53(b)) — this picture.
-    // 6 Nov 2026: declarative, not an imperative a listener could catch as an instruction.
+    // SG207 safety review (8 Nov 2026): the base-shape body carries 'in most books ends your game' but NOT the
+    // mandatory Hockey Canada 7.5(c) / CARHA 53(b) match for this exact picture; restored here verbatim from HEAD.
     'A hit from behind into the boards on a player who cannot protect themselves is a match under Hockey Canada and CARHA. ' +
+    // ⚠️ 8 November 2026 (1,311 chars): THE BOOK-BY-BOOK TARIFF IS CUT, AND THE PRECONDITION THE
+    // NOTE ABOVE SETS FOR CUTTING IT IS NOW MET. That note said the safety unit could go only once it
+    // had been "routed into the body of §'The base shape' FIRST". It has been: the 1ea630d4
+    // restructure put the instruction AND its price in the base-shape body --
+    // defensive_zone_coverage.md:179 "if you can see their numbers, pull up ... never finish into a
+    // back. Checking from behind is never just two minutes (under Hockey Canada, while it stays off
+    // the head), and in most books ends your game — under USA Hockey too, if forceful at the boards,
+    // head first into boards or net, or reckless" (facts :166) -- and the full ladder, including the
+    // Hockey Canada / CARHA mandatory match for a defenceless player into the boards, in
+    // §"What it costs → A hit from behind" (:740-743). Render (md_to_speech, 8 Nov): the base-shape
+    // price is chunk 010, this caption chunk 013. The IIHF women's pinning clause is cut on the same
+    // ground (:177, facts :163). KEPT: arrives late and unseen, the three legal arrivals, "never into
+    // their back", and the pin instruction, each still under a glyph.
+    // The cut also removes "so the floor is a major and an ejection", which OPEN_ITEMS records as
+    // unwritten for a non-reckless IIHF check (43.3 discretionary) -- not repaired here, just gone.
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
-    'joining a pin, and in IIHF women’s hockey pinning an opponent along the boards is an ' +
-    'illegal hit. ' +
+    'joining a pin. ' +
     'This is frame one of two, not a shape to hold. ' +
     // ⚠️ FULL STOP, NOT AN EM DASH — AND THIS ONE INVERTS NON-NEGOTIABLE 7 ITSELF.
     // This ran "…reading bodies, not areas — ask your coach which your team plays". The

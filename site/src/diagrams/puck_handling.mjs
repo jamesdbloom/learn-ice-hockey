@@ -788,15 +788,21 @@ const youCannotBeatTwo = {
     // still live, so a listener can hear "not protect the puck, not take the contact". The
     // negation predicates of the DIAGRAM rather than of the reader, which is why it is the
     // milder end of the class, but the tail is the instruction and the fix is one character.
-    'first defenceman. There is a third option in this section and it is not drawn. Outside your ' +
-    'own end, protect the puck, take the contact and wait a second for support. Standing still has no symbol here. ' +
-    'Read this as one instant and not as a promise: the teammate ' +
-    'shows what "left open" means, not that they will be there. The two opponents’ shapes were ' +
-    'forced by the notation; the section says ' +
-    'only that a second defender is arriving. ' +
+    // SHORTENED 8 November 2026 (1,267 chars). Cut: the third option's instruction ("protect the
+    // puck, take the contact and wait a second for support"), voiced verbatim in the list and the
+    // facts block directly above the marker (puck_handling.md:900, :893) -- the caption now only
+    // says it is not drawn, keeping its "outside your own end" scope; "Standing still has no
+    // symbol here" and the note that the opponents' shapes were forced by the notation (picture
+    // provenance a player does nothing with); "the override in this document outranks all of it"
+    // (a pointer). KEPT: the "not a promise" note on the teammate, the protect-is-not-a-place-to-
+    // live warning, and the whole wall limb -- this host voices it nowhere near the marker
+    // (nearest :858, a different section), so it is not demoted here.
+    'first defenceman. The third option, protecting the puck outside your own end, is not drawn. ' +
+    'The teammate ' +
+    'shows what "left open" means, not that they will be there. ' +
     '⚠️ And protecting is a way to buy a second, not a place to live: every second you hold the ' +
-    'puck under pressure another checker is arriving. If this drifts to the boards, the override in ' +
-    'this document outranks all of it — never turn your back to anyone coming at you and never duck, and ' +
+    'puck under pressure another checker is arriving. If this drifts to the boards, ' +
+    'never turn your back to anyone coming at you and never duck, and ' +
     'neither prohibition is a rule for fast checkers only. Skates parallel to the wall, forearm and ' +
     'hip, head up and chin off your chest' + SHOULDER_TAIL,
 

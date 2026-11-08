@@ -266,7 +266,12 @@ const dzoneAlignment = {
     'keeps both skates outside the circle and the hash marks. ⚠️ If you are not taking the ' +
     'draw, keep your skates and stick behind your own hash mark, your skates off the circle ' +
     'line, and your hands, body and stick off the opponent beside you and off their stick: that satisfies every book. ' +
-    'Touching the line is not safe in every book. The NHL, the IIHF and the PWHL allow a skate on ' +
+    // 8 November 2026: "Touching the line is not safe in every book." cut -- it announced the
+    // sentence that follows, which states the same split book by book. Nothing else could go: of
+    // seven hosts only winger.md (facts :580-582) and rink_map.md (:270, 76.7(ii) only) voice any
+    // encroachment rule beside the marker; center.md, defender.md and game_management.md voice
+    // none, and how_to_watch_hockey.md:266 sends the reader to THIS caption for the circle-line split.
+    'The NHL, the IIHF and the PWHL allow a skate on ' +
     'the line and make crossing it the violation (NHL and IIHF Rule 76.7, PWHL Rule 78.7); ' +
     'Hockey Canada and CARHA count a skate on the circle as encroachment; and USA Hockey’s ' +
     'Casebook requires all sticks and skates completely behind the hash marks. ' +
@@ -722,8 +727,17 @@ const whereTheDrawGoes = {
     'situations, not one play. Your own end is at the left. At centre ice: the start of every ' +
     'period, and every draw after a goal. In your own end: an icing you caused, or a penalty you ' +
     'took. Only one of the two spots there is boxed, because the rule names the END, not the dot. ' +
-    'Under the NHL and the IIHF the attacking team — your opponents here — picks which dot. USA ' +
-    'Hockey gives no choice of dot at all, and Hockey ' +
+    // ⚠️ SHORTENED AGAIN 8 November 2026 (1,274 chars). HOST CHANGE since 24 October: rules_primer.md
+    // now voices the Hockey Canada and USA Hockey dot-choice limbs in the paragraph directly after the
+    // marker (rules_primer.md:925 -- HC 6.4(b) "only in Junior and Senior, after an icing or a time
+    // penalty, and only if you name the dot before the change"; "USA Hockey and CARHA give none"), and
+    // faceoffs.md voices both in the facts block directly after it (:151-152). So the USA Hockey / HC
+    // dot-choice sentence is cut; the NHL/IIHF clause stays because its "your opponents here" gloss
+    // applies the rule to the picture. The comment on HC 6.4(b) below records why that sentence once
+    // said "they": it is kept for the reasoning, the sentence itself is gone. KEPT: the USA Hockey
+    // last-play / attacker-caused limb, because rules_primer.md voices no 612 anywhere near the marker;
+    // and the shot-or-passed offside limb, because rules_primer.md carries it only in a table.
+    'Under the NHL and the IIHF the attacking team — your opponents here — picks which dot. ' +
     // ⚠️ THIS SAID "only if YOU tell the referee", in a caption whose own framing is
     // "an icing you caused, or a penalty you took". HC 6.4(b) gives the choice to the
     // "attacking (non-offending) team" (hc.txt:4857), so in the situation DRAWN it belongs
@@ -732,8 +746,7 @@ const whereTheDrawGoes = {
     // faceoffs.md IN THIS SAME ROUND, and left standing here. The clause immediately above
     // already said "the attacking team chooses" for the NHL and IIHF, so the caption also
     // contradicted itself.
-    'Canada gives it to the attacking team in Junior and Senior only, and they lose it unless ' +
-    'they tell the referee before the line change procedure starts. Outside the blue line you ' +
+    'Outside the blue line you ' +
     'were attacking: an offside where the puck was carried over. A puck SHOT or PASSED over the ' +
     'line offside goes back to the zone it came from instead, which can be your own end. In the ' +
     'end you are attacking: a goalie freeze, or any other stoppage between the end-zone dots and ' +
@@ -857,15 +870,19 @@ const strongSideDot = {
     'goes to a fixed side of your own body and therefore to the same side of the ice at both circles.' +
     ' At one circle that carries the puck toward the boards, the safest place it can go; at the other' +
     ' the identical motion carries it toward the middle, and a defensive-zone draw won into the slot ' +
-    'is barely better than a loss. That is the self-test: your strong side is the circle where your ' +
-    'natural backward pull sends the puck toward the boards. Coaching sources state it as a ' +
-    'handedness rule instead, but they do not spell out the reference frame they mean, so no ' +
-    'handedness is drawn here and none should be read into it. It is also what makes a choice of dot ' +
+    // SHORTENED 8 November 2026 (1,244 chars). Cut: the self-test sentence and the reason no
+    // handedness is drawn -- both voiced in the paragraph directly above the marker
+    // (faceoffs.md:389, the Flagged note: the sources give no reference frame, and the self-test
+    // verbatim; facts :374). The "no handedness drawn" picture disclosure is kept. KEPT IN FULL: the
+    // book-by-book choice of dot, because the only host voices nothing book by book near the marker
+    // (:394 says only that the rules letting you choose are "worth more than they look").
+    // The picture disclosure moved to the end so "That difference" keeps its antecedent.
+    'is barely better than a loss. That difference is what makes a choice of dot ' +
     'worth more than it looks — and only some books give one: the NHL and the IIHF to the team that ' +
     'did not cause the stoppage, USA Hockey none at all, and Hockey Canada only after an icing or a ' +
     'time penalty, only in Junior and Senior divisions, and only to the attacking non-offending team,' +
     ' which loses it unless it tells the referee the dot it wants before the line change procedure ' +
-    'starts (Rule 6.4(b)).',
+    'starts (Rule 6.4(b)). No handedness is drawn here and none should be read into it.',
 
   describe:
     'The defending half of the rink, your own net and goalie at the right, both end-zone ' +

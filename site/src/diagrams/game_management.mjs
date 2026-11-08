@@ -434,13 +434,21 @@ const clearAtFiveOnSix = {
     'up and on target, it is a goal, and a puck that goes in is not icing. A miss that ' +
     'crosses their goal line untouched from your side of the centre red line is icing. A blind ' +
     'clear to their point man hands it back at your own blue line. Only the puck carrier, one ' +
-    'of their point men and the two nets are drawn. ⚠️ You can be iced against a pulled goalie: ' +
-    'six against six is equal strength, and NHL Rule 81.3 does not cancel an icing just because ' +
-    'their goalie is heading to the bench. Under the NHL and the IIHF the draw then comes back to your ' +
-    'end, the attacking team picks the dot, you cannot change, and you cannot take a time-out at ' +
-    'all. Rule 81.4 lets you change only to replace an injured player (or, under the IIHF, one ' +
-    'with a broken skate) or for a penalty that changes the strength; its goalie exception belongs to the team that pulled theirs, not you. USA Hockey ' +
-    'puts no substitution limit on an icing, and Hockey Canada has one only in the categories ' +
+    'of their point men and the two nets are drawn. ⚠️ You can be iced against a pulled goalie. ' +
+    // SHORTENED 8 November 2026 (1,252 chars). Cut, each voiced in the facts block directly after
+    // the marker and in the bullets below it: why six against six is equal strength and 81.3 keeps
+    // the icing (game_management.md facts :415, bullet :427); the NHL/IIHF draw-dot-no-change-no-
+    // time-out consequence (facts :416, bullet :427); USA Hockey's lack of any limit (facts :416,
+    // "USA Hockey imposes none of the three"). KEPT: the 81.4 exceptions with the goalie exception
+    // pointed at the right team, and Hockey Canada's 6.7(d) categories -- the host voices both only
+    // ~200 lines earlier, in "The icing trap" (:199-220), and :427 just says "the narrow exceptions
+    // above". "Under the NHL and the IIHF" now opens the 81.4 sentence so it keeps its book scope.
+    // SG207 rules review (8 Nov 2026): IIHF 81.4 names a broken skate but 82.1 (which names icing) does not, and the
+    // Situation Handbook (81.7, 63.32) gives no broken-skate exception; the host says not to plan on it. Hedged.
+    'Under the NHL and the IIHF, Rule 81.4 then lets you change only to replace an injured player ' +
+    "(the IIHF's 81.4 also names a broken skate, but its 82.1 does not, so do not count on it) " +
+    'or for a penalty that changes the strength; its goalie exception is for a team putting back its own pulled goalie, not for you. ' +
+    'Hockey Canada has a substitution limit only in the categories ' +
     'its Rule 6.7(d) names — U18AAA, Junior, and Senior at the Member’s option — so find out ' +
     'which rules your league runs.',
 

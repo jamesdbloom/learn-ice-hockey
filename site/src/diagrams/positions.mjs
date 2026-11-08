@@ -1206,12 +1206,17 @@ const wingerDzReverse = {
   caption:
     'Beating a checker who has over-committed, in your own end — the other half of the rim-or-reverse' +
     ' decision. The checker has not sealed you: they have skated past you up the wall, carrying their momentum with' +
-    ' them. The ice they have just left is behind you, so the play that beats them is a REVERSE — the puck' +
-    ' sent back the way it came, against the direction the pressure is flowing, to a teammate ' +
-    'arriving behind you. Read which of the two you are facing before the puck arrives, because the ' +
-    'plays are opposites and the wrong one hands them the puck in your own end. Feet wide and moving, ' +
-    'side-on with your hip and backside toward the checker, puck on the far side of your body — a stationary player on the wall gets ' +
-    'pinned whichever mistake the checker is making. Call for it — "reverse!" — because the teammate ' +
+    // SHORTENED 8 November 2026 (1,262 chars). Cut, each voiced beside the marker in BOTH hosts:
+    // the gloss on what a reverse is (winger.md:113, :115; passing_and_receiving.md facts :189 and
+    // the table at :200-205); "read which of the two you are facing before the puck arrives"
+    // (winger.md:115-117; passing_and_receiving.md:207). Cut as technique, not safety: "feet wide
+    // and moving, side-on ..., puck on the far side" (winger.md:125-129 directly after the marker;
+    // passing_and_receiving.md does not voice it, and it is puck protection, not a hazard).
+    // KEPT IN FULL: the whole wall limb under the glyph -- passing_and_receiving.md:213 tells its
+    // reader that "the wall-contact warning both captions carry" applies, so the caption must
+    // carry it, and that host voices neither never-turn/never-duck nor "not the whole shoulder".
+    ' them. The ice they have just left is behind you, so the play that beats them is a REVERSE to a teammate ' +
+    'arriving behind you. Call for it — "reverse!" — because the teammate ' +
     'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
     'back to anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot' +
     ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +

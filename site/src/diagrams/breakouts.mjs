@@ -360,16 +360,21 @@ const reverse = {
     'where D2 is arriving, and calling for it, because D1 is putting the puck somewhere they cannot ' +
     'see. The play depends entirely on the forechecker’s momentum, so read the opponent above D1 as a' +
     ' player already past them and unable to stop. The puck is a hard backhand banked off the wall, ' +
-    'drawn simply as the pass it is because the drill notation has no symbol for a banked puck. Keep ' +
-    'it straight from the rim: a rim goes onward around the boards in the direction the puck was ' +
-    'already travelling, a reverse goes back ' +
+    'drawn simply as the pass it is because the drill notation has no symbol for a banked puck. ' +
+    // SHORTENED 8 November 2026 (1,245 chars). Cut: "Keep it straight from the rim: a rim goes
+    // onward ..., a reverse goes back against it" -- every one of the four hosts voices the
+    // rim/reverse distinction beside the marker: breakouts.md facts :364 and :377,
+    // time_and_space.md:92, goaltender.md:864, defender.md:134. Nothing else could go: the
+    // containing-forechecker counter is voiced only in breakouts.md, and goaltender.md voices no
+    // wall limb at all, so the short limb below stays.
+
     // ⚠️ PRE-EXISTING NEGATION INVERSION, found while cutting and fixed rather than carried.
     // This read "A containing forechecker who steers rather than chases is never past you to
     // begin with, and beats it." The main-clause negation sits immediately before ", and",
     // so it carries onto the tail and a listener hears that the containing forechecker does
     // NOT beat the reverse — which deletes the counter this sentence exists to give. Stating
     // the limit first and ending on the negation makes it un-invertible.
-    'against it. And it beats one kind of forecheck only. A containing forechecker steers rather than' +
+    'The reverse beats one kind of forecheck only. A containing forechecker steers rather than' +
     ' chases, so they are never past you to begin with. ' +
     // SAFETY LAST, after the negation sentence above deliberately: the renderer ambers from the
     // first ⚠️ glyph to the end of the caption with no closing delimiter, so a limb placed before

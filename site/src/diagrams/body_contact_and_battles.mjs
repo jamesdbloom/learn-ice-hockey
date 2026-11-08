@@ -891,18 +891,25 @@ const angleIntoTheCorner = {
   // limbs and the sentence boundary before "Knees bent", and Case 3 VERBATIM (skating voices none).
   // The ⚠️ now opens the never-turn sentence itself. The two measured angles (twenty-two and
   // fifty degrees) are cut as picture narrative; they are in no host and carried no limb.
+  // ⚠️ SHORTENED AGAIN 8 November 2026 (1,286 chars). Cut, each voiced beside the marker in BOTH
+  // hosts: the angling-in reasoning ("helmet first ... a leg, a side or an arm") -- skating.md:141
+  // and facts :132, body_contact_and_battles.md:908, the paragraph directly above the marker in
+  // each; the "in every league, checking or not, and at any speed" scopes -- skating.md:143 and
+  // facts :134, body_contact_and_battles.md:902; Case 2's shoulder limbs and "knees bent, head up
+  // and chin off your chest" -- skating.md facts :137, body_contact_and_battles.md:914-916, the
+  // paragraphs directly after the marker (and :912 says no rink diagram can show the posture).
+  // Kept: the picture, the three-case count with its provenance disclosure, the chip/rim/reverse
+  // option, never turn / never duck under the glyph, Case 2's instruction, and Case 3 VERBATIM,
+  // because skating.md voices no Case 3 -- it only points here.
   caption:
     'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
     'drawn. It sets off pointed at the corner and finishes running along the boards. ' +
-    'That is the first and best of three cases for meeting a wall: on an angle, the risk of hitting ' +
-    'the boards helmet first is greatly reduced, because a leg, a side or an arm takes most of the ' +
-    'impact. The cases come from USA Hockey\'s material; the ordering and the ranking do not. ' +
+    'That is the first and best of three cases for meeting a wall. ' +
+    'The cases come from USA Hockey\'s material; the ordering and the ranking do not. ' +
     'Better still, a chip, a rim or a reverse decided before you arrive takes you out of the ' +
-    'collision. \u26A0\uFE0F Never turn your back to anyone coming at you, and never duck, in every ' +
-    'league, checking or not, and at any speed. ' +
-    'Get your skates parallel to the wall and take it on your ' +
-    'forearm and hip, not the point of your shoulder, and not the whole shoulder if you can help ' +
-    'it. Knees bent, head up and chin off your chest. That is the second case. The third is what is ' +
+    'collision. \u26A0\uFE0F Never turn your back to anyone coming at you, and never duck. ' +
+    'Get your skates parallel to the wall and take it on your forearm and hip: that is the ' +
+    'second case. The third is what is ' +
     'left when turning is already impossible, and it is damage limitation rather than the position ' +
     'to aim for. USA Hockey asks you to turn your skates parallel if at all possible before you ' +
     'settle for it. Then get your stick and gloves up and spread out on the glass, arms out as a ' +
