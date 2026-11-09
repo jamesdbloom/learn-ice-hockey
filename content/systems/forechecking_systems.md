@@ -957,6 +957,8 @@ The penalties behind the instructions above, one hazard at a time. Each part ope
 
 ### A hit from behind
 
+**If you can see their numbers, pull up and play the puck: take the puck, take the ice, or angle them off it.** Called as checking from behind, that hit ends your game in every book but USA Hockey — under Hockey Canada, while it stays off the head (set out below); under the IIHF, plan on it. ⚠️ **Into the boards or goal frame on a player who cannot protect themselves, Hockey Canada and CARHA must make it a match, and a hit meant to injure is a match in every book but the IIHF. The IIHF has no match penalty: there the only price is a major and automatic game misconduct (43.3), with supplementary discipline possible (43.4).**
+
 ```facts
 Rule: Hockey Canada prices a hit from behind that reaches the head as head contact, which "supersedes any other rules" (7.6; 7.7 in Junior and Senior); driven head first into the boards or frame, plan on the harsher of that and 7.5; a match if they cannot protect themselves or it was meant to injure
 Rule: The boarding onus is weighed, not absolute — NHL, IIHF and PWHL 41.1 and Hockey Canada 7.2 let the referee weigh whether the opponent made themself vulnerable or the check was unavoidable; USA Hockey 603 and CARHA 49 write no such balance. Never rely on it: arrive as though it were absolute
@@ -967,8 +969,6 @@ Rule: A hit from behind into the boards or net on a player who cannot protect or
 Rule: Behind them, play the puck — under USA Hockey a minimal pinch from behind at the boards is a minor and misconduct; forceful on a player along the boards, reckless or head first, it ejects; excessive force on a defenceless player, a mandatory match (Casebook 608 Sit. 1; 608(c))
 Rule: Hockey Canada excuses only accidental, marginal contact while playing the puck that endangers nobody, or a low-speed, minimal-impact pin on the boards — the pin not at U13 and below, in female hockey or any Member-approved division, where 7.3 applies (7.5(a) Interpretation 3)
 ```
-
-**If you can see their numbers, pull up and play the puck: take the puck, take the ice, or angle them off it.** Called as checking from behind, that hit ends your game in every book but USA Hockey — under Hockey Canada, while it stays off the head (set out below); under the IIHF, plan on it. ⚠️ **Into the boards or goal frame on a player who cannot protect themselves, Hockey Canada and CARHA must make it a match, and a hit meant to injure is a match in every book but the IIHF. The IIHF has no match penalty: there the only price is a major and automatic game misconduct (43.3), with supplementary discipline possible (43.4).**
 
 - **Under USA Hockey.** **Pull up here too — the softer floor does not reach this play.** 608(a) starts at a minor plus a misconduct, and its Casebook (Rule 608, Situation 1) keeps that for an open-ice push *"not near the boards"* or a *"minimal"* pinch against the wall. A major plus game misconduct, or a match, *"must be called"* whenever a player *"forcefully checks an opponent who is standing along the boards"* — precisely the player your dump-in created — and 608(b) makes a check from behind that is reckless, or sends them head first into the boards or goal frame, a major plus a game misconduct. For a reckless one, or one meant to injure, plan on a match and a likely multi-game suspension (602(a)). ⚠️ **608(c) makes the match mandatory** for a reckless check *"with excessive force while the opponent is in a vulnerable or defenseless position"*, with a likely multi-game suspension.
 - **Once it reaches the head, under Hockey Canada.** Where a hit reaches the head, ⚠️ **Hockey Canada prices it as head contact**, which *"supersedes any other rules"* (7.6). In minor and female hockey (7.6) that is a minor if accidental and a double minor if intentional, with a third in one game a Game Ejection. A major plus game misconduct is at the referee's discretion on violence alone, and mandatory if they are hurt or it was a cross-check above the shoulders. A **match penalty** follows if they could not protect or defend themselves or you meant to injure them. In Junior and Senior hockey (7.7) it is a minor plus a ten-minute misconduct at a moderate degree of violence, a major plus game misconduct at a high one, for a cross-check above the shoulders, or where their head hits the glass, ice or boards and is injured, and a match on the same two grounds. Driven head first into the boards or goal frame, plan on the harsher of the two prices — this document's reading, because 7.5 names that very hit.
@@ -995,6 +995,8 @@ Body Contact and Battles sets out [every book's charging tiers](../technique/bod
 
 ### Where checking is barred or limited
 
+**Hold your lane and add nothing when you arrive.** ⚠️ **Where Hockey Canada bars checking, a violent check can bring a major and game misconduct, mandatory if it injures (7.3(b)), and a PWHL major for an illegal hit ejects you (52.5).**
+
 ```facts
 Rule: IIHF 101.1 allows a women's body check only to play or win the puck — never a step or glide into her, or the boards to push or pin her — and prices an illegal hit at a minor or a major plus game misconduct; in Britain any major ejects (In-House §11), and the Women's NIHL bars checking
 Rule: Where Hockey Canada 7.3 applies, a body check — leaving your lane or extending an arm, shoulder or hip after angling included — is a minor (7.3(a)), a major and game misconduct on violence, mandatory if it injures (7.3(b)), or a match for intent to injure (7.3(c))
@@ -1004,8 +1006,6 @@ Rule: USA Hockey non-check play keeps the wall battle, not the check — lean in
 Rule: The PWHL limits the check (52.1): hold ground you have already established, lean in only while the puck is all you are after — never step or glide into her, leave your lane, meet her head-on, or extend an arm, shoulder or hip after angling her. A major ejects (52.5)
 Rule: In a CARHA league keep only a spot you reached first, never lean to keep it, and give way rather than take avoidable contact — 49(a) reaches a player who "does not avert body contact" (CARHA adult leagues only)
 ```
-
-**Hold your lane and add nothing when you arrive.** ⚠️ **Where Hockey Canada bars checking, a violent check can bring a major and game misconduct, mandatory if it injures (7.3(b)), and a PWHL major for an illegal hit ejects you (52.5).**
 
 - **Under Hockey Canada.** Where Hockey Canada 7.3 applies, a body check — including leaving your lane or extending an arm, shoulder or hip after angling — is the 7.3(a) minor, a major plus game misconduct by the degree of violence and mandatory if it injures (7.3(b)), or a match for a deliberate attempt to injure (7.3(c)).
 - **Under USA Hockey.** In a Competitive Contact category a body check is a 604(c) minor, ⚠️ **and a mandatory major plus a game misconduct if it recklessly endangers the opponent (604(d))**; 604(e) adds a match option, and plan on a 602(a) match if it is reckless. Body position survives: players focused on the puck and simply maintaining established body position, most often *"in front of the goal or along the boards"*, are competitive contact — but deliberate contact with no effort to play the puck is still penalised (604(c) Note). Lean in only while the puck is the sole object of the contact: *"overt hip, shoulder, forearm or torso action"* is the illegal body check (604 Note 1).
@@ -1017,13 +1017,13 @@ Body Contact and Battles sets out [which contact rules you are under](../techniq
 
 ### The seal, the arm and the skate
 
+**Seal with your position; never wrap an arm round them or push off with a skate.** ⚠️ **Under USA Hockey a skate push-off is a major plus a game misconduct (627(a)), and in a CARHA league a hold can bring a major and game misconduct.**
+
 ```facts
 Rule: In a CARHA league the arm is dearer — 63(a) prices a hold as a minor or, at the referee's discretion, a major; 63(b) makes that major mandatory where the hold injures; that major brings a game misconduct (30(a))
 Rule: CARHA's interference rule reaches an arm on a winger without the puck — 66(a)(1), a minor or, at the referee's discretion, a major and game misconduct (CARHA adult leagues only)
 Rule: In a CARHA league a minor that puts an opponent into the boards becomes a double minor, counting as two of the three penalties for a Game Ejection (49(b) Note, 32(a))
 ```
-
-**Seal with your position; never wrap an arm round them or push off with a skate.** ⚠️ **Under USA Hockey a skate push-off is a major plus a game misconduct (627(a)), and in a CARHA league a hold can bring a major and game misconduct.**
 
 - **Under CARHA.** **63(a)** prices a hold at a minor or, at the referee's discretion, a major, and **63(b)** makes that major mandatory where the hold injures. Any CARHA major brings a game misconduct, ending your game (**30(a)**) — the only exception an accidental high stick that injures nobody — and **32(d)** adds at least a one-game suspension, for this major or any other except an accidental high stick. CARHA's interference rule reaches the same arm on a winger without the puck: **66(a)(1)**, a minor or, at the referee's discretion, a major and game misconduct. ⚠️ **And a CARHA minor that puts them into the wall becomes a double minor (49(b)), counting as two of the three penalties for a Game Ejection (49(b) Note, 32(a)).**
 
@@ -1031,13 +1031,13 @@ Body Contact and Battles sets out [the arm the books allow, and what a hold cost
 
 ### Missing the next game
 
+**Stay in the game:** ⚠️ **a game misconduct can cost the next game too, and a match keeps you out until your case is dealt with.**
+
 ```facts
 Rule: Under USA Hockey any game misconduct also suspends you for the team's next game (404(b)) — at least two games if it comes with your second major of the game (403(b))
 Rule: Hockey Canada 4.8(c) suspends a game misconduct given in the last 10 minutes, in overtime or after the game — at least the next game or seven days
 Rule: CARHA 32(d) suspends a major's game misconduct for a game or more, bar an accidental high stick, and a CARHA match keeps you out of further games until the Chairman has dealt with your case (34(a))
 ```
-
-**Stay in the game:** ⚠️ **a game misconduct can cost the next game too, and a match keeps you out until your case is dealt with.**
 
 - **Under USA Hockey.** **Any game misconduct — a skate push-off, a reckless late hit, a major for a hit from behind — also suspends you for the team's next game (404(b)) — and for at least two if it comes with your second major of the game (403(b)).**
 - **Under Hockey Canada and CARHA.** Hockey Canada 4.8(c) suspends a game misconduct given in the last 10 minutes, in overtime or after the game — at least the next game or seven days. CARHA 32(d) suspends a major's game misconduct for a game or more, bar an accidental high stick, and a CARHA match keeps you out of further games *“until their case has been dealt with by the Chairman”* (34(a)).
@@ -1045,6 +1045,8 @@ Rule: CARHA 32(d) suspends a major's game misconduct for a game or more, bar an 
 Body Contact and Battles sets out [every book's count beyond tonight](../technique/body_contact_and_battles.md#and-what-these-fouls-cost-beyond-tonight).
 
 ### Late, sideways and third-man hits
+
+**Never decide to deliver a check after the puck has gone, hold your lane and speed, and never check a player already in a battle.** ⚠️ **None of it is capped at a minor, and a hit meant to injure is a match in every book but the IIHF, which tops out at a major and game misconduct, at the referee's discretion (56.5).**
 
 ```facts
 Rule: No book caps a late hit at a minor — NHL 56.4, PWHL 57.4 a major, ejects if hurt, 21.1 a match for intent; IIHF 56.5 can eject; Hockey Canada 8.3(b) can too and must if hurt, 8.3(c) a match; USA Hockey 640(g) ejects if reckless; reckless or meant to injure, a match, likely multi-game ban (602(a))
@@ -1055,8 +1057,6 @@ Rule: USA Hockey's rulebook writes no window — 640(b) makes a player who has r
 Rule: USA Hockey's Casebook allows a finish only if you first tried for the puck, were within an arm and a stick when it left, the check was under way, you kept the force down and took no advantage of a defenceless opponent — never one or two strides later (Standard of Play, Sit. 10)
 Rule: USA Hockey 625(a)(4) makes it an interference minor for a defending player to change "skating lane or foot speed" to play the body of an opponent who no longer has the puck; reckless, a match (602(a)); its Casebook protects "normal skating lane and reasonable foot speed" (Standard of Play Sit 10)
 ```
-
-**Never decide to deliver a check after the puck has gone, hold your lane and speed, and never check a player already in a battle.** ⚠️ **None of it is capped at a minor, and a hit meant to injure is a match in every book but the IIHF, which tops out at a major and game misconduct, at the referee's discretion (56.5).**
 
 - **Under the NHL, PWHL, IIHF and Hockey Canada.** The NHL and PWHL allow a major on the degree of violence, with a game misconduct only where it injures (NHL 56.4–56.5, PWHL 57.4–57.5), and Rule 21.1 in both makes a deliberate attempt to injure a match. IIHF 56.5 reaches a major plus a game misconduct with nobody hurt, where the player *"recklessly endangers their opponent by an 'interference or a late-hit'"* **and** *"would not be sufficiently sanctioned by imposing a major penalty"* — both the referee's judgement. Hockey Canada 8.3(b) reaches the same tier on *"the degree of violence of the impact"*, mandatory where it injures, and 8.3(c) is a match for a player who *"attempts to injure or deliberately injures an opponent by interference."*
 - **Under USA Hockey.** **The late hit is priced under roughing:** **640(g)** makes a reckless act under 640(b)–(f) a major plus a game misconduct, and **640(h)** adds a match option. A reckless check with no effort at the puck and your stick above the knees (640(d)), or on a player already in a battle (640(e)), ejects you in any division; only 640(b), the late hit itself, excepts Adult Male Classifications. Whether 640(g) reaches a late hit in adult men's hockey, the book does not say. **602(a)** does not depend on it: plan on a match and a likely multi-game suspension for a late hit that *"recklessly endangers or attempts to injure any opposing player"*, in any division.
