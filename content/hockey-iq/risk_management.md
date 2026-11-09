@@ -830,7 +830,8 @@ Action: Get to the inside and take away the middle; deny the pass to the slot an
 Action: Talk — one word, "turnover", "back", "I'm high", reorganises four teammates who are still reading the play
 Never: Foul the puck carrier from behind. Backcheck hard instead — a trip, hook, hold or slash invites a penalty shot
 Never: Check from behind — if you can see their numbers, pull up and play the puck; they cannot see you coming
-Rule: A check from behind ends your game in every book but USA Hockey (Hockey Canada: off the head; IIHF: plan on it), and in USA Hockey if forceful along the boards, head first or reckless; into the boards or goal frame on a defenceless player it is a mandatory match (Hockey Canada 7.5(c), CARHA 53(b))
+Rule: A check from behind ends your game in every book but USA Hockey (Hockey Canada: off the head; IIHF: plan on it); under USA Hockey it is at least a minor and a misconduct (608(a))
+Rule: A check from behind into the boards or goal frame on a defenceless player is a mandatory match under Hockey Canada 7.5(c) and CARHA 53(b)
 Rule: USA Hockey ejects too for one that is forceful along the boards, sends them head first, or is reckless — a major and game misconduct or a match (608(b); Casebook 608 Situation 1), up from a minor plus misconduct (608(a)); plan on the match and a likely multi-game suspension (602(a))
 Rule: A hit from behind meant to injure is a mandatory match, boards or not — Hockey Canada 7.5(c) (7.6(c) or 7.7(c) on the head), NHL and PWHL 21.1, CARHA 48(a), USA Hockey 602(a) and a likely multi-game suspension
 Rule: At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban, in every league or age group you are registered in (IHUK DOPS C.1, s.11)
