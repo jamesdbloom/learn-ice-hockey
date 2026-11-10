@@ -164,6 +164,8 @@ The slap shot is the hardest shot in hockey and the most overused. Be honest wit
 
 #### High sticks and the wind-up — what each book actually charges
 
+**Keep the blade below everyone's shoulders, look before you wind up, and shorten the wind-up in traffic — that is the whole instruction, under every book.** What follows is what each book charges when a stick gets there anyway, and the books differ more than most players expect.
+
 ```facts
 Rule: The windup and follow-through carve-out is NHL, IIHF and PWHL only (60.1; PWHL 61.1) — USA Hockey writes none, even in its Casebook, and in junior and senior hockey Hockey Canada Interpretation 1 to Rule 9.5(a) makes a shooting follow-through above the shoulder a minor where no injury results
 Rule: Even where it is written the carve-out has a limit — NHL Rule 60.1: "A wild swing at a bouncing puck would not be considered a normal windup or follow through", and IIHF 60.1 and PWHL 61.1 carry that sentence in their own punctuation
@@ -176,8 +178,6 @@ Rule: The IIHF writes no match penalty for anything, so a major plus the automat
 Rule: CARHA has no minor rung above the shoulders — 62(b) is a major for contact there "whether or not injury results", accidental or not, with its Note adding a game misconduct when intentional or injuring; its minor, 62(a), is a different act, a carry above the opponent's waist. CARHA leagues only
 Never: Lean on a definition to excuse the swing. Keep the blade down, look before you wind up, and three-quarter it in traffic — though under CARHA a three-quarter is still a slap shot and a penalty
 ```
-
-**Keep the blade below everyone's shoulders, look before you wind up, and shorten the wind-up in traffic — that is the whole instruction, under every book.** What follows is what each book charges when a stick gets there anyway, and the books differ more than most players expect.
 
 **The follow-through excuse is narrow.** NHL and IIHF Rule 60.1, and PWHL 61.1, permit accidental contact *"committed as a normal windup or follow through of a shooting motion"*. ⚠️ **A wild swing is not covered:** *"A wild swing at a bouncing puck would not be considered a normal windup or follow through and any contact to an opponent above the height of the shoulders shall be penalized accordingly."* USA Hockey, Hockey Canada and CARHA write no carve-out at all. So when the puck is jumping, abandon the one-timer, as [The One-Timer](#the-one-timer--shooting-a-pass-without-stopping-it) explains.
 
@@ -303,6 +303,8 @@ A tip (or deflection) is redirecting a shot from a teammate as it passes you, us
 
 #### Contact with the goalie at the net front
 
+**Stand in the goalie's eyes from outside the paint, never touch them, and stay out of their road home; in a scramble, play the puck and pull up short of the goalie.** That is the play under every book. The rest of this section is why, and what each book does when a net-front player gets it wrong.
+
 ```facts
 Position: Outside the blue paint and off the red crease line, in the goalie's eyeline, not touching them and never in their path back to the crease — that is the legal and valuable screen
 Rule: A no-contact screen from outside the crease keeps the goal (tables, Situation 5 E); a position that stops the goalie moving freely in their crease can still cost it (NHL and IIHF 69.1, PWHL 71.1), and blocking their road home is a penalty (69.4; PWHL 71.4)
@@ -317,8 +319,6 @@ Rule: Leave a goalie alone outside their crease — they are not "fair game" the
 Rule: An attacker whose deliberate actions keep a goalie who has played the puck outside their crease from returning to it "may be penalized" for goalkeeper interference, with no contact required — NHL and IIHF 69.4, PWHL 71.4
 Never: Crowd a goalie so they cannot move, or set the screen on the red crease line — every book settling the question puts that line in the crease, and inside it your position alone can cost the goal
 ```
-
-**Stand in the goalie's eyes from outside the paint, never touch them, and stay out of their road home; in a scramble, play the puck and pull up short of the goalie.** That is the play under every book. The rest of this section is why, and what each book does when a net-front player gets it wrong.
 
 **Where to stand.** Outside the blue paint and off the red line around it, in the goalie's eyes, without touching them. ⚠️ **Stay off the red line:** the IIHF (Rule 1.7), USA Hockey, Hockey Canada and CARHA all put that line inside the crease, though the NHL's and IIHF's reference tables allow a screen *"on the crease line"*. Off the line is the instruction that holds under every book.
 
@@ -354,6 +354,8 @@ One coaching resource puts the trade-off as: a 70 mph shot with a 0.3-second rel
 
 ### How to actually get a faster release
 
+**Stop gathering.** The most common release-killer is the little pause where you settle the puck, look up, set your feet, and then shoot. Every one of those is a frame of warning. Shoot off the puck you already have, in the position you are already in.
+
 ```facts
 Action: Stop gathering. Shoot off the puck you already have, in the position you are already in
 Never: Stop your feet before shooting. Learn to release in stride, mid-stride, while still moving
@@ -362,8 +364,6 @@ Action: Change your release point — pull the puck 15–30 cm laterally before 
 Technique: Open the face as though going high and close it at the last instant; look at one corner, shoot the other
 Action: Look off to a teammate in the slot to move the goalie's weight, then shoot into the space that opens
 ```
-
-**Stop gathering.** The most common release-killer is the little pause where you settle the puck, look up, set your feet, and then shoot. Every one of those is a frame of warning. Shoot off the puck you already have, in the position you are already in.
 
 **Do not stop your feet.** Stopping your skates before shooting is the loudest tell in hockey — every goalie reads it, every defender reads it. Learn to **shoot in stride**, releasing mid-stride while you are still moving. It feels less powerful at first because you cannot plant and load; you get that power back from your momentum, and you get a half-second of surprise on top.
 
@@ -525,6 +525,8 @@ The general rule, and act on its direction rather than on any size: **a shot the
 
 #### In and around the crease — what each book allows and what it charges
 
+**Keep both skates out of the blue paint and off the red line, get out at once if you are shoved in, and never start contact with a goalie — that holds under every book.** The rest of this section is where the books differ, and what each one charges. Rule 69, above, is the NHL's, the IIHF's and the PWHL's; USA Hockey, Hockey Canada and CARHA write their own.
+
 ```facts
 Rule: USA Hockey 625(b) does not run 69.1 — a flat position bar voiding the goal with an attacker in the crease whoever scored, unless the puck got there first or the goalie is out of the crease area; Casebook Situation 9 voids it anyway, plus an interference minor, if you stopped them getting back
 Rule: USA Hockey 625(b) costs you the zone before anyone shoots too — a neutral-zone faceoff where an attacker stands, holds their stick or skates through the crease, but only with the puck in the attacking zone, their team in possession and the goalie in contact with the crease
@@ -541,8 +543,6 @@ Rule: The push-in relief does not reach the penalty either — USA Hockey 625(a)
 Never: Set your feet in the blue paint or on the red crease line — every book settling the question puts that line in the crease. Set up outside the line, and find out which book your league runs
 Never: Play the puck or touch the goalie after a defender has shoved you into the paint. Get your feet back out of the crease first instead
 ```
-
-**Keep both skates out of the blue paint and off the red line, get out at once if you are shoved in, and never start contact with a goalie — that holds under every book.** The rest of this section is where the books differ, and what each one charges. Rule 69, above, is the NHL's, the IIHF's and the PWHL's; USA Hockey, Hockey Canada and CARHA write their own.
 
 **USA Hockey is stricter inside the paint.** Rule 625(b): *"No goal may be scored with an attacking player in the goal crease unless the puck has preceded the player(s) into the goal crease or the goalkeeper is out of the goal crease area."* A skate in the crease is the whole test, and the crease lines count as crease. Its Casebook (Rule 625, Situation 10) does not stop play for a momentary stick or skate in there — ⚠️ **but a goal scored while it is there, with the goalie in the crease, must be disallowed.** With the puck in the attacking zone, your team in possession and the goalie in contact with the crease, standing in or skating through it also costs a neutral-zone faceoff.
 
@@ -622,16 +622,16 @@ The goalie's half of this — what they are trying to do to you — is in [Goalt
 
 ### The one thing that decides it: who moves first
 
+A well-coached goalie meets you out, retreats with you on C-cuts to keep the angle closed, stays on their feet as long as possible, and watches the puck rather than your body. **Their entire plan is to make you commit first.** Yours is the mirror image: **make them commit first.** Every technique below is a way of buying that.
+
+If neither of you commits, you run out of ice and lose — so you cannot simply wait. You need a way to force the decision.
+
 ```facts
 Goal: Make the goalie commit first — every technique here is a way of buying that
 Read: A well-coached goalie meets you out, retreats on C-cuts, stays on their feet and watches the puck
 Mindset: The goalie's entire plan is to make you commit first; yours is the mirror image
 Never: Simply wait the goalie out — if neither of you commits you run out of ice and lose
 ```
-
-A well-coached goalie meets you out, retreats with you on C-cuts to keep the angle closed, stays on their feet as long as possible, and watches the puck rather than your body. **Their entire plan is to make you commit first.** Yours is the mirror image: **make them commit first.** Every technique below is a way of buying that.
-
-If neither of you commits, you run out of ice and lose — so you cannot simply wait. You need a way to force the decision.
 
 ### Approach speed — slower than you think
 
@@ -673,6 +673,8 @@ What the goalie has been told to watch is a genuine coaching split (see [Goalten
 
 ### The classic moves, and what each one is for
 
+None of these is a trick. Each solves a specific goalie behaviour, and picking the one that matches what you are seeing is the whole skill.
+
 ```facts
 Read: Goalie aggressive and out of their crease → forehand–backhand, round them and never through them; if the room closes, pull up short of the goalie
 Read: Goalie deep in the net and squared up → backhand–forehand, the shorter move finishes before they slide
@@ -682,8 +684,6 @@ Read: Goalie stabbing with the stick or over-committing forward → toe drag ins
 Read: Goalie patient, deep and giving you nothing → delay, almost stop, and force them to move
 Key: One personal go-to executed without thinking beats five you half-know
 ```
-
-None of these is a trick. Each solves a specific goalie behaviour, and picking the one that matches what you are seeing is the whole skill.
 
 | Move | What it is | Use it when the goalie is |
 |---|---|---|
@@ -698,6 +698,8 @@ None of these is a trick. Each solves a specific goalie behaviour, and picking t
 
 ### Where to shoot
 
+The targets are not the same as on a normal shot, because the goalie is moving and often deep.
+
 ```facts
 Targets: Blocker side high — the hardest place for a retreating goalie to get a hand to
 Targets: Five-hole while they are pushing sideways, open during the push and not before or after
@@ -705,8 +707,6 @@ Targets: Short side high only if they have over-committed to the middle; far sid
 Never: Shoot at the middle of their chest — that is where the puck goes when you shoot without looking
 Action: Look at the goalie, not the puck, in the last two strides; you cannot aim at a hole you have not seen
 ```
-
-The targets are not the same as on a normal shot, because the goalie is moving and often deep.
 
 - **Blocker side, high** is the classic breakaway target: the hardest place for a goalie to get a hand to while retreating.
 - **Five-hole while they are pushing sideways** — the hole is open during the push, not before it and not after.
@@ -718,6 +718,8 @@ The targets are not the same as on a normal shot, because the goalie is moving a
 
 ### Shoot or deke?
 
+The honest answer is that it depends on one read: **how deep is the goalie, and are they moving?**
+
 ```facts
 Read: Goalie out at the top of the crease and coming at you → deke round them, never through them; they cannot recover laterally from there
 Read: Goalie deep, square and patient → shoot; a deke just walks you into the post
@@ -725,8 +727,6 @@ Read: Goalie retreating and not yet set → shoot early, before you reach your "
 Read: Being caught from behind → shoot now, because a backchecker's stick arrives sooner than you think
 Convention: At rec level, shoot more than you deke — rec goalies are usually deep, flat-footed and square, which is a coaching observation rather than a counted one
 ```
-
-The honest answer is that it depends on one read: **how deep is the goalie, and are they moving?**
 
 - **Goalie out at the top of the crease or beyond, coming at you → deke.** They have given you the room and they cannot recover laterally from out there. **Go round them, never through them:** if the room closes, pull up short of the goalie and the post, head up. Running into a goalie is a penalty in every book, and charging one can end your game.
 - **Goalie deep in the net, square and patient → shoot.** There is no room to go around, and a deke against a deep goalie just walks you into the post.
@@ -797,6 +797,8 @@ Most shooting decisions come round again and again. These are the common approac
 
 ## When NOT to Shoot
 
+A "shoot-first mentality" is good. Forcing low-percentage shots is not. **Shoot-first** means your default look is the net, you do not need talking into it, and you take the good chance immediately rather than hunting a better one — a genuinely valuable trait most amateurs lack. **Forcing** means you shoot because you have the puck, not because there is a chance; that is a turnover with extra steps.
+
 ```facts
 Mindset: Shoot-first means taking the good chance immediately; forcing means shooting because you have the puck
 Never: Shoot when there is no lane — a shot into shins is a turnover with extra steps
@@ -806,8 +808,6 @@ Risk: Shooting as the last player back — a wide shot with nobody covering is h
 Read: If your line is cycling and the other team is pinned and tired, another five seconds of possession beats a bad shot
 Key: Before you shoot, ask what happens if it does not go in — rebound, tip or recovery means shoot
 ```
-
-A "shoot-first mentality" is good. Forcing low-percentage shots is not. **Shoot-first** means your default look is the net, you do not need talking into it, and you take the good chance immediately rather than hunting a better one — a genuinely valuable trait most amateurs lack. **Forcing** means you shoot because you have the puck, not because there is a chance; that is a turnover with extra steps.
 
 **Do not shoot when:**
 

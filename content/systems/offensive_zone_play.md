@@ -29,6 +29,8 @@
 
 ## Overview
 
+Once you have the puck at the other team's end — [carried or dumped in](zone_entries.md), or [won back on the forecheck](forechecking_systems.md) — the problem changes shape. Almost every amateur team can get the puck down there; far fewer turn it into a dangerous shot.
+
 ```facts
 Position: You already have the puck in the offensive zone — getting there is Zone Entries, winning it back is Forechecking Systems
 Goal: You are not trying to take a shot — you are trying to take a shot from a dangerous place, with the goalie out of position
@@ -37,8 +39,6 @@ Priority: Somebody is always above the puck — the high forward is the safety, 
 Risk: Almost every amateur team can get the puck into the offensive zone; far fewer turn possession there into a dangerous shot
 Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 spread with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
 ```
-
-Once you have the puck at the other team's end — [carried or dumped in](zone_entries.md), or [won back on the forecheck](forechecking_systems.md) — the problem changes shape. Almost every amateur team can get the puck down there; far fewer turn it into a dangerous shot.
 
 **Look across the middle first, because that pass moves the goalie.** A pass that crosses the centre line of the ice just before the shot forces the goalie to push across and re-set, and in volunteer-tracked NHL 5-on-5 data it is the most dangerous pass type, at roughly double the next.
 
@@ -326,13 +326,13 @@ Never: Confuse the bumper with the net-front player — two different jobs at tw
 
 ### Cycling: What it is
 
+A **cycle** is a possession tactic in which the forwards rotate around the low offensive zone — corner, half-wall, behind the net — passing the puck short distances to each other while protecting it from the defence. Think of a wheel: the puck moves a few feet at a time, the players rotate through the positions, and the defence has to keep re-solving the same problem.
+
 ```facts
 Key: A cycle rotates the forwards around the low offensive zone — corner, half-wall, behind the net — protecting the puck from the defence
 Action: Move the puck short distances, a few feet at a time, and rotate through the positions
 Goal: Make the defence keep re-solving the same problem
 ```
-
-A **cycle** is a possession tactic in which the forwards rotate around the low offensive zone — corner, half-wall, behind the net — passing the puck short distances to each other while protecting it from the defence. Think of a wheel: the puck moves a few feet at a time, the players rotate through the positions, and the defence has to keep re-solving the same problem.
 
 ### Why it works
 
@@ -410,6 +410,8 @@ Read: Attack immediately when your net-front player has beaten their check to th
 
 ### The failure: cycling for its own sake
 
+This is the defining amateur error in the offensive zone. A team gets the puck low, cycles it around three or four times, looks organised and busy, and never once threatens the net. The defence is entirely content — you have used up thirty seconds of your own shift, in their zone, at zero risk to them.
+
 ```facts
 Key: A cycle is a set-up, not an outcome
 Never: Cycle for its own sake — three or four rotations that never threaten the net burn thirty seconds at zero risk to the defence
@@ -417,8 +419,6 @@ Goal: End the cycle in one of four things — a shot from home plate, a royal ro
 Risk: Nobody in front of the net means even a good shot has no tip, no screen and no rebound support
 Read: If the puck never goes above the goal line and never goes to the middle, you are passing around the outside of a box with no reason to move
 ```
-
-This is the defining amateur error in the offensive zone. A team gets the puck low, cycles it around three or four times, looks organised and busy, and never once threatens the net. The defence is entirely content — you have used up thirty seconds of your own shift, in their zone, at zero risk to them.
 
 **A cycle is a set-up, not an outcome.** If a cycle does not end in one of: a shot from the home-plate area, a royal road pass, a low-to-high with a screen, or a net drive, it did not accomplish anything. Two clear symptoms:
 
@@ -431,6 +431,8 @@ This is the defining amateur error in the offensive zone. A team gets the puck l
 
 ### The play
 
+**Low-to-high** means passing the puck from a low position (corner, half-wall, behind the net) up to a defenceman at the point or the top of the circle, who shoots. It is the standard way to generate a shot when the defence has collapsed low and taken away everything in tight.
+
 ```facts
 Action: Pass from a low position — corner, half-wall, behind the net — up to a defenceman at the point or the top of the circle, who shoots
 Read: Low-to-high is the standard way to generate a shot when the defence has collapsed low and taken away everything in tight
@@ -440,8 +442,6 @@ Position: One forward to the net front to screen and tip; one supporting in the 
 Read: The weak-side defenceman reads for a rebound squirting to their side and is ready to jump on it
 Options: D-to-D across the top first — the goalie has to slide and the shot comes from the other side
 ```
-
-**Low-to-high** means passing the puck from a low position (corner, half-wall, behind the net) up to a defenceman at the point or the top of the circle, who shoots. It is the standard way to generate a shot when the defence has collapsed low and taken away everything in tight.
 
 The sequence, with everyone's job named:
 
@@ -457,15 +457,17 @@ A common addition is **D-to-D across the top** before the shot: the strong-side 
 
 ### Why it beats a cycle that never shoots
 
+Because a shot from the point with a screen and a net-front presence produces things a cycle does not: a **rebound**, a **tip**, a **scramble**, a **whistle in your favour**, a **line change for you** and none for them. Even at a with-traffic conversion rate of roughly 3% — Greg Revak's figure, and uncheckable — the shot generates chaos in the home-plate area, and chaos in the home-plate area is where goals live. A cycle that never releases produces none of that.
+
 ```facts
 Goal: Release the puck — a screened point shot produces a rebound, a tip, a scramble, a whistle in your favour and a line change for you
 Key: Even at a low conversion rate with traffic, the shot generates chaos in the home-plate area — and that is where goals live
 Never: Cycle without ever releasing — it produces none of that
 ```
 
-Because a shot from the point with a screen and a net-front presence produces things a cycle does not: a **rebound**, a **tip**, a **scramble**, a **whistle in your favour**, a **line change for you** and none for them. Even at a with-traffic conversion rate of roughly 3% — Greg Revak's figure, and uncheckable — the shot generates chaos in the home-plate area, and chaos in the home-plate area is where goals live. A cycle that never releases produces none of that.
-
 ### The honest caveat
+
+Low-to-high is a *means*, not an end. At even strength a point shot is among the **lowest-percentage shots on the ice**, and it is **blocked more often** than a shot from anywhere else. But section 1's under-5% figure is an even-strength one: on the power play the same map puts the whole zone at or above it — approximate in where the line falls, not in its direction. And analysis by Alex Novet found point shots **generate fewer rebounds** than shots from lower in the zone ([via The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics)).
 
 ```facts
 Key: Low-to-high is a means, not an end — at even strength a point shot is among the lowest-percentage shots on the ice, and blocked more often than any other
@@ -474,8 +476,6 @@ Risk: They also generate fewer rebounds than shots from lower in the zone
 Priority: Low-to-high is only worth doing when the net front is occupied — a screen, a tip threat and two players hunting the rebound
 Never: Fire it from the point with nobody in front — the identical shot is a giveaway with extra steps
 ```
-
-Low-to-high is a *means*, not an end. At even strength a point shot is among the **lowest-percentage shots on the ice**, and it is **blocked more often** than a shot from anywhere else. But section 1's under-5% figure is an even-strength one: on the power play the same map puts the whole zone at or above it — approximate in where the line falls, not in its direction. And analysis by Alex Novet found point shots **generate fewer rebounds** than shots from lower in the zone ([via The Coaches Site](https://members.thecoachessite.com/article/the-problem-with-point-shots-according-to-analytics)).
 
 There is a cautionary tale. The Seattle Kraken under Dave Hakstol built their 2021-22 offensive-zone scheme around low-to-high, generated the third-most point shots per sixty minutes in the league, and produced the **lowest expected value per shot of any team** ([Sound of Hockey](https://soundofhockey.com/2022/03/30/kraken-coach-dave-hakstols-scheme-and-philosophies-offensive-zone-plays-part-7/)). Neither number is Sound of Hockey's own — it credits Corey Sznajder's tracking and TopDownHockey/JFreshHockey, both private — so treat this as a reported anecdote about one team in one season, not a checkable statistic.
 
@@ -837,14 +837,14 @@ These are two different games and most amateur teams have only one of them.
 
 ### Off the rush
 
+You enter the zone with speed and attack before the defence is set. The chance comes from **numbers and momentum** — a 2-on-1, a 3-on-2, a trailer arriving late into space.
+
 ```facts
 Read: You enter with speed and attack before the defence is set — the chance comes from numbers and momentum
 Key: Chances appear in the first three or four seconds and then vanish; speed and the moment of entry are the resource
 Options: The late-arriving trailer into the high slot, the drive to the net that occupies a defender, and the delay — curling back to let a second wave arrive
 Key: Shots off the rush are more dangerous than equivalent shots from a set possession, because the goalie is also moving and re-establishing depth
 ```
-
-You enter the zone with speed and attack before the defence is set. The chance comes from **numbers and momentum** — a 2-on-1, a 3-on-2, a trailer arriving late into space.
 
 - The defining resource is **speed and the moment of entry**. Chances appear in the first three or four seconds and then vanish.
 - The high-value plays are the **late-arriving trailer** into the high slot, the **drive to the net** that occupies a defender, and the **delay** — curling back up toward the blue line to let a second wave arrive.
@@ -853,14 +853,14 @@ You enter the zone with speed and attack before the defence is set. The chance c
 
 ### Off a set possession
 
+The defence is established, everyone is back, and nothing is open. The chance comes from **movement and patience** — cycling, rotating, forcing the defence to move until coverage breaks.
+
 ```facts
 Read: The defence is established, everyone is back and nothing is open — the chance comes from movement and patience
 Key: The defining resource is time on the puck and the willingness to hold it
 Options: Cycle, low-to-high with a screen, seam pass, net-front chaos, behind-the-net feed
 Read: Coverage lapses arrive after a long shift of defending — a defence that has been chasing for forty seconds is about to make a mistake
 ```
-
-The defence is established, everyone is back, and nothing is open. The chance comes from **movement and patience** — cycling, rotating, forcing the defence to move until coverage breaks.
 
 - The defining resource is **time on the puck and the willingness to hold it**.
 - The high-value plays are the ones in sections 4 to 8: cycle, low-to-high with a screen, seam pass, net-front chaos, behind-the-net feed.
@@ -1038,6 +1038,8 @@ Priority: Act on the direction — a shot after the goalie has had to move acros
 
 ### What to shoot *for*
 
+From the perimeter, **you are not trying to score. You are trying to manufacture a second chance.**
+
 ```facts
 Mindset: From the perimeter you are not trying to score — you are trying to manufacture a second chance
 Technique: Shoot for a rebound — low, to the far pad, or off the pads; chest and glove get swallowed and the whistle goes
@@ -1045,8 +1047,6 @@ Technique: Shoot for a tip — low, hard, along the ice, through the screen, at 
 Options: Shoot to be missed — a hard shot off the end boards to a spot for a teammate is a legitimate pass; say it first
 Never: Pick corners against a set, sighted goalie — the lowest-percentage thing you can do with a puck. Aim for a corner instead only when they cannot see it or cannot get there
 ```
-
-From the perimeter, **you are not trying to score. You are trying to manufacture a second chance.**
 
 - **Shoot for a rebound.** Pucks aimed low, to the far pad, or off the pads generally produce controllable rebounds. Pucks aimed at the goalie's chest and glove do not — they get swallowed and the whistle goes.
 - **Shoot for a tip.** Low, hard, along the ice, through the screen, at the tipper's stick. Say who you are shooting at. The tipper's job is to present a blade; yours is to hit it.
@@ -1111,6 +1111,8 @@ Whatever your team runs, **everyone must know it before the whistle**, and the t
 
 ### Structure off a loss
 
+Assume you will lose roughly half the draws. Structure for the loss is not defeatism, it is the other half of the plan.
+
 ```facts
 Mindset: Assume you will lose roughly half the draws — structuring for the loss is the other half of the plan, not defeatism
 Action: One forward pressures immediately, usually the winger nearest the puck, to deny the clean breakout pass and force a rim or a chip
@@ -1119,8 +1121,6 @@ Read: The defencemen hold the line and read — is this a rim to be intercepted,
 Convention: The strong-side defenceman is the one most likely to pinch on a rim; the weak-side one covers the middle
 Key: Having a defined assignment for the loss is what lets you be aggressive on the win
 ```
-
-Assume you will lose roughly half the draws. Structure for the loss is not defeatism, it is the other half of the plan.
 
 - **One forward pressures immediately** — usually the winger nearest the puck — to deny the clean breakout pass and force a rim or a chip.
 - **The other two forwards get defensive momentum going**, turning and skating rather than watching. A forward who is stationary when the puck is lost is beaten.

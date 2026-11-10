@@ -80,13 +80,13 @@ Three things to take from that table:
 
 ### The cost side is invisible, and that is the problem
 
+When a risky pass works, everyone sees it. When it fails, the goal usually arrives eight seconds later and looks like somebody else's mistake — a missed coverage, a screened goalie, a bad bounce. **The chain of causation from your decision to the puck in your net is long enough that most players never connect the two.** Coaches connect it. Video connects it. Start connecting it yourself and your decision-making improves faster than any skill you can train.
+
 ```facts
 Key: When a risky pass works everyone sees it; when it fails, the goal arrives eight seconds later and looks like somebody else's mistake
 Risk: The chain from your decision to the puck in your net is long enough that most players never connect the two
 Action: Start connecting your own decision to the goal that follows it — that improves your decision-making faster than any skill you can train
 ```
-
-When a risky pass works, everyone sees it. When it fails, the goal usually arrives eight seconds later and looks like somebody else's mistake — a missed coverage, a screened goalie, a bad bounce. **The chain of causation from your decision to the puck in your net is long enough that most players never connect the two.** Coaches connect it. Video connects it. Start connecting it yourself and your decision-making improves faster than any skill you can train.
 
 ---
 
@@ -175,6 +175,10 @@ A turnover has a direction, and the direction changes the cost more than the loc
 
 ### 1. Never pass D-to-D through the slot. Go behind the net instead — a coaching convention, not a rule
 
+**D-to-D** means one defenceman passing to their partner. In your own zone, the two obvious routes are *through* the front of the net or *behind* it.
+
+**Why not through.** A pass through your own slot travels across the highest-danger area on the ice, in front of the net, at knee-to-stick height, through the exact space where a forechecker is standing. If it is intercepted, the interceptor is already in the slot facing your goalie with the puck. That is not a chance against. That is a goal.
+
 ```facts
 Never: Pass D-to-D through your own slot — an interception leaves the interceptor in the slot facing your goalie
 Action: Take the D-to-D pass behind the net instead — a longer route by maybe eight feet, and half a second slower
@@ -182,10 +186,6 @@ Risk: A failure behind the goal line is a battle behind the net rather than a sh
 Convention: Keeping D-to-D out of the slot is a coaching convention, not a rule — some teams allow a D-to-D exchange high in the zone, above the tops of the circles
 Action: Find out where your coach draws the line on a D-to-D exchange
 ```
-
-**D-to-D** means one defenceman passing to their partner. In your own zone, the two obvious routes are *through* the front of the net or *behind* it.
-
-**Why not through.** A pass through your own slot travels across the highest-danger area on the ice, in front of the net, at knee-to-stick height, through the exact space where a forechecker is standing. If it is intercepted, the interceptor is already in the slot facing your goalie with the puck. That is not a chance against. That is a goal.
 
 **What to do instead.** Take it behind the net. It is a longer route by maybe eight feet, it takes half a second longer, and a failure there produces a battle behind the goal line rather than a shot from twenty feet.
 
@@ -195,6 +195,10 @@ Action: Find out where your coach draws the line on a D-to-D exchange
 
 ### 2. Never make a blind backhand pass up the middle of your own zone — a coaching convention, not a rule
 
+A **blind pass** is one made without seeing the target — you throw it to where you assume someone is.
+
+**Why not.** Three failures compound: the backhand is your least accurate and least powerful side, blind means you do not know whether you are passing to a teammate or an opponent, and the middle of your own zone is where an interception costs most. You get the worst tool, the worst information and the worst location in one motion. Coaches name it as one of the commonest sources of amateur goals against. **That is coaching observation, not measurement:** failed exits are tracked and priced, but no published breakdown found for this document ties a goal against to the defending mistake that let it in. The two goal-breakdown sources read are both NHL ([Neutral Zone Systems](../systems/neutral_zone_systems.md) sets them out) — ⚠️ **so let the reasoning persuade you, not the ranking.**
+
 ```facts
 Never: Make a blind backhand pass up the middle of your own zone — the worst tool, the worst information and the worst location in one motion
 Risk: The backhand arrives slowly and imprecisely, and blind means you do not know whether the target is a teammate or an opponent
@@ -203,15 +207,15 @@ Options: Put it on the boards so a mistake becomes a battle, or use the glass if
 Convention: No rule forbids the blind backhand up the middle — it is about as close to universally taught as coaching gets, and the claim that it is a top source of amateur goals is coaching observation, not measurement
 ```
 
-A **blind pass** is one made without seeing the target — you throw it to where you assume someone is.
-
-**Why not.** Three failures compound: the backhand is your least accurate and least powerful side, blind means you do not know whether you are passing to a teammate or an opponent, and the middle of your own zone is where an interception costs most. You get the worst tool, the worst information and the worst location in one motion. Coaches name it as one of the commonest sources of amateur goals against. **That is coaching observation, not measurement:** failed exits are tracked and priced, but no published breakdown found for this document ties a goal against to the defending mistake that let it in. The two goal-breakdown sources read are both NHL ([Neutral Zone Systems](../systems/neutral_zone_systems.md) sets them out) — ⚠️ **so let the reasoning persuade you, not the ranking.**
-
 **What to do instead.** Turn your shoulders and take the extra half-second to look, or put it on the boards where a mistake becomes a battle rather than a chance. If you genuinely have no time, the glass is always there.
 
 *Coaching convention.* No rule forbids it. It is as close to universally taught as coaching gets, and I am aware of no system that asks for it.
 
 ### 3. Never make a cross-ice pass in your own defensive zone — a coaching convention, not a rule
+
+**Why not.** An **east–west** pass in your own end crosses every forechecking stick on the ice, travels perpendicular to the direction you want to go, and if it is picked off it is picked off by someone whose momentum already carries them toward your net. It also takes the longest time in the air of any pass available to you, which means the most time for someone to read it.
+
+There is one more cost people miss: even when it *works*, a cross-ice pass in your own end usually puts your teammate under immediate pressure facing the boards, because the forecheck slid across with the puck. You took a big risk to create a worse situation.
 
 ```facts
 Never: Make a cross-ice pass in your own defensive zone — it crosses every forechecking stick and spends the longest of any pass in the air
@@ -222,10 +226,6 @@ Action: If the only outlet is on the far side, go D-to-D behind the goal line an
 Convention: Nothing in the rulebook touches the cross-ice pass in your own zone — some teams accept it above the tops of the circles, almost nobody below them
 ```
 
-**Why not.** An **east–west** pass in your own end crosses every forechecking stick on the ice, travels perpendicular to the direction you want to go, and if it is picked off it is picked off by someone whose momentum already carries them toward your net. It also takes the longest time in the air of any pass available to you, which means the most time for someone to read it.
-
-There is one more cost people miss: even when it *works*, a cross-ice pass in your own end usually puts your teammate under immediate pressure facing the boards, because the forecheck slid across with the puck. You took a big risk to create a worse situation.
-
 **What to do instead.** Move the puck north or move it behind the net. If the only outlet is genuinely on the far side, go D-to-D behind the goal line first and *then* north — two low-risk passes beat one high-risk one.
 
 ![](diagram:cross-ice-in-your-own-end)
@@ -233,6 +233,8 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 *Coaching convention.* Nothing in the rulebook touches this. Some teams will accept a cross-ice pass above the tops of the circles, where an interception is not a slot chance; almost nobody accepts one below them.
 
 ### 4. Never both defencemen to the puck — a coaching convention, not a rule
+
+**Why not.** If both of you attack the same puck, you have committed 100% of your defensive-zone depth to a 50/50 battle. Win it and you gain nothing you would not have gained with one of you. Lose it and there is no one — literally no one — between the puck and your goalie except forwards who are facing the wrong way.
 
 ```facts
 Never: Send both defencemen to the same puck — one goes, the other stays home, because committing both puts 100% of your defensive-zone depth into a single 50/50 battle
@@ -243,8 +245,6 @@ Convention: Sending both defencemen to the same puck has real exceptions — und
 Key: Somebody must be home; what varies is who — find out what your team plays
 ```
 
-**Why not.** If both of you attack the same puck, you have committed 100% of your defensive-zone depth to a 50/50 battle. Win it and you gain nothing you would not have gained with one of you. Lose it and there is no one — literally no one — between the puck and your goalie except forwards who are facing the wrong way.
-
 **What to do instead.** One goes, one supports. The one who goes takes the puck — **or the body, only where your league permits checking; where it is barred, take the ice they need and play the puck instead**, and see [Body Contact and Battles](../technique/body_contact_and_battles.md) for which of those you are under. The partner reads the likely outcome and covers the space it will squirt into, staying between the puck and the net. Talk about it out loud — see [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ![](diagram:never-both-defencemen-to-the-puck)
@@ -252,6 +252,8 @@ Key: Somebody must be home; what varies is who — find out what your team plays
 *Coaching convention, with real exceptions.* Under a **strong-side overload** some coaches put **both** defencemen low along the boards and hand the **slot** to a forward — one coaching account rather than anything counted, so a reason to ask, not a licence to assume. **Somebody must be home; what varies is who.** This guide's default is a **low zone collapse (zone) coverage**, with the strong-side defenceman pressuring and the weak-side defenceman holding the net front; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out who has the net front under each system. Find out what your team plays.
 
 ### 5. Never force a low-percentage pass at the offensive blue line with no support back — a coaching convention, not a rule
+
+**Why not.** The offensive blue line is where your attack is at its most stretched — your forwards are ahead of the puck, your defencemen have often stepped up to hold the zone. A turnover there converts your five-player attack into their three-player rush in one touch. **The cost of the failure is not the loss of possession; it is the odd-man rush.**
 
 ```facts
 Never: Force a low-percentage pass at the offensive blue line with no support back
@@ -262,8 +264,6 @@ Risk: Low-cost is not free — on one Swiss-league sample a dump-in carried a la
 Convention: Forcing that pass is not a rule and genuinely negotiable — a team trailing late, or built to attack in waves, will accept the risk deliberately
 ```
 
-**Why not.** The offensive blue line is where your attack is at its most stretched — your forwards are ahead of the puck, your defencemen have often stepped up to hold the zone. A turnover there converts your five-player attack into their three-player rush in one touch. **The cost of the failure is not the loss of possession; it is the odd-man rush.**
-
 **What to do instead.** **Chip the puck past the defender into the space behind them** and race for it, or **dump it into the far corner** and forecheck. Both concede possession about 114 feet from your net, moving away from it — the offensive blue line is 64 feet from their goal line. **Low-cost is not free:** on the Swiss-league tracking quoted under the risk map, a dump attempt carried a *larger* immediate threat against you than a carry-in — small figures, quoted there with their scope — because the dump is so often handed straight back. These are the answer when the pass is not on, not a reason to give up a puck you could have carried in. See [Zone Entries](../systems/zone_entries.md) for which to pick.
 
 **The test to run:** *if this pass is intercepted right now, how many of my teammates are behind the puck?* If the answer is fewer than two, do not make it.
@@ -272,6 +272,8 @@ Convention: Forcing that pass is not a rule and genuinely negotiable — a team 
 
 ### 6. Never stickhandle in your own slot — a coaching convention, not a rule
 
+**Why not.** Stickhandling is a play that buys time. In your own slot there is no time to buy and nothing worth buying it for. Your head is down, you are surrounded, you are in the highest-danger area on the ice, and the only outcomes are "you get out of it having gained nothing" or "you lose it having conceded everything."
+
 ```facts
 Never: Stickhandle in your own slot — stickhandling buys time, and there is no time to buy and nothing worth buying it for
 Risk: Head down, surrounded, in the highest-danger area — you either gain nothing or concede everything
@@ -279,8 +281,6 @@ Action: Take the puck out of the slot first — one stride to the wall, behind t
 Key: Change the location first, then make the decision
 Convention: "Never stickhandle in your own slot" is not a rule — about as close to unanimous as coaching advice gets, but it is still advice
 ```
-
-**Why not.** Stickhandling is a play that buys time. In your own slot there is no time to buy and nothing worth buying it for. Your head is down, you are surrounded, you are in the highest-danger area on the ice, and the only outcomes are "you get out of it having gained nothing" or "you lose it having conceded everything."
 
 **What to do instead.** Take the puck out of the slot before you do anything with it — one stride to the wall, behind the net, or a hard shot of it off the glass. **Change the location first, then make the decision.**
 
@@ -327,6 +327,8 @@ A sliding block is a choice for a specific moment, and wrong when you are screen
 
 ### 8. Never change with the puck in your defensive zone, or when the play is coming at you — a coaching convention, not a rule; the rulebook governs how you change, not when
 
+**Why not.** A **line change** is the most vulnerable four seconds your team has: for part of it you have players who are effectively not in the play, and the opponent can attack four-on-five into a zone where you have no margin.
+
 ```facts
 Never: Change with the puck in your defensive zone, or when the play is coming at you
 Risk: A line change is the most vulnerable four seconds your team has — the main risk is the opponent attacking four-on-five
@@ -335,8 +337,6 @@ Mindset: If you are tired and stuck in your own zone, you are not tired enough t
 Rule: A departing player must be within five feet of the bench and out of the play before the substitute steps on, or it is a bench minor for too many men (NHL 74.1; PWHL 76.1)
 Convention: No rule forbids changing on the fly because the moment is tactically bad — 74.1 governs only how the exchange is made. The rules that do bar a change are triggered by an event at a stoppage, such as your own icing, and not by the danger
 ```
-
-**Why not.** A **line change** is the most vulnerable four seconds your team has: for part of it you have players who are effectively not in the play, and the opponent can attack four-on-five into a zone where you have no margin.
 
 **What to do instead.** Change when the puck is deep in *their* end, when your team has clear possession in the neutral zone, or at a stoppage. If you are tired and stuck in your own zone, **you are not tired enough to change.** Get the puck out first, then change on the fly as the play moves north. See [Game Management](../systems/game_management.md).
 
@@ -554,14 +554,14 @@ Definitions first, because these three get conflated:
 
 ### The distinction
 
+**Anticipation is acting on information. Gambling is acting on hope.** They look identical from the bench when they work. They are completely different decisions.
+
 ```facts
 Key: Anticipation is acting on information; gambling is acting on hope — they look identical from the bench when they work
 Read: You have information when the carrier's hips and shoulders turn toward the receiver, they look twice, and the receiver's stick is already presented as a target
 Read: You counted their other options and there are none, or you have seen this player make this exact pass already tonight
 Mindset: You are gambling if the honest answer is "it felt like a pass was coming"
 ```
-
-**Anticipation is acting on information. Gambling is acting on hope.** They look identical from the bench when they work. They are completely different decisions.
 
 You are anticipating if you can answer *why* before you move — the carrier's hips and shoulders turned toward the receiver, they looked at the receiver twice, the receiver's stick is already presented as a target, you counted their other options and there are none, or you have seen this player make this exact pass already tonight. The full cue list is in [Scanning and Anticipation](scanning_and_anticipation.md). You are gambling if the honest answer is "it felt like a pass was coming."
 
@@ -850,6 +850,10 @@ If a hit from behind reaches the head, ⚠️ **Hockey Canada prices it as head 
 
 ### Do not compound the mistake
 
+**The most damaging thing about a bad decision is the decision that tries to fix it.** The pattern is universal and it looks like this: you give the puck away, you feel it, and thirty seconds later you force a low-percentage play to make up for it — a pinch you have not read, a cross-ice pass, a hit you leave your feet for.
+
+The second mistake is nearly always worse than the first, because the first was an error of execution and the second is an error of judgement made on purpose.
+
 ```facts
 Key: The most damaging thing about a bad decision is the decision that tries to fix it
 Never: Force a low-percentage play to make up for a giveaway — a pinch you have not read, a cross-ice pass, a hit you leave your feet for
@@ -858,21 +862,17 @@ Mindset: The next play is a new play — its expected value has nothing to do wi
 Key: If the boring option was right before your turnover, it is still right after it
 ```
 
-**The most damaging thing about a bad decision is the decision that tries to fix it.** The pattern is universal and it looks like this: you give the puck away, you feel it, and thirty seconds later you force a low-percentage play to make up for it — a pinch you have not read, a cross-ice pass, a hit you leave your feet for.
-
-The second mistake is nearly always worse than the first, because the first was an error of execution and the second is an error of judgement made on purpose.
-
 **The discipline is: the next play is a new play.** Its expected value has nothing to do with what just happened. If the boring option was right before your turnover, it is still right after it. Working on that separation is squarely the subject of the [Mental Game](../off-the-ice/mental_game.md).
 
 ### After the game
+
+Bad decisions are the most coachable thing in hockey, because unlike a shot or a stride they can be fixed in a conversation. Watch the video if you have it. Ask "what did I see, and what was actually there?" The gap between those two answers is your development plan. See [Practice and Development](../off-the-ice/practice_and_development.md).
 
 ```facts
 Action: Watch the video if you have it
 Read: Ask "what did I see, and what was actually there?" — the gap between those two answers is your development plan
 Key: Bad decisions are the most coachable thing in hockey, because unlike a shot or a stride they can be fixed in a conversation
 ```
-
-Bad decisions are the most coachable thing in hockey, because unlike a shot or a stride they can be fixed in a conversation. Watch the video if you have it. Ask "what did I see, and what was actually there?" The gap between those two answers is your development plan. See [Practice and Development](../off-the-ice/practice_and_development.md).
 
 ---
 

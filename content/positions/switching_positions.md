@@ -74,6 +74,8 @@ Start here, because it is more than new movers expect and it is the reason a swi
 
 ### What does not transfer: the map in your head
 
+What you actually lose is a set of location reflexes — where to look first, where to drift when nothing is happening, who you are responsible for when the puck goes to a particular place. Those took a season to build and they are position-specific. For the first few weeks in a new spot you will be **thinking** about things you used to do without thinking, and thinking is slow. That is normal and it passes.
+
 ```facts
 Key: What you lose is a set of location reflexes — where to look first, where to drift, who you pick up when the puck goes to a particular place
 Key: Location reflexes are position-specific and took a season to build
@@ -81,9 +83,9 @@ Risk: For the first few weeks you will be thinking about things you used to do w
 Mindset: The slowness of those first few weeks is normal, and it passes
 ```
 
-What you actually lose is a set of location reflexes — where to look first, where to drift when nothing is happening, who you are responsible for when the puck goes to a particular place. Those took a season to build and they are position-specific. For the first few weeks in a new spot you will be **thinking** about things you used to do without thinking, and thinking is slow. That is normal and it passes.
-
 ### When you are lost: go to the safe spot
+
+For the first few weeks you will lose the play — the puck goes somewhere your old map never sent you, and the instinct is to freeze or to chase it. **The fix is a default: when you do not know where to be, go to the spot that costs your team least, and read the play from there.** As a defenceman that is between the puck and your net, at the goalmouth if your partner is already on the puck. As a centre in your own end it is the high slot, the middle of the ice in front of your net, from the level of the faceoff dots up to the tops of the circles, going down into the corner only to support your defenceman when the puck goes in there. As a winger it is your lane, and in your own end level with the opposing defenceman on your side — their point — between them and the slot. Those are the defaults under a low zone collapse with three forwards in three lanes; under man-on-man the safe spot is goal side of your check, wherever they go. **Ask your bench which you are playing.** Arriving at the safe spot a beat late costs your team little; chasing the puck into somebody else's space is how an opponent ends up alone.
 
 ```facts
 Action: When you do not know where to be, go to your position's safe spot first and read the play from there
@@ -92,8 +94,6 @@ Position: Centre in your own end — the high slot, down into the corner only to
 Position: Winger — your lane, and in your own end level with their defenceman on your side, between them and the slot
 Convention: Those are the low-zone-collapse and three-lane versions; under man-on-man the safe spot is goal side of your check, so ask which your team plays
 ```
-
-For the first few weeks you will lose the play — the puck goes somewhere your old map never sent you, and the instinct is to freeze or to chase it. **The fix is a default: when you do not know where to be, go to the spot that costs your team least, and read the play from there.** As a defenceman that is between the puck and your net, at the goalmouth if your partner is already on the puck. As a centre in your own end it is the high slot, the middle of the ice in front of your net, from the level of the faceoff dots up to the tops of the circles, going down into the corner only to support your defenceman when the puck goes in there. As a winger it is your lane, and in your own end level with the opposing defenceman on your side — their point — between them and the slot. Those are the defaults under a low zone collapse with three forwards in three lanes; under man-on-man the safe spot is goal side of your check, wherever they go. **Ask your bench which you are playing.** Arriving at the safe spot a beat late costs your team little; chasing the puck into somebody else's space is how an opponent ends up alone.
 
 ---
 
@@ -201,16 +201,16 @@ That point-coverage job — high on your side while they have the puck, and, in 
 
 ### Wall play, and the one thing that overrides it
 
+**First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger — **a coaching ranking rather than a measured one** — and a centre rarely practises it. Puck on the far side of your body from the checker, side-on with your hip and backside toward them, feet wide, and know where the puck is going before you arrive. Where checking is barred, hold the position you have and never bump them; in a CARHA adult league, avoid the contact altogether.
+
+**One thing overrides all of it: never turn your back to anyone coming at you, never duck, and never take the wall on the point of your shoulder.** Those guard against three different injuries, at any speed. A turned back makes the contact a hit from behind, and USA Hockey warns that *"Even a light hit from behind could inflict a severe head or neck injury"*. A chin tucked to your chest puts your head into the boards first, and USA Hockey records that the neck injury from that can happen at walking speed: *"[a] player doesn't have to be going at full speed for this to happen"*. Skates parallel to the wall, forearm and hip to it, head up and chin off your chest — not the point of your shoulder, and not the whole shoulder if you can help it. Already facing the wall and cannot turn? Spread the load with your stick and gloves up on the glass — damage limitation, not a position to aim for. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) covers it.
+
 ```facts
 Key: Winning a 50-50 puck against the boards is the defining physical skill of a winger — a coaching ranking rather than a measured one — and it is not something a centre gets much practice at
 Technique: On the wall, puck on your far side, side-on, backside toward the checker, feet wide, and know where it is going before you arrive. Where checking is barred, never bump; under CARHA, avert contact
 Never: Turn your back to anyone coming at you. USA Hockey warns: "Even a light hit from behind could inflict a severe head or neck injury". Skates parallel to the wall
 Never: Duck. Ducking puts your head into the boards first, and USA Hockey warns that the neck injury from that head-down collision can occur at walking speed. Head up, chin off your chest
 ```
-
-**First thing to work on:** wall play. Winning a 50-50 puck against the boards is the defining physical skill of a winger — **a coaching ranking rather than a measured one** — and a centre rarely practises it. Puck on the far side of your body from the checker, side-on with your hip and backside toward them, feet wide, and know where the puck is going before you arrive. Where checking is barred, hold the position you have and never bump them; in a CARHA adult league, avoid the contact altogether.
-
-**One thing overrides all of it: never turn your back to anyone coming at you, never duck, and never take the wall on the point of your shoulder.** Those guard against three different injuries, at any speed. A turned back makes the contact a hit from behind, and USA Hockey warns that *"Even a light hit from behind could inflict a severe head or neck injury"*. A chin tucked to your chest puts your head into the boards first, and USA Hockey records that the neck injury from that can happen at walking speed: *"[a] player doesn't have to be going at full speed for this to happen"*. Skates parallel to the wall, forearm and hip to it, head up and chin off your chest — not the point of your shoulder, and not the whole shoulder if you can help it. Already facing the wall and cannot turn? Spread the load with your stick and gloves up on the glass — damage limitation, not a position to aim for. [Body Contact and Battles → Receiving a Hit Safely](../technique/body_contact_and_battles.md) covers it.
 
 ---
 
@@ -443,6 +443,8 @@ Receiving on the backhand is a trainable skill and [Passing and Receiving](../te
 
 ## The habits that actively work against you
 
+This is the section that distinguishes a position switch from simply learning a new position. Your existing instincts are not neutral. Several of them are precisely wrong in the new job, and because they are *automatic* they surface exactly when you are under pressure and have no time to think. **Coaching craft throughout — but it is the most consistently described pattern in this whole topic.**
+
 ```facts
 Key: Your existing instincts are not neutral — several of them are precisely wrong in the new job
 Risk: Because old positional instincts are automatic, they surface exactly when you are under pressure and have no time to think
@@ -451,8 +453,6 @@ Action: Name the habit out loud before the shift — "I am going to feel wrong g
 Key: Unlearning is slower than learning
 Never: Rely on general effort — the only reliable lever you have is deliberate attention on the specific reflex
 ```
-
-This is the section that distinguishes a position switch from simply learning a new position. Your existing instincts are not neutral. Several of them are precisely wrong in the new job, and because they are *automatic* they surface exactly when you are under pressure and have no time to think. **Coaching craft throughout — but it is the most consistently described pattern in this whole topic.**
 
 | Switch | The habit that served you | What it becomes |
 |---|---|---|
@@ -541,6 +541,10 @@ Action: Tell your linemates you are new to the position — thirty seconds befor
 
 ### If you are a parent
 
+Youth players get moved constantly, and at younger ages many programmes deliberately rotate players through positions so nobody specialises early. **That last part is not just custom — it is the governing body's own recommendation at the youngest age group.** USA Hockey's *Parent Handbook 2025-26* states that the 8U experience it recommends *"includes no full-time goalies, 7-9 players per team, station-based practices and cross-ice games to maximize fun, puck touches and skill development for every player"*, and on the same page that *"playing multiple sports is encouraged."* A coach rotating your eight-year-old through the net and through defence is following the model, not experimenting on your child.
+
+Beyond that specific recommendation the published guidance runs out; *How claims in this document are labelled*, above, sets out which books were searched and what they do and do not contain. Treat a move as information about the team, not a verdict on your child, and let them ask the coach the specific question themselves; it is a more valuable skill than the position is. The registration, programme and age-classification background sits in [Getting Started](../getting-started/getting_started.md), which covers it.
+
 ```facts
 Convention: Many programmes deliberately rotate young players through positions so nobody specialises early
 Key: USA Hockey's Parent Handbook 2025-26 recommends an 8U experience with "no full-time goalies", and says playing multiple sports is encouraged
@@ -549,10 +553,6 @@ Mindset: Treat a move as information about the team, not a verdict on your child
 Action: Let them ask the coach the specific question themselves — it is a more valuable skill than the position is
 Key: Beyond USA Hockey's 8U recommendation the published guidance runs out; the registration, programme and age-classification background sits in Getting Started
 ```
-
-Youth players get moved constantly, and at younger ages many programmes deliberately rotate players through positions so nobody specialises early. **That last part is not just custom — it is the governing body's own recommendation at the youngest age group.** USA Hockey's *Parent Handbook 2025-26* states that the 8U experience it recommends *"includes no full-time goalies, 7-9 players per team, station-based practices and cross-ice games to maximize fun, puck touches and skill development for every player"*, and on the same page that *"playing multiple sports is encouraged."* A coach rotating your eight-year-old through the net and through defence is following the model, not experimenting on your child.
-
-Beyond that specific recommendation the published guidance runs out; *How claims in this document are labelled*, above, sets out which books were searched and what they do and do not contain. Treat a move as information about the team, not a verdict on your child, and let them ask the coach the specific question themselves; it is a more valuable skill than the position is. The registration, programme and age-classification background sits in [Getting Started](../getting-started/getting_started.md), which covers it.
 
 ---
 

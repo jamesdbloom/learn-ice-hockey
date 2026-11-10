@@ -54,6 +54,8 @@ Calls vary by team, region, level and coach. Two things follow.
 
 ## Why verbal communication wins games
 
+**The puck carrier is the least informed player on the ice.** Their eyes are down or forward, and the forechecker closing from behind is in the one place they cannot look. Everyone else can see it.
+
 ```facts
 Key: The puck carrier is the least informed player on the ice — the forechecker closing from behind is where they cannot look
 Action: Say what you can see; the information costs you nothing and is useless sitting in your eyes
@@ -62,8 +64,6 @@ Priority: Call before the puck arrives — the same call as it arrives just star
 Mindset: The loudest team usually looks like the more skilled team, and most of that "chemistry" is information
 Key: Talking is the cheapest improvement available to a team — no fitness, no skill development, no ice time
 ```
-
-**The puck carrier is the least informed player on the ice.** Their eyes are down or forward, and the forechecker closing from behind is in the one place they cannot look. Everyone else can see it.
 
 **A call turns a blind decision into an informed one.** A defenceman retrieving in the corner has three plays to choose from. Without information they guess, and a guess in your own zone is how goals get scored. One word from the goalie — "time" or "man on" — ends the guessing.
 
@@ -134,6 +134,10 @@ These are the highest-value calls in hockey and the ones most often missed. All 
 
 ### Puck direction
 
+These tell the carrier where to put the puck. Because they arrive as instructions, they carry an obligation: only make them when you can genuinely see the option, and be prepared to be the target.
+
+**And several of these calls send a teammate into the boards, so the safety override on "man on" governs here too.** On a rim, a reverse or "eat it", ⚠️ **never turn your back to anyone coming at you, and never duck** — head up, chin off your chest. [Body Contact and Battles](../technique/body_contact_and_battles.md) has the full treatment.
+
 ```facts
 Action: Only call a direction you can genuinely see, and be prepared to be the target
 Never: Send "over" or "D-to-D" through the front of your own net — an interception there is point-blank. Behind the goal line is the usual route, but ask your coach which one yours uses
@@ -150,10 +154,6 @@ Rule: In Britain, plan for their goalie to come out for a dump-in — England Ic
 Convention: "Eat it" (an unverified call) is a last resort: with no pass, chip, rim or icing on, shield the puck on your stick and take the hit until help comes. Some benches mean "run the clock" instead — keep it moving, never frozen, and only with nobody on you; agree which yours means
 Never: Hold the puck under pressure in your own end — move it. Never pin it for a whistle: a minor in NHL, IIHF, PWHL, USA Hockey; Hockey Canada 6.12(b) and CARHA 55(a) can reach it even if checked
 ```
-
-These tell the carrier where to put the puck. Because they arrive as instructions, they carry an obligation: only make them when you can genuinely see the option, and be prepared to be the target.
-
-**And several of these calls send a teammate into the boards, so the safety override on "man on" governs here too.** On a rim, a reverse or "eat it", ⚠️ **never turn your back to anyone coming at you, and never duck** — head up, chin off your chest. [Body Contact and Battles](../technique/body_contact_and_battles.md) has the full treatment.
 
 **"Over" and "D-to-D" never go across the front of your own net**, because an interception in the slot is a point-blank chance. That is the fixed half; the route is a convention. Most teams go *behind* the net, below the goal line, and this document assumes that; some exchange high, above the tops of the circles. Ask your coach which yours uses. See [Defender](../positions/defender.md).
 
@@ -277,6 +277,8 @@ These are defensive-zone calls. They are the ones teams stop making when they ge
 
 #### Moving a screener — what the books allow
 
+**What to do, wherever you play: hold your ground beside the screener, do not lean on them, and lift their stick low on the shaft, well below the bottom hand, as the puck arrives — then let go.** Never walk them out and never cross-check them out. The rest of this section is what each book charges if you get it wrong.
+
 ```facts
 Technique: Never walk a screener out: it can be called interference anywhere and an illegal check in non-checking play. Hold your ice, no lean or push; as the puck arrives, lift the stick below the hands, let go
 Rule: At or near the hands, IIHF 55.1 reaches a stick lift on location alone, though its next sentence exempts stick-to-stick-only contact while checking; USA Hockey 623 and Hockey Canada 8.2(a) reach it only on effect. Lift well below the bottom hand as the puck arrives, then let go
@@ -293,8 +295,6 @@ Rule: A no-contact screen outside the crease is not a penalty — NHL and IIHF S
 Rule: The crease keying that leaves an outside screen legal is the NHL's and the IIHF's Rule 69 and the PWHL's Rule 71, the same crease keying in the feminine — USA Hockey writes no vision provision and Hockey Canada's two reach only the crease, so an outside screen is legal there too
 Rule: CARHA lets you stand your ground against a screener but not lean on them, and penalises contact you fail to avert — Note 2 to 66(a) against 49(a), CARHA adult leagues only. A push in the back is checking from behind: at least a minor and game misconduct in CARHA (53(a)) and Hockey Canada (7.5(a))
 ```
-
-**What to do, wherever you play: hold your ground beside the screener, do not lean on them, and lift their stick low on the shaft, well below the bottom hand, as the puck arrives — then let go.** Never walk them out and never cross-check them out. The rest of this section is what each book charges if you get it wrong.
 
 **A game misconduct can cost you the next game too.** Under USA Hockey, any game misconduct also suspends you for your team's next game, and a second major in the same game for at least two (404(b), 403(b)). In a CARHA league, a game misconduct that comes with a major automatically costs you at least one game, possibly more, unless it was for an accidental high stick (32(d)). Under Hockey Canada, a game misconduct in the last 10 minutes of regular time, in overtime or after the game costs at least the next game or seven days (4.8(c)).
 
@@ -534,6 +534,8 @@ The standard goalie vocabulary:
 
 ## How to call well
 
+The technique of calling matters as much as the vocabulary.
+
 ```facts
 Priority: Early beats accurate — a slightly wrong call before the puck arrives beats a perfect one as it does, except "time", which you say only when sure
 Priority: Short beats specific — one or two syllables; if your call needs a comma, it is too long
@@ -544,8 +546,6 @@ Never: Say "time" unless you are sure — a false "time" puts a teammate into co
 Convention: One word, one meaning, all season, across the whole team
 Action: Answer calls — "yep", "got it", a raised glove; an unacknowledged switch is two players hoping
 ```
-
-The technique of calling matters as much as the vocabulary.
 
 - **Early beats accurate.** A slightly wrong call made before the puck arrives is more useful than a perfect one made as it does. The receiver's decision is already forming; you are trying to inform it, not correct it afterwards.
 

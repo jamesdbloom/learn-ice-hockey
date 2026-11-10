@@ -47,6 +47,8 @@ Everything downstream — soft hands, protection, deception — is decided by wh
 
 ### The top hand does the work
 
+Your **top hand** is the hand nearest the butt-end of the stick (left hand for a left-handed shooter, right for a right-handed shooter). It is your control hand. It opens and closes the blade over the puck, it drives the puck side to side, and it does most of the actual stickhandling. Think of the stick as a lever: the top hand is the end you steer with.
+
 ```facts
 Technique: Steer with the top hand — it opens and closes the blade and does most of the stickhandling
 Position: Top hand nearest the butt-end — left hand for a left-handed shooter, right for a right-handed one
@@ -56,13 +58,15 @@ Action: Tighten the bottom hand to set the angle on a wide reach or hold the puc
 Technique: Off-ice, slide a cut-off bottle or tube over the shaft so the bottom hand cannot cheat
 ```
 
-Your **top hand** is the hand nearest the butt-end of the stick (left hand for a left-handed shooter, right for a right-handed shooter). It is your control hand. It opens and closes the blade over the puck, it drives the puck side to side, and it does most of the actual stickhandling. Think of the stick as a lever: the top hand is the end you steer with.
-
 Your **bottom hand** is a guide and a stabiliser. When you shoot or pass it becomes the power hand; while you are stickhandling it does much less, and the shaft should slide fairly freely through a loose grip. **It is not doing nothing, though** — it steadies the blade, it sets the angle on a wide reach, and it is what you tighten on when you need to hold the puck against a stick. The fault to avoid is a bottom hand that *grips* and therefore fights the top hand, not a bottom hand that participates: see [Grip pressure](#grip-pressure--hold-it-like-a-bird) below, where a tight bottom hand is named as the first thing to check when your hands have gone dead.
 
 **Test it off the ice:** slide a cut-off water bottle or a paper-towel tube over the shaft and hold *that* with your bottom hand instead of gripping the stick. The shaft slides freely, your bottom hand cannot cheat, and your top hand is forced to learn the job. Ten minutes of this teaches more than an hour of ordinary reps.
 
 ### Grip pressure — hold it like a bird
+
+Firmly enough that it cannot escape, softly enough that you do not crush it. A squeezed hand cannot feel anything, and if you cannot feel the puck you cannot play with your head up. Look at the bottom hand first — one coach's order of checking, not a count. [Better Hockey](https://www.betterhockey.com/blogs/stickhandling/how-to-develop-soft-hands)'s head coach calls a white-knuckle grip, *"especially in the bottom hand"*, *"the number-one thing that kills soft hands"*. He says the bottom-hand grip is the first thing he fixes on a player whose hands have gone dead.
+
+That ranks grip as the top killer of *feel*, not as the reason pucks bounce off blades — on that, the same guide leads with cushioning and blade angle, which are [Soft hands](#soft-hands) and [Cup the blade](#cup-the-blade) below. Neither is a measurement.
 
 ```facts
 Technique: Hold the stick firmly enough that it cannot escape, softly enough that you do not crush it
@@ -71,11 +75,9 @@ Key: A squeezed hand cannot feel, and if you cannot feel the puck you cannot pla
 Read: The bottom hand is where to look first for excess grip pressure — one coach's order of checking, not a count
 ```
 
-Firmly enough that it cannot escape, softly enough that you do not crush it. A squeezed hand cannot feel anything, and if you cannot feel the puck you cannot play with your head up. Look at the bottom hand first — one coach's order of checking, not a count. [Better Hockey](https://www.betterhockey.com/blogs/stickhandling/how-to-develop-soft-hands)'s head coach calls a white-knuckle grip, *"especially in the bottom hand"*, *"the number-one thing that kills soft hands"*. He says the bottom-hand grip is the first thing he fixes on a player whose hands have gone dead.
-
-That ranks grip as the top killer of *feel*, not as the reason pucks bounce off blades — on that, the same guide leads with cushioning and blade angle, which are [Soft hands](#soft-hands) and [Cup the blade](#cup-the-blade) below. Neither is a measurement.
-
 ### Hands away from the body
+
+Watch a new player and you will usually see **"hip lock"** — the top hand glued to the hip, the puck rattling back and forth in a narrow band directly in front of the skates. It feels safe. It is the opposite of safe.
 
 ```facts
 Position: Top hand out in front of your chest, roughly a fist's distance off your torso, elbow slightly bent
@@ -84,8 +86,6 @@ Goal: Reach the full arc around your body — far left, far right, out front, an
 Key: Hands pinned to the hips leave no far side, so the puck is always in front of the checker too
 Risk: With tight hands, every stick check that arrives will get a piece of the puck
 ```
-
-Watch a new player and you will usually see **"hip lock"** — the top hand glued to the hip, the puck rattling back and forth in a narrow band directly in front of the skates. It feels safe. It is the opposite of safe.
 
 - Pull the top hand **out in front of your chest**, roughly a fist's distance off your torso, with a slight bend in the elbow.
 - From there, your blade can reach the full arc around your body: far left, far right, out front, and behind your heels.
@@ -115,6 +115,8 @@ Practise it deliberately — reach as far as you can to one side, release the bo
 
 ### Soft hands
 
+"Soft hands" means the blade **gives** when the puck arrives instead of repelling it. Loose grip, active wrists, and a slight draw-back of the blade on contact so the puck deadens rather than rebounds. The coaching cue is *catch it like an egg*. Stiff wrists mean dead hands.
+
 ```facts
 Technique: Let the blade give as the puck arrives — loose grip, active wrists, a slight draw-back on contact
 Goal: Deaden the puck rather than let it rebound off the blade
@@ -122,9 +124,9 @@ Key: Catch it like an egg
 Never: Handle with stiff wrists — stiff wrists mean dead hands
 ```
 
-"Soft hands" means the blade **gives** when the puck arrives instead of repelling it. Loose grip, active wrists, and a slight draw-back of the blade on contact so the puck deadens rather than rebounds. The coaching cue is *catch it like an egg*. Stiff wrists mean dead hands.
-
 ### Cup the blade
+
+**Cupping** means angling the blade so it leans over the top of the puck rather than standing vertical. Cup on the forehand and cup on the backhand — the puck sits in the pocket instead of rolling up the blade and flipping over. When the puck keeps jumping off your stick, check the blade cup and your grip first — an order to check them in, not a measured share of the cause. One guide goes further: Hockey's Arsenal writes that when pucks bounce wildly off a player's stick as they receive it, *"it's almost always driven by a bottom hand that grips the stick too tight."* That is an impression, not a count, but it is the same bottom hand [Grip pressure](#grip-pressure--hold-it-like-a-bird) sends you to first.
 
 ```facts
 Technique: Angle the blade so it leans over the top of the puck rather than standing vertical
@@ -135,11 +137,11 @@ Read: A puck that keeps jumping off your stick sends you to the blade cup and th
 Read: One guide used here goes further and says a too-tight bottom hand is almost always the cause of a puck bouncing off the blade — an impression, not a count
 ```
 
-**Cupping** means angling the blade so it leans over the top of the puck rather than standing vertical. Cup on the forehand and cup on the backhand — the puck sits in the pocket instead of rolling up the blade and flipping over. When the puck keeps jumping off your stick, check the blade cup and your grip first — an order to check them in, not a measured share of the cause. One guide goes further: Hockey's Arsenal writes that when pucks bounce wildly off a player's stick as they receive it, *"it's almost always driven by a bottom hand that grips the stick too tight."* That is an impression, not a count, but it is the same bottom hand [Grip pressure](#grip-pressure--hold-it-like-a-bird) sends you to first.
-
 Rolling the top-hand wrist is what changes the cup from forehand to backhand. That wrist roll is the mechanical heart of stickhandling.
 
 ### Wrists, not arms
+
+The puck should move because your wrists and hands moved, not because your shoulders swung. Big arm sweeps are slow, visible from twenty feet away, and they drag your whole upper body off balance. Quick wrists are fast, quiet, and reversible — you can abort halfway through a wrist move, and you cannot abort halfway through an arm swing.
 
 ```facts
 Technique: Move the puck with your wrists and hands, not by swinging your shoulders
@@ -148,11 +150,11 @@ Key: You can abort a wrist move halfway through; you cannot abort an arm swing
 Action: Drill soft touch — puck or ball back and forth as fast as you can with minimal lower-arm movement
 ```
 
-The puck should move because your wrists and hands moved, not because your shoulders swung. Big arm sweeps are slow, visible from twenty feet away, and they drag your whole upper body off balance. Quick wrists are fast, quiet, and reversible — you can abort halfway through a wrist move, and you cannot abort halfway through an arm swing.
-
 A useful off-ice drill (**soft touch**): move a ball or puck back and forth as fast as you can with as little lower-arm movement as possible. Only the hands and the top forearm should be working.
 
 ### Wide dribbles and tight dribbles
+
+These are two different tools, and you need both. Two terms first. A **poke check** is an opponent jabbing their stick blade straight out along the ice to knock the puck off yours. It is the check most of this section defends against, because coaches treat it as the commonest way a puck is taken — a judgement, not a count. And the **slot** is the ice directly in front of the net, between the two faceoff circles, running from the top of the circles down to the goalmouth; [Rink Map](../foundation/rink_map.md) has that and every other named area of the ice.
 
 ```facts
 Options: Wide — big sweeping pulls outside your feet, for open ice, setting up a deke, or crossing a defender's stick
@@ -161,8 +163,6 @@ Risk: Wide handling exposes the puck to a poke check — an opponent jabbing the
 Risk: Tight handling limits your reach, and you get pinned if you never widen
 Never: Own only one of the two — wide-only players get poke-checked, tight-only players never move a defender
 ```
-
-These are two different tools, and you need both. Two terms first. A **poke check** is an opponent jabbing their stick blade straight out along the ice to knock the puck off yours. It is the check most of this section defends against, because coaches treat it as the commonest way a puck is taken — a judgement, not a count. And the **slot** is the ice directly in front of the net, between the two faceoff circles, running from the top of the circles down to the goalmouth; [Rink Map](../foundation/rink_map.md) has that and every other named area of the ice.
 
 | | **Wide** | **Tight** |
 |---|---|---|
@@ -174,14 +174,14 @@ The mistake is having only one. Players who only handle wide get poke-checked in
 
 ### Front-to-back as well as side-to-side
 
+Almost everyone learns side-to-side and stops. Side-to-side alone is a rhythm, and rhythms get read — a defender who has watched you go left-right-left-right for three seconds knows exactly when the puck will be on your backhand.
+
 ```facts
 Never: Handle side-to-side only — it is a rhythm, and three seconds of it tells a defender where the puck will be
 Action: Train the whole reachable circle — in front, both sides, and behind your heels on both sides
 Technique: Add quick diagonal transfers, front-left to rear-right and back again
 Goal: Front-to-back range is what makes the toe drag possible and pulls the puck back from a side check
 ```
-
-Almost everyone learns side-to-side and stops. Side-to-side alone is a rhythm, and rhythms get read — a defender who has watched you go left-right-left-right for three seconds knows exactly when the puck will be on your backhand.
 
 Train the whole reachable circle:
 
@@ -194,13 +194,13 @@ Front-to-back is also what makes the toe drag possible, and it is what lets you 
 
 ### Keep the puck moving
 
+A stationary puck on a stationary blade is the easiest thing in hockey to take. Constant small movement — dribbling — keeps a defender from committing to a poke check, because they never know which touch is the one they can reach.
+
 ```facts
 Never: Let a stationary puck sit on a stationary blade — it is the easiest thing in hockey to take
 Action: Keep constant small movement on the puck
 Goal: Stop a defender committing to a poke check — they never know which touch is the one they can reach
 ```
-
-A stationary puck on a stationary blade is the easiest thing in hockey to take. Constant small movement — dribbling — keeps a defender from committing to a poke check, because they never know which touch is the one they can reach.
 
 ---
 
@@ -210,17 +210,19 @@ A stationary puck on a stationary blade is the easiest thing in hockey to take. 
 
 ### Why it matters more than anything else
 
+Look at what the rest of this guide asks you to do. Read the [forecheck](../systems/forechecking_systems.md) and pick the right side. Find the [support](../hockey-iq/puck_support_and_spacing.md) option. Time your [zone entry](../systems/zone_entries.md). [Scan](../hockey-iq/scanning_and_anticipation.md) before you receive. Hit a moving teammate with a [pass](passing_and_receiving.md). Every single one of those requires your eyes to be off the puck.
+
 ```facts
 Key: Reading the forecheck, finding support, timing an entry and hitting a moving teammate all need your eyes off the puck
 Never: Stare at the puck — it locks you out of every tactical idea in the game, however well you understand it
 Risk: A puck-watcher gets hit hard, because they cannot see the checker coming
 ```
 
-Look at what the rest of this guide asks you to do. Read the [forecheck](../systems/forechecking_systems.md) and pick the right side. Find the [support](../hockey-iq/puck_support_and_spacing.md) option. Time your [zone entry](../systems/zone_entries.md). [Scan](../hockey-iq/scanning_and_anticipation.md) before you receive. Hit a moving teammate with a [pass](passing_and_receiving.md). Every single one of those requires your eyes to be off the puck.
-
 A player who stares at the puck is not a worse hockey player by a little. They are locked out of every tactical idea in the game, no matter how well they understand it, because understanding arrives through the eyes. They also get hit hard, because they cannot see the checker coming.
 
 ### How to develop it — feel, don't look
+
+Do not simply order yourself to look up; you will look up, lose the puck, and look back down. Build the **feel** first, and the eyes lift on their own.
 
 ```facts
 Never: Simply order yourself to look up — you will look up, lose the puck, and look straight back down
@@ -229,8 +231,6 @@ Action: Peek, don't stare. Start with eyes up and glance down only when you have
 Position: Eyes up and forward, not chin to the ceiling — that puts the puck at the bottom edge of your vision
 Action: Widen your handling — feel comes from variety, and a six-inch band teaches one sensation
 ```
-
-Do not simply order yourself to look up; you will look up, lose the puck, and look back down. Build the **feel** first, and the eyes lift on their own.
 
 1. **Learn the blade by touch.** Move the puck slowly and deliberately and pay attention to how it feels on the **toe**, in the **middle**, and on the **heel** — and on the forehand and backhand of each. Different spots feel genuinely different through the shaft. Name them in your head as you go.
 2. **Peek, don't stare.** Start with your eyes up and glance down only when you have genuinely lost the puck's position. Then make the glances shorter and rarer. The goal is knowing where the puck is without looking, not heroically refusing to look.
@@ -370,6 +370,8 @@ USA Hockey answers it differently. ⚠️ **Do not carry the IIHF's answers stra
 
 ### The toe drag
 
+The **toe drag** is a pull using the very tip (toe) of the blade to draw the puck back toward your feet, usually after pushing it out to bait a stick.
+
 ```facts
 Technique: Push the puck out on the forehand to offer it, roll the toe over its far side, drag it back toward your feet
 Technique: Loosen the top hand as you roll — the stick is held almost in the fingertips
@@ -378,8 +380,6 @@ Goal: The toe drag is a protection move as much as a beat-a-guy move — a faile
 Read: Use it against a reaching stick, a defender with their weight forward, or to pull the puck around net-front traffic
 Never: Use the toe drag in a game until you can do it cleanly several times in a row in practice
 ```
-
-The **toe drag** is a pull using the very tip (toe) of the blade to draw the puck back toward your feet, usually after pushing it out to bait a stick.
 
 **How it works:**
 
@@ -402,6 +402,8 @@ The whole idea in one sentence: **put your body between the checker and the puck
 
 ### Puck on the far side
 
+The foundation. The puck lives on the **side of your body away from the pressure**. If the checker is on your right, the puck is on your left, and your torso is the wall between them.
+
 ```facts
 Position: Puck on the side of your body away from the pressure, with your torso as the wall between them
 Never: Let the puck sit on the pressure side — their stick has a shorter distance to travel than yours
@@ -409,8 +411,6 @@ Technique: Handle with the outside hand where you can, out toward the toe of the
 Position: Keep your blade on the far side of the puck too, so a poke has to go through the puck and your stick
 Key: A far-side puck is only available to a player whose hands can operate wide
 ```
-
-The foundation. The puck lives on the **side of your body away from the pressure**. If the checker is on your right, the puck is on your left, and your torso is the wall between them.
 
 - If the puck is on the same side as the pressure, you have already lost it — you are relying on your stick to beat their stick, and their stick has a shorter distance to travel.
 - Handle it with the outside hand where you can, out toward the toe of the blade, away from the poke-check lane.
@@ -536,6 +536,8 @@ The NHL, the IIHF and the PWHL put force in the definition — NHL **Rule 59.1**
 
 ### Spinning off pressure
 
+Protection is a way to buy time, not a place to live. Once it has bought you that time, get out.
+
 ```facts
 Key: Protection buys time, not a place to live — once it has bought you that time, get out
 Technique: From side-on with your weight low, spin away from the checker, pushing off the outside edge of the outside skate — only off a checker already leaning on you, never one still coming at you
@@ -544,8 +546,6 @@ Options: Or take a tight turn across their path, so your body stays between them
 Read: Spin the moment you feel them lean in — spin before they commit and they simply follow you
 Key: The spin-off and the tight turn are both edge-work moves before they are hand moves
 ```
-
-Protection is a way to buy time, not a place to live. Once it has bought you that time, get out.
 
 - **The spin-off / pivot.** From side-on, hip toward the checker and weight low, rotate away from them and take the puck with you. Spin only off a checker already leaning on you, never off one still coming at you, whatever their speed: mid-spin your back is to them. The push comes off the **outside edge of the outside skate**. For **skates and edges**, "outside" is defined relative to the *turn*, not to the checker or the boards ("outside **shoulder**", later in this document, is the different, boards-relative sense). As in [Skating](skating.md#the-two-foot-hockey-stop), the **outside skate is the one further from the side you are turning toward**, and its **outside edge** is the little-toe side. Turning left, that is the little-toe side of your right blade, and driving against it throws your body left. Their momentum is going into where you were; you are already leaving.
 - **The tight turn.** Cut across the checker's path rather than away from it, so that your body stays between them and the puck through the whole turn.
@@ -579,6 +579,8 @@ The boards are a free extra defender, on your side.
 
 ### Know your out before you get there
 
+This is the idea that separates players who protect the puck from players who merely survive contact.
+
 ```facts
 Key: Protection is not a destination — every second you hold the puck, a second checker is arriving
 Never: Plan to shield it until something happens — what happens is a turnover
@@ -587,8 +589,6 @@ Options: With nobody there, your out is a rim, a reverse, a spin to the middle o
 Read: Know where the pressure is coming from, and therefore which side the puck must be on when you arrive
 Convention: Which out you take off your own wall — chip, rim, reverse or pass — is your team's call. Under pressure there, never hold it. Ask your coach
 ```
-
-This is the idea that separates players who protect the puck from players who merely survive contact.
 
 Protection is not a destination. Every second you hold the puck under pressure, a second checker is arriving. If your plan is "shield it until something happens," what happens is a turnover.
 
@@ -606,6 +606,8 @@ Answering those three before your stick touches the puck is what [scanning](../h
 
 ### Protecting it low in the offensive zone
 
+Holding the puck down low in the other team's end is protection with a different purpose. In your own end you protect to get the puck out; here you protect to make the defence move, and every second you keep it is a second they spend chasing rather than covering.
+
 ```facts
 Action: Below the goal line with a defender closing, keep your feet moving and the puck on your far side — a carrier who stops down low gets pinned
 Options: Cut back up the wall you came down — a defender committed toward the corner cannot turn as fast as you. Turn before they can reach you, never to face the wall with them behind you
@@ -615,8 +617,6 @@ Read: Look for a teammate at the net front before any of those — a quick pass 
 Never: Duck when the check comes on the wall down here — take it with skates parallel to the boards, forearm and hip to the wall, head up, chin off your chest
 Convention: How long a team keeps the puck low before attacking the net is a system choice. Ask your bench what yours plays
 ```
-
-Holding the puck down low in the other team's end is protection with a different purpose. In your own end you protect to get the puck out; here you protect to make the defence move, and every second you keep it is a second they spend chasing rather than covering.
 
 - **Keep your feet moving and the puck on your far side.** A carrier who stops behind the net or in the corner gives the defender a stationary target to pin. Moving, you can turn either way.
 - **The common approach is to cycle it.** Cut back up the wall you came down — a defender committed toward the corner cannot change direction as fast as you can — or pass it back and down to the teammate arriving behind you — low-to-low — and get away to a new spot. Make the cutback before the defender can reach you; once they can, it is too late to turn, so go side-on to the wall, forearm and hip against it, and never turn to face the wall with them behind you. [Offensive Zone Play](../systems/offensive_zone_play.md#4-cycling) covers the cycle in full, including when to rim and when to reverse.
@@ -633,14 +633,14 @@ It is still a battle on the wall, so the posture rule above holds here unchanged
 
 ### Why so many players slow down the moment they get the puck
 
+Handling and skating compete for attention, and the stride is what gets dropped. Hence the most common sight in amateur hockey: a player receives a pass in stride, immediately decelerates to a comfortable handling speed, and hands the defence a free two seconds. Specifically, what degrades is that your arms stop driving the stride because they are working the stick, your head drops (which pulls your weight forward off the balls of your feet and shortens your extension), and your feet narrow, which weakens your edges. **Speed is the most valuable thing you have, and the whole point of good hands is that they cost you none of it.**
+
 ```facts
 Never: Decelerate to a comfortable handling speed on receiving the puck — it hands the defence a free two seconds
 Read: What degrades when you pick the puck up is your arms driving the stride, your head position, and the width of your feet
 Risk: A dropped head pulls your weight forward off the balls of your feet and shortens your extension
 Key: Speed is the most valuable thing you have, and good hands are meant to cost you none of it
 ```
-
-Handling and skating compete for attention, and the stride is what gets dropped. Hence the most common sight in amateur hockey: a player receives a pass in stride, immediately decelerates to a comfortable handling speed, and hands the defence a free two seconds. Specifically, what degrades is that your arms stop driving the stride because they are working the stick, your head drops (which pulls your weight forward off the balls of your feet and shortens your extension), and your feet narrow, which weakens your edges. **Speed is the most valuable thing you have, and the whole point of good hands is that they cost you none of it.**
 
 ### Carry, don't dribble, when you are moving
 
@@ -660,6 +660,8 @@ At full stride you should not be stickhandling every step. Instead:
 
 ### Pushing it into space and skating onto it
 
+The advanced version, and the one that keeps your speed highest: **you and the puck do not have to travel together.**
+
 ```facts
 Key: You and the puck do not have to travel together
 Action: Push the puck into the space you are going to be in, then skate onto it
@@ -667,8 +669,6 @@ Options: Chip it off the boards past a defender, or slip it past their skates an
 Goal: Beat a stick that is sealing your handling lane — the puck goes past it, and so do you, separately
 Key: You do not need hands to beat a defender if the puck can go one side and you can go the other
 ```
-
-The advanced version, and the one that keeps your speed highest: **you and the puck do not have to travel together.**
 
 - Push the puck into the space you are going to be in, then skate onto it. This is how you beat a stick that is sealing your handling lane — the puck goes past the stick, and so do you, separately.
 - Chip it off the boards past a defender and skate around them to collect it. The wall makes the pass for you.
@@ -678,6 +678,8 @@ This is also the honest answer to a lot of 1-on-1s: you do not need hands to bea
 
 ### Head up while carrying
 
+The reason to carry rather than dribble at speed is that carrying is cheap in attention. Every stride you spend looking at the puck is a stride you did not spend reading the defence. If you can only look up when you slow down, you will only make decisions when you are slow.
+
 ```facts
 Key: Carrying is cheap in attention — a stride spent looking at the puck is a stride not spent reading the defence
 Risk: If you can only look up when you slow down, you will only make decisions when you are slow
@@ -685,8 +687,6 @@ Action: Practise one-handed carries — top hand only for a stride or two, which
 Action: Do your crossover, transition and tight-turn drills with a puck at least half the time
 Goal: Speed across the blue line forces defenders to retreat; a carrier who decelerates at the line is easy to defend
 ```
-
-The reason to carry rather than dribble at speed is that carrying is cheap in attention. Every stride you spend looking at the puck is a stride you did not spend reading the defence. If you can only look up when you slow down, you will only make decisions when you are slow.
 
 Two habits pay here. **Practise one-handed carries** — top hand only for a stride or two, which frees the other arm to drive. And, from the skating side of the seam, **do your crossover, transition and tight-turn drills with a puck at least half the time** ([Skating](skating.md)), because that is how you will use them. Where all of this matters most is on [zone entries](../systems/zone_entries.md): speed across the blue line forces defenders to retreat, and a carrier who decelerates at the line makes the entry easy to defend.
 
@@ -759,13 +759,13 @@ Key: If you learn one move from this section, learn the head and shoulder fake �
 
 ### Over-deking
 
+More moves is not better. Every extra move is another moment the puck spends exposed and another chance for a stick to arrive. The best deceptive players use one convincing fake and accelerate, not four fancy ones. If you find yourself on your third move, the play has already gone wrong.
+
 ```facts
 Never: Use four fancy fakes where one convincing one would do
 Risk: Every extra move is another moment the puck spends exposed and another chance for a stick to arrive
 Read: If you find yourself on your third move, the play has already gone wrong
 ```
-
-More moves is not better. Every extra move is another moment the puck spends exposed and another chance for a stick to arrive. The best deceptive players use one convincing fake and accelerate, not four fancy ones. If you find yourself on your third move, the play has already gone wrong.
 
 ---
 
@@ -797,14 +797,14 @@ The one thing every source agrees on is the negative: **do not skate straight at
 
 ### Change speed, not just direction
 
+Defenders defend direction well. They are coached to it, they practise it, and their backwards skating is built for it. What they defend badly is **timing**.
+
 ```facts
 Key: Defenders defend direction well and timing badly
 Action: Slow down to bait, then explode — a defender who has just slowed cannot re-accelerate backwards quickly
 Read: Attack while they are transitioning from backwards to forwards, or moving laterally
 Never: Use straight-line speed every rush — it leaves the defender only one problem to solve
 ```
-
-Defenders defend direction well. They are coached to it, they practise it, and their backwards skating is built for it. What they defend badly is **timing**.
 
 - **Slow down to bait, then explode.** A defender maintaining a gap has to match your speed. If you decelerate, they must decelerate or run into you — and a defender who has just slowed down cannot re-accelerate backwards quickly. Go the instant they settle.
 - **Attack while they are transitioning.** The moment they pivot from backwards to forwards, or move laterally, they are momentarily unable to change direction again.
@@ -827,14 +827,14 @@ A defender who has committed weight in one direction cannot recall it. Attack *i
 
 ### The honest point
 
+**Win 1-on-1s with a change of speed and body position, not with your hands.**
+
 ```facts
 Key: Win 1-on-1s with a change of speed and body position more than with your hands
 Action: If you have a step, just skate — skating right at the defenceman to try a move is how you get stood up
 Goal: Creating a chance, not beating the defender — a deke leaving you no speed and no angle has achieved nothing
 Read: A drive wide that beats nobody but draws two defenders and opens a pass to the middle has achieved a great deal
 ```
-
-**Win 1-on-1s with a change of speed and body position, not with your hands.**
 
 Watch closely and you will see the same three shapes over and over: a defender flat-footed and beaten wide by pure pace, a defender caught in transition, or a puck chipped into space with the attacker skating around to it. **Nobody has counted how the beats divide between them**, so take that as something to look for rather than a distribution — but notice what all three have in common: not one of them is a defender beaten by stickhandling.
 
@@ -851,6 +851,8 @@ Good hands are a tool for when there is no better option. Reaching for them when
 
 ### In your own defensive zone
 
+A turnover here becomes a scoring chance immediately, and there is no recovery time. Get the puck moving: pass it, rim it, reverse it, or if nothing is on, put it off the glass and out. **Off it, never over it:** a puck you shoot or bat directly over the glass from your own zone is a delay-of-game minor under the NHL, IIHF and PWHL even when you did not mean it. A puck put out of play on purpose is penalised in every book here. Nobody has ever been criticised for a clean, boring defensive-zone exit. ⚠️ **A rim and a reverse are both played on the wall with a forechecker arriving on you, and the posture you take that contact in is not a preference: never turn your back to anyone coming at you, and never duck.** Get your **skates parallel to the wall** instead, **forearm and hip against it** — not the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest ([Body Contact and Battles](body_contact_and_battles.md), which covers this). See [Breakouts](../systems/breakouts.md) and [Risk Management](../hockey-iq/risk_management.md).
+
 ```facts
 Never: Stickhandle in your own defensive zone — a turnover here is a scoring chance immediately, with no recovery time
 Action: Get the puck moving — pass it, rim it, reverse it, or put it off the glass and out, never over it
@@ -859,9 +861,9 @@ Never: Turn your back to anyone coming at you on a rim or a reverse, and never d
 Key: Nobody has ever been criticised for a clean, boring defensive-zone exit
 ```
 
-A turnover here becomes a scoring chance immediately, and there is no recovery time. Get the puck moving: pass it, rim it, reverse it, or if nothing is on, put it off the glass and out. **Off it, never over it:** a puck you shoot or bat directly over the glass from your own zone is a delay-of-game minor under the NHL, IIHF and PWHL even when you did not mean it. A puck put out of play on purpose is penalised in every book here. Nobody has ever been criticised for a clean, boring defensive-zone exit. ⚠️ **A rim and a reverse are both played on the wall with a forechecker arriving on you, and the posture you take that contact in is not a preference: never turn your back to anyone coming at you, and never duck.** Get your **skates parallel to the wall** instead, **forearm and hip against it** — not the point of your shoulder, and not the whole shoulder if you can help it — head up and chin off your chest ([Body Contact and Battles](body_contact_and_battles.md), which covers this). See [Breakouts](../systems/breakouts.md) and [Risk Management](../hockey-iq/risk_management.md).
-
 ### Through the middle of the ice
+
+The middle is where the most defenders are, where a lost puck goes straight to the slot, and where you have no boards to help you. Dangling through the middle of your own end or the neutral zone is a high-cost, low-reward bet. Carry through the middle when it is genuinely open; do not *stickhandle* through it.
 
 ```facts
 Never: Dangle through the middle of your own end or the neutral zone — high cost, low reward
@@ -869,9 +871,9 @@ Risk: The middle holds the most defenders, a lost puck goes straight to the slot
 Options: Carry through the middle when it is genuinely open — carrying is not stickhandling
 ```
 
-The middle is where the most defenders are, where a lost puck goes straight to the slot, and where you have no boards to help you. Dangling through the middle of your own end or the neutral zone is a high-cost, low-reward bet. Carry through the middle when it is genuinely open; do not *stickhandle* through it.
-
 ### When a simple pass is available
+
+**If you break one habit from this section, break this one: dangling when a pass was on.** A pass moves the puck faster than any player can skate, it does not leave the puck sitting on your blade for a defender to poke at, and it moves the defence more than a deke does. (Nothing this document draws on counts how often that choice gets made, so take it as a priority rather than as a statistic.) If a teammate is open, the pass is almost always the better play — and a pass to a teammate in a worse position is still usually better than a move against a defender in a good one.
 
 ```facts
 Never: Dangle when a pass was on — the pass is faster than you can skate, cannot be poked off your blade, and moves the defence further
@@ -879,8 +881,6 @@ Key: A pass moves the puck faster than any player can skate and does not expose 
 Action: Look for the pass first, and only then consider the move
 Priority: A pass to a teammate in a worse position usually still beats a move against a defender in a good one
 ```
-
-**If you break one habit from this section, break this one: dangling when a pass was on.** A pass moves the puck faster than any player can skate, it does not leave the puck sitting on your blade for a defender to poke at, and it moves the defence more than a deke does. (Nothing this document draws on counts how often that choice gets made, so take it as a priority rather than as a statistic.) If a teammate is open, the pass is almost always the better play — and a pass to a teammate in a worse position is still usually better than a move against a defender in a good one.
 
 The habit to build: **look for the pass first, and only then consider the move.** Not the other way around.
 
@@ -904,14 +904,14 @@ You can beat one player. You cannot beat two, and pretending otherwise is how a 
 
 ### When you are the last player back
 
+If losing the puck means an odd-man rush against you, the move is off. Always.
+
 ```facts
 Never: Try a move when losing the puck means an odd-man rush against you — that prohibition has no exceptions
 Convention: How much individual carrying a team wants varies enormously — some coaches want the first available pass, every time
 Convention: Some want wingers attacking 1-on-1 on the wall; others want everything chipped behind the defence for a forecheck
 Convention: The default assumed here is a possession-oriented breakout with a 2-1-2 forecheck — ask your coach
 ```
-
-If losing the puck means an odd-man rush against you, the move is off. Always.
 
 ![](diagram:the-last-player-back)
 
@@ -931,6 +931,8 @@ The three points that are specifically puck-*control* rather than receiving, and
 
 ### What each position actually needs
 
+The underlying skills are the same; the situations that demand them are not, and the full job descriptions live in the position documents.
+
 ```facts
 Key: Every position needs the same underlying handling skills; the situations that demand them differ
 Technique: Defencemen — backwards and lateral handling, head-up handling while walking the line laterally along the blue line, retrievals with a forechecker behind you — shoulder-check, turn side-on early
@@ -939,8 +941,6 @@ Technique: Wingers — wall protection above all, coaching craft rather than mea
 Technique: Centres — hold the puck just long enough to move a defender, then release it; you almost always have options
 Never: Dangle as a centre — centres who dangle are usually centres who forgot they had three teammates
 ```
-
-The underlying skills are the same; the situations that demand them are not, and the full job descriptions live in the position documents.
 
 - **Defencemen** need backwards and lateral handling, and tight head-up handling while **walking the line** (skating laterally along the offensive blue line to change the shooting angle and pull the defence out of shape). Above all, practise **retrievals** — going back for a dumped puck with a **forechecker** (an opponent pressuring you in your own end) bearing down behind you. Shoulder-check on the way, turn side-on early, and never meet the wall back-on to them. Protection beats deception here: beating a forechecker 1-on-1 in your own end is a spectacular play with a catastrophic failure mode. See [Defender](../positions/defender.md).
 - **Wingers** need wall protection above everything. Winning the **50-50 puck** (a loose puck neither team controls, that either could win) on the **half-wall** (the boards level with the faceoff dot, between the corner and the point) is the defining physical skill of the position — **a coaching ranking rather than a measured one**. They also need carrying at speed without slowing, the 1-on-1 on the outside, and tight hands in the slot. See [Winger](../positions/winger.md).
@@ -954,6 +954,8 @@ Puck handling is the one hockey skill you can meaningfully improve without ice. 
 
 ### Kit
 
+Very little: **a smooth surface** (a shooting pad or plastic tiles) and **something to handle**. Get the surface first — without one a puck will not slide and none of the drills below work. That is an ordering *within off-ice handling kit*; for what to buy as a hockey player, and in what order, see [Equipment](../off-the-ice/equipment.md). In rough order of realism: a real puck on a slick pad, then a synthetic off-ice puck or biscuit. The synthetic puck or biscuit is the best general-purpose choice, because it is designed to slide on rough surfaces. After those come a weighted stickhandling ball for driveways, and a golf or tennis ball, which is free, bouncy, brutal, and builds fast hands. A weighted puck or stick is optional for strength work — never train exclusively with it, or you build a stroke that only works with weight.
+
 ```facts
 Action: Get a smooth surface first — a shooting pad or plastic tiles; without one the puck will not slide and none of the drills work
 Options: A synthetic off-ice puck is the best general-purpose choice, designed to slide on rough surfaces
@@ -962,11 +964,11 @@ Never: Train exclusively with a weighted puck or stick — you build a stroke th
 Read: A stick feels long in shoes and a puck feels heavier off-ice, which is why off-ice pucks are slightly lighter
 ```
 
-Very little: **a smooth surface** (a shooting pad or plastic tiles) and **something to handle**. Get the surface first — without one a puck will not slide and none of the drills below work. That is an ordering *within off-ice handling kit*; for what to buy as a hockey player, and in what order, see [Equipment](../off-the-ice/equipment.md). In rough order of realism: a real puck on a slick pad, then a synthetic off-ice puck or biscuit. The synthetic puck or biscuit is the best general-purpose choice, because it is designed to slide on rough surfaces. After those come a weighted stickhandling ball for driveways, and a golf or tennis ball, which is free, bouncy, brutal, and builds fast hands. A weighted puck or stick is optional for strength work — never train exclusively with it, or you build a stroke that only works with weight.
-
 > **Off-ice adjustments.** On skates you are a couple of inches taller, so your stick feels long in shoes, and a standard puck feels heavier off-ice because of the friction — which is why purpose-made off-ice pucks are slightly lighter. See [Equipment](../off-the-ice/equipment.md).
 
 ### Little and often beats occasionally and long
+
+**Ten to fifteen focused minutes every day builds better hands than two hours once a week.** That is one publisher's coaching guidance (Better Hockey's), not a consensus — the other stickhandling guides here set no session length — and no controlled comparison of the two schedules has been found. It fits how motor skills are generally understood to consolidate, which is why it is worth following. [Skating](skating.md) gives the same advice about edge work, hedged the same way.
 
 ```facts
 Convention: Ten to fifteen focused minutes every day builds better hands than two hours once a week — one publisher's coaching guidance, not a consensus
@@ -974,8 +976,6 @@ Key: No controlled comparison of the two schedules is cited here, and the other 
 Action: Make it frictionless — leave the pad and a ball where you walk past them
 Key: The session you actually do beats the session you planned
 ```
-
-**Ten to fifteen focused minutes every day builds better hands than two hours once a week.** That is one publisher's coaching guidance (Better Hockey's), not a consensus — the other stickhandling guides here set no session length — and no controlled comparison of the two schedules has been found. It fits how motor skills are generally understood to consolidate, which is why it is worth following. [Skating](skating.md) gives the same advice about edge work, hedged the same way.
 
 Make it frictionless: leave the pad and a ball where you walk past them. The session you actually do beats the session you planned.
 
@@ -1027,14 +1027,14 @@ Plus the head-up drills already listed under [Head Up](#head-up) — the mine fi
 
 ### Bridge it to the ice
 
+Off-ice hands are not on-ice hands until you have used them under pressure. In every practice, deliberately spend some time doing the same movements on skates, and get into **small-area games** — keep-away, cross-ice, anything confined. Small areas force the tight handling and protection that matter, at game speed, against real sticks. See [Practice and Development](../off-the-ice/practice_and_development.md).
+
 ```facts
 Key: Off-ice hands are not on-ice hands until you have used them under pressure
 Action: In every practice, deliberately spend time doing the same movements on skates
 Action: Get into small-area games — keep-away, cross-ice, anything confined
 Goal: Small areas force the tight handling and protection that matter, at game speed, against real sticks
 ```
-
-Off-ice hands are not on-ice hands until you have used them under pressure. In every practice, deliberately spend some time doing the same movements on skates, and get into **small-area games** — keep-away, cross-ice, anything confined. Small areas force the tight handling and protection that matter, at game speed, against real sticks. See [Practice and Development](../off-the-ice/practice_and_development.md).
 
 ---
 

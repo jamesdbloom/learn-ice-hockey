@@ -45,6 +45,8 @@
 
 ## Why Passing Beats Carrying
 
+**The puck moves faster than any skater.** So a pass makes four or five opponents re-read the ice, where a carry lets them skate alongside you. A team that moves the puck well beats a team of better skaters: you cannot out-skate five people, but you can out-pass them. And a carry puts all the risk on one player, while a completed pass makes the checker's work irrelevant.
+
 ```facts
 Key: The puck moves faster than any skater can — that single fact is the whole argument
 Goal: Force four or five opponents to re-read the ice and re-choose their assignment
@@ -53,8 +55,6 @@ Options: Carry when nobody is open, when the defender's gap control is poor, or 
 Risk: Carrying concentrates the risk on one player; a completed pass makes the checker's work irrelevant
 Never: Turn the shot-speed and skating-speed records into a ratio for passing — NHL EDGE publishes no pass speed, and neither does the one NHL passing study read for this document
 ```
-
-**The puck moves faster than any skater.** So a pass makes four or five opponents re-read the ice, where a carry lets them skate alongside you. A team that moves the puck well beats a team of better skaters: you cannot out-skate five people, but you can out-pass them. And a carry puts all the risk on one player, while a completed pass makes the checker's work irrelevant.
 
 *(No figure is given for pass speed, because nobody publishes one. NHL EDGE tracks shot speed and skating speed but not pass speed, and the one published study of NHL passing from tracking data — Radke et al., LINHAC 2023 — reports none either. Its *"a puck traveling at speeds between 30 and 100 MPH"* is an example about tracking accuracy, not a measurement of passes. The published extremes — the hardest tracked shot, **104.69 mph** (Tage Thompson, 26 October 2024), and the fastest skater, **24.82 mph** (Miles Wood, 10 April 2025) — make no ratio for passing, because a pass is much slower than a shot. Be sceptical of anyone who quotes you one.)*
 
@@ -67,6 +67,8 @@ Never: Turn the shot-speed and skating-speed records into a ratio for passing �
 Each type below gets the same treatment: how to do it, when to use it, and what it costs you when it goes wrong.
 
 ### Flat / sweep pass — the fundamental
+
+**When to use it.** As the default. Any time the lane is clear and the receiver can be reached along the ice, this is the pass. It is the easiest pass to receive, which is the point.
 
 ```facts
 Technique: Start the puck near the heel with your bottom hand mid-shaft, and cup the blade over it
@@ -86,11 +88,11 @@ Risk: Low, and the risk is lane selection rather than technique — a clear lane
 - **Transfer your weight** from the back leg through your hips toward your front foot as you release. Power comes from your body, not your arms.
 - **Follow through pointing the blade at the target**, finishing low — about knee height. The follow-through is a cue, not the mechanism: the puck leaves along the line the blade face points at separation, and finishing at the target is how you reliably get that angle. [Shooting](shooting.md) explains the same physics, and it is why, on a one-touch pass, "the blade face at the moment of contact *is* the pass".
 
-**When to use it.** As the default. Any time the lane is clear and the receiver can be reached along the ice, this is the pass. It is the easiest pass to receive, which is the point.
-
 **Risk.** Low, and the risk is almost entirely lane selection rather than technique — a flat pass through a stick or a skate is a turnover, so a clear lane is a precondition.
 
 ### Saucer pass — over the obstacle, flat on landing
+
+**When to use it.** When it is the *only* option — a defender's stick is lying in the lane, or the pass must cross a body. The classic uses are cross-slot passes in the offensive zone and passes across a defender's stick during a two-on-one rush.
 
 ```facts
 Technique: Open the face of the blade slightly, like a wedge
@@ -109,11 +111,11 @@ Risk: Moderate to high — one that lands on edge is worse than no pass, because
 - **Land it a few feet short of the receiver's blade.** A saucer that is still airborne when it reaches the stick is nearly uncatchable. Aim for it to settle and slide the last stretch.
 - Height scales with the obstacle. Over a stick in tight it needs only a few inches of air; over a long distance it can travel far higher.
 
-**When to use it.** When it is the *only* option — a defender's stick is lying in the lane, or the pass must cross a body. The classic uses are cross-slot passes in the offensive zone and passes across a defender's stick during a two-on-one rush.
-
 **Risk.** Moderate to high. Too much lift and it flies over the receiver's blade; too little and it is a rolling puck for the checker. A saucer pass that lands on edge is worse than no pass at all, because the receiver commits to it and then loses it. **Do not use a saucer when a flat pass is available.** Air is a difficulty you are adding on purpose.
 
 ### Snap / hard pass — when it needs to be there now
+
+**When to use it.** When the lane is open but closing — a seam through the middle that a backchecker is about to fill, or a pass to a teammate who is about to be checked and needs the puck early. Also the right pass into the slot for a one-timer, where puck speed is part of the shot.
 
 ```facts
 Technique: A shortened sweep — less backswing, a sharp snap of the wrists, blade still cupped, still following through at the target
@@ -124,8 +126,6 @@ Risk: A hard pass your teammate cannot handle is your turnover, not theirs
 ```
 
 **Mechanics.** A shortened, more violent version of the sweep. Less backswing, a sharp snap of the wrists, blade still cupped, still following through toward the target. You are trading a little accuracy for a lot of speed.
-
-**When to use it.** When the lane is open but closing — a seam through the middle that a backchecker is about to fill, or a pass to a teammate who is about to be checked and needs the puck early. Also the right pass into the slot for a one-timer, where puck speed is part of the shot.
 
 **Risk.** Hard passes are harder to receive. If you snap one at a stationary teammate in a low-pressure spot, you have made their life difficult for no reason. Pace is a tool for beating a closing window, not a display of strength. A hard pass that a teammate cannot handle is your turnover, not theirs.
 
@@ -155,6 +155,8 @@ Key: A checker who knows you cannot pass backhand takes the forehand side away a
 
 ### Bank / board pass — the boards as a teammate
 
+**When to use it.** When a defender's stick or body sits in the direct lane but the boards run behind them — most often to beat a forechecker along the wall, to move the puck around the back of the net, or to get the puck past a defender pinching down the wall at your offensive blue line.
+
 ```facts
 Technique: Play the angle, not the target. Aim at the spot on the wall that reflects toward your teammate
 Technique: Keep it flat and firm, and hit the boards low, where the bounce is truest
@@ -171,8 +173,6 @@ Risk: Low risk, moderate reliability — the puck never enters the lane the chec
 - **Learn the building.** Board liveliness genuinely varies rink to rink. Test a bank pass in warm-up.
 
 ![](diagram:bank-pass-angle)
-
-**When to use it.** When a defender's stick or body sits in the direct lane but the boards run behind them — most often to beat a forechecker along the wall, to move the puck around the back of the net, or to get the puck past a defender pinching down the wall at your offensive blue line.
 
 **Risk.** Low risk, moderate reliability — and those are two different things, so keep them apart.
 
@@ -224,6 +224,8 @@ Hockey Canada's Rule 7.5 names the picture — a player *"digging the puck out"*
 
 ### Area pass / chip into space — passing to a place, not a person
 
+**When to use it.** When no teammate is currently open but one is about to be — the classic case is chipping a puck past a defender who is standing you up at the blue line, into the space behind them where your winger is already skating. Also the safe option in the neutral zone when a direct pass would have to thread traffic.
+
 ```facts
 Goal: Aim at a patch of ice your teammate will reach before an opponent does, not at a blade
 Technique: Flat, with enough pace to clear the nearest defender's stick but not so much that it runs to the far boards
@@ -234,13 +236,13 @@ Risk: Only a good play if your teammate has a genuine speed or angle advantage; 
 
 **Mechanics.** You are not aiming at a blade; you are aiming at a patch of ice that a teammate will reach before an opponent does. Put it flat and with enough pace to get past the nearest defender's stick, but not so much that it runs to the far boards ahead of your teammate. Chipping it off the boards past a defender into open ice is the same idea.
 
-**When to use it.** When no teammate is currently open but one is about to be — the classic case is chipping a puck past a defender who is standing you up at the blue line, into the space behind them where your winger is already skating. Also the safe option in the neutral zone when a direct pass would have to thread traffic.
-
 ![](diagram:area-pass-into-space)
 
 **Risk.** Low, and this is the point: an area pass cannot be intercepted in the way a direct pass can, because it is not aimed at a body. It becomes a **race** rather than a turnover. The risk is only that you lose that race — so it is only a good play if your teammate has a genuine speed or angle advantage. An area pass into a defender's feet with nobody chasing it is just giving the puck away politely.
 
 ### Drop pass — and why it fails so often
+
+**When to use it.** Almost exclusively on the rush, entering the offensive zone with speed, when you have a trailer with a clear head of steam. It also appears deliberately in some **zone entry systems** — see [Zone Entries](../systems/zone_entries.md) — but whether your team uses one is a coaching choice, not a general rule; find out.
 
 ```facts
 Technique: Leave the puck flat and dead behind you — a puck pushed backwards is nearly impossible for a forward-skating trailer to receive
@@ -257,8 +259,6 @@ Convention: Some zone entry systems build one in deliberately — that is a coac
 
 1. **The puck must be left flat and dead**, not passed backwards. A puck pushed backwards is moving away from the trailer, who is skating forwards — the closing speed makes it nearly impossible to receive cleanly.
 2. **You must keep skating hard and take a defender with you.** A drop pass where you slow down is a free puck for the defence, because nobody has been removed from the play.
-
-**When to use it.** Almost exclusively on the rush, entering the offensive zone with speed, when you have a trailer with a clear head of steam. It also appears deliberately in some **zone entry systems** — see [Zone Entries](../systems/zone_entries.md) — but whether your team uses one is a coaching choice, not a general rule; find out.
 
 **Risk. High.** It fails because:
 
@@ -305,14 +305,14 @@ The NHL dropped the two-line pass by a playing-rule change for 2005-06, adopted 
 
 ## Passing Into Space vs Onto the Tape
 
+This is the concept that separates players who complete passes from players who complete *useful* passes.
+
 ```facts
 Targets: Onto the tape means the puck arrives at the receiver's blade where it is now — correct when they are standing still or about to shoot
 Targets: Into space means the puck arrives ahead of the receiver, timed so they skate onto it without breaking stride — correct in almost every other case
 Key: A pass to a moving teammate's current position is already behind them when it arrives, and reaching back or slowing down kills the speed that made the play dangerous
 Risk: A puck arriving behind a teammate or in their feet in traffic puts their head down to find it, and head down on the boards is how players get driven head-first into them
 ```
-
-This is the concept that separates players who complete passes from players who complete *useful* passes.
 
 **Onto the tape** means the puck arrives exactly at the receiver's current blade position. Correct when the receiver is stationary or when they are about to shoot.
 
@@ -344,6 +344,8 @@ Key: When in doubt, lead them slightly — a pass ahead can be skated onto, a pa
 
 ## Passing Mechanics That Matter
 
+Beyond the pass types, five habits determine whether your passes arrive.
+
 ```facts
 Action: Head up, always — if you have to look at the puck to pass it, your passing is limited by your stickhandling
 Action: Take your look over both shoulders while the puck is travelling to you, not after it arrives
@@ -352,8 +354,6 @@ Technique: Finish with the blade pointing where you want the puck, low to the ic
 Targets: Put the puck on the receiver's forehand, away from the checker, and slightly in front of them
 Priority: When those three preferences conflict, away from the checker wins
 ```
-
-Beyond the pass types, five habits determine whether your passes arrive.
 
 **1. Head up, always.** Keeping your head up lets you see the lane, see the checker, and avoid the hit. If you have to look at the puck to pass it, your passing is limited by your stickhandling — go work on [Puck Handling](puck_handling.md) until the puck is handled by feel.
 
@@ -379,6 +379,10 @@ Passing is drilled; receiving is assumed. That is backwards, because a pass is o
 
 ### Give a target
 
+Put your **stick blade flat on the ice**, out in front of your body, angled toward the passer, and hold it still.
+
+That blade is the passer's aiming point. If your stick is off the ice, waving around, or tucked in beside your skates, the passer has to guess, and guessing is how passes end up in feet. A still blade on the ice is a promise, and it is also a communication — it says *I am open and I want it now* without a word.
+
 ```facts
 Technique: Stick blade flat on the ice, out in front of your body, angled toward the passer, and held still
 Key: That blade is the passer's aiming point — off the ice or waving, and the passer has to guess
@@ -386,13 +390,11 @@ Action: Add your voice as well as your stick; a called name plus a target blade 
 Goal: A still blade says "I am open and I want it now" without a word
 ```
 
-Put your **stick blade flat on the ice**, out in front of your body, angled toward the passer, and hold it still.
-
-That blade is the passer's aiming point. If your stick is off the ice, waving around, or tucked in beside your skates, the passer has to guess, and guessing is how passes end up in feet. A still blade on the ice is a promise, and it is also a communication — it says *I am open and I want it now* without a word.
-
 Add your voice as well as your stick. A called name plus a target blade removes all ambiguity. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ### Cushion the puck — give with it, do not block it
+
+This is the central receiving skill.
 
 ```facts
 Technique: Meet the puck out in front, bottom hand pushing the stick away from your body
@@ -400,8 +402,6 @@ Technique: As the puck makes contact, draw the blade back toward your body, lett
 Technique: Soft hands means a loose grip — a tight grip makes the blade rigid, and a rigid blade is a wall
 Key: A blocked pass rebounds a foot or two off your blade, and that foot is all a checker needs
 ```
-
-This is the central receiving skill.
 
 - **Meet the puck out in front**, with your bottom hand pushing the stick away from your body.
 - **As the puck makes contact, draw the blade back toward your body** — the bottom hand comes in. You are absorbing the pass, letting the blade travel with the puck for a few inches rather than stopping it dead.
@@ -411,16 +411,16 @@ A blocked pass rebounds a foot or two off your blade. That foot is all a checker
 
 ### Receive on your forehand where you can
 
+Your forehand gives you a cupped blade, more surface area under control, and immediate access to a shot or a pass. Where you have the freedom to choose — and you usually do, by adjusting your body angle before the puck arrives — turn so the pass comes to your forehand.
+
+But do not let this become a rule that makes you late. **Getting your blade to the puck matters more than which side it is on.** Practise backhand receptions specifically, because in traffic you will not get to choose.
+
 ```facts
 Technique: Adjust your body angle before the puck arrives so the pass comes to your forehand
 Goal: A cupped blade, more surface area under control, and immediate access to a shot or a pass
 Priority: Getting your blade to the puck matters more than which side it is on — do not let the preference make you late
 Action: Practise backhand receptions specifically, because in traffic you will not get to choose
 ```
-
-Your forehand gives you a cupped blade, more surface area under control, and immediate access to a shot or a pass. Where you have the freedom to choose — and you usually do, by adjusting your body angle before the puck arrives — turn so the pass comes to your forehand.
-
-But do not let this become a rule that makes you late. **Getting your blade to the puck matters more than which side it is on.** Practise backhand receptions specifically, because in traffic you will not get to choose.
 
 ### Angle the blade to kill a bounce
 
@@ -517,6 +517,8 @@ It will happen, and it is a skill, not an accident to be complained about.
 
 ### Receiving a bad pass
 
+The measure of a good receiver is what they do with a bad pass.
+
 ```facts
 Action: Get your body in front of a bad pass — shin pads, skates and chest are legal tools, and a puck stopped by your body is still your puck
 Key: Putting your body in front of a bad pass is not blocking a shot. Stepping in front of a shot is a separate skill with its own technique and its own list of when not to try it
@@ -525,13 +527,13 @@ Never: Try to receive a difficult puck and make a play in the same motion
 Mindset: Accept a lost half-second and take the safe next option; forcing the original plan through a bad reception is the actual mistake
 ```
 
-The measure of a good receiver is what they do with a bad pass.
-
 - **Get your body in front of it.** Your shin pads, your skates and your chest are all legal, legitimate tools for stopping a puck. A puck stopped by your body is still your puck. **This is a pass, not a shot.** Stepping in front of a *shot* is a separate skill with its own technique and its own list of situations where you should not attempt it at all — it is treated in [Body Contact and Battles](body_contact_and_battles.md), and nothing in this section transfers to it.
 - **Kill it first, look second.** Do not try to receive a difficult puck and make a play in the same motion. Stop it, then play it. Trying to do both is how bad passes turn into turnovers.
 - **Accept a lost half-second.** If a bad pass costs you the play you wanted, take the safe next option. Forcing the original plan through a bad reception is the actual mistake.
 
 ### Receive with your body open to the ice
+
+**Open** means your hips and shoulders are turned so you can see up ice and across the ice at the moment the puck arrives — rather than square to the passer with your back to everything you want to do next.
 
 ```facts
 Position: Hips and shoulders turned so you can see up ice and across the ice as the puck arrives, not square to the passer
@@ -543,8 +545,6 @@ Never: Turn your back to anyone coming at you, or duck. Keep your head up and ch
 Technique: If you are already facing the wall and cannot turn, get your stick and gloves up on the glass and spread the impact as wide as you can, no head contact — damage limitation, not a position to aim for
 ```
 
-**Open** means your hips and shoulders are turned so you can see up ice and across the ice at the moment the puck arrives — rather than square to the passer with your back to everything you want to do next.
-
 - Arrive at the puck **on an angle**, not straight at the passer. Curl into the reception so that your momentum and your sightline already point where you want to go.
 - Your next option should already be visible when the puck lands on your blade. If you have to turn to find it, you have given the forechecker the time they needed.
 - The general term for this is *checking your shoulder and opening up*; the practical version is: **decide which way you are going before the puck arrives, and be pointing that way when it does.**
@@ -555,6 +555,8 @@ This is especially valuable on the half-wall in the offensive zone and on any br
 
 ### Receiving while moving
 
+Almost all real receptions happen at speed.
+
 ```facts
 Technique: Reach the blade out ahead of your skates, not beside them — receiving beside your feet leaves you no room to cushion
 Action: Keep your feet moving through the reception; gliding to catch a pass costs you a stride every time
@@ -562,8 +564,6 @@ Never: Let your stick pull your body off line. Turn to the puck with your feet i
 Action: Adjust your speed to the pass, not the pass to your speed — a small glide or an extra stride makes a difficult pass easy
 Risk: A stationary receiver is a target
 ```
-
-Almost all real receptions happen at speed.
 
 - **Reach the blade out ahead of your skates**, not beside them. Receiving beside your feet leaves you no room to cushion.
 - **Keep your feet moving through the reception.** Gliding to catch a pass is a habit that costs you a stride every single time, and a stationary receiver is a target.
@@ -574,6 +574,10 @@ Almost all real receptions happen at speed.
 
 ## The First Touch Determines Everything
 
+A good first touch buys you half a second. A bad one costs you the puck. That is why this section puts it first.
+
+Half a second does not sound like much. On the ice it is the difference between a shot and a blocked shot, between a clean exit and a puck battle in your own corner, between finding the open man and throwing it away.
+
 ```facts
 Key: Receive the puck into the position it needs to be in for your next action, not the position it happens to arrive in
 Action: Take the touch away from pressure — if a checker is closing from your left, cushion it slightly to your right
@@ -582,10 +586,6 @@ Action: Take the touch forward in transition, so your next stride is a stride an
 Action: Take the touch into open ice in the middle with nothing on. Do not stop it under your feet and then look up
 Read: The test — after your first touch, could you pass or shoot immediately? If not, that touch was wasted
 ```
-
-A good first touch buys you half a second. A bad one costs you the puck. That is why this section puts it first.
-
-Half a second does not sound like much. On the ice it is the difference between a shot and a blocked shot, between a clean exit and a puck battle in your own corner, between finding the open man and throwing it away.
 
 **The principle: receive the puck into the position it needs to be in for your next action, not into the position it happens to arrive in.**
 
@@ -602,6 +602,8 @@ The test to apply: **after your first touch, could you pass or shoot immediately
 
 ## One-Touch Passing
 
+A one-touch pass — sometimes called a first-time pass, and the basis of a *tic-tac-toe* sequence of quick passes — is a pass you redirect on contact, without controlling it first.
+
 ```facts
 Goal: Move the puck faster than a defence can rotate, so it lands in a space that was covered when the pass started
 Read: A one-touch is on when the pass is flat and catchable, your next target is already open and known, and the lane will still exist
@@ -611,8 +613,6 @@ Technique: Angle your blade before contact; the blade face at the moment of cont
 Technique: Soft on receive, firm on release — even a one-touch has a tiny cushion in it
 Technique: Set your feet, because you need a stable base to redirect a puck accurately at speed
 ```
-
-A one-touch pass — sometimes called a first-time pass, and the basis of a *tic-tac-toe* sequence of quick passes — is a pass you redirect on contact, without controlling it first.
 
 **Why it beats coverage.** Defenders and goalies are reacting to where the puck is. Every touch you take gives them time to re-set. A one-touch pass moves the puck faster than a defence can rotate, so the puck arrives in a space that was covered when the pass started and is not covered when it lands. This is exactly why the best power plays are built on one-touch sequences — see [Special Teams](../systems/special_teams.md).
 
@@ -635,6 +635,8 @@ A one-touch pass — sometimes called a first-time pass, and the basis of a *tic
 
 ## Timing and Support — A Pass Is a Two-Player Action
 
+Most "bad passes" are actually bad *pairs*.
+
 ```facts
 Key: The receiver creates the pass as much as the passer does — most "bad passes" are actually bad pairs
 Action: As the receiver, move into a lane rather than just moving. Find the open line between you and the puck
@@ -643,8 +645,6 @@ Action: As the receiver, give a target blade and a voice, and have a next option
 Action: As the passer, deliver it so it can be received in stride, on the side away from pressure, the moment the window opens
 Priority: If your team cannot complete passes, look at the players without the puck before you look at the passer
 ```
-
-Most "bad passes" are actually bad *pairs*.
 
 The receiver creates the pass as much as the passer does. A passer with the puck and their head up is scanning for someone who is open, in a clean lane, and available *now*. If nobody satisfies all three, there is no pass — and the blame for the resulting turnover usually lands on the player holding the puck.
 
@@ -675,6 +675,8 @@ The full treatment of who supports whom, at what distance, and how the shape mov
 
 ## Deception
 
+Defenders and goalies read your eyes, your shoulders and your blade. Anything you can do with those that does not match where the puck is going buys you a lane.
+
 ```facts
 Technique: Look off a defender — fix your eyes on one option, let them shift toward it, then pass to the other
 Technique: Turn your shoulders and hips toward one side to pull the defender's weight that way
@@ -683,8 +685,6 @@ Read: A no-look is justified only when you have already seen a target unlikely t
 Never: Use a no-look as a default, or at all in your own end — every no-look bets that the ice has not changed
 Key: Deception is a supplement, not a substitute — selling a look is worthless if the pass that follows is inaccurate
 ```
-
-Defenders and goalies read your eyes, your shoulders and your blade. Anything you can do with those that does not match where the puck is going buys you a lane.
 
 **Looking off a defender.** Fix your eyes on one option, let the defender shift toward it, then pass to the other. This is the highest-value and lowest-risk deception in hockey, because your eyes cost you nothing — you have already scanned, so you already know where both options are.
 
@@ -759,6 +759,8 @@ Passing improves faster than almost any other hockey skill, because most of it c
 
 ### Wall passing (solo)
 
+Face a wall, a rebounder, or a board and pass into it repeatedly.
+
 ```facts
 Action: Face a wall, rebounder or board and pass into it repeatedly — cup, sweep, follow through at a spot
 Key: Receive every return properly — cushion, control, reset; half the value of the drill is on the receiving side
@@ -767,8 +769,6 @@ Action: Progress to one-touch returns and keep a count
 Action: Mark a small target on the wall and aim at it — accuracy without a target is just repetition
 Action: Pass and receive while shuffling laterally, so the reception happens with your body moving
 ```
-
-Face a wall, a rebounder, or a board and pass into it repeatedly.
 
 - Start stationary at a comfortable distance. Cup, sweep, follow through at a spot on the wall.
 - **Receive every return properly** — do not just stop it. Cushion it, control it, reset. Half the value of this drill is on the receiving side.
@@ -797,6 +797,8 @@ Action: Pressure passing with a third player closing on the passer, stick on the
 
 ### Weighted puck training
 
+A weighted puck (heavier than a standard puck) is a common off-ice training tool.
+
 ```facts
 Action: Use a weighted puck for strength and mechanics in short doses — the extra mass forces a full weight transfer and a complete follow-through
 Action: Switch back to a regular puck in the same session, to carry the improved mechanics into normal weight
@@ -804,8 +806,6 @@ Never: Do all your work with a weighted puck — it changes the timing of your r
 Key: The measured benefit is for shooting, not passing — no measurement of what a weighted puck does to passing was found for this document, which is not proof that none exists
 Risk: Treat volume with care and stop if your wrists or elbows complain
 ```
-
-A weighted puck (heavier than a standard puck) is a common off-ice training tool.
 
 - **Use a weighted puck for strength and mechanics, in short doses.** The extra mass forces a full weight transfer and a complete follow-through; you cannot flick a weighted puck with your wrists alone.
 - **Switch back to a regular puck in the same session.** A standard puck feels light and quick immediately afterwards, and the point is to carry the improved mechanics into normal weight.

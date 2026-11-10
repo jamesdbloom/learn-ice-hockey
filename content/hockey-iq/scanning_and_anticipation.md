@@ -46,14 +46,6 @@ Players who seem to see the whole ice have usually just looked already, while th
 
 ## The central idea: vision is a habit, not a gift
 
-```facts
-Key: Players who look like they see the whole ice have almost always simply already looked
-Action: Look while the puck is being retrieved, again as the passer's head comes up, and once more just before it arrives
-Priority: Looks taken while the puck is travelling are free; looks taken after it arrives are paid for in possession time — except a goalie once a shot is released, who then never looks away
-Goal: Decide before the puck arrives — a decision started afterwards takes about as long as a forechecker needs to reach you
-Mindset: Scanning costs no fitness, no ice time and no talent — the whole input is remembering to turn your head
-```
-
 Consider two players receiving the same pass on the half-wall — the boards area level with the faceoff dot in the offensive or defensive zone, roughly halfway between the goal line and the blue line.
 
 **Player A** watches the puck travel toward them the whole way. The puck arrives. *Now* they lift their head, find that a forechecker is two feet away, panic, and throw the puck up the boards into nobody.
@@ -61,6 +53,14 @@ Consider two players receiving the same pass on the half-wall — the boards are
 **Player B** looked over their inside shoulder while the puck was still being retrieved behind the net, looked again as the passer's head came up, and took a last glance a heartbeat before the puck arrived. They knew about the forechecker before the puck was even passed. They received the puck already turning away from the pressure, and moved it to the support they had seen three seconds earlier.
 
 From the bench, Player B looks quicker, calmer and more skilled. Their hands are not better. **They took two or three brief looks, at moments when looking was free.** Copying that costs no fitness, no ice time and no talent.
+
+```facts
+Key: Players who look like they see the whole ice have almost always simply already looked
+Action: Look while the puck is being retrieved, again as the passer's head comes up, and once more just before it arrives
+Priority: Looks taken while the puck is travelling are free; looks taken after it arrives are paid for in possession time — except a goalie once a shot is released, who then never looks away
+Goal: Decide before the puck arrives — a decision started afterwards takes about as long as a forechecker needs to reach you
+Mindset: Scanning costs no fitness, no ice time and no talent — the whole input is remembering to turn your head
+```
 
 ![](diagram:scan-before-a-wall-reception)
 
@@ -76,6 +76,8 @@ Three lines explain *when* the habit pays:
 
 ### The mechanics of a scan
 
+A scan is a **head turn**, not an eye flick and not a chin dip.
+
 ```facts
 Technique: A scan is a head turn, not an eye flick and not a chin dip — your chin should pass over your shoulder
 Technique: A scan is a snapshot, not a stare. Take the photograph and process it afterwards
@@ -83,8 +85,6 @@ Action: Check both shoulders, not just your favourite; the surprise lives on the
 Never: Let a scan cost you a stride. Scan while gliding, while crossing over, while pivoting
 Key: The last look is always back at the puck
 ```
-
-A scan is a **head turn**, not an eye flick and not a chin dip.
 
 - **Turn far enough to actually see.** Your chin should pass over your shoulder. Moving only your eyes shows you your own shoulder pad and the frame of your cage or visor, which cut your side vision more than people admit.
 - **It is a snapshot, not a stare.** Take the photograph and process it afterwards. **Nobody has published a measured duration for a hockey scan.** The hockey study below counted a head turn only if it lasted at least 0.2 seconds — a floor, not a typical length — and the football study's 242-millisecond *fixation* measures something else. The usable test: if you are still looking a second later, you have stopped playing.
@@ -225,6 +225,8 @@ Where your eyes go depends on your system. **This guide's standard coverage is a
 
 ### The pre-scan: deciding before the puck arrives
 
+This is the habit that makes players look fast. **The puck's arrival should trigger an action, not begin a decision.**
+
 ```facts
 Key: The puck's arrival should trigger an action, not begin a decision
 Action: Use look, decide, receive, act — not receive, look, decide, act
@@ -234,8 +236,6 @@ Action: Let the last look overrule you — cancelling a stale plan is the whole 
 Mindset: Accept being wrong sometimes; a second-best play made instantly beats the perfect play made a second late
 Action: Use your ears as well — a teammate shouting "time" or "man on" is a scan taken on your behalf
 ```
-
-This is the habit that makes players look fast. **The puck's arrival should trigger an action, not begin a decision.**
 
 Most players go *receive → look → decide → act.* That takes well over a second — long enough for a forechecker to close the gap you thought you had. Good players go *look → decide → receive → act.* Same actions, different order, and the reordering is free.
 
@@ -256,6 +256,8 @@ Scanning tells you where things *are*. Anticipation tells you where they are *go
 
 ### Reading a puck carrier: watch the chest and hips
 
+**Look at the middle of their body, not at the puck, the stick or the head.**
+
 ```facts
 Read: Put your eyes on the numbers on the carrier's chest, or their belt — you will see the puck perfectly well peripherally
 Read: Feet and hips together are a reliable second cue — hips rotated and outside foot planted means they are going that way
@@ -264,8 +266,6 @@ Key: The centre of the body is where to weight your attention, not a single magi
 Risk: The best carriers can lie with their hips too — when one genuinely beats you, re-establish position instead of chasing
 Action: When you have the puck, deceive with your head and hands — they cost you nothing
 ```
-
-**Look at the middle of their body, not at the puck, the stick or the head.**
 
 - **Put your eyes on the numbers on their chest, or their belt.** You will see the puck well enough in your peripheral vision. Head, shoulders, hands and stick can all be thrown one way without the player going anywhere; shifting the body's weight sideways is part of how a change of direction actually happens. It is a bias in your favour, not a law.
 - **Do not bite on a head fake, a shoulder dip or a puck fake.** They are free for the attacker to produce and aimed precisely at you.
@@ -278,6 +278,8 @@ When you have the puck, flip it: **your head and hands are your deception tools,
 
 ### Reading a passer
 
+A pass is easier to predict than a carry, because it has to be aimed.
+
 ```facts
 Read: Most passes go roughly where the front shoulder points — an unsquared passer cannot pass hard across their body
 Read: An open blade lifts the puck into a saucer or a chip; a closed blade pointed at a lane means that lane is about to be used
@@ -285,8 +287,6 @@ Read: At most levels players look at their target before passing to it, often a 
 Countered by: The look-off — a player staring at one option and passing to another has already scanned, so read the shoulders and blade instead
 Action: Pressure a passer who received without scanning — they have to look before they pass and will telegraph it
 ```
-
-A pass is easier to predict than a carry, because it has to be aimed.
 
 - **Shoulders.** Most passes go roughly where the front shoulder points. A passer who has not squared up cannot pass hard and accurately across their body.
 - **The blade.** An open blade — face rolled back — lifts the puck into a saucer or a chip. A closed blade keeps it flat. A closed blade pointed at a lane means that lane is about to be used.
@@ -374,6 +374,8 @@ Goalies and shot-blocking defenders read the same cues.
 
 ### Reading a defenceman (as an attacker on the rush)
 
+Your **gap** is the distance between the defender and you. Reading a defender is mostly reading their gap and their feet.
+
 ```facts
 Read: A tight gap closing hard means they intend to end this at the blue line — momentum is a commitment
 Action: Against a hard closer, change pace: slow down so they over-skate, cut underneath, or chip it past and race for the puck, not the player. If you can see their numbers, don't hit — pull up
@@ -383,8 +385,6 @@ Read: Skates parallel and square means uncommitted; hips opened to one side mean
 Options: Against a defender standing up at the line, pass laterally into another lane, regroup rather than force it, or chip and chase the puck, not the player
 Key: The stick is the weakest of the defender cues — a stick is easy to move, so weight it below the feet
 ```
-
-Your **gap** is the distance between the defender and you. Reading a defender is mostly reading their gap and their feet.
 
 - **A tight gap — about one to one and a half stick lengths, closing hard.** They mean to end this at the blue line, and their momentum is a commitment. Change pace: slow down and let them over-skate you, cut underneath, or chip the puck past them and race for it. The race is for the puck, not the player: whether you may hit at all is your league's call, and if you can see their numbers, don't hit them — pull up and play the puck. Do not skate straight into a hard closer at full speed — that is the collision they set up.
 - **A soft gap — backing off to protect the middle.** They concede the blue line to protect the **slot**, the dangerous scoring area in front of the net. You will get in with the puck but not to the slot. Beat it with the delay (curl back for the second wave), the drop pass, or a shot aimed for a rebound with a body arriving at the net.
@@ -400,6 +400,8 @@ See [Zone Entries](../systems/zone_entries.md) and [Defending the Rush](../syste
 
 ### Reading the play's next state
 
+The most advanced read is not about a person. It is where the *puck* is about to be.
+
 ```facts
 Read: A hard rim follows the curve and arrives predictably; a soft one dies in the corner, and a flip off the glass lands somewhere else entirely
 Action: Learn your home rink's boards and glass deliberately, and bounce a couple off the end boards in warm-up at an away rink
@@ -408,8 +410,6 @@ Action: Arrive at the net moving, just outside the crease and off the goalie, st
 Read: Arriving second, off-balance, on your backhand or against an established bigger player means you will probably lose that battle
 Action: Play for the next state — get where the loose puck will squirt out, or pin it to the boards with skate or stick for a moment, never the player; holding it for a whistle is a minor in every book
 ```
-
-The most advanced read is not about a person. It is where the *puck* is about to be.
 
 - **Where a loose puck will go.** A hard rim follows the boards and arrives predictably; a soft one dies in the corner; a puck flipped off the glass comes down somewhere else entirely. Rinks differ — lively glass, dead spots behind the net. **Learn your home rink deliberately**, and at an away rink bounce a couple off the end boards in warm-up.
 - **Where a rebound will go.** The rule of thumb is that it kicks off the way the goalie's pad or blocker was facing — so a shot from an angle tends to go to the far side, and you should arrive at the far post. **This is coaching craft, not a measured finding**, and goalies who steer rebounds break it. The reliable part: arrive at the net moving, just outside the crease and off the goalie, stick on the ice, expecting the puck rather than watching for it.
@@ -421,6 +421,8 @@ The most advanced read is not about a person. It is where the *puck* is about to
 
 ## Pattern recognition: how experience turns into instinct
 
+Experienced players do not have faster eyes. They have **fewer things to think about**, because experience compresses groups of details into single recognised units.
+
 ```facts
 Key: Experience does not give you faster eyes — it gives you fewer things to think about, because details compress into recognised units
 Action: Name patterns out loud after they happen, on the bench — unnamed experience mostly evaporates
@@ -429,8 +431,6 @@ Action: Work on one pattern per week — trying to notice everything means notic
 Action: Chase decisions per minute, not ice time — a three-on-three in a third of the ice gives you far more reads
 Convention: Off-ice cognitive tools are a supplement to playing and being watched by someone who knows what they are looking at, not a substitute
 ```
-
-Experienced players do not have faster eyes. They have **fewer things to think about**, because experience compresses groups of details into single recognised units.
 
 A new player sees ten people in ten places and has to work out what each means. An experienced player sees *"low-to-high developing, net front unmarked"* — one thing, with an answer attached. That is why instinct feels instant: nothing is computed, something is *recognised*. It takes repetitions, but you can get far more from the ones you already have.
 
@@ -447,6 +447,8 @@ A new player sees ten people in ten places and has to work out what each means. 
 
 ## The precondition: the head-up habit
 
+None of the above is available if you have to look at the puck to control it. A player who must watch their stick can scan only without the puck — missing exactly the moments when scanning is worth most. So head-up puck control is the **entry requirement for hockey sense**, and why "keep your head up" is the sport's most repeated instruction.
+
 ```facts
 Key: Scanning is unavailable to you if you have to look at the puck to control it
 Technique: Keep the puck in your peripheral vision — aware of it the way you are aware of your own hands
@@ -454,8 +456,6 @@ Technique: Hands away from your body, so the puck is out in front where your per
 Technique: A soft grip — tension in the hands is what makes you look down at a puck you cannot feel
 Action: Train it with a forcing function, not willpower. Stickhandle while calling out fingers or coloured cards, ten to fifteen minutes a day
 ```
-
-None of the above is available if you have to look at the puck to control it. A player who must watch their stick can scan only without the puck — missing exactly the moments when scanning is worth most. So head-up puck control is the **entry requirement for hockey sense**, and why "keep your head up" is the sport's most repeated instruction.
 
 What it takes (full treatment in [Puck Handling](../technique/puck_handling.md)):
 
@@ -468,6 +468,8 @@ What it takes (full treatment in [Puck Handling](../technique/puck_handling.md))
 
 ## Anticipation versus guessing
 
+They look the same when they work and the same when they fail, but they are not the same thing. **Anticipation is acting on information. Guessing is acting on hope.**
+
 ```facts
 Key: Anticipation is acting on information; guessing is acting on hope
 Read: The test is not whether you were right. Ask whether your position would still be useful if you turn out to be wrong
@@ -476,8 +478,6 @@ Position: Jump in the neutral or offensive zone, where being wrong costs a rush 
 Never: Jump as the last player back, in your own zone, or again after you have already missed once this shift
 Risk: A successful jump creates a chance and a failed one in your own zone concedes one — so the read has to be well over 50/50
 ```
-
-They look the same when they work and the same when they fail, but they are not the same thing. **Anticipation is acting on information. Guessing is acting on hope.**
 
 The test is not whether you were right. It is this:
 

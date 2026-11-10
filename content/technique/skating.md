@@ -81,6 +81,10 @@ Self-check: if your thighs don't burn after a hard shift, you probably weren't l
 
 ### Chest up and back straight
 
+Bend at the knees and hips, **not at the waist**. Hunching forward puts your weight on the front of the blade, kills your extension and blocks your view. Think "chest proud, backside back" — the bottom of a squat, not reaching for your toes.
+
+The one exception, covered later: in hard acceleration you *do* lean the torso forward, roughly 45 degrees, to drive horizontally.
+
 ```facts
 Technique: Bend at the knees and hips, not at the waist
 Never: Hunch your upper body forward — it kills your extension and blocks your view
@@ -88,11 +92,9 @@ Key: Chest proud, backside back — the bottom of a squat, not reaching for your
 Technique: Hard acceleration is the one deliberate exception to bending at the knees and hips rather than the waist — torso forward roughly 45 degrees
 ```
 
-Bend at the knees and hips, **not at the waist**. Hunching forward puts your weight on the front of the blade, kills your extension and blocks your view. Think "chest proud, backside back" — the bottom of a squat, not reaching for your toes.
-
-The one exception, covered later: in hard acceleration you *do* lean the torso forward, roughly 45 degrees, to drive horizontally.
-
 ### Weight over the balls of the feet
+
+Not on your heels, not on your toes: **the balls of the feet**, the pads just behind your toes. Heel-heavy makes you slow to start and easy to knock backwards. Toe-heavy is unstable and leads to "toe running" (see the stride faults below).
 
 ```facts
 Position: Weight on the balls of the feet — the pads just behind your toes
@@ -101,11 +103,11 @@ Never: Ride your toes — toe-heavy weight is unstable and encourages toe runnin
 Read: You should be able to lift your toes slightly inside the boot and still feel pressure through the front of the foot
 ```
 
-Not on your heels, not on your toes: **the balls of the feet**, the pads just behind your toes. Heel-heavy makes you slow to start and easy to knock backwards. Toe-heavy is unstable and leads to "toe running" (see the stride faults below).
-
 You should be able to lift your toes slightly inside your boot and still feel pressure through the front of the foot.
 
 ### Head up
+
+Not just "chin up" — **eyes up, scanning the ice**. Looking down at the puck pulls your whole upper body forward off the balls of your feet, so a head-down skater is also skating with their weight wrong. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) for what to do with what you see.
 
 ```facts
 Technique: Eyes up and scanning the ice — not just chin up
@@ -113,9 +115,9 @@ Never: Look down at the puck — your head drags your upper body forward off the
 Key: A player skating with their head down is skating with their weight wrong
 ```
 
-Not just "chin up" — **eyes up, scanning the ice**. Looking down at the puck pulls your whole upper body forward off the balls of your feet, so a head-down skater is also skating with their weight wrong. See [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) for what to do with what you see.
-
 ### Hands in front, off your body
+
+Stick on the ice, hands out in front where you can see them, elbows relaxed and away from your ribs. Hands tucked into your hips shorten your reach, lock your upper body so it can't balance your legs, and take your stick out of the passing lane.
 
 ```facts
 Position: Hands out in front where you can see them in your peripheral vision
@@ -123,9 +125,11 @@ Technique: Stick on the ice, elbows relaxed and away from your ribs
 Never: Tuck your hands into your hips — it shortens your reach, locks your upper body and empties the passing lane
 ```
 
-Stick on the ice, hands out in front where you can see them, elbows relaxed and away from your ribs. Hands tucked into your hips shorten your reach, lock your upper body so it can't balance your legs, and take your stick out of the passing lane.
-
 ### Arriving at the boards — head up, skates parallel, take it along your side
+
+There is one skating decision inside the most important safety rule in hockey. **Go into the boards on an angle, never straight at them** — *"Skating into the boards at an angle means better puck control and less risk of injury… A leg or side or an arm will absorb most of the impact"* (USA Hockey, *Introduction To Body Contact*, "Angling In"). **You control this completely, because you decide it several strides out** in the route you pick.
+
+**The angle also keeps you out of the worst posture.** Arrive square to the boards with a checker closing, and turning to face the wall feels like protection. It is the opposite: it puts your head first into the boards, you can neither see nor brace for the hit, and ⚠️ **it turns the contact into a hit from behind**. USA Hockey's warning to checkers is plain: *"Even a light hit from behind could inflict a severe head or neck injury."* It is written about the *light* hit, so a slow checker is not safe. That is why **never turn your back to anyone coming at you** holds at any speed, in any league, whether or not checking is allowed.
 
 ```facts
 Action: Go into the boards on an angle, never straight at them
@@ -137,10 +141,6 @@ Risk: The spinal injury from a head-down, head-first collision with the boards o
 Technique: If contact is coming, skates parallel to the wall, forearm and hip into it — not the point of your shoulder, not the whole shoulder if you can help it. Head up, chin off your chest
 Priority: Everything after the route is contact, not skating. Read Body Contact and Battles in full
 ```
-
-There is one skating decision inside the most important safety rule in hockey. **Go into the boards on an angle, never straight at them** — *"Skating into the boards at an angle means better puck control and less risk of injury… A leg or side or an arm will absorb most of the impact"* (USA Hockey, *Introduction To Body Contact*, "Angling In"). **You control this completely, because you decide it several strides out** in the route you pick.
-
-**The angle also keeps you out of the worst posture.** Arrive square to the boards with a checker closing, and turning to face the wall feels like protection. It is the opposite: it puts your head first into the boards, you can neither see nor brace for the hit, and ⚠️ **it turns the contact into a hit from behind**. USA Hockey's warning to checkers is plain: *"Even a light hit from behind could inflict a severe head or neck injury."* It is written about the *light* hit, so a slow checker is not safe. That is why **never turn your back to anyone coming at you** holds at any speed, in any league, whether or not checking is allowed.
 
 **The two prohibitions** ⚠️ **guard against two different injuries.** USA Hockey's walking-speed warning is about the *head-down, head-first* collision, not the turn; the turn is dangerous because of the light-hit warning. Neither is the lesser one, and going in on an angle stops either choice arriving.
 
@@ -221,6 +221,8 @@ The stride has three parts that cycle continuously: **push (extension) → recov
 
 ### The push — sideways-and-back, never straight back
 
+**You do not push backwards.** A blade pushed straight back just slides. Push **out to the side and slightly back**, against the inside edge — the blade grips because it is cutting across its own direction of travel.
+
 ```facts
 Never: Push straight back — the blade just slides along the ice and gives you nothing
 Technique: Push out to the side and slightly back against the inside edge, so the blade cuts across its own direction of travel
@@ -230,8 +232,6 @@ Technique: Finish with the toe — a snap of the toe out and back, not a stab do
 Key: Laura Stamm's power-skating material puts the toe flick at roughly a third of the push's total power — her own principle, not a measurement
 Options: Another coaching source here calls the toe flick itself a common mistake and wants the push through the heel and middle of the blade — ask your coach which they teach
 ```
-
-**You do not push backwards.** A blade pushed straight back just slides. Push **out to the side and slightly back**, against the inside edge — the blade grips because it is cutting across its own direction of travel.
 
 Laura Stamm's power-skating material calls pushing straight back "one of the most common errors in hockey skating", because it is what walking and running feel like. The skating push has to be learned deliberately.
 
@@ -264,15 +264,17 @@ Landing the recovery foot *in front* of you is a common error — it brakes ever
 
 ### The glide
 
+Between pushes your weight rides on one bent leg. **Keep the knee bent during the glide** — straightening up means re-bending before the next push.
+
 ```facts
 Position: Your weight rides on a single bent leg between pushes
 Technique: Keep the knee bent during the glide
 Never: Straighten up mid-glide — you then have to re-bend before the next push
 ```
 
-Between pushes your weight rides on one bent leg. **Keep the knee bent during the glide** — straightening up means re-bending before the next push.
-
 ### Arms — and an honest disagreement between coaching schools
+
+**The most widely taught method is front-to-back** — arms driving straight forward and back, shoulders square up the ice. **But it is a coaching choice, and the disagreement is real.** Two sources here teach a *side-to-side* swing to mirror the lateral leg push: Prodigy Hockey says swing *"from east to west instead of north south"*, and the Hockey Institute says *"[t]he correct movement of the arms/shoulders is side-to-side"*, adding that forward-and-back movement *"causes a narrow stride."*
 
 ```facts
 Convention: Front-to-back arm drive is the traditional and most widely taught method — a coaching choice, not settled fact
@@ -282,8 +284,6 @@ Never: Let the swing turn your shoulders off line — the side-to-side source th
 Key: Both schools of arm technique agree the action must be rhythmic and coordinated with the legs, not a random flail
 Action: Use whichever arm action your coach teaches; start front-to-back if nobody has taught you either
 ```
-
-**The most widely taught method is front-to-back** — arms driving straight forward and back, shoulders square up the ice. **But it is a coaching choice, and the disagreement is real.** Two sources here teach a *side-to-side* swing to mirror the lateral leg push: Prodigy Hockey says swing *"from east to west instead of north south"*, and the Hockey Institute says *"[t]he correct movement of the arms/shoulders is side-to-side"*, adding that forward-and-back movement *"causes a narrow stride."*
 
 Athletes Untapped, a front-to-back source, calls the side-to-side swing a mistake that *"twists the torso and fights forward momentum"*, and wants the arms driven *"straight forward and straight back, exactly like a track sprinter."*
 
@@ -301,14 +301,14 @@ Athletes Untapped, a front-to-back source, calls the side-to-side swing a mistak
 
 ### A self-test
 
+Skate goal line to goal line at a comfortable pace and count your strides. Then try to use fewer. If the count drops a lot, you weren't extending. Repeat it monthly.
+
 ```facts
 Action: Skate goal line to goal line at a comfortable pace and count your strides
 Action: Skate it again trying to use fewer strides
 Read: If your stride count drops significantly, you weren't extending
 Key: Repeat the goal-line-to-goal-line stride count monthly — a free, honest measure of your extension
 ```
-
-Skate goal line to goal line at a comfortable pace and count your strides. Then try to use fewer. If the count drops a lot, you weren't extending. Repeat it monthly.
 
 ---
 
@@ -318,14 +318,14 @@ Skate goal line to goal line at a comfortable pace and count your strides. Then 
 
 ### Why the first three steps matter more than top speed
 
+**Almost every race you contest is decided within about three strides** — to a loose puck, to a rebound, for the step on a defender, back when you get turned around. That is a coaching observation, not a measurement, and it is enough to act on: drive your first three steps hard, every time.
+
 ```facts
 Read: You are constantly starting, stopping, turning and re-starting, not running long straight sprints
 Goal: Win the loose puck, the rebound, the step on a defender, the recovery when you get turned around
 Read: Almost every race you contest in a game is decided within about three strides — a coaching observation about how long a race lasts, not a measurement and not a claim you are at full speed
 Key: Your top speed is rarely the deciding factor; your first three steps almost always are
 ```
-
-**Almost every race you contest is decided within about three strides** — to a loose puck, to a rebound, for the step on a defender, back when you get turned around. That is a coaching observation, not a measurement, and it is enough to act on: drive your first three steps hard, every time.
 
 Hockey is not a sport of long straight sprints. The [Hockey Institute](https://hockeyinstitute.org/high-performance-skating/) reports that *"the average length of time spent in a skating characteristic is 1.5 seconds"*, citing **Bracko (1998)** — a study of **twelve NHL forwards** across **27 on-ice movement states**, with two-foot glide the largest share of time.
 
@@ -366,6 +366,8 @@ So: not full speed in three strides, but **the change from digging out to skatin
 
 ### The transition out of the start
 
+Once you're moving, **get off your toes onto the full blade** and lengthen into the stride. Stay on your toes and you are always accelerating and never gliding — tiring, with a low top speed.
+
 ```facts
 Action: Once you're moving, get off your toes onto the full blade and lengthen into the stride
 Never: Stay on your toes — you are then permanently accelerating and never gliding, for a low top speed
@@ -374,11 +376,11 @@ Action: Start out of a hockey stop in both directions, because most game starts 
 Action: Race a teammate over 10–15 metres; anything longer stops being an acceleration drill
 ```
 
-Once you're moving, **get off your toes onto the full blade** and lengthen into the stride. Stay on your toes and you are always accelerating and never gliding — tiring, with a low top speed.
-
 **Drills:** whistle starts (three explosive steps from a dead stop, then glide — ten of them); starts out of a hockey stop both ways, because most game starts begin from a stop; and 10–15 metre races against a teammate.
 
 ### Changing speed — the skating half of it
+
+**Change speed on purpose, because a skater at one speed is easy to defend.** A defender matching a steady skater just holds that speed. Glide, and they must decide whether to close or ease off; then explode, and whatever they chose, you have made separation. The same works without the puck: drift, let your check relax, then break.
 
 ```facts
 Action: Glide to read the play, then explode out of it — the glide buys the look, the start goes where you looked
@@ -387,8 +389,6 @@ Never: Skate flat out the whole shift — you have no gear left to change to, an
 Action: Change speed off the puck too — drift, let your check relax, then break
 Convention: That a change of speed beats top speed is coaching craft, not a measured finding — Time and Space owns it and its sources
 ```
-
-**Change speed on purpose, because a skater at one speed is easy to defend.** A defender matching a steady skater just holds that speed. Glide, and they must decide whether to close or ease off; then explode, and whatever they chose, you have made separation. The same works without the puck: drift, let your check relax, then break.
 
 That a change of speed beats top speed is coaching craft, not a measured finding; [Time and Space → Changing pace](../hockey-iq/time_and_space.md#changing-pace--why-coaching-material-puts-a-change-of-speed-above-top-speed) owns it, and [Puck Handling](puck_handling.md) its use one-on-one. The skating part: the explosion is the first three steps or a hard crossover, and the slow-down is a glide on a bent knee or a stop that leaves you loaded.
 
@@ -435,6 +435,8 @@ Never: Cross over too early — the under-push happens out to the side first, or
 
 ### Strong side and weak side
 
+**Almost everyone has a stronger crossover direction and a weaker one** — even professionals. Robby Glantz writes that every pro he has coached *"asks me to work on there weaker side (usually the left side)"*. That parenthesis is one coach's impression of his students; nothing measured says which side is usually weak, so find out yours.
+
 ```facts
 Read: Almost everyone has a stronger crossover direction and a weaker one — find out which is yours
 Risk: You drift toward turns in your strong direction without noticing, which makes you predictable
@@ -443,8 +445,6 @@ Risk: A winger with a weak side takes a worse backcheck route — the race back 
 Convention: Two laps weak for every one strong, sustained over a season — a rule of thumb, not a measured optimum
 Never: Take any claim about which side is the weak one as fact — one power-skating coach says it is usually the left, and nothing measured establishes it
 ```
-
-**Almost everyone has a stronger crossover direction and a weaker one** — even professionals. Robby Glantz writes that every pro he has coached *"asks me to work on there weaker side (usually the left side)"*. That parenthesis is one coach's impression of his students; nothing measured says which side is usually weak, so find out yours.
 
 What a weak side costs you in games:
 - You will drift toward turns in your strong direction without noticing, which makes you predictable.
@@ -461,6 +461,8 @@ Skating backwards well is the defining physical skill of a defenceman — the di
 
 ### Why it's a defenceman's skill specifically
 
+**Gap control** — the distance you keep between yourself and an oncoming puck carrier — is the core defensive skill, and it is a skating problem. You cannot hold a tight gap against a fast forward unless you travel backwards nearly as fast as they travel forwards. [Defending the Rush](../systems/defending_the_rush.md) owns the distances (about a stick and a half at the centre red line, as a guide — one published page says two sticks).
+
 ```facts
 Key: Gap control is entirely a skating problem — you cannot hold a gap you are not fast enough to hold
 Risk: Too big a gap and you get walked into the zone; pivot early to skate forwards and the first change of direction beats you
@@ -468,13 +470,13 @@ Read: Too big a gap and an early pivot are both skating failures being scored as
 Action: Forwards need backward skating too — retreating through the neutral zone, and covering for a pinching defenceman
 ```
 
-**Gap control** — the distance you keep between yourself and an oncoming puck carrier — is the core defensive skill, and it is a skating problem. You cannot hold a tight gap against a fast forward unless you travel backwards nearly as fast as they travel forwards. [Defending the Rush](../systems/defending_the_rush.md) owns the distances (about a stick and a half at the centre red line, as a guide — one published page says two sticks).
-
 A defenceman who can't skate backwards fast enough does one of two things: leaves a huge gap and gets walked into the zone, or pivots early and gets beaten by the first change of direction. **Both are skating failures being scored as decision failures.**
 
 Forwards need it too: retreating through the neutral zone, and covering for a **pinching** defenceman — one who steps down from the offensive blue line to keep a puck in, leaving their spot for someone else to fill.
 
 ### The backward stride — C-cuts
+
+The engine of backward skating is the **C-cut**: one foot carves a "C" into the ice, pushing out and back in, while the other skate glides straight back beneath you.
 
 ```facts
 Technique: One foot at a time carves a C into the ice, pushing out then back in, while the other skate glides straight back
@@ -484,13 +486,13 @@ Action: Recover the foot back underneath you, exactly as in the forward stride
 Never: Push weakly with both feet at once — the slow way most beginners default to
 ```
 
-The engine of backward skating is the **C-cut**: one foot carves a "C" into the ice, pushing out and back in, while the other skate glides straight back beneath you.
-
 - Push **one foot at a time to full extension**, finishing with a snap of the toes inward. Pushing weakly with both feet at once is the slow beginner's habit.
 - **Transfer your full weight onto the pushing foot** during the thrust.
 - Recover the foot back underneath you, exactly as in the forward stride.
 
 ### Stance — even lower than forwards
+
+Glantz's backward stance: sit as if on a stool, backside almost parallel to the ice, knees covering your toes, back straight, and **the back of your helmet in front of your knees**.
 
 ```facts
 Position: Sit as if on a stool, backside almost parallel to the ice, knees covering your toes, back straight
@@ -500,8 +502,6 @@ Never: Lean too far forward — weight on the front of the blade kills speed and
 Never: Swivel your hips during the recovery — it destroys directional control and drifts you off your line
 Read: If you feel the front of the blade digging, you have leaned too far forward whatever your helmet is doing
 ```
-
-Glantz's backward stance: sit as if on a stool, backside almost parallel to the ice, knees covering your toes, back straight, and **the back of your helmet in front of your knees**.
 
 The critical error is the reverse of the forward one: **leaning too far forward puts your weight on the front of the blade**, which kills speed and control going backwards.
 
@@ -583,6 +583,10 @@ You're skating forwards and need to skate backwards, facing the same way.
 
 ### The mohawk
 
+A **mohawk** is a pivot where your heels come together and your feet open toward 180 degrees, so you rotate heel-to-heel without crossing your feet. It is fast and keeps you low.
+
+It needs real hip mobility and outside-edge control, so it is usually taught after crossover pivots. Elite defencemen flow between C-cuts, crossovers, edge changes and mohawks without thinking.
+
 ```facts
 Technique: Heels come together and the feet open out toward 180 degrees, rotating heel-to-heel without crossing your feet
 Goal: Change forwards-to-backwards or backwards-to-forwards fast and low, with no crossover step
@@ -590,11 +594,9 @@ Read: The mohawk needs real hip mobility and comfortable outside-edge control, s
 Key: Elite defencemen flow between C-cuts, crossovers, edge changes and mohawks without thinking about which one they're using
 ```
 
-A **mohawk** is a pivot where your heels come together and your feet open toward 180 degrees, so you rotate heel-to-heel without crossing your feet. It is fast and keeps you low.
-
-It needs real hip mobility and outside-edge control, so it is usually taught after crossover pivots. Elite defencemen flow between C-cuts, crossovers, edge changes and mohawks without thinking.
-
 ### Backward to forward
+
+You're retreating, the puck turns over, and you need to go. Open the hip toward where you want to go, plant, and drive out on your inside edge with a short toe start. Most forwards lose a step here on a rush going the other way, so drill it both directions.
 
 ```facts
 Read: You're retreating, the puck turns over, and you need to go
@@ -603,9 +605,9 @@ Key: The backward-to-forward transition is where most forwards lose a step on a 
 Action: Drill the backward-to-forward transition in both directions specifically
 ```
 
-You're retreating, the puck turns over, and you need to go. Open the hip toward where you want to go, plant, and drive out on your inside edge with a short toe start. Most forwards lose a step here on a rush going the other way, so drill it both directions.
-
 ### Which way to pivot — a coaching default, not a law
+
+**The standard coaching instruction is to pivot toward the boards, not the middle.** It is about the failure: if you are beaten in the pivot, you want to be beaten **toward the wall** — where the boards act as a second defender and the angle is poor — not **into the slot**, the ice in front of the net between the faceoff circles, where goals come from.
 
 ```facts
 Convention: Defencemen pivot toward the boards rather than the middle — the standard coaching instruction, not a law
@@ -616,8 +618,6 @@ Read: The correct pivot direction is decided by where the attacker is, not by wh
 Action: Ask your coach which pivot direction they want, and drill both
 Key: Pivot late — once you've turned to skate forwards, you have given up your ability to react to a change of direction
 ```
-
-**The standard coaching instruction is to pivot toward the boards, not the middle.** It is about the failure: if you are beaten in the pivot, you want to be beaten **toward the wall** — where the boards act as a second defender and the angle is poor — not **into the slot**, the ice in front of the net between the faceoff circles, where goals come from.
 
 ![](diagram:skating-pivot-toward-the-boards)
 
@@ -694,6 +694,8 @@ Practise it on a carpet at home, then a few times at the start of a session. **O
 
 ### The two-foot hockey stop
 
+The standard stop: **rotate your hips roughly 90 degrees** so both skates turn across your direction of travel, and let the blades scrape.
+
 ```facts
 Technique: Rotate your hips roughly 90 degrees so both skates turn perpendicular to your direction of travel, and let the blades scrape
 Position: Feet roughly shoulder-width apart, shoulders level, weight toward the balls of the feet, chest up, head facing forward
@@ -703,8 +705,6 @@ Never: Lean back away from the stop — that's the instinct, and it puts you on 
 Risk: Stopping on the leading inside edge alone is slower, costs more energy and wears the edge — one uncited Wikipedia sentence, and nothing else cited here says it
 Risk: A one-edge stop also leaves you off-balance for the start out of it — this document's reasoning rather than a sourced claim
 ```
-
-The standard stop: **rotate your hips roughly 90 degrees** so both skates turn across your direction of travel, and let the blades scrape.
 
 - Feet roughly **shoulder-width apart**, shoulders level.
 - **The outside skate** (the one that ends up leading) rides its **inside edge**; **the inside skate** rides its **outside edge**.
@@ -716,15 +716,17 @@ Why both edges matter — **and the evidence is thin.** Wikipedia's *Hockey stop
 
 ### The one-foot stop
 
+Same idea on one skate — usually the leading foot on its inside edge, the other lifted or trailing. It is quicker and leaves one foot free to push off in a new direction, which is why you see it constantly in games. It needs more balance; learn the two-foot stop first.
+
 ```facts
 Technique: The same idea on one skate — usually the leading foot on its inside edge, the other lifted or trailing
 Goal: Quicker to initiate, and it leaves one foot free to push off immediately in a new direction
 Read: The one-foot stop demands more balance — learn the two-foot stop first
 ```
 
-Same idea on one skate — usually the leading foot on its inside edge, the other lifted or trailing. It is quicker and leaves one foot free to push off in a new direction, which is why you see it constantly in games. It needs more balance; learn the two-foot stop first.
-
 ### The snowplough
+
+The beginner's stop: toes pointed slightly in, press on both inside edges, and bend the knees to push the blades out. It is slow and leaves you out of an athletic position, but **it always works**, and the half-version (one foot ploughing) sheds a little speed without a full stop.
 
 ```facts
 Technique: Point both toes slightly inward, press on both inside edges, and bend the knees to push the blades outward
@@ -733,9 +735,9 @@ Options: The half-snowplough, one foot ploughing, sheds a little speed without c
 Key: The snowplough always works
 ```
 
-The beginner's stop: toes pointed slightly in, press on both inside edges, and bend the knees to push the blades out. It is slow and leaves you out of an athletic position, but **it always works**, and the half-version (one foot ploughing) sheds a little speed without a full stop.
-
 ### The point most players never fix
+
+**Many players can only stop properly one way** — how many has never been counted, so test your own weak side. If your other side is a wobbly snowplough, you will take longer routes to avoid it, turn instead of stopping and end up further from the puck, arrive at battles slowing down instead of set, and lose the stop-and-start exchange — one of the commonest races in the game.
 
 ```facts
 Read: If you can only stop properly one way it costs you constantly — how common that is has never been counted, so test your own weak side rather than assume
@@ -745,19 +747,17 @@ Action: In any stop-and-start drill, alternate sides deliberately rather than al
 Action: In your own skating, stop at every blue line and goal line, half of them on the weak side
 ```
 
-**Many players can only stop properly one way** — how many has never been counted, so test your own weak side. If your other side is a wobbly snowplough, you will take longer routes to avoid it, turn instead of stopping and end up further from the puck, arrive at battles slowing down instead of set, and lose the stop-and-start exchange — one of the commonest races in the game.
-
 **Fix:** alternate sides in every stop-and-start drill, and in your own skating stop at every blue line and goal line, half of them on the weak side.
 
 ### Starting out of a stop
+
+A stop is only worth what follows it. It should leave you **loaded** — low, on your edges, balanced — so the first step out is immediate. Practise it as one movement: stop, three explosive steps the other way, stop, three steps back. That drill holds most of what hockey asks of your legs.
 
 ```facts
 Goal: The stop should leave you loaded — low, on your edges, weight balanced — so the first step out is immediate
 Action: Practise them as one movement: stop, three explosive steps the other way, stop, three steps back
 Key: A stop is only valuable because of what follows it
 ```
-
-A stop is only worth what follows it. It should leave you **loaded** — low, on your edges, balanced — so the first step out is immediate. Practise it as one movement: stop, three explosive steps the other way, stop, three steps back. That drill holds most of what hockey asks of your legs.
 
 ---
 
@@ -782,14 +782,14 @@ Cross over when you have room and want speed. Turn tight when you have no room �
 
 ### How to turn tighter
 
+Radius is set by lean, and lean by knee and ankle bend. **You cannot make a tight turn standing up.** Sink lower, steepen the edges, keep the chest up, and let your whole body go into the circle.
+
 ```facts
 Key: You cannot make a tight turn standing up — radius is set by lean angle, and lean angle by knee and ankle bend
 Action: Sink lower, get the edges to a steeper angle, and keep the chest up
 Technique: Let your whole body go into the circle, not just your feet
 Never: Drop your gaze through the turn — it drags your weight forward
 ```
-
-Radius is set by lean, and lean by knee and ankle bend. **You cannot make a tight turn standing up.** Sink lower, steepen the edges, keep the chest up, and let your whole body go into the circle.
 
 Keep your eyes up through the turn — players reflexively drop them here, and it drags their weight forward.
 
@@ -840,6 +840,8 @@ Convention: Lane assignments on the backcheck and how hard the first forechecker
 
 ## Skating With the Puck — and by Position
 
+**Skating with the puck.** A puck degrades your stride until you train it: your arms stop, your head drops, your feet narrow, and you coast. The visible symptom is **slowing down the moment you receive the puck**. The fixes are in [Puck Handling → Carrying at Speed](puck_handling.md#carrying-at-speed). The skating instruction: **do your crossover, transition and tight-turn drills with a puck at least half the time.**
+
 ```facts
 Action: Do your crossover, transition and tight-turn drills with a puck at least half the time
 Never: Slow down the moment you receive the puck — the fixes are in Puck Handling, but the fault shows up in your stride
@@ -850,8 +852,6 @@ Convention: Defenceman — prioritise backward skating, backward crossovers, piv
 Action: Goalies — train the position-specific movement, shuffles and T-pushes and post play, with a goalie coach
 Key: If you are changing position, the skating is where the switch is won or lost
 ```
-
-**Skating with the puck.** A puck degrades your stride until you train it: your arms stop, your head drops, your feet narrow, and you coast. The visible symptom is **slowing down the moment you receive the puck**. The fixes are in [Puck Handling → Carrying at Speed](puck_handling.md#carrying-at-speed). The skating instruction: **do your crossover, transition and tight-turn drills with a puck at least half the time.**
 
 **Skating by position.** If practice time is limited: a **centre** should prioritise transitions, turning both ways, and holding technique when tired; a **winger**, the first three steps, straight-line speed and the forecheck-to-backcheck reversal; a **defenceman**, backward skating, backward crossovers, pivots both ways and lateral mobility along the blue line.
 
@@ -889,6 +889,8 @@ Long top-speed sprinting isn't on the list. That is a judgement, not a measured 
 
 ### Power skating
 
+**Power skating** is coached skating technique, separate from team practice. It is worth it because **you cannot see yourself skate** — you do not know whether you are finishing your push or recovering under your body. A coach or video is the only reliable way to find out.
+
 ```facts
 Goal: Coached skating technique as a standalone discipline, separate from team practice
 Key: You cannot see yourself skate — almost every fault in this document is invisible from the inside
@@ -896,13 +898,13 @@ Convention: Roughly one dedicated session a week in season, two to three in the 
 Action: With no coach available, have someone film you skating from the side and from behind
 ```
 
-**Power skating** is coached skating technique, separate from team practice. It is worth it because **you cannot see yourself skate** — you do not know whether you are finishing your push or recovering under your body. A coach or video is the only reliable way to find out.
-
 One provider suggests roughly **one session a week in season, two to three in the off-season** — an order of magnitude, not a proven prescription.
 
 No coach? Have someone film you from the side and from behind. The faults are obvious on video.
 
 ### Off-ice work
+
+Off-ice training doesn't teach technique, but it removes the limits that stop you executing it — **ankle stability, single-leg strength and hip mobility**. The most direct work: **slide boards** (lateral push and weight transfer), **single-leg strength** (split squats, single-leg deadlifts, step-ups — skating is a single-leg sport), **lateral bounds** (push off one leg, land on the other, stick it), and **single-leg balance**. Programming is in [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md).
 
 ```facts
 Goal: Off-ice work doesn't teach technique — it removes the physical limits that stop you executing it
@@ -912,9 +914,9 @@ Action: Single-leg strength — split squats, single-leg deadlifts, step-ups; sk
 Action: Lateral bounds — push off one leg, land on the other, stick it — plus single-leg balance work
 ```
 
-Off-ice training doesn't teach technique, but it removes the limits that stop you executing it — **ankle stability, single-leg strength and hip mobility**. The most direct work: **slide boards** (lateral push and weight transfer), **single-leg strength** (split squats, single-leg deadlifts, step-ups — skating is a single-leg sport), **lateral bounds** (push off one leg, land on the other, stick it), and **single-leg balance**. Programming is in [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md).
-
 ### Skate fit and sharpening
+
+Before blaming technique, check your equipment. Boots that are too big, too soft or not done up properly make deep knee bend and hard edges impossible — the foot moves in the boot instead of the blade on the ice. Dull or uneven blades, or an unfamiliar hollow, change how every edge feels. See [Equipment](../off-the-ice/equipment.md).
 
 ```facts
 Action: Check for an equipment problem before you conclude you have a technique problem
@@ -922,9 +924,9 @@ Risk: Boots too big, too soft or not done up properly make deep knee bend and ha
 Risk: Dull or unevenly ground blades, or an unfamiliar hollow, change everything about how the edges feel
 ```
 
-Before blaming technique, check your equipment. Boots that are too big, too soft or not done up properly make deep knee bend and hard edges impossible — the foot moves in the boot instead of the blade on the ice. Dull or uneven blades, or an unfamiliar hollow, change how every edge feels. See [Equipment](../off-the-ice/equipment.md).
-
 ### How long it takes
+
+Honest expectations — and only two have a source. Athletes Untapped, one coaching provider, says *"[l]earning the basics of stopping and turning takes a few months of consistent practice"*, and elite speed, transitions and edge control are *"a multi-year process that requires dedicated, specialized coaching."* That is guidance, not measurement, from a coaching marketplace with an interest in that last condition. **The two rungs in between are this document's own guess, unsourced**: **weeks** for better knee bend and edge feel (mostly a matter of deciding to stay low), and **a season** for a rebuilt stride or a weak side brought up to match.
 
 ```facts
 Convention: A few months for stopping and turning both ways, and a multi-year process for elite edge control and explosive transitions — one provider's guidance, not measurement
@@ -932,8 +934,6 @@ Convention: Weeks for better knee bend and edge feel, a season for a rebuilt str
 Mindset: You will not become fast this month, but you can become noticeably more stable, lower and more balanced this month
 Key: Becoming more stable, lower and more balanced alone changes how many battles you win
 ```
-
-Honest expectations — and only two have a source. Athletes Untapped, one coaching provider, says *"[l]earning the basics of stopping and turning takes a few months of consistent practice"*, and elite speed, transitions and edge control are *"a multi-year process that requires dedicated, specialized coaching."* That is guidance, not measurement, from a coaching marketplace with an interest in that last condition. **The two rungs in between are this document's own guess, unsourced**: **weeks** for better knee bend and edge feel (mostly a matter of deciding to stay low), and **a season** for a rebuilt stride or a weak side brought up to match.
 
 For an adult player: **you will not become fast this month, but you can become noticeably more stable, lower and more balanced**, and that alone wins you more battles.
 

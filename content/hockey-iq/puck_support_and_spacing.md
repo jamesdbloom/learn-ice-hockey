@@ -103,13 +103,13 @@ The third point matters most. The triangle is not a formation you set up; it is 
 
 ### The triangle is a minimum, not a maximum
 
+With five skaters you build overlapping triangles: three around the puck, a fourth giving width on the far side, and a fifth above the play as the safety. Sections 5 and 6 cover those roles.
+
 ```facts
 Key: With five skaters you are not building one triangle, you are building overlapping ones
 Position: Three players form the immediate support triangle around the puck
 Position: A fourth provides width on the far side; a fifth sits above the play as the safety
 ```
-
-With five skaters you build overlapping triangles: three around the puck, a fourth giving width on the far side, and a fifth above the play as the safety. Sections 5 and 6 cover those roles.
 
 ---
 
@@ -199,6 +199,8 @@ Distance tells you how far. Angle tells you what kind of option you are, and the
 
 ### Support behind the puck — the outlet
 
+You are between the puck and your own net, or at least further back than the carrier.
+
 ```facts
 Position: Between the puck and your own net, or at least further back than the carrier
 Goal: Offer a guaranteed, low-risk reset into space the opposition has already vacated
@@ -208,13 +210,13 @@ Action: Whoever is lowest provides it — usually a defenceman or the centre in 
 Action: Call for it; the verbal cue in most teams' vocabulary is "back"
 ```
 
-You are between the puck and your own net, or at least further back than the carrier.
-
 - **What it offers:** a safe reset. The pass goes backwards into space the opposition has left, so it is the least contested pass on the ice.
 - **Why it is non-negotiable:** it is still there when the other two angles are covered. Without it, the only answer to good pressure is dumping the puck away — a turnover you chose.
 - **Who provides it:** whoever is lowest. In your own end that is usually a defenceman or the centre; in the offensive zone, often the player who just came off the wall. Call **"back"** — see [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ### Support level with the puck — the lateral option
+
+You are roughly the same distance from your own net as the carrier, but across from them.
 
 ```facts
 Position: Roughly the same distance from your own net as the carrier, but across from them
@@ -224,12 +226,12 @@ Never: Pass across the middle in your own defensive zone — an interception the
 Action: In your own end, take the lateral option behind your own net, not through the slot
 ```
 
-You are roughly the same distance from your own net as the carrier, but across from them.
-
 - **What it offers:** a change of side. Most defences pressure strong-side, on the half of the ice the puck is on. A lateral pass moves it to the half where their coverage is thinnest and makes every defender reset.
 - **The catch:** a lateral pass crosses in front of people. In the offensive and neutral zones that is a normal, valuable play. **In your own zone, never pass across the middle.** An interception in the slot is a point-blank chance for an opponent already facing your net. In your own end the lateral option goes *behind your net*.
 
 ### Support ahead of the puck — the attacking option
+
+You are further up ice than the carrier.
 
 ```facts
 Position: Further up ice than the carrier
@@ -240,21 +242,19 @@ Rule: A raised trail skate is onside under NHL, IIHF and PWHL rules, but USA Hoc
 Action: Time your entry rather than parking in the zone
 ```
 
-You are further up ice than the carrier.
-
 - **What it offers:** territory. It is the only one of the three that gains ground.
 - **The cost:** it is the easiest to intercept, and if it fails you are behind the play.
 - **The offside limit:** time your entry rather than parking in the zone. **Offside is both skates completely over the blue line before the puck completely crosses it.** Keep one skate on or behind the line, **with the blade on the ice**: a raised trail skate counts as onside under NHL, IIHF and PWHL rules, but USA Hockey and Hockey Canada require skate *contact*.
 
 ### The principle: all three at once
 
+**A team needs all three angles at once.** That is what "good spacing" means.
+
 ```facts
 Goal: Have all three angles available simultaneously — that is the actual content of "good spacing"
 Risk: All behind is safety with no attack; all ahead leaves no outlet; all level goes side to side and never up
 Action: Ask which of the three angles is currently missing, then go and be that one
 ```
-
-**A team needs all three angles at once.** That is what "good spacing" means.
 
 ![](diagram:support-angles)
 
@@ -277,6 +277,8 @@ Two things trip people up:
 
 ### Somebody above the puck — the safety convention
 
+**Somebody stays above the puck.** In every zone one player is not part of the attack; they are the insurance against it failing. **That is a coaching convention, not a law.** Benches drop it on purpose for a full-ice press, a delayed penalty or 6-on-5 with your goalie pulled, because in each of those a counter-attack has stopped costing you anything. [Forechecking Systems](../systems/forechecking_systems.md) covers those three. Otherwise, assume it holds.
+
 ```facts
 Convention: Somebody above the puck, in every zone — a coaching convention, and benches suspend it on a called full-ice press, a delayed penalty or a 6-on-5
 Goal: One player is not part of the attack; they are the insurance against the attack failing
@@ -285,8 +287,6 @@ Options: A 1-2-2 puts two forwards above as a layered wall; a single-high struct
 Action: Before you go below the puck, know who is above it
 Key: F1, F2 and F3 are roles defined by order of arrival, not fixed people
 ```
-
-**Somebody stays above the puck.** In every zone one player is not part of the attack; they are the insurance against it failing. **That is a coaching convention, not a law.** Benches drop it on purpose for a full-ice press, a delayed penalty or 6-on-5 with your goalie pulled, because in each of those a counter-attack has stopped costing you anything. [Forechecking Systems](../systems/forechecking_systems.md) covers those three. Otherwise, assume it holds.
 
 Who it is depends on the system:
 
@@ -304,6 +304,8 @@ Who it is depends on the system:
 
 ### Why wingers stay wide
 
+A winger on the neutral-zone boards often feels useless, far from the puck. That feeling is the point.
+
 ```facts
 Position: Wide on the boards in the neutral zone, even when it feels useless — that feeling is the point
 Key: Two defenders cannot both cover the middle and both cover the boards
@@ -312,13 +314,15 @@ Never: Drift inside to get closer to the play — your checker drifts in too and
 Risk: Drifting in gains you no option; it deletes one for a teammate
 ```
 
-A winger on the neutral-zone boards often feels useless, far from the puck. That feeling is the point.
-
 **Two defenders cannot cover both the middle and the boards.** A wide winger keeps a defender wide, out of the middle. The middle, the most valuable ice there is, is open *because* someone is standing somewhere else.
 
 Drift inside to get closer to the play and your checker drifts in too, and the middle closes. You have gained no option and deleted one for a teammate. [Winger](../positions/winger.md) makes the same point.
 
 ### The counterintuitive rule: to help a battle, move away from it
+
+Your teammate is pinned on the boards in a battle. Every instinct says go and help.
+
+**Usually, don't — not into the battle.** Your teammate needs to get the puck *out*. Skate into the pile and you add a body, bring your checker and crowd the exits. Move to open ice five metres away with your stick down and the puck has somewhere to go, and when it squirts free you have it with time.
 
 ```facts
 Never: Skate into a board battle your teammate already controls — you crowd the exits and bring your checker
@@ -330,10 +334,6 @@ Never: Arrive at a wall battle with your back to anyone coming at you, and never
 Never: Hit the boards with the point of your shoulder. Keep the whole shoulder off them too if you can, and let the forearm and hip take the load instead
 Never: Push or hit an opponent on the wall from behind — if their back is to you, go for the puck at their feet. It is checking from behind even in non-checking hockey, and in most books it ends your game
 ```
-
-Your teammate is pinned on the boards in a battle. Every instinct says go and help.
-
-**Usually, don't — not into the battle.** Your teammate needs to get the puck *out*. Skate into the pile and you add a body, bring your checker and crowd the exits. Move to open ice five metres away with your stick down and the puck has somewhere to go, and when it squirts free you have it with time.
 
 ![](diagram:support-a-battle-from-outside)
 
@@ -347,13 +347,13 @@ If you are already facing the wall and cannot turn, limit the damage: spread the
 
 ### Depth means somebody deep and somebody high
 
+In the offensive zone, depth means a player below the goal line *and* a player at the blue line, so the defence must choose which end to defend. Five players between the dots and the goal line is a scrum with a net behind it.
+
 ```facts
 Position: In the offensive zone, one player below the goal line and one at the blue line
 Goal: Stretch the zone vertically so the defence must choose which end of it to defend
 Never: Put all five between the dots and the goal line — that is a scrum with a net behind it, not an attack
 ```
-
-In the offensive zone, depth means a player below the goal line *and* a player at the blue line, so the defence must choose which end to defend. Five players between the dots and the goal line is a scrum with a net behind it.
 
 ---
 
@@ -452,6 +452,10 @@ The weak-side winger, higher and wider than everyone, adds the width that stops 
 
 ### Neutral zone — three lanes
 
+The neutral zone has three **lanes**: strong-side boards, middle and weak-side boards.
+
+**The usual default is one player per lane**, a coaching choice rather than a law. Two players in one lane can be covered by one defender: "same lane, same checker". The realistic alternative is a **1-3-1 regroup**, which stacks the middle lane on purpose to overload the seam and pull their defence inward. **Find out whether your team spreads or stacks** — the two look identical for one stride, then need opposite decisions.
+
 ```facts
 Position: One player in each of the three lanes — strong-side boards, middle, weak-side boards
 Convention: One player per lane is the usual default, a coaching choice rather than a law
@@ -462,10 +466,6 @@ Technique: Different lane, different speed, on curved routes so you receive alre
 Goal: Stretch the ice with width, so their forwards and defence cannot squeeze the middle
 ```
 
-The neutral zone has three **lanes**: strong-side boards, middle and weak-side boards.
-
-**The usual default is one player per lane**, a coaching choice rather than a law. Two players in one lane can be covered by one defender: "same lane, same checker". The realistic alternative is a **1-3-1 regroup**, which stacks the middle lane on purpose to overload the seam and pull their defence inward. **Find out whether your team spreads or stacks** — the two look identical for one stride, then need opposite decisions.
-
 Think **"different lane, different speed"**, so the defence cannot set one gap that handles everyone. Curve into open ice rather than skating straight, so you receive the puck already facing forward.
 
 ![](diagram:neutral-zone-lanes)
@@ -474,6 +474,8 @@ Width does the heavy lifting: stretched wide, their forwards and defence cannot 
 
 ### Offensive zone — below, level, above
 
+In the offensive zone support becomes rotation, because the puck moves round the perimeter faster than anyone can skate.
+
 ```facts
 Position: Someone below the puck, someone level with it and someone above it, at all times
 Position: Below is behind or beside the net; level is the half-wall or slot; above is the point and often a third forward high
@@ -481,8 +483,6 @@ Key: Offensive-zone support is rotation, not position — the puck moves round t
 Action: When you leave one of those layers, someone fills it — the layer must stay occupied, not your spot
 Convention: Rotation rules are a coaching choice and change who may go below the puck — ask which your team plays
 ```
-
-In the offensive zone support becomes rotation, because the puck moves round the perimeter faster than anyone can skate.
 
 Keep **someone below the puck, someone level with it and someone above it** at all times — section 4's three angles in offensive-zone terms. **Below** is behind or beside the net, the reset when the wall play dies. **Level** is the half-wall (the boards level with the faceoff dot) or the slot. **Above** is the point, often with the third forward high: the safety and the shot.
 
@@ -502,6 +502,8 @@ Arriving at the right place at the right moment is worth far more than standing 
 
 ### Supporting late
 
+The skill is **delaying on purpose so you arrive with speed as the puck does.**
+
 ```facts
 Action: Delay deliberately, so you arrive with speed as the puck arrives
 Technique: "Puck first, feet second" — let the carrier commit a defender before you launch
@@ -510,8 +512,6 @@ Key: A late arrival with speed beats a set gap — by the time the defenceman re
 Rule: The puck must cross the blue line before or as your second skate does (NHL Rule 83 offside); under USA Hockey 630(a) and Hockey Canada 6.11 that trailing skate must also be touching the ice, so keep it down wherever you play
 Never: Delay in your own zone — the carrier needs the outlet now, and a late arrival there is an absent one
 ```
-
-The skill is **delaying on purpose so you arrive with speed as the puck does.**
 
 The neutral-zone cue is **"puck first, feet second"**: let the carrier commit a defender before you launch. A half-second delay keeps you onside, lets the defender's head turn to the puck, and has you crossing the space at full speed while they stand still.
 
@@ -523,14 +523,14 @@ Time your route so the puck beats you over the blue line. Keep one skate on or b
 
 ### The moment the puck changes hands
 
+Support is hardest in the second or two after the puck changes hands, because five players are still where the old possession wanted them.
+
 ```facts
 Action: When your team wins the puck, the nearest player away from the pressure gives the winner an outlet at once — behind or level, blade on the ice, calling for it
 Action: Everyone else gets wide and into their lanes rather than turning to watch the puck
 Action: When your team loses it, the nearest player pressures the new carrier at once, the next one layers behind, and everybody else gets above the puck
 Convention: Whether the nearest forward goes straight in or everyone recovers above the puck first is a coaching choice, so ask your bench which your team plays
 ```
-
-Support is hardest in the second or two after the puck changes hands, because five players are still where the old possession wanted them.
 
 **When your team wins it,** the nearest player away from the pressure becomes the outlet at once — behind or level with the winner, blade down, calling for it. Everyone else gets wide and into their lanes instead of watching. A player who wins a battle with nowhere to put the puck often loses it a second later.
 
@@ -613,16 +613,16 @@ To make the layer a real position:
 
 ### The same distance question, inverted
 
+Too close and one move beats you both. Too far and the carrier skates through the gap. Aim to arrive in about a second without one deke beating you both — roughly two to three stick lengths, offset diagonally rather than directly behind.
+
+**Whether you may hold that layer at all depends on your system** — zone, man-to-man or hybrid. [Playing Without the Puck → Layer, do not duplicate](playing_without_the_puck.md) sets out each and what to ask your coach; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) is the full treatment.
+
 ```facts
 Position: Offset diagonally from the first defender, not directly behind them
 Convention: The layering distance is the same two-to-three-stick-lengths range as support distance — near enough to arrive in about a second
 Risk: Too close and one move beats you both; too far and the carrier skates through the gap between you
 Convention: Whether you may hold the layer at all is system-dependent — ask how your team's coverage changes it
 ```
-
-Too close and one move beats you both. Too far and the carrier skates through the gap. Aim to arrive in about a second without one deke beating you both — roughly two to three stick lengths, offset diagonally rather than directly behind.
-
-**Whether you may hold that layer at all depends on your system** — zone, man-to-man or hybrid. [Playing Without the Puck → Layer, do not duplicate](playing_without_the_puck.md) sets out each and what to ask your coach; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) is the full treatment.
 
 ---
 
@@ -653,14 +653,14 @@ Then:
 
 ### Self-checking on the ice
 
+One question, asked constantly: **"Where are my two options?"**
+
 ```facts
 Key: One question, asked constantly — "where are my two options?"
 Action: On the puck, name the two before you receive it; if you can only name one, buy time or move it on
 Action: Off the puck, ask whether you are one of somebody's two options right now — if not, move
 Action: After every pass, go again — pass and move is how the support triangle survives the pass
 ```
-
-One question, asked constantly: **"Where are my two options?"**
 
 - **On the puck** — ideally before it arrives — name the two. If you can name only one, buy time for a second, or move the puck to someone who has two.
 - **Off the puck,** ask *am I one of somebody's two options right now?* If not, you are watching, not supporting. Move.
