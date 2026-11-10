@@ -932,6 +932,8 @@ You will spend as much time breaking a forecheck as running one. Recognising whi
 
 ### What to do about each
 
+**Against an aggressive forecheck, move the puck early — a reverse against an over-committed F1, a rim against one who has sealed you in — with your winger coming underneath to receive. Against containment or a trap, stop forcing it: go D-to-D and regroup to make the wall shift, then chip past the line and race for it, pulling up if the goalie comes out for it — and never skate into the middle of three players.** Whatever the forecheck and whatever your league, never turn your back to anyone coming at you on the wall, and never duck — head up, chin off your chest.
+
 ```facts
 Action: Against an aggressive forecheck, move the puck early — before pressure arrives, not after
 Options: A reverse — the puck sent back against the flow — beats an over-committed F1; a rim — sent onward around the boards — beats one who has sealed you in

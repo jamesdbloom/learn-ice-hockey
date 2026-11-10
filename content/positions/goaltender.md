@@ -189,6 +189,8 @@ Korn calls the efficient combination of moving out, back and diagonally to the p
 
 ### Knowing where you are without looking
 
+Build a set of physical references so you never have to look at the net: tap the posts with your stick or glove when the play allows, feel where your skates are against the crease paint, and reset at every stoppage by skating your arc, tapping both posts and finding your top-of-crease spot.
+
 ```facts
 Key: You cannot look at the net, so build a set of physical references instead
 Technique: Tap the posts with your stick or glove when the play allows — it is a position fix, not a nervous tic
@@ -547,6 +549,8 @@ A screen is an opponent standing in your line of sight. **Traffic** is the wider
 
 ### Fighting for a sightline
 
+Against a screen, commit to one side and see the puck cleanly there, and take a step or a small shuffle if that opens a lane — slightly off the perfect angle with a clear view beats square and blind. Call "screen" loudly, early and every time: it tells a teammate to get out of your sightline, or get beside the man in it and hold their ground, not to push them out, which can be called interference wherever you play, and where checking is barred an illegal check as well.
+
 ```facts
 Convention: Around or over a screen is a genuine coaching split — this document's default is around, BVHS teaches over to maintain size
 Key: The look-around and look-over schools agree on what matters most — commit to one side and see the puck cleanly there
@@ -700,6 +704,8 @@ Even with a trapezoid, you have real value behind the net. The most useful thing
 **What it costs.** **Under the IIHF book a pad in the way of a pass is playing the puck.** Its Situation Handbook rules a goalie who drops to the knees and blocks a pass with the leg pads behind the goal line, outside the trapezoid, a minor for delay of game (Situation 27.7). That is the operative interpretation in Britain. Under the NHL book, whether a deliberate body block counts as playing the puck is my reading rather than a quoted interpretation: Rule 27.8 bars playing the puck out there and does not define "play" narrowly. The Handbook settles two things in your favour — a puck you stop on the goal line is not behind it (Situation 27.6), and a puck off the glass that hits you as you retreat is no penalty (Situation 27.9). One trap when you look these up: the Handbook uses "restricted area" for the ice you are barred from, where the Rulebook uses it for the trapezoid itself.
 
 ### The safe outlets
+
+When you move the puck, take the lowest-risk play available: leave it for a defenceman with time, and failing that make a short pass to a defenceman on your strong-side wall. In trouble, put it along the glass, never over it, because a clear straight out of the rink is a minor under most books — and almost never pass up the middle, where a goalie's turnover is a shot on an empty net with you standing in it.
 
 ```facts
 Priority: Rank your options by risk before you move the puck
@@ -1573,6 +1579,8 @@ The skill is not avoiding this. It is what you do in the ninety seconds afterwar
 - **Never point at a teammate.** Not with your hands, not with your body language, not with a look. It is the fastest way to lose a dressing room — and Mitch Korn treats blaming your defence as a symptom of a confidence problem rather than a description of what happened. His full list of those symptoms is under *Spotting your own confidence problems*, below.
 
 ### Spotting your own confidence problems
+
+Watch yourself for the signs that your confidence is slipping: blaming your equipment or your defence, drifting too deep or running at shooters, swinging between sulking and cockiness, and guessing instead of tracking the puck off the stick. When you catch one, treat it as your head talking, not as a real problem with your game.
 
 ```facts
 Key: Korn's defence mechanisms are symptoms of your head, not real problems

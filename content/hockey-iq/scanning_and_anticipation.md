@@ -511,6 +511,8 @@ An anticipating player shades toward the likely pass while staying between the p
 
 ## How to train it
 
+Train scanning with drills that fail if you do not look — shoulder-check outlets, number or colour calls, constrained small-area games — and talk in every drill. Away from practice, count your head turns on video and watch one player for a whole shift away from the puck; reaction and peripheral-vision tools train the eyes, not the hockey.
+
 ```facts
 Options: Shoulder-check outlet drills, number and colour calls, constrained small-area games — anything that fails if you do not look
 Action: Talk in every drill; a call is a scan you did not have to take yourself

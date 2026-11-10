@@ -476,6 +476,8 @@ The general fix is the same in every row: **name the habit out loud before the s
 
 ## The honest timeline
 
+Give a switch time, and expect it to get worse before it gets better. Coaches describe a few shifts to stop being lost, a handful of games before the routine reads are automatic and a season before the position feels yours, with forward to defence taking longer — experienced guesses, not measurements. Do not abandon the change in the first few weeks, at the bottom of the dip; that is the classic error.
+
 ```facts
 Key: There is no published measurement of how long a position switch takes — the timeframes below are coaching craft, with enormous individual variation
 Convention: A few shifts to stop being lost — you will know where to stand long before you know when to move

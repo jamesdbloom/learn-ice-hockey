@@ -250,10 +250,12 @@ The technique is to keep your assignment in your **peripheral vision** while you
 
 ### Stick in the lane, body between man and net
 
+Use your stick to take away the pass and your body to take away the shot and the net drive: blade flat on the ice in the lane between the puck and your man, and your body between your man and your own net. The blade goes in the lane, never on them — laying a stick across anyone is hooking or interference.
+
 ```facts
 Technique: Blade on the ice, flat, in the passing lane between the puck and your man — a stick held six inches up removes nothing
 Position: Put your body between your man and your own net, not between your man and the puck
-Never: Lay your stick across anyone, puck or no puck — that is hooking or holding. Off the puck the blade goes in the passing lane; on the carrier, play the puck or lift their stick well below the hands
+Never: Lay your stick across anyone, puck or no puck — that is hooking or interference. Off the puck the blade goes in the passing lane; on the carrier, play the puck or lift their stick well below the hands
 Technique: Face up-ice enough to see the play, stay on the goal side of your man, and let your stick reach across into the lane
 Priority: When you cannot both seal the lane and stay net-side, net-side wins in the defensive zone
 Key: A pass completed twenty feet from your net is survivable; a player alone at the goalmouth is not
@@ -322,6 +324,8 @@ Find out which of these your team plays. Then, the rule that survives every syst
 If it is genuinely ambiguous, **call it** — "I got it," "yours," "help" — and the call resolves it. Hockey's off-puck problems are disproportionately communication problems.
 
 ### Then how you arrive — covered elsewhere
+
+When you are one of the two who go, arrive the safe way round: ⚠️ **come to the wall on an angle with your skates parallel to the boards, forearm and hip to it, head up and chin off your chest — never turn your back to anyone coming at you, and never duck.** USA Hockey's safety material, citing research, traces almost all on-ice cervical-spine injuries to head-down, head-on contact with the boards or a goal post, even at walking speed, so winning the puck never justifies arriving any other way.
 
 ```facts
 Key: Deciding who goes is the off-puck question this document answers; how you arrive belongs to Body Contact and Battles, §10
@@ -442,6 +446,8 @@ Now the detail on State 1's most obvious job.
 
 ### Unmarked is not the same as available
 
+Getting open is not enough — make yourself available. Put your blade flat on the ice as a target, give the carrier a straight line to it, and look at the passing lane rather than your defender; if a body or a stick is in that lane, move three or four feet until it opens, and call for the puck.
+
 ```facts
 Key: Unmarked means no defender is near you; available means the carrier can actually get you the puck — the second is the one that matters
 Technique: Stick on the ice, blade flat, in a position to receive — the blade is your target, so give the passer something to hit
@@ -451,7 +457,7 @@ Action: When you get open, look at the passing lane, not at your defender. If th
 Action: Say something — a short call gives the carrier information their eyes may not have
 ```
 
-This distinction is the whole section, so it comes first.
+The difference between unmarked and available is the whole section.
 
 **Unmarked** means no defender is near you. **Available** means the puck carrier can actually get you the puck. They are very different, and the second is the one that matters. To be available you need all three of:
 

@@ -779,6 +779,8 @@ Action: Pass and receive while shuffling laterally, so the reception happens wit
 
 ### Partner drills
 
+Partner drills train the pass and the catch together. Give a target blade every rep, lead your partner into stride, and finish with a third player closing on the passer, stick on the puck and no body contact, because clean passing in a quiet drill does not transfer on its own.
+
 ```facts
 Action: Stationary tape-to-tape at increasing distance, both players giving a target blade every single rep
 Action: Skate parallel down the ice passing back and forth, deliberately leading each other into stride

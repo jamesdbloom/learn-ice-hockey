@@ -30,6 +30,8 @@ The player with the puck is the least informed player on the ice. An opponent cl
 
 ## A note on variation — read this before you learn the list
 
+Agree your call list as a team at the start of the season and drill it, and when you change teams, ask what they shout rather than assuming your calls travel.
+
 ```facts
 Convention: There is no official hockey vocabulary — calls vary by team, region, level and coach
 Action: Agree your list as a team at the start of the season and drill it in practice

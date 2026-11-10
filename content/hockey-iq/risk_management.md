@@ -567,6 +567,8 @@ You are anticipating if you can answer *why* before you move — the carrier's h
 
 ### The second test: who is behind you?
 
+Before you pinch, jump a lane or activate, check who is behind you: with your centre high in the zone the worst case is a 2-on-2, and with your centre below the goal line one bad bounce is a 2-on-1, so hold. When you do pinch, ⚠️ **pinch for the puck: check only where your league allows it and only while they still have the puck, and if you can see their numbers, pull up.**
+
 ```facts
 Read: Before you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am right and I still miss it?"
 Key: A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck — the worst case is a 2-on-2
@@ -792,6 +794,8 @@ Most penalties in amateur hockey are not tactical trades at all — nobody weigh
 ---
 
 ## Playing to the score — and to your level
+
+In a league where support is unreliable and turnovers meet no backcheck, play your own end simply and save the creative plays for the offensive zone. Within a game, shift toward the simple play when you have a big lead, a tired bench or a backup in net, and the other way when you need to change the game.
 
 ```facts
 Key: The right risk profile in a Tuesday-night beer league is not the right risk profile in a competitive one

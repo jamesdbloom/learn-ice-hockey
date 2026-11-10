@@ -113,6 +113,8 @@ This section expands the summary in [Defender](../positions/defender.md) — it 
 
 ### Why a big gap hands the attacker three things at once
 
+Close the gap on the rush. A tight gap takes away the attacker's speed, their time to look up for the trailer and the far winger, and their clean shooting lane from distance, all at once.
+
 ```facts
 Key: A large gap looks safe and is not — it hands the attacker three things at once
 Risk: Space to accelerate into, so they arrive faster than you while you are moving backwards
@@ -131,6 +133,8 @@ A large gap looks safe. It is not: it is the root of most rush goals — coachin
 Close the gap and you take away all three at once. This is why gap control is treated as the highest-leverage habit in defensive hockey — coaching emphasis, not a counted ranking — and it is one adjustment that removes speed, vision and shooting simultaneously.
 
 ### Start your feet early — you cannot close a gap from a standstill
+
+Start skating backwards while the puck is still being retrieved or regrouped in their end, so you already match the attacker's speed when they arrive, and reset your gap every time they turn back and come again.
 
 ```facts
 Never: Stand still and wait for the attacker — the gap opens at the moment you most need it closed

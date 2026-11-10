@@ -482,6 +482,8 @@ Coaches also use last change to:
 
 ### What you should do when you know you're being matched
 
+**On a scoring line being checked, change on the fly, move the puck early instead of beating your man one-on-one into traffic, and use the space their commitment leaves; on the checking line, your first job is not to get scored on — get the puck deep, change, and be first on faceoffs and first back.**
+
 ```facts
 Action: On a scoring line, change on the fly rather than at whistles — at a stoppage on the road you show your hand first
 Never: Take the bait and beat your man one-on-one into traffic. Move the puck early instead and make them cover all five of you
@@ -792,6 +794,8 @@ Formats vary enormously below the professional level everywhere else too: some l
 
 ### For the shooter
 
+**Decide your move before you start skating, have two moves ready and pick your speed deliberately; keep your head up and the puck out in front so a shot and a deke both stay live, try to make the goalie move first, and above all hit the net.**
+
 ```facts
 Action: Decide before you start skating — deciding at the hash marks is how you end up doing neither thing well
 Technique: Have two moves and know which one you are using
@@ -810,6 +814,8 @@ Key: A missed net is the worst outcome; a shot on target at least gives the goal
 - **You only need one good shot.** A missed net is the worst outcome; a shot on target at least gives the goalie the *chance* to make an error.
 
 ### For the goalie
+
+**Stay square and patient and make the shooter decide first: control your depth, track the puck rather than the hands, and match your retreat to the shooter's approach.**
 
 ```facts
 Technique: Control your depth — coming out cuts the angle, staying deeper gives you more time against dekes
@@ -1034,6 +1040,8 @@ Under **Rule 19.1**, when **one minor is assessed to a player on each team at th
 - **The defensive priority is the far-side rush.** Losing a puck at the offensive blue line at 4-on-4 is a 2-on-1 the other way with nobody to help.
 
 ### Coincidental penalties
+
+**When an opponent's foul has earned your team a power play, do not retaliate: a matching penalty converts their mistake into no advantage at all.**
 
 ```facts
 Rule: Coincidental minors of equal duration cancel; any difference in time is served normally (NHL Rule 19)

@@ -293,6 +293,8 @@ Mindset: "They're yours" is the easiest instruction in hockey to understand, tho
 
 ### Man-on-Man: What it concedes
 
+In man-on-man coverage, never follow your check into harmless ice — a corner where they never meant to get the puck — while their teammate walks into the slot you vacated. Know what it costs: one pick the referee lets go, one lost footrace or one beaten player, and an attacker is free with nobody near.
+
 ```facts
 Countered by: Picks and screens — one collision the referee lets go and your man is gone with a two-stride head start
 Risk: Mismatches — a winger in a footrace with a mobile defenceman has no help behind them

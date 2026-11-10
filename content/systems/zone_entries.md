@@ -538,6 +538,8 @@ Turning away from the blue line, keeping the puck, and coming back at the line o
 
 ### How to do it
 
+Arriving at the line alone or outnumbered, do not stop: turn away from the pressure and curl back toward the neutral zone with your body between the defender and the puck, in open ice and never against the wall, where turning puts your back to anyone coming at you. Look back up ice as you curl, slow the play for a second or two while support arrives, and attack the line again with whoever has the best angle and the most speed.
+
 ```facts
 Never: Stop when approaching the line alone or outnumbered — stopping there ends the entry
 Convention: A quick stop is on the IIHF's list of delay movements — but for an attacker already cut off one-on-one, and only where the defender cannot stop as quickly
@@ -1090,6 +1092,8 @@ Risk: It concedes the entry — the attacker gets in with the puck, gets time on
 - **Downside:** it concedes the entry. The attacker gets in with the puck, gets time on the wall, and can shoot with purpose looking for rebounds.
 
 ### More aggressive alternatives — name them
+
+If your team defends the entry more aggressively than the traditional receive-the-entry approach, know which version it plays: F1 pressure, where the first forward back attacks the carrier while the defencemen hold the dots, or squash-and-slide, where a defenceman forces the carrier wide and the first forward back protects the slot. These are systems, not laws, so ask which yours runs and agree it with your partner before the puck drops.
 
 ```facts
 Options: F1 pressure with the D holding the dots — the first forward back pressures the carrier while the defencemen hold their depth

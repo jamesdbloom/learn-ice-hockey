@@ -245,6 +245,8 @@ Technique: Receive with your body open to the ice, not with your nose against th
 
 ### 4. The weak-side winger
 
+As the far winger, be where your team's breakout expects you. In the common swing breakout that means coming across or up the middle as the second option, then getting out ahead of the puck; some teams fly you early through the middle or keep you low as the rim's target instead, so find out which yours runs, because leaving early in a system that expects you low leaves the breakout with no second option.
+
 ```facts
 Position: The far winger — what you do here is genuinely system-dependent
 Convention: Under the standard swing breakout, come across or up the middle as the second option and the outlet for a cross-ice or over play, then get out ahead of the puck
@@ -700,6 +702,8 @@ You are **the bail-out**: when the wall is sealed and the wheel is closed, the l
 
 ### How a high centre kills the breakout
 
+In the standard swing breakout the centre stays low and leaves on time, not early: better a little late than a little early, because late you accelerate into the puck and early you have to stop and restart and the play is already dead. Some teams play a centre fly, where leaving early is the design, so find out which yours plays before treating an early exit as an error.
+
 ```facts
 Never: Leave early anticipating the rush under the standard swing breakout and end up high in the zone or already in the neutral zone
 Convention: Under a centre fly the centre leaves early by design, up the middle to stretch the ice — so find out which your team plays before treating an early exit as an error
@@ -1038,6 +1042,8 @@ Hockey Canada does reach a play on the man, in a different clause. Rule 6.11(d)(
 Every choice in this document depends on one question: **how much time do I have?**
 
 ### Reading it yourself
+
+Read the forecheck before the puck reaches you: shoulder-check on the way back to the retrieval, count the forecheckers, watch their feet rather than their sticks, and decide early, because by the time you feel pressure the pass you wanted has usually closed.
 
 ```facts
 Priority: Every choice depends on one question — how much time do I have?

@@ -193,6 +193,8 @@ How deeply your blades are hollowed sets how much they bite: deeper grips more, 
 
 ### Basic edge drills
 
+Run these slowly and cleanly, inside edges then outside edges, forward then backward. Wobbly is the edge of your control and where you improve; out of control means slow down.
+
 ```facts
 Action: C-cuts on one foot, forward and backward, inside edges then outside edges
 Action: Inside-edge circles, then outside-edge circles, then figure eights forward and backward
@@ -399,6 +401,8 @@ That a change of speed beats top speed is coaching craft, not a measured finding
 A **crossover** is how you generate speed while travelling on a curve. Instead of losing speed through a turn, you gain it.
 
 ### Crossovers: the mechanics
+
+Put two pushes into every crossover: the outside leg drives out and crosses over in front, and the inside leg pulls under and out from beneath you. Most players skip the second, and driving that leg back under your body faster is how you go faster round a turn.
 
 ```facts
 Key: A crossover has two pushes, and most players only do one
@@ -667,6 +671,8 @@ Key: Going forwards into the boards, head up and chin off your chest — a tucke
 
 ### How to get up
 
+When you fall, take two or three seconds to check you are not hurt before you move; a fall can cause a concussion without knocking you out. If you are hurt, stay down and let play be stopped; if a concussion is suspected, come off, do not return that day, and do not go back on until a medical professional clears you. If you are not hurt and nobody suspects a concussion, get up fast: hands and knees, one skate planted flat, then push up into your stance rather than standing tall.
+
 ```facts
 Priority: Assess first — two or three seconds to check you are not hurt, concussion included; it needs no knockout
 Never: Get up fast off a fall you have not checked — the two or three seconds are the check, not a formality
@@ -794,6 +800,8 @@ Never: Drop your gaze through the turn — it drags your weight forward
 Keep your eyes up through the turn — players reflexively drop them here, and it drags their weight forward.
 
 ### Edge work in traffic
+
+When a checker commits to your line along the wall, cut back against your momentum on your outside edges, and make the turn while they are still too far away to hit you. Once they can reach you it is too late to turn: go side-on to the wall, forearm and hip against it, and never turn to face the wall with them behind you.
 
 ```facts
 Read: Games rarely give you a clean circle

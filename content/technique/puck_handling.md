@@ -239,6 +239,8 @@ Action: Widen your handling — feel comes from variety, and a six-inch band tea
 
 ### Drills for head-up handling
 
+These drills train you to handle the puck without looking at it. Give your eyes a job — reading a wall, planning a route through obstacles, watching a partner trying to take the puck — so that looking down makes the drill fail.
+
 ```facts
 Action: Stickhandle facing numbers, words or a TV and call out what you see — if you cannot read it, your head is down
 Action: Mine field — scatter a dozen pucks or balls and handle through them without hitting any
@@ -1003,6 +1005,8 @@ Every drill has a ladder. Climb it rather than repeat the bottom rung:
 The order is coaching craft, not a measured progression; what matters is that you keep moving up.
 
 ### A starter set of drills
+
+Work through these movements — soft touch, wide reach, around the body, figure eights, the yo-yo, the kick-pass — and do every one with your eyes somewhere other than the puck, because that is the only version that counts.
 
 ```facts
 Action: Soft touch — fast, tiny back-and-forth with minimal arm movement, cupping both ways

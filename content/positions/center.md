@@ -162,6 +162,8 @@ The wingers stay high covering the points (the areas near the blue line where th
 
 ### Defensive Zone: Without the Puck — Getting Open for the Breakout
 
+When your defencemen are winning the puck, swing low inside the faceoff dots and below the hash marks, keep moving and talking, and be the first outlet they can find — never drift out onto the boards, where one opponent can cover you and your winger both. Low support belongs to the conventional swing breakout, which is a coaching choice: under a centre fly you leave early and the weak-side winger drops in, so find out which your team plays.
+
 ```facts
 Position: Swinging low — inside the faceoff dots and below the hash marks, in the inside half of your strong-side faceoff circle
 Never: Drift out onto the boards — that is the winger's ice, and one opponent can then cover you both
@@ -570,6 +572,8 @@ Never hold it, carry it or drop it somewhere better; never cover a puck in your 
 **And the permission is suspended for you, and only for you, while a draw is live.** The NHL, the IIHF and the PWHL all write it; in the NHL's words, *"The two players involved in the actual face-off (the centers) are not permitted to play the puck with their hand without incurring a penalty under this rule until such time as a third player (from either team) has at least touched the puck."* ⚠️ **Between the drop and someone else touching the puck, your hand is out of it.** No equivalent was found in USA Hockey, Hockey Canada or CARHA, which were searched in full — a search result rather than an established absence.
 
 ### Power Play (your team has the man advantage)
+
+Get to the spot your formation gives you: in a 1-3-1 you most often play the bumper in the middle of the slot — be a passing target for both half-walls, shoot quickly, screen the goalie and tip point shots — and in an umbrella or an overload you are usually low or on the strong-side wall. Bring the puck in with control, carried into space or passed across the line, rather than skating into the defence or dumping it into traffic.
 
 ```facts
 Position: In the 1-3-1 you most often play the bumper — the middle of the three across the slot, between the point man and the net front

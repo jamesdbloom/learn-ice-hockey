@@ -170,6 +170,8 @@ If the shot comes before they finish that sequence, they are not making a positi
 
 ### How to actually create one
 
+**Off the wall, look across before you look along — the far side of the slot, the backdoor and the weak-side dot first — then pass to where the shooter is going, or carry the puck across the slot yourself.** If you drive off the half-wall or curl out from behind the net, keep your head up: you cannot brace for a hit you have not seen, and coming out past the post you can be driven into the goal frame.
+
 ```facts
 Action: Look across before you look along — your first scan off the wall is the far side of the slot, the backdoor and the weak-side dot
 Never: Scan up the wall first — by the time you come back, the seam has opened and closed
@@ -270,6 +272,8 @@ An offensive-zone defenceman is always at one of three depths:
 
 ### Keeping the puck in at the line
 
+**At the point, watch the defender about to move the puck, be a stride inside the line before it comes, and stop it before you play it; if you cannot settle it, chip it back down the wall, and if it is already past you, turn and get back.** If you stop it with your body, keep your head up and out of the puck's line — and on a rim, skates parallel to the wall and chin off your chest.
+
 ```facts
 Action: Stop a rim first, then play it — your blade, a skate turned along the boards, or your body in its path, skates parallel to the wall, head up and chin off your chest
 Action: Stop a clear up the middle first — square up in front of it, head up and out of its line, then play it
@@ -289,6 +293,8 @@ The defending team's way out is usually a rim along the boards or a clear up the
 How hard your defencemen fight for the line is a coaching choice. The common default is to hold anything you can reach and get back on anything you cannot; some teams tell defencemen to give up a hard rim rather than risk it, and some have the weak-side forward slide up to the far point whenever the puck is rimmed. Ask which yours plays.
 
 ### Who covers for whom
+
+**In the common setup with both defencemen on the line, when one goes down the other stays; if the one who went down gets the puck, F3 fills in at the blue line, and if they do not, they recover before attacking again — and say it out loud as you go.** Teams running a five-player rotation cover the line with whoever is highest instead, so find out which your team plays.
 
 ```facts
 Convention: If one defenceman leaves the blue line, the other stays — two on the line at all times is this guide's default setup, not a law
@@ -730,6 +736,8 @@ It is a good place to hold the puck because you have the boards protecting one s
 
 ### The four options from the half-wall
 
+**Before the puck reaches you on the half-wall, know all four plays — low to the corner or behind the net, high to the point, the seam pass into the slot, or take it inside yourself — and know which one is on.** Arrive with only one in mind and you will play it whether the slot was open or not.
+
 ```facts
 Action: Know all four before the puck arrives, and know which one is on
 Options: Low — to the corner or behind the net; the safe continuation that feeds the cycle and resets the defence's problem
@@ -751,6 +759,8 @@ Know all four before the puck arrives, and know which is on:
 The failure is having only one of these in mind. A player who arrives on the half-wall intending to pass to the point will do that regardless of whether the slot was open.
 
 ### Buying time
+
+**On the wall, keep your feet moving and buy time by cutting back, curling toward the middle, or bumping it to your support and taking the return — and turn only while the checker is still too far away to reach you.** Never turn your back to anyone coming at you near the wall, and never duck: keep your head up and your chin off your chest.
 
 ```facts
 Technique: Cut back — skate a few feet toward the corner and cut back up the wall before the defender can reach you, never to face the wall with them behind you; their momentum has to reverse, yours does not
@@ -892,6 +902,8 @@ This is also the moment most amateur teams stop playing — the shot goes in, ev
 
 ### F3's job
 
+**As F3, the high forward in the common setup, sit at or near the top of the circle when your team shoots, take the blue line if a defenceman pinches, and jump on a rebound that squirts to the high slot while the other two forwards go to the net.** Teams running a five-player rotation cover the point with whoever is highest instead, so find out which your team plays.
+
 ```facts
 Convention: With three forwards rotating and both defencemen holding the blue line — the default shape this section describes — F3 is the high forward; a coaching choice, not a law
 Position: Be the safety — at or near the top of the circle, so a rebound straight out is yours and a counter-attack has to go through you
@@ -1024,6 +1036,8 @@ Read: A rebound is available and the goalie is down — shoot immediately, do no
 
 ### Do not shoot when
 
+**Hold the shot when the lane from the point is blocked, when nobody is at the net front, or when you are on a sharp angle with no traffic — and when a pass across the royal road sets up a better shot, make the pass, because a shot taken after the goalie has had to move across is worth materially more.**
+
 ```facts
 Never: Fire into a shin pad from the point with the lane blocked — a blocked point shot usually goes the other way with your team spread out
 Never: Shoot when a better shot is one pass away — specifically, a pass across the royal road
@@ -1056,6 +1070,8 @@ Never: Pick corners against a set, sighted goalie — the lowest-percentage thin
 - **Aim for a corner only when the goalie cannot see it or cannot get there.** Picking corners against a set, sighted goalie is the lowest-percentage thing you can do with a puck.
 
 ### Getting pucks through from the point
+
+**From the point, shoot through rather than harder: walk the line until the blocker has to move, change your release point, take something off the shot, sell a fake, or move it D-to-D first.** In a CARHA league keep the backswing short, because that book makes a backswing past fifteen inches a slap shot — a minor, or a major and a game misconduct if it injures — and a faked slap shot can be a minor too.
 
 ```facts
 Key: Your job is not to shoot harder, it is to shoot through — point shots are blocked more than shots from anywhere else on the ice

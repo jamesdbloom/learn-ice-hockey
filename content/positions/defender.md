@@ -452,6 +452,8 @@ Technique: Stick in the passing lane, on the ice, out front — it takes the pas
 
 #### Backward skating, and which way to pivot
 
+Skate backwards fast enough to hold your gap, building speed with C-cuts and backward crossovers rather than pushing straight back. Pivot to the boards side by default, so that if you are beaten you are beaten toward the wall rather than into your own slot — but that is a coaching default and some coaches want a middle pivot, so ask yours and drill both directions.
+
 ```facts
 Key: Backward skating is the physical foundation of gap control — you cannot hold a gap you are not fast enough to hold
 Technique: Generate speed with C-cuts and backward crossovers rather than pushing straight back
@@ -644,6 +646,8 @@ The rule of thumb: **somebody is above the puck.** On a defence pair that is nor
 A quick reference for situations outside the zone-by-zone framework above.
 
 ### Faceoffs
+
+Take your spot for the zone and be ready to react the instant the centres tie up or the puck comes loose: in your own end one of you supports the boards-side winger near the hash marks and the other holds the slot, in the offensive zone one takes the strong-side point ready to shoot on a clean win, and in the neutral zone both of you stay back at your blue line. Those are common defaults rather than rules, so find out what your team runs.
 
 ```facts
 Key: The centre takes the faceoff; your position depends on the zone of the faceoff and your team's setup
