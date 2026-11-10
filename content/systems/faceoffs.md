@@ -272,6 +272,8 @@ What [contact before the drop](#contact-before-the-drop), [going through the oth
 
 #### Using your feet — the puck, the man, and the goal
 
+**Kick the puck back to a teammate, or open your skate as a backstop so a tied-up puck squirts the right way, only where your book allows it — not under the IIHF, so never in British hockey.** ⚠️ **Send the skate at the puck, never at the man** — the dot puts two opponents' skates inches apart, and kicking the man sits near the top of every book's scale: a match penalty in five of the six, and under USA Hockey even a non-kicking push-off with the skate is a major and game misconduct (627(a)).
+
 ```facts
 Rule: Kicking the puck back is legal in the NHL and PWHL and a faceoff violation under IIHF 76.3(VI), so it is not available to you in Britain at any level (IIHF Rule 76.3(VI), both editions)
 Rule: USA Hockey, Hockey Canada and CARHA write no faceoff bar on kicking the puck, so the technique rests on a general kicking rule rather than a faceoff one — USA Hockey 627(c), Hockey Canada 6.10(a), CARHA 69
@@ -281,8 +283,6 @@ Rule: Under USA Hockey a skate does not need a kicking motion to be an offence �
 Never: Send the skate at the man — kicking or trying to kick an opponent is a match penalty in five of the six books. Any kicking permission at the dot is for the puck only
 Action: Before you build an offensive-zone draw around the kick-back, find out which book your league runs — the tip behind it is a goal in only three of the six
 ```
-
-**Using your feet.** Kick the puck back to a teammate, or open your skate as a backstop so a tied-up puck squirts the right way. ⚠️ **Send the skate at the puck, never at the man** — the dot puts two opponents' skates inches apart, and kicking the man sits near the top of every book's scale: a match penalty in five of the six, and under USA Hockey even a non-kicking push-off with the skate is a major and game misconduct (627(a)).
 
 **Check your book before you learn it.** It is legal in the NHL, and in the PWHL, whose Rule 78 writes no skate bar. ⚠️ **Under the IIHF it is a violation, so it is not available in British hockey at any level**: Rule 76.3(VI) catches a centre who *"wins the face-off by using the skates"*. USA Hockey, Hockey Canada and CARHA write no faceoff bar — Rules 613, 6.2 and 57 were each read in full — so there it rests **by inference** on each book's general kicking permission (USA Hockey 627(c), Hockey Canada 6.10(a), CARHA 69).
 
@@ -923,6 +923,8 @@ Everything is inverted. You are not trying to create; you are trying to end the 
 
 #### The icing exemption at a shorthanded draw — and the one that has nothing to do with being shorthanded
 
+**A clean shorthanded win in your own end can go straight down the ice where your book grants the exemption** — a team below the opponent's on-ice numbers may ice the puck (Rule 81.6), but not once a penalty expires and leaves you level, even with the player still in the box; under USA Hockey only at Youth 15-Only and above, Girls 16U and above, High School and Adult; and under the NHL and PWHL not from a major's expiry to the next stoppage if no player was in the box to come out. That is a penalty-free clear and a chance to change tired killers. How much time it burns depends on the retrieval; no published figure exists, so do not trust the "fifteen seconds" you sometimes hear.
+
 ```facts
 Rule: Five of the six books let you ice freely below your opponent's on-ice count, USA Hockey only at 15-Only and Girls 16U up, High School and Adult; the NHL and PWHL take it away after a major expires with no substitute in the box (NHL and IIHF 81.6, PWHL 83.6, HC 6.7(b), CARHA 65(d), USAH 624(b)(1))
 Rule: The NHL's major-penalty icing exception bites at the expiry, not during the major — where the penalised player was ejected or hurt, Rule 20.3 wants a substitute seated before the major expires, immediately if minors are stacked on it
@@ -931,8 +933,6 @@ Rule: IIHF Rule 81.6 carries neither carve-out — no age restriction and no maj
 Rule: CARHA grants the shorthanded exemption too and rations it no further — Rule 65(d), the count taken "at the instant the puck is shot", with no age classification and no major-penalty exception anywhere in Rule 65
 Rule: A puck sent the length of the ice directly off the draw is not icing in any book and at any strength — NHL and IIHF 81.5, PWHL 83.5, Hockey Canada 6.7(c)(iv), USA Hockey 624(b)(3), CARHA 65(e); five say "directly", USA Hockey "as a result of" the taker — treat any other touch as ending it
 ```
-
-**A clean shorthanded win in your own end can go straight down the ice**, because a team below the opponent's on-ice numbers may ice the puck (Rule 81.6). That is a penalty-free clear and a chance to change tired killers. How much time it burns depends on the retrieval; no published figure exists, so do not trust the "fifteen seconds" you sometimes hear.
 
 **And a puck that goes the length of the ice directly off the draw is not icing at all, in any book and at any strength** — for both teams, even strength included. ⚠️ **Play it as the strict word, "directly": the puck your own stroke sends down the ice from the dot** — not one won to a defenceman who clears it, and not one that clips a stick. The moment anybody else touches it, the ordinary rule applies.
 

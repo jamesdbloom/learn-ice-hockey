@@ -131,6 +131,8 @@ Risk: A hard pass your teammate cannot handle is your turnover, not theirs
 
 ### Backhand pass — the half of the game most players skip
 
+**When to use it.** Whenever the play is on your backhand side and turning to your forehand would cost you the passing window. Common cases: a defenceman moving the puck to their partner on the backhand side, a winger on their off wing feeding across the slot, and any escape from wall pressure where you have your back to the ice. That last one is a posture to get out of rather than one to settle into: **never turn your back to anyone coming at you, and never duck** — see [Receive with your body open to the ice](#receive-with-your-body-open-to-the-ice).
+
 ```facts
 Technique: Start the puck at the middle or heel on your backhand side and roll it heel-to-toe, exactly as on the forehand
 Technique: Pull with the bottom hand and sweep across your body, top hand rotating to keep the face closed
@@ -146,8 +148,6 @@ Key: A checker who knows you cannot pass backhand takes the forehand side away a
 - **Pull with the bottom hand** and sweep across your body, keeping the blade cupped over the puck the whole way. The top hand rotates to keep the face closed.
 - Drive through with the lower shoulder — backhand power comes from the body turning, not from the arms alone.
 - Follow through toward the target, exactly as on the forehand.
-
-**When to use it.** Whenever the play is on your backhand side and turning to your forehand would cost you the passing window. Common cases: a defenceman moving the puck to their partner on the backhand side, a winger on their off wing feeding across the slot, and any escape from wall pressure where you have your back to the ice. That last one is a posture to get out of rather than one to settle into, and it carries a safety rule of its own — see [Receive with your body open to the ice](#receive-with-your-body-open-to-the-ice).
 
 **Risk.** Backhand passes are slower and float more, so the lane needs to be a little cleaner. But the real risk is not throwing them.
 

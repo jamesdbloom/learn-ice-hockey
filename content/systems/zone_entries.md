@@ -228,6 +228,8 @@ A **delayed offside** is when attackers precede the puck but the defending team 
 
 #### Forechecking during a delayed offside
 
+**In every book here the instruction is identical: hold at the line, retreat, tag up, come again — and never close on the defending carrier. You cannot count on the whistle coming first, and a carrier turned to retrieve the puck has their back to you, so a hit is checking from behind.** Forechecking during a delayed offside brings a whistle, but which acts bring it differs, and ⚠️ **the one that matters most for your safety is written in only three books.**
+
 ```facts
 Never: Forecheck during a delayed offside. Hold at the line instead and wait for the arm to drop, whichever book you are under
 Rule: Every book here whistles a delayed offside for touching the puck, and for going for a loose one — NHL and IIHF 83.3, PWHL 85.3, Hockey Canada 6.11(b)(ii) and CARHA 72(e)(2) ("while the puck is still in the attacking zone"). USA Hockey 630(d) is wider: any attempt on the puck, loose or not
@@ -239,8 +241,6 @@ Rule: Under USA Hockey a hit from behind is at least a minor and misconduct (608
 Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
 Action: Retreat to the line, tag up, come again
 ```
-
-**In every book here the instruction is identical: hold at the line, retreat, tag up, come again.** Forechecking during a delayed offside brings a whistle, but which acts bring it differs, and ⚠️ **the one that matters most for your safety is written in only three books.**
 
 **Do not count on the whistle to arrive before you do.** The **NHL** stops play if an offside attacker *"touches the puck, attempts to gain possession of a loose puck, forces the defending puck carrier further back into his own zone, or who is about to make physical contact with the defending puck carrier"*. The **IIHF** lists the same four, so that is the British rule too. **⚠️ The fourth trigger — the whistle for a hit that has not landed yet — is written only by the NHL, the IIHF and the PWHL.**
 
@@ -366,6 +366,8 @@ Arrive ⚠️ **head up — never head first into a post, and never duck.** A he
 
 ### The middle drive
 
+A **middle drive** is a teammate without the puck skating hard through the middle of the ice, through the seam between the defencemen, at the net — **to the edge of the blue paint and off its red line, never into the paint and never into the goalie.**
+
 ```facts
 Position: A teammate without the puck, skating hard through the seam between the defencemen, at the net — to the edge of the blue paint, not into it
 Goal: Freeze the defencemen so they cannot step up on the carrier — one route, at speed, buys the carrier several extra feet
@@ -376,8 +378,6 @@ Rule: Committed stops at the paint's edge and off the red line around it — IIH
 Rule: Arriving hard is no licence to hit the goalie — contact you start with a goalie in the crease can void the goal even when incidental, and deliberate contact anywhere, or unnecessary contact outside the crease, is penalised (NHL and IIHF 69.2–69.4; PWHL 71.2–71.4)
 Rule: A charge on the goalie is an automatic major and game misconduct under Hockey Canada 8.5(b) wherever they are, under CARHA 52(b) in the crease or if it injures, and under USA Hockey 607(b) if reckless — plan on a match and a likely multi-game suspension (602(a))
 ```
-
-A **middle drive** is a teammate without the puck skating hard through the middle of the ice, through the seam between the defencemen, at the net.
 
 The middle driver usually does not get the puck. That is not the point. The point is that a defenceman who ignores a player skating at their net will get scored on, so they cannot ignore them — which means they cannot step up on the puck carrier either. One player, running one route, at speed, buys the carrier several extra feet of space.
 
