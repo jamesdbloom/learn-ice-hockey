@@ -228,6 +228,8 @@ That "below / level / above" arrangement is the **attack triangle**. The triangl
 
 ### Rotation: the triangle moves, the shape does not
 
+Move with the puck so that one forward is always below it, one level with it and one above it, and **keep at least one forward in or attacking the home-plate area.** A triangle that lives on the perimeter is three players passing around the outside of a defence that is happy to let them.
+
 ```facts
 Key: The three forwards hold no fixed spots — as the puck moves, everyone rotates so the shape is preserved
 Read: Puck from the half-wall down to the corner → the corner player is now F1, the old carrier rotates up, the high player holds
@@ -314,6 +316,8 @@ These are the rules of the standard setup, with both defencemen on the line, not
 
 ### Realistic alternatives
 
+The triangle with both defencemen on the line is the common default, not the only setup. Find out whether your team plays it or an overload, a five-player rotation or a 1-3-1 spread, because each one puts you somewhere different and asks you to cover different ice.
+
 ```facts
 Options: Overload / strong-side load — four players on the puck side, one weak-side outlet; wins board battles, gives up the weak-side seam
 Options: Five-player rotation — defencemen rotate into forward spots and forwards cover the line as routine rather than emergency
@@ -343,6 +347,8 @@ Goal: Make the defence keep re-solving the same problem
 ```
 
 ### Why it works
+
+Use the cycle to hold the puck with few turnovers while the defence tires: keep the passes along the boards, away from the middle, and keep it going long enough for your defencemen and late forwards to join and get set.
 
 ```facts
 Goal: Force defenders to move and decide repeatedly — every rotation asks "collapse low or hold the slot?", and over 30 or 40 seconds someone answers wrong
@@ -394,6 +400,8 @@ Picking the wrong one is a leading cycle turnover — **nobody has counted cycle
 **The cycle lives on the wall, so how you take contact there matters more than winning the puck.** ⚠️ **Never turn your back to anyone coming at you, and never duck.** Get your **skates parallel to the wall** and take it on your **forearm and hip**, head up and chin off your chest. **Never the point of your shoulder** — USA Hockey's *Introduction To Body Contact*: *"Never hit the boards or glass with the tip of your shoulder – it can cause injury"* — and no part of the shoulder if you can help it, which is USA Hockey's own softer advice. If you are already facing the wall and cannot turn, that is the last resort, not the aim: get your stick and gloves up and spread out on the glass. [Body Contact and Battles](../technique/body_contact_and_battles.md), §6, sets out the full rule and the evidence behind it.
 
 ### When to cycle and when to attack the net
+
+Keep cycling while the defence is set between you and the net, and **attack the net the moment it breaks**: a defender turning their back to the puck, an empty slot, an unset goalie, a pinch that opens the ice behind it, or your net-front player beating their check to the inside.
 
 ```facts
 Read: Cycle when the defence is set, structured and between you and the net, and no dangerous shot exists
@@ -1019,6 +1027,8 @@ Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at le
 ## 11. When to Shoot and When Not To
 
 ### Shoot when
+
+Shoot whenever you are inside the home-plate area with any kind of look. From further out, **shoot when you have a genuine lane and the goalie is unset, moving or screened**, with a teammate at the net front for the tip and the rebound. If the goalie is down and the rebound is there, shoot it at once rather than settling it.
 
 ```facts
 Read: Inside the home-plate area with any kind of look — almost any shot from there beats almost any pass from there

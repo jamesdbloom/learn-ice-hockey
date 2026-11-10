@@ -226,6 +226,8 @@ There is one situation where the collapse isn't available: if the **weak-side op
 
 ### What low zone collapse is good at
 
+If your team plays low zone collapse, **stand in your area and let them cycle**: the middle stays full because of where you stand, not because you read the play well, and a cycle along the wall spends their energy in the least valuable ice. When you win the puck, your two high wingers are already there as outlets.
+
 ```facts
 Goal: Protect the middle by construction — you don't have to make good reads for the house to be full
 Key: The easiest system to learn, because the areas are fixed even when the play is chaotic
@@ -241,6 +243,8 @@ Position: Both wingers are already high — two outlets the moment you win the p
 - **The wingers are already positioned to break out.** Two forwards high means two outlets the moment you win the puck.
 
 ### Low Zone Collapse: What it concedes
+
+Playing low zone collapse, you accept point shots with a stick in the lane, but **know your team's answer to the defenceman who walks down off the point instead of shooting** — that, not the point shot, is the system's real weakness. Watch the seam between two areas too, where each defender assumes the other has the attacker.
 
 ```facts
 Key: The walk-down, not the point shot, is the system's actual weakness — every collapse team needs an explicit answer to it
@@ -276,6 +280,8 @@ Action: Switch when two attackers cross, it is clean, and both of you call it ou
 - **Switching** is legal and necessary. When two attackers cross, the two defenders trade checks and say so out loud. The rule is usually: switch when it's clean and both of you call it; stay when it isn't.
 
 ### What man-on-man is good at
+
+In man-on-man, **stay within a stick length of your man** by position and stick — never holding or hooking them, and no bump while they are without the puck, or at all where checking is barred. Nobody is left unmarked, a cycle cannot shake a defender who is glued to a man, and the pressure forces bad passes you can turn over. Learn your team's rule for when to switch or release, because following your check into harmless ice opens the slot.
 
 ```facts
 Key: Nobody is ever unmarked — the seam problem zone coverage has simply doesn't exist

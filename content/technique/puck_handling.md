@@ -424,6 +424,8 @@ This is why hands-away-from-the-body matters so much. A far-side puck is only av
 
 ### Wide, low base
 
+In a puck battle, **get down into a wide base, chest up, and keep your feet moving**: base is the part of the battle you control, and low and wide is hard to move.
+
 ```facts
 Position: Feet wider than shoulder width, knees bent and hips sunk, chest up so you can still see
 Never: Stand tall and narrow — it is the reason players get knocked off pucks
@@ -646,6 +648,8 @@ Key: Speed is the most valuable thing you have, and good hands are meant to cost
 
 ### Carry, don't dribble, when you are moving
 
+When you have ice in front of you, **skate with the puck rather than handle it**: push it slightly ahead, take real strides onto it, and touch it only often enough that a defender cannot time a poke.
+
 ```facts
 Never: Stickhandle every step at full stride
 Position: Puck slightly ahead of you and slightly to the side, usually on the forehand where your blade sits
@@ -716,6 +720,8 @@ Three consequences follow, and they matter more than any individual move:
 3. **You must accelerate out of it.** A deke that is not followed by a burst just gives the defender time to recover. The move creates the gap; your legs collect it.
 
 ### The four channels of deception
+
+A fake can be sold with your head and eyes, your shoulders and hips, your stick and puck, or your feet and edges. The shoulders and hips are the most convincing because they carry real weight, and a change of pace fakes a defender's timing rather than their direction, which is the half of the job they are least drilled for.
 
 ```facts
 Options: Head and eyes — a sharp, committed head turn, or a look-off at an option you will not use
@@ -982,6 +988,8 @@ Key: The session you actually do beats the session you planned
 Make it frictionless: leave the pad and a ball where you walk past them. The session you actually do beats the session you planned.
 
 ### Progressive difficulty
+
+Make each puck-handling drill harder in steps, adding eyes up, speed, movement, balance and tight space, and finish against a live opponent: keep-away is what exposes what you cannot really do.
 
 ```facts
 Action: Climb the ladder rather than repeating the bottom rung

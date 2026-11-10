@@ -102,6 +102,8 @@ Every faceoff happens at one of **nine spots** — NHL and IIHF Rule 76.2 and US
 
 ### Where they are, and what's painted on the ice
 
+As a winger at an end-zone dot, **keep your skates and stick behind your hash mark until the puck drops**.
+
 ```facts
 Rule: Every faceoff happens at one of nine marked spots, and nowhere else — NHL and IIHF Rule 76.2, USA Hockey Rule 612(b)
 Position: Wingers stand at the hash marks, and those marks are a hard boundary
@@ -1001,9 +1003,11 @@ The single most exploitable situation in the game, and it works in both directio
 
 ### In the last minute
 
+Defending a one-goal lead on a late own-end draw, **get the alignment right first, then play for time.** Many teams accept a stick-on-stick tie-up, because a scramble that burns the clock beats a 50-50 attempt at a clean win; the other common approach is your best taker with a plan for the loss as well as the win, and many coaches do both, so ask your bench which yours stresses.
+
 ```facts
 Key: A defensive-zone draw protecting a one-goal lead late is worth more than the previous fifty draws combined
-Action: With a lead, accept the tie-up — a scramble that burns time beats a 50-50 clean-win attempt; or put your best taker out with a plan for the win and the loss
+Action: With a lead, accept a stick-on-stick tie-up — a scramble that burns time beats a 50-50 clean-win attempt; or put your best taker out with a plan for the win and the loss
 Priority: Get the alignment right before you get the play right
 Rule: The five-second setup limit is not enforced in the final two minutes of regulation (NHL and IIHF Rule 76.3); USA Hockey 613(c) writes no such exception
 Read: Expect more re-drops and more violations called

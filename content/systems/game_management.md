@@ -68,6 +68,8 @@ So a leading team conceding shot attempts is not automatically playing badly. It
 
 ### Why it's often overdone
 
+Protecting a lead, defend deeper but **keep getting the puck out and changing**. Once everyone has collapsed onto the net front with no exits, you concede screens and rebounds, your legs go, and four minutes without the puck produces the stick fouls that hand the trailing team a power play.
+
 ```facts
 Key: The trade only works if you are actually trading volume of shots against for quality of shots against
 Risk: You never get the puck back, so you never change, so your legs go — fatigue in your own zone is how one-goal leads die
@@ -259,6 +261,8 @@ What to add, in roughly this order of safety:
 
 
 ### When to start taking risks
+
+Trailing, add risk in steps as the clock runs down, not because you are frustrated. Down one in the first two periods, play your normal game harder with no structural risk; in the third, add forecheck pressure and pinches while keeping the last man back honest. Down three or more, go hard early in the third rather than late.
 
 ```facts
 Priority: Scale risk to how much time is left against how many goals you need, not to how frustrated you feel
@@ -514,6 +518,8 @@ Almost everything in this section is a coaching choice; the point is to know why
 
 ### Shutdown pair versus offensive pair
 
+**Find out which role your pair has**, because it changes what you do: a shutdown pair keeps its gap, defends the rush, protects the net front and makes clean, simple exits, while an offensive pair joins the rush, activates from the point and accepts more risk.
+
 ```facts
 Convention: Most teams differentiate their three pairs by role rather than purely by quality
 Priority: Shutdown pair — gap control, defending the rush, protecting the net front, clean simple exits; not expected to produce points
@@ -558,6 +564,8 @@ Two honest caveats. The effect is small — around one percentage point. And rou
 
 ### Zone starts
 
+When you get a defensive-zone start, **treat the first ten seconds as the most dangerous of your shift**. And before you read anything into a zone-start figure, check which statistics site it comes from and what it divides by, because the published definitions do not agree.
+
 ```facts
 Key: Zone starts describe where your shifts begin, but published definitions divide by different things — one by every shift you took, another by your offensive and defensive draws alone
 Action: Read the glossary of whichever site you are on before you read anything into a zone-start figure, and never compare a figure from one site against one from another
@@ -598,6 +606,8 @@ Action: Take the measured shift-length range and the physiology from Conditionin
 The signal to change is not a stopwatch, it's a **reduction in your ability to accelerate**. The moment you find yourself gliding to a spot you would have skated to ten seconds earlier, you are already too tired to be useful.
 
 ### Tired players make bad decisions
+
+Change before fatigue reaches your decisions, because they go before your legs do: a tired player sees fewer options, later, and then **stops skating and starts reaching**, which is how sticks end up around waists and hands. Your support and your backchecking go after that.
 
 ```facts
 Risk: Decision speed goes first — you see fewer options, later

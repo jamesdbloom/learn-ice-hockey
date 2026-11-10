@@ -502,6 +502,8 @@ A useful self-check: if you crossed the line and then had to slow down to stay w
 
 ### Timing all three forwards to hit the line together
 
+If you are in the middle lane, you set the clock: your route is the shortest, so **you are the one who slows or curls** while the wide forwards run their routes full out. As the carrier, go when two of your supports are on time, and delay when none of them are.
+
 ```facts
 Goal: Three attackers crossing within about a second of each other, in three different lanes — one wide each side, one middle
 Action: The middle lane player sets the clock — shortest route, so they adjust, usually by slowing or curling
@@ -572,17 +574,19 @@ Because turning away from the offensive zone feels like retreating, and because 
 
 ### When *not* to delay
 
+Delay only when support is genuinely coming, and curl in open ice, never against the wall. With numbers now, take the odd-man rush; if your line is caught out and the bench is calling, get it in deep and change; and **never curl back over the blue line while a teammate is still inside** — they have to get back out before the puck comes back in, or your re-entry is offside.
+
 ```facts
 Read: Numbers now that will be gone in a second — take the odd-man rush instead
 Never: Delay with nobody behind you — a delay only works if support is genuinely coming
 Action: If your line is caught out and the bench is calling, get it in deep and change
-Never: Delay back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze that teammate where they stand
+Never: Curl back over the blue line while a teammate is deep in the zone — they have to get back out before the puck comes back in, or your re-entry is offside
 Never: Curl against the wall — curl in open ice. Caught on the boards: forearm and hip, never the point of your shoulder, head up and chin off your chest, and never turn your back to anyone coming at you
 ```
 
 - When you have numbers now and they will be gone in a second — take the odd-man rush.
 - When you have nobody behind you at all. A delay only works if support is genuinely coming. If your line is caught out and the bench is calling, get it in deep and change.
-- When a delay would drag you back over the blue line while a teammate is deep in the zone — you will create a delayed offside and freeze them.
+- When a delay would drag you back over the blue line while a teammate is deep in the zone — they have to get back out before the puck comes back in, or your re-entry is offside — and under Hockey Canada, carry it back in knowing they are in there and it can be called an intentional offside, with the draw in your own end.
 - **When you are tight to the wall with anyone closing on you.** This limits *how* you curl, not whether: curl into open ice, and if you cannot get off the boards, take the contact rather than turning away into the wall.
 
 ---
@@ -624,6 +628,8 @@ Read: A defence that has over-committed to the carrier's side
 - When the defence has over-committed to the carrier's side.
 
 ### Why it fails so often
+
+**See the trailer before you drop the puck.** A drop pass works only when a teammate is coming behind you with speed and space, and only if you keep driving hard into the zone after you leave it; dropped blind, or with both of you slowing down, it is a turnover facing the wrong way.
 
 ```facts
 Risk: The drop goes backwards into nobody — the worst turnover in hockey, collected by a defender facing your net

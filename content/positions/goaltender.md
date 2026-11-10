@@ -170,6 +170,8 @@ The common error is the **big shuffle**: covering the distance in two large step
 
 ### The post-to-post arc
 
+Moving post to post, **finish each lateral move at the post, not near it**, so there is no gap between your pad and the post for a shooter to pick. That closes only the low short side; the space over your shoulder is a separate exposure.
+
 ```facts
 Position: Move along a shallow arc — out at the middle, curving back toward the posts as the puck goes wide
 Key: As the puck moves toward the boards the angle closes on its own, and depth there just means you cannot get back
@@ -252,6 +254,8 @@ Key: Flow is a little backward motion on a rush — too much and you retreat int
 - **Flow** — a general principle rather than a specific move. On a rush or against a deke you want a little backward motion rather than being planted flat-footed; flow gives you rhythm and lets you react in either direction. Too much flow and you retreat into your own net.
 
 ### On your knees
+
+When a pass goes across the slot and there is no time to stand up, **slide across on your pads instead of getting up**, keeping your head and hands level and closing the five-hole as you land. When you do get up, the usual modern-butterfly recovery keeps the puck-side leg down and lifts the far leg first — standing up away from the puck is how goalies end up out of position on the second shot.
 
 ```facts
 Technique: Butterfly slide — push laterally off the heel of the up leg and arrive with both pads down
@@ -565,6 +569,8 @@ Action: Call "screen" loudly, early and every time — it means get out of my si
 - **Call it.** "Screen" is your call and it means *get out of my sightline, or get beside the man who is in it and hold your ground* — not push them out, which can be called interference wherever you play, and where checking is barred an illegal check as well. This is not a request. Say it loudly, say it every time, and say it early. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ### Playing bigger and deeper through traffic
+
+Against a screened shot, **make yourself bigger** — hands out and wide, stick down and active, chest up — because when you may not see the release you are partly blocking rather than reacting. Whether to back off deeper as well is a coaching split: retreating toward your goal line is the traditional adjustment, but at least one current manual calls it a fault and keeps a close gap instead, so ask your coach which they teach.
 
 ```facts
 Convention: Deeper against a screened point shot is the traditional adjustment — it costs net coverage but buys time to find the puck
@@ -889,6 +895,8 @@ These are the standard vocabulary. Words vary by team — agree yours in the roo
 - **"Shot"** — **not a warning that a shot is coming. It means you have the shooter, so your defenceman should take away the pass.** This is documented word for word in published goaltending material: *"When the puck is at the point, or when the opposing team has a two-on-one, it can be difficult for your defense to know what you want them to do. If you'd prefer that they take away the pass or guard the open man, call for 'shot!'... If you want the shot, call for it!"* ([Sportmentary — Ice Hockey Goalie: Communication Tips](https://sportmentary.com/ice-hockey/ice-hockey-basics/ice-hockey-goalie-communication-tips/)). Use it in that sense, because "a shot is coming" tells a skater nothing they can act on while "I have the shooter" tells them exactly where to put their stick. If your team already uses "shot" as a warning, pick a different word for the warning — the two meanings are incompatible and a defenceman has half a second to decode it. [On-Ice Communication](../foundation/on_ice_communication.md) covers the same split from the defenceman's side.
 
 ### How to call well
+
+Call early, short and the same way every time, and **make your defencemen answer you**.
 
 ```facts
 Action: Early beats loud — call while the play is still developing, not as the puck arrives
@@ -1561,6 +1569,8 @@ Key: Play the puck, not the argument — the call is made after the fact, so if 
 
 ### The goal that goes in
 
+When a goal goes in, **run the same reset ritual every time** — a small circle, a drink, a scrape of the crease — then leave the goal alone for the rest of the game and save the analysis for later. Never point at a teammate, not even with a look.
+
 ```facts
 Mindset: Every goalie lets in goals and some will be bad — the skill is what you do in the ninety seconds afterwards
 Action: Have a reset ritual and perform it identically every time, so it signals that the previous shift is finished
@@ -1600,6 +1610,8 @@ Mitch Korn's list of defence mechanisms is uncomfortably accurate. If you catch 
 - **Guessing and flopping.** Leaving your feet early, no longer tracking the puck off the stick, and ending up swimming on the ice.
 
 ### The honest version of the mental demand
+
+Build your confidence on **enjoying the save**: if the save is what you love, the goals are a price rather than the thing you think about.
 
 ```facts
 Mindset: "The most psychologically demanding position in team sport" is widely repeated with no study behind it. Treat it as opinion

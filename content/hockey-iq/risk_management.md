@@ -600,6 +600,8 @@ Two yeses and a green light from the third: go. Otherwise, hold your position â€
 
 ## The asymmetry of hockey mistakes
 
+**Play simply in your own end and take your creative chances in theirs.** A fancy play that fails in the offensive zone costs you a chance; one that fails in your own zone can cost you a goal.
+
 ```facts
 Key: A missed offensive chance costs you a chance; a defensive-zone turnover costs you a goal
 Risk: Ten creative plays in their end with eight failures leaves you clearly ahead; ten in your own end with eight failures puts some in your net

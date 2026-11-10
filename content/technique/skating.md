@@ -174,6 +174,8 @@ Which edge you're on is set by how far you lean and how much you bend your knee 
 
 ### What each edge is for
 
+Use your inside edges when you need power, in the stride, the push, the stop and acceleration, and your outside edges when you need control, in turns, cutbacks, puck protection and escapes. Most players are far better on their inside edges, so **train your outside edges on purpose**.
+
 ```facts
 Technique: Inside edges generate power — the stride, the first push of a crossover, stops, tight-turn drive, acceleration
 Technique: Outside edges give control — turning, holding an arc, cutting back, puck protection, escapes, deception
@@ -549,6 +551,8 @@ The mechanics mirror the forward crossover — **the outside leg crosses, the in
 
 ### Backward skating drills
 
+Train backward skating for gap control: work C-cuts, backward edges and forward-backward transitions, and give the most time to partner mirroring, holding a steady gap while a partner changes speed and direction, which is the drill that carries most directly into games.
+
 ```facts
 Action: Goal line to goal line C-cuts, nothing else, full extension on each push
 Action: Backward figure eights around two faceoff circles, and single-leg backward skating for edge strength
@@ -569,6 +573,8 @@ Key: Partner mirroring is the drill that most directly transfers to games
 A **pivot** (or transition) is changing between skating forwards and skating backwards without stopping. Losing speed in a pivot is losing the play.
 
 ### Forward to backward — the open-hip pivot
+
+When you have to turn from forwards to backwards facing a puck carrier, **stay square as long as you can still step up, then open your hips, not your shoulders**, so your eyes stay on the carrier. Keep your knees bent through the turn: players who stand up mid-pivot get beaten.
 
 ```facts
 Action: Stay square as long as you can — every moment going forwards is a moment you could step up on the puck, moving forward to challenge the carrier
@@ -770,6 +776,8 @@ Key: A stop is only valuable because of what follows it
 ## Tight Turns and Agility
 
 ### A turn is not a crossover
+
+When you need to change direction, choose by how much room you have: **a crossover when you have space and want speed, a tight turn when you have none**, such as coming off the wall or escaping a checker.
 
 ```facts
 Technique: A crossover generates speed through a wide arc — your feet cross and you accelerate

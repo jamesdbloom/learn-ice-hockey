@@ -570,6 +570,8 @@ This is one of the most common amateur failures in hockey — coaching emphasis 
 
 ### The failure
 
+**Be moving into an open lane when the breakout pass arrives**, not parked flat against the boards at the hash marks waiting for it. Parked there, you start from zero against a defenceman closing at speed, with only the lane along the boards to escape into.
+
 ```facts
 Never: Stand still, flat against the boards at the hash marks, waiting
 Risk: You are uncoverable but useless — your check cannot take the puck off you before you have it, so it feels like you are doing your job

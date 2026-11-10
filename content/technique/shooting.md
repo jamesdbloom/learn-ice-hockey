@@ -635,6 +635,8 @@ Never: Simply wait the goalie out — if neither of you commits you run out of i
 
 ### Approach speed — slower than you think
 
+On a breakaway, **come in hard to the blue line, ease off through the top of the circles, then accelerate into your move**. Arriving slower than full flight gives you time to read the goalie's depth and change your mind, and leaves you room to pull the puck across before you pass the post.
+
 ```facts
 Action: Arrive at the top of the circles with less speed than you feel like carrying
 Risk: Full flight cuts you to one option and hands the goalie their easiest read
@@ -654,6 +656,8 @@ Read: A deke needs room; you cannot pull the puck across your body once you are 
 ![](diagram:shooting-breakaway-approach)
 
 ### Deception — take their eyes off the puck
+
+On a breakaway, **move the puck, not just your head, so the goalie has to re-read it**: sell a shot to open the five-hole, sell a deke to open space for the shot, and do not choose your move until you can see what the goalie is giving you.
 
 ```facts
 Action: Look where you are not going — head and eyes to one corner, puck to the other
@@ -822,6 +826,8 @@ Key: Before you shoot, ask what happens if it does not go in — rebound, tip or
 ---
 
 ## Equipment Factors
+
+Get a stick whose flex you can load in a wrist shot, with a curve that suits your shots and a lie that puts the whole blade flat in your stance, **then put your effort into reps rather than equipment**.
 
 ```facts
 Technique: Roughly right flex feels like the stick loading noticeably in a wrist shot, without feeling like a whip

@@ -49,6 +49,8 @@ On a good team nobody stands where a whiteboard would put them. They keep adjust
 
 ### Spacing beats skill
 
+When a teammate has the puck, count their options. If they have none, or only one, **get into a second lane at a different angle from the first**, because the nearest defender cannot cover both.
+
 ```facts
 Goal: Offer two options at different angles — the nearest defender physically cannot cover both
 Risk: Zero options means winning a one-on-one duel, and even elite players lose that duel a lot of the time
@@ -78,6 +80,8 @@ Because it is invisible. Everyone sees the great pass; nobody claps the teammate
 One option is coverable, so two is the minimum. And two options in the same direction are really one.
 
 ### Why a triangle and not a line
+
+If you are the third teammate in a line up the boards, **step off it into the middle**, so one defender's stick can no longer kill two passing lanes at once. Then keep that triangle as the puck moves, rotating and stretching with it rather than setting it up once.
 
 ```facts
 Never: String three teammates in a straight line — one stick blade in one lane kills two options at once
@@ -385,6 +389,8 @@ Risk: Converging leaves nobody above the puck, which turns a routine turnover in
 
 ### How to train yourself out of it
 
+To break the habit of chasing the pile, ask "who is closest?" every time the puck moves; if it is not you and your system has not sent you in, **go to the space where the puck will come out**, up the wall or behind the net. Small-area games punish crowding at once, and video of your own shifts shows you spacing you cannot see in the moment.
+
 ```facts
 Action: Every time the puck moves, ask "who is closest?" — if it is not you and your system has not sent you in, your job is the space
 Key: How many players pressure is decided by your system, not improvised. Learn your role before you move
@@ -549,6 +555,8 @@ Players who complain nobody passes to them are usually confusing open with avail
 [Playing Without the Puck → Unmarked is not the same as available](playing_without_the_puck.md) covers the lane in more depth.
 
 ### It is the receiver's job, not the passer's
+
+When a teammate cannot find you, fix it yourself: **move, even a metre, until there is a clean line from their stick to yours**, and keep moving as the puck moves. If a forechecker seals the carrier on the boards, get below or behind them.
 
 ```facts
 Mindset: Most players wait to be found; good support players go and make themselves findable

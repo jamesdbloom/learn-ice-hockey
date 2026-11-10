@@ -380,6 +380,8 @@ Most of a power play is not the set play. It is the twenty seconds of scrambling
 
 #### When the kill clears it
 
+When the kill clears the puck, **one player, decided in advance, chases it — never two** — and tries to arrive before it stops, while everyone else re-forms the shape during the chase. If the clear leaves the zone entirely, regroup as a unit and re-enter.
+
 ```facts
 Action: Decide in advance who chases — commonly the net-front player or the weak-side half-wall, with the point held at the line, but that is a coaching choice: ask your coach
 Never: Send two chasers — if two players chase, nobody is holding the zone
@@ -879,6 +881,8 @@ Key: If it is a footrace you will lose it is not a rush; if you have to think ab
 
 #### 4-on-4
 
+At 4-on-4, **support the puck with short options and quick movement**, activate less as a defenceman rather than more, and change only on offensive-zone possession or after a clear: with only two forwards back, being caught is an immediate odd-man rush the other way.
+
 ```facts
 Key: Each player has a quarter more ice, and the extra room is mostly in the middle, so skill and skating matter more and structure matters less
 Risk: With only two forwards back you have one fewer support layer, and a 2-on-1 arrives faster and with more room
@@ -919,7 +923,7 @@ NHL regular-season overtime is **five minutes of 3-on-3, sudden death**, followe
 - **Possession is the whole game.** You cannot be scored on while you have the puck. The format has shifted from run-and-gun to a deliberate, possession-first approach precisely because of this.
 - **The regroup is a weapon.** Carrying the puck back out to the neutral zone to reset, rather than forcing a low-percentage attack, is standard practice at NHL level. The League's general managers discussed limiting it in November 2023 (Dan Rosen, NHL.com, summarising Colin Campbell), but discussion is not adoption: the NHL's 2025-2026 rules contain no restriction, so the regroup is legal.
 - **Attack only with a numerical advantage.** A 2-on-1 in 3-on-3 is nearly a goal. A 1-on-1 is nothing. Wait for the extra man rather than driving into a set defender.
-- **Never change on the fly with the puck loose.** A bad change at 3-on-3 is a breakaway. Teams change by holding possession — often passing back to the goalie, who **retains and replays** it: settles it, keeps it live, and moves it back out once the change is made. ⚠️ **Not freezes it.** A goalie who covers the puck to force a stoppage when they are not being checked (or, under the IIHF and USA Hockey, pressured) takes a minor without warning under the NHL (63.2(vii), 67.3), the IIHF (63.2(VII), 67.3) and USA Hockey (610(b)). Under Hockey Canada, an unpressured freeze in the crease draws a minor after one warning, and a freeze outside it, pressured or not, draws one with no warning, unless they came out to cut down the angle and covered the shot (Interpretation 3 to Rule 10.1(a), clauses ii, iii and v). The stoppage hands the other team the draw and the reset anyway. **Pass it back to your goalie to be replayed, not to be caught.**
+- **Never change on the fly with the puck loose.** A bad change at 3-on-3 is a breakaway. Teams change by holding possession — often passing back to the goalie, who **retains and replays** it: settles it, keeps it live, and moves it back out once the change is made. ⚠️ **Not freezes it.** A goalie who covers the puck to force a stoppage when they are not being checked (or, under USA Hockey, pressured) takes a minor without warning under the NHL (63.2(vii), 67.3), the IIHF (63.2(VII), 67.3) and USA Hockey (610(b)). Under Hockey Canada, an unpressured freeze in the crease draws a minor after one warning, and a freeze outside it, pressured or not, draws one with no warning, unless they came out to cut down the angle and covered the shot (Interpretation 3 to Rule 10.1(a), clauses ii, iii and v). The stoppage hands the other team the draw and the reset anyway. **Pass it back to your goalie to be replayed, not to be caught.**
 - **Isolate and attack.** With one defender to beat, the point is to get a defender alone in space and go at them. Support arrives too slowly to help them.
 - **Do not chase the puck as a group.** Three players chasing is nobody home.
 

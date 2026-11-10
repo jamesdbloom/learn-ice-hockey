@@ -899,6 +899,8 @@ Read: Right against attackers with speed, on odd-man situations, when you are th
 
 ### How to choose
 
+**Step up only when you are confident you will win the puck — take the ice, not the man — and otherwise back off with a tight gap**. Never drift forward half-committed. How confident is confident enough depends on your team's system, so find out which risk your coach wants to carry.
+
 ```facts
 Never: Step up unless you are confident you can win the puck — confidence, not hope
 Convention: How aggressive "confident" should be is a coaching choice — an aggressive 1-2-2 press wants you challenging the line, a 1-3-1 trap wants you holding

@@ -733,6 +733,8 @@ Under pressure, three things change: you have less time to look, the lanes are s
 
 ### The "never" list
 
+In your own zone, **only make a pass you are certain of**: no blind pass up the middle, no defence-to-defence pass through the slot and no cross-ice pass, because any of them picked off is a high-danger chance against your net. These are defaults rather than laws, so find out which exceptions your team's system builds in.
+
 ```facts
 Convention: The three own-zone passing prohibitions in this block are risk-management defaults rather than laws of hockey. Treat them as always-on unless a coach has built a system around the exception
 Never: Make a blind pass up the middle in your own zone — if you cannot see the receiver, the pass does not exist

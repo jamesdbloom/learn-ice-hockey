@@ -310,6 +310,8 @@ The effect is a 2-3: aggressive up front, three across the back. You get real fo
 
 ### Which one should you be playing?
 
+**Find out from your coach which structure is your team's default and what the signal is to switch**, so the whole unit is pressuring or holding together. As a rough guide, teams tend toward pressure behind a 2-1-2 forecheck when they are trailing, and toward a 1-3-1 or 1-2-2 trap when they are protecting a one-goal lead.
+
 ```facts
 Convention: Which structure you play is your coach's call, and the honest answer is usually more than one
 Read: Trailing and needing the puck, or with a fast, fit forward group → pressure behind a 2-1-2 forecheck
@@ -577,6 +579,8 @@ Hockey Canada is blunter still. Its **Interpretation 3 to Rule 10.1(a)**, clause
 **🇬🇧 In Britain, play as though it binds.** Nothing in the Elite League's Casebook switches it off — the Casebook adopts the 2026-27 IIHF book (Rule 27.7, not the NHL's 27.8). England Ice Hockey's *Rules & Regulations* 22.3 say the restricted area is *"not currently enforced"*, but its scope and standing are unsettled, including whether it reaches Scotland and Northern Ireland. The In-House Rules do not mention it in the 2025-26 or 2026-27 edition, though their Introduction says *"unless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*, which points the other way. Ask your league, and look behind the net for painted lines. Treat an unmarked sheet as a hint, not a ruling: IIHF 27.7 turns on *"the position of the puck"*, not the markings.
 
 ### Timing the forwards' swing
+
+On a regroup, **curl back the same way the puck is going, staying below it, and turn up ice into your lane as the D-to-D pass is made**, so you take the pass already moving at close to top speed and facing the play. Do not all curl to the same place: one forward stays close, one swings wide and one stays high.
 
 ```facts
 Never: Stand still and call for it — a forward receiving a regroup pass at a standstill has wasted the regroup

@@ -508,6 +508,8 @@ Two things worth knowing in advance, both of which [Practice and Development](..
 
 ### If you want to move
 
+To ask for a new position, **ask your coach a specific question, in private, a day or two later** — not on the bench or straight after a game — and ask to try it in practice first. Then do the work the answer points to where the coach can see it.
+
 ```facts
 Action: Ask a day or two later, in private — not on the bench, not immediately after a game, not in front of the group
 Action: Ask a specific question — "What would I need to show you to get a look at centre?" beats "Can I play centre?", which gets a shrug

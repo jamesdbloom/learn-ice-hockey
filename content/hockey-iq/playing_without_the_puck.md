@@ -121,6 +121,8 @@ Action: Improve the fifteen minutes you spend on the ice without the puck — it
 
 ## The four off-puck states
 
+Every time play changes, ask who has the puck — your team, theirs, nobody, or it has only just changed hands — and **switch to that state's job straight away**. When two apply, do the more urgent one: a loose puck you can get to comes first. Most bad off-puck play is a player still doing the right job for the moment that has just ended.
+
 ```facts
 Read: At any instant that you do not have the puck you are in one of four states — your team has it, they have it, it is loose, or it has just changed
 Priority: When two states apply, take the one that names the more urgent job — a loose puck you can get to is State 3, whatever else is going on
