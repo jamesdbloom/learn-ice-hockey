@@ -772,13 +772,13 @@ The failure is having only one of these in mind. A player who arrives on the hal
 
 ### Buying time
 
-**On the wall, keep your feet moving and buy time by cutting back, curling toward the middle, or bumping it to your support and taking the return — and turn only while the checker is still too far away to reach you.** Never turn your back to anyone coming at you near the wall, and never duck: keep your head up and your chin off your chest.
+**On the wall, keep your feet moving and buy time by cutting back, curling toward the middle, or bumping it to your support and taking the return — and turn only while the checker is still too far away to reach you.** Never turn your back to anyone coming at you, in open ice as much as at the wall, and never duck: keep your head up and your chin off your chest.
 
 ```facts
 Technique: Cut back — skate a few feet toward the corner and cut back up the wall before the defender can reach you, never to face the wall with them behind you; their momentum has to reverse, yours does not
-Technique: Delay and curl — before the checker can reach you, turn away from pressure, protect the puck and curl toward the middle into open ice, coming out facing the ice
+Technique: Delay and curl — before the checker can reach you, turn away side-on, protect the puck and curl toward the middle into open ice; never your back to anyone coming at you
 Technique: Receive with your body between checker and puck, then spin off once they lean on you — turning into pressure immediately is how you get pinned
-Never: Turn your back to anyone coming at you near the wall, or duck — keep your head up and your chin off your chest. This outranks everything else here
+Never: Turn your back to anyone coming at you, at the wall or in open ice, or duck — keep your head up and your chin off your chest. This outranks everything else here
 Options: Bump it to the level-support player and take an immediate return pass — it resets the defender's read entirely
 Action: Feet moving, always — a stationary player on the wall gets pinned; one with momentum can go three directions
 ```
@@ -787,7 +787,7 @@ You often need two more seconds than you have. Ways to manufacture them:
 
 - **Cut back.** Skate a few feet toward the corner and cut back up the wall. The defender's momentum has to be reversed; yours does not. Turn while they are still too far away to hit you; once they can reach you it is too late to turn, so go side-on to the wall, forearm and hip against it, and never turn to face the wall with them behind you.
 - **Delay and curl.** Before the checker can reach you, turn away from the pressure, protect the puck, and curl toward the middle — into open ice, not against the wall, where turning puts your back to anyone coming at you; the safety qualifier in the next bullet governs this one too. Coming out of the curl you will be facing the ice with your options refreshed.
-- **Don't turn into pressure first.** When you receive the puck under pressure, take it with your body between checker and puck, then spin off once they are leaning on you, never while they are still coming at you. Turning into pressure immediately is how you get pinned. **Safety qualifier that outranks all of this:** the orientation to aim for at the wall is skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest. Never turn your back to anyone coming at you near the wall, never duck, never the point of your shoulder, and not the whole shoulder if you can help it. Chest-square to the wall is the fallback, not the target. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
+- **Don't turn into pressure first.** When you receive the puck under pressure, take it with your body between checker and puck, then spin off once they are leaning on you, never while they are still coming at you. Turning into pressure immediately is how you get pinned. **Safety qualifier that outranks all of this:** the orientation to aim for at the wall is skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest. Never turn your back to anyone coming at you, at the wall or in open ice, never duck, never the point of your shoulder, and not the whole shoulder if you can help it. Chest-square to the wall is the fallback, not the target. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 - **Bump it and get it back.** A short pass to the level-support player and an immediate return pass re-sets the defender's read entirely, and often you get the puck back in more space than you gave it away in.
 - **Feet moving, always.** A stationary player on the wall gets pinned. A player with momentum can go three directions.
 
@@ -866,12 +866,12 @@ You enter the zone with speed and attack before the defence is set. The chance c
 ```facts
 Read: You enter with speed and attack before the defence is set — the chance comes from numbers and momentum
 Key: Chances appear in the first three or four seconds and then vanish; speed and the moment of entry are the resource
-Options: The late-arriving trailer into the high slot, the drive to the net that occupies a defender, and the delay — curling back to let a second wave arrive
+Options: The late-arriving trailer into the high slot, the drive to the net that occupies a defender, and the delay — curling back before the defender can reach you, never your back to them
 Key: Shots off the rush are more dangerous than equivalent shots from a set possession, because the goalie is also moving and re-establishing depth
 ```
 
 - The defining resource is **speed and the moment of entry**. Chances appear in the first three or four seconds and then vanish.
-- The high-value plays are the **late-arriving trailer** into the high slot, the **drive to the net** that occupies a defender, and the **delay** — curling back up toward the blue line to let a second wave arrive.
+- The high-value plays are the **late-arriving trailer** into the high slot, the **drive to the net** that occupies a defender, and the **delay** — curling back up toward the blue line, in open ice and before the defender can reach you, never your back to them, to let a second wave arrive.
 - Shots off the rush are more dangerous than equivalent shots from a set possession, because the goalie is also moving and re-establishing depth.
 - Full treatment of getting into the zone in the first place is in [Zone Entries](zone_entries.md).
 
@@ -1172,7 +1172,7 @@ Key: Having a defined assignment for the loss is what lets you be aggressive on 
 - **Firing the point shot into the first shin pad.** **Walk the line until the shot-blocker has to move, take something off it, or go D-to-D first — and hold it if nobody is in front.** A blocked point shot usually goes the other way with your team spread out.
 - **Scanning up the wall before scanning across the middle.** **Look across first, every time — of the two options, only the seam expires.**
 - **Passing to where a teammate is instead of where they are going.** **Put it where their stick will be, so they can shoot without settling it.** In the slot, the extra touch is the difference between a goal and a save.
-- **Standing still on the half-wall.** **Keep your feet moving — cutbacks and curls buy the two extra seconds you need.** A stationary player gets pinned and stripped. When contact arrives, keep your head up and your chin off your chest — never turn your back to anyone coming at you, never duck.
+- **Standing still on the half-wall.** **Keep your feet moving — cut back or curl before the checker can reach you; that buys the two extra seconds you need.** A stationary player gets pinned and stripped. When contact arrives, keep your head up and your chin off your chest — never turn your back to anyone coming at you, never duck.
 - **Turning to watch the shot from the net front.** **Keep your chest to the shooter and your eyes on the puck.** Turning to follow it un-screens the goalie and takes you out of the rebound.
 - **Planting at the net front without knowing where the post is.** **Know where the post is before the shot comes, keep your head up with your chin off your chest, and never duck.** You get walked sideways by a body you feel rather than see, with the post on one side and the goalie on the other. A flexed neck is what turns a collision with a post into a spinal injury, and USA Hockey names the goal post in that mechanism. **A box-out puts you on the same path, so this is not a checking-league point.** **And if a shove is carrying you into the goalie, give way rather than hold your spot.**
 - **Standing in the blue paint to screen.** **Take the goalie's eyes, not their room: screen from outside the crease, feet off the red line too, and never initiate the contact.** Outside the crease a no-contact screen is normally legal, though under the NHL, IIHF and PWHL positioning that stops the goalie moving freely in their crease can cost the goal; their tables allow a screen outside the crease even where it impairs the goalie's ability to defend (5C, 5E). ⚠️ **Inside it, your position alone can take the goal off.** Once a goalie has played the puck outside the crease, get out of their road back — under the NHL, the IIHF and the PWHL, blocking it can draw a penalty, contact or not. [Goaltender interference — the actual standard](#goaltender-interference--the-actual-standard) sets out each book's test.

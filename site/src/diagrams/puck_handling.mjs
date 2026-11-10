@@ -286,7 +286,7 @@ const puckOnTheFarSide = {
     // keeps the prohibition, "however slowly they come" (the page's own Key focus wording, which
     // carries the not-only-at-speed point), and WALL_POSTURE_SHORT. The old lead, "this
     // document's own override outranks every word of it", was the corpus narrating itself.
-    '⚠️ And if a battle like this reaches the boards, never turn your back to anyone coming at ' +
+    '⚠️ And at the boards or in open ice, never turn your back to anyone coming at ' +
     'you and never duck, however slowly they come. ' + WALL_POSTURE_SHORT,
 
   describe:
@@ -801,9 +801,9 @@ const youCannotBeatTwo = {
     'The teammate ' +
     'shows what "left open" means, not that they will be there. ' +
     '⚠️ And protecting is a way to buy a second, not a place to live: every second you hold the ' +
-    'puck under pressure another checker is arriving. If this drifts to the boards, ' +
+    'puck under pressure another checker is arriving. At the boards or in open ice, ' +
     'never turn your back to anyone coming at you and never duck, and ' +
-    'neither prohibition is a rule for fast checkers only. Skates parallel to the wall, forearm and ' +
+    'neither prohibition is a rule for fast checkers only. At the wall, skates parallel to it, forearm and ' +
     'hip, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
@@ -1054,7 +1054,7 @@ const theLastPlayerBack = {
     // outranks every word of it" was the corpus narrating itself and is gone; "neither
     // prohibition is a rule for fast checkers only" became "however slowly they come", the
     // page's own wording, which keeps the not-only-at-speed point.
-    '⚠️ And if this turns into a battle on the boards, never turn your back to anyone coming at ' +
+    '⚠️ And at the boards or in open ice, never turn your back to anyone coming at ' +
     'you and never duck, however slowly they come. ' + WALL_POSTURE_SHORT,
 
   describe:

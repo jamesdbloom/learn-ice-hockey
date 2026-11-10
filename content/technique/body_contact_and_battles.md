@@ -884,12 +884,12 @@ Not "look up sometimes." Never skate with your head down. Two separate reasons, 
 
 Learning to carry the puck without staring at it is a stickhandling problem, and it is solved off the ice. See [Puck Handling](puck_handling.md).
 
-### Do not turn your back to anyone coming at you near the boards
+### Do not turn your back to anyone coming at you, at the boards or in open ice
 
 **In short:** Never turn your back to anyone coming at you; arrive on an angle, and if contact is coming, skates parallel to the wall, forearm and hip to it, head up.
 
 ```facts
-Never: Turn your back to anyone coming at you near the boards. Spine exposed, head first into the wall, hit from behind. USA Hockey: "Even a light hit from behind could inflict a severe head or neck injury"
+Never: Turn your back to anyone coming at you, anywhere. Spine exposed, head first into the wall, hit from behind. USA Hockey: "Even a light hit from behind could inflict a severe head or neck injury"
 Key: A chin tucked to the chest straightens the cervical spine; the head stops, the body keeps going, and vertebrae fracture
 Risk: The spinal injury from a head-down, head-first collision with the boards or a goal post can occur at walking speed — no speed is slow enough to make one safe
 Action: Case 1, best of all — arrive on an angle, not perpendicular
@@ -901,7 +901,7 @@ Rule: The turn-into-a-hit waiver is the NHL's, the IIHF's and the PWHL's (43.1 i
 Key: Head up, chin off your chest — hit the boards or a post with an arm, a leg or anything but your head first
 ```
 
-**Never turn your back to anyone coming at you — never turn to face the wall with them behind you — at any speed and in any league.** Anyone means anyone: a player racing you to the puck as much as one coming to hit you, so it holds in a non-checking league too. Turning away feels like protecting yourself; it is the opposite. It gives them your back and your spine, puts your head first into the boards, and **turns the collision into a hit from behind** — the one USA Hockey warns about most plainly: *"Even a light hit from behind could inflict a severe head or neck injury."* The warning is written to cover the light hit, so a slow opponent is not the safe case. No source ranks this against the head-down collision below; both prohibitions are absolute.
+**Never turn your back to anyone coming at you — at any speed, in any league, in open ice as much as at the wall; at the wall, never turn to face it with them behind you.** Anyone means anyone: a player racing you to the puck as much as one coming to hit you, so it holds in a non-checking league too. Turning away feels like protecting yourself; it is the opposite. It gives them your back and your spine, puts your head first into the boards, and **turns the collision into a hit from behind** — the one USA Hockey warns about most plainly: *"Even a light hit from behind could inflict a severe head or neck injury."* The warning is written to cover the light hit, so a slow opponent is not the safe case. No source ranks this against the head-down collision below; both prohibitions are absolute.
 
 **Do not turn on purpose to draw the call, either.** NHL Rule 43.1: "When a player intentionally turns his body to create contact with his back, no penalty shall be assessed." The IIHF and the PWHL say the same at their 43.1, the IIHF adding that "other penalties may still be assessed". USA Hockey and Hockey Canada write no such carve-out — Hockey Canada's **Interpretation 2 to Rule 7.5(a)** still gives the penalty to the checker. ⚠️ **None of that is a reason to turn: the turn is the position that breaks necks, and a penalty to the other player does not undo a cervical fracture.**
 
@@ -987,13 +987,13 @@ When you go to the wall for a puck with a checker arriving:
 
 The best protection is not being pinned. If you can chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives, you avoid the collision entirely and keep possession.
 
-Two habits make this possible: **know what is around you before the puck arrives** (see [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md)), and **have a plan for the puck before you get there**. Make it a chip, a rim, a reverse, or a spin off the wall, with your head up and never by turning your back to anyone coming at you. Players who arrive at the wall with no plan get pinned. Players who arrive with a plan get out.
+Two habits make this possible: **know what is around you before the puck arrives** (see [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md)), and **have a plan for the puck before you get there**. Make it a chip, a rim, a reverse, or a spin off the wall — only off a checker already leaning on you, never one still coming at you — head up and never your back to anyone coming at you. Players who arrive at the wall with no plan get pinned. Players who arrive with a plan get out.
 
 ```facts
 Goal: The best protection is not being pinned. Avoid the collision entirely and keep possession
 Options: Chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives
 Action: Know what is around you before the puck arrives
-Action: Have a plan for the puck before you get there — a chip, a rim, a reverse, or a spin off the wall with your head up, never turning your back to anyone coming at you
+Action: Have a plan before you get there — a chip, a rim, a reverse, or a spin off the wall only off a checker already leaning on you; head up, never your back to anyone coming at you
 Key: Players who arrive at the wall with no plan get pinned; players who arrive with a plan get out
 ```
 
@@ -1543,11 +1543,11 @@ Equally, ⚠️ **never hold a lane to clear the way for a teammate:** Hockey Ca
 
 ### First to arrive, last to commit
 
-The idea is this: **get there early, then decide late.** A player who arrives at speed with their body already committed to one play — a full-speed reach for the puck, a spin, a blind bank — has given away all their options and is easy to defend. A player who arrives early, slows into a wide balanced stance, and *then* reads the pressure can chip, reverse, protect, or turn up ice as the situation dictates.
+The idea is this: **get there early, then decide late.** A player who arrives at speed with their body already committed to one play — a full-speed reach for the puck, a spin, a blind bank — has given away all their options and is easy to defend. A player who arrives early, slows into a wide balanced stance, and *then* reads the pressure can chip, reverse or protect the puck as the situation dictates — or turn up ice, but only before a checker can reach them, never their back to anyone coming at them.
 
 ```facts
 Convention: Get there early, then decide late — a coaching heuristic in common use, not a law, with no named originator
-Action: Arrive early, slow into a wide balanced stance, then read the pressure and chip, reverse, protect or turn up ice
+Action: Arrive early, slow into a wide balanced stance, then read the pressure: chip, reverse or protect it, or turn up ice before a checker can reach you, never your back to them
 Never: Arrive at speed already committed — a full-speed reach, a spin or a blind bank gives away all your options
 Risk: Winning the race and immediately swinging at the puck turns a won race into a turnover
 Read: In your own slot, or with an opponent bearing down on you (above all in your own end), there is no beat to wait: take your look on the way in and move it
@@ -2038,7 +2038,7 @@ The act the books describe is not a fight move but **a push delivered with the h
 - **Getting lower than your opponent to hit them.** Hit from your own height; if you have to drop your body to reach them, take the ice instead. Going in at or below their knees is **clipping** (at the *hips* under Hockey Canada). ⚠️ **From behind, a low hit is priced as checking from behind.** **A knee arriving first is kneeing** — at least a double minor under Hockey Canada, and under USA Hockey at least a minor plus a misconduct, rising to a major and game misconduct whenever you extend your knee into theirs (Casebook 628), and a mandatory one if reckless, with a match and a likely multi-game suspension to plan on (602(a)).
 - **Treating boarding as a two-minute foul — or as something you can only do with your body.** Along the wall, play the puck and ease off as their numbers turn toward you. ⚠️ **Under USA Hockey a trip or push into the boards is boarding too.** No book caps it at a minor, and five of the six reach a match — under USA Hockey with a likely multi-game suspension.
 - **Treating "the onus is on the checker" as strict liability — in either direction.** Give a turned player the ice, and never turn into a hit. Most boarding rules let the referee weigh whether the opponent made themselves vulnerable. The NHL, IIHF and PWHL waive the penalty when the player turned into the hit on purpose (43.1), but ⚠️ **USA Hockey, Hockey Canada and CARHA write no such waiver** — Hockey Canada gives that exact turn to the checker.
-- **Turning your back to anyone coming at you near the boards.** **Get skates parallel to the wall and take it on the forearm and hip, head up with your chin off your chest.** Turning your back gives them your spine, puts your head first into the boards and makes the contact a hit from behind. Squaring your chest to the boards is the fallback when you cannot turn, not the aim.
+- **Turning your back to anyone coming at you, at the boards or in open ice.** **At the wall, get skates parallel to it and take it on the forearm and hip, head up with your chin off your chest.** Turning your back gives them your spine, puts your head first into the boards and makes the contact a hit from behind. Squaring your chest to the boards is the fallback when you cannot turn, not the aim.
 - **Arriving at the boards perpendicular, on the point of your shoulder, or upright with your feet together.** Go in on an angle, skates parallel, feet apart and knees bent, forearm and hip to the wall. **Never the point of the shoulder.** Stuck facing the wall? Gloves and stick up and spread on the glass.
 - **Angling at the player instead of at the ice.** Skate at the space; skate at the body and a good carrier changes the puck to their far side and goes around you.
 - **Angling flat across the ice.** Take the angle so your momentum heads back toward your own net — otherwise one pass leaves you facing the wrong way.
@@ -2098,7 +2098,7 @@ document, that is named too.*
 4. Contact is coming and you are near the boards. Turning your back feels like
    protecting yourself — why is it the opposite, and what are the three
    cases you should be aiming for instead, best first? *(§6. Do not turn your back
-   to anyone coming at you near the boards)*
+   to anyone coming at you, at the boards or in open ice)*
 
 5. You want to take away a net-front player's tip and rebound. Why is a
    cross-check the wrong tool even with your blade on the ice — and where exactly
@@ -2123,7 +2123,7 @@ document, that is named too.*
    hit, and the one thing it does not mean for the player receiving it — and say
    why neither changes what you should do.
    *(§Checking from behind, and what the onus does and does not mean, and §6. Do not turn your back to
-   anyone coming at you near the boards)*
+   anyone coming at you, at the boards or in open ice)*
 
 10. Your penalty has just expired, play stops because a fight has broken out,
     and you step out of the box and skate to your own bench without going near
@@ -2152,7 +2152,7 @@ document, that is named too.*
 4. **In front of an opponent, hold that ice and lengthen their route to the puck, stick down and free hand off them.** Never use the spot as cover for a hit. **Under Hockey Canada or in a CARHA adult league, never lean or body to keep it — and in any game, never walk a net-front screener out.**
 5. **Where checking is allowed and you have the gap, hit trunk to trunk with shoulder or hip — above the knees (the hips under Hockey Canada), at or below the shoulders, skates on the ice.** Need extra strides or a jump? Angle instead. ⚠️ **Never drop under them or lead with your knee — a penalty in every division.**
 6. **Numbers showing, puck gone, or only the head open? Do not hit: take the puck.** ⚠️ **A hit from behind ends your game under the NHL, PWHL and CARHA; under Hockey Canada, while it stays off the head; under the IIHF, plan on it; under USA Hockey it is at least a minor and a misconduct, and ends your game when forceful at the boards, head first into boards or goal frame, or reckless.**
-7. **When contact is coming near the wall: head up, chin off your chest, skates parallel to the boards, forearm and hip to it — never turn your back to anyone coming at you, never duck.** A turned back makes it a hit from behind; a tucked chin is how a head-first collision breaks a neck, even at walking speed.
+7. **When contact is coming near the wall: head up, chin off your chest, skates parallel to the boards, forearm and hip to it — never turn your back to anyone coming at you, there or in open ice, never duck.** A turned back makes it a hit from behind; a tucked chin is how a head-first collision breaks a neck, even at walking speed.
 8. **If a player may have a head or neck injury, do not help them up: keep them still except to clear the airway, leave the helmet on, call for help.** ⚠️ **After any head knock: off for the day, a medical professional before playing again, even if symptoms clear** — someone else drives them home. Neck pain means an ambulance.
 9. **In a board or corner battle, arrive with your body between the opponent and the puck, get low and wide, and play the puck, not the player.** The second player in stays out of the pile. Kick the puck free, never a player. ⚠️ **Keep your leg in front of you: slew-footing ejects you in four of the six books.**
 10. **Defending the net front, stand beside the screener and play their stick as the puck arrives: lift it low or press the blade, then let go.** Never cross-check them, walk them out or move a body across your goalmouth. ⚠️ **Head up, chin off your chest: the goal post is in the same head-first injury mechanism as the boards.**

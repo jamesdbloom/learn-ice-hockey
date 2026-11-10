@@ -6,7 +6,7 @@
 
 ## Key focus
 
-**"Man on" and "time" are the two highest-value words in hockey, and both are usually unsaid.** "Man on": an opponent you cannot see is closing — protect the puck and move it. "Time": nobody is near — lift your head and make the good play. ⚠️ **At the wall, called or not, never turn your back to anyone coming at you, after the puck or not, and never duck** — head up, chin off your chest.
+**"Man on" and "time" are the two highest-value words in hockey, and both are usually unsaid.** "Man on": an opponent you cannot see is closing — protect the puck and move it. "Time": nobody is near — lift your head and make the good play. ⚠️ **At the wall or in open ice, called or not, never turn your back to anyone coming at you, after the puck or not, and never duck** — head up, chin off your chest.
 
 **Whoever can see the play makes the call — early, short and loud.** A call before the puck arrives lets the receiver plan; one as it lands just startles them. Use names: "Sam, man on". In your own end the goalie sees most; on a breakout the defencemen call "up", "over", "reverse" and "wheel" *to* the retriever.
 
@@ -91,7 +91,7 @@ Each entry gives the word, who says it, what it means, and what you do when you 
 Action: Call the pressure the moment you see it — the carrier almost never can
 Action: On "man on", stop trying to make a play; protect the puck and get rid of it — rim, chip off the glass, or a short pass
 Never: Turn your back to anyone coming at you, after the puck or not, and never duck. Keep your head up and chin off your chest, and never take the boards on the point of your shoulder
-Read: One forechecker can be beaten with a reverse or a quick turn; two means you are being sealed and the puck has to leave
+Read: One forechecker can be beaten with a reverse or a quick turn before they can reach you; two means you are being sealed and the puck has to leave
 Key: "Time" is the mirror of "man on" and just as valuable — fear of pressure that is not there throws pucks away. Say it only when you are sure
 Action: On "feet" or "under", look down and kick it to your stick — the skate goes at the puck, never at the player — then reset. On "man on" the instruction is the opposite one: do not put your head down
 Rule: Kicking or attempting to kick an opponent is a match penalty, injury or not, under NHL and PWHL 49.3, USA Hockey 627(b) (likely multi-game ban), Hockey Canada 7.1(c)(iii) and CARHA 48(c); the IIHF writes none — its 49.3 is a discretionary major, with an automatic game misconduct once assessed
@@ -112,7 +112,7 @@ These are the highest-value calls in hockey and the ones most often missed. All 
   >
   > If you are already facing the wall and cannot turn in time, get your stick and gloves up and spread out on the glass — damage limitation, not the position to aim for. The checker carries the legal obligation here, not you.
 
-- **"One on" / "Two on"** — *Said by anyone, most often the goalie or a backchecker.* The same warning with a count: one forechecker coming, or two. **If you hear it:** the number changes your play. One forechecker can be beaten with a reverse or a quick turn; two means you are being sealed and the puck needs to leave — rim it or glass it out.
+- **"One on" / "Two on"** — *Said by anyone, most often the goalie or a backchecker.* The same warning with a count: one forechecker coming, or two. **If you hear it:** the number changes your play. One forechecker can be beaten with a reverse or a quick turn before they can reach you; two means you are being sealed and the puck needs to leave — rim it or glass it out.
 
 - **"Heads up"** — *Said by anyone.* Generic warning: something is coming that you have not seen. Less precise than "man on" but faster to shout when you have no time to be specific. **If you hear it:** get your head up and your body braced. Assume contact.
 
@@ -704,7 +704,7 @@ document, that is named too.*
 *Nobody publishes a ranking of amateur communication mistakes or a count of what gets said on amateur ice, so where a takeaway calls something the commonest, the highest-value, the cheapest or usual, that is coaching observation.*
 
 1. **The puck carrier is the least informed player on the ice.** Everyone else can see their blind side, and passing that on costs nothing.
-2. **"Man on" and "time" are the two highest-value words in hockey.** One prevents a turnover, the other a panic — say "time" only when you are sure. **At the wall, called or not, never turn your back to anyone coming at you, after the puck or not, and never duck** — head up, chin off your chest.
+2. **"Man on" and "time" are the two highest-value words in hockey.** One prevents a turnover, the other a panic — say "time" only when you are sure. **At the wall or in open ice, called or not, never turn your back to anyone coming at you, after the puck or not, and never duck** — head up, chin off your chest.
 3. **The player who can see it makes the call** — not the captain, not the most senior player.
 4. **Going back for a dumped puck, listen for your goalie before you touch it.** They see what is behind you: "time" or "man on" from them, then your partner's "up" or "over". Shoulder-check as you go — and goalies, make the call every time.
 5. **Early beats accurate, short beats specific, loud beats clever.** A perfect call at conversational volume did not happen. The exception is "time": say it only when you are sure, because a false one sends a teammate into a hit unbraced.

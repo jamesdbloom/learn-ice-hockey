@@ -456,7 +456,7 @@ Key: Your hip and rear end are the strongest, widest surface you own, and cannot
 Goal: Put shoulder, arm, hip and leg on the pressure side at once — three or four barriers instead of one
 Never: Turn to face pressure the instant you receive the puck — that is how players get pinned to the boards
 Action: With a checker on you in a low-speed battle, go side-on, hip and backside to them, puck on your far side; absorb the contact and spin off — in a non-checking game, hold position; under CARHA, avert it
-Priority: Never turn your back to anyone coming at you by facing the wall with them behind, and never duck — nothing outranks either. Skates parallel, forearm and hip to the wall, head up, chin off your chest
+Priority: Never turn your back to anyone coming at you, facing the wall or in open ice, and never duck — nothing outranks either. Skates parallel, forearm and hip to the wall, head up, chin off your chest
 Risk: USA Hockey warns your checker: "Even a light hit from behind could inflict a severe head or neck injury". Ducking puts your head into the boards first, and your neck can break at walking speed
 Action: Already facing the wall and unable to turn — spread the load, stick and gloves up on the glass, arms out, no head contact at all — damage limitation, not a position to aim for
 Rule: In a CARHA adult league, shield with position and feet and avert the contact — its Rule 49(a) prices intentionally bodying or pushing an opponent, or not averting body contact, at a minor or a major, mandatory if intentional contact injures; a major brings a game misconduct (30(a))
@@ -565,7 +565,7 @@ Both moves are edge-work moves before they are hand moves. See [Skating](skating
 
 ```facts
 Position: Hip and forearm against the wall, so the checker can only come from one direction
-Never: Turn your back to anyone coming at you on the wall, and never duck. Get your skates parallel to the wall instead, forearm and hip against it, head up and chin off your chest
+Never: Turn your back to anyone coming at you on the wall or off it, and never duck. Get your skates parallel to the wall instead, forearm and hip against it, head up and chin off your chest
 Technique: Forearm and hip meet the wall, not the shoulder — never the point of your shoulder, and not the whole shoulder if you can help it
 Never: Get square to the boards with your feet planted — that is how you get pinned and lose it to the second forechecker
 Action: Angle yourself so you always have an escape along the wall, and keep the feet moving so you can take it

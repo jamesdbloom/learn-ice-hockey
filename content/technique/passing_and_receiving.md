@@ -833,7 +833,7 @@ Structuring this into an actual improvement plan is covered in [Practice and Dev
 - **No target.** **Blade flat on the ice, out in front, held still, and call for it.** A waving stick makes the passer guess.
 - **Blocking the pass.** **Loose grip, and give with it as it lands.** A blocked pass bounces a foot away — the gap a checker needs.
 - **Standing still to receive.** **Keep your feet moving and adjust your speed to the pass.** A stationary receiver loses a stride and is easy to hit.
-- **Receiving with your back to the ice.** **Open your body before the puck arrives.** On the wall, pressure on your back is a hit from behind. ⚠️ **If the contact comes anyway: head up, chin off your chest even going slowly — never duck, and never the point of your shoulder.**
+- **Receiving with your back to the ice.** **Open your body before the puck arrives.** Pressure on your back is a hit from behind, on the wall or off it. ⚠️ **If the contact comes anyway: head up, chin off your chest even going slowly — never duck, and never the point of your shoulder.**
 - **Two touches when one would do.** **Pick your target while the puck travels, and move it first time when it is on.**
 - **A drop pass on hope.** **Drop it only to a trailer you know is there, leave it dead, and keep skating.** Not sure? Keep it.
 - **Saucering when a flat pass was on.** **Lift it only over a stick or a body.**

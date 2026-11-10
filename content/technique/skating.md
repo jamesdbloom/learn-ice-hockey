@@ -22,7 +22,7 @@
 
 **Train your outside edges.** They are where turning, cutting back and escaping come from, and most players are far weaker on them.
 
-**Cross over when you have room and want speed; turn tight when you have none.** Coming off the wall or escaping a checker, a crossover needs room you do not have.
+**Cross over when you have room and want speed; turn tight when you have none.** Coming off the wall or escaping a checker, a crossover needs room you do not have. Escaping a checker, turn before they can reach you, never your back to them.
 
 **Stop on both sides, and go straight back the other way.** A player who can stop only one way loops instead, ends up further from the puck and arrives at battles slowing down.
 
@@ -777,14 +777,14 @@ Key: A stop is only valuable because of what follows it
 
 ### A turn is not a crossover
 
-When you need to change direction, choose by how much room you have: **a crossover when you have space and want speed, a tight turn when you have none**, such as coming off the wall or escaping a checker.
+When you need to change direction, choose by how much room you have: **a crossover when you have space and want speed, a tight turn when you have none**, such as coming off the wall or escaping a checker — turn before they can reach you, never your back to them.
 
 ```facts
 Technique: A crossover generates speed through a wide arc — your feet cross and you accelerate
 Technique: A tight turn changes direction in the smallest possible space — feet parallel, both skates on the ice, carving a small radius
 Position: In the tight turn the outside skate is on its inside edge and the inside skate on its outside edge
 Read: Take a crossover route when you have room and want speed; take a tight turn when you have no room
-Options: Coming off the wall, escaping a checker, cutting back on the forecheck — pressure in the opposition's end — or turning back into the middle after a dead rush
+Options: Coming off the wall, escaping a checker before they can reach you, cutting back on the forecheck — pressure in the opposition's end — or turning back into the middle after a dead rush
 ```
 
 Players mix these up constantly:
@@ -792,7 +792,7 @@ Players mix these up constantly:
 - A **crossover** **generates speed** through a wide arc. Your feet cross; you accelerate.
 - A **tight turn** **changes direction in the smallest space**. Feet parallel, both skates on the ice, carving a small radius — outside skate on its inside edge, inside skate on its outside edge — whole body leaning in.
 
-Cross over when you have room and want speed. Turn tight when you have no room — coming off the wall, escaping a checker, cutting back on the **forecheck** (pressure in the opposition's end to win the puck back; the *backcheck* is racing back to your own end), or turning back into the middle after a dead rush.
+Cross over when you have room and want speed. Turn tight when you have no room — coming off the wall, escaping a checker before they can reach you, cutting back on the **forecheck** (pressure in the opposition's end to win the puck back; the *backcheck* is racing back to your own end), or turning back into the middle after a dead rush.
 
 ### How to turn tighter
 

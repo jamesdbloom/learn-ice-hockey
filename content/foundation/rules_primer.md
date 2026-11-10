@@ -1182,7 +1182,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 5. **Keep your hits below the shoulders.** Outside the NHL a head hit can end your game without any intent to injure, and under USA Hockey even a careless one must. ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
 
-6. **Never duck a check — take it head up, knees bent, chin off your chest**: a tucked chin can break your neck against the boards. ⚠️ **At the wall, take contact on your side and never turn your back to anyone coming at you.** Facing the boards? Stick and gloves up on the glass, head off it.
+6. **Never duck a check — take it head up, knees bent, chin off your chest**: a tucked chin can break your neck against the boards. ⚠️ **Take contact on your side and never turn your back to anyone coming at you, at the wall or in open ice.** Facing the boards? Stick and gloves up on the glass, head off it.
 
 7. **If you can see an opponent's numbers, pull up and play the puck.** ⚠️ **A hit from behind can end your game in every book, and most eject at the first tier.** Under Hockey Canada and CARHA, driving a player who cannot protect themselves into the boards or net is a mandatory match penalty.
 
