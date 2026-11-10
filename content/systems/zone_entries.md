@@ -11,7 +11,7 @@
 
 **Carry the puck in when you can.** In tracked NHL games a carry was worth about twice a dump-and-chase in shots, and a failed carry cost far less than it feels. Dumping and changing was the worst play of all.
 
-**Attack the space between two defenders, not one of them — head up, because both can stand you up there.** If you get there alone, turn away rather than force it: protect the puck, look back up the ice and come again with a teammate — curling in open ice, not against the wall.
+**Attack the space between two defenders, not one of them — head up, because both can stand you up there.** If you get there alone, turn away before they can reach you rather than force it: protect the puck, look back up the ice and come again with a teammate — curling in open ice, not against the wall.
 
 **Carry if you have the line or the support; chip it past a defender who is committing; delay if support is a second away.** Dump only to a place a teammate is already skating to.
 
@@ -33,7 +33,7 @@ A **zone entry** is your team bringing the puck across the opponent's blue line 
 
 **Trying is cheaper than it feels.** A failed carry costs a little going the other way, but less than dumping and changing, so the break-even sits near one in three. That is a probability, not a licence, but it is why the study's authors concluded the NHL players they tracked gave the puck up at the line too easily.
 
-**The seam and the timing are how you make carrying work.** One defender facing you has an easy job; two sharing a gap have to decide who takes you — and both can stand you up, so go through it head up. Wingers arriving first, with the carrier a beat behind, make the defence respect three threats instead of collapsing on one — a coaching convention rather than a rule. Turning away when you are alone feels like retreating, but it turns a doomed entry into a fresh one with support.
+**The seam and the timing are how you make carrying work.** One defender facing you has an easy job; two sharing a gap have to decide who takes you — and both can stand you up, so go through it head up. Wingers arriving first, with the carrier a beat behind, make the defence respect three threats instead of collapsing on one — a coaching convention rather than a rule. Turning away when you are alone feels like retreating, but made before the defender can reach you, it turns a doomed entry into a fresh one with support.
 
 **The onside rule is a tool, not a trap.** It is judged on the skates at one instant, not on the body, so a forward who knows it arrives at full speed with body and stick already in the zone. The books differ on whether the trailing skate may be in the air, so find out which one your league plays.
 
@@ -409,10 +409,10 @@ Two attackers crossing near the line can be used so that the second one runs int
 ```facts
 Goal: Arriving with an extra attacker is worth nothing unless you use it to make one defender responsible for two of you
 Key: Making one defender responsible for two attackers is what "isolate a defender" means in a rush
-Never: Delay into the wall on a drive and delay. Curl in open ice instead, and never turn your back to anyone coming at you near the wall
+Never: Delay into the wall on a drive and delay. Curl in open ice instead, before the defender can reach you, and never turn your back to anyone coming at you
 Options: 2-on-2 — crisscross, midlane drive, or double drive, where both attackers drive and the carrier can shoot with the second going to the net
 Options: 3-on-2 — high triangle with two driving wide and the third trailing, midlane drive with the middle attacker going hard at the net, triple drive with all three deep, or drive and delay
-Technique: On a drive and delay, sell the drive first and turn away from the defender, level with them or as they pivot — the delay only buys time if the drive was believed
+Technique: On a drive and delay, sell the drive, then turn away while the defender is still out of reach — level with them or as they pivot — the delay only buys time if the drive was believed
 Read: What tells the carrier what is open is whether a defender goes with the wide driver — that single movement is the cue
 Convention: Which of these your team runs is a coaching choice, so ask instead of assuming the pattern you know is the one being played
 Rule: Every drive here stops at the paint's edge, off its red line: deliberate contact with the goalie is penalised in every book, and a charge can end your game — automatically under Hockey Canada 8.5(b), and under CARHA 52(b) in the crease or if it injures
@@ -427,7 +427,7 @@ This is about the three of you together: **an extra attacker is worth nothing un
 - **High triangle** — the carrier drives wide with the puck, a second attacker drives wide *without* it, and the third trails into the high slot. The carrier now has a shot, a pass across, and a drop behind. **The read is whether a defender goes with the wide driver**; that single movement tells the carrier what has opened.
 - **Midlane drive** — get the puck to the outside first, then the middle attacker drives hard at the net on the inside shoulder of the far defender. That defender now has to leave the prime scoring area, which turns the rest of it into a 2-on-1, and the shot can come from the middle with a screen already in place.
 - **Triple drive** — a variation where all three go deep. The carrier takes it wide with speed and then cuts hard inside, using the two driving teammates to create the room to do it.
-- **Drive and delay** — the carrier sells a hard drive to the net and then pivots away from the defender, back toward the blue line. The defender has already given ground for fear of the drive and needs a beat to react, and that beat is the time and space the entry was for. **The timing is the whole play:** turn up when you are level with the defender or just as they pivot toward you, and turn to the outside, away from them. Sell the drive first — a delay off a drive nobody believed is just slowing down. **It is the same turn as [§5](#5-the-delay--curl-back), at higher speed, and the same safety override applies.**
+- **Drive and delay** — the carrier sells a hard drive to the net and then pivots away from the defender, back toward the blue line. The defender has already given ground for fear of the drive and needs a beat to react, and that beat is the time and space the entry was for. **The timing is the whole play:** turn up when you are level with the defender or just as they pivot toward you, and turn to the outside, away from them, before they can reach you — never your back to anyone coming at you. Sell the drive first — a delay off a drive nobody believed is just slowing down. **It is the same turn as [§5](#5-the-delay--curl-back), at higher speed, and the same safety override applies.**
 
 ![](diagram:entry-high-triangle)
 
@@ -444,7 +444,7 @@ Never: Drive the middle with your head down — speed is the point and a head up
 Rule: IIHF 48.1 opens "There is no clean check to the head or neck" and the checker must still avoid your head — the one thing it declines to penalise is a square check with no upward motion on a puck carrier skating head down toward the checker, and how far that reaches is unresolved in its own text
 Rule: Head up, and IIHF 48.1 is on your side — of a player skating head up, "whether they are in possession of the puck and may reasonably be expecting impending contact, an opponent does not have the right to hit them to the head or neck"; the NHL bars an avoidable head hit but writes neither half
 Rule: The head-down carve-out is the IIHF's alone — USA Hockey's Casebook answers that crossing the ice at full speed to punish a head-down opponent rather than to play the puck is charging (Rule 607, Situation 2), and Hockey Canada's nearest rule turns on the ducking player rather than the checker
-Never: Delay into the wall — a drive-and-delay is an open-ice turn, and the safety override — never turn your back to anyone coming at you near the wall — outranks the play
+Never: Delay into the wall. A drive-and-delay is an open-ice turn, made while the defender is still out of reach, and the safety override — never turn your back to anyone coming at you — outranks the play
 Never: Cut into a defender's path or step into them on a crisscross. Skate your own route instead, because deliberately body-blocking a player who does not have the puck is interference
 Technique: If you are tight to the wall and cannot get off it, take it on your forearm and hip, never the point of your shoulder, head up and chin off your chest, rather than turning away into the boards
 ```
@@ -455,7 +455,7 @@ Technique: If you are tight to the wall and cannot get off it, take it on your f
 
 **Do not assume your own book has the same carve-out.** None was found in USA Hockey's *Playing Rules*, and its *Casebook* leans the other way: Rule 607, Situation 2 calls it charging when a player who *"sees an unsuspecting opponent skating up the ice with their head down"* crosses the ice at full speed to hit them, for the purpose of *"punishing a vulnerable or defenseless opponent"*. Hockey Canada's nearest rule is about *ducking to avoid a check*, which can put the **ducking player** in the box — the checker's amnesty is junior and senior only, while Rule 8.7's ban on crouching applies in every division. [Rules Primer](../foundation/rules_primer.md) covers that comparison.
 
-**Delay in open ice, never against the wall.** The drive-and-delay is [§5](#5-the-delay--curl-back)'s turn, deeper and faster, and **§5's safety override applies unchanged**. If you cannot make the turn in open ice, do not make it. If you are already tight to the wall, take the contact on your forearm and hip rather than turning into the boards, head up and chin off your chest. Turn your back to anyone coming at you at the wall and the contact becomes a hit from behind — and if you turned into it on purpose, the NHL and PWHL give the hitter no penalty at all (43.1), the IIHF waives only the checking-from-behind call (43.1), and Hockey Canada still penalises the hitter.
+**Delay in open ice, never against the wall.** The drive-and-delay is [§5](#5-the-delay--curl-back)'s turn, deeper and faster, and **§5's safety override applies unchanged**: turn away while the defender is still out of reach, never your back to anyone coming at you. If you cannot make it in open ice before they can reach you, do not make it. If you are already tight to the wall, take the contact on your forearm and hip rather than turning into the boards, head up and chin off your chest. Turn your back to anyone coming at you, in open ice as much as at the wall, and the contact becomes a hit from behind — and if you turned into it on purpose, the NHL and PWHL give the hitter no penalty at all (43.1), the IIHF waives only the checking-from-behind call (43.1), and Hockey Canada still penalises the hitter.
 
 **Skate your route; do not set a pick.** The crisscross works because two attackers exchanging lanes force two defenders to decide whether to switch. It stops working, and becomes a penalty, the moment you cut across into the path of, or stop, stand or step into, a defender who does not have the puck — that is interference, and [Using a teammate as a screen](#using-a-teammate-as-a-screen) above covers the distinction.
 
@@ -530,7 +530,7 @@ On the power play, coaches often push this further and want **four across the li
 
 ## 5. The delay / curl-back
 
-**In short:** Arriving at the line alone, curl away in open ice, never against the wall, and come again once support catches up.
+**In short:** Arriving at the line alone, curl away in open ice before the defender can reach you, never against the wall, and come again once support catches up.
 
 Turning away from the blue line, keeping the puck, and coming back at the line once your support has caught up.
 
@@ -542,22 +542,22 @@ Turning away from the blue line, keeping the puck, and coming back at the line o
 
 ### How to do it
 
-Arriving at the line alone or outnumbered, do not stop: turn away from the pressure and curl back toward the neutral zone with your body between the defender and the puck, in open ice and never against the wall, where turning puts your back to anyone coming at you. Look back up ice as you curl, slow the play for a second or two while support arrives, and attack the line again with whoever has the best angle and the most speed.
+Arriving at the line alone or outnumbered, do not stop: before the defender can reach you, turn away from the pressure and curl back toward the neutral zone with your body between the defender and the puck, side-on to them, in open ice and never against the wall — never your back to anyone coming at you. Look back up ice as you curl, slow the play for a second or two while support arrives, and attack the line again with whoever has the best angle and the most speed.
 
 ```facts
 Never: Stop when approaching the line alone or outnumbered — stopping there ends the entry
 Convention: A quick stop is on the IIHF's list of delay movements — but for an attacker already cut off one-on-one, and only where the defender cannot stop as quickly
-Action: Turn away from the pressure and curl back toward the neutral zone, body between defender and puck
-Never: Curl against the wall, where turning puts your back to anyone coming at you. Curl in open ice
+Action: Before the defender can reach you, turn away side-on and curl back toward the neutral zone, body between defender and puck — never your back to them
+Never: Curl against the wall, where turning puts your back to anyone coming at you. Curl in open ice, before they can reach you
 Action: Look back up ice as you curl — eyes to where support is coming from, not to the defender
 Action: Slow the play deliberately for one or two seconds, which is how long late support takes to arrive at speed
 Action: Attack the line again with the puck on whoever has the best angle and the most speed — often not you
 ```
 
 1. Approaching the line alone or outnumbered, **do not stop**. Stopping there ends the entry.
-2. **Turn away from the pressure** and curl away from the line, back toward the neutral zone, protecting the puck with your body between defender and puck.
+2. **Turn away from the pressure** before the defender can reach you, and curl away from the line, back toward the neutral zone, protecting the puck with your body between defender and puck.
 
-   > **One safety override, and it outranks the play.** Curl in open ice, not against the wall. ⚠️ **Never turn your back to anyone coming at you near the wall** — it makes the contact a hit from behind, and USA Hockey's warning is flat: *"Even a light hit from behind could inflict a severe head or neck injury."* Protecting the puck never justifies it.
+   > **One safety override, and it outranks the play.** Curl in open ice before the defender can reach you, not against the wall. ⚠️ **Never turn your back to anyone coming at you** — it makes the contact a hit from behind, in open ice as much as at the wall, and USA Hockey's warning is flat: *"Even a light hit from behind could inflict a severe head or neck injury."* Protecting the puck never justifies it.
 
    **If you are caught at the wall, take the contact properly:** skates parallel to the boards, the hit on your **forearm and hip**, head up and chin off your chest. ⚠️ **Never the point of your shoulder** — USA Hockey's *Introduction To Body Contact* says *"Never hit the boards or glass with the tip of your shoulder – it can cause injury"* — and keep the rest of it off the boards if you can. A tucked chin straightens the neck, and USA Hockey warns that the injury from a head-first hit taken that way *"can occur at walking speed."* [Body Contact and Battles](../technique/body_contact_and_battles.md) has the full treatment.
 3. **Look back up ice** while you curl. Your eyes go to where support is coming from, not to the defender.
@@ -572,24 +572,24 @@ You have converted a bad entry into a **fresh entry with support**. In the numbe
 
 ### Why people don't do it
 
-Because turning away from the offensive zone feels like retreating, and because a delay puts the puck on your stick for an extra second with a defender on your back, which feels dangerous. It is not — **in open ice**, which is exactly why the override above tells you to curl there and not against the wall. Losing the puck at the top of the circles on a forced entry is far worse than losing it in the neutral zone with everyone in front of you.
+Because turning away from the offensive zone feels like retreating, and because a delay puts the puck on your stick for an extra second with a defender on your back, which feels dangerous. It is not, provided you curl **in open ice before the defender can reach you** — which is exactly why the override above tells you to curl there and not against the wall. Losing the puck at the top of the circles on a forced entry is far worse than losing it in the neutral zone with everyone in front of you.
 
 ### When *not* to delay
 
-Delay only when support is genuinely coming, and curl in open ice, never against the wall. With numbers now, take the odd-man rush; if your line is caught out and the bench is calling, get it in deep and change; and **never curl back over the blue line while a teammate is still inside** — they have to get back out before the puck comes back in, or your re-entry is offside.
+Delay only when support is genuinely coming, and curl in open ice before the defender can reach you, never against the wall. With numbers now, take the odd-man rush; if your line is caught out and the bench is calling, get it in deep and change; and **never curl back over the blue line while a teammate is still inside** — they have to get back out before the puck comes back in, or your re-entry is offside.
 
 ```facts
 Read: Numbers now that will be gone in a second — take the odd-man rush instead
 Never: Delay with nobody behind you — a delay only works if support is genuinely coming
 Action: If your line is caught out and the bench is calling, get it in deep and change
 Never: Curl back over the blue line while a teammate is deep in the zone — they have to get back out before the puck comes back in, or your re-entry is offside
-Never: Curl against the wall — curl in open ice. Caught on the boards: forearm and hip, never the point of your shoulder, head up and chin off your chest, and never turn your back to anyone coming at you
+Never: Curl at the wall or within a defender's reach — curl in open ice. On the boards: forearm and hip, not the point of your shoulder, head up, chin off your chest, never your back to anyone coming at you
 ```
 
 - When you have numbers now and they will be gone in a second — take the odd-man rush.
 - When you have nobody behind you at all. A delay only works if support is genuinely coming. If your line is caught out and the bench is calling, get it in deep and change.
 - When a delay would drag you back over the blue line while a teammate is deep in the zone — they have to get back out before the puck comes back in, or your re-entry is offside — and under Hockey Canada, if you carry it back in knowing they are in there, it can be called an intentional offside, with the draw in your own end.
-- **When you are tight to the wall with anyone closing on you.** This limits *how* you curl, not whether: curl into open ice, and if you cannot get off the boards, take the contact rather than turning away into the wall.
+- **When you are tight to the wall with anyone closing on you.** This limits *how* you curl, not whether: curl into open ice before the defender can reach you, and if you cannot get off the boards, take the contact rather than turning away into the wall.
 
 ---
 
@@ -905,13 +905,13 @@ Choose the entry by who is coming with you: **with teammates at the line at spee
 
 ```facts
 Read: Two or more teammates at the line with you, at speed — carry, or pass in
-Read: One teammate arriving late — delay. One second of curl usually converts this into the case above
-Read: With no support at the line, dump to a place someone can get to, or delay if anyone at all is coming, curling into open ice, never turning your back to anyone coming at you near the wall
+Read: One teammate arriving late — delay, curling in open ice before they can reach you. One second of curl usually converts this into the case above
+Read: With no support at the line, dump to a place someone can get to, or delay if anyone at all is coming, curling into open ice before they can reach you, never your back to anyone coming at you
 Never: Dump and change unless genuinely nobody is coming. Even then, recognise you have already lost this shift
 ```
 
 - **Two or more teammates at the line with you, at speed:** carry, or pass in. This is what all the timing work in Section 4 was for.
-- **One teammate, arriving late:** delay. One second of curl usually converts this into the case above.
+- **One teammate, arriving late:** delay, curling in open ice before they can reach you. One second of curl usually converts this into the case above.
 - **Nobody:** dump to a place someone can get to, or delay if anyone at all is coming. If genuinely nobody is coming, put it in deep and change — but recognise you have already lost this shift, because dump-and-change was the worst-valued play in the games where Tulsky's group tracked it.
 
 ### 3. Score and time
@@ -945,7 +945,7 @@ Key: All three thresholds are modelled from one team's tracked games and an assu
 
 ### Carry, dump or delay: the one-sentence version
 
-*Carry if you have the line or the support; chip if they are committing; delay if support is one second away — in open ice, never turning your back to anyone coming at you near the wall; dump only to a place a teammate is already skating to; and never dump and change if you can help it.*
+*Carry if you have the line or the support; chip if they are committing; delay if support is one second away — in open ice, before the defender can reach you, never turning your back to anyone coming at you; dump only to a place a teammate is already skating to; and never dump and change if you can help it.*
 
 ### When the entry fails
 
@@ -1153,7 +1153,7 @@ Everything in Section 2 works for you too:
 - **Overshooting a flip dump, or wasting a clear on the kill.** **Land the flip past the defence and short of the goal line; a man down, take the clear you are entitled to.** A clear released before your penalty expires is not icing however late it lands. Check your book: USA Hockey gives no shorthanded exemption outside Youth 15-Only and above, Girls 16U and above, High School and Adult, and the NHL and PWHL withdraw it while an expiring major leaves nobody to come out of the box. Under the IIHF book British hockey plays, **seat a substitute in the penalty box as soon as a major empties it** — otherwise it is a bench minor.
 - **Arriving at the line early and having to stop.** Be slower thirty feet out and faster at the line.
 - **The puck carrier arriving first.** Arrive first and you are one player against two defenders. As the carrier, reach the line last, with wingers already there at speed and onside.
-- **Never delaying.** Alone at the line, curl back, protect the puck and come again with a teammate. **Curl in open ice, not against the wall**, and if you are caught there, never turn your back to anyone coming at you, and never duck.
+- **Never delaying.** Alone at the line, curl back, protect the puck and come again with a teammate. **Curl in open ice, not against the wall**, before the defender can reach you — never turn your back to anyone coming at you, and never duck.
 - **Blind drop passes.** If you cannot see the trailer, do not drop it. A drop into empty neutral ice is the worst turnover in the game, because your whole team is facing the wrong way.
 - **Skating straight at the puck on the forecheck.** Angle to take away the escape, and arrive on the puck, not the player — never on the back of a defenceman turned to retrieve it, never on anyone who cannot see you coming. Whether you may hit at all is your league's call, and if you can see their numbers, pull up.
 - **Dumping straight behind the net where the trapezoid applies.** Use the corners. Straight behind hands the goalie a legal touch.
@@ -1220,7 +1220,7 @@ document, that is named too.*
 4. **On a delayed offside, tag up together; nobody re-enters until the zone is empty.** ⚠️ **Never close on the defenceman retrieving it:** their back is to you, so it is checking from behind — it ends your game in most books, and is a match penalty in several if they go into the boards or goal frame unable to protect themselves.
 5. **Against two defenders, attack the space between them, head up.** Two sharing a seam have to decide who takes you, and the hesitation is your way in. ⚠️ **The seam is also where both can stand you up**, and under the IIHF book, head down costs you part of your protection against a hit to the head.
 6. **As the carrier, be last to the line, with your support already waiting at it, onside.** **Be slower thirty feet out so your acceleration peaks as the puck crosses**; if you cross and have to slow down, you were early.
-7. **Alone at the line, turn away instead of forcing it — protect the puck, look back up the ice, and come again with support.** **Curl in open ice, not against the wall**, and never turn your back to anyone coming at you there, and never duck.
+7. **Alone at the line, turn away before the defender can reach you instead of forcing it — protect the puck, look back up the ice, and come again with support.** **Curl in open ice, not against the wall**, never turn your back to anyone coming at you, and never duck.
 8. **Never dump without a chaser already going there, and pick the dump to the read** — rim, soft dump, chip past, cross-corner or flip. **Land a flip short of the goal line.** A man down, take the clear you are entitled to, unless your book withholds it.
 9. **Where there is a trapezoid (NHL and IIHF), dump to the corners, not straight behind the net.** Under USA Hockey, Hockey Canada and CARHA, against a PWHL goalie, and in any British competition, plan for the goalie to come out: rim it hard and low, or away from their stick hand — under CARHA, with a backswing under fifteen inches.
 10. **Angle your chase to cut off the easiest escape; take the puck, not the player.** If you see their numbers or they cannot see you, pull up. If their goalie comes out, peel into their passing lane, never into the goalie: ⚠️ **a charge can end your game — under Hockey Canada it is an automatic major and game misconduct, as under CARHA in the crease or if it injures.**

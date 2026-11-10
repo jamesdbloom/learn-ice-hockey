@@ -332,11 +332,11 @@ const delayCurl = {
 
   caption:
     'Arriving at the line alone against two defenders, the carrier does not stop and does not ' +
-    'force it: they turn away from the pressure, curl back toward the neutral zone with their ' +
+    'force it: before the defender can reach them, they turn away from the pressure, curl back toward the neutral zone with their ' +
     'body between the defender and the puck, and buy the one or two seconds their late support ' +
     'needs to arrive at speed. The re-attack that follows is not drawn. ' +
     '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
-    'curl away from the wall, and never turn your back to anyone coming at you near it. ' +
+    'curl away from the wall, and never turn your back to anyone coming at you. ' +
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
     // in its own <p> with a 700 ms break either side -- verified this session by rendering
     // zone_entries.md through md_to_speech.py, chunk 035. Ending it at "never turn your back to
@@ -359,8 +359,9 @@ const delayCurl = {
     // numbers -- the line numbers this note once carried had all moved. Re-grep before
     // trusting any of these as verbatim:
     //   "makes the contact a hit from behind" -- zone_entries.md §5 override blockquote
-    //     ("Never turn your back to anyone coming at you near the wall — it makes the
-    //     contact a hit from behind").
+    //     ("Never turn your back to anyone coming at you — it makes the contact a hit
+    //     from behind, in open ice as much as at the wall"; W232 dropped "near the wall",
+    //     USA Hockey 608 Note reaches open ice too).
     //   "A chin tucked to the chest straightens the cervical spine"
     //     -- body_contact_and_battles.md §6 facts block ("Key:" line).
     //   "if you cannot get off the boards take the contact rather than turning away into them"

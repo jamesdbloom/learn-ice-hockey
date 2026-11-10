@@ -544,7 +544,7 @@ Which pair does which varies. Many teams use their **second** pair as the shutdo
 
 ```facts
 Key: On your on-hand side the outlet up the wall and the D-to-D are on your forehand, and your body shields the puck from the middle
-Technique: Retrieving on your on-hand side lets you turn away from the forecheck; off-hand you turn into the boards or the checker
+Technique: Retrieving on-hand, take it off the wall and turn up ice side-on to the forecheck; off-hand you turn into the boards or the checker. Never your back to anyone coming at you
 Read: At the left point a left shot's blade sits toward the boards — the gain is the puck arriving on your forehand, released in one motion
 Convention: Power-play units deliberately put off-hand defencemen at the points, because the blade is out in the middle for the one-timer
 Key: Defending the rush, on-hand suits keeping a carrier on the wall and off-hand suits taking away the seam — neither is simply better
@@ -556,7 +556,7 @@ A **left shot** holds the stick with the **left hand at the top of the shaft and
 Coaches overwhelmingly try to build pairs of one left shot and one right shot. Why it matters:
 
 - **Zone exits and breakouts.** On your on-hand side, the outlet pass up the wall and the D-to-D pass are on your forehand, and your body shields the puck from the middle. On your off-hand, that same pass is on your backhand or requires a turn into pressure.
-- **Retrievals.** Skating back on your on-hand side lets you take the puck off the wall and turn away from the forecheck. Off-hand, you turn into the boards or into the checker.
+- **Retrievals.** Skating back on your on-hand side lets you take the puck off the wall and turn up ice side-on to the forecheck — shoulder-check first, and never your back to anyone coming at you. Off-hand, you turn into the boards or into the checker.
 - **Blue-line play in the offensive zone.** The geometry is the opposite of what people assume: for a **left shot at the left point, the stick side *is* the boards side.** The on-hand advantage is that a puck coming up the wall **arrives on your forehand**, so you can take it and release it in one motion and **keep it low** for tips and rebounds. The off-hand point man takes it on the backhand and needs a turn, but their blade is out in the middle — which is exactly why power-play units put **off-hand** defencemen at the points for the one-timer.
 - **Angling and defending the rush.** The same geometry runs the other way here. Facing the attack on your on-hand side, your stick is on the **boards** side and your body is toward the middle; on your off-hand side, your stick sits naturally in the **middle** passing lane. Neither is simply better — on-hand suits keeping a carrier on the wall, off-hand suits taking away the seam — but know which one you have, because it decides whether you defend with your stick or with your feet.
 

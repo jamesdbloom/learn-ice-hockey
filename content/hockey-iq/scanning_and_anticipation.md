@@ -50,7 +50,7 @@ Consider two players receiving the same pass on the half-wall — the boards are
 
 **Player A** watches the puck travel toward them the whole way. The puck arrives. *Now* they lift their head, find that a forechecker is two feet away, panic, and throw the puck up the boards into nobody.
 
-**Player B** looked over their inside shoulder while the puck was still being retrieved behind the net, looked again as the passer's head came up, and took a last glance a heartbeat before the puck arrived. They knew about the forechecker before the puck was even passed. They received the puck already turning away from the pressure, and moved it to the support they had seen three seconds earlier.
+**Player B** looked over their inside shoulder while the puck was still being retrieved behind the net, looked again as the passer's head came up, and took a last glance a heartbeat before the puck arrived. They knew about the forechecker before the puck was even passed. They received the puck already turning side-on to the pressure, and moved it to the support they had seen three seconds earlier.
 
 From the bench, Player B looks quicker, calmer and more skilled. Their hands are not better. **They took two or three brief looks, at moments when looking was free.** Copying that costs no fitness, no ice time and no talent.
 

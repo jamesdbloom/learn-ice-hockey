@@ -11,7 +11,7 @@
 
 **Read closing speed, not distance.** A defender three feet away who has overrun you gives you time; one twenty feet away closing hard gives you none. Read their hips: a player accelerates where the hips face.
 
-**When the play ahead is not there, turn away from the closing defender and hold the puck a second or two for support** — a tight turn, puck on the outside, at or inside their blue line. Never in your own end, where a lost puck is a goal against.
+**When the play ahead is not there, curl away from the closing defender before they can reach you, and hold the puck a second or two for support** — a tight turn side-on to them, puck on the far side of your body from them, at or inside their blue line, in open ice and never against the wall; never your back to anyone coming at you. Never in your own end, where a lost puck is a goal against.
 
 **Glide, look, explode.** Separation comes from changing speed, not from top speed: a defender can match a steady pace, and the moment they change speed is when they can least change direction. This is coaching craft, not a measured finding.
 
@@ -53,7 +53,7 @@ Here is the reframe. **Skill is not what makes players good. Skill is what they 
 Key: Skill is what you spend; time and space are what you earn
 Goal: Create time and space with every move — a move that beats nobody and opens nothing is a habit, not a skill
 Action: Grade yourself on the room you had when the puck came to you, not on your hands
-Action: Look over your shoulder before you receive, turn away from pressure, put your stick in a passing lane
+Action: Look over your shoulder before you receive, curl away side-on before pressure can reach you, put your stick in a passing lane
 Mindset: Hockey IQ is a learnable habit, not a mysterious gift — and it is learnable faster than skating
 ```
 
@@ -64,7 +64,7 @@ Take two players with identical hands, shot and top speed, on the same line. One
 Three things follow.
 
 - **Grade yourself on your room, not your hands.** After a shift, ask how much space you had when the puck came to you, and what you did to earn it.
-- **The cheapest improvements are time-and-space ones.** Looking over your shoulder before you receive costs nothing and buys more than a year of stickhandling in the garage. So does turning away from pressure — at or inside their blue line, never in your own end, where you take one look and move it. So does putting your stick in a passing lane.
+- **The cheapest improvements are time-and-space ones.** Looking over your shoulder before you receive costs nothing and buys more than a year of stickhandling in the garage. So does turning away from pressure before it can reach you — side-on, never your back to anyone coming at you, at or inside their blue line, never in your own end, where you take one look and move it. So does putting your stick in a passing lane.
 - **Hockey IQ is not a mysterious gift.** It is the habit of making room for yourself and denying it to others, and it is learnable faster than skating is.
 
 ---
@@ -138,10 +138,10 @@ The [Cutting Edge Ice Academy](https://www.edgeiceacademy.com/article/how-decept
 
 **You have to practise this, because it runs against instinct: every instinct says "go forward."**
 
-The play: you carry into contested ice at or inside their blue line and the option ahead isn't there. Instead of forcing it, **turn away from the pressure** — a tight turn or curl back toward your own end, puck on the outside of the turn — and hold it for a second or two while your support arrives.
+The play: you carry into contested ice at or inside their blue line and the option ahead isn't there. Instead of forcing it, **turn away from the pressure before the defender can reach you**, in open ice and not against the wall — a tight turn or curl back toward your own end, side-on to them, puck on the far side of your body from them, never your back to anyone coming at you — and hold it for a second or two while your support arrives.
 
 ```facts
-Action: At or inside their blue line, turn away from the pressure, curl back, and hold the puck a second or two while support arrives
+Action: At or inside their blue line, in open ice and before the defender can reach you, curl back side-on to them and hold the puck a second or two for support — never your back to them
 Position: The offensive zone and the offensive blue line area — including a zone entry where you are first man in with no support
 Technique: A tight turn with the puck on your outside hip, body between puck and defender, feet still moving
 Goal: Synchronise the play — a forward one stride late becomes a second attacker if you give them a second and a half
@@ -613,7 +613,7 @@ Action: When you spectate, don't watch the puck. Pick one player and watch only 
 Read: Watch a defenceman's gap from the moment the attacker gets the puck — most of it is decided before the attacker reaches the red line
 Action: After every shift, ask "did I have more time than I thought?" — the honest answer is almost always yes
 Key: Panic is the default state of an inexperienced player, and panic spends time you actually had
-Action: Get one more look before you receive, and when you don't know, take the turn away from pressure rather than the pass into it — but in your own end never hold it: one look, one decision, move it
+Action: Get one more look before you receive; unsure, curl away side-on from pressure before it reaches you rather than pass into it — but in your own end never hold it: one look, move it
 Mindset: Trust "time" when you hear it — a teammate or the goalie can see what you can't
 ```
 
@@ -637,7 +637,7 @@ The honest answer, for almost every developing player, is **yes**. Panic is the 
 The fix is not "be braver," which nobody can act on. It is:
 
 - **Get one more look before you receive**, so you know the answer before the puck arrives.
-- **When you don't know, take the turn away from pressure** rather than the pass into it. Delay costs a second; a pass into pressure is a turnover. **Except in your own end**, where holding it is how the turnover happens — one look, one decision, move it.
+- **When you don't know, take the turn away from pressure** — side-on, before it reaches you — rather than the pass into it. Delay costs a second; a pass into pressure is a turnover. **Except in your own end**, where holding it is how the turnover happens — one look, one decision, move it.
 - **Trust "time" when you hear it.** If a teammate or the goalie says nobody's on you, believe them — they can see what you can't. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 Track it for ten games and the habit takes. It is the fastest improvement available to almost any amateur.
@@ -650,7 +650,7 @@ Track it for ten games and the habit takes. It is the fastest improvement availa
 - **Reading distance instead of closing speed.** Read how fast they are closing and where their hips face. Twenty feet closing hard is less time than three feet going the wrong way.
 - **Skating hard the entire shift.** Glide, look, explode. At one speed all shift you have no gear left, no head up, and you are easy to match.
 - **Attacking at a defender instead of into a seam.** Drive the ice between two defenders so they have to decide who takes you. Skate straight at one and they win by standing still.
-- **Turning into pressure instead of away from it.** Turn away so your body is between the defender and the puck. Turn into them and the puck is where they can reach it.
+- **Turning into pressure instead of away from it.** Turn away early, before they can reach you, and side-on to them — hip and backside between the defender and the puck, never your back to anyone coming at you. Turn into them and the puck is where they can reach it.
 - **Delaying in your own defensive zone.** Take one look and move it. Delay is an offensive-zone tool; in your own end it is how goals go in against you.
 - **Scanning after you receive.** As a skater, look while the pass is still travelling. Look after it arrives and you have spent half your time on information that was free.
 - **Breaking into open ice before the carrier can see you.** Break when their head comes up. Break early and you are covered again before they can use you.
@@ -712,7 +712,7 @@ document, that is named too.*
 
 1. **Time and space are hockey's currency, and skill is what you spend.** Time is distance divided by closing speed — a way of thinking, not a measured quantity. Read hips, not distance.
 2. **Show the wrong option, and change speed.** Against a set defender, fake a shot, look off or dip a shoulder — and sometimes really shoot, or nobody buys it. Against one matching your pace, glide, look, explode.
-3. **Buy your time before the puck arrives.** Look over your shoulder while the pass travels. When the play ahead is not there at or inside their blue line, turn away and hold it a second for support — **never in your own end.** ⚠️ **It reverses for the goalie**, who never looks away from a live shot.
+3. **Buy your time before the puck arrives.** Look over your shoulder while the pass travels. When the play ahead is not there at or inside their blue line, turn away before the defender can reach you, side-on, never your back to them, and hold it a second for support — **never in your own end.** ⚠️ **It reverses for the goalie**, who never looks away from a live shot.
 4. **Attack space, not people.** Drive the seam between two defenders and pass to the ice a teammate is skating into. Without the puck, get open with a change of direction, and break when the carrier's head comes up.
 5. **Use behind the net and the boards as pivots.** Behind their net, stop and survey; behind yours under pressure, one look and move it. On the wall, side-on, puck far side, head up — never your back to anyone coming at you, never duck. In their end, protect it until support arrives; on your own wall, move it at once.
 6. **Defending the rush, close your gap early and angle them to the wall; don't chase.** Hold your line, take the puck, not the player. If checking is barred or limited (younger ages, women's hockey, non-contact adult leagues), veering, stepping or gliding into them, adding a hip, shoulder or arm, or pinning them is a penalty; in CARHA, avoid contact altogether.
