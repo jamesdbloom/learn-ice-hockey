@@ -1184,7 +1184,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 6. **Never duck a check — take it head up, knees bent, chin off your chest**: a tucked chin can break your neck against the boards. ⚠️ **Take contact on your side and never turn your back to anyone coming at you, at the wall or in open ice.** Facing the boards? Stick and gloves up on the glass, head off it.
 
-7. **If you can see an opponent's numbers, pull up and play the puck.** ⚠️ **A hit from behind can end your game in every book, and most eject at the first tier.** Under Hockey Canada and CARHA, driving a player who cannot protect themselves into the boards or net is a mandatory match penalty.
+7. **If you can see an opponent's numbers, pull up and play the puck.** ⚠️ **A hit from behind can end your game in every book, and most eject at the first tier.** Under Hockey Canada and CARHA, driving a player who cannot protect themselves into the boards or net is a mandatory match penalty, and under USA Hockey so is a reckless hit from behind with excessive force on a vulnerable or defenceless player (608(c)).
 
 8. **Keep your stick on the puck, your feet out of theirs.** ⚠️ **Most books eject a slew-foot outright; CARHA and Hockey Canada make any cross-check above the shoulders a major and game misconduct (Hockey Canada minor and female hockey: any deliberate one reaching the head or neck).** Under USA Hockey a reckless hook, slash, trip, cross-check or high stick ejects you: plan on a match and a likely multi-game ban.
 

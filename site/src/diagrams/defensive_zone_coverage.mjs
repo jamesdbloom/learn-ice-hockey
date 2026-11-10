@@ -402,7 +402,10 @@ const collapseCorner = {
     'Arrive on the puck, or on the ice the carrier wants, or angle them off it — never into their back. ' +
     // SG207 safety review (8 Nov 2026): the base-shape body carries 'in most books ends your game' but NOT the
     // mandatory Hockey Canada 7.5(c) / CARHA 53(b) match for this exact picture; restored here verbatim from HEAD.
-    'A hit from behind into the boards on a player who cannot protect themselves is a match under Hockey Canada and CARHA. ' +
+    // W236 (10 Nov 2026): USA Hockey 608(c) also makes a match mandatory ("shall be assessed") for a reckless hit
+    // from behind with excessive force on a vulnerable or defenceless opponent; the closed HC/CARHA list understated it.
+    'A hit from behind into the boards on a player who cannot protect themselves is a match under Hockey Canada and CARHA, ' +
+    'and under USA Hockey if it is reckless, with excessive force. ' +
     // ⚠️ 8 November 2026 (1,311 chars): THE BOOK-BY-BOOK TARIFF IS CUT, AND THE PRECONDITION THE
     // NOTE ABOVE SETS FOR CUTTING IT IS NOW MET. That note said the safety unit could go only once it
     // had been "routed into the body of §'The base shape' FIRST". It has been: the 1ea630d4
