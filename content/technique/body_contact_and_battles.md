@@ -374,6 +374,8 @@ Rule: Under Hockey Canada, in minor and female hockey, a lift that catches the h
 
 #### Where the stick lift becomes a penalty
 
+**Lift as the puck arrives, low, and let go.** A lift on a player with no puck on or arriving at their blade plays no puck, and a stick that impedes a player without it can be called hooking or holding, depending on the book. Catching a glove on the way up is slashing or roughing in any of them; yanking the stick down or across is holding the stick.
+
 ```facts
 Never: Lift the stick of a player with no puck on or arriving at their blade — it plays no puck, and can be called hooking or holding. With the puck arriving, lift low and let go at once
 Never: Catch their glove or forearm on the way up, or yank the stick down or across. That is slashing, roughing, or holding the stick
@@ -388,8 +390,6 @@ Rule: Hockey Canada's Interpretation 2 to Rule 4.8(b) counts a double minor as a
 Rule: A Hockey Canada Game Ejection is not a game misconduct and triggers no automatic suspension — Rule 4.8's Note 1 says so in terms, so a third stick minor costs the rest of that game and the book attaches nothing past the final whistle
 Key: Penalties are counted as well as priced — three cheap stick minors are a Game Ejection under Hockey Canada, and the other books run in-game counts of their own
 ```
-
-**Lift as the puck arrives, low, and let go.** A lift on a player with no puck on or arriving at their blade plays no puck, and a stick that impedes a player without it can be called hooking or holding, depending on the book. Catching a glove on the way up is slashing or roughing in any of them; yanking the stick down or across is holding the stick.
 
 **At the hands, every book reaches you, by different routes.** IIHF Rule 55.1, Britain's book, makes it hooking on location alone: *"If the stick goes against the opponent's hands / or near the opponent's hands, it shall be penalized as 'hooking'."* Its very next sentence exempts stick-to-stick contact while checking, and the book does not reconcile the two — but below the bottom hand they never meet. USA Hockey's Rule 623 catches a stick on the hand or arm that *"takes away the ability for the opponent to pass or shoot the puck with a normal amount of force"*. **Hockey Canada wrote an interpretation about this exact technique.** A player may *"lift an opposing player's stick, for the purpose of making a play on the puck"*. But *"if this action contacts the opponent's hands and impedes their ability to pass, shoot, **receive**, or otherwise propel the puck, then a penalty for Hooking must be assessed"* (Interpretation 1 to Rule 8.2(a)). Note *receive*: taking a pass is the commonest moment a lift lands on the hands.
 
@@ -970,6 +970,10 @@ When you go to the wall for a puck with a checker arriving:
 
 ### Get off the wall
 
+The best protection is not being pinned. If you can chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives, you avoid the collision entirely and keep possession.
+
+Two habits make this possible: **know what is around you before the puck arrives** (see [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md)), and **have a plan for the puck before you get there**. Make it a chip, a rim, a reverse, or a spin off the wall, with your head up and never by turning your back to anyone coming at you. Players who arrive at the wall with no plan get pinned. Players who arrive with a plan get out.
+
 ```facts
 Goal: The best protection is not being pinned. Avoid the collision entirely and keep possession
 Options: Chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives
@@ -978,19 +982,15 @@ Action: Have a plan for the puck before you get there — a chip, a rim, a rever
 Key: Players who arrive at the wall with no plan get pinned; players who arrive with a plan get out
 ```
 
-The best protection is not being pinned. If you can chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives, you avoid the collision entirely and keep possession.
-
-Two habits make this possible: **know what is around you before the puck arrives** (see [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md)), and **have a plan for the puck before you get there**. Make it a chip, a rim, a reverse, or a spin off the wall, with your head up and never by turning your back to anyone coming at you. Players who arrive at the wall with no plan get pinned. Players who arrive with a plan get out.
-
 ### Talk
+
+If a teammate is going back for a puck with their head down and pressure coming, the correct call is loud, immediate and specific. "Time!" means you have space. "Man on!" or their name plus "behind you!" means you do not. Only call "time" when you are sure: a false one sends them into a hit unbraced. A player cannot brace for a hit they cannot see, and the call is what gives them the chance to. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ```facts
 Action: Call loud, immediate and specific for a teammate going back with their head down and pressure coming
 Convention: "Time!" means they have space; "Man on!" or their name plus "behind you!" means they do not. Say "time" only when sure, as a false one sends them into a hit unbraced
 Key: The warning is what lets a teammate prepare for contact they would otherwise take blind
 ```
-
-If a teammate is going back for a puck with their head down and pressure coming, the correct call is loud, immediate and specific. "Time!" means you have space. "Man on!" or their name plus "behind you!" means you do not. Only call "time" when you are sure: a false one sends them into a hit unbraced. A player cannot brace for a hit they cannot see, and the call is what gives them the chance to. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ### If it happens anyway — a suspected neck injury on the ice
 
@@ -1083,13 +1083,13 @@ A **board battle** is a contest for a puck against the wall, usually between the
 
 ### Arrive first — and arrive with position, not just speed
 
+The player who gets there first decides where the battle happens. But arriving first with your body in the wrong place is worse than arriving second with it in the right one. What you want at the moment of arrival is your **body between the opponent and the puck**, with the wall on the far side.
+
 ```facts
 Priority: The player who gets there first decides where the battle happens
 Position: Body between the opponent and the puck at the moment of arrival, with the wall on the far side
 Key: Arriving first with your body in the wrong place is worse than arriving second with it in the right one
 ```
-
-The player who gets there first decides where the battle happens. But arriving first with your body in the wrong place is worse than arriving second with it in the right one. What you want at the moment of arrival is your **body between the opponent and the puck**, with the wall on the far side.
 
 ### The wide low base
 
@@ -1111,15 +1111,15 @@ This is the whole technique in three words. Feet wider than shoulders, knees ben
 
 ### Using the wall
 
+The boards are a teammate that never gets tired. Blaine Buterbaugh, assistant hockey director at the Robert Morris University Sports Center, puts it well: "Nobody from outside of the rink is coming to steal your puck... if you can create a little bit of space between you and the boards and use your body to protect that space, you're only worried about 180 degrees, essentially, of people that are trying to steal your puck."
+
+So: put the puck between your skates and the wall, put your body on the outside of it, and you have halved the number of directions you can be attacked from.
+
 ```facts
 Position: Puck between your skates and the wall, your body on the outside of it
 Technique: Create a little space between you and the boards and use your body to protect that space
 Goal: Halve the directions you can be attacked from — with the wall behind you it is only 180 degrees
 ```
-
-The boards are a teammate that never gets tired. Blaine Buterbaugh, assistant hockey director at the Robert Morris University Sports Center, puts it well: "Nobody from outside of the rink is coming to steal your puck... if you can create a little bit of space between you and the boards and use your body to protect that space, you're only worried about 180 degrees, essentially, of people that are trying to steal your puck."
-
-So: put the puck between your skates and the wall, put your body on the outside of it, and you have halved the number of directions you can be attacked from.
 
 ### Working the puck free with your feet
 
@@ -1230,19 +1230,21 @@ The commonest amateur error in the corner is two teammates fighting the same opp
 
 ### You have less room and more escape routes to cover
 
+The corner has boards on two sides, which helps you seal a player but also gives them the option to spin either way — up the wall or out behind the net. Angle the puck carrier so that the escape they have is the one you want them to take: **toward the wall and up, away from the net, never back toward the slot.**
+
 ```facts
 Read: Boards on two sides help you seal, but give them the option to spin either way — up the wall or out behind the net
 Action: Angle the carrier so the escape they have is the one you want them to take — toward the wall and up, away from the net
 Never: Leave them an escape back toward the slot
 ```
 
-The corner has boards on two sides, which helps you seal a player but also gives them the option to spin either way — up the wall or out behind the net. Angle the puck carrier so that the escape they have is the one you want them to take: **toward the wall and up, away from the net, never back toward the slot.**
-
 ![](diagram:corner-escape-routes)
 
 The two escapes the corner gives them are drawn above. The one you are taking away is not drawn, because your body is where it would be.
 
 ### Whose corner is it?
+
+**This is a coaching choice, not a law of hockey.** The default assumed here is a **low zone collapse** (zone-based defensive-zone coverage) with a **2-1-2 forecheck**. Under a low zone collapse, the low corner belongs to the strong-side defenceman with the centre supporting; the wingers stay high covering the points and do **not** come to the corner. Under **man-on-man** coverage, a winger follows their assigned check into the corner and you will get help low — but the point may be left open.
 
 ```facts
 Convention: Whose corner it is is a coaching choice, not a law of hockey. Find out which one your team plays
@@ -1252,8 +1254,6 @@ Options: Under man-on-man, a winger follows their check into the corner and you 
 Key: On the coaching account a defensive-zone breakdown is two players on different assumptions about who had whom, not an effort problem — the cause, not a ranking; nothing public counts breakdowns
 Key: F1/F2/F3 are roles defined by order of arrival, not by position — the first forward to the puck is F1
 ```
-
-**This is a coaching choice, not a law of hockey.** The default assumed here is a **low zone collapse** (zone-based defensive-zone coverage) with a **2-1-2 forecheck**. Under a low zone collapse, the low corner belongs to the strong-side defenceman with the centre supporting; the wingers stay high covering the points and do **not** come to the corner. Under **man-on-man** coverage, a winger follows their assigned check into the corner and you will get help low — but the point may be left open.
 
 **Know which one your team plays.** When a breakdown happens down here, it is almost never that somebody failed to work hard — on the coaching account it is two players operating on different assumptions about who had whom, both skating hard in opposite directions. Nobody publicly counts defensive-zone breakdowns, so that is an account of the cause, not a ranking. [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets it out; see also [Forechecking Systems](../systems/forechecking_systems.md).
 
@@ -1525,6 +1525,8 @@ Equally, ⚠️ **never hold a lane to clear the way for a teammate:** Hockey Ca
 
 ### First to arrive, last to commit
 
+The idea is this: **get there early, then decide late.** A player who arrives at speed with their body already committed to one play — a full-speed reach for the puck, a spin, a blind bank — has given away all their options and is easy to defend. A player who arrives early, slows into a wide balanced stance, and *then* reads the pressure can chip, reverse, protect, or turn up ice as the situation dictates.
+
 ```facts
 Convention: Get there early, then decide late — a coaching heuristic in common use, not a law, with no named originator
 Action: Arrive early, slow into a wide balanced stance, then read the pressure and chip, reverse, protect or turn up ice
@@ -1533,8 +1535,6 @@ Risk: Winning the race and immediately swinging at the puck turns a won race int
 Read: In your own slot, or with an opponent bearing down on you (above all in your own end), there is no beat to wait: take your look on the way in and move it
 Key: Upright, balanced and looking around is far harder to hurt than stretched out at full extension with your head down
 ```
-
-The idea is this: **get there early, then decide late.** A player who arrives at speed with their body already committed to one play — a full-speed reach for the puck, a spin, a blind bank — has given away all their options and is easy to defend. A player who arrives early, slows into a wide balanced stance, and *then* reads the pressure can chip, reverse, protect, or turn up ice as the situation dictates.
 
 The failure it is designed to prevent is specific: a player wins the race, immediately swings at the puck, misses it or shoots it into a shin pad, and turns a won race into a turnover. Arriving early and then taking body position and **waiting a beat** is very often the better play, because your support is still arriving and every tenth of a second improves your options. Its limit is equally specific: in your own slot, or with an opponent bearing down on you (above all in your own end), there is no beat to wait. Take your look on the way in, then move it.
 
@@ -1561,6 +1561,8 @@ Everything in Section 6 applies at exactly this moment, because puck races to th
 
 ### Chipping and the escape
 
+The highest-value skill in a 50-50 race is the one-touch: arriving and immediately putting the puck somewhere useful — chipped past the defender to your own speed, banked off the wall to a teammate, or rimmed around. It converts a coin flip into a possession, and it takes you out of the collision.
+
 ```facts
 Technique: The one-touch — arrive and immediately put the puck somewhere useful
 Options: Chip it past the defender to your own speed, bank it off the wall to a teammate, or rim it around
@@ -1568,8 +1570,6 @@ Goal: Convert a coin flip into a possession, and take yourself out of the collis
 Read: Rim when a checker is sealing you against the wall; reverse when one has over-committed and skated past you
 Action: Pick by the checker's momentum, and pick before you arrive
 ```
-
-The highest-value skill in a 50-50 race is the one-touch: arriving and immediately putting the puck somewhere useful — chipped past the defender to your own speed, banked off the wall to a teammate, or rimmed around. It converts a coin flip into a possession, and it takes you out of the collision.
 
 **Rim and reverse are opposite plays and they are chosen by where the pressure is, so do not treat them as the same escape.** A **rim** sends the puck *onward* around the boards, with the flow of play, and beats a checker who is sealing you against the wall. A **reverse** sends it *back against* the flow, into the ice the checker has just left, and beats one who has over-committed and skated past you. Pick by the checker's momentum, and pick before you arrive.
 
@@ -1713,6 +1713,8 @@ Under USA Hockey, read a butt-end hook as **Rule 606**, butt-ending, not hooking
 
 #### Holding, and the arm you are allowed
 
+**Use your free arm only as your book allows it — and never to hold.** NHL and IIHF 56.1 let a free hand *"fend off"* an opponent or their stick, but it *"may not be used to hold an opponent's stick or body."* NHL 54.2, IIHF 54.2, PWHL 55.2 and Hockey Canada 8.1 share the strength-move arm word for word: *"A player is permitted to use their arm in a strength move, by blocking their opponent, provided they have body position and are not using their hands in a holding manner, when doing so."* Hockey Canada 8.1 also lets players *"block an opponent's stick with their hands, arms, or body"* — but not hold it. ⚠️ **USA Hockey and CARHA write no strength-move sentence at all.**
+
 ```facts
 Rule: Holding is the free hand used to hold, pull, tug or grab — you may fend off, not hold (NHL and IIHF 56.1); Hockey Canada 8.1 permits a hand to block an opponent's stick, never to hold it
 Rule: USA Hockey writes the fend-off permission in its Casebook only — control the puck (Standard of Play Situation 6), or be reaching for it while physically engaged in a corner or in front of the goal (Situation 7); keep a position legally established, and never push off to create space
@@ -1723,8 +1725,6 @@ Rule: USA Hockey 602(a) needs no named foul — a match penalty for recklessly e
 Rule: Never touch an opponent's facemask — PWHL 51.3 and 51.5, USA Hockey 622(b): a major and game misconduct; in USA Hockey a match and a likely multi-game ban if reckless (622(c), 602(a)); NHL and IIHF 75.2 a minor a referee can take to Rule 21, and NHL 21.1 a match if meant to injure
 Rule: Hockey Canada 7.1 and CARHA 48(d) (CARHA-affiliated adult leagues) file a facemask grab under attempt to injure — a double minor at least, and a match where used for advantage, punishment or injury; Hockey Canada adds a major and game misconduct, mandatory on injury, and a match for a violent grab
 ```
-
-**Use your free arm only as your book allows it — and never to hold.** NHL and IIHF 56.1 let a free hand *"fend off"* an opponent or their stick, but it *"may not be used to hold an opponent's stick or body."* NHL 54.2, IIHF 54.2, PWHL 55.2 and Hockey Canada 8.1 share the strength-move arm word for word: *"A player is permitted to use their arm in a strength move, by blocking their opponent, provided they have body position and are not using their hands in a holding manner, when doing so."* Hockey Canada 8.1 also lets players *"block an opponent's stick with their hands, arms, or body"* — but not hold it. ⚠️ **USA Hockey and CARHA write no strength-move sentence at all.**
 
 **USA Hockey writes its fend-off in the Casebook, in two situations.** Standard of Play **Situation 6** lets a player *"in control of the puck"* use a free hand to *"maintain body position that they legally established"*, but *"if they grab the stick, sweater or arm of the opponent, or use the free arm to push off and create space, a penalty should be assessed."* **Situation 7** needs no puck. Where two players are *"physically engaged in the corner or in front of the goal"*, a player may take a hand off the stick *"when reaching for the puck and using the free arm to steer the opponent or maintain position"*. That stops when *"the free arm is used to impede the opponent, pushes off with enough force to knock the opponent off of the puck or create space."* It is written for the corner and the goal front, not open ice. The holding rules themselves are **Rule 54** (NHL and IIHF), **622** (USA Hockey, which names clutching or holding the stick outright), **55** (PWHL) and **8.1** (Hockey Canada).
 
@@ -1754,6 +1754,8 @@ The NHL and IIHF books leave it unresolved: 57.1 in each bars causing an opponen
 
 #### The stick above the shoulders
 
+**Keep your stick below every opponent's shoulders, whatever their height.** The NHL book now tests what the stick *touched*: its 60.1 reads *"A 'high stick' is one which contacts an opponent above the shoulders, provided their shoulders are at waist level or higher"*, and 60.3 adds *"(above the height of the opponent's waist)"*. The **IIHF Official Rulebook 2026/27** writes the same, but the **2025/26 (Version 1.1)** book tests a stick *carried* above the opponent's shoulders, with no waist wording anywhere in Rule 60. **Which is yours in Britain is worth asking**: the IHUK In-House Rules 2026-27 name *"the latest IIHF Official Rule Book (Version 1.1, published July 2025)"*, which is the 2025/26 book, while the EIHL Casebook names the 2026/27 one. **USA Hockey 621 and Hockey Canada 9.5 write no waist floor at all.**
+
 ```facts
 Rule: The windup and follow-through carve-out is the NHL's, the IIHF's and the PWHL's only (60.1; PWHL 61.1 — all three exclude a wild swing at a bouncing puck) — USA Hockey writes none in its playing rules or its Casebook
 Rule: Hockey Canada's follow-through rule is junior and senior only — Interpretation 1 to 9.5(a) is written for those divisions alone. In minor and female hockey the same contact is Rule 7.6 Head Contact, with no stick height in the test
@@ -1765,8 +1767,6 @@ Rule: Hockey Canada 9.5 is "High-Sticking – Junior/Senior", and it bars its ow
 Technique: Take the stick lift under the shaft and low against an opponent bent low over the puck — the shaft is nearer their face than it looks, and a lift that misses rides up into it
 Priority: Where USA Hockey's playing rule and its Casebook disagree, take the wider reading — it is the only one safe under both, and a stick landing below the shoulders can still be high-sticking
 ```
-
-**Keep your stick below every opponent's shoulders, whatever their height.** The NHL book now tests what the stick *touched*: its 60.1 reads *"A 'high stick' is one which contacts an opponent above the shoulders, provided their shoulders are at waist level or higher"*, and 60.3 adds *"(above the height of the opponent's waist)"*. The **IIHF Official Rulebook 2026/27** writes the same, but the **2025/26 (Version 1.1)** book tests a stick *carried* above the opponent's shoulders, with no waist wording anywhere in Rule 60. **Which is yours in Britain is worth asking**: the IHUK In-House Rules 2026-27 name *"the latest IIHF Official Rule Book (Version 1.1, published July 2025)"*, which is the 2025/26 book, while the EIHL Casebook names the 2026/27 one. **USA Hockey 621 and Hockey Canada 9.5 write no waist floor at all.**
 
 **And the waist that counts is the waist of the player you hit, not yours.** The **IIHF Situation Handbook 2026/27** answers the bent-over case at **Situation 60.13**, which [§3](#where-the-stick-lift-becomes-a-penalty) sets out: *"The key here is that the opposing player was hit in the neck/face/head with the opponent's stick, at or above the height of the waist of the player being struck."* Under the 2025/26 IIHF book a bent-over opponent is caught more simply still, because Rule 60 there sets no floor. **So a stick below your own waist is a defence in no book** — which is why the [§3](#the-stick-lift) lift on a bent-over opponent goes under the shaft and low, or not at all.
 

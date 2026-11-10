@@ -22,6 +22,8 @@
 
 ## Overview
 
+You are the link between the other four skaters: you play the middle of the ice in all three zones, and your job moves with the puck. A winger owns a lane and a defenceman owns an end; you own the space between them. That is why a centre's instructions vary more from team to team than anyone else's.
+
 ```facts
 Convention: Low support on the breakout belongs to the swing breakout, a coaching choice — too high and your defenceman has no outlet, too wide and one opponent covers you and your winger; under a centre fly you leave early up the middle instead
 Key: Coming back, the forward arriving late and unmarked behind the puck carrier is usually more dangerous than the carrier — coaching emphasis rather than a counted ranking
@@ -32,8 +34,6 @@ Key: Prepare the draws that matter — computed from NHL official statistics, te
 Convention: "The centre skates the furthest" is coaching craft — no study separates centres from wingers on distance, though the NHL publishes per-skater distance against a position code, so the comparison is unrun rather than impossible
 Key: Measured, the workload belief reverses — Lignell 2018, 36 NHL players: defencemen skated 29% more in total than forwards and 47% longer on the ice; forwards 54% more high-intensity skating per minute
 ```
-
-You are the link between the other four skaters: you play the middle of the ice in all three zones, and your job moves with the puck. A winger owns a lane and a defenceman owns an end; you own the space between them. That is why a centre's instructions vary more from team to team than anyone else's.
 
 **Getting below the puck is the base of all your own-end work.** Too high, and your defenceman has no safe outlet and the shift starts in your own end. Too wide, out on the boards, and one opponent covers you and your winger at once. **That low support belongs to the swing breakout, which is a coaching choice.** Under a **centre fly** you leave early up the middle and the weak-side winger drops in to do the low job; under a **flat or spread breakout** both wingers hold higher and the exit uses longer passes. The commonest breakdown is a centre flying while the wingers hold high, which leaves nobody under the puck. [Breakouts](../systems/breakouts.md) is the authority.
 
@@ -67,6 +67,8 @@ The centre is normally given the most demanding defensive role among the forward
 
 ### Defensive Zone: Carrying the Puck — Free Space
 
+**Where to be:** Low in the defensive zone, below the hash marks, swinging toward the puck. (Hash marks are the small alignment marks on the sides of the faceoff circles, roughly level with the faceoff dot. "Below" means in the area between them and the goal line.)
+
 ```facts
 Position: Low in the defensive zone, below the hash marks, swinging toward the puck — the conventional swing breakout; under a centre fly you leave early up the middle instead
 Action: Receive the puck from your defenceman and immediately look to exit the zone
@@ -74,8 +76,6 @@ Options: Carry up the middle if the lane is clearly open, or distribute to a win
 Goal: Be the reliable outlet that starts the breakout and gets the puck out of the zone
 Key: On the conventional swing breakout your low positioning is what gives the defencemen a safe pass — if you don't swing low, they are stuck with the puck under pressure
 ```
-
-**Where to be:** Low in the defensive zone, below the hash marks, swinging toward the puck. (Hash marks are the small alignment marks on the sides of the faceoff circles, roughly level with the faceoff dot. "Below" means in the area between them and the goal line.)
 
 **What to do:** Receive the puck from your defenceman and immediately look to exit the zone. Carry up the middle if the lane is clearly open, or distribute to a winger on the boards. Your movement low in the zone is what makes the breakout (your team's controlled exit from the defensive zone) work.
 
@@ -196,6 +196,8 @@ The transition zone is where the centre connects defence and attack.
 
 ### Neutral Zone: Carrying the Puck — Free Space
 
+**Where to be:** Through the middle of the ice, leading or driving the rush.
+
 ```facts
 Position: Through the middle of the ice, leading or driving the rush
 Action: Carry with pace through the centre of the ice and distribute to the best option
@@ -206,8 +208,6 @@ Never: Carry for its own sake. If a teammate is in a better position, move the p
 Never: Carry through the middle with your head down — you cannot brace for a hit you cannot see
 Rule: Head up under every book: IIHF Rule 48.1 does not call a square, no-upward check on a carrier skating head down at the hitter a head hit — it can still be charging, and is illegal wherever checking is barred — and NHL 48.1(ii) and PWHL 48.3(i) weigh that posture against you
 ```
-
-**Where to be:** Through the middle of the ice, leading or driving the rush.
 
 **What to do:** Carry with pace through the centre of the ice. Read the play — if a winger is open, pass and let them enter in stride. If you have space, carry through yourself. Distribute to the best option and keep the play moving at speed.
 
@@ -223,6 +223,8 @@ No book fully protects a head-down carrier. The IIHF's — the British reader's 
 
 ### Neutral Zone: Carrying the Puck — Under Pressure
 
+**Where to be:** Through the middle, or shifting to the boards if the middle is congested.
+
 ```facts
 Position: Through the middle, or shifting to the boards if the middle is congested
 Action: Move the puck to a winger or chip it off the boards
@@ -231,8 +233,6 @@ Risk: Coaching material puts the making of odd-man rushes in the middle third �
 Priority: Quick decision-making is worth more than individual skill here — keep it simple and get the puck to the outside
 Goal: Maintain possession through the neutral zone or safely advance the puck
 ```
-
-**Where to be:** Through the middle, or shifting to the boards if the middle is congested.
 
 **What to do:** If pressured in the middle of the neutral zone, move the puck to a winger or chip it off the boards. Don't try to carry through heavy traffic in the middle: coaching material puts the making of **odd-man rushes** — attacks where the attackers outnumber the defenders coming back, like a 2-on-1 or a 3-on-2, and a high-danger scoring chance — in the middle third of the ice. **That is coaching consensus rather than a tracked figure**: no public data classifies an odd-man rush by the play that created it. Quick decision-making is more valuable than individual skill here.
 
@@ -246,6 +246,8 @@ Goal: Maintain possession through the neutral zone or safely advance the puck
 
 ### Neutral Zone: Pressuring an Opponent with the Puck
 
+**Where to be:** In the middle of the neutral zone. You are the primary forechecker here — the closest forward to the puck initiates pressure, and that is usually you.
+
 ```facts
 Position: In the middle of the neutral zone — the closest forward initiates pressure, and that is usually you
 Action: Drive at the puck carrier under control, stick on the puck and not the body, or cut off the centre lane to force them wide
@@ -255,8 +257,6 @@ Convention: How hard you press is your team's neutral-zone system, not a law —
 Action: Find out which neutral-zone system your team plays and what the call is for switching — most teams run more than one
 Key: If you don't initiate pressure, the opponent gets a free run at your defencemen
 ```
-
-**Where to be:** In the middle of the neutral zone. You are the primary forechecker here — the closest forward to the puck initiates pressure, and that is usually you.
 
 **What to do:** Drive at the puck carrier to disrupt their advance, or cut off the centre lane to force them wide. The wingers support by blocking passing lanes on their sides, and the defencemen maintain their gap at the blue line. Step up to challenge when the opportunity is clear; otherwise, deny the middle and force the play to the boards. When you do step up, arrive under control and go for the puck with your stick, not the carrier's body: a run-up at them can be charging at any stride count, and in a non-checking division a hit is a penalty.
 
@@ -409,6 +409,8 @@ The defencemen hold the blue line at the points. These are **roles, not people**
 
 #### The trapezoid, and their goalie as a puck-handler
 
+**The trapezoid works in your favour here.** Under NHL and IIHF rules the opposing goalie may only play the puck behind their goal line inside the marked trapezoid, so they cannot come out to the corner and calmly move a dumped puck — a defenceman has to, with you arriving on them. That is exactly why dump-and-chase works, so aim your dump-ins away from the trapezoid. The rule writes one exception, a goalie playing the puck *"while maintaining skate contact with"* the crease (NHL Rule 27.8; IIHF Rule 27.7). ⚠️ **The IIHF *Situation Handbook* adds two more, both narrow:** a puck stopped **on** the goal line is not in the restricted area (Situation 27.6), and a puck that merely hits a retreating goalie is not one they played (27.9). **Neither moves where you aim** — they only tell you not to expect a whistle every time their goalie touches a puck out there.
+
 ```facts
 Rule: Under NHL and IIHF rules the opposing goalie may play the puck behind the goal line only inside the trapezoid — the rules write one exception, skate contact with the crease; the IIHF Situation Handbook adds two more, at Situations 27.6 and 27.9 (NHL 27.8; IIHF 27.7)
 Rule: USA Hockey, Hockey Canada and CARHA print no trapezoid, and the PWHL drops it in 1.8 and 27.8 though its 65.2(viii) keeps the minor, so their goalie can retrieve your dump-in and the dump-and-chase is worth much less — check your book, and whether your rink has the lines painted
@@ -418,8 +420,6 @@ Rule: The restricted area is IIHF Rule 27.7; nothing in the Elite League's Caseb
 Action: Aim dump-ins away from the trapezoid so a defenceman must retrieve the puck with you arriving — how much rec and youth hockey marks one is a question about leagues, and this document has no count
 Action: If their goalie comes out for your dump-in, pull up and take the lane they want to pass into — never finish on a goalie
 ```
-
-**The trapezoid works in your favour here.** Under NHL and IIHF rules the opposing goalie may only play the puck behind their goal line inside the marked trapezoid, so they cannot come out to the corner and calmly move a dumped puck — a defenceman has to, with you arriving on them. That is exactly why dump-and-chase works, so aim your dump-ins away from the trapezoid. The rule writes one exception, a goalie playing the puck *"while maintaining skate contact with"* the crease (NHL Rule 27.8; IIHF Rule 27.7). ⚠️ **The IIHF *Situation Handbook* adds two more, both narrow:** a puck stopped **on** the goal line is not in the restricted area (Situation 27.6), and a puck that merely hits a retreating goalie is not one they played (27.9). **Neither moves where you aim** — they only tell you not to expect a whistle every time their goalie touches a puck out there.
 
 **Find out whether your league has a trapezoid at all.** USA Hockey, Hockey Canada and CARHA print none, and the PWHL switches it off (Rules 1.8 and 27.8) while its Rule 65.2(viii) still writes the minor, so that book contradicts itself. Against a goalie who can play the corner, dump-and-chase is worth much less. **How much rec, beer-league and youth hockey that covers is a question about leagues, and this document has no count for it**, so look behind the net and ask.
 
@@ -469,6 +469,8 @@ Key: Keep moving to get open, and slide with the point man as they walk the line
 
 #### Keep your body out of the crease
 
+You are in the goalie's kitchen more than anyone except a net-front winger, and playing too timidly here costs you goals. **Work just outside the blue paint, off the red crease line rather than on it. Screen hard, keep your stick free for tips, keep your body out of the crease, and never crowd the goalie so tightly they cannot move.** A screen from outside the crease is one of the most valuable things you do.
+
 ```facts
 Rule: Contact you initiate with a goalie in their crease kills the goal (NHL and IIHF 69.3 — the IIHF's "a relevant contact" means any contact, 69.1), and the NHL's own sentence signposts the exception — "(refer to Rule 69.7 for an exception)"
 Rule: NHL and IIHF 69.7 and PWHL 71.7 allow a goal after "incidental contact" with the goalie on a rebound or a loose puck you both play, "whether inside or outside the crease". The EIHL Casebook disallows a goal for contact in the blue paint; Hockey Canada, USA Hockey and CARHA write no such carve-out
@@ -479,8 +481,6 @@ Rule: NHL and IIHF 69.4 protects a goalie who has played the puck outside the cr
 Rule: Under USA Hockey your stick in the paint costs the goal too, both skates outside, while the goalie is in the crease (Casebook 625 Sit. 10)
 Never: Lean on or arrive into the goalie, in or out of the crease — leaning is a penalty in every book; a charge can end your game in every book, and always does under Hockey Canada or, in the crease, CARHA
 ```
-
-You are in the goalie's kitchen more than anyone except a net-front winger, and playing too timidly here costs you goals. **Work just outside the blue paint, off the red crease line rather than on it. Screen hard, keep your stick free for tips, keep your body out of the crease, and never crowd the goalie so tightly they cannot move.** A screen from outside the crease is one of the most valuable things you do.
 
 ![](diagram:oz-net-front-screen)
 
@@ -620,14 +620,14 @@ Don't get pulled out of position chasing the puck around the perimeter, block sh
 
 #### Blocking shots on the kill
 
+**Taking a shooting lane away means a puck can hit you, so take it properly.** Be in the lane *before* the shot rather than sliding into it, block from close and on your feet, square to the shooter, head out of the lane and hands behind your body with the backs of the gloves out. **Never lead with your stick** — keep it flat on the ice beside you or out of the lane, because a puck off an outstretched blade tends to go upward, into your face (coaching craft, not a measured finding). **If you go down**, go down toward the shooter rather than sideways, hands behind your body or tucked in behind your shin pads — and **never from in front of your own goalie's eyes**, where all you do is deflect a puck they never saw.
+
 ```facts
 Technique: Take a lane before the shot, close and on your feet, head out of it, hands behind your body, stick flat beside you and never leading — and never in front of your own goalie's eyes
 Never: Block the shot on a 2-on-1 — as the lone defender back your job is the pass and your goalie has the shooter; the full list of when not to block is in Defender and Body Contact and Battles
 Never: Use your hands on a blocked puck that dies under you — using them to make it unplayable is a minor, and in your own crease a penalty shot
 Convention: How much your team blocks at all is a coaching choice, not a law — some teams want aggressive blocking, others want the lane taken away while you stay on your feet so the goalie sees everything. Find out which yours plays, ask your coach which they want, and ask your goalie what they want
 ```
-
-**Taking a shooting lane away means a puck can hit you, so take it properly.** Be in the lane *before* the shot rather than sliding into it, block from close and on your feet, square to the shooter, head out of the lane and hands behind your body with the backs of the gloves out. **Never lead with your stick** — keep it flat on the ice beside you or out of the lane, because a puck off an outstretched blade tends to go upward, into your face (coaching craft, not a measured finding). **If you go down**, go down toward the shooter rather than sideways, hands behind your body or tucked in behind your shin pads — and **never from in front of your own goalie's eyes**, where all you do is deflect a puck they never saw.
 
 **How much your team blocks at all is a coaching choice, not a law** — some teams want you blocking aggressively, others want the lane taken away while you stay on your feet so the goalie sees everything. Find out which yours plays: ask your coach, and ask your goalie what they want. **And never block the shot on a 2-on-1** — as the lone defender back your job is the pass, and your goalie has the shooter. [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) own the technique and the full list of when *not* to block. If the puck dies under you, keep your hands off it: using them to make it unplayable is a minor, and in your own crease a penalty shot. What [a puck under you](#holding-the-puck) costs comes later, in What it costs.
 
@@ -696,14 +696,14 @@ If you are the last forward back and your defence is outnumbered, the priority i
 
 ### Line Changes
 
+**Change on your legs, and go first.** The centre's route covers more of the ice than either winger's and the centre fades first — **coaching craft rather than a measured finding** — so a line that changes as a group should change on *your* legs: call it and go, and the wingers follow you off. Don't change into an offensive-zone faceoff you are needed to take, and after your own icing don't start drifting toward the bench where your line cannot change. What [your own icing](#after-your-own-icing) costs comes later, in What it costs.
+
 ```facts
 Action: When the line changes as a group you go off first — call it, and the wingers follow you
 Convention: A line that changes as a group changes on the centre's legs, because the centre fades first — coaching craft rather than a measured finding
 Never: Change into an offensive-zone faceoff you are needed to take
 Key: Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are all in Game Management
 ```
-
-**Change on your legs, and go first.** The centre's route covers more of the ice than either winger's and the centre fades first — **coaching craft rather than a measured finding** — so a line that changes as a group should change on *your* legs: call it and go, and the wingers follow you off. Don't change into an offensive-zone faceoff you are needed to take, and after your own icing don't start drifting toward the bench where your line cannot change. What [your own icing](#after-your-own-icing) costs comes later, in What it costs.
 
 Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are all in [Game Management](../systems/game_management.md).
 

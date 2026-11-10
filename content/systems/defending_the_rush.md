@@ -82,6 +82,8 @@ The practical conclusion: **preventing a rush chance is worth far more than defe
 
 ## The Organising Idea: Stay on the Defensive Side of the Puck
 
+**Be between the puck and your net. Always. Every attacker, all the time.**
+
 ```facts
 Key: Be between the puck and your net — every attacker, all the time
 Position: On the line between your opponent and your own goal, which is what "defensive side" or "goal side" means
@@ -89,8 +91,6 @@ Risk: An attacker between you and your net has already gone wrong; everything af
 Key: "Don't get beat wide" and "don't get beat to the middle" are the same instruction
 Read: When a rush goes wrong and you are not sure why, somebody lost the defensive side of somebody
 ```
-
-**Be between the puck and your net. Always. Every attacker, all the time.**
 
 "Defensive side" — sometimes called **goal side** — means you are on the line between your opponent and your own goal. Anything that puts an attacker between you and your net has already gone wrong, and everything after that point is damage control.
 
@@ -183,6 +183,8 @@ Distances are a guide, not a law, and they vary with your backward speed and the
 
 ### Read the chest and hips, not the puck, the hands or the head
 
+A skilled attacker will fake with everything they can move. The puck, the stick blade, the hands, the shoulders, the head, the eyes — all of these are **deception tools**, and all of them can lie.
+
 ```facts
 Read: The chest and hips cannot lie — the torso has to point where the body mass is actually going
 Key: The puck, blade, hands, shoulders, head and eyes are all deception tools, and all of them can lie
@@ -190,8 +192,6 @@ Action: Fix your eyes on the numbers on the front of their jersey and use periph
 Read: A dangle that doesn't move the hips is not a dangle — if the chest stays square they have gone nowhere
 Never: Watch the puck — your feet follow your eyes, and your eyes have just been sent the wrong way
 ```
-
-A skilled attacker will fake with everything they can move. The puck, the stick blade, the hands, the shoulders, the head, the eyes — all of these are **deception tools**, and all of them can lie.
 
 Their **chest and hips cannot lie.** Their torso has to point where their body mass is actually going. Watch the middle of them, and use your peripheral vision for the puck.
 
@@ -203,6 +203,8 @@ Practically:
 
 ### Stick on the ice, out front, in the passing lane
 
+Your stick is a passive weapon. Used well it removes options without committing your body.
+
 ```facts
 Key: Your stick is a passive weapon — used well it removes options without committing your body
 Position: Blade flat on the ice, out in front, in the lane between the carrier and their most dangerous support option
@@ -211,8 +213,6 @@ Action: Poke check only when you can reach the puck, not as a hope
 Never: Telegraph the poke check. Hide it until you use it instead, or they pull the puck back and go around your reach
 Risk: A missed poke check becomes a lever the attacker skates around, and often a hooking or tripping penalty
 ```
-
-Your stick is a passive weapon. Used well it removes options without committing your body.
 
 - **Blade flat on the ice**, out in front of you, in the lane between the carrier and their most dangerous support option.
 - **One hand on the stick** for reach when you need it, two hands when you need control — but never with the blade in the air. A stick off the ice defends nothing.
@@ -267,6 +267,8 @@ So do not line up chest-to-chest with the carrier. Position yourself slightly to
 
 ### Pivot late
 
+At some point you must turn and skate forwards with them. Delay that moment as long as you possibly can.
+
 ```facts
 Action: Delay the moment you turn and skate forwards with them as long as you possibly can
 Risk: Once you pivot to forwards you can no longer react, and a change of direction beats you
@@ -274,8 +276,6 @@ Technique: Hips lead the pivot, not shoulders — turning your upper body first 
 Convention: Pivot to the boards side rather than the middle — a default, not a rule; if beaten, be beaten toward the wall
 Read: Some coaches want a middle pivot when turning away would take your eyes off the puck, or when you have inside help
 ```
-
-At some point you must turn and skate forwards with them. Delay that moment as long as you possibly can.
 
 - Once you pivot to forwards, **you can no longer react** — you are committed to their current direction, and a change of direction beats you.
 - **Hips lead the pivot, not shoulders.** Turning your upper body first opens the gate before your feet are ready.
@@ -357,6 +357,10 @@ Chasing an attacker from behind their shoulder is not backchecking — it is jog
 
 ### Skate first, then look
 
+The instinct on a turnover is to turn your head and watch what happens. That costs you two strides you never get back.
+
+**Turn and sprint first. Look on the third or fourth stride.** The picture will still be there when you look up, and you will be five metres further into the play — an illustrative figure rather than a measured one. Full-speed backchecking is a conditioning issue as much as a hockey one — see [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md).
+
 ```facts
 Action: Turn and sprint first, and look on the third or fourth stride
 Never: Turn your head to watch what happens on a turnover — it costs you two strides you never get back
@@ -364,11 +368,9 @@ Key: The picture will still be there when you look up, and you will be five metr
 Mindset: Full-speed backchecking is a conditioning issue as much as a hockey one
 ```
 
-The instinct on a turnover is to turn your head and watch what happens. That costs you two strides you never get back.
-
-**Turn and sprint first. Look on the third or fourth stride.** The picture will still be there when you look up, and you will be five metres further into the play — an illustrative figure rather than a measured one. Full-speed backchecking is a conditioning issue as much as a hockey one — see [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md).
-
 ### Do not decide mid-rush to chase the puck carrier when your D has them
+
+If a defenceman is already engaged with the carrier and playing a good gap, sprinting in to help them is worse than useless — it leaves your actual assignment unmarked and puts two defenders on one attacker.
 
 ```facts
 Never: Decide mid-rush to sprint in and help a defenceman who is already engaged with the carrier and playing a good gap
@@ -379,8 +381,6 @@ Options: Some teams run the opposite by design — the first forward back pressu
 Never: Turn that pressure into a hit from behind — where pressuring the carrier is your system it is your feet and your stick, and nothing else
 Key: Under either system somebody has the carrier and somebody has the unmarked man, and it is agreed before the rush rather than during it
 ```
-
-If a defenceman is already engaged with the carrier and playing a good gap, sprinting in to help them is worse than useless — it leaves your actual assignment unmarked and puts two defenders on one attacker.
 
 **Your job as a backchecker is the player nobody has.** Skate past the puck battle to the unmarked man. Trusting your defenceman to win their own 1-on-1 is a skill, and it is what turns a 3-on-2 into three 1-on-1s.
 
@@ -418,6 +418,8 @@ That failure is the reason to ask the follow-up question. Teams that run it well
 
 #### What hounding never means
 
+**What hounding never means.** You are arriving at speed behind a player skating toward their own end boards — or across the front of their own net, which the checking-from-behind rules name in the same words — the geometry those rules exist for. ⚠️ **Take the puck, take the ice, or angle them off it — never finish into their back.** A forceful hit into a player's back at the wall ends your game in five of six books — under Hockey Canada, while it stays off their head — and under the IIHF, plan on it. ⚠️ **Into the boards or the net on a player who cannot protect themselves it is a mandatory match** under Hockey Canada (7.5(c)) and CARHA (53(b)), and a match keeps you out of later games until your case is dealt with (Hockey Canada 4.10(a), CARHA 34(a), CARHA-affiliated adult leagues only).
+
 ```facts
 Never: Finish into the back of a carrier heading for their own end boards. Take the puck, take the ice, or angle them off it instead, whichever book you are under
 Rule: A forceful hit into a player's back at the wall ejects you in five of six books (Hockey Canada: off the head); under the IIHF plan on it — NHL, PWHL and IIHF write no minor (43.2); meant to injure, a match in all but the IIHF; in USA Hockey reckless too, either way a likely multi-game ban (602(a))
@@ -430,8 +432,6 @@ Rule: In the WNIHL, play it as no body checking — its rules of competition say
 Rule: In Britain the answer is in the competition regulations, not the IIHF book — IHUK’s 2026-27 Rules of Competition set U10 and U12 non-checking, U14, U16, U19 and adult NIHL "Full ice, checking", and WNIHL non-checking; the U10 book says "Bodychecking is NOT allowed in U10 matches"
 Never: Turn hounding into contact where you may not body check at all — it is your feet, your stick and your angle, and nothing else
 ```
-
-**What hounding never means.** You are arriving at speed behind a player skating toward their own end boards — or across the front of their own net, which the checking-from-behind rules name in the same words — the geometry those rules exist for. ⚠️ **Take the puck, take the ice, or angle them off it — never finish into their back.** A forceful hit into a player's back at the wall ends your game in five of six books — under Hockey Canada, while it stays off their head — and under the IIHF, plan on it. ⚠️ **Into the boards or the net on a player who cannot protect themselves it is a mandatory match** under Hockey Canada (7.5(c)) and CARHA (53(b)), and a match keeps you out of later games until your case is dealt with (Hockey Canada 4.10(a), CARHA 34(a), CARHA-affiliated adult leagues only).
 
 A hit meant to injure is a match in every book but the IIHF, and ⚠️ **under USA Hockey so is a reckless one** — either way, plan there on a likely multi-game ban (602(a)), and any game misconduct also costs your team's next game, and a second major in a game at least two (404(b), 403(b)). Every tier is in [Body Contact and Battles](../technique/body_contact_and_battles.md#checking-from-behind-and-what-the-onus-does-and-does-not-mean).
 
@@ -486,6 +486,8 @@ You against the carrier. This is gap control applied, and it is the situation ev
 
 ### 1-on-2
 
+One attacker, two defenders. The luxury case — and one that teams waste constantly.
+
 ```facts
 Never: Both defenders converge on the carrier — that opens the ice behind you for a late second attacker
 Action: One defender takes the puck, normally the one on the carrier's side, and plays it as a 1-on-1 with a very tight gap
@@ -494,8 +496,6 @@ Key: The engaged defender can afford to be aggressive with the gap — a miss le
 Rule: Cover behind you is no defence to charging — USA Hockey Casebook 607, Situation 3 calls accelerating through a check charging even without the two fast strides, and Hockey Canada 7.4(ii) needs only two
 Action: Call it — "I've got them" from the engaging defender, so the other holds
 ```
-
-One attacker, two defenders. The luxury case — and one that teams waste constantly.
 
 The failure mode is both defenders converging on the carrier. That opens the ice behind you for a late-arriving second attacker and turns a comfortable situation into a scramble.
 
@@ -553,6 +553,10 @@ Talk about this with your goalie before the game, not during it. Most goalies wa
 
 #### The realistic alternative — the timed slide
 
+Some coaches teach the opposite commitment: instead of holding the lane and living with the shot, the defender **times a slide across the passing lane** to remove the pass outright and force the carrier to shoot. **This is a different system, not a mistake.** Its trade is explicit — the pass is gone, but you are on the ice and out of the play if you go early or slide past the lane, and you cannot contest the rebound afterwards.
+
+**One thing holds whichever system endorses it: your head stays up and out of the shot lane.** **Do not carry the going-to-the-ice method from [Defender](../positions/defender.md) into this** — that is for dropping in front of a *shot*, and a slide across a *passing* lane is a different action on a different axis. **This guide does not tell you how to go down.** The coaching source this alternative comes from describes a flat slide with the feet toward your own net and names its failure modes — too early, past the lane, unable to contest the rebound — but that describes the play, not a technique for surviving it. ⚠️ **How you go down is the part that hurts you**, so ask the coach who asks you to do it.
+
 ```facts
 Convention: Some teams play the opposite commitment — a timed slide across the passing lane to remove the pass outright and force the shot
 Key: What does not change is the contract — the goalie still owns the shooter and you still own the pass; what changes is how you take the pass away
@@ -569,11 +573,7 @@ Rule: Never finish a low hit into the back — it is checking from behind, not c
 Action: Ask which of the two your team plays, and settle it with your goalie before the game rather than during it
 ```
 
-Some coaches teach the opposite commitment: instead of holding the lane and living with the shot, the defender **times a slide across the passing lane** to remove the pass outright and force the carrier to shoot. **This is a different system, not a mistake.** Its trade is explicit — the pass is gone, but you are on the ice and out of the play if you go early or slide past the lane, and you cannot contest the rebound afterwards.
-
 Note what does *not* change between the two: **the goalie still owns the shooter, and you still own the pass.** What changes is how you take the pass away and what it costs you if you are wrong.
-
-**One thing holds whichever system endorses it: your head stays up and out of the shot lane.** **Do not carry the going-to-the-ice method from [Defender](../positions/defender.md) into this** — that is for dropping in front of a *shot*, and a slide across a *passing* lane is a different action on a different axis. **This guide does not tell you how to go down.** The coaching source this alternative comes from describes a flat slide with the feet toward your own net and names its failure modes — too early, past the lane, unable to contest the rebound — but that describes the play, not a technique for surviving it. ⚠️ **How you go down is the part that hurts you**, so ask the coach who asks you to do it.
 
 **So ask, and ask early.** Which of the two your team plays is a coaching decision, and the worst outcome is not picking the less fashionable one — it is you and your goalie having different answers. Both of you hedging in different directions is how a 2-on-1 becomes a goal, and that is true whichever system you are in.
 
@@ -589,6 +589,8 @@ Note what does *not* change between the two: **the goalie still owns the shooter
 
 ### 2-on-2
 
+Two attackers, two defenders. Even numbers, and it should be routine — but it is the situation most often botched, because "even" makes people relax. That ranking is coaching emphasis, not a counted one.
+
 ```facts
 Convention: Play it man-on-man — each defender takes an attacker and holds a tight gap on them
 Options: Zone is the realistic alternative — strong-side D takes whoever carries into their half, weak-side D holds the middle
@@ -597,8 +599,6 @@ Never: Both drift toward the puck — a simple pass then leaves their partner th
 Action: Follow your man through a crossing or call a clean "switch" — never do half of each
 Key: The weak-side defender is not free; being ready to help is not the same as leaving your man
 ```
-
-Two attackers, two defenders. Even numbers, and it should be routine — but it is the situation most often botched, because "even" makes people relax. That ranking is coaching emphasis, not a counted one.
 
 ![](diagram:rush-2-on-2)
 
@@ -642,6 +642,8 @@ Three attackers, two defenders. Chaotic-looking, and the way you take the chaos 
 
 ### 3-on-1
 
+Three attackers, one defender. This is a bad situation and pretending otherwise helps nobody.
+
 ```facts
 Position: Central, on the defensive side of the puck, stick in the most dangerous lane
 Goal: Delay — the objective changes from "stop this" to "make it take longer"
@@ -650,8 +652,6 @@ Never: Commit to one attacker — attacking the carrier turns it into an unoppos
 Priority: Give your goalie the shot from distance and take away the cross-ice options, as on a 2-on-1
 Action: Call for help loudly — your backcheckers may not know how bad it is
 ```
-
-Three attackers, one defender. This is a bad situation and pretending otherwise helps nobody.
 
 - **Take the middle.** Position yourself centrally, defensive side of the puck, stick in the most dangerous lane. You cannot cover three; you can make the two middle options harder.
 - **Delay.** Your objective changes from "stop this" to "make it take longer." Every extra second is another backchecker arriving. Retreat slowly, stay in the lanes, force them to make an extra pass.
@@ -787,6 +787,8 @@ If the goal goes in, it counts and the minor is wiped out — **unless your team
 
 ### The late man / trailer
 
+The player who arrives second is the one who gets forgotten. How often that is the reason a rush ends in a goal is coaching consensus rather than a tracked share — [Neutral Zone Systems](neutral_zone_systems.md) sets out what is and is not counted about rush goals.
+
 ```facts
 Key: The player who arrives second is the one who gets forgotten — how often that is the reason a rush ends in a goal is coaching consensus, not a tracked share
 Position: The trailer follows a few metres behind and arrives into the high slot with a clean, unopposed look
@@ -795,8 +797,6 @@ Options: Some teams give the trailer to the weak-side defenceman and drop the th
 Action: If you are the last backchecker and everyone else is marked, the trailer is yours — do not skate into the pile
 Action: Defencemen, call them out — "trailer!" or "high!" is a genuinely game-saving shout
 ```
-
-The player who arrives second is the one who gets forgotten. How often that is the reason a rush ends in a goal is coaching consensus rather than a tracked share — [Neutral Zone Systems](neutral_zone_systems.md) sets out what is and is not counted about rush goals.
 
 The **trailer** (or **late man**) is the attacker following the rush a few metres behind — often a defenceman who has activated, often a forward who was slow out of the zone. They arrive into the high slot just as the first wave has pulled everybody low, and they arrive with a clean, unopposed look.
 
@@ -872,6 +872,8 @@ You hold your ground at or just inside the blue line and challenge the carrier a
 
 ### Backing off (retreating)
 
+You give ground, holding your gap, and defend as they enter.
+
 ```facts
 Position: Give ground, holding your gap, and defend them as they enter
 Goal: Nothing gets behind you — the worst case is a controlled entry, not a breakaway
@@ -880,8 +882,6 @@ Risk: Concedes the blue line, so play happens in your end and the shift gets lon
 Never: Back off with a growing gap — a soft retreat gives the attacker speed and the zone, and is worse than either option
 Read: Right against attackers with speed, on odd-man situations, when you are the last defender, when unsure, and any time you are tired
 ```
-
-You give ground, holding your gap, and defend as they enter.
 
 **What it gets you:**
 - **Nothing gets behind you.** The worst case is a controlled entry, not a breakaway.
@@ -941,6 +941,8 @@ The best rush defence is not creating the rush. Almost every odd-man rush agains
 
 ## Communication During a Rush
 
+A rush is loud, fast and facing away from most of your team. Talk is the only way anyone knows what is happening. Short, early, loud. Full detail in [On-Ice Communication](../foundation/on_ice_communication.md).
+
 ```facts
 Action: Short, early, loud — a call as it happens is information, a call after it happens is commentary
 Action: Call the solution, not the problem — "back door" is useful, "watch out" is noise
@@ -949,8 +951,6 @@ Key: "Back door!" — an attacker arriving unmarked at the far post — is the s
 Action: Name the number and the location rather than shouting vaguely: "pick up 12, high slot"
 Mindset: Everyone talks, and the goalie has the best view of the rush and should be the loudest voice on the ice
 ```
-
-A rush is loud, fast and facing away from most of your team. Talk is the only way anyone knows what is happening. Short, early, loud. Full detail in [On-Ice Communication](../foundation/on_ice_communication.md).
 
 **The core vocabulary:**
 
@@ -973,6 +973,8 @@ A rush is loud, fast and facing away from most of your team. Talk is the only wa
 
 ## From Rush Defence into Zone Coverage
 
+Stopping the rush is only half of it. The seconds immediately after are when teams that defended the rush well still concede — everyone relaxes, nobody picks up a mark, and the attackers who were rushing are now cycling against nobody.
+
 ```facts
 Read: The attack losing forward momentum — a dump-in retrieved, a shot frozen or rebounded to the wall, a pass back to their point
 Priority: Locate the net front before anything else, because during a rush nobody was assigned to it
@@ -981,8 +983,6 @@ Convention: In this guide's standard low zone collapse, a backchecking winger re
 Action: Talk through the handover — every temporary assignment the rush created needs explicitly cancelling or confirming
 Key: A rush is not over when the shot is saved; it is over when everybody has a mark
 ```
-
-Stopping the rush is only half of it. The seconds immediately after are when teams that defended the rush well still concede — everyone relaxes, nobody picks up a mark, and the attackers who were rushing are now cycling against nobody.
 
 **The transition, in order:**
 

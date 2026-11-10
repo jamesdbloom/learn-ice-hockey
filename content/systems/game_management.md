@@ -460,14 +460,14 @@ This is what "**last change**" means, and it is the main mechanical part of home
 
 ### What coaches do with it
 
+The classic use is **matching a checking line against a scoring line**. A **checking line** (or shutdown line) is a forward line selected primarily for defensive reliability, forechecking and faceoffs rather than scoring. The coach with last change waits for the opponent's top line, then sends the checkers over the boards against them.
+
 ```facts
 Convention: The classic use is matching a checking line — picked for defensive reliability, forechecking and faceoffs — against a scoring line
 Options: Shelter a young player with soft starts, get the trusted group out for late defensive-zone draws, or chase a favourable matchup
 Risk: Last change can cost you the draw — coaches sometimes send out a worse faceoff man to win the matchup instead
 Key: The road team's counter is the change on the fly, which is why change discipline matters more on the road than at home
 ```
-
-The classic use is **matching a checking line against a scoring line**. A **checking line** (or shutdown line) is a forward line selected primarily for defensive reliability, forechecking and faceoffs rather than scoring. The coach with last change waits for the opponent's top line, then sends the checkers over the boards against them.
 
 Coaches also use last change to:
 
@@ -582,14 +582,14 @@ When you compare two players' numbers, check their zone starts first — and tak
 
 ### How long a shift should be
 
+Shifts in fast, high-level hockey are typically **under a minute**, because hockey is repeated maximal effort and effort quality drops well before you feel exhausted. **[Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns the physiology and the measured range** (30–80 seconds). A reasonable target is **35–45 seconds**, shortened to **30–35** when protecting a lead or stuck in your own end — **both are coaching prescription, not measurement**, as is the "well-managed" 30–45 s figure that document gives.
+
 ```facts
 Convention: 35–45 seconds for most players, 30–35 when protecting a lead or stuck in your own end — coaching prescription, not measurement
 Read: The signal to change is a reduction in your ability to accelerate, not a stopwatch
 Key: Gliding to a spot you would have skated to ten seconds earlier means you are already too tired to be useful
 Action: Take the measured shift-length range and the physiology from Conditioning and Recovery, which covers them
 ```
-
-Shifts in fast, high-level hockey are typically **under a minute**, because hockey is repeated maximal effort and effort quality drops well before you feel exhausted. **[Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) owns the physiology and the measured range** (30–80 seconds). A reasonable target is **35–45 seconds**, shortened to **30–35** when protecting a lead or stuck in your own end — **both are coaching prescription, not measurement**, as is the "well-managed" 30–45 s figure that document gives.
 
 The signal to change is not a stopwatch, it's a **reduction in your ability to accelerate**. The moment you find yourself gliding to a spot you would have skated to ten seconds earlier, you are already too tired to be useful.
 
@@ -648,14 +648,14 @@ This is the part that separates good game management from a good motor.
 
 ### Why a bad change costs goals
 
+A bad change concedes three things at once: a numbers disadvantage, a structural hole (the player leaving usually has a specific job nobody is doing), and a player joining the play with no idea where anybody is. Few single actions in hockey concede as much for free — coaching judgement, not a measured ranking.
+
 ```facts
 Risk: A bad change concedes a numbers disadvantage, a structural hole and a player joining the play blind, all at once
 Key: Few single actions in hockey concede as much for free as a bad change — coaching judgement, not a measured ranking
 Key: The fix is discipline and communication, not fitness
 Action: Call it — "I'm changing", "stay on", "last man"
 ```
-
-A bad change concedes three things at once: a numbers disadvantage, a structural hole (the player leaving usually has a specific job nobody is doing), and a player joining the play with no idea where anybody is. Few single actions in hockey concede as much for free — coaching judgement, not a measured ranking.
 
 The fix is discipline and communication, not fitness. **Call it**: "I'm changing," "stay on," "last man." See [On-Ice Communication](../foundation/on_ice_communication.md).
 
@@ -732,6 +732,8 @@ One more detail: **in the last two minutes of regulation and at any time in over
 
 ### Playoff overtime (NHL)
 
+This is a completely different game-management problem: it's regulation hockey, played tired, with an infinite-cost mistake. The universal advice is **play simple, get pucks behind their defence, don't be the one to make the play that loses it**, and manage shifts ruthlessly — teams routinely shorten shifts to the low 30s in double overtime.
+
 ```facts
 Rule: Fifteen-minute intermission, then full twenty-minute sudden-death periods at 5-on-5, changing ends, until someone scores (NHL Rule 84.5)
 Action: Play simple and get pucks in behind their defence
@@ -740,8 +742,6 @@ Action: Manage shifts ruthlessly — teams routinely shorten to the low 30s in d
 ```
 
 **Rule 84.5**: after a tie through regulation, a **fifteen-minute intermission**, then full **twenty-minute periods at 5-on-5**, sudden death, changing ends each period, repeating until someone scores. No 3-on-3, no shootout.
-
-This is a completely different game-management problem: it's regulation hockey, played tired, with an infinite-cost mistake. The universal advice is **play simple, get pucks behind their defence, don't be the one to make the play that loses it**, and manage shifts ruthlessly — teams routinely shorten shifts to the low 30s in double overtime.
 
 ### Overtime elsewhere: IIHF, Britain and rec leagues
 
@@ -856,6 +856,8 @@ Whether "momentum" is a real measurable force is genuinely disputed. What is not
 
 ### After conceding
 
+Coaches everywhere treat the minute after a goal against as the most dangerous stretch in hockey, because the conceding team is either deflated or over-eager. **That is coaching lore, not a measured hazard rate** — there is no published count of goals by time since the last goal. The habits below are worth having either way.
+
 ```facts
 Mindset: Take the next shift as simply as possible — win a puck, get it deep, take your man, change
 Mindset: Play the game in front of you — replaying the goal is a decision-making tax you cannot afford
@@ -863,8 +865,6 @@ Action: Reset your risk to baseline; chasing the goal back immediately is how on
 Action: Say one short factual sentence — "reset, next shift". Silence after a goal against is corrosive
 Convention: Coaches treat the minute after a goal against as the most dangerous stretch in hockey — coaching lore, not a measured hazard rate
 ```
-
-Coaches everywhere treat the minute after a goal against as the most dangerous stretch in hockey, because the conceding team is either deflated or over-eager. **That is coaching lore, not a measured hazard rate** — there is no published count of goals by time since the last goal. The habits below are worth having either way.
 
 **What to do:**
 
@@ -875,13 +875,13 @@ Coaches everywhere treat the minute after a goal against as the most dangerous s
 
 ### After you score
 
+A goal for changes behaviour as surely as a goal against, only in the other direction: the bench is loud, the scoring line is still celebrating, and somebody starts cheating up the ice for the next one. **Take the centre-ice draw that follows like a defensive-zone draw** — win it back, get the puck deep, take your man — and let the second goal come from the same structure that produced the first. Coaches commonly treat the shift after you score as a dangerous one; read that as coaching lore, the same class of claim as the minute after a goal against. **Whether the scoring line goes straight back out to press or a checking line goes out to settle the game is a coaching choice** — ask your bench which yours plays, and if you are on that shift, play it simply.
+
 ```facts
 Action: Play the shift after your own goal like any other — win the draw back, get the puck deep, take your man
 Risk: Coaches warn that a team switches off, or starts cheating for a second goal, straight after scoring — coaching lore, not a measured rate
 Options: Some coaches send the scoring line straight back out to press; others send a checking line to settle the game. Ask which your bench does
 ```
-
-A goal for changes behaviour as surely as a goal against, only in the other direction: the bench is loud, the scoring line is still celebrating, and somebody starts cheating up the ice for the next one. **Take the centre-ice draw that follows like a defensive-zone draw** — win it back, get the puck deep, take your man — and let the second goal come from the same structure that produced the first. Coaches commonly treat the shift after you score as a dangerous one; read that as coaching lore, the same class of claim as the minute after a goal against. **Whether the scoring line goes straight back out to press or a checking line goes out to settle the game is a coaching choice** — ask your bench which yours plays, and if you are on that shift, play it simply.
 
 ### What a late hit costs in each book
 
@@ -967,6 +967,8 @@ So, **where body checking is permitted**, the instruction does not change with t
 
 ### The value of a simple shift
 
+A **simple shift** is a deliberate, low-ambition, high-execution 35 seconds: no cross-ice passes, no pinches, no one-on-one attempts, first man in on the forecheck playing the puck with the stick rather than looking for a hit — if you can see their numbers, pull up — and a change on the whistle or on the clear. Its purpose is to stop the bleeding and hand the game back to the bench in one piece. It is not a lack of ambition; it's the correct play in a specific situation, and being the player who can reliably deliver one makes you very hard to leave out of a line-up.
+
 ```facts
 Key: A simple shift is a deliberate, low-ambition, high-execution 35 seconds
 Never: Cross-ice passes, pinches or one-on-one attempts on a simple shift
@@ -974,8 +976,6 @@ Action: First man in on the forecheck plays the puck with the stick, not a hit, 
 Goal: Stop the bleeding and hand the game back to the bench in one piece
 Mindset: It is not a lack of ambition — being able to deliver one reliably makes you very hard to leave out
 ```
-
-A **simple shift** is a deliberate, low-ambition, high-execution 35 seconds: no cross-ice passes, no pinches, no one-on-one attempts, first man in on the forecheck playing the puck with the stick rather than looking for a hit — if you can see their numbers, pull up — and a change on the whistle or on the clear. Its purpose is to stop the bleeding and hand the game back to the bench in one piece. It is not a lack of ambition; it's the correct play in a specific situation, and being the player who can reliably deliver one makes you very hard to leave out of a line-up.
 
 ### Time-outs, icing, and what the evidence says
 
@@ -1050,6 +1050,8 @@ The game-management point: **if you retaliate, you have converted your opponent'
 
 ### The last minute of a period
 
+The first and second periods have their own risk profile. A goal against in the final minute of a period is disproportionately damaging — it's the last thing everyone carries into the dressing room, and there's no time to respond.
+
 ```facts
 Never: Get caught changing inside the last minute — a bad change concedes numbers, a hole and a blind arrival, at the moment there is no time to answer a goal
 Never: Force an entry; a turnover at their blue line with 20 seconds left is a 2-on-1 you will not recover from
@@ -1057,8 +1059,6 @@ Action: Get the puck deep and finish the period there
 Priority: Nobody's line is more important than the clock — tired with 15 seconds left, stay on and defend
 Read: The exception is a genuine chance — possession with numbers, and you go
 ```
-
-The first and second periods have their own risk profile. A goal against in the final minute of a period is disproportionately damaging — it's the last thing everyone carries into the dressing room, and there's no time to respond.
 
 - **Do not get caught changing.** A change inside the last minute concedes the same three things any bad change does — a numbers disadvantage, a hole where somebody's job was, and a player joining the play blind — at the one moment in the period when there is no time to answer the goal.
 - **Do not force an entry.** A turnover at their blue line with 20 seconds left is a 2-on-1 you will not recover from.
@@ -1068,6 +1068,8 @@ The first and second periods have their own risk profile. A goal against in the 
 
 ### The first shift after a long stoppage
 
+After a TV time-out, an injury delay, a video review or an intermission, everybody is cold, the ice is different, and the first shift is played badly by both teams. That makes it an opportunity as much as a risk.
+
 ```facts
 Mindset: Expect your first stride to be slow, and expect both teams to play the shift badly
 Action: Keep your feet moving during the stoppage rather than leaning on your stick
@@ -1075,8 +1077,6 @@ Action: Simplify the first 20 seconds — the pass you would normally complete m
 Priority: Win the faceoff; possession from a cold start is worth more than usual because they are disorganised too
 Goal: Be first to the first loose puck — that race usually sets the tone of the next two minutes
 ```
-
-After a TV time-out, an injury delay, a video review or an intermission, everybody is cold, the ice is different, and the first shift is played badly by both teams. That makes it an opportunity as much as a risk.
 
 - **Expect your first stride to be slow.** Keep your feet moving during the stoppage rather than leaning on your stick.
 - **Simplify the first 20 seconds.** Nobody's timing is right yet; the pass you'd normally complete may not connect.

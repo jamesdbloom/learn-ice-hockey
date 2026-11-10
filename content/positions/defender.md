@@ -313,13 +313,13 @@ Two more things a defenceman gets wrong at the net front are both about the stic
 
 #### The high-slot rotation
 
+Stay disciplined and hold your position. **This rotation belongs to a low zone collapse rather than to every system.** When the puck is in the strong-side corner and the centre has gone to help in the battle, the weak-side winger should collapse from the point to cover the high slot (unless that winger is already following their own man down — see exception below). Anyone with a clear view should call for the rotation — you, the centre moving away, or the winger themselves. If for any reason it doesn't happen, hold the goalmouth anyway and call louder — an unmarked tap-in at the goalmouth is more dangerous than a high-slot shot through traffic. **Under man-on-man that winger stays with their check and no rotation is coming**, so find out which your team plays before you wait for one.
+
 ```facts
 Read: Under low zone collapse, puck in the strong-side corner and the centre gone to the battle — the weak-side winger collapses to the high slot; under man-on-man they stay with their check
 Action: Find out which system you play; in a collapse, call for the weak-side winger's rotation, and if it doesn't come, hold the goalmouth anyway and call louder
 Read: If their weak-side defenceman has come off the point and your weak-side winger is following them, the rotation is not available — you and your partner cover the slot and call out anyone arriving
 ```
-
-Stay disciplined and hold your position. **This rotation belongs to a low zone collapse rather than to every system.** When the puck is in the strong-side corner and the centre has gone to help in the battle, the weak-side winger should collapse from the point to cover the high slot (unless that winger is already following their own man down — see exception below). Anyone with a clear view should call for the rotation — you, the centre moving away, or the winger themselves. If for any reason it doesn't happen, hold the goalmouth anyway and call louder — an unmarked tap-in at the goalmouth is more dangerous than a high-slot shot through traffic. **Under man-on-man that winger stays with their check and no rotation is coming**, so find out which your team plays before you wait for one.
 
 ![](diagram:dz-collapse-high-slot)
 
@@ -335,6 +335,8 @@ The transition zone. Your job is to prevent the opponent from entering your zone
 
 ### Neutral Zone: Carrying the Puck — Free Space
 
+**Where to be:** Moving up through the middle of the ice or along the boards.
+
 ```facts
 Position: Moving up through the middle of the ice or along the boards
 Action: Carry with confidence and look to pass to a forward to push play into the offensive zone
@@ -344,8 +346,6 @@ Never: Stickhandle through the middle under pressure
 Mindset: Simple and safe beats clever and risky in the neutral zone
 Read: If no forward is open up the ice, regroup — pass D-to-D so your forwards can swing back and come again with speed
 ```
-
-**Where to be:** Moving up through the middle of the ice or along the boards.
 
 **What to do:** Carry with confidence and look to make a pass to a forward to push play into the offensive zone. Alternatively, use the boards to chip the puck ahead to a forward in stride.
 
@@ -359,6 +359,8 @@ Read: If no forward is open up the ice, regroup — pass D-to-D so your forwards
 
 ### Neutral Zone: Carrying the Puck — Under Pressure
 
+**Where to be:** Near the boards or just inside your own blue line.
+
 ```facts
 Position: Near the boards or just inside your own blue line
 Action: Move the puck quickly
@@ -369,8 +371,6 @@ Risk: The neutral-zone middle is an expensive place to lose the puck — coachin
 Mindset: When in doubt, go simple
 ```
 
-**Where to be:** Near the boards or just inside your own blue line.
-
 **What to do:** Move the puck quickly. A bank off the boards, a pass to a forward, or a dump-in are all good options. Don't try to carry through heavy pressure.
 
 **Goal:** Keep possession or relieve pressure safely.
@@ -380,6 +380,8 @@ Mindset: When in doubt, go simple
 ---
 
 ### Neutral Zone: Pressuring an Opponent with the Puck
+
+**Where to be:** Between the puck carrier and your net, facing the oncoming play, closing the distance as they come.
 
 ```facts
 Position: Between the puck carrier and your net, facing the oncoming play, closing the distance as they come
@@ -393,8 +395,6 @@ Rule: A step-up finished as a hit is what the charging rules are written for —
 Rule: Charging binds every division, checking or not — USA Hockey 607, Hockey Canada 7.4 name no division — no book caps it at a minor: USA Hockey's floor is minor plus misconduct (607(a)), a reckless one a mandatory major and game misconduct (607(b)): plan on a match and a likely multi-game ban (602(a))
 ```
 
-**Where to be:** Between the puck carrier and your net, facing the oncoming play, closing the distance as they come.
-
 **What to do:** Step up at the blue line to challenge only if you are confident you can win the puck or force a turnover. Otherwise, back up under control and deny a clean entry. Support from the neutral-zone forwards is important here.
 
 **Goal:** Prevent a clean zone entry. Force a dump-in or a turnover.
@@ -404,6 +404,8 @@ Rule: Charging binds every division, checking or not — USA Hockey 607, Hockey 
 **A step-up is a closing of space, not a hit.** Your feet keep moving backwards and the attacker stays in front of you. ⚠️ **Where one is finished as a hit instead, that is the geometry the charging rules are written for**, and a carrier with their head down is the picture they name. Their head down tells you they cannot change direction, so your body gets there first — and nothing more. No book caps charging at a minor, and under USA Hockey it is at least a minor and a misconduct; what it costs comes later, in [Charging](#charging), and [Defending the Rush → Standing up (stepping up)](../systems/defending_the_rush.md#standing-up-stepping-up) owns the step-up.
 
 #### Gap control — the method
+
+**Gap control is the defining skill of the position, so here is the method.** Your "gap" is the distance between you and the puck carrier. Too big and they get a free run at you with speed and options; too small and one move puts them past you. [Defending the Rush](../systems/defending_the_rush.md) has the full treatment, including 2-on-1s and 3-on-2s.
 
 ```facts
 Key: Gap control is the defining skill of the position — your gap is the distance between you and the puck carrier
@@ -420,8 +422,6 @@ Rule: Never hit a turned back at the wall — pull up and play the puck. No book
 Rule: A hit from behind into the boards or goal frame on a player who cannot protect themselves is a mandatory match in CARHA and Hockey Canada; in USA Hockey plan on a match and a likely multi-game ban if reckless (602(a)), mandatory with excessive force on a defenceless player (608(c))
 Technique: Stick in the passing lane, on the ice, out front — it takes the pass away without committing your body; and pivot late, because once you turn to skate forwards you have given up your ability to react
 ```
-
-**Gap control is the defining skill of the position, so here is the method.** Your "gap" is the distance between you and the puck carrier. Too big and they get a free run at you with speed and options; too small and one move puts them past you. [Defending the Rush](../systems/defending_the_rush.md) has the full treatment, including 2-on-1s and 3-on-2s.
 
 ![](diagram:rush-gap-and-angle)
 
@@ -491,6 +491,8 @@ A pinch is generally the safer of the two, because you have teammates behind you
 
 ### Neutral Zone: Without the Puck — Holding the Line as the Safety Valve
 
+**Where to be:** At your own blue line, in the middle of the ice — one defender on each side of the middle, roughly between the two neutral-zone faceoff dots. Together you form the last line before your zone.
+
 ```facts
 Position: At your own blue line, in the middle of the ice — one defender each side of the middle, roughly between the two neutral-zone faceoff dots
 Action: Stay in position and watch the play develop
@@ -499,8 +501,6 @@ Technique: Keep your stick active to intercept any passes in your lane
 Goal: Be ready to either support the attack or pivot to defence instantly
 Never: Drift too far forward into the neutral zone — if your team turns the puck over you must be in position to protect against the rush
 ```
-
-**Where to be:** At your own blue line, in the middle of the ice — one defender on each side of the middle, roughly between the two neutral-zone faceoff dots. Together you form the last line before your zone.
 
 **What to do:** Stay in position. Watch the play develop. Be a safety valve if your forwards need to pass back. Keep your stick active to intercept any passes in your lane.
 
@@ -547,6 +547,8 @@ Never: Go below the circles unless somebody has taken your job at the blue line 
 
 ### Offensive Zone: Carrying the Puck — Under Pressure
 
+**Where to be:** At or near the blue line. (If you had stepped down to support the cycle, retreat to the line now.)
+
 ```facts
 Position: At or near the blue line — if you had stepped down to support the cycle, retreat to the line now
 Priority: Keeping the puck in the zone is priority one
@@ -556,8 +558,6 @@ Never: Drift out over the line, or you are no longer available as an option
 Goal: Maintain the zone; don't give up the blue line
 Risk: Losing the line and getting caught in the zone lets the opponent exit cleanly. If you cannot hold it, exit and reset rather than gamble
 ```
-
-**Where to be:** At or near the blue line. (If you had stepped down to support the cycle, retreat to the line now.)
 
 **What to do:** Hold the blue line — don't panic inward. If the pressure is severe, consider a reverse pass back to your partner or a chip out of the zone to reset. Keeping the puck in the zone is priority one — but keep your own skates inside the line too, because if you drift out and the puck stays in, you're no longer available as an option.
 
@@ -569,6 +569,8 @@ Risk: Losing the line and getting caught in the zone lets the opponent exit clea
 
 ### Offensive Zone: Pressuring an Opponent with the Puck
 
+**Where to be:** Near the blue line, with the strong-side defender (the one on the same side as the puck) closer to the action.
+
 ```facts
 Position: Near the blue line, with the strong-side defender closer to the action
 Action: After a turnover, the strong-side defender pinches for the puck — a body check only where your game allows one, never into a back turned to you — while the weak-side one holds against an odd-man rush
@@ -579,8 +581,6 @@ Convention: Only one defender pinches at a time — a near-universal coaching co
 Risk: If you both step up and the play breaks the other way, the opponent has a clean break against your goalie
 Never: Cut across into or hit a winger who has chipped the puck past you — turn and skate to the puck
 ```
-
-**Where to be:** Near the blue line, with the strong-side defender (the one on the same side as the puck) closer to the action.
 
 **What to do:** When the opponent retrieves the puck after a turnover, the strong-side defender pinches (steps down off the blue line into the zone) to pressure the carrier for the puck. Go only if you can arrive as the puck does and a forward is high enough to cover the point you leave. Play the puck, not the body. A body check is an option only where your game allows checking, and never into a back turned to you — if you can see their numbers, play the puck. The weak-side defender holds back to protect against an odd-man rush. If the puck is deeper in the zone, both hold position at the top and intercept rather than chase.
 
@@ -755,6 +755,8 @@ Blocking shots is a defenceman's job, but it is a *technique*, not an act of cou
 
 ### Line Changes
 
+**Your shift is legitimately a little longer than a forward's**, because you spend more of it gliding, reading and skating backwards rather than at a full sprint. **Do not read that as covering less ground** — the measured direction is the other way round. Lignell and colleagues, tracking 36 NHL players through a game, found that *"defensemen (D) covered **29% more** (p ≤ 0.05) skating in total than forwards (F) and were on the ice **47% longer**"*, while forwards performed *"**54% more** (p ≤ 0.05) high-intensity skating per minute"*. Less sprinting per minute, more skating in total. [Centre](center.md) covers that finding.
+
 ```facts
 Key: Your shift is legitimately a little longer than a forward's, because more of it is gliding, reading and skating backwards rather than sprinting
 Key: A longer shift does not mean less ground covered — the measured direction is the other way round, and Centre covers that finding
@@ -763,8 +765,6 @@ Key: The "40–50 seconds for a D against 35–45 for a forward" figures are coa
 Action: Change your pair on its own clock, not with a forward line. Let the forwards go and take your change on the next safe window
 Never: Change while you are the last man back. Say it out loud: "last man"
 ```
-
-**Your shift is legitimately a little longer than a forward's**, because you spend more of it gliding, reading and skating backwards rather than at a full sprint. **Do not read that as covering less ground** — the measured direction is the other way round. Lignell and colleagues, tracking 36 NHL players through a game, found that *"defensemen (D) covered **29% more** (p ≤ 0.05) skating in total than forwards (F) and were on the ice **47% longer**"*, while forwards performed *"**54% more** (p ≤ 0.05) high-intensity skating per minute"*. Less sprinting per minute, more skating in total. [Centre](center.md) covers that finding.
 
 **The gap is real, and it is smaller than you think.** In the 2025-26 NHL regular season defencemen averaged **49.3 seconds a shift against 47.6 for forwards** — 1.7 seconds. That is this corpus's own arithmetic from the NHL's time-on-ice report (total ice time over total shifts, every skater who took one), not a published figure; 2024-25 gives **48.7 against 47.4**. [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) gets 48.8 and 47.2 for 2024-25 from the same report by a different method — skaters with 41 or more games, averaged per skater — and neither figure corrects the other.
 

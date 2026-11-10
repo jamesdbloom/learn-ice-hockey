@@ -20,6 +20,8 @@
 
 ## Overview
 
+**Two patches of ice decide what a winger is worth: the front of the opposing net, and your own lane.** The net front scores. A goalie handles a clean shot from the point; a tip, a screen or a rebound beats them, and all three need a body in front of the net as the shot is taken.
+
 ```facts
 Action: Crash the net on every shot, stick down, just outside the crease and never into the goalie. Driving in from the wall or circle, arrive with the shot; on the net-front job, planted before the release
 Key: Rebounds and tips are where a winger's goals come from — coaching craft, and the ice in front of the net converts several times better than the perimeter on figures whose source names no dataset
@@ -31,8 +33,6 @@ Convention: Under a low zone collapse — a coaching choice not a rule, assumed 
 Technique: Puck far side, side-on to the checker, feet moving — never bump where checking is barred; in CARHA avoid contact. Head up, chin off your chest, never turn your back to anyone coming at you, never duck
 Action: On the backcheck, take your lane and pick up the opponent's late forward, not the puck — stay between them and the puck all the way back, stick in the lane, not on them, never finish a check into them
 ```
-
-**Two patches of ice decide what a winger is worth: the front of the opposing net, and your own lane.** The net front scores. A goalie handles a clean shot from the point; a tip, a screen or a rebound beats them, and all three need a body in front of the net as the shot is taken.
 
 Timing matters more than effort, and it runs opposite ways for the two jobs. **Driving in from the perimeter**, arrive too early and a defender ties you up; too late and the rebound is covered. **The net-front player** is planted *before* the release. The defending team recovers most rebounds, so you win one by deciding to go before the shot — [Offensive Zone Play](../systems/offensive_zone_play.md) owns that figure. Go every time, including on shots you are sure will be saved: into the ice in front of the goalie, never into them.
 
@@ -66,6 +66,8 @@ Your job is to help your team exit the zone cleanly and to limit what the opposi
 
 ### Defensive Zone: Carrying the Puck — Free Space
 
+**Where to be:** On the boards on your side, **between the hash marks and the goal line** — roughly level with the faceoff dot or just below it. You get there by coming *down* from your point coverage as the breakout starts; you do not stand there while the other team has the puck. [Breakouts](../systems/breakouts.md) is the authority on this landmark.
+
 ```facts
 Position: On the boards on your side, between the hash marks and the goal line, in the conventional swing breakout — Breakouts is the authority on this landmark
 Action: Come down from your point coverage as the breakout starts; don't stand there while the other team has the puck
@@ -74,8 +76,6 @@ Action: If you receive the puck, look to move immediately — carry out along th
 Goal: Exit the defensive zone cleanly and transition to offence
 Never: Hold the puck in your own zone longer than you need to — your first look is always up ice
 ```
-
-**Where to be:** On the boards on your side, **between the hash marks and the goal line** — roughly level with the faceoff dot or just below it. You get there by coming *down* from your point coverage as the breakout starts; you do not stand there while the other team has the puck. [Breakouts](../systems/breakouts.md) is the authority on this landmark.
 
 > **Wall position is system-dependent, and the authority says so.** The hash-mark spot belongs to the **conventional swing breakout** — the structure assumed throughout this document. Teams running a **flat/spread** structure ask wingers to hold higher toward the blue line; teams running an aggressive **stretch or flying-winger** structure send one winger up ice entirely. And under a **centre fly** the centre leaves early up the middle, so the **weak-side winger** drops in to take the low support job underneath the puck instead. **Find out which one you're in** — the failure mode of a winger standing at the hash marks in a stretch system is exactly as bad as the reverse. See [Breakouts](../systems/breakouts.md).
 
@@ -220,6 +220,8 @@ The transition zone. Your job is to carry the puck through your lane and support
 
 ### Neutral Zone: Carrying the Puck — Free Space
 
+**Where to be:** In your lane along the boards, carrying through the neutral zone.
+
 ```facts
 Position: In your lane along the boards, on your own side of the ice
 Action: Skate hard through the neutral zone — carry into the offensive zone if the path is open, or set up an entry play with the centre
@@ -228,8 +230,6 @@ Never: Drift into the centre of the ice — that's the centre's lane, and stayin
 Read: On a 2-on-1 with the puck, drive at the net so the defender commits, stopping short of the goalie; shoot if they take the pass, pass if they take you. Without it, take the far post, stick on the ice
 Read: On a 3-on-2 with no lane to the net, pull up at the half-wall and let the late man arrive rather than forcing it into two defenders
 ```
-
-**Where to be:** In your lane along the boards, carrying through the neutral zone.
 
 ![](diagram:neutral-zone-lanes)
 
@@ -292,6 +292,8 @@ Key: NHL tracking at 5-on-5 put a carry-in at about twice the value of a dump-in
 
 ### Neutral Zone: Pressuring an Opponent with the Puck
 
+**Where to be:** In your lane, blocking passing lanes through your side.
+
 ```facts
 Position: Under a containment structure, in your lane, blocking the passing lanes through your side
 Action: Cut off the passing options and force the puck carrier wide toward the boards
@@ -301,8 +303,6 @@ Action: Find out which neutral-zone system your team plays and what the call is 
 Risk: Leave your lane under containment and you open a seam the single defenceman behind their three-player line cannot cover
 Goal: Prevent a clean entry — force a difficult pass, force them wide, or force a dump-in
 ```
-
-**Where to be:** In your lane, blocking passing lanes through your side.
 
 **What to do:** When the opposing team is moving the puck through the neutral zone, stay in your lane and cut off the passing options. Force the puck carrier wide toward the boards. In a containment structure, don't leave your lane to chase. Block the lane instead and let the pressure develop naturally.
 
@@ -366,6 +366,8 @@ Your natural home as a forward. Your job is to create scoring chances, win battl
 
 ### Offensive Zone: Carrying the Puck — Free Space
 
+**Where to be:** Along the half-wall (the boards area roughly level with the faceoff dot — between the corner and the point), or driving toward the net from the wing.
+
 ```facts
 Position: Along the half-wall, or driving toward the net from the wing
 Targets: Shoot, feed the centre in the slot, or find the defenceman at the point
@@ -374,8 +376,6 @@ Convention: "Shoot first" is a bias, not a rule — a teammate with a clear look
 Never: Stand still — movement is what creates the opportunities
 Goal: Create a shot on net, or force the defence to react and open space for teammates
 ```
-
-**Where to be:** Along the half-wall (the boards area roughly level with the faceoff dot — between the corner and the point), or driving toward the net from the wing.
 
 **What to do:** If open on the half-wall, look to shoot, pass to the centre in the slot, or find the defenceman at the point. If you have space to drive the net, do it — use your speed and get to the front of the net — under control, and never into the goalie.
 
@@ -387,6 +387,8 @@ Goal: Create a shot on net, or force the defence to react and open space for tea
 
 ### Offensive Zone: Carrying the Puck — Under Pressure
 
+**Where to be:** In the corner or along the boards.
+
 ```facts
 Position: In the corner or along the boards
 Technique: Use your body to protect the puck and fight to maintain possession — forearm and hip to the wall, not the point of your shoulder, and not the whole shoulder if you can help it
@@ -397,8 +399,6 @@ Read: Look up before passing to the point — the strong-side defender may have 
 Never: Force the puck out of the corner through heavy traffic — a rushed pass turns over possession
 Goal: Maintain possession in the offensive zone and keep the pressure going
 ```
-
-**Where to be:** In the corner or along the boards.
 
 **What to do:** Use your body to protect the puck. Fight to maintain possession — but the same override applies here as in your own end: never turn your back to anyone coming at you, and never duck. Skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest. See [Body Contact and Battles](../technique/body_contact_and_battles.md), which covers it. Look for a pass back to the defenceman at the point, or hold possession until the centre can support you. Don't try to force the puck out of the corner through heavy traffic.
 
@@ -497,6 +497,8 @@ Two habits cover it. **Know where the near post is before the shot is taken** �
 
 #### Net-front and the crease
 
+You are the net-front player more often than anyone, so the working rule: **work just outside the blue paint and off its red edge, get in the goalie's eyes, keep your stick free for tips, and keep your body out of the crease.** A no-contact screen from outside the crease is legal and one of the most valuable things you do. ⚠️ **Take the goalie's eyes, never their movement:** under the NHL, the IIHF and the PWHL a position that stops the goalie moving in the crease can cost the goal even from outside it.
+
 ```facts
 Position: At the net front, work just outside the blue paint, off the red line, get in the goalie's eyes, keep your stick free for tips, keep your body out of the crease — head up, and know where the post is
 Rule: A no-contact screen "on the crease line or outside the goal crease" keeps the goal in NHL and IIHF Situation 5 E and the PWHL's table; contact, or stopping the goalie moving in the crease, loses it (69.1, PWHL 71.1). Every rulebook or glossary settling it counts that line as crease, so stay off it
@@ -511,8 +513,6 @@ Never: Lean on anyone for position where checking is barred, and in a CARHA leag
 Never: Body check a player already battling someone else for the puck, in any USA Hockey game — a minor (640(e)), and a mandatory major and game misconduct if it recklessly endangers them (640(g))
 Rule: A net-front charge, cross-check or interference that injures is at least a mandatory major and game misconduct under Hockey Canada (7.4(b), 9.2(b), 8.3(b), goalie 8.5(b)) and CARHA (charging 52(a)/(b), cross-check 54(c), interference 66(e) with 30(a))
 ```
-
-You are the net-front player more often than anyone, so the working rule: **work just outside the blue paint and off its red edge, get in the goalie's eyes, keep your stick free for tips, and keep your body out of the crease.** A no-contact screen from outside the crease is legal and one of the most valuable things you do. ⚠️ **Take the goalie's eyes, never their movement:** under the NHL, the IIHF and the PWHL a position that stops the goalie moving in the crease can cost the goal even from outside it.
 
 **Keep off the red line itself.** Every book that settles it in its rules or glossary counts the line as crease, though three reference tables allow a goal to a screener planted on it. Off the line is the reading that holds under all of them.
 
@@ -671,6 +671,8 @@ Key: The rule in full — hybrid icing, the wave-off list and "gaining the line"
 
 ### Line Changes
 
+**Wingers change as a group, and the group is led by the centre.** The centre's route covers more of the ice than yours and they fade first — **coaching craft rather than a measured finding**; [Centre](center.md) sets out what is and is not established here — so when the centre calls it you go with them rather than staying out for one more look. A line that dribbles off one player at a time plays a stretch of every shift a man short in the middle of the ice, which is exactly the cost a change is supposed to avoid.
+
 ```facts
 Convention: Wingers change as a group led by the centre — coaching craft rather than a measured finding; Centre sets out what is and is not established
 Action: When the centre calls the change, go with them rather than staying out for one more look
@@ -678,8 +680,6 @@ Risk: A line that dribbles off one player at a time plays a stretch of every shi
 Never: Change while the puck is still in your defensive zone and not under your team's control — under a low zone collapse you are the point coverage
 Key: Shift length, the safe and unsafe windows to change, and why a bad change concedes goals are in Game Management
 ```
-
-**Wingers change as a group, and the group is led by the centre.** The centre's route covers more of the ice than yours and they fade first — **coaching craft rather than a measured finding**; [Centre](center.md) sets out what is and is not established here — so when the centre calls it you go with them rather than staying out for one more look. A line that dribbles off one player at a time plays a stretch of every shift a man short in the middle of the ice, which is exactly the cost a change is supposed to avoid.
 
 The one that costs wingers goals: **changing while the puck is still in your defensive zone and not under your team's control.** Under a low zone collapse you are the point coverage. If you leave, the opposing defenceman is unmarked at the blue line with the puck coming to them.
 

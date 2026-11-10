@@ -262,6 +262,8 @@ The aggressive option is not really a neutral-zone structure. It is what the mid
 
 ### 1-4 — the full retreat
 
+**The shape.** One forechecker and **four skaters in a flat line across your own blue line** — the most conservative structure in hockey.
+
 ```facts
 Position: One forechecker and four skaters in a flat line across your own blue line — the most conservative structure in hockey
 Read: Use it protecting a lead in the last minute or two, killing time with an exhausted stranded unit, or defending a 6-on-5 against a pulled goalie
@@ -270,8 +272,6 @@ Risk: It concedes the whole neutral zone and generates no offence, so you spend 
 Countered by: A hard chip past the flat line and a race for it — nobody in a flat line is deeper than anybody else; if the goalie comes out for it, pull up
 Never: Play it as your default — some youth teams do and should not
 ```
-
-**The shape.** One forechecker and **four skaters in a flat line across your own blue line** — the most conservative structure in hockey.
 
 **When it is used.** Protecting a lead in the last minute or two; killing time with an exhausted, stranded unit; defending a 6-on-5 with their goalie pulled. Some youth teams play it as a default and should not.
 
@@ -285,6 +285,8 @@ Never: Play it as your default — some youth teams do and should not
 
 ### The left-wing lock
 
+**The shape.** A hybrid of forecheck and neutral-zone structure. Two forwards — conventionally the centre and right wing — forecheck hard in their end, often steering the puck to the opponent's right side. **The moment possession is lost, the left wing drops into line with the two defencemen**, making three across, each covering about a third of the ice's width.
+
 ```facts
 Position: Two forwards forecheck aggressively in their end; the moment possession is lost the left wing drops into line with the two defencemen
 Goal: Forecheck without paying the odd-man price — three across the back, each responsible for roughly a third of the width of the ice
@@ -293,8 +295,6 @@ Risk: It takes one player out of the counterattack and asks them to do a job mos
 Read: A left wing who reads transitions early makes it work; one who reacts late gives you the worst of both systems
 Options: Many teams now lock whichever winger is highest in the zone instead, which needs a loud and immediate in-game call
 ```
-
-**The shape.** A hybrid of forecheck and neutral-zone structure. Two forwards — conventionally the centre and right wing — forecheck hard in their end, often steering the puck to the opponent's right side. **The moment possession is lost, the left wing drops into line with the two defencemen**, making three across, each covering about a third of the ice's width.
 
 The effect is a 2-3: aggressive up front, three across the back. You get real forechecking pressure without the usual odd-man risk, because the third man back is already there.
 
@@ -441,14 +441,14 @@ Rule: A reckless USA Hockey charge is a major and game misconduct (607(b)) — p
 
 ### Backing off
 
+**What it is.** Skate backwards matching their speed, keeping the attacker in front of you — give up the blue line, never the middle or your body position.
+
 ```facts
 Action: Skate backwards matching their speed, keeping the attacker in front of you and never giving up the middle or your body position
 Goal: Funnel the attacker outside where the shot is low-percentage — you cannot be beaten wide by pure speed
 Read: Right when you have no backpressure, when the attacker has a clear speed advantage, on a 2-on-1 or worse, or when a mistake is a breakaway
 Risk: You concede the entry — they come in with speed and possession and you defend with your feet moving toward your own net
 ```
-
-**What it is.** Skate backwards matching their speed, keeping the attacker in front of you — give up the blue line, never the middle or your body position.
 
 **Why it works.** You cannot be beaten wide by pure speed, and you funnel the attacker outside, where the shot is low-percentage. It is very hard to make a catastrophic error doing it.
 
@@ -468,6 +468,8 @@ Risk: You concede the entry — they come in with speed and possession and you d
 
 ### What a regroup is
 
+A **regroup** is when your team, in possession but with no good way forward, **turns the puck back toward your own end, resets, and comes again**. You still have the puck. You are declining a bad entry to buy a better one.
+
 ```facts
 Goal: In possession with no good way forward, turn the puck back toward your own end, reset, and come again
 Key: You are not retreating — you still have the puck, and you are declining a bad entry to buy a better one
@@ -475,8 +477,6 @@ Never: Treat a backwards pass as a failure, or feel obliged to go forward every 
 Risk: Forcing it forward instead produces low-percentage entries, dumped pucks nobody chases, and turnovers that become rushes the other way
 Convention: Professionals regroup two or three times a shift and amateurs barely do — coaching observation, not a tracked figure
 ```
-
-A **regroup** is when your team, in possession but with no good way forward, **turns the puck back toward your own end, resets, and comes again**. You still have the puck. You are declining a bad entry to buy a better one.
 
 Professionals regroup two or three times a shift without thinking twice. Amateurs barely do, because every player who receives in the neutral zone feels obliged to go forward. **The result is low-percentage entries, dumped pucks nobody chases, and turnovers at their blue line that become rushes the other way.**
 
@@ -522,6 +522,8 @@ The standard form:
 
 ### The hinge, and the skating hinge
 
+The D-to-D regroup assumes the second defenceman can do something with it. **The hinge is what you run when they cannot.** Coaching material calls it a habit amateur teams often lack entirely — an observation, not a counted difference.
+
 ```facts
 Action: After passing D-to-D, sink back into mid-ice behind your partner instead of following the puck up the boards
 Key: Your partner moves up, finds nothing, and returns it to you — you are now behind the play, in the middle, facing up ice with the whole sheet in front of you
@@ -529,8 +531,6 @@ Goal: The puck comes back to a player with time and vision, instead of being for
 Technique: The skating hinge — drop deeper as you make the first pass, so you arrive into the return pass with speed rather than standing still
 Read: A forecheck that takes the D-to-D pass away kills the hinge; one that takes the cross-ice pass away concedes it
 ```
-
-The D-to-D regroup assumes the second defenceman can do something with it. **The hinge is what you run when they cannot.** Coaching material calls it a habit amateur teams often lack entirely — an observation, not a counted difference.
 
 You pass D-to-D, and instead of following the puck up the ice, **sink back into the middle behind your partner**. Your partner carries it up, finds everything covered, and gives it back. **You are now the best-placed player on the ice**: behind the play, in the middle, facing up ice with nobody near you, because the forecheck has committed to the other side. First look the far winger, then the centre.
 
@@ -613,6 +613,8 @@ Read: The pass back is not clean — a regroup into pressure is just a turnover 
 
 ### Lane discipline: three lanes, three forwards
 
+Divide the ice lengthways into three lanes: **left wall, middle, right wall.** The base rule is **one forward in each lane**.
+
 ```facts
 Position: Divide the ice lengthways into left wall, middle and right wall, and put one forward in each lane
 Goal: Three separated forwards are three separate passing options — defenders cannot cover three lanes with one flat line of skaters unless they spread thin
@@ -621,8 +623,6 @@ Action: When the puck is in a lane that is not yours, hold your lane and stay le
 Key: Support in the neutral zone means being available in a different place, not being close
 Convention: Lanes are positions, not people — you will swap constantly, so call it: "I've got middle"
 ```
-
-Divide the ice lengthways into three lanes: **left wall, middle, right wall.** The base rule is **one forward in each lane**.
 
 **Why.** Three separated forwards are three passing options, and one flat line of defenders cannot cover three lanes without spreading thin. Two forwards in one lane lets one defender cover both — you have made it 5-on-4 against yourselves.
 
@@ -636,6 +636,8 @@ Divide the ice lengthways into three lanes: **left wall, middle, right wall.** T
 
 ### The stretch pass
 
+**What it is.** A long pass from your own end or the neutral zone to a forward who has stayed high — near or beyond the far blue line — skipping the neutral zone entirely.
+
 ```facts
 Position: A forward stays high — near or beyond the far blue line — and the pass bypasses the neutral zone entirely
 Rule: The stretch pass is legal only because the two-line pass rule went — commonly dated to the end of the 2004-05 lockout, a date in no rulebook held here; what is checked is that NHL Rule 83 now contains no two-line provision
@@ -645,8 +647,6 @@ Rule: A skate in the air over the neutral zone counts as onside under NHL, IIHF 
 Technique: Flat and hard, into the space they are skating into — a stretch pass to a stationary player is a turnover
 Risk: Leaving a forward high means defending 4-on-5 while you do it — a coaching decision, so ask
 ```
-
-**What it is.** A long pass from your own end or the neutral zone to a forward who has stayed high — near or beyond the far blue line — skipping the neutral zone entirely.
 
 **Why it exists.** It is legal only because the two-line pass rule went (see [What the neutral zone actually is](#what-the-neutral-zone-actually-is)). It counters a flat line **still holding out in the neutral zone** — a 1-2-2 trap at the red line, or the three-player line of a 1-3-1 — because there is real ice behind such a line for a receiver to stand in legally.
 
@@ -662,6 +662,8 @@ Risk: Leaving a forward high means defending 4-on-5 while you do it — a coachi
 
 ### The late man
 
+Also called the **trailer** or **third man high**. One forward deliberately stays 10 to 15 feet behind the play and arrives into the space the first two have vacated.
+
 ```facts
 Position: Delay deliberately, staying 10 to 15 feet behind the play, and arrive into the space the first two attackers have vacated
 Goal: Arrive into the high slot behind a two-player rush — defenders track the puck, so the second man in is the one nobody picked up
@@ -669,8 +671,6 @@ Convention: Coaching material treats it as one of the most reliable scoring look
 Never: Drift five feet behind — being the late man means a full gap back, so the defence has to choose between you and the puck
 Action: Be the first man back if it turns over — that is the deal
 ```
-
-Also called the **trailer** or **third man high**. One forward deliberately stays 10 to 15 feet behind the play and arrives into the space the first two have vacated.
 
 The picture below is drawn from the defending bench, because that side has to solve it. Read "the defencemen" and "the backcheckers" as the trailer's opponents.
 
@@ -682,6 +682,8 @@ The picture below is drawn from the defending bench, because that side has to so
 
 ### Chip-and-chase
 
+**What it is.** Instead of carrying through a defender with a tight gap, **chip the puck past them into space** — off the boards, off the glass, or softly behind them — and skate onto it.
+
 ```facts
 Action: Rather than carrying through a tight gap, chip the puck past the defender into space — off the boards, off the glass, or softly behind them — and skate onto it
 Read: Right against a defenceman standing up at the line, against a 1-3-1 with only one man behind the wall, or when you have a speed advantage
@@ -691,8 +693,6 @@ Never: Chip from your own side of the red line at equal strength — untouched o
 Risk: After an even-strength icing, NHL, IIHF, PWHL and Hockey Canada U18AAA, Junior and opted-in Senior rules bar a line change before the faceoff — narrow exceptions, an injured player among them
 ```
 
-**What it is.** Instead of carrying through a defender with a tight gap, **chip the puck past them into space** — off the boards, off the glass, or softly behind them — and skate onto it.
-
 **When it is right.** Against a defenceman standing up at the line; against a 1-3-1, with only one player behind the wall; when you have a speed advantage; when you are changing and want the puck deep and safe.
 
 **How to do it well.** The chip is a **placement**, not a clearance. Aim for a spot you can win — soft off the wall so it dies in the corner you are skating to, or flat past the defender's stick-side hip so you run around them on your forehand. **The difference from dump-and-pray is whether the second and third forwards go.**
@@ -701,6 +701,8 @@ Risk: After an even-strength icing, NHL, IIHF, PWHL and Hockey Canada U18AAA, Ju
 
 ### Using the middle to change the point of attack
 
+A forward in the middle lane is not usually there to shoot. **A puck touched in the middle forces every defender to reset.**
+
 ```facts
 Goal: A puck touched in the middle forces every defender to reset — the structure has to slide twice, and sliding structures have seams
 Action: Play wall to middle to far wall — a two-pass sequence that takes about a second and is the most reliable way to enter with control against organised defence
@@ -708,8 +710,6 @@ Technique: Make the middle-lane pass a one-touch relay, not a reception and a lo
 Risk: Losing the puck in the middle costs the most relative to the risk you thought you were taking — coaching consensus rather than measurement — and a player who turns to survey there gets hit
 Never: Take a middle-lane puck with your head down over it — you cannot brace for a hit you never saw, and the middle is where coaching material puts the contact
 ```
-
-A forward in the middle lane is not usually there to shoot. **A puck touched in the middle forces every defender to reset.**
 
 A defensive structure defends one side at a time — the whole thing slides strong side. One quick pass into the middle and out to the far wall makes it slide twice, and a sliding structure has seams. Wall to middle to far wall takes about a second and is the most reliable way to enter with control against organised defence.
 

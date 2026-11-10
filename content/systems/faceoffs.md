@@ -296,6 +296,8 @@ What [a skate at the man](#a-skate-at-the-man) costs comes later, in What it cos
 
 ### Everyone has a tell
 
+Most centres have exactly one preferred technique and one strong side. Two shifts of attention is usually all it takes to find them.
+
 ```facts
 Action: Watch other lines' draws from the bench, not just your own
 Read: A rolled-over bottom hand means a backhand pull is coming
@@ -305,14 +307,14 @@ Read: Stick blade angle tells you where they want the puck to go
 Read: A tight grip and low coiled stance means a clean-win attempt; relaxed and upright means a tie-up
 ```
 
-Most centres have exactly one preferred technique and one strong side. Two shifts of attention is usually all it takes to find them.
-
 - **Watch other lines' draws, not just your own.** You get roughly 56 chances a game to scout the two or three centres you will face, most of them from the bench.
 - **Read the grip.** A rolled-over bottom hand means a backhand pull. Hands high on the shaft mean a sweep or a tie-up rather than a yank.
 - **Read the stance.** The loaded foot tells you which way they will rotate; the blade angle tells you where they want the puck.
 - **Read the tension.** A tight grip and a low, coiled stance usually mean a clean-win attempt; relaxed and upright often means a tie-up.
 
 ### Watch the hand, not the man
+
+This is the one universal. **Look at the linesperson's hand and the puck, not your opponent's stick.** Reacting to the drop is a reaction-time problem you can train; reacting to them leaves you a step behind and open to feints. Some coaching sources watch the official's **elbow** instead, because it moves fractionally earlier.
 
 ```facts
 Key: Look at the linesperson's hand and the puck, not your opponent's stick
@@ -322,11 +324,11 @@ Options: Some coaching sources watch the official's elbow instead, on the ground
 Read: Linespersons have tendencies too — height of drop, speed of drop, how long they hold
 ```
 
-This is the one universal. **Look at the linesperson's hand and the puck, not your opponent's stick.** Reacting to the drop is a reaction-time problem you can train; reacting to them leaves you a step behind and open to feints. Some coaching sources watch the official's **elbow** instead, because it moves fractionally earlier.
-
 Linespersons have tendencies too — height of drop, speed of drop, how long they hold. Notice them.
 
 ### Vary your approach
+
+The counter to a scouted centre is unpredictability. Win three straight draws pulling to the same defenceman and the fourth will be jumped. Change the *technique*, not just the target: pull one back, tie the next up, sweep the third. Even a technique you are worse at has value if it stops them pre-loading against your best one. (Kicking it back is a fourth option under the NHL but not the IIHF — see "Using your feet".)
 
 ```facts
 Action: Change the technique, not just the target — pull one back, tie the next up, sweep the third
@@ -338,8 +340,6 @@ Goal: Make them move before the drop — that is a faceoff violation, but the re
 Rule: Neither IIHF edition removes their centre for a premature move — the 2025/26 book warned their team and re-dropped, the 2026/27 book re-drops (IIHF 76.7, both); the ejections live in 76.6 and in 76.7's contact paragraph, not in its opening sentence
 Rule: ⚠️ **Under the IHUK In-House Rules 2026-27 the feint pays** — they replace the centre for every violation except on a draw after an icing, a premature move included. Not in the Elite League: its Casebook writes no Rule 76, so IIHF 76.7 only re-drops
 ```
-
-The counter to a scouted centre is unpredictability. Win three straight draws pulling to the same defenceman and the fourth will be jumped. Change the *technique*, not just the target: pull one back, tie the next up, sweep the third. Even a technique you are worse at has value if it stops them pre-loading against your best one. (Kicking it back is a fourth option under the NHL but not the IIHF — see "Using your feet".)
 
 Deception belongs here too: a small feint of the shoulder, a hip fake, or a deliberately delayed stick can draw an opponent into moving early. ⚠️ **Feint with the shoulder, never into them** — you are about one stick length apart, so the shoulder is the movement most likely to become contact before the drop. A feint that touches them is pre-drop contact, which can cost a minor — mandatory under USA Hockey, Hockey Canada and CARHA.
 
@@ -442,6 +442,8 @@ The highest-stakes alignment in hockey. It has to work on a win, a loss and a ti
 
 ### Offensive-zone draws
 
+The one place in hockey you get to run a genuine set play against a stationary defence from a known start. **What follows is a common default, not a rule**; find out what your team runs.
+
 ```facts
 Position: Strong-side defenceman at the point, feet already set and stick already loaded — this is the shooter
 Position: Weak-side defenceman at the far point, holding the line as the safety against a counterattack
@@ -452,8 +454,6 @@ Action: On a clean loss, wingers pressure the puck rather than retreat, the stro
 Key: An offensive-zone tie-up is a free 50-50 puck in the other team's end — a good outcome, not a failure
 Convention: The offensive-zone alignment described here is a common default, not a rule — they differ from team to team, so find out what your team runs
 ```
-
-The one place in hockey you get to run a genuine set play against a stationary defence from a known start. **What follows is a common default, not a rule**; find out what your team runs.
 
 **The standard setup:**
 
@@ -475,6 +475,8 @@ Boards-side and inside mirror here as in your own end, and "strong-side" for the
 
 ### Neutral-zone draws
 
+The lowest-stakes draws, and the ones most worth a risk. **The setup below is a common default, not a rule**; find out what your team runs.
+
 ```facts
 Position: Both wingers wide in their lanes, level with or just behind the dot
 Position: Both defencemen back toward your own blue line, one either side of the middle
@@ -484,8 +486,6 @@ Action: On a loss, gap up immediately and defend the rush
 Mindset: This is where you experiment — a lost neutral-zone draw costs you almost nothing
 Convention: The neutral-zone alignment described here is a common default, not a rule — they differ from team to team, so find out what your team runs
 ```
-
-The lowest-stakes draws, and the ones most worth a risk. **The setup below is a common default, not a rule**; find out what your team runs.
 
 **The standard setup:**
 
@@ -587,14 +587,14 @@ What [a hit on the player fetching it](#a-hit-on-the-player-fetching-a-rim) cost
 
 ### Keeping it simple enough to work
 
+The failure mode is universal: teams install six plays, run each badly, and the players spend the drop trying to remember which one is on.
+
 ```facts
 Convention: Two or three plays maximum, per zone
 Action: One-word calls from the centre at the dot, acknowledged by everyone — a play nobody heard is not a play
 Key: Every play needs a defined failure branch: if we lose it, X does Y
 Never: Get clever when there is confusion, no call, or a replacement taking the draw. Tie up in your own end instead, point shot in theirs
 ```
-
-The failure mode is universal: teams install six plays, run each badly, and the players spend the drop trying to remember which one is on.
 
 - **Two or three plays maximum**, per zone. One play run excellently beats six run adequately.
 - **One-word calls.** The centre calls it at the dot; everyone acknowledges. A play nobody heard is not a play.
@@ -727,6 +727,8 @@ What [pre-drop contact](#contact-before-the-drop) costs comes later, in What it 
 
 #### Being late to the dot — the one softening, and who writes it
 
+**Be at the dot on time — the safe play is the same under every book, and it is free.**
+
 ```facts
 Rule: Being late to the faceoff location, and therefore offside for the draw, is warned once in the game under NHL and IIHF 76.7 — the warning going to the team and its coach — and the rule says the centre "is not ejected from the face-off"
 Rule: Timing your arrival is not the same as being late — a centre who "attempts to arrive at the face-off spot just as the five seconds elapses in an attempt to gain an advantage" is removed and replaced under NHL and IIHF 2026/27 Rule 76.4, unless the draw follows an icing
@@ -738,8 +740,6 @@ Rule: The carve-out shields the centre from their teammates' lateness in both II
 Action: Be at the dot on time — the safe play is the same under every book, and it is free
 ```
 
-**Be at the dot on time — the safe play is the same under every book, and it is free.**
-
 **Under the NHL and the IIHF, players simply late to the faceoff location**, and therefore offside for the draw, get **one warning per game**, to the team and its coach, and Rule 76.7 says *"the offending team's center is not ejected from the face-off."* Any later instance is a bench minor, *"Delay of Game – Slow Proceeding to Face-off Location."* It shields the centre from their teammates' lateness, not their own: if they are *"simply slow getting to the face-off spot"*, the puck is dropped without them (Rule 76.4).
 
 **Timing your arrival to the clock is not the same as being late.** NHL Rule 76.4 removes a centre who *"attempts to arrive at the face-off spot just as the five seconds elapses in an attempt to gain an advantage to win the face-off"*, and the IIHF 2026/27 edition prints the same sentence (2025/26 warned the centre instead). Both carve out one draw: after an icing they are warned rather than removed. So the free attempt under "The icing exception" below is the only one either book gives you. ⚠️ **Time your arrival to the clock on any other draw and you are thrown off the dot.**
@@ -749,6 +749,8 @@ Action: Be at the dot on time — the safe play is the same under every book, an
 > 🇬🇧 **⚠️ Across the Home Countries, plan on your centre being replaced.** The IIHF rule charges teammates' lateness to the team, and the 2025/26 book the In-House Rules adopt says the centre *"will not receive a warning for a 'face-off' violation"*. But the In-House Rules replace the centre for every violation except on a draw after an icing, and a player lined up offside is a violation under IIHF 76.3(V). Whether that reaches a team that is merely late is not written down, and where the texts differ the In-House Rules win: they call themselves the *"overriding interpretation"*, and IHUK's Rules of Competition for NIHL 1 and 2, the WNIHL and junior hockey say the IHUK wording *"will take precedence for domestic competition"*. **The Elite League has none of this**: under the 2026/27 book it plays, the once-a-game warning stands and the centre *"is not ejected"*.
 
 ### Getting low without putting your head in it
+
+**"Get low, chest over the puck" can put your head where the rulebook does not want it.** Two centres both doing it well finish with their heads close together over the dot. **Get the depth from your knees and hips, not by pushing your head out** — the low stance is loaded, not leaning. Under USA Hockey any helmet clash is head contact — at least a minor plus a misconduct, and a major and game misconduct if careless, intentional or reckless, and a match can be added (620). And if the other centre leans into you, move back when the linesperson tells you both to.
 
 ```facts
 Rule: Helmet-to-helmet contact with the other centre before the drop is named in the rulebook as a faceoff violation (IIHF 76.7(III), both editions); the 2025/26 book gave it a first warning, the 2026/27 book deleted that warning
@@ -760,8 +762,6 @@ Action: Get your chest over the puck, not your head over the dot — depth comes
 Rule: Under USA Hockey a helmet clash at the dot is head contact, however little force is behind it: at least a minor plus a misconduct, and a major and game misconduct if careless, intentional or reckless, a match addable (620; Casebook 620 Situation 1)
 Never: Lead with your helmet into the other centre — that is head-butting, a major and game misconduct or a match in most books
 ```
-
-**"Get low, chest over the puck" can put your head where the rulebook does not want it.** Two centres both doing it well finish with their heads close together over the dot. **Get the depth from your knees and hips, not by pushing your head out** — the low stance is loaded, not leaning. Under USA Hockey any helmet clash is head contact — at least a minor plus a misconduct, and a major and game misconduct if careless, intentional or reckless, and a match can be added (620). And if the other centre leans into you, move back when the linesperson tells you both to.
 
 **The IIHF Situation Handbook takes the position twice.** **Situation 76.42** — heads *"side by side, almost ear to ear"* — says *"[t]his should not be allowed. The Linesperson should instruct both players to move back"*; a refusal was *"warned"* in the 2025/26 handbook and is *"removed from the face-off"* in the 2026/27 one. **Situation 76.43** — *"helmet to helmet contact"* — moved from *"immediately warn the center that is responsible"* (and *"warn both centers"* where it cannot be told) to *"immediately eject"* the centre (or *"eject both centers"*).
 
@@ -797,13 +797,13 @@ Action: Tell your linemates: skates and stick behind your own hash mark, skates 
 
 ### The second violation
 
+**After a first violation, nobody moves early, nobody leans, nobody reaches.** The replacement taker should keep it to a clean tie-up: **lift or press their stick with yours and then play the puck — never a hand on their stick or your stick on their hands, and never hook it or hold it down**, because each of those is a minor of its own. ⚠️ **Under Hockey Canada, let the linesperson clear the dot before you commit**, and take the re-drop straight. A second violation by your team on that draw is a bench minor under the NHL, the PWHL and the IIHF, a minor on the offender under USA Hockey, and a possible minor under Hockey Canada and CARHA. What [a second violation](#losing-your-centre-and-the-bench-minor) costs in each book comes later, in What it costs.
+
 ```facts
 Rule: Two faceoff violations by the same team on the same draw is a bench minor under NHL and IIHF Rule 76.7
 Rule: ⚠️ **Under Hockey Canada a second violation that runs into the official is a mandatory minor** — a player who contacts the linesperson before they have "reasonable time to vacate the face-off location" "will be assessed a Minor penalty" (6.2(e))
 Action: With a replacement in the dot keep it simple: lift or press their stick with yours, then play the puck. Never a hand on their stick or your stick on their hands, and never hook it or hold it down
 ```
-
-**After a first violation, nobody moves early, nobody leans, nobody reaches.** The replacement taker should keep it to a clean tie-up: **lift or press their stick with yours and then play the puck — never a hand on their stick or your stick on their hands, and never hook it or hold it down**, because each of those is a minor of its own. ⚠️ **Under Hockey Canada, let the linesperson clear the dot before you commit**, and take the re-drop straight. A second violation by your team on that draw is a bench minor under the NHL, the PWHL and the IIHF, a minor on the offender under USA Hockey, and a possible minor under Hockey Canada and CARHA. What [a second violation](#losing-your-centre-and-the-bench-minor) costs in each book comes later, in What it costs.
 
 ### The icing exception — which books grant it, and to whom
 
@@ -884,6 +884,8 @@ Special-teams draws are about 10 a game (9.6 in 2024-25, 10.1 in 2025-26, from N
 
 ### Power-play draws
 
+**Where your book lets the power-play team pick the dot, pick it**: your centre's strong side, or the side your one-timer shoots from. A surprising number of teams do not think about it — a coaching observation, not a count. The NHL, IIHF and PWHL give the choice (76.2; PWHL 78.2), so it is yours everywhere in Britain; Hockey Canada only in Junior and Senior, if you name the dot before the change (6.4(b)); USA Hockey and CARHA never, so prepare for either side.
+
 ```facts
 Rule: The team awarded the power play chooses which end-zone dot the draw starts at — NHL and IIHF Rule 76.2, PWHL 78.2, and Hockey Canada 6.4(b) in Junior and Senior only
 Rule: USA Hockey (612(b), 624(a)) and CARHA (39(a), 65(a)) give no dot choice here or after an icing, and a CARHA power-play draw can fall in the neutral zone (39(a) Note)
@@ -892,8 +894,6 @@ Key: The entry you avoid is worth more than the draw you win
 Priority: Win the draw, or make sure you do not lose it cleanly — a tie-up that keeps the puck in the zone is fine
 Never: Fire a fancy set play that ends in a clearance
 ```
-
-**Where your book lets the power-play team pick the dot, pick it**: your centre's strong side, or the side your one-timer shoots from. A surprising number of teams do not think about it — a coaching observation, not a count. The NHL, IIHF and PWHL give the choice (76.2; PWHL 78.2), so it is yours everywhere in Britain; Hockey Canada only in Junior and Senior, if you name the dot before the change (6.4(b)); USA Hockey and CARHA never, so prepare for either side.
 
 **On a delayed penalty against them, keep the puck and don't hand the referee a whistle of your own.** Ice it and, under USA Hockey, Hockey Canada and CARHA, the power-play draw leaves their end for a neutral-zone dot outside your own blue line (612(b)(4); 6.3(c)(iv); 39(b)). Under USA Hockey any whistle you cause costs you their end (612(b)(4)); under CARHA so does a puck you put out of play from your own zone, or an offside pass over the red line.
 
@@ -1006,6 +1006,8 @@ Read: Expect more re-drops and more violations called
 
 ### With seconds left on the clock
 
+**With a few seconds left and a goal needed, the common play is the quickest shot you can set up.** Win it straight back to the strong-side defenceman or the inside winger, feet already set, with a forward at the net front for the screen and the rebound; there is no time for a second pass. **A realistic alternative is for the centre to shoot straight off the draw**, pulling or pushing it at the net in one motion — the goalie has no time to set, at the cost of a weak shot. Ask your bench which your team uses, and settle it at the bench, not the dot.
+
 ```facts
 Action: Needing a goal, win it straight back to a shooter whose feet are already set, with a forward at the net front for the screen and the rebound
 Options: Some centres shoot straight at the net off the draw instead — it gives the goalie no time to set, at the cost of a weak shot
@@ -1013,19 +1015,17 @@ Action: Defending a draw with seconds left, a tie-up is a win — wingers into t
 Key: There is no time for a second pass, so agree the play at the bench, not at the dot
 ```
 
-**With a few seconds left and a goal needed, the common play is the quickest shot you can set up.** Win it straight back to the strong-side defenceman or the inside winger, feet already set, with a forward at the net front for the screen and the rebound; there is no time for a second pass. **A realistic alternative is for the centre to shoot straight off the draw**, pulling or pushing it at the net in one motion — the goalie has no time to set, at the cost of a weak shot. Ask your bench which your team uses, and settle it at the bench, not the dot.
-
 **Defending that draw, all you need is time.** A tie-up is a win, the wingers get into the shooting lanes rather than chasing the puck, and a won puck goes off the glass and out — every second of a scramble is a second off their last attack.
 
 ### After a timeout
+
+A timeout buys both teams a rest and a chance to draw up the alignment. So expect the opponent to have a plan too, and expect it to differ from their default. Under the NHL, IIHF and PWHL you cannot take a time-out after a faceoff violation, and the team that iced cannot take one either. What [the time-out rules](#the-penalty-box-time-outs-and-line-changes) cost comes later, in What it costs.
 
 ```facts
 Read: Expect the opponent to have a plan too, and expect it to differ from their default
 Rule: No time-out is granted following a faceoff violation (NHL and IIHF Rule 87.1, PWHL Rule 89.1)
 Rule: No time-out for the defensive team following an icing, after their goalie stops a shot from beyond the centre red line, or after a defender accidentally dislodges the net (NHL Rule 87.1)
 ```
-
-A timeout buys both teams a rest and a chance to draw up the alignment. So expect the opponent to have a plan too, and expect it to differ from their default. Under the NHL, IIHF and PWHL you cannot take a time-out after a faceoff violation, and the team that iced cannot take one either. What [the time-out rules](#the-penalty-box-time-outs-and-line-changes) cost comes later, in What it costs.
 
 ### With the goalie pulled
 
@@ -1052,6 +1052,8 @@ What [a refused change](#the-penalty-box-time-outs-and-line-changes) costs comes
 
 ### When the other centre keeps beating you
 
+Some nights one centre beats you clean every time. **The common answer is to go to the tie-up**: lift or press their stick with yours, over or under the blade, then play the puck — stick on stick only, never a hand on their stick or your stick on their hands. Tell your wingers before you line up that it is a tie-up draw, so the two nearest go on the drop. **The realistic alternative is to change the taker** — a centre who shoots the other way and takes the dots on their strong side, or a winger who reads this centre better. Ask your bench which comes first, and scout them from the bench meanwhile.
+
 ```facts
 Action: Go to the tie-up — lift or press their stick with yours, then play the puck, so their clean win becomes a scramble your four are already leaning into
 Action: Tell your wingers before you line up that it is a tie-up draw, so the two nearest bodies go on the drop
@@ -1060,8 +1062,6 @@ Read: Scout them from the bench — most centres have one preferred draw and one
 Never: Cheat back against a centre who cheats the drop — hold your timing; under the NHL, IIHF and PWHL a premature move is a violation on either centre, and Hockey Canada names it as one
 Never: Answer a lean with a lean — contact before the drop is a violation whoever makes it, and a minor, mandatory under USA Hockey, Hockey Canada and CARHA
 ```
-
-Some nights one centre beats you clean every time. **The common answer is to go to the tie-up**: lift or press their stick with yours, over or under the blade, then play the puck — stick on stick only, never a hand on their stick or your stick on their hands. Tell your wingers before you line up that it is a tie-up draw, so the two nearest go on the drop. **The realistic alternative is to change the taker** — a centre who shoots the other way and takes the dots on their strong side, or a winger who reads this centre better. Ask your bench which comes first, and scout them from the bench meanwhile.
 
 **When that centre cheats the drop — moving early, or leaning in — do not cheat back.** Hold your timing, watch the hand, and press their stick as the puck lands so their jump wins nothing. Never answer a lean with a lean. Under the NHL, the IIHF and the PWHL moving early is a violation on whichever centre does it, and Hockey Canada names it as one; a lean is pre-drop contact, which can cost a minor — mandatory under USA Hockey, Hockey Canada and CARHA. What [cheating back](#contact-before-the-drop) costs comes later, in What it costs.
 

@@ -27,6 +27,8 @@
 
 ## Overview
 
+**Forechecking** is the pressure your team applies at the other team's end of the rink while they have the puck and you do not — the opposite of racing back to defend your own net.
+
 ```facts
 Key: Forechecking is the pressure your team applies in the opponents' end when they have the puck and you don't — the opposite of backchecking
 Key: It is the first thing your team does after losing the puck in the attacking end, and the biggest lever a coach has over how a game feels
@@ -39,8 +41,6 @@ Never: Finish into the back of a player facing the end boards — every book her
 Action: Defencemen — pinch only when the puck is slowing on the wall, you can arrive as it does and F3 is high; by default only one of you goes
 Risk: Guessing which forecheck your own team is running is how odd-man rushes happen
 ```
-
-**Forechecking** is the pressure your team applies at the other team's end of the rink while they have the puck and you do not — the opposite of racing back to defend your own net.
 
 **Pressure and risk are the same dial.** Every player you send deep is one fewer between the puck and your goalie. One chaser rarely costs anything. Two win plenty of pucks and sometimes leave you outnumbered coming back. Three plus a defenceman win pucks constantly and, when they fail, leave an opponent alone on your goalie. **Ask which setting your team runs and which one it switches to with a lead.**
 
@@ -97,6 +97,8 @@ Passive systems are not "not forechecking." They have decided Win 2 is the bette
 
 ### The fundamental trade-off
 
+There are five of you on the ice. Every player you send below the top of the circles to hunt the puck is one fewer player between the puck and your goalie.
+
 ```facts
 Key: Pressure and risk are the same dial — every player you send below the top of the circles is one fewer between the puck and your goalie
 Options: One forechecker is easy to beat but almost never costs you anything
@@ -104,8 +106,6 @@ Risk: Two forecheckers win a lot of pucks and occasionally leave you 3-on-2 goin
 Risk: Three forecheckers plus a pinching defenceman win pucks constantly and, when they fail, produce a breakaway
 Action: Say it out loud — "I've got F1" or "I'm high" prevents two players doing the same job while nobody does the other one
 ```
-
-There are five of you on the ice. Every player you send below the top of the circles to hunt the puck is one fewer player between the puck and your goalie.
 
 - **One forechecker** is easy to beat but almost never costs you anything.
 - **Two forecheckers** win a lot of pucks and occasionally leave you 3-on-2 going the other way.
@@ -119,14 +119,14 @@ That is the whole subject in three lines. Pressure and risk are the same dial. A
 
 ## F1 / F2 / F3 — Roles, Not People
 
+**F1, F2 and F3 are defined by order of arrival at the puck. Nothing else.**
+
 ```facts
 Key: F1, F2 and F3 are defined by order of arrival at the puck, and by nothing else
 Key: F1 is whichever forward gets there first, F2 whichever arrives second, F3 the one who is left, staying high towards the blue line you face until the puck escapes and F3 is first man back
 Never: Treat them as positions — if your left winger is closest when the puck goes in the corner, your left winger is F1 and your centre is F2, immediately and without discussion
 Convention: Some coaches do assign them by position as a teaching shortcut, and Centre and Winger describe the common case where the centre is F1 — that is the typical case, not the rule
 ```
-
-**F1, F2 and F3 are defined by order of arrival at the puck. Nothing else.**
 
 - **F1** is whichever forward gets there first.
 - **F2** is whichever forward arrives second.
@@ -222,14 +222,14 @@ The reason this works is that a curved approach keeps you in a position to react
 
 ### Stick position
 
+**Stick out front, blade on the ice, in the passing lane you are taking away.** Not tucked beside your skates, not raised.
+
 ```facts
 Position: Stick out front, blade on the ice, in the passing lane you are taking away — not tucked beside your skates, not raised
 Technique: Aim the blade at the puck as you close
 Goal: A stick in the lane back to the far defenceman removes that pass without costing you any body position
 Key: Even if you never make contact, the carrier has to protect the puck and has to look at you — so they are not looking for their outlet
 ```
-
-**Stick out front, blade on the ice, in the passing lane you are taking away.** Not tucked beside your skates, not raised.
 
 The stick is the cheap part of angling — it takes away a pass without costing you any body position. If your stick is in the lane back to the far defenceman, that pass simply does not get made, and you have removed an option without doing anything athletic.
 
@@ -451,6 +451,8 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 
 ### 1-4 — the full retreat
 
+**Shape:** One forward applying token pressure; the other four in a flat line across the ice at or near **their own** blue line.
+
 ```facts
 Position: One forward applying token pressure, the other four flat across the ice at or near their own blue line
 Key: This is a neutral-zone structure, not an offensive-zone forecheck — Neutral Zone Systems is the authority on it
@@ -460,8 +462,6 @@ Risk: It concedes any realistic chance of getting the puck back in their end, an
 Read: A situational tool only — a one-goal lead in the last two minutes, the end of a period, no legs left, or a far better opponent
 Countered by: A hard chip past the flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line; if the goalie comes out for it, pull up
 ```
-
-**Shape:** One forward applying token pressure; the other four in a flat line across the ice at or near **their own** blue line.
 
 **This is a neutral-zone structure, not an offensive-zone forecheck**, and [Neutral Zone Systems](neutral_zone_systems.md) is the authority on it. It is listed here only because coaches call it a forecheck and because it is the shape a failed forecheck retreats into. The short version:
 
@@ -550,6 +550,8 @@ Forwards get most of the attention here, but the defencemen decide whether a for
 
 ### Holding the line
 
+Your default position as a defenceman on the forecheck is **at or just inside the offensive blue line**, feet moving, on your toes.
+
 ```facts
 Position: At or just inside the offensive blue line, feet moving, on your toes
 Never: Stand still — stationary, you can neither reach a rim coming around nor retreat
@@ -557,8 +559,6 @@ Technique: Small forward-and-back adjustments keep you able to do both
 Rule: You are offside only once both skates have completely crossed the blue line before the puck completely crosses it (NHL Rule 83) — one skate on or behind keeps you onside
 Rule: A skate raised over the neutral zone is still onside under NHL, IIHF and PWHL rules; USA Hockey 630(a) and Hockey Canada 6.11 require skate contact, so there it is offside — and CARHA settles it neither way, so keep the blade down
 ```
-
-Your default position as a defenceman on the forecheck is **at or just inside the offensive blue line**, feet moving, on your toes.
 
 Standing still is the mistake. If you are stationary when a rim comes around, you cannot get to it, and you cannot retreat either. Small forward-and-back adjustments keep you able to do both.
 
@@ -892,6 +892,8 @@ This is worth spelling out, because you will be told both things by different co
 
 ### At rec level: simpler is better
 
+If you play beer league or adult rec, the honest answer to "which forecheck should we run?" is **the one everybody actually remembers at 10:45pm on a Tuesday.**
+
 ```facts
 Key: Run the forecheck everybody actually remembers at 10:45pm on a Tuesday
 Convention: A 1-2-2 is usually the right default for your league — a recommendation for rec hockey, not a claim about what most teams play
@@ -900,8 +902,6 @@ Action: Agree only that "one goes, one supports, one stays high" and you have mo
 Never: Send both defencemen unless the bench has explicitly called an all-out press — coaching material puts most rec-league odd-man rushes there, and nothing counts them
 Mindset: An aggressive forecheck is a conditioning decision as much as a tactical one
 ```
-
-If you play beer league or adult rec, the honest answer to "which forecheck should we run?" is **the one everybody actually remembers at 10:45pm on a Tuesday.**
 
 - **A 1-2-2 is usually the right default** — note that this is a recommendation for *your* league, not a claim about what most teams play. It is forgiving, it does not require anyone to sprint, and its failure mode is "we didn't get the puck back," not "breakaway." The standard forecheck here is a 2-1-2 because that is what the position documents are written around; if your team can sustain it, run it.
 - **Two players on one puck is the practical version of every aggressive system.** If your line agrees only that "one goes, one supports, one stays high," you have most of the benefit of a real system.

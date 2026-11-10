@@ -30,6 +30,8 @@
 
 ## Overview
 
+Goaltending is not primarily about reflexes — it is about being in the right place, so that the save needs almost no reflex at all.
+
 ```facts
 Key: Goaltending is not primarily about reflexes — it is about being in the right place, so that the save needs almost no reflex at all
 Convention: Be out, be square, be set — Korn's three steps, which he numbers but does not rank; trading a little depth to be completely set is a coaching judgement rather than his, so ask your coach
@@ -40,8 +42,6 @@ Technique: Track the puck all the way into the pad, the glove, the chest — if 
 Key: You see everything and you are the only player not deciding while sprinting — a view wasted unless you say it, early, short, every time
 Mindset: You will let in bad goals — have a reset ritual, use it identically every time, and do the analysis tomorrow, not during the game
 ```
-
-Goaltending is not primarily about reflexes — it is about being in the right place, so that the save needs almost no reflex at all.
 
 **Tracking the puck all the way in** pays twice. Goalie coaches put almost every soft goal down to losing sight of it — an observation, not a count — and if you saw it hit you, you know where the rebound went. **Your voice** is the most valuable thing you do that is not a save. A goalie who calls only sometimes trains their defencemen to filter them out.
 
@@ -65,6 +65,8 @@ And one thing that is not vocabulary at all, but the premise of everything below
 
 ### The ready stance
 
+Everything else is built on this. A stance that is wrong in a small way at the start of the play is wrong in a large way by the time the shot arrives.
+
 ```facts
 Position: Feet slightly wider than shoulder-width, weight on the inside edges of the balls of your feet
 Technique: Get low with your knees, not your spine — bending at the waist drops your head and makes you fall through saves
@@ -74,8 +76,6 @@ Key: Head still and level — your eyes are the instrument, and everything else 
 Rule: A goalie's paddle may not exceed 26 inches (NHL Rule 10.2); too long and you stand taller and the six-hole opens
 Rule: IIHF Rule 10.2 sets the widened portion at 71 cm — about 28 inches, roughly two inches longer than the NHL's
 ```
-
-Everything else is built on this. A stance that is wrong in a small way at the start of the play is wrong in a large way by the time the shot arrives.
 
 - **Feet slightly wider than shoulder-width**, weight on the inside edges of the balls of your feet. Weight on your heels means you cannot push, and you will fall backwards on the first lateral move.
 - **Knees bent, chest up, back reasonably straight.** Bending at the waist to get low drops your head and pushes your shoulders forward, which is what makes goalies fall through their saves. Get low with your knees, not your spine.
@@ -132,6 +132,8 @@ The rough defaults, which every goalie coach will adjust:
 
 ### Playing the angle
 
+Imagine a line drawn from the puck to the exact centre of the goal line. Your job is to stand on that line, facing along it, with your body centred on it. Do that and you are covering the middle of the net by definition, and the shooter can only score by hitting the edges.
+
 ```facts
 Position: Stand on the line from the puck to the exact centre of the goal line, facing along it, centred on it
 Technique: Be out — at the depth this situation calls for
@@ -140,8 +142,6 @@ Technique: Be set — stationary, or as close to it as the play allows, at the m
 Convention: Korn lists out, square, set as three steps and does not rank them — trading a little depth to be set at release is a coaching judgement, and one manual gives up depth only against a back-door or deke threat, so ask your coach
 Action: Ask for the extra second in practice — if you are never set in practice, you will not be set in games
 ```
-
-Imagine a line drawn from the puck to the exact centre of the goal line. Your job is to stand on that line, facing along it, with your body centred on it. Do that and you are covering the middle of the net by definition, and the shooter can only score by hitting the edges.
 
 ![](diagram:goalie-playing-the-angle)
 
@@ -157,14 +157,14 @@ Mitch Korn's three-step formulation of cutting down the angle is the clearest on
 
 ### Squaring up
 
+Square is about your torso, not your feet. On a puck moving laterally across the top of the zone, you stay square by rotating your shoulders and hips and taking small shuffles — not by turning your skates and skating along an arc facing the wrong way.
+
 ```facts
 Technique: Square is about your torso, not your feet. Rotate your shoulders and hips and take small shuffles
 Never: Turn your skates and skate along an arc facing the wrong way
 Never: Take the big shuffle — two large steps instead of four opens the five-hole mid-step
 Key: A smaller shuffle is always better; a large one also leaves you unable to change direction
 ```
-
-Square is about your torso, not your feet. On a puck moving laterally across the top of the zone, you stay square by rotating your shoulders and hips and taking small shuffles — not by turning your skates and skating along an arc facing the wrong way.
 
 The common error is the **big shuffle**: covering the distance in two large steps rather than four small ones. A large shuffle opens the five-hole mid-step and leaves you unable to change direction. Smaller is better, always.
 
@@ -208,6 +208,8 @@ You cannot look at the net. The puck is at the other end of your attention and i
 
 ### Angle first, or depth first?
 
+The mainstream modern coaching emphasis is **angle before depth**: get on the line first, then add depth if the situation allows. Being deep but off-angle is a goal; being on-angle but a little deep is a save you have to make.
+
 ```facts
 Convention: The mainstream modern emphasis is angle before depth — get on the line first, then add depth if the situation allows
 Key: Being deep but off-angle is a goal; being on-angle but a little deep is a save you have to make
@@ -215,8 +217,6 @@ Read: Stepping off the post to face a short-side shot is the documented exceptio
 Key: Where the danger is a gap you have just created by moving, depth is the fix
 Action: Ask your own coach whether they teach angle before depth — this is a difference in coaching philosophy, not a settled fact
 ```
-
-The mainstream modern coaching emphasis is **angle before depth**: get on the line first, then add depth if the situation allows. Being deep but off-angle is a goal; being on-angle but a little deep is a save you have to make.
 
 There is at least one well-documented exception. Philadelphia Flyers goalie development coach Brady Robinson teaches that when you are **stepping off the post to face a short-side shot**, depth is the first thing you add — because pushing out along the short side is what closes the near-post gap that opens the instant you detach from the post. Treat that as the shape of the exception generally: when the danger is a gap you have just created by moving, depth is the fix.
 
@@ -376,6 +376,8 @@ Joe Bertagna's ordering of your options is the cleanest framework available, and
 
 ### Preventing the rebound — absorbing
 
+Absorbing means killing the puck's energy so it drops dead in front of you or stays in your equipment.
+
 ```facts
 Goal: Kill the puck's energy so it drops dead in front of you or stays in your equipment
 Technique: Let the stick blade give slightly on contact — a rigid stick sends the puck straight back out
@@ -383,13 +385,13 @@ Technique: Relax into the shot rather than bracing against it; a tensed goalie i
 Options: Kill a high shot by catching it cleanly, trapping it against your other equipment, or smothering it into your chest
 ```
 
-Absorbing means killing the puck's energy so it drops dead in front of you or stays in your equipment.
-
 - **A soft stick.** On a shot along the ice into your stick, let the blade give slightly on contact rather than holding it rigid. A rigid stick sends the puck straight back out; a soft stick drops it at your feet, where you can play it — or, in your crease with an attacker on you, cover it.
 - **Cushioning generally.** The same principle applies to your body and pads: relax into the shot rather than bracing against it. A tensed goalie is a trampoline.
 - **Three ways to kill a high shot:** catch it cleanly in the glove; trap it with the glove hand against your other equipment; or smother it into your chest by caving your arms in around it.
 
 ### Directing the rebound
+
+When you cannot absorb, you must aim. The target is **the corners** — wide and low toward the boards, below the goal line if you can, where no attacker is standing and where the puck ends up as a battle rather than a chance.
 
 ```facts
 Targets: The corners — wide and low toward the boards, below the goal line if you can
@@ -398,8 +400,6 @@ Never: Direct a rebound into the slot, where the other team's best players are s
 Action: Look off the puck before the shot is released and register who is where
 Key: Be specific — "a left shot open at the back post", not "there's a guy open"
 ```
-
-When you cannot absorb, you must aim. The target is **the corners** — wide and low toward the boards, below the goal line if you can, where no attacker is standing and where the puck ends up as a battle rather than a chance.
 
 ![](diagram:goalie-rebound-corners-not-slot)
 
@@ -449,14 +449,14 @@ Freezing means covering the puck to stop play. It is a real tool, and it is regu
 
 ### Throwing the puck forward
 
+**Put the puck down and play it with your stick.** Throwing it is a penalty or a whistle in most books, and the throw that feels safest — up the wall to a winger — is the one the IIHF penalises.
+
 ```facts
 Rule: A forward throw toward the opponent's net is a minor under NHL and IIHF 67.3(iii) and PWHL 69.3(iii), and the IIHF reads "forward" wide: a throw to a teammate at the top of the circle along the boards is a minor for handling the puck (Situation 67.2, in both the 2025/26 and 2026/27 Handbooks)
 Rule: Neither USA Hockey nor Hockey Canada penalises a goalie's forward throw, and both still stop play: USA Hockey 618(c) gives a defensive-zone draw against you once a teammate plays it, and Hockey Canada's Interpretation 6 to Rule 10.2(a) stops play on a glove throw to a teammate in any direction
 Rule: USA Hockey's Casebook defines "forward" as the wedge from each post to the nearest end-zone faceoff spot (Rule 618, Situation 9) — side-or-rear is expressly permitted, but the wedge's far edge past the dots is unstated, so treat a throw landing there as still inside it
 Rule: What USA Hockey's rule bars is specifically catching the puck in the glove, closing the hand, and propelling it forward to a teammate (Casebook, Rule 618 Situation 8); an open-handed bat, initiated and completed in your defending zone, is an ordinary hand pass under Rule 618(b) instead
 ```
-
-**Put the puck down and play it with your stick.** Throwing it is a penalty or a whistle in most books, and the throw that feels safest — up the wall to a winger — is the one the IIHF penalises.
 
 **So do not carry USA Hockey's side-and-rear permission into another book.** ⚠️ **Under Hockey Canada any glove throw to a teammate costs a stoppage, and under the NHL and IIHF a throw to a teammate up the ice costs two minutes.**
 
@@ -577,6 +577,8 @@ Two adjustments, and they pull in different directions from your normal instinct
 
 ### Reading a tip
 
+A tip or deflection changes the puck's direction a few feet in front of you, and no reflex is fast enough to follow it. So you do not try.
+
 ```facts
 Key: A tip changes direction a few feet in front of you and no reflex is fast enough to follow it — so do not try
 Read: A forward set up at the goalmouth with their blade in the shooting lane makes every point shot a probable tip
@@ -584,8 +586,6 @@ Technique: Stay tall and patient as long as you can — a low tip hits you if yo
 Key: Your best chance is the right place with a wide body and a still head, not a heroic reaction
 Convention: Shout for a teammate beside the net-front player — but whose job that is in the first place is a coaching choice: a defenceman's under a low zone collapse, whoever's check went there under man-on-man or a hybrid of the two, which can as easily be a forward. Find out which your team plays
 ```
-
-A tip or deflection changes the puck's direction a few feet in front of you, and no reflex is fast enough to follow it. So you do not try.
 
 ![](diagram:goalie-tip-from-the-point)
 
@@ -981,6 +981,8 @@ Everything else above holds under the IIHF's Rule 24, with the same numbering. O
 
 ### 2-on-1s — and what you want from your defenceman
 
+**The standard convention is that the defenceman takes away the pass and you take the shot.** Your defenceman positions in the passing lane with their stick flat on the ice, and you play the puck carrier as if it were a one-on-none: square up, come out to your normal depth, and make the save. The cross-ice pass to an open forward is the chance you cannot stop; the shot is the one you can.
+
 ```facts
 Convention: The standard convention is that your defenceman takes away the pass and you take the shot — a convention, not a law
 Action: Play the puck carrier as if it were a one-on-none — square up, come out to your normal depth, make the save
@@ -991,8 +993,6 @@ Options: Some teams instead coach a timed slide across the lane to kill the pass
 Action: Ask your defencemen and your coach what your team does — some take away the shooting lane instead, and what must not happen is the two of you holding different answers
 ```
 
-**The standard convention is that the defenceman takes away the pass and you take the shot.** Your defenceman positions in the passing lane with their stick flat on the ice, and you play the puck carrier as if it were a one-on-none: square up, come out to your normal depth, and make the save. The cross-ice pass to an open forward is the chance you cannot stop; the shot is the one you can.
-
 ![](diagram:rush-2-on-1)
 
 The call for it is your defenceman's **"I've got the pass" / "take the shooter"** — or yours, **"shot"**, which on this page means you have the shooter. Say it out loud rather than assuming it — this only works if both of you know which half is yours.
@@ -1001,6 +1001,8 @@ The call for it is your defenceman's **"I've got the pass" / "take the shooter"*
 
 ### 3-on-2s
 
+The common default is each defenceman taking an outside attacker and neither chasing the carrier, with the middle attacker left to whoever is backchecking that lane — usually the centre, though some teams instead have the strong-side defenceman take the puck carrier and the weak-side defenceman split the middle and far man. Both are coaching choices and they fail in different directions, and two defencemen playing different ones on the same rush is worse than either, so find out which one your team plays ([Defending the Rush](../systems/defending_the_rush.md) sets out both). From your side, the read is the same as a 2-on-1 but with a wider back door: don't over-challenge, stay a little deeper, and prioritise the ability to move laterally over the last foot of angle. Talk — "odd man" tells everyone to stop thinking about the puck and start counting. (An **odd-man rush** is any attack where the attackers outnumber the defenders who got back: a 2-on-1, a 3-on-2, a breakaway.)
+
 ```facts
 Convention: The common default is each defenceman taking an outside attacker, the middle man left to whoever backchecks that lane
 Read: A 3-on-2 is the same read as a 2-on-1, but with a wider back door
@@ -1008,8 +1010,6 @@ Action: Don't over-challenge. Stay a little deeper instead and prioritise latera
 Action: Call "odd man" to tell everyone to stop thinking about the puck and start counting
 Action: Find out which 3-on-2 version your team plays, because the two fail in different directions
 ```
-
-The common default is each defenceman taking an outside attacker and neither chasing the carrier, with the middle attacker left to whoever is backchecking that lane — usually the centre, though some teams instead have the strong-side defenceman take the puck carrier and the weak-side defenceman split the middle and far man. Both are coaching choices and they fail in different directions, and two defencemen playing different ones on the same rush is worse than either, so find out which one your team plays ([Defending the Rush](../systems/defending_the_rush.md) sets out both). From your side, the read is the same as a 2-on-1 but with a wider back door: don't over-challenge, stay a little deeper, and prioritise the ability to move laterally over the last foot of angle. Talk — "odd man" tells everyone to stop thinking about the puck and start counting. (An **odd-man rush** is any attack where the attackers outnumber the defenders who got back: a 2-on-1, a 3-on-2, a breakaway.)
 
 ![](diagram:rush-3-on-2-default)
 
@@ -1038,6 +1038,8 @@ A shootout attempt follows the penalty-shot rules, including staying in your cre
 
 ### Power play (your team is up a man)
 
+Quiet. You will see very few shots and then, occasionally, a rush the other way against tired defencemen. The failure mode is being cold and mentally elsewhere when it arrives.
+
 ```facts
 Read: On your own power play, very few shots — and then occasionally a rush the other way against tired defencemen
 Risk: The failure mode on a long power play is being cold and mentally elsewhere when that rush arrives
@@ -1045,8 +1047,6 @@ Action: Stay engaged — track the puck at the far end and move your feet at eve
 Action: Talk more, not less — your point men have their backs to the neutral zone and you have the clearest view of what is coming
 Read: Be ready for the shorthanded rush, usually a 2-on-1 or a breakaway, because your team has committed bodies
 ```
-
-Quiet. You will see very few shots and then, occasionally, a rush the other way against tired defencemen. The failure mode is being cold and mentally elsewhere when it arrives.
 
 - **Stay engaged.** Track the puck at the far end. Move your feet at every stoppage.
 - **Talk more, not less.** Your **point men** — the teammates stationed at the opposition blue line — have their backs to the neutral zone; you have the clearest view of a shorthanded break developing.
@@ -1136,13 +1136,13 @@ The other team cannot score off its own play while the referee's arm is up, beca
 
 ### Faceoffs in your own end
 
+A faceoff in your end is the one moment the play comes to you on a schedule, so use it. **Get set before the puck drops** — on your angle to the dot, square and at your normal depth — because a centre who loses it straight back to a shooter in the circle or the high slot is shooting before you have moved. **Talk before the drop, not after it:** check that the net front is covered and that every attacker has someone, and if your team lets the goalie call the draw, tell your centre where you want it. The usual default is to win it to the wall or back to a defenceman and never into the middle, but your team's set plays are your coach's call — [Faceoffs](../systems/faceoffs.md) sets out the options. **If it is lost cleanly**, expect the quick shot first and a tip second; **if it is won to the wall**, be ready to stop the rim behind your net for your defenceman.
+
 ```facts
 Action: Be set before the puck drops — on your angle to the dot, square and at your normal depth — because a draw won straight back can be a shot before you move
 Action: Before the drop, check the net front is covered and every attacker has someone, and say so if not — the draw is the one play that comes to you on a schedule
 Read: A draw lost cleanly back to the circle or the high slot means a quick shot and then a tip; one won to the wall means get ready to stop a rim behind your net
 ```
-
-A faceoff in your end is the one moment the play comes to you on a schedule, so use it. **Get set before the puck drops** — on your angle to the dot, square and at your normal depth — because a centre who loses it straight back to a shooter in the circle or the high slot is shooting before you have moved. **Talk before the drop, not after it:** check that the net front is covered and that every attacker has someone, and if your team lets the goalie call the draw, tell your centre where you want it. The usual default is to win it to the wall or back to a defenceman and never into the middle, but your team's set plays are your coach's call — [Faceoffs](../systems/faceoffs.md) sets out the options. **If it is lost cleanly**, expect the quick shot first and a tip second; **if it is won to the wall**, be ready to stop the rim behind your net for your defenceman.
 
 ### When a fight or a scrum breaks out
 
@@ -1538,14 +1538,14 @@ Whether you may play on with the broken one depends on the book.
 
 ### A stick loose on your ice, and the goal that goes in off it
 
+**Play the puck, not the argument — and if you saw an opponent deliberately kick a loose stick at the puck, say so while the picture is fresh.** A puck that went in off a loose stick has not necessarily counted. Nothing about the save changes; only the aftermath does.
+
 ```facts
 Rule: A goal is disallowed if an attacker deliberately propels a lost or broken stick, glove or other object at the puck to direct it into the net — new in the IIHF Situation Handbook 2026/27 at Situation 10.26, with no counterpart in the 2025/26 book the In-House Rules name
 Rule: The Elite League runs the 2026/27 book — the EIHL Casebook’s Preamble makes the 2026-27 IIHF Rulebook and Situation Handbook the official ruling for every rule it does not itself mention, so Situation 10.26 reaches an Elite League game
 Rule: Intent is the key at Situation 10.26: the IIHF Situation Handbook 2026/27 lets a goal stand where a lost or broken stick, glove or object accidentally deflects the puck in, and it ranks itself below the rulebook — ask your referee rather than assume it settles a goal in your league
 Key: Play the puck, not the argument — the call is made after the fact, so if you saw a deliberate kick say so while the picture is fresh
 ```
-
-**Play the puck, not the argument — and if you saw an opponent deliberately kick a loose stick at the puck, say so while the picture is fresh.** A puck that went in off a loose stick has not necessarily counted. Nothing about the save changes; only the aftermath does.
 
 **What it costs.** The IIHF Situation Handbook 2026/27 disallows a goal where, in the referee's judgement, an attacker propels a lost or broken stick, glove or any other object at the puck *"with intent to deliberately direct the puck into the net"*; if it contacts the puck accidentally, the goal may stand (Situation 10.26). It turns on intent, and it is decided after the fact. It is new in the 2026/27 Handbook, with no counterpart in the 2025/26 edition that the IHUK In-House Rules name, and the Handbook ranks itself below the Rulebook and cites no rule number for this answer — so ask your referee rather than assume it settles a goal in your league. **It plainly reaches the Elite League**, whose Casebook makes the 2026-27 IIHF Rulebook and Situation Handbook the ruling on anything it does not itself mention.
 

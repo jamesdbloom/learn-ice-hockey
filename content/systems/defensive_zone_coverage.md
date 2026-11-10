@@ -27,6 +27,8 @@
 
 ## Overview
 
+Coverage is the agreement your five skaters have about who protects what while the other team has the puck in your end. **The same instruction can be right on one bench and a firing offence on the next**, which is why knowing your system comes first. Whether the winger stays high or comes down when the puck is in your corner separates the two main families.
+
 ```facts
 Key: Coverage is the agreement your five skaters have about who protects what when the other team has the puck in your end
 Convention: The most system-dependent part of hockey — two good teams can play completely different systems and both be right
@@ -35,8 +37,6 @@ Action: Work out which system your team plays, so you stop guessing
 Never: Move the puck across the front of your own goal, with a pass or with your feet — go behind your own net instead, where an interception costs you almost nothing
 Position: Be goal side — between your man, or your area, and your own net. An opponent between you and your goalie means you are defending nothing
 ```
-
-Coverage is the agreement your five skaters have about who protects what while the other team has the puck in your end. **The same instruction can be right on one bench and a firing offence on the next**, which is why knowing your system comes first. Whether the winger stays high or comes down when the puck is in your corner separates the two main families.
 
 **The most dangerous chances come from a small area in front of your net** — roughly from the posts out to the faceoff dots and up to the tops of the circles. A shot from inside it is worth several times one from outside ([Shooting](../technique/shooting.md) covers the values, [Rink Map](../foundation/rink_map.md) the shape). Every system keeps bodies between that area and the puck, which is why you take away the pass into it before the shot from distance.
 
@@ -182,6 +182,8 @@ Note that the two forwards' jobs are asymmetric. The strong-side winger holds th
 
 ### The rotations
 
+Coverage is a set of positions that swap as the puck travels, not a set of jobs bolted to people.
+
 ```facts
 Convention: In the collapse, coverage is a set of positions that swap as the puck travels, not jobs bolted to people
 Convention: Corner to behind the net — the defencemen exchange roles at the midline; call it, "I've got them, you've got the net"
@@ -191,8 +193,6 @@ Convention: Point to point — both wingers slide across and the shape shifts as
 Convention: Puck to the far corner — the defencemen exchange again, the centre follows it low, and the wingers swap flex roles
 ```
 
-Coverage is a set of positions that swap as the puck travels, not a set of jobs bolted to people.
-
 - **Puck moves corner → behind the net.** The strong-side defenceman follows it to the post and hands it off at the midline. The other defenceman is now the strong-side defenceman and takes the carrier as they emerge; the first one slides back to the goalmouth. You have exchanged roles without either of you ever leaving the net unattended. Call it: "I've got them, you've got the net."
 - **Puck moves corner → up the strong-side wall.** The strong-side winger engages it. That is not a corner battle — that is the start of your breakout, and it is the one time in this system a winger comes off the point voluntarily. **They come down the wall to between the hash marks and the goal line** and take the puck there; the point coverage they are leaving is finished, because the other team no longer has the puck. Take it. See [Breakouts](breakouts.md).
 - **Puck goes low → high, to the point.** Everyone climbs a level. The wingers close on their points, the centre steps up out of the low battle into the high slot, the defencemen recover to the net front and the low slot, and shooting lanes get filled.
@@ -201,6 +201,8 @@ Coverage is a set of positions that swap as the puck travels, not a set of jobs 
 
 ### The weak-side winger's collapse — the moment that decides the system
 
+When the puck goes into the strong-side corner and **the centre goes down to help**, the high slot is momentarily empty, and it cannot stay empty. So the **weak-side winger drops off their point into the high slot** to fill it. As soon as the puck comes out of the corner, that winger climbs straight back up to their point.
+
 ```facts
 Convention: When the centre goes down to help in the corner, the weak-side winger drops off their point into the high slot to fill it
 Action: Climb straight back up to the point as soon as the puck comes out of the corner
@@ -208,8 +210,6 @@ Action: Anyone with a clear view calls it — the centre, the weak-side defencem
 Never: Both wingers sag at once — the point-to-point pass across the top then gives their defenceman a free walk-in
 Read: If your weak-side winger has already followed the opposing defenceman down off the point, the collapse is not available — the defencemen or the centre must cover the high slot instead
 ```
-
-When the puck goes into the strong-side corner and **the centre goes down to help**, the high slot is momentarily empty, and it cannot stay empty. So the **weak-side winger drops off their point into the high slot** to fill it. As soon as the puck comes out of the corner, that winger climbs straight back up to their point.
 
 **The high slot is not the most dangerous ice on the rink** — that is the inner slot, nearer the crease. [Shooting](../technique/shooting.md) has close to half of NHL goals coming from the inner slot against just over a quarter from the outer slot, which is the band called the high slot here — a three-year, five-on-five Sportlogiq sample that is not public, so nobody outside Sportlogiq can check it. What makes this the moment the system turns on is that the high slot empties by design and the seam runs through it: the back-door pass crosses it and a low-to-high shot can come from it.
 
@@ -350,6 +350,8 @@ There are inverted versions — some teams play man on the puck carrier anywhere
 
 ### Box+1
 
+Four players form a box around the slot — two low near the posts, two higher near the tops of the circles — and the fifth player, the "+1", is the only one who chases the puck. When the puck moves, the +1 role passes to whoever is now nearest, and the box rotates one position to fill the space they left.
+
 ```facts
 Convention: Four players form a box around the slot — two low near the posts, two higher near the tops of the circles
 Convention: The "+1" is the only player who chases the puck; when the puck moves, the role passes to whoever is nearest and the box rotates one position to fill the space
@@ -357,8 +359,6 @@ Convention: Coaching material has it the standard introductory structure for you
 Key: Not a penalty-kill box — that is four players, two high and two low; Box+1 is a five-player even-strength shape
 Countered by: A good puck-moving team — one chaser cannot pressure them, so they hold the puck and pick their moment
 ```
-
-Four players form a box around the slot — two low near the posts, two higher near the tops of the circles — and the fifth player, the "+1", is the only one who chases the puck. When the puck moves, the +1 role passes to whoever is now nearest, and the box rotates one position to fill the space they left.
 
 ![](diagram:dz-box-plus-one)
 
@@ -372,6 +372,8 @@ Four players form a box around the slot — two low near the posts, two higher n
 
 ### The collapsing box (and the strong-side overload)
 
+The **collapsing box** is a state rather than a full system: the box shrinks toward the crease as the puck goes below the goal line or into the corner, so all five of you are inside the house, sticks in lanes, conceding the entire outside. It's what low zone collapse turns into under maximum pressure.
+
 ```facts
 Convention: The collapsing box is a state, not a full system — the box shrinks toward the crease as the puck goes below the goal line, all five inside the house with sticks in lanes
 Read: Use it protecting a lead late, defending 6-on-5 with their goalie pulled, when structure has already gone, or against a team dangerous below the circles but not from its defencemen
@@ -379,8 +381,6 @@ Risk: You concede the entire outside by design
 Options: The strong-side overload is the opposite adjustment — all five shift to the puck side, cutting the ice in half and squeezing the carrier
 Countered by: One hard, accurate cross-ice pass — the overload leaves the whole weak side unoccupied by design
 ```
-
-The **collapsing box** is a state rather than a full system: the box shrinks toward the crease as the puck goes below the goal line or into the corner, so all five of you are inside the house, sticks in lanes, conceding the entire outside. It's what low zone collapse turns into under maximum pressure.
 
 ![](diagram:dz-collapsing-box)
 
@@ -431,14 +431,14 @@ If you can't ask, watch one shift with a defensive-zone faceoff and look for the
 
 ### Most defensive-zone breakdowns are not effort problems — coaching consensus, not a counted figure
 
+When a goal goes in from the slot, the instinct on the bench is to say someone didn't work hard enough. Almost always, both players worked hard. What happened is that **two players were operating on different assumptions about who had whom** — the centre thought the weak-side winger was collapsing, the winger thought the centre was staying high; the defenceman thought their partner had the net, the partner thought the puck battle needed two. Both skated hard, in the wrong direction, at the same time. *(Coaching consensus rather than a measured fact: public tracking counts the play the **offence** made, not the breakdown that let them in.)*
+
 ```facts
 Convention: Almost always both players worked hard, on different assumptions about who had whom, and skated hard in the wrong directions — coaching consensus rather than a measured fact, because public tracking counts the play the offence made and not the breakdown that let it in
 Mindset: Knowing your system is a skill, not admin — a player who knows the structure and skates at 80% out-defends one who doesn't and skates at 100%
 Action: Announce your intentions, not your observations — "I'm going to the corner, you've got my slot" resolves the ambiguity instead of describing it
 Priority: When in doubt, default to the house — get inside, stick in a lane, cover the most dangerous unmarked player
 ```
-
-When a goal goes in from the slot, the instinct on the bench is to say someone didn't work hard enough. Almost always, both players worked hard. What happened is that **two players were operating on different assumptions about who had whom** — the centre thought the weak-side winger was collapsing, the winger thought the centre was staying high; the defenceman thought their partner had the net, the partner thought the puck battle needed two. Both skated hard, in the wrong direction, at the same time. *(Coaching consensus rather than a measured fact: public tracking counts the play the **offence** made, not the breakdown that let them in.)*
 
 Three consequences follow:
 
@@ -520,17 +520,19 @@ Rule: USA Hockey's Competitive Contact list is a floor, not a ceiling — 604(a)
 
 #### Lifting the screener's stick
 
+**Lift the stick as the puck arrives — up rather than sideways, low on the shaft, well below the bottom hand — then let go.** ⚠️ **Lift under the shaft, not through it, and stop at their stick** — the stick you lift ends near their face. **Low is the answer**: below the bottom hand the lift stays off their hands, still takes the stick off the ice, and keeps your blade further from their head.
+
 ```facts
 Technique: Lift the stick up, not sideways, low on the shaft, well below the bottom hand, as the puck arrives, then let go — never on into their head. A screen with a free stick is a deflection waiting to happen
 Never: Chop at the hands instead of lifting — a chop is slashing in all six books, and in every one it reaches a major plus a game misconduct with nobody injured
 Rule: Never trade the lift for a cross-check — above the shoulders it is a major and game misconduct with nobody hurt under Hockey Canada (7.6(b); 7.7(b)) and CARHA (54(b)); in minor and female hockey a lift reaching the head gets there on violence, and must on injury (7.6(b))
 ```
 
-**Lift the stick as the puck arrives — up rather than sideways, low on the shaft, well below the bottom hand — then let go.** ⚠️ **Lift under the shaft, not through it, and stop at their stick** — the stick you lift ends near their face. **Low is the answer**: below the bottom hand the lift stays off their hands, still takes the stick off the ice, and keeps your blade further from their head.
-
 **Never chop at the hands instead** — a chop is slashing in all six books, and in every one it reaches a major plus a game misconduct with nobody injured. And never trade the lift for a cross-check: under Hockey Canada and CARHA a cross-check above the shoulders is a major and game misconduct whether or not anyone is hurt. Under Hockey Canada the lift gets there only on violence or an injury — and a touch to the head is still at least a minor (7.6(a)) — and CARHA makes any stick to the head a major (62(b)). A screen with a free stick is a deflection waiting to happen; a screen with a lifted stick is just a person, and this is the highest-value thing a net-front defender does. What [the lift and the chop](#the-stick-lift-and-the-chop) cost comes later, in What it costs, and Body Contact and Battles carries [the full comparison](../technique/body_contact_and_battles.md#3-stick-checks--legal-effective-and-under-used).
 
 ### When the shot is already away
+
+**What it is:** the screen is still standing, the shot is on its way, and your goalie has not seen it leave. Winning the position back is no longer one of your options.
 
 ```facts
 Never: Block a shot from a screening position — you change the direction of a puck your goalie never saw
@@ -539,14 +541,14 @@ Never: Lift a leg, turn your back or go sideways, or lunge. Close with your feet
 Action: Talk to your goalie — "screen left", "I've got the tip"; they are trying to find the puck through legs
 ```
 
-**What it is:** the screen is still standing, the shot is on its way, and your goalie has not seen it leave. Winning the position back is no longer one of your options.
-
 **Defending it:**
 - **Don't block the shot from a screening position.** Half-blocking a shot your goalie cannot see is worse than not blocking it, because you've changed the direction of an already invisible puck. If you're in the sightline, get out of it or take the inside on your man without pushing them; let the puck through.
 - **Block from close if you block at all.** Ten feet from the shooter, square, shin pads to the puck, **head up and out of the shot lane**, hands behind your body with the backs of the gloves out, stick down beside you. Never lift a leg, never turn your back or go sideways, and never lunge — close with your feet, and stay on your feet until the puck is actually released. See [Body Contact and Battles](../technique/body_contact_and_battles.md) for the rest of what to protect, and for when not to block at all.
 - **Talk to your goalie.** "Screen left", "I've got the tip" — they are trying to find the puck through legs.
 
 ### The back door / weak-side seam
+
+**What it is:** while everyone watches the strong-side battle, an attacker drifts to the far post. One cross-ice pass and it's an open net. This is the chance every coverage system is most afraid of, and the one worth conceding almost anything else to prevent.
 
 ```facts
 Key: While everyone watches the strong-side battle, an attacker drifts to the far post — one cross-ice pass and it is an open net
@@ -557,8 +559,6 @@ Convention: Weak-side winger sags into the middle rather than standing pretty at
 Action: Call the arrival, not the goal. "Back door!" the moment they appear, not when the pass is on the way
 ```
 
-**What it is:** while everyone watches the strong-side battle, an attacker drifts to the far post. One cross-ice pass and it's an open net. This is the chance every coverage system is most afraid of, and the one worth conceding almost anything else to prevent.
-
 **Defending it:**
 - **The weak-side defenceman never watches the puck.** Your eyes track the puck, your body stays between the man at the back post and the net — **position, never a hold or a push**, either of which can draw a penalty. If you find yourself facing the corner, you've already lost them.
 - **Stick in the seam.** The pass has to cross the slot. A stick lying flat in that lane makes the play impossible even when the passer is open.
@@ -566,6 +566,8 @@ Action: Call the arrival, not the goal. "Back door!" the moment they appear, not
 - **Call the arrival, not the goal.** "Back door!" the moment they appear, not when the pass is on the way.
 
 ### The walk-down from the point
+
+**What it is:** instead of shooting, the opposing defenceman skates down from the blue line toward the top of the circle — about **35 feet** from the goal line — or all the way to the hash marks. In a pure zone system, they cross out of the winger's area and into nobody's, and get a clean look from there or an easy feed into the slot.
 
 ```facts
 Key: Instead of shooting, the opposing defenceman skates down toward the top of the circle — in a pure zone they cross out of the winger's area and into nobody's
@@ -575,8 +577,6 @@ Convention: Under man-on-man, you go with them all the way, wherever they go
 Convention: Under hybrid, release from zone and pick them up man-on-man as soon as they cross the dots
 Priority: When a fourth attacker arrives low, somebody gives up their area and it must not be the goalmouth — usually the centre absorbs them and the weak-side winger takes the high slot
 ```
-
-**What it is:** instead of shooting, the opposing defenceman skates down from the blue line toward the top of the circle — about **35 feet** from the goal line — or all the way to the hash marks. In a pure zone system, they cross out of the winger's area and into nobody's, and get a clean look from there or an easy feed into the slot.
 
 ![](diagram:dz-walk-down-zone)
 
