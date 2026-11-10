@@ -224,12 +224,12 @@ Hockey Canada's Rule 7.5 names the picture — a player *"digging the puck out"*
 
 ### Area pass / chip into space — passing to a place, not a person
 
-**When to use it.** When no teammate is currently open but one is about to be — the classic case is chipping a puck past a defender who is standing you up at the blue line, into the space behind them where your winger is already skating. Also the safe option in the neutral zone when a direct pass would have to thread traffic.
+**When to use it.** When no teammate is currently open but one is about to be — the classic case is chipping a puck past a defender who is standing you up at the blue line, into the space behind them where your winger is already skating. Also the safe option in the neutral zone when a direct pass would have to thread traffic, but only if your teammate has a genuine speed or angle advantage to win the race to it.
 
 ```facts
 Goal: Aim at a patch of ice your teammate will reach before an opponent does, not at a blade
 Technique: Flat, with enough pace to clear the nearest defender's stick but not so much that it runs to the far boards
-Read: Use it when no teammate is open but one is about to be, or in the neutral zone when a direct pass would thread traffic
+Read: Use it when no teammate is open but one is about to be, or in the neutral zone when a direct pass would thread traffic, if your teammate can win the race
 Key: It cannot be intercepted the way a direct pass can, because it is not aimed at a body — it becomes a race
 Risk: Only a good play if your teammate has a genuine speed or angle advantage; otherwise you are giving the puck away politely
 ```

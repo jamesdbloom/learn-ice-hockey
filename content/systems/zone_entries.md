@@ -1109,6 +1109,8 @@ Action: Ask, and then talk to your partner about it before the puck drops
 
 ### The defender's version of the offside rule
 
+**You do not have to stop the entry, only make it uncontrolled** — a stick in the passing lane that forces a dump does a hit's job. On a delayed offside, **get the puck out with your head up**: no whistle stops a body already committed at speed, and where your book has a whistle that protects the puck carrier, it stops covering you the instant you pass.
+
 ```facts
 Key: You do not have to prevent the entry, only make it uncontrolled — a stick in the passing lane that forces a dump has done the same job as a hit
 Action: Force them to cross before the puck — stepping up at exactly the right instant can make an onside attacker offside

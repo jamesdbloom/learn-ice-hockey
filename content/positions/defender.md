@@ -240,6 +240,8 @@ Action: When the puck crosses the middle you become the strong-side defender and
 
 #### Net-front technique — holding the inside
 
+**Get to the inside spot before the screener, stand beside them with no lean and no push, lift their stick low as the puck comes, and move nobody** — walking a screener out can be called interference in any game, and it is an illegal check where checking is barred.
+
 ```facts
 Technique: Never walk a screener out — it can be called interference in any game, and an illegal check where checking is barred. Hold the inside, no lean, no push; lift the stick low as the puck comes, let go
 Convention: "Position beats strength" is a tendency, not a law — coaching consensus rather than a measured finding. Plan the shift around lifting their stick, not out-leveraging somebody much bigger
@@ -675,6 +677,8 @@ Action: Shoot for tips and rebounds rather than trying to beat the goalie clean 
 Whichever you're in: your first job is **keeping the puck in the zone**. A power play that gets cleared has to re-enter against four killers already set in their structure, which is a great deal harder than holding the line was. Your second job is shooting for tips and rebounds rather than trying to beat the goalie clean through four bodies.
 
 ### Penalty Kill (your team is shorthanded)
+
+**Whichever shape your team kills in, stay tight, hold the inside at the net front, block shots and clear at every opportunity — and never get pulled out of position chasing the puck around the perimeter**, because that is what opens the seam.
 
 ```facts
 Key: A kill is four skaters, normally two forwards and two defencemen — where you and your partner stand depends on which of the three shapes your team kills in

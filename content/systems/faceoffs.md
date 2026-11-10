@@ -807,15 +807,17 @@ Action: With a replacement in the dot keep it simple: lift or press their stick 
 
 ### The icing exception — which books grant it, and to whom
 
+**After an icing, use your team's one free violation to cheat the timing, and expect their centre to use theirs — under the NHL, the IIHF 2026/27 book and the In-House Rules, and under Hockey Canada in Junior only; your team's next violation on that draw costs a penalty.** Under the PWHL, assume one free violation for the whole draw: its rule does not say the penalty waits for your team's second. USA Hockey and CARHA give no free one: there your centre comes off as on any other draw.
+
 ```facts
-Rule: Under the NHL, the PWHL and the IIHF 2026/27 book, the first faceoff violation after an icing does not remove the centre, on either team (NHL and IIHF 76.4, PWHL 78.4)
+Rule: Under the NHL, the PWHL and the IIHF 2026/27 book, the first faceoff violation after an icing does not remove the centre, on either team (NHL and IIHF 76.4, PWHL 78.4); the PWHL rule does not say the free one is per team
 Rule: The centre is warned instead, and any subsequent violation by that team is a bench minor (NHL Rule 76.4)
 Rule: The IIHF 2025/26 book had no post-icing carve-out because it needed none — every first violation on every draw was already a warning (IIHF 2025/26 Rules 76.6, 76.7)
 Rule: The IIHF 2026/27 book adopted the NHL's post-icing carve-out in the NHL's own words, because it also adopted the centre's removal, which the carve-out spares you (IIHF 2026/27 Rule 76.4)
 Rule: The In-House Rules have the carve-out too — their 2026-27 Rule 76 replaces the centre for every violation "[w]ith the exception of face-offs following icings" (Section 10, Rule 76); it is not a free draw, because IHUK does not amend IIHF 76.7 and a second violation is still a bench minor
 Rule: Hockey Canada writes the carve-out but rations it by division — in Junior divisions only, any post-icing faceoff violation is a warning and a subsequent one a minor (Hockey Canada Rules 6.5(a), 6.5(b))
 Rule: USA Hockey and CARHA write no post-icing carve-out at all — after an icing the centre comes off exactly as on any other draw (USA Hockey Rule 613, CARHA Rule 57)
-Key: The warning is per team, so each side has its own free one
+Key: Under the NHL and IIHF the warning is per team, so each side has its own free one; the PWHL rule does not say so
 Action: After an icing, use your free attempt to cheat the timing, and expect their centre to use theirs — but find out which book, and under Hockey Canada which division, before you plan on one
 ```
 
@@ -968,7 +970,7 @@ Rule: The five-second setup limit is not enforced in overtime (NHL and IIHF Rule
 Rule: Under the NHL, IIHF and PWHL books the team that iced cannot change lines (NHL and IIHF 81.4, 82.1; PWHL 83.4) or take a time-out (NHL and IIHF 87.1, PWHL 89.1), though an injured player can still be replaced
 Rule: The freeze falls on the team that iced, so the home team keeps last change when the visitors ice it (NHL and IIHF Rule 82.1)
 Rule: Under NHL, IIHF and PWHL rules the attacking team picks the dot (81.2, PWHL 83.2), under Hockey Canada only in Junior and Senior (6.4(b)); USA Hockey (624(a)) and CARHA (65(a)) give no choice
-Rule: Under the NHL, the PWHL and the IIHF 2026/27 book the first faceoff violation after an icing takes nobody's centre off the dot, on either team (NHL and IIHF 76.4, PWHL 78.4) — under the IIHF, not once penalties after the icing have let players change (Situation 81.18)
+Rule: Under the NHL, the PWHL and the IIHF 2026/27 book the first faceoff violation after an icing takes nobody's centre off the dot, on either team (NHL and IIHF 76.4; PWHL 78.4, not said per team) — under the IIHF, not once penalties after the icing have let players change (Situation 81.18)
 Rule: The free first faceoff violation after an icing is Hockey Canada's only in Junior divisions (Rule 6.5(a)), and neither USA Hockey (613) nor CARHA (57) writes one at all
 Rule: CARHA allows each team one change per stoppage, within ten seconds; a late change is sent back the first time and is a bench minor after that (Rules 19(d), 19(e), 19(g))
 Action: Play fast — their disadvantage is fatigue, and it evaporates the moment they get to breathe
@@ -987,7 +989,7 @@ The single most exploitable situation in the game, and it works in both directio
 - **Hockey Canada** applies the no-change rule only *"[i]n categories of U18AAA, Junior, and at the option of the Member in Senior"* (6.7(d)), so below those there is no freeze to exploit. Where it applies, either team may still take its time-out, but the team that iced may not substitute during it (6.7(d)(iii)). [Rules Primer](../foundation/rules_primer.md) has the full comparison.
 - **CARHA** writes no icing freeze and no time-out, and gives no choice of dot (65(a)), but allows each team *"only one change of player(s)"* per stoppage within ten seconds (19(d), 19(g)); a late change is sent back the first time and is a bench minor after that (19(e)). **No matchup edge to chase — change once, promptly.**
 
-**When you iced it:** you are tired, stuck in your own end, and cannot rest. Get the puck off the glass and out at the first chance; nothing clever. **The first faceoff violation after an icing does not take the centre off the dot** (Rule 76.4) — one free warning for each team, so do not count on their centre being replaced either. In Britain the IIHF 2026/27 book and the In-House Rules give the same carve-out, though under the IIHF it ends once penalties after the icing have let players change — plan on that under the In-House Rules too. ⚠️ **In a North American game, check first:** Hockey Canada gives it only in Junior (6.5(a)), and USA Hockey and CARHA not at all. See "The icing exception" above.
+**When you iced it:** you are tired, stuck in your own end, and cannot rest. Get the puck off the glass and out at the first chance; nothing clever. **The first faceoff violation after an icing does not take the centre off the dot** (Rule 76.4) — one free warning for each team, so do not count on their centre being replaced either. In Britain the IIHF 2026/27 book and the In-House Rules give the same carve-out, though under the IIHF it ends once penalties after the icing have let players change — plan on that under the In-House Rules too. ⚠️ **In a North American game, check first:** Hockey Canada gives it only in Junior (6.5(a)), USA Hockey and CARHA not at all, and the PWHL rule does not say the free one is per team, so assume one for the whole draw. See "The icing exception" above.
 
 ### In the last minute
 
@@ -1074,6 +1076,8 @@ Never: Answer a lean with a lean — contact before the drop is a violation whoe
 The 22-point spread between the best and worst NHL centres is not a talent gradient. At the top of faceoff percentage are, mostly, the people who worked at it.
 
 ### What actually to do
+
+**Practise draws every session with a real drop, on both circles and both grips, and spend most of your reps on your weakest draw.** Rehearse what all five skaters do on a win, a loss and a tie-up, and have every winger take draws too, because a winger takes one whenever the centre is thrown off the dot.
 
 ```facts
 Action: Reps in pairs with a real drop — correct height, unpredictable timing, because you are training reaction

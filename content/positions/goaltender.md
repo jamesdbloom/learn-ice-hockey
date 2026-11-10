@@ -1017,6 +1017,8 @@ Action: Find out which 3-on-2 version your team plays, because the two fail in d
 
 ### Shootouts
 
+**Stay in your crease until the shooter touches the puck, then make them commit before you do** — each shooter gets a long, slow approach and their move is built to make you go first, so patience is the whole thing. A shootout attempt follows the penalty-shot rules under the NHL, IIHF, PWHL and USA Hockey books, and that crease rule is one of them; Hockey Canada and CARHA do not say, so play it the same way.
+
 ```facts
 Key: Each shooter gets a long, slow approach — patience is the whole thing
 Never: Commit first — a shootout move is built to make you go early, so make the shooter decide
@@ -1027,8 +1029,6 @@ Rule: NHL shootouts run three shooters a side; IIHF championship shootouts run f
 Rule: Under the IHUK In-House Rules the shootout count is three, not the IIHF’s five, and overtime runs only in NIHL fixtures and those SNL fixtures their competition regulations provide for; the NIHL Playoff Final has no shootout at all (In-House Rules 2026-27, Rule 84 and Appendix 1)
 Rule: In the Elite League the shootout is five shooters, not three — EIHL Casebook 84.4 — and 84.1 gives a 5-minute 3-on-3 overtime in the regular season and Challenge Cup group stage, 20-minute 5-on-5 periods in elimination games
 ```
-
-A shootout attempt follows the penalty-shot rules, including staying in your crease until the shooter touches the puck. **Patience is the whole thing:** each shooter gets a long, slow approach, and their move is built to make you go first, so make them commit before you do.
 
 **Know whether you can be rescued.** Under the NHL book, once the shootout begins you cannot be replaced unless you are injured, and a substitute goalie gets no warm-up shots. **The IIHF book, which British hockey plays, says the opposite** — *"The goalkeepers from each team may be changed after each shot"* (84.4(VI)) — so a coach under it can pull you after a single goal against.
 

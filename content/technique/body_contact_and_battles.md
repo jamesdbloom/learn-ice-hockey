@@ -347,6 +347,8 @@ Never: Poke from too far away — if your blade cannot reach the puck without lu
 
 ### The stick lift
 
+**Lift a player's stick only as they are about to play the puck, or as a pass or shot arrives — your blade under their shaft, below their bottom hand — and let go at once; on a player bent low over the puck, take it low under the shaft or leave it, because a miss goes into the face.** Lift it before the pass gets there, lift a stick with no puck on it, or catch the glove on the way up, and it can be called a penalty.
+
 ```facts
 Technique: Blade under their shaft low, below their bottom hand and a hand's width clear of the glove — lift crisply up, not sideways
 Action: Step through as their blade comes off the ice and take the puck
@@ -507,6 +509,8 @@ Rule: Hockey Canada writes no body-position grant — 8.1 assumes position while
 The rest of the CARHA body-contact ladder, where every major brings a game misconduct (30(a)): **52(a)** prices charging at a minor or a major, and says *"If more than two steps or strides are taken, it shall be considered a charge"*. **52(b)** makes a major plus a game misconduct compulsory for charging a goalie in the crease, or for any charge that injures. **50** covers head contact by anything but a stick — a minor if accidental (50(a)), a double minor or a major plus a game misconduct if intentional (50(b)), and a match for a deliberate injury or attempt (50(c)). A stick goes to Rule 62, which §3 covers. **49(b)** turns any infraction that sends an opponent into the boards into a double minor — ⚠️ **and that double minor counts as two penalties toward the three for a Game Ejection under Rule 32(a)**, so a boarding call plus one more minor ends your game. **CARHA-affiliated adult leagues only; see §1.**
 
 ### A body check is the last step of a progression, not the first thing you learn
+
+**Reach for a body check last, after angling, a stick check and a body block — and only in a game that permits checking, and only once you can angle, lift a stick cleanly and stay balanced through contact.**
 
 ```facts
 Never: Deliver anything in this section in a league that does not permit checking — everything below is a penalty there
@@ -1816,6 +1820,8 @@ Never: Move a player who has gone down backward and is not getting up, except to
 **If someone goes down backward and is not getting up,** ⚠️ **nobody moves them except to keep their airway clear, nobody takes the helmet off, and somebody calls for immediate medical help** ([If it happens anyway](#if-it-happens-anyway--a-suspected-neck-injury-on-the-ice)).
 
 ### The habits that keep you out of the box
+
+**Take the puck, not the player: keep your blade on the puck; move your feet instead of reaching; where checking is allowed, check with your trunk — never your hands, forearms, elbows or stick; never put a hand on their cage; and stop at the whistle.**
 
 ```facts
 Action: Blade on the puck, never on the player — USA Hockey penalises a stick in front of the legs to impede them "even if on the ice", with no effort to legally play the puck

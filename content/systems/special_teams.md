@@ -677,6 +677,8 @@ A hit from behind into the boards or goal frame on a player who cannot protect t
 
 #### You may ice the puck freely — where your rule set allows it
 
+**When a penalty leaves you below their strength on the ice, fire the puck the length of the ice the moment you have it — where your book grants it, which USA Hockey does only at Youth 15-Only and above, Girls 16U and above, High School and Adult; never once an expiry leaves you level, even with the player still in the box; and under the NHL and PWHL, not from a major's expiry to the next stoppage if nobody was in the box to come out.**
+
 ```facts
 Rule: A team below the opposing team's on-ice numerical strength cannot be called for icing — play continues and no violation is called (NHL 81.6, PWHL 83.6) — but not unconditionally: the NHL and PWHL withdraw it in one major-penalty case, and USA Hockey withholds it by classification (Rule 624(b)(1))
 Rule: IIHF Rule 81.6 grants the shorthanded icing exemption in the same words and carries neither carve-out, so a British kill loses it to neither — but it runs on the on-ice count: a penalty expiring counts its player back in, and ends the exemption only where that leaves you level
@@ -691,7 +693,7 @@ Action: You do not need a teammate — 200 feet away buys clock and a change; ma
 Never: Stretch "numerical strength" beyond penalties — five skaters defending a pulled goalie are not below it and can be called for icing
 ```
 
-**A shorthanded team cannot be called for icing.** NHL Rule 81.6: *"If the puck was so shot by a player of a side below the numerical strength of the opposing team, play shall continue and the icing violation shall not be called."* The test is whether you are **below the opponent's strength**, not who is serving a penalty — so at 4-on-4 both teams can be iced, and at 6-on-4 with the power play's goalie pulled the four-skater team still cannot be.
+**Where your book grants it, a team below the opponent's strength cannot be called for icing — except, under the NHL and PWHL, when a major expires with nobody in the box.** NHL Rule 81.6: *"If the puck was so shot by a player of a side below the numerical strength of the opposing team, play shall continue and the icing violation shall not be called."* The test is whether you are **below the opponent's strength**, not who is serving a penalty — so at 4-on-4 both teams can be iced, and at 6-on-4 with the power play's goalie pulled the four-skater team still cannot be.
 
 **How to use it:**
 
@@ -729,6 +731,8 @@ Never: Stretch "numerical strength" beyond penalties — five skaters defending 
 > **Rec and youth note:** under USA Hockey the exemption exists only from **Youth 15-Only, Girls 16U, High School and Adult** upward, and many youth and rec leagues use **no-touch (automatic) icing**. Check your league before building a kill around it.
 
 #### The two penalties a kill talks itself into
+
+**Clear the puck hard and flat — off the glass is fine, over it is not — and play a loose puck, never fall on it or gather it in to buy a whistle.**
 
 ```facts
 Rule: Shooting the puck directly out of the playing surface from your defending zone is a delay-of-game minor even while shorthanded, under NHL 63.2(iii), IIHF 63.2(III) and PWHL 65.2(iii) alike — so it binds a British kill too, and the IIHF's bench clause is wider than the NHL's
@@ -1038,6 +1042,8 @@ Faceoffs matter disproportionately when the numbers are uneven: **with a man adv
 ---
 
 ### The goalie's role on both
+
+**On the kill, tell your goalie what you are conceding and agree the retrieval before it starts: they move a retrieved puck on and never freeze it, and only under USA Hockey, Hockey Canada and CARHA, which draw no trapezoid, do they handle it anywhere behind the net — everywhere else, British hockey included, play them inside the trapezoid, so a rim that dies in the corner is yours.** On the power play, use them as a reset on a regroup and as your safety on a failed entry.
 
 ```facts
 Action: On the kill, tell your goalie what you are conceding — a kill that never says this makes its goalie guess
