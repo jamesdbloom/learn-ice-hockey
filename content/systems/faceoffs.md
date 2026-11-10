@@ -972,7 +972,7 @@ Rule: The five-second setup limit is not enforced in overtime (NHL and IIHF Rule
 Rule: Under the NHL, IIHF and PWHL books the team that iced cannot change lines (NHL and IIHF 81.4, 82.1; PWHL 83.4) or take a time-out (NHL and IIHF 87.1, PWHL 89.1), though an injured player can still be replaced
 Rule: The freeze falls on the team that iced, so the home team keeps last change when the visitors ice it (NHL and IIHF Rule 82.1)
 Rule: Under NHL, IIHF and PWHL rules the attacking team picks the dot (81.2, PWHL 83.2), under Hockey Canada only in Junior and Senior (6.4(b)); USA Hockey (624(a)) and CARHA (65(a)) give no choice
-Rule: Under the NHL, the PWHL and the IIHF 2026/27 book the first faceoff violation after an icing takes nobody's centre off the dot, on either team (NHL and IIHF 76.4; PWHL 78.4, not said per team) — under the IIHF, not once penalties after the icing have let players change (Situation 81.18)
+Rule: After an icing the first faceoff violation removes no centre under the NHL, PWHL and IIHF 2026/27 (NHL and IIHF 76.4, PWHL 78.4); under the PWHL treat any later one, by either team, as a bench minor; under the IIHF, not once penalties after the icing have let players change (Situation 81.18)
 Rule: The free first faceoff violation after an icing is Hockey Canada's only in Junior divisions (Rule 6.5(a)), and neither USA Hockey (613) nor CARHA (57) writes one at all
 Rule: CARHA allows each team one change per stoppage, within ten seconds; a late change is sent back the first time and is a bench minor after that (Rules 19(d), 19(e), 19(g))
 Action: Play fast — their disadvantage is fatigue, and it evaporates the moment they get to breathe

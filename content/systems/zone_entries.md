@@ -1115,7 +1115,7 @@ Action: Ask, and then talk to your partner about it before the puck drops
 Key: You do not have to prevent the entry, only make it uncontrolled — a stick in the passing lane that forces a dump has done the same job as a hit
 Action: Force them to cross before the puck — stepping up at exactly the right instant can make an onside attacker offside
 Rule: The defending team passing or carrying the puck into the neutral zone nullifies a delayed offside and resets everything (NHL Rule 83.3(ii); IIHF Rule 83.3(II), the same)
-Rule: Head up as you retrieve — the pressure and contact triggers protect the "defending puck carrier" only (NHL and IIHF 83.3, PWHL 85.3, USA Hockey 630(d)), so that protection lapses the instant you make the outlet pass; Hockey Canada 6.11(b)(ii) (the stop-play clause) and CARHA 72(e)(2) write neither
+Rule: Head up as you retrieve — the pressure and contact triggers protect only the "defending puck carrier" and lapse the instant you pass (NHL and IIHF 83.3, PWHL 85.3; USA Hockey 630(d), at levels with a delayed offside); Hockey Canada 6.11(b)(ii) (the stop-play clause) and CARHA 72(e)(2) write neither
 Rule: The shot that caused the delayed offside cannot score — not directly, not off you, the goalie, the boards or an official (NHL Rule 83.4; IIHF Rule 83.4 word-for-word)
 Never: Treat your own net as safe here. Under NHL and IIHF 83.4 and PWHL 85.4, the one goal that can still count is the puck you put in yourself — so play it out cleanly
 Rule: USA Hockey and Hockey Canada differ — USA Hockey's Casebook (Rule 630, Situation 41) disallows even a defending team's own goal, and Hockey Canada writes no own-goal sentence at all, so nothing settles it there
