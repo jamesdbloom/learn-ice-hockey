@@ -512,10 +512,12 @@ Set plays off draws are the closest hockey gets to American football. They also 
 
 ### Offensive-zone plays
 
+Run the play your team calls, and pick it by what the defence gives you: the winger walk-out against a team that pressures the point, the tip play when you want the lowest-risk option against a counterattack. **On the D one-timer, shoot first-time with your feet set and keep your follow-through below everyone's shoulders — and in a CARHA league keep the backswing under fifteen inches, because past that it is a slap shot and a penalty there.**
+
 ```facts
 Options: The D one-timer, the winger walk-out, the tip play, or a board-side variation
 Key: The D one-timer works because the shooter's feet are set first — in CARHA a backswing past fifteen inches is a slap shot: a minor, or if it injures, a major that ends this game and at least the next
-Rule: In a CARHA league keep the one-timer's follow-through below the shoulders — Rule 62(b) makes high-stick contact above an opponent's shoulders a major even by accident and even if nobody is hurt; deliberate or injuring, it also brings a game misconduct (62(b) Note)
+Rule: Keep the one-timer's follow-through below the shoulders — only the NHL, IIHF and PWHL excuse a normal one (60.1, PWHL 61.1); CARHA 62(b) makes high-stick contact above the shoulders a major even by accident and with nobody hurt; deliberate or injuring, a game misconduct too (62(b) Note)
 Risk: Every defensive alignment expects the D one-timer, and your inside winger stands in its line — on the drop they step out of it, usually to the net front to screen the goalie
 Read: Use the winger walk-out against a team that immediately pressures the point
 Options: The tip play is the safest, because a point shot into traffic rarely turns into a counterattack

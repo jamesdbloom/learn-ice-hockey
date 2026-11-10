@@ -297,6 +297,8 @@ The picture above draws the first two of these four: the route the defender skat
 
 ### Where the angle ends
 
+In a non-checking league, **end the angle with a seal — take away the last of their space and arrive stick-on-puck — but under CARHA the seal is not automatically safe, so ride it with the puck, never through the player.** Where Hockey Canada bars checking, **keep the contact incidental and never lean.**
+
 ```facts
 Action: In a non-checking league, end the angle with a seal — take away the last of their space and arrive stick-on-puck
 Key: Both leaning, both playing the puck, same direction is legal under USA Hockey and the IIHF; in a Hockey Canada non-checking division or under CARHA, keep it incidental and never lean
@@ -1548,6 +1550,8 @@ This is also the safest way to arrive. A player who is upright, balanced and loo
 
 ### Protecting yourself on the boards
 
+**Decide before you get there what you will do with the puck, arrive side-on with your head up, and never turn your back to anyone coming at you and never duck.** If contact comes, take it on your forearm and hip with your skates parallel to the wall.
+
 ```facts
 Action: Decide before you get there whether you are taking the puck off the wall, chipping it along, or protecting it
 Never: Arrive bent over with your back to the play. Get side-on instead
@@ -1584,6 +1588,8 @@ Action: Pick by the checker's momentum, and pick before you arrive
 Blocking shots is genuinely useful and genuinely dangerous. Both facts matter.
 
 ### Shot Blocking: Technique
+
+**When you block, get close and stay on your feet, pads square to the puck, head up and out of the lane, hands behind your body and your stick out of the lane or flat on the ice; never turn your back, turn sideways or lift a leg.** Do not block at all on a 2-on-1, or when you are screening your own goalie.
 
 ```facts
 Position: Get close — the closer to the shooter, the more net you take away and the less the puck can accelerate or deviate; that getting close is also safer is coaching craft, not a measured finding

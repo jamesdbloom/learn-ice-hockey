@@ -397,6 +397,8 @@ Risk: The transition window after a turnover works against you the same way — 
 
 ### What to do off the puck in transition
 
+**In short:** When your team has just won the puck, turn and go at once and get width and depth, but do not all go. When it has just lost it, find the most dangerous man rather than the puck, make sure somebody owns the middle, and count the rush.
+
 ```facts
 Action: When you have just won it, turn and go immediately — start moving on the likelihood of possession, not the certainty of it
 Risk: Skating hard in the wrong direction is a survivable error; being late means the window is gone
@@ -607,6 +609,8 @@ Some off-puck work exists purely to move a defender somewhere unhelpful. You wil
 
 ### Drive the net
 
+**In short:** Drive hard at the net to pull a defender with you — at the net, never at the goalie, because avoiding the goalie is on you, and not into the blue paint, where your position alone can cost the goal in every book. Know where the posts are, and never arrive head first.
+
 ```facts
 Action: Skate hard at the net without the puck — a half-hearted glide does not move anybody
 Goal: Pull a defender with you, because leaving a man driving the goalmouth is unacceptable to any defenceman
@@ -680,6 +684,8 @@ The instruction does not change with the book; only the reason does.
 
 #### To screen properly
 
+**In short:** Stand where the goalie's eyes are, not where the puck is going, with both skates off the red crease line and your stick on the ice. Take a defender's shove on a wide base with your knees and hips giving, head up and chin off your chest, but never a goalie's — give ground the moment a goalie leans into you.
+
 ```facts
 Position: Stand where the goalie's eyes are, not where the puck is going. Occupy the sightline between the puck and the goalie
 Position: Keep both skates off the red crease line, not merely out of the blue paint — the crease edge is where the books split, and off the line is the answer that holds under all of them
@@ -704,6 +710,8 @@ Risk: A screen stands you in the shot lane at close range, upright, with a defen
 ![](diagram:screen-the-goalie-sightline)
 
 #### Whether you touch the goaltender
+
+**In short:** Arrive at the net, never into the goalie, inside the crease or outside it — standing outside the paint is no licence to touch them, and a screen never needs to touch anybody.
 
 ```facts
 Priority: Where you stand and whether you touch the goalie are separate questions with different answers — clearing the blue paint settles only the first

@@ -10,7 +10,7 @@
 
 **Work as a pair: one of you on the puck, one at the mouth of your goal.** Swap every time the puck crosses the middle, and say it out loud. That is the low zone collapse; man-on-man splits it differently, so ask which yours plays.
 
-**At the net front, get inside and lift their stick.** Beat the forward to the spot and lift their stick low as the puck comes. **Hold it by position, not by shoving** — that can be interference. **If a battle moves a body there, never let it cross your goalmouth — the corner side is the safe one.**
+**At the net front, get inside and lift their stick.** Beat the forward to the spot and lift their stick low as a pass or shot arrives. **Hold it by position, not by shoving** — that can be interference. **If a battle moves a body there, never let it cross your goalmouth — the corner side is the safe one.**
 
 **Never carry or pass the puck across the front of your own goal. Go behind the net.** Lost behind the net, the puck is a battle; lost in the slot, it is a chance against. Some teams exchange high above the circles instead, so ask.
 
@@ -43,7 +43,7 @@ You and your partner are the last players between the puck and your goal, so **s
 
 **The pair fails most often when both of you go to the puck.** The net front is then empty: nobody on the screen, the tip or the tap-in. Swapping strong side and weak side out loud is what keeps one of you there.
 
-**The goalmouth is won by getting there first.** A forward who already holds the spot cannot be shoved off it safely. The shove can be called interference wherever you play, and where checking is barred an illegal check as well; CARHA's adult book also puts a duty on you to avert contact. So beat them to the inside, lift their stick as the puck comes, and let go. When a body does move there, the corner is the safe direction — across the goalmouth there is a post at one edge and your goalie at the other.
+**The goalmouth is won by getting there first.** A forward who already holds the spot cannot be shoved off it safely. The shove can be called interference wherever you play, and where checking is barred an illegal check as well; CARHA's adult book also puts a duty on you to avert contact. So beat them to the inside, lift their stick as a pass or shot arrives, and let go. When a body does move there, the corner is the safe direction — across the goalmouth there is a post at one edge and your goalie at the other.
 
 **Gap control is a skating problem before it is a decision.** You cannot close a gap from a standstill, and once you turn to skate forwards you cannot react. That is why the feet start early and the pivot comes late. **Alone against two, the shot is your goalie's** because they can see it and are set for it; a cross-ice pass to an open forward is a chance they cannot save.
 
@@ -141,6 +141,8 @@ Risk: A tucked chin straightens the cervical spine, and the injury from that hea
 **Make that read while you're still skating back for the puck, not once it's on your stick.** A glance over your shoulder on the way — which side is the forecheck arriving from? — turns rim-or-reverse into a decision already made rather than one you make with a forechecker on you. [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) covers the habit and the research behind it.
 
 #### The trapezoid — which books paint one
+
+**Under NHL and IIHF rules a rim that dies in the corner is yours to fetch, because your goalie may play the puck behind the goal line only inside the trapezoid; in a PWHL game or in Britain, play as though it binds.** USA Hockey, Hockey Canada and CARHA mark no trapezoid, so there that puck is your goalie's to play too but not to freeze — find out which book your league runs, and call it before you are both in the corner.
 
 ```facts
 Rule: Under NHL and IIHF rules your goalie may play the puck behind the goal line only inside the marked trapezoid; outside it is a two-minute delay-of-game minor (NHL 27.8, 63.2(viii); IIHF 27.7) — the rule text's one exception is skate contact with the crease, and the IIHF Handbook adds two more
@@ -240,10 +242,10 @@ Action: When the puck crosses the middle you become the strong-side defender and
 
 #### Net-front technique — holding the inside
 
-**Get to the inside spot before the screener, stand beside them with no lean and no push, lift their stick low as the puck comes, and move nobody** — walking a screener out can be called interference in any game, and it is an illegal check where checking is barred.
+**Get to the inside spot before the screener, stand beside them with no lean and no push, lift their stick low as a pass or shot arrives, and move nobody** — walking a screener out can be called interference in any game, and it is an illegal check where checking is barred.
 
 ```facts
-Technique: Never walk a screener out — it can be called interference in any game, and an illegal check where checking is barred. Hold the inside, no lean, no push; lift the stick low as the puck comes, let go
+Technique: Never walk a screener out — it can be interference in any game, and an illegal check where checking is barred. Hold the inside, no lean, no push; lift the stick low as a pass or shot arrives, let go
 Convention: "Position beats strength" is a tendency, not a law — coaching consensus rather than a measured finding. Plan the shift around lifting their stick, not out-leveraging somebody much bigger
 Rule: No body checking is not no contact — USA Hockey's Note to 604(c) protects players "focused on gaining possession of the puck" and "simply maintaining established body position", but penalizes "deliberate physical contact … with no effort to legally play the puck": hold your spot, push nobody
 Rule: Driving an opponent off a position they have established is what is barred — USA Hockey 604's Note 1 makes intentional contact using "overt hip, shoulder, forearm or torso action" an illegal check, at least a minor at 12U and below, all girls'/women's and all non-check adult classes (604(a), (c))
@@ -273,6 +275,8 @@ The picture below is that screener case, and nothing in it moves: stand beside t
 
 #### Net-front technique — which way a body goes
 
+**Whenever a body moves at your goalmouth — a loose-puck battle, or, where your game allows checking, a check on a forward who has the puck — keep their skates on the ice, keep any contact off their head, keep it to the corner side and never across the front of your own net, and if you can see their numbers, pull up.**
+
 ```facts
 Never: Let a battle or a legal check carry a body across your own goalmouth — that path has a goal post at one edge and your goalie at the other. The corner side is the safe one
 Never: Lift a net-front opponent off their edges, even in a legal check on a forward who has the puck — a player whose skates are off the ice cannot brace or choose what meets the post first
@@ -294,6 +298,8 @@ Rule: At a club in England or Wales, outside the Elite League, a game misconduct
 At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban in every league or age group you are registered in ([UK and England Rules](../foundation/uk_rules.md#a-first-major-can-end-your-game-and-adults-are-not-exempt)).
 
 #### Net-front technique — the stick
+
+**Lift their stick only as a pass or shot arrives — up, not sideways, low on the shaft, well below their bottom hand — and let go at once; never hold it, never chop at it, and never take it at their hands, where a lift can be called hooking; on a forward bent low over the puck, take it under the shaft or leave it — a miss that catches the face is a high stick however low your hands were.**
 
 ```facts
 Technique: Body position first, stick second — a stick lift beats a cross-check at everything, including staying on the ice. Lift up, not sideways, low on the shaft, below their bottom hand, then let go
@@ -462,6 +468,8 @@ That pivot is a **coaching default, not a law**: some coaches want a middle pivo
 **If you have just been moved up from forward, this is the barrier.** [Switching Positions](switching_positions.md) is honest that the switch to defence is a technical rebuild rather than a set of new decisions, and takes correspondingly longer.
 
 #### "Step up" and "pinch" are two different plays
+
+**Step up in the neutral zone or at your own blue line to close an attacker's space early — and close it on the puck, never building speed into a hit; pinch at the offensive blue line to stop a clearance and keep the puck in.** A missed step-up leaves only open ice behind you, while a missed pinch still has your forwards in the zone to help.
 
 ```facts
 Key: Stepping up happens in the neutral zone or at your own blue line — you move forward to challenge an oncoming attacker early rather than retreating
@@ -656,6 +664,8 @@ The centre takes the faceoff. **The alignments here are a common default rather 
 ![](diagram:faceoff-dzone-alignment)
 
 ### Power Play (your team has the man advantage)
+
+**Whichever formation your team runs, your first job is keeping the puck in the zone and your second is shooting for tips and rebounds rather than trying to beat the goalie clean — but find out first whether you are on the ice at all, because a 1-3-1 uses only one defenceman.**
 
 ```facts
 Key: 1-3-1 — one defenceman only, playing the single point as the quarterback; if you are the second defenceman you are on the second unit, not on the ice

@@ -599,7 +599,7 @@ The regroup is a defenceman's pass but a forward's tactic, and forwards get it w
 ```facts
 Read: You have numbers — take a developing 3-on-2 rather than throwing it away
 Read: Your change is due: dump it hard past the red line and change; in CARHA keep the backswing short — past fifteen inches is a slap-shot minor; if it injures, a major and game misconduct
-Rule: In a CARHA league keep the dump's follow-through below the shoulders — Rule 62(b) makes high-stick contact above an opponent's shoulders a major even by accident and even if nobody is hurt; deliberate or injuring, it also brings a game misconduct (62(b) Note)
+Rule: Keep the dump's follow-through below the shoulders — only the NHL, IIHF and PWHL excuse a normal one (60.1, PWHL 61.1); CARHA 62(b) makes high-stick contact above the shoulders a major even by accident and with nobody hurt; deliberate or injuring, a game misconduct too (62(b) Note)
 Read: The pass back is not clean — a regroup into pressure is just a turnover in a worse place
 ```
 

@@ -220,6 +220,8 @@ The largest change available in hockey without putting on pads. Two of the three
 
 ### The technical barrier is real: backward skating and pivots
 
+**Before anything tactical, build your backward skating — the backward C-cut, backward crossovers and pivots both ways** — because you cannot hold a tight gap unless you travel backwards nearly as fast as the attacker travels forwards.
+
 ```facts
 Key: Gap control is entirely a skating problem — you cannot hold a tight gap unless you travel backwards nearly as fast as they travel forwards
 Risk: Too big a gap and you get walked into the zone; pivot early and you are beaten by the first change of direction
@@ -521,6 +523,8 @@ The model here is the same one [Mental Game](../off-the-ice/mental_game.md) sets
 - **Accept that some answers are structural.** A team with four centres and no left wingers is going to keep you on the left, and that is a roster fact rather than a judgement of you.
 
 ### If you have been moved without being asked
+
+Being moved is usually not a punishment, so **treat it as a new job: before your first shift, find out the system and ask what a good shift from you looks like there — and never audition for your old position by playing the new one badly.**
 
 ```facts
 Mindset: Being moved without being asked is usually not a punishment — roster arithmetic, an injury, a line that needs a defensively reliable player, or a spot that suits you better

@@ -248,6 +248,8 @@ The one non-negotiable: **at least one forward is always in or attacking the hom
 
 ### The defencemen's three depths
 
+**By default, play a stride inside the blue line; step down no further than the top of the circle to shoot, walk the line or take a pass, where you can still get back; and go below the circles only once a teammate has taken your place at the line, before you go and not after.**
+
 ```facts
 Position: Just inside the blue line — the point — is the default: the low-to-high outlet, the shooting threat that stops the defence collapsing, and the safety net
 Technique: Stay a stride inside the line, not on it — if the puck completely crosses out, the zone is gone and everyone has to re-enter

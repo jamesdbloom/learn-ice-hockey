@@ -1130,6 +1130,8 @@ Action: Look behind your own net before your first shift and see whether the tra
 
 ### What it does to your breakout
 
+**Agree before the game which rim you want — hard all the way round to your winger, or tight behind the net for your goalie to stop and leave — and where the trapezoid applies, never send the medium one that dies in the corner.** With no trapezoid — USA Hockey, Hockey Canada and CARHA — your goalie can play a rim anywhere behind the net, but none of the three lets them leave the crease and freeze it.
+
 ```facts
 Never: Aim a rim straight into the corner where the trapezoid applies — your goalie legally cannot go and get it there, so a defenceman has to, under pressure, back to the forecheck
 Never: Send a teammate into a corner for a rim without the retrieval posture — angle in, never skate square at the end boards, never turn your back to anyone coming at you, never your chin on your chest

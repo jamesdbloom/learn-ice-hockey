@@ -168,6 +168,8 @@ This is a system choice, not a rule of hockey. The default assumed here is a **2
 
 ### What doesn't work
 
+**Protecting a lead, keep a way out of your zone and a way to counter rather than sitting back, chip a tired line's clear out rather than icing it, never hold the puck on the perimeter without a plan, and play the puck, not the clock.** **If a carrier has already passed or shot, let them go and get back into position** — that hit is a late hit, and no book caps it at two minutes.
+
 ```facts
 Risk: Sitting back entirely is a siege you will eventually lose — you need a way to get out and a way to counter
 Never: Ice the puck repeatedly — it is the classic self-inflicted wound
@@ -1036,8 +1038,8 @@ Under **Rule 19.1**, when **one minor is assessed to a player on each team at th
 ```facts
 Rule: Coincidental minors of equal duration cancel; any difference in time is served normally (NHL Rule 19)
 Rule: A second pair of coincidental minors while already 4-on-4 leaves strength unchanged, because the first pair is still on the clock (NHL Rule 19.1)
-Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by a minor against a major at the same stoppage (Appendix IV Table 13, Table 15 in 2025/26), just not by this one
-Rule: But not late — a minor against a major at the same stoppage is 5-on-4 under IIHF 19.3 in the last five minutes of regulation and at any time in overtime, the differential served as a major. NHL 19.4 is the same rule
+Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by a minor against a major at the same stoppage, for two minutes before the major's team plays short (Appendix IV Table 13, Table 15 in 2025/26)
+Rule: A minor against a major at the same stoppage is 5-on-4 under IIHF 19.3 in the last five minutes of regulation and at any time in overtime, the differential served as a major. NHL 19.4 is the same rule
 Rule: Penalised players in coincidental situations cannot leave the box until the first stoppage after their penalty expires (NHL Rule 19)
 Never: Retaliate — you convert your opponent's mistake into no advantage at all
 ```

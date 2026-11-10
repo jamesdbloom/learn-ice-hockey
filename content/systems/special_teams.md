@@ -264,7 +264,7 @@ Technique: A one-timer is a shot taken directly off an incoming pass without sto
 Position: Play your off-wing — left-hander on the right side — so the puck is on your inside hand and your body turns toward the net
 Technique: Weight loaded on the back foot, body still and square before the pass leaves — Shooting covers the mechanics
 Technique: Keep the backswing short — in a CARHA league a stick brought back more than fifteen inches is a slap shot: a minor; if it injures, a major and game misconduct
-Rule: In a CARHA league keep the one-timer's follow-through below the shoulders — Rule 62(b) makes high-stick contact above an opponent's shoulders a major even by accident and even if nobody is hurt; deliberate or injuring, it also brings a game misconduct (62(b) Note)
+Rule: Keep the one-timer's follow-through below the shoulders — only the NHL, IIHF and PWHL excuse a normal one (60.1, PWHL 61.1); CARHA 62(b) makes high-stick contact above the shoulders a major even by accident and with nobody hurt; deliberate or injuring, a game misconduct too (62(b) Note)
 Key: The threat is worth as much as the shot — a live weak-side one-timer forces one killer to stay wide
 Goal: That wide killer is precisely how the bumper and the net front get free, before the puck ever comes to you
 ```
@@ -619,6 +619,8 @@ Key: F1 and F2 are roles, not people — defined by who is first and second to t
 
 #### The four you will meet
 
+**Find out which of these four your kill plays — the 1-3, the 1-1-2, the retreating box or tandem pressure — and know where it breaks: the ice behind a beaten F1 in the 1-3, drop passes and direction changes under the 1-1-2 and the box, and a 2-on-2 with no support if both tandem forwards are beaten.**
+
 ```facts
 Options: The 1-3 — one forward on the puck, the other forward and both defencemen in a line across the ice behind that forward
 Read: Passive 1-3 gives token pressure to make them commit to a side; the same-side press has F1 angle the carrier and F2 close to force a dump or turnover
@@ -943,10 +945,12 @@ NHL regular-season overtime is **five minutes of 3-on-3, sudden death**, followe
 
 #### Coincidental penalties
 
+**When each team takes one minor at the same stoppage with nothing else on the clocks, know which strength you are about to play: four skaters a side under the NHL and PWHL (Rule 19.1), but five a side under the IIHF, Britain's book, whose Rule 19.1 makes the substitution immediate — and several rec and minor-hockey leagues substitute too, so check yours.** In Britain a minor against a major at the same stoppage gives you two minutes of 4-on-4 and then three minutes of 5-on-4 against the team that took the major — except in the last five minutes of regulation and in overtime, when IIHF Rule 19.3 serves that three-minute difference at once, as 5-on-4.
+
 ```facts
 Rule: One minor to each team at the same stoppage, with nothing else on the clocks, is served without substitution and both teams play 4-on-4 (NHL Rule 19.1)
-Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by a minor against a major at the same stoppage (Appendix IV Table 13, Table 15 in 2025/26), just not by this one
-Rule: But not late — a minor against a major at the same stoppage is 5-on-4 under IIHF 19.3 in the last five minutes of regulation and at any time in overtime, the differential served as a major. NHL 19.4 is the same rule
+Rule: Under IIHF Rule 19.1 coincidental minors bring immediate substitution and the teams stay five a side — Britain reaches 4-on-4 by a minor against a major at the same stoppage, for two minutes before the major's team plays short (Appendix IV Table 13, Table 15 in 2025/26)
+Rule: A minor against a major at the same stoppage is 5-on-4 under IIHF 19.3 in the last five minutes of regulation and at any time in overtime, the differential served as a major. NHL 19.4 is the same rule
 Rule: If at least one team was already shorthanded, substitution is immediate and the on-ice strength does not change (NHL Rule 19.1)
 Rule: Coincidental minors make neither team shorthanded, so a goal scored during 4-on-4 releases nobody from the box (NHL Rule 16.2)
 Rule: Where several penalties are assessed at once, equal majors cancel first, then equal minors, and any remaining differential is served normally (NHL Rule 19.5)
