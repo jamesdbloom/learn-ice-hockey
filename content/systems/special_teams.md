@@ -587,7 +587,7 @@ Convention: Coaching material describes it as popular at NHL level, but no leagu
 
 #### Aggressive versus passive
 
-**Pick the kill's pressure setting together: passive — hold the shape, concede the perimeter, block lanes — suits protecting a lead, a tired or outgunned unit, or the end of a kill; aggressive forces errors, but if the mistake does not come you are defending five with three. Either way, pressure as a unit or not at all.**
+**Pick the kill's pressure setting together**: passive — hold the shape, concede the perimeter, block lanes — suits protecting a lead, a tired or outgunned unit, or the end of a kill; aggressive forces errors, but if the mistake does not come you are defending five with three. Either way, **pressure as a unit or not at all.**
 
 ```facts
 Key: The pressure setting is a separate decision from the shape itself

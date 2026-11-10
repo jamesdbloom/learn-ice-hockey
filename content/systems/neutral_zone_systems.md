@@ -499,7 +499,7 @@ A forced entry into a set structure usually ends in a turnover at the line, a du
 
 ### The D-to-D regroup
 
-**When a forward cannot advance, turn it back to a defenceman with hips open up the ice; if the strong side is covered, move it D-to-D, flat and hard, while all three forwards change lanes and build speed — but never blind across the middle with a forechecker between you, and if the lane is not clean, hold it or take it back yourself.**
+**When a forward cannot advance, turn it back to a defenceman with hips open up the ice**; if the strong side is covered, move it D-to-D, flat and hard, while all three forwards change lanes and build speed — but **never blind across the middle with a forechecker between you**, and if the lane is not clean, hold it or take it back yourself.
 
 ```facts
 Action: A forward who cannot advance turns and passes back to a defenceman skating backwards or opened up to receive

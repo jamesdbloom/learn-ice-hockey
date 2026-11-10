@@ -74,7 +74,7 @@ His chart puts the gap between top- and bottom-decile possession players at roug
 
 ### So why bother?
 
-**Don't chase your faceoff percentage. Prepare the draws that change something, and stop giving away the free ones.**
+**Don't chase your faceoff percentage.** Prepare the draws that change something, and stop giving away the free ones.
 
 ```facts
 Priority: Prepare the situational draws, not the league-average one
@@ -199,7 +199,7 @@ A draw is hockey's nearest thing to a closed skill: same start position, same cu
 
 ### The stance
 
-**Get low from your knees and hips — feet staggered, back foot loaded, hips cocked toward where you mean to send the puck — and watch the linesperson's hand, not the other centre. Never get the depth by pushing your head out over the dot: that is the position the IIHF Situation Handbook tells linespersons to break up.**
+**Get low from your knees and hips — feet staggered, back foot loaded, hips cocked toward where you mean to send the puck — and watch the linesperson's hand, not the other centre.** **Never get the depth by pushing your head out over the dot**: that is the position the IIHF Situation Handbook tells linespersons to break up.
 
 ```facts
 Technique: Get low — deep knee bend, chest over the puck, weight on the balls of your feet
@@ -217,7 +217,7 @@ Never: Get low by pushing your head out over the dot — depth comes from knees 
 
 ### The grip
 
-**Take the draw with your bottom hand right down near the blade, where the leverage and speed come from, and roll into the reverse grip only when you have committed to a backhand pull, because it telegraphs and gives you almost nothing on the forehand.**
+**Take the draw with your bottom hand right down near the blade**, where the leverage and speed come from, and roll into the reverse grip only when you have committed to a backhand pull, because it telegraphs and gives you almost nothing on the forehand.
 
 ```facts
 Technique: Bottom hand right down near the blade — that is where the leverage, speed and power come from

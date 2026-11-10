@@ -1036,7 +1036,7 @@ Read: A rebound is available and the goalie is down — shoot immediately, do no
 
 ### Do not shoot when
 
-**Hold the shot when the lane from the point is blocked, when nobody is at the net front, or when you are on a sharp angle with no traffic — and when a pass across the royal road sets up a better shot, make the pass, because a shot taken after the goalie has had to move across is worth materially more.**
+**Hold the shot when the lane from the point is blocked, when nobody is at the net front, or when you are on a sharp angle with no traffic** — and when a pass across the royal road sets up a better shot, make the pass, because a shot taken after the goalie has had to move across is worth materially more.
 
 ```facts
 Never: Fire into a shin pad from the point with the lane blocked — a blocked point shot usually goes the other way with your team spread out
