@@ -434,6 +434,19 @@ LEXICON: tuple[tuple[str, str], ...] = (
     # Hockey Canada's category shorthand in two facts lines; the general slash
     # rule voiced it "Jr or Sr", two abbreviations a voice cannot expand.
     ("Jr/Sr", "Junior or Senior"),
+    # Casebook "Situation" abbreviated in citations ("Casebook 613 Sit. 8"); voiced
+    # literally as "Sit. eight" until 10 Nov 2026. Digit-led and case-sensitive only,
+    # so the verb "sit." is untouched, and so is an imperative "Sit." unless a digit
+    # follows it ("Sit. 2 minutes" would become "Situation 2"; no such case in content/).
+    ("Sit. 1", "Situation 1"),
+    ("Sit. 2", "Situation 2"),
+    ("Sit. 3", "Situation 3"),
+    ("Sit. 4", "Situation 4"),
+    ("Sit. 5", "Situation 5"),
+    ("Sit. 6", "Situation 6"),
+    ("Sit. 7", "Situation 7"),
+    ("Sit. 8", "Situation 8"),
+    ("Sit. 9", "Situation 9"),
     ("VO₂max", "V O two max"),
     ("VO₂", "V O two"),
     ("R²", "R squared"),
@@ -4713,6 +4726,8 @@ def self_test() -> int:
         ("clauses iii and v", "clauses three and five"),
         ("the item is", "the item is"),
         ("7.7 Jr/Sr", "seven point seven Junior or Senior"),
+        ("Casebook 613 Sit. 8", "Casebook six hundred and thirteen Situation eight"),
+        ("Sit. Breathe.", "Sit. Breathe."),
         ("ASHL Hockey 101 listings", "ASHL Hockey one oh one listings"),
         ("16U", "sixteen U"),
         ("85 ft", "eighty-five feet"),
@@ -4957,7 +4972,7 @@ def self_test() -> int:
         ("the lines. 26 metres is the minimum", False, "the lines. Twenty-six metres is the minimum"),
         ("1. Rink dimensions", True, "One. Rink dimensions"),
         ("2-1-2 or 1-2-2", True, "Two one two or one two two"),
-        ("Casebook 613 Sit. 8 says", False, "Casebook six hundred and thirteen Sit. eight says"),
+        ("Casebook 613 Sit. 8 says", False, "Casebook six hundred and thirteen Situation eight says"),
         ("let a rebound sit. 4 players", False, "let a rebound sit. Four players"),
         ('"any attempt... 2 changes"', False, '"any attempt... two changes"'),
         ('"Outlet!" means go', True, '"Outlet!" means go'),
