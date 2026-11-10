@@ -267,6 +267,8 @@ Every player is assigned an opponent and covers that opponent everywhere in the 
 
 ### Assignments
 
+Under man-on-man, **know whose man is whose before the puck drops**. The usual split, which your coach may change, gives the defencemen the two most dangerous forwards low, the centre the third, and the wingers the two opposing defencemen, following them into the corner if they walk down. Trade checks only when two attackers cross cleanly and you both call it out loud.
+
 ```facts
 Convention: Under man-on-man, both defencemen normally take the two most dangerous forwards — typically whoever is low and around the net
 Convention: The centre takes the third forward, often the one supporting on the wall or in the slot
@@ -581,7 +583,7 @@ Action: Call the arrival, not the goal. "Back door!" the moment they appear, not
 Key: Instead of shooting, the opposing defenceman skates down toward the top of the circle — in a pure zone they cross out of the winger's area and into nobody's
 Action: Find out your team's version before you need it — this one is a coaching choice, not a rule of hockey
 Convention: Under low zone collapse, follow a few feet, stay connected and call the switch loudly, but do not chase into the corner
-Convention: Under man-on-man, you go with them all the way, wherever they go
+Convention: Under man-on-man, you go with them all the way down
 Convention: Under hybrid, release from zone and pick them up man-on-man as soon as they cross the dots
 Priority: When a fourth attacker arrives low, somebody gives up their area and it must not be the goalmouth — usually the centre absorbs them and the weak-side winger takes the high slot
 ```
@@ -592,7 +594,7 @@ Priority: When a fourth attacker arrives low, somebody gives up their area and i
 
 **Defending it — and this is a coaching choice, so know your team's version:**
 - **Under low zone collapse:** the standard instruction is that the winger **follows them down a few feet and stays connected, but does not chase into the corner**, and calls the switch loudly so the centre and defencemen know a fourth attacker is arriving low. This is a genuine compromise, and it is the system's weak point.
-- **Under man-on-man:** you go with them, all the way, wherever they go. Simple, and the reason the walk-down doesn't trouble man teams.
+- **Under man-on-man:** you go with them, all the way down. Simple, and the reason the walk-down doesn't trouble man teams.
 - **Under hybrid:** you release from zone and pick them up man-on-man as soon as they cross the dots. This is the cleanest answer of the three, and the main reason hybrids exist.
 - **Everyone else:** when a fourth attacker arrives low, you are outnumbered down there. Somebody has to give up their area and it must not be the goalmouth. Usually the centre absorbs the extra man and the weak-side winger takes over the high slot entirely.
 

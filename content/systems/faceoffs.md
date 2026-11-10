@@ -958,6 +958,8 @@ Rule: A puck sent the length of the ice directly off the draw is not icing in an
 
 ### 4-on-4 and 3-on-3
 
+With fewer skaters on the ice a lost draw is quickly a chance against, so **set up for losing it as carefully as for winning it**.
+
 ```facts
 Convention: 4-on-4 is two forwards and two defencemen, or three forwards and one, depending on the coach
 Priority: At 4-on-4 keep both back players honest — a lost draw is a genuine odd-man threat

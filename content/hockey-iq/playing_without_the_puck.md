@@ -491,6 +491,8 @@ Convention: That a change of speed beats top speed is coaching craft, not a meas
 
 ### Change of direction
 
+When a check is shadowing you, **make them transfer their weight before you go** — two steps one way, then hard the other: break toward the side their hips are not facing, curl rather than stopping dead, and come back toward the puck.
+
 ```facts
 Technique: Two steps one way, then hard the other — the defender's weight has to transfer before they can follow
 Read: Attack their hips — break in the direction their hips are not facing

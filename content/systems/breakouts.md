@@ -83,6 +83,8 @@ There are only two categories of zone exit:
 
 ### Why controlled exits matter
 
+**Get out of your zone with the puck, or with a dump your team wins back.** A tracking study of NHL exits concluded that keeping possession, not the way the puck left, is what leads to a zone entry.
+
 ```facts
 Key: An analysis of roughly 230,000 tracked NHL zone exits found controlled exits led to a subsequent zone entry about 89% of the time, unrecovered dump-outs about 20%
 Key: The tracking underneath it is Corey Sznajder's manual dataset — roughly half the games of 2016-17 and 2017-18, not two complete seasons

@@ -772,11 +772,14 @@ Verified against the *NHL Official Rules 2025-2026*, **Rule 24 (Penalty Shot)** 
 
 ### How to practise it
 
+**Make breakaway practice look like the real thing**: a live goalie, a kept score, and a start far enough back to rehearse the change of pace. Keep every shot off your goalie's head, because no whistle comes in time to protect them.
+
 ```facts
 Action: Take breakaways at the end of every practice, against a real goalie, keeping score
 Action: Drill one go-to move until it is automatic, then a second that goes the other way
 Action: Start from your own blue line so you rehearse the change of pace, not only the last ten feet
 Action: Alternate shoot, deke, shoot, deke, so you are not building a habit the goalie can read
+Never: Shoot at your own goalie's head in a breakaway drill — no whistle comes in time to protect them
 ```
 
 - **Take breakaways at the end of every practice, against a real goalie, keeping score.** Shooting on an empty net teaches you nothing about this — and see [How to Practise](#how-to-practise) on what not to shoot at a live goalie, because no whistle will come in time to protect them.

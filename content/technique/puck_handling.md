@@ -266,17 +266,19 @@ Most puck touches in a real game happen in about the space of a phone box, with 
 
 ### Small-area control
 
+In traffic, **shrink your handling to the space your body protects**, and when pressure arrives from one side turn side-on to it, hip and backside between it and the puck, and rotate the puck behind your body — never your back to anyone coming at you.
+
 ```facts
 Technique: Shorten everything — small touches, close to your skates, blade always cupped
 Never: Make a big pull in traffic — it is a gift-wrapped turnover
 Position: Handle in the space you own — the small triangle between your two skates and the toe of your blade
-Action: Turn away from pressure, rotating the puck behind your body rather than beating the stick on the pressure side
+Action: Turn side-on to pressure, hip and backside between it and the puck, and rotate the puck behind your body — never your back to anyone coming at you
 ```
 
 - **Shorten everything.** Small touches, close to your skates, blade always cupped.
 - **Keep the puck moving through small arcs**, not big pulls. A big pull in traffic is a gift-wrapped turnover.
 - **Handle in the space you own**, which in traffic is usually the small triangle between your two skates and the toe of your blade — plus whatever your body is shielding.
-- **Turn away, not into.** When pressure arrives from one side, the first instinct should be to rotate the puck behind your body, not to try to beat the stick on the pressure side.
+- **Turn side-on, never your back.** When pressure arrives from one side, the first instinct should be to turn side-on to it, hip and backside between it and the puck, and rotate the puck behind your body — not to try to beat the stick on the pressure side, and never to show your back to anyone coming at you.
 
 ### Your feet and body are part of your handling
 
@@ -702,6 +704,8 @@ Two habits pay here. **Practise one-handed carries** — top hand only for a str
 
 ### The principle: a deke works on what you show, not what you do
 
+To beat a defender, **sell the fake with your head, shoulders, hips and feet, not just your hands**, make it look exactly like the real thing until the last instant, and accelerate out of it into the gap it opens.
+
 ```facts
 Key: A deke is a false signal — defenders commit on your hips, shoulders, head, eyes, weight and blade angle
 Action: Commit fully — the fake has to look exactly like the real thing right up to the last instant
@@ -898,14 +902,14 @@ The habit to build: **look for the pass first, and only then consider the move.*
 Never: Try to beat two players — pretending otherwise is how a 2-on-2 becomes a rush the other way
 Options: Pass to the teammate the second defender's arrival has left open
 Options: Chip the puck into the space behind them
-Options: Outside your own end, protect the puck, take the contact, and wait a second for support
+Options: Outside your own end, protect the puck side-on and wait a second for support — under CARHA, avert the contact rather than take it
 ```
 
 You can beat one player. You cannot beat two, and pretending otherwise is how a 2-on-2 becomes a rush the other way. When a second defender is arriving:
 
 - pass to the teammate their arrival has left open,
 - chip the puck into space behind them,
-- or, outside your own end, protect it, take the contact, and wait a second for support.
+- or, outside your own end, protect it side-on and wait a second for support — under CARHA, avert the contact rather than take it.
 
 
 ![](diagram:you-cannot-beat-two)

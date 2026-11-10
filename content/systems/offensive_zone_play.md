@@ -97,6 +97,8 @@ So at even strength a clean look from the slot is worth several times an unscree
 
 ### The two levers you actually have
 
+At even strength, before you shoot, **get the puck into the home-plate area or make the goalie move** — with a screen, a pass across the middle, or a rebound they have to commit to.
+
 ```facts
 Key: There are only two ways to make a shot dangerous — be able to name which one you are pulling at any moment
 Action: Move the puck to a dangerous place — carry it, pass it or drive it into the home-plate area before you shoot
@@ -142,6 +144,8 @@ What is missing is the data. The shot-by-shot tracking, the classification rules
 A **royal road pass** — also called a **slot-line pass**, **cross-seam pass** or **cross-slot pass** — is a pass that crosses that centre line in the offensive zone immediately before a shot. Note the *cross-*: a **seam** on its own is any gap between two defenders' coverage areas and the lane through it, which need not cross the centre of the ice at all.
 
 ### Why it beats everything else
+
+**Pass across the slot to make the goalie move sideways**, and get the shot away before they have squared up again — that turns a positioning save into a desperation one.
 
 ```facts
 Key: A goalie's save is mostly positioning, not reflexes — a set goalie is already covering most of the net before the shot leaves
@@ -887,6 +891,8 @@ Read: Coverage lapses arrive after a long shift of defending — a defence that 
 - Coverage lapses tend to arrive after a long shift of defending — a defence that has been chasing for forty seconds is a defence about to make a mistake.
 
 ### Why having only one is a problem
+
+Play both the rush and the cycle, and **have a plan for when one of them is stopped** — when the rush dies at the blue line, a chip past the defenceman, a soft area dump, or a controlled retreat and re-attack.
 
 ```facts
 Risk: A rush-only team has nothing once the rush is denied at the blue line — they enter, lose it, and go back the other way

@@ -123,6 +123,8 @@ Support has a working range. Outside it, you are decoration.
 
 ### Too close
 
+When a teammate has the puck under pressure, **give them room**: stay out of the lane they will want to turn into, and do not take the puck so close that their forechecker is on you before it settles.
+
 ```facts
 Never: Support from inside a stick's reach of your teammate's checker — one body then guards two of you
 Risk: Standing in the carrier's escape route shrinks their world when they need somewhere to turn into
@@ -137,6 +139,8 @@ Key: Supporting too close moves the problem, it does not solve it
 So back off until one defender can no longer reach both of you.
 
 ### Too far
+
+**Come close enough to be a short pass**, and stay near enough to support them again once they have passed to you.
 
 ```facts
 Risk: A long pass spends longer on the ice, giving every defender time to read it and get a stick in the lane
@@ -374,6 +378,8 @@ On a young or new team the puck seems to have gravity. Ten players end up in a f
 3. **Nobody wants to be the player who wasn't there.** Near the puck, at least you were involved.
 
 ### Why it is wrong
+
+When the puck is in a pile and your system has not sent you in, **stay out of it**: be an option about five metres away, in the empty ice the puck will come out into, so you do not bring your checker in with you or leave nobody above the puck.
 
 ```facts
 Risk: You do not arrive alone — you arrive as two players, in a space that was already crowded

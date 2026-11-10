@@ -138,6 +138,8 @@ Some coaches do assign them by position as a teaching shortcut for beginners, an
 
 ### The roles rotate mid-shift
 
+If you are F1 and they move the puck defenceman-to-defenceman past you, **do not turn around and chase: drop into the support role you have left open**, usually as the new F3 high in the zone, and let the forward closest to the new carrier attack. Taking the lower role when you are beaten is what builds a rest into the system.
+
 ```facts
 Read: When the opponents move the puck defenceman-to-defenceman, your F1 has just been beaten and is now behind the play
 Action: The forward closest to the new puck carrier becomes the new F1 and attacks; everyone else adjusts one slot
@@ -390,6 +392,8 @@ Widely described in coaching material as the most common *base* structure in hoc
 **How it is beaten:** Patience and puck movement. D-to-D passes to shift the wall, then a quick-up to a winger who has come *underneath* the fox rather than standing on the wall in front of them. Also the simple stretch pass or chip past all four players above F1, because **the two defencemen are the deepest layer the 1-2-2 has** — the weak-side D is the safety *inside* the shape, covering the middle behind the forwards, not a fifth man stationed behind the pair. Get a puck past the D line and there is nobody but the goalie in behind it.
 
 #### The 1-2-2 as a neutral-zone structure
+
+If your team's base system is the 1-2-2 and the forecheck fails as they exit, **retreat into the same three layers across the middle**: your five are already spaced for it.
 
 ```facts
 Key: The same three numbers describe two things — all three layers inside their end, or the same layers held back across the middle third
@@ -711,6 +715,8 @@ There are five kinds of dump, and which you use is a [Zone Entries](zone_entries
 
 ### Off a turnover — you are behind the play
 
+When you lose the puck in their zone, **the closest player pressures at once, whoever they are, and everyone else finds their layer, not the puck**. Settle for slowing them down and collecting it in the neutral zone, and do not pinch unless the puck is genuinely dying on the wall.
+
 ```facts
 Mindset: You are recovering, not hunting — you are disorganised and they are not
 Action: The closest player pressures immediately, whoever they are — two seconds of pressure buys the rest of your team time to sort themselves out
@@ -874,6 +880,8 @@ This is the coach's decision, but you should understand the logic, because you w
 In North American rec or youth hockey the mismatch is probably not there. **Press after their icing because you like the shape, not because they are stuck out there — and ask which book your league runs.**
 
 #### The one row coaches genuinely disagree on: facing an elite puck-mover
+
+Against a defenceman who moves the puck well, **press with a 2-1-2 only if you will actually arrive before the pass** — fast, fit forwards, or chasing the game. If you cannot be confident of getting there first, your forwards are tired or you are protecting a lead, contain with a 1-2-2 or 1-3-1 instead. Coaches go both ways on this, so ask which your bench wants.
 
 ```facts
 Read: Pressure (2-1-2) if your forwards are fast and fit, or you are chasing the game — deny the time and the skill never gets used

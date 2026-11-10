@@ -389,16 +389,18 @@ Middle drives only work if they are **committed** — a half-hearted one is a pl
 
 ### Using a teammate as a screen
 
+Cross with the carrier near the line and **skate your own route to the net**, so the defender tracking the puck has to go around you. Never cut across into their path, or stop, stand or step into them, to make the pick: deliberately body-blocking a defender who is not the puck carrier is interference.
+
 ```facts
 Action: Cross with a teammate near the line so the defender tracking the carrier has to go around them
 Key: Skate your own route to the net and let the defender's chosen path be the one that gets tangled
-Never: Stop, stand, or step into a defender to make the pick — deliberately body-blocking a non-carrier is interference
+Never: Cut across into a defender's path, or stop, stand or step into them, to make the pick — deliberately body-blocking a non-carrier is interference
 Read: Officials at every level judge it on whether you were going somewhere
 ```
 
 Two attackers crossing near the line can be used so that the second one runs interference — the defender tracking the carrier ends up having to go around your teammate.
 
-**Be careful with this one.** Deliberately body-blocking a defender who is not the puck carrier is **interference**. What is legal is skating your own route to the net and letting the defender's chosen path be the one that gets tangled. What is not legal is stopping, standing, or stepping into them to make the pick. The distinction is whether you are playing hockey or setting a screen; officials at every level judge it on whether you were going somewhere. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
+**Be careful with this one.** Deliberately body-blocking a defender who is not the puck carrier is **interference**. What is legal is skating your own route to the net and letting the defender's chosen path be the one that gets tangled. What is not legal is cutting across into their path, or stopping, standing, or stepping into them, to make the pick. The distinction is whether you are playing hockey or setting a screen; officials at every level judge it on whether you were going somewhere. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 ### Entering with numbers — 2-on-2 and 3-on-2
 
@@ -443,7 +445,7 @@ Rule: IIHF 48.1 opens "There is no clean check to the head or neck" and the chec
 Rule: Head up, and IIHF 48.1 is on your side — of a player skating head up, "whether they are in possession of the puck and may reasonably be expecting impending contact, an opponent does not have the right to hit them to the head or neck"; the NHL bars an avoidable head hit but writes neither half
 Rule: The head-down carve-out is the IIHF's alone — USA Hockey's Casebook answers that crossing the ice at full speed to punish a head-down opponent rather than to play the puck is charging (Rule 607, Situation 2), and Hockey Canada's nearest rule turns on the ducking player rather than the checker
 Never: Delay into the wall — a drive-and-delay is an open-ice turn, and the safety override — never turn your back to anyone coming at you near the wall — outranks the play
-Never: Step into a defender on a crisscross. Skate your own route instead, because deliberately body-blocking a player who does not have the puck is interference
+Never: Cut into a defender's path or step into them on a crisscross. Skate your own route instead, because deliberately body-blocking a player who does not have the puck is interference
 Technique: If you are tight to the wall and cannot get off it, take it on your forearm and hip, never the point of your shoulder, head up and chin off your chest, rather than turning away into the boards
 ```
 
@@ -455,7 +457,7 @@ Technique: If you are tight to the wall and cannot get off it, take it on your f
 
 **Delay in open ice, never against the wall.** The drive-and-delay is [§5](#5-the-delay--curl-back)'s turn, deeper and faster, and **§5's safety override applies unchanged**. If you cannot make the turn in open ice, do not make it. If you are already tight to the wall, take the contact on your forearm and hip rather than turning into the boards, head up and chin off your chest. Turn your back to anyone coming at you at the wall and the contact becomes a hit from behind — and if you turned into it on purpose, the NHL and PWHL give the hitter no penalty at all (43.1), the IIHF waives only the checking-from-behind call (43.1), and Hockey Canada still penalises the hitter.
 
-**Skate your route; do not set a pick.** The crisscross works because two attackers exchanging lanes force two defenders to decide whether to switch. It stops working, and becomes a penalty, the moment you stop, stand, or step into a defender who does not have the puck — that is interference, and [Using a teammate as a screen](#using-a-teammate-as-a-screen) above covers the distinction.
+**Skate your route; do not set a pick.** The crisscross works because two attackers exchanging lanes force two defenders to decide whether to switch. It stops working, and becomes a penalty, the moment you cut across into the path of, or stop, stand or step into, a defender who does not have the puck — that is interference, and [Using a teammate as a screen](#using-a-teammate-as-a-screen) above covers the distinction.
 
 ### One thing that is not a rule
 
@@ -586,7 +588,7 @@ Never: Curl against the wall — curl in open ice. Caught on the boards: forearm
 
 - When you have numbers now and they will be gone in a second — take the odd-man rush.
 - When you have nobody behind you at all. A delay only works if support is genuinely coming. If your line is caught out and the bench is calling, get it in deep and change.
-- When a delay would drag you back over the blue line while a teammate is deep in the zone — they have to get back out before the puck comes back in, or your re-entry is offside — and under Hockey Canada, carry it back in knowing they are in there and it can be called an intentional offside, with the draw in your own end.
+- When a delay would drag you back over the blue line while a teammate is deep in the zone — they have to get back out before the puck comes back in, or your re-entry is offside — and under Hockey Canada, if you carry it back in knowing they are in there, it can be called an intentional offside, with the draw in your own end.
 - **When you are tight to the wall with anyone closing on you.** This limits *how* you curl, not whether: curl into open ice, and if you cannot get off the boards, take the contact rather than turning away into the wall.
 
 ---
@@ -602,7 +604,7 @@ The carrier attacks the line, drawing the defenders' eyes and weight toward the 
 ```facts
 Action: Attack the line to draw the defenders' eyes and weight, then leave the puck in the space the trailer is skating into
 Technique: Drop to a space, not to a stick — you leave the puck, the receiver skates onto it
-Action: Keep going hard into the zone as though you still have it, so you take a defender with you
+Action: Keep going hard into the zone as though you still have it, taking a defender with you — your own route to the paint's edge, never cutting across or stepping into one, which is interference
 Key: There must be a speed differential — the trailer moving faster than the defenders can adjust
 Options: On the power play, attack straight at the first penalty killer to freeze them, then drop underneath into space
 ```
@@ -612,7 +614,7 @@ Options: On the power play, attack straight at the first penalty killer to freez
 Three things make it work:
 
 1. **The drop is to a space, not to a stick.** You leave the puck; the receiver skates onto it.
-2. **The carrier's route after the drop is the whole point.** If you drop the puck and coast, the defence simply switches to the new carrier and nothing has changed. If you drive the net, you take a defender with you.
+2. **The carrier's route after the drop is the whole point.** If you drop the puck and coast, the defence simply switches to the new carrier and nothing has changed. If you drive the net, you take a defender with you — by skating your own route, and stopping at the edge of the paint, off its red line, not by stepping into one: the defender you take with you does not have the puck, so cutting across into their path, or stopping, standing, or stepping into them, to make the pick is interference.
 3. **There is a speed differential.** The trailer must be moving faster than the defenders can adjust. On the power play this is the classic use — the puck carrier attacks straight at the first penalty killer to freeze them, then drops underneath into space.
 
 ### When it's right
@@ -898,6 +900,8 @@ Read these against the defender's own scale in [Defending the Rush](defending_th
 - **Tight gap (one to one and a half stick-lengths, stick on you, standing up at the line):** carrying is a low-percentage play. Chip past, dump, or delay.
 
 ### 2. Support
+
+Choose the entry by who is coming with you: **with teammates at the line at speed, carry it or pass it in**; with nobody, put it where a teammate can get to it.
 
 ```facts
 Read: Two or more teammates at the line with you, at speed — carry, or pass in

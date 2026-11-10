@@ -331,6 +331,8 @@ Read that second one carefully. Chopping *at their stick* is still slashing if i
 
 ### The poke check
 
+When a carrier is square to you with the puck out in front, **jab your blade straight at the puck from the shoulder, then recover and keep skating**. Never lunge with your whole body: if your blade cannot reach the puck without lunging you are too far away, and once your feet are committed a good carrier steps round your stick.
+
 ```facts
 Technique: A short, straight jab of the blade at the puck, one hand or two, from a controlled distance
 Read: Use it when you are square to a carrier with the puck out in front — receiving, looking up, or beginning a deke
@@ -415,11 +417,13 @@ The NHL's hooking rule has no hands sentence, but its slashing rule does — NHL
 
 ### The sweep check
 
+Beaten to the outside, or covering the pass across the slot or on a 2-on-1, **sweep your blade flat along the ice through the puck or the passing lane, with your feet kept under you**. The blade stays on the ice: a sweep at knee or waist height is a hook, a slash or a trip.
+
 ```facts
 Technique: A low, wide arc — blade flat, shaft nearly parallel to the ice, sweeping through the puck or the passing lane
 Read: Use it when beaten to the outside, defending a pass across the slot in front of your net, or covering the pass on a 2-on-1
 Technique: Bottom hand slides down the shaft, get low, sweep through the ice — not through the air
-Never: Sweep at knee or waist height — that is a hook or a slash
+Never: Sweep at knee or waist height — that is a hook, a slash or a trip
 Never: Lean your body after the sweep. Sweep with your stick instead and keep your feet under you
 ```
 
@@ -427,24 +431,26 @@ Never: Lean your body after the sweep. Sweep with your stick instead and keep yo
 
 **When it works:** When you are beaten to the outside and reaching across. When you are defending a pass across the [slot](../foundation/rink_map.md#the-slot), the area in front of the net between the faceoff circles. Or when you are down low and want to take away a lane without committing your body. Defencemen use it on a 2-on-1 to cover the pass while the goalie takes the shooter.
 
-**How to do it:** Bottom hand slides down the shaft, get low, sweep through the ice — not through the air. The blade must stay on the ice; a sweep at knee or waist height is a hook or a slash.
+**How to do it:** Bottom hand slides down the shaft, get low, sweep through the ice — not through the air. The blade must stay on the ice; a sweep at knee or waist height is a hook, a slash or a trip.
 
 **The mistake:** Sweeping with your body leaning after it. Sweep with your stick and keep your feet under you.
 
 ### The press-down (stick press)
 
+In tight at the net front, on the wall or in a faceoff scramble, **press their blade down to the ice as the puck arrives, then let go**, so they cannot use it at that moment. Never press with force, chop at it or press on their hands, and do not keep a press on a player with no puck near: that can be called holding.
+
 ```facts
-Technique: Lay your blade or shaft on top of their blade, pinning it to the ice so they cannot shoot, pass or move the puck
-Read: Use it in tight — net front, board battles, faceoff scrambles — when you want a teammate to arrive
+Technique: As the puck arrives, lay your blade or shaft on top of their blade and press it to the ice so they cannot shoot, pass or move the puck — then let go
+Read: Use it in tight — net front, board battles, faceoff scrambles — when the puck is arriving at their blade or loose between you
 Key: The lift takes their blade up so you can take the puck; the press takes it down so they cannot use it
-Never: Press with force, chop down repeatedly, or press on their hands — a press is a hold-and-pin, not a chop
+Never: Press with force, chop down, press on their hands, or keep the press on with no puck near — a press held on a player can be called holding
 ```
 
-**What it is:** You lay your blade or shaft down on top of their stick blade, pinning it to the ice so they cannot shoot, pass, or move the puck.
+**What it is:** As the puck arrives, you lay your blade or shaft down on top of their stick blade, pressing it to the ice so they cannot shoot, pass, or move the puck at that moment — then you let go.
 
-**When it works:** In tight — net front, board battles, faceoff scrambles, and any time the puck is sitting between you and an opponent and you want a teammate to arrive. It is the opposite tool to the lift: the lift takes their blade *up* so you can take the puck; the press takes their blade *down* so they cannot use it.
+**When it works:** In tight — net front, board battles, faceoff scrambles, and any time the puck is arriving at their blade or sitting between you and an opponent. It is the opposite tool to the lift: the lift takes their blade *up* so you can take the puck; the press takes their blade *down* so they cannot use it.
 
-**Where it becomes a penalty:** Pressing down with force, repeatedly chopping down, or pressing down on their hands. A press is a hold-and-pin, not a chop.
+**Where it becomes a penalty:** Pressing down with force, repeatedly chopping down, or pressing down on their hands or high on their shaft — and keeping the press on a player with no puck near, which can be called holding ([Net-Front Battles](#9-net-front-battles)). A press is a moment, not a pin.
 
 > **All four of these work in non-contact leagues.** If you play in a beer league and want to become a genuinely better defensive player this season, learn the stick lift.
 
@@ -943,16 +949,19 @@ The warning that *"a locked, straight arm into the boards is how wrists and coll
 
 ### Bracing and absorbing
 
+When a hit is coming, **get low and wide and skate through it on your own line, letting your knees and hips absorb it**, hands and stick in front of you. Never turn into a closing opponent to meet it: that adds your speed to theirs, and wherever checking is barred or restricted, as in women's hockey, the move is itself a penalty — under CARHA, avoid the contact altogether — and in any league, building speed into a collision is what the charging rules reach.
+
 ```facts
 Position: Wide base, knees bent, weight low — an athletic stance rides contact, a stiff upright one gets knocked over
 Action: Skate through the check, which is USA Hockey's own instruction — meet contact with your legs moving rather than slowing or stopping; momentum you generate is momentum that does not go into you
-Never: Skate at an oncoming opponent to meet a hit — you add your speed to theirs and neither controls the geometry. Keep moving on your line. In women's hockey it is an illegal hit: IIHF 101.1, PWHL 52.1
+Never: Skate at an oncoming opponent to meet a hit — you add your speed to theirs and neither controls the geometry. Keep moving on your line; where checking is barred or restricted it is a penalty
+Rule: Where checking is barred or restricted, stepping into a hit is a penalty: women's hockey (IIHF 101.1, PWHL 52.1), Hockey Canada U13 and below and female (7.3(a)), USA Hockey 12U, girls', women's and non-check adult (604(c)); CARHA 49(a) also reaches failing to avert contact
 Position: Chest and shoulder first, hands and stick in front of your body, not out to the side
 Technique: Absorb with your legs — let your knees and hips give rather than taking it all through a locked frame
 ```
 
 - **Wide base, knees bent, weight low.** A stiff, upright player gets knocked over. A player in an athletic stance rides the contact.
-- **Meet it, don't wait for it — but do not go and get it.** Skating into contact with your body prepared and your feet moving costs far less than standing still and being hit. USA Hockey asks players to *"keep their legs moving and concentrate on skating right through the impact"* — on your own line, not theirs. ⚠️ **Never turn into a closing opponent**: it adds your speed to theirs, and at that combined speed neither of you controls the collision. In women's hockey the move itself is an illegal hit: *"[a]ny move by a Player to step or glide into an opposing Player"* is at least a minor under IIHF Rule 101.1, and the PWHL writes the same at Rule 52.1. In any league the charging rules reach building speed into a collision ([each book's stride test](#delivering-a-legal-body-check-technique)).
+- **Meet it, don't wait for it — but do not go and get it.** Skating into contact with your body prepared and your feet moving costs far less than standing still and being hit. USA Hockey asks players to *"keep their legs moving and concentrate on skating right through the impact"* — on your own line, not theirs. ⚠️ **Never turn into a closing opponent**: it adds your speed to theirs, and at that combined speed neither of you controls the collision. Wherever checking is barred or restricted, the move is itself a penalty. In women's hockey *"[a]ny move by a Player to step or glide into an opposing Player"* is at least a minor under IIHF Rule 101.1, and the PWHL writes the same at Rule 52.1. Hockey Canada prices it as a body check at U13 and below and in female hockey (Rule 7.3(a)), and USA Hockey at 12U and below, in all girls' and women's play and in non-check adult (Rule 604(c)). CARHA Rule 49(a) goes further and reaches a player who *"does not avert body contact"*, so under CARHA get out of its way rather than meet it. In any league the charging rules reach building speed into a collision ([each book's stride test](#delivering-a-legal-body-check-technique)).
 
   You may hold your ground instead. NHL and IIHF Rule 56.1 give a player the ice they are standing on. USA Hockey, for non-checking play, writes that a skater *"is entitled to stand their ground and is not required to move if an opponent wishes to skate through that area of the ice"*. IIHF Rule 101.1 lets women players *"'hold their ground'"* and the PWHL writes it at 52.1(iii); CARHA gives only defending players the right to *"stand their ground"* or *"shadow"* attackers, and Hockey Canada writes no such sentence.
 - **Chest and shoulder first, hands in front.** Keep your hands and stick in front of your body, not out to the side. This protects you and keeps you able to play the puck the instant contact ends.
@@ -1098,6 +1107,8 @@ Key: Arriving first with your body in the wrong place is worse than arriving sec
 ```
 
 ### The wide low base
+
+In a board battle, **get your centre of gravity below your opponent's and stay mobile in that stance**, driving with your legs, chest and head up: a low, wide base is very hard to knock off the puck.
 
 ```facts
 Position: Feet wider than shoulders, knees bent deeply, backside low, chest up
@@ -1522,7 +1533,7 @@ Winning the race is not the same as winning the puck. The player who arrives hal
 
 **So: skate the inside lane, make them go the long way round, and do not use your hands.** The mechanics, in the order they happen. **Approach on an arc**, not straight at the puck, so that you get there already turned. **Turn your hips** so your backside is between the opponent and the puck rather than arriving square. **Get low and wide**, feet outside your shoulders. **Keep your feet moving**: a stationary player on the wall gets pinned, while one with momentum can escape along the boards or, off a checker already leaning on them, spin out to the middle. And **fend with the free hand, never hold**: it may fend off an opponent or their stick but never hold, pull, tug or grab, and USA Hockey allows even the fend only on the conditions set out in [§4](#4-body-position-as-defence).
 
-**Under Hockey Canada or in a CARHA adult league,** ⚠️ **hold only a lane you already have, and never lean or body to keep it — and in CARHA, if your side touched the puck last, as on your own dump-in, race the puck, not the lane.** Neither book writes a right to lengthen an opponent's path to the puck, and both make it interference to impede an opponent *"who is not in possession of the puck"* (Hockey Canada 8.3, CARHA 66(a)). **That does not make the player with the puck fair game.** Hockey Canada 8.1 defines holding as restraining an opponent by impeding them *"whether or not they are in possession of the puck"*: a minor, or a major and a game misconduct if it injures. CARHA's Glossary says the same, *"whether or not in possession of the puck"*: a minor or a major and game misconduct (63(a)), and the major is mandatory if it injures (63(b)). CARHA goes further: Rule 49(a) reaches a player who *"does not avert body contact with an opponent"*, so there avoid the contact rather than take it. That is a minor, or a major and game misconduct (30(a)), mandatory where intentional contact injures. **Who touched the puck last decides which side you are on in CARHA.** Note 1 to 66(a) makes *"[t]he last player to touch the puck, other than a goalkeeper"* the player in possession, and Note 2 gives the right to *"stand their ground"* or *"shadow"* only to *"the defending players"*. So after your own dump-in you are on the side in possession, and Note 2 gives you not even a lane you already hold. The book does not apply one note to the other itself; that is a reading of the two together.
+**Under Hockey Canada or in a CARHA adult league,** ⚠️ **hold only a lane you already have, and never lean or body to keep it — and in CARHA, if your side touched the puck last, as on your own dump-in — even after their goalie has played it — race the puck, not the lane.** Neither book writes a right to lengthen an opponent's path to the puck, and both make it interference to impede an opponent *"who is not in possession of the puck"* (Hockey Canada 8.3, CARHA 66(a)). **That does not make the player with the puck fair game.** Hockey Canada 8.1 defines holding as restraining an opponent by impeding them *"whether or not they are in possession of the puck"*: a minor, or a major and a game misconduct if it injures. CARHA's Glossary says the same, *"whether or not in possession of the puck"*: a minor or a major and game misconduct (63(a)), and the major is mandatory if it injures (63(b)). CARHA goes further: Rule 49(a) reaches a player who *"does not avert body contact with an opponent"*, so there avoid the contact rather than take it. That is a minor, or a major and game misconduct (30(a)), mandatory where intentional contact injures. **Who touched the puck last decides which side you are on in CARHA.** Note 1 to 66(a) makes *"[t]he last player to touch the puck, other than a goalkeeper"* the player in possession, and Note 2 gives the right to *"stand their ground"* or *"shadow"* only to *"the defending players"*. So after your own dump-in you are on the side in possession, and Note 2 gives you not even a lane you already hold. The book does not apply one note to the other itself; that is a reading of the two together.
 
 Equally, ⚠️ **never hold a lane to clear the way for a teammate:** Hockey Canada and CARHA both bar the side with the puck from running *"deliberate interference for the puck carrier"* (Hockey Canada's Rule 8.3 preamble; CARHA 66(a) Note 2, CARHA-affiliated adult leagues only).
 
@@ -1753,15 +1764,17 @@ Rule: Hockey Canada 7.1 and CARHA 48(d) (CARHA-affiliated adult leagues) file a 
 
 #### Tripping, and how narrow the relief is
 
+**Keep your stick and legs out of an opponent's skates, and play it as though a stumble alone is tripping.** A stick through their skates trips them exactly as a leg does, and playing the puck first protects you far less than it sounds.
+
 ```facts
 Rule: Tripping requires no fall under USA Hockey Rule 639 Note 1 ("lose balance or fall") or Hockey Canada 8.6(a); the NHL and IIHF books are unresolved — 57.1 in each is "trip or fall" and 57.2, the clause imposing the minor, "trip and fall" — play it as though the stumble is enough
 Rule: A stick through an opponent's skates is tripping exactly as a leg is — 57.1's list names the stick first in both books, the NHL's "stick, knee, foot, arm, hand or elbow" and the IIHF's "stick, or any part of their body"
-Rule: Playing the puck first saves the penalty shot, not the minor (NHL 57.3, IIHF 24.8) — USA Hockey's Note to 639(a) relieves only a player "clearly hook-checking or poke-checking the puck", and no book's relief reaches slew-footing
+Rule: Playing the puck first saves the penalty shot, not the minor (NHL 57.3, IIHF 24.8, PWHL 58.3). USA Hockey 639(a) excuses only a clear hook- or poke-check; Hockey Canada 8.6 and CARHA 86(a) a trip made winning the puck in the same action. No book's relief reaches slew-footing
 ```
 
 **Tripping is the most-called of the seven infractions counted in [§9](#the-cross-check-problem)**, at 16.6% of all calls in that 400-game sample (a ranking of those seven, not the whole book). **The relief you think you have is narrower than it sounds.** ⚠️ **Play it as though the stumble is enough.** USA Hockey's Casebook says the fouled player need not go down (Rule 639, Situation 1: *"No"*), and Hockey Canada 8.6 defines tripping as causing an opponent *"to trip or fall"*.
 
-The NHL and IIHF books leave it unresolved: 57.1 in each bars causing an opponent *"to trip **or** fall"* — the NHL naming *"the stick, knee, foot, arm, hand or elbow"*, the IIHF *"the stick, or any part of their body"* — while 57.2, which imposes the minor, reads *"trip **and** fall"*. ⚠️ **Playing the puck first does not save you the minor in the NHL or the IIHF: it saves the penalty shot only** (NHL 57.3, IIHF 24.8). USA Hockey's relief (the Note to 639(a)) covers only a player *"clearly hook-checking or poke-checking the puck"*, a stick check, not a leg through the skates. Hockey Canada's 8.6 says in terms that it does not reach clipping or slew-footing ([Slew-footing](#slew-footing--the-foul-that-grows-out-of-an-ordinary-battle-position)).
+The NHL and IIHF books leave it unresolved: 57.1 in each bars causing an opponent *"to trip **or** fall"* — the NHL naming *"the stick, knee, foot, arm, hand or elbow"*, the IIHF *"the stick, or any part of their body"* — while 57.2, which imposes the minor, reads *"trip **and** fall"*. ⚠️ **Playing the puck first does not save you the minor in the NHL, the IIHF or the PWHL: it saves the penalty shot only** (NHL 57.3, IIHF 24.8, PWHL 58.3). USA Hockey's relief (the Note to 639(a)) covers only a player *"clearly hook-checking or poke-checking the puck"*, a stick check, not a leg through the skates. Hockey Canada and CARHA excuse a trip only where you win the puck in the same action — Interpretation 1 to 8.6(a), a player who *"gains possession of the puck and, with the same action, trips the puck carrier"*, and CARHA's Note to 86(a), one *"unquestionably hook-checking the puck"* who *"obtains possession of it"* — or where a falling or sliding player touches the puck before the opponent's body (Hockey Canada Interpretation 2 to 8.6(a); CARHA's Note to 86(b)). Hockey Canada's 8.6 says in terms that it does not reach clipping or slew-footing ([Slew-footing](#slew-footing--the-foul-that-grows-out-of-an-ordinary-battle-position)).
 
 #### The stick above the shoulders
 

@@ -1510,6 +1510,8 @@ A puck off your mask is the one impact in this position nobody else can assess f
 
 ### Your stick — paddle length
 
+**Choose a paddle length that keeps your stance, not the longest the book allows.** Too long a paddle makes you stand taller, drifts your stick hand away from your body and opens the six-hole, so the extra two inches the IIHF book allows over the NHL's are a licence rather than an instruction.
+
 ```facts
 Rule: Paddle length is capped at 26 inches (NHL Rule 10.2), and only players 6'6" or taller may apply for the exemption
 Rule: IIHF Rule 10.2 allows 71 cm, about 28 inches, with no exemption process

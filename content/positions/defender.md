@@ -165,6 +165,8 @@ Rule: No trapezoid still leaves your goalie a freezing bar — a minor under USA
 
 #### The trapezoid — what it changes about your retrievals
 
+**Under a trapezoid, a rim that dies in the corner is yours, so plan your route before the puck arrives**, and aim your own rims where a teammate can meet them rather than into the corner. In a book with no trapezoid your goalie can play that puck too, though not freeze it out there, so agree in the room who calls it, and what each call means, before you are both in the corner.
+
 ```facts
 Rule: The IIHF numbers the trapezoid 27.7, not 27.8; in Britain play as though it binds your goalie — England Ice Hockey's R&R 22.3 call it "not currently enforced", its scope and standing unsettled, and nothing in the Elite League's Casebook switches it off
 Action: Plan your retrieval route before the puck arrives, and aim rims where a teammate can meet them, not into the corner
@@ -222,6 +224,8 @@ Under either system, two things hold: if the puck escapes up the wall toward the
 ---
 
 ### Defensive Zone: Without the Puck — Weak-Side Coverage at the Goalmouth
+
+As the weak-side defender, **the net front is your job, not the puck: hold it and do not get drawn across** while your partner and the centre handle the puck. When the puck crosses the middle, swap roles with your partner so one of you is always on the puck and one at the goalmouth. That is the low zone collapse job; under man-on-man you take your assigned man instead, so ask which your team plays.
 
 ```facts
 Position: At the goalmouth, between any opposing forward and your goalie

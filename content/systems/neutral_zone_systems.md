@@ -486,6 +486,8 @@ Professionals regroup two or three times a shift without thinking twice. Amateur
 
 ### Why a regroup beats a forced entry
 
+When an entry would be forced into a set structure, **regroup and keep the puck instead**: their forwards have to turn, and yours come back at the line with speed. Go forward when you have numbers, and do not regroup into pressure or on legs that are already spent.
+
 ```facts
 Risk: A forced entry into a set structure ends your possession — a turnover at the line, a dump-in you do not recover, or an offside
 Goal: Keep the puck and make their forecheck reset, which takes time and skating

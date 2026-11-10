@@ -282,6 +282,8 @@ Risk should scale with **how much time is left relative to how many goals you ne
 
 ### How to know it's time
 
+**When what you are doing is not working, change how you do it rather than doing it harder** — a different entry, traffic in front of their goalie rather than on them, a quicker breakout. Decide your clock thresholds before the third period so nobody has to decide in the moment.
+
 ```facts
 Read: Lots of zone time and no slot chances means your entries are dying at the blue line — change how you enter, not how hard you skate
 Read: Their goalie seeing everything means you need traffic in front of the goalie — not on the goalie — and pucks to the net, not better shots
@@ -1032,6 +1034,8 @@ Note the difference: **the two limbs carry different exceptions.** The net-off l
 ## Special Situations
 
 ### 4-on-4
+
+At 4-on-4 **the extra ice gives you time, so use it**: let a second option develop before you move the puck. The open middle cuts both ways, so treat a puck lost at the offensive blue line as a 2-on-1 against and get back on the far-side rush.
 
 ```facts
 Action: More ice means more time — hold the puck a beat longer and make the second option available

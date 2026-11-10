@@ -151,6 +151,8 @@ Laid over the ice, those five rows are one picture — and **the grade does not 
 
 ### Why a turnover toward your own net is so much worse
 
+**Save your risky plays for when the puck is moving away from your own net.** Lose it while it travels toward your goal and every one of your players is on the wrong side of it at once, so a blind pass up your own wall is a bad idea where the same pass in their end costs almost nothing.
+
 ```facts
 Key: A turnover has a direction, and the direction changes the cost more than the location does — coaching consensus rather than a measured comparison, since neither ranking has been counted
 Risk: Losing the puck while it travels toward your own net makes the turnover and the counterattack the same event
