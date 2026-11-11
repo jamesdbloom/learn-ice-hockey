@@ -473,7 +473,7 @@ Read: Take away the next pass, not the current one — the man arriving is the t
 Position: Cut it at the goal line — meet a carrier coming out from below the goal line at the post, not in the corner
 Convention: Under a collapse, be patient — the house is full and they aren't threatening you; under man or hybrid, stay on bodies, goal side — never hold or hook them, puck or no puck, nor bump one without it, or at all where checking is barred
 Action: Get one hard win — cycles end when somebody wins a puck battle, so send two, which in the collapse is the strong-side defenceman and the centre
-Never: Send the second body into a back — the player digging along your boards cannot see you, and no book prices a hit to the back at two minutes alone as checking from behind (Hockey Canada: off the head)
+Never: Send the second body into a back — a player digging on the wall can't see you; no book prices checking from behind at two minutes alone (Hockey Canada, head hit: plan on at least a game misconduct)
 ```
 
 **What it is:** attackers rotate the puck between the corner, the half-wall and behind the net, passing to a teammate who is arriving into the space they just left. It's a possession tactic designed to make you chase until someone is out of position.
