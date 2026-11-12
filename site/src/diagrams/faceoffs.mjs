@@ -760,7 +760,7 @@ const whereTheDrawGoes = {
     // limb, now voiced in a faceoffs.md facts Rule line (chunk 008) and in the same rules_primer.md
     // paragraph (chunk 103). KEPT: the NHL/IIHF dot-choice clause and its "your opponents here" gloss.
     'Outside the blue line you ' +
-    'were attacking: an offside where the puck was carried over. In the ' +
+    'were attacking: an unintentional offside where the puck was carried over. In the ' +
     'end you are attacking: a goalie freeze, or any other stoppage between the end-zone dots and ' +
     'the end boards, which the NHL and the IIHF draw at the spot on the side it happened. ' +
     'These four are the common ones, not the whole rule.',

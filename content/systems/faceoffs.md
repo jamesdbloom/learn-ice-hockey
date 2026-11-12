@@ -158,7 +158,7 @@ Rule: A puck out of play draws at the nearest spot in the zone it was shot from 
 Never: Aim the puck out of play off the draw — a deliberate shot out is a delay penalty in every book; the NHL, IIHF and PWHL excuse a puck straight off a draw but never say a deliberate one
 Never: Go offside by firing the puck over the blue line — the draw can go back to the zone it came from, even your own end; in most books an unintentional carried-in offside draws just outside the line
 Rule: Under USA Hockey most stoppages you cause in your attacking zone draw at the nearest neutral-zone spot (612(c)), or in that zone if the puck is shot or deflected out by accident (631(d)); a high stick (621(d)) or a penalty that puts you shorthanded (612(b)) draws in your own end
-Rule: Under USA Hockey a low stoppage that calls for a last-play faceoff draws at the nearest end-zone spot (612(b))
+Rule: Under USA Hockey a stoppage between the end-zone dots and the end boards that calls for a last-play faceoff draws at the nearest end-zone spot (612(b))
 ```
 
 **To centre ice:**
@@ -176,17 +176,17 @@ Rule: Under USA Hockey a low stoppage that calls for a last-play faceoff draws a
 - **The goalie freezing the puck on the back of the net, or a defender shielding an attacker from playing it there** — Rule 85.2 sends these to the defending zone. ⚠️ **Do not count on it being just a faceoff** — a defender or goalie who freezes it there on purpose can take a minor in every book. Under USA Hockey, Hockey Canada and CARHA it is for holding it against the goal (610(a), 10.1(i), 74(b)), and under the NHL, IIHF and PWHL for freezing it to stop play, a goalie only outside the crease (63.2(i), PWHL 65.2(i)).
 
 **To a neutral-zone dot:**
-- **Offside where the puck was carried over the line** — the dot outside that blue line (Rule 83.6).
+- **Unintentional offside where the puck was carried over the line** — the dot outside that blue line (Rule 83.6).
 - **A neutral-zone stoppage that is nobody's fault** — the nearest dot outside the blue line; a tie goes to the spot that favours the **home** team (Rule 76.2).
 - **A goal illegally scored by hand, kick or high stick** (Rule 76.2).
 - **A scrum after the whistle that pulls players inside the outer edge of the end-zone circle.** Under NHL and IIHF 76.2 that catches the attacking team's point men and anyone off its bench, and *"any of the non-offending players"*. You have just turned an attacking-zone draw into a neutral-zone one by joining a shoving match.
 
-**Offside where the puck was shot or passed in** sends the draw back to the zone the pass came from (Rule 83.6). So a stretch pass from your own end that goes offside brings the draw back into your own zone — carrying it over and being whistled costs far less. [Zone Entries](zone_entries.md) draws the tactical conclusion.
+**Offside where the puck was shot or passed in** sends the draw back to the zone the pass came from (Rule 83.6). So a stretch pass from your own end that goes offside brings the draw back into your own zone, whereas an unintentional offside with the puck carried over the line costs far less. Going offside on purpose, or with no chance of a legal play (USA Hockey), sends the draw to your own end in every book. [Zone Entries](zone_entries.md) draws the tactical conclusion.
 
 **Puck out of play:** the nearest spot in the zone it was shot from, or from the neutral or defending zone, the spot giving the **offending team the least advantage** (Rules 85.1, 85.5). A puck merely lodged in the netting can go to *"either of the adjacent face-off spots or at the nearest face-off spot in the zone from which the puck was shot"* (85.5). If the puck leaves the rink **directly off a faceoff**, the NHL and IIHF re-drop at the same spot.
 
 **USA Hockey, Hockey Canada and CARHA send some draws elsewhere.**
-- **USA Hockey gives no choice of dot** after a penalty (612(b)) or an icing (624(a)) — the official picks the spot. A low stoppage that is nobody's fault goes to the nearest end-zone spot (612(b)); a stoppage the attacking team caused in its attacking zone goes to the nearest neutral-zone spot (612(c)); and the team that caused a stoppage *"shall not gain a territorial advantage"* from the draw (612(g)).
+- **USA Hockey gives no choice of dot** after a penalty (612(b)) or an icing (624(a)) — the official picks the spot. A stoppage between the end-zone dots and the end boards that calls for a last-play faceoff — one both teams caused, one no rule places, or one another rule sends to a last-play faceoff — goes to the nearest end-zone spot (612(b)). Most stoppages the attacking team causes in its attacking zone go to the nearest neutral-zone spot (612(c)), but a puck it shoots or deflects out of play by accident draws in that zone (631(d)), and a high stick (621(d)) or a penalty that puts it shorthanded (612(b)) sends the draw to its own end. The team that caused a stoppage *"shall not gain a territorial advantage"* from the draw (612(g)).
 - **Hockey Canada gives a choice of dot only in Junior and Senior**, after an icing or a time penalty, to the **attacking** team — and only if it names the dot *"prior to the start of the line change procedure"* (6.4(b)).
 - **CARHA gives no choice of dot either.** A penalty draw goes to the dot nearest the incident, toward the penalised team's end, and never in the power-play team's own zone, so it can start in the neutral zone (39(a)); an icing draws at the offending team's end spot (65(a)).
 - **USA Hockey and Hockey Canada both catch any attacking player** who goes beyond the top of the circles in a post-whistle scrum (USA Hockey 612(d), Hockey Canada 6.3(d)(vi)), not just the point men and the bench.

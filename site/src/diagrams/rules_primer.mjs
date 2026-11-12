@@ -112,12 +112,13 @@ const offsideFaceoffLocation = {
   // ⚠️ Kept OUT of the string run: a // line inside `caption:` ends the run for
   // check_caption_negations.py's CAPTION regex, which then scans only the prefix.
   caption:
-    'Where the draw goes after an offside, under NHL Rule 83.6 — an NHL rule, and where the IIHF and ' +
-    'USA Hockey books put the draw is not established here, so do not assume it is the same place. ' +
+    'Where the draw goes after an offside, under NHL Rule 83.6 — the IIHF and PWHL write it the ' +
+    'same way; USA Hockey, Hockey Canada and CARHA word it differently, so check your own book. ' +
     'One attacker has preceded the puck into the attacking zone at the right, and the two entries ' +
     'drawn are alternatives rather than a sequence, because what the rule turns on is how the puck ' +
-    'followed them in. Carried over the line, and the draw is the neutral-zone spot nearest that ' +
-    'attacking zone. Shot or passed in, and it goes back to the faceoff spot in the zone closest to ' +
+    'followed them in. Carried over the line unintentionally, and the draw is the neutral-zone spot ' +
+    'nearest that attacking zone; a deliberate offside goes to the offending team’s own end (83.7). ' +
+    'Shot or passed in, and it goes back to the faceoff spot in the zone closest to ' +
     'where the pass came from — a spot, not the patch of ice it was shot from — drawn here as a ' +
     'defenceman firing it in from their own end. The two draws are 89 feet apart up the ice, which is ' +
     'arithmetic on the rink dimensions, not a figure from the rulebook. That far marker is this ' +
