@@ -67,8 +67,10 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         "pinch-centre-below-the-goal-line",
         "pinch-centre-high",
         None,
-        "caption trimmed 27 Oct 2026 (SG94): the who-covers coaching-choice and "
-        "scoreboard limbs are voiced only in pinch-centre-high's caption",
+        "caption trimmed 27 Oct 2026 (SG94); since 12 Nov 2026 (W302) the who-covers "
+        "and scoreboard limbs are voiced in host prose (risk_management chunk 039, "
+        "game_management chunk 015), not in pinch-centre-high's caption -- the pair "
+        "is kept because both hosts still embed them adjacently",
     ),
     (
         "forecheck-212-stacked",

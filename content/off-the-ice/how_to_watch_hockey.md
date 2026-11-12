@@ -247,7 +247,7 @@ So when the puck approaches the blue line, watch:
 - **On a dump-in, how many attackers chase?** A dump with one chaser is a change of possession dressed up as a play.
 - **Offside** needs **both skates** completely over the blue line before the puck completely crosses it. Watch attacking wingers drag a trailing skate to stay on. In the NHL, IIHF and PWHL a skate lifted over the neutral zone still counts as onside; **under USA Hockey and Hockey Canada rules it needs ice contact, so the lifted skate is offside there.**
 
-Two pictures, one for each side of the line, drawn from opposite benches. The first is the attack arriving: three lanes, the wide players onside because a skate is still on the line. The second is the defender's gap at the red line, where it is usually won. In the first the unfilled team attacks; in the second it defends.
+Two pictures, one for each side of the line, drawn from opposite benches. The first is the attack arriving: three lanes, the wide players onside because a skate is still on the line. The second is the defender's gap at the red line, where it is usually won — watch whether that defender is already skating backwards at full speed, because a gap cannot be closed from a standstill. In the first the unfilled team attacks; in the second it defends.
 
 ![](diagram:entry-three-lanes)
 

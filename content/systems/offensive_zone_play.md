@@ -980,7 +980,7 @@ The governing principle is **take the puck, or — where your league permits bod
 
 **If the pinch fails:** retreat toward the **slot**, not along the boards. Skating back down the wall follows the puck and abandons the middle; cutting to the slot re-establishes your gap and delays the attack until support arrives.
 
-**How aggressively defencemen pinch is a coaching choice.** Some teams give both defencemen a green light in the offensive zone; some allow the strong-side defenceman only; some forbid going below the top of the circles. **Ask.** A defenceman pinching in a system that does not expect it is, in coaching experience, among the commonest sources of odd-man rushes against amateur teams — coaching emphasis, not a count.
+**How aggressively defencemen pinch is a coaching choice.** Some teams give both defencemen a green light in the offensive zone; some allow the strong-side defenceman only; some forbid going below the top of the circles. **Ask.** A defenceman pinching in a system that does not expect it is, in coaching experience, among the commonest sources of odd-man rushes against amateur teams — coaching emphasis, not a count. Who covers your point when you go is a coaching choice too — the centre, the highest forward, or the weak-side defenceman sliding across — and how often you go moves with the scoreboard and the clock. Before every pinch, ask not only "am I right?" but "what happens if I am right and I still miss it?"
 
 **Every penalty a pinch can draw is avoided the same way:** ⚠️ **arrive while the winger still has the puck, take the puck or seal the wall, and never hit a player who cannot see you coming.** [Body Contact and Battles](../technique/body_contact_and_battles.md) §5 and §6 own this and outrank anything here.
 

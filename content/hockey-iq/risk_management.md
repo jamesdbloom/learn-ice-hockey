@@ -586,7 +586,7 @@ A pinch with your centre high in the zone behind you is a good pinch even if you
 
 ![](diagram:pinch-centre-below-the-goal-line)
 
-Those two pictures are the same picture twice, differing only in where the centre is; what the pinching defenceman can see of the puck and the man on the wall is identical in both.
+Those two pictures are the same picture twice, differing only in where the centre is; what the pinching defenceman can see of the puck and the man on the wall is identical in both. Who covers the point you leave is a coaching choice — the centre, the highest forward, or the weak-side defenceman sliding across — so find out what your team plays.
 
 **So the full test, in three questions you can run in half a second:**
 

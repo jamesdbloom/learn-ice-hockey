@@ -501,7 +501,9 @@ A pinch is generally the safer of the two, because you have teammates behind you
 
 ![](diagram:pinch-centre-high)
 
-**A step-up has a second cost the tactical one does not.** ⚠️ **Finished as a hit, it meets the charging rules**, and the picture they name is a carrier who has not seen you. USA Hockey's Casebook calls it charging when a player sees *"an unsuspecting opponent skating up the ice with their head down"* and *"skates across the ice at full speed to deliver a hard body check"*. ⚠️ **No two-stride run-up is needed:** accelerating through the check is charging too. So close the space and play the puck.
+**Before you pinch, ask not only "am I right?" but "what happens if I am right and I still miss it?"** Who covers your point is a coaching choice — the centre, the highest forward, or your partner sliding across — so find out what your team plays, and let the scoreboard and the clock move how often you go.
+
+**A step-up has a second cost beyond the open ice behind you.** ⚠️ **Finished as a hit, it meets the charging rules**, and the picture they name is a carrier who has not seen you. USA Hockey's Casebook calls it charging when a player sees *"an unsuspecting opponent skating up the ice with their head down"* and *"skates across the ice at full speed to deliver a hard body check"*. ⚠️ **No two-stride run-up is needed:** accelerating through the check is charging too. So close the space and play the puck.
 
 **And charging binds every division, checking league or not:** USA Hockey's and Hockey Canada's charging rules carry no division clause, where their body-checking rules do. ⚠️ **So in a league where you may not check, a step-up finished as a hit breaks two rules rather than one** — which a referee calls, neither book says. [Body Contact and Battles](../technique/body_contact_and_battles.md) settles whether you may check at all, and [Defending the Rush → Standing up (stepping up)](../systems/defending_the_rush.md#standing-up-stepping-up) owns the step-up.
 

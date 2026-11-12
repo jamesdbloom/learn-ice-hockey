@@ -117,6 +117,26 @@ const gapAndAngle = {
   //   - the provenance limb: defending_the_rush.md (chunks 11-13) and body_contact_and_battles.md
   //     (chunks 23-24) voice none beside the marker;
   //   - the standstill point: defending_the_rush.md and how_to_watch_hockey.md voice none beside it.
+  // ✂️ SHORTENED 12 November 2026 (W302), 1,065 -> 927 chars. Cut one sentence, the standstill one
+  // ("What no still picture can show is that the defender was already at full backward speed,
+  // because a gap cannot be closed from a standstill."), after both hosts that lacked it gained one
+  // clause. Renders of 12 Nov 2026, caption chunk -> chunk voicing the limb:
+  //   defending_the_rush.md: caption chunk 012; the paragraph above the marker now ends "Take that
+  //     position already at full backward speed: a gap cannot be closed from a standstill." (012).
+  //   how_to_watch_hockey.md: caption chunk 015; the "Two pictures" lead-in now says to watch
+  //     whether the defender is already skating backwards at full speed (015).
+  //   defender.md: caption chunk 028; "Start your feet before they reach you ... you cannot close a
+  //     gap from a standstill" follows the caption in chunk 028.
+  //   body_contact_and_battles.md: caption chunk 024; "a gap cannot be closed from a standstill"
+  //     follows the caption in chunk 024 (that file was not edited).
+  // KEPT, with the host that lacks each limb at the caption's chunk or the next:
+  //   - the inside definition: how_to_watch_hockey.md chunks 015-016 do not voice it;
+  //   - the lane / not-painted disclosure: defending_the_rush.md 012-013, defender.md 028-029 and
+  //     how_to_watch_hockey.md 015-016 do not voice it;
+  //   - the gap figure: the picture's own measurement;
+  //   - "a guide, not a law ... backward speed and the attacker's skill" and the red-line
+  //     provenance: body_contact_and_battles.md chunks 024-025 voice neither (it says that
+  //     the section sets no distance of its own), and that file is outside this wave.
   caption:
     'A 1-on-1 as the carrier crosses the centre red line, attacking right to left ' +
     // ⚠️ "body between the carrier and the middle of the ice" WAS CUT AND PUT BACK, in this
@@ -189,9 +209,7 @@ const gapAndAngle = {
     // still nearer 1.75 than 1.5 -- which is what "on any stick length the rulebooks allow" asserts.
     'That stick and a half is a guide, not a law: it varies with your backward speed and the ' +
     'attacker’s skill, the only page found that anchors a distance to the centre red line prints ' +
-    'two stick lengths there, and one coaching book prints no distance at all. What no still ' +
-    'picture can show is that the ' +
-    'defender was already at full backward speed, because a gap cannot be closed from a standstill.',
+    'two stick lengths there, and one coaching book prints no distance at all.',
 
   describe:
     'The full sheet, the defended net at the left. Two players and a goalie. An opposition forward ' +

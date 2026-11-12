@@ -240,7 +240,7 @@ Mindset: Good rush defence is choosing which thing to concede, not taking everyt
 
 **The middle of the ice is the dangerous ice.** Shots from the slot beat goalies; shots from below the faceoff dots on the wall mostly do not.
 
-So do not line up chest-to-chest with the carrier. Position yourself slightly to the **inside** — your **boardside shoulder** (the shoulder nearer the wall) roughly on the middle of their chest — so that your body sits between them and the middle of the ice, and the only route they can see is toward the boards. Getting this backwards and putting your *inside* shoulder on their chest slides your torso to the boards side and opens the middle, which is exactly the lane you are trying to take away.
+So do not line up chest-to-chest with the carrier. Position yourself slightly to the **inside** — your **boardside shoulder** (the shoulder nearer the wall) roughly on the middle of their chest — so that your body sits between them and the middle of the ice, and the only route they can see is toward the boards. Getting this backwards and putting your *inside* shoulder on their chest slides your torso to the boards side and opens the middle, which is exactly the lane you are trying to take away. Take that position already at full backward speed: a gap cannot be closed from a standstill.
 
 ![](diagram:rush-gap-and-angle)
 

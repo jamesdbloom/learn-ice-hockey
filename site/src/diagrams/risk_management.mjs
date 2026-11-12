@@ -687,15 +687,36 @@ const pinchCentreHigh = {
   // not", no "am I right / still miss it", no who-covers choice, no scoreboard; the contact prose
   // there is about a step-up finished as a hit). The other three hosts were not re-read, because
   // one host lacking every limb already decides it.
+  // ✂️ SHORTENED 12 November 2026 (W302), 1,041 -> 678 chars, after defender.md and
+  // offensive_zone_play.md gained all three cut limbs and risk_management.md the who-covers one. Cut: the "am I right? / still miss it" question, PINCH_COVER (who covers the
+  // point) and PINCH_SCOREBOARD. The caption now ends on PINCH_CONTACT, whose ⚠️ sentence is
+  // unchanged; no constant was edited, so PINCH_CAVEATS, PINCH_COVER and PINCH_SCOREBOARD are now
+  // spoken by no caption. Renders of 12 Nov 2026, caption chunk -> where each cut limb is voiced:
+  //   defender.md: caption 032. New paragraph after the marker (033): the question, the who-covers
+  //     choice and "let the scoreboard and the clock decide whether you go at all".
+  //   offensive_zone_play.md: caption 064. The coaching-choice paragraph (064) now adds the
+  //     who-covers choice, "how often you go moves with the scoreboard and the clock" and the
+  //     question.
+  //   risk_management.md: caption 038. The question is in the prose above the marker (038); the
+  //     scoreboard is the third question (039); the who-covers choice was added to "Those two
+  //     pictures ..." (039).
+  //   game_management.md: caption 015. The "Pinching defencemen" item above the marker (015) has
+  //     the who-covers choice and "Trailing, pinch on anything close; leading, only when you are
+  //     certain"; the question is voiced by pinch-centre-below-the-goal-line's caption (016).
+  // KEPT: the picture and its lesson ("what is behind it if it does not", the 2-on-2), which
+  // defender.md's prose in chunks 032-033 does not voice, and the ⚠️-led PINCH_CONTACT.
+  // ⚠️ This supersedes the SG94 note above that this caption carries the who-covers limb for
+  // pinch-centre-below-the-goal-line: that limb is now voiced by host prose, at risk_management.md
+  // chunk 039 (both captions are chunk 038 there) and game_management.md chunk 015 (the
+  // pinch-centre-below-the-goal-line caption is chunk 016 there). If either
+  // sentence goes, PINCH_COVER must come back into one of the two captions.
   caption:
     'A pinch at the offensive blue line with the centre high in the zone behind it, which is the ' +
     'arrangement that makes a pinch defensible. What makes a pinch good is not whether it works ' +
     'but what is behind it if it does not: here the pinching defenceman’s partner has held the ' +
     'middle at the line and the centre is high rather than deep, so the worst a miss can produce ' +
-    'is two of their forwards against those two teammates — a rush a team can defend. So before ' +
-    'you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am ' +
-    'right and I still miss it?" ' +
-    PINCH_CAVEATS,
+    'is two of their forwards against those two teammates — a rush a team can defend. ' +
+    PINCH_CONTACT,
 
   describe:
     PINCH_DESCRIBE_COMMON +
