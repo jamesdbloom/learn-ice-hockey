@@ -29,10 +29,12 @@
  * shortened and dropped their imports, because their host pages voice the
  * clauses within a few chunks of the caption (see each caption's own comment):
  *
- *   oz-net-front-screen   offensive_zone_play.mjs   CREASE_LINE_IS_THE_CREASE,
- *                                                   REFEREE_JUDGEMENT
+ *   oz-net-front-screen   offensive_zone_play.mjs   REFEREE_JUDGEMENT
  *
- * That is the ONLY importer. `TABLES_ALLOW_OUTSIDE` and
+ * That is the ONLY importer. On 12 November 2026 (W293) oz-net-front-screen
+ * dropped CREASE_LINE_IS_THE_CREASE too, once both hosts voiced its count and
+ * the IIHF table contradiction beside the marker, so `CREASE_LINE_IS_THE_CREASE`,
+ * `TABLES_ALLOW_OUTSIDE` and
  * `DISALLOWED_ROWS_SHARE_THE_CREASE` currently have NO importer. Re-check with
  * `grep -n "from './rule69_clauses" site/src/diagrams/*.mjs` and read the import
  * list — a bare grep for a constant's name also hits the comments in
@@ -187,7 +189,9 @@
  * imprecision in eleven content documents. An agent told to fix "the same thing in
  * rule69_clauses.mjs" will grep the CAPTIONS and find nothing.
  *
- * ⚠️ AS OF 23 OCTOBER 2026 ONE CAPTION SPEAKS THIS: `oz-net-front-screen`. The
+ * ⚠️ AS OF 12 NOVEMBER 2026 (W293) NO CAPTION SPEAKS THIS: `oz-net-front-screen`,
+ * the last importer, dropped it once both hosts voiced the count. Until then it
+ * was the one caption that did. The
  * paragraph below is the record from when four did; the other three dropped the
  * import on 22 October 2026. And `grep -ln CREASE_LINE_IS_THE_CREASE` is NOT the
  * census — it also matches the comments recording the drop. Read the import lists.

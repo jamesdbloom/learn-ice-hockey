@@ -28,8 +28,9 @@ import { SHOULDER_TAIL } from './wall_contact_clauses.mjs';
 // A caption clause that appears in more than one diagram is imported, never
 // retyped: a sentence that appears twice is a sentence that can drift once, and
 // this one already had. See rule69_clauses.mjs; this is now its only importer.
+// W293 (12 November 2026): CREASE_LINE_IS_THE_CREASE is no longer imported; see the
+// oz-net-front-screen caption comment for the host trace.
 import {
-  CREASE_LINE_IS_THE_CREASE,
   REFEREE_JUDGEMENT,
 } from './rule69_clauses.mjs';
 
@@ -604,6 +605,15 @@ const netFrontScreen = {
   width: 900,
 
   caption:
+    // ✂️ W293 (12 November 2026), 1,484 -> 1,151 chars: CREASE_LINE_IS_THE_CREASE is no longer
+    // imported here. Its first clause, "the crease line at its edge", is kept as literal text so
+    // the ⚠️ sentence is word for word what it was. The rest (USA Hockey, Hockey Canada and CARHA
+    // count the line as crease, so does IIHF 1.7, but the IIHF's own table allows the goal on
+    // the line; off the line works under every book) was cut because both hosts now voice it
+    // next to the marker: offensive_zone_play.md in the "Position" bullet directly above the
+    // marker (rendered chunk 029, caption chunk 030), and center.md in the "Stand clear of the
+    // red line" paragraph directly below it (same chunk as the caption, 030). Everything else
+    // below still has a host that does not voice it nearby, so it stays.
     // TRIMMED AGAIN 24 October 2026 (1,496 chars), wording only: re-rendered both hosts and every
     // limb below still has a host that does not voice it beside the marker (OZP voices neither the
     // book-by-book crease line nor CARHA's no-incidental-contact point; center.md voices neither the
@@ -644,9 +654,7 @@ const netFrontScreen = {
     // ⚠️ THE GLYPH IS DELIBERATE: `remark-corpus.mjs` promotes everything after the first ⚠️
     // into the amber `.warn-inline` run, and `_diagram_caption_is_important` (md_to_speech.py)
     // voices "Important." on both hosts. The run opens on the instruction, not a citation.
-    ' ⚠️ Keep your feet out of the blue paint, and off ' +
-    CREASE_LINE_IS_THE_CREASE +
-    '. Under USA Hockey Rule 625(b) and IIHF Rule 69.1 a foot in the paint can cost you the ' +
+    ' ⚠️ Keep your feet out of the blue paint, and off the crease line at its edge. Under USA Hockey Rule 625(b) and IIHF Rule 69.1 a foot in the paint can cost you the ' +
     'zone as well as the goal. CARHA Rule 66(b) is stricter again: no standing in the crease ' +
     'unless the puck is in the crease area, no goal if you do, and no incidental-contact ' +
     'allowance like the NHL and IIHF give. CARHA governs CARHA-affiliated leagues only. Other ' +
@@ -716,8 +724,9 @@ const netFrontScreen = {
     // rink.mjs's glyph radius 2.9 with its 0.75 outline and 1.95 halo strokes.
     // (79.5, 3)
     // ⚠️ LABEL: "outside the paint", NOT "edge of the paint". The edge of the paint IS the
-    // crease line, and CREASE_LINE_IS_THE_CREASE — imported into this very caption — says
-    // so: "outside the paint" means clear of the line too, not standing on it. The caption
+    // crease line, and the caption says so ("off the crease line at its edge"; the
+    // book-by-book count it once imported from CREASE_LINE_IS_THE_CREASE is now voiced by
+    // both hosts, W293): "outside the paint" means clear of the line too, not standing on it. The caption
     // says "just outside the blue paint"; the label said stand on the one line the diagram
     // exists to keep you off. The glyph is unmoved at (79.5, 3), 3.936 ft clear of the
     // nearest crease boundary, so this is the words and not the position.
