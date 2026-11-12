@@ -682,6 +682,11 @@ const pinchCentreHigh = {
   // / still miss it" question, no who-covers choice, no scoreboard, and defender.md's contact
   // prose is about a step-up. PINCH_CAVEATS is bound by the SG94 test above; the lead is the
   // lesson itself in those two hosts, not a restatement. Trim only after they voice it.
+  // LEFT WHOLE (W291, 12 November 2026, 1,041 chars). Re-rendered defender.md: the caption is
+  // chunk 034, and chunks 033-035 still voice none of its limbs (no "what is behind it if it does
+  // not", no "am I right / still miss it", no who-covers choice, no scoreboard; the contact prose
+  // there is about a step-up finished as a hit). The other three hosts were not re-read, because
+  // one host lacking every limb already decides it.
   caption:
     'A pinch at the offensive blue line with the centre high in the zone behind it, which is the ' +
     'arrangement that makes a pinch defensible. What makes a pinch good is not whether it works ' +
@@ -925,10 +930,16 @@ const crossIceOwnEnd = {
   // is the only host and its "There is one more cost" paragraph, two above the marker, says the
   // forecheck slid across with the puck. The ⚠️ contact limb, the posture and every picture
   // disclosure are kept; only their wording is tightened.
+  // ✂️ W291, 12 November 2026 (1,024 -> 996 chars). One host, risk_management.md, rendered
+  // (caption chunk 012). It voices none of the caption's picture disclosures, the ⚠️ contact limb
+  // or the posture, so NO LIMB WAS CUT. Wording only: "your own net" -> "your net", "in front of
+  // your own goalie" -> "in front of your goalie", "the reach of their stick" -> "their stick's
+  // reach", "If you are the one collecting" -> "If you collect". The ⚠️ sentence and
+  // WALL_POSTURE_SHORT are untouched.
   caption:
-    'Your own zone, your own net at the right. A defenceman sealed in the strong-side corner ' +
-    'passes east–west below the tops of the circles, across the shaded slot in front of your own ' +
-    'goalie. Their middle forward stands beside the lane, the reach of their stick into it not ' +
+    'Your own zone, your net at the right. A defenceman sealed in the strong-side corner ' +
+    'passes east–west below the tops of the circles, across the shaded slot in front of your ' +
+    'goalie. Their middle forward stands beside the lane, their stick’s reach into it not ' +
     'drawn, and their third forward is already sliding across. A designed cross-ice option in a ' +
     'structured breakout is a different play, taken only when the middle is empty; here it is ' +
     'not. The far outlet could equally be your weak-side defenceman, and their defencemen are not ' +
@@ -936,7 +947,7 @@ const crossIceOwnEnd = {
     'two bars, so it stops there rather than carrying through a player, and what an arrival like ' +
     'that may end in depends on whether your league allows body checking at all. ' +
     // Its wording and order are WALL_POSTURE_SHORT's -- see wall_contact_clauses.mjs.
-    'If you are the one collecting a puck on that wall, never turn your back to anyone coming ' +
+    'If you collect a puck on that wall, never turn your back to anyone coming ' +
     'at you, and never duck. ' +
     WALL_POSTURE_SHORT,
 

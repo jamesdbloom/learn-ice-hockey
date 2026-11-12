@@ -429,12 +429,19 @@ const clearAtFiveOnSix = {
     // kept because the host's adjacent facts chunk voices the icing and its three costs but
     // NOT the 81.4 exception list or Hockey Canada 6.7(d). "at all" stays on the time-out,
     // because the 81.4 exceptions reach the change ban only.
+    // ✂️ W292 (12 Nov 2026), 1,019 -> 933 chars. CUT: "Head up and" (the host's facts line
+    // directly after the marker, same chunk 025, says "get your head up and put it at the empty
+    // net"), and "Only the puck carrier, one of their point men and the two nets are drawn"
+    // (a description of the drawing, which `describe` carries; no rule or safety limb). KEPT
+    // everything else: "a puck that goes in is not icing", the red-line condition and the
+    // blind-clear outcome are voiced only in the bullets two chunks on (027), and the 81.4 and
+    // Hockey Canada 6.7(d) sentences are voiced nowhere near the marker.
     'Defending a 6-on-5 in your own end: your goalie is in your net, theirs is empty, and a ' +
-    'puck has just come free to you. Every clear from here is a shot, with three endings. Head ' +
-    'up and on target, it is a goal, and a puck that goes in is not icing. A miss that ' +
+    'puck has just come free to you. Every clear from here is a shot, with three endings. On ' +
+    'target, it is a goal, and a puck that goes in is not icing. A miss that ' +
     'crosses their goal line untouched from your side of the centre red line is icing. A blind ' +
-    'clear to their point man hands it back at your own blue line. Only the puck carrier, one ' +
-    'of their point men and the two nets are drawn. ⚠️ You can be iced against a pulled goalie. ' +
+    'clear to their point man hands it back at your own blue line. ' +
+    '⚠️ You can be iced against a pulled goalie. ' +
     // SHORTENED 8 November 2026 (1,252 chars). Cut, each voiced in the facts block directly after
     // the marker and in the bullets below it: why six against six is equal strength and 81.3 keeps
     // the icing (game_management.md facts :415, bullet :427); the NHL/IIHF draw-dot-no-change-no-

@@ -158,15 +158,22 @@ const wallReception = {
   half: true,
   width: 900,
 
+  // ✂️ W291, 12 November 2026 (1,027 -> 984 chars). Two hosts, rendered:
+  // scanning_and_anticipation.md (chunk 003) and puck_handling.md (chunk 036). Neither voices the
+  // wall-contact posture in the caption's own chunk (puck_handling voices it one chunk earlier,
+  // 035; scanning_and_anticipation not at all near the marker), so the ⚠️ sentence and the whole
+  // safety tail are UNTOUCHED. Only the picture disclosures before it were tightened, every one
+  // kept: the looking cannot be drawn; the pressure could come from the middle, so check both
+  // shoulders; read the retrieval as a job. "Every shape here was forced by the notation" became
+  // "the retriever is drawn as a defenceman": the header note above says the triangle was CHOSEN
+  // (the section says only "a teammate"), so "forced" overstated it. "coming" and "itself" cut.
   caption:
     'A single instant: the puck is in the air to you on the half-wall, level with the faceoff dot, ' +
     'and a forechecker is already closing. Everything in the ' +
     'picture was there to be seen before the puck was even passed. ' +
-    'The looking itself cannot be drawn: this notation has no head, no facing and no stick. ' +
-    'The pressure is drawn ' +
-    'coming down the wall and could as easily come from the middle, so check both shoulders. ' +
-    'Every shape here was forced by the notation, so read the retrieval ' +
-    'as a job rather than as a position. ' +
+    'The looking cannot be drawn: this notation has no head, no facing and no stick. ' +
+    'The pressure is drawn down the wall and could as easily come from the middle, so check ' +
+    'both shoulders. The retriever is drawn as a defenceman; read it as a job, not a position. ' +
     // SAFETY, LAST. The owner's own override, scanning_and_anticipation.md:149 and Key Takeaway 13
     // at :583, which says in terms that it outranks every tactical point beside it. A player
     // standing on the wall with a checker arriving is exactly the shape that override exists for,

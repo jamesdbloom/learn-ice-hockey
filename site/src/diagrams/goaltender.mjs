@@ -463,13 +463,20 @@ const safeOutlets = {
   width: 900,
 
   caption:
+    // ✂️ W292 (12 Nov 2026), 1,005 -> 824 chars. CUT: "Two more cannot be pictured", the
+    // leave-it-for-a-defenceman option and "rarely wrong when you are in trouble". The host
+    // (goaltender.md, "The safe outlets") voices all five options in chunk 044 and again in the
+    // caption's own chunk 045, directly before the marker ("Fourth, off the glass and out.
+    // Rarely wrong when you are in trouble ... but along the glass, never over it"). KEPT, as
+    // the instruction that leads the tariff: "Clear along the glass, never over it". KEPT whole:
+    // the NHL/IIHF minor, USA Hockey's deliberate-only clause, the Hockey Canada 10.1(v) limb
+    // (the host voices it in chunks 046 and 048, in a different form) and the convention sentence (the
+    // host voices it in chunk 043, two chunks back).
     'You have the puck behind your own net and three of your five options are drawn, ranked by ' +
     'risk: the short pass to your defenceman on the wall, the rim around the boards to the far ' +
     'winger, and the one to make almost never — the pass into the shaded slot, where a goalie’s ' +
-    'turnover is a shot on an empty net you are standing in. Two more cannot be pictured. Leaving ' +
-    'the puck for a defenceman who has time is the lowest-risk option of all. And going off the ' +
-    'glass and out is rarely wrong when you are in trouble, but along the glass, never over it. A ' +
-    'puck you shoot directly out of the rink from your own end is a two-minute minor under NHL ' +
+    'turnover is a shot on an empty net you are standing in. Clear along the glass, never over ' +
+    'it: a puck you shoot directly out of the rink from your own end is a two-minute minor under NHL ' +
     'and IIHF rules, where USA Hockey’s clause reaches only a deliberate clear; Hockey Canada’s ' +
     'Rule 10.1, clause v, writes a limb aimed at goalies specifically and names no zone at ' +
     'all, and whether an accidental clear is caught by it is unsettled rather than free. Whether ' +

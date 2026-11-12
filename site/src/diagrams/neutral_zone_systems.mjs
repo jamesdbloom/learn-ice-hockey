@@ -982,18 +982,29 @@ const backOffAtTheLine = {
   half: false,
   width: 1100,
 
+  // ✂️ W291, 12 November 2026 (1,032 -> 922 chars). Two hosts, rendered: neutral_zone_systems.md
+  // (chunk 026) and defending_the_rush.md (chunk 039). In BOTH, nz-stand-up-at-the-line is the
+  // diagram directly before this one, in the same chunk, and its caption ends "Backing off
+  // answers this same instant the other way rather than following it, and the two are a genuine
+  // trade-off, so find out which your coach wants"; both hosts' own prose in that chunk says
+  // "genuine trade-off" too. So cut: "the answer standing up gives the other way" and "Neither
+  // answer is the correct one". The coaching-choice disclosure is KEPT, renamed so it reads
+  // alone on the page ("Backing off or standing up"). NOT cut, because neither host voices the
+  // backing-off section until two chunks later (neutral_zone_systems 028, defending_the_rush
+  // 041-042): the funnel, the catastrophic-error line, the middle, the cost, and the four
+  // conditions. The band disclosure is tightened, not cut. ⚠️ IF EITHER HOST STOPS EMBEDDING
+  // nz-stand-up-at-the-line STRAIGHT BEFORE THIS DIAGRAM, THE TRADE-OFF LINE MUST COME BACK.
   caption:
-    'Backing off at your own blue line, the answer standing up gives the other way: the ' +
-    'defenceman gives up the line and skates backwards, matching the attacker’s speed, keeping ' +
-    'them in front and funnelling them outside where the shot is low-percentage. You cannot be ' +
-    'beaten wide by pure speed, and it is very hard to make a catastrophic error doing this. The ' +
-    'shaded middle is the thing the defenceman is not conceding — you give up the blue line but never the ' +
-    'middle or your body position — and the cost of the choice is in the picture too: they come ' +
-    'in with speed and possession and you are defending with your feet moving backwards toward ' +
-    'your own net. The band’s long edges are drawn on the faceoff-dot lines so the shading has an ' +
-    'edge; they are not painted on the ice. It is the play when you have no backpressure, when ' +
-    'the attacker has a clear speed advantage, on a two-on-one or worse, or when you are the last ' +
-    'defender. Neither answer is the correct one and which you play is a coaching choice, so find ' +
+    'Backing off at your own blue line: the defenceman gives up the line and skates backwards, ' +
+    'matching the attacker’s speed, keeping them in front and funnelling them outside where the ' +
+    'shot is low-percentage. You cannot be beaten wide by pure speed, and it is very hard to make ' +
+    'a catastrophic error doing this. The shaded middle is what the defenceman does not concede — ' +
+    'you give up the blue line but never the middle or your body position — and the cost of the ' +
+    'choice is in the picture too: they come in with speed and possession and you are defending ' +
+    'with your feet moving backwards toward your own net. The band’s long edges sit on the ' +
+    'faceoff-dot lines and are not painted on the ice. It is the play when you have no ' +
+    'backpressure, when the attacker has a clear speed advantage, on a two-on-one or worse, or ' +
+    'when you are the last defender. Backing off or standing up is a coaching choice, so find ' +
     'out which your team wants.',
 
   describe:

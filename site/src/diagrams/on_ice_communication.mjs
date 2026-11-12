@@ -263,10 +263,15 @@ const whoCanSeeIt = {
     'Why the call exists: the player going to get the puck is the one who cannot see the danger, ' +
     'and in this picture the two who can see it, their partner and their goalie, are the two who ' +
     'cannot reach it, so all they can do is say so. Both are labelled "calls it": where two people ' +
-    'can see it, both should call it, because the failure is silence, not duplication. The words ' +
-    'are a team matter, so agree your own. The mirror of this picture is the same corner with ' +
-    'nobody arriving, where the call is "time" — and a false "time" sends a teammate into contact ' +
-    'they were not braced for. ' +
+    'can see it, both should call it, because the failure is silence, not duplication. ' +
+    // ✂️ W292 (12 Nov 2026), 1,004 -> 923 chars. CUT: "The words are a team matter, so agree
+    // your own" -- on_ice_communication.md voices it in chunk 004, directly before the caption's
+    // chunk ("Check them against your own team's words"), and goaltender.md in the caption's own
+    // chunk 056 ("agree yours in the room, not on the ice"). The "mirror of this picture" lead-in
+    // is reworded, not cut. KEPT: "both should call it" and the false-"time" hazard, because
+    // on_ice_communication.md voices neither within a chunk of the marker (the false-"time" hazard first at 010; "both should call" first at 040).
+    'In the same corner with nobody arriving, the call is "time" — and a false "time" sends a ' +
+    'teammate into contact they were not braced for. ' +
     // ⚠️ ONE SENTENCE, ON PURPOSE: the posture, the shoulder clause (KT6's mid-sentence slot,
     // the shared constant, NOT edited here) and BOTH absolutes stay together so no chunk
     // boundary can ever separate them. "not even to protect the puck" folds in the old

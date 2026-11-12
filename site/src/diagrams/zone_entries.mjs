@@ -330,16 +330,28 @@ const delayCurl = {
   half: true,
   width: 900,
 
+  // ✂️ W291, 12 November 2026 (1,033 -> 943 chars). Two hosts, rendered: zone_entries.md
+  // (caption chunk 038; facts and steps in chunk 037) and time_and_space.md (caption chunk 008;
+  // the play in chunk 007). Cut from the tactical lead only:
+  //   "turn away from the pressure" -- zone_entries 037 "Turn away from the pressure",
+  //     time_and_space 007 "turn away from the pressure".
+  //   "to arrive at speed" -- zone_entries 037 "arrive at speed", time_and_space 008 "get there
+  //     with speed".
+  //   "that follows" (after "The re-attack").
+  // The postures sentence said "turning your back to anyone coming at you" a second time, straight
+  // after the glyph sentence said it; the second telling is now "a turned back". The ⚠️ sentence
+  // and every posture limb are kept: time_and_space.md voices none of the posture limbs near its
+  // marker.
   caption:
     'Arriving at the line alone against two defenders, the carrier does not stop and does not ' +
-    'force it: before the defender can reach them, they turn away from the pressure, curl back toward the neutral zone with their ' +
-    'body between the defender and the puck, and buy the one or two seconds their late support ' +
-    'needs to arrive at speed. The re-attack that follows is not drawn. ' +
+    'force it: before the defender can reach them, they curl back toward the neutral zone with ' +
+    'their body between the defender and the puck, buying the one or two seconds their late ' +
+    'support needs. The re-attack is not drawn. ' +
     '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
     'curl away from the wall, and never turn your back to anyone coming at you. ' +
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
     // in its own <p> with a 700 ms break either side -- verified this session by rendering
-    // zone_entries.md through md_to_speech.py, chunk 035. Ending it at "never turn your back to
+    // zone_entries.md through md_to_speech.py, chunk 035 at the time (chunk 038 as of 12 Nov 2026). Ending it at "never turn your back to
     // anyone coming at you near it" leaves a reader tight to the wall a prohibition and no permitted
     // alternative, and the move that satisfies "curl away from the wall" plus "never turn your back"
     // is the one the section names as the error: turning away INTO the boards. The section
@@ -382,7 +394,7 @@ const delayCurl = {
     // MAX_BILLED_CHARS of 2,800, so it is voiced as one unbroken chunk and neither absolute
     // can be separated from the other by a split.
     'Two separate postures injure a neck at the boards and they are not the same warning: ' +
-    'turning your back to anyone coming at you makes the contact a hit from behind, and a chin ' +
+    'a turned back makes the contact a hit from behind, and a chin ' +
     'tucked to the chest straightens the cervical spine. So if you cannot get off the boards, ' +
     // COLON, not a third em dash: the shoulder clause below needs a dash PAIR around it, and
     // this sentence already opened on one, which put three em dashes in a row.

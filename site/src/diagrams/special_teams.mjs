@@ -823,8 +823,14 @@ const pkWedge = {
     // screening position." Taken verbatim rather than paraphrased, so the caption and the
     // section cannot drift.
     'tight, block shots and do not chase. The fourth, the +1, pressures whoever has the puck; ' +
+    // ✂️ W292 (12 Nov 2026), 1,002 -> 969 chars. CUT: ", so ask which one your team runs".
+    // special_teams.md voices it in the caption's own chunk 030 (the Convention facts line: "so
+    // ask your coach") and in chunk 029; how_to_watch_hockey.md, a spectator page, voices
+    // "Teams use the fourth player differently, so expect variation" in chunk 012, directly
+    // before. KEPT "a coaching choice", so the route is still not presented as the system.
+    // Nothing after the glyph is touched.
     'the route drawn, straight out from the goal at the carrier, is one of three published ' +
-    'readings and a coaching choice, so ask which one your team runs. ' +
+    'readings and a coaching choice. ' +
     // SAFETY. "Block from close and on your feet, head out of the lane" follows the host's
     // own wording (24 Oct: "hands tucked" replaced -- tucking is the on-ice form, and standing it
     // folds the head into the lane; special_teams.md :803/:808);
