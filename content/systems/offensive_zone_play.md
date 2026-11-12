@@ -538,6 +538,8 @@ The mechanics of doing it well:
 
 ![](diagram:oz-net-front-screen)
 
+In a CARHA league, stay out of the paint altogether unless the puck is in the crease area: Rule 66(b) bars an attacker from standing in the crease otherwise, disallows a goal scored while you do, and writes no incidental-contact allowance (CARHA-affiliated leagues only).
+
 ### Tips and deflections
 
 **In short:** Keep your blade on the ice, change the puck's angle slightly without following through, and tip it low.

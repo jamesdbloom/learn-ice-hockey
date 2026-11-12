@@ -605,6 +605,25 @@ const netFrontScreen = {
   width: 900,
 
   caption:
+    // ✂️ W306 (12 November 2026), 1,151 -> 917 chars: CUT the CARHA 66(b) limb (no standing in
+    // the crease unless the puck is in the crease area, no goal if you do, no incidental-contact
+    // allowance) and its "CARHA governs CARHA-affiliated leagues only" scope, after both hosts
+    // were made to voice them (rendered after the W306 rebuild; caption chunk -> limb chunk):
+    //   - offensive_zone_play.md 030 -> 030: a new paragraph directly after the marker voices the
+    //     standing bar, the lost goal, "writes no incidental-contact allowance" and the CARHA scope.
+    //   - center.md 029 -> 030: a new sentence in "Stand clear of the red line" voices the standing
+    //     bar, the lost goal and the scope, and its "Play the rebound" paragraph voices "Hockey
+    //     Canada, USA Hockey and CARHA write no rebound exception at all".
+    // "Other rec leagues may be stricter still" became "A rec league may be stricter still", since
+    // "Other" pointed at CARHA. The ⚠️ sentence is unchanged word for word.
+    // LEFT WHOLE (W306, 12 November 2026): the rest. The position and eyes-to-puck line, the
+    // drawn-depth disclosure, the ⚠️ sentence and the rec-league line are kept by method. Of the
+    // rule limbs, the crease geometry is voiced by
+    // offensive_zone_play.md at chunk 029 (before the caption's 030), not at 030 or 031, and by center.md at
+    // neither 029 nor 030. REFEREE_JUDGEMENT, "normally legal ... so do it constantly" and the USA
+    // Hockey 625(b) / IIHF 69.1 zone cost are voiced by offensive_zone_play.md at neither 030 nor
+    // 031 and by center.md at neither 029 nor 030 (center.md voices the IIHF neutral-zone draw
+    // for a player who does not leave the crease at 031).
     // ✂️ W293 (12 November 2026), 1,484 -> 1,151 chars: CREASE_LINE_IS_THE_CREASE is no longer
     // imported here. Its first clause, "the crease line at its edge", is kept as literal text so
     // the ⚠️ sentence is word for word what it was. The rest (USA Hockey, Hockey Canada and CARHA
@@ -655,10 +674,7 @@ const netFrontScreen = {
     // into the amber `.warn-inline` run, and `_diagram_caption_is_important` (md_to_speech.py)
     // voices "Important." on both hosts. The run opens on the instruction, not a citation.
     ' ⚠️ Keep your feet out of the blue paint, and off the crease line at its edge. Under USA Hockey Rule 625(b) and IIHF Rule 69.1 a foot in the paint can cost you the ' +
-    'zone as well as the goal. CARHA Rule 66(b) is stricter again: no standing in the crease ' +
-    'unless the puck is in the crease area, no goal if you do, and no incidental-contact ' +
-    'allowance like the NHL and IIHF give. CARHA governs CARHA-affiliated leagues only. Other ' +
-    "rec leagues may be stricter still; read your league's rule.",
+    'zone as well as the goal. A rec league may be stricter still; read your league\'s rule.',
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +
