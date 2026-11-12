@@ -538,7 +538,7 @@ The mechanics of doing it well:
 
 ![](diagram:oz-net-front-screen)
 
-In a CARHA league, stay out of the paint altogether unless the puck is in the crease area: Rule 66(b) bars an attacker from standing in the crease otherwise, disallows a goal scored while you do, and writes no incidental-contact allowance (CARHA-affiliated leagues only).
+In a CARHA league, stay out of the paint altogether unless the puck is in the crease area: Rule 66(b) bars an attacker from standing in the crease otherwise, disallows a goal scored while you do, and writes no incidental-contact allowance (CARHA-affiliated leagues only). Under CARHA the goal is not the only cost. Contact that impedes the goalie is a minor; deliberate contact, in or out of the crease, is at least a minor and can be a major, and contact that injures must be (66(b), (e)); charging or cross-checking a goalie in the crease is a major, with more than two strides counting as a charge (52, 54(c)); and each of those majors brings a game misconduct that ends your game (30(a)).
 
 ### Tips and deflections
 

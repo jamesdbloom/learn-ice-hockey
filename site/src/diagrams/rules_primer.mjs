@@ -111,6 +111,11 @@ const offsideFaceoffLocation = {
   // changed; only the sentence boundary.
   // ⚠️ Kept OUT of the string run: a // line inside `caption:` ends the run for
   // check_caption_negations.py's CAPTION regex, which then scans only the prefix.
+  // ✂️ TRIMMED 12 November 2026, W308: 1,001 -> 996 chars. One word cut, "here" from "drawn here
+  // as a defenceman firing it in". NO LIMB CUT: the opening's book scope and "check your own book",
+  // the carried-unintentionally and deliberate (83.7) limbs, the spot-not-patch clause, the 89 ft
+  // arithmetic disclosure and the "move the pass" sentence are word for word. The only host is
+  // rules_primer.md (caption at chunk 019).
   caption:
     'Where the draw goes after an offside, under NHL Rule 83.6 — the IIHF and PWHL write it the ' +
     'same way; USA Hockey, Hockey Canada and CARHA word it differently, so check your own book. ' +
@@ -119,7 +124,7 @@ const offsideFaceoffLocation = {
     'followed them in. Carried over the line unintentionally, and the draw is the neutral-zone spot ' +
     'nearest that attacking zone; a deliberate offside goes to the offending team’s own end (83.7). ' +
     'Shot or passed in, and it goes back to the faceoff spot in the zone closest to ' +
-    'where the pass came from — a spot, not the patch of ice it was shot from — drawn here as a ' +
+    'where the pass came from — a spot, not the patch of ice it was shot from — drawn as a ' +
     'defenceman firing it in from their own end. The two draws are 89 feet apart up the ice, which is ' +
     'arithmetic on the rink dimensions, not a figure from the rulebook. That far marker is this ' +
     'pass’s answer and not a fixed destination. Move the pass and the spot moves with it.',

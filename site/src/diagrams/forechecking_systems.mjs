@@ -480,9 +480,18 @@ const forecheck122 = {
     // how_to_watch_hockey.md defers body-checking law to Forechecking Systems (chunk 006).
     // SHORTENED 22 October 2026 (~2,330 chars). Picture, jobs, label note and coaching-choice
     // disclosure kept; both hosts' bodies carry the rest beside the marker.
-    'The 1-2-2, drawn against the same carrier as the 2-1-2: one forward deep, two across the ' +
-    'middle, two defencemen high. The labels dog, fox and hawk on F1, F2 and F3 are a memory ' +
-    'hook, not standard terms. Which side F1 cuts off, where the weak-side defenceman sits, and the system itself are ' +
+    // ✂️ TRIMMED 12 November 2026, W308: 1,030 -> 998 chars, by rewording the three sentences
+    // before the shared SAFETY SCOPE block. NO LIMB CUT: "drawn against the same carrier as the
+    // 2-1-2" became "same carrier as the 2-1-2" (content-reviewer wording, so the 1-2-2 is never heard as playing against a 2-1-2); "The labels dog, fox and hawk on F1, F2
+    // and F3" became "Dog, fox and hawk on F1, F2 and F3"; the coaching-choice list keeps all three
+    // items (the system, the side F1 cuts off, where the weak-side defenceman sits) and its "so ask
+    // which your team runs". The shared block below is untouched, so it is still byte-identical to
+    // forecheck-131's, and how_to_watch_hockey.md still embeds forecheck-212 directly before this
+    // diagram (check_caption_pairs). Caption chunks after the trim: how_to_watch_hockey 007,
+    // forechecking_systems 025.
+    'The 1-2-2, same carrier as the 2-1-2: one forward deep, two across the ' +
+    'middle, two defencemen high. Dog, fox and hawk on F1, F2 and F3 are a memory ' +
+    'hook, not standard terms. The system itself, the side F1 cuts off and where the weak-side defenceman sits are ' +
     'coaching choices, so ask which your team runs. ' +
     // SAFETY SCOPE, SHORTENED 22 October 2026 (owner: shorter is better). This block is VERBATIM
     // SHARED by forecheck-122 and forecheck-131; edit both together or they drift. It keeps the
