@@ -139,6 +139,8 @@ A second tell: **watch what F1 does on arrival.** A straight line at the carrier
 
 The 1-2-2 is the containment version: it concedes the retrieval and builds a wall, with F1 cutting the ice in half without chasing, F2 waiting up the wall to jump the outlet pass, and F3 holding the high middle.
 
+In the 2-1-2, the contest to watch is whether the first pass beats F2. Its spread shape, with F1 and F2 arriving from opposite sides as drawn, is a coaching choice; the stacked variant sends both into the same corner.
+
 ### Which defensive-zone coverage do they play? Watch the winger.
 
 This is the most reliable read in hockey, and it takes about ninety seconds.

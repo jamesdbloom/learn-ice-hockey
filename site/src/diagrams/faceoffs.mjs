@@ -256,14 +256,37 @@ const dzoneAlignment = {
     'defenceman really stands nearer the boards than their winger as well as behind; there is no ' +
     'room to draw it. Where everyone stands is a coaching choice, not a rule: this alignment goes ' +
     'with a low zone collapse, and teams differ, so find out what yours runs. The shaded circle ' +
-    'is the rule: everyone except the two taking the draw ' +
+    // ✂️ TRIMMED 12 November 2026, W304: 1,356 -> 1,259 chars. CUT: ": everyone except the two
+    // taking the draw keeps both skates outside the circle and the hash marks". It is not a host
+    // cut: the same caption states it at a fuller tier straight after, in the ⚠️ sentence (skates
+    // and stick behind your own hash mark, skates off the circle line, for anyone not taking the
+    // draw) and in the book-by-book split. This cut needed no host edit.
+    // LEFT WHOLE (W304, 12 November 2026) for the remaining limbs. Chunks are caption chunk / next
+    // chunk, rendered after the W304 build.
+    // - Contact limb ("Contact is priced separately ...", NHL/IIHF 76.7(iii), PWHL 78.7(iii),
+    //   HC 6.2(a), CARHA 57(a)): winger.md voices it at 036 (caption at 035). center.md 034 quotes
+    //   the NHL/IIHF/PWHL stick proviso "provided there is no physical contact" but does not say
+    //   contact is itself a violation (caption at 033). faceoffs.md 022/023, defender.md 042/043,
+    //   rink_map.md 020/021, game_management.md 007/008 and how_to_watch_hockey.md 016/017 carry no
+    //   sentence on a non-taker's pre-drop contact. Voicing it would need a five-book rule sentence
+    //   in six hosts, two of them (rink_map, game_management) pages where faceoff-contact law is
+    //   detail in the wrong area, and each would have to carry the IIHF 2025/26 book's warning on a
+    //   first violation (76.7: "A warning shall be issued to the offending team").
+    // - Coaching-choice limb: faceoffs.md voices it at 023 (the other-circle caption), winger.md at
+    //   035 and how_to_watch_hockey.md at 016; center.md 033/034, defender.md 042/043, rink_map.md
+    //   020/021 and game_management.md 007/008 do not voice this alignment as a coaching choice.
+    // - Book split: faceoff-dzone-alignment-other-circle's ⚠️ sentence points at it ("the diagram
+    //   above carries that split"), and how_to_watch_hockey.md (016) sends the reader to this caption
+    //   for it.
+    // - The boards-side defenceman disclosure is about this drawing and stays with it.
+    'is the rule. ' +
     // ⚠️ W33: INSTRUCTION FIRST. `captionNodes` makes everything from the first ⚠ to the end
     // one amber run, and this run was ~990 chars with the instruction ("Keep your skates…")
     // sitting under the book-by-book tariff. Re-ordered, not cut: every limb is still here, the
     // instruction now opens the amber run, and the second glyph (on "Contact is priced…"),
     // which was inert inside the same run, is gone. Speech unchanged — one "Important." per
     // caption whichever glyph carries it.
-    'keeps both skates outside the circle and the hash marks. ⚠️ If you are not taking the ' +
+    '⚠️ If you are not taking the ' +
     'draw, keep your skates and stick behind your own hash mark, your skates off the circle ' +
     'line, and your hands, body and stick off the opponent beside you and off their stick: that satisfies every book. ' +
     // 8 November 2026: "Touching the line is not safe in every book." cut -- it announced the

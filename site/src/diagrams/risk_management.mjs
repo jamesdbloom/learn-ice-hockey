@@ -623,7 +623,10 @@ const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
 // were cut, so both captions now carry the same three limbs — PINCH_COVER, PINCH_SCOREBOARD and
 // the ⚠️-led PINCH_CONTACT, in that order — and the "four sentences" and "fronts three" notes
 // above describe the older text. Since 27 October 2026 the second caption carries PINCH_CONTACT
-// only — see the SG94 layer test below.
+// only — see the SG94 layer test below. ⚠️ STALE AGAIN since 12 November 2026 (W302): the first
+// caption (pinch-centre-high) was cut to end on PINCH_CONTACT alone too, so NEITHER caption now
+// carries PINCH_COVER or PINCH_SCOREBOARD, and PINCH_CAVEATS is spoken by no caption — see the ✂️
+// note on pinchCentreHigh below. The SG94 "this caption keeps all three" line is superseded likewise.
 const PINCH_COVER =
   'Who covers the point behind a pinch is a coaching choice — the centre, the highest forward, ' +
   'or the weak-side defenceman sliding across — so find out what your team plays. ';
@@ -693,7 +696,8 @@ const pinchCentreHigh = {
   // unchanged; no constant was edited, so PINCH_CAVEATS, PINCH_COVER and PINCH_SCOREBOARD are now
   // spoken by no caption. Renders of 12 Nov 2026, caption chunk -> where each cut limb is voiced:
   //   defender.md: caption 032. New paragraph after the marker (033): the question, the who-covers
-  //     choice and "let the scoreboard and the clock decide whether you go at all".
+  //     choice and "let the scoreboard and the clock move how often you go" (defender.md:504, as
+  //     re-read 12 November 2026 in W303; this note first quoted an older wording).
   //   offensive_zone_play.md: caption 064. The coaching-choice paragraph (064) now adds the
   //     who-covers choice, "how often you go moves with the scoreboard and the clock" and the
   //     question.

@@ -450,7 +450,7 @@ Your role depends on which side of the ice the puck is on, and on who got there 
 
 **Goal:** Force a turnover or a bad outlet pass by trapping the puck carrier with no escape route.
 
-**Key considerations:** Effective forechecking is about angles, not just speed. Read where F1 has pushed the puck and seal the next-most-likely escape. Stay in your F2 or F3 role and trust your teammates to be in theirs — if everyone chases the puck, the opponent will pass around you.
+**Key considerations:** Effective forechecking is about angles, not just speed. Read where F1 has pushed the puck and seal the next-most-likely escape. In the 2-1-2, the contest is whether the opposition's first pass beats F2. Stay in your F2 or F3 role and trust your teammates to be in theirs — if everyone chases the puck, the opponent will pass around you.
 
 ---
 

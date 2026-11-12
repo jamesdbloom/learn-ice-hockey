@@ -409,6 +409,8 @@ The defencemen hold the blue line at the points. These are **roles, not people**
 
 ![](diagram:forecheck-212)
 
+The contest the 2-1-2 turns on is whether the opposition's first pass beats F2. Whether you and F2 come from opposite sides, as drawn, or from the same side in the stacked variant is a coaching choice.
+
 #### The trapezoid, and their goalie as a puck-handler
 
 **The trapezoid works in your favour here.** Under NHL and IIHF rules the opposing goalie may only play the puck behind their goal line inside the marked trapezoid, so they cannot come out to the corner and calmly move a dumped puck — a defenceman has to, with you arriving on them. That is exactly why dump-and-chase works, so aim your dump-ins away from the trapezoid. The rule writes one exception, a goalie playing the puck *"while maintaining skate contact with"* the crease (NHL Rule 27.8; IIHF Rule 27.7). ⚠️ **The IIHF *Situation Handbook* adds two more, both narrow:** a puck stopped **on** the goal line is not in the restricted area (Situation 27.6), and a puck that merely hits a retreating goalie is not one they played (27.9). **Neither moves where you aim** — they only tell you not to expect a whistle every time their goalie touches a puck out there.

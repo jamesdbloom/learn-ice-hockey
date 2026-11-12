@@ -169,17 +169,29 @@ const forecheck212 = {
     // sentence. A per-host coverage table shows it as duplicated and safe to cut; it is not.
     // It survived the 2026 length cut for the same reason. Do not cut it again.
     'F3 stays high in the middle at the top of the circles; both defencemen hold the offensive ' +
-    'blue line. It is one system among several, and three details are coaching choices rather ' +
-    'than rules: which way F1 angles the carrier, which side F3 sits on, and the spread shape ' +
-    'rather than the stacked variant. Find out which your team runs. The picture does not show ' +
-    'how a forechecker finishes an angle, which ' +
+    // ✂️ TRIMMED 12 November 2026, W304: 1,400 -> 1,249 chars. CUT: "the spread shape rather
+    // than the stacked variant" as a third coaching choice, and "or settle whether the first pass
+    // beats F2, which is the contest the system turns on". Where each host voices both (caption
+    // chunk -> limb chunk, rendered after the W304 build): how_to_watch_hockey 007 -> 008 (added
+    // paragraph after the 1-2-2 one); winger 026 -> spread/stacked choice at 026 (F3 bullet before
+    // the caption, and forecheck-212-stacked's caption after it), first-pass contest at 027 (added to
+    // "Key considerations"); center 023 -> 023 (added paragraph after the marker); game_management
+    // 008 -> 009 (added to "This is a system choice"); forechecking_systems 022 -> spread/stacked
+    // choice at 022 (forecheck-212-stacked's caption) and 023 ("Variants worth knowing"), first-pass
+    // contest at 023 ("How it is beaten"; not edited). KEPT word for word: the
+    // F1-angle and F3-side coaching choices, "one system among several", "find out", "at the top of
+    // the circles", the "how a forechecker finishes an angle ... is treated separately" disclosure and
+    // the whole ⚠️ safety block with the USA Hockey 604(a)/(b) / Hockey Canada 7.3 enumeration, so
+    // the check_caption_pairs.py dependencies of forecheck-212-stacked and forecheck-122 still hold.
+    'blue line. It is one system among several, and which way F1 angles the carrier and which ' +
+    'side F3 sits on are coaching choices rather than rules. Find out which your team runs. ' +
+    'The picture does not show how a forechecker finishes an angle, which ' +
     // "is treated separately" RESTORED after a length cut removed it, and kept through the
     // 2026 length cut. It is the host-neutral repair of an earlier "and is its own section",
     // which was true in one of five hosts. A reader told the picture will not show the finish
     // of an angle has to be told something shows it, and this phrase is the only pointer that
     // is true in all five.
-    'is treated separately, or settle whether the first pass beats F2, which is the contest the ' +
-    'system turns on. ' +
+    'is treated separately. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. WHY IT IS HERE AND WHY IT IS SHORT.
     // The long body-checking block forecheck-122 and forecheck-131 carried until 22 October 2026
     // (both now carry a short shared block) was NOT the general
@@ -332,7 +344,8 @@ const OPP_PUCK = { at: 'behind-net', dx: -3.5, dy: 10 };  // (90.5, 10)
 // hedge in its caption that it is "drawn as a spread 2-1-2 ... rather than the
 // stacked variant that sends both at the same corner", and a hedge a reader
 // cannot picture is a hedge that does nothing. Two pictures of the same system
-// settle it in a glance.
+// settle it in a glance. (Since W304, 12 November 2026, the spread-versus-stacked
+// choice is voiced in the host prose beside forecheck-212, not in its caption.)
 const STACK_F1 = { at: 'goal-line', dy: 18 };                // (89, 18)
 // Inside the strong-side circle rather than up on the wall beside their winger.
 // At (78, 27) the only label slot the placer could find for F2 was one that came
