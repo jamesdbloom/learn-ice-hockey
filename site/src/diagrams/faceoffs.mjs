@@ -723,10 +723,14 @@ const whereTheDrawGoes = {
   // markers, not paint", "the end you are attacking at the right") and wording only. The HC
   // sentence on who declares the dot is unchanged.
   caption:
-    'Four common stoppages and the faceoff spot each one sends the draw to — four separate ' +
+    // ✂️ W290, 11 November 2026 (1,069 -> ~1,000): wording only, no limb cut. Both hosts rendered:
+    // faceoffs.md chunk 008 and rules_primer.md chunk 103 voice the NHL/IIHF dot choice, but it is kept
+    // for the "your opponents here" gloss; neither host voices the shot-or-passed offside limb or the
+    // USA Hockey goalie-freeze limb beside the marker in spoken prose, so both stay.
+    'Four common stoppages and where each sends the draw — four separate ' +
     'situations, not one play. Your own end is at the left. At centre ice: the start of every ' +
-    'period, and every draw after a goal. In your own end: an icing you caused, or a penalty you ' +
-    'took. Only one of the two spots there is boxed, because the rule names the END, not the dot. ' +
+    'period, and after every goal. In your own end: an icing you caused, or a penalty you ' +
+    'took. Only one of the two spots there is boxed, because the rule names the END, not the dot; ' +
     // ⚠️ SHORTENED AGAIN 8 November 2026 (1,274 chars). HOST CHANGE since 24 October: rules_primer.md
     // now voices the Hockey Canada and USA Hockey dot-choice limbs in the paragraph directly after the
     // marker (rules_primer.md:925 -- HC 6.4(b) "only in Junior and Senior, after an icing or a time
@@ -737,7 +741,7 @@ const whereTheDrawGoes = {
     // said "they": it is kept for the reasoning, the sentence itself is gone. KEPT: the USA Hockey
     // last-play / attacker-caused limb, because rules_primer.md voices no 612 anywhere near the marker;
     // and the shot-or-passed offside limb, because rules_primer.md carries it only in a table.
-    'Under the NHL and the IIHF the attacking team — your opponents here — picks which dot. ' +
+    'under the NHL and the IIHF the attacking team — your opponents here — picks which. ' +
     // ⚠️ THIS SAID "only if YOU tell the referee", in a caption whose own framing is
     // "an icing you caused, or a penalty you took". HC 6.4(b) gives the choice to the
     // "attacking (non-offending) team" (hc.txt:4857), so in the situation DRAWN it belongs
@@ -747,11 +751,11 @@ const whereTheDrawGoes = {
     // already said "the attacking team chooses" for the NHL and IIHF, so the caption also
     // contradicted itself.
     'Outside the blue line you ' +
-    'were attacking: an offside where the puck was carried over. A puck SHOT or PASSED over the ' +
-    'line offside goes back to the zone it came from instead, which can be your own end. In the ' +
+    'were attacking: an offside where the puck was carried over; a puck SHOT or PASSED over the ' +
+    'line offside goes back instead to the zone it came from, which can be your own end. In the ' +
     'end you are attacking: a goalie freeze, or any other stoppage between the end-zone dots and ' +
-    'the end boards, which under the NHL and the IIHF draws at the spot on the side it happened. ' +
-    'USA Hockey differs on that one: it takes the nearest spot only on its own last-play faceoff, ' +
+    'the end boards, which the NHL and the IIHF draw at the spot on the side it happened. ' +
+    'USA Hockey differs: it takes the nearest spot only on its own last-play faceoff, ' +
     'and sends a stoppage you, the attackers, caused in that zone out to the neutral zone. ' +
     'These four are the common ones, not the whole rule.',
 
@@ -865,11 +869,13 @@ const strongSideDot = {
   width: 900,
 
   caption:
-    'Which of the two circles in your own end is your strong side. The same centre is drawn twice, ' +
-    'once at each circle, making the same motion both times: a backward pull on the backhand, which ' +
-    'goes to a fixed side of your own body and therefore to the same side of the ice at both circles.' +
-    ' At one circle that carries the puck toward the boards, the safest place it can go; at the other' +
-    ' the identical motion carries it toward the middle, and a defensive-zone draw won into the slot ' +
+    // ✂️ W290, 11 November 2026 (1,015 -> ~895): the picture description only. The book-by-book
+    // choice of dot is kept verbatim -- faceoffs.md chunks 018-020 voice none of it.
+    'Which of the two circles in your own end is your strong side. The same centre makes the same ' +
+    'backward pull on the backhand at each circle, so the puck goes to the same side of their body, ' +
+    'and of the ice, both times.' +
+    ' At one circle that is toward the boards, the safest place it can go; at the other it is' +
+    ' toward the middle, and a defensive-zone draw won into the slot ' +
     // SHORTENED 8 November 2026 (1,244 chars). Cut: the self-test sentence and the reason no
     // handedness is drawn -- both voiced in the paragraph directly above the marker
     // (faceoffs.md:389, the Flagged note: the sources give no reference frame, and the self-test

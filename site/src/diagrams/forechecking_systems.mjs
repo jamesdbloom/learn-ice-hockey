@@ -150,6 +150,11 @@ const forecheck212 = {
   width: 900,
 
   caption:
+    // LEFT WHOLE 11 November 2026, W289 (1,400 chars). Re-rendered all five hosts: winger (026),
+    // center (023), game_management (008) and how_to_watch_hockey (007) still voice no 604(a)/(b)
+    // or 7.3 enumeration within one chunk, and forechecking_systems.md voices no "one system among
+    // several" disclosure within one chunk (020-023). forecheck-212-stacked and how_to_watch's
+    // forecheck-122 also rely on this caption's safety block. Nothing could go.
     // ⚠️ SHORTENED 24 October 2026 (1,574 chars; owner: shorter is better). Narrative only: the
     // coaching-choice disclosure, "at the top of the circles", "is treated separately" and the whole
     // safety block with its rule sentence are kept, because winger, centre, game_management and
@@ -447,6 +452,9 @@ const forecheck122 = {
   width: 900,
 
   caption:
+    // LEFT WHOLE 11 November 2026, W289 (1,188 chars). how_to_watch_hockey.md voices none of the
+    // 1-2-2's jobs, shape or coaching choices near the marker (chunks 006-008), and
+    // forechecking_systems.md voices no part of the safety block within one chunk (024-026).
     // SHORTENED 22 October 2026 (~2,330 chars). Picture, jobs, label note and coaching-choice
     // disclosure kept; both hosts' bodies carry the rest beside the marker.
     'The 1-2-2, drawn against the same carrier as the 2-1-2: one forward deep, two across the ' +
@@ -598,12 +606,20 @@ const forecheck131 = {
   caption:
     // SHORTENED 22 October 2026 (~2,610 chars). "Not three forwards across" is dropped: the
     // host body voices it in the chunk immediately before the marker.
+    // SHORTENED again 11 November 2026, W289 (1,194 chars). The only host is
+    // forechecking_systems.md (`## 1-3-1`), caption voiced in chunk 028. CUT, because that
+    // section voices each at the same tier or fuller in the caption's own chunk or the one either
+    // side: the line-of-three convention and its forward-in-the-middle alternative (facts
+    // Convention line, chunk 027; the body's "That arrangement is coaching convention ... Ask which
+    // your team runs", chunk 028, directly before the marker); "a chip past a flat line" (facts
+    // Countered by, 027; "anything behind it is behind all three at once", 029); "not a beginner
+    // system" (facts Risk, 027; body, 029); and the passive neutral-zone meaning of the name
+    // ("Coaching material usually describes it the second way", 028, directly after the marker).
+    // KEPT: the picture, the steer-don't-chase instruction and the line's shift, and the whole
+    // safety block, which no chunk near this marker voices.
     'The 1-3-1 pushed up into the offensive zone: one forward pressuring, three flat across the ' +
-    'ice, one last man behind. The line of three is conventionally F2, F3 and a defenceman in the ' +
-    'middle; some coaches put a forward there, so ask which your team runs. F1 steers rather than ' +
-    'chases, and the line shifts with the puck, its puck-side player becoming a second attacker. A ' +
-    'chip past a flat line is past all three. It is not a beginner system, and the name more ' +
-    'often means a passive neutral-zone shape. ' +
+    'ice, one last man behind. F1 steers rather than chases, and the line shifts with the puck, ' +
+    'its puck-side player becoming a second attacker. ' +
     // SAFETY SCOPE, SHORTENED 22 October 2026 (owner: shorter is better). This block is VERBATIM
     // SHARED by forecheck-122 and forecheck-131; edit both together or they drift. It keeps the
     // onus instruction, "never finish into the back", the NHL/IIHF Rule 43 floor (NHL 43.2/43.3/
@@ -1061,6 +1077,10 @@ const forecheckRolesRotate = {
   // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
   // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
   // one voiced unit, and _split_paragraph breaks only at sentence ends.
+  // LEFT WHOLE 11 November 2026, W289 (1,121 chars). Two hosts. rink_map.md (chunk 042) voices
+  // roles by order of arrival but not this rotation, the lock-system alternative or any
+  // body-checking scope near the marker; forechecking_systems.md voices the rotation (chunk 009)
+  // but no checking scope within one chunk. Every limb is unvoiced near the marker in one host.
   caption:
     'Drawn the instant after the opponents move the puck defenceman to defenceman. The letter in ' +
     'each glyph is the role just taken; the label beside it is the role held a second earlier. The ' +

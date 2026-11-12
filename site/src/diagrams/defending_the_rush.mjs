@@ -313,9 +313,12 @@ const twoOnOne = {
   width: 900,
 
   caption:
-    'A 2-on-1 — two attackers, one defender — with the attack moving right to left toward the ' +
+    // ✂️ W290, 11 November 2026 (1,022 -> ~910): wording only; both hedges and the exception kept.
+    // goaltender.md (chunks 065-066) voices neither the "some goalies want the puck pressured" limb
+    // nor the close-on-the-puck exception, so neither could go.
+    'A 2-on-1 — two attackers, one defender — attacking right to left toward the ' +
     'defended net at the left. The defenceman sits in the shaded passing lane, biased slightly toward ' +
-    'the middle of the ice, on the defensive side of both, and retreats with them ' +
+    'the middle, on the defensive side of both, and retreats with them ' +
     'rather than stepping toward either: take away the pass and ' +
     'give up the shot, because the goalie can save the shot and cannot save the cross-ice pass. ' +
     'The goalie plays the shooter as though the second attacker did not exist. ' +
@@ -324,11 +327,11 @@ const twoOnOne = {
     // "some will ask you to pressure the puck instead" is the half that sends a reader to
     // ask; the exception below is the one honest limit on "never step toward either", and
     // without it the caption tells a defenceman to stand off an unpressured walk-in.
-    'That division of labour is a two-person agreement and it only works if both people have said it out ' +
-    'loud — most goalies want it exactly this way, but some, especially at rec level and especially ' +
-    'against a weak shooter, will ask you to pressure the puck instead, so ask yours before the game. ' +
-    'One honest exception no picture can carry: if the second attacker gets picked up by a backchecker ' +
-    'and the shooter is walking in unpressured with no realistic pass available, it is no longer a 2-on-1 ' +
+    'That division of labour only works if both of you have said it out loud — most goalies want it this way, ' +
+    'but some, especially at rec level or against a weak shooter, will ask you to pressure the puck ' +
+    'instead, so ask yours before the game. ' +
+    'One exception no picture can carry: if a backchecker picks up the second attacker and the ' +
+    'shooter walks in unpressured with no realistic pass, it is no longer a 2-on-1 ' +
     'and the defenceman should close on the puck.',
 
   describe:

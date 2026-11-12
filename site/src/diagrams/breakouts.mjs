@@ -267,15 +267,27 @@ const wheel = {
   // writes both (hc.txt:6844-6846); CARHA 66(e) writes a major, and CARHA 30(a) makes EVERY
   // major "Major penalty plus Game Misconduct" (only exception: accidental high stick), so
   // both books eject. Do not scope the game misconduct to Hockey Canada alone.
+  // SHORTENED again 11 November 2026, W289 (1,000 chars). Only host breakouts.md (`### Wheel`);
+  // the caption is now voiced in chunk 021, before the Setup paragraph, with the section's facts block before it
+  // (chunks 020-021) and its body after it (chunk 022). CUT, each voiced at the same tier or
+  // fuller in 020-022: "It needs a step on the first forechecker and an empty far side" (facts
+  // Read, 020; body "The read", 022); "a second forechecker on the far side, as F2 in a 2-1-2,
+  // makes it a trap" (facts Countered by, 021, the caption's own chunk; body "How it's
+  // defeated", 022); and the IIHF sentence, "allows it in the same words, but its impeding minor
+  // 'shall be assessed', so do not count on it" (facts Rule line, 020; body, 022, both in the
+  // same words). Cutting the IIHF limb leaves the caption naming only the NHL and PWHL as
+  // allowing the screen, which is the conservative direction for an IIHF reader.
+  // NOTE: the comment above says the HC 8.3(b) / CARHA 66(e) injury tier is "not voiced anywhere
+  // in the Wheel section". That is no longer true (facts, chunk 021: "A pick that injures is a
+  // mandatory major plus a game misconduct in two books"), but it sits inside a ⚠️ sentence, and
+  // every ⚠️ sentence is kept word for word, so it stays.
   caption:
     'The wheel: the defenceman carries the puck behind their own net and up the far side, drawn ' +
-    'in your own zone at the left, moving left to right. It needs a step on the first ' +
-    'forechecker and an empty far side. Cut tight: the net is your screen, and cutting wide gives ' +
-    'the forechecker a straight line to you. The far winger and the centre are the outlets; a ' +
-    'second forechecker on the far side, as F2 in a 2-1-2, makes it a trap. ' +
+    'in your own zone at the left, moving left to right. Cut tight: the net is your screen, and ' +
+    'cutting wide gives the forechecker a straight line to you. The far winger and the centre are ' +
+    'the outlets. ' +
     '⚠️ D2, standing at the net front, is legal only in some books. The NHL and PWHL allow it: ' +
-    'stick in tight and vertical, hands to yourself, no bump. The IIHF allows it in the same ' +
-    'words, but its impeding minor “shall be assessed”, so do not count on it. ⚠️ Under USA Hockey even a ' +
+    'stick in tight and vertical, hands to yourself, no bump. ⚠️ Under USA Hockey even a ' +
     'still screen is a minor when your partner has the puck. ⚠️ Hockey Canada and CARHA give your ' +
     'side no right to it, and make a major and a game misconduct mandatory if it injures. ⚠️ Never slide across into ' +
     'the forechecker\'s path: that is interference everywhere, and two minutes is only the floor.',
