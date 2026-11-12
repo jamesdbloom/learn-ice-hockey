@@ -429,6 +429,21 @@ const theTrapezoid = {
   //   - save-then-cover and the 63.2(VII) crease limit: no host voices "bears down" anywhere
   //     near, and how_to_watch_hockey.md voices neither.
   // There is no narrative restatement left to cut; every sentence is a rule or boundary limb.
+  // ✂️ SHORTENED 12 November 2026 (W294), 1,232 → 1,139 chars. CUT, after the two hosts
+  // that lacked them were made to voice them beside the marker: why the PWHL binds ("switches the trapezoid off yet still writes the minor") and why
+  // Britain does ("the standing and reach of England Ice Hockey's suspension ... are unsettled").
+  // rules_primer.md now voices the PWHL contradiction in the caption's own chunk; rink_map.md now
+  // voices the British "unsettled, play as though it binds" in the next chunk. goaltender.md (its
+  // facts block, caption chunk and next) and how_to_watch_hockey.md (next chunk) already voiced
+  // both. The instruction "play as if the trapezoid binds, and ask your league" stays, and "That
+  // suspension" became "England Ice Hockey's suspension of the trapezoid, whatever its standing",
+  // so the freezing limb still names what it limits and does not read the suspension as in force.
+  // LEFT WHOLE (W294, 12 November 2026): the rest of the caption. (The SG208 bullets above are
+  // partly superseded: the PWHL and British limbs are now voiced in every host.) Within the caption's chunk or the next, how_to_watch_hockey.md voices no NHL/IIHF
+  // trapezoid minor, no "never freezing", no Handbook carve-out, no centre-red-line bar and no
+  // save-then-cover (it does voice the PWHL 65.2(viii) minor and the USAH/HC/CARHA freeze limits);
+  // voicing them there would take more than two sentences on a spectator page. No host voices the
+  // whole 63.2(VII) crease limit within that distance (nearest: goaltender.md, two chunks on).
   caption:
     'The trapezoid: the goaltender’s restricted area behind the net — 22 ft wide at the ' +
     'goal line, widening to 28 ft at the boards, shaded here at NHL dimensions. Playing the ' +
@@ -468,13 +483,12 @@ const theTrapezoid = {
     // in England and Wales is genuinely unsettled … Ask your league", goaltender.md "treat the
     // trapezoid as unsettled — and play as though it binds everywhere in Britain". The Elite
     // League limb is folded in: the IIHF book governs it and its Casebook is silent.
-    'red line and limit where the puck may be frozen. The PWHL switches the trapezoid off yet ' +
-    'still writes the minor, and in Britain the standing and reach of England Ice Hockey’s ' +
-    'suspension of the trapezoid are unsettled: in both, play as ' +
+    'red line and limit where the puck may be frozen. In the PWHL and in Britain, play as ' +
     // R (20 Oct 2026): 22.3 itself names no competition (eih_rr.txt :999); only 22.2 says
     // "EIH competitions". Scope and standing are unsettled; the Elite League claim is scoped
     // to its Casebook, the only EIHL document on disk.
-    'if the trapezoid binds, and ask your league. That suspension never ' +
+    'if the trapezoid binds, and ask your league; England Ice Hockey’s suspension of the ' +
+    'trapezoid, whatever its standing, never ' +
     // ⚠️⚠️ CRITICAL, CAUGHT BY `safety-reviewer`. This ended at "freeze it" — a flat NEVER,
     // read ALONE by a listener, while the body treats two carve-outs as inseparable from
     // this exact sentence: "Both carve-outs travel with that, or you produce a goaltender

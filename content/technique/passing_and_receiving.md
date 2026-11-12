@@ -663,7 +663,7 @@ What the receiver owes the passer:
 
 **The first of the two pictures above** draws the first bullet: the receiver has nobody within ten feet of them and is still not an option, because a stick lies flat across the only line between them and the puck. **Unmarked and available are different things**, and the passer is reading the second one.
 
-**The second picture** is the spatial half of the same idea — where support can stand relative to a carrier, and what each position offers. Note that none of them is simply *close*, and that the picture shows the *where* rather than the *when*: timing is the half no still frame holds.
+**The second picture** is the spatial half of the same idea — where support can stand relative to a carrier, and what each position offers. Note that none of them is simply *close*, and that the picture shows the *where* rather than the *when*: timing is the half no still frame holds. As the ahead option at the blue line, keep your trail skate on the ice at or behind the line until the puck has completely crossed it, which is onside in every book. Offside is both skates completely over the line before the puck completely crosses it (NHL Rule 83), and a trail skate held in the air behind the line is onside in the NHL, IIHF and PWHL but offside under USA Hockey 630(a) and Hockey Canada 6.11.
 
 What the passer owes the receiver:
 

@@ -418,15 +418,22 @@ const icingTheRaceAndTheDot = {
   // sentences were merged; "deadline, not a finish line" is voiced in rules_primer's prose just
   // before the marker. The 81.1 mechanism, the ⚠️ scope limb, the boarding limb and the full
   // posture are unchanged word for word.
+  // ✂️ SHORTENED AGAIN 12 November 2026 (W294), 1,236 → 979 chars. CUT, after both hosts were made
+  // to voice them beside the marker: "Under NHL and IIHF Rule 81.1" with "by the time the first skate
+  // reaches the dots" (the opening sentence already makes the dot the deadline), and the scope
+  // sentence after the ⚠️ (USA Hockey outside adult sled hockey and CARHA automatic; Hockey Canada
+  // hybrid only in U18AAA, Junior and optional Senior). goaltender.md now voices the book scope (NHL
+  // and IIHF 81.1, PWHL 83.1, USA Hockey, CARHA, Hockey Canada) in the sentence just before the
+  // marker, which ends the chunk before the caption's; the chunk after it repeats the Hockey Canada
+  // scope. rules_primer.md voices the 81.1 mechanism in the caption's own chunk and USA Hockey,
+  // CARHA and Hockey Canada in the next. The ⚠️ sentence, "Ask which your league plays.", the
+  // boarding limb and the full posture are unchanged word for word.
   caption:
     'Hybrid icing: both skaters reach the end-zone dots level, and the box marks the near dot ' +
-    'only as the deadline for the decision, not a finish line. Under NHL ' +
-    'and IIHF Rule 81.1 the linesperson decides by the time the first skate reaches the dots, on ' +
+    'only as the deadline for the decision, not a finish line. The linesperson decides on ' +
     'who would touch the puck first, so being level settles nothing: be clearly on course to reach ' +
     'the puck first, because a race still too close to call at the dots is icing. ' +
-    '⚠️ This is not everybody’s icing. USA Hockey ' +
-    '(outside adult sled hockey) and CARHA play automatic icing, so there is no race, and Hockey ' +
-    'Canada runs hybrid only in U18AAA, Junior and, at the Member’s option, Senior. Ask which your ' +
+    '⚠️ This is not everybody’s icing. Ask which your ' +
     'league plays. The race is not a licence to hit: unnecessary contact with a player playing ' +
     'the puck on an obvious icing is boarding if they hit the boards (NHL, IIHF and PWHL 41.1, ' +
     'Hockey Canada 7.2), and USA Hockey penalises any unnecessary contact on an obvious icing ' +

@@ -403,41 +403,40 @@ const supportAngles = {
   // completely crossing the leading edge, she is deemed to be on-side". Widened to
   // "NHL, IIHF and PWHL". CARHA stays OUT of the offside half: "plane" scores 0 in
   // carha.txt and 72(c) Note 1 is a disjunction, so that book is unsettled, not strict.
-  // ⚠️ THE OFFSIDE BLOCK IS UNTOUCHED — about 57 words of it — AND IS WHY THIS CAPTION
-  // STAYS OVER THE TARGET. It NAMES THE TWO CONTACT-REQUIRED BOOKS rather than counting
-  // books — the shelf holds six and the split is 3 permissive (NHL 83.1, IIHF 83.1,
-  // PWHL 85.1, all a plane test) / 2 contact-required (USA Hockey 630(a), Hockey Canada
-  // 6.11 in the rule's own preamble) / 1 UNSETTLED (CARHA 72(c) Note 1 is a disjunction,
-  // "in physical contact with, or on their own side of, the blue line", and CARHA never
-  // defines "own side" as a plane). A COUNT GOES STALE WHEN THE SHELF GROWS; the book
-  // names do not. The instruction is safe in all six: contact satisfies CARHA's
-  // disjunction explicitly. Drop the book scope and the caption states a false universal
-  // about a rule that decides whether a goal counts. The defensive-zone caveat on the
-  // level pass is untouched for the same kind of reason: the same pass is routine in
-  // two zones and a point-blank chance against in the third.
-  // SG209, 8 November 2026: LEFT WHOLE (1,088). Layer test of both hosts (renders of 8 Nov
-  // 2026): puck_support_and_spacing.md voices every limb in chunks 009-010 around its marker,
-  // but passing_and_receiving.md:660 (chunk 035, the caption opens the chunk) voices neither
-  // the own-zone "across the middle … point-blank" limb nor the offside definition and
-  // trail-skate scope anywhere near it — its nearest offside text is chunks 011-014 and 044,
-  // and its own-zone "never through the slot" line is chunk 037, in a different section. The
-  // rest is the picture itself. Trim only after passing_and_receiving.md voices those limbs
-  // beside its marker.
+  // Until W295 the caption carried an offside block that NAMED THE TWO CONTACT-REQUIRED
+  // BOOKS rather than counting books: the shelf holds six and the split is 3 permissive
+  // (NHL 83.1, IIHF 83.1, PWHL 85.1, all a plane test) / 2 contact-required (USA Hockey
+  // 630(a), Hockey Canada 6.11 in the rule's own preamble) / 1 UNSETTLED (CARHA 72(c)
+  // Note 1 is a disjunction, "in physical contact with, or on their own side of, the blue
+  // line", and CARHA never defines "own side" as a plane). That block now lives in both
+  // hosts beside the marker (see the ✂️ note). The caption keeps the instruction, which is
+  // safe in all six: contact satisfies CARHA's disjunction explicitly. If the book split
+  // ever returns to this string, it must name the books; a bare "onside" with a raised
+  // trail skate would be a false universal about a rule that decides whether a goal
+  // counts. The defensive-zone caveat on the level pass stays (compressed in W295) for
+  // the same kind of reason: the same pass is routine in two zones and a point-blank
+  // chance against in the third.
+  // SG209, 8 November 2026: left whole at 1,088, because passing_and_receiving.md did
+  // not voice the offside definition or the trail-skate book split beside its marker.
+  // ✂️ W295, 12 November 2026: 1,088 -> 824 characters. passing_and_receiving.md now
+  // voices the offside definition (NHL Rule 83) and the trail-skate split (NHL, IIHF and
+  // PWHL onside; USA Hockey 630(a) and Hockey Canada 6.11 offside) in the paragraph right
+  // after the marker, the caption's own chunk. puck_support_and_spacing.md voices both in
+  // the caption's own chunk (the ahead-of-the-puck facts lines and bullets). Cut from the
+  // caption: the offside definition and that book split. Kept: the "trail skate on the
+  // ice, onside under every book" instruction. The own-zone limb is compressed, not cut:
+  // it keeps the slot, the point-blank reason and "behind your net".
   caption:
     'One instance of the three support angles, drawn around a carrier in the neutral zone attacking to ' +
     'the right: one teammate behind the puck, one level with it across the ice, one ahead of it. ' +
     'Behind is the outlet — a low-risk reset, and the option that still exists when the other two are ' +
     'covered. ' +
     'Level changes the side of the ice, which is a normal, high-value play in the neutral and offensive ' +
-    'zones; in your own defensive zone the same pass across the middle crosses the slot, where an ' +
-    'interception is a point-blank chance, and the lateral option there goes behind your own net, ' +
-    'not through the slot. ' +
-    'Ahead gains ground and is the most interceptable, and at the blue ' +
-    'line it needs the receiver to time their entry rather than park in the zone, because both skates ' +
-    'completely over the line before the puck completely crosses it is offside (NHL Rule 83) — ' +
-    'and a raised trail skate is onside under NHL, IIHF and PWHL rules but offside under USA Hockey ' +
-    'Rule 630(a) and Hockey Canada Rule 6.11 — so keep the trail skate down, which is onside under ' +
-    'every book. ' +
+    'zones; in your own defensive zone the lateral option goes behind your own net, not across the ' +
+    'middle through the slot, where an interception is a point-blank chance. ' +
+    'Ahead gains ground and is the most interceptable, and at the blue line it needs the receiver to ' +
+    'time their entry rather than park in the zone, with the trail skate on the ice at or behind the ' +
+    'line, which is onside under every book. ' +
     'A team needs all three at once.',
 
   describe:

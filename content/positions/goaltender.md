@@ -812,7 +812,7 @@ Rule: Knocking your own net off locks your bench too — a goal post accidentall
 
 **On a puck iced at you, decide before it arrives whether you want the whistle — and under the NHL, IIHF and PWHL books, where moving toward the puck waves the icing off, stand still if you do.** Then say which, "leave it" or "I've got it", so your defenceman is not guessing.
 
-Under those three books **you can kill an icing without touching anything.** Skating toward the puck, feigning at it or attempting to play it waves the icing off, and so does any touch. Your defencemen cannot do that; only you can. The IIHF Situation Handbook shows how little it takes: a goalie who extends the stick toward the puck with both feet still in the crease, then pulls it back, has already waved it off (Situation 81.5). The icing rule itself is in [Rules Primer](../foundation/rules_primer.md).
+Under those three books **you can kill an icing without touching anything.** Skating toward the puck, feigning at it or attempting to play it waves the icing off, and so does any touch. Your defencemen cannot do that; only you can. The IIHF Situation Handbook shows how little it takes: a goalie who extends the stick toward the puck with both feet still in the crease, then pulls it back, has already waved it off (Situation 81.5). Not every book has the race: hybrid icing is the NHL's, the IIHF's and the PWHL's (NHL and IIHF 81.1, PWHL 83.1); USA Hockey (outside adult sled hockey) and CARHA play automatic icing with no race; and Hockey Canada runs hybrid only in U18AAA, Junior and, at the Member's option, Senior. The icing rule itself is in [Rules Primer](../foundation/rules_primer.md).
 
 ![](diagram:icing-the-race-and-the-dot)
 
