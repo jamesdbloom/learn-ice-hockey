@@ -259,21 +259,25 @@ Drive them into the boards or goal frame unable to protect themselves and ⚠️
 
 ### The territorial asymmetry — why the safe play isn't
 
-**In short:** Under pressure, a failed carry costs you less than a failed dump, and a shot that creates a delayed offside cannot score for you.
+**In short:** Under pressure, an accidental offside on a carry costs you less than one on a dump, a deliberate offside draws in your own end either way, and a shot that creates a delayed offside cannot score for you.
 
 ```facts
-Rule: A botched carry-in draws only to the neutral-zone spot outside the blue line (NHL Rule 83.6; IIHF Rule 83.6(I), the same)
+Rule: An accidental offside on a carry-in draws outside the blue line (NHL and IIHF 83.6); a deliberate one, in your own end in all six books. Hockey Canada adds knowingly playing the puck or an opponent on a delayed offside, or carrying in past an offside teammate (6.11(d)); the draw never prices a hit
 Rule: A botched dump-in or stretch pass draws back at the spot the shot or pass came from, which can be your own end (NHL Rule 83.6; IIHF Rule 83.6(II), the same)
 Rule: A shot that creates a delayed offside and goes in is disallowed, whether or not you cleared the zone first — NHL and IIHF 83.4, PWHL 85.4, and Hockey Canada Rule 6.11(b) with its Note 1, to the same effect
 Rule: The one way a goal still stands is the defending team putting it in themselves *"without action or contact by the offending team"* — NHL and IIHF 83.4, PWHL 85.4. Hockey Canada is silent; USA Hockey's Casebook (Rule 630, Situation 41) rules the own goal out. Clear and tag up rather than chase
 Rule: Read USA Hockey's Casebook Situation 41 to its end — it bars the goal while the delayed offside is live and on the offending shot, but allows any goal legally scored once you have cleared the zone with no shot away (Rule 630, Situation 41)
 Rule: USA Hockey has no delayed offside below Youth 15-Only, Girls 16U, High School and Adult (Rule 630(d)) — below those classifications the whistle is immediate, so there is no zone to clear and nothing to tag up for. Hockey Canada 6.11(b) sets no such limit
-Key: Under pressure at the line, failing to carry costs you less than failing to dump
+Key: Under pressure at the line, an accidental offside on a carry costs you less than one on a dump
 ```
 
-**Under pressure at the line, failing to carry costs you less than failing to dump.** That runs the same direction as the shot-rate evidence in section 1, and it is worth remembering the next time the safe play looks safe.
+**Under pressure at the line, an accidental offside on a carry costs you less than one on a dump.** That runs the same direction as the shot-rate evidence in section 1, and it is worth remembering the next time the safe play looks safe.
 
-The reason is where the faceoff goes. A botched **carry-in** draws only to the neutral-zone spot outside the blue line. A botched **dump-in or stretch pass** draws back **at the spot the shot or pass came from**, which can be your own end (Rule 83.6). The IIHF gives the same four faceoff locations. [Rules Primer](../foundation/rules_primer.md) sets out the rule in full.
+The reason is where the faceoff goes. An unintentional offside on a **carry-in** draws at the neutral-zone spot outside the blue line. One on a **dump-in or stretch pass** draws back **at the spot the shot or pass came from**, which can be your own end (Rule 83.6). The IIHF gives the same four faceoff locations.
+
+**Go offside on purpose and the draw is in your own end, carry or dump, in all six books** (NHL 83.7; IIHF 83.6(IV); PWHL 85.7; USA Hockey 630(c); Hockey Canada 6.3(d)(iii); CARHA 72(f)). **So on a delayed offside, clear the zone and tag up rather than play the puck or go at the carrier, and never carry it in while you know a teammate is offside.** On purpose includes deliberately touching the puck during a delayed offside to get a whistle (NHL and IIHF 83.7, PWHL 85.7). Under Hockey Canada it includes deliberately playing, or trying to play, the puck or an opponent during a delayed offside when you know you are offside, and carrying the puck in while you know a teammate is offside (6.11(d)). The IIHF's Situation Handbook stops play once an offside attacker is about to make physical contact with the defending carrier. If the linesperson judges you knew you were offside, choosing to check the carrier rather than clear may be called an intentional offside (Situation 83.7), and a stick swung at the carrier's stick that knocks the puck loose is ruled one (Situation 83.24). ⚠️ **That faceoff prices only the offside, never the hit or the swing: a swing at the carrier is slashing in most books even if it misses; a body check is a penalty in itself wherever your league does not allow hitting; and on a carrier turned to retrieve the puck it is checking from behind**, priced under [A hit from behind](#a-hit-from-behind).
+
+Under USA Hockey an intentional offside is one made to get a stoppage, or with no effort or possibility of completing a legal play (630(c) Note). Its Casebook's general test is whether the team has knowingly gone offside (Rule 630, Situation 32), and it applies the rule to carrying the puck in, with no chance of a legal play, while teammates sit deep making no attempt to clear (Situation 28). [Rules Primer](../foundation/rules_primer.md) sets out the rule in full.
 
 **A shot that creates a delayed offside cannot score for you**, even if you clear the zone before it goes in (Rule 83.4; the IIHF word for word). **So do not chase it — clear the zone and tag up.** One goal can still stand under the NHL, the IIHF and the PWHL: the defending team putting it in themselves *"without action or contact by the offending team"*. Any touch or any chase stops play first, so tagging up is the only way to leave that door open. In Britain that exception is yours.
 
@@ -1226,9 +1230,10 @@ document, that is named too.*
    the six rule books? *(§Delayed offside and tagging up — three consequences for
    the entry)*
 
-4. Under pressure at the line, which is cheaper — failing to carry, or failing to
-   dump? Answer in terms of where the faceoff ends up, and say why that points
-   the same way the shot data does. *(§The territorial asymmetry — why the safe
+4. Under pressure at the line, you go offside by accident. Which costs you less —
+   going offside on a carry, or on a dump? Answer in terms of where the faceoff
+   ends up, say where it goes if the offside is deliberate, and say why that
+   points the same way the shot data does. *(§The territorial asymmetry — why the safe
    play isn't)*
 
 5. There is a defenceman in front of you. Should you skate at them? Say what you

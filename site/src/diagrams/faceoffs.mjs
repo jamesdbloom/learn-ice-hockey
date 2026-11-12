@@ -761,8 +761,14 @@ const whereTheDrawGoes = {
     // paragraph (chunk 103). KEPT: the NHL/IIHF dot-choice clause and its "your opponents here" gloss.
     'Outside the blue line you ' +
     'were attacking: an unintentional offside where the puck was carried over. In the ' +
-    'end you are attacking: a goalie freeze, or any other stoppage between the end-zone dots and ' +
-    'the end boards, which the NHL and the IIHF draw at the spot on the side it happened. ' +
+    // W300, 12 November 2026: this said "or ANY other stoppage between the end-zone dots and the
+    // end boards", which drops NHL 76.2's "unless otherwise expressly provided by these rules": an
+    // attacker's high stick (NHL 80.2) or hand pass (NHL 79.3) in its attacking zone draws in the
+    // neutral zone, and an attacker's penalty in its own end. Now limited to stoppages your team did
+    // not cause.
+    'end you are attacking: a goalie freeze, or another stoppage your team did not cause between ' +
+    'the end-zone dots and the end boards, which the NHL and the IIHF draw at the spot on the side ' +
+    'it happened. ' +
     'These four are the common ones, not the whole rule.',
 
   describe:

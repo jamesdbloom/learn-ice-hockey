@@ -788,7 +788,7 @@ Rule: Across the Home Countries the centre is replaced for every violation excep
 Convention: The specific alignments are a coaching choice and vary hugely — ask your coach for yours
 ```
 
-A regulation sheet has **four neutral zone faceoff dots** — two just inside each blue line, **five feet from the line and forty-four feet apart** (NHL Rule 1.9), so each sits about twenty and a half feet from its boards — plus the centre dot. Both teams treat a neutral zone draw as a set play.
+A regulation sheet has **four neutral zone faceoff dots** — two just outside each blue line, in the neutral zone, **five feet from the line and forty-four feet apart** (NHL Rule 1.9), so each sits about twenty and a half feet from its boards — plus the centre dot. Both teams treat a neutral zone draw as a set play.
 
 ![](diagram:faceoff-neutral-zone)
 
