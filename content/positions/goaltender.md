@@ -883,6 +883,8 @@ These are the standard vocabulary. Words vary by team — agree yours in the roo
 
 ![](diagram:breakout-reverse)
 
+Against a forechecker who steers rather than chases, don't call it: they are never past your defenceman, so the reverse fails. Your call tells your defenceman to play it; the partner arriving for the puck still calls for it, because your defenceman cannot see where it is going.
+
 **Puck ownership:**
 
 - **"Leave it"** — I will stop it and leave it behind the net for you. Two syllables, distinguishable from "up" and "over" in a loud rink at speed, which is why it beats one-word alternatives.

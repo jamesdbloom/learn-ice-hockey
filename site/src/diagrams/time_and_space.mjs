@@ -9,9 +9,10 @@
  * second drawing of the same thing is a second place a correction has to reach.
  * Checked, diagram by diagram, before writing anything:
  *
- *   §2, the reverse ............. `breakout-reverse` draws it, including the
- *                                 reverse-versus-rim distinction this section's
- *                                 own parenthesis makes. Referenced, not redrawn.
+ *   §2, the reverse ............. `breakout-reverse` draws it. (Its caption no
+ *                                 longer carries the reverse-versus-rim distinction,
+ *                                 cut 8 Nov 2026; this section's own parenthesis
+ *                                 makes it.) Referenced, not redrawn.
  *   §3, delay and curl-back ..... `entry-delay-curl`.
  *   §3, the net and the boards .. `oz-behind-the-net`, `the-point-and-the-half-wall`.
  *   §4, gap control ............. `rush-gap-and-angle`.

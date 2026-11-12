@@ -452,16 +452,24 @@ const forecheck122 = {
   width: 900,
 
   caption:
-    // LEFT WHOLE 11 November 2026, W289 (1,188 chars). how_to_watch_hockey.md voices none of the
-    // 1-2-2's jobs, shape or coaching choices near the marker (chunks 006-008), and
-    // forechecking_systems.md voices no part of the safety block within one chunk (024-026).
+    // W289 (11 November 2026) left this whole at 1,188 chars: how_to_watch_hockey.md did not voice
+    // the 1-2-2's jobs, shape or coaching choices in chunks 006-008.
+    // ✂️ TRIMMED 12 November 2026, W296: 1,188 -> 1,030 chars. CUT: "It concedes the retrieval and
+    // builds a wall instead" and the F1/F2/F3 jobs sentence; the dog/fox/hawk note was reworded to
+    // name the roles it labels. how_to_watch_hockey.md now voices the concession and all three
+    // jobs in a new paragraph in chunk 008 ("The 1-2-2 is the containment version"), the chunk
+    // after the caption's chunk 007 (the shorter caption now shares chunk 007 with forecheck-212's).
+    // forechecking_systems.md voices the concession in the caption's chunk 025 ("What it's good
+    // at") and the three jobs at a fuller tier in chunk 024, which ends directly before the caption
+    // opens chunk 025 -- the chunk BEFORE, a declared deviation of the W293 kind. KEPT: the shape,
+    // the coaching-choice disclosure, the picture note and the whole safety block, word for word;
+    // forechecking_systems.md voices no part of the safety block in chunks 024-026, and
+    // how_to_watch_hockey.md defers body-checking law to Forechecking Systems (chunk 006).
     // SHORTENED 22 October 2026 (~2,330 chars). Picture, jobs, label note and coaching-choice
     // disclosure kept; both hosts' bodies carry the rest beside the marker.
     'The 1-2-2, drawn against the same carrier as the 2-1-2: one forward deep, two across the ' +
-    'middle, two defencemen high. It concedes the retrieval and builds a wall instead. F1 cuts the ' +
-    'ice in half without chasing; F2 sits up the wall and jumps the outlet F1 has made ' +
-    'predictable; F3 holds the high middle. Dog, fox and hawk are a memory hook, not standard ' +
-    'terms. Which side F1 cuts off, where the weak-side defenceman sits, and the system itself are ' +
+    'middle, two defencemen high. The labels dog, fox and hawk on F1, F2 and F3 are a memory ' +
+    'hook, not standard terms. Which side F1 cuts off, where the weak-side defenceman sits, and the system itself are ' +
     'coaching choices, so ask which your team runs. ' +
     // SAFETY SCOPE, SHORTENED 22 October 2026 (owner: shorter is better). This block is VERBATIM
     // SHARED by forecheck-122 and forecheck-131; edit both together or they drift. It keeps the
@@ -475,7 +483,7 @@ const forecheck122 = {
     // the boards", sources/iihf_rules_2026-27.txt:7601-7602), because the play-the-puck half alone
     // sounds sufficient and F2 is drawn arriving at the wall. It DROPS the USA Hockey 604(a)/(b) and
     // Hockey Canada 7.3 enumeration, which forecheck-212 and forecheck-212-stacked voice in full:
-    // in how_to_watch_hockey.md forecheck-212's caption is the chunk immediately before this one,
+    // in how_to_watch_hockey.md forecheck-212's caption is voiced directly before this one (chunk 007, W296),
     // and in forechecking_systems.md the 2-1-2 section voices it a few chunks before the 1-2-2.
     // The IIHF/NIHL limb is kept because neither host voices it near either diagram. The ", so"
     // in "not allowed at all, so find out" was ruled NOT an inversion (see the comment above
@@ -632,7 +640,7 @@ const forecheck131 = {
     // the boards", sources/iihf_rules_2026-27.txt:7601-7602), because the play-the-puck half alone
     // sounds sufficient and F2 is drawn arriving at the wall. It DROPS the USA Hockey 604(a)/(b) and
     // Hockey Canada 7.3 enumeration, which forecheck-212 and forecheck-212-stacked voice in full:
-    // in how_to_watch_hockey.md forecheck-212's caption is the chunk immediately before this one,
+    // in how_to_watch_hockey.md forecheck-212's caption is voiced directly before this one (chunk 007, W296),
     // and in forechecking_systems.md the 2-1-2 section voices it a few chunks before the 1-2-2.
     // The IIHF/NIHL limb is kept because neither host voices it near either diagram. The ", so"
     // in "not allowed at all, so find out" was ruled NOT an inversion (see the comment above
@@ -1077,15 +1085,21 @@ const forecheckRolesRotate = {
   // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
   // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
   // one voiced unit, and _split_paragraph breaks only at sentence ends.
-  // LEFT WHOLE 11 November 2026, W289 (1,121 chars). Two hosts. rink_map.md (chunk 042) voices
-  // roles by order of arrival but not this rotation, the lock-system alternative or any
-  // body-checking scope near the marker; forechecking_systems.md voices the rotation (chunk 009)
-  // but no checking scope within one chunk. Every limb is unvoiced near the marker in one host.
+  // W289 (11 November 2026) left this whole at 1,121 chars: rink_map.md (chunk 042) did not voice
+  // the rotation, the lock-system alternative or any body-checking scope near the marker.
+  // ✂️ TRIMMED 12 November 2026, W296: 1,121 -> 957 chars. CUT: the rotation sentence ("The
+  // beaten F1 climbs into support as the new F3, the old F2 ... as the new F2"). rink_map.md now
+  // voices it in a new paragraph directly after the marker, in the caption's chunk 042;
+  // forechecking_systems.md voices it in the "First / Second / Third" list directly before the
+  // marker, in the caption's chunk 009. KEPT: the glyph/label key, the 2-1-2 default and
+  // lock-system alternative, the defencemen-do-not-rotate note, and the whole safety unit from
+  // the glyph to the end, word for word -- rink_map.md (chunk 042) and forechecking_systems.md
+  // (chunk 009) voice no body-checking scope beside the marker, and the lock system is voiced in
+  // neither host's caption chunk or the next.
   caption:
     'Drawn the instant after the opponents move the puck defenceman to defenceman. The letter in ' +
-    'each glyph is the role just taken; the label beside it is the role held a second earlier. The ' +
-    'beaten F1 climbs into support as the new F3, the old F2 is nearest the new carrier and becomes ' +
-    'F1, and the old F3 comes down off the high middle as the new F2. The shape is this guide\'s ' +
+    'each glyph is the role just taken; the label beside it is the role held a second earlier. ' +
+    'The shape is this guide\'s ' +
     'default 2-1-2, though a lock system pins one winger to the third job instead; the defencemen ' +
     'hold the offensive blue line and do not rotate. ⚠️ Being the new F1 is not' +
     ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +

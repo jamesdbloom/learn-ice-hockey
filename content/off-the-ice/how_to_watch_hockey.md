@@ -137,6 +137,8 @@ Two of those systems are drawn in [Forechecking Systems](../systems/forechecking
 
 A second tell: **watch what F1 does on arrival.** A straight line at the carrier's body means the team is hunting turnovers. Angling across to steer the carrier to the boards means containment, waiting for F2 to seal.
 
+The 1-2-2 is the containment version: it concedes the retrieval and builds a wall, with F1 cutting the ice in half without chasing, F2 waiting up the wall to jump the outlet pass, and F3 holding the high middle.
+
 ### Which defensive-zone coverage do they play? Watch the winger.
 
 This is the most reliable read in hockey, and it takes about ninety seconds.

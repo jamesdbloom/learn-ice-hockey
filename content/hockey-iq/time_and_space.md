@@ -95,6 +95,8 @@ Two cases catch players out.
 
 ![](diagram:breakout-reverse)
 
+That first case is the reverse, and it depends on a forechecker travelling away from you: against one who steers rather than chases, it fails, because they are never past you. Whoever arrives for the puck must call for it, because you are sending it where you cannot see.
+
 **So read closing speed, not distance.** Look at three things when you scan:
 
 - **Which way are their hips pointed?** A stick can be anywhere, but a player accelerates where the hips face. Gap control is built on the same read.

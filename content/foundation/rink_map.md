@@ -598,6 +598,8 @@ If the centre is usually F1 on a forecheck but a winger gets there first, **the 
 
 ![](diagram:forecheck-roles-rotate)
 
+The jobs change hands mid-shift too. When the opponents move the puck defenceman to defenceman past F1, the forward nearest the new carrier becomes F1, the beaten F1 usually drops into support as the new F3, and the remaining forward takes F2.
+
 **The "third forward high"** names that same F3 job from the other direction: the shorthand for keeping F3 — the third forward to arrive — above the puck. Which body it is changes shift to shift, and how high F3 sits is a coaching choice — see [Forechecking Systems](../systems/forechecking_systems.md), which sets out where the third forward stands under each forecheck.
 
 ### D-partner and defence pairs

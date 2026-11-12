@@ -136,7 +136,7 @@ Risk: A tucked chin straightens the cervical spine, and the injury from that hea
 
 **Key considerations:** Never try to carry through the slot under pressure. A turnover there is a direct scoring chance for the opponent.
 
-**Rim vs. reverse — pick by where the pressure is.** A rim beats a forechecker who is sealing you against the boards, because it goes past them to the next teammate around. A reverse beats one who has over-committed and skated past you, because it goes back into the space they just left. Reading which one you face is a core defenceman skill.
+**Rim vs. reverse — pick by where the pressure is.** A rim beats a forechecker who is sealing you against the boards, because it goes past them to the next teammate around. A reverse beats one who has over-committed and skated past you, because it goes back into the space they just left. The reverse depends on their momentum: against a forechecker who steers rather than chases, it fails, because they are never past you. Whoever arrives for the puck must call for it, because you are sending it where you cannot see. Reading which one you face is a core defenceman skill.
 
 **Make that read while you're still skating back for the puck, not once it's on your stick.** A glance over your shoulder on the way — which side is the forecheck arriving from? — turns rim-or-reverse into a decision already made rather than one you make with a forechecker on you. [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) covers the habit and the research behind it.
 

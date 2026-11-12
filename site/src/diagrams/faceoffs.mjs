@@ -726,7 +726,8 @@ const whereTheDrawGoes = {
     // ✂️ W290, 11 November 2026 (1,069 -> ~1,000): wording only, no limb cut. Both hosts rendered:
     // faceoffs.md chunk 008 and rules_primer.md chunk 103 voice the NHL/IIHF dot choice, but it is kept
     // for the "your opponents here" gloss; neither host voices the shot-or-passed offside limb or the
-    // USA Hockey goalie-freeze limb beside the marker in spoken prose, so both stay.
+    // USA Hockey goalie-freeze limb beside the marker in spoken prose, so both stay. (SUPERSEDED by
+    // W297, below: both hosts now voice both limbs, and both are cut.)
     'Four common stoppages and where each sends the draw — four separate ' +
     'situations, not one play. Your own end is at the left. At centre ice: the start of every ' +
     'period, and after every goal. In your own end: an icing you caused, or a penalty you ' +
@@ -741,6 +742,7 @@ const whereTheDrawGoes = {
     // said "they": it is kept for the reasoning, the sentence itself is gone. KEPT: the USA Hockey
     // last-play / attacker-caused limb, because rules_primer.md voices no 612 anywhere near the marker;
     // and the shot-or-passed offside limb, because rules_primer.md carries it only in a table.
+    // (Both KEPT limbs were cut in W297 once both hosts voiced them; see the ✂️ W297 note below.)
     'under the NHL and the IIHF the attacking team — your opponents here — picks which. ' +
     // ⚠️ THIS SAID "only if YOU tell the referee", in a caption whose own framing is
     // "an icing you caused, or a penalty you took". HC 6.4(b) gives the choice to the
@@ -750,13 +752,17 @@ const whereTheDrawGoes = {
     // faceoffs.md IN THIS SAME ROUND, and left standing here. The clause immediately above
     // already said "the attacking team chooses" for the NHL and IIHF, so the caption also
     // contradicted itself.
+    // ✂️ W297, 12 November 2026 (1,021 -> 739): two limbs cut, after both hosts were made to voice
+    // them in the chunk after the caption's. CUT (1) the shot-or-passed offside limb, now voiced in
+    // faceoffs.md's facts block (the "Never: Go offside by firing the puck" line, chunk 008, caption
+    // at 007) and in rules_primer.md's paragraph after the marker (chunk 103, the caption's own chunk,
+    // with the table row "Offside — passed or shot in" at 104). CUT (2) the USA Hockey 612(b)/(c)
+    // limb, now voiced in a faceoffs.md facts Rule line (chunk 008) and in the same rules_primer.md
+    // paragraph (chunk 103). KEPT: the NHL/IIHF dot-choice clause and its "your opponents here" gloss.
     'Outside the blue line you ' +
-    'were attacking: an offside where the puck was carried over; a puck SHOT or PASSED over the ' +
-    'line offside goes back instead to the zone it came from, which can be your own end. In the ' +
+    'were attacking: an offside where the puck was carried over. In the ' +
     'end you are attacking: a goalie freeze, or any other stoppage between the end-zone dots and ' +
     'the end boards, which the NHL and the IIHF draw at the spot on the side it happened. ' +
-    'USA Hockey differs: it takes the nearest spot only on its own last-play faceoff, ' +
-    'and sends a stoppage you, the attackers, caused in that zone out to the neutral zone. ' +
     'These four are the common ones, not the whole rule.',
 
   describe:
@@ -883,9 +889,14 @@ const strongSideDot = {
     // book-by-book choice of dot, because the only host voices nothing book by book near the marker
     // (:394 says only that the rules letting you choose are "worth more than they look").
     // The picture disclosure moved to the end so "That difference" keeps its antecedent.
+    // W297, 12 November 2026 (905 -> 883): "the team that did not cause the stoppage" -> "the attacking
+    // team", the words NHL and IIHF 81.2 and 63.8 use ("the attacking team will have the choice of which
+    // end zone dot"), and the words `faceoff-where-the-draw-goes` and faceoffs.md's body use. The old
+    // paraphrase named a test neither book writes; in the icing, power-play and 63.8 cases the two
+    // describe the same team, so this is a consistency fix, not a reversal.
     'is barely better than a loss. That difference is what makes a choice of dot ' +
-    'worth more than it looks — and only some books give one: the NHL and the IIHF to the team that ' +
-    'did not cause the stoppage, USA Hockey none at all, and Hockey Canada only after an icing or a ' +
+    'worth more than it looks — and only some books give one: the NHL and the IIHF to the attacking ' +
+    'team, USA Hockey none at all, and Hockey Canada only after an icing or a ' +
     'time penalty, only in Junior and Senior divisions, and only to the attacking non-offending team,' +
     ' which loses it unless it tells the referee the dot it wants before the line change procedure ' +
     'starts (Rule 6.4(b)). No handedness is drawn here and none should be read into it.',

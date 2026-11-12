@@ -156,7 +156,9 @@ Rule: Hockey Canada 6.4(b) gives the choice of end-zone dot to the attacking (no
 Rule: A post-whistle scrum that pulls players inside the circle's outer edge moves the draw to the neutral zone — the attacking team's point men and bench, and any non-offending player, under NHL and IIHF 76.2; any attacking player under USA Hockey 612(d), Hockey Canada 6.3(d)(vi)
 Rule: A puck out of play draws at the nearest spot in the zone it was shot from (NHL 85.1); a puck shot into the players' bench draws no penalty, but the IIHF Handbook exempts only one shot straight in, not one clearing the glass into it (63.2(III) NOTE; Situation 63.24)
 Never: Aim the puck out of play off the draw — a deliberate shot out is a delay penalty in every book; the NHL, IIHF and PWHL excuse a puck straight off a draw but never say a deliberate one
-Never: Go offside by firing the puck over the blue line — carrying it over and being whistled costs you far less
+Never: Go offside by firing the puck over the blue line — the draw can go back to the zone it came from, even your own end; in most books an unintentional carried-in offside draws just outside the line
+Rule: Under USA Hockey most stoppages you cause in your attacking zone draw at the nearest neutral-zone spot (612(c)), or in that zone if the puck is shot or deflected out by accident (631(d)); a high stick (621(d)) or a penalty that puts you shorthanded (612(b)) draws in your own end
+Rule: Under USA Hockey a low stoppage that calls for a last-play faceoff draws at the nearest end-zone spot (612(b))
 ```
 
 **To centre ice:**

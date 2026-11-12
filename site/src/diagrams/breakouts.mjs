@@ -362,36 +362,45 @@ const reverse = {
   // defender.md's facts block carry the rim-versus-reverse read too. What NO host carries is
   // the pair of things the DRAWING cannot say — that the notation has no banked-puck symbol,
   // and that a still frame cannot draw the momentum the whole read depends on — so those
-  // stay, and are now labelled as such. The rim contrast stays because it is the one pair
-  // readers reliably confuse, and the counter stays because a picture is the most
-  // absolute-looking thing on a page.
+  // stay, and are now labelled as such. (The rim contrast and the containing-forechecker
+  // counter were later cut, 8 November and W298, with the host chunks that voice them listed in
+  // the comments inside the caption.)
   caption:
     'The reverse, drawn in your own defensive zone at the left of the picture. D1 was working up the ' +
     'right wall; the forechecker has over-committed and skated past them, so D1 sends the puck back ' +
-    'down the boards behind them, against the flow, into the space that forechecker has just left — ' +
-    'where D2 is arriving, and calling for it, because D1 is putting the puck somewhere they cannot ' +
-    'see. The play depends entirely on the forechecker’s momentum, so read the opponent above D1 as a' +
-    ' player already past them and unable to stop. The puck is a hard backhand banked off the wall, ' +
-    'drawn simply as the pass it is because the drill notation has no symbol for a banked puck. ' +
+    'down the boards behind them, against the flow, into the space that forechecker has just left, ' +
+    'where D2 is arriving. Read the opponent above D1 as a player already past them and unable to ' +
+    'stop. The puck is a hard backhand banked off the wall, drawn simply as the pass it is because ' +
+    'the drill notation has no symbol for a banked puck. ' +
     // SHORTENED 8 November 2026 (1,245 chars). Cut: "Keep it straight from the rim: a rim goes
-    // onward ..., a reverse goes back against it" -- every one of the four hosts voices the
-    // rim/reverse distinction beside the marker: breakouts.md facts :364 and :377,
-    // time_and_space.md:92, goaltender.md:864, defender.md:134. Nothing else could go: the
-    // containing-forechecker counter is voiced only in breakouts.md, and goaltender.md voices no
-    // wall limb at all, so the short limb below stays.
-
-    // ⚠️ PRE-EXISTING NEGATION INVERSION, found while cutting and fixed rather than carried.
-    // This read "A containing forechecker who steers rather than chases is never past you to
-    // begin with, and beats it." The main-clause negation sits immediately before ", and",
-    // so it carries onto the tail and a listener hears that the containing forechecker does
-    // NOT beat the reverse — which deletes the counter this sentence exists to give. Stating
-    // the limit first and ending on the negation makes it un-invertible.
-    'The reverse beats one kind of forecheck only. A containing forechecker steers rather than' +
-    ' chases, so they are never past you to begin with. ' +
-    // SAFETY LAST, after the negation sentence above deliberately: the renderer ambers from the
-    // first ⚠️ glyph to the end of the caption with no closing delimiter, so a limb placed before
-    // that sentence would amber it. The limb is its own sentence and does not re-open the
-    // negation the comment above this caption exists to keep un-invertible.
+    // onward ..., a reverse goes back against it". Measured then (line numbers as of 8 Nov) in
+    // breakouts.md facts :364 and :377, time_and_space.md:92, goaltender.md:864, defender.md:134.
+    //
+    // ✂️ SHORTENED 12 November 2026, W298 (1,101 -> 822 chars), after defender.md,
+    // goaltender.md and time_and_space.md were each given a sentence voicing the cut limbs.
+    // Cut, with where each is voiced (md_to_speech chunks, rendered 12 Nov 2026 after the host
+    // edits and a diagram build):
+    //   - D2 "calling for it, because D1 is putting the puck somewhere they cannot see";
+    //   - "The play depends entirely on the forechecker's momentum" (the picture-reading
+    //     instruction "Read the opponent above D1 ... unable to stop" stays: a still frame
+    //     cannot draw momentum);
+    //   - the counter, "The reverse beats one kind of forecheck only. A containing forechecker
+    //     steers rather than chases, so they are never past you to begin with."
+    //   breakouts.md, caption chunk 023: all three in its facts block in chunk 023 (Read, Technique,
+    //     Countered by), the counter again in the body's "How it's defeated" in chunk 024.
+    //   defender.md, caption chunk 007: all three in the "Rim vs. reverse" paragraph, chunk 008.
+    //   goaltender.md, caption chunk 058: all three in the paragraph after the marker, chunk 058.
+    //   time_and_space.md, caption chunk 005: all three in the paragraph after the marker, chunk 005
+    //     (momentum as "a forechecker travelling away from you").
+    // Kept: the picture, the picture-reading line, the banked-puck notation disclosure (a
+    // drawing limb; the four hosts' prose was not checked for it because it describes the
+    // picture, not the play) and the ⚠️ wall sentence word for word.
+    //
+    // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with no
+    // closing delimiter, so a limb placed after the glyph would be ambered with it. (The
+    // containing-forechecker negation that once sat before it was cut in W298; defender.md
+    // (chunk 008), goaltender.md (058) and time_and_space.md (005) voice it with its reason —
+    // the forechecker is never past your defenceman.)
     //
     // WHY THIS CAPTION CARRIES THE LIMB, AND WHY ONLY THE SHORT FORM. It is spoken into four
     // documents. Both players are in wall geometry: D1 works up the wall with a forechecker just
