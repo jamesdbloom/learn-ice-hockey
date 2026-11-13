@@ -110,8 +110,8 @@ t allow "$(printf 'git commit -F - <<EOF\ndocument that git add -A is blocked\nE
 t allow 'git commit --only -m "gate the corpus" -- CLAUDE.md project/review_process.md'
 
 echo
-echo "── ask ──"
-t ASK 'git push origin main'
+echo "── plain push (no prompt since 13 Nov 2026; force-push still blocked above) ──"
+t allow 'git push origin main'
 
 echo
 echo "$n cases; $fail failure(s)"

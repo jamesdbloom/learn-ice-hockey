@@ -69,7 +69,6 @@
       "Bash(/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/node scripts/check-arrivals.mjs:*)"
     ],
     "ask": [
-      "Bash(git push:*)",
       "Bash(gh pr create:*)",
       "Bash(gh release:*)",
       "Bash(terraform apply:*)"

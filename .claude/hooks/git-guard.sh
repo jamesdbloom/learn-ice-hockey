@@ -371,12 +371,10 @@ Fix these, then commit. Do not use --no-verify."
 fi
 
 # --------------------------------------------------------------- git push
-if seg '^git[[:space:]]+push([[:space:]]|$)'; then
-  ask 'This pushes to a remote. Pushing to main deploys the site to production
-(.github/workflows/deploy.yml).
-
-Confirm the change has been through the review gate in
-project/review_process.md before allowing this.'
-fi
+# A plain push no longer prompts (owner, 13 Nov 2026): the agent commits and
+# pushes reviewed waves itself. Pushing main still deploys to production
+# (.github/workflows/deploy.yml), so the review gate in
+# project/review_process.md must clear before any commit. Force-pushes and
+# --no-verify are still blocked above.
 
 exit 0
