@@ -117,7 +117,7 @@ Read: Rim to beat a forechecker sealing you against the boards; reverse to beat 
 Never: Carry through the slot under pressure — a turnover in the highest-danger area is a direct scoring chance against
 Never: Turn your back to anyone coming at you — USA Hockey: "Even a light hit from behind could inflict a severe head or neck injury". Skates parallel, forearm, hip to the wall, head up, chin off your chest
 Never: Duck when the check comes, or pin the puck on the boards or net for a whistle — a delay-of-game penalty. With no pass, chip, rim or icing, shield it and take the hit until help comes
-Risk: A tucked chin straightens the cervical spine, and the injury from that head-down, head-first collision with the boards or a goal post can occur at walking speed
+Risk: A tucked chin straightens the cervical spine, and the injury from a head-down, head-first collision with the boards or a goal post can occur at walking speed
 ```
 
 **Where to be:** Protect yourself along the boards or behind the net.
@@ -433,7 +433,7 @@ Rule: Riding them into the wall is barred outright in a great many classificatio
 Rule: Riding them into the wall with your body is a different act, and defenceless is not the whole test: USA Hockey 603's base sentence asks no such question, and the NHL, IIHF, PWHL and Hockey Canada each name unnecessary contact in an icing or offside race as boarding
 Rule: Never ride them into the boards — no book caps boarding at a minor; the onus is the checker's (CARHA 49(a): avert contact); USA Hockey's floor is a minor plus a misconduct (603(a)), reckless, a mandatory major and game misconduct: plan on a match and a likely multi-game suspension (603(b), 602(a))
 Rule: Never hit a turned back at the wall — pull up and play the puck. No book prices checking from behind at a minor alone: it ejects in NHL, PWHL, CARHA and Hockey Canada's 7.5, in USA Hockey if forceful at the boards, head first into boards or net, or reckless (608(b); Casebook 608); IIHF: plan on it
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included. Hockey Canada: a hit to the head is a match if they can't protect themselves or it's meant to injure (7.6(c), 7.7(c))
 Rule: A hit from behind into the boards or goal frame on a player who cannot protect themselves is a mandatory match in CARHA and Hockey Canada; in USA Hockey plan on a match and a likely multi-game ban if reckless (602(a)), mandatory with excessive force on a defenceless player (608(c))
 Technique: Stick in the passing lane, on the ice, out front — it takes the pass away without committing your body; and pivot late, because once you turn to skate forwards you have given up your ability to react
 ```
