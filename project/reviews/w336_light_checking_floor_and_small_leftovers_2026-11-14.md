@@ -89,3 +89,15 @@ These ran after a full `npm run build` (absolute binary, exit 0) that started af
 - **Other rules.** Whether USA Hockey 603 (boarding) belongs beside 608 on the penalty kill.
 - **Other books.** Whether other books have a light-contact carve-out like Casebook 609 Situation 2. Hockey Canada 7.5 Interpretation 3 (marginal contact) was not read.
 - **Other KTs.** Whether any of the seven KTs shortened in W335 voices USA Hockey's floor and then skips the 608(b) ejection, the shape the KT8 review found. The reviewer flagged this; it is in the plan.
+
+## After commit 575b7604
+The coordinator read the seven Key Takeaways W335 shortened, testing the lead in the last bullet above:
+- switching_positions KT8;
+- center KT6;
+- language_and_glossary KT12;
+- risk_management KT11;
+- winger KT10;
+- offensive_zone_play KT8;
+- zone_entries KT4.
+
+None voices USA Hockey's minor-plus-misconduct floor on its own. Each leaves USA Hockey under "in every book it can" or "under USA Hockey it can", and gives the head and reckless tiers. The shape found in special_teams KT8 (the floor stated, then only the reckless match) is not present, and the lead is closed. winger KT10 now carries the Hockey Canada on-head tier ("plan on being ejected if it reaches their head"), which closes the W314–W316 plan item about it. Plan only; no content changed.
