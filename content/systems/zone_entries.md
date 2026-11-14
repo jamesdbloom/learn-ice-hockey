@@ -239,6 +239,7 @@ Rule: USA Hockey 630(d) does whistle an attacker who "continues to apply pressur
 Rule: Hitting a defenceman turned to retrieve is checking from behind: it ejects under the NHL, PWHL, CARHA and Hockey Canada (on the head, plan on it; a match if defenceless); IIHF, plan on it — into boards or goal frame unable to protect themselves, a mandatory match (Hockey Canada 7.5(c), CARHA 53(b))
 Rule: Under USA Hockey a hit from behind is at least a minor and misconduct (608(a)); one forceful on a player along the boards or sending them head first into boards or goal frame is a major and game misconduct or a match (Casebook 608 Sit. 1); reckless, plan on a match, likely multi-game ban (602(a))
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
+Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
 Action: Retreat to the line, tag up, come again
 ```
@@ -791,7 +792,7 @@ Read: The retrieval is not the save — a goalie covering a save out in front is
 Rule: Chasing their goalie is no licence to hit them — six books say they are not "fair game" outside the crease, or USA Hockey's privileged area (NHL, IIHF, PWHL 42.1, USA Hockey 607(d), Hockey Canada 8.5, CARHA 52(b))
 Rule: A charge on a goalie you are chasing can end your game — a major and game misconduct, automatic under Hockey Canada 8.5(b) wherever they are, and under CARHA 52(b) in the crease or if it injures
 Rule: Pull up on a goalie turned to the wall for a rimmed puck: if you drive them into the boards or net unable to protect themselves, a match is mandatory (Hockey Canada 7.5(c), CARHA 53(b)), and under USA Hockey 608(c) if reckless with excessive force on a defenceless goalie
-Rule: Under USA Hockey a hit from behind on a goalie turned to the wall is at least a minor plus a misconduct (608(a)); forceful, or sending them head first, it ejects (608, Casebook Situation 1); reckless, plan on a match and a likely multi-game ban (602(a))
+Rule: Under USA Hockey a hit from behind on a goalie turned to the wall is at least a minor plus a misconduct (608(a)); forceful, sending them head first, or careless contact with the head, it ejects (608, Casebook Situation 1; 620(b)); reckless, plan on a match and a likely multi-game ban (602(a))
 ```
 
 **Where the trapezoid applies, dump to the corners rather than straight behind the net.** The goalie cannot play it out there, so your chaser meets a defenceman rather than a goalie setting the puck up for one. A puck that dies straight behind the net is a puck the goalie can legally stop and set for a defenceman, which is exactly the help you were trying to deny them.
@@ -844,6 +845,7 @@ Never: Arrive on the player instead of the puck, or hit anyone who cannot see yo
 Rule: Arriving through a turned retriever is checking from behind: it ejects under the NHL, PWHL, CARHA and Hockey Canada (on the head, plan on it; a match if defenceless); IIHF, plan on it — driving a defenceless player into boards or goal frame is a mandatory match (Hockey Canada 7.5(c), CARHA 53(b))
 Rule: Under USA Hockey a hit from behind is at least a minor and misconduct (608(a)); one forceful on a retriever along the boards or sending them head first into boards or goal frame is a major and game misconduct or a match (Casebook 608 Sit. 1); reckless, plan on a match, likely multi-game ban (602(a))
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
+Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Key: The measure of a good chase is whether the retriever's only remaining option was one you had covered
 ```
 
