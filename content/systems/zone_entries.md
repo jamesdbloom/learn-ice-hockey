@@ -791,7 +791,7 @@ Rule: Hockey Canada's Interpretation 3 to Rule 10.1(a), clause v, makes freezing
 Read: The retrieval is not the save — a goalie covering a save out in front is a separate question (USA Hockey's Casebook excuses it under pressure; Hockey Canada's clauses conflict); see Goaltender
 Rule: Chasing their goalie is no licence to hit them — six books say they are not "fair game" outside the crease, or USA Hockey's privileged area (NHL, IIHF, PWHL 42.1, USA Hockey 607(d), Hockey Canada 8.5, CARHA 52(b))
 Rule: A charge on a goalie you are chasing can end your game — a major and game misconduct, automatic under Hockey Canada 8.5(b) wherever they are, and under CARHA 52(b) in the crease or if it injures
-Rule: Pull up on a goalie turned to the wall for a rimmed puck: if you drive them into the boards or net unable to protect themselves, a match is mandatory (Hockey Canada 7.5(c), CARHA 53(b)), and under USA Hockey 608(c) if reckless with excessive force on a defenceless goalie
+Rule: Pull up on a goalie turned to the wall for a rimmed puck: a match is mandatory if you drive them into the boards or net unable to protect themselves (Hockey Canada 7.5(c), CARHA 53(b)); USA Hockey 608(c) must give one, boards or not, for reckless excessive force on a vulnerable or defenceless goalie
 Rule: Under USA Hockey a hit from behind on a goalie turned to the wall is at least a minor plus a misconduct (608(a)); forceful, sending them head first, or careless contact with the head, it ejects (608, Casebook Situation 1; 620(b)); reckless, plan on a match and a likely multi-game ban (602(a))
 ```
 
