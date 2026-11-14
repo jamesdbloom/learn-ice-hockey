@@ -1048,7 +1048,7 @@ If your blade is not touching the puck or their blade, you are probably committi
 
 ### A puck in your own crease
 
-**Knock it down and play it with your stick — the catch is free, holding it is not.** ⚠️ **Cover a puck that is in your own crease and it is a penalty shot in every book, and with your net empty, in most books, an awarded goal.**
+**Knock it down and play it with your stick — the catch is free, holding it is not.** ⚠️ **If you cover a puck that is in your own crease, it is a penalty shot in every book, and with your net empty, in most books, an awarded goal.**
 
 ```facts
 Rule: Five books print the permission to catch a puck in the air and drop it at once — NHL and IIHF 67.2, PWHL 69.2, Hockey Canada 10.2(a)(iii) and CARHA 61(a), the last two only "without gaining or attempting to gain" an advantage; USA Hockey's is in its Casebook (618 Situation 1, 614 Situation 3)
