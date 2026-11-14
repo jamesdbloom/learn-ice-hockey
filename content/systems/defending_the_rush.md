@@ -314,7 +314,7 @@ The standard assignment, and the one assumed throughout this document:
 Never: Chase from behind their shoulder — that is jogging, and you cannot defend anything from behind
 Action: Take a route that puts you inside them, between them and your net, even if it is slightly longer
 Position: Arrive at their inside hip, not their back pocket, so your stick reaches the passing lane
-Action: Take the ice, not the body — get ahead of your man and hold your lane; veering into a man off the puck can be called interference anywhere, and where checking is barred an illegal check too
+Action: Take the ice, not the body — get ahead of your man and hold your lane; veering into an opponent off the puck can be called interference anywhere, and where checking is barred an illegal check too
 Rule: Never finish the chase into their back, puck or not — plan on it ending your game: no minor in the NHL, PWHL or IIHF (43.2), a game misconduct even at the floor in Hockey Canada 7.5(a) and CARHA 53(a); under USA Hockey, if reckless or meant to injure, a match and likely multi-game ban (602(a))
 Rule: A hit from behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c) (on the head 7.6(c)/7.7(c)) and CARHA 53(b) (goal net); a hit meant to injure is a match in every book here but the IIHF
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
@@ -329,7 +329,7 @@ Risk: Reaching around their body from behind is a hook or a trip, and near your 
 Chasing an attacker from behind their shoulder is not backchecking — it is jogging. You cannot defend anything from behind.
 
 - **Take a route that puts you inside them**, between them and your net, even if that route is slightly longer.
-- **Arrive at their inside hip**, not their back pocket, and **take the ice, not the body** — get to the spot ahead of them and hold the lane you picked rather than veering into them. From there you are goal side and your stick reaches the passing lane — ⚠️ **and the lane is what the stick is for.** Laid across a man, puck or no puck, it is a restraining foul.
+- **Arrive at their inside hip**, not their back pocket, and **take the ice, not the body** — get to the spot ahead of them and hold the lane you picked rather than veering into them. From there you are goal side and your stick reaches the passing lane — ⚠️ **and the lane is what the stick is for.** Laid across an opponent, puck or no puck, it is a restraining foul.
 - **And never let the route end in their back — take the ice, take the puck, or angle them off it.** ⚠️ **Checking from behind is its own rule in all six books, and none waits for the opponent to have the puck** — and a backchecker arrives from behind by definition. **Swinging wide to hit them from the side is no way round it either.**
 - **If you are genuinely beaten and can only chase**, chase the *stick*, not the body: get your blade under theirs or on the puck and never around their body, because reaching around them from behind is a hook or a trip, and near your own net that gets expensive (see the breakaway section below).
 
@@ -357,14 +357,14 @@ If a defenceman is already engaged with the carrier and playing a good gap, spri
 ```facts
 Never: Decide mid-rush to sprint in and help a defenceman who is already engaged with the carrier and playing a good gap
 Risk: Two defenders on one attacker, and your actual assignment left unmarked
-Action: Skate past the puck battle to the unmarked man — your job is the player nobody has
+Action: Skate past the puck battle to the unmarked attacker — your job is the player nobody has
 Mindset: Trusting your defenceman to win their own 1-on-1 is what turns a 3-on-2 into three 1-on-1s
 Options: Some teams run the opposite by design — the first forward back pressures the carrier and the defenceman holds inside instead
 Never: Turn that pressure into a hit from behind — where pressuring the carrier is your system it is your feet and your stick, and nothing else
-Key: Under either system somebody has the carrier and somebody has the unmarked man, and it is agreed before the rush rather than during it
+Key: Under either system somebody has the carrier and somebody has the unmarked attacker, and it is agreed before the rush rather than during it
 ```
 
-**Your job as a backchecker is the player nobody has.** Skate past the puck battle to the unmarked man. Trusting your defenceman to win their own 1-on-1 is a skill, and it is what turns a 3-on-2 into three 1-on-1s.
+**Your job as a backchecker is the player nobody has.** Skate past the puck battle to the unmarked attacker. Trusting your defenceman to win their own 1-on-1 is a skill, and it is what turns a 3-on-2 into three 1-on-1s.
 
 > **This is a coaching choice, not a law — and the choice is about *who decides*.** The instruction above belongs to the family of systems where the backcheckers take lanes and men, and the defence takes the puck. **Other teams coach the reverse on purpose:** the first forward back **pressures the puck carrier** all the way in, and the defenceman adjusts to hold inside position and support rather than engaging. That is a legitimate system with its own logic — relentless pressure on the puck, and a defenceman who is never beaten wide because they never have to commit. **What it never means is finishing into the back of a player skating at their own end boards — see the subsection below.**
 >
@@ -536,7 +536,8 @@ Action: Ask the coach who asks you to slide exactly how they want you to go down
 Rule: In British women's hockey the IIHF's 57.3 major ejects you as well, at every age and adult included — In-House Rule 101 gives any major an additional game misconduct "in all cases" and states no age scope of its own
 Risk: A late or wild slide is the one that trips somebody — but the timing is not the whole of the exposure
 Rule: In USA Hockey, leaving your feet and sliding someone down is tripping "regardless of who gains possession of the puck" — except knees dropped to block a shot (Casebook 639, Sit. 4); a reckless one, a mandatory major and game misconduct (639(b)) — plan on a match and a likely multi-game ban (602(a))
-Rule: Never finish a low hit into the back — it is checking from behind, not clipping: IIHF 43.1 "in any manner", no minor (43.2); Hockey Canada 7.5(a), CARHA 53(a) game misconduct at the floor; USA Hockey: reckless or meant to injure, a match, likely multi-game ban (602(a)). NHL, PWHL: vaguer, no laxer
+Rule: Never finish a low hit into the back — it is checking from behind, not clipping: IIHF 43.1 "in any manner", no minor (43.2); Hockey Canada 7.5(a), CARHA 53(a) game misconduct at the floor; NHL, PWHL: vaguer, no laxer
+Rule: USA Hockey: a hit from behind is at least a minor + misconduct (608(a)); forceful at boards, head first into boards or net, or careless head or neck contact, at least a major + game misconduct (Casebook 608 Sit. 1; 608(b), 620(b)); reckless or meant to injure, a match, likely multi-game ban (602(a))
 Action: Ask which of the two your team plays, and settle it with your goalie before the game rather than during it
 ```
 
@@ -577,7 +578,7 @@ Convention: The default assumed here is "two wide, middle to the backchecker" �
 Never: Chase the puck carrier under the two-wide default — a wide carrier belongs to the D in that lane, a middle carrier to the backchecker
 Options: Under the strong-side system the strong-side D takes the carrier instead, so ask which of the two you play
 Options: The alternative is strong-side D on the puck as a 1-on-1, weak-side D splitting the middle and the far attacker
-Read: If your backchecker is genuinely not coming, squeeze the middle and concede the far wide man — but look before you assume it
+Read: If your backchecker is genuinely not coming, squeeze the middle and concede the far wide attacker — but look before you assume it
 Action: Retreat together at the same speed, holding a flat line with the middle sealed between you
 Never: Back all the way to the goal line — collapsing into your crease concedes the whole slot
 Key: Ask your coach which version you play; two defencemen playing different ones on the same rush is worse than either
@@ -593,7 +594,7 @@ Three attackers, two defenders. Chaotic-looking, and the way you take the chaos 
 
 - **Each defenceman takes an outside attacker.** One D on each wide lane.
 - **Nobody chases the puck carrier — under this default.** If the carrier is in the middle, they belong to the backchecker; if the carrier is wide, they belong to the defenceman in that lane and the other D holds the far attacker. Under the strong-side alternative set out below, the strong-side defenceman does take the carrier wherever they are, which is exactly why you need to know which one you are playing.
-- **The middle belongs to the backchecking centre**, arriving from behind. This is exactly the middle-lane assignment above. If your backchecker is genuinely not coming, the defenceman on the puck side has to squeeze the middle and concede the far wide man — but do not assume that until you have looked.
+- **The middle belongs to the backchecking centre**, arriving from behind. This is exactly the middle-lane assignment above. If your backchecker is genuinely not coming, the defenceman on the puck side has to squeeze the middle and concede the far wide attacker — but do not assume that until you have looked.
 
 > **The realistic alternative — "strong side takes the puck, weak side splits."** Some teams do not wait on the backchecker at all. The **strong-side defenceman takes the puck carrier** wherever they are, playing it as a 1-on-1; the **weak-side defenceman drops off and splits the middle and the far attacker**, sitting in the passing lane between them exactly as you would on a 2-on-1. Under this version the backchecker's job becomes the *third* attacker rather than the middle specifically.
 >
@@ -866,7 +867,7 @@ Key: A rush is not over when the shot is saved; it is over when everybody has a 
 1. **Recognise the moment it becomes a set situation.** The trigger is the attack losing its forward momentum: a dump-in retrieved in the corner, a shot stopped and frozen or rebounded to the wall, a pass back to their point, or the puck simply cycling below the goal line.
 2. **Locate the net front before anything else.** The first thing to check after a rush dies is whether anybody is standing unmarked at your goalmouth, because during a rush nobody was assigned to them. This is the weak-side defenceman's job in the default system.
 3. **Switch from lanes to assignments.** Rush defence is lane-based and situational. Defensive-zone coverage is structural. Everybody needs to move from "who is in my lane" to "who is my man / what is my area" in about one second.
-4. **Backcheckers take up their zone roles, not the nearest puck.** In the standard **low zone collapse** with wingers high on the points, a backchecking winger who followed a man into the corner has to release them and get back to the point. Under **man-on-man** they stay with them. **Those two are not the only coverages, so find out which your team plays** — see [Defensive Zone Coverage](defensive_zone_coverage.md), which sets out the others.
+4. **Backcheckers take up their zone roles, not the nearest puck.** In the standard **low zone collapse** with wingers high on the points, a backchecking winger who followed an opponent into the corner has to release them and get back to the point. Under **man-on-man** they stay with them. **Those two are not the only coverages, so find out which your team plays** — see [Defensive Zone Coverage](defensive_zone_coverage.md), which sets out the others.
 5. **Talk through the handover.** "I've got the corner," "you take the point," "net front is mine." The rush created temporary assignments and every one of them needs to be explicitly cancelled or confirmed.
 6. **Then look to exit.** Once the coverage is set, the job becomes the breakout — see [Breakouts](breakouts.md).
 
@@ -928,11 +929,11 @@ Under USA Hockey ⚠️ **the major and game misconduct are mandatory for a reck
 
 **Take the ice, not the body — body position on a player without the puck is not a licence for the contact that follows.** ⚠️ **Under USA Hockey a hit on a player without the puck is never only a two-minute risk, and CARHA's interference rule can reach a major and game misconduct.**
 
-The NHL, IIHF and PWHL grant body position on a man without the puck **on three conditions**: your stick *"is not utilized"*, your free hand *"is not used"*, and you do not use it *"to deliver an otherwise illegal check."* **The third is the one that reaches a backchecker:** ⚠️ **body position is not a licence for the contact that follows.** A stick used to impede without body position is hooking, not interference (NHL and IIHF 56.1). **The PWHL narrows it further:** Rule 52.1 calls it an *"illegal hit"* *"when a player leaves their skating lane to make contact"*, and prices ⚠️ ***"[a]ny move by a player to step or glide into an opposing player"* at *"at least a Minor Penalty (2’)"*** — and a hit on a trailer carries no intention of playing the puck.
+The NHL, IIHF and PWHL grant body position on an opponent without the puck **on three conditions**: your stick *"is not utilized"*, your free hand *"is not used"*, and you do not use it *"to deliver an otherwise illegal check."* **The third is the one that reaches a backchecker:** ⚠️ **body position is not a licence for the contact that follows.** A stick used to impede without body position is hooking, not interference (NHL and IIHF 56.1). **The PWHL narrows it further:** Rule 52.1 calls it an *"illegal hit"* *"when a player leaves their skating lane to make contact"*, and prices ⚠️ ***"[a]ny move by a player to step or glide into an opposing player"* at *"at least a Minor Penalty (2’)"*** — and a hit on a trailer carries no intention of playing the puck.
 
 **Under USA Hockey, interference prices only the route, at two minutes; the hit is priced higher.** **625(a)(4)** is a minor for a defender who *"changes their skating lane or foot speed in an effort to play the body of an opponent who is no longer in control of the puck"*, and its Note reaches a player who never had it. The hit itself is roughing. **640(d)** is a minor for a body check *"with no effort to gain possession of the puck"* with the stick blade above the knees, and **640(b)** (outside Adult Male) a minor for *"an avoidable body check to an opponent who is no longer in control of the puck"*. **640(g)** ⚠️ **is a mandatory major plus game misconduct** where it *"recklessly endangers"* — plan on a match and a likely multi-game suspension (602(a)), though 640(h) says only that a match *"may also be assessed"*. Where checking is barred, **604(c) to (e)** run from a minor to a match and a likely multi-game suspension. **So under USA Hockey a hit on a player without the puck is never only a two-minute risk.**
 
-**Hockey Canada and CARHA write no stick proviso, and are not narrower for it.** **Hockey Canada 8.3** makes a late hit its own interference limb — one outside *"a maximum distance of an arm and stick length"* of the carrier *"at the instant the puck has been released"* — and 8.3(a)'s interference reaches a trailer who never had it. **CARHA 66(a)(1)** prices impeding a man not in possession at a minor *"or, at the discretion of the Referee, a Major penalty and a Game Misconduct penalty"* — **the backcheck that can end your game** in the adult rec book. **That does not make the carrier fair game: take the ice, never hold the player.** Both books define holding as impeding an opponent *"whether or not"* they have the puck — under Hockey Canada a minor, and a major and game misconduct if it injures (8.1); under CARHA a minor or a major and game misconduct, the major mandatory if it injures (63, 30(a)).
+**Hockey Canada and CARHA write no stick proviso, and are not narrower for it.** **Hockey Canada 8.3** makes a late hit its own interference limb — one outside *"a maximum distance of an arm and stick length"* of the carrier *"at the instant the puck has been released"* — and 8.3(a)'s interference reaches a trailer who never had it. **CARHA 66(a)(1)** prices impeding an opponent not in possession at a minor *"or, at the discretion of the Referee, a Major penalty and a Game Misconduct penalty"* — **the backcheck that can end your game** in the adult rec book. **That does not make the carrier fair game: take the ice, never hold the player.** Both books define holding as impeding an opponent *"whether or not"* they have the puck — under Hockey Canada a minor, and a major and game misconduct if it injures (8.1); under CARHA a minor or a major and game misconduct, the major mandatory if it injures (63, 30(a)).
 
 **And CARHA is not a checking book:** you may *"stand their ground"* or *"shadow"* (66, Note 2), but body contact there is priced as [Where checking is barred](#where-checking-is-barred) sets out. ⚠️ **No version of the contact is free in CARHA.**
 
