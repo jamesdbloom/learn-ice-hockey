@@ -701,7 +701,7 @@ Rule: NHL 48.5 and PWHL 48.4 need intent — a match where the player "attempted
 Rule: The IIHF moves the sanction off the ice rather than removing it — 42.5 and 48.4 allow Supplementary Discipline above charging and head contact, 20.7 requires the Referee to report all majors, and 28.1 lets the Proper Authorities act "whether or not such offense has been penalized by the Referee(s)"
 ```
 
-These are not ordinary penalties. Treat them as things you simply do not do: **never touch the head, never build speed into a check to punish, never put a player who cannot protect themselves into the boards, and never hit from behind.**
+These are not ordinary penalties. Treat them as things you simply do not do: **never touch the head, never build speed into a check to punish, never drive anyone dangerously into the boards, least of all a player who cannot protect themselves, and never hit from behind.**
 
 **All four bind every division, including yours if you play non-check.** Hockey Canada scopes only 7.3, the rule that bars body checking, and USA Hockey only 604. Boarding (7.2, 603), charging (7.4, 607) and checking from behind (7.5, 608) carry no division or classification clause at all. Hockey Canada's two head-contact rules both open by banning it outright: **7.6** *"There is no type of legal contact to the head, face, or neck"* and **7.7**, for Junior and Senior, *"There is no legal contact to the head, face, or neck"*. Each puts it on the players to avoid contact *"at all times"*. They split minor and female hockey from Junior and Senior so each is priced separately, not so that either is left out.
 
@@ -738,7 +738,7 @@ Never: Arrive as the third man and hit someone already engaged in a battle — U
 Rule: Under IIHF, a check on an opponent who no longer has the puck and is either unaware of the hit or unprepared for it is automatically reckless, however clean it would otherwise be (IIHF glossary, "Vulnerable Position")
 ```
 
-**Never put a player who cannot protect themselves into the boards, never hit a player racing for an icing or offside puck, and never arrive as the third man on two players already in a battle.**
+**Never drive anyone dangerously into the boards, least of all a player who cannot protect themselves. Never hit a player racing for an icing or offside puck, and never arrive as the third man on two players already in a battle.**
 
 **Boarding.** NHL Rule 41.1: checking or pushing "a defenseless opponent in such a manner that causes the opponent to hit or impact the boards violently or dangerously." ⚠️ **Under USA Hockey, boarding is not only a hit.** Its Rule 603 Note reaches *"the action where a player pushes, trips or body checks an opponent causing them to go dangerously into the boards"*, and its Casebook prefers the boarding call to tripping for a trip into the end boards (Rule 603, Situation 3). With no bare minor in 603(a), the floor there is a minor plus a misconduct. **The NHL also names the icing race:** "Any unnecessary contact with a player playing the puck on an obvious 'icing' or 'off-side' play which results in that player hitting or impacting the boards is 'boarding'." The IIHF, Hockey Canada and PWHL print the same clause, and all four say that where there is no contact with the boards it *"should be treated as 'charging.'"* USA Hockey writes the clause only for icing, at 624(d), without naming boarding, but sending a player on an offside puck dangerously into the boards is boarding under its 603 anyway. **So on an icing race, take the puck and let them go.**
 
