@@ -183,8 +183,8 @@ const forecheck212 = {
     // the circles", the "how a forechecker finishes an angle ... is treated separately" disclosure and
     // the whole ⚠️ safety block with the USA Hockey 604(a)/(b) / Hockey Canada 7.3 enumeration, so
     // the check_caption_pairs.py dependencies of forecheck-212-stacked and forecheck-122 still hold.
-    'blue line. It is one system among several, and which way F1 angles the carrier and which ' +
-    'side F3 sits on are coaching choices rather than rules. Find out which your team runs. ' +
+    'blue line. It is one system among several, and which way F1 angles and which ' +
+    'side F3 sits on are coaching choices, not rules: find out which your team runs. ' +
     'The picture does not show how a forechecker finishes an angle, which ' +
     // "is treated separately" RESTORED after a length cut removed it, and kept through the
     // 2026 length cut. It is the host-neutral repair of an earlier "and is its own section",
@@ -215,7 +215,11 @@ const forecheck212 = {
     // HC 7.3 "applies only in divisions of U13 and below, in female hockey, and any other
     // divisions approved by a Member of Hockey Canada" (the rule's own sentence opens "This
     // rule applies only..."; the elided form is the one the owning section carries inline).
-    '\u26A0\uFE0F Going hard at the carrier does not mean going through them. The carrier behind their net is about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    // \u2702\uFE0F W321 (13 November 2026): wording only. "Going hard at the carrier does not mean going
+    // through them" became the instruction "Go hard at the carrier, never through them"; the
+    // repeated "The carrier behind their net" became "They". Every safety limb and the whole
+    // 604(a)/(b) / 7.3 enumeration are word for word, so check_caption_pairs.py still holds.
+    '\u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +

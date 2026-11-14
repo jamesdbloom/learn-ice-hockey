@@ -255,7 +255,7 @@ const dzoneAlignment = {
     'A defensive-zone draw frozen before the drop, at the right-hand circle. The boards-side ' +
     'defenceman really stands nearer the boards than their winger as well as behind; there is no ' +
     'room to draw it. Where everyone stands is a coaching choice, not a rule: this alignment goes ' +
-    'with a low zone collapse, and teams differ, so find out what yours runs. The shaded circle ' +
+    'with a low zone collapse, so find out what your team runs. The shaded circle ' +
     // ✂️ TRIMMED 12 November 2026, W304: 1,356 -> 1,259 chars. CUT: ": everyone except the two
     // taking the draw keeps both skates outside the circle and the hash marks". It is not a host
     // cut: the same caption states it at a fuller tier straight after, in the ⚠️ sentence (skates
@@ -335,10 +335,17 @@ const dzoneAlignment = {
     // other than the taker "makes physical contact with an opponent" before the drop. USA
     // Hockey is the one book that does not name a non-taker's contact -- 613(e) reaches the
     // players facing off -- so it is left unnamed here rather than swept in.
-    'Contact is priced separately, and it usually gets your centre thrown off the dot: any physical contact with an opponent ' +
-    'before the drop is a violation in its own right under those same NHL, IIHF and PWHL rules, ' +
-    'and under Hockey Canada Rule 6.2(a) and CARHA Rule 57(a), a non-taker who makes contact with ' +
-    'an opponent gets their own centre ejected from the dot.',
+    // ✂️ W321 (13 November 2026): contact limb kept whole in SUBSTANCE, reworded shorter. Every
+    // book it named is still named; dropped only the lead-in "Contact is priced separately" and
+    // the restatement "a non-taker who makes contact with an opponent". "usually gets your centre
+    // thrown off the dot" now attaches to the NHL/IIHF/PWHL clause (the IIHF 2025/26 book's
+    // first-violation warning is why it is "usually"), and HC 6.2(a) / CARHA 57(a) keep their
+    // flat "shall be ejected" (hc.txt :4586-4594, carha_2026.txt :2726). The "usually"
+    // limb is KEPT because game_management.md, defender.md and faceoffs.md voice no
+    // centre-loses-the-draw consequence in the caption's chunk or either neighbour (W321 render).
+    'Contact with an opponent before the drop is a violation in its own right under those NHL, ' +
+    'IIHF and PWHL rules, where it usually costs your centre the dot; under Hockey Canada ' +
+    'Rule 6.2(a) and CARHA Rule 57(a), contact by anyone but the taker always does.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +
