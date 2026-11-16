@@ -476,10 +476,10 @@ const safeOutlets = {
     'risk: the short pass to your defenceman on the wall, the rim around the boards to the far ' +
     'winger, and the one to make almost never — the pass into the shaded slot, where a goalie’s ' +
     'turnover is a shot on an empty net you are standing in. Clear along the glass, never over ' +
-    'it: a puck you shoot directly out of the rink from your own end is a two-minute minor under NHL ' +
-    'and IIHF rules, where USA Hockey’s clause reaches only a deliberate clear; Hockey Canada’s ' +
-    'Rule 10.1, clause v, writes a limb aimed at goalies specifically and names no zone at ' +
-    'all, and whether an accidental clear is caught by it is unsettled rather than free. Whether ' +
+    'it: a puck you shoot directly out of the rink from your own end is a two-minute minor under NHL, ' +
+    'IIHF and PWHL rules, where USA Hockey’s clause reaches only a deliberate clear; Hockey Canada’s ' +
+    'Rule 10.1, clause v, and CARHA’s Rule 55(a) write a limb aimed at goalies specifically and name no zone at ' +
+    'all, and whether an accidental clear is caught by them is unsettled rather than free. Whether ' +
     'you play the puck at all is your team’s convention rather than a law. Ask, and then be ' +
     'consistent.',
 

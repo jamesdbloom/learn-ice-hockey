@@ -905,20 +905,29 @@ const angleIntoTheCorner = {
   // Kept: the picture, the three-case count with its provenance disclosure, the chip/rim/reverse
   // option, never turn / never duck under the glyph, Case 2's instruction, and Case 3 VERBATIM,
   // because skating.md voices no Case 3 -- it only points here.
+  // ⚠️ RE-ORDERED 16 November 2026 (W365), NO WORD CHANGED. A caption's amber runs from its glyph
+  // to the END of the caption, so the glyph-led never-turn / never-duck sentence used to carry
+  // Case 2 AND all of Case 3 in amber (562 chars, 57.8% of a 400px window). Case 3 now comes
+  // before the glyph and the caption ENDS on the never-turn / never-duck instruction and the
+  // Case 2 posture, so the amber is that instruction alone. Case 3 keeps every limb verbatim
+  // ("if at all possible", "damage limitation", "no head contact at all"), now in plain text.
+  // Its opening was then reworded: "what is left when turning is already impossible" lost its
+  // antecedent once it came before Case 2, beside an amber saying "never turn your back". It now
+  // says "for when you are already facing the wall and cannot turn", as the owner's facts do
+  // ("Case 3, already facing the wall").
   caption:
     'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
     'drawn. It sets off pointed at the corner and finishes running along the boards. ' +
     'That is the first and best of three cases for meeting a wall. ' +
     'The cases come from USA Hockey\'s material; the ordering and the ranking do not. ' +
     'Better still, a chip, a rim or a reverse decided before you arrive takes you out of the ' +
-    'collision. \u26A0\uFE0F Never turn your back to anyone coming at you, and never duck. ' +
-    'Get your skates parallel to the wall and take it on your forearm and hip: that is the ' +
-    'second case. The third is what is ' +
-    'left when turning is already impossible, and it is damage limitation rather than the position ' +
-    'to aim for. USA Hockey asks you to turn your skates parallel if at all possible before you ' +
+    'collision. The third, for when you are already facing the wall and cannot turn, is damage ' +
+    'limitation rather than the position to aim for. USA Hockey asks you to turn your skates parallel if at all possible before you ' +
     'settle for it. Then get your stick and gloves up and spread out on the glass, arms out as a ' +
     'shock absorber, and take the impact over as wide a surface as you have, with no head contact ' +
-    'at all.',
+    'at all. \u26A0\uFE0F Never turn your back to anyone coming at you, and never duck. ' +
+    'Get your skates parallel to the wall and take it on your forearm and hip: that is the ' +
+    'second case.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
