@@ -1129,7 +1129,7 @@ Hockey Canada does not say whether checking from behind or goaltender interferen
 
 ### Over the glass
 
-**Clear hard and flat, keep it in the rink, and never aim it at the bench or out of play off a draw.** ⚠️ **Over the glass from your own zone is a minor under the NHL, IIHF and PWHL, and a deliberate shoot-out is a minor from anywhere in all six books** — on a kill, a 5-on-3.
+**Clear hard and flat, keep it in the rink, and never aim it at the bench or out of play off a draw.** ⚠️ **Over the glass on purpose is a minor in all six books, and in some it is a minor even by accident** — on a kill, that is a 5-on-3. A deliberate one is the minor from anywhere on the ice. Under the NHL, IIHF and PWHL, straight out from your own zone is a minor even by accident. Under CARHA, a goalie who shoots it straight out with the stick takes a minor under a clause with no intent word; Hockey Canada's goalie clause has none either, though its rule opens on *deliberately*, so under both, plan on it even by accident.
 
 ```facts
 Rule: The "no glass" carve-out means boards without glass, not the benches — over the glass behind the bench is penalised, only a puck straight into it is exempt (NHL 63.2(iii), PWHL 65.2(iii) and Notes; IIHF 63.2(III) says "no protective glass" and reaches glass "surrounding" the bench, wider)

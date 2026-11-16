@@ -356,10 +356,13 @@ const stepUp = {
     'with a second attacker wide of them, so a missed step-up leaves your partner alone in a ' +
     'two-on-one. Step up only when you are confident you can win the puck or force a turnover. ' +
     'How aggressive to be is a coaching choice, so ask what your coach wants. ' +
-    '⚠️ A step-up closes space; it is not a hit, so the route ends in two bars: arrive and ' +
-    'contain. Finished as a hit, it is what the charging rules are written for, and a carrier ' +
+    'Finished as a hit, a step-up is what the charging rules are written for, and a carrier ' +
     'with their head down tells you only that they cannot change direction. Two strides is a safe harbour in no book: USA Hockey calls accelerating ' +
-    'through a check charging, and leaving your feet to hit is charging in all six.',
+    'through a check charging, and leaving your feet to hit is charging in all six. ' +
+    // W364: the glyph sentence is LAST so the caption amber (first glyph to caption end) is
+    // the instruction alone; "it" in the hit sentence became "a step-up" so it still binds.
+    '⚠️ A step-up closes space; it is not a hit, so the route ends in two bars: arrive and ' +
+    'contain.',
 
   describe:
     'The defending half of the rink, your own net at the right, your goalie in the ' +
