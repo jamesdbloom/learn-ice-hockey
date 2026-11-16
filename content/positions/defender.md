@@ -18,7 +18,7 @@
 
 **Alone against two, take the pass away and leave the shot to your goalie.** Stay on your feet in the lane, stick flat on the passing side. Some teams slide, but in most books a slide that takes the carrier down is tripping even if you reach the puck first — so ask. With no pass on, close on the puck.
 
-**Move a retrieved puck early — look up the ice first.** Shoulder-check on the way back and take the first option that is on. With nothing on, use the glass: off it, never over it — over it from your own zone can cost two minutes even by accident.
+**Move a retrieved puck early — look up the ice first.** Shoulder-check on the way back and take the first option that is on. With nothing on, use the glass: off it, never over it — over it from your own zone can cost two minutes, and under NHL, IIHF and PWHL rules even by accident.
 
 **At the offensive blue line, keep the puck in and do not get caught inside.** Hold the line with your skates inside it, and walk it to find a lane. Only one of you goes below the puck; the other holds the line.
 
@@ -75,8 +75,8 @@ Read: Take the quick-up in the two or three seconds after your team wins the puc
 Goal: Transition the puck out of danger and start your team's breakout
 Never: Carry or pass D-to-D through your own slot. Go behind the net instead. Only the alternative route varies: some teams allow the exchange above the tops of the circles, outside the slot
 Never: Put it over the glass. Go off the glass and along it, treat the players' bench as a trap, not a gap, and under the IIHF book clear with your stick, not your skate
-Rule: Under the NHL, IIHF and PWHL, shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor whether or not you meant it (NHL Rule 63.2(iii))
-Rule: Putting the puck deliberately outside the playing area is a two-minute delay-of-game minor from anywhere on the ice, not only from your own end (NHL 63.2(ii), IIHF 63.2(II), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
+Rule: Under the NHL, IIHF and PWHL, shooting the puck over the glass and out of play from inside your own defensive zone is a two-minute delay-of-game minor whether or not you meant it (NHL 63.2(iii), IIHF 63.2(III), PWHL 65.2(iii))
+Rule: Putting the puck deliberately outside the playing area is a two-minute delay-of-game minor from anywhere on the ice, not only from your own end (NHL 63.2(ii), IIHF 63.2(II), PWHL 65.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
 ```
 
 **Where to be:** Behind your own net or along the boards.
@@ -738,14 +738,14 @@ Action: Aim your clears wide and high off the glass rather than flat up the midd
 Risk: The straight-line clear up the middle is the easy one to pick off at the blue line, and a rim that carries all the way down the ice is what gets whistled
 Never: Put it over the glass — from your own zone that is the delay-of-game minor under NHL, IIHF and PWHL rules, not a clear, and a deliberate one is a minor from anywhere on the ice
 Rule: The minor that needs no intent is narrower than it sounds — the NHL's 63.2(iii), the IIHF's version of it and the PWHL's reach only a direct, non-deflected shot out of play from your defending zone, and each exempts boards with no glass above them
-Rule: Putting the puck out of play deliberately is a minor from anywhere on the ice, in the NHL, IIHF, USA Hockey, Hockey Canada and CARHA books alike (NHL 63.2(ii), IIHF 63.2(II), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
+Rule: Putting the puck out of play deliberately is a minor from anywhere on the ice in all six books (NHL 63.2(ii), IIHF 63.2(II), PWHL 65.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
 Key: When you are gassed, the glass is the answer — under the NHL, IIHF and PWHL, and Hockey Canada's U18AAA and Junior, a tired clear that ices keeps you out there, tired, for a defensive-zone draw
 Never: Leave a hurt teammate out there for the draw after your own icing; an injured player can be replaced, and the rule does not ask you to
 ```
 
 **The rule itself — hybrid icing, the full wave-off list, "gaining the line", and how USA Hockey and rec leagues differ — is in [Rules Primer](../foundation/rules_primer.md).** Read it once properly, because you ice the puck more often than anyone else on your team and the outs are worth knowing.
 
-**Glass, not flat.** You ice it most often on a straight-line clear up the middle from your own end, and that same clear is the easy one to pick off at the blue line. Aim **wide and high off the glass** instead: a glass clear rarely ices, is very hard to pick off, and gets the puck out even when it doesn't get it out cleanly. A rim that carries all the way down the ice is what gets whistled. (Off the glass, yes — *over* it, no: under NHL, IIHF and PWHL rules that is a two-minute minor from your own zone, where USA Hockey and Hockey Canada reach only a deliberate one. Hockey Canada still makes an accidental one from your own end bite in Junior and Senior: no penalty, but no line change either. [Over the glass](#over-the-glass) has the book-by-book detail.)
+**Glass, not flat.** You ice it most often on a straight-line clear up the middle from your own end, and that same clear is the easy one to pick off at the blue line. Aim **wide and high off the glass** instead: a glass clear rarely ices, is very hard to pick off, and gets the puck out even when it doesn't get it out cleanly. A rim that carries all the way down the ice is what gets whistled. (Off the glass, yes — *over* it, no: under NHL, IIHF and PWHL rules that is a two-minute minor from your own zone, where USA Hockey, Hockey Canada and CARHA reach only a deliberate one. Hockey Canada still makes an accidental one from your own end bite in Junior and Senior: no penalty, but no line change either. [Over the glass](#over-the-glass) has the book-by-book detail.)
 
 **The cost lands on your pair.** After your own icing the draw is in your zone, and **under NHL and IIHF rules** you **cannot change** and your team cannot take a time-out. None of the exceptions covers a tired defenceman, so a tired clear keeps you out there tired, for a faceoff in your own end. Under USA Hockey you may change, but only in the ordinary window — a slow change draws a warning, then a delay-of-game minor. When you are gassed, the glass is the answer. ⚠️ **But an injured player can be replaced, so never leave a hurt teammate out there for the draw; the rule does not ask you to.** Which books bar the change, and the exceptions, come later, in [After your own icing](#after-your-own-icing).
 
@@ -857,8 +857,10 @@ Rule: A deliberate clear out of play counts by leg, foot or arm, and after a sto
 Rule: The NHL's out-of-play minor has three carve-outs — boards with no glass, a puck shot into the players' bench, and one out directly off a faceoff, which no book reconciles with 63.2(ii)'s deliberate limb, so never aim it; over the glass behind the bench is penalised (NHL Rule 63.2 and its NOTE)
 Rule: The IIHF carries the NHL's out-of-play minor and its three carve-outs, so it binds a British player — but its bench clause is wider: the glass "surrounding" the bench, not "behind" it (IIHF Rule 63.2(III)). Its Handbook exempts only a puck shot straight into the bench (Situation 63.24)
 Rule: Do not rely on a skate clear under the IIHF — its Rulebook 63.2(III) names only "hand or stick" in 2025/26 and 2026/27 alike, but 63.2(II) reaches a deliberate one by foot from anywhere; its Handbook answers Yes to a kick over the glass (Situation 63.34, all three editions), so clear with the stick
+Rule: The PWHL writes the NHL's out-of-play minor with the same three carve-outs, and still penalises a puck shot over the glass "'behind' the players' bench" (PWHL Rule 65.2(iii) and its NOTE)
 Rule: USA Hockey penalises putting the puck out of play only where it is deliberate — 610(c) is a minor for deliberately shooting or batting it outside the playing area — and 631(d) makes an accidental one a last-play faceoff in the zone it was shot from, with no penalty at all
 Rule: Hockey Canada writes no strict over-the-glass minor for a skater — Rule 10.1(ii) reaches only a player who "deliberately shoots, bats, or throws the puck outside the playing surface" — but an accidental one costs you the faceoff, and from your own end in Junior and Senior the line change (6.4(a))
+Rule: CARHA writes no strict over-the-glass minor for a skater — Rule 75(b) reaches only a player who delays the game by "deliberately shooting, batting, or throwing the puck outside the playing surface of the rink"
 ```
 
 USA Hockey, Hockey Canada and CARHA write only the deliberate half, so under them a clear that gets away from you is not the automatic minor. The strict limb has three carve-outs: boards with no glass above them, a puck *"shot into the players' bench"*, and one that goes out *"directly off a face-off"*.
@@ -1054,7 +1056,7 @@ document, that is named too.*
 
 3. You are in trouble and you put the puck off the glass. When does that same
    instinct become a two-minute penalty instead? What three carve-outs does the
-   NHL and IIHF rule carry in its own wording, and what do the other books charge
+   NHL, IIHF and PWHL rule carry in its own wording, and what do the other books charge
    instead? Of the two things you can do at the players' bench, which costs you
    two minutes — and what does the IIHF Situation Handbook do to the other one? *(§Defensive Zone:
    Carrying the Puck — Free Space, and §What it costs → Over the glass)*
@@ -1091,7 +1093,7 @@ document, that is named too.*
 3. **When a forward parks at your net, get inside first, lift their stick low, then let go.** ⚠️ **Never drive them off their spot:** it can be interference, or illegal where checking is barred; if reckless, plan on a USA Hockey match and likely multi-game ban. ⚠️ **Keep bodies corner-side, never across your goalmouth, and never hit from behind.**
 4. **On a 2-on-1, stay on your feet in the passing lane until the pass is released**, and leave the shot to your goalie; some teams slide, so ask. ⚠️ **A slide is not free:** under USA Hockey, sliding a player off their feet is tripping whoever gets the puck, and catching them low can be clipping, which can eject you.
 5. **Never carry or pass the puck across the front of your own goal. Go behind the net**, where a lost puck is a battle, not a point-blank chance. Some teams exchange above the tops of the circles instead, so find out where your coach draws the line. The middle is never a route.
-6. **Read the forecheck on the way back for a dumped puck.** A **rim** beats a forechecker sealing the boards; a **reverse** beats one who has over-skated. ⚠️ **With nothing on, go off the glass, never over it** — from your own zone that can be two minutes even by accident — and treat the players' bench as a trap.
+6. **Read the forecheck on the way back for a dumped puck.** A **rim** beats a forechecker sealing the boards; a **reverse** beats one who has over-skated. ⚠️ **With nothing on, go off the glass, never over it** — from your own zone that can be two minutes, and under NHL, IIHF and PWHL rules even by accident — and treat the players' bench as a trap.
 7. **Know whose puck a dead corner rim is before it arrives.** Under the NHL and IIHF trapezoid it is yours, and play it that way in the PWHL and in Britain too. **USA Hockey, Hockey Canada and CARHA paint no trapezoid**, so agree with your goalie who calls it — and they may fetch it, not sit on it.
 8. **In the offensive zone, keep the puck in, get your shot through, and know *who* is above the puck before you go below it.** Keep your skates inside the line and shoot low with pace for a tip or a rebound. Below the circles you are a fourth forward — fine only when somebody has your blue line.
 9. **Block shots with technique, not courage.** Get close, shin pads square, head up; stay on your feet until the puck is released. **Never turn your back or side to the shot, lift a leg, lead with your stick, or block from a screen.** Wear shin guards that cover the ankle, and ask your coach and goalie how much to block.

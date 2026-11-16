@@ -370,18 +370,22 @@ const forcingThemOutside = {
   // four times. So the enumeration was not deleted, it was left with its owner. What
   // survives here is the one safety limb a listener must not hear the steering
   // instruction without, scoped to the books that write it, plus the picture's own point.
+  // W366, 16 November 2026: the glyph moved, no word changed. Caption amber runs from the
+  // first ⚠️ to the end, and it covered the whole 401-char rules limb (60.6% of a 400px
+  // window). It now starts at "Find out which book you are under" (67 chars); the steering
+  // and body-check sentence with its books is plain caption text, still voiced in full.
   caption:
     'Forcing a carrier outside, your net at the right. Read the defenceman, not the route: ' +
     'inside the carrier and nearer your goal at the instant drawn — the whole difference ' +
     'from getting beaten wide. No gap distance and no retreat are drawn. ' +
-    '⚠️ Steering with the route you skate is legal. Riding the carrier into the wall with your body ' +
+    'Steering with the route you skate is legal. Riding the carrier into the wall with your body ' +
     'is a body check — barred outright in many classifications by USA Hockey 604 and Hockey ' +
     // W33: 101.1's last paragraph added — "Any move by a Player to step or glide into an opposing
     // Player will be assessed at least a minor penalty (2') for an 'illegal hit'"
     // (iihf_rules_2026-27.txt). A defender riding a carrier wide is exactly that move; the boards
     // limb alone left it unstated.
     'Canada 7.3; in women\'s hockey IIHF 101.1 bars using the boards to push, pin or eliminate ' +
-    'an opponent, and makes any step or glide into one an illegal hit. Find out which book you ' +
+    'an opponent, and makes any step or glide into one an illegal hit. ⚠️ Find out which book you ' +
     'are under. Nothing here ends in contact.',
 
   describe:

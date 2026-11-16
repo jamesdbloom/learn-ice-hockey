@@ -281,15 +281,23 @@ const wheel = {
   // in the Wheel section". That is no longer true (facts, chunk 021: "A pick that injures is a
   // mandatory major plus a game misconduct in two books"), but it sits inside a ⚠️ sentence, and
   // every ⚠️ sentence is kept word for word, so it stays.
+  // W366, 16 November 2026: the first three glyphs were removed and no word changed. Caption
+  // amber runs from the FIRST ⚠️ to the end, so it covered all four book sentences (470
+  // chars, 60.6% of a 400px window). One glyph now opens the last sentence, which names no
+  // book. Safety review the same day: "Never slide" alone taught a skimmer to stand there still,
+  // so the amber now opens "Screen only where your book allows it, and never slide…" (words
+  // added; mirrors the host's "Set the screen only where your book allows it"). The book-by-book answers, including the mandatory major and game
+  // misconduct on injury, are plain caption text and still voiced; the caption still speaks
+  // "Important." because the speech renderer flags any caption carrying a glyph.
   caption:
     'The wheel: the defenceman carries the puck behind their own net and up the far side, drawn ' +
     'in your own zone at the left, moving left to right. Cut tight: the net is your screen, and ' +
     'cutting wide gives the forechecker a straight line to you. The far winger and the centre are ' +
     'the outlets. ' +
-    '⚠️ D2, standing at the net front, is legal only in some books. The NHL and PWHL allow it: ' +
-    'stick in tight and vertical, hands to yourself, no bump. ⚠️ Under USA Hockey even a ' +
-    'still screen is a minor when your partner has the puck. ⚠️ Hockey Canada and CARHA give your ' +
-    'side no right to it, and make a major and a game misconduct mandatory if it injures. ⚠️ Never slide across into ' +
+    'D2, standing at the net front, is legal only in some books. The NHL and PWHL allow it: ' +
+    'stick in tight and vertical, hands to yourself, no bump. Under USA Hockey even a ' +
+    'still screen is a minor when your partner has the puck. Hockey Canada and CARHA give your ' +
+    'side no right to it, and make a major and a game misconduct mandatory if it injures. ⚠️ Screen only where your book allows it, and never slide across into ' +
     'the forechecker\'s path: that is interference everywhere, and two minutes is only the floor.',
 
   describe:
