@@ -1207,7 +1207,7 @@ Leaning on each other while you both play the loose puck is legal where contact 
 
 ### A hit on the player fetching a rim
 
-**As the forechecker, never hit a player turned toward the wall, and hit no one until you know your game allows checking.** ⚠️ **A hit on a player turned toward the wall is checking from behind. It ends your game under the NHL, PWHL and CARHA, and under Hockey Canada unless it reaches the head, where you should plan on it anyway; under the IIHF, plan on it. Under USA Hockey it is at least a minor and a misconduct (608(a)), and ends your game too if it is forceful at the boards or drives them head first into the boards or net, and so does careless contact with their head or neck (620(b)). If it is reckless, plan on a match (602(a)).**
+**As the forechecker, never hit a player turned toward the wall, and hit no one until you know your game allows checking.** ⚠️ **A hit on a player turned toward the wall is checking from behind, and never just two minutes.** It ends your game under the NHL, PWHL and CARHA, and under Hockey Canada unless it reaches the head, where you should plan on it anyway; under the IIHF, plan on it. Under USA Hockey it is at least a minor and a misconduct (608(a)), and ends your game too if it is forceful at the boards or drives them head first into the boards or net, and so does careless contact with their head or neck (620(b)). If it is reckless, plan on a match (602(a)).
 
 ```facts
 Rule: A hit on a rim retrieval is at least a minor in USA Hockey Competitive Contact (604(c)), Hockey Canada U13 or below, female or Member-approved play (7.3(a)) and any CARHA game, avoidable contact too (49(a)). CARHA excuses some accidents, but not head contact or a hit from behind into the boards

@@ -439,9 +439,7 @@ const clearAtFiveOnSix = {
     'Defending a 6-on-5 in your own end: your goalie is in your net, theirs is empty, and a ' +
     'puck has just come free to you. Every clear from here is a shot, with three endings. On ' +
     'target, it is a goal, and a puck that goes in is not icing. A miss that ' +
-    'crosses their goal line untouched from your side of the centre red line is icing. A blind ' +
-    'clear to their point man hands it back at your own blue line. ' +
-    '⚠️ You can be iced against a pulled goalie. ' +
+    'crosses their goal line untouched from your side of the centre red line is icing. ' +
     // SHORTENED 8 November 2026 (1,252 chars). Cut, each voiced in the facts block directly after
     // the marker and in the bullets below it: why six against six is equal strength and 81.3 keeps
     // the icing (game_management.md facts :415, bullet :427); the NHL/IIHF draw-dot-no-change-no-
@@ -457,7 +455,14 @@ const clearAtFiveOnSix = {
     'or for a penalty that changes the strength; its goalie exception is for a team putting back its own pulled goalie, not for you. ' +
     'Hockey Canada has a substitution limit only in the categories ' +
     'its Rule 6.7(d) names — U18AAA, Junior, and Senior at the Member’s option — so find out ' +
-    'which rules your league runs.',
+    'which rules your league runs. ' +
+    // W362 (16 Nov 2026): REORDERED, no word changed. The renderer ambers from the first ⚠️ to the
+    // END of the caption, so the glyph sentence sat in front of 81.4 and 6.7(d) and ~534 chars were
+    // amber. The two rule sentences now follow "is icing." directly (so "81.4 then" still follows
+    // the icing), the blind-clear ending follows them, and the warning closes the caption: the amber
+    // is now only "You can be iced against a pulled goalie."
+    'A blind clear to their point man hands it back at your own blue line. ' +
+    '⚠️ You can be iced against a pulled goalie.',
 
   describe:
     'The full sheet. Your own net is at the left with your goalie in the crease; the ' +

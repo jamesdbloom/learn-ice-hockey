@@ -230,7 +230,13 @@ const forecheck212 = {
     // word-identical to HEAD apart from order. CARHA 49(a) penalises any player
     // who "intentionally bodies, pushes, shoves" or "does not avert body contact", and carha_2026.txt
     // has no checking division; center.md and game_management.md embed this diagram alone.
-    'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves; and CARHA in every game. \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
+    // W362 (16 November 2026): ADDED to the list, plain text before the glyph, amber unchanged:
+    // USA Hockey 604(a)'s local opt-out (usah.txt, after 604(a): "A local governing body may
+    // prohibit body checking in any classification"); Ice Hockey UK junior U10 and U12
+    // (ihuk_junior_roc.txt "Game Length & Format": U10 "Cross-ice jamboree, non-checking", U12 "Full
+    // ice, non-checking"; U14 up "checking"); the Women's NIHL (ihuk_wnihl_roc.txt: both formats
+    // "Full ice, non-checking"). The list was closed and omitted all three.
+    'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body bar it in any classification; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves; Ice Hockey UK in its U10 and U12 junior leagues and the Women\'s NIHL; and CARHA in every game. \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +
@@ -397,7 +403,12 @@ const forecheck212Stacked = {
     // from the same side to overload one corner", against a carrier it names as being behind
     // his own net -- so the caption is the thing making the claim, and the counterweight is
     // attached to the caption's instruction rather than to a route. Glyph last, same reason.
-    '\u26A0\uFE0F Sending two forwards into one corner is not a licence to go through the player in it. The carrier is behind their own net and about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division.',
+    // W362 (16 November 2026): ORDER, plus punctuation. captionNodes() ambers from the glyph to the
+    // END, so the 384-char amber carried the framing and the scope sentence too. Now plain: the
+    // "not a licence" framing, then "Find out first" (moved up), then the carrier sentence, whose
+    // colon became a full stop; the glyph opens the instruction alone, "Take the puck ... into
+    // their back." No word added or cut.
+    'Sending two forwards into one corner is not a licence to go through the player in it. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. The carrier is behind their own net and about to turn their back to you, so the onus is on you. \u26A0\uFE0F Take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -1016,7 +1027,10 @@ const forecheckPinch = {
     // ⚠ DO NOT "REPAIR" IT BY BREAKING THE SENTENCE AT THE "so". A full stop there would separate the
     // hazard from what to do about it, which is the split _split_paragraph makes voiceable as two
     // units — the one thing the 604(a)/604(b) note above forbids for this exact block.
-    '⚠️ In many leagues body checking is not allowed at all, so find out whether you may body check ' +
+    // W362 (16 November 2026): GLYPH MOVED only, no word changed. captionNodes() ambers from the
+    // glyph to the END, so the 417-char amber carried this scope sentence too; the glyph now opens
+    // the receiving-posture prohibition below, which is the hazard this caption warns of.
+    'In many leagues body checking is not allowed at all, so find out whether you may body check ' +
     'in this game, not just in your division. Where it is barred, a pinch is a play on the puck, ' +
     'not a check. ' +
     // RECEIVING POSTURE, SHORT FORM. This caption's go/no-go test sends a defenceman down the wall
@@ -1034,7 +1048,7 @@ const forecheckPinch = {
     // other host, content/systems/game_management.md, uses the picture for the pinch decision and
     // teaches no wall play, so the prohibition plus the short form is what a listener there needs.
     // Its wording and order are WALL_POSTURE_SHORT's -- see wall_contact_clauses.mjs.
-    'In every league, checking or not, never turn your back to anyone coming at you on the ' +
+    '⚠️ In every league, checking or not, never turn your back to anyone coming at you on the ' +
     'wall, and never duck. ' +
     WALL_POSTURE_SHORT,
 
@@ -1190,6 +1204,11 @@ const forecheckRolesRotate = {
   // list of the books that bar checking and omitted CARHA, which bars it in every game (carha_2026.txt
   // Rule 49(a): a penalty for any player who "intentionally bodies, pushes, shoves" or "does not
   // avert body contact"). The comment above about the glyph being LAST still holds.
+  // W362 (16 November 2026): ADDED to the plain list before the glyph (amber unchanged), as on
+  // forecheck-212: USA Hockey 604(a)'s local opt-out ("A local governing body may prohibit body
+  // checking in any classification"), Ice Hockey UK junior U10/U12 (ihuk_junior_roc.txt,
+  // "non-checking") and the Women's NIHL (ihuk_wnihl_roc.txt, "Full ice, non-checking").
+  // rink_map.md hosts this diagram, so British readers hear the list.
   // W289 (11 November 2026) left this whole at 1,121 chars: rink_map.md (chunk 042) did not voice
   // the rotation, the lock-system alternative or any body-checking scope near the marker.
   // ✂️ TRIMMED 12 November 2026, W296: 1,121 -> 957 chars. CUT: the rotation sentence ("The
@@ -1209,8 +1228,9 @@ const forecheckRolesRotate = {
     'hold the offensive blue line and do not rotate. Find out first whether you may body ' +
     'check in this game at all — it can change per fixture, not just per division. USA Hockey ' +
     'bars it at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
-    'hockey and whenever a checking team plays a non-checking one; Hockey Canada at U13 and ' +
-    'below, throughout female hockey and in any other division a Member approves; and CARHA in every game. ' +
+    'hockey and whenever a checking team plays a non-checking one, and lets a local governing body bar it in any classification; Hockey Canada at U13 and ' +
+    'below, throughout female hockey and in any other division a Member approves; Ice Hockey UK in its U10 and ' +
+    'U12 junior leagues and the Women\'s NIHL; and CARHA in every game. ' +
     '⚠️ Being the new F1 is not' +
     ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +
     'so the onus is on you: take the puck, take the ice, or ' +
@@ -1342,10 +1362,18 @@ const forecheck23Lock = {
     'slides back into line with the two defencemen, which is why their arrow stops short of the ' +
     'blue line; the lane they fill is a coaching detail. Some teams lock whichever winger is ' +
     'highest rather than always the left. This guide\'s default is a 2-1-2, so ask which your ' +
-    'team plays. ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division. USA ' +
-    'Hockey bars it at 12 & under and below, in every girls\' and women\'s classification, in non-check ' +
-    'adult hockey and whenever a checking team plays a non-checking one; Hockey Canada at U13 and' +
-    ' below, throughout female hockey and in any other division a Member approves.',
+    // W362 (16 November 2026): ORDER, plus one word change. captionNodes() ambers from the glyph to
+    // the END, so the 387-char amber carried the 604(a)/(b) / 7.3 list. The list now comes FIRST as
+    // plain text, still one sentence holding (a) and (b) together, and its "it" became "body
+    // checking" because the sentence it pointed back to now follows it. The glyph opens "Find out
+    // first", which is now the whole amber run.
+    // W362 also ADDED to the list, as on forecheck-212 and forecheck-roles-rotate (the same closed
+    // list, same omissions): 604(a)'s local opt-out, Ice Hockey UK junior U10/U12, the Women's NIHL
+    // and CARHA (Rule 49(a); no checking division).
+    'team plays. USA ' +
+    'Hockey bars body checking at 12 & under and below, in every girls\' and women\'s classification, in non-check ' +
+    'adult hockey and whenever a checking team plays a non-checking one, and lets a local governing body bar it in any classification; Hockey Canada at U13 and' +
+    ' below, throughout female hockey and in any other division a Member approves; Ice Hockey UK in its U10 and U12 junior leagues and the Women\'s NIHL; and CARHA in every game. ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
@@ -1444,7 +1472,9 @@ const forecheckPress = {
     // captions sharing this block; its text, its provenance and why it may not be split from (a) are argued out in the
     // comment above forecheck-pinch and are not restated -- and so is the ruling that this block's
     // ", so" is NOT an inversion, checked on the rendered audio. Do not re-refer it.
-    '⚠️ Pinching on anything is about the puck, not about the man. In many leagues body checking ' +
+    // W362 (16 November 2026): GLYPH MOVED only, no word changed, as on forecheck-pinch: the
+    // 412-char amber now starts at the receiving-posture prohibition below.
+    'Pinching on anything is about the puck, not about the man. In many leagues body checking ' +
     'is not allowed at all, so find out whether you may body check in this game, not just in your ' +
     'division. ' +
     // RECEIVING POSTURE, SHORT FORM, identical to forecheck-pinch's so the two cannot drift. This
@@ -1453,7 +1483,7 @@ const forecheckPress = {
     // (forechecking_systems.md, "The full-ice press") is about accepting risk to keep the puck in,
     // not about board contact, and the document carries the full mechanics in its pinch section
     // and in its "One safety rule outranks every tactical choice above" paragraph.
-    'In every league, checking or not, never turn your back to anyone coming at you on the ' +
+    '⚠️ In every league, checking or not, never turn your back to anyone coming at you on the ' +
     'wall, and never duck. ' +
     WALL_POSTURE_SHORT,
 

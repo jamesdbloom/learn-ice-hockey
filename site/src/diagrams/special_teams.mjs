@@ -836,9 +836,12 @@ const pkWedge = {
     // folds the head into the lane; special_teams.md :803/:808);
     // the other limbs are that section's too. LAST, because the renderer ambers from the glyph to
     // the end of the caption.
-    '⚠️ Blocking shots is a technique, not an act of courage. Be in the lane before the shot, ' +
+    // W362 (16 Nov 2026): the glyph MOVED, no word changed. ~358 chars were amber; now only the
+    // injury instruction is ("Block from close and on your feet, head out of the lane..."). The
+    // technique, lane-timing and screening limbs stay, word for word, as plain caption text.
+    'Blocking shots is a technique, not an act of courage. Be in the lane before the shot, ' +
     'not sliding into it, and never block from a screening position — half-deflecting a shot ' +
-    'your goalie could not see is worse than letting it through cleanly. Block from close and on ' +
+    'your goalie could not see is worse than letting it through cleanly. ⚠️ Block from close and on ' +
     'your feet, head out of the lane, hands behind your body with the backs of the gloves out.',
 
   describe:
