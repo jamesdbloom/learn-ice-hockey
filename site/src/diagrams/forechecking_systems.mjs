@@ -518,7 +518,26 @@ const forecheck122 = {
     'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
     'Never finish into the back of a player facing away. The NHL and IIHF have no minor for that, ' +
     'so the floor is a major and a game misconduct, mandatory in the NHL, and in the IIHF book ' +
-    'for a hit the referee judges reckless. In many leagues body checking is not allowed at ' +
+    'for a hit the referee judges reckless. ' +
+    // W350 (16 November 2026): the MATCH, added to both copies of this shared block. Before it, this
+    // wall scene priced only the NHL and IIHF, and no host voiced a match within the caption's chunk
+    // or either neighbour (rendered: forechecking_systems 024-026 around forecheck-122 at 025, 027-029
+    // around forecheck-131 at 028; how_to_watch_hockey 006-008 around forecheck-122 at 007). Re-read
+    // this session: hc.txt 7.5(c) "A Match penalty will be assessed" for a hit from behind "into the
+    // boards or goal frame, in such a way that the player is unable to protect or defend themselves";
+    // carha_2026.txt 53(b) the same into "the boards or goal net", "shall be assessed"; usah.txt 608(c)
+    // "shall be assessed ... in all instances when a player recklessly endangers an opponent from
+    // behind with excessive force while the opponent is in a vulnerable or defenseless position" --
+    // NO boards condition, so USA Hockey is split off (the W347 repair in defensive_zone_coverage.mjs).
+    // Wording follows forechecking_systems.md's own 2-1-2 body. Do not cut "or defenceless" to
+    // "vulnerable" or the reverse: the book's condition is either, and one alone narrows the match.
+    // W350 read-aloud fix: the sentence leads with its subject (a fronted "Into the boards ..." was
+    // heard as a fragment). "a hit from behind", NOT "one": the sentence before ends "a hit the
+    // referee judges reckless", so "one" would bind there and narrow the HC/CARHA match, which has
+    // no recklessness condition, to reckless hits. The later "a reckless one" binds to "a hit from behind".
+    'Hockey Canada and CARHA make a hit from behind into the boards or net a match when the player ' +
+    'cannot protect themselves; USA Hockey does for a reckless one with excessive force on a vulnerable or ' +
+    'defenceless player, boards or not (608(c)). In many leagues body checking is not allowed at ' +
     'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
     'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
     'pin an opponent, and the Women\'s NIHL is non-checking.',
@@ -675,7 +694,26 @@ const forecheck131 = {
     'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
     'Never finish into the back of a player facing away. The NHL and IIHF have no minor for that, ' +
     'so the floor is a major and a game misconduct, mandatory in the NHL, and in the IIHF book ' +
-    'for a hit the referee judges reckless. In many leagues body checking is not allowed at ' +
+    'for a hit the referee judges reckless. ' +
+    // W350 (16 November 2026): the MATCH, added to both copies of this shared block. Before it, this
+    // wall scene priced only the NHL and IIHF, and no host voiced a match within the caption's chunk
+    // or either neighbour (rendered: forechecking_systems 024-026 around forecheck-122 at 025, 027-029
+    // around forecheck-131 at 028; how_to_watch_hockey 006-008 around forecheck-122 at 007). Re-read
+    // this session: hc.txt 7.5(c) "A Match penalty will be assessed" for a hit from behind "into the
+    // boards or goal frame, in such a way that the player is unable to protect or defend themselves";
+    // carha_2026.txt 53(b) the same into "the boards or goal net", "shall be assessed"; usah.txt 608(c)
+    // "shall be assessed ... in all instances when a player recklessly endangers an opponent from
+    // behind with excessive force while the opponent is in a vulnerable or defenseless position" --
+    // NO boards condition, so USA Hockey is split off (the W347 repair in defensive_zone_coverage.mjs).
+    // Wording follows forechecking_systems.md's own 2-1-2 body. Do not cut "or defenceless" to
+    // "vulnerable" or the reverse: the book's condition is either, and one alone narrows the match.
+    // W350 read-aloud fix: the sentence leads with its subject (a fronted "Into the boards ..." was
+    // heard as a fragment). "a hit from behind", NOT "one": the sentence before ends "a hit the
+    // referee judges reckless", so "one" would bind there and narrow the HC/CARHA match, which has
+    // no recklessness condition, to reckless hits. The later "a reckless one" binds to "a hit from behind".
+    'Hockey Canada and CARHA make a hit from behind into the boards or net a match when the player ' +
+    'cannot protect themselves; USA Hockey does for a reckless one with excessive force on a vulnerable or ' +
+    'defenceless player, boards or not (608(c)). In many leagues body checking is not allowed at ' +
     'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
     'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
     'pin an opponent, and the Women\'s NIHL is non-checking.',
