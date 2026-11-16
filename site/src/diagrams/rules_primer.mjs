@@ -432,18 +432,25 @@ const icingTheRaceAndTheDot = {
   // and IIHF 81.1, PWHL 83.1, USA Hockey, CARHA, Hockey Canada) in the sentence just before the
   // marker, which ends the chunk before the caption's; the chunk after it repeats the Hockey Canada
   // scope. rules_primer.md voices the 81.1 mechanism in the caption's own chunk and USA Hockey,
-  // CARHA and Hockey Canada in the next. The ⚠️ sentence, "Ask which your league plays.", the
-  // boarding limb and the full posture are unchanged word for word.
+  // CARHA and Hockey Canada in the next. The scope sentence ("This is not everybody’s icing."),
+  // "Ask which your league plays.", the boarding limb and the full posture are unchanged word for
+  // word; since W360 the ⚠️ sits before "Whoever wins" (see below), not on the scope sentence.
+  // ✂️ W360 (16 November 2026): GLYPH MOVED, no word changed. captionNodes() ambers from the
+  // glyph to the END, so the 634-char run from "This is not everybody’s icing" made a 400px
+  // screen ~66% amber. The glyph now opens the posture instruction ("Whoever wins ... shoulder"),
+  // the clause the picture of two skaters racing at the end boards creates; the scope sentence and
+  // the boarding / 624(d) limb are unchanged and stay as plain caption text in front of it. The
+  // caption still carries a glyph, so md_to_speech still voices "Important." for it.
   caption:
     'Hybrid icing: both skaters reach the end-zone dots level, and the box marks the near dot ' +
     'only as the deadline for the decision, not a finish line. The linesperson decides on ' +
     'who would touch the puck first, so being level settles nothing: be clearly on course to reach ' +
     'the puck first, because a race still too close to call at the dots is icing. ' +
-    '⚠️ This is not everybody’s icing. Ask which your ' +
+    'This is not everybody’s icing. Ask which your ' +
     'league plays. The race is not a licence to hit: unnecessary contact with a player playing ' +
     'the puck on an obvious icing is boarding if they hit the boards (NHL, IIHF and PWHL 41.1, ' +
     'Hockey Canada 7.2), and USA Hockey penalises any unnecessary contact on an obvious icing ' +
-    '(624(d)). Whoever wins, in any league, checking or not, never turn your back to anyone coming ' +
+    '(624(d)). ⚠️ Whoever wins, in any league, checking or not, never turn your back to anyone coming ' +
     'at you, and never duck. Get your skates parallel to the wall instead, take it on your ' +
     'forearm and hip, head up and chin off your chest' +
     SHOULDER_TAIL,

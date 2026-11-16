@@ -219,7 +219,16 @@ const forecheck212 = {
     // through them" became the instruction "Go hard at the carrier, never through them"; the
     // repeated "The carrier behind their net" became "They". Every safety limb and the whole
     // 604(a)/(b) / 7.3 enumeration are word for word, so check_caption_pairs.py still holds.
-    '\u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; and Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves.',
+    // \u2702\uFE0F W360 (16 November 2026): ORDER only, no word changed. captionNodes() ambers from the
+    // glyph to the END, so the 631-char block made a 400px screen ~82% amber. The scope sentence and
+    // the 604(a)/(b) / 7.3 enumeration now come FIRST as plain caption text, and the glyph opens the
+    // instruction ("Go hard ... never finish into their back."), which is now the whole amber run.
+    // "Find out first" still precedes the enumeration that its "it" points at, and "They" still
+    // follows "the carrier".
+    // W360 M2 (16 November 2026): "and CARHA in every game" ADDED. CARHA 49(a) penalises any player
+    // who "intentionally bodies, pushes, shoves" or "does not avert body contact", and carha_2026.txt
+    // has no checking division; center.md and game_management.md embed this diagram alone.
+    'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves; and CARHA in every game. \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +

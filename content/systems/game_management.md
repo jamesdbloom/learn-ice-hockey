@@ -1189,7 +1189,7 @@ Rule: Hockey Canada: a head hit from behind is head contact — still plan on at
 Rule: Hockey Canada Junior/Senior: a hit from behind to the head is a match if defenceless or you meant harm (7.7(c)); major and game misconduct at high violence, a head-or-neck cross-check or head hurt off glass, ice or boards (7.7(b)); minor and misconduct if moderate (7.7(a)) — plan on ejection anyway
 Rule: USA Hockey: a check from behind is at least a minor and misconduct (608(a)); reckless, forceful at the boards, or head first into boards or net, at least a major and game misconduct (608(b); Casebook Sit. 1), as is careless head contact (620(b)); reckless, a match and likely multi-game ban (602(a))
 Rule: USA Hockey makes a check from behind a mandatory match, with a likely multi-game ban, where it "recklessly endangers" an opponent "in a vulnerable or defenseless position" with excessive force (608(c))
-Rule: CARHA grants no window at all — it writes no late-hit rule, prices the body check itself at 49(a), puts a game misconduct in both limbs of 53(a) for a hit from behind "anywhere on the ice", and makes accidental head contact without a stick a minor at 50(a)
+Rule: CARHA grants no window — it writes no late-hit rule, prices the body check itself at 49(a), a major if it injures, which ejects (30(a)), puts a game misconduct in both limbs of 53(a) for a hit from behind "anywhere on the ice", and makes accidental head contact without a stick a minor at 50(a)
 Rule: The check is not late the instant the puck leaves, if you may check at all — Hockey Canada 8.3's whole test is an arm and a stick length — but under the IIHF a body check on a skater no longer in control of the puck and unaware or unprepared is "automatically considered reckless", window or not
 Rule: USA Hockey’s test is avoidability, not distance — 640(b) bars an "avoidable" check on a player who has released a shot, and the Casebook’s arm-and-stick distance is one of four conditions, so an avoidable check inside it is still at least a minor
 ```
@@ -1238,13 +1238,13 @@ Under Hockey Canada a late hit to the head that is also from behind is called as
 
 ### Where checking is barred
 
-**Find out whether body checking is allowed in this game; where it is barred, take the ice and play the puck.** ⚠️ **A body check there can end your game:** USA Hockey, Hockey Canada and CARHA each reach a major and game misconduct for it, and in women's hockey so does IIHF 101.1.
+**Find out whether body checking is allowed in this game; where it is barred, take the ice and play the puck.** ⚠️ **A body check there can end your game:** USA Hockey, Hockey Canada and CARHA each reach a major and game misconduct for it, and so do IIHF 101.1 in women's hockey and the PWHL for an illegal hit (52.5).
 
 ```facts
 Rule: No late-hit question arises where you may not body check at all — USA Hockey 604(a) bars it at 12 & under and below, in all Girls'/Women's and all non-check Adult classifications; Hockey Canada 7.3 at U13 and below, throughout female hockey and in any Member-approved division
 Rule: USA Hockey 604(b) bars body checking outright any time a checking team plays a non-checking one — so whether you may check can change per fixture, not just per division
 Rule: The IIHF book and the In-House Rules name no age — ask your league; the Women's NIHL is non-checking at U16 and senior. Outside it, in women's play IIHF 101.1 allows a check only to play or win the puck, never to pin or push a player into the boards, and a step or glide into one is at least a minor
-Rule: CARHA's adult book writes no division where body checking is allowed — 49(a) penalises intentional body contact at a minor or a major, and a major brings a game misconduct and at least a one-game suspension (30(a), 32(d))
+Rule: CARHA's adult book writes no division where body checking is allowed — 49(a) penalises intentional body contact at a minor or a major, a major if it injures, and a major brings a game misconduct and at least a one-game suspension (30(a), 32(d))
 Rule: The PWHL's 52.1 permits angling and puck-directed contact, but opposite-directional force, leaving your skating lane to make contact, or an arm, shoulder or hip extended after angling is an illegal hit
 Action: Where body checking is permitted, take the body of the player who has the puck; where it is barred, take the ice they need and play the puck
 ```
