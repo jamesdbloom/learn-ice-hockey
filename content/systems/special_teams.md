@@ -1123,13 +1123,13 @@ Under Hockey Canada, a hit from behind that reaches the head is called as head c
 
 Under USA Hockey, checking a goalie from behind is at least a minor and a misconduct (608(a)). A forceful one on a goalie standing along the boards, a reckless one, or one that sends the goalie head first into the boards or goal frame, is at least a major and game misconduct (608(b); Casebook 608, Situation 1) — ⚠️ **if it is reckless, plan on a match and a likely multi-game suspension (602(a)).** Under USA Hockey, careless contact with the goalie's head or neck is a mandatory major and game misconduct too (620(b)).
 
-Three books make a match mandatory: ⚠️ **Hockey Canada and CARHA must give a match for putting a goalie who cannot protect themselves into the net or the boards from behind, and USA Hockey for any hit from behind that recklessly endangers a vulnerable or defenceless goalie with excessive force (608(c)).**
+Three books make a match mandatory: ⚠️ **Hockey Canada and CARHA must give a match for putting a goalie who cannot protect themselves into the net or the boards from behind, and USA Hockey for any hit from behind that recklessly endangers a vulnerable or defenceless goalie with excessive force** (608(c)).
 
-For a goalie hit from behind, Hockey Canada does not say whether checking from behind or goaltender interference governs, so ⚠️ **plan on the dearer: 8.5(b)'s mandatory major and game misconduct for a charge, at least 7.5's minor and game misconduct otherwise.** On the head Hockey Canada calls it head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal), but plan on the same anyway.
+For a goalie hit from behind, Hockey Canada does not say whether checking from behind or goaltender interference governs, so ⚠️ **plan on the dearer: 8.5(b)'s mandatory major and game misconduct for a charge**, at least 7.5's minor and game misconduct otherwise. On the head Hockey Canada calls it head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal), but plan on the same anyway.
 
 ### Over the glass
 
-**Clear hard and flat, keep it in the rink, and never aim it at the bench or out of play off a draw.** ⚠️ **Over the glass from your own zone is a minor under the NHL, IIHF and PWHL, and a deliberate shoot-out is a minor from anywhere in all six books — on a kill, a 5-on-3.**
+**Clear hard and flat, keep it in the rink, and never aim it at the bench or out of play off a draw.** ⚠️ **Over the glass from your own zone is a minor under the NHL, IIHF and PWHL, and a deliberate shoot-out is a minor from anywhere in all six books** — on a kill, a 5-on-3.
 
 ```facts
 Rule: The "no glass" carve-out means boards without glass, not the benches — over the glass behind the bench is penalised, only a puck straight into it is exempt (NHL 63.2(iii), PWHL 65.2(iii) and Notes; IIHF 63.2(III) says "no protective glass" and reaches glass "surrounding" the bench, wider)

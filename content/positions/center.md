@@ -431,7 +431,7 @@ Action: If their goalie comes out for your dump-in, pull up and take the lane th
 
 **🇬🇧 In any British competition, plan for their goalie to come out for your dump-in.** The IIHF book carries the rule at 27.7, and nothing in the Elite League's Casebook switches it off. But England Ice Hockey's *Rules & Regulations* 22.3 call the restricted area *"not currently enforced"*, its scope and standing unsettled, and the In-House Rules never mention it. The published documents do not settle it, so the attacking team's safe assumption is a goalie who can play the corner. Ask your league, and treat an unmarked sheet as a hint rather than a ruling: IIHF 27.7 turns on *"the position of the puck"*, not on the markings.
 
-**And never arrive into their goalie** — ⚠️ **charging one can end your game in every book, and under Hockey Canada it always does.** What [contact with the goalie](#contact-with-the-goalie) costs comes later, in What it costs.
+**And never arrive into their goalie** — ⚠️ **charging one can end your game in every book, and under Hockey Canada it always does, as it does under CARHA in the crease or if it injures, and under USA Hockey if it is reckless.** What [contact with the goalie](#contact-with-the-goalie) costs comes later, in What it costs.
 
 ---
 
@@ -723,7 +723,7 @@ The penalties behind the instructions above, one hazard at a time. Each part ope
 
 ### Where checking is barred
 
-**Find out whether you may body check at all before you plan any hit — and where you may not, steer and never push.** ⚠️ **A barred check is a minor at least: a major and game misconduct is mandatory under Hockey Canada if it injures, and under USA Hockey if it recklessly endangers.** In a CARHA-affiliated adult league, plan no hit.
+**Find out whether you may body check at all before you plan any hit — and where you may not, steer and never push.** ⚠️ **A barred check is a minor at least: a major and game misconduct is mandatory under Hockey Canada and CARHA if it injures, and under USA Hockey if it recklessly endangers.** In a CARHA-affiliated adult league, plan no hit.
 
 ```facts
 Rule: USA Hockey 604(a) bans body checking at 12 & under and below, in all Girls'/Women's age classifications and in all non-check Adult classifications
