@@ -212,13 +212,17 @@ const loosePuckWhoGoes = {
   // marker), "Neither warning depends on the angle you arrive at" (it now pre-empts the facts
   // block's angling line rather than the caption's), and the closing absolutes. The glyph
   // stays on "Two postures carry two different dangers", so the spoken "Important." is kept.
+  // W369, 16 November 2026: the glyph MOVED to the closing instruction, "Never turn your back
+  // to anyone coming at you, and never duck." A caption's amber runs from its glyph to its end,
+  // so on the old placement the whole 511-char danger unit was amber and filled 62% of a 400px
+  // window. No word changed; the caption still carries one glyph, so "Important." is kept.
   // SHOULDER_NOT_THE_SURFACE is no longer imported here (its only use in this file).
   caption:
     'A loose puck in your own corner, your net at the right, drawn under a low zone collapse: ' +
     'the closest player goes hard to it, one teammate supports on the boards side, one covers ' +
     'the net front, and nobody else joins. Find out which coverage your team plays. ' +
     'The other two skaters are not drawn. ' +
-    '⚠️ Two postures carry two different dangers. A chin dropped to the chest is ' +
+    'Two postures carry two different dangers. A chin dropped to the chest is ' +
     'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
     // Behind and is addressed to the player delivering the check; the caption carried its
@@ -229,7 +233,7 @@ const loosePuckWhoGoes = {
     'contact a hit from behind, and USA Hockey warns the checker delivering one: "Even a light ' +
     'hit from behind could inflict a severe head or neck injury." Neither warning depends on the ' +
     'angle you arrive at. ' +
-    'Never turn your back to anyone coming at you, and never duck.',
+    '⚠️ Never turn your back to anyone coming at you, and never duck.',
 
   describe:
     'Your own end zone, the net at the right, your goalie in the crease. A loose puck sits ' +
