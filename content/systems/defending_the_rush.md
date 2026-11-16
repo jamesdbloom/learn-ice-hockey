@@ -317,7 +317,7 @@ Position: Arrive at their inside hip, not their back pocket, so your stick reach
 Action: Take the ice, not the body — get ahead of your man and hold your lane; veering into an opponent off the puck can be called interference anywhere, and where checking is barred an illegal check too
 Rule: Never finish the chase into their back, puck or not — plan on it ending your game: no minor in the NHL, PWHL or IIHF (43.2), a game misconduct even at the floor in Hockey Canada 7.5(a) and CARHA 53(a); under USA Hockey, if reckless or meant to injure, a match and likely multi-game ban (602(a))
 Rule: USA Hockey: even light checking from behind is at least a minor + misconduct (608(a)); forceful at the boards, head first into boards or net, or reckless, at least a major + game misconduct (608(b); Casebook 608 Sit. 1)
-Rule: A hit from behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c) (on the head 7.6(c)/7.7(c)) and CARHA 53(b) (goal net); a hit meant to injure is a match in every book here but the IIHF
+Rule: A hit from behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c) (on the head 7.6(c)/7.7(c)) and CARHA 53(b); a hit meant to injure is a match in every book here but the IIHF
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Rule: Your blade goes in the passing lane, not on your man — NHL and IIHF 56.1 and PWHL 57.1 grant body position to lengthen their path to the puck on three conditions: stick not utilized, free hand not used, and no otherwise illegal check delivered off that position
@@ -406,7 +406,7 @@ That failure is the reason to ask the follow-up question. Teams that run it well
 ```facts
 Never: Finish into the back of a carrier heading for their own end boards. Take the puck, take the ice, or angle them off it instead, whichever book you are under
 Rule: A forceful hit into a player's back at the wall ejects you in five of six books (Hockey Canada, head hit: plan on it; a match if defenceless); IIHF: plan on it — NHL, PWHL, IIHF: no minor (43.2); meant to injure, a match in all but the IIHF, in USA Hockey reckless too; likely multi-game ban (602(a))
-Rule: From behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c), CARHA 53(b) (goal net) — and a match bars you from "any further games" until your case is dealt with (Hockey Canada 4.10(a); CARHA 34(a) in CARHA-affiliated adult leagues)
+Rule: From behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c), CARHA 53(b) — and a match bars you from "any further games" until your case is dealt with (Hockey Canada 4.10(a); CARHA 34(a) in CARHA-affiliated adult leagues)
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Never: Turn hounding into contact where you may not body check at all — it is your feet, your stick and your angle, and nothing else
@@ -632,7 +632,7 @@ Action: Stick on the puck only — a poke at the puck itself, or a stick lift on
 Options: Skating to catch them is legal, and angling them wide with your route turns it into a bad-angle chance — the route is yours everywhere, the contact that moves them off it is not
 Rule: Catching a breakaway carrier puts you behind them, so play the puck, never their back — the NHL, PWHL and IIHF write no minor for a hit from behind (43.2), and Hockey Canada 7.5(a) and CARHA 53(a) add a game misconduct even at the floor
 Rule: A hit from behind that reaches the head of a player who cannot protect themselves is a Hockey Canada match (7.6(c), 7.7(c)); USA Hockey 608(c) must give one when it recklessly endangers a vulnerable or defenceless opponent with excessive force, boards or not
-Rule: A hit from behind into the net or boards on a player who cannot protect themselves is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b) (goal net); a hit meant to injure is a match in every book here but the IIHF
+Rule: A hit from behind into the net or boards on a player who cannot protect themselves is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b); a hit meant to injure is a match in every book here but the IIHF
 Rule: A hook, trip, hold or slash from behind that denies the chance is a penalty shot, not a two-minute minor, in every book (NHL 57.3, IIHF 24.8, PWHL 58.3, Hockey Canada 4.11(a)(i), CARHA 86(c)); USA Hockey 616(a) lets the team you fouled take a minor instead (406(a))
 Never: Stand up and look at the official — play does not stop until the attacking team loses possession (NHL Rule 57.3)
 ```
