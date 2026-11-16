@@ -258,7 +258,7 @@ const dzoneAlignment = {
     'with a low zone collapse, so find out what your team runs. The shaded circle ' +
     // ✂️ TRIMMED 12 November 2026, W304: 1,356 -> 1,259 chars. CUT: ": everyone except the two
     // taking the draw keeps both skates outside the circle and the hash marks". It is not a host
-    // cut: the same caption states it at a fuller tier straight after, in the ⚠️ sentence (skates
+    // cut: the same caption states it at a fuller tier later, in the ⚠️ sentence that closes it (skates
     // and stick behind your own hash mark, skates off the circle line, for anyone not taking the
     // draw) and in the book-by-book split. This cut needed no host edit.
     // LEFT WHOLE (W304, 12 November 2026) for the remaining limbs. Chunks are caption chunk / next
@@ -280,15 +280,6 @@ const dzoneAlignment = {
     //   for it.
     // - The boards-side defenceman disclosure is about this drawing and stays with it.
     'is the rule. ' +
-    // ⚠️ W33: INSTRUCTION FIRST. `captionNodes` makes everything from the first ⚠ to the end
-    // one amber run, and this run was ~990 chars with the instruction ("Keep your skates…")
-    // sitting under the book-by-book tariff. Re-ordered, not cut: every limb is still here, the
-    // instruction now opens the amber run, and the second glyph (on "Contact is priced…"),
-    // which was inert inside the same run, is gone. Speech unchanged — one "Important." per
-    // caption whichever glyph carries it.
-    '⚠️ If you are not taking the ' +
-    'draw, keep your skates and stick behind your own hash mark, your skates off the circle ' +
-    'line, and your hands, body and stick off the opponent beside you and off their stick: that satisfies every book. ' +
     // 8 November 2026: "Touching the line is not safe in every book." cut -- it announced the
     // sentence that follows, which states the same split book by book. Nothing else could go: of
     // seven hosts only winger.md (facts :580-582) and rink_map.md (:270, 76.7(ii) only) voice any
@@ -345,7 +336,24 @@ const dzoneAlignment = {
     // centre-loses-the-draw consequence in the caption's chunk or either neighbour (W321 render).
     'Contact with an opponent before the drop is a violation in its own right under those NHL, ' +
     'IIHF and PWHL rules, where it usually costs your centre the dot; under Hockey Canada ' +
-    'Rule 6.2(a) and CARHA Rule 57(a), contact by anyone but the taker always does.',
+    'Rule 6.2(a) and CARHA Rule 57(a), contact by anyone but the taker always does. ' +
+    // ⚠️ W361 (16 November 2026): INSTRUCTION LAST, SO THE AMBER IS ONLY THE INSTRUCTION.
+    // `captionNodes` makes everything from the first ⚠ to the END of the caption one amber run.
+    // W33 put the instruction first, which still left a 776-char amber run (the book split and
+    // the contact limb rode inside it) — 68.5% of the worst 400px window on center.md. The
+    // instruction sentence now closes the caption and carries the glyph; the book split and the
+    // contact limb are plain caption text before it. No word changed; one glyph, so speech is
+    // unchanged (one "Important." per caption). "that satisfies every book" now follows the
+    // split it summarises. The W33 note on the earlier order is kept for the record:
+    // (W33, superseded by W361:) INSTRUCTION FIRST. `captionNodes` makes everything from the first ⚠ to the end
+    // one amber run, and this run was ~990 chars with the instruction ("Keep your skates…")
+    // sitting under the book-by-book tariff. Re-ordered, not cut: every limb is still here, the
+    // instruction now opens the amber run, and the second glyph (on "Contact is priced…"),
+    // which was inert inside the same run, is gone. Speech unchanged — one "Important." per
+    // caption whichever glyph carries it.
+    '⚠️ If you are not taking the ' +
+    'draw, keep your skates and stick behind your own hash mark, your skates off the circle ' +
+    'line, and your hands, body and stick off the opponent beside you and off their stick: that satisfies every book.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +

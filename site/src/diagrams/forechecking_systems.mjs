@@ -225,7 +225,9 @@ const forecheck212 = {
     // instruction ("Go hard ... never finish into their back."), which is now the whole amber run.
     // "Find out first" still precedes the enumeration that its "it" points at, and "They" still
     // follows "the carrier".
-    // W360 M2 (16 November 2026): "and CARHA in every game" ADDED. CARHA 49(a) penalises any player
+    // W360 M2 (16 November 2026): "and CARHA in every game" ADDED, and the "and" that stood before
+    // "Hockey Canada Rule 7.3" DROPPED so the list ends on CARHA -- so after M2 the caption is no longer
+    // word-identical to HEAD apart from order. CARHA 49(a) penalises any player
     // who "intentionally bodies, pushes, shoves" or "does not avert body contact", and carha_2026.txt
     // has no checking division; center.md and game_management.md embed this diagram alone.
     'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves; and CARHA in every game. \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
@@ -523,10 +525,22 @@ const forecheck122 = {
     // The IIHF/NIHL limb is kept because neither host voices it near either diagram. The ", so"
     // in "not allowed at all, so find out" was ruled NOT an inversion (see the comment above
     // forecheck-pinch); do not re-refer it.
-    'F2 is drawn arriving at the wall, not at the winger. ⚠️ If your game allows body checking, ' +
-    'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
-    'Never finish into the back of a player facing away. The NHL and IIHF have no minor for that, ' +
-    'so the floor is a major and a game misconduct, mandatory in the NHL, and in the IIHF book ' +
+    // W361 (16 November 2026): ORDER, plus one word change. captionNodes() ambers from the glyph to the
+    // END, so the ~880-char block was ~76% amber on a 400px screen. The scope sentence, the IIHF
+    // women's / NIHL limb and both price sentences now come FIRST as plain caption text, and the glyph
+    // opens the onus instruction and "Never finish into the back ...", which are now the whole amber
+    // run. The ONE word change: "no minor for that" became "no minor for checking from behind",
+    // because "that" pointed at the never-finish sentence, which now follows it (NHL 43 / IIHF 43 are
+    // "Checking from Behind"). "a reckless one" still binds to "a hit from behind" in its own sentence.
+    // W361 rules-verifier: the PWHL ADDED to the floor sentence -- pwhl_rules.txt 43.2 "There is no
+    // provision for a minor penalty for checking from behind"; 43.5 "A game misconduct penalty must be
+    // assessed anytime a major penalty is applied for checking from behind."
+    'F2 is drawn arriving at the wall, not at the winger. In many leagues body checking is not allowed at ' +
+    'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
+    'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
+    'pin an opponent, and the Women\'s NIHL is non-checking. ' +
+    'The NHL, PWHL and IIHF have no minor for checking from behind, ' +
+    'so the floor is a major and a game misconduct, mandatory in the NHL and PWHL, and in the IIHF book ' +
     'for a hit the referee judges reckless. ' +
     // W350 (16 November 2026): the MATCH, added to both copies of this shared block. Before it, this
     // wall scene priced only the NHL and IIHF, and no host voiced a match within the caption's chunk
@@ -546,10 +560,9 @@ const forecheck122 = {
     // no recklessness condition, to reckless hits. The later "a reckless one" binds to "a hit from behind".
     'Hockey Canada and CARHA make a hit from behind into the boards or net a match when the player ' +
     'cannot protect themselves; USA Hockey does for a reckless one with excessive force on a vulnerable or ' +
-    'defenceless player, boards or not (608(c)). In many leagues body checking is not allowed at ' +
-    'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
-    'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
-    'pin an opponent, and the Women\'s NIHL is non-checking.',
+    'defenceless player, boards or not (608(c)). ⚠️ If your game allows body checking, ' +
+    'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
+    'Never finish into the back of a player facing away.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. The same five opposition players as the ' +
@@ -699,10 +712,22 @@ const forecheck131 = {
     // The IIHF/NIHL limb is kept because neither host voices it near either diagram. The ", so"
     // in "not allowed at all, so find out" was ruled NOT an inversion (see the comment above
     // forecheck-pinch); do not re-refer it.
-    'F2 is drawn arriving at the wall, not at the winger. ⚠️ If your game allows body checking, ' +
-    'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
-    'Never finish into the back of a player facing away. The NHL and IIHF have no minor for that, ' +
-    'so the floor is a major and a game misconduct, mandatory in the NHL, and in the IIHF book ' +
+    // W361 (16 November 2026): ORDER, plus one word change. captionNodes() ambers from the glyph to the
+    // END, so the ~880-char block was ~76% amber on a 400px screen. The scope sentence, the IIHF
+    // women's / NIHL limb and both price sentences now come FIRST as plain caption text, and the glyph
+    // opens the onus instruction and "Never finish into the back ...", which are now the whole amber
+    // run. The ONE word change: "no minor for that" became "no minor for checking from behind",
+    // because "that" pointed at the never-finish sentence, which now follows it (NHL 43 / IIHF 43 are
+    // "Checking from Behind"). "a reckless one" still binds to "a hit from behind" in its own sentence.
+    // W361 rules-verifier: the PWHL ADDED to the floor sentence -- pwhl_rules.txt 43.2 "There is no
+    // provision for a minor penalty for checking from behind"; 43.5 "A game misconduct penalty must be
+    // assessed anytime a major penalty is applied for checking from behind."
+    'F2 is drawn arriving at the wall, not at the winger. In many leagues body checking is not allowed at ' +
+    'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
+    'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
+    'pin an opponent, and the Women\'s NIHL is non-checking. ' +
+    'The NHL, PWHL and IIHF have no minor for checking from behind, ' +
+    'so the floor is a major and a game misconduct, mandatory in the NHL and PWHL, and in the IIHF book ' +
     'for a hit the referee judges reckless. ' +
     // W350 (16 November 2026): the MATCH, added to both copies of this shared block. Before it, this
     // wall scene priced only the NHL and IIHF, and no host voiced a match within the caption's chunk
@@ -722,10 +747,9 @@ const forecheck131 = {
     // no recklessness condition, to reckless hits. The later "a reckless one" binds to "a hit from behind".
     'Hockey Canada and CARHA make a hit from behind into the boards or net a match when the player ' +
     'cannot protect themselves; USA Hockey does for a reckless one with excessive force on a vulnerable or ' +
-    'defenceless player, boards or not (608(c)). In many leagues body checking is not allowed at ' +
-    'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
-    'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
-    'pin an opponent, and the Women\'s NIHL is non-checking.',
+    'defenceless player, boards or not (608(c)). ⚠️ If your game allows body checking, ' +
+    'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
+    'Never finish into the back of a player facing away.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -1158,6 +1182,14 @@ const forecheckRolesRotate = {
   // is the exposure at a tournament with mixed entries or a girls' team on a boys' schedule. It
   // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
   // one voiced unit, and _split_paragraph breaks only at sentence ends.
+  // W361 (16 November 2026): ORDER, plus one addition. captionNodes() ambers from the glyph to the
+  // END, so the 608-char amber put the body-checking scope list in amber. The scope sentence and its
+  // list now come BEFORE the glyph as plain caption text, and the amber is the onus instruction alone
+  // ("Being the new F1 ... never finish into their back."). "Find out first" still precedes the list.
+  // ADDED: "; and CARHA in every game", as W360 M2 added to forecheck-212 -- the list was a closed
+  // list of the books that bar checking and omitted CARHA, which bars it in every game (carha_2026.txt
+  // Rule 49(a): a penalty for any player who "intentionally bodies, pushes, shoves" or "does not
+  // avert body contact"). The comment above about the glyph being LAST still holds.
   // W289 (11 November 2026) left this whole at 1,121 chars: rink_map.md (chunk 042) did not voice
   // the rotation, the lock-system alternative or any body-checking scope near the marker.
   // ✂️ TRIMMED 12 November 2026, W296: 1,121 -> 957 chars. CUT: the rotation sentence ("The
@@ -1174,14 +1206,15 @@ const forecheckRolesRotate = {
     'each glyph is the role just taken; the label beside it is the role held a second earlier. ' +
     'The shape is this guide\'s ' +
     'default 2-1-2, though a lock system pins one winger to the third job instead; the defencemen ' +
-    'hold the offensive blue line and do not rotate. ⚠️ Being the new F1 is not' +
-    ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +
-    'so the onus is on you: take the puck, take the ice, or ' +
-    'angle them off it, and never finish into their back. Find out first whether you may body ' +
+    'hold the offensive blue line and do not rotate. Find out first whether you may body ' +
     'check in this game at all — it can change per fixture, not just per division. USA Hockey ' +
     'bars it at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
     'hockey and whenever a checking team plays a non-checking one; Hockey Canada at U13 and ' +
-    'below, throughout female hockey and in any other division a Member approves.',
+    'below, throughout female hockey and in any other division a Member approves; and CARHA in every game. ' +
+    '⚠️ Being the new F1 is not' +
+    ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +
+    'so the onus is on you: take the puck, take the ice, or ' +
+    'angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +

@@ -397,9 +397,28 @@ const collapseCorner = {
     'at the instant the puck goes into the strong-side corner. ' +
     'Both wingers stay high on the points; the centre leaves the high slot to go down as the ' +
     'second body and make it two on one. ' +
-    '⚠️ The second body is the one that arrives late and unseen, and this carrier has the puck ' +
+    'This is frame one of two, not a shape to hold. ' +
+    // ⚠️ FULL STOP, NOT AN EM DASH — AND THIS ONE INVERTS NON-NEGOTIABLE 7 ITSELF.
+    // This ran "…reading bodies, not areas — ask your coach which your team plays". The
+    // negation is a constituent negation in the MAIN clause, four words before the dash, with
+    // no conjunction closing it, and the tail is a bare imperative — so a listener can hear
+    // "not areas, DON'T ask your coach which your team plays". What that inverts is the
+    // corpus's cardinal rule: name the system, name the alternative, tell the reader to find
+    // out which their team plays. The inversion deletes the "find out" half in the spoken
+    // layer, which is the half that stops a coaching choice being heard as a law of hockey.
+    // Every OTHER cardinal-rule instruction in this directory is introduced by "so" ("…so
+    // find out which yours runs"), and that conjunction is what closes the negation. This was
+    // the one with a bare imperative straight after the dash.
+    // ⚠️ 22 October 2026: the caption used to end "All six books are set out earlier in this
+    // document." That is a pointer a listener cannot follow, and the substance is already voiced
+    // before the marker: §"The base shape" (defensive_zone_coverage.md, the three bullets
+    // headed "The hit from behind", plus "The next game" and "Boarding") prices the check from
+    // behind book by book. Sole host is the owner document. Dropped, not replaced:
+    // pricing six books here would restate the body in the layer least able to carry it.
+    'Under man-on-man or a hybrid these five would be reading bodies, not areas. Ask your ' +
+    'coach which your team plays. ' +
+    'The second body is the one that arrives late and unseen, and this carrier has the puck ' +
     'at their stick against the boards, with their back to the ice. ' +
-    'Arrive on the puck, or on the ice the carrier wants, or angle them off it — never into their back. ' +
     // SG207 safety review (8 Nov 2026): the base-shape body carries 'in most books ends your game' but NOT the
     // mandatory Hockey Canada 7.5(c) / CARHA 53(b) match for this exact picture; restored here verbatim from HEAD.
     // W236 (10 Nov 2026): USA Hockey 608(c) also makes a match mandatory ("shall be assessed") for a reckless hit
@@ -427,28 +446,18 @@ const collapseCorner = {
     // their back", and the pin instruction, each still under a glyph.
     // The cut also removes "so the floor is a major and an ejection", which OPEN_ITEMS records as
     // unwritten for a non-reckless IIHF check (43.3 discretionary) -- not repaired here, just gone.
+    // ⚠️ W361 (16 November 2026): THE INSTRUCTIONS NOW CLOSE THE CAPTION, SO THE AMBER IS THEM.
+    // `captionNodes` makes everything from the first ⚠ to the END of the caption one amber run,
+    // and with the glyph on "The second body…" that run was 812 chars (97.0% of the worst 400px
+    // window): hazard, tariff, pin, frame note and the coaching-choice sentence all rode in amber.
+    // Re-ordered, no word changed: the frame note and the coaching-choice sentence now follow the
+    // base shape; the hazard sentence and the match tariff are plain caption text; the glyph moved
+    // from "The second body" onto "Arrive on the puck… never into their back", which now sits
+    // straight after the tariff and before the pin. Both glyphs kept (the pin glyph is inside the
+    // same run); speech unchanged, one "Important." per caption.
+    '⚠️ Arrive on the puck, or on the ice the carrier wants, or angle them off it — never into their back. ' +
     '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
-    'joining a pin. ' +
-    'This is frame one of two, not a shape to hold. ' +
-    // ⚠️ FULL STOP, NOT AN EM DASH — AND THIS ONE INVERTS NON-NEGOTIABLE 7 ITSELF.
-    // This ran "…reading bodies, not areas — ask your coach which your team plays". The
-    // negation is a constituent negation in the MAIN clause, four words before the dash, with
-    // no conjunction closing it, and the tail is a bare imperative — so a listener can hear
-    // "not areas, DON'T ask your coach which your team plays". What that inverts is the
-    // corpus's cardinal rule: name the system, name the alternative, tell the reader to find
-    // out which their team plays. The inversion deletes the "find out" half in the spoken
-    // layer, which is the half that stops a coaching choice being heard as a law of hockey.
-    // Every OTHER cardinal-rule instruction in this directory is introduced by "so" ("…so
-    // find out which yours runs"), and that conjunction is what closes the negation. This was
-    // the one with a bare imperative straight after the dash.
-    // ⚠️ 22 October 2026: the caption used to end "All six books are set out earlier in this
-    // document." That is a pointer a listener cannot follow, and the substance is already voiced
-    // before the marker: §"The base shape" (defensive_zone_coverage.md, the three bullets
-    // headed "The hit from behind", plus "The next game" and "Boarding") prices the check from
-    // behind book by book. Sole host is the owner document. Dropped, not replaced:
-    // pricing six books here would restate the body in the layer least able to carry it.
-    'Under man-on-man or a hybrid these five would be reading bodies, not areas. Ask your ' +
-    'coach which your team plays.',
+    'joining a pin.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the puck in the ' +
