@@ -483,7 +483,8 @@ Never: Stay in the crease after being shoved in — get out, avoiding the goalie
 Rule: Being pushed, shoved or fouled into the goalie is not contact you initiated, "provided the attacking player has made a reasonable effort to avoid such contact" (NHL and IIHF Rule 69.1)
 Rule: NHL and IIHF 69.4 protects a goalie who has played the puck outside the crease and is then "prevented from returning" by "the deliberate actions of an attacking player" — a separate foul from 69.1's crease-position rule, turning on intent rather than on contact
 Rule: Under USA Hockey your stick in the paint costs the goal too, both skates outside, while the goalie is in the crease (Casebook 625 Sit. 10)
-Never: Lean on or arrive into the goalie, in or out of the crease — leaning is a penalty in every book; a charge can end your game in every book, and always does under Hockey Canada or, in the crease, CARHA
+Never: Lean on or arrive into the goalie, in or out of the crease — leaning is a penalty in every book, and a charge can end your game in every book
+Rule: A charge on the goalie is a mandatory major and game misconduct under Hockey Canada 8.5(b) wherever they are, under CARHA 52(b) in the crease or if it injures, and under USA Hockey 607(b) if it is reckless
 ```
 
 ![](diagram:oz-net-front-screen)
@@ -498,7 +499,7 @@ Never: Lean on or arrive into the goalie, in or out of the crease — leaning is
 
 **Shoved in? Get out at once — around the goalie, not through them.** Under the NHL and the IIHF, contact after you are *"pushed, shoved, or fouled"* into the goalie is not contact you initiated, *"provided the attacking player has made a reasonable effort to avoid such contact."* That proviso is part of the relief, and the relief decides only who started the contact: staying in the crease can still cost the goal for impairing the goalie, and the IIHF lets the referee stop play for a neutral-zone draw if you do not leave immediately. **Every book penalises you for not trying to avoid the goalie, whatever put you there**.
 
-**Leaning on the goalie as you screen is a penalty in every book, and a screen outside the crease is not automatically safe** — contact, or a position that stops the goalie moving freely in the crease, can still cost the goal. ⚠️ **Never arrive into a goalie, in or out of the crease: charging one can end your game in every book, and under Hockey Canada it always does, and so does a charge on a goalie in the crease under CARHA.** What [the crease and the goal](#the-crease-and-the-goal) and [contact with the goalie](#contact-with-the-goalie) cost comes later, in What it costs.
+**Leaning on the goalie as you screen is a penalty in every book, and a screen outside the crease is not automatically safe** — contact, or a position that stops the goalie moving freely in the crease, can still cost the goal. ⚠️ **Never arrive into a goalie, in or out of the crease: charging one can end your game in every book.** It always does under Hockey Canada, as it does under CARHA in the crease or if it injures, and under USA Hockey if it is reckless. What [the crease and the goal](#the-crease-and-the-goal) and [contact with the goalie](#contact-with-the-goalie) cost comes later, in What it costs.
 
 ---
 
