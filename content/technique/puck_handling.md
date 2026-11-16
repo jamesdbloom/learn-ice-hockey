@@ -517,7 +517,7 @@ Rule: The IIHF's free-hand wording is substantively identical to the NHL's; USA 
 | **Fending off their stick** | Momentarily fending it off with the free hand — **NHL and IIHF 56.1, PWHL 57.1, and Hockey Canada 8.1**, which permits blocking a stick with the hands | Hanging onto the stick after fending it off |
 | **The bar as a brace** | Leaning the forearm-and-shaft bar in to hold the ground you have — in a Hockey Canada or USA Hockey non-checking game hold it there rather than lean; under CARHA keep it off them | Driving the shaft between your two hands into them — **a cross-check**; CARHA requires no force, and Hockey Canada leaves the push-or-strike test to the referee |
 
-**The bar is a brace, not a shove — and that is where this move ends and a cross-check starts.** Lean it in to hold the ground you have; drive it into them and ⚠️ **the shaft between your two hands has checked an opponent — a cross-check in every book here.**
+**The bar is a brace, not a shove — and that is where this move ends and a cross-check starts.** Where checking is allowed, lean it in to hold the ground you have; in a non-checking game hold it there rather than lean, and under CARHA keep it off them. ⚠️ **Never drive it into them. If you do, the shaft between your two hands has checked an opponent — a cross-check in every book here.**
 
 **What the NHL rulebook says (2025-26):**
 

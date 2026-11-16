@@ -11,7 +11,7 @@
 
 **Defending, watch your man rather than the puck.** Five teammates already watch the puck; nobody else watches your man. Keep them in your peripheral vision and take short looks at the puck. If you cannot see both in one glance, move.
 
-**Stick in the passing lane, body between your man and your own net.** Lay the blade flat in the lane, never across anyone, which is a restraining foul. If you cannot do both in your own zone, net-side wins.
+**Stick in the passing lane, body between your man and your own net.** Lay the blade flat in the lane. Never lay it across anyone: a stick across a player is hooking or interference. If you cannot do both in your own zone, net-side wins.
 
 **Layer behind the pressure — never duplicate it.** One player pressures the carrier; the next sits behind them, taking away the pass the carrier wants. Two on one puck leaves an attacker free. A planned double-team or man-to-man coverage is the exception, so ask.
 

@@ -404,8 +404,14 @@ const collapseCorner = {
     // mandatory Hockey Canada 7.5(c) / CARHA 53(b) match for this exact picture; restored here verbatim from HEAD.
     // W236 (10 Nov 2026): USA Hockey 608(c) also makes a match mandatory ("shall be assessed") for a reckless hit
     // from behind with excessive force on a vulnerable or defenceless opponent; the closed HC/CARHA list understated it.
-    'A hit from behind into the boards on a player who cannot protect themselves is a match under Hockey Canada and CARHA, ' +
-    'and under USA Hockey if it is reckless, with excessive force. ' +
+    // W347 (15 Nov 2026): 608(c) has NO boards condition ("checking from behind in all instances when a player
+    // recklessly endangers an opponent from behind with excessive force while the opponent is in a vulnerable or
+    // defenseless position") — the old wording hung USA Hockey off the boards-framed subject. Split: HC 7.5(c) "will be
+    // assessed" / CARHA 53(b) "shall be assessed" for a hit from behind into the boards or goal frame/net on a player
+    // unable to protect or defend themselves (mandatory, boards-conditioned); then USA Hockey's own condition, boards or not.
+    'If you hit them from behind into the boards or net when they cannot protect themselves, it is a mandatory match ' +
+    'under Hockey Canada and CARHA. USA Hockey makes any hit from behind a match when it recklessly endangers a ' +
+    'vulnerable or defenceless player with excessive force, boards or not (608(c)). ' +
     // ⚠️ 8 November 2026 (1,311 chars): THE BOOK-BY-BOOK TARIFF IS CUT, AND THE PRECONDITION THE
     // NOTE ABOVE SETS FOR CUTTING IT IS NOW MET. That note said the safety unit could go only once it
     // had been "routed into the body of §'The base shape' FIRST". It has been: the 1ea630d4
