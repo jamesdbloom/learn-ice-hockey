@@ -1050,12 +1050,12 @@ Body Contact and Battles sets out [the arm the books allow, and what a hold cost
 
 ```facts
 Rule: Under USA Hockey any game misconduct also suspends you for the team's next game (404(b)) — at least two games if it comes with your second major of the game (403(b))
-Rule: Hockey Canada 4.8(c) suspends a game misconduct given in the last 10 minutes, in overtime or after the game — at least the next game or seven days
+Rule: Hockey Canada 4.8(c) suspends a game misconduct given in the last 10 minutes, in overtime or after the game — at least the next game or seven days; a match keeps you out until your Member or league has dealt with your case (4.10(a))
 Rule: CARHA 32(d) suspends a major's game misconduct for a game or more, bar an accidental high stick, and a CARHA match keeps you out of further games until the Chairman has dealt with your case (34(a))
 ```
 
 - **Under USA Hockey.** **Any game misconduct — a skate push-off, a reckless late hit, a major for a hit from behind — also suspends you for the team's next game (404(b)) — and for at least two if it comes with your second major of the game (403(b)).**
-- **Under Hockey Canada and CARHA.** Hockey Canada 4.8(c) suspends a game misconduct given in the last 10 minutes, in overtime or after the game — at least the next game or seven days. CARHA 32(d) suspends a major's game misconduct for a game or more, bar an accidental high stick, and a CARHA match keeps you out of further games *“until their case has been dealt with by the Chairman”* (34(a)).
+- **Under Hockey Canada and CARHA.** Hockey Canada 4.8(c) suspends a game misconduct given in the last 10 minutes, in overtime or after the game — at least the next game or seven days, and a Hockey Canada match keeps you out of further games *“until the case has been dealt with by the appropriate Member or league”* (4.10(a)). CARHA 32(d) suspends a major's game misconduct for a game or more, bar an accidental high stick, and a CARHA match keeps you out of further games *“until their case has been dealt with by the Chairman”* (34(a)).
 
 Body Contact and Battles sets out [every book's count beyond tonight](../technique/body_contact_and_battles.md#and-what-these-fouls-cost-beyond-tonight).
 
