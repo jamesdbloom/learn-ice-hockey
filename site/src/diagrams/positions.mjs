@@ -1148,9 +1148,13 @@ const wingerDzRim = {
   //     hazard; winger.md :135 voices it ("a completely valid play"), passing_and_receiving.md
   //     does not, so it is cut as narrative rather than as a carried limb.
   // KEPT WORD FOR WORD: "keep your feet wide and low and still moving" (passing_and_receiving.md
-  // never voices the pinned-on-the-wall point), the timing sentence, and the WHOLE ⚠️ wall limb
-  // with SHOULDER_TAIL -- passing_and_receiving.md :213 tells its reader "the wall-contact
+  // never voices the pinned-on-the-wall point), the timing sentence, and the WHOLE wall limb
+  // with SHOULDER_TAIL (since W375 the posture half sits before the ⚠️, the prohibitions after it) -- passing_and_receiving.md :213 tells its reader "the wall-contact
   // warning both captions carry" applies, so cutting it here would make that host sentence false.
+  // ✂️ RE-ORDERED 16 November 2026 (W375), no word changed: the posture sentence with SHOULDER_TAIL
+  // now comes BEFORE the glyph, so the amber run (glyph to end of caption) is the two prohibitions
+  // and the two injuries only, 222 chars instead of 402. SHOULDER_TAIL still follows the posture,
+  // never a prohibition, and both hosts still voice the whole wall limb.
   caption:
     'Beating a checker who has sealed you against the boards, in your own end. Your body is between ' +
     'the puck and the checker, which is why the puck is drawn on the far side of you from the pressure — but ' +
@@ -1158,10 +1162,11 @@ const wingerDzRim = {
     ' inside you, containing rather than chasing, so the ice they are taking away is the middle. That is' +
     ' exactly the checker a RIM beats, because it goes where they are not. ' +
     'Decide where the puck is going while you are still skating to ' +
-    'it, not once you are pinned. ⚠️ Rim or reverse, never turn your back to anyone coming at you and ' +
+    'it, not once you are pinned. Skates parallel to the boards, ' +
+    'forearm and hip to the wall, head up and chin off your chest' + SHOULDER_TAIL +
+    ' ⚠️ Rim or reverse, never turn your back to anyone coming at you and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
-    'chin tucked to the chest, which does not need speed to do it. Skates parallel to the boards, ' +
-    'forearm and hip to the wall, head up and chin off your chest' + SHOULDER_TAIL,
+    'chin tucked to the chest, which does not need speed to do it.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +
@@ -1216,6 +1221,10 @@ const wingerDzReverse = {
   half: true,
   width: 900,
 
+  // ✂️ RE-ORDERED 16 November 2026 (W375), no word changed: the posture sentence with SHOULDER_TAIL
+  // now comes BEFORE the glyph, so the amber run (glyph to end of caption) is the two prohibitions
+  // and the two injuries only, 222 chars instead of 402. SHOULDER_TAIL still follows the posture,
+  // never a prohibition, and both hosts still voice the whole wall limb.
   caption:
     'Beating a checker who has over-committed, in your own end — the other half of the rim-or-reverse' +
     ' decision. The checker has not sealed you: they have skated past you up the wall, carrying their momentum with' +
@@ -1225,16 +1234,16 @@ const wingerDzReverse = {
     // (winger.md:115-117; passing_and_receiving.md:207). Cut as technique, not safety: "feet wide
     // and moving, side-on ..., puck on the far side" (winger.md:125-129 directly after the marker;
     // passing_and_receiving.md does not voice it, and it is puck protection, not a hazard).
-    // KEPT IN FULL: the whole wall limb under the glyph -- passing_and_receiving.md:213 tells its
+    // KEPT IN FULL: the whole wall limb (since W375 only the prohibitions and injuries follow the glyph; the posture and SHOULDER_TAIL precede it) -- passing_and_receiving.md:213 tells its
     // reader that "the wall-contact warning both captions carry" applies, so the caption must
     // carry it, and that host voices neither never-turn/never-duck nor "not the whole shoulder".
     ' them. The ice they have just left is behind you, so the play that beats them is a REVERSE to a teammate ' +
     'arriving behind you. Call for it — "reverse!" — because the teammate ' +
-    'you are sending it to is looking the wrong way. ⚠️ Rim or reverse, never turn your ' +
-    'back to anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot' +
-    ' brace for, and a chin tucked to the chest, which does not need speed to do it. Skates parallel ' +
+    'you are sending it to is looking the wrong way. Skates parallel ' +
     'to the boards, forearm and hip to the wall, head up and chin off your chest' +
-    SHOULDER_TAIL,
+    SHOULDER_TAIL + ' ⚠️ Rim or reverse, never turn your ' +
+    'back to anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot' +
+    ' brace for, and a chin tucked to the chest, which does not need speed to do it.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +

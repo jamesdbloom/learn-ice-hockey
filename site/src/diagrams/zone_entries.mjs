@@ -207,13 +207,19 @@ const wideEntry = {
     'has to turn — every stride toward the boards is a stride away from the front of their net. ' +
     'It needs both supports drawn here, and no contact is drawn. The net drive stops at the edge of the blue paint: keep ' +
     'your feet out of the paint and off the red crease line around it, and screen from there. ' +
-    '⚠️ Arrive head up, chin off your chest: never meet a goal post head first, and never duck. ' +
-    'A head-first hit on a post is the same neck injury as one on the boards, and can happen at ' +
-    'walking speed. That holds at every level, checking or not. The drive is not a licence to ' +
+    // W375, 16 November 2026: the goalie-contact sentences moved AHEAD of the glyph, no word
+    // changed. A caption's amber runs from its glyph to the END (captionNodes() in
+    // remark-corpus.mjs), so with the posture sentences first the goal-voiding text was amber
+    // too (557 of 940 chars, 59.1% of a 400px window). The amber is now the neck-injury
+    // instruction alone, and it still ends the caption.
+    'The drive is not a licence to ' +
     'hit the goalie: it is where the goalie is, not where you are, that decides. Contact you ' +
     'start with a goalie in the crease voids the goal, incidental or not, though the NHL, IIHF ' +
     'and PWHL allow incidental contact in a rebound scramble. A goalie out of the crease is not ' +
-    'fair game either.',
+    'fair game either. ' +
+    '⚠️ Arrive head up, chin off your chest: never meet a goal post head first, and never duck. ' +
+    'A head-first hit on a post is the same neck injury as one on the boards, and can happen at ' +
+    'walking speed. That holds at every level, checking or not.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +
@@ -347,6 +353,18 @@ const delayCurl = {
     'force it: before the defender can reach them, they curl back toward the neutral zone with ' +
     'their body between the defender and the puck, buying the one or two seconds their late ' +
     'support needs. The re-attack is not drawn. ' +
+    'Two separate postures injure a neck at the boards and they are not the same warning: ' +
+    'a turned back makes the contact a hit from behind, and a chin ' +
+    'tucked to the chest straightens the cervical spine. ' +
+    // W375, 16 November 2026: sentence order is now postures -> safety point -> wall
+    // fallback, no word changed (word multiset equal to HEAD). A caption's amber runs from its
+    // glyph to the caption's END (captionNodes() in remark-corpus.mjs). With the glyph on "One
+    // safety point" in the old order the amber covered all three sentences (634 of 943 chars,
+    // 67.1% of a 400px window). Moving the postures sentence ahead of the glyph leaves the amber
+    // on the two instructions -- never turn your back, and the wall fallback -- and keeps "So
+    // if you cannot get off the boards" directly after the safety point it follows from.
+    // time_and_space.md carries no other ⚠ near its marker, so "never turn your back" must
+    // stay amber there.
     '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
     'curl away from the wall, and never turn your back to anyone coming at you. ' +
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
@@ -388,14 +406,13 @@ const delayCurl = {
     // "whatever league you play in -- unexpected contact happens in non-check hockey too".
     // Scoping it to checking leagues would tell a non-check reader the posture is not theirs.
     //
-    // Glyph placement: the addition sits AFTER the existing warning glyph and at the END of the
-    // caption, so it stays inside the block remark-corpus.mjs promotes and no tactical prose
-    // follows it. Caption measured after this edit: still far short of md_to_speech's
-    // MAX_BILLED_CHARS of 2,800, so it is voiced as one unbroken chunk and neither absolute
-    // can be separated from the other by a split.
-    'Two separate postures injure a neck at the boards and they are not the same warning: ' +
-    'a turned back makes the contact a hit from behind, and a chin ' +
-    'tucked to the chest straightens the cervical spine. So if you cannot get off the boards, ' +
+    // Glyph placement (W375): the glyph sits on the safety-point sentence, the second half
+    // follows it to the END of the caption, so both instructions stay inside the amber
+    // remark-corpus.mjs promotes and no tactical prose follows them. The postures sentence
+    // before the glyph is plain caption text. Caption length is unchanged and still far short
+    // of md_to_speech's MAX_BILLED_CHARS of 2,800, so it is voiced as one unbroken chunk and
+    // neither absolute can be separated from the other by a split.
+    'So if you cannot get off the boards, ' +
     // COLON, not a third em dash: the shoulder clause below needs a dash PAIR around it, and
     // this sentence already opened on one, which put three em dashes in a row.
     'take the contact rather than turning away into them: skates parallel to the wall, ' +
