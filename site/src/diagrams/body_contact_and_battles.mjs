@@ -394,13 +394,17 @@ const netFrontWalkOut = {
   half: true,
   width: 900,
 
+  // W363 (16 November 2026): ORDER only, no word changed. captionNodes() ambers from the glyph
+  // to the END, so the 332-char amber carried the hold-the-inside technique too. That sentence
+  // now comes first as plain text; the glyph opens the two prohibitions, which close the
+  // caption: never walk a screener out (and what it can be called), and move nobody into the
+  // goal frame and goalie. Amber 329 -> 191 chars. It names no book, so it cannot read as a closed list.
   caption:
-    'Your net front; who covers it is your team’s call. ⚠️ Never walk a screener out: it can be ' +
-    'called interference wherever you play, and where checking is barred an illegal check as ' +
-    'well. Hold the inside, no lean, no ' +
+    'Your net front; who covers it is your team’s call. Hold the inside, no lean, no ' +
     'push, and lift their stick low on the shaft, well below their bottom hand, as the puck ' +
-    'arrives, then let go. ' +
-    'Move nobody into or across the shaded goal frame and goalie.',
+    'arrives, then let go. ⚠️ Never walk a screener out: it can be ' +
+    'called interference wherever you play, and where checking is barred an illegal check as ' +
+    'well. Move nobody into or across the shaded goal frame and goalie.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right with our goalie in ' +

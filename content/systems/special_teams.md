@@ -1123,9 +1123,9 @@ Under Hockey Canada, a hit from behind that reaches the head is called as head c
 
 Under USA Hockey, checking a goalie from behind is at least a minor and a misconduct (608(a)). A forceful one on a goalie standing along the boards, a reckless one, or one that sends the goalie head first into the boards or goal frame, is at least a major and game misconduct (608(b); Casebook 608, Situation 1) — ⚠️ **if it is reckless, plan on a match and a likely multi-game suspension (602(a)).** Under USA Hockey, careless contact with the goalie's head or neck is a mandatory major and game misconduct too (620(b)).
 
-Three books make a match mandatory: ⚠️ **Hockey Canada and CARHA must give a match for putting a goalie who cannot protect themselves into the net or the boards from behind, and USA Hockey for any hit from behind that recklessly endangers a vulnerable or defenceless goalie with excessive force** (608(c)).
+Even with no intent to injure, three books make a match mandatory for a goalie hit from behind: ⚠️ **under Hockey Canada and CARHA if it puts a goalie who cannot protect themselves into the net or boards, and under USA Hockey if it is reckless with excessive force**, boards or not, on a vulnerable or defenceless goalie (608(c)).
 
-For a goalie hit from behind, Hockey Canada does not say whether checking from behind or goaltender interference governs, so ⚠️ **plan on the dearer: 8.5(b)'s mandatory major and game misconduct for a charge**, at least 7.5's minor and game misconduct otherwise. On the head Hockey Canada calls it head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal), but plan on the same anyway.
+Hockey Canada does not say whether checking from behind or goaltender interference governs a goalie hit from behind, so ⚠️ **plan on the dearer: a mandatory major and game misconduct for a charge** (8.5(b)), at least 7.5's minor and game misconduct otherwise. On the head Hockey Canada calls it head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal), but plan on the same anyway.
 
 ### Over the glass
 
@@ -1269,7 +1269,7 @@ These are the errors that survive knowing the systems.
 
   Under USA Hockey even a light hit from behind is at least a minor plus a misconduct; it ends your game if it is forceful at the boards, drives them head first into the boards or net, or is reckless, and so does careless contact with their head or neck. ⚠️ **If it is reckless, plan on a match and a likely multi-game suspension.**
 
-  Three books make a match mandatory: ⚠️ **for a hit from behind into the boards or net on a player who cannot protect themselves, Hockey Canada and CARHA must give a match, Hockey Canada also for one that reaches their head anywhere, and USA Hockey must for any hit from behind that recklessly endangers a vulnerable or defenceless player with excessive force (608(c)).** The full ladder is in [A hit from behind](#a-hit-from-behind).
+  Even with no intent to injure, three books make a match mandatory: ⚠️ **for a hit from behind into the boards or net on a player who cannot protect themselves, Hockey Canada and CARHA must give a match, Hockey Canada also for one that reaches their head anywhere, and USA Hockey must for any hit from behind that recklessly endangers a vulnerable or defenceless player with excessive force (608(c)).** The full ladder is in [A hit from behind](#a-hit-from-behind).
 - **Hearing "body on the wall" or "head up" as the whole of the wall posture.** **Never turn your back to anyone coming at you, and never duck** — skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest, never the point of your shoulder. Holding the line and walking down the half-wall both put you on the wall with somebody closing, and **being a man up, or in a non-checking league, changes nothing:** a wall does not need an opponent to hurt you. [Body Contact and Battles](../technique/body_contact_and_battles.md) owns the full rule.
 
 ## Check yourself
