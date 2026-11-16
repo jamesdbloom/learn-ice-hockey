@@ -1203,7 +1203,7 @@ const insideLaneLongerRoute = {
   // could be read as "take their line, just keep your hands off" -- the exact act USA Hockey
   // 625(a)(4) makes a minor (changing lane or foot speed to play the body of an opponent not in
   // control of the puck). The last sentence now opens "Arc for the puck, not their body, and
-  // never hold, ..." (+33 chars, "Never" -> "never"), so the amber carries the puck-not-body
+  // never hold, ..." (+38 chars, "Never" -> "never"), so the amber carries the puck-not-body
   // condition as well as the hands limb. No other word changed.
   caption:
     'A loose puck neither team has, in your own end with the net you are defending at the right. ' +
