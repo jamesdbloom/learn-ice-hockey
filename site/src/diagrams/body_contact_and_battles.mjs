@@ -914,14 +914,22 @@ const angleIntoTheCorner = {
   // Its opening was then reworded: "what is left when turning is already impossible" lost its
   // antecedent once it came before Case 2, beside an amber saying "never turn your back". It now
   // says "for when you are already facing the wall and cannot turn", as the owner's facts do
-  // ("Case 3, already facing the wall").
+  // ("Case 3, already facing the wall"). So "NO WORD CHANGED" above holds for the move only.
+  // ⚠️ W367, 16 November 2026: ONE WORD CHANGED, "The third" -> "The worst". The re-order put
+  // Case 3 before the amber, which ends "that is the second case", so a reader met the third
+  // case before the second. Case 3 is now named by its rank -- "worst" of the three, after
+  // "first and best" -- not its number, so the caption reads best, worst, then the second case.
+  // The host prose numbers it Case 3 (body_contact_and_battles.md "Case 3 — you are already
+  // facing the boards"), which "worst" matches. Every Case 3 limb is untouched: "damage
+  // limitation", "if at all possible", stick and gloves up, arms out, "no head contact at all".
+  // The amber still ends the caption on never turn / never duck / forearm and hip.
   caption:
     'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
     'drawn. It sets off pointed at the corner and finishes running along the boards. ' +
     'That is the first and best of three cases for meeting a wall. ' +
     'The cases come from USA Hockey\'s material; the ordering and the ranking do not. ' +
     'Better still, a chip, a rim or a reverse decided before you arrive takes you out of the ' +
-    'collision. The third, for when you are already facing the wall and cannot turn, is damage ' +
+    'collision. The worst, for when you are already facing the wall and cannot turn, is damage ' +
     'limitation rather than the position to aim for. USA Hockey asks you to turn your skates parallel if at all possible before you ' +
     'settle for it. Then get your stick and gloves up and spread out on the glass, arms out as a ' +
     'shock absorber, and take the impact over as wide a surface as you have, with no head contact ' +
@@ -1178,16 +1186,35 @@ const insideLaneLongerRoute = {
   // scope (it limits the permission this caption states, so it stays beside it), the never-hold
   // limb, and USA Hockey 625(a)(4) -- the minor for changing lane or foot speed to play the body,
   // which the document voices only in §9, about ten chunks away (sources/usah.txt:4466-4468).
+  // ⚠️ GLYPH MOVED 16 November 2026 (W367). A caption's amber runs from its glyph
+  // to the END of the caption, so the glyph at "Body position is what does this work" put the
+  // whole rules tail in amber (~466 chars, 54.7% of a 400px window, the page's last over-half
+  // screen). The glyph now opens the last sentence, so the amber is "Never hold, pull, tug or grab
+  // with your free hand." alone: a universal instruction naming no book, so not a closed list.
+  // The "only while you are going for the puck" condition, the USA Hockey 625(a)(4) minor and the
+  // Hockey Canada/CARHA scope with "hold only a lane you already have" stay, word for word and in
+  // the same order, as plain caption text directly before it. NOT ambered on purpose: the
+  // body-position sentence is a PERMISSION, and read alone in amber it would shed the HC/CARHA
+  // scope that limits it; "hold only a lane you already have" is scoped by its "so" to HC/CARHA
+  // and read alone it contradicts the arcing route the picture teaches; the 625(a)(4) sentence
+  // leads with the act, but the amber runs to the caption's end, so ambering it re-ambers the
+  // whole tail.
+  // ⚠️ THEN WORDS WERE ADDED (W367 safety review): the hands-only amber beside an arcing route
+  // could be read as "take their line, just keep your hands off" -- the exact act USA Hockey
+  // 625(a)(4) makes a minor (changing lane or foot speed to play the body of an opponent not in
+  // control of the puck). The last sentence now opens "Arc for the puck, not their body, and
+  // never hold, ..." (+33 chars, "Never" -> "never"), so the amber carries the puck-not-body
+  // condition as well as the hands limb. No other word changed.
   caption:
     'A loose puck neither team has, in your own end with the net you are defending at the right. ' +
     'The faint dashed line is the opposition forward\u2019s straight route to it, not a marking on ' +
     'the ice. Your route arcs, so you arrive already turned, inside them and on that line, and the ' +
     'less direct way round is what is left for them. The two feet it costs you is the drawing\u2019s ' +
-    'geometry, not a fact about hockey. ⚠️ Body position is what does this work, and only while you ' +
+    'geometry, not a fact about hockey. Body position is what does this work, and only while you ' +
     'are going for the puck. Change your skating lane or your foot speed to play the opponent\u2019s ' +
     'body rather than the puck and USA Hockey Rule 625(a)(4) makes that a minor for interference. ' +
     'Hockey Canada and CARHA write no right to lengthen an opponent\u2019s path: impeding an opponent ' +
-    'without the puck is interference there, so hold only a lane you already have. Never hold, ' +
+    'without the puck is interference there, so hold only a lane you already have. ⚠️ Arc for the puck, not their body, and never hold, ' +
     'pull, tug or grab with your free hand.',
 
   describe:
