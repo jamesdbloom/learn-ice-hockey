@@ -416,13 +416,13 @@ const collapseCorner = {
     // NOTE ABOVE SETS FOR CUTTING IT IS NOW MET. That note said the safety unit could go only once it
     // had been "routed into the body of §'The base shape' FIRST". It has been: the 1ea630d4
     // restructure put the instruction AND its price in the base-shape body --
-    // defensive_zone_coverage.md:179 "if you can see their numbers, pull up ... never finish into a
-    // back. Checking from behind is never just two minutes (under Hockey Canada, while it stays off
-    // the head), and in most books ends your game — under USA Hockey too, if forceful at the boards,
-    // head first into boards or net, or reckless" (facts :166) -- and the full ladder, including the
+    // defensive_zone_coverage.md §"The base shape": "if you can see their numbers, pull up ... never
+    // finish into a back. In most books a call for checking from behind ends your game every time, and
+    // in every book it can. Under USA Hockey it does whenever it is forceful at the boards, ..." (W348,
+    // 16 Nov 2026: the per-book sentence moved into What it costs; facts :166 keeps the line) -- and the full ladder, including the
     // Hockey Canada / CARHA mandatory match for a defenceless player into the boards, in
-    // §"What it costs → A hit from behind" (:740-743). Render (md_to_speech, 8 Nov): the base-shape
-    // price is chunk 010, this caption chunk 013. The IIHF women's pinning clause is cut on the same
+    // §"What it costs → A hit from behind". In the render the base-shape price comes BEFORE this caption,
+    // in the same section (line and chunk numbers drift; re-render to check). The IIHF women's pinning clause is cut on the same
     // ground (:177, facts :163). KEPT: arrives late and unseen, the three legal arrivals, "never into
     // their back", and the pin instruction, each still under a glyph.
     // The cut also removes "so the floor is a major and an ejection", which OPEN_ITEMS records as
