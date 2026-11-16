@@ -711,13 +711,23 @@ const battleSupport = {
     //
     // ⚠️ WHAT MAY NOT CHANGE IS THE PROHIBITION. Only the evidence attached to each limb moves.
     // Read aloud, two clauses of unequal strength can be heard as the weaker one granting
-    // permission, so the absolute lands first and on its own — "Never turn your back to the
-    // checker, and never duck" — and "none of this is a rule for fast arrivals only" covers
-    // every limb before either quote is heard. A listener must not be able to reach
+    // permission, so the absolute is its own sentence — "Never turn your back to anyone coming
+    // at you, and never duck" — with no weaker clause attached. (It used to land FIRST, before
+    // the posture, and "none of this is a rule for fast arrivals only" covered every limb before
+    // either quote was heard; SG72 cut both quotes and that cover, and W377 moved the absolute
+    // AFTER the posture so it opens the amber. What still holds: no evidence clause follows it,
+    // so nothing weaker can be heard as permission.) A listener must not be able to reach
     // "so a slow hit from behind is fine."
-    '⚠️ And if you do go in, how you arrive outranks winning the puck. Never turn your back to ' +
-    'anyone coming at you, and never duck. Skates parallel to the wall, forearm and hip to it, ' +
+    // ✂️ W377, 16 November 2026: SENTENCES REORDERED, NO WORD CHANGED. The amber ran 486 chars
+    // from the ⚠️ to the end. The posture (with SHOULDER_TAIL still after "chin off your chest",
+    // never after a prohibition) now precedes the glyph as plain text; the amber opens on the
+    // two absolutes and keeps the from-behind limb and its checking-from-behind sentence, which
+    // no other amber on the host page carries.
+    'And if you do go in, how you arrive outranks winning the puck. ' +
+    'Skates parallel to the wall, forearm and hip to it, ' +
     'head up and chin off your chest' + SHOULDER_TAIL +
+    ' ⚠️ Never turn your back to ' +
+    'anyone coming at you, and never duck.' +
     // ⚠️ THE THIRD LIMB IS LOCAL, NEVER IN SHOULDER_TAIL (shared with four other modules). It is
     // the owning section's own wording and scope (puck_support_and_spacing.md §"Supporting a
     // battle" and its facts line): "never push or hit the opponent on the wall from behind — go

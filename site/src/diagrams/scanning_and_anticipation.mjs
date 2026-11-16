@@ -189,16 +189,32 @@ const wallReception = {
     // All read this session. Told only that the TIP is ruled out, a listener infers the flat
     // is available. "not" and never "never" for the whole shoulder: USA Hockey writes one
     // "never" here and it is the tip. Hedge AFTER the absolute so it cannot attach backwards.
-    // The replacement is the owner's own sentence, scanning_and_anticipation.md:537 and :597,
-    // adopted verbatim through to "with no head contact at all" — so the caption and the two
-    // spoken body sites cannot drift. No count in this caption names the shoulder.
-    '⚠️ Looking does not protect you; position does. A reception on the wall is a reception into ' +
-    'head-on contact with the boards. Never turn your back to anyone coming at you, and ' +
-    'never duck. Get your skates parallel to the wall and take it on your forearm and hip, head up ' +
+    // The wording was adopted from the owner's own body text (grep "forearm and hip" in
+    // scanning_and_anticipation.md; the line numbers once cited here had gone stale). ⚠️ SINCE
+    // W377 THE WORDS STILL MATCH BUT THE ORDER DOES NOT: the body's ranked item 4 runs hazard →
+    // prohibitions → posture, and this caption now runs hazard → posture → prohibitions. So
+    // "cannot drift" no longer holds for order — a wording change in the body must still be
+    // carried here by hand, and a reorder there is not a defect here. No count in this caption
+    // names the shoulder.
+    // ✂️ W377, 16 November 2026: SENTENCES REORDERED, NO WORD CHANGED. A caption's amber runs
+    // from the ⚠️ to the END, so it ran 515 chars over the whole posture block. The two
+    // prohibitions now close the caption behind the glyph (~65 chars of amber); the hazard, the
+    // posture and the facing-the-wall fallback precede it as plain text.
+    // ⚠️ THE HAZARD SENTENCE MUST STAY DIRECTLY BEFORE THE POSTURE: "take IT on your forearm and
+    // hip" takes its antecedent from "head-on contact with the boards". A first W377 draft moved
+    // the hazard behind the glyph and left "it" reading as the pass or the puck (safety review,
+    // MAJ-1). The shoulder clause's internal order (absolute, then hedge) is untouched and still
+    // follows "chin off your chest", never a prohibition.
+    'Looking does not protect you; position does. ' +
+    'A reception on the wall is a reception into ' +
+    'head-on contact with the boards. ' +
+    'Get your skates parallel to the wall and take it on your forearm and hip, head up ' +
     'and chin off your chest — not on the point of your shoulder, and not the whole shoulder if ' +
     'you can help it. If you are already facing the ' +
     'wall and cannot turn, get your stick and gloves up and spread out on the glass, with no head ' +
-    'contact at all.',
+    'contact at all. ' +
+    '⚠️ Never turn your back to anyone coming at you, and ' +
+    'never duck.',
 
   describe:
     'Your own end zone, your net at the right with your goalie in the crease. A teammate stands ' +
