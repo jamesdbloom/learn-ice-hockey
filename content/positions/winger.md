@@ -747,7 +747,7 @@ NHL and IIHF Rule 56.1 let the free hand *"fend off"* an opponent or their stick
 ```facts
 Rule: USA Hockey 604(a) bars body checking at 12 & under and below, in all girls' and women's classifications and in non-check adult
 Rule: In every USA Hockey game, body checking a player physically engaged for the puck with another is a minor (640(e)), and a major and game misconduct where it recklessly endangers them (640(g))
-Rule: CARHA 49(a) prices not averting body contact at a minor or a major, the major mandatory when intentional contact injures, and any major there brings a game misconduct (30(a))
+Rule: CARHA 49(a) prices not averting body contact at a minor or a major, the major mandatory when intentional contact injures, and a major for it brings a game misconduct (30(a))
 Rule: The Women's NIHL is "Full ice, non-checking" at U16 and senior under IHUK's 2026-27 Rules of Competition
 ```
 
