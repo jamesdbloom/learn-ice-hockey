@@ -1122,6 +1122,12 @@ defines altercation elsewhere at `:4105`.
 to a different rule.** Same shape as the Table 16 → Table 14 hazard already recorded above,
 and the same defence: **never write a bare IIHF rule or table number without its edition.**
 
+## ⚠️ `iihf_rules_2026-27.txt` Rule 20.4 cites a Table 6 the book no longer has (17 November 2026)
+
+**Rule 20.4 (`iihf_rules_2026-27.txt:2184`) says *"➔ For more information refer to Appendix IV – Tables Overview – Table 6."*** The 2026/27 Appendix IV runs **Table 5 · Rule 20 (Major Penalties)** (:8845, :8896) straight to **Table 7 – Rule 22 (Misconduct Penalties)** (:8946) — there is **no Table 6**. In v1.1 the same pointer (:2139) resolves: Table 6 there lists the majors that carry an automatic game misconduct.
+
+⚠️ **In 2026/27 that information lives in Table 5**, which ticks each major under **"MAJOR ONLY"** and/or **"MAJOR + GMP"**. **A search for "Table 6" in the 2026/27 book finds only the dead pointer** — read Table 5 instead, and do not report the automatic-game-misconduct list as missing. Found by the W410 rules-verifier; book defect, not extraction.
+
 ## ⚠️ The IIHF's own two books use "restricted area" in OPPOSITE senses — and one of them gets a goaltender penalised
 
 - **The Rulebook means the trapezoid, where playing the puck is PERMITTED.** Appendix IV's goalkeeper
