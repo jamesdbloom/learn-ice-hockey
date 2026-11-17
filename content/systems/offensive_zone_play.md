@@ -810,6 +810,7 @@ Key: From behind the goal line you look up at the whole zone with all five defen
 Key: Nobody can come at you from directly behind, because the net and the end boards are there — that is geometry, not immunity
 Risk: You can still be driven into the goal frame behind the net. Keep your head up and know who is arriving
 Never: Hit anyone from behind — any book can eject you; USA Hockey does if forceful at the boards, head first, reckless or careless to head or neck, and the NHL, PWHL, CARHA and Hockey Canada do off the head
+Rule: Driving a player from behind into the boards or goal frame when they cannot protect themselves is a mandatory match under Hockey Canada 7.5(c) and CARHA 53(b); USA Hockey 608(c) makes any reckless hit from behind with excessive force on a vulnerable or defenceless player a match, boards or not
 Read: Every time the puck crosses behind the net the goalie must pick a post and rotate — every rotation is a moment they are not square
 Key: Passes from below the goal line finished at 6.73%, second only to royal road passes — volunteer-tracked Passing Project data, 51,308 shots at 5v5, all attempts
 ```
