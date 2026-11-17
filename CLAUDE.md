@@ -1384,7 +1384,7 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_quote_drift.py, check_caption_hosts.py, check_instruction_first.py,
                     check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py,
                     check_marker_pairs.py, check_readability.py,
-                    check_caption_pairs.py.
+                    check_caption_pairs.py, check_label_paint.py.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
