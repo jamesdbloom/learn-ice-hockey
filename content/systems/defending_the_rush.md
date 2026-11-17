@@ -228,7 +228,7 @@ Risk: A missed poke check becomes a lever the attacker skates around, and often 
 **In short:** Sit slightly inside the carrier so their only route is the wall; the route is yours everywhere, the contact is not.
 
 ```facts
-Key: The middle of the ice is the dangerous ice — shots from the slot beat goalies, shots from the wall mostly do not
+Key: Take the middle away — from it the carrier skates straight into the slot and can go either side of you; on the wall they have one way to go, and a shot from there mostly does not beat a goalie
 Position: Boardside shoulder roughly on the middle of their chest, your body between them and the middle of the ice
 Never: Line up chest-to-chest, or put your inside shoulder on their chest — that slides you wide and opens the middle
 Action: Force them outside, then close the outside — in a checking league ride them further wide, but seeing you coming does not make a carrier fair game: boarding is not only about a defenceless opponent
@@ -238,7 +238,7 @@ Rule: Riding them into the wall is a different act, and defenceless is not the w
 Mindset: Good rush defence is choosing which thing to concede, not taking everything away
 ```
 
-**The middle of the ice is the dangerous ice.** Shots from the slot beat goalies; shots from below the faceoff dots on the wall mostly do not.
+**Take the middle away.** From the middle the carrier can skate straight into the slot, where most goals are scored, and can go either side of you. Steered to the wall, they have one way to go, and a shot from below the faceoff dots on the wall mostly does not beat a goalie.
 
 So do not line up chest-to-chest with the carrier. Position yourself slightly to the **inside** — your **boardside shoulder** (the shoulder nearer the wall) roughly on the middle of their chest — so that your body sits between them and the middle of the ice, and the only route they can see is toward the boards. Getting this backwards and putting your *inside* shoulder on their chest slides your torso to the boards side and opens the middle, which is exactly the lane you are trying to take away. Take that position already at full backward speed: a gap cannot be closed from a standstill.
 

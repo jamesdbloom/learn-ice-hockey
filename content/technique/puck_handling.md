@@ -759,7 +759,7 @@ Key: If you learn one move from this section, learn the head and shoulder fake �
 
 **The toe drag.** Covered under [Stickhandling in Tight](#stickhandling-in-tight). As a deke, it works by offering the puck to a reaching stick and pulling it back inside the reach. Best against a defender who pokes early.
 
-**Inside-out.** Attack toward the middle of the ice, get the defender to shift their weight to that side to protect the dangerous area, then cut back to the outside. Effective because defenders are coached to protect the middle first, so the inside threat is always believed.
+**Inside-out.** Attack toward the middle of the ice, get the defender to shift their weight to that side to protect the route to the slot, then cut back to the outside. Effective because defenders are coached to protect the middle first, so the inside threat is always believed.
 
 **Outside-in.** The reverse: drive hard wide as though you are going around them, get them to open their hips and turn toward the boards, then cut back underneath them into the middle. What it buys you is where it finishes — in the slot, rather than out along the wall with the net behind you. Nothing here ranks the moves against each other by the chances they create.
 
@@ -791,7 +791,7 @@ Read: If you find yourself on your third move, the play has already gone wrong
 Never: Skate straight at their chest — they stay square, keep both lanes closed and stand you up
 Goal: Make them turn — the moment their hips turn, one lane exists that did not before
 Options: The outside shoulder — the one nearer the boards — opens the lane back underneath them, but it is where a well-coached defenceman wants you
-Options: The inside shoulder forces them to defend the dangerous ice, but you are attacking into help
+Options: The inside shoulder forces them to defend the middle, the route to the slot, but you are attacking into help
 Read: Outside when you have a speed advantage; inside when you do not, or when they have already shaded you wide
 Convention: Which shoulder is not settled coaching doctrine. Ask your coach which they want from your position
 ```
@@ -801,7 +801,7 @@ The one thing every source agrees on is the negative: **do not skate straight at
 **Which shoulder is a genuine choice, not a settled rule**, and the two options do different things:
 
 - **Attacking the outside shoulder** (the one nearer the boards) forces them to open their hips toward the wall, which opens the lane back underneath them into the middle. It also puts you on an angle where a change of direction is a small movement for you and a large one for them. The catch is that **this is where a well-coached defenceman wants you.** The standard defensive instruction for a 1-on-1 on the wing is to line up so that *"your outside shoulder should more or less line up with his inside shoulder. This encourages him to try to beat you to the outside, where he's less of a threat"* ([Hockey Player Tips](https://hockeyplayertips.blogspot.com/2008/04/how-to-play-defence-one-onone.html)). Against a defender doing that properly, driving the outside shoulder is taking the option they offered you.
-- **Attacking the inside shoulder** — driving at the middle of the ice — forces them to defend the dangerous ice first, which is what they are coached to protect above all else, so the threat is always believed. That is the same mechanism as the **inside-out** move described under [Deception and Dekes](#deception-and-dekes) above. The cost is that you are attacking into help: the middle is where the other defender and the backchecker are.
+- **Attacking the inside shoulder** — driving at the middle of the ice — forces them to defend the route to the slot, where most goals are scored from. Defenders are coached to protect that first, so the threat is always believed. That is the same mechanism as the **inside-out** move described under [Deception and Dekes](#deception-and-dekes) above. The cost is that you are attacking into help: the middle is where the other defender and the backchecker are.
 
 **How to choose.** Take the outside shoulder when you have a speed advantage and want to beat them wide or cut back underneath. Take the inside shoulder when you do not have the speed to win a wide race, when you have support arriving in the middle, or when the defender has already committed to shading you outside. Either way, the point is to make them turn — and then to take the lane their turn opened, not the one you planned before the rush started.
 

@@ -212,7 +212,7 @@ Never: Both wingers sag at once — the point-to-point pass across the top then 
 Read: If your weak-side winger has already followed the opposing defenceman down off the point, the collapse is not available — the defencemen or the centre must cover the high slot instead
 ```
 
-**The high slot is not the most dangerous ice on the rink** — that is the inner slot, nearer the crease. [Shooting](../technique/shooting.md) has close to half of NHL goals coming from the inner slot against just over a quarter from the outer slot, which is the band called the high slot here — a three-year, five-on-five Sportlogiq sample that is not public, so nobody outside Sportlogiq can check it. What makes this the moment the system turns on is that the high slot empties by design and the seam runs through it: the back-door pass crosses it and a low-to-high shot can come from it.
+**The high slot is not the most dangerous ice on the rink** — that is the inner slot, nearer the crease, where the scoring evidence concentrates. [Shooting](../technique/shooting.md) has close to half of NHL goals coming from the inner slot against just over a quarter from the outer slot, which is the band called the high slot here — a three-year, five-on-five Sportlogiq sample that is not public, so nobody outside Sportlogiq can check it. What makes this the moment the system turns on is that the high slot empties by design and the seam runs through it: the back-door pass crosses it and a low-to-high shot can come from it.
 
 ![](diagram:dz-collapse-corner)
 
@@ -227,19 +227,19 @@ There is one situation where the collapse isn't available: if the **weak-side op
 
 ### What low zone collapse is good at
 
-If your team plays low zone collapse, **stand in your area and let them cycle**: the middle stays full because of where you stand, not because you read the play well, and a cycle along the wall spends their energy in the least valuable ice. When you win the puck, your two high wingers are already there as outlets.
+If your team plays low zone collapse, **stand in your area and let them cycle**: the middle stays full because of where you stand, not because you read the play well, and a cycle along the wall spends their energy on the wall instead of in the house, where the high-danger chances come from. When you win the puck, your two high wingers are already there as outlets.
 
 ```facts
 Goal: Protect the middle by construction — you don't have to make good reads for the house to be full
 Key: The easiest system to learn, because the areas are fixed even when the play is chaotic
-Action: Let them cycle — grinding the wall spends their energy in the least valuable ice while you sit in the most valuable
+Action: Let them cycle — grinding the wall and behind the net spends their energy outside the house while you hold it
 Mindset: Area coverage doesn't ask a tired player or a mismatched winger to win a footrace
 Position: Both wingers are already high — two outlets the moment you win the puck
 ```
 
 - **It protects the middle by construction.** You don't have to make good reads for the house to be full; standing in the right place does most of the work.
 - **It is the easiest system to learn.** Areas are fixed, so you always know roughly where to be even when the play is chaotic.
-- **It is very hard to beat by cycling.** Teams that grind the puck along the wall and behind the net are working in the least valuable part of the ice while you sit in the most valuable part. Let them cycle. They're spending energy on the perimeter.
+- **It is very hard to beat by cycling.** Teams that grind the puck along the wall and behind the net are working away from the front of your net while you sit in the house, where the high-danger chances come from. Let them cycle. They're spending energy on the perimeter.
 - **Area coverage handles fatigue and mismatches.** When you're tired, or a fourth-line winger is on with their top centre, it doesn't ask you to win a footrace.
 - **The wingers are already positioned to break out.** Two forwards high means two outlets the moment you win the puck.
 
@@ -666,7 +666,7 @@ Read: Find the most dangerous unmarked player — scan the house, not the puck; 
 Action: Count — outnumbered low, somebody high comes down and says so; even, match up loudly: "I've got 19", "you take the net"
 Action: Get the puck out any way you can that keeps it in the rink — off the glass, never over it; a clear that concedes possession has still bought your team a change
 Action: Reset before you attack — the commonest second goal is the one conceded straight after surviving the first
-Key: The moment you realise you don't know your assignment, go to the middle — lost there, you cost your team less than lost anywhere else
+Key: The moment you realise you don't know your assignment, go to the middle — lost there, you are still in the lanes into the slot and close enough to get to the front of your net
 ```
 
 Every system document describes an orderly world. A large share of your defensive-zone time will not look like that — often enough that it deserves its own plan: a broken play, a bad change, a puck ricocheting off shin pads, three of you below the goal line and nobody where the diagram says. *(How large a share is not something anybody has published; the "roughly a third" figure you sometimes hear is not sourced and is not used here.)* Systems don't cover this state, so players freeze, and freezing is what turns a scramble into a goal.
@@ -691,7 +691,7 @@ Once you touch it, get it out. Off the glass but never over it — from your own
 **6. Reset before you attack.**
 When it's over, take the extra second to re-form. The most common second goal is the one conceded immediately after surviving the first, because everyone relaxed while three attackers were still in the zone.
 
-**The habit to build:** the moment you realise you don't know your assignment, **go to the middle** — lost there, you cost your team less than lost anywhere else.
+**The habit to build:** the moment you realise you don't know your assignment, **go to the middle** — lost there, you are still in the lanes into the slot and close enough to get to the front of your net.
 
 ---
 

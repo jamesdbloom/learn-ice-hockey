@@ -322,7 +322,7 @@ Never: Drift inside to get closer to the play — your checker drifts in too and
 Risk: Drifting in gains you no option; it deletes one for a teammate
 ```
 
-**Two defenders cannot cover both the middle and the boards.** A wide winger keeps a defender wide, out of the middle. The middle, the most valuable ice there is, is open *because* someone is standing somewhere else.
+**Two defenders cannot cover both the middle and the boards.** A wide winger keeps a defender wide, out of the middle. The middle, the direct route to their net, is open *because* someone is standing somewhere else.
 
 Drift inside to get closer to the play and your checker drifts in too, and the middle closes. You have gained no option and deleted one for a teammate. [Winger](../positions/winger.md) makes the same point.
 

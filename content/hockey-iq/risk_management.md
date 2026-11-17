@@ -114,7 +114,7 @@ Flip that around: **the space in front of your own net is worth defending out of
 ```facts
 Read: Grade every area by one question — if I lose the puck here, how many seconds and how many bodies stand between the turnover and a shot on my net?
 Convention: Grading the ice by turnover cost is coaching consensus reasoned from shot danger and recovery time, not a measured ranking — but one of the five areas, the offensive blue line, does carry a tracked turnover price, from one Swiss league at five-on-five
-Risk: Your own slot is catastrophic — the opponent gets the puck where the counted scoring concentrates more heavily than anywhere else on the ice, with zero seconds of recovery time
+Risk: Your own slot is catastrophic — the opponent gets the puck where most goals are scored from, with zero seconds of recovery time
 Risk: Your own zone generally is high — the puck is 30–50 feet from your net and one pass from the slot
 Risk: The middle of the neutral zone is high — dangerous and disorganised, and coaching material puts the making of odd-man rushes here; nothing published classifies them by the play that created them
 Risk: The offensive blue line is moderate — the cost scales with how many of your players are ahead of the puck
@@ -125,7 +125,7 @@ Every area of the ice can be graded by one question: **if I lose the puck here, 
 
 | Where you are | Risk of a turnover | Why |
 |---|---|---|
-| **In your own slot** | **Catastrophic** | Not a chance against — very nearly a goal against. They get the puck where the counted scoring concentrates most heavily, goalie unset, defenders facing the wrong way. No recovery time. |
+| **In your own slot** | **Catastrophic** | Not a chance against — very nearly a goal against. They get the puck where most goals are scored from, goalie unset, defenders facing the wrong way. No recovery time. |
 | **In your own zone generally** | **High** | Everyone on your team is already home, which helps, but the puck is 30–50 feet from your net and one pass from the slot. The margin for error is a stick length. |
 | **In the middle of the neutral zone** | **High** | Counter-intuitive: a turnover here catches two or three of your players going the wrong way at speed. Your own zone is dangerous but organised; this is dangerous *and* disorganised. |
 | **At the offensive blue line** | **Moderate** | A turnover here does not threaten your net at once, but starts a rush against a defence that was supporting the attack. Cost scales with how many players are ahead of the puck. |
@@ -473,7 +473,7 @@ Options: Nothing there? Chip the puck past their defenceman into space and race,
 
 1. **Is anyone behind their defence?** → Stretch pass or area pass into that space. Highest upside available in the neutral zone, and it travels away from your own net.
 2. **Is a winger with speed available on the wall going north?** → Move it and follow. North passes to moving targets are the safest productive play in this zone — *coaching consensus reasoned from the risk map above, not a counted ranking* — which is why they rank above anything through the middle.
-3. **Is the middle lane open with a teammate supporting?** → Take it, but only with support, and knowing you are choosing the highest-risk square on the risk map above. The middle of the neutral zone is graded **High** *specifically because* a turnover there creates an odd-man rush going the other way.
+3. **Is the middle lane open with a teammate supporting?** → Take it, but only with support, and knowing the risk map above grades a turnover there **High**, the same as one in your own zone generally. It is graded that way *specifically because* a turnover there creates an odd-man rush going the other way.
 4. **Can I gain their blue line with control, with a teammate arriving?** → Carry wide, protect the puck on the outside, and drive the line.
 5. **None of the above?** → Chip the puck past their defenceman into space and race, or dump to the far corner and forecheck.
 6. **Never at any point in this list:** turn back into the middle of the ice at your own blue line with the puck on your stick, or make an east–west pass across centre ice. Coaching material names both as prime manufacturers of 2-on-1s against — *coaching consensus; no public data ranks odd-man rushes by the play that created them.* **That is not a ban on going backwards.** A **regroup** is the same retreat done properly: give the puck back to a defenceman, and keep the D-to-D flat and hard, never blind across the middle with a forechecker between you. [Neutral Zone Systems](../systems/neutral_zone_systems.md) owns it, and [Defending the Rush](../systems/defending_the_rush.md) lists neutral-zone turnovers as one of five ways an odd-man rush gets manufactured.

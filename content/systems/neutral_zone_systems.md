@@ -25,13 +25,13 @@
 
 ```facts
 Key: The team that controls the neutral zone decides what kind of game gets played
-Risk: A turnover in the middle third does the most damage relative to the risk you thought you were taking — coaching consensus rather than measurement, and Risk Management owns the grading
+Risk: A turnover in the middle third is graded as costly as one in your own zone generally — coaching consensus rather than measurement, and Risk Management owns the grading
 Goal: Control it and you choose whether the night is a track meet of rushes or a grinding slog — lose it and your opponent chooses for you
 ```
 
 The **neutral zone** is the middle third of the ice, between the two blue lines — fifty feet of it, and about three seconds for a strong skater.
 
-**Whoever controls it decides what kind of game gets played:** end-to-end rushes, or pucks shot in and chased. It is also where a turnover costs most, because it catches players moving the wrong way at speed. Coaching material calls it the place possession changes hands most often — **consensus rather than a tracked figure**, since no published count of turnovers by location was found.
+**Whoever controls it decides what kind of game gets played:** end-to-end rushes, or pucks shot in and chased. A turnover here is one of the costliest there is, because it catches players moving the wrong way at speed. Coaching material calls it the place possession changes hands most often — **consensus rather than a tracked figure**, since no published count of turnovers by location was found.
 
 **The structures are coaching choices, and each only works when all five play it.** That is why knowing your team's system matters more than which system it is.
 
@@ -76,10 +76,10 @@ The folklore persists for a reason. That same CARHA book still prints a **"Red L
 
 ## Why the neutral zone decides games
 
-**In short:** A turnover in the middle is the costliest kind, and the team that wins this third chooses what kind of game it is.
+**In short:** A turnover in the middle is one of the costliest there is, and the team that wins this third chooses what kind of game it is.
 
 ```facts
-Risk: A turnover at centre ice costs more than one in either end — it catches two or three of your players moving the wrong way at speed and puts the puck in open ice with your defence flat-footed
+Risk: A turnover at centre ice costs as much as one in your own zone generally — it catches two or three of your players going the wrong way at speed, with your defence flat-footed in open ice
 Risk: Open ice in front of a flat-footed defence is how a centre-ice turnover becomes a 2-on-1
 Key: Coaching material puts the making of odd-man rushes in the middle third — consensus rather than a tracked figure, because no public data classifies an odd-man rush by the play that created it
 Key: Not every odd-man rush starts in the middle third — one of the five causes Defending the Rush names is both defencemen caught below the puck in the offensive zone
@@ -91,7 +91,7 @@ Four reasons, and they compound.
 
 **1. The middle third is the handover.** In either end, one team usually just has the puck. Every breakout that works and every entry that fails resolves in the middle. ⚠️ **That more possessions change hands here than anywhere else is not a counted figure** — public tracking counts zone exits and entries, and no published count of turnovers by location was found. Take it as why coaches stress this zone, not as a measurement.
 
-**2. A turnover there is the most expensive kind.** Lose it deep in their end and they still have 180 feet to skate. Lose it in your own corner and your whole team is home. Lose it at centre ice and two or three of you are moving the wrong way at speed, with the puck in open ice and your defence flat-footed. **That is the turnover that becomes a 2-on-1.** The gradient is coaching consensus rather than measurement, and [Risk Management](../hockey-iq/risk_management.md) owns it.
+**2. A turnover there is one of the most expensive there is.** Lose it deep in their end and they still have 180 feet to skate. Lose it in your own corner and it is dangerous, but your whole team is home. Lose it at centre ice and two or three of you are moving the wrong way at speed, with the puck in open ice and your defence flat-footed. Only a turnover in your own slot is worse. **That is the turnover that becomes a 2-on-1.** The gradient is coaching consensus rather than measurement, and [Risk Management](../hockey-iq/risk_management.md) owns it.
 
 **3. Most of the ways to make an odd-man rush live here.** A forward caught on the wrong side of the puck, a defenceman who stepped up and missed, a winger who left the zone early — all happen in the middle third. ⚠️ **That is coaching consensus, and not every odd-man rush starts here.** [Defending the Rush](defending_the_rush.md) owns the subject and lists five causes, one of them in the offensive zone — both defencemen caught below the puck. **No public data classifies an odd-man rush by the play that created it**, so nothing counts which cause is commonest.
 
@@ -716,13 +716,13 @@ A forward in the middle lane is not usually there to shoot. **A puck touched in 
 Goal: A puck touched in the middle forces every defender to reset — the structure has to slide twice, and sliding structures have seams
 Action: Play wall to middle to far wall — a two-pass sequence that takes about a second and is the most reliable way to enter with control against organised defence
 Technique: Make the middle-lane pass a one-touch relay, not a reception and a look
-Risk: Losing the puck in the middle costs the most relative to the risk you thought you were taking — coaching consensus rather than measurement — and a player who turns to survey there gets hit
+Risk: Losing the puck in the middle is graded as costly as losing it in your own zone generally — coaching consensus rather than measurement — and a player who turns to survey there gets hit
 Never: Take a middle-lane puck with your head down over it — you cannot brace for a hit you never saw, and the middle is where coaching material puts the contact
 ```
 
 A defensive structure defends one side at a time — the whole thing slides strong side. One quick pass into the middle and out to the far wall makes it slide twice, and a sliding structure has seams. Wall to middle to far wall takes about a second and is the most reliable way to enter with control against organised defence.
 
-**The catch.** The middle is also where losing the puck costs most relative to the risk you thought you were taking — **coaching consensus rather than measurement**; [Risk Management](../hockey-iq/risk_management.md) owns that grading and puts your own slot higher still. So make the middle-lane pass a **one-touch relay**, not a reception and a look. A middle forward who turns to survey gets hit, and the puck goes the other way with your team spread out.
+**The catch.** Losing the puck in the middle is graded as costly as losing it in your own zone generally — **coaching consensus rather than measurement**; [Risk Management](../hockey-iq/risk_management.md) owns that grading and puts your own slot higher still. So make the middle-lane pass a **one-touch relay**, not a reception and a look. A middle forward who turns to survey gets hit, and the puck goes the other way with your team spread out.
 
 **Plan around the hit, not just the puck.** A one-touch relay is a puck instruction; it does not stop you putting your head down to make it, and coaching material puts open-ice contact in the middle of the neutral zone — **consensus rather than a counted ranking**. ⚠️ **Take it with your head up.** [Body Contact and Battles](../technique/body_contact_and_battles.md#keep-your-head-up-always--you-cannot-brace-for-a-hit-you-cannot-see) owns that rule; it applies equally when you track home through the middle and when you skate onto a stretch pass. Scan **before** the puck arrives — [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md) buys you the look you would otherwise take with the puck on your stick.
 
