@@ -358,6 +358,9 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
     ("£", " pounds "),   # ditto — note this reads after the number, so it is a
                          # fallback only; currency-sterling is what gets it right
     ("–", "—"),         # en dash left over: read as a comma-length pause
+    ("‑", "-"),    # non-breaking hyphen: a layout device only (it stops a
+                        # word like "bail-out" wrapping at 400px); a voice should
+                        # hear the plain compound, so read it as a hyphen
     ("|", ", "),        # a stray table pipe outside a table block
     ("~", " about "),
     ("#", ""),
