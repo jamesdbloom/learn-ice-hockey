@@ -712,7 +712,7 @@ Key: Box — you and your partner low, owning the net front and the two low corn
 Key: Diamond — usually one of you takes the low point at the net front and the other a middle spot; run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked
 Key: Wedge+1 — you are almost always in the triangle, not the "+1" who pressures whoever has the puck
 Action: In wedge+1 the handover can make you the +1 — when the puck moves, the nearest wedge player steps out and the previous +1 drops into the triangle
-Action: Hold the box — two of you just off the crease edges — hold the inside at the net front, block shots, and clear on every opportunity; Special Teams covers the shape and how it slides
+Action: In every penalty-kill shape, stay tight, hold the inside at the net front, block shots, and clear on every opportunity; Special Teams covers each shape and how it reacts to the puck
 Convention: The route the +1 takes out — straight from the goal, sweeping across the top, or roaming to the wall and the point — is a coaching choice and published descriptions differ, so ask which yours runs
 Rule: You may ice the puck freely while below their on-ice count — not merely while a penalty runs, so a penalty to them taking you to 4-on-4 ends it mid-major — but USA Hockey grants it only from Youth 15-Only, Girls 16U, High School and Adult up (NHL and IIHF 81.6, PWHL 83.6; USA Hockey 624(b)(1))
 Rule: The NHL and PWHL take the shorthanded icing exemption away once a major expires with the penalty box empty, and only until the next stoppage (NHL 81.6, 20.3; PWHL 83.6)
