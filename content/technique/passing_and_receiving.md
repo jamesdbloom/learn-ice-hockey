@@ -910,7 +910,7 @@ document, that is named too.*
 12. **Stretch and drop passes are reads, not hopes.** Stretch it only when a teammate is truly behind their forwards. Drop it only to a trailer you know is there, and keep skating hard.
 13. **Under pressure, make the pass you can complete, and decide your out before you get the puck.** Rim, bank, chip or reset; never thread a needle with a checker on you.
 14. **On the wall and on a breakout, receive open to the ice**, so the pressure is not on your back — on the wall, that is a hit from behind. If it comes anyway, keep your head up and chin off your chest even going slowly, never duck, and never take the wall on the point of your shoulder.
-15. **Kick the puck out of your feet — never the man.** Kicking or trying to kick an opponent is a **match penalty** under the NHL, PWHL, USA Hockey, Hockey Canada and CARHA, and USA Hockey adds a likely multi-game suspension. Under the IIHF — Britain's book — it can be a major with an automatic ejection, and supplementary discipline can follow.
+15. **Kick the puck out of your feet — never the man.** Kicking or trying to kick an opponent is a **match penalty** under the NHL, PWHL, USA Hockey, Hockey Canada and CARHA, and USA Hockey adds a likely multi-game suspension. Under the IIHF — Britain's book — it can be a major with an automatic ejection and supplementary discipline.
 16. **Play the high puck down at chest height, and play on until the whistle.** ⚠️ **If your blade reaches an opponent's head, face or neck, every book penalises it and every book has a route to ending your game.** Under CARHA it is a major, with a game misconduct unless accidental and injury-free.
 
 ---
