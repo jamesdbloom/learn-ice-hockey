@@ -260,8 +260,8 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 7. **Give the carrier two options at different angles**, because two teammates in one line are one option. When a teammate is pinned in a battle, move away to give them an outlet.
 8. **Find out which system your team plays.** Most of what you are told is your team's system, not a law of hockey.
 9. **Find out which checking category you are in before you play a shift** — ⚠️ **ask your coach or your league, because you cannot work it out on the ice.**
-10. **In adult recreational hockey,** ⚠️ **find out whether your league is CARHA-affiliated before relying on "hold your ground."** Its defending players may stand their ground, but failing to *"avert body contact"* can cost a minor, or a major with a game misconduct and at least a one-game ban; contact meant to injure is a match, barring you from games until the Chairman deals with your case.
-11. **Go in on an angle; if the wall is unavoidable, skates parallel, knees bent, forearm and hip to it, head up, chin off your chest.** ⚠️ **Never turn your back to anyone coming at you, never duck: a head-down collision can injure your spine at walking speed.** Facing the wall, no time to turn? Stick and gloves up, spread on the glass.
+10. **In adult recreational hockey,** ⚠️ **find out whether your league is CARHA-affiliated before relying on "hold your ground."** Its defending players may stand their ground, but failing to *"avert body contact"* can cost a minor, or a major that ejects you with at least a one-game ban.
+11. **Go in on an angle; if the wall is unavoidable, skates parallel, head up, chin off your chest.** ⚠️ **Never turn your back to anyone coming at you, never duck: a head-down collision can injure your spine at walking speed.** Facing the wall, no time to turn? Stick and gloves up, spread on the glass.
 
 ---
 
