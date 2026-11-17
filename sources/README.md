@@ -2006,6 +2006,10 @@ this one.** Two verbatim, correct quotations of row E — the NHL's and the PWHL
 other situation-row claims in this corpus may rest on greps that returned a false zero, and no tool on
 disk would say so.** That census has not been run.
 
+## ⚠️ PWHL Rule 49.4 points at "Rule 38 – Coach's Challenge", a name the book itself has retired (17 November 2026)
+
+**`pwhl_rules.txt:4945-4948`, Rule 49.4 Fines and Suspensions,** closes with *"(refer to Rule 38 – Coach's Challenge)"*. ⚠️ **Rule 38 in this book is "PWHL Central Situation Room Review (formerly Coach's Challenge)"** (contents `:348`, body `:4014`), and every other cross-reference uses the new name (`:6073`, `:7044`). The clause it closes is a supplementary-discipline sentence (*"supplementary discipline can be applied by the Hockey Operations Officer at their discretion"*), and NHL 49.4's identical sentence points to **Rule 28** (`nhl_rules.txt:5973-5976`) — so the intended target is almost certainly PWHL Rule 28, not Rule 38. **PWHL 49.4's supplementary-discipline sentence is real and citable; only its cross-reference is wrong.** Do not follow it to Rule 38 or cite 49.4 as a video-review rule. Found by the W416 rules-verifier; book defect, not extraction.
+
 ## ⚠️⚠️ PWHL Reference Table 6 — a LOST ASTERISK that manufactures a mandatory match penalty (26 September 2026)
 
 **`pwhl_rules_layout.txt:7372` and `pwhl_rules.txt:8456` both print, with NO leading asterisk:**

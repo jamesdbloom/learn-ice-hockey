@@ -258,7 +258,7 @@ Rule: A body check in a Competitive Contact category is not capped at a minor �
 Rule: Hockey Canada prices the push that moves a screener at U13 and below, in female hockey and in any division a Member has approved — 7.3(a) is a minor, and 7.3(b) is a major plus a game misconduct on the degree of violence with nobody hurt, mandatory on injury
 Rule: The walk-out can be called interference even where checking is legal: NHL and IIHF 56.1 and 56.2(i) and (iii), PWHL 57.1 and 57.2(i) and (iii), Hockey Canada 8.3, USA Hockey 625's Note and Casebook 609 Situation 2, and Rule 625 announces no Competitive Contact scope in its title as Rule 604 does
 Rule: No minor cap on a walk-out: a major may follow on violence in NHL 56.4 and PWHL 57.4 (game misconduct on injury), and in IIHF 56.4 if reckless, or a major and game misconduct (56.5); Hockey Canada 8.3(b) and CARHA 66(a) may give both, and must if it injures (8.3(b); 66(e), 30(a))
-Rule: Under USA Hockey a walk-out has no minor cap: it is priced as cross-checking or roughing (609(b), 640(g)) — plan on a match and a likely multi-game ban (602(a))
+Rule: Under USA Hockey a walk-out can be an interference minor (625), but it is not capped there: a reckless walk-out is cross-checking or roughing, a major and game misconduct (609(b), 640(g)) — plan on a match and a likely multi-game ban (602(a))
 Rule: In women's hockey a player may "hold their ground" any time they have "established their position on the ice" (IIHF 101.1), so get there first; it bars the move onto them: "[a]ny move by a Player to step or glide into an opposing Player" is at least a minor, with a major and game misconduct above it
 ```
 
