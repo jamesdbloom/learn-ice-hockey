@@ -675,7 +675,8 @@ const pkBox = {
 
   caption:
     'Four killers, shorthanded 4-on-5, drawn against the 1-3-1 that counters it: two forwards ' +
-    'high, one each side in the shooting lanes, and two defencemen low on the corners and the goalmouth. The ' +
+    'high, one each side in the shooting lanes, and two defencemen low — the strong-side one on the puck when it comes low, ' +
+    'the weak-side one on the goalmouth and the backdoor. The ' +
     '1-3-1\'s letters: P at the point, H on the half-walls, B the bumper, N at the net front. A box ' +
     'has no single top — describing one means you are describing a diamond. Nobody is ' +
     'assigned to the middle, by design, so the bumper stands uncovered. Which shape a team ' +
@@ -701,7 +702,15 @@ const pkBox = {
     // goalmouth". Strong side is the puck side.
     // SG165 labelHint: above D, 0.7 ft right so the words clear the faceoff dot.
     { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 },  label: 'strong side, low', labelHint: [0.7, 12] },
-    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: -10 }, label: 'goalmouth' },
+    // W407: this label read 'goalmouth', on a glyph 9 ft off the goal line and 10 ft wide of
+    // centre. special_teams.md defines the goalmouth as "the immediate net front, within a
+    // stick's length of the goal line", so the label named a place the glyph is not in. The
+    // goalmouth is this player's DUTY (special_teams.md: "the weak-side D owns the goalmouth
+    // and the backdoor"), which the caption now states as the split of duties; the label
+    // names his spot, mirroring the strong-side D's. labelHint [-1.5, -9.7]: the placer's own
+    // spot (dx 0) ran the last word onto the red goal line; 1.5 ft left clears it and moves
+    // no other label (previewed before the build).
+    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: -10 }, label: 'weak side, low', labelHint: [-1.5, -9.7] },
 
     ...PP_131_OPP.map((p) =>
       p.id === 'B' ? { ...p, label: 'uncovered' } : p),
