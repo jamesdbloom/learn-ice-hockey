@@ -428,9 +428,20 @@ const collapseCorner = {
     // defenseless position") — the old wording hung USA Hockey off the boards-framed subject. Split: HC 7.5(c) "will be
     // assessed" / CARHA 53(b) "shall be assessed" for a hit from behind into the boards or goal frame/net on a player
     // unable to protect or defend themselves (mandatory, boards-conditioned); then USA Hockey's own condition, boards or not.
-    'If you hit them from behind into the boards or net when they cannot protect themselves, it is a mandatory match ' +
-    'under Hockey Canada and CARHA. USA Hockey makes any hit from behind a match when it recklessly endangers a ' +
-    'vulnerable or defenceless player with excessive force, boards or not (608(c)). ' +
+    // W393 (17 Nov 2026): this carrier, on the wall with their back to the ice, is usah_casebook.txt Rule 608
+    // Situation 1's "forcefully checks an opponent who is standing along the boards (back toward the middle of
+    // the ice)" -- major + GM or match "must be called". Pricing only the 608(c) match left that unvoiced.
+    // 608(b) "shall" for reckless or head first; 620(b) major + GM for careless head, face or neck contact.
+    // W393 review: "it" was dropped (it could bind to "into the boards or net"), the spoken citations were
+    // dropped, and 602(a)'s "shall" match for reckless endangerment is now voiced as "plan on a match for any
+    // reckless one" so a reckless hit without excessive force does not read as only a game misconduct.
+    // W393 cut (safety C1/C2): HC/CARHA lead with "Under ..."; the USA Hockey sentence names "a hit from behind"
+    // (not "it", which would bind to the boards-scoped hit before it) and stays one sentence so "mandatory" is
+    // scoped to USA Hockey. "anywhere" = 608 Note "in open ice or directly into the boards or goal frame".
+    'Under Hockey Canada and CARHA a hit from behind into the boards or net when they cannot protect themselves ' +
+    'is a mandatory match. Under USA Hockey a hit from behind ejects you if it is forceful at the boards, sends ' +
+    'them head first into the boards or net or is reckless, as does careless head or neck contact; plan on a ' +
+    'match for any reckless one, anywhere, mandatory with excessive force on a vulnerable or defenceless player. ' +
     // ⚠️ 8 November 2026 (1,311 chars): THE BOOK-BY-BOOK TARIFF IS CUT, AND THE PRECONDITION THE
     // NOTE ABOVE SETS FOR CUTTING IT IS NOW MET. That note said the safety unit could go only once it
     // had been "routed into the body of §'The base shape' FIRST". It has been: the 1ea630d4

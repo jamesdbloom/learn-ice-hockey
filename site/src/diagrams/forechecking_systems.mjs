@@ -516,6 +516,9 @@ const forecheck122 = {
     // diagram (check_caption_pairs). Caption chunks after the trim: how_to_watch_hockey 007,
     // forechecking_systems 025.
     'The 1-2-2, same carrier as the 2-1-2: one forward deep, two across the ' +
+    // W393 (17 Nov 2026): "Dog, fox and hawk ... not standard terms." is NOT cuttable: this diagram draws the
+    // labels on its players, and how_to_watch_hockey.md embeds it without explaining them, so this sentence is
+    // that page's only gloss. A cut was tried and reverted at the commit gate.
     'middle, two defencemen high. Dog, fox and hawk on F1, F2 and F3 are a memory ' +
     'hook, not standard terms. The system itself, the side F1 cuts off and where the weak-side defenceman sits are ' +
     'coaching choices, so ask which your team runs. ' +
@@ -550,9 +553,12 @@ const forecheck122 = {
     'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
     'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
     'pin an opponent, and the Women\'s NIHL is non-checking. ' +
-    'The NHL, PWHL and IIHF have no minor for checking from behind, ' +
-    'so the floor is a major and a game misconduct, mandatory in the NHL and PWHL, and in the IIHF book ' +
-    'for a hit the referee judges reckless. ' +
+    // W393 cut (17 Nov 2026, safety C1/C2): the floor sentence keeps "the floor is" (NHL 43.4 still has a
+    // discretionary match above it, so "it is" would read as a cap) and the IIHF reckless condition; "mandatory
+    // in the NHL and PWHL" is carried by the flat statement of the floor. "so" (not a colon) closes the "no"
+    // (check_caption_negations), as elsewhere in this directory.
+    'Checking from behind has no minor in the NHL, PWHL or IIHF, so the floor is a major and game misconduct, ' +
+    'in the IIHF when judged reckless. ' +
     // W350 (16 November 2026): the MATCH, added to both copies of this shared block. Before it, this
     // wall scene priced only the NHL and IIHF, and no host voiced a match within the caption's chunk
     // or either neighbour (rendered: forechecking_systems 024-026 around forecheck-122 at 025, 027-029
@@ -568,10 +574,32 @@ const forecheck122 = {
     // W350 read-aloud fix: the sentence leads with its subject (a fronted "Into the boards ..." was
     // heard as a fragment). "a hit from behind", NOT "one": the sentence before ends "a hit the
     // referee judges reckless", so "one" would bind there and narrow the HC/CARHA match, which has
-    // no recklessness condition, to reckless hits. The later "a reckless one" binds to "a hit from behind".
-    'Hockey Canada and CARHA make a hit from behind into the boards or net a match when the player ' +
-    'cannot protect themselves; USA Hockey does for a reckless one with excessive force on a vulnerable or ' +
-    'defenceless player, boards or not (608(c)). ⚠️ If your game allows body checking, ' +
+    // no recklessness condition, to reckless hits. (W393: the USA Hockey sentence repeats "a hit from
+    // behind" for the same reason; see below.)
+    // W393 (17 Nov 2026): the USA Hockey limb priced only the 608(c) match, so a wall hit short of
+    // excessive force -- this picture -- was unpriced for a USA Hockey listener. usah_casebook.txt Rule 608
+    // Situation 1: major + GM or match "must be called" "[i]n every instance where a player forcefully checks an
+    // opponent who is standing along the boards (back toward the middle of the ice)", head first into the
+    // boards or goal frame, or reckless; usah.txt 608(b) "shall"; 620(b) major + GM for careless or
+    // intentional head, face or neck contact; 602(a) a match "shall" for reckless endangerment, so "plan on a
+    // match for any reckless one", and 608(c) makes it mandatory with excessive force. The Hockey Canada /
+    // CARHA floor added the same day: hc_2026-08-print.txt 7.5(a) "A Minor penalty and a Game Misconduct
+    // penalty will be assessed"; carha_2026.txt 53(a) minor or major, each "plus a Game Misconduct".
+    // Spoken citations dropped for length; the sources are named here.
+    // ANTECEDENTS: the USA Hockey sentence names "a hit from behind" again rather than "one" or "it" --
+    // after the sentence before, "one" could bind to "the minor" and "it" to "into the boards or net".
+    // "anywhere" replaces "boards or not" (Casebook 608 Sit. 1 (3) "regardless of whether or not board contact
+    // is made"): a bare "or not" before "mandatory" can be heard as "or not mandatory" (check_caption_negations).
+    // W393 cut: one USA Hockey sentence, so "any reckless one" binds to "a hit from behind" in the same
+    // sentence and "mandatory" stays scoped to USA Hockey (safety C1: a free-standing "Plan on a match ...
+    // the match is mandatory" was heard as every book). "anywhere" = 608 Note "in open ice or directly into
+    // the boards or goal frame" and Casebook Sit. 1 (3) "regardless of whether or not board contact is made".
+    'Hockey Canada and CARHA add a game misconduct even to their minor, and make it a match into the boards ' +
+    'or net on a player who cannot protect themselves. Under USA Hockey a hit from behind ejects you if it is ' +
+    'forceful at the boards, sends them head first into the boards or net or is reckless, as does careless ' +
+    'head or neck contact; plan on a match for any reckless one, anywhere, mandatory with excessive force on ' +
+    'a vulnerable or defenceless player. ' +
+    '⚠️ If your game allows body checking, ' +
     'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
     'Never finish into the back of a player facing away.',
 
@@ -737,9 +765,12 @@ const forecheck131 = {
     'all, so find out whether you may body check in this game, not just in your division. In IIHF ' +
     'women\'s hockey a check must be a play on the puck and may never use the boards to push or ' +
     'pin an opponent, and the Women\'s NIHL is non-checking. ' +
-    'The NHL, PWHL and IIHF have no minor for checking from behind, ' +
-    'so the floor is a major and a game misconduct, mandatory in the NHL and PWHL, and in the IIHF book ' +
-    'for a hit the referee judges reckless. ' +
+    // W393 cut (17 Nov 2026, safety C1/C2): the floor sentence keeps "the floor is" (NHL 43.4 still has a
+    // discretionary match above it, so "it is" would read as a cap) and the IIHF reckless condition; "mandatory
+    // in the NHL and PWHL" is carried by the flat statement of the floor. "so" (not a colon) closes the "no"
+    // (check_caption_negations), as elsewhere in this directory.
+    'Checking from behind has no minor in the NHL, PWHL or IIHF, so the floor is a major and game misconduct, ' +
+    'in the IIHF when judged reckless. ' +
     // W350 (16 November 2026): the MATCH, added to both copies of this shared block. Before it, this
     // wall scene priced only the NHL and IIHF, and no host voiced a match within the caption's chunk
     // or either neighbour (rendered: forechecking_systems 024-026 around forecheck-122 at 025, 027-029
@@ -755,10 +786,32 @@ const forecheck131 = {
     // W350 read-aloud fix: the sentence leads with its subject (a fronted "Into the boards ..." was
     // heard as a fragment). "a hit from behind", NOT "one": the sentence before ends "a hit the
     // referee judges reckless", so "one" would bind there and narrow the HC/CARHA match, which has
-    // no recklessness condition, to reckless hits. The later "a reckless one" binds to "a hit from behind".
-    'Hockey Canada and CARHA make a hit from behind into the boards or net a match when the player ' +
-    'cannot protect themselves; USA Hockey does for a reckless one with excessive force on a vulnerable or ' +
-    'defenceless player, boards or not (608(c)). ⚠️ If your game allows body checking, ' +
+    // no recklessness condition, to reckless hits. (W393: the USA Hockey sentence repeats "a hit from
+    // behind" for the same reason; see below.)
+    // W393 (17 Nov 2026): the USA Hockey limb priced only the 608(c) match, so a wall hit short of
+    // excessive force -- this picture -- was unpriced for a USA Hockey listener. usah_casebook.txt Rule 608
+    // Situation 1: major + GM or match "must be called" "[i]n every instance where a player forcefully checks an
+    // opponent who is standing along the boards (back toward the middle of the ice)", head first into the
+    // boards or goal frame, or reckless; usah.txt 608(b) "shall"; 620(b) major + GM for careless or
+    // intentional head, face or neck contact; 602(a) a match "shall" for reckless endangerment, so "plan on a
+    // match for any reckless one", and 608(c) makes it mandatory with excessive force. The Hockey Canada /
+    // CARHA floor added the same day: hc_2026-08-print.txt 7.5(a) "A Minor penalty and a Game Misconduct
+    // penalty will be assessed"; carha_2026.txt 53(a) minor or major, each "plus a Game Misconduct".
+    // Spoken citations dropped for length; the sources are named here.
+    // ANTECEDENTS: the USA Hockey sentence names "a hit from behind" again rather than "one" or "it" --
+    // after the sentence before, "one" could bind to "the minor" and "it" to "into the boards or net".
+    // "anywhere" replaces "boards or not" (Casebook 608 Sit. 1 (3) "regardless of whether or not board contact
+    // is made"): a bare "or not" before "mandatory" can be heard as "or not mandatory" (check_caption_negations).
+    // W393 cut: one USA Hockey sentence, so "any reckless one" binds to "a hit from behind" in the same
+    // sentence and "mandatory" stays scoped to USA Hockey (safety C1: a free-standing "Plan on a match ...
+    // the match is mandatory" was heard as every book). "anywhere" = 608 Note "in open ice or directly into
+    // the boards or goal frame" and Casebook Sit. 1 (3) "regardless of whether or not board contact is made".
+    'Hockey Canada and CARHA add a game misconduct even to their minor, and make it a match into the boards ' +
+    'or net on a player who cannot protect themselves. Under USA Hockey a hit from behind ejects you if it is ' +
+    'forceful at the boards, sends them head first into the boards or net or is reckless, as does careless ' +
+    'head or neck contact; plan on a match for any reckless one, anywhere, mandatory with excessive force on ' +
+    'a vulnerable or defenceless player. ' +
+    '⚠️ If your game allows body checking, ' +
     'the arriving player carries the whole onus: take the puck, take the ice, or angle them off it. ' +
     'Never finish into the back of a player facing away.',
 
