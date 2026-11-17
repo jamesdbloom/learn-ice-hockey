@@ -1065,7 +1065,7 @@ Body Contact and Battles sets out [every book's count beyond tonight](../techniq
 
 ```facts
 Rule: No book caps a late hit at a minor — NHL 56.4, PWHL 57.4 a major, which ejects if for injury; IIHF 56.5 can eject; Hockey Canada 8.3(b) and CARHA 49(a) can, and must if hurt (CARHA's major ejects, 30(a)); USA Hockey 640(g) ejects if reckless
-Rule: A late hit meant to injure is a match in every book but the IIHF — NHL and PWHL 21.1, Hockey Canada 8.3(c), CARHA 48(a); under USA Hockey a reckless one is too, with a likely multi-game ban (602(a)); the IIHF, a major and game misconduct (56.5), with supplementary discipline beyond it (56.8)
+Rule: A late hit meant to injure is a match in every book but the IIHF — NHL and PWHL 21.1, Hockey Canada 8.3(c), CARHA 48(a); under USA Hockey a reckless one is too, with a likely multi-game ban (602(a)); IIHF: plan on a major and game misconduct (56.5), and supplementary discipline can follow (56.8)
 Rule: USA Hockey 640(e) bars checking a player "physically engaged for possession of the puck with one or more other players" — net front included, no adult-men's exception; if reckless, a mandatory major and game misconduct (640(g)); reckless or meant to injure, a match, likely multi-game ban (602(a))
 Rule: NHL 56.1 and PWHL 57.1 allow a check only "immediately following" loss of possession, a beat later interference; IIHF 56.1 adds a window of opportunity AND the immediate vicinity, and its glossary deems a check on an unaware or unprepared opponent without the puck automatically reckless
 Rule: Hockey Canada 8.3 writes the window as a distance — contact "within a maximum distance of an arm and stick length" of the puck carrier "at the instant the puck has been released"; farther, you were late

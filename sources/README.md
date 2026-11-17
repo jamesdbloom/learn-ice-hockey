@@ -1451,6 +1451,12 @@ collision would become live the first time a diagram draws a dashed player shape
 end position.** This check covered the renderer, not every module in `site/src/diagrams/`. A module that
 builds its own SVG outside `rink.mjs` was not ruled out.
 
+## ⚠️ Hockey Canada 8.5(b) Note 1 points at the wrong Interpretation for "the definition of charging" (17 November 2026)
+
+**`hc.txt:7013`, Rule 8.5(b) Note 1:** *"See Rule 7.4 (b)(Interpretation 2) – Charging, for the definition of…"*. ⚠️ **There is no Interpretation 2 under 7.4(b).** The three 7.4 Interpretations are filed as **Interpretation 1 Rule 7.4 (a)** (`:6105`, a "jumping" action), **Interpretation 2 Rule 7.4 (a)** (`:6111`, the **blindside** hit) and **Interpretation 3 Rule 7.4 (b)** (`:6120`, a charge on a goaltender in the crease). So the pointer resolves to the blindside definition, which is not a definition of charging.
+
+⚠️ **Do not read it as narrowing 8.5(b).** 8.5(b)'s own text — *"A Major penalty and Game Misconduct penalty will be assessed to any player who charges the goaltender"* — has **no crease condition**, and the 8.5 preamble says *"anywhere on the ice"*. Interpretation 3's crease wording covers the in-crease case under 7.4(b); it is not 8.5(b)'s scope. Found by the W413 rules-verifier; book defect, not extraction.
+
 ## Hockey Canada writes almost no suspensions into its playing rules — check before asserting one
 
 ⚠️⚠️ **CORRECTION, 15 October 2026: the measurement below searched only the WORD `suspension`, and that word is not how Hockey Canada writes it.** Rules **4.8(c)** and **4.9(b)** say a player *"will automatically be suspended"* for the next game (or seven days) after a game misconduct or gross misconduct in the last ten minutes, in overtime, or after the game (`hc.txt` around 4.8(c)/4.9(b)). The corpus already cites 4.8(c) correctly. Treat the section below as a lesson in label searching, not as a finding that Hockey Canada writes no suspensions.
