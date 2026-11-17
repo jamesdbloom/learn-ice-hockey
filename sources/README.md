@@ -67,6 +67,8 @@ v1.1, from its own server, at a path nobody had tried:
 
     https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/3_the_iihf/2025-26_iihf_rulebook_22122025-v1.pdf
 
+⚠️ **THIS URL NOW RETURNS 404 — measured 17 November 2026** (223 bytes, `application/xml`, Azure `ResourceNotFound`, with a browser user-agent and an iihf.com referer; a W429 source-verifier found it first). **The publisher has taken the v1.1 file down; the text on disk is unaffected** and remains the edition the In-House Rules' Introduction names (their cover says *"the Current IIHF Rule Book"* — see the edition contradiction recorded above). The corpus still cites this URL (run `grep -rl 2025-26_iihf_rulebook_22122025-v1 content/ | wc -l`); whether to keep, relabel or re-point those citations is an open plan row, not decided here. **When fetched on 28 August 2026 it returned:**
+
 200, 11,795,028 bytes, 228pp, MD5 `ca5e829a949581491ddf435d92e98af5`, marker
 *"IIHF Official Rulebook 2025/26 – Version 1.1, July 2025"*. **It is
 publisher-original**: Producer `Adobe PDF Library 18.0`, against the mirror's
