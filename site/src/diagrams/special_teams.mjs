@@ -673,7 +673,8 @@ const pkBox = {
 
   caption:
     'Four killers, shorthanded 4-on-5, drawn against the 1-3-1 that counters it: two forwards ' +
-    'high, one on each point, and two defencemen low on the corners and the goalmouth. A box ' +
+    'high, one each side in the shooting lanes, and two defencemen low on the corners and the goalmouth. The ' +
+    '1-3-1\'s letters: P at the point, H on the half-walls, B the bumper, N at the net front. A box ' +
     'has no single top — describing one means you are describing a diamond. Nobody is ' +
     'assigned to the middle, by design, so the bumper stands uncovered. Which shape a team ' +
     'runs is a coaching choice, and no public count of bases exists.',

@@ -600,7 +600,8 @@ const dToD = {
     'Drawn in your own defensive zone at the left of the picture, with the strong side flooded and ' +
     'the far side free, which is the read the option needs. The route drawn is the default, behind ' +
     'your own net; some teams exchange high, above the circles, instead, so ask which yours plays. ' +
-    'Either way, never through the shaded area. Intercepted below the goal line it costs ' +
+    'Either way, never through the shaded area — the house, or home plate, wider than the slot: across the tops of ' +
+    'the two circles, down to the dots and in to the two posts. Intercepted below the goal line it costs ' +
     'little, because there is no shot from there; intercepted in front of the net it is a point-blank ' +
     'chance against. Move it quickly; do not skate it across.',
 

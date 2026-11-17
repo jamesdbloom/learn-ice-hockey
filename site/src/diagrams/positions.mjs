@@ -994,7 +994,7 @@ const dToD = {
 
   caption:
     'A defence-to-defence pass in your own end goes behind your own net, below the goal line, and ' +
-    'never across the slot — the shaded area, and the highest-danger ice there is. One intercepted in' +
+    'never across the slot — the shaded area, where most goals are scored from. One intercepted in' +
     ' front of the net is a point-blank chance against, and among the most punished mistakes in the ' +
     'game — coaching emphasis, not a counted ranking. The same holds if you are carrying rather than ' +
     'passing: if no pass is on, skate behind the net to the other side instead of going through the ' +
@@ -1019,10 +1019,21 @@ const dToD = {
   // ⚠️ It previously ran x 69→83 at y ±22: 616 sq ft containing most of both faceoff
   // circles, which is neither the slot (it dropped the whole 54→69 half of it) nor the
   // low slot (it added the ±7→±22 ice the owner assigns to the circles). That matters
-  // beyond tidiness, because the caption calls the shaded ice "the highest-danger ice
-  // there is" — defender.md's own words, "The slot is the highest-danger area" — and
-  // that sentence is not true of the inside of both faceoff circles. Either the label
-  // had to match the region or the region the label, and the owner decides which.
+  // beyond tidiness, because the caption describes the shaded ice as the slot's — it
+  // used to say "the highest-danger ice there is", from defender.md's "The slot is the
+  // highest-danger area" — and no claim about the slot is true of the inside of both
+  // faceoff circles. Either the label had to match the region or the region the label,
+  // and the owner decides which.
+  //
+  // ⚠️ CAPTION RE-WORDED 17 November 2026 (W394). "The highest-danger ice there is"
+  // outranked the owner: rink_map.md gives that role to home plate (wider than the
+  // slot) and the inner slot, and its own line for the slot is "it is where most goals
+  // are scored from". The caption now uses those words. defender.md still carries the
+  // superlative; that is content and is not this file's to change.
+  //
+  // `danger: true` because this region means "never pass across here". In the target
+  // blue it read as "stand here" — the notation collision site/scripts/lib/rink.mjs
+  // warns about, and the reason breakouts.mjs's breakout-d-to-d marks its house the same way.
   //
   // The depth still stops at the FRONT OF THE CREASE rather than the goal line, which
   // is the owner's line too ("outside the crease"): the crease is 6 ft deep off a goal
@@ -1034,7 +1045,7 @@ const dToD = {
         { at: 'crease', dx: -3, dy: CIRCLE_EDGE },
         { at: 'crease', dx: -3, dy: -CIRCLE_EDGE },
         { at: 'top-of-circle:left', dy: CIRCLE_RADIUS },
-      ], label: 'the slot' },
+      ], label: 'the slot', danger: true },
   ],
 
   players: [
