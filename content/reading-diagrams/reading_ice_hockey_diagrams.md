@@ -194,11 +194,12 @@ beside a player.
    and a numeral would say "F1 is the centre". **One label collides:** a circled `C`
    means *coach* on both published keys and a centre here. No diagram in this guide draws
    a coach, but on someone else's diagram a circled `C` is the person on the bench.
-   **In a few diagrams the `C` is simply the puck carrier**, whoever that is — mainly the
-   support shapes in [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
-   The label beside the glyph or the caption says which: when it speaks of the player
-   with the puck — *the carrier*, *carries it in*, *the attacker* being steered — read the
-   `C` as that player, not the centre.
+   **In the support shapes drawn around a single carrier in
+   [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md)** — one of them
+   also appears in [Passing and Receiving](../technique/passing_and_receiving.md) — **the
+   `C` is simply the puck carrier**, whoever that is, and the label beside it or the
+   caption calls that player *the carrier*. Where neither does, `C` is the centre —
+   including that page's own defensive-zone picture, where the carrier is a defenceman.
 2. **Reading fill as the team, and open as "you", are this guide's choices.** The key
    also has no opposition symbol of any kind.
 

@@ -515,13 +515,12 @@ const clearAtFiveOnSix = {
     // tidy vertical slot directly under the glyph; anything longer is pushed to this
     // offset, so do not lengthen it expecting the placement to hold.
     { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 }, label: 'your goalie' },  // (-85, 0)
-    // ⚠️ THIS WAS `id: 'C'`, WHICH IS A CENTRE. Every one of the 39 other `id: 'C'`
-    // glyphs in site/src/diagrams/ is a centre role — "the middle is his", "to the
-    // centre", "middle lane" — so the letter is not generic in this corpus, it is a
-    // position claim. The section never says who retrieves the puck and `describe`
-    // below says only "one own player". `F` is the corpus's generic forward, used
-    // 140 times. Counted with `grep -oh "id: '[A-Z0-9+]*'" site/src/diagrams/*.mjs`
-    // on 2026-09-03; re-run it rather than trusting these two figures.
+    // ⚠️ THIS WAS `id: 'C'`, WHICH READS AS A CENTRE. Nearly every live `C` glyph in
+    // site/src/diagrams/ is a centre; the exceptions are the puck-carrier glyphs in
+    // puck_support_and_spacing.mjs. This player's position is never stated — `describe`
+    // says only "One own player" — so `F`, the corpus's generic forward, claims nothing.
+    // Re-count live glyphs with `grep -nE "\{ *id: *'C'" site/src/diagrams/*.mjs` (the
+    // plain pattern also matches comments, this one included); no figure is kept here.
     { id: 'F', pos: 'F', at: CLEARER, label: 'every clear is a shot' },
 
     // No opposition goaltender is drawn, and that absence is the situation. It is

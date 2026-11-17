@@ -178,9 +178,11 @@ const offsideFaceoffLocation = {
     // precede the puck into the attacking zone." Both skates well over the line —
     // this is the offside, and it is the same offside in both cases.
     { id: 'A1', pos: 'F', at: { at: ATT_BLUE, dx: 12, dy: 6 }, label: 'preceded the puck' },
-    // labelHint: HEAD's slot under C, drawn without a leader. Unhinted, the pushed slot ran
+    // labelHint: HEAD's slot under the carrier, drawn without a leader. Unhinted, the pushed slot ran
     // the words into the corner of the "if carried" box (27 Oct 2026).
-    { id: 'C', pos: 'F', at: OFF_CARRIER, label: 'carries it in', labelHint: [0, -7.5] },
+    // id 'F', not 'C': a circled C reads as a centre in this corpus, and this is just the
+    // carrier — the caption never says which forward. `F` is the generic forward.
+    { id: 'F', pos: 'F', at: OFF_CARRIER, label: 'carries it in', labelHint: [0, -7.5] },
     // Short label on purpose: the placer sizes a label by its character count, and
     // "fires it in from his own end" is wide enough to be dragged across the pass
     // route it belongs to. The caption says whose end it is.

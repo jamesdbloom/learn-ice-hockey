@@ -948,7 +948,9 @@ const standUpAtTheLine = {
   players: [
     { id: 'G', pos: 'G', at: OUR_G },
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
-    { id: 'C', team: 'opp', pos: 'F', at: BL_CARRIER, label: 'chips past the hip' },
+    // id 'F', not 'C': a circled C reads as a centre in this corpus, and this is the
+    // opposition carrier, role unstated. `F` is the generic forward.
+    { id: 'F', team: 'opp', pos: 'F', at: BL_CARRIER, label: 'chips past the hip' },
     // No route. See the header note above: this is the safety constraint, not an
     // omission, and it is also the teaching point.
     { id: 'D', pos: 'D', at: BL_D, label: 'feet stopped' },
@@ -1061,7 +1063,8 @@ const backOffAtTheLine = {
   players: [
     { id: 'G', pos: 'G', at: OUR_G },
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
-    { id: 'C', team: 'opp', pos: 'F', at: BL_CARRIER, label: 'steered outside' },
+    // id 'F', not 'C', as in nz-stand-up-at-the-line: the carrier, not a centre.
+    { id: 'F', team: 'opp', pos: 'F', at: BL_CARRIER, label: 'steered outside' },
     // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, SG103, 27 Oct 2026).
     { id: 'D', pos: 'D', at: BL_D, label: 'concedes the line', labelHint: [-18, 7] },
   ],
