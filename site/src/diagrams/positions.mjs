@@ -822,7 +822,9 @@ const twoOnOne = {
       // labelHint: below-right on a short leader. The unhinted slot put the words across the
       // neutral-zone dot (label audit, 3 Nov 2026).
       label: 'the pass you take away', labelHint: [10, -6] },                                        // (26, -14)
-    { id: 'D', pos: 'D', at: D_LANE, label: 'in the passing lane' },
+    // labelHint (W403): straight below him. The placer's slot, out right on a leader, laid
+    // the words along the top of the lower faceoff circle.
+    { id: 'D', pos: 'D', at: D_LANE, label: 'in the passing lane', labelHint: [2, -8.5] },
     { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
   ],
 
@@ -887,7 +889,12 @@ const threeDepths = {
     { points: [
         { at: 'blue-line', dy: 38 }, { at: 'blue-line', dx: 7, dy: 38 },
         { at: 'blue-line', dx: 7, dy: -38 }, { at: 'blue-line', dy: -38 },
-      ], label: 'the default' },
+      ], label: 'the default',
+      // labelDx (W403): centred on the band (x 28.5) the bold blue words straddled the
+      // blue line itself, same colour as the paint, the line running through the "e" of
+      // "the". Shifted so the words start just inside the band, clear of the line, and
+      // run out to the right. The band, not the words, still marks the depth.
+      labelDx: 5.5 },
     { points: [
         { at: 'top-of-circle:right', dx: -3, dy: 16 }, { at: 'top-of-circle:right', dx: 3, dy: 16 },
         { at: 'top-of-circle:right', dx: 3, dy: -60 }, { at: 'top-of-circle:right', dx: -3, dy: -60 },

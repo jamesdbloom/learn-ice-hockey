@@ -953,7 +953,10 @@ const standUpAtTheLine = {
     { id: 'F', team: 'opp', pos: 'F', at: BL_CARRIER, label: 'chips past the hip' },
     // No route. See the header note above: this is the safety constraint, not an
     // omission, and it is also the teaching point.
-    { id: 'D', pos: 'D', at: BL_D, label: 'feet stopped' },
+    // labelHint (W403): the placer's slot, straight below him, put his own blue line
+    // through the "o" of "stopped". Down and to the left, with a leader, keeps all 27 ft
+    // of words behind the line in your own zone, clear of the faceoff circle.
+    { id: 'D', pos: 'D', at: BL_D, label: 'feet stopped', labelHint: [-14.5, -7.5] },
   ],
 
   // Unnumbered on purpose. The badges sit a fixed distance along each route and

@@ -341,7 +341,9 @@ const unmarkedNotAvailable = {
 
   players: [
     { id: 'P', pos: 'F', at: D3_CARRIER, label: 'the carrier' },
-    { id: 'R', pos: 'F', at: D3_RECEIVER, label: 'unmarked, unavailable' },
+    // labelHint (W403): low and to his left. The slot under him laid the words along the
+    // top of the lower faceoff circle.
+    { id: 'R', pos: 'F', at: D3_RECEIVER, label: 'unmarked, unavailable', labelHint: [-20, -5.5] },
     // "a defenceman's stick lying flat across the only line" — the section's word,
     // so a triangle.
     // labelHint: moves this label off a neighbour's label, where the two stacked and read
@@ -910,7 +912,9 @@ const legalRouteThroughTraffic = {
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
     { id: 'F', pos: 'F', at: D8_YOU, label: 'you' },
-    { id: 'F', pos: 'F', at: D8_MATE, label: 'standing still' },
+    // labelHint (W403): two feet higher than the placer's slot, so the words clear the top
+    // of the circle he stands in instead of running along it.
+    { id: 'F', pos: 'F', at: D8_MATE, label: 'standing still', labelHint: [0, 13.2] },
     // A role letter rather than a position, and a circle rather than a triangle:
     // the section says only "your check", "a defender", "a chaser", and the
     // published key states that the letters inside a glyph are roles, not

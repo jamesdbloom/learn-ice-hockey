@@ -793,6 +793,11 @@ const backcheckLanes = {
   zones: [
     {
       label: 'the middle lane',
+      // labelDx (W403): at the vertex mean, centre ice, the bold blue words crossed the
+      // red line and the blue centre circle (same colour as the text). The band runs to
+      // x 80, so the words move into the empty attacking half, between the blue line and
+      // the faceoff circles, still inside the lane they name.
+      labelDx: 55,
       points: [
         { at: 'faceoff-dot:right:far', dx: -11 },   // (-80, 22)
         { at: 'faceoff-dot:right', dx: 11 },        // (80, 22)

@@ -234,7 +234,9 @@ const wallReception = {
     // caption discloses that the shape was chosen rather than stated.
     { id: 'D', pos: 'D', at: D1_RETRIEVE, label: 'retrieving' },
     { id: 'R', pos: 'F', at: D1_YOU, label: 'you, receiving', labelHint: [-4, -14] },
-    { id: 'S', pos: 'F', at: D1_SUPPORT, label: 'support, already seen' },
+    // labelHint (W403): the placer's slot, about four feet lower, so the words clear the bottom
+    // of the faceoff circle and its hash marks instead of running along the arc.
+    { id: 'S', pos: 'F', at: D1_SUPPORT, label: 'support, already seen', labelHint: [-18.93, -13.4] },
     { id: 'F', team: 'opp', pos: 'F', at: D1_PRESSURE_FROM, label: 'closing', labelHint: [0, -7.5] },
   ],
 
@@ -510,7 +512,11 @@ const anticipation = {
     { id: 'A', team: 'opp', pos: 'F', at: D34_OPTION, label: 'their option' },
     // A circle. See the caption: the section names nobody, and the shape is a
     // choice the notation forces rather than a claim the prose makes.
-    { id: 'F', pos: 'F', at: D34_YOU_NETSIDE, label: 'you, still net-side' },
+    // labelHint (W403): below and to his left, on a leader. The placer's slot laid the words
+    // along the lower circle's top; straight under him the circle's hash marks crossed them.
+    // Here the words sit above the hash marks and clear of the crease, and the goalie's
+    // reserve rules out anything nearer the centre line that also reaches past x 81.5.
+    { id: 'F', pos: 'F', at: D34_YOU_NETSIDE, label: 'you, still net-side', labelHint: [-6.4, -9.5] },
   ],
 
   puck: D34_PUCK,

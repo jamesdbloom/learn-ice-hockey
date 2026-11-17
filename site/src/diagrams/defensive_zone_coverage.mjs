@@ -612,8 +612,15 @@ const collapseHighSlot = {
     // The centre finishes where frame one's route ended. If these two ever
     // disagree the pair stops being a pair.
     { id: 'C', pos: 'F', at: C_IN_CORNER, label: 'second body' },
-    { id: 'W', pos: 'F', at: W_STRONG_PT, label: 'holds their point' },
-    { id: 'W', pos: 'F', at: 'high-slot', label: 'collapsed into the high slot' },
+    // labelHints (W403). "holds their point": the placer's slot above him put the blue
+    // line through "holds"; moved right so the words start inside the zone. "collapsed
+    // into the high slot": the slot above him laid the words along the bottom arc of the
+    // upper faceoff circle, and there is no room between his glyph and that arc for the
+    // placer's line box, and his own 7x8 reserve rules out his row. Hung down and to the
+    // left on a leader instead, between his glyph and the lower circle's top, ending short
+    // of the circle's hash mark at x 66.2 and clear of the net-front forward and the blue line.
+    { id: 'W', pos: 'F', at: W_STRONG_PT, label: 'holds their point', labelHint: [7, 8] },
+    { id: 'W', pos: 'F', at: 'high-slot', label: 'collapsed into the high slot', labelHint: [-21, -5.75] },
   ],
 
   puck: OPP_PUCK,

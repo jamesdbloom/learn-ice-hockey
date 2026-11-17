@@ -233,7 +233,9 @@ const dzoneAlignmentOtherCircle = {
   players: [
     // Mirrored across the centre line: every dy negated, every dx unchanged.
     { id: 'C', pos: 'F', at: { at: LDOT, dx: STICK } },
-    { id: 'W', pos: 'F', at: { at: LDOT, dx: GATE, dy: -HASH }, label: 'boards-side winger' },
+    // labelHint (W403): along the boards to his left, just under the circle. The placer's slot
+    // laid the words along the bottom arc of the faceoff circle.
+    { id: 'W', pos: 'F', at: { at: LDOT, dx: GATE, dy: -HASH }, label: 'boards-side winger', labelHint: [-20, -0.28] },
     { id: 'W', pos: 'F', at: { at: LDOT, dx: GATE, dy: HASH },  label: 'inside winger' },
     { id: 'D', pos: 'D', at: { at: LDOT, dx: 11, dy: -15 },     label: 'boards-side D' },
     // Unmirrored on purpose — the slot and the crease are on the centre line, so these
@@ -539,7 +541,9 @@ const dzoneTieUp = {
   players: [
     { id: 'C', pos: 'F', at: D_CENTRE },
     { id: 'W', pos: 'F', at: D_BOARDS_W },
-    { id: 'W', pos: 'F', at: D_INSIDE_W, label: 'nearest body' },
+    // labelHint (W403): to his left, between him and the circle's arc. The placer's slot
+    // out right laid the words along that arc and across the goal line.
+    { id: 'W', pos: 'F', at: D_INSIDE_W, label: 'nearest body', labelHint: [-13, -2] },
     { id: 'D', pos: 'D', at: D_WALL_D,   label: 'nearest body' },
     { id: 'D', pos: 'D', at: D_SLOT_D },
     { id: 'G', pos: 'G', at: D_GOALIE },
@@ -829,6 +833,13 @@ const whereTheDrawGoes = {
         { at: 'centre-ice', dx: -9, dy: 1 },
       ],
       label: 'after a goal',
+      // labelDx/labelDy (W403): at the box's mean the bold blue words sat inside the
+      // centre circle with its blue arc (same colour) through both ends and the red line
+      // through the middle "a". 29 ft of type cannot fit inside a 30 ft circle, so they
+      // sit just below it, overlapping the box's lower edge, with the word space after
+      // "after" on the red line.
+      labelDx: 2.03,
+      labelDy: -11.4,
     },
     // YOUR OWN END. The rule names the end, not the dot, so one of the two is boxed
     // as a concrete instance and the caption carries who picks. Label pushed 7 ft
@@ -854,6 +865,13 @@ const whereTheDrawGoes = {
         { at: NZ_DOT, dx: -6, dy: -16 },
       ],
       label: 'carried offside',
+      // labelDx/labelDy (W403): centred on the box the bold blue words ran across the
+      // blue line (same colour) through "offside". At 36.8 ft they cannot fit in the
+      // 24 ft between the red and blue lines, so the word space is put ON the blue line:
+      // "carried" over the box, "offside" just over the line — and raised half a foot
+      // off the centre circle's arc.
+      labelDx: 4.79,
+      labelDy: 0.5,
     },
     // THE END YOU ARE ATTACKING, lower side. Mirrored: the dot sits 2 ft inside the
     // BOTTOM edge so the label is pushed up toward the middle rather than into the

@@ -885,6 +885,14 @@ const theThreeZones = {
         { at: 'blue-line', dy: -42.5 },
       ],
       label: 'neutral zone',
+      // labelDx/labelDy (W403): at the vertex mean (0, 0) the bold blue words lay across
+      // the blue centre circle (same colour as the text) and the red line ran through
+      // the "l". Raised above the circle, below the neutral-zone dots at x +/-20, and
+      // nudged so the word space, not a letter, falls on the red line. The words are
+      // 31.6 ft wide in a 50 ft zone, so some line always crosses them; a gap is the
+      // only place it does no harm.
+      labelDx: -2.62,
+      labelDy: 16.2,
       fill: 'rgba(15,90,143,0.07)',
       stroke: 'none',
     },

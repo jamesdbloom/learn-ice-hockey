@@ -166,7 +166,9 @@ const supportTriangle = {
     // "Now pull one of those three off the line, into the middle." This is the
     // near option from the line diagram, moved; the far one stays put so the
     // reader can see which player changed.
-    { id: 'A1',  pos: 'F', at: { at: 'faceoff-dot:right', dx: 2, dy: -5 }, label: 'into the middle' },
+    // labelHint (W403): four feet lower than the placer's slot, so the words clear the bottom
+    // of the faceoff circle and its hash marks instead of running along the arc.
+    { id: 'A1',  pos: 'F', at: { at: 'faceoff-dot:right', dx: 2, dy: -5 }, label: 'into the middle', labelHint: [0, -14.5] },
     { id: 'B',  pos: 'F', at: WALL_HIGH,                                label: 'still on the wall' },
     // Unlabelled on purpose. He is boxed in by the carrier, the route and the
     // boards, and every legal slot for a label of his ended up nearer another

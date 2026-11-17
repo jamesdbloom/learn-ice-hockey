@@ -158,6 +158,12 @@ const offsideFaceoffLocation = {
         { at: NZ_DOT, dx: -6, dy: 2 },    // (14, 24)
       ],
       label: 'if carried',
+      // labelDx/labelDy (W403): centred on the box (x 20) the bold blue words ran across
+      // the blue line (same colour) through "ied". Shifted toward centre ice so all
+      // 22.4 ft sit between the red and blue lines, and raised half a foot so the "i"
+      // clears the centre circle's arc; the top still clears the faceoff dot at (20, 22).
+      labelDx: -7.5,
+      labelDy: 0.6,
     },
     {
       points: [

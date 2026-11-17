@@ -514,7 +514,9 @@ const clearAtFiveOnSix = {
     // too — and at 360 px it reads. Only labels of EIGHT characters or fewer take the
     // tidy vertical slot directly under the glyph; anything longer is pushed to this
     // offset, so do not lengthen it expecting the placement to hold.
-    { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 }, label: 'your goalie' },  // (-85, 0)
+    // labelHint (W403): the same offset, three feet nearer the middle of the ice, so the
+    // words sit above the lower circle's top instead of along it.
+    { id: 'G', pos: 'G', at: { at: 'crease::far', dx: 1 }, label: 'your goalie', labelHint: [18.5, -5] },  // (-85, 0)
     // ⚠️ THIS WAS `id: 'C'`, WHICH READS AS A CENTRE. Nearly every live `C` glyph in
     // site/src/diagrams/ is a centre; the exceptions are the puck-carrier glyphs in
     // puck_support_and_spacing.mjs. This player's position is never stated — `describe`

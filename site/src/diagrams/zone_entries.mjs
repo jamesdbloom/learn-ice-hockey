@@ -678,8 +678,11 @@ const crossCorner = {
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
+    // labelHint (W403): below him, shifted toward the net to clear the dump's line. The
+    // placer's slot above him laid the words along the top of the faceoff circle he stands
+    // in; from below, the circle crosses them once, steeply, at its left edge.
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'top-of-circle:right', dx: 2, dy: 2 },  // (56, 24)
-      label: 'best placed — taken out of it' },
+      label: 'best placed — taken out of it', labelHint: [5.5, -8] },
     // Moved off the diagonal. At (62, -16) this triangle sat under four feet from
     // the dump's own line and rendered with the puck path drawn straight through
     // the glyph. From here, in front of his own net on the weak side, the length
@@ -687,7 +690,10 @@ const crossCorner = {
     { id: 'D', team: 'opp', pos: 'D', at: WEAK_SIDE_D,     // (71, -8)
       label: 'long backhand retrieval' },
 
-    { id: 'F', pos: 'F', at: CROSS_CARRIER, label: 'shoots it diagonally' },
+    // labelHint (W403): up and to his right, inside the zone. Moving "best placed" freed the
+    // slot this label used to take, and the placer then put it over the blue line, the line
+    // through "diagonally". Here the words clear the line entirely.
+    { id: 'F', pos: 'F', at: CROSS_CARRIER, label: 'shoots it diagonally', labelHint: [16, 6] },
     { id: 'F', pos: 'F', at: CROSS_WINGER,  label: 'far winger, already going' },
   ],
 
