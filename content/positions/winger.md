@@ -878,12 +878,12 @@ Rule: A hit from behind meant to injure is a mandatory match, no place named —
 
 ```facts
 Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
-Rule: At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban, in every league or age group you are registered in (IHUK DOPS C.1, s.11)
+Rule: At a club in England or Wales, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban, in every league or age group you are registered in (IHUK DOPS C.1, s.11); in the Elite League, Scotland or Northern Ireland, plan on the same ban
 Rule: In a CARHA adult league, 30(a) adds a game misconduct to almost any major and 32(d) a suspension of at least one game; an accidental high stick that injures still brings the misconduct (62(b) Note) but not the automatic ban
 ```
 
 - **A game misconduct can cost your next game too.** Under USA Hockey any game misconduct also suspends you for your team's next game, and a second major in the same game at least two (404(b), 403(b)). Under Hockey Canada, a game misconduct in the last 10 minutes, in overtime or after the game costs at least your next game or seven days (4.8(c)). ⚠️ **In a CARHA adult league, almost any major brings a game misconduct and costs at least your next game:** Rule 30(a) adds a game misconduct to a major and Rule 32(d) adds an automatic suspension of at least one game. The CARHA exception is an accidental high stick, which still brings a game misconduct if it injures (62(b) Note) but falls outside 32(d)'s automatic ban, which excludes *"the Accidental High Stick Rule"*.
-- At a club in England or Wales, outside the Elite League, a game misconduct for checking from behind or a check to the head, or a major for boarding, is at least a one-game ban, in every league or age group you are registered in ([UK and England Rules](../foundation/uk_rules.md#a-first-major-can-end-your-game-and-adults-are-not-exempt)).
+- At a club in England or Wales, a game misconduct for checking from behind or a check to the head, or a major for boarding, is at least a one-game ban, in every league or age group you are registered in. In the Elite League, and in Scotland and Northern Ireland, plan on the same ban ([UK and England Rules](../foundation/uk_rules.md#a-first-major-can-end-your-game-and-adults-are-not-exempt)).
 
 ---
 
