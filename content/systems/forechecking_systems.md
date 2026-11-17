@@ -1061,7 +1061,7 @@ Body Contact and Battles sets out [every book's count beyond tonight](../techniq
 
 ### Late, sideways and third-man hits
 
-**Never decide to deliver a check after the puck has gone, hold your lane and speed, and never check a player already in a battle.** **None of it is capped at a minor, and** ⚠️ **a hit meant to injure is a match in every book but the IIHF, which tops out at a major and game misconduct, at the referee's discretion (56.5).**
+**Never decide to deliver a check after the puck has gone, hold your lane and speed, and never check a player already in a battle.** **None of it is capped at a minor, and** ⚠️ **a hit meant to injure is a match in every book but the IIHF, which has no match penalty — there plan on a major and game misconduct (56.5), and supplementary discipline can follow (56.8).**
 
 ```facts
 Rule: No book caps a late hit at a minor — NHL 56.4, PWHL 57.4 a major, which ejects if for injury; IIHF 56.5 can eject; Hockey Canada 8.3(b) and CARHA 49(a) can, and must if hurt (CARHA's major ejects, 30(a)); USA Hockey 640(g) ejects if reckless
