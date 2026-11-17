@@ -1101,6 +1101,23 @@ a.chip:hover {
   margin: 0.35rem 0;
 }
 
+/*
+  A LOOSE list item — one with an indented continuation paragraph, or any item
+  in a list written with blank lines between items — renders its text as <p>s.
+  Without this rule the gap between two paragraphs INSIDE one item (the 1.1rem
+  `.prose p` margin) equalled the gap BETWEEN items, so only the missing bullet
+  told a reader the continuation belonged to the item above it.
+
+  Only a paragraph that is NOT the item's last child is tightened. The last one
+  keeps its 1.1rem, which collapses through the <li> and still sets the gap to
+  the next item — so the inter-item gap, every single-paragraph loose item and
+  every tight list (no <p>) render exactly as before. A paragraph followed by a
+  callout aside keeps the aside's own larger margin by collapsing.
+*/
+.prose li > p:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
 .prose li > ul,
 .prose li > ol {
   margin: 0.35rem 0 0.5rem;

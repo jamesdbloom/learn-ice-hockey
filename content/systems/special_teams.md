@@ -501,10 +501,10 @@ Risk: No public count of how many NHL teams run each as a base shape has been fo
 
 #### Box — the shape everyone learns first
 
-**The shape:** a rectangle around the slot. **Two players high** — both forwards, one on each side, each responsible for one point — and **two players low**, both defencemen, covering the two low corners and the goalmouth.
+**The shape:** a rectangle around the slot. **Two players high** — both forwards, one each side in the shooting lanes, taking the point on their side when the power play runs two — and **two players low**, both defencemen, covering the two low corners and the goalmouth.
 
 ```facts
-Position: A rectangle around the slot — two forwards high, one on each point, and two defencemen low covering the corners and the goalmouth
+Position: A rectangle around the slot — two forwards high, one each side in the shooting lanes, and two defencemen low covering the corners and the goalmouth
 Key: A box has two players high and no single "top" — if you are describing "the top of the box", you are describing a diamond
 Action: High forwards deny the point time and space, stay in shooting lanes, and never both drift to the same side
 Action: The strong-side D pressures the puck below the goal line or in the low circle; the weak-side D owns the goalmouth and the backdoor
@@ -519,7 +519,7 @@ Countered by: A 1-3-1 — nobody in a box is assigned to the middle of the slot,
 
 **The jobs:**
 
-- **High forwards:** deny the point players time and space, stay in shooting lanes, and never both drift to the same side. Your inside shoulder should be turned so you can see your point man and the middle at once.
+- **High forwards:** deny the point players time and space, stay in shooting lanes, and never both drift to the same side. Your inside shoulder should be turned so you can see your point man and the middle at once. Whether you step out to pressure the point or hold your lane is your coach's call, so ask which they want.
 - **Low defencemen:** the strong-side D pressures the puck when it comes below the goal line or to the low circle; the weak-side D owns the goalmouth and the backdoor. Same partnership logic as even-strength [Defensive Zone Coverage](defensive_zone_coverage.md).
 - **Everyone:** the box **slides** with the puck rather than rotating. When the puck moves across, all four shift together, keeping the shape intact.
 

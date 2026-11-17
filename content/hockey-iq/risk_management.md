@@ -179,7 +179,7 @@ A turnover has a direction, and the direction changes the cost more than the loc
 
 **D-to-D** means one defenceman passing to their partner. In your own zone, the two obvious routes are *through* the front of the net or *behind* it.
 
-**Why not through.** A pass through your own slot travels across the highest-danger area on the ice, in front of the net, at knee-to-stick height, through the exact space where a forechecker is standing. If it is intercepted, the interceptor is already in the slot facing your goalie with the puck. That is not a chance against. That is a goal.
+**Why not through.** A pass through your own slot travels across the ice most goals are scored from, in front of the net, at knee-to-stick height, through the exact space where a forechecker is standing. If it is intercepted, the interceptor is already in the slot facing your goalie with the puck. That is not a chance against. That is a goal.
 
 ```facts
 Never: Pass D-to-D through your own slot — an interception leaves the interceptor in the slot facing your goalie
@@ -274,11 +274,11 @@ Convention: Forcing that pass is not a rule and genuinely negotiable — a team 
 
 ### 6. Never stickhandle in your own slot — a coaching convention, not a rule
 
-**Why not.** Stickhandling is a play that buys time. In your own slot there is no time to buy and nothing worth buying it for. Your head is down, you are surrounded, you are in the highest-danger area on the ice, and the only outcomes are "you get out of it having gained nothing" or "you lose it having conceded everything."
+**Why not.** Stickhandling is a play that buys time. In your own slot there is no time to buy and nothing worth buying it for. Your head is down, you are surrounded, you are where most goals are scored from, and the only outcomes are "you get out of it having gained nothing" or "you lose it having conceded everything."
 
 ```facts
 Never: Stickhandle in your own slot — stickhandling buys time, and there is no time to buy and nothing worth buying it for
-Risk: Head down, surrounded, in the highest-danger area — you either gain nothing or concede everything
+Risk: Head down and surrounded in your own slot, where most goals are scored from — you either gain nothing or concede everything
 Action: Take the puck out of the slot first — one stride to the wall, behind the net, or a hard shot of it off the glass
 Key: Change the location first, then make the decision
 Convention: "Never stickhandle in your own slot" is not a rule — about as close to unanimous as coaching advice gets, but it is still advice
@@ -448,7 +448,7 @@ This is the same order taught in [Defender](../positions/defender.md) — **Quic
 ![](diagram:breakout-up)
 
 1. **Quick-up.** *Did we just win this puck, with their forwards still below it and no shape formed?* → Move it up ice on the first touch. [Breakouts](../systems/breakouts.md) calls this the lowest-risk high-reward play available, precisely because the two or three seconds after a retrieval are the least organised the opposition will ever be. It is first on the list because the window closes before you finish checking the rest of it. **First look up ice, then down.**
-2. **Up.** *Is a teammate open going north on my side of the ice, with no opponent between us?* → Pass it. The quickest way out when the lane is open, and — with the carry-out — one of the two exits that keep possession.
+2. **Up.** *Is a teammate open going north on my side of the ice, with no opponent between us?* → Pass it. The quickest way out when the lane is open, and — with the carry-out — one of the two exits that keep possession. In a swing breakout your centre stays low in the middle as **the bail-out**: when the wall is sealed, the low centre is what keeps the breakout alive. If your team sends the centre up the middle early instead, someone else must be under the puck.
 3. **Wheel.** *Do I have a clear lane to skate it out myself — around behind the net and up the far side, or straight up my own side, with nobody between me and the neutral zone?* → Go. On the zone-exit tracking cited earlier, a carry-out and a pass-out both lead to a subsequent zone entry almost nine times out of ten, so a carry beats a pass only when the lane is genuinely clear.
 4. **D-to-D.** *Is my defence partner open with time?* → Take it across **behind the goal line**, never through the slot. This changes the side of the ice and forces the forecheck to reset its angle.
 5. **Reverse.** *Has the forechecker over-committed and skated past me?* → Send it **back against the flow** into the space they just left, to a partner or centre arriving behind you. A **reverse** and a **rim** are opposite plays chosen by the same read: reverse beats a forechecker who has over-run you; rim beats one who is sealing you against the wall. Getting this read wrong is one of the most common defensive-zone turnovers there is.

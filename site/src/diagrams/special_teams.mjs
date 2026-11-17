@@ -661,9 +661,11 @@ const ppWalkDown = {
 
 /* --------------------------------------------------------------- PENALTY KILL */
 
-// "a rectangle around the slot. Two players high — both forwards, one on each side,
-// each responsible for one point — and two players low, both defencemen, covering
-// the two low corners and the goalmouth."
+// "a rectangle around the slot. Two players high — both forwards, one each side in the
+// shooting lanes, taking the point on their side when the power play runs two — and two
+// players low, both defencemen, covering the two low corners and the goalmouth."
+// W397: this used to read "each responsible for one point". The picture is a 1-3-1 with ONE
+// point man, so "one each" could not be drawn; the lanes are true against every set.
 const pkBox = {
   id: 'pk-box',
   title: 'Box penalty kill',

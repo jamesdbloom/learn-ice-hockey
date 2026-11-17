@@ -608,7 +608,7 @@ In an **umbrella** or an **overload** you will usually be low or on the strong-s
 **In short:** Know which shape you are running before the drop, hold your place in it, and pressure the puck rather than chase it.
 
 ```facts
-Position: In a box you are one of the two high players, each responsible for one point — there is no single "top" to drift into
+Position: In a box you are one of the two high players, one each side in the shooting lanes — there is no single "top" to drift into
 Position: In a diamond you are usually the single apex, pressuring the point; in wedge+1 you are frequently the "+1"
 Action: As the +1, pressure whoever has the puck; when the puck moves the nearest wedge player takes over as the new +1, so you never follow it round
 Options: Your route out as the +1 is a coaching choice — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and point; ask which one your team runs
@@ -620,7 +620,7 @@ Key: Know which shape you are running before the puck drops — a box and a diam
 
 A kill is four skaters, normally two forwards and two defencemen. **The shapes are described in [Special Teams](../systems/special_teams.md);** your job inside each one:
 
-- **Box** — the standard. You are **one of the two high players**, alongside a winger, each responsible for one point. There is no single "top" of a box, so don't drift into the middle looking for one.
+- **Box** — the standard. You are **one of the two high players**, alongside a winger, one each side in the shooting lanes, taking the point on your side when they run two. There is no single "top" of a box, so don't drift into the middle looking for one.
 - **Diamond** — used against a 1-3-1. Here there *is* a single apex and it is usually you: pressure the point while the middle two take the half-walls and someone accounts for the bumper.
 - **Wedge+1** — you are frequently the "+1", the single player working outside the triangle. That job is **pressure, not pursuit**. Get at whoever has the puck and make every possession uncomfortable. When the puck moves you stop, and the nearest wedge player steps out as the new +1 while you drop into the triangle. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route you take to the puck is your coach's choice, not a law** — published descriptions differ, some sending the +1 straight out from the goal towards the carrier, some sweeping them laterally across the top of the zone above the circles, some letting them roam to the wall and the point. Ask which one you are running.
 
