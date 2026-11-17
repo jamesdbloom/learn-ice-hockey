@@ -509,7 +509,7 @@ Never: Arrive into a goalie, in or out of the crease — a charge can end your g
 Never: Make room with your stick across anyone — above the shoulders or on injury a cross-check ends your game in several books, no intent needed, and under CARHA so does any on a goalie in the crease
 Never: Put your stick or body into anyone's back at the net front — a hit from behind is never only two minutes in any book
 Rule: Checking a helpless player from behind into the goal frame is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b)
-Rule: USA Hockey makes a hit from behind at least a major and game misconduct if reckless or head first (608(b)) or careless to the head (620(b)), and a match if reckless with excessive force on a vulnerable or defenceless player, boards or not (608(c))
+Rule: USA Hockey makes a hit from behind at least a major and game misconduct if reckless or head first (608(b)), forceful at the boards (Casebook 608 Sit. 1) or careless to head or neck (620(b)), and a match if reckless with excessive force on a vulnerable or defenceless player, boards or not (608(c))
 Never: Lean on anyone for position where checking is barred, and in a CARHA league or under Hockey Canada at any level, checking game or not — hold the spot you have and make them move you
 Never: Body check a player already battling someone else for the puck, in any USA Hockey game — a minor (640(e)), and a mandatory major and game misconduct if it recklessly endangers them (640(g))
 Rule: A net-front charge, cross-check or interference that injures is at least a mandatory major and game misconduct under Hockey Canada (7.4(b), 9.2(b), 8.3(b), goalie 8.5(b)) and CARHA (charging 52(a)/(b), cross-check 54(c), interference 66(e) with 30(a))

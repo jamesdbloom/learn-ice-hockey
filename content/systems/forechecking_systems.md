@@ -37,7 +37,7 @@ Action: Ask your coach which forecheck your team runs, and which one you switch 
 Key: F1, F2 and F3 are set by arrival order, not jersey — first takes a side away, second the escape route left open, not the puck, third stays high towards the blue line you face, first man back
 Rule: Find out whether you may body check in this game before you learn to arrive on one — USA Hockey 604(a) bars it at 12 & under and below, in all Girls'/Women's and non-check Adult classifications; Hockey Canada 7.3 at U13 and below, throughout female hockey and in any Member-approved division
 Rule: USA Hockey 604(b) bars body checking outright any time a checking team plays a non-checking one — so whether you may check can change per fixture, not just per division
-Never: Finish into the back of a player facing the end boards — every book here can end your game for it, most even at their lightest penalty
+Never: Finish into a turned back at the end boards — every book can eject you, most at their lightest penalty; USA Hockey must if forceful at the boards, head first, reckless or careless to head or neck
 Action: Defencemen — pinch only when the puck is slowing on the wall, you can arrive as it does and F3 is high; by default only one of you goes
 Risk: Guessing which forecheck your own team is running is how odd-man rushes happen
 ```

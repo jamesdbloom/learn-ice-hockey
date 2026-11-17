@@ -809,7 +809,7 @@ Behind the net is not where the puck goes to die. It is one of the best attackin
 Key: From behind the goal line you look up at the whole zone with all five defenders and the goalie in front of you
 Key: Nobody can come at you from directly behind, because the net and the end boards are there — that is geometry, not immunity
 Risk: You can still be driven into the goal frame behind the net. Keep your head up and know who is arriving
-Never: Hit a player whose back is turned to you — off the head or on it, it can end your game in every book, and under the NHL, PWHL, CARHA and Hockey Canada off the head, it does
+Never: Hit anyone from behind — any book can eject you; USA Hockey does if forceful at the boards, head first, reckless or careless to head or neck, and the NHL, PWHL, CARHA and Hockey Canada do off the head
 Read: Every time the puck crosses behind the net the goalie must pick a post and rotate — every rotation is a moment they are not square
 Key: Passes from below the goal line finished at 6.73%, second only to royal road passes — volunteer-tracked Passing Project data, 51,308 shots at 5v5, all attempts
 ```

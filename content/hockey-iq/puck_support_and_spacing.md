@@ -340,7 +340,7 @@ Read: Stay out and offer an exit when your teammate has the puck and is trying t
 Convention: Many teams assign a support player to arrive at the wall — find out if that is your job
 Never: Arrive at a wall battle with your back to anyone coming at you, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
 Never: Hit the boards with the point of your shoulder. Keep the whole shoulder off them too if you can, and let the forearm and hip take the load instead
-Never: Push or hit anyone on the wall from behind; play the puck at their feet. It is checking from behind even in non-check play: most books eject you, and if they can't protect themselves, plan on a match
+Never: Push or hit anyone on the wall from behind, even in non-check play; play the puck at their feet. Most books eject; if helpless, Hockey Canada and CARHA must give a match, and USA Hockey if reckless
 ```
 
 ![](diagram:support-a-battle-from-outside)
