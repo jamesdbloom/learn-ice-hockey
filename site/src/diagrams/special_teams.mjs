@@ -696,21 +696,31 @@ const pkBox = {
     // "Two players high — both forwards, one on each side". Level with the tops of
     // the circles and inside them: high enough to deny the point, close enough to
     // stay in the shooting lanes.
-    { id: 'F', pos: 'F', at: { at: 'top-of-circle:right', dx: 2, dy: -10 }, label: 'high, in the lane' },
+    // W409 labelHint [-11.9, 6]: pins this label where it sat before the strong-side D's label
+    // moved (up-left of F, mirroring the lower F's). Unpinned, the placer's next slot put the
+    // words against the faceoff dot once the D's label no longer reserved that space.
+    { id: 'F', pos: 'F', at: { at: 'top-of-circle:right', dx: 2, dy: -10 }, label: 'high, in the lane', labelHint: [-11.9, 6] },
     { id: 'F', pos: 'F', at: { at: 'top-of-circle:left', dx: 2, dy: 10 },   label: 'high, in the lane' },
     // "two players low, both defencemen, covering the two low corners and the
     // goalmouth". Strong side is the puck side.
-    // SG165 labelHint: above D, 0.7 ft right so the words clear the faceoff dot.
-    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 },  label: 'strong side, low', labelHint: [0.7, 12] },
+    // W409 labelHint [-7.5, 7]: between the faceoff dot and D, 7.5 ft left, which keeps the words
+    // clear of the red goal line, the faceoff dot AND the circle's arc (at -4.5 the arc ran
+    // through "low"; at -8 the placer rejects the slot and falls back onto the goal line).
+    // SG165's [0.7, 12] cleared the dot by sitting level with it and to its right, which ran "low"
+    // across the goal line; level with the dot, any slot far enough left to clear the line puts
+    // the words on the dot. Previewed before the build: no other label in this file moved except
+    // the upper F's, which is pinned above.
+    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 },  label: 'strong side, low', labelHint: [-7.5, 7] },
     // W407: this label read 'goalmouth', on a glyph 9 ft off the goal line and 10 ft wide of
     // centre. special_teams.md defines the goalmouth as "the immediate net front, within a
     // stick's length of the goal line", so the label named a place the glyph is not in. The
     // goalmouth is this player's DUTY (special_teams.md: "the weak-side D owns the goalmouth
     // and the backdoor"), which the caption now states as the split of duties; the label
-    // names his spot, mirroring the strong-side D's. labelHint [-1.5, -9.7]: the placer's own
-    // spot (dx 0) ran the last word onto the red goal line; 1.5 ft left clears it and moves
-    // no other label (previewed before the build).
-    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: -10 }, label: 'weak side, low', labelHint: [-1.5, -9.7] },
+    // names his spot, mirroring the strong-side D's. labelHint: the placer's own spot (dx 0)
+    // ran the last word onto the red goal line, and W407's [-1.5, -9.7] cleared the line but
+    // left the words across the faceoff circle. W409's [-7, -9.7] sits them inside the circle,
+    // below D and above the dot, clear of both (previewed before the build).
+    { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: -10 }, label: 'weak side, low', labelHint: [-7, -9.7] },
 
     ...PP_131_OPP.map((p) =>
       p.id === 'B' ? { ...p, label: 'uncovered' } : p),

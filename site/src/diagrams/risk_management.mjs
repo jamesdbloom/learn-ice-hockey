@@ -820,11 +820,11 @@ const pinchCentreDeep = {
 // `breakout-d-to-d` (referenced from this document at §1) and
 // `defender-d-to-d-behind-the-net` both draw a DEFENCE-TO-DEFENCE pass and both make
 // the same point about the ice in front of your own net. This is a different play,
-// and the corpus says so itself: breakouts.md's "Over / cross-ice" section opens with
-// a naming warning because "over" means two plays with opposite risk profiles —
-// Sense A, the pass across the width of the ice to the far winger, "the highest-risk
-// of the nine breakout options"; Sense B, the D-to-D behind your own net, "one of the
-// lowest-risk plays in hockey". Nothing in the corpus draws Sense A from the passing
+// and the corpus says so itself: breakouts.md's "Over / cross-ice" section carries
+// a naming warning because "over" means two plays with "completely different risk
+// profiles" — Sense A, the pass across the width of the ice to the far winger, "a
+// high-risk play"; Sense B, the D-to-D behind your own net, "one of the lowest-risk
+// plays in hockey". Nothing in the corpus draws Sense A from the passing
 // team's side. That the corpus needed a naming warning at all is the argument for a
 // picture of the lane.
 //

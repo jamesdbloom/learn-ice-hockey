@@ -116,7 +116,7 @@ Countered by: A diamond — this is the most-scouted shape in hockey, so kills a
 Risk: With only one player back, a lost puck at the blue line is an immediate odd-man rush the other way
 ```
 
-> **Three words used constantly below, defined here.** The **slot** is the area directly in front of the net between the two faceoff circles, running from the goalmouth out to the tops of the circles — where most goals are scored from. Within it, the **high slot** is the upper half, from the faceoff dots out to the tops of the circles; the **goalmouth** is the immediate net front, within a stick's length of the goal line. The **point** is the area just inside the blue line in the offensive zone — an area, not the line itself; the **half-wall** is the boards level with the faceoff dot, well below it. Point and half-wall are not the same place and are never interchangeable.
+> **Three words used constantly below, defined here.** The **slot** is the area directly in front of the net between the two faceoff circles, running from the goalmouth out to the tops of the circles — where most goals are scored from. Within it, the **high slot** is the upper half, from the faceoff dots out to the tops of the circles; the **goalmouth** is the immediate net front, within a stick's length of the goal line. The **point** is the area just inside the blue line in the offensive zone — an area, not the line itself; the **half-wall** is the boards roughly level with the faceoff dot, between the corner and the point. Point and half-wall are not the same place and are never interchangeable.
 
 ![](diagram:pp-131)
 

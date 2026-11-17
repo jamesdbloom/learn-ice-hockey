@@ -148,10 +148,12 @@ const gapAndAngle = {
     'and the middle of the ice, boardside shoulder to the middle of their chest — so the only route ' +
     'the carrier can see is toward the wall. The shaded middle is the ice being taken away — part of a ' +
     // ⚠️ SHORTENED 15 SEPTEMBER 2026, and two things were cut that a re-reader may want back.
-    // (1) "shots from the slot beat goalies and shots from below the faceoff dots on the wall
-    // mostly do not" — the REASON the middle is the ice worth taking, stated in the owner's
-    // §"Angle to take the middle" and in every host's surrounding prose, with its "mostly"
-    // hedge intact there. (2) "the drawn gap is slightly tighter where the two routes end than
+    // (1) the REASON the middle is the ice worth taking — the owner's §"Angle to take the
+    // middle" now reads "From the middle the carrier can skate straight into the slot, where
+    // most goals are scored, and can go either side of you. Steered to the wall, they have one
+    // way to go, and a shot from below the faceoff dots on the wall mostly does not beat a
+    // goalie" — stated there and in every host's surrounding prose, with its "mostly" hedge
+    // intact. (2) "the drawn gap is slightly tighter where the two routes end than
     // where they start" — the gap-shrinks-never-grows point, which `rush-2-on-2`'s caption in
     // this same module still states and which is the owner's own `Key:` fact.
     // ⚠️ The zone disclosure below was REPAIRED 23 Oct 2026: a shortening had made it say
@@ -221,8 +223,8 @@ const gapAndAngle = {
     'two faceoff dots, from the top of the circles down to the front of the crease, marks the middle of ' +
     'the ice the angle is denying. The goalie is in the crease. Nothing in the picture shows contact.',
 
-  // "The middle of the ice is the dangerous ice." (§"Angle to take the middle and
-  // force them outside".) Drawn faintly, because none of it is painted on a real rink.
+  // "Take the middle away." (§"Angle to take the middle and force them outside".) Drawn
+  // faintly, because none of it is painted on a real rink.
   //
   // WIDTH is the only dimension anything owns, and it is 44 ft: edge to edge on the
   // two faceoff-dot lines. This document's own §"Backchecking lanes" says "the middle

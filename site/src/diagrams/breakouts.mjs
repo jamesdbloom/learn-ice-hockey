@@ -609,9 +609,9 @@ const dToD = {
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
     'corner; the defenceman D2 is low in the left corner. Two opposition forwards are on the right ' +
     'side, one deep and one on the wall — the flooded side. A shaded region covers the house, the ' +
-    'home-plate-shaped area analysts count as the dangerous ice: square across the top along the ' +
-    'tops of the two faceoff circles, straight down the dot lines to the two faceoff dots, then ' +
-    'angling in to the two goalposts on the goal line. The single dashed pass runs from D1 down and ' +
+    'home-plate-shaped area analysts use to define a high-danger chance. Its outline runs square ' +
+    'across the top along the tops of the two faceoff circles, straight down the dot lines to the ' +
+    'two faceoff dots, then angles in to the two goalposts on the goal line. The single dashed pass runs from D1 down and ' +
     'around behind the goal, staying between four and six feet behind the net the whole way, and up ' +
     'to D2. It never enters the shaded region. The goalie is in the crease.',
 

@@ -632,7 +632,7 @@ Never: Chase the puck around the perimeter and pull the shape apart — that is 
 
 A kill is four skaters, normally two forwards and two defencemen. **The shapes are described in [Special Teams](../systems/special_teams.md);** your job inside each one:
 
-- **Box** — the standard. You are **one of the two high players**, alongside your centre, one each side in the shooting lanes, taking the point on your side when they run two.
+- **Box** — the shape almost everyone is taught first. You are **one of the two high players**, alongside your centre, one each side in the shooting lanes, taking the point on your side when they run two.
 - **Diamond** — the centre usually takes the apex and you take one of the two middle positions, covering a half-wall.
 - **Wedge+1** — you are often the "+1", the single player working outside the triangle. That job is **pressure, not pursuit**: get at whoever has the puck and make every possession uncomfortable. When the puck moves you stop, and the nearest wedge player steps out as the new +1 while you drop into the triangle. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route you take to the puck is your coach's choice, not a law.** Published descriptions differ: some send the +1 straight out from the goal towards the carrier, some sweep them laterally across the top of the zone above the circles, some let them roam to the wall and the point. Ask which one you are running.
 

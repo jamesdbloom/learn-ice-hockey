@@ -37,7 +37,7 @@
 
 **Your own end has a stricter standard.** A pass picked off at the far blue line costs possession; one picked off in front of your net is a chance against. [The "never" list](#the-never-list) sets the defaults. This document assumes a **low zone collapse** defensive-zone coverage and a **2-1-2 forecheck**, which is one choice among several, so ask your coach what your team plays.
 
-**Two words do constant work below.** The blade's **heel** is the end nearest the shaft and its **toe** the far end. The **slot** is the dangerous ice in front of the net, between the two faceoff circles. [Language and Glossary](../foundation/language_and_glossary.md) defines the rest and [Rink Map](../foundation/rink_map.md) draws the ice.
+**Two words do constant work below.** The blade's **heel** is the end nearest the shaft and its **toe** the far end. The **slot** is the ice in front of the net, between the two faceoff circles, where most goals are scored from. [Language and Glossary](../foundation/language_and_glossary.md) defines the rest and [Rink Map](../foundation/rink_map.md) draws the ice.
 
 **One word runs both ways.** ⚠️ **Here, the *checker* is any opponent after the puck or just coming at you**; elsewhere in this guide, and in most coaching, *"your check"* is the opponent **you** are covering. Take the direction from the sentence.
 
@@ -749,7 +749,7 @@ These three are **risk-management defaults**, not laws of hockey: each one's fai
 
 - **Never make a blind pass up the middle in your own zone.** The middle of your own defensive zone is directly in front of your net. An interception there is a chance against with your goalie unset. If you cannot see the receiver, the pass does not exist.
 - **Never make a D-to-D pass through the slot.** Defence-to-defence passes are normal and useful — but they go *behind the net* — or *above the tops of the circles*, where your team accepts that — not across the front of your own goalmouth. A blocked or deflected slot pass is a tap-in.
-- **Never pass cross-ice in your own end.** A cross-ice pass in your defensive zone crosses in front of the danger area and, if it is picked off, leaves your whole structure on the wrong side of the puck. Some teams accept one above the tops of the circles, where an interception is not a slot chance; below them, almost nobody does.
+- **Never pass cross-ice in your own end.** A cross-ice pass in your defensive zone crosses in front of your own net and, if it is picked off, leaves your whole structure on the wrong side of the puck. Some teams accept one above the tops of the circles, where an interception is not a slot chance; below them, almost nobody does.
 
 **The unifying principle:** in your own zone, mistakes are punished immediately, so the passing standard is *certainty*. In the offensive zone, mistakes cost you possession 180 feet from your net, so the standard is *value*. Adjust your risk tolerance by where you are on the ice. This is the core of [Risk Management](../hockey-iq/risk_management.md).
 

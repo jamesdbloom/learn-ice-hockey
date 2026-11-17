@@ -467,7 +467,7 @@ Key: Keep moving to get open, and slide with the point man as they walk the line
 
 **Goal:** Be the primary scoring threat in the high-danger area and create chances for yourself and teammates.
 
-**Key considerations:** The slot is where most goals are scored from, and a shot there scores several times as often as one from the perimeter — [Shooting](../technique/shooting.md) has the figures and their limits. Defences crowd it for exactly that reason — coaching craft rather than a measured comparison — so make the opposing centre and defencemen work hard to keep you out of it.
+**Key considerations:** The slot is where most goals are scored from, and a shot there scores several times as often as one from the perimeter — [Shooting](../technique/shooting.md) has the figures and their limits. Defences crowd it for exactly that reason — coaching craft rather than a measured finding — so make the opposing centre and defencemen work hard to keep you out of it.
 
 **When your defenceman pinches down the wall, somebody has to fill the point they left — and in many systems that is the highest forward, which is often you.** Read it as the puck goes low: if your defenceman steps in to keep the puck in the zone, slide up to the blue line on their side and play as a defenceman until they are back, rather than staying in the slot and leaving an odd-man rush going the other way. Some teams give that job to the weak-side winger or to whichever forward is F3, so ask your bench who covers the pinch.
 
@@ -620,7 +620,7 @@ Key: Know which shape you are running before the puck drops — a box and a diam
 
 A kill is four skaters, normally two forwards and two defencemen. **The shapes are described in [Special Teams](../systems/special_teams.md);** your job inside each one:
 
-- **Box** — the standard. You are **one of the two high players**, alongside a winger, one each side in the shooting lanes, taking the point on your side when they run two. There is no single "top" of a box, so don't drift into the middle looking for one.
+- **Box** — the shape almost everyone is taught first. You are **one of the two high players**, alongside a winger, one each side in the shooting lanes, taking the point on your side when they run two. There is no single "top" of a box, so don't drift into the middle looking for one.
 - **Diamond** — used against a 1-3-1. Here there *is* a single apex and it is usually you: pressure the point while the middle two take the half-walls and someone accounts for the bumper.
 - **Wedge+1** — you are frequently the "+1", the single player working outside the triangle. That job is **pressure, not pursuit**. Get at whoever has the puck and make every possession uncomfortable. When the puck moves you stop, and the nearest wedge player steps out as the new +1 while you drop into the triangle. Following the puck around the perimeter is how this system is beaten, not how it is played. **The route you take to the puck is your coach's choice, not a law** — published descriptions differ, some sending the +1 straight out from the goal towards the carrier, some sweeping them laterally across the top of the zone above the circles, some letting them roam to the wall and the point. Ask which one you are running.
 
