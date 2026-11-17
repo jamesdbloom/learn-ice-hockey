@@ -371,7 +371,7 @@ Convention: "Aim for the corners" is one coaching school and this section follow
 - **Under the arms, over the pads.** The gaps between glove and body, and blocker and body, are second only to five-hole for size and reliability.
 - **Short side high**, but only when the goalie has cheated off their post. Not a default.
 
-**Shooting for a rebound or a tip is often better than shooting for a corner.** A shot at a corner either goes in, is saved, or misses. A hard low shot at the pads with a teammate at the net front either goes in, gets tipped in, or produces a rebound in the most dangerous area on the ice — three good outcomes against one. So with bodies at the net, shoot to *create* (low, hard, on net, at the pads) rather than to *finish*; alone in the slot with the goalie beaten, pick a target and finish. Be explicit with yourself about which one you are doing. [When NOT to Shoot](#when-not-to-shoot) below turns this into a single pre-shot test.
+**Shooting for a rebound or a tip is often better than shooting for a corner.** A shot at a corner either goes in, is saved, or misses. A hard low shot at the pads with a teammate at the net front either goes in, gets tipped in, or produces a rebound in the low slot, where more goals are scored than anywhere else — three good outcomes against one. So with bodies at the net, shoot to *create* (low, hard, on net, at the pads) rather than to *finish*; alone in the slot with the goalie beaten, pick a target and finish. Be explicit with yourself about which one you are doing. [When NOT to Shoot](#when-not-to-shoot) below turns this into a single pre-shot test.
 
 ---
 

@@ -389,7 +389,7 @@ Your goalie faces the whole play, is stationary, and has nothing behind them —
 
 **Why the position is special:** the goalie is the only player who faces the whole play all the time, is more or less stationary, and has nothing happening behind them. Every other player has a blind side.
 
-**Teams that ignore their goalie's voice concede more**, for a mechanical reason. A defenceman retrieving a dumped puck faces the end boards with the forecheck coming from behind — the exact view the goalie has. If the goalie does not pass it on, the defenceman guesses, and a guess there becomes a turnover in the highest-danger area on the ice.
+**Teams that ignore their goalie's voice concede more**, for a mechanical reason. A defenceman retrieving a dumped puck faces the end boards with the forecheck coming from behind — the exact view the goalie has. If the goalie does not pass it on, the defenceman guesses, and a guess there becomes a turnover deep in your own zone.
 
 The standard goalie vocabulary:
 

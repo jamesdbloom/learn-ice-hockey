@@ -74,7 +74,7 @@ Protecting a lead, defend deeper but **keep getting the puck out and changing**.
 Key: The trade only works if you are actually trading volume of shots against for quality of shots against
 Risk: You never get the puck back, so you never change, so your legs go — fatigue in your own zone is how one-goal leads die
 Risk: Your defencemen play the whole shift below the hash marks — no exits, no relief, eventually a bad clear
-Risk: Collapsing everyone to the net front concedes screens, rebounds and scrambles — the highest-danger chances there are
+Risk: Collapsing everyone to the net front concedes screened shots, and rebounds and scrambles in the house — the high-danger chances
 Risk: Four minutes of defending without the puck produces stick fouls, and a power play against is what a trailing team wants
 ```
 
@@ -82,7 +82,7 @@ The trade only works if you are actually trading volume for quality. Amateur and
 
 - **You never get the puck back.** The other team keeps possession in your end, which means you never change, which means your legs go. Fatigue in your own zone is how one-goal leads die.
 - **Your defencemen play the whole shift below the hash marks.** No exits, no relief, and eventually a bad clear.
-- **Quality goes up, not down.** A team that collapses everyone to the net front concedes screened shots, rebounds and net-front scrambles — the highest-danger chances there are. "Fewer chances" is a claim you have to earn with structure, not just by standing near your own goal.
+- **Quality goes up, not down.** A team that collapses everyone to the net front concedes screened shots, rebounds and net-front scrambles — rebounds and scrambles are high-danger chances, and a screen makes even a point shot hard to stop. "Fewer chances" is a claim you have to earn with structure, not just by standing near your own goal.
 - **You invite penalties.** Defending for four straight minutes without the puck produces stick fouls. A power play against is exactly what a trailing team wants.
 
 **Treat the attack-type argument with real suspicion.** You may hear that "analysis of shot quality by attack type has found" cycle attacks produce better shot quality for trailing teams and rush attacks for leading ones. ⚠️ **No study, dataset or author has been traced for it here**, and none of this document's sources carry it — treat it as **an untraced assertion, not evidence**, and do not build a plan on it. The conclusion it usually supports — that ahead, your best offence is the counter-attack off a turnover, which needs you organised and *fast* rather than passive — is coaching craft either way.
@@ -128,7 +128,7 @@ Convention: Which forecheck your team switches to with a lead — 2-1-2, 1-2-2 o
 
 The biggest lever you have while protecting a lead. With a lead, the value of a possession is not "can I create a chance" but "can I make sure they don't get it back in a dangerous place." That means:
 
-- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as the most dangerous chances in open play, and published tracking backs that; [Defending the Rush](defending_the_rush.md) has the figures and their limits.
+- No cross-ice passes through the middle of your own zone or the neutral zone. A turnover there becomes an **odd-man rush** — attackers outnumbering defenders coming back, a 2-on-1 or 3-on-2. Coaches and analysts treat these as among the most dangerous chances in open play, and published tracking backs that; [Defending the Rush](defending_the_rush.md) has the figures and their limits.
 - No blind D-to-D passes across your own goalmouth.
 - No stretch passes you're not sure about. An interception at your own blue line is worse than a chip out.
 
@@ -642,7 +642,7 @@ This is the part that separates good game management from a good motor.
 
 **Do not change when:**
 
-- **The puck is in your defensive zone and not under your team's control.** A player leaves, a replacement arrives late, and for two seconds you are 4-on-5 in the most dangerous area of the rink. Coaches name this as one of the biggest sources of goals against in amateur hockey — an observation, not a measured ranking: public tracking does break goals down by how they were produced, but it is NHL data, and it classifies them by the offence's play rather than the defensive breakdown that let them in.
+- **The puck is in your defensive zone and not under your team's control.** A player leaves, a replacement arrives late, and for two seconds you are 4-on-5. Coaches name this as one of the biggest sources of goals against in amateur hockey — an observation, not a measured ranking: public tracking does break goals down by how they were produced, but it is NHL data, and it classifies them by the offence's play rather than the defensive breakdown that let them in.
 - **You are the last man back**, until you are relieved. Say so out loud.
 - **The opposition is on a rush.** Finish the defensive play, then change.
 - **You've just iced the puck.** You can't (NHL Rule 82.1; IIHF Rule 81.4; PWHL Rule 84.1), so don't drift toward the bench. The only ways off are the exceptions under [The icing trap](#the-icing-trap): a pulled goalie going back in, an injured player, or a penalty that changes on-ice strength — plus the IIHF's broken skate, which its own 82.1 leaves out, so don't plan a change around it. Try it and be refused and the players are sent back with a warning; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)).
@@ -1275,7 +1275,7 @@ In all six books, deliberately knocking or shooting the puck away from an offici
 
 - **Sitting on a lead from the second period.** Play your normal game until late. Retreating is a late-game tool; used early, it hands over the game and keeps you in your own end for forty minutes.
 - **Reading raw shot totals without the score.** Being outshot while winning is the normal result of leading; being outshot in a tie game is the problem.
-- **Changing while the other team has the puck in your zone.** Change on the way out: with the puck heading north, after a dump-in, or after a clear. Otherwise you are 4-on-5 for two seconds in the most dangerous area of the rink. Coaches rank it among the biggest sources of goals against in amateur hockey — an observation, not a measured ranking.
+- **Changing while the other team has the puck in your zone.** Change on the way out: with the puck heading north, after a dump-in, or after a clear. Otherwise you are 4-on-5 for two seconds in your own end. Coaches rank it among the biggest sources of goals against in amateur hockey — an observation, not a measured ranking.
 - **Long shifts because you feel fine.** Come off when your acceleration drops. You don't feel your decisions getting worse until you have made the bad one.
 - **Letting your goalie freeze a dump-in when your line is stuck out.** Get to it first and move it. The whistle gives you an own-end draw with the same tired five. ⚠️ **Under the NHL, the IIHF and the PWHL, a freeze on a puck shot in from the attackers' own side of centre bars your change just as icing does, with no pulled-goalie exception** — though an injured player can still be replaced. See [Time-outs, icing, and what the evidence says](#time-outs-icing-and-what-the-evidence-says).
 - **Icing the puck to get a whistle.** Chip it past the forechecker instead: you lose it far from your net and still get your change. Ice it and you get an own-end draw with five tired players, ⚠️ **and under the NHL, the IIHF and the PWHL no change and no time-out** — a hurt teammate may come off; a tired one may not. Not every book prices it that way; see [The icing trap](#the-icing-trap).

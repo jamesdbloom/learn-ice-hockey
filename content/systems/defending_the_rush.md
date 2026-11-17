@@ -29,7 +29,7 @@
 
 ## Overview
 
-A **rush** is an attack that arrives before the defence is set — the goalie is still moving and nobody has picked up an opponent. Coaches and analysts widely treat rush chances as the most dangerous in hockey, and published tracking backs that. Your one job is to stay between the puck and your own net while the play comes at you.
+A **rush** is an attack that arrives before the defence is set — the goalie is still moving and nobody has picked up an opponent. Coaches and analysts widely treat rush chances as among the most dangerous in hockey, and published tracking backs that. Your one job is to stay between the puck and your own net while the play comes at you.
 
 **Goal side first, then the gap.** Be on the line between every attacker and your net, then close the distance. Start skating backwards while they are still collecting the puck, and keep the gap shrinking — roughly two to three stick lengths in open ice and about one by your blue line, as a guide, not a law. Watch their chest: the puck, stick and head can all lie.
 
@@ -70,7 +70,7 @@ On a rush, none of that is true:
 
 The practical conclusion: **preventing a rush chance is worth far more than defending one well.** A defenceman who kills rushes with a tight gap and forces dump-ins does more for the goals-against column than one who makes spectacular recoveries. That dumped puck still has to be retrieved at your own boards, usually under forecheck pressure — decide how you will meet the wall before that race starts: see [Body Contact and Battles, section 6](../technique/body_contact_and_battles.md#6-receiving-a-hit-safely).
 
-> **A note on numbers.** Rush and odd-man chances are widely treated by coaches and analysts as the highest-danger chances in hockey, and there is published tracking behind that. Sportlogiq data covering every NHL game from 2017-18 to 2020-21, presented at the Ottawa Hockey Analytics Conference and reported by [Alison Lukan for NHL.com](https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-chances-off-the-rush-328173944), puts a *"normal shot"* at an **8.15% likelihood of becoming a goal** — and says that *"the minute an opponent gets an extra skater on an attack, that likelihood almost triples."*
+> **A note on numbers.** Rush and odd-man chances are widely treated by coaches and analysts as among the most dangerous chances in hockey, and there is published tracking behind that. Sportlogiq data covering every NHL game from 2017-18 to 2020-21, presented at the Ottawa Hockey Analytics Conference and reported by [Alison Lukan for NHL.com](https://www.nhl.com/kraken/news/seattle-kraken-analytics-with-alison-chances-off-the-rush-328173944), puts a *"normal shot"* at an **8.15% likelihood of becoming a goal** — and says that *"the minute an opponent gets an extra skater on an attack, that likelihood almost triples."*
 >
 > The per-situation numbers sit in a Sportlogiq graphic rather than in the article's text, so the multiplier is quoted here in the words the source used and not as a precise figure.
 >

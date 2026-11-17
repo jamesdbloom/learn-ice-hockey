@@ -49,7 +49,7 @@ Action: Learn the framework here, then find out what your team actually calls an
 
 **The front of your own net is where a mistake costs most.** Picked off behind your net, a pass is a puck battle below the goal line; picked off in front, it is a point-blank chance against. A high exchange above the circles is another route, though a pick-off there still leaves a loose puck at the top of your slot. The cross-ice "over" in section 3 is the one deliberate exception: only against a forecheck overloaded to one side with the middle empty, and only where the route behind the net is shut.
 
-**That ice has a name: the home-plate area, or "the house".** It runs across the tops of the circles, down to the two faceoff dots **44 feet apart**, then angles in to the posts, **6 feet apart**. It is the most dangerous ice on the rink ([Shooting](../technique/shooting.md) has the values; [Rink Map](../foundation/rink_map.md) the shape, an analytics convention rather than an official marking).
+**That ice has a name: the home-plate area, or "the house".** It runs across the tops of the circles, down to the two faceoff dots **44 feet apart**, then angles in to the posts, **6 feet apart**. It is the high-danger area ([Shooting](../technique/shooting.md) has the values; [Rink Map](../foundation/rink_map.md) the shape, an analytics convention rather than an official marking).
 
 **The forecheck picks your play, so read it before the puck reaches you.** How many forecheckers have come tells you which ice is empty; gliding or striding tells you whether they can still get there. That is why the defenceman going back checks over the inside shoulder on the way, and keeps moving to a decision point — the one who stops on the puck gets hit.
 

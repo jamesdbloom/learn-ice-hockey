@@ -78,7 +78,7 @@ His chart puts the gap between top- and bottom-decile possession players at roug
 
 ```facts
 Priority: Prepare the situational draws, not the league-average one
-Risk: A defensive-zone draw lost cleanly puts a set opponent into the most dangerous ice while you are stationary
+Risk: A defensive-zone draw lost cleanly gives a set opponent a set play and a quick shot while you are stationary
 Action: Fix the free failure modes — a winger creeping over a line is an information problem, not a skill one
 Key: A 22-point spread between the best and worst NHL centres in 2025-26 — one season — and coaches treat the draw as learnable
 Key: The spread between NHL centres is computed here from NHL official statistics — the 109 who took at least 500 draws in 2025-26, running from 62.1% down to 39.7%, median 51.8%
@@ -88,7 +88,7 @@ Never: Chase your faceoff percentage. The draws worth preparing are the ten or f
 Because *average* is the wrong frame. The honest case for faceoffs is four narrower claims, and all four survive the evidence.
 
 - **Situational draws are not average draws.** A shorthanded own-end draw with tired killers is not a neutral-zone draw at 3-0 in the first period. The specific ones described later are worth a great deal, and few enough that a team can prepare for all of them.
-- **A lost defensive-zone draw is a shot against, quickly.** A clean loss puts a set opponent with a set play into the most dangerous ice while your five skaters stand still, facing the wrong way.
+- **A lost defensive-zone draw is a shot against, quickly.** A clean loss gives a set opponent with a set play a quick shot — from the point or the top of the circle, often through a screen — while your five skaters stand still, facing the wrong way.
 - **The failure modes are free to fix.** A centre removed from the draw because a winger crept over a line is an information problem, not a skill one. See the violations section.
 - **It is learnable, and the gap is enormous.** Computed from the NHL's official skater statistics: among the 109 centres with at least 500 draws in 2025-26 the median was **51.8%**, the tenth percentile 45.4%, the ninetieth 57.7%, and the range **62.1% down to 39.7%** — a **22-point spread** on one repeatable action in one season. Coaches read that as a skill that rewards work. It does not show the draw beats everything else you could practise — nobody has computed that spread for any other skill. ([Switching Positions](../positions/switching_positions.md) leans on this figure.)
 
@@ -418,7 +418,7 @@ The highest-stakes alignment in hockey. It has to work on a win, a loss and a ti
 
 - **Centre** — in the dot. Your job is simple: **do not lose this cleanly.** A tie-up is acceptable; a clean loss to their strong-side point is not.
 - **Boards-side winger** — on the **outside hash mark**, nearer the boards. Usually the winger whose natural side matches the circle. You are the first breakout outlet on a win and the first man to the opposing point on a loss.
-- **Inside winger** — on the **inside hash mark**, facing the **slot** (the lane straight out from the net between the circles; the *high slot* runs from the dots up to the top of the circles, the *goalmouth* is the immediate net front). The harder job: on a loss you must reach the far point, and on a scramble you are the closest body to the most dangerous ice.
+- **Inside winger** — on the **inside hash mark**, facing the **slot** (the lane straight out from the net between the circles; the *high slot* runs from the dots up to the top of the circles, the *goalmouth* is the immediate net front). The harder job: on a loss you must reach the far point, and on a scramble you are the closest body to the slot, where most goals are scored from.
 - **Boards-side defenceman** — behind and outside the boards-side winger, near the hash marks, ready to retrieve anything pulled back to the wall or to get behind the net.
 - **Slot defenceman** — in front of the goalie, responsible for the net front and for blocking a point shot.
 

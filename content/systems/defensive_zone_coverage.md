@@ -38,13 +38,13 @@ Never: Move the puck across the front of your own goal, with a pass or with your
 Position: Be goal side — between your man, or your area, and your own net. An opponent between you and your goalie means you are defending nothing
 ```
 
-**The most dangerous chances come from a small area in front of your net** — roughly from the posts out to the faceoff dots and up to the tops of the circles. A shot from inside it is worth several times one from outside ([Shooting](../technique/shooting.md) covers the values, [Rink Map](../foundation/rink_map.md) the shape). Every system keeps bodies between that area and the puck, which is why you take away the pass into it before the shot from distance.
+**The high-danger chances come from a small area in front of your net** — roughly from the posts out to the faceoff dots and up to the tops of the circles. A shot from inside it is worth several times one from outside ([Shooting](../technique/shooting.md) covers the values, [Rink Map](../foundation/rink_map.md) the shape). Every system keeps bodies between that area and the puck, which is why you take away the pass into it before the shot from distance.
 
 **The player who scores from close in is standing on the doorstep**, so somebody has to be there. Who it is changes with the system; that it is somebody never does.
 
 **In a collapse, the weak-side winger decides whether the system works.** When the centre goes down into the strong-side corner, the high slot empties, and the seam, the back-door pass and the low-to-high shot all run through it. So the weak-side winger drops into it and climbs back the moment the puck leaves the corner. Only that winger: if both sag, one point-to-point pass gives the other team a free walk-in. Under man-on-man the wingers follow their checks down instead.
 
-**Once you win the puck, your five are turned to leave.** An interception in the slot puts an opponent on the most dangerous ice, in front of a goalie who has just moved across; picked off behind your net, the opponent has no angle. That is why nothing goes across the front of your goal, and why you choose the target before the puck arrives.
+**Once you win the puck, your five are turned to leave.** An interception in the slot puts an opponent where most goals are scored from, in front of a goalie who has just moved across; picked off behind your net, the opponent has no angle. That is why nothing goes across the front of your goal, and why you choose the target before the puck arrives.
 
 **Most defensive-zone breakdowns are not effort failures.** Usually both players worked hard, on different assumptions about who had whom. That is coaching consensus rather than a measured fact — public tracking counts the play the offence made, not the defensive breakdown ([Neutral Zone Systems](neutral_zone_systems.md) covers what it counts). Talking early is the cure.
 
@@ -55,7 +55,7 @@ Position: Be goal side — between your man, or your area, and your own net. An 
 **In short:** Protect the house first and choose which chances to give up, while keeping someone ready for the outlet.
 
 ```facts
-Key: The most dangerous chances come from the house, or home plate — the two goalposts widening to the faceoff dots and up to the top of the circles
+Key: The high-danger chances come from the house, or home plate — the two goalposts widening to the faceoff dots and up to the top of the circles
 Convention: The house is an analytics convention rather than an official marking — Shooting covers what a shot from inside it is worth, Rink Map covers the shape
 Goal: Allocate five bodies so the house is never open, while still being able to take the puck off them and leave
 Priority: Choose which chances you are willing to give up — coverage is not about eliminating them
@@ -65,7 +65,7 @@ Key: Twenty point shots through no traffic and zero back-door tap-ins is a good 
 
 Five of you. Five of them. One net.
 
-But the ice is not equally dangerous. The most dangerous chances come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
+But the ice is not equally dangerous. The high-danger chances come from a small area in front of your net, known as **the house** or **home plate** — the region bounded by the two goalposts, widening out to the two faceoff dots, and up to the top of the two faceoff circles. Draw those lines and you get a shape like a baseball home plate. That's the area that matters.
 
 ![](diagram:dz-the-house)
 

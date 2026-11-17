@@ -61,7 +61,7 @@ Each zone has the same four situations. *Without the Puck* means the puck is not
 
 ## Defensive Zone
 
-The centre is normally given the most demanding defensive role among the forwards — coaching craft rather than a measured comparison, and it follows from the assignment below rather than from the position itself. You support the defenders and protect the most dangerous part of the ice — the slot, where most goals are scored from: close to half of NHL goals come from the inner slot and just over a quarter from the outer slot. [Shooting](../technique/shooting.md) has that figure, and the limit travels with it — it is Sportlogiq tracking of three seasons at five-on-five, and the tracking is not public.
+The centre is normally given the most demanding defensive role among the forwards — coaching craft rather than a measured comparison, and it follows from the assignment below rather than from the position itself. You support the defenders and protect the slot, where most goals are scored from: close to half of NHL goals come from the inner slot and just over a quarter from the outer slot. [Shooting](../technique/shooting.md) has that figure, and the limit travels with it — it is Sportlogiq tracking of three seasons at five-on-five, and the tracking is not public.
 
 ---
 
@@ -308,7 +308,7 @@ A delayed offside can be undone by tagging up — **in the books that have one.*
 
 ## Offensive Zone
 
-The centre operates in the most dangerous part of the offensive zone — the slot — and directs the attack.
+The centre operates in the slot and directs the attack.
 
 ---
 
@@ -327,7 +327,7 @@ Key: With the puck in the slot and space in front of you, shoot — don't overth
 Action: Keep moving and keep the puck moving
 ```
 
-**Where to be:** In the slot — the high-danger area between the two faceoff circles, stretching from the top of the circles down to the front of the net.
+**Where to be:** In the slot — between the two faceoff circles, from the top of the circles down to the front of the net, where most goals are scored from.
 
 **What to do:** Look to shoot from the slot. On the coaching-consensus conversion ranges in [Shooting](../technique/shooting.md) — roughly 10–15% from the slot against 2–4% from the perimeter, **on a source that names no dataset**, so trust the gap rather than the decimals — a slot shot is worth roughly three to seven times a perimeter one. If defenders close in, distribute to a winger on the half-wall (the boards area roughly level with the faceoff dot — between the corner and the point) or in the circle, or to a defenceman at the point for a shot. Keep moving and keep the puck moving.
 

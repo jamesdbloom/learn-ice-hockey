@@ -116,7 +116,7 @@ Countered by: A diamond — this is the most-scouted shape in hockey, so kills a
 Risk: With only one player back, a lost puck at the blue line is an immediate odd-man rush the other way
 ```
 
-> **Three words used constantly below, defined here.** The **slot** is the area directly in front of the net between the two faceoff circles, running from the goalmouth out to the tops of the circles — the most dangerous ice on the rink. Within it, the **high slot** is the upper half, from the faceoff dots out to the tops of the circles; the **goalmouth** is the immediate net front, within a stick's length of the goal line. The **point** is the area just inside the blue line in the offensive zone — an area, not the line itself; the **half-wall** is the boards level with the faceoff dot, well below it. Point and half-wall are not the same place and are never interchangeable.
+> **Three words used constantly below, defined here.** The **slot** is the area directly in front of the net between the two faceoff circles, running from the goalmouth out to the tops of the circles — where most goals are scored from. Within it, the **high slot** is the upper half, from the faceoff dots out to the tops of the circles; the **goalmouth** is the immediate net front, within a stick's length of the goal line. The **point** is the area just inside the blue line in the offensive zone — an area, not the line itself; the **half-wall** is the boards level with the faceoff dot, well below it. Point and half-wall are not the same place and are never interchangeable.
 
 ![](diagram:pp-131)
 
@@ -579,7 +579,7 @@ Convention: Coaching material describes it as popular at NHL level, but no leagu
 - **The +1:** pressure whoever has the puck, by whichever route your coach teaches. Your job is to make every possession uncomfortable, not to win the puck, and never to trail it round the outside instead of handing the pressure to the nearest wedge player.
 - **The exchange:** when your pressure forces the puck to move, the nearest wedge player becomes the new +1 and you drop into the triangle. This handover is the hard part and the reason the system needs practice — everyone must know who is out and who is in, every second.
 
-**Strengths:** it protects the highest-danger ice absolutely while still applying pressure, which is why it is **commonly used at NHL level** — [The Coaches Site](https://members.thecoachessite.com/article/explained-wedge-penalty-kill-formation) describes it as popular with most NHL clubs, though **no league-wide count of who runs what is published, so treat the prevalence claim as unverified.** It is very hard for a 1-3-1 to get a clean look at the middle. It creates turnovers and therefore shorthanded chances.
+**Strengths:** it protects the dangerous ice in front of the net absolutely while still applying pressure, which is why it is **commonly used at NHL level** — [The Coaches Site](https://members.thecoachessite.com/article/explained-wedge-penalty-kill-formation) describes it as popular with most NHL clubs, though **no league-wide count of who runs what is published, so treat the prevalence claim as unverified.** It is very hard for a 1-3-1 to get a clean look at the middle. It creates turnovers and therefore shorthanded chances.
 
 **Weaknesses:** high cognitive load — it demands constant awareness of a rotating assignment, which is why it is a poor choice for a young or ad-hoc unit.
 
