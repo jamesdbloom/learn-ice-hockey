@@ -399,6 +399,18 @@ SYMBOLS: tuple[tuple[str, str], ...] = (
 #:   is a fluency fix inside a verbatim quotation, and it is listed so that
 #:   the distinction between the two kinds of row stays visible.
 LEXICON: tuple[tuple[str, str], ...] = (
+    # The IHUK Department of Player Safety citation folded into facts lines
+    # across the corpus in W395 — "(IHUK DOPS C.1, s.11)" — reached the SSML as
+    # unhandled "DIGIT ONE" constructs (`--report`), so a listener heard
+    # "C point one, s point eleven". The document's own headings are
+    # "Appendix C" and "Section 11"; say them. Appendix references in
+    # Sources trailers are unvoiced, but the rows are harmless there.
+    # Order matters: LEXICON applies in tuple order, so these stay longest-first.
+    ("DOPS C.1, C.2, s.11", "DOPS Appendix C 1, C 2 and Section 11"),
+    ("DOPS C.1, s.11", "DOPS Appendix C 1 and Section 11"),
+    ("DOPS C.1", "DOPS Appendix C 1"),
+    ("Appendix C.1", "Appendix C 1"),
+    ("Appendix C.2", "Appendix C 2"),
     ("IHUK/EIH/SIH", "IHUK, EIH or SIH"),
     ("NHL/NHLPA", "NHL and NHLPA"),
     ("plus/minus", "plus minus"),
