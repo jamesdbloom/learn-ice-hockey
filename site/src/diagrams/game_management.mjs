@@ -247,15 +247,23 @@ const sixOnFivePinch = {
   width: 900,
 
   caption:
+    // W467 (18 Nov 2026) trim. CUT: "That is the rule the shape lives by", "The one who stays is
+    // the whole insurance policy" (narrative; the host's bullet "The point men do not both pinch.
+    // Someone must be able to stop a clear. There is no net behind you." closes the chunk directly
+    // before this caption) and "Only the defender the pinch is aimed at is drawn" (a description of
+    // the drawing, which `describe` carries). KEPT the coaching-choice disclosure and the
+    // body-checking limb, neither of which the host voices beside the marker.
     'A 6-on-5 with your goalie pulled, at the moment one point man steps down the wall to keep a ' +
-    'puck in and the other does not go with them. That is the rule the shape lives by: the point men ' +
-    'do not both pinch, because your own net is empty at the far end, so a puck past both of them is ' +
-    'not a rush against you but a clear path to an empty net. The one who stays is the whole ' +
-    'insurance policy. Only the defender the pinch is aimed at is drawn. Which point man pinches, ' +
+    'puck in and the other does not go with them. The point men do not both pinch. Your own net is ' +
+    'empty at the far end, so a puck past both of them is a clear path to it, not a rush against you. ' +
+    'Which point man pinches, ' +
     'whether your team pinches at all with the goalie out, and who is standing at the points are ' +
     'coaching choices and not laws of hockey, so find out what your team wants before the goalie ' +
-    'leaves. ⚠️ No contact is drawn: the route ends in two bars on a patch of the wall rather than on ' +
-    'a player, and what an arrival like that may end in depends on whether your league allows body ' +
+    // W467: the negation seams after "No contact is drawn" and "rather than on a player" are closed
+    // with full stops, and the glyph now sits on the hazard sentence only; the two description
+    // sentences before it are unmarked.
+    'leaves. No contact is drawn. The route ends in two bars on a patch of the wall, not on a ' +
+    'player. ⚠️ What an arrival like that may end in depends on whether your league allows body ' +
     'checking at all.',
 
   describe:
@@ -436,9 +444,12 @@ const clearAtFiveOnSix = {
     // everything else: "a puck that goes in is not icing", the red-line condition and the
     // blind-clear outcome are voiced only in the bullets two chunks on (027), and the 81.4 and
     // Hockey Canada 6.7(d) sentences are voiced nowhere near the marker.
-    'Defending a 6-on-5 in your own end: your goalie is in your net, theirs is empty, and a ' +
-    'puck has just come free to you. Every clear from here is a shot, with three endings. On ' +
-    'target, it is a goal, and a puck that goes in is not icing. A miss that ' +
+    // W467 (18 Nov 2026) trim: the opening scene shortened (the drawing of your goalie is in
+    // `describe`), and the 81.4 and 6.7(d) sentences reworded shorter with every limb kept --
+    // the exception list, the IIHF broken-skate hedge, the goalie exception pointed at the
+    // other team, and Hockey Canada's three categories are still voiced nowhere near the marker.
+    'With their net empty, a loose puck reaches you in your end. Every clear is a shot: three ' +
+    'endings. On target, it is a goal, not icing. A miss that ' +
     'crosses their goal line untouched from your side of the centre red line is icing. ' +
     // SHORTENED 8 November 2026 (1,252 chars). Cut, each voiced in the facts block directly after
     // the marker and in the bullets below it: why six against six is equal strength and 81.3 keeps
@@ -450,18 +461,18 @@ const clearAtFiveOnSix = {
     // above". "Under the NHL and the IIHF" now opens the 81.4 sentence so it keeps its book scope.
     // SG207 rules review (8 Nov 2026): IIHF 81.4 names a broken skate but 82.1 (which names icing) does not, and the
     // Situation Handbook (81.7, 63.32) gives no broken-skate exception; the host says not to plan on it. Hedged.
-    'Under the NHL and the IIHF, Rule 81.4 then lets you change only to replace an injured player ' +
-    "(the IIHF's 81.4 also names a broken skate, but its 82.1 does not, so do not count on it) " +
-    'or for a penalty that changes the strength; its goalie exception is for a team putting back its own pulled goalie, not for you. ' +
-    'Hockey Canada has a substitution limit only in the categories ' +
-    'its Rule 6.7(d) names — U18AAA, Junior, and Senior at the Member’s option — so find out ' +
-    'which rules your league runs. ' +
+    'NHL and IIHF Rule 81.4 then lets you change only for an injured player or a ' +
+    "penalty that changes the strength (the IIHF's also names a broken skate, which its 82.1 " +
+    'omits, so do not count on it). ' +
+    "Rule 81.4's goalie exception lets a team put back its own pulled goalie, and yours is in your net. " +
+    'Hockey Canada bars changes after icing only in U18AAA, Junior and, at the Member’s option, ' +
+    'Senior (Rule 6.7(d)), so find out which rules your league runs. ' +
     // W362 (16 Nov 2026): REORDERED, no word changed. The renderer ambers from the first ⚠️ to the
     // END of the caption, so the glyph sentence sat in front of 81.4 and 6.7(d) and ~534 chars were
     // amber. The two rule sentences now follow "is icing." directly (so "81.4 then" still follows
     // the icing), the blind-clear ending follows them, and the warning closes the caption: the amber
     // is now only "You can be iced against a pulled goalie."
-    'A blind clear to their point man hands it back at your own blue line. ' +
+    'A blind clear to their point man hands it straight back. ' +
     '⚠️ You can be iced against a pulled goalie.',
 
   describe:

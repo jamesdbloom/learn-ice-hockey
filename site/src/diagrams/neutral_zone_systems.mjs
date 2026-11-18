@@ -931,15 +931,13 @@ const standUpAtTheLine = {
   caption:
     'Standing up at your own blue line: the defenceman meets the attacker at it with their feet ' +
     'stopped, refuses to give ground and tries to turn the carry into a dump, a pass or a ' +
-    'turnover — a carried entry is worth roughly twice a dumped one in shot terms, on ' +
-    'hand-tracked NHL games now more than a decade old, so take the direction rather than the ' +
-    'decimals. Drawn with it is what beats it, the chip-and-chase past the defenceman’s hip: stopped feet ' +
-    'cannot win that race, because beaten standing up is beaten completely. Nothing in the ' +
-    'picture finishes into the carrier, and that is deliberate — standing up at the line is ' +
-    'exactly where a beginner reaches for a hit instead. It is a bet that you have help, and ' +
-    'whether your forwards got back is a read no still frame can show. Backing off answers this ' +
-    'same instant the other way rather than following it, and the two are a genuine trade-off, so ' +
-    'find out which your coach wants.',
+    'turnover — a carried entry is worth roughly twice a dumped one in shot terms, on NHL ' +
+    'tracking more than a decade old. Drawn with it is what beats it, the chip-and-chase past the ' +
+    'defenceman’s hip: stopped feet cannot win that race. Beaten standing up is beaten ' +
+    'completely. Nothing in the picture finishes into the carrier. That is deliberate: this is exactly ' +
+    'where a beginner reaches for a hit. It is a bet that your forwards got back, which no still ' +
+    'frame can show. Backing off is the other answer to this moment, not the next frame. ' +
+    'Standing up or backing off is a coaching choice, so find out which your team wants.',
 
   describe:
     'The full sheet. Our own net is at the left with our goalie in it, our own blue line a ' +
@@ -995,28 +993,27 @@ const backOffAtTheLine = {
   width: 1100,
 
   // ✂️ W291, 12 November 2026 (1,032 -> 922 chars). Two hosts, rendered: neutral_zone_systems.md
-  // (chunk 026) and defending_the_rush.md (chunk 039). In BOTH, nz-stand-up-at-the-line is the
-  // diagram directly before this one, in the same chunk, and its caption ends "Backing off
-  // answers this same instant the other way rather than following it, and the two are a genuine
-  // trade-off, so find out which your coach wants"; both hosts' own prose in that chunk says
-  // "genuine trade-off" too. So cut: "the answer standing up gives the other way" and "Neither
+  // (chunk 026) and defending_the_rush.md (chunk 039 then, 040 on 18 Nov 2026). In BOTH, nz-stand-up-at-the-line is the
+  // diagram directly before this one, in the same chunk, and its caption says backing off is
+  // "the other answer to this moment, not the next frame" (W467 wording; it read "answers this
+  // same instant the other way" at W291); both hosts' own prose in that chunk says "genuine
+  // trade-off" too, just above both markers. So cut: "the answer standing up gives the other way" and "Neither
   // answer is the correct one". The coaching-choice disclosure is KEPT, renamed so it reads
   // alone on the page ("Backing off or standing up"). NOT cut, because neither host voices the
-  // backing-off section until two chunks later (neutral_zone_systems 028, defending_the_rush
-  // 041-042): the funnel, the catastrophic-error line, the middle, the cost, and the four
+  // backing-off section until two or more chunks later (neutral_zone_systems 028, defending_the_rush
+  // 042-043 on 18 Nov 2026): the funnel, the catastrophic-error line, the middle, the cost, and the four
   // conditions. The band disclosure is tightened, not cut. ⚠️ IF EITHER HOST STOPS EMBEDDING
   // nz-stand-up-at-the-line STRAIGHT BEFORE THIS DIAGRAM, THE TRADE-OFF LINE MUST COME BACK.
   caption:
     'Backing off at your own blue line: the defenceman gives up the line and skates backwards, ' +
     'matching the attacker’s speed, keeping them in front and funnelling them outside where the ' +
-    'shot is low-percentage. You cannot be beaten wide by pure speed, and it is very hard to make ' +
-    'a catastrophic error doing this. The shaded middle is what the defenceman does not concede — ' +
-    'you give up the blue line but never the middle or your body position — and the cost of the ' +
-    'choice is in the picture too: they come in with speed and possession and you are defending ' +
-    'with your feet moving backwards toward your own net. The band’s long edges sit on the ' +
-    'faceoff-dot lines and are not painted on the ice. It is the play when you have no ' +
-    'backpressure, when the attacker has a clear speed advantage, on a two-on-one or worse, or ' +
-    'when you are the last defender. Backing off or standing up is a coaching choice, so find ' +
+    'shot is low-percentage. You cannot be beaten wide by pure speed, and a catastrophic error is ' +
+    'very hard to make. The shaded band is the middle: concede the blue line, never the middle or ' +
+    'your body position. The cost is in the picture too: they enter with speed and possession, ' +
+    'and you defend skating backwards toward your own net. The band’s long edges sit on the ' +
+    'faceoff-dot lines and are not painted on the ice. It is the play against a clear speed ' +
+    'advantage, on a two-on-one or worse, when you are the last defender, or with no ' +
+    'backpressure. Backing off or standing up is a coaching choice, so find ' +
     'out which your team wants.',
 
   describe:

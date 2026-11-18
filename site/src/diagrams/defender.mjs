@@ -349,18 +349,16 @@ const stepUp = {
     // session: usah.txt Rule 607 Note ("leaving one's feet (jumping)", "accelerating through a
     // check"); jumping is named in NHL 42.1, IIHF 42.1, PWHL 42.1, CARHA 52(a) and Hockey
     // Canada 7.4(i).
-    'A step-up at your own blue line, your net at the right and the attack from the left: ' +
-    'you move forward to meet the carrier early instead of retreating. A pinch is the ' +
-    'other play, at the other blue line. The cost is the ice behind you: nobody is between you ' +
-    'and your goalie, and your partner is on the far side ' +
-    'with a second attacker wide of them, so a missed step-up leaves your partner alone in a ' +
-    'two-on-one. Step up only when you are confident you can win the puck or force a turnover. ' +
-    'How aggressive to be is a coaching choice, so ask what your coach wants. ' +
-    'Finished as a hit, a step-up is what the charging rules are written for, and a carrier ' +
-    'with their head down tells you only that they cannot change direction. Two strides is a safe harbour in no book: USA Hockey calls accelerating ' +
-    'through a check charging, and leaving your feet to hit is charging in all six. ' +
+    'A step-up at your own blue line, your net at the right: you move forward to meet the ' +
+    'carrier early instead of retreating. The cost is the ice behind you: nobody is between you ' +
+    'and your goalie, so a miss leaves your partner, on the far side, alone in a two-on-one. ' +
+    'Step up only when you are sure you can win the puck or force a turnover; how aggressive to ' +
+    'be is a coaching choice, so ask your coach. Finished as a hit, a step-up runs into the charging ' +
+    'rules, and a head-down carrier tells you only that they cannot change direction. Two ' +
+    'strides is a safe harbour in no book. USA Hockey calls accelerating through a check ' +
+    'charging, and leaving your feet to hit is charging in all six. ' +
     // W364: the glyph sentence is LAST so the caption amber (first glyph to caption end) is
-    // the instruction alone; "it" in the hit sentence became "a step-up" so it still binds.
+    // the instruction alone.
     '⚠️ A step-up closes space; it is not a hit, so the route ends in two bars: arrive and ' +
     'contain.',
 
@@ -486,17 +484,15 @@ const holdingTheLine = {
   title: 'Defencemen as the safety valve',
 
   caption:
-    'Holding your own blue line as the safety valve, on the whole sheet with your own goal at the ' +
-    'left. Your two defencemen are on that line either side of the middle, inside the width the ' +
-    'neutral-zone faceoff dots mark out, and they are the last line before their own zone. Your ' +
-    'forwards are up ice and the nearest has a forechecker closing, so the dashed pass back to ' +
-    'the near defenceman is the job this position exists for: be an option they can find, keep ' +
-    'your stick down and in the passing lane while you wait, and be ready either to support the ' +
-    'attack or to turn and defend. The thing not to do from here is drift forward to join the ' +
-    'play. The ice you are standing on is the ice a turnover has to be defended from. Where a ' +
-    'defence pair holds in the neutral zone is part of your team’s system rather than a fixed ' +
-    'spot on the ice, so find out what yours wants. And nothing here is contact: the ' +
-    'forechecker’s route ends in two bars, meaning arrive and contain.',
+    'Holding your own blue line as the safety valve, your own goal at the left. Your two ' +
+    'defencemen stand on that line either side of the middle, inside the width the ' +
+    'neutral-zone faceoff dots mark out: the last line before your zone. Your forwards are up ' +
+    'ice and the nearest has a forechecker closing, so the dashed pass back to the near ' +
+    'defenceman is the job: be the option they can find, with your stick in the passing lane. ' +
+    'Do not drift forward to join the play. A turnover has to be defended from this ice. ' +
+    'Where a pair holds in the neutral zone is part of your team’s system rather than a fixed ' +
+    'spot, so find out what yours wants. Nothing here is contact. The forechecker’s route ' +
+    'ends in two bars, meaning arrive and contain.',
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left with your goalie in ' +

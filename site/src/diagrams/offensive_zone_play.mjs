@@ -663,18 +663,35 @@ const netFrontScreen = {
     //    neutral-zone face-off.
     // ⚠️ NEGATION SEAMS kept closed: the crease geometry is stated positively (no "not the
     // half-width" for a negation to carry from), and CARHA's scope is its own sentence.
-    'Stand just outside the blue paint, six to eight feet out from the goal line, nearer eight, and inside the ' +
-    "dots, on the line from the goalie's eyes to the puck, not from the goalie to the net, and " +
-    'slide with the point man as they walk the line. The marker is drawn nine and a half feet ' +
-    'out only because it is wider than a player; take the depth from the words. The crease is six feet deep and eight wide, so three feet out is inside the paint. A ' +
-    'screen from outside the crease without contact is normally legal under NHL and IIHF rules, ' +
-    'so do it constantly, and ' +
+    // ✂️ W467 (18 November 2026), 180 -> under 150 words. Host trace rendered this session
+    // (offensive_zone_play.md caption chunk 030, center.md caption chunk 030):
+    //  - CUT "just outside the blue paint" from the opening (the closing instruction says it),
+    //    "take the depth from the words" (the drawn-depth disclosure keeps its "only because"),
+    //    and the crease-geometry sentence: its depth limb now rides on the position as its
+    //    reason ("about eight feet out ... because the crease is six feet deep"), matching the
+    //    host's "six to eight ... live at the far end"; "eight wide" and "three feet out is
+    //    inside the paint" were cut (offensive_zone_play.md voices both at chunk 029).
+    //  - MOVED the USA Hockey 625(b) / IIHF 69.1 price and the rec-league line BEFORE the glyph,
+    //    so the amber run is the instruction alone. Same words, same "a foot in the paint".
+    //  - NEGATION SEAM closed: "not from the goalie to the net" now ends its sentence, so the
+    //    negation cannot carry onto "slide with the point man".
+    //  - KEPT, because neither host voices them beside the marker: REFEREE_JUDGEMENT (in neither
+    //    document at all), the crease depth (center.md voices it at neither 029 nor 030), the
+    //    625(b) / 69.1 zone cost (OZP voices neither at 029-031; center.md voices only
+    //    "625(b) relieves position" at 029 and the IIHF neutral-zone draw at 031), "normally legal" (its
+    //    permissive half), and the find-out line.
+    'Stand inside the dots, about eight feet off the goal line, because the crease is six ' +
+    "feet deep. Get on the line from the goalie's eyes to the puck, not from the goalie to the " +
+    'net. Slide as the point man walks the line. The marker is drawn at nine and a half feet ' +
+    'only because it is wider than a player. A screen from outside the crease without contact is normally legal ' +
+    'under NHL and IIHF rules, so do it constantly, and ' +
     REFEREE_JUDGEMENT +
+    ' Under USA Hockey 625(b) and IIHF 69.1 a foot in the paint can cost you the ' +
+    "zone as well as the goal. A rec league may be stricter; read your league's rule." +
     // ⚠️ THE GLYPH IS DELIBERATE: `remark-corpus.mjs` promotes everything after the first ⚠️
     // into the amber `.warn-inline` run, and `_diagram_caption_is_important` (md_to_speech.py)
-    // voices "Important." on both hosts. The run opens on the instruction, not a citation.
-    ' ⚠️ Keep your feet out of the blue paint, and off the crease line at its edge. Under USA Hockey Rule 625(b) and IIHF Rule 69.1 a foot in the paint can cost you the ' +
-    'zone as well as the goal. A rec league may be stricter still; read your league\'s rule.',
+    // voices "Important." on both hosts. The run is the instruction and nothing else.
+    ' ⚠️ Keep your feet out of the blue paint, and off the crease line at its edge.',
 
   describe:
     'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +
@@ -1061,17 +1078,20 @@ const cycleRim = {
     // it is the safety caveat for the contact this picture is one frame away from, and the
     // brief's rule on those admits no exception for repetition. ⚠️ "The companion diagram is
     // the same corner with the checker in the other place" was DEIXIS -- the reverse is named.
+    // ✂️ W467 (18 November 2026), 162 -> under 150 words. CUT the turnover-ranking sentence:
+    // the claim and its "coaching craft" hedge go together, and offensive_zone_play.md voices
+    // both in "Picking the wrong one ..." directly above the marker, the end of chunk 020, with
+    // this caption opening chunk 021. MOVED the drawn-players line before the glyph, so the amber
+    // run is the wall-battle limb only. "whichever one is on" became "Rim or reverse": voiced
+    // alone it pointed at nothing. The wall-battle limb is otherwise word for word.
     'The rim, in an offensive-zone cycle. The checker is inside the carrier and still in ' +
     'front of them, sealing the carrier to the boards — that is the read: a rim beats pressure that ' +
     'has you pinned. The puck goes onward around the boards to a teammate arriving behind ' +
     'the net, in the direction the play was already going, which is the whole difference ' +
-    'from a reverse. Ranking the wrong read as a leading cycle turnover is coaching craft ' +
-    'rather than a measurement, because nobody has counted cycle turnovers by cause. ' +
-    '⚠️ And whichever one is on, this is a ' +
+    'from a reverse. Only the checker and the goalie are drawn on the other team. ' +
+    '⚠️ Rim or reverse, this is a ' +
     'wall battle: never turn your back to anyone coming at you and never duck. Skates parallel to the wall, ' +
-    'forearm and hip to it, head up and chin off your chest' + SHOULDER_TAIL +
-    ' Only the checker and the ' +
-    'goalie are drawn on the other team.',
+    'forearm and hip to it, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
     'The attacking half of the rink, the net at the right. Own players are drawn open, the ' +
@@ -1135,25 +1155,28 @@ const cycleReverse = {
     // CAPTION LENGTH, 15 Sep 2026: 242 words before, opening "the same corner as the
     // previous diagram" -- DEIXIS, the exact form the style guide forbids. The situation is
     // named instead. The wall-battle limb and the turnover hedge are untouched.
-    'The reverse, in the same deep corner of an offensive-zone cycle: the checker has ' +
-    'skated past the carrier, momentum carrying them on toward the end boards. The ice the checker ' +
-    'just left is back up the wall, so the puck goes against the flow into that space, to a ' +
-    'teammate arriving on the half-wall behind the play. A still picture cannot draw ' +
+    // ✂️ W467 (18 November 2026), 188 -> under 150 words. CUT the turnover-ranking sentence
+    // (claim and hedge together; offensive_zone_play.md voices both in "Picking the wrong one ..."
+    // at the end of chunk 020, directly before this caption in chunk 021), "in the same deep
+    // corner" and "behind the play" wording (the instruction's "arriving behind you" carries it). MOVED the drawn-players
+    // line before the glyph so the amber run is the wall-battle limb only, and "whichever one is
+    // on" became "Rim or reverse". NEGATION SEAM closed: "without that call, do not reverse on
+    // hope" is its own sentence now, not a dash-clause.
     // ⚠️ WHO CALLS, W458 (18 November 2026), diagram review: this said "read the checker as past
     // and unable to stop, and call for it", addressed to the CARRIER (the reader who makes the
     // read), so it had the carrier calling. on_ice_communication.md :159 has "reverse" "Said by a
     // teammate arriving behind the carrier", and :345 has it "called to the retriever"; the host,
     // offensive_zone_play.md's low-to-low paragraph above :394, passes "to a teammate arriving
     // behind them". "Do not reverse on hope" is passing_and_receiving.md :194/:219.
-    'momentum. Read the checker as past and unable to stop, and reverse it when the teammate ' +
-    'arriving behind you calls for it — without that call, do not reverse on hope. Ranking the wrong ' +
-    'read as a leading cycle turnover is coaching craft rather than a measurement, because ' +
-    'nobody has counted cycle turnovers by cause. ⚠️ And ' +
-    'whichever one is on, this is a wall battle: never turn your back to anyone coming at you and never ' +
-    'duck. Skates parallel to the wall, forearm and hip to it, head up and chin off ' +
-    'your chest — and not on the point of your shoulder, and not the whole shoulder if you can ' +
-    'help it. Only the checker and the goalie are ' +
-    'drawn on the other team.',
+    'The reverse, in a deep offensive-zone cycle: the checker has skated past the carrier ' +
+    'and on toward the end boards. The puck goes back up the wall, against ' +
+    'the flow, into the ice they just left, to a teammate arriving on the half-wall. A still picture cannot draw momentum. Only the checker and the goalie ' +
+    'are drawn on the other team. Read the checker as past and unable to stop, and reverse it ' +
+    'when the teammate arriving behind you calls for it. Without that call, do not reverse on ' +
+    'hope. ⚠️ Rim or reverse, this is a wall battle: never turn your back to anyone coming at ' +
+    'you and never duck. Skates parallel to the wall, forearm and hip to it, head up and chin ' +
+    'off your chest — and not on the point of your shoulder, and not the whole shoulder if you ' +
+    'can help it.',
 
   describe:
     'The attacking half of the rink, the net at the right, the same corner as the previous ' +

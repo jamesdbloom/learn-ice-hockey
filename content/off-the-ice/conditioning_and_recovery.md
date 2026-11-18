@@ -350,7 +350,7 @@ This is the part most often skipped, because it happens after everyone has left 
 
 ### What a warm-up actually does
 
-Raising muscle temperature increases the speed of contraction and relaxation, increases nerve conduction speed and reduces muscle stiffness. Practically: you can produce force faster, you move through range more easily, and you are less likely to ask a cold muscle for a maximal effort it was not ready for. There is also a preparation-and-attention element — see [Mental Game](mental_game.md).
+The usual physiological explanation is that raising muscle temperature speeds contraction, relaxation and nerve conduction and reduces muscle stiffness. Practically: you can produce force faster, you move through range more easily, and you are less likely to ask a cold muscle for a maximal effort it was not ready for. There is also a preparation-and-attention element — see [Mental Game](mental_game.md).
 
 The structured-warm-up evidence above — a 35% reduction in total injuries (IRR 0.65), mostly outside hockey — is the strongest argument for bothering. The review calls its own evidence low quality, and it measured **adolescent team athletes aged 10 to 19**, while the warm-up below is aimed at adults.
 
