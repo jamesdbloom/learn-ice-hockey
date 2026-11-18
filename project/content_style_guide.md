@@ -370,10 +370,10 @@ it.**
 rediscovering this" — is what was finally acted on, after `commit-gate` pointed
 out the corpus had begun citing a book that lived only in a session scratchpad.)*
 
-> ⚠️ **STOP — eight of the ten source files named in this section (the next paragraph names eight of them; two more follow below) are NOT on disk.** Re-verified 2026-08-31: of
+> ⚠️ **STOP — seven of the ten source files named in this section (the next paragraph names eight of them; two more follow below) are NOT on disk.** Re-verified 2026-08-31: of
 > `tulsky.txt`, `berg.txt`, `hockeyscan.txt`, `ibc.txt`, `huh.txt`, `bvhs.txt`, `bnq.html`, `csa.pdf`,
 > `goalie.pdf` and `pass.txt`, **`ibc.txt` and `huh.txt` are present** — the latter also as
-> `huh_layout.txt`. The other eight are absent. [`sources/README.md`](../sources/README.md) is the
+> `huh_layout.txt` — **and `pass.txt` was added on 18 November 2026** (W489). The other seven are absent. [`sources/README.md`](../sources/README.md) is the
 > authoritative inventory and is correct; this list is not.
 >
 > ⚠️ **This block was itself stale and said so about others.** It read *"only `ibc.txt` is present"*,
