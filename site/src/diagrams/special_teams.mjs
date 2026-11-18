@@ -812,8 +812,17 @@ const pkWedge = {
   width: 900,
 
   caption:
-    'The wedge+1 penalty kill, also called triangle-and-one — four killers, shorthanded 4-on-5 — ' +
-    'drawn against a five-player 1-3-1 with the puck on the half-wall. Three killers hold a tight ' +
+    // ✂️ W469 (18 Nov 2026). CUT "also called triangle-and-one" (special_teams.md's heading voices
+    // it in the chunk before; how_to_watch_hockey.md names the shape "wedge plus one" only), "four
+    // killers, shorthanded" and "five-player" (4-on-5 and 1-3-1 say both), "stay tight" (the
+    // triangle is already "tight"), the bare "block shots" (the shot-blocking sentences that follow
+    // open on it), "The fourth,", and the +1 route's "whoever has the puck ... at the carrier ...
+    // published readings" (special_teams.md voices all three routes in the chunk before;
+    // how_to_watch_hockey.md "Teams use the fourth player differently" in the caption's own chunk).
+    // KEPT: the W gloss, "drawn wider apart", "do not chase", "one of three published routes and a coaching choice"
+    // and every shot-blocking limb word for word. The screening negation now closes on a full stop.
+    'The wedge+1 penalty kill, 4-on-5, ' +
+    'drawn against a 1-3-1 with the puck on the half-wall. Three killers, marked W for wedge rather than winger, hold a tight ' +
     // W HERE IS *WEDGE*, AND IT IS THE ONLY DIAGRAM IN THE CORPUS WHERE IT IS NOT *WINGER*.
     // Measured: `W` appears on 31 glyphs across 17 diagrams; 29 carry `pos: 'F'` and are
     // wingers, and the two that carry `pos: 'D'` are both here. The shapes are individually
@@ -836,9 +845,9 @@ const pkWedge = {
     // the caption no longer makes the claim, so the disclosure has nothing to qualify.
     // KEPT, because how_to_watch_hockey.md voices no shot-blocking technique at all: every
     // shot-blocking limb, word for word, now gathered behind the ⚠️ so it opens the safety clause.
-    'triangle around the net, all three marked W for the wedge rather than for a winger: two ' +
+    'triangle around the net: two ' +
     'defencemen just off the crease edges, drawn wider apart than they really stand, and one ' +
-    'forward at the mid-to-high slot. They stay ' +
+    'forward at the mid-to-high slot. They ' +
 
     // ⚠️ "BLOCK SHOTS" WAS BARE HERE, and this caption is voiced: `md_to_speech.py` resolves
     // `diagram:<id>` to the caption, so a listener got the instruction with none of the
@@ -847,15 +856,15 @@ const pkWedge = {
     // courage", "in the lane before the shot, not sliding into it", "Never block from a
     // screening position." Taken verbatim rather than paraphrased, so the caption and the
     // section cannot drift.
-    'tight, block shots and do not chase. The fourth, the +1, pressures whoever has the puck; ' +
+    'do not chase. The +1 pressures the carrier; ' +
     // ✂️ W292 (12 Nov 2026), 1,002 -> 969 chars. CUT: ", so ask which one your team runs".
     // special_teams.md voices it in the caption's own chunk 030 (the Convention facts line: "so
     // ask your coach") and in chunk 029; how_to_watch_hockey.md, a spectator page, voices
     // "Teams use the fourth player differently, so expect variation" in chunk 012, directly
     // before. KEPT "a coaching choice", so the route is still not presented as the system.
     // Nothing after the glyph is touched.
-    'the route drawn, straight out from the goal at the carrier, is one of three published ' +
-    'readings and a coaching choice. ' +
+    'the route drawn, straight out from the goal, is one of three published routes ' +
+    'and a coaching choice. ' +
     // SAFETY. "Block from close and on your feet, head out of the lane" follows the host's
     // own wording (24 Oct: "hands tucked" replaced -- tucking is the on-ice form, and standing it
     // folds the head into the lane; special_teams.md :803/:808);
@@ -865,7 +874,7 @@ const pkWedge = {
     // injury instruction is ("Block from close and on your feet, head out of the lane..."). The
     // technique, lane-timing and screening limbs stay, word for word, as plain caption text.
     'Blocking shots is a technique, not an act of courage. Be in the lane before the shot, ' +
-    'not sliding into it, and never block from a screening position — half-deflecting a shot ' +
+    'not sliding into it, and never block from a screening position. Half-deflecting a shot ' +
     'your goalie could not see is worse than letting it through cleanly. ⚠️ Block from close and on ' +
     'your feet, head out of the lane, hands behind your body with the backs of the gloves out.',
 

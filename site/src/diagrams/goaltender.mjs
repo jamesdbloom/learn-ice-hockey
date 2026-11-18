@@ -475,11 +475,21 @@ const safeOutlets = {
     'You have the puck behind your own net and three of your five options are drawn, ranked by ' +
     'risk: the short pass to your defenceman on the wall, the rim around the boards to the far ' +
     'winger, and the one to make almost never — the pass into the shaded slot, where a goalie’s ' +
+    // ✂️ W469 (18 Nov 2026). CUT the book-by-book tariff (NHL/IIHF/PWHL minor, USA Hockey's
+    // deliberate-only clause, Hockey Canada 10.1(v) and CARHA 55(a) with no zone limit). The sole
+    // host, goaltender.md, voices "A clear straight out of the rink is a minor under most books,
+    // and the next section prices it book by book" in the caption's own chunk, directly before the
+    // marker, and the next section's facts lines (NHL/IIHF/PWHL) open in the same chunk; USA Hockey
+    // and Hockey Canada follow in the next chunk, CARHA the one after. W469 rules review: "most
+    // books" was wrong (it let an IIHF reader think their book might not price it), so the caption
+    // carries the six-book split in goaltender.md Common Mistakes' own terms: NHL/IIHF/PWHL from
+    // your own end, meant or not (63.2(iii); PWHL 65.2(iii)); Hockey Canada 10.1(a)(v) and CARHA
+    // 55(a), a goalie's stick clear, no zone and no intent word; USA Hockey 610(c) deliberate only.
     'turnover is a shot on an empty net you are standing in. Clear along the glass, never over ' +
-    'it: a puck you shoot directly out of the rink from your own end is a two-minute minor under NHL, ' +
-    'IIHF and PWHL rules, where USA Hockey’s clause reaches only a deliberate clear; Hockey Canada’s ' +
-    'Rule 10.1, clause v, and CARHA’s Rule 55(a) write a limb aimed at goalies specifically and name no zone at ' +
-    'all, and whether an accidental clear is caught by them is unsettled rather than free. Whether ' +
+    'it. A puck you shoot straight out of the rink from your own end is a minor under the NHL, IIHF and ' +
+    'PWHL whether you meant it or not. USA Hockey penalises only a deliberate one. Hockey Canada and ' +
+    'CARHA penalise a goalie\u2019s stick clear from anywhere, and neither promises that an accidental ' +
+    'one is safe. Whether ' +
     'you play the puck at all is your team’s convention rather than a law. Ask, and then be ' +
     'consistent.',
 
@@ -491,8 +501,7 @@ const safeOutlets = {
     'around the back of the net and down the far boards toward one of your forwards on the ' +
     'far half-wall, again stopping short. The third arcs over the top of the net and into a ' +
     'shaded region labelled "the slot", shaded as a warning rather than as a target. No ' +
-    'opponents are drawn, and no route is drawn for the two options the caption says cannot ' +
-    'be pictured.',
+    'opponents are drawn, and no route is drawn for the other two of the five options.',
 
   // `danger: true` because for a goaltender moving the puck this region means "never
   // send it through here" — the same sense breakouts.mjs shades "the house" in. In

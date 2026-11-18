@@ -260,27 +260,37 @@ const whoCanSeeIt = {
     // else can see it" — so a bare "the two who can see it" would be an absolute that document
     // contradicts three times. Only four players are drawn here; this sentence describes them,
     // not hockey.
-    'Why the call exists: the player going to get the puck is the one who cannot see the danger, ' +
-    'and in this picture the two who can see it, their partner and their goalie, are the two who ' +
-    'cannot reach it, so all they can do is say so. Both are labelled "calls it": where two people ' +
-    'can see it, both should call it, because the failure is silence, not duplication. ' +
+    // ✂️ W469 (18 Nov 2026). CUT "the player going to get the puck is the one who cannot see the
+    // danger": both hosts voice it in the caption's own chunk, directly before the marker
+    // (on_ice_communication.md "the forechecker closing from behind is in the one place they
+    // cannot look" / "the two players who reliably see the blind side are the goalie ... and the
+    // defence partner"; goaltender.md "facing the end boards with a forechecker arriving behind
+    // them — the exact view you have and they do not"). The lead still names what the picture
+    // teaches (the two who can see the danger cannot reach the puck), and "in this picture" stays.
+    // Wording only: "both should call it" -> "both call it"; "contact they were not braced for" ->
+    // "contact unbraced" (goaltender.md's own "into a hit unbraced"). The neck-injury REASON moved BEFORE the glyph so the
+    // amber run carries the instruction only (W464); "never turn your back ... never duck" stays
+    // whole and after the glyph, now closed by a full stop rather than "because".
+    'In this picture the two who can see the danger, partner and goalie, cannot reach the puck, ' +
+    'so all they can do is say so. Both are labelled "calls it": where two ' +
+    'can see it, both call it, because the failure is silence, not duplication. ' +
     // ✂️ W292 (12 Nov 2026), 1,004 -> 923 chars. CUT: "The words are a team matter, so agree
     // your own" -- on_ice_communication.md voices it in chunk 004, directly before the caption's
     // chunk ("Check them against your own team's words"), and goaltender.md in the caption's own
     // chunk 056 ("agree yours in the room, not on the ice"). The "mirror of this picture" lead-in
     // is reworded, not cut. KEPT: "both should call it" and the false-"time" hazard, because
     // on_ice_communication.md voices neither within a chunk of the marker (the false-"time" hazard first at 010; "both should call" first at 040).
-    'In the same corner with nobody arriving, the call is "time" — and a false "time" sends a ' +
-    'teammate into contact they were not braced for. ' +
-    // ⚠️ ONE SENTENCE, ON PURPOSE: the posture, the shoulder clause (KT6's mid-sentence slot,
-    // the shared constant, NOT edited here) and BOTH absolutes stay together so no chunk
-    // boundary can ever separate them. "not even to protect the puck" folds in the old
+    'With nobody arriving, the call is "time" — and a false "time" sends a ' +
+    'teammate into contact unbraced. ' +
+    'Turning your back or ducking is what turns contact with the boards into a neck injury. ' +
+    // ⚠️ ONE RUN, ON PURPOSE: the posture, the shoulder clause (KT6's mid-sentence slot,
+    // the shared constant, NOT edited here) and BOTH absolutes stay together, after the glyph
+    // and adjacent (two sentences since W469, so the negation closes on a full stop). "not even to protect the puck" folds in the old
     // "Protecting the puck never justifies squaring your back". "never duck" carries the chin
     // limb; the hosts carry the full "chin dropped to look for the puck" wording.
     '⚠️ At the wall, whether or not anyone calls "man on", take the contact with your skates parallel to it, on ' +
-    'your forearm and hip — ' + SHOULDER_NOT_THE_SURFACE + ' — head up and chin off your chest; ' +
-    'never turn your back to anyone coming at you, not even to protect the puck, and never duck, because those ' +
-    'are the two postures that turn contact with the boards into a neck injury.',
+    'your forearm and hip — ' + SHOULDER_NOT_THE_SURFACE + ' — head up and chin off your chest. ' +
+    'Never turn your back to anyone coming at you, not even to protect the puck, and never duck.',
     // ⚠️ CUT FOR LENGTH, NOT BECAUSE IT WAS WRONG, AND RECORDED SO IT IS RECOVERABLE.
     // The sentence above used to end in a colon followed by a book-by-book survey of who
     // may body check: USA Hockey 604(a) and 604(b), Hockey Canada 7.3, and the IIHF's

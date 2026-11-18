@@ -22,7 +22,7 @@
 
 **Play where the puck will be next.** Arrive at the net moving, just outside the crease and off the goalie, blade out of the paint, expecting the rebound. In a battle you will probably lose, go to where the loose puck will squirt out.
 
-**Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a passing lane only on a real cue, with support behind you, arriving with your feet — never as the last player back or in your own zone.
+**Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a passing lane only on a real cue, with support behind you, arriving with your feet — and never as the last player back. In your own zone, stay between the puck and your net unless the read is near-certain.
 
 **Get your head up off the puck.** You cannot scan while watching the puck. Keep it out in front, and train with a drill that fails if you look down, such as calling out a partner's fingers while stickhandling.
 
@@ -40,7 +40,7 @@ Players who seem to see the whole ice have usually just looked already, while th
 
 **The best read is where the puck goes next** — and which battles you will lose. The player who concedes a lost battle and takes the loose puck ends up with it.
 
-**A good read still works when it is wrong.** A jump that works creates a chance; one that misses in your own end concedes one, so the bar is well above a coin flip. And none of this is possible if you must look down to control the puck.
+**A good read still works when it is wrong.** A jump that works creates a chance; one that misses in your own end concedes one, so the bar is well above a coin flip anywhere and near-certain in your own end. And none of this is possible if you must look down to control the puck.
 
 ---
 
@@ -474,9 +474,9 @@ They look the same when they work and the same when they fail, but they are not 
 Key: Anticipation is acting on information; guessing is acting on hope
 Read: The test is not whether you were right. Ask whether your position would still be useful if you turn out to be wrong
 Action: Jump a lane only on a real cue, with support behind you, and arrive in it with your feet — reaching is the signature of a guess
-Position: Jump in the neutral or offensive zone, where being wrong costs a rush against rather than a goal against
-Never: Jump as the last player back, in your own zone, or again after you have already missed once this shift
-Risk: A successful jump creates a chance and a failed one in your own zone concedes one — so the read has to be well over 50/50
+Position: Jump in the neutral or offensive zone, where a miss costs a rush against; in your own zone, stay between the puck and your net unless the read is near-certain
+Never: Jump as the last player back, or again after you have already missed once this shift
+Risk: A successful jump creates a chance; a miss in your own zone concedes one, often point-blank — so there the read must be near-certain, not just better than 50/50
 ```
 
 The test is not whether you were right. It is this:
@@ -493,19 +493,19 @@ An anticipating player shades toward the likely pass while staying between the p
 
 - You have a real cue — the passer's shoulders, a closed blade pointed at that lane, or their eyes have already been there.
 - There is **support behind you**, covering the ice you leave.
-- The puck is in the **neutral or offensive zone**, where being wrong costs a rush against rather than a goal against.
+- The puck is in the **neutral or offensive zone**, where being wrong costs a rush against rather than a goal against. In your own zone, only a near-certain read clears the bar.
 - You can get there **with your feet**, not by reaching with your stick. Reaching is the physical signature of a guess.
 - The game state allows it. Tied in the second period, fine. Protecting a one-goal lead with two minutes left, no. See [Risk Management](risk_management.md) and [Game Management](../systems/game_management.md).
 
 **When it is how you concede a breakaway:**
 
 - You are **the last player back**.
-- You are **in your own zone**, especially the middle of it, where a miss is a point-blank chance.
+- You are **in your own zone** on anything less than a near-certain read, especially in the middle of it, where a miss is a point-blank chance.
 - You decided **before the passer even had the puck** — a plan looking for a reason, not a read.
 - You are **reaching** rather than skating, leaving your body in the wrong place and your feet stopped.
 - **You have already missed once this shift.** Chasing one gamble with another is how one mistake becomes a goal.
 
-**The costs are not equal:** a jump that works usually creates a chance; one that fails in your own zone usually concedes one. So the read has to be well over 50/50 — and more than that in your own end.
+**The costs are not equal:** a jump that works usually creates a chance; one that fails in your own zone usually concedes one. So the read has to be well over 50/50 in the neutral and offensive zones, and near-certain in your own end, where the default is to stay between the puck and your net and take the lane away with your position and stick. Some coaches want you never to leave your coverage in your own zone; find out which your team plays.
 
 ---
 
@@ -600,8 +600,8 @@ document, that is named too.*
    and where is the escape? *(§Reading pressure)*
 
 7. You jump a passing lane and miss. What single test decides whether that was
-   anticipation or a guess — and name two situations where the document says it
-   is never worth it. *(§Anticipation versus guessing)*
+   anticipation or a guess — and name the two situations where the document says
+   never to jump, and what changes in your own zone. *(§Anticipation versus guessing)*
 
 8. You are arriving second to a puck on the wall, off balance, on your backhand,
    against a bigger player who is already established. What is the read, and what
@@ -619,7 +619,7 @@ document, that is named too.*
 8. **Read the shape.** Against a 2-1-2 behind your net, reverse to your partner or rim it hard rather than wheeling. Against a defender closing hard, change pace. After your first shift, tell the bench what they are forechecking.
 9. **Play where the puck goes next.** Arrive at the net moving, just outside the crease and off the goalie, blade out of the paint. In a battle you will lose, go for the loose puck instead.
 10. **Get your head up off the puck**, and train it with a drill that fails if you look down.
-11. **Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a lane only on a real cue with support behind you — never as the last player back or in your own zone.
+11. **Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a lane only on a real cue with support behind you, and never as the last player back; in your own zone, only on a near-certain read.
 12. **On a wall reception, position protects you, not looking.** ⚠️ **Never turn your back to anyone coming at you, and never duck** — come in on an angle, head up, chin off your chest. Already facing the wall? Stick and gloves up and spread on the glass, no head contact. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 ---

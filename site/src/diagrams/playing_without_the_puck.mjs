@@ -412,18 +412,29 @@ const screenSightline = {
     //    legal, and the head-first limb (rules_primer.md does not voice it at all).
     //  - "Not drawn: keep your stick on the ice" became "Keep your stick on the ice too": the
     //    negation sat on the colon and could carry onto the instruction when voiced.
-    // ⚠️ FULL STOP AFTER "not a place to stand", and after "cannot show what is legal": a
-    // negation sitting on a colon or comma can carry onto the next clause when voiced.
-    'One instance of a relationship, not a place to stand. The shaded wedge is the line between ' +
-    'the puck at the right point and the goalie, and the screen stands inside it with both ' +
-    'feet outside the crease. The wedge swings as the puck moves: stand where the goalie’s eyes ' +
-    'are, not where the puck is going. ' +
-    'Keep your stick on the ice too, because a screen ' +
-    'is also a tip and rebound threat, and move late. The picture cannot show what is ' +
-    'legal. Outside the crease and touching nobody, a screen is normally ' +
+    // ⚠️ FULL STOP AFTER "not where the puck is going": a negation sitting on a colon or comma
+    // can carry onto the next clause when voiced. (The "not a place to stand" and "cannot show
+    // what is legal" sentences this note once named were cut in W469.)
+    // ✂️ W469 (18 November 2026), 183 -> 149 words, 150 whitespace tokens with the glyph (counted by importing the module in node).
+    // Three hosts, rendered 18 Nov: playing_without_the_puck.md chunk 045 (043/044 before it voice
+    // the stick-on-the-ice, move-late, off-the-red-line and head-first limbs), rules_primer.md
+    // chunk 101 (099/100 voice the full Rule 69 legality and "off the red line"),
+    // body_contact_and_battles.md chunk 116 (113/114 voice the same Rule 69 facts and 115 the red
+    // line). CUT: the opening "One instance of a relationship, not a place to stand." -- the
+    // caption now leads with what the picture teaches (the wedge is the sightline) and "The wedge
+    // swings as the puck moves" carries the not-a-spot point; "The picture cannot show what is
+    // legal." -- the next sentence states the legal position outright. SHORTENED, same claims:
+    // the stick/tip/rebound limb, and the paint/red-line instruction. KEPT WHOLE: the Rule 69
+    // sentence and its citation (the owner host voices the positioning limb only five chunks
+    // back), and both head-first sentences (rules_primer.md voices neither).
+    'The shaded wedge is the sightline between the puck at the right point and the goalie, with ' +
+    'the screen inside it, outside the crease. The wedge swings as the puck moves: stand ' +
+    'where the goalie’s eyes are, not where the puck is going. ' +
+    'Keep your stick on the ice for tips and rebounds, and move late. ' +
+    'Outside the crease and touching nobody, a screen is normally ' +
     'legal, but contact, a position that stops the goalie moving freely in their crease, or a ' +
-    'screen held inside it, can still cost the goal (NHL and IIHF 69.1 and 69.3). So keep both feet out of the blue paint and ' +
-    'off its red line, and touch nobody. ' +
+    'screen held inside it, can still cost the goal (NHL and IIHF 69.1 and 69.3). So stay off the ' +
+    'paint and its red line, and touch nobody. ' +
     // ✂️ W459 (18 November 2026), 185 -> 183 words. Three hosts (render 18 Nov, after the
     // cut: playing_without_the_puck.md chunk 044, rules_primer.md chunk 101,
     // body_contact_and_battles.md chunk 116). CUT: 'Here "screen" means the goalie's sightline and
@@ -912,9 +923,17 @@ const legalRouteThroughTraffic = {
     'Your own legal route past a teammate, in the attacking end with the opposition net at the right. ' +
     'Your route goes round the outside of your teammate, who is standing still, and finishes in ' +
     'open ice, while the straight line your check would take to that same ice runs through them. ' +
-    'No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
-    'the other version a penalty, is settled by the section around the picture rather than by ' +
-    'the drawing. A chaser ' +
+    'No arrow in this picture ends at a body. ' +
+    // ✂️ W469 (18 November 2026), 153 -> 144 words, 145 whitespace tokens with the glyph (counted by importing the module in node).
+    // Single host, render chunk 032 (18 Nov). SHORTENED, same job: the legality hedge was
+    // "What makes the arrangement legal, and the other version a penalty, is settled by the
+    // section around the picture rather than by the drawing." It still makes "legal" in the
+    // opening conditional, and the conditions it points at -- not the man pressuring your
+    // carrier; under Hockey Canada and CARHA only past a teammate doing their own job -- are
+    // voiced in the :556 paragraph directly before it IN THE SAME CHUNK. The illegal version is
+    // voiced as the "Never:" fact in chunk 031. Two sentences, so the negation closes on a full
+    // stop.
+    'The section around the picture says when this route is legal. The drawing cannot show it. A chaser ' +
     // ⚠️ "is not drawn" — NOT "is not something this corpus draws". The sentence's
     // work is the safety statement that the arrival at a standing man's back is
     // deliberately absent from the picture; naming the corpus was never part of it.

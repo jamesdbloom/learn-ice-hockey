@@ -711,14 +711,14 @@ Even with a trapezoid, you have real value behind the net. The most useful thing
 
 ### The safe outlets
 
-When you move the puck, take the lowest-risk play available: leave it for a defenceman with time, and failing that make a short pass to a defenceman on your strong-side wall. In trouble, put it along the glass, never over it, because a clear straight out of the rink is a minor under most books — and almost never pass up the middle, where a goalie's turnover is a shot on an empty net with you standing in it.
+When you move the puck, take the lowest-risk play available: leave it for a defenceman with time, and failing that make a short pass to a defenceman on your strong-side wall. In trouble, put it along the glass, never over it. A clear straight out of the rink from your own end is a minor under the NHL, IIHF and PWHL whether you meant it or not, a stick clear from anywhere is one under Hockey Canada and CARHA, and USA Hockey penalises only a deliberate one. And almost never pass up the middle, where a goalie's turnover is a shot on an empty net with you standing in it.
 
 ```facts
 Priority: Rank your options by risk before you move the puck
 Options: Leave it for a defenceman with time — lowest risk, and always first when it is available
 Options: A short pass to a defenceman on the wall on your strong side, where an interception means less
 Options: Rim it to the far winger — concedes possession but relieves pressure; in CARHA keep the backswing under fifteen inches, or it is a slap-shot minor — if it injures, a major and game misconduct
-Options: Off the glass and out — but along the glass, never over it, because under most books a puck you shoot straight out of the rink from your own end is a minor; goalies are allowed to be boring
+Options: Off the glass and out — along it, never over. Straight out of the rink from your end is a minor under NHL, IIHF and PWHL; from anywhere under Hockey Canada and CARHA; USA Hockey only if deliberate
 Never: Pass up the middle — a goalie's turnover there is a shot on an empty net, and you are standing in it
 ```
 
@@ -727,7 +727,7 @@ When you do move the puck, rank your options by risk:
 1. **Leave it for a defenceman with time.** Lowest risk, and it starts a controlled breakout. Always first when it's available.
 2. **A short pass to a defenceman on the wall on your strong side.** Simple, short, and if it's intercepted it's intercepted below the goal line where it means less.
 3. **A rim around the boards to the far winger.** Concedes possession but relieves pressure. Aim it to arrive where a teammate can meet it. In a CARHA league keep the backswing under fifteen inches: past that it is a slap shot, a minor, and if it injures an opponent a major and game misconduct, which ends your game.
-4. **Off the glass and out.** Rarely wrong when you are in trouble, and goalies are allowed to be boring — but ***along*** the glass, never over it. A clear straight out of the rink is a minor under most books, and the next section prices it book by book.
+4. **Off the glass and out.** Rarely wrong when you are in trouble, and goalies are allowed to be boring — but ***along*** the glass, never over it. A clear straight out of the rink from your own end is a minor under the NHL, IIHF and PWHL whether you meant it or not; under Hockey Canada and CARHA a stick clear is one from anywhere, and USA Hockey penalises only a deliberate one. The next section prices it book by book.
 5. **A pass up the middle.** Almost never. A goalie's turnover in the middle of the ice is a shot on an empty net, and you are the one standing in it.
 
 ![](diagram:goalie-safe-outlets)

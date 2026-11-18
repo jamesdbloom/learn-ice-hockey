@@ -944,19 +944,29 @@ const angleIntoTheCorner = {
   // disclosure ("the ordering and the ranking do not") is voiced in no host and lives only in
   // body_contact_and_battles.md's unvoiced Sources trailer; the chip/rim/reverse option is voiced
   // in body_contact_and_battles.md (:924, same chunk) but nowhere in skating.md.
+  // ✂️ W469 (18 November 2026). COMPRESSION ONLY, NO LIMB CUT. skating.md still voices no Case 3,
+  // no chip/rim/reverse and no provenance, so those stay; the posture limbs (never turn, never duck,
+  // Case 2) are voiced in the adjacent chunk of both hosts but stay by rule. Case 3 now opens "for
+  // when you already face the wall" -- the owner's facts wording ("Case 3, already facing the
+  // wall") -- and the old "and cannot turn" is gone: it contradicted the very next sentence (turn
+  // first if at all possible) and was the "cannot turn," seam warned about at the const above.
+  // "if at all possible. Failing that, spread the load:" replaces "... before you settle for it.
+  // Then ...", same order (turn first, spread the load only if you cannot); "spread the load" is
+  // the owner's facts wording for USA Hockey's distribute-the-force teaching point. Kept: damage
+  // limitation, "if at all possible", stick and gloves up on the glass, arms out as a shock
+  // absorber, no head contact at all. Case 2 is now named before its instruction rather than after.
   caption:
     'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
-    'drawn. It arrives on an angle and finishes running along the boards, and that is the first ' +
-    'and best of three cases for meeting a wall. ' +
-    'The cases come from USA Hockey\'s material; the ordering and the ranking do not. ' +
-    'Better still, a chip, a rim or a reverse decided before you arrive takes you out of the ' +
-    'collision. The worst, for when you are already facing the wall and cannot turn, is damage ' +
-    'limitation rather than the position to aim for. USA Hockey asks you to turn your skates parallel if at all possible before you ' +
-    'settle for it. Then get your stick and gloves up and spread out on the glass, arms out as a ' +
-    'shock absorber, and take the impact over as wide a surface as you have, with no head contact ' +
-    'at all. \u26A0\uFE0F Never turn your back to anyone coming at you, and never duck. ' +
-    'Get your skates parallel to the wall and take it on your forearm and hip: that is the ' +
-    'second case.',
+    'drawn. It arrives on an angle and finishes running along the boards, the first and best of ' +
+    'three cases for meeting a wall. ' +
+    'The cases come from USA Hockey\'s material; the ordering and ranking do not. ' +
+    'Better still, a chip, rim or reverse decided before you arrive takes you out of the ' +
+    'collision. The worst, for when you already face the wall, is damage limitation rather than ' +
+    'a position to aim for. USA Hockey asks you to turn your skates parallel first if at all ' +
+    'possible. Failing that, spread the load: stick and gloves up on the glass, arms out as a ' +
+    'shock absorber, and no head contact at all. ' +
+    '\u26A0\uFE0F Never turn your back to anyone coming at you, and never duck. ' +
+    'The second case: get your skates parallel to the wall and take it on your forearm and hip.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
@@ -1237,16 +1247,25 @@ const insideLaneLongerRoute = {
   // have." Chunks 139 and 141 both voice the full form, including CARHA's own-dump-in limb. USA Hockey
   // 625(a)(4) STAYS: the document voices it only in section 9 (chunks 021 and 128), twelve chunks
   // away.
+  // ✂️ W469 (18 November 2026). Single host (body_contact_and_battles.md). CUT: "neither team
+  // has" (a loose puck is one); "The two feet it costs you is the drawing's geometry, not a fact
+  // about hockey" -- it disclosed a number only that sentence introduced, so sentence and
+  // disclosure go together and no figure is left to qualify; "Hockey Canada and CARHA give you no
+  // right to lengthen their route" -- voiced in the facts block of the chunk before ("write no right
+  // to lengthen an opponent's path") and in the paragraph of the chunk after ("Neither book writes a
+  // right to lengthen an opponent's path to the puck"). KEPT, folded into one sentence, the
+  // HC/CARHA LIMIT on the permission this caption states: "Under Hockey Canada and CARHA, impeding
+  // an opponent without the puck is interference, so hold only a lane you already have." USA
+  // Hockey 625(a)(4) stays (voiced only in section 9, far away). The amber sentence is unchanged.
   caption:
-    'A loose puck neither team has, in your own end with the net you are defending at the right; ' +
+    'A loose puck in your own end, with the net you are defending at the right; ' +
     'the faint dashed line is the opposition forward\u2019s straight route to it, not a marking on ' +
     'the ice. Your route arcs, so you arrive already turned, inside them and on that line, leaving ' +
-    'them the less direct way round. The two feet it costs you is the drawing\u2019s geometry, not a ' +
-    'fact about hockey. Body position does this work only while you are going for the puck. Change ' +
-    'your skating lane or your foot speed to play the opponent\u2019s body rather than the puck and ' +
-    'USA Hockey Rule 625(a)(4) makes that a minor for interference. Hockey Canada and CARHA give ' +
-    'you no right to lengthen their route. Impeding an opponent without the puck is interference ' +
-    'there, so hold only a lane you already have. ' +
+    'them the less direct way round. Body position does this work only while you are going for ' +
+    'the puck. Change your skating lane or your foot speed to play the opponent\u2019s body rather ' +
+    'than the puck and USA Hockey Rule 625(a)(4) makes that a minor for interference. Under ' +
+    'Hockey Canada and CARHA, impeding an opponent without the puck is interference, so hold only ' +
+    'a lane you already have. ' +
     '⚠️ Arc for the puck, not their body, and never hold, pull, tug or grab with your free hand.',
 
   describe:
@@ -1538,16 +1557,25 @@ const shotBlockGetClose = {
   // ten-feet-versus-in-front-of-your-goalie sentence (defender.md voices "ten feet beats thirty"
   // but not the in-front-of-your-goalie half), the screen case, and "commit fully ... or get out",
   // which defender.md still voices nowhere else.
+  // ✂️ W469 (18 November 2026). COMPRESSION ONLY, NO LIMB CUT. Two hosts; every limb is kept for
+  // the reason given above (the coaching-choice close because body_contact_and_battles.md voices
+  // its own Convention line two chunks on; the in-front-of-your-goalie half and "commit fully or
+  // get out" because defender.md voices neither). Tightened: "with your goalie at the right";
+  // "Blocking ten feet from the shooter ... than three feet in front of your own goalie"; "A block
+  // there deflects a shot they could not see"; and the closing pair is now two sentences, "Anywhere
+  // else, commit fully or get out. Never stand half in the way with your eyes closed." -- the
+  // owner's positive lead first, the prohibition last with nothing after it to carry onto. The
+  // settled screening sentence is unchanged.
   caption:
-    'Where to block a shot from, in your own end with your goalie in the net at the right. An ' +
+    'Where to block a shot from, in your own end with your goalie at the right. An ' +
     'opposition defenceman has the puck at the point, and the faint dashed line is its straight path ' +
     'to the middle of your goal, not a marking on the ice. ' +
-    'Blocking from ten feet away is far more effective than blocking from three feet in front of ' +
+    'Blocking ten feet from the shooter is far more effective than three feet in front of ' +
     'your own goalie, where a deflection is a goal. How much your team blocks at all is a coaching ' +
     'choice, so find out which yours plays and ask your goalie what they want. ' +
-    '⚠️ Where you would be screening your own goalie, do not block. A block there adds a deflection to a shot ' +
+    '⚠️ Where you would be screening your own goalie, do not block. A block there deflects a shot ' +
     'they could not see, so get out of the lane and let them see it. Anywhere else, commit fully or ' +
-    'get out, and the one thing you cannot do is stand half in the way with your eyes closed.',
+    'get out. Never stand half in the way with your eyes closed.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in ' +

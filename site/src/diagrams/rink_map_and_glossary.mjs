@@ -469,9 +469,18 @@ const theTrapezoid = {
     // the 63.2(VII) out-of-crease limit rather than on a permission. After review it became "Cover
     // the puck straight off your own save": a rebound is a loose puck, and 63.2(VI) penalises a
     // goalie who races out and jumps on one; its Note protects only covering after the save.
-    'The trapezoid: the goaltender’s restricted area behind the net, 22 ft wide at the ' +
-    'goal line and 28 ft at the boards, shaded here at NHL dimensions. Playing the ' +
-    'puck behind the goal line outside it is a two-minute delay-of-game minor. The rule ' +
+    // ✂️ W469 (18 Nov 2026). CUT the dimensions "22 ft wide at the goal line and 28 ft at the
+    // boards": not a rule or safety limb, the picture shows the shape, and rink_map.md (the owner)
+    // voices both figures in the caption's own chunk. "shaded here at NHL dimensions" stays as the
+    // drawing's scope. Wording only elsewhere: "two-minute", and
+    // "cut down the angle, making the save and covering it" -> "cut the angle, saving and covering";
+    // the exception sentence now ends on a full stop after "never freezing it".
+    // Every rule and safety limb is KEPT, for the per-host reasons in the notes above (re-rendered
+    // W469: how_to_watch_hockey.md still voices no Handbook carve-out, centre-red-line bar,
+    // save-then-cover or 63.2(VII) limit beside the marker).
+    'The trapezoid: the goaltender’s restricted area behind the net, ' +
+    'shaded here at NHL dimensions. Playing the ' +
+    'puck behind the goal line outside it is a delay-of-game minor. The rule ' +
     // ⚠️ "THE SOLE EXCEPTION" WAS FALSE, AND IT CAME FROM THE BODY, NOT FROM HERE.
     // `rules-verifier` found the IIHF Situation Handbook publishes two more, in both the
     // 2025/26 and 2026/27 editions: Situation 27.6 rules a puck stopped ON the goal line is
@@ -489,7 +498,7 @@ const theTrapezoid = {
     // skate contact with the crease" and nothing more can reasonably sit on the puck with a toe
     // in the paint. One clause, and it costs the listener nothing to hear.
     'text\u2019s one exception, a goalie keeping skate contact with the crease, ' +
-    'excuses playing the puck and never freezing it; the ' +
+    'excuses playing the puck, never freezing it. The ' +
     'IIHF\u2019s Situation Handbook adds two more: a puck stopped on the goal line, and one ' +
     'that only deflects into you. USA Hockey, Hockey ' +
     // CARHA added W33: carha.txt has no "trapezoid", "restricted area" or "designated area";
@@ -525,7 +534,7 @@ const theTrapezoid = {
     // crease", and IIHF Situation 63.1 penalises a goalkeeper out of the crease who falls on
     // the puck as an attacker bears down. Only the save-then-cover carve-out travels.
     'touched where a goalie may freeze the puck. Cover the puck straight off your own save: coming ' +
-    'out to cut down the angle, making the save and covering it stays legal (IIHF 63.2(VI)). Being ' +
+    'out to cut the angle, saving and covering stays legal (IIHF 63.2(VI)). Being ' +
     'checked excuses a freeze only inside the crease (63.2(VII)); out of it, falling on a ' +
     'loose puck as an attacker bears down is still a minor.',
 

@@ -25,7 +25,7 @@
 
 **Let the scoreboard set your risk level, not your temperament.** Leading late, take the safe option earlier — hard when you lead by three. Trailing late, take it up: pinch for the puck, activate, force the entry. Shorthanded, clear it hard unless you have truly read a 2-on-1.
 
-**Before you pinch, jump a lane or activate, ask three questions: do I have information or a feeling, who is behind me if I miss, and what does the scoreboard allow?** Two yeses and a green light, go; otherwise hold your position.
+**Before you pinch, jump a lane or activate, ask three questions: do I have information or a feeling, who is behind me if I miss, and what does the scoreboard allow?** Two yeses and a green light, go; otherwise hold your position. A lane jump in your own end needs more: a near-certain read.
 
 **After a turnover, get to the inside, not after the carrier.** Skate to the middle between puck and net, call "turnover", finish the shift. **Some teams send the first forward at the carrier by design — learn which yours plays.** ⚠️ **Never solve the chase with your body** — a hit on a player's back ends your game in most books.
 
@@ -576,7 +576,7 @@ Read: Before you jump a lane, pinch or activate, ask not only "am I right?" but 
 Key: A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck — the worst case is a 2-on-2
 Risk: The same pinch with your centre below the goal line is a bad pinch even if you win the puck — you were one bounce from a 2-on-1
 Priority: Three questions in half a second — do I have information, not just a feeling? is someone behind me if I miss? what does the scoreboard allow?
-Action: Two yeses and a green light from the scoreboard question, go; otherwise hold your position, which is itself a decision
+Action: Two yeses and a green light from the scoreboard question, go; otherwise hold your position. To jump a lane in your own end, the read must be near-certain
 Action: Pinch for the puck — check only where your league allows it and only while they still have the puck; if you can see their numbers, pull up
 ```
 
@@ -596,7 +596,7 @@ Those two pictures are the same picture twice, differing only in where the centr
 2. **If I miss, is someone behind me?**
 3. **What does the scoreboard say about how much I can afford?**
 
-Two yeses and a green light from the third: go. Otherwise, hold your position — which is itself a decision, and often the right one. ⚠️ **When you do pinch, pinch for the puck: check only where your league allows it and only while they still have the puck, and if you can see their numbers, pull up.**
+Two yeses and a green light from the third: go. Otherwise, hold your position — which is itself a decision, and often the right one. In your own end, a lane jump needs more than two yeses: a miss there is a point-blank chance, so hold your position unless the read is near-certain — see [Scanning and Anticipation](scanning_and_anticipation.md#anticipation-versus-guessing). ⚠️ **When you do pinch, pinch for the puck: check only where your league allows it and only while they still have the puck, and if you can see their numbers, pull up.**
 
 ---
 
@@ -988,7 +988,7 @@ document, that is named too.*
 4. **Losing the puck while it travels toward your own net is far worse than losing it going the other way — coaching consensus reasoned from the mechanism, not a measured comparison.** The turnover and the counterattack become one event.
 5. **Most "nevers" are coaching conventions; ask your coach why.** **Two are rules everywhere:** where checking is allowed, check on your feet; ⚠️ **put the puck off the glass, not over it.** Over it on purpose is at least a minor anywhere, and under the NHL, IIHF and PWHL so is an accident from your own end.
 6. **With time, make the possession play; without it, get the puck out.** In tracked NHL data — one tracker, about half the games of two seasons — carry-outs and pass-outs lead to an entry nearly nine times in ten, dump-outs about one in five. The difference is *possession*, not method.
-7. **Before you jump a lane, pinch or activate, answer three questions: do I have a read, is someone behind me if I miss, what does the scoreboard allow?** Two yeses and a green light from the scoreboard, go; otherwise hold your position. Acting on a read is anticipation; acting on hope is gambling.
+7. **Before you jump a lane, pinch or activate, answer three questions: do I have a read, is someone behind me if I miss, what does the scoreboard allow?** Two yeses and a scoreboard green light, go; otherwise hold. In your own end, jump only on a near-certain read. Acting on a read is anticipation; acting on hope is gambling.
 8. **Play simple in your own end and creative in theirs.** Hockey's mistakes are asymmetric: a missed chance in their end costs you a chance; a turnover in your own end costs you a goal.
 9. **Beat the breakaway with positioning; once a carrier is past you, do not foul them from behind** — a **penalty shot** in every book, an **awarded goal** if your net is empty. ⚠️ **Keep your feet out of theirs:** in most books a called slew-foot ends your game, and in every book it can.
 10. **Take a penalty to deny a certain goal, and almost never out of frustration.** A minor is roughly a one-in-five chance of a goal against, so it is a cheap trade against a certainty and a terrible one against nothing.

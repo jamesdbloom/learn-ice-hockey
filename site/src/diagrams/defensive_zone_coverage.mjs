@@ -384,9 +384,14 @@ const collapseCorner = {
   // The coaching-choice sentence keeps "so ask" closing the "not areas" negation (a bare dash and
   // imperative there could be heard as "don't ask", inverting non-negotiable 7).
   caption:
-    'Low zone collapse, the standard coverage here and one of several, as the puck goes into the ' +
+    // ✂️ W469 (18 Nov 2026). CUT "and one of several" (the next sentence names the alternatives
+    // and closes on "ask your coach") and "not a shape to hold" (frame two is the next marker in
+    // the same host chunk and opens "a beat after the corner battle begins"; the host's prose
+    // directly before walks every puck movement). Nothing after the first sentence changed: the
+    // hit-from-behind price is voiced two chunks back in the host, so it stays.
+    'Low zone collapse, the standard coverage here, as the puck goes into the ' +
     'strong-side corner: wingers high on the points, the centre down from the high slot as the ' +
-    'second body to make it two on one. Frame one of two, not a shape to hold. Man-on-man or a ' +
+    'second body to make it two on one. Frame one of two. Man-on-man or a ' +
     'hybrid would read bodies, not areas, so ask your coach which your team plays. ' +
     // W456 site review (Major, readability): captionNodes() ambers from the FIRST glyph to the END
     // of the caption, so the hazard and the price are plain caption text and the glyph opens the

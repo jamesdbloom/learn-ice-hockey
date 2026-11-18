@@ -381,9 +381,9 @@ const whoScoresNow = {
  * WHY THE DEFENSIVE ZONE. The section says jumping is worth it when "the puck is in
  * the neutral zone or the offensive zone, where being wrong costs you a rush against
  * rather than a goal against", and that it is how you concede a breakaway when "you
- * are in your own defensive zone, especially in the middle of it, where a miss is a
- * point-blank chance". Drawing the own-zone case is drawing the one the section
- * condemns, and the caption of frame four says in terms that the same movement in the
+ * are in your own zone on anything less than a near-certain read, especially in the
+ * middle of it, where a miss is a point-blank chance". Drawing the own-zone case is
+ * drawing the one the section warns against hardest, and the caption of frame four says in terms that the same movement in the
  * neutral or offensive zone is a play the section allows.
  *
  * WHAT THE PAIR CANNOT SHOW, said in the captions rather than left silent: the CUE.
@@ -538,8 +538,8 @@ const guess = {
     'does not come, or you miss it by a foot, the carrier has a clean lane at your goalie. ' +
     'This is not an instruction never to jump. On a real cue, with support behind you, in the ' +
     'neutral or offensive zone, it can be the right play. Here the place makes it a gamble: in ' +
-    'the middle of your own zone a miss is a point-blank chance, so the read has to be far better ' +
-    'than even. If you are the last player back, there is no version of this jump worth making.',
+    'the middle of your own zone a miss is a point-blank chance, so stay in the band unless the ' +
+    'read is near-certain. If you are the last player back, there is no version of this jump worth making.',
 
   describe:
     'The same end zone and the same instant as the previous diagram, with everything unchanged ' +
