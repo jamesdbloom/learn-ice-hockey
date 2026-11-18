@@ -482,23 +482,23 @@ That pivot is a **coaching default, not a law**: some coaches want a middle pivo
 
 #### "Step up" and "pinch" are two different plays
 
-**Step up in the neutral zone or at your own blue line to close an attacker's space early — and close it on the puck, never building speed into a hit; pinch at the offensive blue line to stop a clearance and keep the puck in.** A missed step-up leaves only open ice behind you, while a missed pinch still has your forwards in the zone to help.
+**Step up in the neutral zone or at your own blue line to close an attacker's space early — and close it on the puck, never building speed into a hit; pinch at the offensive blue line to stop a clearance and keep the puck in.** A missed step-up leaves only open ice behind you, while a missed pinch still has your forwards in the zone to help, provided someone covers your point, usually a high forward.
 
 ```facts
 Key: Stepping up happens in the neutral zone or at your own blue line — you move forward to challenge an oncoming attacker early rather than retreating
 Key: Pinching happens at the offensive blue line — you step down into the offensive zone to stop a clearance and keep the puck in
 Risk: A missed step-up leaves nothing but open ice behind you
-Risk: A missed pinch puts the puck behind you going the other way — but your forwards are still in the zone to help
-Key: A pinch is generally the safer of the two, because you have teammates behind you; a neutral-zone step-up has no safety net — that compares rushes against you, not injury risk
+Risk: A missed pinch puts the puck behind you going the other way, so pinch only with someone covering your point, usually a high forward
+Key: A pinch is generally the safer of the two when someone covers your point; a neutral-zone step-up has no safety net — that compares rushes against you, not injury risk
 Never: Build speed into a step-up to finish it as a hit, or read a head-down carrier as a licence to arrive harder — it tells you they cannot change direction, and nothing more
 Rule: A step-up finished as a hit is what the charging rules are written for — USA Hockey's Casebook rules the head-down case charging (607, Situation 2) and a check you accelerate through without the two fast strides (Situation 3)
 Rule: Charging binds every division, checking or not — USA Hockey 607, Hockey Canada 7.4 name no division — no book caps it at a minor: USA Hockey's floor is minor plus misconduct (607(a)), a reckless one a mandatory major and game misconduct (607(b)): plan on a match and a likely multi-game ban (602(a))
 ```
 
 - **Stepping up** happens in the neutral zone or at your own blue line: you move *forward* toward an oncoming attacker to challenge them early rather than retreating. Risk: if you miss, there is nothing but open ice behind you.
-- **Pinching** happens at the *offensive* blue line: you step *down* into the offensive zone to stop a clearance and keep the puck in. Risk: if you miss, the puck is behind you going the other way — but your forwards are still in the zone to help.
+- **Pinching** happens at the *offensive* blue line: you step *down* into the offensive zone to stop a clearance and keep the puck in. Risk: if you miss, the puck is behind you going the other way — but your forwards are still in the zone to help, provided someone covers your point, usually a high forward.
 
-A pinch is generally the safer of the two, because you have teammates behind you; a neutral-zone step-up has no such safety net. **That compares rushes coming back at you, not what the two plays do to a body.**
+A pinch is generally the safer of the two, because someone can cover your point; a neutral-zone step-up has no such safety net. **That compares rushes coming back at you, not what the two plays do to a body.**
 
 ![](diagram:defender-step-up)
 
@@ -599,7 +599,7 @@ Risk: Losing the line and getting caught in the zone lets the opponent exit clea
 ```facts
 Position: Near the blue line, with the strong-side defender closer to the action
 Action: After a turnover, the strong-side defender pinches for the puck — a body check only where your game allows one, never into a back turned to you — while the weak-side one holds against an odd-man rush
-Read: Pinch only if you can arrive as the puck does and a forward is high enough to cover your point. If the puck is deeper in the zone, both hold the top and intercept rather than chase
+Read: Pinch only if you can arrive as the puck does and someone, usually a high forward, covers your point. If the puck is deeper in the zone, both hold the top and intercept rather than chase
 Goal: Prevent the opponent from exiting the zone cleanly
 Technique: Pressure from the top, not from below. If you were stepped down when it turned over, recover to the line first, read, then decide whether to pinch
 Convention: Only one defender pinches at a time — a near-universal coaching convention rather than a rule, with real exceptions coaches do call
@@ -607,11 +607,11 @@ Risk: If you both step up and the play breaks the other way, the opponent has a 
 Never: Cut across into or hit a winger who has chipped the puck past you — turn and skate to the puck
 ```
 
-**What to do:** When the opponent retrieves the puck after a turnover, the strong-side defender pinches (steps down off the blue line into the zone) to pressure the carrier for the puck. Go only if you can arrive as the puck does and a forward is high enough to cover the point you leave. Play the puck, not the body. A body check is an option only where your game allows checking, and never into a back turned to you — if you can see their numbers, play the puck. The weak-side defender holds back to protect against an odd-man rush. If the puck is deeper in the zone, both hold position at the top and intercept rather than chase.
+**What to do:** When the opponent retrieves the puck after a turnover, the strong-side defender pinches (steps down off the blue line into the zone) to pressure the carrier for the puck. Go only if you can arrive as the puck does and someone, usually a high forward, covers the point you leave. Play the puck, not the body. A body check is an option only where your game allows checking, and never into a back turned to you — if you can see their numbers, play the puck. The weak-side defender holds back to protect against an odd-man rush. If the puck is deeper in the zone, both hold position at the top and intercept rather than chase.
 
 **Goal:** Prevent the opponent from exiting the zone cleanly.
 
-**Key considerations:** An offensive-zone pinch is safer than a neutral-zone step-up because your forwards are still in the zone to help — safer in rushes against you, not in what the play does to a body. Only one defender pinches at a time, a near-universal convention with real exceptions coaches do call; if you both step up and the play breaks, they have a clean break on your goalie. If you were stepped down when the puck turned over, recover to the line first, read, then decide — don't pressure from below. [Forechecking Systems](../systems/forechecking_systems.md) has the timing test in full and what you may do to the winger once you reach the wall.
+**Key considerations:** An offensive-zone pinch is safer than a neutral-zone step-up because someone, usually a high forward, can cover for you — safer in rushes against you, not in what the play does to a body. Only one defender pinches at a time, a near-universal convention with real exceptions coaches do call; if you both step up and the play breaks, they have a clean break on your goalie. If you were stepped down when the puck turned over, recover to the line first, read, then decide — don't pressure from below. [Forechecking Systems](../systems/forechecking_systems.md) has the timing test in full and what you may do to the winger once you reach the wall.
 
 **The commonest failure is the winger chipping the puck past you: turn and skate to the puck — never cut across into the winger or hit them once it has gone.** The hit does not get the puck back, and the window for a legal one is almost nothing. In women's hockey there is none at all: the IIHF and PWHL allow a check only with *"a clear intention of playing the puck or attempting to 'gain possession' of the puck"*, and once it is past you a hit does neither. Elsewhere the NHL and IIHF allow it only *"immediately following"* the loss of the puck, and USA Hockey makes it interference to change your skating lane or foot speed *"to play the body of an opponent who is no longer in control of the puck."*
 
@@ -1032,7 +1032,7 @@ Action: Where your book grants it, use the exemption rather than trying to make 
 - **Rimming into the corner and assuming the goalie will get it.** **Under the NHL and IIHF books that rim is yours, so plan the route before it arrives** — and in Britain and the PWHL play as though the trapezoid binds too. **In a book with no trapezoid, the opposite mistake is sprinting for a rim that is now your goalie's**: somebody calls it before you are both in the corner, and your goalie may fetch it but not sit on it. [The trapezoid — which books paint one](#the-trapezoid--which-books-paint-one) names the books.
 - **Blocking a shot from a screening position**, deflecting a puck your goalie never saw. If the shooter is yours, get out and block square, head up and out of the lane; if not, get out of your goalie's eyeline.
 - **Going down to block before the puck is released.** That is what a shot fake is designed to draw. Stay on your feet until it is gone, and close with your feet rather than lunging.
-- **Pinching with no read.** An offensive-zone pinch with forwards behind you is fine; a neutral-zone step-up that misses is a 2-on-1 against your partner. Only one of you pinches while the other holds the line. If the winger chips it past you, turn and skate to the puck — do not cut across and hit the winger, because they no longer have it.
+- **Pinching with no read.** An offensive-zone pinch with someone covering your point is fine; a neutral-zone step-up that misses is a 2-on-1 against your partner. Only one of you pinches while the other holds the line. If the winger chips it past you, turn and skate to the puck — do not cut across and hit the winger, because they no longer have it.
 - **Panicking inward at the offensive blue line.** Keeping the puck in is priority one; if you cannot hold the line, exit and reset rather than gamble and get caught inside.
 - **Drifting over the offensive blue line while the puck stays in.** Keep your skates inside the line, or you are no longer an option for the forwards below you.
 - **Activating with no forward covering you.** Call it, and go only once a forward has taken your place above the puck.
