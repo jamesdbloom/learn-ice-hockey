@@ -804,7 +804,7 @@ Rule: Charging a goalie can eject in every book — mandatory under Hockey Canad
 
 ```facts
 Rule: The draw after an icing is the faceoff-violation exception in four of the six books — the first violation is a warning, not the centre's removal (NHL and IIHF 2026/27 Rule 76.4, PWHL 78.4; Hockey Canada Rule 6.5(a), Junior divisions only; neither USA Hockey nor CARHA writes such a carve-out)
-Rule: Across the Home Countries the IHUK In-House Rules 2026-27 settle faceoff violations without the edition question — "the linesperson shall immediately replace the centre for all violations", faceoffs following icings excepted (Section 10, Rule 76)
+Rule: Under IHUK's In-House Rules, not the Elite League, "the linesperson shall immediately replace the centre for all violations", faceoffs after icings excepted (Rule 76); in an Elite League game IIHF 76.7 counts a premature move as a violation and re-drops; a team's second on one draw is a bench minor
 Rule: Pre-drop contact by a player facing off is a minor — discretionary under NHL and IIHF 76.7 and PWHL 78.7, mandatory under USA Hockey 613(e), Hockey Canada 6.2(c) and CARHA 57(b); NHL, PWHL and IIHF 2026/27 also replace the centre
 Rule: A second violation on one draw is a bench minor under NHL and IIHF 76.7, PWHL 78.7, a minor on the offender under USA Hockey 613(d), and discretionary under Hockey Canada 6.2(e) and CARHA 57(d) — though Hockey Canada makes it automatic if the offender then contacts a linesperson clearing the dot
 ```
@@ -952,8 +952,8 @@ document, that is named too.*
 
 4. You are taking a draw in your own end. Which centre places their blade on the
    ice first — and why is "the defending centre" the answer in only three of the
-   six rulebooks? Name the three that say something else, and what changes in
-   Britain. *(§Faceoffs — a defining
+   six rulebooks? Name the three that say something else, and what IHUK's
+   In-House Rules change. *(§Faceoffs — a defining
    responsibility of the centre)*
 
 5. Roughly how many faceoffs are there in an NHL game, how much of a team's

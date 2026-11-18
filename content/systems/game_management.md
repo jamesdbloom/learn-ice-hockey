@@ -1,8 +1,8 @@
 # Game Management
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the IIHF
-> rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF rule this page gives
+> is your base** — every level of UK hockey runs the IIHF book, amended by the Elite League's Casebook or the In-House Rules; see
 > [UK and England Rules](../foundation/uk_rules.md). Read **Overtime** and **Shootouts** before you
 > rely on them: under the 2026-27 In-House Rules there is no overtime at all outside NIHL and some
 > SNL fixtures. The Elite League writes its own, and plays it.
@@ -41,7 +41,7 @@
 
 **Trailing teams shoot more and leading teams shoot less.** That is well documented, and it distorts every raw statistic. Much else here is coaching lore rather than measurement, and the document says so where it matters.
 
-**Which book your league runs changes some of the costs** — what icing costs you, whether coincidental minors make it 4-on-4, and whether there is overtime at all. **In Britain, wherever this page gives the IIHF rule, it is yours**, and many fixtures have no overtime. Where a rule *is* the tactic, it is set out in full.
+**Which book your league runs changes some of the costs** — what icing costs you, whether coincidental minors make it 4-on-4, and whether there is overtime at all. **In Britain the IIHF rule is your base**, though the Elite League's Casebook and the In-House Rules each amend some of it, and many fixtures have no overtime. Where a rule *is* the tactic, it is set out in full.
 
 ---
 
@@ -768,7 +768,7 @@ Rule: Under the In-House Rules overtime is played only in NIHL fixtures, and in 
 Rule: NIHL league and group-stage playoff overtime is five minutes of 3-on-3 with no change of ends, then game-winning shots with three shooters a side (In-House Rules 2025-26 and 2026-27, Appendix 1)
 Rule: In NIHL 1 and 2 the same player may now shoot again once the first three have gone — the 2025-26 rule that everyone had to shoot first is gone (In-House Rules 2026-27, Appendix 1)
 Rule: NIHL Playoff Final Weekend is different — semi-finals go to 20 minutes of 5-on-5 then shots, and the Final to successive 20-minute 5-on-5 sudden-death periods with no shots at all (In-House Rules 2025-26 and 2026-27, Appendix 1)
-Rule: The Elite League writes its own Rule 84 — a regular-season or Challenge Cup group game plays five minutes of 3-on-3 without changing ends, then a five-shooter shootout, home team choosing order; knockout formats vary, so check the Casebook (EIHL Casebook 84.1, 84.4)
+Rule: The Elite League writes its own Rule 84 — a regular-season or Challenge Cup group game plays five minutes of 3-on-3 without changing ends, then a five-shooter shootout, the home team choosing whether to shoot first or second; knockout formats vary, so check the Casebook (EIHL Casebook 84.1, 84.4)
 Read: Under IIHF rules your bench is the near bench, so waiting for an exhausted defender is much less reliable
 Action: Ask before the game — formats run from 4-on-4 to 3-on-3 to a straight shootout to no overtime at all
 ```
@@ -790,7 +790,7 @@ Where overtime *is* played, Appendix 1 of the In-House Rules sets the format:
 - **NIHL Playoff Final Weekend:** semi-finals go to **20 minutes of 5-on-5**, then shots. The **Final** plays successive **20-minute 5-on-5 sudden-death periods** with **no** shots, and teams change ends each period — the closest thing here to NHL playoff overtime.
 - **SNL:** five minutes of 3-on-3 sudden death, then a **best-of-three penalty shot shootout**, then sudden death.
 - **BUIHA:** fixtures marked *"VARSITY OT"* follow the NIHL procedure.
-- **Elite League:** none of the above — the *EIHL Casebook* writes its own Rule 84. A regular-season or Challenge Cup group game plays **five minutes of 3-on-3**, no change of ends, then a **five-shooter** shootout. Knockout formats vary, so check the Casebook for your game.
+- **Elite League:** none of the above — the *EIHL Casebook* writes its own Rule 84. A regular-season or Challenge Cup group game plays **five minutes of 3-on-3**, no change of ends, then a **five-shooter** shootout, the home team choosing whether to shoot first or second. Knockout formats vary, so check the Casebook for your game.
 
 The full list of British amendments lives in [UK and England Rules](../foundation/uk_rules.md).
 
@@ -848,10 +848,10 @@ See [Goaltender](../positions/goaltender.md) for the technical detail.
 
 NHL **Rule 84.4**: if the five-minute overtime settles nothing, each team gets **three shots**, alternating, and the **home team chooses whether to shoot first or second**. If still tied it goes to **sudden death**, and **no player may shoot twice until everyone eligible has shot**. The rules for each attempt are those of a penalty shot (Rule 24). The final score is recorded as one goal better than the opponent regardless of how many shootout goals were scored, and the winning shooter is not credited with a goal in personal statistics.
 
-**The shootout you will actually take in Britain.** Your base book is the IIHF's, and **its Rule 84.4 differs from the NHL in four ways**:
+**The IIHF shootout, which British competitions start from and then amend.** **Its Rule 84.4 differs from the NHL in four ways**:
 
 - **Five different shooters a side, not three.**
-- **A coin toss between the captains, not the home team,** decides who shoots first.
+- **A coin toss between the captains, not the home team,** decides who shoots first — though the Elite League gives the home team that choice, as the NHL does.
 - **Goalies may be changed after each shot**; in the NHL a goalie cannot be replaced once the shootout begins unless injured.
 - **Repeat shooters in the tie-break:** after the first five, *"[t]he same Player can be used for each shot"*, where the NHL makes everyone eligible shoot before anyone shoots twice.
 
