@@ -117,6 +117,11 @@ CARRIES: dict[str, tuple[str, ...]] = {
     "forecheck-212": (
         "find out first whether you may body check in this game",
     ),
+    # W487: offensive_zone_play.md :404 dropped its prose "never turn your back /
+    # never duck" because the facts line and these two captions voice it in the
+    # chunks just before. A caption trim must not take it out of both.
+    "oz-cycle-rim": ("never turn your back", "never duck"),
+    "oz-cycle-reverse": ("never turn your back", "never duck"),
 }
 
 DIAGRAMS_JSON = REPO / "site" / "src" / "data" / "diagrams.json"
