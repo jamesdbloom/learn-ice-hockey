@@ -506,17 +506,21 @@ const wherethePuckIs = {
   // AFTER the marker; puck_handling.md voices knock-it-down only far above), so none was cut.
   // Cut: "so the two cases run opposite to the way most players guess" and "for an extra
   // attacker" / "in this picture" -- narrative, no limb.
+  // 18 November 2026 (W465, 160 -> 149 words). Wording only; no rule limb cut. Cut "Your goalie
+  // is on the ice deliberately" (a drawing note: the goalie is visible) and "at your feet".
+  // The colon after "do not keep hold of the puck" is now a full stop, so the negation cannot
+  // carry onto "knock it straight down".
   caption:
-    'A loose puck inside the shaded crease beside your goalie, with you standing outside it. In ' +
+    'A loose puck inside the shaded crease beside your goalie; you are outside it. In ' +
     'five of the six books the puck\'s position decides, not yours: covering a puck inside the ' +
     'crease from outside it, as drawn here, is a penalty shot (under USA Hockey the other team may ' +
     'take a minor instead), and covering one just outside while you stand inside is a minor. ' +
     'Hockey Canada\'s wording can also be read to count where you are, so under that book treat a ' +
     'cover from inside your crease as the shot too. Every book exempts the goalie. You are drawn ' +
     'as a defenceman; the rule reaches any skater. ' +
-    '⚠️ Wherever you are standing, do not keep hold of the puck: knock it straight down at your ' +
-    'feet in one continuous motion and play it with your skate or your blade. Your goalie is on ' +
-    'the ice deliberately; with the goalie pulled it can be a goal awarded against you.',
+    '⚠️ Wherever you are standing, do not keep hold of the puck. Knock it straight down in one ' +
+    'continuous motion and play it with your skate or your blade. With your goalie pulled it can ' +
+    'be a goal awarded against you.',
 
   describe:
     'Your own defending end, your net at the right. The goal crease is drawn as the rink itself ' +
@@ -776,13 +780,9 @@ const youCannotBeatTwo = {
   // unnumbered.
 
   caption:
-    'A second defender arriving: you have the puck wide, one defenceman is already on ' +
-    'you, and a second opponent is ' +
-    'closing from the middle. ' +
-    'Both drawn options are puck options rather than moves: the pass to the teammate whose ice ' +
-    'the second defender has just ' +
-    'vacated, and the chip into the space behind ' +
-    'them, up the boards past the ' +
+    'You have the puck wide, one defenceman is on you and a second opponent is closing from ' +
+    'the middle. The dashed routes are the pass to the teammate whose ice the second defender ' +
+    'has left and the chip up the boards behind the ' +
     // ⚠️ FULL STOP, NOT A COLON. This read "…and it is not drawn: protect the puck, take the
     // contact and wait for support" — a colon opening onto three imperatives with a negation
     // still live, so a listener can hear "not protect the puck, not take the contact". The
@@ -797,13 +797,17 @@ const youCannotBeatTwo = {
     // (a pointer). KEPT: the "not a promise" note on the teammate, the protect-is-not-a-place-to-
     // live warning, and the whole wall limb -- this host voices it nowhere near the marker
     // (nearest :858, a different section), so it is not demoted here.
-    'first defenceman. The third option, protecting the puck outside your own end, is not drawn. ' +
-    'The teammate ' +
-    'shows what "left open" means, not that they will be there. ' +
-    '⚠️ And protecting is a way to buy a second, not a place to live: every second you hold the ' +
-    'puck under pressure another checker is arriving. At the boards or in open ice, ' +
-    'never turn your back to anyone coming at you and never duck, and ' +
-    'neither prohibition is a rule for fast checkers only. At the wall, skates parallel to it, forearm and ' +
+    // 18 November 2026 (W465, 179 -> 148 words). Cut "A second defender arriving" and "puck
+    // options rather than moves" -- the host's list of the three options and "You cannot beat
+    // two" are voiced in the chunk before the caption. The protect-buys-a-second clause now sits
+    // BEFORE the glyph, so the amber run opens on the posture instruction; "neither prohibition
+    // is a rule for fast checkers only" became "however slowly they come", as the-last-player-back
+    // already says it.
+    'first defenceman. The teammate shows what "left open" means, not that they will be there. ' +
+    'The third option, protecting the puck outside your own end, is not drawn. It only buys a ' +
+    'second: every second you hold the puck under pressure, another checker is arriving. ' +
+    '⚠️ At the boards or in open ice, never turn your back to anyone coming at you and never ' +
+    'duck, however slowly they come. At the wall, skates parallel to it, forearm and ' +
     'hip, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
@@ -1037,14 +1041,20 @@ const theLastPlayerBack = {
     // the SAME spoken chunk, and the section's facts block in the chunk before carries it as
     // three Convention: lines. So it is cut here, and the caption's one ⚠️ now opens the wall
     // posture. The odd-man-rush conditional is kept: it is what the picture is for.
+    // 18 November 2026 (W465, 183 -> 145 words). Rendered: "Always." and the facts line "that
+    // prohibition has no exceptions" are in the SAME spoken chunk, just before the caption, and
+    // the coaching-choice paragraph ("some want defencemen to skate the puck out") is the next
+    // chunk. So "always" and "a conditional, not a ban on carrying" are cut here; the
+    // conditional itself and the wall posture stay. Diagram review then found "so the move is
+    // off" heard alone reads as "do not carry": it now names the move and says carrying is still
+    // on, as the coaching-choice paragraph allows. Both seams there end in full stops, not a dash
+    // or a semicolon. "Fellow skaters", not "teammates": the goalie, a teammate, IS behind you.
     'You are the last player back, with your own net at the left. You have the puck in the ' +
     'neutral zone, two of their forwards are up on you, and the shaded ice behind you holds ' +
-    'only your goalie. Lose the puck here and the two of them go the other way with nobody but ' +
-    'the goalie in front of them. So this is a conditional, not a ban on carrying: if losing ' +
-    'the puck means an odd-man rush against you, the move is off, always. The shading is what ' +
-    'is behind you now, not a prediction of the rush. Two teammates are drawn up the ice and ' +
-    'two are not drawn; what makes this the situation is that none of the four is behind you. ' +
-    'You are drawn as a defenceman, but it can be anyone. ' +
+    'only your goalie. Lose it here and both go the other way with only the goalie to beat, so ' +
+    'trying a move is off here. Carrying the puck is not. The shading is what is behind you ' +
+    'now, not a prediction. None of your four fellow skaters is behind you. Two are drawn up ' +
+    'the ice. You are drawn as a defenceman, but it can be anyone. ' +
     // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep: the full posture belongs
     // where the page is ABOUT board contact). The host section, puck_handling.md "When you are
     // the last player back", is open-ice puck carrying in the neutral zone; the full posture lives

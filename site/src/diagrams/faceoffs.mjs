@@ -288,7 +288,7 @@ const dzoneAlignment = {
     // encroachment rule beside the marker; center.md, defender.md and game_management.md voice
     // none, and how_to_watch_hockey.md:266 sends the reader to THIS caption for the circle-line split.
     'The NHL, the IIHF and the PWHL allow a skate on ' +
-    'the line and make crossing it the violation (NHL and IIHF Rule 76.7, PWHL Rule 78.7); ' +
+    'the line and make crossing it the violation; ' +
     'Hockey Canada and CARHA count a skate on the circle as encroachment; and USA Hockey’s ' +
     'Casebook requires all sticks and skates completely behind the hash marks. ' +
     // ✅ IHUK IN-HOUSE RULE 76 CHECKED W33 AND CHANGES NOTHING HERE. The 2026-27 In-House
@@ -336,9 +336,13 @@ const dzoneAlignment = {
     // flat "shall be ejected" (hc.txt :4586-4594, carha_2026.txt :2726). The "usually"
     // limb is KEPT because game_management.md, defender.md and faceoffs.md voice no
     // centre-loses-the-draw consequence in the caption's chunk or either neighbour (W321 render).
-    'Contact with an opponent before the drop is a violation in its own right under those NHL, ' +
-    'IIHF and PWHL rules, where it usually costs your centre the dot; under Hockey Canada ' +
-    'Rule 6.2(a) and CARHA Rule 57(a), contact by anyone but the taker always does. ' +
+    // ✂️ W465 (18 November 2026): rule numbers dropped from the voiced split and contact limb
+    // (NHL and IIHF 76.7, PWHL 78.7; contact NHL/IIHF 76.7(iii), PWHL 78.7(iii), HC 6.2(a),
+    // CARHA 57(a) -- cited in the notes above). Every book and every price is still named;
+    // "those ... rules" pointed at the dropped citations, so the contact limb now names its books.
+    'In the NHL, IIHF and PWHL, contact with an opponent before the drop is itself a violation ' +
+    'that usually costs your centre the dot; under Hockey Canada and CARHA, contact by anyone ' +
+    'but the taker always does. ' +
     // ⚠️ W361 (16 November 2026): INSTRUCTION LAST, SO THE AMBER IS ONLY THE INSTRUCTION.
     // `captionNodes` makes everything from the first ⚠ to the END of the caption one amber run.
     // W33 put the instruction first, which still left a 776-char amber run (the book split and
@@ -354,8 +358,8 @@ const dzoneAlignment = {
     // which was inert inside the same run, is gone. Speech unchanged — one "Important." per
     // caption whichever glyph carries it.
     '⚠️ If you are not taking the ' +
-    'draw, keep your skates and stick behind your own hash mark, your skates off the circle ' +
-    'line, and your hands, body and stick off the opponent beside you and off their stick: that satisfies every book.',
+    'draw, keep your skates and stick behind your hash mark, your skates off the circle ' +
+    'line, and your hands, body and stick off the opponent and their stick: that satisfies every book.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the right-hand ' +
@@ -939,11 +943,14 @@ const strongSideDot = {
   caption:
     // ✂️ W290, 11 November 2026 (1,015 -> ~895): the picture description only. The book-by-book
     // choice of dot is kept verbatim -- faceoffs.md chunks 018-020 voice none of it.
+    // ✂️ W465 (18 November 2026): picture narrative compressed and "the safest place it can go"
+    // cut -- faceoffs.md's strong/weak-side bullets voice "safest part of the ice" and "worst place
+    // it can go" in the chunk before the caption's. "That difference is what makes a choice of dot
+    // worth more than it looks" cut -- the bullet straight after the marker says it, in the
+    // caption's own chunk. The book-by-book choice of dot is kept verbatim.
     'Which of the two circles in your own end is your strong side. The same centre makes the same ' +
-    'backward pull on the backhand at each circle, so the puck goes to the same side of their body, ' +
-    'and of the ice, both times.' +
-    ' At one circle that is toward the boards, the safest place it can go; at the other it is' +
-    ' toward the middle, and a defensive-zone draw won into the slot ' +
+    'backhand pull at each circle: at one it sends the puck toward the boards, at the other toward ' +
+    'the middle, and a defensive-zone draw won into the slot ' +
     // SHORTENED 8 November 2026 (1,244 chars). Cut: the self-test sentence and the reason no
     // handedness is drawn -- both voiced in the paragraph directly above the marker
     // (faceoffs.md:389, the Flagged note: the sources give no reference frame, and the self-test
@@ -956,12 +963,11 @@ const strongSideDot = {
     // end zone dot"), and the words `faceoff-where-the-draw-goes` and faceoffs.md's body use. The old
     // paraphrase named a test neither book writes; in the icing, power-play and 63.8 cases the two
     // describe the same team, so this is a consistency fix, not a reversal.
-    'is barely better than a loss. That difference is what makes a choice of dot ' +
-    'worth more than it looks — and only some books give one: the NHL and the IIHF to the attacking ' +
+    'is barely better than a loss. Only some books give a team the choice of dot: the NHL and the IIHF to the attacking ' +
     'team, USA Hockey none at all, and Hockey Canada only after an icing or a ' +
     'time penalty, only in Junior and Senior divisions, and only to the attacking non-offending team,' +
     ' which loses it unless it tells the referee the dot it wants before the line change procedure ' +
-    'starts (Rule 6.4(b)). No handedness is drawn here and none should be read into it.',
+    'starts (Rule 6.4(b)). No handedness is drawn here, so read none into it.',
 
   describe:
     'The defending half of the rink, your own net and goalie at the right, both end-zone ' +

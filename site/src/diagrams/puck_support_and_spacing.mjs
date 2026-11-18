@@ -288,6 +288,9 @@ const supportDistance = {
   // distances scale and angles do not". That is a rink-size caveat rather than a book
   // scope, and the owner's own distance table states all of it — but it is the one cut
   // here that a reviewer should look at again.
+  // ✂️ W465, 18 November 2026: provenance still untouched. Cut only the picture sentence's
+  // wording and "real"/"right". "That defender" became "a defender": no opposition player
+  // is drawn, so the caption pointed at nothing in the picture.
   caption:
     'Support has a working range, drawn here as a band of ice around a carrier on the half-wall rather ' +
     'than as a spot, because it travels with the puck. The range is eight to ten feet ' +
@@ -296,10 +299,10 @@ const supportDistance = {
     'coaching rule of thumb rather than a rule of hockey, because no governing body has been found to ' +
     'set a support distance as a standard and coaches differ — read that as none found, not as none ' +
     'existing. ' +
-    'One teammate stands inside the band and is an option; the other is inside its inner edge, which ' +
-    'is supporting too close. ' +
-    'The real self-test is time, not distance — if your teammate released the puck right now, would it ' +
-    'reach you before that defender does?',
+    'One teammate inside the band is an option; the other, inside its inner edge, is supporting too ' +
+    'close. ' +
+    'The self-test is time, not distance — if your teammate released the puck now, would it reach you ' +
+    'before a defender does?',
 
   describe:
     'The attacking half of the rink, the net at the right. A puck carrier stands on the right-hand ' +
@@ -428,16 +431,19 @@ const supportAngles = {
   // caption: the offside definition and that book split. Kept: the "trail skate on the
   // ice, onside under every book" instruction. The own-zone limb is compressed, not cut:
   // it keeps the slot, the point-blank reason and "behind your net".
+  // ✂️ W465, 18 November 2026: wording only, every limb kept. The own-zone limb MUST stay:
+  // passing_and_receiving.md does not voice it anywhere near its marker. The trail-skate
+  // limb is now its own sentence, so "with the trail skate" no longer reads as describing
+  // the parking.
   caption:
     'One instance of the three support angles, drawn around a carrier in the neutral zone attacking to ' +
     'the right: one teammate behind the puck, one level with it across the ice, one ahead of it. ' +
-    'Behind is the outlet — a low-risk reset, and the option that still exists when the other two are ' +
-    'covered. ' +
-    'Level changes the side of the ice, which is a normal, high-value play in the neutral and offensive ' +
-    'zones; in your own defensive zone the lateral option goes behind your own net, not across the ' +
+    'Behind is the outlet — a low-risk reset that still exists when the other two are covered. ' +
+    'Level changes the side of the ice, a normal, high-value play in the neutral and offensive ' +
+    'zones; in your own zone the lateral option goes behind your own net, not across the ' +
     'middle through the slot, where an interception is a point-blank chance. ' +
-    'Ahead gains ground and is the most interceptable, and at the blue line it needs the receiver to ' +
-    'time their entry rather than park in the zone, with the trail skate on the ice at or behind the ' +
+    'Ahead gains ground and is the most interceptable, and at the blue line the receiver times their ' +
+    'entry rather than parking in the zone. Keep the trail skate on the ice at or behind the ' +
     'line, which is onside under every book. ' +
     'A team needs all three at once.',
 
@@ -688,11 +694,14 @@ const battleSupport = {
     // clause left for a listener to hear as permission, so the "none of this" cover went too.
     // The picture sentence, both exceptions, the posture, all three prohibitions and the
     // checking-from-behind rule sentence are unchanged in meaning.
-    'Your teammate is pinned on the boards with the puck. The support player stays out, in open ' +
-    'ice about five metres away with their stick down so the puck has an exit, and their own ' +
-    'checker stays with them instead of joining the pile. ' +
-    'Two exceptions send you in: a genuine fifty-fifty scramble that nobody has, and a team that ' +
-    'assigns a second player to the wall — so find out whether that is your job. ' +
+    // ✂️ W465, 18 November 2026: wording only. The checker sentence now uses the host's own
+    // mechanism ("brings their checker"); the checking-from-behind sentence uses the host's
+    // own scope ("even in non-checking hockey") and the facts line's "play the puck at their
+    // feet" closes the amber. Every limb, both exceptions and "find out" are kept.
+    'Your teammate is pinned on the boards with the puck. The support player stays out in open ' +
+    'ice about five metres away, stick down as an exit, and brings their checker out with them. ' +
+    'Two exceptions send you in: a genuine fifty-fifty scramble nobody has, and a team that ' +
+    'assigns a second player to the wall — find out if that is you. ' +
     // ⚠️ THIS IS THE ONE CAPTION IN THE CORPUS THAT SENDS A READER *INTO* A WALL BATTLE, and it
     // was the one with no arrival posture on it. `winger-dz-rim`, `winger-dz-reverse` and
     // `off-wing-open-to-the-ice` all carry the warning, so the form already existed and this was
@@ -729,7 +738,7 @@ const battleSupport = {
     // never after a prohibition) now precedes the glyph as plain text; the amber opens on the
     // two absolutes and keeps the from-behind limb and its checking-from-behind sentence, which
     // no other amber on the host page carries.
-    'And if you do go in, how you arrive outranks winning the puck. ' +
+    'If you go in, how you arrive outranks winning the puck. ' +
     'Skates parallel to the wall, forearm and hip to it, ' +
     'head up and chin off your chest' + SHOULDER_TAIL +
     ' ⚠️ Never turn your back to ' +
@@ -741,9 +750,8 @@ const battleSupport = {
     // allowed". Adding it made "neither prohibition" a wrong count, so the count became "none of
     // this", the body's own phrase, in the same edit (see rules_primer.mjs, which names this
     // dependency).
-    ' Never push or hit the opponent on the wall from behind. Go for the puck at their feet. ' +
-    'A push from behind into the boards is checking from behind even where body checking is not ' +
-    'allowed.',
+    ' Never push or hit the opponent on the wall from behind. Even in non-checking hockey, that is ' +
+    'checking from behind. Play the puck at their feet.',
 
   describe:
     'The attacking half of the rink, the net at the right. An own-team forward is on the right-hand ' +

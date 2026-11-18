@@ -240,15 +240,13 @@ const decisionDrill = {
 
   caption:
     'The second frame: the same instant, with exactly one ' +
-    'player added, standing in the lane the pass was going to travel down. Nobody has moved. And ' +
-    'there is no route drawn in this ' +
-    'picture at all, which is the point of it rather than an omission — the answer has left the ' +
-    'frame. One defender allowed to take away one option turns a drill that ' +
-    'trains execution into one that trains a decision. That is a coaching approach and not a rule ' +
-    'of hockey, and not the only one: shrinking the space, shortening the clock or playing a ' +
+    'player added, standing in the lane the pass was going to travel down. No route is drawn ' +
+    'in this picture at all. That is the point of it: the answer has left the frame. ' +
+    'Adding a defender is a coaching approach, not a rule ' +
+    'of hockey. Shrinking the space, shortening the clock or playing a ' +
     'small-area game do similar work. Ask your coach which one a drill is ' +
-    'using. ⚠️ The defender drawn here is a passive one, allowed to take away a single option and ' +
-    'nothing else. How hard a defender may compete in a drill, and whether body checking is ' +
+    'using. The defender drawn here is a passive one, allowed to take away a single option and ' +
+    'nothing else. ⚠️ How hard a defender may compete in a drill, and whether body checking is ' +
     'permitted at all, depends on your age group, your league and the book they play under, and no ' +
     'picture can tell you that.',
 
@@ -356,7 +354,8 @@ const REP_PUCK = { at: 'neutral-dot:right:far', dx: 1.3, dy: 2.4 };  // (-18.7, 
 // this picture is literally OF: five people standing still against the boards while a puck
 // is live on the same sheet. ⚠️ "Head up / loose pucks" existed in exactly ONE layer of the
 // whole document — that single bullet — so a listener who heard the caption heard the
-// cheaper warning and not the dearer one. Head up now leads, and Key Takeaways carries it.
+// cheaper warning and not the dearer one. Head up now carries the glyph and the "Above all",
+// and is the last thing said; Key Takeaways carries it too.
 const theLine = {
   id: 'practice-the-line-and-one-rep',
   title: 'Line drill: one skater, five waiting',
@@ -374,6 +373,9 @@ const theLine = {
   // move is that "the next picture" is no longer the last thing said, which is the right
   // trade: the warning names "that line", and the next caption opens "Nobody is queuing".
   // ⚠️ THE ORDER IS LOAD-BEARING. Shortening this caption must not move the glyph earlier.
+  // ⚠️ REORDERED 18 Nov 2026 (W465): feet-moving now sits BEFORE the glyph, unmarked, and
+  // head-up comes after it, last, as the only amber clause. The glyph moved LATER, not earlier,
+  // and head-up keeps the escalation ("Above all" carries "the one that hurts people").
   // ⚠️ Kept OUT of the string run on purpose: a // line inside `caption:` ends the run for
   // check_caption_negations.py's CAPTION regex, which then scans only the prefix. It sat
   // mid-run until the caption was shortened, so that checker had been reading a prefix here.
@@ -390,19 +392,16 @@ const theLine = {
   // last, because the host's only other voicing of either bullet is §"While you're queuing"
   // (:391, :393), several chunks away, and KT8 (:662) at the end of the document.
   caption:
-    'A full-ice drill on the whole two-hundred-foot sheet at one instant: six skaters, one ' +
+    'A full-ice drill at one instant: six skaters, one ' +
     'carrying the puck up the ice and five standing in a line ' +
     'against the boards waiting their turn. No goalie and no opponent are drawn, so ' +
     'nothing can surprise the player taking the rep. ' +
     'It teaches a pattern; this is not a badly run practice, but it is expensive in ' +
     'time. How a ' +
     'practice is built is your coach’s call; what is yours is what you do while you ' +
-    'wait. ⚠️ Two ' +
-    'things about standing in that line, and the first one is the one that hurts people: keep your ' +
-    'head up, because a practice has loose pucks flying and a line against the boards is exactly ' +
-    'where they arrive. The second is that standing ' +
-    'still for long stretches in cold air is how people pull something on their next hard rep, ' +
-    'so keep your feet moving too.',
+    'wait. Keep your feet moving: standing still for long stretches in cold air is how people ' +
+    'pull something on their next hard rep. ⚠️ Above all, keep your head up, because a practice ' +
+    'has loose pucks flying and a line against the boards is exactly where they arrive.',
 
   describe:
     'The full two-hundred-foot sheet, with no opposition and no goalie drawn. Five own skaters ' +
@@ -511,10 +510,9 @@ const smallAreaGame = {
   // but it is a different claim (yours to decide) from this one (age group, league, book), and
   // this is the one route in the file that arrives on a person.
   caption:
-    'The same six skaters, now playing three against three in one end zone, with one puck and ' +
-    'one net, which your three attack and a goalie defends. All six are in the play, none more ' +
-    'than about forty-five feet from the puck, and ' +
-    'the opponent has not been told what they will do. ' +
+    'The same six skaters, now three against three in one end zone: your three attack the net ' +
+    'a goalie defends. All six are in the play, none more ' +
+    'than about forty-five feet from the puck. ' +
     // ⚠️ THE ROUTE SENTENCE AND ITS SAFETY SENTENCE MOVED TO THE END AS A PAIR, AND THEY
     // HAVE TO MOVE TOGETHER. The glyph used to sit a third of the way in, so the amber band
     // ran 1,416 characters: it opened on the contact caveat and then painted ~1,100
@@ -534,9 +532,9 @@ const smallAreaGame = {
     'Everything about this setup is a coaching choice, not a law of hockey: the ' +
     'numbers, the area, whether there is a goalie, what each team scores on and what constraint ' +
     'is added. One of ' +
-    'the six is closing on the puck carrier on the wall, and their route ends in two short bars, ' +
-    'not an arrowhead: they arrive and contain rather than skating through. ⚠️ That is all the ' +
-    'picture says about how they arrive, on purpose: how hard anyone may compete for a puck, and ' +
+    'the six is closing on the carrier on the wall, and their route ends in two short bars, ' +
+    'not an arrowhead: they arrive and contain rather than skating through. That is all the ' +
+    'picture says about how they arrive, on purpose. ⚠️ How hard anyone may compete for a puck, and ' +
     'whether body checking is allowed at all, depends on your age group, your league and the ' +
     'book it plays under, and no diagram can tell you that.',
 
