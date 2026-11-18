@@ -163,7 +163,7 @@ Convention: The weak-side winger covers the weak-side point and collapses into t
 Rule: Pin the puck, never the player — a pin with your arms can be holding in every book (USA Hockey 622 Note), no book caps boarding at a minor, and IIHF 101.1 makes pinning her on the boards an illegal hit
 Rule: Pin the puck only until help arrives, never to get play stopped — under USA Hockey, holding it against the boards for three seconds is a minor, help coming or not, pressured or not (Rule 632(b); Casebook Rule 632, Situation 6)
 Never: Arrive into the back of a player facing your end boards. Take the puck, take the ice, or angle them off it instead
-Rule: Pull up on a turned back — checking from behind is never just two minutes (under the IIHF or Hockey Canada a head hit can be, but plan on ejection), and in most books ends your game; under USA Hockey too if forceful at the boards, head first into boards or net, or reckless (608; Casebook 608 Sit. 1)
+Rule: Pull up on a turned back — checking from behind is never just a minor (IIHF or Hockey Canada head hits can be: plan on ejection) and ejects in the NHL, PWHL, CARHA and Hockey Canada (IIHF: plan on it); USA Hockey if forceful at the wall, head first or reckless, else at least minor + misconduct (608)
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 ```
 

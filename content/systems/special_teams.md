@@ -656,7 +656,7 @@ Rule: Where body checking is barred, going into the receiver when the puck arriv
 Goal: Make them dump it; force three failed entries and the penalty is over without you ever defending your own zone
 Never: Lunge or dive at the blue line — a missed poke check at your own line is a clean entry with you out of the play
 Read: Pressure only if you can actually get there, the carrier is looking down or facing the boards, you are fresh, and the score allows it
-Rule: Angle to the puck, not the back — a hit from behind ejects (Hockey Canada always; IIHF and head contact: plan on it); USA Hockey only if forceful at the boards, head first or reckless, else at least minor and misconduct; defenceless into boards or net, a mandatory match in Hockey Canada and CARHA
+Rule: Angle to the puck, not the back — a hit from behind ejects (Hockey Canada always; IIHF and head contact: plan on it); USA Hockey if forceful at the boards, head first or reckless, else at least minor and misconduct; defenceless into boards or net, a mandatory match in Hockey Canada and CARHA
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Rule: From behind on the head: 43 writes no minor (43.2), so plan on a major and game misconduct — in the NHL and PWHL the harsher of 43 and 48, in the IIHF though 48.2 is a minor. Hockey Canada: head contact (7.6; 7.7), a mandatory match if defenceless; plan on at least 7.5's minor and game misconduct
