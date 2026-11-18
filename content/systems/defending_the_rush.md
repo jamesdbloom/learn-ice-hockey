@@ -322,7 +322,7 @@ Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly 
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Rule: Your blade goes in the passing lane, not on your man — NHL and IIHF 56.1 and PWHL 57.1 grant body position to lengthen their path to the puck on three conditions: stick not utilized, free hand not used, and no otherwise illegal check delivered off that position
 Rule: Hockey Canada 7.4(v) makes a body check to a blind side charging in every division — Interpretation 2: an open-ice check from outside a 90° view of a vulnerable opponent, "whether or not the player has the puck". 7.4(b) a major and game misconduct, mandatory on injury; 7.4(c) a match penalty
-Rule: USA Hockey 625 makes blocking a non-carrier (picks, lane or speed changes to play the body) an interference minor; hits may be roughing (640) or from behind (608), ejecting if reckless, forceful at boards or head first into boards or net; reckless, plan on a match; meant to injure, a match (602(a))
+Rule: USA Hockey 625: a pick, or lane or speed change to hit a non-carrier: an interference minor; reckless roughing (640), or a hit from behind (608) if reckless, forceful at boards or head first into boards or net, is major + game misconduct; reckless, plan on a match; meant to injure, a match (602(a))
 Options: If you are genuinely beaten and can only chase, chase the stick — blade under theirs or on the puck, never reaching around their body, which is a hook or a trip
 Risk: Reaching around their body from behind is a hook or a trip, and near your own net that gets expensive
 ```
