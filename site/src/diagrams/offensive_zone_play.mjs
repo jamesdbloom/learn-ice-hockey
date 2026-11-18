@@ -1139,7 +1139,14 @@ const cycleReverse = {
     'skated past the carrier, momentum carrying them on toward the end boards. The ice the checker ' +
     'just left is back up the wall, so the puck goes against the flow into that space, to a ' +
     'teammate arriving on the half-wall behind the play. A still picture cannot draw ' +
-    'momentum — read the checker as past and unable to stop, and call for it. Ranking the wrong ' +
+    // ⚠️ WHO CALLS, W458 (18 November 2026), diagram review: this said "read the checker as past
+    // and unable to stop, and call for it", addressed to the CARRIER (the reader who makes the
+    // read), so it had the carrier calling. on_ice_communication.md :159 has "reverse" "Said by a
+    // teammate arriving behind the carrier", and :345 has it "called to the retriever"; the host,
+    // offensive_zone_play.md's low-to-low paragraph above :394, passes "to a teammate arriving
+    // behind them". "Do not reverse on hope" is passing_and_receiving.md :194/:219.
+    'momentum. Read the checker as past and unable to stop, and reverse it when the teammate ' +
+    'arriving behind you calls for it — without that call, do not reverse on hope. Ranking the wrong ' +
     'read as a leading cycle turnover is coaching craft rather than a measurement, because ' +
     'nobody has counted cycle turnovers by cause. ⚠️ And ' +
     'whichever one is on, this is a wall battle: never turn your back to anyone coming at you and never ' +

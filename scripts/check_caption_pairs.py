@@ -9,8 +9,9 @@ WHY IT EXISTS
 -------------
 Some captions were trimmed on the assumption that a sibling caption is spoken
 IMMEDIATELY BEFORE them in every host. ``forecheck-212-stacked`` is the first:
-its caption dropped the USA Hockey 604(a)/(b) and Hockey Canada 7.3 enumeration
-because ``forecheck-212``'s caption carries it word for word and is the
+its caption dropped the body-checking enumeration (USA Hockey, Hockey Canada,
+IHUK, CARHA; the shared ``CHECKING_BARRED_WHERE`` constant since W457, which
+prints no rule numbers) because ``forecheck-212``'s caption carries it word for word and is the
 preceding spoken chunk in both hosts (SG66; see the comment on the caption in
 ``site/src/diagrams/forechecking_systems.mjs``). That comment says *"If either
 host ever stops embedding forecheck-212 straight before this diagram, the
@@ -77,8 +78,8 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         "forecheck-212",
         None,
         "caption trimmed 24 Oct 2026 (SG66): the 'how a forechecker finishes an angle' "
-        "disclosure and the USA Hockey 604(a)/(b) / Hockey Canada 7.3 enumeration live "
-        "only in forecheck-212's caption",
+        "disclosure and the body-checking enumeration (CHECKING_BARRED_WHERE, since "
+        "W457) live only in forecheck-212's caption",
     ),
     (
         # Host-scoped: the shared SAFETY SCOPE comment on forecheck-122 says that in
@@ -88,8 +89,9 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         "forecheck-122",
         "forecheck-212",
         ("content/off-the-ice/how_to_watch_hockey.md",),
-        "safety scope shortened 22 Oct 2026: drops the USA Hockey 604(a)/(b) / Hockey "
-        "Canada 7.3 enumeration that forecheck-212's caption voices just before it",
+        "safety scope shortened 22 Oct 2026 and again W456: drops the body-checking "
+        "enumeration, the may-you-check prompt and the positive onus that "
+        "forecheck-212's caption voices just before it",
     ),
 ]
 

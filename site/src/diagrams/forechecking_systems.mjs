@@ -34,6 +34,11 @@ const CARRIER = { at: 'behind-net', dy: 6 };               // (94, 6)
 // Hockey UK U10/U12, the Women's NIHL or CARHA before the 2-1-2 marker), and rink_map.md voices
 // none of it beside forecheck-roles-rotate. So it is KEPT in all three, and the gap is reported
 // for routing into host prose rather than cut.
+// W458 (18 November 2026): forecheck-2-3-lock NO LONGER uses this constant. Its sole host now
+// voices the complete list before the forecheck-212 marker, so the 2-3-lock caption keeps only
+// the find-out prompt. forecheck-212 and forecheck-roles-rotate still carry it, unchanged: their
+// other hosts (winger, center, game_management, how_to_watch_hockey, rink_map) do not voice it,
+// and cutting it there needs a separate safety ruling.
 const CHECKING_BARRED_WHERE =
   ' at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
   'hockey and whenever a checking team plays a non-checking one, and lets a local governing body ' +
@@ -1398,8 +1403,16 @@ const forecheck23Lock = {
     // voices 604(a)/(b) and 7.3 in its 2-1-2 section and points back to it from the paragraph above
     // this marker, but voices the local opt-out nowhere and Ice Hockey UK U10/U12 and the Women's
     // NIHL only after the marker (the pinch section and What it costs). Reported for routing.
-    'team plays. USA ' +
-    'Hockey bars body checking' + CHECKING_BARRED_WHERE + ' ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division.',
+    // W458 (18 November 2026): the enumeration is CUT from this caption only. The host,
+    // forechecking_systems.md, now voices the complete list in the paragraph before the
+    // forecheck-212 marker (chunk 022 when rendered this session: 604(a) with the girls' and
+    // women's and non-check limbs, 604(b), the local opt-out, HC 7.3, Ice Hockey UK U10/U12 and
+    // the Women's NIHL, CARHA 49(a)), and the paragraph directly above this marker (chunk 032,
+    // this caption's own chunk) voices the onus limb and "find out first whether you may body
+    // check in this game at all", pointing back to 2-1-2. The find-out prompt stays here as the
+    // instruction. CHECKING_BARRED_WHERE is UNCHANGED and still used by forecheck-212 and
+    // forecheck-roles-rotate, whose other hosts do not voice the list.
+    'team plays. ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +

@@ -488,27 +488,33 @@ const wingerHighThenWall = {
   half: true,
   width: 900,
 
+  // ✂️ W458 (18 November 2026), 187 -> 140 words. Two hosts, both rendered this session:
+  // winger.md :186 (chunk 012; chunk 011 directly before voices the collapse / man-on-man /
+  // hybrid choice and "Find out which one your team plays", and chunk 012-013's facts and body
+  // voice the swing / flat / stretch Convention) and switching_positions.md :184 (chunk 013;
+  // chunk 012 voices the collapse job, man-on-man, the two senses of "stay high", and "a system,
+  // not a law ... Ask which yours plays"). CUT as restatement only: "not halfway to the corner",
+  // "rather than a rule of hockey" (the "coaching choice" disclosure stays), "It expires the
+  // moment ... but do not leave the point until the battle is actually won" became "Stay high until
+  // your team actually wins ...; then come down" (no negation left to run on, per
+  // check_caption_negations). KEPT every limb: the position, the
+  // collapse-vs-man-on-man choice with its find-out, the "do not leave until won" timing, and
+  // the swing / flat / stretch choice with its find-out. No rule or safety limb in this caption.
   caption:
-    'A winger’s defensive-zone job, drawn at both ends of the one move that defines it. While the ' +
-    'other team has the puck you are high on your side, level with the opposing defenceman you are ' +
-    'covering and between them and the slot — that is what "stay high" means, not halfway to the ' +
-    'corner. ' +
-    // The hedge on the DEFENSIVE half of the picture. The caption used to hedge only
-    // the breakout half, which left the thing the diagram spends most of its ice on —
-    // a winger staying up out of the corner battle drawn beneath him — reading as a
-    // law of hockey. It is not: it is the low zone collapse job. Wording follows
-    // winger.md's own Convention line and the sibling captions on
-    // centre-low-zone-collapse, dz-collapse-corner and dz-walk-down-zone.
-    'Staying high out of the corner rather than going down into it is the low zone collapse job, a ' +
-    'coaching choice rather than a rule of hockey: under man-on-man you follow your man wherever they ' +
-    'go, corner included, so find out which one your team plays. It expires the moment your team ' +
-    'wins the battle below you, and you come down the wall to between the hash marks and the goal ' +
-    'line, stick on the ice and feet already moving — but do not leave the point until the battle is ' +
-    // W33: stretch / flying-winger limb added — both hosts carry it (winger.md :29/:64/:175
-    // facts, switching_positions.md :138) and the caption alone omitted it.
-    'actually won. That wall position belongs to the conventional swing breakout: a flat or spread ' +
-    'structure asks you to hold higher toward the blue line, and a stretch sends one winger up ice ' +
-    'instead, so find out which one you are in.',
+    'A winger’s defensive-zone job, drawn at both ends of one move. While the other team has the ' +
+    'puck you are high on your side, level with the opposing defenceman you cover and between ' +
+    'them and the slot. Staying high out of the corner is the low zone collapse job, a coaching ' +
+    'choice: under man-on-man you follow ' +
+    'your man wherever they go, corner included, so find out which your team plays. Stay high until ' +
+    'your team actually wins the battle below you; then come down the wall to between the hash ' +
+    'marks and the goal line, stick on the ice and feet already moving. That trip belongs to the ' +
+    'conventional swing breakout: a flat or spread structure holds you higher toward the blue ' +
+    'line, and a stretch sends one winger up ice instead, so find out which one you are in.',
+  // Earlier notes, still binding: the collapse hedge covers the DEFENSIVE half of the picture
+  // (a winger staying up out of the corner battle drawn beneath him), wording after winger.md's
+  // own Convention line and the sibling captions centre-low-zone-collapse, dz-collapse-corner and
+  // dz-walk-down-zone; and the stretch / flying-winger limb (W33) is carried by both hosts and
+  // must not leave the caption while either host embeds it.
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition players: a ' +
@@ -641,8 +647,18 @@ const wingerOffensiveZone = {
     //   · the post limb's USA Hockey attribution, cervical-spine and walking-speed wording — the
     //     body paragraphs right after the marker (next chunk). "anything but your head first"
     //     stays as the instruction.
-    'Where a winger works in the offensive zone. The half-wall, level with the faceoff dot, is ' +
-    'your home base; your own circle is where a cross-ice one-timer arrives; the side of the net ' +
+    // ✂️ W458 (18 November 2026), 191 -> 186 words. Sole host winger.md :474, rendered this
+    // session: the caption is chunk 028; the paragraph directly before it in the same chunk voices
+    // the high slot and "Which of those your team asks for is a coaching choice, so find out", and
+    // chunk 027's facts voice the positions, the high-slot find-out, the two-clock timing, the
+    // near post and "never duck". The crease limb's host carrier ("Net-front and the crease") is
+    // chunk 030, two chunks on, so the screen limb STAYS here, and now reads "screen with no
+  // contact, and keep your feet out of" so "without" cannot be heard reaching the feet. CUT as restatement only: "no
+    // position owns it" (the find-out stays), "into one", and the opening sentence folded into
+    // the patch list. KEPT: both clocks with "well", the high-slot find-out, the "shoot first"
+    // disclosure, the screen limb, and the whole post limb with its every-league scope.
+    'Where a winger works in the offensive zone: the half-wall level with the faceoff dot is your ' +
+    'home base, your own circle is where a cross-ice one-timer arrives, and the side of the net ' +
     'is for rebounds and tips. Driving in from your circle or the wall, as drawn, arrive ' +
     'as the shot is taken rather than well before it; if the net front is your assignment, be ' +
     'planted there before the release. ' +
@@ -674,10 +690,10 @@ const wingerOffensiveZone = {
     // trailer (:754) all take it. It also contradicted its own host two lines above the marker:
     // content/positions/winger.md:430 reads "gives that upper layer to no position ... Which of
     // those your team asks for is a coaching choice, so find out." Non-negotiable 7.
-    'Stay out of the shaded high slot unless your team sends you there; no position owns it, ' +
-    'so find out who fills it. From the wall, lean toward the shot: "shoot first" is a bias, not ' +
-    'a rule. At the net front, screen without contact, feet out of the blue paint and ' +
-    'off the red crease line around it. ' +
+    'Stay out of the shaded high slot unless your team sends you there; find out who ' +
+    'fills it. From the wall, lean toward the shot: "shoot first" is a bias, not a rule. At the net ' +
+    'front, screen with no contact, and keep your feet out of the blue paint and off its red ' +
+    'edge. ' +
     // ⚠️ THIS SAID "every clause of Rule 69 that voids a goal for where you stood names the goal
     // crease, and 69.4, the rule for outside it, reaches contact only", hedged as a reading of
     // the rule's structure. FALSE ABOUT THE TEXT, and the hedge does not rescue an absolute a
@@ -725,7 +741,7 @@ const wingerOffensiveZone = {
     // ⚠️ NOT PROMOTED TO A SHARED CONSTANT. wall_contact_clauses.mjs owns the boards
     // posture and is not this round's to edit; this string is local and stays local.
     '⚠️ Know where the near post is before the shot, and arrive head up with your ' +
-    'chin off your chest: never meet a goal post head first, and never duck into one. A ' +
+    'chin off your chest: never meet a goal post head first, and never duck. A ' +
     'defender can walk you sideways into the frame, so take it with an arm, a leg, ' +
     'anything but your head first, in every league, checking or not.',
 
@@ -1173,14 +1189,25 @@ const wingerDzRim = {
   // now comes BEFORE the glyph, so the amber run (glyph to end of caption) is the two prohibitions
   // and the two injuries only, 222 chars instead of 402. SHOULDER_TAIL still follows the posture,
   // never a prohibition, and both hosts still voice the whole wall limb.
+  // ✂️ W458 (18 November 2026), 192 -> 162 words. Both hosts rendered this session: winger.md
+  // :117 (chunk 008; chunk 007 directly before voices "A rim beats a checker who is sealing you
+  // against the boards, because it goes past them" and "Make that pick before the puck is on
+  // your stick") and passing_and_receiving.md :209 (chunk 009; chunk 008's facts and table voice
+  // "Rim if they still have you pinned" and "A checker sealing you against the wall — the puck
+  // goes past them"). CUT as restatement: the why-the-puck-is-drawn-there clause (now an
+  // instruction, "as drawn"), "containing rather than chasing", "exactly", "not once you are
+  // pinned". KEPT WORD FOR WORD, for the reasons above: the feet-moving / pinned limb, and the
+  // WHOLE wall limb with SHOULDER_TAIL before the glyph and both prohibitions and the two
+  // injuries after it. passing_and_receiving.md :213 says "the wall-contact warning both
+  // captions carry", and that host voices neither prohibition nor "not the whole shoulder" near
+  // the marker, so the wall limb is the floor of any trim here.
   caption:
-    'Beating a checker who has sealed you against the boards, in your own end. Your body is between ' +
-    'the puck and the checker, which is why the puck is drawn on the far side of you from the pressure — but ' +
+    'Beating a checker who has sealed you against the boards, in your own end. Keep the puck on ' +
+    'the far side of your body from them, as drawn, and ' +
     'keep your feet wide and low and still moving: a stationary player on the wall gets pinned. The checker is' +
-    ' inside you, containing rather than chasing, so the ice they are taking away is the middle. That is' +
-    ' exactly the checker a RIM beats, because it goes where they are not. ' +
+    ' inside you, taking away the middle, so a RIM beats them because it goes where they are not. ' +
     'Decide where the puck is going while you are still skating to ' +
-    'it, not once you are pinned. Skates parallel to the boards, ' +
+    'it. Skates parallel to the boards, ' +
     'forearm and hip to the wall, head up and chin off your chest' + SHOULDER_TAIL +
     ' ⚠️ Rim or reverse, never turn your back to anyone coming at you and ' +
     'never duck. Those are two different injuries — a hit from behind you cannot brace for, and a ' +
@@ -1244,8 +1271,22 @@ const wingerDzReverse = {
   // and the two injuries only, 222 chars instead of 402. SHOULDER_TAIL still follows the posture,
   // never a prohibition, and both hosts still voice the whole wall limb.
   caption:
-    'Beating a checker who has over-committed, in your own end — the other half of the rim-or-reverse' +
-    ' decision. The checker has not sealed you: they have skated past you up the wall, carrying their momentum with' +
+    // ✂️ W458 (18 November 2026), 162 -> 135 words before the who-calls fix. Same two hosts as winger-dz-rim, rendered
+    // this session; both voice "A reverse beats a checker who has over-committed and skated past
+    // you, because it goes back into the space they just left" in the chunk before the marker
+    // (winger.md chunk 007; passing_and_receiving.md chunk 008's table). CUT as restatement: "the
+    // other half of the rim-or-reverse decision", "The checker has not sealed you", "carrying
+    // their momentum with them". KEPT: the reverse and the WHOLE wall limb as on winger-dz-rim,
+    // for the passing_and_receiving.md :213 reason recorded there.
+    // ⚠️ WHO CALLS, corrected W458 after diagram review: the caption had told the CARRIER to call
+    // ("Call for it ... because the teammate you are sending it to is looking the wrong way", and
+    // W458's first trim made it plainer). The owners say the RECEIVER calls:
+    // on_ice_communication.md :159 ("Said by a teammate arriving behind the carrier"), :345
+    // ("called to the retriever, not chosen by them") and breakouts.md :332 ("The receiving
+    // teammate must call for it"). "Do not reverse on hope" is passing_and_receiving.md :194/:219.
+    // The reviewer's sketch said "because you are facing the wall"; NOT written, because the
+    // posture limb in this same caption has the carrier side-on, skates parallel to the boards.
+    'Beating a checker who has over-committed and skated past you up the wall, in your own end.' +
     // SHORTENED 8 November 2026 (1,262 chars). Cut, each voiced beside the marker in BOTH hosts:
     // the gloss on what a reverse is (winger.md:113, :115; passing_and_receiving.md facts :189 and
     // the table at :200-205); "read which of the two you are facing before the puck arrives"
@@ -1255,9 +1296,9 @@ const wingerDzReverse = {
     // KEPT IN FULL: the whole wall limb (since W375 only the prohibitions and injuries follow the glyph; the posture and SHOULDER_TAIL precede it) -- passing_and_receiving.md:213 tells its
     // reader that "the wall-contact warning both captions carry" applies, so the caption must
     // carry it, and that host voices neither never-turn/never-duck nor "not the whole shoulder".
-    ' them. The ice they have just left is behind you, so the play that beats them is a REVERSE to a teammate ' +
-    'arriving behind you. Call for it — "reverse!" — because the teammate ' +
-    'you are sending it to is looking the wrong way. Skates parallel ' +
+    ' The ice they have just left is behind you, so the play that beats them is a REVERSE to a ' +
+    'teammate arriving there, and that teammate calls it — "reverse!" — because you cannot see them ' +
+    'behind you; without the call, do not reverse on hope. Skates parallel ' +
     'to the boards, forearm and hip to the wall, head up and chin off your chest' +
     SHOULDER_TAIL + ' ⚠️ Rim or reverse, never turn your ' +
     'back to anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot' +

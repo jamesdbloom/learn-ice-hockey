@@ -207,17 +207,25 @@ const wallDepthBySystem = {
   // (the header's guard against a five-forward picture), the three depths, and the
   // defensive-zone coaching-choice and low-zone-collapse disclosure (how_to_watch_hockey.md
   // voices it nowhere near its marker).
+  // ✂️ W458 (18 November 2026), 173 -> 140 words. Both hosts rendered this session:
+  // winger.md :82 (chunk 006; chunk 005 directly before voices all three depths and "Find out
+  // which one you're in") and how_to_watch_hockey.md :237 (chunk 014; chunk 013 directly before
+  // voices "Winger draws the same player at three depths on the wall, one for each of three
+  // breakouts" but not the depths themselves). CUT as restatement / picture-reading only: "and
+  // why there is no single answer", "The whole sheet", "the deepest of the three", "different",
+  // "than the others". KEPT, and they still bound any further trim: "only one is on the ice at a
+  // time", all three depths (how_to_watch_hockey.md does not voice them), the find-out, and the
+  // defensive-zone coaching-choice and low-zone-collapse disclosure.
   caption:
-    'Where a winger stands on the wall in their own end, and why there is no single answer. The whole ' +
-    'sheet, your own goal at the left, at the moment your defenceman has the puck behind your net. ' +
-    'Three wingers are drawn on the same boards and only one is on the ice at a time: the same player ' +
-    'under three different breakout structures. In the conventional swing breakout you come down ' +
-    'between the hash marks and the goal line, roughly level with the faceoff dot, the deepest of the ' +
-    'three. Under a flat or spread structure you hold higher up the same wall. Under a stretch or ' +
-    'flying-winger structure one winger leaves the zone altogether, drawn out past the centre red ' +
-    'line. None of the three is more correct than the others, so find out which one you are in. Where you ' +
-    'were standing a second earlier belongs to your team’s defensive-zone system rather than to its ' +
-    'breakout, and is a separate coaching choice; this guide assumes a low zone collapse there.',
+    'Where a winger stands on the wall in their own end, your goal at the left, at the moment ' +
+    'your defenceman has the puck behind your net. Three wingers are drawn and only one is on the ' +
+    'ice at a time: the same player under three breakout structures. In the conventional swing ' +
+    'breakout you come down between the hash marks and the goal line, roughly level with the ' +
+    'faceoff dot. Under a flat or spread structure you hold higher up the same wall. Under a ' +
+    'stretch or flying-winger structure one winger leaves the zone altogether, drawn past the ' +
+    'centre red line. None of the three is more correct, so find out which one you are in. Where ' +
+    'you stood a second earlier belongs to your team’s defensive-zone system, a separate coaching ' +
+    'choice; this guide assumes a low zone collapse there.',
 
   describe:
     'The full two-hundred-foot sheet, your own goal at the left and the attacking end at ' +
@@ -402,6 +410,9 @@ const leavesThePoint = {
  * That is a position, and positions are the one thing a rink draws. The
  * rule text sits in the caption, taken from the section's own ```facts
  * block and body, because a listener hears the caption and not the picture.
+ * (Since W458, 18 November 2026, only the rule that holds in every book --
+ * a dragged, touching skate is onside -- stays; the lifted-skate book split
+ * is voiced in the chunk directly before the caption.)
  *
  * ⚠️ NOT A DUPLICATE OF `nz-stand-up-at-the-line`. That one is owned by
  * neutral_zone_systems.md and is drawn for the DEFENDING team — it is about
@@ -508,16 +519,27 @@ const arrivingAtTheLine = {
   // is surprised does not absorb contact" (narrative; 022 voices "you cannot brace for a hit
   // you cannot see"). The rule NUMBERS 630(a) and 6.11 went; the book split is word for word
   // and names the same books 022 names. Both prohibitions and the two-injuries line are kept.
+  // ✂️ W458 (18 November 2026), 170 -> 137 words before the rules fix. Sole host winger.md :355, rendered this
+  // session: the caption is chunk 022, and chunk 021 directly before voices the stood-up
+  // defenceman, "A head up is the condition of the technique, not an extra — you cannot brace for
+  // a hit you cannot see", and the whole lifted-skate book split word for word, ending "so know
+  // which book is yours". CUT: that book split and its "Find out which book your league runs" —
+  // the instruction kept ("drag it with the blade in contact ... keeps you onside wherever you
+  // play") holds in every book, so the cut removes a permission and makes nothing cheaper.
+  // ⚠️ RULES-VERIFIER, W458: "in contact with the ice or the paint" let a skate dragged PAST the
+  // line read as onside. Now "touching the blue line or the ice on your side of it"; the full
+  // stop before "Drag" is the diagram reviewer's fix so "not drawn" cannot reach the drag. KEPT:
+  // the head-up condition (now led by the instruction, so the amber opens on it), BOTH
+  // prohibitions and the two-injuries line — the host does not voice the prohibitions in this
+  // section (the nearest are the O-zone facts, chunk 023).
   caption:
     'Arriving at the attacking blue line as a winger, with the zone you are entering at the right. ' +
     'The defenceman meeting you is stood up on their own line, defending the ice your body, your ' +
     'hands and your stick reach before your trailing skate does. The trail skate is not drawn. ' +
-    'Drag it and keep the blade in contact with the ice or the paint: a dragged, touching skate ' +
-    'keeps you onside wherever you play, while a lifted one is onside under the NHL, the IIHF and ' +
-    'the PWHL but offside under USA Hockey and Hockey Canada. Find out which book your league ' +
-    'runs. ⚠️ A ' +
-    'head up is the condition of the technique rather than an extra — you cannot brace for a hit you ' +
-    'cannot see. And never turn your back to ' +
+    'Drag it with the blade touching the blue line or the ice on your side of it, which keeps you ' +
+    'onside wherever you play. ⚠️ Keep your ' +
+    'head up — it is the condition of the technique, because you cannot brace for a hit you ' +
+    'cannot see — and never turn your back to ' +
     'anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot brace ' +
     'for, and a chin tucked to the chest, which does not need speed to do it.',
 
