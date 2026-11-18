@@ -30,6 +30,7 @@
 import { readdirSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { hideLabels } from '../src/drills/lib/draw.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const SRC = join(HERE, '..', 'src', 'drills');
@@ -74,7 +75,10 @@ for (const f of files) {
     const desc = /<desc[^>]*>([\s\S]*?)<\/desc>/.exec(d.svg);
     const alt = desc ? decode(desc[1]).replace(/\s+/g, ' ').trim() : '';
     if (!alt) throw new Error(`${where}: its SVG has no <desc>, so it would ship with no text alternative`);
-    svgs.set(d.id, prefixIds(d.svg, d.id));
+    // hideLabels again here, not only inside draw.mjs's svg(): figure.mjs and
+    // office_stick.mjs splice a legend in after svg() returns, and any module may.
+    // Idempotent, so the labels draw.mjs already treated are left alone.
+    svgs.set(d.id, prefixIds(hideLabels(d.svg), d.id));
     manifest[d.id] = { id: d.id, title: d.title, group: d.group, alt, svg: `/drills/${d.id}.svg`, file: f };
   }
 }

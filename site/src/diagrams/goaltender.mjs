@@ -122,7 +122,7 @@ const playingTheAngle = {
   width: 900,
 
   caption:
-    'An opposition shooter at the top of the right-hand faceoff circle, with no pass available. ' +
+    'An opposition shooter at the top of the faceoff circle on the goalie’s right, with no pass available. ' +
     'The shaded wedge is every straight path from that puck into the net. The goalie is ' +
     'standing on the line from the puck to the exact centre of the goal line, at a depth every ' +
     'goalie coach will adjust — so read it as an example of the read rather than a measured ' +

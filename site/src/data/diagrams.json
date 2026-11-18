@@ -842,7 +842,7 @@
   "goalie-playing-the-angle": {
     "id": "goalie-playing-the-angle",
     "owner": "content/positions/goaltender.md",
-    "caption": "An opposition shooter at the top of the right-hand faceoff circle, with no pass available. The shaded wedge is every straight path from that puck into the net. The goalie is standing on the line from the puck to the exact centre of the goal line, at a depth every goalie coach will adjust — so read it as an example of the read rather than a measured instruction.",
+    "caption": "An opposition shooter at the top of the faceoff circle on the goalie’s right, with no pass available. The shaded wedge is every straight path from that puck into the net. The goalie is standing on the line from the puck to the exact centre of the goal line, at a depth every goalie coach will adjust — so read it as an example of the read rather than a measured instruction.",
     "describe": "The attacking half of the rink, the defended net at the right. One opposition forward stands at the top of the right-hand faceoff circle, the goalie’s right, with the puck just off the blade toward the net. A shaded triangle runs from the puck to the two goalposts, narrowing from the width of the net at the goal line to a point at the puck. The goalie stands inside that triangle on its centre line, six feet out from the middle of the goal line, so slightly to the shooter’s side of the middle of the net rather than square in the goalmouth. No other players are drawn: the read this illustrates is the one with no pass available, and drawing a second attacker would change it into a different read.",
     "title": "Goalie playing the angle",
     "half": true,

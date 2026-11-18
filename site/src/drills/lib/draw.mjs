@@ -50,6 +50,25 @@ const tc = (c) => (c === COL.R ? COL.Rtext : c);
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const r = (n) => Math.round(n * PX * 10) / 10;
 
+/**
+ * Hide every drawn <text> from assistive technology, leaving <title> and <desc> as the
+ * drill's only accessible text. Same treatment as hideLabels in site/scripts/lib/rink.mjs.
+ *
+ * `role="img"` should make an SVG's children presentational, but Chrome still exposes each
+ * <text> in the accessibility tree after the description, so a screen reader can read step
+ * numbers, IN/OUT tags and legend words as noise after the <desc>, which already says it in
+ * sentences.
+ *
+ * ATTRIBUTE ONLY: nothing visual changes. Idempotent. The attribute goes FIRST so anything
+ * parsing `<text\b([^>]*)>` still sees every other attribute unchanged.
+ *
+ * Exported because figure.mjs and office_stick.mjs splice a replacement legend in AFTER
+ * svg() returns, so the call inside svg() cannot reach those labels.
+ */
+export function hideLabels(svg) {
+  return svg.replace(/<text\b(?![^>]*\baria-hidden=)/g, '<text aria-hidden="true"');
+}
+
 /** Start a diagram. Returns a builder; call .svg() at the end. */
 export function diagram({ title, w = 22, h = 11, legend = true, desc = '' } = {}) {
   const parts = [];
@@ -160,11 +179,11 @@ export function diagram({ title, w = 22, h = 11, legend = true, desc = '' } = {}
         for (const [gw, glyph, s] of keys) { g += glyph(x) + t(x + gw + gap, s); x += gw + gap + tw(s) + between; }
         leg = `<g>${g}</g>`;
       }
-      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W * PX} ${H * PX}" width="${W * PX}" height="${H * PX}" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">` +
+      return hideLabels(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W * PX} ${H * PX}" width="${W * PX}" height="${H * PX}" role="img" aria-labelledby="t" aria-describedby="d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">` +
         `<title id="t">${esc(title || '')}</title><desc id="d">${esc(desc)}</desc>` +
         `<defs>${arrows}</defs>` +
         `<rect x="2" y="2" width="${w * PX - 4}" height="${h * PX - 4}" rx="18" fill="${COL.ice}" stroke="${COL.rim}" stroke-width="3"/>` +
-        parts.join('') + leg + `</svg>`;
+        parts.join('') + leg + `</svg>`);
     },
   };
   return api;
