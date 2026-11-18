@@ -424,6 +424,7 @@ Technique: Pin the puck against the boards, not the player
 Rule: IIHF women's Rule 101.1 prohibits using the boards to eliminate an opponent from the play, push her into the boards, or pin her along the boards
 Rule: Do not hear the boards-pinning prohibition as a women's-hockey rule only — USA Hockey's holding rule reaches the same act for every player, naming "wrapping one or both arms around the opponent along the boards in a manner that pins them against the boards" (Rule 622 Note)
 Convention: A 2-1-2 sends two forwards deep and a 1-2-2 sends one, and F3 sits weak-side by default or puck-side in the stacked variant — find out which your team runs
+Action: If your defenceman pinches, the point they left is usually yours as F3 — get above the puck and hold the blue line until they are back. Some teams use the centre or the other defenceman, so ask
 Goal: Force a turnover or a bad outlet pass by trapping the carrier with no escape route
 Key: Forechecking is about angles, not speed. Stay in your role and trust your linemates to be in theirs
 ```
@@ -446,7 +447,7 @@ Your role depends on which side of the ice the puck is on, and on who got there 
 
 **What to do:**
 - **As F2:** Be F1's second support on the strong side. Seal the puck wherever F1 has angled it. **Pin the *puck* against the boards, not the player.** ⚠️ **Wrapping a player up against the boards is holding.** USA Hockey's holding rule names *"[w]rapping one or both arms around the opponent along the boards in a manner that pins them against the boards and prevents them from playing the puck or skating"*, for every player (Rule 622, Note). The IIHF's women's Rule 101.1 bars pinning her along the boards in a battle for the puck. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
-- **As F3:** Stay higher and read the play. Cover the weak-side breakout option and be ready to transition the moment the puck is won.
+- **As F3:** Stay higher and read the play. Cover the weak-side breakout option and be ready to transition the moment the puck is won. **If your defenceman pinches, the point they left is usually yours as F3: get above the puck and hold the blue line until they are back.** Some teams give that job to the centre or slide the other defenceman across, so ask who covers a pinch.
 
 **Goal:** Force a turnover or a bad outlet pass by trapping the puck carrier with no escape route.
 
