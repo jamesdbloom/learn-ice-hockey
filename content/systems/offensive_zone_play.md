@@ -15,7 +15,7 @@
 
 **Crash the net for the rebound, and decide to go before the shot.** The goalie is often down and the puck loose. Arrive with your stick on the ice, play the puck and not the goalie, and shoot it straight back.
 
-**Somebody is always above the puck.** The high forward is the safety at the top of the circle, so a rebound straight out is yours and a counter-attack goes through you. If a defenceman steps down, a forward fills the line.
+**Somebody is always above the puck.** The high forward is the safety at the top of the circle, so a rebound straight out is yours and a counter-attack goes through you. If a defenceman steps down, someone fills the line — usually a forward.
 
 **Keep the triangle and keep moving.** One forward below the puck, one level, one above, so the carrier always has two passing options — and one forward always in, or attacking, the area in front of the net.
 
@@ -23,7 +23,7 @@
 
 **From the point, shoot to get it through, not to beat the goalie.** Walk the line to move the shot-blocker, keep it low, at a tipper's stick or the far pad, and hold it if nobody is in front.
 
-**Defencemen: keep the puck in, and pinch only when you will arrive as the puck does and a forward can cover the line.** Stop a rim at the line before anything else. A half-hearted pinch is how 3-on-2s against you start.
+**Defencemen: keep the puck in, and pinch only when you will arrive as the puck does and someone, usually a forward, can cover the line.** Stop a rim at the line before anything else. A half-hearted pinch is how 3-on-2s against you start.
 
 **Learn your team's system before you judge a teammate out of position.** Who takes the net front, whether defencemen join the attack and how forwards rotate are coaching choices; the shape above is the common default, not a law.
 
@@ -35,7 +35,7 @@ Once you have the puck at the other team's end — [carried or dumped in](zone_e
 Position: You already have the puck in the offensive zone — getting there is Zone Entries, winning it back is Forechecking Systems
 Goal: You are not trying to take a shot — you are trying to take a shot from a dangerous place, with the goalie out of position
 Action: Put a body at the net front for every shot, outside the crease, and crash the net for the rebound — decide before the shot, and play the puck, never the goalie
-Priority: Somebody is always above the puck — the high forward is the safety, and a forward fills the line when a defenceman steps down
+Priority: Somebody is always above the puck — the high forward is the safety, and someone, usually a forward, fills the line when a defenceman steps down
 Risk: Almost every amateur team can get the puck into the offensive zone; far fewer turn possession there into a dangerous shot
 Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 spread with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
 ```
@@ -46,11 +46,11 @@ Convention: The attack triangle with both defencemen on the line is the default 
 
 **The shot is the start of the play, not the end of it.** In the NHL's own play-by-play data, a team that has just put a shot on goal scores again within three seconds about five times as often as in a random three-second window, because the goalie has committed and the puck is loose. So decide before the release where you are going: the net-front player is already planted, and a forward from the wall arrives as the puck does. Play the puck, never the goalie.
 
-**Shape keeps the possession alive and the counter-attack cheap.** With one forward below the puck, one level with it and one above it, the carrier always has two options, and the high forward at the top of the circle is both the shooting option and the safety. One forward is always in or attacking the scoring area; a triangle that stays on the perimeter is three players passing around a defence happy to let them. If a defenceman steps down, a forward fills in.
+**Shape keeps the possession alive and the counter-attack cheap.** With one forward below the puck, one level with it and one above it, the carrier always has two options, and the high forward at the top of the circle is both the shooting option and the safety. One forward is always in or attacking the scoring area; a triangle that stays on the perimeter is three players passing around a defence happy to let them. If a defenceman steps down, someone fills in — usually a forward.
 
 **Moving the puck around the outside is a set-up, not an outcome.** End it in a shot from the middle, a pass through the middle, a screened shot from the blue line, or a drive at the net. A point shot is a good play with a screen and two teammates hunting the rebound, and a giveaway without them. At the point, walk the line until the shot-blocker has to move, and shoot low — at a tipper's stick or the far pad.
 
-**Defencemen keep the puck in, and pinch on a read rather than a hope.** Step down when you will arrive as the puck does, the winger is flat-footed, and a forward can cover your spot; otherwise hold, because a late pinch leaves the puck behind you and your forwards below it. On a rim, stop the puck at the line first; if you cannot control it, put it back deep. How often to pinch is your coach's call — ask.
+**Defencemen keep the puck in, and pinch on a read rather than a hope.** Step down when you will arrive as the puck does, the winger is flat-footed, and someone, usually a forward, can cover your spot; otherwise hold, because a late pinch leaves the puck behind you and your forwards below it. On a rim, stop the puck at the line first; if you cannot control it, put it back deep. How often to pinch is your coach's call — ask.
 
 **The shape is a coaching choice.** This document assumes three forwards rotating in a triangle with both defencemen on the blue line. Real teams also play an **overload**, stacking four players on the puck side and giving up the weak-side seam; a **five-player rotation**, where defencemen take forward spots as routine; and a **1-3-1 spread**, common on the power play, with a **bumper** in the middle who is not the net-front player. Nobody has published a count of what teams actually run, so treat any "most teams play X" claim, this one included, as an impression. Find out which yours plays before deciding somebody is out of position.
 
@@ -285,7 +285,7 @@ Action: Stop a rim first, then play it — your blade, a skate turned along the 
 Action: Stop a clear up the middle first — square up in front of it, head up and out of its line, then play it
 Read: Watch the defender about to move the puck, not the puck already on the wall, and be a stride inside the line before it comes
 Options: A hard, high or bouncing puck you cannot settle — chip it back down the wall to the corner rather than fight it at the line
-Never: Chase a puck that is already past you at the line — turn and skate back, because the forward covering for you is already on the way
+Never: Chase a puck that is already past you at the line — turn and skate back, because whoever covers for you should already be on the way
 Convention: How hard the point fights for the line is a coaching choice — hold anything you can reach is the common default, and some teams give up a hard rim rather than risk it; ask
 ```
 
@@ -294,7 +294,7 @@ The defending team's way out is usually a rim along the boards or a clear up the
 - **Read it before it arrives.** Watch the defender who is about to move the puck, not the puck already travelling up the wall, and be a stride inside the line before it gets there.
 - **Stop it first, then play it.** On a rim, put your stick blade, a skate turned along the boards, or your body against the wall in its path; if it is your body, skates parallel to the wall, head up and chin off your chest. On a clear up the middle, square up and get your body in front of it — head up and out of its line, padded surfaces to it, stick out of the lane, as [shot blocking](../technique/body_contact_and_battles.md#shot-blocking-technique) sets out. A puck settled at the line is a new possession; a puck you swiped at and missed can be an odd-man rush the other way.
 - **If you cannot control it, put it back deep.** A hard, high or bouncing puck is not the moment to settle it and walk the line — chip it back down the wall to the corner for your forwards and keep the shift alive.
-- **If it is already past you, get back.** Turn and skate rather than chase a lost cause at the line; the forward covering for you should already be on the way.
+- **If it is already past you, get back.** Turn and skate rather than chase a lost cause at the line; whoever covers for you should already be on the way.
 
 How hard your defencemen fight for the line is a coaching choice. The common default is to hold anything you can reach and get back on anything you cannot; some teams tell defencemen to give up a hard rim rather than risk it, and some have the weak-side forward slide up to the far point whenever the puck is rimmed. Ask which yours plays.
 
@@ -944,7 +944,7 @@ The other two forwards go **to the net**: one to the front for the screen and ti
 
 ### The defenceman's pinch
 
-**In short:** Pinch only when you will arrive as the puck does and a forward can rotate up to cover your line.
+**In short:** Pinch only when you will arrive as the puck does and someone, usually a forward rotating up, can cover your line.
 
 ```facts
 Read: "If you can't arrive on contact, don't go" — and clearly first on an uncontested race. Pinch when the winger is flat-footed or facing the glass or on a loose puck or tired line
@@ -970,7 +970,7 @@ The decision criteria, which are consistent across coaching sources:
 **Pinch when:**
 - You can **arrive on contact** — you and the puck get there at the same time. "If you can't arrive on contact, don't go." That is the test when an opposing player is arriving too. Getting there level lets you play the puck or, where your book allows contact at all, seal the wall — or, where your league permits body checking, check a winger who can see you coming. Arriving a beat late is the failure: a check already being delivered as the puck goes may be finished, but one you decide on afterwards is a late hit (NHL 56.1 and 56.2, below). On an **uncontested race for a loose puck or a rim**, the bar is higher — you need to arrive **clearly first**, since there is nobody to seal and second place just means your back is to the play. [Forechecking Systems](forechecking_systems.md) applies the same two-part test.
 - The opposing winger is **flat-footed or facing the glass**, not already turned up ice with speed — a reason to go for the puck, never licence to hit a player facing the glass.
-- A forward is **able to rotate high** and cover your line.
+- Someone can cover your line — usually a forward **able to rotate high**.
 - It is a **loose puck, a bobble or a tired line** — the best windows.
 
 **Do not pinch when:**
@@ -1230,7 +1230,7 @@ Driving a player from behind into the boards or goal frame when they cannot prot
 - **Treating the rebound carve-out as a licence to move the goalie.** **In a scramble, play the puck, not the goalie, and never finish a shove that carries them into the net.** ⚠️ **The most any book forgives is incidental contact in a race for a loose puck you are both making, and several forgive none of it** — push the goalie in with the puck and expect the goal to come off. [Rebounds, loose pucks and being pushed into the goalie](#rebounds-loose-pucks-and-being-pushed-into-the-goalie) sets out each book.
 - **Tipping with a high stick, assuming the ceiling is the crossbar wherever you play.** **Keep the blade on the ice, where most tippable pucks are anyway.** The ceiling is the crossbar in some books and your shoulder in others, so find out. ⚠️ **And the moment the blade reaches a person it is a high-sticking penalty, which no book caps at a minor.** [Tips and deflections](#tips-and-deflections) sets out each book's ceiling.
 - **Two defencemen leaving the blue line at once, when nobody called for it.** **Somebody stays above the puck: if your partner has gone, you hold the line, or a forward fills in.** [Defending the Rush](defending_the_rush.md) calls this the subtlest way a team manufactures an odd-man rush against itself, because nothing looks wrong until the puck turns over. **Both going is not always the error:** a five-player rotation, a standing green light, a full-ice press, a delayed penalty or a 6-on-5 sends both on purpose. Unless one is on, look for your partner before you go.
-- **Pinching without arriving on contact.** **Go only when you will arrive as the puck does and a forward can cover your line; otherwise hold.** Take the puck, or — where your league permits body checking — the player. Half-hearted pinches create 3-on-2s the other way. ⚠️ **Arrive while they still have the puck:** a check after it has gone is a late hit, which no book caps at a minor, and under USA Hockey any avoidable check on a player who has released the puck is a penalty. [A late hit](#a-late-hit) sets out each book's window.
+- **Pinching without arriving on contact.** **Go only when you will arrive as the puck does and someone, usually a forward, can cover your line; otherwise hold.** Take the puck, or — where your league permits body checking — the player. Half-hearted pinches create 3-on-2s the other way. ⚠️ **Arrive while they still have the puck:** a check after it has gone is a late hit, which no book caps at a minor, and under USA Hockey any avoidable check on a player who has released the puck is a penalty. [A late hit](#a-late-hit) sets out each book's window.
 - **Pinching in as a check onto a battle your teammate is already in.** **Arrive beside your teammate, seal the wall with your position and pin the puck rather than the player, keep your arms, stick and skates out of it, and if you end up behind them, play the puck.** ⚠️ **Under USA Hockey a player engaged in a puck battle may not be body checked at all, at any level, anywhere on the ice — a reckless one ejects you, and so does a skate used to push off them.**
 - **Accelerating into the arrival.** **Get the speed on the way in, then stop striding two or three strides out, keep your feet under you, and arrive on the puck or the ice beside them.** ⚠️ **Building speed into the contact is charging, and no stride count is a safe harbour** — every book penalises jumping into a check. A charge that injures is a major and game misconduct under Hockey Canada and CARHA, and can end your game in the rest. Under USA Hockey no charge is two minutes and nothing else. [Sealing and arriving](#sealing-and-arriving-where-the-rules-bite) sets out each book's stride count, and [Charging](#charging) its tier.
 - **Pinching to hit a winger who is facing the glass.** **Take the puck, not the body** — they cannot see you or protect themselves, and the onus is on you to avoid the contact. ⚠️ **A hit on their back is checking from behind. It ends your game under the NHL, PWHL and CARHA, and under Hockey Canada unless it reaches the head; on the head it is head contact — plan on the game misconduct anyway, and a match if they cannot protect themselves. Under the IIHF, plan on ejection.** ⚠️ **If it leaves them unable to protect themselves, it is a mandatory match penalty** under Hockey Canada (head, boards or net) and CARHA (boards or net).

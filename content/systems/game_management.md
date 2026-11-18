@@ -231,7 +231,7 @@ Action: Move the puck north faster and arrive in numbers through the neutral zon
 Options: Aggressive forecheck, then pinching defencemen, then activating a defenceman, then pulling the goalie — roughly that order of safety
 Read: Trailing, you pinch on anything close; leading, only when you are certain — and either way, only if you can reach the wall as the puck does
 Risk: A pinch that misses is a 2-on-1 the other way, and a fourth attacker deep is a genuine odd-man risk
-Never: Leave the last-man-back spot empty — if a defenceman goes, a forward replaces them high
+Never: Leave the last-man-back spot empty — if a defenceman goes, someone replaces them high, usually a forward
 Action: Say that swap out loud
 ```
 
@@ -253,7 +253,7 @@ What to add, in roughly this order of safety:
 
 ![](diagram:forecheck-pinch)
 
-**The non-negotiable in all of this: someone is always the last man back.** If a defenceman goes, a forward replaces them high. That swap has to be spoken out loud. See [On-Ice Communication](../foundation/on_ice_communication.md).
+**The non-negotiable in all of this: someone is always the last man back.** If a defenceman goes, someone replaces them high — usually a forward. That swap has to be spoken out loud. See [On-Ice Communication](../foundation/on_ice_communication.md).
 
 
 ### When to start taking risks

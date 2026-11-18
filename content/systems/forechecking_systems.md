@@ -23,7 +23,7 @@
 
 **Know whether you are hunting, recovering or choosing.** Off a dump-in, aim for a corner and leave before the puck does. Off a turnover, the closest player pressures and the rest find their layer. When they are set up behind their net, your team traps, swings or flushes — ask which.
 
-**Defencemen: pinch only when you can arrive as the puck does, and one at a time.** Go when the puck is on the wall and slowing and F3 is high. The weak-side D stays home, so a failed pinch is a 2-on-1, not a breakaway. Some teams rotate all five, so ask.
+**Defencemen: pinch only when you can arrive as the puck does, and one at a time.** Go when the puck is on the wall and slowing and someone covers your point, F3 by default. The weak-side D stays home, so a failed pinch is a 2-on-1, not a breakaway. Some teams slide your partner across or rotate all five, so ask.
 
 ## Overview
 
@@ -37,7 +37,7 @@ Action: Ask your coach which forecheck your team runs, and which one you switch 
 Key: F1, F2 and F3 are set by arrival order, not jersey — first takes a side away, second the escape route left open, not the puck, third stays high towards the blue line you face, first man back
 Rule: Find out whether you may body check in this game before you learn to arrive on one — age, women's hockey and non-check leagues can each bar it, and under USA Hockey 604(b) so can a non-checking opponent, so it can change per fixture
 Never: Finish into a turned back at the end boards — every book can eject you, most at their lowest penalty; USA Hockey must if forceful at the boards, head first, reckless or careless to head, face or neck
-Action: Defencemen — pinch only when the puck is slowing on the wall, you can arrive as it does and F3 is high; by default only one of you goes
+Action: Defencemen — pinch only when the puck is slowing on the wall, you can arrive as it does and someone covers your point, usually F3; by default only one of you goes
 Risk: Guessing which forecheck your own team is running is how odd-man rushes happen
 ```
 
@@ -569,7 +569,7 @@ Note the offside rule while you are up there: **both of your skates must complet
 
 ### When to pinch
 
-**In short:** Pinch only when you can arrive with the puck and F3 is high enough to cover the point you leave.
+**In short:** Pinch only when you can arrive with the puck and someone, usually F3, is high enough to cover the point you leave.
 
 ```facts
 Read: Pinch when you can arrive on contact — "if you can't arrive on contact, don't go" — so you can play the puck: seal with position and pin the puck, not the player, where contact is allowed at all
@@ -577,7 +577,7 @@ Rule: Body position is granted; a hold and a skate are not — USA Hockey 622 No
 Rule: Body position is granted subject to three provisos — the NHL's wording here, the IIHF's the same but for its pronouns: it holds only "provided his stick is not utilized… his free hand is not used and he does not take advantage of his body position to deliver an otherwise illegal check"
 Read: On a pure race for a loose puck or a dying rim with nobody to seal, you need to arrive clearly first, not "probably"
 Read: Pinch when the puck is on the wall and slowing down, not zipping past you
-Read: Pinch only when F3 is high and in position to rotate back and cover the point you are vacating
+Read: Pinch only when someone is in position to cover the point you are vacating — by default F3, high and ready to rotate back
 Never: Turn your back to anyone coming at you on the wall, and never duck — keep your head up and your chin off your chest, in every league, checking or not
 ```
 
@@ -586,7 +586,7 @@ A **pinch** is stepping down from the *offensive* blue line along the wall to ki
 **Pinch when:**
 - **You can arrive on contact — and on an uncontested puck, clearly first.** The standard coaching test, used identically in [Offensive Zone Play](offensive_zone_play.md), is *"if you can't arrive on contact, don't go"*: you and the puck reach the wall together, so you can play the puck, **sealing the wall rather than the winger's body**. ⚠️ **Whether you may make contact at all, and whether you were late, is your rulebook's question, not this test's.** **On a pure race for a loose puck or a dying rim with nobody contesting it, the bar is higher:** arrive clearly first, not "probably", because there is no man to seal and second place just means you have turned your back on the play.
 - The puck is on the wall and **slowing down**, not zipping past you.
-- Your **F3 is high and in position** to rotate back and cover the point you are vacating. This is the exchange that makes pinching safe: you go down, F3 comes back. If F3 is in the corner, the exchange is not available.
+- **Someone is in position to cover the point you are vacating** — by default your F3, high and ready to rotate back. That exchange is what keeps the line covered when a pinch fails: you go down, F3 comes back. If F3 is in the corner and nobody else has the line, do not go. Who covers is a team choice — some slide your partner across instead — so ask.
 - The score and clock allow it. See below.
 
 **Take "seal the wall" literally, because the rulebooks do: they grant body position and refuse a hold and a skate.** ⚠️ **Under USA Hockey a skate used to *"push off"* throws you out of the game** (627(a)), and an arm wrapped round them on the boards is holding (622 Note). NHL and IIHF 56.1 let you use body position to lengthen their path only with your stick and free hand kept out of it, never as cover for an otherwise illegal check. ⚠️ **Arriving on their *back* is a different rule again** — set out below. ⚠️ **In IIHF women's hockey you may beat her to the wall and hold the ice between her and the puck, but never use the boards to push her into them, pin her there or lean her out of the play** (Rule 101.1). [What your book allows when you get there](#what-your-book-allows-when-you-get-there) sets out what each book lets you do, and [Late, sideways and third-man hits](#late-sideways-and-third-man-hits) how late is too late.
@@ -659,7 +659,7 @@ Never: Pinch when you have already been beaten once on the same shift — the se
 Convention: At 5-on-5 in every forecheck above, only one defenceman pinches at a time — very widely taught, but a coaching choice rather than a law
 Position: The weak-side defenceman holds the middle and does not join in — the reason a failed pinch is a 2-on-1 rather than a breakaway
 Read: Both defencemen go only on a called situation — a full-ice press, a delayed penalty, or 6-on-5 with your goalie pulled
-Convention: Some teams run a five-player rotation or a standing green light for both defencemen instead, with the highest forward covering the line — ask which yours is
+Convention: Some teams run a five-player rotation or a standing green light for both defencemen instead, with whichever player is highest covering the line — ask which yours is
 Action: Look for your partner before you commit — if they are already down the wall, you are the safety
 Convention: When the strong-side D pinches, the common default is F3 recovering to the point; some teams slide the weak-side D across instead
 ```
@@ -675,7 +675,7 @@ The **weak-side defenceman** — the one away from the puck — holds the middle
 
 Every one of those is a decision to accept a breakaway as the price. None of them is a thing you do because the puck looked gettable.
 
-**And the list above is situational, not exhaustive** — some teams simply run a different default. A team playing a **five-player rotation** or giving both defencemen a standing green light in the offensive zone has decided to carry that risk as a matter of routine rather than in named moments, and whichever forward is highest covers the line. That is a real system, not a mistake; it just is not the one this document assumes. [Offensive Zone Play](offensive_zone_play.md) sets out the same choice from the attacking side. Ask which yours is before you decide your partner is out of position.
+**And the list above is situational, not exhaustive** — some teams simply run a different default. A team playing a **five-player rotation** or giving both defencemen a standing green light in the offensive zone has decided to carry that risk as a matter of routine rather than in named moments, and whichever player is highest covers the line. That is a real system, not a mistake; it just is not the one this document assumes. [Offensive Zone Play](offensive_zone_play.md) sets out the same choice from the attacking side. Ask which yours is before you decide your partner is out of position.
 
 The practical version, for you personally: **look for your partner before you commit.** If they are already down the wall, you are the safety unless the bench has called one of the situations above. That decision does not depend on how tempting the puck looks.
 
@@ -1147,8 +1147,8 @@ document, that is named too.*
 
 5. A rim is coming around the wall toward you at the offensive blue line. What
    is the test for whether you step down on it, how does that test change if
-   nobody is contesting the puck, and what has to be true of your partner and
-   your F3 before you go? *(§When to pinch, and when not to, §The weak-side
+   nobody is contesting the puck, what has to be true of your partner, and who
+   covers the point you leave? *(§When to pinch, and when not to, §The weak-side
    defenceman is the safety)*
 
 6. Why does dump-and-chase work at all? Say where you aim a dump and where you
@@ -1173,7 +1173,7 @@ Before any of these, ⚠️ **find out whether you may body check at all — the
 3. **Pressure and risk are the same dial.** The common default: turn it down when leading late (1-2-2, 1-3-1 or 1-4), up when trailing late (2-1-2, then the press), and go passive when your line is tired. **Ask your bench which you run and what it switches to with a lead.**
 4. **A forecheck wins two ways — the puck back deep, or a rushed exit you intercept in the neutral zone.** Passive systems choose the second. Time your pressure for the exit: one hand-tracked analysis found pressure there lifts a forecheck's success from 45.7% to 78.1% of breakout attempts.
 5. **F1 makes the play predictable; F2 takes the next play.** Whether F1 also hunts the puck — in a 2-1-2 or press — or only steers, in a 1-2-2, 1-3-1 or 1-4, is the biggest difference between systems, so ask. If F2 is chasing the puck F1 is on, the forecheck has failed.
-6. **Defencemen: pinch only when you can arrive as the puck does, one at a time by default**, with F3 high. Seal with position; pin the puck, not the player. ⚠️ **Never hold with an arm or push off with a skate: a push-off throws you out under USA Hockey; under CARHA a hold can bring a major and game misconduct.**
+6. **Defencemen: pinch only when you can arrive as the puck does, one at a time by default**, with your point covered, F3 by default. Seal with position; pin the puck, not the player. ⚠️ **Never hold with an arm or push off with a skate: a push-off throws you out under USA Hockey; under CARHA a hold can bring a major and game misconduct.**
 7. **Dump it into a corner, not behind the net.** Under an NHL or IIHF trapezoid their goalie may not play it there, so a skater fetches it: never hit that turned back. Under any other book, plan on their goalie coming out. ⚠️ **In any British competition, plan on it too.** Either way, keep off the goalie.
 8. **When their goalie plays the puck outside the crease, take the outlet and pull up.** ⚠️ **Charging one can end your game** — a major and game misconduct, mandatory under Hockey Canada anywhere, under CARHA in the crease or if it injures, and under USA Hockey if reckless. In a CARHA league, so can any deliberate contact with one.
 9. **Off a dump-in, hunt; off a turnover, recover; off a control setup, choose.** On a puck you iced, or with the linesperson's arm up, do not hit the player playing it. Take the puck or the ice, never a player's back: in most books checking from behind ends your game, and in every book it can.

@@ -722,8 +722,10 @@ const pinchCentreHigh = {
   // chunk 039 (both captions are chunk 038 there) and game_management.md chunk 015 (the
   // pinch-centre-below-the-goal-line caption is chunk 016 there). If either
   // sentence goes, PINCH_COVER must come back into one of the two captions.
+  // W485, 18 November 2026: "the arrangement" -> "an arrangement". The centre is one way to cover
+  // the point, not the only one (high forward or a sliding partner also do it).
   caption:
-    'A pinch at the offensive blue line with the centre high in the zone behind it, which is the ' +
+    'A pinch at the offensive blue line with the centre high in the zone behind it, which is an ' +
     'arrangement that makes a pinch defensible. What makes a pinch good is not whether it works ' +
     'but what is behind it if it does not: here the pinching defenceman’s partner has held the ' +
     'middle at the line and the centre is high rather than deep, so the worst a miss can produce ' +

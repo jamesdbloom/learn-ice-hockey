@@ -469,7 +469,7 @@ Key: Keep moving to get open, and slide with the point man as they walk the line
 
 **Key considerations:** The slot is where most goals are scored from, and a shot there scores several times as often as one from the perimeter — [Shooting](../technique/shooting.md) has the figures and their limits. Defences crowd it for exactly that reason — coaching craft rather than a measured finding — so make the opposing centre and defencemen work hard to keep you out of it.
 
-**When your defenceman pinches down the wall, somebody has to fill the point they left — and in many systems that is the highest forward, which is often you.** Read it as the puck goes low: if your defenceman steps in to keep the puck in the zone, slide up to the blue line on their side and play as a defenceman until they are back, rather than staying in the slot and leaving an odd-man rush going the other way. Some teams give that job to the weak-side winger or to whichever forward is F3, so ask your bench who covers the pinch.
+**When your defenceman pinches down the wall, somebody has to fill the point they left — and in many systems that is the highest forward, which is often you.** Read it as the puck goes low: if your defenceman steps in to keep the puck in the zone, slide up to the blue line on their side and play as a defenceman until they are back, rather than staying in the slot and leaving an odd-man rush going the other way. Some teams give that job to the weak-side winger, to whichever forward is F3, or to your other defenceman sliding across, so ask your bench who covers the pinch.
 
 #### Keep your body out of the crease
 

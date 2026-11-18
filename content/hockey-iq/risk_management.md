@@ -569,12 +569,12 @@ You are anticipating if you can answer *why* before you move — the carrier's h
 
 ### The second test: who is behind you?
 
-Before you pinch, jump a lane or activate, check who is behind you: with your centre high in the zone the worst case is a 2-on-2, and with your centre below the goal line one bad bounce is a 2-on-1, so hold. When you do pinch, ⚠️ **pinch for the puck: check only where your league allows it and only while they still have the puck, and if you can see their numbers, pull up.**
+Before you pinch, jump a lane or activate, check who is behind you: with your centre high in the zone the worst case is a 2-on-2, and with your centre below the goal line and nobody else back, one bad bounce is a 2-on-1, so hold. When you do pinch, ⚠️ **pinch for the puck: check only where your league allows it and only while they still have the puck, and if you can see their numbers, pull up.**
 
 ```facts
 Read: Before you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am right and I still miss it?"
 Key: A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck — the worst case is a 2-on-2
-Risk: The same pinch with your centre below the goal line is a bad pinch even if you win the puck — you were one bounce from a 2-on-1
+Risk: The same pinch with your centre below the goal line and nobody else covering your point is a bad pinch even if you win the puck — you were one bounce from a 2-on-1
 Priority: Three questions in half a second — do I have information, not just a feeling? is someone behind me if I miss? what does the scoreboard allow?
 Action: Two yeses and a green light from the scoreboard question, go; otherwise hold your position. To jump a lane in your own end, the read must be near-certain
 Action: Pinch for the puck — check only where your league allows it and only while they still have the puck; if you can see their numbers, pull up
@@ -582,7 +582,7 @@ Action: Pinch for the puck — check only where your league allows it and only w
 
 Even a well-read risk is a bad risk if nobody is covering the space you left. **Before you jump a lane, pinch or activate, the question is not only "am I right?" but "what happens if I am right and I still miss it?"**
 
-A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck, because the centre becomes the third defender and the worst case is a 2-on-2. The same pinch with your centre below the goal line is a bad pinch even if you win the puck, because you were one bad bounce from a 2-on-1 and you did not know it.
+A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck, because the centre becomes the third defender and the worst case is a 2-on-2. The same pinch with your centre below the goal line and nobody else covering your point is a bad pinch even if you win the puck, because you were one bad bounce from a 2-on-1 and you did not know it.
 
 ![](diagram:pinch-centre-high)
 
