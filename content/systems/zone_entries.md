@@ -171,7 +171,7 @@ Quoted from **NHL Rule 83** in the *NHL Official Rules 2025-2026*:
 
 ### The trail-skate drag
 
-**In short:** Glide your trail blade on the line with body and stick already in the zone, head up, and push once the puck is across.
+**In short:** Glide your trail blade on the line with body and stick already in the zone, head up, and push once the puck is fully across.
 
 ```facts
 Position: Far-side winger flying at the line, a stride ahead of a carrier about to put the puck over

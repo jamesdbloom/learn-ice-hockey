@@ -521,7 +521,7 @@ Action: Delay deliberately, so you arrive with speed as the puck arrives
 Technique: "Puck first, feet second" — let the carrier commit a defender before you launch
 Goal: Cross the space at full speed while the defender is stationary with their head turned to the puck
 Key: A late arrival with speed beats a set gap — by the time the defenceman reacts you are past the point where they could have set one
-Rule: The puck must cross the blue line before or as your second skate does (NHL Rule 83 offside); under USA Hockey 630(a) and Hockey Canada 6.11 that trailing skate must also be touching the ice, so keep it down wherever you play
+Rule: The puck must be completely across the blue line before your second skate is (NHL Rule 83.1 offside); under USA Hockey 630(a) and Hockey Canada 6.11 that trailing skate must also be touching the ice, so keep it down wherever you play
 Never: Delay in your own zone — the carrier needs the outlet now, and a late arrival there is an absent one
 ```
 

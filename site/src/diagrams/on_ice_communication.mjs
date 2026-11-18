@@ -271,9 +271,14 @@ const whoCanSeeIt = {
     // "contact unbraced" (goaltender.md's own "into a hit unbraced"). The neck-injury REASON moved BEFORE the glyph so the
     // amber run carries the instruction only (W464); "never turn your back ... never duck" stays
     // whole and after the glyph, now closed by a full stop rather than "because".
-    'In this picture the two who can see the danger, partner and goalie, cannot reach the puck, ' +
-    'so all they can do is say so. Both are labelled "calls it": where two ' +
-    'can see it, both call it, because the failure is silence, not duplication. ' +
+    // ↩️ W469 REVIEW (18 Nov 2026) RESTORED THE BLIND PLAYER, in the owner's words ("closing from
+    // behind", on_ice_communication.md:60). Without it "say so" had no listener: the caption is
+    // read beside the picture on the page, where the host chunk is not, and "partner" had no
+    // antecedent. Paid for by cutting 'Both are labelled "calls it":', which only restated the
+    // two labels the picture already prints.
+    'In this picture the defenceman going for the puck cannot see the forechecker closing from ' +
+    'behind; the two who can, partner and goalie, cannot reach the puck, so all they can do is ' +
+    'tell the defenceman. Where two can see it, both call it, because the failure is silence, not duplication. ' +
     // ✂️ W292 (12 Nov 2026), 1,004 -> 923 chars. CUT: "The words are a team matter, so agree
     // your own" -- on_ice_communication.md voices it in chunk 004, directly before the caption's
     // chunk ("Check them against your own team's words"), and goaltender.md in the caption's own

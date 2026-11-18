@@ -182,7 +182,7 @@ The mechanics, precisely:
 
 ### The technique consequence: drag a trail skate
 
-**One skate on or behind the plane keeps you onside**, and the line is a foot wide, so you do not have to slow down at the blue line. Attack it at full speed with your body and lead skate already in the zone, holding the trail blade on or behind the line until the puck crosses. **Keep the blade in contact with the line — that is onside in all six books checked.** Holding it *in the air* behind the plane works only under the NHL, the IIHF and the PWHL; it is offside under USA Hockey and Hockey Canada, and CARHA does not answer it. This document has no count of which leagues run which book, so find out yours.
+**One skate on or behind the plane keeps you onside**, and the line is a foot wide, so you do not have to slow down at the blue line. Attack it at full speed with your body and lead skate already in the zone, holding the trail blade on or behind the line until the puck is completely across. **Keep the blade in contact with the line — that is onside in all six books checked.** Holding it *in the air* behind the plane works only under the NHL, the IIHF and the PWHL; it is offside under USA Hockey and Hockey Canada, and CARHA does not answer it. This document has no count of which leagues run which book, so find out yours.
 
 **The technique itself belongs to [Zone Entries](../systems/zone_entries.md)** — the four steps, the timing, and what it does to a defender. The same logic applies on a **regroup**: see [Neutral Zone Systems](../systems/neutral_zone_systems.md), and [Defending the Rush](../systems/defending_the_rush.md) for the defender's side of it, which is that you cannot rely on the blue line to save you.
 
