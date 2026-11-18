@@ -22,7 +22,7 @@
 
 **Play where the puck will be next.** Arrive at the net moving, just outside the crease and off the goalie, blade out of the paint, expecting the rebound. In a battle you will probably lose, go to where the loose puck will squirt out.
 
-**Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a passing lane only on a real cue, with support behind you, arriving with your feet — and never as the last player back. In your own zone, stay between the puck and your net unless the read is near-certain.
+**Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a passing lane only on a real cue, with a teammate covering the ice you leave, arriving with your feet — and never as the last player back. In your own zone, stay between the puck and your net unless the read is near-certain.
 
 **Get your head up off the puck.** You cannot scan while watching the puck. Keep it out in front, and train with a drill that fails if you look down, such as calling out a partner's fingers while stickhandling.
 
@@ -473,7 +473,7 @@ They look the same when they work and the same when they fail, but they are not 
 ```facts
 Key: Anticipation is acting on information; guessing is acting on hope
 Read: The test is not whether you were right. Ask whether your position would still be useful if you turn out to be wrong
-Action: Jump a lane only on a real cue, with support behind you, and arrive in it with your feet — reaching is the signature of a guess
+Action: Jump a lane only on a real cue, with a teammate covering the ice you leave, and arrive in it with your feet — reaching is the signature of a guess
 Position: Jump in the neutral or offensive zone, where a miss costs a rush against; in your own zone, stay between the puck and your net unless the read is near-certain
 Never: Jump as the last player back, or again after you have already missed once this shift
 Risk: A successful jump creates a chance; a miss in your own zone concedes one, often point-blank — so there the read must be near-certain, not just better than 50/50
@@ -619,7 +619,7 @@ document, that is named too.*
 8. **Read the shape.** Against a 2-1-2 behind your net, reverse to your partner or rim it hard rather than wheeling. Against a defender closing hard, change pace. After your first shift, tell the bench what they are forechecking.
 9. **Play where the puck goes next.** Arrive at the net moving, just outside the crease and off the goalie, blade out of the paint. In a battle you will lose, go for the loose puck instead.
 10. **Get your head up off the puck**, and train it with a drill that fails if you look down.
-11. **Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a lane only on a real cue with support behind you, and never as the last player back; in your own zone, only on a near-certain read.
+11. **Anticipate; do not guess.** Your position should still be useful if you are wrong. Jump a lane only on a real cue with a teammate covering the ice you leave, and never as the last player back; in your own zone, only on a near-certain read.
 12. **On a wall reception, position protects you, not looking.** ⚠️ **Never turn your back to anyone coming at you, and never duck** — come in on an angle, head up, chin off your chest. Already facing the wall? Stick and gloves up and spread on the glass, no head contact. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
 ---

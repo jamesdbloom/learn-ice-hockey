@@ -350,10 +350,10 @@ const stepUp = {
     // check"); jumping is named in NHL 42.1, IIHF 42.1, PWHL 42.1, CARHA 52(a) and Hockey
     // Canada 7.4(i).
     'A step-up at your own blue line, your net at the right: you move forward to meet the ' +
-    'carrier early instead of retreating. The cost is the ice behind you: nobody is between you ' +
+    'carrier early. The cost is the ice behind you: nobody is between you ' +
     'and your goalie, so a miss leaves your partner, on the far side, alone in a two-on-one. ' +
-    'Step up only when you are sure you can win the puck or force a turnover; how aggressive to ' +
-    'be is a coaching choice, so ask your coach. Finished as a hit, a step-up runs into the charging ' +
+    'Step up only when you are sure you can win the puck or force a turnover, with your forwards ' +
+    'tracking back; how aggressive to be is a coaching choice, so ask. Finished as a hit, a step-up runs into the charging ' +
     'rules, and a head-down carrier tells you only that they cannot change direction. Two ' +
     'strides is a safe harbour in no book. USA Hockey calls accelerating through a check ' +
     'charging, and leaving your feet to hit is charging in all six. ' +
@@ -373,7 +373,8 @@ const stepUp = {
     'the neutral-zone faceoff dot there, with no route. Your other defenceman, labelled ' +
     '"partner", is well back on that far side, between the blue line and the top of the ' +
     'faceoff circle. The whole of the ice between the stepping-up defenceman and their own ' +
-    'goalie is empty: no third defender, no backchecker, nobody.',
+    'goalie is empty: no third defender and nobody else. Any of your forwards tracking back ' +
+    'would be behind the carrier, beyond the left-hand edge of the picture.',
 
   players: [
     // ⚠️ LABELLED because `defender-step-up` and the borrowed `pinch-centre-high` sit TWO

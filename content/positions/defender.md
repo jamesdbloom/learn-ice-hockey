@@ -6,7 +6,7 @@
 
 ## Key focus
 
-**Stay on the defensive side of the puck.** Stay goal side of your attacker, between the puck and your net. Give that up only on purpose — a pinch, a step-up, joining a rush — once somebody covers behind you.
+**Stay on the defensive side of the puck.** Stay goal side of your attacker, between the puck and your net. Give that up only on purpose — a pinch, a step-up, joining a rush — once a teammate is above the puck to cover for you.
 
 **Work as a pair: one of you on the puck, one at the mouth of your goal.** Swap every time the puck crosses the middle, and say it out loud. That is the low zone collapse; man-on-man splits it differently, so ask which yours plays.
 
@@ -401,21 +401,21 @@ Mindset: When in doubt, go simple
 
 ```facts
 Position: Between the puck carrier and your net, facing the oncoming play, closing the distance as they come
-Read: Step up at the blue line only if you are confident you can win the puck or force a turnover — otherwise back up under control and deny a clean entry
+Read: Step up at the blue line only if you are confident you can win the puck and your forwards are tracking back; as the last defender, or when unsure, back up under control and deny a clean entry
 Goal: Prevent a clean zone entry; force a dump-in or a turnover
 Risk: A step-up that misses leaves your partner alone in a 2-on-1
-Never: Step up in the neutral zone unless you are confident you can win the puck — confidence, not hope
+Never: Step up in the neutral zone unless you are confident you can win the puck and your forwards are tracking back — confidence, not hope
 Never: Read a head-down carrier as a licence to arrive harder — it tells you they cannot change direction, and nothing more
 Convention: How aggressive "confident" should be is a coaching choice — an aggressive neutral-zone press wants you challenging the line, a passive trap wants you holding
 Rule: A step-up finished as a hit is what the charging rules are written for — USA Hockey's Casebook rules the head-down case charging (607, Situation 2) and a check you accelerate through without the two fast strides (Situation 3)
 Rule: Charging binds every division, checking or not — USA Hockey 607, Hockey Canada 7.4 name no division — no book caps it at a minor: USA Hockey's floor is minor plus misconduct (607(a)), a reckless one a mandatory major and game misconduct (607(b)): plan on a match and a likely multi-game ban (602(a))
 ```
 
-**What to do:** Step up at the blue line to challenge only if you are confident you can win the puck or force a turnover. Otherwise, back up under control and deny a clean entry. Support from the neutral-zone forwards is important here.
+**What to do:** Step up at the blue line to challenge only if you are confident you can win the puck or force a turnover **and your forwards are tracking back behind the play**. Otherwise — and always when you are the last defender, where a miss is a breakaway — back up under control and deny a clean entry.
 
 **Goal:** Prevent a clean zone entry. Force a dump-in or a turnover.
 
-**Key considerations:** Don't step up in the neutral zone unless you are confident you can win the puck — confidence, not hope. Step up and miss, and your partner is alone in a 2-on-1 (two attackers against one defender, who must choose between the shot and the pass). When in doubt, back up under control. **How aggressive "confident" should be is a coaching choice** — a neutral-zone press wants you challenging at the line, a passive trap wants you holding and steering the carrier wide. [Defending the Rush](../systems/defending_the_rush.md) sets out the trade-off; ask which risk your coach wants.
+**Key considerations:** Don't step up in the neutral zone unless you are confident you can win the puck and your forwards are coming back — confidence, not hope. Step up and miss, and your partner is alone in a 2-on-1 (two attackers against one defender, who must choose between the shot and the pass). When in doubt, back up under control. **How aggressive "confident" should be is a coaching choice** — a neutral-zone press wants you challenging at the line, a passive trap wants you holding and steering the carrier wide. [Defending the Rush](../systems/defending_the_rush.md) sets out the trade-off; ask which risk your coach wants.
 
 **A step-up is a closing of space, not a hit.** Your feet keep moving backwards and the attacker stays in front of you. ⚠️ **Where one is finished as a hit instead, that is the geometry the charging rules are written for**, and a carrier with their head down is the picture they name. Their head down tells you they cannot change direction, so your body gets there first — and nothing more. No book caps charging at a minor, and under USA Hockey it is at least a minor and a misconduct; what it costs comes later, in [Charging](#charging), and [Defending the Rush → Standing up (stepping up)](../systems/defending_the_rush.md#standing-up-stepping-up) owns the step-up.
 
@@ -1011,7 +1011,7 @@ Action: Where your book grants it, use the exemption rather than trying to make 
 
 ## Common Mistakes
 
-- **Watching the puck and losing your man.** Stay goal side of them and keep checking where they are: a forward who gets behind you has beaten you without touching the puck. Give that position up only on purpose, with somebody covering behind you.
+- **Watching the puck and losing your man.** Stay goal side of them and keep checking where they are: a forward who gets behind you has beaten you without touching the puck. Give that position up only on purpose, with a teammate above the puck to cover for you.
 - **Both defencemen drawn to the same puck**, leaving the goalmouth empty. One of you on the puck, one at the mouth of your goal, swapping out loud every time the puck crosses the middle. Coaches name this among the commonest causes of goals against — **coaching consensus, not a statistic**.
 - **Not defending the net front because you think you may not check there.** **Take the inside and keep it, and as the shot or pass comes, lift their stick low on the shaft and let it go.** The lift is yours in every league while it stays a lift; holding the stick is a penalty in all six books, and a forceful chop at the hands is slashing. Under Hockey Canada a box-out that stops a forward getting where they are going can be called interference, and CARHA puts a duty on you to avert body contact — so there, hold the spot without putting your body into them.
 - **Clearing the net front by shoving the screener off their spot.** **Get there first instead, then lift the stick.** Driving the screener off a spot they already hold **can be called interference wherever you play**, and where checking is barred it is an illegal check too — **check the game, not the age group.** In every book a two-handed shove with the stick can be called cross-checking; under Hockey Canada and CARHA one that injures or lands above the shoulders ends your game, a violent one can in any book, and under USA Hockey a reckless one must. [Moving a screener](#moving-a-screener) has what each book charges.

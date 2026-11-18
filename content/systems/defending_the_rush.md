@@ -733,7 +733,7 @@ Goal: Deny the zone entirely — the attack has to dump the puck in or turn back
 Rule: Both skates must cross the line after the puck under NHL, IIHF and PWHL rules (PWHL 85.1 prints the NHL’s plane test); USA Hockey 630(a) needs skate contact with the neutral zone or the blue line, Hockey Canada 6.11 only skates touching the ice, and CARHA 72(c) never defines "own side" either way
 Risk: If you miss there is nothing behind you — your partner is left in a 2-on-1 or worse
 Countered by: A skilled carrier who chips the puck past you and skates onto it
-Read: Right for slow attacks, a head-down carrier, a carrier already near the boards, clear support behind you, and a clogged neutral zone
+Read: Right for slow attacks, a head-down carrier, a carrier already near the boards, forwards clearly tracking back behind the play, and a clogged neutral zone
 Never: Read a head-down carrier as a licence to arrive harder — it tells you they cannot change direction, and nothing more
 Rule: USA Hockey's Casebook rules the head-down case charging in terms (607, Situation 2), and a check accelerated through without the two fast strides (Situation 3); Hockey Canada 7.4(ii) makes two strides the offence where USA Hockey's 607 Note needs more than two
 Rule: No book caps charging at a minor — USA Hockey 607(a): minor and misconduct, or major and game misconduct, a must if reckless (607(b)) — plan on a match and a likely multi-game ban (602(a)); Hockey Canada 7.4(b): the pair on violence, a must if hurt; 7.4(c) a match if defenceless or meant to injure
@@ -751,7 +751,7 @@ You hold your ground at or just inside the blue line and challenge the carrier a
 - **If you miss, there is nothing behind you.** A step-up that fails in the neutral zone leaves your partner in a 2-on-1, or worse. This is the specific risk flagged in [Defender](../positions/defender.md).
 - Standing up rewards a skilled carrier who chips the puck past you and skates onto it.
 
-**When it's right:** slow attacks, an attacker with their head down, a carrier already near the boards, when you clearly have support behind you, and when your forwards have the neutral zone clogged.
+**When it's right:** slow attacks, an attacker with their head down, a carrier already near the boards, when you clearly have backpressure — forwards tracking back behind the play — and when they have the neutral zone clogged.
 
 **The head-down read is a read about their vision, not a licence to punish them.** It tells you the carrier will not change direction, so your body gets there first. ⚠️ **It does not tell you to arrive harder** — a step-up finished as a hit is the geometry the charging rules are written for. **Take the ice, not the man**, and before you plan any contact, check whether you may body check at all in this game. **USA Hockey rules that exact hit charging, even without the two fast strides**; under Hockey Canada two strides are already the offence, and no book caps charging at a minor. What [charging](#charging) costs comes later, in What it costs.
 
