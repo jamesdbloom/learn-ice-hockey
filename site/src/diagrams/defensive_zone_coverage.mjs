@@ -358,125 +358,46 @@ const collapseCorner = {
   half: true,
   width: 900,
 
-  // ⚠️ THE SAFETY UNIT IN THE MIDDLE OF THIS CAPTION IS NOT TRIMMABLE PROSE.
-  // This frame draws the second body arriving into a corner, and it fixes the
-  // target's facing: the puck disc is at his stick against the boards. §"The base
-  // shape" attaches TWO warnings to that picture and this caption used to carry
-  // only the second of them — the pin. The first is the one that ejects you:
-  // ":Never: Send the second body into a back — the player digging along your
-  // boards cannot see you"; and ":The second body is the one that arrives late and
-  // unseen, so it is the one this warning is for."
-  // WHY IT IS WORDED THE WAY IT IS. A caption is HEARD ONCE, so the floor comes
-  // first, the tiers are in words rather than numbers, and only one book is priced
-  // in a spoken unit — the four-book comparison and the rule numbers live in the
-  // body and the ```facts blocks, where a reader can stop and re-read. Verified in
-  // primary text: NHL 43.2 "There is no provision for a minor penalty for checking
-  // from behind" with 43.3 the major and 43.5 the mandatory game misconduct; IIHF
-  // 43.2 "there is no option to award a minor penalty" with 43.3 major plus an
-  // automatic game misconduct. "At two minutes alone" rather than "ejects you in
-  // every book" is deliberate and load-bearing: USA Hockey 608(a) writes "A minor
-  // plus a misconduct penalty, or a major plus a game misconduct penalty", and a USA
-  // Hockey misconduct is ten minutes (404(a)), NOT an ejection — that floor is only for a
-  // push or a minimal "pinch" (Casebook 608 Situation 1). ⚠️ THIS carrier is the other
-  // case: Situation 1 makes a FORCEFUL check on a player "standing along the boards (back
-  // toward the middle of the ice)" a major plus a game misconduct, or a match — never the
-  // minor. Do not price this picture at USA Hockey's minor. Read usah_casebook.txt
-  // 29 Oct 2026. It is still never bare in any of the six (CARHA 53(a) and PWHL 43.2 checked W33).
-  // ⚠️ THIS CAPTION IS THE MODULE'S LONGEST AND IT IS DELIBERATELY OVER THE OWNER'S
-  // 25-50 WORD TARGET. Cut from 240 words to about 170 on 15 September 2026 by
-  // removing everything that was NOT a warning: the reason two on one wins the
-  // battle, the "seam the puck comes back through" gloss (frame two's caption and
-  // the section's facts block both carry it), and the rest of the base-shape
-  // recital. ⚠️ THE SAFETY UNIT IS ABOUT 100 OF THE REMAINING WORDS AND CANNOT BE
-  // CUT FURTHER WITHOUT SHEDDING A LIMB OR A BOOK SCOPE. Its four limbs are:
-  // arrives-late-and-unseen, the three legal arrivals, the NHL/IIHF tier floor, and
-  // the pin. If this caption must reach 50 words, the safety unit has to be routed
-  // into the body of §"The base shape" FIRST — it may not simply be deleted here.
+  // ✂️ CUT 18 November 2026 (W456, owner priority: readable beats defendable; captions target
+  // 25-50 words). 254 words -> see the W456 record. This caption carried the whole book-by-book
+  // tariff for a hit from behind (Hockey Canada / CARHA game misconduct on the minor with the HC
+  // head counterweight, the HC 7.5(c) / CARHA 53(b) mandatory match into the boards or net, the
+  // USA Hockey Casebook 608 Sit. 1 / 608(b) / 620(b) / 602(a) tiers and the 608(c) match). It was
+  // REMOVED AFTER A LAYER TEST on the sole host, defensive_zone_coverage.md, which voices every
+  // limb in §"The base shape" (the "second half of pin the puck" paragraph: never finish into a
+  // back, "In most books a call for checking from behind ends your game every time, and in every
+  // book it can", the USA Hockey tiers, the HC/CARHA match and the 608(c) match; facts lines on
+  // the NHL/PWHL/CARHA/HC ejection, the IIHF and HC head limb "plan on ejection", USA Hockey's
+  // minor + misconduct floor and 620(b)), and again in §"What it costs -> A hit from behind"
+  // (602(a) "plan on a match for any reckless one", the Casebook 608 Sit. 1 boards case, Hockey
+  // Canada's head-contact pricing and "plan on the game misconduct anyway"). The 15 Sept note that
+  // the safety unit could go only once routed into the base-shape body is met (it was, 1ea630d4).
+  // KEPT, as the one safety sentence: arrives late and unseen, the three legal arrivals, pin the
+  // puck not the player, never into their back, and the floor in the base-shape body's own words.
+  // USA Hockey "must whenever it is forceful at the boards, head first or reckless", NEVER "only":
+  // Casebook 608 Sit. 1 makes major + GM or match "must be called" in all three (this carrier is its
+  // player "standing along the boards (back toward the middle of the ice)"); 620(b)/602(a)/608(c)
+  // eject in further cases the host voices. W456 diagram review Minor: "You are there to win it,
+  // not to join a pin" so "pin the puck" is not heard as an instruction to the arriving centre.
+  // Full stop, not the reviewer's semicolon: check_caption_negations flagged "not to join a pin;
+  // pin the puck" (a negation closed by ";" can run on into the next clause).
+  // The coaching-choice sentence keeps "so ask" closing the "not areas" negation (a bare dash and
+  // imperative there could be heard as "don't ask", inverting non-negotiable 7).
   caption:
-    'Low zone collapse — the standard coverage assumed here, one of several a team might play — ' +
-    'at the instant the puck goes into the strong-side corner. ' +
-    'Both wingers stay high on the points; the centre leaves the high slot to go down as the ' +
-    'second body and make it two on one. ' +
-    'This is frame one of two, not a shape to hold. ' +
-    // ⚠️ FULL STOP, NOT AN EM DASH — AND THIS ONE INVERTS NON-NEGOTIABLE 7 ITSELF.
-    // This ran "…reading bodies, not areas — ask your coach which your team plays". The
-    // negation is a constituent negation in the MAIN clause, four words before the dash, with
-    // no conjunction closing it, and the tail is a bare imperative — so a listener can hear
-    // "not areas, DON'T ask your coach which your team plays". What that inverts is the
-    // corpus's cardinal rule: name the system, name the alternative, tell the reader to find
-    // out which their team plays. The inversion deletes the "find out" half in the spoken
-    // layer, which is the half that stops a coaching choice being heard as a law of hockey.
-    // Every OTHER cardinal-rule instruction in this directory is introduced by "so" ("…so
-    // find out which yours runs"), and that conjunction is what closes the negation. This was
-    // the one with a bare imperative straight after the dash.
-    // ⚠️ 22 October 2026: the caption used to end "All six books are set out earlier in this
-    // document." That is a pointer a listener cannot follow, and the substance is already voiced
-    // before the marker: §"The base shape" (defensive_zone_coverage.md, the three bullets
-    // headed "The hit from behind", plus "The next game" and "Boarding") prices the check from
-    // behind book by book. Sole host is the owner document. Dropped, not replaced:
-    // pricing six books here would restate the body in the layer least able to carry it.
-    'Under man-on-man or a hybrid these five would be reading bodies, not areas. Ask your ' +
-    'coach which your team plays. ' +
-    'The second body is the one that arrives late and unseen, and this carrier has the puck ' +
-    'at their stick against the boards, with their back to the ice. ' +
-    // SG207 safety review (8 Nov 2026): the base-shape body carries 'in most books ends your game' but NOT the
-    // mandatory Hockey Canada 7.5(c) / CARHA 53(b) match for this exact picture; restored here verbatim from HEAD.
-    // W236 (10 Nov 2026): USA Hockey 608(c) also makes a match mandatory ("shall be assessed") for a reckless hit
-    // from behind with excessive force on a vulnerable or defenceless opponent; the closed HC/CARHA list understated it.
-    // W347 (15 Nov 2026): 608(c) has NO boards condition ("checking from behind in all instances when a player
-    // recklessly endangers an opponent from behind with excessive force while the opponent is in a vulnerable or
-    // defenseless position") — the old wording hung USA Hockey off the boards-framed subject. Split: HC 7.5(c) "will be
-    // assessed" / CARHA 53(b) "shall be assessed" for a hit from behind into the boards or goal frame/net on a player
-    // unable to protect or defend themselves (mandatory, boards-conditioned); then USA Hockey's own condition, boards or not.
-    // W393 (17 Nov 2026): this carrier, on the wall with their back to the ice, is usah_casebook.txt Rule 608
-    // Situation 1's "forcefully checks an opponent who is standing along the boards (back toward the middle of
-    // the ice)" -- major + GM or match "must be called". Pricing only the 608(c) match left that unvoiced.
-    // 608(b) "shall" for reckless or head first; 620(b) major + GM for careless head, face or neck contact.
-    // W393 review: "it" was dropped (it could bind to "into the boards or net"), the spoken citations were
-    // dropped, and 602(a)'s "shall" match for reckless endangerment is now voiced as "plan on a match for any
-    // reckless one" so a reckless hit without excessive force does not read as only a game misconduct.
-    // W393 cut (safety C1/C2): HC/CARHA lead with "Under ..."; the USA Hockey sentence names "a hit from behind"
-    // (not "it", which would bind to the boards-scoped hit before it) and stays one sentence so "mandatory" is
-    // scoped to USA Hockey. "anywhere" = 608 Note "in open ice or directly into the boards or goal frame".
-    // W455 (18 Nov 2026): Hockey Canada and CARHA were priced ONLY at the match, so an ordinary hit from
-    // behind had no price for them. hc.txt 7.5(a)/(e): a game misconduct with every minor or major; 7.6
-    // preamble: a foul reaching the head 'must be penalized as Head Contact' (7.6(a) a bare minor if accidental
-    // in minor and female hockey), hence the head exception. carha_2026.txt 53(a): minor or major, each plus a GM.
-    // W455 safety MAJOR: 7.6(b) injury = mandatory major+GM and 7.6(c) a match, so the exception carries
-    // "plan on it anyway" or a head hit sounds cheaper.
-    'Under Hockey Canada and CARHA even a minor for a hit from behind carries a game misconduct (for Hockey ' +
-    'Canada, unless it reaches the head, where you should plan on it anyway), and a hit from behind into the ' +
-    'boards or net when they cannot ' +
-    'protect themselves is a mandatory match. Under USA Hockey a hit from behind ejects you if it is forceful at the boards, sends ' +
-    'them head first into the boards or net or is reckless, as does careless head or neck contact; plan on a ' +
-    'match for any reckless one, anywhere, mandatory with excessive force on a vulnerable or defenceless player. ' +
-    // ⚠️ 8 November 2026 (1,311 chars): THE BOOK-BY-BOOK TARIFF IS CUT, AND THE PRECONDITION THE
-    // NOTE ABOVE SETS FOR CUTTING IT IS NOW MET. That note said the safety unit could go only once it
-    // had been "routed into the body of §'The base shape' FIRST". It has been: the 1ea630d4
-    // restructure put the instruction AND its price in the base-shape body --
-    // defensive_zone_coverage.md §"The base shape": "if you can see their numbers, pull up ... never
-    // finish into a back. In most books a call for checking from behind ends your game every time, and
-    // in every book it can. Under USA Hockey it does whenever it is forceful at the boards, ..." (W348,
-    // 16 Nov 2026: the per-book sentence moved into What it costs; facts :166 keeps the line) -- and the full ladder, including the
-    // Hockey Canada / CARHA mandatory match for a defenceless player into the boards, in
-    // §"What it costs → A hit from behind". In the render the base-shape price comes BEFORE this caption,
-    // in the same section (line and chunk numbers drift; re-render to check). The IIHF women's pinning clause is cut on the same
-    // ground (:177, facts :163). KEPT: arrives late and unseen, the three legal arrivals, "never into
-    // their back", and the pin instruction, each still under a glyph.
-    // The cut also removes "so the floor is a major and an ejection", which OPEN_ITEMS records as
-    // unwritten for a non-reckless IIHF check (43.3 discretionary) -- not repaired here, just gone.
-    // ⚠️ W361 (16 November 2026): THE INSTRUCTIONS NOW CLOSE THE CAPTION, SO THE AMBER IS THEM.
-    // `captionNodes` makes everything from the first ⚠ to the END of the caption one amber run,
-    // and with the glyph on "The second body…" that run was 812 chars (97.0% of the worst 400px
-    // window): hazard, tariff, pin, frame note and the coaching-choice sentence all rode in amber.
-    // Re-ordered, no word changed: the frame note and the coaching-choice sentence now follow the
-    // base shape; the hazard sentence and the match tariff are plain caption text; the glyph moved
-    // from "The second body" onto "Arrive on the puck… never into their back", which now sits
-    // straight after the tariff and before the pin. Both glyphs kept (the pin glyph is inside the
-    // same run); speech unchanged, one "Important." per caption.
-    '⚠️ Arrive on the puck, or on the ice the carrier wants, or angle them off it — never into their back. ' +
-    '⚠️ And pin the puck, not the player — two on one is about outnumbering the battle, not ' +
-    'joining a pin.',
+    'Low zone collapse, the standard coverage here and one of several, as the puck goes into the ' +
+    'strong-side corner: wingers high on the points, the centre down from the high slot as the ' +
+    'second body to make it two on one. Frame one of two, not a shape to hold. Man-on-man or a ' +
+    'hybrid would read bodies, not areas, so ask your coach which your team plays. ' +
+    // W456 site review (Major, readability): captionNodes() ambers from the FIRST glyph to the END
+    // of the caption, so the hazard and the price are plain caption text and the glyph opens the
+    // instructions. One word dropped: the "so" before "take the puck", which joined the hazard
+    // sentence to the instruction and would now start the amber run mid-sentence.
+    'The second body arrives late and unseen on a carrier facing the boards. In most books a call ' +
+    'for checking from behind ends your game every time, in every book it can, and under USA ' +
+    'Hockey it must whenever it is forceful at the boards, sends them head first into the boards ' +
+    'or net, or is reckless. ' +
+    '⚠️ Take the puck, take the ice or angle them off it. You are there to win it, not to join a ' +
+    'pin. Pin the puck, not the player. Never finish into their back.',
 
   describe:
     'The attacking half of the rink, the defended net at the right, with the puck in the ' +
