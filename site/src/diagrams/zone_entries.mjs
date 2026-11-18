@@ -203,10 +203,15 @@ const wideEntry = {
     // contact "in a rebound situation" (re-read in nhl_rules_layout.txt, iihf_rules_2026-27.txt,
     // pwhl_rules.txt). Books named, no "only": Hockey Canada 8.5(a) Interpretation 1, CARHA,
     // USA Hockey and the EIHL write no such exception, and the host's next chunk (027) says so.
-    'The carrier crosses outside the defenceman for the goal line or below, so the defender ' +
-    'has to turn — every stride toward the boards is a stride away from the front of their net. ' +
-    'It needs both supports drawn here, and no contact is drawn. The net drive stops at the edge of the blue paint: keep ' +
-    'your feet out of the paint and off the red crease line around it, and screen from there. ' +
+    // ✂️ W464, 18 November 2026 (184 words before). Cut only what the host voices in
+    // adjacent chunks 024/026 (facts block, and the bullets straight after this caption): "every stride toward the boards..." (the
+    // "Why it works" bullet), "It needs both supports drawn here" (the "What you need" bullet)
+    // and the long paint sentence ("Where the net drive stops: at the edge
+    // of the blue paint, off the red line around it, short of the goalie. Screen from there.").
+    // The goalie-contact sentences and the whole posture tail are untouched, word for word.
+    'The carrier goes outside the defenceman to the goal line or below, so the defender has ' +
+    'to turn. No contact is drawn. The net drive stops at the edge of the blue paint, off its ' +
+    'red line: screen from there. ' +
     // W375, 16 November 2026: the goalie-contact sentences moved AHEAD of the glyph, no word
     // changed. A caption's amber runs from its glyph to the END (captionNodes() in
     // remark-corpus.mjs), so with the posture sentences first the goal-voiding text was amber
@@ -217,9 +222,12 @@ const wideEntry = {
     'start with a goalie in the crease voids the goal, incidental or not, though the NHL, IIHF ' +
     'and PWHL allow incidental contact in a rebound scramble. A goalie out of the crease is not ' +
     'fair game either. ' +
-    '⚠️ Arrive head up, chin off your chest: never meet a goal post head first, and never duck. ' +
+    // W464b: the two explanatory sentences moved AHEAD of the glyph so the amber is the
+    // instruction alone. "every level" stays attached to the instruction, not to the injury.
     'A head-first hit on a post is the same neck injury as one on the boards, and can happen at ' +
-    'walking speed. That holds at every level, checking or not.',
+    'walking speed, checking or not. ' +
+    '⚠️ At every level, arrive head up, chin off your chest: never meet a goal post head first, ' +
+    'and never duck.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +
@@ -349,13 +357,23 @@ const delayCurl = {
   // and every posture limb are kept: time_and_space.md voices none of the posture limbs near its
   // marker.
   caption:
-    'Arriving at the line alone against two defenders, the carrier does not stop and does not ' +
-    'force it: before the defender can reach them, they curl back toward the neutral zone with ' +
-    'their body between the defender and the puck, buying the one or two seconds their late ' +
-    'support needs. The re-attack is not drawn. ' +
-    'Two separate postures injure a neck at the boards and they are not the same warning: ' +
-    'a turned back makes the contact a hit from behind, and a chin ' +
-    'tucked to the chest straightens the cervical spine. ' +
+    // ✂️ W464, 18 November 2026 (181 words before). The tactical lead is shortened: zone_entries
+    // chunk 037 voices "do not stop", "turn away from the pressure", "body between defender and
+    // puck" and "one or two seconds"; time_and_space chunk 008 opens the caption's own paragraph
+    // with "arriving at the line alone against two defenders, support still coming" and voices
+    // "body between puck and defender" after it. The postures sentence lost only "and they are
+    // not the same warning" ("Two different postures"); both limbs are still stated separately.
+    // "a second or two" cut to "time" (chunk 037 voices "one or two seconds"). W464b then moved
+    // the glyph off "One safety point" onto "Curl away from the wall" (see below); the W375
+    // note below describes the order before that.
+    'Alone at the line against two defenders, the carrier curls back toward the neutral zone ' +
+    'before either can reach them, buying late support time. The re-attack is not ' +
+    'drawn. ' +
+    // W464b (W456 pattern): explanation first and unmarked -- why the curl is drawn in open
+    // ice, and the two postures stated separately -- then the glyph before the instructions only.
+    'The curl is drawn out in open ice because one safety point outranks the play, and two ' +
+    'different postures injure a neck at the boards: a turned back makes the contact a hit from ' +
+    'behind, and a chin tucked to the chest straightens the cervical spine. ' +
     // W375, 16 November 2026: sentence order is now postures -> safety point -> wall
     // fallback, no word changed (word multiset equal to HEAD). A caption's amber runs from its
     // glyph to the caption's END (captionNodes() in remark-corpus.mjs). With the glyph on "One
@@ -365,8 +383,7 @@ const delayCurl = {
     // if you cannot get off the boards" directly after the safety point it follows from.
     // time_and_space.md carries no other ⚠ near its marker, so "never turn your back" must
     // stay amber there.
-    '⚠️ One safety point outranks the play and is why the curl is drawn out in open ice: ' +
-    'curl away from the wall, and never turn your back to anyone coming at you. ' +
+    '⚠️ Curl away from the wall, and never turn your back to anyone coming at you. ' +
     // ⚠️ THE SECOND HALF IS NOT OPTIONAL AND IS NOT PADDING. The caption is voiced ALONE,
     // in its own <p> with a 700 ms break either side -- verified this session by rendering
     // zone_entries.md through md_to_speech.py, chunk 035 at the time (chunk 038 as of 12 Nov 2026). Ending it at "never turn your back to
@@ -412,7 +429,7 @@ const delayCurl = {
     // before the glyph is plain caption text. Caption length is unchanged and still far short
     // of md_to_speech's MAX_BILLED_CHARS of 2,800, so it is voiced as one unbroken chunk and
     // neither absolute can be separated from the other by a split.
-    'So if you cannot get off the boards, ' +
+    'If you cannot get off the boards, ' +
     // COLON, not a third em dash: the shoulder clause below needs a dash PAIR around it, and
     // this sentence already opened on one, which put three em dashes in a row.
     'take the contact rather than turning away into them: skates parallel to the wall, ' +
@@ -850,9 +867,13 @@ const trapezoidAim = {
   width: 900,
 
   caption:
+    // ✂️ W464, 18 November 2026 (151 words before): cut "so a puck dying straight behind the net
+    // is exactly the help you were trying to deny them". Both hosts voice it directly above the
+    // marker in the same chunk: zone_entries.md chunk 049 near-verbatim, forechecking_systems.md
+    // chunk 055 ("A dump straight down the middle behind the net is a gift..."). The book list is
+    // KEPT: forechecking_systems.md voices no per-book trapezoid list in an adjacent chunk.
     'Dump to the corners, not to the goalie: where a trapezoid applies, the marked area is ' +
-    'the only ice behind the goal line on which they may play the puck, so a puck dying straight ' +
-    'behind the net is exactly the help you were trying to deny them. The NHL and the IIHF book ' +
+    'the only ice behind the goal line on which they may play the puck. The NHL and the IIHF book ' +
     'mark one, with the KHL commonly said to have one too though no KHL ' +
     // W33: CARHA, PWHL and Elite League limbs added, matching zone_entries.md §7 "Where the
     // trapezoid applies". carha.txt scores 0 for trapezoid / restricted area / designated
@@ -1071,16 +1092,21 @@ const middleDrive = {
   width: 900,
 
   caption:
+    // ✂️ W464, 18 November 2026 (163 words before). Cut "The skater usually does not get it; the
+    // point is that a defenceman who ignores a player skating at their net gets scored on" --
+    // chunk 027 voices it in the paragraph directly above the marker (caption in chunk 028). The
+    // goalmouth sentence moved AHEAD of the glyph (its "And" dropped): it is a note on the
+    // picture, not an instruction, and captionNodes() makes everything from the glyph to the END
+    // amber. The amber is now the head-up instruction alone. No posture word changed.
     'A teammate without the puck skating hard through the seam between the two defencemen, at ' +
-    'the net, while the carrier comes in wide. The skater usually does not get it; the point is that ' +
-    'a defenceman who ignores a player skating at their net gets scored on, so they cannot step ' +
-    'up on the carrier. A still picture cannot show effort — read that arrow as full speed. ' +
+    'the net, while the carrier comes in wide, so neither defenceman can step up on the carrier. ' +
+    'A still picture cannot show effort — read that arrow as full speed. ' +
     'Where the two defencemen are drawn is one instance and not a system: how a defence meets ' +
     'a rush is a coaching choice. ' +
+    'The drive stops well short of the goalmouth here, because what happens in the last few ' +
+    'feet of a net drive is contact in front of a goalie, which this picture does not teach. ' +
     '⚠️ Your head is up: this is the one route where two defencemen can both stand you up in ' +
-    'open ice, and looking down at the puck as you arrive is what turns that into an injury. ' +
-    'And the drive stops well short of the goalmouth here, because what happens in the last few ' +
-    'feet of a net drive is contact in front of a goalie, which this picture does not teach.',
+    'open ice, and looking down at the puck as you arrive is what turns that into an injury.',
 
   describe:
     'The attacking half of the rink, the opposition net and goalie at the right, the attack ' +

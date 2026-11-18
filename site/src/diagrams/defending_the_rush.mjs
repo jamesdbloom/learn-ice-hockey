@@ -144,9 +144,17 @@ const gapAndAngle = {
     // the BOARDS side instead is the error the GAP_CARRIER comment above records this diagram
     // as existing to make unmistakable. A caption that says only "on the inside" leaves the
     // beginner it is written for to guess which side that is.
+    // ✂️ W464, 18 Nov 2026 (181 words before): cut "boardside shoulder to the middle of their
+    // chest" — a mechanic, not the definition; "body between the carrier and the middle of the
+    // ice" IS the definition and stays. The owner voices the shoulder detail beside the marker
+    // (facts chunk 011, prose chunk 012); defender.md, how_to_watch_hockey.md and
+    // body_contact_and_battles.md do not, and lose only the finer placement. The rest is wording:
+    // the zone disclosure, gap figure and provenance are all kept, for the reasons below.
+    // "on any stick the rulebooks allow" became "on any legal stick": same scope (the four shaft
+    // caps in the comment below), three words shorter.
     'toward the defended net at the left. The defender is on the inside — body between the carrier ' +
-    'and the middle of the ice, boardside shoulder to the middle of their chest — so the only route ' +
-    'the carrier can see is toward the wall. The shaded middle is the ice being taken away — part of a ' +
+    'and the middle of the ice — so the carrier’s only visible route ' +
+    'is toward the wall. The shaded middle is the ice denied: a ' +
     // ⚠️ SHORTENED 15 SEPTEMBER 2026, and two things were cut that a re-reader may want back.
     // (1) the REASON the middle is the ice worth taking — the owner's §"Angle to take the
     // middle" now reads "From the middle the carrier can skate straight into the slot, where
@@ -161,10 +169,10 @@ const gapAndAngle = {
     // the "cut short only so the shading has an edge" limb the zones comment depends on.
     // It is the clause that stops a reader taking four drawn edges for markings on the ice.
     // The provenance block carries its own "Do not compress this back".
-    'lane running the length of the rink, cut short here only so the shading has an edge; none of ' +
-    'its drawn edges is painted on the ice. ' +
-    'The gap drawn is about nine feet — on any stick the rulebooks allow, nearer one and ' +
-    'three-quarter stick lengths than the stick and a half the gap ladder targets at the red line. ' +
+    'lane the length of the rink, cut short only so the shading has an edge; its edges are not ' +
+    'painted on the ice. ' +
+    'The gap drawn is about nine feet: on any legal stick, nearer one and ' +
+    'three-quarter stick lengths than the stick and a half targeted at the red line. ' +
     // ⚠️ The PROVENANCE limit travels with the ladder, not just the applicability hedge.
     // The style guide's owner row is explicit that "a guide, not a law" is about
     // applicability and does NOT carry provenance. This caption is borrowed into
@@ -209,9 +217,9 @@ const gapAndAngle = {
     // Require" (HC 3.3(b) 1.60 m/63 in, NHL 10.1 63 in, IIHF 10.1 1.63 m, USA Hockey 301(b) 65 in),
     // re-read this session. 65 in is the longest any book allows, at which 8.944 ft is 1.65 sticks,
     // still nearer 1.75 than 1.5 -- which is what "on any stick length the rulebooks allow" asserts.
-    'That stick and a half is a guide, not a law: it varies with your backward speed and the ' +
-    'attacker’s skill, the only page found that anchors a distance to the centre red line prints ' +
-    'two stick lengths there, and one coaching book prints no distance at all.',
+    'That target is a guide, not a law. It varies with your backward speed and the ' +
+    'attacker’s skill; the only page found anchoring a distance to the centre red line prints ' +
+    'two stick lengths, and one coaching book prints none.',
 
   describe:
     'The full sheet, the defended net at the left. Two players and a goalie. An opposition forward ' +
@@ -348,19 +356,27 @@ const twoOnOne = {
     'defended net at the left. The defenceman sits in the shaded passing lane, biased slightly toward ' +
     'the middle, on the defensive side of both, and retreats with them ' +
     'rather than stepping toward either: take away the pass and ' +
-    'give up the shot, because the goalie can save the shot and cannot save the cross-ice pass. ' +
+    'give up the shot. ' +
     'The goalie plays the shooter as though the second attacker did not exist. ' +
     // ⚠️ THE TWO HEDGES ARE MOST OF WHAT IS LEFT AND NEITHER IS TRIMMABLE. The goalie
     // agreement is a two-person convention this caption must not state as a rule, and its
     // "some will ask you to pressure the puck instead" is the half that sends a reader to
     // ask; the exception below is the one honest limit on "never step toward either", and
     // without it the caption tells a defenceman to stand off an unpressured walk-in.
-    'That division of labour only works if both of you have said it out loud — most goalies want it this way, ' +
-    'but some, especially at rec level or against a weak shooter, will ask you to pressure the puck ' +
-    'instead, so ask yours before the game. ' +
-    'One exception no picture can carry: if a backchecker picks up the second attacker and the ' +
-    'shooter walks in unpressured with no realistic pass, it is no longer a 2-on-1 ' +
-    'and the defenceman should close on the puck.',
+    // ✂️ W464, 18 Nov 2026 (167 words before). Both hedges and the exception KEPT, compressed.
+    // CUT, with the chunk that voices each beside the marker (post-edit render, 18 Nov):
+    //   - "because the goalie can save the shot and cannot save the cross-ice pass":
+    //     defending_the_rush.md "Why." paragraph, same chunk (027) and its facts (026);
+    //     goaltender.md "the chance you cannot stop; the shot is the one you can", same chunk (066).
+    //   - "especially at rec level or against a weak shooter": the owner's next paragraph (028).
+    //     goaltender.md does not voice it, but keeps the disclosure itself ("some will ask you to
+    //     pressure the puck") and its own "some coaches vary it" paragraph (067).
+    //   - "That division of labour only works if both of you have said it out loud" and "One
+    //     exception no picture can carry": framing; the instruction to ask survives.
+    'Ask your goalie before the game: most want it this way, but some will ask you to pressure ' +
+    'the puck instead. ' +
+    'If a backchecker picks up the second attacker and the shooter walks in unpressured with no ' +
+    'realistic pass, it is no longer a 2-on-1. The defenceman should close on the puck.',
 
   describe:
     'The full sheet, the defended net at the left. Exactly two opposition forwards and one defender. ' +
@@ -677,15 +693,18 @@ const threeOnTwoAlternative = {
     // NAME (never "the previous diagram"; see the note above), and why the backchecker's route
     // ends in open ice.
     'A 3-on-2 defended the realistic alternative way — "strong side takes the puck, weak side ' +
-    'splits" — with the attack moving right to left toward the defended net at the left. The three ' +
-    'attackers stand exactly where they do in the two-wide default; only the defence has ' +
-    'changed. The strong-side defenceman takes the puck carrier as a 1-on-1 with a tight gap; the ' +
-    'weak-side defenceman drops off into the shaded lane and splits the middle and far attackers, ' +
-    'as on a 2-on-1. The backchecker’s job becomes the third attacker rather than the middle, ' +
-    'which is why that route finishes in open ice — which attacker it will be is not fixed. ' +
-    'This version never concedes the middle, but the weak-side defenceman is covering two people ' +
-    'and the far attacker gets more room; the two-wide default keeps three defenders on three ' +
-    'attackers if the backcheck arrives and concedes the middle entirely if it does not. Ask your ' +
+    // ✂️ W464, 18 Nov 2026 (162 words before): wording only. Every limb above is still here —
+    // the cross-reference by name, the open-ice route and why, both halves of the trade
+    // (goaltender.md chunk 067 voices only "they fail in different directions"), and the ask.
+    'splits" — with the attack moving right to left toward the defended net at the left. The ' +
+    'attackers stand where they do in the two-wide default; only the defence has ' +
+    'changed. The strong-side defenceman takes the carrier as a 1-on-1 with a tight gap; the ' +
+    'weak-side defenceman drops into the shaded lane and splits the middle and far attackers, ' +
+    'as on a 2-on-1. The backchecker’s route finishes in open ice because it takes the third ' +
+    'attacker, whichever that turns out to be, rather than the middle. ' +
+    'This version never concedes the middle, but the weak-side defenceman covers two people ' +
+    'and the far attacker gets more room; the two-wide default keeps three on three ' +
+    'if the backcheck arrives and concedes the middle if it does not. Ask your ' +
     'coach which one you are playing.',
 
   describe:
@@ -899,15 +918,22 @@ const trailer = {
     // nobody-or-two consequence in full. This caption is also voiced into winger.md and
     // neutral_zone_systems.md, which do NOT carry the assignment in prose — so the default and
     // the named alternative stay here, with the instruction to ask. Only the elaboration went.
-    'toward the defended net at the left. The first wave of two has pulled both defencemen low. The ' +
-    'trailer follows a few metres behind into the high slot, where the look is clean and unopposed. ' +
+    // ✂️ W464, 18 Nov 2026 (161 words before). winger.md (chunk 047) and
+    // neutral_zone_systems.md (chunk 041) still voice neither the assignment, its reason, the
+    // alternative beside the marker, so those stay; the shout is compressed, not cut, because
+    // winger.md voices it only in its Key Takeaways (078). CUT "The trailer is drawn here as a
+    // forward; it is often a defenceman who has activated": the owner's paragraph directly above
+    // the marker says "often a defenceman who has activated" (chunk 038); neutral_zone_systems.md
+    // frames the late man as a forward who delays, and winger.md as the opposing F3, so neither
+    // host needed the correction to the picture.
+    'toward the defended net at the left. The first wave of two has pulled both defencemen low, and ' +
+    'the trailer follows a few metres behind into the high slot with a clean, unopposed look. ' +
     'In the standard system, a low zone collapse behind a 2-1-2 forecheck, the defencemen stay with ' +
-    'the first wave, because if either steps up the first wave gets the net. In that system the ' +
+    'the first wave, because if either steps up the first wave gets the net, and the ' +
     'backchecking forward arriving from up-ice takes the trailer. That is an assignment rather than a law: some ' +
     'teams give the trailer to the weak-side defenceman and drop the third forward to the net front ' +
     'instead, so ask which your team runs. ' +
-    'The trailer is drawn here as a forward; it is often a defenceman who has activated. ' +
-    'The defencemen will see them before the backcheckers do, and "trailer!" or "high!" is the shout.',
+    'The defencemen see them before the backcheckers do: "trailer!" or "high!" is the shout.',
 
   describe:
     'The full sheet, the defended net at the left, the play in the defending zone. Three opposition ' +
