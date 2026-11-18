@@ -315,14 +315,14 @@ Never: Chase from behind their shoulder — that is jogging, and you cannot defe
 Action: Take a route that puts you inside them, between them and your net, even if it is slightly longer
 Position: Arrive at their inside hip, not their back pocket, so your stick reaches the passing lane
 Action: Take the ice, not the body — get ahead of your man and hold your lane; veering into an opponent off the puck can be called interference anywhere, and where checking is barred an illegal check too
-Rule: Never finish the chase into their back, puck or not — plan on it ending your game: no minor in the NHL, PWHL or IIHF (43.2), a game misconduct even at the floor in Hockey Canada 7.5(a) and CARHA 53(a); under USA Hockey, if reckless or meant to injure, a match and likely multi-game ban (602(a))
+Rule: Never finish the chase into their back, puck or not — plan on it ending your game: no minor in the NHL, PWHL or IIHF (43.2), a game misconduct even at the floor in Hockey Canada 7.5(a) and CARHA 53(a); USA Hockey: reckless, plan on a match; meant to injure, a match; likely multi-game ban (602(a))
 Rule: USA Hockey: even light checking from behind is at least a minor + misconduct (608(a)); forceful at the boards, head first into boards or net, or reckless, at least a major + game misconduct (608(b); Casebook 608 Sit. 1)
 Rule: A hit from behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c) (on the head 7.6(c)/7.7(c)) and CARHA 53(b); a hit meant to injure is a match in every book here but the IIHF, which has no match penalty — plan on ejection there
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Rule: Your blade goes in the passing lane, not on your man — NHL and IIHF 56.1 and PWHL 57.1 grant body position to lengthen their path to the puck on three conditions: stick not utilized, free hand not used, and no otherwise illegal check delivered off that position
 Rule: Hockey Canada 7.4(v) makes a body check to a blind side charging in every division — Interpretation 2: an open-ice check from outside a 90° view of a vulnerable opponent, "whether or not the player has the puck". 7.4(b) a major and game misconduct, mandatory on injury; 7.4(c) a match penalty
-Rule: USA Hockey 625 makes blocking a non-carrier (picks, lane or speed changes to play the body) an interference minor; hits may be roughing (640) or from behind (608), ejecting if forceful at the wall or head first into boards or net; reckless or meant to injure, a match, likely multi-game ban (602(a))
+Rule: USA Hockey 625 makes blocking a non-carrier (picks, lane or speed changes to play the body) an interference minor; hits may be roughing (640) or from behind (608), ejecting if reckless, forceful at boards or head first into boards or net; reckless, plan on a match; meant to injure, a match (602(a))
 Options: If you are genuinely beaten and can only chase, chase the stick — blade under theirs or on the puck, never reaching around their body, which is a hook or a trip
 Risk: Reaching around their body from behind is a hook or a trip, and near your own net that gets expensive
 ```
@@ -437,7 +437,7 @@ Position: Stick in the lane, on the ice, out front — passing options are arriv
 Never: Lunge — it is a single bet on their next move, and if you are wrong they have the whole net
 Action: In a checking league ride them wide along the wall until their options collapse — but a carrier who can see you coming is no less protected, because defenceless is not the whole boarding test
 Rule: Boarding is not only about a defenceless opponent — NHL, IIHF and PWHL 41.1 and Hockey Canada 7.2 write it that way, but USA Hockey 603 asks no such question, and those four name the obvious icing or offside race in terms, USA Hockey's 624(d) penalises needless contact on an obvious icing
-Rule: No book caps boarding at a minor; it can eject you — Hockey Canada 7.2(b) major and game misconduct, a must if hurt; USA Hockey 603(b) both if reckless; reckless or meant to injure, a match, likely multi-game ban (602(a)); IIHF 41.4 can reach both, nobody hurt; CARHA's floor: a 49(b) double minor
+Rule: No book caps boarding at a minor; it can eject you — Hockey Canada 7.2(b) major + game misconduct, a must if hurt; USA Hockey 603(b) both if reckless, and plan on a match; meant to injure, a match, likely multi-game ban (602(a)); IIHF 41.4 can reach both, nobody hurt; CARHA floor: 49(b) double minor
 Rule: IIHF women's Rule 101.1 prohibits using the boards to eliminate an opponent from the play, push her into the boards, or pin her along the boards — pin the puck, not the player
 Rule: An illegal hit in women's hockey is a minor, or a major plus an automatic game misconduct (IIHF Rule 101.1) — and in British women's hockey any major ejects you at every age, adult included: In-House Rule 101 applies "in all cases" and states no age scope of its own
 Never: Ride an opponent into the boards in any non-check adult or youth league, or finish a steer on a carrier's numbers anywhere, which is checking from behind. Pin the puck instead, not the player
@@ -541,7 +541,8 @@ Rule: In British women's hockey the IIHF's 57.3 major ejects you as well, at eve
 Risk: A late or wild slide is the one that trips somebody — but the timing is not the whole of the exposure
 Rule: USA Hockey: sliding anyone down is a trip "regardless of who gains possession of the puck", unless you knelt to block a shot and momentum took you into the shooter (Casebook 639 Sit. 4); if reckless, a mandatory major + game misconduct (639(b)) — plan on a match and a likely multi-game ban (602(a))
 Rule: Never finish a low hit into the back — it is checking from behind, not clipping: IIHF 43.1 "in any manner", no minor (43.2); Hockey Canada 7.5(a), CARHA 53(a) game misconduct at the floor; NHL, PWHL: vaguer, no laxer
-Rule: USA Hockey: a hit from behind is at least a minor + misconduct (608(a)); forceful at boards, head first into boards or net, or careless head or neck contact, at least a major + game misconduct (Casebook 608 Sit. 1; 608(b), 620(b)); reckless or meant to injure, a match, likely multi-game ban (602(a))
+Rule: USA Hockey: a hit from behind is at least a minor + misconduct (608(a)); forceful at the boards, head first into boards or net, reckless, or with careless head or neck contact, at least a major + game misconduct (608(b), 620(b); Casebook 608 Sit. 1)
+Rule: USA Hockey: plan on a match for a reckless hit from behind; it is mandatory with excessive force on a vulnerable or defenceless player (608(c)) or for one meant to injure (602(a)); likely multi-game ban either way
 Action: Ask which of the two your team plays, and settle it with your goalie before the game rather than during it
 ```
 
