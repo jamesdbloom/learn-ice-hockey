@@ -399,8 +399,8 @@ const theLine = {
     'It teaches a pattern; this is not a badly run practice, but it is expensive in ' +
     'time. How a ' +
     'practice is built is your coach’s call; what is yours is what you do while you ' +
-    'wait. Keep your feet moving: standing still for long stretches in cold air is how people ' +
-    'pull something on their next hard rep. ⚠️ Above all, keep your head up, because a practice ' +
+    'wait. Keep your feet moving: coaches warn that going flat out after standing still in a ' +
+    'cold rink is how people pull something. ⚠️ Above all, keep your head up, because a practice ' +
     'has loose pucks flying and a line against the boards is exactly where they arrive.',
 
   describe:

@@ -388,7 +388,7 @@ Two players do the same practice and one gets far more from it — the gap is ha
 Half of a typical team practice is standing in a line — a coaching estimate. That time is either wasted or used.
 
 - **Watch the rep in front of you and name what you'd do differently.** It is free mental practice.
-- **Keep your feet moving.** Standing still in cold air is how you pull something on the next hard rep. See [Conditioning and Recovery](conditioning_and_recovery.md).
+- **Keep your feet moving.** Going flat out on muscles that cooled while you stood in the line is a common way to pull something — a coaching caution, not a measured finding. See [Conditioning and Recovery](conditioning_and_recovery.md#warm-up) for what a warm-up does.
 - **Don't lean on your stick.** The habit follows you into games, where your stick needs to be on the ice.
 - **Head up.** Practices have loose pucks flying.
 - **Rehearse.** Picture your next rep specifically — see [Mental Game](mental_game.md).
@@ -579,7 +579,7 @@ Development stops when you're hurt, and the most common way amateurs get hurt wh
 
 - **Progress load gradually.** The classic pattern: four months of nothing, then five sessions in week one. Raise volume or intensity, not both, and not by much in any week.
 - **Beware the return from a layoff.** After a summer off or an injury, your tissue is deconditioned but your competitiveness is not. You will *feel* ready before you are. This is where groin and hip adductor problems — the classic hockey overuse complaint — tend to appear.
-- **Warm up before hard skating**, especially in cold rinks and before a game whose first shift is at full pace. Standing in a queue and then sprinting is a specific risk.
+- **Warm up before hard skating**, especially in cold rinks and before a game whose first shift is at full pace. Standing still in a queue and then sprinting is the same risk on a small scale, by common coaching caution.
 - **Treat technique rebuilds as load.** New patterns use tissue in unfamiliar ranges. Start them at low volume.
 - **Treat the soreness-versus-pain heuristic as a rule of thumb, not a clinical test.** The usual version: soreness that eases as you warm up is usually fine; pain that worsens is not. **It traces to no clinical guideline and is no substitute for assessment** — real injuries can warm up and feel better. See a physiotherapist for anything sharp, swollen, one-sided, or lasting more than a couple of weeks. A week off now is cheaper than a season.
 - **Sleep and protein are not optional.** They are how practice becomes skill and load becomes fitness.
