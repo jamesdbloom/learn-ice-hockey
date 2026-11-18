@@ -793,7 +793,7 @@ Key: Keep "step up" and "pinch" separate — stepping up is challenging in the n
 - **Do not step up unless you are confident you can win the puck.** Confidence, not hope — a missed step-up is an odd-man rush behind you. **How aggressive "confident" should be is a coaching choice:** a team playing an aggressive 1-2-2 neutral-zone press wants you challenging at the line and will accept the occasional miss; a team playing a passive 1-3-1 trap wants you holding and steering the carrier wide. Find out which risk your coach wants to carry.
 - **Step up or back off — do not do neither.** The killer is the half-commit: drifting forward, then changing your mind, and arriving late with a huge gap. Pick and go.
 - **The default when in doubt is back off with a tight gap.** It has no catastrophic failure mode.
-- **Keep "step up" and "pinch" separate.** Stepping up is challenging forward in the neutral zone or at your own line with nothing behind you. Pinching is stepping down from the *offensive* blue line with your forwards behind you. The pinch is the safer play; see [Defender](../positions/defender.md) and [Risk Management](../hockey-iq/risk_management.md).
+- **Keep "step up" and "pinch" separate.** Stepping up is challenging forward in the neutral zone or at your own line, where a miss leaves only your partner and goalie back. Pinching is stepping down from the *offensive* blue line, where your forwards are still in the zone to help. The pinch is the safer play; see [Defender](../positions/defender.md) and [Risk Management](../hockey-iq/risk_management.md).
 
 ---
 
