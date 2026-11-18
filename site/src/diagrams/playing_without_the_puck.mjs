@@ -421,19 +421,32 @@ const screenSightline = {
     'Keep your stick on the ice too, because a screen ' +
     'is also a tip and rebound threat, and move late. The picture cannot show what is ' +
     'legal. Outside the crease and touching nobody, a screen is normally ' +
-    'legal, but contact, or a position that stops the goalie moving freely in their crease, ' +
-    'can still cost the goal (NHL and IIHF 69.1). So keep both feet out of the blue paint and ' +
-    'off its red line, and touch nobody. Here "screen" means the goalie’s sightline and ' +
-    'nothing else. ' +
+    'legal, but contact, or a position that stops the goalie moving freely in their crease or ' +
+    'defending their goal, can still cost the goal (NHL and IIHF 69.1). So keep both feet out of the blue paint and ' +
+    'off its red line, and touch nobody. ' +
+    // ✂️ W459 (18 November 2026), 185 -> 180 words. Three hosts (render 18 Nov, after the
+    // cut: playing_without_the_puck.md chunk 044, rules_primer.md chunk 101,
+    // body_contact_and_battles.md chunk 116). CUT: 'Here "screen" means the goalie's sightline and
+    // nothing else.' A vocabulary note a player does nothing with in a section that is about the
+    // goalie's sightline; it guards the traffic/screen distinction, which the owner states in its
+    // facts (chunk 031) and "A word about the word" (chunk 035), and neither other host uses
+    // "screen" of skaters. MOVED, no word changed: the walking-speed mechanism now comes BEFORE the
+    // glyph, so the amber is the instruction alone and the caption still ENDS on it. NOT CUT, though
+    // the owner voices all of it in chunk 043 directly before: rules_primer.md voices neither the
+    // stick-on-the-ice / tip limb nor the head-first limb anywhere near chunk 101, and
+    // body_contact_and_battles.md voices the head-first limb only five chunks back (111).
+    'A head-down, head-first hit on a goal post is the same injury as one on the boards, and can ' +
+    'happen at walking speed. ' +
+    // ⚠️ W459 RULES REVIEW (WRONG, permissive, fixed): the 69.1 sentence carried only the
+    // move-freely limb. nhl_rules.txt 69.1 reads "impairs the goalkeeper's ability to move freely
+    // within his crease or defend his goal" -- both limbs are now in the caption.
     // SAFETY. Owner's own wording, the "Never:" fact in
     // content/hockey-iq/playing_without_the_puck.md § "Screening the goaltender". LAST.
     // ⚠️ THE FULL STOP AFTER "never duck" IS LOAD-BEARING AND MUST NOT BECOME AN EM DASH.
     // An em dash here lets the negation carry across, and a listener hears "never keep your
     // head up, never keep your chin off your chest" — the cervical-flexion mechanism taught as
     // the instruction.
-    '⚠️ Never meet a goal post head first, and never duck. Head up, chin off your chest instead. ' +
-    'A head-down, head-first hit on a goal post is the same injury as one on the boards, and can ' +
-    'happen at walking speed.',
+    '⚠️ Never meet a goal post head first, and never duck. Head up, chin off your chest instead.',
 
   describe:
     'The attacking end zone, the opposition net at the right with its goalie in the crease, ' +
@@ -595,7 +608,9 @@ const widthMakesTheMiddle = {
  * the point, so a carrier drawn in either would fill the space the picture exists
  * to show. Nor is the third of the drive's three effects drawn: "a rebound and
  * deflection threat, which changes the goalie's depth and attention" is not
- * spatial. Both are said in the captions rather than left as silent omissions.
+ * spatial. Both are said rather than left as silent omissions: the missing puck in the
+ * captions, the third effect (since W459, 18 November 2026) in the host prose and facts
+ * directly above the pair, in the chunk before it.
  * ------------------------------------------------------------------------- */
 
 // The defenceman the drive is pulling. Frame one: standing in the high slot, which
@@ -652,17 +667,23 @@ const driveTheNetBefore = {
   half: true,
   width: 900,
 
+  // ✂️ W459 (18 November 2026), 178 -> 140 words. Single host, playing_without_the_puck.md
+  // :629, both frames in render chunk 038 (18 Nov). CUT: "The drive has to be genuine" -- the
+  // host's own sentence in chunk 038 directly after the pair, and its facts "a half-hearted glide
+  // does not move anybody" (chunk 037); "the defender who has to leave it has not left it" and
+  // "No puck is drawn: the subject is the player who does not have it" -- picture narrative (the
+  // second frame, voiced next in the same chunk, says "and no puck"), which also removes a
+  // negation on a colon. KEPT: why the high slot is unshaded, effort-not-path, the
+  // twenty-feet-short scope disclosure, and the head-first instruction VERBATIM even though the
+  // host's facts Never line (chunk 037) carries it word for word -- a caption that drops the
+  // hazard because the prose carries it is the failure the promotion rule exists to stop.
   caption:
     'The first of two frames a beat apart, in the attacking end with the opposition net at the ' +
-    'right: you are skating hard at the net without the puck, and the defender you are about to ' +
-    'pull is still high, standing in the high slot. ' +
-    'That ice is deliberately not shaded here, because it is not open yet: the defender who has to ' +
-    'leave it has not left it. ' +
-    'The drive has to be genuine, so read the arrow as effort rather than as a path. It stops ' +
-    'more than twenty feet short of the goalmouth and off the defender’s line on purpose: what ' +
-    'happens ' +
-    'in the last few feet of a net drive is contact in front of a goalie, which this picture ' +
-    'does not teach. No puck is drawn: the subject is the player who does not have it. ' +
+    'right. You are skating hard at the net without the puck, and the defender you are about to ' +
+    'pull is still high, in the high slot, which is not shaded because it is not open yet. ' +
+    'Read the arrow as effort rather than as a path. It stops more than twenty feet short of the ' +
+    'goalmouth and off the defender’s line on purpose, because the last few feet of a net drive ' +
+    'are contact in front of a goalie, which this picture does not teach. ' +
     // SAFETY. The scope disclaimer above ("this picture does not teach") is not a warning when it
     // is read aloud, so the owner's own instruction follows it verbatim in substance:
     // content/hockey-iq/playing_without_the_puck.md:507 — "Never: Arrive into the goal frame head
@@ -709,17 +730,22 @@ const driveTheNetAfter = {
   // survives a marker move. "A before and an after, not two alternatives" stays: read as
   // two options the pair states the opposite of the causal claim it exists to make.
   caption:
-    'A net drive a beat later — a before and an after, not two alternatives, and this second ' +
-    'frame is the reason for the first. The defender has bent low with the driver, because ' +
-    'leaving a player driving the goalmouth is unacceptable to a defenceman, and the high slot they ' +
+    // ✂️ W459 (18 November 2026), 170 -> 113 words. Single host, render chunk 038, the same
+    // chunk as the first frame. CUT, each voiced in chunk 037 directly before (the three bullets at
+    // :623-627 and the facts Goal lines): "because leaving a player driving the goalmouth is
+    // unacceptable to a defenceman", and the third effect, "a rebound and deflection threat, which
+    // changes the goalie's depth and attention". The header note at the top of this group said the
+    // third effect is "said in the captions"; it is now said in the host prose beside them, which
+    // is where a listener meets it first. FULL STOPS after "not two alternatives" and after "no
+    // puck" (was a comma and a colon), so neither negation runs on into the next clause.
+    // W459 review: "Of the defence," added, because the late-arriving teammate and the driver are
+    // drawn too, so "only the pulled defender is drawn" read as false of the picture.
+    'A net drive a beat later: a before and an after, not two alternatives. This second frame is ' +
+    'the reason for the first. The defender has bent low with the driver, and the high slot they ' +
     'were standing in is now shaded and empty. That ice, and the point behind it, is what the ' +
-    'drive opens, and a teammate arriving into it late is how it gets cashed. ' +
-    'Neither of the two players who matter here has the puck, so none is drawn. The drive does ' +
-    'a third thing this picture cannot show — it makes a rebound and deflection threat, which ' +
-    'changes the goalie’s depth and attention — and the shaded band names a piece of ice, ' +
-    'not a marking on a real rink. ' +
-    'Only the defender who is pulled is drawn, because they are the only one the play fixes: read ' +
-    'the arriving route as one instance and not as a place to stand.',
+    'drive opens, and a teammate arriving into it late is how it gets cashed. The shaded band ' +
+    'names a piece of ice, not a marking on a real rink. Of the defence, only the pulled defender ' +
+    'is drawn, and no puck is drawn. Read the arriving route as one instance of the play, not as a place to stand.',
 
   describe:
     'The attacking half of the rink, the opposition net and goalie at the right, a beat after ' +
@@ -881,7 +907,7 @@ const legalRouteThroughTraffic = {
     'Your own legal route past a teammate, in the attacking end with the opposition net at the right. ' +
     'Your route goes round the outside of your teammate, who is standing still, and finishes in ' +
     'open ice, while the straight line your check would take to that same ice runs through them. ' +
-    'Your check has to go round. No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
+    'No arrow in this picture ends at a body. What makes the arrangement legal, and ' +
     'the other version a penalty, is settled by the section around the picture rather than by ' +
     'the drawing. A chaser ' +
     // ⚠️ "is not drawn" — NOT "is not something this corpus draws". The sentence's
@@ -894,8 +920,17 @@ const legalRouteThroughTraffic = {
     // cannot see them coming. Give them a shout as you come, and run past your teammate rather
     // than into the space they are standing in. That is a coaching caution, not a rulebook
     // requirement." LAST, for the promotion rule, and the qualifier travels with it.
-    '⚠️ The collision you are engineering is a defender at chase speed into a teammate who is ' +
-    'facing away and cannot see the defender. Shout as you come, and run past your teammate rather than ' +
+    // ✂️ W459 (18 November 2026), 159 -> 153 words. Single host, render chunk 032 (18 Nov),
+    // with the :556 paragraph directly before it in the same chunk. CUT: "Your check has to go
+    // round." -- :556 "so that your check has to go around them", same chunk, and the sentence before
+    // it in the caption already says the straight line runs through your teammate. KEPT: "legal" in
+    // the opening and the "settled by the section around the picture" hedge (it resolves to :556 in
+    // the same chunk), both not-drawn statements, and the safety caution VERBATIM. MOVED, no word
+    // changed: the glyph now opens "Shout as you come", so the hazard sentence is plain text before
+    // it and the amber is the instruction and its coaching-caution qualifier. The full caution is
+    // also at :570, chunk 034.
+    'The collision you are engineering is a defender at chase speed into a teammate who is ' +
+    'facing away and cannot see the defender. ⚠️ Shout as you come, and run past your teammate rather than ' +
     'into the space they are standing in. That is a coaching caution, not a rulebook requirement.',
 
   describe:

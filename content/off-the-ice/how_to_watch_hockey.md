@@ -227,7 +227,7 @@ The five jobs are drawn in [Breakouts](../systems/breakouts.md), frozen at the m
 
 ![](diagram:breakout-five-roles)
 
-- **Where is the strong-side winger?** The classic outlet spot is on the wall **between the hash marks and the goal line** — *below* the hash marks, not level with them. A winger up near the blue line may be playing a flat, spread or stretch breakout, or may never have come down from point coverage; either way, that pass is long and arrives in their back. A winger behind the goal line or in the corner usually means the breakout is already broken. See [Breakouts](../systems/breakouts.md).
+- **Where is the strong-side winger?** The classic outlet spot is on the wall **between the hash marks and the goal line** — at or just below the faceoff dot. A winger up near the blue line may be playing a flat, spread or stretch breakout, or may never have come down from point coverage; either way, that pass is long and arrives in their back. A winger behind the goal line or in the corner usually means the breakout is already broken. See [Breakouts](../systems/breakouts.md).
 - **Where is the centre?** Usually curling low-to-high through the middle. A centre standing still is one option fewer.
 - **Is the weak-side winger heading up ice early?** That is a **stretch** — trading support for speed.
 - **Does the second defenceman offer a D-to-D pass**, or stay glued to the net?

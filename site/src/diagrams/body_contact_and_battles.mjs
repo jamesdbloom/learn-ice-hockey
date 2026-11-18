@@ -599,17 +599,28 @@ const cornerEscapeRoutes = {
   // 54.1 (iihf_rules.txt:4595-4596) "restrains or impedes the progress of an opposing
   // Player"; Hockey Canada 8.1(a) (hc_layout.txt:5333) "holds an opponent in any manner";
   // USA Hockey 622 Note and 622(a) (usah.txt:4343-4356).
+  // ✂️ W459 (18 November 2026), 181 -> 130 words. Single host, body_contact_and_battles.md
+  // :1267. md_to_speech render 18 Nov, BEFORE the cut: caption chunk 109, sharing it with the
+  // coaching-choice heading after it. AFTER the cut (re-rendered): the caption ENDS chunk 108 and
+  // chunk 109 OPENS, two sentences in, on "Whose corner is it? This is a coaching choice, not a law
+  // of hockey" (:1273), with its Convention facts (:1276) in the same chunk. CUT, each voiced beside
+  // the marker: "Boards on two sides give the carrier two ways out" and "Angle the carrier so the
+  // escape left open is toward the wall and up, away from the net" -- :1262 prose and the facts
+  // Read/Action lines :1264-1265, in the caption's own chunk 108 directly before it; and the
+  // coaching-choice / find-out sentence, for the reason above. KEPT: the never-toward-the-slot
+  // instruction (folded into the third-escape sentence), the two-bars picture note, the
+  // age-group/league/book find-out, pin the puck and not the player (owner limb at :1239 is chunk
+  // 106), and never finish into the back of a player facing the boards. The glyph moved from the
+  // picture note onto the instruction, so the amber is the instruction alone.
   caption:
     'Why a corner is harder to defend than a piece of wall, drawn in your own end with the net you ' +
-    'are defending at the right. Boards on two sides give the carrier two ways out and both are ' +
-    'drawn: up the wall, or out behind the net. The third is not drawn because your defenceman is ' +
-    'standing in it, arriving on the carrier’s inside. Angle the carrier so the escape left open is toward ' +
-    'the wall and up, away from the net. Never leave open the one back toward the slot. Whose corner ' +
-    'this is in the first place is a coaching choice rather than a law of hockey, so find out which ' +
-    'your team plays. ⚠️ The route ends in two bars, meaning arrive and contain, and no contact is ' +
-    'drawn. What you pin is the puck and not the player, and whether an arrival like that may end in ' +
-    'contact at all depends on your age group, your league and the book they play under. Never finish ' +
-    'into the back of a player who is facing the boards.',
+    'are defending at the right. The carrier’s two ways out are drawn: up the wall, or out behind ' +
+    'the net. The third, back toward the slot, is the one you never leave open. Your defenceman is ' +
+    'standing in it, arriving on the carrier’s inside, so it is not drawn. The route ends in ' +
+    'two bars, meaning arrive and contain, and no contact is drawn. Whether an arrival like that may ' +
+    'end in contact at all depends on your age group, your league and the book they play under. ' +
+    '⚠️ Pin the puck and not the player. Never finish into the back of a player who is facing ' +
+    'the boards.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
@@ -923,10 +934,20 @@ const angleIntoTheCorner = {
   // facing the boards"), which "worst" matches. Every Case 3 limb is untouched: "damage
   // limitation", "if at all possible", stick and gloves up, arms out, "no head contact at all".
   // The amber still ends the caption on never turn / never duck / forearm and hip.
+  // ✂️ W459 (18 November 2026), 190 -> 189 words. PICTURE NARRATIVE ONLY. A first cut dropped
+  // "It sets off pointed at the corner and finishes running along the boards" and left "arriving on
+  // that angle" pointing at nothing, so Case 1 was never stated (diagram review: WORSE). It now
+  // says "It arrives on an angle", the owner's Case 1 ("arrive on an angle, not perpendicular",
+  // body_contact_and_battles.md :924). Two hosts (render 18 Nov: skating.md
+  // chunk 006, body_contact_and_battles.md chunk 086). NOTHING ELSE COULD GO. skating.md still voices
+  // no Case 3 (it points to Body Contact and Battles), so Case 3 stays verbatim; the provenance
+  // disclosure ("the ordering and the ranking do not") is voiced in no host and lives only in
+  // body_contact_and_battles.md's unvoiced Sources trailer; the chip/rim/reverse option is voiced
+  // in body_contact_and_battles.md (:924, same chunk) but nowhere in skating.md.
   caption:
     'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
-    'drawn. It sets off pointed at the corner and finishes running along the boards. ' +
-    'That is the first and best of three cases for meeting a wall. ' +
+    'drawn. It arrives on an angle and finishes running along the boards, and that is the first ' +
+    'and best of three cases for meeting a wall. ' +
     'The cases come from USA Hockey\'s material; the ordering and the ranking do not. ' +
     'Better still, a chip, a rim or a reverse decided before you arrive takes you out of the ' +
     'collision. The worst, for when you are already facing the wall and cannot turn, is damage ' +
@@ -1205,17 +1226,28 @@ const insideLaneLongerRoute = {
   // control of the puck). The last sentence now opens "Arc for the puck, not their body, and
   // never hold, ..." (+38 chars, "Never" -> "never"), so the amber carries the puck-not-body
   // condition as well as the hands limb. No other word changed.
+  // ✂️ W459 (18 November 2026), 170 -> 162 words. Single host, body_contact_and_battles.md
+  // :1549 (render 18 Nov, after the cut: caption chunk 140; the ```facts block above it is chunk
+  // 139, the "Under Hockey Canada or in a CARHA adult league" paragraph after it chunk 141). Merged the two
+  // picture sentences and the two condition sentences; no limb cut. The HC/CARHA scope is
+  // KEPT, not cut, because it limits the permission this caption states. After review it reads
+  // "Hockey Canada and CARHA give you no right to lengthen their route." as its own sentence, which
+  // takes the negation off the colon it sat on at HEAD, and then "Impeding an opponent without the
+  // puck is interference there (Hockey Canada 8.3, CARHA 66(a)), so hold only a lane you already
+  // have." Chunks 139 and 141 both voice the full form, including CARHA's own-dump-in limb. USA Hockey
+  // 625(a)(4) STAYS: the document voices it only in section 9 (chunks 021 and 128), twelve chunks
+  // away.
   caption:
-    'A loose puck neither team has, in your own end with the net you are defending at the right. ' +
-    'The faint dashed line is the opposition forward\u2019s straight route to it, not a marking on ' +
-    'the ice. Your route arcs, so you arrive already turned, inside them and on that line, and the ' +
-    'less direct way round is what is left for them. The two feet it costs you is the drawing\u2019s ' +
-    'geometry, not a fact about hockey. Body position is what does this work, and only while you ' +
-    'are going for the puck. Change your skating lane or your foot speed to play the opponent\u2019s ' +
-    'body rather than the puck and USA Hockey Rule 625(a)(4) makes that a minor for interference. ' +
-    'Hockey Canada and CARHA write no right to lengthen an opponent\u2019s path: impeding an opponent ' +
-    'without the puck is interference there, so hold only a lane you already have. ⚠️ Arc for the puck, not their body, and never hold, ' +
-    'pull, tug or grab with your free hand.',
+    'A loose puck neither team has, in your own end with the net you are defending at the right; ' +
+    'the faint dashed line is the opposition forward\u2019s straight route to it, not a marking on ' +
+    'the ice. Your route arcs, so you arrive already turned, inside them and on that line, leaving ' +
+    'them the less direct way round. The two feet it costs you is the drawing\u2019s geometry, not a ' +
+    'fact about hockey. Body position does this work only while you are going for the puck. Change ' +
+    'your skating lane or your foot speed to play the opponent\u2019s body rather than the puck and ' +
+    'USA Hockey Rule 625(a)(4) makes that a minor for interference. Hockey Canada and CARHA give ' +
+    'you no right to lengthen their route. Impeding an opponent without the puck is interference ' +
+    'there, so hold only a lane you already have. ' +
+    '⚠️ Arc for the puck, not their body, and never hold, pull, tug or grab with your free hand.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in ' +
@@ -1492,17 +1524,30 @@ const shotBlockGetClose = {
   // The glyph moves onto the screen case, which is now the hazard the caption carries.
   // KEPT WORD FOR WORD: the picture half, and the screen case with "commit fully ... or get out
   // of the lane" -- defender.md still voices no "commit fully" sentence anywhere.
+  // ✂️ W459 (18 November 2026), 163 -> 159 words. Two hosts (render 18 Nov:
+  // body_contact_and_battles.md chunk 145, defender.md chunk 048, after the cut). CUT: picture narrative only,
+  // compressed. MOVED, no word lost: the coaching-choice close now comes BEFORE the glyph, so the
+  // amber is the screen-case instruction and "commit fully or get out" alone. It cannot be cut:
+  // body_contact_and_battles.md voices its own Convention line two chunks on (147), the re-chunk
+  // recorded above. ⚠️ W459 diagram review (older Major, fixed): "From in front of your own
+  // goalie, do not block" was broader than the owner's "When you are screening your own goalie"
+  // (body_contact_and_battles.md :1672) and contradicted defender.md :785, where some systems want
+  // defenders blocking aggressively in front of the goalie. It now names the screening case.
+  // FULL STOP after "do not block" (was a colon): a negation on a colon can carry
+  // onto the clause after it, and the clause after it ends in "get out of the lane". KEPT: the
+  // ten-feet-versus-in-front-of-your-goalie sentence (defender.md voices "ten feet beats thirty"
+  // but not the in-front-of-your-goalie half), the screen case, and "commit fully ... or get out",
+  // which defender.md still voices nowhere else.
   caption:
-    'Where to block a shot from, drawn in your own end with the net you are defending at the right ' +
-    'and your goalie in its crease. An opposition defenceman has the puck at the point; the faint ' +
-    'dashed line is its straight path to the middle of your goal, not a marking on the ice. ' +
+    'Where to block a shot from, in your own end with your goalie in the net at the right. An ' +
+    'opposition defenceman has the puck at the point, and the faint dashed line is its straight path ' +
+    'to the middle of your goal, not a marking on the ice. ' +
     'Blocking from ten feet away is far more effective than blocking from three feet in front of ' +
-    'your own goalie, where a deflection is a goal. ' +
-    '⚠️ From in front of your own ' +
-    'goalie, do not block: a block adds a deflection to a shot they could not see, so get out of ' +
-    'the lane and let them see it. Anywhere else, commit fully or get out, and the one thing you ' +
-    'cannot do is stand half in the way with your eyes closed. How much your team blocks at all is a coaching choice, ' +
-    'so find out which yours plays and ask your goalie what they want.',
+    'your own goalie, where a deflection is a goal. How much your team blocks at all is a coaching ' +
+    'choice, so find out which yours plays and ask your goalie what they want. ' +
+    '⚠️ Where you would be screening your own goalie, do not block. A block there adds a deflection to a shot ' +
+    'they could not see, so get out of the lane and let them see it. Anywhere else, commit fully or ' +
+    'get out, and the one thing you cannot do is stand half in the way with your eyes closed.',
 
   describe:
     'The defensive half of the rink, the net being defended at the right and our goalie in ' +
