@@ -80,11 +80,18 @@ const fiveRoles = {
   width: 900,
 
   caption:
-    'The five jobs on a breakout, frozen at the instant the puck is retrieved. Your own defensive ' +
-    'zone is at the left of the picture and the play will move left to right. D1 has gone back for ' +
+    // W457 (18 November 2026): 176 -> ~135 words. CUT "and where they can see the forecheck
+    // arriving behind their partner -- which is why the calls are mostly theirs": a reason, not a
+    // thing drawn, and breakouts.md voices it in section 2 straight after this section-head
+    // diagram (facts "Key: You are usually the one who makes the call ... because you can see the
+    // forecheck arriving behind your partner" and the body bullet). how_to_watch_hockey.md does not
+    // voice it, but it is tactical colour, not a safety limb, rule, scope or hedge. The orientation
+    // sentence was compressed. KEPT word for word: every position, the coaching-choice disclosure
+    // with the centre-fly alternative and "ask your coach", and "no forecheck is drawn".
+    'The five jobs on a breakout, frozen at the instant the puck is retrieved, with your own ' +
+    'zone at the left and play moving left to right. D1 has gone back for ' +
     'the puck in the corner; D2 is on the opposite side of the net, level with the goal line, where a' +
-    ' pass behind the net reaches them and where they can see the forecheck arriving behind their partner ' +
-    '— which is why the calls are mostly theirs. The strong-side winger is on the boards between the ' +
+    ' pass behind the net reaches them. The strong-side winger is on the boards between the ' +
     'hash marks and the goal line, the centre is low support inside the faceoff dots rather than out ' +
     'on the wall, and the weak-side winger is the second option. This five-role structure is itself a' +
     ' coaching choice: it is the conventional swing breakout, and under a centre fly the centre ' +
@@ -379,12 +386,17 @@ const reverse = {
   // counter were later cut, 8 November and W298, with the host chunks that voice them listed in
   // the comments inside the caption.)
   caption:
+    // W457 (18 November 2026): WORDING ONLY, no limb cut. The picture sentence and the notation
+    // disclosure were compressed; "Both players here can be hit ... not seen travel." now sits
+    // BEFORE the glyph as plain text (it states the hazard), so the amber run is the instruction
+    // alone. Spoken "Important." is per caption, so unchanged. The posture stays: goaltender.md
+    // carries no skater wall posture beside this marker.
     'The reverse, drawn in your own defensive zone at the left of the picture. D1 was working up the ' +
-    'right wall; the forechecker has over-committed and skated past them, so D1 sends the puck back ' +
-    'down the boards behind them, against the flow, into the space that forechecker has just left, ' +
-    'where D2 is arriving. Read the opponent above D1 as a player already past them and unable to ' +
-    'stop. The puck is a hard backhand banked off the wall, drawn simply as the pass it is because ' +
-    'the drill notation has no symbol for a banked puck. ' +
+    'right wall when the forechecker over-committed and skated past them, so D1 sends the puck back ' +
+    'down the boards behind them, against the flow, into the space the forechecker has just left, ' +
+    'where D2 is arriving. Read the opponent above D1 as already past them and unable to ' +
+    'stop. The puck is a hard backhand banked off the wall, drawn as a plain pass because the ' +
+    'notation has no symbol for a bank. ' +
     // SHORTENED 8 November 2026 (1,245 chars). Cut: "Keep it straight from the rim: a rim goes
     // onward ..., a reverse goes back against it". Measured then (line numbers as of 8 Nov) in
     // breakouts.md facts :364 and :377, time_and_space.md:92, goaltender.md:864, defender.md:134.
@@ -428,8 +440,8 @@ const reverse = {
     // time_and_space.md's reverse facts line. The caption keeps the prohibition and the short
     // form, WALL_POSTURE_SHORT -- see wall_contact_clauses.mjs for its order and wording.
     // Second person kept ("If you are one of them"): this caption is voiced into goaltender.md.
-    '⚠️ Both players here can be hit on the wall, and D2 is arriving onto a puck they have not seen ' +
-    'travel. If you are one of them, never turn your back to anyone coming at you, and never duck. ' +
+    'Both players here can be hit on the wall, and D2 is arriving onto a puck they have not seen ' +
+    'travel. ⚠️ If you are one of them, never turn your back to anyone coming at you, and never duck. ' +
     WALL_POSTURE_SHORT,
 
   describe:
@@ -509,10 +521,18 @@ const rim = {
     // W33: "a hard PASS", not "a hard shot" — the route is `kind: 'pass'` (dashed) and it goes to a
     // teammate; the corpus's `kind: 'shot'` is a shot on goal, and the owner (breakouts.md :22)
     // calls the rim sending it "to a teammate further along".
+    // W457 (18 November 2026): CUT "which is the whole difference between this and a reverse" --
+    // both hosts voice the rim/reverse contrast by name: breakouts.md's reverse facts "Key: A rim
+    // goes onward around the boards ...; a reverse goes back against it" (before this marker) and
+    // defender.md's facts "Read: Rim to beat a forechecker sealing you ...; reverse to beat one who
+    // has over-committed" and "Rim vs. reverse" paragraph. "Onward" itself is kept: it is what the
+    // route shows. KEPT though restated in breakouts.md's rim facts: "low, flat and hard", the
+    // concedes-possession claim with its hedge, and the trapezoid pointer -- defender.md voices
+    // none of the three. The wall-play hazard now sits before the glyph as plain text, so the
+    // amber run is the instruction alone.
     'The rim: a hard pass around the boards behind the net to a teammate further along, usually the ' +
-    'far-side winger. Drawn in your own defensive zone at the left of the picture, and it travels ' +
-    'onward in the direction the puck was already going — which is the whole difference between this ' +
-    'and a reverse. The read drawn is a forechecker who has sealed D1 against the boards. Keep it ' +
+    'far-side winger. The puck travels onward, in the direction it was already going. Your own zone ' +
+    'is at the left. The read drawn is a forechecker who has sealed D1 against the boards. Keep it ' +
     'low, flat and hard. It concedes possession more often than any option except an outright clear ' +
     '— coaching judgement, not a tracked rate. The trapezoid rules where you play change where to ' +
     'aim it. ' +
@@ -532,12 +552,12 @@ const rim = {
     // as the wording's owner; KT6 is now about rims and reverses and carries no posture.
     // The medical mechanism (cervical flexion, "can occur at walking speed") stays with its owner,
     // content/technique/body_contact_and_battles.md section 6.
-    '⚠️ This is a wall play at both ends. D1 is sealed on the boards and the winger takes it on ' +
+    'This is a wall play at both ends: D1 is sealed on the boards and the winger takes it on ' +
     // W33: "If you are the skater on the wall" -- this caption is voiced into defender.md and
     // breakouts.md only; it is breakout-reverse, not this one, that goaltender.md embeds. The
     // second person is kept because a bare "your back" would still be ambiguous about which of
     // the two drawn skaters it addresses.
-    'the far wall. If you are the skater on the wall, never turn your back to anyone coming at you, and ' +
+    'the far wall. ⚠️ If you are the skater on the wall, never turn your back to anyone coming at you, and ' +
     'never duck. ' +
     WALL_POSTURE_SHORT,
 
@@ -982,14 +1002,20 @@ const centreSwing = {
   width: 900,
 
   caption:
+    // W457 (18 November 2026): 177 -> ~100 words. Sole host breakouts.md, whose facts block ends
+    // directly before this marker and voices every cut limb, with the body paragraph after it
+    // voicing them again: "which is the strong-side winger's ice, where one opponent would cover
+    // them both" (facts Never: + Risk:), "If you can touch the glass you are in the wrong job"
+    // (facts Key:), and the below/above-the-hash-marks reason (facts "Key: Below the hash marks the
+    // lane is open and the pass is short, and you receive facing up ice; above them ... the puck
+    // arrives into your back"). KEPT: the box and its two boundaries (what the shading means),
+    // the curl (what the route shows), and the coaching-choice disclosure with its counterweight
+    // word for word.
     'The centre’s low support swing, drawn in your own defensive zone at the left of the picture. The' +
     ' shaded box is where the centre is going: inside the faceoff dots and below the hash marks, in ' +
-    'the strong-side circle — not out on the wall, which is the strong-side winger’s ice, where one ' +
-    'opponent would cover them both. If you can touch the glass you are in the wrong job. The route ' +
+    'the strong-side circle, not out on the wall. The route ' +
     'curls away from the puck first and then turns back into it, which is how the centre arrives ' +
-    'already moving instead of receiving standing still. Below the hash marks the lane is open, the ' +
-    'pass is short and the centre receives facing up ice; above them the centre is level with the ' +
-    'opposition’s forwards and the puck arrives into their back. Centre-low is itself a coaching choice' +
+    'already moving instead of receiving standing still. Centre-low is itself a coaching choice' +
     ' — the alternative is the centre fly, and both are legitimate — but a centre flying in a flat or' +
     ' spread system where the wingers hold high near the blue line leaves nobody underneath the puck ' +
     'at all.',
@@ -1164,12 +1190,15 @@ const againstThe131 = {
   // disambiguation (the opening already says "in the neutral zone"). The coaching-choice "ask"
   // is KEPT: the prose does not voice it. The ⚠️ limb is unchanged.
   caption:
+    // W457 (18 November 2026): WORDING ONLY, no limb cut; "conventionally" (the hedge on the
+    // three's make-up) kept. The hazard sentence now sits before the glyph as plain text, so the
+    // amber run is the instruction alone; spoken "Important." is per caption, so unchanged.
     'Breaking out against a 1-3-1 in the neutral zone, your own end at the left. Counting out from ' +
-    'your end: a forward giving token pressure; three spread flat across the ice by the centre red ' +
-    'line, conventionally two forwards on the walls with a defenceman in the middle; and one ' +
+    'your end: a forward giving token pressure; three flat across the ice by the red ' +
+    'line, conventionally two forwards on the walls and a defenceman in the middle; and a ' +
     'defenceman behind them as the last man. The answer drawn is the defenceman carrying it out ' +
-    'with speed, with the winger on the boards at your blue line as the short outlet along the ' +
-    'wall, drawn with no route. Chipping it past them and racing for it is the other answer, not ' +
+    'with speed, the winger on the boards at your blue line as the short outlet, ' +
+    'drawn with no route. Chipping it past them and racing for it is the other answer, not ' +
     'drawn; which your team wants is a coaching choice, so ask. ' +
     // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with
     // no closing delimiter, so a warning placed mid-caption ambers everything after it. This
@@ -1181,7 +1210,7 @@ const againstThe131 = {
     // Wait on the wall for a pass with your back to anyone coming at you ... forearm and hip to the
     // wall" and the "Posted up still means body open to the ice" Technique: line). Sole host is
     // breakouts.md.
-    '⚠️ A player waiting on the boards is the one who gets hit. Body open to the ice, never ' +
+    'A player waiting on the boards is the one who gets hit. ⚠️ Body open to the ice, never ' +
     'turn your back to anyone coming at you and never duck. ' + WALL_POSTURE_SHORT,
 
   describe:

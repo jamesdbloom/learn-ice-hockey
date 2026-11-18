@@ -21,6 +21,26 @@ const F2_AT = { at: 'top-of-circle:right', dx: 14, dy: -2 }; // (68, 20)
 // across, and at dy 2 it was drawn sitting on the net's back rail.
 const CARRIER = { at: 'behind-net', dy: 6 };               // (94, 6)
 
+// WHERE BODY CHECKING IS BARRED -- the enumeration three captions carry (forecheck-212,
+// forecheck-roles-rotate, forecheck-2-3-lock). W457 (18 November 2026) made it ONE constant:
+// the three copies were word-identical apart from forecheck-212's rule numbers ("Rule 604(a)",
+// "604(b)", "Rule 7.3"), which W457 dropped there as citations, not scope -- every limb, book and
+// division is unchanged. Each caller supplies its own lead-in ("USA Hockey bars it" /
+// "USA Hockey bars body checking") so the pronoun always has an antecedent heard alone.
+// USA Hockey 604(a) and 604(b) stay in ONE sentence (see the 604(b) note above forecheck-pinch).
+// Provenance for every limb is in the W362 note on forecheck-212's caption.
+// ⚠️ W457 LAYER TEST: no host of forecheck-212 except forechecking_systems.md voices this list
+// near the marker, and that one only in part (604(a)/(b) and 7.3; not the local opt-out, Ice
+// Hockey UK U10/U12, the Women's NIHL or CARHA before the 2-1-2 marker), and rink_map.md voices
+// none of it beside forecheck-roles-rotate. So it is KEPT in all three, and the gap is reported
+// for routing into host prose rather than cut.
+const CHECKING_BARRED_WHERE =
+  ' at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
+  'hockey and whenever a checking team plays a non-checking one, and lets a local governing body ' +
+  'bar it in any classification; Hockey Canada at U13 and below, throughout female hockey and in ' +
+  'any other division a Member approves; Ice Hockey UK in its U10 and U12 junior leagues and the ' +
+  'Women\'s NIHL; and CARHA in every game.';
+
 // ===========================================================================
 // OVERVIEW — ANGLING. The only diagram in this file that is not a shape.
 //
@@ -236,7 +256,14 @@ const forecheck212 = {
     // (ihuk_junior_roc.txt "Game Length & Format": U10 "Cross-ice jamboree, non-checking", U12 "Full
     // ice, non-checking"; U14 up "checking"); the Women's NIHL (ihuk_wnihl_roc.txt: both formats
     // "Full ice, non-checking"). The list was closed and omitted all three.
-    'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey Rule 604(a) bars it at 12 & under and below, in every girls\' and women\'s classification and in non-check adult hockey, and lets a local governing body bar it in any classification; 604(b) bars it outright any time a checking team plays a non-checking one; Hockey Canada Rule 7.3 at U13 and below, throughout female hockey and in any other division a Member approves; Ice Hockey UK in its U10 and U12 junior leagues and the Women\'s NIHL; and CARHA in every game. \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
+    // W457 (18 November 2026): the enumeration is now CHECKING_BARRED_WHERE, shared with
+    // forecheck-roles-rotate and forecheck-2-3-lock. Rule numbers dropped (citations, not scope);
+    // 604(b)'s "outright any time" became the shared "whenever", same limb, same sentence as 604(a).
+    // Every other word of this caption is unchanged: the five hosts were re-read and none but
+    // forechecking_systems.md carries any of the list beside the marker (see the constant's note),
+    // and the check_caption_pairs dependencies of forecheck-212-stacked and forecheck-122 rest on
+    // this caption carrying it.
+    'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey bars it' + CHECKING_BARRED_WHERE + ' \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +
@@ -390,10 +417,15 @@ const forecheck212Stacked = {
     // USA Hockey 604(a)/(b) and Hockey Canada 7.3 enumeration. So those two are cut here; the
     // instruction to find out first, and "per fixture", are kept. If either host ever stops
     // embedding forecheck-212 straight before this diagram, the enumeration must come back.
-    'The strong-side or stacked 2-1-2, against the same carrier: F1 and F2 come from the same ' +
+    // W457 (18 November 2026): WORDING ONLY, 160 -> 141 words, no limb cut. "against the same
+    // carrier" dropped (a pointer at the neighbouring caption; "The carrier is behind their own
+    // net" below now introduces them); the count sentence compressed; "Sending two forwards into
+    // one corner" -> "Two forwards in one corner". The coaching-call disclosure, "find out first",
+    // "per fixture", the onus and the amber instruction are word for word.
+    'The stacked, or strong-side, 2-1-2: F1 and F2 come from the same ' +
     'side to overload one corner, and F3 shades to the puck side too, so all three forwards are ' +
-    'on one half of the ice. The count is unchanged, two deep, one high and both defencemen on ' +
-    'the blue line; only the sides move. The cost is drawn too: the far-side breakout, conceded ' +
+    'on one half of the ice. Still two deep, one high and both defencemen on the blue line; only the sides ' +
+    'move. The cost is drawn too: the far-side breakout, conceded ' +
     'on purpose. Which version your team runs is a coaching call, so find out. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. See the note on forecheck-212 above for why this
     // is short and why it is here at all. ONE OBJECTION ANSWERED, because it is a good one: a
@@ -408,7 +440,7 @@ const forecheck212Stacked = {
     // "not a licence" framing, then "Find out first" (moved up), then the carrier sentence, whose
     // colon became a full stop; the glyph opens the instruction alone, "Take the puck ... into
     // their back." No word added or cut.
-    'Sending two forwards into one corner is not a licence to go through the player in it. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. The carrier is behind their own net and about to turn their back to you, so the onus is on you. \u26A0\uFE0F Take the puck, take the ice, or angle them off it, and never finish into their back.',
+    'Two forwards in one corner is not a licence to go through the player in it. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. The carrier is behind their own net and about to turn their back to you, so the onus is on you. \u26A0\uFE0F Take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -1213,16 +1245,19 @@ const forecheckRolesRotate = {
     'Drawn the instant after the opponents move the puck defenceman to defenceman. The letter in ' +
     'each glyph is the role just taken; the label beside it is the role held a second earlier. ' +
     'The shape is this guide\'s ' +
+    // W457 (18 November 2026): the list is now CHECKING_BARRED_WHERE (byte-identical to what
+    // stood here). KEPT, because rink_map.md voices no body-checking scope at all beside this
+    // marker (its F1/F2/F3 section is vocabulary). GLYPH MOVED, as on forecheck-212-stacked: the
+    // "not a licence" framing and the onus clause are now plain text and the amber run is the
+    // instruction alone ("Take the puck ... into their back."). The colon after "on you" became a
+    // full stop for that; no word cut. Spoken "Important." is per caption, so unchanged.
     'default 2-1-2, though a lock system pins one winger to the third job instead; the defencemen ' +
     'hold the offensive blue line and do not rotate. Find out first whether you may body ' +
     'check in this game at all — it can change per fixture, not just per division. USA Hockey ' +
-    'bars it at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
-    'hockey and whenever a checking team plays a non-checking one, and lets a local governing body bar it in any classification; Hockey Canada at U13 and ' +
-    'below, throughout female hockey and in any other division a Member approves; Ice Hockey UK in its U10 and ' +
-    'U12 junior leagues and the Women\'s NIHL; and CARHA in every game. ' +
-    '⚠️ Being the new F1 is not' +
+    'bars it' + CHECKING_BARRED_WHERE + ' ' +
+    'Being the new F1 is not' +
     ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +
-    'so the onus is on you: take the puck, take the ice, or ' +
+    'so the onus is on you. ⚠️ Take the puck, take the ice, or ' +
     'angle them off it, and never finish into their back.',
 
   describe:
@@ -1359,10 +1394,12 @@ const forecheck23Lock = {
     // W362 also ADDED to the list, as on forecheck-212 and forecheck-roles-rotate (the same closed
     // list, same omissions): 604(a)'s local opt-out, Ice Hockey UK junior U10/U12, the Women's NIHL
     // and CARHA (Rule 49(a); no checking division).
+    // W457 (18 November 2026): list now CHECKING_BARRED_WHERE, byte-identical. KEPT: the sole host
+    // voices 604(a)/(b) and 7.3 in its 2-1-2 section and points back to it from the paragraph above
+    // this marker, but voices the local opt-out nowhere and Ice Hockey UK U10/U12 and the Women's
+    // NIHL only after the marker (the pinch section and What it costs). Reported for routing.
     'team plays. USA ' +
-    'Hockey bars body checking at 12 & under and below, in every girls\' and women\'s classification, in non-check ' +
-    'adult hockey and whenever a checking team plays a non-checking one, and lets a local governing body bar it in any classification; Hockey Canada at U13 and' +
-    ' below, throughout female hockey and in any other division a Member approves; Ice Hockey UK in its U10 and U12 junior leagues and the Women\'s NIHL; and CARHA in every game. ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division.',
+    'Hockey bars body checking' + CHECKING_BARRED_WHERE + ' ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
@@ -1434,9 +1471,16 @@ const forecheckPress = {
     // the delayed-penalty rule and the "on anything" limb in its own body and facts block.
     'The full-ice press: all three forwards deep and both defencemen stepping down from the ' +
     'offensive blue line. Nobody is left between those five and your own end, so one clean pass ' +
-    'out is a breakaway or an empty-net goal against. That is the trade, which is why coaches use ' +
-    'it almost exclusively late and trailing: down a goal, with the goalie pulled, or on a delayed ' +
-    'penalty. Both defencemen going is a called situation, not your own read; the common default ' +
+    'out is a breakaway or an empty-net goal against. ' +
+    // W457 (18 November 2026): CUT "That is the trade, which is why coaches use it almost
+    // exclusively late and trailing: down a goal, with the goalie pulled, or on a delayed
+    // penalty." -- restatement. The sole host voices it before the marker: forechecking_systems.md
+    // press facts "Read: Almost exclusively late and trailing -- down a goal in the last two or
+    // three minutes, or with the goalie pulled" and the jobs paragraph's "in a delayed-penalty or
+    // empty-net situation", and in full after it ("When a coach picks it"). KEPT: the called-
+    // situation default (non-negotiable 7; the section does not voice it -- only Key focus and
+    // "When not to pinch" do).
+    'Both defencemen going is a called situation, not your own read; the common default ' +
     'is one at a time. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. This caption instructs BOTH defencemen down the
     // walls, which is the pinch exposure rather than the arriving-forechecker one, so it carries
@@ -1463,7 +1507,11 @@ const forecheckPress = {
     // ", so" is NOT an inversion, checked on the rendered audio. Do not re-refer it.
     // W362 (16 November 2026): GLYPH MOVED only, no word changed, as on forecheck-pinch: the
     // 412-char amber now starts at the receiving-posture prohibition below.
-    'Pinching on anything is about the puck, not about the man. In many leagues body checking ' +
+    // W457: CUT "Pinching on anything is about the puck, not about the man." -- the sole host says
+    // it twice directly above the marker: the press facts "Never: Take 'pinch on anything' as a
+    // licence to seal a winger against the wall -- 'on anything' is about the puck, not the man"
+    // and the jobs paragraph's bolded "'On anything' is about the puck, not about the man."
+    'In many leagues body checking ' +
     'is not allowed at all, so find out whether you may body check in this game, not just in your ' +
     'division. ' +
     // RECEIVING POSTURE, SHORT FORM, identical to forecheck-pinch's so the two cannot drift. This
