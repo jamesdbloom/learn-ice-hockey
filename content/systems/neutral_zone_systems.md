@@ -675,7 +675,7 @@ Also called the **trailer** or **third man high**. One forward deliberately stay
 
 ```facts
 Position: Delay deliberately, staying 10 to 15 feet behind the play, and arrive into the space the first two attackers have vacated
-Goal: Arrive into the high slot behind a two-player rush — defenders track the puck, so the second man in is the one nobody picked up
+Goal: Arrive into the high slot behind a two-player rush — defenders track the puck, so the late man is the one nobody picked up
 Convention: Coaching material treats it as one of the most reliable scoring looks in hockey — consensus rather than a tracked figure
 Never: Drift five feet behind — being the late man means a full gap back, so the defence has to choose between you and the puck
 Action: Be the first man back if it turns over — that is the deal
@@ -685,7 +685,7 @@ The picture below is drawn from the defending bench, because that side has to so
 
 ![](diagram:rush-trailer)
 
-**Why it works.** Defenders track the puck and the immediate threats, so the player arriving second is the one nobody picked up. Coaching material treats the late man into the high slot behind a two-player rush as one of the most reliable scoring looks in hockey. That is **coaching consensus rather than a tracked figure**: published goal breakdowns stop at the shot and the pass before it, and **none classifies a rush goal by the coverage that broke down**.
+**Why it works.** Defenders track the puck and the immediate threats, so the player arriving behind the first wave is the one nobody picked up. Coaching material treats the late man into the high slot behind a two-player rush as one of the most reliable scoring looks in hockey. That is **coaching consensus rather than a tracked figure**: published goal breakdowns stop at the shot and the pass before it, and **none classifies a rush goal by the coverage that broke down**.
 
 **The discipline.** Be genuinely late — a full gap back, not five feet, so the defence has to choose between you and the puck. And be first back if it turns over; that is the deal.
 

@@ -686,10 +686,10 @@ Rule: Throwing, shooting or kicking a stick or any object at the puck or carrier
 
 ### The late man / trailer
 
-The player who arrives second is the one who gets forgotten. How often that is the reason a rush ends in a goal is coaching consensus rather than a tracked share — [Neutral Zone Systems](neutral_zone_systems.md) sets out what is and is not counted about rush goals.
+The player who arrives behind the first wave is the one who gets forgotten. How often that is the reason a rush ends in a goal is coaching consensus rather than a tracked share — [Neutral Zone Systems](neutral_zone_systems.md) sets out what is and is not counted about rush goals.
 
 ```facts
-Key: The player who arrives second is the one who gets forgotten — how often that is the reason a rush ends in a goal is coaching consensus, not a tracked share
+Key: The player who arrives behind the first wave is the one who gets forgotten — how often that is the reason a rush ends in a goal is coaching consensus, not a tracked share
 Position: The trailer follows a few metres behind and arrives into the high slot with a clean, unopposed look
 Convention: In this guide's standard system — low zone collapse behind a 2-1-2 forecheck — the trailer belongs to the backchecking forwards, not the defencemen
 Options: Some teams give the trailer to the weak-side defenceman and drop the third forward to the net front — ask which yours runs

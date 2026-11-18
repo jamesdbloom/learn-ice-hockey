@@ -709,7 +709,11 @@ const threeOnTwoAlternative = {
     'attackers stand where they do in the two-wide default; only the defence has ' +
     'changed. The strong-side defenceman takes the carrier as a 1-on-1 with a tight gap; the ' +
     'weak-side defenceman drops into the shaded lane and splits the middle and far attackers, ' +
-    'as on a 2-on-1. The backchecker’s route finishes in open ice because it takes the third ' +
+    // W464 follow-up, 18 Nov 2026: "The backchecker’s route" -> "The backchecking centre’s
+    // route". The glyph is labelled C, as in the two-wide default (whose caption calls it "the
+    // backchecking centre") and this diagram's own describe; naming it here ties the C to the
+    // words. Label kept: C is the module's centre notation and the pair should match.
+    'as on a 2-on-1. The backchecking centre’s route finishes in open ice because it takes the third ' +
     'attacker, whichever that turns out to be, rather than the middle. ' +
     'This version never concedes the middle, but the weak-side defenceman covers two people ' +
     'and the far attacker gets more room; the two-wide default keeps three on three ' +
@@ -921,7 +925,11 @@ const trailer = {
   width: 900,
 
   caption:
-    'The trailer, or late man — the attacker who arrives second — with the attack moving right to left ' +
+    // W464 follow-up, 18 Nov 2026: was "the attacker who arrives second". The picture draws
+    // a first wave of two (A1, A2) and the trailer (A3) behind them, and the owner's prose
+    // says "following the rush a few metres behind": the trailer arrives after the first
+    // wave, not second.
+    'The trailer, or late man — the attacker who arrives behind the first wave — with the attack moving right to left ' +
     // ⚠️ SHORTENED 23 October 2026 (caption echo). The owner's bullet below the marker states
     // the why (a defenceman who steps up hands the first wave the net), the trade-off and the
     // nobody-or-two consequence in full. This caption is also voiced into winger.md and
