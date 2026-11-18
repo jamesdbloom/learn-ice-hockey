@@ -775,12 +775,16 @@ const pinchCentreDeep = {
   // SHORTENED 22 October 2026 (~1,752 chars). The caption's own text was narrative only and is
   // cut to the picture, the count and the question. Its caveats are PINCH_CAVEATS_AFTER_HIGH —
   // since 27 Oct 2026 the contact limb alone; see the layer test above PINCH_CAVEATS.
+  // ✂️ W468, 18 November 2026: wording only, no limb cut. The "am I right? / still miss it"
+  // question STAYS: risk_management.md voices it in bold just above the pair, but
+  // game_management.md's "Pinching defencemen" item does not, and this caption is where that
+  // host hears it (see the W302 note on pinchCentreHigh).
   caption:
-    'A pinch at the offensive blue line with the centre below their goal line — the arrangement ' +
-    'that makes a pinch a bad decision even when it works. In front of the pinching defenceman it ' +
-    'looks like a good pinch; behind them, their partner is the only player between two of the ' +
-    'opposition forwards and your own end. Beat the pinch and it is a two-on-one the other way, ' +
-    'and it was waiting to happen whether the pinch came off or not. So before you jump a lane, ' +
+    'A pinch at the offensive blue line with the centre below their goal line, which makes it ' +
+    'a bad decision even when it works. In front of the pinching defenceman it looks like a ' +
+    'good pinch; behind them, their partner is the only player between two of the opposition ' +
+    'forwards and your own end. Beat the pinch and it is a two-on-one the other way, waiting ' +
+    'to happen whether the pinch came off or not. So before you jump a lane, ' +
     'pinch or activate, ask not only "am I right?" but "what happens if I am right and I still ' +
     'miss it?" ' + PINCH_CAVEATS_AFTER_HIGH,
 
@@ -961,20 +965,38 @@ const crossIceOwnEnd = {
   // your own goalie" -> "in front of your goalie", "the reach of their stick" -> "their stick's
   // reach", "If you are the one collecting" -> "If you collect". The ⚠️ sentence and
   // WALL_POSTURE_SHORT are untouched.
+  // ✂️ W468, 18 November 2026. One host, risk_management.md §3. ADDED the instruction as the
+  // lead ("Never pass across the front of your own net."), the owner's own worked example, so a
+  // viewer meets it before the picture. CUT: "Your own zone, your net at the right" (the
+  // describe and the picture carry the orientation), "structured", "in front of your goalie"
+  // (the shaded slot is in front of the net), "; here it is not" (the sentence before it and
+  // the picture show the middle forward in the lane), "already", "equally"; the negation
+  // "stick reach not drawn" now closes on a full stop. The contact limb is reworded, not cut:
+  // the route still "ends in two bars short of a player" and a hit still turns on whether the
+  // league allows body checking. MOVED the ⚠️ from the contact limb to
+  // the posture instruction, so the amber band covers the instruction only (W464 lesson);
+  // breakouts.mjs's breakout captions use the same "⚠️ If you ... never turn your back" form.
+  // Every picture disclosure, the designed-breakout distinction and the posture are kept.
+  // W468 follow-up (diagram and safety review): "made only into an empty middle" turned the
+  // condition into a pass target, so it is back to "made only when the middle is empty".
+  // "east–west" is cut ("across" carries it). The posture gains "Skates parallel to the wall",
+  // inline. To stay within 150 words, three descriptive words went: "pass" after "breakout",
+  // "strong-side" before "corner", and "shaded" before "slot"; and "not drawn, so do not count
+  // bodies" closes on a full stop instead ("not drawn. Do not count bodies.").
   caption:
-    'Your own zone, your net at the right. A defenceman sealed in the strong-side corner ' +
-    'passes east–west below the tops of the circles, across the shaded slot in front of your ' +
-    'goalie. Their middle forward stands beside the lane, their stick’s reach into it not ' +
-    'drawn, and their third forward is already sliding across. A designed cross-ice option in a ' +
-    'structured breakout is a different play, taken only when the middle is empty; here it is ' +
-    'not. The far outlet could equally be your weak-side defenceman, and their defencemen are not ' +
-    'drawn, so do not count bodies. ⚠️ No contact is drawn: the sliding forward’s route ends in ' +
-    'two bars, so it stops there rather than carrying through a player, and what an arrival like ' +
-    'that may end in depends on whether your league allows body checking at all. ' +
-    // Its wording and order are WALL_POSTURE_SHORT's -- see wall_contact_clauses.mjs.
-    'If you collect a puck on that wall, never turn your back to anyone coming ' +
-    'at you, and never duck. ' +
-    WALL_POSTURE_SHORT,
+    'Never pass across the front of your own net. A defenceman sealed in the corner passes ' +
+    'below the tops of the circles, across the slot. Their middle forward stands beside the ' +
+    'lane, stick reach not drawn. Their third forward slides across. A designed cross-ice ' +
+    'breakout is a different play, made only when the middle is empty. The far outlet could ' +
+    'be your weak-side defenceman. Their defencemen are not drawn. Do not count bodies. No ' +
+    'contact is drawn: the sliding forward’s route ends in two bars short of a player, and ' +
+    'whether a hit may follow depends on whether your league allows body checking. ' +
+    // The posture is WALL_POSTURE_SHORT's wording and order with "Skates parallel to the wall"
+    // added in front (W468 safety review), written INLINE because WALL_POSTURE_SHORT is shared
+    // by other captions -- see wall_contact_clauses.mjs. Head up first, shoulder negation LAST.
+    '⚠️ If you collect a puck on that wall, never turn your back to anyone coming ' +
+    'at you, and never duck. Skates parallel to the wall, head up, chin off your chest, and ' +
+    'take any contact on your forearm and hip, never the point of your shoulder.',
 
   describe:
     'The defending half of the rink, your own net at the right. Three own players are drawn as ' +

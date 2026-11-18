@@ -235,16 +235,16 @@ const denyTheReception = {
   width: 900,
 
   caption:
-    'Denying the reception rather than the pass, drawn as one instance: a pass from ' +
-    'the wall into the middle of your own end. The read is the same wherever the pass goes. ' +
-    'The pass and the covering run ' +
-    'are one instant here, not one after the other. Your stick is not drawn and belongs in the ' +
-    'lane, or on the receiver’s blade as the puck lands — a press, not a chop. The route ends in two bars rather than an arrowhead because ' +
-    'it finishes on a patch of ice and not on a person, no contact is drawn here, and what ' +
-    'an arrival like this may end in depends on whether your league allows body checking. ' +
-    'Come from where the receiver can see you, and never finish into the back of a player ' +
-    'who is turned away from you. Who takes this ' +
-    'job depends on the coverage your team plays; the read is the same for a defenceman.',
+    'Deny the reception, not the pass. Drawn here as one instance: a pass from the wall ' +
+    'into the middle of your own end. The read is the same wherever the pass goes. The pass ' +
+    'and the covering run are one instant, not a sequence. Your stick is not drawn. It ' +
+    'belongs in the lane, or on the receiver’s blade as the puck lands — a press, not a ' +
+    'chop. The route ends in two bars rather than an arrowhead because it finishes on ' +
+    'ice, not on a person. No contact is drawn. What an arrival like this may end ' +
+    'in depends on whether your league allows body checking. Come from where the receiver ' +
+    'can see you, and never finish into the back of a player turned away from you. Who ' +
+    'takes this job depends on the coverage your team plays; the read is the same for a ' +
+    'defenceman.',
 
   describe:
     'Your own end, your net at the right and your goalie in the crease. Two opposition ' +
@@ -362,20 +362,15 @@ const showAShoulder = {
   // ⚠️ Kept OUT of the string run on purpose: a // line inside `caption:` ends the run
   // for check_caption_negations.py's CAPTION regex, which then scans only the prefix.
   caption:
-    'Space created in the defender’s mind before it exists on the ice. The carrier’s line is ' +
-    'aimed at the inside shoulder, the one toward the middle of the ice; ' +
-    'the defenceman closes the middle — the shaded band — and the ice between them and the ' +
-    'boards is what opens. ' +
-    'The mirror is not drawn here, but it works the ' +
-    'same way: skate at the outside shoulder, the defenceman widens, and the middle opens ' +
-    'instead. The line stops well short of the defenceman and no contact is drawn. Two honest ' +
-    'limits. A defender who does not ' +
-    'bite gives you nothing, so read this as a defender who moved and not as a ' +
-    'promise that they will; and deception costs you a beat, so with two forecheckers closing ' +
-    'and your back to the boards, fake nothing and make the simple play. Nothing here is ' +
-    'painted on the ice: the band’s sides are the two faceoff-dot lines, and its ends are ' +
-    'drawn only so the shading has an edge — the middle is a lane running the length of the ' +
-    'rink and nothing gives it a depth.',
+    'The carrier’s line is aimed at the inside shoulder, the one toward the middle of the ' +
+    'ice; the defenceman closes the middle — the shaded band — and the ice between them and ' +
+    'the boards is what opens. The mirror is not drawn here, but it works the same way: ' +
+    'skate at the outside shoulder, the defenceman widens, and the middle opens instead. ' +
+    'The line stops well short of the defenceman and no contact is drawn. A defender who ' +
+    'does not bite gives you nothing, so read this as a defender who moved and not as a ' +
+    'promise that they will. The band is not painted on the ice. Its sides are the two ' +
+    'faceoff-dot lines, and its ends are drawn only so the shading has an edge: the middle ' +
+    'is a lane running the length of the rink, and nothing gives it a depth.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, the attack moving left ' +

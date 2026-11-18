@@ -167,13 +167,16 @@ const wallReception = {
   // shoulders; read the retrieval as a job. "Every shape here was forced by the notation" became
   // "the retriever is drawn as a defenceman": the header note above says the triangle was CHOSEN
   // (the section says only "a teammate"), so "forced" overstated it. "coming" and "itself" cut.
+  // ✂️ W468, 18 November 2026: the picture disclosures before the safety block compressed again,
+  // each kept in short form: visible before the pass, no look drawn (no head in the notation),
+  // pressure could come from the middle so check both shoulders, the retriever could be any
+  // teammate (the triangle was chosen; the section says "a teammate"). "Level with the faceoff
+  // dot" cut: the scanning host defines the half-wall that way in the paragraph above the marker.
+  // Everything from "Looking does not protect you" to the end is UNCHANGED, word for word.
   caption:
-    'A single instant: the puck is in the air to you on the half-wall, level with the faceoff dot, ' +
-    'and a forechecker is already closing. Everything in the ' +
-    'picture was there to be seen before the puck was even passed. ' +
-    'The looking cannot be drawn: this notation has no head, no facing and no stick. ' +
-    'The pressure is drawn down the wall and could as easily come from the middle, so check ' +
-    'both shoulders. The retriever is drawn as a defenceman; read it as a job, not a position. ' +
+    'One instant, everything visible before the pass: the puck is coming to you on the half-wall ' +
+    'and a forechecker is closing. No look is drawn. The notation has no head. Pressure could ' +
+    'come from the middle too, so check both shoulders. The retriever could be any teammate. ' +
     // SAFETY, LAST. The owner's own override, scanning_and_anticipation.md:149 and Key Takeaway 13
     // at :583, which says in terms that it outranks every tactical point beside it. A player
     // standing on the wall with a checker arriving is exactly the shape that override exists for,
@@ -531,18 +534,12 @@ const guess = {
 
   caption:
     'The second of the two frames: the same moment, the same read, and the other choice. You have ' +
-    'left the band, which now has nobody in it, ' +
-    'and committed to the passing lane. If the pass does not come, or you miss it by ' +
-    'a foot, the carrier has a clean lane at your goalie. ' +
-    'This is not an instruction never to jump: it is the ' +
-    'right play when you have a real cue, when there is support behind you covering the ice you ' +
-    'are vacating, and when the puck is in the neutral or the offensive zone, ' +
-    'where being wrong costs a rush against rather than a goal against. What makes it a gamble here ' +
-    'is the place: in the middle of your own zone a miss is a ' +
-    'point-blank chance. The read has to be well better ' +
-    'than even before it is worth taking, and considerably better than that in your own end. If ' +
-    'you are the last player back there is no version of ' +
-    'this jump worth making at all.',
+    'left the band, which now has nobody in it, and committed to the passing lane. If the pass ' +
+    'does not come, or you miss it by a foot, the carrier has a clean lane at your goalie. ' +
+    'This is not an instruction never to jump. On a real cue, with support behind you, in the ' +
+    'neutral or offensive zone, it can be the right play. Here the place makes it a gamble: in ' +
+    'the middle of your own zone a miss is a point-blank chance, so the read has to be far better ' +
+    'than even. If you are the last player back, there is no version of this jump worth making.',
 
   describe:
     'The same end zone and the same instant as the previous diagram, with everything unchanged ' +

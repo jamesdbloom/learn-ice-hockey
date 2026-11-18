@@ -116,18 +116,23 @@ const offsideFaceoffLocation = {
   // the carried-unintentionally and deliberate (83.7) limbs, the spot-not-patch clause, the 89 ft
   // arithmetic disclosure and the "move the pass" sentence are word for word. The only host is
   // rules_primer.md (caption at chunk 019).
+  // ✂️ TRIMMED 18 November 2026, W468, from 189 words. CUT, because rules_primer.md voices both in
+  // the caption's own chunk: the 89 ft sentence WITH its arithmetic disclosure (the host gives the
+  // figure and says it is the sheet's spot positions added up), and the "not a fixed destination"
+  // clause ("move the pass" says it positively). The spot-not-patch clause is now its own sentence so the negation ends on a full
+  // stop. KEPT: the book scope and "check your own book" (the host names only USA Hockey's
+  // differing wording), the carried / deliberate (83.7) / shot-or-passed limbs that name the two
+  // markers, the alternatives-not-sequence reading, and "move the pass".
   caption:
     'Where the draw goes after an offside, under NHL Rule 83.6 — the IIHF and PWHL write it the ' +
     'same way; USA Hockey, Hockey Canada and CARHA word it differently, so check your own book. ' +
-    'One attacker has preceded the puck into the attacking zone at the right, and the two entries ' +
-    'drawn are alternatives rather than a sequence, because what the rule turns on is how the puck ' +
-    'followed them in. Carried over the line unintentionally, and the draw is the neutral-zone spot ' +
-    'nearest that attacking zone; a deliberate offside goes to the offending team’s own end (83.7). ' +
-    'Shot or passed in, and it goes back to the faceoff spot in the zone closest to ' +
-    'where the pass came from — a spot, not the patch of ice it was shot from — drawn as a ' +
-    'defenceman firing it in from their own end. The two draws are 89 feet apart up the ice, which is ' +
-    'arithmetic on the rink dimensions, not a figure from the rulebook. That far marker is this ' +
-    'pass’s answer and not a fixed destination. Move the pass and the spot moves with it.',
+    'One attacker has preceded the puck into the zone at the right. The two entries are ' +
+    'alternatives, not a sequence. The rule turns on how the puck then came in. Carried in ' +
+    'unintentionally, and the draw is the neutral-zone spot nearest that zone; a deliberate ' +
+    'offside goes to the offending team’s own end (83.7). Shot or passed in, it goes to the ' +
+    'faceoff spot in the zone closest to where the pass came from, drawn as a defenceman firing ' +
+    'it in from their own end. That is a faceoff spot, not the patch of ice it left. The far ' +
+    'marker is this pass’s answer. Move the pass and the spot moves with it.',
 
   describe:
     'The full sheet. The attacking zone is at the right, the attacking blue line a quarter of the ' +
@@ -453,16 +458,26 @@ const icingTheRaceAndTheDot = {
   // the clause the picture of two skaters racing at the end boards creates; the scope sentence and
   // the boarding / 624(d) limb are unchanged and stay as plain caption text in front of it. The
   // caption still carries a glyph, so md_to_speech still voices "Important." for it.
+  // ✂️ TRIMMED 18 November 2026, W468, from 183 words. CUT: "be clearly on course to reach the
+  // puck first" (the mechanism sentence still says arriving level settles nothing and a race too
+  // close to call is icing), "This is not everybody’s icing." folded into "Ask which icing your
+  // league plays." (both hosts voice the book scope beside the marker), and the rule NUMBERS of
+  // the boarding limb (41.1, 7.2, 624(d)); the book names and the limb itself stay, because
+  // neither host voices it near the marker (rules_primer.md carries it in "What this means for
+  // how you play", goaltender.md not at all). Boarding limb re-read: NHL and IIHF 41.1, Hockey
+  // Canada 7.2, PWHL 41.1, USA Hockey 624(d). "charging if not" added W468: all four books' clause
+  // ends "In other instances where there is no contact with the boards, it should be treated as
+  // 'charging'"; HEAD carried only the boarding half, which read as permissive away from the boards.
+  // The ⚠️ and the full posture are unchanged word for word.
   caption:
-    'Hybrid icing: both skaters reach the end-zone dots level, and the box marks the near dot ' +
-    'only as the deadline for the decision, not a finish line. The linesperson decides on ' +
-    'who would touch the puck first, so being level settles nothing: be clearly on course to reach ' +
-    'the puck first, because a race still too close to call at the dots is icing. ' +
-    'This is not everybody’s icing. Ask which your ' +
-    'league plays. The race is not a licence to hit: unnecessary contact with a player playing ' +
-    'the puck on an obvious icing is boarding if they hit the boards (NHL, IIHF and PWHL 41.1, ' +
-    'Hockey Canada 7.2), and USA Hockey penalises any unnecessary contact on an obvious icing ' +
-    '(624(d)). ⚠️ Whoever wins, in any league, checking or not, never turn your back to anyone coming ' +
+    'Hybrid icing: the boxed dot is a deadline, not a finish line. By then the ' +
+    'linesperson must judge who would touch the puck first, so arriving level settles nothing. ' +
+    'A race too close to call is icing. Ask which icing your league plays. ' +
+    'The race is no licence to hit. ' +
+    'In the NHL, IIHF, PWHL and Hockey Canada, unnecessary contact with the player on the puck ' +
+    'on an obvious icing is boarding if they hit the boards, charging if not. USA Hockey ' +
+    'penalises any such ' +
+    'contact. ⚠️ Whoever wins, in any league, checking or not, never turn your back to anyone coming ' +
     'at you, and never duck. Get your skates parallel to the wall instead, take it on your ' +
     'forearm and hip, head up and chin off your chest' +
     SHOULDER_TAIL,
