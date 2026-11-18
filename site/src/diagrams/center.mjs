@@ -162,7 +162,10 @@
  * that goes stale the next time the file is extended.)
  *
  * +y is called "right" by the coordinate table, which is a name for the top of the
- * drawing and not a skater's right hand. Nothing below claims anyone's handedness. The
+ * drawing and not a skater's right hand. Nothing below claims anyone's handedness. ⚠️ BUT THE
+ * RW/LW LABELS DO NAME A SIDE, from the player's own side facing the net he attacks: attacking
+ * toward +x the top wall is his LEFT, defending a net at +x it is his RIGHT. Specs 2-5 had
+ * this inverted until W472 (18 Nov 2026). The
  * puck is put on the +y side in specs 1 to 4 so that "strong side" means one thing.
  * ⚠️ SPEC 5 IS THE EXCEPTION AND IT IS NOT AN OVERSIGHT: its puck is on the centre line at
  * y 0, because the whole claim that section makes is that from the middle there is no
@@ -251,6 +254,9 @@ const outOfTheMiddle = {
     // circle's 3.275 ft of ink tops out at 39.775 against an inner boards ink edge of
     // 42.2 at this x — x = 71 is still on the STRAIGHT boards, since the corner arc starts
     // at |x| > 72, so 42.2 is the right edge to measure against and not a corner value.
+    // W472 (18 Nov 2026): CHECKED AND LEFT AS RW. Here your own net is at the RIGHT, so a
+    // skater breaking out faces -x and the top (+y) wall is his RIGHT hand. Specs 2-5 attack
+    // toward +x, where the top wall is the LEFT, and those four were relabelled.
     { id: 'RW', pos: 'F', at: { at: 'half-wall:right', dx: 2, dy: -2 } },                   // (71, 36.5)
 
     // The traffic. Two opponents through the middle, both up-ice of the centre, because
@@ -295,7 +301,8 @@ const outOfTheMiddle = {
 // zone_entries.md, and one that raises an offside question this section never mentions.
 // The tip is now (3, 40), twenty-two feet short of the line.
 //
-// ⚠️⚠️ AND THE PASS RECEIVER WAS STANDING IN THE ATTACKING ZONE. RW was anchored at
+// ⚠️⚠️ AND THE PASS RECEIVER WAS STANDING IN THE ATTACKING ZONE. The top winger (labelled RW
+// until W472, LW now) was anchored at
 // x = 26. `blue_line_x` is 25 and the painted band is 24.5 to 25.5, so his ANCHOR was half
 // a foot past the far edge of the line and his glyph — a circle whose ink reaches 3.875 ft
 // with the halo, 3.275 with the body outline alone — straddled the paint. He is the target
@@ -304,7 +311,7 @@ const outOfTheMiddle = {
 // otherwise and neither caught it: `describe` says "Two of your own forwards are wide, one
 // in each wall lane", which places both in the NEUTRAL zone, and the caption makes a point
 // of the OTHER route avoiding exactly this ("The chip is drawn finishing inside the
-// neutral zone rather than across the line"). ⚠️ THE PICTURE WAS WHAT WAS WRONG. RW is now
+// neutral zone rather than across the line"). ⚠️ THE PICTURE WAS WHAT WAS WRONG. He is now
 // at (20, 34): body outline 1.225 ft clear of the band, halo 0.625 ft clear.
 //
 // ⚠️ AND THE TWO ROUTES FOUGHT EACH OTHER TWICE BEFORE THEY WORKED. Both outlets go to
@@ -315,7 +322,7 @@ const outOfTheMiddle = {
 // fifteen pixels and reads as one thick line rather than two options. What resolves it is
 // ANGLE, not clearance.
 //
-// ⚠️ MOVING RW OFF THE BLUE LINE ATE THAT ANGLE, AND THE CHIP HAD TO MOVE TOO. Pulling him
+// ⚠️ MOVING THAT WINGER OFF THE BLUE LINE ATE THAT ANGLE, AND THE CHIP HAD TO MOVE TOO. Pulling him
 // back from x = 26 to x = 20 swings the pass's bearing from 46.8 degrees to 53.1, which
 // against a chip to (8, 40) at 72.5 leaves only 19.3 degrees — 4.03 ft of separation at
 // twelve feet, below the 5.32 this layout was built to hold. The chip's tip therefore
@@ -337,8 +344,8 @@ const outOfTheMiddle = {
 // ---------------------------------------------------------------------------
 
 const C_NZ = { at: 'centre-ice', dx: -4, dy: 2 };        // (-4, 2)   — the middle of the neutral zone
-const RW_WALL = { at: 'centre-ice', dx: 20, dy: 34 };    // (20, 34)  — wide, ~8.5 ft off the dasher
-const LW_WALL = { at: 'centre-ice', dx: 12, dy: -33 };   // (12, -33)
+const LW_WALL = { at: 'centre-ice', dx: 20, dy: 34 };    // (20, 34)  — wide, ~8.5 ft off the dasher
+const RW_WALL = { at: 'centre-ice', dx: 12, dy: -33 };   // (12, -33)
 
 const neutralZoneOutside = {
   id: 'centre-nz-get-it-to-the-outside',
@@ -375,8 +382,12 @@ const neutralZoneOutside = {
     // and it would have said the player was five feet clear when he was half a foot past.
     // A derived coordinate written beside an anchor is only worth having if it is re-derived
     // every time the anchor moves.
-    { id: 'RW', pos: 'F', at: RW_WALL },                                         // (20, 34)
-    { id: 'LW', pos: 'F', at: LW_WALL },                                         // (12, -33)
+    // W472 (18 Nov 2026): LABELS SWAPPED, NO GLYPH MOVED. +y is the TOP of the picture, and
+    // attacking toward the net at the right a skater's LEFT hand is the top wall, so the
+    // winger drawn up there is the LW and the one at the bottom (their right) is the RW.
+    // The corpus names sides from the player's own side, skating toward the net he attacks.
+    { id: 'LW', pos: 'F', at: LW_WALL },                                         // (20, 34)
+    { id: 'RW', pos: 'F', at: RW_WALL },                                         // (12, -33)
 
     // One checker square in front of him, thirteen feet up-ice, and one inside on the
     // weak side. Both ahead of the puck, because "pressured in the middle" is the
@@ -455,7 +466,7 @@ const neutralZoneOutside = {
 // ---------------------------------------------------------------------------
 
 const C_MIDDLE_LANE = { at: 'blue-line', dx: -8, dy: 4 };    // (17, 4)
-const RW_CARRIER = { at: 'blue-line', dx: -6, dy: 31 };      // (19, 31)
+const LW_CARRIER = { at: 'blue-line', dx: -6, dy: 31 };      // (19, 31)
 
 const arriveBehindThePuck = {
   id: 'centre-nz-arrive-behind-the-puck',
@@ -486,8 +497,12 @@ const arriveBehindThePuck = {
 
   players: [
     { id: 'C',  pos: 'F', at: C_MIDDLE_LANE, label: 'behind the puck, not slower' },  // (17, 4)
-    { id: 'RW', pos: 'F', at: RW_CARRIER },                                           // (19, 31)
-    { id: 'LW', pos: 'F', at: { at: 'blue-line', dx: -6, dy: -28 } },                 // (19, -28)
+    // W472 (18 Nov 2026): LABELS SWAPPED, NO GLYPH MOVED. +y is the TOP of the picture, and
+    // attacking toward the net at the right a skater's LEFT hand is the top wall, so the
+    // winger drawn up there is the LW and the one at the bottom (their right) is the RW.
+    // The corpus names sides from the player's own side, skating toward the net he attacks.
+    { id: 'LW', pos: 'F', at: LW_CARRIER },                                           // (19, 31)
+    { id: 'RW', pos: 'F', at: { at: 'blue-line', dx: -6, dy: -28 } },                 // (19, -28)
 
     // Their pair, inside their own line. Triangles because they are defencemen; shape
     // carries the position and fill carries the team, so these are solid triangles.
@@ -503,7 +518,7 @@ const arriveBehindThePuck = {
     // The carrier. Tip (33, 27); the near defenceman lies ahead of it at 15.5 ft and the
     // far one at 39.8 ft, both outside the 9 ft at which an arrowhead may not be drawn,
     // and the terminal tangent clears the near one laterally by 13.3 ft.
-    { from: RW_CARRIER, to: { at: 'blue-line', dx: 8, dy: 27 }, kind: 'carry' },
+    { from: LW_CARRIER, to: { at: 'blue-line', dx: 8, dy: 27 }, kind: 'carry' },
     // The centre. Tip (30, 2); the two defencemen lie ahead of it at 12.2 and 16.6 ft,
     // and the tangent clears them laterally by 10.9 and 12.5 ft. The tip is deliberately
     // 3 ft SHORT of the carrier's in x: an arrow through the middle that finished ahead
@@ -566,8 +581,12 @@ const slotOptions = {
 
   players: [
     { id: 'C',  pos: 'F', at: C_SLOT, label: 'space in front — shoot' },      // (71, 3)
-    { id: 'RW', pos: 'F', at: { at: 'half-wall:right', dy: -3 } },            // (69, 35.5)
-    { id: 'LW', pos: 'F', at: { at: 'faceoff-dot:left', dx: 2, dy: 2 } },     // (71, -20)
+    // W472 (18 Nov 2026): LABELS SWAPPED, NO GLYPH MOVED. +y is the TOP of the picture, and
+    // attacking toward the net at the right a skater's LEFT hand is the top wall, so the
+    // winger drawn up there is the LW and the one at the bottom (their right) is the RW.
+    // The corpus names sides from the player's own side, skating toward the net he attacks.
+    { id: 'LW', pos: 'F', at: { at: 'half-wall:right', dy: -3 } },            // (69, 35.5)
+    { id: 'RW', pos: 'F', at: { at: 'faceoff-dot:left', dx: 2, dy: 2 } },     // (71, -20)
     // A triangle, because he is a defenceman.
     //
     // ⚠️ THIS COMMENT USED TO READ "dy -6 off the sided `point` datum keeps the glyph off
@@ -644,7 +663,7 @@ const slotOptions = {
 // Every instruction this diagram carries is in the caption, which is the layer the
 // listener gets in any case.
 //
-// GEOMETRY, resolved rather than assumed. C (-14, 0); RW (16, 32) and LW (12, -32), both
+// GEOMETRY, resolved rather than assumed. C (-14, 0); LW (16, 32) and RW (12, -32), both
 // 10.5 ft off the dasher and both well inside the neutral zone in x; the defence pair at
 // (-32, 14) and (-36, -14), inside their own blue line at x -25. Bearings off the carrier
 // are 0.0, 46.8 and -50.9 degrees, so no two routes read as one line. The closest any
@@ -662,8 +681,8 @@ const slotOptions = {
 // ---------------------------------------------------------------------------
 
 const C_NZ_FREE = { at: 'centre-ice', dx: -14, dy: 0 };         // (-14, 0)
-const RW_FREE = { at: 'centre-ice', dx: 16, dy: 32 };           // (16, 32)
-const LW_FREE = { at: 'centre-ice', dx: 12, dy: -32 };          // (12, -32)
+const LW_FREE = { at: 'centre-ice', dx: 16, dy: 32 };           // (16, 32)
+const RW_FREE = { at: 'centre-ice', dx: 12, dy: -32 };          // (12, -32)
 
 const decidingFromTheMiddle = {
   id: 'centre-nz-deciding-from-the-middle',
@@ -696,8 +715,12 @@ const decidingFromTheMiddle = {
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },           // (85, 0)
 
     { id: 'C',  pos: 'F', at: C_NZ_FREE },                                       // (-14, 0)
-    { id: 'RW', pos: 'F', at: RW_FREE },                                         // (16, 32)
-    { id: 'LW', pos: 'F', at: LW_FREE },                                         // (12, -32)
+    // W472 (18 Nov 2026): LABELS SWAPPED, NO GLYPH MOVED. +y is the TOP of the picture, and
+    // attacking toward the net at the right a skater's LEFT hand is the top wall, so the
+    // winger drawn up there is the LW and the one at the bottom (their right) is the RW.
+    // The corpus names sides from the player's own side, skating toward the net he attacks.
+    { id: 'LW', pos: 'F', at: LW_FREE },                                         // (16, 32)
+    { id: 'RW', pos: 'F', at: RW_FREE },                                         // (12, -32)
 
     // Triangles, because they are defencemen. Anchored off the far blue line so the
     // comment and the coordinate cannot drift apart: `blue-line::far` resolves to x -25.
@@ -710,8 +733,8 @@ const decidingFromTheMiddle = {
     // the attacking blue line at x 25. Bow 0, so the terminal tangent is the chord.
     { from: C_NZ_FREE, to: { at: 'centre-ice', dx: 14, dy: 0 }, kind: 'carry' },
     // The two outlets, each stopped 6.00 ft short of its receiver. Tips derived from the
-    // resolved anchors: direction (0.6839, 0.7295) to RW gives (11.90, 27.62), and
-    // (0.6306, -0.7761) to LW gives (8.22, -27.34).
+    // resolved anchors: direction (0.6839, 0.7295) to LW gives (11.90, 27.62), and
+    // (0.6306, -0.7761) to RW gives (8.22, -27.34).
     { from: C_NZ_FREE, to: { at: 'centre-ice', dx: 11.9, dy: 27.62 }, kind: 'pass' },
     { from: C_NZ_FREE, to: { at: 'centre-ice', dx: 8.22, dy: -27.34 }, kind: 'pass' },
   ],

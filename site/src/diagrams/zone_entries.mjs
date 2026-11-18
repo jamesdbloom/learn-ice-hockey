@@ -231,7 +231,7 @@ const wideEntry = {
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward has just ' +
-    'crossed the blue line wide on the right wall with the puck, outside an opposition ' +
+    'crossed the blue line wide on the top wall with the puck, outside an opposition ' +
     'defenceman who is inside the carrier. A curved route carries the puck down the boards to the goal ' +
     'line. A second own forward drives from the high slot to the front of the net, stopping ' +
     'short of the crease. A third own forward waits high on the far side for the back-door or ' +
@@ -509,9 +509,9 @@ const hardRim = {
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
-    'is on the right wall near the blue line, with an opposition defenceman inside them and ' +
+    'is on the top wall near the blue line, with an opposition defenceman inside them and ' +
     'slightly up-ice, stepping up. Two numbered segments trace one puck path: first along the ' +
-    'right wall into the right corner, then round behind the net and out to the far corner. A ' +
+    'top wall into the top corner, then round behind the net and out to the far corner. A ' +
     'third numbered route is an own forward skating down the far wall into that corner to meet ' +
     'it. The opposition weak-side defenceman stands in the middle of the zone, the partner who ' +
     'has to rotate, and the goalie is in the crease. No route ends on a player.',
@@ -569,8 +569,8 @@ const softAreaDump = {
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
-    'is just outside the blue line on the left side. A dashed route places the puck into the ' +
-    'left corner. A second own forward, already well inside the zone along the left wall, skates ' +
+    'is just outside the blue line on the bottom side of the ice. A dashed route places the puck into the ' +
+    'bottom corner. A second own forward, already well inside the zone along the bottom wall, skates ' +
     'toward that corner and their route stops short of the puck and up-wall of it. An opposition ' +
     'defenceman is turning back from in front of their own net toward the same corner, their route ' +
     'also stopping short. The goalie is in the crease. The two arriving routes finish apart ' +
@@ -629,7 +629,7 @@ const chipPast = {
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
-    'comes up the right wing lane toward the blue line. An opposition defenceman is standing on ' +
+    'comes up the wing lane along the top wall toward the blue line. An opposition defenceman is standing on ' +
     'the line in front of the carrier. Route one is the carrier changing their line, swinging inside the ' +
     'defenceman and back out to the wall behind them. Route two is the puck, chipped past the ' +
     'defenceman on the boards side and landing on the wall inside the zone, where the carrier is ' +
@@ -686,10 +686,10 @@ const crossCorner = {
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
-    'is just outside the blue line on the right side; a dashed route carries the puck diagonally ' +
-    'across the zone into the far, left corner. An opposition defenceman stands on the right ' +
-    'side, the one the puck is being taken away from. Their partner, on the left, has a long route ' +
-    'across and down toward that far corner. A second own forward is driving down the left wall ' +
+    'is just outside the blue line on the top side of the ice; a dashed route carries the puck diagonally ' +
+    'across the zone into the far, bottom corner. An opposition defenceman stands on the top ' +
+    'side, the one the puck is being taken away from. Their partner, on the bottom side, has a long route ' +
+    'across and down toward that far corner. A second own forward is driving down the bottom wall ' +
     'and their route finishes on the wall side, up-ice of where the puck lands and clear of the ' +
     'retrieving defenceman. The goalie is in the crease.',
 
@@ -898,9 +898,9 @@ const trapezoidAim = {
     'The attacking half of the rink, opposition net at the right, with the goalkeeper’s ' +
     'restricted area marked behind the net by two dashed lines running from the goal line out ' +
     'to the end boards. The opposition goalie stands behind their net, inside those lines. An ' +
-    'own forward with the puck is just outside the blue line on the right; a dashed route sends ' +
-    'the puck into the right corner, outside the marked area and behind the goal line. A second ' +
-    'own forward skates down the right wall toward it, their route stopping short. An opposition ' +
+    'own forward with the puck is just outside the blue line on the top side of the ice; a dashed route sends ' +
+    'the puck into the top corner, outside the marked area and behind the goal line. A second ' +
+    'own forward skates down the top wall toward it, their route stopping short. An opposition ' +
     'defenceman is between the net and the corner, the skater who now has to go and get it. The ' +
     'goalie is drawn with no route: the diagram is about where the puck may legally be ' +
     'played, not about where they skate.',

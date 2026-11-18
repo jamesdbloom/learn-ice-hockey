@@ -317,7 +317,7 @@ const unmarkedNotAvailable = {
 
   describe:
     'The attacking end zone, the opposition net at the right. Your teammate has the puck on the ' +
-    'right half-wall. You stand in the high slot, level with the faceoff dots, with nobody ' +
+    'half-wall at the top of the picture. You stand in the high slot, level with the faceoff dots, with nobody ' +
     'marking you. A shaded band runs straight down the ice between the two of you: it is the ' +
     'passing lane. An opposition defenceman stands about six feet to one side of it and about ' +
     'ten feet from you; their stick, which is not drawn, is what lies across the lane. No routes ' +
@@ -427,7 +427,9 @@ const screenSightline = {
     // the stick/tip/rebound limb, and the paint/red-line instruction. KEPT WHOLE: the Rule 69
     // sentence and its citation (the owner host voices the positioning limb only five chunks
     // back), and both head-first sentences (rules_primer.md voices neither).
-    'The shaded wedge is the sightline between the puck at the right point and the goalie, with ' +
+    // W472 (18 Nov 2026): "the right point" -> "the point". The D stands at the TOP point; attacking
+    // the net at the right, that is the shooter's own LEFT. The host prose names no side.
+    'The shaded wedge is the sightline between the puck at the point and the goalie, with ' +
     'the screen inside it, outside the crease. The wedge swings as the puck moves: stand ' +
     'where the goalie’s eyes are, not where the puck is going. ' +
     'Keep your stick on the ice for tips and rebounds, and move late. ' +
@@ -466,7 +468,7 @@ const screenSightline = {
 
   describe:
     'The attacking end zone, the opposition net at the right with its goalie in the crease, ' +
-    'positioned on their angle. One of your players stands at the right point with the puck. A ' +
+    'positioned on their angle. One of your players stands at the point at the top of the picture, with the puck. A ' +
     'narrow shaded wedge, labelled "the sightline", runs from the puck down to the goalie, ' +
     'widening as it goes. A second player of yours stands inside that wedge about eight feet in ' +
     'front of the goalie and clear of the crease. No routes are drawn: no shot, and no ' +

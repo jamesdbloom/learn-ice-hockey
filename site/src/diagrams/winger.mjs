@@ -230,8 +230,8 @@ const wallDepthBySystem = {
   describe:
     'The full two-hundred-foot sheet, your own goal at the left and the attacking end at ' +
     'the right. Your goalie is in the crease and one of your defencemen is behind the ' +
-    'net with the puck. Three of your own forwards are drawn, all on the same right-hand ' +
-    'side of the ice, and they are three alternative positions for one player rather than ' +
+    'net with the puck. Three of your own forwards are drawn, all along the boards at the top ' +
+    'of the picture, which is your left as you face up the ice, and they are three alternative positions for one player rather than ' +
     'three players: the first is deep in your own end on the boards just below the faceoff ' +
     'dot, between the hash marks and the goal line; the second is on the same boards about ' +
     'twenty feet inside your own blue line; the third is out in the neutral zone past the ' +
@@ -546,10 +546,10 @@ const arrivingAtTheLine = {
   describe:
     'The attacking half of the rink, the attacking net at the right and the attacking blue ' +
     'line running across the picture near the left-hand edge. Two opposition defencemen ' +
-    'stand at that line, one on the right-hand side squarely on it and one on the far side ' +
+    'stand at that line, one near the top of the picture squarely on it and one on the far side ' +
     'of the ice from the first, with their goalie in the crease. Two of your own forwards are ' +
     'in the neutral zone on the near side of the line: the carrier towards the middle with ' +
-    'the puck beside them, and the right winger out wide toward the boards. Two routes: the ' +
+    'the puck beside them, and the winger out wide toward the top boards. Two routes: the ' +
     'winger’s skating route taking them across the line and on into the zone, still wide, ' +
     'and a dashed pass from the carrier that curves over and lands just inside the line ' +
     'ahead of the winger. No stick, no skate and no contact is drawn.',
@@ -614,7 +614,7 @@ const arrivingAtTheLine = {
  * body, which are where it actually lives.
  *
  * GEOMETRY. Half sheet, the OPPOSITION net at the right.
- *   RW      (81, 33)  in the corner with the puck. 20.57 ft from the arc
+ *   LW      (81, 33)  in the corner with the puck. 20.57 ft from the arc
  *                     centre (72, 14.5), 7.4 ft of room.
  *   opp D   (85, 25)  inside him and goal-side, which is where a defenceman
  *                     defending his own corner stands. 8.94 ft from the
@@ -645,7 +645,7 @@ const arrivingAtTheLine = {
  * instruction, and the instruction here is the opposite one.
  * ==================================================================== */
 
-const CORNER_RW = { at: 'corner:right', dx: -1, dy: -1 };          // (81, 33)
+const CORNER_LW = { at: 'corner:right', dx: -1, dy: -1 };          // (81, 33)
 
 const cornerAndTheEmptyPoint = {
   id: 'winger-corner-and-the-empty-point',
@@ -686,20 +686,20 @@ const cornerAndTheEmptyPoint = {
     'picture is contact, and nothing in it is a licence to hit.',
 
   describe:
-    'The attacking half of the rink, the opposition net at the right. Your right winger has ' +
-    'the puck in the right-hand corner, the puck drawn on the boards side of their body, away ' +
+    'The attacking half of the rink, the opposition net at the right. Your left winger has ' +
+    'the puck in the corner at the top of the picture, which is your left as you attack, the puck drawn on the boards side of their body, away ' +
     'from an opposition defenceman who is inside them and nearer the net. Three more of your ' +
-    'own players are drawn: a defenceman at the top of the right faceoff circle rather than ' +
+    'own players are drawn: a defenceman at the top of the faceoff circle on that side rather than ' +
     'up at the blue line, your centre in the slot in front of the net, and your second ' +
-    'defenceman across at the far-side point. The right-hand point, just inside the blue ' +
-    'line on the winger’s own side, has nobody in it. Two dashed passing routes leave the ' +
+    'defenceman across at the far-side point. The point on the winger’s own side, just inside the ' +
+    'blue line at the top of the picture, has nobody in it. Two dashed passing routes leave the ' +
     'winger, one to the defenceman at the top of the circle and one to the centre; neither ' +
     'is numbered, because only one of them happens. The opposition goalie is in the ' +
     'crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },         // (85, 0)
-    { id: 'RW', pos: 'F', at: CORNER_RW, label: 'you' },
+    { id: 'LW', pos: 'F', at: CORNER_LW, label: 'you' },
     // Unlabelled: at x = 85 any label long enough to be worth reading is drawn through the
     // goal line at x = 89. A solid triangle already says opposition defenceman.
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'corner:right', dx: 3, dy: -9 } },  // (85, 25)
@@ -709,8 +709,8 @@ const cornerAndTheEmptyPoint = {
   ],
 
   routes: [
-    { from: CORNER_RW, to: { at: 'top-of-circle:right', dx: 7, dy: 2 }, kind: 'pass' },
-    { from: CORNER_RW, to: { at: 'high-slot', dx: 5, dy: 12 }, kind: 'pass' },
+    { from: CORNER_LW, to: { at: 'top-of-circle:right', dx: 7, dy: 2 }, kind: 'pass' },
+    { from: CORNER_LW, to: { at: 'high-slot', dx: 5, dy: 12 }, kind: 'pass' },
   ],
 
   // 6.10 ft from the winger's centre and on the boards side of him, away from the

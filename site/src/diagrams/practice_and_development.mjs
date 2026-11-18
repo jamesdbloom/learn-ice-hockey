@@ -198,7 +198,7 @@ const executionDrill = {
   describe:
     'The attacking half of the rink, the net at the right with the opposing goalie in the ' +
     'crease. Two own ' +
-    'players and no opposition skaters. One stands inside the right faceoff circle above the dot ' +
+    'players and no opposition skaters. One stands inside the faceoff circle at the top of the picture, above the dot ' +
     'with the puck drawn beside them, and a dashed passing route runs from them across the ice and ' +
     'down to the second, who stands in front of the net a little to the far side and about six feet ' +
     'clear of the crease. Nothing else is drawn: no defender, no ' +
@@ -254,7 +254,7 @@ const decisionDrill = {
     'The same attacking half and the same instant as the previous diagram, with everything unchanged ' +
     'except that one opposition player has been added and the pass route has gone. Your own two ' +
     'players are where they were — ' +
-    'one inside the right faceoff circle with the puck beside them, one in front of the net — and ' +
+    'one inside the faceoff circle at the top of the picture with the puck beside them, one in front of the net — and ' +
     'the opposing goalie is in the crease. The opposition forward stands squarely on the line ' +
     'between ' +
     'the two of them, about twenty-three feet from the puck carrier and about fourteen from the ' +
@@ -542,10 +542,10 @@ const smallAreaGame = {
     'The full two-hundred-foot sheet again, with the whole picture in the right-hand end zone below ' +
     'the blue line and the rest of the ice empty. Three own skaters, three opposition skaters and ' +
     'one goalie. ' +
-    'One of yours has the puck on the right half-wall, level with the faceoff dot, with the puck ' +
+    'One of yours has the puck on the half-wall along the top of the picture, level with the faceoff dot, with the puck ' +
     'drawn just below them; one is low in the slot on the far side of the middle; one is high, just ' +
-    'inside the blue line. An opposition player is about nine feet above the top of the right ' +
-    'faceoff circle, on the blue-line side of it, with a ' +
+    'inside the blue line. An opposition player is about nine feet out from the top of the ' +
+    'faceoff circle on that side, toward the blue line, with a ' +
     'route running out toward the carrier on the wall: it stops about seven feet short of them and ' +
     'ends in two short bars rather than an arrowhead. A second opposition player stands in front of ' +
     'the net, about nine feet clear of the crease, and a third stands high near the blue line ' +

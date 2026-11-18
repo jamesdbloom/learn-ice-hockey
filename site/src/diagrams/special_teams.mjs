@@ -156,7 +156,7 @@ const pp131 = {
     'the crease. Five own players: one at the point, in the middle and just inside the blue line, ' +
     'two on the ' +
     'half-walls level with the faceoff dots, one bumper in the middle of the slot between them, ' +
-    'and one at the net front just outside the crease. The puck is on the right half-wall. Four ' +
+    'and one at the net front just outside the crease. The puck is on the top half-wall. Four ' +
     'dashed passing options run from that player: back to the point, inside to the bumper, down ' +
     'to the net front, and across the seam to the far half-wall. A short solid route runs ' +
     'sideways along the blue line from the point. No penalty killers are drawn.',
@@ -269,7 +269,7 @@ const ppUmbrella = {
     'a pair: a defenceman at the apex in the middle just inside the blue line, two forwards ' +
     'lower than them at the tops of the left and right faceoff circles, one forward at the net ' +
     'front outside the crease and one at the side of the net below the goal line. The middle of ' +
-    'the slot is empty. Two numbered routes: one, a pass from the right flank up to the apex; ' +
+    'the slot is empty. Two numbered routes: one, a pass from the top flank up to the apex; ' +
     'two, a shot from the apex past the low side of the screen. No penalty killers are drawn.',
 
   players: [
@@ -315,10 +315,10 @@ const ppOverload = {
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four own players stacked on the ' +
-    'right side: one below the goal line beside the net, one in the right corner, one on the ' +
-    'right half-wall and one at the right point, just inside the blue line. A fifth own player ' +
+    'top side of the picture: one below the goal line beside the net, one in the top corner, one on the ' +
+    'top half-wall and one at the top point, just inside the blue line. A fifth own player ' +
     'stands alone ' +
-    'on the far left at the top of the left faceoff circle. Three numbered passes: one, from ' +
+    'on the far side, on the edge of the bottom faceoff circle nearer the blue line. Three numbered passes: one, from ' +
     'below the goal line out to the corner; two, up the wall to the half-wall; three, cross-ice ' +
     'to the weak-side player. No penalty killers are drawn.',
 
@@ -369,8 +369,8 @@ const ppSpread = {
     'two low on the goal line just outside each post, two high and wide at the tops of the left ' +
     'and right faceoff circles, and one in the middle of the slot. Three opposition players form ' +
     'a tight triangle: two just in front of the net either side, one high in the slot. The ' +
-    'opposition goalie is in the crease. Two numbered passes: one, straight across from the ' +
-    'top of the right circle to the top of the left circle, crossing the middle of the ice; two, ' +
+    'opposition goalie is in the crease. Two numbered passes: one, straight across from the circle ' +
+    'at the top of the picture to the one at the bottom, crossing the middle of the ice; two, ' +
     'from there inside to the player in the middle of the slot.',
 
   players: [
@@ -433,8 +433,8 @@ const pp23 = {
     'defencemen at the left and right points, just inside the blue line, and three forwards low — ' +
     'one in ' +
     'the right faceoff circle, one in the left faceoff circle and one at the net front outside ' +
-    'the crease. The middle of the slot is empty. Two numbered routes: one, a pass from the right ' +
-    'circle up to the right point; two, a shot from the point to the low side of the net front. ' +
+    'the crease. The middle of the slot is empty. Two numbered routes: one, a pass from the circle at the ' +
+    'top of the picture up to the point on that side; two, a shot from the point to the low side of the net front. ' +
     'No penalty killers are drawn.',
 
   players: [
@@ -536,10 +536,10 @@ const ppBackdoor = {
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goalie in ' +
-    'the crease. Three own players: one up top near the right point holding the puck, one at the ' +
-    'net front just outside the crease on the right, and one at the weak-side post outside the ' +
-    'crease on the left, arriving late. One opposition defenceman stands low on the right, close ' +
-    'to the net-front attacker rather than the one on the left. A dashed pass runs from the point ' +
+    'the crease. Three own players: one up top near the point on the top side of the picture, holding the puck; one at the ' +
+    'net front just outside the crease, on the top side; and one at the weak-side post outside the ' +
+    'crease on the bottom side, arriving late. One opposition defenceman stands low on the top side, close ' +
+    'to the net-front attacker rather than the one on the bottom side. A dashed pass runs from the point ' +
     'across the middle of the ice, stopping just short of the weak-side attacker. The other two ' +
     'power-play attackers and the other three penalty killers are not drawn.',
 
@@ -618,7 +618,7 @@ const ppWalkDown = {
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goalie in ' +
-    'the crease. One own player carries the puck from the right half-wall, drawn with the long ' +
+    'the crease. One own player carries the puck from the top half-wall, drawn with the long ' +
     'smooth wave that means skate and stickhandle, angling down and in toward the goal line and ' +
     'stopping short of the slot. One own player stands at the net front just outside the crease. ' +
     'One opposition defenceman guards low on the same side, between the carrier\'s route and the ' +
@@ -692,7 +692,7 @@ const pkBox = {
     'opposition players in a 1-3-1: one at the point just inside the blue line, two on the ' +
     'half-walls, one ' +
     'bumper in the middle of the slot inside the rectangle with no killer near them, and one at ' +
-    'the net front. The puck is on the opposition’s right half-wall. No routes are drawn.',
+    'the net front. The puck is on the top half-wall. No routes are drawn.',
 
   players: [
     { id: 'G', pos: 'G', at: G_AT },
@@ -882,9 +882,9 @@ const pkWedge = {
     'Defending half of the rink, our net at the right and our goalie in the crease. Three own ' +
     'players form a tight triangle around the net: two defencemen just outside the crease edges ' +
     'either side, and one forward in the slot in front of them. A fourth own player, the +1, is ' +
-    'out on the right side between the net and the puck, with a checking-pressure route running ' +
+    'out on the puck side, the top of the picture, between the net and the puck, with a checking-pressure route running ' +
     'outward toward the puck carrier on the half-wall and finishing short of them. Five opposition ' +
-    'players in a 1-3-1: one at the point, two on the half-walls with the puck on the right, a ' +
+    'players in a 1-3-1: one at the point, two on the half-walls with the puck on the top one, a ' +
     'bumper in the middle of the slot shaded to the puck side, and one at the net front.',
 
   players: [

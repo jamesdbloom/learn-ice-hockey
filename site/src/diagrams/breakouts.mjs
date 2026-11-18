@@ -19,6 +19,12 @@
  * nine can be read against each other; the puck is retrieved in the right corner
  * except where the option itself moves it.
  *
+ * W472 (18 November 2026): 'right'/'left' in the anchors above are resolve()'s +y/-y,
+ * the picture's TOP/BOTTOM. A player breaking out up ice (left to right) has the top
+ * wall on their LEFT, so shipped text must never say "the right corner/boards/circle"
+ * for an anchor's 'right'. Every describe now says "top"/"bottom" (the 1-3-1 describe's
+ * own wording); the captions name no wall by side.
+ *
  * LABELS ARE SHORT ON PURPOSE. On the full sheet a label is 1.57 ft per character
  * against a 204-ft viewBox, and the first draft's "goes back for it" was 25 ft
  * wide, could not fit between the corner and the boards, and was thrown to the far
@@ -102,11 +108,11 @@ const fiveRoles = {
 
   describe:
     'The full 200-foot sheet. The defending zone is at the left, the attacking end at the right. ' +
-    'Five own players and a goalie, and no opposition. The defenceman D1 is deep in the right ' +
+    'Five own players and a goalie, and no opposition. The defenceman D1 is deep in the top ' +
     'corner with the puck at their stick. The defenceman D2 is on the other side of the net, just ' +
-    'above the goal line. The winger W1 is on the right boards between the hash marks and the goal ' +
-    'line. The centre C is inside the right faceoff circle, below the hash marks and inside the dot. ' +
-    'The winger W2 is on the weak side and higher, near the top of the left circle. The goalie ' +
+    'above the goal line. The winger W1 is on the top boards between the hash marks and the goal ' +
+    'line. The centre C is inside the top faceoff circle, below the hash marks and inside the dot. ' +
+    'The winger W2 is on the weak side and higher, near the up-ice edge of the bottom circle. The goalie ' +
     'is in the crease. There are no routes: nothing is moving yet.',
 
   players: [
@@ -161,8 +167,8 @@ const up = {
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck deep in the ' +
-    'right corner below the goal line. The winger W1 is on the right boards between the hash marks ' +
-    'and the goal line. The centre C is low in the middle, inside the right circle. The defenceman ' +
+    'top corner below the goal line. The winger W1 is on the top boards between the hash marks ' +
+    'and the goal line. The centre C is low in the middle, inside the top circle. The defenceman ' +
     'D2 is on the far side of the net near the goal line. One opposition forward is behind the net, ' +
     'the forecheck having committed there. A single dashed route runs from D1 up the wall to the ' +
     'winger’s stick. The winger’s own next move is deliberately not drawn.',
@@ -315,12 +321,12 @@ const wheel = {
     'the forechecker\'s path: that is interference everywhere, and two minutes is only the floor.',
 
   describe:
-    'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
+    'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the top ' +
     'corner. A long smooth wave — skating with control of the puck — runs from them down behind their ' +
-    'own net, passing about two feet behind the goal frame, and back up the weak side to the left ' +
+    'own net, passing about two feet behind the goal frame, and back up the weak side to the bottom ' +
     'boards below the hash marks. The defenceman D2 stands in front of the net, slightly to the ' +
-    'strong side, with no route drawn. The winger W2 is on the left boards and the centre C is low ' +
-    'inside the left circle; both are outlets. One opposition forechecker is up the right wall, ' +
+    'strong side, with no route drawn. The winger W2 is on the bottom boards and the centre C is low ' +
+    'inside the bottom circle; both are outlets. One opposition forechecker is up the top wall, ' +
     'behind the play. The goalie is in the crease.',
 
   players: [
@@ -456,11 +462,11 @@ const reverse = {
     WALL_POSTURE_SHORT,
 
   describe:
-    'The full sheet, the defending zone at the left. The defenceman D1 is on the right boards just ' +
+    'The full sheet, the defending zone at the left. The defenceman D1 is on the top boards just ' +
     'below the hash marks with the puck. An opposition forward is on the same boards about ten feet ' +
     'further up ice, past D1. Two numbered routes: one, the defenceman D2 skates from the far side ' +
     'of the net, around behind the goal, and up into the strong-side corner below the goal line; ' +
-    'two, a dashed pass from D1 back down the right boards behind them, finishing in that same corner ' +
+    'two, a dashed pass from D1 back down the top boards behind them, finishing in that same corner ' +
     'space. The two routes finish about nine feet apart. The goalie is in the crease.',
 
   players: [
@@ -578,9 +584,9 @@ const rim = {
 
   describe:
     'The full sheet, the defending zone at the left. The defenceman D1 has the puck deep in the ' +
-    'right corner with an opposition forward between them and the ice, sealing them against the ' +
+    'top corner with an opposition forward between them and the ice, sealing them against the ' +
     'boards. A single dashed route leaves D1, runs down and around the end boards about two and a ' +
-    'half feet off the dasher behind the net, and comes out low on the left boards, finishing on the ' +
+    'half feet off the dasher behind the net, and comes out low on the bottom boards, finishing on the ' +
     'wall four and a half feet off the dasher. The winger W2 stands a few feet up-ice of where it finishes, ' +
     'stepping in to meet it. The goalie is in the crease.',
 
@@ -646,8 +652,8 @@ const dToD = {
     'chance against. Move it quickly; do not skate it across.',
 
   describe:
-    'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the right ' +
-    'corner; the defenceman D2 is low in the left corner. Two opposition forwards are on the right ' +
+    'The full sheet, the defending zone at the left. The defenceman D1 has the puck in the top ' +
+    'corner; the defenceman D2 is low in the bottom corner. Two opposition forwards are on the top ' +
     'side, one deep and one on the wall — the flooded side. A shaded region covers the house, the ' +
     'home-plate-shaped area analysts use to define a high-danger chance. Its outline runs square ' +
     'across the top along the tops of the two faceoff circles, straight down the dot lines to the ' +
@@ -718,7 +724,7 @@ const dToD = {
     //
     // Nothing is lost. The puck disc is drawn at D1's stick, which is the notation
     // for having it, and the describe says "The defenceman D1 has the puck in the
-    // right corner" in words.
+    // top corner" in words.
     { id: 'D1', pos: 'D', at: DD_D1 },
     // labelHint: above the left-far faceoff dot rather than on it, where the placer's own
     // slot put the dot inside "across" (faceoff-dot census, 27 Oct 2026).
@@ -782,9 +788,9 @@ const stretch = {
     'crosses, keeps them onside in every book.',
 
   describe:
-    'The full 200-foot sheet. The defenceman D1 has the puck in the right corner of their own zone at ' +
-    'the left of the picture. Three opposition forwards are deep in that zone: one on the right ' +
-    'wall above them, one low on the left, one in the middle. Two opposition defencemen stand on the ' +
+    'The full 200-foot sheet. The defenceman D1 has the puck in the top corner of their own zone at ' +
+    'the left of the picture. Three opposition forwards are deep in that zone: one on the top ' +
+    'wall above them, one low on the bottom side, one in the middle. Two opposition defencemen stand on the ' +
     'blue line of that zone, stepped up. The winger W2 is a long way up ice at the right, just on ' +
     'their own side of the far blue line, alone. A single long dashed pass runs from D1 diagonally ' +
     'across and up the sheet to them, passing under the near forechecker, outside the faceoff dots, ' +
@@ -974,11 +980,11 @@ const wingerWall = {
   describe:
     'The full sheet, the defending zone at the left. The winger W1 is high in their own zone, just ' +
     'inside the blue line and level with an opposition defenceman standing on that line. A skating ' +
-    'route curves from W1 out toward the right boards and then down them, finishing on the wall ' +
+    'route curves from W1 out toward the top boards and then down them, finishing on the wall ' +
     'just below the hash-mark line, some forty-eight feet from where it began — inside the range ' +
     'those two spots are apart on an NHL sheet, a little under forty-four to sixty-four feet. ' +
     'The defenceman D1 is deep ' +
-    'in the right corner with the puck, which their team has just won. The goalie is in the ' +
+    'in the top corner with the puck, which their team has just won. The goalie is in the ' +
     'crease. No pass is drawn: this diagram is the trip, not the exit.',
 
   players: [
@@ -1036,12 +1042,12 @@ const centreSwing = {
     'at all.',
 
   describe:
-    'The full sheet, the defending zone at the left. A shaded box sits in the right faceoff circle, ' +
+    'The full sheet, the defending zone at the left. A shaded box sits in the top faceoff circle, ' +
     'bounded by the hash-mark line above, the faceoff dot line on the boards side, and the middle of ' +
     'the ice — the low support ice. The centre C is above and outside it, higher in the zone. A ' +
     'skating route runs from them, curving first away from the puck toward the middle of the ice and ' +
     'then back toward the boards, finishing inside the shaded box. The defenceman D1 has the puck in ' +
-    'the right corner and the winger W1 is on the right boards above the box, on the ice the centre ' +
+    'the top corner and the winger W1 is on the top boards above the box, on the ice the centre ' +
     'must not drift into. The goalie is in the crease.',
 
   // The section gives two boundaries and only two: below the hash marks, and
@@ -1232,15 +1238,15 @@ const againstThe131 = {
 
   describe:
     'The full 200-foot sheet. Your defending zone is at the left, the far end at the right. Your ' +
-    'goalie is in the crease and the defenceman D1 has the puck deep in the right corner. Five ' +
+    'goalie is in the crease and the defenceman D1 has the puck deep in the top corner. Five ' +
     'opposition players are drawn in three bands. One forward stands in the middle of the ice about ' +
     'ten feet inside your blue line. Three more are level with each other just beyond the centre red ' +
     'line, spanning the sheet: one near the top boards, a defenceman in the middle of the ice, one ' +
     'near the bottom boards. A second defenceman stands alone behind them, in the middle of their own ' +
-    'blue line. Of your own team only two skaters are drawn: D1, and the winger W1 out on the right ' +
+    'blue line. Of your own team only two skaters are drawn: D1, and the winger W1 out on the top ' +
     'boards a couple of feet inside your own blue line. A single smooth wave — skating with control ' +
     'of the puck — runs from D1 ' +
-    'out of the corner and up the right boards, finishing in open ice about twenty feet short of the ' +
+    'out of the corner and up the top boards, finishing in open ice about twenty feet short of the ' +
     'winger. The winger has no route. Nothing is drawn arriving at any opposition player.',
 
   players: [

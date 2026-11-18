@@ -309,9 +309,9 @@ const backcheckMiddleLane = {
 
   describe:
     'The defending half of the rink, your own net at the right, with three opposition forwards ' +
-    'attacking from the left. The puck carrier is wide on the right; a second forward comes up the ' +
+    'attacking from the left. The puck carrier is wide along the top wall; a second forward comes up the ' +
     'middle of the ice behind the carrier, with a route showing that forward crossing the blue line late, behind the ' +
-    'play; a third is wide on the left. Coming back: the centre in the middle lane, already ' +
+    'play; a third is wide along the bottom wall. Coming back: the centre in the middle lane, already ' +
     'goal-side of the middle ' +
     'driver and between that driver and your own net; a winger in each outside lane, goal-side of the ' +
     'attacker in that lane; the two defencemen retreating together in front of them, keeping the ' +
@@ -747,9 +747,9 @@ const wingerOffensiveZone = {
 
   describe:
     'The attacking half of the rink, the opposition net at the right, with only the opposition ' +
-    'goalie drawn. Two of your own players: the right winger on the right half-wall with the ' +
-    'puck, and the left winger in the left faceoff circle. Two routes: a shot from the half-wall ' +
-    'toward the net, stopping short of the crease, and the left winger’s skate to the side of the ' +
+    'goalie drawn. Two of your own players: the left winger on the half-wall at the top of the ' +
+    'picture with the puck, and the right winger in the bottom faceoff circle. Two routes: a shot from the half-wall ' +
+    'toward the net, stopping short of the crease, and the right winger’s skate to the side of the ' +
     'net, arriving beside it rather than in the blue paint. The high slot, between the faceoff ' +
     'dots and the top of the circles, is shaded and empty — it is the layer a winger stays ' +
     'out of unless their team’s structure sends them there. The ' +
@@ -759,8 +759,12 @@ const wingerOffensiveZone = {
 
   players: [
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'RW', pos: 'F', at: W_HALF_WALL, label: 'the half-wall' },
-    { id: 'LW', pos: 'F', at: W_CIRCLE,    label: 'ready to one-time it' },
+    // W472 (18 Nov 2026): LABELS SWAPPED, NO GLYPH MOVED. `half-wall:right` is the +y wall, the
+    // TOP of the picture; attacking the net at the right, that is the attackers' own LEFT, so the
+    // winger standing there is the LW and the one in the bottom circle (their right) is the RW.
+    // The corpus names sides from the player's own side, skating toward the net he attacks.
+    { id: 'LW', pos: 'F', at: W_HALF_WALL, label: 'the half-wall' },
+    { id: 'RW', pos: 'F', at: W_CIRCLE,    label: 'ready to one-time it' },
   ],
 
   // Not numbered: the route drawn is the DRIVE IN from the winger's own circle, and for that
@@ -780,12 +784,12 @@ const wingerOffensiveZone = {
   ],
 
   // ⚠️ WAS INSIDE THE WINGER, 22 September 2026. At { dx: -1, dy: -2 } the disc sat 2.24 ft
-  // from RW's centre and the player glyph's radius is 2.9 ft, so it was drawn INSIDE the
+  // from the half-wall winger's centre (labelled RW until W472, LW now) and the player glyph's radius is 2.9 ft, so it was drawn INSIDE the
   // circle, over his label -- and this diagram's describe tells a reader where the puck is.
   // breakouts.mjs records the identical defect and its fix: "left at dy -3 ... the disc would
   // have been drawn inside him", resolved at about 4.5 ft from the centre, where the disc's
   // inner edge clears the glyph's stroke.
-  // MEASURED AGAINST COMMITTED site/src/data/rink.json -- half-wall {x:69, y:38.5}, RW on that
+  // MEASURED AGAINST COMMITTED site/src/data/rink.json -- half-wall {x:69, y:38.5}, the half-wall winger on that
   // datum with no offset, crease {x:86, y:0}.
   // WHICH WAY IT MOVED, and every other direction is taken: +y is the boards, 4 ft away; -y
   // alone puts it on the shot route, which leaves W_HALF_WALL (69, 38.5) for (79, 6) and would
@@ -826,8 +830,8 @@ const twoOnOne = {
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition forwards attack ' +
-    'from the left, one wide on each side of the ice, with the puck on the right-hand one; a ' +
-    'route shows that forward carrying toward the top of the circle. Between and ahead of them is a single ' +
+    'from the left, one wide on each side of the ice, with the puck on the one drawn nearer the top of the picture; a ' +
+    'route shows that forward carrying toward the top of the faceoff circle on that side. Between and ahead of them is a single ' +
     'defenceman, sitting in the passing lane that joins the two attackers, with a backward ' +
     'skating route showing the defenceman retreating under control rather than stepping up. The goalie ' +
     'is in the crease. Nobody is backchecking.',
