@@ -375,8 +375,8 @@ const pointAndHalfWall = {
   describe:
     'The attacking half of the rink, the net at the right. Two defencemen stand just inside ' +
     'the blue line, one toward each side, at the point. Two wingers stand against the side ' +
-    'boards level with the faceoff dots, at the half-wall. The right-hand defenceman is ' +
-    'labelled "the point" and the right-hand winger "the half-wall". No puck and no routes ' +
+    'boards level with the faceoff dots, at the half-wall. The defenceman and the winger at ' +
+    'the top of the picture are labelled "the point" and "the half-wall". No puck and no routes ' +
     'are drawn.',
 
   players: [
@@ -384,6 +384,10 @@ const pointAndHalfWall = {
     // blue lines) and
     // "the area just inside the blue line, toward each set of boards, where the
     // defencemen set up" (§5, The point). Two of them, per the section.
+    // W473 (18 Nov 2026): the describe called these two "the right-hand defenceman" and
+    // "the right-hand winger". 'right' is the TOP of the picture, and attacking the net at
+    // the right a player's LEFT hand is the top wall — so the describe now says "at the top
+    // of the picture". No glyph moved; the labels name no side.
     { id: 'D', pos: 'D', at: 'point:right', label: 'the point' },
     { id: 'D', pos: 'D', at: 'point:left' },
     // "Wingers live here in offensive-zone possession" (§5, The half-wall).
@@ -588,9 +592,11 @@ const strongAndWeakSide = {
     'Strong-side and weak-side: whichever half of the ice the puck is on right now, and ' +
     'the other half — not painted; the boundary moves with the puck.',
 
+  // W473 (18 Nov 2026): "the right-hand side of the ice" -> "the top half of the picture".
+  // The puck is at +y, the TOP; attacking the net at the right, that is the player's LEFT.
   describe:
     'The attacking half of the rink, the net at the right, tinted in two different shades ' +
-    'lengthways down the middle. The puck is on the right-hand side of the ice, just inside ' +
+    'lengthways down the middle. The puck is in the top half of the picture, just inside ' +
     'the strong-side faceoff dot. The half of the ice containing the puck is labelled ' +
     '"strong side" and the other half "weak side". No line is drawn between them and no ' +
     'players are drawn.',

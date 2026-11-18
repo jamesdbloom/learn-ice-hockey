@@ -267,7 +267,7 @@ There are around **56 faceoffs in an average NHL game** (see [Faceoffs](../syste
 - **At an offensive-zone draw, find the shooter.** In the common default both defencemen stand at the point; the one on the *draw side* is the shooter, stick loaded, and the far one holds the line as the safety. Alignments vary, so check where the puck is actually pulled on a clean win. See [Faceoffs](../systems/faceoffs.md).
 - **In the defensive zone, watch the boards-side winger.** They must beat the opposing defenceman to a puck that goes back to the point.
 
-Both alignments are drawn in [Faceoffs](../systems/faceoffs.md) at the right-hand circle, before the drop: the common default, so check it against this team. The defensive-zone caption also explains how the books differ on whether touching the circle line counts — worth knowing before you call an encroachment from a seat.
+Both alignments are drawn in [Faceoffs](../systems/faceoffs.md) before the drop: the common default, so check it against this team. The defensive-zone caption also explains how the books differ on whether touching the circle line counts — worth knowing before you call an encroachment from a seat.
 
 ![](diagram:faceoff-ozone-alignment)
 

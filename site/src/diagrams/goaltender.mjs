@@ -130,7 +130,7 @@ const playingTheAngle = {
 
   describe:
     'The attacking half of the rink, the defended net at the right. One opposition ' +
-    'forward stands at the top of the right-hand faceoff circle with the puck just off ' +
+    'forward stands at the top of the right-hand faceoff circle, the goalie’s right, with the puck just off ' +
     'the blade toward the net. A shaded triangle runs from the puck to the two goalposts, ' +
     'narrowing from the width of the net at the goal line to a point at the puck. The ' +
     'goalie stands inside that triangle on its centre line, six feet out from the ' +
@@ -208,7 +208,7 @@ const frontDoorBackDoor = {
 
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition ' +
-    'forward has the puck just inside the right-hand faceoff dot. A second opposition ' +
+    'forward has the puck just inside the right-hand faceoff dot, on the goalie’s right. A second opposition ' +
     'forward stands unmarked on the far side of the net, five feet out from the goal ' +
     'line and clear of the crease. A dashed line — the notation for a pass — shows the ' +
     'pass available across the slot, running from the puck toward that attacker and ' +
@@ -271,10 +271,12 @@ const angleClosesWide = {
     'of it — and note that closing the low short side leaves the space over your shoulder still ' +
     'open.',
 
+  // W473: "to the right of the net" read, in picture terms, as behind a net already drawn at the
+  // right; the shooter is toward the TOP, which is the goalie's own right (goalie faces left).
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition ' +
-    'forward has the puck level with the goal line, about fourteen feet to the right of ' +
-    'the net and between the net and the boards. The goalie is at the near post, on the ' +
+    'forward has the puck level with the goal line, about fourteen feet from the net toward ' +
+    'the top of the picture, which is the goalie’s right, between the net and the boards. The goalie is at the near post, on the ' +
     'goal line rather than out at the top of the crease, and tight against the post ' +
     'rather than standing a foot off it. No other players are drawn, and no movement is ' +
     'drawn: the picture is one position on the goalie’s arc, not the journey to it.',
@@ -316,7 +318,7 @@ const failureModes = {
 
   describe:
     'The attacking half of the rink, the defended net at the right. One opposition ' +
-    'forward stands at the top of the right-hand faceoff circle with the puck. Two ' +
+    'forward stands at the top of the right-hand faceoff circle, the goalie’s right, with the puck. Two ' +
     'goalie glyphs are drawn on the line from that puck to the centre of the goal ' +
     'line, representing the same goalie at two extremes rather than two players. ' +
     'The first is two feet out, effectively in the goalmouth, labelled too deep. The ' +
@@ -774,7 +776,7 @@ const readingATip = {
 
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition defenceman ' +
-    'stands at the right-hand point with the puck. A double line — the notation for a shot — ' +
+    'stands at the point on the goalie’s right with the puck. A double line — the notation for a shot — ' +
     'runs from the puck toward the net and stops part of the way there. An opposition forward ' +
     'stands on that line about thirteen feet out from the goal line, in the shooting lane and ' +
     'clear of the crease. The goalie is on the same line, inside the crease, a little ' +
@@ -842,7 +844,7 @@ const reboundCornersNotSlot = {
 
   describe:
     'The attacking half of the rink, the defended net at the right. An opposition defenceman ' +
-    'stands at the left-hand point with the puck, and a double line — the notation for a shot ' +
+    'stands at the point on the goalie’s left with the puck, and a double line — the notation for a shot ' +
     '— runs from it toward the net, stopping about nine feet short of the goalie. The ' +
     'goalie is on the line from that puck to the centre of the goal line, six feet out. ' +
     'An opposition forward stands in the slot on the other side of the centre line, inside a ' +

@@ -266,15 +266,17 @@ const sixOnFivePinch = {
     'player. ⚠️ What an arrival like that may end in depends on whether your league allows body ' +
     'checking at all.',
 
+  // W473: attacking left to right, the top of the picture is the attackers' LEFT, so the old
+  // "right-hand wall/point man" was inverted; named from the picture instead.
   describe:
     'The attacking half of the rink, the opposition net at the right and their goalie in ' +
     'the crease. The six own players stand in the same 6-on-5 shape as the previous diagram: ' +
     'two at the points, two on the half-walls level with the faceoff dots, one at the net ' +
-    'front and one below the goal line. One opposition skater has the puck on the right-hand ' +
-    'wall, about twenty feet up-ice of the own player on that half-wall. A single route runs ' +
-    'from the right-hand point man down and out toward the wall, ending in two bars — arrive ' +
+    'front and one below the goal line. One opposition skater has the puck on the wall at the ' +
+    'top of the picture, about twenty feet up-ice of the own player on that half-wall. A single route runs ' +
+    'from the point man at the top of the picture down and out toward the wall, ending in two bars — arrive ' +
     'and contain — on a patch of boards up-ice of the opposition skater and about nine feet ' +
-    'clear of them. The left-hand point man has no route at all: they are standing still, and ' +
+    'clear of them. The point man at the bottom of the picture has no route at all: they are standing still, and ' +
     'that is the point of the picture. Their other four skaters are not drawn, and your own ' +
     'net, empty, is at the far end of the ice and outside this picture.',
 
@@ -475,11 +477,13 @@ const clearAtFiveOnSix = {
     'A blind clear to their point man hands it straight back. ' +
     '⚠️ You can be iced against a pulled goalie.',
 
+  // W473: your net at the left, so skating up ice the top of the picture is your LEFT; the old
+  // "right-hand faceoff circle" was inverted and "left-hand point" was the opposition's left.
   describe:
     'The full sheet. Your own net is at the left with your goalie in the crease; the ' +
     'opposition net at the right is empty, with no goalie drawn. One own player has the ' +
-    'puck deep in your own end, inside the right-hand faceoff circle and up toward the boards. ' +
-    'One opposition defenceman stands at the left-hand point, up at the blue-line end of your ' +
+    'puck deep in your own end, inside the faceoff circle at the top of the picture and up toward ' +
+    'the boards. One opposition defenceman stands at the point on the bottom side of the ice, up at the blue-line end of your ' +
     'own zone. Three routes leave the puck carrier, and all three are drawn as shots in the ' +
     'double-line notation. One runs the length of the ice and finishes inside the empty net. ' +
     'The second runs the length of the ice beside it and finishes past the goal line, well wide ' +

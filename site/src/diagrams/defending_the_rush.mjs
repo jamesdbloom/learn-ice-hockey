@@ -36,6 +36,15 @@
  *
  * The far-end suffix on an unsided position needs the empty side field —
  * 'high-slot::far', not 'high-slot:far', which silently resolves to the near end.
+ *
+ * W473 (18 Nov 2026): NO DESCRIBE NAMES A SIDE OF THE ICE AS "RIGHT" OR "LEFT" ANY MORE.
+ * 'right'/'left' in the anchors are resolve()'s +y/-y, the picture's TOP/BOTTOM. With
+ * the defended net at the left, the defending team (the reader's team) faces up ice
+ * toward +x and has the TOP on its LEFT; the attackers, skating at that net, have the
+ * top on their RIGHT. Seven describes said the carrier was "wide right" / in "the
+ * right lane" — the attackers' frame, the reader's team's left. Every describe now says
+ * "the top of the picture" / "the bottom", which is true in either frame. No caption
+ * here names a side.
  */
 
 const OWNER = 'content/systems/defending_the_rush.md';
@@ -223,7 +232,7 @@ const gapAndAngle = {
 
   describe:
     'The full sheet, the defended net at the left. Two players and a goalie. An opposition forward ' +
-    'carries the puck just past the centre red line on the right-hand side of the ice; a defender is ' +
+    'carries the puck just past the centre red line on the side of the ice at the top of the picture; a defender is ' +
     'about nine feet away from them, both nearer the middle of the ice and nearer the defended net — ' +
     'that is, on the inside and on the defensive side. The carrier’s route curves outward toward the ' +
     'boards and finishes short of them; the defender’s route is backward skating that stays inside the ' +
@@ -380,7 +389,7 @@ const twoOnOne = {
 
   describe:
     'The full sheet, the defended net at the left. Exactly two opposition forwards and one defender. ' +
-    'The carrier is wide on the right, the second attacker is on the left driving toward the far side of ' +
+    'The carrier is wide at the top of the picture, the second attacker is in the lower half driving toward the far side of ' +
     'the slot, and both are about the same distance from the defended net. The defender is between them ' +
     'and about seven feet nearer their own net than either, inside a shaded band marking the lane a pass ' +
     'between the two attackers would have to travel through; no pass is drawn. The carrier’s route ' +
@@ -538,7 +547,7 @@ const twoOnTwo = {
     'defending blue line. Both routes stop well short of the defencemen. The two defencemen are level ' +
     'with each other inside the defending zone, one either side of the middle, each nearer the middle ' +
     'of the ice than the forward who started on their side. Neither defenceman has a route drawn at ' +
-    'all. The puck is with the forward who starts on the right.',
+    'all. The puck is with the forward who starts at the top of the picture.',
 
   players: [
     { id: 'A1', team: 'opp', pos: 'F', at: A1_2ON2, label: 'puck carrier' },
@@ -607,7 +616,7 @@ const threeOnTwoDefault = {
 
   describe:
     'The full sheet, the defended net at the left. Three opposition forwards abreast just inside the ' +
-    'defending blue line: one wide right carrying the puck, one in the middle, one wide left. Two own ' +
+    'defending blue line: one wide at the top of the picture carrying the puck, one in the middle, one wide at the bottom. Two own ' +
     'defencemen level with each other about twenty feet nearer the defended net, one in each outside lane ' +
     'just inside the faceoff dots, each with a backward-skating route that ends level with the other and ' +
     'above the circles. One own forward, the backchecking centre, is behind the play up-ice and takes a ' +
@@ -709,7 +718,7 @@ const threeOnTwoAlternative = {
 
   describe:
     'The full sheet, the defended net at the left. The same three opposition forwards as the previous ' +
-    'diagram: wide right with the puck, in the middle, and wide left. The strong-side defenceman has ' +
+    'diagram: wide at the top of the picture with the puck, in the middle, and wide at the bottom. The strong-side defenceman has ' +
     'stepped up to about ten feet from the carrier, on the inside of them, and retreats backwards ' +
     'steering them toward the boards. The weak-side defenceman is much deeper and toward the middle, ' +
     'inside a shaded band drawn between the middle attacker and the far wide attacker, and drops off ' +
@@ -825,10 +834,10 @@ const backcheckLanes = {
   describe:
     'The full sheet, the defended net at the left, with a shaded band between the two faceoff dots ' +
     'running most of the length of the ice — the middle lane. Three opposition forwards attack, one in ' +
-    'each lane: the carrier in the right-hand outside lane, one driving hard through the shaded middle ' +
-    'lane without the puck, and one in the left-hand outside lane. Three own forwards are behind them, ' +
-    'up-ice: a winger behind the carrier in the right lane, the centre behind the middle driver, and a ' +
-    'winger behind the left-lane attacker. All three backcheck routes curve toward the middle of the ice ' +
+    'each lane: the carrier in the outside lane at the top of the picture, one driving hard through the shaded middle ' +
+    'lane without the puck, and one in the outside lane at the bottom. Three own forwards are behind them, ' +
+    'up-ice: a winger behind the carrier in the top lane, the centre behind the middle driver, and a ' +
+    'winger behind the bottom-lane attacker. All three backcheck routes curve toward the middle of the ice ' +
     'and stop short of the attacker they are chasing, arriving inside them rather than behind them. ' +
     'The goalie is in the crease. No defencemen are drawn.',
 
@@ -937,7 +946,7 @@ const trailer = {
 
   describe:
     'The full sheet, the defended net at the left, the play in the defending zone. Three opposition ' +
-    'attackers: one wide on the right with the puck below the faceoff dot, one driving the net front on ' +
+    'attackers: one wide at the top of the picture with the puck, level with the faceoff dot, one driving the net front on ' +
     'the weak side, and a third — the trailer — well behind them both, skating into the high slot in ' +
     'the middle of the ice. Two own defencemen are low and occupied, one inside the wide carrier and one ' +
     'at the net front beside the weak-side attacker, neither of them near the trailer. One own forward is ' +

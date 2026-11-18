@@ -1111,7 +1111,7 @@ export function rinkSvg(opts = {}) {
     (_t ? `<title>${esc(_t)}</title>` : '') +
     (_d ? `<desc>${esc(_d)}</desc>` : '');
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}" width="${width}" height="${height}"
+  return hideLabels(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}" width="${width}" height="${height}"
      font-family="-apple-system, Helvetica Neue, Arial, sans-serif" role="img">
     ${a11y}<defs>${clip}</defs>
     ${boards}
@@ -1126,7 +1126,7 @@ export function rinkSvg(opts = {}) {
     </g>
     ${overlay}
     ${footer}
-</svg>`;
+</svg>`);
 }
 
 /**
@@ -2510,13 +2510,34 @@ export function playSvg(spec, opts = {}) {
     (_t ? `<title>${esc(_t)}</title>` : '') +
     (_d ? `<desc>${esc(_d)}</desc>` : '');
 
-  return base
+  return hideLabels(base
     .replace('<defs>', `${a11y}<defs>`)
-    .replace('</svg>', `  ${defsOut()}\n    ${zones}\n    ${routes}\n    ${players}\n    ${puck}\n</svg>`);
+    .replace('</svg>', `  ${defsOut()}\n    ${zones}\n    ${routes}\n    ${players}\n    ${puck}\n</svg>`));
 }
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+/**
+ * Hide every drawn <text> from assistive technology, leaving <title> and <desc> as the
+ * image's only accessible text.
+ *
+ * `role="img"` should make an SVG's children presentational, but Chrome still exposes each
+ * <text> in the accessibility tree after the description — a screen reader could read
+ * "G LW D D D C the centre stepped down you" as noise after the real description (site
+ * review, W472). The glyph letters, route labels, leader labels, zone names, legend entries
+ * and footer all duplicate what <desc> already says in sentences.
+ *
+ * Applied once at each emitter's return (rinkSvg, playSvg, legendSvg) rather than at each of
+ * the dozen <text> sites, so a label path added later is covered without anyone remembering.
+ * ATTRIBUTE ONLY: nothing visual changes. Idempotent, because playSvg builds on rinkSvg's
+ * already-treated output. The attribute goes FIRST so the checkers that parse
+ * `<text\b([^>]*)>` (check_label_paint, check_leaders, check_zones) still see every other
+ * attribute unchanged.
+ */
+function hideLabels(svg) {
+  return svg.replace(/<text\b(?![^>]*\baria-hidden=)/g, '<text aria-hidden="true"');
+}
 
 /**
  * The legend, drawn beneath the ice so a diagram is self-describing.
@@ -2793,7 +2814,7 @@ export function legendSvg(width = 820, opts = {}) {
              || 'The notation key';
   const _d = [longDesc(opts), LEGEND_SOURCES].filter(Boolean).join(' ');
   const height = Math.round((width * H) / VB);
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${VB} ${H}"
+  return hideLabels(`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${VB} ${H}"
      font-family="-apple-system, Helvetica Neue, Arial, sans-serif" role="img">
     ${_t ? `<title>${esc(_t)}</title>` : ''}${_d ? `<desc>${esc(_d)}</desc>` : ''}
     <rect x="0" y="0" width="${VB}" height="${H}" fill="#ffffff"/>
@@ -2801,5 +2822,5 @@ export function legendSvg(width = 820, opts = {}) {
       <path d="M 0 0 L 10 5 L 0 10 z" fill="${PALETTE.boards}"/></marker></defs>
     ${items}
     ${glyphs}
-</svg>`;
+</svg>`);
 }

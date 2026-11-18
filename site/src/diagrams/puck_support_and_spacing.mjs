@@ -91,9 +91,11 @@ const supportInALine = {
     'What is wrong is the shape, and it is just as cheap to defend wherever on the ice the three ' +
     'of them happen to be.',
 
+  // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
+  // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
     'The attacking half of the rink, the net at the right. Three own-team forwards stand in a straight ' +
-    'line along the right-hand boards, fifteen feet apart: the puck carrier deepest, in the corner; a ' +
+    'line along the boards at the top of the picture, fifteen feet apart: the puck carrier deepest, in the corner; a ' +
     'second at the half-wall; a third further up the wall towards the blue line. A single opposition ' +
     'forward stands on that same line, between the carrier and the other two. No routes are drawn — ' +
     'the point of the picture is the shape, not any movement.',
@@ -145,9 +147,11 @@ const supportTriangle = {
     'has to be rebuilt every time. ' +
     'It is not a formation you set up, it is a shape you keep while everything moves.',
 
+  // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
+  // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
-    'The attacking half of the rink, the net at the right. The puck carrier is deep on the right-hand ' +
-    'boards in the corner and one teammate remains high on the same boards, but the third has moved off ' +
+    'The attacking half of the rink, the net at the right. The puck carrier is deep in the top corner, ' +
+    'on the boards, and one teammate remains high on the same boards, but the third has moved off ' +
     'the wall into the middle of the zone, level with and just below the faceoff dot, so the three form a ' +
     'triangle. The opposition forward stands where they stood in the previous diagram, on the line between ' +
     'the carrier and the high wall option. A single dashed passing route runs from the carrier into the ' +
@@ -304,9 +308,11 @@ const supportDistance = {
     'The self-test is time, not distance — if your teammate released the puck now, would it reach you ' +
     'before a defender does?',
 
+  // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
+  // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
-    'The attacking half of the rink, the net at the right. A puck carrier stands on the right-hand ' +
-    'boards level with the faceoff dot. A shaded band of ice curves around them on the open-ice side, ' +
+    'The attacking half of the rink, the net at the right. A puck carrier stands on the boards at ' +
+    'the top of the picture, level with the faceoff dot. A shaded band of ice curves around them on the open-ice side, ' +
     'its inner edge eight feet away and its outer edge fifteen. One teammate stands inside the band, ' +
     // "DASHED" WAS REMOVED HERE AND HAS BEEN PUT BACK, AND BOTH MOVES WERE RIGHT AT THE TIME.
     // The route is 8.68 ft; the carrier's glyph buries its first 3.88 ft and the arrowhead took
@@ -447,9 +453,11 @@ const supportAngles = {
     'line, which is onside under every book. ' +
     'A team needs all three at once.',
 
+  // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
+  // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
     'The full sheet, attacking to the right. A puck carrier stands on the centre line towards the ' +
-    'right-hand boards. Three teammates: one behind the puck and nearer the defensive end, one level ' +
+    'boards at the top of the picture. Three teammates: one behind the puck and nearer the defensive end, one level ' +
     'with the carrier but across on the far side of the ice, and one ahead of the puck and wide, still ' +
     'well short of the attacking blue line. Three dashed passing routes run from the carrier to each, ' +
     'stopping short of the receiver, at clearly different angles. No opposition players are drawn.',
@@ -753,9 +761,11 @@ const battleSupport = {
     ' Never push or hit the opponent on the wall from behind. Even in non-checking hockey, that is ' +
     'checking from behind. Play the puck at their feet.',
 
+  // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
+  // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
-    'The attacking half of the rink, the net at the right. An own-team forward is on the right-hand ' +
-    'boards with the puck, level with the faceoff dot, with an opposition forward tight to their inside ' +
+    'The attacking half of the rink, the net at the right. An own-team forward is on the boards at ' +
+    'the top of the picture with the puck, level with the faceoff dot, with an opposition forward tight to their inside ' +
     'shoulder, pinning them against the wall. A second own forward stands about sixteen feet away in ' +
     'open ice, inside and up-ice of the battle, near the faceoff dot. An opposition forward stands ' +
     'between that support player and the net, marking them. No routes are drawn.',
@@ -865,9 +875,11 @@ const layerNotConverge = {
     'turnover is contained by the net and the boards — is a coaching decision rather than something to ' +
     'freelance, so ask your coach where and when your team doubles.',
 
+  // W473: the corner is named from the picture, not as 'right'. Attacking to the right, the top
+  // corner (corner:right, +y) is the forecheckers' LEFT, so 'right-hand corner' was inverted.
   describe:
     'The attacking half of the rink, the opposition net at the right. An opposition defenceman has the ' +
-    'puck in the right-hand corner. One own forward closes from up-ice and inside, with a checking ' +
+    'puck in the top corner. One own forward closes from up-ice and inside, with a checking ' +
     'pressure route that finishes short of the carrier and aimed at the ice inside them rather than at ' +
     'the puck. A second own forward stands about fifteen feet behind and to the boards side of the ' +
     'first, up the wall and a stick’s reach off the lane to the opposition winger who waits higher up ' +

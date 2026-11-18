@@ -575,16 +575,23 @@ const ozoneAlignment = {
   half: true,
   width: 900,
 
+  // W473 (18 Nov 2026): "at the right-hand circle" -> "at the circle on your left as you
+  // attack". DOT is 'faceoff-dot:right', resolve()'s +y, the TOP of the picture; facing the
+  // opposition net at the right, the top is your LEFT — the frame faceoffs.md itself uses
+  // ("as you stand at the dot facing the opponent's end"). The four offensive-zone describes
+  // said "right-hand end-zone circle" and now say "upper ... on your left". The defensive-
+  // zone diagrams keep "right-hand"/"left-hand": there your own net is at the right, you face
+  // -x, and the top IS your right.
   caption:
-    'An offensive-zone draw, frozen before the drop, at the right-hand circle. Both defencemen are up' +
+    'An offensive-zone draw, frozen before the drop, at the circle on your left as you attack. Both defencemen are up' +
     ' at the points — the area just inside the blue line, not the line itself. The draw-side one is ' +
     'the shooter, with their feet already set and their stick already loaded; the far one holds the line ' +
     'as the safety against a counterattack. This is the common default and not a rule; every team’s ' +
     'alignment differs, so ask what yours runs.',
 
   describe:
-    'The attacking half of the rink, the opposition net at the right, the draw at the right-hand ' +
-    'end-zone circle. Five own players: the centre in the dot on the blue-line side of it; the ' +
+    'The attacking half of the rink, the opposition net at the right, the draw at the upper ' +
+    'end-zone circle, on your left as you attack. Five own players: the centre in the dot on the blue-line side of it; the ' +
     'boards-side winger level with the dot at the outer hash marks, close to the wall; the ' +
     'inside winger level with the dot at the inner hash marks; the strong-side defenceman at the ' +
     'point on the draw side, just inside the blue line; the weak-side defenceman at the far ' +
@@ -681,7 +688,7 @@ const goaliePulled = {
     'your team runs with six skaters out.',
 
   describe:
-    'The full sheet, attacking to the right, the draw at the right-hand end-zone circle in the ' +
+    'The full sheet, attacking to the right, the draw at the upper end-zone circle, on your left, in the ' +
     'attacking zone. Your own net, at the left, has no goalie in it. Six own skaters: the ' +
     'centre in the dot on the blue-line side; the boards-side winger at the outer hash marks; the ' +
     'inside winger at the inner hash marks; the extra attacker at the net front, just outside the ' +
@@ -1055,7 +1062,7 @@ const ozoneDOneTimer = {
 
   describe:
     'The attacking half of the rink, the opposition net and goalie at the right, the draw at ' +
-    'the right-hand end-zone circle. Five own players: the centre in the dot on the blue-line ' +
+    'the upper end-zone circle, on your left as you attack. Five own players: the centre in the dot on the blue-line ' +
     'side; the boards-side winger at the outer hash marks; the inside winger below the dot line ' +
     'and off to one side of the middle, clear of the shooting lane; and both defencemen at the ' +
     'points just inside the blue line. The opposing centre is on the far side of the dot, and ' +
@@ -1108,7 +1115,7 @@ const ozoneWingerWalkout = {
 
   describe:
     'The attacking half of the rink, the opposition net and goalie at the right, the draw at ' +
-    'the right-hand end-zone circle, and the same five own players as the offensive-zone ' +
+    'the upper end-zone circle, on your left as you attack, and the same five own players as the offensive-zone ' +
     'alignment: the centre in the dot on the blue-line side, the boards-side winger at the outer ' +
     'hash marks, the inside winger at the inner hash marks, and both defencemen at the points. ' +
     'The opposing centre is on the far side of the dot, and their goalie is in the crease. ' +

@@ -180,11 +180,13 @@ const areaPass = {
     'skates both cross the leading edge before the puck does is offside, and under USA Hockey ' +
     'Rule 630(a) and Hockey Canada Rule 6.11 a lifted trail skate is offside too — so keep it down.',
 
+  // W473: the side is named from the picture, not as 'right'. Attacking to the right, the top
+  // half (CHIP_CARRIER y 18) is the attacker's LEFT, so 'right-hand side of the ice' was inverted.
   describe:
     'The attacking half of the rink, attacking to the right, with the blue line running down the picture about a ' +
     'quarter of the way across and the opposition net at the far right, their goalie in the crease. Three ' +
-    'skaters. Your puck carrier stands in the neutral zone, eleven feet outside the blue line and on the ' +
-    'right-hand side of the ice, with the puck beside them. An opposition defenceman, drawn as a solid triangle, ' +
+    'skaters. Your puck carrier stands in the neutral zone, eleven feet outside the blue line and in the ' +
+    'top half of the picture, with the puck beside them. An opposition defenceman, drawn as a solid triangle, ' +
     'stands one foot inside the blue line and about six feet closer to the middle, between the carrier and the ' +
     'ice beyond. Your winger is wider still and further back, about ten feet from the carrier; a plain ' +
     'skating arrow runs from them straight up the ice and stops four feet short of the blue line. A shaded ' +

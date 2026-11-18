@@ -425,10 +425,12 @@ const wideRushAndTheTrailer = {
     'than a movement backwards. The trailer is a forward only because a marker has to be a forward ' +
     'or a defenceman — you are told a trailer is coming, not who it is.',
 
+  // W473: attacking left to right, the top of the picture is the carrier's LEFT wing, so the old
+  // "right wing" / "right-hand faceoff dot" was inverted; named from the picture instead.
   describe:
     'The attacking half of the rink, the opposition net at the right. Own players are drawn open, ' +
-    'the opposition solid. An own forward has the puck wide on the right wing, nine feet up-ice ' +
-    'of the right-hand faceoff dot and eleven feet outside it toward the boards, about nine feet ' +
+    'the opposition solid. An own forward has the puck wide on the upper side of the ice, nine feet ' +
+    'up-ice of the upper faceoff dot and eleven feet outside it toward the boards, about nine feet ' +
     'off the side wall, with the puck off the blade toward the net. An opposition defenceman, ' +
     'drawn as a triangle, stands sixteen feet away on the straight line between that carrier and ' +
     'the middle of the goal line, just inside and below the faceoff dot; no route is drawn for ' +
