@@ -11,7 +11,7 @@
 
 **Read closing speed, not distance.** A defender three feet away who has overrun you gives you time; one twenty feet away closing hard gives you none. Read their hips: a player accelerates where the hips face.
 
-**When the play ahead is not there, curl away from the closing defender before they can reach you, and hold the puck a second or two for support** — a tight turn side-on to them, puck on the far side of your body from them, at or inside their blue line, in open ice and never against the wall; never your back to anyone coming at you. Never in your own end, where a lost puck is a goal against.
+**When the play ahead is not there, curl away from the closing defender before they can reach you, and hold the puck a second or two for support.** Make it a tight turn side-on to them, puck on the far side of your body from them, at or inside their blue line. Do it in open ice, never against the wall, and never turn your back to anyone coming at you. Never in your own end, where a lost puck is a goal against.
 
 **Glide, look, explode.** Separation comes from changing speed, not from top speed: a defender can match a steady pace, and the moment they change speed is when they can least change direction. This is coaching craft, not a measured finding.
 
@@ -140,7 +140,7 @@ The [Cutting Edge Ice Academy](https://www.edgeiceacademy.com/article/how-decept
 
 **You have to practise this, because it runs against instinct: every instinct says "go forward."**
 
-The play: you carry into contested ice at or inside their blue line and the option ahead isn't there. Instead of forcing it, **turn away from the pressure before the defender can reach you**, in open ice and not against the wall — a tight turn or curl back toward your own end, side-on to them, puck on the far side of your body from them, never your back to anyone coming at you — and hold it for a second or two while your support arrives.
+The play: you carry into contested ice at or inside their blue line and the option ahead isn't there. Instead of forcing it, **turn away from the pressure before the defender can reach you**, in open ice and not against the wall. Make it a tight turn or curl back toward your own end, side-on to them, with the puck on the far side of your body from them and never your back to anyone coming at you. Then hold the puck for a second or two while your support arrives.
 
 ```facts
 Action: At or inside their blue line, in open ice and before the defender can reach you, curl back side-on to them and hold the puck a second or two for support — never your back to them

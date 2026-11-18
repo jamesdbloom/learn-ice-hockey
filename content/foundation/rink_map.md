@@ -261,7 +261,7 @@ How players name them in conversation:
 - **"Outside the blue"** or **"neutral-zone dot"** for the four dots flanking the blue lines.
 - **"Strong-side dot" / "weak-side dot"** when the puck is already in play near one of them.
 
-> **IIHF equivalents (Rule 1.9 and Appendix VI) — the operative set in Britain:** centre spot 30 cm across with a 4.50 m radius blue circle; neutral-zone spots 60 cm across, 1.50 m from each blue line and 14.0 m apart; end-zone spots 6.0 m from the goal line and 7.0 m either side of centre, with 4.50 m radius red circles. The same nine locations, metricated, and the four neutral-zone spots have no circles there either.
+> **IIHF equivalents (Rule 1.9 and Appendix VI) — the operative set in Britain:** centre spot 30 cm across with a 4.50 m radius blue circle. Neutral-zone spots are 60 cm across, 1.50 m from each blue line and 14.0 m apart. End-zone spots sit 6.0 m from the goal line and 7.0 m either side of centre, with 4.50 m radius red circles. The same nine locations, metricated, and the four neutral-zone spots have no circles there either.
 
 ### Hash marks
 

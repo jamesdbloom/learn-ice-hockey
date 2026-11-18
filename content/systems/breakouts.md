@@ -207,7 +207,7 @@ Technique: Receive with your body open to the ice, not with your nose against th
 
 ### 4. The weak-side winger
 
-As the far winger, be where your team's breakout expects you. In the common swing breakout that means coming across or up the middle as the second option, then getting out ahead of the puck; some teams fly you early through the middle or keep you low as the rim's target instead, so find out which yours runs, because leaving early in a system that expects you low leaves the breakout with no second option.
+As the far winger, be where your team's breakout expects you. In the common swing breakout that means coming across or up the middle as the second option, then getting out ahead of the puck. Some teams fly you early through the middle or keep you low as the rim's target instead, so find out which yours runs. Leaving early in a system that expects you low leaves the breakout with no second option.
 
 ```facts
 Position: The far winger — what you do here is genuinely system-dependent

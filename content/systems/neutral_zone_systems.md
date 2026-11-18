@@ -440,7 +440,7 @@ Rule: A reckless USA Hockey charge is a major and game misconduct (607(b)) — p
 
 **What standing up is not.** It is refusing ground with your feet, so the carrier has to solve you. ⚠️ **It is not building speed into a hit, and a carrier fighting the puck or looking down at it is not an invitation to arrive harder** — that only tells you they cannot change direction. **And keep your skates on the ice until contact** — leave your feet to deliver a check and every book here calls it charging, even shoulder to shoulder.
 
-**What it costs.** Charging binds every division, and **no rulebook here caps it at a minor**. ⚠️ **Do not run at a head-down carrier who has not seen you: under Hockey Canada a charge on a player *"unable to defend themselves"* is a mandatory match penalty (7.4(c)),** and under USA Hockey a full-speed run at one is charging (Rule 607, Situation 2) and, if the referee judges it reckless, at least a major and game misconduct (607(b)), with a match likely (602(a)). The full ladder, book by book, is set out above under [Gap control as a team concept](#gap-control-as-a-team-concept).
+**What it costs.** Charging binds every division, and **no rulebook here caps it at a minor**. ⚠️ **Do not run at a head-down carrier who has not seen you. Under Hockey Canada a charge on a player *"unable to defend themselves"* is a mandatory match penalty (7.4(c)).** Under USA Hockey a full-speed run at one is charging (Rule 607, Situation 2), and if the referee judges it reckless it is at least a major and game misconduct (607(b)) — plan on a match penalty and a likely multi-game suspension (602(a)). The full ladder, book by book, is set out above under [Gap control as a team concept](#gap-control-as-a-team-concept).
 
 ### Backing off
 
