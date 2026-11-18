@@ -382,7 +382,10 @@ const ppSpread = {
     // same corner, anchored on different teams' players.
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -3, dy: 7 } },
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -3, dy: -7 } },
-    { id: 'F', team: 'opp', pos: 'F', at: { at: 'high-slot', dx: -6 },         label: 'the triangle' },
+    // W440: was "the triangle" with no hint, laid along the bottom arc and hash marks of the
+    // upper circle, and no hint cleared it (W403). "triangle" is the section's own word ("a
+    // tight triangle around the slot") and fits above him, between the hash marks.
+    { id: 'F', team: 'opp', pos: 'F', at: { at: 'high-slot', dx: -6 },         label: 'triangle', labelHint: [3, 10] },
 
     // Five attackers. "two low, one on each side of the net just outside the
     // posts" — the posts are at y plus or minus 3.

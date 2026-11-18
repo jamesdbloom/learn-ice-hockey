@@ -341,7 +341,11 @@ const wall131 = {
     // numbered, because the section numbers neither: it says "one defenceman in
     // the middle" and "the single back defenceman".
     { id: 'F2', pos: 'F', at: F2_131, label: 'own lane only' },
-    { id: 'D', pos: 'D', at: D131, label: 'the read-maker', labelHint: [0, -14.5] },
+    // W440: was "the read-maker" at [0, -14.5], where the words ran along the bottom arc of
+    // the centre circle and no hint cleared it (W403). Dropping "the" (the caption's term is
+    // still "the read-maker") lets it sit inside the circle just under and right of him; only
+    // the red line crosses it, at right angles. F1's label moves above F1 as a result.
+    { id: 'D', pos: 'D', at: D131, label: 'read-maker', labelHint: [6, -8] },
     { id: 'F3', pos: 'F', at: F3_131, label: 'own lane only', labelHint: [21, 1] },
     // Row 3 — "the single back defenceman is the safety... and, crucially,
     // retrieves every dumped puck and starts the breakout."

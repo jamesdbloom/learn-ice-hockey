@@ -176,7 +176,12 @@ const up = {
     // Eight feet to the strong side of centre, which keeps the glyph off the goal
     // frame (y +-3, x -89 to -92.33) — at dy 5 it was drawn sitting on the net's
     // back corner — and well clear of the goaltender's circle.
-    { id: 'F1', pos: 'F', team: 'opp', at: { at: 'behind-net::far', dy: 8 }, label: 'gone behind' },
+    // W440: label was "gone behind", whose tail ran along the bottom arc of the left
+    // circle with no clear hint slot (W403). "committed" is the section's own word for
+    // this read ("the forecheck has committed behind the net"). It is shorter, so it no
+    // longer runs along the arc, but the circle's bottom arc still cuts through "mitt" (a
+    // crossing the checker rates mild). The glyph's position shows "behind".
+    { id: 'F1', pos: 'F', team: 'opp', at: { at: 'behind-net::far', dy: 8 }, label: 'committed' },
   ],
 
   routes: [

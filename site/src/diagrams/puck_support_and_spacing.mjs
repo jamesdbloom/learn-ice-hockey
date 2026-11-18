@@ -457,7 +457,11 @@ const supportAngles = {
     // puck in the first render of this diagram, in a diagram whose entire subject
     // is which side of the puck people are on. Offsets are unambiguous.
     { id: 'S1', pos: 'F', at: { at: 'neutral-zone-mid', dx: -24, dy: 12 }, label: 'behind — the outlet' },
-    { id: 'S2', pos: 'F', at: { at: 'centre-ice', dy: -6 },              label: 'level — changes the side' },
+    // labelHint (W440): below the centre circle instead of along its bottom arc, where the
+    // placer put it and W403 found no clear slot. The words (about 53 ft at this scale) are
+    // wider than the 50 ft neutral zone, so a blue line must cross them; here the red line
+    // and the near blue line both fall in word gaps. Placement only.
+    { id: 'S2', pos: 'F', at: { at: 'centre-ice', dy: -6 },              label: 'level — changes the side', labelHint: [-9.5, -13] },
     { id: 'S3', pos: 'F', at: { at: 'neutral-zone-mid', dx: 2, dy: 26 }, label: 'ahead — gains ground' },
   ],
 

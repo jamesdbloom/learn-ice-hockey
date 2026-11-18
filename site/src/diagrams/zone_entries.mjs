@@ -687,8 +687,12 @@ const crossCorner = {
     // the dump's own line and rendered with the puck path drawn straight through
     // the glyph. From here, in front of his own net on the weak side, the length
     // of the retrieval is also visible, which is the point of the play.
+    // W440: was "long backhand retrieval", which no hint could lift off the bottom arc of
+    // the upper circle or the top of his own (W403). "long retrieval" is the section's own
+    // phrase ("a long retrieval on their backhand"), and at this length it fits above him,
+    // between the two circles' hash marks; the caption still says "backhand".
     { id: 'D', team: 'opp', pos: 'D', at: WEAK_SIDE_D,     // (71, -8)
-      label: 'long backhand retrieval' },
+      label: 'long retrieval', labelHint: [-4, 7] },
 
     // labelHint (W403): up and to his right, inside the zone. Moving "best placed" freed the
     // slot this label used to take, and the placer then put it over the blue line, the line

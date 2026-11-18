@@ -285,8 +285,14 @@ const gapAndAngle = {
   ],
 
   players: [
-    { id: 'A1', team: 'opp', pos: 'F', at: GAP_CARRIER, label: 'puck carrier' },
-    { id: 'D',  pos: 'D', at: GAP_D,                    label: 'inside, closing' },
+    // labelHint (W440): pins the carrier's label to the slot it already had above him. The
+    // D's hint below moves the placer's order, and unpinned this label dropped under A1.
+    { id: 'A1', team: 'opp', pos: 'F', at: GAP_CARRIER, label: 'puck carrier', labelHint: [18.93, 9.46] },
+    // labelHint (W440): down and toward the defended net. Straight under him the words ran
+    // along the top of the centre circle with the red line through them, and W403 found no
+    // clear slot. Here only the blue line crosses, and it falls in the word gap after the
+    // comma. Placement only: no player or route moved.
+    { id: 'D',  pos: 'D', at: GAP_D,                    label: 'inside, closing', labelHint: [-14, -10] },
     { id: 'G',  pos: 'G', at: OWN_G },
   ],
 
@@ -593,12 +599,21 @@ const threeOnTwoDefault = {
   players: [
     { id: 'A1', team: 'opp', pos: 'F', at: A1_3ON2, label: 'carrier, wide' },
     { id: 'A2', team: 'opp', pos: 'F', at: A2_3ON2, label: 'the middle' },
-    { id: 'A3', team: 'opp', pos: 'F', at: A3_3ON2, label: 'far wide man' },
+    // labelHint (W440 review): pins the pre-W440 slot beside A3. C's hint below otherwise
+    // pushed this label up under C's arrowhead, where it read as C's assignment ("C -> far
+    // wide man"), which is D2's job, not the backchecker's.
+    { id: 'A3', team: 'opp', pos: 'F', at: A3_3ON2, label: 'far wide man', labelHint: [22.49, -2.02] },
     // Just inside the dots: wide enough to own the outside attacker, tight enough
     // that "the middle sealed between you" is true rather than decorative.
     { id: 'D1', pos: 'D', at: { at: 'top-of-circle:right:far', dx: 6, dy: -2 }, label: 'takes the wide man' },
-    { id: 'D2', pos: 'D', at: { at: 'top-of-circle:left:far', dx: 6, dy: 2 },   label: 'takes the wide man' },
-    { id: 'C',  pos: 'F', at: C_3ON2, label: 'takes the middle' },
+    // labelHint (W440): pins the slot this label already had, under D2. Unpinned, the
+    // knock-on of C's hint below sent it above D2, onto the top arc of its own circle.
+    { id: 'D2', pos: 'D', at: { at: 'top-of-circle:left:far', dx: 6, dy: 2 },   label: 'takes the wide man', labelHint: [0, -14.5] },
+    // labelHint (W440): below the centre circle, centred so the red line falls between "the"
+    // and "middle". The placer's slot straight under C ran the words along the circle's left
+    // arc, and W403 found no clear slot: at this sheet's scale the blue-to-red gap (25 ft) is
+    // narrower than the words, so one line must cross them. Placement only.
+    { id: 'C',  pos: 'F', at: C_3ON2, label: 'takes the middle', labelHint: [10.35, -14] },
     { id: 'G',  pos: 'G', at: OWN_G },
   ],
 
@@ -703,7 +718,13 @@ const threeOnTwoAlternative = {
     { id: 'A3', team: 'opp', pos: 'F', at: A3_3ON2, label: 'the far man' },
     { id: 'D1', pos: 'D', at: D1_ALT, label: 'takes the puck' },
     { id: 'D2', pos: 'D', at: D2_ALT, label: 'splits the two' },
-    { id: 'C',  pos: 'F', at: C_ALT,  label: 'the third attacker' },
+    // W440: was "the third attacker" with no hint, whose words ran along the centre circle's
+    // bottom arc (W403 found no clear slot). Moved below the circle it sat beside A3 and read
+    // as A3's name, which the caption contradicts: which attacker it will be is not fixed. So
+    // the label states the job, matching the default's "takes the middle" and the section's
+    // "the backchecker's job becomes the third attacker". Below the circle; the red line
+    // crosses at "the".
+    { id: 'C',  pos: 'F', at: C_ALT,  label: 'takes the third', labelHint: [10.35, -14] },
     { id: 'G',  pos: 'G', at: OWN_G },
   ],
 

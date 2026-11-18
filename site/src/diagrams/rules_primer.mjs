@@ -326,8 +326,12 @@ const icingGainingTheLine = {
   ],
 
   players: [
-    { id: 'P', pos: 'F', at: ICE_BODY, label: 'did not gain the line' },
-    { id: 'P', pos: 'F', at: LEGAL_BODY, label: 'gained the line' },
+    // labelHint (W440): each label on the OUTER side of its player, beside its own puck. The
+    // placer's slots between the players laid both along the centre circle (W403 found no
+    // other clear slot); out here the only paint is the red line itself, crossing the words
+    // at right angles — the line the labels are about.
+    { id: 'P', pos: 'F', at: ICE_BODY, label: 'did not gain the line', labelHint: [-8, 12] },
+    { id: 'P', pos: 'F', at: LEGAL_BODY, label: 'gained the line', labelHint: [-6, -12] },
   ],
 
   // Both dump-ins drawn with the key's passing symbol — the published symbol for
