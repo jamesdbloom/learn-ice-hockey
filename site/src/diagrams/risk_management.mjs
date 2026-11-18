@@ -631,8 +631,16 @@ const PINCH_COVER =
   'Who covers the point behind a pinch is a coaching choice — the centre, the highest forward, ' +
   'or the weak-side defenceman sliding across — so find out what your team plays. ';
 const PINCH_SCOREBOARD = 'Whether to pinch at all moves with the scoreboard and the clock. ';
+// ⚠️ W-amber/W479, 18 November 2026: GLYPH MOVED. It opened the constant, so the amber run
+// (captionNodes: first ⚠ to the END of the caption) began on the picture-reading disclosure
+// "No contact is drawn: ... two bars". It now opens a fresh sentence on "Arrive and contain",
+// the instruction (W479: "meaning" cut so the grey sentence ends before the glyph rather than
+// the amber starting mid-sentence on a lowercase word), so the disclosure stays muted caption prose and the amber covers the instruction
+// and the league-checking condition only. Both captions end on this constant, so it still
+// closes each one, and md_to_speech marks a caption "Important." on the glyph's presence, not
+// its position, so the spoken escalation is unchanged.
 const PINCH_CONTACT =
-  '⚠️ No contact is drawn: the pinching defenceman’s route ends in two bars, meaning arrive and ' +
+  'No contact is drawn: the pinching defenceman’s route ends in two bars. ⚠️ Arrive and ' +
   'contain on the wall, not on a player, and whether that arrival may end in a hit depends on ' +
   'whether your league allows body checking at all.';
 

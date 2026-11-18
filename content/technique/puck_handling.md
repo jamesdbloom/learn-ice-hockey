@@ -604,7 +604,7 @@ Protection is not a destination. Every second you hold the puck under pressure, 
 - If nobody is there, is my out a rim, a reverse, a spin to the middle (only off a checker already leaning on me), or a chip off the wall past the checker?
 - Where is the pressure coming from, and therefore which side does the puck need to be on when I arrive?
 
-Answering those three before your stick touches the puck is what [scanning](../hockey-iq/scanning_and_anticipation.md) is for. A player who scans arrives with a plan and holds the puck for half a second. A player who does not arrives with no plan, protects beautifully for three seconds, and loses it.
+Answering those three before your stick touches the puck is what [scanning](../hockey-iq/scanning_and_anticipation.md) is for. A player who scans arrives with a plan and holds the puck for half a second. A player who does not arrives with no plan, protects beautifully for three seconds, and loses it. Here it is on the half-wall, the boards level with the faceoff dot.
 
 ![](diagram:scan-before-a-wall-reception)
 

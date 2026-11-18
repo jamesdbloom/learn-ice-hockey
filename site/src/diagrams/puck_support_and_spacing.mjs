@@ -441,6 +441,13 @@ const supportAngles = {
   // passing_and_receiving.md does not voice it anywhere near its marker. The trail-skate
   // limb is now its own sentence, so "with the trail skate" no longer reads as describing
   // the parking.
+  // 18 November 2026: "until the puck is completely across" added to the trail-skate
+  // imperative — every book times the test at the puck completely crossing (NHL 83.1 "prior to
+  // the puck completely crossing the leading edge"; Hockey Canada 6.11 Interpretations 1-4 "at
+  // the instant the puck completely crosses"), so the instruction now says when it stops binding.
+  // W479: the clause LEADS, so "which is onside" attaches to the skate position, not to the
+  // puck; "on or behind" replaces "at or behind" ("at" can read as "near"). Host
+  // passing_and_receiving.md carries the same order.
   caption:
     'One instance of the three support angles, drawn around a carrier in the neutral zone attacking to ' +
     'the right: one teammate behind the puck, one level with it across the ice, one ahead of it. ' +
@@ -449,8 +456,8 @@ const supportAngles = {
     'zones; in your own zone the lateral option goes behind your own net, not across the ' +
     'middle through the slot, where an interception is a point-blank chance. ' +
     'Ahead gains ground and is the most interceptable, and at the blue line the receiver times their ' +
-    'entry rather than parking in the zone. Keep the trail skate on the ice at or behind the ' +
-    'line, which is onside under every book. ' +
+    'entry rather than parking in the zone. Until the puck is completely across, keep the trail ' +
+    'skate on the ice on or behind the line, which is onside under every book. ' +
     'A team needs all three at once.',
 
   // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
@@ -706,8 +713,13 @@ const battleSupport = {
     // mechanism ("brings their checker"); the checking-from-behind sentence uses the host's
     // own scope ("even in non-checking hockey") and the facts line's "play the puck at their
     // feet" closes the amber. Every limb, both exceptions and "find out" are kept.
+    // ✂️ 18 November 2026 (W465 review nits): "brings their checker out" -> "keeps their checker
+    // out", because the picture draws that checker beside the support player in open ice — it
+    // was never in the pile, so nothing is brought out; the host's "bring your checker" is the
+    // cost of going IN, which this sentence describes avoiding. "stick down as an exit" -> "stick
+    // down for an exit": the player is the exit (host: "offer an exit"), not the stick.
     'Your teammate is pinned on the boards with the puck. The support player stays out in open ' +
-    'ice about five metres away, stick down as an exit, and brings their checker out with them. ' +
+    'ice about five metres away, stick down for an exit, and keeps their checker out with them. ' +
     'Two exceptions send you in: a genuine fifty-fifty scramble nobody has, and a team that ' +
     'assigns a second player to the wall — find out if that is you. ' +
     // ⚠️ THIS IS THE ONE CAPTION IN THE CORPUS THAT SENDS A READER *INTO* A WALL BATTLE, and it
