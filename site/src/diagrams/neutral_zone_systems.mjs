@@ -601,7 +601,10 @@ const leftWingLock = {
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: THEIR_G },
-    { id: 'D', team: 'opp', pos: 'D', at: { at: 'behind-net', dy: 5 }, label: 'has the puck' },
+    // Label "has the puck" dropped per owner ruling 18 Nov 2026 (W448): the drawn puck dot
+    // shows possession, and the describe text names this defenceman as the one "who has the
+    // puck behind their own net". Player and puck kept.
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'behind-net', dy: 5 } },
 
     { id: 'G', pos: 'G', at: OUR_G },
     // The two who forecheck. Deep, on opposite sides; nothing finer is claimed.

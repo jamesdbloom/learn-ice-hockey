@@ -887,13 +887,15 @@ const trapezoidAim = {
   players: [
     // Behind his own net and inside the marked area — standing exactly where a
     // puck dumped straight behind the net would arrive, which is the contrast the
-    // section draws. He is allowed to stand anywhere; the label says what is
-    // actually judged.
+    // section draws. He is allowed to stand anywhere; the caption now carries what is
+    // actually judged, which is where the puck is played, not where the goalie stands.
     // Clear of the goal frame, which runs from the goal line back to x 92.3: at
     // dx 1 the glyph overlapped the net's back rail and read as a goaltender
     // standing inside his own net.
-    { id: 'G', team: 'opp', pos: 'G', at: { at: 'behind-net', dx: 2.5 },   // (96.5, 0)
-      label: 'only inside the marked lines' },
+    // Label "only inside the marked lines" dropped per owner ruling 18 Nov 2026 (W448): the
+    // caption already states the rule ("the marked area is the only ice behind the goal line
+    // on which they may play the puck"). Player kept; no route or puck moved.
+    { id: 'G', team: 'opp', pos: 'G', at: { at: 'behind-net', dx: 2.5 } },   // (96.5, 0)
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'faceoff-dot:right', dx: 10, dy: -6 },  // (79, 16)
       label: 'has to go and get it' },
 

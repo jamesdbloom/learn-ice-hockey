@@ -290,8 +290,10 @@ const gapAndAngle = {
     { id: 'A1', team: 'opp', pos: 'F', at: GAP_CARRIER, label: 'puck carrier', labelHint: [18.93, 9.46] },
     // labelHint (W440): down and toward the defended net. Straight under him the words ran
     // along the top of the centre circle with the red line through them, and W403 found no
-    // clear slot. Here only the blue line crosses, and it falls in the word gap after the
-    // comma. Placement only: no player or route moved.
+    // clear slot. Here only the blue line crosses. In librsvg it falls in the word gap after
+    // the comma, but not in the browser's system font: the site-reviewer measured the line
+    // crossing the "c" of "closing" (W448). The crossing is still mild rather than severe.
+    // Placement only: no player or route moved.
     { id: 'D',  pos: 'D', at: GAP_D,                    label: 'inside, closing', labelHint: [-14, -10] },
     { id: 'G',  pos: 'G', at: OWN_G },
   ],
