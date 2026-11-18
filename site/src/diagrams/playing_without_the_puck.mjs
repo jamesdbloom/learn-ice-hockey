@@ -421,10 +421,10 @@ const screenSightline = {
     'Keep your stick on the ice too, because a screen ' +
     'is also a tip and rebound threat, and move late. The picture cannot show what is ' +
     'legal. Outside the crease and touching nobody, a screen is normally ' +
-    'legal, but contact, or a position that stops the goalie moving freely in their crease or ' +
-    'defending their goal, can still cost the goal (NHL and IIHF 69.1). So keep both feet out of the blue paint and ' +
+    'legal, but contact, a position that stops the goalie moving freely in their crease, or a ' +
+    'screen held inside it, can still cost the goal (NHL and IIHF 69.1 and 69.3). So keep both feet out of the blue paint and ' +
     'off its red line, and touch nobody. ' +
-    // ✂️ W459 (18 November 2026), 185 -> 180 words. Three hosts (render 18 Nov, after the
+    // ✂️ W459 (18 November 2026), 185 -> 183 words. Three hosts (render 18 Nov, after the
     // cut: playing_without_the_puck.md chunk 044, rules_primer.md chunk 101,
     // body_contact_and_battles.md chunk 116). CUT: 'Here "screen" means the goalie's sightline and
     // nothing else.' A vocabulary note a player does nothing with in a section that is about the
@@ -437,9 +437,14 @@ const screenSightline = {
     // body_contact_and_battles.md voices the head-first limb only five chunks back (111).
     'A head-down, head-first hit on a goal post is the same injury as one on the boards, and can ' +
     'happen at walking speed. ' +
-    // ⚠️ W459 RULES REVIEW (WRONG, permissive, fixed): the 69.1 sentence carried only the
-    // move-freely limb. nhl_rules.txt 69.1 reads "impairs the goalkeeper's ability to move freely
-    // within his crease or defend his goal" -- both limbs are now in the caption.
+    // ⚠️ W459 RULES REVIEW, AND ITS FIX WAS ITSELF WRONG. A rules review flagged this sentence
+    // as omitting 69.1's "or defend his goal" limb, and "or defending their goal" was added. That
+    // over-forbade a legal screen: NHL, IIHF and PWHL Table 14 Situations 5C and 5E ALLOW the goal
+    // for a screen outside the crease that impairs the goalie, and the books apply the defend limb
+    // only to an attacker inside the crease (5B and 5D; 69.3's significant-position paragraph).
+    // The reviewer withdrew the finding. The sentence now names three costs -- contact, a position
+    // that stops the goalie moving freely in their crease, or a screen held inside the crease --
+    // and cites 69.1 and 69.3. Do not add the defend limb to the outside-the-crease case.
     // SAFETY. Owner's own wording, the "Never:" fact in
     // content/hockey-iq/playing_without_the_puck.md § "Screening the goaltender". LAST.
     // ⚠️ THE FULL STOP AFTER "never duck" IS LOAD-BEARING AND MUST NOT BECOME AN EM DASH.
