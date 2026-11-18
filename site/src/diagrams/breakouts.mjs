@@ -88,8 +88,10 @@ const fiveRoles = {
     // voice it, but it is tactical colour, not a safety limb, rule, scope or hedge. The orientation
     // sentence was compressed. KEPT word for word: every position, the coaching-choice disclosure
     // with the centre-fly alternative and "ask your coach", and "no forecheck is drawn".
-    'The five jobs on a breakout, frozen at the instant the puck is retrieved, with your own ' +
-    'zone at the left and play moving left to right. D1 has gone back for ' +
+    // W470 (18 November 2026): WORDING ONLY. Cut "and play moving left to right" (the own-zone-at-
+    // the-left orientation already says it). No limb cut.
+    'The five jobs on a breakout, frozen at the instant the puck is retrieved, with your own zone at ' +
+    'the left. D1 has gone back for ' +
     'the puck in the corner; D2 is on the opposite side of the net, level with the goal line, where a' +
     ' pass behind the net reaches them. The strong-side winger is on the boards between the ' +
     'hash marks and the goal line, the centre is low support inside the faceoff dots rather than out ' +
@@ -391,7 +393,10 @@ const reverse = {
     // BEFORE the glyph as plain text (it states the hazard), so the amber run is the instruction
     // alone. Spoken "Important." is per caption, so unchanged. The posture stays: goaltender.md
     // carries no skater wall posture beside this marker.
-    'The reverse, drawn in your own defensive zone at the left of the picture. D1 was working up the ' +
+    // W470 (18 November 2026): WORDING ONLY. "drawn in your own defensive zone at the left of the
+    // picture" -> "in your own zone at the left". No limb cut. The caption names no caller; if one
+    // is ever added it is D2, the teammate arriving behind (W458, on_ice_communication.md).
+    'The reverse, in your own zone at the left. D1 was working up the ' +
     'right wall when the forechecker over-committed and skated past them, so D1 sends the puck back ' +
     'down the boards behind them, against the flow, into the space the forechecker has just left, ' +
     'where D2 is arriving. Read the opponent above D1 as already past them and unable to ' +
@@ -530,9 +535,13 @@ const rim = {
     // concedes-possession claim with its hedge, and the trapezoid pointer -- defender.md voices
     // none of the three. The wall-play hazard now sits before the glyph as plain text, so the
     // amber run is the instruction alone.
-    'The rim: a hard pass around the boards behind the net to a teammate further along, usually the ' +
-    'far-side winger. The puck travels onward, in the direction it was already going. Your own zone ' +
-    'is at the left. The read drawn is a forechecker who has sealed D1 against the boards. Keep it ' +
+    // W470 (18 November 2026): WORDING ONLY. The orientation sentence folded into the opening and
+    // "onward" compressed, then per diagram review the opening restored as three plain sentences
+    // ("It" was ambiguous) and "The read drawn is ... who" made "The read drawn: ... has". No limb cut.
+    'Your own zone is at the left. The rim is a hard pass around the boards behind the net to a ' +
+    'teammate further along, usually the far-side winger. The puck travels onward, the way it was ' +
+    'already going. ' +
+    'The read drawn: a forechecker has sealed D1 against the boards. Keep it ' +
     'low, flat and hard. It concedes possession more often than any option except an outright clear ' +
     '— coaching judgement, not a tracked rate. The trapezoid rules where you play change where to ' +
     'aim it. ' +
@@ -1193,13 +1202,15 @@ const againstThe131 = {
     // W457 (18 November 2026): WORDING ONLY, no limb cut; "conventionally" (the hedge on the
     // three's make-up) kept. The hazard sentence now sits before the glyph as plain text, so the
     // amber run is the instruction alone; spoken "Important." is per caption, so unchanged.
-    'Breaking out against a 1-3-1 in the neutral zone, your own end at the left. Counting out from ' +
-    'your end: a forward giving token pressure; three flat across the ice by the red ' +
-    'line, conventionally two forwards on the walls and a defenceman in the middle; and a ' +
-    'defenceman behind them as the last man. The answer drawn is the defenceman carrying it out ' +
-    'with speed, the winger on the boards at your blue line as the short outlet, ' +
-    'drawn with no route. Chipping it past them and racing for it is the other answer, not ' +
-    'drawn; which your team wants is a coaching choice, so ask. ' +
+    // W470 (18 November 2026): WORDING ONLY; the 1-3-1 layout and the drawn answer compressed, and
+    // the "not drawn; which" seam closed with a full stop. Per diagram review, "your" defenceman and
+    // winger (the opposing last man sat next to "the defenceman"). Posture limb and coaching-choice ask kept.
+    'Breaking out against a neutral-zone 1-3-1, your own end at the left. Out from your ' +
+    'end: a forward giving token pressure; three flat across by the red line, conventionally two ' +
+    'forwards on the walls and a defenceman in the middle; and a defenceman behind them as the last man. ' +
+    'Drawn: your defenceman carrying it out with speed, and your winger on the boards at your blue ' +
+    'line as the short outlet, with no route. Chipping it past them and racing for it is the ' +
+    'other answer, not drawn. Which your team wants is a coaching choice, so ask. ' +
     // SAFETY LAST: the renderer ambers from the first ⚠️ glyph to the end of the caption with
     // no closing delimiter, so a warning placed mid-caption ambers everything after it. This
     // limb sat in the middle and is unchanged in wording — only its position moved.

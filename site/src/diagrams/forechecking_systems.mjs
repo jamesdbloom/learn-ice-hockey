@@ -429,8 +429,10 @@ const forecheck212Stacked = {
     // "per fixture", the onus and the amber instruction are word for word.
     'The stacked, or strong-side, 2-1-2: F1 and F2 come from the same ' +
     'side to overload one corner, and F3 shades to the puck side too, so all three forwards are ' +
-    'on one half of the ice. Still two deep, one high and both defencemen on the blue line; only the sides ' +
-    'move. The cost is drawn too: the far-side breakout, conceded ' +
+    // W470 (18 November 2026): CUT "Still two deep, one high and both defencemen on the blue line;
+    // only the sides move." -- narrative restatement of forecheck-212's caption, which both hosts
+    // voice immediately before this one in the same chunk (winger 025, forechecking_systems 023).
+    'on one half of the ice. The cost is drawn too: the far-side breakout, conceded ' +
     'on purpose. Which version your team runs is a coaching call, so find out. ' +
     // SAFETY SCOPE, ruled by safety-reviewer. See the note on forecheck-212 above for why this
     // is short and why it is here at all. ONE OBJECTION ANSWERED, because it is a good one: a
@@ -445,7 +447,14 @@ const forecheck212Stacked = {
     // "not a licence" framing, then "Find out first" (moved up), then the carrier sentence, whose
     // colon became a full stop; the glyph opens the instruction alone, "Take the puck ... into
     // their back." No word added or cut.
-    'Two forwards in one corner is not a licence to go through the player in it. Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. The carrier is behind their own net and about to turn their back to you, so the onus is on you. \u26A0\uFE0F Take the puck, take the ice, or angle them off it, and never finish into their back.',
+    // W470 (18 November 2026): CUT the "Find out first whether you may body check in this game --
+    // the answer can change per fixture" sentence. forecheck-212's caption voices it word for word
+    // as the unit immediately before this caption, in the same chunk, in both hosts (winger 025,
+    // forechecking_systems 023), and check_caption_pairs enforces that adjacency. The "not a
+    // licence" framing, the onus and the amber instruction are kept word for word. SUPERSEDES the
+    // 24 Oct note above that "find out first" and "per fixture" are kept here: if either host stops
+    // embedding forecheck-212 straight before this diagram, this sentence must come back too.
+    'Two forwards in one corner is not a licence to go through the player in it. The carrier is behind their own net and about to turn their back to you, so the onus is on you. \u26A0\uFE0F Take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as the ' +
@@ -1014,9 +1023,11 @@ const forecheckPinch = {
     // (Until 22 Oct 2026) this block was VERBATIM SHARED with forecheck-122, forecheck-131 and
     // forecheck-press.
     // ⚠ HISTORY: until 22 October 2026 all four captions carried the full 604/7.3/101.1
-    // enumeration, byte-identical from "many leagues" onward. None does now: forecheck-pinch and
-    // forecheck-press share the short sentence "In many leagues body checking is not allowed at
-    // all, so find out whether you may body check in this game, not just in your division.", and
+    // enumeration, byte-identical from "many leagues" onward. None does now: forecheck-press
+    // carries the short sentence "In many leagues body checking is not allowed at all, so find
+    // out whether you may body check in this game, not just in your division."; since W470
+    // (18 November 2026) forecheck-pinch carries it without the "In many leagues ... so" lead
+    // ("Find out whether you may body check in this game, not just in your division."); and
     // forecheck-122 and forecheck-131 carry that same sentence inside their own shorter shared
     // block. The lead-ins differ on purpose; diff from "In many leagues", not from the glyph.
     //
@@ -1056,7 +1067,11 @@ const forecheckPinch = {
     // W362 (16 November 2026): GLYPH MOVED only, no word changed. captionNodes() ambers from the
     // glyph to the END, so the 417-char amber carried this scope sentence too; the glyph now opens
     // the receiving-posture prohibition below, which is the hazard this caption warns of.
-    'In many leagues body checking is not allowed at all, so find out whether you may body check ' +
+    // W470 (18 November 2026): CUT the lead "In many leagues body checking is not allowed at all,
+    // so" -- the find-out prompt and the barred-case instruction after it carry the scope, and the
+    // ", so" ruling above therefore no longer applies to THIS caption (forecheck-press keeps the
+    // long form). Same sentence otherwise; the negation still closes on a full stop.
+    'Find out whether you may body check ' +
     'in this game, not just in your division. Where it is barred, a pinch is a play on the puck, ' +
     'not a check. ' +
     // RECEIVING POSTURE, SHORT FORM. This caption's go/no-go test sends a defenceman down the wall
@@ -1247,7 +1262,13 @@ const forecheckRolesRotate = {
   // (chunk 009) voice no body-checking scope beside the marker, and the lock system is voiced in
   // neither host's caption chunk or the next.
   caption:
-    'Drawn the instant after the opponents move the puck defenceman to defenceman. The letter in ' +
+    // W470 (18 November 2026): lead reworded, same moment -- the picture draws the opposition's
+    // D-to-D (D1 to D2, both team 'opp') as a dashed pass. "the opponents" is kept so the pass is
+    // not heard as your own defencemen's, which the next sentence but one is about.
+    // forechecking_systems.md voices the opponents' D-to-D in the paragraph before the marker;
+    // rink_map.md (:599) voices it only in the paragraph AFTER the marker ("The jobs change hands
+    // mid-shift too"), so there the caption is the first time a listener hears it.
+    'Drawn just after the opponents pass it defenceman to defenceman. The letter in ' +
     'each glyph is the role just taken; the label beside it is the role held a second earlier. ' +
     'The shape is this guide\'s ' +
     // W457 (18 November 2026): the list is now CHECKING_BARRED_WHERE (byte-identical to what

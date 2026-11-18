@@ -711,7 +711,7 @@ Even with a trapezoid, you have real value behind the net. The most useful thing
 
 ### The safe outlets
 
-When you move the puck, take the lowest-risk play available: leave it for a defenceman with time, and failing that make a short pass to a defenceman on your strong-side wall. In trouble, put it along the glass, never over it. A clear straight out of the rink from your own end is a minor under the NHL, IIHF and PWHL whether you meant it or not, a stick clear from anywhere is one under Hockey Canada and CARHA, and USA Hockey penalises only a deliberate one. And almost never pass up the middle, where a goalie's turnover is a shot on an empty net with you standing in it.
+When you move the puck, take the lowest-risk play available: leave it for a defenceman with time, and failing that make a short pass to a defenceman on your strong-side wall. In trouble, put it along the glass, never over it: every book can make a clear out of the rink a minor, and the fourth option below sets out when. And almost never pass up the middle, where a goalie's turnover is a shot on an empty net with you standing in it.
 
 ```facts
 Priority: Rank your options by risk before you move the puck

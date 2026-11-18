@@ -485,11 +485,11 @@ const safeOutlets = {
     // carries the six-book split in goaltender.md Common Mistakes' own terms: NHL/IIHF/PWHL from
     // your own end, meant or not (63.2(iii); PWHL 65.2(iii)); Hockey Canada 10.1(a)(v) and CARHA
     // 55(a), a goalie's stick clear, no zone and no intent word; USA Hockey 610(c) deliberate only.
+    // ✂️ W470 (18 Nov 2026). CUT the six-book split again, this time because the host's list item 4
+    // ("Off the glass and out") now carries it in full in the caption's own chunk, directly before
+    // the marker, and the section's facts line carries it voiced alone. KEPT the instruction.
     'turnover is a shot on an empty net you are standing in. Clear along the glass, never over ' +
-    'it. A puck you shoot straight out of the rink from your own end is a minor under the NHL, IIHF and ' +
-    'PWHL whether you meant it or not. USA Hockey penalises only a deliberate one. Hockey Canada and ' +
-    'CARHA penalise a goalie\u2019s stick clear from anywhere, and neither promises that an accidental ' +
-    'one is safe. Whether ' +
+    'it. Whether ' +
     'you play the puck at all is your team’s convention rather than a law. Ask, and then be ' +
     'consistent.',
 

@@ -79,7 +79,8 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         None,
         "caption trimmed 24 Oct 2026 (SG66): the 'how a forechecker finishes an angle' "
         "disclosure and the body-checking enumeration (CHECKING_BARRED_WHERE, since "
-        "W457) live only in forecheck-212's caption",
+        "W457) live only in forecheck-212's caption; W470 also dropped the "
+        "may-you-check prompt, which forecheck-212 voices just before it",
     ),
     (
         # Host-scoped: the shared SAFETY SCOPE comment on forecheck-122 says that in
