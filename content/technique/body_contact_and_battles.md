@@ -3,8 +3,8 @@
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey, Hockey Canada or typical rec-league
 > rules differ in a way that changes how you play, it is flagged inline. This document contains more
 > of those differences than any other in this guide, because **whether body checking is legal at all
-> depends entirely on which league you are in.** **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** —
-> every level of UK hockey runs the IIHF book, amended locally; see
+> depends entirely on which league you are in.** **Playing in Britain? The IIHF rule this page gives is your base** —
+> every level of UK hockey runs the IIHF book, amended by the Elite League's Casebook or the In-House Rules and by your league's own regulations; see
 > [UK and England Rules](../foundation/uk_rules.md), and read **"If you play in Britain"** in §1
 > before you play a shift.
 >

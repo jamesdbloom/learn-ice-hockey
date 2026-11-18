@@ -1,8 +1,8 @@
 # Zone Entries
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
-> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? Wherever this page gives the
-> IIHF rule, it is yours** — every level of UK hockey runs the IIHF book, amended locally; see
+> differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF rule this page gives
+> is your base** — every level of UK hockey runs the IIHF book, amended by the Elite League's Casebook or the In-House Rules and by your league's own regulations; see
 > [UK and England Rules](../foundation/uk_rules.md).
 >
 > **Related:** [Rules Primer](../foundation/rules_primer.md) · [UK and England Rules](../foundation/uk_rules.md) · [Neutral Zone Systems](neutral_zone_systems.md) · [Defending the Rush](defending_the_rush.md) · [Offensive Zone Play](offensive_zone_play.md) · [Breakouts](breakouts.md) · [Forechecking Systems](forechecking_systems.md) · [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md)

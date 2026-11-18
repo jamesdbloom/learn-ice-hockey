@@ -2,7 +2,7 @@
 
 > **Rule set:** Written to NHL rules. Where IIHF, USA Hockey or typical rec-league rules
 > differ in a way that changes how you play, it is flagged inline. **Playing in Britain? The IIHF rule this page gives
-> is your base** — every level of UK hockey runs the IIHF book, amended by the Elite League's Casebook or the In-House Rules; see
+> is your base** — every level of UK hockey runs the IIHF book, amended by the Elite League's Casebook or the In-House Rules and by your league's own regulations; see
 > [UK and England Rules](../foundation/uk_rules.md). Read **Overtime** and **Shootouts** before you
 > rely on them: under the 2026-27 In-House Rules there is no overtime at all outside NIHL and some
 > SNL fixtures. The Elite League writes its own, and plays it.

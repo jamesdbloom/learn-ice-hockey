@@ -3,8 +3,8 @@
 > **Rule set:** Written to NHL rules. Where the IIHF, PWHL, USA Hockey, Hockey Canada or
 > CARHA books differ in a way that changes how you play, it is flagged inline, and
 > principle 2 sets them side by side.
-> **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level of UK hockey runs the IIHF
-> book, amended locally; see [UK and England Rules](uk_rules.md). **This page is a starting
+> **Playing in Britain? The IIHF rule this page gives is your base** — every level of UK hockey runs the IIHF
+> book, amended by the Elite League's Casebook or the In-House Rules and by your league's own regulations; see [UK and England Rules](uk_rules.md). **This page is a starting
 > point.** Each principle names the document that covers it in full; where the two differ,
 > follow that document.
 >

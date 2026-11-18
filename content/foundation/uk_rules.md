@@ -22,7 +22,7 @@
 
 ## Overview
 
-If you play in Britain, **your rule book is the IIHF's.** Every level runs on it: the National Ice Hockey League, the recreational and junior game across England, Wales, Scotland and Northern Ireland, women's and university hockey, the GB national teams, and the Elite League. The Elite League's own **Casebook** says that for every rule it does not mention, *"the official 2026 - 2027 IIHF Rulebook and IIHF Situation Handbook will serve as the official ruling."* Most hockey writing in English is written to NHL rules. Wherever it gives the **IIHF** rule, that rule is yours; a **USA Hockey** or **Hockey Canada** rule is not.
+If you play in Britain, **your rule book is the IIHF's.** Every level runs on it: the National Ice Hockey League, the recreational and junior game across England, Wales, Scotland and Northern Ireland, women's and university hockey, the GB national teams, and the Elite League. The Elite League's own **Casebook** says that for every rule it does not mention, *"the official 2026 - 2027 IIHF Rulebook and IIHF Situation Handbook will serve as the official ruling."* Most hockey writing in English is written to NHL rules. Wherever it gives the **IIHF** rule, that is your starting point; the Elite League's Casebook or the In-House Rules, and then your league's own regulations, change some of those rules. A **USA Hockey** or **Hockey Canada** rule is not yours.
 
 **Seven things set British hockey apart.** Five are in the rule books. Two — the checking age and the U12 format — are answered by your competition's own regulations instead.
 
@@ -617,7 +617,7 @@ document, that is named too.*
 
 ## Key Takeaways
 
-1. **Play to the IIHF book, and find out which British layer sits on top of it.** Wherever a page gives the IIHF rule, it is yours; the USA Hockey and Hockey Canada rules are not. The **In-House Rules** amend it in the NIHL, the SNL, women's, recreational, junior and university hockey, and the **EIHL Casebook** in the Elite League.
+1. **Play to the IIHF book, and find out which British layer sits on top of it.** Treat a page's IIHF rule as your base, not its USA Hockey or Hockey Canada rule. The **In-House Rules** amend it in the NIHL, the SNL, women's, recreational, junior and university hockey, the **EIHL Casebook** in the Elite League, and league regulations add more.
 
 2. **In EIH or SIHA competition, take the referee's call as the call.** There is no on-ice video review and no Coach's Challenge there. The Elite League keeps both.
 

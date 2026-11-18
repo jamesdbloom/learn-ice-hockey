@@ -4,8 +4,8 @@
 > differ in a way that changes how you play — and equipment is one of the areas where they
 > differ most — it is flagged inline. Equipment *rules* vary far more between leagues than
 > playing rules do, so the recurring instruction in this document is: check your own league's
-> requirements before you buy. **Playing in Britain? Wherever this page gives the IIHF rule, it is yours** — every level
-> of UK hockey runs the IIHF book, amended locally, and the local amendments bite hardest on
+> requirements before you buy. **Playing in Britain? The IIHF rule this page gives is your base** — every level
+> of UK hockey runs the IIHF book, amended by the Elite League's Casebook or the In-House Rules and by your league's own regulations — and the local amendments bite hardest on
 > equipment. See [UK and England Rules](../foundation/uk_rules.md), and read
 > [What the Rules Actually Require](#what-the-rules-actually-require) before you spend anything.
 >
