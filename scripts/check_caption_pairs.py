@@ -30,10 +30,23 @@ module should name the dependency so a reader can find it here. ⚠️ **This to
 cannot discover an undeclared dependency** -- a caption trimmed against a sibling
 without a row here is invisible to it.
 
+AND THE TEXT THE PAIR RELIES ON (added W471, 18 Nov 2026)
+--------------------------------------------------------
+Adjacency alone let a later trim of the REQUIRED caption silently remove the
+material the dependent one dropped -- the W470 commit gate named this for
+``forecheck-212-stacked``, which since W470 relies on ``forecheck-212`` saying
+"Find out first whether you may body check in this game". ``CARRIES`` below
+lists, per required caption, key phrases its BUILT caption
+(``site/src/data/diagrams.json``) must still contain. A missing phrase is a
+``MISSING TEXT`` line. ⚠️ It reads the BUILD PRODUCT, so run
+``build-diagrams.mjs`` first; a stale JSON checks the old text.
+
 WHAT IT CANNOT SEE
 ------------------
 - Whether the required caption still carries the material the dependent one
-  dropped. It checks ADJACENCY of the markers, not the caption text.
+  dropped, BEYOND the key phrases declared in ``CARRIES`` (a paraphrase that
+  keeps the meaning but loses the phrase reports as missing; a phrase kept
+  with its meaning changed passes).
 - Embeds outside ``content/`` (a diagram reused somewhere in ``site/`` directly).
 - An undeclared dependency (see above).
 
@@ -78,9 +91,10 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         "forecheck-212",
         None,
         "caption trimmed 24 Oct 2026 (SG66): the 'how a forechecker finishes an angle' "
-        "disclosure and the body-checking enumeration (CHECKING_BARRED_WHERE, since "
-        "W457) live only in forecheck-212's caption; W470 also dropped the "
-        "may-you-check prompt, which forecheck-212 voices just before it",
+        "disclosure lives only in forecheck-212's caption; W470 also dropped the "
+        "may-you-check prompt, which forecheck-212 voices just before it (W471: "
+        "forecheck-212 itself now carries the prompt and a one-clause summary, not "
+        "the CHECKING_BARRED_WHERE enumeration -- safety ruling, all five hosts)",
     ),
     (
         # Host-scoped: the shared SAFETY SCOPE comment on forecheck-122 says that in
@@ -90,11 +104,42 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         "forecheck-122",
         "forecheck-212",
         ("content/off-the-ice/how_to_watch_hockey.md",),
-        "safety scope shortened 22 Oct 2026 and again W456: drops the body-checking "
-        "enumeration, the may-you-check prompt and the positive onus that "
-        "forecheck-212's caption voices just before it",
+        "safety scope shortened 22 Oct 2026 and again W456: drops the may-you-check "
+        "prompt and the positive onus that forecheck-212's caption voices just before "
+        "it (the body-checking enumeration left forecheck-212 too in W471)",
     ),
 ]
+
+
+# required diagram id -> phrases (case-insensitive) its built caption must keep,
+# because a declared dependent caption dropped them on the strength of it.
+CARRIES: dict[str, tuple[str, ...]] = {
+    "forecheck-212": (
+        "find out first whether you may body check in this game",
+    ),
+}
+
+DIAGRAMS_JSON = REPO / "site" / "src" / "data" / "diagrams.json"
+
+
+def missing_text(captions: dict[str, str], carries=CARRIES) -> list[tuple[str, str]]:
+    """Return (required id, phrase) for every declared phrase absent from that
+    diagram's caption. A required id with no caption at all reports every phrase."""
+    out = []
+    for rid, phrases in carries.items():
+        cap = " ".join((captions.get(rid) or "").lower().split())
+        for ph in phrases:
+            if " ".join(ph.lower().split()) not in cap:
+                out.append((rid, ph))
+    return out
+
+
+def _built_captions() -> dict[str, str]:
+    import json
+    data = json.loads(DIAGRAMS_JSON.read_text(encoding="utf-8"))
+    items = data.values() if isinstance(data, dict) else data
+    return {d["id"]: d.get("caption") or "" for d in items
+            if isinstance(d, dict) and "id" in d}
 
 
 def check_text(text: str, deps=DEPENDENCIES, host: str | None = None
@@ -159,6 +204,16 @@ def run() -> int:
     if violations:
         print("  worklist: restore the adjacency, or restore the dropped material to the "
               "dependent caption (and remove its row here).")
+    if DIAGRAMS_JSON.is_file():
+        gone = missing_text(_built_captions())
+        print(f"  carried text: {sum(len(v) for v in CARRIES.values())} declared phrase(s) "
+              f"checked in the BUILT captions, {len(gone)} missing")
+        for rid, ph in gone:
+            print(f"  MISSING TEXT {rid}: no longer says \"{ph}\" -- a dependent caption "
+                  f"relies on it; restore it or the dependent's dropped material")
+    else:
+        print("  carried text: NOT CHECKED -- site/src/data/diagrams.json is absent; "
+              "run build-diagrams.mjs")
     return 0
 
 
@@ -193,6 +248,17 @@ def self_test() -> int:
     for name, host, want in (("host-scoped row, named host: violation", "content/x.md", 1),
                              ("host-scoped row, other host: pass", "content/y.md", 0)):
         got = len(check_text(bad, scoped, host=host))
+        passed = got == want
+        ok = ok and passed
+        print(f"{'PASS' if passed else 'FAIL'} {name} (want {want}, got {got})")
+    carries = {"a-req": ("Find out first",)}
+    for name, caps, want in (
+        ("carried phrase present (case/space-insensitive): pass",
+         {"a-req": "x  find OUT first y"}, 0),
+        ("carried phrase gone: missing", {"a-req": "x y"}, 1),
+        ("required caption absent: missing", {}, 1),
+    ):
+        got = len(missing_text(caps, carries))
         passed = got == want
         ok = ok and passed
         print(f"{'PASS' if passed else 'FAIL'} {name} (want {want}, got {got})")

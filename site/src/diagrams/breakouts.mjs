@@ -349,8 +349,10 @@ const wheel = {
 // 4 — Reverse. Back against the flow, off the boards, into vacated space.
 // ---------------------------------------------------------------------------
 
-// D1 pinned on the strong-side wall with the puck — "you were working up the right
-// wall". HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 and the boards at
+// D1 pinned on the strong-side wall with the puck — "working up the wall" (breakouts.md
+// section on the reverse, Setup). The +y wall, which resolve() calls ':right', is the
+// TOP of the picture; at this ':far' end, skating up ice to the right, that is D1's own
+// LEFT, so no caption here names it "right" (W470). HE IS ON THE WALL, SO dy 0. ASSUMES half-wall.y = 38.5 and the boards at
 // y +-42.5 (site/src/data/rink.json). This carried dy: 1, under a trailing comment
 // reading (-73, 34) that was stale from when half-wall.y was 33 — the glyph was
 // really at 39.5. There the own-team circle's nominal edge (r 2.9) reached 42.4 and
@@ -396,8 +398,12 @@ const reverse = {
     // W470 (18 November 2026): WORDING ONLY. "drawn in your own defensive zone at the left of the
     // picture" -> "in your own zone at the left". No limb cut. The caption names no caller; if one
     // is ever added it is D2, the teammate arriving behind (W458, on_ice_communication.md).
+    // W470 follow-up (18 November 2026): "up the right wall" -> "up the wall". "Right" was
+    // resolve()'s +y side, the picture's top; D1 skating up ice toward the right of the picture
+    // has that wall on their LEFT. Now the host's own words (breakouts.md Setup); the glyph
+    // and its "has the puck" label show which wall.
     'The reverse, in your own zone at the left. D1 was working up the ' +
-    'right wall when the forechecker over-committed and skated past them, so D1 sends the puck back ' +
+    'wall when the forechecker over-committed and skated past them, so D1 sends the puck back ' +
     'down the boards behind them, against the flow, into the space the forechecker has just left, ' +
     'where D2 is arriving. Read the opponent above D1 as already past them and unable to ' +
     'stop. The puck is a hard backhand banked off the wall, drawn as a plain pass because the ' +

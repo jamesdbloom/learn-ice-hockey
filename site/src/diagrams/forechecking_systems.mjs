@@ -39,6 +39,9 @@ const CARRIER = { at: 'behind-net', dy: 6 };               // (94, 6)
 // the find-out prompt. forecheck-212 and forecheck-roles-rotate still carry it, unchanged: their
 // other hosts (winger, center, game_management, how_to_watch_hockey, rink_map) do not voice it,
 // and cutting it there needs a separate safety ruling.
+// W471 (18 November 2026): THAT RULING WAS MADE. A safety-reviewer ruled the enumeration can come
+// out of forecheck-212's caption in all five hosts; it now carries a one-sentence summary (see the
+// W471 note on its caption). forecheck-roles-rotate is now this constant's ONLY user.
 const CHECKING_BARRED_WHERE =
   ' at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
   'hockey and whenever a checking team plays a non-checking one, and lets a local governing body ' +
@@ -268,7 +271,21 @@ const forecheck212 = {
     // forechecking_systems.md carries any of the list beside the marker (see the constant's note),
     // and the check_caption_pairs dependencies of forecheck-212-stacked and forecheck-122 rest on
     // this caption carrying it.
-    'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. USA Hockey bars it' + CHECKING_BARRED_WHERE + ' \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
+    // W471 (18 November 2026): ENUMERATION REPLACED BY A SUMMARY, on a safety-reviewer ruling that
+    // CHECKING_BARRED_WHERE can come out of this caption in all five hosts. "Find out first whether
+    // you may body check in this game" is kept byte for byte (check_caption_pairs CARRIES it for
+    // forecheck-212-stacked and forecheck-122). "commonly barred at younger ages, in girls' and
+    // women's hockey and in non-check adult leagues" summarises the books the constant enumerates:
+    // USA Hockey 604(a) (12 & under and below, all girls'/women's, non-check adult) and 604(b);
+    // Hockey Canada 7.3 (U13 and below, female hockey); Ice Hockey UK junior U10/U12 and the
+    // Women's NIHL (non-checking); CARHA 49(a), an adult book with no checking division. "commonly",
+    // not "always": the IIHF allows a puck-directed check in women's hockey (101.1), and USA Hockey's
+    // local opt-out and fixture rule reach beyond the three groups -- which the "find out" prompt
+    // and "per fixture" carry. The coordinator's sketch joined the summary to "not just per division"
+    // with ", and"; a FULL STOP closes that negation instead (brief: close a negation with a full
+    // stop before the next clause). CHECKING_BARRED_WHERE is NOT deleted: forecheck-roles-rotate
+    // still uses it.
+    'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. It is commonly barred at younger ages, in girls\' and women\'s hockey and in non-check adult leagues. \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Four opposition players: ' +
