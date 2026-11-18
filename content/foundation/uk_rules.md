@@ -6,7 +6,7 @@
 
 ## Key focus
 
-**Play to the IIHF rule book, not the NHL's.** When a document gives the IIHF rule, that is your game. Then find out which British layer sits on top: the **In-House Rules** in most competitions, or the **EIHL Casebook** in the Elite League.
+**Play to the IIHF rule book, not the NHL's.** When a document gives the IIHF rule, that is your base. Then find out which British layer sits on top: the **In-House Rules** in most competitions, or the **EIHL Casebook** in the Elite League.
 
 **Wear a neck guard every time you go on the ice, and if it comes off in play, leave the ice without picking it up.** Adults included. ⚠️ **Under the In-House Rules there is no warning:** a missing one is a 10-minute misconduct, and a second ends your game.
 
@@ -46,7 +46,7 @@ In women's hockey the IIHF book draws its own contact line, at Rule 101.1. **If 
 
 **Play as though your first major ends your game, adult or not — and after one misconduct, as though the next one does.** IIHF Rule 20.4 ejects automatically on a major for any of twenty listed fouls (twenty-two in 2026/27), including checking from behind, cross-checking, slashing, hooking, high-sticking, slew-footing, clipping and an illegal check to the head, and needs no injury for any of them. It also ejects on a **second** major or a **second** misconduct; the NHL waits for a **third** major. Under the In-House Rules misconducts come from kit as well as fouls — a missing neck guard, a chin-strap gap wider than one finger once your team has been warned for one, playing on after your helmet comes off — and from a dive, priced at a minor plus a 10-minute misconduct.
 
-On top of the IIHF book sits a short layer of local amendment:
+On top of the IIHF book sits a short layer of local amendment, and your competition's own regulations add more, such as the checking age:
 
 | You play in | Your rules are |
 |---|---|
@@ -127,7 +127,7 @@ The In-House Rules' Introduction says so in terms: *"IHUK and the British Univer
 
 **Which IIHF edition these documents quote.** Every IIHF rule here is the **2025/26** book's (Version 1.1, July 2025) unless flagged otherwise. The 2026/27 edition differs in real ways — its faceoff rules, for instance, replace the offending centre where the old book warned (see [Faceoffs](../systems/faceoffs.md)). Only these rules have been checked against it: 1.7, 20.4, 20.5, 28.1, 46, 60, 63.2, 64, 69, 70, 76, 82.2, 87.1 and Appendix IV. ⚠️ **Check the current book before you rely on a detail — and in the Elite League, which plays the 2026/27 book, check it every time.**
 
-**The renumbering is the trap, and Rule 46 (fighting) is where it bites.** Every Rule 46 number here is the 2025/26 book's. The 2026/27 book reorders the whole rule, so the same number can mean something else — most sharply **third player in**, which is **46.7** in 2025/26 and **46.14** in 2026/27, where **46.7 becomes fighting off the playing surface**. The other moves: instigator 46.3→46.10, aggressor 46.4→46.2, sucker punch 46.5→46.13, altercation 46.2→46.3, clearing the area of a fight 46.8→46.4, fighting outside the periods 46.9→46.8, fighting off the playing surface 46.11→46.7, helmets 46.12→46.6, fighting prior to the drop of the puck 46.10→46.9, jerseys 46.13→46.11. ⚠️ **Look a fighting rule up by its heading, not its number.** Even the Elite League's Casebook numbers two of its Rule 46 clauses wrong against the book it adopts *(§Fighting)*.
+**The renumbering is the trap, and Rule 46 (fighting) is where it bites.** Every Rule 46 number here is the 2025/26 book's. The 2026/27 book reorders the whole rule, so the same number can mean something else — most sharply **third player in**, which is **46.7** in 2025/26 and **46.14** in 2026/27, where **46.7 becomes fighting off the playing surface**. The other moves: instigator 46.3→46.10, aggressor 46.4→46.2, sucker punch 46.5→46.13, altercation 46.2→46.3, clearing the area of a fight 46.8→46.4, fighting outside the periods 46.9→46.8, fighting off the playing surface 46.11→46.7, helmets 46.12→46.6, fighting prior to the drop of the puck 46.10→46.9, jerseys 46.13→46.11. ⚠️ **Look a fighting rule up by its heading, not its number.** Even the Elite League's Casebook, which adopts the 2026/27 book, keeps two 2025/26 numbers: its 46.2 *Altercation* is 46.3 there, and its 46.13 *Jerseys* is 46.11, and **46.13 in 2026/27 is the sucker punch** *(§Fighting)*.
 
 **Appendix IV is renumbered too.** The 2026/27 book merges the 2025/26 Tables 5, 6 and 7 into one **Table 5**, with *"MAJOR ONLY"* and *"MAJOR + GMP"* columns covering the same twenty automatic and five discretionary entries, plus two new automatic fighting rows — twenty-two automatic entries in all. Every later table shifts down by two. **A table number only resolves in the book it came from — always name the edition.**
 
@@ -135,7 +135,7 @@ The In-House Rules' Introduction says so in terms: *"IHUK and the British Univer
 
 **The instigator test now reaches back further than one game.** The 2026/27 rule looks at *"a prior game (or season) incident"* and *"a previous incident in the game or season"*. An instigator penalty in the final five minutes of regulation time or at any time in overtime also exposes the player to Rule 28 supplementary discipline, and *"the player's coach shall also be subject to potential supplemental discipline under Rule 28."* ⚠️ **So a grudge from a fixture months ago can make you the instigator — a minor, a major and an automatic game misconduct, or in the Elite League a minor, a major and a ten-minute misconduct that becomes a game misconduct late, in overtime, on a second instigation or for an aggressor too *(§Fighting)*.**
 
-**Two smaller moves.** Persisting after being told to stop, or resisting a linesperson, moves to its own clause (**46.5**) and softens from at least a major plus an automatic game misconduct, at the referee's discretion, to *"a misconduct or game misconduct penalty"*. Sucker-punching's injury test narrows from a punch that *"could cause"* injury to one that *"causes"* it, but a sucker-punch is still a major plus an automatic game misconduct.
+**Two smaller moves.** Persisting after being told to stop, or resisting a linesperson, moves to its own clause (**46.5**) and softens from at least a major plus an automatic game misconduct, at the referee's discretion, to *"a misconduct or game misconduct penalty"*. Sucker-punching's rule text narrows from a punch that *"could cause"* injury to one that *"causes"* it, but the 2026/27 Situation Handbook gives a sucker punch a major and a game misconduct with no injury named — plan on the ejection either way.
 
 **The 2025/26 book — the edition the In-House Rules name — carries the test for whether you are a fighter, in Rule 46.6 *Defender – Unwilling Combatant*.** A player who *"defends themself with a 'few punches'"* is an unwilling combatant, while *"a Player who retaliates to being punched will be assessed at least a minor penalty ('Roughing') or a major penalty ('Fighting', without a game misconduct penalty), if the criteria for 'fighting back' with a few punches is not fulfilled."* ⚠️ **So punching back beyond a few defensive punches moves you up a tier.**
 
@@ -204,7 +204,7 @@ And ⚠️ **the penalty is yours whether anything goes in or not:** deliberate 
 
 Nor is the crease only the paint: Rule 1.7 says *"[t]he marked line belongs to the Goal Crease"*, and the crease area *"extends vertically until the top of the crossbar"*. Rules 1.7, 69.3 and 69.4 say the same thing in the 2025/26 and 2026/27 books, so none of this turns on which edition your competition plays.
 
-**Under EIH or SIHA the IIHF rule runs unamended**, and with no video review a net-front call is decided once, on the ice. The Casebook is updated during the season, so **a copy read in the autumn is not necessarily what is in force by February.**
+**Under EIH or SIHA the IIHF rule decides the call**, with no Casebook criteria and, under In-House 69.1, no video review, so a net-front call is decided once, on the ice. The Casebook is updated during the season, so **a copy read in the autumn is not necessarily what is in force by February.**
 
 ### Rinks are often smaller than the book says
 
@@ -398,7 +398,7 @@ The In-House Rules add a note worth quoting: *"Junior age categories are unisex 
 
 **In short:** Play with less margin than NHL habit gives you: under the IIHF book a single major can end your game.
 
-Junior hockey, and women's hockey at every age, are covered above *(§Age categories are British, and unisex)*. **This is about you as an adult in any competition.** It is the IIHF's own text, not a British amendment, so it binds wherever the IIHF book is played.
+Junior hockey, and women's hockey at every age, are covered above *(§Age categories are British, and unisex)*. **This is about you as an adult in any competition.** It is the IIHF's own text, not a British amendment, so it binds wherever the IIHF book is played; the British layers mostly add to it, and the clearest softening, the Elite League's fighting rule, still costs at least a major (below).
 
 Your book is the IIHF's, and **IIHF Rule 20.4** attaches an automatic game misconduct to any major penalty listed in the Reference Tables. No injury needed, and once the major is called the ejection is not the referee's to withhold.
 
@@ -499,7 +499,7 @@ A team manager may sit on the bench but does not count toward the requirement. O
 
 ## Common Mistakes
 
-- **Reading the USA Hockey rules as yours.** Take the IIHF rule and skip the other two — in Britain the USA Hockey and Hockey Canada rules do not apply.
+- **Reading the USA Hockey rules as yours.** Take the IIHF rule as your base and skip the other two — in Britain the USA Hockey and Hockey Canada rules do not apply.
 - **Skipping the neck guard because you are an adult.** Wear one every time you go on the ice, practice included. The adult exemption is North American, not British. Under the In-House Rules a missing one is a 10-minute misconduct with **no warning**. In the Elite League it is a warning, then a minor, and refusing to fix it climbs the equipment ladder to a misconduct and then a game misconduct.
 - **Expecting a video review or a Coach's Challenge.** Play to the whistle — the call on the ice is the call. Neither exists in EIH or SIHA competition. **The Elite League keeps both.** Video can still be used for discipline after the game.
 - **Using last season's birth-year table.** Take the bands from the current season's In-House Rule 200. ⚠️ **Every band moved a full year for 2026-27**, so an old table puts a child in the wrong age group in a contact sport.
@@ -651,7 +651,7 @@ document, that is named too.*
 
 17. **Expect a fight to end your game.** The Elite League need not eject you for a willing original fight in play that is your first major (count the season). NIHL, SNL and BUIHA Varsity rules leave it open: plan on ejection. ⚠️ **In women's hockey, and in an NIHL game's last five minutes or overtime, a fighting major ejects you.**
 
-18. **Never instigate, be the aggressor or sucker-punch, and in the Elite League keep your jersey on and tied down.** ⚠️ **Each ejects you** (a sucker punch, under 2026/27, one that injures; the jersey, if it comes off or was modified), except a first, early Elite League instigation with no aggression or earlier major: minor, major, ten-minute misconduct, League review.
+18. **Never instigate, be the aggressor or sucker-punch, and in the Elite League keep your jersey on and tied down.** ⚠️ **Each ejects you** (a sucker punch even without an injury; the jersey, if it comes off or was modified), except a first, early Elite League instigation with no aggression or earlier major: minor, major, ten-minute misconduct, League review.
 
 19. **Expect post-game discipline, even for acts nobody penalised.** ⚠️ **At a club in England or Wales, a from-behind or head-check game misconduct, a boarding major, or a fight in the last five minutes, in overtime or at game's end costs at least a game in every league or age group you're registered in.** Elsewhere, Elite League included, plan on it.
 
