@@ -629,7 +629,7 @@ document, that is named too.*
 
 6. **Look at your rink before you plan around the book's size.** Under the In-House Rules, sheets below 56 m × 26 m are authorised at all levels, with two rinks limited to U16 and below — shorter, narrower or both than the IIHF's 60 m by 26–30 m.
 
-7. **Stay off the goalie, inside the crease and out, and give ground when they set.** In their crease, contact you start can cost your goal, even incidental; outside it, more than incidental can. In the Elite League, so can contact you start in the blue paint. Deliberate or unnecessary contact is a minor or major anywhere, goal or no goal.
+7. **Stay off the goalie wherever they are, and give ground when they set.** Contact you start in their crease, or the Elite League's blue paint, can cost your goal, even incidental. Outside the crease, a goal survives only incidental contact you tried to avoid. Deliberate or unnecessary contact is a minor or major anywhere, goal or no goal.
 
 8. **Goalies: play as though the trapezoid binds.** England Ice Hockey's suspension is unsettled in scope and standing, and the Elite League has not suspended it. The delay-of-game minor for deliberately freezing or playing the puck to stop play outside your crease was never suspended. **Attackers: assume their goalie may come out for a dump-in.** Ask your league which applies.
 
