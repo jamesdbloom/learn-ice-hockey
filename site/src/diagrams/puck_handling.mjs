@@ -781,7 +781,7 @@ const youCannotBeatTwo = {
 
   caption:
     'You have the puck wide, one defenceman is on you and a second opponent is closing from ' +
-    'the middle. The dashed routes are the pass to the teammate whose ice the second defender ' +
+    'the middle. The dashed routes are the pass to the teammate whose ice the second opponent ' +
     'has left and the chip up the boards behind the ' +
     // ⚠️ FULL STOP, NOT A COLON. This read "…and it is not drawn: protect the puck, take the
     // contact and wait for support" — a colon opening onto three imperatives with a negation
