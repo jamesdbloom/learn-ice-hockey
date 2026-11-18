@@ -438,8 +438,16 @@ const collapseCorner = {
     // W393 cut (safety C1/C2): HC/CARHA lead with "Under ..."; the USA Hockey sentence names "a hit from behind"
     // (not "it", which would bind to the boards-scoped hit before it) and stays one sentence so "mandatory" is
     // scoped to USA Hockey. "anywhere" = 608 Note "in open ice or directly into the boards or goal frame".
-    'Under Hockey Canada and CARHA a hit from behind into the boards or net when they cannot protect themselves ' +
-    'is a mandatory match. Under USA Hockey a hit from behind ejects you if it is forceful at the boards, sends ' +
+    // W455 (18 Nov 2026): Hockey Canada and CARHA were priced ONLY at the match, so an ordinary hit from
+    // behind had no price for them. hc.txt 7.5(a)/(e): a game misconduct with every minor or major; 7.6
+    // preamble: a foul reaching the head 'must be penalized as Head Contact' (7.6(a) a bare minor if accidental
+    // in minor and female hockey), hence the head exception. carha_2026.txt 53(a): minor or major, each plus a GM.
+    // W455 safety MAJOR: 7.6(b) injury = mandatory major+GM and 7.6(c) a match, so the exception carries
+    // "plan on it anyway" or a head hit sounds cheaper.
+    'Under Hockey Canada and CARHA even a minor for a hit from behind carries a game misconduct (for Hockey ' +
+    'Canada, unless it reaches the head, where you should plan on it anyway), and a hit from behind into the ' +
+    'boards or net when they cannot ' +
+    'protect themselves is a mandatory match. Under USA Hockey a hit from behind ejects you if it is forceful at the boards, sends ' +
     'them head first into the boards or net or is reckless, as does careless head or neck contact; plan on a ' +
     'match for any reckless one, anywhere, mandatory with excessive force on a vulnerable or defenceless player. ' +
     // ⚠️ 8 November 2026 (1,311 chars): THE BOOK-BY-BOOK TARIFF IS CUT, AND THE PRECONDITION THE

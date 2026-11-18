@@ -424,11 +424,15 @@ const gettingBeatenWide = {
   width: 900,
 
   // CAPTION LENGTH, 15 September 2026. 497 words before. The penalty-shot apparatus it
-  // set out in full -- NHL/IIHF, USAH 616(a) and 616(b), Hockey Canada 4.12(a) and the
+  // set out in full -- NHL/IIHF, USAH 616(a) and 616(b), Hockey Canada 4.11(a) and the
   // conditions on all four -- is carried in the prose and the ```facts block of
   // content/positions/switching_positions.md above this marker, and Defending the Rush
   // owns the rule text. The opening also said "the diagram before this one", which is
   // the deixis the style guide forbids outright; the situation is named instead.
+  // W455 (18 Nov 2026): the spoken citation said Hockey Canada 4.12(a), which is Awarded Goals;
+  // the clause is about the PENALTY SHOT, which is 4.11(a) (hc.txt 'Rule 4.11 Penalty Shots';
+  // 4.11(a)(i) needs 'possession and control', narrower than NHL 57.3's 'or who could have
+  // obtained possession and control'). The host body already cites 4.11(a) here.
   caption:
     'Getting beaten wide, your net at the right: the carrier is past the defenceman’s ' +
     'outside shoulder with nobody between them and the net. Same square foot of ice and the ' +
@@ -437,7 +441,7 @@ const gettingBeatenWide = {
     'cannot draw "whenever they choose". ' +
     '⚠️ Chasing from behind, your stick goes on the puck and nothing else — a hook, trip, ' +
     'hold or slash that denies the chance is a penalty shot under the NHL and IIHF, and USA ' +
-    'Hockey 616(a) and Hockey Canada 4.12(a) are narrower. All four carry conditions.',
+    'Hockey 616(a) and Hockey Canada 4.11(a) are narrower. All four carry conditions.',
 
   describe:
     'The defending half of the rink, your own net at the right, your blue line at the left. ' +

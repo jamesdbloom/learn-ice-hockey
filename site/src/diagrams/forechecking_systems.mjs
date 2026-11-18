@@ -594,7 +594,12 @@ const forecheck122 = {
     // sentence and "mandatory" stays scoped to USA Hockey (safety C1: a free-standing "Plan on a match ...
     // the match is mandatory" was heard as every book). "anywhere" = 608 Note "in open ice or directly into
     // the boards or goal frame" and Casebook Sit. 1 (3) "regardless of whether or not board contact is made".
-    'Hockey Canada and CARHA add a game misconduct even to their minor, and make it a match into the boards ' +
+    // W455 (18 Nov 2026), BOTH COPIES: the HC/CARHA floor had no head exception. hc.txt 7.6 preamble: a
+    // foul reaching the head 'must be penalized as Head Contact', and 7.6(a) is a bare minor for accidental
+    // head contact in minor and female hockey. CARHA 53(a) has no such carve-out, so it is scoped to HC.
+    // W455 safety MAJOR: the bare exception made a head hit sound cheaper; 7.6(b) injury = mandatory major+GM,
+    // 7.6(c) match for a head hit on a player unable to protect themselves -- hence "plan on it anyway".
+    'Hockey Canada and CARHA add a game misconduct even to their minor (for Hockey Canada, unless it reaches the head, where you should plan on it anyway), and make it a match into the boards ' +
     'or net on a player who cannot protect themselves. Under USA Hockey a hit from behind ejects you if it is ' +
     'forceful at the boards, sends them head first into the boards or net or is reckless, as does careless ' +
     'head or neck contact; plan on a match for any reckless one, anywhere, mandatory with excessive force on ' +
@@ -806,7 +811,12 @@ const forecheck131 = {
     // sentence and "mandatory" stays scoped to USA Hockey (safety C1: a free-standing "Plan on a match ...
     // the match is mandatory" was heard as every book). "anywhere" = 608 Note "in open ice or directly into
     // the boards or goal frame" and Casebook Sit. 1 (3) "regardless of whether or not board contact is made".
-    'Hockey Canada and CARHA add a game misconduct even to their minor, and make it a match into the boards ' +
+    // W455 (18 Nov 2026), BOTH COPIES: the HC/CARHA floor had no head exception. hc.txt 7.6 preamble: a
+    // foul reaching the head 'must be penalized as Head Contact', and 7.6(a) is a bare minor for accidental
+    // head contact in minor and female hockey. CARHA 53(a) has no such carve-out, so it is scoped to HC.
+    // W455 safety MAJOR: the bare exception made a head hit sound cheaper; 7.6(b) injury = mandatory major+GM,
+    // 7.6(c) match for a head hit on a player unable to protect themselves -- hence "plan on it anyway".
+    'Hockey Canada and CARHA add a game misconduct even to their minor (for Hockey Canada, unless it reaches the head, where you should plan on it anyway), and make it a match into the boards ' +
     'or net on a player who cannot protect themselves. Under USA Hockey a hit from behind ejects you if it is ' +
     'forceful at the boards, sends them head first into the boards or net or is reckless, as does careless ' +
     'head or neck contact; plan on a match for any reckless one, anywhere, mandatory with excessive force on ' +
