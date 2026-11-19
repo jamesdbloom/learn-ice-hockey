@@ -209,7 +209,13 @@ const forecheck212 = {
     // the whole ⚠️ safety block with the USA Hockey 604(a)/(b) / Hockey Canada 7.3 enumeration, so
     // the check_caption_pairs.py dependencies of forecheck-212-stacked and forecheck-122 still hold.
     'blue line. It is one system among several, and which way F1 angles and which ' +
-    'side F3 sits on are coaching choices, not rules: find out which your team runs. ' +
+    // W501(10) (19 November 2026): "find out which your team runs" -> "ask which your team runs",
+    // the wording forecheck-122's caption already uses. The caption carried two "find out"
+    // imperatives one sentence apart (this coaching one, then "Find out first whether you may body
+    // check in this game"), so a listener heard "find out ... find out first". The coaching-choice
+    // instruction (non-negotiable 7) is kept as an instruction; the body-check sentence is untouched
+    // byte for byte (check_caption_pairs CARRIES it). Same change on forecheck-roles-rotate.
+    'side F3 sits on are coaching choices, not rules: ask which your team runs. ' +
     'The picture does not show how a forechecker finishes an angle, which ' +
     // "is treated separately" RESTORED after a length cut removed it, and kept through the
     // 2026 length cut. It is the host-neutral repair of an earlier "and is its own section",
@@ -1302,7 +1308,13 @@ const forecheckRolesRotate = {
     // sufficient there too on 19 Nov 2026 (W501 record).
     // ADDED "so find out which your team runs" after the lock-system alternative (non-negotiable 7:
     // the caption named a default and an alternative but never sent the reader to find out).
-    'default 2-1-2; a lock system pins one winger to the third job instead, so find out which your ' +
+    // W501(10) (19 November 2026): "so find out which your team runs" -> "so ask which your team
+    // runs", the wording forecheck-122 uses, because "Find out first whether you may body check"
+    // follows one sentence later and the caption said "find out" twice. Body-check sentence, "per
+    // fixture, not just per division" and the amber instruction unchanged byte for byte. Same change
+    // on forecheck-212. "and in every CARHA game" was considered and NOT added: "non-check adult
+    // leagues" already covers a CARHA game, and naming one book reopens the enumeration W471 replaced.
+    'default 2-1-2; a lock system pins one winger to the third job instead, so ask which your ' +
     'team runs. The defencemen hold the offensive blue line and do not rotate. Find out first ' +
     'whether you may body check in this game at all — it can change per fixture, not just per ' +
     'division. It is commonly barred at younger ages, in girls\' and women\'s hockey and in ' +
