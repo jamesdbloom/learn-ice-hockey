@@ -244,6 +244,14 @@ These passages repeated CLAUDE.md nearly word for word. They are not restated he
 - **"Never sweep" means read every hit, not skip every hit.** (archive: snapshot lines 7643–7671)
 - **The sole-owner-by-reference shape:** a pointer that promises completeness must be answered by its target. Restate versus cross-reference is decided per layer: a cross-reference works in a body, not in a Common Mistakes bullet or a Key Takeaway. (archive: snapshot lines 7866–7922, 32136–32141)
 
+- **Owner decisions moved here from the plan on 19 Nov 2026:**
+  - Readability and diagrams come before rule carry-overs (8 Nov). A rule fix that makes an act cheaper than the book still ships when it is found.
+  - Readability is structural (8 Nov): one "What it costs" section per page holds the penalty ladders, and each body section keeps the instruction, one scene tier and an in-page link. See `../what_it_costs_design.md`.
+  - Coaching sections lead with the tactic (9 Nov). The written-lead programme is complete; reopen a section only if its panel or body changes.
+  - USA Hockey Casebook 620 Situation 2 (9 Nov): keep the strict reading. A helmet clash at the dot is head contact however little force is behind it.
+  - Any wave that adds or changes a rule claim dispatches a `rules-verifier`, not only a `safety-reviewer` (SG44).
+  - The other standing notes that used to sit in plan rows (facts lines at their cap, settled forms, "no sweep" rulings) are listed as STANDING in `reviews/plan_cleanup_2026-11-19/`.
+
 ### Podcast and environment
 
 - **Two podcast styles:** "Discussion" and "Playing principles". The rejected names, the OpenAI voice caveat and the P3 compromise scope (constraint 7) are in the archive. (archive: snapshot lines 7990–8157)
