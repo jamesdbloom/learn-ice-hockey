@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- **Podcast re-cut (record [`w499_podcast_recut_verified_and_plan_cleanup_2026-11-19.md`](../reviews/w499_podcast_recut_verified_and_plan_cleanup_2026-11-19.md)):** the 31 re-cut Conversation masters and the Defending the Rush repeat removal are verified, installed in `podcasts/` and encoded (32 encoded, 9 skipped); the upload dry run passes. **Next:** the owner runs `aws sso login --profile ice-hockey`; then `S3_BUCKET="$(gh variable get S3_BUCKET)" scripts/upload_podcast_audio.sh --go`, then commit `site/src/data/podcast.json` and push. Do not push `podcast.json` before the upload, or the feed points at audio that is not there yet.
+- None. The podcast re-cut shipped on 19 Nov (record `w499_podcast_recut_verified_and_plan_cleanup_2026-11-19.md`).
 
 ## Carry-overs from waves SG93–SG133 (open)
 

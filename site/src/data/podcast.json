@@ -6,9 +6,9 @@
       "title": "Getting Started",
       "section": "Getting Started",
       "track": 1,
-      "bytes": 21556589,
+      "bytes": 21543603,
       "duration_s": 2569.6,
-      "audio": "/audio/getting-started/getting_started-29154b5b.m4a"
+      "audio": "/audio/getting-started/getting_started-9f9aea5b.m4a"
     },
     {
       "doc_id": "foundation/core_principles",
@@ -34,207 +34,207 @@
       "title": "Rink Map",
       "section": "Foundation",
       "track": 4,
-      "bytes": 25225736,
-      "duration_s": 3011.8,
-      "audio": "/audio/foundation/rink_map-e5e10dba.m4a"
+      "bytes": 25223974,
+      "duration_s": 3011.9,
+      "audio": "/audio/foundation/rink_map-319ea51b.m4a"
     },
     {
       "doc_id": "foundation/language_and_glossary",
       "title": "Language and Glossary",
       "section": "Foundation",
       "track": 5,
-      "bytes": 23038725,
-      "duration_s": 2743.5,
-      "audio": "/audio/foundation/language_and_glossary-f42082a8.m4a"
+      "bytes": 23027414,
+      "duration_s": 2743.6,
+      "audio": "/audio/foundation/language_and_glossary-a4fede09.m4a"
     },
     {
       "doc_id": "foundation/rules_primer",
       "title": "Rules Primer",
       "section": "Foundation",
       "track": 6,
-      "bytes": 16115030,
-      "duration_s": 1918.7,
-      "audio": "/audio/foundation/rules_primer-923a6dbc.m4a"
+      "bytes": 16089450,
+      "duration_s": 1918.8,
+      "audio": "/audio/foundation/rules_primer-6a0f348f.m4a"
     },
     {
       "doc_id": "foundation/uk_rules",
       "title": "UK and England Rules",
       "section": "Foundation",
       "track": 7,
-      "bytes": 13007417,
-      "duration_s": 1547.5,
-      "audio": "/audio/foundation/uk_rules-e283c8e3.m4a"
+      "bytes": 12987976,
+      "duration_s": 1548.7,
+      "audio": "/audio/foundation/uk_rules-d28633d9.m4a"
     },
     {
       "doc_id": "foundation/on_ice_communication",
       "title": "On-Ice Communication",
       "section": "Foundation",
       "track": 8,
-      "bytes": 20551263,
-      "duration_s": 2452.6,
-      "audio": "/audio/foundation/on_ice_communication-61f765c6.m4a"
+      "bytes": 20541508,
+      "duration_s": 2452.7,
+      "audio": "/audio/foundation/on_ice_communication-2cbd0e07.m4a"
     },
     {
       "doc_id": "positions/center",
       "title": "Centre",
       "section": "Positions",
       "track": 9,
-      "bytes": 19311653,
-      "duration_s": 2299.9,
-      "audio": "/audio/positions/center-57bb4726.m4a"
+      "bytes": 19305962,
+      "duration_s": 2300.0,
+      "audio": "/audio/positions/center-fa20e215.m4a"
     },
     {
       "doc_id": "positions/winger",
       "title": "Winger",
       "section": "Positions",
       "track": 10,
-      "bytes": 24244120,
-      "duration_s": 2890.8,
-      "audio": "/audio/positions/winger-1b0ea92c.m4a"
+      "bytes": 24226764,
+      "duration_s": 2891.0,
+      "audio": "/audio/positions/winger-1dffe661.m4a"
     },
     {
       "doc_id": "positions/defender",
       "title": "Defender",
       "section": "Positions",
       "track": 11,
-      "bytes": 19993849,
-      "duration_s": 2380.3,
-      "audio": "/audio/positions/defender-959b1810.m4a"
+      "bytes": 19961785,
+      "duration_s": 2380.6,
+      "audio": "/audio/positions/defender-da0cb0ca.m4a"
     },
     {
       "doc_id": "positions/goaltender",
       "title": "Goaltender",
       "section": "Positions",
       "track": 12,
-      "bytes": 16665514,
-      "duration_s": 1983.3,
-      "audio": "/audio/positions/goaltender-d8ae4723.m4a"
+      "bytes": 16643303,
+      "duration_s": 1983.8,
+      "audio": "/audio/positions/goaltender-e669937a.m4a"
     },
     {
       "doc_id": "positions/switching_positions",
       "title": "Switching Positions",
       "section": "Positions",
       "track": 13,
-      "bytes": 10893549,
-      "duration_s": 1296.6,
-      "audio": "/audio/positions/switching_positions-d1df8378.m4a"
+      "bytes": 10887940,
+      "duration_s": 1296.7,
+      "audio": "/audio/positions/switching_positions-a6aaefec.m4a"
     },
     {
       "doc_id": "systems/breakouts",
       "title": "Breakouts",
       "section": "Systems and Situations",
       "track": 14,
-      "bytes": 25032510,
-      "duration_s": 2979.2,
-      "audio": "/audio/systems/breakouts-3ea19288.m4a"
+      "bytes": 25017872,
+      "duration_s": 2979.3,
+      "audio": "/audio/systems/breakouts-b351da6f.m4a"
     },
     {
       "doc_id": "systems/zone_entries",
       "title": "Zone Entries",
       "section": "Systems and Situations",
       "track": 15,
-      "bytes": 15856890,
+      "bytes": 15858871,
       "duration_s": 1888.5,
-      "audio": "/audio/systems/zone_entries-6409a2eb.m4a"
+      "audio": "/audio/systems/zone_entries-df0077a5.m4a"
     },
     {
       "doc_id": "systems/offensive_zone_play",
       "title": "Offensive Zone Play",
       "section": "Systems and Situations",
       "track": 16,
-      "bytes": 19746884,
-      "duration_s": 2353.7,
-      "audio": "/audio/systems/offensive_zone_play-ae9065f9.m4a"
+      "bytes": 19745988,
+      "duration_s": 2354.1,
+      "audio": "/audio/systems/offensive_zone_play-8be5810f.m4a"
     },
     {
       "doc_id": "systems/forechecking_systems",
       "title": "Forechecking Systems",
       "section": "Systems and Situations",
       "track": 17,
-      "bytes": 17449636,
-      "duration_s": 2078.8,
-      "audio": "/audio/systems/forechecking_systems-2f201067.m4a"
+      "bytes": 17443598,
+      "duration_s": 2079.0,
+      "audio": "/audio/systems/forechecking_systems-11d29f41.m4a"
     },
     {
       "doc_id": "systems/neutral_zone_systems",
       "title": "Neutral Zone Systems",
       "section": "Systems and Situations",
       "track": 18,
-      "bytes": 29882919,
-      "duration_s": 3557.8,
-      "audio": "/audio/systems/neutral_zone_systems-cfe70ca1.m4a"
+      "bytes": 29885655,
+      "duration_s": 3557.9,
+      "audio": "/audio/systems/neutral_zone_systems-70bf40d0.m4a"
     },
     {
       "doc_id": "systems/defensive_zone_coverage",
       "title": "Defensive Zone Coverage",
       "section": "Systems and Situations",
       "track": 19,
-      "bytes": 18281964,
-      "duration_s": 2181.4,
-      "audio": "/audio/systems/defensive_zone_coverage-ff08a37f.m4a"
+      "bytes": 18268904,
+      "duration_s": 2181.7,
+      "audio": "/audio/systems/defensive_zone_coverage-0e0751b3.m4a"
     },
     {
       "doc_id": "systems/defending_the_rush",
       "title": "Defending the Rush",
       "section": "Systems and Situations",
       "track": 20,
-      "bytes": 23937982,
-      "duration_s": 2858.2,
-      "audio": "/audio/systems/defending_the_rush-801f4f0e.m4a"
+      "bytes": 23869764,
+      "duration_s": 2850.9,
+      "audio": "/audio/systems/defending_the_rush-5fe575f9.m4a"
     },
     {
       "doc_id": "systems/special_teams",
       "title": "Special Teams",
       "section": "Systems and Situations",
       "track": 21,
-      "bytes": 21112637,
+      "bytes": 21098434,
       "duration_s": 2513.4,
-      "audio": "/audio/systems/special_teams-0d91bd08.m4a"
+      "audio": "/audio/systems/special_teams-722e09d7.m4a"
     },
     {
       "doc_id": "systems/faceoffs",
       "title": "Faceoffs",
       "section": "Systems and Situations",
       "track": 22,
-      "bytes": 18296525,
-      "duration_s": 2180.5,
-      "audio": "/audio/systems/faceoffs-04cef1cf.m4a"
+      "bytes": 18287539,
+      "duration_s": 2180.8,
+      "audio": "/audio/systems/faceoffs-1ce57c99.m4a"
     },
     {
       "doc_id": "systems/game_management",
       "title": "Game Management",
       "section": "Systems and Situations",
       "track": 23,
-      "bytes": 21500325,
-      "duration_s": 2564.9,
-      "audio": "/audio/systems/game_management-671ad633.m4a"
+      "bytes": 21502370,
+      "duration_s": 2565.7,
+      "audio": "/audio/systems/game_management-0e8d3816.m4a"
     },
     {
       "doc_id": "technique/skating",
       "title": "Skating",
       "section": "Technique",
       "track": 24,
-      "bytes": 32774266,
-      "duration_s": 3914.7,
-      "audio": "/audio/technique/skating-68bdb14a.m4a"
+      "bytes": 32772104,
+      "duration_s": 3914.9,
+      "audio": "/audio/technique/skating-74164962.m4a"
     },
     {
       "doc_id": "technique/puck_handling",
       "title": "Puck Handling",
       "section": "Technique",
       "track": 25,
-      "bytes": 17373584,
+      "bytes": 17376326,
       "duration_s": 2072.8,
-      "audio": "/audio/technique/puck_handling-68d109b2.m4a"
+      "audio": "/audio/technique/puck_handling-c85c8384.m4a"
     },
     {
       "doc_id": "technique/passing_and_receiving",
       "title": "Passing and Receiving",
       "section": "Technique",
       "track": 26,
-      "bytes": 22395252,
+      "bytes": 22374351,
       "duration_s": 2667.3,
-      "audio": "/audio/technique/passing_and_receiving-b9b47dfc.m4a"
+      "audio": "/audio/technique/passing_and_receiving-c5894204.m4a"
     },
     {
       "doc_id": "technique/shooting",
@@ -250,9 +250,9 @@
       "title": "Body Contact and Battles",
       "section": "Technique",
       "track": 28,
-      "bytes": 17753124,
-      "duration_s": 2115.7,
-      "audio": "/audio/technique/body_contact_and_battles-5db70d41.m4a"
+      "bytes": 17763749,
+      "duration_s": 2116.4,
+      "audio": "/audio/technique/body_contact_and_battles-e12f55c4.m4a"
     },
     {
       "doc_id": "hockey-iq/puck_support_and_spacing",
@@ -268,27 +268,27 @@
       "title": "Time and Space",
       "section": "Hockey IQ",
       "track": 30,
-      "bytes": 30397014,
-      "duration_s": 3625.4,
-      "audio": "/audio/hockey-iq/time_and_space-15edf181.m4a"
+      "bytes": 30390329,
+      "duration_s": 3625.5,
+      "audio": "/audio/hockey-iq/time_and_space-43a4aff9.m4a"
     },
     {
       "doc_id": "hockey-iq/scanning_and_anticipation",
       "title": "Scanning and Anticipation",
       "section": "Hockey IQ",
       "track": 31,
-      "bytes": 26908881,
+      "bytes": 26862882,
       "duration_s": 3207.8,
-      "audio": "/audio/hockey-iq/scanning_and_anticipation-1da9a65c.m4a"
+      "audio": "/audio/hockey-iq/scanning_and_anticipation-02775bf0.m4a"
     },
     {
       "doc_id": "hockey-iq/risk_management",
       "title": "Risk Management and Decision-Making",
       "section": "Hockey IQ",
       "track": 32,
-      "bytes": 24993209,
-      "duration_s": 2983.4,
-      "audio": "/audio/hockey-iq/risk_management-25160aff.m4a"
+      "bytes": 24982920,
+      "duration_s": 2983.5,
+      "audio": "/audio/hockey-iq/risk_management-75de70d3.m4a"
     },
     {
       "doc_id": "hockey-iq/playing_without_the_puck",
@@ -304,9 +304,9 @@
       "title": "Equipment",
       "section": "Off the Ice",
       "track": 34,
-      "bytes": 20280361,
-      "duration_s": 2415.6,
-      "audio": "/audio/off-the-ice/equipment-688cd1af.m4a"
+      "bytes": 20291349,
+      "duration_s": 2415.8,
+      "audio": "/audio/off-the-ice/equipment-4d360801.m4a"
     },
     {
       "doc_id": "off-the-ice/conditioning_and_recovery",
@@ -340,27 +340,27 @@
       "title": "Practising on Your Own",
       "section": "Off the Ice",
       "track": 38,
-      "bytes": 14902166,
-      "duration_s": 1776.1,
-      "audio": "/audio/off-the-ice/practising_on_your_own-545cecf1.m4a"
+      "bytes": 14893800,
+      "duration_s": 1776.3,
+      "audio": "/audio/off-the-ice/practising_on_your_own-f4ed8254.m4a"
     },
     {
       "doc_id": "off-the-ice/mental_game",
       "title": "The Mental Game",
       "section": "Off the Ice",
       "track": 39,
-      "bytes": 26204160,
-      "duration_s": 3125.5,
-      "audio": "/audio/off-the-ice/mental_game-c7644a05.m4a"
+      "bytes": 26193042,
+      "duration_s": 3125.9,
+      "audio": "/audio/off-the-ice/mental_game-82f22c6b.m4a"
     },
     {
       "doc_id": "off-the-ice/team_play_and_culture",
       "title": "Team Play and Culture",
       "section": "Off the Ice",
       "track": 40,
-      "bytes": 23247213,
+      "bytes": 23234402,
       "duration_s": 2771.2,
-      "audio": "/audio/off-the-ice/team_play_and_culture-6691e61a.m4a"
+      "audio": "/audio/off-the-ice/team_play_and_culture-eaa9b326.m4a"
     },
     {
       "doc_id": "off-the-ice/how_to_watch_hockey",

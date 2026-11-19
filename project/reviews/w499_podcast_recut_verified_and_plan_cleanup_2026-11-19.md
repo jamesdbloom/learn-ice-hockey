@@ -37,7 +37,7 @@ Run on the 31 re-cut Conversation masters in `~/Documents/personal/ice_hockey_po
 - **Encode dry run:** planned to encode 32 and skip 9. Every guid is unchanged, and the audio keys are new content-hashed keys.
 - **Encode:** exited 0 (32 encoded, 9 skipped); the overwritten web files are backed up in `2026-11-19T094602-before-build`.
 - **Upload dry run:** passes the agreement check (41 episodes, 868,060,977 bytes).
-- **Not yet done:** `--go` is blocked because the `ice-hockey` AWS SSO session has expired. `site/src/data/podcast.json` is modified and deliberately NOT committed: it must ship after the upload.
+- **Upload:** after the owner renewed the AWS SSO session, `upload_podcast_audio.sh --go` uploaded 32 episodes and skipped the 9 already in the bucket. `head-object` then confirmed that all 41 feed enclosures exist at the bytes `podcast.json` declares. `podcast.json` was committed only after that.
 
 ## Part 2: plan clean-up
 - **Method:** six read-only Explore agents each re-tested one disjoint line range of OPEN_ITEMS.md (20–80, 81–120, 121–160, 161–251, 252–320, 321–389) against HEAD 69414796, item by item. Each wrote a cleaned replacement text and a verdict table with evidence. The coordinator spliced the six texts in order and wrote the header, the In flight row, the owner-questions list and the guidance lines.
