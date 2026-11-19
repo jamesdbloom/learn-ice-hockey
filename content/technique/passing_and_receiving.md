@@ -131,7 +131,7 @@ Risk: A hard pass your teammate cannot handle is your turnover, not theirs
 
 ### Backhand pass — the half of the game most players skip
 
-**When to use it.** Whenever the play is on your backhand side and turning to your forehand would cost you the passing window. Common cases: a defenceman moving the puck to their partner on the backhand side, a winger on their off wing feeding across the slot, and any escape from wall pressure where you have your back to the ice. That last one is a posture to get out of rather than one to settle into: **never turn your back to anyone coming at you, and never duck** — see [Receive with your body open to the ice](#receive-with-your-body-open-to-the-ice).
+**When to use it.** Whenever the play is on your backhand side and turning to your forehand would cost you the passing window. Common cases: a defenceman moving the puck to their partner on the backhand side, a winger on their off wing feeding across the slot, and any escape from wall pressure where you have your back to the ice. That last one is a posture to get out of, not one to settle into, because contact on your back is a hit from behind. While you are there, keep your head up and never duck — [Receive with your body open to the ice](#receive-with-your-body-open-to-the-ice) covers how not to end up there.
 
 ```facts
 Technique: Start the puck at the middle or heel on your backhand side and roll it heel-to-toe, exactly as on the forehand

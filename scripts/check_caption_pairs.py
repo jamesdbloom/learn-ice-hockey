@@ -108,6 +108,14 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         "prompt and the positive onus that forecheck-212's caption voices just before "
         "it (the body-checking enumeration left forecheck-212 too in W471)",
     ),
+    (
+        "winger-dz-reverse",
+        "winger-dz-rim",
+        None,
+        "wall limb cut 19 Nov 2026 (W507): never turn your back / never duck, the two "
+        "injuries and the posture are voiced in winger-dz-rim's caption directly before "
+        "it in both hosts (winger.md, passing_and_receiving.md)",
+    ),
 ]
 
 
@@ -122,6 +130,8 @@ CARRIES: dict[str, tuple[str, ...]] = {
     # chunks just before. A caption trim must not take it out of both.
     "oz-cycle-rim": ("never turn your back", "never duck"),
     "oz-cycle-reverse": ("never turn your back", "never duck"),
+    # W507: winger-dz-reverse dropped its wall limb on the strength of this caption.
+    "winger-dz-rim": ("never turn your back", "never duck", "chin off your chest"),
 }
 
 DIAGRAMS_JSON = REPO / "site" / "src" / "data" / "diagrams.json"

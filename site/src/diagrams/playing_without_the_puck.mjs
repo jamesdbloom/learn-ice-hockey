@@ -921,7 +921,8 @@ const legalRouteThroughTraffic = {
     // penalty, is settled by the section around the picture" — without it "legal" would read as
     // unconditional, and :556 makes it conditional under Hockey Canada and CARHA; "A chaser
     // arriving at the back of a player standing still is not drawn"; and the ⚠️ safety caution
-    // VERBATIM (the host's own fuller copy is :570, chunk 034, two chunks on).
+    // (the host's own fuller copy is :570, chunk 034, two chunks on). Not verbatim since W507:
+    // the caption says "your check" where :570 says "a defender", because the glyph is a forward.
     'Your own legal route past a teammate, in the attacking end with the opposition net at the right. ' +
     'Your route goes round the outside of your teammate, who is standing still, and finishes in ' +
     'open ice, while the straight line your check would take to that same ice runs through them. ' +
@@ -951,12 +952,12 @@ const legalRouteThroughTraffic = {
     // round." -- :556 "so that your check has to go around them", same chunk, and the sentence before
     // it in the caption already says the straight line runs through your teammate. KEPT: "legal" in
     // the opening and the "settled by the section around the picture" hedge (it resolves to :556 in
-    // the same chunk), both not-drawn statements, and the safety caution VERBATIM. MOVED, no word
+    // the same chunk), both not-drawn statements, and the safety caution. MOVED, no word
     // changed: the glyph now opens "Shout as you come", so the hazard sentence is plain text before
     // it and the amber is the instruction and its coaching-caution qualifier. The full caution is
     // also at :570, chunk 034.
-    'The collision you are engineering is a defender at chase speed into a teammate who is ' +
-    'facing away and cannot see the defender. ⚠️ Shout as you come, and run past your teammate rather than ' +
+    'The collision you are engineering is your check at chase speed into a teammate who is ' +
+    'facing away and cannot see them. ⚠️ Shout as you come, and run past your teammate rather than ' +
     'into the space they are standing in. That is a coaching caution, not a rulebook requirement.',
 
   describe:

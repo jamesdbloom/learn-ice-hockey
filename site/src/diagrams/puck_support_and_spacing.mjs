@@ -85,7 +85,7 @@ const supportInALine = {
   // as it was: shortening a caption is not a licence to restate a claim.
   caption:
     'Three teammates in a straight line up the boards, the puck on the deepest of them. ' +
-    'One opposition defender standing in that line is between the carrier and both receivers, so a ' +
+    'One opponent standing in that line is between the carrier and both receivers, so a ' +
     'single stick blade in a single lane kills two options at once — a line is the ' +
     'cheapest shape in hockey to defend. ' +
     'What is wrong is the shape, and it is just as cheap to defend wherever on the ice the three ' +
@@ -140,7 +140,7 @@ const supportTriangle = {
   // Naming the change costs the same words.
   caption:
     'Three teammates with one of them pulled off the boards into the middle, so the lanes out of ' +
-    'the carrier now diverge. The defender has not moved: they are still in the lane up the boards, and ' +
+    'the carrier now diverge. The opponent has not moved: they are still in the lane up the boards, and ' +
     'covering it means turning their body away from the middle option. ' +
     'No single defender can be in both lanes. A triangle is the smallest shape in which all three ' +
     'corners have two teammates at different angles, and it survives the puck moving, where a line ' +
@@ -155,7 +155,7 @@ const supportTriangle = {
     'the wall into the middle of the zone, level with and just below the faceoff dot, so the three form a ' +
     'triangle. The opposition forward stands where they stood in the previous diagram, on the line between ' +
     'the carrier and the high wall option. A single dashed passing route runs from the carrier into the ' +
-    'middle, stopping short of the receiver — the lane the defender cannot also be in.',
+    'middle, stopping short of the receiver — the lane that forward cannot also be in.',
 
   // The shape itself, shaded — "The three players form a triangle" is the
   // section's own sentence, and three glyphs on a wide sheet do not make a reader

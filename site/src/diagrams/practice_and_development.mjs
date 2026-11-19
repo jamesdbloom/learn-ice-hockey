@@ -245,7 +245,7 @@ const decisionDrill = {
     'Adding a defender is a coaching approach, not a rule ' +
     'of hockey. Shrinking the space, shortening the clock or playing a ' +
     'small-area game do similar work. Ask your coach which one a drill is ' +
-    'using. The defender drawn here is a passive one, allowed to take away a single option and ' +
+    'using. The defender drawn here is an opposition forward playing passively, allowed to take away a single option and ' +
     'nothing else. ⚠️ How hard a defender may compete in a drill, and whether body checking is ' +
     'permitted at all, depends on your age group, your league and the book they play under, and no ' +
     'picture can tell you that.',

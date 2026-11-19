@@ -455,7 +455,7 @@ Two carve-outs are book-specific. USA Hockey grants the exemption only at Youth 
 
 **Stay high** — "high" means toward the blue line you are facing, away from the net. For a **winger** the phrase names two different jobs at almost the same place on the ice, and the one that means covering the **point** **expires the instant your team wins the puck**. Said of **F3** it is the plain directional word. Set out in [its own section above](#stay-high), which covers all three senses.
 
-**Step up** — moving *forward* to challenge an attacker early, in the neutral zone or at your own blue line. *Not the same as* a **pinch**. Riskier, because there is nothing behind you if you miss.
+**Step up** — moving *forward* to challenge an attacker early, in the neutral zone or at your own blue line. *Not the same as* a **pinch**. Riskier, because a miss leaves only your partner and goalie back.
 
 **Stick-and-puck** — open ice booked for individual practice rather than a game (a convention, not a defined category — see **Drop-in**): many pucks, no teams, no referees, often no goalie, and often lighter gear rules than **drop-in**. See [Getting Started](../getting-started/getting_started.md).
 
@@ -502,7 +502,7 @@ Moving sideways without body position and then contacting a player without the p
 - **Reading F1, F2 and F3 as positions, or as people.** Read the order of arrival and take that job: on most teams, if a winger gets to the puck first, the winger is F1 and the centre F2 from that moment. Some coaches assign them by position, so check yours.
 - **Assuming F1 means somebody on your team.** On a breakout, look for F1 coming at you — the numbers belong to whichever team is forechecking.
 - **Treating a rim and a reverse as the same play.** Rim it when a forechecker is sealing you against the wall; reverse it when one has over-committed past you. Sent the wrong way, each finds an opponent instead of a teammate.
-- **Confusing a pinch with stepping up.** Know which you are being asked for. A pinch comes down from the *offensive* blue line, with someone — usually a high forward — covering your point in case you miss; stepping up challenges in the neutral zone or at your own line, with nothing behind you if you miss.
+- **Confusing a pinch with stepping up.** Know which you are being asked for. A pinch comes down from the *offensive* blue line, with someone — usually a high forward — covering your point in case you miss; stepping up challenges in the neutral zone or at your own line, where a miss leaves only your partner and goalie back.
 - **Conflating the point and the half-wall.** As a defenceman, hold the point, just inside the blue line. The half-wall is level with the faceoff dot, about twenty feet from the goal line, and a defenceman who drifts down to it has abandoned the blue line.
 - **Conflating the goalmouth and the slot.** If the goalmouth is your job, stay in it. They are two coverage jobs one layer apart, and a defender who leaves the goalmouth to cover the slot has left a tap-in unmarked.
 - **Hearing "the high slot is the centre's" as a rule of hockey.** Ask which coverage your team plays. A low zone collapse asks for it; under man-on-man nobody holds a layer, and under a hybrid the low assignments are matched to players rather than to ice.
@@ -537,7 +537,7 @@ Moving sideways without body position and then contacting a player without the p
 
 7. **Rim the puck on along the boards when a forechecker is sealing you against the wall; reverse it back against the flow when one has over-committed past you.** They beat opposite kinds of pressure, so never swap the words.
 
-8. **A pinch comes down from the offensive blue line, with someone — usually a high forward — covering your point in case you miss; stepping up challenges in the neutral zone or at your own line, with nothing behind you if you miss.** Know which one you are being asked for.
+8. **A pinch comes down from the offensive blue line, with someone — usually a high forward — covering your point in case you miss; stepping up challenges in the neutral zone or at your own line, where a miss leaves only your partner and goalie back.** Know which one you are being asked for.
 
 9. **Before you act on "stay high" or "your check", work out which job is meant from who has the puck and the sentence around it — and ask if you cannot tell.** A winger's own-end "stay high" ends the instant your team wins the puck. "Your check" is the player you cover; "the checker" is the one pressuring you.
 

@@ -438,7 +438,7 @@ const halfWallOptions = {
     'the centre line of the ice, to a forward on the weak side of the high slot. And a wavy ' +
     'carrying route cuts off the wall toward the middle of the ice, inside the home-plate area. ' +
     'A second defenceman is on the blue line on the weak side, and the goalie is in the ' +
-    'crease. No other defenders are drawn.',
+    'crease. No opposition skaters are drawn.',
 
   players: [
     { id: 'F1', pos: 'F', at: HALF_WALL,     label: 'the carrier' },

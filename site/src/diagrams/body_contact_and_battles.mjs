@@ -615,8 +615,14 @@ const cornerEscapeRoutes = {
   caption:
     'Why a corner is harder to defend than a piece of wall, drawn in your own end with the net you ' +
     'are defending at the right. The carrier’s two ways out are drawn: up the wall, or out behind ' +
-    'the net. The third, back toward the slot, is the one you never leave open. Your defenceman is ' +
-    'standing in it, arriving on the carrier’s inside, so it is not drawn. The route ends in ' +
+    // W507 (19 Nov 2026): "Your defenceman is standing in it" CORRECTED. The host (:1269) says
+    // "your body is where it would be" -- the reader IS the drawn defender, not a teammate of the
+    // reader's -- and the drawn D is arriving (a pressure route ending 7 ft short), not standing.
+    // Drawn as a defenceman for the section's low-zone-collapse default; whose corner it is
+    // opens the very next host section as a coaching choice.
+    'the net. The third, back toward the slot, is the one you never leave open. You are the ' +
+    'player drawn, a defenceman under this guide’s default, arriving on the carrier’s inside, and your body takes that route away, so ' +
+    'it is not drawn. The route ends in ' +
     'two bars, meaning arrive and contain, and no contact is drawn. Whether an arrival like that may ' +
     'end in contact at all depends on your age group, your league and the book they play under. ' +
     '⚠️ Pin the puck and not the player. Never finish into the back of a player who is facing ' +

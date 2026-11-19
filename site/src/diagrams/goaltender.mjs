@@ -490,8 +490,16 @@ const safeOutlets = {
     // ✂️ W470 (18 Nov 2026). CUT the six-book split again, this time because the host's list item 4
     // ("Off the glass and out") now carries it in full in the caption's own chunk, directly before
     // the marker, and the section's facts line carries it voiced alone. KEPT the instruction.
-    'turnover is a shot on an empty net you are standing in. Clear along the glass, never over ' +
-    'it. Whether ' +
+    // ✂️ W507 (19 Nov 2026). The bare slogan "Clear along the glass, never over it." is REPLACED,
+    // not cut. Its W292 reason ("the instruction that leads the tariff") went with the tariff in
+    // W469/W470, and the sole host voices the identical words in the "In short" line directly after
+    // the marker, so the caption and the next sentence a listener hears were the same slogan back
+    // to back. It now does the caption's own job, naming the two options the picture does not draw
+    // (see "WHY ONLY THREE OF THE FIVE ARE DRAWN" above), and keeps along-not-over inside that.
+    // The caption never carried a ⚠️ (W483's "only ⚠" premise was wrong), so no spoken
+    // "Important." moves either way.
+    'turnover is a shot on an empty net you are standing in. Not drawn: leaving it for a ' +
+    'defenceman with time, and clearing along the glass rather than over it. Whether ' +
     'you play the puck at all is your team’s convention rather than a law. Ask, and then be ' +
     'consistent.',
 

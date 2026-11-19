@@ -249,7 +249,7 @@ const laneAndTheStep = {
     'and the ten feet drawn here is only what makes the change of lane visible at this ' +
     'scale. ⚠️ Keep it low and say out loud who you are shooting at — it passes your own ' +
     'winger at the net front, and they need a blade on the ice for the tip. ' +
-    'No other defenders are drawn, and nothing here shows whether the blocker adjusts.',
+    'No other opposition skaters are drawn, and nothing here shows whether the blocker adjusts.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Own players are drawn open, ' +

@@ -1270,43 +1270,36 @@ const wingerDzReverse = {
   half: true,
   width: 900,
 
-  // ✂️ RE-ORDERED 16 November 2026 (W375), no word changed: the posture sentence with SHOULDER_TAIL
-  // now comes BEFORE the glyph, so the amber run (glyph to end of caption) is the two prohibitions
-  // and the two injuries only, 222 chars instead of 402. SHOULDER_TAIL still follows the posture,
-  // never a prohibition, and both hosts still voice the whole wall limb.
+  // CAPTION HISTORY, condensed W507 (19 Nov 2026). The W375 re-order and the 8 Nov / W458 notes
+  // that said the WHOLE wall limb was "KEPT IN FULL" here described text that is no longer in
+  // this caption and have been removed so the file does not contradict itself.
+  //  - 8 Nov 2026 and W458: the gloss on what a reverse is, "read which of the two you are
+  //    facing", the puck-protection technique and "the other half of the rim-or-reverse
+  //    decision" were cut as restatement; both hosts voice them beside the marker.
+  //  - ⚠️ WHO CALLS, corrected W458 after diagram review: the RECEIVER calls, not the carrier --
+  //    on_ice_communication.md :159 ("Said by a teammate arriving behind the carrier"), :345
+  //    ("called to the retriever, not chosen by them"), breakouts.md :332 ("The receiving
+  //    teammate must call for it"). "Do not reverse on hope" is passing_and_receiving.md
+  //    :194/:219. A reviewer sketch "because you are facing the wall" was NOT written: the
+  //    carrier on the wall is side-on, skates parallel to the boards.
+  //  - ✂️ W507: the WHOLE wall limb CUT (posture + SHOULDER_TAIL + the ⚠️ prohibitions and the
+  //    two injuries). Both hosts embed winger-dz-rim DIRECTLY before this diagram (winger.md
+  //    :117/:119, passing_and_receiving.md :209/:211), and that caption carries the identical
+  //    limb word for word, so a listener heard it twice in two breaths. Layer test, both hosts,
+  //    19 Nov: winger.md voices both prohibitions in the facts Never lines (:101-:102) before
+  //    the markers and in the bullet at :126 right after, posture at :125;
+  //    passing_and_receiving.md :213 states the prohibitions itself under ⚠️ (since W459) and
+  //    :215 the posture and the two injuries. A reader of this picture alone loses the limb; the
+  //    W459 safety ruling accepted that for the reverse and not for the rim, and the W507 safety
+  //    review upheld the cut. The caption carries no ⚠️ now, so it speaks no "Important.".
+  //  - ⚠️ DEPENDENCY, declared in scripts/check_caption_pairs.py: winger-dz-rim must stay
+  //    embedded directly before this diagram in every host and must keep the wall limb. If
+  //    either stops being true, the limb comes back here.
   caption:
-    // ✂️ W458 (18 November 2026), 162 -> 135 words before the who-calls fix. Same two hosts as winger-dz-rim, rendered
-    // this session; both voice "A reverse beats a checker who has over-committed and skated past
-    // you, because it goes back into the space they just left" in the chunk before the marker
-    // (winger.md chunk 007; passing_and_receiving.md chunk 008's table). CUT as restatement: "the
-    // other half of the rim-or-reverse decision", "The checker has not sealed you", "carrying
-    // their momentum with them". KEPT: the reverse and the WHOLE wall limb as on winger-dz-rim,
-    // for the passing_and_receiving.md :213 reason recorded there.
-    // ⚠️ WHO CALLS, corrected W458 after diagram review: the caption had told the CARRIER to call
-    // ("Call for it ... because the teammate you are sending it to is looking the wrong way", and
-    // W458's first trim made it plainer). The owners say the RECEIVER calls:
-    // on_ice_communication.md :159 ("Said by a teammate arriving behind the carrier"), :345
-    // ("called to the retriever, not chosen by them") and breakouts.md :332 ("The receiving
-    // teammate must call for it"). "Do not reverse on hope" is passing_and_receiving.md :194/:219.
-    // The reviewer's sketch said "because you are facing the wall"; NOT written, because the
-    // posture limb in this same caption has the carrier side-on, skates parallel to the boards.
     'Beating a checker who has over-committed and skated past you up the wall, in your own end.' +
-    // SHORTENED 8 November 2026 (1,262 chars). Cut, each voiced beside the marker in BOTH hosts:
-    // the gloss on what a reverse is (winger.md:113, :115; passing_and_receiving.md facts :189 and
-    // the table at :200-205); "read which of the two you are facing before the puck arrives"
-    // (winger.md:115-117; passing_and_receiving.md:207). Cut as technique, not safety: "feet wide
-    // and moving, side-on ..., puck on the far side" (winger.md:125-129 directly after the marker;
-    // passing_and_receiving.md does not voice it, and it is puck protection, not a hazard).
-    // KEPT IN FULL: the whole wall limb (since W375 only the prohibitions and injuries follow the glyph; the posture and SHOULDER_TAIL precede it) -- passing_and_receiving.md:213 tells its
-    // reader that "the wall-contact warning both captions carry" applies, so the caption must
-    // carry it, and that host voices neither never-turn/never-duck nor "not the whole shoulder".
     ' The ice they have just left is behind you, so the play that beats them is a REVERSE to a ' +
     'teammate arriving there, and that teammate calls it — "reverse!" — because you cannot see them ' +
-    'behind you; without the call, do not reverse on hope. Skates parallel ' +
-    'to the boards, forearm and hip to the wall, head up and chin off your chest' +
-    SHOULDER_TAIL + ' ⚠️ Rim or reverse, never turn your ' +
-    'back to anyone coming at you and never duck. Those are two different injuries — a hit from behind you cannot' +
-    ' brace for, and a chin tucked to the chest, which does not need speed to do it.',
+    'behind you; without the call, do not reverse on hope.',
 
   describe:
     'The defending half of the rink, your own net at the right. Your goalie is in the crease. ' +
