@@ -775,7 +775,7 @@ Body Contact and Battles sets out [every boarding tier](../technique/body_contac
 
 ### The cross-check
 
-**At the net front, take their stick, never their back.**
+**At the net front, take their stick, never their back: no book here caps a cross-check at two minutes.**
 
 - **The cross-check in the back.** **Lift the stick; never cross-check their back.** No book here caps it at two minutes, ⚠️ **a major ends your game in all six**, and Hockey Canada and CARHA must give the major and game misconduct where it injures (9.2(b), 54(c)). Under USA Hockey a reckless one is a mandatory major and game misconduct (609(b)), so plan on a match and a likely multi-game suspension (602(a)).
 
@@ -811,7 +811,7 @@ Body Contact and Battles sets out [the rest, book by book](../technique/body_con
 
 ### In the scramble
 
-**Move the puck with a low stick, never a closed hand, and let go of their stick.**
+**Move the puck with a low stick, never a wild swing or a closed hand, and let go of their stick: a swing that catches someone high can end your game in every book.**
 
 - **The stick on a stick.** Holding an opponent's stick is at least a holding minor in every book, and in CARHA possibly a major and game misconduct (30(a)); if it injures, Hockey Canada 8.1(b) and CARHA 63(b) make it ⚠️ **a major plus a game misconduct**. A pin you keep can be called holding. The IIHF's interference rule, 56.1, also names stopping a player without the puck from receiving a pass, and no IIHF ruling says whether a lift as the pass arrives counts — one more reason to let go at once.
 - **The swing.** NHL 60.1, IIHF 60.1 and PWHL 61.1 remove the accidental-contact defence from *"[a] wild swing at a bouncing puck"*, and 60.3 makes it a double minor where injury results. **That is not the top of it.** NHL 60.4 and PWHL 61.4 ⚠️ **make it a match where the swing was meant to hurt**, and IIHF 60.4 allows a major and automatic game misconduct where it recklessly endangers. USA Hockey calls a stick to the head outside a check high-sticking: a minor that becomes a mandatory major and game misconduct where it recklessly endangers (621(a) and (b); Casebook Rule 621, Situation 1). CARHA 62(b) makes any stick above the shoulders a major, accidental or not, with a game misconduct if deliberate or anyone is hurt. Hockey Canada sends a violent one, and in minor and female hockey any that injures, to a major and game misconduct (7.6(b) via 6.9(c); Junior and Senior 7.7(b) via 9.5(b)). USA Hockey 621(c), CARHA 62(c) and Hockey Canada 7.6(c) and 7.7(c) reach a match — and under USA Hockey plan on one, and a likely multi-game suspension, for a reckless or deliberate swing (602(a)).
@@ -822,7 +822,7 @@ Body Contact and Battles sets out [the rest, book by book](../technique/body_con
 
 ### A loose puck in your own crease
 
-**Knock it straight down and play it with your stick; smothering it is your goalie's job.**
+**Knock it straight down and play it with your stick; smothering it is your goalie's job.** If you hold it with the puck in your crease, or under Hockey Canada with you in it, it is a penalty shot, and with your own net empty, plan on an awarded goal.
 
 - **The permission to catch.** NHL **67.2**: *"A player shall be permitted to catch the puck out of the air but must immediately place it or knock it down to the ice."* The IIHF's 67.2 and the PWHL's 69.2 carry the same sentence, and Hockey Canada's **10.2(a)(iii)** and **CARHA 61(a)** exclude the honest catch from their hand-closing minors — a player who closes a hand on the puck and *"immediately drops it to the ice"* without gaining an advantage. **USA Hockey's playing rules print no such sentence; its Casebook does** (Rule 618, Situation 1): *"[t]he motion of catching, then dropping the puck, must be virtually one continuous motion"*. In your own crease (Rule 614, Situation 3): *"if the puck is caught and dropped to the ice immediately, no penalty shall be assessed"*. So under USA Hockey the permission is a casebook interpretation rather than rule text.
 - **What comes after the catch.** NHL and IIHF 67.2(I) and PWHL 69.2(i) reach the player who *"catches it and skates with it, either to avoid a check or to gain a territorial advantage"*. Hockey Canada's Interpretation 4 to 10.2(a)(iii) lists three acts, none of them a height: throwing the puck after closing your hand on it, trying *"to maneuver around another player while holding the puck"*, and *"tak[ing] a stride while holding the puck in their hand."*
@@ -847,7 +847,7 @@ Body Contact and Battles sets out [the rest, book by book](../technique/body_con
 - **No trapezoid elsewhere.** USA Hockey, Hockey Canada and CARHA write none — *"trapezoid"*, *"restricted area"* and *"designated area"* appear in none of them, nor in USA Hockey's Casebook, save one Hockey Canada use about where the Goal Judge stands (5.4(b)) — so there your goalie is a genuine third puck-handler behind the net. **A PWHL goalie should play as if it binds:** its 1.8 and 27.8 switch the trapezoid off, but its 65.2(viii) still writes the minor for a goalie *"who plays the puck outside of the designated area behind the net"*. How much rec, beer-league and youth hockey that covers is a question about leagues, and this document has no count for it.
 - **No trapezoid is not no restriction.** ⚠️ **A goalie who freezes the puck out there takes a minor**, so behind the net the goalie plays it rather than sits on it. USA Hockey **614(c)(1)** and CARHA **58(b)** price a freeze behind the goal line with the goalie's body out of the crease. Hockey Canada's clause v of Interpretation 3 to 10.1(a) is blunter — *"When a goaltender leaves their crease, they will not be allowed to freeze the puck. If they do, they will be assessed a Minor penalty. No warning will be issued."* — and its Rule 10.2 makes falling on the puck outside the crease a minor too. Clause ii of the same Interpretation lets the goalie come out to cut down the angle and, *"after stopping the shot, cover the puck"*; Hockey Canada never says which governs, and no Hockey Canada casebook is held here. But a cut-down-the-angle save is made out in front, not behind the net. For the skaters it is the same either way: a loose puck out there has to be moved, not smothered. See [Goaltender](../positions/goaltender.md).
 
-Breakouts sets out [the IIHF's and the PWHL's glass rule](breakouts.md#off-the-glass-and-out), Special Teams [the shorthanded exemption and its limits](special_teams.md#you-may-ice-the-puck-freely--where-your-rule-set-allows-it), and Rules Primer [the trapezoid in full, its British standing included](../foundation/rules_primer.md#the-trapezoid-goalkeepers-restricted-area).
+Breakouts sets out [the IIHF's and the PWHL's glass rule](breakouts.md#over-the-glass), Special Teams [the shorthanded exemption and its limits](special_teams.md#you-may-ice-the-puck-freely--where-your-rule-set-allows-it), and Rules Primer [the trapezoid in full, its British standing included](../foundation/rules_primer.md#the-trapezoid-goalkeepers-restricted-area).
 
 ---
 

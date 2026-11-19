@@ -124,10 +124,10 @@ const D_INSIDE_W = { at: DOT, dx: GATE, dy: -HASH };          // (74.69, 5.03)
 // 37 + 3.6. The 41.0 above is that vertex plus the 0.4 of stroke the round join carries;
 // the path data does not change when the join does.
 //
-// The caption still says
-// "behind and outside" because that is faceoffs.md's own instruction about real
-// ice; the picture delivers the "behind" and cannot deliver the "outside", and the
-// `describe` below therefore states only what is drawn.
+// The caption says the defenceman "stands nearer the boards than their winger, which there is
+// no room to draw": faceoffs.md's own instruction is "behind and outside", the picture delivers
+// the "behind" and cannot deliver the "outside", and the `describe` below therefore states only
+// what is drawn.
 const D_WALL_D   = { at: DOT, dx: 11, dy: 15 };               // (80, 37)
 // "In the slot in front of the goalie, responsible for the net front and for
 // blocking a point shot." A foot and a half net-ward of the named slot position,
@@ -183,13 +183,17 @@ const LDOT = 'faceoff-dot:left';
 
 const dzoneAlignmentOtherCircle = {
   id: 'faceoff-dzone-alignment-other-circle',
-  title: 'The same alignment at the other circle',
+  title: 'Defensive-zone alignment at the other circle',
   owner: 'content/systems/faceoffs.md',
   half: true,
   width: 900,
 
   caption:
-    'The same alignment at the other end-zone circle. Every job is unchanged, and the slot defenceman' +
+    // DEIXIS REPAIRED 19 November 2026 (content_style_guide.md, "A positional pointer can carry RULE
+    // SCOPE"): the opening named no diagram ("The same alignment"), and the closing sentence resolved a
+    // book split by position ("the diagram above"). Both now name the thing; the split is stated in the
+    // same words as faceoff-dzone-alignment's caption, so the two cannot disagree.
+    'The defensive-zone draw alignment at the left-hand end-zone circle instead of the right. Every job is unchanged, and the slot defenceman' +
     ' and the goalie stand in the same place at either circle; what changes is which side of the ' +
     'ice each of the others is on. The alignment is a coaching choice, not a rule — find out what ' +
     'your team runs. ' +
@@ -206,13 +210,14 @@ const dzoneAlignmentOtherCircle = {
     // wanting everything behind the hash marks -- so the pointer's count was never the same
     // number as the thing it pointed at, and this caption's only host, faceoffs.md, declares
     // its own survey shelf as five. A pointer carries no count now; the diagram it points at
-    // carries the books.
-    'it. ⚠️ What counts as outside is not the same in every book — the diagram above carries that' +
-    ' split.',
+    // carries the books. (Superseded 19 November 2026: the pointer is gone and the split is stated.)
+    'it. ⚠️ What counts as outside differs by book: the NHL, IIHF and PWHL allow a skate on the line; ' +
+    'Hockey Canada and CARHA count a skate on the circle as encroachment; USA Hockey’s Casebook requires ' +
+    'all sticks and skates completely behind the hash marks.',
 
   describe:
     'The defending half of the rink, your own net at the right, the draw at the ' +
-    'left-hand end-zone circle — a mirror image of the previous diagram. The faceoff ' +
+    'left-hand end-zone circle — a mirror image of the alignment at the right-hand circle. The faceoff ' +
     'circle is shaded to mark the area no player other than the two takers may put a ' +
     'skate inside. Five own players: the centre in the dot on the goal-line side of it; ' +
     'the boards-side winger level with the dot at the outer hash marks, close to the ' +
@@ -254,10 +259,19 @@ const dzoneAlignment = {
   width: 900,
 
   caption:
-    'A defensive-zone draw frozen before the drop, at the right-hand circle. The boards-side ' +
-    'defenceman really stands nearer the boards than their winger as well as behind; there is no ' +
-    'room to draw it. Where everyone stands is a coaching choice, not a rule: this alignment goes ' +
-    'with a low zone collapse, so find out what your team runs. The shaded circle ' +
+    // ✂️ W-next (19 November 2026), 1,031 chars: WORDING ONLY, every limb kept (a re-run host layer
+    // test found the W304/W321 reasons still hold: how_to_watch_hockey.md sends the reader to this
+    // caption for the circle-line split; game_management.md, defender.md and faceoffs.md voice no
+    // contact or circle-line rule beside the marker). The coaching-choice sentence now comes before
+    // the drawing disclosure, so the tactic leads. "as well as behind" dropped: the picture already
+    // draws the defenceman behind, and only the nearer-the-boards half is undrawn (drawn y 37 against
+    // the winger's 38.97). "really" dropped: "which there is no room to draw" already says it is
+    // undrawn. "the NHL, the IIHF and the PWHL" -> "the NHL, IIHF and PWHL" as in the contact
+    // sentence; "and" before USA Hockey dropped.
+    'A defensive-zone draw frozen before the drop, at the right-hand circle. Where everyone ' +
+    'stands is a coaching choice, not a rule: this alignment goes with a low zone collapse, so ' +
+    'find out what your team runs. The boards-side defenceman stands nearer the boards ' +
+    'than their winger, which there is no room to draw. The shaded circle ' +
     // ✂️ TRIMMED 12 November 2026, W304: 1,356 -> 1,259 chars. CUT: ": everyone except the two
     // taking the draw keeps both skates outside the circle and the hash marks". It is not a host
     // cut: the same caption states it at a fuller tier later, in the ⚠️ sentence that closes it (skates
@@ -287,9 +301,9 @@ const dzoneAlignment = {
     // seven hosts only winger.md (facts :580-582) and rink_map.md (:270, 76.7(ii) only) voice any
     // encroachment rule beside the marker; center.md, defender.md and game_management.md voice
     // none, and how_to_watch_hockey.md:266 sends the reader to THIS caption for the circle-line split.
-    'The NHL, the IIHF and the PWHL allow a skate on ' +
+    'The NHL, IIHF and PWHL allow a skate on ' +
     'the line and make crossing it the violation; ' +
-    'Hockey Canada and CARHA count a skate on the circle as encroachment; and USA Hockey’s ' +
+    'Hockey Canada and CARHA count a skate on the circle as encroachment; USA Hockey’s ' +
     'Casebook requires all sticks and skates completely behind the hash marks. ' +
     // ✅ IHUK IN-HOUSE RULE 76 CHECKED W33 AND CHANGES NOTHING HERE. The 2026-27 In-House
     // Rules (sources/eiha_inhouse_2026-27.txt, "Rule 76: Face-Offs") amend only the CENTRES:
@@ -418,7 +432,7 @@ const dzoneCleanLoss = {
     'puck to the point, and the boards-side defenceman takes the strong-side corner or half-wall.',
 
   describe:
-    'The same defensive-zone draw as the previous diagram, your own net at the right. Two ' +
+    'The defensive-zone draw at the right-hand circle, your own net at the right. Two ' +
     'opposition defencemen have been added at the points, just inside the blue line either side ' +
     'of the middle, and the opposing centre is in the dot. Two routes, both beginning on the drop ' +
     'rather than one after the other: the boards-side winger leaves the outer hash marks and ' +
@@ -534,7 +548,7 @@ const dzoneTieUp = {
     'team actually runs. Whoever has eyes on the puck calls it: "Loose!"',
 
   describe:
-    'The same defensive-zone draw, your own net at the right, at the instant the two centres ' +
+    'The defensive-zone draw at the right-hand circle, your own net at the right, at the instant the two centres ' +
     'have tied each other up and the puck is loose on the dot. Two forward-skating routes, both ' +
     'beginning on the drop: the inside winger comes up from the inner hash marks toward the dot, ' +
     'and the boards-side defenceman comes down from the wall toward it. Both finish short of the ' +

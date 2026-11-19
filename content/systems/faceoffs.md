@@ -191,7 +191,7 @@ Rule: Under USA Hockey a stoppage between the end-zone dots and the end boards t
 - **CARHA gives no choice of dot either.** A penalty draw goes to the dot nearest the incident, toward the penalised team's end, and never in the power-play team's own zone, so it can start in the neutral zone (39(a)); an icing draws at the offending team's end spot (65(a)).
 - **USA Hockey and Hockey Canada both catch any attacking player** who goes beyond the top of the circles in a post-whistle scrum (USA Hockey 612(d), Hockey Canada 6.3(d)(vi)), not just the point men and the bench.
 
-**Never aim a puck out off the draw** — every book makes shooting it out on purpose a delay-of-game penalty. The NHL, IIHF and PWHL write no penalty for a puck that leaves straight off a faceoff but never say whether that covers one aimed out; USA Hockey, Hockey Canada and CARHA write no such exemption. What [a puck shot out or frozen](#freezing-the-puck-and-shooting-it-out) costs comes later, in What it costs.
+**Never aim a puck out off the draw** — every book makes shooting it out on purpose a delay-of-game penalty. The NHL, IIHF and PWHL write no penalty for a puck that leaves straight off a faceoff but never say whether that covers one aimed out; USA Hockey, Hockey Canada and CARHA write no such exemption.
 
 *[Rules Primer](../foundation/rules_primer.md) carries the same material as a lookup table, plus a few situations not covered here — a hand pass in the attacking zone, a goal disallowed for goaltender interference, and two violations at once.*
 
@@ -257,7 +257,7 @@ There is no single correct draw. There are seven or eight, and the good centres 
 - **Tying up the stick.** Lift their stick or press it for an instant with yours — over or under the blade — then play the puck yourself. You make sure **nobody** wins it, turning a 1-on-1 into a scramble your wingers are already leaning into. Against a better draw-taker this is the common answer; the alternative is changing the taker, and your bench decides. **Stick on stick only: never a hand on their stick, never your stick on their hands, never hook it or hold it down** — and play the puck straight after the lift.
 - **The stick lift.** The aggressive version: lift their blade clean off the ice and take the puck. Higher reward, and it fails badly if you miss.
 
-**A hand on their stick is at least a holding minor in all six books, and a stick on their hands is hooking.** What [your stick on theirs](#your-stick-on-theirs-and-your-hand-on-the-puck) costs comes later, in What it costs.
+**A hand on their stick is at least a holding minor in all six books, and a stick on their hands is hooking.**
 
 ### The techniques that use your body, your feet or your hands
 
@@ -265,9 +265,10 @@ There is no single correct draw. There are seven or eight, and the good centres 
 
 ```facts
 Never: Lean on the man before the puck lands; no book in this document makes that free
-Rule: Where body checking is banned you cannot go through the man — USA Hockey 604(a) at 12 & under, in all girls'/women's and non-check adult classifications; Hockey Canada 7.3 at U13 and below, female and Member-approved divisions; CARHA 49(a) in every game
+Rule: Where body checking is banned you cannot drive through the man — USA Hockey 604(a) at 12 & under, in all girls'/women's and non-check adult classifications; Hockey Canada 7.3 at U13 and below, female and Member-approved divisions; CARHA 49(a) in every game
 Read: Try the "lose it forward" play at the neutral-zone dots, where there is space behind the other centre — go round the other centre, not through them
 Rule: ⚠️ **Never skate through the other centre to reach a puck pushed past them** — in women's hockey IIHF 101.1 and PWHL 52.1 oblige you to skate around a stationary player — at least a minor, a major brings a game misconduct, and a PWHL match is possible
+Rule: In any game, knocking the other centre out of your path to a puck pushed past them is interference (NHL and IIHF 56.1) — at least a minor, and a violent one can be a major and game misconduct, or worse
 Never: Use "lose it forward" in your own end
 Rule: Batting the drop is legal with the stick; a taker who tries to win the draw by batting it with the hand takes a minor (NHL and IIHF Rule 67.2)
 ```
@@ -275,30 +276,26 @@ Rule: Batting the drop is legal with the stick; a taker who tries to win the dra
 The remaining four put your body, feet or hands into the draw, and each has a rule attached. Three are here; your feet have a section of their own after them.
 
 - **Going through the man.** Lean into your opponent once the puck is on the ice, taking the ice and the puck together. **Both halves are the rule:** *lean, not drive* — contact is allowed only *"in the course of playing the puck after the face-off has been completed"* (Rule 76.7) — and *once it is down, not as it falls*. ⚠️ **Wait for the puck to land: under Hockey Canada a body timed to the drop is a body before the faceoff is complete.** Contact before then is a violation and can cost a minor — mandatory under USA Hockey, Hockey Canada and CARHA. In a CARHA game, and wherever body checking is barred, play the puck and avoid the man.
-- **The "lose it forward" play.** Push the puck *forward* past the other centre and go after it. Best at the neutral-zone dots, where there is space behind them and little danger if it fails; in the offensive zone it can beat a centre committed to pulling back; in your own end it is a bad idea. ⚠️ **Go round the other centre, not through them** — they are now between you and the puck, and in women's hockey skating round is the rule, not a preference. **Chase the puck, not the ice they are standing on.** In women's hockey stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct.
+- **The "lose it forward" play.** Push the puck *forward* past the other centre and go after it. Best at the neutral-zone dots, where there is space behind them and little danger if it fails; in the offensive zone it can beat a centre committed to pulling back; in your own end it is a bad idea. ⚠️ **Go round the other centre, not through them** — they are now between you and the puck, and in women's hockey skating round is the rule, not a preference. In any game, knocking them out of your path is at least an interference minor, and a violent one can be a major and game misconduct, or worse, in any book. **Chase the puck, not the ice they are standing on.** In women's hockey stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct.
 - **Batting it out of the air.** Advanced, and legal with the **stick**: several coaching sources describe attacking the puck mid-drop. Never with the hand: under the NHL and IIHF a taker who bats it with the hand takes a minor. Time it off the linesperson's release, not the ice.
-
-What [contact before the drop](#contact-before-the-drop), [going through the other centre](#going-through-the-other-centre) and [a hand on the puck](#your-stick-on-theirs-and-your-hand-on-the-puck) cost comes later, in What it costs.
 
 #### Using your feet — the puck, the man, and the goal
 
 **Kick the puck back to a teammate, or open your skate as a backstop so a tied-up puck squirts the right way, only where your book allows it — not under the IIHF, so never in British hockey.** ⚠️ **Send the skate at the puck, never at the man** — the dot puts two opponents' skates inches apart, and kicking the man sits near the top of every book's scale. It is a match penalty in five of the six books, and under the IIHF a major with an automatic game misconduct at the referee's discretion (49.3). Under USA Hockey even a non-kicking push-off with the skate is a major and game misconduct (627(a)).
 
 ```facts
+Never: Send the skate at the man — kicking or trying to kick an opponent is a match in five of six books; under IIHF 49.3, a discretionary major and game misconduct. Kicking permission is for the puck only
+Action: Before you build an offensive-zone draw around the kick-back, find out which book your league runs — the tip behind it is a goal in only three of the six
 Rule: Kicking the puck back is legal in the NHL and PWHL and a faceoff violation under IIHF 76.3(VI), so it is not available to you in Britain at any level (IIHF Rule 76.3(VI), both editions)
 Rule: USA Hockey, Hockey Canada and CARHA write no faceoff bar on kicking the puck, so the technique rests on a general kicking rule rather than a faceoff one — USA Hockey 627(c), Hockey Canada 6.10(a), CARHA 69
 Rule: A kick-back that gets tipped in is no goal under USA Hockey 627(c) or Hockey Canada 6.10(b), which disallow a goal off a deflected kick, or under CARHA Rule 60(c) — no goal where "after being kicked, the puck deflects off any player or stick into the net"
 Rule: Hockey Canada scopes its own no-goal rule twice — 6.10's preamble exempts a puck that "deflects off a player's skate, without a deliberate kicking action", and 6.10(b) excepts "a defending player kick[ing] the puck into their own goal", which at your own end zone draw is your net
 Rule: Under USA Hockey a skate does not need a kicking motion to be an offence — 627(a) is a major plus a game misconduct for using the skate to "push off" an opponent, which its Note 2 defines as skate contact with an opponent "in a non-kicking motion"
-Never: Send the skate at the man — kicking or trying to kick an opponent is a match in five of six books; under IIHF 49.3, a discretionary major and game misconduct. Kicking permission is for the puck only
-Action: Before you build an offensive-zone draw around the kick-back, find out which book your league runs — the tip behind it is a goal in only three of the six
 ```
 
 **Check your book before you learn it.** It is legal in the NHL, and in the PWHL, whose Rule 78 writes no skate bar. ⚠️ **Under the IIHF it is a violation, so it is not available in British hockey at any level**: Rule 76.3(VI) catches a centre who *"wins the face-off by using the skates"*. USA Hockey, Hockey Canada and CARHA write no faceoff bar — Rules 613, 6.2 and 57 were each read in full — so there it rests **by inference** on each book's general kicking permission (USA Hockey 627(c), Hockey Canada 6.10(a), CARHA 69).
 
 **The tip off a kick is a goal in only three books.** Under the NHL, the IIHF and the PWHL a kicked puck that deflects in off a stick counts (Rule 49.2). USA Hockey (627(c), with Casebook Situations 4 and 5), Hockey Canada (6.10(b)) and CARHA (60(c), not 69) disallow it — so there the kick has to end in a teammate's possession and a clean shot. Find out your book before you plan a tip off a draw. [Passing and Receiving](../technique/passing_and_receiving.md) carries the same split for a loose puck in your feet.
-
-What [a skate at the man](#a-skate-at-the-man) costs comes later, in What it costs.
 
 ---
 
@@ -569,7 +566,7 @@ Action: Call off the glass and out of your zone when you are tired, pinned, or a
 
 **Who fetches a rim that dies depends on your book, because of the trapezoid.** Under NHL and IIHF rules your goalie may play a puck behind the goal line only inside the trapezoid, so a rim that dies in your corner is a defenceman's to fetch, with the forecheck coming. ⚠️ **That retrieval is worse than an ordinary one: the forechecker was stationary at the whistle and arrives at full speed.** ⚠️ **So never turn your back to anyone coming at you, and never duck** — skates parallel to the boards, forearm and hip to the wall (not the point of the shoulder), head up and chin off the chest ([Body Contact and Battles](../technique/body_contact_and_battles.md)).
 
-**USA Hockey, Hockey Canada and CARHA write no trapezoid**, so under those three books a rim that dies in the corner is your goalie's to fetch — but they have to play it, not cover it: freezing it behind the goal line with their body out of the crease is a minor in all three. A PWHL goalie should play as if it binds. The KHL is commonly said to have one too; no KHL rulebook was available to check. What [a goalie freezing it](#freezing-the-puck-and-shooting-it-out) costs comes later, in What it costs.
+**USA Hockey, Hockey Canada and CARHA write no trapezoid**, so under those three books a rim that dies in the corner is your goalie's to fetch — but they have to play it, not cover it: freezing it behind the goal line with their body out of the crease is a minor in all three. A PWHL goalie should play as if it binds. The KHL is commonly said to have one too; no KHL rulebook was available to check.
 
 **🇬🇧 In Britain, keep your goalie inside it.** Nothing in the Elite League's Casebook switches it off; the Casebook adopts the 2026-27 IIHF book. England Ice Hockey's *Rules & Regulations* 22.3 (2024-25) call it *"not currently enforced"*, but that regulation's scope and standing are unsettled, and the In-House Rules never mention it and say *"[u]nless otherwise stated, all rules will be enforced in line with the IIHF Rule Book"*. Play it as though it binds: a rim that dies in the corner is yours to fetch.
 
@@ -595,8 +592,6 @@ Rule: In Britain checking is set by your competition's Rules of Competition, not
 🇬🇧 **In Britain the answer is in a competition regulation, not a rule book.** The **IHUK Rules of Competition 2026-27** make junior hockey non-checking at U10 and U12 and checking at U14, U16 and U19 — *"Bodychecking is NOT allowed in U10 matches."* NIHL Division 1 and 2 are checking; every WNIHL women's division is non-checking. ⚠️ **Those four settle no other league** — not the EIHL, NIHL National, BUIHA, the PNIHL, the SNL or other Scottish hockey, and the Elite League's Casebook does not mention body checking. ⚠️ **Ask your league before you hit anyone, and until you have an answer, do not.**
 
 In women's hockey, chasing that rim, ⚠️ **do not use the boards on her:** IIHF Rule 101.1 says players *"are not allowed to use the boards to make contact with an opponent to eliminate her from the play, push her into the boards, or pin her along the boards"*. The PWHL lets a forechecker angle her off the puck skating the same way, but not extend *"an arm, shoulder, or hip after angling an opponent"*, or step or glide into her (52.1). [Body Contact and Battles](../technique/body_contact_and_battles.md) has the league-by-league table, and [UK and England Rules](../foundation/uk_rules.md) quotes the four British regulations.
-
-What [a hit on the player fetching it](#a-hit-on-the-player-fetching-a-rim) costs comes later, in What it costs.
 
 ### Keeping it simple enough to work
 
@@ -671,7 +666,7 @@ Putting your stick down first shows your blade angle first, which you would rath
 >
 > **The Elite League is the exception.** The In-House Rules never name it, and the **Motorpoint EIHL Casebook 26-27** writes no Rule 76, while its Preamble makes *"the official 2026 - 2027 IIHF Rulebook and IIHF Situation Handbook"* the ruling *"[f]or all rules not mentioned"*. So an EIHL draw keeps IIHF 76.4: the defending centre's stick down first at the eight spots, the visitor's at centre ice, and only the toe in the white. **Do not carry the In-House "either centre" permission into an Elite League game** — it is the defending centre who loses by it. *(The League issues rule updates in season, so ask whether a Rule 76 section has since been added.)*
 
-**Never refuse to put your stick down to wait the other centre out** — every book can take you out of the dot for it. What [refusing](#losing-your-centre-and-the-bench-minor) costs comes later, in What it costs.
+**Never refuse to put your stick down to wait the other centre out** — every book can take you out of the dot for it.
 
 ### Positioning requirements
 
@@ -736,15 +731,13 @@ Rule: Lining up offside for the draw is a violation in all six books — NHL and
 - **Physical contact with an opponent** before the drop — a violation whoever makes it. **Leaning on the other centre can get you thrown off the dot, and a minor as well.** ⚠️ **Under USA Hockey, Hockey Canada and CARHA the taker's minor is mandatory.** A winger who leans on the opponent beside them is not given the faceoff minor, but it is still a violation — and it is **your centre** who is removed from the draw for it (Hockey Canada 6.2(a), CARHA 57(a)). [Winger](../positions/winger.md) sets that out for the player it lands on.
 - **Lining up offside** for the draw. ⚠️ **All six books make it a violation, and in every one but the superseded IIHF 2025/26 edition your centre is replaced** — NHL 76.3(v), IIHF 76.3(V), PWHL 78.3(v), Hockey Canada 6.2(a), CARHA 57(a), USA Hockey 613(d). Line up onside, everywhere.
 
-What [pre-drop contact](#contact-before-the-drop) costs comes later, in What it costs.
-
 #### Being late to the dot — the one softening, and who writes it
 
 **Be at the dot on time — the safe play is the same under every book, and it is free.**
 
 ```facts
 Rule: Being late to the faceoff location, and therefore offside for the draw, is warned once in the game under NHL and IIHF 76.7 — the warning going to the team and its coach — and the rule says the centre "is not ejected from the face-off"
-Rule: Timing your arrival is not the same as being late — a centre who "attempts to arrive at the face-off spot just as the five seconds elapses in an attempt to gain an advantage" is removed and replaced under NHL and IIHF 2026/27 Rule 76.4, unless the draw follows an icing
+Rule: Timing your arrival is not the same as being late — a centre who "attempts to arrive at the face-off spot just as the five seconds elapses in an attempt to gain an advantage" is removed and replaced under NHL and IIHF 2026/27 Rule 76.4 and PWHL 78.4, unless the draw follows an icing
 Rule: Once your team has had its one lateness warning, being slow to the dot again is a bench minor for delay of game — "Slow Proceeding to Face-off Location" (NHL and IIHF Rule 76.7)
 Rule: USA Hockey 613(d) and CARHA 57(c) let the official order a player facing off who fails to take their proper position when directed "replaced", first time, at discretion; a USA Hockey slow line change to the dot is warned, then a bench minor (Casebook 613 Situation 13)
 Rule: Hockey Canada reaches the same place in two steps, which is a reading of two rules together and not one sentence — 6.5(a) names "late arrival" a faceoff violation and 6.2(d) removes the taker from that draw; 6.5(a)'s warning is Junior divisions after an icing only
@@ -755,7 +748,7 @@ Action: Be at the dot on time — the safe play is the same under every book, an
 
 **Under the NHL and the IIHF, players simply late to the faceoff location**, and therefore offside for the draw, get **one warning per game**, to the team and its coach, and Rule 76.7 says *"the offending team's center is not ejected from the face-off."* Any later instance is a bench minor, *"Delay of Game – Slow Proceeding to Face-off Location."* It shields the centre from their teammates' lateness, not their own: if they are *"simply slow getting to the face-off spot"*, the puck is dropped without them (Rule 76.4).
 
-**Timing your arrival to the clock is not the same as being late.** NHL Rule 76.4 removes a centre who *"attempts to arrive at the face-off spot just as the five seconds elapses in an attempt to gain an advantage to win the face-off"*, and the IIHF 2026/27 edition prints the same sentence (2025/26 warned the centre instead). Both carve out one draw: after an icing they are warned rather than removed. So the free attempt under "The icing exception" below is the only one either book gives you. ⚠️ **If you time your arrival to the clock on any other draw, you are thrown off the dot.**
+**Timing your arrival to the clock is not the same as being late.** NHL Rule 76.4 removes a centre who *"attempts to arrive at the face-off spot just as the five seconds elapses in an attempt to gain an advantage to win the face-off"*, and the IIHF 2026/27 edition and PWHL 78.4 print the same sentence (IIHF 2025/26 warned the centre instead). All three carve out one draw: after an icing they are warned rather than removed. So the free attempt under "The icing exception" below is the only one any of them gives you. ⚠️ **If you time your arrival to the clock on any other draw, you are thrown off the dot.**
 
 **Elsewhere, a slow centre can be replaced.** ⚠️ **USA Hockey 613(d) and CARHA 57(c) let the official replace that centre the first time:** where a player facing off *"fails to take their proper position immediately when directed"* (CARHA: *"the proper position"*), the official may order them replaced for that draw, at discretion. A team merely slow changing to the dot is different: USA Hockey's Casebook (613 Situation 13) warns the bench, then gives a bench minor, and leaves the centre in. **Hockey Canada** reaches the same place through two rules read together: 6.5(a) names *"late arrival"* a faceoff violation, and 6.2(d) has the official remove the taker from the draw; 6.5(a)'s warning is for Junior divisions after an icing only.
 
@@ -766,19 +759,19 @@ Action: Be at the dot on time — the safe play is the same under every book, an
 **"Get low, chest over the puck" can put your head where the rulebook does not want it.** Two centres both doing it well finish with their heads close together over the dot. **Get the depth from your knees and hips, not by pushing your head out** — the low stance is loaded, not leaning. Under USA Hockey any helmet clash is head contact — at least a minor plus a misconduct, and a major and game misconduct if careless, intentional or reckless, and if it is reckless, plan on a match (620, 602(a)). And if the other centre leans into you, move back when the linesperson tells you both to.
 
 ```facts
+Never: Lean in until your head is against the other centre's — heads "almost ear to ear" is IIHF Situation 76.42, and both editions of the handbook say it should not be allowed
+Action: Get your chest over the puck, not your head over the dot — depth comes from the knees and hips, and ear-to-ear is the position the IIHF handbook tells linespersons to break up
+Never: Lead with your helmet into the other centre — plan on it being called head-butting, a major and game misconduct or a match in most books
 Rule: Helmet-to-helmet contact with the other centre before the drop is named in the rulebook as a faceoff violation (IIHF 76.7(III), both editions); the 2025/26 book gave it a first warning, the 2026/27 book deleted that warning
 Rule: The IIHF Situation Handbook 2026/27 tells the linesperson to "immediately eject the center that is responsible for the helmet to helmet contact", and to eject both where they cannot tell who caused it — from the draw; a contact minor can follow (76.7); the 2025/26 book said warn (Situation 76.43)
-Never: Lean in until your head is against the other centre's — heads "almost ear to ear" is IIHF Situation 76.42, and both editions of the handbook say it should not be allowed
 Rule: A centre who will not move back when the linesperson breaks up an ear-to-ear stance is warned under the IIHF 2025/26 Situation Handbook and removed from the faceoff under the 2026/27 edition (Situation 76.42)
 Rule: Under the In-House Rules — the Home Countries bar the Elite League — do not plan on that first warning: their Introduction names the 2025/26 edition, but their own Rule 76 replaces the centre for every violation bar a post-icing draw, and helmet-to-helmet contact is one (Section 10, Rule 76)
-Action: Get your chest over the puck, not your head over the dot — depth comes from the knees and hips, and ear-to-ear is the position the IIHF handbook tells linespersons to break up
 Rule: Under USA Hockey a helmet clash at the dot is head contact, however little force is behind it: at least a minor plus a misconduct, and a major and game misconduct if careless, intentional or reckless, and if reckless plan on a match (620; 602(a); Casebook 620 Situation 1)
-Never: Lead with your helmet into the other centre — plan on it being called head-butting, a major and game misconduct or a match in most books
 ```
 
 **The IIHF Situation Handbook takes the position twice.** **Situation 76.42** — heads *"side by side, almost ear to ear"* — says *"[t]his should not be allowed. The Linesperson should instruct both players to move back"*; a refusal was *"warned"* in the 2025/26 handbook and is *"removed from the face-off"* in the 2026/27 one. **Situation 76.43** — *"helmet to helmet contact"* — moved from *"immediately warn the center that is responsible"* (and *"warn both centers"* where it cannot be told) to *"immediately eject"* the centre (or *"eject both centers"*).
 
-**Never lead with your helmet:** ⚠️ **plan on it being called head-butting — a major and game misconduct or a match in most books.** What [your head at the dot](#your-head-at-the-dot) costs comes later, in What it costs.
+**Never lead with your helmet:** ⚠️ **plan on it being called head-butting — a major and game misconduct or a match in most books.**
 
 ### The rule everybody gets wrong
 
@@ -810,7 +803,7 @@ Action: Tell your linemates: skates and stick behind your own hash mark, skates 
 
 ### The second violation
 
-**After a first violation, nobody moves early, nobody leans, nobody reaches.** The replacement taker should keep it to a clean tie-up: **lift or press their stick with yours and then play the puck — never a hand on their stick or your stick on their hands, and never hook it or hold it down**, because each of those is a minor of its own. ⚠️ **Under Hockey Canada, let the linesperson clear the dot before you commit**, and take the re-drop straight. A second violation by your team on that draw is a bench minor under the NHL, the PWHL and the IIHF, a minor on the offender under USA Hockey, and a possible minor under Hockey Canada and CARHA. What [a second violation](#losing-your-centre-and-the-bench-minor) costs in each book comes later, in What it costs.
+**After a first violation, nobody moves early, nobody leans, nobody reaches.** The replacement taker should keep it to a clean tie-up: **lift or press their stick with yours and then play the puck — never a hand on their stick or your stick on their hands, and never hook it or hold it down**, because each of those is a minor of its own. ⚠️ **Under Hockey Canada, let the linesperson clear the dot before you commit**, and take the re-drop straight. A second violation by your team on that draw is a bench minor under the NHL, the PWHL and the IIHF, a minor on the offender under USA Hockey, and a possible minor under Hockey Canada and CARHA.
 
 ```facts
 Rule: Two faceoff violations by the same team on the same draw is a bench minor under NHL and IIHF Rule 76.7
@@ -855,7 +848,7 @@ Never: Put your hands or your body on the puck in the scrum. Tie up their stick 
 
 Keeping your hands and body off the puck is the rule itself for the two takers; for everyone else it is advice. What **is** legal is tying up the other centre's stick **with yours** — lifting or pressing it, never hooking it, holding it down or putting a hand on it. **In every book the same act keeps you clear: catch it and drop it straight down.**
 
-**Everyone else may catch the puck — the takers may not.** NHL and IIHF 67.2 permit a player *"to catch the puck out of the air but must immediately place it or knock it down to the ice."* ⚠️ **At a draw that is switched off for the two takers, and for nobody else**: Rule 76.5 bars them from playing the puck with a hand *"until such time as a third player (from either team) has at least touched the puck."* The bar is on playing it with the hand at all. Closing your hand on the puck is a minor under the NHL, the IIHF and the PWHL, and **in your own crease a hand or body on the puck can be a penalty shot — with your net empty, treat it as an awarded goal.** What [a hand on the puck](#your-stick-on-theirs-and-your-hand-on-the-puck) costs comes later, in What it costs.
+**Everyone else may catch the puck — the takers may not.** NHL and IIHF 67.2 permit a player *"to catch the puck out of the air but must immediately place it or knock it down to the ice."* ⚠️ **At a draw that is switched off for the two takers, and for nobody else**: Rule 76.5 bars them from playing the puck with a hand *"until such time as a third player (from either team) has at least touched the puck."* The bar is on playing it with the hand at all. Closing your hand on the puck is a minor under the NHL, the IIHF and the PWHL, and **in your own crease a hand or body on the puck can be a penalty shot — with your net empty, treat it as an awarded goal.**
 
 ### When your centre is thrown off the dot — and the edition that changed where
 
@@ -957,7 +950,7 @@ Rule: A puck sent the length of the ice directly off the draw is not icing in an
 - **The IIHF writes neither carve-out**, but it times the count: icing *"shall be determined at the instant the penalty expires"*, and *"[t]he action of the penalized Player remaining in the penalty box will not alter the ruling"* (81.6, both editions). ⚠️ **So kill a lone minor and ice it after your clock has run out, and it is icing — even with the player still in the box.** On a 5-on-3, after the first expiry you are 4-on-5 and may still ice it; and a puck released before your penalty expires is never icing.
 - **Hockey Canada** counts *"at the instant the puck is shot"* (6.7(b)). Its Note 1 says a team is no longer shorthanded *"once the penalty time expires"* — never quote that alone: Interpretation 3 counts the returning player on the ice *"for the purpose of equal numbers (or not)"*. **CARHA** 65(d) counts at the shot too, with no age or major-penalty carve-out.
 
-[Special Teams](special_teams.md) and [Rules Primer](../foundation/rules_primer.md) set the exemption out book by book. **Seat the substitute in time:** an empty penalty box is a bench minor under the NHL, the IIHF and the PWHL. What [an empty box](#the-penalty-box-time-outs-and-line-changes) costs comes later, in What it costs.
+[Special Teams](special_teams.md) and [Rules Primer](../foundation/rules_primer.md) set the exemption out book by book. **Seat the substitute in time:** an empty penalty box is a bench minor under the NHL, the IIHF and the PWHL.
 
 ### 4-on-4 and 3-on-3
 
@@ -1065,8 +1058,6 @@ Rule: IIHF 81.4 adds a fourth, "a Player with a broken skate", which IIHF 82.1 d
 - **The goalie may not take a faceoff** (Rule 76.1), and a team that pulled its goalie may still substitute after an icing to put the goalie back (81.4) — one of the NHL's **three** exceptions to the no-change rule, with an injured player and a penalty that changes on-ice strength.
 - **Do not send a player over the boards on a broken skate without the official's say-so.** ⚠️ **The IIHF book contradicts itself here:** its 81.4 adds a change for *"a Player with a broken skate"*, its 82.1 lists only the three, both editions read that way, and no Situation grants it. Nothing British amends it: no British rule book mentions a broken skate. A refused change can cost a bench minor if your team has already been warned.
 
-What [a refused change](#the-penalty-box-time-outs-and-line-changes) costs comes later, in What it costs.
-
 ![](diagram:faceoff-goalie-pulled)
 
 ### When the other centre keeps beating you
@@ -1082,7 +1073,7 @@ Never: Cheat back against a centre who cheats the drop — hold your timing; und
 Never: Answer a lean with a lean — contact before the drop is a violation whoever makes it, and a minor, mandatory under USA Hockey, Hockey Canada and CARHA
 ```
 
-**When that centre cheats the drop — moving early, or leaning in — do not cheat back.** Hold your timing, watch the hand, and press their stick as the puck lands so their jump wins nothing. Never answer a lean with a lean. Under the NHL, the IIHF and the PWHL moving early is a violation on whichever centre does it, and Hockey Canada names it as one; a lean is pre-drop contact, which can cost a minor — mandatory under USA Hockey, Hockey Canada and CARHA. What [cheating back](#contact-before-the-drop) costs comes later, in What it costs.
+**When that centre cheats the drop — moving early, or leaning in — do not cheat back.** Hold your timing, watch the hand, and press their stick as the puck lands so their jump wins nothing. Never answer a lean with a lean. Under the NHL, the IIHF and the PWHL moving early is a violation on whichever centre does it, and Hockey Canada names it as one; a lean is pre-drop contact, which can cost a minor — mandatory under USA Hockey, Hockey Canada and CARHA.
 
 ---
 
@@ -1155,11 +1146,11 @@ Rule: A head-butt that injures is a match under NHL 47.4, PWHL 47.3 and Hockey C
 
 The rulebook names the head too. IIHF Rule 76.7(III) makes helmet-to-helmet contact before the drop a faceoff violation; the 2025/26 edition gave a *"first 'face-off' violation warning"*, and the 2026/27 edition deleted it. ⚠️ **So the free first head bump is gone**: the 2026/27 book has the centre responsible replaced (76.7), and 🇬🇧 under the In-House Rules it costs your centre too (not after an icing). It is also pre-drop contact, so the contact minor above sits on top of it.
 
-**Keep your head off theirs, because head contact can raise that minor.** ⚠️ **Under USA Hockey a helmet clash is head contact, however little force is behind it:** at least a minor plus a misconduct (620(a)), a major and game misconduct if reckless, intentional or careless (620(b)), and if it is reckless or meant to injure, plan on a match (620(c), 602(a)). The Casebook's answer on force is that the only thing that matters is whether the head was contacted (620 Situation 1).
+**Keep your head off theirs: head contact can raise the pre-drop contact minor.** ⚠️ **Under USA Hockey a helmet clash is head contact, however little force is behind it:** at least a minor plus a misconduct (620(a)), a major and game misconduct if reckless, intentional or careless (620(b)), and if it is reckless or meant to injure, plan on a match (620(c), 602(a)). The Casebook's answer on force is that the only thing that matters is whether the head was contacted (620 Situation 1).
 
 Under **Hockey Canada**, minor and female hockey's Head Contact rule *"supersedes any other rules"* and makes a helmet clash a minor if accidental, a double minor if intentional, and a game ejection for a third head-contact penalty in one game (7.6(a)). The referee can make it a major and game misconduct for violence, and must if an accidental one injures (7.6(b)). In Junior and Senior a minimal clash is still a minor, called as roughing or another penalty, a moderate one a minor plus a misconduct, and a highly violent one a major and game misconduct — as is any foul that leaves them with a head injury from the ice, glass or boards (7.7). In either, ⚠️ **it is a match if they could not protect themselves or it was meant to injure** (7.6(c), 7.7(c)). Under **CARHA** an accidental clash is head contact at the same minor, an intentional one a double minor or a major and game misconduct (50(a), (b)), and an attempt to injure a match (50(c)).
 
-**Never lead with your helmet into the other centre: plan on it being called head-butting.** ⚠️ **It is a major and game misconduct under the NHL (47.3), the PWHL (47.2) and USA Hockey (619(a)), a match under CARHA (48(b))**, and at least a double minor under Hockey Canada, whose own example is helmet-to-helmet contact. Under the IIHF the referee can give even an attempt a double minor (47.2), and may make one that recklessly endangers an opponent a major and game misconduct (47.3) without any injury (Situation 47.1); one of the Elite League Casebook's own double-minor examples is forcing your helmet against an opponent's, which is the push at the dot. If it injures, it is a match under the NHL (47.4), the PWHL (47.3) and Hockey Canada (7.1(c)), which also makes one with force a match; under USA Hockey, plan on a match if it is reckless, injury or not (619(b), 602(a)).
+**Never lead with your helmet into the other centre.** ⚠️ **Plan on a head-butting call: a major and game misconduct under the NHL (47.3), the PWHL (47.2) and USA Hockey (619(a)), a match under CARHA (48(b))**, and at least a double minor under Hockey Canada, whose own example is helmet-to-helmet contact. Under the IIHF the referee can give even an attempt a double minor (47.2), and may make one that recklessly endangers an opponent a major and game misconduct (47.3) without any injury (Situation 47.1); one of the Elite League Casebook's own double-minor examples is forcing your helmet against an opponent's, which is the push at the dot. If it injures, it is a match under the NHL (47.4), the PWHL (47.3) and Hockey Canada (7.1(c)), which also makes one with force a match; under USA Hockey, plan on a match if it is reckless, injury or not (619(b), 602(a)).
 
 ### Your stick on theirs, and your hand on the puck
 
@@ -1199,7 +1190,7 @@ Hockey Canada narrows its no-goal rule twice: a puck deflecting off a skate *"wi
 
 ### Going through the other centre
 
-**Go round the other centre, never through them, and where checking is barred, play the puck and avoid the man.** ⚠️ **In women's hockey stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct; in the men's game it can be called interference.**
+**Go round the other centre, never through them, and where checking is barred, play the puck and avoid the man.** ⚠️ **In women's hockey stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct; in any game it can be called interference — at least a minor, and a violent one can be a major and game misconduct, or worse.**
 
 Driving through the centre on a lose-it-forward: in women's hockey IIHF Rule 101.1 (both editions) says that a stationary player *"is entitled to that area of the ice"* and *"the opponent is obliged to skate around"* her. It makes *"[a]ny move by a Player to step or glide into an opposing Player"* at least a minor, up to *"[a] major penalty (5') and automatic game misconduct penalty"*. In Britain the In-House Rules, Section 11, eject any player given a major in women's hockey; PWHL Rule 52.1 says the same as the IIHF, and a major there ejects you too (52.5). In the men's game it is interference: NHL 56.1 gives a player without the puck *"the ice he is standing on"*, and IIHF 56.1 bars obstructing an opponent *"without possession of the puck"*.
 
@@ -1331,7 +1322,7 @@ Under NHL and IIHF Rule 87.1 (PWHL 89.1) there is **no timeout after a faceoff v
 - **Putting a hand or your body on the puck in the scrum.** Win it with your **stick**. If you took the draw, keep your hand off the puck until a third player has touched it. Falling on it is a minor, and so, usually, is covering it — ⚠️ **inside your own crease it can be a penalty shot, and with your net empty treat it as an awarded goal**; most books decide by where the puck is, Hockey Canada by where you are as well.
 - **Not choosing your dot, where you have one.** Ask early, and take your centre's strong side or the side your one-timer shoots from. NHL and IIHF rules give the choice after an icing and at the start of a power play; USA Hockey gives none; Hockey Canada gives it only in Junior and Senior, to a team that names the dot before the line change starts.
 - **Joining a post-whistle scrum in the offensive zone.** Once the whistle goes, stay outside the circle. Cross its outer edge and the draw moves to the neutral zone — you have thrown away the zone.
-- **Going through the other centre instead of round them on a "lose it forward".** Skate *around* them — they are now between you and the puck, and going round is legal everywhere. Driving through them can be called interference wherever you play, and where checking is barred an illegal check as well. In **women's hockey** stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct (IIHF Rule 101.1; PWHL Rules 52.1 and 52.5).
+- **Going through the other centre instead of round them on a "lose it forward".** Skate *around* them — they are now between you and the puck, and going round is legal everywhere. Driving through them can be called interference wherever you play — at least a minor, and a violent one can be a major and game misconduct, or worse — and where checking is barred an illegal check as well. In **women's hockey** stepping or gliding into a stationary player is at least a minor, and a major brings an automatic game misconduct (IIHF Rule 101.1; PWHL Rules 52.1 and 52.5).
 - **Sending your skate at the man instead of the puck.** Every book's kicking permission is for the *puck*. ⚠️ **Kicking at an opponent sits at the top of every book's scale:** a match penalty under the NHL, the PWHL, USA Hockey (with a likely multi-game suspension), Hockey Canada and CARHA, and under the IIHF a major at the referee's discretion with an automatic game misconduct. USA Hockey also gives a major and a game misconduct for using your skate to push off an opponent. Under the IIHF book British hockey plays at every level, do not win the draw with a skate at all.
 - **Practising only your strong side.** Spend the reps on your weak side and your worst technique — that is where the points are.
 

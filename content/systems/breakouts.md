@@ -124,7 +124,7 @@ None of that makes clearing wrong. It makes clearing a **decision** rather than 
 
 **The habit to build:** default to the controlled exit, take the clear when the read says take it. Most amateur teams have this backwards — they clear by default and attempt control only when the ice is already empty.
 
-**What it costs.** ⚠️ **Over the glass is not a clear.** A puck put straight out of play from your own zone is a delay-of-game minor under the NHL, IIHF and PWHL, and a deliberate one is a minor in every book ([Over the glass](#over-the-glass), in What it costs, below).
+**Off the glass, never over it.** ⚠️ **Over the glass is not a clear.** A puck put straight out of play from your own zone is a delay-of-game minor under the NHL, IIHF and PWHL, and a deliberate one is a minor in every book ([Over the glass](#over-the-glass), in What it costs, below).
 
 **After an icing, under the NHL, IIHF and PWHL, you get no rest.** NHL and IIHF Rule 81.4 (PWHL 83.4) let a team that ices change only for a goalie returning from an extra-attacker pull, an injured player, or a penalty that changes the on-ice strength. IIHF 81.4 adds a player with a broken skate, though its 82.1 does not, so do not count on it. **Rule 87.1** (PWHL 89.1) denies it a time-out. So a clear taken *for* the change buys a defensive-zone faceoff with the same tired legs. **USA Hockey and CARHA impose neither restriction.** Hockey Canada's no-change rule applies only in U18AAA, Junior and, at the Member's option, Senior (**6.7(d)**), and even there **6.7(d)(iii)** allows either team its time-out. In every other Hockey Canada category the clear does buy the change.
 
@@ -304,7 +304,7 @@ The defenceman carries the puck themselves, skating behind the net and up the fa
 - **The risk:** You are carrying the puck through the middle-ish of your own zone with your back briefly to the play. If you're caught, you're caught below your own goal line with the puck.
 - **How it's defeated:** A second forechecker holding the far side — precisely what F2 does in a 2-1-2 — turns a wheel into a trap. A forechecker who takes the "back door" route around the net rather than chasing you also kills it. The counter to being caught mid-wheel is the reverse, below.
 
-**What it costs.** ⚠️ **Under every book, a partner who slides across into the forechecker's path commits interference, and the minor is the floor:** depending on the book, it can go to a major, a game misconduct or a match penalty. Each book's ladder comes later, in [What it costs](#screening-the-net-front-what-each-book-allows). **In non-checking hockey, hold your lane:** stepping out of it into a forechecker is body-checking under Hockey Canada Rule 7.3, and charging or body contact under CARHA Rules 52(a) and 49(a).
+**As the partner, never slide across into the forechecker's path.** ⚠️ **That is interference in every book, and the minor is the floor:** depending on the book, it can go to a major, a game misconduct or a match penalty. Each book's ladder comes later, in [What it costs](#screening-the-net-front-what-each-book-allows). **In non-checking hockey, hold your lane:** stepping out of it into a forechecker is body-checking under Hockey Canada Rule 7.3, and charging or body contact under CARHA Rules 52(a) and 49(a).
 
 ---
 
@@ -772,15 +772,15 @@ Key: A press by definition leaves space behind it — one clean pass through the
 Risk: A turnover under a press is an immediate high-danger chance
 Priority: First layer first — don't hunt the killer stretch pass. Beat the first forechecker with a short, safe play, and the space behind will still be there two seconds later
 Options: Glass and out is completely defensible — take the icing if you have to, because an icing costs you a defensive-zone draw and a press turnover costs you a goal
-Rule: After your own icing the NHL, IIHF and PWHL bar the change (81.4; PWHL 83.4) — but the bar lifts to replace an injured player, to put a pulled goalie back, or when a penalty changes on-ice strength; never for a tired line
-Rule: The post-icing no-change bar is not universal: USA Hockey's Rule 624 and CARHA's Rule 65 attach no substitution restriction to an icing at all, and Hockey Canada's 6.7(d) applies its 'no-change on icing' rule only in U18AAA, Junior, and in Senior at the Member's option
+Rule: After your own icing the NHL, IIHF and PWHL bar the change (81.4; PWHL 83.4), Hockey Canada only in U18AAA, Junior and Member-option Senior (6.7(d)) — but it lifts for an injured player, a returning pulled goalie, or a strength-changing penalty (any penalty in Hockey Canada); never a tired line
+Rule: Not every book bars the change after an icing — USA Hockey and CARHA write no bar
 ```
 
 **How to break it:**
 - **The reward is enormous.** A press by definition leaves space behind it. One clean pass through the first layer and you are attacking an outnumbered defence.
 - **The risk is equally enormous.** A turnover under a press is an immediate high-danger chance.
 - **First layer first.** Don't hunt the killer stretch pass. Beat the first forechecker with a short, safe play, and the space behind will still be there two seconds later.
-- **Glass and out is completely defensible.** Under a press, getting the puck the length of the ice away and forcing them to reset is a win. Take the icing if you have to — a press turnover costs you a goal, and an icing costs you a defensive-zone draw and, **under the NHL, the IIHF and the PWHL, your line change** (Rule 81.4; PWHL 83.4). ⚠️ **That bar is neither universal nor absolute:** where it binds, a hurt teammate can still come off and a tired one cannot, and some books do not bar the change at all — section 1 sets out which.
+- **Glass and out is completely defensible.** Under a press, getting the puck the length of the ice away and forcing them to reset is a win. Take the icing if you have to — a press turnover costs you a goal, and an icing costs you a defensive-zone draw and, **under the NHL, the IIHF and the PWHL, your line change** (Rule 81.4; PWHL 83.4). ⚠️ **That bar is neither universal nor absolute:** where it binds, a hurt teammate can still come off and a tired one cannot, and some books do not bar the change at all — USA Hockey and CARHA write no bar, and section 1 sets out the rest.
 
 ### When they are already set — the control breakout
 
@@ -854,8 +854,8 @@ Goal: Get the puck out of your own end with control — on a power play this com
 Key: A breakout a man up uses the same five jobs as an even-strength breakout; what is a skater short is the penalty kill's forecheck, not your own five
 Rule: With the extra man you are not shorthanded, so icing applies to you — NHL and IIHF 81.1 and PWHL 83.1 call it on a team "equal or superior in numerical strength (power-play) to the opposing team", and Hockey Canada 6.7(a) uses the same test
 Rule: USA Hockey grants the shorthanded icing exemption only from Youth 15-Only, Girls 16U, High School and Adult upward (Rule 624(b)(1)) — below those classifications a kill may not ice the puck either, so there this exit is priced the same for both teams
-Rule: Icing it costs a power play more than it costs anyone else: under NHL and IIHF 81.4 your tired unit cannot change, 87.1 denies you the time-out, and 81.2 gives the kill the choice of dot (PWHL 83.4, 89.1 and 83.2 the same)
-Rule: The no-change bar after an icing is not universal — USA Hockey and CARHA attach none (USA Hockey 624 read whole; 204(a) gives each team its change at every stoppage), and Hockey Canada 6.7(d) applies it in U18AAA and Junior, and in Senior at the Member's option
+Rule: Under the NHL, IIHF and PWHL, icing costs a power play more than anyone: 81.4 keeps your tired unit on, 87.1 denies you the time-out, and 81.2 gives the kill the choice of dot (PWHL 83.4, 89.1 and 83.2)
+Rule: The no-change bar after an icing is not universal — USA Hockey and CARHA attach none, and Hockey Canada applies it only in U18AAA, Junior and, at the Member's option, Senior (6.7(d))
 Convention: Power-play units often run four forwards and one defenceman, so one of the two defence jobs — puck-retriever or support — is usually a forward's; find out whose before the puck is behind your net
 Read: Read the penalty kill's pressure as you would any forecheck: a forechecker sent in spends one of their only four skaters, so some kills press in your end and some wait between the blue lines
 Convention: This document's default a man up is to take the beat the missing forechecker gives you and leave with control; a quick-up or stretch the instant you win it is equally coached, so ask which your team wants on the power play specifically
@@ -939,8 +939,7 @@ With the goalie off:
 ```facts
 Mindset: A completely different problem to the delayed penalty, because now a mistake ends the game
 Rule: Icing still applies — at 6-on-5 you are not shorthanded, so a clear from your own half that reaches the far goal line is iced in all six books here (NHL and IIHF 81.1; PWHL 83.1; USA Hockey 624; Hockey Canada 6.7(a); CARHA 65(a), though some CARHA leagues split the ice elsewhere — ask yours)
-Rule: The bench freeze after icing is not universal — NHL and IIHF 81.4 and PWHL 83.4 stop the team that iced changing; USA Hockey 624 writes no bar, 204(a) gives both benches their change at every stoppage; Hockey Canada 6.7(d) applies it in U18AAA and Junior, and in Senior at the Member's option
-Rule: An icing's no-change freeze does not strand your goalie — NHL and IIHF 81.4 and PWHL 83.4 all except "a player substitution to replace a goalkeeper who had been substituted for an extra attacker", and Hockey Canada 6.7(d)(i) writes it first; the tired skaters are what you cannot change
+Rule: Where an icing bars the change — NHL and IIHF 81.4, PWHL 83.4, and Hockey Canada 6.7(d) only in U18AAA, Junior and, at the Member's option, Senior — your pulled goalie may still go back in; the tired skaters may not. USA Hockey and CARHA bar no change
 Key: Icing removes the long clear, not the glass clear — a glass clear is deliberately slow and wide, so it dies in the neutral zone and never reaches the far goal line
 Action: Aim the glass clear to land in the neutral zone with a teammate skating onto it
 Priority: Possession over speed — an empty net behind you means any turnover is a goal against, so the controlled exit is now the only correct exit

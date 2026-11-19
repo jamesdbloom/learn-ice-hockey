@@ -42,12 +42,9 @@ const CARRIER = { at: 'behind-net', dy: 6 };               // (94, 6)
 // W471 (18 November 2026): THAT RULING WAS MADE. A safety-reviewer ruled the enumeration can come
 // out of forecheck-212's caption in all five hosts; it now carries a one-sentence summary (see the
 // W471 note on its caption). forecheck-roles-rotate is now this constant's ONLY user.
-const CHECKING_BARRED_WHERE =
-  ' at 12 & under and below, in every girls\' and women\'s classification, in non-check adult ' +
-  'hockey and whenever a checking team plays a non-checking one, and lets a local governing body ' +
-  'bar it in any classification; Hockey Canada at U13 and below, throughout female hockey and in ' +
-  'any other division a Member approves; Ice Hockey UK in its U10 and U12 junior leagues and the ' +
-  'Women\'s NIHL; and CARHA in every game.';
+// W-next (19 November 2026): CHECKING_BARRED_WHERE DELETED. forecheck-roles-rotate, its last user,
+// now carries forecheck-212's W471 one-sentence summary instead of the enumeration (see the note on
+// that caption). The enumeration's provenance stays recorded in the W360/W362 notes on both captions.
 
 // ===========================================================================
 // OVERVIEW — ANGLING. The only diagram in this file that is not a shape.
@@ -283,8 +280,8 @@ const forecheck212 = {
     // local opt-out and fixture rule reach beyond the three groups -- which the "find out" prompt
     // and "per fixture" carry. The coordinator's sketch joined the summary to "not just per division"
     // with ", and"; a FULL STOP closes that negation instead (brief: close a negation with a full
-    // stop before the next clause). CHECKING_BARRED_WHERE is NOT deleted: forecheck-roles-rotate
-    // still uses it.
+    // stop before the next clause). CHECKING_BARRED_WHERE was NOT deleted then: forecheck-roles-rotate
+    // still used it (until 19 November 2026, when it was deleted).
     'Find out first whether you may body check in this game \u2014 the answer can change per fixture, not just per division. It is commonly barred at younger ages, in girls\' and women\'s hockey and in non-check adult leagues. \u26A0\uFE0F Go hard at the carrier, never through them. They are about to turn their back to you, so the onus is on you: take the puck, take the ice, or angle them off it, and never finish into their back.',
 
   describe:
@@ -1294,10 +1291,21 @@ const forecheckRolesRotate = {
     // "not a licence" framing and the onus clause are now plain text and the amber run is the
     // instruction alone ("Take the puck ... into their back."). The colon after "on you" became a
     // full stop for that; no word cut. Spoken "Important." is per caption, so unchanged.
-    'default 2-1-2, though a lock system pins one winger to the third job instead; the defencemen ' +
-    'hold the offensive blue line and do not rotate. Find out first whether you may body ' +
-    'check in this game at all — it can change per fixture, not just per division. USA Hockey ' +
-    'bars it' + CHECKING_BARRED_WHERE + ' ' +
+    // W-next (19 November 2026), 1,101 chars -> see diagrams.json: the CHECKING_BARRED_WHERE
+    // enumeration REPLACED by forecheck-212's W471 summary, word for word ("It is commonly barred at
+    // younger ages, in girls' and women's hockey and in non-check adult leagues."), which a
+    // safety-reviewer ruled sufficient for forecheck-212 in five hosts, forechecking_systems.md among
+    // them. The find-out prompt and "per fixture, not just per division" (USA Hockey 604(b)) are KEPT.
+    // rink_map.md, this caption's other host, voices the full list in its own "Where checking is
+    // barred" paragraph (section 6, not beside this marker) -- so the per-host safety call for
+    // rink_map.md is NOT covered by the W471 ruling and is reported for a safety-reviewer.
+    // ADDED "so find out which your team runs" after the lock-system alternative (non-negotiable 7:
+    // the caption named a default and an alternative but never sent the reader to find out).
+    'default 2-1-2; a lock system pins one winger to the third job instead, so find out which your ' +
+    'team runs. The defencemen hold the offensive blue line and do not rotate. Find out first ' +
+    'whether you may body check in this game at all — it can change per fixture, not just per ' +
+    'division. It is commonly barred at younger ages, in girls\' and women\'s hockey and in ' +
+    'non-check adult leagues. ' +
     'Being the new F1 is not' +
     ' a licence to go through the carrier. The new carrier is about to turn their back to you, ' +
     'so the onus is on you. ⚠️ Take the puck, take the ice, or ' +
@@ -1448,8 +1456,8 @@ const forecheck23Lock = {
     // the Women's NIHL, CARHA 49(a)), and the paragraph directly above this marker (chunk 032,
     // this caption's own chunk) voices the onus limb and "find out first whether you may body
     // check in this game at all", pointing back to 2-1-2. The find-out prompt stays here as the
-    // instruction. CHECKING_BARRED_WHERE is UNCHANGED and still used by forecheck-212 and
-    // forecheck-roles-rotate, whose other hosts do not voice the list.
+    // instruction. (CHECKING_BARRED_WHERE has since left forecheck-212 (W471) and forecheck-roles-rotate
+    // (19 November 2026) and is deleted.)
     'team plays. ⚠️ Find out first whether you may body check in this game at all — it can change per fixture, not just per division.',
 
   describe:
