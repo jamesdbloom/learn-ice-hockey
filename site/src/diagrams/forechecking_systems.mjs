@@ -1298,7 +1298,8 @@ const forecheckRolesRotate = {
     // them. The find-out prompt and "per fixture, not just per division" (USA Hockey 604(b)) are KEPT.
     // rink_map.md, this caption's other host, voices the full list in its own "Where checking is
     // barred" paragraph (section 6, not beside this marker) -- so the per-host safety call for
-    // rink_map.md is NOT covered by the W471 ruling and is reported for a safety-reviewer.
+    // rink_map.md was not covered by the W471 ruling; a safety-reviewer ruled the summary
+    // sufficient there too on 19 Nov 2026 (W501 record).
     // ADDED "so find out which your team runs" after the lock-system alternative (non-negotiable 7:
     // the caption named a default and an alternative but never sent the reader to find out).
     'default 2-1-2; a lock system pins one winger to the third job instead, so find out which your ' +

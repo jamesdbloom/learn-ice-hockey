@@ -1280,11 +1280,14 @@ document, that is named too.*
 
 6. You are pinching down the wall and the opposing winger is facing the glass
    with the puck. What does that posture tell you, what does it not give you
-   permission to do, and what does getting it wrong cost? It is never a bare minor
-   in any book (under Hockey Canada, while it stays off the head; on the head it is
-   head contact — plan on the game misconduct anyway, and a match if they
-   cannot protect themselves). It ends your game under the NHL, PWHL and CARHA, and
-   under Hockey Canada off the head; under the IIHF, plan on it. *(§The defenceman's pinch, §A hit from
+   permission to do, and what does getting it wrong cost? Off the head it is never
+   a bare minor in any book; under the IIHF and Hockey Canada a bare minor becomes
+   possible once it reaches the head. It ends your game under the NHL, PWHL and CARHA, and
+   under Hockey Canada off the head; under the IIHF, plan on it. Driving them into
+   the boards when they cannot protect themselves is a mandatory match penalty under
+   Hockey Canada and CARHA. On the head, the IIHF's and Hockey Canada's
+   head-contact rules take over: plan on the game misconduct anyway, and under
+   Hockey Canada a match if they cannot protect themselves. *(§The defenceman's pinch, §A hit from
    behind)*
 
 7. The shot is away. What are the next three seconds worth, what do most teams do

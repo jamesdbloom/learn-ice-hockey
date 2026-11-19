@@ -122,12 +122,12 @@ These are in the plan as W501(1)–(12). Among them:
 | D3 cross-book divergence | Covered. The six-book split for the trail skate, the after-icing bar, interference tiers, the crease penalty shot and the circle-line split. |
 | D4/D5 citations and provenance | Covered. source-verifier on the new CARHA Rule 19 Sources paragraph: URL 200, sha256 prefix and byte count match `sources/README.md`, 5 of 5 quotations verbatim. No other citation was added. |
 | D6 negative existence | Covered. "USA Hockey and CARHA bar no change after an icing" was swept across usah.txt, usah_casebook.txt and carha_2026.txt (flattened). It is a true negative on the rulebooks; league bylaws were not read. |
-| D7 safety | Covered. safety-reviewer, two rounds, including the ruling that forecheck-roles-rotate's summary is sufficient in rink_map.md and forechecking_systems.md. The final repairs are harsher-or-equal and were not re-read (see above). |
-| D8 owner qualifications | Covered for the changed claims. No figure is copied out of an owner document. |
-| D9 cardinal rule | Covered. content-reviewer. The roles-rotate caption gained "find out which your team runs". |
+| D7 cardinal rule | Covered. content-reviewer. The roles-rotate caption gained "find out which your team runs". |
+| D8 numeric ownership | Covered for the changed claims. No figure is copied out of an owner document. |
+| D9 summary layers / propagation | Covered. Layer tests on the trail-skate claim (every layer), the interference price (facts, body, What it costs, Common Mistakes, KTs) and the after-icing bar (facts layer). Body and KT restatement of the after-icing rule is plan row W501(5). |
 | D10 facts layer | Covered. facts-reviewer, twice. The pre-existing traceability defect in on_ice_communication's "Bench and line changes" block is plan row W501(13). |
-| D11 summary layers / propagation | Covered. Layer tests on the trail-skate claim (every layer), the interference price (facts, body, What it costs, Common Mistakes, KTs) and the after-icing bar (facts layer). Body and KT restatement of the after-icing rule is plan row W501(5). |
-| D12 audio | Partly covered. md_to_speech renders for faceoffs, breakouts, defensive_zone_coverage and passing_and_receiving in rounds 1–2 confirmed "Important." survives on every re-led paragraph. The final repairs were not re-rendered, and no ear test was done. |
+| D11 reader safety | Covered. safety-reviewer, two rounds, including the ruling that forecheck-roles-rotate's summary is sufficient in rink_map.md and forechecking_systems.md. The final repairs are harsher-or-equal and were not re-read (see above). |
+| D12 read-aloud integrity | Partly covered. md_to_speech renders for faceoffs, breakouts, defensive_zone_coverage and passing_and_receiving in rounds 1–2 confirmed "Important." survives on every re-led paragraph. The final repairs were not re-rendered, and no ear test was done. |
 | D13 folklore | Out of scope: no folklore-class claim was added or changed. |
 | D14 style and cross-links | Covered. content-reviewer; check_links; the DZC link retarget to `#over-the-glass` was verified by the safety-reviewer and the site-reviewer. |
 | D15 rendered site | Structural only. The Chrome extension was not connected. The site-reviewer checked the built HTML of all seven affected pages: every ⚠️ forms `warn-inline`, there are 0 panels, 0 state-3/4 glyphs and 0 stray asterisks after the repair, and the link and anchors resolve. No visual or theme check and no console was possible; that is plan row W501(14). |
