@@ -922,14 +922,14 @@ The short form:
    **(1) The nvm shim is a zsh FUNCTION, so prefixing `PATH` does not defeat it** — `node
    scripts/astro.mjs build` exited **127** (`command not found: _load_nvm`) **while the wrapper
    reported 0**. Only the absolute binary works:
-   `/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/node`.
+   `/Users/uk45004860/.nvm/versions/node/v22.23.4/bin/node`. ⚠️ **Astro 7.4.7 refuses to build on anything older than Node 22.23.4** (`engines` in `site/package.json`) — so the old `v22.23.1` path now fails with *"Node.js v22.23.1 is not supported by Astro!"*.
    ⚠️ **`npm` IS A SHIM TOO, and the two traps collide: trap (2)'s remedy is "run `npm run build`",
    which re-triggers trap (1).** Measured in round 59, on the coordinator, while clearing a commit
    gate that had blocked *because* no build had run: `npm run build` printed
    `npm:1: command not found: _load_nvm`, the wrapper reported **exit 0**, and `dist/` was **five
    hours stale and untouched**. ⚠️ **Nothing in the output says "did not build" — the false pass is
    silent, and it is the SECOND time this shim has produced one.** Use
-   `/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/npm`, and **check BOTH — the exit code (which is
+   `/Users/uk45004860/.nvm/versions/node/v22.23.4/bin/npm`, and **check BOTH — the exit code (which is
    meaningful once you use the absolute binary) AND `ls -ld site/dist`.** ⚠️ **`ls` alone is NOT
    sufficient and an earlier version of this passage wrongly said it was:** `npm run build` is an
    **eleven-step chain** and step 1 is `clean:cache`, which deletes `dist`. **So a fresh `dist` mtime
