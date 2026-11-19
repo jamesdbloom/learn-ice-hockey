@@ -786,7 +786,7 @@ There is a reason this order is nearly universal: each layer has to go on before
 11. **Mouthguard**
 12. **Gloves**, last, so your hands are free for everything above
 
-Then check three things before you step on: **chin strap fastened, shin guards under the pants and not sticking out, and gloves meeting your elbow pads.** Those are the three that referees and injuries both notice. **And step on wearing all of it, warm-up included** — England Ice Hockey's Rules & Regulations 24.1 require that *"[f]ull equipment, including helmets, must also be worn properly during the pre-game warm-up"*, and in IHUK-sanctioned games outside the Elite League, In-House Rule 5.4 requires a coach or manager to check helmet and facemask fit, chin-strap tightness and neck laceration protection **before** the warm-up.
+Then check three things before you step on: **chin strap fastened, shin guards under the pants and not sticking out, and gloves meeting your elbow pads.** Those are the three that referees and injuries both notice. **And step on wearing all of it, warm-up included** — England Ice Hockey's Rules & Regulations 24.1 require that *"[f]ull equipment, including helmets, must also be worn properly during the pre-game warm-up"*. And in IHUK-sanctioned games outside the Elite League, In-House Rule 5.4 requires a coach or manager to check helmet and facemask fit, chin-strap tightness and neck laceration protection **before** the warm-up.
 
 ---
 
