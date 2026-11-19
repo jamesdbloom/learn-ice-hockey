@@ -862,7 +862,7 @@ Each book lets a game misconduct reach beyond the game it was given in, on its o
 **In short:** Head up, know where your opponents are, and when a hit is coming, see it and brace rather than duck.
 
 ```facts
-Never: Skate with your head down — not "look up sometimes", never; USA Hockey's Rule One is to keep it up "especially when it looks like you're going to take a hit"
+Never: Skate with your head down — not "look up sometimes", never; USA Hockey's Heads Up Hockey Rule One is to keep it up "especially when it looks like you're going to take a hit"
 Key: You cannot brace for something you cannot see; a body prepared for contact absorbs it
 Key: USA Hockey's Heads Up Hockey programme calls keeping your head up "the single most important thing to know and do to prevent head injuries" — a ranking of the habit rather than of any one moment
 Rule: Keeping your head up is worth something in the rulebook too — IIHF Rule 48.1 states that where a player skates with their head up and may reasonably be expecting contact, "an opponent does not have the right to hit them to the head or neck"
