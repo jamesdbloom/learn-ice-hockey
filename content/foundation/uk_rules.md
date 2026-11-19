@@ -234,7 +234,7 @@ That threshold sits **outside IIHF Rule 1.2 altogether**: the book fixes the len
 
 ### Equipment that does not meet the rules has its own ladder
 
-**This one is nobody's amendment.** It is **IIHF Rule 9.5**, the same in both editions, and the *EIHL Casebook* reproduces it word for word — so it reaches every British player, the Elite League included. When the referee judges a piece of your equipment illegal and tells you to change or remove it:
+**This one is nobody's amendment.** It is **IIHF Rule 9.5**, the same in both editions, and the *EIHL Casebook* reproduces its warning-and-refusal ladder word for word, under an opening sentence of its own — so the ladder reaches every British player, the Elite League included. When the referee judges a piece of your equipment illegal and tells you to change or remove it:
 
 - You and your team are **warned** to adjust it. After the warning, *"all Players on that team wearing such equipment shall be penalized in accordance with Rule 12 – Illegal Equipment."*
 - **If you refuse**, it is a **minor penalty** — and the rule labels it *"Delay of Game"*.
