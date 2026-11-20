@@ -13,9 +13,20 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W516 shipped with record `w516_side_frames_bare_it_and_one_census_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W517 shipped with record `w517_one_antecedents_corpus_wide_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
+- **From W517 (20 Nov):**
+  - **(1) body_contact_and_battles facts :598.** The closing "if reckless, plan on a match" now lands on "careless head contact", the nearest noun. The line never voices USA Hockey 608(b)'s mandatory major and game misconduct for a reckless hit from behind. Pre-existing, at 300 chars.
+  - **(2) "Head hit" for USA Hockey 620(b).** rules_primer :31/:1229 use it, but 620(b) also reaches the face and neck. The scope was unchanged by W517 but is narrow everywhere it appears.
+  - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
+  - **(5) center :536** "a moderate clash … and a violent one a major": Hockey Canada 7.7(b) says "high degree of violence". This errs harsh and is inconsistent with :803 and :916 ("highly violent"). **defender :411/:495** read "name none" aloud, eight words after "division"; restore "name no division" if 6 characters free.
+  - **(6) More "one" candidates outside the W517 diff:**
+    - time_and_space :664 "a reckless one is a match penalty": it lands on "a major and game misconduct"; use "a reckless pick".
+    - neutral_zone_systems :363 and :400 "an accidental one that injures (7.6(b))": use "head contact" or "a clash".
+    - faceoffs :1144 "a reckless one under USA Hockey": it lands on "a match"; low risk.
+  - **(7) Readability: risk_management :915** runs to about 45 words before its dash, after the W517 repair (a straight list). Split it if wanted. Also playing_without_the_puck :849 and risk_management :861 say "a reckless hit with excessive force" for 608(c) without "from behind".
+  - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.
 - **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; row 6 partly):**
   - **(7) Chunk-opening bare pronouns, corpus-wide.** W516 found two list leads that open a spoken chunk with "it" and no referent (defensive_zone_coverage :755, zone_entries :361). A bare "it", "this" or "that" opening any paragraph or facts line straight after a chunk boundary has the same defect. Grep cannot find these; it needs the render. Candidate: a worklist tool in scripts/ (coordinator, between waves) that lists every chunk whose first sentence opens with a pronoun.
   - **(6) Optional, from the diagram-reviewer:**
@@ -24,9 +35,8 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(8) More frameless "near side" wording** outside W516's modules: forecheck-roles-rotate (describe), entry-high-triangle and entry-vs-standing-up (describes), and defend-squash-and-slide (describe and caption: "the puck is on the near side, so the near one fo…"). All are in zone_entries.mjs or forechecking_systems.mjs.
   - **(9) goaltender.mjs: other describes that say "the goalie's right/left".** These read correctly only when the goalie is in the crease facing out. W516 changed the two with the goalie behind the net to picture terms. Audit the rest for goalie position: `grep -n "goalie's \(right\|left\)" site/src/diagrams/goaltender.mjs`.
   - **(4) Not checked by the W515 census:** route and arrow directions, forehand/backhand claims against drawn sides (e.g. dump-cross-corner), drill SVGs in site/src/drills/, and prose far from a marker.
-- **From W514 (20 Nov; rows 1 and 2 closed in W515):**
+- **From W514 (20 Nov; rows 1 and 2 closed in W515, 5 in W517):**
   - **(3) practice_and_development.mjs drill-execution-no-opponent** still opens "The attacking half of the rink, the net at the right". Same shape as W508(22); whether "opposition" fits a drill with no opponent is a judgement.
-  - **(5) "A reckless / forceful / violent one" antecedents: 106 DEFECT and 27 UNSURE sites in 31 files.** The W516 census is the worklist: `project/reviews/one_antecedent_census_2026-11-20.md`. Line numbers drift, so re-locate each site by its text. Make one wording decision per recurring shape (F1–F6) and dispatch one agent per file group. Each editing agent must confirm the act behind each rule before naming it. Facts lines are among the sites. Adjectives the sweep missed are listed in that record.
   - **(4) Optional: the-trapezoid label.** It still crosses the goal line (the word is wider than the region) and sits about 2 px from the boards at phone width. Option: put it outside the region with a leader.
 - **From W513 (20 Nov; rows 5, 8 and 9 closed in W514, 10 in W515; rows 2–3 partly):**
   - **(1) CARHA 53(a).** It allows a discretionary match with no condition ("A Match penalty could also be assessed under this rule", carha_2026.txt ~:2611). No site says so. Many sites state "Hockey Canada and CARHA must…" or name CARHA 53(b) alone. This grep over-matches (on 20 Nov it returned 112 lines, some already naming every book); re-find them with `grep -rnE 'Hockey Canada and CARHA (must|make)|CARHA 53\(b\)|53\(b\)\)' content/`. Decide whether CARHA's whole answer needs the clause (probably only in owner sections and rules_primer).
