@@ -407,7 +407,7 @@ const netFrontWalkOut = {
     'well. Move nobody into or across the shaded goal frame and goalie.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right with our goalie in ' +
+    'The defending half of the rink, the net being defended at the right with our goalie in ' +
     'its crease. Two skaters and no puck, and nothing moves: no route is drawn. An opposition ' +
     'forward stands in front of the net, about eleven and a half feet out from the goal line and ' +
     'six feet to the side drawn at the top of the picture, clear of the blue crease paint. Our ' +
@@ -629,7 +629,7 @@ const cornerEscapeRoutes = {
     'the boards.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
+    'The defending half of the rink, the net being defended at the right and our goalie in its ' +
     // "about six feet" was wrong and is now seven: the anchor (79, 34) lies 20.72 ft from the
     // corner arc's centre (72, 14.5), so it stands 6.98 ft off the boards' inner ink edge at
     // r = 27.7 and 7.28 ft off the dasher centreline at r = 28. Six matched neither, and the
@@ -950,8 +950,11 @@ const angleIntoTheCorner = {
   // disclosure ("the ordering and the ranking do not") is voiced in no host and lives only in
   // body_contact_and_battles.md's unvoiced Sources trailer; the chip/rim/reverse option is voiced
   // in body_contact_and_battles.md (:924, same chunk) but nowhere in skating.md.
+  //   [Superseded since W507/W459(1): skating.md :130 now voices chip/rim/reverse ("moves the
+  //   puck on as you get there"). The note above is kept as the record of when it was written.]
   // ✂️ W469 (18 November 2026). COMPRESSION ONLY, NO LIMB CUT. skating.md still voices no Case 3,
-  // no chip/rim/reverse and no provenance, so those stay; the posture limbs (never turn, never duck,
+  // no chip/rim/reverse [superseded since W507/W459(1): skating.md :130 now voices it] and no
+  // provenance, so those stay; the posture limbs (never turn, never duck,
   // Case 2) are voiced in the adjacent chunk of both hosts but stay by rule. Case 3 now opens "for
   // when you already face the wall" -- the owner's facts wording ("Case 3, already facing the
   // wall") -- and the old "and cannot turn" is gone: it contradicted the very next sentence (turn
@@ -961,13 +964,18 @@ const angleIntoTheCorner = {
   // the owner's facts wording for USA Hockey's distribute-the-force teaching point. Kept: damage
   // limitation, "if at all possible", stick and gloves up on the glass, arms out as a shock
   // absorber, no head contact at all. Case 2 is now named before its instruction rather than after.
+  // W511 (20 Nov 2026; closes W507(3)): "takes you out of the collision" over-promised. Moving the puck on
+  // does not end the checker's option: the NHL allows a check "rendered immediately following
+  // his loss of possession" (PWHL the same, "her"), and body_contact_and_battles.md's late-hit section says whether one
+  // already under way may be finished depends on the book. Now matches skating.md :130 ("moves
+  // the puck on as you get there, instead of leaving you pinned on the wall with it").
   caption:
     'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
     'drawn. It arrives on an angle and finishes running along the boards, the first and best of ' +
     'three cases for meeting a wall. ' +
     'The cases come from USA Hockey\'s material; the ordering and ranking do not. ' +
-    'Better still, a chip, rim or reverse decided before you arrive takes you out of the ' +
-    'collision. The worst, for when you already face the wall, is damage limitation rather than ' +
+    'Better still, a chip, rim or reverse decided before you arrive moves the puck on, so you ' +
+    'are not pinned on the wall with it. The worst, for when you already face the wall, is damage limitation rather than ' +
     'a position to aim for. USA Hockey asks you to turn your skates parallel first if at all ' +
     'possible. Failing that, spread the load: stick and gloves up on the glass, arms out as a ' +
     'shock absorber, and no head contact at all. ' +
@@ -975,7 +983,7 @@ const angleIntoTheCorner = {
     'The second case: get your skates parallel to the wall and take it on your forearm and hip.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goalie in its ' +
+    'The defending half of the rink, the net being defended at the right and our goalie in its ' +
     'crease. One of our forwards stands well up the ice in the middle of the zone, level with a ' +
     'point about fourteen feet outside the top of the faceoff circle on the side drawn at the top of ' +
     'the picture. A single curved forward-skating route leaves them and runs into the corner: it sets ' +
@@ -1275,7 +1283,7 @@ const insideLaneLongerRoute = {
     '⚠️ Arc for the puck, not their body, and never hold, pull, tug or grab with your free hand.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goalie in ' +
+    'The defending half of the rink, the net being defended at the right and our goalie in ' +
     'its crease. Two skaters. A loose puck is drawn on its own in open ice on the side at the top ' +
     'of the picture, inside the faceoff circle, about twelve feet up-ice of the goal line and well ' +
     'clear of the side boards. An opposition forward stands up-ice of it and wide, out toward the ' +
@@ -1584,7 +1592,7 @@ const shotBlockGetClose = {
     'get out. Never stand half in the way with your eyes closed.',
 
   describe:
-    'The defensive half of the rink, the net being defended at the right and our goalie in ' +
+    'The defending half of the rink, the net being defended at the right and our goalie in ' +
     'its crease. Three players and no routes. An opposition defenceman stands at the strong-side ' +
     'point on the side drawn at the top of the picture, with the puck just off the blade toward ' +
     'the middle of the ice. A faint dashed line runs from that puck down the ice toward the ' +

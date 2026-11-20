@@ -222,7 +222,7 @@ const theSlot = {
     'the circles down to the goalmouth — shaded here; not painted.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A shaded rectangle runs down ' +
+    'One half of the rink, a net at the right. A shaded rectangle runs down ' +
     'the middle of the end zone from the top of the two faceoff circles to the front edge ' +
     'of the goal crease, its sides on the inner edges of the two circles. No players are ' +
     'drawn.',
@@ -262,7 +262,7 @@ const theHighSlot = {
     'circles — shaded here; not painted, though the dots and circles are.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A shaded rectangle occupies the ' +
+    'One half of the rink, a net at the right. A shaded rectangle occupies the ' +
     'middle of the zone between the two faceoff circles, running from the top of the circles ' +
     'down to the depth of the two faceoff dots — the upper part of the slot. No players are ' +
     'drawn.',
@@ -299,7 +299,7 @@ const theLowSlot = {
     'shaded here; not painted, but its edges follow real markings.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A shaded rectangle occupies the ' +
+    'One half of the rink, a net at the right. A shaded rectangle occupies the ' +
     'middle of the zone between the two faceoff circles, running from the depth of the ' +
     'faceoff dots down to the front edge of the light blue goal crease — the lower part of ' +
     'the slot. No players are drawn.',
@@ -335,7 +335,7 @@ const theGoalmouth = {
     'shaded box here, much smaller than the low slot.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A small shaded box sits directly ' +
+    'One half of the rink, a net at the right. A small shaded box sits directly ' +
     'in front of the goal, the width of the goal crease and running from the goal line out ' +
     'to the front edge of the crease. It is drawn over the light blue crease. No players are ' +
     'drawn.',
@@ -373,7 +373,7 @@ const pointAndHalfWall = {
     'point, wingers at the half-wall — placed only to mark the spots, not as a formation.',
 
   describe:
-    'The attacking half of the rink, the net at the right. Two defencemen stand just inside ' +
+    'The attacking half of the rink, the opposition net at the right. Two defencemen stand just inside ' +
     'the blue line, one toward each side, at the point. Two wingers stand against the side ' +
     'boards level with the faceoff dots, at the half-wall. The defenceman and the winger at ' +
     'the top of the picture are labelled "the point" and "the half-wall". No puck and no routes ' +
@@ -543,7 +543,7 @@ const theTrapezoid = {
     'loose puck as an attacker bears down is still a minor.',
 
   describe:
-    'The attacking half of the rink, the net at the right. The area behind the goal line is ' +
+    'One half of the rink, a net at the right. The area behind the goal line is ' +
     'shaded between the two red trapezoid lines, which begin either side of the goal and ' +
     'splay outward to the end boards: narrower at the goal line, wider at the boards. No ' +
     'players are drawn.',
@@ -595,7 +595,7 @@ const strongAndWeakSide = {
   // W473 (18 Nov 2026): "the right-hand side of the ice" -> "the top half of the picture".
   // The puck is at +y, the TOP; attacking the net at the right, that is the player's LEFT.
   describe:
-    'The attacking half of the rink, the net at the right, tinted in two different shades ' +
+    'One half of the rink, a net at the right, tinted in two different shades ' +
     'lengthways down the middle. The puck is in the top half of the picture, just inside ' +
     'the strong-side faceoff dot. The half of the ice containing the puck is labelled ' +
     '"strong side" and the other half "weak side". No line is drawn between them and no ' +
@@ -697,7 +697,7 @@ const theGoalCrease = {
     'paint. No shading can draw an edge that fine.',
 
   describe:
-    'The attacking half of the rink, the net at the right. The goal crease is shaded: it ' +
+    'One half of the rink, a net at the right. The goal crease is shaded: it ' +
     'is eight feet wide where it meets the goal line, a short straight side runs out from ' +
     'each end of that width, and the two are joined by an arc that reaches six feet out ' +
     'from the goal line at its deepest point, so the shape bulges into the zone rather ' +
@@ -743,7 +743,7 @@ const homePlate = {
     'dot lines to the dots, angling in to the goalposts. Not a painted marking.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A shaded six-sided region is ' +
+    'One half of the rink, a net at the right. A shaded six-sided region is ' +
     'drawn on the ice: its up-ice edge runs straight across between the tops of the two ' +
     'faceoff circles, its two long sides run down-ice from the top of each circle to that ' +
     "circle's faceoff dot, and from each dot an angled edge runs in to the nearer " +
@@ -800,7 +800,7 @@ const aboveAndBelowTheDots = {
     'faceoff dots — unequal halves, tinted here.',
 
   describe:
-    'The attacking half of the rink, the net at the right, tinted in two shades either ' +
+    'One half of the rink, a net at the right, tinted in two shades either ' +
     'side of an unmarked line drawn across the zone through the two faceoff dots. The ' +
     'part from that line out to the blue line is labelled "above the dots"; the part from ' +
     'it in to the end boards, containing the net, the crease and the ice behind the net, ' +
@@ -1134,7 +1134,7 @@ export const MAPS = [
       'the point, half-wall, crease and corners, with the high and low slot shaded as ' +
       'regions.',
     describe:
-      'The attacking half of the rink seen from above, from the centre red line at the ' +
+      'One half of the rink seen from above, from the centre red line at the ' +
       'left to the end boards at the right, with the blue line about a quarter of the way ' +
       'in: two faceoff circles, the net on the goal line with the crease in front of ' +
       'it and the trapezoid behind. Most named areas — the point, the half-wall, the top ' +

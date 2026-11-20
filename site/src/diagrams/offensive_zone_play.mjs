@@ -120,7 +120,7 @@ const homePlate = {
     'painted on a real rink — it is a counting convention.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A single shaded six-sided region is ' +
+    'The attacking half of the rink, the opposition net at the right. A single shaded six-sided region is ' +
     'drawn over the end zone: its up-ice edge runs across the ice at the tops of the two ' +
     'faceoff circles, its two long sides run down-ice from the top of each circle to that ' +
     "circle's faceoff dot, and from each dot an angled edge runs in to the nearer goalpost. " +
@@ -203,7 +203,7 @@ const royalRoad = {
     'not the better supported one.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A dashed line runs down the middle of ' +
+    'The attacking half of the rink, the opposition net at the right. A dashed line runs down the middle of ' +
     'the ice from the centre of the goal line out through centre ice, labelled "the royal road". ' +
     'A forward has the puck on the strong-side half-wall, level with the faceoff dot. A dashed ' +
     'pass route runs from there straight across the zone, crossing the road between the faceoff ' +
@@ -309,7 +309,7 @@ const fiveManShape = {
     'home-plate area. Defenders other than the goalie are not drawn.',
 
   describe:
-    'The attacking half of the rink, the net at the right. Five own players. F1 has the puck on ' +
+    'The attacking half of the rink, the opposition net at the right. Five own players. F1 has the puck on ' +
     'the strong-side half-wall. F2 is below them in the strong-side corner, nearer the goal line. ' +
     'F3 is above them and toward the middle, at the top of the circles and inside the home-plate ' +
     'area. Two defencemen stand on the offensive blue line, one each side. The opposing ' +
@@ -371,7 +371,7 @@ const afterRotation = {
     'law of hockey. No routes are drawn: this frame is the result, not the movement.',
 
   describe:
-    'The attacking half of the rink, the net at the right, one pass after the previous diagram. ' +
+    'The attacking half of the rink, the opposition net at the right, one pass after the previous diagram. ' +
     'F1 now has the puck in the strong-side corner — this is the player who was labelled F2 a ' +
     'moment ago. F2 is the player who was carrying on the half-wall, now eight feet up-ice of it ' +
     'and five feet inside it, nine feet off the boards. F3 is unchanged at the top of the ' +
@@ -431,7 +431,7 @@ const halfWallOptions = {
     'mind. Expect the seam to be defended and to open only briefly.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A forward has the puck on the ' +
+    'The attacking half of the rink, the opposition net at the right. A forward has the puck on the ' +
     'strong-side half-wall. Four routes leave them and none is numbered. A dashed pass runs down ' +
     'and back to a teammate deep in the strong-side corner. A second dashed pass runs up the ice ' +
     'to a defenceman at the strong-side point. A third dashed pass runs across the zone, crossing ' +
@@ -545,7 +545,7 @@ const lowToHigh = {
     'or above it, so it is no argument against a point shot there.',
 
   describe:
-    'The attacking half of the rink, the net at the right. Four numbered routes. One: a dashed ' +
+    'The attacking half of the rink, the opposition net at the right. Four numbered routes. One: a dashed ' +
     'pass from a forward on the strong-side half-wall up the ice to a defenceman at the ' +
     'strong-side point. Two: the same forward then skates in off the wall toward the hash marks ' +
     'on the inside edge of the strong-side faceoff circle. Three: the defenceman carries the ' +
@@ -694,7 +694,7 @@ const netFrontScreen = {
     ' ⚠️ Keep your feet out of the blue paint, and off the crease line at its edge.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A defenceman has the puck at the ' +
+    'The attacking half of the rink, the opposition net at the right. A defenceman has the puck at the ' +
     'strong-side point, wide, eight feet toward the boards of the point itself. A forward stands ' +
     'at the net front, nine and a half feet out from the goal line and clear of the shaded goal ' +
     'crease, offset to the puck side of the middle of the net so that they sit on the straight ' +
@@ -839,7 +839,7 @@ const behindTheNet = {
     'goal frame, so keep your head up and know who is arriving.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A forward has the puck behind the ' +
+    'The attacking half of the rink, the opposition net at the right. A forward has the puck behind the ' +
     'goal line, ten feet to one side of the middle of the net. Two unnumbered routes leave them. ' +
     'A dashed pass runs out past the side of the net, clear of the crease, and across the centre ' +
     'line of the ice, finishing short of a forward standing on the weak side of the high slot. ' +
@@ -951,7 +951,7 @@ const crossTheRoadYourself = {
     'driven into the goal frame.',
 
   describe:
-    'The attacking half of the rink, the net at the right. A dashed line runs down the middle of ' +
+    'The attacking half of the rink, the opposition net at the right. A dashed line runs down the middle of ' +
     'the ice from the centre of the goal line out through centre ice, labelled "the royal road". ' +
     'Two own forwards and no puck. One stands on the strong-side half-wall, level with the ' +
     'faceoff dot; a wavy route ending in an arrowhead — the notation for skating with the puck — ' +
@@ -1094,7 +1094,7 @@ const cycleRim = {
     'forearm and hip to it, head up and chin off your chest' + SHOULDER_TAIL,
 
   describe:
-    'The attacking half of the rink, the net at the right. Own players are drawn open, the ' +
+    'The attacking half of the rink, the opposition net at the right. Own players are drawn open, the ' +
     'opposition solid. An own forward has the puck deep in the strong-side corner, with the puck ' +
     'on the boards side of their body. An opposition forward stands about eight feet inside them and ' +
     'two feet nearer the goal line, between them and the middle of the ice. A dashed pass route ' +
@@ -1179,7 +1179,7 @@ const cycleReverse = {
     'can help it.',
 
   describe:
-    'The attacking half of the rink, the net at the right, the same corner as the previous ' +
+    'The attacking half of the rink, the opposition net at the right, the same corner as the previous ' +
     'diagram. Own players are drawn open, the opposition solid. An own forward has the puck deep ' +
     'in the strong-side corner, in the same place as before and with the puck on the far side of ' +
     'their body from the pressure. The opposition forward is now past them, about five feet nearer ' +
@@ -1274,7 +1274,7 @@ const postShotShape = {
     'picture does not draw. Find out which your team plays.',
 
   describe:
-    'The attacking half of the rink, the net at the right, in the moments right after a shot. ' +
+    'The attacking half of the rink, the opposition net at the right, in the moments right after a shot. ' +
     'Three own forwards. F3 is high, at the top of the strong-side circle and just inside the ' +
     'home-plate area, drawn as the safety. A second forward stands at the net front, just outside ' +
     'the blue paint, for the screen and tip. A third stands closer to the strong-side faceoff ' +

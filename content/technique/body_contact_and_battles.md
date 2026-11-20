@@ -989,12 +989,12 @@ When you go to the wall for a puck with a checker arriving:
 
 ### Get off the wall
 
-The best protection is not being pinned. If you can chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives, you avoid the collision entirely and keep possession.
+The best protection is not being pinned. If you can chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives, you are not pinned with it and the play keeps moving. It does not cancel the hit: a checker already committed can still finish on you ([whether that is legal depends on your book](#the-late-hit--and-the-narrow-window-for-finishing-a-check)), so keep your head up as the puck goes.
 
 Two habits make this possible: **know what is around you before the puck arrives** (see [Scanning and Anticipation](../hockey-iq/scanning_and_anticipation.md)), and **have a plan for the puck before you get there**. Make it a chip, a rim, a reverse, or a spin off the wall — only off a checker already leaning on you, never one still coming at you — head up and never your back to anyone coming at you. Players who arrive at the wall with no plan get pinned. Players who arrive with a plan get out.
 
 ```facts
-Goal: The best protection is not being pinned. Avoid the collision entirely and keep possession
+Goal: The best protection is not being pinned with the puck. Moving it on does not cancel the hit — a checker already committed can still hit you, legally or not, so keep your head up
 Options: Chip the puck along the boards, kick it to a teammate, or take it off the wall toward open ice before contact arrives
 Action: Know what is around you before the puck arrives
 Action: Have a plan before you get there — a chip, a rim, a reverse, or a spin off the wall only off a checker already leaning on you; head up, never your back to anyone coming at you
@@ -1602,12 +1602,12 @@ Everything in Section 6 applies at exactly this moment, because puck races to th
 
 ### Chipping and the escape
 
-The highest-value skill in a 50-50 race is the one-touch: arriving and immediately putting the puck somewhere useful — chipped past the defender to your own speed, banked off the wall to a teammate, or rimmed around. It converts a coin flip into a possession, and it takes you out of the collision.
+The highest-value skill in a 50-50 race is the one-touch: arriving and immediately putting the puck somewhere useful — chipped past the defender to your own speed, banked off the wall to a teammate, or rimmed around. It converts a coin flip into a possession and gets the puck away before you are pinned with it. It does not cancel the hit: a checker already committed can still hit you, legally or not, so head up and never your back to anyone coming at you.
 
 ```facts
 Technique: The one-touch — arrive and immediately put the puck somewhere useful
 Options: Chip it past the defender to your own speed, bank it off the wall to a teammate, or rim it around
-Goal: Convert a coin flip into a possession, and take yourself out of the collision
+Goal: Convert a coin flip into a possession and get the puck away before you are pinned — a checker already committed can still hit you, legally or not, so head up and never your back to them
 Read: Rim when a checker is sealing you against the wall; reverse when one has over-committed and skated past you
 Action: Pick by the checker's momentum, and pick before you arrive
 ```
