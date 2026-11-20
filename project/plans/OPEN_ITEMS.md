@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W544 shipped with record `w544_skip_link_focus_and_two_picture_questions_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W545 and W546 shipped with records `w545_wedge_caption_level_caveat_2026-11-20.md` and `w546_key_takeaways_to_kernels_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -22,9 +22,10 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - Only group 2's nine files were checked by listening.
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
 - **From W541 (20 Nov):**
-  - **(1) Seven captions are still over 800 characters, on purpose:** faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
+  - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
   - **(3) Stale comment:** the rush-3-on-2-alternative module still says "UNDECLARED PAIR… reported to the coordinator". The pair is now declared in `check_caption_pairs.py`, so correct the comment at the next diagram edit.
-  - **(2) [Closed in W544, both OK.]** Optional only: the pk-wedge-plus-1 caption could read "straight out from the goal toward the carrier" (+19 characters). The diagram-reviewer also asks a safety-reviewer to judge whether the wedge +1's pressure route on a half-wall carrier, whose facing is fixed by the boards (check-arrivals rule 4), needs a level caveat in the caption.
+- **From W546 (20 Nov):**
+  - **(1) rules_primer Key focus :17:** "Outside the NHL it can end your game whether or not you meant it." For CARHA this holds only through Rule 49 (deliberate body contact; a major ejects under 30(a)). Rule 50(a) makes accidental head contact a minor. Read it, and scope it if needed.
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
   - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
   - **(4) Four facts lines still say "IIHF and Hockey Canada off the head"** (forechecking :320, :701, :750, :980). None had room to split. The head-only form errs harsh for the IIHF; that is acceptable, so split only if a block is next edited.
@@ -34,8 +35,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - Three judged over-escalated were kept, because `check_marker_pairs` could not confirm removal: winger :873, goaltender :1283 and :1716.
     - forechecking :813 is optional.
     - Revisit as a marker-density pass, not by sweeping.
-- **From W538 (20 Nov):**
-  - **(1) 16 Key Takeaways are still over 60 words** (`check_readability`). The words above 60 in each are tariff limbs: book scopes, conditions and penalty tiers. Trimming went only from 18 to 16. Most are the goalie-charging ladder, which is restated across eight Key Takeaways in different wordings. A structural answer would make each of those Key Takeaways lead with the instruction plus one "can end your game" clause, and leave the per-book ladder to the page's What it costs section. Measure it first. A Key Takeaway is voiced alone, so check that the mandatory tiers still reach a listener somewhere in that page's summary layers.
+- **From W538 (20 Nov; row 1 closed in W546, all but mental_game KT1, which is kept on purpose as crisis content):**
   - **(2) Helmet-clash act, other wordings.** The W538 layer test found faceoffs CM :1323 by string ("helmet clash"). Units worded "heads together" or "head over the dot" with a USA Hockey tariff were not swept.
 - **From W537 (20 Nov):**
   - **(1) Optional: forechecking :1033 names only USA Hockey for the arm block.** A reader in a Hockey Canada 7.3 division could hear the block as fine. :624 prices that case. Sketch: "…block with one under USA Hockey or where checking is barred…".
@@ -314,6 +314,7 @@ These questions sit inside the rows above and need the owner's call before anyon
 
 ## Diagrams and site
 
+- **Pressure routes near the boards (from W545):** check-arrivals cannot see pressure routes. Census every pressure route whose target stands within a few feet of the boards and check its caption for the level caveat ("whether that may end in a hit depends on whether your league allows body checking"). pk-wedge-plus-1 lacked the caveat; the pinch, forecheck and deny-the-reception captions carry it.
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.
 - **Owner decisions of 14 Nov, what is left (records reviews/w334_owner_decisions_c_d_f_2026-11-14.md, w335…, w337…):** (a) Decision F: the owner has not said whether it also reaches the other Key focus and Overview units that carry a per-book price list. These are rules_primer Overview (discipline after an ejection, and the IIHF vs NHL 20.4 lists), body_contact_and_battles Overview ("A hit from behind has no bare minor in any book here…"), uk_rules Overview and special_teams Overview. (b) A W334 safety advisory says body_contact_and_battles Key focus has no "never contact the head" (it lives in the Overview). Adding it is a quality-bar call for the owner. (c) The owner has not recorded acceptance of decision D, which shipped as a multi-sentence per-book passage ("Keep your skates off a player who is down…") rather than one sentence.

@@ -865,15 +865,33 @@ const pkWedge = {
     // courage", "in the lane before the shot, not sliding into it", "Never block from a
     // screening position." Taken verbatim rather than paraphrased, so the caption and the
     // section cannot drift.
-    'The +1 pressures the carrier, ' +
+    // W541 safety follow-up (20 Nov 2026, safety-reviewer MAJOR): the +1's route ends ~5 ft from
+    // a half-wall carrier with the boards behind him, and NEITHER host says anything about checking
+    // near this marker (special_teams.md wedge+1 section, how_to_watch_hockey.md PK list). At a
+    // no-checking level (USA Hockey 604(a), Hockey Canada 7.3, CARHA 49, where using the boards makes
+    // it worse) the picture could read as licence to pin him. So the +1 clause now uses the owner's
+    // own job wording (special_teams.md facts: "The +1 pressures whoever has the puck ... do not try
+    // to win it") and a level caveat follows the route sentence, as sibling captions carry it.
+    // NO NEW GLYPH: a mid-caption ⚠️ would amber the shot-blocking limbs (captionNodes ambers glyph
+    // to end). The reviewer's sketch "pressures the puck, not the player," was not used: it puts a
+    // negation before a comma and a tail (check_caption_negations shape) and is not the owner's word.
+    // The caption is now ~900 chars, accepted by the coordinator: this caveat is a sole-carrier limb.
+    // SAFETY RE-READ (20 Nov 2026, MAJOR, permissive): "pressures whoever has the puck without trying
+    // to win it" named a PERSON as the target and steered off the puck -- close to USA Hockey 604
+    // Note 1 / Casebook Sit. 17's "no effort to legally play the puck" -- and the level sentence rules
+    // out only "a hit", not a bump or a pin (Hockey Canada 7.3(a), CARHA 49(a)). Reviewer's Option B
+    // now names the aim point: "hurries whoever has the puck, stick on the puck". The note above about
+    // the owner's job wording and the rejected "puck, not the player" sketch is kept as the record.
+    'The +1 hurries whoever has the puck, stick on the puck, ' +
     // ✂️ W292 (12 Nov 2026), 1,002 -> 969 chars. CUT: ", so ask which one your team runs".
     // special_teams.md voices it in the caption's own chunk 030 (the Convention facts line: "so
     // ask your coach") and in chunk 029; how_to_watch_hockey.md, a spectator page, voices
     // "Teams use the fourth player differently, so expect variation" in chunk 012, directly
     // before. KEPT "a coaching choice", so the route is still not presented as the system.
     // Nothing after the glyph is touched.
-    'here straight out from the goal: one of three published routes, ' +
-    'and a coaching choice. ' +
+    'here straight out from the goal toward the carrier: one of three published routes, ' +
+    'and a coaching choice. Whether that pressure may end in a hit depends on whether your game ' +
+    'allows body checking. ' +
     // SAFETY. "Block from close and on your feet, head out of the lane" follows the host's
     // own wording (24 Oct: "hands tucked" replaced -- tucking is the on-ice form, and standing it
     // folds the head into the lane; special_teams.md :803/:808);
@@ -891,7 +909,7 @@ const pkWedge = {
     'Defending half of the rink, our net at the right and our goalie in the crease. Three own ' +
     'players form a tight triangle around the net: two defencemen just outside the crease edges ' +
     'either side, and one forward in the slot in front of them. A fourth own player, the +1, is ' +
-    'out on the puck side, the top of the picture, between the net and the puck, with a checking-pressure route running ' +
+    'out on the puck side, the top of the picture, between the net and the puck, with a pressure route running ' +
     'outward toward the puck carrier on the half-wall and finishing short of them. Five opposition ' +
     'players in a 1-3-1: one at the point, two on the half-walls with the puck on the top one, a ' +
     'bumper in the middle of the slot shaded to the puck side, and one at the net front.',

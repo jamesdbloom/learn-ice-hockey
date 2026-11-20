@@ -547,7 +547,7 @@ Moving sideways without body position and then contacting a player without the p
 
 10. **As a shooter, read the goalie's depth and whether they are square before you choose the shot; as a goalie, choose your depth and your save on purpose.** A goalie who challenges hides more net but opens the back door.
 
-11. **Play the puck, not the goalie, even out of the crease.** ⚠️ **A charge on a goalie can end your game in any book:** always under Hockey Canada, and under CARHA in the crease or if it injures. Under USA Hockey it must if the charge is reckless (plan on a match too) or reaches the head, face or neck, even carelessly.
+11. **Play the puck, not the goalie, even out of the crease: go around them, and pull up if you cannot.** ⚠️ **A charge on a goalie can end your game in any book, and in some it must.**
 
 12. **When your goalie shouts *"Screen!"*, hold your ice — no lean, no push.** In a CARHA league, women's hockey or a non-checking division, keep your body off the screener. ⚠️ **Never shove with the shaft:** a cross-check can end your game in every book, and on the back it can be called checking from behind, which ends it in most.
 
