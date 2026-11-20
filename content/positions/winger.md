@@ -300,6 +300,7 @@ Action: Cut off the passing options and force the puck carrier wide toward the b
 Convention: Lane-blocking belongs to a containment structure — a 1-2-2, a 1-2-2 trap or a 1-3-1 — and is not a law of hockey
 Options: Under an aggressive press the lane-blocking instruction reverses: forwards hunt the puck and the weak-side winger does leave the lane
 Action: Find out which neutral-zone system your team plays and what the call is for switching — most run two or three depending on the score and the shift
+Convention: In a left-wing lock the locking winger drops to the half-boards and, if the forecheck does not win the puck, slides into line with the two defencemen as a third player across. Many teams lock whichever winger is highest — ask if yours plays it and who locks
 Risk: Leave your lane under containment and you open a seam the single defenceman behind their three-player line cannot cover
 Goal: Prevent a clean entry — force a difficult pass, force them wide, or force a dump-in
 ```
@@ -317,6 +318,8 @@ Goal: Prevent a clean entry — force a difficult pass, force them wide, or forc
 **Goal:** Prevent a clean entry into your defensive zone. Force the opponent to make a difficult pass, go wide, or dump the puck in.
 
 **Key considerations:** Under a containment structure, blocking lanes is more effective than chasing: if you leave your lane to pressure the puck, you create a gap that the opponent will exploit, and the single defenceman behind their three-player line cannot cover two lanes. Stay disciplined. Under a press that trade is reversed deliberately — you accept the gap in exchange for winning the puck back sooner — so the discipline there is to pressure *together* rather than one player freelancing.
+
+**If your team plays the left-wing lock, one winger is effectively a third defenceman whenever the puck is going the other way.** Two forwards, usually the centre and right wing, forecheck hard in their end. The locking winger, conventionally the left wing, does not join them: drop back to the half-boards, and the moment the forecheck has not won the puck, slide into line with your two defencemen as the third player across the back. That slide is your backcheck in this system, in place of picking up the late forward. Each of the three covers about a third of the ice's width, which is how your team forechecks with two without giving up odd-man rushes. Read the transition early; a locking winger who reacts late gives the team the worst of both systems. The price is yours to pay: you are out of the counterattack, you carry less of the attack, and your line has one fewer attacker to cycle with in their end. Many teams now lock whichever winger is highest in the zone instead, which needs a loud, immediate call. The lock is a coaching choice, not a law of hockey, so find out whether your team plays it and which winger locks. [Neutral Zone Systems](../systems/neutral_zone_systems.md#the-left-wing-lock) and [Forechecking Systems](../systems/forechecking_systems.md#2-3-and-the-left-wing-lock) set it out.
 
 ---
 
