@@ -366,8 +366,8 @@ const neutralZoneOutside = {
     'puck just short of centre ice, in the middle lane. Two opposition forwards are ahead of ' +
     'the centre in the middle, closing. Two of your own forwards are wide, one in each wall lane. ' +
     'Both goalies are in their creases. Two routes, both starting on the centre and both ' +
-    'alternatives rather than a sequence: a pass out to the wide forward on the near side, ' +
-    'ending short of that forward, and a chip to the near boards, finishing at the wall inside the ' +
+    'alternatives rather than a sequence: a pass out to the wide forward on the wall at the top of the picture, your left, ' +
+    'ending short of that forward, and a chip to those same boards, finishing at the wall inside the ' +
     'neutral zone and well short of the attacking blue line. Your defencemen and theirs are ' +
     'not drawn.',
 
@@ -487,12 +487,12 @@ const arriveBehindThePuck = {
 
   describe:
     'The attacking half of the rink, the net being attacked at the right, with the attack ' +
-    'coming from the left. Three of your own forwards: a winger wide on the near side with the ' +
+    'coming from the left. Three of your own forwards: a winger wide at the top of the picture, your left, with the ' +
     'puck, a stride short of the blue line; the centre in the middle lane, further from the ' +
     'line than the puck is; and the other winger wide on the far side. Two opposition ' +
     'defencemen stand just inside their blue line, one either side of the middle, and their ' +
     'goalie is in the crease. Two routes, drawn as one instant rather than a sequence: the ' +
-    'winger carrying the puck across the line on the near side, and the centre skating through ' +
+    'winger carrying the puck across the line on that side, and the centre skating through ' +
     'the middle and across the line behind it. Neither reaches either defenceman.',
 
   players: [
@@ -572,7 +572,7 @@ const slotOptions = {
   describe:
     'The attacking half of the rink, the net being attacked at the right, and no opposition ' +
     'skaters drawn — this is the free-space case. Four of your own: the centre with the puck in ' +
-    'the slot between the faceoff circles; a winger on the near half-wall; a winger in the far ' +
+    'the slot between the faceoff circles; a winger on the half-wall at the top of the picture, your left; a winger in the far ' +
     'faceoff circle; and a defenceman at the point near the blue line. The opposing goalie ' +
     'is in the crease. Four routes, all starting on the centre and all alternatives — a shot at ' +
     'the net, and three passes, to the winger on the half-wall, to the winger in the far ' +

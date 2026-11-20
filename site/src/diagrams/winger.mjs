@@ -622,9 +622,11 @@ const arrivingAtTheLine = {
  *                     leaves 1.67 ft of ice, the separation `winger-dz-rim`
  *                     settled on. At the first placement, (84, 27), the two
  *                     glyphs overlapped.
- *   own D   (56, 20)  the top of the right faceoff circle — defender.md's
- *                     activated depth, 35 ft out from the goal line.
- *   own C   (72, 6)   in the slot, 16.3 ft from the right circle's centre
+ *   own D   (56, 20)  the top of the top faceoff circle (the attackers'
+ *                     LEFT circle, rink.json's mirrored `:right` key) —
+ *                     defender.md's activated depth, 35 ft out from the
+ *                     goal line.
+ *   own C   (72, 6)   in the slot, 16.3 ft from the top circle's centre
  *                     so just OUTSIDE the painted arc at 15. He is not in
  *                     the high slot's own patch by accident: winger.md
  *                     leaves that layer to the centre and this is his.

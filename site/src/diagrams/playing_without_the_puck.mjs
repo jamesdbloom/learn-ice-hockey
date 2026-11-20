@@ -373,7 +373,8 @@ const unmarkedNotAvailable = {
  * the crease, both of which this project forbids. The wedge carries it.
  * ------------------------------------------------------------------------- */
 
-// The puck at the right point. Everything else in the picture is derived from the
+// The puck at the top point (the attackers' LEFT point — `point:right` is a mirrored
+// key, see site/scripts/lib/rink.mjs). Everything else in the picture is derived from the
 // straight line between it and the middle of the goal, because that line is what
 // the section means by "the sightline between the puck and the goalie".
 const D4_POINT = 'point:right';                        // (25, 20)

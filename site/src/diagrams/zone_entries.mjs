@@ -533,7 +533,8 @@ const hardRim = {
   ],
 
   routes: [
-    // 1 — along the right wall into the corner. Nearly straight: the wall is.
+    // 1 — along the top wall (the attackers' LEFT wall; `boards:right` and
+    //     `corner:right` are mirrored keys) into the corner. Nearly straight: the wall is.
     { from: { at: 'boards:right', dx: -35, dy: -6 }, to: RIM_CORNER, kind: 'pass', bow: 1.5 },
     // 2 — round behind the net to the far corner. Bowed toward the end boards so
     //     the puck goes *behind* the net; the unbowed chord would run straight

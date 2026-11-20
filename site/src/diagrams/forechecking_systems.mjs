@@ -132,8 +132,8 @@ const forecheckAngling = {
 
   caption:
     'The skill every forecheck here assumes: skate at the space you want to deny, not at the ' +
-    'puck. One forechecker curls in from the weak side on a carrier retrieving behind their own ' +
-    'net, cutting that side off and forcing them back toward the strong-side wall. No contact is ' +
+    'puck. One forechecker comes in from the weak side, along the goal line toward a carrier retrieving ' +
+    'behind their own net, to take that side away and leave the strong-side wall as the carrier’s only route. No contact is ' +
     'drawn, because the aim is to eliminate options rather than land a hit. Which side to take ' +
     'away is a coaching choice, not a rule — the common default takes the middle, some coaches ' +
     'invert it, so find out which your team plays before your first shift.',
@@ -141,7 +141,7 @@ const forecheckAngling = {
   describe:
     'Attacking half of the rink, the opposition net at the right. Three players: the goalie ' +
     'in the crease, their defenceman behind the net with the puck, and one forechecker on the goal ' +
-    'line below them, a little nearer centre ice. A short route runs from the forechecker up the goal line ' +
+    'line below them, a little nearer centre ice. A short route runs from the forechecker along the goal line ' +
     'toward the net, finishing just below the bottom post, well short of the defenceman. No ' +
     'route is drawn for the defenceman and no contact is shown.',
 
@@ -1483,8 +1483,8 @@ const forecheck23Lock = {
     'the far corner, the wingers W1 and W2 on the two half-walls, and the goalie in the crease. Five ' +
     'own players in two groups rather than three: F1 deep at the goal line on the puck side and F2 deep ' +
     'inside the puck-side circle, the two who forecheck; and behind them the two defencemen on the ' +
-    'offensive blue line at the two points. The third forward, F3, is the odd one out — they stand on the ' +
-    'top wall — the attacker\'s left and the puck side — nearer the blue line than the opposing winger there, out of the attack, and a single arrow runs from them ' +
+    'offensive blue line at the two points. The third forward, F3, is the odd one out. They stand on the ' +
+    'top wall (your left as you attack, and the puck side), nearer the blue line than the opposing winger there, out of the attack, and a single arrow runs from them ' +
     'diagonally back up the ice, finishing short of the blue line between the two defencemen. Nobody else ' +
     'is drawn with a route.',
 

@@ -529,7 +529,7 @@ const safeOutlets = {
   describe:
     'The defending half of the rink, the defended net at the right, with the goalie ' +
     'standing behind their own net and the puck just beside them. Three dashed lines — the ' +
-    'notation for a pass — leave the puck. One runs up the near boards to a defenceman of ' +
+    'notation for a pass — leave the puck. One runs up the boards at the top of the picture to a defenceman of ' +
     'yours standing on the wall level with the goal line, stopping short of them. One curves ' +
     'around the back of the net and down the far boards toward one of your forwards on the ' +
     'far half-wall, again stopping short. The third arcs over the top of the net and into a ' +
@@ -654,7 +654,7 @@ const rimStopOrClear = {
   describe:
     'The defending half of the rink, the defended net at the right. The area behind the goal ' +
     'line between the two red trapezoid lines is shaded. A dashed line — the notation for a ' +
-    'pass — starts high on the near boards in front of the goal line and curves around the ' +
+    'pass — starts high on the boards at the top of the picture, in front of the goal line, and curves around the ' +
     'end boards behind the net, crossing the goal line far out near the boards and outside ' +
     'the shaded area, then running into it and stopping short of the goalie, who stands ' +
     'behind their own net inside the shaded area. One defenceman of yours is coming back on ' +
@@ -940,7 +940,7 @@ const fiftyFiftyPuck = {
 
   describe:
     'The defending half of the rink, the defended net at the right, and the net has nobody in ' +
-    'it. A loose puck sits in the near corner, in front of the goal line. The goalie is ' +
+    'it. A loose puck sits in the corner on the goalie’s right (the top of the picture), in front of the goal line. The goalie is ' +
     'drawn out of their crease and part of the way to it, about six feet away. An opposition ' +
     'forward is arriving at the same puck from the other side and is slightly closer to it ' +
     'than the goalie is. No routes are drawn, and nothing marks who wins the race: the ' +

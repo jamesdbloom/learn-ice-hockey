@@ -194,24 +194,30 @@ const sixOnFive = {
 //             them either, for the reason its header gives — the section never
 //             says where they stand. The caption says so rather than letting the
 //             absence read as a claim that they are elsewhere.
-//   Not drawn: the clear itself. A dashed puck route escaping up the right wall
-//             was tried and REJECTED: the player who is drawn staying is the
-//             LEFT point man, 40 ft across the ice, and he cannot reach a puck
-//             on the right wall. Drawing the escape and the insurance in one
+//   Not drawn: the clear itself. A dashed puck route escaping up the top wall
+//             (the attackers' LEFT wall) was tried and REJECTED: the player who
+//             is drawn staying is the bottom point man (`point:left`, the
+//             attackers' RIGHT point), 40 ft across the ice, and he cannot reach
+//             a puck on the top wall. Drawing the escape and the insurance in one
 //             frame would have taught that he stops that specific puck, which is
 //             not what the section claims. The section's claim is only that one
 //             of them stays; the caption carries it in those terms.
 //
 // WHICH ONE PINCHES. The section does not say, and the caption says it does not.
-// The right-side point man is drawn pinching because the puck is drawn on the
-// right wall, which is a drawing decision and nothing more. Personnel follows
-// `six-on-five-shape` exactly — a defenceman on the right point, a forward on
-// the left — so the pinching glyph is a triangle and the staying glyph a circle.
-// That inherits the header's personnel note above; it does not add to it.
+// The top point man (`point:right`, the attackers' LEFT point) is drawn pinching
+// because the puck is drawn on the top wall, which is a drawing decision and
+// nothing more. Personnel follows `six-on-five-shape` exactly — a defenceman on
+// the top point, a forward on the bottom one — so the pinching glyph is a
+// triangle and the staying glyph a circle. That inherits the header's personnel
+// note above; it does not add to it.
+// ⚠️ rink.json's sided keys are MIRRORED for an attacker (see the header of
+// site/scripts/lib/rink.mjs): `:right` is +y, the top of the picture, which is
+// the attackers' LEFT. Never take a side word from a key's suffix.
 
-// The opposition skater with the puck, on the right wall between the half-wall
-// and the blue line. `half-wall:right` is (69, 38.5) — the boards level with the
-// faceoff dot — and dx -21 walks that 21 ft up-ice toward the line.
+// The opposition skater with the puck, on the top wall (the attackers' LEFT
+// wall) between the half-wall and the blue line. `half-wall:right` is
+// (69, 38.5) — the boards level with the faceoff dot — and dx -21 walks that
+// 21 ft up-ice toward the line.
 //
 // DRAWN AS A FORWARD, not a defenceman: at 6-on-5 the section never says who
 // retrieves, both are ordinary, and a circle is the smaller glyph (ink 3.875 ft

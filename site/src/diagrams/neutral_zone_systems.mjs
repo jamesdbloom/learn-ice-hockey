@@ -319,7 +319,7 @@ const wall131 = {
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right, opponents attacking right to ' +
-    'left. One opposition defenceman carries the puck out on the near-side wall; both goalies are ' +
+    'left. One opposition defenceman carries the puck out on the side at the top of the picture; both goalies are ' +
     'shown. Our five in three rows: F1 alone in the middle of the ice just inside the opponents’ ' +
     'blue line; then F2 on one wall, a defenceman in the middle and F3 on the other wall, all three level ' +
     'with each other just inside the centre red line and spanning the width of the sheet; then a single ' +
@@ -670,7 +670,7 @@ const regroup = {
     'The full sheet, with our own net at the left and our team attacking to the right. Two of our ' +
     'defencemen are just inside our own blue line, one on each side of the ice, with a clean lane between ' +
     'them. Our three forwards are at three clearly different depths in the neutral zone: one high on the ' +
-    'near wall who has just turned the puck back, one swinging wide and low on the far wall, and one high ' +
+    'puck’s wall (the top of the picture) who has just turned the puck back, one swinging wide and low on the far wall, and one high ' +
     'in the middle near the opponents’ blue line as the stretch option. Two opposition players hold ' +
     'the middle third, one of them pressuring the forward who turned the puck back; neither is in the ' +
     'lane between our defencemen. Two numbered routes, both passes: one, the forward’s pass back; ' +
@@ -942,7 +942,7 @@ const standUpAtTheLine = {
   describe:
     'The full sheet. Our own net is at the left with our goalie in it, our own blue line a ' +
     'quarter of the way in from that end, and an opposition puck carrier is coming the other way ' +
-    'through the neutral zone on the near side, about twenty feet short of that line. One of our ' +
+    'through the neutral zone on the puck’s side (the top of the picture), about twenty feet short of that line. One of our ' +
     'defencemen stands just inside the blue line in front of the carrier, in the dot lane, with no route ' +
     'drawn at all: their feet are stopped. Two routes come from the carrier and both pass outside ' +
     'the defenceman on the boards side rather than into them — a dashed line, the puck chipped ' +
@@ -1019,10 +1019,10 @@ const backOffAtTheLine = {
   describe:
     'The full sheet, and the same arrangement as the diagram beside it: our own net at the left ' +
     'with our goalie, our own blue line a quarter of the way in, and an opposition puck ' +
-    'carrier coming the other way on the near side about twenty feet short of that line. Our ' +
+    'carrier coming the other way on the puck’s side (the top of the picture), about twenty feet short of that line. Our ' +
     'defenceman is in exactly the same place as in that diagram, just inside the blue line, but ' +
     'here they have a backward skating route retreating into our zone and drifting toward the middle ' +
-    'of the ice as they go. The carrier’s route curves away from the defenceman toward the near boards and ' +
+    'of the ice as they go. The carrier’s route curves away from the defenceman toward the boards on that side and ' +
     'deeper into the zone: the carrier has been let in and steered outside. A shaded band down the centre ' +
     'of the ice, its long edges on the faceoff-dot lines, running from the blue line back to the ' +
     'level of our end-zone faceoff dots, is labelled "the middle" — ' +

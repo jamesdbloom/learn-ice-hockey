@@ -344,8 +344,9 @@ const laneAndTheStep = {
 // not have. The same reason `offensive_zone_play.mjs` gives for its own fan diagrams.
 // ---------------------------------------------------------------------------
 
-// The carrier, wide on the right wing. Nine feet up-ice of the right-hand faceoff dot
-// and eleven feet outside it toward the boards, which puts him 9.5 ft off the dasher
+// The carrier, wide on the top wing (the carrier's LEFT wing, attacking the net at the
+// right — `faceoff-dot:right` is a mirrored key, see site/scripts/lib/rink.mjs). Nine
+// feet up-ice of the top faceoff dot and eleven feet outside it toward the boards, which puts him 9.5 ft off the dasher
 // and on the outer edge of the faceoff circle.
 //
 // ⚠️ THIS WAS (62, 28) AND IT DID NOT READ AS WIDE. Rendered, the marker sat well

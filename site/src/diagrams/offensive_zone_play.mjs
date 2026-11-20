@@ -139,8 +139,8 @@ const homePlate = {
         'top-of-circle:right',              // (54,  22)
         'top-of-circle:left',               // (54, -22)
         'faceoff-dot:left',                 // (69, -22)
-        { at: 'goal-line', dy: -3 },        // (89,  -3)  left post
-        { at: 'goal-line', dy: 3 },         // (89,   3)  right post
+        { at: 'goal-line', dy: -3 },        // (89,  -3)  bottom post (attacker's RIGHT)
+        { at: 'goal-line', dy: 3 },         // (89,   3)  top post (attacker's LEFT)
         'faceoff-dot:right',                // (69,  22)
       ],
       label: 'home plate',

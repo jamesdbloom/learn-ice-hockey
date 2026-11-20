@@ -293,8 +293,8 @@ The defending team's way out is usually a rim along the boards or a clear up the
 
 - **Read it before it arrives.** Watch the defender who is about to move the puck, not the puck already travelling up the wall, and be a stride inside the line before it gets there.
 - **Stop it first, then play it.** On a rim, put your stick blade, a skate turned along the boards, or your body against the wall in its path; if it is your body, skates parallel to the wall, head up and chin off your chest. On a clear up the middle, square up and get your body in front of it — head up and out of its line, padded surfaces to it, stick out of the lane, as [shot blocking](../technique/body_contact_and_battles.md#shot-blocking-technique) sets out. A puck settled at the line is a new possession; a puck you swiped at and missed can be an odd-man rush the other way.
-- **If you cannot control it, put it back deep.** A hard, high or bouncing puck is not the moment to settle it and walk the line — chip it back down the wall to the corner for your forwards and keep the shift alive.
-- **If it is already past you, get back.** Turn and skate rather than chase a lost cause at the line; whoever covers for you should already be on the way.
+- **If you cannot control the puck, put it back deep.** A hard, high or bouncing puck is not the moment to settle it and walk the line — chip it back down the wall to the corner for your forwards and keep the shift alive.
+- **If the puck is already past you, get back.** Turn and skate rather than chase a lost cause at the line; whoever covers for you should already be on the way.
 
 How hard your defencemen fight for the line is a coaching choice. The common default is to hold anything you can reach and get back on anything you cannot. Some teams tell defencemen to give up a hard rim rather than risk it, and some have the weak-side forward slide up to the far point whenever the puck is rimmed. Ask which yours plays.
 

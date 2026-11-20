@@ -134,8 +134,10 @@
  * which this notation has no head, no facing and no stick to draw.
  * ------------------------------------------------------------------------- */
 
-// The carrier, inside the attacking zone on the right side and above the faceoff dot:
-// 9.8 ft from the right circle's centre (69, 22), so unambiguously inside the circle
+// The carrier, inside the attacking zone on the top side of the picture (the attacker's
+// LEFT — `top-of-circle:right` is a mirrored key, see site/scripts/lib/rink.mjs) and
+// above the faceoff dot: 9.8 ft from the top circle's centre (69, 22), so unambiguously
+// inside the circle
 // rather than sitting on its edge. Board clearance at x 60 is on the STRAIGHT boards —
 // the corner arc, centre (72, 14.5) radius 28, only bites beyond x 72 — so the inner
 // ink edge is 42.2 and the halo clears the wall by 12.3 ft.

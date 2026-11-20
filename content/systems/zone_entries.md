@@ -358,9 +358,9 @@ Take the puck down the boards outside the defenceman and get to the goal line or
 
 ![](diagram:entry-wide)
 
-- **Why it works:** the defender must turn and skate, and every stride they take toward the boards is a stride away from the front of the net.
+- **Why the wide entry works:** the defender must turn and skate, and every stride they take toward the boards is a stride away from the front of the net.
 - **What you need:** a support player driving the net so that when you reach the goal line you have somewhere to put it, and a third player high for the back-door or point option.
-- **When it fails:** when you go wide with nobody behind you. Then you are alone below the goal line with three defenders between you and the net, which is not an attack, it is a slow dump-in with extra steps.
+- **When the wide entry fails:** when you go wide with nobody behind you. Then you are alone below the goal line with three defenders between you and the net, which is not an attack, it is a slow dump-in with extra steps.
 
 **Where the net drive stops: at the edge of the blue paint, off the red line around it, short of the goalie.** Screen from there. Screening from *outside* the crease without contact is normally legal and worth doing — but it is not a guaranteed goal. Under the NHL, IIHF and PWHL a goal can still be disallowed if your positioning stops the goalie moving freely in the crease.
 
@@ -730,14 +730,14 @@ From one side of the ice, shoot the puck hard **diagonally** across into the far
 Action: Shoot the puck hard diagonally into the far corner, or straight north down your own side, depending on where your speed is
 Read: The retrieving defenceman is on your side, or the strong-side corner is crowded
 Goal: Force their weak-side defenceman into a long retrieval on their backhand, facing their own boards, with a forechecker arriving — awkward by design, though no count ranks retrievals
-Never: Dump cross-corner into nobody — your far-side winger has to have read it and be going there
+Never: Dump cross-corner into nobody — your far-side winger has to have read the dump and be going there
 ```
 
 ![](diagram:dump-cross-corner)
 
 - **The read:** the retrieving defenceman is on your side, or the strong-side corner is crowded.
-- **Why:** it moves the puck away from the defender best placed to get it and forces their weak-side defenceman into a long retrieval on their backhand, facing their own boards, with a forechecker arriving behind them. That is an awkward retrieval by design; which retrievals are hardest is coaching judgement rather than a counted ranking.
-- **What you need:** your far-side winger to have read it and be going there. Cross-corner dumps into nobody are pure giveaways.
+- **Why:** the dump moves the puck away from the defender best placed to get it and forces their weak-side defenceman into a long retrieval on their backhand, facing their own boards, with a forechecker arriving behind them. That is an awkward retrieval by design; which retrievals are hardest is coaching judgement rather than a counted ranking.
+- **What you need:** your far-side winger to have read the dump and be going there. Cross-corner dumps into nobody are pure giveaways.
 
 ### 5. The flip / area dump over a trap
 

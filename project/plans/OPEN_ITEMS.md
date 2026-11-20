@@ -13,21 +13,20 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W515 shipped with record `w515_rink_sides_attacking_frame_and_mirrored_lock_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W516 shipped with record `w516_side_frames_bare_it_and_one_census_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W515 (20 Nov; row 1 closed in W515; forecheck-angling closed from row 2):**
-  - **(2) Optional: near/far wording with no stated frame.** goaltender.mjs: goalie-safe-outlets, goalie-rim-stop-or-clear, goalie-fifty-fifty-puck. neutral_zone_systems, center, zone_entries and defender describes use "near side" to mean the puck's side. The corpus defines "far side" as the non-bench side (rink_map :260), but no diagram draws a bench.
-  - **(3) Comment-only mirrors** (not shipped). They name an attacking-end +y anchor "right": game_management.mjs :197–212, practice_and_development.mjs :137–138, shooting.mjs :347, winger.mjs :625/:627, zone_entries.mjs :536, offensive_zone_play.mjs :142–143, playing_without_the_puck.mjs :376. Tidy each while its module is open.
-  - **(5) List items that open with a bare "it".** A listener hears each one straight after whatever the previous item ended on. W515 fixed four "Once it reaches the head" copies (goaltender :1710; forechecking_systems :983, :984; goaltender :1632). Sweep the rest: `grep -rnE '^\s*- \*\*(Once |When |If )?it ' content`. Read each aloud in context.
+- **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; row 6 partly):**
+  - **(7) Chunk-opening bare pronouns, corpus-wide.** W516 found two list leads that open a spoken chunk with "it" and no referent (defensive_zone_coverage :755, zone_entries :361). A bare "it", "this" or "that" opening any paragraph or facts line straight after a chunk boundary has the same defect. Grep cannot find these; it needs the render. Candidate: a worklist tool in scripts/ (coordinator, between waves) that lists every chunk whose first sentence opens with a pronoun.
   - **(6) Optional, from the diagram-reviewer:**
     - forecheck-2-3-lock's lock route ends in the middle lane while nz-left-wing-lock puts LW in the outside third. The caption hedges this. Aim it nearer the top lane, or leave it.
     - Its "holds the line" and "first in" labels are crossed by paint (pre-existing).
-    - forecheck-angling's caption "curls in from the weak side" oversells the drawn route.
+  - **(8) More frameless "near side" wording** outside W516's modules: forecheck-roles-rotate (describe), entry-high-triangle and entry-vs-standing-up (describes), and defend-squash-and-slide (describe and caption: "the puck is on the near side, so the near one fo…"). All are in zone_entries.mjs or forechecking_systems.mjs.
+  - **(9) goaltender.mjs: other describes that say "the goalie's right/left".** These read correctly only when the goalie is in the crease facing out. W516 changed the two with the goalie behind the net to picture terms. Audit the rest for goalie position: `grep -n "goalie's \(right\|left\)" site/src/diagrams/goaltender.mjs`.
   - **(4) Not checked by the W515 census:** route and arrow directions, forehand/backhand claims against drawn sides (e.g. dump-cross-corner), drill SVGs in site/src/drills/, and prose far from a marker.
 - **From W514 (20 Nov; rows 1 and 2 closed in W515):**
   - **(3) practice_and_development.mjs drill-execution-no-opponent** still opens "The attacking half of the rink, the net at the right". Same shape as W508(22); whether "opposition" fits a drill with no opponent is a judgement.
-  - **(5) "A reckless / forceful / violent one" antecedents.** W515 fixed the "one meant to injure" copies. The same shape in other adjectives was not swept: `grep -rniE '\b(a|an) (reckless|forceful|violent|highly violent|light|deliberate|careless) one\b' content`. Read each aloud in context. Center :789's "There, a forceful one on a goalie…" is a known candidate.
+  - **(5) "A reckless / forceful / violent one" antecedents: 106 DEFECT and 27 UNSURE sites in 31 files.** The W516 census is the worklist: `project/reviews/one_antecedent_census_2026-11-20.md`. Line numbers drift, so re-locate each site by its text. Make one wording decision per recurring shape (F1–F6) and dispatch one agent per file group. Each editing agent must confirm the act behind each rule before naming it. Facts lines are among the sites. Adjectives the sweep missed are listed in that record.
   - **(4) Optional: the-trapezoid label.** It still crosses the goal line (the word is wider than the region) and sits about 2 px from the boards at phone width. Option: put it outside the region with a leader.
 - **From W513 (20 Nov; rows 5, 8 and 9 closed in W514, 10 in W515; rows 2–3 partly):**
   - **(1) CARHA 53(a).** It allows a discretionary match with no condition ("A Match penalty could also be assessed under this rule", carha_2026.txt ~:2611). No site says so. Many sites state "Hockey Canada and CARHA must…" or name CARHA 53(b) alone. This grep over-matches (on 20 Nov it returned 112 lines, some already naming every book); re-find them with `grep -rnE 'Hockey Canada and CARHA (must|make)|CARHA 53\(b\)|53\(b\)\)' content/`. Decide whether CARHA's whole answer needs the clause (probably only in owner sections and rules_primer).

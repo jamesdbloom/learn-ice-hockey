@@ -365,7 +365,7 @@ const stepUp = {
   describe:
     'The defending half of the rink, your own net at the right, your goalie in the ' +
     'crease. Your own blue line runs across the picture near the left-hand edge. One of ' +
-    'your defencemen is a few feet inside that line on the near side, labelled "you", and ' +
+    'your defencemen is a few feet inside that line on the puck’s side (the top of the picture), labelled "you", and ' +
     'their route runs forward and out across the line toward an oncoming opposition forward, ' +
     'ending in two short bars rather than an arrowhead. That forward is out in the neutral ' +
     'zone on the same side with the puck beside them, and their own route carries them toward ' +
