@@ -648,7 +648,11 @@ const cornerEscapeRoutes = {
     'region is drawn. Nothing in the picture shows contact between the two players.',
 
   players: [
-    { id: 'A1', team: 'opp', pos: 'F', at: C_CARRIER, label: 'two ways out' },
+    // W586 labelHint (20 Nov 2026): the auto slot put the words over the faceoff dot at (69, 22) and
+    // across the circle's right arc. [-1, -16] (text at (78, 18), honoured by the placer) clears the
+    // dot by ~0.95 ft; the arc crossing remains and is accepted -- no honoured slot clears both, and a
+    // shorter label would lose the caption's "two ways out" echo.
+    { id: 'A1', team: 'opp', pos: 'F', at: C_CARRIER, label: 'two ways out', labelHint: [-1, -16] },
 
     // A D, because the section's own default has the low corner belonging to the strong-side
     // defenceman — "Under a low zone collapse, the low corner belongs to the strong-side

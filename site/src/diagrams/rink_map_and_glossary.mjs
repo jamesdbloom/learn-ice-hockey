@@ -573,8 +573,13 @@ const theTrapezoid = {
       // this one keeps it in the shaded half below the net — clear of the net, the crease and
       // the boards — and lets its first letters run over the goal line onto open ice.
       // Label only; the polygon is unchanged (see the MOVE THE LABEL, NOT THE ZONE note in rink.mjs).
-      labelDx: -1.6,
-      labelDy: -7.5,
+      // W586 (20 Nov 2026): -1.6 / -7.5 left the word's last letter ~2 px from the end-boards stroke at
+      // 400 px. -3.5 / -9.5 (centre ~(89.9, -9.5)) moves it ~2 ft further from the boards and further
+      // from the crease, still in the shaded half below the net and clear of the lower faceoff circle.
+      // It still crosses the goal line: the word (~14 ft) is wider than the region is deep (11 ft), and
+      // zone labels have no leader, so a slot outside the region would not say which region it names.
+      labelDx: -3.5,
+      labelDy: -9.5,
       // No outline. This is the one region in this file that is genuinely painted on
       // the ice, and the renderer already draws the two red lines that are the paint.
       // A second, blue, dashed outline drawn on top of them competes with the real

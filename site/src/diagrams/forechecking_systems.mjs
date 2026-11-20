@@ -1509,14 +1509,19 @@ const forecheck23Lock = {
 
     // "Two forwards forechecking aggressively" — the stacked 2-1-2's two, on the
     // same two points, so the comparison isolates the third forward.
-    { id: 'F1', pos: 'F', at: STACK_F1,    label: 'first in', labelHint: [-0.73, 6.75] },
+    // W586 labelHints (20 Nov 2026): "first in" crossed the goal line and a faceoff circle, and both
+    // "holds the line" labels sat across the blue line. [-6, -11] puts "first in" in front of the goal
+    // line below-left of F1, leader to F1; [11, 9] and [11, -6] put each "holds the line" just inside
+    // the zone beside its defenceman, leader to each. All three clear paint (check_label_paint), tested
+    // together; the placer honours each.
+    { id: 'F1', pos: 'F', at: STACK_F1,    label: 'first in', labelHint: [-6, -11] },
     { id: 'F2', pos: 'F', at: STACK_F2,    label: 'second in' },
     // 11 ft above their winger, which is what lets him lock: he is between that
     // winger and the line he has to get back to. At the bare half-wall datum the
     // two glyphs sit on the same point.
     { id: 'F3', pos: 'F', at: LOCK_WINGER, label: 'the winger locks', labelHint: [-21, 1] },
-    { id: 'D',  pos: 'D', at: 'point:right', label: 'holds the line' },
-    { id: 'D',  pos: 'D', at: 'point:left',  label: 'holds the line' },
+    { id: 'D',  pos: 'D', at: 'point:right', label: 'holds the line', labelHint: [11, 9] },
+    { id: 'D',  pos: 'D', at: 'point:left',  label: 'holds the line', labelHint: [11, -6] },
   ],
 
   // One route, and it is the conditional half of the job: "if the puck is not

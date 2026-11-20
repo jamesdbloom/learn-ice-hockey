@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W584 and W585 shipped with record `w585_risk_options_subjects_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W586 shipped with record `w586_trapezoid_lock_and_two_ways_out_labels_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -107,13 +107,11 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.
 - **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; 7 in W518; 8 and 9 in W520; row 6 partly):**
-  - **(6) Optional, from the diagram-reviewer:**
-    - forecheck-2-3-lock's lock route ends in the middle lane while nz-left-wing-lock puts LW in the outside third. The caption hedges this. Aim it nearer the top lane, or leave it.
-    - Its "holds the line" and "first in" labels are crossed by paint (pre-existing).
+  - [(6) closed in W586: the forecheck-2-3-lock route is left in the middle lane, as the host's "three-player wall across the ice" requires. Its "holds the line" and "first in" labels are moved off paint.]
   - **(4) Not checked by the W515 census:** route and arrow directions, forehand/backhand claims against drawn sides (e.g. dump-cross-corner), drill SVGs in site/src/drills/, and prose far from a marker.
 - **From W514 (20 Nov; rows 1 and 2 closed in W515, 5 in W517):**
   - **(3) practice_and_development.mjs drill-execution-no-opponent** still opens "The attacking half of the rink, the net at the right". Same shape as W508(22); whether "opposition" fits a drill with no opponent is a judgement.
-  - **(4) Optional: the-trapezoid label.** It still crosses the goal line (the word is wider than the region) and sits about 2 px from the boards at phone width. Option: put it outside the region with a leader.
+  - [(4) closed in W586: the-trapezoid label moved off the boards. It still crosses the goal line because the word is wider than the region; a zone-label leader would need rink.mjs.]
 - **From W513 (20 Nov; rows 5, 8 and 9 closed in W514, 10 in W515; rows 2–3 partly; row 1 closed in W571):**
   - **(2) Facts lines left at the cap without the all-book intent claim.**
     - offensive_zone_play :967 (pinch block at HARD_MAX; owner facts and body :1010 carry it).
@@ -364,13 +362,11 @@ These questions sit inside the rows above and need the owner's call before anyon
     - The summary line's "in scope" count does not show [c]'s 16 extra routes.
     - [defender-holding-the-line puck closed in W551: kept on purpose. It sits clear of the passer's glyph, and the route aims at the lane, not the puck.]
   - [W556 closed the corner-escape-routes "takes the middle away" label: labelHint [0, −17] puts it in the slot.]
-  - **corner-escape-routes "two ways out" (A1) label.** It sits on the faceoff dot at (69, 22), and its right end runs 0.92 ft past the circle arc.
-    - 736 hint positions were tried; none the placer accepts clears both, because of the ownership rule.
-    - Options: shorten the label (e.g. "two exits", but that loses its echo of the caption); let a spec force a position in rink.mjs; or accept it.
+  - [corner-escape-routes "two ways out" closed in W586: labelHint [-1,-16] clears the dot; the arc crossing is accepted, to keep the caption echo.]
   - **Label-paint leftovers (from W558/W559).**
     - W559 moved dz-box-plus-one "the only one chasing", the-risk-map "their end" and dz-walk-down-man "on the corner"/"on the net front". They are now off the goal line, net and crease; three still cross a circle arc, because no accepted slot avoids it.
     - The dot test misses a dot grazing the letter tops: the 15% vertical inset, plus the halo, which is not counted.
-    - 463 hits remain on the worklist. 2 are `--severe` and kept on purpose: faceoff-where-the-draw-goes "carried offside" (the word gap is on the blue line) and offside-faceoff-location "if carried" (a false positive from the width estimate).
+    - 460 hits remain (W586 moved the-trapezoid, forecheck-2-3-lock and "two ways out") on the worklist. 2 are `--severe` and kept on purpose: faceoff-where-the-draw-goes "carried offside" (the word gap is on the blue line) and offside-faceoff-location "if carried" (a false positive from the width estimate).
     - At 400 px, full-rink diagram labels are 7–10 px tall, which is marginal. That is a format question.
   - [check_label_paint blind spots closed in W556: the inset is capped at half a character, and filled dots are tested. 446 → 467 hits, 12 of them dots. The white halo is still not counted.]
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
