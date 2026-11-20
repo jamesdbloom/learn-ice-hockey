@@ -87,7 +87,7 @@ Key: The last look is always back at the puck
 ```
 
 - **Turn far enough to actually see.** Your chin should pass over your shoulder. Moving only your eyes shows you your own shoulder pad and the frame of your cage or visor, which cut your side vision more than people admit.
-- **It is a snapshot, not a stare.** Take the photograph and process it afterwards. **Nobody has published a measured duration for a hockey scan.** The hockey study below counted a head turn only if it lasted at least 0.2 seconds — a floor, not a typical length — and the football study's 242-millisecond *fixation* measures something else. The usable test: if you are still looking a second later, you have stopped playing.
+- **A scan is a snapshot, not a stare.** Take the photograph and process it afterwards. **Nobody has published a measured duration for a hockey scan.** The hockey study below counted a head turn only if it lasted at least 0.2 seconds — a floor, not a typical length — and the football study's 242-millisecond *fixation* measures something else. The usable test: if you are still looking a second later, you have stopped playing.
 - **Check both shoulders.** Most players favour the side they plan to pass to. The surprise lives on the other side.
 - **Keep skating.** A scan that costs you a stride is one you will stop taking. Scan while gliding, crossing over and pivoting — all of it is trainable.
 - **The last look is always at the puck.** Still looking away when it arrives trades a good decision for a missed reception.
@@ -118,9 +118,9 @@ The football (soccer) research is larger, older and better controlled, and it po
 
 **The follow-up, with better controls.** Jordet and colleagues (*Frontiers in Psychology*, 2020) followed 27 players at one Premier League club through 9,574 possessions in 21 home matches:
 
-- They averaged **0.44 scans a second** (SD 0.30) — roughly **3 scans in the 10 seconds before receiving**.
+- The players averaged **0.44 scans a second** (SD 0.30) — roughly **3 scans in the 10 seconds before receiving**.
 - Central midfielders scanned most, forwards least.
-- They scanned slightly more before **successful** passes (0.46/s) than unsuccessful ones (0.40/s).
+- Overall, the players scanned slightly more before **successful** passes (0.46/s) than unsuccessful ones (0.40/s).
 - Controlling for ability and pass difficulty, the authors called it a **"small, positive role"** for scanning — a real effect, not a dramatic one.
 
 **The counter-evidence.** Caso, McGuckian and van der Kamp ("No evidence that visual exploratory activity distinguishes the super elite from elite football players", *Science and Medicine in Football*, online 2024, print 2025) compared 18 award-winning Champions League players with 18 elite teammates matched by team, match and position. They found **no significant difference in scanning or performance**, though players scanned more before their final reception than the one before.
@@ -388,9 +388,9 @@ Key: The stick is the weakest of the defender cues — a stick is easy to move, 
 
 - **A tight gap — about one to one and a half stick lengths, closing hard.** They mean to end this at the blue line, and their momentum is a commitment. Change pace: slow down and let them over-skate you, cut underneath, or chip the puck past them and race for it. The race is for the puck, not the player: whether you may hit at all is your league's call, and if you can see their numbers, don't hit them — pull up and play the puck. Do not skate straight into a hard closer at full speed — that is the collision they set up.
 - **A soft gap — backing off to protect the middle.** They concede the blue line to protect the **slot**, the ice in front of the net where most goals are scored from. You will get in with the puck but not to the slot. Beat it with the delay (curl back for the second wave), the drop pass, or a shot aimed for a rebound with a body arriving at the net.
-- **Their feet.** Skates parallel and square means they can still pivot either way. Skates angled or hips opened to one side means they *have* committed. Recognise the commitment, then attack the side they opened or abandoned.
+- **A defender's feet.** Skates parallel and square means they can still pivot either way. Skates angled or hips opened to one side means they *have* committed. Recognise the commitment, then attack the side they opened or abandoned.
 - **Standing up versus backing off at the line.** Standing up takes the entry away: chip and chase, pass laterally to a teammate entering in another lane, or regroup rather than forcing it. If you chase, chase the puck, not the player — if you can see their numbers, pull up and play the puck. Backing off gives you the line and takes the middle. (**Stepping up** is challenging forward in the neutral zone or at your own line; a **pinch** is stepping *down* from the *offensive* blue line.)
-- **Their stick.** An active stick in the middle lane protects the middle; a trailing or outside stick means the middle may be open. A stick is easy to move, so this is the weakest cue — weight it below the feet.
+- **A defender's stick.** An active stick in the middle lane protects the middle; a trailing or outside stick means the middle may be open. A stick is easy to move, so this is the weakest cue — weight it below the feet.
 
 The gap figures — one to one and a half stick lengths tight, two to three ordinary through the neutral zone — are coaching convention, not measurement, and the coaching pages that print numbers disagree. [Defending the Rush](../systems/defending_the_rush.md) sets out the scale and which published pages back or contradict each figure; [Neutral Zone Systems](../systems/neutral_zone_systems.md) covers why a tight gap is a five-player job.
 
@@ -497,7 +497,7 @@ An anticipating player shades toward the likely pass while staying between the p
 - You can get there **with your feet**, not by reaching with your stick. Reaching is the physical signature of a guess.
 - The game state allows it. Tied in the second period, fine. Protecting a one-goal lead with two minutes left, no. See [Risk Management](risk_management.md) and [Game Management](../systems/game_management.md).
 
-**When it is how you concede a breakaway:**
+**When jumping the lane is how you concede a breakaway:**
 
 - You are **the last player back**.
 - You are **in your own zone** on anything less than a near-certain read, especially in the middle of it, where a miss is a point-blank chance.

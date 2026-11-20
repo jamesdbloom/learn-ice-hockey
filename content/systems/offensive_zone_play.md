@@ -362,10 +362,10 @@ Goal: Tire the defenders — they skate without the puck and cannot change, and 
 Goal: Buy time for your defencemen and late forwards to join and get set
 ```
 
-- **It forces defenders to move and decide, repeatedly.** Each rotation asks the defence "do you collapse low or hold the slot?" Over 30 or 40 seconds of this, someone answers wrong.
-- **It is a low-turnover way to hold the puck.** Passes along the boards, away from the middle of the ice, are the cheapest ones to miss: the puck stays near the wall with bodies around it. One picked off through the middle is the one that goes the other way with your forwards below it. **Ranking the middle pass as the more expensive one to lose is coaching consensus rather than a counted comparison** — nothing published classifies odd-man rushes by the play that created them. [Defending the Rush](defending_the_rush.md) sets out how they are made.
-- **It tires the defenders.** They are skating without the puck, which is far more exhausting than skating with it, and they cannot change lines. A tired defender's coverage shrinks toward the puck, which opens the slot.
-- **It buys time for your defencemen and late forwards to join.** A cycle that lasts eight seconds is often just a cycle that lasted long enough for your point men to get set.
+- **A cycle forces defenders to move and decide, repeatedly.** Each rotation asks the defence "do you collapse low or hold the slot?" Over 30 or 40 seconds of this, someone answers wrong.
+- **A cycle is a low-turnover way to hold the puck.** Passes along the boards, away from the middle of the ice, are the cheapest ones to miss: the puck stays near the wall with bodies around it. One picked off through the middle is the one that goes the other way with your forwards below it. **Ranking the middle pass as the more expensive one to lose is coaching consensus rather than a counted comparison** — nothing published classifies odd-man rushes by the play that created them. [Defending the Rush](defending_the_rush.md) sets out how they are made.
+- **A cycle tires the defenders.** They are skating without the puck, which is far more exhausting than skating with it, and they cannot change lines. A tired defender's coverage shrinks toward the puck, which opens the slot.
+- **A cycle buys time for your defencemen and late forwards to join.** A cycle that lasts eight seconds is often just a cycle that lasted long enough for your point men to get set.
 
 ### The mechanics
 
@@ -492,7 +492,7 @@ Low-to-high is a *means*, not an end. At even strength a point shot is among the
 ```facts
 Key: Low-to-high is a means, not an end — at even strength a point shot is among the lowest-percentage shots on the ice, and blocked more often than any other
 Key: The point-shot caution is an even-strength one — on the power play the same map puts roughly the whole zone at or above that under-5% figure, so it is no argument against a point shot there
-Risk: They also generate fewer rebounds than shots from lower in the zone
+Risk: Point shots also generate fewer rebounds than shots from lower in the zone
 Priority: Low-to-high is only worth doing when the net front is occupied — a screen, a tip threat and two players hunting the rebound
 Never: Fire it from the point with nobody in front — the identical shot is a giveaway with extra steps
 ```
@@ -984,7 +984,7 @@ The decision criteria, which are consistent across coaching sources:
 - You can **arrive on contact** — you and the puck get there at the same time. "If you can't arrive on contact, don't go." That is the test when an opposing player is arriving too. Getting there level lets you play the puck or, where your book allows contact at all, seal the wall — or, where your league permits body checking, check a winger who can see you coming. Arriving a beat late is the failure: a check already being delivered as the puck goes may be finished, but one you decide on afterwards is a late hit (NHL 56.1 and 56.2, below). On an **uncontested race for a loose puck or a rim**, the bar is higher — you need to arrive **clearly first**, since there is nobody to seal and second place just means your back is to the play. [Forechecking Systems](forechecking_systems.md) applies the same two-part test.
 - The opposing winger is **flat-footed or facing the glass**, not already turned up ice with speed — a reason to go for the puck, never licence to hit a player facing the glass.
 - Someone can cover your line — usually a forward **able to rotate high**.
-- It is a **loose puck, a bobble or a tired line** — the best windows.
+- There is a **loose puck, a bobble or a tired line** — the best windows.
 
 **Do not pinch when:**
 - Your forwards are already below you and nobody can cover the line;

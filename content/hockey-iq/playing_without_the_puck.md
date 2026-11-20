@@ -310,7 +310,7 @@ Key: F1, F2 and F3 are roles defined by order of arrival, not by position — wh
 Position: In your own zone under a low zone collapse, the closest player takes the corner, one teammate supports on the boards side and one covers the net front — never two
 Action: One player goes hard, one player supports, nobody else joins — the rule that survives every system
 Risk: Two players arriving at the same loose puck from the same angle is a turnover waiting to happen, because both are committed and neither is available
-Action: If it is genuinely ambiguous, call it — "I got it", "yours", "help" — and the call resolves it
+Action: If it is unclear who goes, call it — "I got it", "yours", "help" — and the call resolves it
 ```
 
 Under the standard forecheck used throughout — a **2-1-2** in the offensive zone — the first forward in (F1) pressures the puck and the second (F2) supports them, so on a loose puck in their end **the nearest two forwards go and the third reads**. Remember that **F1, F2 and F3 are roles defined by order of arrival, not by position**: whoever gets there first is F1, whether they are a centre or a winger.
@@ -323,7 +323,7 @@ Find out which of these your team plays. Then, the rule that survives every syst
 
 ![](diagram:loose-puck-who-goes)
 
-If it is genuinely ambiguous, **call it** — "I got it," "yours," "help" — and the call resolves it. Hockey's off-puck problems are disproportionately communication problems.
+If it is unclear who goes, **call it** — "I got it," "yours," "help" — and the call resolves it. Hockey's off-puck problems are disproportionately communication problems.
 
 ### Then how you arrive — covered elsewhere
 
@@ -846,7 +846,7 @@ Backchecking well is mostly about two decisions, both made while sprinting:
 
 **Nor may you restrain them from behind — skate to regain your position.** Behind an opponent who does *not* have the puck, NHL Rule 56.1 says you *"may not use his stick, body or free hand in order to restrain his opponent, but must skate in order to gain or reestablish his proper position in order to make a check"*. The IIHF's 56.1 says it word for word in the plural. That clause excludes the carrier, but holding and hooking reach them: NHL Rule 54.1 defines holding as restraining an opponent *"whether or not he is in possession of the puck"*, and 55.1 makes hooking using the stick to restrain an opponent, with no possession condition (the IIHF's 54.1 and 55.1 carry both). Skating is the only legal way back.
 
-**The price.** ⚠️ **Plan on a hit from behind ending your game.** It does under the NHL, the PWHL and CARHA, and under Hockey Canada while it stays off the head; the IIHF has no minor for it off the head. On the head, plan on it under Hockey Canada and the IIHF anyway. Under USA Hockey even a light hit from behind is at least a minor plus a misconduct, and it ends your game if it is forceful at the boards, head first or reckless, or carelessly reaches their head, face or neck. A hit meant to injure is a match in every book but the IIHF. ⚠️ **Even without intent, if they cannot protect themselves, plan on a match penalty** — Hockey Canada and CARHA must give one into the boards or goal frame, Hockey Canada also on the head, and USA Hockey for a reckless hit with excessive force on a vulnerable or defenceless player. [What it costs](#a-hit-from-behind), near the end of the page, sets out each book's ladder, the match penalties and the British ban.
+**The price.** ⚠️ **Plan on a hit from behind ending your game.** It does under the NHL, the PWHL and CARHA, and under Hockey Canada while it stays off the head; the IIHF has no minor for it off the head. On the head, plan on it under Hockey Canada and the IIHF anyway. Under USA Hockey even a light hit from behind is at least a minor plus a misconduct, and it ends your game if it is forceful at the boards, head first or reckless, or carelessly reaches their head, face or neck. A hit meant to injure is a match in every book but the IIHF. ⚠️ **Even without intent, if they cannot protect themselves, plan on a match penalty** — Hockey Canada and CARHA must give one into the boards or goal frame, Hockey Canada also on the head, and USA Hockey for a reckless hit from behind with excessive force on a vulnerable or defenceless player. [What it costs](#a-hit-from-behind), near the end of the page, sets out each book's ladder, the match penalties and the British ban.
 
 The books differ on the price. None of them differs on the play.
 
@@ -882,7 +882,7 @@ Half-finished routes are one of the off-puck failures coaches name most often in
 Mindset: Off-puck effort is the most visible thing about you and the easiest thing to change
 Key: Your coach cannot easily see whether you made the right read, but can see exactly who backchecked, who finished the route and who watched
 Key: "Compete", "hard to play against" and "reliable" are almost always descriptions of off-puck behaviour
-Action: It requires no new skill. Backcheck hard into your lane, finish your route, take a second stride into a battle
+Action: Off-puck effort requires no new skill. Backcheck hard into your lane, finish your route, take a second stride into a battle
 Never: Skate hard in random directions — effort in the wrong place is just fatigue
 ```
 
@@ -1021,7 +1021,7 @@ Do not read "no tier inside 625" as "two minutes or nothing".
 
 In the NHL, the PWHL and CARHA every call for it carries a game misconduct, as does every Hockey Canada call for a hit that stays off the head, so ⚠️ **it ends your game** (NHL 43.5, Hockey Canada 7.5(e), CARHA 53(a)) — **in Britain, plan on it too.** The IIHF book has no minor for it (43.2), and its major carries an automatic game misconduct (43.3). On the head, its Rule 48 says it supersedes and allows a minor (48.1, 48.2), but plan on the major and game misconduct anyway. At a club in England or Wales, that game misconduct is at least a one-game ban, in every league or age group you are registered in; in the Elite League, or at a club in Scotland or Northern Ireland, plan on the same ban and ask your league ([UK and England Rules](../foundation/uk_rules.md#a-first-major-can-end-your-game-and-adults-are-not-exempt)).
 
-Into the boards or goal frame on a player who cannot protect themselves, Hockey Canada (7.5(c)) and CARHA (53(b)) ⚠️ **make it a mandatory match. USA Hockey makes it a match for a reckless hit with excessive force on a vulnerable or defenceless player, boards or not** (608(c)). A hit meant to injure is a match in every book but the IIHF (NHL and PWHL 21.1, Hockey Canada 7.5(c), CARHA 48(a), USA Hockey 602(a)). Any of these matches keeps you out of every later game until your case has been dealt with (NHL and PWHL 21.2, USA Hockey 405(c), Hockey Canada 4.10(a), CARHA 34(a)), and under USA Hockey out of practices too.
+Into the boards or goal frame on a player who cannot protect themselves, Hockey Canada (7.5(c)) and CARHA (53(b)) ⚠️ **make it a mandatory match. USA Hockey makes it a match for a reckless hit from behind with excessive force on a vulnerable or defenceless player, boards or not** (608(c)). A hit meant to injure is a match in every book but the IIHF (NHL and PWHL 21.1, Hockey Canada 7.5(c), CARHA 48(a), USA Hockey 602(a)). Any of these matches keeps you out of every later game until your case has been dealt with (NHL and PWHL 21.2, USA Hockey 405(c), Hockey Canada 4.10(a), CARHA 34(a)), and under USA Hockey out of practices too.
 
 USA Hockey alone keeps a minor plus misconduct for an open-ice push or a light pinch from behind. But ⚠️ **every forceful check on a player standing at the boards, back to the middle of the ice, is a major and game misconduct or a match penalty** (Casebook 608, Situation 1). Under USA Hockey, a hit that sends them head first into the boards or goal frame, or is reckless, is **a mandatory major and game misconduct** (608(b)), and so is careless contact with their head, face or neck (620(b)) — ⚠️ **if it is reckless, plan on a match penalty and a likely multi-game suspension** (602(a)). [Body Contact and Battles](../technique/body_contact_and_battles.md#checking-from-behind-and-what-the-onus-does-and-does-not-mean) sets out each book's tiers, including a hit that reaches the head.
 

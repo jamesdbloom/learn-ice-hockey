@@ -54,7 +54,7 @@ Learn these as principles rather than instructions: instructions expire with a t
 
 Take "stay high" for a winger in your own end. While the other team has the puck, it means level with the opposing defenceman on your side. It expires the moment your team wins the puck, when you come down the wall to the outlet instead.
 
-**Why it matters.** Treat a coaching choice as a law and you do the wrong job when you change teams — and you stop asking, because a law does not need asking about.
+**Why the principle matters.** Treat a coaching choice as a law and you do the wrong job when you change teams — and you stop asking, because a law does not need asking about.
 
 **What to notice.** An instruction about *where a teammate goes* is probably a system. One about *what the referee will do* is a rule. Rules are written in a book; systems are written on a whiteboard.
 
@@ -76,7 +76,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** Hockey has several rule books and they disagree. Your age group, your league and your country decide which one is yours, and the same act can be normal play in one book and a penalty in another.
 
-**Why it matters.** This is the difference between a mistake that costs you a shift and one that gets you ejected or hurts somebody.
+**Why the principle matters.** This is the difference between a mistake that costs you a shift and one that gets you ejected or hurts somebody.
 
 **What to do.** ⚠️ **Ask your coach or your league secretary which competition you play in and whether it is a checking category, and do it before your first game rather than after your first hit.** In Britain, ask for your competition by name: the answer is in its own Rules of Competition, not in the rule book.
 
@@ -96,7 +96,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **CARHA, which governs affiliated adult recreational leagues, writes both sides.** A Note to its interference rule says *"the defending players are entitled to 'stand their ground' or 'shadow' the attacking players"* (Rule 66(a), Note 2). Its body-contact rule, 49(a), penalises a player who *"intentionally bodies, pushes, shoves, stands in front of an opponent for the purpose of making contact, and/or does not avert body contact with an opponent"*. **The two govern different infractions and the book nowhere reconciles them**, so [Rink Map](rink_map.md) reads them together: you may hold your ground to take away a lane, but a seal you deliberately ride through is inside 49(a)'s words. ⚠️ **Find out whether your league is CARHA-affiliated before you take "hold your ground" from anywhere, this page included.**
 
-**What it costs under CARHA.** A Rule 49(a) penalty is a minor or a major at the referee's discretion, and a major whenever intentional body contact causes injury. Under Rule 30(a) a major for body contact also carries a game misconduct, so you are ejected, and Rule 32(d) adds at least a one-game suspension. Contact meant to injure goes further: any deliberate injury, or attempt at one, is a match penalty (Rule 48(a)), and the casebook lets the referee give a match penalty when intentional body contact injures and the incident warrants it.
+**What a Rule 49(a) penalty costs under CARHA.** A Rule 49(a) penalty is a minor or a major at the referee's discretion, and a major whenever intentional body contact causes injury. Under Rule 30(a) a major for body contact also carries a game misconduct, so you are ejected, and Rule 32(d) adds at least a one-game suspension. Contact meant to injure goes further: any deliberate injury, or attempt at one, is a match penalty (Rule 48(a)), and the casebook lets the referee give a match penalty when intentional body contact injures and the incident warrants it.
 
 **Accidents under CARHA.** Rule 49(c) keeps genuine accidents out: *"Where, in the opinion of the Referee, accidental contact has taken place, no penalty shall be assessed"*. Not every accident is free, though. Accidental contact with the head, face or neck is still a minor without a stick (Rule 50(a)) and a major with one (Rule 62(b)), and contact that impedes a goalie is a minor too (Rule 66(b)). Driving a player from behind into the boards or net in a way that leaves them unable to protect themselves is a match penalty (Rule 53(b)). Like any match penalty, it keeps you out of later games until the Chairman has dealt with your case (Rule 34(a)). **That 49(a)'s last limb amounts to a duty to get out of the way is this guide's reading of the rule's grammar, which CARHA does not gloss.**
 
@@ -114,7 +114,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** Your time with the puck is a rounding error in your shift, and it comes in bursts of just over a second. What you do in the rest of the time decides what those bursts are worth.
 
-**Why it matters.** Most players practise the part of hockey they spend the least time doing. The 3.3 to 4.2 percent of your ice time with the puck feels like hockey; the rest is where games are decided.
+**Why the principle matters.** Most players practise the part of hockey they spend the least time doing. The 3.3 to 4.2 percent of your ice time with the puck feels like hockey; the rest is where games are decided.
 
 **What to notice.** Watch your own shift back and count the seconds you were touching the puck. It will be fewer than you remember.
 
@@ -131,11 +131,11 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **A realistic alternative.** None — this is an observation, not a coaching choice. What your team asks you to do with the time *is* a coaching choice, and that is principle 1.
 
-**What it costs at the net.** Stay out of the crease and give way to the goalie: it is a rule as well as a habit.
+**What standing at the net costs.** Stay out of the crease and give way to the goalie: it is a rule as well as a habit.
 
 - **Standing in the crease can stop play.** Under USA Hockey, play stops for a neutral-zone faceoff if you stand in the crease, skate through it or hold your stick in it — its line included — while your team has the puck in the zone and the goalie is in contact with the crease. The exception is a defender putting you there (Rule 625(b)). The IIHF lets the referee do the same if you do not leave it immediately (Rule 69).
 - **Holding your spot is a penalty.** If you are in the crease and the goalie makes contact to establish their position, give ground at once. Holding your spot is goaltender interference, goal or no goal, under the NHL, PWHL and IIHF books — a minor in the first two (NHL 69.3, PWHL 71.3, IIHF 69.3).
-- **It can cost your team the goal.** Under USA Hockey and CARHA, a goal scored while an attacker stands in the crease does not count unless the puck got into the crease first (USA Hockey Rules 617(c)(4) and 625(b), CARHA Rule 66(b)). Hockey Canada also disallows it, but lets a teammate's goal from outside the crease stand if you did not play the puck, interfere with the play or block the goalie's view or movement (the *Goal Crease Area* interpretation under its Rule 8.5). The NHL, PWHL and IIHF say your position alone does not decide it: the goal comes off for any contact you start with a goalie in their crease, even accidental, for anything more than incidental outside it or any you made no reasonable effort to avoid, or for a position that stops them moving freely in their crease. Planting yourself **in the crease** to block their view and hamper the save is enough to take it off (NHL and IIHF Rules 69.1 and 69.3, PWHL 71.1 and 71.3). Under the NHL, PWHL and IIHF, a screen from just outside the crease that never touches the goalie keeps the goal.
+- **Standing in the crease can cost your team the goal.** Under USA Hockey and CARHA, a goal scored while an attacker stands in the crease does not count unless the puck got into the crease first (USA Hockey Rules 617(c)(4) and 625(b), CARHA Rule 66(b)). Hockey Canada also disallows it, but lets a teammate's goal from outside the crease stand if you did not play the puck, interfere with the play or block the goalie's view or movement (the *Goal Crease Area* interpretation under its Rule 8.5). The NHL, PWHL and IIHF say your position alone does not decide it: the goal comes off for any contact you start with a goalie in their crease, even accidental, for anything more than incidental outside it or any you made no reasonable effort to avoid, or for a position that stops them moving freely in their crease. Planting yourself **in the crease** to block their view and hamper the save is enough to take it off (NHL and IIHF Rules 69.1 and 69.3, PWHL 71.1 and 71.3). Under the NHL, PWHL and IIHF, a screen from just outside the crease that never touches the goalie keeps the goal.
 - **Outside the crease the goalie is still not fair game.** Deliberate or unnecessary contact with a goalie anywhere on the ice is a penalty in the NHL, PWHL and IIHF books (NHL and IIHF 69.2 and 69.4, PWHL 71.2 and 71.4), under Hockey Canada (Rule 8.5), CARHA (Rule 66(b)) and USA Hockey (Rule 607(d)). USA Hockey's casebook allows a check on a goalie outside the privileged area (the box from the end-zone faceoff dots back to the end boards) only to win a puck the goalie has, and only where body checking is allowed (Rule 604). Take the ice in front of the net, never the goalie.
 
 **Where to read more.** New to this: [Getting Started](../getting-started/getting_started.md). Deeper: [Playing Without the Puck](../hockey-iq/playing_without_the_puck.md), which has the figures and the four off-puck states.
@@ -150,7 +150,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **This reverses in goal.** A goalie facing a shot has nothing to gain by looking away from a live puck. [Goaltender](../positions/goaltender.md) has them "[t]rack the puck all the way into the pad, the glove, the chest" instead, because losing sight of it is what costs the goal.
 
-**Why it matters.** Players who seem to see the whole ice have almost always simply already looked. It is the cheapest improvement in hockey: it costs no fitness, no ice time and no talent.
+**Why the principle matters.** Players who seem to see the whole ice have almost always simply already looked. It is the cheapest improvement in hockey: it costs no fitness, no ice time and no talent.
 
 **What to notice.** Two players receiving the same pass look completely different from the bench, and it is not their hands. One watched the puck the whole way and discovered the forechecker on arrival. The other knew about the forechecker before the pass was made.
 
@@ -172,7 +172,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** The same play is not worth the same everywhere. A cross-ice pass is brilliant in the corner of their end and catastrophic in front of your own net; nothing about the pass changed, only the ice under it.
 
-**Why it matters.** Most bad hockey decisions are good decisions made in the wrong place. Thinking about location first turns a long list of things you must not do into one question you can answer under pressure.
+**Why the principle matters.** Most bad hockey decisions are good decisions made in the wrong place. Thinking about location first turns a long list of things you must not do into one question you can answer under pressure.
 
 **What to notice.** The question is: *if I lose the puck here, how many seconds and how many bodies stand between the turnover and a shot on my net?* In front of your own net the answer is none and none. Deep in their corner it is four or five seconds and the whole team.
 
@@ -194,7 +194,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** A player with the puck and two options beats a player with the puck and none, whatever the difference in skill. Being one of those options, on purpose, is most of what a teammate is for.
 
-**Why it matters.** Almost every bad pass is bad because there was nothing to pass to. Fixing your own position is faster than fixing somebody else's hands.
+**Why the principle matters.** Almost every bad pass is bad because there was nothing to pass to. Fixing your own position is faster than fixing somebody else's hands.
 
 **What to notice.** Two options only count as two if they are at different angles from the puck. Two teammates in one line from the carrier are one option, because one defender's stick takes both away.
 
@@ -218,7 +218,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 
 **The principle.** Races to a loose puck along the wall end in head-on contact with the boards, and the posture you arrive in decides whether that is nothing or a spinal injury. Decide the posture on the way, because there is no time to decide on arrival.
 
-**Why it matters.** This one is not about winning the puck. It applies in non-checking hockey exactly as in checking hockey, because a wall does not need an opponent to hurt you, and it applies at every speed.
+**Why the principle matters.** This one is not about winning the puck. It applies in non-checking hockey exactly as in checking hockey, because a wall does not need an opponent to hurt you, and it applies at every speed.
 
 **What to do.** **When you cannot avoid the wall, get your skates parallel to the boards, feet apart and knees bent, your forearm and hip to the wall, with your head up and your chin off your chest — not the point of your shoulder, and not the whole shoulder if you can help it.** Go in on an angle rather than straight at the wall. The whole-shoulder part is USA Hockey's own hedge: its checklist asks for *"No shoulder contact on the boards, if possible"*. ⚠️ **Never turn your back to anyone coming at you, however protective it feels, and never duck.**
 

@@ -23,7 +23,7 @@
 
 **Wingers: arrive on the wall with your feet moving and your body open to the ice — never stand there waiting.** Better a little late than a little early: it is easy to speed up, and hard to stop and start again.
 
-**Once it is on your stick, never give it away at your own blue line.** Skate it, hit the low centre, or go back to your defenceman. If nothing is open, chip it off the glass or rim it. Only if neither is there, shield it on your stick until help comes — never your back to anyone coming at you, and never pin it for a whistle.
+**Once the puck is on your stick, never give it away at your own blue line.** Skate it, hit the low centre, or go back to your defenceman. If nothing is open, chip it off the glass or rim it. Only if neither is there, shield it on your stick until help comes — never your back to anyone coming at you, and never pin it for a whistle.
 
 **Centres in a swing breakout: stay low, inside the dots and below the hash marks.** You are the bail-out when the wall is sealed. If your team flies the centre instead, someone else must be under the puck.
 
@@ -40,7 +40,7 @@ A **breakout** is your team's organised exit from your own end. You run it sever
 ```facts
 Goal: Turn defending into attacking — the organised exit from your own defensive zone
 Key: The breakout runs several times a shift, every shift, all game — often called the most-run play in hockey, but no published count ranks plays by frequency
-Risk: It falls apart because five players ran five different plays, not because anyone lacked skill
+Risk: A breakout falls apart because five players ran five different plays, not because anyone lacked skill
 Convention: Almost everything here is a coaching choice, not a law of hockey — teams call the same play different names, and some call different plays the same name
 Action: Learn the framework here, then find out what your team actually calls and actually runs
 ```
@@ -696,7 +696,7 @@ The correct breakout is chosen by reading the shape in front of you. [Forechecki
 
 ```facts
 Read: F1 pressures and steers rather than attacks, two forwards hold the middle-and-wall band behind, two defencemen hold the line — containment, not chaos
-Key: It takes away the middle, and usually the D-to-D lane; the two F2/F3 forwards sit exactly where a wall pass wants to go
+Key: The 1-2-2 takes away the middle, and usually the D-to-D lane; the two F2/F3 forwards sit exactly where a wall pass wants to go
 Mindset: You will usually have time — use it; this is the forecheck that punishes rushed decisions most and pressured decisions least
 Action: Make F1 commit with a wheel, or simply by skating at F1 — once they pick a side, the other side is genuinely open
 Key: The low centre is your key, because the 1-2-2's two middle forwards are positioned relatively high and the space beneath them is real
@@ -719,7 +719,7 @@ Action: Against the 1-2-2 trap, keep it moving and be patient — regroup in you
 
 ```facts
 Read: Two forwards pressure deep taking a side each, one supports in the middle, two defencemen hold — the most aggressive of the common forechecks, and the standard one here
-Key: It takes away time, and both corners
+Key: The 2-1-2 takes away time, and both corners
 Action: Play fast and simple — you do not have time to be clever, and the rushed cross-ice pass here is exactly the goal-against this forecheck is designed to produce
 Key: Reverse and rim come into their own, because two forwards attacking deep are two forwards with momentum, and momentum is what the reverse punishes
 Risk: The wheel is dangerous here — there is a second forechecker on the far side by design
@@ -742,7 +742,7 @@ Options: Glass and out is a legitimate answer — against sustained hard foreche
 
 ```facts
 Read: One forward token-pressures, three stretch across the neutral zone, one defenceman anchors behind — less a forecheck than a wall
-Key: It takes away every long pass — the stretch is dead, the cross-ice over is dead, and anything through the middle of the neutral zone is dead
+Key: The 1-3-1 takes away every long pass — the stretch is dead, the cross-ice over is dead, and anything through the middle of the neutral zone is dead
 Mindset: Lots of time and nowhere to go — the opposite problem to the 2-1-2, and it requires the opposite temperament
 Action: Skate it out — one token forechecker cannot stop a defenceman carrying with speed, and making the puck-carrier a threat is what forces the wall to break shape
 Action: Use short passes up the wall and along the boards, not through the middle — the wall lanes are the softest part of the shape
@@ -865,7 +865,7 @@ Action: Go off the glass, short of the red line, never over: for a skater, over 
 
 **Where this comes up.** You will break out of your own end on a power play more often than you expect, almost always by one of three routes. **The kill clears the puck the length of the ice**, with no whistle, because a team below its opponents' on-ice strength cannot be called for icing (NHL and IIHF Rule 81.6, PWHL 83.6; the exemption's limits vary by book, and [Special Teams](special_teams.md#you-may-ice-the-puck-freely--where-your-rule-set-allows-it) sets them out). **The kill wins a puck in the neutral zone** and puts it in behind you. Or **you iced it yourself** and lost the defensive-zone draw that followed.
 
-**It is the same breakout.** You have five skaters, exactly as at even strength. What has changed is that *their* forecheck is a skater short. All five jobs in section 2 are still there, every named option in section 3 is still available, and everything in sections 6 and 9 about reading pressure still applies. Two things are genuinely different: who is filling the jobs, and what one particular exit now costs you.
+**A power-play breakout is the same breakout.** You have five skaters, exactly as at even strength. What has changed is that *their* forecheck is a skater short. All five jobs in section 2 are still there, every named option in section 3 is still available, and everything in sections 6 and 9 about reading pressure still applies. Two things are genuinely different: who is filling the jobs, and what one particular exit now costs you.
 
 **Who fills the two defence jobs.** A power-play unit is often not two defencemen and three forwards. Matt Cane, writing on Hockey Graphs in March 2017, measured four-forward units at *"roughly 56% of the 5-on-4 ice-time this season"* — **a share of league-wide ice time rather than a count of teams, and it does not separate first units from second**; [Special Teams](special_teams.md#power-play-formations) carries the figure with its full qualification. Where your unit runs four forwards, one of the two defence jobs in section 2 — the retriever or the support — is being done by a forward. **Settle which of you has it before the puck is behind your net**, because the retriever's first look and the support's route behind the net are not things to work out while a forechecker is arriving.
 
@@ -921,7 +921,7 @@ With the goalie off:
 **What it costs — the rule.** Under NHL Rule 15.1, when a penalty is committed by a player of the team **not in control of the puck**, the referee raises an arm to signal a delayed penalty; play stops **when the team to be penalised gains control of the puck**. Two crucial refinements:
 
 - **Control, not touch.** The rulebook's glossary defines control of the puck as "the act of propelling the puck with the stick, hand or feet," and specifies that control is **not** lost when the puck is contacted by an opponent, the boards or the net, provided the player in control keeps propelling it. A deflection off the offending team does not end the delayed penalty; possession does.
-- **They can score only off your own action — and what counts as yours depends on your book.** NHL Rule 78.5(xi): during the delayed calling of a penalty, the offending team cannot score **unless the non-offending team shoots the puck into their own net**, and a deflection off one of their players *"shall not be considered a legal goal"*. The IIHF (78.5(xi)) and the PWHL (80.5) say the same, and Hockey Canada rules the same way (4.15(b), Interpretation 11). ⚠️ **Under USA Hockey a deflection off an opponent counts** — your pass that clips an opponent on its way into your empty net is a goal (Rule 409(c); Casebook 409, Situation 2). CARHA allows the goal where it goes in *"through no contact by the offending team"* (39(b) Note 2) and says nothing about one that touched them, so play as if it would count. And NHL Rule 15.2: if you *do* score, the minor penalty *"shall not be imposed"* — while *"major and match penalties shall be imposed in the normal manner regardless of whether or not a goal is scored."*
+- **The offending team can score only off your own action — and what counts as yours depends on your book.** NHL Rule 78.5(xi): during the delayed calling of a penalty, the offending team cannot score **unless the non-offending team shoots the puck into their own net**, and a deflection off one of their players *"shall not be considered a legal goal"*. The IIHF (78.5(xi)) and the PWHL (80.5) say the same, and Hockey Canada rules the same way (4.15(b), Interpretation 11). ⚠️ **Under USA Hockey a deflection off an opponent counts** — your pass that clips an opponent on its way into your empty net is a goal (Rule 409(c); Casebook 409, Situation 2). CARHA allows the goal where it goes in *"through no contact by the offending team"* (39(b) Note 2) and says nothing about one that touched them, so play as if it would count. And NHL Rule 15.2: if you *do* score, the minor penalty *"shall not be imposed"* — while *"major and match penalties shall be imposed in the normal manner regardless of whether or not a goal is scored."*
 - **A goal washes out one minor, not every minor on the play,** ⚠️ **and two clauses say so.** Where two or more minors were coming, Rule 15.2 has *"the Captain of the offending team"* choose which one is washed out. And **Rule 15.3** keeps a double minor under Rule 47 head-butting, 58 butt-ending, **60 high-sticking** or 62 spearing: *"two minutes of the appropriate penalty will be assessed to the offending player."* So the ordinary blood-drawing high-sticking double minor still costs two minutes however well you converted the 6-on-5.
 
 **One rule trap if it is regular-season overtime under the NHL or PWHL book.** NHL Rule 84.2: once the goalie has been removed for an extra attacker in regular-season overtime, "he must wait for the next stoppage of play before returning to his position. He cannot change 'on the fly.' If he does, a bench minor penalty shall be assessed for having an ineligible player." So a goalie who comes off on a delayed penalty in overtime and then tries to slip back in when the advantage evaporates has handed the other team a power play in sudden death.
@@ -1134,7 +1134,7 @@ If your partner is carrying it around the net, being *already standing* in front
 
 **NHL 56.1's third sentence has a proviso, and it is the part that gets called.** The entitlement holds only *"provided his stick is not utilized (to make himself 'bigger' and therefore considerably lengthening the distance his opponent must travel to get where he is going); his free hand is not used and he does not take advantage of his body position to deliver an otherwise illegal check."* So: stick in tight and vertical, hands to yourself, no bump as they go past. A stick out sideways across the slot is a penalty even though your feet never moved. A player without body position who *"uses his stick … to impede or prevent his opponent from moving freely on the ice shall be assessed a hooking penalty"* — the NHL's words; the IIHF and PWHL say the same with "their" and "her".
 
-**If they are already past you:** *"A player who is behind an opponent, who does not have the puck, may not use his stick, body or free hand in order to restrain his opponent, but must skate in order to gain or reestablish his proper position in order to make a check."* Skate; do not reach.
+**If the forechecker is already past you:** *"A player who is behind an opponent, who does not have the puck, may not use his stick, body or free hand in order to restrain his opponent, but must skate in order to gain or reestablish his proper position in order to make a check."* Skate; do not reach.
 
 **What is not legal is moving into them.** "Moving laterally and without establishing body position, then making contact with the non-puck carrier is not permitted and will be penalized as interference" — in the NHL, IIHF and PWHL books alike. A player who "moves into an opponent's path without initially having body position" is delivering a **pick**, and *"an interference penalty shall be assessed"*: a minor (**56.2**), but not capped there. **56.4** allows a major on the degree of violence; under the NHL book **56.5** adds a game misconduct *"[w]hen a major penalty is imposed under this rule for an infraction resulting in an injury of an opponent"*. ⚠️ **Under the IIHF book no injury is needed**: its 56.5 reaches a major plus a game misconduct where the act recklessly endangers.
 
@@ -1142,7 +1142,7 @@ If your partner is carrying it around the net, being *already standing* in front
 
 **USA Hockey is built differently,** ⚠️ **and in the States it is the one to know.** Its Rule 625 defines interference in the words of this exact play — using the body, *"('pick' or 'block')"*, *"to impede the progress of an opponent (non-puck carrier) with no effort to play the puck, maintain normal foot speed or maintain an established skating lane"*. **625(a)**'s first listed instance is *"Providing a protective screen and limiting the opportunity for an opposing player to apply pressure to a teammate in possession or control of the puck"*: a minor. **Neither the NHL nor the IIHF book has that clause**, and USA Hockey writes no body-position entitlement into any rule.
 
-Its *"A skater is entitled to stand their ground and is not required to move"* sits in the front matter (*Declaration of Player Safety, Fair Play & Respect*, Competitive Contact Category), under a sentence that governs it. That sentence covers players *"focused on gaining possession of the puck and … simply maintaining legally established body position"* — which a screener whose partner already has the puck fails.
+USA Hockey's *"A skater is entitled to stand their ground and is not required to move"* sits in the front matter (*Declaration of Player Safety, Fair Play & Respect*, Competitive Contact Category), under a sentence that governs it. That sentence covers players *"focused on gaining possession of the puck and … simply maintaining legally established body position"* — which a screener whose partner already has the puck fails.
 
 **Hockey Canada Rule 8.3 and CARHA Rule 66(a)** bar the team in possession from *"run[ning] deliberate interference for the puck carrier"*. ⚠️ **Do not assume that is narrower than USA Hockey's clause**: Hockey Canada never says what it means — the sentence appears once, and neither its Glossary nor Rule 8.3's Interpretations touches it. **And Hockey Canada writes no body-position permission anywhere**, so its general limb, *"Interferes with or impedes the progress of an opponent, who is not in possession of the puck"*, has nothing to soften it.
 

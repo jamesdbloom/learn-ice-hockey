@@ -230,7 +230,7 @@ The stride has three parts that cycle continuously: **push (extension) → recov
 ```facts
 Never: Push straight back — the blade just slides along the ice and gives you nothing
 Technique: Push out to the side and slightly back against the inside edge, so the blade cuts across its own direction of travel
-Read: If it feels like walking or running, it is wrong — skating is not running
+Read: If your push feels like walking or running, it is wrong — skating is not running
 Action: Finish the push — extend until the leg is done, because most players stop far too early
 Technique: Finish with the toe — a snap of the toe out and back, not a stab downward into the ice
 Key: Laura Stamm's power-skating material puts the toe flick at roughly a third of the push's total power — her own principle, not a measurement
@@ -634,7 +634,7 @@ Key: Pivot late — once you've turned to skate forwards, you have given up your
 **How much the wall helps depends on how wide your rink is.** The NHL sets one width, 85 ft; the IIHF a range of 26–30 m (about 85–98 ft). USA Hockey Rule 102(a) and Hockey Canada Rule 1.2(a) set ranges too, reaching 100 ft, though they word it as a recommendation where the IIHF's is the official size. So width is a fact about your building, not your rule book. On wide ice an attacker forced outside still has room, which is why [Rink Map](../foundation/rink_map.md) says gap control and stick position matter more there — and it tells British readers to assume their rink is *smaller* than both standards until measured. On any sheet, being beaten toward the wall is the better failure. ⚠️ **But it is not an invitation to ride the attacker into the boards** — every rulebook has a boarding rule for that, graded differently: see [Rules Primer → Body fouls](../foundation/rules_primer.md#body-fouls).
 
 Two caveats:
-- **It is a default, not an absolute.** Some coaches want a pivot to the middle on certain reads — when pivoting away would blind you to the puck, or when you have inside help and the bigger risk is the attacker cutting behind you. Ask your coach.
+- **Pivoting toward the boards is a default, not an absolute.** Some coaches want a pivot to the middle on certain reads — when pivoting away would blind you to the puck, or when you have inside help and the bigger risk is the attacker cutting behind you. Ask your coach.
 - **You need to pivot well both ways**, because the attacker decides the direction, not your strong side. Drill both.
 
 The universal part: **pivot late.** Once you turn forwards you can no longer react to a change of direction, so stay backwards as long as you can.

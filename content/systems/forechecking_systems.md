@@ -31,7 +31,7 @@
 
 ```facts
 Key: Forechecking is the pressure your team applies in the opponents' end when they have the puck and you don't — the opposite of backchecking
-Key: It is the first thing your team does after losing the puck in the attacking end, and the biggest lever a coach has over how a game feels
+Key: Forechecking is the first thing your team does after losing the puck in the attacking end, and the biggest lever a coach has over how a game feels
 Convention: There is no single correct forecheck — the named family runs from the aggressive full-ice press and 2-1-2, through the 2-3 left-wing lock and the containing 1-2-2 and 1-3-1, to the 1-4 full retreat, each buying pressure at the price of risk
 Action: Ask your coach which forecheck your team runs, and which one you switch to with a lead — expect at least two
 Key: F1, F2 and F3 are set by arrival order, not jersey — first takes a side away, second the escape route left open, not the puck, third stays high towards the blue line you face, first man back

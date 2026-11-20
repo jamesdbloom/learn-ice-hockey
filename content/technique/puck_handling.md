@@ -468,7 +468,7 @@ Turn side-on so your **backside and the outside of your hip** face the pressure,
 
 - Your hip and rear end are the strongest, widest surface you own.
 - Turned side-on, you cannot be stripped through the front.
-- It puts your shoulder, arm, hip and leg all on the pressure side simultaneously — three or four barriers instead of one.
+- Turning side-on puts your shoulder, arm, hip and leg all on the pressure side simultaneously — three or four barriers instead of one.
 
 Turning to face pressure the instant you receive the puck is how players get pinned to the boards. Take the puck side-on — hip and backside to the checker, puck on your far side — absorb the contact, *then* spin off. That is for a game with checking: in a non-checking game, hold your position and let them come to you rather than lean in, and in a CARHA adult league, avert the contact rather than absorb it.
 
@@ -629,7 +629,7 @@ Convention: How long a team keeps the puck low before attacking the net is a sys
 - **The alternative is to walk out.** When the defender turns their back to the play or over-commits to the wall side, turn off the wall into the space they gave up and take it to the net. That is the moment a cycle exists to create, and it does not last.
 - **Before any of that, look at the net front.** A teammate there who has beaten their check is a better option than anything you can do on the wall.
 
-It is still a battle on the wall, so the posture rule above holds here unchanged: skates parallel, forearm and hip to the wall, never your back turned to anyone coming at you and never your head down. How long your team wants the puck kept low before it goes to the net or the point is a system decision — some teams want it at the net at the first chance, others want the defence worn down first. Ask your bench what yours plays.
+Protecting the puck low is still a battle on the wall, so the posture rule above holds here unchanged: skates parallel, forearm and hip to the wall, never your back turned to anyone coming at you and never your head down. How long your team wants the puck kept low before it goes to the net or the point is a system decision — some teams want it at the net at the first chance, others want the defence worn down first. Ask your bench what yours plays.
 
 ---
 

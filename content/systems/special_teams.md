@@ -22,7 +22,7 @@
 
 **Know your team's shape and your spot in it before your first shift.** A man up: 1-3-1, umbrella, overload, spread or 2-3. A man short: box, diamond or wedge+1. **Each is a coaching choice, not a law** — ask your coach which you run.
 
-**When they clear it, one player chases and the other four re-form.** The chaser arrives before the puck stops; if two go, nobody holds the zone. Whoever holds the line keeps the puck in first and shoots second.
+**When the kill clears the puck, one player chases and the other four re-form.** The chaser arrives before the puck stops; if two go, nobody holds the zone. Whoever holds the line keeps the puck in first and shoots second.
 
 **On the kill, hold your own job and concede only the shot you chose.** Kill it at your blue line if you can. Chase only a puck you can win — a bobble, a turned back, an unsupported puck on the boards — and **go for the puck, not through the man**.
 
@@ -175,7 +175,7 @@ Action: Cycle the puck relentlessly in a small area, creating repeated 3-on-2s a
 Read: When a killer over-commits, attack the seam or swing it cross-ice to the lone weak-side player with the goalie moving
 Read: Excellent against a passive box that will not come out to the wall
 Countered by: A kill that reads the pattern — the passes are short and easy to intercept, and a strong-side interception is a shorthanded break
-Risk: It produces fewer shots than other shapes; cycling without ever pulling the trigger just tires your own unit
+Risk: The overload produces fewer shots than other shapes; cycling without ever pulling the trigger just tires your own unit
 ```
 
 ![](diagram:pp-overload)
@@ -219,9 +219,9 @@ Key: "Box" names both this power-play spacing and the standard penalty-kill shap
 ```facts
 Position: Two defencemen at the points and three forwards low — one at the net front, one in each circle or corner
 Action: The points shoot and keep pucks in; the three forwards screen, tip and hunt rebounds, with the puck going low-to-high and back
-Key: It is safe — two defencemen at the line means very few shorthanded breaks and good retrieval on missed shots
-Countered by: A competent box, which is built to defend the two areas this attacks
-Risk: It ignores the middle of the slot entirely and generates lots of low-quality shots
+Key: The 2-3 is safe — two defencemen at the line means very few shorthanded breaks and good retrieval on missed shots
+Countered by: A competent box, which is built to defend the two areas the 2-3 attacks
+Risk: The 2-3 ignores the middle of the slot entirely and generates lots of low-quality shots
 Read: Choose the 2-3 with no puck-moving defenceman, when protecting a lead, or where the group has not yet learned to hold the blue line under pressure
 ```
 
@@ -252,7 +252,7 @@ Technique: Flat, hard, on the ice, to the receiver's stick, with a look or a fak
 Never: Force a seam that is not there — intercepted in the middle it is a shorthanded breakaway, and you have four teammates above the puck
 ```
 
-- It works because a kill's shape is built to defend the *perimeter*. Any puck that crosses the middle forces every killer and the goalie to re-orient at once.
+- A seam pass works because a kill's shape is built to defend the *perimeter*. Any puck that crosses the middle forces every killer and the goalie to re-orient at once.
 - **How to throw one — flat, hard, on the ice, to the receiver's stick, with a look or a fake sold first** — is standard passing technique under pressure, covered in [Passing and Receiving](../technique/passing_and_receiving.md). What is special-teams-specific is the judgement: **if the seam is not there, do not force it.** A seam pass intercepted in the middle is a shorthanded breakaway, and you have four teammates above the puck.
 
 #### The one-timer from the off-wing
@@ -329,7 +329,7 @@ Read: If the kill's low defender steps out to you, the net front is free; if the
 Never: Walk to the corner — below the goal line and wide you are harmless; the threat comes from heading toward the dot
 Technique: Head up, feet moving toward the net — the moment your feet stop, the kill resets
 Never: Turn your back to anyone coming at you on a walk-down off the half-wall, and never duck — take contact with skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
-Action: If it is denied, reset to the point and start over
+Action: If the walk-down is denied, reset to the point and start over
 Risk: Losing the puck below the goal line is a wasted twenty seconds and usually a clear
 ```
 
@@ -455,7 +455,7 @@ A two-man advantage is a different game, not a better power play. It should almo
 > - **Sense 1 — the signalled penalty (Rule 15.1).** The referee has seen an infraction by the team *without* the puck, raises an arm, and play continues until the offending team gains control. This is the one where you pull your goalie for an extra attacker.
 > - **Sense 2 — the delayed *clock* (Rule 26).** A third penalty assessed to a team that already has two players serving. The third penalty's time does not begin until one of the first two expires. Nobody's arm is raised and nobody pulls a goalie.
 >
-> They are unrelated.
+> The two senses are unrelated.
 
 - **A team never plays with fewer than three skaters.** If a third player is penalised while two are already serving, the third penalty's clock does not start until one of the first two expires (a **delayed penalty in the Rule 26 sense**). The team may put a substitute on the ice to stay at three (NHL Rule 26.1). So a 5-on-2 does not exist.
 - **A goal only releases one penalty.** When you score against a shorthanded team, the minor penalty **with the least time remaining** terminates (Rule 16.2). A 5-on-3 therefore becomes a 5-on-4, not a 5-on-5 — and if you were about to get another chance, take it immediately while the kill is reorganising.
@@ -969,7 +969,7 @@ Technique: While you are in the box, watch the play rather than the clock, and c
 Pulling the goalie during a power play, late in a game, to make it 6-on-4.
 
 ```facts
-Key: Pulling the goalie on a power play makes it 6-on-4, the largest advantage in hockey, and it is used far less than the arithmetic suggests
+Key: Pulling the goalie on a power play makes it 6-on-4, the largest advantage you will normally see, and it is used far less than the arithmetic suggests
 Position: As the power play, put two at the net front and send the extra body to the bumper or the backdoor, never the perimeter
 Action: Move the puck quickly and accept that blocking lanes will be crowded
 Countered by: The empty net — a killer who wins a puck can legally clear it 180 feet into it, and it counts
@@ -981,7 +981,7 @@ Rule: On a signalled delayed penalty the non-offending team pulls its goalie for
 Risk: In that window the danger is not a shot against — it is your own pass ending up in your empty net, so make no pass across the front of it
 ```
 
-- **It is the largest advantage in hockey** and is used far less than the arithmetic suggests: two extra attackers against four killers means genuine 2-on-1s everywhere and a kill that cannot pressure at all. **The kill's counter is the empty net**, and it is a real one: a killer who wins a puck can clear it 180 feet into that net legally, because a puck that enters the net is a goal regardless. Where the shorthanded icing exemption applies, a clear that misses is not icing either.
+- **6-on-4 is the largest advantage you will normally see** and is used far less than the arithmetic suggests: two extra attackers against four killers means genuine 2-on-1s everywhere and a kill that cannot pressure at all. **The kill's counter is the empty net**, and it is a real one: a killer who wins a puck can clear it 180 feet into that net legally, because a puck that enters the net is a goal regardless. Where the shorthanded icing exemption applies, a clear that misses is not icing either.
 - **As the power play:** put two at the net front and send the extra body where it forces a decision — the bumper or the backdoor, never the perimeter. Move the puck quickly and accept that blocking lanes will be crowded.
 - **As the kill:** shot blocking and stick lanes matter more than ever. Block from in the lane before the shot, on your feet with your head out of the lane, never from a screening position — [Shot blocking](#shot-blocking) covers it. Clear with your head up looking for the empty net, and **keep it low**. ⚠️ **Over the glass from your own zone is still a minor under the NHL, IIHF and PWHL, meant or not.** Under USA Hockey, Hockey Canada and CARHA it must be deliberate, but that reaches a goalie as much as a skater — and Hockey Canada and CARHA give the goalie their own minor with no *deliberately* in it. Keep every clear under the glass.
 - **A related situation:** on a **delayed penalty in the Rule 15.1 sense** — the referee's arm is up, the infraction has been signalled, and the offending team does not yet have the puck — the non-offending team pulls its goalie for a 6-on-5. Play continues until the team to be penalised **gains control of the puck** (Rule 15.1), so the risk is not a shot against; it is your own pass ending up in your empty net, and under USA Hockey even one that deflects off an opponent counts. Make no pass across the front of your own empty net. See [Breakouts](breakouts.md) for how to play the puck in that window.
@@ -1121,7 +1121,7 @@ Rule: A match keeps you out of later games until your case is dealt with: NHL an
 
 A hit from behind into the boards or goal frame on a player who cannot protect themselves is a mandatory match penalty under Hockey Canada (7.5(c)) and CARHA (53(b)). Under USA Hockey 608(c), so is any hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force, boards or not. A hit meant to injure is a match penalty in every book but the IIHF, which has no match penalty — plan on ejection there. CARHA can give a match penalty for any hit from behind (53(a)). Any of these matches keeps you out of every later game until your case has been dealt with (NHL and PWHL 21.2, USA Hockey 405(c), Hockey Canada 4.10(a), CARHA 34(a)), and under USA Hockey out of practices too. Under USA Hockey a forceful hit from behind on a player along the boards, a head-first one or a reckless one is at least a major and game misconduct — ⚠️ **if it is reckless, plan on a match penalty and a likely multi-game suspension (602(a)).** Under USA Hockey, careless contact with their head, face or neck is a mandatory major plus a game misconduct too (620(b)).
 
-If it reaches the head, ⚠️ **plan on the harsher of Rules 43 and 48 in the NHL, IIHF and PWHL.** Rule 43 writes no minor in any of them (43.2). The NHL and PWHL make it a major and game misconduct. Under the IIHF plan on the same, though 48.1 says it supersedes and 48.2 is a minor, so a minor is possible, but do not plan on it.
+If a hit from behind reaches the head, ⚠️ **plan on the harsher of Rules 43 and 48 in the NHL, IIHF and PWHL.** Rule 43 writes no minor in any of them (43.2). The NHL and PWHL make it a major and game misconduct. Under the IIHF plan on the same, though 48.1 says it supersedes and 48.2 is a minor, so a minor is possible, but do not plan on it.
 
 Under Hockey Canada, a hit from behind that reaches the head is called as head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal), and ⚠️ **if they cannot protect themselves, or the hit is meant to injure, it is a mandatory match.** Hockey Canada's head-contact major and game misconduct must be given at every level for a cross-check above the shoulders. In Hockey Canada's minor and female hockey it can also be given if the hit is violent and must be if they are hurt; in its Junior and Senior hockey it must be given if the hit is highly violent or their head is injured hitting the glass, ice or boards. Head contact's lowest rungs can keep you in the game, but plan on a game misconduct anyway, which head contact reaches on the violence (7.6(b) and (e); 7.7(b) and (e)). [Body Contact and Battles](../technique/body_contact_and_battles.md#checking-from-behind-and-what-the-onus-does-and-does-not-mean) has the full ladder and what it costs beyond tonight.
 
@@ -1329,7 +1329,7 @@ section named with each question, and the Key Takeaways, are where you get it.*
 ## Key Takeaways
 
 1. **Create two-on-ones by passing, and cash them in near the net.** A kill can cover one option, not three in two seconds. Stand where you could shoot or pass this instant — a player who needs two touches is ignored. Preferring the pass to the shot is a coaching choice; shot-volume power plays work too.
-2. **When the entry is denied, turn back and come again.** Most power plays die at the blue line. **When the kill clears it, one player chases and the other four re-form** — the unit that wins that scramble gets three or four setups instead of one.
+2. **When the entry is denied, turn back and come again.** Most power plays die at the blue line. **When the kill clears the puck, one player chases and the other four re-form** — the unit that wins that scramble gets three or four setups instead of one.
 3. **On the kill, hold your own job and concede only what your shape concedes.** A box gives up the middle, a diamond the outside and the backdoor, a wedge+1 the perimeter. The goal comes when a killer leaves their job to cover what was conceded. Keep your blade flat in the seam.
 4. **Kill the penalty before it reaches your zone.** Stand up at the line as a pair and put your stick in the receiver's lane. Go for the puck, not the man: contact before it arrives is interference, and where checking is barred, or in IIHF or PWHL women's hockey, so is going into the receiver when it arrives.
 5. **Know your team's shape and your job in it before the puck drops.** Every formation here is a coaching choice, not a law, and so are the pressure setting and how much you block. Most breakdowns are two players assuming different systems, so ask your coach which one you run.

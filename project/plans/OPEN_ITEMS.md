@@ -13,23 +13,22 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W517 shipped with record `w517_one_antecedents_corpus_wide_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W518 shipped with record `w518_unit_opening_pronouns_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W517 (20 Nov):**
-  - **(1) body_contact_and_battles facts :598.** The closing "if reckless, plan on a match" now lands on "careless head contact", the nearest noun. The line never voices USA Hockey 608(b)'s mandatory major and game misconduct for a reckless hit from behind. Pre-existing, at 300 chars.
+- **From W518 (20 Nov):**
+  - **(1) The opener tool misses "What it is.", "What it risks.", "How it…" and "Where it…" labels.** These are not in its subordinator list, and they open label paragraphs across the systems documents (neutral_zone_systems ~:433/:437/:451/:458; also a "Why it matters" label in rink_map). Add what/how/where/who to SUBORDINATORS in scripts/check_unit_openers.py, and let the scan skip a CHAIN of subordinators ("And if it…", "But when they…"; W518 found mental_game :45 only by grep). Do this as coordinator, between waves; then re-run and triage the new hits.
+  - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
+  - **(4) goaltender :301 vs :293 (MAJOR, pre-existing).** "RVH encourages passivity. Blomquist and Henriksson identified this as one of the three problems…" contradicts :293's list of their three VH problems (staying on the post, rebound control, getting off the post), none of which is passivity. Send to source-verifier; do not delete the bullet.
+  - **(5) The opener tool's FACTS_LABEL_RE strips inline "Why it works: …" labels,** so their pronoun is never tested (time_and_space :250, the rink_map labels). It also misses "What it costs/offers/buys you" labels (about 40). Fold both into the tool fix in row (1).
+  - **(6) risk_management :861** omits 608(c)'s vulnerable-or-defenceless condition (pre-existing). mental_game :45 and KT1 "anxiety or low mood" may narrow §13's warning signs; optional safety read.
+  - **(7) Carried from W517(5)/(8), not closed in W518.** defender facts :411/:495 read "name none" aloud ("name no division" needs 7 characters; only 5 are free). faceoffs facts :158 "one aimed out" sits nearest "a draw" (low risk).
+  - **(3) Pronouns later in the opening words.** The tool catches only the first word (e.g. zone_entries :1111 "Key: Very hard to beat cleanly, and it keeps…"). Run `--loose` on the facts layer and triage.
+- **From W517 (20 Nov; rows 1 and 5–8 closed in W518):**
   - **(2) "Head hit" for USA Hockey 620(b).** rules_primer :31/:1229 use it, but 620(b) also reaches the face and neck. The scope was unchanged by W517 but is narrow everywhere it appears.
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
-  - **(5) center :536** "a moderate clash … and a violent one a major": Hockey Canada 7.7(b) says "high degree of violence". This errs harsh and is inconsistent with :803 and :916 ("highly violent"). **defender :411/:495** read "name none" aloud, eight words after "division"; restore "name no division" if 6 characters free.
-  - **(6) More "one" candidates outside the W517 diff:**
-    - time_and_space :664 "a reckless one is a match penalty": it lands on "a major and game misconduct"; use "a reckless pick".
-    - neutral_zone_systems :363 and :400 "an accidental one that injures (7.6(b))": use "head contact" or "a clash".
-    - faceoffs :1144 "a reckless one under USA Hockey": it lands on "a match"; low risk.
-  - **(7) Readability: risk_management :915** runs to about 45 words before its dash, after the W517 repair (a straight list). Split it if wanted. Also playing_without_the_puck :849 and risk_management :861 say "a reckless hit with excessive force" for 608(c) without "from behind".
-  - **(8) "a deliberate clear over the glass"** (defender :96, :750, :1031; special_teams :1138). The rule covers any deliberate puck out of play, so :750's "reach only a deliberate clear over the glass" reads as the books' whole reach. Use "doing it deliberately", as :50 and :741 do. faceoffs :158's "one aimed out" sits nearest "a draw" (low risk).
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.
-- **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; row 6 partly):**
-  - **(7) Unit-opening bare pronouns, corpus-wide.** The tool now exists: `python3 scripts/check_unit_openers.py`. It is a worklist and prints each unit beside the end of the unit heard before. On 20 Nov the default set returned 268 hits; run it rather than quote this. A chunk boundary is not the defect (chunks are concatenated into one file); what matters is what the previous unit ENDS on. Dispatch a read-only triage of the hits by file, then fix the real ones.
+- **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; 7 in W518; row 6 partly):**
   - **(6) Optional, from the diagram-reviewer:**
     - forecheck-2-3-lock's lock route ends in the middle lane while nz-left-wing-lock puts LW in the outside third. The caption hedges this. Aim it nearer the top lane, or leave it.
     - Its "holds the line" and "first in" labels are crossed by paint (pre-existing).

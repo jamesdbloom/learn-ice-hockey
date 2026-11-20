@@ -278,7 +278,7 @@ Learn-to-skate is not a hockey programme and need not be finished first — but 
 
 **NHL/NHLPA Learn to Play**, delivered with USA Hockey and NHL clubs, is the flagship North American entry programme. From its About page, retrieved 27 July 2026:
 
-- It is for **first-time players aged 4 to 9** — genuinely first-time: *"The program is offered to new, first-time participants… those participants who have not previously been registered to USA Hockey a sanctioned youth hockey program."*
+- The programme is for **first-time players aged 4 to 9** — genuinely first-time: *"The program is offered to new, first-time participants… those participants who have not previously been registered to USA Hockey a sanctioned youth hockey program."*
 - It runs **approximately 4–8 weeks**, one lesson a week.
 - **Head-to-toe equipment is provided**, for *"a nominal participation fee"* that *"may vary by market and facility."* Participants are *"properly fitted with equipment during an in-person fitting event"*, and *"All the equipment provided will be for participants to keep upon completion of the program."* It is not literally everything: the equipment page adds *"we recommend all participants purchase a mouth guard, neck guard and athletic supporter."* ⚠️ **Neither the About nor the Equipment page says the kit is new**, so if that matters — and for a helmet it does — ask the programme.
 - Governing-body registration is included for the programme year. USA Hockey *"membership runs Sept 1-Aug 31 annually."*

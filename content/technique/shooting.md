@@ -613,8 +613,8 @@ Read: A deke needs room; you cannot pull the puck across your body once you are 
 
 **Arrive at the top of the circles with less speed than you feel like carrying.** Speed is the enemy of a breakaway for three reasons:
 
-- **It shortens your decision window.** At full flight you get roughly one option; at three-quarter pace you get to see the goalie's depth, change your mind and still execute.
-- **It hands the goalie their easiest read.** A shooter flying in on a straight line has told them exactly where they will be in half a second, which is precisely what a retreating goalie needs.
+- **Speed shortens your decision window.** At full flight you get roughly one option; at three-quarter pace you get to see the goalie's depth, change your mind and still execute.
+- **Speed hands the goalie their easiest read.** A shooter flying in on a straight line has told them exactly where they will be in half a second, which is precisely what a retreating goalie needs.
 - **A deke needs room to happen in.** You cannot pull the puck across your body and get it back if you are already past the post.
 
 **A change of pace beats raw pace.** Come in hard to the blue line, then ease off through the top of the circles and accelerate again as you make your move. The deceleration pulls the goalie out of their retreat rhythm; the re-acceleration arrives before they have re-set. That single pattern is worth more than any hand skill. **That last ranking is coaching craft rather than a measured finding, and it reaches beyond the sources behind it.** The two coaching sources that teach the change of pace — the IIHF's coach-development manual and Cutting Edge Ice Academy — describe beating a *defender* one-on-one, and neither measures it; no source held for this document measures a change of pace against a goalie, or against hand skill. See [Time and Space](../hockey-iq/time_and_space.md).

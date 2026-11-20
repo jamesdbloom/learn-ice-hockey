@@ -75,7 +75,7 @@ What you are looking for:
 - **Gap** — the distance between the defender and an attacker coming at them. Watch how it closes as the attacker crosses centre. See [Defending the Rush](../systems/defending_the_rush.md).
 - **Which one goes to the puck and which one goes to the net**, on every retrieval.
 - **Pinching** — stepping down from the *offensive* blue line to keep a puck in the zone (not the same as **stepping up** on an attacker in the neutral zone). How often, and what has to be true first?
-- **Where they are on the power play** compared with even strength.
+- **Where the defencemen are on the power play** compared with even strength.
 
 **Exercise 3 — Watch the weak side.**
 
@@ -528,7 +528,7 @@ Numbers let you watch hockey when you cannot be at the rink. They are also the f
 
 **Corsi** counts **all shot attempts**: shots on goal, plus shots that missed the net, plus blocked shots. **Fenwick** counts **unblocked shot attempts**: shots on goal plus missed shots, excluding blocks.
 
-They are normally reported as differentials or as percentages:
+Both are normally reported as differentials or as percentages:
 
 - **CF** = Corsi For (your team's attempts while you are on the ice). **CA** = Corsi Against.
 - **CF%** = CF ÷ (CF + CA). 55% means your team took 55% of all attempts while you were on the ice; 50% is break-even. Most players sit between about 40% and 60%, and above about 55% is often called elite.
@@ -536,7 +536,7 @@ They are normally reported as differentials or as percentages:
 
 The names are not acronyms. Corsi was named by Tim Barnes, a Chicago financial analyst writing as "Vic Ferrari", after Jim Corsi, Buffalo's goaltending coach from 2001 to 2014 — chosen, after two Sabres staff names were discarded, from a picture of him whose moustache Barnes liked. Fenwick is named after Matt Fenwick, an Alberta blogger and Flames fan, who in November 2007 proposed excluding blocked shots because a blocked shot is not a genuine chance, or on average a worse one.
 
-- *Why they became popular:* they proxy for possession — you cannot shoot without the puck. And shot attempts pile up roughly **eighteen** times faster than goals (an approximation from recent rates, not a published constant; the common "twenty times" rounds it), so they become meaningful within a handful of games where goals take most of a season. Over short samples, attempt differential predicted future results better than past goal differential did.
+- *Why Corsi and Fenwick became popular:* they proxy for possession — you cannot shoot without the puck. And shot attempts pile up roughly **eighteen** times faster than goals (an approximation from recent rates, not a published constant; the common "twenty times" rounds it), so they become meaningful within a handful of games where goals take most of a season. Over short samples, attempt differential predicted future results better than past goal differential did.
 - *Limits:* a harmless point shot equals a slot chance; score effects and zone starts distort them; linemates drive them; and they undervalue elite finishers. They are a *team* measure attributed to individuals.
 
 Treat them as a rough measure of territory: superseded by expected goals for most purposes, but simple, transparent and available everywhere.
@@ -549,7 +549,7 @@ An **expected goals model** gives each **unblocked** shot attempt a probability 
 
 Typical inputs are distance, angle, shot type, rebound, rush, the previous event and its timing, and strength state. MoneyPuck's public model uses around fifteen such variables, trained on hundreds of thousands of NHL shots with gradient boosting; others use logistic regression or other methods.
 
-- *Why it improved on raw shot counts:* a slot shot and a point shot are no longer the same event, and it still accumulates fast. The trade is that blocked attempts drop out.
+- *Why xG improved on raw shot counts:* a slot shot and a point shot are no longer the same event, and it still accumulates fast. The trade is that blocked attempts drop out.
 - *How models differ:* substantially. Different events, inputs, algorithms and training data mean **two sites will give different xG for the same game**; there is no standard xG. Most public models use only league event data, which does not know where the goalie or defenders were, or whether the shooter was screened.
 - *Other limits:* single-game xG is volatile and no verdict on who deserved to win; player over- or under-performance against xG is noisy; and recorded shot locations have known biases.
 
@@ -585,9 +585,9 @@ Raw possession numbers from lopsided games mostly read the scoreboard back to yo
 
 GSAx is expected goals against minus actual goals allowed. MoneyPuck: *"A positive number means the goalie is stopping more goals than an average goalie would."* +8 over a season means about eight goals fewer than an average goalie facing the same shots.
 
-- *Why it is better:* it separates the goalie from the team. Thirty easy point shots a night and twenty slot chances can produce the same save percentage. GSAx asks: given the shots you faced, were you better or worse than average?
+- *Why GSAx is better:* it separates the goalie from the team. Thirty easy point shots a night and twenty slot chances can produce the same save percentage. GSAx asks: given the shots you faced, were you better or worse than average?
 - *Related measures:* **expected save percentage** makes the same comparison as a percentage. The older goals saved above average (GSAA) ignores shot quality and is weaker.
-- *Limits:* it inherits the xG model's weaknesses — public models miss screens, unrecorded deflections and the goalie's position — and needs a large sample, because goaltending is the noisiest position.
+- *Limits:* GSAx inherits the xG model's weaknesses — public models miss screens, unrecorded deflections and the goalie's position — and needs a large sample, because goaltending is the noisiest position.
 
 Use GSAx over save percentage, and use save percentage over goals against average, but do not treat any of them as final.
 

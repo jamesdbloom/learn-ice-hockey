@@ -156,7 +156,7 @@ The picture shows the hardest version: arriving at the line alone against two de
 
 ![](diagram:entry-delay-curl)
 
-Why it works:
+Why the delay works:
 
 - **It buys your teammates the one thing they need: time to get there.** A forward one stride late is useless; given a second and a half, they are a second attacker. You are *synchronising* the play, not delaying it. See [Puck Support and Spacing](puck_support_and_spacing.md).
 - **It slows the defence with you.** **Greg Revak**, writing at [Hockey's Arsenal](https://hockeysarsenal.substack.com/p/zone-entry-middle-delay) on the middle delay at a zone entry, adds the detail the short version drops: *"if a player away from the puck takes the depth role, then the puck carrier can utilize the space up high to challenge the defense."* Somebody has to go deep. Then the defence faces Revak's question — *"Are you going to step or fall back?"* Step up and they leave space behind them; fall back and they concede a clean entry and a shot from the top of the circles.
@@ -188,7 +188,7 @@ Convention: That a change of speed beats top speed is coaching craft, not a meas
 
 So: **glide, look, explode.** The glide buys the scan, the scan tells you where to go, the explosion goes there. Skate hard all shift and you never have a gear left or your head up.
 
-It works without the puck too, and is worth more there. A winger who drifts, lets their check relax, then breaks is far harder to cover than one who sprints constantly. See [Playing Without the Puck](playing_without_the_puck.md).
+The same rhythm works without the puck too, and is worth more there. A winger who drifts, lets their check relax, then breaks is far harder to cover than one who sprints constantly. See [Playing Without the Puck](playing_without_the_puck.md).
 
 ### Using the net and the boards
 
@@ -247,7 +247,7 @@ Same idea across the whole sheet:
 
 **Knowing your out before the puck arrives buys you more time than any move you will ever learn.** **That is a ranking nobody has measured**, though, so be exact about what stands up. Hockey has one study that counted scanning before a pass reception, and it found that players who scanned succeeded more often than players who did not. It never ranked scanning against a move. [Scanning and Anticipation](scanning_and_anticipation.md) gives the figures and their limits. ⚠️ **And it assumes you are receiving a pass, not tracking a shot** — a goalie facing a live puck gains nothing by looking away from it; see [Goaltender](../positions/goaltender.md).
 
-Why it works: your time with the puck starts when it touches your blade. Spend the first half-second finding out where everyone is, and you have spent most of your budget on information that was free while the puck was travelling. A player who scanned first arrives already decided.
+Why scanning first works: your time with the puck starts when it touches your blade. Spend the first half-second finding out where everyone is, and you have spent most of your budget on information that was free while the puck was travelling. A player who scanned first arrives already decided.
 
 ```facts
 Key: Knowing your out before the puck arrives buys you more time than any move you will ever learn — a ranking nobody has measured, and it does not hold for a goalie tracking a live shot
@@ -345,7 +345,7 @@ Key: The mechanics live in Body Contact and Battles — route, closing speed, wh
 
 **Angling means taking a route that leaves the attacker only the option you want them to have.** You are not chasing them and you are not hitting them. You close on a curve that removes the middle, so the only place left is the boards.
 
-Why it beats chasing, which is the reason it belongs in a document about time and space: a chase is a race you might lose, and then you are behind the play. An angle is geometry, so it works whether or not you are faster — you arrive where they will be, on the side you chose. It also works in every league, because steering somebody is not touching them. ⚠️ **But only while you hold the line you picked: pick it early, keep hip, shoulder and arm out of it, and play the puck — and in a CARHA league do not touch them at all.**
+Why angling beats chasing, which is the reason it belongs in a document about time and space: a chase is a race you might lose, and then you are behind the play. An angle is geometry, so it works whether or not you are faster — you arrive where they will be, on the side you chose. It also works in every league, because steering somebody is not touching them. ⚠️ **But only while you hold the line you picked: pick it early, keep hip, shoulder and arm out of it, and play the puck — and in a CARHA league do not touch them at all.**
 
 **The mechanics are in [Body Contact and Battles → Angling](../technique/body_contact_and_battles.md)** — your route against theirs, momentum back toward your net, closing speed, not crossing over as you close, where your stick goes, and what the angle ends in under checking and non-checking rules. That section quotes USA Hockey's definition and Seth Appert's coaching directly; learn it there.
 
@@ -461,7 +461,7 @@ Never: Treat the strong-side corner as a playmaking zone. Win the battle, then m
 Never: Slow down with the puck in the middle of the neutral zone — a carrier who slows there gets swarmed; it is ice to cross with speed or without the puck
 ```
 
-Learn this like a map: it tells you where to go with the puck and without it.
+Learn these places like a map: they tell you where to go with the puck and without it.
 
 **Places space usually exists:**
 
@@ -536,7 +536,7 @@ A **delayed offside** — linesperson's arm up, no whistle yet — ends when **e
 
 **The trapezoid limits the goalie.** It exists to stop goalies acting as a third defenceman and killing the forecheck. Outside it, the goalie may not play the puck behind the goal line: a two-minute delay-of-game minor under **Rules 27.8 and 63.2(viii)**. **The sole exception is the goalie keeping skate contact with the crease** — there is no teammate-based exception. If your league has no trapezoid, wide dumps are worth much less. See [Zone Entries](../systems/zone_entries.md).
 
-**Its size.** **NHL Rule 1.8** sets it per post: seven feet outside each crease (eight feet from each post) at the goal line, widening to eleven feet from each post at the end boards — which works out to **22 feet wide along the goal line, 28 feet along the end boards, 11 feet deep**. (Cite 27.8 for the penalty only: its own dimensions are stale pre-2014 wording and disagree with 1.8. See [Rules Primer](../foundation/rules_primer.md).) **Do not convert those numbers for the IIHF book.** IIHF Rule 1.8 prints *"The outside dimension of the marking along the goal line is 6.80m and along the boards is 8.60m"* — close to the NHL's widths — but its goal line sits **4.0 m** from the end boards (Rule 1.5) against the NHL's 11 feet (3.35 m), so the IIHF trapezoid is roughly **two feet deeper**. That changes where a puck is retrievable, and a conversion hides it.
+**The trapezoid's size.** **NHL Rule 1.8** sets it per post: seven feet outside each crease (eight feet from each post) at the goal line, widening to eleven feet from each post at the end boards — which works out to **22 feet wide along the goal line, 28 feet along the end boards, 11 feet deep**. (Cite 27.8 for the penalty only: its own dimensions are stale pre-2014 wording and disagree with 1.8. See [Rules Primer](../foundation/rules_primer.md).) **Do not convert those numbers for the IIHF book.** IIHF Rule 1.8 prints *"The outside dimension of the marking along the goal line is 6.80m and along the boards is 8.60m"* — close to the NHL's widths — but its goal line sits **4.0 m** from the end boards (Rule 1.5) against the NHL's 11 feet (3.35 m), so the IIHF trapezoid is roughly **two feet deeper**. That changes where a puck is retrievable, and a conversion hides it.
 
 **Who enforces it.** The **NHL** and **IIHF play**, on very different footings. The IIHF's announcement of 5 June 2021 said it would *"introduce a new Rule Book for the 2021/22 season"*, listing *"A restricted area for goalkeepers behind the net"* — that dates the IIHF's adoption. **The NHL's commonly given 2005-06 date is in no rulebook held here** (its Rules 1.8, 27.8 and 63.2(viii) carry no date), so treat it as received rather than checked. The KHL is commonly said to have it too, **unverified here: no KHL rulebook was available to check.**
 
@@ -661,7 +661,7 @@ Track it for ten games and the habit takes. It is the fastest improvement availa
 - **Pressuring the puck with nobody behind you.** Go when a teammate is set as the second layer, on your team's trigger. Alone, you just move the space behind you.
 - **Chasing the carrier instead of angling.** Close on a curve that leaves them only the wall, hold your line, and take the puck, not the player. A chase is a race you might lose.
 - **Lunging at the pass instead of arriving with it.** Arrive on the receiver as the puck does and press their blade as it lands — a press, not a chop. A lunge is a guess, and a miss leaves you out of position.
-- **Moving into a defender's path to spring a teammate.** Get a teammate open by going somewhere yourself: screen the goalie from outside the crease without contact, or skate your own line to a real destination. Hockey has no legal pick on a skater. Moving into their path is interference. Standing still on your own ice is protected, except in CARHA, which penalises not avoiding contact. Two minutes is the floor: a violent or reckless pick can be a major and game misconduct in most books, and a reckless one is a match penalty in USA Hockey, with a likely multi-game suspension; if your league bars checking, a hip or shoulder pick is an illegal body check.
+- **Moving into a defender's path to spring a teammate.** Get a teammate open by going somewhere yourself: screen the goalie from outside the crease without contact, or skate your own line to a real destination. Hockey has no legal pick on a skater. Moving into their path is interference. Standing still on your own ice is protected, except in CARHA, which penalises not avoiding contact. Two minutes is the floor: a violent or reckless pick can be a major and game misconduct in most books, and a reckless pick is a match penalty in USA Hockey, with a likely multi-game suspension; if your league bars checking, a hip or shoulder pick is an illegal body check.
 - **Treating a shove into the crease as a licence.** Get your feet out, or get clear of the goalie, the moment you are pushed in. A shove can save your goal, but failing to avoid the goalie is still a penalty. Deliberate contact can end your game, and a charge on the goalie always does under Hockey Canada, under CARHA in the crease or if it injures, and under USA Hockey if it is reckless.
 - **Standing still on the half-wall or at the net front.** Keep moving. A stationary player is covered by a defender who also gets to watch the puck.
 - **Letting the stick go to sleep.** Keep the blade in a passing lane. It is the cheapest thing you do all shift, and the first thing you drop when tired.

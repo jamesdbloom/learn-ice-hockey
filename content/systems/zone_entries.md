@@ -1094,7 +1094,7 @@ Meeting the entry at your own blue line rather than backing in.
 Action: Meet the entry at your own blue line rather than backing in
 Goal: Kill controlled entries outright — if they cannot cross with the puck, they cannot get the controlled-entry shot rate
 Risk: If you are beaten you are beaten badly — flat-footed at your own line with a forward behind you and only your goalie left
-Key: It needs good reads, your forwards back, and a partner who slides with you rather than staying deep
+Key: Standing up needs good reads, your forwards back, and a partner who slides with you rather than staying deep
 ```
 
 - **Upside:** it kills controlled entries outright. If they cannot cross with the puck, they cannot have the 0.53–0.62 unblocked shot attempts a successful carry-in was worth at 5-on-5.
@@ -1108,8 +1108,8 @@ The traditional approach, often taught as **receiving the entry**: the defenceme
 ```facts
 Convention: The traditional approach — the defencemen stay roughly between the faceoff dots, mark the carrier and the slot, and steer the play outside
 Goal: Make the entry happen where it is least dangerous
-Key: Very hard to beat cleanly, and it keeps the middle protected
-Risk: It concedes the entry — the attacker gets in with the puck, gets time on the wall, and can shoot with purpose looking for rebounds
+Key: Forcing wide is very hard to beat cleanly and keeps the middle protected
+Risk: Forcing wide concedes the entry — the attacker gets in with the puck, gets time on the wall, and can shoot with purpose looking for rebounds
 ```
 
 - **Upside:** very hard to beat cleanly, and it keeps the middle protected.

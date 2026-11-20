@@ -197,7 +197,7 @@ Read: A dangle that doesn't move the hips is not a dangle — if the chest stays
 Never: Watch the puck — your feet follow your eyes, and your eyes have just been sent the wrong way
 ```
 
-Their **chest and hips cannot lie.** Their torso has to point where their body mass is actually going. Watch the middle of them, and use your peripheral vision for the puck.
+The carrier's **chest and hips cannot lie.** Their torso has to point where their body mass is actually going. Watch the middle of them, and use your peripheral vision for the puck.
 
 Practically:
 
@@ -284,7 +284,7 @@ Position: Three vertical lanes — two outside along the boards, one middle betw
 Convention: The standard assignment is the centre in the middle lane and the wingers in the outside lanes
 Key: Cover the middle lane first, because it runs straight into the slot — the middle-lane driver is the attacker skating hard through the middle without the puck
 Key: That the middle-lane driver is the assignment most often missed is coaching emphasis, not a counted ranking
-Read: They are missed because they do not have the puck, and eyes go to the puck
+Read: Middle-lane drivers are missed because they do not have the puck, and eyes go to the puck
 Options: Other teams give the middle to the first man back, or pick up man-on-man from the puck outward — find out which yours uses
 Key: Under every variant, somebody owns the middle and nobody assumes it is somebody else
 ```

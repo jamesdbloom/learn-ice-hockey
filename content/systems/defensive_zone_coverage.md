@@ -237,7 +237,7 @@ Mindset: Area coverage doesn't ask a tired player or a mismatched winger to win 
 Position: Both wingers are already high — two outlets the moment you win the puck
 ```
 
-- **It protects the middle by construction.** You don't have to make good reads for the house to be full; standing in the right place does most of the work.
+- **Low zone collapse protects the middle by construction.** You don't have to make good reads for the house to be full; standing in the right place does most of the work.
 - **It is the easiest system to learn.** Areas are fixed, so you always know roughly where to be even when the play is chaotic.
 - **It is very hard to beat by cycling.** Teams that grind the puck along the wall and behind the net are working away from the front of your net while you sit in the house, where the high-danger chances come from. Let them cycle. They're spending energy on the perimeter.
 - **Area coverage handles fatigue and mismatches.** When you're tired, or a fourth-line winger is on with their top centre, it doesn't ask you to win a footrace.
@@ -295,9 +295,9 @@ Mindset: "They're yours" is the easiest instruction in hockey to understand, tho
 ```
 
 - **Nobody is ever unmarked.** The seam problem that zone coverage has simply doesn't exist. Every attacker has someone within a stick length.
-- **It is excellent against skilled cyclers and set plays.** A cycle works by moving the puck to a teammate who has beaten the *area* — if you're glued to a man, the movement doesn't create anything.
-- **It generates turnovers.** Pressure everywhere means bad passes everywhere. Zone coverage waits; man-on-man takes.
-- **It lets you match up.** Your best defensive forward can be put on their best player, all shift.
+- **Man-on-man is excellent against skilled cyclers and set plays.** A cycle works by moving the puck to a teammate who has beaten the *area* — if you're glued to a man, the movement doesn't create anything.
+- **Man-on-man generates turnovers.** Pressure everywhere means bad passes everywhere. Zone coverage waits; man-on-man takes.
+- **Man-on-man lets you match up.** Your best defensive forward can be put on their best player, all shift.
 - **Conceptually simple.** "They're yours" is the easiest instruction in hockey to understand — though not to execute.
 
 ### Man-on-Man: What it concedes
@@ -308,7 +308,7 @@ In man-on-man coverage, never follow your check into harmless ice — a corner w
 Countered by: Picks and screens — one collision the referee lets go and your man is gone with a two-stride head start
 Risk: Mismatches — a winger in a footrace with a mobile defenceman has no help behind them
 Risk: One beaten player leaves an attacker with the puck and nobody within twenty feet; every breakdown is immediately a high-danger chance
-Risk: It is exhausting — a full shift at your opponent's chosen pace, in your own zone
+Risk: Man-on-man is exhausting — a full shift at your opponent's chosen pace, in your own zone
 Never: Follow your check into harmless ice while their teammate walks into the slot you vacated
 Risk: Poor breakout readiness — when you win the puck, your five are wherever their five decided to stand
 ```
@@ -316,8 +316,8 @@ Risk: Poor breakout readiness — when you win the puck, your five are wherever 
 - **Picks and screens.** Attacking teams beat man coverage by running players into your defenders on purpose — often interference, but not always called. One collision the referee lets go and your man is gone with a two-stride head start.
 - **Mismatches.** Your winger is now defending a mobile defenceman in a footrace. If they lose that individual battle, there is no help behind them, because everyone else is occupied.
 - **Total collapse from one error.** In zone coverage a beaten player leaves a hole; in man-on-man a beaten player leaves an attacker with the puck and nobody within twenty feet. Every breakdown is immediately a high-danger chance.
-- **It is exhausting.** You are skating a full shift — 30 to 80 seconds on the measured range, nearer 30–45 when it is well managed; [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers both figures — at your opponent's chosen pace, in your own zone.
-- **It pulls you out of the house.** The classic failure is chasing a man into the corner who never had any intention of getting the puck, while their teammate walks into the slot you vacated. Good man-on-man teams have a rule about *not* following a check into harmless ice.
+- **Man-on-man is exhausting.** You are skating a full shift — 30 to 80 seconds on the measured range, nearer 30–45 when it is well managed; [Conditioning and Recovery](../off-the-ice/conditioning_and_recovery.md) covers both figures — at your opponent's chosen pace, in your own zone.
+- **Man-on-man pulls you out of the house.** The classic failure is chasing a man into the corner who never had any intention of getting the puck, while their teammate walks into the slot you vacated. Good man-on-man teams have a rule about *not* following a check into harmless ice.
 - **Poor breakout readiness.** When you win the puck, your five players are wherever their five players decided to stand, which is rarely a breakout shape.
 
 Coaching material has man-on-man much less common as a pure system than it used to be — coaching consensus rather than a count. Coaching resources are consistent that the removal of clutch-and-grab defending after 2004-05 made pure man coverage very hard to execute against modern speed and skill. What survives is the hybrid below.
@@ -338,7 +338,7 @@ Risk: Two players on different sides of "are they below the dots yet?" is exactl
 Options: "Man on the puck, zone off the puck" is the same family — man on the carrier anywhere, area coverage away from it
 ```
 
-It is a deliberate compromise: man coverage where being unmarked is fatal, zone coverage where it isn't. Coaching material routinely calls it the most common arrangement in professional hockey, and increasingly common below it. **No count of what teams run in this zone has been found**, so treat that as coaching consensus. (The one team-level measure on record, KHL pass-clustering data described in [Breakouts](breakouts.md), is about a different phase of play.)
+The hybrid is a deliberate compromise: man coverage where being unmarked is fatal, zone coverage where it isn't. Coaching material routinely calls it the most common arrangement in professional hockey, and increasingly common below it. **No count of what teams run in this zone has been found**, so treat that as coaching consensus. (The one team-level measure on record, KHL pass-clustering data described in [Breakouts](breakouts.md), is about a different phase of play.)
 
 **The rule of thumb:** **man-on-man below the dots, zone above them.** Some teams say "below the hash marks" or "below the top of the circles" — the line varies by a few feet, so learn your team's version. Above that line, you cover an area and pass players off. Below it, you take a body and you stay with it.
 
@@ -373,11 +373,11 @@ Countered by: A good puck-moving team — one chaser cannot pressure them, so th
 
 ![](diagram:dz-box-plus-one)
 
-**Where it actually gets used:**
+**Where Box+1 actually gets used:**
 
 - **As a teaching system.** Coaching material describes it as the standard introductory defensive-zone structure for young players and beginner adults, because it is passive, forgiving of individual mistakes, and gives everyone a simple picture of where to stand. Coaching resources present it explicitly as the stepping stone to sagging zone or hybrid coverage later. **Nobody publishes a count of what teams actually run**, at any level, so take both of those as coaching consensus rather than a measured fact.
 - **In rec and beer league**, where nobody has practised rotations and the priority is that five people are not all chasing the same puck.
-- **It is not a penalty-kill box.** A penalty-kill box is four players with two high and two low (see [Special Teams](special_teams.md)). Box+1 is a five-player even-strength shape. Same word, different thing.
+- **Box+1 is not a penalty-kill box.** A penalty-kill box is four players with two high and two low (see [Special Teams](special_teams.md)). Box+1 is a five-player even-strength shape. Same word, different thing.
 
 **What it concedes:** almost everything on the perimeter. One chaser cannot pressure a good puck-moving team, so they will hold the puck as long as they like and pick their moment. It buys structure at the cost of ever getting the puck back.
 
@@ -395,7 +395,7 @@ Countered by: One hard, accurate cross-ice pass — the overload leaves the whol
 
 ![](diagram:dz-collapsing-box)
 
-Where it gets used:
+Where the collapsing box gets used:
 
 - **Protecting a lead late**, when a shot from the point costs you nothing and a seam pass costs you the game. See [Game Management](game_management.md).
 - **Defending 6-on-5** with the opposing goalie pulled.

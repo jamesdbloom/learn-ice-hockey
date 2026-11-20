@@ -199,7 +199,7 @@ Goal: Be the first line of the breakout and get into the neutral zone with speed
 
 **Where to be:** This is the one job on the ice that is defined by a *move* rather than a spot, so hold both ends of it:
 
-- **While they still have the puck** — high on your side, roughly level with the opposing defenceman you are covering. Unchanged from the section above.
+- **While the other team still has the puck** — high on your side, roughly level with the opposing defenceman you are covering. Unchanged from the section above.
 - **As your team wins it** — down the wall on your side, to **between the hash marks and the goal line**. That is the outlet position, **a little under 44 to 64 feet below** where you started. The blue line is 64 ft out from the goal line and **the point sits just inside it rather than on it**; the outlet band runs from level with the faceoff dot, 20 ft out, down to the goal line ([Rink Map](../foundation/rink_map.md) covers both figures). **In the conventional swing breakout**, that is — under a **flat/spread** structure you hold higher toward the blue line, and under a **stretch or flying-winger** structure one winger leaves up ice altogether. Find out which you're in (see the note under *Defensive Zone: Carrying the Puck — Free Space* above, and [Breakouts](../systems/breakouts.md)).
 
 Staying high is what makes that trip short and makes you the first outlet available; it is not where you receive the pass. A winger who never leaves the point is as wrong as one who left it early — the pass to a winger standing at the blue line is long, flat and intercepted, and it arrives in your back. Come down as the puck becomes yours.

@@ -280,8 +280,8 @@ Coaches use these words to organise five players quickly, and you will meet them
 
 Two things trip people up:
 
-- **It is not about which end you are in.** "Above" always means goal-side of the puck, relative to the net you defend. A forward in the offensive corner is *below* the puck if the puck is at the point.
-- **It flips on a turnover.** Players usefully below the puck in attack are stranded below it in defence. Only possession decides whether it is an asset or a liability.
+- **Above and below are not about which end you are in.** "Above" always means goal-side of the puck, relative to the net you defend. A forward in the offensive corner is *below* the puck if the puck is at the point.
+- **The value of being below the puck flips on a turnover.** Players usefully below the puck in attack are stranded below it in defence. Only possession decides whether it is an asset or a liability.
 
 ### Somebody above the puck — the safety convention
 
@@ -392,7 +392,7 @@ Risk: Converging leaves nobody above the puck, which turns a routine turnover in
 - **You bring your checker.** You arrive as two players, in a space already crowded.
 - **You remove an option.** A teammate five metres away is an option; one metre away, inside the same checking bubble, is not.
 - **You leave the space the puck is about to go to.** Pucks come out of piles into empty ice. If everyone is in the pile, that ice belongs to the other team.
-- **It leaves nobody above the puck,** which turns a routine turnover into an odd-man rush the other way. See [Defending the Rush](../systems/defending_the_rush.md).
+- **Converging leaves nobody above the puck,** which turns a routine turnover into an odd-man rush the other way. See [Defending the Rush](../systems/defending_the_rush.md).
 
 ### How to train yourself out of it
 

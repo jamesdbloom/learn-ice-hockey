@@ -95,7 +95,7 @@ Four reasons, and they compound.
 
 **3. Most of the ways to make an odd-man rush live here.** A forward caught on the wrong side of the puck, a defenceman who stepped up and missed, a winger who left the zone early — all happen in the middle third. ⚠️ **That is coaching consensus, and not every odd-man rush starts here.** [Defending the Rush](defending_the_rush.md) owns the subject and lists five causes, one of them in the offensive zone — both defencemen caught below the puck. **No public data classifies an odd-man rush by the play that created it**, so nothing counts which cause is commonest.
 
-**4. It is where the skill part of shot differential comes from.** **Carrying the puck in produces roughly twice the unblocked shot attempts per entry of dumping it in, at 5-on-5.** That comes from public tracking of NHL zone entries: Eric Tulsky and colleagues' paper at the 2013 MIT Sloan conference, which hand-tracked **330 games from the 2011-12 season**, and Corey Sznajder's later tracking (**2014-16**, reported second-hand and flagged as indicative in [Zone Entries](zone_entries.md)).
+**4. The middle third is where the skill part of shot differential comes from.** **Carrying the puck in produces roughly twice the unblocked shot attempts per entry of dumping it in, at 5-on-5.** That comes from public tracking of NHL zone entries: Eric Tulsky and colleagues' paper at the 2013 MIT Sloan conference, which hand-tracked **330 games from the 2011-12 season**, and Corey Sznajder's later tracking (**2014-16**, reported second-hand and flagged as indicative in [Zone Entries](zone_entries.md)).
 
 The paper's authors drew a further conclusion from their own data. Over a season, shots per offensive-zone possession did not separate players reliably — the paper puts that down to luck. Entry differential and the share of entries made with possession did, *"clearly show[ing] reproducible differences from player to player"*. So the talent component of shot differential *"seems to come almost entirely from the neutral zone play."* The structure you play there is one of your biggest levers on chances at both ends. Both data sets are NHL, the figures vary between studies, and "roughly double" is the honest number rather than any decimal.
 
@@ -291,7 +291,7 @@ Never: Play it as your default — some youth teams do and should not
 Position: Two forwards forecheck aggressively in their end; the moment possession is lost the left wing drops into line with the two defencemen
 Goal: Forecheck without paying the odd-man price — three across the back, each responsible for roughly a third of the width of the ice
 Convention: Conventionally the centre and right wing forecheck, steering the puck to the opponent's right side — a coaching choice, not a law
-Risk: It takes one player out of the counterattack and asks them to do a job most wingers are not trained for — costly if they are your best attacker
+Risk: The lock takes one player out of the counterattack and asks them to do a job most wingers are not trained for — costly if they are your best attacker
 Read: A left wing who reads transitions early makes it work; one who reacts late gives you the worst of both systems
 Options: Many teams now lock whichever winger is highest in the zone instead, which needs a loud and immediate in-game call
 ```
@@ -360,7 +360,7 @@ Convention: Both defencemen taking a step up inside the dots is an aggressive-ga
 Rule: Where a step up is finished as a hit, it can be called charging in every division — USA Hockey's Casebook rules the head-down case charging (607, Situation 2) and reaches a check accelerated through without the two-stride run-up (Situation 3)
 Rule: Charging binds every division, checking or not, and no book caps it at a minor: if it injures it is a major and game misconduct (Hockey Canada 7.4(b), CARHA 52(a)), as it is if reckless under USA Hockey (607(b)), which has no bare minor (607(a)) — plan on a match and a likely multi-game ban (602(a))
 Rule: Under NHL and PWHL 42.5 and EIHL Casebook Rule 42, a charging major that injures the face or head adds a mandatory game misconduct; an IIHF charge to the head goes to Rule 48, where a major always carries one (48.3); every Hockey Canada charging major brings a game misconduct (7.4(e))
-Rule: Hockey Canada prices a charge to the head as Head Contact (7.6, 7.7): a mandatory major and game misconduct in Junior and Senior for high violence, or for driving the head into the boards, glass or ice and injuring it (7.7(b)); in minor and female hockey, for an accidental one that injures (7.6(b))
+Rule: Hockey Canada prices a charge to the head as Head Contact (7.6, 7.7): a mandatory major and game misconduct in Junior and Senior for high violence, or driving the head into boards, glass or ice and injuring it (7.7(b)); in minor and female hockey, for accidental head contact that injures (7.6(b))
 Rule: Every CARHA charging major adds a game misconduct and ends your game (30(a)) (CARHA adult leagues only)
 Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
 Rule: Charging a player "unable to defend themselves", or to injure, is a mandatory match under Hockey Canada 7.4(c), as a deliberate attempt to injure is under CARHA 48(a), USA Hockey 602(a) (likely a multi-game ban), NHL and PWHL 21.1; the IIHF has no match: plan on a major and game misconduct (42.4)
@@ -392,12 +392,12 @@ Both are coaching convention, and coaching material does not agree. Some materia
 - **A step up is not a pinch.** Your feet keep moving backwards and the attacker stays in front of you. It is *not* a licence to attack the puck. [Defender](../positions/defender.md) is right that you should only step up to *challenge* in the neutral zone when you are **confident** you will win it — how aggressive to be is a coaching choice — because if you miss, your partner is alone in a 2-on-1.
 - **A step up is not a licence to finish it as a hit.** Close the space with your feet; ⚠️ **do not build speed into the player.** A carrier who has not seen you coming is exactly the picture the charging rules name — **USA Hockey's Casebook rules it charging** when a player skates *"at full speed to deliver a hard body check"* on *"an unsuspecting opponent skating up the ice with their head down"* (Rule 607, Situation 2). ⚠️ **A step up needs no run-up to reach it:** Situation 3 also answers *"Yes"* for a check delivered *"without taking the two fast strides, but instead accelerat[ing] through the check."* The full price is in *What it costs* at the end of this section.
 - **Stepping up together is not pinching together.** [Forechecking Systems](forechecking_systems.md) says only one defenceman pinches at a time, and that holds: a pinch is at the *offensive* blue line with the puck behind you if you miss. Both tightening a neutral-zone gap by ten feet is a much smaller bet.
-- **It needs backpressure to be safe.** With one forward gliding at the red line, one defenceman holds the middle and the other stays home. **Ask which your team wants — the cue is not universal.**
+- **A step up needs backpressure to be safe.** With one forward gliding at the red line, one defenceman holds the middle and the other stays home. **Ask which your team wants — the cue is not universal.**
 
 **What it costs.** ⚠️ **Charging binds every division, checking league or not, and no book here caps it at a minor.** The charging rules carry no division clause, where the body-checking rules that restrict themselves say so (USA Hockey 604(a), Hockey Canada 7.3).
 - **Stride count runs the other way for anyone who learned the American number.** Hockey Canada 7.4(ii) makes *"two or more strides"* the offence; USA Hockey 607's Note and CARHA 52's Note (CARHA-affiliated adult leagues only) need *"more than two"*; IIHF 42.1 (2026/27) says only *"multiple strides"*; NHL 42.1 judges it *"as a result of distance traveled"*.
 - **USA Hockey:** no minor on its own — 607(a) reads *"A minor plus a misconduct or a major plus a game misconduct penalty shall be assessed"*. A reckless charge is a mandatory major plus game misconduct (607(b)), and plan on a match and a likely multi-game suspension for it: 602(a) says a match *"shall be assessed"* to any player who *"recklessly endangers or attempts to injure"*, though 607(e) says only *"may also"*. Any USA Hockey game misconduct also costs you your team's next game (404(b)), and one that follows a second major in the same game at least two.
-- **Hockey Canada and CARHA:** a charge that injures is a mandatory major plus game misconduct (7.4(b), 52(a)), and every charging major carries a game misconduct (7.4(e), 30(a)). Hockey Canada penalises a charge that reaches the head as Head Contact instead (7.6, 7.7): in Junior and Senior a high-violence one, or one that drives the head into the boards, glass or ice and injures it, is a mandatory major plus game misconduct (7.7(b)), and in minor and female hockey so is an accidental one that injures (7.6(b)). In a CARHA league a major's game misconduct also costs at least your next game, possibly more, unless it was for an accidental high stick (32(d)). Under Hockey Canada, a game misconduct in the last ten minutes, in overtime or after the game costs at least the next game or seven days (4.8(c)). Hockey Canada 7.4(c) makes a charge *"in such a way that they are unable to defend themselves"*, or a deliberate attempt to injure, a mandatory match penalty; CARHA 48(a) makes one mandatory for any player who *"deliberately injures or attempts to injure an opponent… in any manner"*.
+- **Hockey Canada and CARHA:** a charge that injures is a mandatory major plus game misconduct (7.4(b), 52(a)), and every charging major carries a game misconduct (7.4(e), 30(a)). Hockey Canada penalises a charge that reaches the head as Head Contact instead (7.6, 7.7): in Junior and Senior a high-violence one, or one that drives the head into the boards, glass or ice and injures it, is a mandatory major plus game misconduct (7.7(b)), and in minor and female hockey so is accidental head contact that injures (7.6(b)). In a CARHA league a major's game misconduct also costs at least your next game, possibly more, unless it was for an accidental high stick (32(d)). Under Hockey Canada, a game misconduct in the last ten minutes, in overtime or after the game costs at least the next game or seven days (4.8(c)). Hockey Canada 7.4(c) makes a charge *"in such a way that they are unable to defend themselves"*, or a deliberate attempt to injure, a mandatory match penalty; CARHA 48(a) makes one mandatory for any player who *"deliberately injures or attempts to injure an opponent… in any manner"*.
 - **NHL and PWHL:** a charging major that injures the face or head carries a mandatory game misconduct (42.5). 21.1 makes a match mandatory for any player who *"deliberately attempts to injure or who deliberately injures an opponent in any manner"*; their charging rule's own match (42.4) is the referee's call, so plan on 21.1's.
 - **EIHL:** the Casebook adds a mandatory game misconduct when a charging major injures the face or head (Rule 42); otherwise the IIHF book below applies.
 - **IIHF:** a charge to the head goes to the head-check rule, where any major carries an automatic game misconduct (48.3); 42.4 leaves a major and game misconduct for any other reckless charge to the referee.
@@ -432,11 +432,11 @@ Rule: A reckless USA Hockey charge is a major and game misconduct (607(b)) — p
 
 **What it is.** Meet the attacker at or just inside your blue line, refuse to give ground, and force a dump, a pass or a turnover.
 
-**Why it works.** A carried entry is worth roughly twice a dumped one in unblocked shot attempts at 5-on-5, on NHL tracking more than a decade old — see [Zone Entries](zone_entries.md) for the limits. Turn carries into dump-ins and your night gets easier. It also keeps the play 60 feet from your net rather than 20, and lets your forwards recover.
+**Why standing up works.** A carried entry is worth roughly twice a dumped one in unblocked shot attempts at 5-on-5, on NHL tracking more than a decade old — see [Zone Entries](zone_entries.md) for the limits. Turn carries into dump-ins and your night gets easier. It also keeps the play 60 feet from your net rather than 20, and lets your forwards recover.
 
 **What it risks.** Beaten standing up, you are beaten completely — your feet are stopped, theirs are not, and you have given up the middle. It also invites the **chip-and-chase**: the attacker puts the puck past your hip and runs around you, and with stopped feet you cannot win that race. **Once the puck is past you, go for the puck, not the player: turn and skate to it, and never step into them or hit them** — they no longer have the puck, and blocking them with your body is interference.
 
-**When it is right.** When you have backpressure; when the attacker is wide rather than in the middle; when they are at a bad angle or already fighting the puck; when protecting a lead means forcing dump-ins.
+**When standing up is right.** When you have backpressure; when the attacker is wide rather than in the middle; when they are at a bad angle or already fighting the puck; when protecting a lead means forcing dump-ins.
 
 **What standing up is not.** It is refusing ground with your feet, so the carrier has to solve you. ⚠️ **It is not building speed into a hit, and a carrier fighting the puck or looking down at it is not an invitation to arrive harder** — that only tells you they cannot change direction. **And keep your skates on the ice until contact** — leave your feet to deliver a check and every book here calls it charging, even shoulder to shoulder.
 
@@ -453,11 +453,11 @@ Read: Right when you have no backpressure, when the attacker has a clear speed a
 Risk: You concede the entry — they come in with speed and possession and you defend with your feet moving toward your own net
 ```
 
-**Why it works.** You cannot be beaten wide by pure speed, and you funnel the attacker outside, where the shot is low-percentage. It is very hard to make a catastrophic error doing it.
+**Why backing off works.** You cannot be beaten wide by pure speed, and you funnel the attacker outside, where the shot is low-percentage. It is very hard to make a catastrophic error doing it.
 
 **What it risks.** You concede the entry. They come in with speed and possession, and you defend with your feet moving toward your own net — exactly what they wanted.
 
-**When it is right.** When you have no backpressure; when the attacker has a clear speed advantage; on a 2-on-1 or worse, where the middle matters far more than the line; when you are the last defender and a mistake is a breakaway.
+**When backing off is right.** When you have no backpressure; when the attacker has a clear speed advantage; on a 2-on-1 or worse, where the middle matters far more than the line; when you are the last defender and a mistake is a breakaway.
 
 ### The honest summary
 
@@ -635,7 +635,7 @@ Convention: Lanes are positions, not people — you will swap constantly, so cal
 
 **Why.** Three separated forwards are three passing options, and one flat line of defenders cannot cover three lanes without spreading thin. Two forwards in one lane lets one defender cover both — you have made it 5-on-4 against yourselves.
 
-**Why it goes wrong.** Everybody chases the puck. It goes to the left wall, your centre follows, and your right wing drifts to the middle to "support". Now the right side is empty, the defence has slid over, and there is nowhere to go.
+**Why lane discipline goes wrong.** Everybody chases the puck. It goes to the left wall, your centre follows, and your right wing drifts to the middle to "support". Now the right side is empty, the defence has slid over, and there is nowhere to go.
 
 ![](diagram:neutral-zone-lanes)
 
@@ -650,16 +650,16 @@ Convention: Lanes are positions, not people — you will swap constantly, so cal
 ```facts
 Position: A forward stays high — near or beyond the far blue line — and the pass bypasses the neutral zone entirely
 Rule: The stretch pass is legal only because the two-line pass rule went — commonly dated to the end of the 2004-05 lockout, a date in no rulebook held here; what is checked is that NHL Rule 83 now contains no two-line provision
-Read: It counters a flat line still holding out in the neutral zone — a trap at the red line or a 1-3-1 — but not a 1-4, which leaves no legal ice behind it
+Read: The stretch pass counters a flat line still holding out in the neutral zone — a trap at the red line or a 1-3-1 — but not a 1-4, which leaves no legal ice behind it
 Rule: One skate in contact with the far blue line, or on your own side of it, keeps the stretch forward onside at the instant the puck completely crosses (NHL Rule 83.1)
 Rule: A skate in the air over the neutral zone counts as onside under NHL, IIHF and PWHL rules, but not under USA Hockey 630(a) or Hockey Canada 6.11, which require skate contact; CARHA never defines its "own side", so drag the blade in contact and you are onside in every book
 Technique: Flat and hard, into the space they are skating into — a stretch pass to a stationary player is a turnover
 Risk: Leaving a forward high means defending 4-on-5 while you do it — a coaching decision, so ask
 ```
 
-**Why it exists.** It is legal only because the two-line pass rule went (see [What the neutral zone actually is](#what-the-neutral-zone-actually-is)). It counters a flat line **still holding out in the neutral zone** — a 1-2-2 trap at the red line, or the three-player line of a 1-3-1 — because there is real ice behind such a line for a receiver to stand in legally.
+**Why the stretch pass exists.** It is legal only because the two-line pass rule went (see [What the neutral zone actually is](#what-the-neutral-zone-actually-is)). It counters a flat line **still holding out in the neutral zone** — a 1-2-2 trap at the red line, or the three-player line of a 1-3-1 — because there is real ice behind such a line for a receiver to stand in legally.
 
-> **It is not the counter to a 1-4.** A 1-4 holds its line on **its own blue line**, so there is no legal ice behind it: a receiver already behind it is offside the moment the puck crosses. Against a 1-4, **chip it hard past the flat line and race for it**, pulling up if the goalie comes out for it — see [the 1-4 section](#1-4--the-full-retreat) and [Forechecking Systems](forechecking_systems.md). The same goes for any structure that has retreated to its own blue line, whatever it is called.
+> **The stretch pass is not the counter to a 1-4.** A 1-4 holds its line on **its own blue line**, so there is no legal ice behind it: a receiver already behind it is offside the moment the puck crosses. Against a 1-4, **chip it hard past the flat line and race for it**, pulling up if the goalie comes out for it — see [the 1-4 section](#1-4--the-full-retreat) and [Forechecking Systems](forechecking_systems.md). The same goes for any structure that has retreated to its own blue line, whatever it is called.
 
 **How to do it well.**
 - **Get behind the wall, not level with it.** Level is covered; behind is a footrace.
@@ -685,7 +685,7 @@ The picture below is drawn from the defending bench, because that side has to so
 
 ![](diagram:rush-trailer)
 
-**Why it works.** Defenders track the puck and the immediate threats, so the player arriving behind the first wave is the one nobody picked up. Coaching material treats the late man into the high slot behind a two-player rush as one of the most reliable scoring looks in hockey. That is **coaching consensus rather than a tracked figure**: published goal breakdowns stop at the shot and the pass before it, and **none classifies a rush goal by the coverage that broke down**.
+**Why the late man works.** Defenders track the puck and the immediate threats, so the player arriving behind the first wave is the one nobody picked up. Coaching material treats the late man into the high slot behind a two-player rush as one of the most reliable scoring looks in hockey. That is **coaching consensus rather than a tracked figure**: published goal breakdowns stop at the shot and the pass before it, and **none classifies a rush goal by the coverage that broke down**.
 
 **The discipline.** Be genuinely late — a full gap back, not five feet, so the defence has to choose between you and the puck. And be first back if it turns over; that is the deal.
 
@@ -702,7 +702,7 @@ Never: Chip from your own side of the red line at equal strength — untouched o
 Risk: After an even-strength icing, NHL, IIHF, PWHL and Hockey Canada U18AAA, Junior and opted-in Senior rules bar a line change before the faceoff — narrow exceptions, an injured player among them
 ```
 
-**When it is right.** Against a defenceman standing up at the line; against a 1-3-1, with only one player behind the wall; when you have a speed advantage; when you are changing and want the puck deep and safe.
+**When chip-and-chase is right.** Against a defenceman standing up at the line; against a 1-3-1, with only one player behind the wall; when you have a speed advantage; when you are changing and want the puck deep and safe.
 
 **How to do it well.** The chip is a **placement**, not a clearance. Aim for a spot you can win — soft off the wall so it dies in the corner you are skating to, or flat past the defender's stick-side hip so you run around them on your forehand. **The difference from dump-and-pray is whether the second and third forwards go.**
 

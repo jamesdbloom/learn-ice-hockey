@@ -179,7 +179,7 @@ Risk: Low risk, moderate reliability — the puck never enters the lane the chec
 - **Why it is safe:** the puck never travels through the lane the checker is defending. It goes behind them, off a wall they cannot cover, so there is nothing for a stick or a skate to intercept. That, and only that, is the safety argument.
 - **Why it is only moderately reliable:** the bounce is not fully predictable, and boards vary rink to rink. Unpredictability is the *cost* of the play, not the reason it works — an unpredictable puck is one your teammate may also fail to read. Compare the [rim](#rim-vs-reverse--two-opposite-plays-keep-them-straight) below, where the same logic applies and the same caveat holds: a puck your teammate is not expecting is a turnover regardless of how well it beat the checker.
 
-**It is underused** because it does not feel like a "real" pass — but a bank a teammate collects is a completed pass, and beating a stick with geometry costs you nothing. Call it, so the reliability problem is the boards' and not your teammate's.
+**A bank pass is underused** because it does not feel like a "real" pass — but a bank a teammate collects is a completed pass, and beating a stick with geometry costs you nothing. Call it, so the reliability problem is the boards' and not your teammate's.
 
 ### Rim vs reverse — two opposite plays, keep them straight
 
@@ -234,7 +234,7 @@ CARHA 53(b) makes a hit from behind into the boards or the net, on a player who 
 Goal: Aim at a patch of ice your teammate will reach before an opponent does, not at a blade
 Technique: Flat, with enough pace to clear the nearest defender's stick but not so much that it runs to the far boards
 Read: Use it when no teammate is open but one is about to be, or in the neutral zone when a direct pass would thread traffic, if your teammate can win the race
-Key: It cannot be intercepted the way a direct pass can, because it is not aimed at a body — it becomes a race
+Key: An area pass cannot be intercepted the way a direct pass can, because it is not aimed at a body — it becomes a race
 Risk: Only a good play if your teammate has a genuine speed or angle advantage; otherwise you are giving the puck away politely
 ```
 
@@ -322,7 +322,7 @@ Risk: A puck arriving behind a teammate or in their feet in traffic puts their h
 
 **Into space** means the puck arrives at a point ahead of the receiver, timed so that they skate onto it without breaking stride. Correct in almost every other case, and especially in transition.
 
-**Why it matters.** A pass to a moving teammate's current position is behind them by the time it gets there. They have to reach back, slow down, or turn — and every one of those kills the speed that made the play dangerous. Receiving **in stride** is the whole point: the receiver keeps their speed, keeps their head up, and keeps the defence retreating.
+**Why passing into space matters.** A pass to a moving teammate's current position is behind them by the time it gets there. They have to reach back, slow down, or turn — and every one of those kills the speed that made the play dangerous. Receiving **in stride** is the whole point: the receiver keeps their speed, keeps their head up, and keeps the defence retreating.
 
 **And in traffic the cost is not only the rush.** A puck that arrives behind a teammate or in their feet makes them put their head down to find it, at the moment a checker is arriving — and head down is the posture that gets a player driven head-first into the boards. [Body Contact and Battles](body_contact_and_battles.md) owns the wording and the evidence. ⚠️ **Where you put the puck decides where your teammate's head is**, so leading them properly is a duty you owe them and not only a way of keeping the play alive.
 
@@ -501,7 +501,7 @@ Rule: USA Hockey 618(b) needs the pass "initiated and completed in their defendi
 Rule: The IIHF Situation Handbook 2025/26 rules the blue-line case three ways at Situations 79.2, 79.3 and 79.5, all by the puck; USA Hockey Casebook 618 Situation 3 agrees and adds that "the blue line is considered to be part of the Defending Zone in this instance"
 ```
 
-It will happen, and it is a skill, not an accident to be complained about.
+A pass in your feet will happen, and it is a skill, not an accident to be complained about.
 
 - **Kick it forward to your stick with the inside of your skate.** One deliberate, controlled kick to a spot in front of you, not a panicked scuff. ⚠️ **Send the skate at the puck, never at the player.** A puck in your feet usually has an opponent's feet beside it, and a kick at them can end your game for a reflex — the costs are below.
 - **Or open your hips and let it run through**, then collect it behind your stride. Turning your body slightly is usually faster than reaching.
@@ -620,9 +620,9 @@ Technique: Soft on receive, firm on release — even a one-touch has a tiny cush
 Technique: Set your feet, because you need a stable base to redirect a puck accurately at speed
 ```
 
-**Why it beats coverage.** Defenders and goalies are reacting to where the puck is. Every touch you take gives them time to re-set. A one-touch pass moves the puck faster than a defence can rotate, so the puck arrives in a space that was covered when the pass started and is not covered when it lands. This is exactly why the best power plays are built on one-touch sequences — see [Special Teams](../systems/special_teams.md).
+**Why a one-touch beats coverage.** Defenders and goalies are reacting to where the puck is. Every touch you take gives them time to re-set. A one-touch pass moves the puck faster than a defence can rotate, so the puck arrives in a space that was covered when the pass started and is not covered when it lands. This is exactly why the best power plays are built on one-touch sequences — see [Special Teams](../systems/special_teams.md).
 
-**When it is on:**
+**When a one-touch is on:**
 
 - The pass to you is flat, accurate, and at a pace you can redirect.
 - Your next target is already open *and you already know it*.
@@ -706,7 +706,7 @@ Key: Deception is a supplement, not a substitute — selling a look is worthless
 - The defender you are beating is actively reading your eyes.
 - The pass is short enough that your spatial memory is reliable.
 
-It is **not** justified as a default, and it is a bad habit in your own end. The failure mode is that the target has moved since you last looked, and you have thrown the puck to a memory. Every no-look is a bet that the ice has not changed. In the defensive zone, do not take that bet.
+A no-look pass is **not** justified as a default, and it is a bad habit in your own end. The failure mode is that the target has moved since you last looked, and you have thrown the puck to a memory. Every no-look is a bet that the ice has not changed. In the defensive zone, do not take that bet.
 
 **Deception is a supplement, not a substitute.** Selling a look is worthless if the pass that follows is inaccurate. Get the mechanics reliable first.
 
