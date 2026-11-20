@@ -13,13 +13,18 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W568 and W569 shipped with record `w569_after_icing_scope_and_usa_hockey_head_tier_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W570 and W571 shipped with record `w571_carha_53a_match_and_zone_entries_head_tier_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
   - **(3) The honest-attempt rung at goaltender facts :1266** (299/300, its block is at HARD_MAX) still has no 620 overlay. Its sibling :1262 carries 620(b). Left in W535.
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
+- **From W571 (20 Nov):**
+  - **(1) center now carries CARHA 53(a)'s clause in seven units** (:691, :709, :792, :894, :899, CM :918, :929). Do not add an eighth. If center is edited for readability, drop the body copies at :709 and :792 first, because the nearest facts line carries the clause.
+  - **(2) Optional, errs harsh:** most sites say CARHA can make "any hit from behind" a match. 53(a) reaches an *intentional* push, check or hit from behind. center :899 uses "intentional".
+  - **(3) Not checked:** other CARHA rules (48(a), 49, 52) for unstated match limbs, and units pricing CARHA without naming it.
+  - **(4) Two at-cap facts lines end on a clipped phrase:** defender :826 "CARHA 53(a) allows one for any" and switching_positions :246 "CARHA may for any". If either block frees room, write "…for any hit from behind".
 - **From W568 (20 Nov):**
   - **(1) Optional citation tidies (rules-verifier census; none needed for accuracy).** NHL 82.1, IIHF 82.1 and PWHL 84.1 are genuine second sources for the post-icing change bar.
     - game_management :1366 Sources: "— restated at Rule 82.1…" sits after the Hockey Canada clause, so it reads as Hockey Canada's. Move it after the NHL 63.8 clause.
@@ -92,8 +97,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W514 (20 Nov; rows 1 and 2 closed in W515, 5 in W517):**
   - **(3) practice_and_development.mjs drill-execution-no-opponent** still opens "The attacking half of the rink, the net at the right". Same shape as W508(22); whether "opposition" fits a drill with no opponent is a judgement.
   - **(4) Optional: the-trapezoid label.** It still crosses the goal line (the word is wider than the region) and sits about 2 px from the boards at phone width. Option: put it outside the region with a leader.
-- **From W513 (20 Nov; rows 5, 8 and 9 closed in W514, 10 in W515; rows 2–3 partly):**
-  - **(1) CARHA 53(a).** It allows a discretionary match with no condition ("A Match penalty could also be assessed under this rule", carha_2026.txt ~:2611). No site says so. Many sites state "Hockey Canada and CARHA must…" or name CARHA 53(b) alone. This grep over-matches (on 20 Nov it returned 112 lines, some already naming every book); re-find them with `grep -rnE 'Hockey Canada and CARHA (must|make)|CARHA 53\(b\)|53\(b\)\)' content/`. Decide whether CARHA's whole answer needs the clause (probably only in owner sections and rules_primer).
+- **From W513 (20 Nov; rows 5, 8 and 9 closed in W514, 10 in W515; rows 2–3 partly; row 1 closed in W571):**
   - **(2) Facts lines left at the cap without the all-book intent claim.**
     - offensive_zone_play :967 (pinch block at HARD_MAX; owner facts and body :1010 carry it).
     - defender :288–289 (:289 is HC-only intent; :288 at 300).
