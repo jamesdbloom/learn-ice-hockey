@@ -17,7 +17,6 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W522 (20 Nov):**
-  - **(1) The renderer voices helpline numbers as cardinals.** mental_game chunk 034 says "call one hundred and sixteen one hundred and twenty-three", "Text SHOUT to eighty-five thousand two hundred and fifty-eight", "nine hundred and eighty-eight Suicide and Crisis Lifeline" and the Quebec 1-866 number. "24/7" comes out as "twenty-four or seven". `md_to_speech._emergency_number` covers only 999/911/112/101/111. Extend it to helpline contexts ("call" or "text … to" followed by a number; 116 123, 988, 85258, 50808, 535353, 1-866-…) and voice "24/7" as "twenty-four seven". Change it between waves, then grep content/ for every other helpline number.
   - **(2) No youth route to help.** SMHRT-1 is for ages 16 and over, and the NHS page is for adults. The mental_game crisis callout has no youth line, and none is on disk. Any number added must be sourced and verified first.
   - **(3) Bare NHL-default rule numbers in paragraphs that do not name the PWHL:** rules_primer :325 (81.2), :958 and :1001 (76.2); language_and_glossary :444 (81.6). Also winger :1019's renumbering note, which could be read as "safe below 52". Decide whether to split these by book.
   - **(4) Optional: whether "call your emergency number if it is happening now" is the right route for a first-ever panic-like episode (mental_game §5 :289).** SMHRT-1 says only "seek immediate help".

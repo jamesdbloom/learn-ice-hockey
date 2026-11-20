@@ -1985,6 +1985,31 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "'nine hundred and ninety-nine', in a crisis callout.",
     ),
     Rule(
+        "helpline-number",
+        # ⚠️ SAME SAFETY DEFECT AS emergency-number, ONE STEP WIDER (W522, 20 Nov 2026).
+        # mental_game's crisis callout voiced Samaritans' 116 123 as "one hundred and
+        # sixteen one hundred and twenty-three", SHOUT's 85258 as "eighty-five thousand
+        # two hundred and fifty-eight", the US 988 as "nine hundred and eighty-eight" and
+        # Quebec's 1-866-277-3553 as a run of hundreds and thousands -- so a listener in
+        # crisis had to turn a cardinal back into keypad digits. Found by a
+        # safety-reviewer reading the rendered SSML. Kept to an EXPLICIT list of the
+        # helplines the corpus prints, plus the North American toll-free shape, so a
+        # sample size or a rule number can never be caught; add a number here when the
+        # corpus gains one.
+        re.compile(
+            r"\b(?P<num>116 123|85258|50808|535353|988(?= Suicide))\b"
+            r"|\b(?P<tf>1-8[0-9]{2}-(?:[0-9]{3}-[0-9]{4}\b|(?=[A-Z])))"
+        ),
+        lambda m: (
+            ", ".join(" ".join(_DIGIT_WORD[d] for d in g) for g in m.group("num").split())
+            if m.group("num")
+            else ", ".join(" ".join(_DIGIT_WORD[d] for d in g)
+                           for g in m.group("tf").strip("-").split("-")) + (" " if m.group("tf").endswith("-") else "")
+        ),
+        "'call 116 123' -> 'call one one six, one two three'; '1-866-277-3553' -> "
+        "'one, eight six six, two seven seven, three five five three'",
+    ),
+    Rule(
         "standards-code",
         re.compile(rf"\b(?:{_STANDARDS_ALT})\s?\d+(?:[-–/]\d+)*\b"),
         _standards_code,
@@ -2265,7 +2290,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
     Rule(
         "ratio-slash",
         # The trailing " is excluded so 7/16" stays with the inch-fraction rule.
-        re.compile(r"(?<![\w./])(\d{1,3})/(\d{1,3})(?![\w./\"])"),
+        re.compile(r"(?<![\w./])(\d{1,3})/(\d{1,3})(?![\w/\"]|\.\d)"),
         lambda m: f"{int_to_words(int(m.group(1)))} {int_to_words(int(m.group(2)))}",
         "50/50 -> 'fifty fifty'; 24/7 -> 'twenty-four seven'",
     ),
@@ -4869,6 +4894,15 @@ def self_test() -> int:
         ("December 2014", "December twenty fourteen"),
         ("a 50/50 puck", "a fifty fifty puck"),
         ("24/7", "twenty-four seven"),
+        # ⚠️ A FULL STOP after it fell outside the old look-ahead, so "chat, 24/7." in the
+        # crisis callout voiced "twenty-four or seven" (W522).
+        ("call, text or chat, 24/7.", "call, text or chat, twenty-four seven."),
+        ("call 116 123.", "call one one six, one two three."),
+        ("Text SHOUT to 85258.", "Text SHOUT to eight five two five eight."),
+        ("988 Suicide and Crisis Lifeline", "nine eight eight Suicide and Crisis Lifeline"),
+        ("call 1-866-277-3553 (1-866-APPELLE)",
+         "call one, eight six six, two seven seven, three five five three (one, eight six six APPELLE)"),
+        ("pooling 988 effect sizes", "pooling nine hundred and eighty-eight effect sizes"),
         ("the 2025/26 rulebook",
          "the twenty twenty-five to twenty twenty-six rulebook"),
         ("NHL/IIHF", "NHL or IIHF"),
