@@ -13,15 +13,24 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W527 shipped with record `w527_usa_hockey_arm_permission_and_hc_no_check_limit_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W529 shipped with record `w529_usa_hockey_declaration_sit17_chop_and_hc_7_3_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W527 (20 Nov):**
-  - **(1) Hockey Canada 8.1 arm-block permission without 7.3's no-check limit on other pages.** Grep `strength move` / `8.1` corpus-wide; check each line, especially facts lines voiced alone (defending_the_rush, center, goaltender, defender). 7.3 applies in U13 and below, female hockey, and Member-approved divisions (`hc.txt:6004–6005`), and bars a push.
-    - Also from the W527 gate: rules_primer :526 grants 8.1 without 7.3 (the section's :564 carries the 7.3 trap). Its no-check clause now uses USA Hockey's "overt" threshold, which a Hockey Canada no-check reader would also hear, though 7.3(a) has no "overt" threshold; scope it to USA Hockey. winger :741 still gives 8.1 alone, with its 7.3 limit only in the next facts line :742. winger :742/:745 stop at 7.3(a)'s minor; consider 7.3(b)'s discretionary major plus game misconduct for violence.
+- **From W529 (20 Nov):**
+  - **(1) IIHF 61.1 penalises a stick chop only if it "is not an attempt to play the puck"** (`iihf_rules_2026-27.txt` :5128). So "a chop on the stick is slashing in every book but USA Hockey" may overstate the IIHF: defender's new Rule line and :325, goaltender :1704. NHL and PWHL 61 were not read. Rules-verifier, then scope.
+  - **(2) Casebook Situation 17's reach.** It reads "hard body check" literally; whether it reaches a push, a walk-out or a ride (defender :279/:944/:948) is unsettled.
+  - **(3) Sources trailers** in center, defender, switching_positions and goaltender cite Casebook Situations 17, 3 and 4 inline, but the trailers do not list them.
+  - **(4) Goaltender-charging tariffs still say "under USA Hockey if reckless".** The sites are forechecking KT8 :1180, OZP Common Mistakes :1241, playing_without_the_puck KT11 :1115 and time_and_space Common Mistakes :665. Test whether the Declaration's no-effort-to-play-the-puck limb reaches contact with a goalie, then fix every layer.
+  - **(5) W529 text not yet heard aloud.** OZP facts :968 (300/300; its "each" carries 640(e) and 640(b)) and :973; game_management facts :175/:1189 (300/300); the faceoffs :1320 and DZC :865 Common Mistakes. Also: does Casebook Situation 17 reach a push on a screener called as interference (625)? DZC Sources do not yet cite Situation 17.
+  - **(6) From the W529 commit gate.**
+    - OZP facts :968 applies 640(g) to a puckless player, adult men included, while body :1222 says the book does not say. This errs harsh.
+    - OZP :973 dropped the 640(b) minor floor and the adult-men scope.
+    - game_management :175/:1189/:1290 widen the Declaration's careless route to every late hit. Only body :1237 ties it to a player who has passed or shot (640(b)).
+    - defender :319/:327 no longer say a forceful chop on the stick is NHL/IIHF slashing unless it is an attempt to play the puck (overlaps W529(1)).
+    - on_ice_communication :586 and defender :946 still give only the reckless route (see W529(2)/(5)).
+- **From W527 (20 Nov; row 1 closed in W529):**
   - **(2) forechecking :628 "keep your arms… out of it" sits beside :624's "steer yes".** It errs safe and was there before W527; reconcile the wording.
-- **From W526 (20 Nov; row 3 closed in W527):**
-  - **(1) USA Hockey Casebook's unnumbered sections** (Standard of Play, the Declaration of Player Safety, the preface). These are the likeliest source of false "USA Hockey writes no …" sentences corpus-wide, because a search by rule number never reaches them. W526 found an arm-block permission there that rules_primer said did not exist. Sweep every "USA Hockey writes no / has no" claim in content/ against those sections.
+- **From W526 (20 Nov; row 3 closed in W527, row 1 in W529):**
   - **(2) rules_primer negatives not reached by the W526 sweep.** :148, :584, :596, :605, :610, :641, :768–:785 (the substitution-timing table), :813, :817, :835, :1038, :1172 and :1183. Also negatives phrased as "cannot", "is unsettled", "does not say" or "leaves it to".
 - **From W523 (20 Nov; rows 1–3, 5 and 6 closed in W524):**
   - **(4) Whether the suicide crisis lines in mental_game's box take calls about thoughts of harming someone else.** The box now addresses that reader, and its "Immediate danger — call your local emergency number" line serves them. Do not add a provider claim without verifying it.
