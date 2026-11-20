@@ -13,16 +13,25 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W531 shipped with record `w531_slashing_injury_tier_and_casebook_trailers_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W533 shipped with record `w533_usa_hockey_620_in_goalie_contact_ladders_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+
+- **From W533 (20 Nov):**
+  - **(1) 620(b) in the SKATER charging ladders.** A careless charge that reaches a skater's head, face or neck also ejects under USA Hockey 620(b). These units give 607(b) "if reckless" as the only route:
+    - risk_management facts :300 (299/300; fit it by substituting words);
+    - risk_management :322 ("leave your feet near an opponent's head" gives IIHF 48 only);
+    - forechecking :249, :261, :999, :1001.
+
+    Brief it as a claim, and sweep for more carriers.
+  - **(2) uk_rules :415 DOPS band.** Kicking (49), slew-footing (52) and throwing equipment (53) share the "11+" band, and head-butting shares the "20" band. The sentence names only boarding, checking from behind, the stick fouls and a check to the head. Consider adding slew-footing.
+  - **(3) Casebook 620 Situation 4's mandatory match.** A check made with excessive force to intimidate or punish that reaches the head "must be assessed as a match penalty" (620(c)). It is carried only at glossary :398 and rules_primer :837. Sweep the other files for "intimidat" and "punish" framings. Also check the honest-attempt rungs (607 Situation 4) in goaltender (:1266, :1279, :1622) and body_contact (:1384) for the 620 overlay.
+  - **(4) The "X and Y in the crease" parse shape.** Dropping a book from a list can leave its scope on a sibling, as happened at winger :789.
+    - Only group 2's nine files were checked by listening.
+    - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
+    - risk_management :709 still opens "Two NHL rule numbers govern it, and they are a pair".
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W531 (20 Nov):**
-  - **(1) British slashing departures.** EIHL Casebook, In-House Rules 2026-27 and the four IHUK Rules of Competition (and their `_layout` twins) have not been searched for Rule 61. goaltender :1704 tells the British reader to play the IIHF book.
-  - **(2) Awarded-goal citation.** game_management :1060 and risk_management :709 call NHL 57.4 "the operative clause" for awarded goals for hooking, holding and slashing; those rules cross-reference Rule 25. No reader cost.
+- **From W531 (20 Nov; rows 1, 2 and 4 closed in W533):**
   - **(3) NHL 61.8 / PWHL 63.8 supplementary discipline** are carried nowhere (IIHF 61.6 is).
-  - **(4) body_contact :1761's "its only exception an accidental high stick that injures nobody".** CARHA's 30(a) Note excepts an accidental high-stick major without the "injures nobody" condition; the 62(b) Note adds the injury limb. Check and reword. This was already there before W531.
-- **From W530 (20 Nov; rows 2, 3 and 4 closed in W531):**
-  - **(1) The USA Hockey Declaration's vulnerable-player clause and goalies.** It defines vulnerable as "a skater … unaware, unprepared, or unsuspecting" and never names goalkeepers, so whether it reaches careless goalie contact is unsettled. Only special_teams :1132 names 620(b)'s careless head-contact route (a mandatory major plus game misconduct with no recklessness needed) for a goalie. Propagate 620(b) to the goalie-contact ladders where it changes what a reader does.
 - **From W529 (20 Nov; rows 1, 4 and 6 closed in W530; 3 in W531):**
   - **(2) Casebook Situation 17's reach.** It reads "hard body check" literally; whether it reaches a push, a walk-out or a ride (defender :279/:944/:948) is unsettled.
   - **(5) W529 text not yet heard aloud.** OZP facts :968 (300/300; its "each" carries 640(e) and 640(b)) and :973; game_management facts :175/:1189 (300/300); the faceoffs :1320 and DZC :865 Common Mistakes. Also: does Casebook Situation 17 reach a push on a screener called as interference (625)? DZC Sources do not yet cite Situation 17.

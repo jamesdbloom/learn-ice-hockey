@@ -1057,7 +1057,7 @@ Rarely — but not never. The test is simple: **is the thing you are preventing 
 
 Once your own goalie is out, ⚠️ **every one of those trades stops working.** This is the game state most of this document is about, so it matters here. With the net empty there is no shot for anyone to save, so the rulebook skips the penalty shot and simply gives them the goal:
 
-- **A breakaway fouled from behind with your goalie pulled is an awarded goal** — NHL **Rules 25.1 and 57.4**, which the rulebook cites as a pair (25.1 is the general awarded-goal rule; 57.4 is the operative clause for tripping, hooking, holding and slashing).
+- **A breakaway fouled from behind with your goalie pulled is an awarded goal** — NHL **Rule 25.1**, with Table 10 (vii) listing tripping *"including hooking, holding, slashing"*. Tripping's own clause is 57.4; the hooking, holding and slashing rules' awarded-goal clauses (54.4, 55.6, 61.7) refer to Rule 25.
 - **Covering the puck in your own crease with your goalie pulled is an awarded goal too** — not the penalty shot it would be with the goalie in (NHL 67.5). ⚠️ **The other books reach the same place on slightly different terms, so treat any cover in your own crease as the goal.** Details in [Catching a loose puck in your own crease](#catching-a-loose-puck-in-your-own-crease).
 
 So: **when you have pulled your goalie, there is no foul left that buys you anything.** The exact conditions and wording are set out in [Risk Management](../hockey-iq/risk_management.md#penalty-risk-as-a-decision).
