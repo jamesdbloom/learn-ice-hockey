@@ -856,7 +856,7 @@ You see everything. You are stationary and facing the play, while your defencema
 ```facts
 Convention: Goalie calls have a standard vocabulary, but the words vary by team — agree yours in the room, not on the ice
 Options: Pressure — "time" means lift your head and make the good play; "man on" means get rid of it now; call "time" only when sure
-Options: Direction — "over", "reverse", "up", "wheel". Over means behind the net, never through the slot
+Options: Direction calls — "over", "reverse", "up", "wheel". Over means behind the net, never through the slot
 Options: Ownership — the goalie's "leave it" means I will stop it and leave it for you; "I've got it" means go to your breakout position
 Key: "Screen" means get out of my sightline, or get beside the man in it — make it your first call, because nobody else can know you cannot see; that it is also the most ignored is observation, not a count
 Key: "Back door" means an unmarked opponent at the far post, and the nearest player takes them right now

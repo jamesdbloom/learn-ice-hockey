@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W586 shipped with record `w586_trapezoid_lock_and_two_ways_out_labels_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W587 shipped with record `w587_optional_subjects_and_walk_down_label_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -102,7 +102,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - [Summary sections (Key focus, Overview, KT, CM) closed in W581: 15 defects out of 176 hits.]
     - The "it = puck" and "their = opposing team" classes, not tallied.
     - [The `Countered by:`/`Goal:`/`Position:`/`Targets:` lines were closed in W583: 58 DEFECT rows applied. About 45 OPTIONAL rows remain in `../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`.]
-    - [Near-misses team_play :725/:726 and special_teams :1338 confirmed and in W583.] [`Risk:`/`Options:` closed in W585: 130 rows applied. 21 optional rows remain in `../reviews/w585_risk_options_optional_rows_2026-11-20.tsv`.] Two more found by agents: switching_positions :83 "those first few weeks" and :463 "the change" still point back a line. the ~45 OPTIONAL system-profile rows (`../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`); homonym collisions (overload, 1-3-1, box, +1).
+    - [Near-misses team_play :725/:726 and special_teams :1338 confirmed and in W583.] [`Risk:`/`Options:` closed in W585: 130 rows applied. The 21 optional rows were closed in W587: 11 applied and 10 left as clear when heard alone. switching_positions :83 and :463 were fixed in W587.] the ~45 OPTIONAL system-profile rows (`../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`); homonym collisions (overload, 1-3-1, box, +1).
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518; 2 in W524):**
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.
@@ -364,9 +364,9 @@ These questions sit inside the rows above and need the owner's call before anyon
   - [W556 closed the corner-escape-routes "takes the middle away" label: labelHint [0, −17] puts it in the slot.]
   - [corner-escape-routes "two ways out" closed in W586: labelHint [-1,-16] clears the dot; the arc crossing is accepted, to keep the caption echo.]
   - **Label-paint leftovers (from W558/W559).**
-    - W559 moved dz-box-plus-one "the only one chasing", the-risk-map "their end" and dz-walk-down-man "on the corner"/"on the net front". They are now off the goal line, net and crease; three still cross a circle arc, because no accepted slot avoids it.
+    - W559 moved dz-box-plus-one "the only one chasing", the-risk-map "their end" and dz-walk-down-man "on the corner"/"on the net front". They are now off the goal line, net and crease; W587 cleared "on the corner" ([-9,-8]). The other three still cross a circle arc and are accepted: a search of every accepted slot found none that clears the arc and keeps the label's owner clear.
     - The dot test misses a dot grazing the letter tops: the 15% vertical inset, plus the halo, which is not counted.
-    - 460 hits remain (W586 moved the-trapezoid, forecheck-2-3-lock and "two ways out") on the worklist. 2 are `--severe` and kept on purpose: faceoff-where-the-draw-goes "carried offside" (the word gap is on the blue line) and offside-faceoff-location "if carried" (a false positive from the width estimate).
+    - 459 hits remain (W586 and W587 moved labels) on the worklist. 2 are `--severe` and kept on purpose: faceoff-where-the-draw-goes "carried offside" (the word gap is on the blue line) and offside-faceoff-location "if carried" (a false positive from the width estimate).
     - At 400 px, full-rink diagram labels are 7–10 px tall, which is marginal. That is a format question.
   - [check_label_paint blind spots closed in W556: the inset is capped at half a character, and filled dots are tested. 446 → 467 hits, 12 of them dots. The white halo is still not counted.]
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.

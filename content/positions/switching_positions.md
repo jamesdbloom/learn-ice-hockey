@@ -80,7 +80,7 @@ What you actually lose is a set of location reflexes — where to look first, wh
 Key: What you lose is a set of location reflexes — where to look first, where to drift, who you pick up when the puck goes to a particular place
 Key: Location reflexes are position-specific and took a season to build
 Risk: For the first few weeks after a switch you will be thinking about things you used to do without thinking, and thinking is slow
-Mindset: The slowness of those first few weeks is normal, and it passes
+Mindset: Being slow for the first few weeks after a switch is normal, and it passes
 ```
 
 ### When you are lost: go to the safe spot
@@ -459,7 +459,7 @@ Convention: A few shifts to stop being lost — you will know where to stand lon
 Convention: A handful of games before the routine reads are automatic, and a season before the position feels like yours
 Convention: Anything skating-dependent takes longer, and possibly much longer — forward to defence is a technical rebuild, not a set of decisions
 Risk: After a switch, expect a real performance dip, and expect it to feel like evidence you cannot play the position
-Never: Abandon the change in the first few weeks, at the bottom of the dip — the classic error, and coaches see it happen between weeks two and five
+Never: Abandon a position switch in the first few weeks, at the bottom of the performance dip — the classic error, and coaches see it happen between weeks two and five
 Mindset: Improvement is a staircase, not a line — plateaus are normal and some of them are the useful kind
 ```
 

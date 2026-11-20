@@ -774,7 +774,7 @@ It is a good place to hold the puck because you have the boards protecting one s
 **Before the puck reaches you on the half-wall, know all four plays — low to the corner or behind the net, high to the point, the seam pass into the slot, or take it inside yourself. Know which one is on.** Arrive with only one in mind and you will play it whether the slot was open or not.
 
 ```facts
-Action: Know all four before the puck arrives, and know which one is on
+Action: Know all four half-wall options before the puck arrives, and know which one is on
 Options: Low — to the corner or behind the net; the safe continuation that feeds the cycle and resets the defence's problem
 Options: High — to the point; the low-to-high shot generator, best when the defence has collapsed and left the point unpressured
 Options: Middle — the seam pass into the slot or the backdoor; highest value, highest risk, shortest window

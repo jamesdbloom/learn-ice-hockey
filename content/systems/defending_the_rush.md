@@ -835,7 +835,7 @@ A rush is loud, fast and facing away from most of your team. Talk is the only wa
 ```facts
 Action: Short, early, loud — a call as it happens is information, a call after it happens is commentary
 Action: Call the solution, not the problem — "back door" is useful, "watch out" is noise
-Options: "Odd man!", "I've got the pass", "Take the shooter", "Back door!", "Pick them up", "Trailer" or "high", "Switch", "I'm back"
+Options: Rush calls — "Odd man!", "I've got the pass", "Take the shooter", "Back door!", "Pick them up", "Trailer" or "high", "Switch", "I'm back"
 Key: "Back door!" — an attacker arriving unmarked at the far post — is the single most urgent call in defensive hockey; that ranking is coaching emphasis, not a counted one
 Action: Name the number and the location rather than shouting vaguely: "pick up 12, high slot"
 Mindset: Everyone talks, and the goalie has the best view of the rush and should be the loudest voice on the ice

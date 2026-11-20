@@ -705,7 +705,9 @@ const walkDownMan = {
     // W559 follow-up: "on the corner" then [-8, -8] (one foot lower) so the faceoff dot at (69, 22)
     // no longer touches its letter tops; check_label_paint's estimated box now grazes the arc's right
     // edge, which the render does not show (the real text ends short of it).
-    { id: 'D', pos: 'D', at: { at: 'corner:right', dy: -8 }, label: 'on the corner', labelHint: [-8, -8] },
+    // W587: [-9, -8] (1 ft further left) clears the arc in check_label_paint as well -- dot still
+    // clear (letter tops ~2 ft below it), leader to its D.
+    { id: 'D', pos: 'D', at: { at: 'corner:right', dy: -8 }, label: 'on the corner', labelHint: [-9, -8] },
     { id: 'D', pos: 'D', at: D_GOALMOUTH,                    label: 'on the net front', labelHint: [-6, -8] },
     // "The centre takes the third forward, often the one supporting on the wall or
     // in the slot" (:229 and :235, which read identically). BOTH locations, and the

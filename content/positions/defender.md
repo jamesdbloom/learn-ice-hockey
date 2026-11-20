@@ -383,7 +383,7 @@ Read: If no forward is open up the ice, regroup — pass D-to-D so your forwards
 ```facts
 Position: Near the boards or just inside your own blue line
 Action: Move the puck quickly
-Options: A bank off the boards, a pass to a forward, or a dump-in
+Options: Under neutral-zone pressure, a bank off the boards, a pass to a forward, or a dump-in
 Goal: Keep possession or relieve pressure safely
 Never: Try to carry through heavy pressure
 Risk: The neutral-zone middle is an expensive place to lose the puck — coaching material puts the making of odd-man rushes there, though nothing published classifies them by the play that created them
@@ -582,11 +582,11 @@ Never: Go below the circles unless somebody has taken your job at the blue line 
 ```facts
 Position: At or near the blue line — if you had stepped down to support the cycle, retreat to the line now
 Priority: Keeping the puck in the zone is priority one
-Options: Under severe pressure, a reverse pass back to your partner or a chip out of the zone to reset
+Options: Under severe pressure at the offensive blue line, a reverse pass back to your partner or a chip out of the zone to reset
 Never: Panic inward. Hold the blue line instead
 Never: Drift out over the line, or you are no longer available as an option
 Goal: Maintain the zone; don't give up the blue line
-Risk: Losing the line and getting caught in the zone lets the opponent exit cleanly. If you cannot hold it, exit and reset rather than gamble
+Risk: Losing the offensive blue line and getting caught in the zone lets the opponent exit cleanly. If you cannot hold it, exit and reset rather than gamble
 ```
 
 **What to do:** Hold the blue line — don't panic inward. If the pressure is severe, consider a reverse pass back to your partner or a chip out of the zone to reset. Keeping the puck in the zone is priority one — but keep your own skates inside the line too, because if you drift out and the puck stays in, you're no longer available as an option.

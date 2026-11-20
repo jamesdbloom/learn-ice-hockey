@@ -350,7 +350,7 @@ Position: In the slot, behind the net, or along the boards near the circles
 Technique: Use your body to protect the puck
 Never: Turn your back to anyone coming at you on a cycle, or coming out from behind the net — USA Hockey warns them: "Even a light hit from behind could inflict a severe head or neck injury". Head up
 Never: Duck to avoid a check — a head-down collision with the boards or a goal post can break your neck at walking speed, and behind the net the post is right there. Head up, chin off your chest instead
-Options: A quick outlet to a winger on the half-wall, or to the defenceman at the point
+Options: Under pressure, a quick outlet to a winger on the half-wall, or to the defenceman at the point
 Action: Use the back of the net as a pivot — come out the other side or find a late-arriving teammate
 Goal: Maintain possession under pressure and keep the offensive play alive
 Key: Behind the net you can see the whole ice and decide without risking a direct shot or a dangerous turnover

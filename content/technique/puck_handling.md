@@ -731,7 +731,7 @@ Three consequences follow, and they matter more than any individual move:
 A fake can be sold with your head and eyes, your shoulders and hips, your stick and puck, or your feet and edges. The shoulders and hips are the most convincing because they carry real weight, and a change of pace fakes a defender's timing rather than their direction, which is the half of the job they are least drilled for.
 
 ```facts
-Options: Head and eyes — a sharp, committed head turn, or a look-off at an option you will not use
+Options: Sell a fake with head and eyes — a sharp, committed head turn, or a look-off at an option you will not use
 Options: Shoulders and hips — a weight shift or shoulder dip, the most convincing because they carry real weight
 Options: Stick and puck — blade angle and windup, faking a shot or a pass
 Options: Feet and edges — change of pace, stutter steps, a crossover started and abandoned

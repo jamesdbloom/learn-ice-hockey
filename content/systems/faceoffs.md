@@ -232,7 +232,7 @@ Options: On a faceoff, your top hand goes halfway down the shaft or up on top of
 Technique: For the reverse grip, roll your bottom hand over so your knuckles face down
 Read: Take the reverse grip when you have committed to a backhand pull and want raw speed and strength
 Risk: The reverse grip telegraphs, and gives you almost nothing on the forehand
-Options: Some players roll both hands into a "kayak paddle" grip for maximum backhand snap
+Options: On a draw, some players roll both hands into a "kayak paddle" grip for maximum backhand snap
 ```
 
 - **Standard draw grip:** the two How To Hockey pieces cited here disagree on the top hand — one has it *"about halfway down the stick"*, the other, quoting former NHL player Jeff Serowik, *"on top of shaft"*. **Both put the bottom hand right down near the blade**, which is where the leverage, speed and power come from. Try both top-hand positions.
@@ -367,7 +367,7 @@ Key: Your strong side is the circle where your natural backward pull sends the p
 Action: Take ten draws in each circle and you will know within a minute
 Risk: On your weak side the board-side pull is a forehand — slower and weaker for most players
 Never: Fix a weak-side draw by pulling to your backhand in your own end — it sends the puck to the middle, the worst place it can go
-Options: Match the circle to the centre, flip your hands, or put a left-shot and a right-shot centre out together
+Options: Weak-side answers — match the circle to the centre, flip your hands, or put a left-shot and a right-shot centre out together
 ```
 
 A centre's shot hand decides which circle they are better in, and coaching staffs build around it.
@@ -525,7 +525,7 @@ Set plays off draws are the closest hockey gets to American football. They also 
 Run the play your team calls, and pick it by what the defence gives you: the winger walk-out against a team that pressures the point, the tip play when you want the lowest-risk option against a counterattack. **On the D one-timer, shoot first-time with your feet set and keep your follow-through below everyone's shoulders — and in a CARHA league keep the backswing under fifteen inches, because past that it is a slap shot and a penalty there.**
 
 ```facts
-Options: The D one-timer, the winger walk-out, the tip play, or a board-side variation
+Options: Offensive-zone faceoff plays — the D one-timer, the winger walk-out, the tip play, or a board-side variation
 Key: The D one-timer works because the shooter's feet are set first — in CARHA a backswing past fifteen inches is a slap shot: a minor, or if it injures, a major that ends this game and at least the next
 Rule: Keep the one-timer's follow-through below the shoulders — only the NHL, IIHF and PWHL excuse a normal one (60.1, PWHL 61.1); CARHA 62(b) makes high-stick contact above the shoulders a major even by accident and with nobody hurt; deliberate or injuring, a game misconduct too (62(b) Note)
 Risk: Every defensive alignment expects the D one-timer, and your inside winger stands in its line — on the drop they step out of it, usually to the net front to screen the goalie
