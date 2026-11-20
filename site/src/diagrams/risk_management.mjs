@@ -427,6 +427,13 @@ const theRiskMap = {
         'boards:left',                   // (69, -42.5)
       ],
       label: 'their end',
+      // W559 (20 Nov 2026): at the vertex mean the words sat over the far net and its crease.
+      // labelDx -9 / labelDy 11 lifts them above the net, clear of the net, the crease and the goal
+      // line; they cross only the upper faceoff circle's arc. The trade: the ~22.5 ft of ink cannot fit
+      // between the zone's near edge (x 69) and the goal line (x 89), so "th" starts ~5 ft outside the
+      // shading -- chosen over crossing the goal line.
+      labelDx: -9,
+      labelDy: 11,
     },
   ],
 

@@ -698,8 +698,15 @@ const walkDownMan = {
     { id: 'G', pos: 'G', at: OUR_G },
     // "Both defencemen normally take the two most dangerous forwards, typically
     // whoever is low and around the net" — here the corner and the net front.
-    { id: 'D', pos: 'D', at: { at: 'corner:right', dy: -8 }, label: 'on the corner' },
-    { id: 'D', pos: 'D', at: D_GOALMOUTH,                    label: 'on the net front' },
+    // W559 labelHint (20 Nov 2026): both auto-placed labels crossed a faceoff circle and the goal
+    // line. [-8, -7] puts "on the corner" inside the top circle below-left of its D, clear of paint;
+    // [-6, -8] puts "on the net front" below-left of its D, off the goal line (still across the lower
+    // circle's arc -- no slot the placer honours clears it). Tested together; leaders to each D.
+    // W559 follow-up: "on the corner" then [-8, -8] (one foot lower) so the faceoff dot at (69, 22)
+    // no longer touches its letter tops; check_label_paint's estimated box now grazes the arc's right
+    // edge, which the render does not show (the real text ends short of it).
+    { id: 'D', pos: 'D', at: { at: 'corner:right', dy: -8 }, label: 'on the corner', labelHint: [-8, -8] },
+    { id: 'D', pos: 'D', at: D_GOALMOUTH,                    label: 'on the net front', labelHint: [-6, -8] },
     // "The centre takes the third forward, often the one supporting on the wall or
     // in the slot" (:229 and :235, which read identically). BOTH locations, and the
     // quote here used to stop at "on the wall." with a full stop the document does
@@ -837,7 +844,11 @@ const boxPlusOne = {
     // "the fifth player, the '+1', is the only one who chases the puck". Which of
     // the five it is changes with the puck — the section says the role "passes to
     // whoever is now nearest" — so the glyph carries the role, not a position.
-    { id: '+1', pos: 'F', at: { at: 'corner:right', dy: -8 }, label: 'the only one chasing' },
+    // W559 labelHint (20 Nov 2026): the auto slot crossed the goal line and the circle's arc.
+    // [-8, -7] sits it inside the circle below-left of the +1, off the goal line, leader to the +1
+    // (it still crosses the arc's right edge -- no honoured slot clears it). Follow-up: [-8, -8], one foot
+    // lower, so the faceoff dot at (69, 22) no longer touches the letter tops.
+    { id: '+1', pos: 'F', at: { at: 'corner:right', dy: -8 }, label: 'the only one chasing', labelHint: [-8, -8] },
   ],
 
   // ⚠️ WAS (80, 31): 3.606 ft from the carrier's centre against 3.275 ft of ink,

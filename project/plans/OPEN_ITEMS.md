@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W558 shipped with record `w558_labels_off_paint_and_dots_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W559 and W560 shipped with record `w560_labels_and_marker_density_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -29,12 +29,13 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
   - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
   - **(4) Four facts lines still say "IIHF and Hockey Canada off the head"** (forechecking :320, :701, :750, :980). None had room to split. The head-only form errs harsh for the IIHF; that is acceptable, so split only if a block is next edited.
-- **From W539 (20 Nov; row 1 closed in W540, except the five left on purpose: defending_the_rush CM :1101/:1113, game_management CM :1290, glossary :402, risk_management CM :932):**
-  - **(2) The marker count rose by 32 across 16 files** (1,682 → 1,714 glyphs). Split halves that state a hazard kept their own spoken "Important.".
-    - Five over-escalated markers were removed.
-    - Three judged over-escalated were kept, because `check_marker_pairs` could not confirm removal: winger :873, goaltender :1283 and :1716.
-    - forechecking :813 is optional.
-    - Revisit as a marker-density pass, not by sweeping.
+- **From W539/W560 (20 Nov):**
+  - W539's five kept on purpose stay as recorded: defending_the_rush CM :1101/:1113, game_management CM :1290, glossary :402, risk_management CM :932.
+  - **(2) Marker density, the remaining candidates (content-reviewer W559, read-only):**
+    - **goaltender :1635–1641 and CM :1713–1715.** These are per-book ladders the goalie never pays, the victim's side, and each is a single-glyph list item. They are the strongest de-marking candidate in three files and need a unit-by-unit decision. CM :1714 nearly restates :1635 and :1283.
+    - **The hit-from-behind ladder is restated 3–4 times per file.** Locations: goaltender :1283/:1635–1641/:1714–1715; winger :869–873/:882–884/CM; forechecking :224/:628/:811–813. Handed to D8 and facts-reviewer: check every copy agrees after 18ca60ea's head-or-neck rescope.
+    - **Free removals, if visual density matters.** These are units with 2 glyphs: winger :801, goaltender :1663/:1664/:1795, forechecking :809/:1098/:220.
+    - **No tool measures "Important." per minute of audio.** forechecking chunk 053 carries four. An ear test or a per-chunk census would settle it.
 - **From W538 (20 Nov; row 1 closed in W546, all but mental_game KT1, which is kept on purpose as crisis content):**
   - **(2) Helmet-clash act, other wordings.** The W538 layer test found faceoffs CM :1323 by string ("helmet clash"). Units worded "heads together" or "head over the dot" with a USA Hockey tariff were not swept.
 - **From W537 (20 Nov; rows 1 and 2 closed in W551):**
@@ -331,9 +332,10 @@ These questions sit inside the rows above and need the owner's call before anyon
   - **corner-escape-routes "two ways out" (A1) label.** It sits on the faceoff dot at (69, 22), and its right end runs 0.92 ft past the circle arc.
     - 736 hint positions were tried; none the placer accepts clears both, because of the ownership rule.
     - Options: shorten the label (e.g. "two exits", but that loses its echo of the caption); let a spec force a position in rink.mjs; or accept it.
-  - **Label-paint leftovers (from W558).**
+  - **Label-paint leftovers (from W558/W559).**
+    - W559 moved dz-box-plus-one "the only one chasing", the-risk-map "their end" and dz-walk-down-man "on the corner"/"on the net front". They are now off the goal line, net and crease; three still cross a circle arc, because no accepted slot avoids it.
+    - The dot test misses a dot grazing the letter tops: the 15% vertical inset, plus the halo, which is not counted.
     - 463 hits remain on the worklist. 2 are `--severe` and kept on purpose: faceoff-where-the-draw-goes "carried offside" (the word gap is on the blue line) and offside-faceoff-location "if carried" (a false positive from the width estimate).
-    - Pre-existing, not yet looked at: dz-box-plus-one "the only one chasing" (goal line and arc); the-risk-map "their end" (over the far net and crease); dz-walk-down-man "on the corner" and "on the net front".
     - At 400 px, full-rink diagram labels are 7–10 px tall, which is marginal. That is a format question.
   - [check_label_paint blind spots closed in W556: the inset is capped at half a character, and filled dots are tested. 446 → 467 hits, 12 of them dots. The white halo is still not counted.]
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
