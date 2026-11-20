@@ -13,12 +13,27 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W521 shipped with record `w521_going_in_mental_health_signs_and_high_triangle_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W522 shipped with record `w522_pwhl_numbers_and_mental_health_signs_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W521 (20 Nov):**
-  - **(1) mental_game §13's warning-signs list (:650–657) has no citation attached.** It sits after the IOC 2019 paragraph, but nothing ties the signs to it. Source-verifier: trace each sign to the IOC consensus statement or another source on disk, or label it.
-  - **(2) defender :411/:495 "plan on a match … (602(a))" for a reckless charge.** USA Hockey 607(e) makes the match discretionary ("may also be assessed"), while 602(a) makes it mandatory for anyone who "recklessly endangers". Rules-verifier call on which governs, then word it once.
+- **From W522 (20 Nov):**
+  - **(1) The renderer voices helpline numbers as cardinals.** mental_game chunk 034 says "call one hundred and sixteen one hundred and twenty-three", "Text SHOUT to eighty-five thousand two hundred and fifty-eight", "nine hundred and eighty-eight Suicide and Crisis Lifeline" and the Quebec 1-866 number. "24/7" comes out as "twenty-four or seven". `md_to_speech._emergency_number` covers only 999/911/112/101/111. Extend it to helpline contexts ("call" or "text … to" followed by a number; 116 123, 988, 85258, 50808, 535353, 1-866-…) and voice "24/7" as "twenty-four seven". Change it between waves, then grep content/ for every other helpline number.
+  - **(2) No youth route to help.** SMHRT-1 is for ages 16 and over, and the NHS page is for adults. The mental_game crisis callout has no youth line, and none is on disk. Any number added must be sourced and verified first.
+  - **(3) Bare NHL-default rule numbers in paragraphs that do not name the PWHL:** rules_primer :325 (81.2), :958 and :1001 (76.2); language_and_glossary :444 (81.6). Also winger :1019's renumbering note, which could be read as "safe below 52". Decide whether to split these by book.
+  - **(4) Optional: whether "call your emergency number if it is happening now" is the right route for a first-ever panic-like episode (mental_game §5 :289).** SMHRT-1 says only "seek immediate help".
+  - **(5) From the W522 commit gate.**
+    - mental_game §13 "In short" (:642) does not mention the same-day tier.
+    - SMHRT-1's "Comments related to harming self or others" is carried only for self-harm.
+    - faceoffs :874 credits the NHL and PWHL time-out wording to the IIHF too, but the IIHF prints it with inner quotation marks. This predates W522.
+- **From W521 (20 Nov; row 1 closed in W522):**
+  - **(2) OWNER DECISION NEEDED: the USA Hockey "plan on a match (602(a))" convention.** The W522 rules-verifier ruled it HARSH for any act whose own rule writes a discretionary match ("may also be assessed": 603(c), 604(e), 606(b), 607(e), 609(c), 611(c), 619(b), 620(c), 621(c), 622(c), 623(c), 628(c), 634(c), 635(b), 639(c), 640(h)).
+    - Casebook 607 Situation 4 is decisive for a reckless charge on a goalie: "the major plus game misconduct, or match penalty option would be the proper call".
+    - The same either/or reading appears in Casebook 604 Sit. 3, 608 Sit. 1 and 634 Sit. 4, in the Summary of Penalties ("Match Penalty Option"), and in the Standardized Discipline Policy (607(e) at Level 2, 602(a) at Level 1).
+    - Counter-text: Casebook 602 Situation 1 says "the match penalty must be assessed".
+    - About 260 lines across 30 files follow the convention (census in the W522 scratchpad, `rv602/census.txt`). It is not permissive anywhere read, because the mandatory major plus game misconduct sits beside it. working_guidance.md :110 records 602(a) as "unreconciled".
+    - If adopted, use the pattern "a mandatory major and game misconduct (6xx(b)), and it can be a match (6xx(e))". Keep "plan on" for the 602(a) attempt to injure, 608(c)'s stated conditions, 627(b) and acts with no rule of their own.
+    - Fix first: the five goalie-charge sites that Casebook 607 Sit. 4 contradicts directly (language_and_glossary :400, goaltender :1262/:1266/:1620, scanning_and_anticipation :348).
+    - Harsh direction, so nothing urgent; decide once, then sweep per file with a safety-reviewer.
   - **(3) Going-in limbs not carried anywhere.** These are the misconduct or game misconduct for not going to the bench when told (USA Hockey 615(e), Hockey Canada 7.10(d), CARHA 59 Note 2), and a goalkeeper leaving the crease. They also need a sweep of the SIHA and NIHL Rules of Competition. The faceoffs and risk_management Sources trailers do not name the new citations (615(d), 629(a), 70, 7.10(e)(ii), 59(b), 46.14–46.16); that is for a source-verifier.
   - **(4) Joining sites still say "can end your game" where some books make it mandatory.** special_teams :463, game_management :1046 and :1065. Each opens with an unconditional "stay out", so this was left on purpose (readable beats defendable); sharpen only if a reviewer calls it.
   - **(5) Phone-width check of the two rebuilt zone_entries diagrams** (entry-high-triangle, defend-squash-and-slide). Their label margins are 0.3–1 ft; check at 400 px when Chrome connects.

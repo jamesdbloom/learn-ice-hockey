@@ -42,7 +42,7 @@ The mental side closes the gap between your worst game and your best. It does no
 
 **Frustration is not private.** Your linemates read it, and an official can turn it into a penalty or worse.
 
-**And if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread into work, study or home, see a qualified professional — looking for one is not a failure of toughness.** Any thought of harming yourself or of suicide means getting help now, tonight — the numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
+**And if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread into work, study or home, see a qualified professional, and straight away if it is so overwhelming you cannot function — looking for one is not a failure of toughness.** Any thought of harming yourself or of suicide means getting help now, tonight — the numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
 
 ---
 
@@ -286,7 +286,7 @@ Two claims matter.
 
 These are not the same thing and conflating them is unhelpful.
 
-**Nerves** are the physical ramp-up before something that matters: heart rate up, quick breathing, a hollow stomach, needing the toilet. They are proportionate and usually fade inside the first shift. They are the body preparing to work hard, and they are a *good sign*.
+**Nerves** are the physical ramp-up before something that matters: heart rate up, quick breathing, a hollow stomach, needing the toilet. They are proportionate and usually fade inside the first shift. They are the body preparing to work hard, and they are a *good sign*. A sudden, overwhelming fear with sweating or breathlessness unlike anything you have had before is not nerves to relabel: get it checked by a doctor straight away, or call your emergency number if it is happening now — see [section 13](#13-when-to-seek-real-help).
 
 **Anxiety** is the worry: catastrophising, rehearsing failure, "what if I'm terrible tonight." It does not fade at puck drop. It is the dangerous variable in the catastrophe model, and it is what eats your ability to block distractions and shift focus.
 
@@ -647,14 +647,15 @@ This document is about performance. It is not a substitute for care, and some of
 
 **Mental health cannot be separated from physical health**: symptoms raise the risk of injury and delay recovery. And the statement stresses telling the traits of a committed competitor apart from genuine problems that need treatment.
 
-**Signs it is time to talk to a qualified professional rather than reading more about mental skills:**
+**Signs it is time to talk to a qualified professional rather than reading more about mental skills.** The list follows the IOC's mental health recognition tool for athletes aged 16 and over and the NHS's guidance on symptoms in adults; the hockey framing — game day, the rink — is this guide's own. A younger player should tell a parent, coach or doctor.
 
 - Anxiety that is present well before game day, or that does not settle once play starts.
 - Low mood, loss of interest, or hopelessness that persists for weeks.
-- Sleep that is consistently disrupted, or appetite that has changed markedly.
+- Sleep that is consistently disrupted, or appetite or weight that has changed markedly.
 - Dread of going to the rink, in someone who used to enjoy it.
-- Performance problems that have spread into work, study, relationships or family life — this is the clearest signal in the list, because a genuine hockey problem stays in the rink.
+- A drop in how you play that you cannot explain and that does not lift, or problems that have spread into work, study, relationships or family life.
 - Using alcohol or anything else to manage how you feel about playing.
+- Hopelessness so overwhelming you cannot function, a dramatic change in weight, behaviour wildly out of character, or a sudden overwhelming fear with sweating or breathlessness unlike anything you have had before. Get help with these straight away, not after weeks; the last could be a panic attack or another medical problem, not nerves.
 - Any thought of harming yourself or of suicide. This one is not a threshold to weigh up.
 
 > **If you are thinking about harming yourself or about suicide, stop reading this document and get help now.**
@@ -669,7 +670,7 @@ This document is about performance. It is not a substitute for care, and some of
 >
 > Numbers change — these were verified against the providers' own sites on **27 July 2026**. Check your own country's current crisis line — but call *someone* tonight, not after the season.
 
-**For anything less acute.** Speak to your GP or family doctor, or to a qualified clinical or sport psychologist — in many countries sport psychologists are regulated and you can check registration. Most national federations and many leagues now have mental health pathways. A sport psychologist and a clinical psychologist are different professions, and if the problem has left the rink you probably want the clinical one.
+**For anything less acute.** Speak to your GP or family doctor, or to a qualified clinical or sport psychologist — in many countries sport psychologists are regulated and you can check registration. Most national federations and many leagues now have mental health pathways. A sport psychologist and a clinical psychologist are different professions, and if the problem has left the rink, or you are not sure it is only a hockey problem, start with your GP or the clinical one.
 
 **None of this means you are failing at hockey.** It means you have a problem that hockey advice is not the right tool for.
 
@@ -697,7 +698,7 @@ This document is about performance. It is not a substitute for care, and some of
 - **Assuming you deserve more ice time than you get.** That most players believe this is an observation with no source behind it, but nobody judges their own case well. Ask one specific question in private, then do the work.
 - **Absorbing abuse because it comes from a demanding coach.** Criticism of your play is coaching; personal degradation or routine humiliation is not. Take it to your club's safeguarding lead or another club official, the league or the governing body.
 - **Treating flat stretches as failure.** Plateaus are usually consolidation. Track process markers and keep a technical project going. Hours alone were never the whole story: deliberate practice explains about 18% of performance variance — see [Practice and Development](practice_and_development.md).
-- **Managing a clinical problem with performance techniques.** If low mood or anxiety lasts for weeks, will not settle once play starts, keeps upsetting your sleep or appetite, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, talk to your GP or family doctor, or a qualified clinical psychologist. Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13, When to seek real help](#13-when-to-seek-real-help) has the crisis lines.
+- **Managing a clinical problem with performance techniques.** If low mood or anxiety lasts for weeks, will not settle once play starts, keeps upsetting your sleep or appetite, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, talk to your GP or family doctor, or a qualified clinical psychologist. Hopelessness so overwhelming you cannot function, a dramatic change in weight, behaviour wildly out of character, or a sudden overwhelming fear with sweating or breathlessness unlike anything you have had before means get help straight away, not after weeks. Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13, When to seek real help](#13-when-to-seek-real-help) has the crisis lines.
 
 ## Check yourself
 
@@ -741,7 +742,7 @@ This document is about performance. It is not a substitute for care, and some of
 
 ## Key Takeaways
 
-1. **See a qualified professional if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink — that is not a failure of toughness.** Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13](#13-when-to-seek-real-help) has the crisis lines.
+1. **See a qualified professional if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, and straight away if it is so overwhelming you cannot function — that is not a failure of toughness.** Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13](#13-when-to-seek-real-help) has the crisis lines.
 2. **After every mistake, run the same reset — trigger, long breath out, cue word, next action — and name that action before your skates hit the ice.** On the bench, recover, watch and plan; analyse after the game. If a thought sticks, notice it and move on; don't fight it. The order is coaching craft; evidence for acceptance is thin.
 3. **Decide early and commit: simple in your own end, creative in theirs.** Hesitation is a mistake too — the half-second you take to be sure is all a forechecker needs. Off the glass and out (not over it), chosen early, is a good play; the same chip late is a turnover.
 4. **Score your night on three process goals for your role; keep the outcome goal on the list, but not as the verdict.** Check your team's system before you write them. ⚠️ **Never put "finish every check" on the list:** your age and your league's category decide whether you may check at all — see [Body Contact and Battles](../technique/body_contact_and_battles.md) §1.
@@ -783,7 +784,7 @@ This document is about performance. It is not a substitute for care, and some of
 
 *Edition note on* Introduction To Body Contact. *The manual prints no publication date — not in its text, and not on its cover, credits page or back cover, all three of which were read directly. Its PDF file metadata gives a creation date of 22 July 2010, which dates the file rather than the edition. The only edition marker in the manual itself is the rule book it quotes, and its definition of a body check is attributed to the* **USA Hockey 2007-09 Official Rules of Ice Hockey**. ***Its age-group progression states the age rule as it stood under that book,** which is why only the order of the pyramid is taken from it above. The current age rule is quoted in section 8 from* **Rule 604(a) of the 2025-29 Official Rules of Ice Hockey** *and owned by* [Body Contact and Battles](../technique/body_contact_and_battles.md) *§1. Nothing else in the manual has been compared against the current book for this document.*
 
-*Athlete mental health: [Reardon et al., Mental health in elite athletes: International Olympic Committee consensus statement (2019), British Journal of Sports Medicine 53:667](https://bjsm.bmj.com/content/53/11/667) · [PubMed record](https://pubmed.ncbi.nlm.nih.gov/31097450/)*
+*Athlete mental health: [Reardon et al., Mental health in elite athletes: International Olympic Committee consensus statement (2019), British Journal of Sports Medicine 53:667](https://bjsm.bmj.com/content/53/11/667) · [PubMed record](https://pubmed.ncbi.nlm.nih.gov/31097450/) — cited for the prevalence and physical-health points in section 13, not for the list of signs · **The signs listed in section 13:** [Gouttebarge V et al., "International Olympic Committee (IOC) Sport Mental Health Assessment Tool 1 (SMHAT-1) and Sport Mental Health Recognition Tool 1 (SMHRT-1): towards better support of athletes' mental health", British Journal of Sports Medicine 2021;55(1):30–37 (online 18 September 2020), doi:10.1136/bjsports-2020-102411 — open access, PMC7788187](https://pmc.ncbi.nlm.nih.gov/articles/PMC7788187/) — the recognition tool, SMHRT-1, flags problems that *"persist for long periods of time or have a big impact on someone’s sport career or daily life"*, and lists among others hopelessness, *"lack of passion and sense of purpose"*, withdrawal from others, an *"unexpected drop in performance (e.g., in sport, school, work)"*, *"Low energy, poor sleep, changes in appetite, changes in weight"* and *"evidence of alcohol or other substance misuse"*, and sets out red flags under *"If an athlete (or you) experience or observe any of the following, seek immediate help"*: *"Comments related to harming self or others"*, *"Talking about feeling hopeless or so overwhelmed that you cannot function"*, *"Dramatic weight changes"*, *"Other highly uncharacteristic behaviours, emotions and appearances"* and an episode of *"overwhelming sudden onset of fear with marked physical symptoms such as sweating or shortness of breath"* that is new or different *"(could be a panic attack or another medical problem)"*; it was built for elite athletes aged 16 and older · [NHS, "Symptoms – Depression in adults"](https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/) — symptoms that *"persist for weeks or months"*, *"changes in appetite or weight"* and *"disturbed sleep"*, and *"See a GP if you experience symptoms of depression for most of the day, every day, for more than 2 weeks"* · [NHS, "Generalised anxiety disorder in adults"](https://www.nhs.uk/mental-health/conditions/generalised-anxiety-disorder-gad/) — *"do not use alcohol, cigarettes, gambling or drugs to relieve anxiety"*. The anxiety timing (before game day, once play starts) and dread of the rink are this guide's hockey framing of those signs, not wording any of these sources uses.*
 
 *Limitations worth knowing:*
 
