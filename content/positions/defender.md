@@ -823,11 +823,11 @@ Rule: A slide catching an opponent at or below the knees reads as clipping rathe
 Rule: Clipping: NHL 44.3's major needs injury, with a mandatory game misconduct (44.5), its match an attempt to injure (44.4); IIHF needs neither (44.3, discretionary major, automatic game misconduct); USA Hockey 639(b) needs no injury — if reckless, plan on a match and a likely multi-game ban (602(a))
 Rule: Hockey Canada, PWHL and CARHA price the low hit — Hockey Canada 8.7(a) a minor, 8.7(b) a major plus game misconduct on violence, a must on injury, 8.7(c) a compulsory match for an attempt to injure; PWHL 44.3 and 44.5 the same pair on injury; CARHA, with no clipping rule, uses 86(a) and 48(a)
 Rule: Never slide in from behind — it is checking from behind. IIHF 43.2: no minor, plan on ejection; USA Hockey 608 at least a misconduct, ejecting if reckless or head first into boards or net; CARHA 53(a), Hockey Canada 7.5 a game misconduct (on the head, plan on it). NHL, PWHL: a push or charge ejects
-Rule: A slide from behind is a match if meant to injure (all but the IIHF) or, in Hockey Canada and CARHA, into net/boards if defenceless (7.5(c), 53(b)); Hockey Canada, also their head anywhere (7.6(c), 7.7(c)); USA Hockey 620(b): careless or intentional head contact, at least a major and game misconduct
+Rule: A slide from behind is a match if meant to injure (all but the IIHF) or if defenceless: into net/boards in Hockey Canada and CARHA (7.5(c), 53(b)), anywhere in USA Hockey if reckless with excessive force (608(c)); Hockey Canada, also their head anywhere (7.6(c), 7.7(c))
+Rule: USA Hockey 620(b): a slide making careless or intentional contact with the head, face or neck is at least a major and game misconduct
 Read: If the second attacker has been picked up by a backchecker and the shooter is walking into the slot unpressured with no realistic pass, it is no longer a 2-on-1. Close on the puck
 Convention: 3-on-2 — "two wide, middle to the backchecker" is the common default; "strong side takes the puck, weak side splits" the alternative
-Action: Ask your coach which of the two 3-on-2 systems you are playing — it is a coaching choice, not a law
-Action: Under both 3-on-2 systems, retreat together and keep the middle of the ice sealed as long as possible
+Action: Ask your coach which of the two 3-on-2 systems you are playing — it is a coaching choice, not a law — and under either, retreat together and keep the middle of the ice sealed as long as possible
 Never: Let an attacker get between you and your net while you are defending — unless you are pinching, stepping up, or activating into the rush on purpose. Stay on the defensive side of the puck otherwise
 ```
 

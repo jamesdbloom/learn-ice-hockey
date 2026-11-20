@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W563 shipped with record `w563_ladder_kernels_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W564 and W565 shipped with record `w565_usa_hockey_608c_boards_match_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -23,6 +23,21 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
+- **From W565 (20 Nov):**
+  - **(1) Two-book boards-match facts lines left by ruling.** These are full lines whose next facts line in the same block carries 608(c), about 300 ms later:
+    - defending_the_rush :320, :413;
+    - winger :708;
+    - goaltender :1376;
+    - playing_without_the_puck :828;
+    - faceoffs :1211;
+    - special_teams :659, :1117;
+    - zone_entries :239, :846;
+    - body_contact :1493;
+    - shooting :509;
+    - ozp :1195.
+    If an ear test finds the gap matters, they need block-level rewrites.
+  - **(2) Not swept:** diagram captions carrying a two-book boards match (`check_caption_hosts --rule-like`); units that describe the act without the census vocabulary; and the reverse class, where USA Hockey 608(b) or the Casebook is given as "or a match" although the Casebook requires a match for excessive force on a vulnerable player.
+  - **(3) ozp :1259 Common Mistakes:** the bold head names only Hockey Canada and CARHA, and its indented continuation opens with 608(c). Check whether the two are voiced in one unit.
 - **From W553/W557 (20 Nov):**
   - **(4) Box-out and seal grants outside the five W557 files.** The W556 census covered all files lexically. A grant with no contact verb ("win the inside", "own the doorstep", "make them go through you") was not found. Diagram captions were not swept (`check_caption_hosts --rule-like`).
   - **(5) Optional: winger :869 could add "— under CARHA, avert contact".** goaltender facts :1373 could carry body :1388's no-check price if room frees (199/200).

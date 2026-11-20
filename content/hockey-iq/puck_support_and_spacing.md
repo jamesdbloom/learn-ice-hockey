@@ -602,7 +602,7 @@ Never: Arrive at a double-team at the wall with your back to anyone coming at yo
 Rule: Never push or hit from behind, even in non-check play — it is checking from behind and ends your game in the NHL, PWHL and CARHA, and in Hockey Canada off the head (head hits: plan on ejection); IIHF: plan on it; USA Hockey if forceful at the boards, head first into boards or net, or reckless (608)
 Rule: Under USA Hockey even a light push from behind is at least a minor and misconduct (608(a)); one forceful on a player along the boards, head first into boards or net, or reckless is a major and game misconduct or a match (608(b); Casebook 608 Sit. 1)
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
-Rule: A hit meant to injure is a match in every book but the IIHF. Even without intent, a hit from behind into the boards or net on a helpless player is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b); under USA Hockey, plan on a match and a likely multi-game ban for any reckless push (602(a))
+Rule: From behind into boards or net on a helpless player, intent or not, a mandatory match: Hockey Canada 7.5(c), CARHA 53(b), USA Hockey 608(c) if reckless with excessive force; meant to injure, a match in all but the IIHF; any reckless push: plan on a match and a likely multi-game ban (602(a))
 Rule: Under USA Hockey a game misconduct also costs you your team's next game (404(b)), and at least two games when it comes from a second major in one game (403(b))
 ```
 

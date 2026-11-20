@@ -509,7 +509,7 @@ Rule: NHL and IIHF 69.4 and PWHL 71.4 protect a goalie who has played the puck o
 Never: Arrive into a goalie, in or out of the crease — a charge can eject in every book, and must under Hockey Canada, CARHA in the crease or on injury, and USA Hockey if reckless or on careless head contact
 Never: Make room with your stick across anyone — above the shoulders or on injury a cross-check ends your game in several books, no intent needed, and under CARHA so does any on a goalie in the crease
 Never: Put your stick or body into anyone's back at the net front — in no book plan on a hit from behind costing only two minutes
-Rule: A hit from behind meant to injure is a match in every book but the IIHF; even without intent, checking a helpless player from behind into the goal frame is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b)
+Rule: A hit from behind meant to injure is a match in every book but the IIHF; even without intent, checking a helpless player from behind into the goal frame is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), USA Hockey 608(c) if reckless with excessive force, frame or not
 Rule: USA Hockey: from behind, at least a major and game misconduct if reckless or head first (608(b)), forceful at the boards (Casebook 608 Sit. 1) or careless to head, face or neck (620(b)); a match penalty if reckless with excessive force on a vulnerable or defenceless player, boards or not (608(c))
 Never: Lean on anyone for position where checking is barred, and in a CARHA league or under Hockey Canada at any level, checking game or not — hold the spot you have and make them move you
 Never: Body check a player already battling someone for the puck in a USA Hockey game — at least a minor (640(e)); with no effort to play the puck, plan on a major and game misconduct or a match
@@ -872,7 +872,7 @@ A hit meant to injure is a match in every book but the IIHF. ⚠️ **Even witho
 
 ```facts
 Rule: Hockey Canada from behind: 7.5 off the head or head first to boards, from minor and game misconduct; on the head, major and game misconduct: high cross-check, 7.6 minor/female if violent, must if hurt, 7.7 Jr/Sr high violence or head hurt on glass/ice/boards; match if defenceless or meant to hurt
-Rule: Even without intent, a check from behind that drives an opponent into the boards or goal frame unable to protect themselves is a mandatory match — Hockey Canada 7.5(c) and CARHA 53(b), whose Note tells referees to substitute nothing cheaper; Hockey Canada has no such Note
+Rule: Even without intent, a check from behind that drives an opponent into the boards or goal frame unable to protect themselves is a mandatory match — Hockey Canada 7.5(c), CARHA 53(b) (its Note: substitute no other penalty; Hockey Canada has none); USA Hockey 608(c) if reckless with excessive force
 Rule: A check from behind that recklessly endangers a vulnerable or defenseless opponent with excessive force costs a match penalty and a likely multi-game ban even away from the boards — USA Hockey 608(c) names no place at all and assesses it “in all instances”, which is no discretion
 Rule: A hit from behind meant to injure is a mandatory match, no place named — Hockey Canada 7.5(c) para. 2, CARHA 48(a), NHL and PWHL 21.1, USA Hockey 602(a), with a likely multi-game ban; CARHA 53(a)’s “could also be assessed” adds a discretionary one. The IIHF has none: plan on ejection (43.3)
 ```
