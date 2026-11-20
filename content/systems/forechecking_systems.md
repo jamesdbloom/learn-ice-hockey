@@ -601,7 +601,7 @@ USA Hockey's *Introduction To Body Contact* says *"Never hit the boards or glass
 
 ### What your book allows when you get there
 
-**In short:** Find out first whether you may body check, then arrive in time, seal the wall with position — a hip makes it a check — and never wrap an arm, block with one under USA Hockey, or use a skate.
+**In short:** Find out first whether you may body check, then arrive in time, seal the wall with position — a hip makes it a check — and never wrap an arm, block with one under USA Hockey, CARHA or wherever checking is barred, or use a skate.
 
 ```facts
 Rule: Find out whether you may body check in this game — USA Hockey 604(b) bars it whenever a checking team meets a non-checking one, so the answer can change per fixture; where it is barred, a pinch is a play on the puck
@@ -623,7 +623,7 @@ Arriving on contact settles the *timing* of a pinch. It does not settle what you
 
 **Get to the spot first, in front of the winger and moving their way, and play the puck; never cut across into them.** ⚠️ **A defenceman stepping down off the line is moving laterally, and the winger usually does not have the puck yet.** Changing course into a player without the puck is penalised in every book here, as interference or, in Hockey Canada's non-checking divisions, as a body check — and in several books it can end your game.
 
-**Arms are the half the books draw a line through: take the position first, and never the wrap.** The NHL, IIHF, PWHL and Hockey Canada allow an arm *"strength move"* only with body position and hands not holding. In Hockey Canada's no-check divisions — U13 and below, female hockey and any Member-approved division — an intentional bump, shove or push is a minor, and an arm extended after angling counts as a body check (7.3). **Under USA Hockey, steer yes, block and hold no:** ⚠️ **it grants no arm-block at all. A free arm may steer an opponent only while you are both engaged in a corner or in front of the goal and you are reaching for the puck, or keep a position you legally established once the puck is yours — never to impede them, knock them off the puck or make space — and an arm wrapped round them on the boards is holding** (622 Note; Casebook Standard of Play, Situations 6 and 7). **In a CARHA league the arm costs most, and it writes no strength move:** a hold can bring a major and game misconduct.
+**Arms are the half the books draw a line through: take the position first, and never the wrap.** The NHL, IIHF, PWHL and Hockey Canada allow an arm *"strength move"* only with body position and hands not holding. In Hockey Canada's no-check divisions — U13 and below, female hockey and any Member-approved division — an intentional bump, shove or push is a minor, and an arm extended after angling counts as a body check, and a block against a player moving into you can (7.3). **Under USA Hockey, steer yes, block and hold no:** ⚠️ **it grants no arm-block at all. A free arm may steer an opponent only while you are both engaged in a corner or in front of the goal and you are reaching for the puck, or keep a position you legally established once the puck is yours — never to impede them, knock them off the puck or make space — and an arm wrapped round them on the boards is holding** (622 Note; Casebook Standard of Play, Situations 6 and 7). **In a CARHA league the arm costs most, and it writes no strength move:** a hold can bring a major and game misconduct.
 
 **If you have ended up behind them, play the puck.** Under USA Hockey even a minimal pinch from behind is a minor plus a misconduct. But a check from behind that is forceful on a player standing along the boards, sends them head first into the boards or goal frame, or is reckless ejects you, and a match penalty is mandatory if a reckless check from behind uses excessive force on a vulnerable or defenceless player (608(c)). Under USA Hockey careless contact with their head, face or neck ejects you too (620(b)). ⚠️ **Under the NHL, PWHL and CARHA any call for checking from behind ejects you, under the IIHF unless it reaches the head or neck, and under Hockey Canada unless it reaches the head; if it does, plan on it anyway.** The NHL, IIHF and PWHL write no minor for it (43.2), and Hockey Canada's and CARHA's minor carries a game misconduct (7.5(a), 53(a)). Whether they saw you coming is the referee's call, not yours.
 
@@ -1034,7 +1034,7 @@ Body Contact and Battles sets out [which contact rules you are under](../techniq
 
 ### The seal, the arm and the skate
 
-**Seal with your position; never wrap an arm round them, block with one under USA Hockey, or push off with a skate.** ⚠️ **Under USA Hockey a skate push-off is a major plus a game misconduct (627(a)), and in a CARHA league a hold can bring a major and game misconduct.**
+**Seal with your position; never wrap an arm round them, block with one under USA Hockey, CARHA or wherever checking is barred, or push off with a skate.** ⚠️ **Under USA Hockey a skate push-off is a major plus a game misconduct (627(a)), and in a CARHA league a hold can bring a major and game misconduct.**
 
 ```facts
 Rule: In a CARHA league the arm is dearer — 63(a) prices a hold as a minor or, at the referee's discretion, a major; 63(b) makes that major mandatory where the hold injures; that major brings a game misconduct (30(a))

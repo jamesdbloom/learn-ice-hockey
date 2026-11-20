@@ -502,7 +502,7 @@ Rule: Never grab a cage. USA Hockey 622, PWHL 51 eject for a mild grab; Hockey C
 Rule: NHL and IIHF 75.2 make a cage grab a minor, but NHL 75.2(ii) lets the referee give a match if warranted, especially if it injures, and 21.1 makes any act meant to injure a match; the IIHF's 75.2 Note can send a severe grab to Rule 21, Dangerous Actions, a major plus game misconduct
 Rule: In CARHA-affiliated adult leagues, 63(a) leaves a major to the referee for any hold — wider than Hockey Canada 8.1(b), whose major needs an injury — and 63(b) makes it mandatory if it injures; any major for holding brings a game misconduct (30(a))
 Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
-Rule: You may use your arm in a strength move to block, with body position and no holding or cross-check — NHL and IIHF 54.2, PWHL 55.2, and Hockey Canada 8.1 — but 7.3 bars a push in its non-checking divisions; not USA Hockey, whose 622 makes a free arm that restrains or impedes holding, nor CARHA
+Rule: An arm may block in a strength move with body position, no hold, no cross-check — NHL and IIHF 54.2, PWHL 55.2, Hockey Canada 8.1, but where 7.3 bars checking, blocking a player moving into you can be a body check; not USA Hockey (622: a free arm that restrains or impedes is holding) or CARHA
 Technique: Keep the free hand high on your own shaft and use the bar of forearm and shaft as a brace, never a push — driven into an opponent it is a cross-check, and CARHA's definition needs no force
 Never: Hang onto an opponent's stick after fending it off
 Key: A free hand that grabs or restrains is holding, not interference, whoever has the puck
@@ -516,7 +516,7 @@ Rule: The IIHF's free-hand wording is substantively identical to the NHL's; USA 
 | The move | Legal | Penalty |
 |---|---|---|
 | **The free hand on your own stick** | Free hand up on your **own** shaft, using the stick and forearm as a bar — braced, not driven | Grabbing, tugging or pulling the opponent or their stick — **holding**, at least a two-minute minor |
-| **The stiff arm as a block** | A stiff arm across as a **block**, when you have body position — **NHL and IIHF 54.2, PWHL 55.2, Hockey Canada 8.1 — but 7.3 bars a push in its non-checking divisions; not USA Hockey or CARHA** | Hooking your arm around them, or clamping onto their stick |
+| **The stiff arm as a block** | A stiff arm across as a **block**, when you have body position — **NHL and IIHF 54.2, PWHL 55.2, Hockey Canada 8.1; not USA Hockey or CARHA** | Hooking your arm around them, or clamping onto their stick; **where Hockey Canada 7.3 bars checking, blocking a skater moving into you can be a body check** |
 | **Fending off their stick** | Momentarily fending it off with the free hand — **NHL and IIHF 56.1, PWHL 57.1, and Hockey Canada 8.1**, which permits blocking a stick with the hands | Hanging onto the stick after fending it off |
 | **The bar as a brace** | Leaning the forearm-and-shaft bar in to hold the ground you have — in a Hockey Canada or USA Hockey non-checking game hold it there rather than lean; under CARHA keep it off them | Driving the shaft between your two hands into them — **a cross-check**, a major and game misconduct under Hockey Canada and CARHA if it injures, and neither book needs force |
 

@@ -1025,8 +1025,8 @@ const pkNz13 = {
   describe:
     'The full sheet. We defend the net at the right; the opposition power play attacks from the ' +
     'left. One opposition player carries the puck in the neutral zone on the upper side. Four own ' +
-    'players: F1 ahead of the carrier, giving token checking pressure back toward the carrier and ' +
-    'finishing short of them; and behind F1 a line of three across the ice — a forward in the ' +
+    'players: F1 ahead of the carrier, giving token pressure back toward the puck on the carrier’s ' +
+    'inside and finishing short of it; and behind F1 a line of three across the ice — a forward in the ' +
     'middle and a defenceman near each side — each backing up toward our blue line, drawn with ' +
     'the row of separate overlapping arches that means backward skating. Our goalie is in ' +
     'the crease at the right. ' +
@@ -1089,8 +1089,8 @@ const pkNz112 = {
   describe:
     'The full sheet. We defend the net at the right; the opposition power play attacks from the ' +
     'left. One opposition player carries the puck up the upper side of the neutral zone. Four own ' +
-    'players: F1 ahead of the carrier on the same side of the ice with a checking-pressure route ' +
-    'running back toward the carrier and finishing short; F2 stacked behind F1 on that same side, level ' +
+    'players: F1 ahead of the carrier on the same side of the ice with a pressure route ' +
+    'running back toward the puck on the carrier’s inside and finishing short of it; F2 stacked behind F1 on that same side, level ' +
     'with F1 along the boards; and two defencemen abreast just in front of our blue line, one ' +
     'either side of the middle. Our goalie is in the crease at the right. The other four ' +
     'power-play attackers are not drawn.',

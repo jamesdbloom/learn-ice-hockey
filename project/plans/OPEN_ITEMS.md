@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W549 and W550 shipped with record `w550_pressure_routes_redrawn_allowlisted_and_promoted_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W551 shipped with record `w551_small_leftovers_hc_arm_block_and_carha_head_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -24,10 +24,8 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
   - **(3) Stale comment:** the rush-3-on-2-alternative module still says "UNDECLARED PAIR… reported to the coordinator". The pair is now declared in `check_caption_pairs.py`, so correct the comment at the next diagram edit.
-- **From W546 (20 Nov):**
-  - **(1) [Key focus :17 fixed in W547.]** Two leftovers remain:
-    - rules_primer CM :1196 ("Two minutes is the whole answer only under the NHL's head-check rule") is also false for CARHA, where an accidental head bump is a minor (50(a)). It errs harsh.
-    - Overview :31 lists the IIHF, USA Hockey and Hockey Canada as ejecting without intent, and omits the PWHL (48.2/48.5).
+- **From W551 (20 Nov):**
+  - **(1) Hockey Canada arm block in 7.3 divisions, other carriers.** W551 established in puck_handling and forechecking that, where 7.3 bars checking, blocking a player moving into you can be called a body check (the definition's "opposite-directional force" limb). Sweep the other carriers of the 8.1 strength-move permission (`grep -n '8.1' content/ | grep -i 'strength\|arm'`; body_contact_and_battles :488 and :1751 are likely) for the same scope. Follow the W529 convention: state the 7.3 act, never "8.1 does not apply".
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
   - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
   - **(4) Four facts lines still say "IIHF and Hockey Canada off the head"** (forechecking :320, :701, :750, :980). None had room to split. The head-only form errs harsh for the IIHF; that is acceptable, so split only if a block is next edited.
@@ -39,9 +37,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - Revisit as a marker-density pass, not by sweeping.
 - **From W538 (20 Nov; row 1 closed in W546, all but mental_game KT1, which is kept on purpose as crisis content):**
   - **(2) Helmet-clash act, other wordings.** The W538 layer test found faceoffs CM :1323 by string ("helmet clash"). Units worded "heads together" or "head over the dot" with a USA Hockey tariff were not swept.
-- **From W537 (20 Nov):**
-  - **(1) Optional: forechecking :1033 names only USA Hockey for the arm block.** A reader in a Hockey Canada 7.3 division could hear the block as fine. :624 prices that case. Sketch: "…block with one under USA Hockey or where checking is barred…".
-  - **(2) Optional: puck_handling :503 and :517 say "a push" for 7.3(a).** 7.3(a) reads "body-checks, bumps, shoves, or pushes".
+- **From W537 (20 Nov; rows 1 and 2 closed in W551):**
   - **(3) body_contact :1737's arm-block cell names only the books that grant one.** The table has 1 character of headroom. :1766 carries "USA Hockey and CARHA write no strength-move sentence at all" in prose.
 - **From W535 (20 Nov; rows 2–4 closed in W536):**
   - **(1) Two lexical sweeps keyed on "reckless".** A unit that prices a head-reaching act under USA Hockey without that word could have passed both. Examples: "only a violent one", "can end your game", or a "several books" list that leaves USA Hockey out. Read the Key Takeaways of the 12 W535 files in full; the reviewers read only some.
@@ -321,7 +317,8 @@ These questions sit inside the rows above and need the owner's call before anyon
 - **Pressure routes, follow-ups (from W550):**
   - check-arrivals form (p) is now FAIL, with an allowlist in `site/scripts/arrivals-allow.json`.
   - Still uncovered: a curve that bows through a player before its tip, and targets more than 9 ft from the tip (forecheck-roles-rotate D2 sits at 9.49 ft, miss 0.00).
-  - Diagram-reviewer note: defender-holding-the-line's puck is drawn about 4 ft off the start of the pass line.
+  - [pk-nz alt texts fixed in W551.] special_teams.mjs ~:757 describe still says "the apex applying checking pressure out toward the point player". Drop "checking".
+  - [defender-holding-the-line puck closed in W551: kept on purpose. It sits clear of the passer's glyph, and the route aims at the lane, not the puck.]
   - Pre-existing: corner-escape-routes' auto-placed "'takes the middle away'" label crosses a painted circle.
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.
