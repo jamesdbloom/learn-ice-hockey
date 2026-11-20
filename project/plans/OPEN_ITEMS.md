@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W559 and W560 shipped with record `w560_labels_and_marker_density_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W561 and W562 shipped with record `w562_hit_from_behind_ladder_copies_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -33,7 +33,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - W539's five kept on purpose stay as recorded: defending_the_rush CM :1101/:1113, game_management CM :1290, glossary :402, risk_management CM :932.
   - **(2) Marker density, the remaining candidates (content-reviewer W559, read-only):**
     - **goaltender :1635–1641 and CM :1713–1715.** These are per-book ladders the goalie never pays, the victim's side, and each is a single-glyph list item. They are the strongest de-marking candidate in three files and need a unit-by-unit decision. CM :1714 nearly restates :1635 and :1283.
-    - **The hit-from-behind ladder is restated 3–4 times per file.** Locations: goaltender :1283/:1635–1641/:1714–1715; winger :869–873/:882–884/CM; forechecking :224/:628/:811–813. Handed to D8 and facts-reviewer: check every copy agrees after 18ca60ea's head-or-neck rescope.
+    - **The hit-from-behind ladder is restated 5–7 times per file (W561 census). All copies agree after W562.** Restatement candidates that carry no unique tier: winger :531≈CM :927, :722/:724, CM :919; goaltender :1283 (≈:1635), CM :1714, :1666 (partial); forechecking :224, :764 (≈:339). Cutting any of these needs a chunk-distance check first.
     - **Free removals, if visual density matters.** These are units with 2 glyphs: winger :801, goaltender :1663/:1664/:1795, forechecking :809/:1098/:220.
     - **No tool measures "Important." per minute of audio.** forechecking chunk 053 carries four. An ear test or a per-chunk census would settle it.
 - **From W538 (20 Nov; row 1 closed in W546, all but mental_game KT1, which is kept on purpose as crisis content):**
