@@ -173,8 +173,8 @@ Risk: The umbrella works the puck far from the net, and goalies and killers are 
 Position: Four on one side — below the goal line, in the corner or low circle, on the half-wall and at that point — with the fifth weak side as a release valve
 Action: Cycle the puck relentlessly in a small area, creating repeated 3-on-2s along the strong-side wall
 Read: When a killer over-commits, attack the seam or swing it cross-ice to the lone weak-side player with the goalie moving
-Read: Excellent against a passive box that will not come out to the wall
-Countered by: A kill that reads the pattern — the passes are short and easy to intercept, and a strong-side interception is a shorthanded break
+Read: The overload is excellent against a passive box that will not come out to the wall
+Countered by: A kill that reads the overload's pattern — the passes are short and easy to intercept, and a strong-side interception is a shorthanded break
 Risk: The overload produces fewer shots than other shapes; cycling without ever pulling the trigger just tires your own unit
 ```
 

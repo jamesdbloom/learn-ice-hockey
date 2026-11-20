@@ -311,9 +311,9 @@ The standard assignment, and the one assumed throughout this document:
 **In short:** Skate a route to your man's inside hip, goal side of them, and take the ice rather than their body.
 
 ```facts
-Never: Chase from behind their shoulder — that is jogging, and you cannot defend anything from behind
-Action: Take a route that puts you inside them, between them and your net, even if it is slightly longer
-Position: Arrive at their inside hip, not their back pocket, so your stick reaches the passing lane
+Never: Chase from behind your man's shoulder — that is jogging, and you cannot defend anything from behind
+Action: Take a route that puts you inside your man, between them and your net, even if it is slightly longer
+Position: Arrive at your man's inside hip, not their back pocket, so your stick reaches the passing lane
 Action: Take the ice, not the body — get ahead of your man and hold your lane; veering into an opponent off the puck can be called interference anywhere, and where checking is barred an illegal check too
 Rule: Never end a chase with a hit to the back, puck or not — plan on ejection: no minor in NHL, PWHL or IIHF 43.2, a game misconduct at the floor in Hockey Canada 7.5(a) and CARHA 53(a); meant to injure, a match in all but the IIHF; USA Hockey: if reckless, plan on a match, likely multi-game ban (602(a))
 Rule: USA Hockey: even light checking from behind is at least a minor + misconduct (608(a)); forceful at the boards, head first into boards or net, or reckless, at least a major + game misconduct (608(b); Casebook 608 Sit. 1)

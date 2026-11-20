@@ -34,7 +34,7 @@
 
 ## Overview
 
-These ideas hold for every position and level, and where your team's system or your league changes the answer, they say so and tell you to find out. Most are about the time without the puck, because that is most of your shift.
+The ideas on this page hold for every position and level, and where your team's system or your league changes the answer, they say so and tell you to find out. Most are about the time without the puck, because that is most of your shift.
 
 Defending, everything turns on the front of your own net. A mistake there is a shot against rather than a lost possession, which is why goal side, getting back above the puck and playing simple there matter more than anything clever.
 
@@ -42,7 +42,7 @@ Attacking, your value is to the player with the puck. Looking early means the de
 
 Three things are settled before the play reaches you, and they cost the most if you get them wrong. Your team's system decides most of the "always do X" you will hear. Your league's checking category is the difference between a legal play and a penalty — or, for a reckless hit, being thrown out of the game. And how you meet the boards decides whether a race to the wall is nothing or an injury.
 
-Learn these as principles rather than instructions: instructions expire with a team's system, but the reasoning transfers.
+Learn the ideas on this page as principles rather than instructions: instructions expire with a team's system, but the reasoning transfers.
 
 ---
 

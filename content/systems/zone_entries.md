@@ -588,7 +588,7 @@ Because turning away from the offensive zone feels like retreating, and because 
 Delay only when support is genuinely coming, and curl in open ice before the defender can reach you, never against the wall. With numbers now, take the odd-man rush; if your line is caught out and the bench is calling, get it in deep and change; and **never curl back over the blue line while a teammate is still inside** — they have to get back out before the puck comes back in, or your re-entry is offside.
 
 ```facts
-Read: Numbers now that will be gone in a second — take the odd-man rush instead
+Read: With numbers now that will be gone in a second, skip the delay and take the odd-man rush
 Never: Delay with nobody behind you — a delay only works if support is genuinely coming
 Action: If your line is caught out and the bench is calling, get it in deep and change
 Never: Curl back over the blue line while a teammate is deep in the zone — they have to get back out before the puck comes back in, or your re-entry is offside
@@ -629,9 +629,9 @@ Three things make it work:
 ### When it's right
 
 ```facts
-Read: A passive neutral zone that backs off and gives you the red line for free — the trailer gets a running start at a stationary wall
-Read: Breakouts and power-play entries, where you can choreograph the timing in advance
-Read: A defence that has over-committed to the carrier's side
+Read: The drop pass suits a passive neutral zone that backs off and gives you the red line for free — the trailer gets a running start at a stationary wall
+Read: The drop pass suits breakouts and power-play entries, where you can choreograph the timing in advance
+Read: The drop pass suits a defence that has over-committed to the carrier's side
 ```
 
 - Against a passive neutral zone that backs off and gives you the red line for free — the trailer gets a running start at a stationary wall.
@@ -690,7 +690,7 @@ Place the puck gently into a specific area — usually a corner — so that it d
 
 ```facts
 Action: Place the puck gently into a specific area, usually a corner, so it dies there rather than rebounding
-Read: A forechecker arriving in roughly two seconds, and a defence that has to turn and retrieve
+Read: Use the soft dump when a forechecker is arriving in roughly two seconds and the defence has to turn and retrieve
 Goal: Give your chaser a stationary puck and a body arriving on it, and give the retriever no help from the puck's momentum
 Never: Use the soft dump when your chaser is four seconds away — you have just given the puck to their defenceman with time
 ```
@@ -706,7 +706,7 @@ Never: Use the soft dump when your chaser is four seconds away — you have just
 The defenceman steps up to meet you at or before the line. You lift or push the puck **past them, down the wall**, and skate around the other side to collect it yourself.
 
 ```facts
-Read: A defender committing hard and early, with space behind them on the wall
+Read: Chip the puck past a defender committing hard and early, with space behind them on the wall
 Action: Lift or push the puck past them down the wall and skate around the other side to collect it yourself
 Technique: Chip early, off the boards if you need to lift it over a stick, and change your line before you release so you are already accelerating around them
 Key: A chip past a defenceman stepping up is a possession play, not a surrender — you are using their own momentum against them

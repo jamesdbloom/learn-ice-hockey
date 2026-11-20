@@ -1250,7 +1250,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 6. **Never duck a check — take it head up, knees bent, chin off your chest**: a tucked chin can break your neck against the boards. ⚠️ **Take contact on your side; never turn your back to anyone coming at you, at the wall or in open ice.** Facing the boards? Stick and gloves up on the glass, head off it.
 
-7. **See their numbers? Pull up and play the puck.** ⚠️ **In most books a hit from behind ends your game, and in every book it can.** Under USA Hockey it must if it is forceful at the boards, reckless, sends them head first into the boards or net, or carelessly catches the head or neck.
+7. **See an opponent's numbers? Pull up and play the puck.** ⚠️ **In most books a hit from behind ends your game, and in every book it can.** Under USA Hockey it must if it is forceful at the boards, reckless, sends them head first into the boards or net, or carelessly catches the head or neck.
 
 8. **Keep your stick on the puck, your feet out of theirs.** ⚠️ **A called slew-foot ejects you under the NHL, PWHL, IIHF and USA Hockey;** **Hockey Canada and CARHA can, and Hockey Canada must if it injures.** ⚠️ **Never cross-check above the shoulders:** **it must end your game under CARHA, Hockey Canada and, if careless or intentional, USA Hockey.**
 

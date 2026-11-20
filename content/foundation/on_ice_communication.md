@@ -339,20 +339,20 @@ Faceoff communication happens before the puck drops, when nobody is moving and e
 
 ## Who owns which call
 
-**In short:** Whoever can see it makes the call, whatever their age or role, and where two players can see it, both call it.
+**In short:** Whoever can see the play makes the call, whatever their age or role, and where two players can see it, both call it.
 
 ```facts
-Key: The player who can see it makes the call — not the captain, not the defenceman, not the loudest
+Key: The player who can see the play makes the call — not the captain, not the defenceman, not the loudest
 Action: Let the goalie lead the defensive zone — they face the play, they are stationary, and nothing is behind them
 Action: The defencemen call the breakout — "up", "over", "reverse" and "wheel" are called *to* the retriever, not chosen by them
 Action: The centre announces the low-zone rotation, because the centre leaving is the one who knows it is happening
 Action: Backcheckers call their own pickups, so the defencemen can commit to the puck instead of hedging
 Action: Forecheckers name their own order of arrival — F1, F2 and F3 are settled by who reaches the puck first, so say which one you have
 Action: The bench calls changes and warns about what the on-ice players cannot see
-Convention: Where two people can see it, both call it — the failure mode you are guarding against is silence, not duplication
+Convention: Where two people can see the play, both call it — the failure mode you are guarding against is silence, not duplication
 ```
 
-The organising principle is one line long: **the player who can see it makes the call.** Not the captain, not the defenceman, not the loudest — whoever has the information. That means an eighteen-year-old rookie shouting at a veteran is correct behaviour, and a team where that feels wrong will concede goals for it.
+The organising principle is one line long: **the player who can see the play makes the call.** Not the captain, not the defenceman, not the loudest — whoever has the information. That means an eighteen-year-old rookie shouting at a veteran is correct behaviour, and a team where that feels wrong will concede goals for it.
 
 On top of that principle sit a few standing responsibilities, which exist because certain players reliably have certain information:
 
@@ -368,7 +368,7 @@ On top of that principle sit a few standing responsibilities, which exist becaus
 
 - **The bench calls changes and warns about what the on-ice players can't see** — a player coming off the opposition bench, a line matchup, a shift that has gone too long.
 
-**Where two people can see it, both should call it.** Redundant information costs nothing. The failure mode you are guarding against is silence, not duplication.
+**Where two people can see the play, both should call it.** Redundant information costs nothing. The failure mode you are guarding against is silence, not duplication.
 
 ---
 
@@ -744,7 +744,7 @@ document, that is named too.*
 
 1. **The puck carrier is the least informed player on the ice.** Everyone else can see their blind side, and passing that on costs nothing.
 2. **"Man on" and "time" are the two highest-value words in hockey.** One prevents a turnover, the other a panic — say "time" only when you are sure. **At the wall or in open ice, called or not, never turn your back to anyone coming at you, and never duck** — head up, chin off your chest.
-3. **The player who can see it makes the call** — not the captain, not the most senior player.
+3. **The player who can see the play makes the call** — not the captain, not the most senior player.
 4. **Going back for a dumped puck, listen for your goalie before you touch it.** They see what is behind you: "time" or "man on" from them, then your partner's "up" or "over". Shoulder-check as you go — and goalies, make the call every time.
 5. **Early beats accurate, short beats specific, loud beats clever.** A perfect call at conversational volume did not happen. The exception is "time": say it only when you are sure, because a false one sends a teammate into a hit unbraced.
 6. **Use names and numbers.** "Sam, man on" gets acted on. "Man on" gets four heads turning.
@@ -766,7 +766,7 @@ document, that is named too.*
 
 Two qualifications on those undocumented calls. First, **outlet, net front, sag, collapse and odd man are all well documented as standard hockey *terms*** — they appear throughout the coaching literature and elsewhere in this guide as names for positions, shapes and situations. What is unverified is only their use as something a player shouts.
 
-Second, these calls **are** corroborated in the sources and are not flagged as undocumented. *Stretch, over* and *here* are on Sweden coach Sam Hallam's list of what his players shout, quoted by NHL.com; he also lists "Open!", which this document does not carry as a separate call. For *two-on-one / three-on-two*, ReasonY gives the short numeric forms "Two" and "One", noted inline. *Wheel, reverse, time, man on* and *middle* are on the BVHS goalie manual's "phrases and what they mean" list, which also documents "bank". The call **"half wall" is not on that list**: it appears in a separate list of "key communication phrases goaltenders can use" in the same manual's *Playing The Puck* section, alongside "leaving it", "reverse", "wheel" and "bank".
+Second, some calls **are** corroborated in the sources and are not flagged as undocumented. *Stretch, over* and *here* are on Sweden coach Sam Hallam's list of what his players shout, quoted by NHL.com; he also lists "Open!", which this document does not carry as a separate call. For *two-on-one / three-on-two*, ReasonY gives the short numeric forms "Two" and "One", noted inline. *Wheel, reverse, time, man on* and *middle* are on the BVHS goalie manual's "phrases and what they mean" list, which also documents "bank". The call **"half wall" is not on that list**: it appears in a separate list of "key communication phrases goaltenders can use" in the same manual's *Playing The Puck* section, alongside "leaving it", "reverse", "wheel" and "bank".
 
 Sportmentary documents *man on, time, screen, ice it, dump* and *leave it*, and the goalie's *shot* word for word, in the same sense this document gives it. *Up, over* and *leave it* come from Kelvin Cech's goalie breakout calls, also the source for the two-syllable argument. *Rim, clear, back, back door, chip, deep / dump, far side, feet / under, one on / two on, all alone* and *screen* are on the Chicks with Sticks call list.
 

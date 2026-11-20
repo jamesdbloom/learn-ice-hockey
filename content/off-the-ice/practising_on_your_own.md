@@ -10,7 +10,7 @@
 
 **Work both feet and both directions, and give your weaker one more.** Every one-foot drill here is done on the right foot and then the left.
 
-**Learn it slowly, then go hard where you have room.** Once you have the shape, push as hard and as confidently as you can. A timid edge on a flat blade teaches nothing.
+**Learn each new drill slowly, then go hard where you have room.** Once you have the shape, push as hard and as confidently as you can. A timid edge on a flat blade teaches nothing.
 
 **Keep your head up, even when you reach down.** Looking at your skates drops your weight forward and flattens the blade.
 

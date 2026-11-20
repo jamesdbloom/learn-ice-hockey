@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W578 and W579 shipped with record `w579_facts_subjects_and_winger_back_cross_check_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W580 and W581 shipped with record `w581_summary_subjects_and_subjectless_facts_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -97,9 +97,12 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(3) [Facts layer closed in W579: 146 Tier 1/2 rows applied across 24 files (census `scratchpad/w518_3/defects.tsv`).]** Still open:
     - 64 Tier 3 facts rows, where they/them means the section's one opponent (low value).
     - 1,037 non-facts `--loose` hits, not triaged.
-    - Facts lines with no subject at all (special_teams :176, zone_entries :591/:632/:634).
-    - Pronouns past the six-word window (defending_the_rush :315).
+    - [Subjectless facts lines at special_teams :176/:177, zone_entries :591/:632–:634/:693/:709 and forechecking :467: closed in W581.]
+    - Pronouns past the six-word window ([dtr :314–:316 closed in W581]).
+    - [Summary sections (Key focus, Overview, KT, CM) closed in W581: 15 defects out of 176 hits.]
     - The "it = puck" and "their = opposing team" classes, not tallied.
+    - **25 `Countered by:` facts lines** corpus-wide name the countered system only in the heading. `Position:` and `Goal:` system-profile lines have the same shape (e.g. forechecking :462/:465). This needs its own census (W580).
+    - Near-misses, for a second opinion: team_play :725/:726 "When it goes up…" (a Key Takeaway with an ejection tariff); special_teams :1338.
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518; 2 in W524):**
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.

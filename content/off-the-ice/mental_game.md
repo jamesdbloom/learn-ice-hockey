@@ -30,7 +30,7 @@
 
 The mental side closes the gap between your worst game and your best. It does not raise your best. Your speed and your shot barely move between Saturday and Sunday; your attention and your composure after a mistake move a lot. Mental training is no substitute for skill work.
 
-**Most of it is about the next shift, not the last one.** A mistake you carry costs you twice: once when it happens, and again while you replay it and the play moves on. So the reset ends by naming a job, and the bench is for planning, not post-mortems. The four-step order is coaching craft that no study has tested as a sequence, though each step has support of its own.
+**Most of the mental game is about the next shift, not the last one.** A mistake you carry costs you twice: once when it happens, and again while you replay it and the play moves on. So the reset ends by naming a job, and the bench is for planning, not post-mortems. The four-step order is coaching craft that no study has tested as a sequence, though each step has support of its own.
 
 **Careful players make more turnovers.** Fear of a mistake looks tidy, but it makes you late, and every half-second you spend making sure gives the forechecker time. A process target you can hit gives the fear something to do.
 

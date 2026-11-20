@@ -464,7 +464,7 @@ Key: The 1-4 is a neutral-zone structure, not an offensive-zone forecheck — Ne
 Convention: The lone forechecker steers and slows the exit rather than pressuring; nobody pinches and nobody gambles
 Goal: Preventing odd-man rushes and high-danger chances, full stop
 Risk: The 1-4 concedes any realistic chance of getting the puck back in their end, and therefore any offence
-Read: A situational tool only — a one-goal lead in the last two minutes, the end of a period, no legs left, or a far better opponent
+Read: The 1-4 is a situational tool only — a one-goal lead in the last two minutes, the end of a period, no legs left, or a far better opponent
 Countered by: A hard chip past the flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line; if the goalie comes out for it, pull up
 ```
 
