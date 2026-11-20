@@ -529,14 +529,20 @@ const twoOnTwo = {
     // full. This diagram has ONE host, its owner, so nothing was lost to any listener. The
     // alternative is still NAMED here, and the gap-shrinks-never-grows point and the safety
     // reason for drawing no route were kept — neither is in the host prose.
-    'The version drawn is man-on-man: each defenceman takes one attacker and holds ' +
+    // ✂️ Caption wave, 20 Nov 2026 (806 -> 704 chars), WORDING ONLY. One host, the owner; its facts
+    // block directly above the marker voices man-on-man, zone, find out, and follow-or-switch.
+    // Cut: "rather than a distance measured off a picture" (the drawn-wide reason already says the
+    // gap is not the one to copy) and the "for two reasons ... The second reason is" scaffolding.
+    // KEPT: the alternative and find-out, the shrinks-never-grows gap, never half of each, and the
+    // safety reason for drawing no route (a beginner reaching for a hit), which the host does not
+    // voice -- with its causal link restated ("No route is drawn for safety too") after review.
+    'Drawn man-on-man: each defenceman takes one attacker and holds ' +
     'their gap on the inside of them; zone is the realistic alternative, so find out which your ' +
-    'team plays. The gap drawn is wide because this is the instant the crossing ' +
-    'begins; aim for a gap that shrinks the whole way in and never grows, rather than a distance ' +
-    'measured off a picture. ' +
-    'Neither defenceman is drawn with a route, for two reasons. Following your man through the ' +
-    'crossing and calling a clean switch are both real answers, never half of each, so the picture leaves the read ' +
-    'with you. The second reason is safety: a crossing rush is exactly where a beginner reaches for ' +
+    'team plays. The gap is drawn wide because the crossing is only ' +
+    'beginning; aim for a gap that shrinks the whole way in and never grows. ' +
+    'Neither defenceman is drawn with a route. Following your man through the ' +
+    'crossing and calling a clean switch are both real answers, never half of each, so the read ' +
+    'is yours. No route is drawn for safety too: a crossing rush is exactly where a beginner reaches for ' +
     'a hit instead of holding their position.',
 
   describe:
@@ -701,19 +707,26 @@ const threeOnTwoAlternative = {
     // KEPT: the system's name and its "ask your coach" close, the two-wide cross-reference by
     // NAME (never "the previous diagram"; see the note above), and why the backchecker's route
     // ends in open ice.
-    'A 3-on-2 defended the realistic alternative way — "strong side takes the puck, weak side ' +
+    // ✂️ Caption wave, 20 Nov 2026 (864 -> 772 chars). CUT the orientation clause "with the attack
+    // moving right to left toward the defended net at the left": in BOTH hosts (defending_the_rush.md
+    // :599, goaltender.md :1033) rush-3-on-2-default is embedded directly before this marker and its
+    // caption states that orientation; the two pictures share it, and "only the defence has changed"
+    // says so. ⚠️ UNDECLARED PAIR: if either host stops embedding rush-3-on-2-default straight before
+    // this diagram, the orientation clause should come back (reported to the coordinator for a
+    // check_caption_pairs.py row). Wording: "as a 1-on-1" -> "1-on-1". Every tactical limb kept.
+    'A 3-on-2 defended the realistic alternative way, "strong side takes the puck, weak side ' +
     // ✂️ W464, 18 Nov 2026 (162 words before): wording only. Every limb above is still here —
     // the cross-reference by name, the open-ice route and why, both halves of the trade
     // (goaltender.md chunk 067 voices only "they fail in different directions"), and the ask.
-    'splits" — with the attack moving right to left toward the defended net at the left. The ' +
-    'attackers stand where they do in the two-wide default; only the defence has ' +
-    'changed. The strong-side defenceman takes the carrier as a 1-on-1 with a tight gap; the ' +
+    'splits": the ' +
+    'attackers stand as in the two-wide default, and only the defence has ' +
+    'changed. The strong-side defenceman takes the carrier 1-on-1 with a tight gap; the ' +
     'weak-side defenceman drops into the shaded lane and splits the middle and far attackers, ' +
     // W464 follow-up, 18 Nov 2026: "The backchecker’s route" -> "The backchecking centre’s
     // route". The glyph is labelled C, as in the two-wide default (whose caption calls it "the
     // backchecking centre") and this diagram's own describe; naming it here ties the C to the
     // words. Label kept: C is the module's centre notation and the pair should match.
-    'as on a 2-on-1. The backchecking centre’s route finishes in open ice because it takes the third ' +
+    'as on a 2-on-1. The backchecking centre’s route ends in open ice because it takes the third ' +
     'attacker, whichever that turns out to be, rather than the middle. ' +
     'This version never concedes the middle, but the weak-side defenceman covers two people ' +
     'and the far attacker gets more room; the two-wide default keeps three on three ' +
@@ -819,20 +832,23 @@ const backcheckLanes = {
   // owns the middle", the lane geometry, the inside-hip instruction (how_to_watch_hockey voices
   // no inside hip near its marker) and the middle-lane driver.
   caption:
-    'Backchecking lanes, with the attack moving right to left toward the defended net at the left. ' +
-    'The ice is three vertical lanes running the length of the rink: two outside lanes along the boards, ' +
-    'and the shaded middle lane between the faceoff dots. In the standard assignment drawn here the centre ' +
-    'takes the middle lane and the two wingers take the outside lanes, and each backchecker’s route bends ' +
-    'inside their man: the aim is their inside hip, not their ' +
+    // ✂️ Caption wave, 20 Nov 2026 (859 -> 792 chars), WORDING ONLY: the lane definition folded
+    // into the opening sentence, "the attacker" and "the two" dropped, and the coaching-choice and
+    // somebody-owns-the-middle sentences joined with "but". Every limb in the KEPT list above stands.
+    'Backchecking lanes, with the attack moving right to left toward the defended net at the left: ' +
+    'two outside lanes along the boards and the shaded middle lane between the faceoff dots, each ' +
+    'running the length of the rink. In the standard assignment drawn, the centre ' +
+    'takes the middle lane and the wingers the outside lanes, and each backchecker’s route bends ' +
+    'inside their man: aim for their inside hip, not their ' +
     'back pocket, because you cannot defend anything from behind. ' +
     // The ranking this sentence used to carry — "the most commonly missed assignment in hockey" — was a
     // corpus-wide superlative with no source behind it, and a caption is the one place it reached a reader
     // as a caption rather than as prose. The mechanism is the teachable part and it survives; the league
     // table does not. Scope kept to the picture, which the picture can actually support.
-    'The most dangerous player in the picture is the middle-lane driver, the attacker skating hard through ' +
+    'The most dangerous player in the picture is the middle-lane driver, skating hard through ' +
     'the middle without the puck, who is missed because eyes go to the puck. ' +
-    'The lane assignment is a coaching choice and not a law. ' +
-    'Under every variant somebody owns the middle and nobody assumes it is somebody else. ' +
+    'The lane assignment is a coaching choice, but under every variant somebody owns the middle ' +
+    'and nobody assumes it is somebody else. ' +
     'The defencemen are not drawn.',
 
   describe:

@@ -971,16 +971,29 @@ const angleIntoTheCorner = {
   // the puck on as you get there, instead of leaving you pinned on the wall with it").
   caption:
     'Going back for a puck in your own corner with a checker inside your line; only your line is ' +
-    'drawn. It arrives on an angle and finishes running along the boards, the first and best of ' +
-    'three cases for meeting a wall. ' +
-    'The cases come from USA Hockey\'s material; the ordering and ranking do not. ' +
+    // \u2702\uFE0F Caption wave, 20 Nov 2026 (872 -> 835 chars; NOT under 800 -- skating.md voices no Case 3
+    // and no host voices the provenance sentence, so neither can go). "rather than a position to
+    // aim for" closes on a FULL STOP, not a colon (check_caption_negations flagged the colon
+    // form as negation-before-separator with an imperative tail). RE-ORDERED SO THE CASES RUN IN ORDER --
+    // best, (chip/rim/reverse), second, worst, then provenance -- which W367's "best, worst, then
+    // the second case" could not do while Case 2 had to sit inside the amber. Case 2 now comes
+    // BEFORE the glyph as plain text, so the amber run is the two absolutes only. CUT "for meeting a
+    // wall" (the caption's first sentence and the picture say it) and "USA Hockey asks you to"
+    // (the provenance sentence now FOLLOWS Case 3 and attributes all three cases to USA Hockey's
+    // material). Every Case 3 limb is kept: damage limitation rather than a position to aim for,
+    // turn your skates parallel first if at all possible, failing that spread the load, stick and
+    // gloves up, arms out, no head contact at all. The W511 chip/rim/reverse wording is byte-identical.
+    'drawn. It arrives on an angle and finishes running along the boards: the first and best of ' +
+    'three cases. ' +
     'Better still, a chip, rim or reverse decided before you arrive moves the puck on, so you ' +
-    'are not pinned on the wall with it. The worst, for when you already face the wall, is damage limitation rather than ' +
-    'a position to aim for. USA Hockey asks you to turn your skates parallel first if at all ' +
-    'possible. Failing that, spread the load: stick and gloves up on the glass, arms out as a ' +
+    'are not pinned on the wall with it. ' +
+    'The second case: get your skates parallel to the wall and take it on your forearm and hip. ' +
+    'The worst, for when you already face the wall, is damage limitation rather than ' +
+    'a position to aim for. Turn your skates parallel first if at all ' +
+    'possible; failing that, spread the load, with stick and gloves up on the glass, arms out as a ' +
     'shock absorber, and no head contact at all. ' +
-    '\u26A0\uFE0F Never turn your back to anyone coming at you, and never duck. ' +
-    'The second case: get your skates parallel to the wall and take it on your forearm and hip.',
+    'The cases come from USA Hockey\'s material; the ordering and ranking do not. ' +
+    '\u26A0\uFE0F Never turn your back to anyone coming at you, and never duck.',
 
   describe:
     'The defending half of the rink, the net being defended at the right and our goalie in its ' +

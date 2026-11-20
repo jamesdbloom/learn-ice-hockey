@@ -453,13 +453,18 @@ const supportAngles = {
   // puck; "on or behind" replaces "at or behind" ("at" can read as "near"). Host
   // passing_and_receiving.md carries the same order.
   caption:
-    'One instance of the three support angles, drawn around a carrier in the neutral zone attacking to ' +
+    // ✂️ Caption wave, 20 Nov 2026 (818 -> 765 chars), WORDING ONLY. "One instance of" became
+    // "drawn once"; "own net" -> "net"; "across the middle through the slot" -> "across the slot"
+    // (the slot IS the middle there); the blue-line timing is now an instruction ("time your
+    // entry"). KEPT: the own-zone limb with its point-blank reason, and the trail-skate sentence
+    // byte for byte (W479 order).
+    'The three support angles, drawn once around a carrier in the neutral zone attacking to ' +
     'the right: one teammate behind the puck, one level with it across the ice, one ahead of it. ' +
-    'Behind is the outlet — a low-risk reset that still exists when the other two are covered. ' +
+    'Behind is the outlet, a low-risk reset that still exists when the other two are covered. ' +
     'Level changes the side of the ice, a normal, high-value play in the neutral and offensive ' +
-    'zones; in your own zone the lateral option goes behind your own net, not across the ' +
-    'middle through the slot, where an interception is a point-blank chance. ' +
-    'Ahead gains ground and is the most interceptable, and at the blue line the receiver times their ' +
+    'zones; in your own zone the lateral option goes behind your net, not across the ' +
+    'slot, where an interception is a point-blank chance. ' +
+    'Ahead gains ground and is the most interceptable; at the blue line, time your ' +
     'entry rather than parking in the zone. Until the puck is completely across, keep the trail ' +
     'skate on the ice on or behind the line, which is onside under every book. ' +
     'A team needs all three at once.',

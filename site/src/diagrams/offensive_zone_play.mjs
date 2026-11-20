@@ -827,13 +827,17 @@ const behindTheNet = {
     // it the same way. ⚠️ `grep -rn "6\.73" content/` returns hits in offensive_zone_play.md
     // ONLY, so at the center.md and time_and_space.md markers this caption is the SOLE
     // carrier of the figure and of everything that says what it counts.
-    'Attacking from behind the net — a place to go on purpose, not a place you end up. The ' +
-    'pass out to the slot is the primary play, not the last resort: it crosses the royal ' +
-    'road almost by definition and arrives at a player already inside home plate. Passes ' +
+    // ✂️ Caption wave, 20 Nov 2026 (808 -> 766 chars), WORDING ONLY. "almost by definition" KEPT
+    // (the owner's wording, offensive_zone_play.md; "almost always" read as a frequency claim); the second-route sentence lost its notation note
+    // ("alternatives, so neither is numbered"). The 6.73% sentence with every qualifier and the
+    // ⚠️ checking-from-behind limb are byte for byte, for the sole-carrier reasons above.
+    'Attacking from behind the net, a place to go on purpose rather than one you end up in. The ' +
+    'pass out to the slot is the primary play, not the last resort: it crosses the royal road ' +
+    'almost by definition and reaches a player already inside home plate. Passes ' +
     'from below the goal line finished at 6.73%, second only to royal road passes — ' +
     'volunteer-tracked Passing Project data, 51,308 shots at 5-on-5, counting all attempts ' +
-    'rather than shots on goal. The other route is the reverse back to the ' +
-    'corner to restart the cycle — alternatives, so neither is numbered. ⚠️ Nobody ' +
+    'rather than shots on goal. The other arrow is the reverse to the ' +
+    'corner to restart the cycle. ⚠️ Nobody ' +
     'can come at you from directly behind here, but that is geometry and not immunity: checking ' +
     'from behind is a penalty anywhere on the playing surface and players do get driven into the ' +
     'goal frame, so keep your head up and know who is arriving.',

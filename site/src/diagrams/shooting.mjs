@@ -549,11 +549,20 @@ const breakawayApproach = {
     'through the top of the circles, then accelerate into your move. The tops of the ' +
     'circles are thirty-five feet out from the goal line, so easing off there still leaves ' +
     'most of a zone to accelerate through. The last arrow deliberately does not say which ' +
-    'move you make. That a change of pace beats raw pace, and is worth more ' +
-    'than any hand skill, is coaching craft rather than a measured finding — no source this ' +
-    'document holds measures either ranking against a goalie. And the goalie is ' +
+    'move you make. ' +
+    // ✂️ Caption wave, 20 Nov 2026 (803 -> 592 chars). CUT THE CLAIM AND ITS HEDGE TOGETHER:
+    // "That a change of pace beats raw pace, and is worth more than any hand skill, is coaching
+    // craft rather than a measured finding — no source this document holds measures either
+    // ranking against a goalie." The single host, shooting.md, states the same ranking and the
+    // same disclosure in the paragraph DIRECTLY ABOVE the marker ("That last ranking is coaching
+    // craft rather than a measured finding ... no source held for this document measures a change
+    // of pace against a goalie, or against hand skill"), so the caption was a word-level echo.
+    // The caption no longer makes the claim, so no disclosure is stripped: the claim and its
+    // qualification left together and both still stand in the host. The goalie-depth hedge
+    // STAYS — it qualifies the goaltender this picture draws, which the prose cannot.
+    'The goalie is ' +
     'drawn out at the top of the crease because that is the well-coached one; at rec level ' +
-    'they are far more likely to be deep, flat-footed and square, which is itself a ' +
+    'they are far more likely to be deep, flat-footed and square, which is a ' +
     'coaching observation rather than a counted one. Nobody else is on the ice.',
 
   describe:

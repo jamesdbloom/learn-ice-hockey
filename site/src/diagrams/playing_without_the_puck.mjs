@@ -222,14 +222,22 @@ const loosePuckWhoGoes = {
     'the closest player goes hard to it, one teammate supports on the boards side, one covers ' +
     'the net front, and nobody else joins. Find out which coverage your team plays. ' +
     'The other two skaters are not drawn. ' +
+    // ✂️ Caption wave, 20 Nov 2026 (805 -> 772 chars). CUT from the chin limb "with the boards or
+    // the goal post" (", on head-on contact" restored after review, so the caption alone does not
+    // tie the injuries to the chin posture alone): the single host voices that clause in the
+    // caption's own chunk, a few lines after the marker ("Then how you arrive": "head-down,
+    // head-on contact with the boards or a goal post, even at walking speed") and again in the
+    // ⚠️ "So arrive the safe way round" passage. The four-part safety unit is otherwise word for
+    // word: both dangers, both USA Hockey attributions, the quotation and its addressee, "Neither
+    // warning depends on the angle", and the closing absolutes.
     'Two postures carry two different dangers. A chin dropped to the chest is ' +
-    'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on ' +
+    'the one USA Hockey ties to almost all on-ice cervical spine injuries, on head-on contact. ' +
     // ⚠️ QUOTED, AND THE ADDRESSEE NAMED. sources/ibc.txt:1570 sits under §5 Checking From
     // Behind and is addressed to the player delivering the check; the caption carried its
     // wording with the word order shuffled and no quotation marks, which is invisible to
     // check_quote_drift.py. The source's own "Even a light hit" carries the not-only-fast-hits
     // point that the old trailing "even when the hit is light" was carrying by paraphrase.
-    'contact with the boards or the goal post. A back turned to anyone coming at you makes the ' +
+    'A back turned to anyone coming at you makes the ' +
     'contact a hit from behind, and USA Hockey warns the checker delivering one: "Even a light ' +
     'hit from behind could inflict a severe head or neck injury." Neither warning depends on the ' +
     'angle you arrive at. ' +

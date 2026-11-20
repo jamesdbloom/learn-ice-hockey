@@ -116,6 +116,14 @@ DEPENDENCIES: list[tuple[str, str, tuple[str, ...] | None, str]] = [
         "injuries and the posture are voiced in winger-dz-rim's caption directly before "
         "it in both hosts (winger.md, passing_and_receiving.md)",
     ),
+    (
+        "rush-3-on-2-alternative",
+        "rush-3-on-2-default",
+        None,
+        "orientation clause cut 20 Nov 2026 (W541): 'the attack moving right to left "
+        "toward the defended net at the left' is voiced in rush-3-on-2-default's caption "
+        "directly before it in both hosts (defending_the_rush.md, goaltender.md)",
+    ),
 ]
 
 
@@ -132,6 +140,11 @@ CARRIES: dict[str, tuple[str, ...]] = {
     "oz-cycle-reverse": ("never turn your back", "never duck"),
     # W507: winger-dz-reverse dropped its wall limb on the strength of this caption.
     "winger-dz-rim": ("never turn your back", "never duck", "chin off your chest"),
+    # W541: nz-back-off-at-the-line dropped its own coaching-choice / find-out
+    # sentence on the strength of this caption, embedded directly before it.
+    "nz-stand-up-at-the-line": ("coaching choice, so find out which your team wants",),
+    # W541: rush-3-on-2-alternative dropped its orientation clause.
+    "rush-3-on-2-default": ("right to left toward the defended net at the left",),
 }
 
 DIAGRAMS_JSON = REPO / "site" / "src" / "data" / "diagrams.json"

@@ -690,8 +690,18 @@ const wingerOffensiveZone = {
     // trailer (:754) all take it. It also contradicted its own host two lines above the marker:
     // content/positions/winger.md:430 reads "gives that upper layer to no position ... Which of
     // those your team asks for is a coaching choice, so find out." Non-negotiable 7.
-    'Stay out of the shaded high slot unless your team sends you there; find out who ' +
-    'fills it. From the wall, lean toward the shot: "shoot first" is a bias, not a rule. At the net ' +
+    // ✂️ Caption wave, 20 Nov 2026 (952 -> 918 chars; NOT under 800 -- both timing clocks, the
+    // shoot-first disclosure, the screen/crease limb (host carrier two chunks on) and the post limb
+    // (every-league scope) each stay for the W458 reasons above). CUT "; find out who fills it": the paragraph
+    // DIRECTLY above the marker, in the caption's own chunk, ends "Which of those your team asks for
+    // is a coaching choice, so find out", and the conditional "unless your team sends you there"
+    // still keeps the instruction from reading as a law. Post limb RE-WORDED, every part kept:
+    // "never meet a goal post head first or duck" is UNCONDITIONAL (review minor: an earlier draft
+    // put "never duck" inside "If a defender walks you into the frame", scoping it to that case);
+    // "A defender can walk you sideways" keeps the expect-it framing; "anything but your head first"
+    // and the every-league scope close the caption as before.
+    'Stay out of the shaded high slot unless your team sends you there. ' +
+    'From the wall, lean toward the shot: "shoot first" is a bias, not a rule. At the net ' +
     'front, screen with no contact, and keep your feet out of the blue paint and off its red ' +
     'edge. ' +
     // ⚠️ THIS SAID "every clause of Rule 69 that voids a goal for where you stood names the goal
@@ -741,10 +751,10 @@ const wingerOffensiveZone = {
     //
     // ⚠️ NOT PROMOTED TO A SHARED CONSTANT. wall_contact_clauses.mjs owns the boards
     // posture and is not this round's to edit; this string is local and stays local.
-    '⚠️ Know where the near post is before the shot, and arrive head up with your ' +
-    'chin off your chest: never meet a goal post head first, and never duck. A ' +
-    'defender can walk you sideways into the frame, so take it with an arm, a leg, ' +
-    'anything but your head first, in every league, checking or not.',
+    '⚠️ Know where the near post is before the shot, arrive head up with your chin off your ' +
+    'chest, and never meet a goal post head first or duck. A defender can walk you sideways into ' +
+    'the frame: take it with an arm, a leg, anything but your head first, in every league, ' +
+    'checking or not.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right, with only the opposition ' +

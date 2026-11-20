@@ -995,11 +995,15 @@ const crossIceOwnEnd = {
   // bodies" closes on a full stop instead ("not drawn. Do not count bodies.").
   caption:
     'Never pass across the front of your own net. A defenceman sealed in the corner passes ' +
+    // ✂️ Caption wave, 20 Nov 2026 (834 -> 773 chars). CUT "the sliding forward’s route ends in
+    // two bars short of a player": notation narration; "No contact is drawn" already says it, and
+    // the hit-depends-on-your-league limb stays. Wording: short sentences joined. Every picture
+    // disclosure, the designed-breakout distinction and the ⚠️ posture are unchanged.
     'below the tops of the circles, across the slot. Their middle forward stands beside the ' +
     'lane, stick reach not drawn. Their third forward slides across. A designed cross-ice ' +
     'breakout is a different play, made only when the middle is empty. The far outlet could ' +
-    'be your weak-side defenceman. Their defencemen are not drawn. Do not count bodies. No ' +
-    'contact is drawn: the sliding forward’s route ends in two bars short of a player, and ' +
+    'be your weak-side defenceman; their defencemen are not drawn, so do not count bodies. No ' +
+    'contact is drawn, and ' +
     'whether a hit may follow depends on whether your league allows body checking. ' +
     // The posture is WALL_POSTURE_SHORT's wording and order with "Skates parallel to the wall"
     // added in front (W468 safety review), written INLINE because WALL_POSTURE_SHORT is shared

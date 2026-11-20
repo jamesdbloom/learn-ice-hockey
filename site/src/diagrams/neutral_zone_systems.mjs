@@ -656,13 +656,19 @@ const regroup = {
   numbered: true,
 
   caption:
-    'A D-to-D regroup, drawn at the instant the pass across is made, with our team in possession ' +
-    'and attacking left to right. A forward who could not advance has turned the puck back to a ' +
-    'defenceman, who receives with their hips open up the ice and then moves it across: that pass ' +
-    'changes the point of attack and forces the entire opposing structure to slide. The one hard ' +
-    'rule is visible in the picture — the D-to-D is flat and hard and the lane is clean. Never ' +
-    'make it blind across the middle with a forechecker between you, because an interception ' +
-    'there is an instant 2-on-1 with both your defencemen wrong-sided. The three forwards sit at ' +
+    // ✂️ Caption wave, 20 Nov 2026 (807 -> 586 chars). One host, the owner. CUT the consequence
+    // clause "because an interception there is an instant 2-on-1 with both your defencemen
+    // wrong-sided" and "changes the point of attack": the facts block directly above the marker
+    // (Never: line) and the "The one hard rule" paragraph directly below it both voice the 2-on-1
+    // consequence, and step 3 of the numbered list above voices the change of point of attack.
+    // KEPT: the never-blind-across-the-middle instruction itself, the hips-open reception, the three
+    // depths and the declining-not-retreating point. "with our team in possession" dropped: the
+    // regroup is ours and "attacking left to right" orients it.
+    'A D-to-D regroup, drawn at the instant the pass across is made, our team ' +
+    'attacking left to right. A forward who could not advance has turned the puck back to a ' +
+    'defenceman, who receives with hips open up the ice and moves it across, so the opposing ' +
+    'structure has to slide. The pass is flat and hard and the lane is clean: never ' +
+    'make it blind across the middle with a forechecker between you. The three forwards sit at ' +
     'three different depths rather than all curling to the same place: short outlet, outside ' +
     'lane, stretch. You are declining a bad entry to buy a better one, not retreating.',
 
@@ -1005,16 +1011,23 @@ const backOffAtTheLine = {
   // conditions. The band disclosure is tightened, not cut. ⚠️ IF EITHER HOST STOPS EMBEDDING
   // nz-stand-up-at-the-line STRAIGHT BEFORE THIS DIAGRAM, THE TRADE-OFF LINE MUST COME BACK.
   caption:
-    'Backing off at your own blue line: the defenceman gives up the line and skates backwards, ' +
-    'matching the attacker’s speed, keeping them in front and funnelling them outside where the ' +
+    // ✂️ Caption wave, 20 Nov 2026 (808 -> 680 chars). CUT "Backing off or standing up is a
+    // coaching choice, so find out which your team wants": nz-stand-up-at-the-line's caption, voiced
+    // DIRECTLY BEFORE this one in both hosts and shown directly above it on the page, ends "Standing
+    // up or backing off is a coaching choice, so find out which your team wants" -- the same
+    // sentence with the two halves swapped. That adjacency is the pair check_caption_pairs.py
+    // already declares for every host. ⚠️ IF THAT PAIR EVER BREAKS, THIS SENTENCE MUST COME BACK
+    // (non-negotiable 7). The band disclosure is folded into the middle sentence, not cut; the
+    // funnel, the catastrophic-error line, the middle, the cost and the four conditions are kept.
+    'Backing off at your own blue line: the defenceman gives up the line and skates backwards ' +
+    'at the attacker’s speed, keeping them in front and funnelling them outside, where the ' +
     'shot is low-percentage. You cannot be beaten wide by pure speed, and a catastrophic error is ' +
-    'very hard to make. The shaded band is the middle: concede the blue line, never the middle or ' +
-    'your body position. The cost is in the picture too: they enter with speed and possession, ' +
-    'and you defend skating backwards toward your own net. The band’s long edges sit on the ' +
-    'faceoff-dot lines and are not painted on the ice. It is the play against a clear speed ' +
+    'very hard to make. The shaded band is the middle, between two unpainted lines through the ' +
+    'faceoff dots. Concede the blue line, never the middle or ' +
+    'your body position. The cost is drawn too: they enter with speed and possession, ' +
+    'and you defend skating backwards toward your own net. It is the play against a clear speed ' +
     'advantage, on a two-on-one or worse, when you are the last defender, or with no ' +
-    'backpressure. Backing off or standing up is a coaching choice, so find ' +
-    'out which your team wants.',
+    'backpressure.',
 
   describe:
     'The full sheet, and the same arrangement as the diagram beside it: our own net at the left ' +
