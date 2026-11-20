@@ -28,6 +28,12 @@ What counts as paint: rink markings only —
     Grey dashed leaders (#5b5f66) and route lines are not paint;
   * a red or blue <path>: the crease and the trapezoid, tested as straight
     segments, with the crease's 6 ft arc taken as its chord.
+  * a red or blue FILLED <circle> of radius <= 4 ft: the faceoff spots and the
+    centre dot, reported as "dot" when the label box covers any of it (added W556;
+    dots were never tested before).
+
+The box inset is capped at half a character per end (INSET_MAX_CHARS), so a long
+label is not trimmed by feet before it is tested.
 
 The text box is an estimate: width = characters × 0.56 × font-size (the
 placer's reservation constant CH, which rink.mjs records as the MAXIMUM of the
@@ -63,6 +69,9 @@ ASCENT = 0.733   # rink.mjs inkAvoid: measured maximum over 631 labels
 DESCENT = 0.211
 HASH_MAX = 3.0   # painted lines this short (hash marks) are ignored
 INSET = (0.08, 0.15)  # shrink the estimated box so a graze is not a crossing
+INSET_MAX_CHARS = 0.5  # ...but never by more than half a character at each end (W556: an 8% inset
+                       # trimmed 1.5 ft off a 12-character label and hid "two ways out" running 0.92 ft
+                       # past a faceoff-circle arc)
 RUN_ALONG = 3.0  # paint inside the label box longer than this × box height runs ALONG the words
 
 ATTR = re.compile(r'([\w:-]+)="([^"]*)"')
@@ -88,7 +97,7 @@ def label_boxes(svg: str):
         anchor = a.get("text-anchor", "start")
         x0 = x - w / 2 if anchor == "middle" else (x - w if anchor == "end" else x)
         top, bot = y - ASCENT * fs, y + DESCENT * fs
-        dx, dy = w * INSET[0], (bot - top) * INSET[1]
+        dx, dy = min(w * INSET[0], INSET_MAX_CHARS * CHAR_W * fs), (bot - top) * INSET[1]
         yield text, a.get("fill"), (x0 + dx, top + dy, x0 + w - dx, bot - dy)
 
 
@@ -103,6 +112,20 @@ def paint_circles(svg: str):
             continue
         if r > 4:
             yield float(a.get("cx", 0)), float(a.get("cy", 0)), r, a["stroke"]
+
+
+def paint_dots(svg: str):
+    """Filled painted circles of radius <= 4 ft: faceoff spots and the centre dot (W556: never tested before)."""
+    for m in re.finditer(r"<circle\b([^>]*)/?>", svg):
+        a = attrs(m.group(1))
+        if a.get("fill") not in PAINT:
+            continue
+        try:
+            r = float(a["r"])
+        except (KeyError, ValueError):
+            continue
+        if r <= 4:
+            yield float(a.get("cx", 0)), float(a.get("cy", 0)), r, a["fill"]
 
 
 def paint_lines(svg: str):
@@ -199,6 +222,7 @@ def check(path: Path):
     svg = path.read_text(encoding="utf-8")
     circles = list(paint_circles(svg))
     lines = list(paint_lines(svg)) + list(paint_paths(svg))
+    dots = list(paint_dots(svg))
     for text, fill, box in label_boxes(svg):
         what, flags = set(), set()
         h = box[3] - box[1]
@@ -209,6 +233,12 @@ def check(path: Path):
                     flags.add("same colour")
                 if len_inside_circle(box, cx, cy, r) > RUN_ALONG * h:
                     flags.add("runs along")
+        for cx, cy, r, col in dots:
+            nx, ny = min(max(cx, box[0]), box[2]), min(max(cy, box[1]), box[3])
+            if math.hypot(nx - cx, ny - cy) < r:
+                what.add("dot")
+                if col == fill:
+                    flags.add("same colour")
         for ln, col, sw in lines:
             if box_crosses_line(box, ln):
                 what.add("line")

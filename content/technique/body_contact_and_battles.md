@@ -1238,7 +1238,7 @@ Corner battles are board battles with two differences that change everything.
 
 ```facts
 Key: Two players usually beat one in a corner — the first only has to tie the puck up rather than win it outright. That "usually" is the coaching account, not a counted result
-Action: First man in engages the carrier, takes body position and seals — pin the puck, not the player. Keep the puck the thing you are going for
+Action: First man in engages the carrier, takes body position and seals — pin the puck, not the player; where checking is barred, no lean or push, and under CARHA avert contact. Go for the puck
 Rule: In women's hockey the puck has to stay the object of the contact — IIHF 101.1, a women's-hockey rule, allows pushing and leaning only while "possession of the puck" remains "the sole object" of the two players
 Never: Make the player, not the puck, the object — where checking is barred, USA Hockey 604 Note 1 makes intentional overt hip, shoulder, forearm or torso contact an illegal check, even going for the puck
 Rule: The seal has a limit in a checking league too — USA Hockey 622's Note makes it holding to wrap "one or both arms around the opponent along the boards in a manner that pins them", a minor under 622(a), in a rule carrying no category qualifier at all

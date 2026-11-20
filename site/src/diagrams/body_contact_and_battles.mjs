@@ -654,7 +654,15 @@ const cornerEscapeRoutes = {
     // defenceman — "Under a low zone collapse, the low corner belongs to the strong-side
     // defenceman with the centre supporting". The caption says that is a coaching choice, in
     // the section's own words, rather than letting the triangle assert it.
-    { id: 'D', pos: 'D', at: C_D_FROM, label: 'takes the middle away' },
+    // labelHint (W556, 20 Nov 2026): the auto-placed slot put the words at (61, 8.3), straight
+    // across the bottom arc of the faceoff circle (check_label_paint: "crosses a painted circle").
+    // The label is 21 characters, ~33 ft wide at this size, so no slot beside the defenceman clears
+    // both the circle and the blue line; [0, -17] parks it at (61, 1), in the open band of the slot
+    // between the two end-zone circles (their arcs at y +/-7, hash ticks ending at |y| 5), which is
+    // also the middle the label names. Tried with [0,-16], [-19,-6], [-20,-8], [-18,-8]: all passed
+    // the placer and check_label_paint, but the side-of-D slots sit within ~0.1 ft of the blue line's
+    // ink once the tool's box inset is removed.
+    { id: 'D', pos: 'D', at: C_D_FROM, label: 'takes the middle away', labelHint: [0, -17] },
 
     { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },
   ],

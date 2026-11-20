@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W555 shipped with record `w555_bar_interference_push_latitude_and_arrival_advisories_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W556 and W557 shipped with record `w557_box_out_no_check_scope_and_label_paint_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -23,9 +23,9 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
-- **From W553 (20 Nov):**
-  - **(2) Optional: winger :104/:124 "hold the position you already have".** A safety reviewer found no exposure, but "hold it and never push back" would close the remaining gap.
-  - **(3) A wider sweep for Hockey Canada grants with no "8.1".** Look for blocking or standing-your-ground grants worded without "8.1", "arm block" or "strength move".
+- **From W553/W557 (20 Nov):**
+  - **(4) Box-out and seal grants outside the five W557 files.** The W556 census covered all files lexically. A grant with no contact verb ("win the inside", "own the doorstep", "make them go through you") was not found. Diagram captions were not swept (`check_caption_hosts --rule-like`).
+  - **(5) Optional: winger :869 could add "— under CARHA, avert contact".** goaltender facts :1373 could carry body :1388's no-check price if room frees (199/200).
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
   - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
   - **(4) Four facts lines still say "IIHF and Hockey Canada off the head"** (forechecking :320, :701, :750, :980). None had room to split. The head-only form errs harsh for the IIHF; that is acceptable, so split only if a block is next edited.
@@ -327,7 +327,11 @@ These questions sit inside the rows above and need the owner's call before anyon
     - [c] tests the plain curve, not the drawn wave or zigzag, uses one glyph radius, and never tests a route's own target.
     - The summary line's "in scope" count does not show [c]'s 16 extra routes.
     - [defender-holding-the-line puck closed in W551: kept on purpose. It sits clear of the passer's glyph, and the route aims at the lane, not the puck.]
-  - Pre-existing: corner-escape-routes' auto-placed "'takes the middle away'" label crosses a painted circle.
+  - [W556 closed the corner-escape-routes "takes the middle away" label: labelHint [0, −17] puts it in the slot.]
+  - **corner-escape-routes "two ways out" (A1) label.** It sits on the faceoff dot at (69, 22), and its right end runs 0.92 ft past the circle arc.
+    - 736 hint positions were tried; none the placer accepts clears both, because of the ownership rule.
+    - Options: shorten the label (e.g. "two exits", but that loses its echo of the caption); let a spec force a position in rink.mjs; or accept it.
+  - [check_label_paint blind spots closed in W556: the inset is capped at half a character, and filled dots are tested. 446 → 467 hits, 12 of them dots. The white halo is still not counted.]
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.
 - **Owner decisions of 14 Nov, what is left (records reviews/w334_owner_decisions_c_d_f_2026-11-14.md, w335…, w337…):** (a) Decision F: the owner has not said whether it also reaches the other Key focus and Overview units that carry a per-book price list. These are rules_primer Overview (discipline after an ejection, and the IIHF vs NHL 20.4 lists), body_contact_and_battles Overview ("A hit from behind has no bare minor in any book here…"), uk_rules Overview and special_teams Overview. (b) A W334 safety advisory says body_contact_and_battles Key focus has no "never contact the head" (it lives in the Overview). Adding it is a quality-bar call for the owner. (c) The owner has not recorded acceptance of decision D, which shipped as a multi-sentence per-book passage ("Keep your skates off a player who is down…") rather than one sentence.

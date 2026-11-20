@@ -101,7 +101,8 @@ Priority: Defend the middle before the outside — it tells you which chance to 
 Position: Stay on the defensive side of the puck — between your man, or your area, and your own net
 Key: Somebody must always have the goalmouth — the doorstep, not the slot; the person changes, the requirement never does. Never both defencemen on the puck without knowing who has taken it
 Technique: Sticks flat in the passing lanes — when you cannot reach the puck you can almost always reach the lane
-Action: Box out at the net front, inside shoulder ahead. As the puck arrives, lift their stick low on the shaft, well below the bottom hand, then let go. Never sideways or into their head; never cross-check
+Action: Box out at the net front, inside shoulder ahead, no lean or push. As the puck arrives, lift their stick low, well below the bottom hand, then let go. Never sideways or into the head; never cross-check
+Rule: A box-out is a held spot, never a push — Hockey Canada 7.3(a) gives a minor for a bump, shove or push where checking is barred (Interpretation 1 allows closing off ice without contact); CARHA 49(a) penalises not averting body contact, though accidental contact is no penalty (49(c))
 Never: Walk a screener off their spot — that can be called interference wherever you play, and where checking is barred an illegal check as well
 Never: Shove an attacker into your own goalie — it can be called interference in every book, and the attacker arrives backwards onto a goalie who is down, square to the shot and unable to see them coming
 Action: Talk, and talk early — "I've got the corner", "you have the net", "switch", "back door"
@@ -133,7 +134,7 @@ Not "the slot" — the doorstep. The player who is going to score is the one sta
 An active stick lying flat in a lane takes away a pass without committing your body — which means you can still get to the next thing. A stick held off the ice or waving at hip height does nothing. When you cannot reach the puck, you can almost always reach the *lane*.
 
 **6. Box out at the net front.**
-Get there first: your inside shoulder ahead of theirs, your body between them and the puck. As the puck arrives, lift their stick — ⚠️ **never cross-check their back**: no book here caps it at two minutes, and a major ends your game in all six. **Take it up rather than sideways, low on the shaft, well below the bottom hand, then let go — stopping at their stick rather than driving on into their head.** **Keep their skates on the ice** — a player whose edges are gone cannot brace, or choose what meets the post first. Full technique in [Defender](../positions/defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md). What [the cross-check](#the-cross-check) costs comes later, in What it costs.
+Get there first: your inside shoulder ahead of theirs, your body between them and the puck — and hold it, no lean and no push; under CARHA, avert contact rather than take it. As the puck arrives, lift their stick — ⚠️ **never cross-check their back**: no book here caps it at two minutes, and a major ends your game in all six. **Take it up rather than sideways, low on the shaft, well below the bottom hand, then let go — stopping at their stick rather than driving on into their head.** **Keep their skates on the ice** — a player whose edges are gone cannot brace, or choose what meets the post first. Full technique in [Defender](../positions/defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md). What [the cross-check](#the-cross-check) costs comes later, in What it costs.
 
 **Screening your own goalie is your problem, not the referee's.** An attacker standing outside the crease in your goalie's sightline, without touching them, is normally doing something legal, and the referee will not move them for you. Take the sightline back with your body. ⚠️ **Never walk the screener off their spot** — that can be called interference wherever you play, and where checking is barred an illegal check as well. What [moving a screener off their spot](#moving-a-screener-off-their-spot) costs comes later, in What it costs.
 
@@ -156,7 +157,7 @@ The idea: you defend **space**, not people. Each of the five of you owns an area
 
 ```facts
 Convention: Under low zone collapse, the strong-side defenceman is on the puck in the corner or behind the net — pressure and pin the puck, or angle them away from the net. Pin the puck, not the player
-Convention: The weak-side defenceman owns the goalmouth and boxes out — do not get drawn to the puck
+Convention: The weak-side defenceman owns the goalmouth and boxes out, no lean, no push — do not get drawn to the puck
 Convention: The centre is the second body into the strong-side corner battle — two on one wins it
 Convention: The strong-side winger stays high on the strong-side point, between that defenceman and the net
 Convention: The weak-side winger covers the weak-side point and collapses into the high slot when the centre goes low
@@ -170,7 +171,7 @@ Rule: USA Hockey 620(b) must give at least a major and game misconduct for carel
 | Player | Where | Job |
 |---|---|---|
 | **Strong-side defenceman** | On the puck — corner or behind the net | Pressure and pin the *puck*, or angle them away from the net (see the note that follows) |
-| **Weak-side defenceman** | Goalmouth | Own the doorstep. Box out. Do *not* get drawn to the puck |
+| **Weak-side defenceman** | Goalmouth | Own the doorstep. Box out — no lean, no push. Do *not* get drawn to the puck |
 | **Centre** | Low support, strong side | Second body into the corner battle — two on one wins it; the high slot is theirs whenever they are not down here |
 | **Strong-side winger** | High, on the strong-side point | Between that defenceman and the net; block the shot with your head up and out of the lane |
 | **Weak-side winger** | High, on the weak-side point — collapsing into the high slot when the centre goes low | Cover the point *and* the middle, in that order of movement |

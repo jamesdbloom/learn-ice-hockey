@@ -729,7 +729,7 @@ Two legitimate ways to defend the line, and this is a genuine trade-off rather t
 **In short:** Stand up at the line to deny the entry when the read is right, and take the ice, not the man.
 
 ```facts
-Position: Hold your ground at or just inside the blue line and challenge the carrier as they try to enter
+Position: Hold your ground at or just inside the blue line and challenge the carrier with your stick and position
 Goal: Deny the zone entirely — the attack has to dump the puck in or turn back, and neither produces a chance
 Rule: Both skates must cross the line after the puck under NHL, IIHF and PWHL rules (PWHL 85.1 prints the NHL’s plane test); USA Hockey 630(a) needs skate contact with the neutral zone or the blue line, Hockey Canada 6.11 only skates touching the ice, and CARHA 72(c) never defines "own side" either way
 Risk: A miss leaves only your partner and goalie back — your partner is left in a 2-on-1 or worse
