@@ -430,7 +430,7 @@ You will spend a career trying to intercept passes and mostly failing, because p
 Never: Lunge at the passing lane — passes are fast and you are guessing
 Action: Arrive as the puck does, on the receiver with your stick in their receiving lane or on their blade as the puck lands — a press, not a chop
 Priority: Defend the receiver's next action, not the pass. Take away their forward option and the pass gained them nothing
-Goal: The result of an interception without having to guess right, and without being out of position when you are wrong
+Goal: Denying the reception gets the result of an interception without having to guess right, and without being out of position when you are wrong
 Key: A receiver forced to catch a puck while being closed on loses their scan — a whole second of blindness you created without touching anybody
 ```
 

@@ -167,7 +167,7 @@ Your job starts before you touch it:
 **In short:** Be your partner's outlet, usually opposite the net; make the calls; screen only where your book allows, planted early and never drifting across.
 
 ```facts
-Position: Usually the opposite side of the net from your partner, level with or slightly above the goal line, so a pass behind the net reaches you cleanly
+Position: As the support defenceman, usually the opposite side of the net from your partner, level with or slightly above the goal line, so a pass behind the net reaches you cleanly
 Action: Be an option, not a spectator. Be the second wave, because if the first option fails the puck comes back to you
 Key: You are usually the one who makes the call — "up", "over", "wheel", "reverse", "rim", "time", "man on" — because you can see the forecheck arriving behind your partner; say "time" only when sure
 Never: Slide into a forechecker's path. Get to the net front early and stand still, and only where your book allows the screen
@@ -231,7 +231,7 @@ The far winger. What you do here is genuinely system-dependent:
 Low support, underneath the puck. This is the pivot the whole structure turns on.
 
 ```facts
-Position: Low support, underneath the puck — the pivot the whole structure turns on
+Position: The centre is low support, underneath the puck — the pivot the whole structure turns on
 Convention: The five-role structure is itself a coaching choice — the conventional swing breakout, and the one assumed throughout this document
 Options: The centre fly — the centre leaves the zone early up the middle to stretch the ice, and the weak-side winger drops in to take the low support job instead
 Options: Flat or spread breakouts — both wingers hold higher near the blue line and the exit is made with longer passes rather than short support
@@ -263,7 +263,7 @@ Position: D1 below the goal line or on the wall, the winger on the boards betwee
 Read: The forecheck has committed behind the net or to the middle, leaving the wall lane open — or F1 is arriving fast on the wrong side, so pass before F1 can influence the lane
 Technique: Pass firmly and to the winger's stick, not to the boards behind them. Head up first, and aim where the winger will be, not where they were
 Risk: The wall pass travels the lane a forecheck posts its wall-sealer in — F2 in a 2-1-2 — so intercepted at the hash marks it is a scoring chance from the top of the circle
-Countered by: Any forecheck with a designated wall-sealer — F2 in a 2-1-2, the strong-side half-wall player in a 1-2-2 — or a weak-side defenceman stepping down on the winger the instant the pass leaves
+Countered by: Any forecheck with a wall-sealer posted for the up pass — F2 in a 2-1-2, the strong-side half-wall player in a 1-2-2 — or a weak-side defenceman stepping down on the winger the instant the pass leaves
 ```
 
 ![](diagram:breakout-up)
@@ -291,7 +291,7 @@ Rule: Hockey Canada 8.3 and CARHA 66(a) bar the side with the puck from running 
 Rule: Sliding into the forechecker's path is an interference minor (NHL 56.2) — not capped: 56.4 a major on violence, 56.5 a game misconduct where that major injures, IIHF 56.5 a major plus game misconduct on reckless endangerment
 Rule: USA Hockey splits from both — 625(a.1) makes "[p]roviding a protective screen and limiting the opportunity for an opposing player to apply pressure to a teammate in possession or control of the puck" a minor, and on a wheel your partner has the puck
 Rule: A pick that injures is a mandatory major plus a game misconduct in two books: Hockey Canada 8.3(b), and CARHA 66(e) a mandatory major, with 30(a)'s game misconduct
-Countered by: A second forechecker holding the far side — precisely what F2 does in a 2-1-2 — or a forechecker who takes the back-door route around the net rather than chasing you
+Countered by: A second forechecker holding the far side — precisely what F2 does in a 2-1-2 — or a forechecker who takes the back-door route around the net rather than chasing your wheel
 ```
 
 The defenceman carries the puck themselves, skating behind the net and up the far side.
@@ -373,7 +373,7 @@ Never: Stay facing the wall on a rim with your back to anyone coming at you, and
 Risk: A rim concedes possession more often than any other option except an outright clear — a 50-50 dressed as a play; that full ranking is coaching judgement rather than a tracked rate
 Key: One tracking study compares rim against a direct up pass by name and finds rims less efficient — 38% neutral-zone possession against 53%, 0.54 expected goals against 0.68, per 100 possessions
 Key: The rim-against-up figures carry limits — KHL data, successful passes only, and one column runs the other way: rims produced slightly fewer dump-outs than ups, 14.4 per 100 possessions against 15.6
-Countered by: The play a defenceman sealed on the boards is most expected to make — coaching emphasis, not a counted ranking; any forecheck can post a player at the far wall, and good ones pre-position
+Countered by: Predictability — a defenceman sealed on the boards is most expected to rim it — coaching emphasis, not a counted ranking; any forecheck can post a player at the far wall, and good ones pre-position
 Rule: In a CARHA league rim it with a short backswing — its Rule 79(a) makes a backswing past fifteen inches a slap shot: a minor, and a major if it injures an opponent, which 30(a) pairs with a game misconduct
 ```
 
@@ -403,7 +403,7 @@ Read: Only when the forecheck has genuinely over-loaded one side and the middle 
 Technique: Firm and flat — a cross-ice pass that has to be handled at the receiver's feet has taken so long that the play is over
 Risk: The puck travels laterally in front of your own net at the height of the opposing forwards — intercepted, it is picked off in the middle facing your goal
 Priority: Where the behind-the-net D-to-D route exists, take it instead — it achieves a similar side-switch with essentially no downside
-Countered by: Any forecheck with a middle presence — the three-across middle of a 1-3-1, F3 in a 2-1-2 — and it is defeated by the shape existing at all, not by anyone reacting to it
+Countered by: Any forecheck with a middle presence — the three-across middle of a 1-3-1, F3 in a 2-1-2 — and the cross-ice pass is defeated by the shape existing at all, not by anyone reacting to it
 ```
 
 The word "over" is used for two completely different plays with completely different risk profiles:
@@ -431,7 +431,7 @@ Position: Your team has just won the puck — a blocked shot, a stripped puck at
 Read: Not really a called play but a recognised moment — the two or three seconds immediately after a turnover are the least organised the opposition will ever be
 Technique: First look up ice, not down. Move the puck on the first touch if you can — speed of decision matters more than quality of pass here
 Risk: The habit version is the real risk — playing quick-up when the moment isn't there, forcing a pass into a formed defence
-Countered by: Counter-pressing — teams that re-attack the puck within a couple of seconds of losing it shorten the fuse rather than removing the play
+Countered by: Counter-pressing — teams that re-attack the puck within a couple of seconds of losing it shorten the fuse rather than removing the quick-up
 ```
 
 - **Setup:** Your team has just won the puck — a blocked shot, a stripped puck at the blue line, a rebound your goalie has left. The opposition still has bodies below the puck and their structure is nowhere.
@@ -489,7 +489,7 @@ Rule: For a skater, USA Hockey, Hockey Canada and CARHA write no defending-zone 
 Rule: A deliberate flip out of play is a minor from anywhere — NHL 63.2(ii), IIHF 63.2(II), PWHL 65.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b). A goalie's stick clear under HC 10.1(v) or CARHA 55(a) has no intent word or zone limit: expect a minor unless it touches glass or a player
 Key: A clear that hits the glass and stays in the rink is fine, and so is a puck deflected out of play by accident
 Key: Glass clears rarely get intercepted and rarely ice, because they slow the puck and keep it wide — which is why the play is called "off the glass", not "over the glass"
-Countered by: A defenceman holding the offensive blue line and stopping the puck getting out — a different play from a pinch, which is stepping down from the line into the zone
+Countered by: A defenceman holding the offensive blue line and stopping a glass clear getting out — a different play from a pinch, which is stepping down from the line into the zone
 ```
 
 No possession, no goal against. Always available and never wrong when you're in trouble.
@@ -544,7 +544,7 @@ You are not. You are **uncoverable but useless**, for three connected reasons:
 The default landmark is **on the wall, between the hash marks and the goal line, on the strong side** — low enough that the pass from behind or beside the net is short and safe, high enough that you're moving up ice when you get it.
 
 ```facts
-Position: By default, on the wall, between the hash marks and the goal line, on the strong side — low enough that the pass is short and safe, high enough that you are moving up ice when you get it
+Position: As a winger, by default on the strong-side wall between the hash marks and the goal line — low enough that the pass is short and safe, high enough that you are moving up ice when you get it
 Key: The wall spot is where you arrive, not where you have been standing
 Action: Under this guide's standard low zone collapse you spend the defensive shift high, level with the opposing point man, and come down the wall to this spot as your team wins the puck
 Never: Sit above the hash marks once the breakout is under way, under the conventional swing breakout — it makes the pass longer, flatter and more interceptable, and the pass comes into your back

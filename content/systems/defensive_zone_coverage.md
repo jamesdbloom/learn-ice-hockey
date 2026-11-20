@@ -233,11 +233,11 @@ There is one situation where the collapse isn't available: if the **weak-side op
 If your team plays low zone collapse, **stand in your area and let them cycle**: the middle stays full because of where you stand, not because you read the play well, and a cycle along the wall spends their energy on the wall instead of in the house, where the high-danger chances come from. When you win the puck, your two high wingers are already there as outlets.
 
 ```facts
-Goal: Protect the middle by construction — you don't have to make good reads for the house to be full
+Goal: Low zone collapse protects the middle by construction — you don't have to make good reads for the house to be full
 Key: The easiest system to learn, because the areas are fixed even when the play is chaotic
 Action: Let them cycle — grinding the wall and behind the net spends their energy outside the house while you hold it
 Mindset: Area coverage doesn't ask a tired player or a mismatched winger to win a footrace
-Position: Both wingers are already high — two outlets the moment you win the puck
+Position: In a low zone collapse both wingers are already high — two outlets the moment you win the puck
 ```
 
 - **Low zone collapse protects the middle by construction.** You don't have to make good reads for the house to be full; standing in the right place does most of the work.
@@ -252,8 +252,8 @@ Playing low zone collapse, you accept point shots with a stick in the lane, but 
 
 ```facts
 Key: The walk-down, not the point shot, is the system's actual weakness — every collapse team needs an explicit answer to it
-Countered by: The opposing defenceman skating down into the top of the circle, roughly halving their distance to the net while a winger guards an area rather than a man
-Countered by: The seam between areas — skilled attackers stand where each defender assumes the other has them
+Countered by: The opposing defenceman skating down into the top of the circle, roughly halving their distance to the net while the collapse has a winger guarding an area rather than a man
+Countered by: The seam between zone-coverage areas — skilled attackers stand where each defender assumes the other has them
 Risk: Point shots, conceded on purpose — the bargain gets worse against a defenceman with a genuine shot
 Risk: Extended possession — you are waiting for a mistake, and against a patient team that means tired legs
 ```
@@ -292,7 +292,7 @@ In man-on-man, **stay within a stick length of your man** by position and stick 
 ```facts
 Key: Nobody is ever unmarked — the seam problem zone coverage has simply doesn't exist
 Goal: Generate turnovers — pressure everywhere means bad passes everywhere; zone coverage waits, man-on-man takes
-Countered by: Nothing a cycle can do — if you are glued to a man, moving the puck to someone who beat an area creates nothing
+Countered by: Nothing a cycle can do against man-on-man — if you are glued to a man, moving the puck to someone who beat an area creates nothing
 Options: Match up — your best defensive forward can be put on their best player, all shift
 Mindset: "They're yours" is the easiest instruction in hockey to understand, though not to execute
 ```
@@ -308,7 +308,7 @@ Mindset: "They're yours" is the easiest instruction in hockey to understand, tho
 In man-on-man coverage, never follow your check into harmless ice — a corner where they never meant to get the puck — while their teammate walks into the slot you vacated. Know what it costs: one pick the referee lets go, one lost footrace or one beaten player, and an attacker is free with nobody near.
 
 ```facts
-Countered by: Picks and screens — one collision the referee lets go and your man is gone with a two-stride head start
+Countered by: Picks and screens against man-on-man — one collision the referee lets go and your man is gone with a two-stride head start
 Risk: Mismatches — a winger in a footrace with a mobile defenceman has no help behind them
 Risk: One beaten player leaves an attacker with the puck and nobody within twenty feet; every breakdown is immediately a high-danger chance
 Risk: Man-on-man is exhausting — a full shift at your opponent's chosen pace, in your own zone
@@ -336,7 +336,7 @@ Convention: Man-on-man below the dots, zone above them — some teams say the ha
 Convention: The two defencemen and the low forward, usually the centre, go man-on-man on the three attacking forwards: one on the carrier, one on the net front, one on the low support
 Convention: The wingers play the points by area — but when your point man crosses the line and comes down, they become yours and you go with them
 Convention: Below the goal line the low three stay locked on their men; when the puck comes back to the point, everyone releases and reverts to areas
-Goal: Remove the walk-down and the unmarked net front while keeping the wingers high enough to break out
+Goal: The hybrid removes the walk-down and the unmarked net front while keeping the wingers high enough to break out
 Risk: Two players on different sides of "are they below the dots yet?" is exactly the disagreement that produces a goal against
 Options: "Man on the puck, zone off the puck" is the same family — man on the carrier anywhere, area coverage away from it
 ```
@@ -371,7 +371,7 @@ Convention: Four players form a box around the slot — two low near the posts, 
 Convention: The "+1" is the only player who chases the puck; when the puck moves, the role passes to whoever is nearest and the box rotates one position to fill the space
 Convention: Coaching material has Box+1 the standard introductory structure for young players and beginner adults — passive, forgiving of mistakes, and a simple picture of where to stand; nobody publishes a count of what teams run
 Key: Not a penalty-kill box — that is four players, two high and two low; Box+1 is a five-player even-strength shape
-Countered by: A good puck-moving team — one chaser cannot pressure them, so they hold the puck and pick their moment
+Countered by: A good puck-moving team — Box+1's one chaser cannot pressure them, so they hold the puck and pick their moment
 ```
 
 ![](diagram:dz-box-plus-one)

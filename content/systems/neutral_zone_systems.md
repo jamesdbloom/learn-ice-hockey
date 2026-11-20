@@ -134,7 +134,7 @@ Position: F1 pressures near their goal line or hash marks, F2 and F3 sit across 
 Goal: F1 takes the middle away and forces the carrier to one side — the turnover is a bonus, dictating the side is the job
 Action: F2 steps up to play the puck as it reaches the strong-side winger — the puck, not the player; F3 holds the middle and weak side; D2 stays home as the safety valve
 Risk: D1 stepping up on the wall is the decision with the least cover behind it — if D1 is beaten, only D2 stands between the puck and your net
-Countered by: Quick D-to-D behind the net to change the side, a middle-lane forward supporting low under F2 and F3, and simple patience
+Countered by: Quick D-to-D behind the net to change the side the 1-2-2 is forcing, a middle-lane forward supporting low under F2 and F3, and simple patience
 Convention: Coaching material calls the 1-2-2 the most widely played neutral zone structure, but nobody publishes a count — consensus, not a verified fact
 ```
 
@@ -161,10 +161,10 @@ Convention: Coaching material calls the 1-2-2 the most widely played neutral zon
 
 ```facts
 Position: A 1-2-2 with the layers dropped back — F1 high and splitting the ice, F2 and F3 at or just inside the red line, the defence on your own blue line
-Goal: Do not stop the attack. Funnel it to a wall and kill it at the red line, with their forwards ahead of the puck and behind the play
+Goal: The trap aims to funnel the attack to a wall and kill it at the red line rather than stop it, with their forwards ahead of the puck and behind the play
 Read: Layers up near their blue line with F1 actually closing is containment; layers back at the red line with F1 gliding is a trap
 Convention: The pure passive trap is no longer a viable full-time system at high levels — it survives as a situational tool and as DNA inside newer structures
-Countered by: Quick puck movement, the boards, the stretch pass behind the wall, and a willingness to dump it in rather than force a low-percentage entry
+Countered by: Quick puck movement, the boards, the stretch pass behind the trap's wall, and a willingness to dump it in rather than force a low-percentage entry
 ```
 
 **What makes it a trap rather than containment.** The trap is a 1-2-2 with the layers dropped back and the intent changed. F1 sits high, at or near their blue line, still splitting the ice. **The whole structure retreats to defend the centre red line rather than their blue line.** F2 and F3 sit at or just inside the red line on the walls, and the defence holds **your own** blue line.
@@ -205,9 +205,9 @@ Position: F1 pressures, three players stand spread in a line across the ice, one
 Convention: Conventionally F2 and F3 on the walls with a defenceman in the middle — but never three forwards across, because F1 is already one of your three
 Key: A 1-3-1 does not try to take the puck from you — it offers you the puck on terms you will not like
 Action: The three across hold their lanes and slide as a unit; their job is not to attack the puck but to leave no lane through them
-Goal: Deny the middle lane and almost never concede an odd-man rush — the back defenceman stays uncommitted and retrieves every dumped puck
+Goal: The 1-3-1 denies the middle lane and almost never concedes an odd-man rush — the back defenceman stays uncommitted and retrieves every dumped puck
 Risk: One of the three leaving their lane opens a seam instantly, and the single back defenceman cannot cover two lanes
-Countered by: Getting behind the flat wall with a stretch pass, chip-and-chase past it, or quick lateral movement — a sliding wall has gaps
+Countered by: Getting behind the 1-3-1's flat wall with a stretch pass, chip-and-chase past it, or quick lateral movement — a sliding wall has gaps
 ```
 
 **The shape.** F1 pressures. **Three players stand spread across the ice in a line** — conventionally **F2 and F3 on the walls with a defenceman in the middle**, and the middle man decides which way the line slides. One defenceman sits behind them as the last man. (Some coaches put a forward in the middle and a defenceman on a wall; never three forwards across, because F1 is already one of your three.)
@@ -236,7 +236,7 @@ Position: Two forwards are gone hunting the puck in their end, leaving F3 as the
 Action: F3 holds the middle, level with or slightly ahead of the puck, and does not drift to a wall — the pass that hurts you comes up the middle
 Action: The strong-side defenceman steps up hard on a pass to the wall — hard on the gap, not into a hit; the weak-side defenceman stays home as your only genuine safety
 Key: Where the defencemen stand depends on the phase — up at the offensive blue line while the forecheck is live, back toward your own blue line once the puck is out
-Goal: The only approach here that reliably takes the puck back rather than waiting for a mistake — the right choice when you are chasing a goal
+Goal: Of the neutral-zone structures, pressure is the one built to take the puck back rather than wait for a mistake — the right choice when you are chasing a goal
 Risk: One pass past the two forecheckers leaves F3 alone against three with your defence stepping up — that is how a 3-on-2 becomes a 3-on-1
 Countered by: A crisp first pass past the two pressuring forwards, a reverse or rim behind an over-committed F1, and the stretch pass
 ```
@@ -254,7 +254,7 @@ The aggressive option is not really a neutral-zone structure. It is what the mid
 - **The strong-side defenceman** steps up hard on a pass to the wall. That aggressive gap makes the system work, and it has the least cover behind it — the weak-side defenceman is the only safety left. ⚠️ **"Hard" is about the gap, not the contact.** Close the space fast; speed built into a hit is charging — see [Gap control as a team concept](#gap-control-as-a-team-concept).
 - **The weak-side defenceman stays home** — with two forwards deep, the only real safety you have.
 
-**Strengths.** It is the only approach here that reliably *takes* the puck back rather than waiting for a mistake. It tires defences that cannot handle pressure, and it is the right choice when you are chasing a goal.
+**Strengths.** It is the approach here built to *take* the puck back rather than wait for a mistake. It tires defences that cannot handle pressure, and it is the right choice when you are chasing a goal.
 
 **Weaknesses.** One pass past the two forecheckers leaves F3 alone against three, with your defence stepping up into them — that is how a 3-on-2 becomes a 3-on-1. It takes enormous fitness; nobody pressures like this for 60 minutes. And a team with a good breakout and one skilled defenceman punishes it badly.
 
@@ -269,7 +269,7 @@ Position: One forechecker and four skaters in a flat line across your own blue l
 Read: Use the 1-4 protecting a lead in the last minute or two, killing time with an exhausted stranded unit, or defending a 6-on-5 against a pulled goalie
 Goal: Let almost nothing through — controlled entries against a disciplined 1-4 are close to impossible and odd-man rushes almost never happen
 Risk: The 1-4 concedes the whole neutral zone and generates no offence, so you spend the shift in your own end and clearing becomes dumping
-Countered by: A hard chip past the flat line and a race for it — nobody in a flat line is deeper than anybody else; if the goalie comes out for it, pull up
+Countered by: A hard chip past the 1-4's flat line and a race for it — nobody in a flat line is deeper than anybody else; if the goalie comes out for it, pull up
 Never: Play the 1-4 as your default — some youth teams do and should not
 ```
 
@@ -289,7 +289,7 @@ Never: Play the 1-4 as your default — some youth teams do and should not
 
 ```facts
 Position: Two forwards forecheck aggressively in their end; the moment possession is lost the left wing drops into line with the two defencemen
-Goal: Forecheck without paying the odd-man price — three across the back, each responsible for roughly a third of the width of the ice
+Goal: The left-wing lock forechecks without paying the odd-man price — three across the back, each responsible for roughly a third of the width of the ice
 Convention: Conventionally the centre and right wing forecheck, steering the puck to the opponent's right side — a coaching choice, not a law
 Risk: The lock takes one player out of the counterattack and asks them to do a job most wingers are not trained for — costly if they are your best attacker
 Read: A left wing who reads transitions early makes it work; one who reacts late gives you the worst of both systems
@@ -420,10 +420,10 @@ At your own blue line you have two broad options, and they are a genuine trade-o
 
 ```facts
 Action: Meet the attacker at or just inside your blue line, refuse to give ground, and force a dump, a pass or a turnover
-Goal: Turn carries into dump-ins, keep the play 60 feet from your net rather than 20, and let your forwards recover
-Read: Right when you have backpressure, when the attacker is wide rather than in the middle, or when they are already fighting the puck
+Goal: Standing up at the line aims to turn carries into dump-ins, keep the play 60 feet from your net rather than 20, and let your forwards recover
+Read: Standing up is right when you have backpressure, when the attacker is wide rather than in the middle, or when they are already fighting the puck
 Risk: Beaten standing up is beaten completely — your feet are stopped, theirs are not, and you have surrendered the middle
-Countered by: The chip-and-chase — the attacker puts the puck past your hip and runs around you; stopped feet cannot win that race, so go for the puck, never into them
+Countered by: The chip-and-chase — the attacker puts the puck past your hip as you stand up and runs around you; stopped feet cannot win that race, so go for the puck, never into them
 Never: Meet the attacker by building speed into a hit — standing up is refusing ground with your feet, and a head-down carrier tells you only that they cannot change direction
 Rule: A stand-up finished as a hit can be called charging in every division — USA Hockey's Casebook rules the head-down case charging (607, Situation 2), and a check accelerated through without the two-stride run-up too (Situation 3) — and no rulebook here caps charging at a minor
 Rule: Charging a player "unable to defend themselves" is a mandatory match under Hockey Canada 7.4(c), as a charge meant to injure is under CARHA 48(a), NHL and PWHL 21.1 and USA Hockey 602(a), USA Hockey with a likely multi-game ban; the IIHF has no match: plan on a major and game misconduct (42.4)
@@ -448,12 +448,12 @@ Rule: A USA Hockey charge is a major and game misconduct if reckless (607(b)) or
 
 ```facts
 Action: Skate backwards matching their speed, keeping the attacker in front of you and never giving up the middle or your body position
-Goal: Funnel the attacker outside where the shot is low-percentage — you cannot be beaten wide by pure speed
-Read: Right when you have no backpressure, when the attacker has a clear speed advantage, on a 2-on-1 or worse, or when a mistake is a breakaway
+Goal: Backing off aims to funnel the attacker outside where the shot is low-percentage, so pure speed alone should not beat you wide
+Read: Backing off is right when you have no backpressure, when the attacker has a clear speed advantage, on a 2-on-1 or worse, or when a mistake is a breakaway
 Risk: You concede the entry — they come in with speed and possession and you defend with your feet moving toward your own net
 ```
 
-**Why backing off works.** You cannot be beaten wide by pure speed, and you funnel the attacker outside, where the shot is low-percentage. It is very hard to make a catastrophic error doing it.
+**Why backing off works.** Pure speed alone should not beat you wide, and you funnel the attacker outside, where the shot is low-percentage. It is very hard to make a catastrophic error doing it.
 
 **What backing off risks.** You concede the entry. They come in with speed and possession, and you defend with your feet moving toward your own net — exactly what they wanted.
 

@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W580 and W581 shipped with record `w581_summary_subjects_and_subjectless_facts_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W582 and W583 shipped with record `w583_system_profile_names_and_fight_slang_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -94,15 +94,15 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(5) Phone-width check of the two rebuilt zone_entries diagrams** (entry-high-triangle, defend-squash-and-slide). Their label margins are 0.3–1 ft; check at 400 px when Chrome connects.
 - **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519; 6 and 7 in W521):**
   - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
-  - **(3) [Facts layer closed in W579: 146 Tier 1/2 rows applied across 24 files (census `scratchpad/w518_3/defects.tsv`).]** Still open:
+  - **(3) [Facts layer closed in W579: 146 Tier 1/2 rows applied across 24 files (census `../reviews/w579_facts_subject_rows_2026-11-20.tsv`).]** Still open:
     - 64 Tier 3 facts rows, where they/them means the section's one opponent (low value).
     - 1,037 non-facts `--loose` hits, not triaged.
     - [Subjectless facts lines at special_teams :176/:177, zone_entries :591/:632–:634/:693/:709 and forechecking :467: closed in W581.]
     - Pronouns past the six-word window ([dtr :314–:316 closed in W581]).
     - [Summary sections (Key focus, Overview, KT, CM) closed in W581: 15 defects out of 176 hits.]
     - The "it = puck" and "their = opposing team" classes, not tallied.
-    - **25 `Countered by:` facts lines** corpus-wide name the countered system only in the heading. `Position:` and `Goal:` system-profile lines have the same shape (e.g. forechecking :462/:465). This needs its own census (W580).
-    - Near-misses, for a second opinion: team_play :725/:726 "When it goes up…" (a Key Takeaway with an ejection tariff); special_teams :1338.
+    - [The `Countered by:`/`Goal:`/`Position:`/`Targets:` lines were closed in W583: 58 DEFECT rows applied. About 45 OPTIONAL rows remain in `../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`.]
+    - [Near-misses team_play :725/:726 and special_teams :1338 confirmed and in W583.] Not read: `Risk:` (291) and `Options:` (198) lines outside system blocks; the ~45 OPTIONAL system-profile rows (`../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`); homonym collisions (overload, 1-3-1, box, +1).
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518; 2 in W524):**
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.

@@ -305,7 +305,7 @@ The defender's job is to stay between you and the middle of the ice. Their weake
 Read: The defender's weakest moment is the pivot — turning from backwards to forwards, or opening their hips to one side
 Action: Aim at the outside shoulder, the one nearest the boards on your side, with pace and your eyes up
 Read: The moment the defender's hips open outward the inside lane is available — cut back into the middle, slip the puck between their feet, or pass to the middle driver
-Countered by: A defender who refuses to open and stays square — then you have the outside lane for real, so take it and get to the goal line
+Countered by: A defender who stays square and refuses to open when you attack their outside shoulder — then you have the outside lane for real, so take it and get to the goal line
 Key: You are not trying to beat them, you are trying to make them commit
 ```
 
@@ -672,7 +672,7 @@ Fire the puck low and hard around the boards, following the curve of the corner,
 ```facts
 Action: Fire the puck low and hard around the boards, following the curve of the corner, onward in the direction of play; in CARHA leagues keep the backswing under fifteen inches or it is a slap-shot penalty
 Read: Pressure on you from the inside, and a teammate coming down the far wall or the far corner
-Goal: Beat the defenceman stepping up on you and arrive at the far side before their partner can rotate
+Goal: With the hard rim, beat the defenceman stepping up on you and arrive at the far side before their partner can rotate
 Key: A rim is not a reverse — a reverse goes back against the flow, behind you, for a different purpose
 Risk: Too soft and it dies behind the net; too hard and it comes off the far boards to the weak-side defenceman
 ```
@@ -1093,7 +1093,7 @@ Meeting the entry at your own blue line rather than backing in.
 
 ```facts
 Action: Meet the entry at your own blue line rather than backing in
-Goal: Kill controlled entries outright — if they cannot cross with the puck, they cannot get the controlled-entry shot rate
+Goal: Standing up at the line aims to kill controlled entries outright — if they cannot cross with the puck, they cannot get the controlled-entry shot rate
 Risk: If you are beaten you are beaten badly — flat-footed at your own line with a forward behind you and only your goalie left
 Key: Standing up needs good reads, your forwards back, and a partner who slides with you rather than staying deep
 ```

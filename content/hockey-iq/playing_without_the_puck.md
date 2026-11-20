@@ -282,7 +282,7 @@ If a teammate is already pressuring the puck carrier, **do not go and pressure t
 
 ```facts
 Never: Go and pressure a carrier a teammate is already pressuring
-Position: Be the second layer instead — behind and slightly to the side of them, in the space they would be beaten into
+Position: When a teammate is already pressuring the carrier, be the second layer — behind and slightly to the side of your teammate, in the space they would be beaten into
 Key: Puck Support and Spacing has the layering distances
 Convention: Whether you hold the layer is system-dependent — under the low zone collapse used throughout you sink toward the slot and cover areas; in man-to-man you may have to leave the layer to follow your check to the point; a hybrid is man low and zone high
 Action: Ask your coach which coverage you play, and what the trigger is for switching

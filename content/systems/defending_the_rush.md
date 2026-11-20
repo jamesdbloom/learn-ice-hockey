@@ -432,8 +432,8 @@ The number always reads **attackers on defenders** — a 2-on-1 is two attackers
 **In short:** Steer the carrier to a bad angle and let them run out of ice; position first, contact only where your game allows checking.
 
 ```facts
-Goal: A shot from a place your goalie is comfortable with — not a hit and not a turnover
-Action: Steer them to a bad angle with your route, and keep steering them wide
+Goal: In a 1-on-1, a shot from a place your goalie is comfortable with — not a hit and not a turnover
+Action: Steer the carrier to a bad angle with your route, and keep steering them wide
 Position: Stick in the lane, on the ice, out front — passing options are arriving behind the play
 Never: Lunge — it is a single bet on their next move, and if you are wrong they have the whole net
 Action: In a checking league ride them wide along the wall until their options collapse — but a carrier who can see you coming is no less protected, because defenceless is not the whole boarding test
@@ -466,7 +466,7 @@ One attacker, two defenders. The luxury case — and one that teams waste consta
 ```facts
 Never: Both defenders converge on the carrier — that opens the ice behind you for a late second attacker
 Action: One defender takes the puck, normally the one on the carrier's side, and plays it as a 1-on-1 with a very tight gap
-Position: The other stays back and inside, covering the trailer who has not arrived yet
+Position: In a 1-on-2, the defender not taking the puck stays back and inside, covering the trailer who has not arrived yet
 Key: The engaged defender can afford to be aggressive with the gap — a miss leaves your partner in a 1-on-1 rather than nothing
 Rule: Cover behind you is no defence to charging — USA Hockey Casebook 607, Situation 3 calls accelerating through a check charging even without the two fast strides, and Hockey Canada 7.4(ii) needs only two
 Action: Call who engages — "I've got them" from the engaging defender, so the other holds
@@ -614,7 +614,7 @@ Three attackers, one defender. This is a bad situation and pretending otherwise 
 
 ```facts
 Position: Central, on the defensive side of the puck, stick in the most dangerous lane
-Goal: Delay — the objective changes from "stop this" to "make it take longer"
+Goal: Outnumbered 3-on-1, delay — the objective changes from "stop this" to "make it take longer"
 Action: Retreat slowly, stay in the lanes, and force them to make an extra pass
 Never: Commit to one attacker — attacking the carrier turns it into an unopposed 2-on-0
 Priority: Give your goalie the shot from distance and take away the cross-ice options, as on a 2-on-1
@@ -730,10 +730,10 @@ Two legitimate ways to defend the line, and this is a genuine trade-off rather t
 
 ```facts
 Position: Hold your ground at or just inside the blue line and challenge the carrier with your stick and position
-Goal: Deny the zone entirely — the attack has to dump the puck in or turn back, and neither produces a chance
+Goal: Stand up to deny the zone entirely — the attack has to dump the puck in or turn back, and neither produces a chance
 Rule: Both skates must cross the line after the puck under NHL, IIHF and PWHL rules (PWHL 85.1 prints the NHL’s plane test); USA Hockey 630(a) needs skate contact with the neutral zone or the blue line, Hockey Canada 6.11 only skates touching the ice, and CARHA 72(c) never defines "own side" either way
 Risk: A miss leaves only your partner and goalie back — your partner is left in a 2-on-1 or worse
-Countered by: A skilled carrier who chips the puck past you and skates onto it
+Countered by: A skilled carrier who chips the puck past you as you stand up and skates onto it
 Read: Right for slow attacks, a head-down carrier, a carrier already near the boards, forwards clearly tracking back behind the play, and a clogged neutral zone
 Never: Read a head-down carrier as a licence to arrive harder — it tells you they cannot change direction, and nothing more
 Rule: USA Hockey's Casebook rules the head-down case charging in terms (607, Situation 2), and a check accelerated through without the two fast strides (Situation 3); Hockey Canada 7.4(ii) makes two strides the offence where USA Hockey's 607 Note needs more than two
@@ -763,7 +763,7 @@ You give ground, holding your gap, and defend as they enter.
 
 ```facts
 Position: Give ground, holding your gap, and defend them as they enter
-Goal: Nothing gets behind you — the worst case is a controlled entry, not a breakaway
+Goal: Back off so nothing gets behind you — the worst case is a controlled entry, not a breakaway
 Convention: Treated as the default for most defencemen most of the time because it is reliable and repeatable — an impression rather than a measurement
 Risk: Concedes the blue line, so play happens in your end and the shift gets longer
 Never: Back off with a growing gap — a soft retreat gives the attacker speed and the zone, and is worse than either option

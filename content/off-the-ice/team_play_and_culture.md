@@ -39,7 +39,7 @@ Hockey changes players during live play, out of a roster you did not pick. Almos
 
 **The injured-player convention is the one where getting it wrong is permanent.** With a head or neck injury: **call for immediate medical help, do not move them except to keep their airway clear, and leave their helmet on.** Assume a possible spinal injury. Waving at the bench summons your teammates, not an ambulance, and in a rec game nobody trained may be at the rink — so make sure somebody has actually phoned.
 
-**Almost everything else a team expects of you is custom rather than rule** — keep giving a struggling teammate the puck, never show frustration at one, and copy your team's most respected players. Never quote a custom to a referee as though it were a rule. ⚠️ **But the handshake line is priced: keep your helmet on, keep your hands off an opponent's, and if it goes up, back off and let the officials in first.** The section on it below sets out what each book charges.
+**Almost everything else a team expects of you is custom rather than rule** — keep giving a struggling teammate the puck, never show frustration at one, and copy your team's most respected players. Never quote a custom to a referee as though it were a rule. ⚠️ **But the handshake line is priced: keep your helmet on, keep your hands off an opponent's, and if a fight or scuffle starts, back off and let the officials in first.** The section on it below sets out what each book charges.
 
 ---
 
@@ -265,9 +265,9 @@ Most teams have **assigned or habitual stalls**. Common patterns: goalies at the
 
 ### The handshake line
 
-**In short:** Go down the line with your helmet on and fastened, say "good game" and nothing else, and back off if it goes up.
+**In short:** Go down the line with your helmet on and fastened, say "good game" and nothing else, and back off if a fight or scuffle starts.
 
-**What to do:** helmet on and done up properly, gloves and stick left at the bench, shake everyone's hand, say "good game", and keep moving. Say nothing else, and keep your hands to yourself. ⚠️ **If it goes up, back off and let the officials in first**, however obvious it looks that somebody should pull them apart. If you are watching from the bench, stay on it. If you lost badly or there was an incident, this is exactly when doing it well matters.
+**What to do:** helmet on and done up properly, gloves and stick left at the bench, shake everyone's hand, say "good game", and keep moving. Say nothing else, and keep your hands to yourself. ⚠️ **If a fight or scuffle starts, back off and let the officials in first**, however obvious it looks that somebody should pull them apart. If you are watching from the bench, stay on it. If you lost badly or there was an incident, this is exactly when doing it well matters.
 
 **Check your chin strap before you go down the line.** USA Hockey's Casebook says that if more than one finger fits between your jaw and the strap, it is not being properly worn (Rule 615, Situation 19).
 
@@ -471,7 +471,7 @@ Throwing your head back, slapping your stick on the ice, or gesturing at where t
 
 ### The bench that empties
 
-**In short:** When it goes up on the ice, sit down and stay sat down; leaving the bench helps nobody.
+**In short:** When a fight or scuffle breaks out on the ice, sit down and stay sat down; leaving the bench helps nobody.
 
 **A bench that empties is a culture failure before it is a penalty, and it is the version of everything above that ends games rather than shifts.** The instinct is the same one this section has been about, at team scale: a teammate is in trouble, the door is right there, and going through it feels like loyalty.
 
@@ -657,7 +657,7 @@ Coaches are usually bad at giving unsolicited individual feedback, not because t
 - **Visibly easing off when the game is out of hand.** Keep playing properly — roll the lines, drop the hard forecheck, work on passes. Coasting insults them more than a goal does.
 - **Assuming "non-check" means "no contact."** Angle, lean while you both play the puck — never on a player who has passed or shot it — and hold your position, but never step into someone. **Where Hockey Canada bars checking, never lean; in a CARHA league, don't lean or plant yourself in a player's path, and avoid contact you can**; in women's hockey on the IIHF book, never use the boards to push or pin. ⚠️ **In the WNIHL, whose rules label its games *"non-checking"*, play it as no body checking at all.**
 - **Being new and having opinions.** Listen for three weeks. Then have them.
-- **Treating the priced conventions as custom.** Never quote a custom to a referee — but the handshake line is priced. **Keep your helmet on, keep your hands to yourself, say nothing, and if it goes up, back off.** A fight there is a game misconduct or worse in most books and can cost your next game; at a club in England or Wales, plan on at least a one-game ban, and in the Elite League, Scotland or Northern Ireland, plan on the same. Helmet removal can be a USA Hockey match penalty and a likely multi-game suspension. Going in to break up a fight takes a game misconduct under Hockey Canada and CARHA whoever you are, and under USA Hockey if you are the first one in, and can in every book. That can cost your next game too, and does under USA Hockey and Hockey Canada. Post-game abuse is a USA Hockey game misconduct, which also suspends you for your team's next game. After a whistle, don't stand in the opposing crease or flip a puck at the net either.
+- **Treating the priced conventions as custom.** Never quote a custom to a referee — but the handshake line is priced. **Keep your helmet on, keep your hands to yourself, say nothing, and if a fight or scuffle starts, back off.** A fight there is a game misconduct or worse in most books and can cost your next game; at a club in England or Wales, plan on at least a one-game ban, and in the Elite League, Scotland or Northern Ireland, plan on the same. Helmet removal can be a USA Hockey match penalty and a likely multi-game suspension. Going in to break up a fight takes a game misconduct under Hockey Canada and CARHA whoever you are, and under USA Hockey if you are the first one in, and can in every book. That can cost your next game too, and does under USA Hockey and Hockey Canada. Post-game abuse is a USA Hockey game misconduct, which also suspends you for your team's next game. After a whistle, don't stand in the opposing crease or flip a puck at the net either.
 
 ## Check yourself
 
@@ -722,8 +722,8 @@ document, that is named too.*
 8. **Talk.** Between shifts, tell a linemate one specific thing you will do — *"I'm coming low on the breakout"* — never anything evaluative. On the ice, call "man on" early, in your team's words, even when you are not sure.
 9. **When a linemate leaves their spot to go after the puck, fill it — and when somebody has filled yours, get back as soon as the play lets you.** That exchange, repeated, is what trust on the ice is. Chemistry is built by repetition, not friendship, which is why constant line juggling has a cost.
 10. **When a teammate is struggling, keep giving them the puck, and give them an easy one first.** After a soft goal, say "next one" and play a simple shift — never analyse it with the goalie. Never show frustration at a teammate on the ice; talk about one specific play after the game, once.
-11. **When it goes up on the ice, stay on the bench — and in the penalty box until an official releases you, even if your time is up.** ⚠️ **In all six books the first player off a bench for a fight is ejected — in four, for any altercation — and none stops at the first.**
-12. **In the handshake line, keep your helmet fastened, hands off heads and say only "good game"; if it goes up, back off and let the officials in.** ⚠️ **A fight there draws a game misconduct or worse in most books, breaking one up can in every book, and must under Hockey Canada, CARHA and, if first in, USA Hockey; either can cost your next game.**
+11. **When a fight or scuffle breaks out on the ice, stay on the bench — and in the penalty box until an official releases you, even if your time is up.** ⚠️ **In all six books the first player off a bench for a fight is ejected — in four, for any altercation — and none stops at the first.**
+12. **In the handshake line, keep your helmet fastened, hands off heads and say only "good game"; if a fight or scuffle starts, back off and let the officials in.** ⚠️ **A fight there draws a game misconduct or worse in most books, breaking one up can in every book, and must under Hockey Canada, CARHA and, if first in, USA Hockey; either can cost your next game.**
 13. **When a game is out of hand, stop trying to add to the margin, but do not visibly ease off.** Roll the lines, play the neutral zone instead of forechecking hard, and work on passes rather than hunting chances. **When you are the weaker team, simplify:** pucks deep, short shifts, take away the middle.
 14. **Treat the bench as a working position: know the score, the clock and who you are replacing, and keep both skates inside the boards, away from anyone's face.** Lead without a letter: be first dressed, talk on the ice, welcome new players. **Reliability, not skill**, gets you accepted.
 15. **In the warm-up and in drills, shoot at your own goalie's pads, glove and blocker, never the head.** ⚠️ **No book makes it an offence, and a cage hides the injury an official would need to see — so you are the protection.** Keep to your own end in the warm-up; every book here requires it.

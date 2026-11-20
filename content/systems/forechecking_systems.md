@@ -326,7 +326,7 @@ Rule: The post-icing mismatch is not in every book — NHL and IIHF 81.4 and 87.
 Rule: USA Hockey and CARHA bar neither half of the post-icing mismatch; Hockey Canada 6.7(d) bars the change at U18AAA, Junior and optional Senior only, and allows the time-out where it has one
 Read: Pick the 2-1-2 when trailing, off an offensive-zone faceoff, against a defence pair that is slow or panics, and any time they have just iced the puck
 Risk: A successful breakout against a 2-1-2 is frequently a 3-on-2 or worse, and it is the most physically expensive system to run
-Countered by: A quick first pass before F2 arrives, a reverse into the space F1 has vacated, and above all a rim past the pinching defenceman
+Countered by: A quick first pass before the 2-1-2's F2 arrives, a reverse into the space F1 has vacated, and above all a rim past the pinching defenceman
 ```
 
 **Shape:** Two forwards deep in the zone, one forward high (roughly the top of the circles), two defencemen at or just inside the **offensive** blue line — the opponents' line, the one you are pinching down from.
@@ -367,7 +367,7 @@ Convention: F2 (the "fox") sits on the strong-side wall and creates the turnover
 Convention: F3 (the "hawk") roams the high middle, committed to neither side; on a puck across, F3 becomes the new fox and everyone shifts one role
 Goal: Never being out of position — the 1-2-2 concedes the retrieval and builds a wall they have to pass through
 Read: Pick the 1-2-2 protecting a lead, against a fast transition team, when your forwards are tired, or as the forgiving rec-league default
-Countered by: D-to-D to shift the wall then a quick-up to a winger coming underneath the fox, or a stretch pass past the defencemen — they are the deepest layer it has
+Countered by: D-to-D to shift the 1-2-2's wall then a quick-up to a winger coming underneath the fox, or a stretch pass past the defencemen — they are the deepest layer it has
 ```
 
 **Shape:** One forward deep, two forwards across the middle of the zone, two defencemen high.
@@ -427,10 +427,10 @@ Position: One forward pressuring, three players spread in a line across the widt
 Convention: The single forechecker does not chase. They steer, take away the middle and shepherd the breakout to one side
 Convention: The line of three is conventionally F2, F3 and one defenceman, the defenceman in the middle as the read-maker — some coaches put a forward in the middle instead, so ask which yours is; it shifts across as a unit with the puck
 Convention: The single high player is the safety, responsible for anything that gets behind the line of three
-Goal: Take away lanes rather than players — against a team exiting on three short passes there is nowhere to put the puck
+Goal: The 1-3-1 takes away lanes rather than players — against a team exiting on three short passes there is nowhere to put the puck
 Read: Pick the 1-3-1 against short controlled breakouts, when you cannot get pressure on in time such as against a line change, and to protect a lead
 Risk: You concede the initial puck entirely, and a great deal of ice if the line of three is beaten in one pass — this is not a beginner system
-Countered by: Chipping past the flat line and beating it with speed, banking a pass off the boards, and moving the puck side to side before committing
+Countered by: Chipping past the 1-3-1's flat line and beating it with speed, banking a pass off the boards, and moving the puck side to side before committing
 ```
 
 **Shape:** One forward pressuring, three players spread across the width of the ice in a line, one player behind them as the last man.
@@ -462,10 +462,10 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 Position: One forward applying token pressure, the other four flat across the ice at or near their own blue line
 Key: The 1-4 is a neutral-zone structure, not an offensive-zone forecheck — Neutral Zone Systems is the authority on it
 Convention: The lone forechecker steers and slows the exit rather than pressuring; nobody pinches and nobody gambles
-Goal: Preventing odd-man rushes and high-danger chances, full stop
+Goal: The 1-4 is for preventing odd-man rushes and high-danger chances, full stop
 Risk: The 1-4 concedes any realistic chance of getting the puck back in their end, and therefore any offence
 Read: The 1-4 is a situational tool only — a one-goal lead in the last two minutes, the end of a period, no legs left, or a far better opponent
-Countered by: A hard chip past the flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line; if the goalie comes out for it, pull up
+Countered by: A hard chip past the 1-4's flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line; if the goalie comes out for it, pull up
 ```
 
 **This is a neutral-zone structure, not an offensive-zone forecheck**, and [Neutral Zone Systems](neutral_zone_systems.md) is the authority on it. It is listed here only because coaches call it a forecheck and because it is the shape a failed forecheck retreats into. The short version:
@@ -525,7 +525,7 @@ Read: Almost exclusively late and trailing — down a goal in the last two or th
 Rule: On a delayed penalty play stops only when the offending team gains control, not when it merely touches the puck (NHL Rule 15.1). Play until the whistle
 Risk: A single clean exit is a breakaway or an empty-net goal against
 Never: Take "pinch on anything" as a licence to seal a winger against the wall — "on anything" is about the puck, not the man, and whether you may seal at all depends on which book you are under
-Countered by: One pass — you are betting they cannot make it in the time you allow them
+Countered by: One pass beating the full-ice press — you are betting they cannot make it in the time you allow them
 ```
 
 **Shape:** Three forwards deep or nearly deep, both defencemen at the offensive blue line and pinching aggressively, effectively no safety at all.
@@ -724,7 +724,7 @@ Mindset: You are recovering, not hunting — you are disorganised and they are n
 Action: The closest player pressures immediately, whoever they are — two seconds of pressure buys the rest of your team time to sort themselves out
 Priority: Everyone else's first job is to find their layer, not the puck — a second and third chaser is how a lost puck becomes a goal against
 Never: Pinch off a turnover unless the puck is genuinely dying on the wall — you do not have the structure behind you that a dump-in gives you
-Goal: Accept the lower ambition — slow them down and collect it in the neutral zone
+Goal: Off a turnover, accept the lower ambition — slow them down and collect it in the neutral zone
 ```
 
 When you lose the puck in the offensive zone, **you are disorganised and they are not**. Somebody is out of position, at least one of your players is skating the wrong way, and the opposition has a numbers advantage for about two seconds.

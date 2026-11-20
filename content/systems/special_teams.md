@@ -147,7 +147,7 @@ Key: There is no bumper in a true umbrella; the middle of the slot is deliberate
 Options: Classic — a forward apex with both defencemen out on the flanks; modern — the lone defenceman at the apex with two forwards down at the tops of the circles
 Never: String three players level across the blue line and call it an umbrella — with no depth every pass is short and lateral
 Action: The three high move the puck side to side for a shot with a lane; the two low screen, tip and collect rebounds
-Countered by: A diamond or an aggressive box, which will happily let you pass it around the top all night
+Countered by: A diamond or an aggressive box, which will happily let an umbrella pass the puck around the top all night
 Risk: The umbrella works the puck far from the net, and goalies and killers are most comfortable when the puck is far from the net
 ```
 
@@ -197,7 +197,7 @@ Position: Two low just outside the posts, two high and wide at the tops of the c
 Key: The point is the spacing, not the shape. Stand far enough apart that one killer cannot cover two of you
 Action: Occupy space, stay still enough to be a genuine passing target, and make everything a one-touch play
 Read: Use the spread at 5-on-4 against a kill that has collapsed so tightly it has conceded the outside entirely; it is also the standard 5-on-3 shape
-Countered by: Long passes — at 5-on-4 they are interceptable and can be blocked by a well-placed stick
+Countered by: The spread's long passes — at 5-on-4 they are interceptable and can be blocked by a well-placed stick
 Risk: The spread surrenders the possession game — you are not cycling, you are waiting
 Key: "Box" names both this power-play spacing and the standard penalty-kill shape; say which one you mean
 ```
@@ -429,7 +429,7 @@ Read: Three killers sit in a tight triangle around the slot and concede everythi
 Action: Spread out into the spread/box shape and make the triangle try to cover the whole zone
 Action: Move the puck side to side across the royal road, not around the perimeter, until the goalie cannot get set
 Never: Shoot from the outside into three shot-blockers. Wait for the goalie to be moving instead, but do not pass for two minutes without shooting
-Goal: The goal usually comes from a one-timer at the far post or the second-wave rebound, so have someone at the net for both
+Goal: At 5-on-3 the goal usually comes from a one-timer at the far post or the second-wave rebound, so have someone at the net for both
 Rule: A team never plays fewer than three skaters — a third penalty's clock waits and a substitute keeps them at three (NHL Rule 26.1)
 Rule: A goal against a shorthanded team terminates only the minor with the least time remaining, so a 5-on-3 becomes a 5-on-4 (NHL Rule 16.2)
 Rule: A goal releases only a minor or bench minor (NHL and IIHF Rule 16.2), so a major is served in full however many you score (NHL and IIHF 20.2) — and a goal scored on a penalty shot releases nothing at all (16.2 in terms, and NHL 24.6)
@@ -535,12 +535,12 @@ Countered by: A 1-3-1 — nobody in a box is assigned to the middle of the slot,
 
 ```facts
 Position: One player high at the apex, two in the middle either side, one low — exactly one player at the top
-Goal: The two middles squeeze the slot from either side so a 1-3-1's bumper can be accounted for
+Goal: The diamond's two middles squeeze the slot from either side so a 1-3-1's bumper can be accounted for
 Action: The apex pressures the point and takes away the middle shooting lane — you are the only player up there, so do not get walked around
 Action: Each middle takes a half-wall and both collapse onto the bumper when the puck goes to the middle
-Position: The low player owns the goalmouth, alone
+Position: The diamond's low player owns the goalmouth, alone
 Read: Use the diamond against a 1-3-1, or against an umbrella where the apex can pressure the middle point man
-Countered by: A quick cross-seam pass to the far half-wall — the shape is narrow, and the far-side one-timer is on if the middles are slow
+Countered by: A quick cross-seam pass to the far half-wall — the diamond is narrow, and the far-side one-timer is on if the middles are slow
 Risk: The single low player faces a net-front presence and a backdoor arriver at once — a 2-on-1 you are choosing to concede
 ```
 
@@ -568,7 +568,7 @@ Action: The wedge stays tight, protects the slot and goalmouth, and does not cha
 Action: The +1 pressures whoever has the puck — make every possession uncomfortable, do not try to win it, and hand the pressure to the nearest wedge player rather than trail the puck round the outside
 Technique: When your pressure forces the puck to move, the nearest wedge player becomes the new +1 and you drop into the triangle
 Key: The exchange is the hard part — everyone must know who is out and who is in, every second
-Countered by: A +1 who chases without purpose; you are then killing with three players
+Countered by: A +1 who chases without purpose; your wedge+1 is then killing with three players
 Risk: High cognitive load makes the wedge+1 a poor choice for a young or ad-hoc unit
 Convention: Coaching material describes the wedge+1 as popular at NHL level, but no league-wide count is published, so treat prevalence as unverified; published descriptions also differ on the +1's route — straight out from the goal, sweeping across the top of the zone, or roaming — so ask your coach
 ```
@@ -628,7 +628,7 @@ Options: The 1-3 — one forward on the puck, the other forward and both defence
 Read: Passive 1-3 gives token pressure to make them commit to a side; the same-side press has F1 angle the carrier and F2 close to force a dump or turnover
 Risk: With F1 beaten or the three-player line spread, the 1-3 has a lot of ice behind it
 Options: The 1-1-2 — F1 on the puck, F2 layered behind on the same side, two defencemen abreast near the line
-Countered by: Quick direction changes and drop passes at the red line, which slide underneath F1 and F2 at once
+Countered by: Quick direction changes and drop passes at the red line, which slide underneath the 1-1-2's F1 and F2 at once
 Options: The retreating box (2-2) — all four backing up together; safe and easy, and vulnerable to drop passes and direction changes
 Options: Tandem pressure — two forwards take turns attacking the carrier; if both are beaten at once the kill is a 2-on-2 with no support
 Convention: Some coaching material names the 1-1-2 as a common NHL choice for neutral-zone pressure; no count of NHL teams was found to confirm it — ask which your team plays
@@ -972,7 +972,7 @@ Pulling the goalie during a power play, late in a game, to make it 6-on-4.
 Key: Pulling the goalie on a power play makes it 6-on-4, the largest advantage you will normally see, and it is used far less than the arithmetic suggests
 Position: As the power play, put two at the net front and send the extra body to the bumper or the backdoor, never the perimeter
 Action: Move the puck quickly and accept that blocking lanes will be crowded
-Countered by: The empty net — a killer who wins a puck can legally clear it 180 feet into it, and it counts
+Countered by: The empty net behind a 6-on-4 — a killer who wins a puck can legally clear it 180 feet into it, and it counts
 Action: As the kill, block shots from in the lane, on your feet, head out of the lane, never from a screening position; keep sticks in lanes and clear low, head up, looking for the empty net
 Rule: Over the glass from your own zone is a minor, shorthanded or not, under NHL 63.2(iii), IIHF 63.2(III) and PWHL 65.2(iii); USA Hockey 610(c), Hockey Canada 10.1(ii) and CARHA 75(b) need it deliberate, but a goalie's stick clear under HC 10.1(v) or CARHA 55(a) has no intent word, so expect the minor
 Rule: The deliberate limb has no zone limit in any of the six books — flipping the puck out on purpose anywhere on the ice is a minor (NHL 63.2(ii), IIHF 63.2(II), PWHL 65.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
@@ -1335,7 +1335,7 @@ section named with each question, and the Key Takeaways, are where you get it.*
 1. **Create two-on-ones by passing, and cash them in near the net.** A kill can cover one option, not three in two seconds. Stand where you could shoot or pass this instant — a player who needs two touches is ignored. Preferring the pass to the shot is a coaching choice; shot-volume power plays work too.
 2. **When the entry is denied, turn back and come again.** Most power plays die at the blue line. **When the kill clears the puck, one player chases and the other four re-form** — the unit that wins that scramble gets three or four setups instead of one.
 3. **On the kill, hold your own job and concede only what your shape concedes.** A box gives up the middle, a diamond the outside and the backdoor, a wedge+1 the perimeter. The goal comes when a killer leaves their job to cover what was conceded. Keep your blade flat in the seam.
-4. **Kill the penalty before it reaches your zone.** Stand up at the line as a pair and put your stick in the receiver's lane. Go for the puck, not the man: contact before it arrives is interference, and where checking is barred, or in IIHF or PWHL women's hockey, so is going into the receiver when it arrives.
+4. **Kill the penalty before the power play reaches your zone.** Stand up at the line as a pair and put your stick in the receiver's lane. Go for the puck, not the man: contact before it arrives is interference, and where checking is barred, or in IIHF or PWHL women's hockey, so is going into the receiver when it arrives.
 5. **Know your team's shape and your job in it before the puck drops.** Every formation here is a coaching choice, not a law, and so are the pressure setting and how much you block. Most breakdowns are two players assuming different systems, so ask your coach which one you run.
 6. **Win the draw with your stick and keep your wingers off the hash marks.** A creeping winger gets your **centre** thrown off the draw; a second violation can be a minor in every book and is automatic in four, and contact at the dot can be penalised on the first — mandatorily in three. Shorthanded, either is a 5-on-3.
 7. **Block shots from the lane, before the shot, on your feet.** Never block from where you screen your own goalie. Block with your body, head out of the lane, stick flat beside you, and never turn your back or lift a leg. How much to block is your coach's call.
