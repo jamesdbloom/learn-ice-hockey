@@ -37,7 +37,7 @@ Goal: You are not trying to take a shot — you are trying to take a shot from a
 Action: Put a body at the net front for every shot, outside the crease, and crash the net for the rebound — decide before the shot, and play the puck, never the goalie
 Priority: Somebody is always above the puck — the high forward is the safety, and someone, usually a forward, fills the line when a defenceman steps down
 Risk: Almost every amateur team can get the puck into the offensive zone; far fewer turn possession there into a dangerous shot
-Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 spread with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
+Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
 ```
 
 **Look across the middle first, because that pass moves the goalie.** A pass that crosses the centre line of the ice just before the shot forces the goalie to push across and re-set, and in volunteer-tracked NHL 5-on-5 data it is the most dangerous pass type, at roughly double the next.
@@ -52,7 +52,7 @@ Convention: The attack triangle with both defencemen on the line is the default 
 
 **Defencemen keep the puck in, and pinch on a read rather than a hope.** Step down when you will arrive as the puck does, the winger is flat-footed, and someone, usually a forward, can cover your spot; otherwise hold, because a late pinch leaves the puck behind you and your forwards below it. On a rim, stop the puck at the line first; if you cannot control it, put it back deep. How often to pinch is your coach's call — ask.
 
-**The shape is a coaching choice.** This document assumes three forwards rotating in a triangle with both defencemen on the blue line. Real teams also play an **overload**, stacking four players on the puck side and giving up the weak-side seam. Others run a **five-player rotation**, where defencemen take forward spots as routine, or a **1-3-1 spread**, common on the power play, with a **bumper** in the middle who is not the net-front player. Nobody has published a count of what teams actually run, so treat any "most teams play X" claim, this one included, as an impression. Find out which yours plays before deciding somebody is out of position.
+**The shape is a coaching choice.** This document assumes three forwards rotating in a triangle with both defencemen on the blue line. Real teams also play an **overload**, stacking four players on the puck side and giving up the weak-side seam. Others run a **five-player rotation**, where defencemen take forward spots as routine, or a **1-3-1**, common on the power play, with a **bumper** in the middle who is not the net-front player. Nobody has published a count of what teams actually run, so treat any "most teams play X" claim, this one included, as an impression. Find out which yours plays before deciding somebody is out of position.
 
 ---
 
@@ -320,19 +320,19 @@ These are the rules of the standard setup, with both defencemen on the line, not
 
 ### Realistic alternatives
 
-The triangle with both defencemen on the line is the common default, not the only setup. Find out whether your team plays it or an overload, a five-player rotation or a 1-3-1 spread, because each one puts you somewhere different and asks you to cover different ice.
+The triangle with both defencemen on the line is the common default, not the only setup. Find out whether your team plays it or an overload, a five-player rotation or a 1-3-1, because each one puts you somewhere different and asks you to cover different ice.
 
 ```facts
 Options: Overload / strong-side load — four players on the puck side, one weak-side outlet; wins board battles, gives up the weak-side seam
 Options: Five-player rotation — defencemen rotate into forward spots and forwards cover the line as routine rather than emergency
-Options: 1-3-1 spread — one at the point, two half-walls, one bumper in the middle, one net front; common on the power play
+Options: 1-3-1 — one at the point, two half-walls, one bumper in the middle, one net front; common on the power play
 Risk: The five-player rotation requires everyone to be comfortable at the blue line
 Never: Confuse the bumper with the net-front player — two different jobs at two different depths
 ```
 
 - **Overload / strong-side load.** Four players are loaded onto the puck side, with only one weak-side outlet. Wins board battles and grinds teams down; gives up the weak-side seam and the quick change of point.
 - **Five-player rotation ("position-less" or high cycle).** Defencemen rotate into forward spots and forwards cover the line as a matter of routine rather than emergency. This is how modern NHL teams with skating defencemen play. It requires everyone to be comfortable at the blue line.
-- **1-3-1 spread.** One at the point, two on the half-walls, one **bumper** in the middle of the ice between them, one net front. Common on the power play (see [Special Teams](special_teams.md)) and occasionally used at even strength. **The bumper is not the net-front player** — they are two different jobs at two different depths.
+- **1-3-1.** One at the point, two on the half-walls, one **bumper** in the middle of the ice between them, one net front. Common on the power play (see [Special Teams](special_teams.md)) and occasionally used at even strength. **The bumper is not the net-front player** — they are two different jobs at two different depths.
 
 ![](diagram:pp-131)
 

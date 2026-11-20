@@ -398,7 +398,7 @@ Convention: The 2-1-2 with F3 on the weak side is one system among several, not 
 
 **Goal:** Force a turnover or a bad outlet pass. Keep the opposing defence under constant pressure.
 
-**Key considerations:** Forechecks are named by counting players from the goal line outwards — always three groups, always adding to five — so the common **2-1-2** is two forwards in on the puck, one in the middle, two defencemen high at the line. It is one system among several. See [Forechecking Systems](../systems/forechecking_systems.md) for the alternatives (1-2-2, 1-3-1, 1-4) and when each is chosen.
+**Key considerations:** Forechecks are named by counting players from the goal line outwards — usually three groups, always adding to five — so the common **2-1-2** is two forwards in on the puck, one in the middle, two defencemen high at the line. It is one system among several. See [Forechecking Systems](../systems/forechecking_systems.md) for the alternatives (1-2-2, 1-3-1) and when each is chosen, and for the 1-4, a neutral-zone retreat rather than a forecheck in their end.
 
 In a 2-1-2:
 - **F1 (usually you, as the centre):** First in. Pressure the puck, take a deliberate angle.
@@ -579,13 +579,13 @@ Never hold it, carry it or drop it somewhere better; never cover a puck in your 
 
 ### Power Play (your team has the man advantage)
 
-Get to the spot your formation gives you: in a 1-3-1 you most often play the bumper in the middle of the slot — be a passing target for both half-walls, shoot quickly, screen the goalie and tip point shots — and in an umbrella or an overload you are usually low or on the strong-side wall. Bring the puck in with control, carried into space or passed across the line, rather than skating into the defence or dumping it into traffic.
+Get to the spot your formation gives you: in a 1-3-1 you most often play the bumper in the middle of the slot — be a passing target for both half-walls, shoot quickly, screen the goalie and tip point shots — and in an umbrella or an overload you are usually low or on the strong-side wall, though a modern umbrella can make you a flank at the top of a circle. Bring the puck in with control, carried into space or passed across the line, rather than skating into the defence or dumping it into traffic.
 
 ```facts
 Position: In the 1-3-1 power play you most often play the bumper — the middle of the three across the slot, between the point man and the net front
 Action: Be a passing target for both half-walls, take quick shots from the slot, screen the goalie and tip point shots
 Key: A box has nobody assigned to the middle, which is exactly why a kill switches to a diamond against you
-Position: In an umbrella or an overload you will usually be low or on the strong-side wall — there is no bumper in a true umbrella
+Position: In an umbrella or an overload you will usually be low or on the strong-side wall, or a flank atop a circle in a modern umbrella — there is no bumper in a true umbrella
 Action: Drop back to receive the breakout pass and carry through the neutral zone, then transition into the bumper or slot
 Never: Skate straight into the opposing defence, or dump into traffic. Enter with control instead, carrying into space or passing in
 Key: Passing in is an alternative to carrying in, not an upgrade on it — the tracked figures have the two about level on the power play and carrying ahead at even strength; Zone Entries covers them
@@ -597,7 +597,7 @@ In the **1-3-1**, widely described as the modern default, the centre most often 
 
 ![](diagram:pp-131)
 
-In an **umbrella** or an **overload** you will usually be low or on the strong-side wall instead. There is no bumper in a true umbrella, so don't go looking for the spot you're used to.
+In an **umbrella** or an **overload** you will usually be low or on the strong-side wall instead — though a **modern** umbrella, with the lone defenceman at the apex, puts two forwards on the flanks at the tops of the circles, and that can be you. There is no bumper in a true umbrella, so don't go looking for the spot you're used to.
 
 **On zone entries:** You often drop back to receive the breakout pass and become the puck carrier through the neutral zone (using drop passes or swing-entries with the wingers). Once in the offensive zone, you transition into the bumper or slot position. Avoid skating straight into the opposing defence, and avoid dumping the puck into traffic. Both hand the puck over; what you want is a **controlled entry** — carried into space, or passed in across the line.
 
@@ -1001,7 +1001,7 @@ document, that is named too.*
 11. **Cross the blue line at full speed with your trailing blade down on the line or the ice behind it.** Time your stride so the puck is fully across first rather than coasting to stay onside. A blade in contact is onside in every book; a raised one is not under USA Hockey or Hockey Canada, so keep it down.
 12. **Never block the shot on a 2-on-1.** As the lone defender back, your job is the pass — your goalie already has the shooter, on the penalty kill and off it. [Defender](defender.md) and [Body Contact and Battles](../technique/body_contact_and_battles.md) carry the technique and the other times not to block.
 13. **Before you shoot, look for the pass across the front of the net.** A pass across the **royal road** — the line down the middle of the ice from net to net — forces the goalie into a hard lateral push, so the puck arrives before they are set. Refuse the extra pass along your own side.
-14. **On a 1-3-1 power play you are most often the bumper** — in the soft spot in the middle of the slot, the target for both half-walls, shooting quickly. In an umbrella or an overload you are low or on the strong-side wall, so ask which your team runs.
+14. **On a 1-3-1 power play you are most often the bumper** — in the soft spot in the middle of the slot, the target for both half-walls, shooting quickly. In an umbrella or an overload you are usually low or on the strong-side wall — in a modern umbrella you may be a flank at the top of a circle — so ask which your team runs.
 15. **On the penalty kill, know your shape before the puck drops, and never chase the puck around the perimeter.** Ice it only while you are a man short on the ice — and under USA Hockey only at Youth 15-Only and above, Girls 16U and above, High School and Adult; otherwise clear it to the neutral zone.
 16. **Carry the extra stride before you dump it.** With the puck past the red line on your stick the dump is legal however far it goes — unless your league divides the ice at the blue lines, as some CARHA leagues do. When the other team ices it and cannot change, have a set play ready.
 17. **Change on your legs, and go first.** When the line changes as a group, you call it and the wingers follow you off — the centre is generally reckoned to fade first, which is coaching craft rather than a measured finding. Don't change into an offensive-zone faceoff you are needed to take.

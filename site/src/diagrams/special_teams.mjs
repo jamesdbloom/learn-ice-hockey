@@ -426,9 +426,13 @@ const pp23 = {
     // W590 (20 Nov 2026): the point-count rule contradicted the corpus's own pp-umbrella (lone D at
     // the apex) and pp-overload (one point). Replaced with the shape rule special_teams.md's Common
     // Mistakes now states: read the shape, not the point count.
-    'three forwards low, the puck going low-to-high and back. Two at the points and three low is ' +
-    'this shape; a 1-3-1 has one point player and a bumper in the slot; an umbrella has three high ' +
-    'in an arc; an overload puts four on one side. Which ' +
+    // W591 (20 Nov 2026): mirrors the owner's Common Mistakes rule, spread added. Geometry checked:
+    // this diagram's third low player N is at (80, 4), the net front, with nobody mid-slot; the
+    // spread diagram (pp-spread-5on3) has A5 at (72, 0) mid-slot and two low at (88, +/-8) by the posts.
+    'three forwards low, the puck going low-to-high and back. Two at the points with three low and ' +
+    'nobody in the middle of the slot is this shape; a spread has two high, one in the middle of the ' +
+    'slot and two low beside the posts; a 1-3-1 has one point player and a bumper in the slot; an ' +
+    'umbrella has three high in an arc; an overload puts four on one side. Which ' +
     'your team runs is a coaching choice, and that it stays common in rec and youth hockey is ' +
     'an impression rather than a measured share.',
 
@@ -691,7 +695,7 @@ const pkBox = {
     'Four killers, shorthanded 4-on-5, drawn against the power-play 1-3-1 that counters it: two forwards ' +
     'high, one each side in the shooting lanes, and two defencemen low — the strong-side one on the puck when it comes low, ' +
     'the weak-side one on the goalmouth and the backdoor. When the puck moves, all four slide together as ' +
-    'one unit — a box kill does not rotate. The ' +
+    'one unit — as usually taught, a box kill does not rotate. The ' +
     '1-3-1\'s letters: P at the point, H on the half-walls, B the bumper, N at the net front. A box ' +
     'has no single top — describing one means you are describing a diamond. Nobody is ' +
     'assigned to the middle, by design, so the bumper stands uncovered. Which shape a team ' +

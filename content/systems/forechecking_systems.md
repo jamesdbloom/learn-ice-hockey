@@ -21,7 +21,7 @@
 
 **Never finish into the back of a player facing the end boards — your own dump-in creates that player.** Take the puck, take the ice, or angle them off it; the onus is on you. Every book here can end your game for a hit into their back, most even at their lightest penalty.
 
-**Know whether you are hunting, recovering or choosing.** Off a dump-in, aim for a corner and leave before the puck does. Off a turnover, the closest player pressures and the rest find their layer. When they are set up behind their net, your team traps, swings or flushes — ask which.
+**Know whether you are hunting, recovering or choosing.** Off a dump-in, aim for a corner and leave before the puck does. Off a turnover, the closest player pressures and the rest find their layer. When they are set up behind their net, your team drops into a deep trap, swings or flushes — ask which.
 
 **Defencemen: pinch only when you can arrive as the puck does, and one at a time.** Go when the puck is on the wall and slowing and someone covers your point, F3 by default. The weak-side D stays home, so a failed pinch is a 2-on-1, not a breakaway. Some teams slide your partner across or rotate all five, so ask.
 
@@ -456,10 +456,10 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 
 ### 1-4 — the full retreat
 
-**Shape:** One forward applying token pressure; the other four in a flat line across the ice at or near **their own** blue line.
+**Shape:** One forward applying token pressure; the other four in a flat line across the ice at or near **your own** blue line.
 
 ```facts
-Position: In a 1-4, one forward applying token pressure, the other four flat across the ice at or near their own blue line
+Position: In a 1-4, one forward applying token pressure, the other four flat across the ice at or near your own blue line
 Key: The 1-4 is a neutral-zone structure, not an offensive-zone forecheck — Neutral Zone Systems is the authority on it
 Convention: The lone forechecker steers and slows the exit rather than pressuring; nobody pinches and nobody gambles
 Goal: The 1-4 is for preventing odd-man rushes and high-danger chances, full stop
@@ -742,7 +742,7 @@ What that means for you:
 
 ```facts
 Key: Forechecking a control setup — they are stopped behind their own net with full control, off a line change or because they beat you to the puck
-Options: Deep trap — all five back off and meet them at the blue line, conceding the build-up and taking the speed away at the line
+Options: Deep trap — all five back off into your neutral-zone shape, conceding the build-up and taking the speed away at the red line and your own blue line
 Options: Swing with speed — go in and skate with the players swinging deep, so the speed never gets built in the first place
 Options: Quick flush — strike before they are organised, F1 forcing the carrier out one side and F2 arriving to double it
 Read: A team that has just stopped behind its own net has not yet settled who is swinging where — that hesitation is what the flush aims at
@@ -755,7 +755,7 @@ Convention: Which of the three you run is a coaching choice that usually follows
 
 Neither of the two situations above describes this one. Nobody dumped anything and nobody turned it over — their defenceman simply has the puck behind their own net, stopped, head up, with their forwards starting to move. It happens constantly off line changes and whenever they win a race you thought you had. **A forecheck that only knows how to hunt a dump-in has nothing to say here**, which is why the puck so often comes out untouched.
 
-**Deep trap.** Give it up. All five of you back off and meet the attack at the blue line, exactly as you would in a neutral-zone forecheck. F1 takes a shallow angle and steers the carrier to one side; the forward on that side stands up and denies the red line; the third forward either locks across or stays wide. You are conceding the whole build-up — they will get time, space and speed — and taking it all away in one place instead. The turnovers come at the line.
+**Deep trap.** Give it up. All five of you back off and meet the attack in the neutral zone, your defencemen on your own blue line, exactly as you would in a neutral-zone trap. F1 takes a shallow angle and steers the carrier to one side; the forward on that side stands up and denies the red line; the third forward either locks across or stays wide. You are conceding the whole build-up — they will get time, space and speed — and taking it all away in one place instead. The turnovers come at the red line.
 
 **Swing with speed.** A team breaking out with control will usually **swing** one or two players behind the net or through the corner to build speed, with a forward stretching high. So go in and swing *with* them: F1 stays in to deter the pass while F2 and F3 skate with whoever is swinging deep and lock onto them — shadowing them, not hitting them, because none of them has the puck and hitting there is interference. If their defenceman keeps it and comes out from behind the net, F1 angles in and forces them to one side. Your defencemen have to account for the stretch forward the entire time, because the long pass is exactly what this concedes. It kills their speed at the price of opening ice elsewhere.
 

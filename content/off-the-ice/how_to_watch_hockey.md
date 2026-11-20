@@ -120,9 +120,9 @@ Sit and count, over five or six sequences:
 
 | What you see | Likely system |
 |---|---|
-| One forward pressures, two hang back near the blue line | **1-2-2** — conservative, hunting a turnover in the neutral zone |
+| One forward pressures, two hang back across the middle of their zone | **1-2-2** — conservative, containing rather than hunting |
 | Two forwards go deep, third stays high, defencemen at the line | **2-1-2** — the aggressive default |
-| One deep, three across the neutral zone | **1-3-1**, often a trap posture |
+| One pressuring, three across the neutral zone | **1-3-1** in the neutral zone, often a trap posture |
 | Three forwards below the circles | **3-2** or a full-pressure forecheck, usually late and chasing a goal |
 
 Two of those systems are drawn in [Forechecking Systems](../systems/forechecking_systems.md), against the same puck carrier: two forwards below the top of the circles in the first, one in the second. (In [the diagram key](../reading-diagrams/reading_ice_hockey_diagrams.md), a circle is a forward, a triangle a defenceman, **G** the goalie, and the unfilled shapes are the team the picture is drawn for — not the same team in every picture below.)
@@ -164,7 +164,7 @@ Second tell: **watch the strong-side defenceman when the puck is behind their ne
 A **trap** is a neutral-zone system that gives up the opponent's end and builds a wall across the middle, so the attack must dump the puck in or lose it trying to carry it through.
 
 The tells:
-- **A line of three across the neutral zone**, usually around their own blue line or the far side of centre — a **1-3-1**, one forward pressuring, three across, one defenceman deepest.
+- **A line of three across the neutral zone**, usually around the red line — a **1-3-1**, one forward pressuring, three across, one defenceman deepest.
 - **Nobody chases into the corners.** A single forechecker applies token pressure and retreats.
 - **The defenders stop in the neutral zone rather than skating at anyone.** Trapping teams look passive on purpose.
 - **The puck carrier is repeatedly steered towards the boards** in the neutral zone and never gets to the middle lane.
@@ -173,7 +173,7 @@ The first of those tells is drawn in [Neutral Zone Systems](../systems/neutral_z
 
 ![](diagram:nz-1-3-1)
 
-The pure 1-3-1 trap is far rarer now than its reputation suggests; most teams use trap *elements*, such as a 1-2-2 with a heavy middle. Watch for the behaviour rather than matching a diagram. See [Neutral Zone Systems](../systems/neutral_zone_systems.md).
+The pure passive trap — the 1-2-2 trap the 1995 Devils made famous — is no longer a full-time system at high levels; it survives as a situational tool and inside newer shapes such as the 1-3-1. Watch for the behaviour rather than matching a diagram. See [Neutral Zone Systems](../systems/neutral_zone_systems.md).
 
 The next two pictures are both a 1-2-2, separated by depth and intent. In the first, the two middle forwards are up near the opposing blue line. In the second, they have dropped to the red line: the carrier is allowed to skate and steered to a wall. What no picture can show is whether the lone forechecker is closing or gliding, and that is what decides which one you are watching.
 

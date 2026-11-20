@@ -692,7 +692,7 @@ The centre takes the faceoff. **The alignments here are a common default rather 
 ```facts
 Key: 1-3-1 power play — one defenceman only, playing the single point as the quarterback; if you are the second defenceman you are on the second unit, not on the ice
 Action: As the quarterback, move the puck quickly, walk the line laterally to open shooting lanes, and use the threat of your shot to pull the box out of shape
-Key: Umbrella — you are one of two defencemen high, so you have a point partner and can play give-and-go across the top
+Key: Umbrella — in the classic version you and a partner are the two flanks, so you can play give-and-go across the top; in the modern one you are the lone defenceman at the apex
 Key: 2-3 power play — both defencemen at the points; the older structure, and still common in rec, beer-league and youth hockey — an impression of how those levels play rather than a measured share
 Key: Overload power play — you are usually the lone weak-side outlet, the release valve when the strong side gets sealed
 Priority: Keeping the puck in the zone is your first job — a cleared power play has to re-enter against four killers already set in their structure
@@ -702,7 +702,7 @@ Action: Shoot for tips and rebounds rather than trying to beat the goalie clean 
 **The formations are set out in [Special Teams](../systems/special_teams.md).** The question they answer for you is a blunt one — *whether you are on the ice at all, and whether you have a partner up there.*
 
 - **1-3-1 (widely described as the modern default):** only **one** defenceman, playing the single point as the "quarterback". If that's you, you are the distributor: move the puck quickly, walk the line laterally to open shooting lanes, and use the threat of your shot to pull the box out of shape. If you're the second defenceman, you're on the second unit, not on the ice.
-- **Umbrella:** you are one of two defencemen high, so you *do* have a point partner and can play give-and-go across the top.
+- **Umbrella:** in the **classic** version both defencemen are the flanks, so you *do* have a partner up there and can play give-and-go across the top. In the **modern** version you are the lone defenceman at the apex, with two forwards on the flanks — no partner. Ask which your team runs.
 - **2-3:** both defencemen at the points — the older structure, still common in rec, beer-league and youth hockey, and where you are most likely to have a partner. ⚠️ **That prevalence is an impression of how those levels play rather than a measured share** — [Special Teams](../systems/special_teams.md), which sets out the formations, has no count for it.
 - **Overload:** you are usually the lone weak-side outlet, and your job is to be the release valve when the strong side gets sealed.
 

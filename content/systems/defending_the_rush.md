@@ -175,7 +175,7 @@ Distances are a guide, not a law, and they vary with your backward speed and the
 - **As they cross the centre red line:** tighten to around **a stick and a half**. This is the moment the attack commits, and the moment your gap should be actively shrinking rather than holding.
 - **At your blue line:** roughly **a stick length**. Close enough to reach the puck with a poke check; far enough that one deke doesn't put them past you.
 
-**How tightly you play that ladder is a coaching choice, not a law of hockey.** A team playing an aggressive 1-2-2 neutral-zone press wants you challenging at the line; a team playing a passive 1-3-1 trap wants you holding and steering the carrier wide. **Find out which one your team plays before you commit to a number** — §Standing Up at the Blue Line vs Backing Off sets out the same choice from the other end.
+**How tightly you play that ladder is a coaching choice, not a law of hockey.** A team playing an aggressive neutral-zone press behind a 2-1-2 forecheck wants you challenging at the line; a team playing a passive 1-3-1 or 1-2-2 trap wants you holding and steering the carrier wide. **Find out which one your team plays before you commit to a number** — §Standing Up at the Blue Line vs Backing Off sets out the same choice from the other end.
 
 **The blue line is an ally here.** Under NHL rules an attacker is offside only when **both skates** completely cross the blue line before the puck completely crosses it — so a defender squeezing tight at the line can force the carrier to either slow down for their own trailers or enter alone. See [Rules Primer](../foundation/rules_primer.md) and [Zone Entries](zone_entries.md).
 
@@ -786,13 +786,13 @@ Read: Right against attackers with speed, on odd-man situations, when you are th
 
 ```facts
 Never: Step up unless you are confident you can win the puck — confidence, not hope
-Convention: How aggressive "confident" should be is a coaching choice — an aggressive 1-2-2 press wants you challenging the line, a 1-3-1 trap wants you holding
+Convention: How aggressive "confident" should be is a coaching choice — an aggressive neutral-zone press behind a 2-1-2 forecheck wants you challenging the line, a 1-3-1 or 1-2-2 trap wants you holding
 Never: Half-commit — drifting forward, changing your mind, and arriving late with a huge gap
 Priority: When in doubt, back off with a tight gap — it has no catastrophic failure mode
 Key: Keep "step up" and "pinch" separate — stepping up is challenging in the neutral zone or at your own line, pinching is stepping down from the offensive blue line
 ```
 
-- **Do not step up unless you are confident you can win the puck.** Confidence, not hope — a missed step-up is an odd-man rush behind you. **How aggressive "confident" should be is a coaching choice:** a team playing an aggressive 1-2-2 neutral-zone press wants you challenging at the line and will accept the occasional miss; a team playing a passive 1-3-1 trap wants you holding and steering the carrier wide. Find out which risk your coach wants to carry.
+- **Do not step up unless you are confident you can win the puck.** Confidence, not hope — a missed step-up is an odd-man rush behind you. **How aggressive "confident" should be is a coaching choice:** a team playing an aggressive neutral-zone press behind a 2-1-2 forecheck wants you challenging at the line and will accept the occasional miss; a team playing a passive 1-3-1 or 1-2-2 trap wants you holding and steering the carrier wide. Find out which risk your coach wants to carry.
 - **Step up or back off — do not do neither.** The killer is the half-commit: drifting forward, then changing your mind, and arriving late with a huge gap. Pick and go.
 - **The default when in doubt is back off with a tight gap.** It has no catastrophic failure mode.
 - **Keep "step up" and "pinch" separate.** Stepping up is challenging forward in the neutral zone or at your own line, where a miss leaves only your partner and goalie back. Pinching is stepping down from the *offensive* blue line, where your forwards are still in the zone to help if someone covers your point. The pinch is the safer play; see [Defender](../positions/defender.md) and [Risk Management](../hockey-iq/risk_management.md).

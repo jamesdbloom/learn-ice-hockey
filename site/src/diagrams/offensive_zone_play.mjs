@@ -304,7 +304,7 @@ const fiveManShape = {
     'The five-player offensive-zone shape with the puck on the strong-side half-wall: one ' +
     'forward below in the corner, one above at the top of the circles, both defencemen on ' +
     'the blue line. That below-level-above attack triangle is a default, not a law of ' +
-    'hockey — overload, a five-player rotation and a 1-3-1 spread are real alternatives, so ' +
+    'hockey — overload, a five-player rotation and a 1-3-1 are real alternatives, so ' +
     'find out which one your team plays. At least one forward stays in or attacking the ' +
     'home-plate area. Defenders other than the goalie are not drawn.',
 

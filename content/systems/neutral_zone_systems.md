@@ -13,7 +13,7 @@
 
 **When your team loses the puck, get on the defensive side of your check and track home through the middle, head up.** Do not hang at the red line for a breakaway pass unless your coach has made you the stretch option. Your defencemen can only hold a tight gap if you are coming back.
 
-**One forward in each lane — left wall, middle, right wall — and hold your lane when the puck is in another.** Two in one lane lets one defender cover both. Support here means being somewhere different, not being close. Call the lane you are in.
+**One forward in each lane — left wall, middle, right wall — and hold your lane when the puck is in another.** Two in one lane lets one defender cover both; some teams stack the middle on purpose on a 1-3-1 regroup, so ask. Support here means being somewhere different, not being close. Call the lane you are in.
 
 **Receive the puck moving.** On a regroup, curl back with the puck and turn up into your lane as it moves across, so you take the pass at speed. Do not stand and call for it, and do not leave before your defenceman has it.
 
@@ -627,13 +627,15 @@ Divide the ice lengthways into three lanes: **left wall, middle, right wall.** T
 ```facts
 Position: Divide the ice lengthways into left wall, middle and right wall, and put one forward in each lane
 Goal: Three separated forwards are three separate passing options — defenders cannot cover three lanes with one flat line of skaters unless they spread thin
-Never: Put two forwards in the same lane — one defender then covers both and you have made it 5-on-4 against yourself
+Risk: Two forwards in one lane lets one defender cover both — spread is the default, but some teams stack the middle on purpose on a 1-3-1 regroup, so ask yours
 Action: When the puck is in a lane that is not yours, hold your lane and stay level or ahead of the puck instead of going to help
 Key: Support in the neutral zone means being available in a different place, not being close
 Convention: Lanes are positions, not people — you will swap constantly, so call it: "I've got middle"
 ```
 
 **Why.** Three separated forwards are three passing options, and one flat line of defenders cannot cover three lanes without spreading thin. Two forwards in one lane lets one defender cover both — you have made it 5-on-4 against yourselves.
+
+**The alternative is coached too.** Some teams run a **1-3-1 regroup** that stacks the middle lane on purpose, with a low centre and a high middle support, accepting that one checker can see both. Spread and stacked look identical for one stride and then ask for opposite decisions, so find out which yours plays — see [Puck Support and Spacing](../hockey-iq/puck_support_and_spacing.md).
 
 **Why lane discipline goes wrong.** Everybody chases the puck. It goes to the left wall, your centre follows, and your right wing drifts to the middle to "support". Now the right side is empty, the defence has slid over, and there is nowhere to go.
 
@@ -825,7 +827,7 @@ A regulation sheet has **four neutral zone faceoff dots** — two just outside e
 Read: F1 skating straight at you, hard → they are pressuring; the answer is one quick pass past them
 Read: F1 arcing across, showing you the boards, not really closing → containment or a trap; do not go where they are steering you
 Read: F1 standing near the red line doing nothing → 1-3-1 or 1-4; take your time, look up and start a regroup
-Read: Count the bodies across the middle — two means space to attack, three means a 1-3-1, four in a line means a 1-4 or a full trap
+Read: Count the line across the middle — two is a 1-2-2, a trap if they sit at the red line with F1 gliding, so do not skate into it; three is a 1-3-1 or a left-wing lock; four is a 1-4
 Read: All their forwards on one side means the ice on the other side is real — that is what the D-to-D and the middle-lane relay are for
 Read: Their defencemen's feet stopped or squared up at the line → chip past them; feet moving backwards → carry it, you have the line
 Action: Check your own support before you commit — if both your forwards are in your lane, slow down and let them separate
@@ -839,10 +841,10 @@ You are coming out of your own end with the puck and about 1.5 seconds to decide
 - **F1 arcing across, showing you the boards, not really closing** → containment or a trap. **Do not go where they are steering you.** Change sides with a D-to-D, or accept the wall and be ready to chip past the man stepping up.
 - **F1 standing near the red line doing nothing** → 1-3-1 or 1-4. **Take your time, look up, and start a regroup.** Against a **1-3-1** the stretch pass is live, because there is ice behind the line. Against a **1-4** it is not — a receiver behind a wall on its own blue line is offside — so chip past and race instead, pulling up if the goalie comes out for it. Skating straight into the wall is what they want.
 
-**2. Count the bodies across the middle.** Lift your head at your own blue line and count the opponents between you and their blue line.
-- **Two** → there is space. Attack it.
-- **Three across** → 1-3-1. Look behind the wall before you look through it.
-- **Four in a line** → 1-4 or a full trap. There is nothing there. Regroup or chip and change.
+**2. Count the bodies across the middle.** Lift your head at your own blue line and count the opponents standing across the middle, between you and their blue line.
+- **Two** → a 1-2-2. Up near their blue line with F1 closing, it is containment and there is space — attack it. Sitting back at the red line with F1 gliding, it is the trap waiting for you: do not skate into it; move the puck instead.
+- **Three across** → 1-3-1 — or, with two forecheckers still deep in your end, the back line of a left-wing lock. Look behind the wall before you look through it.
+- **Four in a line** → 1-4. There is nothing there. Regroup or chip and change.
 
 **3. Check the far side.** If all their forwards are on one side of the ice, the ice on the other side is real. This is what the D-to-D and the middle-lane relay are for.
 

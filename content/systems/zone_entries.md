@@ -745,7 +745,7 @@ Never: Dump cross-corner into nobody — your far-side winger has to have read t
 **In short:** When a trap clogs the neutral zone, flip the puck over it to land past the defence but short of the goal line.
 
 ```facts
-Read: The opposition congesting the neutral zone — a trap, most commonly a 1-3-1 — and no route along the ice
+Read: The opposition congesting the neutral zone — a trap, such as a 1-3-1 or a 1-2-2 trap — and no route along the ice
 Action: Lift the puck high off the ice so it travels over sticks and bodies and lands in open space behind the defence
 Technique: Open the blade, get under the puck, and land it past the defence but before the goal line
 Goal: Go over the three-player wall rather than through it, and hang the puck long enough for your forwards to run underneath it
@@ -761,7 +761,7 @@ Lift the puck high off the ice so it travels over sticks and bodies and lands in
 
 ![](diagram:dump-flip-over-trap)
 
-- **The read:** the opposition are congesting the neutral zone — a **trap**, most commonly a **1-3-1** neutral zone structure with one forechecker, three players across the middle and one back — and there is no route along the ice.
+- **The read:** the opposition are congesting the neutral zone — a **trap**, such as a **1-3-1** neutral zone structure with one forechecker, three players across the middle and one back, or a **1-2-2 trap** — and there is no route along the ice.
 - **Why:** a flip does not have to get through the three-player wall; it goes over it. It also hangs long enough for your forwards to run underneath it.
 - **How:** open the blade, get under the puck, and land it **past** the defence but **before** the goal line — a puck crossing the goal line untouched from behind the centre red line is **icing** (some CARHA leagues use the blue lines instead, so ask yours).
 
@@ -876,7 +876,7 @@ Convention: Under this guide's standard 2-1-2 forecheck, F1 goes to the puck and
 Convention: F2 reads F1's angle and covers the side F1 forced them toward — F1 creates, F2 collects
 Convention: F3 stays high, around the top of the circles, protecting against the breakout pass up the middle and the counter-attack — and that job ends if the puck escapes, because F3 is the first man back
 Options: In a 1-2-2 F1 pressures but F2 and F3 hold higher, funnelling the puck to one side — fewer pucks recovered low, far fewer odd-man rushes
-Options: In a strong-side (stacked) 2-1-2 both F1 and F2 attack the same side hard; in a 1-3-1 F1 pressures and three lock the neutral zone, which is a trap
+Options: In a strong-side (stacked) 2-1-2 both F1 and F2 attack the same side hard; in a 1-3-1 forecheck F1 pressures alone and the puck-side player of the three across steps up as the second man
 Action: Find out which one your team plays — the same dump-in requires a different second man in each
 ```
 
@@ -886,7 +886,7 @@ Under the **standard forecheck used throughout this guide — a 2-1-2** — the 
 - **F2** reads F1's angle and covers **the side F1 forced them toward** — usually the strong-side wall or the area behind the net. F2 is the one who actually recovers most pucks; F1 creates, F2 collects.
 - **F3** stays high, generally around the top of the circles, protecting against the breakout pass up the middle and the counter-attack. **That job ends if the puck escapes the zone: F3 is the first man back.**
 
-**Other systems assign this differently.** In a **1-2-2**, F1 pressures but F2 and F3 both hold higher, funnelling the puck to one side rather than chasing it; you will recover fewer pucks below the goal line but concede far fewer odd-man rushes. In a **strong-side (stacked) 2-1-2**, both F1 and F2 attack the same side of the ice hard. In a **1-3-1 forecheck** F1 pressures and three players lock the neutral zone, which is barely a forecheck at all — it is a trap. **Find out which one your team plays**, because the same dump-in requires a different second man in each.
+**Other systems assign this differently.** In a **1-2-2**, F1 pressures but F2 and F3 both hold higher, funnelling the puck to one side rather than chasing it; you will recover fewer pucks below the goal line but concede far fewer odd-man rushes. In a **strong-side (stacked) 2-1-2**, both F1 and F2 attack the same side of the ice hard. In a **1-3-1 forecheck** F1 pressures alone and the line of three shifts with the puck, so the puck-side player of the three steps up as the second man. Dropped back into the neutral zone, the same digits name a trap rather than a forecheck. **Find out which one your team plays**, because the same dump-in requires a different second man in each.
 
 See [Forechecking Systems](forechecking_systems.md) for the full treatment.
 
