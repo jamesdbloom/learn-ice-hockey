@@ -13,19 +13,15 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W524 shipped with record `w524_faceoff_numbers_timeouts_and_british_third_man_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W525 shipped with record `w525_third_man_count_hc_draw_spots_and_dops_tariff_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W524 (20 Nov):**
-  - **(1) faceoffs facts :156 (293/300) now ends the NHL/IIHF/PWHL limb "…or any non-offender".** Voiced alone, a listener may not tie the circle-edge condition to the non-offending player. Render it and check. faceoffs :193 names USA Hockey and Hockey Canada for the scrum rule but not CARHA.
-  - **(2) "Plan on it" now recurs three times in goaltender's fight section (:1195, :1198, :1695).** Check for repetition when heard aloud.
-  - **(3) Other carriers of the IIHF third-man claim outside the W524 files** (rules_primer :554/:948, special_teams) may still give the IIHF's position as discretion only, without the Handbook's "is to be assessed" in a plain fight. Sweep the claim.
-  - **(4) The IHUK DOPS "3rd Man-in … Up to 1" row was read from a layout extraction with broken columns.** Neither its unit (games) nor its band has been confirmed. Render the PDF page with `pdftoppm`.
-  - **(5) From the W524 commit gate.**
-    - goaltender :1695's bold lead says "breaking one up does in three" while its repaired ending says the IIHF Handbook "does in a plain fight" (half-repaired sentence).
-    - faceoffs facts :156 "either bench" can be heard as both teams' benches; CARHA 57(j) means the attacking team's players' or penalty bench.
-    - rules_primer :958 says nothing on Hockey Canada's nine-spots position (hc.txt has no such sentence).
-    - faceoffs :189 cites NHL 85.5 for the lodged-puck draw, where 85.2 is "Puck Unplayable" (pre-existing). Check it.
+- **From W525 (20 Nov):**
+  - **(1) Re-sweep rules_primer's other "no such rule" / "writes no" negatives.** A phrase sweep for "face-off will/shall take place" missed Hockey Canada 6.8's "the face-off will be where…". The same gap may sit behind other negatives in that file. Sweep for the act, not one wording.
+  - **(2) faceoffs facts :156 is at 299/300.** Any future edit there must substitute, not add. The line has not been heard voiced alone (W524(1), not rendered).
+  - **(3) From the W525 commit gate.**
+    - uk_rules :308's "In the Elite League, IHUK's rules do not say whether the tariff applies" gives no instruction, while :413 and goaltender :1196 say "plan on the same" and C.2's header reads "Applies to all leagues". Add "plan on it" for parity.
+    - goaltender :1695 says "in three", but the same bullet's IIHF Handbook clause makes a plain-fight peacemaker a fourth. Reconcile the count with the ending, in every layer together (body :1188, facts :1170, KT10 :1794).
 - **From W523 (20 Nov; rows 1–3, 5 and 6 closed in W524):**
   - **(4) Whether the suicide crisis lines in mental_game's box take calls about thoughts of harming someone else.** The box now addresses that reader, and its "Immediate danger — call your local emergency number" line serves them. Do not add a provider claim without verifying it.
 - **From W522 (20 Nov; rows 3 and 5 closed in W523):**
