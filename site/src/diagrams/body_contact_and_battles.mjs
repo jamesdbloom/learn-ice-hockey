@@ -214,7 +214,7 @@ const anglingYourRoute = {
     'and where an angle ends depends on whether your league allows checking.',
 
   describe:
-    'The attacking half of the rink, with the net being defended at the right and our goalie in ' +
+    'The defending half of the rink, with the net being defended at the right and our goalie in ' +
     'its crease. Two skaters and nothing else. An opposition forward carries the puck in open ice ' +
     'on the side drawn at the top of the picture, between the centre red line and the blue line and ' +
     'wide of the faceoff-dot line, with the puck a stride ahead of them and outside them. Their route ' +

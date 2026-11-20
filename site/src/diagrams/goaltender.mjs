@@ -129,7 +129,7 @@ const playingTheAngle = {
     'instruction.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. One opposition ' +
+    'The defending half of the rink, the defended net at the right. One opposition ' +
     'forward stands at the top of the right-hand faceoff circle, the goalie’s right, with the puck just off ' +
     'the blade toward the net. A shaded triangle runs from the puck to the two goalposts, ' +
     'narrowing from the width of the net at the goal line to a point at the puck. The ' +
@@ -207,7 +207,7 @@ const frontDoorBackDoor = {
     'front door against the back door, and there is no universally correct answer.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. An opposition ' +
+    'The defending half of the rink, the defended net at the right. An opposition ' +
     'forward has the puck just inside the right-hand faceoff dot, on the goalie’s right. A second opposition ' +
     'forward stands unmarked on the far side of the net, five feet out from the goal ' +
     'line and clear of the crease. A dashed line — the notation for a pass — shows the ' +
@@ -274,7 +274,7 @@ const angleClosesWide = {
   // W473: "to the right of the net" read, in picture terms, as behind a net already drawn at the
   // right; the shooter is toward the TOP, which is the goalie's own right (goalie faces left).
   describe:
-    'The attacking half of the rink, the defended net at the right. An opposition ' +
+    'The defending half of the rink, the defended net at the right. An opposition ' +
     'forward has the puck level with the goal line, about fourteen feet from the net toward ' +
     'the top of the picture, which is the goalie’s right, between the net and the boards. The goalie is at the near post, on the ' +
     'goal line rather than out at the top of the crease, and tight against the post ' +
@@ -317,7 +317,7 @@ const failureModes = {
     'than technique problems.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. One opposition ' +
+    'The defending half of the rink, the defended net at the right. One opposition ' +
     'forward stands at the top of the right-hand faceoff circle, the goalie’s right, with the puck. Two ' +
     'goalie glyphs are drawn on the line from that puck to the centre of the goal ' +
     'line, representing the same goalie at two extremes rather than two players. ' +
@@ -652,7 +652,7 @@ const rimStopOrClear = {
     'whether the lines are painted.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. The area behind the goal ' +
+    'The defending half of the rink, the defended net at the right. The area behind the goal ' +
     'line between the two red trapezoid lines is shaded. A dashed line — the notation for a ' +
     'pass — starts high on the near boards in front of the goal line and curves around the ' +
     'end boards behind the net, crossing the goal line far out near the boards and outside ' +
@@ -730,7 +730,7 @@ const breakawayRetreat = {
     'ask your goalie coach which they teach and be consistent about it.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. One opposition forward ' +
+    'The defending half of the rink, the defended net at the right. One opposition forward ' +
     'carries the puck out of the neutral zone toward the net, drawn as a long smooth wave — ' +
     'the notation for skating with the puck — ending well short of the goalie. The ' +
     'goalie is drawn out in front of their net, about eleven feet from the centre of the ' +
@@ -806,7 +806,7 @@ const readingATip = {
     'split — so ask which one your coach teaches.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. An opposition defenceman ' +
+    'The defending half of the rink, the defended net at the right. An opposition defenceman ' +
     'stands at the point on the goalie’s right with the puck. A double line — the notation for a shot — ' +
     'runs from the puck toward the net and stops part of the way there. An opposition forward ' +
     'stands on that line about thirteen feet out from the goal line, in the shooting lane and ' +
@@ -874,7 +874,7 @@ const reboundCornersNotSlot = {
     'about it.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. An opposition defenceman ' +
+    'The defending half of the rink, the defended net at the right. An opposition defenceman ' +
     'stands at the point on the goalie’s left with the puck, and a double line — the notation for a shot ' +
     '— runs from it toward the net, stopping about nine feet short of the goalie. The ' +
     'goalie is on the line from that puck to the centre of the goal line, six feet out. ' +
@@ -939,7 +939,7 @@ const fiftyFiftyPuck = {
     'only about the race.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right, and the net has nobody in ' +
+    'The defending half of the rink, the defended net at the right, and the net has nobody in ' +
     'it. A loose puck sits in the near corner, in front of the goal line. The goalie is ' +
     'drawn out of their crease and part of the way to it, about six feet away. An opposition ' +
     'forward is arriving at the same puck from the other side and is slightly closer to it ' +

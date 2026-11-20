@@ -328,7 +328,7 @@ const theHouse = {
     'Nothing here is painted on the ice; the circles, dots and crease that fix its corners are.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. A shaded six-sided ' +
+    'The defending half of the rink, the defended net at the right. A shaded six-sided ' +
     'region is drawn on the ice: its two narrow corners are the two goalposts on the goal ' +
     'line, it widens out to the two end-zone faceoff dots, and its far edge runs straight ' +
     'across between the tops of the two faceoff circles. The result is the shape of a ' +
@@ -405,7 +405,7 @@ const collapseCorner = {
     'pin. Pin the puck, not the player. Never finish into their back.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right, with the puck in the ' +
+    'The defending half of the rink, the defended net at the right, with the puck in the ' +
     'strong-side corner at the top of the picture. Five opposition players: the puck carrier ' +
     'deep in the strong-side corner with the puck drawn at their stick against the boards, so they ' +
     'are facing the wall with their back to the ice, a forward supporting on the strong-side half-wall, a ' +
@@ -520,7 +520,7 @@ const collapseHighSlot = {
     // `net-front-walk-out-direction` — a different situation entirely. A `describe` is the SVG
     // <desc> a screen reader announces, so a blind reader there was being told to compare
     // against a picture that is not there. Restated self-contained; nothing described changed.
-    'The attacking half of the rink, the defended net at the right, a beat after the corner ' +
+    'The defending half of the rink, the defended net at the right, a beat after the corner ' +
     'battle begins. The opposition: the puck carrier deep in ' +
     'the strong-side corner, a forward on the strong-side half-wall, a forward at the net ' +
     'front, and two defencemen at the points. Our own five are drawn mid-collapse. The centre ' +
@@ -590,7 +590,7 @@ const walkDownZone = {
     'team’s version before you need it.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. The opposition ' +
+    'The defending half of the rink, the defended net at the right. The opposition ' +
     'defenceman at the strong-side point has the puck and carries it down the ice to the top ' +
     'of the strong-side faceoff circle, about 35 feet from the goal line. Our strong-side ' +
     'winger, who started just goal-side of that defenceman at the point, moves about a dozen feet with ' +
@@ -670,7 +670,7 @@ const walkDownMan = {
     'What man coverage costs is a winger in a footrace with no help behind them.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right, and the same walk-down as ' +
+    'The defending half of the rink, the defended net at the right, and the same walk-down as ' +
     'the previous diagram. The opposition defenceman carries the puck from the strong-side ' +
     'point down to the top of the strong-side faceoff circle. This time our strong-side ' +
     'winger tracks the carrier the whole way, on a route running a few feet goal-side of the carry and ' +
@@ -798,7 +798,7 @@ const boxPlusOne = {
     'reasonable version, not a measurement.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. Four of our players stand ' +
+    'The defending half of the rink, the defended net at the right. Four of our players stand ' +
     'at the corners of a shaded four-sided region drawn around the slot: two low, one either ' +
     'side of the crease near the posts, and two high and wide at the tops of the two faceoff ' +
     'circles. Our fifth player, marked plus one, is out of the box and up in the strong-side ' +
@@ -878,7 +878,7 @@ const collapsingBox = {
     'not to defend a whole game.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right, with the shaded house ' +
+    'The defending half of the rink, the defended net at the right, with the shaded house ' +
     'region drawn on the ice. All five of our players stand inside it: two defencemen low, ' +
     'one either side of the crease and about nine feet off the posts, and three forwards ' +
     'above them, one in the high slot and one either side of the slot. Our goalie is in ' +
@@ -967,7 +967,7 @@ const overload = {
     'commoner one. A coaching choice: find out whether yours plays it, and when.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right. The opposition puck ' +
+    'The defending half of the rink, the defended net at the right. The opposition puck ' +
     'carrier is on the strong-side half-wall with a teammate supporting in the strong-side ' +
     'corner, and a third forward is alone at the far post on the weak side of the net. All ' +
     'five of our players are on the puck side of the ice: a defenceman squeezing the carrier ' +
