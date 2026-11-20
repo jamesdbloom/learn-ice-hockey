@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W551 shipped with record `w551_small_leftovers_hc_arm_block_and_carha_head_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W552 and W553 shipped with record `w553_hc_arm_block_moving_in_limb_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -24,8 +24,10 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
   - **(3) Stale comment:** the rush-3-on-2-alternative module still says "UNDECLARED PAIR… reported to the coordinator". The pair is now declared in `check_caption_pairs.py`, so correct the comment at the next diagram edit.
-- **From W551 (20 Nov):**
-  - **(1) Hockey Canada arm block in 7.3 divisions, other carriers.** W551 established in puck_handling and forechecking that, where 7.3 bars checking, blocking a player moving into you can be called a body check (the definition's "opposite-directional force" limb). Sweep the other carriers of the 8.1 strength-move permission (`grep -n '8.1' content/ | grep -i 'strength\|arm'`; body_contact_and_battles :488 and :1751 are likely) for the same scope. Follow the W529 convention: state the 7.3 act, never "8.1 does not apply".
+- **From W553 (20 Nov):**
+  - **(1) Does leaning the shaft count as cross-checking?** puck_handling :521's Legal cell says "Leaning the bar in to hold your ground" where checking is allowed. Hockey Canada 9.2 defines cross-checking as using the shaft "to check an opponent", with no force element. A rules-verifier should decide this across Hockey Canada, CARHA and USA Hockey.
+  - **(2) Optional: winger :104/:124 "hold the position you already have".** A safety reviewer found no exposure, but "hold it and never push back" would close the remaining gap.
+  - **(3) A wider sweep for Hockey Canada grants with no "8.1".** Look for blocking or standing-your-ground grants worded without "8.1", "arm block" or "strength move".
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
   - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
   - **(4) Four facts lines still say "IIHF and Hockey Canada off the head"** (forechecking :320, :701, :750, :980). None had room to split. The head-only form errs harsh for the IIHF; that is acceptable, so split only if a block is next edited.
