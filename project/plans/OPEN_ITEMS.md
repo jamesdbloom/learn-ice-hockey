@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W572 and W573 shipped with record `w573_carha_contact_match_limbs_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W574 and W575 shipped with record `w575_back_cross_check_and_carha_charging_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -21,9 +21,11 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
 - **From W572 (20 Nov):**
-  - **(1) DZC :783 (a reading).** A cross-check in a net-front player's back may fall under CARHA 53 (game misconduct floor, 53(b) match into the net), and likewise NHL/PWHL 43 and Hockey Canada 7.5. The bullet prices it under cross-checking only. Needs a rules-verifier ruling.
+  - [(1) closed in W575: a back cross-check can be called checking from behind in every book, and under CARHA its Note bars any other call.]
   - **(2) Lower-confidence CARHA units that stop at the major** with no sibling giving another book a match: body_contact :563/:597/:704/:123/:678, game_management :1255, defender :952/:921, winger :757/:124/:762, puck_handling :484. Do not sweep; each needs a layer test.
-  - **(3) The CARHA charging subset was not fully read.**
+  - [(3) closed in W574/W575: no ceiling or stride defect. center KT9 and game_management :350 gained 52(b)'s injury limb.]
+  - **(4) Borderline, from W574:** goaltender :1713's "start at a minor but run to a major" list does not say CARHA 52(a) and 66(b) also run to a major plus game misconduct outside the crease. playing_without_the_puck facts :720 is a CARHA goalie-contact ladder without 52(b); the adjacent :727 carries it.
+  - **(5) Other documents pricing a net-front cross-check** (body_contact, defender, …) may lack the checking-from-behind route that W575 added to DZC.
 - **From W571 (20 Nov):**
   - **(1) center now carries CARHA 53(a)'s clause in seven units** (:691, :709, :792, :894, :899, CM :918, :929). Do not add an eighth. If center is edited for readability, drop the body copies at :709 and :792 first, because the nearest facts line carries the clause.
   - **(2) Optional, errs harsh:** most sites say CARHA can make "any hit from behind" a match. 53(a) reaches an *intentional* push, check or hit from behind. center :899 uses "intentional".
