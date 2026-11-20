@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W554 shipped with record `w554_bar_as_brace_arms_bent_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W555 shipped with record `w555_bar_interference_push_latitude_and_arrival_advisories_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -24,9 +24,6 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
 - **From W553 (20 Nov):**
-  - **(1b) Interference limb for the bar (optional).** USA Hockey Casebook 609 Situation 2 warns that steering with the bar may be interference "if a competitive advantage is gained and there is no puck in the area". puck_handling's row does not carry this, and the table has 3 characters of headroom.
-  - **(1d) The Penalty cell opens "Arms extended, driving the shaft in" (W554 gate, not blocking).** Under Hockey Canada and CARHA a bent-arm drive is a cross-check too; :523 and :506 already say never drive it. Next edit: "Driving the shaft in, arms extended or not".
-  - **(1c) Sweep for the Hockey Canada push-leniency.** W554 cut "a Hockey Canada push is the referee's call" from a penalty cell as permissive. Grep `pushing motion` and `push is the referee` for other carriers.
   - **(2) Optional: winger :104/:124 "hold the position you already have".** A safety reviewer found no exposure, but "hold it and never push back" would close the remaining gap.
   - **(3) A wider sweep for Hockey Canada grants with no "8.1".** Look for blocking or standing-your-ground grants worded without "8.1", "arm block" or "strength move".
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
@@ -319,7 +316,16 @@ These questions sit inside the rows above and need the owner's call before anyon
 
 - **Pressure routes, follow-ups (from W550):**
   - check-arrivals form (p) is now FAIL, with an allowlist in `site/scripts/arrivals-allow.json`.
-  - Still uncovered: a curve that bows through a player before its tip, and targets more than 9 ft from the tip (forecheck-roles-rotate D2 sits at 9.49 ft, miss 0.00).
+  - W555 added two advisories, both WARN.
+    - [c] a curve through a player: 0 hits; it now tests every skater kind.
+    - [f] a tip aimed at a distant player, 9–15 ft: forecheck-roles-rotate is redrawn.
+  - Two [f] hits remain, both opposition-owned and awaiting the owner's opposition-route policy:
+    - you-cannot-beat-two route 0: opposing F → your F, 12.00 ft, miss 0.00.
+    - cross-ice-in-your-own-end route 1: opposing F3 → your W2, 10.00 ft, miss 1.03. Probably by design.
+  - [c] has a clean baseline, so it could go to FAIL with no allowlist. If [f] is ever promoted it needs [p]'s allowlist mechanism, and `--allow-template` would need rule f.
+  - Limits:
+    - [c] tests the plain curve, not the drawn wave or zigzag, uses one glyph radius, and never tests a route's own target.
+    - The summary line's "in scope" count does not show [c]'s 16 extra routes.
     - [defender-holding-the-line puck closed in W551: kept on purpose. It sits clear of the passer's glyph, and the route aims at the lane, not the puck.]
   - Pre-existing: corner-escape-routes' auto-placed "'takes the middle away'" label crosses a painted circle.
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.

@@ -24,7 +24,9 @@
  *   1. It tests the straight segment from a route's start to its end, and the terminal
  *      tangent of that segment. A route whose *drawn curve* bows through a player while
  *      both endpoints and the tangent clear him is invisible to it. That defect has
- *      happened in this corpus and only an eye caught it.
+ *      happened in this corpus and only an eye caught it. FORM (c) (advisory) now samples
+ *      the drawn quadratic for THIRD players — never the route's own target, whose arrival
+ *      zone is (b)/(p)'s — and not the wave/loop/zigzag ornament around it.
  *   2. Form (a)'s reach is UNBOUNDED — a tangent is a ray, and a ray crosses the rink. It
  *      therefore reports how far beyond the tip the near-miss occurs so a human can
  *      dismiss one that happens 40 ft downstream. No principled bound is available: none
@@ -35,6 +37,8 @@
  *      excludes him outright and form (b) only fires inside `ARRIVAL.noArrow`, so a tip
  *      stopping 9.5 ft short and pointing dead at him is reported by nothing. Nothing does
  *      that today (nearest: `winger-offensive-zone-patches`, 10.05 ft, 9.71 ft miss).
+ *      FORM (f) (advisory) now reports one out to FAR_AIM ft, and the same for pressure
+ *      routes on any player; beyond FAR_AIM it is still reported by nothing.
  *   4. Advisories have no baseline. They are printed and re-triaged from scratch each round,
  *      so a NEW advisory looks exactly like an accepted one. An allowlist keyed by
  *      diagram + target + reason would make the hard/advisory split enforceable rather than
@@ -156,6 +160,50 @@ const PRESSURE_KIND = 'pressure';
 const PRESSURE_LEVEL = 'FAIL';  // promoted 20 Nov 2026 (W550) after the W549 triage: six redrawn, three allowlisted
 const PUCK_AIM = 1.0;
 
+/**
+ * FORM (c) — THE CURVE'S BODY PASSES THROUGH A PLAYER. Advisory (WARN), never a failure.
+ *
+ * Closes the first half of WHAT IT DOES NOT DO note 1: every other form tests the tip and
+ * the terminal tangent, so a route whose drawn curve bows THROUGH a third player before it
+ * arrives reads as "skate through him" and was reported by nothing. The quadratic is
+ * sampled by arc length exactly as `playSvg` builds it (same control point as the tangent
+ * below), and a route is reported when a sample comes within ARRIVAL.glyph — the forward
+ * circle's radius in `playSvg` (`const r = 2.9`) — of any player other than its OWNER and
+ * its TARGET (the player nearest the tip, if within ARRIVAL.noArrow). The first and last
+ * BODY_TRIM ft of the curve are not tested: they sit inside the owner's glyph and the
+ * target's arrival zone, which forms (b)/(p) already own.
+ *
+ * SCOPE: routes that draw a SKATER MOVING (BODY_KINDS). A pass or a shot crossing a
+ * teammate is what a pass lane looks like and is out, for the reason ARROW_KINDS gives.
+ * Same-team and opposition crossings are both reported and labelled, because they are
+ * different defects: through an opponent reads as a collision, through a teammate as a
+ * picture that cannot be skated.
+ *
+ * ⚠️ WHAT IT CANNOT SEE: it samples the underlying quadratic, not the wave/loops/zigzag
+ * ornament `carry`, `backward` and `backxover` draw around it (amplitude ~1 ft), so a
+ * near-miss within that amplitude can be under- or over-stated by it. It uses ONE radius
+ * for every glyph: a defence triangle reaches 3.6 ft at its vertices and ~1.8 ft at its
+ * edge midpoints, and a goaltender is a bare letter with no body at all. And the white
+ * halo widens the visible ink to 3.875 ft, so a 3.0 ft pass is still drawn against the ring.
+ */
+const BODY_KINDS = new Set(['skate', 'carry', 'backxover', 'backward', 'crossovers', 'stop', 'pressure']);
+const BODY_TRIM = 1.5;
+const BODY_SAMPLES = 400;   // dense on purpose: 40 samples on a 90 ft route are 2.25 ft apart
+
+/**
+ * FORM (f) — A TIP AIMED AT A DISTANT PLAYER. Advisory (WARN), never a failure.
+ *
+ * Form (p) only looks inside ARRIVAL.noArrow, so a pressure route stopping 9.5 ft short and
+ * pointing dead at a player is reported by nothing (`forecheck-roles-rotate` D2, 9.49 ft,
+ * miss 0.00). This extends the same tangent-miss test out to FAR_AIM ft for pressure routes
+ * (every opponent, goaltender included), and for the arrow-ended kinds to the GOALTENDER only,
+ * on READER-OWNED routes only — form (a) already covers skaters at unbounded range, note 3
+ * records the goaltender gap, and an opposition carry at the reader's net is a breakaway.
+ * FAR_AIM is a reporting horizon, not a derived rule: nothing says 15 ft is where an aim stops
+ * reading as "at him".
+ */
+const FAR_AIM = 15.0;
+
 /** Anchor tolerance for deciding which player a route belongs to. */
 const OWNER_TOLERANCE = ARRIVAL.glyph;
 
@@ -176,7 +224,11 @@ for (const d of DIAGRAMS) {
   for (const [ri, r] of (d.routes ?? []).entries()) {
     const kind = r.kind ?? 'skate';
     const isPressure = kind === PRESSURE_KIND;
-    if (!ARROW_KINDS.has(kind) && !isPressure) continue;
+    // (c) reaches every BODY_KINDS route; forms (a)/(b)/(p)/(f) only the arrow-ended and
+    // pressure kinds. ⚠️ This skip once tested ARROW_KINDS alone, BEFORE (c), so `backward`,
+    // `crossovers` and `stop` were listed in BODY_KINDS and never reached — a clean (c) run
+    // overstated its own coverage. The narrower skip now sits after (c).
+    if (!BODY_KINDS.has(kind) && !ARROW_KINDS.has(kind)) continue;
 
     const from = loc(r.from), to = loc(r.to);
 
@@ -210,7 +262,6 @@ for (const d of DIAGRAMS) {
       continue;
     }
     const opponents = players.filter((p) => p.team !== owner.team);
-    if (!opponents.length) continue;
 
     // THE TERMINAL TANGENT OF THE CURVE ACTUALLY DRAWN, not the chord.
     //
@@ -237,6 +288,49 @@ for (const d of DIAGRAMS) {
     const tlen = Math.hypot(tx, ty) || 1;
     const ux = tx / tlen, uy = ty / tlen;
 
+    // ---- (c) ADVISORY: the drawn curve's BODY must not pass through a third player. ----
+    if (BODY_KINDS.has(kind)) {
+      const at = (k) => ({
+        x: (1 - k) ** 2 * from.x + 2 * (1 - k) * k * mx + k * k * to.x,
+        y: (1 - k) ** 2 * from.y + 2 * (1 - k) * k * my + k * k * to.y,
+      });
+      const pts = [];
+      let s = 0, prev = at(0);
+      for (let i = 0; i <= BODY_SAMPLES; i++) {
+        const c = at(i / BODY_SAMPLES);
+        s += Math.hypot(c.x - prev.x, c.y - prev.y);
+        pts.push({ ...c, s });
+        prev = c;
+      }
+      const total = s;
+      let target = null, tbest = Infinity;
+      for (const p of players) {
+        if (p === owner) continue;
+        const dd = Math.hypot(p.x - to.x, p.y - to.y);
+        if (dd < tbest) { tbest = dd; target = p; }
+      }
+      if (tbest >= ARRIVAL.noArrow) target = null;
+      for (const p of players) {
+        if (p === owner || p === target) continue;
+        let near = Infinity, nearS = 0;
+        for (const c of pts) {
+          if (c.s < BODY_TRIM || c.s > total - BODY_TRIM) continue;
+          const dd = Math.hypot(p.x - c.x, p.y - c.y);
+          if (dd < near) { near = dd; nearS = c.s; }
+        }
+        if (near < ARRIVAL.glyph) {
+          findings.push({
+            level: 'WARN', rule: 'c', diagram: d.id, kind, ri, opponent: p.id, goalie: p.goalie,
+            dist: near, at: nearS, total, sameTeam: p.team === owner.team,
+            side: p.team, ownerSide: owner.team, ownerId: owner.id, targetId: target?.id ?? null,
+          });
+        }
+      }
+    }
+
+    if (!ARROW_KINDS.has(kind) && !isPressure) continue;
+    if (!opponents.length) continue;
+
     if (isPressure) {
       // ---- (p) ADVISORY: a pressure route's tangent must miss its target. ----
       const pk = d.puck ? loc(d.puck) : null;
@@ -245,9 +339,20 @@ for (const d of DIAGRAMS) {
       for (const o of opponents) {
         const wx = o.x - to.x, wy = o.y - to.y;
         const tipDist = Math.hypot(wx, wy);
-        if (tipDist >= ARRIVAL.noArrow) continue;
         const along = wx * ux + wy * uy;
         const miss = along > 0 ? Math.abs(wx * -uy + wy * ux) : tipDist;
+        if (tipDist >= ARRIVAL.noArrow) {
+          // ---- (f) ADVISORY: aimed at a player beyond (p)'s 9 ft horizon. ----
+          if (tipDist < FAR_AIM && along > 0 && miss <= ARRIVAL.glyph) {
+            const fx = pk !== null && pkMiss < PUCK_AIM && pkAlong >= 0 && along - pkAlong > ARRIVAL.glyph;
+            findings.push({
+              level: fx ? 'OK' : 'WARN', rule: fx ? 'f-x' : 'f', diagram: d.id, kind, ri,
+              opponent: o.id, goalie: o.goalie, dist: tipDist, miss, pkMiss, pkAlong,
+              side: o.team, ownerSide: owner.team, ownerId: owner.id,
+            });
+          }
+          continue;
+        }
         if (miss > ARRIVAL.glyph) continue;
         const angle = Math.acos(Math.max(-1, Math.min(1, along / (tipDist || 1)))) * 180 / Math.PI;
         const exempt = pk !== null && pkMiss < PUCK_AIM && pkAlong >= 0
@@ -328,7 +433,24 @@ for (const d of DIAGRAMS) {
       // at him" is true of any route toward the net and says nothing about that route.
       // Empirically it fired on exactly two, both `carry` routes aiming dead at the
       // goalie from 38 and 48 ft short of him — geometry, not a near miss.
-      if (o.goalie) continue;
+      if (o.goalie) {
+        // ---- (f) ADVISORY: an arrow aimed at a goaltender from beyond 9 ft (note 3). ----
+        const gx = o.x - to.x, gy = o.y - to.y;
+        const gd = Math.hypot(gx, gy), ga = gx * ux + gy * uy;
+        const gm = Math.abs(gx * -uy + gy * ux);
+        // READER-OWNED ROUTES ONLY. An opposition carry aimed at the reader's goaltender is
+        // what a breakaway IS (`goalie-breakaway-retreat` was the only hit, and a false one);
+        // the risk this arm exists for is the reader being drawn skating at a goaltender.
+        if (owner.team === 'own'
+            && gd >= ARRIVAL.noArrow && gd < FAR_AIM && ga > 0 && gm <= ARRIVAL.glyph) {
+          findings.push({
+            level: 'WARN', rule: 'f', diagram: d.id, kind, ri, opponent: o.id, goalie: true,
+            dist: gd, miss: gm, pkMiss: null, pkAlong: null,
+            side: o.team, ownerSide: owner.team, ownerId: owner.id,
+          });
+        }
+        continue;
+      }
       // The ray starts AT THE TIP and runs along the terminal tangent. (The chord version
       // projected from the route's start, which conflated the run of the line with the
       // reach of the ray.)
@@ -370,6 +492,16 @@ for (const f of findings) {
         ? ` — ALLOWLISTED (${f.ruling})`
         : (f.pkMiss !== null ? ` (puck miss ${f.pkMiss.toFixed(2)} ft, ${f.pkAlong.toFixed(2)} ft along)` : ' (no puck drawn)')
           + (f.reraised ? ` — RE-RAISED, allowlist entry no longer holds: ${f.reraised.join('; ')}` : ''))
+    : f.rule === 'c'
+    ? `curve body passes ${f.dist.toFixed(2)} ft from ${f.sameTeam ? 'TEAMMATE' : 'OPPONENT'} `
+      + `${f.goalie ? f.opponent + ' (goaltender)' : f.opponent} (route ${f.ri}, ${f.at.toFixed(1)} of `
+      + `${f.total.toFixed(1)} ft along; target ${f.targetId ?? 'none within 9 ft'})`
+    : f.rule === 'f' || f.rule === 'f-x'
+    ? `tip aimed at a DISTANT player (route ${f.ri}): ${target}, d ${f.dist.toFixed(2)} ft, `
+      + `miss ${f.miss.toFixed(2)} ft`
+      + (f.rule === 'f-x'
+        ? ` — EXEMPT, stick-on-puck (puck ${f.pkAlong.toFixed(2)} ft ahead, miss ${f.pkMiss.toFixed(2)} ft)`
+        : f.pkMiss !== null && f.pkMiss !== undefined ? ` (puck miss ${f.pkMiss.toFixed(2)} ft, ${f.pkAlong.toFixed(2)} ft along)` : '')
     : f.rule === 'a'
     ? `terminal tangent passes ${f.dist.toFixed(2)} ft from ${target}, `
       + `${f.beyond.toFixed(1)} ft beyond the tip`
@@ -404,7 +536,9 @@ for (const u of unowned) {
 }
 
 const fails = findings.filter((f) => f.level === 'FAIL');
-const exempt = findings.filter((f) => f.rule === 'p-x');
+const exempt = findings.filter((f) => f.rule === 'p-x' || f.rule === 'f-x');
+const bodyHits = findings.filter((f) => f.rule === 'c');
+const farHits = findings.filter((f) => f.rule === 'f');
 const allowed = findings.filter((f) => f.rule === 'p-a');
 const advisory = findings.length - fails.length - exempt.length - allowed.length;
 const routes = DIAGRAMS.reduce((a, d) => a + (d.routes?.length ?? 0), 0);
@@ -417,6 +551,9 @@ console.log(
   `\ncheck-arrivals: ${DIAGRAMS.length} diagrams · ${routes} routes `
   + `(${arrows} skater-owned and arrow-ended, ${pressures} pressure; the only ones in scope) · `
   + `${fails.length} hard, ${advisory} advisory`
+  + ` (of which ${bodyHits.length} [c] curve-through-player: `
+  + `${bodyHits.filter((f) => !f.sameTeam).length} opposition, ${bodyHits.filter((f) => f.sameTeam).length} same-team; `
+  + `${farHits.length} [f] aimed at a distant player)`
   + (exempt.length ? `, ${exempt.length} exempt (stick-on-puck)` : '')
   + (allowed.length ? `, ${allowed.length} allowlisted` : '')
   + (stale.length ? `, ${stale.length} STALE allowlist entr${stale.length === 1 ? 'y' : 'ies'}` : '')

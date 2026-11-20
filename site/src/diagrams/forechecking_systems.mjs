@@ -1332,7 +1332,7 @@ const forecheckRolesRotate = {
     'are the roles they have just taken and the words beside them are the roles they held before the pass. ' +
     'Deep beside the net toward the top of the picture, the side the pass left from, stands the forward marked F3, labelled "was F1, beaten", with an ' +
     'arrow taking them up ice towards the high middle. Down toward the bottom of the picture, near the new carrier, stands the forward marked F1, ' +
-    'labelled "was F2, closest", with a short route ending in two bars towards the new carrier. In the ' +
+    'labelled "was F2, closest", with a short route ending in two bars up ice of the new carrier and on their inside, toward the middle, short of them and pointed past them rather than at them. In the ' +
     'high middle stands the forward marked F2, labelled "was F3, high", with an arrow taking them down and ' +
     'across toward the bottom of the picture. The two defencemen are on the offensive blue line at the points, with no ' +
     'routes at all. A dashed pass runs from behind the net, round the back of the goal, to the corner at the bottom of the picture.',
@@ -1371,9 +1371,19 @@ const forecheckRolesRotate = {
     // across the goal mouth would contradict the sibling document that owns it.
     { from: CARRIER, to: ROT_D2, kind: 'pass', bow: 5 },
     // The new F1 closing. `pressure`, so it ends in two bars: arrive and contain,
-    // not continue through. Its tip is 9.5 ft from D2 and 10.9 ft off the line to
-    // their winger.
-    { from: ROT_NEAREST, to: { at: 'corner:left', dx: -7, dy: 5 }, kind: 'pressure' },
+    // not continue through.
+    // ⚠️ RE-AIMED W555 (20 Nov 2026): the old tip (75, -29) made the route (66,-26) -> (75,-29),
+    // unit (0.949, -0.316), point DEAD at D2's body -- check-arrivals form [f]: d 9.49 ft, tangent
+    // miss 0.00 -- under a caption that says "never finish into their back". The puck is still in
+    // flight behind the net, so no stick-on-puck reading was available. New tip (76, -27): chord
+    // (10, -1), unit (0.995, -0.0995); tip -> D2 (84, -32) is (8, -5), d 9.43 ft, and the tangent
+    // passes D2's anchor by 4.18 ft on his INSIDE (the middle side). The tip itself is ~8 ft UP ICE
+    // of D2 and ~5 ft toward the middle -- NOT between him and the net (it is 8.7 ft off the D2 -> net
+    // line; a W555 draft said otherwise and was corrected on review). It points into the ice D2 would
+    // skate out into -- "take the ice", not the man. The tip is now 7.8 ft off the D2 -> W2 line
+    // (was 10.9). All figures assume site/src/data/rink.json as of 20 Nov 2026 (corner:left (82,-34),
+    // faceoff-dot:left (69,-22), half-wall:left (69,-38.5)); re-derive if that file's anchors move.
+    { from: ROT_NEAREST, to: { at: 'corner:left', dx: -6, dy: 7 }, kind: 'pressure' },
     // The beaten forechecker climbing. THE MOST IMPORTANT ARROW IN THE PICTURE,
     // because it draws the thing the section says not to do the opposite of: he
     // goes up ice, not back at the puck. Its tip is in open ice with no opponent
