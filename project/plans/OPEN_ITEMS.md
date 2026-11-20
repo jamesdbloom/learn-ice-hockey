@@ -13,23 +13,20 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W533 shipped with record `w533_usa_hockey_620_in_goalie_contact_ladders_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W535 shipped with record `w535_usa_hockey_620_in_skater_contact_ladders_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
-- **From W533 (20 Nov):**
-  - **(1) 620(b) in the SKATER charging ladders.** A careless charge that reaches a skater's head, face or neck also ejects under USA Hockey 620(b). These units give 607(b) "if reckless" as the only route:
-    - risk_management facts :300 (299/300; fit it by substituting words);
-    - risk_management :322 ("leave your feet near an opponent's head" gives IIHF 48 only);
-    - forechecking :249, :261, :999, :1001.
-
-    Brief it as a claim, and sweep for more carriers.
+## Carry-overs from waves SG93–SG133 (open)
+- **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed):**
   - **(2) uk_rules :415 DOPS band.** Kicking (49), slew-footing (52) and throwing equipment (53) share the "11+" band, and head-butting shares the "20" band. The sentence names only boarding, checking from behind, the stick fouls and a check to the head. Consider adding slew-footing.
-  - **(3) Casebook 620 Situation 4's mandatory match.** A check made with excessive force to intimidate or punish that reaches the head "must be assessed as a match penalty" (620(c)). It is carried only at glossary :398 and rules_primer :837. Sweep the other files for "intimidat" and "punish" framings. Also check the honest-attempt rungs (607 Situation 4) in goaltender (:1266, :1279, :1622) and body_contact (:1384) for the 620 overlay.
+  - **(3) The honest-attempt rung at goaltender facts :1266** (299/300, its block is at HARD_MAX) still has no 620 overlay. Its sibling :1262 carries 620(b). Left in W535.
   - **(4) The "X and Y in the crease" parse shape.** Dropping a book from a list can leave its scope on a sibling, as happened at winger :789.
     - Only group 2's nine files were checked by listening.
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
-    - risk_management :709 still opens "Two NHL rule numbers govern it, and they are a pair".
-
-## Carry-overs from waves SG93–SG133 (open)
+- **From W535 (20 Nov):**
+  - **(1) Two lexical sweeps keyed on "reckless".** A unit that prices a head-reaching act under USA Hockey without that word could have passed both. Examples: "only a violent one", "can end your game", or a "several books" list that leaves USA Hockey out. Read the Key Takeaways of the 12 W535 files in full; the reviewers read only some.
+  - **(2) forechecking :1068.** A check on an engaged player, priced "if reckless (640(g))". 273/300; adding the head limb needs a rewrite.
+  - **(3) Lines not yet heard aloud.** body_contact :670, the new adult-men head line after :668/:669, which say the book is silent for adult men under 640. Also every W535 facts rewrite. Only group 1's reviewer read for listening, and nobody rendered.
+  - **(4) "likely ban" in place of "likely multi-game ban".** body_contact :1474 and OZP :968 were cut to fit. Restore where a substitution allows.
 - **From W531 (20 Nov; rows 1, 2 and 4 closed in W533):**
   - **(3) NHL 61.8 / PWHL 63.8 supplementary discipline** are carried nowhere (IIHF 61.6 is).
 - **From W529 (20 Nov; rows 1, 4 and 6 closed in W530; 3 in W531):**
