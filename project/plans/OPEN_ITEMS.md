@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W556 and W557 shipped with record `w557_box_out_no_check_scope_and_label_paint_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W558 shipped with record `w558_labels_off_paint_and_dots_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -331,6 +331,10 @@ These questions sit inside the rows above and need the owner's call before anyon
   - **corner-escape-routes "two ways out" (A1) label.** It sits on the faceoff dot at (69, 22), and its right end runs 0.92 ft past the circle arc.
     - 736 hint positions were tried; none the placer accepts clears both, because of the ownership rule.
     - Options: shorten the label (e.g. "two exits", but that loses its echo of the caption); let a spec force a position in rink.mjs; or accept it.
+  - **Label-paint leftovers (from W558).**
+    - 463 hits remain on the worklist. 2 are `--severe` and kept on purpose: faceoff-where-the-draw-goes "carried offside" (the word gap is on the blue line) and offside-faceoff-location "if carried" (a false positive from the width estimate).
+    - Pre-existing, not yet looked at: dz-box-plus-one "the only one chasing" (goal line and arc); the-risk-map "their end" (over the far net and crease); dz-walk-down-man "on the corner" and "on the net front".
+    - At 400 px, full-rink diagram labels are 7–10 px tall, which is marginal. That is a format question.
   - [check_label_paint blind spots closed in W556: the inset is capped at half a character, and filled dots are tested. 446 → 467 hits, 12 of them dots. The white halo is still not counted.]
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.

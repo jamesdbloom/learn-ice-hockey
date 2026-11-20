@@ -548,7 +548,10 @@ const ppBackdoor = {
     // "commits to the strong side or to the net-front player" — drawn shading to
     // the net-front attacker, the same offset pk-box's own strong-side low D uses.
     // SG165 labelHint: above D, 0.7 ft right so the words clear the faceoff dot.
-    { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 }, label: 'strong side, low', labelHint: [0.7, 12] },
+    // W558 labelHint (20 Nov 2026): [0.7, 12] put the words across a faceoff dot, the circle and a
+    // hash mark. [-9, 7] sits them inside the faceoff circle, below its dot, clear of all three, with a
+    // leader to D.
+    { id: 'D', team: 'opp', pos: 'D', at: { at: 'net-front', dx: -4, dy: 10 }, label: 'strong side, low', labelHint: [-9, 7] },
     { id: 'N', pos: 'F', at: NET_FRONT,          label: 'net front' },
     { id: 'P', pos: 'F', at: 'point:right',      label: 'puck up top' },
     // `BD` for backdoor, not a bare letter. Every other id in this file is

@@ -324,6 +324,13 @@ const theRiskMap = {
         { at: 'neutral-dot:left:far', dx: -5 },    // (-25, -22)
       ],
       label: 'the middle',
+      // W558 (20 Nov 2026): centred on the band's mean the bold words sat on the centre red line,
+      // the centre-ice dot (same colour as the text) and both arcs of the centre circle
+      // (check_label_paint --severe). labelDy 16.5 lifts them into the band between the circle's top
+      // (y 15) and the band's dashed edge (y 22), clear of the dot and the circle and the dots at
+      // (+/-20, 22). The red line still runs through them: at ~27 ft the label is wider than either
+      // half of the neutral zone, so no spot in the band avoids it.
+      labelDy: 16.5,
       danger: true,
       fill: HIGH,
     },

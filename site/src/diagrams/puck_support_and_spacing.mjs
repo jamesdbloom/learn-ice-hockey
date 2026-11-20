@@ -658,7 +658,12 @@ const neutralZoneLanes = {
     // placer's own slots put inside the words (faceoff-dot census, 27 Oct 2026).
     { id: 'F1', pos: 'F', at: { at: 'centre-ice', dx: -10, dy: 32 }, label: 'strong-side lane', labelHint: [9, -8.5] },
     { id: 'F2', pos: 'F', at: { at: 'centre-ice', dx: 2, dy: 10 },   label: 'middle lane', labelHint: [0, -7] },
-    { id: 'F3', pos: 'F', at: { at: 'centre-ice', dx: -4, dy: -32 }, label: 'weak-side lane' },
+    // W558 labelHint (20 Nov 2026): [-7, 7] puts the words INSIDE the weak-side lane (baseline y -25).
+    // The earlier [3, 10] sat on the dashed lane edge with the text in the middle lane, which names the
+    // wrong lane. Every placer-honoured slot inside the lane grazes the neutral-zone dot at (-20, -22)
+    // under the top of the "w" -- accepted as cosmetic (coordinator ruling): naming the right lane
+    // matters more. The red line is unavoidable (the ~22 ft label sits in a lane the red line splits).
+    { id: 'F3', pos: 'F', at: { at: 'centre-ice', dx: -4, dy: -32 }, label: 'weak-side lane', labelHint: [-7, 7] },
   ],
 
   routes: [
@@ -923,7 +928,10 @@ const layerNotConverge = {
     'the same boards. No pass is drawn.',
 
   players: [
-    { id: 'D',  pos: 'D', team: 'opp', at: { at: 'corner:right', dx: -4 },              label: 'puck carrier', labelHint: [7.41, -9.25] },
+    // W558 labelHint (20 Nov 2026): [7.41, -9.25] put the words over the faceoff dot. [1, -12]
+    // drops them straight below the carrier, off the dot; they still cross the circle arc (no honoured
+    // slot clears it).
+    { id: 'D',  pos: 'D', team: 'opp', at: { at: 'corner:right', dx: -4 },              label: 'puck carrier', labelHint: [1, -12] },
     { id: 'W',  pos: 'F', team: 'opp', at: { at: 'top-of-circle:right', dx: -10, dy: 8 }, label: 'the escape option' },
     // THE LABELS SAY THE JOB; THE IDS SAY THE ORDER. They read "first, pressures"
     // and "second, layers", and the "first"/"second" was redundant twice over —

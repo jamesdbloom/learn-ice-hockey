@@ -733,7 +733,10 @@ const regroup = {
     // labelHint: 6 ft right of the placer's own slot, which put the centre dot inside "high";
     // 4 ft cleared it but left the dot reading as a bullet before the word (faceoff-dot
     // census, 27 Oct 2026).
-    { id: 'F', pos: 'F', at: { at: THEIR_BLUE, dx: -4, dy: 8 }, label: 'high — stretch option', labelHint: [6, -7] },
+    // W558 labelHint (20 Nov 2026): [6, -7] put the words over the centre-ice dot, across the centre
+    // circle and the red line. [21, -7] keeps them level with and just right of the player, off the
+    // dot and the circle; they still cross the blue line (33 ft of label next to a player 4 ft from it).
+    { id: 'F', pos: 'F', at: { at: THEIR_BLUE, dx: -4, dy: 8 }, label: 'high — stretch option', labelHint: [21, -7] },
   ],
 
   routes: [

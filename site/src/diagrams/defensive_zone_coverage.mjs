@@ -709,7 +709,9 @@ const walkDownMan = {
     // convention. If that opponent ever moves to the slot, this centre moves with him
     // and nothing here needs rewording.
     // SG165 labelHint: up-left of C as before, 2.3 ft further left so the words end short of the faceoff dot.
-    { id: 'C', pos: 'F', at: { at: 'half-wall:left', dy: 8 }, label: 'on the third forward', labelHint: [-14.3, 6] },
+    // W558 labelHint (20 Nov 2026): [-14.3, 6] put the words over the faceoff dot and across the
+    // circle. [-20, -8] sits them below-left of the circle, clear of all paint, with a leader to C.
+    { id: 'C', pos: 'F', at: { at: 'half-wall:left', dy: 8 }, label: 'on the third forward', labelHint: [-20, -8] },
     { id: 'W', pos: 'F', at: WD_WINGER,                       label: 'goes with the carrier', labelHint: [10, -7.5] },
     { id: 'W', pos: 'F', at: W_WEAK_PT,                       label: 'on the other D', labelHint: [4, -10.5] },
   ],
@@ -814,7 +816,9 @@ const boxPlusOne = {
   }],
 
   players: [
-    { id: 'F', team: 'opp', pos: 'F', at: 'corner:right',                 label: 'puck carrier' },
+    // W558 labelHint (20 Nov 2026): the auto slot ran the words ALONG the faceoff circle's top arc
+    // (check_label_paint --severe). [-13, -2] sits them inside the circle beside the puck, no leader.
+    { id: 'F', team: 'opp', pos: 'F', at: 'corner:right',                 label: 'puck carrier', labelHint: [-13, -2] },
     // Outside the box, not inside it. At dy -8 he stood on the wrong side of the
     // box's own edge, so the picture showed the structure already beaten.
     { id: 'F', team: 'opp', pos: 'F', at: { at: 'slot', dx: -3, dy: -11 } },

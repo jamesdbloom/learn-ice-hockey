@@ -1193,7 +1193,11 @@ const cycleReverse = {
     'No other opposition players are drawn, and no route is drawn for the passer.',
 
   players: [
-    { id: 'F1', pos: 'F', at: CYCLE_CARRIER, label: 'the carrier' },
+    // W558 labelHint (20 Nov 2026): the auto slot put the words over the faceoff dot and across the
+    // circle. [-9, -6] cleared both but had NO leader and sat level with the filled opposition F, so a
+    // diagram review read it as possibly the opponent's -- which flips who has the puck. [-12, -7]
+    // (honoured by the placer, checked) keeps it clear of paint and draws a leader to F1.
+    { id: 'F1', pos: 'F', at: CYCLE_CARRIER, label: 'the carrier', labelHint: [-12, -7] },
     // Past him: (89, 26) is 7.07 ft from the carrier, deeper and inside, on the
     // goal line. He came from up the wall, which is where the space now is.
     { id: 'F',  team: 'opp', pos: 'F', at: { at: 'corner:right', dx: 7, dy: -8 }, label: 'gone past you' },

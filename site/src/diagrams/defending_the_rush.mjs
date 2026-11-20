@@ -771,7 +771,10 @@ const threeOnTwoAlternative = {
     // the label states the job, matching the default's "takes the middle" and the section's
     // "the backchecker's job becomes the third attacker". Below the circle; the red line
     // crosses at "the".
-    { id: 'C',  pos: 'F', at: C_ALT,  label: 'takes the third', labelHint: [10.35, -14] },
+    // W558 labelHint (20 Nov 2026): [10.35, -14] put the words over a neutral-zone dot and the red
+    // line. [10, -10] lifts them off the dot; the red line still crosses them (the label is ~23 ft and
+    // the honoured slots all straddle it).
+    { id: 'C',  pos: 'F', at: C_ALT,  label: 'takes the third', labelHint: [10, -10] },
     { id: 'G',  pos: 'G', at: OWN_G },
   ],
 

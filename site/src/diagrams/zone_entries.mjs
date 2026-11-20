@@ -1447,7 +1447,11 @@ const highTriangle = {
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 10, dy: -8 } },  // (35, -8)
     { id: 'F', pos: 'F', at: TRI_CARRIER, label: 'drives wide, has the puck', labelHint: [0, -7.5] },
     { id: 'F', pos: 'F', at: TRI_WIDE, label: 'drives wide, no puck', labelHint: [0, 6] },   // [0, 8] sat on the neutral-zone dot; [0, 6] mirrors the carrier's label (3 Nov 2026)
-    { id: 'F', pos: 'F', at: TRI_TRAILER, label: 'trails to the high slot', labelHint: [11.03, -15.25] },
+    // W558 labelHint (20 Nov 2026): [11.03, -15.25] ran the words ALONG the centre circle's arc
+    // (--severe "runs along"). [12, 6] is one of only two hints the placer honours here: still across
+    // the circle and the blue line (34 ft of label in a 25 ft gap cannot clear both), but no longer
+    // running along either.
+    { id: 'F', pos: 'F', at: TRI_TRAILER, label: 'trails to the high slot', labelHint: [12, 6] },
   ],
 
   // Not numbered: three players arriving together, the same convention
