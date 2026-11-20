@@ -1384,7 +1384,13 @@ scripts/            GATES: check_links.py, check_facts.py, check_absolutes.py,
                     check_quote_drift.py, check_caption_hosts.py, check_instruction_first.py,
                     check_facts_antecedents.py, check_callout_flow.py, check_tactics_ratio.py,
                     check_marker_pairs.py, check_readability.py,
-                    check_caption_pairs.py, check_label_paint.py.
+                    check_caption_pairs.py, check_label_paint.py, check_unit_openers.py.
+                    check_unit_openers.py -- spoken units (paragraph, list item, facts line) that OPEN on a
+                    bare "it/its/they/them/their", printed beside the END of the unit heard before. Added
+                    20 Nov 2026 (W518) after four hand-found defects: a bullet "Once it reaches the head" heard
+                    straight after "careless contact". Uses md_to_speech's own block parser. WORKLIST: most
+                    hits read fine; --demonstratives adds this/that/these/those, --loose widens to six words.
+                    It does not resolve diagram captions (shown as [diagram: id]). NO FIGURE IS WRITTEN HERE.
                     md_to_speech.py
                     NOT CHECKERS, but in this directory and absent from every earlier version of
                     this list: build_podcast_audio.py, build_podcast_cover.py, podcast_queue.py,
