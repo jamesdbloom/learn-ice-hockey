@@ -341,7 +341,7 @@ You are looking for the moment two defenders both think the other one has it. Th
 
 ```facts
 Action: Take the puck down the boards outside the defenceman and get to the goal line or below it
-Goal: Make the defender turn and skate — every stride toward the boards is a stride away from the front of the net
+Goal: On a wide entry, make the defender turn and skate — every stride toward the boards is a stride away from the front of the net
 Targets: A support player driving the net, plus a third player high for the back-door or point option
 Action: Drive the net to the edge of the blue paint and off the red line around it, not through either — a skate inside the paint, or on that line, risks the goal
 Never: Meet a goal post head first, and never duck — head up, chin off your chest. A head-down, head-first hit on a post is the same injury as one on the boards, and can happen at walking speed
@@ -691,7 +691,7 @@ Place the puck gently into a specific area — usually a corner — so that it d
 ```facts
 Action: Place the puck gently into a specific area, usually a corner, so it dies there rather than rebounding
 Read: Use the soft dump when a forechecker is arriving in roughly two seconds and the defence has to turn and retrieve
-Goal: Give your chaser a stationary puck and a body arriving on it, and give the retriever no help from the puck's momentum
+Goal: With a soft dump, give your chaser a stationary puck and a body arriving on it, and give the retriever no help from the puck's momentum
 Never: Use the soft dump when your chaser is four seconds away — you have just given the puck to their defenceman with time
 ```
 
@@ -730,7 +730,7 @@ From one side of the ice, shoot the puck hard **diagonally** across into the far
 ```facts
 Action: Shoot the puck hard diagonally into the far corner, or straight north down your own side, depending on where your speed is
 Read: The retrieving defenceman is on your side, or the strong-side corner is crowded
-Goal: Force their weak-side defenceman into a long retrieval on their backhand, facing their own boards, with a forechecker arriving — awkward by design, though no count ranks retrievals
+Goal: Dump cross-corner to force their weak-side defenceman into a long retrieval on their backhand, facing their own boards, with a forechecker arriving — awkward by design; no count ranks retrievals
 Never: Dump cross-corner into nobody — your far-side winger has to have read the dump and be going there
 ```
 
@@ -1108,7 +1108,7 @@ The traditional approach, often taught as **receiving the entry**: the defenceme
 
 ```facts
 Convention: The traditional approach — the defencemen stay roughly between the faceoff dots, mark the carrier and the slot, and steer the play outside
-Goal: Make the entry happen where it is least dangerous
+Goal: Force wide so the entry happens where it is least dangerous
 Key: Forcing wide is very hard to beat cleanly and keeps the middle protected
 Risk: Forcing wide concedes the entry — the attacker gets in with the puck, gets time on the wall, and can shoot with purpose looking for rebounds
 ```

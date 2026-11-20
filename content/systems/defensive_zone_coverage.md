@@ -393,7 +393,7 @@ Convention: The collapsing box is a state, not a full system — the box shrinks
 Read: Use the collapsing box protecting a lead late, defending 6-on-5 with their goalie pulled, when structure has already gone, or against a team dangerous below the circles but not from its defencemen
 Risk: A collapsing box concedes the entire outside by design
 Options: The strong-side overload is the opposite adjustment to the collapsing box — all five shift to the puck side, cutting the ice in half and squeezing the carrier
-Countered by: One hard, accurate cross-ice pass — the overload leaves the whole weak side unoccupied by design
+Countered by: One hard, accurate cross-ice pass — the strong-side overload leaves the whole weak side unoccupied by design
 ```
 
 ![](diagram:dz-collapsing-box)

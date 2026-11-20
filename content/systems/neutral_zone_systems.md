@@ -130,8 +130,8 @@ Two traps:
 **In short:** F1 takes away the middle and forces a side, F2 meets the puck on that wall, and D2 stays home as the safety.
 
 ```facts
-Position: F1 pressures near their goal line or hash marks, F2 and F3 sit across the middle, both defencemen hold the back layer around your own blue line
-Goal: F1 takes the middle away and forces the carrier to one side — the turnover is a bonus, dictating the side is the job
+Position: In a 1-2-2, F1 pressures near their goal line or hash marks, F2 and F3 sit across the middle, both defencemen hold the back layer around your own blue line
+Goal: In a 1-2-2, F1 takes the middle away and forces the carrier to one side — the turnover is a bonus, dictating the side is the job
 Action: F2 steps up to play the puck as it reaches the strong-side winger — the puck, not the player; F3 holds the middle and weak side; D2 stays home as the safety valve
 Risk: D1 stepping up on the wall is the decision with the least cover behind it — if D1 is beaten, only D2 stands between the puck and your net
 Countered by: Quick D-to-D behind the net to change the side the 1-2-2 is forcing, a middle-lane forward supporting low under F2 and F3, and simple patience
@@ -160,7 +160,7 @@ Convention: Coaching material calls the 1-2-2 the most widely played neutral zon
 **In short:** A trap lets the carrier skate and steers them to a wall at the red line, where the turnover starts your counterattack.
 
 ```facts
-Position: A 1-2-2 with the layers dropped back — F1 high and splitting the ice, F2 and F3 at or just inside the red line, the defence on your own blue line
+Position: The trap is a 1-2-2 with the layers dropped back — F1 high and splitting the ice, F2 and F3 at or just inside the red line, the defence on your own blue line
 Goal: The trap aims to funnel the attack to a wall and kill it at the red line rather than stop it, with their forwards ahead of the puck and behind the play
 Read: Layers up near their blue line with F1 actually closing is containment; layers back at the red line with F1 gliding is a trap
 Convention: The pure passive trap is no longer a viable full-time system at high levels — it survives as a situational tool and as DNA inside newer structures
@@ -201,7 +201,7 @@ The Devils were not even the first NHL team to run it. **Roger Neilson used it w
 **In short:** Three across slide as one wall and leave no lane through the middle, so nobody chases the puck out of their lane.
 
 ```facts
-Position: F1 pressures, three players stand spread in a line across the ice, one defenceman sits behind them as the last man
+Position: In a 1-3-1, F1 pressures, three players stand spread in a line across the ice, one defenceman sits behind them as the last man
 Convention: Conventionally F2 and F3 on the walls with a defenceman in the middle — but never three forwards across, because F1 is already one of your three
 Key: A 1-3-1 does not try to take the puck from you — it offers you the puck on terms you will not like
 Action: The three across hold their lanes and slide as a unit; their job is not to attack the puck but to leave no lane through them
@@ -265,7 +265,7 @@ The aggressive option is not really a neutral-zone structure. It is what the mid
 **The shape.** One forechecker and **four skaters in a flat line across your own blue line** — the most conservative structure in hockey.
 
 ```facts
-Position: One forechecker and four skaters in a flat line across your own blue line — the most conservative structure in hockey
+Position: The 1-4 is one forechecker and four skaters in a flat line across your own blue line — the most conservative structure in hockey
 Read: Use the 1-4 protecting a lead in the last minute or two, killing time with an exhausted stranded unit, or defending a 6-on-5 against a pulled goalie
 Goal: Let almost nothing through — controlled entries against a disciplined 1-4 are close to impossible and odd-man rushes almost never happen
 Risk: The 1-4 concedes the whole neutral zone and generates no offence, so you spend the shift in your own end and clearing becomes dumping
@@ -491,7 +491,7 @@ When an entry would be forced into a set structure, **regroup and keep the puck 
 
 ```facts
 Risk: A forced entry into a set structure ends your possession — a turnover at the line, a dump-in you do not recover, or an offside
-Goal: Keep the puck and make their forecheck reset, which takes time and skating
+Goal: Regroup to keep the puck and make their forecheck reset, which takes time and skating
 Read: The opposition's forwards were coming toward you and now have to turn — turning is the slowest thing anybody does on skates
 Key: Your forwards arrive at the line with speed instead of receiving standing still — that is the real prize
 ```
@@ -534,7 +534,7 @@ The D-to-D regroup assumes the second defenceman can do something with it. **The
 ```facts
 Action: After passing D-to-D, sink back into mid-ice behind your partner instead of following the puck up the boards
 Key: Your partner moves up, finds nothing, and returns it to you — you are now behind the play, in the middle, facing up ice with the whole sheet in front of you
-Goal: The puck comes back to a player with time and vision, instead of being forced up the boards by a partner who had no option
+Goal: The hinge aims to bring the puck back to a player with time and vision, instead of being forced up the boards by a partner who had no option
 Technique: The skating hinge — drop deeper as you make the first pass, so you arrive into the return pass with speed rather than standing still
 Read: A forecheck that takes the D-to-D pass away kills the hinge; one that takes the cross-ice pass away concedes it
 ```
@@ -674,7 +674,7 @@ Risk: Leaving a forward high means defending 4-on-5 while you do it — a coachi
 Also called the **trailer** or **third man high**. One forward deliberately stays 10 to 15 feet behind the play and arrives into the space the first two have vacated.
 
 ```facts
-Position: Delay deliberately, staying 10 to 15 feet behind the play, and arrive into the space the first two attackers have vacated
+Position: As the late man, delay deliberately, staying 10 to 15 feet behind the play, and arrive into the space the first two attackers have vacated
 Goal: Arrive into the high slot behind a two-player rush — defenders track the puck, so the late man is the one nobody picked up
 Convention: Coaching material treats the late man as one of the most reliable scoring looks in hockey — consensus rather than a tracked figure
 Never: Drift five feet behind — being the late man means a full gap back, so the defence has to choose between you and the puck

@@ -324,7 +324,7 @@ The analytics consensus sits much earlier than tradition, and it has been moving
 **In short:** Get set up, screen the goalie from outside the crease without touching them, move the puck fast, keep one point man back and change with possession.
 
 ```facts
-Position: Two at the points, two on the half-walls, one at the net front, one below the goal line or in the middle
+Position: At 6-on-5, two at the points, two on the half-walls, one at the net front, one below the goal line or in the middle
 Action: Get set up — a 6-on-5 that has to enter the zone repeatedly is wasting its advantage
 Action: Put the puck to the net with a screen; the extra man is a body in front, not a sixth passer, and it is on that player to stay off the goalie
 Technique: One-touch it — the advantage only shows up if the puck moves faster than they can shift

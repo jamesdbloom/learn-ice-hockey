@@ -104,7 +104,7 @@ Never: Guess — if you are guessing, you are the reason the seam is covered
 **The shape:** **one** player at the point, **three** across the middle of the zone — two on the **half-walls** with a **bumper** between them in the middle of the slot — and **one** at the net front.
 
 ```facts
-Position: One at the point, two on the half-walls, a bumper in the middle of the slot, one at the net front — one point player, not two
+Position: In a 1-3-1 power play, one at the point, two on the half-walls, a bumper in the middle of the slot, one at the net front — one point player, not two
 Action: The point walks the line laterally — sliding sideways changes the angle of every passing lane in the zone; keep going until a killer turns their head or shifts across to follow
 Technique: Half-walls play the off-wing so the puck is on the inside hand; look inside before you look up
 Action: The bumper keeps the blade on the ice for a one-touch shot and holds the kill's high players down
@@ -142,7 +142,7 @@ First units are widely **described as** running the 1-3-1 with **four forwards a
 **The shape:** **three players high**, arranged as an **arc** rather than a flat line — that curve is what the name describes. **One apex** sits highest, in the middle at or just inside the blue line, and the **two flanks sit lower than the apex** on either side. Below the arc sit **two low players**, typically one at the net front and one at the side of the net or in a circle.
 
 ```facts
-Position: Three high in an arc — one apex highest in the middle at the blue line, two flanks lower either side — and two low at the net
+Position: In an umbrella, three high in an arc — one apex highest in the middle at the blue line, two flanks lower either side — and two low at the net
 Key: There is no bumper in a true umbrella; the middle of the slot is deliberately vacated so the high players have clean lanes into it
 Options: The classic umbrella has a forward apex with both defencemen out on the flanks; the modern one, the lone defenceman at the apex with two forwards down at the tops of the circles
 Never: String three players level across the blue line and call it an umbrella — with no depth every pass is short and lateral
@@ -170,7 +170,7 @@ Risk: The umbrella works the puck far from the net, and goalies and killers are 
 **The shape:** **four players loaded onto one side of the ice** — typically a player below the goal line, one in the corner or low circle, one on the half-wall and one at the point on that side — with the fifth player weak side as a release valve and safety.
 
 ```facts
-Position: Four on one side — below the goal line, in the corner or low circle, on the half-wall and at that point — with the fifth weak side as a release valve
+Position: In an overload, four on one side — below the goal line, in the corner or low circle, on the half-wall and at that point — with the fifth weak side as a release valve
 Action: Cycle the puck relentlessly in a small area, creating repeated 3-on-2s along the strong-side wall
 Read: When a killer over-commits, attack the seam or swing it cross-ice to the lone weak-side player with the goalie moving
 Read: The overload is excellent against a passive box that will not come out to the wall
@@ -193,7 +193,7 @@ Risk: The overload produces fewer shots than other shapes; cycling without ever 
 **The shape:** five spots, deliberately stretched to the corners of the danger area — **two low**, one on each side of the net just outside the posts; **two high and wide**, at the tops of the circles or the points; and **one in the middle of the slot**. The point is not the shape itself but the spacing: **stand far enough apart that one killer cannot cover two of you.**
 
 ```facts
-Position: Two low just outside the posts, two high and wide at the tops of the circles or points, one in the middle of the slot
+Position: In a spread power play, two low just outside the posts, two high and wide at the tops of the circles or points, one in the middle of the slot
 Key: The point is the spacing, not the shape. Stand far enough apart that one killer cannot cover two of you
 Action: Occupy space, stay still enough to be a genuine passing target, and make everything a one-touch play
 Read: Use the spread at 5-on-4 against a kill that has collapsed so tightly it has conceded the outside entirely; it is also the standard 5-on-3 shape
@@ -217,7 +217,7 @@ Key: "Box" names both this power-play spacing and the standard penalty-kill shap
 **The shape:** **two defencemen at the points** and **three forwards low** — one at the net front, one in each circle or corner. This was the default power play for decades and remains common in rec, beer-league and youth hockey. **Both halves of that are impressions; no count was found for either.**
 
 ```facts
-Position: Two defencemen at the points and three forwards low — one at the net front, one in each circle or corner
+Position: In a 2-3 power play, two defencemen at the points and three forwards low — one at the net front, one in each circle or corner
 Action: The points shoot and keep pucks in; the three forwards screen, tip and hunt rebounds, with the puck going low-to-high and back
 Key: The 2-3 is safe — two defencemen at the line means very few shorthanded breaks and good retrieval on missed shots
 Countered by: A competent box, which is built to defend the two areas the 2-3 attacks
@@ -506,7 +506,7 @@ Risk: No public count of how many NHL teams run each penalty-kill shape as a bas
 **The shape:** a rectangle around the slot. **Two players high** — both forwards, one each side in the shooting lanes, taking the point on their side when the power play runs two — and **two players low**, both defencemen, covering the two low corners and the goalmouth.
 
 ```facts
-Position: A rectangle around the slot — two forwards high, one each side in the shooting lanes, and two defencemen low covering the corners and the goalmouth
+Position: A box kill is a rectangle around the slot — two forwards high, one each side in the shooting lanes, and two defencemen low covering the corners and the goalmouth
 Key: A box has two players high and no single "top" — if you are describing "the top of the box", you are describing a diamond
 Action: High forwards deny the point time and space, stay in shooting lanes, and never both drift to the same side
 Action: The strong-side D pressures the puck below the goal line or in the low circle; the weak-side D owns the goalmouth and the backdoor
@@ -534,7 +534,7 @@ Countered by: A 1-3-1 — nobody in a box is assigned to the middle of the slot,
 **The shape:** one player **high** at the apex, **two in the middle** on either side, and **one low**. A diamond, not a rectangle: it has exactly one player at the top.
 
 ```facts
-Position: One player high at the apex, two in the middle either side, one low — exactly one player at the top
+Position: In a diamond kill, one player high at the apex, two in the middle either side, one low — exactly one player at the top
 Goal: The diamond's two middles squeeze the slot from either side so a 1-3-1's bumper can be accounted for
 Action: The apex pressures the point and takes away the middle shooting lane — you are the only player up there, so do not get walked around
 Action: Each middle takes a half-wall and both collapse onto the bumper when the puck goes to the middle
@@ -563,7 +563,7 @@ Risk: In a diamond kill, the single low player faces a net-front presence and a 
 **The shape:** **three killers hold a tight triangle** around the net — two defencemen just off the crease edges, one forward at the mid-to-high slot — while the **fourth player, the "+1", pressures whoever has the puck**. **Published descriptions part company on exactly how the +1 does that, so ask your coach which one you are running.** Some describe them activating in a straight line out from the goal towards the puck carrier. Some have them sweeping laterally across the top of the zone, above the circles, to keep the power play on one side of the ice. Others have them roaming more freely, challenging on the wall or at the point. What every description shares is the handover: when the puck moves, the nearest wedge player becomes the new +1 and the old one drops in. Whatever licence your version gives the +1, one who chases the puck round the perimeter without handing over is the counter to this system, not the system, and leaves you killing with three players.
 
 ```facts
-Position: Three killers in a tight triangle around the net — two defencemen just off the crease edges, one forward at the mid-to-high slot; the players rotate through the shape, the shape holds its ground
+Position: A wedge+1 is three killers in a tight triangle around the net — two defencemen just off the crease edges, one forward at the mid-to-high slot; players rotate through the shape, which holds its ground
 Action: The wedge stays tight, protects the slot and goalmouth, and does not chase; it blocks shots from in the lane, on its feet and with heads out of the lane, never from a screening position
 Action: The +1 pressures whoever has the puck — make every possession uncomfortable, do not try to win it, and hand the pressure to the nearest wedge player rather than trail the puck round the outside
 Technique: When your pressure forces the puck to move, the nearest wedge player becomes the new +1 and you drop into the triangle
@@ -970,7 +970,7 @@ Pulling the goalie during a power play, late in a game, to make it 6-on-4.
 
 ```facts
 Key: Pulling the goalie on a power play makes it 6-on-4, the largest advantage you will normally see, and it is used far less than the arithmetic suggests
-Position: As the power play, put two at the net front and send the extra body to the bumper or the backdoor, never the perimeter
+Position: As a 6-on-4 power play, put two at the net front and send the extra body to the bumper or the backdoor, never the perimeter
 Action: Move the puck quickly and accept that blocking lanes will be crowded
 Countered by: The empty net behind a 6-on-4 — a killer who wins a puck can legally clear it 180 feet into it, and it counts
 Action: As the kill, block shots from in the lane, on your feet, head out of the lane, never from a screening position; keep sticks in lanes and clear low, head up, looking for the empty net

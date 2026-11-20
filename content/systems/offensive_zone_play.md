@@ -355,11 +355,11 @@ Goal: Make the defence keep re-solving the same problem
 Use the cycle to hold the puck with few turnovers while the defence tires. Keep the passes along the boards, away from the middle, and keep it going long enough for your defencemen and late forwards to join and get set.
 
 ```facts
-Goal: Force defenders to move and decide repeatedly — every rotation asks "collapse low or hold the slot?", and over 30 or 40 seconds someone answers wrong
+Goal: Cycle to force defenders to move and decide repeatedly — every rotation asks "collapse low or hold the slot?", and over 30 or 40 seconds someone answers wrong
 Key: A cycle is a low-turnover way to hold the puck — a board pass that fails stays near the wall, where one picked off through the middle goes the other way with your forwards below it
 Key: Ranking the middle pass as the more expensive one to lose is coaching consensus rather than a counted comparison — nothing published classifies odd-man rushes by the play that created them
-Goal: Tire the defenders — they skate without the puck and cannot change, and tired coverage shrinks toward the puck, which opens the slot
-Goal: Buy time for your defencemen and late forwards to join and get set
+Goal: Cycle to tire the defenders — they skate without the puck and cannot change, and tired coverage shrinks toward the puck, which opens the slot
+Goal: Cycle to buy time for your defencemen and late forwards to join and get set
 ```
 
 - **A cycle forces defenders to move and decide, repeatedly.** Each rotation asks the defence "do you collapse low or hold the slot?" Over 30 or 40 seconds of this, someone answers wrong.
@@ -458,7 +458,7 @@ Action: Pass from a low position — corner, half-wall, behind the net — up to
 Read: Low-to-high is the standard way to generate a shot when the defence has collapsed low and taken away everything in tight
 Action: The passer feeds the point then supports toward the strong-side hash marks — bail-out outlet and rebound position
 Technique: The defenceman walks the puck toward the middle before shooting — it changes the angle, moves the goalie laterally and opens a lane
-Position: One forward to the net front to screen and tip; one supporting in the high slot to form a triangle with the point
+Position: On a low-to-high, one forward to the net front to screen and tip; one supporting in the high slot to form a triangle with the point
 Read: The weak-side defenceman reads for a rebound squirting to their side and is ready to jump on it
 Options: D-to-D across the top first — the goalie has to slide and the shot comes from the other side
 ```
@@ -942,7 +942,7 @@ This is also the moment most amateur teams stop playing — the shot goes in, ev
 
 ```facts
 Convention: With three forwards rotating and both defencemen holding the blue line — the default shape this section describes — F3 is the high forward; a coaching choice, not a law
-Position: Be the safety — at or near the top of the circle, so a rebound straight out is yours and a counter-attack has to go through you
+Position: As F3, be the safety — at or near the top of the circle, so a rebound straight out is yours and a counter-attack has to go through you
 Action: Cover the vacated point if a defenceman activates — F3 takes the blue line in this guide's default setup, which wants two on the line
 Options: Under a five-player rotation whichever player is highest covers the vacated point; another variant slides the weak-side defenceman across to the middle instead
 Read: If the rebound squirts to the high slot, jump — you are the closest player with forward momentum

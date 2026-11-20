@@ -259,7 +259,7 @@ The direct pass from the puck-carrying defenceman to the strong-side winger on t
 
 ```facts
 Action: Direct pass from the puck-carrying defenceman to the strong-side winger on the wall — the fastest of the nine breakout options when the lane is open, though no count ranks them by speed
-Position: D1 below the goal line or on the wall, the winger on the boards between the hash marks and the goal line, the centre low in the middle as the bail-out
+Position: For the up pass, D1 below the goal line or on the wall, the winger on the boards between the hash marks and the goal line, the centre low in the middle as the bail-out
 Read: The forecheck has committed behind the net or to the middle, leaving the wall lane open — or F1 is arriving fast on the wrong side, so pass before F1 can influence the lane
 Technique: Pass firmly and to the winger's stick, not to the boards behind them. Head up first, and aim where the winger will be, not where they were
 Risk: The wall pass travels the lane a forecheck posts its wall-sealer in — F2 in a 2-1-2 — so intercepted at the hash marks it is a scoring chance from the top of the circle
@@ -282,7 +282,7 @@ Countered by: Any forecheck with a wall-sealer posted for the up pass — F2 in 
 
 ```facts
 Action: The defenceman carries the puck themselves, skating behind the net and up the far side
-Position: D1 retrieves in one corner and keeps skating; D2 takes the net front early where that screen is legal, and the far-side winger and the centre become outlets
+Position: For a wheel, D1 retrieves in one corner and keeps skating; D2 takes the net front early where that screen is legal, and the far-side winger and the centre become outlets
 Read: You need two things — speed and space: a step on the first forechecker, and no second forechecker waiting on the far side
 Technique: Cut tight to the net so the net itself screens you, and come out of the turn with your head up and speed already built
 Risk: On a wheel you carry the puck through the middle-ish of your own zone with your back briefly to the play; if caught, you are caught below your own goal line with the puck
@@ -314,7 +314,7 @@ The defenceman carries the puck themselves, skating behind the net and up the fa
 
 ```facts
 Action: Send the puck back against the flow of the forecheck, usually a hard backhand off the boards behind you
-Position: Moving one direction with the puck — often mid-wheel or up the wall — with a forechecker chasing your hip and D2 or the centre arriving behind you
+Position: For a reverse, you are moving one direction with the puck — often mid-wheel or up the wall — with a forechecker chasing your hip and D2 or the centre arriving behind you
 Read: The forechecker has over-committed and skated past you; their momentum is the whole play, because they cannot stop
 Technique: Bank it off the boards firmly and low behind you — a soft reverse dies in the corner and becomes a turnover — and the receiving teammate must call "reverse!", because D1 is looking the wrong way
 Never: Stay facing the wall on a reverse with your back to anyone coming at you, and never duck — take contact with skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
@@ -343,7 +343,7 @@ The pass across to your partner, changing the side of the ice the attack comes f
 
 ```facts
 Action: Pass across to your partner, changing the side the attack comes from and forcing the entire forecheck to reset and shift
-Position: D1 with the puck low on one side, D2 available low on the other
+Position: For a D-to-D, D1 has the puck low on one side, D2 available low on the other
 Read: Your side is flooded and the other is not — its real value is that it costs the opposition time, and everything they had covered comes uncovered while they travel
 Never: Through the slot. Go behind your own net instead; intercepted below the goal line it means nothing, the same pass in front of the net is a point-blank chance against
 Action: Pass it quickly rather than skating it across — carrying the puck toward your partner drags the pressure with you
@@ -398,7 +398,7 @@ A hard shot along the boards that follows the curve of the rink around to a team
 ```facts
 Never: Use "over" without agreeing which sense — Sense A is this cross-ice pass, a high-risk play; Sense B is the D-to-D behind your own net, one of the lowest-risk
 Action: Pass from the puck-carrying defenceman across the width of the ice to the far winger, skipping the strong-side structure entirely
-Position: D1 with the puck usually a little higher than the goal line; the far-side winger or the weak-side defenceman open across the ice
+Position: For the cross-ice pass, D1 with the puck usually a little higher than the goal line; the far-side winger or the weak-side defenceman open across the ice
 Read: Only when the forecheck has genuinely over-loaded one side and the middle is empty
 Technique: Firm and flat — a cross-ice pass that has to be handled at the receiver's feet has taken so long that the play is over
 Risk: On a cross-ice pass, the puck travels laterally in front of your own net at the height of the opposing forwards — intercepted, it is picked off in the middle facing your goal

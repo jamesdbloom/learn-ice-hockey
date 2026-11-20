@@ -315,7 +315,7 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 **In short:** Send two forwards deep and keep one high: it wins pucks near their net, but a clean breakout often becomes an odd-man rush.
 
 ```facts
-Position: Two forwards deep, one forward high at roughly the top of the circles, both defencemen at the offensive blue line
+Position: In a 2-1-2, two forwards deep, one forward high at roughly the top of the circles, both defencemen at the offensive blue line
 Convention: F1 goes hard at the puck carrier, angling them to one side — usually towards the boards, but ask, because F2 reads off it
 Rule: F1 goes hard, never into a turned back: a hit from behind ends your game under the NHL, PWHL and CARHA, and under the IIHF and Hockey Canada off the head; on the head, plan on it; USA Hockey: at least a minor and a misconduct, ejecting if forceful at the boards, head first or reckless (608)
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
@@ -361,7 +361,7 @@ Countered by: A quick first pass before the 2-1-2's F2 arrives, a reverse into t
 **In short:** One forward steers the carrier to a wall, a second jumps the outlet, and the shape holds while the players rotate.
 
 ```facts
-Position: One forward deep, two forwards across the middle of the zone, two defencemen high
+Position: In a 1-2-2, one forward deep, two forwards across the middle of the zone, two defencemen high
 Convention: F1 (the "dog") pressures but does not commit to winning the puck. F1's job is to cut the ice in half, then stay inside so it cannot come back across
 Convention: F2 (the "fox") sits on the strong-side wall and creates the turnover by jumping the outlet F1 has made predictable
 Convention: F3 (the "hawk") roams the high middle, committed to neither side; on a puck across, F3 becomes the new fox and everyone shifts one role
@@ -423,7 +423,7 @@ The New Jersey Devils' 1990s and 2000s teams are the standard reference for buil
 **In short:** One forechecker steers while a line of three shuts the passing lanes and shifts across as a unit with the puck.
 
 ```facts
-Position: One forward pressuring, three players spread in a line across the width of the ice, one player behind them as the last man
+Position: In a 1-3-1 forecheck, one forward pressuring, three players spread in a line across the width of the ice, one player behind them as the last man
 Convention: The single forechecker does not chase. They steer, take away the middle and shepherd the breakout to one side
 Convention: The line of three is conventionally F2, F3 and one defenceman, the defenceman in the middle as the read-maker — some coaches put a forward in the middle instead, so ask which yours is; it shifts across as a unit with the puck
 Convention: The single high player is the safety, responsible for anything that gets behind the line of three
@@ -459,7 +459,7 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 **Shape:** One forward applying token pressure; the other four in a flat line across the ice at or near **their own** blue line.
 
 ```facts
-Position: One forward applying token pressure, the other four flat across the ice at or near their own blue line
+Position: In a 1-4, one forward applying token pressure, the other four flat across the ice at or near their own blue line
 Key: The 1-4 is a neutral-zone structure, not an offensive-zone forecheck — Neutral Zone Systems is the authority on it
 Convention: The lone forechecker steers and slows the exit rather than pressuring; nobody pinches and nobody gambles
 Goal: The 1-4 is for preventing odd-man rushes and high-danger chances, full stop
@@ -486,10 +486,10 @@ Countered by: A hard chip past the 1-4's flat line and a race for it — not a s
 **In short:** Two forwards forecheck hard while the left winger drops back, so three players always stay between the puck and your net.
 
 ```facts
-Position: Two forwards forechecking aggressively, three players across the ice behind them
+Position: In a 2-3, two forwards forechecking aggressively, three players across the ice behind them
 Convention: In the left-wing lock the centre and right winger forecheck as F1 and F2, and the left winger drops back to the half-boards
 Convention: If the puck is not won, the left winger slides into line with the two defencemen — effectively a third defenceman going the other way
-Goal: Two-player pressure, nearly as good as a 2-1-2, with three players always between the puck and your net
+Goal: The 2-3 aims for two-player pressure, nearly as good as a 2-1-2, with three players always between the puck and your net
 Read: Pick the 2-3 when you want pressure but cannot afford to bleed rush chances, or to nurse a lead without going fully passive
 Risk: The 2-3 demands a left winger with total positional discipline and the skating to back-check, and gives up the fifth attacker so you cycle less
 Never: Read "forecheck hard" as a licence to finish into the back of a carrier who has turned to the boards — same onus as the 2-1-2, and the same prior question of whether you may body check at all
@@ -518,7 +518,7 @@ The **left-wing lock** is the famous version. The centre and right winger forech
 **In short:** Throw everyone forward almost only when trailing late or during a delayed penalty, because one clean pass beats it.
 
 ```facts
-Position: Three forwards deep or nearly deep, both defencemen pinching at the offensive blue line, effectively no safety at all
+Position: In a full-ice press, three forwards deep or nearly deep, both defencemen pinching at the offensive blue line, effectively no safety at all
 Convention: All three forwards hunt the puck and both defencemen pinch on anything, on the understanding that a puck past them is a breakaway
 Action: Call it a full-ice press or an all-out forecheck — "2-2-1" is standard basketball terminology and is not what coaching material standardly calls this in hockey
 Read: Almost exclusively late and trailing — down a goal in the last two or three minutes, or with the goalie pulled for the extra attacker
@@ -948,7 +948,7 @@ You will spend as much time breaking a forecheck as running one. Recognising whi
 ```facts
 Action: Against an aggressive forecheck, move the puck early — before pressure arrives, not after
 Options: A reverse — the puck sent back against the flow — beats an over-committed F1; a rim — sent onward around the boards — beats one who has sealed you in
-Targets: Your winger should come underneath the pressure to receive, not stand still on the wall
+Targets: Against an aggressive forecheck, your winger should come underneath the pressure to receive, not stand still on the wall
 Action: Against containment, use D-to-D and controlled regroups to make the wall shift, then chip past the line and race for it; if the goalie comes out for it, pull up
 Options: Against containment, bank passes off the boards to teammates who have already got behind its line
 Never: Skate into the middle of three players — the one thing that never works
