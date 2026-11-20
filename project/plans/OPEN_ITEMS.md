@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W592 shipped with record `w592_winger_left_wing_lock_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W593 shipped with record `w593_long_paragraphs_and_takeaways_2026-11-20.md`. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**

@@ -1340,7 +1340,7 @@ section named with each question, and the Key Takeaways, are where you get it.*
 6. **Win the draw with your stick and keep your wingers off the hash marks.** A creeping winger gets your **centre** thrown off the draw; a second violation can be a minor in every book and is automatic in four, and contact at the dot can be penalised on the first — mandatorily in three. Shorthanded, either is a 5-on-3.
 7. **Block shots from the lane, before the shot, on your feet.** Never block from where you screen your own goalie. Block with your body, head out of the lane, stick flat beside you, and never turn your back or lift a leg. How much to block is your coach's call.
 8. **On the kill, pressure the puck, never the back.** If the carrier is between you and the puck, you were never winning it. ⚠️ **In most books checking from behind ends your game, and in every book it can.**
-9. **A man short, fire the long clear; a man up, never.** Release it before the penalty ends. **USA Hockey allows it only at Youth 15-Only and above, Girls 16U and above, High School and Adult**, and the NHL and PWHL withdraw it when a major expires with your penalty box empty. **A deliberate shoot-out is a minor anywhere, in every book.**
+9. **A man short, fire the long clear; a man up, never.** Release it before the penalty ends. **USA Hockey allows it only at Youth 15-Only and above, Girls 16U and above, High School and Adult**; the NHL and PWHL withdraw it when a major expires with your penalty box empty. **A deliberate shoot-out is a minor anywhere, in every book.**
 10. **Screen outside the crease and off its red line; never touch the goalie or block their road home.** ⚠️ **Charging the goalie can end your game in every book, and in some it must.**
 
 ---
