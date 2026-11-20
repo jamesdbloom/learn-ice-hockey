@@ -379,7 +379,7 @@ On top of that principle sit a few standing responsibilities, which exist becaus
 ```facts
 Key: The goalie's view is exactly the view your defencemen lack — the whole play, permanently, for free
 Action: Give the retriever "time" or "man on" first, and add the count with "one on you" or "two on you"
-Options: "Up" sends it up the strong side, "over" switches it behind the net, "leave it" parks it behind the net for a teammate wheeling through
+Options: The goalie's "up" sends the puck up the strong side, "over" switches it behind the net, "leave it" parks it behind the net for a teammate wheeling through
 Convention: Prefer "leave it" to "set" — two syllables are easier to tell from "up" and "over" at speed in a noisy rink
 Key: A goalie shouting "shot" means they have the shooter and you take the pass — stay in the passing lane, it is not a warning that a shot is coming
 Rule: USA Hockey and Hockey Canada have no trapezoid, so behind the net your goalie is a puck-handler — but all six books make any deliberate part in the play past the centre red line a minor, not just playing the puck; their skates test is USA Hockey Casebook 407 Situation 13, Hockey Canada 8.3(a)

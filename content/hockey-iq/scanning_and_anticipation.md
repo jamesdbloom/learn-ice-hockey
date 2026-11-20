@@ -477,7 +477,7 @@ Read: The test is not whether you were right. Ask whether your position would st
 Action: Jump a lane only on a real cue, with a teammate covering the ice you leave, and arrive in it with your feet — reaching is the signature of a guess
 Position: Jump in the neutral or offensive zone, where a miss costs a rush against; in your own zone, stay between the puck and your net unless the read is near-certain
 Never: Jump as the last player back, or again after you have already missed once this shift
-Risk: A successful jump creates a chance; a miss in your own zone concedes one, often point-blank — so there the read must be near-certain, not just better than 50/50
+Risk: A successful lane jump creates a chance; a miss in your own zone concedes one, often point-blank — so there the read must be near-certain, not just better than 50/50
 ```
 
 The test is not whether you were right. It is this:
@@ -515,7 +515,7 @@ An anticipating player shades toward the likely pass while staying between the p
 Train scanning with drills that fail if you do not look — shoulder-check outlets, number or colour calls, constrained small-area games — and talk in every drill. Away from practice, count your head turns on video and watch one player for a whole shift away from the puck; reaction and peripheral-vision tools train the eyes, not the hockey.
 
 ```facts
-Options: Shoulder-check outlet drills, number and colour calls, constrained small-area games — anything that fails if you do not look
+Options: To train scanning, use shoulder-check outlet drills, number and colour calls, constrained small-area games — anything that fails if you do not look
 Action: Talk in every drill; a call is a scan you did not have to take yourself
 Action: Watch your own shifts and genuinely count your head turns, then count those of a teammate whose vision you rate
 Action: Pause the video a second before you receive, name your three options, then unpause and see what you did

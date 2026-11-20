@@ -260,7 +260,7 @@ Action: Time your entry rather than parking in the zone
 
 ```facts
 Goal: Have all three angles available simultaneously — that is the actual content of "good spacing"
-Risk: All behind is safety with no attack; all ahead leaves no outlet; all level goes side to side and never up
+Risk: All support behind the puck is safety with no attack; all ahead leaves no outlet; all level goes side to side and never up
 Action: Ask which of the three angles is currently missing, then go and be that one
 ```
 
@@ -291,7 +291,7 @@ Two things trip people up:
 Convention: Somebody above the puck, in every zone — a coaching convention, and benches suspend it on a called full-ice press, a delayed penalty or a 6-on-5
 Goal: One player is not part of the attack; they are the insurance against the attack failing
 Convention: Under this guide's standard system — low zone collapse, 2-1-2 forecheck — both defencemen hold the points unless one activates
-Options: A 1-2-2 puts two forwards above as a layered wall; a single-high structure makes the weak-side winger the safety
+Options: A 1-2-2 puts two forwards above the puck as a layered wall; a single-high structure makes the weak-side winger the safety
 Action: Before you go below the puck, know who is above it
 Key: F1, F2 and F3 are roles defined by order of arrival, not fixed people
 ```
@@ -319,7 +319,7 @@ Position: Wide on the boards in the neutral zone, even when it feels useless —
 Key: Two defenders cannot both cover the middle and both cover the boards
 Goal: Occupy a defender who has to stay wide with you, so the middle stays open for somebody else
 Never: Drift inside to get closer to the play — your checker drifts in too and the middle closes
-Risk: Drifting in gains you no option; it deletes one for a teammate
+Risk: Drifting inside off the wing gains you no option; it deletes one for a teammate
 ```
 
 **Two defenders cannot cover both the middle and the boards.** A wide winger keeps a defender wide, out of the middle. The middle, the direct route to their net, is open *because* someone is standing somewhere else.
@@ -383,10 +383,10 @@ On a young or new team the puck seems to have gravity. Ten players end up in a f
 When the puck is in a pile and your system has not sent you in, **stay out of it**: be an option about five metres away, in the empty ice the puck will come out into, so you do not bring your checker in with you or leave nobody above the puck.
 
 ```facts
-Risk: You do not arrive alone — you arrive as two players, in a space that was already crowded
+Risk: Chase the puck into a pile and you do not arrive alone — you arrive as two players, in a space that was already crowded
 Key: A teammate five metres away is an option; one metre away, inside the same checking bubble, is not
-Risk: You vacate the empty space the puck is about to come out into, and it belongs to the other team
-Risk: Converging leaves nobody above the puck, which turns a routine turnover into an odd-man rush
+Risk: Chasing the puck into a pile vacates the empty space it is about to come out into, and that space belongs to the other team
+Risk: Converging on the puck leaves nobody above it, which turns a routine turnover into an odd-man rush
 ```
 
 - **You bring your checker.** You arrive as two players, in a space already crowded.
@@ -638,7 +638,7 @@ Too close and one move beats you both. Too far and the carrier skates through th
 ```facts
 Position: Offset diagonally from the first defender, not directly behind them
 Convention: The layering distance is the same two-to-three-stick-lengths range as support distance — near enough to arrive in about a second
-Risk: Too close and one move beats you both; too far and the carrier skates through the gap between you
+Risk: Layer too close to the first defender and one move beats you both; too far and the carrier skates through the gap between you
 Convention: Whether you may hold the layer at all is system-dependent — ask how your team's coverage changes it
 ```
 

@@ -96,7 +96,7 @@ Risk: With tight hands, every stick check that arrives will get a piece of the p
 
 ```facts
 Technique: Release the bottom hand and reach one-handed — it adds most of a forearm's length to your reach
-Options: Pull in a puck outside your normal radius, stretch it away from a checker, or reach around a sealing stick
+Options: Use the one-handed extension to pull in a puck outside your normal radius, stretch it away from a checker, or reach around a sealing stick
 Action: Practise the one-handed extension deliberately — reach wide, release, control the puck, recover the grip
 Key: The one-handed extension should not feel like an emergency
 ```
@@ -157,8 +157,8 @@ A useful off-ice drill (**soft touch**): move a ball or puck back and forth as f
 These are two different tools, and you need both. Two terms first. A **poke check** is an opponent jabbing their stick blade straight out along the ice to knock the puck off yours. It is the check most of this section defends against, because coaches treat it as the commonest way a puck is taken — a judgement, not a count. And the **slot** is the ice directly in front of the net, between the two faceoff circles, running from the top of the circles down to the goalmouth; [Rink Map](../foundation/rink_map.md) has that and every other named area of the ice.
 
 ```facts
-Options: Wide — big sweeping pulls outside your feet, for open ice, setting up a deke, or crossing a defender's stick
-Options: Tight — small quick touches near your skates, for traffic, the boards, the slot and protecting
+Options: Wide stickhandling — big sweeping pulls outside your feet, for open ice, setting up a deke, or crossing a defender's stick
+Options: Tight stickhandling — small quick touches near your skates, for traffic, the boards, the slot and protecting
 Risk: Wide handling exposes the puck to a poke check — an opponent jabbing their blade out along the ice
 Risk: Tight handling limits your reach, and you get pinned if you never widen
 Never: Own only one of the two — wide-only players get poke-checked, tight-only players never move a defender
@@ -551,8 +551,8 @@ Protection is a way to buy time, not a place to live. Once it has bought you tha
 Key: Protection buys time, not a place to live — once it has bought you that time, get out
 Technique: From side-on with your weight low, spin away from the checker, pushing off the outside edge of the outside skate — only off a checker already leaning on you, never one still coming at you
 Technique: The outside skate is the one further from the side you are turning toward; its outside edge is the little-toe side
-Options: Or take a tight turn across their path, so your body stays between them and the puck throughout
-Read: Spin the moment you feel them lean in — spin before they commit and they simply follow you
+Options: Instead of spinning off, take a tight turn across the checker's path, so your body stays between them and the puck throughout
+Read: Spin the moment you feel the checker lean in — spin before they commit and they simply follow you
 Key: The spin-off and the tight turn are both edge-work moves before they are hand moves
 ```
 
@@ -791,10 +791,10 @@ Read: If you find yourself on your third move, the play has already gone wrong
 **In short:** Skate at a shoulder, never the chest, so they must turn, then take the lane their turn opens.
 
 ```facts
-Never: Skate straight at their chest — they stay square, keep both lanes closed and stand you up
-Goal: Make them turn — the moment their hips turn, one lane exists that did not before
-Options: The outside shoulder — the one nearer the boards — opens the lane back underneath them, but it is where a well-coached defenceman wants you
-Options: The inside shoulder forces them to defend the middle, the route to the slot, but you are attacking into help
+Never: Skate straight at a defender's chest — they stay square, keep both lanes closed and stand you up
+Goal: Make the defender turn — the moment their hips turn, one lane exists that did not before
+Options: The defender's outside shoulder — the one nearer the boards — opens the lane back underneath them, but it is where a well-coached defenceman wants you
+Options: The defender's inside shoulder forces them to defend the middle, the route to the slot, but you are attacking into help
 Read: Outside when you have a speed advantage; inside when you do not, or when they have already shaded you wide
 Convention: Which shoulder is not settled coaching doctrine. Ask your coach which they want from your position
 ```
@@ -904,7 +904,7 @@ The habit to build: **look for the pass first, and only then consider the move.*
 ```facts
 Never: Try to beat two players — pretending otherwise is how a 2-on-2 becomes a rush the other way
 Options: Pass to the teammate the second defender's arrival has left open
-Options: Chip the puck into the space behind them
+Options: Chip the puck into the space behind the two defenders
 Options: Outside your own end, protect the puck side-on and wait a second for support — under CARHA, avert the contact rather than take it
 ```
 

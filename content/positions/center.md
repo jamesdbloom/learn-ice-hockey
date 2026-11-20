@@ -648,7 +648,7 @@ Convention: How much your team blocks at all is a coaching choice, not a law —
 ```facts
 Risk: Your icing risk is the lazy dump from behind the red line, not the defensive-zone clear
 Technique: Carry the extra stride so the puck is past the red line on your stick before you dump it — legal however far it goes, unless your league splits the ice at the blue lines
-Options: Or beat the icing the other way — make the dump soft enough and short enough that a winger would clearly reach the puck first, which only works where your book runs a hybrid-icing race
+Options: Beat icing with a dump soft and short enough that a winger would clearly reach the puck first — only where your book runs a hybrid-icing race
 Rule: The linesperson judges which player would first touch the puck, not who first reaches the dot (NHL and IIHF Rule 81.1; PWHL Rule 83.1)
 Rule: The hybrid-icing race is the NHL's, IIHF's and PWHL's (81.1; PWHL 83.1) — CARHA 65 has none, and USA Hockey is automatic outside sled hockey, its Rule 624 Note completing the icing "the instant the puck has completely crossed the goal line"
 Rule: Hockey Canada runs the hybrid-icing race only in U18AAA and Junior, and in Senior at the Member's option (6.7(e))

@@ -76,7 +76,7 @@ Technique: Sweep, do not slap — the puck rolls heel to toe and leaves off the 
 Technique: Transfer your weight from the back leg through your hips toward your front foot
 Technique: Follow through with the blade pointing at the target, finishing low around knee height
 Read: Use the flat pass as the default whenever the lane is clear and the receiver can be reached along the ice
-Risk: Low, and the risk is lane selection rather than technique — a clear lane is a precondition
+Risk: A flat pass is low-risk; the risk is lane selection rather than technique — a clear lane is a precondition
 ```
 
 **Mechanics.**
@@ -100,7 +100,7 @@ Technique: Sweep heel to toe, rolling your wrists upward and drawing the blade t
 Technique: Land a saucer a few feet short of the receiver's blade so it settles and slides the last stretch
 Read: Use the saucer when it is the only option — a stick lying in the lane, or a pass that must cross a body
 Never: Saucer when a flat pass is available — air is a difficulty you are adding on purpose
-Risk: Moderate to high — a saucer that lands on edge is worse than no pass, because the receiver commits and then loses it
+Risk: A saucer pass is moderate to high risk — one that lands on edge is worse than no pass, because the receiver commits and then loses it
 ```
 
 **Mechanics.**
@@ -162,7 +162,7 @@ Technique: Play the angle, not the target. Aim at the spot on the wall that refl
 Technique: Keep a bank pass flat and firm, and hit the boards low, where the bounce is truest
 Read: Use the bank pass when a stick or body sits in the direct lane but the boards run behind them
 Action: Call it, and test a bank in warm-up — board liveliness genuinely varies rink to rink
-Risk: Low risk, moderate reliability — the puck never enters the lane the checker is defending, but the bounce is not fully predictable
+Risk: A bank pass is low risk, moderate reliability — the puck never enters the lane the checker is defending, but the bounce is not fully predictable
 ```
 
 **Mechanics.**
@@ -235,7 +235,7 @@ Goal: Aim at a patch of ice your teammate will reach before an opponent does, no
 Technique: Flat, with enough pace to clear the nearest defender's stick but not so much that it runs to the far boards
 Read: Use the area pass when no teammate is open but one is about to be, or in the neutral zone when a direct pass would thread traffic, if your teammate can win the race
 Key: An area pass cannot be intercepted the way a direct pass can, because it is not aimed at a body — it becomes a race
-Risk: Only a good play if your teammate has a genuine speed or angle advantage; otherwise you are giving the puck away politely
+Risk: An area pass is only a good play if your teammate has a genuine speed or angle advantage; otherwise you are giving the puck away politely
 ```
 
 **Mechanics.** You are not aiming at a blade; you are aiming at a patch of ice that a teammate will reach before an opponent does. Put it flat and with enough pace to get past the nearest defender's stick, but not so much that it runs to the far boards ahead of your teammate. Chipping it off the boards past a defender into open ice is the same idea.
@@ -253,7 +253,7 @@ Technique: Leave the puck flat and dead behind you — a puck pushed backwards i
 Action: Keep skating hard and take a defender with you, or nobody has been removed from the play
 Read: Almost exclusively on the rush, entering the offensive zone with speed, with a trailer at a clear head of steam
 Never: Drop it if you are not sure the trailer is there
-Risk: High — the trailer is often not there or is level with you rather than behind, and a failed drop at the blue line becomes a counter-attack against committed forwards
+Risk: A drop pass is high risk — the trailer is often not there or is level with you rather than behind, and a failed drop at the blue line becomes a counter-attack against committed forwards
 Convention: Some zone entry systems build one in deliberately — that is a coaching choice, not a general rule, so find out
 ```
 
@@ -279,13 +279,13 @@ Default position: if you are not sure the trailer is there, do not drop it.
 
 ```facts
 Technique: A long, hard pass needing a full weight transfer and a long follow-through — most misses are underpowered, not misaimed
-Options: Flat if the lane is clear, saucered if it must cross a stick
+Options: Play a stretch pass flat if the lane is clear, saucered if it must cross a stick
 Read: Use the stretch pass when the opposition has over-committed to the forecheck and there is genuinely a man behind them — best on a turnover
 Rule: A pass may cross both blue lines and the centre red line — none of the NHL, IIHF, PWHL, USA Hockey, Hockey Canada or CARHA books keeps a two-line pass restriction, and offside is the only rule limiting how far forward the receiver may be (NHL Rule 83; USA Hockey 630; Hockey Canada 6.11)
 Rule: The receiver is offside when both skates completely cross the leading edge of the blue line before the puck does (NHL Rule 83.1; IIHF Rule 83.1 in the same words)
 Rule: A blade on the ice at or behind the line is onside in every book. A trail skate held in the air behind the line is onside under the NHL, IIHF and PWHL, but offside under USA Hockey 630(a) and Hockey Canada 6.11, which require ice contact; CARHA does not settle it
 Rule: Offside is not the only rule a long pass can break — icing, NHL Rule 81, is a different rule doing a different job, and it limits sending the puck from your own half of the ice past the opposing goal line
-Risk: High reward, high cost — a miss is usually an immediate change of possession with your own forwards caught up ice
+Risk: A stretch pass is high reward, high cost — a miss is usually an immediate change of possession with your own forwards caught up ice
 Key: Ask whether a teammate is actually behind their forwards right now, or whether you are hoping
 ```
 
@@ -486,7 +486,7 @@ Pucks arrive rolling, on edge, or hopping — from a bad pass, a bouncing rim, o
 
 ```facts
 Technique: Kick it forward to your stick with the inside of your skate — one deliberate, controlled kick at the puck, never at the man, and not a panicked scuff
-Options: Or open your hips and let it run through, then collect it behind your stride
+Options: With a pass in your feet, you can also open your hips and let it run through, then collect it behind your stride
 Never: Reach backwards with your stick while continuing to skate forwards
 Rule: Never kick the man; kicking the puck is legal, but a distinct kicking motion cannot score (NHL 49.2); kicking or trying to kick an opponent is a match, injury or not, in NHL and PWHL 49.3; IIHF 49.3 lets the referee give a major and game misconduct, and supplementary discipline can follow (49.4)
 Rule: USA Hockey 627(b) makes kicking, trying to kick or recklessly endangering an opponent by kicking a match penalty with a likely multi-game ban; Hockey Canada 7.1(c)(iii) and CARHA 48(c) make a deliberate kick, or any attempt, a match penalty too
@@ -814,7 +814,7 @@ Action: Use a weighted puck for strength and mechanics in short doses — the ex
 Action: Switch back to a regular puck in the same session, to carry the improved mechanics into normal weight
 Never: Do all your work with a weighted puck — it changes the timing of your release, so it supplements normal-weight repetition
 Key: The measured benefit is for shooting, not passing — no measurement of what a weighted puck does to passing was found for this document, which is not proof that none exists
-Risk: Treat volume with care and stop if your wrists or elbows complain
+Risk: Treat weighted-puck volume with care and stop if your wrists or elbows complain
 ```
 
 - **Use a weighted puck for strength and mechanics, in short doses.** The extra mass forces a full weight transfer and a complete follow-through; you cannot flick a weighted puck with your wrists alone.

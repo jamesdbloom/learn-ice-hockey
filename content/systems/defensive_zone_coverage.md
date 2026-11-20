@@ -254,8 +254,8 @@ Playing low zone collapse, you accept point shots with a stick in the lane, but 
 Key: The walk-down, not the point shot, is the system's actual weakness — every collapse team needs an explicit answer to it
 Countered by: The opposing defenceman skating down into the top of the circle, roughly halving their distance to the net while the collapse has a winger guarding an area rather than a man
 Countered by: The seam between zone-coverage areas — skilled attackers stand where each defender assumes the other has them
-Risk: Point shots, conceded on purpose — the bargain gets worse against a defenceman with a genuine shot
-Risk: Extended possession — you are waiting for a mistake, and against a patient team that means tired legs
+Risk: A low zone collapse concedes point shots on purpose — the bargain gets worse against a defenceman with a genuine shot
+Risk: A low zone collapse concedes extended possession — you are waiting for a mistake, and against a patient team that means tired legs
 ```
 
 - **Point shots.** Unapologetically. The bargain is that a shot from 55 feet with a stick in the lane is one your goalie should have — and that you'd rather concede it than concede a seam pass. The bargain gets worse as the shooting gets better; at higher levels, and against a defenceman with a genuine shot, "let them shoot" is a real cost.
@@ -293,7 +293,7 @@ In man-on-man, **stay within a stick length of your man** by position and stick 
 Key: Nobody is ever unmarked — the seam problem zone coverage has simply doesn't exist
 Goal: Generate turnovers — pressure everywhere means bad passes everywhere; zone coverage waits, man-on-man takes
 Countered by: Nothing a cycle can do against man-on-man — if you are glued to a man, moving the puck to someone who beat an area creates nothing
-Options: Match up — your best defensive forward can be put on their best player, all shift
+Options: Under man-on-man, match up — your best defensive forward can be put on their best player, all shift
 Mindset: "They're yours" is the easiest instruction in hockey to understand, though not to execute
 ```
 
@@ -309,11 +309,11 @@ In man-on-man coverage, never follow your check into harmless ice — a corner w
 
 ```facts
 Countered by: Picks and screens against man-on-man — one collision the referee lets go and your man is gone with a two-stride head start
-Risk: Mismatches — a winger in a footrace with a mobile defenceman has no help behind them
-Risk: One beaten player leaves an attacker with the puck and nobody within twenty feet; every breakdown is immediately a high-danger chance
+Risk: Man-on-man risks mismatches — a winger in a footrace with a mobile defenceman has no help behind them
+Risk: In man-on-man, one beaten player leaves an attacker with the puck and nobody within twenty feet; every breakdown is immediately a high-danger chance
 Risk: Man-on-man is exhausting — a full shift at your opponent's chosen pace, in your own zone
 Never: Follow your check into harmless ice while their teammate walks into the slot you vacated
-Risk: Poor breakout readiness — when you win the puck, your five are wherever their five decided to stand
+Risk: Man-on-man means poor breakout readiness — when you win the puck, your five are wherever their five decided to stand
 ```
 
 - **Picks and screens.** Attacking teams beat man coverage by running players into your defenders on purpose — often interference, but not always called. One collision the referee lets go and your man is gone with a two-stride head start.
@@ -337,8 +337,8 @@ Convention: The two defencemen and the low forward, usually the centre, go man-o
 Convention: The wingers play the points by area — but when your point man crosses the line and comes down, they become yours and you go with them
 Convention: Below the goal line the low three stay locked on their men; when the puck comes back to the point, everyone releases and reverts to areas
 Goal: The hybrid removes the walk-down and the unmarked net front while keeping the wingers high enough to break out
-Risk: Two players on different sides of "are they below the dots yet?" is exactly the disagreement that produces a goal against
-Options: "Man on the puck, zone off the puck" is the same family — man on the carrier anywhere, area coverage away from it
+Risk: Under the hybrid, two players on different sides of "are they below the dots yet?" is exactly the disagreement that produces a goal against
+Options: "Man on the puck, zone off the puck" is in the same family as the hybrid — man on the carrier anywhere, area coverage away from it
 ```
 
 The hybrid is a deliberate compromise: man coverage where being unmarked is fatal, zone coverage where it isn't. Coaching material routinely calls it the most common arrangement in professional hockey, and increasingly common below it. **No count of what teams run in this zone has been found**, so treat that as coaching consensus. (The one team-level measure on record, KHL pass-clustering data described in [Breakouts](breakouts.md), is about a different phase of play.)
@@ -391,8 +391,8 @@ The **collapsing box** is a state rather than a full system: the box shrinks tow
 ```facts
 Convention: The collapsing box is a state, not a full system — the box shrinks toward the crease as the puck goes below the goal line, all five inside the house with sticks in lanes
 Read: Use the collapsing box protecting a lead late, defending 6-on-5 with their goalie pulled, when structure has already gone, or against a team dangerous below the circles but not from its defencemen
-Risk: You concede the entire outside by design
-Options: The strong-side overload is the opposite adjustment — all five shift to the puck side, cutting the ice in half and squeezing the carrier
+Risk: A collapsing box concedes the entire outside by design
+Options: The strong-side overload is the opposite adjustment to the collapsing box — all five shift to the puck side, cutting the ice in half and squeezing the carrier
 Countered by: One hard, accurate cross-ice pass — the overload leaves the whole weak side unoccupied by design
 ```
 

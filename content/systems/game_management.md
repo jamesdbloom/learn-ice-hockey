@@ -72,8 +72,8 @@ Protecting a lead, defend deeper but **keep getting the puck out and changing**.
 
 ```facts
 Key: The trade only works if you are actually trading volume of shots against for quality of shots against
-Risk: You never get the puck back, so you never change, so your legs go — fatigue in your own zone is how one-goal leads die
-Risk: Your defencemen play the whole shift below the hash marks — no exits, no relief, eventually a bad clear
+Risk: Sit back too deep on a lead and you never get the puck back, so you never change, so your legs go — fatigue in your own zone is how one-goal leads die
+Risk: Sitting back too deep on a lead, your defencemen play the whole shift below the hash marks — no exits, no relief, eventually a bad clear
 Risk: Collapsing everyone to the net front concedes screened shots, and rebounds and scrambles in the house — the high-danger chances
 Risk: Four minutes of defending without the puck produces stick fouls, and a power play against is what a trailing team wants
 ```
@@ -197,7 +197,7 @@ Rule: Under the NHL, after your own icing you may make no substitutions before t
 Rule: The IIHF's post-icing substitution bar is Rule 81.4, and its exceptions run one longer — you may also replace "a Player with a broken skate", which the NHL does not allow; but IIHF 82.1 expressly covers icing too and lists only the NHL's three, and the book does not say which governs
 Rule: A refused change sends the substitutes back to the bench and warns the team through its coach; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V)) — the NHL contradicts itself, 82.2(v) warning either team, its 82.3 penalising the visitors with no warning
 Rule: Under the NHL, IIHF and PWHL no time-out is granted to the defensive team following an icing (NHL and IIHF 87.1, PWHL 89.1) — USA Hockey attaches no icing condition to its one time-out (636(f))
-Risk: Under the NHL, IIHF and PWHL, a defensive-zone draw, your five most tired players, and no way to rest them
+Risk: After your own icing under the NHL, IIHF and PWHL: a defensive-zone draw, your five most tired players, and no way to rest them
 Rule: Hockey Canada applies its "no-change on icing" rule only "[i]n categories of U18AAA, Junior, and at the option of the Member in Senior" (6.7(d), with 6.1(f)) — below those an icing costs you the faceoff and nothing else
 Rule: And where Hockey Canada's bar does bind, 6.7(d)(iii) still permits the time-out that NHL and IIHF 87.1 and PWHL 89.1 refuse — either team may take it where it has one; the team that iced simply may not change during it
 Action: Ask before the game — many rec and youth leagues use no-touch icing, and under USA Hockey or CARHA there is no no-change rule to enforce
@@ -227,7 +227,7 @@ Action: Ask before the game — many rec and youth leagues use no-touch icing, a
 
 ```facts
 Action: Move the puck north faster and arrive in numbers through the neutral zone before you park extra players deep
-Options: Aggressive forecheck, then pinching defencemen, then activating a defenceman, then pulling the goalie — roughly that order of safety
+Options: Trailing, escalate in roughly this order of safety: aggressive forecheck, then pinching defencemen, then activating a defenceman, then pulling the goalie
 Read: Trailing, you pinch on anything close; leading, only when you are certain — and either way, only if you can reach the wall as the puck does
 Risk: A pinch that misses is a 2-on-1 the other way, and a fourth attacker deep is a genuine odd-man risk
 Never: Leave the last-man-back spot empty — if a defenceman goes, someone replaces them high, usually a forward
@@ -376,7 +376,7 @@ Never: Any pass across the front of your own empty net during a delayed call
 Rule: On a delayed penalty the referee raises an arm and play continues until the team to be penalised gains control of the puck (NHL Rule 15.1)
 Rule: On a delayed call the penalised team scores only if you put it in your own net; a deflection off one of them counts under USA Hockey (409(c), Casebook 409 Situation 2) but not under the NHL, IIHF, PWHL or Hockey Canada (NHL 78.5(xi), HC 4.15(b)); CARHA does not say, so assume it counts
 Action: Keep the puck away from the offending team; do not force a low-percentage shot that could be smothered
-Risk: A shot that misses and rims to an opponent ends the sequence
+Risk: On a delayed call, a shot that misses and rims to an opponent ends your delayed-penalty attack
 ```
 
 This is the one time you get an extra attacker for free, and amateur teams waste it constantly.
@@ -469,7 +469,7 @@ The classic use is **matching a checking line against a scoring line**. A **chec
 
 ```facts
 Convention: The classic use is matching a checking line — picked for defensive reliability, forechecking and faceoffs — against a scoring line
-Options: Shelter a young player with soft starts, get the trusted group out for late defensive-zone draws, or chase a favourable matchup
+Options: With last change, shelter a young player with soft starts, get the trusted group out for late defensive-zone draws, or chase a favourable matchup
 Risk: Last change can cost you the draw — coaches sometimes send out a worse faceoff man to win the matchup instead
 Key: The road team's counter is the change on the fly, which is why change discipline matters more on the road than at home
 ```
@@ -609,9 +609,9 @@ The signal to change is not a stopwatch, it's a **reduction in your ability to a
 Change before fatigue reaches your decisions, because they go before your legs do: a tired player sees fewer options, later, and then **stops skating and starts reaching**, which is how sticks end up around waists and hands. Your support and your backchecking go after that.
 
 ```facts
-Risk: Decision speed goes first — you see fewer options, later
-Risk: Then your feet go: you stop skating and start reaching, which is how sticks end up around waists and hands
-Risk: Then support goes, so a teammate loses a battle they should have won; backchecking goes last and costs most
+Risk: As you tire, decision speed goes first — you see fewer options, later
+Risk: As you tire, your feet go next: you stop skating and start reaching, which is how sticks end up around waists and hands
+Risk: As you tire, support goes after that, so a teammate loses a battle they should have won; backchecking goes last and costs most
 Key: A 90-second shift is worth less in total than a 30-second one, and it costs your next shift too
 Convention: Coaches put late-shift penalties down to fatigue — the mechanism is sound reasoning, but no published study in amateur hockey codes penalty motive against the preceding play
 ```
@@ -809,7 +809,7 @@ Formats vary enormously below the professional level everywhere else too: some l
 ```facts
 Action: Decide before you start skating — deciding at the hash marks is how you end up doing neither thing well
 Technique: Have two moves and know which one you are using
-Options: A shot in stride to the far side or five-hole, a deke to the backhand, or forehand-backhand-forehand
+Options: In a shootout, shoot in stride to the far side or five-hole, deke to the backhand, or go forehand-backhand-forehand
 Read: Slower approaches give you more options and force the goalie to move first; faster ones beat passive, deep goalies
 Goal: Get the goalie sliding, then go where they have just left
 Never: Telegraph. Head up instead, puck out in front where both a shot and a deke are live
@@ -1035,7 +1035,7 @@ Goal: Be first to the first loose puck — that race usually sets the tone of th
 
 ```facts
 Key: The test is whether the thing you are preventing is more likely to become a goal than the power play you give up
-Options: Stopping an odd-man rush in the last minutes of a close game, or preventing a certain goal — with a foul that stays a minor
+Options: A penalty can be worth taking to stop an odd-man rush late in a close game, or to prevent a certain goal — with a foul that stays a minor
 Rule: Two fouls are not priced as minors under the NHL — fouling a breakaway from behind is a penalty shot, not a power play (57.3), and so is a skater other than the goalie covering a puck that is itself in their own crease (67.4)
 Rule: The trade assumes a minor — a reckless trip or hook is a mandatory major plus game misconduct in USA Hockey (639(b), 623(b)), and plan on a match and a likely multi-game ban (602(a)); the IIHF can make either a major plus game misconduct with nobody hurt (57.4, 55.3), CARHA any trip (86(a))
 Rule: A trip or hook that injures is a major and game misconduct in Hockey Canada (8.2(b), 8.6(b)); so is a hook that injures in the NHL, the PWHL and CARHA (55.4, 56.4, 64(b) with 30(a))
@@ -1135,7 +1135,7 @@ Never: Take one at 6-on-5 or defending 6-on-5 — both directions are catastroph
 ```facts
 Action: Keep your feet moving — when your feet stop your stick starts reaching, and a stick used as a substitute for skating is what hooking and tripping calls are made of
 Action: Give up the last word — USA Hockey's casebook has both players given a minor for a push and a push back, so answering costs you a minor whatever else happens
-Risk: The extra minor against whoever started it is the part the casebook says officials often skip, so retaliating can leave you at a straight wash
+Risk: USA Hockey's casebook says officials often skip the extra minor against whoever started it, so retaliating can leave you at a straight wash
 Key: The casebook condemns skipping the extra minor for whoever started it rather than endorsing it — it says the approach discredits the officials and creates more problems later in the game
 Action: Have a reset — a breath at the faceoff dot, a tap of the pads, a look at the clock
 Convention: That most amateur penalties are frustration-driven is coaching experience, not data — no published study in amateur hockey codes penalty motive against the preceding play

@@ -282,8 +282,8 @@ Never: Straighten up mid-glide — you then have to re-bend before the next push
 
 ```facts
 Convention: Front-to-back arm drive is the traditional and most widely taught method — a coaching choice, not settled fact
-Options: Two of the sources here teach a side-to-side swing instead, mirroring the lateral leg push, and one of them calls front-to-back a cause of a narrow stride
-Options: A front-to-back source in the same list calls that side-to-side swing a mistake — the two schools disagree about the motion itself, not merely its details
+Options: Two of the sources here teach a side-to-side arm swing instead of front-to-back, mirroring the lateral leg push, and one of them calls front-to-back a cause of a narrow stride
+Options: A front-to-back arm-swing source in the same list calls the side-to-side swing a mistake — the two schools disagree about the motion itself, not merely its details
 Never: Let the swing turn your shoulders off line — the side-to-side source that mentions shoulders and the front-to-back one both want them square up the ice
 Key: Both schools of arm technique agree the action must be rhythmic and coordinated with the legs, not a random flail
 Action: Use whichever arm action your coach teaches; start front-to-back if nobody has taught you either
@@ -753,8 +753,8 @@ Key: The snowplough always works
 
 ```facts
 Read: If you can only stop properly one way it costs you constantly — how common that is has never been counted, so test your own weak side rather than assume
-Risk: You unconsciously take longer routes to avoid the weak side, and turn instead of stopping, which carries you further from the puck
-Risk: You arrive at battles decelerating instead of set, and lose the stop-and-start-back-the-other-way exchange
+Risk: Stopping well only one way, you unconsciously take longer routes to avoid the weak side, and turn instead of stopping, which carries you further from the puck
+Risk: Stopping well only one way, you arrive at battles decelerating instead of set, and lose the stop-and-start-back-the-other-way exchange
 Action: In any stop-and-start drill, alternate sides deliberately rather than always stopping the comfortable way
 Action: In your own skating, stop at every blue line and goal line, half of them on the weak side
 ```
@@ -784,7 +784,7 @@ Technique: A crossover generates speed through a wide arc — your feet cross an
 Technique: A tight turn changes direction in the smallest possible space — feet parallel, both skates on the ice, carving a small radius
 Position: In the tight turn the outside skate is on its inside edge and the inside skate on its outside edge
 Read: Take a crossover route when you have room and want speed; take a tight turn when you have no room
-Options: Coming off the wall, escaping a checker before they can reach you, cutting back on the forecheck — pressure in the opposition's end — or turning back into the middle after a dead rush
+Options: Use a tight turn coming off the wall, escaping a checker before they can reach you, cutting back on the forecheck — pressure in the opposition's end — or turning back into the middle after a dead rush
 ```
 
 Players mix these up constantly:

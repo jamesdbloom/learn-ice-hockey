@@ -278,7 +278,7 @@ Technique: VH puts the near pad up vertical against the post and the far pad dow
 Technique: RVH puts the near pad down along the goal line and keeps the inside leg up and vertical — a wall along the ice
 Key: RVH kills the low short-side shot and the wrap-around; VH is better against a shot that can go up the post
 Technique: Dig the off-post pad into the ice at 45 degrees — without that anchor the first shot drives you back into your net
-Risk: You can get locked onto the post, the high short side is exposed, and an early seal encourages you to stop reading
+Risk: With RVH you can get locked onto the post, the high short side is exposed, and an early seal encourages you to stop reading
 Convention: Onto the post late and off it early is the conservative North American default; the Swedish tradition teaches an earlier, defined trigger — ask what yours is
 Never: Drop to a post out of habit, without a read — that is the one thing nobody defends
 ```
@@ -715,7 +715,7 @@ When you move the puck, take the lowest-risk play available: leave it for a defe
 
 ```facts
 Priority: Rank your options by risk before you move the puck
-Options: Leave it for a defenceman with time — lowest risk, and always first when it is available
+Options: As a goalie, leave the puck for a defenceman with time — lowest risk, and always first when it is available
 Options: A short pass to a defenceman on the wall on your strong side, where an interception means less
 Options: Rim it to the far winger — concedes possession but relieves pressure; in CARHA keep the backswing under fifteen inches, or it is a slap-shot minor — if it injures, a major and game misconduct
 Options: Off the glass and out — along it, never over. Straight out of the rink from your end is a minor under NHL, IIHF and PWHL; from anywhere under Hockey Canada and CARHA; USA Hockey only if deliberate
@@ -857,7 +857,7 @@ You see everything. You are stationary and facing the play, while your defencema
 Convention: Goalie calls have a standard vocabulary, but the words vary by team — agree yours in the room, not on the ice
 Options: Pressure — "time" means lift your head and make the good play; "man on" means get rid of it now; call "time" only when sure
 Options: Direction — "over", "reverse", "up", "wheel". Over means behind the net, never through the slot
-Options: Ownership — "leave it" means I will stop it and leave it for you; "I've got it" means go to your breakout position
+Options: Ownership — the goalie's "leave it" means I will stop it and leave it for you; "I've got it" means go to your breakout position
 Key: "Screen" means get out of my sightline, or get beside the man in it — make it your first call, because nobody else can know you cannot see; that it is also the most ignored is observation, not a count
 Key: "Back door" means an unmarked opponent at the far post, and the nearest player takes them right now
 Key: "Shot" means you have the shooter, so your defenceman takes away the pass — not a warning that a shot is coming
@@ -932,7 +932,7 @@ Technique: Keep a little backward flow so you can react either way; flat-footed 
 Never: Move first — the shooter's whole plan is to make you commit, and the last one to move wins
 Convention: What to watch is a genuine coaching split — the puck, or the shooter's chest and hips. Ask your goalie coach and be consistent
 Read: Puck out in front and winding up, respect the shot and stay big; pulled to the forehand with the head up, respect the deke
-Risk: The poke check works when the puck gets too far in front of them — miss and you have neither reach nor balance
+Risk: The poke check works when the puck gets too far in front of the shooter — miss and you have neither reach nor balance
 Rule: Deliberately removing your mask to force a stoppage is a delay-of-game minor in all six books (NHL, IIHF and PWHL Rule 9.6, USA Hockey 304(e), Hockey Canada 3.6(d), CARHA 24(f)) — do it on a breakaway, penalty shot or shootout and the NHL, the IIHF and the PWHL award the goal outright
 Rule: Under USA Hockey 610(e) (a penalty shot or optional minor), Hockey Canada 4.11(a)(iii) (your blocker and trapper too) and CARHA 24(f), deliberately removing your mask on a breakaway concedes a penalty shot, and all three add a last-two-minutes-and-overtime limb the NHL, IIHF and PWHL do not write
 ```

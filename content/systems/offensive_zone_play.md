@@ -180,8 +180,8 @@ If the shot comes before they finish that sequence, they are not making a positi
 Action: Look across before you look along — your first scan off the wall is the far side of the slot, the backdoor and the weak-side dot
 Never: Scan up the wall first — by the time you come back, the seam has opened and closed
 Technique: Pass to where the shooter is going, not where they are — a pass into the feet costs the extra touch the goalie needed
-Options: Carry it across yourself — the half-wall into the high slot, or curling out from behind the net into the slot, both cross the line
-Options: Use the player behind the net — a pass out from below the goal line crosses the road almost by definition
+Options: Carry the puck across the royal road yourself — the half-wall into the high slot, or curling out from behind the net into the slot, both cross it
+Options: Use the player behind the net — a pass out from below the goal line crosses the royal road almost by definition
 Read: Expect the seam to be defended, and expect it to open only briefly
 Never: Drive off the half-wall or curl out from behind the net with your head down — you cannot brace for a hit you have not seen, and coming out past the post you can be driven into the goal frame
 ```
@@ -264,7 +264,7 @@ Technique: Stay a stride inside the line, not on it — if the puck completely c
 Rule: Losing the zone is not offside — a delayed offside arises when the puck is played back IN with attackers still inside (NHL and IIHF 83.3, PWHL 85.3); the puck merely leaving nullifies one (USA Hockey 630(d)(1))
 Rule: ⚠️ **Check your book before counting on tagging up** — USA Hockey 630(d) grants the delayed offside only at Youth 15-Only and Girls 16U and above, High School and Adult; below those 630(c) stops play at once. The NHL, IIHF, PWHL and Hockey Canada 6.11(b) set no such floor
 Position: Down to the top of the circle is the activated position — shoot from a better angle, walk the line (skate sideways along the blue line), or receive in the high slot, and still recover
-Risk: Below the circles is always a commitment — below the hash marks you are effectively a fourth forward
+Risk: For a defenceman, below the circles is always a commitment — below the hash marks you are effectively a fourth forward
 Never: Go below the circles before someone has taken your job at the blue line — before you go, not after
 ```
 
@@ -606,7 +606,7 @@ Rule: A raised stick can be a penalty with no contact at all — USA Hockey Case
 
 ```facts
 Read: Anticipate where the rebound goes — a pad tends to squirt back toward the corner it came from, a blocker to the shooter's off side, a chest to drop in the paint
-Risk: Treat rebound directions as tendencies, not rules — a goalie angling their surfaces deliberately will break all three on purpose
+Risk: Treat a goalie's rebound directions as tendencies, not rules — one angling their surfaces deliberately will break them on purpose
 Action: Shoot it back immediately — do not settle it, do not look for a pass; the window is one or two seconds while the goalie is down
 Options: Go to the far post when you get tied up — nobody is covering it and it opens the weak-side chance
 Key: The defending team recovers roughly 60% of rebounds — Greg Revak's figure, read off a chart by Alex Novet — so you win that race by deciding to go before the shot, not by reacting after it
@@ -944,7 +944,7 @@ This is also the moment most amateur teams stop playing — the shot goes in, ev
 Convention: With three forwards rotating and both defencemen holding the blue line — the default shape this section describes — F3 is the high forward; a coaching choice, not a law
 Position: Be the safety — at or near the top of the circle, so a rebound straight out is yours and a counter-attack has to go through you
 Action: Cover the vacated point if a defenceman activates — F3 takes the blue line in this guide's default setup, which wants two on the line
-Options: Under a five-player rotation whichever player is highest covers; a third variant slides the weak-side defenceman across to the middle instead
+Options: Under a five-player rotation whichever player is highest covers the vacated point; another variant slides the weak-side defenceman across to the middle instead
 Read: If the rebound squirts to the high slot, jump — you are the closest player with forward momentum
 Position: The other two forwards go to the net — one to the front for the screen and tip, one hunting the strong-side rebound
 ```

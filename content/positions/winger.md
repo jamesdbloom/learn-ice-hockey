@@ -658,7 +658,7 @@ Stay tight and force the opposing point into low-percentage shots. Block **from 
 ```facts
 Rule: The dot is a decision deadline, not a finish line — NHL and IIHF 81.1 and PWHL 83.1 judge who would first touch the puck, by the time a skate reaches the dots; USA Hockey 624 runs no race outside sled, CARHA 65 none, Hockey Canada 6.7(e) only in U18AAA, Junior and, at the Member's option, Senior
 Action: Carry the extra stride so the puck is past the red line on your stick before you dump it — legal however far it travels, unless your league splits the ice at the blue lines
-Options: Or beat the icing by winning the race to the puck yourself — where your book runs a race at all; under automatic icing only a dump that stops short of the goal line beats it
+Options: Beat icing by winning the race to the puck yourself — where your book runs a race at all; under automatic icing only a dump that stops short of the goal line beats it
 Action: Sprint the first half of the chase — that is where the call is decided
 Read: If you are clearly beaten to the dot, ease up; you gain nothing and the end boards are unforgiving. If the goalie comes out for it, pull up
 Rule: Race the puck, not the player — unnecessary contact with whoever is playing an obvious icing puck is boarding if it puts them into the boards and should be treated as charging if not (NHL, IIHF and PWHL 41.1, Hockey Canada 7.2); USA Hockey 624(d) penalises it too

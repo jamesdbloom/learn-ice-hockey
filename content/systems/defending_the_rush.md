@@ -119,7 +119,7 @@ Close the gap on the rush. A tight gap takes away the attacker's speed, their ti
 Key: A large gap looks safe and is not — it hands the attacker three things at once
 Risk: A big gap gives the carrier space to accelerate, so they arrive faster than you while you are moving backwards
 Risk: A big gap gives the carrier time to lift their head, find the trailer and the far winger, and pick the best of three options
-Risk: A clean shooting lane from distance — a shot through your shins is not a real chance
+Risk: A big gap gives the carrier a clean shooting lane from distance — a shot through your shins is not a real chance
 Action: Close the gap and you remove speed, vision and shooting simultaneously
 Key: Gap control is treated as the highest-leverage habit in defensive hockey — coaching emphasis, not a counted ranking
 ```
@@ -285,7 +285,7 @@ Convention: The standard assignment is the centre in the middle lane and the win
 Key: Cover the middle lane first, because it runs straight into the slot — the middle-lane driver is the attacker skating hard through the middle without the puck
 Key: That the middle-lane driver is the assignment most often missed is coaching emphasis, not a counted ranking
 Read: Middle-lane drivers are missed because they do not have the puck, and eyes go to the puck
-Options: Other teams give the middle to the first man back, or pick up man-on-man from the puck outward — find out which yours uses
+Options: Other backcheck schemes give the middle lane to the first man back, or pick up man-on-man from the puck outward — find out which yours uses
 Key: Under every variant, somebody owns the middle and nobody assumes it is somebody else
 ```
 
@@ -324,7 +324,7 @@ Rule: Your blade goes in the passing lane, not on your man — NHL and IIHF 56.1
 Rule: Hockey Canada 7.4(v) makes a body check to a blind side charging in every division — Interpretation 2: an open-ice check from outside a 90° view of a vulnerable opponent, "whether or not the player has the puck". 7.4(b) a major and game misconduct, mandatory on injury; 7.4(c) a match penalty
 Rule: USA Hockey 625: a pick, or lane or speed change to hit a non-carrier: an interference minor; reckless roughing (640), or a hit from behind (608) if reckless, forceful at boards or head first into boards or net, is major + game misconduct; reckless, plan on a match; meant to injure, a match (602(a))
 Options: If you are genuinely beaten and can only chase, chase the stick — blade under theirs or on the puck, never reaching around their body, which is a hook or a trip
-Risk: Reaching around their body from behind is a hook or a trip, and near your own net that gets expensive
+Risk: Reaching around an attacker's body from behind is a hook or a trip, and near your own net that gets expensive
 ```
 
 Chasing an attacker from behind their shoulder is not backchecking — it is jogging. You cannot defend anything from behind.
@@ -357,7 +357,7 @@ If a defenceman is already engaged with the carrier and playing a good gap, spri
 
 ```facts
 Never: Decide mid-rush to sprint in and help a defenceman who is already engaged with the carrier and playing a good gap
-Risk: Two defenders on one attacker, and your actual assignment left unmarked
+Risk: Sprint in to help an engaged defenceman and you put two defenders on one attacker, with your actual assignment left unmarked
 Action: Skate past the puck battle to the unmarked attacker — your job is the player nobody has
 Mindset: Trusting your defenceman to win their own 1-on-1 is what turns a 3-on-2 into three 1-on-1s
 Options: Some teams run the opposite by design — the first forward back pressures the carrier and the defenceman holds inside instead
@@ -539,7 +539,7 @@ Risk: Going early or sliding past the lane leaves you on the ice and out of the 
 Never: Go down with your head in the shot lane — this system exists to force a shot, so a shot is what you are going down in front of
 Action: Ask the coach who asks you to slide exactly how they want you to go down — no method for going to the ice on a pass lane is set out here, and that part is what hurts you
 Rule: In British women's hockey the IIHF's 57.3 major ejects you as well, at every age and adult included — In-House Rule 101 gives any major an additional game misconduct "in all cases" and states no age scope of its own
-Risk: A late or wild slide is the one that trips somebody — but the timing is not the whole of the exposure
+Risk: A late or wild slide is the one that trips somebody — but a well-timed slide that takes a player down can still be called a trip
 Rule: USA Hockey: sliding anyone down is a trip "regardless of who gains possession of the puck", unless you knelt to block a shot and momentum took you into the shooter (Casebook 639 Sit. 4); if reckless, a mandatory major + game misconduct (639(b)) — plan on a match and a likely multi-game ban (602(a))
 Rule: Never finish a low hit into the back — it is checking from behind, not clipping: IIHF 43.1 "in any manner", no minor (43.2); Hockey Canada 7.5(a), CARHA 53(a) game misconduct at the floor; NHL, PWHL: vaguer, no laxer
 Rule: USA Hockey: a hit from behind is at least a minor + misconduct (608(a)); forceful at the boards, head first into boards or net, reckless, or with careless head, face or neck contact, at least a major + game misconduct (608(b), 620(b); Casebook 608 Sit. 1)
@@ -582,8 +582,8 @@ Key: The weak-side defender is not free; being ready to help is not the same as 
 ```facts
 Convention: The default assumed here is "two wide, middle to the backchecker" — a defenceman on each outside attacker; how many teams run it has never been counted
 Never: Chase the puck carrier under the two-wide default — a wide carrier belongs to the D in that lane, a middle carrier to the backchecker
-Options: Under the strong-side system the strong-side D takes the carrier instead, so ask which of the two you play
-Options: The alternative is strong-side D on the puck as a 1-on-1, weak-side D splitting the middle and the far attacker
+Options: On a 3-on-2, under the strong-side system the strong-side D takes the carrier instead, so ask which of the two you play
+Options: The 3-on-2 alternative is strong-side D on the puck as a 1-on-1, weak-side D splitting the middle and the far attacker
 Read: If your backchecker is genuinely not coming, squeeze the middle and concede the far wide attacker — but look before you assume it
 Action: Retreat together at the same speed, holding a flat line with the middle sealed between you
 Never: Back all the way to the goal line — collapsing into your crease concedes the whole slot
@@ -732,7 +732,7 @@ Two legitimate ways to defend the line, and this is a genuine trade-off rather t
 Position: Hold your ground at or just inside the blue line and challenge the carrier with your stick and position
 Goal: Stand up to deny the zone entirely — the attack has to dump the puck in or turn back, and neither produces a chance
 Rule: Both skates must cross the line after the puck under NHL, IIHF and PWHL rules (PWHL 85.1 prints the NHL’s plane test); USA Hockey 630(a) needs skate contact with the neutral zone or the blue line, Hockey Canada 6.11 only skates touching the ice, and CARHA 72(c) never defines "own side" either way
-Risk: A miss leaves only your partner and goalie back — your partner is left in a 2-on-1 or worse
+Risk: A missed stand-up at the blue line leaves only your partner and goalie back — your partner is left in a 2-on-1 or worse
 Countered by: A skilled carrier who chips the puck past you as you stand up and skates onto it
 Read: Right for slow attacks, a head-down carrier, a carrier already near the boards, forwards clearly tracking back behind the play, and a clogged neutral zone
 Never: Read a head-down carrier as a licence to arrive harder — it tells you they cannot change direction, and nothing more
@@ -765,7 +765,7 @@ You give ground, holding your gap, and defend as they enter.
 Position: Give ground, holding your gap, and defend them as they enter
 Goal: Back off so nothing gets behind you — the worst case is a controlled entry, not a breakaway
 Convention: Treated as the default for most defencemen most of the time because it is reliable and repeatable — an impression rather than a measurement
-Risk: Concedes the blue line, so play happens in your end and the shift gets longer
+Risk: Backing off concedes the blue line, so play happens in your end and the shift gets longer
 Never: Back off with a growing gap — a soft retreat gives the attacker speed and the zone, and is worse than either option
 Read: Right against attackers with speed, on odd-man situations, when you are the last defender, when unsure, and any time you are tired
 ```

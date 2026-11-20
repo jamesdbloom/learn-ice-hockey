@@ -97,7 +97,7 @@ Technique: Bottom hand at or just above the midpoint — the wind-up, not the gr
 Action: Drop the blade behind the puck and load the shaft — cocking a spring, not winding up an axe
 Action: Transfer weight back to front, short and sharp; flat-footed and arms-only is the fault to fix first
 Read: Inside the faceoff dots, or a window that will be shut in half a second — this is your shot
-Risk: Less power than a slap shot; you will not beat a goalie from the blue line with it
+Risk: A snap shot has less power than a slap shot; you will not beat a goalie from the blue line with it
 ```
 
 The snap shot is the compromise between the wrist shot and the slap shot, and the compromise is so good that at higher levels it has quietly become the default. You get most of the power of a slap shot with most of the release speed of a wrist shot.
@@ -605,7 +605,7 @@ On a breakaway, **come in hard to the blue line, ease off through the top of the
 
 ```facts
 Action: Arrive at the top of the circles with less speed than you feel like carrying
-Risk: Full flight cuts you to one option and hands the goalie their easiest read
+Risk: On a breakaway, full flight cuts you to one option and hands the goalie their easiest read
 Technique: Come in hard to the blue line, ease off through the top of the circles, accelerate into your move
 Convention: That a change of pace beats raw pace, and is worth more than any hand skill, is coaching craft rather than a measured finding — no source held here measures either ranking against a goalie
 Read: A deke needs room; you cannot pull the puck across your body once you are past the post
@@ -800,7 +800,7 @@ Get a stick whose flex you can load in a wrist shot, with a curve that suits you
 
 ```facts
 Technique: Roughly right flex feels like the stick loading noticeably in a wrist shot, without feeling like a whip
-Risk: Too stiff and you cannot fully load the shaft, so you lose power; too soft and the shaft flaps, wasting energy and accuracy
+Risk: Too stiff a stick and you cannot fully load the shaft, so you lose power; too soft and the shaft flaps, wasting energy and accuracy
 Options: A deeper curve lifts and helps toe drags; a flatter one gives a better backhand and better low shots
 Action: Check your lie — stand naturally in skates and see whether the whole bottom edge of the blade touches
 Never: Chase equipment as a substitute for reps — a correct stick removes an obstacle, it does not add a skill

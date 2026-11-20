@@ -228,7 +228,7 @@ Never: Get low by pushing your head out over the dot — depth comes from knees 
 
 ```facts
 Technique: Bottom hand right down near the blade — that is where the leverage, speed and power come from
-Options: Top hand halfway down the shaft or up on top of it; the coaching sources disagree, so try both
+Options: On a faceoff, your top hand goes halfway down the shaft or up on top of it; the coaching sources disagree, so try both
 Technique: For the reverse grip, roll your bottom hand over so your knuckles face down
 Read: Take the reverse grip when you have committed to a backhand pull and want raw speed and strength
 Risk: The reverse grip telegraphs, and gives you almost nothing on the forehand
@@ -248,7 +248,7 @@ Options: Some players roll both hands into a "kayak paddle" grip for maximum bac
 Key: There is no single correct draw — the good centres own three or four
 Technique: Pull the puck back on the backhand, usually with the reverse grip — pulling is a stronger and faster motion than pushing
 Convention: How often each technique wins is not something this document can tell you — the NHL faceoff data behind it records zone, strength and winner, not technique
-Options: Lift or press their stick with yours, then play the puck — a 1-on-1 becomes a scramble for your wingers. Never a hand on their stick or your stick on their hands; never hook it or hold it down
+Options: Lift or press the other centre's stick with yours, then play the puck — a 1-on-1 becomes a scramble for your wingers. Never a hand on their stick or yours on their hands; never hook it or hold it down
 Risk: The stick lift is the higher-reward version and it fails badly if you miss
 ```
 
@@ -345,7 +345,7 @@ Action: Change the technique, not just the target — pull one back, tie the nex
 Risk: Win three straight draws to the same defenceman and the fourth will be jumped
 Key: Even a technique you are worse at has value if it stops an opponent pre-loading against your best one
 Technique: A shoulder feint, hip fake or delayed stick approach can draw an opponent into moving early — which, if they move before the drop, is a faceoff violation
-Risk: The feint can be charged to you instead — 76.7 names the centre moving prematurely, and a feint that becomes contact is a minor, mandatory under USA Hockey, Hockey Canada and CARHA
+Risk: A faceoff feint can be charged to you instead — NHL and IIHF 76.7 name the centre moving prematurely, and a feint that becomes contact is a minor, mandatory under USA Hockey, Hockey Canada and CARHA
 Goal: Make them move before the drop — that is a faceoff violation, but the remedy NHL Rule 76.7 writes for it is a re-drop, not a removal
 Rule: Neither IIHF edition removes their centre for a premature move — the 2025/26 book warned their team and re-dropped, the 2026/27 book re-drops (IIHF 76.7, both); the ejections live in 76.6 and in 76.7's contact paragraph, not in its opening sentence
 Rule: ⚠️ **Under the IHUK In-House Rules 2026-27 the feint pays** — they replace the centre for every violation except on a draw after an icing, a premature move included. Not in the Elite League: its Casebook writes no Rule 76, so IIHF 76.7 only re-drops
@@ -1072,7 +1072,7 @@ Some nights one centre beats you clean every time. **The common answer is to go 
 ```facts
 Action: Go to the tie-up — lift or press their stick with yours, then play the puck, so their clean win becomes a scramble your four are already leaning into
 Action: Tell your wingers before you line up that it is a tie-up draw, so the two nearest bodies go on the drop
-Options: Or change the taker — a second centre who shoots the other way, on their strong side, or a winger who reads this centre better; ask your bench which your team prefers
+Options: Change the faceoff taker — a second centre who shoots the other way, on their strong side, or a winger who reads the opposing centre better; ask your bench which your team prefers
 Read: Scout them from the bench — most centres have one preferred draw and one strong side
 Never: Cheat back against a centre who cheats the drop — hold your timing; under the NHL, IIHF and PWHL a premature move is a violation on either centre, and Hockey Canada names it as one
 Never: Answer a lean with a lean — contact before the drop is a violation whoever makes it, and a minor, mandatory under USA Hockey, Hockey Canada and CARHA

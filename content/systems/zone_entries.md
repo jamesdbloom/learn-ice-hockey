@@ -475,7 +475,7 @@ All of this is **coaching choice**, and it varies enormously. Ask your coach wha
 ```facts
 Convention: Crossing patterns, who takes the wide lane, whether the centre or a winger carries — all coaching choice, and it varies enormously
 Options: Some teams demand strict lane discipline (left wing stays left); some are built entirely on crossing and swinging
-Options: Some want the best puck carrier on the ice touching every entry
+Options: Some teams want the best puck carrier on the ice touching every entry
 Action: Ask your coach what your team wants before you decide you know
 ```
 
@@ -674,7 +674,7 @@ Action: Fire the puck low and hard around the boards, following the curve of the
 Read: Pressure on you from the inside, and a teammate coming down the far wall or the far corner
 Goal: With the hard rim, beat the defenceman stepping up on you and arrive at the far side before their partner can rotate
 Key: A rim is not a reverse — a reverse goes back against the flow, behind you, for a different purpose
-Risk: Too soft and it dies behind the net; too hard and it comes off the far boards to the weak-side defenceman
+Risk: Rim the puck too soft and it dies behind the net; too hard and it comes off the far boards to the weak-side defenceman
 ```
 
 ![](diagram:dump-hard-rim)
@@ -1094,7 +1094,7 @@ Meeting the entry at your own blue line rather than backing in.
 ```facts
 Action: Meet the entry at your own blue line rather than backing in
 Goal: Standing up at the line aims to kill controlled entries outright — if they cannot cross with the puck, they cannot get the controlled-entry shot rate
-Risk: If you are beaten you are beaten badly — flat-footed at your own line with a forward behind you and only your goalie left
+Risk: Stand up at the line and get beaten and you are beaten badly — flat-footed at your own line with a forward behind you and only your goalie left
 Key: Standing up needs good reads, your forwards back, and a partner who slides with you rather than staying deep
 ```
 

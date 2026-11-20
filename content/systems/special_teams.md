@@ -144,7 +144,7 @@ First units are widely **described as** running the 1-3-1 with **four forwards a
 ```facts
 Position: Three high in an arc — one apex highest in the middle at the blue line, two flanks lower either side — and two low at the net
 Key: There is no bumper in a true umbrella; the middle of the slot is deliberately vacated so the high players have clean lanes into it
-Options: Classic — a forward apex with both defencemen out on the flanks; modern — the lone defenceman at the apex with two forwards down at the tops of the circles
+Options: The classic umbrella has a forward apex with both defencemen out on the flanks; the modern one, the lone defenceman at the apex with two forwards down at the tops of the circles
 Never: String three players level across the blue line and call it an umbrella — with no depth every pass is short and lateral
 Action: The three high move the puck side to side for a shot with a lane; the two low screen, tip and collect rebounds
 Countered by: A diamond or an aggressive box, which will happily let an umbrella pass the puck around the top all night
@@ -281,7 +281,7 @@ Key: Ranking the royal road the highest-value pass type rests on volunteer-track
 Goal: A goalie tracking the puck across the middle cannot stay square — they are off their angle and depth when the shot arrives
 Action: Before you shoot from a half-wall, check the far side — a cross-seam pass beats a shot from the same spot almost every time
 Key: Offensive Zone Play covers the measured finishing rate and its qualifications — take the number from there, with those words attached
-Risk: The 20-30% range quoted in coaching material has no published primary source behind it; treat it as illustrative only
+Risk: The 20-30% royal-road scoring range quoted in coaching material has no published primary source behind it; treat it as illustrative only
 ```
 
 - **Why the royal road works:** a goalie who has to track the puck across the middle cannot stay square. They must break from small shuffles into a hard lateral push, and while pushing they are opening up, off their angle and off their depth. The shot arrives before they are set. See [Goaltender](../positions/goaltender.md) for the save mechanics from the other side.
@@ -298,7 +298,7 @@ Key: The point shot is not an attempt to score from the point — it is a delive
 Technique: Judge a point shot on whether it arrives low, hard and on net with a body in front
 Read: Shoot when the net-front player has established position and the goalie's view is obstructed, not before
 Action: Change the angle before you shoot — step sideways along the line until the shot-blocker has to move their feet, and the lane the kill set is no longer the lane you are in
-Risk: A missed net is a free clear off the end boards and twenty seconds gone
+Risk: On the power play, a missed net is a free clear off the end boards and twenty seconds gone
 Rule: In a CARHA league shoot wrist or snap — Rule 79(a) makes a slap shot, a backswing over fifteen inches, a minor, and a major if it injures, which brings a game misconduct (30(a))
 ```
 
@@ -330,7 +330,7 @@ Never: Walk to the corner — below the goal line and wide you are harmless; the
 Technique: Head up, feet moving toward the net — the moment your feet stop, the kill resets
 Never: Turn your back to anyone coming at you on a walk-down off the half-wall, and never duck — take contact with skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
 Action: If the walk-down is denied, reset to the point and start over
-Risk: Losing the puck below the goal line is a wasted twenty seconds and usually a clear
+Risk: On the power play, losing the puck below the goal line is a wasted twenty seconds and usually a clear
 ```
 
 ![](diagram:pp-walk-down)
@@ -494,7 +494,7 @@ Convention: Which shape you run is a coaching choice — the same four players c
 Action: Know which one is called before the faceoff
 Key: The box, diamond and wedge+1 are the in-zone shapes, a separate decision from the neutral-zone pressure scheme below, not a competing one
 Key: The box is the shape almost everyone is taught first and the baseline the other two are described against
-Risk: No public count of how many NHL teams run each as a base shape has been found. Treat any "most teams use X" claim as an impression, not a measurement
+Risk: No public count of how many NHL teams run each penalty-kill shape as a base has been found. Treat any "most teams use X" claim as an impression, not a measurement
 ```
 
 > Again: which shape you run is a **coaching choice**. The same four players can run all three of these in one game. **Know which one is called before the faceoff.**
@@ -541,7 +541,7 @@ Action: Each middle takes a half-wall and both collapse onto the bumper when the
 Position: The diamond's low player owns the goalmouth, alone
 Read: Use the diamond against a 1-3-1, or against an umbrella where the apex can pressure the middle point man
 Countered by: A quick cross-seam pass to the far half-wall — the diamond is narrow, and the far-side one-timer is on if the middles are slow
-Risk: The single low player faces a net-front presence and a backdoor arriver at once — a 2-on-1 you are choosing to concede
+Risk: In a diamond kill, the single low player faces a net-front presence and a backdoor arriver at once — a 2-on-1 you are choosing to concede
 ```
 
 ![](diagram:pk-diamond)
@@ -858,7 +858,7 @@ At 4-on-4, **support the puck with short options and quick movement**, activate 
 
 ```facts
 Key: Each player has a quarter more ice, and the extra room is mostly in the middle, so skill and skating matter more and structure matters less
-Risk: With only two forwards back you have one fewer support layer, and a 2-on-1 arrives faster and with more room
+Risk: At 4-on-4, with only two forwards back you have one fewer support layer, and a 2-on-1 arrives faster and with more room
 Never: Activate as a defenceman more than you would at even strength — being caught is an immediate odd-man rush the other way
 Action: Change on possession in the offensive zone or after a clear; a change with the puck live hands them a rush against three
 Action: Support the puck with short options and quick movement — do not spread out, exactly as at 5-on-5

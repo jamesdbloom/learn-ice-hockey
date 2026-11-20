@@ -1,0 +1,22 @@
+file	line	label	verdict	note
+positions/center.md	75	Options	OPTIONAL	defensive-zone breakout context only in heading; options are self-evident plays
+positions/center.md	324	Options	OPTIONAL	"If defenders close in" - slot context in heading
+positions/center.md	353	Options	OPTIONAL	OZ-under-pressure context in heading
+positions/defender.md	386	Options	OPTIONAL	"A bank off the boards, a pass to a forward, or a dump-in" - NZ-under-pressure context in heading
+positions/defender.md	585	Options	OPTIONAL	"a chip out of the zone to reset" - which zone (offensive) only in heading
+positions/defender.md	589	Risk	OPTIONAL	"Losing the line" - offensive blue line implied
+positions/goaltender.md	858	Options	OPTIONAL	"Pressure - 'time' means..." goalie-call frame in heading; sibling :860 is in defects
+positions/goaltender.md	859	Options	OPTIONAL	as :858
+positions/switching_positions.md	295	Options	OPTIONAL	"Three offensive-zone depths" - for a defenceman, implied by "your spot at the line"
+positions/winger.md	397	Options	OPTIONAL	OZ corner context in heading
+systems/breakouts.md	433	Risk	OPTIONAL	"The habit version" resolves inside the line (quick-up named)
+systems/breakouts.md	609	Options	OPTIONAL	"Four things you can do" - winger on the wall implied by "shield it on the wall"
+systems/defending_the_rush.md	538	Risk	OPTIONAL	"Going early or sliding past the lane" - slide named
+systems/defending_the_rush.md	838	Options	OPTIONAL	list of rush calls; recognisable as calls
+systems/faceoffs.md	235	Options	OPTIONAL	"kayak paddle grip" - faceoff context in heading
+systems/faceoffs.md	370	Options	OPTIONAL	weak-side-draw context in heading
+systems/faceoffs.md	528	Options	OPTIONAL	OZ faceoff set plays named
+systems/offensive_zone_play.md	778	Options	OPTIONAL	"Low/High/Middle/Yourself" - half-wall origin only in heading (also 779-781)
+systems/offensive_zone_play.md	891	Options	OPTIONAL	off-the-rush context in heading
+systems/offensive_zone_play.md	907	Options	OPTIONAL	off-a-set-possession context in heading
+technique/puck_handling.md	734	Options	OPTIONAL	deception channels (also 735-737) - "deception" only in heading

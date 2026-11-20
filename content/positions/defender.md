@@ -608,7 +608,7 @@ Read: Pinch only if you can arrive as the puck does and someone, usually a high 
 Goal: Prevent the opponent from exiting the zone cleanly
 Technique: Pressure from the top, not from below. If you were stepped down when it turned over, recover to the line first, read, then decide whether to pinch
 Convention: Only one defender pinches at a time — a near-universal coaching convention rather than a rule, with real exceptions coaches do call
-Risk: If you both step up and the play breaks the other way, the opponent has a clean break against your goalie
+Risk: If both defenders pinch and the play breaks the other way, the opponent has a clean break against your goalie
 Never: Cut across into or hit a winger who has chipped the puck past you — turn and skate to the puck
 ```
 

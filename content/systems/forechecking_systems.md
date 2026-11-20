@@ -429,7 +429,7 @@ Convention: The line of three is conventionally F2, F3 and one defenceman, the d
 Convention: The single high player is the safety, responsible for anything that gets behind the line of three
 Goal: The 1-3-1 takes away lanes rather than players — against a team exiting on three short passes there is nowhere to put the puck
 Read: Pick the 1-3-1 against short controlled breakouts, when you cannot get pressure on in time such as against a line change, and to protect a lead
-Risk: You concede the initial puck entirely, and a great deal of ice if the line of three is beaten in one pass — this is not a beginner system
+Risk: The 1-3-1 concedes the initial puck entirely, and a great deal of ice if its line of three is beaten in one pass — this is not a beginner system
 Countered by: Chipping past the 1-3-1's flat line and beating it with speed, banking a pass off the boards, and moving the puck side to side before committing
 ```
 
@@ -523,7 +523,7 @@ Convention: All three forwards hunt the puck and both defencemen pinch on anythi
 Action: Call it a full-ice press or an all-out forecheck — "2-2-1" is standard basketball terminology and is not what coaching material standardly calls this in hockey
 Read: Almost exclusively late and trailing — down a goal in the last two or three minutes, or with the goalie pulled for the extra attacker
 Rule: On a delayed penalty play stops only when the offending team gains control, not when it merely touches the puck (NHL Rule 15.1). Play until the whistle
-Risk: A single clean exit is a breakaway or an empty-net goal against
+Risk: Against a full-ice press, a single clean exit is a breakaway or an empty-net goal against
 Never: Take "pinch on anything" as a licence to seal a winger against the wall — "on anything" is about the puck, not the man, and whether you may seal at all depends on which book you are under
 Countered by: One pass beating the full-ice press — you are betting they cannot make it in the time you allow them
 ```
@@ -950,7 +950,7 @@ Action: Against an aggressive forecheck, move the puck early — before pressure
 Options: A reverse — the puck sent back against the flow — beats an over-committed F1; a rim — sent onward around the boards — beats one who has sealed you in
 Targets: Your winger should come underneath the pressure to receive, not stand still on the wall
 Action: Against containment, use D-to-D and controlled regroups to make the wall shift, then chip past the line and race for it; if the goalie comes out for it, pull up
-Options: Bank passes off the boards to teammates who have already got behind the line
+Options: Against containment, bank passes off the boards to teammates who have already got behind its line
 Never: Skate into the middle of three players — the one thing that never works
 Never: Turn your back to anyone coming at you on the wall, and never duck — keep your head up and your chin off your chest, in every league, checking or not
 ```

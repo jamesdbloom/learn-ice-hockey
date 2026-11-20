@@ -117,7 +117,7 @@ Space is created in the defender's mind before it exists on the ice. A defender 
 
 ```facts
 Key: Space is created in the defender's mind before it exists on the ice — show them the wrong option
-Options: Fake shot, look-off, head and shoulder fake, or skating at one shoulder to open the other
+Options: Deceive a defender with a fake shot, a look-off, a head and shoulder fake, or skating at one shoulder to open the other
 Technique: Fake shot — weight onto the back leg, shoulder dropped, stick starting back; it only sells if you sometimes really shoot. In CARHA, keep the backswing within fifteen inches — never a wind-up
 Rule: CARHA 79(a) makes a backswing "more than fifteen inches" behind the puck a slap shot and a minor, a major and game misconduct if it injures (30(a)); 79(b) adds a minor for a fake slap shot used to intimidate
 Technique: Look-off — head and eyes hard to one option, then deliver to another, and only on a pass you have already surveyed
@@ -389,7 +389,7 @@ Key: F1/F2/F3 are roles defined by order of arrival, not by position — whoever
 Convention: The standard system here is a 2-1-2 forecheck and a low zone collapse — F1 pressures, F2 takes the first escape option, F3 holds the high middle
 Options: A 1-2-2 holds two back and F1 steers rather than hunts, denying the neutral zone; a 1-3-1 trap concedes more and denies harder
 Action: Find out which forecheck your team plays before your first shift, and go on the same trigger as everyone else
-Risk: If you go and your teammate doesn't, you have made a hole rather than closed one
+Risk: If you go in to pressure and your teammate doesn't go on the same trigger, you have made a hole rather than closed one
 ```
 
 Pressure only takes space away with a **second layer** — a teammate placed to take the puck if the first forces a rushed play, and to cover the ice the first player left.

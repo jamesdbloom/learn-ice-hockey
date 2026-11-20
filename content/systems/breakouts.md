@@ -215,7 +215,7 @@ Convention: Under the standard swing breakout, come across or up the middle as t
 Convention: Under a "slash" or flying-winger structure, leave early through the middle toward the strong side or up ice, stretching the opposing defence vertically
 Convention: Under a rim-heavy structure, you are the rim's target and you stay low on your own wall to collect it
 Action: Find out which your team runs
-Risk: Leaving early in a system that expects you low is the reason the breakout has no second option
+Risk: As the weak-side winger, leaving early in a system that expects you low is the reason the breakout has no second option
 ```
 
 The far winger. What you do here is genuinely system-dependent:
@@ -285,7 +285,7 @@ Action: The defenceman carries the puck themselves, skating behind the net and u
 Position: D1 retrieves in one corner and keeps skating; D2 takes the net front early where that screen is legal, and the far-side winger and the centre become outlets
 Read: You need two things — speed and space: a step on the first forechecker, and no second forechecker waiting on the far side
 Technique: Cut tight to the net so the net itself screens you, and come out of the turn with your head up and speed already built
-Risk: You carry the puck through the middle-ish of your own zone with your back briefly to the play; if you are caught, you are caught below your own goal line with the puck
+Risk: On a wheel you carry the puck through the middle-ish of your own zone with your back briefly to the play; if caught, you are caught below your own goal line with the puck
 Rule: Under the NHL and PWHL a partner standing still at the net front is legal; the IIHF writes the same words, but its minor for impeding the forechecker "shall be assessed", so in Britain do not count on it
 Rule: Hockey Canada 8.3 and CARHA 66(a) bar the side with the puck from running "deliberate interference for the puck carrier", so do not build on a net-front screen; CARHA 49(a) adds a minor, or a major and game misconduct (30(a)), for not averting contact — under CARHA give the forechecker the ice
 Rule: Sliding into the forechecker's path is an interference minor (NHL 56.2) — not capped: 56.4 a major on violence, 56.5 a game misconduct where that major injures, IIHF 56.5 a major plus game misconduct on reckless endangerment
@@ -318,7 +318,7 @@ Position: Moving one direction with the puck — often mid-wheel or up the wall 
 Read: The forechecker has over-committed and skated past you; their momentum is the whole play, because they cannot stop
 Technique: Bank it off the boards firmly and low behind you — a soft reverse dies in the corner and becomes a turnover — and the receiving teammate must call "reverse!", because D1 is looking the wrong way
 Never: Stay facing the wall on a reverse with your back to anyone coming at you, and never duck — take contact with skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
-Risk: You are putting the puck into a space you cannot see, below your own goal line; if nobody is there, the opposition has it behind your net with your defence facing the wrong way
+Risk: A reverse puts the puck into a space you cannot see, below your own goal line; if nobody is there, the opposition has it behind your net with your defence facing the wrong way
 Countered by: A containing F1 who steers rather than chases and is never past you to begin with, or an aggressive F2 who reads the reverse and arrives in the vacated space
 Key: A rim goes onward around the boards in the direction the puck was already travelling; a reverse goes back against it
 ```
@@ -347,7 +347,7 @@ Position: D1 with the puck low on one side, D2 available low on the other
 Read: Your side is flooded and the other is not — its real value is that it costs the opposition time, and everything they had covered comes uncovered while they travel
 Never: Through the slot. Go behind your own net instead; intercepted below the goal line it means nothing, the same pass in front of the net is a point-blank chance against
 Action: Pass it quickly rather than skating it across — carrying the puck toward your partner drags the pressure with you
-Risk: Executed correctly, one of the lowest-risk plays in hockey; executed through the slot, one of the highest, with very little middle ground
+Risk: A D-to-D executed correctly is one of the lowest-risk plays in hockey; executed through the slot, one of the highest, with very little middle ground
 Countered by: A 2-1-2 with two forecheckers arriving on separate sides, or a 1-2-2 whose F1 takes away the D-to-D lane as their first responsibility
 ```
 
@@ -401,7 +401,7 @@ Action: Pass from the puck-carrying defenceman across the width of the ice to th
 Position: D1 with the puck usually a little higher than the goal line; the far-side winger or the weak-side defenceman open across the ice
 Read: Only when the forecheck has genuinely over-loaded one side and the middle is empty
 Technique: Firm and flat — a cross-ice pass that has to be handled at the receiver's feet has taken so long that the play is over
-Risk: The puck travels laterally in front of your own net at the height of the opposing forwards — intercepted, it is picked off in the middle facing your goal
+Risk: On a cross-ice pass, the puck travels laterally in front of your own net at the height of the opposing forwards — intercepted, it is picked off in the middle facing your goal
 Priority: Where the behind-the-net D-to-D route exists, take it instead — it achieves a similar side-switch with essentially no downside
 Countered by: Any forecheck with a middle presence — the three-across middle of a 1-3-1, F3 in a 2-1-2 — and the cross-ice pass is defeated by the shape existing at all, not by anyone reacting to it
 ```
@@ -525,9 +525,9 @@ This is one of the most common amateur failures in hockey — coaching emphasis 
 
 ```facts
 Never: Stand still, flat against the boards at the hash marks, waiting
-Risk: You are uncoverable but useless — your check cannot take the puck off you before you have it, so it feels like you are doing your job
-Risk: You have no speed — the pass arrives and you start from zero with a defenceman closing at speed
-Risk: You have nowhere to go — pinned flat against the wall, your only escape routes are along the boards, the exact lane the opposition is defending
+Risk: Parked still on the wall, you are uncoverable but useless — your check cannot take the puck off you before you have it, so it feels like you are doing your job
+Risk: Parked still on the wall, you have no speed — the pass arrives and you start from zero with a defenceman closing at speed
+Risk: Parked still on the wall, you have nowhere to go — pinned flat against it, your only escape routes are along the boards, the exact lane the opposition is defending
 Key: A moving target with an opening lane is far easier to hit than a still one in a closed one
 ```
 
@@ -658,9 +658,9 @@ In the standard swing breakout the centre stays low and leaves on time, not earl
 ```facts
 Never: Leave early anticipating the rush under the standard swing breakout and end up high in the zone or already in the neutral zone
 Convention: Under a centre fly the centre leaves early by design, up the middle to stretch the ice — so find out which your team plays before treating an early exit as an error
-Risk: The defenceman is down to two options — the wall or a clear — and the opposition knows it
-Risk: The pass angle is wrong even if it is attempted, because it has to travel up through the middle of your own zone
-Risk: You receive with your back to the play, and every option you gave the play was a decoy, so the forecheck can commit to the wall and the wheel at 100%
+Risk: With the centre high, the defenceman is down to two options — the wall or a clear — and the opposition knows it
+Risk: With the centre high, the pass angle is wrong even if it is attempted, because it has to travel up through the middle of your own zone
+Risk: A high centre receives with their back to the play, and every option they gave was a decoy, so the forecheck can commit to the wall and the wheel at 100%
 Mindset: Better a little late than a little early — late, you accelerate into the puck; early, you have to stop and restart, and you have already killed the play
 ```
 
@@ -722,7 +722,7 @@ Read: Two forwards pressure deep taking a side each, one supports in the middle,
 Key: The 2-1-2 takes away time, and both corners
 Action: Play fast and simple — you do not have time to be clever, and the rushed cross-ice pass here is exactly the goal-against this forecheck is designed to produce
 Key: Reverse and rim come into their own, because two forwards attacking deep are two forwards with momentum, and momentum is what the reverse punishes
-Risk: The wheel is dangerous here — there is a second forechecker on the far side by design
+Risk: The wheel is dangerous against a 2-1-2 — there is a second forechecker on the far side by design
 Action: Beat them behind their pressure — when both their forwards are below your goal line, F3 is alone in the middle and their defencemen are exposed
 Options: Glass and out is a legitimate answer — against sustained hard forechecking, refusing to turn the puck over in front of your own net is itself a strategy
 ```
@@ -901,7 +901,7 @@ Convention: Pulling the goalie here is a coaching choice, not an automatic conse
 Rule: USA Hockey's Blind Hockey rules bar the pull during play — on a delayed penalty the extra skater joins with the goalie still in net, and any other goalie-for-skater swap must wait for a stoppage; a goalie who skates off during play brings a stoppage and a minor for delay of game
 Rule: A goalie removed for an extra attacker in regular-season overtime must wait for the next stoppage and cannot change on the fly, or it is a bench minor for an ineligible player (NHL Rule 84.2, and the PWHL's 76.5 and 86.2 in the same terms)
 Rule: The IIHF, USA Hockey and Hockey Canada allow the goalie back on the fly — IIHF 84.2, USA Hockey 205(a) at any time during play, Hockey Canada Interpretation 1 to Rule 6.1(b); below the Elite League, British overtime is played only in NIHL and some SNL (In-House Rules 84)
-Risk: The own-goal is the only way you can lose from here, so make no pass back through or across the front of your own empty net
+Risk: With your goalie pulled on a delayed call, an own goal is the only way you can concede, so make no pass back through or across the front of your empty net
 ```
 
 A clear gives the puck away, and the moment they control it play stops and your free spell with the puck is over.
@@ -1089,9 +1089,9 @@ Action: Look behind your own net before your first shift and see whether the tra
 ```facts
 Never: Aim a rim straight into the corner where the trapezoid applies — your goalie legally cannot go and get it there, so a defenceman has to, under pressure, back to the forecheck
 Never: Send a teammate into a corner for a rim without the retrieval posture — angle in, never skate square at the end boards, never turn your back to anyone coming at you, never your chin on your chest
-Options: Hard and all the way around, arriving where your winger can meet it in stride — good
-Options: Tight and short, staying close enough behind the net that your goalie can legally stop it inside the trapezoid and leave it for you — good
-Risk: Medium, dying in the corner outside the trapezoid — bad, because nobody can get it safely and the forecheck arrives first
+Options: A rim hard and all the way around, arriving where your winger can meet it in stride — good
+Options: A rim tight and short, staying close enough behind the net that your goalie can legally stop it inside the trapezoid and leave it for you — good
+Risk: A medium rim, dying in the corner outside the trapezoid — bad, because nobody can get it safely and the forecheck arrives first
 Action: Agree in advance which of the two good ones you want
 Key: With no trapezoid your goalie is a third puck-handler — they can play a rim anywhere behind the net and make the D-to-D, but once out of the crease behind the net no book here lets them freeze it
 ```

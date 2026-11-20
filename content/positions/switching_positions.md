@@ -79,7 +79,7 @@ What you actually lose is a set of location reflexes — where to look first, wh
 ```facts
 Key: What you lose is a set of location reflexes — where to look first, where to drift, who you pick up when the puck goes to a particular place
 Key: Location reflexes are position-specific and took a season to build
-Risk: For the first few weeks you will be thinking about things you used to do without thinking, and thinking is slow
+Risk: For the first few weeks after a switch you will be thinking about things you used to do without thinking, and thinking is slow
 Mindset: The slowness of those first few weeks is normal, and it passes
 ```
 
@@ -392,7 +392,7 @@ Four things make this switch different in kind from the others.
 ```facts
 Position: Off wing means the puck sits on the inside of your body, stick toward the middle of the ice — more options for moving it and a better forehand angle to shoot from the middle
 Convention: The off-wing half-wall is standard on the power play because it keeps the cross-seam one-timer live — Special Teams covers that
-Risk: A breakout pass up the wall now arrives on your backhand, which costs a beat and can weaken the exit — an open blade curve makes those receptions easier, and Equipment covers the trade-off
+Risk: On your off wing, a breakout pass up the wall lands on your backhand, which costs a beat and can weaken the exit — an open blade curve makes those receptions easier, and Equipment has the trade-off
 Technique: Receive it open to the ice — hips open, a step or two off the boards, so you keep the skate, the pass to the centre, the pass back and the middle; Breakouts covers that reception
 Never: Turn your back to anyone coming at you as you receive it, or duck — two injuries: a hit from behind, and a head-first collision. Skates parallel to the wall, head up and chin off your chest
 Technique: CARHA's back-to-the-boards reception means boards behind you, open to the ice — not your back to anyone coming at you. If contact is coming, take it with forearm and hip to the wall
@@ -458,7 +458,7 @@ Key: There is no published measurement of how long a position switch takes — t
 Convention: A few shifts to stop being lost — you will know where to stand long before you know when to move
 Convention: A handful of games before the routine reads are automatic, and a season before the position feels like yours
 Convention: Anything skating-dependent takes longer, and possibly much longer — forward to defence is a technical rebuild, not a set of decisions
-Risk: Expect a real performance dip, and expect it to feel like evidence you cannot play the position
+Risk: After a switch, expect a real performance dip, and expect it to feel like evidence you cannot play the position
 Never: Abandon the change in the first few weeks, at the bottom of the dip — the classic error, and coaches see it happen between weeks two and five
 Mindset: Improvement is a staircase, not a line — plateaus are normal and some of them are the useful kind
 ```

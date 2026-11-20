@@ -156,7 +156,7 @@ Laid over the ice, those five rows are one picture — and **the grade does not 
 ```facts
 Key: A turnover has a direction, and the direction changes the cost more than the location does — coaching consensus rather than a measured comparison, since neither ranking has been counted
 Risk: Losing the puck while it travels toward your own net makes the turnover and the counterattack the same event
-Risk: Losing it deep in their end, moving away from your net, separates the turnover from the counterattack by four or five seconds, which is enough to get organised
+Risk: Losing the puck deep in their end, moving away from your net, separates the turnover from the counterattack by four or five seconds, which is enough to get organised
 Action: Weigh the direction of a risky play as well as its location — a blind pass up your own wall is bad, the same pass in their end is a nothing play
 ```
 
@@ -184,7 +184,7 @@ A turnover has a direction, and the direction changes the cost more than the loc
 ```facts
 Never: Pass D-to-D through your own slot — an interception leaves the interceptor in the slot facing your goalie
 Action: Take the D-to-D pass behind the net instead — a longer route by maybe eight feet, and half a second slower
-Risk: A failure behind the goal line is a battle behind the net rather than a shot from twenty feet
+Risk: A failed D-to-D pass behind the goal line is a battle behind the net rather than a shot from twenty feet
 Convention: Keeping D-to-D out of the slot is a coaching convention, not a rule — some teams allow a D-to-D exchange high in the zone, above the tops of the circles
 Action: Find out where your coach draws the line on a D-to-D exchange
 ```
@@ -205,7 +205,7 @@ A **blind pass** is one made without seeing the target — you throw it to where
 Never: Make a blind backhand pass up the middle of your own zone — the worst tool, the worst information and the worst location in one motion
 Risk: The backhand arrives slowly and imprecisely, and blind means you do not know whether the target is a teammate or an opponent
 Action: Turn your shoulders and take the extra half-second to look
-Options: Put it on the boards so a mistake becomes a battle, or use the glass if you genuinely have no time
+Options: Instead of a blind backhand, put the puck on the boards so a mistake becomes a battle, or up off the glass, not over it, if you genuinely have no time
 Convention: No rule forbids the blind backhand up the middle — it is about as close to universally taught as coaching gets, and the claim that it is a top source of amateur goals is coaching observation, not measurement
 ```
 
@@ -259,10 +259,10 @@ Key: Somebody must be home; what varies is who — find out what your team plays
 
 ```facts
 Never: Force a low-percentage pass at the offensive blue line with no support back
-Risk: The cost of the failure is not the loss of possession, it is the odd-man rush — one touch turns your five-player attack into their three-player rush
+Risk: The cost of a forced pass failing at the offensive blue line is not the loss of possession, it is the odd-man rush — one touch turns your five-player attack into their three-player rush
 Read: If this pass is intercepted right now, how many teammates are behind the puck? Fewer than two, do not make it
 Options: Chip the puck past the defender into the space behind them and race, or dump it into the far corner and forecheck
-Risk: Low-cost is not free — on one Swiss-league sample a dump-in carried a larger immediate threat against you than a carry-in did, so dump when the pass is not on, not instead of a carry you could make
+Risk: A dump-in is low-cost, not free — on one Swiss-league sample it carried a larger immediate threat against you than a carry-in, so dump when the pass is not on, not instead of a carry you could make
 Convention: Forcing a low-percentage pass at the offensive blue line is not a rule and genuinely negotiable — a team trailing late, or built to attack in waves, will accept the risk deliberately
 ```
 
@@ -278,7 +278,7 @@ Convention: Forcing a low-percentage pass at the offensive blue line is not a ru
 
 ```facts
 Never: Stickhandle in your own slot — stickhandling buys time, and there is no time to buy and nothing worth buying it for
-Risk: Head down and surrounded in your own slot, where most goals are scored from — you either gain nothing or concede everything
+Risk: Stickhandling in your own slot leaves you head down and surrounded where most goals are scored from — you either gain nothing or concede everything
 Action: Take the puck out of the slot first — one stride to the wall, behind the net, or a hard shot of it off the glass
 Key: Change the location first, then make the decision
 Convention: "Never stickhandle in your own slot" is not a rule — about as close to unanimous as coaching advice gets, but it is still advice
@@ -469,7 +469,7 @@ Action: Move it to a winger with speed going north and follow — north passes t
 Risk: Take the middle lane only with support — a turnover there creates an odd-man rush going the other way
 Never: Carry back into the middle at your own blue line, or make an east–west pass across centre ice — go back as a regroup instead, giving the puck to a defenceman and across D-to-D
 Convention: Naming the turn-back and the east-west pass as prime manufacturers of odd-man rushes is coaching consensus, not a counted comparison — no public data ranks odd-man rushes by the play that created them
-Options: Nothing there? Chip the puck past their defenceman into space and race, or dump to the far corner and forecheck
+Options: No pass or lane through the neutral zone? Chip the puck past their defenceman into space and race, or dump to the far corner and forecheck
 ```
 
 1. **Is anyone behind their defence?** → Stretch pass or area pass into that space. Highest upside available in the neutral zone, and it travels away from your own net.
@@ -575,7 +575,7 @@ Before you pinch, jump a lane or activate, check who is behind you: with your ce
 ```facts
 Read: Before you jump a lane, pinch or activate, ask not only "am I right?" but "what happens if I am right and I still miss it?"
 Key: A pinch with your centre high in the zone behind you is a good pinch even if you lose the puck — the worst case is a 2-on-2
-Risk: The same pinch with your centre below the goal line and nobody else covering your point is a bad pinch even if you win the puck — you were one bounce from a 2-on-1
+Risk: A pinch with your centre below the goal line and nobody else covering your point is a bad pinch even if you win the puck — you were one bounce from a 2-on-1
 Priority: Three questions in half a second — do I have information, not just a feeling? is someone behind me if I miss? what does the scoreboard allow?
 Action: Two yeses and a green light from the scoreboard question, go; otherwise hold your position. To jump a lane in your own end, the read must be near-certain
 Action: Pinch for the puck — check only where your league allows it and only while they still have the puck; if you can see their numbers, pull up
@@ -782,8 +782,8 @@ Of the six books, ⚠️ **four eject you at the floor — a mandatory match in 
 
 ```facts
 Key: Most amateur penalties look like habits rather than decisions — coaching observation, not measurement, since what has been counted is the type of infraction and not the decision behind it
-Risk: Stick fouls that are really skating fouls — a hook because you stopped skating twenty feet ago, a trip because your feet quit
-Risk: Retaliation — a slash after losing a battle, a cross-check after the whistle, an answer to something the referee missed
+Risk: A penalty that is never a trade: a stick foul that is really a skating foul — a hook because you stopped skating twenty feet ago, a trip because your feet quit
+Risk: A penalty that is never a trade: retaliation — a slash after losing a battle, a cross-check after the whistle, an answer to something the referee missed
 Action: Fix the stick penalty in conditioning and the retaliation penalty in the mental game — reasoning, not a measured effect
 Key: Use frustration as a lens for fixing your own game, not as a fact about the population — no published study codes penalty motive
 Rule: Embellishing to draw a call is its own minor under IIHF 64.2, the book British hockey runs on — the IHUK In-House Rules 2026-27 make it "2 plus 10", a minor plus a ten-minute misconduct, while the EIHL keeps the bare minor and can fine you on top through its Department of Player Safety
@@ -812,7 +812,7 @@ In a league where support is unreliable and turnovers meet no backcheck, play yo
 Key: The right risk profile in a Tuesday-night beer league is not the right risk profile in a competitive one
 Risk: Support is less reliable — in a team that does not practise, the give-and-go you can see is one your teammate cannot
 Risk: Recovery is worse — a rec-league turnover frequently meets nobody at all, so the cost side of every calculation is higher, not lower
-Risk: Goaltending is more variable both ways — get pucks to the net, and treat your own turnovers as costing more
+Risk: Rec-league goaltending is more variable both ways — get pucks to the net, and treat your own turnovers as costing more
 Action: Tighten nothing in your game except your own end and you will win more games. Try things in the offensive zone instead
 Key: Risk level is a dial, not a switch — a big lead, a tired bench or a backup in net all shift you toward the simple play
 ```

@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W582 and W583 shipped with record `w583_system_profile_names_and_fight_slang_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W584 and W585 shipped with record `w585_risk_options_subjects_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -102,7 +102,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - [Summary sections (Key focus, Overview, KT, CM) closed in W581: 15 defects out of 176 hits.]
     - The "it = puck" and "their = opposing team" classes, not tallied.
     - [The `Countered by:`/`Goal:`/`Position:`/`Targets:` lines were closed in W583: 58 DEFECT rows applied. About 45 OPTIONAL rows remain in `../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`.]
-    - [Near-misses team_play :725/:726 and special_teams :1338 confirmed and in W583.] Not read: `Risk:` (291) and `Options:` (198) lines outside system blocks; the ~45 OPTIONAL system-profile rows (`../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`); homonym collisions (overload, 1-3-1, box, +1).
+    - [Near-misses team_play :725/:726 and special_teams :1338 confirmed and in W583.] [`Risk:`/`Options:` closed in W585: 130 rows applied. 21 optional rows remain in `../reviews/w585_risk_options_optional_rows_2026-11-20.tsv`.] Two more found by agents: switching_positions :83 "those first few weeks" and :463 "the change" still point back a line. the ~45 OPTIONAL system-profile rows (`../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`); homonym collisions (overload, 1-3-1, box, +1).
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518; 2 in W524):**
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.

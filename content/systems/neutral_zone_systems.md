@@ -206,7 +206,7 @@ Convention: Conventionally F2 and F3 on the walls with a defenceman in the middl
 Key: A 1-3-1 does not try to take the puck from you — it offers you the puck on terms you will not like
 Action: The three across hold their lanes and slide as a unit; their job is not to attack the puck but to leave no lane through them
 Goal: The 1-3-1 denies the middle lane and almost never concedes an odd-man rush — the back defenceman stays uncommitted and retrieves every dumped puck
-Risk: One of the three leaving their lane opens a seam instantly, and the single back defenceman cannot cover two lanes
+Risk: In a 1-3-1, one of the three across leaving their lane opens a seam instantly, and the single back defenceman cannot cover two lanes
 Countered by: Getting behind the 1-3-1's flat wall with a stretch pass, chip-and-chase past it, or quick lateral movement — a sliding wall has gaps
 ```
 
@@ -450,7 +450,7 @@ Rule: A USA Hockey charge is a major and game misconduct if reckless (607(b)) or
 Action: Skate backwards matching their speed, keeping the attacker in front of you and never giving up the middle or your body position
 Goal: Backing off aims to funnel the attacker outside where the shot is low-percentage, so pure speed alone should not beat you wide
 Read: Backing off is right when you have no backpressure, when the attacker has a clear speed advantage, on a 2-on-1 or worse, or when a mistake is a breakaway
-Risk: You concede the entry — they come in with speed and possession and you defend with your feet moving toward your own net
+Risk: Backing off, you concede the entry — they come in with speed and possession and you defend with your feet moving toward your own net
 ```
 
 **Why backing off works.** Pure speed alone should not beat you wide, and you funnel the attacker outside, where the shot is low-percentage. It is very hard to make a catastrophic error doing it.
@@ -748,7 +748,7 @@ Action: Use the boards deliberately — rim or chip it to a forward arriving beh
 Never: Turn your back to anyone coming at you on a rim or a chip along the wall, and never duck — keep your head up and your chin off your chest
 Read: Stretch a forward behind a 1-3-1 or a trap, not a 1-4: chip past its flat line and race for it, and if the goalie comes out for it, pull up — never finish on a goalie
 Never: Attempt the seam unless it is obviously there — the highest-risk answer, the one amateur players attempt first, and the one to try last
-Options: Dump it past the red line on purpose and hunt it with three forwards when the entry is not on — worth more than a turnover at the blue line
+Options: Against a trap, dump the puck past the red line on purpose and hunt it with three forwards when the entry is not on — worth more than a turnover at the blue line
 Key: Dumping past the red line is a read on a trap, not a general preference — the one-third threshold is modelled from one team's games, and that NHL tracking found players give the puck up too readily
 Mindset: Be patient, and keep the puck moving — a trap gives you the puck and waits for you to do something stupid with it
 ```

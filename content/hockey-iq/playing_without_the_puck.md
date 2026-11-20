@@ -399,7 +399,7 @@ The same is true against you. Two seconds of your own disorganisation is where y
 Key: Every organised defensive structure is designed and rehearsed, and against a set structure your options are limited
 Read: In the two or three seconds after a turnover that structure does not exist yet — players facing the wrong way, defencemen up ice, forwards behind the puck
 Key: A chance created in the seconds after a turnover is created against no structure at all — and it is gone once the defence sets up
-Risk: The transition window after a turnover works against you the same way — two seconds of your own disorganisation is where you concede
+Risk: The transition window works against you too — two seconds of your own disorganisation after losing the puck is where you concede
 ```
 
 ### What to do off the puck in transition
@@ -408,7 +408,7 @@ Risk: The transition window after a turnover works against you the same way — 
 
 ```facts
 Action: When you have just won it, turn and go immediately — start moving on the likelihood of possession, not the certainty of it
-Risk: Skating hard in the wrong direction is a survivable error; being late means the window is gone
+Risk: Going early on a turnover and being wrong is a survivable error; being late means the transition window is gone
 Action: Get width and get depth in the same instant — if everyone does the same one, the breakout dies
 Never: All go — transition is exactly where the "one more forward joins the rush than should have" goal against comes from
 Read: When you have just lost it, find the most dangerous man, not the puck — usually the man arriving late into the middle rather than the carrier; that ranking is coaching emphasis, not a counted one
