@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W537 shipped with record `w537_arm_block_scope_borderlines_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W538 shipped with record `w538_long_key_takeaways_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -21,6 +21,9 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(4) The "X and Y in the crease" parse shape.** Dropping a book from a list can leave its scope on a sibling, as happened at winger :789.
     - Only group 2's nine files were checked by listening.
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
+- **From W538 (20 Nov):**
+  - **(1) 16 Key Takeaways are still over 60 words** (`check_readability`). The words above 60 in each are tariff limbs: book scopes, conditions and penalty tiers. Trimming went only from 18 to 16. Most are the goalie-charging ladder, which is restated across eight Key Takeaways in different wordings. A structural answer would make each of those Key Takeaways lead with the instruction plus one "can end your game" clause, and leave the per-book ladder to the page's What it costs section. Measure it first. A Key Takeaway is voiced alone, so check that the mandatory tiers still reach a listener somewhere in that page's summary layers.
+  - **(2) Helmet-clash act, other wordings.** The W538 layer test found faceoffs CM :1323 by string ("helmet clash"). Units worded "heads together" or "head over the dot" with a USA Hockey tariff were not swept.
 - **From W537 (20 Nov):**
   - **(1) Optional: forechecking :1033 names only USA Hockey for the arm block.** A reader in a Hockey Canada 7.3 division could hear the block as fine. :624 prices that case. Sketch: "…block with one under USA Hockey or where checking is barred…".
   - **(2) Optional: puck_handling :503 and :517 say "a push" for 7.3(a).** 7.3(a) reads "body-checks, bumps, shoves, or pushes".

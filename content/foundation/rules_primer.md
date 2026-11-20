@@ -1228,7 +1228,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 4. **Keep killing a major after they score** — a goal ends only a minor you are short for. ⚠️ **Play as though one major ends your game**: always under Hockey Canada, USA Hockey and IHUK women's hockey, almost always under CARHA, and often elsewhere. **Never throw a punch, even gloved:** USA Hockey ejects you for one, and every book can.
 
-5. **Keep your hits below the shoulders.** Every book can eject you for an unintended head hit, the NHL when a major injures the face or head; under USA Hockey even careless contact with the head, face or neck must. ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
+5. **Keep your hits below the shoulders.** Every book can eject you for an unintended head hit, the NHL when a major injures the face or head; under USA Hockey even careless head, face or neck contact must. ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
 
 6. **Never duck a check — take it head up, knees bent, chin off your chest**: a tucked chin can break your neck against the boards. ⚠️ **Take contact on your side; never turn your back to anyone coming at you, at the wall or in open ice.** Facing the boards? Stick and gloves up on the glass, head off it.
 
@@ -1236,7 +1236,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 8. **Keep your stick on the puck, your feet out of theirs.** ⚠️ **A called slew-foot ejects you under the NHL, PWHL, IIHF and USA Hockey;** **Hockey Canada and CARHA can, and Hockey Canada must if it injures.** ⚠️ **Never cross-check above the shoulders:** **it must end your game under CARHA, Hockey Canada and, if careless or intentional, USA Hockey.**
 
-9. **Screen the goalie from outside the crease, without contact, and never stand in their road back.** Keep off the blue paint and its red line. ⚠️ **Contact with the goalie can end your game, and a charge on them must** — always under Hockey Canada, under CARHA in their crease or if they are hurt, under USA Hockey if reckless or if it reaches their head, face or neck, even carelessly.
+9. **Screen the goalie from outside the crease, skates off the blue paint and its red line, without contact, and never stand in their road back.** ⚠️ **Goalie contact can end your game, and a charge on them must:** always under Hockey Canada, under CARHA in their crease or if it injures, under USA Hockey if reckless or if it reaches their head, face or neck, even carelessly.
 
 10. **Before your first shift, learn your rulebook and whether body checking is allowed** — if not, the check itself is the penalty. ⚠️ **In Britain, wear your neck guard every shift.** In North American adult rec, ask if your league is CARHA-affiliated: there almost every major brings a game misconduct, ending this game and at least the next.
 
