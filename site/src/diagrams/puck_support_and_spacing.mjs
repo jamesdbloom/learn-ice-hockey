@@ -94,7 +94,7 @@ const supportInALine = {
   // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
   // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
-    'The attacking half of the rink, the net at the right. Three own-team forwards stand in a straight ' +
+    'The attacking half of the rink, the opposition net at the right. Three own-team forwards stand in a straight ' +
     'line along the boards at the top of the picture, fifteen feet apart: the puck carrier deepest, in the corner; a ' +
     'second at the half-wall; a third further up the wall towards the blue line. A single opposition ' +
     'forward stands on that same line, between the carrier and the other two. No routes are drawn — ' +
@@ -154,7 +154,7 @@ const supportTriangle = {
   // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
   // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
-    'The attacking half of the rink, the net at the right. The puck carrier is deep in the top corner, ' +
+    'The attacking half of the rink, the opposition net at the right. The puck carrier is deep in the top corner, ' +
     'on the boards, and one teammate remains high on the same boards, but the third has moved off ' +
     'the wall into the middle of the zone, level with and just below the faceoff dot, so the three form a ' +
     'triangle. The opposition forward stands where they stood in the previous diagram, on the line between ' +
@@ -315,7 +315,7 @@ const supportDistance = {
   // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
   // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
-    'The attacking half of the rink, the net at the right. A puck carrier stands on the boards at ' +
+    'The attacking half of the rink, the opposition net at the right. A puck carrier stands on the boards at ' +
     'the top of the picture, level with the faceoff dot. A shaded band of ice curves around them on the open-ice side, ' +
     'its inner edge eight feet away and its outer edge fifteen. One teammate stands inside the band, ' +
     // "DASHED" WAS REMOVED HERE AND HAS BEEN PUT BACK, AND BOTH MOVES WERE RIGHT AT THE TIME.
@@ -780,7 +780,7 @@ const battleSupport = {
   // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
   // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
   describe:
-    'The attacking half of the rink, the net at the right. An own-team forward is on the boards at ' +
+    'The attacking half of the rink, the opposition net at the right. An own-team forward is on the boards at ' +
     'the top of the picture with the puck, level with the faceoff dot, with an opposition forward tight to their inside ' +
     'shoulder, pinning them against the wall. A second own forward stands about sixteen feet away in ' +
     'open ice, inside and up-ice of the battle, near the faceoff dot. An opposition forward stands ' +

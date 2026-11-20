@@ -567,6 +567,14 @@ const theTrapezoid = {
         { at: 'goal-line', dy: -TRAP_HALF_AT_GOAL_LINE },
       ],
       label: 'trapezoid',
+      // W508(24), 20 Nov 2026: at the vertex mean (93.4, 0) the bold word sat ON the net and
+      // its last letter touched the end-boards stroke. The word (~14 ft at this size) is wider
+      // than the region is deep (11 ft, goal line to boards), so no slot holds it wholly inside;
+      // this one keeps it in the shaded half below the net — clear of the net, the crease and
+      // the boards — and lets its first letters run over the goal line onto open ice.
+      // Label only; the polygon is unchanged (see the MOVE THE LABEL, NOT THE ZONE note in rink.mjs).
+      labelDx: -1.6,
+      labelDy: -7.5,
       // No outline. This is the one region in this file that is genuinely painted on
       // the ice, and the renderer already draws the two red lines that are the paint.
       // A second, blue, dashed outline drawn on top of them competes with the real
