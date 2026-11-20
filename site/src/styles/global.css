@@ -346,6 +346,12 @@ pre code .line {
   top: 0.5rem;
 }
 
+/* The skip link moves focus to <main tabindex="-1">. That focus is only a
+   starting point for reading, not an interactive control, so it draws no ring. */
+main:focus {
+  outline: none;
+}
+
 /* --------------------------------------------------------------- header -- */
 
 .site-header {

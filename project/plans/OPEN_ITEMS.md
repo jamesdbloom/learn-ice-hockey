@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W543 shipped with record `w543_goalie_hit_from_behind_and_browser_pass_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W544 shipped with record `w544_skip_link_focus_and_two_picture_questions_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -24,7 +24,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W541 (20 Nov):**
   - **(1) Seven captions are still over 800 characters, on purpose:** faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
   - **(3) Stale comment:** the rush-3-on-2-alternative module still says "UNDECLARED PAIR… reported to the coordinator". The pair is now declared in `check_caption_pairs.py`, so correct the comment at the next diagram edit.
-  - **(2) Two pre-existing picture questions from the diagram-reviewer.** Does pk-wedge-plus-1's "+1 … straight out from the goal" match its drawn route, which runs from the dot toward the half-wall? Does oz-behind-the-net's pass target sit about 6 ft from the F3 glyph?
+  - **(2) [Closed in W544, both OK.]** Optional only: the pk-wedge-plus-1 caption could read "straight out from the goal toward the carrier" (+19 characters). The diagram-reviewer also asks a safety-reviewer to judge whether the wedge +1's pressure route on a half-wall carrier, whose facing is fixed by the boards (check-arrivals rule 4), needs a level caveat in the caption.
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
   - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
   - **(4) Four facts lines still say "IIHF and Hockey Canada off the head"** (forechecking :320, :701, :750, :980). None had room to split. The head-only form errs harsh for the IIHF; that is acceptable, so split only if a block is next edited.
@@ -314,7 +314,6 @@ These questions sit inside the rows above and need the owner's call before anyon
 
 ## Diagrams and site
 
-- **Skip link focus:** after the skip link is activated, focus lands on BODY because `#main` has no tabindex. Found in the W543 browser pass. This is long-standing and low priority.
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.
 - **Owner decisions of 14 Nov, what is left (records reviews/w334_owner_decisions_c_d_f_2026-11-14.md, w335…, w337…):** (a) Decision F: the owner has not said whether it also reaches the other Key focus and Overview units that carry a per-book price list. These are rules_primer Overview (discipline after an ejection, and the IIHF vs NHL 20.4 lists), body_contact_and_battles Overview ("A hit from behind has no bare minor in any book here…"), uk_rules Overview and special_teams Overview. (b) A W334 safety advisory says body_contact_and_battles Key focus has no "never contact the head" (it lives in the Overview). Adding it is a quality-bar call for the owner. (c) The owner has not recorded acceptance of decision D, which shipped as a multi-sentence per-book passage ("Keep your skates off a player who is down…") rather than one sentence.

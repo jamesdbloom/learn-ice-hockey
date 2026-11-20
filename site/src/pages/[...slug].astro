@@ -57,7 +57,7 @@ const { prev, next } = getNeighbours(entry.id);
   playerMulti={hasPlayer && playerFormats.length > 1}
 >
   <script is:inline slot="head" src="/essentials-view.js"></script>
-  <main class="main" id="main">
+  <main class="main" id="main" tabindex="-1">
     {/* ⚠️ BEFORE the article, not after it, and the reason is keyboard order.
         The player is `position: sticky; top: var(--header-h)` (global.css), so it is ON SCREEN
         from the first paint — but it used to sit after </article> in the DOM, which
