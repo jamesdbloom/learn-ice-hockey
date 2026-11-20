@@ -176,7 +176,7 @@ Ranked by value. **The scan counts below are coaching craft**: nobody has valida
 
 **Scanning during a stoppage** costs nothing but attention:
 
-- Who they have on the ice, and whether it is their top line.
+- Who the opposition has on the ice, and whether it is their top line.
 - Who is taking the draw and which way they usually turn.
 - Whether their defence pair is the mobile one or the stay-at-home one — this decides whether you can beat them wide.
 - Where your bench is relative to the play, which is where you are changing to.
@@ -329,7 +329,7 @@ Other shapes change the read:
 
 **After your own icing, expect immediate pressure and pre-decide the safe out.** In the NHL and IIHF a tired unit that ices the puck stays on for a defensive-zone draw against a fresh opposing unit.
 
-**What it costs.** After your own icing, NHL and IIHF teams cannot change lines (Rules 81.4 and 82.1) and cannot take a timeout (Rule 87.1). The bar has exceptions. ⚠️ **An injured player does not have to be left on the ice for that draw.** NHL Rule 81.4 lets a team change to replace an injured player, to replace a goalie pulled for an extra attacker, or when a penalty changes either team's on-ice strength. **IIHF Rule 81.4 adds *"a Player with a broken skate"*** — which the IIHF's own Rule 82.1 does not repeat, so do not count on it without the official's say-so. **PWHL Rules 83.4 and 84.1 print the NHL's three exceptions and no fourth.** A tired line is not on any list.
+**What an icing costs.** After your own icing, NHL and IIHF teams cannot change lines (Rules 81.4 and 82.1) and cannot take a timeout (Rule 87.1). The bar has exceptions. ⚠️ **An injured player does not have to be left on the ice for that draw.** NHL Rule 81.4 lets a team change to replace an injured player, to replace a goalie pulled for an extra attacker, or when a penalty changes either team's on-ice strength. **IIHF Rule 81.4 adds *"a Player with a broken skate"*** — which the IIHF's own Rule 82.1 does not repeat, so do not count on it without the official's say-so. **PWHL Rules 83.4 and 84.1 print the NHL's three exceptions and no fourth.** A tired line is not on any list.
 
 **USA Hockey is different** — its Rule 624 puts no substitution bar on an icing and its Rule 636(f) sets no icing condition on time-outs, so the tired line simply gets off. CARHA's icing rule has no substitution bar either. Hockey Canada bars the change only in U18 AAA and Junior, and in Senior at its Member's option — and even there lets either team take its time-out, where it has one, though the team that iced it still cannot change during it (Rule 6.7(d)). [Game Management](../systems/game_management.md) carries the book-by-book comparison.
 
@@ -364,7 +364,7 @@ Goalies and shot-blocking defenders read the same cues.
 
 **Screen from in front of the crease, not in it — and as a goalie, look around a screen rather than waiting for a whistle.** As the screener, stand in the goalie's sightline just outside the crease and off its line, without contact, and leave the goalie room to move. ⚠️ **Keep your skates and stick out of the paint.** Never step into a goalie's path back to the crease, stay off a goalie outside it altogether, and never charge one.
 
-**What it costs:**
+**What net-front play can cost:**
 
 - **A screen outside the crease, without contact, is legal and the goal stands.** NHL Table 14 and IIHF Table 14 (Table 16 in 2025/26), Situations 5C and 5E, allow it, even planted on the crease line; only the in-crease rows disallow it. The PWHL's Rule 71 is the same screening rule as Rule 69. USA Hockey, Hockey Canada and CARHA have no rule that reaches a screen on the goalie's sight from outside the crease. So a goalie has nothing to appeal. Impeding the goalie is different. Rule 69.1 takes the goal if your position stops the goalie moving freely within the crease, and contact you start can cost it in or out of the crease (NHL 69.1, Hockey Canada 8.5 Interpretation 1, CARHA 66(b)). USA Hockey takes it if you are interfering with the goalie (617(c)(4)). Stand off the line anyway: the IIHF's own Rule 1.7, USA Hockey, Hockey Canada and CARHA count it as part of the crease.
 - **In the crease it changes.** USA Hockey Rule 625(b) disallows a goal scored with an attacker in the crease unless the puck got there first, the goalie was out of the crease or a defender put you there. Its Casebook also voids a goal scored with even a stick or skate in the paint while the goalie is in it (Rule 625, Situation 10). CARHA Rule 66(b) and Hockey Canada Rule 8.5 bar standing in the crease unless the puck is there. CARHA disallows a goal scored while you do; Hockey Canada allows a teammate's goal only if you stayed passive and out of the goalie's view and movements. Two books can also stop play: USA Hockey's 625(b), with your team in possession in the attacking zone and the goalie in contact with the crease, and the IIHF's 69.1 when you do not leave at once.
@@ -415,7 +415,7 @@ Action: Play for the next state — get where the loose puck will squirt out, or
 - **Where a rebound will go.** The rule of thumb is that it kicks off the way the goalie's pad or blocker was facing — so a shot from an angle tends to go to the far side, and you should arrive at the far post. **This is coaching craft, not a measured finding**, and goalies who steer rebounds break it. The reliable part: arrive at the net moving, just outside the crease and off the goalie, stick on the ice, expecting the puck rather than watching for it.
 - **Which battles you will probably lose.** This read saves goals. Arriving second, off balance, on your backhand, or against a bigger player already established, **you will probably lose.** Stop trying to win it and play for the *next* state: get to where the loose puck will squirt out, or pin the puck — not the player — against the boards with your skate or stick for a moment, for a teammate to dig out. Never with your hands, and never hold it for a whistle. The player who concedes the battle and takes the second puck ends up with it. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
-**What it costs.** Holding the puck to force a stoppage is a delay-of-game minor in every book (NHL and IIHF 63.2, PWHL 65.2, Hockey Canada 10.1, CARHA 74(b), USA Hockey 632(b)). Hockey Canada and CARHA excuse you only while you are being checked, and USA Hockey calls it after three seconds whether or not you were pressured.
+**What holding the puck costs.** Holding the puck to force a stoppage is a delay-of-game minor in every book (NHL and IIHF 63.2, PWHL 65.2, Hockey Canada 10.1, CARHA 74(b), USA Hockey 632(b)). Hockey Canada and CARHA excuse you only while you are being checked, and USA Hockey calls it after three seconds whether or not you were pressured.
 
 ---
 
@@ -457,7 +457,7 @@ Technique: A soft grip — tension in the hands is what makes you look down at a
 Action: Train it with a forcing function, not willpower. Stickhandle while calling out fingers or coloured cards, ten to fifteen minutes a day
 ```
 
-What it takes (full treatment in [Puck Handling](../technique/puck_handling.md)):
+What the head-up habit takes (full treatment in [Puck Handling](../technique/puck_handling.md)):
 
 - **Puck in your peripheral vision**, aware of it the way you are aware of your hands.
 - **Hands away from your body**, so the puck is out in front where you can see it without looking, not tucked in at your feet.

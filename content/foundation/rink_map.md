@@ -215,9 +215,9 @@ There are also two small **5-inch marks** on the inside of the crease lines, 4 f
 
 > **The IIHF's own two answers do not line up, and nothing held here resolves them.** Rule 1.7 puts the marked line inside the crease. Its Appendix IV goalkeeper-interference table — **Table 14**, Table 16 in the 2025/26 book — rules an attacker planted *"within the goal crease"* to obstruct the goalie's vision *"Goal is disallowed"*, and one planted *"on the crease line or outside the goal crease"* on otherwise identical facts *"Goal is allowed."* Read with Rule 1.7, those rows answer the same play in opposite directions; **no edition of the IIHF Situation Handbook mentions the crease line**, and **neither book says what status these tables have**. [Shooting](../technique/shooting.md) sets out the tables and their limits. ⚠️ **Until it is settled, do not plan a screen on the line under the IIHF book.**
 
-Why it matters to you: the crease is the boundary of goaltender interference. Inside it, you must not impair the goalie's ability to make a save. Outside it, ⚠️ **stay off the goalie just the same.**
+Why the crease matters to you: the crease is the boundary of goaltender interference. Inside it, you must not impair the goalie's ability to make a save. Outside it, ⚠️ **stay off the goalie just the same.**
 
-**What it costs, book by book.** [Rules Primer](rules_primer.md) carries the full comparison.
+**What goaltender interference costs, book by book.** [Rules Primer](rules_primer.md) carries the full comparison.
 
 - **Contact outside the crease.** ⚠️ **A goalie outside the crease is not fair game in any book here.** In the NHL's words at Rule 69.4, which the IIHF's 69.4 repeats almost word for word: *"A goalkeeper is not 'fair game' just because he is outside the goal crease. The appropriate penalty should be assessed in every case where an attacking player makes unnecessary contact with the goalkeeper."* The PWHL writes it at 71.4 and 42.1, USA Hockey at 607(d), about its larger privileged area rather than the crease, CARHA in the Note to 52(b), and Hockey Canada at 8.5, where the penalty reaches *"anywhere on the ice."* The NHL, the IIHF and the PWHL permit *incidental* contact while the goalie is playing the puck out there, and only if you made a reasonable effort to avoid it. Hockey Canada accepts that incidental contact *"may occur"* while requiring you to *"make an effort to avoid contact in all circumstances"*. ⚠️ **USA Hockey files even an accidental touch under interference:** its 607(d) Note 1 sends *"any accidental or unavoidable contact that occurs with the goalkeeper"* to the Interference rule.
 - **Deliberate contact and charging.** ⚠️ **Play the puck, never the goalie: deliberate contact is a penalty in the crease or out of it in every book here, and a charge on a goalie can end your game.** Hockey Canada gives a major and game misconduct for any charge on the goalie, wherever it happens (8.5(b)). CARHA must give one for a charge in the crease or one that injures and can for any other, with at least a one-game ban (52(b), 52(a), 30(a), 32(d)). USA Hockey treats any deliberate body contact with a goalie as charging (607(d) Note 1): never less than a minor plus a misconduct, and up to a major plus a game misconduct at the referee's call (607(a)). Under USA Hockey a reckless charge is a mandatory major plus a game misconduct (607(b)), and you should plan on a match penalty and a likely multi-game suspension as well (602(a)). [What it costs to touch the goalie](../technique/body_contact_and_battles.md#what-it-costs-to-touch-the-goalie) sets out every book.
@@ -360,7 +360,7 @@ This map is a close-up of **one end zone**, drawn to scale. The picture starts a
 
 ![](diagram:the-slot)
 
-**Why it matters:** the slot is where most goals are scored from — see [Shooting](../technique/shooting.md) for the conversion rates by location and the samples they come from. It is the shortest route to the net and the widest angle on it. Everything in defensive-zone coverage is ultimately about who is standing in the slot, and everything in offensive-zone play is ultimately about getting a puck and a body there at the same time.
+**Why the slot matters:** the slot is where most goals are scored from — see [Shooting](../technique/shooting.md) for the conversion rates by location and the samples they come from. It is the shortest route to the net and the widest angle on it. Everything in defensive-zone coverage is ultimately about who is standing in the slot, and everything in offensive-zone play is ultimately about getting a puck and a body there at the same time.
 
 The slot is layered, and the layers have different jobs:
 
@@ -370,7 +370,7 @@ The slot is layered, and the layers have different jobs:
 
 ![](diagram:the-high-slot)
 
-**Why it matters:** this is the shooting layer. A player unmarked here gets a clean look with time to pick a corner, and a puck arriving here from the half-wall is a one-timer. **Who covers it is a coaching choice rather than a rule of hockey.** In a low zone collapse (zone) defensive system — the default assumed throughout this guide — the high slot belongs to the centre, or to the weak-side winger collapsing down when the centre goes to help in the corner. Under a **man-on-man** system nobody holds the area at all: you go with your check wherever they go. **Find out which system your team plays** — [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out each one.
+**Why the high slot matters:** this is the shooting layer. A player unmarked here gets a clean look with time to pick a corner, and a puck arriving here from the half-wall is a one-timer. **Who covers it is a coaching choice rather than a rule of hockey.** In a low zone collapse (zone) defensive system — the default assumed throughout this guide — the high slot belongs to the centre, or to the weak-side winger collapsing down when the centre goes to help in the corner. Under a **man-on-man** system nobody holds the area at all: you go with your check wherever they go. **Find out which system your team plays** — [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out each one.
 
 ### The low slot
 
@@ -378,7 +378,7 @@ The slot is layered, and the layers have different jobs:
 
 ![](diagram:the-low-slot)
 
-**Why it matters:** tips, rebounds and screens, and defenders cannot let anyone stand unmarked in it. This is the ice a net-front player fights for. **The scoring evidence points here more than anywhere else — but it counts a share of goals, not a conversion rate for this layer alone.** Close to half of all NHL goals came from the inner slot and just over a quarter from the outer slot, on Sportlogiq tracking of three seasons at five-on-five that is not public and cannot be re-derived. Separately, **26.8%** of goals were scored within two stick-lengths of the net — about **10.5 feet** — and **51.6%** within twenty feet, from the NHL play-by-play feed over 400 games of 2024-25, using the 2,498 goals in it that carry coordinates. [Shooting](../technique/shooting.md) owns the shot-location figures and [Body Contact and Battles](../technique/body_contact_and_battles.md) the counted distances, with their hedges. **Treat "highest-percentage ice" as the shape those figures agree on, not a measured ranking of this layer.**
+**Why the low slot matters:** tips, rebounds and screens, and defenders cannot let anyone stand unmarked in it. This is the ice a net-front player fights for. **The scoring evidence points here more than anywhere else — but it counts a share of goals, not a conversion rate for this layer alone.** Close to half of all NHL goals came from the inner slot and just over a quarter from the outer slot, on Sportlogiq tracking of three seasons at five-on-five that is not public and cannot be re-derived. Separately, **26.8%** of goals were scored within two stick-lengths of the net — about **10.5 feet** — and **51.6%** within twenty feet, from the NHL play-by-play feed over 400 games of 2024-25, using the 2,498 goals in it that carry coordinates. [Shooting](../technique/shooting.md) owns the shot-location figures and [Body Contact and Battles](../technique/body_contact_and_battles.md) the counted distances, with their hedges. **Treat "highest-percentage ice" as the shape those figures agree on, not a measured ranking of this layer.**
 
 ### The goalmouth
 
@@ -386,7 +386,7 @@ The slot is layered, and the layers have different jobs:
 
 ![](diagram:the-goalmouth)
 
-**Why it matters:** tap-ins and jam plays happen here. Who owns it is a coaching choice rather than a law. Under a **low zone collapse** — the zone coverage assumed as the default throughout this guide — the **weak-side defenceman** owns the goalmouth and does not leave it. Under **man-on-man** the net front belongs to whoever's check went there, and under a **hybrid** — man-on-man below the dots, zone above — to whichever of the low three is matched to the net-front forward. A **collapsing box** is a state rather than a system — what a low zone collapse turns into under maximum pressure — with both defencemen inside together, plus whoever else is in there. **Find out which system your team plays** — [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out who has the net front under each. Mixing up "goalmouth" and "slot" is a common cause of a blown assignment (coaching observation, not a counted ranking): they are two different jobs, one layer apart.
+**Why the goalmouth matters:** tap-ins and jam plays happen here. Who owns it is a coaching choice rather than a law. Under a **low zone collapse** — the zone coverage assumed as the default throughout this guide — the **weak-side defenceman** owns the goalmouth and does not leave it. Under **man-on-man** the net front belongs to whoever's check went there, and under a **hybrid** — man-on-man below the dots, zone above — to whichever of the low three is matched to the net-front forward. A **collapsing box** is a state rather than a system — what a low zone collapse turns into under maximum pressure — with both defencemen inside together, plus whoever else is in there. **Find out which system your team plays** — [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out who has the net front under each. Mixing up "goalmouth" and "slot" is a common cause of a blown assignment (coaching observation, not a counted ranking): they are two different jobs, one layer apart.
 
 ### The "home plate" / high-danger area (also "the house")
 
@@ -394,26 +394,26 @@ The slot is layered, and the layers have different jobs:
 
 ![](diagram:home-plate-the-house)
 
-**Why it matters:** home plate is the working definition of a "high-danger chance." Analytics providers (Natural Stat Trick, Evolving Hockey, MoneyPuck) each draw it slightly differently, so treat it as a concept rather than a measurement: **shots from inside home plate are worth several times a shot from outside it.** Work the puck inside before you shoot.
+**Why home plate matters:** home plate is the working definition of a "high-danger chance." Analytics providers (Natural Stat Trick, Evolving Hockey, MoneyPuck) each draw it slightly differently, so treat it as a concept rather than a measurement: **shots from inside home plate are worth several times a shot from outside it.** Work the puck inside before you shoot.
 
 
 ### The crease / "the paint"
 
 **Where:** the light-blue area in front of the net, 8 ft wide and 6 ft deep, extending 4 ft upward.
 
-**Why it matters:** the crease is the goalie's space. "**Stay out of the paint**" is the instruction; "**live just outside the paint**" is the skill. **Stay off the red boundary line too: it counts as crease under the IIHF, USA Hockey, Hockey Canada and CARHA; the NHL and the PWHL leave it unsaid in their rule text, and the goalkeeper-interference reference tables answer the other way — the IIHF's own among them, against its own rule.** The crease section above has the detail.
+**Why the crease matters:** the crease is the goalie's space. "**Stay out of the paint**" is the instruction; "**live just outside the paint**" is the skill. **Stay off the red boundary line too: it counts as crease under the IIHF, USA Hockey, Hockey Canada and CARHA; the NHL and the PWHL leave it unsaid in their rule text, and the goalkeeper-interference reference tables answer the other way — the IIHF's own among them, against its own rule.** The crease section above has the detail.
 
 ### The corners
 
 **Where:** the rounded ends of the rink beside and behind the net, outside the faceoff circles.
 
-**Why it matters:** most loose-puck battles happen here, and corner possession is the start of nearly every offensive-zone cycle and nearly every defensive-zone breakout — coaching observation rather than a measured share. On NHL-sized ice the corners are tight and a two-player forecheck can seal them; on wide ice they are much harder to seal.
+**Why the corners matter:** most loose-puck battles happen here, and corner possession is the start of nearly every offensive-zone cycle and nearly every defensive-zone breakout — coaching observation rather than a measured share. On NHL-sized ice the corners are tight and a two-player forecheck can seal them; on wide ice they are much harder to seal.
 
 ### The half-wall
 
 **Where:** the boards **roughly level with the faceoff dot**, between the corner and the point. There is one on each side of each end zone. You will also hear it called the **half-boards**; it is the same place.
 
-**Why it matters:** the half-wall is the most important non-scoring area in the offensive zone — coaching observation rather than a measured ranking. It is the natural distribution point — from here a player can see the point, the slot, the corner and the net-front, and every one of those passes is available. Wingers live here in offensive-zone possession; half-wall players are the two "wings" of a 1-3-1 power play.
+**Why the half-wall matters:** the half-wall is the most important non-scoring area in the offensive zone — coaching observation rather than a measured ranking. It is the natural distribution point — from here a player can see the point, the slot, the corner and the net-front, and every one of those passes is available. Wingers live here in offensive-zone possession; half-wall players are the two "wings" of a 1-3-1 power play.
 
 **"Half-wall" is not "the point."** The point is the area just inside the blue line, not the line itself; the half-wall is level with the dot, roughly 20 ft from the goal line. Conflating them is a common error and it produces a real mistake — a defenceman drifting down to the half-wall has abandoned the blue line.
 
@@ -423,13 +423,13 @@ The slot is layered, and the layers have different jobs:
 
 **Where:** the perimeter of the rink.
 
-**Why it matters:** the wall is both a weapon and a trap. As a weapon, it is a passing partner (bank passes, chips, rims, glass-and-out clears). As a trap, a player pinned against it has no escape on one side and can be sealed by a single forechecker. "**Get off the wall**" means stop battling and move the puck to open ice.
+**Why the wall matters:** the wall is both a weapon and a trap. As a weapon, it is a passing partner (bank passes, chips, rims, glass-and-out clears). As a trap, a player pinned against it has no escape on one side and can be sealed by a single forechecker. "**Get off the wall**" means stop battling and move the puck to open ice.
 
 ### The point
 
 **Where:** the area just inside the blue line, toward each set of boards, where the defencemen set up in the offensive zone. Two of them: the **strong-side point** (puck side) and the **weak-side point**.
 
-**Why it matters:** the point is the top of the offensive-zone structure. From the point you can shoot for tips and rebounds, walk laterally to open a lane, or feed either half-wall. Defensively, "**covering the point**" means denying the opposing defenceman time and space up there — normally a winger's job in a zone system.
+**Why the point matters:** the point is the top of the offensive-zone structure. From the point you can shoot for tips and rebounds, walk laterally to open a lane, or feed either half-wall. Defensively, "**covering the point**" means denying the opposing defenceman time and space up there — normally a winger's job in a zone system.
 
 **Note the precision:** "the point" is an *area*, not the blue line itself, and it is not the same as "high". A forward who rotates high is not "at the point" unless they are actually occupying that spot.
 
@@ -437,7 +437,7 @@ The slot is layered, and the layers have different jobs:
 
 **Where:** the edge of the faceoff circle closest to the blue line.
 
-**Why it matters:** the top of the circle is the standard depth marker for a defenceman supporting a cycle. Picture three depths in the offensive zone — just inside the blue line (default), top of the circle (the activated position, still recoverable), and **below the circles** (a commitment: you are a fourth forward, you cannot recover, and a forward must have taken the blue line for you *before* you went). "Step down to the top of the circle" is a specific, bounded instruction, which is why coaches use it. [Offensive Zone Play](../systems/offensive_zone_play.md) sets out these three depths in full.
+**Why the top of the circle matters:** the top of the circle is the standard depth marker for a defenceman supporting a cycle. Picture three depths in the offensive zone — just inside the blue line (default), top of the circle (the activated position, still recoverable), and **below the circles** (a commitment: you are a fourth forward, you cannot recover, and a forward must have taken the blue line for you *before* you went). "Step down to the top of the circle" is a specific, bounded instruction, which is why coaches use it. [Offensive Zone Play](../systems/offensive_zone_play.md) sets out these three depths in full.
 
 ### The dots
 
@@ -445,14 +445,14 @@ The slot is layered, and the layers have different jobs:
 
 ![](diagram:above-and-below-the-dots)
 
-**Why it matters:** "**above the dots**" and "**below the dots**" is how coaches split the zone in half, though not into two equal halves. The end-zone dots sit 20 ft out from the goal line, so above the dots runs the 44 ft back to the blue line (64 ft − 20 ft) and below the dots runs the 31 ft on to the end boards (20 ft + 11 ft). Unlike "high" and "low", which are always relative, the dots are painted, so once you know which end is meant, above and below them name a fixed line rather than a feeling. **Inside the dots** is the other common use: said of where a player stands, it means the ice between the two dots, toward the middle rather than out toward the boards — where a centre swings low on a breakout. In a hybrid defensive system, for example, coverage is man-on-man **below the dots** and zone **above** them — one coaching choice among several, so find out which system your team plays; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out the rest.
+**Why the dots matter:** "**above the dots**" and "**below the dots**" is how coaches split the zone in half, though not into two equal halves. The end-zone dots sit 20 ft out from the goal line, so above the dots runs the 44 ft back to the blue line (64 ft − 20 ft) and below the dots runs the 31 ft on to the end boards (20 ft + 11 ft). Unlike "high" and "low", which are always relative, the dots are painted, so once you know which end is meant, above and below them name a fixed line rather than a feeling. **Inside the dots** is the other common use: said of where a player stands, it means the ice between the two dots, toward the middle rather than out toward the boards — where a centre swings low on a breakout. In a hybrid defensive system, for example, coverage is man-on-man **below the dots** and zone **above** them — one coaching choice among several, so find out which system your team plays; [Defensive Zone Coverage](../systems/defensive_zone_coverage.md) sets out the rest.
 
 
 ### Behind the net
 
 **Where:** the strip of ice between the goal line and the end boards.
 
-**Why it matters:** behind the net is the safest place in your own zone to compose yourself, because a turnover there produces no direct shot. In your own end, **carry behind the net rather than through the slot** — and this one is not team-dependent: a turnover with the puck on your stick in your own slot is a goal against. The *pass* between partners is the one some teams take high in the zone instead; **D-to-D** is in [§7, D-partner and defence pairs](#d-partner-and-defence-pairs). In the offensive zone it is a pivot point: a puck carrier who goes behind the net can emerge on either side, and the defence has to commit. ⚠️ **Take the puck, not the body, and never treat a goalie back here as *"fair game"*.**
+**Why the ice behind the net matters:** behind the net is the safest place in your own zone to compose yourself, because a turnover there produces no direct shot. In your own end, **carry behind the net rather than through the slot** — and this one is not team-dependent: a turnover with the puck on your stick in your own slot is a goal against. The *pass* between partners is the one some teams take high in the zone instead; **D-to-D** is in [§7, D-partner and defence pairs](#d-partner-and-defence-pairs). In the offensive zone it is a pivot point: a puck carrier who goes behind the net can emerge on either side, and the defence has to commit. ⚠️ **Take the puck, not the body, and never treat a goalie back here as *"fair game"*.**
 
 Under USA Hockey, the middle of this strip is the far end of the goalkeeper's privileged area — but not the corners either side, which 607(d) Note 2's lines from the end-zone faceoff spots leave outside ([Language and Glossary](language_and_glossary.md), under **Privileged area**). Inside it, Rule 607(c) writes ⚠️ **no bare minor for a deliberate body check or charge on a goalie**; accidental or unavoidable contact is interference instead (607(d) Note 1). But if you drive hard to the net and only then try to pull out, it is a minor plus a misconduct (*Casebook* Rule 607, Situation 4).
 
@@ -462,25 +462,25 @@ Outside the privileged area, in a game where Rule 604 permits body checking, the
 
 **Where:** behind and beside the opponent's net, in the offensive zone.
 
-**Why it matters:** the name comes from Wayne Gretzky, who set up there because the defence cannot easily pressure a player behind the net without opening the slot. It is a phrase you will hear in commentary and it means "attacking possession behind the goal line" — not the same as the neutral space "behind the net" in your own end.
+**Why the office matters:** the name comes from Wayne Gretzky, who set up there because the defence cannot easily pressure a player behind the net without opening the slot. It is a phrase you will hear in commentary and it means "attacking possession behind the goal line" — not the same as the neutral space "behind the net" in your own end.
 
 ### The neutral-zone dots
 
 **Where:** the four dots 5 ft outside each blue line, 44 ft apart.
 
-**Why it matters:** the neutral-zone dots mark the standard lateral lanes for a neutral-zone setup. Defencemen defending the rush position roughly between them; forwards in a 1-2-2 neutral-zone forecheck align on them. Faceoffs land here after an unintentional offside on a carry-in (NHL 83.6), after most neutral-zone stoppages, and after many stoppages the attackers cause in their attacking zone. An offside on a shot or pass draws back where it came from, which can be your own end. An intentional offside sends the draw to your own end in all six books (NHL 83.7, IIHF 83.6(IV), PWHL 85.7, USA Hockey 630(c), Hockey Canada 6.3(d)(iii), CARHA 72(f)). So does an attacker's high stick under USA Hockey and CARHA (USA Hockey 621(d), CARHA 62(d)). As a rule, so does a penalty that puts your team alone on the clock, though one called after a goal draws at centre ice (NHL 76.2).
+**Why the neutral-zone dots matter:** the neutral-zone dots mark the standard lateral lanes for a neutral-zone setup. Defencemen defending the rush position roughly between them; forwards in a 1-2-2 neutral-zone forecheck align on them. Faceoffs land here after an unintentional offside on a carry-in (NHL 83.6), after most neutral-zone stoppages, and after many stoppages the attackers cause in their attacking zone. An offside on a shot or pass draws back where it came from, which can be your own end. An intentional offside sends the draw to your own end in all six books (NHL 83.7, IIHF 83.6(IV), PWHL 85.7, USA Hockey 630(c), Hockey Canada 6.3(d)(iii), CARHA 72(f)). So does an attacker's high stick under USA Hockey and CARHA (USA Hockey 621(d), CARHA 62(d)). As a rule, so does a penalty that puts your team alone on the clock, though one called after a goal draws at centre ice (NHL 76.2).
 
 ### The bench area
 
 **Where:** both players' benches on the same side of the neutral zone; penalty boxes opposite.
 
-**Why it matters:** the bench side is where you change safely. The far side is where lines get caught. If you are stranded on the far side and tired, stay in position and finish the shift — a bad change is worse than a long shift.
+**Why the bench area matters:** the bench side is where you change safely. The far side is where lines get caught. If you are stranded on the far side and tired, stay in position and finish the shift — a bad change is worse than a long shift.
 
 ### The trapezoid, as an area of the end zone
 
 **Where the trapezoid sits:** behind the net, between the goal line and the end boards. The markings, the dimensions, the penalty and its unsettled status in England Ice Hockey's competitions are all in [§3, The trapezoid (goalkeeper's restricted area)](#the-trapezoid-goalkeepers-restricted-area); this entry is only its place on the map.
 
-**Why it matters:** the trapezoid defines which corners your goalie can help you in — under NHL and IIHF rules, none of them. Aim your dump-ins outside it.
+**Why the trapezoid matters:** the trapezoid defines which corners your goalie can help you in — under NHL and IIHF rules, none of them. Aim your dump-ins outside it.
 
 ---
 

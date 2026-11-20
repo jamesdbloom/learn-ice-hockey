@@ -90,7 +90,7 @@ A forecheck has exactly two possible wins. Everything in every system serves one
 
 **Coaches usually call Win 2 the commoner of the two, and the only public tracking located for this document that measures both is more equivocal than that.** Alex Novet's Hockey Graphs analysis of Corey Sznajder's hand-tracking splits success into a *Forecheck Recovery* — *"a turnover or icing in their offensive zone"* that *"prevents a zone exit entirely"* — and a *Zone Entry Prevention*, stopping the play *"in the neutral zone before their opponent can get a zone entry"*. By team, the first runs about **21% to 25.5%** of breakout attempts and the second about **40% to 45.5%** of the breakouts that got out. ⚠️ **Those denominators differ and the article says so**, so the two cannot be read against each other and it publishes no ratio.
 
-What it does show is the effect of **pressuring the carrier at the moment of the exit**, the finding the author singles out: overall success rises from **45.7%** of breakout attempts to **78.1%**, Forecheck Recovery from **13.5% to 43.9%** and Zone Entry Prevention from **37.2% to 60.9%**. Under pressure, failed exits rise from **10% of exits to 41%** and carry-outs fall from **19% to 4%**. *(One tracker, hand-tracked, roughly a quarter of the 2018-19 season plus half of each of the two before it. The per-team ranges are read off a scatter plot that prints no values; the pressure and exit figures are labels printed on the charts.)*
+What the article does show is the effect of **pressuring the carrier at the moment of the exit**, the finding the author singles out: overall success rises from **45.7%** of breakout attempts to **78.1%**, Forecheck Recovery from **13.5% to 43.9%** and Zone Entry Prevention from **37.2% to 60.9%**. Under pressure, failed exits rise from **10% of exits to 41%** and carry-outs fall from **19% to 4%**. *(One tracker, hand-tracked, roughly a quarter of the 2018-19 season plus half of each of the two before it. The per-team ranges are read off a scatter plot that prints no values; the pressure and exit figures are labels printed on the charts.)*
 
 Passive systems are not "not forechecking." They have decided Win 2 is the better bet — and the case for that is that it is the more forgiving win, not the likelier one.
 
@@ -344,11 +344,11 @@ Countered by: A quick first pass before F2 arrives, a reverse into the space F1 
 
 **What it's good at:** Sustained offensive-zone time, forcing turnovers close to the net, physically wearing down a defence pair over three periods, and pinning a tired line in their own end so they cannot change. That is why teams forecheck hard straight after the opposition ices the puck: under NHL, IIHF and PWHL rules the offending team **cannot change lines and cannot use a timeout**, so you have a mismatch to attack. ⚠️ **Find out first whether your book gives you one.** USA Hockey and CARHA restrict neither, and Hockey Canada runs its no-change rule only at U18AAA, Junior and, at the Member's option, Senior — and even there it lets either team take a time-out, where it has one. The rule-set note further down sets each book out.
 
-**What it concedes:** Everything behind it. Two forwards deep plus a pinch means a successful breakout is frequently a 3-on-2 or worse. It is also the most physically expensive system to run.
+**What the 2-1-2 concedes:** Everything behind it. Two forwards deep plus a pinch means a successful breakout is frequently a 3-on-2 or worse. It is also the most physically expensive system to run.
 
 **When a coach picks it:** When trailing; on the first shift after an offensive-zone faceoff; against a defence pair that is slow or panics under pressure; after a dump-in when your forwards have a head start on the retrieval; and any time the opposition has just iced the puck.
 
-**How it is beaten:** A quick first pass before F2 arrives; a **reverse** behind the net into the space F1 has just vacated; and above all a **rim** past the pinching defenceman — the counter that hurts a 2-1-2 most, because a pinch that misses turns two deep forecheckers into two players who are irrelevant. That ranking is coaching emphasis, not a counted one. A defence pair that can make one clean pass under pressure destroys a 2-1-2.
+**How the 2-1-2 is beaten:** A quick first pass before F2 arrives; a **reverse** behind the net into the space F1 has just vacated; and above all a **rim** past the pinching defenceman — the counter that hurts a 2-1-2 most, because a pinch that misses turns two deep forecheckers into two players who are irrelevant. That ranking is coaching emphasis, not a counted one. A defence pair that can make one clean pass under pressure destroys a 2-1-2.
 
 **Variants worth knowing:** the **strong-side (stacked) 2-1-2**, where F1 and F2 both come from the same side to overload one corner, and the **spread 2-1-2**, where they come from opposite sides to cover both. Edmonton's 1980s dynasty is the classic historical example of the aggressive 2-1-2 generally. *(The spread version is attributed to John Tortorella's New York Rangers teams, and contemporaneous writing bears that out. Blue Seat Blogs' systems breakdown, published while he was coaching them, says the Rangers "generate most of their 5-on-5 offense from an aggressive 2-1-2 spread forecheck **and transitional offense, meaning offense generated from the rush**" — so the forecheck was never claimed as the sole source of that offence. It contrasts it with the variant "where F1 and F2 approach from the same lane, rather than spread out" ([The Suit, 21 February 2012](https://blueseatblogs.com/2012/02/21/overview-of-john-tortorellas-system/)). **That is a fan-analytics site, not a coaching manual or a team source** — well attested, not official.)*
 
@@ -384,11 +384,11 @@ Widely described in coaching material as the most common *base* structure in hoc
 
 **What it's good at:** Never being out of position. The 1-2-2 concedes the initial retrieval and instead builds a wall the opponent has to pass through. It is excellent against teams that want to carry the puck out with speed, because there is no space to skate into.
 
-**What it concedes:** Time. You are letting their defencemen pick the puck up unmolested and choose a play. Against a defence pair that moves the puck well, you will spend a lot of the night defending clean zone entries.
+**What the 1-2-2 concedes:** Time. You are letting their defencemen pick the puck up unmolested and choose a play. Against a defence pair that moves the puck well, you will spend a lot of the night defending clean zone entries.
 
 **When a coach picks it:** Protecting a lead; against a fast transition team; when your forwards are tired; when your team is undisciplined and keeps getting caught deep; as the standard rec-league answer, because it is forgiving.
 
-**How it is beaten:** Patience and puck movement. D-to-D passes to shift the wall, then a quick-up to a winger who has come *underneath* the fox rather than standing on the wall in front of them. Also the simple stretch pass or chip past all four players above F1, because **the two defencemen are the deepest layer the 1-2-2 has** — the weak-side D is the safety *inside* the shape, covering the middle behind the forwards, not a fifth man stationed behind the pair. Get a puck past the D line and there is nobody but the goalie in behind it.
+**How the 1-2-2 is beaten:** Patience and puck movement. D-to-D passes to shift the wall, then a quick-up to a winger who has come *underneath* the fox rather than standing on the wall in front of them. Also the simple stretch pass or chip past all four players above F1, because **the two defencemen are the deepest layer the 1-2-2 has** — the weak-side D is the safety *inside* the shape, covering the middle behind the forwards, not a fifth man stationed behind the pair. Get a puck past the D line and there is nobody but the goalie in behind it.
 
 #### The 1-2-2 as a neutral-zone structure
 
@@ -444,11 +444,11 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 
 **What it's good at:** Taking away *lanes* rather than *players*. Against a team that wants to make three short passes to exit, the 1-3-1 is miserable to play against because there is nowhere to put the puck. It is also flexible. It can be pushed up aggressively into the offensive zone, the version described here, or dropped back and run passively as a neutral-zone shape. Coaching material usually describes it the second way — consensus rather than a counted usage — and [Neutral Zone Systems](neutral_zone_systems.md) covers it. Dropped back, it is no longer a forecheck in any literal sense; only the name survives.
 
-**What it concedes:** The initial puck, entirely, and a great deal of ice in behind if the line of three is beaten in one pass. It also demands very good lateral skating and reading from three players simultaneously — this is not a beginner system.
+**What the 1-3-1 concedes:** The initial puck, entirely, and a great deal of ice in behind if the line of three is beaten in one pass. It also demands very good lateral skating and reading from three players simultaneously — this is not a beginner system.
 
 **When a coach picks it:** Against a team that breaks out with short controlled passes; when you cannot get pressure on the puck in time — for example against a line change, where the 1-3-1 lets you set up rather than chase; and as a lead-protecting shape.
 
-**How it is beaten:** Three well-documented counters. **Chip it past the line of three and beat it with speed** — the line is flat, so anything behind it is behind all three at once. **Bank a pass off the boards** to a teammate who has already got behind the line. And **move the puck side to side** before committing, because the line has to shift as a unit and the shift is where the seams open.
+**How the 1-3-1 is beaten:** Three well-documented counters. **Chip it past the line of three and beat it with speed** — the line is flat, so anything behind it is behind all three at once. **Bank a pass off the boards** to a teammate who has already got behind the line. And **move the puck side to side** before committing, because the line has to shift as a unit and the shift is where the seams open.
 
 ---
 
@@ -470,12 +470,12 @@ Countered by: A hard chip past the flat line and a race for it — not a stretch
 
 - **The jobs:** the lone forechecker steers and slows the exit rather than pressuring. The four behind form a wall whose only purpose is that nothing gets through it with speed. Nobody pinches. Nobody gambles.
 - **What it's good at:** preventing odd-man rushes and high-danger chances, full stop.
-- **What it concedes:** any realistic chance of getting the puck back in their end, and therefore any offence.
+- **What the 1-4 concedes:** any realistic chance of getting the puck back in their end, and therefore any offence.
 - **When it's correct:** as a *situational* tool only — protecting a one-goal lead in the last two minutes, killing the final seconds of a period, surviving the tail end of a long shift with no legs, or against a team so much better than you that opening the game up loses 6–1. No serious team runs it for 60 minutes.
 
 ![](diagram:nz-1-4)
 
-**How it is beaten:** patience and a willingness to dump the puck in and forecheck it. A 1-4 dares you to enter the zone with control; the counter is to stop trying, put the puck behind them, and turn the game into a series of retrievals. Concretely, **a hard chip past the flat line and a race for it** — because the line is flat, nobody is deeper than anybody else, so anything put behind them is a genuine footrace with only the goalie beyond. Note that a *stretch pass* is the wrong tool here: a 1-4 sits on its own blue line, so a receiver already behind the wall would be offside. Chip it past and skate onto it, and if the goalie comes out for it, pull up. See [Zone Entries](zone_entries.md).
+**How a 1-4 is beaten:** patience and a willingness to dump the puck in and forecheck it. A 1-4 dares you to enter the zone with control; the counter is to stop trying, put the puck behind them, and turn the game into a series of retrievals. Concretely, **a hard chip past the flat line and a race for it** — because the line is flat, nobody is deeper than anybody else, so anything put behind them is a genuine footrace with only the goalie beyond. Note that a *stretch pass* is the wrong tool here: a 1-4 sits on its own blue line, so a receiver already behind the wall would be offside. Chip it past and skate onto it, and if the goalie comes out for it, pull up. See [Zone Entries](zone_entries.md).
 
 ---
 
@@ -501,7 +501,7 @@ The **left-wing lock** is the famous version. The centre and right winger forech
 
 **What it's good at:** Genuinely aggressive forechecking with a genuinely solid back end. You get two-player pressure — nearly as good as a 2-1-2 — while never being outnumbered on the counter-attack, because there are always three players between the puck and your net.
 
-**What it concedes:** Less than most systems, which is why it was so successful. The real costs are structural rather than tactical: it demands a left winger with total positional discipline and the skating to back-check, and it puts less offensive weight on that player. It also gives up the fifth attacker in the offensive zone, so you cycle less.
+**What the 2-3 concedes:** Less than most systems, which is why it was so successful. The real costs are structural rather than tactical: it demands a left winger with total positional discipline and the skating to back-check, and it puts less offensive weight on that player. It also gives up the fifth attacker in the offensive zone, so you cycle less.
 
 **When a coach picks it:** When you want pressure but cannot afford to bleed rush chances — a strong two-way team's default, or a team trying to nurse a lead without going fully passive.
 
@@ -536,14 +536,14 @@ Countered by: One pass — you are betting they cannot make it in the time you a
 
 **What it's good at:** Not letting the opposition breathe. It is not really a system so much as a decision to accept unlimited risk in exchange for keeping the puck in the zone.
 
-**What it concedes:** Literally everything. A single clean exit is a breakaway or an empty-net goal against.
+**What the press concedes:** Literally everything. A single clean exit is a breakaway or an empty-net goal against.
 
 **When a coach picks it:** Almost exclusively late and trailing.
 - Down a goal in the last two or three minutes.
 - With the goalie pulled for the extra attacker, where you are already six skaters and giving up the empty net anyway.
 - During a **delayed penalty**, when the whistle blows as soon as the offending team **gains control** of the puck — not merely touches it (Rule 15.1: *"When the team to be penalized gains control of the puck, the Referee will blow his whistle to stop play"*). The distinction matters on the ice: a deflection, a blocked pass or a puck that glances off a defender does **not** stop play, so a team that eases off after any contact concedes a live puck while its own goalie may be on the bench. Keep playing until the whistle actually goes. This is still the one situation where an all-out press is nearly free, and the classic error is failing to press hard enough during it.
 
-**How it is beaten:** One pass. That is the point of it — you are betting that they cannot make that pass in the time you allow them.
+**How the press is beaten:** One pass. That is the point of it — you are betting that they cannot make that pass in the time you allow them.
 
 ---
 
@@ -783,7 +783,7 @@ The distinction in one line: **off a dump-in you are hunting; off a turnover you
 
 *(Why cite the two NHL rules that way round: Rule 27.8 still reads six feet from either goal post — wording left over from before the trapezoid was widened by two feet each side for the 2014-15 season, a date [Rink Map](../foundation/rink_map.md) owns and sources and no rulebook held here carries. It is stale, not self-contradictory: both rules reach the same 28 feet at the boards and differ only at the goal line. **Never take dimensions from 27.8.** See [Rules Primer](../foundation/rules_primer.md).)*
 
-**Where it applies:** the **NHL** (Rules 1.8 and 27.8) and **IIHF play** (Rules 1.8 and 27.7), the IIHF having adopted it for 2021-22 *"to create more offensive play"*. That announcement also names the **KHL** in passing, but no KHL rulebook was available to check it against, so treat the KHL as unverified. The NHL's commonly given 2005-06 date is in no rulebook held here. **USA Hockey, Hockey Canada and CARHA have no trapezoid** — neither *"trapezoid"* nor *"restricted area"* appears in their playing rules or in USA Hockey's Casebook. **Against a PWHL goalie, plan for her to come out:** PWHL 1.8 says no trapezoid *"will be enforced"* and 27.8 that it *"does not apply a restricted area for goalkeepers"*, though 65.2(viii) still writes the goalie's minor. How much rec, beer-league and youth hockey that covers is a question about leagues, and this document has no count for it. Look behind the net for painted lines — but treat an unmarked sheet as a hint, not a ruling, because IIHF 27.7 turns on *"the position of the puck"*, not the markings.
+**Where the trapezoid applies:** the **NHL** (Rules 1.8 and 27.8) and **IIHF play** (Rules 1.8 and 27.7), the IIHF having adopted it for 2021-22 *"to create more offensive play"*. That announcement also names the **KHL** in passing, but no KHL rulebook was available to check it against, so treat the KHL as unverified. The NHL's commonly given 2005-06 date is in no rulebook held here. **USA Hockey, Hockey Canada and CARHA have no trapezoid** — neither *"trapezoid"* nor *"restricted area"* appears in their playing rules or in USA Hockey's Casebook. **Against a PWHL goalie, plan for her to come out:** PWHL 1.8 says no trapezoid *"will be enforced"* and 27.8 that it *"does not apply a restricted area for goalkeepers"*, though 65.2(viii) still writes the goalie's minor. How much rec, beer-league and youth hockey that covers is a question about leagues, and this document has no count for it. Look behind the net for painted lines — but treat an unmarked sheet as a hint, not a ruling, because IIHF 27.7 turns on *"the position of the puck"*, not the markings.
 
 **🇬🇧 In Britain, in any competition — the Elite League included — plan for their goalie to come out for the dump-in.** The IIHF book carries the rule, numbered **27.7** rather than the NHL's 27.8; neither the current 2026-27 In-House Rules nor the 2025-26 edition before them amend it, and the Elite League's own Casebook does not mention Rule 27 at all. But England Ice Hockey's own *Rules & Regulations* **22.3** say the Goalkeepers' Restricted Area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"* — and that edition is 2024-25, so its scope and standing are unsettled, Scotland and Northern Ireland included. **So the safe assumption for a forechecking team is that their goalie may retrieve the puck**, which is the case in which dump-and-chase loses most of its value. [UK and England Rules](../foundation/uk_rules.md) records the same uncertainty.
 

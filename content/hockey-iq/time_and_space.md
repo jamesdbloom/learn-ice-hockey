@@ -349,7 +349,7 @@ Why angling beats chasing, which is the reason it belongs in a document about ti
 
 **The mechanics are in [Body Contact and Battles → Angling](../technique/body_contact_and_battles.md)** — your route against theirs, momentum back toward your net, closing speed, not crossing over as you close, where your stick goes, and what the angle ends in under checking and non-checking rules. That section quotes USA Hockey's definition and Seth Appert's coaching directly; learn it there.
 
-**What it costs where checking is barred or limited.** Your route is part of the test, not just your hands. Under those books the same contact is a body check if you veered into it, and can be legal only if you held your line, were playing the puck, and put no hip, shoulder or arm into it.
+**What angling into contact costs where checking is barred or limited.** Your route is part of the test, not just your hands. Under those books the same contact is a body check if you veered into it, and can be legal only if you held your line, were playing the puck, and put no hip, shoulder or arm into it.
 
 - **Hockey Canada** Rule 7.3 — at U13 and below, throughout female hockey and in any Member-approved division — counts it as body checking *“when a player leaves their skating lane to make contact”* or *“extends an arm, shoulder, or hip after angling an opponent”*. It allows only incidental contact *“in pursuit of the puck on the ice in the same direction”*.
 - **USA Hockey**'s Casebook clears the angler in a Competitive Contact category only if they keep their skating lane, use no overt hip, shoulder or forearm, and go for the puck (Standard of Play, Situation 15).

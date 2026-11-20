@@ -743,12 +743,12 @@ Rule: Charging binds every division, checking league or not — USA Hockey 607 a
 
 You hold your ground at or just inside the blue line and challenge the carrier as they try to enter, rather than retreating with them.
 
-**What it gets you:**
+**What standing up gets you:**
 - **Denies the zone entirely.** The attack has to dump the puck in or turn back, and neither produces a chance.
 - **Uses the offside rule as an extra defender.** Because under the NHL, IIHF and PWHL books both skates must cross after the puck — **PWHL 85.1** carries the NHL’s vertical-plane test, so an airborne trail skate is onside there too — a defender squeezing the line can force the carrier to slow up or enter alone. ⚠️ **Two books are stricter than that, and one settles nothing:** **USA Hockey 630(a)** needs skate *contact* with the neutral zone or the blue line and **Hockey Canada 6.11** counts only a skate touching the ice, so a lifted trail skate is offside in both. **CARHA 72(c)** borrows the words *"own side"* without ever defining them, which is not a permission either way. A delayed offside also lets your team reset while the attackers tag up.
 - **Keeps play out of your end**, which keeps your forwards fresh and available for the counter.
 
-**What it costs you:**
+**What standing up costs you:**
 - **If you miss, only your partner and goalie are back.** A step-up that fails in the neutral zone leaves your partner in a 2-on-1, or worse. This is the specific risk flagged in [Defender](../positions/defender.md).
 - Standing up rewards a skilled carrier who chips the puck past you and skates onto it.
 
@@ -769,11 +769,11 @@ Never: Back off with a growing gap — a soft retreat gives the attacker speed a
 Read: Right against attackers with speed, on odd-man situations, when you are the last defender, when unsure, and any time you are tired
 ```
 
-**What it gets you:**
+**What backing off gets you:**
 - **Nothing gets behind you.** The worst case is a controlled entry, not a breakaway.
 - Backing off is reliable and repeatable, which is why it is treated as the default for most defencemen most of the time — an impression rather than a measurement, so do not read it as a count.
 
-**What it costs you:**
+**What backing off costs you:**
 - **Concedes the blue line**, so play happens in your end and the shift gets longer.
 - **A soft retreat is worse than either option.** Backing off with a growing gap gives the attacker speed *and* the zone.
 

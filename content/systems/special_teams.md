@@ -284,7 +284,7 @@ Key: Offensive Zone Play covers the measured finishing rate and its qualificatio
 Risk: The 20-30% range quoted in coaching material has no published primary source behind it; treat it as illustrative only
 ```
 
-- **Why it works:** a goalie who has to track the puck across the middle cannot stay square. They must break from small shuffles into a hard lateral push, and while pushing they are opening up, off their angle and off their depth. The shot arrives before they are set. See [Goaltender](../positions/goaltender.md) for the save mechanics from the other side.
+- **Why the royal road works:** a goalie who has to track the puck across the middle cannot stay square. They must break from small shuffles into a hard lateral push, and while pushing they are opening up, off their angle and off their depth. The shot arrives before they are set. See [Goaltender](../positions/goaltender.md) for the save mechanics from the other side.
 - The concept was popularised by former NHL goalie **Steve Valiquette**, whose shot tracking classified chances by whether the puck crossed the line. That "76% of goals are green shots" figure traces to Valiquette ([NHL.com, December 2014](https://web.archive.org/web/20150924092445/http://www.nhl.com/ice/news.htm?id=744483)), but the tracking behind it is proprietary and has never been replicated — [Shooting](../technique/shooting.md) sets out its limits.
 - **The best-sourced figure is 15.50%** — the finishing rate on shots after a royal-road pass, roughly double the next pass type (Alan Wells' analysis of Ryan Stimson's Passing Project, [via NHL.com](https://www.nhl.com/kraken/news/analytics-with-alison-dangerous-passes-327627898)). Carry its limits with it: the data was **volunteer-tracked**, it is *"51,308 shots at 5v5"* (Wells, Hockey Graphs, September 2016), it counts **all attempts, not shots on goal**, and it is **not a power-play measurement**. [Offensive Zone Play](offensive_zone_play.md) covers it. **The 20–30% range quoted in coaching material has no published primary source**; treat it as illustrative. The direction of the effect is not in doubt, and it is why modern power plays are built around cross-ice passing.
 - **Practical version:** a cross-seam pass beats a shot from the same spot almost every time. Before you shoot from a half-wall, check the far side.
@@ -439,7 +439,7 @@ Rule: At a club in England or Wales, any fight in the last five minutes, in over
 
 A two-man advantage is a different game, not a better power play. It should almost always produce a goal, and when it does not it is nearly always because the unit played it like a 5-on-4.
 
-**Why it is different:** three killers can defend a triangle. They will sit in a tight triangle around the slot — usually two low in front of the net and one high — concede everything outside it, and block shots. **Sustained pressure on the puck is not available to them**, because every killer who leaves the triangle opens a hole nobody can fill. That does not mean you will never be touched: a three-player kill will still jump a bobbled reception, close hard on anyone who walks into the slot, and throw a stick or a body at a shooter. What it means is that **nobody is coming to hunt you on the perimeter** — so you have time out there that does not exist at 5-on-4, and the only way to lose it is to hurry.
+**Why a 5-on-3 is different:** three killers can defend a triangle. They will sit in a tight triangle around the slot — usually two low in front of the net and one high — concede everything outside it, and block shots. **Sustained pressure on the puck is not available to them**, because every killer who leaves the triangle opens a hole nobody can fill. That does not mean you will never be touched: a three-player kill will still jump a bobbled reception, close hard on anyone who walks into the slot, and throw a stick or a body at a shooter. What it means is that **nobody is coming to hunt you on the perimeter** — so you have time out there that does not exist at 5-on-4, and the only way to lose it is to hurry.
 
 **How to play it:**
 
@@ -546,7 +546,7 @@ Risk: The single low player faces a net-front presence and a backdoor arriver at
 
 ![](diagram:pk-diamond)
 
-**Why it exists:** because a box leaves the bumper unmarked. The diamond's two middle players squeeze the middle of the slot from either side, so the 1-3-1's bumper can be accounted for. Coaches also use it against a three-high **umbrella**, where the apex can pressure the middle point man who would otherwise have a free shot.
+**Why the diamond exists:** because a box leaves the bumper unmarked. The diamond's two middle players squeeze the middle of the slot from either side, so the 1-3-1's bumper can be accounted for. Coaches also use it against a three-high **umbrella**, where the apex can pressure the middle point man who would otherwise have a free shot.
 
 **The jobs:**
 

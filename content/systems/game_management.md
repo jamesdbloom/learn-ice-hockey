@@ -207,7 +207,7 @@ Action: Ask before the game — many rec and youth leagues use no-touch icing, a
 
 **So with a tired line, chip it out — don't ice it.** Under the NHL the team that ices it may make no substitutions before the faceoff, and gets no time-out. You have handed the opposition a faceoff in your end, against your five most tired players, with no way to rest them. That is a goal waiting to happen, and the rules were written to make it so.
 
-**What it costs, and where:**
+**What icing costs, and where:**
 
 - **The exceptions are narrow.** Under the NHL only three things let you change: putting back a goalie pulled for an extra attacker, replacing an injured player, or a penalty that changes on-ice strength (82.1). Who is on the ice is fixed **the moment the puck leaves the offending player's stick**.
 - **The IIHF — the British base book — writes the same bar, with one more exception: *"a Player with a broken skate"* (81.4).** ⚠️ **Do not plan a change around that fourth exception.** The IIHF's own 82.1 also covers icing and lists only the NHL's three, and neither the 2025/26 nor the 2026/27 edition says which rule governs. The NHL has no fourth exception at all.
@@ -689,7 +689,7 @@ Never: Leave the ice anywhere but at the bench — a bench minor under NHL and I
 
 Leave only through the bench door.
 
-**What it costs.** Under the NHL you may change at any time if the player leaving is within five feet of the bench and out of the play (74.1). If either player plays the puck or makes contact while **both** are on the ice, it is a bench minor for too many men, and a goal the offending team scores before the whistle is disallowed (74.2). The PWHL writes the same five feet, and the IIHF writes it as 1.50 m.
+**What an illegal change costs.** Under the NHL you may change at any time if the player leaving is within five feet of the bench and out of the play (74.1). If either player plays the puck or makes contact while **both** are on the ice, it is a bench minor for too many men, and a goal the offending team scores before the whistle is disallowed (74.2). The PWHL writes the same five feet, and the IIHF writes it as 1.50 m.
 
 🇬🇧 **The IIHF's trigger is wider, and that decides cases.** It calls too many men when the puck is played or contact made while **either** the player coming on or the player going off is on the ice. **USA Hockey sides with the IIHF.** ⚠️ **So under both of those books the player coming off can give the penalty away alone**, before the substitute steps on. *(The IIHF counts a player with one skate on the ice and one in the bench as off.)*
 
@@ -1147,7 +1147,7 @@ The standard coaching observation is that **the great majority of penalties in a
 
 **What the data does support.** Most penalties in youth hockey really are aggression-type infractions rather than obstruction fouls. Gilbert and Trudel coded gamesheets and video from **55 Bantam (14-15) games across five leagues, 850 penalties**, and found **an average of 15.5 penalties per game with "most penalties classified as minor aggression penalties (62.4%)"** — roughing, cross-checking, elbowing, slashing, as against the hooking-and-holding category. They also found that "the number of penalties tended to increase from the first period to the third period", which is at least consistent with accumulating frustration.
 
-**What it does not support is the motive.** No study codes *why* a penalty was taken. "Minor aggression" is a category of contact, not intent: a clean cross-check on a forechecker and a revenge slash both land in it, so the claim that most are *retaliation* has no measurement behind it. Two findings cut against it. McFaul and colleagues, video-coding 249 verified head impacts across 48 U15 and U18 AA/AAA games, found **"most HC events (~68%) were the outcome of nonaggressive play and within the rules of the sport (~67%)"**. Kirker, Tenenbaum and Mattson found **"aggression was instrumental in nature two-thirds of the time"** — goal-directed, not hot-blooded. And Gilbert and Trudel found **74.9% of penalties went to one player at a time**, whereas retaliation and post-whistle scrums tend to produce penalties in pairs.
+**What the data does not support is the motive.** No study codes *why* a penalty was taken. "Minor aggression" is a category of contact, not intent: a clean cross-check on a forechecker and a revenge slash both land in it, so the claim that most are *retaliation* has no measurement behind it. Two findings cut against it. McFaul and colleagues, video-coding 249 verified head impacts across 48 U15 and U18 AA/AAA games, found **"most HC events (~68%) were the outcome of nonaggressive play and within the rules of the sport (~67%)"**. Kirker, Tenenbaum and Mattson found **"aggression was instrumental in nature two-thirds of the time"** — goal-directed, not hot-blooded. And Gilbert and Trudel found **74.9% of penalties went to one player at a time**, whereas retaliation and post-whistle scrums tend to produce penalties in pairs.
 
 There is also a nice piece of counter-evidence against the intuition that frustration needs a physical outlet: Régnier and colleagues, comparing 28 Pee Wee teams in a body-checking league against 21 in a league that banned it, reported that **"contrary to popular belief, playing without body-checking resulted in fewer 'hostile aggression penalties.'"**
 

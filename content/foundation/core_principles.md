@@ -121,7 +121,7 @@ Take "stay high" for a winger in your own end. While the other team has the puck
 **What to do.** Off the puck you have four jobs, and what is right in one is close to the opposite in another. Most players have a plan for only one of them.
 
 - **Your team has the puck:** get open where the carrier can see you. When the puck goes to the net, go with it and stop at the front for the rebound — skates and stick blade just outside the crease, never on the goalie — unless your job on that shot is the safety at the point or the top of the circle.
-- **They have the puck:** these pages assume the closest player pressures it, with the stick and an angle; a 1-2-2 forecheck or a trap sends fewer, so find out what your team runs. If you are not the one pressing, stay goal side of your attacker with your stick in the passing lane.
+- **The other team has the puck:** these pages assume the closest player pressures it, with the stick and an angle; a 1-2-2 forecheck or a trap sends fewer, so find out what your team runs. If you are not the one pressing, stay goal side of your attacker with your stick in the passing lane.
 - **The puck is loose:** one player goes hard, one supports and nobody else joins. Which of you is which is your team's call.
 - **Possession has just changed:** act before the other side does. If your team won it, go; if it lost it, get back above the puck, between it and your net.
 

@@ -100,7 +100,7 @@ The In-House Rules' Introduction says so in terms: *"IHUK and the British Univer
 > apply to all Clubs and Teams. IHUK is now entitled to enforce these."* So an
 > England Ice Hockey rule quoted below is still live.
 >
-> **What it does not say is whether a policy keeps the boundary it was written
+> **What the Introduction does not say is whether a policy keeps the boundary it was written
 > with.** England Ice Hockey's *Rules & Regulations* were written by the governing body for
 > England and Wales (1.1), and the documents do not say whether they now reach Scotland and Northern
 > Ireland. Wear the neck guard as if they do. **The same open question decides whether 22.3's trapezoid suspension

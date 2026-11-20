@@ -114,17 +114,17 @@ Five buckets. In rough order of how much most amateur players are neglecting the
 
 ### 1. Aerobic base — the recovery engine
 
-**What it buys you:** faster rebuilding of phosphocreatine between shifts, faster clearance of the by-products of hard glycolytic work, a lower heart rate at any given workload, and therefore a third period that resembles your first.
+**What aerobic work buys you:** faster rebuilding of phosphocreatine between shifts, faster clearance of the by-products of hard glycolytic work, a lower heart rate at any given workload, and therefore a third period that resembles your first.
 
-**What it looks like:** genuinely easy, conversational-pace continuous work — cycling, rowing, running, brisk uphill walking — for 30 to 60 minutes. The defining feature is that it should feel *too easy*. Most amateurs train their "easy" sessions too hard and their "hard" sessions too easy, and get the adaptation from neither.
+**What aerobic work looks like:** genuinely easy, conversational-pace continuous work — cycling, rowing, running, brisk uphill walking — for 30 to 60 minutes. The defining feature is that it should feel *too easy*. Most amateurs train their "easy" sessions too hard and their "hard" sessions too easy, and get the adaptation from neither.
 
 **Do it off the ice.** Ice time is expensive and better spent on skills and on efforts that look like shifts.
 
 ### 2. Anaerobic capacity and repeat-sprint ability — the shift itself
 
-**What it buys you:** a bigger, more repeatable hard effort, and better tolerance of the discomfort of a long shift.
+**What anaerobic work buys you:** a bigger, more repeatable hard effort, and better tolerance of the discomfort of a long shift.
 
-**What it looks like:** intervals that mirror the demand. The obvious and correct starting point is to copy the game — **hard efforts of roughly 30 to 45 seconds, with 2 to 4 minutes of recovery, repeated 6 to 12 times**, on a bike, a rower, a hill or the ice. That work-to-rest ratio is the whole point; if you shorten the rest, you have built a different (and also useful) session, but you have stopped training the thing hockey asks for.
+**What anaerobic work looks like:** intervals that mirror the demand. The obvious and correct starting point is to copy the game — **hard efforts of roughly 30 to 45 seconds, with 2 to 4 minutes of recovery, repeated 6 to 12 times**, on a bike, a rower, a hill or the ice. That work-to-rest ratio is the whole point; if you shorten the rest, you have built a different (and also useful) session, but you have stopped training the thing hockey asks for.
 
 *This prescription is coaching craft derived from the measured game demands above, not a directly tested protocol. Treat the numbers as a sensible starting shape, not a validated dose.*
 
@@ -132,29 +132,29 @@ Five buckets. In rough order of how much most amateur players are neglecting the
 
 ### 3. Lower-body strength and power — the stride and the battle
 
-**What it buys you:** a harder push, a faster start, more stability on your edges, and more mass behind you in a puck battle. See [Body Contact and Battles](../technique/body_contact_and_battles.md) for what you do with it.
+**What strength work buys you:** a harder push, a faster start, more stability on your edges, and more mass behind you in a puck battle. See [Body Contact and Battles](../technique/body_contact_and_battles.md) for what you do with it.
 
-**Does it transfer to skating?** Partly, and honestly the evidence says *partly* rather than *hugely*. Keiner and colleagues (2024) in the *Journal of Strength and Conditioning Research* found that maximum strength and jump tests explained **1–35% of the variance in on-ice linear sprint performance** in elite youth players, and **22–30% of the variance in in-game peak skating speed**. They concluded there was "a clear influence of 1RM in squatting and CMJ performance on on-ice linear sprint as well as in-game peak skating speed." Roczniok and colleagues (2024) found elite U16 players' skating sprint was *less* related to off-ice jump ability than sub-elite players' was — a reminder that as technique improves, technique becomes the limiter.
+**Does strength transfer to skating?** Partly, and honestly the evidence says *partly* rather than *hugely*. Keiner and colleagues (2024) in the *Journal of Strength and Conditioning Research* found that maximum strength and jump tests explained **1–35% of the variance in on-ice linear sprint performance** in elite youth players, and **22–30% of the variance in in-game peak skating speed**. They concluded there was "a clear influence of 1RM in squatting and CMJ performance on on-ice linear sprint as well as in-game peak skating speed." Roczniok and colleagues (2024) found elite U16 players' skating sprint was *less* related to off-ice jump ability than sub-elite players' was — a reminder that as technique improves, technique becomes the limiter.
 
 **Read that as: strength is a real but partial contributor.** Getting stronger will help. It will not fix a stride fault.
 
-**What it looks like:** squats, deadlifts or trap-bar deadlifts, split squats and lunges (skating is a single-leg activity, so train single-leg), hip thrusts and glute work, calf work, and jumps. Lateral and rotational movement deserves specific attention because the stride is a lateral push, not a backward one.
+**What strength work looks like:** squats, deadlifts or trap-bar deadlifts, split squats and lunges (skating is a single-leg activity, so train single-leg), hip thrusts and glute work, calf work, and jumps. Lateral and rotational movement deserves specific attention because the stride is a lateral push, not a backward one.
 
 **Get coached on the lifts.** A barbell loaded badly is one of the few ways an off-ice programme can injure you outright.
 
 ### 4. Core and rotational strength — shooting and holding your ground
 
-**What it buys you:** shot power comes from the ground up through a rotating trunk, not from the arms (see [Shooting](../technique/shooting.md)); and every board battle is a test of whether your midsection can transmit force from your legs to your opponent without folding.
+**What core work buys you:** shot power comes from the ground up through a rotating trunk, not from the arms (see [Shooting](../technique/shooting.md)); and every board battle is a test of whether your midsection can transmit force from your legs to your opponent without folding.
 
-**What it looks like:** anti-rotation and anti-extension work (Pallof presses, planks, dead bugs, carries) *plus* deliberate rotational work (medicine-ball throws, cable rotations). Loaded carries are unglamorous and excellent for hockey because that is exactly what a battle feels like.
+**What core work looks like:** anti-rotation and anti-extension work (Pallof presses, planks, dead bugs, carries) *plus* deliberate rotational work (medicine-ball throws, cable rotations). Loaded carries are unglamorous and excellent for hockey because that is exactly what a battle feels like.
 
 ### 5. Mobility — hips and groin above all
 
-**What it buys you:** the ability to actually get into a deep, wide, powerful stride position, and a hip and groin complex that is strong through range rather than only in the middle of it.
+**What mobility work buys you:** the ability to actually get into a deep, wide, powerful stride position, and a hip and groin complex that is strong through range rather than only in the middle of it.
 
 **Why hips specifically:** the skating stride is a repeated, forceful hip abduction (pushing the leg away from the midline) followed by adduction (bringing it back), in a deeply flexed hip position, thousands of times a game. Nothing else in daily life does this. The evidence on what that does to hockey hips is covered in the next section, and it is sobering.
 
-**What it looks like:** hip flexor and adductor work through range, 90/90 hip rotations, deep squat holds, and — importantly — **strength at the end of your range, not just passive stretching into it.** Range you cannot control under load is not usable range.
+**What mobility work looks like:** hip flexor and adductor work through range, 90/90 hip rotations, deep squat holds, and — importantly — **strength at the end of your range, not just passive stretching into it.** Range you cannot control under load is not usable range.
 
 ---
 
@@ -227,7 +227,7 @@ The strongest evidence in hockey injury prevention is not about training at all 
 
 > **Rule-set flag that genuinely changes your risk:** body checking is legal in NHL play and in senior men's checking categories, banned in the younger youth age groups, and split in adult hockey between checking and non-check classifications — so ask your league which you are in. ⚠️ **Your age group is a floor, not an answer, because both North American books let somebody above you widen the ban.** USA Hockey Rule 604(a) bars body checking *"in the 12 & under youth age classifications and below, all Girls'/Women's age classifications and all non-check Adult classifications"*, and adds that *"[a] local governing body may prohibit body checking in any classification"*. Hockey Canada's Rule 7.3 applies *"only in divisions of U13 and below, in female hockey, and any other divisions approved by a Member of Hockey Canada"*.
 
-> **What it costs under USA Hockey:** a minor for the check (604(c)), and a major plus a game misconduct where it recklessly endangers an opponent (604(d)). For that same reckless check, 604(e) allows a match penalty too: *"A match penalty for reckless endangerment may also be assessed for body checking in a Competitive Contact category or non-check Adult classification."* **If the check is reckless, plan on the match:** Rule 602(a) says a match *"shall be assessed to any player or team official who recklessly endangers or attempts to injure any opposing player or team official."* A multi-game suspension is likely. The game misconduct also costs the next game: under Rule 404(b) the player *"shall also be suspended for the team's next game"*. Rule 604 is also on Rule 411(a)'s aggressive-infractions list, so a third major in a season **for any combination of the infractions on that list** adds a three-game suspension.
+> **What a banned check costs under USA Hockey:** a minor for the check (604(c)), and a major plus a game misconduct where it recklessly endangers an opponent (604(d)). For that same reckless check, 604(e) allows a match penalty too: *"A match penalty for reckless endangerment may also be assessed for body checking in a Competitive Contact category or non-check Adult classification."* **If the check is reckless, plan on the match:** Rule 602(a) says a match *"shall be assessed to any player or team official who recklessly endangers or attempts to injure any opposing player or team official."* A multi-game suspension is likely. The game misconduct also costs the next game: under Rule 404(b) the player *"shall also be suspended for the team's next game"*. Rule 604 is also on Rule 411(a)'s aggressive-infractions list, so a third major in a season **for any combination of the infractions on that list** adds a three-game suspension.
 
 > 🇬🇧 **Those age lines are North American and do not transfer to the UK — but the UK does have lines, and they are published.** Neither the IIHF book nor the In-House Rules sets an age at which body checking becomes legal; your competition's **Rules of Competition** do. For 2026-27 IHUK's make junior **U10 and U12 non-checking and U14, U16 and U19 checking**, **NIHL Division 1 and 2 checking**, and **WNIHL non-checking** at U16 and senior. ⚠️ **For the EIHL, BUIHA, NIHL National or Scottish domestic hockey outside that junior structure, nothing was read, so ask your league** ([UK and England Rules](../foundation/uk_rules.md); [Body Contact and Battles](../technique/body_contact_and_battles.md) §If you play in Britain quotes each regulation). In-House Rule 100.1 starts the women's **Adult** category at the player's **14th birthday**, but that is not when the IIHF women's rule starts to apply. IIHF Rule 101.1 is scoped to women's hockey, not adult women's hockey, and In-House Rule 101 *adds* the IIHF's automatic ejection on a major (201.1) to the non-adult women's categories rather than lifting 101.1 off them. **Rule 101.1 is yours at every age.**
 

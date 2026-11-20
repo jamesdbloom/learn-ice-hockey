@@ -342,7 +342,7 @@ The hybrid is a deliberate compromise: man coverage where being unmarked is fata
 
 **The rule of thumb:** **man-on-man below the dots, zone above them.** Some teams say "below the hash marks" or "below the top of the circles" — the line varies by a few feet, so learn your team's version. Above that line, you cover an area and pass players off. Below it, you take a body and you stay with it.
 
-How it plays out:
+How the hybrid plays out:
 
 - **The two defencemen and the low forward** (usually the centre) are effectively man-on-man on the three attacking forwards down low. One takes the puck carrier, one takes the net front, one takes the low support.
 - **The two wingers play zone up high** on the points — but with a man-on-man trigger: *if your point man crosses the line and comes down, they become yours and you go with them.* This is the direct fix for low zone collapse's biggest weakness.
@@ -351,7 +351,7 @@ How it plays out:
 
 **What it's good at:** it removes the walk-down problem and the unmarked-net-front problem while keeping the wingers high enough to break out. It also degrades gracefully — if the low man coverage falls apart in a scramble, you can revert to "protect the house" without changing anything up high.
 
-**What it concedes:** it's the hardest of the three to learn, because it requires everyone to agree on where the line is and to switch mode at the same instant. Two players on different sides of "are they below the dots yet?" is exactly the kind of disagreement that produces a goal against.
+**What the hybrid concedes:** it's the hardest of the three to learn, because it requires everyone to agree on where the line is and to switch mode at the same instant. Two players on different sides of "are they below the dots yet?" is exactly the kind of disagreement that produces a goal against.
 
 There are inverted versions — some teams play man on the puck carrier anywhere and zone away from the puck, which is arguably the true modern default. If your coach says "man on the puck, zone off the puck", that's this family.
 
@@ -379,7 +379,7 @@ Countered by: A good puck-moving team — one chaser cannot pressure them, so th
 - **In rec and beer league**, where nobody has practised rotations and the priority is that five people are not all chasing the same puck.
 - **Box+1 is not a penalty-kill box.** A penalty-kill box is four players with two high and two low (see [Special Teams](special_teams.md)). Box+1 is a five-player even-strength shape. Same word, different thing.
 
-**What it concedes:** almost everything on the perimeter. One chaser cannot pressure a good puck-moving team, so they will hold the puck as long as they like and pick their moment. It buys structure at the cost of ever getting the puck back.
+**What Box+1 concedes:** almost everything on the perimeter. One chaser cannot pressure a good puck-moving team, so they will hold the puck as long as they like and pick their moment. It buys structure at the cost of ever getting the puck back.
 
 ### The collapsing box (and the strong-side overload)
 
@@ -477,7 +477,7 @@ Action: Get one hard win — cycles end when somebody wins a puck battle, so sen
 Never: Send the second body into a back — a player digging on the wall can't see you; no book prices checking from behind at two minutes alone (on the head, or under the IIHF: plan on ejection anyway)
 ```
 
-**What it is:** attackers rotate the puck between the corner, the half-wall and behind the net, passing to a teammate who is arriving into the space they just left. It's a possession tactic designed to make you chase until someone is out of position.
+**What a cycle is:** attackers rotate the puck between the corner, the half-wall and behind the net, passing to a teammate who is arriving into the space they just left. It's a possession tactic designed to make you chase until someone is out of position.
 
 **Defending it:**
 - **Don't chase the puck around the boards.** The cycle wins when your five players are strung out following it. Let it come to you and defend the exit points, not the puck's current location.
@@ -500,7 +500,7 @@ Never: Lunge at the shot, lift a leg, turn sideways or turn your back on it — 
 Action: As the puck goes high, the low players watch it and box out the man — hold the inside, no lean, no push, under CARHA no body contact; never walk them off it — that can be called interference anywhere
 ```
 
-**What it is:** the puck goes down to the corner or behind the net, drags your coverage low, and then gets passed back *up* to the point or the high slot for a shot with your defenders' backs turned and traffic in front. Coaching material routinely calls it one of the most common ways modern teams score, and it exists precisely to punish low zone collapse. *(Public tracking splits five-on-five offence into rush and forecheck-and-cycle, and does not break out the low-to-high on its own — [Neutral Zone Systems](neutral_zone_systems.md) covers what it counts — so "one of the most common" is coaching consensus rather than a measured figure. Shot **location** is public and plentiful; [Shooting](../technique/shooting.md) covers it.)*
+**What the low-to-high play is:** the puck goes down to the corner or behind the net, drags your coverage low, and then gets passed back *up* to the point or the high slot for a shot with your defenders' backs turned and traffic in front. Coaching material routinely calls it one of the most common ways modern teams score, and it exists precisely to punish low zone collapse. *(Public tracking splits five-on-five offence into rush and forecheck-and-cycle, and does not break out the low-to-high on its own — [Neutral Zone Systems](neutral_zone_systems.md) covers what it counts — so "one of the most common" is coaching consensus rather than a measured figure. Shot **location** is public and plentiful; [Shooting](../technique/shooting.md) covers it.)*
 
 **Defending it:**
 - **The strong-side winger's discipline is the whole answer.** They stay high, in the lane, between that defenceman and the net. If they got sucked low, the low-to-high is free.
@@ -625,7 +625,7 @@ Technique: Stay on your feet as long as possible — a defender on the ice is ou
 Risk: Going down hands-and-head-first at the goalmouth puts them under four sets of sticks swinging at the same puck. Prefer the stick — a coaching caution, not a rule
 ```
 
-**What it is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play. **The rebound half of that is countable, and it is substantial:** **11.4%** of NHL goals come within three seconds of a previous shot on goal by the same team, and **19.7%** within ten. Those figures are derived from the NHL's public play-by-play feed over 400 games of 2024-25 rather than published statistics ([Offensive Zone Play](offensive_zone_play.md) section 10 carries the source). No public tracking breaks out the scramble as its own play, so "more than any highlight play" stays a coaching comparison.
+**What the scramble is:** a rebound, a loose puck at the top of the crease, four bodies, two seconds. Coaches will tell you more goals come from here than from any highlight play. **The rebound half of that is countable, and it is substantial:** **11.4%** of NHL goals come within three seconds of a previous shot on goal by the same team, and **19.7%** within ten. Those figures are derived from the NHL's public play-by-play feed over 400 games of 2024-25 rather than published statistics ([Offensive Zone Play](offensive_zone_play.md) section 10 carries the source). No public tracking breaks out the scramble as its own play, so "more than any highlight play" stays a coaching comparison.
 
 **Defending it:**
 - **Body first, puck second.** Take the most dangerous stick away with your own before you look for the puck: as the puck arrives, lift it up, low on the shaft, well below the bottom hand, stop at their stick and let it go. Or press its blade to the ice as the shot comes, and let go once the shot is through. **Never hook it, keep it pinned or grab it with your hand** — a grab is at least a holding minor in every book. A player with a free stick at the goalmouth will score before you get there. **Whatever contact happens, keep their skates on the ice** — a player lifted off their edges cannot choose what meets the post first. What [these scramble fouls](#in-the-scramble) cost comes later, in What it costs.

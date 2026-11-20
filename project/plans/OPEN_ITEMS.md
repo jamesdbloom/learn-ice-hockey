@@ -13,15 +13,17 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W518 shipped with record `w518_unit_opening_pronouns_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W519 shipped with record `w519_label_openers_and_rvh_attribution_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W518 (20 Nov; rows 1 and 5 closed in W519 by the tool extension):**
+- **From W519 (20 Nov):**
+  - **(2) Optional: team_play_and_culture :292's heading "A game misconduct in the handshake line…".** CARHA 32(c)'s window is "the last 10 minutes of the game (regular playing time including overtime)", which may not reach the line after the buzzer. The body states 32(c) accurately and the heading errs harsh. One clause would settle it.
+  - **(1) Label-then-restatement stutter.** "Why the slot matters: the slot is…" repeats the subject in about 11 rink_map entries (:218, :363, :397, :404, :416, :426, :432, :440, :455, :471, :483); also rules_primer :523 and :853, and conditioning :119. The label now names the subject, so the body can go back to "it is…". Readability only.
+  - **(3) rules_primer label consistency.** Gerund and noun labels are mixed ("What slashing costs" beside "What a trip costs" and "What a high stick costs"). :831 "What goaltender interference costs" also prices charging, and sits near-synonymous with :853 "What contact with a goalie costs".
+- **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519):**
   - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
-  - **(4) goaltender :301 vs :293 (MAJOR, pre-existing).** "RVH encourages passivity. Blomquist and Henriksson identified this as one of the three problems…" contradicts :293's list of their three VH problems (staying on the post, rebound control, getting off the post), none of which is passivity. Send to source-verifier; do not delete the bullet.
   - **(6) risk_management :861** omits 608(c)'s vulnerable-or-defenceless condition (pre-existing). mental_game :45 and KT1 "anxiety or low mood" may narrow §13's warning signs; optional safety read.
   - **(7) Carried from W517(5)/(8), not closed in W518.** defender facts :411/:495 read "name none" aloud ("name no division" needs 7 characters; only 5 are free). faceoffs facts :158 "one aimed out" sits nearest "a draw" (low risk).
-  - **(8) From the W518 commit gate.** defender :96 "putting the puck out deliberately is two minutes from anywhere" sits under "Off the glass and out", where "out" means out of the zone; use "shooting the puck out of play deliberately". team_play_and_culture :292 "What you do in the line": "the line" can be heard as a forward line, and the rules cited apply to any game misconduct.
   - **(3) Pronouns later in the opening words.** The tool catches only the first word (e.g. zone_entries :1111 "Key: Very hard to beat cleanly, and it keeps…"). Run `--loose` on the facts layer and triage.
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518):**
   - **(2) "Head hit" for USA Hockey 620(b).** rules_primer :31/:1229 use it, but 620(b) also reaches the face and neck. The scope was unchanged by W517 but is narrow everywhere it appears.

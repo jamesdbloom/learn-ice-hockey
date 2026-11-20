@@ -218,9 +218,9 @@ Action: Whoever is lowest provides it — usually a defenceman or the centre in 
 Action: Call for it; the verbal cue in most teams' vocabulary is "back"
 ```
 
-- **What it offers:** a safe reset. The pass goes backwards into space the opposition has left, so it is the least contested pass on the ice.
-- **Why it is non-negotiable:** it is still there when the other two angles are covered. Without it, the only answer to good pressure is dumping the puck away — a turnover you chose.
-- **Who provides it:** whoever is lowest. In your own end that is usually a defenceman or the centre; in the offensive zone, often the player who just came off the wall. Call **"back"** — see [On-Ice Communication](../foundation/on_ice_communication.md).
+- **What the outlet offers:** a safe reset. The pass goes backwards into space the opposition has left, so it is the least contested pass on the ice.
+- **Why the outlet is non-negotiable:** it is still there when the other two angles are covered. Without it, the only answer to good pressure is dumping the puck away — a turnover you chose.
+- **Who provides the outlet:** whoever is lowest. In your own end that is usually a defenceman or the centre; in the offensive zone, often the player who just came off the wall. Call **"back"** — see [On-Ice Communication](../foundation/on_ice_communication.md).
 
 ### Support level with the puck — the lateral option
 
@@ -234,7 +234,7 @@ Never: Pass across the middle in your own defensive zone — an interception the
 Action: In your own end, take the lateral option behind your own net, not through the slot
 ```
 
-- **What it offers:** a change of side. Most defences pressure strong-side, on the half of the ice the puck is on. A lateral pass moves it to the half where their coverage is thinnest and makes every defender reset.
+- **What the lateral option offers:** a change of side. Most defences pressure strong-side, on the half of the ice the puck is on. A lateral pass moves it to the half where their coverage is thinnest and makes every defender reset.
 - **The catch:** a lateral pass crosses in front of people. In the offensive and neutral zones that is a normal, valuable play. **In your own zone, never pass across the middle.** An interception in the slot is a point-blank chance for an opponent already facing your net. In your own end the lateral option goes *behind your net*.
 
 ### Support ahead of the puck — the attacking option
@@ -250,7 +250,7 @@ Rule: A raised trail skate is onside under NHL, IIHF and PWHL rules, but USA Hoc
 Action: Time your entry rather than parking in the zone
 ```
 
-- **What it offers:** territory. It is the only one of the three that gains ground.
+- **What the attacking option offers:** territory. It is the only one of the three that gains ground.
 - **The cost:** it is the easiest to intercept, and if it fails you are behind the play.
 - **The offside limit:** time your entry rather than parking in the zone. **Offside is both skates completely over the blue line before the puck completely crosses it.** Keep one skate on or behind the line, **with the blade on the ice**: a raised trail skate counts as onside under NHL, IIHF and PWHL rules, but USA Hockey and Hockey Canada require skate *contact*.
 
@@ -296,7 +296,7 @@ Action: Before you go below the puck, know who is above it
 Key: F1, F2 and F3 are roles defined by order of arrival, not fixed people
 ```
 
-Who it is depends on the system:
+Who the safety is depends on the system:
 
 - Under the **standard system** — a low zone collapse in your own end and a 2-1-2 forecheck — both defencemen hold the points in the offensive zone unless one deliberately activates, and the third forward supports high. **F1, F2 and F3 are roles by order of arrival, not fixed people.**
 - Under a **1-2-2 forecheck**, the deepest forward is alone below the puck and two forwards sit above as a layered wall.
@@ -453,7 +453,7 @@ The weak-side winger, higher and wider than everyone, adds the width that stops 
 
 **The goalie is part of your support.** "Man on", "time", "reverse" — the calls in [On-Ice Communication](../foundation/on_ice_communication.md) — tell the carrier which option is really there. Under USA Hockey, Hockey Canada and CARHA rules your goalie can also be a fourth breakout option behind the net, but not one who sits on the puck for you. Under NHL and IIHF rules they may play it behind the goal line only inside the trapezoid.
 
-**What it costs.**
+**What your own-end support can cost.**
 
 - **Icing (NHL Rule 81):** play stops, the faceoff comes back to your end, and your line may not change before it. The only exceptions in Rule 81.4 are a substitution *"to replace a goalkeeper who had been substituted for an extra attacker, to replace an injured player, or when a penalty has been assessed which affects the on-ice strength of either team"* — so a hurt teammate can come off, a tired one cannot. Rule 87.1 bars a timeout too. The IIHF's 81.4 adds *"a Player with a broken skate"*, which its own Rule 82.1 does not carry; do not plan a change around it. CARHA bars no change after an icing, but icing it again and again on purpose to force faceoffs can be called as delaying the game there: a bench minor (Rule 55(a), Note 2).
 - **The shorthanded exemption is not unconditional.** A shorthanded team may ice the puck without a whistle, but NHL Rule 81.6 and PWHL 83.6 withdraw that once a *major* has **expired** with nobody on the penalty box to come out, until the next stoppage. USA Hockey grants it only from Youth 15-Only, Girls 16U, High School and Adult upward (Rule 624(b)(1)), so below those a shorthanded team can be called for icing. [Special Teams](../systems/special_teams.md) sets out both, with the reason Rule 20.3 gives for the first.

@@ -222,7 +222,7 @@ There is one more cost people miss: even when it *works*, a cross-ice pass in yo
 ```facts
 Never: Make a cross-ice pass in your own defensive zone — it crosses every forechecking stick and spends the longest of any pass in the air
 Risk: If the cross-ice pass is picked off, it is picked off by someone whose momentum already carries them toward your net
-Risk: Even when it works it usually puts your teammate under immediate pressure facing the boards
+Risk: Even when the cross-ice pass works it usually puts your teammate under immediate pressure facing the boards
 Action: Move the puck north, or move it behind the net
 Action: If the only outlet is on the far side, go D-to-D behind the goal line and then north — two low-risk passes beat one high-risk one
 Convention: Nothing in the rulebook touches the cross-ice pass in your own zone — some teams accept it above the tops of the circles, almost nobody below them
@@ -365,7 +365,7 @@ Action: Read your own league's book — under CARHA's rec rules a skater's puck-
 
 **What to do instead.** Off the glass and out — hard, low, and along the boards so it stays in. The difference between a clear and a penalty is often a few degrees of stick blade. If you are panicking, aim lower than feels right.
 
-**What it costs.**
+**What a puck over the glass costs.**
 
 **This is an actual rule, not a convention.** NHL **Rule 63.2(iii)** imposes a minor penalty on any player who "shoots or bats (using his hand or his stick) the puck directly (non-deflected) out of the playing surface from his defending zone, except where there is no glass." **IIHF Rule 63.2(III)** — a British reader's rule, not a North American footnote — and **PWHL 65.2(iii)** say the same. Four details matter on the ice:
 

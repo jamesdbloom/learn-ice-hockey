@@ -191,7 +191,7 @@ Almost nobody practises the backhand, and almost every goalie finds it harder to
 
 **Why most players neglect it:** you grow up taking thousands of forehand reps and a few dozen backhands, so the backhand feels bad, so you avoid it, so it stays bad. It is a pure volume problem with a pure volume fix.
 
-**Where it wins:** in tight around the net, on breakaways, on rebounds that land on your off side, and any time you are in a compromised body position and turning to your forehand would cost you the chance. In traffic in front of the net, you will get more backhand looks than forehand ones — take them.
+**Where the backhand wins:** in tight around the net, on breakaways, on rebounds that land on your off side, and any time you are in a compromised body position and turning to your forehand would cost you the chance. In traffic in front of the net, you will get more backhand looks than forehand ones — take them.
 
 ---
 
@@ -209,7 +209,7 @@ Never: One-time it with a stick or a shoulder inside your swing. Take the pass a
 Convention: Whether you are the one-timer option is a system choice — a 1-3-1 is built around it, an overload usually is not
 Rule: A one-timer is a wind-up taken in traffic, and the follow-through carve-out is the NHL's, the IIHF's and the PWHL's alone (60.1; PWHL 61.1) — USA Hockey's book writes none, nor Hockey Canada's, nor CARHA's
 Rule: CARHA Rule 62(b), CARHA-affiliated adult leagues only, is a major for contact above an opponent's shoulders whether or not it injures, accidental or not, plus a game misconduct by its Note if intentional or injuring
-Rule: Even where it is written, the carve-out stops at a wild swing — NHL Rule 60.1: "A wild swing at a bouncing puck would not be considered a normal windup or follow through", and IIHF Rule 60.1 is that sentence word for word in its own punctuation
+Rule: Even where the follow-through carve-out is written, it stops at a wild swing — NHL Rule 60.1: "A wild swing at a bouncing puck would not be considered a normal windup or follow through", and IIHF Rule 60.1 is that sentence word for word in its own punctuation
 Rule: The IIHF's top in-game tier is not the NHL's — IIHF Rule 60.4 lets the Referee assess a major plus an automatic game misconduct for a high stick that recklessly endangers, no injury needed, where NHL Rule 60.4 is a match penalty only for attempted or deliberate injury
 Rule: The IIHF writes no match penalty for anything, so a major plus the automatic game misconduct is its ceiling inside the game only — 60.7 allows Supplementary Discipline above it at the Proper Authorities' discretion, and 20.7 requires the Referee to report every major to them (both editions)
 ```
@@ -269,7 +269,7 @@ A tip (or deflection) is redirecting a shot from a teammate as it passes you, us
    - **A stick that reaches a person is a different rule and a different price.** ⚠️ **None of the books caps it at a minor**, and CARHA 62(b) makes contact above the shoulders a major, accidental or not, and under USA Hockey a reckless high stick is a mandatory major and game misconduct (621(b)) — what [a high stick](#high-sticks-on-the-wind-up-and-follow-through) costs in each book comes later, in What it costs. You are tipping in a crowd, so bring the blade down after the tip as well as before it. ⚠️ **Carrying the stick high can be a penalty with no contact at all:** a minor under USA Hockey (Casebook, Rule 621 Situation 2), and under Hockey Canada play it as though the carry alone can be penalised.
 5. **Watch the puck all the way in**, which is hard, because a defenceman is usually trying to move you.
 
-**Why it works:** a goalie tracks the puck and sets their body for a known trajectory. A deflection changes the trajectory a few feet in front of them, after they have committed. There is no time to re-read it. This is the principle that runs through this entire document — **changing the puck's direction late is worth far more than adding speed to it.** A modest shot tipped six inches sideways in front of the goalie beats a much harder one they have read from the blue line. (No figures are attached to that claim on purpose. You will see comparisons like "a 60 mph tipped shot beats a 95 mph clean one" quoted around the rink; they are illustrations somebody made up, not measurements of anything.)
+**Why a tip works:** a goalie tracks the puck and sets their body for a known trajectory. A deflection changes the trajectory a few feet in front of them, after they have committed. There is no time to re-read it. This is the principle that runs through this entire document — **changing the puck's direction late is worth far more than adding speed to it.** A modest shot tipped six inches sideways in front of the goalie beats a much harder one they have read from the blue line. (No figures are attached to that claim on purpose. You will see comparisons like "a 60 mph tipped shot beats a 95 mph clean one" quoted around the rink; they are illustrations somebody made up, not measurements of anything.)
 
 #### Contact with the goalie at the net front
 
@@ -889,7 +889,7 @@ Rule 79(a): a minor, and *"If an injury to an opponent results, a Major penalty 
 
 ```facts
 Rule: The windup and follow-through carve-out is NHL, IIHF and PWHL only (60.1; PWHL 61.1) — USA Hockey writes none, even in its Casebook, and in junior and senior hockey Hockey Canada Interpretation 1 to Rule 9.5(a) makes a shooting follow-through above the shoulder a minor where no injury results
-Rule: Even where it is written the carve-out has a limit — NHL Rule 60.1: "A wild swing at a bouncing puck would not be considered a normal windup or follow through", and IIHF 60.1 and PWHL 61.1 carry that sentence in their own punctuation
+Rule: Even where the follow-through carve-out is written it has a limit — NHL Rule 60.1: "A wild swing at a bouncing puck would not be considered a normal windup or follow through", and IIHF 60.1 and PWHL 61.1 carry that sentence in their own punctuation
 Rule: Hockey Canada 9.5 caps its own tiers at a double minor, not your exposure — 9.5(b) and 9.5(c) send a high stick warranting a major or match to 7.7 Head Contact in Junior and Senior; in minor and female hockey 7.6 takes over, and accidental contact that injures must draw a major and game misconduct
 Rule: In Junior and Senior, Hockey Canada Interpretation 2 to 9.5(a) mandates a major and game misconduct for an aggressive, reckless, negligent or forceful stick that injures the head or neck (its examples are other stick fouls, not shots), and bars the double minor for anything that warrants that major
 Rule: A raised stick can be penalised with no contact at all under USA Hockey — Casebook Rule 621 Situation 2 against 621(a), the minor. IIHF 2025/26 Rule 60.1 defines a high stick as one "carried above" the shoulders, though its 60.2 minor needs contact

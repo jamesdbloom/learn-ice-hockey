@@ -808,7 +808,7 @@ If you must put it behind the net, put it there **hard** — the goalie can play
 
 So **the corners are legally out of bounds for the goalie, and the area directly behind the net is not.** Take the painted dimensions from NHL Rule 1.8 — eight feet from each post at the goal line, eleven at the boards, 22 feet across widening to 28. Rule 27.8's "six feet from either goal post" is stale wording from before the 2014-15 widening. The corners are outside it either way.
 
-**Where it applies:** the NHL and the IIHF (IIHF Rule 27.7: 6.80 m along the goal line widening to 8.60 m at the boards). The NHL's commonly given 2005-06 start date is in no rulebook held here, so treat it as received rather than checked. The KHL is said to have one too, unverified here: no KHL rulebook was available.
+**Where the trapezoid applies:** the NHL and the IIHF (IIHF Rule 27.7: 6.80 m along the goal line widening to 8.60 m at the boards). The NHL's commonly given 2005-06 start date is in no rulebook held here, so treat it as received rather than checked. The KHL is said to have one too, unverified here: no KHL rulebook was available.
 
 **In Britain, treat it as unsettled.** The IIHF book is in force and the In-House Rules do not amend Rule 27. But England Ice Hockey's own *Rules & Regulations* 22.3, a 2024-25 edition, say the restricted area is *"not currently enforced to allow ice rinks the necessary time to make the changes to implement this rule"*. Whether that reaches Scotland and Northern Ireland is unsettled. So in any British competition, plan as though their goalie **may** retrieve the puck, ask your league, and look behind the net to see whether the lines are painted.
 
