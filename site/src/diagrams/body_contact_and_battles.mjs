@@ -637,7 +637,7 @@ const cornerEscapeRoutes = {
     'crease. An opposition forward stands in the corner at the top of the picture, about seven ' +
     'feet off the side boards, with the puck drawn between them and the wall. Our defenceman is out ' +
     'toward the top of the faceoff circle on the same side; the defenceman’s route curves out toward ' +
-    'the side boards and then turns to run toward the end boards, passing the carrier on the side nearer the net, ending in two short bars rather than an arrowhead, about ' +
+    'the side boards and then turns to run toward the end boards, heading past the carrier’s net side, ending in two short bars rather than an arrowhead, about ' +
     'seven feet short of the carrier and on the side of the carrier nearer the middle of the ice. Two ' +
     'skate-and-stickhandle waves leave the carrier. One runs along the side boards away from the ' +
     'goal, finishing with an arrowhead about twenty feet up the wall. The other curves out toward ' +

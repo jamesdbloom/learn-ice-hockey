@@ -105,8 +105,11 @@ const containment122 = {
     // diagonally from behind, so the back is now named ("stick first, and never into the receiver's body or their back" -- one
     // negation, not "not X, and never Y", which check_caption_negations flagged); and the owner host says the step up
     // is not a hit, so the level sentence now reads "Whether a hit may follow once they have the puck".
+    // W547 (20 Nov 2026): "the receiver's body or their back" -> "the receiver's body or back". The
+    // suggested "their body or back as you arrive" was NOT used: the caption never names the receiver
+    // before this, so "their" would have no antecedent (or read as F2's), and "you" breaks F2's third person.
     'F2 steps up to meet the puck on the wall, stick first, and never into the receiver’s body ' +
-    'or their back. Whether a hit may follow once they have the puck depends on whether your game ' +
+    'or back. Whether a hit may follow once they have the puck depends on whether your game ' +
     'allows body checking. ' +
     'Every neutral-zone structure is a ' +
     'coaching choice, not a law — find out which one your team plays.',

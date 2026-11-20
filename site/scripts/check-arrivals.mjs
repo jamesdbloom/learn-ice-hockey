@@ -40,6 +40,15 @@
  *      diagram + target + reason would make the hard/advisory split enforceable rather than
  *      merely reported.
  *   5. It says nothing about whether a route is tactically right.
+ *   6. Form (p), the pressure-route test below, is ADVISORY ONLY, for the reason in note 4:
+ *      with no baseline, a hard rule would fail the build on routes nobody has triaged. It
+ *      tests the terminal tangent's miss on the anchor, nothing else — not the target's
+ *      facing (a glyph has none), not whether he is pinned to the boards, and not whether
+ *      the drawn curve passes through him before the tip. Its puck exemption trusts
+ *      `spec.puck`, which is ONE point per diagram; a diagram with the puck drawn
+ *      elsewhere, or none, cannot earn the exemption — and it cannot see a `spec.puck`
+ *      placed somewhere other than the point the caption's aim ("stick on the puck")
+ *      refers to, so an exemption is only as true as that placement.
  *
  * Usage
  * Wired into `npm run build` BEFORE `build:diagrams` — deliberately: this reads the SPECS
@@ -69,6 +78,45 @@ const WARN_ONLY = process.argv.includes('--warn');
  */
 const ARROW_KINDS = new Set(['skate', 'carry', 'backxover']);
 
+/**
+ * FORM (p) — PRESSURE ROUTE AIMS AT A PLAYER. Advisory.
+ *
+ * ⚠️ "Safe by construction" above was about the END MARK, and it is true of the end mark:
+ * two bars read as arriving and stopping, so (b) cannot apply. It is NOT true of the line.
+ * W545-W547 found five pressure routes whose terminal tangent ran through, or within
+ * ARRIVAL.glyph of, the player they pressure — `pk-wedge-plus-1` (1.53 ft),
+ * `corner-escape-routes` (0.6, "aimed through A1's back into the puck"),
+ * `practice-small-area-in-one-zone` (0.13), `scan-before-a-wall-reception` (0.42) and the
+ * two pinch diagrams (2.00) — each measured by hand because this file skipped the kind.
+ *
+ * The rule those waves applied (their "rule 1"): a pressure route whose tip finishes within
+ * ARRIVAL.noArrow of an opposing player must miss that player's anchor by MORE than
+ * ARRIVAL.glyph along its terminal tangent. Same tangent as forms (a)/(b) — the curve
+ * actually drawn, `to - control` — and the same ownership inference. "Miss" is the ray's
+ * closest approach: the perpendicular distance when the player is ahead of the tip, and the
+ * tip distance itself when he is not (a ray pointing away never gets closer).
+ *
+ * ⚠️ UNLIKE (a), GOALTENDERS ARE IN. (a) excludes him because every offensive route points
+ * at the net; a pressure route ending within 9 ft of a goaltender and aimed at him has no
+ * such excuse, and he is the one target every book protects. None does so today.
+ *
+ * THE PUCK EXEMPTION — a stick-on-puck arrival. A route whose tangent passes within
+ * PUCK_AIM ft of `spec.puck`, with the puck AHEAD of the tip and more than ARRIVAL.glyph
+ * nearer than the player along the tangent (clear of his ink, not merely nearer), is aiming at the puck in front of him, which is what the corrected
+ * captions now teach ("stick on the puck"). It is reported as EXEMPT, never hidden.
+ * ⚠️ The near-side condition is the safety half: a puck on the FAR side of the player is
+ * corner-escape-routes' original defect — the line through his back to reach the puck — and
+ * must not be exempt. What the exemption still cannot see: a puck dead in front of a player
+ * who is facing the boards. A glyph has no facing, so a level caveat in the caption remains
+ * the only defence there.
+ *
+ * To promote it to a build failure, change PRESSURE_LEVEL to 'FAIL' — after an allowlist
+ * exists (note 4), or every currently-reported route has been triaged.
+ */
+const PRESSURE_KIND = 'pressure';
+const PRESSURE_LEVEL = 'WARN';
+const PUCK_AIM = 1.0;
+
 /** Anchor tolerance for deciding which player a route belongs to. */
 const OWNER_TOLERANCE = ARRIVAL.glyph;
 
@@ -86,9 +134,10 @@ for (const d of DIAGRAMS) {
     }));
   if (!players.length) continue;
 
-  for (const r of d.routes ?? []) {
+  for (const [ri, r] of (d.routes ?? []).entries()) {
     const kind = r.kind ?? 'skate';
-    if (!ARROW_KINDS.has(kind)) continue;
+    const isPressure = kind === PRESSURE_KIND;
+    if (!ARROW_KINDS.has(kind) && !isPressure) continue;
 
     const from = loc(r.from), to = loc(r.to);
 
@@ -149,6 +198,33 @@ for (const d of DIAGRAMS) {
     const tlen = Math.hypot(tx, ty) || 1;
     const ux = tx / tlen, uy = ty / tlen;
 
+    if (isPressure) {
+      // ---- (p) ADVISORY: a pressure route's tangent must miss its target. ----
+      const pk = d.puck ? loc(d.puck) : null;
+      const pkAlong = pk ? (pk.x - to.x) * ux + (pk.y - to.y) * uy : null;
+      const pkMiss = pk ? Math.abs((pk.x - to.x) * -uy + (pk.y - to.y) * ux) : null;
+      for (const o of opponents) {
+        const wx = o.x - to.x, wy = o.y - to.y;
+        const tipDist = Math.hypot(wx, wy);
+        if (tipDist >= ARRIVAL.noArrow) continue;
+        const along = wx * ux + wy * uy;
+        const miss = along > 0 ? Math.abs(wx * -uy + wy * ux) : tipDist;
+        if (miss > ARRIVAL.glyph) continue;
+        const angle = Math.acos(Math.max(-1, Math.min(1, along / (tipDist || 1)))) * 180 / Math.PI;
+        const exempt = pk !== null && pkMiss < PUCK_AIM && pkAlong >= 0
+          // Clear of the player, not merely nearer: a puck inside his ink must not exempt
+          // a line aimed at his body.
+          && along - pkAlong > ARRIVAL.glyph;
+        findings.push({
+          level: exempt ? 'OK' : PRESSURE_LEVEL, rule: exempt ? 'p-x' : 'p',
+          diagram: d.id, kind, opponent: o.id, goalie: o.goalie, ri, to,
+          dist: tipDist, miss, angle, pkMiss, pkAlong,
+          side: o.team, ownerSide: owner.team, ownerId: owner.id,
+        });
+      }
+      continue;
+    }
+
     for (const o of opponents) {
       // ---- (b) THE HARD RULE: an arrowhead may not finish on an opponent. ----
       const tipDist = Math.hypot(o.x - to.x, o.y - to.y);
@@ -206,7 +282,7 @@ for (const d of DIAGRAMS) {
   }
 }
 
-const order = { FAIL: 0, WARN: 1 };
+const order = { FAIL: 0, WARN: 1, OK: 2 };
 findings.sort((x, y) => order[x.level] - order[y.level] || x.diagram.localeCompare(y.diagram));
 
 // Name the target from the READER's point of view, not the route owner's. 22 of the
@@ -218,8 +294,15 @@ findings.sort((x, y) => order[x.level] - order[y.level] || x.diagram.localeCompa
 const who = (f) => (f.side === 'opp' ? 'the opposition' : "the reader's own");
 
 for (const f of findings) {
-  const target = f.rule === 'b-G' ? `${who(f)} GOALTENDER` : `${who(f)} ${f.opponent}`;
-  const what = f.rule === 'a'
+  const target = f.rule === 'b-G' || f.goalie ? `${who(f)} GOALTENDER` : `${who(f)} ${f.opponent}`;
+  const what = f.rule === 'p' || f.rule === 'p-x'
+    ? `pressure route aims at a player (route ${f.ri}, tip ${f.to.x.toFixed(1)},${f.to.y.toFixed(1)}): `
+      + `${target}, d ${f.dist.toFixed(2)} ft, `
+      + `miss ${f.miss.toFixed(2)} ft, ${f.angle.toFixed(1)}° off the bearing`
+      + (f.rule === 'p-x'
+        ? ` — EXEMPT, stick-on-puck (puck ${f.pkAlong.toFixed(2)} ft ahead, miss ${f.pkMiss.toFixed(2)} ft)`
+        : (f.pkMiss !== null ? ` (puck miss ${f.pkMiss.toFixed(2)} ft, ${f.pkAlong.toFixed(2)} ft along)` : ' (no puck drawn)'))
+    : f.rule === 'a'
     ? `terminal tangent passes ${f.dist.toFixed(2)} ft from ${target}, `
       + `${f.beyond.toFixed(1)} ft beyond the tip`
     : `arrowhead finishes ${f.dist.toFixed(2)} ft from ${target}`;
@@ -237,14 +320,19 @@ for (const u of unowned) {
 }
 
 const fails = findings.filter((f) => f.level === 'FAIL');
+const exempt = findings.filter((f) => f.level === 'OK');
+const advisory = findings.length - fails.length - exempt.length;
 const routes = DIAGRAMS.reduce((a, d) => a + (d.routes?.length ?? 0), 0);
 const arrows = DIAGRAMS.reduce(
   (a, d) => a + (d.routes ?? []).filter((r) => ARROW_KINDS.has(r.kind ?? 'skate')).length, 0);
+const pressures = DIAGRAMS.reduce(
+  (a, d) => a + (d.routes ?? []).filter((r) => r.kind === PRESSURE_KIND).length, 0);
 
 console.log(
   `\ncheck-arrivals: ${DIAGRAMS.length} diagrams · ${routes} routes `
-  + `(${arrows} skater-owned and arrow-ended, the only ones in scope) · `
-  + `${fails.length} hard, ${findings.length - fails.length} advisory`
+  + `(${arrows} skater-owned and arrow-ended, ${pressures} pressure; the only ones in scope) · `
+  + `${fails.length} hard, ${advisory} advisory`
+  + (exempt.length ? `, ${exempt.length} exempt (stick-on-puck)` : '')
   + (unowned.length ? `, ${unowned.length} unattributable and NOT checked` : ''));
 
 if (fails.length && !WARN_ONLY) {

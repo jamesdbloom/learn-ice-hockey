@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W547 shipped with record `w547_pressure_routes_and_two_summaries_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W548 shipped with record `w548_check_arrivals_pressure_routes_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -317,11 +317,7 @@ These questions sit inside the rows above and need the owner's call before anyon
 
 ## Diagrams and site
 
-- **W547 minors:**
-  - corner-escape-routes alt text says "passing the carrier on the side nearer the net", but the route stops 7 ft short. Use "heading past the carrier's net side".
-  - The pinch-centre puck sits on A1's far side from the bars (138° off), so "stick on the puck" means reaching past the carrier. Consider moving the puck to A1's up-wall side; grep PUCK's users first.
-  - Optional: nz-1-2-2 "never into the receiver's body or their back" → "never into their body or back as you arrive".
-- **Pressure routes, rule 1 (from W547):** check-arrivals ignores `pressure` routes. The W547 diagram-reviewer found three more rule-1 failures (a line through or within 2.9 ft of the target) among only 8 diagrams. Extend check-arrivals to cover pressure routes, between waves (scripts/), or census all 27 by hand. Also file: corner-escape-routes' "'takes the middle away' crosses a painted circle" (check_label_paint) was there before W547; the label is auto-placed.
+- **Pressure routes, rule 1: triage the 9 [p] advisories (from W548).** check-arrivals now tests pressure routes (advisory form (p), puck exemption [p-x]). It found nine aimed at a player: defender-holding-the-line, deny-the-reception, faceoff-dzone-clean-loss ×2, pk-nz-1-1-2, pk-nz-1-3, pk-wedge-plus-1 (miss 1.53; the W545 caption repair left the route), the-call-and-who-can-see-it, the-last-player-back. Pressure aimed at a player may be intended, so read each picture and caption, then redraw or accept. Promote PRESSURE_LEVEL to FAIL once the list is triaged. Pre-existing and noted here: corner-escape-routes' "'takes the middle away'" label crosses a painted circle (auto-placed).
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.
 - **Owner decisions of 14 Nov, what is left (records reviews/w334_owner_decisions_c_d_f_2026-11-14.md, w335…, w337…):** (a) Decision F: the owner has not said whether it also reaches the other Key focus and Overview units that carry a per-book price list. These are rules_primer Overview (discipline after an ejection, and the IIHF vs NHL 20.4 lists), body_contact_and_battles Overview ("A hit from behind has no bare minor in any book here…"), uk_rules Overview and special_teams Overview. (b) A W334 safety advisory says body_contact_and_battles Key focus has no "never contact the head" (it lives in the Overview). Adding it is a quality-bar call for the owner. (c) The owner has not recorded acceptance of decision D, which shipped as a multi-sentence per-book passage ("Keep your skates off a player who is down…") rather than one sentence.

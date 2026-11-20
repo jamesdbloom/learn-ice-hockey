@@ -1712,6 +1712,11 @@ function ticks(f, t, bow = 0) {
  *   ARROW-ENDED, not every route. A `pressure` route aimed at its target fails (a) by
  *   construction — that is what pressure IS — and terminating in bars is exactly what
  *   makes it safe, so applying either form to a bar-ended route would be unmeetable.
+ *   ⚠️ The END MARK is safe; the LINE is not. check-arrivals now tests `pressure` routes
+ *   for rule 1 as advisory form (p) — tip within ARRIVAL.noArrow of an opposing player,
+ *   tangent miss <= ARRIVAL.glyph — exempting a stick-on-puck arrival (tangent within
+ *   1 ft of `spec.puck`, puck ahead of the tip and nearer than the player). Promotion to
+ *   a build failure is `PRESSURE_LEVEL` in check-arrivals.mjs.
  *
  * ⚠️ WHAT THESE NUMBERS ARE NOT. They are drawing conventions derived from the renderer's
  * own glyph sizes — NOT rules of hockey. 9 ft is 2.9 glyph + 3.15 arrowhead + 2.9 glyph,

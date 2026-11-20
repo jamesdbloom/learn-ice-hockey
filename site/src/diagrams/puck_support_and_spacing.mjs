@@ -903,15 +903,20 @@ const layerNotConverge = {
     // it sits LAST so captionNodes' glyph-to-end amber covers only that instruction. The level
     // sentence precedes it as plain text.
     'Whether the first player’s arrival may end in a hit depends on whether your game allows body ' +
-    'checking. ⚠️ Arrive on the carrier’s inside, stick on the puck, and never into the back of a player facing the boards.',
+    'checking. ⚠️ Arrive on the carrier’s inside, stick on the ice inside them, and never into the back of a player facing the boards.',
     // Safety re-read (20 Nov 2026): "stick on the puck" ADDED as the aim point, so ruling out a
     // hit does not leave a pin or bump open (USA Hockey 604 Note 1, Hockey Canada 7.3(a), CARHA 49(a)).
+    // W547 follow-up (20 Nov 2026): "stick on the puck" CUT. The puck is drawn on the far side of the
+    // carrier from F1's bars (~170 deg apart), so it told the reader to reach past a player shielding
+    // the puck on the boards, beside "never into the back of a player facing the boards".
+    // Aim point RESTORED as "stick on the ice inside them" -- where F1's route is drawn to finish -- so
+    // the pin/bump gap the safety re-read closed stays closed.
 
   // W473: the corner is named from the picture, not as 'right'. Attacking to the right, the top
   // corner (corner:right, +y) is the forecheckers' LEFT, so 'right-hand corner' was inverted.
   describe:
     'The attacking half of the rink, the opposition net at the right. An opposition defenceman has the ' +
-    'puck in the top corner. One own forward closes from up-ice and inside, with a checking ' +
+    'puck in the top corner. One own forward closes from up-ice and inside, with a ' +
     'pressure route that finishes short of the carrier and aimed at the ice inside them rather than at ' +
     'the puck. A second own forward stands about fifteen feet behind and to the boards side of the ' +
     'first, up the wall and a stick’s reach off the lane to the opposition winger who waits higher up ' +

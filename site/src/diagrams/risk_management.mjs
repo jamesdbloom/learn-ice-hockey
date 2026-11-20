@@ -496,7 +496,8 @@ const PINCH_TO = { at: 'boards:right', dx: -19, dy: -5.5 };     // (50, 37)
 //   bow -2: control (38.62, 26.85), tangent (11.38, 10.15) unit (0.746, 0.666), miss 4.21 ft; the ray
 //   heads for the wall up-ice of A1 (it reaches y 42.5 at x ~ 56), which is what "contain on the wall"
 //   says. The curve now bulges toward the middle, not the boards; it rises monotonically to the tip,
-//   so the closest approach to the dasher (y 42.5) is the tip, 5.5 ft. OPP_CARRIER and PUCK unchanged.
+//   so the closest approach to the dasher (y 42.5) is the tip, 5.5 ft. OPP_CARRIER and PUCK unchanged
+//   by that edit; PUCK was moved to A1's up-wall side in a later W547 edit -- see PUCK.
 
 // The partner, holding the middle at the line. `point:left` with dy +12 is the
 // anchor `forecheck-pinch` gives its weak-side defenceman, labelled there "the
@@ -602,9 +603,20 @@ const OPP_CARRIER = { at: 'half-wall:right', dx: -11 };         // (58, 38.5)
 const OPP_CLIMBER = { at: 'top-of-circle:left', dx: -6, dy: -4 };     // (48, -26)
 const OPP_CLIMBER_TO = { at: 'top-of-circle:left', dx: -20, dy: -6 }; // (34, -28)
 
-// 5.83 ft off the carrier's anchor, clear of his 3.875 ft of ink, and on the
-// net side of him — he has just received it and has not moved it yet.
-const PUCK = { at: 'half-wall:right', dx: -6, dy: -3 };         // (63, 35.5)
+// ⚠️ MOVED 20 Nov 2026 (W547 diagram review): it was (63, 35.5), on the carrier's NET side, which
+// put it 138 deg round A1 from the pinch's two bars at (50, 37) — so the caption's "stick on the
+// puck" meant reaching past (or through) the carrier. It now sits on his UP-WALL side, the way he
+// is carrying it and the side the pinch arrives from, so "contain on the wall, stick on the puck,
+// not on a player" is what the picture shows.
+//   (52.5, 39.5): 5.59 ft off A1's anchor (58, 38.5), clearing his 3.875 ft of ink plus the 1.1 ft
+//   puck disc by 0.61 ft; 3.0 ft off the dasher centreline (y 42.5), disc edge 1.9 ft clear.
+//   Bearing from A1: bars (-8, -1.5), puck (-5.5, 1) -> 21 deg apart (was 138).
+//   Pinch route (bow -2) terminal tangent unit (0.746, 0.666) from tip (50, 37):
+//     puck: tip -> (2.5, 2.5), 3.54 ft, perpendicular miss 0.20 ft — aimed at the puck;
+//     A1:   tip -> (8, 1.5), 8.14 ft, miss 4.21 ft — unchanged, not aimed at the player.
+//   Nearest terminal bar end (51.33, 35.51) / (48.67, 38.49): 4.16 / 3.96 ft from the puck centre.
+// Used ONLY by pinch-centre-high and pinch-centre-below-the-goal-line, so both move together.
+const PUCK = { at: 'half-wall:right', dx: -16.5, dy: 1 };       // (52.5, 39.5)
 
 // The three sentences both captions must carry, written once so the pair cannot
 // drift apart. The corpus's characteristic caption defect is a qualification the
