@@ -28,7 +28,7 @@
 
 **Assume any ejection costs you more than tonight, and find out who reviews it before you need to.** Under USA Hockey a game misconduct also suspends you for your team's next game (Rule 404(b)), and a match penalty keeps you out of every game and practice until the case is dealt with (405(c)). Hockey Canada reports every major and game misconduct to your league (4.4(a), 4.8(a)), and a game misconduct in the last 10 minutes, in overtime or after the game costs at least the next game or seven days (4.8(c)), and a match keeps you out of every game until your case is dealt with (4.10(a)). The NHL counts game misconducts towards a suspension (Rule 23). USA Hockey (Rule 410(a)) and the IIHF (Rule 28.1) both let the disciplinary authority act on an incident the referee did not penalise — in Britain, the Elite League's Department of Player Safety or your home association. [When penalties add up](#when-penalties-add-up) has the counts.
 
-**Learn the head-hit rule from the harshest book, not the most watched one.** ⚠️ **The NHL's head-check rule is the lenient outlier**, stopping at a minor short of an attempt to injure — though a major for any hit that injures the face or head ejects you there too. Under the IIHF — Britain's book — USA Hockey and Hockey Canada it can end your game without intent, and under USA Hockey even a careless head hit must. Under Hockey Canada it must if it injures the player in minor and female hockey or is highly violent in Junior and Senior, where any foul or illegal hit that injures a player's head on the glass, ice or boards must too. So must a cross-check above the shoulders at every Hockey Canada level, injury or not. At every Hockey Canada level a head hit is a match if the player cannot protect themselves or you meant to injure them. [Body fouls](#body-fouls) has the tiers.
+**Learn the head-hit rule from the harshest book, not the most watched one.** ⚠️ **The NHL's head-check rule is the lenient outlier**, stopping at a minor short of an attempt to injure — though a major for any hit that injures the face or head ejects you there too. Under the IIHF — Britain's book — USA Hockey and Hockey Canada it can end your game without intent, and under USA Hockey even careless contact with the head, face or neck must. Under Hockey Canada it must if it injures the player in minor and female hockey or is highly violent in Junior and Senior, where any foul or illegal hit that injures a player's head on the glass, ice or boards must too. So must a cross-check above the shoulders at every Hockey Canada level, injury or not. At every Hockey Canada level a head hit is a match if the player cannot protect themselves or you meant to injure them. [Body fouls](#body-fouls) has the tiers.
 
 **Keep your head up, your chin off your chest, and never duck.** A chin tucked to your chest straightens the cervical spine, so a head-on hit into the wall stops the head while the body keeps going, hard enough to fracture a vertebra. Ducking can be penalised too — Hockey Canada bars crouching to avoid a check in every division, and the IIHF near the boards. ⚠️ **Head up does not mean standing tall into the hit.** Take it on a wide base with knees bent; near the wall, get your skates parallel to it and take the contact along your side — forearm and hip to the wall — never the point of your shoulder, and never turn your back to anyone coming at you. Turning your back hands them your spine, and in the NHL, PWHL and IIHF a deliberate turn also loses you the checking-from-behind call. If you are caught facing the boards, get your stick and gloves up and spread on the glass, head off it. See [Body Contact and Battles](../technique/body_contact_and_battles.md).
 
@@ -149,9 +149,9 @@ Where an *attacker* displaces the net, play runs on while the defending side has
 
 ### Timeouts
 
-Each team gets **one 30-second timeout** in the NHL and IIHF (Rule 87.1) and under Hockey Canada (6.17(e)), and **one of 60 seconds** under USA Hockey (636(f)) — **except in a USA Hockey curfew game, where neither team has one at all**, and both teams must be told the curfew time before the start. In Hockey Canada minor and female hockey the timeout exists only in stop-time games with the local Member's approval, and is mandatory at regional and national championships; Members and leagues may otherwise set their own rules on time of game, but not in inter-Member or national competition.
+Each team gets **one 30-second timeout** in the NHL and IIHF (Rule 87.1), the PWHL (89.1) and under Hockey Canada (6.17(e)), and **one of 60 seconds** under USA Hockey (636(f)) — **except in a USA Hockey curfew game, where neither team has one at all**, and both teams must be told the curfew time before the start. CARHA writes no timeout at all. In Hockey Canada minor and female hockey the timeout exists only in stop-time games with the local Member's approval, and is mandatory at regional and national championships; Members and leagues may otherwise set their own rules on time of game, but not in inter-Member or national competition.
 
-The NHL and IIHF grant **no** timeout (87.1):
+The NHL, IIHF and PWHL grant **no** timeout (87.1; PWHL 89.1):
 
 - after a **faceoff violation**;
 - to the **defensive team after an icing**;
@@ -955,7 +955,7 @@ Beyond the trapezoid and the red line, the goalie is a skater with the puck — 
 
 ### The nine spots
 
-**Every faceoff is taken at one of nine marked spots** — one at centre ice, four in the neutral zone, four in the end zones — and **never within 15 feet of the goal or the side boards** (NHL 76.2, PWHL 78.2; 4.5 m in IIHF 76.2). What is painted at each is Rule 1.9, in [Rink Map](rink_map.md).
+**Faceoffs are taken at nine marked spots** — one at centre ice, four in the neutral zone, four in the end zones. The NHL, IIHF, PWHL and USA Hockey allow nowhere else (NHL and IIHF 76.2, PWHL 78.2, USA Hockey 612(b)), and the first three add **never within 15 feet of the goal or the side boards** (4.5 m in the IIHF). CARHA writes no nine-spots rule and places several draws where play stopped (57(f), 76(a)). What is painted at each is Rule 1.9, in [Rink Map](rink_map.md).
 
 ### Why the draw is where it is
 
@@ -986,19 +986,19 @@ Never shoot or pass the puck over the blue line offside: the draw can go back to
 | Officials erred on an icing or offside | Centre ice (icing) or nearest neutral-zone spot (offside, USA Hockey) |
 | Two violations at once | The spot giving the offending team **least territorial advantage** |
 
-**The rest of that list in words** — the NHL and IIHF write all of these the same way unless noted, so a British reader takes them as they stand:
+**The rest of that list in words** — the NHL, IIHF and PWHL write all of these the same way unless noted, so a British reader takes them as they stand:
 
 - **Intentional offside** — deliberately putting the puck offside to buy a whistle — sends the draw to **your own end** (NHL 83.7 and 83.6(iv); IIHF 83.6(IV); PWHL 85.7; USA Hockey 630(c); Hockey Canada 6.3(d)(iii); CARHA 72(f)).
-- **Puck out of bounds** goes back to *"the nearest face-off spot in the zone from where it was shot or deflected out of play"* (NHL 85.1; IIHF 85.5). Flipping it over the glass from your own end gains you nothing, and from there it is a minor as well — see section 4.
-- **A hand pass in your attacking zone** sends the draw outside the defending team's blue line (NHL and IIHF 79.3). You lose the zone for it.
+- **Puck out of bounds** goes back to *"the nearest face-off spot in the zone from where it was shot or deflected out of play"* (NHL and IIHF 85.1, PWHL 87.1). Flipping it over the glass from your own end gains you nothing, and from there it is a minor as well — see section 4.
+- **A hand pass in your attacking zone** sends the draw outside the defending team's blue line (NHL and IIHF 79.3, PWHL 81.3). You lose the zone for it.
 - **High-sticking the puck** goes to the spot giving the team that struck it the **least territorial advantage** (NHL and IIHF 80.2, PWHL 82.2) — ⚠️ **and if the attacking team is at fault while the puck is in the attacking zone, the draw *"must be moved to the nearest face-off spot in the neutral zone"*.** Bat a puck down above your shoulders in the offensive zone and, under those books, you are out of the zone; Hockey Canada sends an attacking-zone infringement to the neutral zone too (6.3(d)(iv)). **Under USA Hockey and CARHA it costs more: the draw goes to an end-zone spot in the offending team's own end** (621(d); 62(d)).
 - **A goal disallowed for goaltender interference** takes the draw to *"the nearest neutral zone face-off spot outside the attacking zone of the offending team"* (NHL 69.6; IIHF 69.6; PWHL 71.6).
-- **Two violations at the same stoppage** go to the spot giving the offending team **least territorial advantage** (NHL and IIHF 76.2). ⚠️ **Hockey Canada answers a stoppage with infringements by both teams on a different test**: the spot *"in the same zone that is nearest to where stoppage of play occurred, excluding centre ice"* (6.3(b)).
-- **Officials erred.** A wrongly called **icing** goes to **centre ice** (NHL 81.2; Hockey Canada 6.3(a)). ⚠️ **On a wrongly called offside only USA Hockey answers**: the nearest neutral-zone spot to where play was stopped (630(e)); no counterpart was found in the NHL's, the IIHF's or Hockey Canada's books.
+- **Two violations at the same stoppage** go to the spot giving the offending team **least territorial advantage** (NHL and IIHF 76.2, PWHL 78.2). ⚠️ **Hockey Canada answers a stoppage with infringements by both teams on a different test**: the spot *"in the same zone that is nearest to where stoppage of play occurred, excluding centre ice"* (6.3(b)).
+- **Officials erred.** A wrongly called **icing** goes to **centre ice** (NHL and IIHF 81.2, PWHL 83.2; Hockey Canada 6.3(a)). ⚠️ **On a wrongly called offside only USA Hockey writes a rule for it**: the nearest neutral-zone spot to where play was stopped (630(e)); no counterpart was found in the other five books.
 
 "Least territorial advantage" is defined in neither book; read it as the official picking, from the spots the rule allows, the one that helps the team at fault least.
 
-One more location rule costs you the zone you have just earned: **if a point man or a player off the bench from the attacking team goes past the outer edge of the end-zone circle during a scrum, the draw is moved out to the neutral zone** (NHL and IIHF 76.2, PWHL 78.2). If your team has just earned a draw in the other end, **do not go and join the scrum.**
+One more location rule costs you the zone you have just earned: **if a point man or a player off the bench from the attacking team goes past the outer edge of the end-zone circle during a scrum, the draw is moved out to the neutral zone** (NHL and IIHF 76.2, PWHL 78.2). CARHA draws the line at the top of the circle and counts the penalty bench too (57(j)); under USA Hockey and Hockey Canada it is any attacking player (612(d), 6.3(d)(vi)). If your team has just earned a draw in the other end, **do not go and join the scrum.**
 
 ### The two things you must not leave without
 
@@ -1016,7 +1016,7 @@ Two further distinctions, both treated fully in [Faceoffs](../systems/faceoffs.m
 
 Hockey Canada (10.2(a)(iii)) and CARHA (61(a)) penalise the closed hand only where it gains an advantage, but both give a penalty shot for a cover in your crease (Hockey Canada 4.11(a)(v), 10.2(a)(v); CARHA 58(c)). Batting the puck with your hand to win a draw is a **minor for delay of game — faceoff violation** (67.2). The two takers may not play the puck with a hand at all until a third player has touched it (76.5; PWHL 78.5); no counterpart was found in USA Hockey or Hockey Canada.
 
-**Second: no timeout is granted after a faceoff violation** (87.1). (Accidental stick contact on a centre bent over at a faceoff is not a penalty under the NHL and IIHF books (60.1); USA Hockey and Hockey Canada write no such exception, and a wild swing at a bouncing puck is a penalty everywhere.)
+**Second: do not count on a timeout to rescue a draw.** The NHL, IIHF and PWHL grant none after a faceoff violation (87.1; PWHL 89.1). USA Hockey and Hockey Canada write no such bar, but their window shuts before the drop — at the end of the line change (636(f)) or when the official whistles to start the faceoff (6.17(e)) — and CARHA writes no time-out at all. (Accidental stick contact on a centre bent over at a faceoff is not a penalty under the NHL and IIHF books (60.1); USA Hockey and Hockey Canada write no such exception, and a wild swing at a bouncing puck is a penalty everywhere.)
 
 ---
 
@@ -1226,7 +1226,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 4. **Keep killing a major after they score** — a goal ends only a minor you are short for. ⚠️ **Play as though one major ends your game**: always under Hockey Canada, USA Hockey and IHUK women's hockey, almost always under CARHA, and often elsewhere. **Never throw a punch, even gloved:** USA Hockey ejects you for one, and every book can.
 
-5. **Keep your hits below the shoulders.** Every book can eject you for an unintended head hit, the NHL when a major injures the face or head; under USA Hockey even a careless head hit must. ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
+5. **Keep your hits below the shoulders.** Every book can eject you for an unintended head hit, the NHL when a major injures the face or head; under USA Hockey even careless contact with the head, face or neck must. ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
 
 6. **Never duck a check — take it head up, knees bent, chin off your chest**: a tucked chin can break your neck against the boards. ⚠️ **Take contact on your side; never turn your back to anyone coming at you, at the wall or in open ice.** Facing the boards? Stick and gloves up on the glass, head off it.
 

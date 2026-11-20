@@ -650,7 +650,7 @@ Rule: A foul from behind on a breakaway is a penalty shot, not a 21% minor, in a
 Options: Late in a game, a minor that breaks a rush which would tie or win it is a defensible trade
 Never: Pin the puck for a whistle because you are tired and cannot change — it is a delay-of-game penalty, and it hands them a power play
 Never: Retaliate, send a message, or stand up for a teammate after the whistle — and in the first period take nothing at all except to deny a certain goal, with forty minutes still left to pay for it
-Rule: Joining a teammate's fight is a game misconduct under Hockey Canada 7.10(e)(ii) and CARHA 59(b), and for the first player in under USA Hockey 615(d); the NHL, PWHL and IIHF can give one (46.16, 46.15, 46.14)
+Rule: Joining a teammate's fight is a game misconduct under Hockey Canada 7.10(e)(ii) and CARHA 59(b), and for the first player in under USA Hockey 615(d); the NHL and PWHL can give one (46.16, 46.15), and the IIHF's Handbook gives one in a plain fight (2025/26 46.7, 2026/27 46.14; Situation 46.11)
 ```
 
 Rarely, and less often than players think, because the test is unforgiving: **is the thing you are preventing more likely to become a goal than the one-in-five chance you are handing over?** Two cases pass it.

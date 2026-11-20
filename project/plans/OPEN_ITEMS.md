@@ -13,16 +13,21 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W523 shipped with record `w523_crisis_box_harm_to_others_trailers_and_pwhl_numbers_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W524 shipped with record `w524_faceoff_numbers_timeouts_and_british_third_man_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W523 (20 Nov):**
-  - **(1) NHL-numbered lists that also cover the PWHL.** faceoffs :166–182 ("What sends the draw to which spot") cites bare NHL 76.2 (five times), 81.2, 83.7, 83.6 and 85.2. Only the icing-dot and power-play-dot bullets give PWHL numbers. rules_primer's section 8 list (:989) does the same. Decide once: either state a "numbers are the NHL's; the PWHL's are +2 from 63" convention per list, or add each PWHL number.
-  - **(2) rules_primer :1019 "no timeout is granted after a faceoff violation (87.1)".** This is written for every book, but it gives no PWHL 89.1, and USA Hockey and Hockey Canada write no such bar (faceoffs :874 says so).
-  - **(3) Whether the 15-feet and scrum-relocation rules (rules_primer :958, :1001) exist in USA Hockey, Hockey Canada and CARHA.** The sentences read as every book's rule.
+- **From W524 (20 Nov):**
+  - **(1) faceoffs facts :156 (293/300) now ends the NHL/IIHF/PWHL limb "…or any non-offender".** Voiced alone, a listener may not tie the circle-edge condition to the non-offending player. Render it and check. faceoffs :193 names USA Hockey and Hockey Canada for the scrum rule but not CARHA.
+  - **(2) "Plan on it" now recurs three times in goaltender's fight section (:1195, :1198, :1695).** Check for repetition when heard aloud.
+  - **(3) Other carriers of the IIHF third-man claim outside the W524 files** (rules_primer :554/:948, special_teams) may still give the IIHF's position as discretion only, without the Handbook's "is to be assessed" in a plain fight. Sweep the claim.
+  - **(4) The IHUK DOPS "3rd Man-in … Up to 1" row was read from a layout extraction with broken columns.** Neither its unit (games) nor its band has been confirmed. Render the PDF page with `pdftoppm`.
+  - **(5) From the W524 commit gate.**
+    - goaltender :1695's bold lead says "breaking one up does in three" while its repaired ending says the IIHF Handbook "does in a plain fight" (half-repaired sentence).
+    - faceoffs facts :156 "either bench" can be heard as both teams' benches; CARHA 57(j) means the attacking team's players' or penalty bench.
+    - rules_primer :958 says nothing on Hockey Canada's nine-spots position (hc.txt has no such sentence).
+    - faceoffs :189 cites NHL 85.5 for the lodged-puck draw, where 85.2 is "Puck Unplayable" (pre-existing). Check it.
+- **From W523 (20 Nov; rows 1–3, 5 and 6 closed in W524):**
   - **(4) Whether the suicide crisis lines in mental_game's box take calls about thoughts of harming someone else.** The box now addresses that reader, and its "Immediate danger — call your local emergency number" line serves them. Do not add a provider claim without verifying it.
-  - **(5) EIHL third-man-in scope.** team_play :749 and goaltender :1827 split IIHF 46.7 (2025/26) from 46.14 (2026/27), but nobody has checked the EIHL Casebook for a departure. The In-House layer follows 2025/26; the EIHL Casebook supersedes under its preamble.
-  - **(6) faceoffs :1415 says IIHF 87.1's time-out bans "match the NHL word for word".** The IIHF prints inner quotation marks (see :874).
 - **From W522 (20 Nov; rows 3 and 5 closed in W523):**
   - **(2) No youth route to help.** SMHRT-1 is for ages 16 and over, and the NHS page is for adults. The mental_game crisis callout has no youth line, and none is on disk. Any number added must be sourced and verified first.
   - **(4) Optional: whether "call your emergency number if it is happening now" is the right route for a first-ever panic-like episode (mental_game §5 :289).** SMHRT-1 says only "seek immediate help".
@@ -41,8 +46,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519; 6 and 7 in W521):**
   - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
   - **(3) Pronouns later in the opening words.** The tool catches only the first word (e.g. zone_entries :1111 "Key: Very hard to beat cleanly, and it keeps…"). Run `--loose` on the facts layer and triage.
-- **From W517 (20 Nov; rows 1 and 5–8 closed in W518):**
-  - **(2) "Head hit" for USA Hockey 620(b).** rules_primer :31/:1229 use it, but 620(b) also reaches the face and neck. The scope was unchanged by W517 but is narrow everywhere it appears.
+- **From W517 (20 Nov; rows 1 and 5–8 closed in W518; 2 in W524):**
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.
 - **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; 7 in W518; 8 and 9 in W520; row 6 partly):**
