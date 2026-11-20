@@ -13,14 +13,11 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W564 and W565 shipped with record `w565_usa_hockey_608c_boards_match_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W566 and W567 shipped with record `w567_neck_disclosure_crease_scope_and_helmet_clash_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
   - **(3) The honest-attempt rung at goaltender facts :1266** (299/300, its block is at HARD_MAX) still has no 620 overlay. Its sibling :1262 carries 620(b). Left in W535.
-  - **(4) The "X and Y in the crease" parse shape.** Dropping a book from a list can leave its scope on a sibling, as happened at winger :789.
-    - Only group 2's nine files were checked by listening.
-    - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
 - **From W565 (20 Nov):**
@@ -36,13 +33,12 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - shooting :509;
     - ozp :1195.
     If an ear test finds the gap matters, they need block-level rewrites.
-  - **(2) Not swept:** diagram captions carrying a two-book boards match (`check_caption_hosts --rule-like`); units that describe the act without the census vocabulary; and the reverse class, where USA Hockey 608(b) or the Casebook is given as "or a match" although the Casebook requires a match for excessive force on a vulnerable player.
-  - **(3) ozp :1259 Common Mistakes:** the bold head names only Hockey Canada and CARHA, and its indented continuation opens with 608(c). Check whether the two are voiced in one unit.
+  - **(2) Not swept:** units that describe the act without the census vocabulary; and the reverse class (USA Hockey 608(b) or the Casebook given as "or a match" where the Casebook requires one). [Captions closed in W566: the three hit-from-behind captions carry the USA Hockey Casebook 608 Sit. 1 limb, and none states a two-book boards match.]
+  - [(3) closed in W566: ozp :1259's head and continuation are voiced in one chunk (089), adjacent with no break.]
 - **From W553/W557 (20 Nov):**
   - **(4) Box-out and seal grants outside the five W557 files.** The W556 census covered all files lexically. A grant with no contact verb ("win the inside", "own the doorstep", "make them go through you") was not found. Diagram captions were not swept (`check_caption_hosts --rule-like`).
   - **(5) Optional: winger :869 could add "— under CARHA, avert contact".** goaltender facts :1373 could carry body :1388's no-check price if room frees (199/200).
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
-  - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
   - **(4) Four facts lines still say "IIHF and Hockey Canada off the head"** (forechecking :320, :701, :750, :980). None had room to split. The head-only form errs harsh for the IIHF; that is acceptable, so split only if a block is next edited.
 - **From W539/W560 (20 Nov):**
   - W539's five kept on purpose stay as recorded: defending_the_rush CM :1101/:1113, game_management CM :1290, glossary :402, risk_management CM :932.
@@ -51,10 +47,6 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - [W563 cut the ladder restatements to kernels: winger :531, :722/:724, CM :919/:927; goaltender :1283, CM :1714; forechecking :224, :764. Left: goaltender :1666 (the section's only cost statement), and other copies outside the census (Key Takeaways, :339, :811) still restate it.]
     - **Free removals, if visual density matters.** These are units with 2 glyphs: winger :801, goaltender :1663/:1664/:1795, forechecking :809/:1098/:220.
     - **No tool measures "Important." per minute of audio.** forechecking chunk 053 carries four. An ear test or a per-chunk census would settle it.
-- **From W538 (20 Nov; row 1 closed in W546, all but mental_game KT1, which is kept on purpose as crisis content):**
-  - **(2) Helmet-clash act, other wordings.** The W538 layer test found faceoffs CM :1323 by string ("helmet clash"). Units worded "heads together" or "head over the dot" with a USA Hockey tariff were not swept.
-- **From W537 (20 Nov; rows 1 and 2 closed in W551):**
-  - **(3) body_contact :1737's arm-block cell names only the books that grant one.** The table has 1 character of headroom. :1766 carries "USA Hockey and CARHA write no strength-move sentence at all" in prose.
 - **From W535 (20 Nov; rows 2–4 closed in W536):**
   - **(1) Two lexical sweeps keyed on "reckless".** A unit that prices a head-reaching act under USA Hockey without that word could have passed both. Examples: "only a violent one", "can end your game", or a "several books" list that leaves USA Hockey out. Read the Key Takeaways of the 12 W535 files in full; the reviewers read only some.
 - **From W529 (20 Nov; rows 1, 4 and 6 closed in W530; 3 in W531):**
