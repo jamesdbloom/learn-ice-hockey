@@ -1131,7 +1131,7 @@ Under USA Hockey, checking a goalie from behind is at least a minor and a miscon
 
 Even with no intent to injure, three books make a match mandatory for a goalie hit from behind: ⚠️ **under Hockey Canada and CARHA if it puts a goalie who cannot protect themselves into the net or boards, and under USA Hockey if it is reckless with excessive force**, boards or not, on a vulnerable or defenceless goalie (608(c)). Each of those matches keeps you out of every later game until your case has been dealt with (Hockey Canada 4.10(a), CARHA 34(a)), and out of USA Hockey practices too (405(c)).
 
-Hockey Canada does not say whether checking from behind or goaltender interference governs a goalie hit from behind, so ⚠️ **plan on the dearer: a mandatory major and game misconduct for a charge** (8.5(b)), at least 7.5's minor and game misconduct otherwise. On the head Hockey Canada calls it head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal), but plan on the same for a charge anyway, and a game misconduct otherwise, which head contact reaches on the violence (7.6(b), (e); 7.7(b), (e)).
+Hockey Canada does not say whether checking from behind or goaltender interference governs a goalie hit from behind, so ⚠️ **plan on the dearer: a mandatory major and game misconduct for a charge** (8.5(b)), at least 7.5's minor and game misconduct otherwise. On the head Hockey Canada calls it head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal). Even then, under Hockey Canada plan on the major and game misconduct for a charge, and on a game misconduct otherwise, which head contact reaches on the violence (7.6(b), (e); 7.7(b), (e)).
 
 ### Over the glass
 

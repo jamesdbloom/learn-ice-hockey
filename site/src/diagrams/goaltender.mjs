@@ -427,22 +427,36 @@ const TRAPEZOID_ZONE = [
 //      rim in HEIGHT, and this is a plan view. Drawing it would be a second line
 //      lying on top of the rim's, claiming a distinction the picture cannot make.
 //
-// The goaltender stands at (95.5, 0) — 3.2 ft behind the back of the goal frame,
+// The goaltender stands at (94.6, -1.5) — 2.3 ft behind the back of the goal frame,
 // which the renderer draws as a 3.33 ft deep rectangle from the goal line. The
 // bare `G` is about 3 ft wide, so it clears the frame rather than sitting on it.
-// He is inside the trapezoid there (half-width 12.9 ft at x = 95.5), which is the
+// He is inside the trapezoid there (half-width 12.5 ft at x = 94.6), which is the
 // state the section assumes throughout.
-const G_BEHIND_NET = { at: 'behind-net', dx: 1.5 };          // (95.5, 0)
-const PUCK_BEHIND_NET = { at: 'behind-net', dx: 1.5, dy: 3 }; // (95.5, 3)
+//
+// ⚠️ W507 (19 Nov 2026): THE PUCK AND THE THREE ROUTES WERE DRAWN ON TOP OF HIM. He was
+// at (95.5, 0) with the puck 3 ft straight above him, so the puck dot sat on the top of
+// the letter and the rim — which leaves the puck heading down the far side — ran through
+// the glyph. The goalie is the diagram's subject and read as a struck-through letter.
+// Now the puck is up and to his boards side, 4.8 ft from his centre and 2.6 ft short
+// of the end boards at x = 100, and every route leaves it AWAY from him: the short pass
+// and the middle pass start 4.8 ft from his centre and head up-ice, and the rim (bowed
+// +12 rather than +10 so it swings round him toward the boards) passes 2.55 ft from his
+// centre, about a foot clear of the letter, and 2.6 ft inside the boards at its widest.
+// Still "standing behind their own net and the puck on their stick", as `describe` says.
+// His label is hinted below the crease (`labelHint`), where the default placer had put
+// "you" on the crease paint with its leader across the goal frame.
+const G_BEHIND_NET = { at: 'behind-net', dx: 0.6, dy: -1.5 };   // (94.6, -1.5)
+const PUCK_BEHIND_NET = { at: 'behind-net', dx: 3.4, dy: 2.4 }; // (97.4, 2.4)
 
 // The strong-side defenceman, on the wall level with the goal line. (88, 31) is
 // 6.5 ft off the boards — the boards run at y = 37.48 at that x, on the corner arc
 // struck from (72, 14.5) with r 28 — and a defenceman's triangle reaches 4.6 ft
 // from its centroid, so the apex finishes 1.9 ft clear of the ink.
 const D_STRONG_WALL = { at: 'corner:right', dx: 6, dy: -3 };  // (88, 31)
-// Eight feet short of him along the passing line, which leaves 3.4 ft between the
-// arrowhead and the triangle's ink.
-const PASS_SHORT_END = { at: 'corner:right', dx: 8.07, dy: -10.73 }; // (90.07, 23.27)
+// Eight feet short of him along the passing line from the puck at (97.4, 2.4), which
+// leaves 3.4 ft between the arrowhead and the triangle's ink. (Re-derived in W507 when
+// the puck moved: it was (90.07, 23.27) on the line from the old puck at (95.5, 3).)
+const PASS_SHORT_END = { at: 'corner:right', dx: 8.5, dy: -10.6 }; // (90.5, 23.4)
 
 // The far winger, off the half-wall datum by 0.6 ft. On the datum itself a
 // forward's circle reaches 42.375 ft against an inner boards ink edge of 42.25 —
@@ -451,9 +465,10 @@ const W_FAR = { at: 'half-wall:left', dx: 2, dy: 0.6 };       // (71, -37.9)
 const RIM_END = { at: 'goal-line', dx: -13, dy: -32 };        // (76, -32)
 
 // The pass the section says to make almost never. Bowed -12 so it goes AROUND the
-// net rather than through it: at the goal line the drawn curve is 8 ft off centre,
-// clearing the post by 5 ft, and its closest approach to the crease is 6.97 ft off
-// centre at x 83.5 where the crease arc reaches 2.4 ft. It finishes at (79, 1.5),
+// net rather than through it: at the goal line the drawn curve is 7.9 ft off centre,
+// clearing the post by 4.8 ft, and its closest approach to the crease is 6.93 ft off
+// centre at x 84.5, where the crease's straight side is at 4 ft — 2.9 ft of daylight
+// (re-measured from the rendered path in W507, after the puck moved). It finishes at (79, 1.5),
 // inside the shaded slot and 3.3 ft clear of that zone's own label box.
 const MIDDLE_END = { at: 'goal-line', dx: -10, dy: 1.5 };     // (79, 1.5)
 
@@ -520,14 +535,14 @@ const safeOutlets = {
   zones: [{ points: SLOT_ZONE, label: 'the slot', danger: true }],
 
   players: [
-    { id: 'G', pos: 'G', at: G_BEHIND_NET, label: 'you' },
+    { id: 'G', pos: 'G', at: G_BEHIND_NET, label: 'you', labelHint: [-9, -8] },
     { id: 'D1', pos: 'D', at: D_STRONG_WALL, label: 'on the wall' },
     { id: 'W', pos: 'F', at: W_FAR, label: 'the far winger' },
   ],
 
   routes: [
     { from: PUCK_BEHIND_NET, to: PASS_SHORT_END, kind: 'pass' },
-    { from: PUCK_BEHIND_NET, to: RIM_END, kind: 'pass', bow: 10 },
+    { from: PUCK_BEHIND_NET, to: RIM_END, kind: 'pass', bow: 12 },
     { from: PUCK_BEHIND_NET, to: MIDDLE_END, kind: 'pass', bow: -12 },
   ],
 

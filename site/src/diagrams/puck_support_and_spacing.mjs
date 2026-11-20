@@ -142,7 +142,11 @@ const supportTriangle = {
     'Three teammates with one of them pulled off the boards into the middle, so the lanes out of ' +
     'the carrier now diverge. The opponent has not moved: they are still in the lane up the boards, and ' +
     'covering it means turning their body away from the middle option. ' +
-    'No single defender can be in both lanes. A triangle is the smallest shape in which all three ' +
+    // W507(9) (19 Nov 2026): was "No single defender can be in both lanes." Unscoped, beside a
+    // drawn defender, and one diagram after `support-in-a-line`'s "One opponent standing in that
+    // line is between the carrier and both receivers", it read as contradicting the picture
+    // before it. It is a property of the DIVERGED lanes, so it now says so; meaning unchanged.
+    'With the lanes apart, no single defender can be in both. A triangle is the smallest shape in which all three ' +
     'corners have two teammates at different angles, and it survives the puck moving, where a line ' +
     'has to be rebuilt every time. ' +
     'It is not a formation you set up, it is a shape you keep while everything moves.',

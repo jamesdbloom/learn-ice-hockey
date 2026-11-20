@@ -733,7 +733,8 @@ const wingerOffensiveZone = {
     //   · "never your head" — the source is about what you LEAD with: "anything but your
     //     head FIRST" (ibc.txt:1390-1391).
     //   · "an arm or a shoulder" — that contradicts this corpus's own shoulder
-    //     prohibition, imported into three captions in this very file as SHOULDER_TAIL.
+    //     prohibition, imported into two captions in this very file as SHOULDER_TAIL
+    //     (three until W507 cut the wall limb from winger-dz-reverse).
     //     The source says "an arm, a leg, or anything but your head first."
     //   · "the collision can happen at walking speed" — the "it" in USA Hockey's sentence
     //     is the INJURY, not the collision, and winger.md:760 makes that reading explicit.
@@ -1187,8 +1188,12 @@ const wingerDzRim = {
   //     does not, so it is cut as narrative rather than as a carried limb.
   // KEPT WORD FOR WORD: "keep your feet wide and low and still moving" (passing_and_receiving.md
   // never voices the pinned-on-the-wall point), the timing sentence, and the WHOLE wall limb
-  // with SHOULDER_TAIL (since W375 the posture half sits before the ⚠️, the prohibitions after it) -- passing_and_receiving.md :213 tells its reader "the wall-contact
-  // warning both captions carry" applies, so cutting it here would make that host sentence false.
+  // with SHOULDER_TAIL (since W375 the posture half sits before the ⚠️, the prohibitions after it).
+  // (W507 comment fix, 19 Nov 2026: this note used to say passing_and_receiving.md :213 reads "the
+  // wall-contact warning both captions carry". It no longer does. Since W459 :213 states the two
+  // prohibitions itself under ⚠️ and :215 the posture; the limb is kept here because
+  // winger-dz-reverse no longer carries it and leans on this caption -- the DEPENDENCY declared
+  // in scripts/check_caption_pairs.py -- and because a reader of this picture alone needs it.)
   // ✂️ RE-ORDERED 16 November 2026 (W375), no word changed: the posture sentence with SHOULDER_TAIL
   // now comes BEFORE the glyph, so the amber run (glyph to end of caption) is the two prohibitions
   // and the two injuries only, 222 chars instead of 402. SHOULDER_TAIL still follows the posture,
@@ -1202,9 +1207,9 @@ const wingerDzRim = {
   // instruction, "as drawn"), "containing rather than chasing", "exactly", "not once you are
   // pinned". KEPT WORD FOR WORD, for the reasons above: the feet-moving / pinned limb, and the
   // WHOLE wall limb with SHOULDER_TAIL before the glyph and both prohibitions and the two
-  // injuries after it. passing_and_receiving.md :213 says "the wall-contact warning both
-  // captions carry", and that host voices neither prohibition nor "not the whole shoulder" near
-  // the marker, so the wall limb is the floor of any trim here.
+  // injuries after it. (Reason as of W458, superseded: passing_and_receiving.md :213 then said
+  // "the wall-contact warning both captions carry"; see the W507 note above for why the limb
+  // stays.)
   caption:
     'Beating a checker who has sealed you against the boards, in your own end. Keep the puck on ' +
     'the far side of your body from them, as drawn, and ' +
@@ -1286,7 +1291,7 @@ const wingerDzReverse = {
   //    two injuries). Both hosts embed winger-dz-rim DIRECTLY before this diagram (winger.md
   //    :117/:119, passing_and_receiving.md :209/:211), and that caption carries the identical
   //    limb word for word, so a listener heard it twice in two breaths. Layer test, both hosts,
-  //    19 Nov: winger.md voices both prohibitions in the facts Never lines (:101-:102) before
+  //    19 Nov: winger.md voices both prohibitions in the facts Never lines (:99-:100) before
   //    the markers and in the bullet at :126 right after, posture at :125;
   //    passing_and_receiving.md :213 states the prohibitions itself under ⚠️ (since W459) and
   //    :215 the posture and the two injuries. A reader of this picture alone loses the limb; the
