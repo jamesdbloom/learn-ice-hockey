@@ -23,7 +23,7 @@
 
 **Choose a rim or a reverse by where the forechecker is.** Rim the puck on along the boards when one is sealing you against the wall; reverse it into the space one has just left when they have over-committed past you.
 
-**Act on a call the moment you hear it.** "Outlet!" means *I am your exit* — move the puck. "Back door!" means take the unmarked player at the far post now. "Screen!" from your goalie means get out of the sightline, or hold your ice in front of the screener with no lean and no push; walking them off theirs can be called interference. Never shove with the shaft: that is cross-checking.
+**Act on a call the moment you hear it.** "Outlet!" means *I am your exit* — move the puck. "Back door!" means take the unmarked player at the far post now. "Screen!" from your goalie means get out of the sightline, or hold your ice in front of the screener with no lean and no push; walking them off theirs can be called interference. Never shove with the shaft: that is cross-checking, and into the back it can be called checking from behind.
 
 **Play the puck, not the goalie, wherever they are standing.** No rulebook that addresses it makes a goalie outside the crease fair game. When one comes out for a loose puck, pull up and take away the outlet: a goalie down or turned to play the puck cannot protect themselves.
 
