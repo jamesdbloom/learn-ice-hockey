@@ -13,15 +13,13 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W525 shipped with record `w525_third_man_count_hc_draw_spots_and_dops_tariff_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W526 shipped with record `w526_rules_primer_negatives_and_scrum_line_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W525 (20 Nov):**
-  - **(1) Re-sweep rules_primer's other "no such rule" / "writes no" negatives.** A phrase sweep for "face-off will/shall take place" missed Hockey Canada 6.8's "the face-off will be where…". The same gap may sit behind other negatives in that file. Sweep for the act, not one wording.
-  - **(2) faceoffs facts :156 is at 299/300.** Any future edit there must substitute, not add. The line has not been heard voiced alone (W524(1), not rendered).
-  - **(3) From the W525 commit gate.**
-    - uk_rules :308's "In the Elite League, IHUK's rules do not say whether the tariff applies" gives no instruction, while :413 and goaltender :1196 say "plan on the same" and C.2's header reads "Applies to all leagues". Add "plan on it" for parity.
-    - goaltender :1695 says "in three", but the same bullet's IIHF Handbook clause makes a plain-fight peacemaker a fourth. Reconcile the count with the ending, in every layer together (body :1188, facts :1170, KT10 :1794).
+- **From W526 (20 Nov):**
+  - **(1) USA Hockey Casebook's unnumbered sections** (Standard of Play, the Declaration of Player Safety, the preface). These are the likeliest source of false "USA Hockey writes no …" sentences corpus-wide, because a search by rule number never reaches them. W526 found an arm-block permission there that rules_primer said did not exist. Sweep every "USA Hockey writes no / has no" claim in content/ against those sections.
+  - **(2) rules_primer negatives not reached by the W526 sweep.** :148, :584, :596, :605, :610, :641, :768–:785 (the substitution-timing table), :813, :817, :835, :1038, :1172 and :1183. Also negatives phrased as "cannot", "is unsettled", "does not say" or "leaves it to".
+  - **(3) Propagate USA Hockey's Casebook arm permission, with its limits first.** Under Standard of Play Situations 5–7, a free arm may steer or keep position only while reaching for the puck (or keep position with it), a forearm may steer only in front of your net, and nothing may be extended, grab or push off. Add that to the pages listing the arm strength move without USA Hockey: puck_handling :502/:525, body_contact :1251/:1730/:1759, winger :739–:744, forechecking :624. None says USA Hockey forbids it, so this is a gap, not a false negative. forechecking :624 matches Situation 7 for steering and omits only Situation 6. body_contact :1251 ("USA Hockey writes no such permission, so keep your arm out of the block altogether") is stricter than rules_primer; reconcile, with a block and a steer kept distinct. time_and_space :525 lacks the Situation 38 forcing-deeper limb, which errs safe. Also in rules_primer: :526's 604 Note 1 paraphrase drops "torso"; :502 lacks :526's front-of-net scope; :526's "beyond that steer" now follows several permissions.
 - **From W523 (20 Nov; rows 1–3, 5 and 6 closed in W524):**
   - **(4) Whether the suicide crisis lines in mental_game's box take calls about thoughts of harming someone else.** The box now addresses that reader, and its "Immediate danger — call your local emergency number" line serves them. Do not add a provider claim without verifying it.
 - **From W522 (20 Nov; rows 3 and 5 closed in W523):**
