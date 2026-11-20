@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W540 and W541 shipped with records `w540_last_long_paragraphs_2026-11-20.md` and `w541_long_captions_trimmed_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W542 shipped with record `w542_head_neck_scopes_by_book_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -25,8 +25,11 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(1) Seven captions are still over 800 characters, on purpose:** faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
   - **(3) Stale comment:** the rush-3-on-2-alternative module still says "UNDECLARED PAIR… reported to the coordinator". The pair is now declared in `check_caption_pairs.py`, so correct the comment at the next diagram edit.
   - **(2) Two pre-existing picture questions from the diagram-reviewer.** Does pk-wedge-plus-1's "+1 … straight out from the goal" match its drawn route, which runs from the dot toward the half-wall? Does oz-behind-the-net's pass target sit about 6 ft from the F3 glyph?
-- **From W540 (20 Nov):**
-  - **(1) "off the head" / "off your head" meaning "unless it reaches the head".** About 19 sites remain: OZP :831 (facts), :842, :1259, :1309; shooting :509 (facts), :537, :920; zone_entries :255, :865, :1169, :1205; special_teams :1112, :1130, :1278; playing_without_the_puck :826 (facts), :851, :1022, :1024, :1055. W536 made "below the head" the house form, but the W540 reviewer noted that it literally includes the neck, which USA Hockey 620, IIHF 48 and Hockey Canada all treat as head contact. Prefer "away from the head, face and neck", or "off the head and neck" where space is tight. Re-check body_contact :668 "below the head" and the W536 sites with the same eye. Run `check_facts --near` first for the facts lines.
+- **From W542 (20 Nov):**
+  - **(1) Hockey Canada neck hit from behind into the boards: the 7.5(c) match is not voiced in every unit that prices the hit.** The zone_entries prose at :255, :865, :1169 and :1205 lacks it; the facts lines, special_teams :825 and rules_primer :494 carry it. The safe shape is center :901: "it is a match either way — off the head (7.5(c)), on it (7.6(c), 7.7(c))".
+  - **(2) special_teams :1117 "Hockey Canada always" ejects (pre-existing, harsher than the book).** Check it against 7.5 and 7.6.
+  - **(3) Hockey Canada's neck reading is an inference.** The 7.6 and 7.7 supersession clauses say "head"; the preambles and 7.6(a) say "head, face, or neck". The corpus now ships the conservative reading (the neck stays under 7.5) without a disclosure. Decide whether one sentence of disclosure belongs in body_contact_and_battles, the owner.
+  - **(4) Four facts lines still say "IIHF and Hockey Canada off the head" (forechecking :320, :701, :750, :980) and one says "off the head and neck" (shooting :509).** None had room to split. The head-only form errs harsh for the IIHF. shooting :509's joint neck form errs harsh for Hockey Canada.
 - **From W539 (20 Nov; row 1 closed in W540, except the five left on purpose: defending_the_rush CM :1101/:1113, game_management CM :1290, glossary :402, risk_management CM :932):**
   - **(2) The marker count rose by 32 across 16 files** (1,682 → 1,714 glyphs). Split halves that state a hazard kept their own spoken "Important.".
     - Five over-escalated markers were removed.
