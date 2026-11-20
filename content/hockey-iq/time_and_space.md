@@ -424,7 +424,7 @@ This is a strong general principle, not an absolute — some coaches want the wa
 
 You will spend a career trying to intercept passes and mostly failing, because passes are fast and you are guessing. There is a better version.
 
-**Arrive as the puck does.** Instead of lunging at the lane, take a route that puts you on the receiver as the puck reaches them, stick in their receiving lane or on their blade as it lands — a press, not a chop. The result is the same as an interception, no clean possession, without guessing right or being out of position when you're wrong. The timing keeps it legal: if you pin the stick of a player still waiting for the pass, you are interfering with someone who does not have the puck. A hard chop can be called a slash, and knocking the stick out of their hands is interference too.
+**Arrive as the puck does.** Instead of lunging at the lane, take a route that puts you on the receiver as the puck reaches them, stick in their receiving lane or on their blade as it lands — a press, not a chop. The result is the same as an interception, no clean possession, without guessing right or being out of position when you're wrong. The timing keeps it legal: if you pin the stick of a player still waiting for the pass, you are interfering with someone who does not have the puck. A hard chop can be called a slash, and knocking the stick out of their hands is interference too — or slashing if you do it with a slash, which USA Hockey's Casebook prices at a minor or a major plus a game misconduct even with only the stick touched.
 
 ```facts
 Never: Lunge at the passing lane — passes are fast and you are guessing

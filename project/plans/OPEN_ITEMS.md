@@ -13,21 +13,18 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W529 shipped with record `w529_usa_hockey_declaration_sit17_chop_and_hc_7_3_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W530 shipped with record `w530_slashing_on_the_stick_goalie_floor_and_late_hit_scope_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W529 (20 Nov):**
-  - **(1) IIHF 61.1 penalises a stick chop only if it "is not an attempt to play the puck"** (`iihf_rules_2026-27.txt` :5128). So "a chop on the stick is slashing in every book but USA Hockey" may overstate the IIHF: defender's new Rule line and :325, goaltender :1704. NHL and PWHL 61 were not read. Rules-verifier, then scope.
+- **From W530 (20 Nov):**
+  - **(1) The USA Hockey Declaration's vulnerable-player clause and goalies.** It defines vulnerable as "a skater … unaware, unprepared, or unsuspecting" and never names goalkeepers, so whether it reaches careless goalie contact is unsettled. Only special_teams :1132 names 620(b)'s careless head-contact route (a mandatory major plus game misconduct with no recklessness needed) for a goalie. Propagate 620(b) to the goalie-contact ladders where it changes what a reader does.
+  - **(2) Slashing described in other words.** The W530 sweep searched "chop", "slash" and "on the stick"; "whack", "hack", "rap" and "two-hand" were not swept. NHL 21.1 behind goaltender :1704's match claim was not re-read.
+  - **(3) time_and_space :427's unchanged "press on their blade as it lands".** Hockey Canada 9.3 and CARHA excuse only a tap on the puck-carrier's stick, not a receiver's blade. Check whether the line needs scoping.
+  - **(4) Slashing tiers corpus-wide.** Other blocks may understate CARHA 80(b) (a mandatory major on injury) as "80(a) allows a major", or omit the NHL's mandatory major on injury (61.3/61.5). Run a layer test of slashing claims across all documents. NHL 61.8 / IIHF 61.6 supplementary discipline is not carried anywhere.
+- **From W529 (20 Nov; rows 1, 4 and 6 closed in W530):**
   - **(2) Casebook Situation 17's reach.** It reads "hard body check" literally; whether it reaches a push, a walk-out or a ride (defender :279/:944/:948) is unsettled.
   - **(3) Sources trailers** in center, defender, switching_positions and goaltender cite Casebook Situations 17, 3 and 4 inline, but the trailers do not list them.
-  - **(4) Goaltender-charging tariffs still say "under USA Hockey if reckless".** The sites are forechecking KT8 :1180, OZP Common Mistakes :1241, playing_without_the_puck KT11 :1115 and time_and_space Common Mistakes :665. Test whether the Declaration's no-effort-to-play-the-puck limb reaches contact with a goalie, then fix every layer.
   - **(5) W529 text not yet heard aloud.** OZP facts :968 (300/300; its "each" carries 640(e) and 640(b)) and :973; game_management facts :175/:1189 (300/300); the faceoffs :1320 and DZC :865 Common Mistakes. Also: does Casebook Situation 17 reach a push on a screener called as interference (625)? DZC Sources do not yet cite Situation 17.
-  - **(6) From the W529 commit gate.**
-    - OZP facts :968 applies 640(g) to a puckless player, adult men included, while body :1222 says the book does not say. This errs harsh.
-    - OZP :973 dropped the 640(b) minor floor and the adult-men scope.
-    - game_management :175/:1189/:1290 widen the Declaration's careless route to every late hit. Only body :1237 ties it to a player who has passed or shot (640(b)).
-    - defender :319/:327 no longer say a forceful chop on the stick is NHL/IIHF slashing unless it is an attempt to play the puck (overlaps W529(1)).
-    - on_ice_communication :586 and defender :946 still give only the reckless route (see W529(2)/(5)).
 - **From W527 (20 Nov; row 1 closed in W529):**
   - **(2) forechecking :628 "keep your arms… out of it" sits beside :624's "steer yes".** It errs safe and was there before W527; reconcile the wording.
 - **From W526 (20 Nov; row 3 closed in W527, row 1 in W529):**
