@@ -1,0 +1,89 @@
+{
+  "$comment": "Allowlist for check-arrivals form (p), pressure route aims at a player. Each entry is keyed by diagram + kind + bow + resolved from/to + target id and resolved anchor, and must also reproduce measured d/miss, the rink.json sha256 and captionMustContain, or the finding is re-raised. Unmatched entries print as STALE. Read the header of check-arrivals.mjs before adding one; every entry needs a reason and a ruling.",
+  "entries": [
+    {
+      "diagram": "faceoff-dzone-clean-loss",
+      "kind": "pressure",
+      "bow": 0,
+      "from": [
+        74.69,
+        38.97
+      ],
+      "to": [
+        30.14,
+        21.96
+      ],
+      "target": {
+        "id": "D",
+        "at": [
+          25,
+          20
+        ]
+      },
+      "measured": {
+        "d": 5.5,
+        "miss": 0
+      },
+      "rinkSha256": "82baa3c44a75fe5c3767b2d8705dbe51acb0b01634b8be3c9cbcdcbd9e69943b",
+      "captionMustContain": "release to the opposing points on the drop",
+      "reason": "W549 triage: accepted as intended. The winger releases to the opposing point on the drop and arrives frontally on a player facing the play, which is what the zone call draws; a miss of 0 on the point is the route doing its job, not a line through a back.",
+      "ruling": "W549"
+    },
+    {
+      "diagram": "faceoff-dzone-clean-loss",
+      "kind": "pressure",
+      "bow": 0,
+      "from": [
+        74.69,
+        5.03
+      ],
+      "to": [
+        29.91,
+        -17.53
+      ],
+      "target": {
+        "id": "D",
+        "at": [
+          25,
+          -20
+        ]
+      },
+      "measured": {
+        "d": 5.5,
+        "miss": 0
+      },
+      "rinkSha256": "82baa3c44a75fe5c3767b2d8705dbe51acb0b01634b8be3c9cbcdcbd9e69943b",
+      "captionMustContain": "release to the opposing points on the drop",
+      "reason": "W549 triage: accepted as intended. The winger releases to the opposing point on the drop and arrives frontally on a player facing the play, which is what the zone call draws; a miss of 0 on the point is the route doing its job, not a line through a back.",
+      "ruling": "W549"
+    },
+    {
+      "diagram": "the-last-player-back",
+      "kind": "pressure",
+      "bow": 0,
+      "from": [
+        8,
+        4
+      ],
+      "to": [
+        -0.84,
+        8.42
+      ],
+      "target": {
+        "id": "D",
+        "at": [
+          -8,
+          12
+        ]
+      },
+      "measured": {
+        "d": 8.01,
+        "miss": 0
+      },
+      "rinkSha256": "82baa3c44a75fe5c3767b2d8705dbe51acb0b01634b8be3c9cbcdcbd9e69943b",
+      "captionMustContain": "never turn your back to anyone coming at you",
+      "reason": "W549 triage: accepted as intended. The opposition forechecker pressuring the reader's own carrier; the caption carries the target's obligation (never turn your back, never duck), which is the caveat this acceptance rests on.",
+      "ruling": "W549"
+    }
+  ]
+}

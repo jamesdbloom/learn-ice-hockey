@@ -204,12 +204,15 @@ const PASS_TO = { at: 'high-slot', dy: 6 };                  // (69, 6)
 // distance. The nearer of the two bars sits 5.98 ft from his anchor, which is
 // 2.1 ft clear of the 3.875 ft his glyph's ink reaches.
 //
-// Measured, so that a reviewer who recomputes it is not surprised: the terminal
-// tangent runs 2.61 ft from the receiver's anchor — inside ARRIVAL.glyph, i.e.
-// through the body, if this route carried an arrowhead. It does not, and that is
-// the point: both forms of the rule are scoped to ARROW-ENDED kinds, because a
-// pressure route aimed at its target fails form (a) by construction and
-// terminating in bars is exactly what makes it safe. The bars themselves, 2 ft
+// ⚠️ SUPERSEDED, W550 (20 Nov 2026). This said the terminal tangent ran 2.61 ft from the
+// receiver's anchor and that this was safe because the arrival rule was "scoped to ARROW-ENDED
+// kinds" and "terminating in bars is exactly what makes it safe". Both halves are now false:
+// check-arrivals form (p) tests PRESSURE routes too, and a bar-ended line aimed at a body still
+// draws an arrival into it. At bow 1.5 form (p) measured d 6.50, miss 2.61 (< 2.9). Now bow 0.5:
+// chord (81,13)->(75,2.5), perpendicular (0.868, -0.496), control (78.43, 7.50), terminal tangent
+// (-3.43, -5.00); x falls monotonically 81 -> 75, so the route still never reaches x = 69. The
+// miss on A2 is in check-arrivals' output (form (p), clear). The bars below were measured at
+// bow 1.5 and move by well under a foot at 0.5. The bars themselves, 2 ft
 // either side of the tip across travel, land 5.98 and 7.53 ft from the receiver's
 // anchor, so the nearer of them clears his 3.875 ft of ink by 2.1 ft.
 //
@@ -282,7 +285,9 @@ const denyTheReception = {
   // other, which is the opposite of the teaching.
   routes: [
     { from: PASSER, to: PASS_TO, kind: 'pass' },
-    { from: COVER, to: COVER_TO, kind: 'pressure', bow: 1.5 },
+    // W550 (20 Nov 2026): bow 1.5 -> 0.5. Form (p) had the tip 6.50 ft from A2 with a 2.61 ft miss;
+    // the flatter curve misses A2 by ~3.5 ft. See the COVER_TO note for the x = 69 check.
+    { from: COVER, to: COVER_TO, kind: 'pressure', bow: 0.5 },
   ],
 
   // 5.0 ft off the passer's anchor, clear of his 3.875 ft of ink.

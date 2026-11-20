@@ -970,9 +970,11 @@ const LAST_PUCK = { at: 'centre-ice', dx: -13.4, dy: 14.7 };      // (-13.4, 14.
 // ice past the triangle's ink — and at least 14.18 ft from the puck. Nothing else in the
 // picture is within 15 ft of it, so the collision `you-cannot-beat-two` had to be laid out
 // around cannot arise here.
-// A bar-ended route sits outside both limbs of the arrival invariant by design (see THE
-// ARRIVAL INVARIANT in site/scripts/lib/rink.mjs); an arrowhead here would have been a
-// claim about contact.
+// ⚠️ CORRECTED W550 (20 Nov 2026): this said a bar-ended route "sits outside both limbs of the
+// arrival invariant by design". It no longer does -- check-arrivals form (p) tests PRESSURE
+// routes for aiming at a player, and it FLAGS this one (the-last-player-back: d 8.01 ft, miss
+// 0.00 -- the pressure is drawn straight at you, which is the section's point). That advisory was
+// reviewed and accepted (W550), not cleared. An arrowhead here would have been a claim about contact.
 const LAST_O1_TO = { at: 'centre-ice', dx: -0.84, dy: 8.42 };     // (-0.84, 8.42)
 
 // TWO TEAMMATES, drawn deep in the attacking end so that "ahead of the puck" is something

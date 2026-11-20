@@ -208,21 +208,21 @@ const D1_TO = { at: 'corner:right', dx: -3, dy: -2 };       // (79, 32)
 // into it. A dot product that clears zero is not the same thing as a picture a
 // reader decodes as "behind", and only the render shows the difference.
 const F1 = { at: 'top-of-circle:right', dx: -6, dy: -2.5 }; // (48, 19.5)
-// `pressure`, which ends in the key's two bars and NOT an arrowhead. Two reasons,
-// and the second is the load-bearing one. It finishes on a patch of ice rather than
-// on a person, and a bar says arrive and contain where an arrowhead says continue
-// through — this notation's own distinction, taught to the reader at
-// content/reading-diagrams/reading_ice_hockey_diagrams.md ("a pressure route also
-// ends in it"). And it is what keeps the picture out of a contact claim: no contact
-// is drawn, this document does not teach checking, and what an arrival like this may
-// end in depends on whether the reader's league allows body checking at all.
+// `pressure`, which ends in the key's two bars and NOT an arrowhead: a bar says arrive and
+// contain where an arrowhead says continue through — this notation's own distinction, taught
+// to the reader at content/reading-diagrams/reading_ice_hockey_diagrams.md ("a pressure route
+// also ends in it"). No contact is drawn, this document does not teach checking, and what an
+// arrival like this may end in depends on whether the reader's league allows body checking.
+// ⚠️ A BAR END IS NOT OUTSIDE THE ARRIVAL CHECK ANY MORE: check-arrivals form (p) now tests
+// pressure routes too, and the old tip (60, 24) failed it -- d 7.28 ft from the retriever, miss
+// 0.59 ft, i.e. it DID finish on a person, aimed at his back, which the old comment here denied.
 //
-// Measured. The route runs (48, 19.5) -> (60, 24), 12.82 ft, unit (0.936, 0.351).
-// The two terminal bars sit 2 ft either side of the tip across travel, at
-// (59.30, 25.87) and (60.70, 22.13); the nearer of them is 7.38 ft from the
-// retriever's anchor, clearing his triangle's 4.0 ft of ink by 3.38 ft. The tip
-// itself is 7.28 ft off him.
-const F1_TO = { at: 'faceoff-dot:right', dx: -9, dy: 2 };   // (60, 24)
+// Measured, W550 (20 Nov 2026). The route runs (48, 19.5) -> (61, 21), 13.09 ft, unit
+// (0.993, 0.115). Tip -> retriever (67, 26) is (6, 5), 7.81 ft, and the tangent misses his
+// anchor by 4.28 ft (> 2.9), on his INSIDE (the middle-of-the-ice side). The two terminal bars
+// sit 2 ft either side of the tip across travel, at (60.77, 22.99) and (61.23, 19.01); the
+// nearer is 6.92 ft from the retriever's anchor, clearing his triangle's 4.0 ft of ink by 2.92.
+const F1_TO = { at: 'faceoff-dot:right', dx: -8, dy: -1 };   // (61, 21)
 
 // THE TWO WHO CAN SEE IT AND CANNOT REACH IT.
 //
@@ -321,7 +321,7 @@ const whoCanSeeIt = {
     'feet short of the puck. An opposition forward, a solid circle, stands about twenty feet ' +
     'behind them, just outside the top of the same faceoff circle and a little toward the middle of ' +
     'the ice, on the line the retriever has just skated along; their route runs after the retriever and ends in ' +
-    'two short bars across the line, about seven feet short of them, rather than in an arrowhead. ' +
+    'two short bars across the line, about eight feet short, on their inside, rather than in an arrowhead. ' +
     'Your second defenceman, an open triangle, stands on the ' +
     'far side of the net level with the goal line, and neither that defenceman nor the goalie has a route: ' +
     'nobody else in the picture moves. Both of them are labelled "calls it", the retriever is ' +

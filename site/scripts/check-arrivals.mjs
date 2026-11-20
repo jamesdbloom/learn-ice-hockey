@@ -38,7 +38,8 @@
  *   4. Advisories have no baseline. They are printed and re-triaged from scratch each round,
  *      so a NEW advisory looks exactly like an accepted one. An allowlist keyed by
  *      diagram + target + reason would make the hard/advisory split enforceable rather than
- *      merely reported.
+ *      merely reported. FORM (p) NOW HAS ONE (`arrivals-allow.json`, see Usage); forms (a)
+ *      and (b-G) still do not.
  *   5. It says nothing about whether a route is tactically right.
  *   6. Form (p), the pressure-route test below, is ADVISORY ONLY, for the reason in note 4:
  *      with no baseline, a hard rule would fail the build on routes nobody has triaged. It
@@ -57,12 +58,50 @@
  *
  *     node scripts/check-arrivals.mjs            # exit 1 on any hard violation
  *     node scripts/check-arrivals.mjs --warn     # report, never fail
+ *     node scripts/check-arrivals.mjs --allow <file>     # use another allowlist (fixtures)
+ *     node scripts/check-arrivals.mjs --allow-template   # print a draft entry per raised [p]
+ *
+ * THE (p) ALLOWLIST — `arrivals-allow.json` beside this file. It closes note 4 for form (p)
+ * only, so that PRESSURE_LEVEL can go to 'FAIL' without failing the build on routes a
+ * triage has already accepted. An entry is keyed by the diagram id, the route's kind, bow
+ * and RESOLVED from/to (rounded to 0.01 ft), and the target's id AND resolved anchor —
+ * never by route index or target id alone, because both survive a redraw that changes
+ * the geometry the ruling was made on. A key match then must also reproduce:
+ *   - the measured d and miss (to 0.01 ft);
+ *   - the sha256 of `src/data/rink.json` the ruling was made against;
+ *   - `captionMustContain`, if given — the caveat the acceptance depends on.
+ * Any mismatch RE-RAISES the finding at PRESSURE_LEVEL and says why. An accepted route is
+ * printed as `OK [p-a]` with its ruling, never hidden; an entry matching no finding is
+ * printed as STALE. Every entry carries a `reason` and a `ruling` reference.
  */
 
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
 import { DIAGRAMS } from '../src/diagrams/index.mjs';
 import { loc, ARRIVAL } from './lib/rink.mjs';
 
 const WARN_ONLY = process.argv.includes('--warn');
+const ALLOW_TEMPLATE = process.argv.includes('--allow-template');
+const argAt = process.argv.indexOf('--allow');
+const ALLOW_PATH = argAt > 0 && process.argv[argAt + 1]
+  ? process.argv[argAt + 1]
+  : fileURLToPath(new URL('./arrivals-allow.json', import.meta.url));
+const RINK_PATH = fileURLToPath(new URL('../src/data/rink.json', import.meta.url));
+const RINK_SHA = createHash('sha256').update(readFileSync(RINK_PATH)).digest('hex');
+
+// A missing allowlist is an empty one; a MALFORMED one is an error, because silently
+// treating it as empty would re-raise every accepted route without saying why.
+let ALLOW = [];
+try {
+  ALLOW = JSON.parse(readFileSync(ALLOW_PATH, 'utf8')).entries ?? [];
+} catch (e) {
+  if (e.code !== 'ENOENT') throw new Error(`check-arrivals: cannot read allowlist ${ALLOW_PATH}: ${e.message}`);
+}
+const r2 = (v) => Math.round(v * 100) / 100;
+const pt = (p) => [r2(p.x), r2(p.y)];
+const samePt = (a, b) => Array.isArray(a) && a.length === 2 && a[0] === b[0] && a[1] === b[1];
+const used = new Set();
 
 /**
  * Route kinds this rule applies to: the ones that draw a PLAYER MOVING.
@@ -110,11 +149,11 @@ const ARROW_KINDS = new Set(['skate', 'carry', 'backxover']);
  * who is facing the boards. A glyph has no facing, so a level caveat in the caption remains
  * the only defence there.
  *
- * To promote it to a build failure, change PRESSURE_LEVEL to 'FAIL' — after an allowlist
- * exists (note 4), or every currently-reported route has been triaged.
+ * To promote it to a build failure, change PRESSURE_LEVEL to 'FAIL'. The allowlist (see
+ * Usage) now exists, so promotion waits only on every raised route being redrawn or ruled.
  */
 const PRESSURE_KIND = 'pressure';
-const PRESSURE_LEVEL = 'WARN';
+const PRESSURE_LEVEL = 'FAIL';  // promoted 20 Nov 2026 (W550) after the W549 triage: six redrawn, three allowlisted
 const PUCK_AIM = 1.0;
 
 /** Anchor tolerance for deciding which player a route belongs to. */
@@ -215,11 +254,37 @@ for (const d of DIAGRAMS) {
           // Clear of the player, not merely nearer: a puck inside his ink must not exempt
           // a line aimed at his body.
           && along - pkAlong > ARRIVAL.glyph;
+        // ALLOWLIST: key on the geometry the ruling was made on, then require it to
+        // reproduce. `stale` collects why a key-matched entry no longer holds.
+        const key = { diagram: d.id, kind, bow, from: pt(from), to: pt(to),
+          target: { id: o.id, at: pt(o) } };
+        const ix = exempt ? -1 : ALLOW.findIndex((e) => e.diagram === key.diagram
+          && e.kind === kind && (e.bow ?? 0) === bow
+          && samePt(e.from, key.from) && samePt(e.to, key.to)
+          && e.target?.id === o.id && samePt(e.target?.at, key.target.at));
+        const why = [];
+        let entry = null;
+        if (ix >= 0) {
+          entry = ALLOW[ix];
+          used.add(ix);
+          if (r2(entry.measured?.d) !== r2(tipDist)) why.push(`d ${entry.measured?.d} -> ${r2(tipDist)}`);
+          if (r2(entry.measured?.miss) !== r2(miss)) why.push(`miss ${entry.measured?.miss} -> ${r2(miss)}`);
+          if (entry.rinkSha256 !== RINK_SHA) why.push('rink.json sha256 changed');
+          if (entry.captionMustContain
+              && !(typeof d.caption === 'string' && d.caption.includes(entry.captionMustContain))) {
+            why.push(`caption no longer contains "${entry.captionMustContain}"`);
+          }
+        }
+        const allowed = entry && !why.length;
         findings.push({
-          level: exempt ? 'OK' : PRESSURE_LEVEL, rule: exempt ? 'p-x' : 'p',
+          level: exempt || allowed ? 'OK' : PRESSURE_LEVEL,
+          rule: exempt ? 'p-x' : allowed ? 'p-a' : 'p',
           diagram: d.id, kind, opponent: o.id, goalie: o.goalie, ri, to,
           dist: tipDist, miss, angle, pkMiss, pkAlong,
           side: o.team, ownerSide: owner.team, ownerId: owner.id,
+          ruling: entry?.ruling, reraised: entry && why.length ? why : null,
+          template: { ...key, measured: { d: r2(tipDist), miss: r2(miss) }, rinkSha256: RINK_SHA,
+            captionMustContain: '', reason: '', ruling: '' },
         });
       }
       continue;
@@ -295,19 +360,38 @@ const who = (f) => (f.side === 'opp' ? 'the opposition' : "the reader's own");
 
 for (const f of findings) {
   const target = f.rule === 'b-G' || f.goalie ? `${who(f)} GOALTENDER` : `${who(f)} ${f.opponent}`;
-  const what = f.rule === 'p' || f.rule === 'p-x'
+  const what = f.rule === 'p' || f.rule === 'p-x' || f.rule === 'p-a'
     ? `pressure route aims at a player (route ${f.ri}, tip ${f.to.x.toFixed(1)},${f.to.y.toFixed(1)}): `
       + `${target}, d ${f.dist.toFixed(2)} ft, `
       + `miss ${f.miss.toFixed(2)} ft, ${f.angle.toFixed(1)}° off the bearing`
       + (f.rule === 'p-x'
         ? ` — EXEMPT, stick-on-puck (puck ${f.pkAlong.toFixed(2)} ft ahead, miss ${f.pkMiss.toFixed(2)} ft)`
-        : (f.pkMiss !== null ? ` (puck miss ${f.pkMiss.toFixed(2)} ft, ${f.pkAlong.toFixed(2)} ft along)` : ' (no puck drawn)'))
+        : f.rule === 'p-a'
+        ? ` — ALLOWLISTED (${f.ruling})`
+        : (f.pkMiss !== null ? ` (puck miss ${f.pkMiss.toFixed(2)} ft, ${f.pkAlong.toFixed(2)} ft along)` : ' (no puck drawn)')
+          + (f.reraised ? ` — RE-RAISED, allowlist entry no longer holds: ${f.reraised.join('; ')}` : ''))
     : f.rule === 'a'
     ? `terminal tangent passes ${f.dist.toFixed(2)} ft from ${target}, `
       + `${f.beyond.toFixed(1)} ft beyond the tip`
     : `arrowhead finishes ${f.dist.toFixed(2)} ft from ${target}`;
   console.log(`  ${f.level.padEnd(4)} [${f.rule.padEnd(3)}]  ${f.diagram.padEnd(30)} `
     + `${(f.ownerSide + ':' + f.ownerId).padEnd(8)} ${what}`);
+}
+
+// Entries that matched no finding by key: the route was redrawn, renamed or removed, or the
+// finding cleared. Reported, never pruned silently — a stale entry is a ruling about a
+// picture that no longer exists.
+const stale = ALLOW.map((e, i) => ({ e, i })).filter(({ i }) => !used.has(i));
+for (const { e } of stale) {
+  console.log(`  STALE [p-a] ${String(e.diagram).padEnd(30)} allowlist entry matches no finding `
+    + `(target ${e.target?.id}, to ${JSON.stringify(e.to)}, bow ${e.bow ?? 0}; ${e.ruling}) — remove or re-rule it`);
+}
+
+if (ALLOW_TEMPLATE) {
+  const raised = findings.filter((f) => f.rule === 'p');
+  console.log(`\n--allow-template: ${raised.length} draft entr${raised.length === 1 ? 'y' : 'ies'} `
+    + '(fill reason, ruling and, where the acceptance rests on a caveat, captionMustContain):');
+  console.log(JSON.stringify(raised.map((f) => f.template), null, 2));
 }
 
 for (const u of unowned) {
@@ -320,8 +404,9 @@ for (const u of unowned) {
 }
 
 const fails = findings.filter((f) => f.level === 'FAIL');
-const exempt = findings.filter((f) => f.level === 'OK');
-const advisory = findings.length - fails.length - exempt.length;
+const exempt = findings.filter((f) => f.rule === 'p-x');
+const allowed = findings.filter((f) => f.rule === 'p-a');
+const advisory = findings.length - fails.length - exempt.length - allowed.length;
 const routes = DIAGRAMS.reduce((a, d) => a + (d.routes?.length ?? 0), 0);
 const arrows = DIAGRAMS.reduce(
   (a, d) => a + (d.routes ?? []).filter((r) => ARROW_KINDS.has(r.kind ?? 'skate')).length, 0);
@@ -333,10 +418,17 @@ console.log(
   + `(${arrows} skater-owned and arrow-ended, ${pressures} pressure; the only ones in scope) · `
   + `${fails.length} hard, ${advisory} advisory`
   + (exempt.length ? `, ${exempt.length} exempt (stick-on-puck)` : '')
+  + (allowed.length ? `, ${allowed.length} allowlisted` : '')
+  + (stale.length ? `, ${stale.length} STALE allowlist entr${stale.length === 1 ? 'y' : 'ies'}` : '')
   + (unowned.length ? `, ${unowned.length} unattributable and NOT checked` : ''));
 
 if (fails.length && !WARN_ONLY) {
-  console.error(
+  if (fails.some((f) => f.rule === 'p')) console.error(
+    '\ncheck-arrivals FAILED on form (p): a pressure route aims at a player. Move its tip so '
+    + 'the terminal tangent misses him by more than ARRIVAL.glyph or aims at a puck clear of '
+    + 'him, or — if a triage accepts it — add an entry to arrivals-allow.json with a reason '
+    + 'and a ruling (`--allow-template` drafts one).');
+  if (fails.some((f) => f.rule !== 'p')) console.error(
     '\ncheck-arrivals FAILED. An arrowhead finishing on an opposing skater reads as '
     + '"skate through him". End the route in two bars (`pressure`/`stop`), or stop it '
     + 'further short. The invariant is stated above `playSvg` in lib/rink.mjs — fix it '

@@ -525,7 +525,13 @@ const holdingTheLine = {
 
   routes: [
     { from: HOLD_CARRIER, to: { at: 'centre-ice', dx: -18, dy: 11.5 }, kind: 'pass' }, // -> (-18, 11.5)
-    { from: HOLD_FORECHECK, to: { at: 'centre-ice', dx: 8, dy: 17 }, kind: 'pressure' }, // -> (8, 17)
+    // W550 (20 Nov 2026): tip (8, 17) -> (8, 14) -> (6, 14). Form (p) had the first line aimed at the
+    // reader's F, the passer at (2, 20) (d 6.71, miss 0.98). (8, 14) cleared form (p) by measure (miss
+    // 3.34) but a safety ruling found it still ran on past him toward the puck, approaching diagonally
+    // from behind a passer who faces his own end, clear of his ink by only ~0.06 ft. (6, 14) aims the
+    // forechecker at the PASSING LANE instead: chord (-12, 4), unit (-0.949, 0.316); tip -> passer
+    // (-4, 6), d 7.21 ft, miss 4.43 ft; the line crosses the drawn pass near (-4, 17.3), ahead of him.
+    { from: HOLD_FORECHECK, to: { at: 'centre-ice', dx: 6, dy: 14 }, kind: 'pressure' }, // -> (6, 14)
   ],
 
   // 6.67 ft from the carrier's centre, on the boards side of him and 4.26 ft off the

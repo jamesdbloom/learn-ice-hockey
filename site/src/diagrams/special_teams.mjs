@@ -910,7 +910,7 @@ const pkWedge = {
     'players form a tight triangle around the net: two defencemen just outside the crease edges ' +
     'either side, and one forward in the slot in front of them. A fourth own player, the +1, is ' +
     'out on the puck side, the top of the picture, between the net and the puck, with a pressure route running ' +
-    'outward toward the puck carrier on the half-wall and finishing short of them. Five opposition ' +
+    'outward toward the puck on the half-wall and finishing short of it. Five opposition ' +
     'players in a 1-3-1: one at the point, two on the half-walls with the puck on the top one, a ' +
     'bumper in the middle of the slot shaded to the puck side, and one at the net front.',
 
@@ -939,7 +939,10 @@ const pkWedge = {
   ],
 
   routes: [
-    { from: { at: 'faceoff-dot:right', dx: 8, dy: -2 }, to: { at: 'half-wall:right', dx: 3, dy: -4 }, kind: 'pressure' },
+    // W550 (20 Nov 2026): tip moved from (72, 34.5) to (70.6, 31.5) so the +1 aims at the PUCK, as the
+    // caption now says ("stick on the puck"): check-arrivals form (p) had the old tip 5.00 ft from the
+    // carrier H with a 1.53 ft miss; the new tip is stick-on-puck exempt (puck ~3.4 ft ahead, miss ~0.06).
+    { from: { at: 'faceoff-dot:right', dx: 8, dy: -2 }, to: { at: 'half-wall:right', dx: 1.6, dy: -7 }, kind: 'pressure' },
   ],
 
   puck: { at: 'half-wall:right', dy: -4 },
@@ -1053,7 +1056,9 @@ const pkNz13 = {
   ],
 
   routes: [
-    { from: { at: 'centre-ice', dx: -10, dy: 12 }, to: { at: 'centre-ice', dx: -18, dy: 13 }, kind: 'pressure' },
+    // W550 (20 Nov 2026): tip (-18, 13) -> (-18.5, 10.7): the old line aimed through PP (check-arrivals
+    // form (p): d 6.08, miss 0.25); the new one passes PP's anchor by ~4.1 ft.
+    { from: { at: 'centre-ice', dx: -10, dy: 12 }, to: { at: 'centre-ice', dx: -18.5, dy: 10.7 }, kind: 'pressure' },
     // "the three behind back up in unison, refusing to be split" — the key's tight
     // wave, all three the same length, toward their own blue line.
     { from: { at: 'neutral-zone-mid' },          to: { at: 'blue-line', dx: -3 },          kind: 'backward' },
@@ -1106,7 +1111,9 @@ const pkNz112 = {
   ],
 
   routes: [
-    { from: { at: 'centre-ice', dx: -10, dy: 22 }, to: { at: 'centre-ice', dx: -18, dy: 22 }, kind: 'pressure' },
+    // W550 (20 Nov 2026): tip (-18, 22) -> (-18.5, 19.3): the old line ran dead through PP (form (p):
+    // d 6.00, miss 0.00); the new one misses PP by ~4.2 ft and aims at the puck (miss ~0.05).
+    { from: { at: 'centre-ice', dx: -10, dy: 22 }, to: { at: 'centre-ice', dx: -18.5, dy: 19.3 }, kind: 'pressure' },
   ],
 
   puck: { at: 'centre-ice', dx: -24, dy: 17.5 },

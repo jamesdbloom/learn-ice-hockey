@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W548 shipped with record `w548_check_arrivals_pressure_routes_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W549 and W550 shipped with record `w550_pressure_routes_redrawn_allowlisted_and_promoted_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -289,6 +289,7 @@ Both pages are SHIPPED: Finding More Ice (0337d6a) and Practising on Your Own (1
 
 ## Owner decisions needed
 
+- **Opposition routes (W550 safety ruling):** the drawing standard applies whoever skates the route, because a still picture teaches its shape. The caption duty differs. When the reader arrives, the caption gives their obligation and the level caveat. When the opposition arrives, it gives the receiver's posture and must not describe the opponent's approach approvingly. Where an opposition route ends behind a player whose facing is fixed, fix the drawing first. This belongs in `.claude/agents/diagram-reviewer.md` item 4, alongside the "boards at their back" proposal above. Owner's call.
 - **diagram-reviewer.md item 4 (W547):** the facing rule is "the boards they face". The W547 census recommends rewording it to "the boards they face or have at their back", and adding that a target pinned within about 8 ft of the boards always takes the level caveat. This is an edit to `.claude/agents/diagram-reviewer.md`.
 These questions sit inside the rows above and need the owner's call before anyone acts on them:
 - **W405 (1):** the three wrong-player diagram labels are still drawn ("boards-side D", "nearest body", "retrieving").
@@ -317,7 +318,11 @@ These questions sit inside the rows above and need the owner's call before anyon
 
 ## Diagrams and site
 
-- **Pressure routes, rule 1: triage the 9 [p] advisories (from W548).** check-arrivals now tests pressure routes (advisory form (p), puck exemption [p-x]). It found nine aimed at a player: defender-holding-the-line, deny-the-reception, faceoff-dzone-clean-loss ×2, pk-nz-1-1-2, pk-nz-1-3, pk-wedge-plus-1 (miss 1.53; the W545 caption repair left the route), the-call-and-who-can-see-it, the-last-player-back. Pressure aimed at a player may be intended, so read each picture and caption, then redraw or accept. Promote PRESSURE_LEVEL to FAIL once the list is triaged. Pre-existing and noted here: corner-escape-routes' "'takes the middle away'" label crosses a painted circle (auto-placed).
+- **Pressure routes, follow-ups (from W550):**
+  - check-arrivals form (p) is now FAIL, with an allowlist in `site/scripts/arrivals-allow.json`.
+  - Still uncovered: a curve that bows through a player before its tip, and targets more than 9 ft from the tip (forecheck-roles-rotate D2 sits at 9.49 ft, miss 0.00).
+  - Diagram-reviewer note: defender-holding-the-line's puck is drawn about 4 ft off the start of the pass line.
+  - Pre-existing: corner-escape-routes' auto-placed "'takes the middle away'" label crosses a painted circle.
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.
 - **Owner decisions of 14 Nov, what is left (records reviews/w334_owner_decisions_c_d_f_2026-11-14.md, w335…, w337…):** (a) Decision F: the owner has not said whether it also reaches the other Key focus and Overview units that carry a per-book price list. These are rules_primer Overview (discipline after an ejection, and the IIHF vs NHL 20.4 lists), body_contact_and_battles Overview ("A hit from behind has no bare minor in any book here…"), uk_rules Overview and special_teams Overview. (b) A W334 safety advisory says body_contact_and_battles Key focus has no "never contact the head" (it lives in the Overview). Adding it is a quality-bar call for the owner. (c) The owner has not recorded acceptance of decision D, which shipped as a multi-sentence per-book passage ("Keep your skates off a player who is down…") rather than one sentence.
