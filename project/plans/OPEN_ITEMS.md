@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W538 shipped with record `w538_long_key_takeaways_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W539 shipped with record `w539_long_paragraphs_split_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -21,6 +21,15 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(4) The "X and Y in the crease" parse shape.** Dropping a book from a list can leave its scope on a sibling, as happened at winger :789.
     - Only group 2's nine files were checked by listening.
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
+- **From W539 (20 Nov):**
+  - **(1) The 12 remaining paragraphs over 1,200 characters.**
+    - Seven files have one each: shooting, puck_handling, zone_entries, special_teams, team_play_and_culture, playing_without_the_puck and uk_rules. W539 did not reach them.
+    - Five were left on purpose: defending_the_rush CM :1101/:1113, game_management CM :1290, glossary :402 (the only seam would split a claim from its counterweight), and risk_management CM :932 (10 characters over).
+  - **(2) The marker count rose by 32 across 16 files** (1,682 → 1,714 glyphs). Split halves that state a hazard kept their own spoken "Important.".
+    - Five over-escalated markers were removed.
+    - Three judged over-escalated were kept, because `check_marker_pairs` could not confirm removal: winger :873, goaltender :1283 and :1716.
+    - forechecking :813 is optional.
+    - Revisit as a marker-density pass, not by sweeping.
 - **From W538 (20 Nov):**
   - **(1) 16 Key Takeaways are still over 60 words** (`check_readability`). The words above 60 in each are tariff limbs: book scopes, conditions and penalty tiers. Trimming went only from 18 to 16. Most are the goalie-charging ladder, which is restated across eight Key Takeaways in different wordings. A structural answer would make each of those Key Takeaways lead with the instruction plus one "can end your game" clause, and leave the per-book ladder to the page's What it costs section. Measure it first. A Key Takeaway is voiced alone, so check that the mandatory tiers still reach a listener somewhere in that page's summary layers.
   - **(2) Helmet-clash act, other wordings.** The W538 layer test found faceoffs CM :1323 by string ("helmet clash"). Units worded "heads together" or "head over the dot" with a USA Hockey tariff were not swept.
