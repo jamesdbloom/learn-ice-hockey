@@ -366,7 +366,7 @@ Convention: Coaching sources call the strong-side draw a right-shot centre on th
 Key: Your strong side is the circle where your natural backward pull sends the puck toward the boards
 Action: Take ten draws in each circle and you will know within a minute
 Risk: On your weak side the board-side pull is a forehand — slower and weaker for most players
-Never: Solve that by pulling to your backhand in your own end — it sends the puck to the middle, the worst place it can go
+Never: Fix a weak-side draw by pulling to your backhand in your own end — it sends the puck to the middle, the worst place it can go
 Options: Match the circle to the centre, flip your hands, or put a left-shot and a right-shot centre out together
 ```
 
@@ -402,7 +402,7 @@ A centre's shot hand decides which circle they are better in, and coaching staff
 **In short:** In your own end, settle for a tie-up over a clean loss, never win it to the middle, and jump every loose puck.
 
 ```facts
-Priority: Do not lose this cleanly — a tie-up is acceptable, a clean loss to their strong-side point is not
+Priority: Do not lose a defensive-zone draw cleanly — a tie-up is acceptable, a clean loss to their strong-side point is not
 Position: Boards-side winger on the outside hash mark; inside winger on the inside hash mark facing the slot; boards-side defenceman behind and outside that winger; slot defenceman in front of the goalie
 Action: On a clean win, pull to the boards-side defenceman to rim it out or hit the boards-side winger
 Action: On a clean loss, wingers release to the points on the drop; the centre covers their opponent, boards-side D takes the corner or half-wall, and the slot D holds the net front and blocks the lane
@@ -556,7 +556,7 @@ Risk: Board-side loops and swaps work precisely once per game against an attenti
 Options: The quick rim, the direct exit, the reverse, or off the glass and out of your zone — every forechecker is stationary at the whistle, so a hard rim or direct exit beats them
 Rule: Under NHL and IIHF rules — the KHL reportedly too, unverified — your goalie may only play the puck behind the goal line inside the trapezoid (Rule 1.8; penalty NHL 27.8 and 63.2(viii), IIHF 27.7 and 63.2(VIII)); the sole exception is skate contact with the crease
 Rule: The goalkeeper's restricted area is IIHF Rule 27.7, not the NHL's 27.8. Nothing in the Elite League's Casebook switches it off; England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", scope and standing unsettled — keep your goalie inside it
-Read: Play it as though it binds — your goalie stays inside the trapezoid, so a rim that dies in the corner is yours to fetch, not theirs
+Read: Play the trapezoid as though it binds — your goalie stays inside the trapezoid, so a rim that dies in the corner is yours to fetch, not theirs
 Rule: USA Hockey, Hockey Canada and the CARHA rec book write no trapezoid, so under them a rim dying in your corner is your goalie's to fetch, though none lets them sit on it; a PWHL goalie plays as if it binds — Rules 1.8 and 27.8 switch it off, but 65.2(viii) keeps the minor
 Rule: No book without a trapezoid, nor the PWHL, lets your goalie sit on a dead rim out of the crease — USA Hockey 614(c) behind the goal line or outside the privileged area; CARHA 58(b) behind the goal line and 61(b) anywhere; PWHL 65.2(i); Hockey Canada clause v of Interpretation 3 to 10.1(a)
 Key: Closer in, and in front of the goal line, your goalie has considerably more latitude under every book — Goaltender owns that test, not this section
@@ -790,7 +790,7 @@ Rule: Both skates stay outside the circle and outside the hash marks (NHL and II
 Rule: Under the NHL, IIHF and PWHL a skate may touch the circle line or the hash-mark line — crossing it is what does it (76.7, both IIHF editions; PWHL 78.7); under Hockey Canada and CARHA a skate on the circle is already encroachment; USA Hockey wants skates "completely behind" the hash marks
 Rule: Under the NHL, IIHF and PWHL your stick may be inside the circle or between the hash marks if it touches no opponent or their stick (76.7, both IIHF editions; PWHL 78.7); USA Hockey, Hockey Canada and CARHA bar it between the hash marks
 Rule: USA Hockey allows no reaching stick — its Casebook answers "No" to a stick between the hash marks: "Both players must be completely behind their respective hash marks. This includes all sticks and all skates" (Rule 613, Situation 8)
-Rule: Hockey Canada and CARHA split it — both glossaries accept a stick inside the circle but make one "in the area between the hash marks" encroachment, and count a skate "on the face-off circle" as encroachment too
+Rule: Hockey Canada and CARHA draw the stick line at the hash marks — both glossaries accept a stick inside the circle but make one "in the area between the hash marks" encroachment, and count a skate "on the face-off circle" as encroachment too
 Action: Tell your linemates: skates and stick behind your own hash mark, skates off the circle line — legal in all six books; the reach the NHL, IIHF and PWHL allow is not every book's
 ```
 
@@ -986,7 +986,7 @@ Rule: Under NHL, IIHF and PWHL rules the attacking team picks the dot (81.2, PWH
 Rule: After an icing the first faceoff violation removes no centre under the NHL, PWHL and IIHF 2026/27 (NHL and IIHF 76.4, PWHL 78.4); under the PWHL treat any later one, by either team, as a bench minor; under the IIHF, not once penalties after the icing have let players change (Situation 81.18)
 Rule: The free first faceoff violation after an icing is Hockey Canada's only in Junior divisions (Rule 6.5(a)), and neither USA Hockey (613) nor CARHA (57) writes one at all
 Rule: CARHA allows each team one change per stoppage, within ten seconds; a late change is sent back the first time and is a bench minor after that (Rules 19(d), 19(e), 19(g))
-Action: Play fast — their disadvantage is fatigue, and it evaporates the moment they get to breathe
+Action: Play fast — the icing team's disadvantage is fatigue, and it evaporates the moment they get to breathe
 Action: When you iced it, get the puck off the glass and out of your zone at the first opportunity; nothing clever
 ```
 
@@ -1126,7 +1126,7 @@ The penalties behind the instructions above, one hazard at a time. Each part ope
 Rule: Contact before the drop is a violation under NHL and IIHF 76.7 and can draw a minor on the taker at the referee's discretion as well, where USA Hockey 613(e), Hockey Canada 6.2(c) and CARHA 57(b) make that minor mandatory
 Rule: Where body contact itself is barred, a lean at the dot can be penalised anyway, even a winger's — CARHA 49(a) in every game, a minor, or a major that ejects (30(a)); USA Hockey Competitive Contact categories (604(c) Note); Hockey Canada U13 and below, female and Member-approved divisions (7.3(a))
 Rule: Only Hockey Canada defines when a faceoff is complete — Rule 6.2, the puck "contacts the ice surface before contacting the stick or any part of the body of the player taking the face-off", so there contact timed to the drop is contact before completion
-Rule: Under the IIHF 2026/27 book that contact costs you the centre as well — 76.7 has the linesperson "order the center of the offending team replaced", bar the first violation after an icing (76.4); the 2025/26 book only warned the centre
+Rule: Under the IIHF 2026/27 book, contact before the drop costs you the centre as well — 76.7 has the linesperson "order the center of the offending team replaced", bar the first violation after an icing (76.4); the 2025/26 book only warned the centre
 ```
 
 Hockey Canada alone defines when the faceoff is complete — Rule 6.2: the puck *"contacts the ice surface before contacting the stick or any part of the body of the player taking the face-off"*. The NHL and IIHF say only that it *"ends when the puck has been legally dropped"*.

@@ -117,8 +117,8 @@ Close the gap on the rush. A tight gap takes away the attacker's speed, their ti
 
 ```facts
 Key: A large gap looks safe and is not — it hands the attacker three things at once
-Risk: Space to accelerate into, so they arrive faster than you while you are moving backwards
-Risk: Time to lift their head, find the trailer and the far winger, and pick the best of three options
+Risk: A big gap gives the carrier space to accelerate, so they arrive faster than you while you are moving backwards
+Risk: A big gap gives the carrier time to lift their head, find the trailer and the far winger, and pick the best of three options
 Risk: A clean shooting lane from distance — a shot through your shins is not a real chance
 Action: Close the gap and you remove speed, vision and shooting simultaneously
 Key: Gap control is treated as the highest-leverage habit in defensive hockey — coaching emphasis, not a counted ranking
@@ -234,7 +234,7 @@ Never: Line up chest-to-chest, or put your inside shoulder on their chest — th
 Action: Force them outside, then close the outside — in a checking league ride them further wide, but seeing you coming does not make a carrier fair game: boarding is not only about a defenceless opponent
 Rule: The ride is a checking-league instruction — USA Hockey 604(a) bars body checking at 12U and below, in all Girls'/Women's and all non-check Adult classifications, and Hockey Canada 7.3(a) at U13 and below, female hockey and any Member-approved division; angling with your route stays legal there
 Key: The boards are your second defender — no ice one side, a shrinking angle, nowhere to cut back — but they take the carrier's ice, not the carrier, and on a wide sheet gap and stick beat steering
-Rule: Riding them into the wall is a different act, and defenceless is not the whole test — USA Hockey 603 asks no such question, and NHL, IIHF and PWHL 41.1 and Hockey Canada 7.2 name the icing or offside race as boarding, even where nobody is defenceless
+Rule: Riding anyone into the wall is a different act from steering, and defenceless is not the whole test — USA Hockey 603 asks no such question, and NHL, IIHF and PWHL 41.1 and Hockey Canada 7.2 name the icing or offside race as boarding, even where nobody is defenceless
 Mindset: Good rush defence is choosing which thing to concede, not taking everything away
 ```
 
@@ -315,7 +315,7 @@ Never: Chase from behind their shoulder — that is jogging, and you cannot defe
 Action: Take a route that puts you inside them, between them and your net, even if it is slightly longer
 Position: Arrive at their inside hip, not their back pocket, so your stick reaches the passing lane
 Action: Take the ice, not the body — get ahead of your man and hold your lane; veering into an opponent off the puck can be called interference anywhere, and where checking is barred an illegal check too
-Rule: Never finish the chase into their back, puck or not — plan on ejection: no minor in NHL, PWHL or IIHF 43.2, a game misconduct at the floor in Hockey Canada 7.5(a) and CARHA 53(a); meant to injure, a match in all but the IIHF; USA Hockey: if reckless, plan on a match, likely multi-game ban (602(a))
+Rule: Never end a chase with a hit to the back, puck or not — plan on ejection: no minor in NHL, PWHL or IIHF 43.2, a game misconduct at the floor in Hockey Canada 7.5(a) and CARHA 53(a); meant to injure, a match in all but the IIHF; USA Hockey: if reckless, plan on a match, likely multi-game ban (602(a))
 Rule: USA Hockey: even light checking from behind is at least a minor + misconduct (608(a)); forceful at the boards, head first into boards or net, or reckless, at least a major + game misconduct (608(b); Casebook 608 Sit. 1)
 Rule: A hit from behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c) (on the head 7.6(c)/7.7(c)) and CARHA 53(b); a hit meant to injure is a match in every book here but the IIHF, which has no match penalty — plan on ejection there
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
@@ -361,7 +361,7 @@ Risk: Two defenders on one attacker, and your actual assignment left unmarked
 Action: Skate past the puck battle to the unmarked attacker — your job is the player nobody has
 Mindset: Trusting your defenceman to win their own 1-on-1 is what turns a 3-on-2 into three 1-on-1s
 Options: Some teams run the opposite by design — the first forward back pressures the carrier and the defenceman holds inside instead
-Never: Turn that pressure into a hit from behind — where pressuring the carrier is your system it is your feet and your stick, and nothing else
+Never: Turn pressure on the carrier into a hit from behind — where pressuring the carrier is your system it is your feet and your stick, and nothing else
 Key: Under either system somebody has the carrier and somebody has the unmarked attacker, and it is agreed before the rush rather than during it
 ```
 
@@ -469,7 +469,7 @@ Action: One defender takes the puck, normally the one on the carrier's side, and
 Position: The other stays back and inside, covering the trailer who has not arrived yet
 Key: The engaged defender can afford to be aggressive with the gap — a miss leaves your partner in a 1-on-1 rather than nothing
 Rule: Cover behind you is no defence to charging — USA Hockey Casebook 607, Situation 3 calls accelerating through a check charging even without the two fast strides, and Hockey Canada 7.4(ii) needs only two
-Action: Call it — "I've got them" from the engaging defender, so the other holds
+Action: Call who engages — "I've got them" from the engaging defender, so the other holds
 ```
 
 The failure mode is both defenders converging on the carrier. That opens the ice behind you for a late-arriving second attacker and turns a comfortable situation into a scramble.
@@ -560,7 +560,7 @@ Note what does *not* change between the two: **the goalie still owns the shooter
 Two attackers, two defenders. Even numbers, and it should be routine — but it is the situation most often botched, because "even" makes people relax. That ranking is coaching emphasis, not a counted one.
 
 ```facts
-Convention: Play it man-on-man — each defender takes an attacker and holds a tight gap on them
+Convention: Play a 2-on-2 man-on-man — each defender takes an attacker and holds a tight gap on them
 Options: Zone is the realistic alternative — strong-side D takes whoever carries into their half, weak-side D holds the middle
 Read: Zone survives a crossing rush better, man-on-man is tighter on a straight one — find out which your team wants
 Never: Both drift toward the puck — a simple pass then leaves their partner the net
@@ -632,9 +632,9 @@ Action: Call for help loudly — your backcheckers may not know how bad it is
 **In short:** Play the puck with your stick, or skate to catch them and angle them wide with your route; it is your goalie's save.
 
 ```facts
-Priority: This is your goalie's save and they usually make it — do the one useful legal thing, then get out of the way
+Priority: A breakaway is your goalie's save and they usually make it — do the one useful legal thing, then get out of the way
 Action: Stick on the puck only — a poke at the puck itself, or a stick lift on their blade as they release
-Options: Skating to catch them is legal, and angling them wide with your route turns it into a bad-angle chance — the route is yours everywhere, the contact that moves them off it is not
+Options: Skating to catch a breakaway carrier is legal, and angling them wide with your route turns it into a bad-angle chance — the route is yours everywhere, the contact that moves them off it is not
 Rule: Catching a breakaway carrier puts you behind them, so play the puck, never their back — the NHL, PWHL and IIHF write no minor for a hit from behind (43.2), and Hockey Canada 7.5(a) and CARHA 53(a) add a game misconduct even at the floor
 Rule: On the head, a hit from behind on a player who cannot protect themselves, or meant to injure, is a Hockey Canada match (7.6(c), 7.7(c)); under USA Hockey, plan on a match for any reckless hit, boards or not — mandatory with excessive force on a vulnerable or defenceless opponent (602(a), 608(c))
 Rule: A hit from behind into the net or boards on a player who cannot protect themselves is a mandatory match in Hockey Canada 7.5(c) and CARHA 53(b), and USA Hockey 608(c) if reckless with excessive force; meant to injure, a match in every book but the IIHF, which has none — plan on ejection there

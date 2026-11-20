@@ -75,7 +75,7 @@ Technique: Start the puck near the heel with your bottom hand mid-shaft, and cup
 Technique: Sweep, do not slap — the puck rolls heel to toe and leaves off the toe
 Technique: Transfer your weight from the back leg through your hips toward your front foot
 Technique: Follow through with the blade pointing at the target, finishing low around knee height
-Read: Use it as the default whenever the lane is clear and the receiver can be reached along the ice
+Read: Use the flat pass as the default whenever the lane is clear and the receiver can be reached along the ice
 Risk: Low, and the risk is lane selection rather than technique — a clear lane is a precondition
 ```
 
@@ -97,10 +97,10 @@ Risk: Low, and the risk is lane selection rather than technique — a clear lane
 ```facts
 Technique: Open the face of the blade slightly, like a wedge
 Technique: Sweep heel to toe, rolling your wrists upward and drawing the blade toward your body to put spin on it
-Technique: Land it a few feet short of the receiver's blade so it settles and slides the last stretch
-Read: Use it when it is the only option — a stick lying in the lane, or a pass that must cross a body
+Technique: Land a saucer a few feet short of the receiver's blade so it settles and slides the last stretch
+Read: Use the saucer when it is the only option — a stick lying in the lane, or a pass that must cross a body
 Never: Saucer when a flat pass is available — air is a difficulty you are adding on purpose
-Risk: Moderate to high — one that lands on edge is worse than no pass, because the receiver commits and then loses it
+Risk: Moderate to high — a saucer that lands on edge is worse than no pass, because the receiver commits and then loses it
 ```
 
 **Mechanics.**
@@ -120,7 +120,7 @@ Risk: Moderate to high — one that lands on edge is worse than no pass, because
 ```facts
 Technique: A shortened sweep — less backswing, a sharp snap of the wrists, blade still cupped, still following through at the target
 Goal: Trade a little accuracy for a lot of speed to beat a window that is closing
-Read: Use it into a seam a backchecker is about to fill, to a teammate about to be checked, or into the slot for a one-timer
+Read: Use the snap pass into a seam a backchecker is about to fill, to a teammate about to be checked, or into the slot for a one-timer
 Never: Snap one at a stationary teammate in a low-pressure spot
 Risk: A hard pass your teammate cannot handle is your turnover, not theirs
 ```
@@ -137,7 +137,7 @@ Risk: A hard pass your teammate cannot handle is your turnover, not theirs
 Technique: Start the puck at the middle or heel on your backhand side and roll it heel-to-toe, exactly as on the forehand
 Technique: Pull with the bottom hand and sweep across your body, top hand rotating to keep the face closed
 Technique: Drive through with the lower shoulder — the power comes from the body turning, not the arms alone
-Read: Use it whenever the play is on your backhand side and turning to your forehand would cost you the window
+Read: Use the backhand pass whenever the play is on your backhand side and turning to your forehand would cost you the window
 Risk: Backhand passes are slower and float more, so the lane needs to be a little cleaner
 Key: A checker who knows you cannot pass backhand takes the forehand side away and forces the turn
 ```
@@ -159,8 +159,8 @@ Key: A checker who knows you cannot pass backhand takes the forehand side away a
 
 ```facts
 Technique: Play the angle, not the target. Aim at the spot on the wall that reflects toward your teammate
-Technique: Keep it flat and firm, and hit the boards low, where the bounce is truest
-Read: Use it when a stick or body sits in the direct lane but the boards run behind them
+Technique: Keep a bank pass flat and firm, and hit the boards low, where the bounce is truest
+Read: Use the bank pass when a stick or body sits in the direct lane but the boards run behind them
 Action: Call it, and test a bank in warm-up — board liveliness genuinely varies rink to rink
 Risk: Low risk, moderate reliability — the puck never enters the lane the checker is defending, but the bounce is not fully predictable
 ```
@@ -233,7 +233,7 @@ CARHA 53(b) makes a hit from behind into the boards or the net, on a player who 
 ```facts
 Goal: Aim at a patch of ice your teammate will reach before an opponent does, not at a blade
 Technique: Flat, with enough pace to clear the nearest defender's stick but not so much that it runs to the far boards
-Read: Use it when no teammate is open but one is about to be, or in the neutral zone when a direct pass would thread traffic, if your teammate can win the race
+Read: Use the area pass when no teammate is open but one is about to be, or in the neutral zone when a direct pass would thread traffic, if your teammate can win the race
 Key: An area pass cannot be intercepted the way a direct pass can, because it is not aimed at a body — it becomes a race
 Risk: Only a good play if your teammate has a genuine speed or angle advantage; otherwise you are giving the puck away politely
 ```
@@ -280,7 +280,7 @@ Default position: if you are not sure the trailer is there, do not drop it.
 ```facts
 Technique: A long, hard pass needing a full weight transfer and a long follow-through — most misses are underpowered, not misaimed
 Options: Flat if the lane is clear, saucered if it must cross a stick
-Read: Use it when the opposition has over-committed to the forecheck and there is genuinely a man behind them — best on a turnover
+Read: Use the stretch pass when the opposition has over-committed to the forecheck and there is genuinely a man behind them — best on a turnover
 Rule: A pass may cross both blue lines and the centre red line — none of the NHL, IIHF, PWHL, USA Hockey, Hockey Canada or CARHA books keeps a two-line pass restriction, and offside is the only rule limiting how far forward the receiver may be (NHL Rule 83; USA Hockey 630; Hockey Canada 6.11)
 Rule: The receiver is offside when both skates completely cross the leading edge of the blue line before the puck does (NHL Rule 83.1; IIHF Rule 83.1 in the same words)
 Rule: A blade on the ice at or behind the line is onside in every book. A trail skate held in the air behind the line is onside under the NHL, IIHF and PWHL, but offside under USA Hockey 630(a) and Hockey Canada 6.11, which require ice contact; CARHA does not settle it
@@ -334,8 +334,8 @@ Risk: A puck arriving behind a teammate or in their feet in traffic puts their h
 Read: Read the feet, not the chest — their skates tell you where they are actually going and how fast
 Technique: Pick a catch-point ahead of them and pass to that spot, rather than tracking a moving blade with your eyes
 Read: Faster receiver, longer lead; harder pass, shorter lead — the two variables trade against each other
-Targets: Lead them toward the play they want to make — a winger driving the net wants it ahead and to their forehand
-Key: When in doubt, lead them slightly — a pass ahead can be skated onto, a pass behind cannot
+Targets: Lead the receiver toward the play they want to make — a winger driving the net wants it ahead and to their forehand
+Key: When in doubt, lead the receiver slightly — a pass ahead can be skated onto, a pass behind cannot
 ```
 
 - **Read the feet, not the chest.** A player's chest can be facing anywhere. Their skates tell you where they are actually going and how fast.
@@ -356,7 +356,7 @@ Action: Take your look over both shoulders while the puck is travelling to you, 
 Technique: Move your weight from the back leg to the front leg through the pass — arm-only passes float, and floaters get intercepted
 Technique: Finish with the blade pointing where you want the puck, low to the ice
 Targets: Put the puck on the receiver's forehand, away from the checker, and slightly in front of them
-Priority: When those three preferences conflict, away from the checker wins
+Priority: When forehand, in front and away from the checker conflict, away from the checker wins
 ```
 
 **1. Head up, always.** Keeping your head up lets you see the lane, see the checker, and avoid the hit. If you have to look at the puck to pass it, your passing is limited by your stickhandling — go work on [Puck Handling](puck_handling.md) until the puck is handled by feel.

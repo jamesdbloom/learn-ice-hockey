@@ -613,7 +613,7 @@ On the narrow NHL sheet, the opposite: space compresses, the forecheck arrives s
 
 ```facts
 Action: Play small-area games — less space per player means more touches, more decisions per touch and less time to make each one
-Action: If your team doesn't run them, run them yourself — three-on-three in one zone, two nets, no offside, first to five
+Action: If your team doesn't run small-area games, run them yourself — three-on-three in one zone, two nets, no offside, first to five
 Action: When you spectate, don't watch the puck. Pick one player and watch only them for a full shift, including the twenty seconds they don't touch it
 Read: Watch a defenceman's gap from the moment the attacker gets the puck — most of it is decided before the attacker reaches the red line
 Action: After every shift, ask "did I have more time than I thought?" — the honest answer is almost always yes

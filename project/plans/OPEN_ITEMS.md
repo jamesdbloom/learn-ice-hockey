@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W576 and W577 shipped with record `w577_back_cross_check_every_page_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W578 and W579 shipped with record `w579_facts_subjects_and_winger_back_cross_check_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -22,7 +22,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
 - **From W576 (20 Nov):**
   - **(2) Optional consistency:** outside DZC, the USA Hockey 608(c) clause reads "a match if reckless with excessive force (608)" without "on a vulnerable or defenceless player" (goaltender :1310/:1660, on_ice :621, defender :942/CM :1024). This errs harsh. Add the condition when those pages are next edited.
-  - **(1) Judgement:** winger :804/:807/:812/:924 say "a cross-check is at least a minor in every book". These are an attacker's net-front stick, never said to be into the back. They are a floor, but wrong if the shoved defender has their back turned. A reader should decide.
+  - [(1) closed in W578: the four winger net-front cross-check units carry the from-behind route with the W577 USA Hockey clause.]
 - **From W572 (20 Nov):**
   - [(1) closed in W575: a back cross-check can be called checking from behind in every book, and under CARHA its Note bars any other call.]
   - **(2) Lower-confidence CARHA units that stop at the major** with no sibling giving another book a match: body_contact :563/:597/:704/:123/:678, game_management :1255, defender :952/:921, winger :757/:124/:762, puck_handling :484. Do not sweep; each needs a layer test.
@@ -94,7 +94,12 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(5) Phone-width check of the two rebuilt zone_entries diagrams** (entry-high-triangle, defend-squash-and-slide). Their label margins are 0.3–1 ft; check at 400 px when Chrome connects.
 - **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519; 6 and 7 in W521):**
   - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
-  - **(3) Pronouns later in the opening words.** The tool catches only the first word (e.g. zone_entries :1111 "Key: Very hard to beat cleanly, and it keeps…"). Run `--loose` on the facts layer and triage.
+  - **(3) [Facts layer closed in W579: 146 Tier 1/2 rows applied across 24 files (census `scratchpad/w518_3/defects.tsv`).]** Still open:
+    - 64 Tier 3 facts rows, where they/them means the section's one opponent (low value).
+    - 1,037 non-facts `--loose` hits, not triaged.
+    - Facts lines with no subject at all (special_teams :176, zone_entries :591/:632/:634).
+    - Pronouns past the six-word window (defending_the_rush :315).
+    - The "it = puck" and "their = opposing team" classes, not tallied.
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518; 2 in W524):**
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.

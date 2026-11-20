@@ -50,7 +50,7 @@ Key: At 5-on-5 a carry-in was worth 0.53 to 0.62 unblocked shot attempts per ent
 Key: Goals per entry ran the same way — 0.027 to 0.039 carried in against 0.010 to 0.018 dumped in, at 5-on-5 across that same 330-game sample
 Key: In Tulsky's tables "shots" means unblocked shot attempts, shots on goal plus misses, so do not set 0.53 to 0.62 against a shots-on-goal rate
 Key: The ranges span the nine rows of Tulsky's Table 1, and the 0.62 top end is its rest-of-league row rather than any single team's
-Key: Every row of that table had carrying in more than twice as productive as dumping in, on cells of at least 3,000 entries each
+Key: Every row of Tulsky's Table 1 had carrying in more than twice as productive as dumping in, on cells of at least 3,000 entries each
 ```
 
 The reference work is Eric Tulsky, Geoffrey Detweiler, Robert Spencer and Corey Sznajder, *Using Zone Entry Data To Separate Offensive, Neutral, And Defensive Zone Performance*, presented at the 2013 MIT Sloan Sports Analytics Conference. They hand-tracked 330 NHL games from the 2011-12 season, recording every time the puck went into the attacking zone and how.
@@ -75,7 +75,7 @@ The ranges are across the nine rows of their Table 1 — eight team data sets (P
 ```facts
 Key: Every figure in Tulsky's net-value table comes from the Washington games alone, not from all 330 — those were the only games in which failed attempts and dump-and-change plays were tracked
 Key: A failed carry-in cost about eight hundredths of a shot in net value in Tulsky's Washington games, and dumping the puck in and changing lines cost more than that
-Key: All of that cost is defensive — a failed carry produces no shots of its own, and it gives up 0.40 shots on the opponent's next entry, the highest shots-against figure in Tulsky's table
+Key: A failed carry's cost is all defensive — it produces no shots of its own, and it gives up 0.40 shots on the opponent's next entry, the highest shots-against figure in Tulsky's table
 Key: Averaged over every attempt in those Washington games a carry was worth +0.42 net shots against +0.12 for dump-and-chase, and dump-and-change was the only play worse than a failed carry
 Key: Tulsky's group put the break-even at 34% confidence between equal teams, 26% for a stronger line against a weaker pair, and 44% the other way round
 Key: The break-even thresholds come off one decision curve with two values Tulsky's group could not measure — how good a well-defended carry is if completed, and how likely it is to be completed
@@ -403,7 +403,7 @@ Cross with the carrier near the line and **skate your own route to the net**, so
 Action: Cross with a teammate near the line so the defender tracking the carrier has to go around them
 Key: Skate your own route to the net and let the defender's chosen path be the one that gets tangled
 Never: Cut across into a defender's path, or stop, stand or step into them, to make the pick — deliberately body-blocking a non-carrier is interference
-Read: Officials at every level judge it on whether you were going somewhere
+Read: Officials at every level judge a pick on whether you were going somewhere
 ```
 
 Two attackers crossing near the line can be used so that the second one runs interference — the defender tracking the carrier ends up having to go around your teammate.
@@ -422,7 +422,7 @@ Options: 2-on-2 — crisscross, midlane drive, or double drive, where both attac
 Options: 3-on-2 — high triangle with two driving wide and the third trailing, midlane drive with the middle attacker going hard at the net, triple drive with all three deep, or drive and delay
 Technique: On a drive and delay, sell the drive, then turn away while the defender is still out of reach — level with them or as they pivot — the delay only buys time if the drive was believed
 Read: Watch which wide driver a defender takes — the moment one commits, the other defender is left covering two of you, and that is the cue
-Convention: Which of these your team runs is a coaching choice, so ask instead of assuming the pattern you know is the one being played
+Convention: Which 2-on-2 and 3-on-2 entry your team runs is a coaching choice, so ask instead of assuming the pattern you know is the one being played
 Rule: Every drive here stops at the paint's edge, off its red line: deliberate contact with the goalie is penalised in every book, and a charge can end your game — automatically under Hockey Canada 8.5(b), and under CARHA 52(b) in the crease or if it injures
 Rule: Under USA Hockey a charge on the goalie is a mandatory major and game misconduct if reckless (607(b)), or if it reaches the head, face or neck, even carelessly (620(b))
 ```
@@ -646,7 +646,7 @@ Read: A defence that has over-committed to the carrier's side
 Risk: The drop goes backwards into nobody — the worst turnover in hockey, collected by a defender facing your net
 Never: Let both players slow down — a drop pass at low speed is a gift
 Risk: A receiver with no lane, no support and no speed is the lone attacker the drop was supposed to avoid creating
-Never: Use it as a reflex — it answers one picture, a trailing teammate with speed and space behind you
+Never: Use the drop pass as a reflex — it answers one picture, a trailing teammate with speed and space behind you
 Key: See the trailer before you drop it; if you are dropping it blind and hoping, throw it away instead
 ```
 
@@ -692,7 +692,7 @@ Place the puck gently into a specific area — usually a corner — so that it d
 Action: Place the puck gently into a specific area, usually a corner, so it dies there rather than rebounding
 Read: A forechecker arriving in roughly two seconds, and a defence that has to turn and retrieve
 Goal: Give your chaser a stationary puck and a body arriving on it, and give the retriever no help from the puck's momentum
-Never: Use it when your chaser is four seconds away — you have just given the puck to their defenceman with time
+Never: Use the soft dump when your chaser is four seconds away — you have just given the puck to their defenceman with time
 ```
 
 ![](diagram:dump-soft-area)
@@ -938,7 +938,7 @@ Read: Tied, or early — play the percentages and be aggressive
 Read: Protecting a one-goal lead late — dump it in, forecheck, burn clock, because a goal against costs more than a goal for gains
 Read: Chasing a goal late — carry almost regardless; a dump-in with ninety seconds left surrenders possession you cannot afford to lose
 Read: On a line change — the entry decision is secondary; get the puck deep or out of danger and change cleanly
-Key: This is the one place where the analytics argument bends
+Key: The score and the clock are the one place where the analytics argument bends
 ```
 
 - **Tied, or early:** play the percentages. The break-even is around one-third confidence; be aggressive.
@@ -981,7 +981,7 @@ Some teams send only one forward to pressure and have the other two retreat at o
 They hold the blue line, take away the middle, and dare you to go around.
 
 ```facts
-Read: They hold the blue line, take away the middle, and dare you to go around
+Read: A standing-up defence holds the blue line, take away the middle, and dare you to go around
 Action: Chip and chase past them — a defenceman standing still has no momentum to recover, so this is the ideal chip situation
 Action: Attack the seam between the two of them — two defenders holding a line have a gap between them by definition
 Action: Use a late player — standing up requires them to watch the puck, so a fourth attacker arriving behind the play is often unmarked
@@ -1021,7 +1021,7 @@ See [Neutral Zone Systems](neutral_zone_systems.md).
 They close hard and early, well before their own line.
 
 ```facts
-Read: They close hard and early, well before their own line
+Read: Defenders playing an aggressive gap close hard and early, well before their own line
 Action: Chip past them — an aggressive gap is a defender with committed momentum, and this is the best possible situation for it
 Action: Get the puck off your stick early; make the play a stride before they arrive
 Action: Use the space behind the defenders — send a teammate into that ice and pass it to them there
@@ -1125,7 +1125,7 @@ Options: F1 pressure with the D holding the dots — the first forward back pres
 Options: Squash-and-slide — the defenceman, not the backchecker, forces the carrier outside while the first forward back protects the slot
 Technique: In squash-and-slide the two defencemen hold the same depth and slide across together like a foosball bar
 Risk: Squash-and-slide demands a great deal from the forwards — one lazy backcheck and the weak side is wide open
-Convention: These are systems, not laws — which one your team plays changes whether you step up, hold the dots, or take the puck
+Convention: F1 pressure and squash-and-slide are systems, not laws — which one your team plays changes whether you step up, hold the dots, or take the puck
 Action: Ask, and then talk to your partner about it before the puck drops
 ```
 

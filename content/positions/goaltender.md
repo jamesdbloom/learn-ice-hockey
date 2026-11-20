@@ -927,7 +927,7 @@ Full treatment, including the whole team's vocabulary and who owns which call: [
 
 ```facts
 Key: One attacker, you, and a lot of time to think — which is the actual difficulty
-Technique: Meet them well out, then retreat on C-cuts, matching their speed so the angle stays closed the whole way
+Technique: Meet the shooter well out, then retreat on C-cuts, matching their speed so the angle stays closed the whole way
 Technique: Keep a little backward flow so you can react either way; flat-footed means you can react to nothing
 Never: Move first — their whole plan is to make you commit, and the last one to move wins
 Convention: What to watch is a genuine coaching split — the puck, or the shooter's chest and hips. Ask your goalie coach and be consistent
@@ -965,7 +965,7 @@ One attacker, you, and a lot of time to think — which is the actual difficulty
 **In short:** Stay in your crease until the shooter touches the puck, be patient, and play the shot once.
 
 ```facts
-Key: There is no clock on it, so be patient and let them run out of ideas
+Key: There is no clock on a penalty shot, so be patient and let them run out of ideas
 Rule: You must remain in your crease until the shooter has touched the puck, or the shot is retaken (NHL Rule 24)
 Rule: A second violation adds a misconduct and a third a game misconduct, the third retake being against the alternate goalie (NHL Rule 24.4)
 Rule: Under IIHF Rule 24.4 the third violation is a game misconduct and "a goal shall be awarded" — no retake, no alternate goalie
@@ -1004,7 +1004,7 @@ Everything else above holds under the IIHF's Rule 24, with the same numbering. O
 Convention: The standard convention is that your defenceman takes away the pass and you take the shot — a convention, not a law
 Action: Play the puck carrier as if it were a one-on-none — square up, come out to your normal depth, make the save
 Key: The cross-ice pass to an open forward is the chance you cannot stop; the shot is the one you can
-Action: Get it said out loud — your defenceman's "I've got the pass" / "take the shooter", or your "shot" — it only works if you both know which half is yours
+Action: Get the 2-on-1 split said out loud — your defenceman's "I've got the pass" / "take the shooter", or your "shot" — it only works if you both know which half is yours
 Never: Let your defenceman slide or dive before the pass is released where your team plays the passing lane; that opens both options at once
 Options: Some teams instead coach a timed slide across the lane to kill the pass and force the shot — there the slide is the plan, so expect it and play the shooter the same way
 Action: Ask your defencemen and your coach what your team does — some take away the shooting lane instead, and what must not happen is the two of you holding different answers
@@ -1405,7 +1405,7 @@ What these net-front fouls cost comes later, in [What it costs](#skaters-at-your
 Action: On a 2-on-1 take the pass and give your goalie the shot, and don't slide before the pass is released unless the timed slide is your team's system
 Action: Let your goalie play the puck when they call for it — "I've got it" means get to your breakout position — and tell them what you want while you are still coming back, not as you arrive
 Rule: If your goalie's stick breaks, carry the replacement and put it in their hand — NHL Rule 10.4 bars throwing or shooting it and IIHF 10.4 requires the stick be "passed from hand to hand", a minor to you either way
-Rule: Hockey Canada does not cap it at a minor: 10.5(a) is a minor, or a penalty shot instead if you throw, shoot or kick it at the puck or puck carrier in your defending zone (10.5(a)(ii)), and possibly if you slide it (Interpretation 1 to 3.2(c)); a goalie who picks it up takes a minor (10.6(a))
+Rule: Hockey Canada does not cap a thrown stick at a minor: 10.5(a) is a minor, or a penalty shot if you throw, shoot or kick it at the puck or puck carrier in your defending zone (10.5(a)(ii)), and possibly if you slide it (Interpretation 1 to 3.2(c)); a goalie who picks it up takes a minor (10.6(a))
 Never: Shoot at your goalie's head in warm-ups, or fire at them from ten feet in drills — in stand-up hockey only two books stop play for the hit itself; the rest need a referee to judge them hurt first
 Rule: Warm-up is inside the rules — every book keeps each team in its own half (NHL and IIHF 86.6; USA Hockey 636(c); Hockey Canada 2.2(i)); the NHL, PWHL, IIHF, Hockey Canada and CARHA report a breach, and the Elite League adds a suspension or fine
 Rule: Referees can penalise a player's offence in warm-up under USA Hockey 502(b), Hockey Canada 2.2(j) and CARHA 27(b), and a warm-up fight is a major and game misconduct (NHL 46.9; IIHF 2026/27 46.8)
@@ -1468,7 +1468,7 @@ Rule: USA Hockey Rule 304(g) requires a HECC-certified neck laceration protector
 **In short:** If a puck hits your mask, say so at the next stoppage; do not wait for a whistle.
 
 ```facts
-Action: Say it at the next stoppage — to the nearest official, to your bench, to your captain. You are the only player on the ice whose face nobody can see
+Action: Say a puck hit your mask at the next stoppage — to the nearest official, to your bench, to your captain. You are the only player on the ice whose face nobody can see
 Never: Play on to find out how it feels. A concussion needs no knock-out and no body check, and judgement is one of the things it impairs
 Rule: 🇬🇧 The IIHF is the book that writes you a stoppage for this — hit on the face mask by a hard shot and believed dazed, the referee "may stop play for safety reasons if there is no immediate scoring chance for the attacking team" (IIHF Rule 9.6, 2025/26 v1.1 and 2026/27 alike)
 Rule: Read both of IIHF Rule 9.6's limits — it is "may" and not shall, and an immediate scoring chance for the attacking team defeats it outright, so the whistle you need may never come

@@ -136,7 +136,7 @@ Rule: Neither the IIHF Rule Book nor the In-House Rules states an age at which b
 Rule: IHUK's Rules of Competition 2026-27 set the format: junior U10 and U12 "non-checking" and U14, U16 and U19 "checking"; NIHL Division 1 and 2 "checking"; WNIHL "non-checking" at U16 and senior — and the U10 document adds, in terms, "Bodychecking is NOT allowed in U10 matches"
 Never: Assume Britain mirrors USA Hockey's 12U or Hockey Canada's U13 — the British junior line falls between U12 and U14, and it comes from a competition regulation, not from either rule book
 Action: Get your own division's contact status in writing from your league, and until you have an answer, do not hit anyone
-Never: Settle it by asking whether IHUK runs your league — IHUK's In-House Rules reach NIHL National, the SNL and BUIHA Varsity, and no Rules of Competition for any of them was read for this guide
+Never: Infer checking from whether IHUK runs your league — IHUK's In-House Rules reach NIHL National, the SNL and BUIHA Varsity, and no Rules of Competition for any of them was read for this guide
 Never: Read IHUK's junior, U10, NIHL 1 and 2 and WNIHL Rules of Competition as settling the EIHL, BUIHA, NIHL National, the PNIHL, the SNL or Scottish domestic hockey outside the IHUK junior structure
 Rule: British junior categories are U19/U16/U14/U12/U10 by birth year and unisex, "not classified as 'Mens' within the UK" (In-House Rules, Rule 200)
 Rule: In women's hockey under EIH, Adult runs from the 14th birthday and Under 16 from the 10th (In-House Rules, Rule 100.1)
@@ -335,7 +335,7 @@ When a carrier is square to you with the puck out in front, **jab your blade str
 
 ```facts
 Technique: A short, straight jab of the blade at the puck, one hand or two, from a controlled distance
-Read: Use it when you are square to a carrier with the puck out in front — receiving, looking up, or beginning a deke
+Read: Use the poke check when you are square to a carrier with the puck out in front — receiving, looking up, or beginning a deke
 Technique: Top hand on the knob, extend from the shoulder — do not lunge with your whole body
 Action: Poke, recover, stay skating
 Never: Poke from too far away — if your blade cannot reach the puck without lunging, you are too far away
@@ -423,7 +423,7 @@ Beaten to the outside, or covering the pass across the slot or on a 2-on-1, **sw
 
 ```facts
 Technique: A low, wide arc — blade flat, shaft nearly parallel to the ice, sweeping through the puck or the passing lane
-Read: Use it when beaten to the outside, defending a pass across the slot in front of your net, or covering the pass on a 2-on-1
+Read: Use the sweep check when beaten to the outside, defending a pass across the slot in front of your net, or covering the pass on a 2-on-1
 Technique: Bottom hand slides down the shaft, get low, sweep through the ice — not through the air
 Never: Sweep at knee or waist height — that is a hook, a slash or a trip
 Never: Lean your body after the sweep. Sweep with your stick instead and keep your feet under you
@@ -443,7 +443,7 @@ In tight at the net front, on the wall or in a faceoff scramble, **press their b
 
 ```facts
 Technique: As the puck arrives, lay your blade or shaft on top of their blade and press it to the ice so they cannot shoot, pass or move the puck — then let go
-Read: Use it in tight — net front, board battles, faceoff scrambles — when the puck is arriving at their blade or loose between you
+Read: Use the press-down in tight — net front, board battles, faceoff scrambles — when the puck is arriving at their blade or loose between you
 Key: The lift takes their blade up so you can take the puck; the press takes it down so they cannot use it
 Never: Press with force, chop down, press on their hands, or keep the press on with no puck near — a press held on a player can be called holding
 ```
@@ -524,7 +524,7 @@ The rest of the CARHA body-contact ladder, where every major brings a game misco
 **Reach for a body check last, after angling, a stick check and a body block — and only in a game that permits checking, and only once you can angle, lift a stick cleanly and stay balanced through contact.**
 
 ```facts
-Never: Deliver anything in this section in a league that does not permit checking — everything below is a penalty there
+Never: Deliver a body check, push or shove of any kind in a league that does not permit checking — every one is a penalty there
 Rule: A body check under USA Hockey 604(c) at 12U and below, in all girls'/women's and all non-check adult classifications is not capped at a minor — 604(d) is a major plus a game misconduct where it recklessly endangers — plan on a match and a likely multi-game ban (602(a), 604(e))
 Rule: In a USA Hockey non-check game — 12U and below, girls'/women's, non-check adult — a hard check thrown with no intention of playing the puck is a major plus a game misconduct that "must be assessed" (Casebook, Standard of Play, Situation 17)
 Rule: Hockey Canada prices a body check in divisions of U13 and below, in female hockey and in any other division a Member has approved — 7.3(a) is a minor, 7.3(b) is a major plus a game misconduct on the degree of violence with nobody hurt and mandatory on injury, and 7.3(c) is a match penalty
@@ -1066,8 +1066,8 @@ Never: Assume a player is fine because they were not knocked out — loss of con
 Action: A suspected concussion means off the ice, no return that day, and a medical professional before they play again
 Never: Treat symptoms clearing up as the all-clear — CRT6 says no return to any activity risking head contact, a fall or a collision until assessed medically, "even if the symptoms resolve"
 Never: Let the player decide whether they are fit to carry on
-Never: Leave them alone in the first 24 hours (UK guidance; CRT6's floor is three hours). Stay with them: worsening symptoms "should lead to immediate medical attention"
-Never: Let them drive home, and never send them home on their own — CRT6 says no driving until a healthcare professional clears them, and that they need to be with a responsible adult
+Never: Leave a possibly concussed player alone in the first 24 hours (UK guidance; CRT6's floor is three hours). Stay with them: worsening symptoms "should lead to immediate medical attention"
+Never: Let a possibly concussed player drive home, and never send them home on their own — CRT6 says no driving until a healthcare professional clears them, and that they need to be with a responsible adult
 Read: The red flags, the symptoms short of them, and what has to happen in the hours afterwards are in Conditioning and Recovery; Britain's adopted list differs — UK and England Rules carries it
 Convention: Where CRT6's ten red flags and Britain's fourteen differ, act on whichever fires first — neither document writes that rule, it is what the two lists leave you with, and it can only ever make you act earlier
 ```
@@ -1172,7 +1172,7 @@ Rule: Never step on an opponent on purpose — plan on a match under USA Hockey 
 Action: Kick it out with the inside of your skate — back to a supporting teammate, along the wall, or out to your own stick
 Action: Trap it — skates wide with the puck under you means nobody else can have it either
 Never: Swing a skate at a puck you cannot see — kick only at a puck you can see, never blind into a pile of legs
-Technique: Practise this deliberately — almost no amateur does, and it wins pucks every game
+Technique: Practise playing the puck with your skates deliberately — almost no amateur does, and it wins pucks every game
 ```
 
 This is the part nobody teaches and everybody needs.
@@ -1277,7 +1277,7 @@ The corner has boards on two sides, which helps you seal a player but also gives
 ```facts
 Read: Boards on two sides help you seal, but give them the option to spin either way — up the wall or out behind the net
 Action: Angle the carrier so the escape they have is the one you want them to take — toward the wall and up, away from the net
-Never: Leave them an escape back toward the slot
+Never: Leave the carrier an escape back toward the slot
 ```
 
 ![](diagram:corner-escape-routes)
@@ -1426,7 +1426,7 @@ Rule: Driving an opponent off an established spot is a push — a minor under US
 Rule: In a USA Hockey non-check game, a hard check thrown at a net-front opponent with no intention of playing the puck is a major plus a game misconduct the Casebook says "must be assessed" (Standard of Play, Situation 17)
 Rule: Hockey Canada prices pushing an opponent off an established spot at U13 and below, in female hockey and in any division a Member approves — 7.3(a) a minor, 7.3(b) a major plus a game misconduct on violence, nobody hurt, mandatory on injury, 7.3(c) a match for deliberately injuring or trying to
 Rule: CARHA prices pushing an opponent off an established spot at 49(a) — a minor or a major, a major if it injures, and a major brings a game misconduct (30(a)); meant to injure, a match (48(a)); CARHA-affiliated adult leagues only
-Rule: In women's hockey it is an illegal hit under IIHF 101.1, where "[a]ny move by a Player to step or glide into an opposing Player" is at least a minor — and not capped there either: 101.1 provides a major (5') plus an automatic game misconduct
+Rule: In women's hockey pushing an opponent off an established spot is an illegal hit under IIHF 101.1, where "[a]ny move by a Player to step or glide into an opposing Player" is at least a minor — and not capped there either: 101.1 provides a major (5') plus an automatic game misconduct
 Rule: Under USA Hockey, driving a player into the goal frame from behind is at least a minor + misconduct (608(a)); a major + game misconduct if reckless or head first (608(b)), and plan on a match if reckless (602(a)); a match for excessive force on a vulnerable or defenceless player (608(c))
 Rule: Under Hockey Canada, driving a player from behind into the boards or goal frame is at least a minor and game misconduct (7.5(a), (e)); on the head, plan on a game misconduct anyway (7.6(b), (e); 7.7(b), (e)); a match if defenceless or meant to injure, head or not (7.5(c), 7.6(c), 7.7(c))
 Convention: Leverage over strength — the lower player usually wins, though not always and not against a large enough strength gap. Coaching consensus, not a measured law: nothing found in the ice hockey biomechanics literature quantifies it
@@ -1990,9 +1990,9 @@ Never: Read the EIHL's lower on-ice tier as a lower price — what the Casebook 
 
 ```facts
 Rule: USA Hockey 629(a) is a major plus a game misconduct to any player who leaves either bench "during an altercation", "in addition to any other penalties" — and the team kills that major shorthanded (403(a)) unless the other team takes an equal number of majors, which allows a substitute (403(c))
-Rule: USA Hockey's Casebook puts that on every player who leaves, "not just the first player to do so" (Rule 629, Situation 2) — so "only the first man off the bench gets it" is not USA Hockey's rule
+Rule: USA Hockey's Casebook puts the major and game misconduct on every player who leaves the bench, "not just the first player to do so" (Rule 629, Situation 2) — so "only the first man off the bench gets it" is not USA Hockey's rule
 Rule: In USA Hockey Casebook 629, Situation 1 a player whose penalty had expired left the penalty box during an altercation, stayed out of it and skated to their own bench — "Each player would be assessed a major plus game misconduct penalty"
-Rule: The IIHF rules that pattern the same way — a player with 0:45 left who leaves the box during a fight and "just skates around the altercation" takes "an additional minor penalty plus a game misconduct" (Situation Handbook 70.1, on Rule 70.4)
+Rule: Under the IIHF, a player with 0:45 left on a minor who leaves the box during a fight and "just skates around the altercation" takes "an additional minor penalty plus a game misconduct" (Situation Handbook 70.1, on Rule 70.4)
 Rule: The prohibition is in every book, in wording close but not identical — NHL 70.1 bars leaving "the players' or penalty bench at any time during an altercation or for the purpose of starting an altercation"; IIHF 70.1 names the two places separately, "the Players' bench or penalty box"
 Rule: NHL and IIHF 70.3 and 70.6 write "first or second player to leave" for either bench, but 70.4 and 70.6 catch every player out of the box, so the limit matters only off the players' bench; USA Hockey 629(a) catches every player off either bench
 Rule: Hockey Canada 10.4(e): "A Game Misconduct penalty will be assessed to any player who leaves the players' or Penalty Benches while a fight is occurring on the ice or for the purposes of starting a fight" — double minor plus game misconduct first off, game misconduct for a later player penalised

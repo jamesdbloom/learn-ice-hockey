@@ -149,9 +149,9 @@ A **royal road pass** — also called a **slot-line pass**, **cross-seam pass** 
 
 ```facts
 Key: A goalie's save is mostly positioning, not reflexes — a set goalie is already covering most of the net before the shot leaves
-Action: Make them move sideways — crossing the road forces a lateral push across the crease to re-square to the new puck position
+Action: Make the goalie move sideways — crossing the road forces a lateral push across the crease to re-square to the new puck position
 Read: A goalie forced to move laterally must also re-establish depth and angle, re-find the puck visually, and reset their stick and pads — which is where the five-hole opens
-Goal: Get the shot away before they finish that sequence — then it is a desperation save, not a positioning save
+Goal: Get the shot away before the goalie has re-set — then it is a desperation save, not a positioning save
 ```
 
 Because a goalie's save is mostly *positioning*, not reflexes. A set goalie has already squared up to the puck, cut down the angle, and sealed the ice. They are, in effect, already covering most of the net before the shot leaves.
@@ -265,7 +265,7 @@ Rule: Losing the zone is not offside — a delayed offside arises when the puck 
 Rule: ⚠️ **Check your book before counting on tagging up** — USA Hockey 630(d) grants the delayed offside only at Youth 15-Only and Girls 16U and above, High School and Adult; below those 630(c) stops play at once. The NHL, IIHF, PWHL and Hockey Canada 6.11(b) set no such floor
 Position: Down to the top of the circle is the activated position — shoot from a better angle, walk the line (skate sideways along the blue line), or receive in the high slot, and still recover
 Risk: Below the circles is always a commitment — below the hash marks you are effectively a fourth forward
-Never: Go that deep before someone has taken your job at the blue line — before you go, not after
+Never: Go below the circles before someone has taken your job at the blue line — before you go, not after
 ```
 
 An offensive-zone defenceman is always at one of three depths:
@@ -605,8 +605,8 @@ Rule: A raised stick can be a penalty with no contact at all — USA Hockey Case
 **In short:** Decide to go before the shot, read where the rebound will squirt, and shoot it back at once.
 
 ```facts
-Read: Anticipate where it goes — a pad tends to squirt back toward the corner it came from, a blocker to the shooter's off side, a chest to drop in the paint
-Risk: Treat those as tendencies, not rules — a goalie angling their surfaces deliberately will break all three on purpose
+Read: Anticipate where the rebound goes — a pad tends to squirt back toward the corner it came from, a blocker to the shooter's off side, a chest to drop in the paint
+Risk: Treat rebound directions as tendencies, not rules — a goalie angling their surfaces deliberately will break all three on purpose
 Action: Shoot it back immediately — do not settle it, do not look for a pass; the window is one or two seconds while the goalie is down
 Options: Go to the far post when you get tied up — nobody is covering it and it opens the weak-side chance
 Key: The defending team recovers roughly 60% of rebounds — Greg Revak's figure, read off a chart by Alex Novet — so you win that race by deciding to go before the shot, not by reacting after it
@@ -716,7 +716,7 @@ Action: Play the puck, not the goalie, when you both arrive at a loose one — o
 
 ```facts
 Rule: USA Hockey 625(b) flatly bars the goal with an attacker in the crease whoever scored, unless the puck got there first, the goalie is out of the crease area, or a defender put them there — none of which licenses interference: a minor under 625(a)(8), and the goal off (Casebook Situation 9)
-Rule: USA Hockey 625(b): their team's puck in the attacking zone, goalie touching the crease — an attacker standing, holding a stick or skating through it is a neutral-zone faceoff; Casebook Situation 10: a momentary stick or skate costs no whistle unless it interferes with the goalie, but voids a goal
+Rule: USA Hockey 625(b): the attackers' puck in the attacking zone, goalie touching the crease — an attacker standing, holding a stick or skating through it is a neutral-zone faceoff; Casebook Situation 10: a momentary stick or skate costs no whistle unless it interferes with the goalie, but voids a goal
 Rule: Hockey Canada 8.5 is not flat — where a teammate outside the crease scores, the goal stands "provided that the player who was in the goal crease does not attempt to play the puck, interfere with the play or obstruct the Goaltender's view or movements"
 Rule: Hockey Canada has an impairment ground too, and it names vision — Interpretation 3 to 8.5(a) disallows the goal where a player standing in the crease impedes "the goaltender's vision or movements"; it answers to NHL 69.3, not to 69.1
 Rule: Hockey Canada 8.5 puts the onus in the rule — attackers "who do not make an effort to avoid the goaltender must be penalized" — but keeps the questions apart: a referee may disallow a goal "without assessing an attacking player a penalty"

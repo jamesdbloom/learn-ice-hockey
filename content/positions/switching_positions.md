@@ -92,7 +92,7 @@ Action: When you do not know where to be, go to your position's safe spot first 
 Position: Defenceman — between the puck and your net, at the goalmouth if your partner is already on the puck
 Position: Centre in your own end — the high slot, down into the corner only to support your defenceman when the puck goes in there
 Position: Winger — your lane, and in your own end level with their defenceman on your side, between them and the slot
-Convention: Those are the low-zone-collapse and three-lane versions; under man-on-man the safe spot is goal side of your check, so ask which your team plays
+Convention: Each position's safe spot here is the low-zone-collapse and three-lane version; under man-on-man the safe spot is goal side of your check, so ask which your team plays
 ```
 
 ---
@@ -488,7 +488,7 @@ To ask for a new position, **ask your coach a specific question, in private, a d
 ```facts
 Action: Ask a day or two later, in private — not on the bench, not immediately after a game, not in front of the group
 Action: Ask a specific question — "What would I need to show you to get a look at centre?" beats "Can I play centre?", which gets a shrug
-Action: Ask to try it in practice first — far easier for a coach to say yes to than a change on a game sheet, and it costs them nothing
+Action: Ask to try the new position in practice first — far easier for a coach to say yes to than a change on a game sheet, and it costs them nothing
 Action: Then do the work where it is visible — if the answer is "I need to see you win draws", take draws at the end of every practice
 Mindset: Accept that some answers are structural — four centres and no left wingers is a roster fact, not a judgement of you
 ```
@@ -533,7 +533,7 @@ Convention: Many programmes deliberately rotate young players through positions 
 Key: USA Hockey's Parent Handbook 2025-26 recommends an 8U experience with "no full-time goalies", and says playing multiple sports is encouraged
 Key: A coach rotating your eight-year-old through the net and through defence is following the model, not experimenting on your child
 Mindset: Treat a move as information about the team, not a verdict on your child
-Action: Let them ask the coach the specific question themselves — it is a more valuable skill than the position is
+Action: Let your child ask the coach the specific question themselves — it is a more valuable skill than the position is
 Key: Beyond USA Hockey's 8U recommendation the published guidance runs out; the registration, programme and age-classification background sits in Getting Started
 ```
 

@@ -309,7 +309,7 @@ Skate goal line to goal line at a comfortable pace and count your strides. Then 
 
 ```facts
 Action: Skate goal line to goal line at a comfortable pace and count your strides
-Action: Skate it again trying to use fewer strides
+Action: Skate goal line to goal line again, trying to use fewer strides
 Read: If your stride count drops significantly, you weren't extending
 Key: Repeat the goal-line-to-goal-line stride count monthly — a free, honest measure of your extension
 ```
@@ -732,7 +732,7 @@ Same idea on one skate — usually the leading foot on its inside edge, the othe
 
 ```facts
 Technique: The same idea on one skate — usually the leading foot on its inside edge, the other lifted or trailing
-Goal: Quicker to initiate, and it leaves one foot free to push off immediately in a new direction
+Goal: A one-foot stop is quicker to start and leaves one foot free to push off immediately in a new direction
 Read: The one-foot stop demands more balance — learn the two-foot stop first
 ```
 

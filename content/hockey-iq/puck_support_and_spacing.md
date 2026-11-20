@@ -214,8 +214,8 @@ Position: Between the puck and your own net, or at least further back than the c
 Goal: Offer a guaranteed, low-risk reset into space the opposition has already vacated
 Key: Support behind the puck is the option that exists when the level and ahead options are covered
 Risk: With nobody behind the puck, the only answer to good pressure is a dump-out — a turnover you chose
-Action: Whoever is lowest provides it — usually a defenceman or the centre in your own end
-Action: Call for it; the verbal cue in most teams' vocabulary is "back"
+Action: Whoever is lowest provides support behind the puck — usually a defenceman or the centre in your own end
+Action: Call for the reset pass; the verbal cue in most teams' vocabulary is "back"
 ```
 
 - **What the outlet offers:** a safe reset. The pass goes backwards into space the opposition has left, so it is the least contested pass on the ice.
@@ -493,7 +493,7 @@ In the offensive zone support becomes rotation, because the puck moves round the
 Position: Someone below the puck, someone level with it and someone above it, at all times
 Position: Below is behind or beside the net; level is the half-wall or slot; above is the point and often a third forward high
 Key: Offensive-zone support is rotation, not position — the puck moves round the perimeter faster than anyone can skate
-Action: When you leave one of those layers, someone fills it — the layer must stay occupied, not your spot
+Action: When you leave your layer, below, level or above, someone fills it — the layer must stay occupied, not your spot
 Convention: Rotation rules are a coaching choice and change who may go below the puck — ask which your team plays
 ```
 

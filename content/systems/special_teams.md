@@ -58,7 +58,7 @@ Five attackers against four defenders is not "one extra shooter". It is **one ex
 Goal: Create a 2-on-1 — the extra man only pays when the kill has two attackers to worry about and one body to do it with
 Never: Stand still — a static 5-on-4 is a 4-on-4 with a spare man standing somewhere useless
 Action: Manufacture 2-on-1s wherever the kill lets you; every one pulls the kill further out of shape and sets up the next
-Priority: Cash them in as close to the net as you can — a net-front 2-on-1 is near-certain, one at the top of the zone is a shot from distance
+Priority: Cash in your 2-on-1s as close to the net as you can — a net-front 2-on-1 is near-certain, one at the top of the zone is a shot from distance
 Convention: Danger is a function of location — a coaching judgement, not a rule, and a coaching consensus rather than a counted one
 ```
 
@@ -112,7 +112,7 @@ Position: The net front lives just outside the blue paint, with both feet off th
 Rule: Keep both feet outside the red crease line. Every book that settles it counts the line in — IIHF 1.7, USA Hockey 625(b)'s Note and Casebook, and the Hockey Canada and CARHA glossaries. NHL and PWHL 1.7 do not settle it, and their Table 14 and the IIHF's allow a goal off a screen on the line
 Rule: Under USA Hockey a skate in the crease costs a power play the zone, not just the goal — 625(b) sends the faceoff to the nearest neutral zone spot when an attacker stands in or skates through it, the puck is in the attacking zone, your team has possession and the goalie touches the crease
 Convention: The bumper is most often the centre, but that is team-dependent, not a law. Ask your coach who has it
-Countered by: A diamond — this is the most-scouted shape in hockey, so kills arrive with a plan for it
+Countered by: A diamond — the 1-3-1 is the most-scouted shape in hockey, so kills arrive with a plan for it
 Risk: With only one player back, a lost puck at the blue line is an immediate odd-man rush the other way
 ```
 
@@ -196,7 +196,7 @@ Risk: The overload produces fewer shots than other shapes; cycling without ever 
 Position: Two low just outside the posts, two high and wide at the tops of the circles or points, one in the middle of the slot
 Key: The point is the spacing, not the shape. Stand far enough apart that one killer cannot cover two of you
 Action: Occupy space, stay still enough to be a genuine passing target, and make everything a one-touch play
-Read: Use it at 5-on-4 against a kill that has collapsed so tightly it has conceded the outside entirely; it is also the standard 5-on-3 shape
+Read: Use the spread at 5-on-4 against a kill that has collapsed so tightly it has conceded the outside entirely; it is also the standard 5-on-3 shape
 Countered by: Long passes — at 5-on-4 they are interceptable and can be blocked by a well-placed stick
 Risk: The spread surrenders the possession game — you are not cycling, you are waiting
 Key: "Box" names both this power-play spacing and the standard penalty-kill shape; say which one you mean
@@ -266,7 +266,7 @@ Technique: Weight loaded on the back foot, body still and square before the pass
 Technique: Keep the backswing short — in a CARHA league a stick brought back more than fifteen inches is a slap shot: a minor; if it injures, a major and game misconduct
 Rule: Keep the one-timer's follow-through below the shoulders — only the NHL, IIHF and PWHL excuse a normal one (60.1, PWHL 61.1); CARHA 62(b) makes high-stick contact above the shoulders a major even by accident and with nobody hurt; deliberate or injuring, a game misconduct too (62(b) Note)
 Key: The threat is worth as much as the shot — a live weak-side one-timer forces one killer to stay wide
-Goal: That wide killer is precisely how the bumper and the net front get free, before the puck ever comes to you
+Goal: A killer held wide by the one-timer threat is precisely how the bumper and the net front get free, before the puck ever comes to you
 ```
 
 The power-play point is a different one: **the threat is worth as much as the shot.** A live one-timer option on the weak side forces one killer to stay wide, and that is precisely how the bumper and the net front get free. You are being useful in the two seconds *before* the puck ever comes to you.
@@ -295,7 +295,7 @@ Risk: The 20-30% range quoted in coaching material has no published primary sour
 
 ```facts
 Key: The point shot is not an attempt to score from the point — it is a delivery system for a tip or a rebound
-Technique: Judge it on whether it arrives low, hard and on net with a body in front
+Technique: Judge a point shot on whether it arrives low, hard and on net with a body in front
 Read: Shoot when the net-front player has established position and the goalie's view is obstructed, not before
 Action: Change the angle before you shoot — step sideways along the line until the shot-blocker has to move their feet, and the lane the kill set is no longer the lane you are in
 Risk: A missed net is a free clear off the end boards and twenty seconds gone
@@ -492,7 +492,7 @@ The second idea: **time is on your side and nothing else is.** Two minutes is no
 ```facts
 Convention: Which shape you run is a coaching choice — the same four players can run all three in one game
 Action: Know which one is called before the faceoff
-Key: These are the in-zone shapes, a separate decision from the neutral-zone pressure scheme below, not a competing one
+Key: The box, diamond and wedge+1 are the in-zone shapes, a separate decision from the neutral-zone pressure scheme below, not a competing one
 Key: The box is the shape almost everyone is taught first and the baseline the other two are described against
 Risk: No public count of how many NHL teams run each as a base shape has been found. Treat any "most teams use X" claim as an impression, not a measurement
 ```
@@ -539,7 +539,7 @@ Goal: The two middles squeeze the slot from either side so a 1-3-1's bumper can 
 Action: The apex pressures the point and takes away the middle shooting lane — you are the only player up there, so do not get walked around
 Action: Each middle takes a half-wall and both collapse onto the bumper when the puck goes to the middle
 Position: The low player owns the goalmouth, alone
-Read: Use it against a 1-3-1, or against an umbrella where the apex can pressure the middle point man
+Read: Use the diamond against a 1-3-1, or against an umbrella where the apex can pressure the middle point man
 Countered by: A quick cross-seam pass to the far half-wall — the shape is narrow, and the far-side one-timer is on if the middles are slow
 Risk: The single low player faces a net-front presence and a backdoor arriver at once — a 2-on-1 you are choosing to concede
 ```
@@ -569,8 +569,8 @@ Action: The +1 pressures whoever has the puck — make every possession uncomfor
 Technique: When your pressure forces the puck to move, the nearest wedge player becomes the new +1 and you drop into the triangle
 Key: The exchange is the hard part — everyone must know who is out and who is in, every second
 Countered by: A +1 who chases without purpose; you are then killing with three players
-Risk: High cognitive load makes it a poor choice for a young or ad-hoc unit
-Convention: Coaching material describes it as popular at NHL level, but no league-wide count is published, so treat prevalence as unverified; published descriptions also differ on the +1's route — straight out from the goal, sweeping across the top of the zone, or roaming — so ask your coach
+Risk: High cognitive load makes the wedge+1 a poor choice for a young or ad-hoc unit
+Convention: Coaching material describes the wedge+1 as popular at NHL level, but no league-wide count is published, so treat prevalence as unverified; published descriptions also differ on the +1's route — straight out from the goal, sweeping across the top of the zone, or roaming — so ask your coach
 ```
 
 ![](diagram:pk-wedge-plus-1)
@@ -613,7 +613,7 @@ A **forecheck** is pressure applied in the opponent's end; a neutral-zone scheme
 
 ```facts
 Key: A forecheck is pressure applied in the opponent's end; a neutral-zone scheme is how you meet them between the blue lines
-Goal: On the kill these are one conversation — deciding where to make the power play uncomfortable
+Goal: On the kill, the forecheck and the neutral-zone scheme are one conversation — deciding where to make the power play uncomfortable
 Key: F1 and F2 are roles, not people — defined by who is first and second to the puck, not by position
 ```
 
@@ -833,9 +833,9 @@ Talk constantly while you do it: most kill breakdowns are two players making dif
 A shorthanded rush is one of the highest-value plays in hockey and one of the easiest ways to lose a game. The difference is entirely the read.
 
 ```facts
-Read: Take it when the turnover handed you a genuine 2-on-1 or breakaway, not one you have to manufacture with speed
-Read: Take it when the turnover happened above the puck, so their players are behind you, and you can get there before their point player recovers
-Never: Take it on a 2-on-2 or worse, when your partner has not seen it, when protecting a lead late, or when you are the last player back
+Read: Take the shorthanded rush when the turnover handed you a genuine 2-on-1 or breakaway, not one you have to manufacture with speed
+Read: Take the shorthanded rush when the turnover happened above the puck, so their players are behind you, and you can get there before their point player recovers
+Never: Take the shorthanded rush on a 2-on-2 or worse, when your partner has not seen it, when protecting a lead late, or when you are the last player back
 Priority: The default is always get the puck out, then change — the rush is the exception you take when it is free
 Key: If it is a footrace you will lose it is not a rush; if you have to think about whether it is on, it is not on
 ```
@@ -978,7 +978,7 @@ Rule: Over the glass from your own zone is a minor, shorthanded or not, under NH
 Rule: The deliberate limb has no zone limit in any of the six books — flipping the puck out on purpose anywhere on the ice is a minor (NHL 63.2(ii), IIHF 63.2(II), PWHL 65.2(ii), USA Hockey 610(c), Hockey Canada 10.1(ii), CARHA 75(b))
 Rule: Hockey Canada 10.1(v) and CARHA 55(a) each put a minor on a goalie alone who shoots or bats the puck out of the playing surface with the stick, no deliberateness word; both exempt a no-glass spot, or a puck that touches glass or deflects off a player or official
 Rule: On a signalled delayed penalty the non-offending team pulls its goalie for 6-on-5, and play continues until the penalised team gains control (NHL Rule 15.1)
-Risk: In that window the danger is not a shot against — it is your own pass ending up in your empty net, so make no pass across the front of it
+Risk: With your goalie pulled on a delayed penalty, the danger is not a shot against — it is your own pass ending up in your empty net, so make no pass across the front of it
 ```
 
 - **6-on-4 is the largest advantage you will normally see** and is used far less than the arithmetic suggests: two extra attackers against four killers means genuine 2-on-1s everywhere and a kill that cannot pressure at all. **The kill's counter is the empty net**, and it is a real one: a killer who wins a puck can clear it 180 feet into that net legally, because a puck that enters the net is a goal regardless. Where the shorthanded icing exemption applies, a clear that misses is not icing either.
@@ -1040,8 +1040,8 @@ Rule: Out of the crease under Hockey Canada, have your goalie play it — clause
 Rule: The goalkeeper's restricted area is IIHF Rule 27.7. Nothing in the Elite League's Casebook switches it off, and England Ice Hockey's Rules & Regulations 22.3 call it "not currently enforced", scope and standing unsettled — so in Britain play as though it binds: keep your goalie inside it
 Rule: England Ice Hockey 22.3, whose standing and reach are unsettled, touches only the Restricted Area — IIHF Rule 63.2(I) is a separate minor for a goalie who freezes the puck to cause a stoppage anywhere "outside of their goal crease area"; play as though the trapezoid binds your goalie
 Rule: IIHF 63.2(I)'s freeze minor has a carve-out: 63.2(VI)'s Note makes it legal for your goalie to come out, cut down the angle and cover the puck straight off the save; separately, 63.2(VII) makes a freeze in the crease a minor unless the goalie is "actually being checked by an opponent"
-Read: Play it as though it binds — your goalie stays inside the trapezoid, so a rim that dies in the corner is yours to fetch, not theirs
-Action: On the power play, use them as a reset on a regroup and as your safety on a failed entry
+Read: Play the trapezoid as though it binds — your goalie stays inside the trapezoid, so a rim that dies in the corner is yours to fetch, not theirs
+Action: On the power play, use your goalie as a reset on a regroup and as your safety on a failed entry
 ```
 
 Your goalie is a full participant in both special teams, not a bystander. **The goalie's own game — depth, tracking, save selection under a screen — is in [Goaltender](../positions/goaltender.md).** Three things to do with your goalie:
@@ -1162,9 +1162,9 @@ The exceptions, and where the books differ:
 
 ```facts
 Rule: Falling on or gathering a puck in your own crease as a skater is a penalty shot (NHL 67.4, NHL and IIHF 63.6, PWHL 65.6, CARHA 58(c), Hockey Canada 4.11(a)(v)), and Hockey Canada 10.2(a)(v) adds where "the infraction occurs": a cover from inside the crease is the shot there, puck outside or not
-Rule: USA Hockey writes that escalation as "a penalty shot/optional minor penalty" (614(b)), and 406(a) gives the election to the NON-OFFENDING team — so it never buys you the cheaper one, and electing the minor does put a second man off
+Rule: USA Hockey writes a skater's crease cover as "a penalty shot/optional minor penalty" (614(b)), and 406(a) gives the election to the NON-OFFENDING team — so it never buys you the cheaper one, and electing the minor does put a second man off
 Rule: The puck decides in five books, and Hockey Canada adds where you are — NHL 63.6: "If the puck is in the crease, penalty shot. If the puck is outside the crease and gathered into the body of a player (other than the goalkeeper) who is inside the crease, minor penalty"; IIHF 63.6 and PWHL 65.6 alike
-Rule: With your own goalie pulled it is an awarded goal, not a shot — NHL and IIHF 67.5, PWHL 69.5, CARHA 58(c) Note 1, Hockey Canada 10.2(a)(vi) where the infraction is in the crease; USA Hockey 614(b) only where the act "has prevented an obvious and imminent goal"
+Rule: With your own goalie pulled, a skater's cover in the crease is an awarded goal, not a shot — NHL and IIHF 67.5, PWHL 69.5, CARHA 58(c) Note 1, Hockey Canada 10.2(a)(vi) where the infraction is in the crease; USA Hockey 614(b) only where the act "has prevented an obvious and imminent goal"
 Rule: Play to CARHA 58(c): with your net empty, any cover in your own crease is the goal. Its Note 1 reads flat — "If the goalkeeper has been removed from the ice, then a goal is awarded" — though the Rule 36(b) it points to needs a shot and an "obvious and imminent goal" prevented
 Rule: The PWHL is a sixth book, running all three tiers at the strict end — 65.2(v) is the NHL's minor word for word, 65.6 the penalty shot on the same puck-location test, and 69.5 awards the goal flat, as NHL and IIHF 67.5 do and as USA Hockey and CARHA's Rule 36(b) do not
 ```

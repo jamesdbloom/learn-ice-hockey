@@ -263,7 +263,7 @@ Risk: The cost of the failure is not the loss of possession, it is the odd-man r
 Read: If this pass is intercepted right now, how many teammates are behind the puck? Fewer than two, do not make it
 Options: Chip the puck past the defender into the space behind them and race, or dump it into the far corner and forecheck
 Risk: Low-cost is not free — on one Swiss-league sample a dump-in carried a larger immediate threat against you than a carry-in did, so dump when the pass is not on, not instead of a carry you could make
-Convention: Forcing that pass is not a rule and genuinely negotiable — a team trailing late, or built to attack in waves, will accept the risk deliberately
+Convention: Forcing a low-percentage pass at the offensive blue line is not a rule and genuinely negotiable — a team trailing late, or built to attack in waves, will accept the risk deliberately
 ```
 
 **What to do instead.** **Chip the puck past the defender into the space behind them** and race for it, or **dump it into the far corner** and forecheck. Both concede possession about 114 feet from your net, moving away from it — the offensive blue line is 64 feet from their goal line. **Low-cost is not free:** on the Swiss-league tracking quoted under the risk map, a dump attempt carried a *larger* immediate threat against you than a carry-in — small figures, quoted there with their scope — because the dump is so often handed straight back. These are the answer when the pass is not on, not a reason to give up a puck you could have carried in. See [Zone Entries](../systems/zone_entries.md) for which to pick.
@@ -294,7 +294,7 @@ Convention: "Never stickhandle in your own slot" is not a rule — about as clos
 
 ```facts
 Never: Leave your feet to make a check — you cannot change direction in the air — and never body check at all where your league bars it
-Risk: A carrier who reads it makes you miss with one movement, and you are out of the play for four or five seconds
+Risk: A carrier who reads a leaping check makes you miss with one movement, and you are out of the play for four or five seconds
 Action: Skate, stay on your feet and keep your stick in the lane — take away the option rather than the puck — hit only where your league permits checking
 Rule: All six books here write the leap into the charging offence by name — NHL 42.1, IIHF 42.1, USA Hockey 607, Hockey Canada 7.4, PWHL 42.1, CARHA 52(a)
 Rule: Stay on your feet: a charge can end your game in every book here, and injury can make it mandatory: NHL and PWHL 42.5 and EIHL Casebook 42 (a major, face or head), Hockey Canada 7.4(b) and CARHA 52(a) (any injury)
@@ -669,7 +669,7 @@ Note what is *not* on that list: retaliation, sending a message, standing up for
 Rule: A penalty shot needs four cumulative conditions — the foul from behind, in the neutral or attacking zone, on a player in possession and control or who clearly would have obtained it, with no opponent between them and the goalie, denying a reasonable chance to score (NHL Rule 57.3)
 Rule: Playing the puck first and tripping the opponent in the process is a minor, not a penalty shot (NHL 57.3, IIHF 24.8, PWHL 58.3, same words)
 Rule: USA Hockey 639(a)'s Note is scoped "under this rule" and turns on poke- or hook-checking, but its Casebook writes the wider version — no penalty at all where you clearly played the puck "with the focus solely being on the puck" (639, Situation 2)
-Rule: Whether that relief reaches the 616 penalty shot is this guide's reading of two rules together, not a USA Hockey ruling — no situation in either volume joins 639(a)'s Note to Rule 616, and 616 Note 1's "would normally be deemed a penalty" reads either way
+Rule: Whether USA Hockey's puck-first tripping relief reaches the 616 penalty shot is this guide's reading of two rules together, not a USA Hockey ruling — no situation in either volume joins 639(a)'s Note to Rule 616, and 616 Note 1's "would normally be deemed a penalty" reads either way
 Rule: Two limits sit on that USA Hockey puck-first relief — you stay responsible for your stick after the check, and where the carrier "loses possession of the puck as a result of being tripped", "a penalty must be called" (639, Situation 2)
 Rule: USA Hockey's puck-first relief never saves a slide: leaving your feet and sliding into any opponent, carrier or not, and causing them to fall is a trip there "regardless of who gains possession of the puck", unless you knelt to block a shot and momentum took you into the shooter (639, Situation 4)
 Rule: Only NHL and PWHL tripping rules stop at a minor — IIHF 57.3 and 57.4 reach a major and a major plus game misconduct, CARHA 86(a) the latter; USA Hockey 639(b) makes that pair mandatory when reckless, plan on a match and a likely multi-game ban (639(c)); Hockey Canada 8.6(b) mandatory on injury

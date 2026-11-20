@@ -87,7 +87,7 @@ There are only two categories of zone exit:
 
 ```facts
 Key: An analysis of roughly 230,000 tracked NHL zone exits found controlled exits led to a subsequent zone entry about 89% of the time, unrecovered dump-outs about 20%
-Key: The tracking underneath it is Corey Sznajder's manual dataset — roughly half the games of 2016-17 and 2017-18, not two complete seasons
+Key: The tracking under the controlled-exit figures is Corey Sznajder's manual dataset — roughly half the games of 2016-17 and 2017-18, not two complete seasons
 Key: The study's own conclusion is that possession is the explanation, not the method — a dump-out your team recovers performs about as well as a controlled exit
 Goal: A clean breakout is what gives you a carried entry; a panicked clear is what gives you a dump-in against a set defence
 ```
@@ -372,7 +372,7 @@ Technique: Height and pace — low and flat enough to stay on the boards, hard e
 Never: Stay facing the wall on a rim with your back to anyone coming at you, and never duck — take contact with skates parallel to the boards, forearm and hip to the wall, head up and chin off your chest
 Risk: A rim concedes possession more often than any other option except an outright clear — a 50-50 dressed as a play; that full ranking is coaching judgement rather than a tracked rate
 Key: One tracking study compares rim against a direct up pass by name and finds rims less efficient — 38% neutral-zone possession against 53%, 0.54 expected goals against 0.68, per 100 possessions
-Key: Carry its limits — KHL data, successful passes only, and one column runs the other way: rims produced slightly fewer dump-outs than ups, 14.4 per 100 possessions against 15.6
+Key: The rim-against-up figures carry limits — KHL data, successful passes only, and one column runs the other way: rims produced slightly fewer dump-outs than ups, 14.4 per 100 possessions against 15.6
 Countered by: The play a defenceman sealed on the boards is most expected to make — coaching emphasis, not a counted ranking; any forecheck can post a player at the far wall, and good ones pre-position
 Rule: In a CARHA league rim it with a short backswing — its Rule 79(a) makes a backswing past fifteen inches a slap shot: a minor, and a major if it injures an opponent, which 30(a) pairs with a game misconduct
 ```
@@ -456,7 +456,7 @@ Rule: The airborne skate is onside in the NHL, IIHF and PWHL books, and the IIHF
 Rule: No centre-red-line ("two-line") pass restriction appears in the NHL, IIHF, PWHL, USA Hockey or Hockey Canada books, and CARHA Rule 73(d) abolishes it in terms — so in all six of the books here the long pass is legal
 Never: Rebuild your attack around a local two-line pass rule unless somebody shows it to you in writing — no published rulebook held here confirms that any league still runs one
 Risk: An intercepted stretch is a full-speed rush the other way with your winger a full zone out of the play — genuinely high-risk/high-reward, and in most amateur hockey not a good default
-Countered by: A 1-3-1, which exists to kill it; a conservative 1-2-2 with two forwards holding high; or defencemen simply backing off rather than stepping up
+Countered by: A 1-3-1, which exists to kill the stretch pass; a conservative 1-2-2 with two forwards holding high; or defencemen simply backing off rather than stepping up
 ```
 
 A long pass from your defensive zone to a forward who has left early and is waiting up ice, typically near the neutral zone or the far blue line.
@@ -548,7 +548,7 @@ Position: By default, on the wall, between the hash marks and the goal line, on 
 Key: The wall spot is where you arrive, not where you have been standing
 Action: Under this guide's standard low zone collapse you spend the defensive shift high, level with the opposing point man, and come down the wall to this spot as your team wins the puck
 Never: Sit above the hash marks once the breakout is under way, under the conventional swing breakout — it makes the pass longer, flatter and more interceptable, and the pass comes into your back
-Key: Being high before that, while they still have possession, is not an error at all — the error is failing to make the trip, not starting from the top
+Key: Being high before your team wins the puck is not an error at all — the error is failing to make the trip, not starting from the top
 Convention: Wall position is system-dependent — a flat/spread structure asks wingers to hold higher toward the blue line, and a stretch or flying-winger structure sends one winger up ice entirely, so find out which one you are in
 Risk: A winger standing at the hash marks in a stretch system is as bad as one holding high toward the blue line in a swing breakout
 ```
@@ -964,7 +964,7 @@ Key: The linesperson's raised arm is not a stoppage, and a whistle for an immine
 Rule: On a delayed offside NHL and IIHF 83.3 and PWHL 85.3 stop play if an attacker forces you deeper or is about to make contact — but in all three books both triggers name the defending puck carrier, so both lapse the instant you pass
 Rule: Hockey Canada 6.11(b)(ii) and CARHA 72(e), the stop-play clauses, write no pressure or contact limb, so no whistle you can rely on stops a forechecker closing on you; Hockey Canada 6.11(d)(i) can whistle one who deliberately plays or tries to play you knowing they are offside, but only once they act
 Rule: USA Hockey 630(d) stops play if an attacker "attempts to gain possession of the puck or continues to apply pressure to the defending puck carrier" — the pressure limb lapses on your pass too; granted only from Youth 15-Only, Girls 16U, High School and Adult up
-Action: Play it as an ordinary breakout under pressure — take the extra look, and take it with your head up
+Action: Play a delayed-offside breakout as an ordinary one under pressure — take the extra look, and take it with your head up
 Never: Stop and wait for a whistle because the arm is up, or turn your back to anyone coming at you. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest
 Technique: Forearm and hip meet the wall, not the shoulder — never the point of your shoulder, and not the whole shoulder if you can help it
 ```
@@ -1025,7 +1025,7 @@ Key: "Up" means the wall lane is open; "wheel" means you have a step; "leave it"
 Never: Use "over" without agreeing the sense — this list uses Sense B, the D-to-D behind your own net; if your team means cross-ice, your goalie must say "D" or "partner" instead
 Never: Turn your back to anyone coming at you on a "man on" call. Get your skates parallel to the wall instead, forearm and hip to it, head up and chin off your chest
 Action: Calls must be early and loud — a call arriving as the forechecker does is worse than no call, because it makes the defenceman hesitate
-Key: This is not only the goalie's job — D2, and the winger who can see the weak-side defenceman stepping down, both know things the puck-carrier does not
+Key: Warning the puck-carrier is not only the goalie's job — D2, and the winger who can see the weak-side defenceman stepping down, both know things the puck-carrier does not
 ```
 
 The standard goalie calls for a breakout follow; your team may vary them. [On-Ice Communication](../foundation/on_ice_communication.md) covers general call discipline.

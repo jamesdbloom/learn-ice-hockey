@@ -26,7 +26,7 @@
 ```facts
 Key: The team that controls the neutral zone decides what kind of game gets played
 Risk: A turnover in the middle third is graded as costly as one in your own zone generally — coaching consensus rather than measurement, and Risk Management owns the grading
-Goal: Control it and you choose whether the night is a track meet of rushes or a grinding slog — lose it and your opponent chooses for you
+Goal: Control the neutral zone and you choose whether the night is a track meet of rushes or a grinding slog — lose it and your opponent chooses for you
 ```
 
 The **neutral zone** is the middle third of the ice, between the two blue lines — fifty feet of it, and about three seconds for a strong skater.
@@ -135,7 +135,7 @@ Goal: F1 takes the middle away and forces the carrier to one side — the turnov
 Action: F2 steps up to play the puck as it reaches the strong-side winger — the puck, not the player; F3 holds the middle and weak side; D2 stays home as the safety valve
 Risk: D1 stepping up on the wall is the decision with the least cover behind it — if D1 is beaten, only D2 stands between the puck and your net
 Countered by: Quick D-to-D behind the net to change the side, a middle-lane forward supporting low under F2 and F3, and simple patience
-Convention: Coaching material calls it the most widely played neutral zone structure, but nobody publishes a count — consensus, not a verified fact
+Convention: Coaching material calls the 1-2-2 the most widely played neutral zone structure, but nobody publishes a count — consensus, not a verified fact
 ```
 
 **The shape.** F1 pressures near the opponent's goal line or hash marks. F2 and F3 sit across the middle of the neutral zone, usually between their blue line and the red line. The two defencemen hold the back layer, around your own blue line.
@@ -266,11 +266,11 @@ The aggressive option is not really a neutral-zone structure. It is what the mid
 
 ```facts
 Position: One forechecker and four skaters in a flat line across your own blue line — the most conservative structure in hockey
-Read: Use it protecting a lead in the last minute or two, killing time with an exhausted stranded unit, or defending a 6-on-5 against a pulled goalie
+Read: Use the 1-4 protecting a lead in the last minute or two, killing time with an exhausted stranded unit, or defending a 6-on-5 against a pulled goalie
 Goal: Let almost nothing through — controlled entries against a disciplined 1-4 are close to impossible and odd-man rushes almost never happen
-Risk: It concedes the whole neutral zone and generates no offence, so you spend the shift in your own end and clearing becomes dumping
+Risk: The 1-4 concedes the whole neutral zone and generates no offence, so you spend the shift in your own end and clearing becomes dumping
 Countered by: A hard chip past the flat line and a race for it — nobody in a flat line is deeper than anybody else; if the goalie comes out for it, pull up
-Never: Play it as your default — some youth teams do and should not
+Never: Play the 1-4 as your default — some youth teams do and should not
 ```
 
 **When it is used.** Protecting a lead in the last minute or two; killing time with an exhausted, stranded unit; defending a 6-on-5 with their goalie pulled. Some youth teams play it as a default and should not.
@@ -477,7 +477,7 @@ A **regroup** is when your team, in possession but with no good way forward, **t
 Goal: In possession with no good way forward, turn the puck back toward your own end, reset, and come again
 Key: You are not retreating — you still have the puck, and you are declining a bad entry to buy a better one
 Never: Treat a backwards pass as a failure, or feel obliged to go forward every time you receive in the neutral zone
-Risk: Forcing it forward instead produces low-percentage entries, dumped pucks nobody chases, and turnovers that become rushes the other way
+Risk: Forcing the puck forward instead of regrouping produces low-percentage entries, dumped pucks nobody chases, and turnovers that become rushes the other way
 Convention: Professionals regroup two or three times a shift and amateurs barely do — coaching observation, not a tracked figure
 ```
 
@@ -512,7 +512,7 @@ Technique: Receive with your hips open up the ice, not facing your own net, so y
 Action: If the strong side is covered, move it D-to-D — the pass across changes the point of attack and forces the whole structure to slide
 Action: As the puck travels D-to-D, all three forwards change lanes and build speed, curling back toward it and then turning up ice
 Technique: Keep the D-to-D flat and hard, and hit whichever forward has the most speed and the most ice
-Never: Make it blind across the middle with a forechecker between you — an interception is an instant 2-on-1 with both defencemen wrong-sided
+Never: Make a D-to-D pass blind across the middle with a forechecker between you — an interception is an instant 2-on-1 with both defencemen wrong-sided
 ```
 
 The standard form:
@@ -553,9 +553,9 @@ You pass D-to-D, and instead of following the puck up the ice, **sink back into 
 
 ```facts
 Action: Take the puck all the way back below your own blue line, sometimes behind your own net, and restart as if from a breakout
-Read: Use it when a neutral zone reset is not enough — their forecheck has re-formed across the middle, or your forwards need time to sort themselves out
+Read: Use the low regroup when a neutral zone reset is not enough — their forecheck has re-formed across the middle, or your forwards need time to sort themselves out
 Risk: A turnover below your own goal line is a scoring chance — the low regroup is a possession play, not a panic play
-Never: Use it when you are panicking — off the glass and out of your zone is the correct answer instead
+Never: Use the low regroup when you are panicking — off the glass and out of your zone is the correct answer instead
 Rule: Under NHL and IIHF rules your goalie may not play the puck behind the goal line outside the trapezoid (NHL Rule 1.8; penalty 27.8 / 63.2(viii)) — the KHL reportedly too, but unverified here — the sole exception is a goalie keeping skate contact with the crease
 Rule: USA Hockey and Hockey Canada write no trapezoid, and neither frees your goalie out there — USA Hockey 614(c) makes a goalie’s freeze a minor on four triggers, among them a puck "behind the goal line and their body is entirely outside of the goal crease" and a puck outside the privileged area
 Rule: CARHA (adult leagues only) writes no trapezoid either, and still makes a minor of a goalie who deliberately falls on or gathers the puck behind the goal line with their body entirely outside the crease (58(b)), or deliberately holds it, causing an unnecessary stoppage (61(b))
@@ -676,7 +676,7 @@ Also called the **trailer** or **third man high**. One forward deliberately stay
 ```facts
 Position: Delay deliberately, staying 10 to 15 feet behind the play, and arrive into the space the first two attackers have vacated
 Goal: Arrive into the high slot behind a two-player rush — defenders track the puck, so the late man is the one nobody picked up
-Convention: Coaching material treats it as one of the most reliable scoring looks in hockey — consensus rather than a tracked figure
+Convention: Coaching material treats the late man as one of the most reliable scoring looks in hockey — consensus rather than a tracked figure
 Never: Drift five feet behind — being the late man means a full gap back, so the defence has to choose between you and the puck
 Action: Be the first man back if it turns over — that is the deal
 ```

@@ -369,7 +369,7 @@ Four players form a box around the slot — two low near the posts, two higher n
 ```facts
 Convention: Four players form a box around the slot — two low near the posts, two higher near the tops of the circles
 Convention: The "+1" is the only player who chases the puck; when the puck moves, the role passes to whoever is nearest and the box rotates one position to fill the space
-Convention: Coaching material has it the standard introductory structure for young players and beginner adults — passive, forgiving of mistakes, and a simple picture of where to stand; nobody publishes a count of what teams run
+Convention: Coaching material has Box+1 the standard introductory structure for young players and beginner adults — passive, forgiving of mistakes, and a simple picture of where to stand; nobody publishes a count of what teams run
 Key: Not a penalty-kill box — that is four players, two high and two low; Box+1 is a five-player even-strength shape
 Countered by: A good puck-moving team — one chaser cannot pressure them, so they hold the puck and pick their moment
 ```
@@ -390,7 +390,7 @@ The **collapsing box** is a state rather than a full system: the box shrinks tow
 
 ```facts
 Convention: The collapsing box is a state, not a full system — the box shrinks toward the crease as the puck goes below the goal line, all five inside the house with sticks in lanes
-Read: Use it protecting a lead late, defending 6-on-5 with their goalie pulled, when structure has already gone, or against a team dangerous below the circles but not from its defencemen
+Read: Use the collapsing box protecting a lead late, defending 6-on-5 with their goalie pulled, when structure has already gone, or against a team dangerous below the circles but not from its defencemen
 Risk: You concede the entire outside by design
 Options: The strong-side overload is the opposite adjustment — all five shift to the puck side, cutting the ice in half and squeezing the carrier
 Countered by: One hard, accurate cross-ice pass — the overload leaves the whole weak side unoccupied by design
@@ -474,7 +474,7 @@ Systems tell you where to stand. These are the recurring plays you'll actually f
 Key: Attackers rotate the puck between the corner, the half-wall and behind the net, passing into the space they just left, until somebody chases out of position
 Never: Chase the puck around the boards. Let it come to you instead and defend the exit points, not the puck's current location
 Read: Take away the next pass, not the current one — the man arriving is the threat
-Position: Cut it at the goal line — meet a carrier coming out from below the goal line at the post, not in the corner
+Position: Cut the cycle off at the goal line — meet a carrier coming out from below the goal line at the post, not in the corner
 Convention: Under a collapse, be patient — the house is full and they aren't threatening you; under man or hybrid, stay on bodies, goal side — never hold or hook them, puck or no puck, nor bump one without it, or at all where checking is barred
 Action: Get one hard win — cycles end when somebody wins a puck battle, so send two, which in the collapse is the strong-side defenceman and the centre
 Never: Send the second body into a back — a player digging on the wall can't see you; no book prices checking from behind at two minutes alone (on the head, or under the IIHF: plan on ejection anyway)

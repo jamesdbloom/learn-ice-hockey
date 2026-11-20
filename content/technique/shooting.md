@@ -172,7 +172,7 @@ Technique: Hands wider than on a forehand — the extra spread buys the leverage
 Technique: Keep the puck close and sweep in an arc, rolling heel to toe; reaching kills the power
 Read: In tight, on breakaways, on rebounds to your off side, or whenever turning to the forehand costs the chance
 Key: Goalies calibrate their release read to forehands, so a backhand gives them less to read
-Action: Practise it — it is bad because it is under-practised, a pure volume problem with a volume fix
+Action: Practise the backhand — it is bad because it is under-practised, a pure volume problem with a volume fix
 ```
 
 Almost nobody practises the backhand, and almost every goalie finds it harder to stop — an opportunity sitting in plain sight. Both halves are coaching observations rather than measured findings: nobody has counted how players split their reps or save percentage by shot type.

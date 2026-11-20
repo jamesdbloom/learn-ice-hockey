@@ -351,16 +351,16 @@ So arrive the safe way round. ⚠️ **Come to the wall on an angle, feet apart 
 ```facts
 Priority: The front of your own net first — if nobody is there, go there, because nothing else matters as much
 Priority: Then take away the shooter's stick, not the puck: seal the blade, or lift it low on the shaft, well below the bottom hand, as the puck arrives, then let go. The lift goes up, not sideways
-Priority: Then get it out of the danger area — anywhere is better than the slot as long as it stays in the rink, and this is the one moment an unglamorous clear is unambiguously correct
+Priority: Then get the puck out of the danger area — anywhere is better than the slot as long as it stays in the rink, and this is the one moment an unglamorous clear is unambiguously correct
 Priority: Then, and only then, look for the outlet — the exit pass before the danger is gone is how a scramble becomes a goal against
-Rule: Do not clear it directly out of play, though — from your own zone that is a two-minute delay-of-game minor under the NHL, IIHF and PWHL (NHL Rule 63.2(iii)), and a deliberate clear out of play is a minor from any zone under 63.2(ii); off the glass and along it is fine
+Rule: Do not clear the puck directly out of play — from your own zone that is a two-minute delay-of-game minor under the NHL, IIHF and PWHL (NHL Rule 63.2(iii)), and a deliberate clear out of play is a minor from any zone under 63.2(ii); off the glass and along it is fine
 Rule: Do not rely on a skate clear under the IIHF — its Rulebook 63.2(III) names only "hand or stick" in 2025/26 and 2026/27 alike, but 63.2(II) reaches a deliberate one by foot from anywhere; its Handbook answers Yes to a kick over the glass (Situation 63.34, all three editions), so clear with the stick
 Rule: Never aim a clear at the bench — over the glass behind it (NHL 63.2(iii), PWHL 65.2(iii)) or around it (IIHF 63.2(III)) is still the minor. Exempt: no-glass boards, a puck straight into the bench, one off a faceoff — but a draw aimed out is 63.2(ii)'s deliberate minor
 Rule: Over the glass from your own zone is a minor whether you meant it or not only under the NHL, IIHF and PWHL (63.2(iii), 63.2(III), 65.2(iii)) — USA Hockey 610(c) penalises only a deliberate clear, and Hockey Canada 10.1(v) and CARHA 55 reach only the goalie
 Rule: Deliberately shooting or batting the puck out of play is a minor "from anywhere on the ice surface" — no zone limit in any book that writes it (NHL 63.2(ii), IIHF 63.2(II); USA Hockey 610(c); Hockey Canada 10.1(ii); PWHL 65.2(ii); CARHA 75(b)), and only the NHL and IIHF name leg, foot or arm too
 Rule: The NHL, IIHF, USA Hockey and PWHL write the after-the-whistle one into the delay-of-game rule itself; Hockey Canada at Rule 11.1, preamble item (v), not 10.1. USA Hockey escalates: a misconduct (601(c)(10)), a game misconduct in protest (601(d)(7)) or toward an official or spectator (601(d)(9))
 Rule: Fire the puck toward an official after the whistle and plan on being thrown out in any book: the NHL, PWHL and IIHF make it a game misconduct and a suspension (39.5(vi), 40.4)
-Action: The mirror image applies in their end — net front first, sticks free, and shoot from anywhere before you try to be clever
+Action: In a scramble in their end the same instincts apply — net front first, sticks free, and shoot from anywhere before you try to be clever
 ```
 
 Sometimes there is no structure left — a scramble in front of your net, three players down, sticks everywhere. When you cannot work out the right play, work down this list in order:
@@ -398,7 +398,7 @@ The same is true against you. Two seconds of your own disorganisation is where y
 ```facts
 Key: Every organised defensive structure is designed and rehearsed, and against a set structure your options are limited
 Read: In the two or three seconds after a turnover that structure does not exist yet — players facing the wrong way, defencemen up ice, forwards behind the puck
-Key: A chance created in that window is created against no structure at all — and the window closes as the structure forms
+Key: A chance created in the seconds after a turnover is created against no structure at all — and it is gone once the defence sets up
 Risk: The transition window after a turnover works against you the same way — two seconds of your own disorganisation is where you concede
 ```
 
@@ -543,7 +543,7 @@ Using a teammate's body to separate from your check is legal within limits, and 
 
 ```facts
 Action: Run close by a teammate so your check goes around, unless the check pressures your carrier; in Hockey Canada or CARHA, never past one parked to catch your check. Past them, shout, not into their spot
-Key: What makes that route legal is who it delays — it must not be the player pressuring your own puck carrier, and "they were my check" is a rule of thumb rather than the test
+Key: What makes a route past a teammate legal is who it delays — it must not be the player pressuring your own puck carrier, and "they were my check" is a rule of thumb rather than the test
 Rule: No-contact screening of a forechecker off your puck carrier is named in three books, a minor in two — USA Hockey 625(a), "Providing a protective screen and limiting the opportunity for an opposing player to apply pressure to a teammate in possession or control of the puck", and Hockey Canada 8.3(a)
 Rule: Screening a forechecker off your own puck carrier, even without contact, is not capped at a minor in a CARHA-affiliated adult league — CARHA Rule 66(a) names it in Note 2 and reads "A Minor penalty for interference or, at the discretion of the Referee, a Major penalty and a Game Misconduct penalty"
 Rule: The NHL, IIHF and PWHL do not name the no-contact screen, but their 56.2 (PWHL 57.2) reaches restraining a forechecker and impeding anyone without the puck — only the right to ice you already stand on keeps a standing screen legal, not sliding across to keep it

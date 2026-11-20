@@ -97,7 +97,7 @@ Risk: With tight hands, every stick check that arrives will get a piece of the p
 ```facts
 Technique: Release the bottom hand and reach one-handed — it adds most of a forearm's length to your reach
 Options: Pull in a puck outside your normal radius, stretch it away from a checker, or reach around a sealing stick
-Action: Practise it deliberately — reach wide, release, control the puck, recover the grip
+Action: Practise the one-handed extension deliberately — reach wide, release, control the puck, recover the grip
 Key: The one-handed extension should not feel like an emergency
 ```
 
@@ -120,7 +120,7 @@ Practise it deliberately — reach as far as you can to one side, release the bo
 ```facts
 Technique: Let the blade give as the puck arrives — loose grip, active wrists, a slight draw-back on contact
 Goal: Deaden the puck rather than let it rebound off the blade
-Key: Catch it like an egg
+Key: Catch the puck like an egg
 Never: Handle with stiff wrists — stiff wrists mean dead hands
 ```
 
@@ -298,7 +298,7 @@ Rule: CARHA 48(c) makes deliberately kicking, or attempting to kick, an opposing
 Rule: A match is the in-game ceiling, not the end of it: every book here that writes one holds you out until your case is dealt with and makes the referee's report mandatory (NHL and PWHL 21.2 and 21.3, USA Hockey 405(c), Hockey Canada 4.10(a), CARHA 34(a)); under USA Hockey, likely a multi-game ban
 Rule: Britain's book reaches it differently — the IIHF writes no match penalty anywhere, so IIHF 49.3 leaves kicking or attempting to kick an opponent to a major at the referee's discretion, with an automatic game misconduct once they assess it
 Rule: A kicked puck that deflects in off a body is no goal; off your own stick it is a good goal — NHL 49.2(i) and 49.2(iii), IIHF 49.2(I) and 49.2(III), PWHL 49.2(i) and 49.2(iii) — while Hockey Canada 6.10(b) and USA Hockey's Casebook (627, Situation 4) both disallow that good-goal limb
-Rule: CARHA takes that goal away too, in CARHA-affiliated adult leagues only — its Rule 69 permits kicking the puck in all zones but adds that the action "cannot result in a goal being scored", and its Rule 60(c) disallows a goal where a kicked puck "deflects off any player or stick into the net"
+Rule: CARHA voids a kicked goal off your stick too, in CARHA-affiliated adult leagues only — its Rule 69 permits kicking the puck in all zones but adds that it "cannot result in a goal being scored", and its Rule 60(c) disallows a goal where a kicked puck "deflects off any player or stick into the net"
 ```
 
 - **Use your skates as a wall.** A puck loose in your feet is not lost — it is in one of the harder places on the ice for an opponent to reach. The checker has to reach past your skates, your legs and your turned body, and doing that at speed usually costs them their balance or a penalty. That protection is practical, not legal: no rule keeps their stick out, though one that trips or holds you is a penalty.
@@ -381,7 +381,7 @@ Technique: Push the puck out on the forehand to offer it, roll the toe over its 
 Technique: Loosen the top hand as you roll — the stick is held almost in the fingertips
 Key: Re-tightening and rolling the blade back to catch it is the hard part, and where the move is usually lost
 Goal: The toe drag is a protection move as much as a beat-a-guy move — a failed one leaves the puck in your skates
-Read: Use it against a reaching stick, a defender with their weight forward, or to pull the puck around net-front traffic
+Read: Use the toe drag against a reaching stick, a defender with their weight forward, or to pull the puck around net-front traffic
 Never: Use the toe drag in a game until you can do it cleanly several times in a row in practice
 ```
 
@@ -713,7 +713,7 @@ To beat a defender, **sell the fake with your head, shoulders, hips and feet, no
 Key: A deke is a false signal — defenders commit on your hips, shoulders, head, eyes, weight and blade angle
 Action: Commit fully — the fake has to look exactly like the real thing right up to the last instant
 Never: Fake with your hands alone — a neutral body gives the defender no false information
-Action: Accelerate out of it — the move creates the gap, your legs collect it
+Action: Accelerate out of the deke — the move creates the gap, your legs collect it
 ```
 
 A defender cannot wait to see what you actually do — by then it is too late for them. So they read your **signals**: your hips, your shoulders, your head, your eyes, your weight, your blade angle. They commit based on those signals.
@@ -817,7 +817,7 @@ Defenders defend direction well. They are coached to it, they practise it, and t
 ```facts
 Key: Defenders defend direction well and timing badly
 Action: Slow down to bait, then explode — a defender who has just slowed cannot re-accelerate backwards quickly
-Read: Attack while they are transitioning from backwards to forwards, or moving laterally
+Read: Attack while the defender is transitioning from backwards to forwards, or moving laterally
 Never: Use straight-line speed every rush — it leaves the defender only one problem to solve
 ```
 
@@ -988,7 +988,7 @@ Read: A stick feels long in shoes and a puck feels heavier off-ice, which is why
 ```facts
 Convention: Ten to fifteen focused minutes every day builds better hands than two hours once a week — one publisher's coaching guidance, not a consensus
 Key: No controlled comparison of the two schedules is cited here, and the other stickhandling guides this document draws on prescribe no session length at all
-Action: Make it frictionless — leave the pad and a ball where you walk past them
+Action: Make practice frictionless — leave the pad and a ball where you walk past them
 Key: The session you actually do beats the session you planned
 ```
 
@@ -1031,7 +1031,7 @@ Action: Figure 8 around two objects two to six feet apart; also upright, to trai
 Action: The yo-yo — push out on the forehand, pull back with the toe, push out to the side, pull back again
 Action: Human figure 8 — move the puck around and between your own feet
 Action: Kick-pass — puck behind you, pull it into your feet, kick it forward, collect it in front
-Key: Do every one of those drills with your eyes somewhere else — that is the only version that counts
+Key: Do every stickhandling drill with your eyes somewhere else — that is the only version that counts
 ```
 
 - **Soft touch** — fast, tiny back-and-forth with minimal arm movement, cupping both ways.

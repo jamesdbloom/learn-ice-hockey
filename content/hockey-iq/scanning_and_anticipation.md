@@ -427,7 +427,7 @@ Experienced players do not have faster eyes. They have **fewer things to think a
 ```facts
 Key: Experience does not give you faster eyes — it gives you fewer things to think about, because details compress into recognised units
 Action: Name patterns out loud after they happen, on the bench — unnamed experience mostly evaporates
-Action: Predict out loud before they happen and check yourself; a wrong prediction you notice beats ten right ones you never made
+Action: Predict patterns out loud before they happen and check yourself; a wrong prediction you notice beats ten right ones you never made
 Action: Work on one pattern per week — trying to notice everything means noticing nothing
 Action: Chase decisions per minute, not ice time — a three-on-three in a third of the ice gives you far more reads
 Convention: Off-ice cognitive tools are a supplement to playing and being watched by someone who knows what they are looking at, not a substitute
@@ -455,7 +455,7 @@ Key: Scanning is unavailable to you if you have to look at the puck to control i
 Technique: Keep the puck in your peripheral vision — aware of it the way you are aware of your own hands
 Technique: Hands away from your body, so the puck is out in front where your peripheral vision can see it
 Technique: A soft grip — tension in the hands is what makes you look down at a puck you cannot feel
-Action: Train it with a forcing function, not willpower. Stickhandle while calling out fingers or coloured cards, ten to fifteen minutes a day
+Action: Train the head-up habit with a forcing function, not willpower. Stickhandle while calling out fingers or coloured cards, ten to fifteen minutes a day
 ```
 
 What the head-up habit takes (full treatment in [Puck Handling](../technique/puck_handling.md)):

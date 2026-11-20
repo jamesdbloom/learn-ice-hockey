@@ -231,7 +231,7 @@ Options: Aggressive forecheck, then pinching defencemen, then activating a defen
 Read: Trailing, you pinch on anything close; leading, only when you are certain — and either way, only if you can reach the wall as the puck does
 Risk: A pinch that misses is a 2-on-1 the other way, and a fourth attacker deep is a genuine odd-man risk
 Never: Leave the last-man-back spot empty — if a defenceman goes, someone replaces them high, usually a forward
-Action: Say that swap out loud
+Action: Say the swap out loud when a forward takes a defenceman's place high
 ```
 
 Trailing, you must generate more. The trap is that the easiest way to generate more — sending everybody — is also the fastest way to concede and end the game.
@@ -922,7 +922,7 @@ Rule: Each team gets one thirty-second time-out per game, taken at a normal stop
 Rule: Under the NHL, IIHF and PWHL no time-out is granted to the defensive team after an icing (87.1; PWHL 89.1); Hockey Canada lets either team take its time-out, where it has one, after an icing; in U18 AAA, Junior and Member-option Senior the team that iced may not change during it (6.7(d)(iii))
 Rule: Under USA Hockey, Rule 636(f) gives one sixty-second time-out and attaches no icing condition to it, but “[f]or time curfew games, no time-outs shall be permitted” — and the ask must come before the line change procedure concludes, at any stoppage
 Rule: The IIHF wants the time-out asked for before the referee completes the line change (87.1), where the NHL asks only for the request "prior to the drop of the puck" — so in Britain the window shuts when the referee lowers their hand
-Action: Spend it on rest and instruction at a moment you choose — before a critical defensive-zone draw, or before setting up 6-on-5
+Action: Spend your time-out on rest and instruction at a moment you choose — before a critical defensive-zone draw, or before setting up 6-on-5
 Rule: A goalie freezing a shoot-in from beyond the red line, or a defender or goalie accidentally knocking the net off, also bars the defending team's change — NHL and IIHF 63.8, PWHL 65.8; the freeze limb allows only an injured player and a strength-changing penalty, no pulled-goalie one
 Key: The measured effect on winning is nil in the NHL study behind this section, and across its 2014-15 to 2019-20 games most benches finished with the time-out still in the pocket
 ```
@@ -1136,7 +1136,7 @@ Never: Take one at 6-on-5 or defending 6-on-5 — both directions are catastroph
 Action: Keep your feet moving — when your feet stop your stick starts reaching, and a stick used as a substitute for skating is what hooking and tripping calls are made of
 Action: Give up the last word — USA Hockey's casebook has both players given a minor for a push and a push back, so answering costs you a minor whatever else happens
 Risk: The extra minor against whoever started it is the part the casebook says officials often skip, so retaliating can leave you at a straight wash
-Key: The casebook condemns that practice rather than endorsing it — it says the approach discredits the officials and creates more problems later in the game
+Key: The casebook condemns skipping the extra minor for whoever started it rather than endorsing it — it says the approach discredits the officials and creates more problems later in the game
 Action: Have a reset — a breath at the faceoff dot, a tap of the pads, a look at the clock
 Convention: That most amateur penalties are frustration-driven is coaching experience, not data — no published study in amateur hockey codes penalty motive against the preceding play
 ```

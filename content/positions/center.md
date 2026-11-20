@@ -28,7 +28,7 @@ You are the link between the other four skaters: you play the middle of the ice 
 Convention: Low support on the breakout belongs to the swing breakout, a coaching choice — too high and your defenceman has no outlet, too wide and one opponent covers you and your winger; under a centre fly you leave early up the middle instead
 Key: Coming back, the forward arriving late and unmarked behind the puck carrier is usually more dangerous than the carrier — coaching emphasis rather than a counted ranking
 Convention: Which backchecker owns the middle lane is a coaching choice — the centre under the positional assignment assumed here, the first man back on some teams, an assigned check under man-on-man; if nobody has called it, take it
-Key: The slot pays for where it is rather than for how hard you shoot — on coaching-consensus ranges a slot shot is worth roughly three to seven times a perimeter one, from a source that names no dataset
+Key: A slot shot pays for where it is taken, not how hard it is hit — on coaching-consensus ranges a slot shot is worth roughly three to seven times a perimeter one, from a source that names no dataset
 Priority: Put it to the outside in the middle of your own zone and the neutral zone — both graded high for turnover cost: shot danger in one, odd-man rushes in the other. Coaching consensus, not counted
 Key: Prepare the draws that matter — computed from NHL official statistics, team faceoff percentage explains about 6% of points-percentage variation over eleven seasons; in 2016-17 the link was negative
 Convention: "The centre skates the furthest" is coaching craft — no study separates centres from wingers on distance, though the NHL publishes per-skater distance against a position code, so the comparison is unrun rather than impossible
@@ -861,7 +861,7 @@ Rule: Expiry is not the only thing that levels the sides — a penalty to them t
 
 ```facts
 Rule: After your own icing a healthy skater cannot change under NHL and IIHF 81.4 and PWHL 83.4 — injury, a pulled goalie returning and a strength-changing penalty are the exceptions, plus an IIHF broken skate its own 82.1 omits; USA Hockey and CARHA write no icing bar
-Rule: Hockey Canada restricts it only in U18AAA and Junior, and in Senior at the Member's option (6.7(d)), and there its third exception is wider than the NHL's — any penalty assessed to either team, whether or not it changes the on-ice strength
+Rule: Hockey Canada applies its no-change-on-icing rule only in U18AAA and Junior, and in Senior at the Member's option (6.7(d)), and there its third exception is wider than the NHL's — any penalty assessed to either team, whether or not it changes the on-ice strength
 Rule: Where Hockey Canada's no-change bar does apply, its time-out rule goes the other way from the NHL's — 6.7(d)(iii) permits either team to take a time-out, where it has one, after an icing, barring only the icing team from substituting during it
 Rule: If you try to change after the Referee signals the change closed — a late broken-skate swap included — those players go back to the bench with a warning through your coach; a bench already warned takes a bench minor for delay of game (IIHF 82.2(V), which names no broken skate)
 ```

@@ -123,8 +123,8 @@ That is the whole subject in three lines. Pressure and risk are the same dial. A
 ```facts
 Key: F1, F2 and F3 are defined by order of arrival at the puck, and by nothing else
 Key: F1 is whichever forward gets there first, F2 whichever arrives second, F3 the one who is left, staying high towards the blue line you face until the puck escapes and F3 is first man back
-Never: Treat them as positions — if your left winger is closest when the puck goes in the corner, your left winger is F1 and your centre is F2, immediately and without discussion
-Convention: Some coaches do assign them by position as a teaching shortcut, and Centre and Winger describe the common case where the centre is F1 — that is the typical case, not the rule
+Never: Treat F1, F2 and F3 as positions — if your left winger is closest when the puck goes in the corner, your left winger is F1 and your centre is F2, immediately and without discussion
+Convention: Some coaches do assign F1, F2 and F3 by position as a teaching shortcut, and Centre and Winger describe the common case where the centre is F1 — that is the typical case, not the rule
 ```
 
 - **F1** is whichever forward gets there first.
@@ -324,8 +324,8 @@ Convention: F2 attacks the first passing option, not the puck — with the stick
 Convention: F3 stays high in the middle — weak-side by default here, strong-side in the stacked variant, so find out which your team runs
 Rule: The post-icing mismatch is not in every book — NHL and IIHF 81.4 and 87.1, and PWHL 83.4 and 89.1, bar the offending team changing lines or taking a time-out, each with exceptions
 Rule: USA Hockey and CARHA bar neither half of the post-icing mismatch; Hockey Canada 6.7(d) bars the change at U18AAA, Junior and optional Senior only, and allows the time-out where it has one
-Read: Pick it when trailing, off an offensive-zone faceoff, against a defence pair that is slow or panics, and any time they have just iced the puck
-Risk: A successful breakout against it is frequently a 3-on-2 or worse, and it is the most physically expensive system to run
+Read: Pick the 2-1-2 when trailing, off an offensive-zone faceoff, against a defence pair that is slow or panics, and any time they have just iced the puck
+Risk: A successful breakout against a 2-1-2 is frequently a 3-on-2 or worse, and it is the most physically expensive system to run
 Countered by: A quick first pass before F2 arrives, a reverse into the space F1 has vacated, and above all a rim past the pinching defenceman
 ```
 
@@ -366,7 +366,7 @@ Convention: F1 (the "dog") pressures but does not commit to winning the puck. F1
 Convention: F2 (the "fox") sits on the strong-side wall and creates the turnover by jumping the outlet F1 has made predictable
 Convention: F3 (the "hawk") roams the high middle, committed to neither side; on a puck across, F3 becomes the new fox and everyone shifts one role
 Goal: Never being out of position — the 1-2-2 concedes the retrieval and builds a wall they have to pass through
-Read: Pick it protecting a lead, against a fast transition team, when your forwards are tired, or as the forgiving rec-league default
+Read: Pick the 1-2-2 protecting a lead, against a fast transition team, when your forwards are tired, or as the forgiving rec-league default
 Countered by: D-to-D to shift the wall then a quick-up to a winger coming underneath the fox, or a stretch pass past the defencemen — they are the deepest layer it has
 ```
 
@@ -428,7 +428,7 @@ Convention: The single forechecker does not chase. They steer, take away the mid
 Convention: The line of three is conventionally F2, F3 and one defenceman, the defenceman in the middle as the read-maker — some coaches put a forward in the middle instead, so ask which yours is; it shifts across as a unit with the puck
 Convention: The single high player is the safety, responsible for anything that gets behind the line of three
 Goal: Take away lanes rather than players — against a team exiting on three short passes there is nowhere to put the puck
-Read: Pick it against short controlled breakouts, when you cannot get pressure on in time such as against a line change, and to protect a lead
+Read: Pick the 1-3-1 against short controlled breakouts, when you cannot get pressure on in time such as against a line change, and to protect a lead
 Risk: You concede the initial puck entirely, and a great deal of ice if the line of three is beaten in one pass — this is not a beginner system
 Countered by: Chipping past the flat line and beating it with speed, banking a pass off the boards, and moving the puck side to side before committing
 ```
@@ -460,10 +460,10 @@ Popularised in the NHL by Guy Boucher's Tampa Bay teams around 2010–11 — fam
 
 ```facts
 Position: One forward applying token pressure, the other four flat across the ice at or near their own blue line
-Key: This is a neutral-zone structure, not an offensive-zone forecheck — Neutral Zone Systems is the authority on it
+Key: The 1-4 is a neutral-zone structure, not an offensive-zone forecheck — Neutral Zone Systems is the authority on it
 Convention: The lone forechecker steers and slows the exit rather than pressuring; nobody pinches and nobody gambles
 Goal: Preventing odd-man rushes and high-danger chances, full stop
-Risk: It concedes any realistic chance of getting the puck back in their end, and therefore any offence
+Risk: The 1-4 concedes any realistic chance of getting the puck back in their end, and therefore any offence
 Read: A situational tool only — a one-goal lead in the last two minutes, the end of a period, no legs left, or a far better opponent
 Countered by: A hard chip past the flat line and a race for it — not a stretch pass, which is offside against a wall sitting on its own blue line; if the goalie comes out for it, pull up
 ```
@@ -490,8 +490,8 @@ Position: Two forwards forechecking aggressively, three players across the ice b
 Convention: In the left-wing lock the centre and right winger forecheck as F1 and F2, and the left winger drops back to the half-boards
 Convention: If the puck is not won, the left winger slides into line with the two defencemen — effectively a third defenceman going the other way
 Goal: Two-player pressure, nearly as good as a 2-1-2, with three players always between the puck and your net
-Read: Pick it when you want pressure but cannot afford to bleed rush chances, or to nurse a lead without going fully passive
-Risk: It demands a left winger with total positional discipline and the skating to back-check, and gives up the fifth attacker so you cycle less
+Read: Pick the 2-3 when you want pressure but cannot afford to bleed rush chances, or to nurse a lead without going fully passive
+Risk: The 2-3 demands a left winger with total positional discipline and the skating to back-check, and gives up the fifth attacker so you cycle less
 Never: Read "forecheck hard" as a licence to finish into the back of a carrier who has turned to the boards — same onus as the 2-1-2, and the same prior question of whether you may body check at all
 ```
 
@@ -979,7 +979,7 @@ Rule: On an obvious icing or offside the opponent need not be defenceless — NH
 Rule: Never bank on a checked player's deliberate turn — NHL and PWHL 43.1, "no penalty shall be assessed"; IIHF 43.1 waives only that call, "other penalties may still be assessed"; Hockey Canada 7.5(a) Interpretation 2 still penalises the checker; USA Hockey and CARHA, none
 Rule: Never hit a carrier's back: all but USA Hockey eject at their floor (IIHF and Hockey Canada: off the head; on it, plan on the same); USA Hockey's: a minor and misconduct, ejecting if forceful at the boards, reckless, head first into boards or net (608) or careless to head, face or neck (620(b))
 Rule: A hit from behind meant to injure is a match in every book but the IIHF (plan on ejection there); without intent, one into the boards or net on a player who cannot protect or defend themselves is a match under Hockey Canada 7.5(c) and CARHA 53(b); USA Hockey 608(c) if reckless with excessive force
-Rule: Behind them, play the puck — under USA Hockey a minimal pinch from behind at the boards is a minor and misconduct; a check forceful on a player along the boards, reckless or head first ejects; excessive force on a vulnerable or defenceless player, a mandatory match (Casebook 608 Sit. 1; 608(c))
+Rule: Behind a player, play the puck — under USA Hockey a minimal pinch from behind at the boards is a minor and misconduct; a check forceful on a player along the boards, reckless or head first ejects; excessive force on a vulnerable or defenceless player, a mandatory match (Casebook 608 Sit. 1; 608(c))
 Rule: Hockey Canada excuses only accidental, marginal contact while playing the puck that endangers nobody, or a low-speed, minimal-impact pin on the boards — the pin not at U13 and below, in female hockey or any Member-approved division, where 7.3 applies (7.5(a) Interpretation 3)
 ```
 
