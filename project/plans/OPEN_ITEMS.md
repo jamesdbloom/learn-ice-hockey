@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W536 shipped with record `w536_arm_block_late_hit_silence_and_dops_bands_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W537 shipped with record `w537_arm_block_scope_borderlines_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -21,13 +21,15 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(4) The "X and Y in the crease" parse shape.** Dropping a book from a list can leave its scope on a sibling, as happened at winger :789.
     - Only group 2's nine files were checked by listening.
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
-- **From W536 (20 Nov):**
-  - **(1) Arm-block permission without a USA Hockey limit, in other files.** USA Hockey 622 Note makes "using a free arm/hand to restrain or impede" holding, and the book writes no strength move. W536 fixed forechecking only. Sweep the other wall-battle and pinch units (body_contact holding, defender, winger, OZP, DZC) in every layer, for "seal", "arm" and "strength move" wordings that permit an arm block without scoping it away from USA Hockey.
+- **From W537 (20 Nov):**
+  - **(1) Optional: forechecking :1033 names only USA Hockey for the arm block.** A reader in a Hockey Canada 7.3 division could hear the block as fine. :624 prices that case. Sketch: "…block with one under USA Hockey or where checking is barred…".
+  - **(2) Optional: puck_handling :503 and :517 say "a push" for 7.3(a).** 7.3(a) reads "body-checks, bumps, shoves, or pushes".
+  - **(3) body_contact :1737's arm-block cell names only the books that grant one.** The table has 1 character of headroom. :1766 carries "USA Hockey and CARHA write no strength-move sentence at all" in prose.
 - **From W535 (20 Nov; rows 2–4 closed in W536):**
   - **(1) Two lexical sweeps keyed on "reckless".** A unit that prices a head-reaching act under USA Hockey without that word could have passed both. Examples: "only a violent one", "can end your game", or a "several books" list that leaves USA Hockey out. Read the Key Takeaways of the 12 W535 files in full; the reviewers read only some.
 - **From W529 (20 Nov; rows 1, 4 and 6 closed in W530; 3 in W531):**
   - **(2) Casebook Situation 17's reach.** It reads "hard body check" literally; whether it reaches a push, a walk-out or a ride (defender :279/:944/:948) is unsettled.
-  - **(5) W529 text not yet heard aloud.** OZP facts :968 (300/300; its "each" carries 640(e) and 640(b)) and :973; game_management facts :175/:1189 (300/300); the faceoffs :1320 and DZC :865 Common Mistakes. Also: does Casebook Situation 17 reach a push on a screener called as interference (625)? DZC Sources do not yet cite Situation 17.
+  - **(5) W529 text not yet heard aloud.** OZP facts :968 (rewritten in W536; check aloud) and :973; game_management facts :175/:1189 (300/300); the faceoffs :1320 and DZC :865 Common Mistakes. Also: does Casebook Situation 17 reach a push on a screener called as interference (625)? DZC Sources do not yet cite Situation 17.
 - **From W526 (20 Nov; row 3 closed in W527, row 1 in W529):**
   - **(2) rules_primer negatives not reached by the W526 sweep.** :148, :584, :596, :605, :610, :641, :768–:785 (the substitution-timing table), :813, :817, :835, :1038, :1172 and :1183. Also negatives phrased as "cannot", "is unsettled", "does not say" or "leaves it to".
 - **From W523 (20 Nov; rows 1–3, 5 and 6 closed in W524):**
