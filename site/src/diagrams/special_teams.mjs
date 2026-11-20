@@ -754,7 +754,7 @@ const pkDiamond = {
     'circles, two in the middle of the zone either side of the slot, and one alone in front of ' +
     'the net. Five opposition players in a 1-3-1: one at the point with the puck, two on the ' +
     'half-walls, a bumper in the middle of the slot between the two middle killers, and one at ' +
-    'the net front. One route: the apex applying checking pressure out toward the point player, ' +
+    'the net front. One route: the apex applying pressure out toward the point player, ' +
     'finishing short of them and inside them, on the middle shooting lane.',
 
   players: [

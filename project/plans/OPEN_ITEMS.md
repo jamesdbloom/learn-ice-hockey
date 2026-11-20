@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W552 and W553 shipped with record `w553_hc_arm_block_moving_in_limb_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W554 shipped with record `w554_bar_as_brace_arms_bent_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -23,9 +23,10 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - shooting :507's "can eject in the crease (NHL, PWHL 42.1, IIHF 42.4, USA Hockey 607(c))" can be heard as crease-only for those books.
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
-  - **(3) Stale comment:** the rush-3-on-2-alternative module still says "UNDECLARED PAIR… reported to the coordinator". The pair is now declared in `check_caption_pairs.py`, so correct the comment at the next diagram edit.
 - **From W553 (20 Nov):**
-  - **(1) Does leaning the shaft count as cross-checking?** puck_handling :521's Legal cell says "Leaning the bar in to hold your ground" where checking is allowed. Hockey Canada 9.2 defines cross-checking as using the shaft "to check an opponent", with no force element. A rules-verifier should decide this across Hockey Canada, CARHA and USA Hockey.
+  - **(1b) Interference limb for the bar (optional).** USA Hockey Casebook 609 Situation 2 warns that steering with the bar may be interference "if a competitive advantage is gained and there is no puck in the area". puck_handling's row does not carry this, and the table has 3 characters of headroom.
+  - **(1d) The Penalty cell opens "Arms extended, driving the shaft in" (W554 gate, not blocking).** Under Hockey Canada and CARHA a bent-arm drive is a cross-check too; :523 and :506 already say never drive it. Next edit: "Driving the shaft in, arms extended or not".
+  - **(1c) Sweep for the Hockey Canada push-leniency.** W554 cut "a Hockey Canada push is the referee's call" from a penalty cell as permissive. Grep `pushing motion` and `push is the referee` for other carriers.
   - **(2) Optional: winger :104/:124 "hold the position you already have".** A safety reviewer found no exposure, but "hold it and never push back" would close the remaining gap.
   - **(3) A wider sweep for Hockey Canada grants with no "8.1".** Look for blocking or standing-your-ground grants worded without "8.1", "arm block" or "strength move".
 - **From W542 (20 Nov; rows 1 and 2 closed in W543):**
@@ -319,8 +320,7 @@ These questions sit inside the rows above and need the owner's call before anyon
 - **Pressure routes, follow-ups (from W550):**
   - check-arrivals form (p) is now FAIL, with an allowlist in `site/scripts/arrivals-allow.json`.
   - Still uncovered: a curve that bows through a player before its tip, and targets more than 9 ft from the tip (forecheck-roles-rotate D2 sits at 9.49 ft, miss 0.00).
-  - [pk-nz alt texts fixed in W551.] special_teams.mjs ~:757 describe still says "the apex applying checking pressure out toward the point player". Drop "checking".
-  - [defender-holding-the-line puck closed in W551: kept on purpose. It sits clear of the passer's glyph, and the route aims at the lane, not the puck.]
+    - [defender-holding-the-line puck closed in W551: kept on purpose. It sits clear of the passer's glyph, and the route aims at the lane, not the puck.]
   - Pre-existing: corner-escape-routes' auto-placed "'takes the middle away'" label crosses a painted circle.
 - **🇬🇧 on Windows:** still unchecked how 🇬🇧 renders on Windows; it often shows as "GB". This was carried from the Long captions row, which W541 closed.
 - **Slew-foot leftovers (W324–W333; record reviews/w324_one_slew_foot_reading_2026-11-14.md):** (a) the other carriers have not been swept for slew-foot wordings that do not use "slew", such as "a leg behind" or "sweep the feet". (b) body_contact_and_battles's facts line "…slew footing starts at the pair" has no kick limb (optional, 299/300). (c) The IIHF slew-foot "ejects at the floor" may only be a reading if a referee can call the act tripping under 57 instead. Rule 57 has not been read.

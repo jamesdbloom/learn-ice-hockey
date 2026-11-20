@@ -711,9 +711,9 @@ const threeOnTwoAlternative = {
     // moving right to left toward the defended net at the left": in BOTH hosts (defending_the_rush.md
     // :599, goaltender.md :1033) rush-3-on-2-default is embedded directly before this marker and its
     // caption states that orientation; the two pictures share it, and "only the defence has changed"
-    // says so. ⚠️ UNDECLARED PAIR: if either host stops embedding rush-3-on-2-default straight before
-    // this diagram, the orientation clause should come back (reported to the coordinator for a
-    // check_caption_pairs.py row). Wording: "as a 1-on-1" -> "1-on-1". Every tactical limb kept.
+    // says so. ⚠️ DECLARED PAIR: scripts/check_caption_pairs.py DEPENDENCIES now requires
+    // rush-3-on-2-default directly before this diagram (added W541); if either host stops embedding
+    // it there, that check reports it and the orientation clause must come back. Wording: "as a 1-on-1" -> "1-on-1". Every tactical limb kept.
     'A 3-on-2 defended the realistic alternative way, "strong side takes the puck, weak side ' +
     // ✂️ W464, 18 Nov 2026 (162 words before): wording only. Every limb above is still here —
     // the cross-reference by name, the open-ice route and why, both halves of the trade
