@@ -68,6 +68,9 @@ DEMONSTRATIVES = {"this", "that", "these", "those"}
 SUBORDINATORS = {
     "once", "when", "if", "why", "because", "unless", "until", "and", "but", "so",
     "or", "then", "even", "where", "while", "though", "although", "after", "before",
+    # Added W519 (20 Nov 2026): label openers "What it is.", "What it costs.", "How it works",
+    # "Who it suits" were invisible -- about 40 in five directories (W518 content review).
+    "what", "how", "who",
 }
 # "Under USA Hockey it is…", "In the NHL it…": a scope phrase is skipped so the pronoun after it
 # is tested. Kept to the corpus's book names on purpose; --loose catches the rest.
@@ -88,26 +91,39 @@ def clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def opener_hit(text: str, loose: bool, demo: bool = False) -> str | None:
-    """The pronoun the unit opens on, or None."""
-    pron = PRONOUNS | DEMONSTRATIVES if demo else PRONOUNS
-    t = FACTS_LABEL_RE.sub("", clean(text), count=1)
+def _first_pronoun(t: str, pron: set, loose: bool) -> str | None:
     t = SCOPE_RE.sub("", t, count=1)
     words = re.findall(r"[A-Za-z’']+", t)
     if not words:
         return None
-    window = words[:6] if loose else words[:2]
-    if not loose:
-        first = words[0].lower()
-        if first in pron:
-            return words[0]
-        if first in SUBORDINATORS and len(words) > 1 and words[1].lower() in pron:
-            return words[1]
+    if loose:
+        for w in words[:6]:
+            if w.lower() in pron:
+                return w
         return None
-    for w in window:
-        if w.lower() in pron:
-            return w
-    return None
+    # Skip a CHAIN of leading subordinators ("And if it…", "But when they…"): W518 found
+    # mental_game :45 "And if it has spread…" only by grep because the old test looked one word in.
+    i = 0
+    while i < len(words) - 1 and words[i].lower() in SUBORDINATORS:
+        i += 1
+    return words[i] if words[i].lower() in pron else None
+
+
+def opener_hit(text: str, loose: bool, demo: bool = False) -> str | None:
+    """The pronoun the unit opens on, or None.
+
+    A leading label ("Rule:", "Key:", and also "Why it works:") is tested ITSELF before it is
+    stripped. Until W519 the label was stripped unread, so an inline "Why it works: your time…"
+    or "Why it matters: …" was never tested (time_and_space :250, the rink_map entries)."""
+    pron = PRONOUNS | DEMONSTRATIVES if demo else PRONOUNS
+    t = clean(text)
+    m = FACTS_LABEL_RE.match(t)
+    if m:
+        hit = _first_pronoun(m.group(0).rstrip(": "), pron, loose)
+        if hit:
+            return hit
+        t = t[m.end():]
+    return _first_pronoun(t, pron, loose)
 
 
 def voiced_sequence(text: str):
