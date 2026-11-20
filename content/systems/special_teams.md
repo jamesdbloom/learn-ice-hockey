@@ -26,7 +26,7 @@
 
 **On the kill, hold your own job and concede only the shot you chose.** Kill it at your blue line if you can. Chase only a puck you can win — a bobble, a turned back, an unsupported puck on the boards — and **go for the puck, not through the man**.
 
-**Clear, then change, and call the man coming out.** Change when you can, not when you must. The player leaving the box is a fresh attacker nobody is marking. Agree the defensive-zone draw, and where the clear goes, before you line up.
+**Clear, then change, and call the man coming out.** Change when you can, not when you must. The player leaving the penalty box is a fresh attacker nobody is marking. Agree the defensive-zone draw, and where the clear goes, before you line up.
 
 **A man short, fire the long clear the moment you have it — if your book allows it.** A shorthanded team may usually ice it, but USA Hockey withholds that below its older levels, and the NHL and PWHL withdraw it in one major-penalty case. Aim it away from their goalie, and release it before the penalty ends.
 
@@ -493,7 +493,7 @@ The second idea: **time is on your side and nothing else is.** Two minutes is no
 Convention: Which shape you run is a coaching choice — the same four players can run all three in one game
 Action: Know which one is called before the faceoff
 Key: The box, diamond and wedge+1 are the in-zone shapes, a separate decision from the neutral-zone pressure scheme below, not a competing one
-Key: The box is the shape almost everyone is taught first and the baseline the other two are described against
+Key: The box kill is the penalty-kill shape almost everyone is taught first and the baseline the other two are described against
 Risk: No public count of how many NHL teams run each penalty-kill shape as a base has been found. Treat any "most teams use X" claim as an impression, not a measurement
 ```
 
@@ -507,11 +507,11 @@ Risk: No public count of how many NHL teams run each penalty-kill shape as a bas
 
 ```facts
 Position: A box kill is a rectangle around the slot — two forwards high, one each side in the shooting lanes, and two defencemen low covering the corners and the goalmouth
-Key: A box has two players high and no single "top" — if you are describing "the top of the box", you are describing a diamond
+Key: A box kill has two players high and no single "top" — if you are describing "the top of the box", you are describing a diamond
 Action: High forwards deny the point time and space, stay in shooting lanes, and never both drift to the same side
 Action: The strong-side D pressures the puck below the goal line or in the low circle; the weak-side D owns the goalmouth and the backdoor
-Technique: The box slides with the puck rather than rotating — all four shift together, keeping the shape intact
-Read: Very good against an overload, which it can out-wait, and against a 2-3, whose attack aims where a box is strongest
+Technique: As usually taught, a box kill slides with the puck rather than rotating — all four shift together, keeping the shape intact
+Read: A box kill is very good against an overload, which it can out-wait, and against a 2-3 power play, whose attack aims where a box is strongest
 Countered by: A 1-3-1 — nobody in a box is assigned to the middle of the slot, so the bumper stands there uncovered by design
 ```
 
@@ -523,7 +523,7 @@ Countered by: A 1-3-1 — nobody in a box is assigned to the middle of the slot,
 
 - **High forwards:** deny the point players time and space, stay in shooting lanes, and never both drift to the same side. Your inside shoulder should be turned so you can see your point man and the middle at once. Whether you step out to pressure the point or hold your lane is your coach's call, so ask which they want.
 - **Low defencemen:** the strong-side D pressures the puck when it comes below the goal line or to the low circle; the weak-side D owns the goalmouth and the backdoor. Same partnership logic as even-strength [Defensive Zone Coverage](defensive_zone_coverage.md).
-- **Everyone:** the box **slides** with the puck rather than rotating. When the puck moves across, all four shift together, keeping the shape intact.
+- **Everyone:** the box kill **slides** with the puck rather than rotating. When the puck moves across, all four shift together, keeping the shape intact.
 
 **Strengths:** simple, teachable, hard to break down, and excellent at protecting the goalmouth and the low slot. Very good against an **overload**, which it can simply out-wait, and against a **2-3**, whose entire attack aims at the two areas a box defends best.
 
@@ -954,15 +954,15 @@ The seconds around a penalty ending are among the most dangerous in hockey, in b
 ```facts
 Rule: A goal against a shorthanded team ends the minor with the least time remaining — minors and bench minors only, not majors, and not on a penalty shot (NHL Rule 16.2)
 Action: On the power play, know the clock — the last ten seconds are your best chance, because the kill's concentration dips
-Read: On the kill, the player coming out of the box is a fresh attacker arriving from the side at full speed with nobody assigned to them
+Read: On the kill, the player coming out of the penalty box is a fresh attacker arriving from the side at full speed with nobody assigned to them
 Action: Whoever is nearest calls "man coming out!" and picks them up
-Action: If you are the player leaving the box, sprint — you are the most dangerous player on the ice for about three seconds
-Technique: While you are in the box, watch the play rather than the clock, and come out facing the ice
+Action: If you are the player leaving the penalty box, sprint — you are the most dangerous player on the ice for about three seconds
+Technique: While you are in the penalty box, watch the play rather than the clock, and come out facing the ice
 ```
 
 - **A goal against a shorthanded team ends the minor with the least time remaining** (Rule 16.2). Minors and bench minors only — **not majors**, and **not when the goal comes on a penalty shot**.
 - **On the power play, know the clock.** The last ten seconds are your best chance: the kill is watching the clock too, and their concentration dips.
-- **On the kill, the player coming out of the box is a fresh attacker** arriving from the side of the rink at full speed with nobody assigned to them. Whoever is nearest must call it — "man coming out!" is one of the most useful things anyone says on a rink — and pick them up. If *you* are the player leaving the box, sprint; you are the most dangerous player on the ice for about three seconds. While you are in there, **watch the play, not the clock**, and come out facing the ice.
+- **On the kill, the player coming out of the penalty box is a fresh attacker** arriving from the side of the rink at full speed with nobody assigned to them. Whoever is nearest must call it — "man coming out!" is one of the most useful things anyone says on a rink — and pick them up. If *you* are the player leaving the box, sprint; you are the most dangerous player on the ice for about three seconds. While you are in there, **watch the play, not the clock**, and come out facing the ice.
 
 #### 6-on-4
 
@@ -1232,7 +1232,7 @@ These are the errors that survive knowing the systems.
 - **Walking to the corner instead of to the middle.** On a walk-down, head toward the dot; below the goal line and wide you are harmless. If it is denied, reset to the point.
 - **Sending two players after a clear.** Only one chases — often the net-front player or the weak-side half-wall, but that is a coaching choice. The chaser arrives *before the puck stops*; if two go, nobody holds the zone.
 - **Pinching as the lone point player.** Holding the line is your job, and a missed pinch puts you two strides deeper than a missed hold. If a clear beats you cleanly, turn and skate rather than lunge.
-- **Describing a 1-3-1 as having "defencemen at the points".** It has **one** point player. Two means an umbrella, an overload or a 2-3 — name it right so your linemates know where to stand.
+- **Describing a 1-3-1 as having "defencemen at the points".** It has **one** point player and a bumper in the middle of the slot. Read the shape, not the point count: two at the points with three low is a 2-3, three high in an arc is an umbrella, and four on one side is an overload — name it right so your linemates know where to stand.
 - **Standing three players level across the blue line and calling it an umbrella.** Every pass is short and lateral and the kill barely moves. An umbrella is an **arc**: apex highest in the middle, flanks lower.
 - **Playing a 5-on-3 like a better 5-on-4.** Spread out, move the puck across the middle, and shoot when the goalie is moving, not into three blockers. Patient is not passive: two minutes with no shot is a failed 5-on-3.
 - **Reading "the kill can't pressure at 5-on-3" as "nobody will touch me."** Three killers still jump a bobble and close on anyone walking into the slot. Move the puck before they close, protect it on every touch, and expect to be hit in the slot.
@@ -1241,7 +1241,7 @@ These are the errors that survive knowing the systems.
 
 - **Covering something that was never yours.** Hold your own job even when the conceded area looks dangerous — a box concedes the middle, a diamond the outside and backdoor, a wedge+1 the perimeter, and the goal comes when a killer leaves their job to cover it.
 - **One player pressuring while the other three sit.** Pressure as a unit or not at all. In a wedge+1, when the puck moves away from the +1, the nearest wedge player steps out as the new +1 and the old +1 drops in; a +1 who keeps chasing leaves you killing with three.
-- **Both high forwards in a box drifting to the same side.** The box **slides** with the puck as a unit; it does not rotate or bunch. Turn your inside shoulder so you can see your point man and the middle.
+- **Both high forwards in a box kill drifting to the same side.** The kill box **slides** with the puck as a unit; it does not rotate or bunch. Turn your inside shoulder so you can see your point man and the middle.
 - **Chasing a puck that was never winnable.** Go only for a bobbled reception, a turned back, or an unsupported puck on the boards — and on a turned back go for the puck, never through the man. In most books a call for checking from behind ends your game every time, and in every book it can. A hit meant to injure is a match in every book but the IIHF. Even without intent, if they cannot protect themselves, plan on a match: Hockey Canada and CARHA must give one for a hit from behind into the boards or net, Hockey Canada for one that reaches their head anywhere (7.6(c), 7.7(c)), and USA Hockey must for a reckless hit with excessive force, boards or not (608(c)); see [Mistakes that get you hurt](#mistakes-that-get-you-hurt). Chase and miss, and you have opened the seam yourself.
 - **Taking a shorthanded rush that is really a 2-on-2.** Take only the rush the turnover handed you, with your partner having seen it. If you have to wonder whether it is on, it is not; lose it and you are 4-on-5 against speed.
 - **Changing when you must rather than when you can.** A tired killer chases. Clear, then change.
@@ -1340,7 +1340,7 @@ section named with each question, and the Key Takeaways, are where you get it.*
 6. **Win the draw with your stick and keep your wingers off the hash marks.** A creeping winger gets your **centre** thrown off the draw; a second violation can be a minor in every book and is automatic in four, and contact at the dot can be penalised on the first — mandatorily in three. Shorthanded, either is a 5-on-3.
 7. **Block shots from the lane, before the shot, on your feet.** Never block from where you screen your own goalie. Block with your body, head out of the lane, stick flat beside you, and never turn your back or lift a leg. How much to block is your coach's call.
 8. **On the kill, pressure the puck, never the back.** If the carrier is between you and the puck, you were never winning it. ⚠️ **In most books checking from behind ends your game, and in every book it can.**
-9. **A man short, fire the long clear; a man up, never.** Release it before the penalty ends. **USA Hockey allows it only at Youth 15-Only and above, Girls 16U and above, High School and Adult**, and the NHL and PWHL withdraw it when a major expires with your box empty. **A deliberate shoot-out is a minor anywhere, in every book.**
+9. **A man short, fire the long clear; a man up, never.** Release it before the penalty ends. **USA Hockey allows it only at Youth 15-Only and above, Girls 16U and above, High School and Adult**, and the NHL and PWHL withdraw it when a major expires with your penalty box empty. **A deliberate shoot-out is a minor anywhere, in every book.**
 10. **Screen outside the crease and off its red line; never touch the goalie or block their road home.** ⚠️ **Charging the goalie can end your game in every book, and in some it must.**
 
 ---

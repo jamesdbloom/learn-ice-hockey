@@ -747,8 +747,9 @@ const walkDownMan = {
 // 6 · Box+1
 // ---------------------------------------------------------------------------
 // Drawn because the section spends a paragraph on a confusion a picture settles
-// in one glance: "It is not a penalty-kill box. A penalty-kill box is four
-// players with two high and two low. Box+1 is a five-man even-strength shape."
+// in one glance. The section now puts it (facts Key: line, W590): "Not a penalty-kill box -- a kill
+// box slides as one unit; Box+1 is a five-player even-strength shape whose box rotates one position
+// each time the +1 role passes on." (It used to quote the four-versus-five player count only.)
 //
 // The box's corners are the section's own words — "two low near the posts, two
 // higher near the tops of the circles" — and the comparison table pins the high
@@ -803,8 +804,12 @@ const boxPlusOne = {
     'Box+1, one of several defensive-zone systems: coaching material calls it the standard ' +
     'introductory structure for young players and beginner adults, and nobody publishes a ' +
     'count of what teams actually run. ' +
-    'It is not a penalty-kill box — that is four players, and this is a five-player ' +
-    'even-strength shape. ' +
+    // W590 (20 Nov 2026): the discriminator is now the owner's slide/rotate one
+    // (defensive_zone_coverage.md Box+1 facts, Key: line), not the player count alone.
+    // The negation closes on a full stop (check_caption_negations flagged "Not a penalty-kill box:"
+    // followed by "a kill box slides" -- a listener could carry the "not" into the slide).
+    'This is not a penalty-kill box. A kill box slides as one unit; Box+1 is a five-player even-strength ' +
+    'shape whose box rotates one position each time the +1 role passes on. ' +
     'The box’s depth is fixed, its width is not, so read the width drawn here as one ' +
     'reasonable version, not a measurement.',
 

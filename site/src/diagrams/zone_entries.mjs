@@ -781,7 +781,7 @@ const flipOverTrap = {
   // it: both hosts state it in the prose beside the marker (zone_entries' "How" bullet,
   // winger's flip bullet), so the caption only says where the drawing lands the puck.
   caption:
-    'The structure drawn is a 1-3-1, and skating into the three is the trap working. So the ' +
+    'The structure drawn is a neutral-zone 1-3-1, and skating into the three is the trap working. So the ' +
     'puck is lifted high, blade opened under it, to land behind their defence and short of ' +
     'the goal line. A flat diagram cannot show the height, and the height is the whole play: ' +
     'it goes over the three-player wall rather than through it.',

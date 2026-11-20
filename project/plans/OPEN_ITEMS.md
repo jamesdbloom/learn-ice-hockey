@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W588 shipped with record `w588_system_profile_names_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W590 shipped with record `w590_box_kill_vs_box_plus_one_and_homonyms_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
@@ -102,7 +102,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
     - [Summary sections (Key focus, Overview, KT, CM) closed in W581: 15 defects out of 176 hits.]
     - The "it = puck" and "their = opposing team" classes, not tallied.
     - [The `Countered by:`/`Goal:`/`Position:`/`Targets:` lines were closed in W583: 58 DEFECT rows applied. About 45 OPTIONAL rows remain in `../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`.]
-    - [Near-misses team_play :725/:726 and special_teams :1338 confirmed and in W583.] [`Risk:`/`Options:` closed in W585: 130 rows applied. The 21 optional rows were closed in W587: 11 applied and 10 left as clear when heard alone. switching_positions :83 and :463 were fixed in W587.] [The OPTIONAL system-profile rows (19 in `../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`, not ~45) were closed in W588, along with sibling profile lines in the same blocks: 41 named and 11 left.] Homonym collisions remain (overload, 1-3-1, box, +1). In facts profile lines W588 now names "1-3-1 forecheck" vs "1-3-1 power play", "2-3 power play", "box kill" and "strong-side overload"; body prose is not checked.
+    - [Near-misses team_play :725/:726 and special_teams :1338 confirmed and in W583.] [`Risk:`/`Options:` closed in W585: 130 rows applied. The 21 optional rows were closed in W587: 11 applied and 10 left as clear when heard alone. switching_positions :83 and :463 were fixed in W587.] [The OPTIONAL system-profile rows (19 in `../reviews/w583_system_profile_optional_rows_2026-11-20.tsv`, not ~45) were closed in W588, along with sibling profile lines in the same blocks: 41 named and 11 left.] [Homonym collisions (overload, 1-3-1, box, +1) closed in W590 across every layer and the captions; see its record.] W589's census did not check other homonyms: umbrella, diamond, spread, lock, trap, stack, "the three across", and 1-2-2 / 2-1-2 / 1-4 (forecheck vs neutral zone).
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518; 2 in W524):**
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.

@@ -620,7 +620,7 @@ One thing worth asking rather than assuming: **the bumper is *usually* the centr
 **In short:** Hold your spot in the shape rather than chase the perimeter, block from close on your feet, and clear it whenever you get it.
 
 ```facts
-Position: In a box you are one of the two high players, in the shooting lane on your side; in a diamond you take a middle spot on a half-wall; in a wedge+1 you are often the "+1"
+Position: In a box kill you are one of the two high players, in the shooting lane on your side; in a diamond you take a middle spot on a half-wall; in a wedge+1 you are often the "+1"
 Action: As the +1, pressure whoever has the puck; when the puck moves the nearest wedge player takes over as the new +1, so you never follow it round
 Options: Your route out as the +1 is a coaching choice — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and point; ask which one your team runs
 Action: Stay tight, block shots, and force the opposing point into low-percentage shots

@@ -423,8 +423,12 @@ const pp23 = {
 
   caption:
     'Five attackers on a 5-on-4, the killers not drawn: two defencemen at the points and ' +
-    'three forwards low, the puck going low-to-high and back. Count the players at the point ' +
-    '— two means this shape, an umbrella or an overload, while a 1-3-1 has exactly one. Which ' +
+    // W590 (20 Nov 2026): the point-count rule contradicted the corpus's own pp-umbrella (lone D at
+    // the apex) and pp-overload (one point). Replaced with the shape rule special_teams.md's Common
+    // Mistakes now states: read the shape, not the point count.
+    'three forwards low, the puck going low-to-high and back. Two at the points and three low is ' +
+    'this shape; a 1-3-1 has one point player and a bumper in the slot; an umbrella has three high ' +
+    'in an arc; an overload puts four on one side. Which ' +
     'your team runs is a coaching choice, and that it stays common in rec and youth hockey is ' +
     'an impression rather than a measured share.',
 
@@ -680,9 +684,14 @@ const pkBox = {
   width: 900,
 
   caption:
-    'Four killers, shorthanded 4-on-5, drawn against the 1-3-1 that counters it: two forwards ' +
+    // W590 (20 Nov 2026): ADDED the slide -- special_teams.md's box section ("the box kill slides with
+    // the puck rather than rotating ... all four shift together") and Common Mistakes say it, and on
+    // winger.md and defender.md this caption is the only carrier beside the marker. "the 1-3-1" ->
+    // "the power-play 1-3-1" (the corpus also has a neutral-zone 1-3-1).
+    'Four killers, shorthanded 4-on-5, drawn against the power-play 1-3-1 that counters it: two forwards ' +
     'high, one each side in the shooting lanes, and two defencemen low — the strong-side one on the puck when it comes low, ' +
-    'the weak-side one on the goalmouth and the backdoor. The ' +
+    'the weak-side one on the goalmouth and the backdoor. When the puck moves, all four slide together as ' +
+    'one unit — a box kill does not rotate. The ' +
     '1-3-1\'s letters: P at the point, H on the half-walls, B the bumper, N at the net front. A box ' +
     'has no single top — describing one means you are describing a diamond. Nobody is ' +
     'assigned to the middle, by design, so the bumper stands uncovered. Which shape a team ' +
@@ -745,7 +754,8 @@ const pkDiamond = {
   width: 900,
 
   caption:
-    'Four killers, shorthanded 4-on-5, drawn against the 1-3-1 it exists to answer, with the ' +
+    // W590 (20 Nov 2026): "the 1-3-1" -> "the power-play 1-3-1" (the corpus also has a neutral-zone 1-3-1).
+    'Four killers, shorthanded 4-on-5, drawn against the power-play 1-3-1 it exists to answer, with the ' +
     'puck at the point: one high at the apex, two in the middle either side, one low. Exactly ' +
     'one player at the top is what makes it a diamond and not a box. Both middle killers ' +
     'collapse onto the bumper. What it concedes is the low player alone against the net front ' +
@@ -830,7 +840,7 @@ const pkWedge = {
     // choice"). Every shot-blocking limb and the ⚠️ sentence are byte for byte -- how_to_watch_hockey.md
     // voices no shot-blocking technique and says the technique lives in this caption's other host.
     'The wedge+1 penalty kill, 4-on-5, ' +
-    'against a 1-3-1 with the puck on the half-wall. Three killers hold a tight ' +
+    'against a power-play 1-3-1 with the puck on the half-wall. Three killers hold a tight ' +
     // W HERE IS *WEDGE*, AND IT IS THE ONLY DIAGRAM IN THE CORPUS WHERE IT IS NOT *WINGER*.
     // Measured: `W` appears on 31 glyphs across 17 diagrams; 29 carry `pos: 'F'` and are
     // wingers, and the two that carry `pos: 'D'` are both here. The shapes are individually
@@ -893,6 +903,9 @@ const pkWedge = {
     // before. KEPT "a coaching choice", so the route is still not presented as the system.
     // Nothing after the glyph is touched.
     'here straight out from the goal toward the carrier: one of three published routes, ' +
+    // W590 (20 Nov 2026): "a 1-3-1" -> "a power-play 1-3-1" above. A handover sentence added here was
+    // REMOVED on review: it sat between "The +1 hurries..." and the level caveat, weakening "that
+    // pressure"'s antecedent, and both hosts already voice the handover beside the marker.
     'and a coaching choice. Whether that pressure may end in a hit depends on whether your game ' +
     'allows body checking. ' +
     // SAFETY. "Block from close and on your feet, head out of the lane" follows the host's

@@ -876,7 +876,7 @@ Convention: Under this guide's standard 2-1-2 forecheck, F1 goes to the puck and
 Convention: F2 reads F1's angle and covers the side F1 forced them toward — F1 creates, F2 collects
 Convention: F3 stays high, around the top of the circles, protecting against the breakout pass up the middle and the counter-attack — and that job ends if the puck escapes, because F3 is the first man back
 Options: In a 1-2-2 F1 pressures but F2 and F3 hold higher, funnelling the puck to one side — fewer pucks recovered low, far fewer odd-man rushes
-Options: In a 2-1-2 aggressive/overload both F1 and F2 attack the same side hard; in a 1-3-1 F1 pressures and three lock the neutral zone, which is a trap
+Options: In a strong-side (stacked) 2-1-2 both F1 and F2 attack the same side hard; in a 1-3-1 F1 pressures and three lock the neutral zone, which is a trap
 Action: Find out which one your team plays — the same dump-in requires a different second man in each
 ```
 
@@ -886,7 +886,7 @@ Under the **standard forecheck used throughout this guide — a 2-1-2** — the 
 - **F2** reads F1's angle and covers **the side F1 forced them toward** — usually the strong-side wall or the area behind the net. F2 is the one who actually recovers most pucks; F1 creates, F2 collects.
 - **F3** stays high, generally around the top of the circles, protecting against the breakout pass up the middle and the counter-attack. **That job ends if the puck escapes the zone: F3 is the first man back.**
 
-**Other systems assign this differently.** In a **1-2-2**, F1 pressures but F2 and F3 both hold higher, funnelling the puck to one side rather than chasing it; you will recover fewer pucks below the goal line but concede far fewer odd-man rushes. In a **2-1-2 aggressive/overload**, both F1 and F2 attack the same side of the ice hard. In a **1-3-1 forecheck** F1 pressures and three players lock the neutral zone, which is barely a forecheck at all — it is a trap. **Find out which one your team plays**, because the same dump-in requires a different second man in each.
+**Other systems assign this differently.** In a **1-2-2**, F1 pressures but F2 and F3 both hold higher, funnelling the puck to one side rather than chasing it; you will recover fewer pucks below the goal line but concede far fewer odd-man rushes. In a **strong-side (stacked) 2-1-2**, both F1 and F2 attack the same side of the ice hard. In a **1-3-1 forecheck** F1 pressures and three players lock the neutral zone, which is barely a forecheck at all — it is a trap. **Find out which one your team plays**, because the same dump-in requires a different second man in each.
 
 See [Forechecking Systems](forechecking_systems.md) for the full treatment.
 

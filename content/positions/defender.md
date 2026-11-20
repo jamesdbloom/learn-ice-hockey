@@ -690,11 +690,11 @@ The centre takes the faceoff. **The alignments here are a common default rather 
 **Whichever formation your team runs, your first job is keeping the puck in the zone and your second is shooting for tips and rebounds rather than trying to beat the goalie clean — but find out first whether you are on the ice at all, because a 1-3-1 uses only one defenceman.**
 
 ```facts
-Key: 1-3-1 — one defenceman only, playing the single point as the quarterback; if you are the second defenceman you are on the second unit, not on the ice
+Key: 1-3-1 power play — one defenceman only, playing the single point as the quarterback; if you are the second defenceman you are on the second unit, not on the ice
 Action: As the quarterback, move the puck quickly, walk the line laterally to open shooting lanes, and use the threat of your shot to pull the box out of shape
 Key: Umbrella — you are one of two defencemen high, so you have a point partner and can play give-and-go across the top
-Key: 2-3 — both defencemen at the points; the older structure, and still common in rec, beer-league and youth hockey — an impression of how those levels play rather than a measured share
-Key: Overload — you are usually the lone weak-side outlet, the release valve when the strong side gets sealed
+Key: 2-3 power play — both defencemen at the points; the older structure, and still common in rec, beer-league and youth hockey — an impression of how those levels play rather than a measured share
+Key: Overload power play — you are usually the lone weak-side outlet, the release valve when the strong side gets sealed
 Priority: Keeping the puck in the zone is your first job — a cleared power play has to re-enter against four killers already set in their structure
 Action: Shoot for tips and rebounds rather than trying to beat the goalie clean through four bodies
 ```
@@ -714,7 +714,7 @@ Whichever you're in: your first job is **keeping the puck in the zone**. A power
 
 ```facts
 Key: A kill is four skaters, normally two forwards and two defencemen — where you and your partner stand depends on which of the three shapes your team kills in
-Key: Box — you and your partner low, owning the net front and the two low corners; it is the shape almost everyone is taught first, and no public count of what teams actually run has been found
+Key: Box kill — you and your partner low, owning the net front and the two low corners; it is the shape almost everyone is taught first, and no public count of what teams actually run has been found
 Key: Diamond — usually one of you takes the low point at the net front and the other a middle spot; run against a 1-3-1, because a box leaves the bumper — their player in the middle — unmarked
 Key: Wedge+1 — you are almost always in the triangle, not the "+1" who pressures whoever has the puck
 Action: In wedge+1 the handover can make you the +1 — when the puck moves, the nearest wedge player steps out and the previous +1 drops into the triangle

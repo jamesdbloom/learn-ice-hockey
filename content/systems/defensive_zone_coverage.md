@@ -364,13 +364,13 @@ There are inverted versions — some teams play man on the puck carrier anywhere
 
 ### Box+1
 
-Four players form a box around the slot — two low near the posts, two higher near the tops of the circles — and the fifth player, the "+1", is the only one who chases the puck. When the puck moves, the +1 role passes to whoever is now nearest, and the box rotates one position to fill the space they left.
+In Box+1, four players form a box around the slot — two low near the posts, two higher near the tops of the circles — and the fifth player, the "+1", is the only one who chases the puck. When the puck moves, the +1 role passes to whoever is now nearest, and the box rotates one position to fill the space they left.
 
 ```facts
-Convention: Four players form a box around the slot — two low near the posts, two higher near the tops of the circles
-Convention: The "+1" is the only player who chases the puck; when the puck moves, the role passes to whoever is nearest and the box rotates one position to fill the space
+Convention: In Box+1, four players form a box around the slot — two low near the posts, two higher near the tops of the circles
+Convention: In Box+1, the "+1" is the only player who chases the puck; when the puck moves, the role passes to whoever is nearest and the box rotates one position to fill the space
 Convention: Coaching material has Box+1 the standard introductory structure for young players and beginner adults — passive, forgiving of mistakes, and a simple picture of where to stand; nobody publishes a count of what teams run
-Key: Not a penalty-kill box — that is four players, two high and two low; Box+1 is a five-player even-strength shape
+Key: Not a penalty-kill box — a kill box slides as one unit; Box+1 is a five-player even-strength shape whose box rotates one position each time the +1 role passes on
 Countered by: A good puck-moving team — Box+1's one chaser cannot pressure them, so they hold the puck and pick their moment
 ```
 
@@ -380,7 +380,7 @@ Countered by: A good puck-moving team — Box+1's one chaser cannot pressure the
 
 - **As a teaching system.** Coaching material describes it as the standard introductory defensive-zone structure for young players and beginner adults, because it is passive, forgiving of individual mistakes, and gives everyone a simple picture of where to stand. Coaching resources present it explicitly as the stepping stone to sagging zone or hybrid coverage later. **Nobody publishes a count of what teams actually run**, at any level, so take both of those as coaching consensus rather than a measured fact.
 - **In rec and beer league**, where nobody has practised rotations and the priority is that five people are not all chasing the same puck.
-- **Box+1 is not a penalty-kill box.** A penalty-kill box is four players with two high and two low (see [Special Teams](special_teams.md)). Box+1 is a five-player even-strength shape. Same word, different thing.
+- **Box+1 is not a penalty-kill box.** A penalty-kill box is four players, two high and two low, who slide with the puck as one unit rather than rotating (see [Special Teams](special_teams.md)). Box+1 is a five-player even-strength shape whose box rotates one position each time the +1 role passes to someone new. Same word, different thing.
 
 **What Box+1 concedes:** almost everything on the perimeter. One chaser cannot pressure a good puck-moving team, so they will hold the puck as long as they like and pick their moment. It buys structure at the cost of ever getting the puck back.
 

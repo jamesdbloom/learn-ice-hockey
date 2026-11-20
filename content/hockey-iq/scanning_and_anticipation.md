@@ -437,7 +437,7 @@ A new player sees ten people in ten places and has to work out what each means. 
 
 **How to speed it up:**
 
-- **Name patterns out loud after they happen.** On the bench: *"that was an overload — three on the strong side, and the weak-side point was wide open."* Unnamed experience mostly evaporates.
+- **Name patterns out loud after they happen.** On the bench: *"that was an overload — four on the strong side, and the weak-side point was wide open."* Unnamed experience mostly evaporates.
 - **Predict out loud, then check.** Watching a game, say what happens next — "they'll reverse it", "they're going to walk the line and shoot for the tip". A wrong prediction you notice is worth more than ten right ones you never made, and you can do it from the stands.
 - **Work on one pattern a week.** "This week I only watch what the weak-side defenceman does on the breakout." Trying to notice everything means noticing nothing.
 - **Get more decisions per minute.** A three-on-three in a third of the ice gives many times the reads of a full-ice drill. Decisions build recognition, not ice time. See [Practice and Development](../off-the-ice/practice_and_development.md).

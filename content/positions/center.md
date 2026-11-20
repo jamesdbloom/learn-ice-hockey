@@ -582,7 +582,7 @@ Never hold it, carry it or drop it somewhere better; never cover a puck in your 
 Get to the spot your formation gives you: in a 1-3-1 you most often play the bumper in the middle of the slot — be a passing target for both half-walls, shoot quickly, screen the goalie and tip point shots — and in an umbrella or an overload you are usually low or on the strong-side wall. Bring the puck in with control, carried into space or passed across the line, rather than skating into the defence or dumping it into traffic.
 
 ```facts
-Position: In the 1-3-1 you most often play the bumper — the middle of the three across the slot, between the point man and the net front
+Position: In the 1-3-1 power play you most often play the bumper — the middle of the three across the slot, between the point man and the net front
 Action: Be a passing target for both half-walls, take quick shots from the slot, screen the goalie and tip point shots
 Key: A box has nobody assigned to the middle, which is exactly why a kill switches to a diamond against you
 Position: In an umbrella or an overload you will usually be low or on the strong-side wall — there is no bumper in a true umbrella
@@ -608,7 +608,7 @@ In an **umbrella** or an **overload** you will usually be low or on the strong-s
 **In short:** Know which shape you are running before the drop, hold your place in it, and pressure the puck rather than chase it.
 
 ```facts
-Position: In a box you are one of the two high players, one each side in the shooting lanes — there is no single "top" to drift into
+Position: In a box kill you are one of the two high players, one each side in the shooting lanes — there is no single "top" to drift into
 Position: In a diamond you are usually the single apex, pressuring the point; in wedge+1 you are frequently the "+1"
 Action: As the +1, pressure whoever has the puck; when the puck moves the nearest wedge player takes over as the new +1, so you never follow it round
 Options: Your route out as the +1 is a coaching choice — straight out from the goal, sweeping across the top of the zone, or roaming to the wall and point; ask which one your team runs

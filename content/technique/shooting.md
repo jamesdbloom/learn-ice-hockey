@@ -206,7 +206,7 @@ Technique: Start the backswing as the pass is released, not when it arrives, and
 Read: A pass behind you — do not reach back and swing at it. Kill the shot, receive it, and take a snap shot half a second later
 Read: Bouncing or rolling puck — abandon the one-timer, cup the blade, give with it and shoot second
 Never: One-time it with a stick or a shoulder inside your swing. Take the pass and shoot second instead
-Convention: Whether you are the one-timer option is a system choice — a 1-3-1 is built around it, an overload usually is not
+Convention: Whether you are the one-timer option is a system choice — a 1-3-1 power play is built around it, an overload usually is not
 Rule: A one-timer is a wind-up taken in traffic, and the follow-through carve-out is the NHL's, the IIHF's and the PWHL's alone (60.1; PWHL 61.1) — USA Hockey's book writes none, nor Hockey Canada's, nor CARHA's
 Rule: CARHA Rule 62(b), CARHA-affiliated adult leagues only, is a major for contact above an opponent's shoulders whether or not it injures, accidental or not, plus a game misconduct by its Note if intentional or injuring
 Rule: Even where the follow-through carve-out is written, it stops at a wild swing — NHL Rule 60.1: "A wild swing at a bouncing puck would not be considered a normal windup or follow through", and IIHF Rule 60.1 is that sentence word for word in its own punctuation

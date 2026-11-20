@@ -1178,7 +1178,7 @@ const bothDToThePuck = {
     'Never both defencemen to the same puck — the formation itself, not what happens after. Your own ' +
     'defensive zone, own net at the right. Both have gone to a puck battle in the corner, and the ' +
     'ice in front of your own net, shaded here, is left completely empty. A coaching convention, not a ' +
-    'law — and it has a real exception: under a strong-side overload some coaches send both ' +
+    'law — and it has a real exception: under a defensive strong-side overload some coaches send both ' +
     'defencemen low and give the slot to a forward instead, so somebody is still home. Find out what ' +
     'your team plays. No contact and no route are drawn: this is a shape, not a play.',
 
