@@ -408,7 +408,7 @@ Never: Step up in the neutral zone unless you are confident you can win the puck
 Never: Read a head-down carrier as a licence to arrive harder — it tells you they cannot change direction, and nothing more
 Convention: How aggressive "confident" should be is a coaching choice — an aggressive neutral-zone press wants you challenging the line, a passive trap wants you holding
 Rule: A step-up finished as a hit is what the charging rules are written for — USA Hockey's Casebook rules the head-down case charging (607, Situation 2) and a check you accelerate through without the two fast strides (Situation 3)
-Rule: Charging binds every division, checking or not — USA Hockey 607, Hockey Canada 7.4 name none — no book caps it at a minor: USA Hockey's floor is minor plus misconduct (607(a)), a reckless charge a mandatory major and game misconduct (607(b)): plan on a match and a likely multi-game ban (602(a))
+Rule: Charging binds every division, checking or not (USA Hockey 607, Hockey Canada 7.4) — no book caps it at a minor: USA Hockey's floor is minor plus misconduct (607(a)), a reckless charge a mandatory major and game misconduct (607(b)): plan on a match and a likely multi-game ban (602(a))
 ```
 
 **What to do:** Step up at the blue line to challenge only if you are confident you can win the puck or force a turnover **and your forwards are tracking back behind the play**. Otherwise — and always when you are the last defender, where a miss is a breakaway — back up under control and deny a clean entry.
@@ -492,7 +492,7 @@ Risk: A missed pinch puts the puck behind you going the other way, so pinch only
 Key: A pinch is generally the safer of the two when someone covers your point; a neutral-zone step-up has no safety net — that compares rushes against you, not injury risk
 Never: Build speed into a step-up to finish it as a hit, or read a head-down carrier as a licence to arrive harder — it tells you they cannot change direction, and nothing more
 Rule: A step-up finished as a hit is what the charging rules are written for — USA Hockey's Casebook rules the head-down case charging (607, Situation 2) and a check you accelerate through without the two fast strides (Situation 3)
-Rule: Charging binds every division, checking or not — USA Hockey 607, Hockey Canada 7.4 name none — no book caps it at a minor: USA Hockey's floor is minor plus misconduct (607(a)), a reckless charge a mandatory major and game misconduct (607(b)): plan on a match and a likely multi-game ban (602(a))
+Rule: Charging binds every division, checking or not (USA Hockey 607, Hockey Canada 7.4) — no book caps it at a minor: USA Hockey's floor is minor plus misconduct (607(a)), a reckless charge a mandatory major and game misconduct (607(b)): plan on a match and a likely multi-game ban (602(a))
 ```
 
 - **Stepping up** happens in the neutral zone or at your own blue line: you move *forward* toward an oncoming attacker to challenge them early rather than retreating. Risk: if you miss, there is nothing but open ice behind you.

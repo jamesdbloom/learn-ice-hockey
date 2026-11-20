@@ -1404,8 +1404,8 @@ const dropPass = {
 // is drawn. This is the one chosen, not all four: high triangle is the
 // cleanest single frame for the section's own point — "arriving with an
 // extra attacker is worth nothing unless it makes one defender responsible
-// for two of you" — because it can show the cue (a defender committing to the
-// wide driver) and the three roles at once without a route finishing on
+// for two of you" — because it can show the cue (a defender committing to one
+// of the wide drivers) and the three roles at once without a route finishing on
 // anyone. Midlane drive and triple drive both resolve to a driver arriving at
 // the net, which this corpus does not draw for the reason `entry-middle-drive`
 // above already states; drive-and-delay is the same turn `entry-delay-curl`
@@ -1415,7 +1415,7 @@ const dropPass = {
 const TRI_CARRIER = { at: 'blue-line', dx: -5, dy: 32 };   // (20, 32)
 const TRI_WIDE = { at: 'blue-line', dx: -5, dy: -32 };     // (20, -32)
 const TRI_TRAILER = { at: 'blue-line', dx: -18, dy: 0 };   // (7, 0)
-// Current position, partway through the shift toward the wide driver already —
+// Current position, partway through the shift toward the puck carrier already —
 // the route's own `from`, so check-arrivals can attribute the arrow to him
 // rather than skipping it as ownerless.
 const TRI_D_NEAR = { at: 'blue-line', dx: 10, dy: 12 };    // (35, 12)
@@ -1429,8 +1429,8 @@ const highTriangle = {
 
   caption:
     'The carrier driving wide, a second attacker driving wide on the far side with no puck, ' +
-    'and the third trailing into the high slot. The read is whether a defenceman goes with ' +
-    'the wide driver — here the near one shifts to cover the wide driver, and that movement is the cue. ' +
+    'and the third trailing into the high slot. The read is which wide driver a defenceman takes — ' +
+    'here the near one slides to the puck carrier, which leaves the far one responsible for two of you. ' +
     'Which named pattern your team runs is a coaching choice.',
 
   describe:
@@ -1443,7 +1443,7 @@ const highTriangle = {
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'D', team: 'opp', pos: 'D', at: TRI_D_NEAR, label: 'goes with the wide driver', labelHint: [0, -7.5] },
+    { id: 'D', team: 'opp', pos: 'D', at: TRI_D_NEAR, label: 'slides to the carrier', labelHint: [5, 13] },   // W520: was [0, -7.5], which put the words between the two D glyphs with no visible leader. Now above him, past his own arrowhead and toward the carrier, on a diagonal leader that clears the arrow. The carrier's own label is displaced above him as a result, with its own leader.
     { id: 'D', team: 'opp', pos: 'D', at: { at: 'blue-line', dx: 10, dy: -8 } },  // (35, -8)
     { id: 'F', pos: 'F', at: TRI_CARRIER, label: 'drives wide, has the puck', labelHint: [0, -7.5] },
     { id: 'F', pos: 'F', at: TRI_WIDE, label: 'drives wide, no puck', labelHint: [0, 6] },   // [0, 8] sat on the neutral-zone dot; [0, 6] mirrors the carrier's label (3 Nov 2026)
@@ -1456,7 +1456,7 @@ const highTriangle = {
     { from: TRI_CARRIER, to: { at: 'top-of-circle:right', dy: 10 }, kind: 'carry' },  // (54, 32)
     { from: TRI_WIDE, to: { at: 'top-of-circle:left', dy: -10 }, kind: 'skate' },     // (54, -32)
     { from: TRI_TRAILER, to: { at: 'high-slot', dx: -8 }, kind: 'skate' },            // (61, 0)
-    // The near defenceman's continued shift toward the wide driver — an 8 ft
+    // The near defenceman's continued shift toward the puck carrier — an 8 ft
     // lateral slide, the same order of magnitude as `outsideShoulder`'s
     // defenceman route above (9.4 ft) for the same reason: a weight shift,
     // not a journey. Starts AT his own glyph (TRI_D_NEAR), not at a bare
@@ -1468,7 +1468,10 @@ const highTriangle = {
   // (20, 32), an own-team forward: the puck landed inside his open ring and
   // collided with his own label letter. Moved to (20, 37), 5.0 ft clear — wide of
   // him toward the boards rather than on top of him.
-  puck: { at: 'blue-line', dx: -5, dy: 37 },   // (20, 37)
+  // W520: MOVED AGAIN to (23, 27), 5.8 ft from his centre on his inside, ahead of him. At
+  // (20, 37) it sat under the first letters of his own label once the D's relabel pushed
+  // that label above him (the placer rejects every slot below him).
+  puck: { at: 'blue-line', dx: -2, dy: 27 },   // (23, 27)
 };
 
 // ---------------------------------------------------------------------------
@@ -1613,7 +1616,7 @@ const squashAndSlide = {
   caption:
     'You are defending here. Both defencemen hold the same depth and slide across together ' +
     'like a foosball bar: the puck is wide on one side, so the defenceman on the puck\'s side forces the carrier ' +
-    'outside while the other holds square. The first forward back takes the slot. Described ' +
+    'outside while the other slides the same distance with their partner. The first forward back protects the slot. Described ' +
     'publicly of Bruce Cassidy\'s Boston Bruins around 2018-19, not a universal system — find ' +
     'out which your team runs.',
 
@@ -1623,8 +1626,8 @@ const squashAndSlide = {
     'with a route continuing into the zone along that side. Two own defencemen, level with each ' +
     'other well inside their own blue line, each have a short route sliding sideways toward the ' +
     'puck side, the same distance and the same direction, so the pair moves as one unit. An own ' +
-    'forward arrives from behind into the middle of the ice, well short of the slot area in ' +
-    'front of the net, rather than joining the pressure on the puck carrier.',
+    'forward arrives from behind into the high slot in front of their own net, rather than ' +
+    'joining the pressure on the puck carrier.',
 
   players: [
     { id: 'G', pos: 'G', at: { at: 'crease', dx: -1 } },

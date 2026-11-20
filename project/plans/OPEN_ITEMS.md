@@ -13,21 +13,21 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W520 shipped with record `w520_peacemaker_scope_and_side_frames_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W521 shipped with record `w521_going_in_mental_health_signs_and_high_triangle_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W520 (20 Nov):**
-  - **(2) defend-squash-and-slide caption (zone_entries.mjs), pre-existing.** It says more than the prose and the picture: "while the other holds square", where the prose has both defencemen slide together and the label says "slides the same distance"; and "the first forward back takes the slot", where the prose says "protects the slot" and the route ends in the high slot. Suggested: "slides with them" and "protects the slot". Check the host first (zone_entries.md ~:1134).
-  - **(3) entry-high-triangle caption and host prose (zone_entries ~:432): "the wide driver" is ambiguous.** The caption names two wide drivers. The defencemen slide toward the carrier, but "cover the wide driver" can be heard as the driver without the puck. The D label sits between the two glyphs with no leader line. The section's own call; a coach may be needed.
+- **From W521 (20 Nov):**
+  - **(1) mental_game §13's warning-signs list (:650–657) has no citation attached.** It sits after the IOC 2019 paragraph, but nothing ties the signs to it. Source-verifier: trace each sign to the IOC consensus statement or another source on disk, or label it.
+  - **(2) defender :411/:495 "plan on a match … (602(a))" for a reckless charge.** USA Hockey 607(e) makes the match discretionary ("may also be assessed"), while 602(a) makes it mandatory for anyone who "recklessly endangers". Rules-verifier call on which governs, then word it once.
+  - **(3) Going-in limbs not carried anywhere.** These are the misconduct or game misconduct for not going to the bench when told (USA Hockey 615(e), Hockey Canada 7.10(d), CARHA 59 Note 2), and a goalkeeper leaving the crease. They also need a sweep of the SIHA and NIHL Rules of Competition. The faceoffs and risk_management Sources trailers do not name the new citations (615(d), 629(a), 70, 7.10(e)(ii), 59(b), 46.14–46.16); that is for a source-verifier.
+  - **(4) Joining sites still say "can end your game" where some books make it mandatory.** special_teams :463, game_management :1046 and :1065. Each opens with an unconditional "stay out", so this was left on purpose (readable beats defendable); sharpen only if a reviewer calls it.
+  - **(5) Phone-width check of the two rebuilt zone_entries diagrams** (entry-high-triangle, defend-squash-and-slide). Their label margins are 0.3–1 ft; check at 400 px when Chrome connects.
+- **From W520 (20 Nov; rows 2, 3, 5 and 6 closed in W521):**
   - **(1) Optional: goaltender Sources trailers (:1805, :1827) quote only the opening clauses of NHL 46.16 and PWHL 46.15.** They stop before *"This rule also applies to subsequent players…"*. The trailer is not voiced, and the body now carries the reach.
   - **(4) Optional: USA Hockey Casebook 615 Situation 6 same-team carve-out.** 615(d) does not catch a teammate breaking up a fight between two players on the same team. No layer carries it outside body_contact. Harmless in direction.
-  - **(5) Other routes to the peacemaker act, not swept.** NHL/IIHF clearing-the-area penalties, the NHL 46.18 team fine, and leaving the bench (USA Hockey, Hockey Canada 10.4, IIHF 70.3) for a player who goes in from the bench. This is the rules-verifier's declared gap.
-  - **(6) Peacemaker claims in other words and other documents.** The W520 safety-reviewer swept only five documents and only for peacemaker, intervene, third man, break up and separate. Still to do: defender, winger, center, game_management and the rest; and the same act in other words ("pull them apart", "step between", "stand up for a teammate").
   - **(7) team_play_and_culture :749 Notes line** ("read across all six books on 25 September 2026…") may narrate the review process (non-negotiable 6). Content-reviewer call.
-- **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519):**
+- **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519; 6 and 7 in W521):**
   - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
-  - **(6) risk_management :861** omits 608(c)'s vulnerable-or-defenceless condition (pre-existing). mental_game :45 and KT1 "anxiety or low mood" may narrow §13's warning signs; optional safety read.
-  - **(7) Carried from W517(5)/(8), not closed in W518.** defender facts :411/:495 read "name none" aloud ("name no division" needs 7 characters; only 5 are free). faceoffs facts :158 "one aimed out" sits nearest "a draw" (low risk).
   - **(3) Pronouns later in the opening words.** The tool catches only the first word (e.g. zone_entries :1111 "Key: Very hard to beat cleanly, and it keeps…"). Run `--loose` on the facts layer and triage.
 - **From W517 (20 Nov; rows 1 and 5–8 closed in W518):**
   - **(2) "Head hit" for USA Hockey 620(b).** rules_primer :31/:1229 use it, but 620(b) also reaches the face and neck. The scope was unchanged by W517 but is narrow everywhere it appears.

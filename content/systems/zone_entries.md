@@ -421,7 +421,7 @@ Never: Delay into the wall on a drive and delay. Curl in open ice instead, befor
 Options: 2-on-2 — crisscross, midlane drive, or double drive, where both attackers drive and the carrier can shoot with the second going to the net
 Options: 3-on-2 — high triangle with two driving wide and the third trailing, midlane drive with the middle attacker going hard at the net, triple drive with all three deep, or drive and delay
 Technique: On a drive and delay, sell the drive, then turn away while the defender is still out of reach — level with them or as they pivot — the delay only buys time if the drive was believed
-Read: What tells the carrier what is open is whether a defender goes with the wide driver — that single movement is the cue
+Read: Watch which wide driver a defender takes — the moment one commits, the other defender is left covering two of you, and that is the cue
 Convention: Which of these your team runs is a coaching choice, so ask instead of assuming the pattern you know is the one being played
 Rule: Every drive here stops at the paint's edge, off its red line: deliberate contact with the goalie is penalised in every book, and a charge can end your game — automatically under Hockey Canada 8.5(b), under CARHA 52(b) in the crease or if it injures, and under USA Hockey 607(b) if reckless
 ```
@@ -432,7 +432,7 @@ This is about the three of you together: **an extra attacker is worth nothing un
 
 **Three-on-two.** Four options, and they differ in where the third player goes:
 
-- **High triangle** — the carrier drives wide with the puck, a second attacker drives wide *without* it, and the third trails into the high slot. The carrier now has a shot, a pass across, and a drop behind. **The read is whether a defender goes with the wide driver**; that single movement tells the carrier what has opened.
+- **High triangle** — the carrier drives wide with the puck, a second attacker drives wide *without* it, and the third trails into the high slot. The carrier now has a shot, a pass across, and a drop behind. **Watch which wide driver a defender takes: the moment one commits, the other defender is left covering two of you**, and that single movement tells the carrier what has opened.
 - **Midlane drive** — get the puck to the outside first, then the middle attacker drives hard at the net on the inside shoulder of the far defender. That defender now has to go with the driver to the net, which turns the rest of the rush into a 2-on-1, and the shot can come from the middle with a screen already in place.
 - **Triple drive** — a variation where all three go deep. The carrier takes it wide with speed and then cuts hard inside, using the two driving teammates to create the room to do it.
 - **Drive and delay** — the carrier sells a hard drive to the net and then pivots away from the defender, back toward the blue line. The defender has already given ground for fear of the drive and needs a beat to react, and that beat is the time and space the entry was for. **The timing is the whole play:** turn up when you are level with the defender or just as they pivot toward you, and turn to the outside, away from them, before they can reach you — never your back to anyone coming at you. Sell the drive first — a delay off a drive nobody believed is just slowing down. **It is the same turn as [§5](#5-the-delay--curl-back), at higher speed, and the same safety override applies.**

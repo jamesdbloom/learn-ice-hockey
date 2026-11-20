@@ -1043,7 +1043,7 @@ Rule: USA Hockey prices covering a puck in your own crease as "a penalty shot/op
 Priority: For a puck in the air there is usually no trade to price at all; knocking it down concedes nothing, and the next section is the whole of that rule
 Never: Foul anything once your own goalie is pulled — every trade that was worth taking with a goalie in the net stops being worth taking without one
 Rule: The empty-net awarded goal — NHL 25.1 and 57.4 for the breakaway; for the crease one NHL and IIHF 67.5, PWHL 69.5 and Hockey Canada 10.2(a)(vi) on the substitution, CARHA 58(c) Note 1 on its face though 36(b) conditions it, USA Hockey 614(b) where it prevented an obvious and imminent goal
-Never: Take one for retaliation, for sending a message, after the whistle, or at any point in the first period
+Never: Take one for retaliation, for sending a message, after the whistle, or at any point in the first period — and do not go into a teammate's fight, which can end your game in every book
 Rule: Trading a foul for a power play assumes the penalty is one, which the after-the-whistle ones are not always — under USA Hockey, assume a puck put out during a stoppage is a misconduct (601(c)(10)), and a game misconduct in protest of a call (601(d)(7))
 ```
 
@@ -1062,7 +1062,7 @@ Once your own goalie is out, ⚠️ **every one of those trades stops working.**
 
 So: **when you have pulled your goalie, there is no foul left that buys you anything.** The exact conditions and wording are set out in [Risk Management](../hockey-iq/risk_management.md#penalty-risk-as-a-decision).
 
-Note what is *not* on the list: retaliation, sending a message, standing up for a teammate after the whistle, and anything in the first period. ⚠️ **And after-the-whistle penalties are not always priced as a power play** — under USA Hockey and Hockey Canada a puck fired out of the rink after a whistle can climb to a game misconduct. See [After the whistle](#after-the-whistle).
+Note what is *not* on the list: retaliation, sending a message, standing up for a teammate after the whistle, and anything in the first period. ⚠️ **And after-the-whistle penalties are not always priced as a power play** — under USA Hockey and Hockey Canada a puck fired out of the rink after a whistle can climb to a game misconduct, and going into a teammate's fight can end your game in every book. See [After the whistle](#after-the-whistle).
 
 ### Catching a loose puck in your own crease
 

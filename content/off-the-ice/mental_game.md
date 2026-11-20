@@ -42,7 +42,7 @@ The mental side closes the gap between your worst game and your best. It does no
 
 **Frustration is not private.** Your linemates read it, and an official can turn it into a penalty or worse.
 
-**And if anxiety or low mood has spread beyond the rink, it is not a hockey problem.** See a qualified professional; looking for one is not a failure of toughness. Any thought of harming yourself or of suicide means getting help now, tonight — the numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
+**And if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread into work, study or home, see a qualified professional — looking for one is not a failure of toughness.** Any thought of harming yourself or of suicide means getting help now, tonight — the numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
 
 ---
 
@@ -697,7 +697,7 @@ This document is about performance. It is not a substitute for care, and some of
 - **Assuming you deserve more ice time than you get.** That most players believe this is an observation with no source behind it, but nobody judges their own case well. Ask one specific question in private, then do the work.
 - **Absorbing abuse because it comes from a demanding coach.** Criticism of your play is coaching; personal degradation or routine humiliation is not. Take it to your club's safeguarding lead or another club official, the league or the governing body.
 - **Treating flat stretches as failure.** Plateaus are usually consolidation. Track process markers and keep a technical project going. Hours alone were never the whole story: deliberate practice explains about 18% of performance variance — see [Practice and Development](practice_and_development.md).
-- **Managing a clinical problem with performance techniques.** If it has spread beyond the rink, talk to your GP or family doctor, or a qualified clinical psychologist. Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13, When to seek real help](#13-when-to-seek-real-help) has the crisis lines.
+- **Managing a clinical problem with performance techniques.** If low mood or anxiety lasts for weeks, will not settle once play starts, keeps upsetting your sleep or appetite, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, talk to your GP or family doctor, or a qualified clinical psychologist. Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13, When to seek real help](#13-when-to-seek-real-help) has the crisis lines.
 
 ## Check yourself
 
@@ -741,7 +741,7 @@ This document is about performance. It is not a substitute for care, and some of
 
 ## Key Takeaways
 
-1. **If anxiety or low mood has spread beyond the rink, see a qualified professional — that is not a failure of toughness.** Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13](#13-when-to-seek-real-help) has the crisis lines.
+1. **See a qualified professional if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink — that is not a failure of toughness.** Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13](#13-when-to-seek-real-help) has the crisis lines.
 2. **After every mistake, run the same reset — trigger, long breath out, cue word, next action — and name that action before your skates hit the ice.** On the bench, recover, watch and plan; analyse after the game. If a thought sticks, notice it and move on; don't fight it. The order is coaching craft; evidence for acceptance is thin.
 3. **Decide early and commit: simple in your own end, creative in theirs.** Hesitation is a mistake too — the half-second you take to be sure is all a forechecker needs. Off the glass and out (not over it), chosen early, is a good play; the same chip late is a turnover.
 4. **Score your night on three process goals for your role; keep the outcome goal on the list, but not as the verdict.** Check your team's system before you write them. ⚠️ **Never put "finish every check" on the list:** your age and your league's category decide whether you may check at all — see [Body Contact and Battles](../technique/body_contact_and_battles.md) §1.

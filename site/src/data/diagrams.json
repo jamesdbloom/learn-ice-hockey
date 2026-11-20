@@ -2414,7 +2414,7 @@
   "entry-high-triangle": {
     "id": "entry-high-triangle",
     "owner": "content/systems/zone_entries.md",
-    "caption": "The carrier driving wide, a second attacker driving wide on the far side with no puck, and the third trailing into the high slot. The read is whether a defenceman goes with the wide driver — here the near one shifts to cover the wide driver, and that movement is the cue. Which named pattern your team runs is a coaching choice.",
+    "caption": "The carrier driving wide, a second attacker driving wide on the far side with no puck, and the third trailing into the high slot. The read is which wide driver a defenceman takes — here the near one slides to the puck carrier, which leaves the far one responsible for two of you. Which named pattern your team runs is a coaching choice.",
     "describe": "The attacking half of the rink, opposition net at the right. Three own forwards approach the blue line: the puck carrier drives wide at the top of the picture (your left as you attack), a second forward without the puck drives wide at the bottom, and a third trails through the middle toward the high slot. Two opposition defencemen are inside the zone; the one nearer the puck carrier, toward the top, has a short route sliding toward the side the puck carrier is driving into, and the farther one holds a central position. The goalie is in the crease.",
     "title": "The high triangle",
     "half": true,
@@ -2438,8 +2438,8 @@
   "defend-squash-and-slide": {
     "id": "defend-squash-and-slide",
     "owner": "content/systems/zone_entries.md",
-    "caption": "You are defending here. Both defencemen hold the same depth and slide across together like a foosball bar: the puck is wide on one side, so the defenceman on the puck's side forces the carrier outside while the other holds square. The first forward back takes the slot. Described publicly of Bruce Cassidy's Boston Bruins around 2018-19, not a universal system — find out which your team runs.",
-    "describe": "The attacking half of the rink from the defending team’s point of view, their own net and goalie at the right. An opposition forward carries the puck in on one side, the top of the picture, with a route continuing into the zone along that side. Two own defencemen, level with each other well inside their own blue line, each have a short route sliding sideways toward the puck side, the same distance and the same direction, so the pair moves as one unit. An own forward arrives from behind into the middle of the ice, well short of the slot area in front of the net, rather than joining the pressure on the puck carrier.",
+    "caption": "You are defending here. Both defencemen hold the same depth and slide across together like a foosball bar: the puck is wide on one side, so the defenceman on the puck's side forces the carrier outside while the other slides the same distance with their partner. The first forward back protects the slot. Described publicly of Bruce Cassidy's Boston Bruins around 2018-19, not a universal system — find out which your team runs.",
+    "describe": "The attacking half of the rink from the defending team’s point of view, their own net and goalie at the right. An opposition forward carries the puck in on one side, the top of the picture, with a route continuing into the zone along that side. Two own defencemen, level with each other well inside their own blue line, each have a short route sliding sideways toward the puck side, the same distance and the same direction, so the pair moves as one unit. An own forward arrives from behind into the high slot in front of their own net, rather than joining the pressure on the puck carrier.",
     "title": "Squash-and-slide",
     "half": true,
     "svg": "/diagrams/defend-squash-and-slide.svg",
