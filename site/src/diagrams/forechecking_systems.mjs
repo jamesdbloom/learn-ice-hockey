@@ -1327,15 +1327,15 @@ const forecheckRolesRotate = {
   describe:
     'Attacking half of the rink, the opposition net at the right, and the same five opposition players as ' +
     'the forecheck diagrams: the defenceman D1 behind the net, who has just passed; their partner D2 taking ' +
-    'that pass in the far corner; the wingers W1 and W2 on the two half-walls; and the goalie in the ' +
+    'that pass in the corner at the bottom of the picture (your right as you attack); the wingers W1 and W2 on the two half-walls; and the goalie in the ' +
     'crease. Five own players. The three forwards are labelled twice over — the letters inside the glyphs ' +
     'are the roles they have just taken and the words beside them are the roles they held before the pass. ' +
-    'Deep on the near side of the net stands the forward marked F3, labelled "was F1, beaten", with an ' +
-    'arrow taking them up ice towards the high middle. Deep on the far side stands the forward marked F1, ' +
+    'Deep beside the net toward the top of the picture, the side the pass left from, stands the forward marked F3, labelled "was F1, beaten", with an ' +
+    'arrow taking them up ice towards the high middle. Down toward the bottom of the picture, near the new carrier, stands the forward marked F1, ' +
     'labelled "was F2, closest", with a short route ending in two bars towards the new carrier. In the ' +
     'high middle stands the forward marked F2, labelled "was F3, high", with an arrow taking them down and ' +
-    'across to the far side. The two defencemen are on the offensive blue line at the points, with no ' +
-    'routes at all. A dashed pass runs from behind the net, round the back of the goal, to the far corner.',
+    'across toward the bottom of the picture. The two defencemen are on the offensive blue line at the points, with no ' +
+    'routes at all. A dashed pass runs from behind the net, round the back of the goal, to the corner at the bottom of the picture.',
 
   players: [
     { id: 'G',  team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },

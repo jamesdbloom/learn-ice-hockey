@@ -13,13 +13,17 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W519 shipped with record `w519_label_openers_and_rvh_attribution_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W520 shipped with record `w520_peacemaker_scope_and_side_frames_2026-11-20.md`. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W519 (20 Nov):**
-  - **(2) Optional: team_play_and_culture :292's heading "A game misconduct in the handshake line…".** CARHA 32(c)'s window is "the last 10 minutes of the game (regular playing time including overtime)", which may not reach the line after the buzzer. The body states 32(c) accurately and the heading errs harsh. One clause would settle it.
-  - **(1) Label-then-restatement stutter.** "Why the slot matters: the slot is…" repeats the subject in about 11 rink_map entries (:218, :363, :397, :404, :416, :426, :432, :440, :455, :471, :483); also rules_primer :523 and :853, and conditioning :119. The label now names the subject, so the body can go back to "it is…". Readability only.
-  - **(3) rules_primer label consistency.** Gerund and noun labels are mixed ("What slashing costs" beside "What a trip costs" and "What a high stick costs"). :831 "What goaltender interference costs" also prices charging, and sits near-synonymous with :853 "What contact with a goalie costs".
+- **From W520 (20 Nov):**
+  - **(2) defend-squash-and-slide caption (zone_entries.mjs), pre-existing.** It says more than the prose and the picture: "while the other holds square", where the prose has both defencemen slide together and the label says "slides the same distance"; and "the first forward back takes the slot", where the prose says "protects the slot" and the route ends in the high slot. Suggested: "slides with them" and "protects the slot". Check the host first (zone_entries.md ~:1134).
+  - **(3) entry-high-triangle caption and host prose (zone_entries ~:432): "the wide driver" is ambiguous.** The caption names two wide drivers. The defencemen slide toward the carrier, but "cover the wide driver" can be heard as the driver without the puck. The D label sits between the two glyphs with no leader line. The section's own call; a coach may be needed.
+  - **(1) Optional: goaltender Sources trailers (:1805, :1827) quote only the opening clauses of NHL 46.16 and PWHL 46.15.** They stop before *"This rule also applies to subsequent players…"*. The trailer is not voiced, and the body now carries the reach.
+  - **(4) Optional: USA Hockey Casebook 615 Situation 6 same-team carve-out.** 615(d) does not catch a teammate breaking up a fight between two players on the same team. No layer carries it outside body_contact. Harmless in direction.
+  - **(5) Other routes to the peacemaker act, not swept.** NHL/IIHF clearing-the-area penalties, the NHL 46.18 team fine, and leaving the bench (USA Hockey, Hockey Canada 10.4, IIHF 70.3) for a player who goes in from the bench. This is the rules-verifier's declared gap.
+  - **(6) Peacemaker claims in other words and other documents.** The W520 safety-reviewer swept only five documents and only for peacemaker, intervene, third man, break up and separate. Still to do: defender, winger, center, game_management and the rest; and the same act in other words ("pull them apart", "step between", "stand up for a teammate").
+  - **(7) team_play_and_culture :749 Notes line** ("read across all six books on 25 September 2026…") may narrate the review process (non-negotiable 6). Content-reviewer call.
 - **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519):**
   - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
   - **(6) risk_management :861** omits 608(c)'s vulnerable-or-defenceless condition (pre-existing). mental_game :45 and KT1 "anxiety or low mood" may narrow §13's warning signs; optional safety read.
@@ -29,12 +33,10 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(2) "Head hit" for USA Hockey 620(b).** rules_primer :31/:1229 use it, but 620(b) also reaches the face and neck. The scope was unchanged by W517 but is narrow everywhere it appears.
   - **(3) Remaining "one" sites outside the W517 sweep:** "the after-whistle one" (on_ice_communication :547), bare "one that injures", and zone_entries :1181. Re-sweep after the W515(7) chunk tool exists.
   - **(4) "Hit from behind" versus USA Hockey 608's "checking or pushing … from behind".** This is the corpus's standard noun; it is close enough, but revisit if wording is ever tightened.
-- **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; 7 in W518; row 6 partly):**
+- **From W515 (20 Nov; row 1 closed in W515; rows 2, 3 and 5 in W516; 7 in W518; 8 and 9 in W520; row 6 partly):**
   - **(6) Optional, from the diagram-reviewer:**
     - forecheck-2-3-lock's lock route ends in the middle lane while nz-left-wing-lock puts LW in the outside third. The caption hedges this. Aim it nearer the top lane, or leave it.
     - Its "holds the line" and "first in" labels are crossed by paint (pre-existing).
-  - **(8) More frameless "near side" wording** outside W516's modules: forecheck-roles-rotate (describe), entry-high-triangle and entry-vs-standing-up (describes), and defend-squash-and-slide (describe and caption: "the puck is on the near side, so the near one fo…"). All are in zone_entries.mjs or forechecking_systems.mjs.
-  - **(9) goaltender.mjs: other describes that say "the goalie's right/left".** These read correctly only when the goalie is in the crease facing out. W516 changed the two with the goalie behind the net to picture terms. Audit the rest for goalie position: `grep -n "goalie's \(right\|left\)" site/src/diagrams/goaltender.mjs`.
   - **(4) Not checked by the W515 census:** route and arrow directions, forehand/backhand claims against drawn sides (e.g. dump-cross-corner), drill SVGs in site/src/drills/, and prose far from a marker.
 - **From W514 (20 Nov; rows 1 and 2 closed in W515, 5 in W517):**
   - **(3) practice_and_development.mjs drill-execution-no-opponent** still opens "The attacking half of the rink, the net at the right". Same shape as W508(22); whether "opposition" fits a drill with no opponent is a judgement.

@@ -1435,9 +1435,9 @@ const highTriangle = {
 
   describe:
     'The attacking half of the rink, opposition net at the right. Three own forwards approach ' +
-    'the blue line: the puck carrier drives wide on the near side, a second forward without the ' +
-    'puck drives wide on the far side, and a third trails through the middle toward the high ' +
-    'slot. Two opposition defencemen are inside the zone; the nearer one has a short route ' +
+    'the blue line: the puck carrier drives wide at the top of the picture (your left as you attack), a second forward without the ' +
+    'puck drives wide at the bottom, and a third trails through the middle toward the high ' +
+    'slot. Two opposition defencemen are inside the zone; the one nearer the puck carrier, toward the top, has a short route ' +
     'sliding toward the side the puck carrier is driving into, and the farther one holds a ' +
     'central position. The goalie is in the crease.',
 
@@ -1529,13 +1529,13 @@ const vsStandingUp = {
 
   describe:
     'The attacking half of the rink, opposition net at the right. Two opposition defencemen ' +
-    'stand at the blue line without backing in: the near one is positioned in the wide ' +
+    'stand at the blue line without backing in: the one toward the top of the picture (your left as you attack) is positioned in the wide ' +
     "attacker's own lane, out toward the boards, and their partner holds centrally, denying the " +
-    'middle. An own forward with the puck is near the blue line on the near side; a dashed ' +
-    'route chips the puck past the near defenceman, staying wide toward the boards, and the ' +
+    'middle. An own forward with the puck is near the blue line on that same side, the top; a dashed ' +
+    'route chips the puck past that defenceman, staying wide toward the boards, and the ' +
     "forward's own route curls in front of the defenceman and back out to the boards to collect it. A " +
-    'fourth own forward, well back in the neutral zone on the far side, has a long route ' +
-    'arriving unmarked near the top of the far faceoff circle. The goalie is in the crease.',
+    'fourth own forward, well back in the neutral zone toward the bottom of the picture, has a long route ' +
+    'arriving unmarked at the blue-line edge of the faceoff circle at the bottom of the picture. The goalie is in the crease.',
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
@@ -1612,14 +1612,14 @@ const squashAndSlide = {
 
   caption:
     'You are defending here. Both defencemen hold the same depth and slide across together ' +
-    'like a foosball bar: the puck is on the near side, so the near one forces the carrier ' +
-    'outside while the far one holds square. The first forward back takes the slot. Described ' +
+    'like a foosball bar: the puck is wide on one side, so the defenceman on the puck\'s side forces the carrier ' +
+    'outside while the other holds square. The first forward back takes the slot. Described ' +
     'publicly of Bruce Cassidy\'s Boston Bruins around 2018-19, not a universal system — find ' +
     'out which your team runs.',
 
   describe:
     'The attacking half of the rink from the defending team’s point of view, their own net ' +
-    'and goalie at the right. An opposition forward carries the puck in on the near side, ' +
+    'and goalie at the right. An opposition forward carries the puck in on one side, the top of the picture, ' +
     'with a route continuing into the zone along that side. Two own defencemen, level with each ' +
     'other well inside their own blue line, each have a short route sliding sideways toward the ' +
     'puck side, the same distance and the same direction, so the pair moves as one unit. An own ' +
@@ -1632,7 +1632,7 @@ const squashAndSlide = {
     { id: 'D', pos: 'D', at: SLIDE_D_FAR, label: 'slides the same distance' },
     { id: 'F', pos: 'F', at: SLIDE_F, label: 'protects the slot, not the puck' },
     // labelHint: a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed); without it the leader-hazard rule was relaxed for this label (build warning, 27 Oct 2026).
-    { id: 'F', team: 'opp', pos: 'F', at: SLIDE_CARRIER, label: 'carries in on the near side', labelHint: [4.5, 10.5] },
+    { id: 'F', team: 'opp', pos: 'F', at: SLIDE_CARRIER, label: 'carries in wide', labelHint: [4.5, 10.5] },
   ],
 
   routes: [

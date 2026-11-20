@@ -130,7 +130,7 @@ const playingTheAngle = {
 
   describe:
     'The defending half of the rink, the defended net at the right. One opposition ' +
-    'forward stands at the top of the right-hand faceoff circle, the goalie’s right, with the puck just off ' +
+    'forward stands at the top of the faceoff circle on the goalie’s right (the top of the picture), with the puck just off ' +
     'the blade toward the net. A shaded triangle runs from the puck to the two goalposts, ' +
     'narrowing from the width of the net at the goal line to a point at the puck. The ' +
     'goalie stands inside that triangle on its centre line, six feet out from the ' +
@@ -208,7 +208,7 @@ const frontDoorBackDoor = {
 
   describe:
     'The defending half of the rink, the defended net at the right. An opposition ' +
-    'forward has the puck just inside the right-hand faceoff dot, on the goalie’s right. A second opposition ' +
+    'forward has the puck just inside the faceoff dot on the goalie’s right (the top of the picture). A second opposition ' +
     'forward stands unmarked on the far side of the net, five feet out from the goal ' +
     'line and clear of the crease. A dashed line — the notation for a pass — shows the ' +
     'pass available across the slot, running from the puck toward that attacker and ' +
@@ -318,11 +318,11 @@ const failureModes = {
 
   describe:
     'The defending half of the rink, the defended net at the right. One opposition ' +
-    'forward stands at the top of the right-hand faceoff circle, the goalie’s right, with the puck. Two ' +
+    'forward stands at the top of the faceoff circle on the goalie’s right (the top of the picture), with the puck. Two ' +
     'goalie glyphs are drawn on the line from that puck to the centre of the goal ' +
     'line, representing the same goalie at two extremes rather than two players. ' +
     'The first is two feet out, effectively in the goalmouth, labelled too deep. The ' +
-    'second is twenty feet out, level with the hash marks of the right-hand faceoff ' +
+    'second is twenty feet out, level with the hash marks of that same faceoff ' +
     'circle and out in the slot, labelled too far out. Nothing is drawn between them, ' +
     'because where the goalie should be is a situation-by-situation read rather than ' +
     'a fixed spot.',
@@ -940,7 +940,7 @@ const fiftyFiftyPuck = {
 
   describe:
     'The defending half of the rink, the defended net at the right, and the net has nobody in ' +
-    'it. A loose puck sits in the corner on the goalie’s right (the top of the picture), in front of the goal line. The goalie is ' +
+    'it. A loose puck sits in the corner at the top of the picture, in front of the goal line. The goalie is ' +
     'drawn out of their crease and part of the way to it, about six feet away. An opposition ' +
     'forward is arriving at the same puck from the other side and is slightly closer to it ' +
     'than the goalie is. No routes are drawn, and nothing marks who wins the race: the ' +

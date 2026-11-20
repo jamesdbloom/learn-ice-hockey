@@ -116,7 +116,7 @@ Five buckets. In rough order of how much most amateur players are neglecting the
 
 **What aerobic work buys you:** faster rebuilding of phosphocreatine between shifts, faster clearance of the by-products of hard glycolytic work, a lower heart rate at any given workload, and therefore a third period that resembles your first.
 
-**What aerobic work looks like:** genuinely easy, conversational-pace continuous work — cycling, rowing, running, brisk uphill walking — for 30 to 60 minutes. The defining feature is that it should feel *too easy*. Most amateurs train their "easy" sessions too hard and their "hard" sessions too easy, and get the adaptation from neither.
+**What aerobic work looks like:** genuinely easy, continuous effort at a conversational pace — cycling, rowing, running, brisk uphill walking — for 30 to 60 minutes. The defining feature is that it should feel *too easy*. Most amateurs train their "easy" sessions too hard and their "hard" sessions too easy, and get the adaptation from neither.
 
 **Do it off the ice.** Ice time is expensive and better spent on skills and on efforts that look like shifts.
 
