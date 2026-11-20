@@ -1137,10 +1137,19 @@ export const MAPS = [
     // were wrong, and this diagram is borrowed into getting_started.md, whose readers
     // cannot tell a blue line from a red one by looking. `endZoneMarkings` above — the
     // other `half: true` map in §2 — already words it correctly; keep the two together.
+    // ⚠️ THE FRAME CLAUSE (W514, owner decision 20 Nov 2026). The overlay prints "left
+    // point", "right corner" and so on; until then it printed RIGHT across the top of the
+    // picture, which is the attacker's LEFT, under prose (§5 here, getting_started.md's
+    // "Take the names from it") that names sides as the attacker sees them. rinkSvg now
+    // prints the attacking frame; this clause says so, because a beginner reading a map
+    // assumes the viewer's own left and right otherwise. The net at the right is this
+    // picture's own frame — rink_map.md §5 says the zone runs "to the end boards at the
+    // right" — so the clause names nothing the picture does not show.
     caption:
       'One end zone at twice the scale, labelled with the standard position vocabulary: ' +
       'the point, half-wall, crease and corners, with the high and low slot shaded as ' +
-      'regions.',
+      'regions. Left and right are as the attacking team sees them, skating toward the ' +
+      'net on the right of the picture.',
     describe:
       'One half of the rink seen from above, from the centre red line at the ' +
       'left to the end boards at the right, with the blue line about a quarter of the way ' +

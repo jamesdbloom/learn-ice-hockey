@@ -63,7 +63,7 @@
     "rule": "NHL 1.8"
   },
   "positions": {
-    "$comment": "Named positions in the corpus's own vocabulary. Sides are given as -1/+1 multipliers on y, and ends as -1/+1 on x, so one entry serves both halves of the ice.",
+    "$comment": "Named positions in the corpus's own vocabulary. Sides are given as -1/+1 multipliers on y, and ends as -1/+1 on x, so one entry serves both halves of the ice. ⚠️ THE SIDE KEYS ARE NAMED +y = RIGHT, AND THAT IS MIRRORED FOR AN ATTACKER. `:right` resolves to +y, the TOP of the picture; +x is the attacking direction, so a player skating toward the net at the right has the top on their LEFT. `point:right` is the attacker's LEFT point and `half-wall:right` the LEFT winger's half-wall — an author placing \"the left winger's half-wall\" writes `half-wall:right`. DO NOT RENAME THE KEYS: they are anchors used across most diagram modules, and renaming one moves geometry. The printed overlay labels name sides in the attacking frame instead (owner decision, 20 Nov 2026, W514; see the header of site/scripts/lib/rink.mjs), so a label reads the opposite side word to its key.",
     "centre-ice": {
       "x": 0,
       "y": 0,

@@ -140,9 +140,9 @@ const forecheckAngling = {
 
   describe:
     'Attacking half of the rink, the opposition net at the right. Three players: the goalie ' +
-    'in the crease, their defenceman behind the net with the puck, and one forechecker below and ' +
-    'to the near side of them. A single route runs from the forechecker up and across, curving to ' +
-    'finish on the far side of the defenceman from the boards, well short of them, in open ice. No ' +
+    'in the crease, their defenceman behind the net with the puck, and one forechecker on the goal ' +
+    'line below them, a little nearer centre ice. A short route runs from the forechecker up the goal line ' +
+    'toward the net, finishing just below the bottom post, well short of the defenceman. No ' +
     'route is drawn for the defenceman and no contact is shown.',
 
   players: [
@@ -1404,7 +1404,11 @@ const forecheckRolesRotate = {
 // arrival and not people, so putting a body's position inside the glyph would
 // contradict the document three sections earlier. The caption carries the classic
 // personnel and the modern variant that does not use it.
-const LOCK_WINGER = { at: 'half-wall:left', dx: -11 };         // (58, -38.5)
+// W515(1), 20 November 2026: was 'half-wall:left' (58, -38.5), the BOTTOM wall -- which in the
+// attacking frame (+x attacking, so +y is the attacker's LEFT) is the RIGHT winger's wall, under a
+// title, caption and host paragraph that all say the LEFT winger locks. rink.json's sided keys
+// name +y "right", so the attacker's left half-wall is 'half-wall:right'. Route mirrored with it.
+const LOCK_WINGER = { at: 'half-wall:right', dx: -11 };        // (58, 38.5)
 
 const forecheck23Lock = {
   id: 'forecheck-2-3-lock',
@@ -1480,7 +1484,7 @@ const forecheck23Lock = {
     'own players in two groups rather than three: F1 deep at the goal line on the puck side and F2 deep ' +
     'inside the puck-side circle, the two who forecheck; and behind them the two defencemen on the ' +
     'offensive blue line at the two points. The third forward, F3, is the odd one out — they stand on the ' +
-    'far wall well above the opposing winger there, out of the attack, and a single arrow runs from them ' +
+    'top wall — the attacker\'s left and the puck side — nearer the blue line than the opposing winger there, out of the attack, and a single arrow runs from them ' +
     'diagonally back up the ice, finishing short of the blue line between the two defencemen. Nobody else ' +
     'is drawn with a route.',
 
@@ -1510,7 +1514,7 @@ const forecheck23Lock = {
   // line, because a glyph planted on the line would draw the third defenceman as
   // a fact rather than as what happens when the forecheck does not win it.
   routes: [
-    { from: LOCK_WINGER, to: { at: 'centre-point', dx: 8, dy: -6 }, kind: 'skate', bow: -3 },
+    { from: LOCK_WINGER, to: { at: 'centre-point', dx: 8, dy: 6 }, kind: 'skate', bow: 3 },
   ],
 
   puck: OPP_PUCK,

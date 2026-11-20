@@ -10,6 +10,17 @@
  * Rink coordinates: origin at centre ice, +x toward the attacking end, +y toward the
  * top of the drawing. SVG's y grows downward, so `py()` flips it — that is the only
  * place the two coordinate systems meet.
+ *
+ * ⚠️ THE SIDED ANCHOR KEYS ARE MIRRORED FOR AN ATTACKER. `resolve()` maps `:right` to
+ * +y (the TOP of the picture) and `:left` to -y. But +x is the attacking direction, so a
+ * player skating toward the net at the right has the top of the picture on their LEFT.
+ * `point:right` is therefore the attacker's LEFT point, `half-wall:right` the LEFT
+ * winger's half-wall, `corner:right` the left corner. Authors placing "the left winger's
+ * half-wall" write `half-wall:right`. The keys are NOT renamed — they are anchored across
+ * most diagram modules — and the printed overlay labels (the `labels` branch of `rinkSvg`)
+ * name sides in the attacking frame, so they read the OPPOSITE word to the key
+ * (owner decision, 20 Nov 2026, W514). Never derive a printed or spoken side word from a
+ * key's suffix; say "the top of the picture" or name the attacker's side.
  */
 
 import { readFileSync } from 'node:fs';
@@ -1019,7 +1030,7 @@ export function rinkSvg(opts = {}) {
         // Plain English. The keys are hyphenated identifiers — `top-of-circle`,
         // `half-wall` — and the sided ones were rendered `point:R`, which is a
         // debug string, not a name a reader uses. Hyphens out, side spelled out
-        // and put in front, where English wants it: "the right point".
+        // and put in front, where English wants it: "the left point".
         const pretty = name.replace(/-/g, ' ');
         // No marker on anything the ice already marks. PAINTED is the test, not
         // "visible": the boards, the corner and the half-wall are physical and obvious,
@@ -1045,6 +1056,9 @@ export function rinkSvg(opts = {}) {
           // own reserve where the left needs 11.75. At -9 and at -8.5 the right-hand hint
           // was rejected and the placer put that label on the FAR side of its dot, 27 ft
           // from its twin. THE REPORTED ASYMMETRY WAS A WORD LENGTH, not the data.
+          // ("right-hand box" above means the LONGER label's box. Since W514 the longer
+          // word, "right neutral dot", is printed on the BOTTOM (-y) dot; the x constraint
+          // is the same for both dots because both sit at x 20.)
           'neutral-dot': [-7.5, -4],
           // Off its own line. The own-line exemption below is what lets `goal line` sit
           // behind the goal; without a hint it also let `blue line` sit ON the blue line.
@@ -1056,7 +1070,19 @@ export function rinkSvg(opts = {}) {
           'goal-line': [2.5, -9],
         }[name];
         const hint = HINT && (p.sided ? [HINT[0], HINT[1] * side] : HINT);
-        entries.push({ name, text: p.sided ? `${side > 0 ? 'right' : 'left'} ${pretty}` : pretty,
+        // ⚠️ SIDES ARE NAMED IN THE ATTACKING FRAME, AND THAT IS THE MIRROR OF THE KEY
+        // (owner decision, 20 Nov 2026, plan row W514). The renderer's +x is toward the
+        // attacking end, so a player skating toward the net at the right has the TOP of
+        // the picture (+y) on their LEFT — and the corpus prose names sides that way
+        // ("the left point" is the top one). This printed `side > 0 ? 'right'` for years,
+        // which put "right point / right half wall / right corner" across the TOP of
+        // `rink-map-end-zone`, the map getting_started.md tells beginners to "take the
+        // names from". The anchor KEYS are not renamed (`point:right` is still +y — see the
+        // header and rink.json's positions $comment); only the printed word follows the
+        // attacker. `labels: true` is used by that one map only; check before adding a
+        // labelled map drawn in a different frame.
+        const sideWord = side > 0 ? 'left' : 'right';
+        entries.push({ name, text: p.sided ? `${sideWord} ${pretty}` : pretty,
                        x, y, dot: !PAINTED.has(name), hint });
       }
     }
