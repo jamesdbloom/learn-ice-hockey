@@ -13,17 +13,18 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W530 shipped with record `w530_slashing_on_the_stick_goalie_floor_and_late_hit_scope_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W531 shipped with record `w531_slashing_injury_tier_and_casebook_trailers_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W530 (20 Nov):**
+- **From W531 (20 Nov):**
+  - **(1) British slashing departures.** EIHL Casebook, In-House Rules 2026-27 and the four IHUK Rules of Competition (and their `_layout` twins) have not been searched for Rule 61. goaltender :1704 tells the British reader to play the IIHF book.
+  - **(2) Awarded-goal citation.** game_management :1060 and risk_management :709 call NHL 57.4 "the operative clause" for awarded goals for hooking, holding and slashing; those rules cross-reference Rule 25. No reader cost.
+  - **(3) NHL 61.8 / PWHL 63.8 supplementary discipline** are carried nowhere (IIHF 61.6 is).
+  - **(4) body_contact :1761's "its only exception an accidental high stick that injures nobody".** CARHA's 30(a) Note excepts an accidental high-stick major without the "injures nobody" condition; the 62(b) Note adds the injury limb. Check and reword. This was already there before W531.
+- **From W530 (20 Nov; rows 2, 3 and 4 closed in W531):**
   - **(1) The USA Hockey Declaration's vulnerable-player clause and goalies.** It defines vulnerable as "a skater … unaware, unprepared, or unsuspecting" and never names goalkeepers, so whether it reaches careless goalie contact is unsettled. Only special_teams :1132 names 620(b)'s careless head-contact route (a mandatory major plus game misconduct with no recklessness needed) for a goalie. Propagate 620(b) to the goalie-contact ladders where it changes what a reader does.
-  - **(2) Slashing described in other words.** The W530 sweep searched "chop", "slash" and "on the stick"; "whack", "hack", "rap" and "two-hand" were not swept. NHL 21.1 behind goaltender :1704's match claim was not re-read.
-  - **(3) time_and_space :427's unchanged "press on their blade as it lands".** Hockey Canada 9.3 and CARHA excuse only a tap on the puck-carrier's stick, not a receiver's blade. Check whether the line needs scoping.
-  - **(4) Slashing tiers corpus-wide.** Other blocks may understate CARHA 80(b) (a mandatory major on injury) as "80(a) allows a major", or omit the NHL's mandatory major on injury (61.3/61.5). Run a layer test of slashing claims across all documents. NHL 61.8 / IIHF 61.6 supplementary discipline is not carried anywhere.
-- **From W529 (20 Nov; rows 1, 4 and 6 closed in W530):**
+- **From W529 (20 Nov; rows 1, 4 and 6 closed in W530; 3 in W531):**
   - **(2) Casebook Situation 17's reach.** It reads "hard body check" literally; whether it reaches a push, a walk-out or a ride (defender :279/:944/:948) is unsettled.
-  - **(3) Sources trailers** in center, defender, switching_positions and goaltender cite Casebook Situations 17, 3 and 4 inline, but the trailers do not list them.
   - **(5) W529 text not yet heard aloud.** OZP facts :968 (300/300; its "each" carries 640(e) and 640(b)) and :973; game_management facts :175/:1189 (300/300); the faceoffs :1320 and DZC :865 Common Mistakes. Also: does Casebook Situation 17 reach a push on a screener called as interference (625)? DZC Sources do not yet cite Situation 17.
 - **From W527 (20 Nov; row 1 closed in W529):**
   - **(2) forechecking :628 "keep your arms… out of it" sits beside :624's "steer yes".** It errs safe and was there before W527; reconcile the wording.
