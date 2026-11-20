@@ -755,7 +755,7 @@ Coincidental minors do not make either team shorthanded, so they do not expire o
 
 **In short:** While you are actually below their strength you may usually ice the puck, but check whether your level allows it.
 
-**A team below its opponent's numerical strength may shoot the puck the length of the ice with no icing called** (Rule 81.6). That is the core of penalty killing: a clear costs you nothing but the time it takes them to bring it back. **It is not unconditional.**
+**A team below its opponent's numerical strength may shoot the puck the length of the ice with no icing called** (NHL and IIHF 81.6, PWHL 83.6). That is the core of penalty killing: a clear costs you nothing but the time it takes them to bring it back. **It is not unconditional.**
 
 **The test is a head count, not a clock.** You are exempt while you are **below the opponent's on-ice numerical strength**, and every book writes it that way (NHL and IIHF 81.6 and 16.2, USA Hockey 624(b)(1), Hockey Canada 6.7(b), and CARHA 65(d), *"at the instant the puck is shot"*). **A player whose own penalty has expired counts as back on the ice even while they are still sitting in the box** (NHL and IIHF 81.6; USA Hockey 624(b)(1); Hockey Canada Note 1 to 6.7(b); CARHA Note 2 to 65(a)). A teammate still serving a live penalty does not count that way. **So on a 5-on-3 the first expiry changes nothing**: you are 4-on-5, still short, still exempt. Hockey Canada says it plainest — the player is on the ice *"for the purpose of equal numbers (or not)"* (Interpretation 3 to 6.7(b)). ⚠️ **And the test runs your way at the other end: a clear released *before* the penalty expires is not icing even if the time runs out while the puck is travelling** (NHL and IIHF 81.6; USA Hockey 624(b)(1); Hockey Canada and CARHA test the instant of the shot). So get the clear away before a kill expires.
 
@@ -955,7 +955,7 @@ Beyond the trapezoid and the red line, the goalie is a skater with the puck — 
 
 ### The nine spots
 
-**Every faceoff is taken at one of nine marked spots** — one at centre ice, four in the neutral zone, four in the end zones — and **never within 15 feet of the goal or the side boards** (Rule 76.2). What is painted at each is Rule 1.9, in [Rink Map](rink_map.md).
+**Every faceoff is taken at one of nine marked spots** — one at centre ice, four in the neutral zone, four in the end zones — and **never within 15 feet of the goal or the side boards** (NHL 76.2, PWHL 78.2; 4.5 m in IIHF 76.2). What is painted at each is Rule 1.9, in [Rink Map](rink_map.md).
 
 ### Why the draw is where it is
 
@@ -998,7 +998,7 @@ Never shoot or pass the puck over the blue line offside: the draw can go back to
 
 "Least territorial advantage" is defined in neither book; read it as the official picking, from the spots the rule allows, the one that helps the team at fault least.
 
-One more location rule costs you the zone you have just earned: **if a point man or a player off the bench from the attacking team goes past the outer edge of the end-zone circle during a scrum, the draw is moved out to the neutral zone** (Rule 76.2). If your team has just earned a draw in the other end, **do not go and join the scrum.**
+One more location rule costs you the zone you have just earned: **if a point man or a player off the bench from the attacking team goes past the outer edge of the end-zone circle during a scrum, the draw is moved out to the neutral zone** (NHL and IIHF 76.2, PWHL 78.2). If your team has just earned a draw in the other end, **do not go and join the scrum.**
 
 ### The two things you must not leave without
 

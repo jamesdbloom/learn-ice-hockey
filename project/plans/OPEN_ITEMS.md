@@ -13,17 +13,19 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W522 shipped with record `w522_pwhl_numbers_and_mental_health_signs_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+- None. W523 shipped with record `w523_crisis_box_harm_to_others_trailers_and_pwhl_numbers_2026-11-20.md`. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
-- **From W522 (20 Nov):**
+- **From W523 (20 Nov):**
+  - **(1) NHL-numbered lists that also cover the PWHL.** faceoffs :166–182 ("What sends the draw to which spot") cites bare NHL 76.2 (five times), 81.2, 83.7, 83.6 and 85.2. Only the icing-dot and power-play-dot bullets give PWHL numbers. rules_primer's section 8 list (:989) does the same. Decide once: either state a "numbers are the NHL's; the PWHL's are +2 from 63" convention per list, or add each PWHL number.
+  - **(2) rules_primer :1019 "no timeout is granted after a faceoff violation (87.1)".** This is written for every book, but it gives no PWHL 89.1, and USA Hockey and Hockey Canada write no such bar (faceoffs :874 says so).
+  - **(3) Whether the 15-feet and scrum-relocation rules (rules_primer :958, :1001) exist in USA Hockey, Hockey Canada and CARHA.** The sentences read as every book's rule.
+  - **(4) Whether the suicide crisis lines in mental_game's box take calls about thoughts of harming someone else.** The box now addresses that reader, and its "Immediate danger — call your local emergency number" line serves them. Do not add a provider claim without verifying it.
+  - **(5) EIHL third-man-in scope.** team_play :749 and goaltender :1827 split IIHF 46.7 (2025/26) from 46.14 (2026/27), but nobody has checked the EIHL Casebook for a departure. The In-House layer follows 2025/26; the EIHL Casebook supersedes under its preamble.
+  - **(6) faceoffs :1415 says IIHF 87.1's time-out bans "match the NHL word for word".** The IIHF prints inner quotation marks (see :874).
+- **From W522 (20 Nov; rows 3 and 5 closed in W523):**
   - **(2) No youth route to help.** SMHRT-1 is for ages 16 and over, and the NHS page is for adults. The mental_game crisis callout has no youth line, and none is on disk. Any number added must be sourced and verified first.
-  - **(3) Bare NHL-default rule numbers in paragraphs that do not name the PWHL:** rules_primer :325 (81.2), :958 and :1001 (76.2); language_and_glossary :444 (81.6). Also winger :1019's renumbering note, which could be read as "safe below 52". Decide whether to split these by book.
   - **(4) Optional: whether "call your emergency number if it is happening now" is the right route for a first-ever panic-like episode (mental_game §5 :289).** SMHRT-1 says only "seek immediate help".
-  - **(5) From the W522 commit gate.**
-    - mental_game §13 "In short" (:642) does not mention the same-day tier.
-    - SMHRT-1's "Comments related to harming self or others" is carried only for self-harm.
-    - faceoffs :874 credits the NHL and PWHL time-out wording to the IIHF too, but the IIHF prints it with inner quotation marks. This predates W522.
 - **From W521 (20 Nov; row 1 closed in W522):**
   - **(2) OWNER DECISION NEEDED: the USA Hockey "plan on a match (602(a))" convention.** The W522 rules-verifier ruled it HARSH for any act whose own rule writes a discretionary match ("may also be assessed": 603(c), 604(e), 606(b), 607(e), 609(c), 611(c), 619(b), 620(c), 621(c), 622(c), 623(c), 628(c), 634(c), 635(b), 639(c), 640(h)).
     - Casebook 607 Situation 4 is decisive for a reckless charge on a goalie: "the major plus game misconduct, or match penalty option would be the proper call".
@@ -36,10 +38,6 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(3) Going-in limbs not carried anywhere.** These are the misconduct or game misconduct for not going to the bench when told (USA Hockey 615(e), Hockey Canada 7.10(d), CARHA 59 Note 2), and a goalkeeper leaving the crease. They also need a sweep of the SIHA and NIHL Rules of Competition. The faceoffs and risk_management Sources trailers do not name the new citations (615(d), 629(a), 70, 7.10(e)(ii), 59(b), 46.14–46.16); that is for a source-verifier.
   - **(4) Joining sites still say "can end your game" where some books make it mandatory.** special_teams :463, game_management :1046 and :1065. Each opens with an unconditional "stay out", so this was left on purpose (readable beats defendable); sharpen only if a reviewer calls it.
   - **(5) Phone-width check of the two rebuilt zone_entries diagrams** (entry-high-triangle, defend-squash-and-slide). Their label margins are 0.3–1 ft; check at 400 px when Chrome connects.
-- **From W520 (20 Nov; rows 2, 3, 5 and 6 closed in W521):**
-  - **(1) Optional: goaltender Sources trailers (:1805, :1827) quote only the opening clauses of NHL 46.16 and PWHL 46.15.** They stop before *"This rule also applies to subsequent players…"*. The trailer is not voiced, and the body now carries the reach.
-  - **(4) Optional: USA Hockey Casebook 615 Situation 6 same-team carve-out.** 615(d) does not catch a teammate breaking up a fight between two players on the same team. No layer carries it outside body_contact. Harmless in direction.
-  - **(7) team_play_and_culture :749 Notes line** ("read across all six books on 25 September 2026…") may narrate the review process (non-negotiable 6). Content-reviewer call.
 - **From W518 (20 Nov; rows 1, 4, 5 and 8 closed in W519; 6 and 7 in W521):**
   - **(2) "Why it matters" labels are now mixed.** core_principles has "Why the principle matters"; equipment has "Why flex matters" and "Why lie matters"; rink_map still has "Why it matters:" with the region named after it. Decide whether the label form should be consistent corpus-wide (`grep -rn 'Why it matters' content`).
   - **(3) Pronouns later in the opening words.** The tool catches only the first word (e.g. zone_entries :1111 "Key: Very hard to beat cleanly, and it keeps…"). Run `--loose` on the facts layer and triage.

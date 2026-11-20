@@ -8,7 +8,7 @@
 
 ## Key focus
 
-**If you are in crisis — any thought of harming yourself or of suicide — stop reading and get help now, tonight.** Call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada), or go to [§13, When to seek real help](#13-when-to-seek-real-help) for crisis lines.
+**If you are in crisis — any thought of harming yourself or someone else, or of suicide — stop reading and get help now, tonight.** Call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada), or go to [§13, When to seek real help](#13-when-to-seek-real-help) for crisis lines.
 
 **After every mistake, run the same reset, and name your next job before your skates hit the ice.** A physical trigger, one long breath out, a cue word, then one concrete sentence: *"first forechecker, take the D's inside shoulder."* The plan pushes out the replay.
 
@@ -42,7 +42,7 @@ The mental side closes the gap between your worst game and your best. It does no
 
 **Frustration is not private.** Your linemates read it, and an official can turn it into a penalty or worse.
 
-**And if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread into work, study or home, see a qualified professional, and straight away if it is so overwhelming you cannot function — looking for one is not a failure of toughness.** Any thought of harming yourself or of suicide means getting help now, tonight — the numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
+**And if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread into work, study or home, see a qualified professional, and straight away if it is so overwhelming you cannot function — looking for one is not a failure of toughness.** Any thought of harming yourself or someone else, or of suicide, means getting help now, tonight — the numbers are in [§13, When to seek real help](#13-when-to-seek-real-help).
 
 ---
 
@@ -639,7 +639,7 @@ Mid-season, with early mornings and cold rinks, motivation stops being about amb
 
 ## 13. When to seek real help
 
-**In short:** If anxiety or low mood persists or spreads beyond the rink, see a qualified professional; if you are thinking about harming yourself, get help now.
+**In short:** If anxiety or low mood persists or spreads beyond the rink, see a qualified professional, and straight away if it is so overwhelming you cannot function; if you are thinking about harming yourself or someone else, get help now.
 
 This document is about performance. It is not a substitute for care, and some of what looks like a mental-game problem is not one.
 
@@ -656,9 +656,9 @@ This document is about performance. It is not a substitute for care, and some of
 - A drop in how you play that you cannot explain and that does not lift, or problems that have spread into work, study, relationships or family life.
 - Using alcohol or anything else to manage how you feel about playing.
 - Hopelessness so overwhelming you cannot function, a dramatic change in weight, behaviour wildly out of character, or a sudden overwhelming fear with sweating or breathlessness unlike anything you have had before. Get help with these straight away, not after weeks; the last could be a panic attack or another medical problem, not nerves.
-- Any thought of harming yourself or of suicide. This one is not a threshold to weigh up.
+- Any thought of harming yourself or someone else, or of suicide. Get help now — this one is not a threshold to weigh up.
 
-> **If you are thinking about harming yourself or about suicide, stop reading this document and get help now.**
+> **If you are thinking about harming yourself or someone else, or about suicide, stop reading this document and get help now.**
 >
 > - **Immediate danger — call your local emergency number.** 999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada. Or go to your nearest emergency department.
 > - **UK:** Samaritans, free, 24 hours a day, 365 days a year — **call 116 123**. Text **SHOUT** to **85258**. *(Do not rely on email. Samaritans' own contact page states that they are **"gradually closing our email service in the UK in 2026, over several months"** — checked 27 July 2026, and no closing date is published on that page. Phone or text instead; those are unaffected.)*
@@ -698,7 +698,7 @@ This document is about performance. It is not a substitute for care, and some of
 - **Assuming you deserve more ice time than you get.** That most players believe this is an observation with no source behind it, but nobody judges their own case well. Ask one specific question in private, then do the work.
 - **Absorbing abuse because it comes from a demanding coach.** Criticism of your play is coaching; personal degradation or routine humiliation is not. Take it to your club's safeguarding lead or another club official, the league or the governing body.
 - **Treating flat stretches as failure.** Plateaus are usually consolidation. Track process markers and keep a technical project going. Hours alone were never the whole story: deliberate practice explains about 18% of performance variance — see [Practice and Development](practice_and_development.md).
-- **Managing a clinical problem with performance techniques.** If low mood or anxiety lasts for weeks, will not settle once play starts, keeps upsetting your sleep or appetite, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, talk to your GP or family doctor, or a qualified clinical psychologist. Hopelessness so overwhelming you cannot function, a dramatic change in weight, behaviour wildly out of character, or a sudden overwhelming fear with sweating or breathlessness unlike anything you have had before means get help straight away, not after weeks. Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13, When to seek real help](#13-when-to-seek-real-help) has the crisis lines.
+- **Managing a clinical problem with performance techniques.** If low mood or anxiety lasts for weeks, will not settle once play starts, keeps upsetting your sleep or appetite, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, talk to your GP or family doctor, or a qualified clinical psychologist. Hopelessness so overwhelming you cannot function, a dramatic change in weight, behaviour wildly out of character, or a sudden overwhelming fear with sweating or breathlessness unlike anything you have had before means get help straight away, not after weeks. Any thought of harming yourself or someone else, or of suicide, means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13, When to seek real help](#13-when-to-seek-real-help) has the crisis lines.
 
 ## Check yourself
 
@@ -742,7 +742,7 @@ This document is about performance. It is not a substitute for care, and some of
 
 ## Key Takeaways
 
-1. **See a qualified professional if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, and straight away if it is so overwhelming you cannot function — that is not a failure of toughness.** Any thought of harming yourself or of suicide means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13](#13-when-to-seek-real-help) has the crisis lines.
+1. **See a qualified professional if anxiety or low mood lasts for weeks, will not settle once play starts, makes you dread the rink, has you drinking or using anything else to cope, or has spread beyond the rink, and straight away if it is so overwhelming you cannot function — that is not a failure of toughness.** Any thought of harming yourself or someone else, or of suicide, means get help now, tonight: call your local emergency number (999 in the UK and Ireland, 112 across the EU, 911 in the US and Canada). [§13](#13-when-to-seek-real-help) has the crisis lines.
 2. **After every mistake, run the same reset — trigger, long breath out, cue word, next action — and name that action before your skates hit the ice.** On the bench, recover, watch and plan; analyse after the game. If a thought sticks, notice it and move on; don't fight it. The order is coaching craft; evidence for acceptance is thin.
 3. **Decide early and commit: simple in your own end, creative in theirs.** Hesitation is a mistake too — the half-second you take to be sure is all a forechecker needs. Off the glass and out (not over it), chosen early, is a good play; the same chip late is a turnover.
 4. **Score your night on three process goals for your role; keep the outcome goal on the list, but not as the verdict.** Check your team's system before you write them. ⚠️ **Never put "finish every check" on the list:** your age and your league's category decide whether you may check at all — see [Body Contact and Battles](../technique/body_contact_and_battles.md) §1.
