@@ -14,7 +14,7 @@
 
 **Second, which rulebook does your league run?** The books disagree about what a high stick or an illegal hit costs you. Anywhere in Britain it is the IIHF Rule Book — amended by the IHUK In-House Rules, or in the Elite League by the EIHL Casebook, and by your league's own regulations. Read [the British note](#if-you-play-in-britain-the-iihf-column-is-your-base) first; [section 10](#10-rule-set-differences-that-actually-matter) compares the books. **Then four habits hold in every book here.**
 
-**Never hit anyone's head or neck.** Outside the NHL it can end your game whether or not you meant it, and even the NHL gives a **match penalty** for a deliberate or attempted injury.
+**Never hit anyone's head or neck.** In every book it can end your game, and in most even when you did not mean it.
 
 **Never finish a check into somebody's back, and never duck out of one.** A hit from behind has no minor option in the NHL, PWHL or IIHF book: the call ends your game in the NHL and PWHL, and under the IIHF, plan on it. It can end your game in every book. A chin tucked to your chest straightens the neck, so a head-on hit into the boards can fracture a vertebra — an injury USA Hockey's *Heads Up Hockey* guide says *"can occur at walking speed."* **A wide base with knees bent is not crouching** — it is how you take a hit.
 
@@ -1246,7 +1246,7 @@ These are rules misconceptions players genuinely hold, and what each one costs.
 
 4. **Keep killing a major after they score** — a goal ends only a minor you are short for. ⚠️ **Play as though one major ends your game**: always under Hockey Canada, USA Hockey and IHUK women's hockey, almost always under CARHA, and often elsewhere. **Never throw a punch, even gloved:** USA Hockey ejects you for one, and every book can.
 
-5. **Keep your hits below the shoulders: a head hit can end your game in every book, and in most even one you did not mean.** ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
+5. **Keep your hits below the shoulders: a head hit can end your game in every book, and in most even one you did not mean; under USA Hockey even careless contact must.** ⚠️ **Hit in the head? Come off and say so:** a suspected concussion means no return that day and a medical professional before you play again.
 
 6. **Never duck a check — take it head up, knees bent, chin off your chest**: a tucked chin can break your neck against the boards. ⚠️ **Take contact on your side; never turn your back to anyone coming at you, at the wall or in open ice.** Facing the boards? Stick and gloves up on the glass, head off it.
 

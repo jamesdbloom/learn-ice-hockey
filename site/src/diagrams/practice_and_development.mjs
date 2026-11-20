@@ -486,10 +486,16 @@ const SAG_HIGH_D = { at: 'point:right', dx: 9, dy: -13 };      // (34, 7)
 // caption now carries it. ⚠️ THE TEST FOR ANY FUTURE FRAME HERE IS THE ROUTE, NOT THE
 // GLYPH: a route arriving on a person needs the caveat in the caption; a route to open ice
 // (`theLine`'s carry) and a pass to a teammate (`drill-execution-no-opponent`) do not.
-const SAG_FORECHECK_TO = { at: 'half-wall:right', dx: -5.5, dy: -3.9 };  // (63.5, 34.6)
+// ⚠️ MOVED 20 Nov 2026 (W547 diagram review, MAJOR): the old end (63.5, 34.6) put the route
+// (45,22)->(63.5,34.6) straight through the carrier -- terminal tangent unit (0.847, 0.532), miss on
+// his anchor (69, 38.5) 0.13 ft -- while the caption now says "close on the puck with the stick,
+// not on the carrier's body". New end (63.5, 31): chord/tangent (18.5, 9), unit (0.899, 0.437).
+//   tip -> carrier (5.5, 7.5): 9.30 ft away, tangent miss 4.34 ft (> 2.9), so it no longer aims at him;
+//   tip -> puck (5.5, 2.7): 6.13 ft away, tangent miss 0.03 ft -- it aims at the puck.
+const SAG_FORECHECK_TO = { at: 'half-wall:right', dx: -5.5, dy: -7.5 };  // (63.5, 31)
 
-// The puck at the carrier's stick, 4.8 ft below him and square to the wall. 5.57 ft
-// from the end of the forecheck route, so it is not drawn on it.
+// The puck at the carrier's stick, 4.8 ft below him and square to the wall. 6.13 ft
+// from the end of the forecheck route (was 5.57 before the 20 Nov move), so it is not drawn on it.
 const SAG_PUCK = { at: 'half-wall:right', dy: -4.8 };          // (69, 33.7)
 
 const smallAreaGame = {
@@ -531,12 +537,17 @@ const smallAreaGame = {
     // plausible ... under-tested. Use them. Don't cite research you don't have." and
     // "Constrain deliberately"). Kept: the coaching-choice disclosure, and the ⚠️ limb,
     // which is the caveat for the one route here that arrives on a person.
+    // W541 level/aim-point follow-up (20 Nov 2026, diagram-reviewer census of pressure routes ending
+    // near a carrier on the boards): the bars pointed at the body, so the aim point is
+    // ADDED ("they close on the puck with the stick, not on the carrier's body"), before "That is all
+    // the picture says". The ⚠️ level limb already here is unchanged.
     'Everything about this setup is a coaching choice, not a law of hockey: the ' +
     'numbers, the area, whether there is a goalie, what each team scores on and what constraint ' +
     'is added. One of ' +
     'the six is closing on the carrier on the wall, and their route ends in two short bars, ' +
     'not an arrowhead: they arrive and contain rather than skating through. That is all the ' +
-    'picture says about how they arrive, on purpose. ⚠️ How hard anyone may compete for a puck, and ' +
+    'picture says about how they arrive, on purpose. They close on ' +
+    'the puck with the stick, not on the carrier’s body. ⚠️ How hard anyone may compete for a puck, and ' +
     'whether body checking is allowed at all, depends on your age group, your league and the ' +
     'book it plays under, and no diagram can tell you that.',
 
@@ -548,7 +559,7 @@ const smallAreaGame = {
     'drawn just below them; one is low in the slot on the far side of the middle; one is high, just ' +
     'inside the blue line. An opposition player is about nine feet out from the top of the ' +
     'faceoff circle on that side, toward the blue line, with a ' +
-    'route running out toward the carrier on the wall: it stops about seven feet short of them and ' +
+    'route running out toward the puck below the carrier: it stops about six feet short of the puck and about nine feet short of the carrier, and ' +
     'ends in two short bars rather than an arrowhead. A second opposition player stands in front of ' +
     'the net, about nine feet clear of the crease, and a third stands high near the blue line ' +
     'beside your own high player. The opposing goalie is in the crease. That is the only route ' +

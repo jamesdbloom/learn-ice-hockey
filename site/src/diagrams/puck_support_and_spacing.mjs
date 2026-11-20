@@ -894,7 +894,18 @@ const layerNotConverge = {
     'Converging instead puts two of you on one puck, both beaten by the same pass. ' +
     'A deliberate double-team — commonly allowed below your own goal line, where a ' +
     'turnover is contained by the net and the boards — is a coaching decision rather than something to ' +
-    'freelance, so ask your coach where and when your team doubles.',
+    'freelance, so ask your coach where and when your team doubles. ' +
+    // W541 level/aim-point follow-up (20 Nov 2026, diagram-reviewer census of pressure routes ending
+    // near a carrier on the boards): the first player's route ends at a carrier in the
+    // corner with the puck between them and the boards, and neither host (puck_support_and_spacing,
+    // time_and_space) voices a checking caveat beside the marker. ⚠️ ONE GLYPH ADDED, the caption's
+    // first: the added limb IS the hazard (a hit into the back of a player facing the boards), and
+    // it sits LAST so captionNodes' glyph-to-end amber covers only that instruction. The level
+    // sentence precedes it as plain text.
+    'Whether the first player’s arrival may end in a hit depends on whether your game allows body ' +
+    'checking. ⚠️ Arrive on the carrier’s inside, stick on the puck, and never into the back of a player facing the boards.',
+    // Safety re-read (20 Nov 2026): "stick on the puck" ADDED as the aim point, so ruling out a
+    // hit does not leave a pin or bump open (USA Hockey 604 Note 1, Hockey Canada 7.3(a), CARHA 49(a)).
 
   // W473: the corner is named from the picture, not as 'right'. Attacking to the right, the top
   // corner (corner:right, +y) is the forecheckers' LEFT, so 'right-hand corner' was inverted.

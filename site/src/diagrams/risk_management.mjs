@@ -488,6 +488,15 @@ const PINCH_D = 'point:right';                                  // (25, 20)
 // finishes its pinch 5 ft off the boards for its own reasons and arrives at the
 // same place.
 const PINCH_TO = { at: 'boards:right', dx: -19, dy: -5.5 };     // (50, 37)
+// ⚠️ BOW CHANGED 2.5 -> -2 on BOTH pinch routes, 20 Nov 2026 (W547 diagram review, MAJOR), endpoint
+// unchanged. Chord (25,20)->(50,37): d (25, 17), len 30.23, perpendicular (-0.562, 0.827).
+//   bow 2.5: control (36.10, 30.57), tangent (13.90, 6.43) unit (0.908, 0.420); tip -> A1 (58, 38.5) is
+//   (8, 1.5), 8.14 ft (< 9), tangent miss 2.00 ft -- UNDER the 2.9 ft rule, aimed at the carrier while
+//   the caption says "contain on the wall, stick on the puck, not on a player".
+//   bow -2: control (38.62, 26.85), tangent (11.38, 10.15) unit (0.746, 0.666), miss 4.21 ft; the ray
+//   heads for the wall up-ice of A1 (it reaches y 42.5 at x ~ 56), which is what "contain on the wall"
+//   says. The curve now bulges toward the middle, not the boards; it rises monotonically to the tip,
+//   so the closest approach to the dasher (y 42.5) is the tip, 5.5 ft. OPP_CARRIER and PUCK unchanged.
 
 // The partner, holding the middle at the line. `point:left` with dy +12 is the
 // anchor `forecheck-pinch` gives its weak-side defenceman, labelled there "the
@@ -639,9 +648,14 @@ const PINCH_SCOREBOARD = 'Whether to pinch at all moves with the scoreboard and 
 // and the league-checking condition only. Both captions end on this constant, so it still
 // closes each one, and md_to_speech marks a caption "Important." on the glyph's presence, not
 // its position, so the spoken escalation is unchanged.
+// W541 level/aim-point follow-up (20 Nov 2026, diagram-reviewer census of pressure routes ending
+// near a carrier on the boards): the drawn line passes ~2 ft from A1's centre, so
+// "not on a player" alone left the aim point open; "stick on the puck" ADDED. SHARED by both pinch
+// captions (pinch-centre-high via PINCH_CONTACT, pinch-centre-below-the-goal-line via
+// PINCH_CAVEATS_AFTER_HIGH), so both change together and the check_caption_pairs pair is unaffected.
 const PINCH_CONTACT =
   'No contact is drawn: the pinching defenceman’s route ends in two bars. ⚠️ Arrive and ' +
-  'contain on the wall, not on a player, and whether that arrival may end in a hit depends on ' +
+  'contain on the wall, stick on the puck, not on a player, and whether that arrival may end in a hit depends on ' +
   'whether your league allows body checking at all.';
 
 // ⚠️ 24 October 2026: PINCH_COUNT (the wingers/count picture note) and the "Three things this
@@ -673,7 +687,7 @@ const PINCH_DESCRIBE_COMMON =
   'second forward on the lower, weak side of the ice, just up-ice of the lower faceoff circle, ' +
   'with a plain arrowed route heading back out toward the blue ' +
   'line; and their goalie in the crease. Own players are open glyphs: a defenceman at the ' +
-  'upper point whose route curves down the boards and ends in two short bars across the line, ' +
+  'upper point whose route runs in a shallow arc toward the upper boards and ends in two short bars across the line, ' +
   'about eight feet short of the puck carrier, and a second defenceman at the blue line on the ' +
   'lower side, shaded into the middle of the ice. ';
 
@@ -767,7 +781,7 @@ const pinchCentreHigh = {
   // decision is made, with their forwards already leaving. Numbering would say
   // the pinch happened before the release, which is the opposite of the read.
   routes: [
-    { from: PINCH_D, to: PINCH_TO, kind: 'pressure', bow: 2.5 },
+    { from: PINCH_D, to: PINCH_TO, kind: 'pressure', bow: -2 },  // was 2.5; see PINCH_TO
     { from: CENTRE_HIGH, to: CENTRE_TO, kind: 'skate' },
     { from: OPP_CLIMBER, to: OPP_CLIMBER_TO, kind: 'skate' },
   ],
@@ -818,7 +832,7 @@ const pinchCentreDeep = {
   ],
 
   routes: [
-    { from: PINCH_D, to: PINCH_TO, kind: 'pressure', bow: 2.5 },
+    { from: PINCH_D, to: PINCH_TO, kind: 'pressure', bow: -2 },  // was 2.5; see PINCH_TO
     { from: OPP_CLIMBER, to: OPP_CLIMBER_TO, kind: 'skate' },
   ],
 

@@ -142,7 +142,13 @@ const D1_PRESSURE_FROM = { at: 'half-wall:right', dx: -19, dy: -2 };  // (50, 36
 // arrow-ended kind would be illegal here; a bar-ended one is the correct symbol
 // anyway, because the section's forechecker arrives at a player standing against the
 // boards and what happens in the last two feet is not this document's subject.
-const D1_PRESSURE_TO = { at: 'half-wall:right', dx: -7, dy: -1 };    // (62, 37.5)
+// ⚠️ MOVED 20 Nov 2026 (W547 diagram review, MAJOR): the old end (62, 37.5) aimed the route
+// (50,36.5)->(62,37.5) through the receiver R at (69, 38.5) -- tangent miss 0.42 ft, arriving
+// diagonally from behind him. The 7.02 ft figure above is the OLD end's. New end (62, 34), on R's
+// ICE side: chord/tangent (12, -2.5), unit (0.979, -0.204); tip -> R (7, 4.5) is 8.32 ft (< 9, so
+// the miss rule applies) and the tangent misses R's anchor by 5.83 ft (> 2.9). Board clearance at
+// the tip 8.5 ft.
+const D1_PRESSURE_TO = { at: 'half-wall:right', dx: -7, dy: -4.5 };    // (62, 34)
 
 // The puck in flight, 40% of the way along the pass from (94, 8) to (69, 38.5):
 // (94 - 0.4 x 25, 8 + 0.4 x 30.5) = (84, 20.2). Anchored on the goal line because
@@ -208,10 +214,24 @@ const wallReception = {
     // the hazard behind the glyph and left "it" reading as the pass or the puck (safety review,
     // MAJ-1). The shoulder clause's internal order (absolute, then hedge) is untouched and still
     // follows "chin off your chest", never a prohibition.
+    // W541 level/aim-point follow-up (20 Nov 2026, diagram-reviewer census of pressure routes ending
+    // near a carrier on the boards): no host voices a checking caveat beside the marker
+    // (puck_handling.md, scanning_and_anticipation.md), so the level sentence is ADDED, before the
+    // hazard so the hazard still sits directly before the posture ("take IT" keeps its antecedent).
+    // The hazard was then re-worded on a safety ruling: it must NOT be scoped to checking leagues,
+    // because the posture after it has to reach no-check readers too. It now reads "With a
+    // forechecker closing, a reception on the wall can end with you against the boards, checking
+    // league or not." -- with "With a forechecker closing," DROPPED, as the ruling allowed, because the
+    // level sentence directly before it already names the closing forechecker. "take it" -> "take any contact" in the posture sentence, because "it" no longer
+    // had a contact noun to point at.
+    // No new glyph: the caption already ends on one.
     'Looking does not protect you; position does. ' +
-    'A reception on the wall is a reception into ' +
-    'head-on contact with the boards. ' +
-    'Get your skates parallel to the wall and take it on your forearm and hip, head up ' +
+    // 20 Nov 2026 diagram review: ", so never assume they cannot" CUT -- it undercut the level
+    // sentence, and "checking league or not" in the next sentence carries the no-check reader.
+    'Whether the forechecker may hit you depends on whether your game allows body checking. ' +
+    'A reception on the wall can end with you against the boards, ' +
+    'checking league or not. ' +
+    'Get your skates parallel to the wall and take any contact on your forearm and hip, head up ' +
     'and chin off your chest — not on the point of your shoulder, and not the whole shoulder if ' +
     'you can help it. If you are already facing the ' +
     'wall and cannot turn, get your stick and gloves up and spread out on the glass, with no head ' +
@@ -225,8 +245,8 @@ const wallReception = {
     'half-wall, level with the faceoff dot, where you stand waiting to receive; the puck is drawn ' +
     'on that line, about forty per cent of the way across, so the pass is in flight. A second ' +
     'teammate stands inside and below you, between you and your own net, as the support option. An ' +
-    'opposition forward is up ice on the same wall with a route running down the boards toward you ' +
-    'that stops about seven feet short and ends in two short bars rather than an arrowhead, meaning ' +
+    'opposition forward is up ice on the same wall with a route running down the wall and easing off it ' +
+    'toward the ice side of you, stopping about eight feet short and ending in two short bars rather than an arrowhead, meaning ' +
     'they arrive and contain rather than skating through. Nobody else is drawn, and no head turn is ' +
     'drawn, because the notation has no symbol for one.',
 

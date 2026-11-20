@@ -91,7 +91,24 @@ const containment122 = {
     'forward pressuring deep in the opponents’ end, two forwards across the middle third, and ' +
     'both defencemen holding the back layer at your own blue line. The layers are named from the ' +
     'puck outward. F1 takes the middle away and shows the carrier one side rather than hunting ' +
-    'the puck, so the first pass is conceded by design. Every neutral-zone structure is a ' +
+    'the puck, so the first pass is conceded by design. ' +
+    // W541 level/aim-point follow-up (20 Nov 2026, diagram-reviewer census of pressure routes ending
+    // near a carrier on the boards): F2's route (step 3) ends at the winger receiving on
+    // the wall and no host (neutral_zone_systems, winger, how_to_watch_hockey) voices a checking caveat
+    // beside the marker. Aim point from the owner's F2 bullet ("steps up to meet the puck"); level
+    // sentence as forecheck-pinch / pk-wedge-plus-1 carry it. No glyph added (the caption has none,
+    // and the limb is a scope and an aim point rather than a hazard on its own).
+    // Safety re-read (20 Nov 2026): "once the puck has arrived" ADDED -- without it a checking-league
+    // listener could hear the hit as allowed before the pass lands (NHL 56.2(i), interference on a
+    // player not in possession of the puck).
+    // 20 Nov 2026 diagram review: F2 arrives ~122 deg off the receiver's pass-fixed facing, i.e.
+    // diagonally from behind, so the back is now named ("stick first, and never into the receiver's body or their back" -- one
+    // negation, not "not X, and never Y", which check_caption_negations flagged); and the owner host says the step up
+    // is not a hit, so the level sentence now reads "Whether a hit may follow once they have the puck".
+    'F2 steps up to meet the puck on the wall, stick first, and never into the receiver’s body ' +
+    'or their back. Whether a hit may follow once they have the puck depends on whether your game ' +
+    'allows body checking. ' +
+    'Every neutral-zone structure is a ' +
     'coaching choice, not a law — find out which one your team plays.',
 
   describe:
@@ -503,7 +520,17 @@ const pressure = {
     'the opponents’ end, F3 is the only layer in front of your defence. F3 holds the middle; the ' +
     'strong-side defenceman closes the gap fast on a pass to the wall; the weak-side defenceman ' +
     'stays back as the last safety. Beat the two forecheckers with one pass and F3 is alone against ' +
-    'three — a choice for when you are chasing a goal, not a default.',
+    'three — a choice for when you are chasing a goal, not a default. ' +
+    // W541 level/aim-point follow-up (20 Nov 2026, diagram-reviewer census of pressure routes ending
+    // near a carrier on the boards): D1's pressure route ends at the wall outlet and
+    // neither host (neutral_zone_systems, winger) voices a checking caveat beside the marker. Same
+    // aim-point and level sentences as nz-1-2-2-containment; no glyph added.
+    // Safety re-read (20 Nov 2026): "That step-up" pointed at a phrase the caption never used, so it
+    // now names "The strong-side defenceman's step-up"; "once the puck has arrived" added for the same
+    // interference reason as nz-1-2-2-containment.
+    'The strong-side defenceman’s step-up goes to the puck, stick first, not the receiver’s body. ' +
+    'Whether that may end in a hit once the puck has arrived depends on whether your game allows ' +
+    'body checking.',
 
   describe:
     'The full sheet, our net at the left, the opponents’ at the right. Deep in the opponents’ ' +

@@ -636,8 +636,8 @@ const cornerEscapeRoutes = {
     // module's own comment beside C_CARRIER already said 7.1.
     'crease. An opposition forward stands in the corner at the top of the picture, about seven ' +
     'feet off the side boards, with the puck drawn between them and the wall. Our defenceman is out ' +
-    'toward the top of the faceoff circle on the same side; the defenceman’s route is a straight line running ' +
-    'down and across into the corner, ending in two short bars rather than an arrowhead, about ' +
+    'toward the top of the faceoff circle on the same side; the defenceman’s route curves out toward ' +
+    'the side boards and then turns to run toward the end boards, passing the carrier on the side nearer the net, ending in two short bars rather than an arrowhead, about ' +
     'seven feet short of the carrier and on the side of the carrier nearer the middle of the ice. Two ' +
     'skate-and-stickhandle waves leave the carrier. One runs along the side boards away from the ' +
     'goal, finishing with an arrowhead about twenty feet up the wall. The other curves out toward ' +
@@ -668,7 +668,27 @@ const cornerEscapeRoutes = {
     // outside both limbs of the arrival invariant by design, and that is exactly what makes
     // it safe to point one at a player: an arrowhead would say keep going through him.
     // The bars finish 7.1 ft from the carrier's anchor, so no mark eats another.
-    { from: C_D_FROM, to: C_D_TO, kind: 'pressure' },
+    // ⚠️ W541 GEOMETRY FIX (20 Nov 2026, diagram-reviewer census, safety-reviewer ruling): the
+    // STRAIGHT route's terminal direction (13, 11)/17.03, 40.2 deg, lay within ~5 deg of the
+    // bearing from the tip to A1 (45 deg) and on through A1's back to the puck at (83, 37.5) --
+    // the picture aimed the defenceman straight into the back of a player facing the corner,
+    // while the caption says "never finish into the back of a player who is facing the boards".
+    // The caption was right; the PICTURE was wrong. Ends and bars unchanged (C_D_FROM, C_D_TO
+    // still on the slot side, 7.07 ft off A1's anchor). Moving the bars to A1's net-side shoulder
+    // was rejected: it would block the drawn behind-the-net escape and break "your body takes
+    // [the slot] route away".
+    // bow 10.5, arithmetic (rink.mjs: control = chord midpoint + (-dy, dx)/len x bow):
+    //   chord (61,18)->(74,29), d (13, 11), len 17.03; perpendicular (-0.6459, 0.7634);
+    //   control = (67.5, 23.5) + 10.5 x (-0.6459, 0.7634) = (60.72, 31.52).
+    //   TERMINAL TANGENT = to - control = (13.28, -2.52), unit (0.983, -0.186), -10.7 deg: the
+    //   defenceman finishes moving ACROSS the slot side toward the net, not into the corner.
+    //   Bearing tip -> A1 is (5, 5), 45 deg, so the tangent is 55.7 deg off it; the extended
+    //   tangent passes A1's anchor at 5.84 ft (> 2.9 ft = the 3.275 ft glyph's ARRIVAL margin
+    //   asked for). Closest curve point to A1 7.07 ft (the tip); to the puck 12.38 ft; curve
+    //   max y 29.39, min x 60.99. Closest approach to escape 1's centreline 6.59 ft and to
+    //   escape 2's 7.07 ft, so it crosses neither wave. check-arrivals ignores `pressure`, so
+    //   these were measured by hand (scratchpad script) and must be re-derived on any change.
+    { from: C_D_FROM, to: C_D_TO, kind: 'pressure', bow: 10.5 },
 
     // Escape 1, up the wall. `carry`, because he has the puck. bow -2 bulges the route
     // toward the boards so it follows the wall instead of cutting the corner off.
