@@ -248,7 +248,7 @@ const laneAndTheStep = {
     'it. Take how far from the words and not from the picture: go until the blocker has to move their feet, ' +
     'and the ten feet drawn here is only what makes the change of lane visible at this ' +
     'scale. ' +
-    // ⚠️ W507 (19 Nov 2026): this disclosure sat AFTER the ⚠️, and the figcaption renders
+    // ⚠️ W508 (19 Nov 2026): this disclosure sat AFTER the ⚠️, and the figcaption renders
     // everything from the first ⚠️ to the end as one amber run (remark-corpus.mjs
     // `captionNodes`), so a non-hazard sentence about what is not drawn wore the hazard's
     // colour. Moved before the marker, word for word; the amber run is now the hazard only.
@@ -278,7 +278,7 @@ const laneAndTheStep = {
     // A triangle, because he is a D — ":399 A note for defencemen at the point".
     // labelHint: up-left of the D, off the blue line and the faceoff dot, and off the row
     // of "the blocker", where the two read as one phrase (diagram review, 27 Oct 2026).
-    // ⚠️ W507 (19 Nov 2026): [-7, 8] centred the 20 ft label at x = 18, so its right end
+    // ⚠️ W508 (19 Nov 2026): [-7, 8] centred the 20 ft label at x = 18, so its right end
     // ran over the blue line at x = 25 and the line struck through "shoot". [-12, 12]
     // centres it at (13, 32): the right end finishes about a foot short of the blue line,
     // and the leader passes above the neutral-zone dot at (20, 22) rather than through it
@@ -316,7 +316,7 @@ const laneAndTheStep = {
     // 2 — the shot. `shot` is the key's double line with a single arrowhead. A puck
     //     route, so the arrival forms do not reach it; the clearances are derived at
     //     SHOT_ENDS above and are what keep the head off the winger and the goalie.
-    //     ⚠️ W507 (19 Nov 2026): badge on the RIGHT of travel, i.e. below the shot. On the
+    //     ⚠️ W508 (19 Nov 2026): badge on the RIGHT of travel, i.e. below the shot. On the
     //     default left side it sat 9 ft along the shot and 3.4 ft up toward the blocker, so
     //     "2" stood beside the opposition F, read as labelling him, and had a corner cut by
     //     his halo. Below the line there is nothing within ten feet of it.

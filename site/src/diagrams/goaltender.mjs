@@ -433,7 +433,7 @@ const TRAPEZOID_ZONE = [
 // He is inside the trapezoid there (half-width 12.5 ft at x = 94.6), which is the
 // state the section assumes throughout.
 //
-// ⚠️ W507 (19 Nov 2026): THE PUCK AND THE THREE ROUTES WERE DRAWN ON TOP OF HIM. He was
+// ⚠️ W508 (19 Nov 2026): THE PUCK AND THE THREE ROUTES WERE DRAWN ON TOP OF HIM. He was
 // at (95.5, 0) with the puck 3 ft straight above him, so the puck dot sat on the top of
 // the letter and the rim — which leaves the puck heading down the far side — ran through
 // the glyph. The goalie is the diagram's subject and read as a struck-through letter.
@@ -441,8 +441,16 @@ const TRAPEZOID_ZONE = [
 // of the end boards at x = 100, and every route leaves it AWAY from him: the short pass
 // and the middle pass start 4.8 ft from his centre and head up-ice, and the rim (bowed
 // +12 rather than +10 so it swings round him toward the boards) passes 2.55 ft from his
-// centre, about a foot clear of the letter, and 2.6 ft inside the boards at its widest.
-// Still "standing behind their own net and the puck on their stick", as `describe` says.
+// centre and 2.6 ft inside the boards at its widest. Against the letter itself the margin
+// is small: the bold `G` at font-size 4.6 inks x 93.03-96.08, y -0.26-3.17 (SVG y; measured
+// with canvas measureText in the builder's own headless Chrome), and the rim's centreline
+// comes within 0.88 ft of that box, near its lower right corner at (96.95, 3.3) — so with
+// the 0.7 stroke there is about HALF A FOOT of clear paper between line and letter, which
+// is what a site-reviewer measured from the PNG. (This said "about a foot clear" until
+// W508(7)/(10); that was 2.55 ft less a 1.5 ft half-letter, centreline to centre, not ink to ink.)
+// The puck sits 4.8 ft from his centre and 1.4 ft from the letter's ink, so `describe`
+// says "the puck just beside them" rather than "on their stick" (W508(11)): no stick is
+// drawn, and a screen-reader user should not be told of one the picture does not show.
 // His label is hinted below the crease (`labelHint`), where the default placer had put
 // "you" on the crease paint with its leader across the goal frame.
 const G_BEHIND_NET = { at: 'behind-net', dx: 0.6, dy: -1.5 };   // (94.6, -1.5)
@@ -454,7 +462,7 @@ const PUCK_BEHIND_NET = { at: 'behind-net', dx: 3.4, dy: 2.4 }; // (97.4, 2.4)
 // from its centroid, so the apex finishes 1.9 ft clear of the ink.
 const D_STRONG_WALL = { at: 'corner:right', dx: 6, dy: -3 };  // (88, 31)
 // Eight feet short of him along the passing line from the puck at (97.4, 2.4), which
-// leaves 3.4 ft between the arrowhead and the triangle's ink. (Re-derived in W507 when
+// leaves 3.4 ft between the arrowhead and the triangle's ink. (Re-derived in W508 when
 // the puck moved: it was (90.07, 23.27) on the line from the old puck at (95.5, 3).)
 const PASS_SHORT_END = { at: 'corner:right', dx: 8.5, dy: -10.6 }; // (90.5, 23.4)
 
@@ -468,7 +476,7 @@ const RIM_END = { at: 'goal-line', dx: -13, dy: -32 };        // (76, -32)
 // net rather than through it: at the goal line the drawn curve is 7.9 ft off centre,
 // clearing the post by 4.8 ft, and its closest approach to the crease is 6.93 ft off
 // centre at x 84.5, where the crease's straight side is at 4 ft — 2.9 ft of daylight
-// (re-measured from the rendered path in W507, after the puck moved). It finishes at (79, 1.5),
+// (re-measured from the rendered path in W508, after the puck moved). It finishes at (79, 1.5),
 // inside the shaded slot and 3.3 ft clear of that zone's own label box.
 const MIDDLE_END = { at: 'goal-line', dx: -10, dy: 1.5 };     // (79, 1.5)
 
@@ -519,8 +527,8 @@ const safeOutlets = {
     'consistent.',
 
   describe:
-    'The attacking half of the rink, the defended net at the right, with the goalie ' +
-    'standing behind their own net and the puck on their stick. Three dashed lines — the ' +
+    'The defending half of the rink, the defended net at the right, with the goalie ' +
+    'standing behind their own net and the puck just beside them. Three dashed lines — the ' +
     'notation for a pass — leave the puck. One runs up the near boards to a defenceman of ' +
     'yours standing on the wall level with the goal line, stopping short of them. One curves ' +
     'around the back of the net and down the far boards toward one of your forwards on the ' +
