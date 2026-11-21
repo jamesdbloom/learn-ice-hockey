@@ -288,7 +288,8 @@ const laneAndTheStep = {
     { id: 'F', team: 'opp', pos: 'F', at: BLOCKER, label: 'the blocker' },
     // ":465 If your winger is at the net front" — the one net-front personnel claim
     // this document actually makes.
-    { id: 'W', pos: 'F', at: NET_FRONT_WINGER, label: 'net-front traffic' },
+    // W611 labelHint (21 Nov 2026): "net-front traffic" crossed the goal line and a circle. [-7, -12] (review: ~2 ft from the crease corner; [-5, -12] was tight) sits it below and left of the winger, clear of paint, leader to W.
+    { id: 'W', pos: 'F', at: NET_FRONT_WINGER, label: 'net-front traffic', labelHint: [-7, -12] },
   ],
 
   // The lane the shooter HAD, and the reason the blocker is standing where he is.

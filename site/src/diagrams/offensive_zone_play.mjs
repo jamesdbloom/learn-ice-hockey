@@ -446,7 +446,8 @@ const halfWallOptions = {
     { id: 'F2', pos: 'F', at: DEEP_CORNER,   label: 'low — the corner' },
     // SG165 labelHint: under F3, half a foot higher so the words clear the faceoff dot.
     { id: 'F3', pos: 'F', at: SEAM_TARGET,   label: 'the seam', labelHint: [0, -10.3] },
-    { id: 'D',  pos: 'D', at: 'point:right', label: 'high — the point' },
+    // W611 labelHint (21 Nov 2026): "high — the point" was drawn across the blue line. [12, -6] sits it inside the zone right of the D, leader to the D, clear of paint.
+    { id: 'D',  pos: 'D', at: 'point:right', label: 'high — the point', labelHint: [12, -6] },
     { id: 'D',  pos: 'D', at: 'point:left' },
     { id: 'G',  team: 'opp', pos: 'G', at: GOALIE },
   ],

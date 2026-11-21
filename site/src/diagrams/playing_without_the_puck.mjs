@@ -982,7 +982,8 @@ const legalRouteThroughTraffic = {
 
   players: [
     { id: 'G', team: 'opp', pos: 'G', at: { at: 'crease', dx: -1 } },
-    { id: 'F', pos: 'F', at: D8_YOU, label: 'you' },
+    // W611 labelHint (21 Nov 2026): "you" crossed the circle arc. [0, -6] sits it directly below the player, clear of paint.
+    { id: 'F', pos: 'F', at: D8_YOU, label: 'you', labelHint: [0, -6] },
     // labelHint (W403): two feet higher than the placer's slot, so the words clear the top
     // of the circle he stands in instead of running along it.
     { id: 'F', pos: 'F', at: D8_MATE, label: 'standing still', labelHint: [0, 13.2] },

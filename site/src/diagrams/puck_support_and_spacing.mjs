@@ -104,7 +104,8 @@ const supportInALine = {
     // labelHint: right of C, a slot whose leader neither runs along a painted line or circle nor passes near a dot or the puck (crossing a line is allowed);
     // [0, -7.5] was not honoured, and [-4.5, -9] sat under the opposing F and read as its
     // label (diagram review, 27 Oct 2026).
-    { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier', labelHint: [3, -9] },
+    // W611 labelHint (21 Nov 2026): [3, -9] crossed the circle and the goal line. [-3, -11] cleared the goal line but sat under the filled opposition F with F's own leader through it, reading as the opponent carrying; [2, -14] (review) sits under C, clear of F's leader, and accepts the paint crossing -- ownership beats paint here.
+    { id: 'C',  pos: 'F', at: CARRIER,                            label: 'puck carrier', labelHint: [2, -14] },
     { id: 'A1',  pos: 'F', at: WALL_MID,                           label: 'option one', labelHint: [-4.31, -7.34] },
     { id: 'B',  pos: 'F', at: WALL_HIGH,                          label: 'option two', labelHint: [-13, 0] },
     // SOLID CIRCLE = an opposition forward: `pos: 'F'` gives the circle (shape is the
@@ -115,16 +116,23 @@ const supportInALine = {
     // pylon — a practice cone — and never a player, and X-meaning-opposition is one
     // of the symbols this corpus rewrote its notation specifically to escape.
     // labelHint: moves this label off a neighbour's label, where the two stacked and read
-    // as one player's two-line label (label audit, 27 Oct 2026). Moved [-2, -18] -> [1, -18]:
-    // at -2 the leader slanted left through the final "e" of "option one"; at +1 it runs down
-    // the gap between "option one" and "puck carrier", 1.2 ft clear of the nearer word.
-    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes', labelHint: [1, -18] },
+    // as one player's two-line label (label audit, 27 Oct 2026). History: [-2, -18] -> [1, -18]
+    // (the leader had slanted through "option one"). W611 follow-up (21 Nov 2026): after "puck carrier"
+    // moved to [2, -14], the placer stopped honouring [1, -18] and parked "in both lanes" ~2.6 ft
+    // above "puck carrier" -- the stacked two-line shape again. [0, -22] (honoured; text at (75.6, 13))
+    // puts it BELOW "puck carrier", with F's leader passing ~2 ft left of "puck", clear of the dot at
+    // (69, 22) and of "option one".
+    { id: 'F',  pos: 'F', team: 'opp', at: DEFENDER,              label: 'in both lanes', labelHint: [0, -22] },
   ],
 
   // Deliberately no routes. Drawing the two pass lanes would draw two dashed
   // arrows on top of each other — they are literally the same line, which is the
   // defect — and either one would have to run through the defender's glyph.
-  puck: { at: 'corner:right', dx: -1.5, dy: 2 },
+  // W611 follow-up (21 Nov 2026): the puck at (80.5, 36) sat between C and the filled opposition F and
+  // touched both. Moved to C's far side, (87.5, 34.5): 4.5 ft from C's centre (touching his glyph),
+  // 11.9 ft from F, 2 ft inside the corner boards and clear of the goal line. (A reviewer sketch,
+  // corner:right dx 1.5 dy 2.5, resolves to (83.5, 36.5), 2.5 ft from C's centre -- under his glyph.)
+  puck: { at: 'corner:right', dx: 5.5, dy: 0.5 },
 };
 
 const supportTriangle = {
@@ -192,7 +200,11 @@ const supportTriangle = {
     { from: CARRIER, to: { at: 'faceoff-dot:right', dx: 4.3, dy: -1.7 }, kind: 'pass' },
   ],
 
-  puck: { at: 'corner:right', dx: -1.5, dy: 2 },
+  // W611 follow-up (21 Nov 2026): the puck at (80.5, 36) sat between C and the filled opposition F and
+  // touched both. Moved to C's far side, (87.5, 34.5): 4.5 ft from C's centre (touching his glyph),
+  // 11.9 ft from F, 2 ft inside the corner boards and clear of the goal line. (A reviewer sketch,
+  // corner:right dx 1.5 dy 2.5, resolves to (83.5, 36.5), 2.5 ft from C's centre -- under his glyph.)
+  puck: { at: 'corner:right', dx: 5.5, dy: 0.5 },
 };
 
 // ---------------------------------------------------------------------------

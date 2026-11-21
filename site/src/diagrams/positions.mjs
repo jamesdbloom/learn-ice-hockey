@@ -1273,7 +1273,8 @@ const wingerDzRim = {
     // The rim's destination, on the same wall at the blue line: dx -44 from (69, 38.5)
     // puts him at x = 25, the blue line, at the half-wall's own y — so he clears the
     // dasher by the identical 0.725 ft and the coordinate tracks half-wall if it moves.
-    { id: 'W2', pos: 'F', at: { at: 'half-wall:right', dx: -44 }, label: 'up the wall' },
+    // W611 labelHint (21 Nov 2026): "up the wall" was drawn across the blue line. [8, -7] sits it just inside the zone beside W2, leader to W2, clear of paint.
+    { id: 'W2', pos: 'F', at: { at: 'half-wall:right', dx: -44 }, label: 'up the wall', labelHint: [8, -7] },
   ],
 
   // Bowed into the boards so the rim hugs the wall rather than cutting the middle —
@@ -1358,7 +1359,8 @@ const wingerDzReverse = {
     // Arriving behind, from the corner side. At (80, 28) he is 12.6 ft from the winger,
     // so the two circles are 6.05 ft apart in ink, and he is deeper than the puck —
     // which is what "behind you" means when you are facing up the wall.
-    { id: 'D',  pos: 'D', at: { at: 'half-wall:right', dx: 13, dy: -13 }, label: 'arriving behind you' },
+    // W611 labelHint (21 Nov 2026): "arriving behind you" crossed the circle and the goal line. [-13, -8] sits it inside the circle below its dot (letter tops ~1.5 ft below the dot), leader to the D.
+    { id: 'D',  pos: 'D', at: { at: 'half-wall:right', dx: 13, dy: -13 }, label: 'arriving behind you', labelHint: [-13, -8] },
   ],
 
   routes: [
