@@ -888,13 +888,14 @@ const collapsingBox = {
   // section's own Read: facts line carries all four. "Not to defend a whole game"
   // stays — it is the hedge that keeps a state from reading as a system.
   caption:
-    'The collapsing box — a state rather than a full system: as the puck goes below the goal ' +
-    'line it shrinks until all five defenders are inside the house, sticks in the passing ' +
-    'lanes. ' +
-    'It concedes the entire outside by design, the points included, and leaves no breakout ' +
-    'speed the moment you win the puck. ' +
-    'Teams use it in spots — protecting a lead late, six-on-five against a pulled goalie — ' +
-    'not to defend a whole game.',
+    // W604 (21 Nov 2026), short-caption echo, SUPERSEDING the note above: the shrink narrative, "concedes
+    // the entire outside by design" and the uses sentence CUT -- the paragraph two blocks above the marker,
+    // the facts Convention:/Risk:/Read: lines and the "Where the collapsing box gets used" list directly
+    // below carry all of it (all four uses). "A state rather than a full system" and the caption-only
+    // breakout-speed cost kept.
+    'The collapsing box — a state rather than a full system — with the puck below the goal ' +
+    'line: all five defenders inside the house, sticks in the passing lanes, the points left ' +
+    'open. It leaves no breakout speed the moment you win the puck.',
 
   describe:
     'The defending half of the rink, the defended net at the right, with the shaded house ' +

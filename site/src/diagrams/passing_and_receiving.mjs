@@ -421,9 +421,10 @@ const bankPass = {
     // stays -- an uncalled bank is a turnover in your own end, which is where it is drawn.
     'A bank pass off the boards, drawn in your own end: your own net is at the right of ' +
     'this picture and up-ice is to the left. A forechecker sits in the direct lane, so the ' +
-    'puck is sent at a spot on the wall instead, chosen so it comes off at roughly the ' +
-    'mirror of the angle it went in at. The bounce is not fully predictable, which is why ' +
-    'you call it.',
+    // W604 (21 Nov 2026), short-caption echo: the mirror angle and the unpredictable bounce CUT -- the
+    // "Play the angle" bullet above the marker and the "only moderately reliable" bullet below (and the
+    // facts Risk: line) say both. Orientation sentence and the call-it limb kept.
+    'puck is sent off the wall instead — and you call it.',
 
   describe:
     'One end zone, drawn with your own net at the right of the picture and up-ice to the left, so the play runs ' +

@@ -605,12 +605,13 @@ const threeOnTwoDefault = {
     // W602 (21 Nov 2026), caption-echo census: "each defenceman takes an outside attacker and
     // neither chases the carrier" is CUT. Both hosts say it next to the marker:
     // defending_the_rush.md's bullets directly after the pair, goaltender.md's 3-on-2s paragraph
-    // and its facts Convention: line. The legend for the third own glyph is kept.
-    'The third own player in the picture is the backchecking centre, who has the middle attacker. ' +
+    // and its facts Convention: line. The legend for the third own glyph is kept, AFTER the
+    // defencemen sentence so "third" follows the two it counts from (site-reviewer, W602).
     'The two defencemen retreat level with each other, the ' +
     'middle sealed between them — a staggered retreat opens a ' +
     'diagonal seam straight to the slot — and stop above the circles rather than backing all ' +
     'the way to the goal line. ' +
+    'The third own player in the picture is the backchecking centre, who has the middle attacker. ' +
     // ⚠️ "the realistic alternative is the next diagram" IS GONE, and this one mattered.
     // The pair is borrowed into positions/goaltender.md as well as its owner, and it is
     // adjacent in both today (:858/:860 and :526/:528) — but a pointer at a neighbour is

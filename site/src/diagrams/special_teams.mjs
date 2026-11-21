@@ -540,10 +540,11 @@ const ppBackdoor = {
   width: 900,
 
   caption:
-    'The weak-side post, away from the puck. When the kill\'s low defender commits to the ' +
-    'strong side or to the net-front player, drawn here occupying that defender, nobody is covering it. ' +
-    'Arrive late: a player camped at the back post is marked, one arriving as the pass is ' +
-    'released is not. A read off any formation, not a shape of its own.',
+    // W604 (21 Nov 2026), short-caption echo: the commit condition and "Arrive late" CUT -- the definition
+    // paragraph two blocks above the marker, the facts Read:/Action: lines and the bold "Arrive late."
+    // paragraph directly below say both.
+    'The backdoor: the kill\'s low defender is drawn occupied by the net-front player, so nobody ' +
+    'is covering the weak-side post, away from the puck. A read off any formation, not a shape of its own.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goalie in ' +
@@ -625,10 +626,12 @@ const ppWalkDown = {
   width: 900,
 
   caption:
-    'The half-wall player skates the puck down toward the goal line and inside rather than ' +
-    'passing, forcing a decision: if the low defender steps out, the net front is open; if they ' +
-    'hold, the shot comes from the top of the circle with a moving goalie. Neither is ' +
-    'drawn. Walk toward the dot, not the corner.',
+    // W604 (21 Nov 2026), short-caption echo: the two branches and "Walk toward the dot, not the corner"
+    // CUT -- the walk-down paragraph and facts Read:/Never: lines above the marker, and the bold "Walk to
+    // the middle" paragraph directly below, carry them. The notes above saying the branches are "spoken in
+    // the caption" now mean spoken in the host prose. No safety limb was in this caption.
+    'The walk-down: the half-wall player carries the puck down toward the goal line and inside, ' +
+    'forcing a decision on the kill’s low defender. Neither answer is drawn.',
 
   describe:
     'Attacking half of the rink, the opposition net at the right, the opposition goalie in ' +

@@ -1068,9 +1068,10 @@ const ozoneDOneTimer = {
     // W602 (21 Nov 2026), caption-echo census: the play's description and "usually to the net
     // front to screen the goalie, staying off them" are CUT; faceoffs.md's "The D one-timer."
     // paragraph two blocks above the marker says both, word for word.
-    'The D one-timer, a beat after the drop. The shot’s ' +
-    'line to the net runs straight through the inner hash marks, where the inside winger stands for ' +
-    'the draw, so on the drop they step out of it, and they are drawn here already out of it. ' +
+    // W604 (21 Nov 2026), short-caption echo: the step-out explanation CUT -- "The D one-timer." paragraph
+    // two blocks above the marker and the facts Risk: line say it. Coaching-choice hedge kept verbatim.
+    'The D one-timer, a beat after the drop, with the inside winger drawn already stepped out of ' +
+    'the shot’s line. ' +
     'Where they go next is not drawn. All of it is a coaching choice ' +
     'and not a rule of hockey — find out what your team runs, and what the call is, before your first' +
     ' shift.',

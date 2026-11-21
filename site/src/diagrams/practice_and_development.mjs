@@ -193,8 +193,10 @@ const executionDrill = {
     'The first of two frames: nobody defending. ' +
     'The dashed pass was the answer before the rep started, because ' +
     'no opposing skater in the picture could ' +
-    'take it away. This is not a bad drill; ' +
-    'what it cannot train is the choice. Which drills your team runs is your coach’s decision ' +
+    'take it away. ' +
+    // W604 (21 Nov 2026), short-caption echo: "This is not a bad drill; what it cannot train is the choice" CUT --
+    // the host paragraph two above the marker says "legitimate, but it trains execution only".
+    'Which drills your team runs is your coach’s decision ' +
     'rather than a rule of hockey — so if a drill’s purpose is not obvious, ask.',
 
   describe:

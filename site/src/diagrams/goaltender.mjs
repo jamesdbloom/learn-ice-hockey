@@ -123,8 +123,10 @@ const playingTheAngle = {
 
   caption:
     'An opposition shooter at the top of the faceoff circle on the goalie’s right, with no pass available. ' +
-    'The shaded wedge is every straight path from that puck into the net. The goalie is ' +
-    'standing on the line from the puck to the exact centre of the goal line, at a depth every ' +
+    // W604 (21 Nov 2026), short-caption echo: the full statement of the line CUT -- the paragraph above the
+    // marker and the facts Position: line both state it word for word. Depth hedge kept.
+    'The shaded wedge is every straight path from that puck into the net. The goalie is on the ' +
+    'puck-to-centre line, at a depth every ' +
     'goalie coach will adjust — so read it as an example of the read rather than a measured ' +
     'instruction.',
 
@@ -202,8 +204,9 @@ const frontDoorBackDoor = {
 
   caption:
     'A strong-side shooter, and a second attacker unmarked on the far side of the net — the back ' +
-    'door. With a pass available across the slot the read is to back off rather than challenge, ' +
-    'and the goalie has. How far is a judgement made situation by situation: the trade is the ' +
+    // W604 (21 Nov 2026), short-caption echo: the back-off read CUT -- the third default bullet
+    // directly above the marker states it. No-universal-answer hedge kept.
+    'door — so the goalie has backed off. How far is a judgement made situation by situation: the trade is the ' +
     'front door against the back door, and there is no universally correct answer.',
 
   describe:
@@ -265,11 +268,11 @@ const angleClosesWide = {
   width: 900,
 
   caption:
+    // W604 (21 Nov 2026), short-caption echo: the geometry and the post instruction CUT -- the two
+    // bullets directly above the marker retell both clause for clause, the over-the-shoulder exposure
+    // included (and the facts Convention: line).
     'The puck has gone wide and low, level with the goal line, and the goalie has come back ' +
-    'to the near post. Out there the angle closes on its own, so depth buys nothing and only ' +
-    'leaves you unable to get back. End the lateral movement at the post rather than a foot short ' +
-    'of it — and note that closing the low short side leaves the space over your shoulder still ' +
-    'open.',
+    'to the near post, ending at it rather than a foot short of it.',
 
   // W473: "to the right of the net" read, in picture terms, as behind a net already drawn at the
   // right; the shooter is toward the TOP, which is the goalie's own right (goalie faces left).
@@ -725,8 +728,11 @@ const breakawayRetreat = {
     // W595 (21 Nov 2026), caption-echo census: the bullets directly above the marker (come out and retreat, keep flow,
     // stay on your feet, what to watch) state everything cut here, the coaching split in full with its
     // "ask your goalie coach". KEPT: the "well out" disclosure, which qualifies the drawn position.
-    'A breakaway: the goalie meets the shooter well out and backs in on C-cuts at their speed, ' +
-    'keeping the angle closed and staying on their feet. "Well out" is a read rather than a distance. ' +
+    // W604 (21 Nov 2026), short-caption echo: "at their speed, keeping the angle closed and staying on
+    // their feet" CUT -- the first and third bullets directly above the marker say both. "well out" kept
+    // so the disclosure has its antecedent in the caption itself.
+    'A breakaway: the goalie meets the shooter well out and retreats in front of them on C-cuts. ' +
+    '"Well out" is a read rather than a distance. ' +
     'No figure is given for it, so the position drawn is an example.',
 
   describe:
@@ -936,8 +942,9 @@ const fiftyFiftyPuck = {
 
   caption:
     'A loose puck in the corner, you out of your net for it, and the forechecker closer to it ' +
-    'than you are — so look at where your net is. That empty net is what losing a fifty-fifty race ' +
-    'costs. The puck is in front of the goal line, so the trapezoid is not in play; this picture is ' +
+    // W604 (21 Nov 2026), short-caption echo: "That empty net is what losing a fifty-fifty race costs" CUT
+    // -- the bullet directly below the marker and the facts Never: line both say it. Trapezoid limb kept.
+    'than you are — so look at where your net is. The puck is in front of the goal line, so the trapezoid is not in play; this picture is ' +
     'only about the race.',
 
   describe:

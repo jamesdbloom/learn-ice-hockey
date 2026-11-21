@@ -141,7 +141,7 @@ After the puck is lost, *"all scenarios (dump or controlled entry, successful or
 
 > **Honest caveat: that ordering is coaching consensus, not measurement.** The grades are reasoned from the shot-danger evidence and from how long a turnover takes to become a shot on your net. Only the offensive blue line has a tracked turnover price, from one Swiss-league dataset, and **nothing found ranks the five against one another.** One candidate **could not be read** — Schulte and colleagues' 2017 Markov game model for valuing actions and locations in ice hockey is closed-access, with no open copy indexed by Semantic Scholar or OpenAlex — so this means "not found, and one candidate unread", not "no such ranking exists". Trust the order of the rows more than the labels.
 
-Laid over the ice, those five rows are one picture — and **the grade does not simply fall with distance from your own net.** The middle of the neutral zone is shaded as heavily as your own end.
+Laid over the ice, those five rows are one picture — and **the grade does not simply fall with distance from your own net.**
 
 ![](diagram:the-risk-map)
 

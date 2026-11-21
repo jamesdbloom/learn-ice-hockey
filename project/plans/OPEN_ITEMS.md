@@ -13,9 +13,9 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W601 and W602 shipped with record `w602_paraphrased_caption_echoes_2026-11-21.md`.
+- None. W603 and W604 shipped with record `w604_short_caption_echoes_2026-11-21.md`.
 
-  W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+  W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W599 (21 Nov):**
@@ -26,7 +26,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(1) Not reached by the W596 census:** about 320 non-grant chunk-terminal values, the 29 Never: values, and grants in body prose (`check_chunk_tails --prose`).
   - **(2) CARHA was not searched** for its own save-then-cover or sliding-trip rules (goaltender :425, risk_management :673).
 - **From W595 (21 Nov):**
-  - [(1) closed in W601/W602 for captions over 450 characters. The ≤450 captions were not censused.] Caption echoes the tool cannot see: restatement two blocks away, and paraphrase. Examples: goalie-breakaway-retreat's first sentence, nz-1-2-2-trap's opening, and getting-beaten-wide's middle sentence restated below it.
+  - [(1) closed in W601–W604 for all captions. Paraphrase beyond two blocks, and across documents, is not censused.] Caption echoes the tool cannot see: restatement two blocks away, and paraphrase. Examples: goalie-breakaway-retreat's first sentence, nz-1-2-2-trap's opening, and getting-beaten-wide's middle sentence restated below it.
   - **(2) Optional, needs a safety ruling:** trim the lead-in sentences at defender :270 and goaltender :1398 that repeat net-front-walk-out-direction's goal-frame limb.
   - [(3) closed in W602: the marker moved after the 2-on-1 item.] defender-two-on-one's marker sits before a three-item list, but the picture is only the 2-on-1. Consider moving it after that bullet.
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**

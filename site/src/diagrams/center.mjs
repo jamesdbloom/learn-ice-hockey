@@ -567,7 +567,9 @@ const slotOptions = {
     'free-space case, so no defenders are drawn at all and the picture says nothing about how much ' +
     'time you really have. Four things are drawn and only one of them happens: the shot, a pass to ' +
     'the winger on the half-wall, a pass to the winger in the far circle, or a pass back to the ' +
-    'point. With space in front of you, shoot.',
+    // W604 (21 Nov 2026), short-caption echo: "With space in front of you, shoot." CUT -- the Key
+    // considerations paragraph directly below the marker says "If you have the puck there with space, shoot."
+    'point.',
 
   describe:
     'The attacking half of the rink, the net being attacked at the right, and no opposition ' +

@@ -791,7 +791,7 @@ Know all four before the puck arrives, and know which is on:
 
 ![](diagram:oz-half-wall-options)
 
-The failure is having only one of these in mind. A player who arrives on the half-wall intending to pass to the point will do that regardless of whether the slot was open.
+A player who arrives on the half-wall intending to pass to the point will do that regardless of whether the slot was open.
 
 ### Buying time
 

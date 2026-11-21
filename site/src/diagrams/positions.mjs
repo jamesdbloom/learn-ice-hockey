@@ -841,9 +841,11 @@ const twoOnOne = {
     // W595 (21 Nov 2026), caption-echo census: sole host defender.md; its 2-on-1 bullet, directly after the marker
     // line, voices the why (the goalie can see the shot) and "Ask your coach which you play". KEPT: the
     // instruction, the two-systems disclosure and the no-backchecker picture note.
-    'A two-on-one: the defenceman sits in the passing lane between the attackers, stick flat on the ' +
-    'passing side, backing up under control — taking the pass away and leaving the shot to the ' +
-    'goalie. One of two systems; the other is a timed slide. No backchecker is drawn, because one ' +
+    // W604 (21 Nov 2026), short-caption echo: "stick flat on the passing side" and "taking the pass away
+    // and leaving the shot to the goalie" CUT -- the 2-on-1 bullet the marker closes opens with both
+    // (no stick is drawn). Two-systems disclosure and no-backchecker note kept verbatim.
+    'A two-on-one, the defenceman backing up under control in the passing lane between the ' +
+    'attackers. One of two systems; the other is a timed slide. No backchecker is drawn, because one ' +
     'would make this a different situation.',
 
   describe:

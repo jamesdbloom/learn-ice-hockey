@@ -148,7 +148,7 @@ Most recreational, beer-league, youth and older community rinks are **not** buil
 
 ![](diagram:rink-map-end-zone-markings)
 
-The sheet is drawn here in two pictures. The first is the whole rink, with the neutral zone — the middle third, between the two blue lines — shaded. The second is one half of it, from the centre red line to the end boards, at twice the scale, so the markings in an end zone are big enough to read off. The far end of the rink is the second picture mirrored: both ends are marked identically. The names for the places *inside* an end zone are in [section 5](#5-named-areas-of-the-ice).
+The second picture is at twice the scale so that an end zone’s markings are big enough to read off, and the far end of the rink is that picture mirrored: both ends are marked identically. The names for the places *inside* an end zone are in [section 5](#5-named-areas-of-the-ice).
 
 Every map in this document is **drawn to scale** from the dimensions in section 1, so the distances in them are real and you can measure relationships off them.
 

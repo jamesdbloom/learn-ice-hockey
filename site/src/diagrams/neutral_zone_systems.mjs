@@ -226,9 +226,11 @@ const trap122 = {
     // F1 is drawn at (31, 0), 6 ft inside their blue line -- the host's "at or near their blue line".
     // KEPT: the picture's positions and the closing still-frame disclosure.
     'The 1-2-2 trap, layers dropped back: F1 just inside their blue line still splits the ice, F2 ' +
-    'and F3 sit at the red line on the walls, and the defence holds your own blue line. The carrier ' +
-    'is steered to a wall, into F2 stepping up with the strong-side defenceman behind and no lane ' +
-    'through the middle. Depth is the tell a still frame can show; whether F1 is closing or gliding ' +
+    // W604 (21 Nov 2026), short-caption echo: the funnel sentence CUT -- neutral_zone_systems.md's
+    // paragraph directly above the marker is the same sentence; how_to_watch_hockey.md's paragraph above
+    // its markers carries "steered to a wall". Still-frame disclosure kept.
+    'and F3 sit at the red line on the walls, and the defence holds your own blue line. ' +
+    'Depth is the tell a still frame can show; whether F1 is closing or gliding ' +
     'is not.',
 
   describe:
@@ -707,7 +709,9 @@ const regroup = {
     // "flat and hard, never blind across the middle" instruction, are CUT. The only host's numbered
     // list directly above the marker gives the first, and "The one hard rule." paragraph directly
     // below gives the second word for word (and its facts Never: line). Tactical, not a safety limb.
-    'attacking left to right. The pass across makes the opposing structure slide. The three forwards sit at ' +
+    // W604 (21 Nov 2026), short-caption echo: "The pass across makes the opposing structure slide" CUT --
+    // step 3 of the list directly above the marker says it.
+    'attacking left to right. The three forwards sit at ' +
     'three different depths rather than all curling to the same place: short outlet, outside ' +
     'lane, stretch. You are declining a bad entry to buy a better one, not retreating.',
 

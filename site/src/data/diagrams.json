@@ -38,7 +38,7 @@
   "centre-oz-slot-options": {
     "id": "centre-oz-slot-options",
     "owner": "content/positions/center.md",
-    "caption": "The centre with the puck in the slot in the attacking zone, the net at the right. This is the free-space case, so no defenders are drawn at all and the picture says nothing about how much time you really have. Four things are drawn and only one of them happens: the shot, a pass to the winger on the half-wall, a pass to the winger in the far circle, or a pass back to the point. With space in front of you, shoot.",
+    "caption": "The centre with the puck in the slot in the attacking zone, the net at the right. This is the free-space case, so no defenders are drawn at all and the picture says nothing about how much time you really have. Four things are drawn and only one of them happens: the shot, a pass to the winger on the half-wall, a pass to the winger in the far circle, or a pass back to the point.",
     "describe": "The attacking half of the rink, the net being attacked at the right, and no opposition skaters drawn — this is the free-space case. Four of your own: the centre with the puck in the slot between the faceoff circles; a winger on the half-wall at the top of the picture, your left; a winger in the far faceoff circle; and a defenceman at the point near the blue line. The opposing goalie is in the crease. Four routes, all starting on the centre and all alternatives — a shot at the net, and three passes, to the winger on the half-wall, to the winger in the far circle, and back to the defenceman at the point. Each pass ends short of the player it is aimed at.",
     "title": "Options from the slot",
     "half": true,
@@ -398,7 +398,7 @@
   "rush-3-on-2-default": {
     "id": "rush-3-on-2-default",
     "owner": "content/systems/defending_the_rush.md",
-    "caption": "A 3-on-2 defended \"two wide, middle to the backchecker\", with the attack moving right to left toward the defended net at the left. The third own player in the picture is the backchecking centre, who has the middle attacker. The two defencemen retreat level with each other, the middle sealed between them — a staggered retreat opens a diagonal seam straight to the slot — and stop above the circles rather than backing all the way to the goal line. This is the two-wide default, a coaching choice rather than a law: the realistic alternative is strong side takes the puck and weak side splits, so ask your coach which you play.",
+    "caption": "A 3-on-2 defended \"two wide, middle to the backchecker\", with the attack moving right to left toward the defended net at the left. The two defencemen retreat level with each other, the middle sealed between them — a staggered retreat opens a diagonal seam straight to the slot — and stop above the circles rather than backing all the way to the goal line. The third own player in the picture is the backchecking centre, who has the middle attacker. This is the two-wide default, a coaching choice rather than a law: the realistic alternative is strong side takes the puck and weak side splits, so ask your coach which you play.",
     "describe": "The full sheet, the defended net at the left. Three opposition forwards abreast just inside the defending blue line: one wide at the top of the picture carrying the puck, one in the middle, one wide at the bottom. Two own defencemen level with each other about twenty feet nearer the defended net, one in each outside lane just inside the faceoff dots, each with a backward-skating route that ends level with the other and above the circles. One own forward, the backchecking centre, is behind the play up-ice and takes a route that passes inside the middle attacker and finishes slightly nearer the defended net than they are — their inside hip, not their back pocket. The goalie is in the crease.",
     "title": "Defending a 3-on-2: two wide",
     "half": false,
@@ -518,7 +518,7 @@
   "dz-collapsing-box": {
     "id": "dz-collapsing-box",
     "owner": "content/systems/defensive_zone_coverage.md",
-    "caption": "The collapsing box — a state rather than a full system: as the puck goes below the goal line it shrinks until all five defenders are inside the house, sticks in the passing lanes. It concedes the entire outside by design, the points included, and leaves no breakout speed the moment you win the puck. Teams use it in spots — protecting a lead late, six-on-five against a pulled goalie — not to defend a whole game.",
+    "caption": "The collapsing box — a state rather than a full system — with the puck below the goal line: all five defenders inside the house, sticks in the passing lanes, the points left open. It leaves no breakout speed the moment you win the puck.",
     "describe": "The defending half of the rink, the defended net at the right, with the shaded house region drawn on the ice. All five of our players stand inside it: two defencemen low, one either side of the crease and about nine feet off the posts, and three forwards above them, one in the high slot and one either side of the slot. Our goalie is in the crease. The opposition have the puck carrier behind the net, a forward in the strong-side corner, a forward on the weak-side half-wall, and both defencemen at the points — all five of them outside the shaded region. Only the carrier behind the net is near anybody, about fourteen feet from our low defenceman; the other four have nobody within twenty feet. No routes are drawn.",
     "title": "The collapsing box",
     "half": true,
@@ -650,7 +650,7 @@
   "faceoff-ozone-d-one-timer": {
     "id": "faceoff-ozone-d-one-timer",
     "owner": "content/systems/faceoffs.md",
-    "caption": "The D one-timer, a beat after the drop. The shot’s line to the net runs straight through the inner hash marks, where the inside winger stands for the draw, so on the drop they step out of it, and they are drawn here already out of it. Where they go next is not drawn. All of it is a coaching choice and not a rule of hockey — find out what your team runs, and what the call is, before your first shift.",
+    "caption": "The D one-timer, a beat after the drop, with the inside winger drawn already stepped out of the shot’s line. Where they go next is not drawn. All of it is a coaching choice and not a rule of hockey — find out what your team runs, and what the call is, before your first shift.",
     "describe": "The attacking half of the rink, the opposition net and goalie at the right, the draw at the upper end-zone circle, on your left as you attack. Five own players: the centre in the dot on the blue-line side; the boards-side winger at the outer hash marks; the inside winger below the dot line and off to one side of the middle, clear of the shooting lane; and both defencemen at the points just inside the blue line. The opposing centre is on the far side of the dot, and their goalie is in the crease. Two routes. A dashed line runs from the centre in the dot back up the ice to the strong-side defenceman at the near point, stopping short of them. A double line — a shot — runs from that defenceman down to the front of the net, passing about eleven feet clear of the inside winger. No route is drawn for any other player.",
     "title": "Offensive-zone draw back to the point",
     "half": true,
@@ -842,7 +842,7 @@
   "goalie-playing-the-angle": {
     "id": "goalie-playing-the-angle",
     "owner": "content/positions/goaltender.md",
-    "caption": "An opposition shooter at the top of the faceoff circle on the goalie’s right, with no pass available. The shaded wedge is every straight path from that puck into the net. The goalie is standing on the line from the puck to the exact centre of the goal line, at a depth every goalie coach will adjust — so read it as an example of the read rather than a measured instruction.",
+    "caption": "An opposition shooter at the top of the faceoff circle on the goalie’s right, with no pass available. The shaded wedge is every straight path from that puck into the net. The goalie is on the puck-to-centre line, at a depth every goalie coach will adjust — so read it as an example of the read rather than a measured instruction.",
     "describe": "The defending half of the rink, the defended net at the right. One opposition forward stands at the top of the faceoff circle on the goalie’s right (the top of the picture), with the puck just off the blade toward the net. A shaded triangle runs from the puck to the two goalposts, narrowing from the width of the net at the goal line to a point at the puck. The goalie stands inside that triangle on its centre line, six feet out from the middle of the goal line, so slightly to the shooter’s side of the middle of the net rather than square in the goalmouth. No other players are drawn: the read this illustrates is the one with no pass available, and drawing a second attacker would change it into a different read.",
     "title": "Goalie playing the angle",
     "half": true,
@@ -854,7 +854,7 @@
   "goalie-front-door-back-door": {
     "id": "goalie-front-door-back-door",
     "owner": "content/positions/goaltender.md",
-    "caption": "A strong-side shooter, and a second attacker unmarked on the far side of the net — the back door. With a pass available across the slot the read is to back off rather than challenge, and the goalie has. How far is a judgement made situation by situation: the trade is the front door against the back door, and there is no universally correct answer.",
+    "caption": "A strong-side shooter, and a second attacker unmarked on the far side of the net — the back door — so the goalie has backed off. How far is a judgement made situation by situation: the trade is the front door against the back door, and there is no universally correct answer.",
     "describe": "The defending half of the rink, the defended net at the right. An opposition forward has the puck just inside the faceoff dot on the goalie’s right (the top of the picture). A second opposition forward stands unmarked on the far side of the net, five feet out from the goal line and clear of the crease. A dashed line — the notation for a pass — shows the pass available across the slot, running from the puck toward that attacker and stopping well short of them. The goalie stands on the line from the puck to the centre of the goal line, four feet out, nearer the goal line than the top of the crease. No defenders are drawn; the point of the picture is the goalie’s depth decision and the space behind them.",
     "title": "Front door and back door",
     "half": true,
@@ -866,7 +866,7 @@
   "goalie-angle-closes-wide": {
     "id": "goalie-angle-closes-wide",
     "owner": "content/positions/goaltender.md",
-    "caption": "The puck has gone wide and low, level with the goal line, and the goalie has come back to the near post. Out there the angle closes on its own, so depth buys nothing and only leaves you unable to get back. End the lateral movement at the post rather than a foot short of it — and note that closing the low short side leaves the space over your shoulder still open.",
+    "caption": "The puck has gone wide and low, level with the goal line, and the goalie has come back to the near post, ending at it rather than a foot short of it.",
     "describe": "The defending half of the rink, the defended net at the right. An opposition forward has the puck level with the goal line, about fourteen feet from the net toward the top of the picture, which is the goalie’s right, between the net and the boards. The goalie is at the near post, on the goal line rather than out at the top of the crease, and tight against the post rather than standing a foot off it. No other players are drawn, and no movement is drawn: the picture is one position on the goalie’s arc, not the journey to it.",
     "title": "Goalie on a wide, low puck",
     "half": true,
@@ -914,7 +914,7 @@
   "goalie-breakaway-retreat": {
     "id": "goalie-breakaway-retreat",
     "owner": "content/positions/goaltender.md",
-    "caption": "A breakaway: the goalie meets the shooter well out and backs in on C-cuts at their speed, keeping the angle closed and staying on their feet. \"Well out\" is a read rather than a distance. No figure is given for it, so the position drawn is an example.",
+    "caption": "A breakaway: the goalie meets the shooter well out and retreats in front of them on C-cuts. \"Well out\" is a read rather than a distance. No figure is given for it, so the position drawn is an example.",
     "describe": "The defending half of the rink, the defended net at the right. One opposition forward carries the puck out of the neutral zone toward the net, drawn as a long smooth wave — the notation for skating with the puck — ending well short of the goalie. The goalie is drawn out in front of their net, about eleven feet from the centre of the goal line and on the line from the puck to that centre. A run of flattened arches — the notation for backward skating, the goalie’s C-cuts — leads from them back along that same line to a point three feet out, inside the crease. No other players are drawn: a breakaway is one attacker and you.",
     "title": "Goalie facing a breakaway",
     "half": true,
@@ -950,7 +950,7 @@
   "goalie-fifty-fifty-puck": {
     "id": "goalie-fifty-fifty-puck",
     "owner": "content/positions/goaltender.md",
-    "caption": "A loose puck in the corner, you out of your net for it, and the forechecker closer to it than you are — so look at where your net is. That empty net is what losing a fifty-fifty race costs. The puck is in front of the goal line, so the trapezoid is not in play; this picture is only about the race.",
+    "caption": "A loose puck in the corner, you out of your net for it, and the forechecker closer to it than you are — so look at where your net is. The puck is in front of the goal line, so the trapezoid is not in play; this picture is only about the race.",
     "describe": "The defending half of the rink, the defended net at the right, and the net has nobody in it. A loose puck sits in the corner at the top of the picture, in front of the goal line. The goalie is drawn out of their crease and part of the way to it, about six feet away. An opposition forward is arriving at the same puck from the other side and is slightly closer to it than the goalie is. No routes are drawn, and nothing marks who wins the race: the point of the picture is the distance between the goalie and their own empty net.",
     "title": "The fifty-fifty puck",
     "half": true,
@@ -974,7 +974,7 @@
   "nz-1-2-2-trap": {
     "id": "nz-1-2-2-trap",
     "owner": "content/systems/neutral_zone_systems.md",
-    "caption": "The 1-2-2 trap, layers dropped back: F1 just inside their blue line still splits the ice, F2 and F3 sit at the red line on the walls, and the defence holds your own blue line. The carrier is steered to a wall, into F2 stepping up with the strong-side defenceman behind and no lane through the middle. Depth is the tell a still frame can show; whether F1 is closing or gliding is not.",
+    "caption": "The 1-2-2 trap, layers dropped back: F1 just inside their blue line still splits the ice, F2 and F3 sit at the red line on the walls, and the defence holds your own blue line. Depth is the tell a still frame can show; whether F1 is closing or gliding is not.",
     "describe": "The full sheet, our net at the left and the opponents’ at the right, with the opponents attacking right to left. One opposition defenceman carries the puck out of their zone; both goalies are shown. Our five: F1 alone just inside the opponents’ blue line in the middle of the ice; F2 and F3 level with each other at the centre red line, one on each wall; both defencemen on our own blue line, the strong-side one behind F2. Two routes: the carrier’s way out, curving toward the wall they are being steered to, and F2 stepping up as the carrier reaches the red line, finishing on the carrier’s inside rather than at them. F1 is drawn with no route at all, because in a trap F1 is not closing. Only the carrier is drawn of the opposition’s five skaters; this is not a five-on-one.",
     "title": "1-2-2 neutral zone trap",
     "half": false,
@@ -1034,7 +1034,7 @@
   "nz-regroup-d-to-d": {
     "id": "nz-regroup-d-to-d",
     "owner": "content/systems/neutral_zone_systems.md",
-    "caption": "A D-to-D regroup, drawn at the instant the pass across is made, our team attacking left to right. The pass across makes the opposing structure slide. The three forwards sit at three different depths rather than all curling to the same place: short outlet, outside lane, stretch. You are declining a bad entry to buy a better one, not retreating.",
+    "caption": "A D-to-D regroup, drawn at the instant the pass across is made, our team attacking left to right. The three forwards sit at three different depths rather than all curling to the same place: short outlet, outside lane, stretch. You are declining a bad entry to buy a better one, not retreating.",
     "describe": "The full sheet, with our own net at the left and our team attacking to the right. Two of our defencemen are just inside our own blue line, one on each side of the ice, with a clean lane between them. Our three forwards are at three clearly different depths in the neutral zone: one high on the puck’s wall (the top of the picture) who has just turned the puck back, one swinging wide and low on the far wall, and one high in the middle near the opponents’ blue line as the stretch option. Two opposition players hold the middle third, one of them pressuring the forward who turned the puck back; neither is in the lane between our defencemen. Two numbered routes, both passes: one, the forward’s pass back; two, the flat D-to-D across. Both goalies are shown; the opponents’ end is otherwise empty because the play has not gone there, and their other three skaters are not drawn.",
     "title": "D-to-D neutral zone regroup",
     "half": false,
@@ -1262,7 +1262,7 @@
   "bank-pass-angle": {
     "id": "bank-pass-angle",
     "owner": "content/technique/passing_and_receiving.md",
-    "caption": "A bank pass off the boards, drawn in your own end: your own net is at the right of this picture and up-ice is to the left. A forechecker sits in the direct lane, so the puck is sent at a spot on the wall instead, chosen so it comes off at roughly the mirror of the angle it went in at. The bounce is not fully predictable, which is why you call it.",
+    "caption": "A bank pass off the boards, drawn in your own end: your own net is at the right of this picture and up-ice is to the left. A forechecker sits in the direct lane, so the puck is sent off the wall instead — and you call it.",
     "describe": "One end zone, drawn with your own net at the right of the picture and up-ice to the left, so the play runs from right to left. Your goalie is in the crease. You stand along the right-hand boards, out towards the corner and about nine feet off the wall, with the puck between you and the boards. An opposition forward, drawn as a solid circle, stands about thirteen feet up-ice of you and towards the middle, exactly on the straight line between you and your teammate; the forward’s stick is not drawn. Your teammate stands further up-ice again, roughly level with the top of the faceoff circle and about twenty-two feet off the boards, thirty-eight feet from you. The puck’s route is two straight dashed legs meeting at a point on the boards up-ice of you: the first runs from you out into the wall and its arrowhead points at the wall itself, and the second leaves that point at the mirror of the same angle, passes about ten feet outside the forechecker, and finishes four and a half feet short of your teammate. The straight line from you to your teammate, the one the forechecker is standing in, is not drawn.",
     "title": "Bank pass around a forechecker",
     "half": true,
@@ -1466,7 +1466,7 @@
   "defender-two-on-one": {
     "id": "defender-two-on-one",
     "owner": "content/positions/defender.md",
-    "caption": "A two-on-one: the defenceman sits in the passing lane between the attackers, stick flat on the passing side, backing up under control — taking the pass away and leaving the shot to the goalie. One of two systems; the other is a timed slide. No backchecker is drawn, because one would make this a different situation.",
+    "caption": "A two-on-one, the defenceman backing up under control in the passing lane between the attackers. One of two systems; the other is a timed slide. No backchecker is drawn, because one would make this a different situation.",
     "describe": "The defending half of the rink, your own net at the right. Two opposition forwards attack from the left, one wide on each side of the ice, with the puck on the one drawn nearer the top of the picture; a route shows that forward carrying toward the top of the faceoff circle on that side. Between and ahead of them is a single defenceman, sitting in the passing lane that joins the two attackers, with a backward skating route showing the defenceman retreating under control rather than stepping up. The goalie is in the crease. Nobody is backchecking.",
     "title": "Defending a 2-on-1",
     "half": true,
@@ -1538,7 +1538,7 @@
   "drill-execution-no-opponent": {
     "id": "drill-execution-no-opponent",
     "owner": "content/off-the-ice/practice_and_development.md",
-    "caption": "The first of two frames: nobody defending. The dashed pass was the answer before the rep started, because no opposing skater in the picture could take it away. This is not a bad drill; what it cannot train is the choice. Which drills your team runs is your coach’s decision rather than a rule of hockey — so if a drill’s purpose is not obvious, ask.",
+    "caption": "The first of two frames: nobody defending. The dashed pass was the answer before the rep started, because no opposing skater in the picture could take it away. Which drills your team runs is your coach’s decision rather than a rule of hockey — so if a drill’s purpose is not obvious, ask.",
     "describe": "The attacking half of the rink, the net at the right with the opposing goalie in the crease. Two own players and no opposition skaters. One stands inside the faceoff circle at the top of the picture, above the dot with the puck drawn beside them, and a dashed passing route runs from them across the ice and down to the second, who stands in front of the net a little to the far side and about six feet clear of the crease. Nothing else is drawn: no defender, no other route, and no cone.",
     "title": "Drill rep with no defender",
     "half": true,
@@ -2066,7 +2066,7 @@
   "pp-backdoor": {
     "id": "pp-backdoor",
     "owner": "content/systems/special_teams.md",
-    "caption": "The weak-side post, away from the puck. When the kill's low defender commits to the strong side or to the net-front player, drawn here occupying that defender, nobody is covering it. Arrive late: a player camped at the back post is marked, one arriving as the pass is released is not. A read off any formation, not a shape of its own.",
+    "caption": "The backdoor: the kill's low defender is drawn occupied by the net-front player, so nobody is covering the weak-side post, away from the puck. A read off any formation, not a shape of its own.",
     "describe": "Attacking half of the rink, the opposition net at the right, the opposition goalie in the crease. Three own players: one up top near the point on the top side of the picture, holding the puck; one at the net front just outside the crease, on the top side; and one at the weak-side post outside the crease on the bottom side, arriving late. One opposition defenceman stands low on the top side, close to the net-front attacker rather than the one on the bottom side. A dashed pass runs from the point across the middle of the ice, stopping just short of the weak-side attacker. The other two power-play attackers and the other three penalty killers are not drawn.",
     "title": "The back door on a power play",
     "half": true,
@@ -2078,7 +2078,7 @@
   "pp-walk-down": {
     "id": "pp-walk-down",
     "owner": "content/systems/special_teams.md",
-    "caption": "The half-wall player skates the puck down toward the goal line and inside rather than passing, forcing a decision: if the low defender steps out, the net front is open; if they hold, the shot comes from the top of the circle with a moving goalie. Neither is drawn. Walk toward the dot, not the corner.",
+    "caption": "The walk-down: the half-wall player carries the puck down toward the goal line and inside, forcing a decision on the kill’s low defender. Neither answer is drawn.",
     "describe": "Attacking half of the rink, the opposition net at the right, the opposition goalie in the crease. One own player carries the puck from the top half-wall, drawn with the long smooth wave that means skate and stickhandle, angling down and in toward the goal line and stopping short of the slot. One own player stands at the net front just outside the crease. One opposition defenceman guards low on the same side, between the carrier's route and the net-front attacker. The pass that opens to the net front if the defenceman steps out to challenge is not drawn. The other three power-play attackers and the other three penalty killers are not drawn.",
     "title": "Half-wall walk-down on a power play",
     "half": true,
@@ -2174,7 +2174,7 @@
   "attack-the-seam": {
     "id": "attack-the-seam",
     "owner": "content/hockey-iq/time_and_space.md",
-    "caption": "The seam is the gap two defenders have both left unclaimed — space by ambiguity rather than by distance, and it moves as they move. They are drawn staggered because two defencemen retreating level seal the middle and leave nothing to attack. Where a defence chooses to meet a rush is a coaching choice and not a law, so read this as one arrangement, and the shaded band as one instant rather than a marking. No contact is drawn.",
+    "caption": "The seam — space by ambiguity rather than by distance — moves as the two defenders move. They are drawn staggered because two defencemen retreating level seal the middle and leave nothing to attack. Where a defence chooses to meet a rush is a coaching choice and not a law, so read this as one arrangement, and the shaded band as one instant rather than a marking. No contact is drawn.",
     "describe": "The attacking half of the rink, the opposition net at the right, the attack moving left to right. Two opposition defencemen are drawn as solid triangles near their own blue line, staggered rather than level: one is stepped up to the line on the upper side of the ice, the other is about ten feet deeper into the zone on the lower side. A shaded band, labelled \"the seam\", runs from the gap between the two of them toward the net, ending level with the tops of the faceoff circles. Three own players are drawn as open circles: the puck carrier coming up the middle from near centre ice, with the puck on their stick and a skate-and-stickhandle route that ends inside the mouth of the shaded band, and two teammates wide on either side, a little ahead of the carrier, with no routes drawn. The opposition goalie is in the crease.",
     "title": "Attacking the seam",
     "half": true,
@@ -2306,7 +2306,7 @@
   "dump-soft-area": {
     "id": "dump-soft-area",
     "owner": "content/systems/zone_entries.md",
-    "caption": "Placed, not fired, so it stops in the corner — which is why the chaser is drawn already most of the way there. A soft dump is only worth it if your chaser wins the race.",
+    "caption": "A soft area dump: placed, not fired, so it stops in the corner — which is why the chaser is drawn already most of the way there.",
     "describe": "The attacking half of the rink, opposition net at the right. An own forward with the puck is just outside the blue line on the bottom side of the ice. A dashed route places the puck into the bottom corner. A second own forward, already well inside the zone along the bottom wall, skates toward that corner and their route stops short of the puck and up-wall of it. An opposition defenceman is turning back from in front of their own net toward the same corner, their route also stopping short. The goalie is in the crease. The two arriving routes finish apart from one another and neither finishes behind the other player.",
     "title": "The soft area dump",
     "half": true,
@@ -2318,7 +2318,7 @@
   "dump-chip-past": {
     "id": "dump-chip-past",
     "owner": "content/systems/zone_entries.md",
-    "caption": "The defenceman is stepping up to meet you at or before the line with space behind them on the wall, so the puck is lifted past them down the wall while you go around the other side to collect it yourself. A possession play rather than a surrender.",
+    "caption": "The defenceman is stepping up to meet you at or before the line with space behind them on the wall, so the puck is lifted past them down the wall while you go around the other side to collect it yourself.",
     "describe": "The attacking half of the rink, opposition net at the right. An own forward with the puck comes up the wing lane along the top wall toward the blue line. An opposition defenceman is standing on the line in front of the carrier. Route one is the carrier changing their line, swinging inside the defenceman and back out to the wall behind them. Route two is the puck, chipped past the defenceman on the boards side and landing on the wall inside the zone, where the carrier is heading. The two routes separate before the defenceman and rejoin behind the defenceman. The defenceman is drawn with no route of their own, because every route from them finishes pointing at the carrier, and an arrow that reads as a collision is not drawn here. The opposition goalie is in the crease.",
     "title": "The chip past a defenceman",
     "half": true,
@@ -2402,7 +2402,7 @@
   "entry-drop-pass": {
     "id": "entry-drop-pass",
     "owner": "content/systems/zone_entries.md",
-    "caption": "The carrier has already left the puck rolling short of the line and drives on alone as a decoy; the trailer arrives with speed the defence has not matched. The drop is to a space, not to a stick — dropped blind it leaves a stationary puck facing your own net.",
+    "caption": "The carrier has already left the puck rolling short of the line and drives on alone as a decoy; the trailer arrives with speed the defence has not matched. A drop made blind leaves a stationary puck facing your own net.",
     "describe": "The attacking half of the rink, opposition net at the right. A puck sits alone in the neutral zone, short of the blue line. An own forward who has just released it is already past it, angling on toward the blue line and into the zone as though they still carry it. A second own forward is well back and to the far side, with a long route arriving from behind toward the loose puck, stopping just short of it. Two opposition defencemen are positioned toward the side the first forward is driving into, and the goalie is in the crease.",
     "title": "The drop pass",
     "half": true,
@@ -2414,7 +2414,7 @@
   "entry-high-triangle": {
     "id": "entry-high-triangle",
     "owner": "content/systems/zone_entries.md",
-    "caption": "The carrier driving wide, a second attacker driving wide on the far side with no puck, and the third trailing into the high slot. The read is which wide driver a defenceman takes — here the near one slides to the puck carrier, which leaves the far one responsible for two of you. Which named pattern your team runs is a coaching choice.",
+    "caption": "The high triangle: the carrier and a second attacker drive wide, the third trails into the high slot, and the near defenceman is drawn sliding to the puck carrier. Which named pattern your team runs is a coaching choice.",
     "describe": "The attacking half of the rink, opposition net at the right. Three own forwards approach the blue line: the puck carrier drives wide at the top of the picture (your left as you attack), a second forward without the puck drives wide at the bottom, and a third trails through the middle toward the high slot. Two opposition defencemen are inside the zone; the one nearer the puck carrier, toward the top, has a short route sliding toward the side the puck carrier is driving into, and the farther one holds a central position. The goalie is in the crease.",
     "title": "The high triangle",
     "half": true,
@@ -2426,7 +2426,7 @@
   "entry-vs-standing-up": {
     "id": "entry-vs-standing-up",
     "owner": "content/systems/zone_entries.md",
-    "caption": "A defence holding the line level rather than backing in, taking away the middle — one structure among several. Two answers at once: the wide attacker chips past a stationary defenceman with no backward momentum to recover, while a fourth attacker arrives late and unmarked behind the play.",
+    "caption": "A defence standing up at the line — one structure among several — answered two ways at once: the chip past on the wing, and a late fourth attacker.",
     "describe": "The attacking half of the rink, opposition net at the right. Two opposition defencemen stand at the blue line without backing in: the one toward the top of the picture (your left as you attack) is positioned in the wide attacker's own lane, out toward the boards, and their partner holds centrally, denying the middle. An own forward with the puck is near the blue line on that same side, the top; a dashed route chips the puck past that defenceman, staying wide toward the boards, and the forward's own route curls in front of the defenceman and back out to the boards to collect it. A fourth own forward, well back in the neutral zone toward the bottom of the picture, has a long route arriving unmarked at the blue-line edge of the faceoff circle at the bottom of the picture. The goalie is in the crease.",
     "title": "Against a standing-up defence",
     "half": true,
@@ -2438,7 +2438,7 @@
   "defend-squash-and-slide": {
     "id": "defend-squash-and-slide",
     "owner": "content/systems/zone_entries.md",
-    "caption": "You are defending: squash-and-slide. The puck is wide, so the puck-side defenceman forces the carrier outside and their partner slides across at the same depth; the first forward back holds the slot. One team's system, not a universal one.",
+    "caption": "You are defending: squash-and-slide with the puck wide, the puck-side defenceman forcing the carrier outside while their partner slides across at the same depth. One team's system, not a universal one.",
     "describe": "The attacking half of the rink from the defending team’s point of view, their own net and goalie at the right. An opposition forward carries the puck in on one side, the top of the picture, with a route continuing into the zone along that side. Two own defencemen, level with each other well inside their own blue line, each have a short route sliding sideways toward the puck side, the same distance and the same direction, so the pair moves as one unit. An own forward arrives from behind into the high slot in front of their own net, rather than joining the pressure on the puck carrier.",
     "title": "Squash-and-slide",
     "half": true,

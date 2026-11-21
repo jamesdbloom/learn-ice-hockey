@@ -103,8 +103,10 @@ const attackTheSeam = {
   width: 900,
 
   caption:
-    'The seam is the gap two defenders have both left unclaimed — space by ambiguity rather ' +
-    'than by distance, and it moves as they move. They are drawn staggered because two ' +
+    // W604 (21 Nov 2026), short-caption echo: the seam's definition ("the gap two defenders have both left unclaimed")
+    // CUT -- the bold paragraph directly above the marker and its facts Action: line both give it.
+    'The seam — space by ambiguity rather than by distance — moves as the two defenders move. ' +
+    'They are drawn staggered because two ' +
     'defencemen retreating level seal the middle and leave nothing to attack. Where a ' +
     'defence chooses to meet a rush is a coaching choice and not a law, so read this as one ' +
     'arrangement, and the shaded band as one instant rather than a marking. No contact is ' +

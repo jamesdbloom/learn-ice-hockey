@@ -567,8 +567,10 @@ const softAreaDump = {
   width: 900,
 
   caption:
-    'Placed, not fired, so it stops in the corner — which is why the chaser is drawn already ' +
-    'most of the way there. A soft dump is only worth it if your chaser wins the race.',
+    // W604 (21 Nov 2026), short-caption echo: "only worth it if your chaser wins the race" CUT -- both
+    // hosts carry it (zone_entries.md's "Why:" bullet and facts Never:; winger.md's soft-dump bullet).
+    'A soft area dump: placed, not fired, so it stops in the corner — which is why the chaser is ' +
+    'drawn already most of the way there.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -628,7 +630,9 @@ const chipPast = {
   caption:
     'The defenceman is stepping up to meet you at or before the line with space behind them on the wall, ' +
     'so the puck is lifted past them down the wall while you go around the other side to ' +
-    'collect it yourself. A possession play rather than a surrender.',
+    // W604 (21 Nov 2026), short-caption echo: "A possession play rather than a surrender." CUT -- both hosts
+    // say it (zone_entries.md's bold paragraph above the marker and facts Key:; winger.md's chip bullet).
+    'collect it yourself.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. An own forward with the puck ' +
@@ -1359,8 +1363,10 @@ const dropPass = {
 
   caption:
     'The carrier has already left the puck rolling short of the line and drives on alone as a ' +
-    'decoy; the trailer arrives with speed the defence has not matched. The drop is to a ' +
-    'space, not to a stick — dropped blind it leaves a stationary puck facing your own net.',
+    // W604 (21 Nov 2026), short-caption echo: "The drop is to a space, not to a stick" CUT -- the facts
+    // Technique: line above the marker and item 1 of the list below say it. Blind-drop risk kept.
+    'decoy; the trailer arrives with speed the defence has not matched. A drop made blind leaves a ' +
+    'stationary puck facing your own net.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. A puck sits alone in the ' +
@@ -1430,9 +1436,10 @@ const highTriangle = {
   width: 900,
 
   caption:
-    'The carrier driving wide, a second attacker driving wide on the far side with no puck, ' +
-    'and the third trailing into the high slot. The read is which wide driver a defenceman takes — ' +
-    'here the near one slides to the puck carrier, which leaves the far one responsible for two of you. ' +
+    // W604 (21 Nov 2026), short-caption echo: the read and its consequence CUT -- the High triangle bullet
+    // directly above the marker says both near verbatim. Coaching-choice hedge kept.
+    'The high triangle: the carrier and a second attacker drive wide, the third trails into the ' +
+    'high slot, and the near defenceman is drawn sliding to the puck carrier. ' +
     'Which named pattern your team runs is a coaching choice.',
 
   describe:
@@ -1531,10 +1538,10 @@ const vsStandingUp = {
   width: 900,
 
   caption:
-    'A defence holding the line level rather than backing in, taking away the middle — one ' +
-    'structure among several. Two answers at once: the wide attacker chips past a stationary ' +
-    'defenceman with no backward momentum to recover, while a fourth attacker arrives late ' +
-    'and unmarked behind the play.',
+    // W604 (21 Nov 2026), short-caption echo: the why of each answer CUT -- the facts Action: lines above the
+    // marker and the bullets directly below give both. "One structure among several" kept.
+    'A defence standing up at the line — one structure among several — answered two ways at ' +
+    'once: the chip past on the wing, and a late fourth attacker.',
 
   describe:
     'The attacking half of the rink, opposition net at the right. Two opposition defencemen ' +
@@ -1623,9 +1630,10 @@ const squashAndSlide = {
     // W595 (21 Nov 2026), caption-echo census: the sole host's bullet directly above the marker tells the foosball-bar
     // story and carries the Cassidy / Bruins 2018-19 attribution, and the paragraph after it says "These
     // are systems, not laws ... Ask". Kept: the system's name, the picture, and the not-universal hedge.
-    'You are defending: squash-and-slide. The puck is wide, so the puck-side defenceman forces the ' +
-    'carrier outside and their partner slides across at the same depth; the first forward back holds ' +
-    'the slot. One team\'s system, not a universal one.',
+    // W604 (21 Nov 2026), short-caption echo: the first forward back's job CUT and the rest compressed --
+    // the Squash-and-slide bullet directly above the marker says all of it. Not-universal hedge kept.
+    'You are defending: squash-and-slide with the puck wide, the puck-side defenceman forcing the ' +
+    'carrier outside while their partner slides across at the same depth. One team\'s system, not a universal one.',
 
   describe:
     'The attacking half of the rink from the defending team’s point of view, their own net ' +
