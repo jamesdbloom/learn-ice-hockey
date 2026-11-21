@@ -145,6 +145,13 @@ CARRIES: dict[str, tuple[str, ...]] = {
     "nz-stand-up-at-the-line": ("coaching choice, so find out which your team wants",),
     # W541: rush-3-on-2-alternative dropped its orientation clause.
     "rush-3-on-2-default": ("right to left toward the defended net at the left",),
+    # W605: defender.md :268 and goaltender.md :1396 dropped their prose
+    # goal-frame clause on a safety ruling, because this caption is voiced
+    # straight after them. A caption trim must not take it out.
+    "net-front-walk-out-direction": (
+        "move nobody into or across the shaded goal frame and goalie",
+        "never walk a screener out",
+    ),
 }
 
 DIAGRAMS_JSON = REPO / "site" / "src" / "data" / "diagrams.json"
