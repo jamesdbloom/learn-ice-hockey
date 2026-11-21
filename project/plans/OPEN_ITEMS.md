@@ -13,16 +13,17 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- W613 shipped with record `w613_long_facts_tightened_and_ozp_686_2026-11-21.md`. Still open from the W612 census (table `../reviews/w612_long_facts_rows_2026-11-21.tsv`):
-  - 9 class-B splits in ozp;
-  - the IHUK DOPS line, word-identical in 8 documents;
-  - hit-from-behind tariffs stated four times in ozp;
-  - long facts lines in goaltender (141 over 40 words) and forechecking (55), not reviewed;
-- None. W614 and W615 shipped with record `w615_command_shaped_lines_and_free_faceoff_attempt_2026-11-21.md`.
+- None. W616 and W617 shipped with record `w617_goaltender_forechecking_facts_lines_2026-11-21.md`.
+  W614 and W615 shipped as 71b2d69e, with record `w615_command_shaped_lines_and_free_faceoff_attempt_2026-11-21.md`.
 
   W613 shipped as c0cfc9c1. W611 shipped as b9d2c7d7. W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
+- **From W612 (21 Nov; A rows and :686 closed in W613):** Table: `../reviews/w612_long_facts_rows_2026-11-21.tsv`.
+  - **(1)** 9 class-B splits in ozp.
+  - **(2)** The IHUK DOPS facts line is word-identical in 8 documents (ozp :973, goaltender :1380, risk_management :854, playing_without_the_puck :830, defender :293, center :896, winger :902, game_management :178). Change all or none.
+  - **(3)** Hit-from-behind tariffs are stated four times in ozp (:831/:832, :971, :1194–:1196).
+  - [(4) closed in W616/W617: the A rows, pointers, buried instructions and forechecking :838 were applied. The B splits are listed in `../reviews/w616_long_facts_rows_2026-11-21.tsv` (goaltender 11, forechecking 5).] Also seen: the net-front-job Convention appears three times in goaltender, Casebook 607 Sit. 5 twice, and forechecking's turned-back tariff and 604(b) prompt three times each. A USA Hockey Disabled Hockey facemask-stoppage clause is not checked against the corpus.
 - **From W599 (21 Nov):**
   - [(1) closed in W600: switching_positions :301 and dtr :544/:555 now carry the 49(a) limit.]
   - **(2) Not settled:** whether Hockey Canada 8.3 in practice reaches a defender who simply stands still. "Hold only ice you already have" is conservative craft.

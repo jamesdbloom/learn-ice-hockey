@@ -317,7 +317,7 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 ```facts
 Position: In a 2-1-2, two forwards deep, one forward high at roughly the top of the circles, both defencemen at the offensive blue line
 Convention: F1 goes hard at the puck carrier, angling them to one side — usually towards the boards, but ask, because F2 reads off it
-Rule: F1 goes hard, never into a turned back: a hit from behind ends your game under the NHL, PWHL and CARHA, and under the IIHF and Hockey Canada off the head; on the head, plan on it; USA Hockey: at least a minor and a misconduct, ejecting if forceful at the boards, head first or reckless (608)
+Rule: F1 goes hard, never into a turned back: a hit from behind ends your game under the NHL, PWHL and CARHA, and under the IIHF and Hockey Canada except on a head hit — plan on it even then; USA Hockey: at least a minor and a misconduct, ejecting if forceful at the boards, head first or reckless (608)
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Rule: Find out whether you may body check in this game — it can change per fixture, not just per division: USA Hockey 604(b) bars it whenever a checking team plays a non-checking one. Where it is barred, F1's pressure is feet and stick
 Convention: F2 attacks the first passing option, not the puck — with the stick and the lane, because hitting a winger who has no puck yet is a penalty in every book here
@@ -562,7 +562,7 @@ Position: At or just inside the offensive blue line, feet moving, on your toes
 Never: Stand still — stationary, you can neither reach a rim coming around nor retreat
 Technique: Small forward-and-back adjustments keep you able to do both
 Rule: You are offside only once both skates have completely crossed the blue line before the puck completely crosses it (NHL Rule 83) — one skate on or behind keeps you onside
-Rule: A skate raised over the neutral zone is still onside under NHL, IIHF and PWHL rules; USA Hockey 630(a) and Hockey Canada 6.11 require skate contact, so there it is offside — and CARHA settles it neither way, so keep the blade down
+Rule: Keep the blade down at the blue line — a skate raised over the neutral zone is onside under NHL, IIHF and PWHL rules, but USA Hockey 630(a) and Hockey Canada 6.11 require skate contact, so there it is offside, and CARHA settles it neither way
 ```
 
 Standing still is the mistake. If you are stationary when a rim comes around, you cannot get to it, and you cannot retreat either. Small forward-and-back adjustments keep you able to do both.
@@ -576,7 +576,7 @@ Note the offside rule while you are up there: **both of your skates must complet
 ```facts
 Read: Pinch when you can arrive on contact — "if you can't arrive on contact, don't go" — so you can play the puck: seal with position and pin the puck, not the player, where contact is allowed at all
 Rule: Body position is granted; a hold and a skate are not — USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor, and a skate used to "push off" an opponent is 627(a), a major plus a game misconduct
-Rule: Body position is granted subject to three provisos — the NHL's wording here, the IIHF's the same but for its pronouns: it holds only "provided his stick is not utilized… his free hand is not used and he does not take advantage of his body position to deliver an otherwise illegal check"
+Rule: Body position is granted only on three provisos (NHL 56.1, quoted; IIHF 56.1 the same but for pronouns): "provided his stick is not utilized… his free hand is not used and he does not take advantage of his body position to deliver an otherwise illegal check"
 Read: On a pure race for a loose puck or a dying rim with nobody to seal, you need to arrive clearly first, not "probably"
 Read: Pinch when the puck is on the wall and slowing down, not zipping past you
 Read: Pinch only when someone is in position to cover the point you are vacating — by default F3, high and ready to rotate back
@@ -698,7 +698,7 @@ Key: You chose when the puck went in and you know where it is going — you get 
 Action: Leave before the puck does — F1 should be accelerating as the dump is released, not after it
 Targets: Aim the dump at a person, not a zone. Put it where their defenceman must retrieve it facing their own end boards
 Never: Finish into the back of a player facing the wall. Take the puck, take the ice, or angle them off it instead; the onus is on you as the arriving player
-Rule: Never hit a turned back: it ends your game under the NHL, PWHL and CARHA, and under the IIHF and Hockey Canada off the head; on the head, plan on it. USA Hockey: at least a minor and a misconduct (608(a)), ejecting if forceful at the boards, head first or reckless (608(b); Casebook 608 Sit. 1)
+Rule: Never hit a turned back: it ends your game under the NHL, PWHL and CARHA, and under the IIHF and Hockey Canada except on a head hit — plan on it even then. USA Hockey: at least a minor and a misconduct (608(a)), ejecting if forceful at the boards, head first or reckless (608(b); Casebook 608 Sit. 1)
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 Convention: F1 takes the retrieval and F2 commits early to the passing lane rather than following F1 into the corner
 Options: Five kinds of dump — hard rim, soft area dump, chip past a defenceman stepping up, cross-corner, and flip over a trap; the forecheck timing differs for each, so agree it in advance
@@ -747,7 +747,7 @@ Options: Swing with speed — go in and skate with the players swinging deep, so
 Options: Quick flush — strike before they are organised, F1 forcing the carrier out one side and F2 arriving to double it
 Read: A team that has just stopped behind its own net has not yet settled who is swinging where — that hesitation is what the flush aims at
 Risk: Swinging with them concedes the long pass — the stretch forward is your defencemen's the whole way — and flushing commits two forecheckers before the puck is contested
-Never: Hit a carrier from behind; it ejects under the NHL, PWHL and CARHA, and the IIHF and Hockey Canada off the head; on the head, plan on it. Instead take the puck, take the ice or angle them off it
+Never: Hit a carrier from behind; it ejects under the NHL, PWHL and CARHA, and the IIHF and Hockey Canada except on a head hit — plan on it even then. Instead take the puck, take the ice or angle them off it
 Rule: Under USA Hockey a hit from behind on a flush is at least a minor and a misconduct (608(a)), and ejects if forceful at the boards, reckless, or head first into the boards or goal frame (608(b); Casebook 608 Sit. 1), as does careless or intentional contact with the head, face or neck (620(b))
 Rule: Before you flush, find out whether you may body check in this game — USA Hockey 604(b) bars it whenever a checking team plays a non-checking one, whatever your division; where it is barred, the flush is stick and feet
 Convention: Which of the three you run is a coaching choice that usually follows the appetite of the rest of your system, so ask rather than picking one mid-shift — nothing published counts that
@@ -798,9 +798,9 @@ Risk: Without the trapezoid a puck-handling goalie is a third defenceman to chas
 Rule: A goalie is not "fair game" outside the crease — NHL, IIHF and PWHL allow only incidental contact as they play the puck after a reasonable effort to avoid it (69.4; PWHL 71.4); USA Hockey calls deliberate contact charging and accidental contact interference (607(d) Note 1)
 Rule: Hockey Canada is stricter than the NHL, IIHF and PWHL in the force of its language, not in how far from the net it reaches — 8.5 requires an effort to avoid contact "in all circumstances", and where their 69.4 (PWHL 71.4) says a penalty "should be assessed", 8.5 says they "must be penalized"
 Rule: Never charge a goalie, in the corner or anywhere — Hockey Canada 8.5(b) makes it a mandatory major and game misconduct wherever it happens, and under the NHL, IIHF and PWHL a charge outside the crease is still charging (Rule 42); under USA Hockey, charging one is never merely two minutes (607(a))
-Rule: The referee's discretion in the charging rule is not the IIHF's whole answer — a hit landed on a goalie's back that puts them into their own net is checking from behind, where 43.2 leaves no minor to award at all and 43.1 names the goal frame itself
+Rule: Under the IIHF, the referee's discretion over charging a goalie is not the whole answer — a hit landed on a goalie's back that puts them into their own net is checking from behind, where 43.2 leaves no minor to award at all and 43.1 names the goal frame itself
 Rule: CARHA 52(b) makes charging a goalie in the crease, or any charge that injures, a mandatory major and game misconduct; 66(b) a minor or major for deliberate contact with one, in or out of the crease; either major ejects (30(a)); a hit meant to injure is a match (48(a)) (CARHA adult leagues only)
-Rule: The restricted area is IIHF Rule 27.7, not the NHL's 27.8; the In-House Rules and the EIHL Casebook leave it standing, but England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" (standing unsettled) — so in any British competition, plan for their goalie to come out
+Rule: In any British competition, plan for their goalie to come out — the restricted area is IIHF Rule 27.7, not the NHL's 27.8; the In-House Rules and the EIHL Casebook leave it standing, but England Ice Hockey's Rules & Regulations 22.3 say it is "not currently enforced" (standing unsettled)
 Key: With a trapezoid the corners are mostly yours — their defenceman fetches the puck, back turned, as you arrive; take the puck or the ice, never finish into that back, and keep off the goalie either way
 ```
 
@@ -835,7 +835,7 @@ Read: Watch the goalie's stick side — many are far better on their forehand, s
 Action: In a league with no trapezoid, carry it in, dump where the goalie must leave the net entirely, or forecheck the outlet instead of the retrieval
 Rule: No trapezoid is not no restriction — USA Hockey 614(c)(1) is a minor if their goalie falls on the puck "behind the goal line and their body is entirely outside of the goal crease", but its Casebook (Situations 8 and 11) excuses the freeze where your pressure left no chance to use the stick
 Rule: Hockey Canada 10.2 is a minor for a goalie who gathers the puck in "while outside their crease", but Interpretation 3 to Rule 10.1(a), clause ii lets them come out "to cut down the angle and catch the shot or, after stopping the shot, cover the puck"
-Risk: A cover you think was illegal is still a stoppage — skate at a goalie who has legally frozen the puck outside their crease and you arrive into the one player you may not finish a check on
+Risk: A cover you think was illegal is still a stoppage — skating at a goalie who has legally frozen the puck outside their crease takes you into the one player you may not finish a check on
 ```
 
 - **Dump into the corners, not straight behind the net.** Directly behind the net is inside the trapezoid — that is exactly where the goalie is allowed to play it and where they will be waiting. The corners are the "soft" areas, where the rule bars their goalie from *playing* the puck. ⚠️ **Playing it, not touching it** — both books write *"play the puck"*, so a puck off the glass into a retreating goalie is no penalty at all (IIHF Situation Handbook 27.9). Do not forecheck expecting a whistle for a puck that merely hits them.
@@ -977,7 +977,7 @@ Rule: Under Hockey Canada a hit from behind that reaches the head is head contac
 Rule: Arrive as though the boarding onus were absolute — NHL, IIHF and PWHL 41.1 and Hockey Canada 7.2 let the referee weigh whether the opponent made themself vulnerable or the check was unavoidable; USA Hockey 603 and CARHA 49 write no such balance
 Rule: On an obvious icing or offside the opponent need not be defenceless — NHL, IIHF and PWHL 41.1 and Hockey Canada 7.2: unnecessary contact is boarding if it puts them into the boards and should be treated as charging if not; USA Hockey penalises it on icing (624(d)) and as boarding if dangerous (603)
 Rule: Never bank on a checked player's deliberate turn — NHL and PWHL 43.1, "no penalty shall be assessed"; IIHF 43.1 waives only that call, "other penalties may still be assessed"; Hockey Canada 7.5(a) Interpretation 2 still penalises the checker; USA Hockey and CARHA, none
-Rule: Never hit a carrier's back: all but USA Hockey eject at their floor (IIHF and Hockey Canada: off the head; on it, plan on the same); USA Hockey's: a minor and misconduct, ejecting if forceful at the boards, reckless, head first into boards or net (608) or careless to head, face or neck (620(b))
+Rule: Never hit a carrier's back: all but USA Hockey eject at their floor (IIHF and Hockey Canada: except on a head hit — plan on it even then); USA Hockey: a minor and misconduct, ejecting if forceful at the boards, reckless, head first into boards or net (608) or careless to head, face or neck (620(b))
 Rule: A hit from behind meant to injure is a match in every book but the IIHF (plan on ejection there); without intent, one into the boards or net on a player who cannot protect or defend themselves is a match under Hockey Canada 7.5(c) and CARHA 53(b); USA Hockey 608(c) if reckless with excessive force
 Rule: Behind a player, play the puck — under USA Hockey a minimal pinch from behind at the boards is a minor and misconduct; a check forceful on a player along the boards, reckless or head first ejects; excessive force on a vulnerable or defenceless player, a mandatory match (Casebook 608 Sit. 1; 608(c))
 Rule: Hockey Canada excuses only accidental, marginal contact while playing the puck that endangers nobody, or a low-speed, minimal-impact pin on the boards — the pin not at U13 and below, in female hockey or any Member-approved division, where 7.3 applies (7.5(a) Interpretation 3)
