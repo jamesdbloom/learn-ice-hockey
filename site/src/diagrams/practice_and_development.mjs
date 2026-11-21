@@ -520,8 +520,12 @@ const smallAreaGame = {
   // but it is a different claim (yours to decide) from this one (age group, league, book), and
   // this is the one route in the file that arrives on a person.
   caption:
-    'The same six skaters, now three against three in one end zone: your three attack the net ' +
-    'a goalie defends. All six are in the play, none more ' +
+    // W609 (21 Nov 2026), long-caption census: opening compressed; "your three attack the net a goalie
+    // defends" and "All six are in the play" cut. Their carrier is practice_and_development.md :329,
+    // directly above the marker pair ("all six in the game at once inside one zone, with a goalie in
+    // the net they are playing on").
+    // Everything from the coaching-choice sentence on is unchanged.
+    'The same six skaters, now your three against three in one end zone, none more ' +
     'than about forty-five feet from the puck. ' +
     // ⚠️ THE ROUTE SENTENCE AND ITS SAFETY SENTENCE MOVED TO THE END AS A PAIR, AND THEY
     // HAVE TO MOVE TOGETHER. The glyph used to sit a third of the way in, so the amber band

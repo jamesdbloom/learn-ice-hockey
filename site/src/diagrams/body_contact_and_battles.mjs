@@ -1017,8 +1017,12 @@ const angleIntoTheCorner = {
     // gloves up, arms out, no head contact at all. The W511 chip/rim/reverse wording is byte-identical.
     'drawn. It arrives on an angle and finishes running along the boards: the first and best of ' +
     'three cases. ' +
-    'Better still, a chip, rim or reverse decided before you arrive moves the puck on, so you ' +
-    'are not pinned on the wall with it. ' +
+    // W609 (21 Nov 2026), long-caption census: CUT the chip/rim/reverse sentence (the W511 wording the
+    // notes above call byte-identical). Both hosts now voice it beside the marker: skating.md's
+    // "Arriving at the boards" paragraph ("a chip or rim picked before you arrive, or a reverse ... moves
+    // the puck on as you get there"), and body_contact_and_battles.md's Case 1 paragraph directly above
+    // the marker ("Even better: take the puck off the wall before you get there"). Every case limb, the
+    // provenance disclosure and the ⚠️ absolutes are untouched.
     'The second case: get your skates parallel to the wall and take it on your forearm and hip. ' +
     'The worst, for when you already face the wall, is damage limitation rather than ' +
     'a position to aim for. Turn your skates parallel first if at all ' +

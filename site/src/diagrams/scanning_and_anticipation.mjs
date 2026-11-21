@@ -181,7 +181,7 @@ const wallReception = {
   // Everything from "Looking does not protect you" to the end is UNCHANGED, word for word.
   caption:
     'One instant, everything visible before the pass: the puck is coming to you on the half-wall ' +
-    'and a forechecker is closing. No look is drawn. The notation has no head. Pressure could ' +
+    'and a forechecker is closing. No look is drawn: the notation has no head. Pressure could ' +
     'come from the middle too, so check both shoulders. The retriever could be any teammate. ' +
     // SAFETY, LAST. The owner's own override, scanning_and_anticipation.md:149 and Key Takeaway 13
     // at :583, which says in terms that it outranks every tactical point beside it. A player

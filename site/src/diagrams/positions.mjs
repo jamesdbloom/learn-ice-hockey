@@ -1235,10 +1235,16 @@ const wingerDzRim = {
   // "the wall-contact warning both captions carry"; see the W507 note above for why the limb
   // stays.)
   caption:
-    'Beating a checker who has sealed you against the boards, in your own end. Keep the puck on ' +
+    // W609 (21 Nov 2026), long-caption census: CUT "The checker is inside you, taking away the middle,
+    // so a RIM beats them because it goes where they are not." -- both hosts voice it in the chunk
+    // before the marker (winger.md "A rim beats a checker who is sealing you against the boards, because
+    // it goes past them"; passing_and_receiving.md's table "the puck goes past them"); the opening now
+    // names the play ("Rimming past a checker ..."). The wall limb, SHOULDER_TAIL and every
+    // check_caption_pairs CARRIES phrase (never turn your back / never duck / chin off your chest) are
+    // untouched.
+    'Rimming past a checker who has sealed you against the boards, in your own end. Keep the puck on ' +
     'the far side of your body from them, as drawn, and ' +
-    'keep your feet wide and low and still moving: a stationary player on the wall gets pinned. The checker is' +
-    ' inside you, taking away the middle, so a RIM beats them because it goes where they are not. ' +
+    'keep your feet wide and low and still moving: a stationary player on the wall gets pinned. ' +
     'Decide where the puck is going while you are still skating to ' +
     'it. Skates parallel to the boards, ' +
     'forearm and hip to the wall, head up and chin off your chest' + SHOULDER_TAIL +

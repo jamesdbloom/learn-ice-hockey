@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W607 shipped with record `w607_carha_53a_intentional_2026-11-21.md`. W606 shipped as 0ef3126d.
+- None. W608 and W609 shipped with record `w609_long_captions_2026-11-21.md`. W607 shipped as a40fce3e.
 
   W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
@@ -32,7 +32,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
   - **(3) The honest-attempt rung at goaltender facts :1266** (299/300, its block is at HARD_MAX) still has no 620 overlay. Its sibling :1262 carries 620(b). Left in W535.
 - **From W541 (20 Nov):**
-  - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
+  - **(1) Seven captions are still over 800 characters, on purpose** (re-confirmed in W608): faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, winger-offensive-zone-patches, forecheck-122 and the-call-and-who-can-see-it. W609 trimmed pk-wedge-plus-1, layer-not-converge, practice-small-area-in-one-zone, angle-into-the-corner and winger-dz-rim to 706–805. pk-wedge-plus-1, at 805, is still just over 800, so eight captions are over 800 in all. The W541 record and the W608 table have the reasons.
 - **From W576 (20 Nov):**
   - [(2) closed in W605: the 608(c) condition was added at goaltender :1310/:1662, on_ice :621 and defender :945/:1027.]
   - [(1) closed in W578: the four winger net-front cross-check units carry the from-behind route with the W577 USA Hockey clause.]

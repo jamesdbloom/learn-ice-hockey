@@ -926,9 +926,17 @@ const pkWedge = {
     // W362 (16 Nov 2026): the glyph MOVED, no word changed. ~358 chars were amber; now only the
     // injury instruction is ("Block from close and on your feet, head out of the lane..."). The
     // technique, lane-timing and screening limbs stay, word for word, as plain caption text.
-    'Blocking shots is a technique, not an act of courage. Be in the lane before the shot, ' +
-    'not sliding into it, and never block from a screening position. Half-deflecting a shot ' +
-    'your goalie could not see is worse than letting it through cleanly. ⚠️ Block from close and on ' +
+    // ⚠️ W609 (21 Nov 2026), SUPERSEDING the "word for word" notes above (W362, W469 and the 24 Oct
+    // note): on a safety-reviewer ruling, CUT "Blocking shots is a technique, not an act of courage"
+    // and "Half-deflecting a shot your goalie could not see is worse than letting it through cleanly".
+    // The cut rests on that ruling: neither sentence is an injury instruction, and
+    // how_to_watch_hockey.md :210 hands shot-blocking technique to Special Teams. special_teams.md voices
+    // both cut sentences in its Shot blocking section (:773, :778, :789; chunks 044-045, about 13 chunks
+    // after this caption's chunk 031) -- NOT beside the marker, where chunks 030-031 carry only the lane
+    // and screening limbs, which this caption keeps. KEPT: the lane-timing and screening limb, and the ⚠️ injury instruction, which still
+    // sits directly before "Block from close..." and closes the caption.
+    'Be in the lane before the shot, ' +
+    'not sliding into it, and never block from a screening position. ⚠️ Block from close and on ' +
     'your feet, head out of the lane, hands behind your body with the backs of the gloves out.',
 
   describe:

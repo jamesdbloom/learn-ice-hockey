@@ -888,12 +888,17 @@ const layerNotConverge = {
   // voices no double-team anywhere near its marker), the order-of-arrival note, the offset and
   // distance, and "both beaten by the same pass".
   caption:
-    'Two players defending one puck carrier, forechecking towards the net on the right: the first ' +
-    'pressures, and the second layers behind and to the side of them instead of converging on the same ' +
-    'puck. First and second here are the order they arrive in, not two particular players. ' +
-    'The layer is offset diagonally rather than directly behind, at two or three stick lengths — close ' +
-    'enough to take over the coverage, far enough that a single move does not beat both of you. ' +
-    'Converging instead puts two of you on one puck, both beaten by the same pass. ' +
+    // W609 (21 Nov 2026), long-caption census: the picture and its two layering sentences merged; CUT
+    // "close enough to take over the coverage, far enough that a single move does not beat both of you"
+    // -- puck_support_and_spacing.md voices it in the bullets directly above the marker ("close enough to
+    // take over, far enough not to be beaten by the same move"). The sketch's "rather than converging
+    // on the same puck, where one pass beats you both" became its own sentence: "rather than ... ,
+    // where" is the negation-before-separator shape. Double-team hedge, level sentence and the ⚠️ limb
+    // are untouched.
+    'Two players defending one carrier, forechecking towards the net on the right: the first ' +
+    'pressures, and the second layers diagonally behind them, two or three stick lengths back. ' +
+    'Converging on the same puck instead lets one pass beat you both. ' +
+    'First and second are the order they arrive in, not two particular players. ' +
     'A deliberate double-team — commonly allowed below your own goal line, where a ' +
     'turnover is contained by the net and the boards — is a coaching decision rather than something to ' +
     'freelance, so ask your coach where and when your team doubles. ' +
