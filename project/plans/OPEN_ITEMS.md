@@ -13,13 +13,13 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W598 and W599 shipped with record `w599_hockey_canada_ice_right_and_carha_slide_2026-11-21.md`.
+- None. W600 shipped with record `w600_carha_slide_contact_limit_siblings_2026-11-21.md`.
 
-  W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+  W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W599 (21 Nov):**
-  - **(1) CARHA's slide relief is worded correctly but silent that contact afterwards can still be 49(a):** switching_positions :301, dtr :544 and :555.
+  - [(1) closed in W600: switching_positions :301 and dtr :544/:555 now carry the 49(a) limit.]
   - **(2) Not settled:** whether Hockey Canada 8.3 in practice reaches a defender who simply stands still. "Hold only ice you already have" is conservative craft.
   - **(3) Optional:** body_contact :1818/:1825 quote USA Hockey's 639(a) Note, which is narrower than Casebook Situation 2. That errs safe.
 - **From W597 (21 Nov):**
