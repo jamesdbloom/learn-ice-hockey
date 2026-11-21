@@ -37,7 +37,7 @@ Goal: You are not trying to take a shot — you are trying to take a shot from a
 Action: Put a body at the net front for every shot, outside the crease, and crash the net for the rebound — decide before the shot, and play the puck, never the goalie
 Priority: Somebody is always above the puck — the high forward is the safety, and someone, usually a forward, fills the line when a defenceman steps down
 Risk: Almost every amateur team can get the puck into the offensive zone; far fewer turn possession there into a dangerous shot
-Convention: The attack triangle with both defencemen on the line is the default this document is written from, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 with a bumper in the slot, common on the power play, are real alternatives, so ask which your team plays
+Convention: The attack triangle, both defencemen on the line, is this page's default, not a law — an overload loading one side, a five-player rotation, and a 1-3-1 with a slot bumper, common on the power play, are real alternatives; ask which your team plays
 ```
 
 **Look across the middle first, because that pass moves the goalie.** A pass that crosses the centre line of the ice just before the shot forces the goalie to push across and re-set, and in volunteer-tracked NHL 5-on-5 data it is the most dangerous pass type, at roughly double the next.
@@ -572,7 +572,7 @@ A **tip** or **deflection** is changing the direction of an incoming shot with y
 ```facts
 Action: Keep the blade down after the tip as well as before it — you tip in a crowd
 Rule: A puck hitting an attacker's stick above the crossbar is no goal, and where it hits the stick is what counts (NHL and IIHF 80.3, PWHL 82.3, NHL 78.5(vi), Hockey Canada 6.9(b)) — but only the goal off that contact dies: a teammate who gains it and shoots scores (IIHF Handbook 2025/26, 80.9(c))
-Rule: USA Hockey uses neither the crossbar nor the contact-point test — 621(d) sets the ceiling at the shoulder and writes no crossbar test, and its Casebook 621 Situation 7 refuses the contact point: "When any part of the stick is carried above the shoulders, the entire stick is considered to be high"
+Rule: USA Hockey uses neither the crossbar nor the contact-point test — 621(d) caps at the shoulder, and Casebook 621 Situation 7 refuses the contact point: "When any part of the stick is carried above the shoulders, the entire stick is considered to be high"
 Rule: A tip contacted above the crossbar but below your own shoulders is no goal under NHL and IIHF 80.3 or PWHL 82.3 — IIHF Handbook 80.9 answers "No" twice — while USA Hockey 621(d) and CARHA 62(d) cap at the shoulder and do not reach it; Hockey Canada 6.9(b) pulls both ways, so tip low
 Rule: NHL and IIHF 80.1, PWHL 82.1 and Hockey Canada 6.9(a) stop play once the offending team gains possession and control of a puck batted above the shoulders, even off a save, so a loose one is played on: leave it to an opponent
 Rule: A high-batted puck both teams abandon stops play under NHL and IIHF 72.3, PWHL 74.3 and Hockey Canada Interpretation 2 to 6.9(a)(i)
@@ -581,7 +581,7 @@ Rule: Under USA Hockey an opponent can stop play by declining a high-batted puck
 Rule: USA Hockey's Casebook puts the draw in the offending team's defending zone when both teams touch a high-batted puck at once, which stops play (621 Situation 10), and when the goalie covers a high tip (Situation 9); IIHF Handbook 80.12 puts the goalie's cover in the goalie's end
 Rule: A high stick on the puck is one rule; one on a person is another — NHL and IIHF 60, PWHL 61, USA Hockey 621(a) to 621(c), Hockey Canada 9.5, or 7.6 Head Contact via 6.9(c) in minor and female hockey, none capped at a minor
 Rule: In CARHA leagues a high stick to a person above the shoulders is a major whether or not it injures (62(b)); if it injures or is intentional, add a game misconduct, and if intentional at least a one-game ban (32(d)); a deliberate injury, or an attempt at one, is a match (62(c))
-Rule: A raised stick can be a penalty with no contact at all — USA Hockey Casebook 621 Situation 2 answers "No" to whether contact must occur and says high sticking "must be called" where a player raises the stick above the shoulders to intimidate or is careless; 621(a) is the minor, not 621(d)
+Rule: A raised stick can be a penalty with no contact at all — USA Hockey Casebook 621 Situation 2 says high sticking "must be called" where a player raises the stick above the shoulders to intimidate or is careless; 621(a) is the minor, not 621(d)
 ```
 
 **A puck that goes in off your stick above the height of the crossbar is not a goal** under the NHL (Rules 80.3 and 78.5(vi)). What counts is where the puck meets the stick, not where your hands are: *"The determining factor is where the puck makes contact with the stick."* Tip low.
@@ -610,7 +610,7 @@ Risk: Treat a goalie's rebound directions as tendencies, not rules — one angli
 Action: Shoot it back immediately — do not settle it, do not look for a pass; the window is one or two seconds while the goalie is down
 Options: Go to the far post when you get tied up — nobody is covering it and it opens the weak-side chance
 Key: The defending team recovers roughly 60% of rebounds — Greg Revak's figure, read off a chart by Alex Novet — so you win that race by deciding to go before the shot, not by reacting after it
-Convention: Time the arrival by which job you have — planted at the net front before the release if that is your assignment, arriving with the release if you are driving in from the wall or your circle; the split is coaching craft, not a measured finding
+Convention: Time your arrival by your job — planted at the net front before the release if that is your assignment, arriving with the release if driving in from the wall or your circle; the split is coaching craft, not a measured finding
 Read: Revak's 60% summarises the whole chart rather than one zone — Novet plots offensive recovery flat at 38–42% wherever the shot came from; no league, season or sample size is stated anywhere
 ```
 
@@ -683,7 +683,7 @@ Rule: NHL and IIHF Rule 69.7, PWHL 71.7 — where the puck is under a player in 
 Rule: A defending player other than the goalie who deliberately covers the puck in the crease gives up a penalty shot (NHL and IIHF 63.6, cross-referenced at 67.4 and 69.7; PWHL 65.6) — a goalie covering it in there is simply a whistle
 Rule: NHL and IIHF Rule 69.1, PWHL 71.1 — a defender who pushes, shoves or fouls you into the goalie is not deemed contact initiated by you, provided you made a reasonable effort to avoid it; but pushing a defender into their own goalie is, and a goal scored off it is disallowed
 Rule: NHL and IIHF 69.2, PWHL 71.2 — intentional or deliberate contact with a goalie, in or out of the crease, is a minor or major, goal or no goal; under 42.1 and 69.4 (PWHL 71.4) a penalty "should be assessed in every case" of unnecessary contact; charging one in the crease can bring a game misconduct
-Rule: USA Hockey 607(d) Note 1: accidental or unavoidable goalie contact is an interference minor; deliberate contact is charging, never a bare minor (607(a)) — and drive hard to the net, only then try to pull out, and contact in the crease or privileged area is minor and misconduct (Casebook 607 Sit. 4)
+Rule: USA Hockey 607(d) Note 1: accidental or unavoidable goalie contact is an interference minor; deliberate is charging, never a bare minor (607(a)). Even a player going hard to the net who honestly tries to pull out gets minor and misconduct for crease or privileged-area contact (Casebook 607 Sit. 4)
 Rule: USA Hockey 607 Sit. 4, goalie in crease or privileged area: no penalty only if a defender forced you in and you "clearly made every attempt"; ram, arms out, shoulder down: gone — must if reckless anywhere (607(b)) or careless to head or neck (620(b)); reckless: match, likely multi-game ban (602(a))
 Rule: In CARHA leagues some net-front majors are mandatory, each with a game misconduct and at least a one-game ban (30(a), 32(d)): charging or cross-checking a goalie in the crease, or injuring anyone by either (52, 54(c)) or by interference (66(e)). CARHA calls over two steps or strides a charge
 Rule: CARHA Rule 30(a) — every major but an accidental high stick that injures nobody brings a game misconduct: a player assessed one "shall be ruled off the ice for the remainder of the game" (CARHA-affiliated adult leagues only)
@@ -1110,8 +1110,8 @@ Never: Pick corners against a set, sighted goalie — the lowest-percentage thin
 Key: Your job is not to shoot harder, it is to shoot through — point shots are blocked more than shots from anywhere else on the ice
 Technique: Walk the line first — skate sideways along the blue line toward the middle until the shot-blocker has to move their feet, then release from the new angle
 Technique: Change the release point — a quick snap from a different spot beats a blocker who has already dropped
-Technique: Take something off it — a slower, lower shot that gets through to be tipped beats a 95 mph slapshot into a shin pad; in CARHA a slapshot is a minor; if it injures, a major, game misconduct and a ban
-Options: Fake the shot — a blocker on the ice opens the lane for the real one, or the seam pass; a faked slap shot can be a CARHA minor, so sell it with your shoulders
+Technique: Take something off it — a slower, lower shot that gets through for a tip beats a 95 mph slapshot into a shin pad; CARHA 79, 30: a slapshot is a minor; if it injures, a major, game misconduct and a ban
+Options: Fake the shot — a blocker on the ice opens the lane for the real one, or the seam pass; a faked slap shot can be a CARHA 79(b) minor, so sell it with your shoulders
 Options: Take the D-to-D first — it drags both the blocker and the goalie, and you shoot into a lane just vacated
 ```
 
@@ -1142,7 +1142,7 @@ Full treatment of the draw itself — technique, stick placement, the violations
 ```facts
 Key: The point of a set play is that four players start moving on the drop, before anyone knows who won it
 Options: Win back to the point and screen immediately — inside winger straight to the net front, outside winger to the strong-side rebound spot
-Options: Win back to a winger set for a one-timer — a shooter before the drop, not a defender; in CARHA a backswing past fifteen inches is a slap-shot minor; if it injures, a major, game misconduct and a ban
+Options: Win back to a winger set for a one-timer — a shooter before the drop, not a defender; CARHA 79, 30: a backswing past 15 inches is a slap-shot minor; if it injures, a major, game misconduct and a ban
 Options: Win it forward — attack directly; high reward, but it puts your centre below the puck and fails badly if the draw is lost
 Options: Lift or press their centre's stick with yours — the stick, never the hands — then play the puck for a winger to sweep in on; never hook their stick, hold it down or grab it. Best on a dominant centre
 Options: Delay for the screen — the defenceman skates laterally for a beat first; a shot half a second late with a screen beats one on time without
