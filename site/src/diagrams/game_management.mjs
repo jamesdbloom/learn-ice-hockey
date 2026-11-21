@@ -126,12 +126,12 @@ const sixOnFive = {
   width: 900,
 
   caption:
-    'The most common 6-on-5 shape, with your goalie pulled for a sixth attacker: two at the ' +
-    'points — the area just inside the blue line, not the line itself — two on the half-walls level ' +
-    'with the faceoff dots, one at the net front, and one below the goal line, who can sit in the ' +
-    'middle instead. The five defenders are not drawn, and your own net is empty at the far end. ' +
-    // W595 (21 Nov 2026), caption-echo census: the two team-choice sentences merged; the point and half-wall
-    // glosses (rink_map's definitions) kept.
+    // W602 (21 Nov 2026), caption-echo census: the six-spot list is CUT, with its point and
+    // half-wall glosses. The only host, game_management.md, says the same list WITH both glosses
+    // word for word in the one-sentence paragraph directly above the marker. No pointer to it.
+    'The most common 6-on-5 shape, your goalie pulled for a sixth attacker. ' +
+    'The five defenders are not drawn, and your own net is empty at the far end. ' +
+    // W595 (21 Nov 2026), caption-echo census: the two team-choice sentences merged.
     'Which shape, and who stands where, is your team\'s choice — an umbrella, an overload, or a ' +
     'net-front body added to your power-play look — so learn yours in practice.',
 

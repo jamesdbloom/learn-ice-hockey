@@ -305,8 +305,9 @@ const fiveManShape = {
     'forward below in the corner, one above at the top of the circles, both defencemen on ' +
     'the blue line. That below-level-above attack triangle is a default, not a law of ' +
     'hockey — overload, a five-player rotation and a 1-3-1 are real alternatives, so ' +
-    'find out which one your team plays. At least one forward stays in or attacking the ' +
-    'home-plate area. Defenders other than the goalie are not drawn.',
+    // W602 (21 Nov 2026), caption-echo cut: the home-plate sentence; the host's bold "The one
+    // non-negotiable" paragraph after the paired diagram and its Never: facts line say it.
+    'find out which one your team plays. Defenders other than the goalie are not drawn.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right. Five own players. F1 has the puck on ' +
@@ -536,7 +537,9 @@ const lowToHigh = {
     // and the caption is voiced alone with a break either side.
     'Low-to-high, numbered in order: the puck from the half-wall up to the point (1); the ' +
     'passer supports toward the strong-side hash marks (2); the defenceman walks it toward ' +
-    'the middle before releasing (3), which changes the angle and often opens a lane; the ' +
+    // W602 (21 Nov 2026), caption-echo cut: "which changes the angle and often opens a lane";
+    // the host's numbered item 2 above the marker gives the reason in full.
+    'the middle before releasing (3); the ' +
     'shot goes low through the screen (4). The play is only worth doing when the net front ' +
     'is occupied. The shot-blockers this play is trying to beat are not drawn. ' +
     '⚠️ At even strength a point shot is among the ' +
@@ -934,9 +937,9 @@ const crossTheRoadYourself = {
     // is a measurement of PASSES and this picture draws two carries -- and the safety limb
     // below, whose placement after a completed sentence is load-bearing (see the note on it).
     // W595 (21 Nov 2026), caption-echo census: opening shortened only; the 15.50% hedge and the ⚠️ limb untouched.
-    'Two carries across the royal road: off the half-wall into the high slot, or out from behind ' +
-    'the net into the slot. Both finish on the far side of the line and drag the goalie across the way a ' +
-    'pass does — though the 15.50% this document quotes measures passes, and no figure here ' +
+    // W602 (21 Nov 2026), caption-echo cut: the two routes and "drag the goalie across"; the
+    // "Carry it across yourself" bullet directly above the marker says both.
+    'Two carries across the royal road. The 15.50% this document quotes measures passes, and no figure here ' +
     'measures the carry. Only one of the two happens, so no puck is drawn. ' +
     // ⚠️ Placed AFTER the caption's last complete sentence, not inside one.
     // My first attempt spliced it between "stops at the tops of" and "the faceoff circles" --
@@ -1089,10 +1092,11 @@ const cycleRim = {
     // run is the wall-battle limb only. "whichever one is on" became "Rim or reverse": voiced
     // alone it pointed at nothing. The wall-battle limb is otherwise word for word.
     'The rim, in an offensive-zone cycle. The checker is inside the carrier and still in ' +
-    'front of them, sealing the carrier to the boards — that is the read: a rim beats pressure that ' +
-    'has you pinned. The puck goes onward around the boards to a teammate arriving behind ' +
-    'the net, in the direction the play was already going, which is the whole difference ' +
-    'from a reverse. Only the checker and the goalie are drawn on the other team. ' +
+    // W602 (21 Nov 2026), caption-echo cut: "a rim beats pressure that has you pinned" and
+    // the rim-versus-reverse contrast went; the Rim and Reverse bullets above the marker say both.
+    'front of them, sealing the carrier to the boards. The puck goes onward around the boards ' +
+    'to a teammate arriving behind the net, in the direction the play was already going. ' +
+    'Only the checker and the goalie are drawn on the other team. ' +
     '⚠️ Rim or reverse, this is a ' +
     'wall battle: never turn your back to anyone coming at you and never duck. Skates parallel to the wall, ' +
     'forearm and hip to it, head up and chin off your chest' + SHOULDER_TAIL,
@@ -1274,10 +1278,10 @@ const postShotShape = {
     // covers a pinching defenceman's point are an `Options:` facts line in the owning
     // section. The cardinal-rule hedge and "find out which your team plays" are kept -- a
     // caption that presented the standard five-man setup flat would be the corpus's commonest failure.
-    'The shape in the seconds after a shot: F3 holds high at the top of the circle as the ' +
-    'safety — a rebound straight out is theirs, and a counter-attack has to go through them. ' +
-    'The other two forwards go to the net, one to screen and tip and one hunting the ' +
-    'strong-side rebound, and both defencemen hold the blue line. That is the standard ' +
+    // W602 (21 Nov 2026), caption-echo cut: the safety's reasons and the two net jobs went;
+    // the host's numbered item 1 and the paragraph directly above the marker say both.
+    'The shape in the seconds after a shot: F3 high as the safety, two forwards at the net, ' +
+    'both defencemen on the blue line. That is the standard ' +
     'five-player setup, not a law: who covers a pinching defenceman’s point is a coaching choice this ' +
     'picture does not draw. Find out which your team plays.',
 

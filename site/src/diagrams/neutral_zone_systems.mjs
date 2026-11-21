@@ -439,8 +439,12 @@ const flat14 = {
 
   caption:
     'A 1-4, the most conservative structure in hockey: one forechecker, and four skaters in a ' +
-    'flat line across your own blue line. Almost nothing goes through it, but it concedes the ' +
-    'entire neutral zone, generates no offence and will keep you in your own end. The answer ' +
+    // W602 (21 Nov 2026), caption-echo census: the strengths-and-weaknesses sentence is CUT. Both
+    // hosts say it beside the marker: neutral_zone_systems.md's "Strengths." / "Weaknesses."
+    // paragraphs directly below, forechecking_systems.md's "What it's good at" / "What the 1-4
+    // concedes" bullets directly above. The chip legend, the goalie pull-up and the stretch-pass
+    // offside condition are kept (neutral_zone_systems.md's prose does not voice the last nearby).
+    'flat line across your own blue line. The answer ' +
     'drawn is a hard chip past the flat line and a race for the puck, because nobody in a flat ' +
     'line is deeper than anybody else. If the goalie comes out for the puck, pull up rather than ' +
     'finish on them. A stretch pass cannot beat a 1-4: a line held on its own blue line leaves no ' +
@@ -615,8 +619,9 @@ const leftWingLock = {
   caption:
     'The left-wing lock, frozen the moment possession has been lost: two forwards are still ' +
     'forechecking and the left wing has dropped back into line with the two defencemen, making a ' +
-    'three-player line across the back. The effect is a 2-3 — forechecking pressure without the ' +
-    'odd-man risk that normally comes with it, because the third player back is already there. ' +
+    // W602 (21 Nov 2026), caption-echo census: "The effect is a 2-3 ..." is CUT; the only host
+    // says it in the one-paragraph block directly above the marker. Hedge and cost kept.
+    'three-player line across the back. ' +
     'Conventionally the centre and the right wing are the two who forecheck, but that is a ' +
     'coaching choice rather than a law, and many teams now lock whichever winger is highest in ' +
     'the zone instead. The cost is real: it takes one player out of the counterattack and asks ' +
@@ -698,10 +703,11 @@ const regroup = {
     // depths and the declining-not-retreating point. "with our team in possession" dropped: the
     // regroup is ours and "attacking left to right" orients it.
     'A D-to-D regroup, drawn at the instant the pass across is made, our team ' +
-    'attacking left to right. A forward who could not advance has turned the puck back to a ' +
-    'defenceman, who receives with hips open up the ice and moves it across, so the opposing ' +
-    'structure has to slide. The pass is flat and hard and the lane is clean: never ' +
-    'make it blind across the middle with a forechecker between you. The three forwards sit at ' +
+    // W602 (21 Nov 2026), caption-echo census: the turn-back and hips-open reception, and the
+    // "flat and hard, never blind across the middle" instruction, are CUT. The only host's numbered
+    // list directly above the marker gives the first, and "The one hard rule." paragraph directly
+    // below gives the second word for word (and its facts Never: line). Tactical, not a safety limb.
+    'attacking left to right. The pass across makes the opposing structure slide. The three forwards sit at ' +
     'three different depths rather than all curling to the same place: short outlet, outside ' +
     'lane, stretch. You are declining a bad entry to buy a better one, not retreating.',
 
@@ -837,16 +843,16 @@ const hinge = {
 
   caption:
     'The hinge, with our team in possession attacking left to right. The numbers are the order. ' +
-    'One, the D-to-D. Two, the passer sinks back into mid-ice behind their partner instead of ' +
-    'following the puck up the ice — and in the skating hinge one and two happen together, ' +
-    'because dropping deeper as you make the pass is what lets you arrive into the return with ' +
-    'speed. Three, the partner carries it up and finds everything covered. Four, they give it ' +
-    'back, and it arrives to a player who is behind the play, in the middle, facing up ice with ' +
+    // W602 (21 Nov 2026), caption-echo census: the narrated steps are cut to a numbered legend,
+    // and the skating-hinge clause and the availability read are CUT. The host tells steps 2-4
+    // in the paragraph directly above the marker, the skating hinge in the bold paragraph
+    // directly below it, and the forecheck read in the paragraph after that.
+    'One, the D-to-D; two, the passer sinks back into mid-ice; three, the partner carries it up ' +
+    'into coverage; four, the return to a player behind the play, in the middle, facing up ice. ' +
     // ⚠️ "because each player is drawn once" — NOT "because these diagrams draw each
     // player once". The sentence has to keep explaining why the arrival carries no
     // glyph; what it does not have to do is name the corpus to do it.
-    'nobody near them. The only mark at that spot is their own arrowhead, because each player is ' +
-    'drawn once. Whether the hinge is available at all is a read about how they forecheck.',
+    'The only mark at that spot is their own arrowhead, because each player is drawn once.',
 
   describe:
     'The full sheet, with our own net at the left and our team attacking to the right. Two of our ' +

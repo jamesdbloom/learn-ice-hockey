@@ -274,8 +274,9 @@ const puckOnTheFarSide = {
     // no contact shown) were the picture describing itself and were cut. The one teaching limb
     // in them is kept, in the host's own words (puck_handling.md "Puck on the far side" Position:
     // facts line).
-    'Keep your blade on the far side of the puck too, so a poke has to go through the puck and ' +
-    'your stick. ' +
+    // W602 (21 Nov 2026), caption-echo cut: that limb ("Keep your blade on the far side of the
+    // puck too ...") went; the last bullet of the host's list directly above the marker and its
+    // Position: facts line both say it. The ⚠️ limb and WALL_POSTURE_SHORT are untouched.
     // ⚠️ DEMOTED 22 October 2026 to the short form (owner ruling 23 Sep: the full posture belongs
     // where the page is ABOUT board contact). This picture is drawn in open ice and shows no
     // contact; the full posture, the shoulder hedge, USA Hockey's light-hit warning

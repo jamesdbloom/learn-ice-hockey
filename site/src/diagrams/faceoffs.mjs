@@ -1065,12 +1065,13 @@ const ozoneDOneTimer = {
   width: 900,
 
   caption:
-    'The D one-timer off an offensive-zone draw, a beat after the puck is dropped: the centre pulls ' +
-    'it straight back to the strong-side defenceman at the point, who shoots first time. The shot’s ' +
+    // W602 (21 Nov 2026), caption-echo census: the play's description and "usually to the net
+    // front to screen the goalie, staying off them" are CUT; faceoffs.md's "The D one-timer."
+    // paragraph two blocks above the marker says both, word for word.
+    'The D one-timer, a beat after the drop. The shot’s ' +
     'line to the net runs straight through the inner hash marks, where the inside winger stands for ' +
     'the draw, so on the drop they step out of it, and they are drawn here already out of it. ' +
-    'Where they go next is not drawn: usually to the net front to screen the goalie, staying off ' +
-    'them. All of it is a coaching choice ' +
+    'Where they go next is not drawn. All of it is a coaching choice ' +
     'and not a rule of hockey — find out what your team runs, and what the call is, before your first' +
     ' shift.',
 
@@ -1119,11 +1120,10 @@ const ozoneWingerWalkout = {
   width: 900,
 
   caption:
-    'The winger walk-out off an offensive-zone draw: instead of going back to the point, the centre ' +
-    'pulls the puck to the inside winger standing in the circle, who takes a stride toward the middle' +
-    ' of the ice and then either shoots or feeds the slot. Which of those two they do is not drawn, ' +
-    'because the section gives both and the walk-out itself is the play; the picture stops where the ' +
-    'choice begins. Both defencemen stay at the points, one of them as the safety against a ' +
+    // W602 (21 Nov 2026), caption-echo census: the play's description is CUT; faceoffs.md's
+    // "The winger walk-out." paragraph above the marker says it nearly word for word.
+    'The winger walk-out off an offensive-zone draw; whether the winger then shoots or feeds the slot is ' +
+    'not drawn, because the picture stops where the choice begins. Both defencemen stay at the points, one of them as the safety against a ' +
     'counterattack. Every part of this is a coaching choice rather than a rule of hockey, and which ' +
     'play is on is a call rather than an individual read — ask what your team’s are.',
 

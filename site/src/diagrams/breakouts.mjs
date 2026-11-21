@@ -310,10 +310,11 @@ const wheel = {
   // misconduct on injury, are plain caption text and still voiced; the caption still speaks
   // "Important." because the speech renderer flags any caption carrying a glyph.
   caption:
-    'The wheel: the defenceman carries the puck behind their own net and up the far side, drawn ' +
-    'in your own zone at the left, moving left to right. Cut tight: the net is your screen, and ' +
-    'cutting wide gives the forechecker a straight line to you. The far winger and the centre are ' +
-    'the outlets. ' +
+    // W602 (21 Nov 2026), caption-echo census: the play's definition, "cut tight" and the
+    // outlets are CUT. The only host says the first in the one-sentence paragraph directly above
+    // the marker (and the facts Action: line), "Cut tight" in the Execution bullet and the
+    // outlets in the Setup bullet below. Every rule sentence and the ⚠️ limb kept verbatim.
+    'The wheel, drawn in your own zone at the left, moving left to right. ' +
     'D2, standing at the net front, is legal only in some books. The NHL and PWHL allow it: ' +
     'stick in tight and vertical, hands to yourself, no bump. Under USA Hockey even a ' +
     'still screen is a minor when your partner has the puck. Hockey Canada and CARHA give your ' +
@@ -942,11 +943,12 @@ const wingerWall = {
   // caption already fits under 700 with it.
   caption:
     'The strong-side winger’s trip, drawn in your own defensive zone at the left of the picture at ' +
-    'the instant your team wins the puck. They start high, level with the opposing point man — that is' +
-    ' their defensive-zone coverage under the standard low zone collapse — and come down the wall to ' +
-    'the boards between the hash marks and the goal line, at or' +
-    ' just below the dot line, never above it. The trip between those two spots, and its timing, is ' +
-    'the job. ' +
+    // W602 (21 Nov 2026), caption-echo census: the coverage-spot gloss, the hash-marks-to-goal-line
+    // landmark and "the trip is the job" are CUT. The only host says all three in the facts block
+    // directly above the marker (Position:, Action:, Key:) and the bold paragraph directly below.
+    // The dot-line limit and the whole ⚠️ wall limb are kept.
+    'the instant your team wins the puck. They come down from their high coverage spot to the ' +
+    'wall, at or just below the dot line, never above it. ' +
     // SAFETY. Not composed here: this is the owner's own wording, the "Never:" line in the facts
     // block of content/systems/breakouts.md section "Presenting a target, and receiving open to
     // the ice". Re-derive that line rather than trusting a number here; the marker pass of
@@ -1033,8 +1035,10 @@ const centreSwing = {
     // the curl (what the route shows), and the coaching-choice disclosure with its counterweight
     // word for word.
     'The centre’s low support swing, drawn in your own defensive zone at the left of the picture. The' +
-    ' shaded box is where the centre is going: inside the faceoff dots and below the hash marks, in ' +
-    'the strong-side circle, not out on the wall. The route ' +
+    // W602 (21 Nov 2026), caption-echo census: the box's two boundaries are CUT. The only host
+    // gives both in the facts Position: line directly above the marker and the bold lead
+    // directly below it, then explains each. Not a rink_map region; the shading legend is kept.
+    ' shaded box is where the centre is going, inside the strong-side circle. The route ' +
     'curls away from the puck first and then turns back into it, which is how the centre arrives ' +
     'already moving instead of receiving standing still. Centre-low is itself a coaching choice' +
     ' — the alternative is the centre fly, and both are legitimate — but a centre flying in a flat or' +

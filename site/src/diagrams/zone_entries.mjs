@@ -209,8 +209,10 @@ const wideEntry = {
     // and the long paint sentence ("Where the net drive stops: at the edge
     // of the blue paint, off the red line around it, short of the goalie. Screen from there.").
     // The goalie-contact sentences and the whole posture tail are untouched, word for word.
-    'The carrier goes outside the defenceman to the goal line or below, so the defender has ' +
-    'to turn. No contact is drawn. The net drive stops at the edge of the blue paint, off its ' +
+    // W602 (21 Nov 2026), caption-echo cut: "The carrier goes outside the defenceman to the goal
+    // line or below, so the defender has to turn" went; the one-sentence paragraph directly above
+    // the marker and the "Why the wide entry works" bullet after it say both halves.
+    'A wide entry; no contact is drawn. The net drive stops at the edge of the blue paint, off its ' +
     'red line: screen from there. ' +
     // W375, 16 November 2026: the goalie-contact sentences moved AHEAD of the glyph, no word
     // changed. A caption's amber runs from its glyph to the END (captionNodes() in

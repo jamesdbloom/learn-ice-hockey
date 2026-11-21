@@ -422,14 +422,17 @@ const pp23 = {
   numbered: true,
 
   caption:
-    'Five attackers on a 5-on-4, the killers not drawn: two defencemen at the points and ' +
+    // W602 (21 Nov 2026), caption-echo cut: "two defencemen at the points and three forwards low,
+    // the puck going low-to-high and back" went; the host's "The shape:" paragraph, its Position:
+    // and Action: facts lines, and "The jobs:" just after the marker say it three times.
+    'Five attackers on a 5-on-4, the killers not drawn. ' +
     // W590 (20 Nov 2026): the point-count rule contradicted the corpus's own pp-umbrella (lone D at
     // the apex) and pp-overload (one point). Replaced with the shape rule special_teams.md's Common
     // Mistakes now states: read the shape, not the point count.
     // W591 (20 Nov 2026): mirrors the owner's Common Mistakes rule, spread added. Geometry checked:
     // this diagram's third low player N is at (80, 4), the net front, with nobody mid-slot; the
     // spread diagram (pp-spread-5on3) has A5 at (72, 0) mid-slot and two low at (88, +/-8) by the posts.
-    'three forwards low, the puck going low-to-high and back. Two at the points with three low and ' +
+    'Two at the points with three low and ' +
     'nobody in the middle of the slot is this shape; a spread has two high, one in the middle of the ' +
     'slot and two low beside the posts; a 1-3-1 has one point player and a bumper in the slot; an ' +
     'umbrella has three high in an arc; an overload puts four on one side. Which ' +
@@ -1035,10 +1038,11 @@ const pkNz13 = {
     // fixes, no new claims: "in the passive version" trailed the first sentence where it read as
     // a property of the power play, and "the same-side press" was listed beside the 1-1-2 as if it
     // were a separate scheme, when the section makes it the OTHER VERSION OF THE 1-3.
+    // W602 (21 Nov 2026), caption-echo cut: the passive 1-3's mechanics (token pressure, the
+    // line of three backing up, force a dump-in) went; the host's "The 1-3" bullet in the list
+    // directly above the marker says them in full.
     'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
-    'attacking from the left. This is the passive 1-3: one forward gives token pressure on the ' +
-    'puck, and the other forward and both defencemen form a line across the ice behind, backing ' +
-    'up in unison to force a dump-in rather than to win the puck. The 1-3\'s same-side press, ' +
+    'attacking from the left. This is the passive 1-3. The 1-3\'s same-side press, ' +
     'the 1-1-2, the retreating box and tandem pressure are the alternatives, so ask which your ' +
     'team plays. Only the power play\'s puck carrier is drawn.',
 
@@ -1098,10 +1102,11 @@ const pkNz112 = {
   half: false,
   width: 900,
 
+  // W602 (21 Nov 2026), caption-echo cut: the 1-1-2's positions went; the host's "The 1-1-2"
+  // bullet two blocks above the marker gives them word for word. NHL-choice disclosure untouched.
   caption:
     'Four killers, shorthanded 4-on-5, defending the net on the right against a power play ' +
-    'attacking from the left. F1 is up on the puck, F2 layered behind F1 on the same side, ' +
-    'and the two defencemen abreast near the line. Some coaching material calls this a ' +
+    'attacking from the left. This is the 1-1-2. Some coaching material calls this a ' +
     'common NHL choice for neutral-zone pressure; no count of NHL teams was found to ' +
     'confirm it. The 1-3, the retreating box and tandem pressure are the ' +
     'alternatives. Only the power play\'s puck carrier is drawn.',

@@ -141,15 +141,11 @@ const supportTriangle = {
   caption:
     'Three teammates with one of them pulled off the boards into the middle, so the lanes out of ' +
     'the carrier now diverge. The opponent has not moved: they are still in the lane up the boards, and ' +
-    'covering it means turning their body away from the middle option. ' +
-    // W507(9) (19 Nov 2026): was "No single defender can be in both lanes." Unscoped, beside a
-    // drawn defender, and one diagram after `support-in-a-line`'s "One opponent standing in that
-    // line is between the carrier and both receivers", it read as contradicting the picture
-    // before it. It is a property of the DIVERGED lanes, so it now says so; meaning unchanged.
-    'With the lanes apart, no single defender can be in both. A triangle is the smallest shape in which all three ' +
-    'corners have two teammates at different angles, and it survives the puck moving, where a line ' +
-    'has to be rebuilt every time. ' +
-    'It is not a formation you set up, it is a shape you keep while everything moves.',
+    // W507(9) (19 Nov 2026) had scoped "no single defender can be in both" to the diverged lanes.
+    // W602 (21 Nov 2026), caption-echo cut: that sentence, the two-angles/survives-the-pass
+    // sentence and "not a formation you set up" all went. The host's numbered list two blocks
+    // above the marker (items 1-3) and the paragraph after the diagram say all three.
+    'covering it means turning their body away from the middle option.',
 
   // W473: the wall is named from the picture, not as 'right'. Attacking to the right, the top
   // boards are the attacker's LEFT, so 'right-hand boards' named the wrong wall.
@@ -536,6 +532,8 @@ const defensiveZoneSupport = {
   // claim about the goaltender. CUT: the two glosses on the up and middle options, the
   // reason behind the weak-side winger's width, and the tidy-exit-versus-clever-exit
   // line, all of which the owner's prose states around the marker.
+  // W602 (21 Nov 2026), caption-echo cut: "In your own end the safe outlet outranks the
+  // attacking option" went; the bold paragraph directly above the marker says it.
   caption:
     'The defensive-zone support structure, drawn with your own net at the right and up-ice to the left, ' +
     'at the moment your defenceman retrieves the puck behind the net and before they turn. ' +
@@ -543,7 +541,6 @@ const defensiveZoneSupport = {
     'faceoff dot; the centre swinging low through the middle and curling toward ' +
     'the same side; and the defence partner on ' +
     'the far side, reached behind the net and below the goal line, never through the slot. ' +
-    'In your own end the safe outlet outranks the attacking option. ' +
     'Your goalie has the best view on the ice and no puck to look at, so they are part of this ' +
     'structure as a voice whatever your league does about the trapezoid.',
 

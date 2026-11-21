@@ -490,7 +490,9 @@ const holdingTheLine = {
     'neutral-zone faceoff dots mark out: the last line before your zone. Your forwards are up ' +
     'ice and the nearest has a forechecker closing, so the dashed pass back to the near ' +
     'defenceman is the job: be the option they can find, with your stick in the passing lane. ' +
-    'Do not drift forward to join the play. A turnover has to be defended from this ice. ' +
+    // W602 (21 Nov 2026), caption-echo census: "Do not drift forward ... A turnover has to be
+    // defended from this ice." is CUT. The only host says it in the facts Never: line above the
+    // marker and in "Key considerations" two blocks below it. Hedge and two-bars legend kept.
     'Where a pair holds in the neutral zone is part of your team’s system rather than a fixed ' +
     'spot, so find out what yours wants. Nothing here is contact. The forechecker’s route ' +
     'ends in two bars, meaning arrive and contain.',

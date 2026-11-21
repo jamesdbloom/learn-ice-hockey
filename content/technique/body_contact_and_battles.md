@@ -1284,8 +1284,6 @@ Never: Leave the carrier an escape back toward the slot
 
 ![](diagram:corner-escape-routes)
 
-The two escapes the corner gives them are drawn above. The one you are taking away is not drawn, because your body is where it would be.
-
 ### Whose corner is it?
 
 **This is a coaching choice, not a law of hockey.** The default assumed here is a **low zone collapse** (zone-based defensive-zone coverage) with a **2-1-2 forecheck**. Under a low zone collapse, the low corner belongs to the strong-side defenceman with the centre supporting; the wingers stay high covering the points and do **not** come to the corner. Under **man-on-man** coverage, a winger follows their assigned check into the corner and you will get help low — but the point may be left open.

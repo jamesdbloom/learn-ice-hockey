@@ -545,8 +545,10 @@ const breakawayApproach = {
     // testing; the second qualifies THE GOALTENDER THIS PICTURE DRAWS, so the prose cannot
     // hold it -- a reader who takes the drawn depth as typical has been taught the
     // well-coached goaltender as the normal one.
-    'The approach on a breakaway, numbered in order: hard to the blue line, ease off ' +
-    'through the top of the circles, then accelerate into your move. The tops of the ' +
+    // W602 (21 Nov 2026), caption-echo cut: the three phases ("hard to the blue line, ease off
+    // through the top of the circles, then accelerate") went; the host's bold "A change of pace
+    // beats raw pace" paragraph directly above the marker says them in the same words.
+    'The breakaway approach, numbered in order. The tops of the ' +
     'circles are thirty-five feet out from the goal line, so easing off there still leaves ' +
     'most of a zone to accelerate through. The last arrow deliberately does not say which ' +
     'move you make. ' +

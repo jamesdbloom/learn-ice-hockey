@@ -298,10 +298,12 @@ const backcheckMiddleLane = {
   half: true,
   width: 900,
 
+  // W602 (21 Nov 2026), caption-echo cut: "between that driver and your own net — rather than
+  // chasing behind the driver's shoulder" went; the host's "Get to the inside" bullet directly
+  // above the marker says it. The lane-assignment hedge is untouched.
   caption:
     'A rush coming back at you, and the centre’s backcheck. The centre comes back on the defensive side of ' +
-    'the middle-lane driver — between that driver and your own net — rather than chasing behind the driver’s shoulder, ' +
-    'and does not swing wide to help on the carrier, because the defencemen have the carrier and the middle ' +
+    'the middle-lane driver, and does not swing wide to help on the carrier, because the defencemen have the carrier and the middle ' +
     'is the ice they are protecting. They are drawn retreating together with that middle sealed. ' +
     'Which backchecker takes which lane is a coaching choice and not a law: some teams give the ' +
     'middle to the first man back, whoever that is, and others pick up man-on-man from the puck ' +
@@ -657,9 +659,13 @@ const wingerOffensiveZone = {
     // position owns it" (the find-out stays), "into one", and the opening sentence folded into
     // the patch list. KEPT: both clocks with "well", the high-slot find-out, the "shoot first"
     // disclosure, the screen limb, and the whole post limb with its every-league scope.
-    'Where a winger works in the offensive zone: the half-wall level with the faceoff dot is your ' +
-    'home base, your own circle is where a cross-ice one-timer arrives, and the side of the net ' +
-    'is for rebounds and tips. Driving in from your circle or the wall, as drawn, arrive ' +
+    // W602 (21 Nov 2026), caption-echo cut: each patch's job (home base, one-timer, rebounds and
+    // tips) went; the host's "What to do:" paragraph straight after the marker gives them word for
+    // word. The sketch also cut "Stay out of the shaded high slot unless your team sends you
+    // there"; NOT applied, because the picture shades and labels the high slot and this is the
+    // only caption sentence that says why it is drawn empty.
+    'Where a winger works in the offensive zone: the half-wall level with the faceoff dot, your ' +
+    'own circle and the side of the net. Driving in from your circle or the wall, as drawn, arrive ' +
     'as the shot is taken rather than well before it; if the net front is your assignment, be ' +
     'planted there before the release. ' +
     // ⚠️ THIS SAID "time the crash to arrive as the shot is taken rather than before it" — one
@@ -897,9 +903,14 @@ const threeDepths = {
   half: true,
   width: 900,
 
+  // W602 (21 Nov 2026), caption-echo cut: "and where both of you normally are" went. All three
+  // hosts carry the default in adjacent prose, and "both of you" mis-addressed the spectator in
+  // how_to_watch_hockey.md. The sketch also folded "Just inside the blue line" into "the line";
+  // NOT applied — it is the first band's depth, and the picture labels that band only "the
+  // default". The step-down condition stays: two hosts' prose lacks it.
   caption:
     'The three depths a defenceman plays at in the offensive zone. Just inside the blue line is the ' +
-    'default, and where both of you normally are. The top of the faceoff circle is the activated ' +
+    'default. The top of the faceoff circle is the activated ' +
     'position: the strong-side defenceman may step down to it to support a cycle or create a shot, ' +
     'but only when there is no immediate threat of a turnover, and from there they can still recover. ' +
     'Below the circles you are a fourth forward and cannot recover if it turns over, which is why ' +
@@ -1411,11 +1422,16 @@ const offWingOpenToTheIce = {
   half: true,
   width: 900,
 
+  // W602 (21 Nov 2026), caption-echo cut: the instruction "Take it OPEN TO THE ICE ... so you can
+  // still ..." became a description of the drawn reception. Capitals dropped: the host's bold
+  // "Receive it open to the ice" directly above the marker already carries the emphasis.
+  // "hips turned out and a step or two off the boards" is KEPT (the sketch cut it): the winger
+  // glyph is unlabelled (see players below), so this is the only text saying why it stands off the wall.
   caption:
     'Receiving a breakout pass up the wall on your off wing, in your own end: it arrives on your ' +
-    'backhand with a forechecker coming. Take it OPEN TO THE ICE, hips turned out and a step or two ' +
-    'off the boards, so you can still skate, pass to the centre or pass back to your defenceman. ' +
-    'Three options are drawn, as alternatives rather than a sequence. ⚠️ Never turn your back to ' +
+    'backhand with a forechecker coming. Taken open to the ice, hips turned out and a step or two ' +
+    'off the boards, it leaves three options, drawn as alternatives rather than a sequence: skate, ' +
+    'pass to the centre or pass back to your defenceman. ⚠️ Never turn your back to ' +
     'anyone coming at you as you receive it, and never duck. If contact comes, skates parallel to the wall,' +
     ' forearm and hip to it, head up and chin off your chest' + SHOULDER_TAIL,
 

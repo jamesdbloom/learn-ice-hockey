@@ -411,7 +411,7 @@ Goal: Maintain possession in the offensive zone and keep the pressure going
 
 **Goal:** Maintain possession in the offensive zone and keep the pressure going.
 
-**Key considerations:** The corners are a battle area. Protecting the puck and waiting for support is better than a rushed pass that turns over possession. Your defenceman is usually an option at the point — but the strong-side defender may have stepped down (moved from the blue line toward the top of the faceoff circle) to support the cycle, so look up before passing blindly to the point.
+**Key considerations:** The corners are a battle area. Protecting the puck and waiting for support is better than a rushed pass that turns over possession.
 
 **When nothing is open, cycle it rather than give it away.** Protect the puck down the wall and leave it on the boards behind you for the teammate coming in low — usually your centre — then skate up and away from the wall to get open for the return pass or a shot. The defender who followed you is now out of position, and the one who stayed is facing two of you. If the wall is sealed, reverse it behind the net to the far side instead. That low cycle is the common approach; some teams prefer to go low-to-high to the point early and get bodies to the net, so ask your bench which yours runs.
 

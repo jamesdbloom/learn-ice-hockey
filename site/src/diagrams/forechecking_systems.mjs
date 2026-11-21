@@ -1459,10 +1459,12 @@ const forecheck23Lock = {
   // is inside the same sentence as (a) on purpose: the hazard and its counterweight have to be
   // one voiced unit, and _split_paragraph breaks only at sentence ends.
   caption:
-    'The 2-3: two forwards in on the puck and three players across the ice behind them. The ' +
-    'third forward sits up the wall above the opposing winger and, only if the puck is not won, ' +
-    'slides back into line with the two defencemen, which is why their arrow stops short of the ' +
-    'blue line; the lane they fill is a coaching detail. Some teams lock whichever winger is ' +
+    // W602 (21 Nov 2026), caption-echo census: the shape and the lock's mechanics are CUT. The
+    // host's "Shape:" line and the left-wing-lock paragraph directly above the marker say both
+    // ("drop back to the half-boards and, if the puck is not won, slide into line"). The arrow
+    // legend stays because the arrow is on the picture.
+    'The 2-3 lock. The third forward’s arrow stops short of the blue line because they slide ' +
+    'into line only if the puck is not won; the lane they fill is a coaching detail. Some teams lock whichever winger is ' +
     'highest rather than always the left. This guide\'s default is a 2-1-2, so ask which your ' +
     // W362 (16 November 2026): ORDER, plus one word change. captionNodes() ambers from the glyph to
     // the END, so the 387-char amber carried the 604(a)/(b) / 7.3 list. The list now comes FIRST as
@@ -1561,8 +1563,10 @@ const forecheckPress = {
     // hear). The one host, forechecking_systems.md's 'The full-ice press', carries the name note,
     // the delayed-penalty rule and the "on anything" limb in its own body and facts block.
     'The full-ice press: all three forwards deep and both defencemen stepping down from the ' +
-    'offensive blue line. Nobody is left between those five and your own end, so one clean pass ' +
-    'out is a breakaway or an empty-net goal against. ' +
+    'offensive blue line. ' +
+    // W602 (21 Nov 2026), caption-echo census: "one clean pass out is a breakaway or an empty-net
+    // goal against" is CUT. The only host says it in the jobs paragraph directly above the marker
+    // and, word for word, in "What the press concedes" two blocks below.
     // W457 (18 November 2026): CUT "That is the trade, which is why coaches use it almost
     // exclusively late and trailing: down a goal, with the goalie pulled, or on a delayed
     // penalty." -- restatement. The sole host voices it before the marker: forechecking_systems.md

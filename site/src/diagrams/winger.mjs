@@ -338,14 +338,14 @@ const leavesThePoint = {
   // "don't follow your man" and "don't engage the puck", inverting two real coaching
   // exceptions into prohibitions. The negation is about the PICTURE (these two are not drawn);
   // the tail is what the reader should actually do. Closing the sentence separates them.
+  // W602 (21 Nov 2026), caption-echo cut: the two costs ("time and space to shoot or walk into the
+  // middle" and the late swing-breakout exit, with its W33 swing-breakout scope) went together; the
+  // host's "Key considerations" paragraph two blocks above the marker states both ("free to walk in
+  // for a shot", "no one positioned for the breakout"). The ⚠️ coaching-choice scope is untouched.
   caption:
     'What it costs a winger to leave the point, drawn in your own end with your net at the right. You ' +
     'went down into the corner to help, and the puck has come out to the opposing defenceman you were ' +
-    'covering, who is walking in with nobody near them. They have time and space to shoot or walk into ' +
-    // W33: the outlet spot is the conventional swing breakout's (winger.md :64/:175 facts), and the
-    // scope clause below covers only the COVERAGE system, so the breakout half is scoped here.
-    'the middle, and nobody is on the wall where a swing breakout wants its outlet, so if your team ' +
-    'wins it back the exit starts late. ⚠️ This is a mistake under low zone collapse, a coaching ' +
+    'covering, who is walking in with nobody near them. ⚠️ This is a mistake under low zone collapse, a coaching ' +
     'choice rather than a rule of hockey: under man-on-man, following your check into the corner is ' +
     'the job, and under a hybrid it is the job only below the line your team sets. Find out which one your team plays.',
 

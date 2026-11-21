@@ -804,12 +804,9 @@ const boxPlusOne = {
     'Box+1, one of several defensive-zone systems: coaching material calls it the standard ' +
     'introductory structure for young players and beginner adults, and nobody publishes a ' +
     'count of what teams actually run. ' +
-    // W590 (20 Nov 2026): the discriminator is now the owner's slide/rotate one
-    // (defensive_zone_coverage.md Box+1 facts, Key: line), not the player count alone.
-    // The negation closes on a full stop (check_caption_negations flagged "Not a penalty-kill box:"
-    // followed by "a kill box slides" -- a listener could carry the "not" into the slide).
-    'This is not a penalty-kill box. A kill box slides as one unit; Box+1 is a five-player even-strength ' +
-    'shape whose box rotates one position each time the +1 role passes on. ' +
+    // W602 (21 Nov 2026), caption-echo census: the "not a penalty-kill box" discriminator is CUT.
+    // The only host already says it twice within seconds -- the facts block's Key: line directly
+    // above the marker and the "Box+1 is not a penalty-kill box" bullet directly below it.
     'The box’s depth is fixed, its width is not, so read the width drawn here as one ' +
     'reasonable version, not a measurement.',
 

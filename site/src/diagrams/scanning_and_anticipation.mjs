@@ -552,12 +552,15 @@ const guess = {
   half: true,
   width: 900,
 
+  // W602 (21 Nov 2026), caption-echo cut: "This is not an instruction never to jump. On a real cue,
+  // with support behind you, in the neutral or offensive zone, it can be the right play." went;
+  // the host's "When jumping a passing lane is the right play" list follows the marker at once
+  // with the fuller conditions. What is left is scoped by "Here", so it reads as no absolute.
   caption:
     'The second of the two frames: the same moment, the same read, and the other choice. You have ' +
     'left the band, which now has nobody in it, and committed to the passing lane. If the pass ' +
     'does not come, or you miss it by a foot, the carrier has a clean lane at your goalie. ' +
-    'This is not an instruction never to jump. On a real cue, with support behind you, in the ' +
-    'neutral or offensive zone, it can be the right play. Here the place makes it a gamble: in ' +
+    'Here the place makes it a gamble: in ' +
     'the middle of your own zone a miss is a point-blank chance, so stay in the band unless the ' +
     'read is near-certain. If you are the last player back, there is no version of this jump worth making.',
 

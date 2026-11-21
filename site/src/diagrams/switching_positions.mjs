@@ -433,11 +433,12 @@ const gettingBeatenWide = {
   // the clause is about the PENALTY SHOT, which is 4.11(a) (hc.txt 'Rule 4.11 Penalty Shots';
   // 4.11(a)(i) needs 'possession and control', narrower than NHL 57.3's 'or who could have
   // obtained possession and control'). The host body already cites 4.11(a) here.
+  // W602 (21 Nov 2026), caption-echo cut: "Same square foot of ice and the same lane ... the
+  // defenceman, eighteen feet up, is the only thing that moved" went; the host paragraph
+  // directly after the two diagrams says it in full. The ⚠️ stick limb is untouched.
   caption:
     'Getting beaten wide, your net at the right: the carrier is past the defenceman’s ' +
-    'outside shoulder with nobody between them and the net. Same square foot of ice and the ' +
-    'same lane as when they are forced outside — the defenceman, eighteen feet up, is the only ' +
-    'thing that moved. The route is not redrawn to the net on purpose: a still picture ' +
+    'outside shoulder with nobody between them and the net. The route is not redrawn to the net on purpose: a still picture ' +
     'cannot draw "whenever they choose". ' +
     '⚠️ Chasing from behind, your stick goes on the puck and nothing else — a hook, trip, ' +
     'hold or slash that denies the chance is a penalty shot under the NHL and IIHF, and USA ' +

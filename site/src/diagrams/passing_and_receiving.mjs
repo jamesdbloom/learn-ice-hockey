@@ -172,11 +172,12 @@ const areaPass = {
     // 630(a), Hockey Canada 6.11) / 1 UNSETTLED (CARHA 72(c) Note 1 disjoins "in physical
     // contact with, or on their own side of, the blue line" and never defines "own side").
     // NAME THE BOOKS, NEVER COUNT THEM — a count goes stale when the shelf grows.
+    // W602 (21 Nov 2026), caption-echo cut: "which makes it a race rather than a turnover, and only
+    // a good play if the winger has a real speed or angle advantage" went; the host's "Risk."
+    // paragraph straight after the marker says both. The offside limb is untouched.
     'An area pass at the attacking blue line, and the one thing a picture can show and a ' +
     'sentence cannot: there is nobody at the target. The carrier chips the puck into the ' +
-    'shaded patch behind the defender who stood them up — a place, not a person, which makes ' +
-    'it a race rather than a turnover, and only a good play if the winger has a real speed ' +
-    'or angle advantage. The winger is drawn short of the blue line on purpose: a receiver whose ' +
+    'shaded patch behind the defender who stood them up, a place rather than a person. The winger is drawn short of the blue line on purpose: a receiver whose ' +
     'skates both cross the leading edge before the puck does is offside, and under USA Hockey ' +
     'Rule 630(a) and Hockey Canada Rule 6.11 a lifted trail skate is offside too — so keep it down.',
 

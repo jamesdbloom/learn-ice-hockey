@@ -796,9 +796,11 @@ const readingATip = {
 
   caption:
     'A shot coming from the point with an opposition forward set in the shooting lane, blade on ' +
-    'the ice: watch the sticks, because a forward standing there makes every point shot a ' +
-    'probable tip, and a tip changes direction a few feet in front of you where no reflex can ' +
-    'follow it. Stay tall and patient for as long as you can rather than dropping early. Two ' +
+    // W602 (21 Nov 2026), caption-echo census: "watch the sticks", the probable-tip read and
+    // "stay tall and patient" are CUT. The only host says them in the paragraph above, the facts
+    // block directly above the marker (Key:, Read:, Technique:) and the first two bullets below.
+    // Both "cannot show" disclosures and the depth-split hedge kept.
+    'the ice. Two ' +
     'things the picture cannot show. The forward is drawn further out than they would really stand, ' +
     'because two glyphs will not fit in the few feet of real ice between a tipper and a ' +
     'goalie. And the goalie’s depth is a consequence of what fits on the page rather than ' +

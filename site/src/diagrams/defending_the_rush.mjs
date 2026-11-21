@@ -540,10 +540,12 @@ const twoOnTwo = {
     'their gap on the inside of them; zone is the realistic alternative, so find out which your ' +
     'team plays. The gap is drawn wide because the crossing is only ' +
     'beginning; aim for a gap that shrinks the whole way in and never grows. ' +
-    'Neither defenceman is drawn with a route. Following your man through the ' +
-    'crossing and calling a clean switch are both real answers, never half of each, so the read ' +
-    'is yours. No route is drawn for safety too: a crossing rush is exactly where a beginner reaches for ' +
-    'a hit instead of holding their position.',
+    // W602 (21 Nov 2026), caption-echo census: "follow your man or call a clean switch, never
+    // half of each" is CUT; the only host voices it in the facts block's Action: line directly
+    // above the marker and the "Communicate the switch" bullet below. The safety reason for
+    // drawing no route is KEPT verbatim after the colon; "too" went with the first reason.
+    'Neither defenceman is drawn with a route, and that is for safety: a crossing rush is ' +
+    'exactly where a beginner reaches for a hit instead of holding their position.',
 
   describe:
     'The full sheet, the defended net at the left with the goalie in it. Exactly two opposition ' +
@@ -599,9 +601,12 @@ const threeOnTwoDefault = {
 
   caption:
     'A 3-on-2 defended "two wide, middle to the backchecker", with the ' +
-    'attack moving right to left toward the defended net at the left. Each defenceman takes an outside ' +
-    'attacker and neither chases the puck carrier; the middle attacker ' +
-    'belongs to the backchecking centre arriving from behind, the third own player in the picture. ' +
+    'attack moving right to left toward the defended net at the left. ' +
+    // W602 (21 Nov 2026), caption-echo census: "each defenceman takes an outside attacker and
+    // neither chases the carrier" is CUT. Both hosts say it next to the marker:
+    // defending_the_rush.md's bullets directly after the pair, goaltender.md's 3-on-2s paragraph
+    // and its facts Convention: line. The legend for the third own glyph is kept.
+    'The third own player in the picture is the backchecking centre, who has the middle attacker. ' +
     'The two defencemen retreat level with each other, the ' +
     'middle sealed between them — a staggered retreat opens a ' +
     'diagonal seam straight to the slot — and stop above the circles rather than backing all ' +
@@ -720,13 +725,15 @@ const threeOnTwoAlternative = {
     // (goaltender.md chunk 067 voices only "they fail in different directions"), and the ask.
     'splits": the ' +
     'attackers stand as in the two-wide default, and only the defence has ' +
-    'changed. The strong-side defenceman takes the carrier 1-on-1 with a tight gap; the ' +
-    'weak-side defenceman drops into the shaded lane and splits the middle and far attackers, ' +
+    // W602 (21 Nov 2026), caption-echo census: the two defencemen's jobs are CUT (the system's
+    // name already says them). defending_the_rush.md's blockquote after the pair and
+    // goaltender.md's 3-on-2s paragraph both state them; the shaded-lane legend is kept.
+    'changed. The weak-side defenceman is in the shaded lane. ' +
     // W464 follow-up, 18 Nov 2026: "The backchecker’s route" -> "The backchecking centre’s
     // route". The glyph is labelled C, as in the two-wide default (whose caption calls it "the
     // backchecking centre") and this diagram's own describe; naming it here ties the C to the
     // words. Label kept: C is the module's centre notation and the pair should match.
-    'as on a 2-on-1. The backchecking centre’s route ends in open ice because it takes the third ' +
+    'The backchecking centre’s route ends in open ice because it takes the third ' +
     'attacker, whichever that turns out to be, rather than the middle. ' +
     'This version never concedes the middle, but the weak-side defenceman covers two people ' +
     'and the far attacker gets more room; the two-wide default keeps three on three ' +

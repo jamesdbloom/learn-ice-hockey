@@ -185,16 +185,16 @@ const executionDrill = {
   half: true,
   width: 900,
 
+  // W602 (21 Nov 2026), caption-echo cut: "the next has a single defender added", "Taking the read
+  // out is what makes a skill practisable" and "The next frame adds one player, and the pass route
+  // goes with them" went; the two host paragraphs directly above the marker say all three. The
+  // coach's-decision hedge is untouched.
   caption:
-    'The first of two frames of the same drill rep: this one has nobody ' +
-    'defending, and the next has a single defender added. ' +
+    'The first of two frames: nobody defending. ' +
     'The dashed pass was the answer before the rep started, because ' +
     'no opposing skater in the picture could ' +
-    'take it away. Taking the ' +
-    'read out ' +
-    'is what makes a skill practisable, and this is not a bad drill; ' +
-    'what it cannot train is the choice. The next frame adds one player, and the pass route ' +
-    'goes with them. Which drills your team runs is your coach’s decision ' +
+    'take it away. This is not a bad drill; ' +
+    'what it cannot train is the choice. Which drills your team runs is your coach’s decision ' +
     'rather than a rule of hockey — so if a drill’s purpose is not obvious, ask.',
 
   describe:

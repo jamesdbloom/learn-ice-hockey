@@ -1629,8 +1629,12 @@ const shotBlockGetClose = {
     'Where to block a shot from, in your own end with your goalie at the right. An ' +
     'opposition defenceman has the puck at the point, and the faint dashed line is its straight path ' +
     'to the middle of your goal, not a marking on the ice. ' +
-    'Blocking ten feet from the shooter is far more effective than three feet in front of ' +
-    'your own goalie, where a deflection is a goal. How much your team blocks at all is a coaching ' +
+    // W602 (21 Nov 2026), caption-echo census: "ten feet from the shooter beats three feet in
+    // front of your goalie" is CUT. body_contact_and_battles.md says it under ⚠️ in the "Get
+    // close." paragraph directly above the marker, with its "safer is craft" disclosure;
+    // defender.md's "Get close." bullet directly below gives "Ten feet beats thirty" with its own.
+    // Hedge and the ⚠️ screening limb kept verbatim.
+    'How much your team blocks at all is a coaching ' +
     'choice, so find out which yours plays and ask your goalie what they want. ' +
     '⚠️ Where you would be screening your own goalie, do not block. A block there deflects a shot ' +
     'they could not see, so get out of the lane and let them see it. Anywhere else, commit fully or ' +

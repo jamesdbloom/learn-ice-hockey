@@ -237,12 +237,14 @@ const denyTheReception = {
   half: true,
   width: 900,
 
+  // W602 (21 Nov 2026), caption-echo cut: where the stick belongs ("in the lane, or on the
+  // receiver's blade as the puck lands — a press, not a chop") went; the host's "Arrive as the
+  // puck does" paragraph and its Action: facts line, both directly above the marker, say it
+  // word for word, with the slashing and interference consequences beside it.
   caption:
     'Deny the reception, not the pass. Drawn here as one instance: a pass from the wall ' +
     'into the middle of your own end. The read is the same wherever the pass goes. The pass ' +
-    'and the covering run are one instant, not a sequence. Your stick is not drawn. It ' +
-    'belongs in the lane, or on the receiver’s blade as the puck lands — a press, not a ' +
-    'chop. The route ends in two bars rather than an arrowhead because it finishes on ' +
+    'and the covering run are one instant, not a sequence. Your stick is not drawn. The route ends in two bars rather than an arrowhead because it finishes on ' +
     'ice, not on a person. No contact is drawn. What an arrival like this may end ' +
     'in depends on whether your league allows body checking. Come from where the receiver ' +
     'can see you, and never finish into the back of a player turned away from you. Who ' +
@@ -366,11 +368,15 @@ const showAShoulder = {
   // bare imperative to the negation. "but" is the resolver the rest of this corpus uses.
   // ⚠️ Kept OUT of the string run on purpose: a // line inside `caption:` ends the run
   // for check_caption_negations.py's CAPTION regex, which then scans only the prefix.
+  // W602 (21 Nov 2026), caption-echo cut: "but it works the same way: skate at the outside
+  // shoulder ..." went; the host's "Showing one option to open another" bullet directly above
+  // the marker states both directions. "here" is KEPT (the sketch dropped it): the mirror IS
+  // drawn elsewhere, so the sentence would be false without it. No colon tail is left for the
+  // negation to carry onto.
   caption:
     'The carrier’s line is aimed at the inside shoulder, the one toward the middle of the ' +
     'ice; the defenceman closes the middle — the shaded band — and the ice between them and ' +
-    'the boards is what opens. The mirror is not drawn here, but it works the same way: ' +
-    'skate at the outside shoulder, the defenceman widens, and the middle opens instead. ' +
+    'the boards is what opens. The mirror is not drawn here. ' +
     'The line stops well short of the defenceman and no contact is drawn. A defender who ' +
     'does not bite gives you nothing, so read this as a defender who moved and not as a ' +
     'promise that they will. The band is not painted on the ice. Its sides are the two ' +

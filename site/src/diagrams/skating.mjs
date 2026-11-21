@@ -279,11 +279,13 @@ const pivotTowardTheBoards = {
   // the ⚠️ boarding limb, whose closed four-book list was then replaced by "every rulebook" at the
   // safety review (PWHL 41.1 and CARHA 49 also write one; matches the host's :613 facts line and :624
   // ⚠️ body) — do NOT restore the four-book list. The glyph and the spoken "Important." stay.
+  // W602 (21 Nov 2026), caption-echo cut: "where the shooting angle is poor and the wall is a
+  // second defender" went; the host's lead paragraph and its Goal: facts line, both directly
+  // above the marker, say it. The ⚠️ boarding limb is untouched.
   caption:
     'If you are beaten in the pivot, this shows where each failure leaves you; the turn ' +
-    'itself is not drawn. Beaten toward the wall puts you out ' +
-    'past the faceoff dot heading for the corner, where the shooting angle is poor and the ' +
-    'wall is a second defender. Beaten into the shaded ice in the middle — the slot — is a ' +
+    'itself is not drawn. Beaten toward the wall leaves you ' +
+    'past the faceoff dot, heading for the corner. Beaten into the shaded ice in the middle — the slot — is a ' +
     'scoring chance, and that shading is a warning rather than a target. The distance drawn ' +
     'between the two players is not a gap figure. ' +
     '⚠️ And being beaten toward the wall is not an invitation to ride ' +

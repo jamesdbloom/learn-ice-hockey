@@ -571,7 +571,7 @@ Never hold it, carry it or drop it somewhere better; never cover a puck in your 
 
 **The word carrying all six is "immediately".** Knock it straight down where you caught it. Relocating the puck does not cure it. The IIHF's Situation Handbook works the case of a defender whose own net is empty, who grabs the puck *"out of mid-air (around the height of the waist)"* and drops it **outside** the crease: the answer is *"an Awarded Goal to Team B"* (Situation 67.6 — a worked application rather than rule text).
 
-**And the crease is a volume, not a patch of ice.** Every book runs it from the ice up to the level of the top of the goal frame. ⚠️ **So a puck you catch out of the air above your own paint, below the bar, is a puck in the crease** — the height you took it at buys you nothing. Knock it straight down and play it with your skate or your blade.
+**And the crease is a volume, not a patch of ice.** Every book runs it from the ice up to the level of the top of the goal frame. ⚠️ **So a puck you catch out of the air above your own paint, below the bar, is a puck in the crease** — the height you took it at buys you nothing.
 
 ![](diagram:the-puck-decides-not-you)
 

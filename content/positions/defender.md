@@ -101,7 +101,7 @@ Rule: Putting the puck deliberately outside the playing area is a two-minute del
 
 **When your partner has the puck, you are the second option and usually the voice.** Stand where a pass behind the net reaches you cleanly — usually the other side of the net, level with or just above the goal line. You can see the forecheck arriving behind your partner when they cannot, so the calls — "up", "over", "wheel", "reverse", "rim", "time", "man on" — are mostly yours. Say "time" only when you are sure: a false one sends your partner into a hit unbraced. Where you stand and who calls it are coaching choices; [Breakouts](../systems/breakouts.md) teaches the job in full, including where screening the net front for a wheel is and is not legal.
 
-**Key considerations:** Don't carry through the slot either. With no pass on, skate behind the net to the other side.
+**Key considerations:** Don't carry through the slot either.
 
 ---
 
@@ -835,8 +835,6 @@ Never: Let an attacker get between you and your net while you are defending — 
 
 Full detail in [Defending the Rush](../systems/defending_the_rush.md). The three situations you must have automatic:
 
-![](diagram:defender-two-on-one)
-
 - **1-on-1:** Gap control (see the neutral zone section above). Force them outside, keep your stick in the passing lane, don't lunge. Steer the carrier to a bad shooting angle rather than making a highlight hit. ⚠️ **Take the angle, not the player** — steering with your route is one act and riding a carrier into the wall is another, and the limits on the second are under [Gap control — the method](#gap-control--the-method) above.
 - **2-on-1:** **Take away the pass, give up the shot.** Sit in the passing lane between the two attackers, stick flat on the passing side. The shot is your goalie's — they can see it and are set for it; a cross-ice pass to an open forward is a chance they cannot save. Do not slide until the pass is released. **This is one of two legitimate systems, not a law:** the alternative is a **timed slide** across the lane to remove the pass and force the shot — go early and you are out of the play and cannot contest the rebound. **Ask your coach which you play**, and make sure your goalie gives the same answer. Do not carry the shot-blocking drop into it; how you go down is not settled teaching here, so ask the coach who wants the slide. ⚠️ **If you do go down, keep your head up and out of the shot lane.** **If the second attacker has been picked up by a backchecker and the shooter walks in unpressured with no realistic pass, it is no longer a 2-on-1 — close on the puck.**
 
@@ -847,6 +845,9 @@ Full detail in [Defending the Rush](../systems/defending_the_rush.md). The three
   **Never slide in from behind a carrier.** ⚠️ **That is checking from behind, which starts higher:** the IIHF reaches a hit from behind *"on open ice in any manner"* and leaves no minor, so plan on ejection there (43.2, 43.3). USA Hockey's floor is a minor plus a misconduct, and it ejects you if it is reckless or sends them head first into the boards or goal frame (608(b)). If it recklessly endangers a vulnerable or defenceless player with excessive force, it is a match penalty under USA Hockey, boards or not (608(c)). Careless contact with their head, face or neck ejects you under USA Hockey too (620(b)). Hockey Canada and CARHA attach a **game misconduct** to the minor, and must make a hit from behind into the net or boards a match penalty when the player cannot protect themselves; CARHA may give one for any hit from behind (53(a)).
 
   **The NHL and PWHL write no catch-all.** Their checking-from-behind major, which always carries a game misconduct, names a cross-check, push or charge from behind (43.3, 43.5), and a slide outside those words can still be called tripping or clipping. Every book but the IIHF, which has no match penalty, makes a match mandatory if you meant to injure them. On the head, Hockey Canada calls it head contact (7.6; in Junior and Senior, 7.7, unless the violence is minimal) — ⚠️ **a mandatory match if they cannot protect themselves** (7.6(c); 7.7(c)) — and plan on the game misconduct anyway. What a hit from behind costs comes later, in [A hit from behind](#a-hit-from-behind).
+
+![](diagram:defender-two-on-one)
+
 - **3-on-2:** There are **two named systems here, and you need to know which your team plays** — a coaching choice, not a law. The common default is **"two wide, middle to the backchecker"**: each defenceman takes an outside attacker, nobody chases the carrier, and the middle attacker belongs to whoever is backchecking the middle lane — usually the centre, though which backchecker owns it is itself a coaching choice (see [Centre](center.md) and [Winger](winger.md)).
 
   The realistic alternative is **"strong side takes the puck, weak side splits"**: the strong-side defenceman plays the carrier as a 1-on-1, and the weak-side defenceman drops off to split the middle and the far attacker, sitting in the passing lane as on a 2-on-1. The default concedes the middle if the backcheck does not arrive; the alternative never concedes the middle but gives the far attacker more room. **Ask your coach which** — two defencemen running different versions on the same rush is worse than either. Under both: retreat together and keep the middle sealed as long as possible.
