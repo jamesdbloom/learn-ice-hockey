@@ -69,7 +69,7 @@ Average players who always offer two options give the defence a problem effort c
 
 ### Why this is the hardest thing to learn
 
-Because it is invisible. Everyone sees the great pass; nobody claps the teammate whose positioning made it possible three seconds earlier. So most players never get feedback on spacing and never fix it. Give it to yourself: after a shift, ask where you were each time the puck moved, and whether the carrier could have used you. Section 12 shows how.
+Because good spacing is invisible. Everyone sees the great pass; nobody claps the teammate whose positioning made it possible three seconds earlier. So most players never get feedback on spacing and never fix it. Give it to yourself: after a shift, ask where you were each time the puck moved, and whether the carrier could have used you. Section 12 shows how.
 
 ---
 
@@ -375,7 +375,7 @@ On a young or new team the puck seems to have gravity. Ten players end up in a f
 ### Why players do it
 
 1. **The puck is where the action is.** Your eyes follow it, and your legs follow your eyes.
-2. **It feels like effort.** Skating hard at the puck feels like trying; skating *away* from it feels like slacking. Coaches who reward visible effort train this in.
+2. **Chasing the puck feels like effort.** Skating hard at the puck feels like trying; skating *away* from it feels like slacking. Coaches who reward visible effort train this in.
 3. **Nobody wants to be the player who wasn't there.** Near the puck, at least you were involved.
 
 ### Why it is wrong

@@ -469,7 +469,7 @@ What the head-up habit takes (full treatment in [Puck Handling](../technique/puc
 
 ## Anticipation versus guessing
 
-They look the same when they work and the same when they fail, but they are not the same thing. **Anticipation is acting on information. Guessing is acting on hope.**
+Anticipation and guessing look the same when they work and the same when they fail, but they are not the same thing. **Anticipation is acting on information. Guessing is acting on hope.**
 
 ```facts
 Key: Anticipation is acting on information; guessing is acting on hope

@@ -143,7 +143,7 @@ Kornell, Hays and Bjork (2009) found that even a failed attempt beats spending t
 
 ### Improvement is not a line
 
-It is a staircase with long flat sections and the occasional step down. Most players picture a smooth upward curve, and that picture makes them quit at exactly the wrong moment. **Judge your progress over months, not sessions.**
+Improvement is a staircase with long flat sections and the occasional step down. Most players picture a smooth upward curve, and that picture makes them quit at exactly the wrong moment. **Judge your progress over months, not sessions.**
 
 Even the textbook smooth "power law of practice" is partly an artefact of averaging. Heathcote, Brown and Mewhort argued in *The power law repealed* (2000) that the smooth shape comes from averaging across people rather than describing any one of them. (That paper is reported here at the level of its central claim only.)
 

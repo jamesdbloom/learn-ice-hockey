@@ -933,9 +933,9 @@ const crossTheRoadYourself = {
     // ⚠️ WHAT WAS NOT CUT: the "no figure attaches to the CARRY" hedge, because the 15.50%
     // is a measurement of PASSES and this picture draws two carries -- and the safety limb
     // below, whose placement after a completed sentence is load-bearing (see the note on it).
-    'Crossing the royal road with your feet rather than with a pass: driving off the ' +
-    'strong-side half-wall into the high slot, or curling out from behind the net into the ' +
-    'slot. Both finish on the far side of the line and drag the goalie across the way a ' +
+    // W595 (21 Nov 2026), caption-echo census: opening shortened only; the 15.50% hedge and the ⚠️ limb untouched.
+    'Two carries across the royal road: off the half-wall into the high slot, or out from behind ' +
+    'the net into the slot. Both finish on the far side of the line and drag the goalie across the way a ' +
     'pass does — though the 15.50% this document quotes measures passes, and no figure here ' +
     'measures the carry. Only one of the two happens, so no puck is drawn. ' +
     // ⚠️ Placed AFTER the caption's last complete sentence, not inside one.

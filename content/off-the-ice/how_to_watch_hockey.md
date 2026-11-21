@@ -322,7 +322,7 @@ The half-second after a shot is the highest-value moment in the game, and the on
 
 ## Part 4: Live Versus Television
 
-They teach different things. Use both, and know which one you are using.
+Live and televised hockey teach different things. Use both, and know which one you are using.
 
 ### Live is far better for structure
 

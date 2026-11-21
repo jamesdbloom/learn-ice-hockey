@@ -221,12 +221,15 @@ const trap122 = {
   // routes the order is not in doubt anyway.
 
   caption:
-    'A 1-2-2 with the layers dropped back and the intent changed — this is the neutral zone trap. ' +
-    'F1 sits high in the opponents’ zone still splitting the ice in half, F2 and F3 are at the ' +
-    'red line on the walls, and the defence holds your own blue line rather than contesting ' +
-    'theirs. The carrier is allowed to skate and is steered to a wall, into F2 stepping up with ' +
-    'the strong-side defenceman behind F2 and no lane through the middle. Depth is the tell a ' +
-    'still frame can show; whether F1 is closing or gliding is not.',
+    // W595 (21 Nov 2026), caption-echo census: both hosts voice the trap's definition beside the marker
+    // (neutral_zone_systems.md "What makes it a trap"; how_to_watch_hockey.md "dropped to the red line").
+    // F1 is drawn at (31, 0), 6 ft inside their blue line -- the host's "at or near their blue line".
+    // KEPT: the picture's positions and the closing still-frame disclosure.
+    'The 1-2-2 trap, layers dropped back: F1 just inside their blue line still splits the ice, F2 ' +
+    'and F3 sit at the red line on the walls, and the defence holds your own blue line. The carrier ' +
+    'is steered to a wall, into F2 stepping up with the strong-side defenceman behind and no lane ' +
+    'through the middle. Depth is the tell a still frame can show; whether F1 is closing or gliding ' +
+    'is not.',
 
   describe:
     'The full sheet, our net at the left and the opponents’ at the right, with the opponents ' +

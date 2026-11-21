@@ -978,10 +978,10 @@ Some teams send only one forward to pressure and have the other two retreat at o
 
 ### Against a standing-up defence
 
-They hold the blue line, take away the middle, and dare you to go around.
+Standing-up defenders hold the blue line, take away the middle, and dare you to go around.
 
 ```facts
-Read: A standing-up defence holds the blue line, take away the middle, and dare you to go around
+Read: A standing-up defence holds the blue line, takes away the middle, and dares you to go around
 Action: Chip and chase past them — a defenceman standing still has no momentum to recover, so this is the ideal chip situation
 Action: Attack the seam between the two of them — two defenders holding a line have a gap between them by definition
 Action: Use a late player — standing up requires them to watch the puck, so a fourth attacker arriving behind the play is often unmarked
@@ -1018,7 +1018,7 @@ See [Neutral Zone Systems](neutral_zone_systems.md).
 
 ### Against an aggressive gap
 
-They close hard and early, well before their own line.
+Aggressive-gap defenders close hard and early, well before their own line.
 
 ```facts
 Read: Defenders playing an aggressive gap close hard and early, well before their own line

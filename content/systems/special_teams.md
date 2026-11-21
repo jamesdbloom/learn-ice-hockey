@@ -208,9 +208,9 @@ Key: "Box" names both this power-play spacing and the standard penalty-kill shap
 
 **Strengths:** the maximum geometric stress you can put on a small defensive unit. Creates backdoor plays almost automatically, because the weak-side low player is simply too far away for the kill's low defender to reach.
 
-**Weaknesses:** at 5-on-4 the passes are long, and long passes are interceptable and can be blocked by a well-placed stick. It surrenders the possession game — you are not cycling, you are waiting.
+**Weaknesses:** at 5-on-4 the passes are long, and long passes are interceptable and can be blocked by a well-placed stick. The spread surrenders the possession game — you are not cycling, you are waiting.
 
-**Suits:** it is the standard **5-on-3** shape (see below), and it is worth using at 5-on-4 against a kill that has collapsed so tightly it has conceded the outside entirely.
+**Suits:** the spread is the standard **5-on-3** shape (see below), and it is worth using at 5-on-4 against a kill that has collapsed so tightly it has conceded the outside entirely.
 
 #### 2-3 — the older structure
 

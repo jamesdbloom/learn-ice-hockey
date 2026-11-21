@@ -322,7 +322,7 @@ The effects were "not moderated by the type of PPR, age, gender, skill level, or
 
 ### Routine versus superstition — one test
 
-They look identical from outside. The test is simple: **if you cannot do it, does it wreck you?**
+A routine and a superstition look identical from outside. The test is simple: **if you cannot do it, does it wreck you?**
 
 A routine is what you do for its effect — a warm-up that raises body temperature, breathing that settles you, imagery that primes the patterns. In a different room, or when you are late, you compress it and you are fine.
 

@@ -130,9 +130,10 @@ const sixOnFive = {
     'points — the area just inside the blue line, not the line itself — two on the half-walls level ' +
     'with the faceoff dots, one at the net front, and one below the goal line, who can sit in the ' +
     'middle instead. The five defenders are not drawn, and your own net is empty at the far end. ' +
-    'Which shape your team uses at 6-on-5 is a system choice and not a rule of hockey — an umbrella, ' +
-    'an overload, or a net-front body added to your normal power-play look. So learn yours in ' +
-    'practice. Who is out there, and who stands where, is a team choice too.',
+    // W595 (21 Nov 2026), caption-echo census: the two team-choice sentences merged; the point and half-wall
+    // glosses (rink_map's definitions) kept.
+    'Which shape, and who stands where, is your team\'s choice — an umbrella, an overload, or a ' +
+    'net-front body added to your power-play look — so learn yours in practice.',
 
   describe:
     'The attacking half of the rink, the opposition net at the right and their goalie in the ' +

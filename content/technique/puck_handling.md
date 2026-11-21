@@ -830,7 +830,7 @@ Never: Use straight-line speed every rush — it leaves the defender only one pr
 ```facts
 Key: A defender who has committed weight in one direction cannot recall it
 Read: If they lunge or reach with the stick, their weight is forward — go around them, not through them
-Read: If they turn their hips to the wall, the middle is open behind them
+Read: If the defender turns their hips to the wall, the middle is open behind them
 Action: Against a hard backwards skater, a sudden stop leaves them retreating into space you no longer occupy
 ```
 

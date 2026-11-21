@@ -1618,11 +1618,12 @@ const squashAndSlide = {
   width: 900,
 
   caption:
-    'You are defending here. Both defencemen hold the same depth and slide across together ' +
-    'like a foosball bar: the puck is wide on one side, so the defenceman on the puck\'s side forces the carrier ' +
-    'outside while the other slides the same distance with their partner. The first forward back protects the slot. Described ' +
-    'publicly of Bruce Cassidy\'s Boston Bruins around 2018-19, not a universal system — find ' +
-    'out which your team runs.',
+    // W595 (21 Nov 2026), caption-echo census: the sole host's bullet directly above the marker tells the foosball-bar
+    // story and carries the Cassidy / Bruins 2018-19 attribution, and the paragraph after it says "These
+    // are systems, not laws ... Ask". Kept: the system's name, the picture, and the not-universal hedge.
+    'You are defending: squash-and-slide. The puck is wide, so the puck-side defenceman forces the ' +
+    'carrier outside and their partner slides across at the same depth; the first forward back holds ' +
+    'the slot. One team\'s system, not a universal one.',
 
   describe:
     'The attacking half of the rink from the defending team’s point of view, their own net ' +

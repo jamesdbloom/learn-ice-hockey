@@ -832,12 +832,13 @@ const twoOnOne = {
   width: 900,
 
   caption:
-    'A two-on-one: take away the pass and give up the shot. Sit in the passing lane between the ' +
-    'attackers with your stick flat on the passing side and back up under control. The shot is one ' +
-    'your goalie can see and set for; the cross-ice pass is a chance they cannot save. It is a ' +
-    'common system, not a law: the alternative is a timed slide across the passing lane, ' +
-    'so ask your coach which one you play. No backchecker is drawn, because one would make this a ' +
-    'different situation.',
+    // W595 (21 Nov 2026), caption-echo census: sole host defender.md; its 2-on-1 bullet, directly after the marker
+    // line, voices the why (the goalie can see the shot) and "Ask your coach which you play". KEPT: the
+    // instruction, the two-systems disclosure and the no-backchecker picture note.
+    'A two-on-one: the defenceman sits in the passing lane between the attackers, stick flat on the ' +
+    'passing side, backing up under control — taking the pass away and leaving the shot to the ' +
+    'goalie. One of two systems; the other is a timed slide. No backchecker is drawn, because one ' +
+    'would make this a different situation.',
 
   describe:
     'The defending half of the rink, your own net at the right. Two opposition forwards attack ' +

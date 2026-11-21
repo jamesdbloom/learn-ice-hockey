@@ -310,11 +310,12 @@ const failureModes = {
   width: 900,
 
   caption:
-    'The same goalie drawn twice, against one shooter, and neither position is one to play ' +
-    'from. One is hiding deep in the net, where the corners are open. The other has run at the ' +
-    'shooter, out level with the hash marks and about twenty feet from the goal line, where the ' +
-    'first pass or the first change of direction beats them. Both are confidence problems rather ' +
-    'than technique problems.',
+    // W595 (21 Nov 2026), caption-echo census: the paragraph directly above the marker states the two failure modes,
+    // what beats each, and "confidence problems, not technique problems". The hash-mark figure is kept
+    // exactly as the host gives it ("about twenty feet from your goal line"); drawn at x 68.99.
+    'The same goalie drawn twice against one shooter: too deep, with the corners open, and too far ' +
+    'out — level with the hash marks, about twenty feet from the goal line. Neither is a position to ' +
+    'play from.',
 
   describe:
     'The defending half of the rink, the defended net at the right. One opposition ' +
@@ -721,13 +722,12 @@ const breakawayRetreat = {
   width: 900,
 
   caption:
-    'One attacker, you, and a lot of time to think — which is the actual difficulty. The answer ' +
-    'drawn here is to meet them well out and then back in on C-cuts, matching their speed so the ' +
-    'angle stays closed the whole way, keeping a little backward motion throughout and staying on ' +
-    'your feet as long as you possibly can. How far out "well out" is is a read rather than a ' +
-    'distance and this document gives no figure for it, so treat the position drawn as an ' +
-    'example. What to watch is a genuine coaching split — the puck, or the chest and hips — so ' +
-    'ask your goalie coach which they teach and be consistent about it.',
+    // W595 (21 Nov 2026), caption-echo census: the bullets directly above the marker (come out and retreat, keep flow,
+    // stay on your feet, what to watch) state everything cut here, the coaching split in full with its
+    // "ask your goalie coach". KEPT: the "well out" disclosure, which qualifies the drawn position.
+    'A breakaway: the goalie meets the shooter well out and backs in on C-cuts at their speed, ' +
+    'keeping the angle closed and staying on their feet. "Well out" is a read rather than a distance. ' +
+    'No figure is given for it, so the position drawn is an example.',
 
   describe:
     'The defending half of the rink, the defended net at the right. One opposition forward ' +
