@@ -13,16 +13,14 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W613 shipped with record `w613_long_facts_tightened_and_ozp_686_2026-11-21.md`. Still open from the W612 census (table `../reviews/w612_long_facts_rows_2026-11-21.tsv`):
+- W613 shipped with record `w613_long_facts_tightened_and_ozp_686_2026-11-21.md`. Still open from the W612 census (table `../reviews/w612_long_facts_rows_2026-11-21.tsv`):
   - 9 class-B splits in ozp;
   - the IHUK DOPS line, word-identical in 8 documents;
   - hit-from-behind tariffs stated four times in ozp;
   - long facts lines in goaltender (141 over 40 words) and forechecking (55), not reviewed;
-  - a census for facts lines that read as commands when they describe a situation (the :686 shape), not yet run.
+- None. W614 and W615 shipped with record `w615_command_shaped_lines_and_free_faceoff_attempt_2026-11-21.md`.
 
-W611 shipped as b9d2c7d7.
-
-  W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+  W613 shipped as c0cfc9c1. W611 shipped as b9d2c7d7. W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W599 (21 Nov):**

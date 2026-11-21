@@ -829,7 +829,7 @@ Rule: The In-House Rules have the carve-out too — their 2026-27 Rule 76 replac
 Rule: Hockey Canada writes the carve-out but rations it by division — in Junior divisions only, any post-icing faceoff violation is a warning and a subsequent one a minor (Hockey Canada Rules 6.5(a), 6.5(b))
 Rule: USA Hockey and CARHA write no post-icing carve-out at all — after an icing the centre comes off exactly as on any other draw (USA Hockey Rule 613, CARHA Rule 57)
 Key: Under the NHL and IIHF the warning is per team, so each side has its own free one; the PWHL rule does not say so
-Action: After an icing, use your free attempt to cheat the timing, and expect their centre to use theirs — but find out which book, and under Hockey Canada which division, before you plan on one
+Action: After an icing under the NHL, IIHF, In-House Rules or Hockey Canada Junior, use your one free attempt to cheat the timing and expect theirs; PWHL, assume one per draw; USA Hockey and CARHA give none
 ```
 
 **On a draw after an icing, each team gets one free violation under the NHL book — and so does the other team.** Rule 76.4: *"When an icing infraction occurs, the first face-off violation by either team will not result in the center being removed. The center will be warned by the Linesperson that the team has committed their first face-off violation, and any subsequent violation by that team will result in a bench minor penalty for delay of game - face-off violation being assessed."*

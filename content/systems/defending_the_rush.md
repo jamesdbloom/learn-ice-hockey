@@ -468,7 +468,7 @@ Never: Both defenders converge on the carrier — that opens the ice behind you 
 Action: One defender takes the puck, normally the one on the carrier's side, and plays it as a 1-on-1 with a very tight gap
 Position: In a 1-on-2, the defender not taking the puck stays back and inside, covering the trailer who has not arrived yet
 Key: The engaged defender can afford to be aggressive with the gap — a miss leaves your partner in a 1-on-1 rather than nothing
-Rule: Cover behind you is no defence to charging — USA Hockey Casebook 607, Situation 3 calls accelerating through a check charging even without the two fast strides, and Hockey Canada 7.4(ii) needs only two
+Rule: Having cover behind you is no defence to charging — USA Hockey Casebook 607, Situation 3 calls accelerating through a check charging even without the two fast strides, and Hockey Canada 7.4(ii) needs only two
 Action: Call who engages — "I've got them" from the engaging defender, so the other holds
 ```
 
