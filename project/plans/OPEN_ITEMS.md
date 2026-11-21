@@ -13,9 +13,9 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W603 and W604 shipped with record `w604_short_caption_echoes_2026-11-21.md`.
+- None. W605 shipped with record `w605_608c_condition_clipped_carha_and_net_front_lead_ins_2026-11-21.md`.
 
-  W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+  W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
 - **From W599 (21 Nov):**
@@ -27,14 +27,14 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(2) CARHA was not searched** for its own save-then-cover or sliding-trip rules (goaltender :425, risk_management :673).
 - **From W595 (21 Nov):**
   - [(1) closed in W601–W604 for all captions. Paraphrase beyond two blocks, and across documents, is not censused.] Caption echoes the tool cannot see: restatement two blocks away, and paraphrase. Examples: goalie-breakaway-retreat's first sentence, nz-1-2-2-trap's opening, and getting-beaten-wide's middle sentence restated below it.
-  - **(2) Optional, needs a safety ruling:** trim the lead-in sentences at defender :270 and goaltender :1398 that repeat net-front-walk-out-direction's goal-frame limb.
+  - [(2) closed in W605: a safety ruling allowed the trims at defender :268 and goaltender :1396. **Condition:** both now rely on the net-front-walk-out-direction caption for the goal-frame limb, so any change to that caption must be checked against defender and goaltender, not only body_contact.]
   - [(3) closed in W602: the marker moved after the 2-on-1 item.] defender-two-on-one's marker sits before a three-item list, but the picture is only the 2-on-1. Consider moving it after that bullet.
 - **From W533 (20 Nov; row 1 closed in W535, row 3 mostly closed, row 2 in W536):**
   - **(3) The honest-attempt rung at goaltender facts :1266** (299/300, its block is at HARD_MAX) still has no 620 overlay. Its sibling :1262 carries 620(b). Left in W535.
 - **From W541 (20 Nov):**
   - **(1) Eight captions are still over 800 characters, on purpose:** pk-wedge-plus-1 (939, since W545's level caveat), faceoff-dzone-alignment, forecheck-212, the-trapezoid, forecheck-pinch, forecheck-122, the-call-and-who-can-see-it and winger-dz-rim. Each carries a limb that some host needs from the caption alone; the reasons are in the record.
 - **From W576 (20 Nov):**
-  - **(2) Optional consistency:** outside DZC, the USA Hockey 608(c) clause reads "a match if reckless with excessive force (608)" without "on a vulnerable or defenceless player" (goaltender :1310/:1660, on_ice :621, defender :942/CM :1024). This errs harsh. Add the condition when those pages are next edited.
+  - [(2) closed in W605: the 608(c) condition was added at goaltender :1310/:1662, on_ice :621 and defender :945/:1027.]
   - [(1) closed in W578: the four winger net-front cross-check units carry the from-behind route with the W577 USA Hockey clause.]
 - **From W572 (20 Nov):**
   - [(1) closed in W575: a back cross-check can be called checking from behind in every book, and under CARHA its Note bars any other call.]
@@ -46,7 +46,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - **(1) center now carries CARHA 53(a)'s clause in seven units** (:691, :709, :792, :894, :899, CM :918, :929). Do not add an eighth. If center is edited for readability, drop the body copies at :709 and :792 first, because the nearest facts line carries the clause.
   - **(2) Optional, errs harsh:** most sites say CARHA can make "any hit from behind" a match. 53(a) reaches an *intentional* push, check or hit from behind. center :899 uses "intentional".
   - **(3) [Closed in W573 for 48(a), Case 49 and 54(b) at the census sites.] Still not checked:** units pricing CARHA without naming it, and other acts' ladders (62 high stick, 49(b) boarding, 50 head) beyond the census.
-  - **(4) Two at-cap facts lines end on a clipped phrase:** defender :826 "CARHA 53(a) allows one for any" and switching_positions :246 "CARHA may for any". If either block frees room, write "…for any hit from behind".
+  - **(4) Partly closed in W605:** defender :828 now ends "CARHA 53(a) may for any intentional hit from behind" (300/300). switching_positions :246 (299/300) still ends "CARHA may for any" and "USA Hockey if reckless, excessive" (missing "force"). Both read harsher than the rule. A fix needs the block (at HARD_MAX 14) rewritten. Its body at :274 also says "any hit from behind" without "intentional".
 - **From W568 (20 Nov):**
   - **(1) Optional citation tidies (rules-verifier census; none needed for accuracy).** NHL 82.1, IIHF 82.1 and PWHL 84.1 are genuine second sources for the post-icing change bar.
     - game_management :1366 Sources: "— restated at Rule 82.1…" sits after the Hockey Canada clause, so it reads as Hockey Canada's. Move it after the NHL 63.8 clause.
