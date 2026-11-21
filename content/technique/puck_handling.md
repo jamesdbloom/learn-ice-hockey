@@ -494,7 +494,7 @@ In those non-checking games, if you turn and hit the checker instead of protecti
 **In short:** Brace with your free hand high on your own stick; never grab an opponent, their stick or their cage.
 
 ```facts
-Rule: The free hand may fend off an opponent or their stick but never hold either — NHL and IIHF 56.1 and PWHL 57.1; USA Hockey's Rule 622 is silent and its Casebook writes the permission instead, on conditions; Hockey Canada 8.1 permits blocking a stick but not holding it; CARHA writes no permission
+Rule: The free hand may fend off an opponent or their stick but never hold either — NHL and IIHF 56.1 and PWHL 57.1; USA Hockey's Casebook, the body only, with the puck or reaching for it in a corner or net-front battle; Hockey Canada 8.1 lets you block a stick, never hold it; CARHA writes no permission
 Rule: USA Hockey writes the fend-off permission in its Casebook only, and conditions it — control the puck (Standard of Play Situation 6) or be reaching for it, engaged in a corner or in front of the goal (Situation 7), hold a position you "legally established", and never push off to create space
 Rule: Holding starts as a minor everywhere and stays one in NHL and IIHF 54 and PWHL 55; injury brings a major and game misconduct in Hockey Canada 8.1(b) and CARHA 63(b), and CARHA 63(a) allows a major anyway, with its game misconduct (30(a))
 Rule: USA Hockey 622(b) makes rubbing, grabbing or holding an opponent's cage a major plus game misconduct; fingers inside it that twist or pull, a mandatory match (622(c), Casebook 622 Sit. 3); any reckless hold, a match (602(a)) — each match a likely multi-game ban

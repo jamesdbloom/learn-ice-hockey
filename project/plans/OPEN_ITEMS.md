@@ -13,11 +13,14 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W594 and W595 shipped with record `w595_pronoun_openers_caption_echoes_and_trapezoid_2026-11-21.md`.
+- None. W596 and W597 shipped with record `w597_stranded_grants_and_usa_hockey_goalie_cover_2026-11-21.md`.
 
-  W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+  W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
 ## Carry-overs from waves SG93–SG133 (open)
+- **From W597 (21 Nov):**
+  - **(1) Not reached by the W596 census:** about 320 non-grant chunk-terminal values, the 29 Never: values, and grants in body prose (`check_chunk_tails --prose`).
+  - **(2) CARHA was not searched** for its own save-then-cover or sliding-trip rules (goaltender :425, risk_management :673).
 - **From W595 (21 Nov):**
   - **(1) Caption echoes the tool cannot see:** restatement two blocks away, and paraphrase. Examples: goalie-breakaway-retreat's first sentence, nz-1-2-2-trap's opening, and getting-beaten-wide's middle sentence restated below it.
   - **(2) Optional, needs a safety ruling:** trim the lead-in sentences at defender :270 and goaltender :1398 that repeat net-front-walk-out-direction's goal-frame limb.

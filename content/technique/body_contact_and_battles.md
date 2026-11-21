@@ -199,7 +199,7 @@ In practice, the women's-game standard is very close to the standard for **legal
 **In short:** Keep your hands off opponents and stay in your own half in the warm-up — no book here treats it as off the record.
 
 ```facts
-Rule: Three books penalise the pre-game warm-up — USA Hockey 502(b), "Penalties may also be assessed during the warm-up period"; Hockey Canada 2.2(j), the penalty "served at the start of the game"; CARHA 27(b), for infractions "committed during the pre-game warm-up, when observed by the Referee"
+Rule: USA Hockey 502(b) and Hockey Canada 2.2(j) penalise any warm-up offence, Hockey Canada's served at the start of the game, as does CARHA 27(b) "when observed by the Referee"; the NHL and PWHL (46.9) and IIHF (46.8) give a fight "other than during the periods of the game" a major and game misconduct
 Rule: IIHF Rule 5.6's "No penalties are to be assessed but a report of the incident must be submitted to the Proper Authorities" is the enforcement clause for that rule's own terms on warm-up equipment, roster and timing — identical in both editions, and not a general amnesty for warm-up conduct
 Rule: A warm-up fight is penalised on the night under the IIHF — players fighting "other than during the periods of the game shall be assessed a major penalty for fighting and an automatic game misconduct" (Rule 46.8 in the 2026/27 book; the same rule is numbered 46.9 in 2025/26 Version 1.1)
 Rule: In the EIHL the warm-up is a non-contact period by rule — Casebook 86.6(i), "Physical contact between players on opposing teams is not allowed during the warmup and players are not allowed to skate over the centre red line during this time"
