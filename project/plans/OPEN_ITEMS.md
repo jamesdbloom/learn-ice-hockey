@@ -13,7 +13,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W606 shipped with record `w606_capped_hit_from_behind_lines_2026-11-21.md`. W605 shipped as 8662ac45, and 1152e014 is the caption-pairs CARRIES entry.
+- None. W607 shipped with record `w607_carha_53a_intentional_2026-11-21.md`. W606 shipped as 0ef3126d.
 
   W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
 
@@ -44,7 +44,7 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
   - [(5) closed in W576/W577.]
 - **From W571 (20 Nov):**
   - **(1) center now carries CARHA 53(a)'s clause in seven units** (:691, :709, :792, :894, :899, CM :918, :929). Do not add an eighth. If center is edited for readability, drop the body copies at :709 and :792 first, because the nearest facts line carries the clause.
-  - **(2) Optional, errs harsh:** most sites say CARHA can make "any hit from behind" a match. 53(a) reaches an *intentional* push, check or hit from behind. center :899 uses "intentional".
+  - [(2) closed in W606/W607: CARHA 53(a)'s discretionary match now reads "intentional" at about 33 sites.] **Still open, errs harsh:** sites that state 53(a)'s *game misconduct* without "intentional": center :688/:891 (at cap) and :792, rules_primer :496 and :1125, shooting :539 and :957, winger :876 and :930, gm :1221's bold opener.
   - **(3) [Closed in W573 for 48(a), Case 49 and 54(b) at the census sites.] Still not checked:** units pricing CARHA without naming it, and other acts' ladders (62 high stick, 49(b) boarding, 50 head) beyond the census.
   - [(4) closed in W605/W606: defender :828 and switching_positions :246/:247 are complete. CARHA 53(a) now reads "intentional" at seven sites in those two files.]
 - **From W568 (20 Nov):**
