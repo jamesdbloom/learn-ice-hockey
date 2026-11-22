@@ -623,10 +623,29 @@ const TWO_SECOND = { at: 'top-of-circle:right', dx: -9, dy: -15 }; // (45, 7)
 // site/scripts/lib/rink.mjs — and an arrowhead here would have been illegal anyway, since
 // the tip would then lie inside the 9 ft the invariant's form (b) forbids for a route
 // finishing on an opposing skater ahead of it.
-// The route runs (45, 7) -> (43.43, 20.09), 13.18 ft long. It comes no nearer than
-// 13.10 ft to the first defenceman and 25.62 ft to the end-zone dot, so it crosses no
-// paint and no glyph.
-const TWO_SECOND_TO = { at: 'top-of-circle:right', dx: -10.57, dy: -1.91 }; // (43.43, 20.09)
+// The route runs (45, 7) -> (41, 20), 13.60 ft long. It comes no nearer than 14.87 ft
+// to the first defenceman and 27.35 ft to the end-zone dot, so it crosses no paint and
+// no glyph.
+//
+// ⚠️ RE-AIMED 22 November 2026, AND THE TIP WAS (43.43, 20.09). There the terminal
+// tangent ran DEAD THROUGH the carrier's anchor — d 12.00 ft, theta 0.0 deg, miss 0.00 —
+// so the two bars sat on a line that, continued, went straight through the reader's own
+// player. check-arrivals form (f) reported it. The owner's 22 November policy holds an
+// opposition route to the same drawing standard as one of ours (diagram-reviewer.md,
+// arrival test rule 4), so the line is fixed rather than the caption.
+// Now: d 12.04 ft, theta 21.9 deg, miss 4.48 ft (> ARRIVAL.glyph 2.9, 1.2 ft of white
+// past the carrier's 3.275 ft of ink). The tangent passes the carrier on the BLUE-LINE
+// side — it crosses y = 32 at x = 37.3 — which is the only side the geometry allows:
+// rotating it to the net side swings the bars into the pass, and a sweep of tips with
+// d 11-13 ft and miss >= 3.5 found none on that side with the bars 2.5 ft off the pass
+// spine (see THE TWO-BAR TERMINAL AND THE PASS below). It still says what it said: a
+// second man coming across from the middle and stopping short to close. Nothing in the
+// picture fixes the carrier's facing (no pass arrives at them, they are 10.5 ft off the
+// boards), and the approach is from the middle, i.e. from the side, not from behind.
+// The extended tangent passes 2.46 ft off the puck disc, 16.5 ft beyond the tip and BEYOND
+// the carrier, so it does not read as aimed at a puck short of him.
+// ASSUMES rink.json as on disk 22 November 2026: top-of-circle (54, +/-22), dot (69, +/-22).
+const TWO_SECOND_TO = { at: 'top-of-circle:right', dx: -13, dy: -2 }; // (41, 20)
 
 // THE TEAMMATE THE SECOND MAN LEFT. (57.5, 8) is in the middle of the ice, 12.54 ft from
 // where that opponent is standing — near enough that the reader can see whose ice it was,
@@ -762,6 +781,15 @@ const TWO_CHIP_TO = { at: 'top-of-circle:right', dx: 6, dy: 15 };  // (60, 37)
  * no paint. The bars clear the chip by 12.16 ft. The price is the teammate at 12.54 ft
  * from the opponent rather than 10.77, which is still inside the 14.42 this spec rejected.
  *
+ * ⚠️ THE FIGURES IN THE PARAGRAPH ABOVE ARE FOR THE OLD TIP (43.43, 20.09) AND ARE KEPT AS
+ * THE RECORD OF WHY THE LAYOUT IS WHAT IT IS. On 22 November 2026 the tip moved to (41, 20)
+ * so the bars' tangent stops running through the carrier (see TWO_SECOND_TO). That rotates
+ * the route AWAY from the pass, so every figure improved: the route and pass now leave the
+ * carrier 37.6 degrees apart rather than 26.0, every drawn bar point is at least 5.42 ft from
+ * the pass spine (was 3.46), the nearest bar point to the end-zone dot is 25.82 ft (was
+ * 23.62), and the bars clear the chip by 11.45 ft (was 12.16). Measured on bars of
+ * half-length 2.0 and set-back 1.4 at len 13.60, sampled every 0.1 ft along each bar.
+ *
  * DO THE ROUTES CROSS EACH OTHER? A and B share their start and diverge immediately, one
  * down to (54.24, 13.04) and one up to (60, 37).
  */
@@ -818,7 +846,8 @@ const youCannotBeatTwo = {
     'opposition defenceman, a solid triangle, stands about ten feet away, up-ice of the carrier and a ' +
     'couple of feet nearer the middle of the ice. A second opposition player, a solid circle, ' +
     'stands out in the middle of the ice, ' +
-    'with a plain route running up toward the carrier that stops about twelve ' +
+    'with a plain route running up toward the carrier, angled to pass a few feet on the ' +
+    'blue-line side of them, that stops about twelve ' +
     'feet short of the carrier and ends in two short bars rather than an arrowhead. A second own-team forward stands in ' +
     'the middle of the ice, about twelve and a half feet from where that opponent is, in the ice ' +
     'the opponent has left. ' +

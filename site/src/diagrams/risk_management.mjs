@@ -982,6 +982,29 @@ const XI_F2 = { at: 'high-slot', dx: 3, dy: 11 };               // (72, 11)
 // describing ice he was standing in. (54, -14) is 17.0 ft out, clear of the line.
 const XI_F3 = { at: 'top-of-circle:left', dy: 8 };              // (54, -14)
 const XI_F3_TO = { at: 'faceoff-dot:left', dx: -6, dy: -7 };    // (63, -29)
+// ⚠️ THE ROUTE IS BOWED (`bow: -5`, in the routes list) AND THE TIP DID NOT MOVE. Until
+// 22 November 2026 it was straight, and its terminal tangent passed 1.03 ft from the far
+// outlet's anchor (d 10.00 ft, theta 5.9 deg) — inside a forward glyph's 2.9 ft radius, so
+// the two bars sat on a line that, continued, ran through the reader's own receiver.
+// check-arrivals form (f) reported it as "probably by design"; the owner's 22 November policy
+// (diagram-reviewer.md, arrival test rule 4) holds an opposition route to the same drawing
+// standard as ours, and W2's FACING IS FIXED here — a pass is arriving at him — so this is
+// the case where the drawing is fixed first.
+// With the bow the control point is (54.21, -24.07) and the terminal tangent is
+// (0.872, -0.489): d 10.00 ft, theta 23.8 deg, miss 4.04 ft (> ARRIVAL.glyph 2.9).
+// THE BOW WAS CHOSEN OVER MOVING THE TIP BECAUSE OF WHICH SIDE THE LINE MISSES ON. A straight
+// route re-aimed to miss (tip ~(61, -29.5)) passes him on the blue-line side, at about his
+// shoulder line. This one passes IN FRONT of him — its nearest point to his anchor,
+// (70.98, -33.47), lies 17 deg off the way he faces to take the pass — and it aims 1.69 ft
+// off the pass's own end point at (70.28, -31.14). That is the section's own reading of
+// him, "sliding across with the puck's likely destination": he goes to where the puck is
+// arriving, not at the man. The approach comes from 73 deg off W2's facing, i.e. in front
+// of his shoulder line. The curve departs 2.5 ft from its chord — a skater gliding across,
+// not a mark that means anything else. Bars stay 6.98 ft off the pass spine and the spine
+// 7.57; the bars sit 7.27-11.50 ft from the lower dot, inside the circle and off its paint,
+// and the spine's lowest point is y -29.0, 13 ft off the boards.
+// ASSUMES rink.json as on disk 22 November 2026: top-of-circle (54, +/-22), faceoff-dot
+// (69, +/-22), half-wall (69, +/-38.5).
 
 // 5.41 ft off the carrier's anchor - clear of 4.0 ft of triangle ink plus 1.1 of puck -
 // and on the middle side of him, which is the side the pass leaves on.
@@ -1060,8 +1083,9 @@ const crossIceOwnEnd = {
     'inside and below the puck carrier, sealing them toward the corner; a second forward in the ' +
     'middle of the zone, a few feet above the passing lane and about seven feet off it; and a ' +
     'third forward on the lower, weak side, level with the tops of the faceoff circles and just ' +
-    'clear of the lower one, with a route running down toward the lower boards that ends in two ' +
-    'short bars across the line, about ten feet short of the forward waiting there. A shaded ' +
+    'clear of the lower one, with a route curving down toward the lower boards and then across ' +
+    'toward the spot where the pass arrives, in front of the forward waiting there; it ends in ' +
+    'two short bars across the line, about ten feet short of that forward. A shaded ' +
     'band runs down the middle of the zone ' +
     'from the tops of the two faceoff circles to the front edge of the goal crease, its sides on ' +
     'the inner edges of the two circles. One dashed pass leaves the defenceman in the corner, ' +
@@ -1118,7 +1142,7 @@ const crossIceOwnEnd = {
   // claim is that the man who beats you to the receiver left before the pass did.
   routes: [
     { from: XI_D1, to: XI_TO, kind: 'pass' },
-    { from: XI_F3, to: XI_F3_TO, kind: 'pressure' },
+    { from: XI_F3, to: XI_F3_TO, kind: 'pressure', bow: -5 },  // see XI_F3_TO
   ],
 
   puck: XI_PUCK,

@@ -100,6 +100,15 @@ The pass that needs judgement rather than grep:
   4. Where anything else in the same picture fixes the target's **facing** — a pass
      arriving at them, a puck they are retrieving, the boards they face — the caption
      must carry the arriving player's obligation and the level caveat.
+
+     **Whoever skates the route, the drawing standard is the same** (owner, 22 Nov 2026,
+     adopting the W550 safety ruling): a still picture teaches its shape, so an
+     opposition route is held to rules 1–3 exactly as one of ours is. **Only the caption
+     duty differs.** When the reader's own player arrives, the caption gives their
+     obligation and the level caveat. When the opposition arrives, the caption gives
+     the receiving player's posture and **never describes the opponent's approach
+     approvingly**. Where an opposition route ends behind a player whose facing is fixed,
+     **fix the drawing first**, not the caption.
   5. **Every measurement must record which `rink.json` it assumes.** One diagram's
      safety was found to depend on an uncommitted change to an unrelated coordinate:
      reverting it would have made the picture illegal with no diff touching the spec.

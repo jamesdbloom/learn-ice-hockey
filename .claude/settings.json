@@ -65,8 +65,8 @@
       "Bash(python3 scripts/check_rule_scope.py:*)",
       "Bash(python3 scripts/check_counts.py)",
       "Bash(python3 scripts/md_to_speech.py:*)",
-      "Bash(/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/node site/scripts/check-arrivals.mjs:*)",
-      "Bash(/Users/uk45004860/.nvm/versions/node/v22.23.1/bin/node scripts/check-arrivals.mjs:*)"
+      "Bash(/Users/uk45004860/.nvm/versions/node/v22.23.4/bin/node site/scripts/check-arrivals.mjs:*)",
+      "Bash(/Users/uk45004860/.nvm/versions/node/v22.23.4/bin/node scripts/check-arrivals.mjs:*)"
     ],
     "ask": [
       "Bash(gh pr create:*)",

@@ -13,15 +13,16 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W620 shipped with record `w620_dops_scope_followups_2026-11-21.md`. W618 and W619 shipped as f264d4c5.
-- **From W620 (open):**
-  - **For a rules-verifier:** uk_rules :415/:419 and rules_primer :402 say "IHUK's rules do not say whether they reach Elite League games", while §5's "club based in England or Wales" literally includes English and Welsh Elite League clubs. Also, :415's "Casebook writes no suspension" sits beside Rule 28. Check whether the corpus is less sure than its source. Also finding_more_ice :79/:153 "In Britain" carries an England Ice Hockey R&R (England and Wales) suspension clause.
-W618 and W619 shipped as f264d4c5, with record `w619_dops_elite_league_scope_2026-11-21.md`. W616 and W617 shipped as c66d1d93, with record `w617_goaltender_forechecking_facts_lines_2026-11-21.md`.
+- None. W621–W624 shipped with record `w624_usah_match_reword_batch1_2026-11-22.md`.
+  - **Next: W521(2) batch 2.** About 25 files are left; body_contact_and_battles goes alone. Use the brief and its lessons at `scratchpad/w622_common.md`, with a safety-reviewer for each batch.
+  - **Cosmetic, from W623:** in `cross-ice-in-your-own-end`, F3's curve hugs the lower faceoff circle's line. Separating them needs re-measuring.
+  - W620 shipped as 7d63cff3, with record `w620_dops_scope_followups_2026-11-21.md`. W618 and W619 shipped as f264d4c5, with record `w619_dops_elite_league_scope_2026-11-21.md`. W616 and W617 shipped as c66d1d93, with record `w617_goaltender_forechecking_facts_lines_2026-11-21.md`.
   W614 and W615 shipped as 71b2d69e, with record `w615_command_shaped_lines_and_free_faceoff_attempt_2026-11-21.md`.
 
-  W613 shipped as c0cfc9c1. W611 shipped as b9d2c7d7. W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, still awaits the owner. Left for the owner from W500: `.claude/settings.json` still allowlists the v22.23.1 node binary for check-arrivals.
+  W613 shipped as c0cfc9c1. W611 shipped as b9d2c7d7. W603 and W604 shipped as efa568cc. W601 and W602 shipped as c1bdcb29. W600 shipped as 9af83b5e. W598 and W599 shipped as ddc398d7. W596 and W597 shipped as 36238cdf. W594 and W595 shipped as 4aba12a6. W593 shipped as b659cb32. The readability meter is at 0 long paragraphs. One long Key Takeaway is kept by ruling: mental_game KT1 keeps its emergency numbers. Several split halves sit at 1,128–1,199 characters, so a small edit will push them back over. W521(2), the USA Hockey 602(a) convention, was decided by the owner on 22 Nov (reword); batch 1 shipped in W622–W624. `.claude/settings.json` now allowlists the v22.23.4 node binary for check-arrivals (owner, 22 Nov).
 
 ## Carry-overs from waves SG93–SG133 (open)
+- **From W620 (22 Nov):** [closed in W621: the verifier upheld the current wording, and the finding_more_ice half is in W622 B.]
 - **From W612 (21 Nov; A rows and :686 closed in W613):** Table: `../reviews/w612_long_facts_rows_2026-11-21.tsv`.
   - **(1)** 9 class-B splits in ozp.
   - [(2) closed in W618/W619: the line was verified and scoped "Outside the Elite League" at all 8 sites, along with about 40 sibling DOPS-discipline claims.] It was word-identical in 8 documents (ozp :973, goaltender :1380, risk_management :854, playing_without_the_puck :830, defender :293, center :896, winger :902, game_management :178). Change all or none.
@@ -103,7 +104,7 @@ W618 and W619 shipped as f264d4c5, with record `w619_dops_elite_league_scope_202
   - **(2) No youth route to help.** SMHRT-1 is for ages 16 and over, and the NHS page is for adults. The mental_game crisis callout has no youth line, and none is on disk. Any number added must be sourced and verified first.
   - **(4) Optional: whether "call your emergency number if it is happening now" is the right route for a first-ever panic-like episode (mental_game §5 :289).** SMHRT-1 says only "seek immediate help".
 - **From W521 (20 Nov; row 1 closed in W522):**
-  - **(2) OWNER DECISION NEEDED: the USA Hockey "plan on a match (602(a))" convention.** The W522 rules-verifier ruled it HARSH for any act whose own rule writes a discretionary match ("may also be assessed": 603(c), 604(e), 606(b), 607(e), 609(c), 611(c), 619(b), 620(c), 621(c), 622(c), 623(c), 628(c), 634(c), 635(b), 639(c), 640(h)).
+  - **(2) OWNER DECIDED 22 Nov 2026: REWORD (W622 in progress).** The USA Hockey "plan on a match (602(a))" convention. The W522 rules-verifier ruled it HARSH for any act whose own rule writes a discretionary match ("may also be assessed": 603(c), 604(e), 606(b), 607(e), 609(c), 611(c), 619(b), 620(c), 621(c), 622(c), 623(c), 628(c), 634(c), 635(b), 639(c), 640(h)).
     - Casebook 607 Situation 4 is decisive for a reckless charge on a goalie: "the major plus game misconduct, or match penalty option would be the proper call".
     - The same either/or reading appears in Casebook 604 Sit. 3, 608 Sit. 1 and 634 Sit. 4, in the Summary of Penalties ("Match Penalty Option"), and in the Standardized Discipline Policy (607(e) at Level 2, 602(a) at Level 1).
     - Counter-text: Casebook 602 Situation 1 says "the match penalty must be assessed".
@@ -341,8 +342,8 @@ Both pages are SHIPPED: Finding More Ice (0337d6a) and Practising on Your Own (1
 
 ## Owner decisions needed
 
-- **Opposition routes (W550 safety ruling):** the drawing standard applies whoever skates the route, because a still picture teaches its shape. The caption duty differs. When the reader arrives, the caption gives their obligation and the level caveat. When the opposition arrives, it gives the receiver's posture and must not describe the opponent's approach approvingly. Where an opposition route ends behind a player whose facing is fixed, fix the drawing first. This belongs in `.claude/agents/diagram-reviewer.md` item 4, alongside the "boards at their back" proposal above. Owner's call.
-- **diagram-reviewer.md item 4 (W547):** the facing rule is "the boards they face". The W547 census recommends rewording it to "the boards they face or have at their back", and adding that a target pinned within about 8 ft of the boards always takes the level caveat. This is an edit to `.claude/agents/diagram-reviewer.md`.
+- **[DECIDED 22 Nov: ADOPTED, now in `.claude/agents/diagram-reviewer.md` arrival rule 4. Next: fix the two [f] opposition-route drawings.]** Opposition routes (W550 safety ruling): the drawing standard applies whoever skates the route, because a still picture teaches its shape. The caption duty differs. When the reader arrives, the caption gives their obligation and the level caveat. When the opposition arrives, it gives the receiver's posture and must not describe the opponent's approach approvingly. Where an opposition route ends behind a player whose facing is fixed, fix the drawing first. This belongs in `.claude/agents/diagram-reviewer.md` item 4, alongside the "boards at their back" proposal above. Owner's call.
+- **[DECIDED 22 Nov: NOT ADOPTED. The facing rule stays "the boards they face".]** diagram-reviewer.md item 4 (W547): the facing rule is "the boards they face". The W547 census recommends rewording it to "the boards they face or have at their back", and adding that a target pinned within about 8 ft of the boards always takes the level caveat. This is an edit to `.claude/agents/diagram-reviewer.md`.
 These questions sit inside the rows above and need the owner's call before anyone acts on them:
 - **W405 (1):** the three wrong-player diagram labels are still drawn ("boards-side D", "nearest body", "retrieving").
 - **W398 (3):** the style guide's `C` label versus the carrier exceptions.
