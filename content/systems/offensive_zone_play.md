@@ -1198,7 +1198,7 @@ The penalties behind the instructions above, one hazard at a time. Each part ope
 Rule: Checking from behind ejects in the NHL, PWHL (43), CARHA (53) and Hockey Canada (7.5); IIHF or head hits: plan on it. USA Hockey: a minor and misconduct at least; forceful at the boards, head first or reckless, it ejects and can be a match (608; Casebook 608)
 Rule: A hit from behind into the boards or goal on a player who can't protect themselves is a mandatory match under Hockey Canada 7.5(c) and CARHA 53(b); a hit meant to injure is a match in the NHL, PWHL, Hockey Canada, CARHA and USA Hockey
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 ```
 
 The NHL, IIHF and PWHL write no minor for checking from behind (43.2): in the NHL and PWHL it is a major and a game misconduct (43.3, 43.5), and under the IIHF, plan on the same (43.3). Hockey Canada and CARHA add a game misconduct at every tier (7.5(a), (e); 53(a)), and CARHA may also give a match anywhere on the ice (53(a)).

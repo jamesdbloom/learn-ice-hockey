@@ -362,7 +362,7 @@ Rule: Charging binds every division; no book caps it at a minor. Injury makes it
 Rule: Under NHL and PWHL 42.5 and EIHL Casebook Rule 42, a charging major that injures the face or head adds a mandatory game misconduct; an IIHF charge to the head goes to Rule 48, where a major always carries one (48.3); every Hockey Canada charging major brings a game misconduct (7.4(e))
 Rule: Hockey Canada prices a charge to the head as Head Contact (7.6, 7.7): a mandatory major and game misconduct in Junior and Senior for high violence, or driving the head into boards, glass or ice and injuring it (7.7(b)); in minor and female hockey, for accidental head contact that injures (7.6(b))
 Rule: Every CARHA charging major adds a game misconduct and ends your game (30(a)) (CARHA adult leagues only)
-Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
+Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two for a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least a game or seven days; CARHA 32(d) one with a major, a game or more, bar an accidental high stick
 Rule: Charging a player "unable to defend themselves", or to injure, is a mandatory match under Hockey Canada 7.4(c), as a deliberate attempt to injure is under CARHA 48(a), USA Hockey 602(a) (likely a multi-game ban), NHL and PWHL 21.1; the IIHF has no match: plan on a major and game misconduct (42.4)
 ```
 

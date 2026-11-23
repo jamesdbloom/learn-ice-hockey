@@ -713,7 +713,7 @@ Rule: Checking from behind is a rule of its own, and five of the six books never
 Rule: No hit-from-behind rule stops at a minor: the NHL, PWHL and IIHF have none (43.2), and Hockey Canada and CARHA add a game misconduct (7.5(a), 53(a)). Driving a helpless player into the boards or frame is a match in both (7.5(c), 53(b)), as is a hit meant to injure in all but the IIHF
 Rule: USA Hockey 608(a) starts at minor plus misconduct, but a hit from behind sending a player head first into boards or frame, hard on the boards or reckless anywhere is a mandatory major and game misconduct or a match (608(b); Casebook 608 Sit. 1), a match bringing a likely multi-game ban
 Rule: A hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force must be a match under USA Hockey 608(c) — boards or not, goalie or skater
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 Never: Puck-watch. Watch your assignment instead, and arrive at your covering position before the puck does
 Never: Finish a backcheck into anyone’s back, carrier or trailer — take the puck, take the ice or angle them off it, never hold them; Hockey Canada: keep only ice you have; CARHA: shadow, no contact
 ```
@@ -898,7 +898,7 @@ Rule: A hit from behind meant to injure is a mandatory match, no place named —
 **Count a game misconduct as costing your next game too, not only the rest of this one.**
 
 ```facts
-Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
+Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two for a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least a game or seven days; CARHA 32(d) one with a major, a game or more, bar an accidental high stick
 Rule: Outside the Elite League, at an English or Welsh club a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban in every league or age group you are registered in (IHUK DOPS C.1, s.11); in the Elite League, Scotland or Northern Ireland, plan on it
 Rule: In a CARHA adult league, 30(a) adds a game misconduct to almost any major and 32(d) a suspension of at least one game; an accidental high stick that injures still brings the misconduct (62(b) Note) but not the automatic ban
 ```

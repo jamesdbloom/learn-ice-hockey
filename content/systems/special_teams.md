@@ -658,7 +658,7 @@ Never: Lunge or dive at the blue line — a missed poke check at your own line i
 Read: Pressure only if you can actually get there, the carrier is looking down or facing the boards, you are fresh, and the score allows it
 Rule: Angle to the puck, not the back — a hit from behind ejects (Hockey Canada always; IIHF and head contact: plan on it); USA Hockey if forceful at the boards, head first or reckless, else at least minor and misconduct; defenceless into boards or net, a mandatory match in Hockey Canada and CARHA
 Rule: A hit meant to injure is a match in every book but the IIHF; USA Hockey 608(c) must also give one for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 Rule: From behind on the head: 43 writes no minor (43.2), so plan on a major and game misconduct — in the NHL and PWHL the harsher of 43 and 48, in the IIHF though 48.2 is a minor. Hockey Canada: head contact (7.6; 7.7) — plan on ejection anyway, and a mandatory match if defenceless or meant to injure
 ```
 
@@ -1113,7 +1113,7 @@ Under the In-House Rules, fighting in NIHL, the SNL and BUIHA Varsity is a five-
 
 ```facts
 Rule: USA Hockey: a forceful hit from behind on a player along the boards, a head-first one or a reckless one must be a major and game misconduct or a match (608(b); Casebook 608, Situation 1), likely multi-game ban, and careless head contact is a major and game misconduct (620(b))
-Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
+Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two for a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least a game or seven days; CARHA 32(d) one with a major, a game or more, bar an accidental high stick
 Rule: Never hit a goalie from behind: it ejects (Hockey Canada, IIHF and head contact: plan on it); USA Hockey if forceful at boards, head first, careless to head or neck, or reckless, else at least minor and misconduct, 608(a); defenceless into boards or net, mandatory match: Hockey Canada, CARHA
 Rule: Goalie hit from behind, Hockey Canada: plan on the dearer of 8.5 and 7.5 — 8.5(b)'s mandatory major and game misconduct for a charge, else at least a minor and game misconduct; a match if meant to injure (8.5(c)), or if defenceless, into the boards or net or on the head (7.5(c); 7.6(c); 7.7(c))
 Rule: Goalie hit from behind on the head, NHL, IIHF (a reading) and PWHL: plan on a major and game misconduct

@@ -834,7 +834,7 @@ In minor and female hockey (Rule 7.6), head contact is a minor if accidental and
 
 ```facts
 Rule: Under USA Hockey, plan on a likely multi-game suspension for a match — a 602(a) reckless-endangerment match, a boarding, charging, checking-from-behind or head-contact match, or a body-checking match (604(e)) — and a hearing may change it
-Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
+Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two for a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least a game or seven days; CARHA 32(d) one with a major, a game or more, bar an accidental high stick
 Rule: USA Hockey 411(a) adds a three-game suspension on a third major of the season across its aggressive-infractions list — seventeen rules, boarding, charging, checking from behind and head contact among them, ending with 639 and Rule 640 Unnecessary Roughness (Roughing)
 Rule: Under USA Hockey a 640(g) late-hit major is an aggressive infraction on the 411(a) tally, which does not stop at three: a fourth such major adds five games, a fifth a suspension until a hearing. Fighting is separate: 615(f), three games for a second fighting major with the same team in a season
 Rule: NHL 23.6 suspends a second game misconduct in the Physical Infractions Category inside 41 consecutive regular-season games, and 23.5 does the same for stick fouls

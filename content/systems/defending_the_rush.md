@@ -319,7 +319,7 @@ Rule: Never end a chase with a hit to the back, puck or not — plan on ejection
 Rule: USA Hockey: even light checking from behind is at least a minor + misconduct (608(a)); forceful at the boards, head first into boards or net, or reckless, at least a major + game misconduct (608(b); Casebook 608 Sit. 1)
 Rule: A hit from behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c) (on the head 7.6(c)/7.7(c)) and CARHA 53(b); a hit meant to injure is a match in every book here but the IIHF, which has no match penalty — plan on ejection there
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 Rule: Your blade goes in the passing lane, not on your man — NHL and IIHF 56.1 and PWHL 57.1 grant body position to lengthen their path to the puck on three conditions: stick not utilized, free hand not used, and no otherwise illegal check delivered off that position
 Rule: Hockey Canada 7.4(v) makes a body check to a blind side charging in every division — Interpretation 2: an open-ice check from outside a 90° view of a vulnerable opponent, "whether or not the player has the puck". 7.4(b) a major and game misconduct, mandatory on injury; 7.4(c) a match penalty
 Rule: USA Hockey 625 makes a pick, lane or speed change to hit non-carriers an interference minor; reckless roughing (640), careless head contact (620) or a hit from behind (608) if reckless, wall-driven or head first into boards/net is major + game misconduct or a match; meant to injure, a match (602(a))
@@ -411,7 +411,7 @@ Rule: A forceful hit into a player's back at the wall, off the head, ejects you 
 Rule: Under Hockey Canada a hit from behind that reaches the head is head contact (7.6, 7.7) — plan on a game misconduct anyway, which head contact reaches on the violence (7.6(b), (e); 7.7(b), (e)), and a match if they cannot protect themselves (7.6(c), 7.7(c))
 Rule: A hit from behind meant to injure is a match in every book but the IIHF, which has no match penalty — plan on ejection there. Under USA Hockey a reckless one is a mandatory major and game misconduct (608(b)), and a match with excessive force on a vulnerable or defenceless player (608(c))
 Rule: From behind into the boards or goal frame on a player unable to protect themselves is a mandatory match — Hockey Canada 7.5(c), CARHA 53(b) — and a match bars you from "any further games" until your case is dealt with (Hockey Canada 4.10(a); CARHA 34(a) in CARHA-affiliated adult leagues)
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 Never: Turn hounding into contact where you may not body check at all — it is your feet, your stick and your angle, and nothing else
 ```
 
@@ -970,7 +970,7 @@ Under USA Hockey ⚠️ **a forceful hit from behind on a player standing along 
 
 ```facts
 Rule: Strides are not the only gate under CARHA — its 52(a) Note makes more than two a charge, and 49(a) prices intentional body contact anywhere on the ice with no stride count, at a minor or a major, mandatory on injury, and either major brings a game misconduct under 30(a) (CARHA adult leagues only)
-Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
+Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two for a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least a game or seven days; CARHA 32(d) one with a major, a game or more, bar an accidental high stick
 Rule: NHL and PWHL 42.1 price charging at a minor or major, a game misconduct added for a head or face injury (42.5, and the EIHL Casebook's Rule 42) and a mandatory match if meant to injure (21.1); CARHA 52(a) a minor or a major and game misconduct (30(a)), mandatory on injury (CARHA adult leagues only)
 Rule: Meant to injure, a charge is a match in NHL and PWHL 21.1, Hockey Canada 7.4(c), CARHA 48(a), USA Hockey 602(a); under IIHF 42.4 plan on a major and game misconduct. A reckless USA Hockey charge is a mandatory major and game misconduct (607(b)), and can be a match (607(e)), likely multi-game ban
 ```

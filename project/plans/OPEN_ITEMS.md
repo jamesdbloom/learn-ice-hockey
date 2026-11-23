@@ -26,7 +26,8 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## In flight
 
-- None. W635 shipped with record `w635_crisis_numbers_label_facts_lines_2026-11-23.md`. W633–W634 shipped as 3fe0d04d, with record `w634_one_warning_per_unit_2026-11-23.md`. W632 shipped as abdc0da8, with record `w632_pwhl_2026_27_propagation_2026-11-23.md`. W630–W631 shipped as 144a5487, with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
+- **W636 B (23 Nov):** a read-only agent is proposing the renderer remainder patch. W636 A shipped with record `w636_shared_facts_lines_2026-11-23.md`.
+- W635 shipped as fe7dc96a, with record `w635_crisis_numbers_label_facts_lines_2026-11-23.md`. W633–W634 shipped as 3fe0d04d, with record `w634_one_warning_per_unit_2026-11-23.md`. W632 shipped as abdc0da8, with record `w632_pwhl_2026_27_propagation_2026-11-23.md`. W630–W631 shipped as 144a5487, with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
 
 ## 1. Cheaper than the book, or a reader could be hurt
 
@@ -39,8 +40,6 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 ## 3. Readability: heard aloud
 
 - **Shared facts lines that need one owner across every copy.** Rewording only some copies makes them diverge, so each needs a single pass that changes them all together.
-  - The 12-copy "USA Hockey 620(b) must give at least a major and game misconduct…" line, which voices awkwardly.
-  - The 16-copy "a game misconduct can cost the next game" line.
   - The goaltender :1181 = special_teams :437 late-fight line.
   - W635 shortened 14 near-cap lines in goaltender, center, winger and forechecking. The remaining near-cap lines are mostly dense multi-book tariffs; fix one only when it is hard to follow aloud. (W635 C)
 - **Renderer voicing, remainder after W630** (the patch in `md_to_speech.py` handles seasons, rule numbers after a book name, Situation or Rules, and U18AAA).

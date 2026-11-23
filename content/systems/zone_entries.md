@@ -239,8 +239,8 @@ Rule: USA Hockey 630(d) does whistle an attacker who "continues to apply pressur
 Rule: Hitting a defenceman turned to retrieve is checking from behind: it ejects under the NHL, PWHL, CARHA and Hockey Canada (on the head, plan on it; a match if defenceless); IIHF, plan on it — into boards or goal frame unable to protect themselves, a mandatory match (Hockey Canada 7.5(c), CARHA 53(b))
 Rule: Under USA Hockey a hit from behind is at least a minor and misconduct (608(a)); one forceful on a player along the boards, sending them head first into boards or goal frame, or reckless is a major and game misconduct (608(b)) and can be a match (Casebook 608 Sit. 1), likely multi-game ban
 Rule: A hit meant to injure is a match in every book but the IIHF; USA Hockey 608(c) must also give one for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
-Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
+Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two for a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least a game or seven days; CARHA 32(d) one with a major, a game or more, bar an accidental high stick
 Action: Retreat to the line, tag up, come again
 ```
 
@@ -846,7 +846,7 @@ Never: Arrive on the player instead of the puck, or hit anyone who cannot see yo
 Rule: Arriving through a turned retriever is checking from behind: it ejects under the NHL, PWHL, CARHA and Hockey Canada (on the head, plan on it; a match if defenceless); IIHF, plan on it — driving a defenceless player into boards or goal frame is a mandatory match (Hockey Canada 7.5(c), CARHA 53(b))
 Rule: Under USA Hockey a hit from behind is at least a minor and misconduct (608(a)); one forceful on a retriever along the boards, sending them head first into boards or goal frame, or reckless is a major and game misconduct (608(b)) and can be a match (Casebook 608 Sit. 1), likely multi-game ban
 Rule: A hit meant to injure is a match in every book but the IIHF; USA Hockey 608(c) must also give one for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 Key: The measure of a good chase is whether the retriever's only remaining option was one you had covered
 ```
 

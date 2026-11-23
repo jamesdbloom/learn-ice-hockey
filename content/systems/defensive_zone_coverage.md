@@ -165,7 +165,7 @@ Rule: Pin the puck, never the player — a pin with your arms can be holding in 
 Rule: Pin the puck only until help arrives, never to get play stopped — under USA Hockey, holding it against the boards for three seconds is a minor, help coming or not, pressured or not (Rule 632(b); Casebook Rule 632, Situation 6)
 Never: Arrive into the back of a player facing your end boards. Take the puck, take the ice, or angle them off it instead
 Rule: Pull up on a turned back — checking from behind is never just a minor (IIHF or Hockey Canada head hits can be: plan on ejection) and ejects in the NHL, PWHL, CARHA and Hockey Canada (IIHF: plan on it); USA Hockey if forceful at the wall, head first or reckless, else at least minor + misconduct (608)
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 ```
 
 | Player | Where | Job |

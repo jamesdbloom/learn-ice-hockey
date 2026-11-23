@@ -601,7 +601,7 @@ Convention: A double-team is a coaching decision, commonly allowed below your ow
 Never: Arrive at a double-team at the wall with your back to anyone coming at you, and never duck. Get your skates parallel to the wall instead, forearm and hip to the wall, head up, chin off your chest
 Rule: Never push or hit from behind, even in non-check play — it is checking from behind and ends your game in the NHL, PWHL and CARHA, and in Hockey Canada off the head (head hits: plan on ejection); IIHF: plan on it; USA Hockey if forceful at the boards, head first into boards or net, or reckless (608)
 Rule: Under USA Hockey even a light push from behind is at least a minor and misconduct (608(a)); one forceful on a player along the boards, head first into boards or net, or reckless is a major and game misconduct or a match (608(b); Casebook 608 Sit. 1)
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 Rule: From behind into boards or net on a helpless player, intent or not, a mandatory match: Hockey Canada 7.5(c), CARHA 53(b), USA Hockey 608(c) (reckless, excessive force), where a reckless push ejects or can be a match, likely a multi-game ban (Casebook 608 Sit. 1); meant to injure, a match except IIHF
 Rule: Under USA Hockey a game misconduct also costs you your team's next game (404(b)), and at least two games when it comes from a second major in one game (403(b))
 ```

@@ -318,7 +318,7 @@ Forechecks are named by counting players from the goal line outwards: a **2-1-2*
 Position: In a 2-1-2, two forwards deep, one forward high at roughly the top of the circles, both defencemen at the offensive blue line
 Convention: F1 goes hard at the puck carrier, angling them to one side — usually towards the boards, but ask, because F2 reads off it
 Rule: F1 goes hard, never into a turned back: a hit from behind ends your game under the NHL, PWHL, CARHA, IIHF and Hockey Canada (the last two might not on a head hit; plan on it anyway); USA Hockey: at least a minor and misconduct, ejecting if forceful at the boards, head first or reckless (608)
-Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
+Rule: Under USA Hockey, careless or intentional contact with an opponent's head, face or neck — a hit from behind included — is at least a major and game misconduct (620(b))
 Rule: Find out whether you may body check in this game — it can change per fixture, not just per division: USA Hockey 604(b) bars it whenever a checking team plays a non-checking one. Where it is barred, F1's pressure is feet and stick
 Convention: F2 attacks the first passing option, not the puck — with the stick and the lane, because hitting a winger who has no puck yet is a penalty in every book here
 Convention: F3 stays high in the middle — weak-side by default here, strong-side in the stacked variant, so find out which your team runs
