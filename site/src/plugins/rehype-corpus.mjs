@@ -27,6 +27,8 @@
  *      focus and ARIA attributes on (1) and on remark-corpus.mjs's full-sheet
  *      diagrams are re-decided against the viewport instead of guessed at build
  *      time. See the note beside the injection at the foot of this file.
+ *   6. Loads /diagram-focus.js (src/scripts/diagram-focus.js) on any page with a
+ *      full-sheet diagram, so a box that scrolls on a phone opens on the play.
  */
 
 import { visit } from 'unist-util-visit';
@@ -131,11 +133,15 @@ export default function rehypeCorpus() {
     // remark-corpus.mjs made earlier in the pipeline. Both opt in by carrying
     // `data-scroll-region`, so neither can be missed and neither is special-cased.
     let scrollRegions = 0;
+    // Whether this page has a full-sheet diagram for /diagram-focus.js to place.
+    let fullSheets = 0;
 
     visit(tree, 'element', (node, index, parent) => {
       if (!parent || index === undefined) return;
 
       if (node.properties?.['data-scroll-region']) scrollRegions += 1;
+      // remark-corpus.mjs sets this noun on full-sheet diagram boxes and on nothing else.
+      if (node.properties?.['data-scroll-region'] === 'Diagram') fullSheets += 1;
 
       // ------------------------------------------------ scrollable tables
       if (node.tagName === 'table') {
@@ -280,6 +286,12 @@ export default function rehypeCorpus() {
     // table nor a full-sheet diagram.
     if (scrollRegions > 0) {
       tree.children.push(el('script', { src: '/scroll-regions.js', defer: true }));
+    }
+    // 6. A full-sheet diagram that scrolls on a phone opens on its play rather than
+    //    on the defending end. Same file-not-inline rule as above; the source and the
+    //    reasoning are in src/scripts/diagram-focus.js.
+    if (fullSheets > 0) {
+      tree.children.push(el('script', { src: '/diagram-focus.js', defer: true }));
     }
   };
 }

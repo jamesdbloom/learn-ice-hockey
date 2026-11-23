@@ -26,7 +26,8 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## In flight
 
-- None. W636 B shipped with record `w636b_renderer_rule_numbers_2026-11-23.md`. W636 A shipped as ed2991c8, with record `w636_shared_facts_lines_2026-11-23.md`.
+- None. W637 shipped with record `w637_diagram_focus_crisis_guard_2026-11-23.md`.
+- W636 B shipped as b49e766b, with record `w636b_renderer_rule_numbers_2026-11-23.md`. W636 A shipped as ed2991c8, with record `w636_shared_facts_lines_2026-11-23.md`.
 - W635 shipped as fe7dc96a, with record `w635_crisis_numbers_label_facts_lines_2026-11-23.md`. W633–W634 shipped as 3fe0d04d, with record `w634_one_warning_per_unit_2026-11-23.md`. W632 shipped as abdc0da8, with record `w632_pwhl_2026_27_propagation_2026-11-23.md`. W630–W631 shipped as 144a5487, with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
 
 ## 1. Cheaper than the book, or a reader could be hurt
@@ -39,10 +40,7 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 3. Readability: heard aloud
 
-- **Shared facts lines that need one owner across every copy.** Rewording only some copies makes them diverge, so each needs a single pass that changes them all together.
-  - The goaltender :1181 = special_teams :437 late-fight line.
-  - W635 shortened 14 near-cap lines in goaltender, center, winger and forechecking. The remaining near-cap lines are mostly dense multi-book tariffs; fix one only when it is hard to follow aloud. (W635 C)
-- **Renderer voicing, remainder after W636.** About 45 rule numbers are still read digit by digit: lone brackets after an ordinary word (for example the rules_primer NHL signal list, "(29.18)"), and bare mid-sentence numbers ("46.11 makes"). Their shape cannot be told apart from a statistic, so the fix is content-side: add "Rule" or the book name where a listener needs it. The list is `scratchpad/w636b/residual_rule_numbers.txt`; regenerate it before acting. The owner's ear test should confirm the en-dash season form and "X becomes Y".
+- None open. [Dropped under the 23 Nov bar: about 45 rule numbers that are still read digit by digit ("twenty-nine point one eight") are understandable aloud, and fixing them in content adds words. The late-fight shared line (goaltender :1181 = special_teams :437) reads clearly, and the remaining near-cap facts lines are dense but accurate.]
 
 ## 4. Readability: restatement and length
 
@@ -51,13 +49,11 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 5. Diagrams
 
-- **Full-sheet diagrams open scrolled left at 400 px:** the-last-player-back, "Behind, level and ahead" and "Three neutral zone lanes". The labelled play is off-screen until you scroll. Consider an initial scroll centred on the action. (W633 A)
 - **Practising on Your Own drill labels.** About 8 px at a 320 px phone width: 762 of 1,064 text runs sit on `TEXT_MIN` (0.62 ft) in `site/src/drills/lib/draw.mjs`. Raising it to about 0.84 ft gives about 11 px, but all 72 hand-placed drills would then need re-rendering and a collision review. Format call; see Owner decisions.
 - **Cosmetic, carry only if a module is edited anyway:** in `cross-ice-in-your-own-end`, F3's curve hugs the circle line. (W623)
 
 ## 6. Sources and tooling
 
-- **The crisis-box nowrap depends on the box's wording.** `remark-corpus.mjs` finds the box by its opening sentence (`CRISIS_RE`). If that sentence is reworded, the numbers silently start wrapping again on a phone. Consider a checker assertion. (W635 A)
 - **PWHL 2026-27, remainder.** The Sources trailers that cite the 2025-26 PDF record what was read and when, so they are accurate provenance and stay as they are. Re-point a trailer only when its rule is re-read in the new book. [The "summary layers built on the old rule" sweep is dropped under the 23 Nov bar: it is a speculative sweep with no named defect.]
 - **Hockey Canada PDF.** The PDF itself is still not in sources/; only its two extractions are. The Appendix D scramble note was added to sources/README.md on 23 Nov. Fetch the PDF only if a page needs it. (W385 (8))
 - **The IHUK-distributed compressed IIHF PDF.** It bears on the In-House edition contradiction. It needs an unfiltered network, so the owner must fetch it.

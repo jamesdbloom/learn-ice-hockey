@@ -26,6 +26,7 @@ import { existsSync, statSync } from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import { parse } from 'node-html-parser';
+import { checkCrisisNowrap } from './check-crisis-nowrap.mjs';
 
 const distArg = process.argv[2] ?? 'dist';
 const DIST = path.resolve(process.cwd(), distArg);
@@ -219,6 +220,16 @@ const summary =
   `${corpusLinkCount} are corpus cross-links from the markdown (${corpusAnchorCount} with anchors) · ` +
   `${assetCount} assets · ${externalCount} external links skipped · ${audioCount} /audio/ hrefs not checked (uploaded out of band)`;
 
+// The crisis box's phone numbers must stay on one line. Its own file says why; it is
+// run here because this is the build's last step and a failure here fails the build.
+const crisisProblems = checkCrisisNowrap(DIST);
+if (crisisProblems.length) {
+  console.error('');
+  for (const p of crisisProblems) console.error(`  ✗ ${p}\n`);
+  // Fall through so broken links, if any, are reported in the same run.
+  if (!problems.length) process.exit(1);
+}
+
 if (problems.length) {
   console.error(`\n${summary}`);
   console.error(`\n${problems.length} broken internal link(s):\n`);
@@ -226,4 +237,4 @@ if (problems.length) {
   process.exit(1);
 }
 
-console.log(`${summary} — all internal links and anchors resolve.`);
+console.log(`${summary} — all internal links and anchors resolve; crisis callout phone numbers wrapped.`);
