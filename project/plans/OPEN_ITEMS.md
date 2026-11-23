@@ -26,7 +26,7 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## In flight
 
-- None. W628 shipped with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
+- None. W629 shipped with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
 
 ## 1. Cheaper than the book, or a reader could be hurt
 
@@ -41,40 +41,22 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 ## 3. Readability: heard aloud
 
 - **"Hockey Canada minor or female hockey… a minor"** uses "minor" in two senses aloud. Reword at no added length. (SG142)
-- **on_ice_communication ~:591, facts.** It reads oddly when voiced alone. Reword with no added length. (W349 (6))
-- **About 13 "USA Hockey 608(c) must give…" facts lines** voice awkwardly. Reorder each, with no added length. (USA 608 (3))
-- **The 293–300-character facts lines** voiced alone: shorten them, rather than only ear-testing. (USA hit-from-behind (h))
-- **ozp's long facts lines.** There are 9 class-B splits, and about 70 lines run over 40 words. Shorten or split them without dropping or overstating a tariff. The table is `../reviews/w612_long_facts_rows_2026-11-21.tsv`. (W612 (1), W508 (5))
-- **The pk-box caption** voices its letter key, which is noise to a listener. Cut it. (W394 (5))
-- **The trapezoid caption's "whatever its standing" hedge** (diagram module). Verify the status, then state it plainly; that is shorter. (delayed-offside (a))
+- **"USA Hockey 608(c) must give…" facts lines** voice awkwardly. W629 reordered the only one in goaltender, forechecking, center and winger. Reorder the rest, at no added length. (USA 608 (3))
+- **The 293–300-character facts lines** voiced alone: shorten them where it is safe. About 90 remain in goaltender, forechecking, center and winger alone; most are dense multi-book tariffs. (USA hit-from-behind (h))
+- **ozp's long facts lines.** W629 split 7 and reordered 3; 59 lines are still over 40 words, mostly in the full blocks @677 and @966. :629 needs a rules-verifier on what 69.1 says. (W612 (1), W508 (5))
+- **ozp "Keep your skates out of the seal" (facts, W629 split).** It leans on "the seal" from the line before it. Name the act instead.
+- **special_teams ~:1128.** The W629 cut removed Hockey Canada's mandatory head-contact major and game misconduct for a high cross-check, which the paragraph now carries only by pointer to bcb. Check whether a listener there still needs one short clause.
 - **One renderer fix for how rule numbers and seasons are voiced.** "Twenty twenty-six to twenty twenty-seven" changes the meaning. This one fix absorbs W446 (1), W451 (2), W501 (7) and W505 (9). (W449 (3))
 
 ## 4. Readability: restatement and length
 
-**Measure, then cut. Use a layer test, and keep the one copy a player meets in play.**
+**Measure, then cut. Use a layer test, and keep the one copy a player meets in play.** W629 closed the page-by-page restatement rows.
 
-- **ozp.** The hit-from-behind tariff is stated about 4 times (:831/:832, :971, :1194–:1196). Needs a safety-reviewer. (W612 (3))
-- **goaltender.** The net-front Convention is stated 3 times, and USA Hockey Casebook 607 Note 1 plus Situation 5 are restated in four consecutive units, one of which parses oddly. Merge them. (W612 (4), SG193b–SG195)
-- **forechecking.** The turned-back tariff is stated 3 times. (W612 (4))
-- **center.** Drop the body copies of CARHA 53(a) at ~:709/:792; the facts line carries it. (W571 (1))
-- **bcb.** The charging/head facts block states the IIHF's off-ice discipline 3 times, and the third-man item puts its only ⚠️ on the discretionary limb rather than the mandatory game misconducts. Move the marker. (W411 (4), W438 (3))
-- **dtr.** It has two identical 608(c) facts lines plus a third copy, and "meant to injure is a match" is restated at many body sites. Demote the extra copies. (W349 (8), W407 (4))
-- **zone_entries.** 608(c) is stated at 8 places. (W347)
-- **special_teams.** The Hockey Canada on-the-head ladder is restated in three adjacent paragraphs. (W357 (2))
-- **winger.** The net-front ladder is still dense, and the charging/goalie paragraph is heavy. Cut both; add nothing. (W436 (2), SG117)
-- **goaltender, risk_management, dtr: What it costs subsections.** These are restated openings and oversized subsections. (page structure (1), (2), (6))
-- **Checking from behind across documents.** It is restated on five pages that point to bcb. Measure, then cut. (SG75–SG78)
 - **Seven units carry two ⚠️ glyphs**, so removing one is free: the spoken "Important." stays. (W560 (2))
-- **Amber on the discretionary clause.** At zone_entries and ozp, the ⚠️ sits on the discretionary clause over the mandatory one. Move it. (amber placement (1))
-- **rink_map ~:459.** It leads with "can be legally checked". Reorder it so "play the puck with your stick, never your body" comes first. (W414 (7))
 
 ## 5. Diagrams
 
-- **Drill card `site/src/drills/07_off_ice_stick.mjs` ~:482** still says "dangle there". The page now says "dangle there side to side"; match the card. (W628 A)
-- **`entry-middle-drive`.** The carrier is drawn with no puck dot, so a reader cannot see who has the puck. (SG95–SG100/SG157)
-- **`the-last-player-back`.** "Pressure" sits between two forecheckers with no leader, so it is ambiguous who presses. (SG165)
-- **pk-box.** The "uncovered" label may attach to the wrong player at phone width. Use a labelHint. (W409 (4))
-- **Practising on Your Own drill labels.** These are 8.7 px at 320 px, which is unreadable on a phone. (drill labels)
+- **Practising on Your Own drill labels.** About 8 px at a 320 px phone width: 762 of 1,064 text runs sit on `TEXT_MIN` (0.62 ft) in `site/src/drills/lib/draw.mjs`. Raising it to about 0.84 ft gives about 11 px, but all 72 hand-placed drills would then need re-rendering and a collision review. Format call; see Owner decisions.
 - **One browser pass on the ten pages changed in W501–W521:** both themes, plus a 400 px iframe. This absorbs W521 (5) and W507 (7). (W501 (14))
 - **Cosmetic, carry only if a module is edited anyway:** in `cross-ice-in-your-own-end`, F3's curve hugs the circle line. (W623)
 
@@ -92,7 +74,7 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 - **Decision F's reach.** Should the per-book price lists also come out of the Overviews of rules_primer, bcb, uk_rules and special_teams? Price lists in an Overview work against tactics-first.
 - **bcb Key focus.** Should it gain "never contact the head"? That is a safety point, and it is something a player does.
 - **Decision D.** Accept the multi-sentence per-book passage as shipped ("Keep your skates off a player who is down…"): yes or no.
-- **Phone legibility of full-rink diagram labels.** At 400 px they are 7–10 px tall. This is a format call.
+- **Phone legibility of diagram and drill labels.** Full-rink diagram labels are 7–10 px at 400 px, and drill labels about 8 px at 320 px. Raising the drill floor means a 72-drill re-render and review. This is a format call.
 - **IIHF 2025/26 URL.** A dead link is cited 49 times. Choose one: keep and label it, re-point it, or rely on the copy on disk. Never delete it. (W431 (1))
 
 **Likely to drop. Say so and they go:**

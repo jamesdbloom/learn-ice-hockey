@@ -1135,8 +1135,13 @@ const theLastPlayerBack = {
     // seen only in a render. Even 'the only one' (12 characters, 32 ft) reaches -101. So the
     // claim goes in the caption, which says it twice.
     { id: 'D', pos: 'D', at: LAST_YOU, label: 'you' },
-    // SG165 labelHint: under the forechecker as before, 3.5 ft right so the words clear the centre dot and the red line.
-    { id: 'F', team: 'opp', pos: 'F', at: LAST_O1, label: 'pressure', labelHint: [3.5, -7.5] },
+    // SG165 labelHint: level with the forechecker who presses, to his right, with a short
+    // horizontal leader, away from his route and from the second forechecker. Under him (the old
+    // [3.5, -7.5]) it sat between the two with no leader and read as either's; [15, 4] stacked it
+    // under 'ahead of the puck' so at 400 px the two read as one label; [10, 7.5] pushed that label
+    // onto the neutral-zone dot; [14, -2] and [14, 0] the placer rejects. Previewed: honoured, and
+    // no other label moves. The words cross the blue line under their halo.
+    { id: 'F', team: 'opp', pos: 'F', at: LAST_O1, label: 'pressure', labelHint: [16, -2] },
     // No label on the second: his position carries him, and two labelled opponents in the
     // middle of an otherwise empty neutral zone read as a system rather than as two players
     // arriving. `describe` names him.

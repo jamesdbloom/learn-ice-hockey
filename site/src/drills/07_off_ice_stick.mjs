@@ -479,7 +479,7 @@ const drills = [
   {
     id: 'office-stick-diagonal-pulls', group: GROUP, title: 'Diagonal pulls', svg: diagonal,
     card: card('Moving the puck on a diagonal, not only side to side.', [
-      'Dangle front to back beside your left foot. Pull the puck diagonally forwards to in front of you, dangle there, and take it back.',
+      'Dangle front to back beside your left foot. Pull the puck diagonally forwards to in front of you, dangle there side to side, and take it back.',
       'Do the same from beside your right foot.',
     ], 'A steady left-right rhythm, which a defender can read.', '', {
       progression: 'Link them — left, front, right, front, and back to the left, without stopping.',

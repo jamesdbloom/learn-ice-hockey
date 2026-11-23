@@ -571,10 +571,11 @@ A **tip** or **deflection** is changing the direction of an incoming shot with y
 
 ```facts
 Action: Keep the blade down after the tip as well as before it — you tip in a crowd
-Rule: A puck hitting an attacker's stick above the crossbar is no goal, and where it hits the stick is what counts (NHL and IIHF 80.3, PWHL 82.3, NHL 78.5(vi), Hockey Canada 6.9(b)) — but only the goal off that contact dies: a teammate who gains it and shoots scores (IIHF Handbook 2025/26, 80.9(c))
+Rule: A puck hitting an attacker's stick above the crossbar is no goal, and where it hits the stick is what counts (NHL and IIHF 80.3, PWHL 82.3, NHL 78.5(vi), Hockey Canada 6.9(b))
+Rule: A tip above the crossbar but below your shoulders kills only the goal off that tip: a teammate who then gains the puck and shoots can score (IIHF Handbook 2025/26, 80.9(c))
 Rule: USA Hockey uses neither the crossbar nor the contact-point test — 621(d) caps at the shoulder, and Casebook 621 Situation 7 refuses the contact point: "When any part of the stick is carried above the shoulders, the entire stick is considered to be high"
-Rule: A tip contacted above the crossbar but below your own shoulders is no goal under NHL and IIHF 80.3 or PWHL 82.3 — IIHF Handbook 80.9 answers "No" twice — while USA Hockey 621(d) and CARHA 62(d) cap at the shoulder and do not reach it; Hockey Canada 6.9(b) pulls both ways, so tip low
-Rule: NHL and IIHF 80.1, PWHL 82.1 and Hockey Canada 6.9(a) stop play once the offending team gains possession and control of a puck batted above the shoulders, even off a save, so a loose one is played on: leave it to an opponent
+Rule: Tip below the crossbar — above it but below your shoulders is no goal under NHL and IIHF 80.3 or PWHL 82.3, while USA Hockey 621(d) and CARHA 62(d) cap at the shoulder and do not reach it; Hockey Canada 6.9(b) pulls both ways
+Rule: Leave a puck your team batted above the shoulders to an opponent — NHL and IIHF 80.1, PWHL 82.1 and Hockey Canada 6.9(a) stop play once the offending team gains possession and control of it, even off a save
 Rule: A high-batted puck both teams abandon stops play under NHL and IIHF 72.3, PWHL 74.3 and Hockey Canada Interpretation 2 to 6.9(a)(i)
 Rule: USA Hockey 621(d) stops play "immediately" unless the puck "is batted to an opponent who gains possession", but Casebook 621 Situations 6 and 15 play on, unless it goes straight in, until your team is first to it; then the draw is in your end, not a penalty; CARHA 62(d) has no such test
 Rule: Under USA Hockey an opponent can stop play by declining a high-batted puck — Casebook 621 Situation 12 stops play with the draw in the offending team's defending zone: "The non-offending team has no obligation to play the puck"
@@ -627,7 +628,8 @@ Read: Revak's 60% summarises the whole chart rather than one zone — Novet plot
 ```facts
 Rule: NHL and IIHF 69.1, PWHL 71.1 — an attacker's position, inside or outside the crease, does not by itself decide the goal; goals "should be disallowed only if" you impair the goalie's ability to move freely or defend it, by positioning or contact — a ceiling, not a direction to disallow
 Rule: NHL and IIHF 69.1's crease sentence names the crease, and 69.4 takes the goal outside it for contact — and 69.1's first limb lets a position that stops the goalie moving freely in the crease cost the goal; the tables allow a screen outside the crease that impairs defending (5C, 5E)
-Rule: NHL Rule 69.1 — a goal is disallowed where you initiate intentional or deliberate contact with the goalie, inside or outside the crease; and under IIHF 69.1 an attacker who does not leave the crease at once can cost the team a neutral-zone faceoff, at the Referee's discretion
+Rule: NHL Rule 69.1 — a goal is disallowed where you initiate intentional or deliberate contact with the goalie, inside or outside the crease
+Rule: Leave the crease at once — under IIHF 69.1 an attacker who does not can cost the team a neutral-zone faceoff, at the Referee's discretion
 Rule: NHL 69.4: outside the crease, more than incidental contact voids a goal; incidental keeps it only if you tried to avoid it (69.1). Hockey Canada takes it for any contact you start (8.5(a) Interpretation 1), USA Hockey for interfering with the goalie (617(c)(4)), CARHA for contact that does (66(b))
 Rule: NHL 69.4 penalises unnecessary goalie contact outside the crease "in every case", allowing incidental contact only as the goalie plays the puck, after a reasonable effort. Hockey Canada and CARHA have no play-the-puck allowance; Hockey Canada 8.5 penalises any failure to make that effort
 Rule: Inside the crease (NHL 69.3), contact you initiate — incidental or otherwise — while the goalie is in the crease voids the goal, subject to the rebound and loose-puck exception at 69.7
@@ -684,7 +686,7 @@ Rule: A defending player other than the goalie who deliberately covers the puck 
 Rule: NHL and IIHF Rule 69.1, PWHL 71.1 — a defender who pushes, shoves or fouls you into the goalie is not deemed contact initiated by you, provided you made a reasonable effort to avoid it; but pushing a defender into their own goalie is, and a goal scored off it is disallowed
 Rule: NHL and IIHF 69.2, PWHL 71.2 — intentional or deliberate contact with a goalie, in or out of the crease, is a minor or major, goal or no goal; under 42.1 and 69.4 (PWHL 71.4) a penalty "should be assessed in every case" of unnecessary contact; charging one in the crease can bring a game misconduct
 Rule: USA Hockey 607(d) Note 1: accidental or unavoidable goalie contact is an interference minor; deliberate is charging, never a bare minor (607(a)). Even a player going hard to the net who honestly tries to pull out gets minor and misconduct for crease or privileged-area contact (Casebook 607 Sit. 4)
-Rule: USA Hockey 607 Sit. 4, goalie in crease/privileged area: no penalty only if a defender forced you in and you "clearly made every attempt"; ramming, arms out, shoulder down: gone — must if reckless anywhere (607(b)) or careless to head or neck (620(b)); reckless: can be a match (607(e))
+Rule: USA Hockey Casebook 607 Sit. 4: on a goalie in the crease or privileged area, no penalty only if a defender forced you in and you "clearly made every attempt". A reckless charge anywhere (607(b)), or careless contact to the head or neck (620(b)), must eject; reckless can be a match (607(e))
 Rule: In CARHA leagues some net-front majors are mandatory, each with a game misconduct and at least a one-game ban (30(a), 32(d)): charging or cross-checking a goalie in the crease, or injuring anyone by either (52, 54(c)) or by interference (66(e)). CARHA calls over two steps or strides a charge
 Rule: CARHA Rule 30(a) — every major but an accidental high stick that injures nobody brings a game misconduct: a player assessed one "shall be ruled off the ice for the remainder of the game" (CARHA-affiliated adult leagues only)
 Never: Drive the goalie backwards in a scramble — play the puck. Shoving them into the net with the puck loses the goal in every book that writes it, and deliberate contact draws a penalty, goal or not
@@ -828,8 +830,7 @@ Behind the net is not where the puck goes to die. It is one of the best attackin
 Key: From behind the goal line you look up at the whole zone with all five defenders and the goalie in front of you
 Key: Nobody can come at you from directly behind, because the net and the end boards are there — that is geometry, not immunity
 Risk: You can still be driven into the goal frame behind the net. Keep your head up and know who is arriving
-Never: Hit anyone from behind — plan on ejection in any book: the NHL, PWHL and CARHA eject, Hockey Canada off the head, USA Hockey if forceful at the boards, head first, reckless or careless head contact
-Rule: A hit meant to injure is a match in all but the IIHF; so is one from behind into boards or goal on a player who can't protect themselves (Hockey Canada 7.5(c), CARHA 53(b)), or any reckless one from behind with excessive force on a vulnerable or defenceless player, boards or not (USA Hockey 608(c))
+Never: Hit anyone from behind, least of all into the goal frame — most books eject for it, so plan on ejection in any
 Read: Every time the puck crosses behind the net the goalie must pick a post and rotate — every rotation is a moment they are not square
 Key: Passes from below the goal line finished at 6.73%, second only to royal road passes — volunteer-tracked Passing Project data, 51,308 shots at 5v5, all attempts
 ```
@@ -855,8 +856,9 @@ Options: The bank off the goalie — from a tight angle behind the goal line, of
 Options: Reverse or rim to restart the cycle if nothing is on — possession retained is a perfectly good outcome
 Rule: The goalkeeper's restricted area restricts only the goalie (geometry NHL Rule 1.8, penalty 27.8 / 63.2(viii)) — skaters may go anywhere behind the net at any time
 Read: USA Hockey and Hockey Canada write no trapezoid at all, so under those books their goalie may retrieve a dumped puck anywhere behind the net — it changes the calculus of dumping it in
-Rule: No trapezoid is not no restriction on their goalie — USA Hockey 614(c)(1) and CARHA 58(b) make it a minor to freeze the puck behind the goal line, body out of the crease, and Hockey Canada's Interpretation 3 to 10.1(a), clause v, gives a minor with "No warning" for freezing it outside the crease
-Rule: Both books write a clause for your dump-in exactly — Hockey Canada's clause iv for a goalie who comes out "to beat an attacking player to the puck" and jumps on it, no warning, and USA Hockey's Casebook Situation 6, which answers the identical facts a minor
+Rule: USA Hockey 614(c)(1) and CARHA 58(b) make it a minor for their goalie to freeze the puck behind the goal line with their body out of the crease
+Rule: Hockey Canada's Interpretation 3 to 10.1(a), clause v, gives their goalie a minor with "No warning" for freezing the puck outside the crease
+Rule: Hockey Canada and USA Hockey each write a clause for your dump-in — Hockey Canada's clause iv for a goalie who comes out "to beat an attacking player to the puck" and jumps on it, no warning, and USA Hockey's Casebook Situation 6, which answers the identical facts a minor
 Read: Under USA Hockey when pressured, a goalie who came out to cut the angle may still cover after a save out front, never behind the goal line (under Hockey Canada, unsettled)
 Rule: In any British competition, plan as though their goalie may come out for a dump-in — England Ice Hockey's R&R 22.3 calls the restricted area "not currently enforced", its scope and standing unsettled; the Elite League's Casebook leaves IIHF 27.7 standing
 ```
@@ -968,7 +970,6 @@ Read: "If you can't arrive on contact, don't go" — and clearly first on an unc
 Never: Pinch when your forwards are already below you, when the opponent has turned up ice with speed, when protecting a narrow lead late, or when your partner has not seen you go
 Technique: Stick in the lane before your feet commit; angle the winger to the boards, not the middle; seal the wall with position, pin the puck, not them; check only where your league allows, never their back
 Priority: Take the puck, or — where your league permits body checking — take the player; achieve neither and you have created an odd-man rush against your own team. A winger facing the glass is not that player
-Rule: A hit from behind at the glass ejects (NHL, PWHL 43; CARHA 53, Hockey Canada, both a match if defenceless into boards; IIHF or head hits: plan on it). USA Hockey floor: minor, misconduct; forceful, head first (608) or careless head hit (620(b)) ejects; reckless ejects, can be a match (Casebook 608)
 Rule: Never check into a teammate's battle or anyone without the puck — USA Hockey: at least a minor (640(e); 640(b), adult men: roughing, Note 2); reckless ejects (640(g); adult men: plan on it) and can be a match (640(h)), likely multi-game ban; careless head contact ejects in any division (620(b))
 Rule: Outside the Elite League, at an English or Welsh club a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban in every league or age group you are registered in (IHUK DOPS C.1, s.11); in the Elite League, Scotland or Northern Ireland, plan on it
 Rule: CARHA (adult) bars checking; charging (52(a)) or deliberate or unaverted contact (49(a)): minor or major, major if a charge or deliberate hit injures; hits from behind eject (53); such majors eject, ban a game or more (30(a), 32(d)); board minors double, two toward three that eject (49(b), 32(a))
@@ -1012,27 +1013,30 @@ The governing principle is **take the puck, or — where your league permits bod
 
 **A winger facing the glass is defenceless, not a target.** That posture is in the criteria because they cannot escape with the puck, not because you may hit them. NHL Rule 41.1 puts the onus on you: *"The onus is on the player applying the check to ensure his opponent is not in a defenseless position and if so, he must avoid or minimize contact."* ⚠️ **If you can see their numbers, pull up and play the puck.** A hit in their back is checking from behind.
 
-A hit from behind ⚠️ **ends your game under the NHL, PWHL and CARHA**, and under Hockey Canada unless it reaches the head; under the IIHF, plan on it. On the head, Hockey Canada's head-contact rule takes over; plan on a game misconduct anyway, which head contact reaches on the violence, and a match penalty if they cannot protect themselves. Under USA Hockey the least it costs is a minor plus a misconduct (608(a)). A forceful hit from behind on a player standing along the boards, a reckless one, or one that sends them head first into the boards or goal frame is a major plus a game misconduct at least (608(b); Casebook 608, Situation 1). Under USA Hockey, careless contact with their head, face or neck is a mandatory major plus a game misconduct too (620(b)).
+A hit from behind ⚠️ **ends your game under the NHL, PWHL and CARHA, and under Hockey Canada off the head; under the IIHF, or on the head, plan on it.** Under USA Hockey it is at least a minor plus a misconduct, and a forceful, reckless or head-first one ends your game (608(b); Casebook 608, Situation 1).
 
-A hit meant to injure is a match penalty in every book but the IIHF. ⚠️ **Even without intent, into the boards or the net on a player who cannot protect themselves it is a mandatory match penalty** under Hockey Canada and CARHA. USA Hockey makes any hit from behind a match penalty when it recklessly endangers a vulnerable or defenceless player with excessive force, boards or not (608(c)). What [a hit from behind](#a-hit-from-behind) costs in each book comes later, in What it costs.
+A hit meant to injure is a match penalty in every book but the IIHF. ⚠️ **Even without intent, into the boards or the net on a player who cannot protect themselves it is a mandatory match penalty** under Hockey Canada and CARHA; under USA Hockey, so is any reckless hit from behind with excessive force on a vulnerable or defenceless player, boards or not (608(c)). What [a hit from behind](#a-hit-from-behind) costs in each book comes later, in What it costs.
 
 Outside the Elite League, at a club in England or Wales, a game misconduct for checking from behind or a head check, or a boarding major, is at least a one-game ban, in every league or age group you are registered in. In the Elite League, Scotland or Northern Ireland, plan on the same ban ([UK and England Rules](../foundation/uk_rules.md)).
 
 **Arrive beside a teammate who is already in a battle — never check into it.** ⚠️ **Under USA Hockey a player engaged in a puck battle may not be body checked at all, at any level, anywhere on the ice: it is at least a minor (640(e)), and if you arrive to hit rather than to play the puck, plan on being ejected.** Seal the wall rather than their opponent's body, keep your arms, stick and skates out of it, and if you end up behind them, play the puck.
 
-**Arrive while they still have the puck — never finish a check on a player who has released it, unless you were already delivering it as they did, and then ease off.** ⚠️ **A late hit is not capped at a minor in any book**, and under USA Hockey any avoidable check on a player who has released the puck is a penalty.
+**Arrive while they still have the puck — never finish a check on a player who has released it, unless you were already delivering it as they did, and then ease off.** A late hit is not capped at a minor in any book, and under USA Hockey ⚠️ **any avoidable check on a player who has released the puck is a penalty.**
 
 ### Sealing and arriving: where the rules bite
 
 **In short:** Keep your arms and skates out of the seal, and arrive with your feet under you rather than building speed into contact.
 
 ```facts
-Rule: Seal the wall with body position — never hold with an arm, never with a skate; USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor, and a skate "push off" is 627(a), a major plus a game misconduct
+Rule: Seal the wall with body position, never an arm — USA Hockey 622 Note makes an arm wrapped around an opponent, pinning them against the boards so they cannot play the puck or skate, a 622(a) holding minor
+Rule: Keep your skates out of the seal — a skate "push off" is USA Hockey 627(a), a major plus a game misconduct
 Rule: Charging is speed built into a hit, not a stride count — jumping into a check is a charge in all six books, and so is travelling an excessive distance under IIHF 42.1, Hockey Canada 7.4 and USA Hockey 607
-Rule: Stride counts: two or more under Hockey Canada 7.4, more than two under USA Hockey 607 and CARHA 52 (adult leagues), "multiple" under IIHF 42.1; NHL and PWHL 42.1 judge distance travelled. Fewer is no licence: Hockey Canada 7.4 also names a violent and unnecessary check, or a blind-side one
+Rule: Stride counts: two or more under Hockey Canada 7.4, more than two under USA Hockey 607 and CARHA 52 (adult leagues), "multiple" under IIHF 42.1; NHL and PWHL 42.1 judge distance travelled
+Rule: Fewer strides are no licence — Hockey Canada 7.4 also makes a violent and unnecessary check, or a blind-side one, a charge
 Rule: USA Hockey writes no bare charging minor — reckless (607(b)) or careless head contact (620(b)) is a major and game misconduct; if reckless, it can be a match (607(e)), likely multi-game ban; Hockey Canada makes an injuring charge the same (7.4(b)), a defenceless target a match (7.4(c))
 Rule: Once the puck is past you, do not cut across into the winger — NHL and IIHF 56.1 and PWHL 57.1 make moving laterally, without establishing body position, into a non-puck carrier interference; USA Hockey 625(a)(4) a minor
-Rule: A game misconduct can cost the next game: USA Hockey 404(b) any one, at least two after a second major in a game (403(b)); Hockey Canada 4.8(c) one in the last 10 minutes, overtime or postgame, at least the next game or seven days; CARHA 32(d) a major's, a game or more, bar an accidental high stick
+Rule: Under USA Hockey any game misconduct costs the next game (404(b)), and at least two if it follows a second major in the game (403(b))
+Rule: A game misconduct can cost the next game under Hockey Canada 4.8(c) if given in the last 10 minutes, overtime or postgame, at least a game or seven days; under CARHA 32(d) a major's costs a game or more, bar an accidental high stick
 ```
 
 **Seal with body position alone, and arrive with your feet under you rather than accelerating in.** ⚠️ **How you seal and how you arrive are rules, not style.**
@@ -1110,7 +1114,8 @@ Never: Pick corners against a set, sighted goalie — the lowest-percentage thin
 Key: Your job is not to shoot harder, it is to shoot through — point shots are blocked more than shots from anywhere else on the ice
 Technique: Walk the line first — skate sideways along the blue line toward the middle until the shot-blocker has to move their feet, then release from the new angle
 Technique: Change the release point — a quick snap from a different spot beats a blocker who has already dropped
-Technique: Take something off it — a slower, lower shot that gets through for a tip beats a 95 mph slapshot into a shin pad; CARHA 79, 30: a slapshot is a minor; if it injures, a major, game misconduct and a ban
+Technique: Take something off it — a slower, lower shot that gets through for a tip beats a 95 mph slapshot into a shin pad
+Rule: CARHA 79 makes a backswing past 15 inches a slap shot, a minor; if it injures, a major, game misconduct and at least a one-game ban (30(a), 32(d))
 Options: Fake the shot — a blocker on the ice opens the lane for the real one, or the seam pass; a faked slap shot can be a CARHA 79(b) minor, so sell it with your shoulders
 Options: Take the D-to-D first — it drags both the blocker and the goalie, and you shoot into a lane just vacated
 ```
@@ -1188,11 +1193,11 @@ The penalties behind the instructions above, one hazard at a time. Each part ope
 
 ### A hit from behind
 
-**Pull up and play the puck — never hit a player whose back is turned to you, anywhere, and above all behind the net or at the glass.** ⚠️ **Checking from behind ends your game under the NHL, PWHL and CARHA, and under Hockey Canada unless it reaches the head. Under the IIHF, plan on ejection either way; a minor is possible once it reaches the head or neck, but do not plan on it. Once it reaches the head, Hockey Canada's head-contact rule takes over — plan on the game misconduct all the same, and a match penalty if they cannot protect themselves.** Under USA Hockey even a light hit from behind is at least a minor plus a misconduct. Under USA Hockey it ends your game if it is forceful at the boards, drives them head first into the boards or net, or is reckless, and so does careless contact with their head, face or neck.
+**Pull up and play the puck — never hit a player whose back is turned to you, anywhere, and above all behind the net or at the glass.** ⚠️ **Checking from behind ends your game under the NHL, PWHL and CARHA, and under Hockey Canada unless it reaches the head. Under the IIHF, plan on ejection either way; a minor is possible once it reaches the head or neck, but do not plan on it. Once it reaches the head, Hockey Canada's head-contact rule takes over — plan on the game misconduct all the same, and a match penalty if they cannot protect themselves.** Under USA Hockey even a light one is at least a minor plus a misconduct, and a forceful, head-first or reckless one, or careless contact with the head, face or neck, ends your game.
 
 ```facts
-Rule: Checking from behind ejects in the NHL, PWHL (43), CARHA (53) and Hockey Canada (7.5); IIHF or head hits: plan on it; USA Hockey: a minor and misconduct at least; forceful at the boards, head first or reckless ejects (608; Casebook 608) and can be a match, likely multi-game ban
-Rule: From behind into boards or goal so they can't protect themselves, a mandatory Match under Hockey Canada 7.5(c), CARHA 53(b); head first or reckless, at least a USA Hockey major and game misconduct (608(b)); meant to injure, a match in NHL, PWHL, Hockey Canada, CARHA and USA Hockey
+Rule: Checking from behind ejects in the NHL, PWHL (43), CARHA (53) and Hockey Canada (7.5); IIHF or head hits: plan on it. USA Hockey: a minor and misconduct at least; forceful at the boards, head first or reckless, it ejects and can be a match (608; Casebook 608)
+Rule: A hit from behind into the boards or goal on a player who can't protect themselves is a mandatory match under Hockey Canada 7.5(c) and CARHA 53(b); a hit meant to injure is a match in the NHL, PWHL, Hockey Canada, CARHA and USA Hockey
 Rule: USA Hockey 608(c) must give a match for a hit from behind that recklessly endangers a vulnerable or defenceless opponent with excessive force — boards or not, goalie or skater
 Rule: USA Hockey 620(b) must give at least a major and game misconduct for careless or intentional contact with an opponent's head, face or neck — a hit from behind included
 ```

@@ -686,6 +686,18 @@ const ppWalkDown = {
 // players low, both defencemen, covering the two low corners and the goalmouth."
 // W397: this used to read "each responsible for one point". The picture is a 1-3-1 with ONE
 // point man, so "one each" could not be drawn; the lanes are true against every set.
+// pk-box only: words beside the 1-3-1's letters, so a sighted reader has the key the caption no
+// longer voices (W629). PP_131_OPP is shared, so the labels are added here, not to the constant.
+// labelHint on H: beside each half-wall man, toward the blue line. Unhinted, the lower one's words
+// stacked under 'weak side, low' and read as one label. N takes no hint: every slot tried within
+// 14 ft was rejected, and the placer's own slot runs the words across the goal line under their halo.
+const PK_BOX_OPP_LABELS = {
+  P: { label: 'point' },
+  H: { label: 'half-wall', labelHint: [-12, 0] },
+  N: { label: 'net front' },
+  B: { label: 'uncovered', labelHint: [-11, 0] },
+};
+
 const pkBox = {
   id: 'pk-box',
   title: 'Box penalty kill',
@@ -701,8 +713,7 @@ const pkBox = {
     'Four killers, shorthanded 4-on-5, drawn against the power-play 1-3-1 that counters it: two forwards ' +
     'high, one each side in the shooting lanes, and two defencemen low — the strong-side one on the puck when it comes low, ' +
     'the weak-side one on the goalmouth and the backdoor. When the puck moves, all four slide together as ' +
-    'one unit — as usually taught, a box kill does not rotate. The ' +
-    '1-3-1\'s letters: P at the point, H on the half-walls, B the bumper, N at the net front. A box ' +
+    'one unit — as usually taught, a box kill does not rotate. A box ' +
     'has no single top — describing one means you are describing a diamond. Nobody is ' +
     'assigned to the middle, by design, so the bumper stands uncovered. Which shape a team ' +
     'runs is a coaching choice, and no public count of bases exists.',
@@ -747,8 +758,10 @@ const pkBox = {
     // below D and above the dot, clear of both (previewed before the build).
     { id: 'D', pos: 'D', at: { at: 'net-front', dx: -4, dy: -10 }, label: 'weak side, low', labelHint: [-7, -9.7] },
 
-    ...PP_131_OPP.map((p) =>
-      p.id === 'B' ? { ...p, label: 'uncovered' } : p),
+    // W409 (4) labelHint [-11, 0]: level with the bumper on the slot side, in the empty ice the
+    // label is about. Unhinted, the placer put it up against the strong-side D's triangle, where it
+    // read as his. Previewed: no other label in this diagram moves.
+    ...PP_131_OPP.map((p) => ({ ...p, ...PK_BOX_OPP_LABELS[p.id] })),
   ],
 
   puck: { at: 'half-wall:right', dy: -4 },

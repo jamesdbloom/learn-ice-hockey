@@ -1158,6 +1158,11 @@ const middleDrive = {
     { from: MD_DRIVER,  to: { at: 'blue-line', dx: 37, dy: -3 }, kind: 'skate' },
     { from: MD_CARRIER, to: { at: 'blue-line', dx: 17, dy: 33 }, kind: 'carry' },
   ],
+
+  // On the carrier, so a reader can see who has the puck (SG95-SG100/SG157). Below him,
+  // on the ice side, because his label sits above toward the boards; behind the line,
+  // because the section does not place the puck's crossing and a dot on the line would.
+  puck: { at: 'blue-line', dx: -2, dy: 25.5 },   // (23, 25.5)
 };
 
 // ---------------------------------------------------------------------------
