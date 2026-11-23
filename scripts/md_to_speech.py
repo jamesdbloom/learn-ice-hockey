@@ -1414,7 +1414,21 @@ _RULE_DECIMAL = (
 #: voiced "to", as `numeric-range` voices it. Leaving it out made this rule take
 #: the first number alone and hand the dash to the symbol table, which turned
 #: "fifty-six point four to fifty-six point five" into a pause.
-_RULE_LIST_SEP = r"(?:,[ ](?:and[ ]|or[ ])?|;[ ]|[ ](?:and|or)[ ]|[ ]?→[ ]?|[ ]?–[ ]?)"
+#: ⚠️ " v " is the corpus's comparison mark between two situations
+#: ("Situations 63.27 v 63.15, 67.4"); without it the list stopped at the first
+#: number and everything after the "v" went back to digit-by-digit. An EM DASH
+#: with spaces is a parenthetical inside a list ("Situation Handbook 81.20 — 81.21
+#: in 2026/27 — and 81.1") and goes back raw, so it is still heard as a pause.
+_RULE_LIST_SEP = (
+    r"(?:,[ ](?:and[ ]|or[ ])?|;[ ]|[ ](?:and|or|v)[ ]|[ ]?→[ ]?|[ ]?–[ ]?|[ ]—[ ])"
+)
+#: The separators allowed inside a BARE bracketed list -- no lead word at all,
+#: only "(46.11, 46.12)". Deliberately narrower than `_RULE_LIST_SEP`: an en dash
+#: in a bracket is how this corpus writes a confidence interval or a range of
+#: measurements ("(1.08–1.66)"), and a lone bracketed decimal is how it writes a
+#: statistic ("games (10.10) more than ... practices (3.11)"), so neither shape
+#: is claimed without a lead.
+_RULE_BARE_LIST_SEP = r"(?:,[ ](?:and[ ])?|;[ ]|[ ]and[ ])"
 
 
 def _rule_number_words(number: str) -> str:
@@ -1446,7 +1460,14 @@ def _rule_number_list(match: re.Match) -> list[Token]:
     pos = 0
     for number in re.finditer(r"[1-9]\d{0,2}\.\d{1,2}", body):
         sep = body[pos:number.start()]
-        out.extend(done(" to ") if sep.strip() == "\u2013" else raw(sep))
+        if sep.strip() == "\u2013":
+            out.extend(done(" to "))
+        elif sep.strip() == "\u2192":
+            # ⚠️ Between two rule numbers the arrow is a RENUMBERING ("46.3→46.10"),
+            # and the symbol table's bare comma ran the two together.
+            out.extend(done(" becomes "))
+        else:
+            out.extend(raw(sep))
         out.extend(done(_rule_number_words(number.group(0))))
         pos = number.end()
     out.extend(raw(body[pos:]))
@@ -1557,6 +1578,15 @@ def _season(match: re.Match) -> str:
         second = f"oh {_ONES[low]}" if low < 10 else int_to_words(low)
         return f"{year_to_words(start)}–{second}"
     return f"{year_to_words(start)} to {year_to_words(end)}"
+
+
+def _season_en_dash(match: re.Match) -> str | list[Token]:
+    """`2010–11` as a season when the years are consecutive; otherwise left RAW."""
+    start = int(match.group(1))
+    end = (start // 100) * 100 + int(match.group(2))
+    if end != start + 1:
+        return raw(match.group(0))
+    return _season(match)
 
 
 def _clock_words(minutes: str, seconds: str, fraction: str = "") -> str:
@@ -2122,14 +2152,45 @@ NOTATION_RULES: tuple[Rule, ...] = (
         "full stop survived and it reached the listener as 'eighty-one.fours'",
     ),
     Rule(
+        "rule-renumbering",
+        # ⚠️ Two rule numbers CLOSED UP round an arrow are one rule's old and new
+        # numbers: uk_rules.md's "instigator 46.3→46.10". No lead word marks them
+        # as rules, so each fell to `bare-number` (digit by digit) and the symbol
+        # table's bare comma glued them: "forty-six point three,forty-six point
+        # one zero". Closed-up only: a SPACED arrow between decimals is a trend
+        # ("points per season 83.7 → 84.7 → 85.2") and keeps its commas.
+        re.compile(rf"{_RULE_DECIMAL}→{_RULE_DECIMAL}"),
+        lambda m: " becomes ".join(
+            _rule_number_words(n) for n in m.group(0).split("\u2192")),
+        "instigator 46.3→46.10 -> 'forty-six point three becomes forty-six point "
+        "ten', not 'forty-six point three,forty-six point one zero'",
+    ),
+    Rule(
         "rule-number-list",
         # ⚠️ Must run BEFORE `rule-citation`, which would freeze the "Rules 9.5"
         # head and leave " and 9.12" with nothing to say it is a rule.
         re.compile(
             rf"(?P<lead>\b(?:{_RULE_BOOK_LEAD}(?:['’]s)?[ ]?\(?"
-            rf"|Situations?[ ]"
+            rf"|Situations?,?[ ]"
+            # An edition before a number names the book it is in: "2026/27 46.14".
+            rf"|(?:19|20)\d{{2}}[/-]\d{{2}}[ ]"
+            # ⚠️ The IIHF's Situation Handbook and the EIHL Casebook are cited by
+            # their book name alone: "Casebook 46.10", "IIHF Handbook 80.12",
+            # "Situation Handbook (46.15)".
+            rf"|(?:Casebook|Handbook)(?:['’]s)?[ ]?\(?"
+            # Hockey Canada's "Interpretation 2 to 7.10", "interpretations to 6.11".
+            rf"|[Ii]nterpretations?[ ](?:[1-9]\d?[ ])?to[ ]"
             rf"|Rules?[ ]+[1-9]\d{{0,2}}(?:\.\d{{1,2}})?(?:[ ]?{_RULE_CLAUSE})*"
-            rf"(?={_RULE_LIST_SEP}{_RULE_DECIMAL})))"
+            rf"(?={_RULE_LIST_SEP}{_RULE_DECIMAL}))"
+            # ⚠️ NO LEAD WORD -- two shapes only, both measured corpus-wide to
+            # catch no statistic. (a) A bracket straight after a closing quotation
+            # mark: the corpus quotes the rule and then cites it, '…Game
+            # Misconduct" (9.12)'. (b) A bracket holding TWO OR MORE numbers joined
+            # by commas, semicolons or "and", and nothing else: "(46.11, 46.12)".
+            # A LONE bracketed decimal is NOT claimed: conditioning_and_recovery.md
+            # writes injury rates exactly that way.
+            rf"|(?<=[\"”])[ ]\((?={_RULE_DECIMAL}(?:{_RULE_BARE_LIST_SEP}{_RULE_DECIMAL})*\))"
+            rf"|(?<![\w)])\((?={_RULE_DECIMAL}(?:{_RULE_BARE_LIST_SEP}{_RULE_DECIMAL})+\)))"
             rf"(?P<list>(?:(?<=[ (])|{_RULE_LIST_SEP}){_RULE_DECIMAL}"
             rf"(?:{_RULE_LIST_SEP}{_RULE_DECIMAL})*)"
         ),
@@ -2448,6 +2509,18 @@ NOTATION_RULES: tuple[Rule, ...] = (
         re.compile(r"\b((?:19|20)\d{2})-(\d{2}|\d{4})\b"),
         _season,
         "2005-06 -> 'two thousand and five to two thousand and six'",
+    ),
+    Rule(
+        "season-en-dash",
+        # ⚠️ The same season written with an EN DASH ("around 2010–11") reached
+        # `numeric-range` and was heard as "two thousand and ten to eleven".
+        # Claimed ONLY for consecutive years with a two-digit second half;
+        # anything else ("1999;86(6):2013–18", a page range) goes back RAW to
+        # `numeric-range` untouched. Not after ":" ";" "/" "." or a digit.
+        re.compile(r"(?<![\d:;/.])\b((?:19|20)\d{2})\u2013(\d{2})\b(?![\d\u2013])"),
+        _season_en_dash,
+        "around 2010–11 -> 'around twenty ten–eleven', not 'two thousand and ten "
+        "to eleven'",
     ),
     Rule(
         "clock-range",
@@ -4820,6 +4893,59 @@ def self_test() -> int:
          "and seventy-six point forty-three"),
         ("Rules 9.5 and 9.12", "Rules nine point five and nine point twelve"),
         ("NHL 56.4\u201356.5", "NHL fifty-six point four to fifty-six point five"),
+        # ⚠️ Leads the first pass did not know: the two books cited by name alone,
+        # Hockey Canada's interpretations, the "v" between situations, and a list
+        # that carries on past an em-dash parenthetical.
+        ("Casebook 46.10, 46.2, 46.1",
+         "Casebook forty-six point ten, forty-six point two, forty-six point one"),
+        ("EIHL Casebook 9.12", "EIHL Casebook nine point twelve"),
+        ("IIHF Handbook 80.12 puts", "IIHF Handbook eighty point twelve puts"),
+        ("the Situation Handbook (46.15) gives",
+         "the Situation Handbook (forty-six point fifteen) gives"),
+        ("Interpretation 2 to 7.10, a player",
+         "Interpretation two to seven point ten, a player"),
+        ("its thirteen interpretations to 6.11 mention",
+         "its thirteen interpretations to six point eleven mention"),
+        ("Situations 63.27 v 63.15, 67.4",
+         "Situations sixty-three point twenty-seven v sixty-three point fifteen, "
+         "sixty-seven point four"),
+        ("Situation Handbook 81.20 \u2014 81.21 in 2026/27",
+         "Situation Handbook eighty-one point twenty \u2014 eighty-one point "
+         "twenty-one in twenty twenty-six\u2013twenty-seven"),
+        ("in a new Situation, 81.18, where",
+         "in a new Situation, eighty-one point eighteen, where"),
+        ("2025/26 46.7, 2026/27 46.14; Situation",
+         "twenty twenty-five\u2013twenty-six forty-six point seven, twenty "
+         "twenty-six\u2013twenty-seven forty-six point fourteen; Situation"),
+        # A clause citation after a lead still belongs to the clause rules.
+        ("Interpretation 1 to 8.5(a)", "Interpretation one to eight point five, clause a"),
+        # ⚠️ NO lead word: a bracket after a quotation, and a bracketed LIST.
+        ('a Game Misconduct" (9.12). A',
+         'a Game Misconduct" (nine point twelve). A'),
+        ("overtime (46.11, 46.12). In",
+         "overtime (forty-six point eleven, forty-six point twelve). In"),
+        ("the shot (63.15 and 67.4)",
+         "the shot (sixty-three point fifteen and sixty-seven point four)"),
+        # ... but a LONE bracketed decimal is a statistic here and keeps its digits,
+        # and so does a bracketed interval or measurement.
+        ("with games (10.10) more than practices (3.11)",
+         "with games (ten point one zero) more than practices (three point one one)"),
+        ("(1.08\u20131.66)", "(one point zero eight to one point six six)"),
+        ("(1.50 m)", "(one point five zero metres)"),
+        ("(2.55%)", "(two point five five percent)"),
+        # ⚠️ A closed-up arrow between rule numbers is a renumbering, not a pause.
+        ("instigator 46.3\u219246.10, aggressor 46.4\u219246.2",
+         "instigator forty-six point three becomes forty-six point ten, "
+         "aggressor forty-six point four becomes forty-six point two"),
+        # ... and a SPACED arrow between statistics is a trend that keeps its commas.
+        ("season 83.7 \u2192 84.7 \u2192 85.2)",
+         "season eighty-three point seven, eighty-four point seven, "
+         "eighty-five point two)"),
+        # ⚠️ An en-dash season was heard as a span of two years.
+        ("around 2010\u201311 \u2014 famously",
+         "around twenty ten\u2013eleven \u2014 famously"),
+        # ... but a page range in a citation is not a season.
+        ("PMID 2013\u201318 and", "PMID two thousand and thirteen to eighteen and"),
         # ... but a statistic, even beside a book name, keeps its digits.
         ("NHL teams scored 1.16 more", "NHL teams scored one point one six more"),
         ("IIHF 1.50 m", "IIHF one point five zero metres"),
