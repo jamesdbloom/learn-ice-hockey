@@ -140,7 +140,7 @@ Never: Turn your back to anyone coming at you on a rim, a reverse or a puck you 
 Rule: Shooting the puck directly out of play from your own zone is a two-minute minor under NHL 63.2(iii), IIHF 63.2(III) and PWHL 65.2(iii) — the IIHF's "surrounding" the bench is wider than the NHL's "behind"; IIHF Situation 63.24 exempts only a puck straight into the bench, not one clearing the glass
 Rule: Deliberately shooting the puck out is a minor anywhere in all six books, after the whistle too under NHL 63.2(ii), IIHF 63.2(II), PWHL 65.2(ii); USA Hockey writes no own-zone limb — 610(c) a minor if deliberate, 631(d) a faceoff if not — after the whistle, a misconduct or worse (601(c)(10), (d))
 Read: "Ice it" is normal on the kill and expensive at even strength — the icing exemption is conditional under NHL and IIHF 81.6 and PWHL 83.6, restricted by classification under USA Hockey 624(b)(1)
-Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid (sole exception: skate contact with the crease), so a puck dumped wide there needs a defenceman; PWHL 1.8 and 27.8 switch it off, though its 65.2(viii) still prints the minor
+Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid (sole exception: skate contact with the crease), so a puck dumped wide there needs a defenceman; the PWHL has none (1.8, 27.8)
 Rule: In Britain, plan for their goalie to come out for a dump-in — England Ice Hockey's R&R 22.3 (2024-25) calls the trapezoid "not currently enforced", its scope and standing unsettled; nothing in the Elite League's Casebook switches IIHF 27.7 off
 Convention: "Eat it" (an unverified call) is a last resort: with no pass, chip, rim or icing on, shield the puck on your stick and take the hit until help comes. Some benches mean "run the clock" instead — keep it moving, never frozen, and only with nobody on you; agree which yours means
 Never: Hold the puck under pressure in your own end — move it. Never pin it for a whistle: a minor in NHL, IIHF, PWHL, USA Hockey; Hockey Canada 6.12(b) and CARHA 55(a) can reach it even if checked
@@ -383,7 +383,7 @@ Options: The goalie's "up" sends the puck up the strong side, "over" switches it
 Convention: Prefer "leave it" to "set" — two syllables are easier to tell from "up" and "over" at speed in a noisy rink
 Key: A goalie shouting "shot" means they have the shooter and you take the pass — stay in the passing lane, it is not a warning that a shot is coming
 Rule: USA Hockey and Hockey Canada have no trapezoid, so behind the net your goalie is a puck-handler — but all six books make any deliberate part in the play past the centre red line a minor, not just playing the puck; their skates test is USA Hockey Casebook 407 Situation 13, Hockey Canada 8.3(a)
-Read: Until your league says otherwise, call it as though it binds — your goalie may not play a puck behind the goal line outside the trapezoid, so "leave it" is only on where the puck is
+Read: Under the NHL or IIHF book, and in Britain unless your league says otherwise, your goalie may not play a puck behind the goal line outside the trapezoid, so "leave it" is only on where the puck is
 Action: Answer your goalie — a call that gets no response gets made quieter next time, and then not at all
 ```
 
@@ -404,7 +404,7 @@ The standard goalie vocabulary:
 - **"Screen"** — I cannot see. Get out of my sightline, or hold your ground beside the screener and lift their stick low on the shaft, well below their bottom hand, as the puck arrives, then let go — never try to walk them out, which can be called interference wherever you play. Nobody else on the ice can know the goalie cannot see, which is why this is the goalie's most important call. See [Moving a screener — what the books allow](#moving-a-screener--what-the-books-allow).
 - **"Shot"** — **a goalie saying "shot" is not warning you a shot is coming. They are telling you they have the shooter and you take the pass** — the same split as "I've got the pass / Take the shooter". Published goalie material documents it in exactly that sense: *"When the puck is at the point, or when the opposing team has a two-on-one, it can be difficult for your defense to know what you want them to do. If you'd prefer that they take away the pass or guard the open man, call for 'shot!'... If you want the shot, call for it!"* A warning tells a skater nothing they can act on; "I have the shooter" tells a defenceman where to put their stick. **If you hear it as a defenceman:** stay in the passing lane and do not drift toward the puck. If your team uses "shot" as a warning, pick another word for the warning — you have half a second to decode this one.
 
-**Know where your book lets your goalie play the puck before you call "I've got it" or "leave it".** Under the NHL and IIHF a goalie may play it behind the goal line only inside the trapezoid, or it is a two-minute minor. The PWHL switches the trapezoid off, though its delay-of-game rule still prints the minor, so play it safe there too. In every book, ⚠️ **a goalie's deliberate part in the play past the centre red line is a minor.** Each book's rule comes later, in [Where your goalie may play the puck](#where-your-goalie-may-play-the-puck).
+**Know where your book lets your goalie play the puck before you call "I've got it" or "leave it".** Under the NHL and IIHF a goalie may play it behind the goal line only inside the trapezoid, or it is a two-minute minor. The PWHL has no trapezoid. In every book, ⚠️ **a goalie's deliberate part in the play past the centre red line is a minor.** Each book's rule comes later, in [Where your goalie may play the puck](#where-your-goalie-may-play-the-puck).
 
 ### Answering your goalie
 
@@ -652,16 +652,16 @@ Rule: Hockey Canada's discretion goes if that player then contacts the linespers
 
 ### Where your goalie may play the puck
 
-**Know where your book lets your goalie play the puck behind the net, and never call them up past the centre red line.** ⚠️ **Under the NHL and IIHF, playing it outside the trapezoid behind the goal line is a two-minute minor — the PWHL switches the trapezoid off but still prints the minor, so play it safe there too — and in all six books a goalie's deliberate part in the play past the centre red line is a minor.**
+**Know where your book lets your goalie play the puck behind the net, and never call them up past the centre red line.** ⚠️ **Under the NHL and IIHF, playing it outside the trapezoid behind the goal line is a two-minute minor, and in all six books a goalie's deliberate part in the play past the centre red line is a minor.**
 
 ```facts
-Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid (markings 1.8; minor at NHL 27.8 / 63.2(viii), IIHF 27.7 / 63.2(VIII)) — sole exception skate contact with the crease. PWHL 1.8 and 27.8 switch it off, though 65.2(viii) still prints the minor
+Rule: Under NHL and IIHF rules the goalie may play the puck behind the goal line only inside the trapezoid (markings 1.8; minor at NHL 27.8 / 63.2(viii), IIHF 27.7 / 63.2(VIII)) — sole exception skate contact with the crease. The PWHL has none (1.8, 27.8)
 Rule: USA Hockey 614(c) makes a goalie's freeze a minor if they had time to play it before being pressured, behind the goal line with their body entirely outside the crease, outside the privileged area, or if they hold it against the frame or boards or intentionally drop it on the back of the netting
 Rule: Hockey Canada's Interpretation 3 to 10.1(a) makes a goalie's freeze outside the crease a minor, with no warning — yet its second clause lets a goalie come out to cut the angle and cover the puck after the save, and the book does not say which governs
 Rule: In Britain your goalie plays as though IIHF 27.7's trapezoid binds — the Elite League's Casebook does not switch it off, and England Ice Hockey R&R 22.3 (2024-25) "not currently enforced" has unsettled scope and standing; no later In-House edition mentions it
 ```
 
-**A constraint that shapes all of this: the trapezoid.** Under **NHL and IIHF rules** the goalie may play the puck behind the goal line only inside the marked trapezoid, unless *"maintaining skate contact with"* the crease. So "I've got it" and "leave it" are only on where the puck actually is. **USA Hockey and Hockey Canada have no trapezoid**, so under those books your goalie is a genuine third puck-handler behind the net, which changes their calls and yours completely. ⚠️ **Behind the net, and no further: never past the centre red line, in any book (below).**
+**A constraint that shapes all of this: the trapezoid.** Under **NHL and IIHF rules** the goalie may play the puck behind the goal line only inside the marked trapezoid, unless *"maintaining skate contact with"* the crease. So "I've got it" and "leave it" are only on where the puck actually is. **The PWHL, USA Hockey and Hockey Canada have no trapezoid**, so under those books your goalie is a genuine third puck-handler behind the net, which changes their calls and yours completely. ⚠️ **Behind the net, and no further: never past the centre red line, in any book (below).**
 
 Each book's trapezoid wording, and where the rule came from, is in [Rules Primer](rules_primer.md#the-trapezoid-goalkeepers-restricted-area).
 

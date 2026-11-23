@@ -507,10 +507,11 @@ const theTrapezoid = {
     'that only deflects into you. USA Hockey, Hockey ' +
     // CARHA added W33: carha.txt has no "trapezoid", "restricted area" or "designated area";
     // Rule 37(e) is the centre-red-line minor and Rule 58(b) the behind-the-goal-line
-    // freezing minor. PWHL: pwhl_rules.txt 1.8 ("No restricted Goalkeeper's Area ... will be
-    // enforced") and 27.8 ("does not apply a restricted area"), yet 65.2(viii) still makes it
-    // a minor to play "outside of the designated area behind the net". rink_map.md :269 owns
-    // the "play as if it binds" reading. Elite League: the EIHL Casebook says the IIHF book
+    // freezing minor. PWHL (W629, 23 Nov 2026): the 2026-27 book deletes the old 65.2(viii)
+    // minor; 1.8 reads "There will be no designated area behind the net, otherwise known as the
+    // 'trapezoid'" and 27.8 "does not apply a restricted area" (pwhl_rules_2026-27.txt :854-856,
+    // :3084-3085). The old "play as if it binds" reading is superseded; this caption names no
+    // PWHL limb. Elite League: the EIHL Casebook says the IIHF book
     // governs every rule it does not mention, and it never mentions the restricted area;
     // EIH Rule 22.3 governs EIH competitions — uk_rules.md KT7 is the owner of that carve-out.
     'Canada and CARHA mark no trapezoid, but all three still stop the goalie at the centre ' +

@@ -884,8 +884,11 @@ const trapezoidAim = {
     'mark one, with the KHL commonly said to have one too though no KHL ' +
     // W33: CARHA, PWHL and Elite League limbs added, matching zone_entries.md §7 "Where the
     // trapezoid applies". carha.txt scores 0 for trapezoid / restricted area / designated
-    // area. pwhl_rules.txt 1.8 and 27.8 switch it off while 65.2(viii) still writes the minor;
-    // for an ATTACKER the owner's reading is "plan for her to come out". The EIHL Casebook
+    // area. PWHL: W629 (23 Nov 2026), the 2026-27 book deletes the old 65.2(viii) minor and
+    // pwhl_rules_2026-27.txt 1.8 (:854-856) reads "There will be no designated area behind the
+    // net, otherwise known as the 'trapezoid'"; 27.8 still "does not apply a restricted area".
+    // Table 11 still lists "Playing puck in restricted area" against Rule 27.7, which is the
+    // centre-red-line rule and writes no such minor. So "neither does the PWHL". The EIHL Casebook
     // hands every rule it does not mention to the IIHF book and never mentions this one, so
     // EIH Rule 22.3's suspension is not an Elite League answer (uk_rules.md KT7).
     // W34: the British limb read "The Elite League plays the IIHF book; elsewhere in England
@@ -895,7 +898,7 @@ const trapezoidAim = {
     // goalie to come out. eih_rr.txt 22.3 "not currently enforced"; 22.2 "EIH competitions";
     // eihl_casebook.txt Preamble hands unmentioned rules to the 2026-2027 IIHF book.
     'rulebook was available to check that; the USA Hockey, Hockey Canada and CARHA books mark ' +
-    'none, and the PWHL switches its off though one rule still writes the minor, so plan for a ' +
+    'none, and neither does the PWHL, so plan for a ' +
     'PWHL goalie to come out. In any British competition, plan for them to come out too: ' +
     'England Ice Hockey calls it "not currently enforced", but that rule’s scope ' +
     'and standing are unsettled. Look behind the net, ask your league, and ' +

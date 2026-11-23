@@ -26,7 +26,7 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## In flight
 
-- None. W630–W631 shipped with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
+- None. W632 shipped with record `w632_pwhl_2026_27_propagation_2026-11-23.md`. W630–W631 shipped as 144a5487, with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
 
 ## 1. Cheaper than the book, or a reader could be hurt
 
@@ -61,12 +61,9 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 6. Sources and tooling
 
-- **PWHL 2026-27 rulebook: now on disk as `sources/pwhl_rules_2026-27.txt` (W630 D). The corpus still cites the superseded 2025-26 book.** These changes affect corpus claims; the W630 D report lists every site.
-  - **52.1 Body Checking** is rewritten, and **52.5**'s game misconduct now needs an injury. About 50 sites, mostly now harsher than the book. The new blindside and leaving-the-feet limbs are not carried anywhere.
-  - **82.1:** batting the puck above the shoulders is now **permitted**, and lacrosse cradling is allowed in open play. passing :439's "prohibited in all six books" is now false. Also shooting, ozp, and rules_primer :1012, which cites a deleted 82.2.
-  - **65.2(viii)** is deleted, and **1.8** says there is no trapezoid. About 38 sites carry the old "the book contradicts itself" advice. It is conservative, but its premise is stale.
-  - **9.10:** a new mandatory neck protector, with a bench minor plus a 10-minute misconduct. Check uk_rules :29's "sharpest difference from North America" and the equipment neck section.
-  - **Sources trailers:** 39 citations of the 2025-26 PDF.
+- **PWHL 2026-27, remainder after W632.** 52.1/52.5, 82, the trapezoid and the 9.10 neck protector are now propagated across about 30 pages. Two things are left.
+  - **Sources trailers.** These still cite the 2025-26 PDF for rules nobody has re-read in the new book. The 2026-27 link was added only beside the rules that were re-read. A rule-by-rule re-read is needed before those links can be re-pointed (W632 D lists on_ice :805, pwtp :1184, how_to_watch :739, goaltender :1847, equipment :902).
+  - **Summary layers.** Some may still assume the old PWHL rule without naming the PWHL or the act. These are found only by reading, not by a sweep.
 - **EIHL Casebook.** Check whether the copy on disk has been superseded; many Elite League claims rest on it. (W445 (5))
 - **Hockey Canada PDF.** Put it on disk, and note in `sources/README.md` that `hc.txt` scrambles Appendix D. (W385 (8))
 - **The IHUK-distributed compressed IIHF PDF.** It bears on the In-House edition contradiction. It needs an unfiltered network, so the owner must fetch it.
