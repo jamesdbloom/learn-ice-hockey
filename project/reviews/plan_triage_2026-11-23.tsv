@@ -1,0 +1,474 @@
+line	row_tag	verdict	reason	checked
+18	From W625 (opt 1)	DROP	bcb :688 reads correctly now: 640(g) major, 640(h) match, "Both" has its pair. Cosmetic.	bcb :688
+19	From W625 (opt 2)	KEEP-d	pwtp :1014/:1052 still say "plan on a match"; falls under owner's 22 Nov reword decision (W521(2)). Finish with W626.	pwtp 602(a) grep
+20	From W625 (opt 3)	DROP	Unsearched; no defect named.	-
+22	From W623 (cosmetic)	DROP	Cosmetic curve hugging a circle line; does not mislead.	-
+31	From W612 (1)	KEEP-c	Splitting 9 long ozp facts lines is a real listener gain and does not lengthen. Merge with W508(5).	-
+33	From W612 (3)	KEEP-c	Hit-from-behind tariff stated four times in ozp. Cutting restatements is readability and fewer propagation sites. Safety review needed.	ozp :844/:971/:1015/:1196-1204
+34	From W612 (4) "Also seen" remainder	KEEP-c	Net-front Convention 3x (goaltender), forechecking turned-back tariff 3x: restatement cuts. Drop the Disabled Hockey facemask sub-point.	-
+37	From W599 (2)	DROP	Conservative craft; reader does the same thing either way.	-
+38	From W599 (3)	DROP	Optional; errs safe.	-
+40	From W597 (1)	DROP	Unreached census remainder; speculative, no defect named.	-
+41	From W597 (2)	DROP	Speculative CARHA sweep, no defect named.	-
+43	From W595 (1) remainder	DROP	Overtaken: closed for all captions in W601-W604; remainder is unscoped paraphrase.	-
+47	From W533 (3)	DROP	Block at HARD_MAX; sibling :1262 carries 620(b); goalie sites in W626 reword scope.	-
+49	From W541 (1)	DROP	Kept on purpose by ruling, re-confirmed W608.	-
+55	From W572 (2)	DROP	Lower-confidence, intent-to-injure match omitted; plan says do not sweep. No defect named.	-
+57	From W572 (4)	DROP	Victim-side goalie list; goalie cannot act on it. Adjacent :727 carries 52(b).	goaltender :1281/:1715
+60	From W571 (1)	KEEP-c	Concrete cut: drop center body copies :709/:792 of CARHA 53(a); facts line carries it. Shortens.	-
+61	From W571 (2) remainder	DROP	Errs harsh (game misconduct without "intentional").	-
+62	From W571 (3)	DROP	Speculative sweep, no defect named.	-
+66	From W568 (1a)	DROP	Sources-trailer citation placement; unvoiced, changes nothing a reader does.	-
+67	From W568 (1b)	DROP	Book's own stale cross-reference note in trailers; citation nit.	-
+68	From W568 (1c)	DROP	Optional extra citation; adds length.	-
+69	From W568 (1d)	DROP	Optional extra citation (same as W506(2)).	-
+70	From W568 (2)	DROP	"Not attacked" sweep, no defect named.	-
+72	From W565 (1)	DROP	Left by ruling; next facts line carries 608(c); only an ear test could reopen.	-
+84	From W565 (2)	DROP	Speculative sweep, no defect named.	-
+87	From W553/W557 (4)	DROP	Speculative grant sweep, no defect named.	-
+88	From W553/W557 (5)	DROP	Optional; adds length to a capped facts line.	-
+90	From W542 (4)	DROP	Errs harsh; plan already says acceptable.	-
+92	From W539 kept five	DROP	A note, not work.	-
+95	From W563 remainder (ladder copies)	DROP	Residual restatements outside census; vague. Covered in spirit by W436(2).	-
+96	From W560 (2) free removals	KEEP-c	Seven units carry two glyphs; removing one is free (spoken "Important." stays) and fewer glyphs is what the owner asked for.	-
+97	From W560 (2) Important-per-minute	DROP	Tooling idea / ear test; no defect named.	-
+101	From W529 (2)	DROP	Unsettled reach of Casebook Sit. 17; corpus errs strict.	-
+102	From W529 (5)	DROP	Listen-to-it check of shipped text; no defect named.	-
+104	From W526 (2)	DROP	Negatives sweep with no defect named; rulebook negatives tested well.	-
+106	From W523 (4)	DROP	Box already routes immediate danger; plan says do not add.	-
+108	From W522 (2)	KEEP-a	No youth crisis line in mental_game; young reader at risk has no route. Source and verify first; one line, no hedging.	-
+109	From W522 (4)	DROP	Optional; current wording is the cautious route.	-
+111	From W521 (2)	KEEP-d	Owner decided REWORD 22 Nov; batches 1-2 shipped, W626 in flight. Finish it; sub-bullets :112-:118 are its evidence.	-
+119	From W521 (3)	KEEP-a	Ejection limbs carried nowhere: misconduct/GM for refusing to go to bench, goalie leaving crease. RISK: fix must not lengthen summary layer. Trailer-citation half DROP.	-
+120	From W521 (4)	DROP	Left on purpose under readable-beats-defendable; each opens "stay out".	-
+121	From W521 (5)	KEEP-c	Phone-width label check on two rebuilt diagrams; fold into the one browser pass (W501(14)).	-
+123	From W518 (2)	DROP	Label-consistency only.	-
+125	From W518 (3) Tier 3	DROP	Plan itself says low value.	-
+126	From W518 (3) 1,037 loose hits	DROP	Untriaged worklist noise; speculative.	-
+128	From W518 (3) past six-word window	DROP	Speculative; no defect named.	-
+130	From W518 (3) it=puck classes	DROP	Not tallied; speculative.	-
+132	From W518 (3) winger forecheck / pk-box	DROP	winger names 2-1-2 and 1-2-2 with "find out" (:431/:441) and the lock (:303/:322); pk-box already accepted.	winger.md grep
+134	From W517 (3)	DROP	Pronoun "one" nits; waits on a tool.	-
+135	From W517 (4)	DROP	Plan says close enough.	-
+138	From W515 (4)	DROP	"Not checked" diagram sweep, no defect named.	-
+140	From W514 (3)	DROP	Judgement on a drill opener; does not mislead.	-
+143	From W513 (2)	DROP	Intent-to-injure match omitted on capped lines; body/owner carry it. Adding lengthens facts.	-
+147	From W513 (3)	DROP	Citations lost to cap; prices still stated.	-
+151	From W513 (4)	DROP	"unable to defend themselves" is HC 7.4(c)'s own wording; sweep has no defect named.	risk_management :303; grep content
+153	From W513 (7)	DROP	Tool hits read fine heard alone ("those three books" refers inside the line).	check_facts_antecedents.py output
+154	From W511 (2)	DROP	Reviewer judged not wrong; cosmetic framing.	-
+155	From W508 (5)	KEEP-c	~70 ozp facts lines over 40 words. Shortening helps listeners; must not drop a tariff or overstate. Merge with W612(1).	-
+156	From W507 (7)	KEEP-c	Browser look at two changed captions; fold into W501(14).	-
+157	From W506 (2)	DROP	Extra citation for icing paragraph; nit.	-
+157	From W506 (3)	KEEP-c	switching :293 "no line change bar injury" mishears aloud; "except for an injury" is a 3-char fix in a facts line voiced alone.	switching_positions :293
+157	From W506 (5)	DROP	Optional; substance kept in paragraph and facts.	-
+157	From W506 (6)	DROP	Minor wording.	-
+157	From W506 (7)	DROP	Harsh direction, not unsafe; open question only.	-
+157	From W506 (8)	DROP	Time-out availability nit; no penalty or safety stake.	breakouts :108
+157	From W506 (9)	DROP	Unvoiced Sources gloss.	-
+158	From W505 (2)	DROP	Double "find out" across caption and diagram; minor.	-
+158	From W505 (9)	DROP	Renderer voicing nit; fold into W449(3) if done.	-
+159	From W503 (2)	DROP	Corpus already settled harsh ("plan on major and GM").	-
+159	From W503 (3)	DROP	Sweep, no defect named.	-
+159	From W503 (5)	DROP	Same outcome; citation-only ruling.	-
+159	From W503 (6)	DROP	Time-out absence; no CARHA hit for time-out wordings; no reader stake.	carha_2026.txt grep
+159	From W503 (9)	DROP	Corpus takes harsher reading.	-
+160	From W502 (2)	DROP	Unsettled overlap with no reader consequence.	-
+160	From W502 (6)	DROP	Wording minors; siblings carry the omitted limbs.	-
+160	From W502 (7)	DROP	Review-coverage note; touched no facts line.	-
+161	From W501 (7)	DROP	Renderer voicing nit; fold into W449(3).	-
+161	From W501 (8)	DROP	Optional note.	-
+161	From W501 (11)	DROP	Harsh reading, consistent across layers.	-
+161	From W501 (14)	KEEP-c	One visual pass (both themes, 400px iframe) on ten changed pages; absorbs W521(5), W507(7).	-
+163	From W496 (1)	DROP	Cross-book claims in long Sources trailers; unvoiced; speculative.	-
+163	From W496 (2)	DROP	Diff not done; no defect named.	-
+163	From W496 (3)	DROP	Tooling nit.	-
+164	From W495 (1)-(3)	DROP	"Same wording" claims untested; no defect named.	-
+165	From W494 (1)	DROP	Refetch 57 web quotations; speculative, no defect named.	-
+165	From W494 (2)-(3)	DROP	Census tooling limits.	-
+166	From W493 (1)-(3)	DROP	Census limits; (3) is the book's own tension.	-
+167	From W492	DROP	Period-only quote nits, flagged as nits.	-
+168	From W485	DROP	Lexical-census limit; no defect named.	-
+170	From W482	DROP	Cosmetic line weight.	-
+171	From W480 (1)	DROP	Unvoiced trailer truncation.	-
+171	From W480 (2)	DROP	Wording nit.	-
+171	From W480 (3)	KEEP-b	Offside "as the puck crosses" without "completely" is imprecise; +1 word at four sites, no lengthening.	-
+172	From W479	DROP	"at" vs "on" nit.	-
+173	From W478	DROP	Synonym sweep, no defect named.	-
+174	From W477 (1)	DROP	Sources not on disk; no defect named.	-
+174	From W477 (2)	DROP	Unchecked question, no defect named.	-
+175	From W475	DROP	Plan says low priority.	-
+176	From W472/W473 (1)	DROP	Side-word sweep, no defect named.	-
+176	From W472/W473 (2)	KEEP-d	Real screen-reader pass is owner/manual work.	-
+176	From W472/W473 (3)	DROP	Design call, cosmetic.	-
+176	From W472/W473 (4)	DROP	Bookkeeping confirmation.	-
+176	From W472/W473 (5)	DROP	Consistent; no defect.	-
+177	From W466 (1)	DROP	Site-reviewer metric tooling nit.	-
+177	From W466 (2)	DROP	Speculative; no hidden content named.	-
+178	From W462 (1)	DROP	Errs harsh.	-
+178	From W462 (2)-(3)	DROP	Unread/unswept; no defect named.	-
+179	From W460 (1)	DROP	Nit.	-
+179	From W460 (2)	DROP	Re-check, no defect named.	-
+179	From W460 (3)	DROP	Process-doc addition; low value.	-
+181	From W458 (2)	DROP	Tooling gap.	-
+182	From W456 (1)	DROP	Captions already work around it.	-
+182	From W456 (2)	DROP	Errs harsh.	-
+183	From W453	DROP	Sweep, no defect named.	-
+184	From W451 (1)	DROP	Plan says harmless.	-
+184	From W451 (2)	DROP	Renderer voicing; fold into W449(3).	-
+185	From W450	DROP	Corpus says "plan on it" (harsh).	-
+186	From W449 (1)	DROP	Unverified; no defect named.	-
+186	From W449 (2)	DROP	Minor amber-length nit.	-
+186	From W449 (3)	KEEP-c	One renderer fix for rule-number and season voicing ("twenty twenty-six to twenty twenty-seven" changes meaning). Absorbs W446(1), W451(2), W501(7), W505(9).	-
+187	From W447 (1)-(4)	DROP	Wording-only, or a source not on disk.	-
+188	From W446 (1)-(2)	DROP	(1) fold into W449(3); (2) framing nit.	-
+189	From W445 (1)-(4)	DROP	Unsettled or errs protective.	-
+189	From W445 (5)	KEEP-e	Check whether the on-disk EIHL Casebook is superseded; many Elite League claims rest on it.	-
+190	From W443 (1)-(5)	DROP	Mild scope wording, harsh or optional; (5) cosmetic amber-on-citation.	-
+191	From W442 (1)-(3)	DROP	W439 ruling says not a sweep; (2) harsh; (3) unswept.	-
+192	From W441 (1)-(5)	DROP	"legal" means no penalty and is right; citation nits; harsh; optional.	on_ice_communication :592
+193	From W440 (1)-(3)	DROP	Browser-font label gaps are cosmetic; optional describe.	-
+194	From W439 (1)	DROP	passing :477 already scopes the minor to "causes no injury".	passing_and_receiving :477
+194	From W439 (2)	DROP	Errs strict.	-
+195	From W438 (1)-(2)	DROP	Optional wording.	-
+195	From W438 (3)	KEEP-c	bcb third-man: only glyph is on the discretionary limb; the mandatory GMs are unmarked. Moving the marker is free.	-
+195	From W438 (4)	DROP	Omitting the qualifier errs harsh.	-
+196	From W436 (1)	DROP	Harsh; qualifying sentence follows at :592.	winger :592
+196	From W436 (2)	KEEP-c	winger net-front ladder still dense; demote with a layer test. Real readability gain.	-
+197	From W435 (1)	DROP	Errs harsh.	-
+197	From W435 (2)-(4)	DROP	Line exists elsewhere; book ambiguities.	-
+197	From W435 (5)	DROP	mental_game :579 gives USAH GM plus match for force; matches 601 text read. Lead not borne out.	mental_game :579; usah.txt 601
+198	From W434 (1)-(3)	DROP	Judgement or book silent.	-
+199	From W433 (1)-(3)	DROP	Research or cosmetic amber.	-
+200	From W431 (1)	KEEP-d	Dead IIHF 2025/26 URL cited 49 times: keep and label, re-point, or rely on disk. Owner call; never delete.	grep: 49 citations
+200	From W431 (2)	DROP	Section opens "Do not fight"; North American silence grants nothing.	special_teams :1098-1105
+200	From W431 (3)	DROP	Optional.	-
+202	From W430 (6)	DROP	Research; corpus already says plan on ejection.	-
+203	From W429 (2)	DROP	Unsure; low.	-
+203	From W429 (9)	DROP	Source gap with no defect named.	-
+204	From W424 (4)	DROP	Unsure; speculative.	-
+205	From W423 (2)	DROP	Optional; lengthens Common Mistakes.	-
+205	From W423 (5)	DROP	Unvoiced trailer cross-reference nit.	-
+205	From W423 (6)	DROP	Overtaken: center KT9 now says "under CARHA in the crease or if it injures".	center KT9
+206	From W422 (1)-(5)	DROP	Unsure, optional or harsh.	-
+207	From W421 (1)-(5)	DROP	Harsh, optional or untested leads.	-
+208	From W420 (4)-(8)	DROP	Research, optional, unsure or book silent.	-
+209	From W418 (4)-(6)	DROP	Harsher nuances, cosmetic, optional.	-
+210	From W417 (4)-(7)	DROP	No room; consistency; optional; "walk-out" defined in the body beside :260.	defender :260/:276
+211	From W415 (6)	DROP	Amber in unvoiced trailers; tidy only.	-
+212	From W414 (1)	DROP	Supplementary-discipline additions lengthen; census lost; trailer form harsh.	-
+212	From W414 (7) nit	DROP	"fair game" twice is a nit.	-
+212	From W414 (7) unsure	KEEP-c	rink_map :459 leads with "can be legally checked"; reorder so "play the puck with your stick, never your body" comes first. Free.	rink_map :459
+212	From W414 (8)	DROP	The permission is true and scoped to Rule 604.	rink_map :459
+213	From W412 (2)	DROP	Table is dropped from audio; low priority.	-
+214	From W411 (4)	KEEP-c	bcb charging/head facts block says IIHF off-ice discipline three times; merging shortens a voiced layer.	-
+214	From W411 (6)	DROP	Unreconciled British junior RoC vs In-House 201; no corpus sentence named as wrong. Re-raise only if one is found.	grep: RoC is cited on 10 pages, none read
+214	From W411 (8)	DROP	Count only "not re-verified"; no error named; any error would be in the harsh direction.	-
+215	From W409 (4)	KEEP-c	"uncovered" label may attach to the wrong player at phone width, which teaches the wrong read; cheap labelHint.	special_teams.mjs B entry
+215	From W409 (6)	DROP	Judgement call on a missing ⚠️; no defect named.	-
+215	From W409 (9)	DROP	Marked optional, at cap; would lengthen a facts line.	-
+216	From W408 (5)	DROP	"High slot is not the most dangerous ice" is true; negation phrasing is a style nit.	-
+217	From W407 (4)	KEEP-c	"meant to injure is a match" restated at many dtr sites; demoting body restatements cuts length and propagation risk.	-
+217	From W407 (7)	DROP	The non-checking frame already says the check can end your game; the missing match tier is harsher, so the reader acts the same.	switching_positions.md:259
+218	From W406 (3)	DROP	Unsure; it notes a silence, not a false claim.	-
+218	From W406 (4)	DROP	A reading question; mental_game takes the broad (harsher) reading.	-
+218	From W406 (5)	DROP	Optional wording parity ("plan on the same" vs "ban").	-
+218	From W406 (6)	DROP	Trailer census with no baseline; unvoiced; no defect named.	-
+219	From W405 (1)	KEEP-d	OWNER CALL: three diagram labels drawn near the wrong player; options listed. Also teaching (c).	-
+220	From W403 (3)	DROP	Low tooling nit in check_label_paint.	-
+221	From W402 (2)	DROP	Optional tooling refinement.	-
+221	From W402 (4)	DROP	The corpus quotes DOPS C.1 verbatim, and only in Sources trailers; a faithful quotation of the source's own error.	pwtp.md:1186, bcb.md:2252
+221	From W402 (5)	DROP	Overtaken: commits f264d4c5/7d63cff3 now scope IHUK bans "Outside the Elite League".	git log
+222	From W401 (6)	DROP	Optional refetch; attribution nit.	-
+223	From W400 (1)	DROP	Latent tooling guard with no mispronunciation found.	-
+224	From W399 (4)	DROP	Screen-reader test of U+2011; speculative.	-
+225	From W398 (3)	KEEP-d	Owner call: record or recode the C-as-carrier exception to the label convention.	-
+225	From W398 (4)	DROP	Optional label-naming consistency.	-
+225	From W398 (6)	DROP	Unverified phone scroll hint; no defect observed.	-
+225	From W398 (7)	DROP	Comment-only change.	-
+226	From W397 (9)	DROP	Cross-browser/PDF CSS check; speculative.	-
+227	From W396 (1)	DROP	Structural tidy of facts-line tracing; reader-invisible.	-
+227	From W396 (3)	DROP	Optional amber sibling parity inside KT13.	-
+227	From W396 (4)	KEEP-a	KT14 "Leave the helmet on; move the player only to clear their airway" is plain text after an amber list. Bolding it is free and adds no length.	getting_started.md:721
+227	From W396 (7)	DROP	Marked harsh; unscoped mandatory major errs strict.	-
+228	From W395 (11)	DROP	Undefined in source; corpus already says "plan on".	-
+228	From W395 (12)	DROP	Row itself says neither reading is cheaper.	-
+229	From W394 (5)	KEEP-c	pk-box caption voices the letter key, which is noise to a listener; cutting it shortens.	special_teams.mjs:705
+229	From W394 (8)	DROP	Count not re-verified; no error named.	-
+229	From W394 (9)	DROP	Unsettled, source not on disk; no reader action changes.	-
+229	From W394 (10)	DROP	Edge case (English club playing in Scotland); adding it lengthens.	-
+230	From W393 (2)	DROP	Errs harsh by the row's own account.	-
+230	From W393 (13)	DROP	Book conflict; corpus errs harsh.	-
+231	From W391 (3)	KEEP-d	Owner call: should Key focus carry USA Hockey's "must" tier? RISK: it would lengthen Key focus.	-
+231	From W391 (5)	DROP	Harsher direction; about 30 sites; a sweep would add length.	-
+232	From W389 (9)	DROP	"Unsure, check": speculative, no defect named.	-
+233	From W388 (5)	DROP	Scripts change, probably inaudible.	-
+233	From W388 (6)	DROP	risk_management already prices it at minor plus game misconduct (an ejection); the missing major tier is harsher only.	risk_management.md:765
+234	From W387 (7)	DROP	Optional citation parallelism.	-
+234	From W387 (8)	DROP	Optional, no room; citation nit.	-
+236	From W385 (7)	DROP	Safety reviewer already judged it acceptable; close.	-
+236	From W385 (8)	KEEP-e	Put the HC PDF on disk and note in README that hc.txt scrambles Appendix D. Prevents future misreads.	-
+237	From W384 (6)	DROP	Speculative "check whether covered"; no ladder named.	-
+238	From W383 (4)	DROP	Row itself says cosmetic.	-
+239	From W382 (7)	DROP	Unchecked site hypothesis; no defect observed.	-
+240	From W381 (3)	DROP	Harsher direction (missing "accidental").	-
+240	From W381 (6)	DROP	Harsher than the Casebook; the reader keeps hits off the head anyway.	-
+241	From W380 (6)	DROP	Precedence unresolved; corpus takes the harsher reading.	-
+241	From W380 (7)	DROP	Metric baseline; the row says the metric is unreliable.	-
+242	From W378 (5)	DROP	"Not re-verified" with no defect named; harsh-direction claim (head cross-check).	-
+243	From W377 (5)	DROP	Low tooling metric nit.	-
+243	From W377 (6)	KEEP-d	Owner call: is a lower amber/length ceiling wanted for the getting_started concussion KTs?	-
+244	From W373 (5)	KEEP-c	KT8 "If the carrier is between you and the puck" is self-contradictory (the carrier has the puck); a one-word fix.	special_teams.md:1342
+245	From W369 (2)	DROP	Unvoiced trailer "is why"; attribution nit.	-
+245	From W369 (3)	DROP	Tooling gap, no instance named.	-
+246	From W368 (2)	DROP	Unresolved; corpus states nothing either way.	-
+246	From W368 (7)	DROP	Row itself says cosmetic (VI vs vi).	-
+247	From W366 (2)	DROP	Caption omission; adding it lengthens.	-
+248	From W365 (3)	DROP	Optional, not re-checked.	-
+249	From W362 (3)	DROP	Books not on disk; speculative completeness.	-
+250	From W361 (6)	DROP	Metric variant; low tooling.	-
+251	From W360 (3)	DROP	Two wordings of the IIHF tier; consistency-only.	-
+251	From W360 (4)	DROP	Metric nit.	-
+251	From W360 (5)	DROP	Small items: back-to-back brackets, unchecked scopes, center line names two books correctly; none cheaper.	-
+251	From W360 (6)	DROP	Census limits; speculative.	-
+252	From W359 (4)	DROP	346-char amber run; row warns shortening risks a closed list.	-
+253	From W358 (3)	DROP	Speculative census; no unpaired "PWHL a major" found now.	grep "PWHL a major" corpus-wide: 0 without GM
+253	From W358 (4b)	DROP	Cosmetic, site only.	-
+253	From W358 (5)	KEEP-a	bcb facemask CM "other books run from a minor to a match"; the PWHL floor is major+GM, so cheaper. Fix by substitution, no length.	bcb.md:2130
+254	From W357 (2)	KEEP-c	HC on-the-head ladder restated in three adjacent special_teams paragraphs; consolidating shortens.	-
+255	From W356 (2)	DROP	Unvoiced trailer method note in collapsed Sources.	-
+255	From W356 (3)	DROP	Tooling coverage question.	-
+256	From W355 (2)	DROP	Unviewed amber density; speculative.	-
+256	From W355 (2b) shooting	DROP	Harsh direction.	-
+256	From W355 (2b) game_management :651	KEEP-c	"Hockey Canada writes this only…" after the time-out clause is an ambiguous pointer; name "the no-change rule" instead.	game_management.md:651
+257	From W353 (1)	DROP	Speculative sweep for wordings; no defect named.	-
+257	From W353 (3)	DROP	Harsh by the row's own account.	-
+258	From W351–W352 (1)	DROP	Speculative sweep, though it is a cheaper-direction class; re-raise if an instance is found.	-
+259	From W351–W352 (2) special_teams :817	DROP	Safe direction.	-
+260	From W351–W352 (2) pwtp/risk/faceoffs/ooc	DROP	"Not re-checked"; no defect named.	-
+262	From W351–W352 (3) faceoffs :586	KEEP-c	Facts "Where checking is allowed at all, take the puck…" scopes taking the puck to checking games; deleting the clause shortens.	faceoffs.md:586
+262	From W351–W352 (3) dtr/pwtp not re-checked	DROP	Not re-checked; no defect named.	-
+262	From W351–W352 (5)	DROP	Speculative re-read.	-
+263	From W350 (1)	DROP	Speculative sweep.	-
+263	From W350 (2)	DROP	Partly overtaken: risk_management :765/:853 and pwtp :828 carry the head and intent limbs beside the boards-only line.	risk_management.md:765,850,853; pwtp.md:828
+263	From W350 (5)	DROP	Citation nit (Casebook vs rule text).	-
+263	From W350 (6)	DROP	Unresolved in book; no reader action.	-
+263	From W350 (7)	DROP	Speculative; "check whether it needs".	-
+264	From W349 (2b)	DROP	Review gap on lines since committed; no defect named.	-
+264	From W349 (4)	DROP	Speculative sweep.	-
+264	From W349 (6) ooc :591	KEEP-c	Facts line "reads oddly" when voiced alone; reword with no added length. Optional amber/parenthetical parts dropped.	-
+264	From W349 (7)	DROP	Overtaken: the next defender facts line prices HC (minor + GM at least, match if defenceless).	defender.md:288-289
+264	From W349 (8)	KEEP-c	dtr carries two identical 608(c) facts lines and a third copy; dedupe shortens.	-
+265	From W347 bcb table	DROP	Headroom nit; "of six" without "books" is understandable.	-
+265	From W347 Flat equation	DROP	Overstates in the harsh direction.	-
+265	From W347 USAH slew-foot	DROP	Overstates in the harsh direction.	-
+265	From W347 Not compared	DROP	Consistency-only.	-
+265	From W347 Shooting	DROP	Citation nit (PWHL omitted from attribution).	-
+265	From W347 Voiced nowhere	DROP	Already voiced: risk_management :765 states the feet-then-boards case.	risk_management.md:765
+265	From W347 Not swept	DROP	Speculative sweep.	-
+265	From W347 Propagation risk	KEEP-c	608(c) stated at 8 places on zone_entries; trim restatements to shorten.	-
+274	From SG160	DROP	Row says harsh only.	-
+276	SG181 faceoffs awareness split	KEEP-d	Owner call, previously reverted. RISK: it would add a facts line and lengthen.	-
+277	SG181 USAH 615(a)	KEEP-d	Owner call: the row says stating it reads cheaper.	-
+278	SG181 Ruled acceptable	DROP	Already ruled acceptable; close.	-
+280	From SG185	DROP	Speculative search of British books; no defect named.	-
+281	SG187–SG188	DROP	Winger: citation completeness. rink_map: harsher.	-
+282	SG191 607 (1)	DROP	Harsher.	-
+282	SG191 607 (2)	DROP	Harsher.	-
+282	SG191 607 (3)	DROP	Unsettled in rule text.	-
+282	SG191 607 (4)	DROP	Speculative sweeps.	-
+282	SG191 607 (5)	DROP	Optional.	-
+283	From SG193a	DROP	"No stride count is safe" is strict already; CARHA scope and voicing nits; "low" per row.	-
+284	From SG193b–SG195	KEEP-c	goaltender restates Note 1 + Sit. 5 in four consecutive units, one parsing oddly aloud; merging shortens.	-
+285	From SG196	DROP	Sweeps, optional, harsh or low by the row's own labels.	-
+286	SG197 (1)	DROP	Deliberate omission.	-
+286	SG197 (2)	DROP	Speculative sweep.	-
+286	SG197 (3)	DROP	Readings in the harsher direction, or unread.	-
+286	SG197 (4)	DROP	Partly overtaken: the largest faceoffs facts block is now 10 lines, not 12.	faceoffs.md facts block sizes
+286	SG197 (5)	DROP	If the other books do grant it, the corpus is only stricter.	-
+286	SG197 (6)	DROP	"often" vs "can be" wording nit; paraphrase drift is harsher.	-
+286	SG197 (7)	DROP	Unconfirmed and errs harsh.	-
+286	SG197 (8)	DROP	Harsher; not re-located.	-
+286	SG197 (9)	DROP	Speculative.	-
+286	SG197 (10)	DROP	Sources-trailer citation nit.	-
+286	SG197 (11)	DROP	Unreviewed lean wording. Possibly overtaken; not checked (see could-not-judge).	-
+286	SG197 (12)	KEEP-a	"can be a penalty in itself in every book" understates the books where it is "shall"; "is" is shorter.	team_play_and_culture.md:38
+286	SG197 (13)	DROP	Untested; no defect named.	-
+286	SG197 (14)	DROP	Not reached; speculative.	-
+287	SG185 gate notes	DROP	Adding a disclosure or slur ban to the uk_rules KTs lengthens them; the body carries both.	-
+288	SG172 (1)	KEEP-a	pwtp facts "CARHA 32(d)… bar an accidental high stick" drops 62(b) Note's injury limb (GM applies if injured). Cheaper. Add ~10 chars and check --near.	pwtp.md:524; carha.txt:1425,2989
+288	SG172 (2)	DROP	Method note; not swept.	-
+289	SG175	DROP	Consistency plus speculative sweeps.	-
+290	SG176–SG177	DROP	Adds length to uk_rules; EIHL check speculative.	-
+291	SG178	DROP	Speculative citation grep.	-
+292	SG171	DROP	Citation omission plus unchecked wordings.	-
+293	SG161	DROP	All harsh or unsettled scope questions.	-
+296	SG139–SG140	DROP	Length nit, unresolved readings, citation nits; zone_entries harsh.	-
+297	SG141	DROP	Harsh, or "may" with no instance named.	-
+298	SG114	DROP	Traceability speculation; facts lines are still true.	-
+299	SG127a	DROP	"at least two" is not false; the open question is structural.	-
+300	SG153 screener Rule 43	DROP	Omits NHL/IIHF/PWHL Rule 43 for a push on a screener's back; needs a merge into a full block. Low.	-
+300	SG153 CARHA 33(d)	DROP	Optional.	-
+303	SG142 swearing sweep	DROP	Speculative sweep.	-
+303	SG142 passing 621 no price	DROP	Adding prices lengthens a facts line.	-
+303	SG142 "minor" two senses	KEEP-c	"Hockey Canada minor or female hockey… a minor" uses "minor" in two senses aloud; reword at no length.	-
+304	SG151 faceoff follow-ups	DROP	All optional by label; stale SSML regenerates on the next render.	-
+305	SG143	DROP	Optional KT addition (lengthens) and a cosmetic badge.	-
+306	SG116	DROP	Faithful citation of the book's slip; fight-floor match omission is harsher.	-
+307	SG127b faceoffs	DROP	Harsh direction.	-
+308	SG104/SG106 sweeps	DROP	Speculative; errs safe.	-
+311	CARHA SG124	DROP	Harsh leftovers.	-
+312	CARHA Note 2 SG122/123	DROP	Reading question unresolved on disk; no false claim shown.	-
+313	CARHA SG127b impeding	DROP	Harsher.	-
+316	USAH 615 SG132	DROP	Unsettled; unvoiced quotation nit.	-
+317	USAH Altercation SG131	DROP	Extra conditions narrow the definition, so the corpus errs harsh.	-
+318	USAH Open-ice freeze SG111	DROP	"Report only."	-
+319	USAH SG110	DROP	Would lengthen a KT.	-
+322	SG119/SG121 unsearched wordings	DROP	Speculative sweep; low.	-
+325	goaltender CM tariff-first (SG135)	DROP	Not re-checked; the instruction-first tool has known false positives.	-
+326	winger charging/goalie paragraph (SG117)	KEEP-c	A heavy voiced paragraph; readability priority. Fix by cutting, not adding.	-
+327	forechecking flush/ozp chunk split (SG121)	DROP	Needs a render to know if there is any defect; speculative.	-
+328	Essentials view (SG121)	DROP	Unspecified browser look.	-
+331	SG165 relax/leader-over-paint	KEEP-d	Owner's call per the row (wording, position or no leader).	-
+331	SG165 "pressure" no leader	KEEP-c	the-last-player-back "pressure" sits between two forecheckers with no leader; it is ambiguous who pressures.	-
+331	SG165 other	DROP	Phone check, thin clearances, uneyeballed halos: cosmetic or speculative.	-
+332	SG164	DROP	Leader/badge crossings and halo bites are cosmetic; "pressure" is kept under SG165.	-
+333	SG95–SG100/SG157 entry-middle-drive	KEEP-c	Carrier drawn with no puck dot; the reader cannot see who has the puck.	-
+333	SG95–SG100/SG157 rest	DROP	Row labels them cosmetics, unchecked; one is comment-only.	-
+334	SG93 stacked labels	DROP	Tooling gap, no instance.	-
+335	Practising on Your Own drill labels	KEEP-c	8.7 px labels at 320 px are effectively unreadable on a phone.	-
+338	IHUK IIHF compressed PDF	KEEP-e	Source fetch bearing on the In-House edition contradiction; needs an unfiltered network (owner).	-
+339	DOPS under-16 duplicate	DROP	Duplicate of the Sources-row DOPS item; errs harsh.	-
+344	Off-ice cards (1) figure8 unused	DROP	Dead-code/docstring nit; nothing a reader sees.	-
+344	Off-ice cards (2) shoes not socks on tiles	KEEP-a	Slip hazard on a tiled floor is unstated; one body clause, not a summary layer.	practising_on_your_own.md: no shoe/sock-on-tiles line (only :792 "tiles", :1096 slide board)
+344	Off-ice cards (3) "dangle there" direction	KEEP-c	Instruction is ambiguous on the page; only the SVG desc says side to side. Two-word fix.	practising_on_your_own.md:909 still "dangle there"
+344	Off-ice cards (4) glossary Dangle definition	DROP	Consistency-only; both senses are common usage and a reader does the drill the same way.	-
+344	Off-ice cards (5) "slowly" twice	DROP	Marked optional; cosmetic repetition.	-
+344	Off-ice cards, unchecked visuals/audio	DROP	Cosmetic label offsets, tall figure, stale episodes; none misleads.	-
+345	Finding More Ice "suspension and fines"	DROP	Row itself says no defect named.	-
+352	Owner W405 (1) wrong-player diagram labels	KEEP-d	Matters: a label naming the wrong player teaches the wrong role (diagram priority). Worth answering.	faceoffs.mjs:245,402,564-565 labels still drawn
+353	Owner W398 (3) C label vs carrier exceptions	KEEP-d	Notation bookkeeping only; low readability effect. Could be dropped.	-
+354	Owner W391 (3) USA Hockey "must" tier in Key focus	KEEP-d	Adds a rules tier to Key focus, against the tactics-first rule; likely answer is no, or drop.	-
+355	Owner W396 (1) where DOPS facts lines live	KEEP-d	Structural/traceability only; little reader effect. Could be dropped.	-
+356	Owner B "head or neck" vs "head, face or neck"	KEEP-d	Wording consistency; marginal safety value now W442 shipped the wider form. Could be dropped.	-
+356	Owner D multi-sentence form accepted	KEEP-d	Readability: a yes/no on a per-book passage already shipped. Quick to answer.	-
+356	Owner F reach to other Overviews with price lists	KEEP-d	Matters for readability: price lists in Overviews run against tactics-first. Worth answering. Duplicates line 401(a).	-
+356	Owner: Key focus "never contact the head"	KEEP-d	Matters for safety and tactics; a player-does point. Worth answering. Duplicates line 401(b).	-
+360	Junior/Senior head contact (1) Interp 1 missing at DZC/forechecking	DROP	Minimal-violence path goes to checking from behind, which is dearer in context; harsh direction.	forechecking_systems.md:988, defensive_zone_coverage.md:758 still carry the phrase
+360	Junior/Senior head contact (2) DZC omits 7.7(a) minor+misconduct	DROP	Omits a lower tier; reader does the same thing (keep it off the head).	-
+360	Junior/Senior head contact (3) numbers-only citation	DROP	Marked optional; citation wording nit.	-
+360	Junior/Senior head contact (4) retired-phrase paraphrase sweep	DROP	Speculative sweep, no defect named.	-
+361	Readability leftovers (1) rules_primer high-stick bold lead	RISK-KEEP	Bold lead says head contact only above minimal; raised stick never goes that low. Reword lead, do not lengthen.	rules_primer.md:443 lead and "9.5's bare minor" still present, corrected later in paragraph
+361	Readability leftovers (2) NHL-only scope for 53.7/53.8	DROP	Attribution nit; IIHF writes the same penalty, nothing a reader does changes.	-
+361	Readability leftovers (3) passing_and_receiving CARHA 53(a) missing	KEEP-a	Cites only the defenceless-into-boards match; CARHA reader not told every check from behind is minor+game misconduct.	passing_and_receiving.md:227 cites 53(b) only
+361	Readability leftovers (4) defender "plan on a match"	DROP	Errs harsher.	-
+361	Readability leftovers (5) goalie outside crease, HC/CARHA	DROP	Marked optional.	-
+361	Readability leftovers (6) body_contact KT13 / KT sweep	DROP	Unchecked suspicion plus speculative sweep.	-
+362	Mandatory-match (1) center facts cites 7.6(c) for Junior/Senior	DROP	Citation number nit at cap; price stated is right.	-
+362	Mandatory-match (2) 7.4(c) on goalie charge	DROP	Open rules question; omission, not a cheaper statement.	-
+362	Mandatory-match (3) rules_primer table "Assume a major"	DROP	Errs harsher.	-
+362	Mandatory-match (4) 608 "plan on a match" reason	DROP	Harsh direction; largely overtaken by 7df277f1/161ba351 rewording.	grep: 4 "plan on a match" lines mention 608
+362	Mandatory-match (5) "expect a match" etc. census	DROP	Harsh-direction wording census; ear test optional.	grep: "expect a match" now 1 site
+362	Mandatory-match (6) defending_the_rush attempt-to-injure branch	DROP	Row says not permissive in context.	-
+362	Mandatory-match (7) off-head carve-out split across sentences	RISK-KEEP	Listener hears the permission before the head limb; same-sentence form, no added length.	-
+362	Mandatory-match (8) "head first" tier HC writes none	DROP	Harsher; one rules ruling of low reader effect.	-
+362	Mandatory-match (9) goaltender 608(c) without "reckless"	DROP	Harsher.	-
+363	Amber placement (1) amber on discretionary clause	KEEP-c	Escalation sits on the weaker clause, not the mandatory one; small word move, no length.	-
+363	Amber placement (2) "ejected from the draw" heard as game ejection	KEEP-c	Misleading phrase heard alone; one-word fix ("waved out").	-
+363	Amber placement (3) forechecking charging bullets unmarked	DROP	Marker nit; text carries the price.	-
+363	Amber placement (4) optional ambers	DROP	Marked optional.	-
+363	Amber placement (5) 607(e) citation	DROP	Marked optional; citation nit.	-
+363	Amber placement, unchecked list	DROP	Speculative sweep, no defect named.	-
+364	W253-W259 (1) "helpless" vs "defenceless"	DROP	Consistency-only; both true.	-
+364	W253-W259 unsettled readings/paraphrase sweep	DROP	Page safe either way per row; speculative.	-
+365	Page structure (1) goaltender restatement, 15 screens	KEEP-c	Restated sentence and a very long section; cut shortens.	-
+365	Page structure (2) risk_management restatement, two pointer wordings	KEEP-c	Restatement cut shortens; pointer wording small.	-
+365	Page structure (3) shooting pointers	DROP	Pointer placement nit.	-
+365	Page structure (4) game_management subsection split	DROP	"Consider"; structural preference.	-
+365	Page structure (5) special_teams largest subsection	DROP	"If wanted"; optional tightening.	-
+365	Page structure (6) defending_the_rush largest subsection, label collision	KEEP-c	Largest subsection, paired pointers and colliding labels are real reading friction. Harsher CM limb part drops.	-
+365	Page structure (7) switching_positions optional	DROP	Marked optional.	-
+366	USA 608 (1) undisclosed summary contradiction	DROP	Corpus follows the rule; disclosure would add length for no change in action.	-
+366	USA 608 (2) Casebook 608 Sit.1 closing limb	DROP	Citation completeness; mandatory match stated elsewhere in rows.	-
+366	USA 608 (3) "608(c) must give" phrasing	KEEP-c	About 13 facts lines voice awkwardly; reorder reads better, no length added.	-
+366	USA 608 optional HC middle tier	DROP	Marked optional.	-
+367	W348 (1) DZC facts lacks defenceless-into-boards match	DROP	Omission in facts; body carries it; adding lengthens facts layer.	-
+367	W348 (2) forechecking intent-to-injure route	DROP	Omission of a harsher route; reader does the same thing.	-
+367	W348 unchecked British/ear tests	DROP	Speculative.	-
+368	SG212 (1) late-hit timing lines lack checking-allowed limb	RISK-KEEP	Heard alone, implies a timed check is available in non-checking games. Fix must not lengthen; reword the lead.	-
+368	SG212 (2) 640(g) unqualified for adult men	DROP	Harsher; body discloses it.	-
+368	SG212 (3) CARHA 66(a) Note 1	DROP	Not traced; speculative.	-
+369	Coaching (1) 630(d) "contact triggers"	DROP	Cautious direction.	-
+369	Coaching (2) goalie off "at once" vs goaltender	KEEP-b	Two pages give conflicting delayed-penalty instructions; reconcile one.	game_management.md:1289 still "get the goalie off at once"
+369	Coaching (3) DZC "follow into the corner" no contact limit	DROP	Following is not contact; low risk.	-
+369	Coaching (4) "legs moving" voiced alone	DROP	Technique cue, no rule cheaper.	-
+369	Coaching (5) poke-check tripping risk	DROP	Marked optional.	-
+369	Coaching (6) curl-back facing	DROP	"One look when next edited"; cosmetic.	-
+369	Coaching unchecked list	DROP	Speculative sweeps and CSS tweak idea.	-
+370	SG220 (1) winger "lengthen their path" condition	DROP	Line is scoped to NHL/IIHF/PWHL; USA condition not in scope there.	winger.md:864
+370	SG220 (2) HC 4.8(b)(i) three stick minors	DROP	Omission; adds content for a rare case.	-
+370	SG220 (3) defender omits PWHL	DROP	Attribution nit; facts line has it.	-
+370	SG220 (4) winger "So a charge…" no book	DROP	Overtaken; sentence no longer present.	winger.md: phrase not found
+370	SG220 (5) 620(a) vs Casebook citation	DROP	Citation nit.	-
+370	SG220 unchecked ordering	DROP	Speculative.	-
+371	W215 (1) "in most books" no USA price	DROP	Row says low; no cheaper claim.	-
+371	W215 (2) switching helmet contact IIHF only	DROP	Overtaken; CM now says every book can penalise it.	switching_positions.md:149,609
+371	W215 (3) faceoffs "still a minor"	DROP	Harsher.	-
+371	W215 unchecked shape sweep	DROP	Speculative.	-
+372	center SG214 unchecked	DROP	All unchecked/unsettled; no defect named.	-
+373	IIHF citation case SG55	DROP	Cosmetic per row.	-
+374	Contact cues SG56	DROP	Speculative sweep, no defect named.	-
+379	Pressure routes: (p) FAIL with allowlist	DROP	Status note, nothing open.	-
+380	Pressure routes: W555 advisories [c]/[f]	DROP	Status note, nothing open.	-
+383	Pressure routes: two [f] opposition hits	DROP	Overtaken; opposition policy decided 22 Nov and [f] drawings fixed in W623 (line 349).	OPEN_ITEMS.md:349
+386	Pressure routes: promote [c] to FAIL	DROP	Low tooling nit.	-
+387	Pressure routes: [c] limits, summary count	DROP	Low tooling nit.	-
+394	Label paint: three labels across circle arcs	DROP	Accepted after search; cosmetic.	-
+395	Label paint: dot test misses letter tops	DROP	Low tooling nit.	-
+396	Label paint: 459-hit worklist	DROP	Worklist, no defect named.	-
+397	Label paint: 7–10 px labels at 400 px	KEEP-d	Phone legibility of full-rink diagrams is a real readability question; owner format call.	-
+399	GB flag on Windows	DROP	Cosmetic; "GB" still reads.	-
+400	Slew-foot (a) wording sweep	DROP	Speculative sweep.	-
+400	Slew-foot (b) kick limb	DROP	Marked optional, at cap.	-
+400	Slew-foot (c) IIHF "ejects at the floor"	DROP	If wrong it errs harsher.	-
+401	Owner decisions 14 Nov (a) Decision F reach	KEEP-d	Duplicate of line 356 F; merge there.	OPEN_ITEMS.md:356
+401	Owner decisions 14 Nov (b) "never contact the head" in KF	KEEP-d	Duplicate of line 356; merge there.	OPEN_ITEMS.md:356
+401	Owner decisions 14 Nov (c) decision D acceptance	KEEP-d	Duplicate of line 356 D; merge there.	OPEN_ITEMS.md:356
+402	Optional wording (a)–(f)	DROP	Marked optional, stricter-than-book, or census limits.	-
+402	Optional wording (g) 48(c)/86(b) restated twice	DROP	D8 only; current block reads as two distinct lines.	body_contact_and_battles.md:1860,1870
+403	USA hit-from-behind (a) "even a light hit" wording	DROP	Consistency-only, harsher-safe per row.	-
+403	USA hit-from-behind (b) closed 608 list lacks 620(b)	RISK-KEEP	A closed ejecting list that omits the head limb implies it is cheaper. At cap: substitute, do not lengthen.	-
+403	USA hit-from-behind (c) low hit beyond 639	DROP	Harsher.	-
+403	USA hit-from-behind (d) "a hit from behind" wording	DROP	Wording preference.	-
+403	USA hit-from-behind (e) facts draws on later section	DROP	No defect for a listener named.	-
+403	USA hit-from-behind (f) 608(c) drops "reckless"	DROP	Harsher.	-
+403	USA hit-from-behind (g) bare "head first"	DROP	No defect named.	-
+403	USA hit-from-behind (h) 293–300 char facts lines	KEEP-c	Long facts lines voiced alone; shorten rather than only ear-test.	-
+403	USA hit-from-behind (i) open rules questions	DROP	Speculative, not re-tested.	-
+404	W319 (1) USA minor+misconduct beside HC head limb	DROP	Likely overtaken by the 161ba351/7df277f1 USA-price waves; not re-tested.	git log
+404	W319 (4) facts lines name no USA price	DROP	Omission, not cheaper; not re-tested.	-
+404	W319 (5) ear test J/S parenthesis	DROP	Overtaken; phrase not found in switching_positions.	switching_positions.md grep
+405	Icing racer (a)–(c) sweeps	DROP	Speculative sweeps, no defect named.	-
+405	Icing racer (d)–(f) readings	DROP	Unsettled readings, research only.	-
+405	Icing racer (g) center 66(e)	DROP	Omission of a harsher rung.	-
+405	Icing racer (h) delayed-offside price without USA	DROP	Omission; adding lengthens summary layers.	-
+405	Icing racer (i) ear test long units	DROP	Vague ear test; no unit named as failing.	-
+406	Delayed offside (a) trapezoid caption "whatever its standing"	KEEP-c	Hedge phrase in a spoken caption; verify status, then state it plainly (shorter).	rink_map_and_glossary.mjs:528
+406	Delayed offside (b) HC 7.6/7.7 every division	DROP	Speculative; harsher if wrong.	-
+406	Delayed offside (c) layer test	DROP	Speculative.	-
+406	Delayed offside (d) CARHA 52(b) vs 66(b)	DROP	Likely overtaken: 52(b) now cited at 76 sites.	grep 52(b) content
+406	Delayed offside (e) rules_primer missing match tier / late price	KEEP-a	Possible missing deliberate-injury match and NHL/PWHL price two chunks late; route to verifiers. Fix must not lengthen summary.	-
+406	Delayed offside (f) PINCH_CAVEATS unused	DROP	Dead-code nit.	-
+406	Delayed offside (g) ear test pinch paragraph	DROP	Vague.	-
+406	Delayed offside (h) HC misprint not in sources README	DROP	Low source note.	-
+406	Delayed offside (i) rink_map offside draw	DROP	Harsher.	-
+406	Delayed offside (j)–(o)	DROP	Unchecked readings and layer tests, no defect named.	-
+407	Caption nits (a)–(g)	DROP	Attribution, comment-only and harsher-direction nits.	-
+408	Long ladders restated SG75–SG78	KEEP-c	Restatement count is the propagation and length problem CLAUDE.md names; measure then cut.	-
+412	Podcasts ear test	KEEP-d	Owner-only listening action; matters for audio readability.	-
+416	synthesize_style_b --doc-id	DROP	Row says low.	-
+424	PWHL 2026-27 rulebook	KEEP-e	New book due mid-Nov; PWHL claims rest on it.	-
+425	SIHA Discipline Policy	DROP	Unreachable source with no named defect waiting on it.	-
+426	Link baseline size	DROP	Row says low.	-
+427	DOPS 2022 code	DROP	Only if a page needs it.	-
+428	DOPS wave 2 optional	DROP	Marked optional.	-
