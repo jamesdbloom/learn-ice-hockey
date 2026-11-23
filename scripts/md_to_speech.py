@@ -1398,6 +1398,61 @@ def _usa_clause_citation(match: re.Match) -> str:
     return out
 
 
+#: A rule number standing without the word "Rule" but plainly marked as one by
+#: what comes before it: a book name ("Hockey Canada 6.11", "NHL (46.15)"), the
+#: word "Situation(s)", or a list continuing a "Rule(s) N" citation ("Rules 9.5
+#: and 9.12"). See `_rule_number_list`.
+_RULE_BOOK_LEAD = r"(?:NHL|IIHF|PWHL|CARHA|EIHL|Hockey Canada|USA Hockey)"
+_RULE_CLAUSE = r"\((?:[ivxIVX]{1,6}|[a-z]|\d{1,2})\)"
+_RULE_DECIMAL = (
+    rf"(?<![\w.])[1-9]\d{{0,2}}\.\d{{1,2}}"
+    # Not a clause citation (the citation rules own those), not a plural, not a
+    # longer number, not a quantity.
+    rf"(?![\w.]\w|\w|[ ]?{_RULE_CLAUSE}|\s?[%×]|\s?-\s?\d|\s?(?:{_unit_alternation()})\b)"
+)
+#: ⚠️ An EN DASH between two rule numbers is a RANGE ("NHL 56.4–56.5") and is
+#: voiced "to", as `numeric-range` voices it. Leaving it out made this rule take
+#: the first number alone and hand the dash to the symbol table, which turned
+#: "fifty-six point four to fifty-six point five" into a pause.
+_RULE_LIST_SEP = r"(?:,[ ](?:and[ ]|or[ ])?|;[ ]|[ ](?:and|or)[ ]|[ ]?→[ ]?|[ ]?–[ ]?)"
+
+
+def _rule_number_words(number: str) -> str:
+    """'46.13' -> 'forty-six point thirteen', as `rule-citation` says it."""
+    major, _, minor = number.partition(".")
+    if minor.startswith("0") and len(minor) > 1:
+        return decimal_to_words(number)       # no rulebook numbers like this
+    return f"{int_to_words(int(major))} point {int_to_words(int(minor))}"
+
+
+def _rule_number_list(match: re.Match) -> list[Token]:
+    """Voice bare rule numbers the way the citation rules do.
+
+    ⚠️ THE SAME RULE WAS SAID TWO WAYS. `rule-citation` voices "Rule 46.13" as
+    "forty-six point thirteen", but the bare "46.13" fell through to
+    `bare-number`, which reads decimals digit by digit -- "forty-six point one
+    three". So one page said "nine point twelve" and "nine point one two" for
+    IIHF 9.12, and 46.10 became "point one zero", one syllable from 46.1. Only
+    numbers the text itself marks as rules are claimed here; a statistic
+    ("g = 1.16", "5.21 injuries") still reaches `bare-number` and keeps its
+    digits.
+
+    The lead and the separators go back RAW, so the later rules still voice
+    the book name, the "Rule(s) N" head and the arrow.
+    """
+    lead = match.group("lead")
+    body = match.group("list")
+    out = raw(lead)
+    pos = 0
+    for number in re.finditer(r"[1-9]\d{0,2}\.\d{1,2}", body):
+        sep = body[pos:number.start()]
+        out.extend(done(" to ") if sep.strip() == "\u2013" else raw(sep))
+        out.extend(done(_rule_number_words(number.group(0))))
+        pos = number.end()
+    out.extend(raw(body[pos:]))
+    return out
+
+
 def _number_with_fraction(match: re.Match) -> str:
     """'1½ sizes' -> 'one and a half sizes'."""
     whole = int_to_words(int(match.group(1)))
@@ -1479,12 +1534,28 @@ def _season_span(match: re.Match) -> str:
 
 
 def _season(match: re.Match) -> str:
-    """2005-06 / 2025-2026 / 2025-29 -> 'X to Y'."""
+    """2026/27 / 2025-2026 -> 'twenty twenty-six–twenty-seven'; 2025-29 -> 'X to Y'.
+
+    ⚠️ A ONE-YEAR SEASON IS ONE THING, NOT A SPAN. Voiced as "twenty twenty-six
+    to twenty twenty-seven" it reads as two years, and after "from" or "in" it
+    changes the meaning: IIHF "46.13 from 2026/27" reached the listener as "from
+    twenty twenty-six to twenty twenty-seven", a period of time, when it names
+    the edition the rule number starts in. A season is said the way people say
+    it -- the first year whole, the second year's last two digits -- joined by a
+    dash, which an engine reads as a short pause, never as "to".
+
+    A multi-year span ("USA Hockey Casebook 2025-29") is a real span and keeps
+    "to". So does a season that crosses a century ("1999-00").
+    """
     start = int(match.group(1))
     tail = match.group(2)
     end = int(tail) if len(tail) == 4 else (start // 100) * 100 + int(tail)
     if end < start:
         end += 100
+    if end == start + 1 and start // 100 == end // 100:
+        low = end % 100
+        second = f"oh {_ONES[low]}" if low < 10 else int_to_words(low)
+        return f"{year_to_words(start)}–{second}"
     return f"{year_to_words(start)} to {year_to_words(end)}"
 
 
@@ -1801,8 +1872,20 @@ def _paren_minutes(match: re.Match) -> str:
     return f"{match.group('lead')}({int_to_words(value)} {unit})"
 
 
-def _age_group_u_first(match: re.Match) -> str:
-    return f"under {int_to_words(int(match.group(1)))}"
+def _age_group_u_first(match: re.Match) -> "str | list[Token]":
+    """U13 -> 'under thirteen'; U18AAA -> 'under eighteen AAA'.
+
+    ⚠️ Hockey Canada writes its top tier closed up, "U18AAA", and the corpus
+    quotes it that way. `\\bU(\\d{1,2})\\b` cannot end inside a word, so the closed
+    form fell to `alphanumeric-code` and was voiced "U eighteen AAA" while the
+    spaced "U18 AAA" two lines away was "under eighteen AAA" -- one category,
+    two names, in game_management.md.
+    """
+    words = f"under {int_to_words(int(match.group(1)))}"
+    tier = match.groupdict().get("tier")
+    if not tier:
+        return words
+    return done(words) + raw(" " + tier)
 
 
 def _age_group_u_last(match: re.Match) -> str:
@@ -1995,9 +2078,11 @@ NOTATION_RULES: tuple[Rule, ...] = (
         # safety-reviewer reading the rendered SSML. Kept to an EXPLICIT list of the
         # helplines the corpus prints, plus the North American toll-free shape, so a
         # sample size or a rule number can never be caught; add a number here when the
-        # corpus gains one.
+        # corpus gains one. W630 (23 Nov 2026) added the young people's line: Childline
+        # 0800 1111 / 1800 66 66 66, Kids Help Phone text 686868, and "988 is open" -- a
+        # safety-reviewer heard 0800 1111 as "eight hundred one thousand one hundred and eleven".
         re.compile(
-            r"\b(?P<num>116 123|85258|50808|535353|988(?= Suicide))\b"
+            r"\b(?P<num>116 123|85258|50808|535353|0800 1111|1800 66 66 66|686868|988(?= Suicide| is open))\b"
             r"|\b(?P<tf>1-8[0-9]{2}-(?:[0-9]{3}-[0-9]{4}\b|(?=[A-Z])))"
         ),
         lambda m: (
@@ -2035,6 +2120,22 @@ NOTATION_RULES: tuple[Rule, ...] = (
         _plural_rule_number,
         "the two 81.4s -> 'the two eighty-one point fours'; without this the "
         "full stop survived and it reached the listener as 'eighty-one.fours'",
+    ),
+    Rule(
+        "rule-number-list",
+        # ⚠️ Must run BEFORE `rule-citation`, which would freeze the "Rules 9.5"
+        # head and leave " and 9.12" with nothing to say it is a rule.
+        re.compile(
+            rf"(?P<lead>\b(?:{_RULE_BOOK_LEAD}(?:['’]s)?[ ]?\(?"
+            rf"|Situations?[ ]"
+            rf"|Rules?[ ]+[1-9]\d{{0,2}}(?:\.\d{{1,2}})?(?:[ ]?{_RULE_CLAUSE})*"
+            rf"(?={_RULE_LIST_SEP}{_RULE_DECIMAL})))"
+            rf"(?P<list>(?:(?<=[ (])|{_RULE_LIST_SEP}){_RULE_DECIMAL}"
+            rf"(?:{_RULE_LIST_SEP}{_RULE_DECIMAL})*)"
+        ),
+        _rule_number_list,
+        "'Hockey Canada 6.11', 'Situation 76.43', 'Rules 9.5 and 9.12' -> "
+        "'point eleven', not 'point one one': the bare form was read digit by digit",
     ),
     Rule(
         "rule-citation",
@@ -2559,7 +2660,7 @@ NOTATION_RULES: tuple[Rule, ...] = (
     ),
     Rule(
         "age-group-u-first",
-        re.compile(r"\bU(\d{1,2})\b"),
+        re.compile(r"\bU(\d{1,2})(?P<tier>AAA|AA)?\b"),
         _age_group_u_first,
         "U13 -> 'under thirteen'",
     ),
@@ -4500,10 +4601,10 @@ def self_test() -> int:
         # ⚠️ Two seasons joined by "to": each half was expanded separately, so the
         # listener got four years and three "to"s with no grouping.
         ("2007-08 to 2014-15",
-         "the two thousand and seven to two thousand and eight season through to "
-         "the twenty fourteen to twenty fifteen season"),
+         "the two thousand and seven\u2013oh eight season through to "
+         "the twenty fourteen\u2013fifteen season"),
         # ... and a lone season must be untouched by the new rule.
-        ("the 2015-16 season", "the twenty fifteen to twenty sixteen season"),
+        ("the 2015-16 season", "the twenty fifteen\u2013sixteen season"),
         # ⚠️ The PLURAL form carries no "Rule" word, so it matched no citation
         # rule and the full stop reached the listener: "the two eighty-one.fours".
         ("The two 81.4s are not identical",
@@ -4685,7 +4786,7 @@ def self_test() -> int:
         # so this row passes even with that guard disabled - measured, not
         # assumed. It still earns its place: it fails if the rule ORDER is
         # ever changed, which is the thing actually protecting seasons.
-        ("the 2025-26 edition", "the twenty twenty-five to twenty twenty-six edition"),
+        ("the 2025-26 edition", "the twenty twenty-five\u2013twenty-six edition"),
         ("a 50-50 puck", "a fifty-fifty puck"),
         ("a 2-1 lead", "a two-one lead"),
         ("a 1-2-2 forecheck", "a one two two forecheck"),
@@ -4699,8 +4800,32 @@ def self_test() -> int:
         # - twenty-seven", on 104 edition and provenance markers. The slash form
         # was hit too, which the report that found this said it was not.
         ("IHUK In-House Rules 2026-27",
-         "IHUK In-House Rules twenty twenty-six to twenty twenty-seven"),
-        ("Rules 2026/27", "Rules twenty twenty-six to twenty twenty-seven"),
+         "IHUK In-House Rules twenty twenty-six\u2013twenty-seven"),
+        ("Rules 2026/27", "Rules twenty twenty-six\u2013twenty-seven"),
+        # ⚠️ A season after "from" was heard as a span of two years.
+        ("IIHF (46.5; 46.13 from 2026/27)",
+         "IIHF (forty-six point five; forty-six point thirteen from "
+         "twenty twenty-six\u2013twenty-seven)"),
+        # A multi-year edition IS a span and keeps "to".
+        ("USA Hockey Casebook 2025-29",
+         "USA Hockey Casebook twenty twenty-five to twenty twenty-nine"),
+        ("the 2009-10 season", "the two thousand and nine\u2013ten season"),
+        # ⚠️ Bare rule numbers marked as rules by their lead: said as
+        # rule-citation says them, not digit by digit.
+        ("Hockey Canada 6.11 requires", "Hockey Canada six point eleven requires"),
+        ("NHL (46.15), PWHL (46.14)",
+         "NHL (forty-six point fifteen), PWHL (forty-six point fourteen)"),
+        ("Situations 63.15, 63.27 and 76.43",
+         "Situations sixty-three point fifteen, sixty-three point twenty-seven "
+         "and seventy-six point forty-three"),
+        ("Rules 9.5 and 9.12", "Rules nine point five and nine point twelve"),
+        ("NHL 56.4\u201356.5", "NHL fifty-six point four to fifty-six point five"),
+        # ... but a statistic, even beside a book name, keeps its digits.
+        ("NHL teams scored 1.16 more", "NHL teams scored one point one six more"),
+        ("IIHF 1.50 m", "IIHF one point five zero metres"),
+        # ⚠️ Hockey Canada's closed-up tier was a different word from the spaced one.
+        ("in U18AAA, Junior", "in under eighteen AAA, Junior"),
+        ("in U18 AAA, Junior", "in under eighteen AAA, Junior"),
         ("Rule 630(a)", "Rule six hundred and thirty, clause a"),
         ("Rule 101.1", "Rule one hundred and one point one"),
         ("an east\u2013west pass", "an east-west pass"),
@@ -4821,7 +4946,7 @@ def self_test() -> int:
         ("2:00", "two minutes"),
         ("5:04", "five minutes four seconds"),
         ("the 2005-06 season",
-         "the two thousand and five to two thousand and six season"),
+         "the two thousand and five\u2013oh six season"),
         ("in 1995", "in nineteen ninety-five"),
         ("2,545 receptions",
          "two thousand five hundred and forty-five receptions"),
@@ -4900,11 +5025,15 @@ def self_test() -> int:
         ("call 116 123.", "call one one six, one two three."),
         ("Text SHOUT to 85258.", "Text SHOUT to eight five two five eight."),
         ("988 Suicide and Crisis Lifeline", "nine eight eight Suicide and Crisis Lifeline"),
+        ("Childline 0800 1111 in the UK", "Childline zero eight zero zero, one one one one in the UK"),
+        ("1800 66 66 66 in Ireland", "one eight zero zero, six six, six six, six six in Ireland"),
+        ("text CONNECT to 686868", "text CONNECT to six eight six eight six eight"),
+        ("988 is open to young people", "nine eight eight is open to young people"),
         ("call 1-866-277-3553 (1-866-APPELLE)",
          "call one, eight six six, two seven seven, three five five three (one, eight six six APPELLE)"),
         ("pooling 988 effect sizes", "pooling nine hundred and eighty-eight effect sizes"),
         ("the 2025/26 rulebook",
-         "the twenty twenty-five to twenty twenty-six rulebook"),
+         "the twenty twenty-five\u2013twenty-six rulebook"),
         ("NHL/IIHF", "NHL or IIHF"),
         ("an em-dash — here", "an em-dash — here"),
         # The symbol-expansion defects found by reading the SSML emitted for

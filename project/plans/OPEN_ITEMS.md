@@ -26,13 +26,11 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## In flight
 
-- None. W629 shipped with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
+- None. W630–W631 shipped with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
 
 ## 1. Cheaper than the book, or a reader could be hurt
 
-**Check every fix here with a safety-reviewer.** The rest of this section closed in W628.
-
-- **mental_game, crisis box.** It has no youth line, and nothing on disk carries a verified youth helpline number. Fetch the numbers for Childline (UK), Kids Help Phone (Canada) and ISPCC Childline (Ireland) from each provider's own site, verify them, then add one plain line. (W522 (2))
+- None open. W630 added the young people's crisis line to mental_game, and W631 fixed PWHL helmet removal.
 
 ## 2. Factual errors and contradictions
 
@@ -40,19 +38,20 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 3. Readability: heard aloud
 
-- **"Hockey Canada minor or female hockey… a minor"** uses "minor" in two senses aloud. Reword at no added length. (SG142)
 - **"USA Hockey 608(c) must give…" facts lines** voice awkwardly. W629 reordered the only one in goaltender, forechecking, center and winger. Reorder the rest, at no added length. (USA 608 (3))
 - **The 293–300-character facts lines** voiced alone: shorten them where it is safe. About 90 remain in goaltender, forechecking, center and winger alone; most are dense multi-book tariffs. (USA hit-from-behind (h))
-- **ozp's long facts lines.** W629 split 7 and reordered 3; 59 lines are still over 40 words, mostly in the full blocks @677 and @966. :629 needs a rules-verifier on what 69.1 says. (W612 (1), W508 (5))
-- **ozp "Keep your skates out of the seal" (facts, W629 split).** It leans on "the seal" from the line before it. Name the act instead.
-- **special_teams ~:1128.** The W629 cut removed Hockey Canada's mandatory head-contact major and game misconduct for a high cross-check, which the paragraph now carries only by pointer to bcb. Check whether a listener there still needs one short clause.
-- **One renderer fix for how rule numbers and seasons are voiced.** "Twenty twenty-six to twenty twenty-seven" changes the meaning. This one fix absorbs W446 (1), W451 (2), W501 (7) and W505 (9). (W449 (3))
+- **ozp's pinch facts block @968.** :973, :974, :977, :979 and :980 are dense five- and six-book tariffs; :977 is the hardest to follow aloud. Shorten them only after re-verifying each limb, with HC 8.3(b), USAH 640(b) and the Declaration supplied. W630 did the rebound block @679. (W612 (1), W508 (5))
+- **Renderer voicing, remainder after W630** (the patch in `md_to_speech.py` handles seasons, rule numbers after a book name, Situation or Rules, and U18AAA).
+  - About 66 rule-context lines are still read digit by digit. These are a bare "(9.12)" with no lead word (rules_primer :1143), and leads written as "Casebook", "Handbook" or "Interpretation".
+  - "46.3→46.10" voices the arrow as a bare comma (uk_rules :130).
+  - "2010–11" written with an en dash reads "two thousand and ten to eleven" (forechecking).
+  - The new "twenty twenty-six–twenty-seven" form assumes the engine reads the en dash as a short pause. The owner's ear test should confirm this.
 
 ## 4. Readability: restatement and length
 
 **Measure, then cut. Use a layer test, and keep the one copy a player meets in play.** W629 closed the page-by-page restatement rows.
 
-- **Seven units carry two ⚠️ glyphs**, so removing one is free: the spoken "Important." stays. (W560 (2))
+- **Units carrying two ⚠️ glyphs elsewhere.** W630 fixed ozp's 3 and special_teams' 6. Note that `check_callout_flow --markers` lists only lines with 4 or more markers, so find spoken two-glyph units by hand. (W560 (2))
 
 ## 5. Diagrams
 
@@ -62,7 +61,12 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 6. Sources and tooling
 
-- **PWHL 2026-27 rulebook.** It was due mid-November. Re-check `thepwhl.com/en/rules` and diff it against the 2025-26 book on disk.
+- **PWHL 2026-27 rulebook: now on disk as `sources/pwhl_rules_2026-27.txt` (W630 D). The corpus still cites the superseded 2025-26 book.** These changes affect corpus claims; the W630 D report lists every site.
+  - **52.1 Body Checking** is rewritten, and **52.5**'s game misconduct now needs an injury. About 50 sites, mostly now harsher than the book. The new blindside and leaving-the-feet limbs are not carried anywhere.
+  - **82.1:** batting the puck above the shoulders is now **permitted**, and lacrosse cradling is allowed in open play. passing :439's "prohibited in all six books" is now false. Also shooting, ozp, and rules_primer :1012, which cites a deleted 82.2.
+  - **65.2(viii)** is deleted, and **1.8** says there is no trapezoid. About 38 sites carry the old "the book contradicts itself" advice. It is conservative, but its premise is stale.
+  - **9.10:** a new mandatory neck protector, with a bench minor plus a 10-minute misconduct. Check uk_rules :29's "sharpest difference from North America" and the equipment neck section.
+  - **Sources trailers:** 39 citations of the 2025-26 PDF.
 - **EIHL Casebook.** Check whether the copy on disk has been superseded; many Elite League claims rest on it. (W445 (5))
 - **Hockey Canada PDF.** Put it on disk, and note in `sources/README.md` that `hc.txt` scrambles Appendix D. (W385 (8))
 - **The IHUK-distributed compressed IIHF PDF.** It bears on the In-House edition contradiction. It needs an unfiltered network, so the owner must fetch it.
