@@ -1137,7 +1137,7 @@ When your coach pulls you for an extra attacker, your job changes completely.
 ### A delayed penalty — your trip to the bench
 
 ```facts
-Action: When the referee's arm goes up against them and your bench wants the extra skater, go once your team has the puck — shortest route, eyes on the play
+Action: When the referee's arm goes up against them and your bench wants the extra skater, go at once — shortest route, eyes on the play
 Convention: Whether you go at all is the bench's call, and plenty of recreational goalies stay in their net — find out what your team does before the arm goes up
 Risk: While you are off, the goal to fear is your own team's pass sliding into your empty net, so agree that nothing goes back toward it or across its front
 Action: When play stops, get back in fast and rebuild your references — posts, paint, depth — before the faceoff
@@ -1145,7 +1145,7 @@ Action: When play stops, get back in fast and rebuild your references — posts,
 
 The other team cannot score off its own play while the referee's arm is up, because play stops as soon as they gain control of the puck, so the usual move is for you to skate to the bench and give your team a sixth attacker. **It is the bench's call rather than yours, and it is not automatic** — plenty of recreational goalies stay in their net, because the trip is longer than it looks and the extra skater is only worth having if somebody is ready to come on. **Find out what your team does before the arm goes up.**
 
-- **Go when your team has the puck, not before.** Take the shortest route, keep your eyes on the play as you skate, and take your stick with you — leave nothing near the net, for the reasons under *6-on-5 with your net empty* above.
+- **Go as soon as the arm goes up.** Take the shortest route, keep your eyes on the play as you skate, and take your stick with you — leave nothing near the net, for the reasons under *6-on-5 with your net empty* above.
 - **Tell your defencemen before the game that nothing goes back toward the net while you are off.** The one goal you can concede is one your own team puts in, and a pass back toward your end that slides past everyone is heading for an empty goal. Under the NHL, IIHF, PWHL and Hockey Canada a deflection off an opponent does not count; ⚠️ **under USA Hockey it does**, and CARHA does not say, so play as if it would count. The [Rules Primer](../foundation/rules_primer.md#what-happens-if-you-score) has each book's rule.
 - **Coming back is the same as after an empty-net shift:** get in fast and rebuild your references before the faceoff.
 
@@ -1802,7 +1802,7 @@ document, that is named too.*
 11. **Call what you see, early and short**, and agree that **"shot"** means you have the shooter. Say "time" only when sure: a false one sends a defenceman into a hit unbraced. ⚠️ **After a hard shot off your mask, say something at the next stoppage:** a concussion needs no knock-out, and a medical professional decides when you play again.
 12. **Tell teammates:** never shoot at your head in warm-ups. Never walk a screener out; that can be interference. Keep any net-front battle to the corner side, skates on the ice, never across your goalmouth. ⚠️ **Never hit them from behind:** driving a player head first into the post ends the hitter's game in every book — plan on it.
 13. **Wear gear that is yours, and warm up before a live shot.** **Buy your own mask**, even if you borrow the rest. **Wear a neck laceration protector at every age** — adults too in Britain, and a dangler does not replace it. ⚠️ **Groin or hip pain that persists or keeps coming back needs a physiotherapist or sports physician.**
-14. **When you are pulled, take your stick and get to the bench fast** — when called for an extra attacker, or on a delayed call once your team has the puck. ⚠️ **Leave nothing near the net:** it can cost an awarded goal or a penalty shot. **When they pull theirs**, play a touch deeper and expect passes.
+14. **When you are pulled, take your stick and get to the bench fast** — when called for an extra attacker, or on a delayed call as the arm goes up. ⚠️ **Leave nothing near the net:** it can cost an awarded goal or a penalty shot. **When they pull theirs**, play a touch deeper and expect passes.
 15. **After a bad goal goes in, run your reset ritual before the next faceoff.** Skate a circle, get a drink, tap both posts — the same way every time. Do the analysis tomorrow, and never point at a teammate.
 
 ---

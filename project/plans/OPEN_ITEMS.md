@@ -26,46 +26,27 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## In flight
 
-- None. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
+- None. W628 shipped with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
 
 ## 1. Cheaper than the book, or a reader could be hurt
 
-**Check every fix here with a safety-reviewer.**
+**Check every fix here with a safety-reviewer.** The rest of this section closed in W628.
 
-- **pwtp ~:524, facts.** "CARHA 32(d)… bar an accidental high stick" drops the Note to CARHA 62(b): an accidental high stick that injures still draws a game misconduct (carha.txt ~:2989). Run `check_facts --near` first. (SG172 (1))
-- **bcb ~:2130, Common Mistakes.** It says the facemask's "other books run from a minor to a match", but the PWHL's floor is a major plus a game misconduct. Verify, then fix by substitution. (W358 (5))
-- **team_play Key focus ~:38.** It says arguing "can be a penalty in itself in every book", where five books say "shall". "Is" is shorter. (SG197 (12))
-- **getting_started KT14 ~:721.** "Leave the helmet on; move the player only to clear their airway" is plain text after an amber list. Bold it; this adds no words. (W396 (4))
-- **passing_and_receiving ~:227.** It cites only CARHA 53(b), the defenceless-into-boards match. A CARHA reader is never told that every check from behind is a minor plus a game misconduct (53(a)). (readability leftovers (3))
-- **forechecking, late-hit timing facts lines.** Heard alone, they imply a timed check is available in games where checking is barred. Reword the lead without lengthening. (SG212 (1))
-- **rules_primer ~:443, bold lead.** It says a stick to the head becomes head contact only "once it is more than minimal violence". Under Interpretation 1, a raised stick never goes that low. Reword the lead without lengthening. (readability leftovers (1))
-- **shooting, forechecking.** The Hockey Canada off-head permission ends its sentence before the head counterweight, so a listener hears the permission alone. Use the same-sentence form. (mandatory-match (7))
-- **dtr, closed list.** The closed list of USA Hockey hits that eject omits the 620(b) head limb. The line is at its cap, so substitute. (USA 608 (b))
-- **rules_primer.** It may be missing the deliberate-injury match tier, and NHL/PWHL readers may hear the 41.1 price two chunks late. Route it to rules-verifier, and do not lengthen the summary layer. (delayed-offside (e))
-- **Ejection limbs carried nowhere.** These are the misconduct or game misconduct for refusing to go to the bench, and a goalie leaving the crease. Verify the premise against the books first, then place each where a player meets it, not in a summary layer. (W521 (3))
-- **mental_game, crisis box.** It has no youth line, so a young reader at risk has no route. Source and verify a number first, then add one plain line. (W522 (2))
-- **practising_on_your_own §4.** It never says to wear shoes, not socks, on a tiled floor. That is a slip hazard; add one body clause. (off-ice cards (2))
+- **mental_game, crisis box.** It has no youth line, and nothing on disk carries a verified youth helpline number. Fetch the numbers for Childline (UK), Kids Help Phone (Canada) and ISPCC Childline (Ireland) from each provider's own site, verify them, then add one plain line. (W522 (2))
 
 ## 2. Factual errors and contradictions
 
-- **game_management ~:1289 vs goaltender.** Game management says to pull the goalie "at once" on a delayed penalty; goaltender says to wait until your team has the puck. Reconcile them. (coaching (2))
-- **Offside "as the puck crosses".** Four sites say this without "completely". Add the one word. (W480 (3))
-- **special_teams KT8 ~:1342.** "If the carrier is between you and the puck" contradicts itself, since the carrier has the puck. One-word fix. (W373 (5))
-- **faceoffs ~:586, facts.** "Where checking is allowed at all, take the puck…" ties taking the puck to checking games. Delete the clause, which shortens the line. (W351–W352 (3))
+- None open. All four closed in W628.
 
 ## 3. Readability: heard aloud
 
-- **switching_positions ~:293.** "No line change bar injury" mishears aloud. Change it to "except for an injury". (W506 (3))
-- **"Ejected from the draw"** (switching_positions) can be heard as a game ejection. Use "waved out". (amber placement (2))
 - **"Hockey Canada minor or female hockey… a minor"** uses "minor" in two senses aloud. Reword at no added length. (SG142)
-- **game_management ~:651.** "Hockey Canada writes this only…" is an ambiguous pointer. Name "the no-change rule" instead. (W355 (2b))
 - **on_ice_communication ~:591, facts.** It reads oddly when voiced alone. Reword with no added length. (W349 (6))
 - **About 13 "USA Hockey 608(c) must give…" facts lines** voice awkwardly. Reorder each, with no added length. (USA 608 (3))
 - **The 293–300-character facts lines** voiced alone: shorten them, rather than only ear-testing. (USA hit-from-behind (h))
 - **ozp's long facts lines.** There are 9 class-B splits, and about 70 lines run over 40 words. Shorten or split them without dropping or overstating a tariff. The table is `../reviews/w612_long_facts_rows_2026-11-21.tsv`. (W612 (1), W508 (5))
 - **The pk-box caption** voices its letter key, which is noise to a listener. Cut it. (W394 (5))
 - **The trapezoid caption's "whatever its standing" hedge** (diagram module). Verify the status, then state it plainly; that is shorter. (delayed-offside (a))
-- **practising_on_your_own ~:909.** "Dangle there" gives no direction; only the SVG description says side to side. Two-word fix. (off-ice cards (3))
 - **One renderer fix for how rule numbers and seasons are voiced.** "Twenty twenty-six to twenty twenty-seven" changes the meaning. This one fix absorbs W446 (1), W451 (2), W501 (7) and W505 (9). (W449 (3))
 
 ## 4. Readability: restatement and length
@@ -89,6 +70,7 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 5. Diagrams
 
+- **Drill card `site/src/drills/07_off_ice_stick.mjs` ~:482** still says "dangle there". The page now says "dangle there side to side"; match the card. (W628 A)
 - **`entry-middle-drive`.** The carrier is drawn with no puck dot, so a reader cannot see who has the puck. (SG95–SG100/SG157)
 - **`the-last-player-back`.** "Pressure" sits between two forecheckers with no leader, so it is ambiguous who presses. (SG165)
 - **pk-box.** The "uncovered" label may attach to the wrong player at phone width. Use a labelHint. (W409 (4))

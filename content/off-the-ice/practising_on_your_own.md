@@ -789,7 +789,7 @@ Hard stops go on a clear patch. [Skating](../technique/skating.md#stops-and-star
 By coaching consensus, stickhandling is the off-ice skill that carries over best, alongside passing against a wall or rebounder ([Practice and Development](practice_and_development.md#off-ice-practice-that-genuinely-transfers)). These drills are coaching craft, not a tested programme.
 
 - **Check the space yourself:** room from people, windows and glass, safe footing, and an adult watching a child.
-- **Use a puck on a smooth surface** — a shooting pad or tiles, not carpet. You can also use a biscuit (an off-ice puck) on a smooth floor, or a ball on any floor. A ball builds soft hands; a puck is closer to the real thing, so use both.
+- **Use a puck on a smooth surface** — a shooting pad or tiles, not carpet, and wear shoes, not socks, on tiles. You can also use a biscuit (an off-ice puck) on a smooth floor, or a ball on any floor. A ball builds soft hands; a puck is closer to the real thing, so use both.
 - **Keep your head up.** Look at the puck only while you learn a new movement, then get your head up: watch the television or call out numbers on a wall. Head-down reps at home become the habit that shows up in games.
 - **Shift your weight in your legs as the puck moves,** knees bent, in every drill.
 - **Little and often.** Short, focused sessions most days beat a long one once a week. Leave the pad and a ball where you walk past them.
@@ -906,7 +906,7 @@ Once you have all four, a good routine: head up with both hands, then top hand o
 
 **Trains:** moving the puck on a diagonal, not only side to side.
 
-1. Dangle front to back beside your left foot. Pull the puck diagonally forwards to in front of you, dangle there, and take it back.
+1. Dangle front to back beside your left foot. Pull the puck diagonally forwards to in front of you, dangle there side to side, and take it back.
 2. Do the same from beside your right foot.
 
 ![](drill:office-stick-diagonal-pulls)

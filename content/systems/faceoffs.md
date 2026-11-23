@@ -583,7 +583,7 @@ Action: Call off the glass and out of your zone when you are tired, pinned, or a
 
 ```facts
 Never: Take the contact with your back to anyone coming at you fetching a dead rim in your corner, and never duck. Skates parallel to the boards, forearm and hip to the wall, head up, chin off your chest
-Never: Hit a player who has turned toward the wall — that is checking from behind, and in most books it ends your game. Where checking is allowed at all, take the puck or angle them off it
+Never: Hit a player who has turned toward the wall — that is checking from behind, and in most books it ends your game. Take the puck or angle them off it
 Rule: Driving a player turned toward the wall into the boards unable to protect themselves is a mandatory match (Hockey Canada 7.5(c), CARHA 53(b)); USA Hockey 608(c) must give one for a reckless hit from behind with excessive force on a vulnerable or defenceless player, boards or not
 Rule: In Britain checking is set by your competition's Rules of Competition, not a rule book — IHUK's four: junior U14 up and NIHL 1 and 2 checking, U10, U12 and WNIHL not. Those four settle no other league — not the EIHL, NIHL National, BUIHA, the PNIHL or the SNL. ⚠️ **Ask; until you know, do not hit**
 ```
