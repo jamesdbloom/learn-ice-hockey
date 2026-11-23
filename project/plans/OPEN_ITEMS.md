@@ -26,7 +26,7 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## In flight
 
-- None. W633–W634 shipped with record `w634_one_warning_per_unit_2026-11-23.md`. W632 shipped as abdc0da8, with record `w632_pwhl_2026_27_propagation_2026-11-23.md`. W630–W631 shipped as 144a5487, with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
+- None. W635 shipped with record `w635_crisis_numbers_label_facts_lines_2026-11-23.md`. W633–W634 shipped as 3fe0d04d, with record `w634_one_warning_per_unit_2026-11-23.md`. W632 shipped as abdc0da8, with record `w632_pwhl_2026_27_propagation_2026-11-23.md`. W630–W631 shipped as 144a5487, with record `w631_pwhl_helmet_youth_lines_renderer_2026-11-23.md`. W629 shipped as 660e06ba, with record `w629_readability_restatement_diagrams_2026-11-23.md`. W628 shipped as de67466f, with record `w628_plan_groups_1_3_2026-11-23.md`. The plan triage shipped as 15b6d0cc. W626–W627 shipped as 25cf51b3, with record `w627_usah_match_reword_batch3_2026-11-23.md`. The owner's W521(2) USA Hockey match reword is complete (7df277f1, 161ba351, 25cf51b3).
 
 ## 1. Cheaper than the book, or a reader could be hurt
 
@@ -38,8 +38,11 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 3. Readability: heard aloud
 
-- **"USA Hockey 608(c) must give…" facts lines** voice awkwardly. W629 reordered the only one in goaltender, forechecking, center and winger. Reorder the rest, at no added length. (USA 608 (3))
-- **The 293–300-character facts lines** voiced alone: shorten them where it is safe. About 90 remain in goaltender, forechecking, center and winger alone; most are dense multi-book tariffs. (USA hit-from-behind (h))
+- **Shared facts lines that need one owner across every copy.** Rewording only some copies makes them diverge, so each needs a single pass that changes them all together.
+  - The 12-copy "USA Hockey 620(b) must give at least a major and game misconduct…" line, which voices awkwardly.
+  - The 16-copy "a game misconduct can cost the next game" line.
+  - The goaltender :1181 = special_teams :437 late-fight line.
+  - W635 shortened 14 near-cap lines in goaltender, center, winger and forechecking. The remaining near-cap lines are mostly dense multi-book tariffs; fix one only when it is hard to follow aloud. (W635 C)
 - **Renderer voicing, remainder after W630** (the patch in `md_to_speech.py` handles seasons, rule numbers after a book name, Situation or Rules, and U18AAA).
   - About 66 rule-context lines are still read digit by digit. These are a bare "(9.12)" with no lead word (rules_primer :1143), and leads written as "Casebook", "Handbook" or "Interpretation".
   - "46.3→46.10" voices the arrow as a bare comma (uk_rules :130).
@@ -53,14 +56,13 @@ The per-item verdicts are in [`plan_triage_2026-11-23.tsv`](../reviews/plan_tria
 
 ## 5. Diagrams
 
-- **mental_game crisis box: phone numbers break across lines on a phone.** At 400 px "1800 / 66 66 66" and "(1- / 866-APPELLE)" split, and at 320 px "0800 / 1111" and others do too (W633 A). Fix it with CSS nowrap on the numbers, or `tel:` links, scoped to the crisis callout. Check that md_to_speech's helpline allow-list still matches whatever the source becomes.
-- **"Defensive-zone breakout support" (puck_support_and_spacing): "the carrier" sits beside D2,** and its leader to D1 crosses the partner's leader. Move it next to D1. (W633 A)
 - **Full-sheet diagrams open scrolled left at 400 px:** the-last-player-back, "Behind, level and ahead" and "Three neutral zone lanes". The labelled play is off-screen until you scroll. Consider an initial scroll centred on the action. (W633 A)
 - **Practising on Your Own drill labels.** About 8 px at a 320 px phone width: 762 of 1,064 text runs sit on `TEXT_MIN` (0.62 ft) in `site/src/drills/lib/draw.mjs`. Raising it to about 0.84 ft gives about 11 px, but all 72 hand-placed drills would then need re-rendering and a collision review. Format call; see Owner decisions.
 - **Cosmetic, carry only if a module is edited anyway:** in `cross-ice-in-your-own-end`, F3's curve hugs the circle line. (W623)
 
 ## 6. Sources and tooling
 
+- **The crisis-box nowrap depends on the box's wording.** `remark-corpus.mjs` finds the box by its opening sentence (`CRISIS_RE`). If that sentence is reworded, the numbers silently start wrapping again on a phone. Consider a checker assertion. (W635 A)
 - **PWHL 2026-27, remainder after W632.** 52.1/52.5, 82, the trapezoid and the 9.10 neck protector are now propagated across about 30 pages. Two things are left.
   - **Sources trailers.** These still cite the 2025-26 PDF for rules nobody has re-read in the new book. The 2026-27 link was added only beside the rules that were re-read. A rule-by-rule re-read is needed before those links can be re-pointed (W632 D lists on_ice :805, pwtp :1184, how_to_watch :739, goaltender :1847, equipment :902).
   - **Summary layers.** Some may still assume the old PWHL rule without naming the PWHL or the act. These are found only by reading, not by a sweep.

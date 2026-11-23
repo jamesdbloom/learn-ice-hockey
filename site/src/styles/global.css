@@ -1174,6 +1174,13 @@ a.chip:hover {
   margin-top: 0;
 }
 
+/* A crisis-line number must never split across lines (W633: "0800 / 1111" at
+   320px is easy to misdial). remark-corpus.mjs adds this span ONLY inside the
+   crisis callout, around digit groups and vanity forms. */
+.callout .nowrap {
+  white-space: nowrap;
+}
+
 .callout > :last-child {
   margin-bottom: 0;
 }

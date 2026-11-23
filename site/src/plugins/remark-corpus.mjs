@@ -718,6 +718,7 @@ export default function remarkCorpus(options = {}) {
             ? { class: `callout callout-${kind}`, role: 'note' }
             : { class: `callout callout-${kind}` },
       };
+      if (CRISIS_RE.test(text)) nowrapPhoneNumbers(node);
     });
 
     // ------------------------------------ warnings written as bare paragraphs
@@ -1085,6 +1086,36 @@ export default function remarkCorpus(options = {}) {
       if (node.value.includes('"[')) node.value = node.value.replaceAll('"[', '"\u2060[');
     });
   };
+}
+
+// A CRISIS LINE NUMBER MUST NOT WRAP. Measured in a browser (W633): at 400px
+// "1800 / 66 66 66" and "(1- / 866-APPELLE)", at 320px "0800 / 1111",
+// "1-800- / 668-6868", "1-866-277- / 3553" and "116 / 123" — a split number is
+// easy to misdial, in the one box meant for someone in crisis. Scoped to the
+// crisis callout only (identified by its opening line, so no other text on the
+// site stops wrapping): every digit run with an internal space or hyphen, and
+// every vanity form ("1-866-APPELLE"), gets `<span class="nowrap">`. The words
+// are unchanged; rendering only — md_to_speech reads the markdown.
+const CRISIS_RE = /^\s*If you are thinking about harming yourself\b[^]*\bsuicide\b/i;
+const PHONE_RE = /\d+(?:[  -]\d+)+(?:-[A-Z]{3,})?|\d+(?:-\d+)*-[A-Z]{3,}/g;
+
+function nowrapPhoneNumbers(root) {
+  visit(root, 'text', (node, index, parent) => {
+    if (!parent || index == null || hasClass(parent, 'nowrap')) return;
+    const value = node.value;
+    PHONE_RE.lastIndex = 0;
+    const parts = [];
+    let last = 0;
+    for (const m of value.matchAll(PHONE_RE)) {
+      if (m.index > last) parts.push({ type: 'text', value: value.slice(last, m.index) });
+      parts.push(inline('span', { class: 'nowrap' }, [{ type: 'text', value: m[0] }]));
+      last = m.index + m[0].length;
+    }
+    if (!parts.length) return;
+    if (last < value.length) parts.push({ type: 'text', value: value.slice(last) });
+    parent.children.splice(index, 1, ...parts);
+    return [SKIP, index + parts.length];
+  });
 }
 
 const GB_FLAG = '\u{1F1EC}\u{1F1E7}';

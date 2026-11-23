@@ -567,14 +567,23 @@ const defensiveZoneSupport = {
 
   players: [
     { id: 'G',  pos: 'G', at: 'crease' },
-    { id: 'D1', pos: 'D', at: RETRIEVER,                              label: 'the carrier' },
+    // W633 A (23 Nov 2026): "the carrier" sat below "the partner", right beside D2, its
+    // leader climbing to D1 and crossing D2's — it read as labelling the wrong defenceman,
+    // worst at 400 px. No hint can rescue the 11-character label: a grid sweep of hints
+    // (dx -20..5, dy -16..24, every half foot) was rejected everywhere, because the three
+    // pass routes' reserve fills the wedge above D1, the boards are 6 ft to his right, and
+    // the puck blocks the up-left leader. "carrier" (7 chars) fits ABOVE D1, right of the
+    // pass to W1, with a near-vertical leader that crosses no other leader.
+    { id: 'D1', pos: 'D', at: RETRIEVER,                              label: 'carrier', labelHint: [-4.51, 19.75] },
     // Reached behind the net, below the goal line. The whole segment from the
     // retriever to this player stays behind the back rail of the goal frame
     // (x 89 to 92.33), so the picture cannot be read as a pass across the mouth.
     // Held 17 ft off the carrier rather than 14 because at 14 the two triangles,
     // the goaltender and four labels were competing for the same corner and the
     // placer exiled two labels onto leader lines halfway across the zone.
-    { id: 'D2', pos: 'D', at: { at: 'goal-line', dx: 3, dy: -12 },    label: 'the partner' },
+    // labelHint (W633 A): pins "the partner" to the slot it held before D1's label moved.
+    // Freed of the carrier's old box, the placer would otherwise drop it below-left of D2.
+    { id: 'D2', pos: 'D', at: { at: 'goal-line', dx: 3, dy: -12 },    label: 'the partner', labelHint: [-15.5, 0] },
     // "roughly level with the faceoff dot on the boards" — which is exactly what
     // the coordinate table's half-wall is.
     { id: 'W1', pos: 'F', at: 'half-wall:right',                      label: 'up the wall' },
