@@ -13,12 +13,12 @@ Each wave's record, with the evidence behind every row, is in `../reviews/sg<N>_
 
 ## In flight
 
-- None. W625 shipped with record `w625_usah_match_reword_batch2_2026-11-23.md`. W621–W624 shipped as 7df277f1, with record `w624_usah_match_reword_batch1_2026-11-22.md`.
+- W625 shipped with record `w625_usah_match_reword_batch2_2026-11-23.md`. W621–W624 shipped as 7df277f1, with record `w624_usah_match_reword_batch1_2026-11-22.md`.
   - **Optional carry-overs from W625:**
     - body_contact :688 makes 640(g) the subject of "can be a match", and the next sentence's "Both" loses its pair. Sketch: "…, and **640(h)** says a match *"may also be assessed"*."
     - pwtp :536/:1014/:1052 still say "plan on a match (602(a))" for a reckless pick. That is harsher, and inconsistent with :521's check/no-check split.
     - A reckless pick thrown as a check below the knees reaches neither 640(d) nor :521's no-check limb. It is unsearched.
-  - **Remaining for W521(2) batch 3:** About 25 files are left; body_contact_and_battles goes alone. Use the brief and its lessons at `scratchpad/w622_common.md`, with a safety-reviewer for each batch.
+  - **W521(2) is complete.** Batch 3 (W626–W627) shipped with record `w627_usah_match_reword_batch3_2026-11-23.md`. Remaining "602(a)" hits are legitimate keeps.
   - **Cosmetic, from W623:** in `cross-ice-in-your-own-end`, F3's curve hugs the lower faceoff circle's line. Separating them needs re-measuring.
   - W620 shipped as 7d63cff3, with record `w620_dops_scope_followups_2026-11-21.md`. W618 and W619 shipped as f264d4c5, with record `w619_dops_elite_league_scope_2026-11-21.md`. W616 and W617 shipped as c66d1d93, with record `w617_goaltender_forechecking_facts_lines_2026-11-21.md`.
   W614 and W615 shipped as 71b2d69e, with record `w615_command_shaped_lines_and_free_faceoff_attempt_2026-11-21.md`.
